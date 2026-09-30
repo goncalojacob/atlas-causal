@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-belmont-1899--battle-of-graspan--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-70"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Belmont (1899)\", revision 1370433957, lead"
+    }
+  ],
+  "from": "battle-of-belmont-1899",
+  "to": "battle-of-graspan",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The earlier record’s own cited article puts the two battles in one movement and says what carried the first into the second: “Before the British came to use their bayonets, the Boers retreated by pony and re-formed in another entrenched position at Graspan, where the pattern was repeated with the British suffering another 197 casualties.” `precondition-of` and not `caused`: the retreat from Belmont put the Boer force in the position Graspan was fought over two days later, which is a position the second battle needed and not a mechanism that produced it. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}

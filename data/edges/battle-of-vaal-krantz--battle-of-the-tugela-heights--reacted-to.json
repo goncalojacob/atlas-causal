@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-vaal-krantz--battle-of-the-tugela-heights--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-72"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Tugela Heights\", revision 1376503813, § Background"
+    }
+  ],
+  "from": "battle-of-vaal-krantz",
+  "to": "battle-of-the-tugela-heights",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The later record’s own cited article names the three defeats its attempt was the fourth after, and Vaal Krantz is one of them: \"Buller’s army had made three earlier attempts to raise the Boer siege of Ladysmith. The battles of Colenso, Spion Kop and Vaal Krantz each resulted in embarrassing British defeats at the hands of Botha’s army of Boer irregulars. In three months, British casualties rose to 3,400 men while Boer losses were much lower. On 12 February, Buller ordered a fourth attempt to relieve Ladysmith.\" `reacted-to`: the battle is the answer to what these three had failed to do, which is the reading the atlas already gives the siege of Ladysmith at the same place. The article divides the reason between three battles and this atlas writes an edge from each, so that none of them is credited with what the source gives to all three. Nothing particular to Vaal Krantz beyond that sentence is claimed here. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}

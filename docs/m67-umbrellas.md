@@ -1208,3 +1208,34 @@ Both are also argued for by an edge this batch wrote from a cited article:
 `1938-yellow-river-flood --precondition-of--> battle-of-wuhan`. The filing is the
 import's, from `P361` and the span; this paragraph is the measurement the
 bareness owes.
+
+## Batch 70 — the two kopjes on Methuen's road to Kimberley
+
+Two of batch 70's four records name neither an actor nor a place, and both are
+bare for the same reason: what they are named after is a hill, and a hill is not
+a settlement. The other two are placed — `siege-of-kimberley` reuses nothing and
+took the new `kimberley-south-africa` from Q125905, and `battle-of-modder-river`
+took `modder-river-northern-cape` from Q786298, both written by A9's own chain.
+
+**`battle-of-belmont-1899` and `battle-of-graspan` — a kopje has no name a tool
+can read.** Q369859 and Q2888674 each carry a `P625` of their own — 24.3667 E,
+29.4167 S and 24.4833 E, 29.3000 S, two points in the northern Cape about twelve
+kilometres apart — and A9's first step can only reuse a place record the atlas
+already holds; none stands at either. Graspan's `P276` reaches Q218023, which is
+not a place of this atlas at all, and Belmont's chain offers nothing above its own
+point. Both items' `P17` is Q258, South Africa, and **A15(6) refused it on the
+inception clause**: that state was founded in 1910 and both battles were fought in
+1899, which is the same refusal `battle-of-vaal-krantz` drew in batch 68. The
+import said so in its own words — *"its own point and no name a tool can read; a
+person writes that place"* — and each record carries the `africa` lane and nothing
+else. Belmont kopje and Graspan kopje are points somebody writes, not countries an
+import guesses at.
+
+**Why both belong where they are filed.** Both items' `P361` is Q215112, the
+Second Boer War, the atlas dates that umbrella 1899-10-11 to 1902-05-31, and both
+records fall inside it — Belmont 23 November 1899, Graspan two days later. Both
+are also argued for by an edge this batch wrote from a cited article:
+`siege-of-kimberley --reacted-to--> battle-of-belmont-1899`, and
+`battle-of-belmont-1899 --precondition-of--> battle-of-graspan`. The filing is the
+import's, from `P361` and the span; this paragraph is the measurement the bareness
+owes.

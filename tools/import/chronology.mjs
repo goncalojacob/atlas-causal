@@ -152,17 +152,133 @@ export function mentions(text, name) {
 // — an event's title and whatever else it is called — and `exclude` is the ids
 // the edge already runs between, which a sentence naming them says nothing new
 // about.
-export function namesHeldEvents(text, candidates, { exclude = [] } = {}) {
+// Deviation 1481: this atlas's own title may carry a disambiguator that no
+// article prose ever uses. A12(5) keeps *"Battle of Belmont (1899)"* on purpose,
+// because two battles share the name and a record has to be one of them; an
+// article writes *"Battle of Belmont"*. **159 of 1,333 active events carry a
+// trailing parenthetical on every name they have** — `Operation Badr (1973)`,
+// `Afghan Civil War (1992–1996)`, `Arusha Accords (Rwanda)` — so an eighth of
+// the corpus was invisible to `mentions()`, to every batch screen and to A13's
+// relations pass. The better the import disambiguates, the less A13 can see.
+//
+// Only a *trailing* parenthetical, and only where something is left: a name that
+// is nothing but a bracket is not a name.
+const DISAMBIGUATOR = /\s*\([^()]*\)\s*$/;
+
+export function undisambiguated(name) {
+  if (typeof name !== 'string' || !DISAMBIGUATOR.test(name)) return null;
+  const bare = name.replace(DISAMBIGUATOR, '').trim();
+  return bare && usableName(bare) ? bare : null;
+}
+
+// Deviation 1480's second fault, and the one the strip above makes urgent: a
+// name that repeats matches the wrong one — `siege-of-brieg` of 1741 matched in
+// a 1642 article, and the atlas holds `battle-of-breitenfeld-1631` **and**
+// `battle-of-breitenfeld-1642`, which the strip makes homonyms.
+//
+// The guard is deliberately narrow. It fires **only between candidates the same
+// text named by the same bare name**, because those are homonyms and at most one
+// of them is the one meant; the subject's own years decide which. It never
+// filters a candidate whose name nothing else answers to — an article about 1642
+// may perfectly well name an event of 1631, and that edge is what this atlas is
+// for. Distance and not overlap, so two homonyms that both miss the subject's
+// span are still ranked rather than both dropped.
+export function yearsApart(a, b) {
+  const span = (w) => {
+    const start = Number.isInteger(w?.start) ? w.start : null;
+    const end = Number.isInteger(w?.end) ? w.end : start;
+    return start === null ? null : { start, end: end ?? start };
+  };
+  const one = span(a);
+  const two = span(b);
+  if (!one || !two) return null;
+  if (one.start <= two.end && two.start <= one.end) return 0;
+  return one.start > two.end ? one.start - two.end : two.start - one.end;
+}
+
+// Every event of `candidates` the text names. `candidates` is
+// `[{ id, names, when }]` — an event's title, whatever else it is called, and
+// its span — `exclude` is the ids the edge already runs between, and `when` is
+// the span of whatever the text is about, which is what tells two homonyms
+// apart. With no spans to read this behaves exactly as it did.
+export function namesHeldEvents(text, candidates, { exclude = [], when = null } = {}) {
   const skip = new Set(exclude);
+  // Deviation 1483: 1481's widening let an article's own bare name be read as
+  // its twin. `exclude` is the subject, or the two ends of an edge — the things
+  // the text is *about* — and the guard of 1480 dropped them before grouping,
+  // so a name they answer to was alone in its group and the twin took it.
+  // *"The Siege of Prague resulted in the surrender of the garrison"*, in
+  // `siege-of-prague-1744`'s own lead, named `siege-of-prague-1742`.
+  //
+  // An excluded end therefore closes the bare route for the name it answers to:
+  // a bare name the subject is one of the readings of is the subject, because
+  // 1480's own rule is that the nearest span wins and the subject is at nothing
+  // from itself. Only the bare route, because a full name is unambiguous — an
+  // article about 1642 that writes *"Battle of Breitenfeld (1631)"* out in full
+  // means the 1631 one, and that edge is still what this atlas is for.
+  const claimed = new Set();
+  for (const candidate of candidates ?? []) {
+    if (!skip.has(candidate.id)) continue;
+    for (const name of candidate.names ?? []) {
+      // As it stands as well as stripped: `gaza-war` carries no disambiguator
+      // at all, and its own first sentence was read as naming
+      // `gaza-war-2008-2009`, whose name strips to the very same words.
+      claimed.add(fold(name));
+      const stripped = undisambiguated(name);
+      if (stripped) claimed.add(fold(stripped));
+    }
+  }
   // The text is handed on unfolded: since deviation 1464 `mentions()` reads the
   // capitals, and a caller that folded first would take them away.
+  // Deviation 1484: a name the text writes out in full closes the bare route
+  // for its twin, the way an excluded end does above. The full hits are taken
+  // first, in a pass of their own, because a candidate later in the list may be
+  // the one the text names in full — *"in retaliation for the French and Indian
+  // Siege of Pemaquid (1696)"* was reporting `siege-of-pemaquid-1689`, and
+  // 1480's guard never saw the two as homonyms because a full hit and a bare
+  // hit are filed under different keys. Two names written out in full are still
+  // two names: the guard closes the bare route and nothing else.
   const out = [];
+  const full = [];
   for (const candidate of candidates ?? []) {
     if (skip.has(candidate.id)) continue;
     const hit = (candidate.names ?? []).find((name) => mentions(text, name));
-    if (hit) out.push({ id: candidate.id, name: hit });
+    if (!hit) continue;
+    full.push(candidate.id);
+    claimed.add(fold(undisambiguated(hit) ?? hit));
+    // The key stays the name as it was matched, so two full names never group
+    // as homonyms; it is `claimed` above that carries the bare form.
+    out.push({ id: candidate.id, name: hit, key: fold(hit), when: candidate.when ?? null });
   }
-  return out;
+  const named = new Set(full);
+  for (const candidate of candidates ?? []) {
+    if (skip.has(candidate.id) || named.has(candidate.id)) continue;
+    // Deviation 1481: the bare name, where the record's own is disambiguated.
+    for (const name of candidate.names ?? []) {
+      const stripped = undisambiguated(name);
+      if (!stripped || claimed.has(fold(stripped))) continue; // deviations 1483, 1484
+      if (mentions(text, stripped)) {
+        out.push({ id: candidate.id, name, key: fold(stripped), when: candidate.when ?? null });
+        break;
+      }
+    }
+  }
+  // Deviation 1480: homonyms, decided by the subject's years where there are any.
+  if (!when) return out.map(({ id, name }) => ({ id, name }));
+  const byKey = new Map();
+  for (const row of out) byKey.set(row.key, [...(byKey.get(row.key) ?? []), row]);
+  const kept = [];
+  for (const group of byKey.values()) {
+    if (group.length === 1 || group.some((row) => yearsApart(when, row.when) === null)) {
+      kept.push(...group);
+      continue;
+    }
+    const best = Math.min(...group.map((row) => yearsApart(when, row.when)));
+    kept.push(...group.filter((row) => yearsApart(when, row.when) === best));
+  }
+  return kept
+    .sort((a, b) => out.indexOf(a) - out.indexOf(b))
+    .map(({ id, name }) => ({ id, name }));
 }
 
 // A15(5)'s verdict on one candidate edge, given its quote. `refuse` is the

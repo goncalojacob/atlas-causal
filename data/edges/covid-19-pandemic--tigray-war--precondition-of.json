@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "covid-19-pandemic--tigray-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-73"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tigray war\", revision 1374637577, § Lead-up to the war"
+    }
+  ],
+  "from": "covid-19-pandemic",
+  "to": "tigray-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The later record's own cited article opens its account of how the war came about with the pandemic, and the section is called \"Lead-up to the war\": \"In March, the National Election Board of Ethiopia delayed the general elections – originally scheduled for 29 August 2020 – to a then-undetermined date, due to the COVID-19 pandemic. The terms of federal and regional lawmakers, as well as the executive branch, were then extended by federal parliament beyond the October 2020 constitutional mandates. The TPLF, led by its chairman Debretsion Gebremichael, rejected these measures, arguing that they were unconstitutional, and held its own regional election on 9 September, in defiance of the federal government.\" The same section carries the step that follows: Ethiopia \"considered the Tigray election to be illegal, and responded by slashing federal funding to the region, a decision the TPLF described as 'tantamount to declaration of war.'\" `precondition-of` and not `caused`: the article does not say the pandemic brought the war about, it says the postponement it forced is what opened the constitutional dispute the two governments then fought over, and every step between — the extension, the regional election, the funding cut — is a thing this atlas holds no record of, so the edge carries a chain whose middle is in the source and not in the graph. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22), and because a postponement is a condition and not the whole account of a war.",
+  "dispute": null
+}

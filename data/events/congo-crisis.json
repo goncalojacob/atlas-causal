@@ -13,14 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": "2026-09-29",
+  "revised": "2026-09-30",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-from-lead",
       "date",
-      "a15-country-refused"
+      "a15-country-refused",
+      "a9-place"
     ],
     "note": "The item says P580 1960-06-01 and P582 1966-11-01; the article it cites says \"between 1960 and 1965\" and dates the end to Mobutu holding the whole country. The interval here is the article's, in years and with no day, because the article is the check on the property (batch 37) and it gives the period no day of its own. A reviewer should settle whether the crisis ends with Mobutu's coup of 1965 or with the item's 1966. A15(6): the place was republic-of-the-congo-leopoldville, from the item's P17,"
   },
@@ -52,7 +53,7 @@
     "start": 1960,
     "end": 1965
   },
-  "place": null,
+  "place": "republic-of-the-congo-leopoldville",
   "region": "africa",
   "regionNote": "Lane kept by A15(6): it was derived from republic-of-the-congo-leopoldville, the country this event was placed at, and that place is refused while the lane it gave is right.",
   "parent": "decolonisation-of-africa",
