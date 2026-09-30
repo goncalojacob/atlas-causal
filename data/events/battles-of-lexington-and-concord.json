@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battles-of-lexington-and-concord",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "m42b-batch-54"
+    ]
+  },
+  "wikidata": "Q778010",
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Battles of Lexington and Concord",
+    "pt": "Batalhas de Lexington e Concord"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q778010"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battles of Lexington and Concord\", revision 1376384213"
+    }
+  ],
+  "title": "Battles of Lexington and Concord",
+  "summary": "The English Wikipedia article \"Battles of Lexington and Concord\", at revision 1376384213, opens: \"The Battles of Lexington and Concord on April 19, 1775, were the first major military actions between the British Army and Patriot militias from British America's Thirteen Colonies during the American Revolutionary War. The opposing forces fought day-long running battles in Middlesex County in the Province of Massachusetts Bay, in the towns of Lexington, Concord, Lincoln, Menotomy, and Cambridge.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q778010, imported by tools/import/wikidata.mjs. The item's own description reads \"first military engagements of the American Revolutionary War (1775)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1775,
+    "date": "1775-04-19"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

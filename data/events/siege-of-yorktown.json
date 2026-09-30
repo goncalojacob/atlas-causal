@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "siege-of-yorktown",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361",
+      "m42b-batch-54"
+    ]
+  },
+  "wikidata": "Q459447",
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Yorktown",
+    "pt": "Batalha de Yorktown"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q459447"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Yorktown\", revision 1376522207"
+    }
+  ],
+  "title": "Siege of Yorktown",
+  "summary": "The English Wikipedia article \"Siege of Yorktown\", at revision 1376522207, opens: \"The Siege of Yorktown, also known as the Battle of Yorktown and the surrender at Yorktown, took place in 1781 and was the final major land engagement of the American Revolutionary War. It was won decisively by the Continental Army, led by George Washington, with support from the Marquis de Lafayette and French Army troops, led by Comte de Rochambeau, and a French Navy force commanded by the Comte de Grasse, defeating the British Army commanded by British Lieutenant General Charles Cornwallis.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q459447, imported by tools/import/wikidata.mjs. The item's own description reads \"siege, part of American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781,
+    "date": "1781-09-28",
+    "endDate": "1781-10-19"
+  },
+  "place": "yorktown-virginia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

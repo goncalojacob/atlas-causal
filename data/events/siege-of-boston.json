@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "siege-of-boston",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361",
+      "m42b-batch-54"
+    ]
+  },
+  "wikidata": "Q815128",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Boston",
+    "pt": "Cerco de Boston"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q815128"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Boston\", revision 1377282932"
+    }
+  ],
+  "title": "Siege of Boston",
+  "summary": "The English Wikipedia article \"Siege of Boston\", at revision 1377282932, opens: \"The siege of Boston was the opening phase of the American Revolutionary War. In the siege, American patriot militia led by newly-installed Continental Army commander George Washington prevented the British Army, which was garrisoned in Boston, from moving by land. Both sides faced resource, supply, and personnel challenges during the siege. British resupply and reinforcement were limited to sea access, which was impeded by American vessels. The British ultimately abandoned Boston after eleven months, moving their troops and equipment north to Nova Scotia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q815128, imported by tools/import/wikidata.mjs. The item's own description reads \"1775 the Continental Army's siege of British-held Boston during the beginning of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1776,
+    "date": "1775-04-19",
+    "endDate": "1776-03-17"
+  },
+  "place": "boston",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "battles-of-saratoga",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361",
+      "m42b-batch-54",
+      "a7-narrowed"
+    ],
+    "note": "A7 read the other way round, which is A15 (4)'s comparison applied to an interval the item states too wide rather than too narrow. The item's P582 is 17 December 1777, which no sentence of the article it cites supports; that article's own first sentence, at revision 1377478794, reads “The Battles of Saratoga were fought September 19 and October 7, 1777”, and the next puts the surrender at the second battle. The end moves to 7 October 1777; the year bounds do not move."
+  },
+  "wikidata": "Q846674",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Battles of Saratoga",
+    "pt": "Batalha de Saratoga"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q846674"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battles of Saratoga\", revision 1377478794"
+    }
+  ],
+  "title": "Battles of Saratoga",
+  "summary": "The English Wikipedia article \"Battles of Saratoga\", at revision 1377478794, opens: \"The Battles of Saratoga were fought September 19 and October 7, 1777 over the same ground by the American Continental Army and the British Army near Saratoga, New York during the American Revolutionary War. The second battle ended with a decisive American victory, and the surrender of the British army there. The outcome greatly affected the course of the war, persuading France to enter the war as an American ally. In both battles, General John Burgoyne commanded the British forces, while Generals Horatio Gates and Benedict Arnold oversaw the American forces. Historian Edmund Morgan described Saratoga as \"a great turning point of the war\", because it won for Americans the foreign assistance from France, which was the last element needed for victory.\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q846674, imported by tools/import/wikidata.mjs. The item's own description reads \"1777 major turning point of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-09-19",
+    "endDate": "1777-10-07"
+  },
+  "place": "stillwater-new-york",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

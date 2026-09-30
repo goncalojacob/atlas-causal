@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-chesapeake--siege-of-yorktown--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-54"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Chesapeake\", revision 1370598769"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Yorktown\", revision 1376522207"
+    }
+  ],
+  "from": "battle-of-the-chesapeake",
+  "to": "siege-of-yorktown",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The fleet action decided what the siege could be. The Chesapeake article, at revision 1370598769: “The strategically decisive battle prevented the Royal Navy from reinforcing or evacuating the besieged British army of Lieutenant-general Lord Cornwallis at Yorktown, Virginia. With its victory, the French navy was able to gain control over local sea lanes and provided the Franco-American besiegers with siege artillery and troops reinforcements. These proved decisive in securing Cornwallis’ surrender.” The Yorktown article states it from the other end at revision 1376522207: “As a result of this victory, de Grasse blocked any reinforcement or escape by sea for Cornwallis and also disembarked the heavy siege guns required by the allied land forces.” `enabled` and not `caused`: the siege was already being marched to — Washington and Rochambeau arrived on 28 September — and what the battle decided was that it could be pressed and not relieved. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}
