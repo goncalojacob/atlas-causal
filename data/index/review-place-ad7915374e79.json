@@ -2881,6 +2881,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "cachipampa",
+      "kind": "place",
+      "names": [
+        "Cachipampa"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q947591, the Battle of Las Salinas, read on 2026-09-30 — A9’s first step as A12 (2) corrects it, and the item offers nothing else located: no P276, and a P17 of Peru, whose inception is 1821 and which A15 (6) refuses. The name is the battlefield the cited article names at revision 1370267925, \"the ancient Indian salt mines of Cachipampa, about 5 km south of Cuzco\"; the precision is point because a salt pan is not a settlement.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "cadiz",
@@ -7982,6 +8010,34 @@
           "a9-place"
         ],
         "note": "Written by the Wikidata import from Q495534 for batch 53. `region` off the item's own class, river (Q4022). It is battle-of-the-imjin-river's place by A9's second step: the event's own P625 is 28 km up the same river from the river item's point, which is the length of the thing and not a disagreement — the article's own location field is \"Imjin River, Korea\".",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "inaquito",
+      "kind": "place",
+      "names": [
+        "Iñaquito"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The Battle of Iñaquito’s item (Q1609295) carries no P625, so A9’s second step applies: its P276 is Iñaquito (Q4886828), an urban parish of Quito, and the point is that item’s own P625 read on 2026-09-30. The class Q2579179, urban parish, is in no row of the class table, so the precision stays at the import’s own fallback, point.",
         "status": "draft"
       },
       "revised": null,

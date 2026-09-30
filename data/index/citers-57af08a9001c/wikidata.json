@@ -3530,6 +3530,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-inaquito",
+      "kind": "event",
+      "locator": "Q1609295"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-inchon",
       "kind": "event",
       "locator": "Q483039"
@@ -3701,6 +3707,12 @@
       "id": "battle-of-las-piedras-1811",
       "kind": "event",
       "locator": "Q2889112"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-las-salinas",
+      "kind": "event",
+      "locator": "Q947591"
     },
     {
       "dissent": false,

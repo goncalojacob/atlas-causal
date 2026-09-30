@@ -203,6 +203,15 @@
         }
       ]
     },
+    "battle-of-inaquito": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-jaquijahuana": {
       "from": "git",
       "versions": [
@@ -242,6 +251,15 @@
             "parent"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-las-salinas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

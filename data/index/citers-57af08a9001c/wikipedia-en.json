@@ -2060,6 +2060,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-abancay--battle-of-las-salinas--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Abancay\", revision 1370430763"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-acajutla--battle-of-tacuzcalco--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Acajutla\", revision 1370105848"
@@ -2390,6 +2396,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-inaquito--battle-of-jaquijahuana--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Jaquijahuana\", revision 1370444091"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-inchon--second-battle-of-seoul--caused",
       "kind": "edge",
       "locator": "\"Battle of Inchon\", revision 1370266029, lead"
@@ -2465,6 +2477,12 @@
       "id": "battle-of-lagunillas--battle-of-millarapue--caused",
       "kind": "edge",
       "locator": "\"Battle of Millarapue\", revision 1376536206, History"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-las-salinas--battle-of-chupas--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Chupas\", revision 1370437248"
     },
     {
       "dissent": false,
@@ -5489,6 +5507,12 @@
       "id": "napoleonic-wars--blockade-of-saint-domingue--enabled",
       "kind": "edge",
       "locator": "\"Blockade of Saint-Domingue\", revision 1370604651, lead and § Background"
+    },
+    {
+      "dissent": false,
+      "id": "new-laws--battle-of-inaquito--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Iñaquito\", revision 1370443968"
     },
     {
       "dissent": false,
@@ -10502,6 +10526,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-inaquito",
+      "kind": "event",
+      "locator": "\"Battle of Iñaquito\", revision 1370443968"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-inchon",
       "kind": "event",
       "locator": "\"Battle of Inchon\", revision 1370266029"
@@ -10673,6 +10703,12 @@
       "id": "battle-of-las-piedras-1811",
       "kind": "event",
       "locator": "\"Battle of Las Piedras (1811)\", revision 1370447269"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-las-salinas",
+      "kind": "event",
+      "locator": "\"Battle of Las Salinas\", revision 1370267925"
     },
     {
       "dissent": false,
