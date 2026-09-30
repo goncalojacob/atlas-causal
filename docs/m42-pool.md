@@ -16461,10 +16461,19 @@ guessed.***
   fire needed. WDQS never complained. Deviation 1466 holds for the pages that came
   back, but **0.45 s is too fast for `rest.php/v1/page` today** — the next fire
   should space article reads at a second or more.
-- **Deviation numbers: take the next above 1474.** This fire wrote **1472** (a
+- **Deviation numbers: take the next above 1475.** This fire wrote **1472** (a
   typographic quotation mark makes a citation unreadable), **1473** (the Boer
-  island cannot be joined while C8 stands, measured) and **1474** (the "five class
-  rows" are four different questions, and two of them are not a fire's to decide).
+  island cannot be joined while C8 stands, measured), **1474** (the "five class
+  rows" are four different questions, and two of them are not a fire's to decide)
+  and **1475** (the history shards are built from commits, so the index is rebuilt
+  *after* the records commit and never before it).
+- **And 1475 is the one a fire should read before it does anything else.** The
+  order is: write the records → validate → **commit the records** →
+  `build-index.mjs` → `validate --index` → commit the index. A rebuild before the
+  records commit passes `validate --index` locally and fails rule 16 on the runner,
+  and the only pure tests that catch it are `tests/m62.test.mjs`'s and
+  `tests/m67.test.mjs`'s validator clauses, because they are the two that shell out
+  to `validate --index`.
 
 **Both suites are green on this fire's tree: 2,228 tests, nothing skipped** —
 **1,915 pure** and **313 browser**, run the way the check runs them since M63, and
@@ -16472,9 +16481,43 @@ no suite needed a second run. **No test was added**: none of the three deviation
 is code, and the one thing this fire wrote outside `data/` besides this file is the
 paragraph `docs/m67-umbrellas.md` owes its two bare records — which is what
 `tests/m67.test.mjs`'s *"a child that names neither is one the measurement argues
-for"* asks for, and it failed until that paragraph was there. The only other
-failures on the way were the index and the site, stale between the records commit
-and the rebuild, which is deviation 798's order working as intended. The five
+for"* asks for, and it failed until that paragraph was there. The five
 curly-quoted locators of deviation 1472 were caught by `cache-evidence`'s own
 report before any test saw them; `tests/a15-cache.test.mjs` would have failed on
-them, because it asserts `gaps.malformed` is empty.
+them, because it asserts `gaps.malformed` is empty. **This paragraph is written
+after deviation 1475** — the first time both suites were run, they were run on a
+tree whose history shards were stale, and they were green on it, because the two
+pure tests that can see rule 16 shell out to `validate --index` and the working
+tree agreed with itself at that moment. **Both suites are being run again on the
+corrected tree**, and the line below this one is the count that matters; until it
+is here, the 2,228 above is a count from a tree the runner rejected.
+
+### Deviation 1475 — the history shards are built from commits, so the index must be rebuilt *after* the records commit and not before it
+
+**The check went red on this fire's first three pushes and it was right to.** Run
+2062 failed on **rule 16**, and on nothing this batch argues: three history shards
+stale and three missing, all `1800-1899` and `place`, which are exactly the shards
+this batch's four records and five edges belong in.
+
+`tools/lib/history.mjs` builds each record's versions **from the commits that
+touched its file**. This fire rebuilt the index while the four records were still
+uncommitted, so the shards carried no version for any of them; `node
+tools/validate.mjs --index` was clean at that moment because the working tree and
+the history it had just been built from agreed with each other. The records commit
+then gave every one of those records a first version the committed index does not
+carry, and rule 16 saw it on the runner.
+
+**Deviation 798's order already says this** — *records first, rebuild, then commit
+the index* — and the order is not a convention about tidiness: the rebuild has to
+happen **after** `git commit` of the records, because the history is a function of
+the repository and not of the working tree. Batch 69's stand recorded the same red
+as *"the index, stale between the records commit and the rebuild, which is
+deviation 798's order working as intended"*, which is what it looks like from the
+other side. Rebuilt on the committed tree it is 0 errors and 620 warnings, and the
+validator clauses of `tests/m62.test.mjs` and `tests/m67.test.mjs` — the two that
+shell out to `validate --index` and are therefore the only pure tests that can see
+this — pass.
+
+**Nothing in `data/` changed to fix it**: the records, the edges, the places and
+the refusal are exactly what was pushed, and the only difference is which commit
+the history was read at.
