@@ -6539,6 +6539,45 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "battle-of-abancay",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-conquest-of-the-inca-empire",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-by-span-and-subject",
+          "m42b-batch-51"
+        ],
+        "note": "Filed under spanish-conquest-of-the-inca-empire by span and subject (M62): 12 July 1537 is inside 1532-1572, and the item’s own description calls it a \"battle that took place during the Spanish conquest of Peru\". The item’s own P361 is Q5887915, the civil wars between the conquerors of Peru, which this atlas does not hold and which has no English Wikipedia article to be written from; battle-of-chupas, one of the same civil wars, is already filed under this umbrella.",
+        "status": "draft"
+      },
+      "revised": "2026-09-30",
+      "status": "active",
+      "title": "Battle of Abancay"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -9987,6 +10026,45 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Jankau"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "battle-of-jaquijahuana",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-conquest-of-the-inca-empire",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-by-span-and-subject",
+          "m42b-batch-51"
+        ],
+        "note": "Filed under spanish-conquest-of-the-inca-empire by span and subject (M62): 9 April 1548 is inside 1532-1572 and both sides are parties to the conquest of Peru. The item’s own P361 is Q5884503, the Great Encomendero Uprising, whose own P361 is Q5887915; neither has an English Wikipedia article to be written from. battle-of-chupas, of the same civil wars, is already filed here. A15 (4): P585 and the lead’s \"on April 9, 1548\" agree to the day.",
+        "status": "draft"
+      },
+      "revised": "2026-09-30",
+      "status": "active",
+      "title": "Battle of Jaquijahuana"
     },
     {
       "authors": [
@@ -30313,7 +30391,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 3,
       "id": "new-laws",
       "kind": "event",
       "origin": {
@@ -36752,7 +36830,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 3,
       "id": "siege-of-cusco",
       "kind": "event",
       "origin": {
@@ -39826,6 +39904,46 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "spanish-conquest-of-honduras",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-colonization-of-the-americas",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a7-widened",
+          "a15-6-country-refused",
+          "filed-by-span-and-subject",
+          "m42b-batch-51"
+        ],
+        "note": "Filed under spanish-colonization-of-the-americas by span and subject (M62): 1524-1539 is inside 1493-1898, and the item’s own P361 names that umbrella’s item Q1047607. A7: the item gives only P585 1524; the cited article at revision 1370748307 dates the start (\"In March 1524, Gil González Dávila became the first Spaniard to arrive in what is now Honduras with the intention of conquest\") and the end (\"the main phase of the Spanish conquest was complete by 1539\"), so the span is 1524-03 to 1539.",
+        "status": "draft"
+      },
+      "revised": "2026-09-30",
+      "status": "active",
+      "title": "Spanish conquest of Honduras"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -39898,7 +40016,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 4,
+      "degree": 5,
       "id": "spanish-conquest-of-the-aztec-empire",
       "kind": "event",
       "origin": {

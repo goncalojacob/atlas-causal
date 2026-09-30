@@ -5492,6 +5492,12 @@
     },
     {
       "dissent": false,
+      "id": "new-laws--battle-of-jaquijahuana--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Jaquijahuana\", revision 1370444091"
+    },
+    {
+      "dissent": false,
       "id": "north-channel-naval-duel--battle-of-flamborough-head--precondition-of",
       "kind": "edge",
       "locator": "\"North Channel Naval Duel\", revision 1370629780"
@@ -6530,6 +6536,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-cusco--battle-of-abancay--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Abancay\", revision 1370430763"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-cusco--battle-of-ollantaytambo--caused",
       "kind": "edge",
       "locator": "\"Battle of Ollantaytambo\", revision 1376074803, § Background"
@@ -7073,6 +7085,12 @@
       "id": "spanish-conquest-of-the-aztec-empire--new-laws--reacted-to",
       "kind": "edge",
       "locator": "\"Spanish colonization of the Americas\", revision 1376245871, § The crown and the indigenous populations"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-the-aztec-empire--spanish-conquest-of-honduras--precondition-of",
+      "kind": "edge",
+      "locator": "\"Spanish conquest of Honduras\", revision 1370748307, § Background"
     },
     {
       "dissent": false,
@@ -9860,6 +9878,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-abancay",
+      "kind": "event",
+      "locator": "\"Battle of Abancay\", revision 1370430763"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-abrolhos",
       "kind": "event",
       "locator": "\"Battle of Abrolhos\", revision 1370430814"
@@ -10487,6 +10511,12 @@
       "id": "battle-of-jankau",
       "kind": "event",
       "locator": "\"Battle of Jankau\", revision 1370444085"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-jaquijahuana",
+      "kind": "event",
+      "locator": "\"Battle of Jaquijahuana\", revision 1370444091"
     },
     {
       "dissent": false,
@@ -15533,6 +15563,12 @@
       "id": "spanish-conquest-of-guatemala",
       "kind": "event",
       "locator": "\"Spanish conquest of Guatemala\", revision 1371444057"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-honduras",
+      "kind": "event",
+      "locator": "\"Spanish conquest of Honduras\", revision 1370748307"
     },
     {
       "dissent": false,

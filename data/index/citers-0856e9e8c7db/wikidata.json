@@ -2906,6 +2906,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-abancay",
+      "kind": "event",
+      "locator": "Q283288"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-abrolhos",
       "kind": "event",
       "locator": "Q2890640"
@@ -3533,6 +3539,12 @@
       "id": "battle-of-jankau",
       "kind": "event",
       "locator": "Q1415925"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-jaquijahuana",
+      "kind": "event",
+      "locator": "Q2338093"
     },
     {
       "dissent": false,
@@ -8687,6 +8699,12 @@
       "id": "spanish-conquest-of-guatemala",
       "kind": "event",
       "locator": "Q2993582"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-honduras",
+      "kind": "event",
+      "locator": "Q5783531"
     },
     {
       "dissent": false,

@@ -19126,6 +19126,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "new-laws",
+      "id": "new-laws--battle-of-jaquijahuana--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-51"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-jaquijahuana",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wheeler-1978-republican-portugal",
         "ramos-2009-historia-de-portugal"
       ],
@@ -23561,6 +23590,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "siege-of-cusco",
+      "id": "siege-of-cusco--battle-of-abancay--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-51"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-abancay",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "hemming-1993-conquest-of-the-incas"
       ],
@@ -25648,6 +25706,35 @@
       "status": "active",
       "to": "new-laws",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "spanish-conquest-of-the-aztec-empire",
+      "id": "spanish-conquest-of-the-aztec-empire--spanish-conquest-of-honduras--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-51"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "spanish-conquest-of-honduras",
+      "type": "precondition-of"
     },
     {
       "authors": [

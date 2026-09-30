@@ -11,6 +11,15 @@
         }
       ]
     },
+    "abancay-river-ford": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "abeibara": {
       "from": "git",
       "versions": [
@@ -4207,6 +4216,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "jaquijahuana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

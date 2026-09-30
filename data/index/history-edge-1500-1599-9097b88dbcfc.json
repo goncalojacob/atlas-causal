@@ -353,6 +353,15 @@
         }
       ]
     },
+    "new-laws--battle-of-jaquijahuana--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "portuguese-landfall-in-brazil-1500--indigenous-depopulation-of-coastal-brazil--caused": {
       "from": "git",
       "versions": [
@@ -368,6 +377,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "siege-of-cusco--battle-of-abancay--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },
@@ -482,6 +500,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "spanish-conquest-of-the-aztec-empire--spanish-conquest-of-honduras--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

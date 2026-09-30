@@ -35,6 +35,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "abancay-river-ford",
+      "kind": "place",
+      "names": [
+        "Abancay"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q283288, the Battle of Abancay, read on 2026-09-30 — A9’s first step as A12 (2) corrects it, the item’s own point before its P276. That P276 is Abancay the city (Q215238), whose inception the item gives as 1540, three years after the battle; the article puts the fighting at \"the bridge and a ford on the Rio de Abancay\", which is what this record is a point for and why its precision is point and not city.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "abeibara",
@@ -8546,6 +8574,34 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "jaquijahuana",
+      "kind": "place",
+      "names": [
+        "Jaquijahuana"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "note": "The point is the P625 of Wikidata Q2338093, the Battle of Jaquijahuana, read on 2026-09-30 — A9’s first step as A12 (2) corrects it. The item’s P276 is Saqsaywaman (Q828336), some 25 km east of the point the item itself gives, so the item’s own point is what this record carries.",
         "status": "draft"
       },
       "revised": null,
