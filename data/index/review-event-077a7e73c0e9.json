@@ -10817,6 +10817,39 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "battle-of-las-tres-acequias",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "chilean-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Filed under chilean-war-of-independence by the item's own P361 (Q1072889), which is that record; 26 August 1814 is inside the war's 1812-1827. The place is the item's own P625 as `las-tres-acequias`, A9's first step; A15 (6) never came up, because the point made P17 (Q298, Chile) unnecessary. A15 (4): the day and month the item gives, 26 August 1814, are the day and month the article's own first sentence gives at revision 1370447283, and the title states no span.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Las Tres Acequias"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "battle-of-lauffeld",
@@ -13244,6 +13277,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 2,
       "id": "battle-of-rancagua",
       "kind": "event",
       "origin": {
@@ -20616,7 +20650,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "crossing-of-the-andes",
       "kind": "event",
       "origin": {
@@ -45694,12 +45728,6 @@
     },
     {
       "id": "battle-of-puerto-de-cavite",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-rancagua",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

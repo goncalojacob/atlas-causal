@@ -582,6 +582,15 @@
         }
       ]
     },
+    "battle-of-las-tres-acequias": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-magersfontein": {
       "from": "git",
       "versions": [

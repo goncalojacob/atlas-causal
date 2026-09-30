@@ -3680,6 +3680,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-las-tres-acequias",
+      "kind": "event",
+      "locator": "Q4871541"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-lauffeld",
       "kind": "event",
       "locator": "Q696699"

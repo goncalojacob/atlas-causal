@@ -4915,6 +4915,15 @@
         }
       ]
     },
+    "las-tres-acequias": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "latin-bridge": {
       "from": "git",
       "versions": [

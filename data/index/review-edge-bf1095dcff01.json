@@ -5837,6 +5837,35 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "battle-of-las-tres-acequias",
+      "id": "battle-of-las-tres-acequias--battle-of-rancagua--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-48"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-rancagua",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "wikipedia-en",
         "anderson-2000-crucible-of-war"
       ],
@@ -7071,6 +7100,35 @@
       "revised": null,
       "status": "active",
       "to": "battle-of-the-alte-veste",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "from": "battle-of-rancagua",
+      "id": "battle-of-rancagua--crossing-of-the-andes--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-48"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "crossing-of-the-andes",
       "type": "precondition-of"
     },
     {

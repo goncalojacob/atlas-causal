@@ -119,6 +119,15 @@
         }
       ]
     },
+    "battle-of-las-tres-acequias--battle-of-rancagua--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "battle-of-magersfontein--battle-of-paardeberg--precondition-of": {
       "from": "git",
       "versions": [
@@ -138,6 +147,15 @@
       ]
     },
     "battle-of-modder-river--battle-of-magersfontein--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-rancagua--crossing-of-the-andes--precondition-of": {
       "from": "git",
       "versions": [
         {

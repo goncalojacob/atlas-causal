@@ -2462,6 +2462,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-las-tres-acequias--battle-of-rancagua--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Las Tres Acequias\", revision 1370447283, § lead"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-lauffeld--siege-of-maastricht-1748--enabled",
       "kind": "edge",
       "locator": "\"Battle of Lauffeld\", revision 1370447310, § Aftermath"
@@ -2777,6 +2783,12 @@
       "id": "battle-of-rain--battle-of-the-alte-veste--precondition-of",
       "kind": "edge",
       "locator": "\"Thirty Years' War\", revision 1376343040, § Swedish intervention"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-rancagua--crossing-of-the-andes--precondition-of",
+      "kind": "edge",
+      "locator": "\"Crossing of the Andes\", revision 1374600996, § Background"
     },
     {
       "dissent": false,
@@ -10577,6 +10589,12 @@
       "id": "battle-of-las-piedras-1811",
       "kind": "event",
       "locator": "\"Battle of Las Piedras (1811)\", revision 1370447269"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-las-tres-acequias",
+      "kind": "event",
+      "locator": "\"Battle of Las Tres Acequias\", revision 1370447283"
     },
     {
       "dissent": false,
