@@ -2385,6 +2385,37 @@ In full in the history file. The ones that decide something:
   `six-day-war --> yom-kippur-war`**: the better sentence that retraction hoped
   for was looked for and is not there, and the causal path between those ends is
   already held through `war-of-attrition`.
+- **The bind is about importing, and the filing pass A6 puts before it had a
+  lane nobody had given it.** Batch 74, on 30 September at 18:07Z. Five fires
+  had read this lane as blocked outright by the three-way bind of A15(1),
+  A14(6) and A6 — which it is, for imports — while **A6's second clause
+  (*"the next fire is a filing pass before it is an import"*) and A10's
+  (*"the seeds file gains the regional periods A6 asks for where a lane has
+  none (Latin America's, Asia's)"*) had never been carried out for Asia**:
+  Europe had `interwar-period` with fifty children, Africa two umbrellas with
+  fourteen each, and Asia, at 58 mains, none at all (deviation 1491).
+  **`decolonisation-of-asia`** (`Q5249554`, revision 1375271318) is that
+  umbrella, and its start is the entry worth keeping: the article states an end
+  in its first sentence (Timor-Leste, 2002) and **no start anywhere**, but its
+  own list of European colonies in Asia dates every colony's last year, and
+  **the first of those that is a colony becoming a state rather than a colony
+  changing owners is `Spanish Philippines (1565-1898)`** — where the prose has
+  *"Philippine revolutionaries unilaterally declared independence from Spain in
+  1898"*. Dutch Malacca in 1824, Dutch India in 1825 and Danish India in 1869
+  are all earlier and all transfers between European powers, so 1898 is the
+  start and 1945 — the frame the article gives its own possessions list — is
+  not (deviation 1492). **Five main events filed under it** and two more gained
+  it as an A8 second parent; `chaplain-medic-massacre` and
+  `operation-accountability` took the narrower parent the 15:07Z stand named,
+  each as a replacement rather than an addition because the filing suite
+  refuses a parent reachable through another. **The third filing that stand
+  proposed was refused by the record itself**:
+  `mozambican-war-of-independence`'s own `review.note` says the Portuguese
+  Colonial War closes on 25 April 1974 while the war ran to September, which is
+  the warning batch 41 filed it under the continent to avoid. **Main count 234
+  to 230 and Asia's active count 211 to 212 — the first movement in either in
+  five fires.** No edge, and none was possible: the only record written is an
+  umbrella, and an umbrella is not a claim.
 
 - **The seventh relation type. Answered, and half done.** Rule 19 refused
   `portugal member-of european-union`, so ten memberships were written as

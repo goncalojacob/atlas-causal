@@ -1239,3 +1239,32 @@ are also argued for by an edge this batch wrote from a cited article:
 `battle-of-belmont-1899 --precondition-of--> battle-of-graspan`. The filing is the
 import's, from `P361` and the span; this paragraph is the measurement the bareness
 owes.
+
+## M42 batch 74 — Asia's period umbrella, bare for the reason section 15 gave
+
+*30 September, the fire that claimed at 18:07Z. The measurement is in
+`docs/m42-pool.md` → "Batch 74". A1's clause again, for one record and for
+exactly the reason section 15 wrote down.*
+
+`decolonisation-of-asia` **names neither an actor nor a place, because a period
+has neither to give.** A continent has no point, so there is no place record to
+reach for; and the actor of the decolonisation of Asia is every colonial power
+that held ground there and every independence movement that took it back, which
+is a list an umbrella has no business asserting. `decolonisation-of-africa`,
+`interwar-period`, `scramble-for-africa`, `arab-spring`, `indochina-wars` and
+`afghan-conflict` are bare for the same reason and were accounted for the same
+way.
+
+What it carries instead is **a lane written on purpose** — Asia is the period's
+own subject and not a derivation from a point it does not have — and a span with
+a citation behind it: *"Decolonisation of Asia"*, revision 1375271318,
+*"concluding with the independence of the Democratic Republic of Timor-Leste from
+Indonesia in 2002"*. The start is 1898 and the pool file argues it at length,
+because the article states no start and its own list of colonies dates one.
+
+The five events filed under it — `philippine-declaration-of-independence`,
+`philippine-american-war`, `indonesian-national-revolution`,
+`partition-of-india` and `east-timor-independence-2002` — and the two that gained
+it as a second parent under A8 — `first-indochina-war` and
+`east-timor-invasion-1975` — are argued there, one line each, each from the same
+revision.
