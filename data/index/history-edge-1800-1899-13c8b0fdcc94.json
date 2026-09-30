@@ -412,6 +412,15 @@
         }
       ]
     },
+    "first-sino-japanese-war--xinhai-revolution--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "franco-russian-alliance--world-war-i--precondition-of": {
       "from": "git",
       "versions": [
