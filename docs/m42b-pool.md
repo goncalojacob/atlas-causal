@@ -13000,3 +13000,46 @@ is the umbrella's, **or** they share an actor, **or** the umbrella's place is
 coarse. The other candidate fixes are worse: unfiling the Yemeni revolution puts
 the main count back up by one, which A3 forbids, and giving either record an
 actor to share is a historical claim neither carries.
+
+### The fire's final head, after the second merge of `origin/m42`
+
+The failure above was not waited on: `origin/m42` fixed it within the hour
+(4d8480d8f, e219a7953 — four filings and one edge taken back), and **a fix that
+exists is ported rather than waited on**, so `origin/m42` was merged a second
+time. No record conflicted; `data/index/` and `sources.html` did, on their
+hashes and their citation counts, and were rebuilt on the merge commit under
+deviation 1202's ordering.
+
+So the stand above describes the two batches, and **these are the numbers on the
+fire's final head**:
+
+| | |
+| --- | --- |
+| corpus | **1,337 active** |
+| **main** | **234** — four higher than this fire's batches left it, because the unfilings `origin/m42` brought back put four events on the resting picture again. **Not this lane's rise**: batches 49 and 50 each left it where they found it, and no record of this fire is main |
+| **largest connected component** | **743** |
+| components | **405** |
+| events with no edge at all | **316** |
+| edges crossing an umbrella | **573 of 1,120** |
+| **Africa before 1800** | **20 active, 0 main** (17 at the fire's start) |
+| **Asia before 1800** | **21 active, 0 main** |
+| Africa / Asia, all centuries | **211 / 211** — A15 (1)'s gate is 303 |
+| the `americas` lane | 360 active, 56 main |
+| Europe before 1900 | 258 active, paused |
+
+| century | europe | africa | asia | americas |
+| --- | --- | --- | --- | --- |
+| 1400s | 4 / 2 | — | — | 5 / 3 |
+| 1500s | 44 / 1 | — | — | 46 / 5 |
+| 1600s | 109 / 3 | **6 / 0** | 4 / 0 | 70 / 7 |
+| 1700s | 62 / 3 | 14 / 0 | 17 / 0 | 57 / 2 |
+| 1800s | 39 / 9 | 22 / 1 | 7 / 7 | 57 / 8 |
+| 1900s | 244 / 59 | 92 / 22 | 154 / 40 | 86 / 30 |
+| 2000s | 52 / 7 | 76 / 7 | 29 / 15 | 39 / 1 |
+| undated | 1 / 1 | 1 / 1 | — | — |
+| **all** | **555 / 85** | **211 / 31** | **211 / 62** | **360 / 56** |
+
+**Move 6 of the stand above is discharged**, and the patch it proposed is moot:
+M42 chose to unfile rather than to widen the test, which is its call and costs it
+four main events. The proposal stands only if a later fire wants those four
+filings back.
