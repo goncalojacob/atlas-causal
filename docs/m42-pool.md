@@ -18238,6 +18238,34 @@ carrying `Q5249554`**.
 A15(2)'s recache, as the last step of the batch and over the batch's own
 citations: reported below with the suites.
 
+### A15(2)'s recache, and the suites and the check
+
+**A15(2), as the last step of the batch and over the batch's own citations:**
+`node tools/cache-evidence.mjs --fill` — **2,752 `wikipedia-en` citations on
+active records, 2,679 on disk at the revision cited, 0 that should be on disk and
+are not.** One title asked, one lead written: `Q5249554` *"Decolonisation of
+Asia"* at 1375271318, the one citation this batch wrote. The 73 counted as *a
+revision the cache cannot hold beside a more-cited one of the same item* are
+unchanged from batch 73.
+
+**Both suites are green on this fire's final tree: 2,241 tests, nothing skipped**
+— **1,928 pure** and **313 browser**, run the way the check runs them since M63.
+**No test was added**, and that is the point of the two suites that judged this
+batch: `tests/m42-filing.test.mjs` and `tests/m67.test.mjs` name no record and pin
+no count, so the umbrella and its children were judged by properties written
+before them, which is what 711 and 717 ask for and what the filing suite's own
+header promises.
+
+**Both of them failed first, and each failure was a real one.** The filing suite
+refused the umbrella until `docs/m42-pool.md` named it — *the argument for a
+filing is written by whichever run made it* — and **the m67 suite refused it in
+the check, at run 2153, which is red for that reason and no other**: a main event
+with no actor and no place is bare, and `docs/m67-umbrellas.md` must say why. Its
+section 15 had already said why for `decolonisation-of-africa` — *a period has
+neither an actor nor a place to give* — and this batch's section there says it for
+Asia. **The check on the head commit is `success`** (run 2155 of `validate.yml`).
+Run 2152 was cancelled by the next push, which is deviation 1258's chain.
+
 ## Where the run stands after batch 74, for the fire that picks it up
 
 *30 September, the fire that claimed at 18:07Z. A filing pass, which is what A6
