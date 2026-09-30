@@ -174,7 +174,7 @@
       ]
     },
     "import": {
-      "updated": "2026-09-29",
+      "updated": "2026-09-30",
       "pending": [],
       "done": [
         "Q64",
@@ -1941,7 +1941,12 @@
         "Q129151",
         "Q2038907",
         "Q7302285",
-        "Q10303008"
+        "Q10303008",
+        "Q3485913",
+        "Q248979",
+        "Q3237997",
+        "Q369859",
+        "Q2888674"
       ]
     }
   },
@@ -2133,6 +2138,10 @@
     "Q385820": {
       "on": "2026-09-29",
       "why": "states a cause naming a held event, and cannot be filed: dated 1881 against scramble-for-africa at 1885-1914, so unfiled it raises the main count (A6) and filed it breaks the corpus invariant that no child is dated outside its parent. A7 cannot widen the umbrella: its cited article states no years. See m42-pool.md, batch 68."
+    },
+    "Q3237997": {
+      "on": "2026-09-30",
+      "why": "A15(1): imported and removed in the same fire because it cannot be connected with an edge. The Relief of Ladysmith is a campaign whose relation to the four battles the atlas holds is part-of and not causation, and the item’s P580, 28 October 1899, is five days before the siege it relieved began, so the one edge that reads the right way round fails rule 4. See m42-pool.md, batch 70."
     }
   }
 }

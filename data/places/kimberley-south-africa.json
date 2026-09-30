@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "kimberley-south-africa",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q125905",
+  "sitelinks": {
+    "count": 76,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Kimberley, South Africa",
+    "pt": "Kimberley (Cabo Setentrional)"
+  },
+  "sources": [],
+  "names": [
+    "Kimberley",
+    "Kimberley, South Africa",
+    "Kimberley (Cabo Setentrional)"
+  ],
+  "where": {
+    "lon": 24.76388888888889,
+    "lat": -28.738333333333333,
+    "precision": "city",
+    "label": "Kimberley, South Africa"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
