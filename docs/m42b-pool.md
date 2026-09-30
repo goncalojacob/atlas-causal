@@ -13068,3 +13068,291 @@ up`, `Validate records`, `Tests` and the index check, every step green, and
 **Run 2078, on the first merge commit, went red, and it was M42's filing test** —
 written up under move 6 and discharged above. Runs 2076, 2084, 2085, 2086, 2089
 and 2090 were cancelled as each push superseded the last, which is ordinary.
+
+### Batch 51 — the americas, 16th century: Honduras and two Peruvian civil-war battles
+
+**Where it came from, and why not africa/asia.** The cell that trails most
+inside this lane's partition is africa and asia before 1800, at 20 and 21
+active, and this fire went there first. It came back empty, and the reason is
+worth more than the batch: **that half of the partition cannot be grown under
+A5 and A14 together, and this fire measured why.**
+
+The pre-1800 africa/asia corpus is 41 events and **every one of them is a child
+of a European war umbrella** — `french-invasion-of-egypt-and-syria` (11),
+`french-revolutionary-wars` (10), `dutch-portuguese-war` (9),
+`american-revolutionary-war` (5), `first-carnatic-war` (2),
+`anglo-french-war-1778-1783` (2), `thirty-years-war` (1),
+`war-of-the-austrian-succession` (1). There is **no held umbrella whose span
+covers africa or asia in the 16th century at all**, so an import there is a new
+main event and A6 forbids it; and the umbrellas that do reach the 17th and 18th
+centuries have children whose articles name, causally, **only their own
+parent** — which A14 bars until the owner decides C8.
+
+The sweep, written down so the next fire does not repeat it:
+
+| vein | candidates found | usable |
+| --- | --- | --- |
+| `Q377269` Dutch–Portuguese War, `P361` children (not the `P527` set batch 50 exhausted) | 16 unheld in africa/asia | **0** — of 13 articles read, one causal sentence, naming `dutch-portuguese-war`, which is the parent |
+| `Q207318`, `Q40949`, `Q3651696`, `Q1362162`, `Q2487`, `Q32929`, `Q253684` children | 25 unheld in africa/asia, 16 of them dated 1800 or 1801 and so outside this partition | 0 |
+| the class sweep, africa/asia 1500–1800, ≥ 6 sitelinks | 31 unheld | 0 filable: not one has a `P361` the atlas holds |
+| the reverse direction — the held hubs' own articles read for events the atlas lacks | `Q2567256` (chronology only) and, four times, the **Iberian Union** | 0 |
+
+The reverse scan is the interesting one. The Dutch–Portuguese War's article
+states a cause four times over and the cause is the same each time: *"Moreover,
+the Portuguese claimed that the Iberian Union was a reason for the attacks on
+their colonies by the Dutch."* **The one bridge into the pre-1800 africa/asia
+corpus is an event in Europe before 1900**, which A15 (1) forbids this lane
+until africa and asia each hold 303. So the gate meant to rebalance the lanes is
+also what closes the only door into the cell it opened. That is not a defect to
+fix in a run; it is a fact for the owner, and it is move 1 below.
+
+**What the batch is instead.** The americas, 16th century — 46 active at the
+fire's start, the thinnest americas century with more than a decade in it, and
+the lane's south/central half now holds 240 active against the north's 55, so
+A11's precedence clause no longer binds. Three events, two places, three edges:
+
+| record | item | when | filed under | place |
+| --- | --- | --- | --- | --- |
+| `spanish-conquest-of-honduras` | `Q5783531` | 1524-03 – 1539 | `spanish-colonization-of-the-americas` | none — A15 (6) |
+| `battle-of-abancay` | `Q283288` | 1537-07-12 | `spanish-conquest-of-the-inca-empire` | `abancay-river-ford` (new) |
+| `battle-of-jaquijahuana` | `Q2338093` | 1548-04-09 | `spanish-conquest-of-the-inca-empire` | `jaquijahuana` (new) |
+
+Every one of the three carries a `P361` or a description that puts it inside its
+umbrella's span *and* subject, so **the main count is 234 before the batch and
+234 after it**. Honduras's own `P361` is the umbrella's item. The two battles'
+own `P361`s are `Q5887915` (the civil wars between the conquerors of Peru) and
+`Q5884503` (the Great Encomendero Uprising), **neither of which has an English
+Wikipedia article**, so neither can be written under A2; `battle-of-chupas`, one
+of the same civil wars, was already filed under the conquest of the Inca Empire,
+and that precedent is what these two follow.
+
+**A7, once.** The Honduras item gives only `P585` 1524, which asserts a
+one-year conflict. Its cited article at revision 1370748307 dates the start
+(*"In March 1524, Gil González Dávila became the first Spaniard to arrive in
+what is now Honduras with the intention of conquest"*) and states the end
+(*"the main phase of the Spanish conquest was complete by 1539, although Olancho
+and the east were not brought within the Spanish Empire for some decades to
+come"*). So 1524-03 to 1539, and the qualification about Olancho is why the end
+is a year and not a day.
+
+**A15 (6), once.** Honduras's only located thing is `Q783`, Honduras the
+sovereign state, whose `P571` is 1821 — after the event ends. Refused, the lane
+written instead, the reason in `regionNote`. `spanish-conquest-of-guatemala` and
+`spanish-conquest-of-el-salvador` stand in no place either, so the batch is
+consistent with what is on disk.
+
+**A9, twice, and the note deviation 1353 asked for.** Both battles carry their
+own `P625` and both points derive to `americas`, which is the events' own lane,
+so the 24 September lane guard passes. Abancay's `P276` is Abancay **the city**,
+whose inception the item gives as 1540 — three years after the battle — and the
+article puts the fighting at *"the bridge and a ford on the Rio de Abancay"*, so
+the record is a `point` and not a `city`. Jaquijahuana's `P276` is Saqsaywaman,
+25 km east of the point the item itself gives; the item's own point wins, which
+is A12 (2)'s correction working.
+
+**The edges, and A15 (5) applied at the point of writing.** Four candidate
+quotes, three written and one refused, each verdict taken from
+`tools/import/chronology.mjs`'s own `verdictFor()`:
+
+| from → to | type | verdict |
+| --- | --- | --- |
+| `spanish-conquest-of-the-aztec-empire` → `spanish-conquest-of-honduras` | `precondition-of` | write |
+| `siege-of-cusco` → `battle-of-abancay` | `precondition-of` | write |
+| `new-laws` → `battle-of-jaquijahuana` | `precondition-of` | write |
+| *"After the successful Spanish conquest of the Inca Empire, the assassination of Francisco Pizarro in 1541 … most of the competent commanders … had been lost"* → `battle-of-jaquijahuana` | — | **refused: chronology with no cause stated** |
+
+**A15 (11): one of the three crosses an umbrella**, and it is the New Laws one.
+`new-laws` is filed under `spanish-colonization-of-the-americas` and
+`battle-of-jaquijahuana` under `spanish-conquest-of-the-inca-empire`, so the two
+have no parent in common; the article makes the link explicit — the encomenderos
+joined Pizarro because of the laws, and de la Gasca won by promising not to
+enforce them. The other two edges run between events that share a parent by
+construction, which is the shape of the problem A15 (11) is measuring.
+
+**The numbers.**
+
+| | before | after |
+| --- | --- | --- |
+| corpus, active | 1,337 | **1,340** |
+| **main** | 234 | **234** |
+| largest connected component | 743 | **745** |
+| components | 405 | 405 |
+| events with no edge | 316 | 316 |
+| edges, active | 1,120 | 1,123 |
+| edges crossing an umbrella | 573 of 1,120 | **574 of 1,123** — **1 of the 3 written** |
+| the `americas` lane | 360 active, 56 main | **363 active, 56 main** |
+| americas, 16th century | 46 / 5 | **49 / 5** |
+
+| century | europe | africa | asia | americas |
+| --- | --- | --- | --- | --- |
+| 1400s | 4 / 2 | — | — | 5 / 3 |
+| 1500s | 44 / 1 | — | — | **49 / 5** |
+| 1600s | 109 / 3 | 6 / 0 | 4 / 0 | 70 / 7 |
+| 1700s | 62 / 3 | 14 / 0 | 17 / 0 | 57 / 2 |
+| 1800s | 39 / 9 | 22 / 1 | 7 / 7 | 57 / 8 |
+| 1900s | 244 / 59 | 92 / 22 | 154 / 40 | 86 / 30 |
+| 2000s | 52 / 7 | 76 / 7 | 29 / 15 | 39 / 1 |
+| undated | 1 / 1 | 1 / 1 | — | — |
+| **all** | **555 / 85** | **211 / 31** | **211 / 62** | **363 / 56** |
+
+Africa before 1800: **20 active, 0 main**. Asia before 1800: **21 active, 0
+main**. Both unmoved, for the reason above. Europe before 1900: 258 active,
+paused and untouched.
+
+**The candidates this batch left, counted as A15 (1) asks.** Four in the
+americas and 41 in africa/asia:
+
+- `Q947591` **Battle of Las Salinas** (1538, 11 sitelinks) — files cleanly under
+  the conquest of the Inca Empire, and its article names **no** held event at
+  all, in 4,559 characters. No edge, so not imported.
+- `Q27230923` **Spanish conquest of the Muisca** (1537–1540, `P361` is the held
+  umbrella's item, and its article states its own span in its first sentence) —
+  **no causal sentence naming a held event in 336 sentences**. No edge.
+- `Q39087104` **Spanish conquest of Nicaragua** — `P361` is the held umbrella's
+  item and its article gives a usable edge (*"The discovery of the Aztec Empire
+  and its great riches changed the focus of exploration out of Panama from the
+  south to northwest"*), but **the item carries no date at all and the article
+  states no span for the conquest**: 1522 for Gil González Dávila's first entry,
+  1524 for León and Granada, 1530 for the Matagalpa attack, 1545 for Taguzgalpa
+  *"still beyond Spanish control"*. A7 says an interval the cited article does
+  not state stays unwritten, so this one waits for a source that states one.
+- `Q5148521` **Spanish Jamaica** — no date.
+- the 41 africa/asia candidates in the four veins tabled above.
+
+### A15 (2) — the cache, the last step of the batch
+
+`node tools/cache-evidence.mjs --fill`: **3 leads written, 0 refused**, one
+title-table request. After it, of 2,758 `wikipedia-en` citations on active
+records, 2,685 are on disk at the revision cited, 73 are a revision the cache
+cannot hold beside a more-cited one of the same item, and **0 are a revision
+that should be on disk and is not**.
+
+### Deviation 1355 — A14's cost is structural, not one cluster, and it is now 17 events
+
+Deviation 1201 measured A14's cost once: the French invasion of Egypt and
+Syria's eleven children are a component of eleven, outside the largest, while
+their umbrella is inside it. **This fire hit the same shape again, in a
+different lane and century, without looking for it.** `battle-of-abancay`'s
+edge to `siege-of-cusco` joined it to a **component of six** —
+`siege-of-cusco`, `battle-of-abancay`, `battle-of-vilcaconga`,
+`battle-of-maraycalla` and two more — and `spanish-conquest-of-the-inca-empire`,
+the parent of every one of them, **is inside the largest component**. So the
+component grew by two where three events were imported, and the one edge that
+would join six more is the parent-to-child edge A14 bars.
+
+That is the point. Deviation 1201 could be read as one unlucky umbrella; two
+independent instances in two fires say it is **what filing does to the graph**
+whenever an umbrella is edged to the world and its children are edged only to
+each other. The cost now stands at **17 events across two clusters**, and the
+next fire should expect to find more rather than treat each as news. It is still
+not a run's to lift: C8 is the owner's.
+
+### Deviation 1356 — the deviation numbers collided, and the sequence is 1355 upward
+
+The brief says deviations are numbered from **1200** upward. Early fires in this
+file instead continued the global sequence and reached **1354**; the fire of
+03:36Z then took the brief literally and wrote **1200, 1201 and 1202** — all
+three of which name something else earlier in the same file (1203 to 1212 are
+likewise taken). Two things now answer to each number. Nothing is renumbered,
+because the write-ups are quoted by later sections and a renumbering would
+silently repoint them; instead **this fire continues at 1355, and a reference to
+1200, 1201 or 1202 means the fire of 30 September that wrote them**. The brief's
+"from 1200 upward" is satisfied either way.
+
+## Where the run stands, for the fire that picks it up
+
+*30 September, after the forty-fifth fire: one batch, 51, three events, two
+places, three edges, and the americas' 16th century from 46 to 49. The main
+count did not move. **The fire's finding is larger than its batch**: africa and
+asia before 1800 cannot be grown under A5 and A14 together, and the sweep that
+establishes it is tabled under batch 51.*
+
+| | |
+| --- | --- |
+| corpus | **1,340 active** |
+| **main** | **234** — unchanged by the batch |
+| **largest connected component** | **745** (743 before) |
+| components | **405** (405 before) |
+| events with no edge at all | **316** (316 before) |
+| edges crossing an umbrella | **574 of 1,123**; **1 of the 3** written this fire |
+| Europe before 1900 | **258 active** — paused by A15 (1), untouched |
+| the `americas` lane | **363 active, 56 main** (360 before) |
+| **Africa before 1800** | **20 active, 0 main** — unmoved, and see below |
+| **Asia before 1800** | **21 active, 0 main** — likewise |
+| Africa / Asia, all centuries | **211 / 211** — A15 (1)'s gate is A10's 303 |
+
+| century | europe | africa | asia | americas |
+| --- | --- | --- | --- | --- |
+| 1400s | 4 / 2 | — | — | 5 / 3 |
+| 1500s | 44 / 1 | — | — | **49 / 5** |
+| 1600s | 109 / 3 | 6 / 0 | 4 / 0 | 70 / 7 |
+| 1700s | 62 / 3 | 14 / 0 | 17 / 0 | 57 / 2 |
+| 1800s | 39 / 9 | 22 / 1 | 7 / 7 | 57 / 8 |
+| 1900s | 244 / 59 | 92 / 22 | 154 / 40 | 86 / 30 |
+| 2000s | 52 / 7 | 76 / 7 | 29 / 15 | 39 / 1 |
+| undated | 1 / 1 | 1 / 1 | — | — |
+| **all** | **555 / 85** | **211 / 31** | **211 / 62** | **363 / 56** |
+
+### The next fire's moves, in order
+
+1. **The question to the owner is now three questions, and the third is new.**
+   The first two are unchanged from the last four stands: the **main count**
+   (five veins have stopped on it — the Inca Civil War, the Jewish arrival in
+   New Amsterdam, the Kongo chain of four, the Angolan Wars umbrella, and now
+   every 16th-century africa/asia candidate, because no held umbrella reaches
+   that cell) and **C8** (deviations 1201 and 1355, now 17 events across two
+   clusters). The third: **A15 (1)'s Europe pause is what closes the door into
+   the cell A15 (1) opened.** The Dutch–Portuguese War's own article states,
+   four times, that the **Iberian Union** is why the Dutch attacked Portugal's
+   colonies in Africa and Asia; it is the one bridge the reverse sweep found
+   into the pre-1800 africa/asia corpus, and it is an event in Europe before
+   1900. One record would unblock a whole cell. **None of the three is a run's
+   to settle.**
+2. **Do not re-walk the four veins tabled under batch 51.** They are measured
+   and closed: the Dutch–Portuguese War's 16 `P361` children in africa/asia
+   (13 articles read, one causal sentence and it names the parent), the seven
+   European war umbrellas' africa/asia children, the class sweep over
+   africa/asia 1500–1800 at ≥ 6 sitelinks, and the reverse scan of the held
+   hubs. The queries are in the batch note.
+3. **The americas' 16th century is the open vein, and it is the conquest of
+   Peru.** `Q5887915`, the civil wars between the conquerors of Peru, has no
+   English article and so cannot be an umbrella here, but its battles do have
+   articles and they file under `spanish-conquest-of-the-inca-empire` by span
+   and subject, as `battle-of-chupas` and now Abancay and Jaquijahuana do.
+   `Q947591` **Las Salinas** is the next one and it needs an edge its own
+   article does not give — try the Abancay and Jaquijahuana articles now that
+   both are held, and `battle-of-chupas`'s.
+4. **Bridging the component of six is worth more than three imports.**
+   `siege-of-cusco`, `battle-of-abancay`, `battle-of-vilcaconga`,
+   `battle-of-maraycalla` and two more sit outside the largest component while
+   their parent sits inside it. An edge from any of them to any event under
+   `spanish-colonization-of-the-americas` other than their own parent joins six
+   at once. `battle-of-cajamarca` and `battle-of-chupas` are components of one
+   and would come with them.
+5. **The scanner is the tool, and read sections not leads** — unchanged from
+   the last stand, and it earned its keep again: every usable sentence this fire
+   found was in a § Background, and `verdictFor()` is what decided all four
+   edges. The scanner is fifteen lines over `tools/import/chronology.mjs`'s own
+   `namesHeldEvents()`, `statesACause()` and `verdictFor()`, run over an article
+   split into sentences. **`mentions()` needs the held record's own name**, so
+   it misses a sentence that says *"the campaign that overthrew the Aztec
+   Empire"* — the Honduras edge came from a sentence the scanner did not flag,
+   found by reading the § Background beside it. A widened sweep should keep a
+   person, or this fire's habit, in that gap.
+6. **SPARQL works from this sandbox** and it is how a vein is found now. The
+   class sweep `?e wdt:P31/wdt:P279* wd:Q1190554` over the whole world times
+   out; **filter by `?e wdt:P17 ?cty . ?cty wdt:P30 wd:Q18`** (or `Q49`) and it
+   returns in seconds. `Q1656682` is the wrong class — battles descend from
+   `Q1190554`, occurrence, not from event — which is why the first sweep this
+   fire ran found two candidates in the whole 16th century.
+7. **`createRegionDeriver` takes `{ lon, lat }`, not `(lon, lat)`**, and passing
+   two arguments returns `null` silently for every record, which reads as "no
+   candidate is in your lane". It cost this fire two sweeps.
+8. **Still open, unchanged**: C8, deviation 1323, deviation 1345, deviation
+   1346's ocean islands, deviation 1348's lane guard, deviation 1353, question
+   11 (the Nine Years' War, `Q152218`), `Q718893` *theater of war*, `Q20639061`,
+   `Q5037062`, `Q4677270`, `Q4677390`, the nine atlas umbrellas with no
+   `wikidata`, the Angolan Wars umbrella (`Q132776772`, whose `P361` `Q5148448`
+   is still unread), batch 48's Chilean four, and the place pass on records that
+   already exist, which is M42's.
+
