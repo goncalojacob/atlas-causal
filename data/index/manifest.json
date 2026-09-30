@@ -43,19 +43,19 @@
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-d3682bd2746b.json",
+      "file": "index/attributes-1800-1899-d0ee008b48c5.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-68686293c71c.json",
+      "file": "index/attributes-1900-1999-13c2900b69b1.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
     },
     {
-      "file": "index/attributes-2000-2099-8c394c89dbe5.json",
+      "file": "index/attributes-2000-2099-050fadbacb51.json",
       "from": 2000,
       "key": "2000-2099",
       "to": 2099
@@ -944,7 +944,7 @@
       "id": "law"
     },
     {
-      "count": 12,
+      "count": 13,
       "id": "other"
     },
     {
@@ -1025,7 +1025,7 @@
   "counts": {
     "actors": 2699,
     "edges": 1133,
-    "events": 1573,
+    "events": 1574,
     "narratives": 2,
     "offices": 11,
     "places": 772,
@@ -1073,13 +1073,13 @@
     }
   ],
   "files": {
-    "citers": "index/citers-64078e666a5d",
-    "core": "index/core-494673a6db92.json",
+    "citers": "index/citers-26cf9a4d7182",
+    "core": "index/core-3327b0295da3.json",
     "grounds": "index/grounds-ed633e44cc96.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-2b146226d308.json",
-    "search": "index/search-709b3034ce3d.json",
-    "sources": "index/sources-b399a7efae08.json",
+    "review": "index/review-064ba6cfc144.json",
+    "search": "index/search-90b1c8af9d02.json",
+    "sources": "index/sources-1f63772c2ac1.json",
     "territories": "index/territories-72e817bbe9c2.json"
   },
   "historyShards": [
@@ -1112,21 +1112,21 @@
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-c90da96d1b9a.json",
+      "file": "index/history-event-1800-1899-99eaff608123.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-69ae22fbca9f.json",
+      "file": "index/history-event-1900-1999-2a34903a5f06.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
       "to": 1999
     },
     {
-      "file": "index/history-event-2000-2099-11a78e245942.json",
+      "file": "index/history-event-2000-2099-6d69621451a6.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "event",
