@@ -2363,6 +2363,28 @@ In full in the history file. The ones that decide something:
   in the 740: a family sweep densifies the graph and joins nothing to it. The
   rate is the point — **six edges for 149 articles against zero for 407** — and
   it is still not a substitute for imports. Deviations 1486 and 1487.
+- **Three shapes of sweep measured, and the reason none of them joins anything.**
+  Batch 73, on 30 September at 15:07Z, re-ran the corpus sweep the 09:07Z fire
+  left unfinished — **405 articles, with the four refusal classes applied as the
+  sweep matched rather than after it**, which turned 301 raw candidates into 59
+  pairs to read where that fire had read 132 by hand (deviation 1490). **Two
+  edges written**: the First Sino-Japanese War into the Xinhai Revolution, from
+  the war's own lead, and the COVID-19 pandemic into the Tigray war, from its
+  § Lead-up to the war. It also read the **four families this lane has left**
+  (36 members) and got **fourteen candidates, every one a parent–child pair**
+  A14(6) forbids — the sibling shape batch 72 measured is spent here (deviation
+  1488) — and the **35 isolated Africa or Asia records with an article**, read
+  against the events they share an actor or a place with, for two more of the
+  same. **The finding is not the two edges.** Across three fires and three
+  shapes, eight edges have been written and **not one component has been joined
+  to another**, because every end was already inside the 740: a record whose
+  article states a cause is a record other articles name, so **the 317 events
+  with no edge are isolated because nothing names them, and no sweep over
+  articles will reach them** (deviation 1489). A fire should not budget one as a
+  way of growing the graph. Batch 73 also **closed A14(4)'s open question on
+  `six-day-war --> yom-kippur-war`**: the better sentence that retraction hoped
+  for was looked for and is not there, and the causal path between those ends is
+  already held through `war-of-attrition`.
 
 - **The seventh relation type. Answered, and half done.** Rule 19 refused
   `portugal member-of european-union`, so ten memberships were written as

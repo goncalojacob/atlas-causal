@@ -17860,3 +17860,210 @@ for. **The check on the head commit is `success`** (run 2132 of `validate.yml`).
 Runs 2126, 2129 and 2131 were each cancelled by the next push, which is deviation
 1258's chain; the local suites are what stands behind the records, as the 09:07Z
 fire's section argues.
+
+## Batch 73 — the corpus sweep re-run, with the refusals applied as it goes
+
+*30 September, the fire that claimed at 15:07Z. **An import fire that imported
+nothing — the fourth in a row — and wrote two edges.** Its finding is not the
+two: it is that **three sweeps of three different shapes have now joined nothing
+to anything**, and that the reason is structural rather than a matter of budget.*
+
+### Three sweeps, because the first two were spent before they began
+
+The last stand named six families left in this lane and said a fire with an hour
+should take two or three and expect one or two edges each. **The families are
+much smaller than that estimate**: `second-sino-japanese-war` has 6 members,
+`algerian-war` 11, `first-indochina-war` 1, `soviet-afghan-war` 0, and
+`indo-pakistani-war-of-1971` is not a record this atlas holds at all. All four
+that exist were read — **36 members, every one at the revision the atlas cites.**
+
+| the family sweep, all four families at once | count |
+| --- | --- |
+| articles read, at the revision the atlas cites | **36** |
+| candidate sentences (a cause stated, not chronology-only, naming a family member) | **14** |
+| pairs behind them | **13** |
+| refused: a family record and its own child, which A14(6) forbids | **14** |
+| **written** | **0** |
+
+**Every one of the fourteen was a parent–child pair.** Not one member's article
+states a cause naming another member: the sibling→sibling shape batch 72
+measured at six-for-149 is **exhausted in this lane**, and what is left inside a
+family is the one pair A14(6) will not let a batch write. **Deviation 1488.**
+
+A second sweep was then built on a selector the family shape cannot reach: **the
+isolated record's own article, read against the events it shares an actor or a
+place with**, within forty years and inside this lane. Of the 317 active events
+with no edge, **35 are in Africa or Asia and carry an article**; 13 of those have
+any companion at all, and those 13 were read. **Two candidates, both parent–child,
+both refused.** The other 22 have no companion to be read against.
+
+### The re-run the 09:07Z stand asked for, and what the refusals cost
+
+That fire read 407 articles, kept nothing, and left **44 survivors it did not
+read and did not write down**; its stand said a later fire should re-run rather
+than trust the list. This is that re-run, over the **405** active Africa or Asia
+records with an article and a cached revision, with the four refusal classes
+applied **at the point of matching rather than afterwards** — which is the one
+method change this fire makes, and it is what let one fire read the whole corpus
+and still have time to judge what survived.
+
+| the corpus sweep, re-run | count |
+| --- | --- |
+| articles read, at the revision the atlas cites | **405** |
+| raw candidate sentences naming a second held event | **301** |
+| refused: the pair is already in the corpus (deviation 1486) | **138** |
+| refused: a parent and its own child, which A14(6) forbids | **77** |
+| refused: an end carries `m42-umbrella`, and an umbrella is not a claim | **4** |
+| refused: the quote names a third held event as the cause (A15(5)) | **15** |
+| **survivors, read one by one** | **67 over 59 pairs** |
+| **written** | **2** |
+
+Rule 4 refused none *at the sweep*, because this fire did not let the matcher
+decide an arrow it cannot see: the 59 survivors were read, and the arrow was one
+of the things the reading judged. Of the 57 refused by reading, the recurring
+shapes are **a comparison** (the Sayfo *"less well known than"* the Armenian
+genocide; Darfur and Rwanda; Dien Bien Phu and Khe Sanh; the Korean War and the
+"Forgotten War" sentence), **a homonym** (the *Operation Badr* of the Iran–Iraq
+War and of Kargil are two different operations, neither of them the 1973 one the
+atlas holds), **infobox text still read as prose** where the article renders its
+box as divisions rather than a table, and **rule 4** where the true statement is
+that a later event changed the course of an earlier, longer one.
+
+### The two that stand
+
+- **`first-sino-japanese-war --precondition-of--> xinhai-revolution`**, from the
+  war's own lead: *"Within China, the defeat was a catalyst for a series of
+  political upheavals led by Sun Yat-sen and Kang Youwei, culminating in the 1911
+  Revolution and ultimate end of dynastic rule in China."* The atlas already had
+  a path between these two ends, through `boxer-rebellion`, which the same
+  article gives its own sentence — the xenophobic reaction. This edge is the
+  other mechanism the lead names, and neither is given the other's work.
+- **`covid-19-pandemic --precondition-of--> tigray-war`**, from the war's
+  § Lead-up to the war, where the postponed election is the first step of the
+  constitutional dispute the two governments then fought over, through the
+  extended terms, the TPLF's own regional election and the funding cut the TPLF
+  called *"tantamount to declaration of war."* **Every step between is in the
+  source and not in the graph**, and the explanation says so rather than letting
+  `precondition-of` imply the atlas holds the chain.
+
+### Two refusals worth writing down rather than repeating
+
+- **`six-day-war --> yom-kippur-war` stays retracted.** A14(4) withdrew it on
+  24 September saying *"a better sentence almost certainly exists in the same
+  article, and finding it is a reading, not a sweep"* — so this fire went and
+  read. What the 1973 article gives is in § Sinai front and is a tactical
+  contrast, not a statement of the link: *"In the Six-Day War, the Israeli Air
+  Force had pummeled the defenseless Arab armies; this time, Egypt had heavily
+  fortified their side of the ceasefire lines with SAM batteries provided by the
+  Soviet Union."* And the causal path between the two ends **is already in the
+  atlas**, as `six-day-war --> war-of-attrition --> yom-kippur-war`. The
+  retraction stands, and A14(4)'s open question on this record is **closed**: the
+  better sentence was looked for and is not there.
+- **`philippine-american-war --> boxer-rebellion` is not an edge.** The Boxer
+  article says *"The US was able to play a role due to the presence of US ships
+  and troops stationed in Manila since the US conquest of the Philippines during
+  the Spanish–American War and the subsequent Philippine–American War."* That is
+  a statement about **one participant's ability to take part**, not about the
+  rebellion, and an edge would assert something no historian claims. (The
+  Spanish–American War, the other half of the sentence, is not a record this
+  atlas holds.)
+
+### Counts
+
+**Nothing imported; the corpus gains two edges and no record.** After them:
+**1,333 active events, 234 main, 1,099 filed** — the main count is unmoved, which
+is what A6 asks — **1,121 active edges, largest connected component 740, 574
+edges crossing an umbrella, 406 components, 317 events with no edge.** Per-lane
+active, unmoved because nothing was imported: **Europe 555, Americas 359, Asia
+211, Africa 208.** Validator **0 errors, 611 warnings**; `--index` clean.
+
+**Both edges cross an umbrella**, which A15(11) and A5 ask every batch to report:
+`crossingAnUmbrella` moves **572 → 574** and `insideOneUmbrella` stays at **547**.
+**All four of their ends were already inside the 740**, so the component count
+does not move and neither does the largest. Batch 72's twelve ends were too.
+**Three sweeps of three shapes, eight edges, and not one of them has joined a
+component to another** — and the reason is now measurable rather than suspected:
+a record whose article is rich enough to state a cause is a record other articles
+name, and it is therefore already in the giant component. **The 317 with no edge
+are isolated because nothing names them, not because nobody has read them**, and
+no sweep over articles will reach them. **Deviation 1489.**
+
+**Candidates left unconnected, which A15(1) asks every batch note to carry: 57** —
+the survivor pairs this fire read and refused. Behind them the sweep refused 234
+more without a reading, by the four classes in the table.
+
+A15(2)'s recache, as the last step: **2,751 `wikipedia-en` citations on active
+records, 2,678 on disk at the revision cited, 0 that should be on disk and are
+not.** The 73 the cache cannot hold beside a more-cited revision of the same item
+is exactly the figure batch 72 left, so neither of this batch's two citations
+added to it — which is the point of reading at the cached revision. `--fill` had
+nothing to do.
+
+A11(b)'s partition check: the sweep reads only records this branch already holds
+and nothing was imported, so there is no collision with `origin/m42b` to check
+for.
+
+### The suites and the check, for batch 73
+
+**Both suites are green on this fire's final tree: 2,241 tests, nothing
+skipped** — **1,928 pure** and **313 browser**, run the way the check runs them
+since M63. No test was added: the two edges are judged by tests that already
+exist, and `tests/m42-filing.test.mjs`, `tests/leadcache.test.mjs` and
+`tests/m42.test.mjs` were run **before the first commit**, as the last two stands
+ask.
+
+## Where the run stands after batch 73, for the fire that picks it up
+
+*30 September, the fire that claimed at 15:07Z. An import fire that imported
+nothing, wrote two edges, and closed one of A14(4)'s open questions. What it
+leaves is a measurement that should change how a fire budgets its hour.*
+
+**What is open, in the order a fire should weigh it:**
+
+- **The three-way bind is still the finding and it is still the owner's.**
+  A15(1), A14(6) and A6 close on each other; batch 71's section states the case
+  and names the two records an A6 relaxation would unblock
+  (`Jewish exodus from the Muslim world`, `Decline and modernization of the
+  Ottoman Empire`). **Nothing has changed and no fire can change it.** Africa and
+  Asia stand at **208 and 211** against A10's 303, and four fires in a row have
+  now moved neither number.
+- **Do not budget another sweep over articles as a way of growing the graph.**
+  Three shapes have now been measured on this lane — corpus-wide (407 articles,
+  0 edges), family (149 for 6, then 36 for 0), and isolated-against-companions
+  (13 for 0) — and this fire's re-run adds 405 for 2. **Eight edges across three
+  fires and not one component joined**, because every end was already in the 740.
+  Deviation 1489 states why. A fire that wants the 317 connected must import the
+  records that name them, which is the bind above.
+- **The family vein is spent in this lane, not merely thin.** All four families
+  that still exist were read whole this fire and gave **fourteen candidates, every
+  one of them a parent–child pair**. Deviation 1488. There is no family left to
+  take.
+- **What a later fire should not re-derive**, beside the two in the section
+  above: `operation-unified-protector` under `libyan-civil-war` (it outlives the
+  war's cited end by eight days) and `tet-offensive --> easter-offensive` (the
+  cause the article names is Operation Lam Son 719, which the atlas does not
+  hold), both from batch 72's stand and both still true.
+- **Three A8 filings a curation fire should weigh**, found by this sweep and left
+  alone because an import fire does not file: `chaplain-medic-massacre` under
+  `battle-of-taejon` (the Taejon article: the massacre *"took place during the
+  battle near the Kum River"*), `operation-accountability` under
+  `south-lebanon-conflict`, and `mozambican-war-of-independence` under
+  `portuguese-colonial-war-1961-1974`. Each is a part-of statement the article
+  makes plainly, and each is why the pair could not be an edge. The last one has
+  a guard on it: the Portuguese Colonial War carries `m62-umbrella`.
+- **A15(6)'s note oracle is still written and still unused.** `refusedPlaces()`
+  reads 28 refusals off disk; the next places pass should hand it
+  `refusedPlaces(record)`. Unchanged from the last three stands.
+- **Unchanged and still the owner's:** A6's lane rule against the period
+  umbrellas; deviations 1473 and 1482; `execution-of-the-romanov-family` and
+  deviation 1423; A11's area clause; deviation 1478; A15(12)'s 177 uncategorised
+  events; the EEC's closing year; deviation 1461's two display faults; and
+  `origin/m42b`'s five place placeholder summaries.
+- **Deviation numbers: take the next above 1490.** This fire wrote **1488** (a
+  family's candidates are parent–child or nothing, once the sibling shape is
+  spent), **1489** (a record an article names is already in the giant component,
+  so no sweep over articles reduces the component count) and **1490** (applying
+  the refusal classes at the point of matching rather than after it is what let
+  one fire read 405 articles and still judge what survived: 301 raw candidates
+  became 59 pairs to read, where the 09:07Z fire read 132 by hand for the same
+  corpus).
