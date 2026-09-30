@@ -2417,6 +2417,49 @@ In full in the history file. The ones that decide something:
   five fires.** No edge, and none was possible: the only record written is an
   umbrella, and an umbrella is not a claim.
 
+- **The filing vein reachable from the cache is one record wide, and the sweeps
+  have a blind spot the count never showed.** Batch 75, on 30 September at
+  21:07Z. The fire read **1156 containers' leads** — every active record with a
+  cached article at the revision it cites, not just the eleven umbrellas the four
+  fires before it had read — against the **89** main events in the Africa and Asia
+  lanes, and found **one** filing: `cambodian-vietnamese-war` under
+  `indochina-wars`, the only war of that complex that was not filed, argued from
+  the umbrella's own article (*"several wars were fought: The Cambodian-Vietnamese
+  War began when Vietnam invaded Cambodia"*, revision 1373921212) and from the
+  child's own (*"part of the Third Indochina War"*, revision 1376151864). **Main
+  count 230 to 229.** The finding is not the one: it is **deviation 1495** — the
+  sweeps match a record's *names*, so an article that calls a held event
+  *"Vietnam's invasion and occupation of Cambodia in 1978"* is invisible where the
+  record is titled *Cambodian-Vietnamese War*. This fire's one edge,
+  `cambodian-vietnamese-war --reacted-to--> sino-vietnamese-war`, sat in the first
+  paragraph of an article three sweeps had read; it was found by reading and not by
+  matching. **Every "exhausted" verdict of batches 72, 73 and 75 therefore means
+  exhausted for names the matcher can see**, and the descriptions are unread. The
+  edge takes the article's own hedge (*"ostensibly in response to"*) and does not
+  spend it, at `probable`, naming the Sino-Soviet split as the other reading. The
+  component did not move: both ends already reached `vietnam-war`. **Three more
+  entries.** Deviation 1493: the action API and the REST API are rate-limited
+  separately, so a 429 on `en.wikipedia.org/w/api.php` — which is what
+  `--candidates` reads, and what it answered on every try — is **not** "no
+  network", because `api/rest_v1/page/summary` and `www.wikidata.org/w/api.php`
+  both answer 200 and an article can still be read at a revision. Deviation 1494: a
+  filing's argument may not fit the record it files — `review.note` caps at 500
+  characters and this record's stood at 488, so the two quotations are in the pool
+  file, which is where the filing suite asks for them anyway. Deviation 1496: **an
+  umbrella for something that happened across two lanes cannot hold the members
+  outside its own** — `arab-spring`'s own lead names Yemen and Bahrain among the
+  five countries the protests spread to, and both are drawn in the Asia lane
+  against the umbrella's `region: africa`, so `2011-yemeni-revolution` and
+  `2011-bahraini-uprising` are unfilable and the fault is the single `region` on
+  the period record, not anything about the members. That is A6's lane rule
+  arriving from a new direction and it stays the owner's. Africa's twenty
+  post-independence mains still have no period to fall into, and `Congo Wars` is
+  not one: it redirects to a set-index page with no span. **Deviation 1497**: M79's
+  three shapes for `parent` are not interchangeable on disk — the contribution
+  form's writer normalises one parent to a bare string, so `["indochina-wars"]`
+  validated and failed *an unedited save of a record in data/ is byte identical*,
+  the one test that sees it.
+
 - **The seventh relation type. Answered, and half done.** Rule 19 refused
   `portugal member-of european-union`, so ten memberships were written as
   `allied-with` with a note — a substitution, reported and never adopted. The
