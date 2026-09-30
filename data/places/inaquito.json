@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "inaquito",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The Battle of Iñaquito’s item (Q1609295) carries no P625, so A9’s second step applies: its P276 is Iñaquito (Q4886828), an urban parish of Quito, and the point is that item’s own P625 read on 2026-09-30. The class Q2579179, urban parish, is in no row of the class table, so the precision stays at the import’s own fallback, point."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4886828",
+  "wikipedia": {
+    "en": "Iñaquito"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-30"
+  },
+  "sources": [],
+  "names": [
+    "Iñaquito"
+  ],
+  "where": {
+    "lon": -78.48074,
+    "lat": -0.18349,
+    "precision": "point",
+    "label": "Iñaquito"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

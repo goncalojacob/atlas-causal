@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-inaquito--battle-of-jaquijahuana--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-52"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Jaquijahuana\", revision 1370444091"
+    }
+  ],
+  "from": "battle-of-inaquito",
+  "to": "battle-of-jaquijahuana",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Jaquijahuana’s article states what Iñaquito left behind it: Gonzalo Pizarro “crushed the army of Blasco Núñez Vela, who was decapitated on the field of battle. This, in its turn, ensured a struggle for the control of Peru between Gonzalo Pizarro and the royal forces.” Jaquijahuana is where that struggle was decided, by the same article’s account, and the viceroy’s death at Iñaquito is why the crown sent de la Gasca in his place. `precondition-of` and not `caused`: the article gives the defections at Jaquijahuana, not Iñaquito, as what settled it. `probable`, because the only source the atlas can open here is the article (rule 22).",
+  "dispute": null
+}

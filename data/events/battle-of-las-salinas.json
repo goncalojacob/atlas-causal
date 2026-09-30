@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "battle-of-las-salinas",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": "2026-09-30",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-by-span-and-subject",
+      "m42b-batch-52"
+    ],
+    "note": "Filed under spanish-conquest-of-the-inca-empire by span and subject (M62): 26 April 1538 is inside 1532-1572, and the item’s own description calls it a \"1538 battle that took place during the Spanish conquest of Peru\". The item’s own P361 is Q5887915, the civil wars between the conquerors of Peru, which this atlas does not hold and which has no English Wikipedia article to be written from; battle-of-chupas and battle-of-abancay, two of the same civil wars, are already filed under this umbrella."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q947591",
+  "wikipedia": {
+    "en": "Battle of Las Salinas"
+  },
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-09-30"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q947591"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Las Salinas\", revision 1370267925"
+    }
+  ],
+  "title": "Battle of Las Salinas",
+  "summary": "The English Wikipedia article \"Battle of Las Salinas\", at revision 1370267925, opens: \"The Battle of Las Salinas was a military conflict and decisive confrontation between the forces of Hernando and Gonzalo Pizarro against those of rival conquistador Diego de Almagro, on April 26, 1538, during the Conquest of Peru. Both camps claimed to represent the authority of the Spanish Crown; Pizarro's forces controlled the province of Nueva Castilla, and those of Almagro, Nueva Toledo.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q947591, imported by tools/import/wikidata.mjs. The item's own description reads \"1538 battle that took place during the Spanish conquest of Peru\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1538,
+    "end": 1538,
+    "date": "1538-04-26"
+  },
+  "place": "cachipampa",
+  "region": null,
+  "regionNote": null,
+  "parent": "spanish-conquest-of-the-inca-empire",
+  "category": "war",
+  "actors": []
+}
