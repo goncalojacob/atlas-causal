@@ -40,7 +40,10 @@
   },
   "place": "dili",
   "region": null,
-  "parent": "third-portuguese-republic-since-1974",
+  "parent": [
+    "third-portuguese-republic-since-1974",
+    "decolonisation-of-asia"
+  ],
   "actors": [
     {
       "actor": "indonesia",
