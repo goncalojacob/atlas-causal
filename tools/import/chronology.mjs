@@ -220,6 +220,10 @@ export function namesHeldEvents(text, candidates, { exclude = [], when = null } 
   for (const candidate of candidates ?? []) {
     if (!skip.has(candidate.id)) continue;
     for (const name of candidate.names ?? []) {
+      // As it stands as well as stripped: `gaza-war` carries no disambiguator
+      // at all, and its own first sentence was read as naming
+      // `gaza-war-2008-2009`, whose name strips to the very same words.
+      claimed.add(fold(name));
       const stripped = undisambiguated(name);
       if (stripped) claimed.add(fold(stripped));
     }

@@ -251,6 +251,29 @@ test("a bare name an excluded end also answers to is that end naming itself", ()
   );
 });
 
+test("an excluded end whose own name is already the bare form closes it too", () => {
+  // `gaza-war`'s title carries no disambiguator at all, so the first shape of
+  // 1483 — the stripped name of an excluded end — claimed nothing for it, and
+  // *"The Gaza war is an armed conflict in the Gaza Strip and Israel"*, its own
+  // first sentence, was read as naming `gaza-war-2008-2009`. What an excluded
+  // end answers to is its names as they stand as well as stripped.
+  const both = [
+    { id: 'gaza-war', names: ['Gaza war'], when: { start: 2023, end: null } },
+    { id: 'gaza-war-2008-2009', names: ['Gaza War (2008\u20132009)'], when: { start: 2008, end: 2009 } },
+  ];
+  const lead = 'The Gaza war is an armed conflict in the Gaza Strip and Israel.';
+  assert.deepEqual(
+    namesHeldEvents(lead, both, { exclude: ['gaza-war'], when: { start: 2023, end: null } }).map((n) => n.id),
+    [],
+  );
+  // And the 2008 war written out in full is still the 2008 war.
+  assert.deepEqual(
+    namesHeldEvents('a scale not seen since the Gaza War (2008\u20132009)', both,
+      { exclude: ['gaza-war'], when: { start: 2023, end: null } }).map((n) => n.id),
+    ['gaza-war-2008-2009'],
+  );
+});
+
 test('an excluded end closes only the bare route, and only its own name', () => {
   // A full name is unambiguous, so an excluded end never closes it: the atlas
   // holds both Breitenfelds and an article about 1642 that writes the 1631 one
