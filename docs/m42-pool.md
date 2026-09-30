@@ -17290,6 +17290,14 @@ containing 1789–1918 are `american-indian-wars` and the same Brazilian record.
 A6's *"the main count must not rise"* therefore forbids importing either, because
 an event no umbrella fits arrives as a main event.
 
+**The revisions those four quotes were read at**, so that the fire that writes
+them once the owner has answered cites what this fire actually read and A15(2)'s
+recache has something to put on disk: `Jewish exodus from the Muslim world` at
+**1375572604**, `Decline and modernization of the Ottoman Empire` at
+**1374227337**, `Operation Gibraltar` at **1370632718**, and — for the sentence
+that argues for `operation-grand-slam` — the same Gibraltar revision, because
+Grand Slam's own article (**1377484773**) states no cause at all.
+
 **So the three rules close on each other, and this is the whole of it:**
 
 1. **A15(1)** — a batch may import only what it can connect. The `P361` children
