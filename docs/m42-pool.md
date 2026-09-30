@@ -18596,4 +18596,16 @@ measurement that narrows what the next fire should try.*
   description rather than title) and **1496** (an umbrella for something that
   happened across two lanes cannot hold the members outside its own) and **1497**
   (one parent is a bare string; a list of one validates and is not the bytes the
-  form writes).
+  form writes) and **1498** (a history shard reads git, so the index must be
+  rebuilt *after* the records' commit).
+
+**Deviation 1498, from the check rather than from the reading.** The first index
+commit of this batch went red on rule 16, at
+`history-edge-1900-1999`, and the reason is that **one part of the index does not
+read `data/` at all**: `tools/lib/history.mjs` builds each record's versions out of
+the repository's own commits. An index built in a dirty tree therefore records one
+version fewer for a record whose change is not committed yet, and cannot be
+byte-identical to a fresh build on the pushed tree. **"Records first, rebuild, then
+commit the index" (798) means rebuild after the records' commit**, not merely
+before the index's — which is what this fire did the first time and what the check
+caught. The corrected shard is `63dde31b3eaa`.
