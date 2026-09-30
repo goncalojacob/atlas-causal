@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "dutch-brazil-1630-1654--capture-of-luanda--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-49"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Recapture of Angola\", revision 1370706489, § lead"
+    }
+  ],
+  "from": "dutch-brazil-1630-1654",
+  "to": "capture-of-luanda",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The expedition that took Luanda was Dutch Brazil’s, not the Republic’s: “In 1641 Johan Maurits sent an expedition under Admiral Cornelis Jol from Recife in Dutch Brazil to seize the Angolan capital of Luanda.” The governor, the fleet and the port of departure are all the Brazilian colony’s, and the same article says why that colony wanted Angola: it “couldn’t survive without the slaves from Angola”. `enabled` rather than `caused`, because the colony furnished the means and the command and not the decision; `probable`, because the only source the atlas can open here is the article itself (rule 22).",
+  "dispute": null
+}
