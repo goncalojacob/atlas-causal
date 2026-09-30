@@ -18263,8 +18263,12 @@ the check, at run 2153, which is red for that reason and no other**: a main even
 with no actor and no place is bare, and `docs/m67-umbrellas.md` must say why. Its
 section 15 had already said why for `decolonisation-of-africa` — *a period has
 neither an actor nor a place to give* — and this batch's section there says it for
-Asia. **The check on the head commit is `success`** (run 2155 of `validate.yml`).
-Run 2152 was cancelled by the next push, which is deviation 1258's chain.
+Asia. **The check is `success` on the tree that carries the records and the index**
+(run 2155 of `validate.yml`, commit `a48335af`) **and on this fire's final head**
+(run 2159, commit `e639a9e4`). Runs 2152 and 2158 were cancelled by the next
+push, which is deviation 1258's chain and costs nothing; the only commit whose
+own run this fire does not wait on is this paragraph's, which touches no code and
+no record.
 
 ## Where the run stands after batch 74, for the fire that picks it up
 
