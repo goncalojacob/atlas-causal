@@ -229,6 +229,24 @@
         }
       ]
     },
+    "capture-of-luanda--battle-of-kombi--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "capture-of-luanda--recapture-of-angola--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
     "dutch-brazil-1630-1654--battle-of-abrolhos--precondition-of": {
       "from": "git",
       "versions": [
@@ -250,6 +268,15 @@
             "sources"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "dutch-brazil-1630-1654--capture-of-luanda--enabled": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
         }
       ]
     },

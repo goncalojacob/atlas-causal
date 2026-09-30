@@ -3320,6 +3320,18 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-luanda--battle-of-kombi--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Kombi\", revision 1370445877, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-luanda--recapture-of-angola--precondition-of",
+      "kind": "edge",
+      "locator": "\"Recapture of Angola\", revision 1370706489, § lead"
+    },
+    {
+      "dissent": false,
       "id": "chadian-intervention-in-northern-mali--battle-of-ifoghas--enabled",
       "kind": "edge",
       "locator": "\"Battle of Ifoghas\", revision 1370443583, § Deployment of Franco-Chadian forces in the Kidal region"
@@ -3761,6 +3773,12 @@
       "id": "dutch-brazil-1630-1654--battle-of-elmina-1637--enabled",
       "kind": "edge",
       "locator": "\"Battle of Elmina (1637)\", revision 1375872702"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-brazil-1630-1654--capture-of-luanda--enabled",
+      "kind": "edge",
+      "locator": "\"Recapture of Angola\", revision 1370706489, § lead"
     },
     {
       "dissent": false,
@@ -10514,6 +10532,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kombi",
+      "kind": "event",
+      "locator": "\"Battle of Kombi\", revision 1370445877"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-konna",
       "kind": "event",
       "locator": "\"Battle of Konna\", revision 1375363074"
@@ -11975,6 +11999,12 @@
       "id": "capture-of-grenada-1779",
       "kind": "event",
       "locator": "\"Capture of Grenada (1779)\", revision 1370608745"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-luanda",
+      "kind": "event",
+      "locator": "\"Dutch Loango-Angola\", revision 1370615995, § Capture of Luanda (1641)"
     },
     {
       "dissent": false,

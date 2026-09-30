@@ -10368,6 +10368,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "degree": 1,
+      "id": "battle-of-kombi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Kombi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -18470,6 +18502,43 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        },
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-09-30",
+      "degree": 3,
+      "id": "capture-of-luanda",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "article-is-redirect",
+          "filed-from-p361"
+        ],
+        "note": "A15(8): the item's sitelink \"Capture of Luanda\" redirects to \"Dutch Loango-Angola\", whose title is none of the item's names, so no lead is quoted and the summary is the item's own fields. The span is read from § Capture of Luanda (1641), the section the redirect points at: \"On 25 August 1641, the Dutch landed 2,145 troops near Luanda\" and \"On 19 September, the Dutch drove them from that position\". The item's P585 gave the year alone.",
+        "status": "draft"
+      },
+      "revised": "2026-09-30",
+      "status": "active",
+      "title": "Capture of Luanda"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
       "category": "war",
@@ -21227,7 +21296,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 11,
+      "degree": 12,
       "id": "dutch-brazil-1630-1654",
       "kind": "event",
       "names": [
@@ -33472,7 +33541,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 2,
       "id": "recapture-of-angola",
       "kind": "event",
       "origin": {
@@ -46091,6 +46160,12 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "capture-of-luanda",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "capture-of-sint-eustatius",

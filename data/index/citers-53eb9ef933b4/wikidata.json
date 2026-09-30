@@ -3602,6 +3602,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kombi",
+      "kind": "event",
+      "locator": "Q4871476"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-konna",
       "kind": "event",
       "locator": "Q3018708"
@@ -5057,6 +5063,12 @@
       "id": "capture-of-grenada-1779",
       "kind": "event",
       "locator": "Q3403859"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-luanda",
+      "kind": "event",
+      "locator": "Q5037028"
     },
     {
       "dissent": false,
