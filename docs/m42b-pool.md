@@ -13424,6 +13424,22 @@ because it opens with none of the four openers, and it is chronology all the
 same. **It was refused by reading**, and the cost of refusing it is the whole
 point of this batch's shape — see the component note below.
 
+**A sixth candidate was read and left unimported**, which A15 (1) asks a batch
+to count. `Battle of Huarina` (its English article at revision 1370443308; its
+Wikidata item was never looked up, because the article settled it first) is the 1547 battle between Iñaquito and Jaquijahuana and
+would have extended the largest component's own chain rather than another
+island. Both of its candidate quotes fail: `verdictFor()` refuses the first
+outright — *"After sending away the royally appointed governor … and later
+defeating and killing him in the battle of Añaquito, Gonzalo Pizarro assembled
+an army of 1,200 men"* is chronology with no cause stated — and the second,
+*"Ultimately, the viceroy won the cause of most of Gonzalo Pizarro's officers
+and men, and on April 9, 1548, the pizarrists were finally overthrown in the
+battle of Jaquijahuana"*, is chronology by reading, deviation 1358 for the
+second time in one batch. **A5 says a candidate the batch cannot connect is not
+imported, so it was not.** *Capitulación de Toledo*, the 1529 partition the Las
+Salinas article gives as the origin of the whole quarrel, was probed as a
+bridge and **has no English article**, so A2 closes it too.
+
 **A15 (11): one of the four crosses an umbrella**, and it is `new-laws` →
 `battle-of-inaquito`. `new-laws` is filed under
 `spanish-colonization-of-the-americas` and Iñaquito under the conquest of the
@@ -13556,15 +13572,21 @@ read to establish that.*
    bridge articles do not exist as articles at all (*Assassination of Francisco
    Pizarro*, *Revolt of the encomenderos*, *Peruvian Civil Wars*). The counts
    are in the batch note.
-3. **The americas' 16th century is still the open vein, and the conquest of Peru
-   still has battles in it.** `Q947591` is now held, so the next ones are
-   `Battle of Huarina` (1547, Gonzalo Pizarro against Diego Centeno, between
-   Iñaquito and Jaquijahuana — its article names Jaquijahuana once and was
-   fetched but not read this fire) and the earlier Almagrista and Manco Inca
-   battles the `Campaignbox Spanish conquest of Peru` on every one of these
-   articles lists. **Huarina is the strongest single candidate left**: it sits
-   inside the largest component's own chain (Iñaquito → Huarina → Jaquijahuana)
-   and would extend it rather than another island.
+3. **The americas' 16th century is still the open vein, but the conquest of
+   Peru's next battle is not writable and this fire established that too.**
+   `Battle of Huarina` (1547, revision 1370443308) sits exactly where the chain
+   wants it — Iñaquito → Huarina → Jaquijahuana, all three inside the largest
+   component's reach — and **both of its candidate quotes fail**. The one that
+   would carry Iñaquito into it opens *"After sending away the royally appointed
+   governor … and later defeating and killing him in the battle of Añaquito,
+   Gonzalo Pizarro assembled an army"* and `verdictFor()` refuses it outright as
+   chronology with no cause stated; the one that would carry it on to
+   Jaquijahuana is *"Ultimately, the viceroy won the cause of most of Gonzalo
+   Pizarro's officers and men, and on April 9, 1548, the pizarrists were finally
+   overthrown"*, which the function passes and which is chronology by reading,
+   deviation 1358 again. **Under A5 a candidate with no edge is not imported**,
+   so Huarina was not. What is left in the campaign box are the earlier
+   Almagrista and Manco Inca battles; read the article before counting on one.
 4. **The Almagrista eight are still the best structural prize and they now need
    a different kind of move.** Not another battle article: the group is
    `battle-of-cusco`, `battle-of-vilcaconga`, `battle-of-maraycalla`,
@@ -13576,9 +13598,11 @@ read to establish that.*
    article's own § Background points at one: *"The conflict between the Pizarro
    brothers and Almagro originated in a dispute over the possession of the city
    of Cuzco during the initial Spanish partition and administration of Peru."*
-   **That partition is the 1529 `Capitulación de Toledo`**, which this atlas
-   does not hold and which has an English article; if it can be imported and
-   filed, it is the bridge, and it is the one lead this fire leaves live.
+   That partition is the 1529 *Capitulación de Toledo* — and **it has no English
+   Wikipedia article**, probed this fire and absent, so under A2 it cannot be
+   written here either. The lead stays live only as the shape of the question:
+   the bridge is a decree or a governorship and not a battle, and whatever it is
+   must have an English article of its own.
 5. **`Special:Export` before the API** — deviation 1357. It serves the wikitext
    *and* the current revision id in one call and kept serving while `api.php`
    and `/api/rest_v1/` were both returning 429 to this fire. `Special:EntityData`
