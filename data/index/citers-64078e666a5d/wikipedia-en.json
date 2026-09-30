@@ -3542,6 +3542,12 @@
     },
     {
       "dissent": false,
+      "id": "covid-19-pandemic--tigray-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Tigray war\", revision 1374637577, § Lead-up to the war"
+    },
+    {
+      "dissent": false,
       "id": "covid-19-pandemic-in-europe--covid-19-pandemic-in-brazil--caused",
       "kind": "edge",
       "locator": "\"COVID-19 pandemic in Brazil\", revision 1364843921, lead"
@@ -4265,6 +4271,12 @@
       "id": "first-sino-japanese-war--russo-japanese-war--precondition-of",
       "kind": "edge",
       "locator": "\"Russo-Japanese War\", revision 1375146144, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "first-sino-japanese-war--xinhai-revolution--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Sino-Japanese War\", revision 1373729815, lead"
     },
     {
       "dissent": false,
