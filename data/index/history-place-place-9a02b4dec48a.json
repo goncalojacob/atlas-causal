@@ -1295,7 +1295,7 @@
       ]
     },
     "brooklyn": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6492,7 +6492,7 @@
       ]
     },
     "new-york-state": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -9876,7 +9876,7 @@
       ]
     },
     "trenton-new-jersey": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
