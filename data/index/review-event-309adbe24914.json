@@ -19470,7 +19470,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "korean-war",
+      "parent": "battle-of-taejon",
       "review": {
         "flags": [
           "imported-facts",
@@ -21589,6 +21589,35 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "category": "other",
+      "cites": [
+        "wikipedia-en",
+        "wikidata"
+      ],
+      "created": "2026-09-30",
+      "id": "decolonisation-of-asia",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "m42-umbrella"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Decolonisation of Asia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "cites": [
         "rosas-1994-estado-novo",
         "ramos-2009-historia-de-portugal"
@@ -21985,6 +22014,7 @@
       "origin": {
         "tool": "assistant"
       },
+      "parent": "decolonisation-of-asia",
       "review": {
         "status": "draft"
       },
@@ -22009,7 +22039,10 @@
       "origin": {
         "tool": "assistant"
       },
-      "parent": "third-portuguese-republic-since-1974",
+      "parent": [
+        "third-portuguese-republic-since-1974",
+        "decolonisation-of-asia"
+      ],
       "review": {
         "flags": [
           "filed-by-span-and-subject"
@@ -23785,7 +23818,10 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "indochina-wars",
+      "parent": [
+        "indochina-wars",
+        "decolonisation-of-asia"
+      ],
       "review": {
         "flags": [
           "imported-facts",
@@ -26688,6 +26724,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "decolonisation-of-asia",
       "review": {
         "flags": [
           "imported-facts",
@@ -31216,7 +31253,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "arab-israeli-conflict",
+      "parent": "south-lebanon-conflict",
       "review": {
         "flags": [
           "imported-facts",
@@ -32554,6 +32591,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "decolonisation-of-asia",
       "review": {
         "flags": [
           "imported-facts",
@@ -32818,6 +32856,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "decolonisation-of-asia",
       "review": {
         "flags": [
           "imported-facts",
@@ -32853,6 +32892,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "decolonisation-of-asia",
       "review": {
         "flags": [
           "imported-facts",
@@ -47016,6 +47056,12 @@
     },
     {
       "id": "decolonisation-of-africa",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "decolonisation-of-asia",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

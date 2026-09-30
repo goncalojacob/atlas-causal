@@ -18067,3 +18067,222 @@ leaves is a measurement that should change how a fire budgets its hour.*
   one fire read 405 articles and still judge what survived: 301 raw candidates
   became 59 pairs to read, where the 09:07Z fire read 132 by hand for the same
   corpus).
+
+## Batch 74 — Asia's period umbrella, and the filing pass A6 put before every import
+
+*30 September, the fire that claimed at 18:07Z. **An import fire**: today's
+`## Curation 2026-09-30` section was already in this file, so A11(a) and A13 were
+not this fire's, and all six A14 and all thirteen A15 sections were here too.
+`origin/m0` was not an ancestor of `m42` at the claim — the landing routine had
+merged this branch into it at 17:52Z — so the fire merged `origin/m0`, which
+brought nothing but that merge and left `data/` untouched.*
+
+**The main count fell for the first time since A15's passes: 234 to 230, and
+Asia's active count moved for the first time in five fires, 211 to 212.** One
+record was written and nine were refiled. No edge was written and none could be.
+
+### What five fires had been reading, and the half of it that was not true
+
+Batch 71 stated the three-way bind — A15(1), A14(6) and A6 closing on each other
+— and batches 72 and 73 confirmed it from two more directions. **That bind is
+real and this fire does not touch it.** What this fire found is that the bind is
+about **importing**, and A6 has a second clause that is not about importing at
+all:
+
+> *the next fire is a filing pass before it is an import. Before importing
+> anything more, create the period umbrellas the existing 335 main events call
+> for, file under them, rebuild, push.*
+
+And A10, from the same day, names the lane where that clause was never finished:
+
+> *the seeds file gains the regional periods A6 asks for where a lane has none
+> (Latin America's, Asia's), each from its Wikipedia article.*
+
+**Europe has `interwar-period`, with fifty children. Africa has
+`decolonisation-of-africa` and `scramble-for-africa`, with fourteen each. Asia,
+at 58 main events, has had no regional period umbrella at all since A10 asked for
+one on 22 September, and no fire has written it.** Deviation 1491. The lane was
+blocked on imports and read as blocked altogether; the filing pass A6 puts
+*before* the imports still had a vein in it, and that vein needed no candidate
+screen, no `P361` walk and no edge.
+
+### `decolonisation-of-asia`, and the start an article that states no start still dates
+
+`Decolonisation of Asia` (`Q5249554`, 7 sitelinks, `P31` Q3249551 a process,
+`P30` Q48 Asia), read whole at **revision 1375271318**. `region: asia`, the
+period's own subject, as `decolonisation-of-africa` writes its continent;
+`review.flags: ["imported-facts", "m42-umbrella"]`; `origin.tool: assistant`,
+because the record is an umbrella somebody drafted and not an item an import
+created.
+
+**The end is the article's own and explicit.** Its first sentence: *"The
+decolonisation of Asia was the gradual growth of independence movements in Asia,
+concluding with the independence of the Democratic Republic of Timor-Leste from
+Indonesia in 2002."* End 2002, cited, no reading required.
+
+**The start is not stated anywhere in the article, and A4 and A7 forbid inventing
+one — but the article dates it anyway, in its own list of European colonies in
+Asia.** That list gives each colony's years, and the year a colony ends is the
+year its decolonisation is dated to. The temptation was 1945: the article's own
+list of possessions is framed *"following the end of World War II in 1945"*, and
+the four Asian events this atlas holds that are plainly decolonisation all fall
+after it. **1945 is wrong, and the article says so.** Its list closes
+`Dutch Malacca (1641-1824)`, `Dutch India (1605-1825)`, `Dutch Ceylon
+(1656-1796)` and `Danish India (1696-1869)` long before that — and **every one of
+those is a colony passing from one European power to another, not a colony
+becoming a state.** The first end in the list that is decolonisation is
+`Spanish Philippines (1565-1898, 3rd longest European colony in Asia, 333
+years)`, and the article's prose states the same year as an act: *"Philippine
+revolutionaries unilaterally declared independence from Spain in 1898, during the
+Spanish–American War."*
+
+**So the start is 1898**, and the record's own summary says which sentences it
+rests on and that a reviewer who reads the article otherwise should move it.
+**Deviation 1492: an article that states no start for the process it names may
+still date one, and a list of colonies dates it — but only if the reading tells a
+colony that became a state from a colony that changed owners.** Had 1945 been
+taken, three of this batch's five filings would not have been possible; had 1824
+been taken, `philippine-revolution` and much else would have been swept in on a
+date that is not decolonisation at all.
+
+### The five main events the umbrella took, each argued from the same article
+
+| filed | span | what the cited revision says |
+| --- | --- | --- |
+| `philippine-declaration-of-independence` | 1898 | *"Philippine revolutionaries unilaterally declared independence from Spain in 1898, during the Spanish–American War"* |
+| `philippine-american-war` | 1899–1902 | *"In 1899, Philippine revolutionaries established the First Philippine Republic. Shortly thereafter, the Philippine–American War began"* |
+| `indonesian-national-revolution` | 1945–1949 | the colonies list: `Indonesia (1945/1949)`, and `Dutch East Indies (now Indonesia) – Dutch colony from 1800 to 1949` |
+| `partition-of-india` | 1947 | the colonies list: `British India (1613-1947)` and `British Raj (1858-1947)` |
+| `east-timor-independence-2002` | 2002 | the first sentence, which names this very event as what the process concluded with |
+
+**Two further filings under A8, which change no count but put a record where the
+article puts it:**
+
+- `first-indochina-war` gains `decolonisation-of-asia` beside `indochina-wars`.
+  The Cambodia section: *"the King led the way to Cambodian independence in 1953,
+  taking advantage of the background of the First Indochina War being fought in
+  Vietnam."* `indochina-wars` does not reach the decolonisation of Asia, so the
+  second parent earns its place under A8's own test.
+- `east-timor-invasion-1975` gains it beside
+  `third-portuguese-republic-since-1974`, on the same first sentence and the
+  list's `Portuguese Timor (1702-1975, now East Timor)`.
+
+**`indochina-wars` itself was not filed**, though its span (1945–1991) sits
+inside the umbrella's: the complex contains the Vietnam War and the
+Cambodian–Vietnamese War, which are not decolonisation, and filing the container
+would say the article says something it does not. The First Indochina War is what
+the article names and it is what was filed.
+
+### Two filings the 15:07Z stand left for a fire, and the third that was refused
+
+The stand named three A8 filings *"found by this sweep and left alone because an
+import fire does not file"*. Two are done, and **both had to be a replacement
+rather than an addition**, because the filing suite refuses a parent reachable
+through another parent:
+
+- `chaplain-medic-massacre`: `korean-war` → `battle-of-taejon`. The Taejon
+  article has the massacre *"took place during the battle near the Kum River"*,
+  and Taejon is itself part of the Korean War, so adding the battle beside the
+  war would have named the war twice over.
+- `operation-accountability`: `arab-israeli-conflict` → `south-lebanon-conflict`,
+  by the same arithmetic.
+
+**The third was refused, and the record itself is the argument.**
+`mozambican-war-of-independence` under `portuguese-colonial-war-1961-1974` was
+written, validated and backed out: the record's own `review.note`, from batch 41,
+states that the Colonial War *"closes on 1974-04-25, the Carnation Revolution's
+day, while this war ran to the ceasefire of 8 September 1974"*, and that A7
+cannot widen the parent because the article printed on that record dates the war
+1961 to 1974. The filing would have reintroduced exactly the `child-outside-
+parent` warning batch 41 filed it under the continent to avoid. **A filing a
+later sweep proposes is not a filing the record has not already refused**, and
+the note is where that refusal was written down.
+
+### No edge, and why A5 cannot ask for one here
+
+**A5 asks every batch to write edges to what exists, and this batch wrote none.**
+It could not: `tests/m42-filing.test.mjs` refuses any active edge with an end
+carrying the `m42-umbrella` flag — *an umbrella is not a claim* — and the only
+record this batch created is an umbrella. The 09:07Z fire found the same rule
+from the other side, where two sound quotes argued for two edges on to
+`scramble-for-africa` and both had to be withdrawn. **A filing pass is A6's own
+category and not an import**, and it is the one shape of work in this lane that
+the three-way bind does not touch.
+
+### Counts
+
+Before → after, measured with `tools/m42-pool.mjs` on both trees:
+
+- **active events 1,333 → 1,334**; **main 234 → 230**; filed 1,099 → 1,104.
+- **per lane, active / main**: Europe 555/85 unchanged, Americas 359/56
+  unchanged, **Asia 211/58 → 212/58**, Africa 208/31 unchanged. Asia's main count
+  is level because the umbrella it gained is itself a main event in that lane and
+  five of that lane's mains went under it.
+- **active edges 1,121, unchanged. Largest connected component 740, unchanged.
+  Components 406 → 407** (the umbrella is a record with no edge, which the
+  `degree-zero` warning counts and the umbrella rule guarantees).
+- **Edges crossing an umbrella (A15(11)): 574 → 575**, inside one 547 → 546. One
+  edge changed sides, and it is `chaplain-medic-massacre`'s refiling: the pair it
+  belongs to no longer shares `korean-war` as a parent.
+- **Candidates left unconnected, which A15(1) asks every batch note to carry: 0.**
+  This batch screened no candidate for import, so it left none; the 98 of batch 71
+  and the 132 of the 09:07Z sweep stand where they were.
+- Validator **0 errors, 612 warnings** — one more than batch 73, and it is
+  `degree-zero` on the new umbrella, which is the rule and not a gap.
+
+A11(b)'s partition check, made before anything was written and against
+`origin/m42b`'s own `data/events/` rather than its seeds: that branch holds
+`decolonisation-of-africa` and **no `decolonisation-of-asia` and no record
+carrying `Q5249554`**.
+
+A15(2)'s recache, as the last step of the batch and over the batch's own
+citations: reported below with the suites.
+
+## Where the run stands after batch 74, for the fire that picks it up
+
+*30 September, the fire that claimed at 18:07Z. A filing pass, which is what A6
+put before every import and what Asia had never been given.*
+
+**What is open, in the order a fire should weigh it:**
+
+- **The three-way bind is unchanged and still the owner's.** A15(1), A14(6) and
+  A6 still close on each other for anything a fire wants to *import*; batch 71's
+  section is the statement of it and the two records an A6 relaxation would
+  unblock are still `Jewish exodus from the Muslim world` (rev 1375572604) and
+  `Decline and modernization of the Ottoman Empire` (rev 1374227337). **This fire
+  did not open that door and did not try to.**
+- **The filing vein is not spent, and it is the one thing the bind does not
+  reach.** Asia had no regional period umbrella; it has one now, and its span
+  (1898–2002) is a place future Asian decolonisation imports can land without
+  raising the main count, which is the A6 leg of the bind loosened for that lane
+  by a record rather than by a decision. **The same question should now be asked
+  of the lanes that still have gaps**: Africa holds 1885–1914 and 1954–1976 and
+  nothing else, so its 31 mains outside those two spans have no umbrella to fall
+  into; the `no lane` set holds 727 active events and 51 mains. A fire that wants
+  the main count down should read what Wikipedia names for those spans before it
+  reads another candidate list.
+- **Do not budget a sweep over articles as a way of growing the graph.**
+  Unchanged from the last three stands: four shapes measured, eight edges, no
+  component joined, deviations 1488 and 1489.
+- **What a later fire should not re-derive:** `indochina-wars` under
+  `decolonisation-of-asia` (the container holds two wars that are not
+  decolonisation); `mozambican-war-of-independence` under
+  `portuguese-colonial-war-1961-1974` (the record's own note refuses it, above);
+  `philippine-revolution` under `decolonisation-of-asia` (1896 is outside the
+  umbrella's start and the article dates the Philippines' decolonisation at
+  1898); and, from batch 72's stand and still true,
+  `operation-unified-protector` under `libyan-civil-war` and
+  `tet-offensive --> easter-offensive`.
+- **A15(6)'s note oracle is still written and still unused.** `refusedPlaces()`
+  reads 28 refusals off disk; the next places pass should hand it
+  `refusedPlaces(record)`. Unchanged from the last four stands.
+- **Unchanged and still the owner's:** A6's lane rule against the period
+  umbrellas; deviations 1473 and 1482; `execution-of-the-romanov-family` and
+  deviation 1423; A11's area clause; deviation 1478; A15(12)'s 177 uncategorised
+  events; the EEC's closing year; deviation 1461's two display faults; and
+  `origin/m42b`'s five place placeholder summaries.
+- **Deviation numbers: take the next above 1492.** This fire wrote **1491** (a
+  lane read as blocked on imports while the filing pass A6 puts before them was
+  never finished for it) and **1492** (an article that states no start still
+  dates one in its list of colonies, if the reading separates a colony that
+  became a state from one that changed owners).
