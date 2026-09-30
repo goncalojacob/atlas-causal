@@ -203,21 +203,61 @@ export function yearsApart(a, b) {
 // apart. With no spans to read this behaves exactly as it did.
 export function namesHeldEvents(text, candidates, { exclude = [], when = null } = {}) {
   const skip = new Set(exclude);
+  // Deviation 1483: 1481's widening let an article's own bare name be read as
+  // its twin. `exclude` is the subject, or the two ends of an edge — the things
+  // the text is *about* — and the guard of 1480 dropped them before grouping,
+  // so a name they answer to was alone in its group and the twin took it.
+  // *"The Siege of Prague resulted in the surrender of the garrison"*, in
+  // `siege-of-prague-1744`'s own lead, named `siege-of-prague-1742`.
+  //
+  // An excluded end therefore closes the bare route for the name it answers to:
+  // a bare name the subject is one of the readings of is the subject, because
+  // 1480's own rule is that the nearest span wins and the subject is at nothing
+  // from itself. Only the bare route, because a full name is unambiguous — an
+  // article about 1642 that writes *"Battle of Breitenfeld (1631)"* out in full
+  // means the 1631 one, and that edge is still what this atlas is for.
+  const claimed = new Set();
+  for (const candidate of candidates ?? []) {
+    if (!skip.has(candidate.id)) continue;
+    for (const name of candidate.names ?? []) {
+      const stripped = undisambiguated(name);
+      if (stripped) claimed.add(fold(stripped));
+    }
+  }
   // The text is handed on unfolded: since deviation 1464 `mentions()` reads the
   // capitals, and a caller that folded first would take them away.
+  // Deviation 1484: a name the text writes out in full closes the bare route
+  // for its twin, the way an excluded end does above. The full hits are taken
+  // first, in a pass of their own, because a candidate later in the list may be
+  // the one the text names in full — *"in retaliation for the French and Indian
+  // Siege of Pemaquid (1696)"* was reporting `siege-of-pemaquid-1689`, and
+  // 1480's guard never saw the two as homonyms because a full hit and a bare
+  // hit are filed under different keys. Two names written out in full are still
+  // two names: the guard closes the bare route and nothing else.
   const out = [];
+  const full = [];
   for (const candidate of candidates ?? []) {
     if (skip.has(candidate.id)) continue;
-    let hit = (candidate.names ?? []).find((name) => mentions(text, name));
-    let bare = null;
-    if (!hit) {
-      // Deviation 1481: the bare name, where the record's own is disambiguated.
-      for (const name of candidate.names ?? []) {
-        const stripped = undisambiguated(name);
-        if (stripped && mentions(text, stripped)) { hit = name; bare = stripped; break; }
+    const hit = (candidate.names ?? []).find((name) => mentions(text, name));
+    if (!hit) continue;
+    full.push(candidate.id);
+    claimed.add(fold(undisambiguated(hit) ?? hit));
+    // The key stays the name as it was matched, so two full names never group
+    // as homonyms; it is `claimed` above that carries the bare form.
+    out.push({ id: candidate.id, name: hit, key: fold(hit), when: candidate.when ?? null });
+  }
+  const named = new Set(full);
+  for (const candidate of candidates ?? []) {
+    if (skip.has(candidate.id) || named.has(candidate.id)) continue;
+    // Deviation 1481: the bare name, where the record's own is disambiguated.
+    for (const name of candidate.names ?? []) {
+      const stripped = undisambiguated(name);
+      if (!stripped || claimed.has(fold(stripped))) continue; // deviations 1483, 1484
+      if (mentions(text, stripped)) {
+        out.push({ id: candidate.id, name, key: fold(stripped), when: candidate.when ?? null });
+        break;
       }
     }
-    if (hit) out.push({ id: candidate.id, name: hit, key: fold(bare ?? hit), when: candidate.when ?? null });
   }
   // Deviation 1480: homonyms, decided by the subject's years where there are any.
   if (!when) return out.map(({ id, name }) => ({ id, name }));
