@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "siege-of-kimberley--battle-of-paardeberg--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-72"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Paardeberg\", revision 1370271388, lead"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Kimberley\", revision 1370742488, § Relief"
+    }
+  ],
+  "from": "siege-of-kimberley",
+  "to": "battle-of-paardeberg",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The later record’s own cited article puts the relief of Kimberley inside the mechanism and not merely before it: \"The army of Boer General Piet Cronjé was retreating from its entrenched position at Magersfontein towards Bloemfontein after its lines of communication were cut by Major General John French, whose cavalry had recently outflanked the Boer position to relieve Kimberley. Cronjé’s slow-moving column was intercepted by French at Paardeberg\". The siege’s own article says where the interceptors had come from: French’s men \"had covered the 40 miles (64 km) from Kimberley in another desperately tiring march\" before they opened fire on the Boer column crossing at Paardeberg Drift. `enabled` and not `caused`: the relief did not set out to bring Paardeberg about, it cut the communications that made Cronjé move and left the only mounted division in the theatre a day’s ride from where he crossed. The atlas already reads Magersfontein into Paardeberg as a `precondition-of`, which is the position he retreated from; this is the other half of the same lead sentence, and neither edge is given the other’s work. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}

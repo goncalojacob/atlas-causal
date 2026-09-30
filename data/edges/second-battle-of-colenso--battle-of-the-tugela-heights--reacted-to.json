@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-colenso--battle-of-the-tugela-heights--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-72"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Tugela Heights\", revision 1376503813, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Colenso\", revision 1370736054, § Aftermath"
+    }
+  ],
+  "from": "second-battle-of-colenso",
+  "to": "battle-of-the-tugela-heights",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The later record is that fourth attempt, and its own cited article says which three defeats made it a fourth: \"Buller’s army had made three earlier attempts to raise the Boer siege of Ladysmith. The battles of Colenso, Spion Kop and Vaal Krantz each resulted in embarrassing British defeats at the hands of Botha’s army of Boer irregulars. In three months, British casualties rose to 3,400 men while Boer losses were much lower. On 12 February, Buller ordered a fourth attempt to relieve Ladysmith.\" Colenso is the first of the three, and the same section gives this end of the pair a mechanism the other two do not have: \"During the Battle of Colenso, a British attack on Hlangwane was repulsed. Since that time, the Boers had greatly strengthened the ridge. With Hlangwane in his possession, Buller could dominate the Boer positions at Colenso, and safely cross there.\" Colenso’s own article reads it the same way from the other side: \"Eventually he returned to Colenso, and forced his way over the Tugela in the Battle of the Tugela Heights by laboriously outflanking and capturing Hlangwane, which dominated the Boer left.\" `reacted-to`, which is how the atlas already reads the siege of Ladysmith into this battle. The article divides the reason between three battles, so this atlas writes an edge from each rather than letting one of them carry what the source gives to all three. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}
