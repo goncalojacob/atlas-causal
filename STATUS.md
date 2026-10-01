@@ -23826,14 +23826,14 @@ Peruvian and Argentine wars of independence by each article's own Background; th
 French Revolution inspired the Argentine one; the American Revolutionary War is a
 precondition of the British intervention in Spanish American independence; and
 the capture of St George's Caye and the siege of Yorktown both stand behind the
-battle of Roatán. **Deviation 1200**: before concluding a measurement cannot move
+battle of Roatán. **Deviation 1374**: before concluding a measurement cannot move
 without an import, run the edge pass over the lane's **umbrellas** and not only
 its leaves — a war umbrella with degree zero is the cheapest crossing edge there
 is, because its parent is almost never the parent of what caused it. **Deviation
-1201**: where the cited article states the *contrary* of the edge — Túpac Amaru
+1375**: where the cited article states the *contrary* of the edge — Túpac Amaru
 II, whose article says no colonial uprising "constituted a true independence
 movement" — no edge is written and no confidence is lowered to carry it.
-**Deviation 1202**, caught by `tests/leadcache.test.mjs` in the same fire and
+**Deviation 1376**, caught by `tests/leadcache.test.mjs` in the same fire and
 fixed in it: A15(2)'s recache picks a cached revision by counting citations and
 counts an **edge's**, although `leadcache.mjs` classes every edge `unkeyed` and
 the cache can never answer one — so two of this batch's edges took away the lead

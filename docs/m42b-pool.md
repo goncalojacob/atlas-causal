@@ -15600,8 +15600,8 @@ them. The main count did not move.*
 | `Q5722281` *Battle of Carabobo* | `battle-of-carabobo-1814` | 1814-05-28 (`P585`) | `venezuela-q717`, reused, precision `country` | `venezuelan-war-of-independence`, from `P361` |
 
 `titleFor()` kept the article's disambiguator, so the record is titled *Battle
-of Carabobo (1814)* and not *Battle of Carabobo*, which is the second battle of
-1821. **A15 (6) admitted the country**: the item carries no `P625`, no `P276`
+of Carabobo (1814)* and not *Battle of Carabobo*, which is the second battle,
+fought in 1821. **A15 (6) admitted the country**: the item carries no `P625`, no `P276`
 and no `P131`, so the place comes from `P17` alone — Venezuela, `Q717`, whose
 `P571` is 1811-07-05, before the event's end, with no `P576` and no second
 country named, and whose point is the point the held
@@ -15682,7 +15682,7 @@ beside the component its own children are in.
    that every one of their articles opens on — the Peninsular War — was held,
    filed under `napoleonic-wars`, and unlinked to any of them. Seven crossing
    edges came out of that for the cost of five HTTP requests and no import.
-   **Deviation 1200: before concluding that a measurement cannot move without
+   **Deviation 1374: before concluding that a measurement cannot move without
    an import, run the edge pass over the lane's own umbrellas, not only over
    its leaves.** A war umbrella with degree zero is the cheapest crossing edge
    there is, because its parent is almost never the parent of what caused it.
@@ -15690,7 +15690,7 @@ beside the component its own children are in.
    is the first case this run has met where the target's own article names the
    candidate and then argues against the connection. `disputed` is the wrong
    answer — that confidence is for a link historians disagree about, and here
-   the only reading on the page is against. **Deviation 1201: where the cited
+   the only reading on the page is against. **Deviation 1375: where the cited
    article states the contrary of the edge, no edge is written and no
    confidence is lowered to carry it.**
 3. **A15 (2)'s recache can take away the evidence it is supposed to keep**,
@@ -15710,8 +15710,14 @@ beside the component its own children are in.
    A15 (2) then reports **0 revisions that should be on disk and are not** and
    **2,808 of 2,884 citations on disk at the revision cited**, two more than
    before the batch, with the unholdable count down from 78 to 76.
-   **Deviation 1202: an edge quoting an article a held record already cites
-   names that record's revision, where the sentence is verbatim there.** A later
+   **Deviation 1376: an edge quoting an article a held record already cites
+   names that record's revision, where the sentence is verbatim there.** *(The
+   commit that made this fix, `fea1ccec`, calls it deviation 1202 in its message:
+   the numbers were assigned from 1200 as the brief says and only then found to be
+   taken — this lane's own 1200, 1201 and 1202 were spent on batches 46 and 53.
+   The numbers here, 1374 to 1377, are the correct ones; `fea1ccec`'s message
+   cannot be corrected without rewriting a pushed commit, so it is corrected
+   here.)* A later
    fire may prefer to fix the vote instead — the one-line version is that
    `citations.mjs` should not count a citation it will class `unkeyed` — but that
    is a change to a tool both lanes run and belongs to a fire that can test it
@@ -15732,7 +15738,7 @@ not move here without importing main events that A6 bars; that was wrong, and
 the reason is the first finding below. The main count did not move. **One
 regression was caught by a test and fixed in the same fire**: A15 (2)'s recache
 took away the evidence two held records cite, because the vote that picks a
-cached revision counts edge citations it can never answer (deviation 1202).*
+cached revision counts edge citations it can never answer (deviation 1376).*
 
 | | before 61 | after 61 |
 | --- | --- | --- |
@@ -15782,17 +15788,52 @@ curation fire wrote four edges and the merge brought them. Nothing of this
 batch's seven is M42's.*
 
 *Five commits besides this line: the claim, the `origin/m42` merge, batch 61's
-records, its index, and the locator correction deviation 1202 names with its own
+records, its index, and the locator correction deviation 1376 names with its own
 index rebuild folded in. `validate --index` is clean at **0 errors** and the
 index is byte-identical to a fresh build at this head. A15 (2) reports **0
 revisions that should be on disk and are not**, 2,808 of 2,884 citations on disk
 at the revision cited and 76 unholdable beside a more-cited revision of the same
-item — two better and two fewer than the fire found them.*
+item — two better and two fewer than the fire found them. The suite is **green —
+2,253 tests, 0 failed, 0 skipped** (1,940 pure and 313 across the 40 browser
+suites, run the way the check runs them, one browser suite at a time), measured
+at this head.*
+
+*One intermediate commit went red and **it was read rather than assumed**: run
+2206, the `origin/m42` merge commit `3a149be1`, failed its **pure** pass with
+four failures that are one cause — `tests/build-index.test.mjs`,
+`tests/m62.test.mjs`, `tests/m67.test.mjs` and `tests/validate-cli.test.mjs` all
+report **rule 16** over five index files (`manifest.json`, two
+`history-event-1500-1599-*` and two `history-edge-1900-1999-*`). Reproduced in a
+worktree at that commit, where the pure pass gives 1,936 of 1,940 and
+`node tools/validate.mjs` **without** `--index` gives 0 errors. **This is the
+third fire running that deviation 1363's shape has landed on a merge commit**,
+the second after the last stand wrote the remedy down, so the remedy goes here as
+a deviation of its own rather than a sentence in a stand nobody reads twice.*
+
+**Deviation 1377: a merge commit gets its index in a second commit, like a
+batch, and `validate --index` run before the commit exists proves nothing.** The
+history shards are built out of the repository's own commits
+(`tools/lib/history.mjs`), so a shard built while `HEAD` is the pre-merge commit
+cannot know the merge commit and is stale the moment it is committed inside it.
+Running `node tools/validate.mjs --index` before committing passes — both the
+build and the check see the same pre-merge `HEAD` — which is exactly why it is no
+evidence. **The procedure, for a merge as for a batch:** resolve, drop
+`data/index/`, commit the merge **without** an index, then `node
+tools/build-index.mjs`, then `node tools/validate.mjs --index`, then commit the
+index on top. Three commits where this fire used two, and the check goes green on
+every one of them. The red commit here was cured incidentally by batch 61's own
+index commit, which is why the head is green and the branch is sound; a fire
+whose merge is its last commit would leave the branch red.
 
 ### The next fire's moves, in order
 
-1. **Run the edge pass over the lane's umbrellas again, because it has barely
-   been run.** Deviation 1200 is the finding of this fire and it is not spent:
+1. **Give a merge commit its index in a commit of its own (deviation 1377).**
+   Before anything else, if this fire merges `origin/m0` or `origin/m42`:
+   resolve, drop `data/index/`, **commit the merge with no index**, build, check
+   `--index`, commit the index on top. Three fires running have put a stale index
+   inside a merge commit and gone red on it.
+2. **Run the edge pass over the lane's umbrellas again, because it has barely
+   been run.** Deviation 1374 is the finding of this fire and it is not spent:
    the crossing edges in this lane are between **umbrellas the atlas already
    holds**, not between the leaves the last six fires worked. This fire did the
    Spanish American wars and the Peninsular War. **Still unread, and each a
@@ -15803,7 +15844,7 @@ item — two better and two fewer than the fire found them.*
    `cuban-war-of-independence-1895-1898`, `beaver-wars`, `arauco-war`,
    `war-of-jenkins-ear`. Five HTTP requests bought seven crossing edges this
    fire; the same money is on the table again.
-2. **The Peninsular War is the cheapest `from` in the atlas for this lane** and
+3. **The Peninsular War is the cheapest `from` in the atlas for this lane** and
    three of its four children here are now linked. The fourth is
    `mexican-war-of-independence`, whose article opens on the same 1808 crisis.
    `colombian-` and `ecuadorian-war-of-independence` and
@@ -15812,43 +15853,43 @@ item — two better and two fewer than the fire found them.*
    Check `data/edges/<from>--<to>--<type>.json` for all five types first
    (batch 60's rule) and compare the two `when.date`s before fetching anything
    (deviation 1373, and this fire's finding 4).
-3. **`battle-of-rio-bueno-1759` is a filing and not an edge.** Its article's
+4. **`battle-of-rio-bueno-1759` is a filing and not an edge.** Its article's
    infobox says `partof = [[Arauco War]]`, the atlas holds `arauco-war`, and the
    record is filed under `spanish-colonization-of-the-americas` instead. Under
    A8 a record takes **every** umbrella whose span and subject fit, so this is a
    second parent and not a replacement, and it costs no fetch — the article is
    already in hand at rev 1370587848. Measured and left for the next fire only
    because this one's budget went on the cache regression.
-4. **`Q3051491` *Capture of Valdivia* is still the refusal worth the owner's
+5. **`Q3051491` *Capture of Valdivia* is still the refusal worth the owner's
    eye**, unchanged from the last stand: *may a batch write a record for an item
    that has no `P31`, where the class is plain from the article and the edge is
    cited?* Not a run's to settle.
-5. **The three questions to the owner are otherwise unchanged**: the main count;
+6. **The three questions to the owner are otherwise unchanged**: the main count;
    **C8**; and **A15 (1)**. Africa and Asia stand at 214 and 214 against A10's
    303. Do not spend a fire re-establishing this. The last stand's move 4 — that
    A15 (11) is blocked by A6 in this lane — **is withdrawn**: it was an artefact
    of looking only at leaves, and the owner does not need to decide anything for
    the number to keep moving.
-6. **Do not re-walk this batch's refusals.** The eight articles with no
+7. **Do not re-walk this batch's refusals.** The eight articles with no
    § Background or § Aftermath were read anyway and carry nothing; *Battle off
    Barbados*, *Battle of Martinique (1780)* and *Capture of Sint Eustatius* have
    one and name no held event as a cause; `battle-of-ayacucho` →
    `second-siege-of-callao` is rule 4 and will stay rule 4; the Túpac Amaru link
-   is refused because the article argues against it (deviation 1201), which no
+   is refused because the article argues against it (deviation 1375), which no
    later reading will change. Every one is named with its revision in batch 61's
    table above.
-7. **Deviation 1370's test paid a fourth time** and still costs nothing: before
+8. **Deviation 1370's test paid a fourth time** and still costs nothing: before
    reading a candidate's article whole, check whether it has a § Background or an
    § Aftermath. All eight failures this fire were stubs; none of the eight
    yielded an edge, and the three that passed the test and still yielded nothing
    were the exception.
-8. **Nothing about the 429s has changed.** One `wbgetentities` call for three
+9. **Nothing about the 429s has changed.** One `wbgetentities` call for three
    items, five `action=query&prop=revisions&rvprop=ids|content` requests carrying
    eight titles each, one `revids` request to check two old revisions, a real
    `User-Agent` and a 25-second backoff over seven attempts. `wbsearchentities`
    was not used. A bare first request without the backoff drew a 429 and is the
    only one that did.
-9. **Still open, unchanged**: C8, deviations 1323, 1345, 1346's ocean islands,
+10. **Still open, unchanged**: C8, deviations 1323, 1345, 1346's ocean islands,
    1348's lane guard, 1353, 1358, 1361, 1362, 1365 (whose remedy was applied by
    hand again — `tools/m42-pool.mjs` still does not print the component a
    batch's own records are in), 1366, question 11 (the Nine Years' War,
