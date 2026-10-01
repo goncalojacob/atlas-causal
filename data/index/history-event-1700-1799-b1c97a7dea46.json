@@ -175,6 +175,15 @@
         }
       ]
     },
+    "battle-of-adyar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-baton-rouge-1779": {
       "from": "git",
       "versions": [
@@ -1576,6 +1585,15 @@
             "regionNote"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-cuddalore-1748": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

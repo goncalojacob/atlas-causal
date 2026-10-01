@@ -285,6 +285,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "adyar-river",
+      "kind": "place",
+      "names": [
+        "Adyar River"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -4435,6 +4462,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "cuddalore",
+      "kind": "place",
+      "names": [
+        "Cuddalore"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -10877,7 +10931,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 4,
+      "degree": 5,
       "id": "luanda",
       "kind": "place",
       "names": [

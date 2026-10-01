@@ -6417,6 +6417,64 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "from": "battle-of-madras",
+      "id": "battle-of-madras--battle-of-adyar--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-58"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-adyar",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "battle-of-madras",
+      "id": "battle-of-madras--siege-of-cuddalore-1748--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-58"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "siege-of-cuddalore-1748",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "from": "battle-of-magersfontein",
       "id": "battle-of-magersfontein--battle-of-paardeberg--precondition-of",
@@ -14226,6 +14284,35 @@
       "revised": null,
       "status": "active",
       "to": "treaty-of-brest-litovsk",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "filips-van-zuylen-s-campaign-against-luanda",
+      "id": "filips-van-zuylen-s-campaign-against-luanda--capture-of-luanda--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-58"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "capture-of-luanda",
       "type": "precondition-of"
     },
     {

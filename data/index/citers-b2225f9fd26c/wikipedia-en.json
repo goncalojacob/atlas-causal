@@ -2648,6 +2648,30 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-madras--battle-of-adyar--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Madras\", revision 1370448492"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-madras--battle-of-adyar--reacted-to",
+      "kind": "edge",
+      "locator": "\"First Carnatic War\", revision 1370619242"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-madras--siege-of-cuddalore-1748--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Carnatic War\", revision 1370619242"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-madras--siege-of-cuddalore-1748--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Cuddalore (1748)\", revision 1370740497"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-magersfontein--battle-of-paardeberg--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Paardeberg\", revision 1370271388, § Background"
@@ -4385,6 +4409,18 @@
       "id": "february-revolution--treaty-of-brest-litovsk--precondition-of",
       "kind": "edge",
       "locator": "\"Treaty of Brest-Litovsk\", revision 1376225466, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "filips-van-zuylen-s-campaign-against-luanda--capture-of-luanda--precondition-of",
+      "kind": "edge",
+      "locator": "\"Dutch Loango-Angola\", revision 1370615995"
+    },
+    {
+      "dissent": false,
+      "id": "filips-van-zuylen-s-campaign-against-luanda--capture-of-luanda--precondition-of",
+      "kind": "edge",
+      "locator": "\"Filips van Zuylen's campaign against Luanda\", revision 1370618257"
     },
     {
       "dissent": false,
@@ -10274,6 +10310,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-adyar",
+      "kind": "event",
+      "locator": "\"Battle of Adyar\", revision 1376912545"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-agnadello",
       "kind": "event",
       "locator": "\"Battle of Agnadello\", revision 1370431087"
@@ -13190,6 +13232,12 @@
     },
     {
       "dissent": false,
+      "id": "filips-van-zuylen-s-campaign-against-luanda",
+      "kind": "event",
+      "locator": "\"Filips van Zuylen's campaign against Luanda\", revision 1370618257"
+    },
+    {
+      "dissent": false,
       "id": "finnish-civil-war",
       "kind": "event",
       "locator": "\"Finnish Civil War\", revision 1375858302"
@@ -15497,6 +15545,12 @@
       "id": "siege-of-crema-1514",
       "kind": "event",
       "locator": "\"Siege of Crema (1514)\", revision 1370740461"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-cuddalore-1748",
+      "kind": "event",
+      "locator": "\"Siege of Cuddalore (1748)\", revision 1370740497"
     },
     {
       "dissent": false,

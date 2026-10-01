@@ -2936,6 +2936,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-adyar",
+      "kind": "event",
+      "locator": "Q4870217"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-agnadello",
       "kind": "event",
       "locator": "Q1754732"
@@ -5846,6 +5852,12 @@
     },
     {
       "dissent": false,
+      "id": "filips-van-zuylen-s-campaign-against-luanda",
+      "kind": "event",
+      "locator": "Q130377423"
+    },
+    {
+      "dissent": false,
       "id": "finnish-civil-war",
       "kind": "event",
       "locator": "Q211855"
@@ -8273,6 +8285,12 @@
       "id": "siege-of-crema-1514",
       "kind": "event",
       "locator": "Q110448326"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-cuddalore-1748",
+      "kind": "event",
+      "locator": "Q2888637"
     },
     {
       "dissent": false,

@@ -6720,6 +6720,40 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "battle-of-adyar",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-carnatic-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361",
+          "refiled-to-subject-umbrella"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Adyar"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 3,
       "id": "battle-of-agnadello",
@@ -11731,7 +11765,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 3,
       "id": "battle-of-madras",
       "kind": "event",
       "origin": {
@@ -19306,7 +19340,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-30",
-      "degree": 4,
+      "degree": 5,
       "id": "capture-of-luanda",
       "kind": "event",
       "origin": {
@@ -23571,6 +23605,38 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Fifty years of 25 April"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "filips-van-zuylen-s-campaign-against-luanda",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Filips van Zuylen's campaign against Luanda"
     },
     {
       "authors": [
@@ -37602,6 +37668,40 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Crema (1514)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "siege-of-cuddalore-1748",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-carnatic-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361",
+          "refiled-to-subject-umbrella"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Cuddalore (1748)"
     },
     {
       "authors": [
