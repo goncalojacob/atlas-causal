@@ -18103,3 +18103,362 @@ that follows the order pays nothing.
    the Siege of Johor 1587 (`Q55633157`) and the Ottoman–Portuguese conflicts of
    1538–1559, both still unreached, and the refiling question batch 64 left open on
    `siege-of-malacca-1606`, `battle-of-cape-rachado` and `siege-of-malacca-1640-1641`.
+
+## Batch 66 — the two Sieges of Mozambique, and africa's 17th century from seven to nine
+
+*1 October, the fire that claimed at 18:52Z, first of three batches. The vein the
+previous stand named in its §3, taken as it was written: the two `P361` children of
+the **held** `dutch-portuguese-war` umbrella that the atlas lacked, both about the
+same fort, with **one `reacted-to` edge between them**. The main count did not
+move.*
+
+| | before 66 | after 66 |
+| --- | --- | --- |
+| active events | 1397 | **1399** |
+| main | 231 | **231** |
+| largest connected component | 781 | **781** |
+| components | 400 | **401** |
+| events with no edge | 308 | **308** |
+| **edges crossing an umbrella** | 605 | **605** |
+| edges inside one umbrella | 600 | **601** |
+| active edges | 1205 | **1206** |
+
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 7 / 5 | 11 / 7 |
+| 16th c. | 45 / 2 | 7 / 0 | 3 / 1 | 49 / 3 | 104 / 6 |
+| 17th c. | 109 / 3 | **9 / 0** | 8 / 0 | 70 / 7 | 196 / 10 |
+| 18th c. | 62 / 3 | 14 / 0 | 19 / 0 | 79 / 2 | 174 / 5 |
+| 19th c. | 39 / 9 | 28 / 1 | 9 / 6 | 61 / 8 | 137 / 24 |
+| 20th c. | 245 / 60 | 90 / 23 | 159 / 37 | 91 / 30 | 585 / 150 |
+| 21st c. | 52 / 7 | 76 / 7 | 28 / 14 | 36 / 1 | 192 / 29 |
+| **all** | **556 / 86** | **226 / 31** | **232 / 58** | **393 / 56** | **1407 / 231** |
+
+*(The century table is printed once per fire, at the end of the three batches; the
+bold cell in each batch's row is what that batch moved.)*
+
+### Deviation 1390's check, run first and passed
+
+Before anything was imported, both articles were read at
+`index.php?...&action=raw`. *Siege of Mozambique (1607)* and *Siege of Mozambique
+(1608)* each carry `part_of = [[Dutch–Portuguese War]]`, which is the item's own
+`P361` and the umbrella the atlas holds. Two fetches, no refusal.
+
+### What was imported
+
+Through `tools/import/wikidata.mjs --import --batch 10`, two items, **six calls**,
+four leads cached:
+
+- **`siege-of-mozambique-1607`** (`Q121433548`, 3 sitelinks, `P31` `Q188055`
+  *siege* → `war`), 1607-03-29 to 1607-08-20 from `P580`/`P582`, place
+  **`island-of-mozambique`** — a new place record from the item's `P276` `Q331099`,
+  lane `africa` derived from its own point, `summary: null` (A15(3)).
+- **`siege-of-mozambique-1608`** (`Q122227094`, 3 sitelinks), 1608-07 to
+  1608-08-18 from `P580`/`P582`, the same place.
+
+Both were filed under `dutch-portuguese-war` from their own `P361` on the import's
+first pass, the umbrella being already on disk, so **the main count did not move:
+231 before, 231 after.** Neither item's `P710` participants became actor lines: the
+atlas holds no actor for either the Dutch East India Company or the Portuguese
+Empire, and the rule is every participant or none.
+
+A15(6) was not reached on either: `P276` answered first, so the `P17` country
+(`Q1029` *Mozambique*, inception 1975 and therefore refusable on its own) was never
+asked.
+
+### The one edge, and what the chronology class refused
+
+**`siege-of-mozambique-1607 --> siege-of-mozambique-1608`, `reacted-to`,
+`probable`**, two authors, both articles at the revisions the two records already
+cite (deviation 1380, so no fetch beyond the ones that read them). The quotes are
+in the record.
+
+What A15(5) refused, and it is worth stating because it is the sentence a careless
+run would have used: the 1608 article's §Context opens *"The Dutch East India
+Company or VOC had already attempted to take the Portuguese fort São Sebastião on
+Island of Mozambique with an armada the previous year, however stubborn Portuguese
+resistance had forced them to call off the attack."* That is **an order of events
+plus the first attack's outcome, and no cause of the second** — the refusal class
+exactly. The edge rests instead on two sentences that do state a reason: *"Unlike
+what van Caerden had done the year before, Verhoeff avoided anchoring his fleet
+within the inner harbour, which would have necessitated sailing past the Portuguese
+forts artillery"*, and Dom Estêvão de Ataíde replying that *"he hoped to force him
+to withdraw as he had done to Van Caerden"*.
+
+A15(5)'s **third-event clause did not bind**, and the next fire should know why: the
+1608 article gives the expedition's own cause as the Habsburg–Dutch peace
+negotiations and the truce they were heading for — *"Peace negotiations had begun in
+1607 between the Habsburg monarchy and the Dutch Republic, **hence** the directors
+of the VOC dispatched a number of ships east tasked with capturing as many
+Portuguese territories as possible before the Twelve Years Truce was signed"* — and
+**the atlas holds neither the negotiations nor the Twelve Years' Truce**. If a later
+run writes the Truce, that is the edge to write, and this one should be re-read
+beside it.
+
+**No edge was written between either siege and `dutch-portuguese-war`**: A14 holds
+until the owner decides C8.
+
+### Deviation 1395 — where an item's classes disagree about precision, the place lands at `point`
+
+`island-of-mozambique` is the first place of this lane written at
+`precision: "point"`, and it is not a defect. `Q331099`'s `P31` is three classes:
+`Q23442` *island*, which `data/imports/wikidata-seeds.json` → `classes` gives
+`precision: region`; `Q515` *city*, which it gives `precision: city`; and `Q702492`,
+which it does not have. `classify()` in `tools/import/wikidata.mjs` takes the
+precision only when the known classes agree on **one** — `precisions.length === 1` —
+and hands back none otherwise, and `placeRecord()` then falls back to `point`. So
+the tool refuses to choose between *island* and *city* and writes the narrowest
+thing instead of guessing a coarse one. For a siege of one fort on one island that
+is the right answer by accident, but it is the rule and not the accident that the
+next fire should expect: **an item classed both as an area and as a settlement will
+always arrive as a `point`.** Nothing to fix; `review.html` is where a person
+disagrees.
+
+## Batch 67 — the Malay–Portuguese vein, and asia's 16th century from three to nine
+
+*Second batch of the same fire, and the largest of the three: **asia's 16th century
+was the trailing cell of this partition** at three active events, and
+`malay-portuguese-conflicts` (`Q16932099`, 1509–1641) is a **held** umbrella that
+covers it. Six imports, three new places, **one `precondition-of` edge** into the
+largest component, and the main count still 231.*
+
+| | before 67 | after 67 |
+| --- | --- | --- |
+| active events | 1399 | **1405** |
+| main | 231 | **231** |
+| largest connected component | 781 | **782** |
+| components | 401 | **406** |
+| events with no edge | 308 | **313** |
+| **edges crossing an umbrella** | 605 | **605** |
+| edges inside one umbrella | 601 | **602** |
+| active edges | 1206 | **1207** |
+
+### How the vein was read
+
+Deviation 1392's two calls, and no SPARQL:
+`api.php?action=query&list=backlinks&bltitle=Q16932099&blnamespace=0&bllimit=500` on
+`wikidata.org` returned **eleven** items — the whole of what names this umbrella —
+and one `wbgetentities` over all eleven gave the table. Of the eleven: two are
+already here (`capture-of-malacca-1511`, `siege-of-malacca-1551`), one is the
+umbrella itself, one is a person (`Q135650609` *Tristão de Ataíde*), one was refused
+outright, and **six were imported**. **Nothing of this vein is left**, which is the
+count A5 asks for.
+
+The one refused outright is **`Q136213515` *Battle of Malacca*, 1513-01, one
+sitelink and no `enwiki`**. A record here must carry a summary that is a cached lead
+at a named revision and a `wikipedia-en` citation to go with it; an item with no
+English article can give neither. Refused on the evidence and not on the subject: if
+the article is ever written, the item is still a `P361` child of a held umbrella.
+
+### Deviation 1396 — an empty infobox `part_of` is silence, not disagreement
+
+Deviation 1390 says the article wins where its own `part_of` disagrees with the
+item's `P361`. Four of the six name the umbrella themselves — *Siege of Johor
+(1587)*, *Attack on Bintan (1521)* and *Battle of Ugentana (1536)* read
+`part_of = [[Malay–Portuguese conflicts]]`, *Siege of Campar* reads
+`part_of = [[Malay-Portuguese conflicts]]` with the hyphen. **Two —
+*Battle of Malacca (1534)* and *Battle of Johor (1586)* — carry `part_of = ` and
+nothing after it**, and that is a case deviation 1390 did not cover.
+
+An empty field is not a contradiction, so the test falls back to what the article is
+*about*, read in its own body. Both are Johor–Portuguese fighting around Malacca:
+the 1534 article opens *"The Battle of Malacca took place in 1534 between Johor and
+the Portuguese navy"*, the 1586 one *"The Battle of Johor was a military conflict
+between the Johorese and Portuguese in 1586"*, and both carry
+`[[Category:Portuguese Malacca]]`. Both were filed. **The rule, stated for the next
+fire: a `part_of` that disagrees refuses the filing; a `part_of` that is empty sends
+you to the body, and only a body that is about something else refuses it.**
+
+### What was imported
+
+Through `tools/import/wikidata.mjs --import --batch 10`, six items, **ten calls**,
+eight leads cached, all six filed under `malay-portuguese-conflicts` from their own
+`P361` on the first pass:
+
+- **`siege-of-johor-1587`** (`Q55633157`, 5 sitelinks — the best-linked of the six,
+  and the record the previous stand listed as *"still unreached"*), 1587-07 to
+  1587-08, place **`johor`**, a new place record from `P276` `Q183032`.
+- **`battle-of-malacca-1534`** (`Q127868126`, 2 sitelinks), 1534-05, place
+  **`malacca-city`**, which the atlas already held — the import **reused** it
+  (`"the same name at the same point"`) rather than putting a second Malacca on the
+  map.
+- **`attack-on-bintan-1521`** (`Q118900813`, 2 sitelinks), 1521-10, **`place: null`**
+  and `region: "asia"`: `P276` `Q10097` *Bintan* has one class, `Q3191695`, which is
+  not in the class table, so the tool refused it and listed it rather than guessing
+  — deviation 1393's shape again, and the second record of this lane written with no
+  place and a lane that still counts.
+- **`battle-of-ugentana-1536`** (`Q116214216`, 1 sitelink), 1536, place
+  **`johor-river`**, a new place record from `P276` `Q1702507`.
+- **`battle-of-johor-1586`** (`Q127868092`, 1 sitelink), 1586, place
+  **`malay-peninsula`**, from `P276` `Q18758` — coarse, and the item's own answer.
+- **`siege-of-campar`** (`Q130520296`, 1 sitelink), 1543, **`place: null`** and
+  `region: "asia"`. **A15(6) worked exactly as written** and the tool said so:
+  *"no place from the country Q833: the country's inception (1963) is after the event
+  ended (1543)"*. `Q833` *Malaysia* was the item's own `P276`, not merely its `P17`,
+  and the inception test refused it all the same.
+
+### The one edge, and the five records that carry none
+
+**`capture-of-malacca-1511 --> attack-on-bintan-1521`, `precondition-of`,
+`probable`**, two authors: the Bintan article's §Background at revision 1372970515,
+and *Capture of Malacca (1511)* at revision 1373484620 — **the revision the record
+at the other end already cites** (deviation 1380), which states the same chain from
+the other end. This is the edge that took the largest component from 781 to 782:
+`capture-of-malacca-1511` is inside it.
+
+**Five of the six carry no edge, and A5 is owed an account of each.** In every case
+the article states a cause and the cause is not an event this atlas holds, which is
+A15(5)'s third-event clause — *written from that event or not at all*:
+
+- **`battle-of-ugentana-1536`** is the sharpest case, and the most nearly writable.
+  Its own article: *"In 1535, the Portuguese captain of Malacca Dom Estevão da Gama
+  attempted to defeat the Sultan of Johor by attacking his capital at Ugentana.
+  Although he burned the city, the sultan avoided the total destruction of his forces
+  by evacuating … **Hence**, he was able to rebuild his city and continue harassing
+  the navigation of Malacca after the Portuguese had left, **and for that reason**
+  Dom Estevão was compelled to try and attack Ugentana once more."* Two explicit
+  causal connectives, and the cause is **the first Battle of Ugentana, of 1535,
+  which the atlas does not hold** — a separate article, *Battle of Ugentana*, and an
+  item that is not among this umbrella's eleven backlinks. **The next fire should
+  look it up**: one import and that edge is the best-cited one this vein has.
+- **`siege-of-johor-1587`** is a stub past its first paragraph and gives **no reason
+  at all** for the siege. `battle-of-johor-1586` precedes it by a year and the 1586
+  article ends *"The Sultan, happy with his victory, decided to attack Malacca in
+  the same year with 100 ships; however, his attack was repelled"*, so an edge there
+  would be **order with no cause stated: A15(5)'s refusal class, and the only one of
+  the three batches where it refused a pair the atlas now holds at both ends.**
+- **`battle-of-malacca-1534`** gives its own cause — the Johorese sultan having the
+  Portuguese envoys killed, *"Enraged by this brutality, the Portuguese dispatched a
+  naval expedition for retaliation"* — and that killing is no event here.
+- **`battle-of-johor-1586`**: the sultan *"was disappointed with the compensation he
+  received from the Portuguese on account of his ship being sunk in Malacca"*. Not
+  an event here either.
+- **`siege-of-campar`**: *"Mahmud … sought to reclaim his lost sovereignty"*, which
+  names nothing datable in this atlas.
+
+## Batch 68 — Tripoli 1551 and Zuwarah 1552, and africa's 16th century from seven to nine
+
+*Third batch of the fire, from the cell that trailed once batch 67 had run:
+**africa's 16th century at seven**. `ottoman-habsburg-wars` (`Q786171`, 1526–1791)
+is the held umbrella that reaches it — the earliest African series the atlas has.
+Two imports, **one `reacted-to` edge**, one refusal on deviation 1390, and the main
+count still 231.*
+
+| | before 68 | after 68 |
+| --- | --- | --- |
+| active events | 1405 | **1407** |
+| main | 231 | **231** |
+| largest connected component | 782 | **782** |
+| components | 406 | **407** |
+| events with no edge | 313 | **313** |
+| **edges crossing an umbrella** | 605 | **605** |
+| edges inside one umbrella | 602 | **603** |
+| active edges | 1207 | **1208** |
+
+### How the vein was read, and what was left
+
+Deviation 1392's two calls again: `list=backlinks&bltitle=Q786171` returned **61**
+items, and two `wbgetentities` over them (31 and 30, the API's own ceiling being
+50) gave the table. Filtered to items whose `P361` is `Q786171`, whose first dated
+claim falls in 1500–1600, and that the atlas does not already hold: **25
+candidates.**
+
+**Three of the 25 are in the `africa` lane** — Tripoli (`Q2860095`, 14 sitelinks),
+Zuwarah (`Q133837258`, 1) and Monastir (`Q135623349`, 2). **The other 22 are
+Europe and the Mediterranean islands** — the Great Siege of Malta (`Q58732`, 54
+sitelinks, the best-linked unheld child of this umbrella by a wide margin), the Long
+Turkish War, Szigetvár, the Hungarian campaigns of 1527–1528 and 1529, Pest twice,
+Gozo, Corsica, Bastia, Sori, Genoa, Modon, Rethymnon, Chios twice, Cerigo, Klis,
+Moravia and the rest — and **A15(1) pauses every one of them**: nothing of Europe
+before 1900 is this lane's until Africa and Asia each hold 303. This is the first
+batch of this lane to leave a 54-sitelink candidate on the table, and it should be
+left there; the number is recorded so that whoever lifts the pause knows the vein is
+sitting here fully read.
+
+### Deviation 1390 refused one of the three
+
+**`Q135623349` *Battle of Monastir (1540)*, 2 sitelinks** — refused. Its item's
+`P361` is `Q786171`, but its article's infobox reads
+`part_of = Hafsid-Shabiyan War`, which is not the Ottoman–Habsburg wars and is not
+an umbrella this atlas holds. Filing it under `ottoman-habsburg-wars` on the item's
+word would have put a record here that its own cited source contradicts in its
+infobox. **Third refusal on this rule in two fires**, and the check again cost one
+raw fetch.
+
+### What was imported
+
+Two items, **five calls**, three leads cached:
+
+- **`siege-of-tripoli-1551`** (`Q2860095`, 14 sitelinks, `P31` `Q188055` *siege* →
+  `war`), 1551-08-09 to 1551-08-15 from `P580`/`P582`, place **`tripoli`**, which
+  the atlas already held.
+- **`attack-on-zuwarah`** (`Q133837258`, 1 sitelink), 1552-08-18 from `P585`, place
+  **`zuwarah`**, a new place record from `P276` `Q231167`, lane `africa` from its own
+  point, `summary: null`.
+
+### A3, applied by hand: one record filed under two umbrellas
+
+*Siege of Tripoli (1551)*'s infobox reads **`part_of = the [[Ottoman-Habsburg
+wars]] and the [[Italian War of 1551–1559]]`**, and **the atlas holds both** —
+`italian-war-of-1551-1559` spans 1551–1559, so the span fits and the subject fits.
+The item's `P361` names only the first, and the import files from `P361`, so the
+second filing was added by hand after the import: `parent` is the two-id list M79
+allows, on `battle-of-noain`'s precedent, with `filed-from-article-part-of` in
+`review.flags` and the reason in `review.note`. A3 asks for every umbrella whose
+span and subject fit and the article named two; `parent` enters no adjacency, so
+nothing about the graph changed. **It does not change the crossing count either**,
+and the next fire should not expect it to: `crossesUmbrella()` in
+`tools/m42-pool.mjs` asks whether the two ends share **no** umbrella, and Tripoli
+and Zuwarah still share `ottoman-habsburg-wars`.
+
+### The one edge, and the cause that is not here
+
+**`siege-of-tripoli-1551 --> attack-on-zuwarah`, `reacted-to`, `probable`**, two
+authors at the two revisions the records already cite. The Zuwarah article's
+§Background is explicit — *"After the Ottoman Conquest of Tripoli in 1551, the loss
+created anger in Malta … the Knights began to resume offensive operations against
+the Barbary Coast. The Knights targeted the city of Zuwarah."* — and the Tripoli
+article's §Aftermath puts both in one sentence.
+
+**No edge runs *into* Tripoli**, and A15(5)'s third-event clause is why. The
+article's own first paragraph gives the cause and names it twice: *"The attack …
+appears to have been launched in retaliation for the capture of Mahdia by the
+Spanish and Hospitallers the previous year"*, and §Background and prelude: *"In
+September 1550, the town of Mahdia in modern Tunisia … was captured by a
+Spanish-led expedition with Hospitaller support. **This led** the Ottoman sultanate
+to send a punitive expedition against Hospitaller Malta and Tripoli in 1551."*
+**The Capture of Mahdia (1550) is `Q5037032`, 6 sitelinks, and the atlas does not
+hold it** — so the edge is not this batch's to write from anything else.
+
+**It is the next fire's best lead in this lane, and it is not free.** `Q5037032`'s
+`P361` is **`Q118929718` *Ottoman–Spanish War*, which the atlas does not hold and
+which has no English article** (it was among the 61 and was skipped for exactly
+that), so importing Mahdia files it nowhere and **raises the main count by one** —
+the number this lane has held at 231 across four batches and which is already one of
+the three open questions to the owner. The way through, if a fire wants it, is one
+`action=raw` fetch of *Capture of Mahdia (1550)*: if its own infobox names the
+Ottoman–Habsburg wars, it can be filed there by hand exactly as Tripoli was filed
+under its second umbrella in this batch, at no cost to the main count, and the
+Mahdia → Tripoli edge is then the best-cited edge available anywhere in africa's
+16th century. **That check was not run in this fire** and is left stated rather than
+guessed.
+
+### Deviation 1397 — Wikimedia answers 429 on this egress, and a User-Agent plus `curl --retry` is the whole fix
+
+The first call of batch 67 came back **429** with an empty body, and the previous
+stand's §5 would have read as SPARQL's 502 coming for the action API too. It is not
+that. Wikimedia rate-limits a request with no identifying `User-Agent`, and this
+sandbox's `curl` sends none. Every call of all three batches after that one was
+**200**, under one form:
+
+```
+curl -s --max-time 120 --retry 6 --retry-delay 20 --retry-all-errors \
+  -A "atlas-causal/1.0 (https://github.com/goncalojacob/atlas-causal)" <url>
+```
+
+`--retry-all-errors` is the part that matters, because `curl` does not count a 429
+as retryable without it. `tools/import/wikidata.mjs` was **not** touched — it never
+hit this, so there is nothing there to fix — and this is a note about reading
+Wikipedia and Wikidata **by hand from this sandbox**, which every batch does for
+deviation 1390's check and for its edge quotes. **Nothing under `data/` and no tool
+changed.**
