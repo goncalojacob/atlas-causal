@@ -20831,13 +20831,30 @@ lead on the list.*
   fire met none of it. Keep the instruction those stands left — try the import
   first, in one command — but read a refusal as this hour's and not as the
   branch's condition.
-- **A filing is three writes and the validator checks one of them.** Batch 80's
-  section records all three. A single `parent` is a **string**, the argument goes
-  in `docs/m62-umbrellas.md` or `tests/m62.test.mjs` fails by name, and a record
-  written from a script must emit **literal UTF-8** and not `\uXXXX`. The
-  validator was at 0 errors through all three defects. Run `node --test
-  tests/bundle.test.mjs tests/m62.test.mjs` after any filing: it is twelve
-  seconds and it is the check that sees this.
+- **A filing is four writes and the validator sees one of them.** This fire got
+  three of the four wrong on batch 80 and the fourth wrong on batch 81, with the
+  validator at **0 errors** throughout, so this is the list to work from:
+  1. a single `parent` is a **string** on disk, not a one-element list — A8 makes
+     it a list and `parentsOf` reads all three shapes, but the form's own
+     `buildRecord` normalises one parent to a string and `tests/bundle.test.mjs`
+     holds every record to a byte-identical save through it;
+  2. **`docs/m62-umbrellas.md`** must say why the record is part of its umbrella
+     (`tests/m62.test.mjs` fails by name);
+  3. **`docs/m67-umbrellas.md`** must argue it *as well*, whenever the record
+     names **neither an actor nor a place** — which every import-created record
+     does until a reviewer adds actors (`tests/m67.test.mjs`, likewise by name);
+  4. a record written from a script must emit **literal UTF-8**, not `\uXXXX`
+     (`json.dumps` needs `ensure_ascii=False`).
+
+  Run `node --test tests/bundle.test.mjs tests/m62.test.mjs tests/m67.test.mjs`
+  after any filing: half a minute, and it is the only check that sees any of this.
+- **Deviation 798's order is not a formality: rebuild the index *after* the
+  records commit, never with it.** `tools/lib/history.mjs` builds the history
+  shards out of the commits that touched each record's file, so an index built
+  before the records are committed names a state that no longer exists the moment
+  they are. `validate --index` was clean at the moment it ran and three suites
+  then failed on rule 16 for history shards alone. Batches 77 to 79 have the
+  shape right: one `data:` commit, then `cache:`, then `index: rebuild`.
 - **The 50 are the vein and 16 are now screened**, two of them written. Thirty-four
   are unscreened and deviation 1515's table lists every one with its article, so no
   fetching is needed to pick the next. The screen that kills them is always the
