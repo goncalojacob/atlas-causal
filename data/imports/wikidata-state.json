@@ -1947,8 +1947,6 @@
         "Q3237997",
         "Q369859",
         "Q2888674",
-        "Q722699",
-        "Q2399119",
         "Q5037028",
         "Q4871476",
         "Q139022658",
@@ -1976,7 +1974,14 @@
         "Q1132579",
         "Q4870217",
         "Q2888637",
-        "Q130377423"
+        "Q130377423",
+        "Q722699",
+        "Q2399119",
+        "Q592091",
+        "Q333088",
+        "Q1073849",
+        "Q3051491",
+        "Q5722281"
       ]
     }
   },
@@ -2180,6 +2185,10 @@
     "Q4871476": {
       "on": "2026-09-30",
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q3051491": {
+      "on": "2026-10-01",
+      "why": "it has no P31 at all, so nothing says what kind of thing it is"
     }
   }
 }

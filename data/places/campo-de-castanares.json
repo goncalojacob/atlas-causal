@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "campo-de-castanares",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "a9-place",
+      "point-from-event-item"
+    ],
+    "note": "The point is Q592091's own P625, which tools/import/wikidata.mjs read and could put no name to; the name is the one the cited article gives the ground — \"the plains of Castañares, north of the present-day Argentine city of Salta\" (\"Battle of Salta\", revision 1370273475). No Wikidata item is claimed for the place itself."
+  },
+  "sources": [],
+  "names": [
+    "Campo de Castañares",
+    "Castañares"
+  ],
+  "where": {
+    "lon": -65.396133333333,
+    "lat": -24.731391666667,
+    "precision": "point",
+    "label": "Campo de Castañares"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

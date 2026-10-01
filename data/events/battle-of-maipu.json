@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-maipu",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1073849",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Maipú",
+    "pt": "Batalha de Maipú"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1073849"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Maipú\", revision 1370268820"
+    }
+  ],
+  "title": "Battle of Maipú",
+  "summary": "The English Wikipedia article \"Battle of Maipú\", at revision 1370268820, opens: \"The Battle of Maipú was fought near Santiago, Chile on 5 April 1818, between South American rebels and Spanish royalists, during the Chilean War of Independence. The Patriot rebels led by Argentine general José de San Martín effectively destroyed the Spanish forces commanded by General Mariano Osorio, and completed the independence of the core area of Chile from Spanish domination.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1073849, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the Chilean War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1818,
+    "end": 1818,
+    "date": "1818-04-05"
+  },
+  "place": "santiago",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "chilean-war-of-independence"
+}

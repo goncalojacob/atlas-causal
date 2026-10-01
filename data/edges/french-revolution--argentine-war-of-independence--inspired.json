@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "french-revolution--argentine-war-of-independence--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-61"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Argentine War of Independence\", revision 1375018429, § Background"
+    }
+  ],
+  "from": "french-revolution",
+  "to": "argentine-war-of-independence",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The article names the influence directly, in the paragraph on the division between criollos and peninsulares: \"Although they were all considered Spanish, and there were no legal distinctions between Criollos and Peninsulares, most Criollos thought that Peninsulares had undue influence in political matters. **The ideas of the American and French Revolutions, and the Age of Enlightenment, promoted desires of social change among the criollos.** The full prohibition imposed by Spain to trade with other nations was also seen as damaging to the viceroyalty's economy.\" An influence on what a party to the war wanted is what `inspired` is for, and it is all the sentence claims: the article gives the occasion of the rising elsewhere, in the collapse of the Junta of Seville.",
+  "dispute": null
+}

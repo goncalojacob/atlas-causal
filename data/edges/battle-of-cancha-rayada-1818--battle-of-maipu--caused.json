@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-cancha-rayada-1818--battle-of-maipu--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-59"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Maipú\", revision 1370268820, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chilean War of Independence\", revision 1371212438, § Patria Nueva"
+    }
+  ],
+  "from": "battle-of-cancha-rayada-1818",
+  "to": "battle-of-maipu",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Maipú's own article states the cause outright, from the royalist side: Osorio, \"after passing through San Fernando by the end of March, realized that he had not defeated the Patriot army conclusively at Cancha Rayada, and moreover, that the latter was fit to fight and to win. Facing this fact, another encounter between the Patriots and Royalist army near Santiago became inevitable.\" The same section gives the patriot half: \"Despite being defeated at Cancha Rayada, the Patriot army regrouped again in less than two days, adding up to about 4,000 men, allowing San Martín to rebuild his units almost entirely. Hence, on April 2, after leaving the Ochagavía camp to travel to the lower hills of Maipo, the Patriot army emerged organized in three infantry divisions.\" The war's own article carries the fortnight between the two: after the surprise at Cancha Rayada \"a false rumor spread that San Martin and O'Higgins had died, and a panic seized the patriot troops, many of whom agitated for a full retreat back across the Andes to Mendoza\", until Rodríguez rallied them and O'Higgins returned to Santiago — and then, \"on April 5, 1818, San Martín inflicted a decisive defeat on Osorio the Battle of Maipú\". An inconclusive victory that left both armies in the field is the cause the sources state, in those words.",
+  "dispute": null
+}
