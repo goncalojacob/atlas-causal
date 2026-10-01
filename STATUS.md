@@ -24489,3 +24489,49 @@ may fix. Run **2270** on this fire's head reports `1940 / 1940 / 0` pure and
 M42 started 2026-10-01T19:00:35Z by scheduled
 M42 started 2026-10-01T21:18:58Z by scheduled
 M42 started 2026-10-01T23:30:14Z by scheduled
+
+**M42 batch 87 — the inverse vein measured, and three umbrellas off it, 1 October.**
+The fire that claimed at 23:30Z merged `origin/m0`, then answered the first of the
+four candidate next questions the batch-86 stand left and had never been asked:
+**every active event's own `P361` that the atlas does not hold.** Two chunked
+`wbgetentities` sweeps, 31 calls, no article read: the 1,290 active events carrying
+an item name **301 distinct `P361` targets**, **130** already records here and
+**171** not, of which **137** have an English article, **162** are not a
+disambiguation page or a list by their own `P31`, and **78** clear every gate
+including a main-count effect of zero or less. The vein is written out as
+**`docs/m42-inverse-vein.md`**, 171 rows, to be ticked by hand.
+**Batch 87** took four rows from it, Africa first under A10, through the tool's own
+`--import` — `data/imports/wikidata-state.json` held 0 pending of 1,815 done, so
+four items appended to the seeds file were the whole batch. **Three written**:
+`2012-2013-egyptian-protests` (`Q3720660`, 2012–2013, `africa`, place `egypt-q79`),
+`third-indochina-war` (`Q796498`, 1975–1991, `war`, `asia`, filed under
+`indochina-wars`, place `mainland-southeast-asia` — the batch's one new place, after
+**A15(6) refused all five of its countries** on the one gate that reads them) and
+`middle-eastern-crisis-2023-present` (`Q124373310`, 2023–`end-unstated`, `asia`).
+**Five children filed**, each its own `P361` and each inside its umbrella, and
+**the main count fell 232 → 231**, which is what A6 asks. **One of the four was
+refused** and five more before the import ran, all six written down with reasons so
+nothing re-reads them: `Q138772633` (no place, no lane — one `lanes` entry from
+writable), `Q184425` the Pacific War (**the class table reads `Q718893` as a
+place**), `Q5692053` (no interval on the item and none in the article's first
+sentence), `Q6589923` (class not in the table), and `Q86831539` and `Q3119132` on
+A6's `net` alone.
+**No edge was written and A5's "has to say why" is answered at length**: an umbrella
+carries none by A6's design — all seven held umbrellas have degree zero — and the
+three articles were screened anyway, 753 sentences and 118,823 characters through
+`tools/import/chronology.mjs`, which found 14 sentences naming a held non-kin record
+and **not one edge**: four comparisons, three see-also lists, two of A15(5)'s
+chronology class, two homonyms, two third parties, one anniversary, and **deviation
+1525's third edge in three fires** (*"in turn ending the Cambodian genocide"* — no
+edge type for an ending).
+**Two deviations.** **1527**: A8 does not mean every umbrella. The batch's first
+filing kept `indochina-wars` beside `third-indochina-war` on both children and
+`tests/m42-filing.test.mjs` refused it — a parent reachable through another parent
+tells a reader nothing the tree did not — so the children take the narrower umbrella
+alone, and the next fire taking this vein should file under the narrowest that fits.
+**1526**: **A15(11)'s total measures the shape of the parent tree and not the graph.**
+This batch wrote no edge and the number moved four times in both directions — one
+filing lowered it, and inserting an umbrella between a child and its grandparent
+raised it three times — with not one of those four chains different from before. The
+amendment says *edges written*; `tools/m42-pool.mjs` reports the corpus total, and
+five batch notes have quoted the one as the other.

@@ -22620,3 +22620,135 @@ grandparent it may already name. **A fire taking a batch from
 `docs/m42-inverse-vein.md` should file the child under the narrowest umbrella
 that fits and take the wider one off**, not add to it. The test will catch it
 either way; this note is so the next fire does not spend the cycle.
+
+## Where the run stands after batch 87, for the fire that picks it up
+
+*1 October, the import fire that claimed at 23:30Z. It answered the first of
+the four candidate next questions the batch-86 stand left, wrote **three**
+records and **no** edge, and left a vein of 168 untouched rows behind it. This
+stand supersedes the one after batch 86.*
+
+**The one thing this stand is for: there is a vein again, it is
+`docs/m42-inverse-vein.md`, and it is nothing like the last one.** 171 rows,
+78 of them clearing every gate, and **no article has to be read to judge a
+row** — the `net` column, the class and the span decide it, and all three are
+already in the table. A batch is one import call per row. But **an umbrella
+carries no edge**, so this vein cannot grow the largest connected component
+and no fire should take a batch from it expecting to. What it moves is the main
+count (A6) and the active count per lane (A10).
+
+**Read these before taking a batch from it.**
+
+1. **File the child under the narrowest umbrella that fits and take the wider
+   one off** — deviation 1527. 29 of the 171 rows have a held `P361` parent of
+   their own, so a child filed under one of them may already name its
+   grandparent, and `tests/m42-filing.test.mjs` refuses that. This fire spent a
+   cycle on it.
+2. **A row at `net` above 0 is refused by A6** however good its article is. Two
+   rows with clean spans and real articles went that way — `Q86831539` and
+   `Q3119132`.
+3. **Africa has four rows in this whole vein** and Asia thirty-one. A10 puts
+   Africa first and this vein will not serve it for long. The fire after the
+   next one needs a different question for the africa lane.
+4. **`Q138772633`, the Iran–Israel conflict, is one judgement from writable**:
+   `--import` refused it because its `P361` chain is the item alone, it carries
+   no `P625`, and the seeds file names no lane for it. A `lanes` entry for it
+   would do it. That is a judgement about a conflict with ends in two lanes and
+   it is left for a person.
+
+**The three other candidate questions, still as the batch-86 stand left them.**
+
+1. ~~The inverse of the vein: `P361` parents the atlas does not hold.~~
+   **Measured by this fire; `docs/m42-inverse-vein.md` is the answer.**
+2. **`P1542` / `P828` between two held items** — measured by the batch-86 fire
+   and **closed to batches until the owner answers C9.** Do not re-query it;
+   the seven that clear every gate are written out with their locators.
+3. **`P710` participants into actors**, which A11(a) reads on a curation fire
+   and no import fire has swept. Not measured.
+4. **The `done`-cursor vein of deviation 1515** — 167 ticked items never
+   written, 53 importable. Not measured since. **It is the only remaining vein
+   whose rows are events rather than umbrellas, so it is the only one that can
+   write an edge**, and a fire that wants the component to move should take it
+   ahead of this one.
+
+**What is new in this stand and not in the last.**
+
+- **Deviation 1526: A15(11)'s total measures the parent tree, not the graph.**
+  This batch wrote no edge and the number moved four times, in both
+  directions. A fire quoting `tools/m42-pool.mjs`'s corpus total as the
+  amendment's number is quoting something else — the amendment says *edges
+  written*. Five batch notes have now done it, this one included until it was
+  corrected.
+- **Deviation 1527: A8 does not mean every umbrella**, only ones on different
+  axes. The read above.
+- **The seeds file is a usable channel again.** `data/imports/wikidata-state.json`
+  had 0 pending of 1,815 done, so items appended to
+  `data/imports/wikidata-seeds.json` → `items` are the whole of the next
+  `--import` batch and nothing else comes with them. That is how this batch
+  ran and it is cleaner than a scratchpad driver: every A15 gate, the place
+  chain, the lead fetch, the category reading and the filing all ran as
+  written.
+
+**Unchanged from the batch-86 stand and still true.**
+
+- **The write and the network are both open.** Deviations 1516 and 1518 remain
+  over; `node`'s `fetch` answers where `curl` does not (deviation 1520). A
+  `User-Agent` header is needed: the API answered 429 without one.
+- **Two structural refusals are still the binding constraint on edges**, and
+  this fire met one of them again: **deviation 1525 took its third edge in
+  three fires** — *"in turn ending the Cambodian genocide"*, a held record
+  under the same umbrella, and no edge type for an ending. Deviation 1523
+  (rule 4 on two overlapping intervals) is the other. **Two sentences from the
+  owner release both.**
+- **Two owner questions are still open and this fire met neither**: C8, and
+  A6's span rule against the period umbrellas.
+- **Do not re-screen**: the whole of `docs/m42-umbrella-children.md`, rows 1 to
+  1,008; the 17 children of `arab-spring` and `afghan-conflict` (deviation
+  1522); `Q87138`, `Q29269`, `Q185729`, `Q2659185`, `Q276172`, `Q5033913`
+  (deviation 1523), `Q4871914` (1525), `Q17149843` (a redirect, A15(8));
+  `scramble-for-africa`, `decolonisation-of-africa`, `decolonisation-of-asia`,
+  `indochina-wars`; and the six refusals in
+  `docs/m42-inverse-vein.md`'s own table.
+- **Three identity fills are still waiting for a curation fire, not a batch.**
+  `east-timor-invasion-1975` is `Q2583734`, `spanish-american-war-1898` is
+  `Q12583`, `cuban-war-of-independence-1895-1898` is `Q1514908`; the East Timor
+  record needs A7 in the same pass.
+- **The candidates sweep (A2) overwrites a ticked file.** Pass `--to` a scratch
+  path.
+- **A new homonym class the span guard cannot see.** Deviation 1480 decides
+  between two *held* homonyms by the subject's years. This fire met two cases
+  of **one held record against an unheld twin** — the 1991 Paris Peace Accords
+  against the atlas's 1973 ones, the 1989 Paris Peace Conference against the
+  atlas's 1919–1920 one — which the guard cannot see at all, because there is
+  only one candidate and nothing to choose between. Both were caught by reading;
+  neither would have been caught by the screen.
+- **Unchanged and still the owner's:** `Q8683`, the Cold War; `Q184425`, the
+  Pacific War, whose class the table reads as a place; the two Camp David
+  records' `americas` lane; deviations 1517 and 1512, together; may a run
+  identify an event named by description where only one held record can be
+  meant; deviation 1474's items; the placeless events; deviations 1423, 1461,
+  1473, 1478, 1482, 1506, 1508 and 1511; A11's area clause; A15(12)'s
+  uncategorised events, now two more; the EEC's closing year;
+  `origin/m42b`'s place placeholder summaries; and C8.
+- **Deviation numbers: take the next above 1527.** `m42b` was at 1377 on
+  1 October.
+
+### Counts after batch 87
+
+- active events **1,425** (was 1,422); **main 231** — **down one**, which is
+  what A6 asks; filed 1,194.
+- per lane, active / main: Europe **556/86** and Americas **393/56**, both
+  unchanged; **Asia 246/58** (was 244/59), **Africa 230/31** (was 229/31).
+  Africa is **73 short** of A10's 303 and Asia **57 short**.
+- active edges **1,214** (unchanged — **no edge was written**, and the batch's
+  section says why under A5).
+- components **419** (was 416, up three: three new edgeless umbrellas);
+  **largest connected component 784** (unchanged).
+- **edges crossing an umbrella (A15(11)): 609** (was 607), inside one **605**
+  (was 607) — and **not one edge was written**. Deviation 1526.
+- active events with no edge at all: **323** (was 320).
+- validator **0 errors, 618 warnings** (was 615; the three are `degree-zero`
+  on the three new records), and `--index` clean.
+- A15(2)'s recache: **2,988** `wikipedia-en` citations on active records,
+  **2,910** on disk at the revision cited, **0 that should be on disk and are
+  not.**
