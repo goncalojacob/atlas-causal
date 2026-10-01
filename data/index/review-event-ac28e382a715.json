@@ -9581,6 +9581,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "battle-of-gannoruwa",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "sinhalese-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Gannoruwa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -13070,6 +13101,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "battle-of-mulleriyawa",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "sinhalese-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Mulleriyawa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -14414,6 +14477,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Rancagua"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "battle-of-randeniwela",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "sinhalese-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Randeniwela"
     },
     {
       "authors": [
@@ -21016,6 +21110,37 @@
       "revised": "2026-09-30",
       "status": "active",
       "title": "Congo Crisis"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "conquest-of-koneswaram-temple",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "sinhalese-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Conquest of Koneswaram Temple"
     },
     {
       "authors": [
@@ -29254,6 +29379,37 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "other",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "kandyan-commerce-raiding-against-portugal-1612-1613",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "sinhalese-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Kandyan commerce raiding against Portugal (1612–1613)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "revolution",
       "cites": [
         "wikidata",
@@ -36075,6 +36231,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "roland-crappe-s-raids-on-portuguese-colonies",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "sinhalese-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Roland Crappé's raids on Portuguese colonies"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -38801,6 +38989,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "id": "siege-of-colombo-1587-1588",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "sinhalese-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Colombo (1587–1588)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "siege-of-concepcion",
       "kind": "event",
@@ -41211,6 +41431,37 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "other",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "sinhalese-portuguese-conflicts",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a7-widened"
+        ],
+        "note": "A7: the span was 1527-1658, the item's own P580 and P582. The cited article says 1518 twice at revision 1373493940 — its first sentence opens \"Between 1518 and 1658, armed conflict took place\" and its infobox reads \"date = 1518-1658\" — so the start is 1518 and the end is unchanged. The item's description and the article's short description both still say 1527, which is why the import wrote it; the record cites the article.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Sinhalese–Portuguese conflicts"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -41344,6 +41595,38 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Sino-Vietnamese War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "sitawaka-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "sinhalese-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Sitawaka campaign"
     },
     {
       "authors": [
@@ -48010,6 +48293,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-gannoruwa",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-gavinana",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -48268,6 +48557,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-mulleriyawa",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-musa-dagh",
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -48305,6 +48600,12 @@
     },
     {
       "id": "battle-of-puerto-de-cavite",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-randeniwela",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -48712,6 +49013,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "conquest-of-koneswaram-temple",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "corynthia-expedition",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -48935,6 +49242,12 @@
     },
     {
       "id": "italian-war-of-1536-1538",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "kandyan-commerce-raiding-against-portugal-1612-1613",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -49198,6 +49511,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "roland-crappe-s-raids-on-portuguese-colonies",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "russo-swedish-war-1741-1743",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -49301,6 +49620,12 @@
     },
     {
       "id": "siege-of-campar",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-colombo-1587-1588",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -49508,6 +49833,18 @@
       "kind": "event",
       "message": "the title states 1809 and the record is dated 1808–1809",
       "rule": "span-vs-article-title"
+    },
+    {
+      "id": "sinhalese-portuguese-conflicts",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "sitawaka-campaign",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "skirmish-at-many-branch-point",

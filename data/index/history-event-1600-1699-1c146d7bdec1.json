@@ -296,6 +296,15 @@
         }
       ]
     },
+    "battle-of-gannoruwa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-gibraltar-1621": {
       "from": "git",
       "versions": [
@@ -634,6 +643,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-randeniwela": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
@@ -1054,6 +1072,15 @@
         }
       ]
     },
+    "conquest-of-koneswaram-temple": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "conquest-of-paraiba": {
       "from": "git",
       "versions": [
@@ -1186,6 +1213,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "kandyan-commerce-raiding-against-portugal-1612-1613": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
@@ -1489,6 +1525,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "roland-crappe-s-raids-on-portuguese-colonies": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

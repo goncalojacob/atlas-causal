@@ -111,7 +111,7 @@
       ]
     },
     "afabet": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2001,6 +2001,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "colombo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
@@ -6389,6 +6398,15 @@
         }
       ]
     },
+    "mulleriyawa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "munich": {
       "from": "git",
       "versions": [
@@ -9404,6 +9422,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "sri-lanka-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

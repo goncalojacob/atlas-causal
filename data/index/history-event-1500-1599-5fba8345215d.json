@@ -378,6 +378,15 @@
         }
       ]
     },
+    "battle-of-mulleriyawa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-noain": {
       "from": "git",
       "versions": [
@@ -1076,6 +1085,15 @@
         }
       ]
     },
+    "siege-of-colombo-1587-1588": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "siege-of-concepcion": {
       "from": "git",
       "versions": [
@@ -1280,6 +1298,30 @@
       ]
     },
     "siege-of-tripoli-1551": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "sinhalese-portuguese-conflicts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "sitawaka-campaign": {
       "from": "git",
       "versions": [
         {

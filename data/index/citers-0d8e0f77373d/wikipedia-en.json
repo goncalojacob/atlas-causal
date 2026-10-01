@@ -11276,6 +11276,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gannoruwa",
+      "kind": "event",
+      "locator": "\"Battle of Gannoruwa\", revision 1371454057"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gao",
       "kind": "event",
       "locator": "\"Battle of Gao\", revision 1370441289"
@@ -11900,6 +11906,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mulleriyawa",
+      "kind": "event",
+      "locator": "\"Battle of Mulleriyawa\", revision 1372589220"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-musa-dagh",
       "kind": "event",
       "locator": "\"Musa Dagh\", revision 1376438507, § lead"
@@ -12149,6 +12161,12 @@
       "id": "battle-of-rancagua",
       "kind": "event",
       "locator": "\"Battle of Rancagua\", revision 1371210959"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-randeniwela",
+      "kind": "event",
+      "locator": "\"Battle of Randeniwela\", revision 1375713479"
     },
     {
       "dissent": false,
@@ -13319,6 +13337,12 @@
       "id": "congo-crisis",
       "kind": "event",
       "locator": "\"Congo Crisis\", revision 1373847824"
+    },
+    {
+      "dissent": false,
+      "id": "conquest-of-koneswaram-temple",
+      "kind": "event",
+      "locator": "\"Conquest of Koneswaram Temple\", revision 1373846628"
     },
     {
       "dissent": false,
@@ -14660,6 +14684,12 @@
     },
     {
       "dissent": false,
+      "id": "kandyan-commerce-raiding-against-portugal-1612-1613",
+      "kind": "event",
+      "locator": "\"Kandyan commerce raiding against Portugal (1612–1613)\", revision 1372825928"
+    },
+    {
+      "dissent": false,
       "id": "kaocen-revolt",
       "kind": "event",
       "locator": "\"Kaocen revolt\", revision 1370625448"
@@ -15758,6 +15788,12 @@
     },
     {
       "dissent": false,
+      "id": "roland-crappe-s-raids-on-portuguese-colonies",
+      "kind": "event",
+      "locator": "\"Roland Crappé's raids on Portuguese colonies\", revision 1373846591"
+    },
+    {
+      "dissent": false,
       "id": "romanian-revolution-1989",
       "kind": "event",
       "locator": "\"Romanian revolution\", revision 1374643337"
@@ -16193,6 +16229,12 @@
       "id": "siege-of-ciudad-rodrigo-1812",
       "kind": "event",
       "locator": "\"Siege of Ciudad Rodrigo (1812)\", revision 1370740278"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-colombo-1587-1588",
+      "kind": "event",
+      "locator": "\"Siege of Colombo (1587–1588)\", revision 1375094031"
     },
     {
       "dissent": false,
@@ -16646,6 +16688,12 @@
     },
     {
       "dissent": false,
+      "id": "sinhalese-portuguese-conflicts",
+      "kind": "event",
+      "locator": "\"Sinhalese–Portuguese conflicts\", revision 1373493940"
+    },
+    {
+      "dissent": false,
       "id": "sinking-of-ara-general-belgrano",
       "kind": "event",
       "locator": "\"Sinking of ARA General Belgrano\", revision 1370747049"
@@ -16667,6 +16715,12 @@
       "id": "sino-vietnamese-war",
       "kind": "event",
       "locator": "\"Sino-Vietnamese War\", revision 1375848359"
+    },
+    {
+      "dissent": false,
+      "id": "sitawaka-campaign",
+      "kind": "event",
+      "locator": "\"Sitawaka campaign\", revision 1370747267"
     },
     {
       "dissent": false,

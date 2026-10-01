@@ -3464,6 +3464,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gannoruwa",
+      "kind": "event",
+      "locator": "Q4871077"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gao",
       "kind": "event",
       "locator": "Q3181123"
@@ -4088,6 +4094,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mulleriyawa",
+      "kind": "event",
+      "locator": "Q4871824"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-musa-dagh",
       "kind": "event",
       "locator": "Q19831524"
@@ -4331,6 +4343,12 @@
       "id": "battle-of-rancagua",
       "kind": "event",
       "locator": "Q1310755"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-randeniwela",
+      "kind": "event",
+      "locator": "Q4872161"
     },
     {
       "dissent": false,
@@ -5501,6 +5519,12 @@
       "id": "congo-crisis",
       "kind": "event",
       "locator": "Q1773926"
+    },
+    {
+      "dissent": false,
+      "id": "conquest-of-koneswaram-temple",
+      "kind": "event",
+      "locator": "Q125166578"
     },
     {
       "dissent": false,
@@ -6854,6 +6878,12 @@
     },
     {
       "dissent": false,
+      "id": "kandyan-commerce-raiding-against-portugal-1612-1613",
+      "kind": "event",
+      "locator": "Q16250240"
+    },
+    {
+      "dissent": false,
       "id": "kaocen-revolt",
       "kind": "event",
       "locator": "Q2335525"
@@ -8000,6 +8030,12 @@
     },
     {
       "dissent": false,
+      "id": "roland-crappe-s-raids-on-portuguese-colonies",
+      "kind": "event",
+      "locator": "Q125701269"
+    },
+    {
+      "dissent": false,
       "id": "romanian-revolution-1989",
       "kind": "event",
       "locator": "Q204213"
@@ -8492,6 +8528,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-colombo-1587-1588",
+      "kind": "event",
+      "locator": "Q125998118"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-concepcion",
       "kind": "event",
       "locator": "Q432297"
@@ -8942,6 +8984,12 @@
     },
     {
       "dissent": false,
+      "id": "sinhalese-portuguese-conflicts",
+      "kind": "event",
+      "locator": "Q17034772"
+    },
+    {
+      "dissent": false,
       "id": "sinking-of-ara-general-belgrano",
       "kind": "event",
       "locator": "Q3284956"
@@ -8963,6 +9011,12 @@
       "id": "sino-vietnamese-war",
       "kind": "event",
       "locator": "Q623171"
+    },
+    {
+      "dissent": false,
+      "id": "sitawaka-campaign",
+      "kind": "event",
+      "locator": "Q136605166"
     },
     {
       "dissent": false,
