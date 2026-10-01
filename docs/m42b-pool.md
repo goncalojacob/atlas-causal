@@ -16088,13 +16088,102 @@ carrying six titles, and one `revids` request for the one old revision deviation
 429 and no retry**. `wbsearchentities` and `wbgetentities` were not called — the
 batch wrote no record and needed no item.
 
+## The degree-zero umbrellas of this partition, measured — and why C8 is the whole of what is left
+
+*Written in the same fire as batch 62, after it, from four more articles and no
+further record. It found nothing to write, and that is the finding.*
+
+The last stand sent the next fire at nine umbrellas "each a degree-zero or
+near-degree-zero umbrella whose own article names a cause the atlas holds". Four
+of the nine were never checked against the edge list. **They should have been**:
+
+| umbrella | active edges it touches | so |
+| --- | --- | --- |
+| `haitian-revolution-1791-1804` | **3** (`french-revolution--…--inspired`, `saint-domingue-and-the-french-sugar-colony--…--caused`, `the-atlantic-slave-trade-to-the-caribbean--…--precondition-of`, and `…--the-cuban-sugar-boom--caused` out of it) | not degree zero |
+| `cuban-war-of-independence-1895-1898` | **2** (`the-cuban-sugar-boom--…--caused`, `…--spanish-american-war-1898--caused`) | not degree zero |
+| `war-of-jenkins-ear` | **2** (`…--battle-of-cartagena-de-indias--enabled`, `…--war-of-the-austrian-succession--enabled`) | not degree zero |
+| `arauco-war` | **1** (`battle-of-reynoguelen-1536--…--precondition-of`) | degree 1 |
+| `beaver-wars` | **0** | the only degree-zero umbrella of the four |
+
+So the pass is **one** umbrella wide, not four, and the measurement over the
+whole partition says the same thing. Of the **435 active events** in M42b's
+partition (the `americas` lane from 1492, and `africa` and `asia` before 1800),
+**118 touch no edge**, and of those **118 only three are umbrellas**:
+
+| degree-0 umbrella | children | lane, span |
+| --- | --- | --- |
+| `beaver-wars` | **9** | americas, 1609–1701 |
+| `american-indian-wars` | 3 | americas, 1609–1924 |
+| `first-carnatic-war` | 4 | asia, 1746–1748 |
+
+(`nova-republica-brazil-since-1985`, `colombian-conflict-2018-present`,
+`colombian-conflict-between-1974-1990` and `covid-19-pandemic-in-north-america`
+also come up degree-zero with children, and are the 20th and 21st centuries,
+which are not where this lane trails.)
+
+**All three were read whole, and all three are held out by A14.**
+
+1. **`beaver-wars`** (rev 1377648178). Its § Causes is a four-way
+   historiographical argument — the fur trade (Hunt), the mourning war and the
+   1630s smallpox epidemics (Richter), the Great Law of Peace (Jennings), and
+   Trigger's objection that the first of these is Eurocentric — and **not one of
+   the four is an event this atlas holds**. Its § Background names Cartier's
+   voyages, the founding of Quebec and Champlain's 1609 attack; the atlas holds
+   the last as `iroquois-war-1609`, **which is a child of `beaver-wars`**, so
+   A14 bars the edge. Its § Aftermath names the Indiana Land Company and the
+   American Revolutionary War, and in both cases as a later alignment, not as
+   something the war caused. The one sibling link the article could support —
+   "During King William's War (1688–1697), the French formed raiding parties
+   with Indian allies to attack English settlements, (as the English had allied
+   themselves with the Iroquois against the French)" — names the alliance and
+   not the war, and the five children it would run through
+   (`schenectady-massacre`, `lachine-massacre`, `battle-of-la-prairie`,
+   `mohawk-valley-raid`, `battle-of-wilton-new-york`) **already carry
+   `king-william-s-war` as a second parent under A8**. There is nothing left to
+   write.
+2. **`american-indian-wars`** (rev 1376049816) is the umbrella of `beaver-wars`,
+   `king-philip-s-war` and `king-william-s-war`, spans 1609–1924, and every
+   causal link its article offers runs to one of those three. A14, three times.
+3. **`first-carnatic-war`** (rev 1370619242) states its own relation in its first
+   sentence — "the Indian theatre of the War of the Austrian Succession" — which
+   is a **filing and not a cause**, and the record already carries
+   `war-of-the-austrian-succession` as its parent. Its § Consequences names only
+   the Second Carnatic War, which the atlas does not hold. Its one held child is
+   `battle-of-madras`. A14 again.
+
+**One A8 filing was checked and refused**: `battle-of-the-lake-of-two-mountains`
+(1689-10-16) is the one `beaver-wars` child inside King William's War's span
+that carries a single parent, and its own article (rev 1370600653) says
+`part_of = the [[Beaver Wars]]` and nothing else. The record is right as it
+stands.
+
+### Deviation 1382: a degree-zero umbrella is not a reading problem, and this partition's are all C8
+
+Three fires have now sent the next fire at degree-zero umbrellas as if the
+articles were simply unread. For the three that are left in this partition the
+articles are read and **the edge that would connect each one runs to its own
+child**: `beaver-wars` → `iroquois-war-1609`, `american-indian-wars` → each of
+its three, `first-carnatic-war` → `battle-of-madras`. **A14 bars all of them
+until the owner decides C8**, and no amount of further reading changes that.
+The corollary for a fire picking this lane up: **check the edge list and the
+parent list before fetching an article**, because the two together say in
+advance whether an umbrella can be moved at all. The one-line rule the standing
+orders' §6 question 11 asks the owner for — *a war may carry an edge to its own
+opening engagement, and an engagement to the next, where the article states it*
+— would turn these three into at least five cited edges in this lane alone, and
+`beaver-wars`'s nine children into a chain. **It is the largest single thing
+waiting on the owner in this partition**, and this measurement is the evidence
+for it.
+
 ## Where the run stands, for the fire that picks it up
 
 *1 October, after the fifty-fifth fire: two clean merges, **one batch** — 62,
 which imported nothing and wrote **three edges, all three crossing an
-umbrella**. **A15(11)'s number moved again: 593 → 596**, and the largest
-component 768 → 772. The main count did not move. The last stand's move 2 was
-the whole of the batch and it is not spent.*
+umbrella** — and, after it, **one measurement that found nothing to write**.
+**A15(11)'s number moved again: 593 → 596**, and the largest component
+768 → 772. The main count did not move. The last stand's move 2 was the whole of
+the batch; the measurement above says the move is now spent, and deviation 1382
+says why.*
 
 | | before 62 | after 62 |
 | --- | --- | --- |
@@ -16113,10 +16202,11 @@ move: **europe 554 / 84, africa 214 / 30, asia 216 / 57, americas 391 / 56**,
 at 214 and 216 against A10's 303**, so A15(1)'s pause holds and nothing of
 Europe before 1900 is this lane's.
 
-*Six commits: the claim, the `origin/m0` merge, the `origin/m42` merge, batch
+*Seven commits: the claim, the `origin/m0` merge, the `origin/m42` merge, batch
 62's records, its index, the prerendered bibliography the index commit left out,
 and the locator correction deviation 1380 names with its own index rebuild
-folded in. `validate --index` is clean at **0 errors, 599 warnings** (601 before
+folded in, and this stand with the measurement section above it.
+`validate --index` is clean at **0 errors, 599 warnings** (601 before
 the batch: three events left degree zero). A15(2) reports **0 revisions that
 should be on disk and are not**, 2,820 of 2,896 citations on disk at the
 revision cited and 76 unholdable beside a more-cited revision of the same item.
@@ -16126,14 +16216,14 @@ at a time), measured at this head.*
 
 ### The next fire's moves, in order
 
-1. **The umbrella edge pass is still the cheapest thing in this lane**, and two
-   HTTP requests bought three crossing edges this fire. **Still unread and each
-   a degree-zero or near-degree-zero umbrella**: `haitian-revolution-1791-1804`,
-   `cuban-war-of-independence-1895-1898`, `beaver-wars`, `arauco-war`,
-   `war-of-jenkins-ear`. Of the five the last stand named,
-   `mexican-`, `colombian-` and `bolivian-war-of-independence` are now done and
-   **`ecuadorian-war-of-independence` is closed** for the reason in this batch's
-   refusal 2 — do not re-walk it.
+1. **The umbrella edge pass in this lane is now spent, and deviation 1382 says
+   why.** Of the five umbrellas the last stand named, `mexican-`, `colombian-`
+   and `bolivian-war-of-independence` are done, `ecuadorian-war-of-independence`
+   is closed (refusal 2 above), and the four it named after them
+   (`haitian-revolution-1791-1804`, `cuban-war-of-independence-1895-1898`,
+   `beaver-wars`, `war-of-jenkins-ear`) were **not** degree-zero or near it —
+   three of the four already carry two or three edges each. The measurement is
+   in the section above this stand; **do not re-walk the four**.
 2. **Check `data/edges/<from>--<to>--<type>.json` for all five types and compare
    the two `when.date`s before fetching anything** (batch 60's rule, deviation
    1373). Both held this fire and cost nothing.
@@ -16152,7 +16242,10 @@ at a time), measured at this head.*
    where the class is plain from the article and the edge is cited?*
 7. **The three questions to the owner are otherwise unchanged**: the main count;
    **C8**; and **A15(1)**. Do not spend a fire re-establishing the balance.
-8. **Still open, unchanged**: C8, deviations 1323, 1345, 1346's ocean islands,
+8. **C8 is the lane's one real blocker now** (deviation 1382), not a question
+   among others: the three degree-zero umbrellas left in this partition are all
+   barred by A14 and nothing a fire can read will move them.
+9. **Still open, unchanged**: C8, deviations 1323, 1345, 1346's ocean islands,
    1348's lane guard, 1353, 1358, 1361, 1362, 1365, 1366, 1377 (a merge commit
    gets its index in a commit of its own — both merges this fire were clean and
    left the index byte-identical, so it did not arise, which is not evidence it
