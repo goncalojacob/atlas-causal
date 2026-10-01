@@ -18462,3 +18462,32 @@ hit this, so there is nothing there to fix — and this is a note about reading
 Wikipedia and Wikidata **by hand from this sandbox**, which every batch does for
 deviation 1390's check and for its edge quotes. **Nothing under `data/` and no tool
 changed.**
+
+### Deviation 1398 — the batch notes are part of what the suite judges, so write them before you run it
+
+This fire started the suite in the background while the three batch notes were
+still unwritten, to overlap the two, and the pure pass came back **1,939 passed,
+1 failed**:
+
+```
+not ok 1077 - a child that names neither is one the measurement argues for
+  error: 'attack-on-bintan-1521 names neither an actor nor a place and is filed
+          inside "malay-portuguese-conflicts" with nothing said about why'
+  tests/m67.test.mjs:233
+```
+
+Nothing was wrong with the record. `tests/m67.test.mjs` reads its `ARGUED_IN`
+documents — `docs/m67-umbrellas.md`, `docs/m42-connections.md` and
+**`docs/m42b-pool.md`** — **at module load**, and asserts that every active child
+with neither an actor nor a place has its id named, in backticks, in one of them.
+Batch 67 wrote two such records, `attack-on-bintan-1521` and `siege-of-campar`;
+both are argued in batch 67's note above; and the note did not exist yet when the
+runner loaded the file. Re-run against the committed notes, `tests/m67.test.mjs` is
+**19 of 19**.
+
+So this lane's order has a fourth step, and it is the mirror of deviation 1394.
+798 says records first, rebuild, then commit the index. 1394 says build the index
+*after* committing the records, because the history shards come out of the
+repository's own commits. **1398 says run the suite after writing the batch note,
+because the correspondence tests read it.** A placeless, actorless import is the
+case that catches it, and this lane now writes one or two per fire.
