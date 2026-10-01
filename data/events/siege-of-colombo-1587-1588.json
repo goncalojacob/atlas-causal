@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-colombo-1587-1588",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q125998118",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Siege of Colombo (1587–1588)",
+    "pt": "Cerco de Colombo (1587–1588)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q125998118"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Colombo (1587–1588)\", revision 1375094031"
+    }
+  ],
+  "title": "Siege of Colombo (1587–1588)",
+  "summary": "The English Wikipedia article \"Siege of Colombo (1587–1588)\", at revision 1375094031, opens: \"The siege of Colombo from 1587 to 1588 was a military conflict between the Portuguese and the Sinhalese troops of the King of Sitawaka over control of Colombo, on the island of Ceylon, now Sri Lanka.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q125998118, imported by tools/import/wikidata.mjs. The item's own description reads \"1587–1588 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1587,
+    "end": 1588,
+    "date": "1587-06",
+    "endDate": "1588-02"
+  },
+  "place": "colombo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "sinhalese-portuguese-conflicts"
+}
