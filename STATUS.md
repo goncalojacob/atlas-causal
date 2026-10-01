@@ -23668,6 +23668,50 @@ Lane A numbers on from M88, which ended at 1428.
       a sleep because the browser advances its own clock. The earlier graph
       shots carry the same property in a comment and no budget: what they are
       of does not need the names.
+1436. **An umbrella that exists is not an umbrella that can be trusted.**
+      `Capture of Mahdia (1550)`'s infobox names `[[Spanish–Ottoman wars]]`,
+      which resolves to a real English article and would have filed the record
+      at no cost to the main count — the trade this lane has been short of for
+      eight batches. It was refused: the article is a **1492–1792** synthesis
+      carrying `{{Verifiability}}` (open since July 2025, pointed at its
+      content) and `{{Anachronism}}` as a `{{Multiple issues}}` block. An
+      umbrella is a claim that a set of events is one thing, and a construct
+      Wikipedia's own editors have tagged for verifiability is not the period
+      A6 asks for. Deviation 1390 asks whether the infobox agrees with `P361`;
+      this adds the question after it, **for an umbrella a fire is about to
+      write rather than file under**: read its banners. Spending one main on a
+      record that says what it is beat filing thirty-two African records under
+      a disputed three-century container, and the saving would have been
+      invisible in the count.
+1482. **The API's 429 is a missing header before it is a rate.** Three calls in
+      the sixty-first M42b fire came back `HTTP 429` *"You are making too many
+      requests to the API"* from `wikidata.org` and `en.wikipedia.org`, with
+      the body pointing at Wikimedia's rate-limit page. It was not a rate:
+      `curl` without `-A` sends its own user-agent and Wikimedia throttles an
+      unidentified client hard. Sending the import's own `USER_AGENT` —
+      `tools/import/wikidata.mjs` line 69 — cleared it on the first retry, and
+      what still bounced cleared on a 20-second backoff. Deviation 1414
+      separates the rate limit from the lag; this is the third thing it can be,
+      and the cheapest to fix. **A hand-run `curl` beside the import is a
+      different client unless it carries the same header.**
+1484. **A deviation number cannot be checked with a bare-number grep, and the
+      register grep that looks right has false positives.** Every candidate
+      number in the 1400s and 1500s is also a year this atlas holds records
+      about: `\b1528\b` over the two pool files and `STATUS.md` returns nine
+      hits and none is a deviation; `\b1546\b` returns thirty-eight. Worse,
+      `^<n>\. ` over this file — which looks like the register check — reported
+      1527 as taken, and the line it matched is a previous fire's own sentence
+      *"against the item's 1527."* wrapped onto a new line. **A sentence ending
+      in a year is indistinguishable from a register entry by that pattern.**
+      The register runs contiguously to 1433 and stops; M42's 1402 to beyond
+      1481 live in `docs/m42-pool.md` and mostly never reached it, so neither
+      "the next above the lane's last" nor "the next above the register's last"
+      answers the question — and both have been wrong for several fires, which
+      is how the sixty-first fire's own batch commit came to cite 1403, a
+      number that is M42's. Three greps, all three zero: `[Dd]eviations\? <n>`
+      over both pool files and this file, `^<n>\. \*\*` **with the bold** over
+      this file, and `^\*\*Deviation <n>` over both pool files. 1436, 1482 and
+      1484 were cleared that way and are gaps rather than a run.
 
 **M42b batch 51 — the americas in the 16th century, and the measurement that
 africa and asia before 1800 cannot be grown under A5 and A14 together,
@@ -24368,6 +24412,42 @@ M42 started 2026-10-01T16:07:55Z by scheduled
 M42b started 2026-10-01T18:52:52Z by scheduled
 M42b started 2026-10-01T21:17:30Z by scheduled
 M42b started 2026-10-01T23:36:39Z by scheduled
+
+**M42b batch 71 — the Capture of Mahdia, and the first edge to cross an umbrella
+since batch 63, 1 October.** The sixty-first fire merged `origin/m0` and `origin/m42`
+— both clean, no conflicting path in either — and took the previous stand's **move 2**,
+which that stand had recommended and priced exactly. **Batch 71** imported
+`Q5037032` *Capture of Mahdia (1550)* into **africa's 16th century**, the trailing
+cell of this partition, with its place `mahdia` at `summary: null`. It files
+**nowhere**: its `P361` is `Q118929718` *Ottoman–Spanish War*, which has no English
+article, and its infobox names a third article again — so **the main count rose from
+232 to 233**, the second rise in this lane's history, and the pool note says why
+against A6 rather than around it. What the main bought is the one measurement A15(11)
+asks for: the edge
+`capture-of-mahdia-1550 --reacted-to--> siege-of-tripoli-1551`, `probable`, two
+authors at revisions both on disk, **crosses an umbrella** — Tripoli is filed under
+`ottoman-habsburg-wars` and `italian-war-of-1551-1559`, Mahdia under nothing — and
+the crossing count moved for the first time since batch 63, **607 to 608**, after
+seven batches flat. Both of its quoted sentences were run through `verdictFor()`
+against all 1,423 active events before it was written and both returned
+`write: true`, so **A15(5) refused nothing**; `prop=revisions` confirmed the Tripoli
+article's current revision is still the 1370746050 the record already cited, so the
+quotes are verifiably at the revision on disk. A15(8) does not apply — the sitelink
+`Capture of Mahdia (1550)` resolves to itself, while the undisambiguated
+`Capture of Mahdia` is a redirect to *Military campaigns against Mahdia* — and
+A15(4)'s day-and-month comparison is silent, the validator's warning count being
+**615 before the batch and 615 after**. `P710`'s four participants were all refused
+together, the atlas holding none of them, so `actors: []` by M67 A1. **Deviation 1436**
+is the refusal of `Spanish–Ottoman Wars` as an umbrella: a real English article that
+would have filed Mahdia free, declined as a 1492–1792 synthesis under
+`{{Verifiability}}` and `{{Anachronism}}`. **1482** is the 429 that was a missing
+user-agent. **1484** is why this fire's own batch commit misnumbered its deviation
+1403 — the register check that looks right matches wrapped prose. Africa **230** and
+Asia **244** against A10's 303, so A15(1)'s pause holds. `validate --index` clean at
+**0 errors, 615 warnings**; A15(2) reports **0 revisions that should be on disk and
+are not**. The suite at this head, run the way the check runs it: **1,940 pure tests,
+1,940 passed, 0 failed, 0 skipped**, and **313 browser tests across the 40 suites,
+313 passed, 0 failed, 0 skipped** — green for the second fire running.
 
 **M42b batches 69 and 70 — the Sinhalese–Portuguese conflicts, and the 1535 Battle of
 Ugentana, 1 October.** The sixtieth fire merged `origin/m0` and `origin/m42` and took
