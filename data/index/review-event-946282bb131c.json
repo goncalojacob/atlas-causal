@@ -13181,6 +13181,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "battle-of-onjong",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Onjong"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -16985,7 +17017,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 3,
       "id": "battle-of-unsan",
       "kind": "event",
       "origin": {

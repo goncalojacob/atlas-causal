@@ -4106,6 +4106,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-onjong",
+      "kind": "event",
+      "locator": "Q4871945"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-osan",
       "kind": "event",
       "locator": "Q484494"

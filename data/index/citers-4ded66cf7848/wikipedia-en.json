@@ -2894,6 +2894,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-onjong--battle-of-unsan--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Onjong\", revision 1377425566, \"Aftermath\""
+    },
+    {
+      "dissent": false,
       "id": "battle-of-osan--battle-of-taejon--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Osan\", revision 1375327001, § Aftermath"
@@ -11705,6 +11711,12 @@
       "id": "battle-of-ollantaytambo",
       "kind": "event",
       "locator": "\"Battle of Ollantaytambo\", revision 1376074803"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-onjong",
+      "kind": "event",
+      "locator": "\"Battle of Onjong\", revision 1377425566"
     },
     {
       "dissent": false,

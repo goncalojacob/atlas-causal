@@ -1431,6 +1431,15 @@
         }
       ]
     },
+    "battle-of-onjong--battle-of-unsan--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-osan--battle-of-taejon--precondition-of": {
       "from": "git",
       "versions": [

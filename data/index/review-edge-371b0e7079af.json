@@ -7274,6 +7274,28 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "battle-of-onjong",
+      "id": "battle-of-onjong--battle-of-unsan--precondition-of",
+      "kind": "edge",
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-unsan",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],

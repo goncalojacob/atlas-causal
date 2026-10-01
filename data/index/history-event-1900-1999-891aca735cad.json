@@ -7437,6 +7437,15 @@
         }
       ]
     },
+    "battle-of-onjong": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-osan": {
       "from": "git",
       "versions": [
