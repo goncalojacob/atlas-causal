@@ -23669,6 +23669,88 @@ Lane A numbers on from M88, which ended at 1428.
       shots carry the same property in a comment and no budget: what they are
       of does not need the names.
 
+**M42b batch 51 — the americas in the 16th century, and the measurement that
+africa and asia before 1800 cannot be grown under A5 and A14 together,
+30 September.** The fire went to the cell that trails most in this lane's
+partition first — africa before 1800 at 20 and asia at 21 — and came back with
+a measurement instead of records. **All 41 pre-1800 africa/asia events the
+atlas holds are children of European war umbrellas**, no held umbrella's span
+reaches either lane in the 16th century, so an import there is a new main event
+A6 forbids; and of the 16 unheld `P361` children of `dutch-portuguese-war`, 13
+articles read give **one** causal sentence and it names the parent, which A14
+bars until C8. The reverse sweep of the held hubs found the one bridge that
+exists and it is barred too: the Dutch–Portuguese War's own article says four
+times that the **Iberian Union** is why the Dutch attacked Portugal's colonies
+in Africa and Asia, and an event in Europe before 1900 is what A15(1) pauses.
+**One record would unblock a whole cell, and it is the owner's to allow.**
+So the batch is the americas' 16th century, 46 → **49**: the Spanish conquest
+of Honduras (1524-03–1539, widened under A7 from its own article's *"the main
+phase of the Spanish conquest was complete by 1539"*), and two battles of the
+Peruvian conquistador civil wars, **Abancay** (1537) and **Jaquijahuana**
+(1548), filed where `battle-of-chupas` already was because their own `P361`s —
+`Q5887915` and `Q5884503` — have no English article to be written from. **Main
+stays at 234.** Two places from the items' own `P625`; Honduras stands in none,
+because **A15(6) refused** Q783, inception 1821, as the place of a conquest
+ending 1539. **Three edges of four candidates**, the fourth refused by
+**A15(5)**'s chronology class, and **one of the three crosses an umbrella** —
+`new-laws --precondition-of--> battle-of-jaquijahuana`, the laws being why the
+encomenderos joined Pizarro and de la Gasca winning by suspending them. The
+largest component goes **743 → 745** and the components stay at 405.
+**Deviation 1355: A14's cost is structural.** Abancay's edge joined it to a
+component of **six** — `siege-of-cusco` and the other children of
+`spanish-conquest-of-the-inca-empire` — while that parent sits **inside** the
+largest component, which is deviation 1201's shape found again in another lane
+and century without looking for it. The cost is now **17 events across two
+clusters**, and two independent instances say it is what filing does to the
+graph rather than one unlucky umbrella.
+
+**And the two lanes converged on the same day.** `origin/m42`'s batch 71, at
+06:20Z, screened 98 candidates against their own articles and found **every one
+refused by A15(1), A14(6) or A6**, recommending A6 be relaxed *"because
+relaxing it does not touch what A6 is for"*. This lane's sweep, on a different
+partition and not knowing about theirs, reached the same three amendments and
+the same verdict, and adds the one case theirs could not see: the bridge into
+pre-1800 africa/asia exists — the Iberian Union, which the Dutch–Portuguese
+War's own article names four times as why the Dutch attacked Portugal's
+colonies — and **A15(1)'s Europe pause is what bars it**. Africa and Asia stand
+at 211 and 211 against A10's 303, and **no fire in either lane can move either
+number until the owner answers.** The americas remain open, which is where this
+lane will keep working meanwhile.
+
+**M42b batch 57 — Harlem Heights to Princeton, and the island that is now
+eleven, 30 September.** The fifty-first fire on this lane took the americas' 18th
+century, **74 → 79**, which is what the last stand had authorised in advance as
+filling-in rather than bridging. Five events from Wikidata —
+`battle-of-harlem-heights` (`Q668595`), `battle-of-white-plains` (`Q960723`),
+`battle-of-fort-washington` (`Q706755`), `battle-of-the-assunpink-creek`
+(`Q233417`) and `battle-of-princeton` (`Q1132579`) — each filed under
+`american-revolutionary-war` from its own `P361`, each placed, two new places
+from the items' own `P625` with `summary: null`. **Main stays at 229.** **Seven
+edges, every one of them with two articles and a locator apiece**, which is
+M72's second author on all seven; one candidate refused by **A15(5)** (Fort
+Washington's § Aftermath states Princeton as *undoing* the fall's effect on
+morale, so the sentence runs backwards, and its only forward reading opens
+*"Three days after"*). **No edge crosses an umbrella** — all fourteen endpoints
+are children of the war — so the corpus figure stands at **578** and the largest
+component at **756**, both exactly where the batch found them. What moved is the
+land war's own component: **6 → 11**, and every one of the eleven has
+`american-revolutionary-war` as its parent while that war sits in the 756, so
+**A14 is the whole of what keeps them apart and C8's price is now eleven events
+and not six.** Two general findings: **deviation 1367** — the article that states
+a link between two events is usually a *third* event's, which is how four of the
+seven edges were found and how one of batch 56's five refusals was reversed; and
+**deviation 1368** — deviation 1363 terminates once stated as *rebuild the index
+while `HEAD` is the records commit*, which this fire did in one index commit with
+a further rebuild changing nothing. `validate --index` clean at 0 errors, A15(2)'s
+recache at 0 missing revisions, and the suite green at **2,242 tests, 0 failed,
+0 skipped**. Africa and Asia stand at 211 and 212 against A10's 303, unchanged;
+the emptiest cells in this partition are africa's and asia's 15th and 16th
+centuries at zero each, and batch 57's note carries the five verified QIDs of the
+**Ethiopian–Adal War** (`Q2915203`, 1529–1543, Portuguese and Ottoman
+participants) for the day the owner answers whether a batch opening an empty lane
+may raise the main count by the one umbrella it needs.
+
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -24062,12 +24144,22 @@ M42 started 2026-09-29T18:07:08Z by scheduled
 M42b started 2026-09-29T21:38:18Z by scheduled
 M42 started 2026-09-29T21:07:23Z by scheduled
 M42 started 2026-09-30T00:07:28Z by scheduled
+M42b started 2026-09-30T00:37:04Z by scheduled
+M42b started 2026-09-30T03:36:46Z by scheduled
 M42 started 2026-09-30T03:07:00Z by scheduled
 M42 started 2026-09-30T06:09:24Z by scheduled
+M42b started 2026-09-30T06:37:06Z by scheduled
 M42 started 2026-09-30T09:07:23Z by scheduled
+M42b started 2026-09-30T09:36:51Z by scheduled
 M42 started 2026-09-30T12:16:58Z by scheduled
+M42b started 2026-09-30T11:37:14Z by scheduled
+M42b started 2026-09-30T14:36:55Z by scheduled
+M42b started 2026-09-30T16:36:55Z by scheduled
 M42 started 2026-09-30T15:07:56Z by scheduled
+M42b started 2026-09-30T18:36:59Z by scheduled
 M42 started 2026-09-30T18:07:54Z by scheduled
+M42b started 2026-09-30T21:37:04Z by scheduled
 M42 started 2026-09-30T21:07:29Z by scheduled
 M42 started 2026-09-30T23:50:11Z by scheduled
 M42 started 2026-10-01T02:42:41Z by scheduled
+M42b started 2026-09-30T23:58:46Z by scheduled

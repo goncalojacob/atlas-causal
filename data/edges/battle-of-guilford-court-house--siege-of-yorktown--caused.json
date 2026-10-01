@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-guilford-court-house--siege-of-yorktown--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-55"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Guilford Court House\", revision 1376260995"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Camden\", revision 1376333498"
+    }
+  ],
+  "from": "battle-of-guilford-court-house",
+  "to": "siege-of-yorktown",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "This is the link that joins the southern campaign to a record the atlas already held. The Guilford article, at revision 1376260995, states it: “Later, Cornwallis chose to march into Virginia and attempt to link with roughly 3,500 men under British Major General Phillips and Brigadier General Benedict Arnold. These decisions allowed Greene to unravel British control of the South, while leading Cornwallis to Yorktown, where he was forced to surrender to General George Washington and French Lieutenant General Comte de Rochambeau.” The Camden article, at revision 1376333498, is the second reading and is the plainer of the two about why the march happened: “At the Battle of Guildford Court House in March 15, 1781, Cornwallis won a tactical victory against Greene but suffered heavy casualties, which led the British general to march to Virginia and unite with a larger army there, ultimately resulting in the decisive Franco-American victory in the Yorktown campaign.” The casualties are the battle’s own, which is why the edge is written from the battle and not from the decisions the Guilford sentence makes its subject; A15 (5) would send it elsewhere only if those decisions were themselves a record this atlas holds, and they are not. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}

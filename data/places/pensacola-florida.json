@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "pensacola-florida",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "m42b-batch-53"
+    ]
+  },
+  "wikidata": "Q486306",
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Pensacola, Florida",
+    "pt": "Pensacola (Flórida)"
+  },
+  "sources": [],
+  "names": [
+    "Pensacola",
+    "Pensacola, Florida",
+    "Pensacola (Flórida)"
+  ],
+  "where": {
+    "lon": -87.21722222222222,
+    "lat": 30.421388888888888,
+    "precision": "city",
+    "label": "Pensacola, Florida"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

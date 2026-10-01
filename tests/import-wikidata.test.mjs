@@ -23,7 +23,7 @@ import {
   runImportMode, runReconcileMode, runCandidatesMode, otherNames, mergeNames,
   IMPORT_AUTHOR, IMPORTED_FLAG, USER_AGENT, SOURCE_ID, MAXLAG, BATCH,
   leadSummary, leadCitation, leadIsRedirect, placeChain, lanesAgree, filedUnder, umbrellasWith, readLead,
-  LEAD_SUMMARY_FLAG, A9_PLACE_FLAG, FILED_FLAG, PROPERTIES, ENTITIES_PER_CALL,
+  LEAD_SUMMARY_FLAG, A9_PLACE_FLAG, FILED_FLAG, REDIRECT_FLAG, PROPERTIES, ENTITIES_PER_CALL,
 } from '../tools/import/wikidata.mjs';
 import { readSummary, PROVENANCE_SENTENCES } from '../src/summary.js';
 import { schemas, ROOT } from './helpers.mjs';
@@ -1542,6 +1542,35 @@ test('umbrellasWith takes only active events that carry an item', () => {
 // Napoleonic Wars" inside it (deviation 1347). The question A15 (8) asks is
 // the one this answers: does the title the fetch landed on fold to any name
 // the item gives itself?
+// And what the import does with that answer, which A15 (8) states and the
+// guard of 29 September did not do: the record is written, with the flag, and
+// the article it landed on is quoted nowhere in it. Refusing the item instead
+// lost every item whose own title is a redirect into a wider article — the
+// Capture of Luanda (1641) is one, and it is the only pre-1800 record the
+// africa lane had left. The span such a record carries is the item's own until
+// a person reads the section that names it; the flag is how the queue knows to.
+test('--import keeps an item whose sitelink redirects, with the flag and no quoted lead (A15 (8))', async () => {
+  const { dir, cacheDir } = await scratch({ items: ['Q9000001'] });
+  // The endpoint answers with the article it landed on, which is the whole of
+  // the fault: "A History of Northfield" is none of Q9000001's own names.
+  const { fetcher } = await fixtureFetcher({ summary: { title: 'A History of Northfield', extract: 'Northfield is a town.' } });
+  const { report, failed } = await runImportMode(dir, { fetcher, today: '2026-09-30', cacheDir, deriveRegion });
+  assert.deepEqual(failed, []);
+  assert.deepEqual(report.refused, [], 'a redirect is a record with a flag on it, not a refusal');
+  assert.deepEqual(report.created.filter((c) => c.kind === 'event').map((c) => [c.qid, c.summary]),
+    [['Q9000001', false]], 'the event is written, and no lead is quoted in it');
+  assert.deepEqual(report.redirected.map((r) => [r.qid, r.landed]), [['Q9000001', 'A History of Northfield']]);
+
+  const rising = await readJson(path.join(dir, 'events', 'northfield-rising.json'));
+  assert.ok(rising.review.flags.includes(REDIRECT_FLAG), 'the flag says why the summary is the placeholder');
+  assert.ok(!rising.review.flags.includes(LEAD_SUMMARY_FLAG));
+  assert.ok(rising.summary.startsWith('Wikidata item Q9000001,'),
+    'the item\'s own fields are all there is to say until somebody reads the section');
+  assert.ok(!rising.summary.includes('Northfield is a town'), 'nothing of the other article is in the record');
+  assert.deepEqual(rising.sources.map((s) => s.source), ['wikidata'],
+    'and no wikipedia-en citation, because no article of this item\'s was read');
+});
+
 test('a lead that landed on another article is not this item\'s (A15 (8))', async () => {
   const item = await read('Q9000001');
   assert.equal(titleFor(item).title, 'Northfield Rising');

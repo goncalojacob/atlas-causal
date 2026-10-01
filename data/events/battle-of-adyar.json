@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-adyar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361",
+      "refiled-to-subject-umbrella"
+    ]
+  },
+  "wikidata": "Q4870217",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Adyar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870217"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Adyar\", revision 1376912545"
+    }
+  ],
+  "title": "Battle of Adyar",
+  "summary": "The English Wikipedia article \"Battle of Adyar\", at revision 1376912545, opens: \"The Battle of Adyar took place on 24 October 1746. The battle was between the French East India Company men and forces of Nawab of Arcot, Anwaruddin Khan over the St. George Fort, which was held by the French. It was part of the First Carnatic War between the British and the French.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870217, imported by tools/import/wikidata.mjs. The item's own description reads \"1746 battle in India during the First Carnatic War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1746,
+    "end": 1746,
+    "date": "1746-10-24"
+  },
+  "place": "adyar-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-carnatic-war"
+}

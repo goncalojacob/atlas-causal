@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "siege-of-boston--battle-of-bunker-hill--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-55"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Boston\", revision 1377282932"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bunker Hill\", revision 1375011142"
+    }
+  ],
+  "from": "siege-of-boston",
+  "to": "battle-of-bunker-hill",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The battle was fought because both sides reached for the same unoccupied hills, and both articles say so in the same words. The Boston article, at revision 1377282932, gives the British plan and the answer to it: “The British plan was to fortify Bunker Hill and Dorchester Heights. They fixed the date for taking Dorchester Heights at June 18, but the colonists’ committee of safety learned of the British plans on June 15. In response, they sent instructions to General Ward to fortify Bunker Hill and the heights of Charlestown.” The Bunker Hill article, at revision 1375011142, arrives at it from the other side — “the leaders of the colonial forces besieging Boston learned that the British were planning to send troops out from the city to fortify the unoccupied hills surrounding the city … In response, 1,200 colonial troops under the command of William Prescott stealthily occupied Bunker Hill and Breed’s Hill” — and it is that fortification the British attacked on 17 June. Read in the atlas’s direction, `A reacted-to B` says B answered A: the siege stands at the `from` end and the battle at the `to`. The two records are siblings under `american-revolutionary-war` and not parent and child, so A14 does not reach this edge. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}

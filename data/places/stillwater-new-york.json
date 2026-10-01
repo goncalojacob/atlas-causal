@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "stillwater-new-york",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place",
+      "m42b-batch-54"
+    ]
+  },
+  "wikidata": "Q3709125",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Stillwater, New York"
+  },
+  "sources": [],
+  "names": [
+    "Stillwater",
+    "Stillwater, New York"
+  ],
+  "where": {
+    "lon": -73.65317,
+    "lat": 42.93841,
+    "precision": "city",
+    "label": "Stillwater, New York"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

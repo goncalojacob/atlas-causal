@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-white-plains--battle-of-trenton--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-57"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Long Island\", revision 1370268460"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of White Plains\", revision 1374379337"
+    }
+  ],
+  "from": "battle-of-white-plains",
+  "to": "battle-of-trenton",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Long Island article, at revision 1370268460, names this battle as one of the two defeats that drove the retreat Trenton was launched from, and it does so with a cause and not a date: “Although American troops delivered an unexpected check to the British at Harlem Heights in mid-September, Howe defeated Washington in battle again at White Plains and then again at Fort Washington. Because of these defeats, Washington and the army retreated across New Jersey and into Pennsylvania.” “These defeats” is White Plains and Fort Washington, so this atlas writes the sentence as two edges rather than one. The White Plains article, at revision 1374379337, is the second author and carries the same chain to its end in its § Aftermath: “Later, British movements chased him across New Jersey and into Pennsylvania, and the British established a chain of outposts across New Jersey. Washington, seeing an opportunity for a victory to boost the nation's morale, crossed the Delaware and surprised Rall's troops in the December 26 Battle of Trenton.” `precondition-of`: the defeat put the army where Trenton was possible and made a victory necessary, and the decision to cross is the campaign's, which the atlas already holds as a separate edge. `probable`, on the articles alone (rule 22).",
+  "dispute": null
+}

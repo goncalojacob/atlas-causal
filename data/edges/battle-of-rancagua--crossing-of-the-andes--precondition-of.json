@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-rancagua--crossing-of-the-andes--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-48"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Crossing of the Andes\", revision 1374600996, § Background"
+    }
+  ],
+  "from": "battle-of-rancagua",
+  "to": "crossing-of-the-andes",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The later record's own cited article gives Rancagua as the reason the Chilean leadership was in Mendoza at all, which is where the Army of the Andes was raised: “However, they were defeated in 1814 at the Battle of Rancagua, and during the subsequent Reconquista, Chile once again became a royalist stronghold. Bernardo O’Higgins and other Chilean leaders fled to Mendoza during the new royalist regime, and O’Higgins later became a key figure in the Army of the Andes alongside the Argentine soldiers.” The article does not say Rancagua caused the crossing — it credits the plan to San Martín and the Maitland Plan, formed before the battle — so this is `precondition-of` and not `caused`: what Rancagua supplied was the royalist Chile the crossing was mounted against and the exiled Chileans who marched with it. `probable`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "dispute": null
+}

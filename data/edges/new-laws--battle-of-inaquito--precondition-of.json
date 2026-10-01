@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "new-laws--battle-of-inaquito--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-52"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Iñaquito\", revision 1370443968"
+    }
+  ],
+  "from": "new-laws",
+  "to": "battle-of-inaquito",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Iñaquito’s article gives the New Laws as what raised both armies: “The said viceroy arrived with the strong intention of enforcing the recently enacted New Laws that abolished the encomienda prohibited the personal labor of the indigenous people. The encomenderos (the masters) protested and organized a rebellion, choosing Gonzalo Pizarro as leader”. The viceroy who fell at Iñaquito was sent to enforce them and the man who killed him was chosen to resist them, which is the same account the atlas already holds for Jaquijahuana two years later. `precondition-of` and not `caused`: the laws set the quarrel, not the battle. `probable`, because the only source the atlas can open here is the article (rule 22).",
+  "dispute": null
+}

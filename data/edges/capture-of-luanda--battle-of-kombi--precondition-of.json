@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "capture-of-luanda--battle-of-kombi--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-49"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kombi\", revision 1370445877, § Background"
+    }
+  ],
+  "from": "capture-of-luanda",
+  "to": "battle-of-kombi",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Kombi’s own article opens its background with the occupation: “When the Dutch forces occupied Luanda in 1641, the capital of the Portuguese colony of Angola, the neighbouring countries of Kongo and Ndongo had welcomed them, sending embassies and receiving promises of assistance in driving the Portuguese out of the colony and central Africa.” The alliance that fought at Kombi in 1647 — “a combined force from Kongo, Ndongo, and a Dutch contingent of 400 soldiers” — is that promise kept, and the Dutch contingent is the occupation force the 1641 landing installed. `precondition-of` and not `caused`: the article gives the battle its own immediate cause, Njinga’s defeat at Kavanga in 1646, which this atlas does not hold. `probable`, because the only source the atlas can open here is the article itself (rule 22).",
+  "dispute": null
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "battle-of-jaquijahuana",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": "2026-09-30",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-by-span-and-subject",
+      "m42b-batch-51"
+    ],
+    "note": "Filed under spanish-conquest-of-the-inca-empire by span and subject (M62): 9 April 1548 is inside 1532-1572 and both sides are parties to the conquest of Peru. The item’s own P361 is Q5884503, the Great Encomendero Uprising, whose own P361 is Q5887915; neither has an English Wikipedia article to be written from. battle-of-chupas, of the same civil wars, is already filed here. A15 (4): P585 and the lead’s \"on April 9, 1548\" agree to the day."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2338093",
+  "wikipedia": {
+    "en": "Battle of Jaquijahuana"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-30"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2338093"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Jaquijahuana\", revision 1370444091"
+    }
+  ],
+  "title": "Battle of Jaquijahuana",
+  "summary": "The English Wikipedia article \"Battle of Jaquijahuana\", at revision 1370444091, opens: \"The Battle of Jaquijahuana was fought between the forces of Gonzalo Pizarro and Pedro de la Gasca, on April 9, 1548, during the Revolt of the Encomenderos by the Spanish conquistadores.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2338093, imported by tools/import/wikidata.mjs. The item's own description reads \"1548 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1548,
+    "end": 1548,
+    "date": "1548-04-09"
+  },
+  "place": "jaquijahuana",
+  "region": null,
+  "regionNote": null,
+  "parent": "spanish-conquest-of-the-inca-empire",
+  "category": "war",
+  "actors": []
+}

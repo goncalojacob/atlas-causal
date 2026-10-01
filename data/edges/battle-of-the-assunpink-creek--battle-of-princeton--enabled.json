@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-assunpink-creek--battle-of-princeton--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-57"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Assunpink Creek\", revision 1371410210"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Princeton\", revision 1375498890"
+    }
+  ],
+  "from": "battle-of-the-assunpink-creek",
+  "to": "battle-of-princeton",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Cornwallis deciding to finish the Assunpink Creek attack in the morning is what let Washington leave in the night, and Princeton is where he went. The Assunpink Creek article, at revision 1371410210, states both halves in its lead: “After assaulting the American positions three times and being repulsed each time, Cornwallis decided to wait and finish the battle the next day. Washington moved his army around Cornwallis's camp that night and attacked Mawhood at Princeton the next day.” The Princeton article, at revision 1375498890, is the second author and reads it the same way in its lead: “On the night of January 2, 1777, Washington repulsed a British attack at the Battle of the Assunpink Creek. That night, he evacuated his position, circled General Cornwallis' army, and attacked the British garrison at Princeton.” `enabled` and not `caused`: the decision to attack Princeton was Washington's and the article attributes it to him, but the opening he took it through was the stalemate at the creek. `probable`, on the articles alone (rule 22).",
+  "dispute": null
+}

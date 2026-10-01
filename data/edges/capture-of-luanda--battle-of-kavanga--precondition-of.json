@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "capture-of-luanda--battle-of-kavanga--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-50"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kavanga\", revision 1370444967, § Context"
+    }
+  ],
+  "from": "capture-of-luanda",
+  "to": "battle-of-kavanga",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Kavanga’s own article makes the 1641 capture the hinge its whole context turns on: “After Dutch West India Company captured Luanda in August 23 1641 … governor Pedro César de Meneses ordered the evacuation of all residents to the stronghold of Massangano further inland. From that point onwards, the Dutch made an alliance with Queen Nzinga and the Kingdom of Kongo. The Portuguese came under attack from all sides, cut-off from the sea.” The Dutch troops guarding Nzinga at Xila and the Portuguese army marching out of Massangano are both what that sentence describes, so the capture is the position the battle was fought from. `precondition-of` and not `caused`: the article gives the battle its own trigger, Nzinga’s raid on a village near Ambaca and the governor’s declaration of war in March 1646. `probable`, because the only source the atlas can open here is the article (rule 22).",
+  "dispute": null
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-abancay--battle-of-las-salinas--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-52"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Abancay\", revision 1370430763"
+    }
+  ],
+  "from": "battle-of-abancay",
+  "to": "battle-of-las-salinas",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Abancay’s own article carries the link forward from its aftermath: Almagro released Hernando Pizarro on a promise, and “this proved to be a mistake as the Pizarro brothers and Alvarado raised another army and in less than a year faced Almagro yet again in a struggle for power at Las Salinas, in April 1538.” The prisoners Abancay put in Almagro’s hands, and the terms on which he gave them back, are what the article gives as the reason there was a second army in the field at all. `precondition-of` and not `caused`: the article makes the release a mistake, not Las Salinas its consequence. `probable`, because the only source the atlas can open here is the article (rule 22).",
+  "dispute": null
+}

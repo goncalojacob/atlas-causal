@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-madras--siege-of-cuddalore-1748--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-58"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Cuddalore (1748)\", revision 1370740497"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Carnatic War\", revision 1370619242"
+    }
+  ],
+  "from": "battle-of-madras",
+  "to": "siege-of-cuddalore-1748",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Cuddalore was worth besieging in 1748 because the British had been driven there when Madras fell, and the siege's own article states that as the reason they were in the town. “Siege of Cuddalore (1748)”, at revision 1370740497: “After a British raiding squadron left for Madras, Joseph François Dupleix decided to make another attack on Cuddalore, where the British had taken refuge after the fall of Madras.” The sentence opens on a chronology, and the atlas is not reading that opener as a cause: what carries this edge is the clause that says *why* the British were at Cuddalore at all — they had taken refuge there after Madras fell. The “First Carnatic War” article, at revision 1370619242, is the second author on the same removal: “Disguising themselves as natives, Clive and three others eluded their inattentive sentry, slipped out of the fort, and made their way to Fort St. David (the British post at Cuddalore), some 110 mi to the south.” The type is `precondition-of` and not `caused`: neither article says the fall of Madras brought on the French attack of 17 June 1748, only that it put the British garrison the attack was aimed at where it was. `probable`, on the articles alone (rule 22).",
+  "dispute": null
+}

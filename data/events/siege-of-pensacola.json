@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "siege-of-pensacola",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361",
+      "a7-widened",
+      "m42b-batch-53"
+    ],
+    "note": "A7: the item's P580 is 9 May 1781 and its P582 10 May 1781, which makes the siege a single day. The cited article's own first sentence, at revision 1374389510, reads “The siege of Pensacola, fought from March 9 to May 10, 1781, was the culmination of Spain's conquest of West Florida during the Gulf Coast Campaign of the American Revolutionary War”, so the start is 9 March 1781 and the end is unchanged. Nothing else in the record moves: the year bounds were already 1781."
+  },
+  "wikidata": "Q2060558",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Siege of Pensacola",
+    "pt": "Cerco de Pensacola"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2060558"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Pensacola\", revision 1374389510"
+    }
+  ],
+  "title": "Siege of Pensacola",
+  "summary": "The English Wikipedia article \"Siege of Pensacola\", at revision 1374389510, opens: \"The siege of Pensacola, fought from March 9 to May 10, 1781, was the culmination of Spain's conquest of West Florida during the Gulf Coast Campaign of the American Revolutionary War. The siege was commanded by Bernardo de Gálvez, whose nearly 8,000 troops ultimately overran the British forces in the region. The success of the siege resulted in Gálvez' promotion to governor of West Florida and Louisiana.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2060558, imported by tools/import/wikidata.mjs. The item's own description reads \"1781 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781,
+    "date": "1781-03-09",
+    "endDate": "1781-05-10"
+  },
+  "place": "pensacola-florida",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-harlem-heights",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q668595",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Harlem Heights",
+    "pt": "Batalha de Harlem Heights"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q668595"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Harlem Heights\", revision 1375220259"
+    }
+  ],
+  "title": "Battle of Harlem Heights",
+  "summary": "The English Wikipedia article \"Battle of Harlem Heights\", at revision 1375220259, opens: \"The Battle of Harlem Heights was fought during the New York and New Jersey campaign of the American Revolutionary War in 1776. The action took place on September 16, 1776, in what is now the Morningside Heights area and east into the future Harlem neighborhoods of northwestern Manhattan Island in what is now part of New York City. The Continental Army, under Commander-in-chief General George Washington, Major General Nathanael Greene, and Major General Israel Putnam, totaling around 9,000 men, held a series of high ground positions in upper Manhattan. Immediately opposite was the vanguard of the British Army totaling around 5,000 men under the command of Major General Henry Clinton.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q668595, imported by tools/import/wikidata.mjs. The item's own description reads \"1776 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1776,
+    "end": 1776,
+    "date": "1776-09-16"
+  },
+  "place": "new-york",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

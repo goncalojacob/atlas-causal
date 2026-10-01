@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "siege-of-yorktown--treaty-of-paris-1783--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-54"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Yorktown\", revision 1376522207"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"American Revolutionary War\", revision 1376266742"
+    }
+  ],
+  "from": "siege-of-yorktown",
+  "to": "treaty-of-paris-1783",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Both articles name the surrender as what opened the negotiation. The Yorktown article, at revision 1376522207: “With the capture of more than 7,000 British soldiers, negotiations between the United States and Great Britain began, resulting in the Treaty of Paris of 1783”, and, of the two-year gap, “Although the peace treaty did not happen for two years following the end of the battle, the Yorktown campaign proved to be decisive”. The American Revolutionary War article says the same at revision 1376266742: “Washington and the Continental Army’s decisive victory in the Siege of Yorktown in 1781 led King George III and the Kingdom of Great Britain to negotiate an end to the war.” That second sentence names Yorktown as the cause, so under A15 (5) the edge is written from Yorktown and not from the umbrella whose article carries it — which A14 would bar in any case, the treaty being that umbrella’s own child. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}

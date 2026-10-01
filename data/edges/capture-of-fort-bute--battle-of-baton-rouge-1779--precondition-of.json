@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "capture-of-fort-bute--battle-of-baton-rouge-1779--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-53"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Baton Rouge (1779)\", revision 1370433595"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spain and the American Revolutionary War\", revision 1373209544"
+    }
+  ],
+  "from": "capture-of-fort-bute",
+  "to": "battle-of-baton-rouge-1779",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "A15 (5) put this edge here. The quote that would have run from Spain's entry to Baton Rouge — “first the attack and capture of Fort Bute at Manchac, and then forcing the surrender of Baton Rouge, Natchez and Mobile in 1779 and 1780”, “Spain and the American Revolutionary War” at revision 1373209544 — names Fort Bute as what came first, so under A15 (5) the edge is written from Fort Bute or not at all. The Baton Rouge article, at revision 1370433595, states the connection rather than the order: “The six who escaped capture made their way to Baton Rouge to notify the British troops there of the fort's capture”, and the same section explains why Baton Rouge was the real battle — “Dickson had decided weeks earlier that Fort Bute, built in 1766 and in ruins, was not defensible, and had placed most of his troops at Baton Rouge”. `precondition-of` and not `caused`: taking the ruined post opened the river road and warned the garrison, it did not decide the siege. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}

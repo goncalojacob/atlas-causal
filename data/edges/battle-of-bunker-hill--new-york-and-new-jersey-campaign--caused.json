@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-bunker-hill--new-york-and-new-jersey-campaign--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-56"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"New York and New Jersey campaign\", revision 1370629551"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bunker Hill\", revision 1375011142"
+    }
+  ],
+  "from": "battle-of-bunker-hill",
+  "to": "new-york-and-new-jersey-campaign",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Both articles put the decision to go for New York on what Bunker Hill had cost, and both state it as a cause rather than as a sequence. The campaign article, at revision 1370629551, gives the decision and who took it: “They defeated Patriot forces in the Battle of Bunker Hill, suffering very high casualties. When news of this expensive British victory reached London, General William Howe and Lord George Germain, the British official responsible, determined that a ‘decisive action’ should be taken against New York City using forces recruited from throughout the British Empire as well as troops hired from small German states.” The Bunker Hill article, at revision 1375011142, says the same thing from the other end: “The battle led the British to adopt a more cautious planning and maneuver execution in future engagements, which was evident in the subsequent New York and New Jersey campaign. The costly engagement also convinced the British of the need to hire substantial numbers of Hessian auxiliaries to bolster their strength in the face of the new and formidable Continental Army.” The two agree on both halves — the target and the German troops — which is why this is `caused` and not `inspired`: the campaign is what the expensive victory was answered with. A15 (5) is satisfied without substitution, because the campaign is the event the campaign article's own sentence names. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "anglo-french-war-1778-1783--estates-general-of-1789--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-54"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-French War (1778–1783)\", revision 1370901054"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Estates General of 1789\", revision 1375588196"
+    }
+  ],
+  "from": "anglo-french-war-1778-1783",
+  "to": "estates-general-of-1789",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The umbrella this edge crosses is the point of it (A15 (11)): France’s war and the assembly that was called to pay for it sit under different parents and the atlas held no link between them. The Anglo-French War article, at revision 1370901054, states the consequence twice — “The cost of participation in the American war inexorably led to France’s own bankruptcy six years later, setting the stage for the French Revolution”, and “over 1.3 billion livres had been spent over the five year conflict … the debt caused major economic and political problems and, as the country struggled to pay its debts, this eventually led to the Financial Crisis of 1786 and ultimately to the French Revolution in 1789”. The Estates General article, at revision 1375588196, arrives at the same sum from the other side — “As a result of the financial support given to the Americans during the war against Great Britain, the amount totaled 1.25 billion livres, and France was heavily in debt” — and its own lead says what the assembly was for: “The assembly was a desperate attempt to resolve a catastrophic fiscal crisis.” A15 (5) decides the `from` end: the sentences name the cost of France’s own participation, which in this atlas is the Anglo-French War and not the American war it was fought inside, so the edge is written from that record. `precondition-of` and not `caused`: a debt is not a summons. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}

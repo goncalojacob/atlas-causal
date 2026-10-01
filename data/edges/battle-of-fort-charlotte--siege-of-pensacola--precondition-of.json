@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-fort-charlotte--siege-of-pensacola--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-53"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Charlotte\", revision 1374387321"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Pensacola\", revision 1374389510"
+    }
+  ],
+  "from": "battle-of-fort-charlotte",
+  "to": "siege-of-pensacola",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Both articles make Mobile the precondition of Pensacola, in their own words and not this atlas's. “Battle of Fort Charlotte”, revision 1374387321: “Their capitulation secured the western shore of Mobile Bay and opened the way for Spanish operations against Pensacola”, and, of the fort's fall, “it drove the British from the western reaches of West Florida and reduced the British military presence in West Florida to its capital, Pensacola”. “Siege of Pensacola”, revision 1374389510, says the same from the other end: “Gálvez began planning an assault on Pensacola, West Florida's capital, using forces from Havana with the recently captured Mobile as the launching point for the attack”. `precondition-of` and not `caused`: the siege was delayed a year by British reinforcements and by Solano's hurricane, which is the same article's account, so Mobile is what made Pensacola possible and not what brought it about. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-kavanga--battle-of-kombi--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-50"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kombi\", revision 1370445877, § Background"
+    }
+  ],
+  "from": "battle-of-kavanga",
+  "to": "battle-of-kombi",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Kombi’s article draws this one itself, and draws it as a consequence rather than an order of events: “Following her defeat at Kavanga in 1646, however, the situation was sufficiently grave that the Dutch commander decided to commit forces to her support. Thus, in 1647 a combined force from Kongo, Ndongo, and a Dutch contingent of 400 soldiers, adding to over 8,000 men, met the Portuguese.” The 400 Dutch soldiers at Kombi are there because of the defeat at Kavanga, and the article’s own “Thus” is the link. A15 (5) was applied and does not refuse it: the quote opens with “Following” and then states the cause outright. `enabled` rather than `caused`, because what Kavanga produced was the Dutch commitment that made the combined army possible and not the decision to fight at Kombi.",
+  "dispute": null
+}
