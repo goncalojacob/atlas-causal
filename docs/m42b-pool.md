@@ -15796,7 +15796,10 @@ at the revision cited and 76 unholdable beside a more-cited revision of the same
 item — two better and two fewer than the fire found them. The suite is **green —
 2,253 tests, 0 failed, 0 skipped** (1,940 pure and 313 across the 40 browser
 suites, run the way the check runs them, one browser suite at a time), measured
-at this head.*
+at this head. **The check is green on the head of this fire: run 2211,
+`ce1d980c`, conclusion `success`.** Runs 2205, 2208 and 2209 were cancelled by a
+newer push, which the workflow's own `cancel-in-progress` does; run 2206 is the
+merge commit explained below and is the only red one.*
 
 *One intermediate commit went red and **it was read rather than assumed**: run
 2206, the `origin/m42` merge commit `3a149be1`, failed its **pure** pass with
