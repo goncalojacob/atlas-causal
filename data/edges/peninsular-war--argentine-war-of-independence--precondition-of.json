@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "peninsular-war--argentine-war-of-independence--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-61"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Argentine War of Independence\", revision 1376918380, § The Revolution"
+    }
+  ],
+  "from": "peninsular-war",
+  "to": "argentine-war-of-independence",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article names the fall of Seville as what set the May Revolution going: \"**The military conflict in Spain worsened by 1810. The city of Seville had been invaded by French armies, which were already dominating most of the Iberian Peninsula. The Junta of Seville was disestablished**, and several members fled to Cádiz, the last portion of Spain still resisting. They established a Council of Regency, prelude to the Cortes of Cadiz … **This began the May Revolution in Buenos Aires, as soon as the news was known.** Several citizens thought that Cisneros, appointed by the disestablished Junta, did not have the right to rule anymore.\" The argument the article makes is about authority rather than arms — the viceroy held his office from a body that no longer existed — so the war in Spain is a precondition of the Argentine war and not a cause of it.",
+  "dispute": null
+}

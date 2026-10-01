@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "capture-of-cayo-cocina--battle-of-roatan--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-61"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Roatán\", revision 1370587600, § Background"
+    }
+  ],
+  "from": "capture-of-cayo-cocina",
+  "to": "battle-of-roatan",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Roatán's § Background makes the seizure of St George's Caye the reason there were British on Roatán to attack: \"Guatemalan Governor Matías de Gálvez had moved quickly when the declaration of war arrived, **seizing St. George's Caye**, one of the principal British island settlements off the Yucatan coast. **Many of the British fled that occupation to the island of Roatán**, another British-controlled island … off the Honduran coast. British commander Edward Marcus Despard used Roatán as a base for guerilla-style operations to extend and maintain British influence on the Mosquito Coast, and for privateering operations against Spanish shipping.\" The flight from one island to the other, and what the refugees then made of the second, is the mechanism the article states; it does not say the first capture caused the second assault, so the type is the weaker one.",
+  "dispute": null
+}
