@@ -21959,7 +21959,7 @@ since batch 53, written from `Q495534` for `battle-of-the-imjin-river` — and
 `east-africa` is **new**, written from `Q27407` with `precision: region`,
 `region: null` and `summary: null` under A15(3). Operation Minden carries its
 own `P625` (38.3167, 127.2333) and the import still took the `P276` river,
-which is the same reading batch 53 wrote down: the point is 75 km up the Imjin
+which is the same reading batch 53 wrote down: the point is 77 km up the Imjin
 from the river item's point, which is the length of the thing and not a
 disagreement, and a place record wants a name the ground answers to.
 
@@ -22066,8 +22066,8 @@ as the first job the stand above gives its own second candidate question, and
 
 The question: **of the causal links Wikidata states between two items this
 atlas already holds, how many are edges the atlas does not have?** It costs no
-article reads at all — one `wbgetentities` pass over the 1,228 active events
-that carry an item, 25 requests, about a minute — and it was never asked.
+article reads at all — one `wbgetentities` pass over the 1,255 active events
+that carry an item, 26 requests, about a minute — and it was never asked.
 
 ### How to re-take it
 
@@ -22082,7 +22082,7 @@ value is also a held item. **Normalise to a direction before anything else**:
 
 | | |
 | --- | --- |
-| held active events carrying an item | 1,228 |
+| held active events carrying an item | 1,255 |
 | raw claims between two held items | **69** (P828 26, P1542 36, P1478 4, P1536 3) |
 | distinct directed pairs | **50** |
 | pairs the atlas already holds as an edge | **34** |
@@ -22202,8 +22202,8 @@ and goes looking for row 1,009 will not find one.** What it needs is a new
 question, and the rest of this stand is what a fire has to answer it with.
 
 **What the vein cost and paid, now that it is whole:** 1,008 rows, ~1,000
-articles read over five fires, **7 records and 8 edges**. One import per ~143
-articles read. That is the honest rate for *this* question — the `P361` children
+articles read over five fires, **7 records and 7 edges**: two in batches 82 and 83, three in 84 and 85,
+two here. One import per ~144 articles read. That is the honest rate for *this* question — the `P361` children
 of a held umbrella — and the three measurements inside it disagree usefully: the
 first 170 rows paid two, rows 421 to 920 paid one in 422, and the last 88 paid
 two. **Sitelink count did not predict yield.** What predicted it was whether the
@@ -22252,8 +22252,8 @@ before it imports.
   atlas's own.** Deviation 1523 (rule 4 on two overlapping intervals) and
   deviation 1525 (no edge type for an ending). Between them they took two edges
   that were stated outright, with a held record as the subject, in five fires
-  that found eight. **That is a fifth of the yield lost to the model and not to
-  the sources**, and two sentences from the owner release both.
+  that found seven. **That is more than a fifth of the yield lost to the model
+  and not to the sources**, and two sentences from the owner release both.
 - **Deviation 1521 is over and the branch's check is green again.** The 19:00Z
   stand left `tests/m65-browser.test.mjs` red on *"choosing an event narrows all
   three views to it, its parts, its parent and one hop"* — `map left out
