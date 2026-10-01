@@ -15620,6 +15620,22 @@ main-count question again, now with a concrete price.*
 *Active events, then of those the ones that are part of nothing. Africa and Asia
 stand at 214 and 214 against A10's 303.*
 
+*Six commits besides this line: the claim, the `origin/m0` + `origin/m42` merge,
+batch 59's records and its index, batch 60's edge and its index, and the two
+stands with their corrections. `validate --index` is clean at **0 errors**,
+A15 (2)'s recache reports **0 revisions that should be on disk and are not**, and
+the suite is **green — 2,242 tests, 0 failed, 0 skipped** (1,929 pure and 313
+across the 40 browser suites, run the way the check runs them, and the pure pass
+run a second time at the final head). **The check is green on the head of this
+fire: run 2197, `52635804`, conclusion `success`.* One intermediate commit went
+red and the reason is known and already recorded: run 2190, the
+`origin/m42` merge commit `8165ddb2`, failed its **pure** pass because its index
+was built before the merge commit existed — **deviation 1363's shape, and the
+proof that deviation 1368's procedure is not optional for a merge either.** Build
+the index while `HEAD` is the merge commit, in a second commit, exactly as a
+batch does; this fire did that for both batches and both went green. Every
+later run on this branch is green or was cancelled by a newer push.*
+
 ### The next fire's moves, in order
 
 1. **Import `Q5722281` *Battle of Carabobo (1814)*.** It is the one candidate
