@@ -20912,4 +20912,94 @@ lead on the list.*
 - **The two lanes still draw deviation numbers from one line.** This fire took
   **1520**; `m42b` was at 1377 on 1 October. A fire takes the next above what this
   file says.
-- **Deviation numbers: take the next above 1520.**
+- **The branch's check is red on one browser test and a fire must not clear it by
+  changing the test.** Deviation 1521 is the whole measurement: the map's camera
+  frames a lens without the parent the lens is keeping, found because
+  `12-3-incident` now sorts first in `tests/m65-browser.test.mjs`'s corpus-order
+  choice and its parent is in Lisbon. The record, the index, the filter and
+  `camera.js`'s arithmetic are all measured sound; the page's `frameCamera` is not.
+  The fix is a display change in `src/map/map.js`, which this run may not make, and
+  a test narrowed on this branch would be dropped by the landing merge anyway. **A
+  fire should not re-diagnose it and should not paper over it.**
+- **Deviation numbers: take the next above 1521.**
+
+## Deviation 1521 — the map's camera frames a lens without the parent it is keeping, and batch 80's filing is what found it
+
+*1 October, the import fire that claimed at 13:13Z. **The branch's check is red on
+one browser test and this fire did not clear it, because clearing it is a display
+change and this run may not make one.** What follows is the measurement, so that
+whoever may change it does not have to find this again.*
+
+**The failing test** is `tests/m65-browser.test.mjs` → *"choosing an event narrows
+all three views to it, its parts, its parent and one hop"*, and the assertion is
+`map left out estado-novo-1933-1974`. On CI it is the **only** failure in the
+whole suite (run 2260: pure 1,940 of 1,940, browser 312 of 313).
+
+**Why batch 80 found it.** The test chooses its subject from the corpus — *"a
+child of the hierarchy M62 wrote, with a link and a place … whichever one the
+corpus carries today"* — and takes the **first** active event that is not main,
+has a place and has an edge. `12-3-incident` sorts first in the whole corpus, so
+it is now that subject, and **its parent is on the other side of the world**:
+the incident is in Macau (113.5 E) and `estado-novo-1933-1974` is in Lisbon
+(9.2 W). `goa-annexed-1961` has had the same shape for weeks; it simply never
+sorted first. **Nothing about the filing is wrong** — this is A6's own filing, the
+regime containing its colonial incident — and the test's choice rule is what
+walked into it.
+
+**What is actually broken, measured three ways.** Not the record, not the index,
+not the filter, and not `camera.js`'s arithmetic.
+
+1. **The filter keeps the parent.** `workingSet(atlas, { selected: '12-3-incident' })`
+   over the atlas built *from the index the page fetches* gives
+   `shown = { 12-3-incident, cultural-revolution, estado-novo-1933-1974 }`, size 3,
+   with `lensFocus = { 12-3-incident }`. That is M65 and `parentsOf` doing exactly
+   what `src/lens.js` describes.
+2. **The index carries the point.** `core.places` holds
+   `portugal-q45 → [-9.18333, 38.7, "country"]`, active, and the event's `place`
+   column resolves to it.
+3. **The camera's arithmetic frames all three.** `frameOn(markNodes(atlas, union,
+   projection), wantedSets(working), box, { min: 1, max: 4, pad: 12 })`, run in
+   node over the real atlas, returns **k ≈ 2.68** for a 900×600 box and **k ≈ 2.07**
+   for 700×500 — in both cases the widest set, with every one of the three marks
+   inside the frame. `markNodes` produces all three nodes:
+   `12-3-incident@382.8,180.8`, `cultural-revolution@355.9,144.4`,
+   `estado-novo-1933-1974@55.5,136.8`.
+
+**And the page does something else.** In a real browser at 1280×900 the map draws
+**two** marks, `cultural-revolution` and `12-3-incident`; there is no element for
+the parent at all; and the transform is
+`translate(-1140.369397870371 -622.6702314814814) scale(4)` — `FIT_ZOOM`, the
+ceiling. Solving `x = (box.x0 + box.x1) / 2 − centre.x · k` for the box's centre
+gives **337 with `centre.x = 369.33`, which is the centre of the two Asian marks
+alone**; the same arithmetic with the centre of all three (219.15) gives −264, and
+a box cannot have a negative centre. So the page framed on **a set that is neither
+`shown` (three) nor `lensFocus` (one)**: the focus and its one-hop ring, *without*
+the parent.
+
+**The control that proves the rest of the stack is sound.** Open the same URL with
+`&bbox=-180,-85,180,85`, which makes `frameCamera` return early on `s.bbox` and
+leaves the camera at `translate(0 0) scale(1)`. The map then draws
+**`estado-novo-1933-1974`, `cultural-revolution`, `12-3-incident`** — all three.
+The filter, the index, the place and the mark are all fine; only the frame is
+wrong.
+
+**The reading to hand on.** `frameCamera` runs once per key and the key is
+`foci | holding | layers | box` (`src/map/map.js`). It carries **no count of
+attribute-shard arrivals**, which is the very thing `src/render-key.js` exists to
+carry — *"since a century landing changes what is drawn and the state cannot see
+it"*. A camera that frames before the lens's membership has settled, and then
+never re-frames because its key has not moved, matches every number above. That
+is a hypothesis about the cause; everything before it is measured.
+
+**Why this fire left it.** The brief's "what this run must not do" is explicit —
+**no display change** — and this is one, in `src/map/map.js` or in the key beside
+it. A fire could instead have narrowed the test's choice rule to a child whose
+parent shares its lane, and that would be worse twice over: it would hide a defect
+that affects **every lens whose ring is geographically wide**, not one record, and
+the landing merge keeps `origin/m0`'s side of any test file, so the change would be
+dropped and the failure would surface on `m0` anyway. **It belongs on `m0`, in
+front of a test, and it is not a lane fire's.**
+
+**What a reader loses meanwhile.** Exactly what the test's own comment says the
+assertion is for: *"a reader who walked down into a regime can see the regime."*
+Choose the 12-3 incident today and the Estado Novo is off the screen.
