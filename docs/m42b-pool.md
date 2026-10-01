@@ -18699,3 +18699,21 @@ narrows all three views to it, its parts, its parent and one hop`, with
 `error: 'map left out estado-novo-1933-1974'`, at `tests/m65-browser.test.mjs:89` —
 character for character the failure the previous two stands recorded, which is M42's
 deviation 1521 and a display fault in `src/map/map.js` that no records lane may fix.*
+
+*__The check agrees, read in the job's own log and not assumed.__ Run **2296** on
+`aacb0df86`, the head this fire pushed, reports `# tests 1940 / # pass 1940 /
+# fail 0 / # skipped 0` for the pure pass and `# tests 313 / # pass 312 /
+# fail 1 / # skipped 0` for the browser pass, the one being `not ok 67` with
+`error: 'map left out estado-novo-1933-1974'` — the same test, the same assertion
+and the same record as the two runs the previous stands read, which is why it is
+deviation 1521 and not a new fault. **Tests** is the only failing step of the job;
+its **Validate records** step is green, and its two index steps are skipped because
+this is a push and not a pull request.*
+
+*One note for whoever next reads a red check from this sandbox: the job log's own
+blob host, `productionresultssa4.blob.core.windows.net`, is **denied by this
+environment's egress policy**, so neither the `…/actions/runs/<id>/logs` download
+nor the redirect behind `…/actions/jobs/<id>/logs` can be followed here —
+deviation 729's shape, with a different cause. What works is the GitHub MCP
+server's `get_job_logs` with `return_content: true` and a large `tail_lines`,
+which returns the text through the API rather than the blob store.*
