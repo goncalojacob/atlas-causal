@@ -632,3 +632,15 @@ there unprompted, as it did batch 82's record.
 | `russian-invasion-of-manchuria` | `boxer-rebellion` | The item's `P361` is `Q150229`, the item this atlas holds as the umbrella. June to November 1900 is inside the umbrella's span, 1899-08 to 1901-09. The invasion was the Russian column of the intervention the rebellion provoked, and the record's own article opens on the rebellion as the occasion for it. |
 
 **Main is 229 before and 229 after**: the record arrived filed.
+
+## Batch 84 — two Africa filings the import made for itself
+
+The first two records this vein has put in the lane that trails. Both arrived
+filed, from the items' own `P361`, and neither needed a word from the fire.
+
+| record | parent | why |
+| --- | --- | --- |
+| `operation-savannah-angola` | `angolan-civil-war` | The item's `P361` names `Q1993848` and `Q12055176`; the second is the item this atlas holds as `angolan-civil-war`, the first is the South African Border War and is not held. 1975 to 1976 is inside the umbrella's 1975 to 2002. The incursion was fought to put UNITA in control of southern Angola against the MPLA, which is the civil war itself and not a separate quarrel — the record's own lead says the operation "materially influenced the subsequent Angolan Civil War", and the article's Background is the civil war's first year told as the operation's occasion. |
+| `battle-of-afabet` | `eritrean-war-of-independence` | The item's `P361` is `Q740289`, which this atlas holds as `eritrean-war-of-independence`. March 1988 is inside the umbrella's 1961 to 1991. Afabet was the EPLF's destruction of the Ethiopian Nadew Command, which is the war of independence's own decisive engagement; the record's article is about nothing else. |
+
+**Main is 229 before and 229 after**: both records arrived filed.

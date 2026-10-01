@@ -1043,6 +1043,15 @@
         }
       ]
     },
+    "angolan-war-of-independence--operation-savannah-angola--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "anschluss--austrian-state-treaty--precondition-of": {
       "from": "git",
       "versions": [
@@ -1242,6 +1251,15 @@
         }
       ]
     },
+    "battle-of-afabet--somali-civil-war--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-alegria-de-pio--battle-of-la-plata-1957--precondition-of": {
       "from": "git",
       "versions": [
@@ -1410,6 +1428,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-onjong--battle-of-unsan--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

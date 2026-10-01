@@ -1405,3 +1405,32 @@ all of that is a person's write on `review.html`.
 `P361` — `Q170314`, which the atlas holds as `second-sino-japanese-war` — and the
 dates sit inside the umbrella's span. `docs/m62-umbrellas.md` → "Batch 82"
 argues it in full.
+
+## Batch 85 — `battle-of-onjong`, which names neither either
+
+The second record of the umbrella-children vein to arrive with no `actors` and
+`place: null`, and the reasons are not batch 82's.
+
+**The place, and why there is none.** A9 asks for the item's own `P625` first and
+`Q4871945` has one — 125.896, 40.1092, the village of Onjong in North Pyongan.
+What it has no third of is a `P276`, a `P131` or a `P17`: the chain is one item
+long, and that item is a battle. So the import had a point and no place to hang
+it on, and said so: *"no place for `Q4871945`: its own point (125.896, 40.1092)
+and no name a tool can read; a person writes that place."* A place record wants a
+label and a precision, and the only name on the item is the battle's own, which
+is not the name of the ground. Onjong is an atlas place record waiting to be
+written by somebody, not a label a batch may derive from a battle.
+
+**The lane is written anyway, and from the item.** `region: "asia"`, under
+A15(7), derived from that same own point — so this record does move a lane count
+even without a place.
+
+**The actors.** None, because `tools/import/identity.mjs` never writes `actors`.
+The Chinese People's Volunteer Army, the Republic of Korea Army and the United
+Nations Command are the three a reviewer would add, on `review.html`.
+
+**Why it belongs under the umbrella anyway.** The filing is the item's own `P361`
+— `Q8663`, which this atlas holds as `korean-war` — and 25 to 29 October 1950 is
+inside the umbrella's span. Onjong was the first engagement between Chinese and
+United Nations ground forces in that war, which is why the record's one edge runs
+to `battle-of-unsan` and stays inside the same umbrella.

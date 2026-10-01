@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "battle-of-afabet--somali-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Afabet\", revision 1376904281, \"Aftermath\""
+    }
+  ],
+  "from": "battle-of-afabet",
+  "to": "somali-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The battle's own article draws the chain and the battle is its subject throughout: Afabet \"forced a panicked President Mengistu Haile Mariam to urgently free up troops from his southern flank for redeployment north\", for which \"Mengistu hastily signed a surprise peace treaty with Somali dictator Siad Barre on April 3, 1988\" that stripped the Somali National Movement \"of its Ethiopian sanctuary, base camps, and rear supply lines\", which is why the SNM launched the 1988 Hargeisa-Burao offensive — and so, in the article's own words, \"Due to this effect, The Battle of Afabet is thus sometimes also considered to be the catalyst for the Somali Civil War\". `precondition-of` and not `caused` because the article puts four steps between the battle and the war: what it claims is that Afabet put the war in place, not that it produced it. The hedge is the article's own and is kept rather than smoothed away — \"sometimes also considered\", attributed there to Gebru Tareke (2016) — and a reviewer who reads the source may well find that this belongs at a weaker type or not at all. `probable` and not `consensus` under rule 22 and A2 — the one witness is a Wikipedia record.",
+  "dispute": null
+}
