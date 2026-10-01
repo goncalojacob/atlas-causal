@@ -21741,6 +21741,35 @@
       ],
       "created": "2026-10-01",
       "from": "peninsular-war",
+      "id": "peninsular-war--bolivian-war-of-independence--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-62"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "bolivian-war-of-independence",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "peninsular-war",
       "id": "peninsular-war--chilean-war-of-independence--precondition-of",
       "kind": "edge",
       "origin": {
@@ -21756,6 +21785,35 @@
       "revised": null,
       "status": "active",
       "to": "chilean-war-of-independence",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "peninsular-war",
+      "id": "peninsular-war--colombian-war-of-independence--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-62"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "colombian-war-of-independence",
       "type": "precondition-of"
     },
     {
@@ -21785,6 +21843,35 @@
       "status": "active",
       "to": "independence-of-brazil-1822",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "peninsular-war",
+      "id": "peninsular-war--mexican-war-of-independence--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-62"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "mexican-war-of-independence",
+      "type": "precondition-of"
     },
     {
       "authors": [

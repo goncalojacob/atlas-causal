@@ -18525,6 +18525,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 1,
       "id": "bolivian-war-of-independence",
       "kind": "event",
       "origin": {
@@ -20353,6 +20354,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 1,
       "id": "colombian-war-of-independence",
       "kind": "event",
       "origin": {
@@ -30489,7 +30491,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "mexican-war-of-independence",
       "kind": "event",
       "origin": {
@@ -33302,7 +33304,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 8,
+      "degree": 11,
       "id": "peninsular-war",
       "kind": "event",
       "origin": {
@@ -47515,12 +47517,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "bolivian-war-of-independence",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "bombing-in-zona-rosa-of-bogota-of-2003",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -47621,12 +47617,6 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
-    },
-    {
-      "id": "colombian-war-of-independence",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
     },
     {
       "id": "corynthia-expedition",
