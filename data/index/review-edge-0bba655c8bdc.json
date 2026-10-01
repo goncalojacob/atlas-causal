@@ -8701,28 +8701,6 @@
       "authors": [
         {
           "github": null,
-          "name": "Claude"
-        }
-      ],
-      "cites": [
-        "wikipedia-en"
-      ],
-      "created": "2026-10-01",
-      "from": "berlin-conference",
-      "id": "berlin-conference--scramble-for-africa--enabled",
-      "kind": "edge",
-      "review": {
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "to": "scramble-for-africa",
-      "type": "enabled"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
