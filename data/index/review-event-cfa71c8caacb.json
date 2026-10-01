@@ -20163,6 +20163,37 @@
         "wikipedia-en"
       ],
       "created": "2026-10-01",
+      "degree": 1,
+      "id": "capture-of-mahdia-1550",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Mahdia (1550)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
       "degree": 5,
       "id": "capture-of-malacca-1511",
       "kind": "event",
@@ -41267,7 +41298,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-01",
-      "degree": 1,
+      "degree": 2,
       "id": "siege-of-tripoli-1551",
       "kind": "event",
       "origin": {

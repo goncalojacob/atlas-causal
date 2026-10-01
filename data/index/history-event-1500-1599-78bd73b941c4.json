@@ -728,6 +728,15 @@
         }
       ]
     },
+    "capture-of-mahdia-1550": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "capture-of-malacca-1511": {
       "from": "git",
       "versions": [

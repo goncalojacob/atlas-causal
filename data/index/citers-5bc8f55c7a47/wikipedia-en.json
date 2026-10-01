@@ -3800,6 +3800,18 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-mahdia-1550--siege-of-tripoli-1551--reacted-to",
+      "kind": "edge",
+      "locator": "\"Capture of Mahdia (1550)\", revision 1375739652"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-mahdia-1550--siege-of-tripoli-1551--reacted-to",
+      "kind": "edge",
+      "locator": "\"Siege of Tripoli (1551)\", revision 1370746050"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-malacca-1511--attack-on-bintan-1521--precondition-of",
       "kind": "edge",
       "locator": "\"Attack on Bintan (1521)\", revision 1372970515"
@@ -13205,6 +13217,12 @@
       "id": "capture-of-luanda",
       "kind": "event",
       "locator": "\"Dutch Loango-Angola\", revision 1370615995, § Capture of Luanda (1641)"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-mahdia-1550",
+      "kind": "event",
+      "locator": "\"Capture of Mahdia (1550)\", revision 1375739652"
     },
     {
       "dissent": false,

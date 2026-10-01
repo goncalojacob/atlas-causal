@@ -5687,6 +5687,15 @@
         }
       ]
     },
+    "mahdia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "mahikeng": {
       "from": "git",
       "versions": [
