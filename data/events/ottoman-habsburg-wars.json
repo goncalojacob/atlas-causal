@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ottoman-habsburg-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q786171",
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Ottoman–Habsburg wars",
+    "pt": "Guerras habsburgo-otomanas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q786171"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman–Habsburg wars\", revision 1377471430"
+    }
+  ],
+  "title": "Ottoman–Habsburg wars",
+  "summary": "The English Wikipedia article \"Ottoman–Habsburg wars\", at revision 1377471430, opens: \"The Ottoman–Habsburg wars were fought from the 16th to the 18th centuries between the Ottoman Empire and the Habsburg monarchy, which was at times supported by the Kingdom of Hungary, Polish–Lithuanian Commonwealth, the Holy Roman Empire, and Habsburg Spain. The wars were dominated by land campaigns in Hungary, including Transylvania and Vojvodina, Croatia, and central Serbia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q786171, imported by tools/import/wikidata.mjs. The item's own description reads \"series of conflicts from the 16th through the 18th century between the Ottoman Empire and the Habsburg (later Austrian) Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1526,
+    "end": 1791
+  },
+  "place": "central-and-eastern-europe",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

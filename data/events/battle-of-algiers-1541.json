@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-algiers-1541",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2502863",
+  "wikipedia": {
+    "en": "Battle of Algiers (1541)",
+    "pt": "Expedição a Argel (1541)"
+  },
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-01"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2502863"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Algiers (1541)\", revision 1375834500"
+    }
+  ],
+  "title": "Battle of Algiers (1541)",
+  "summary": "The English Wikipedia article \"Battle of Algiers (1541)\", at revision 1375834500, opens: \"The 1541 battle of Algiers occurred when Charles V of the Holy Roman Empire and king of Spain attempted to lead an amphibious attack against the Regency of Algiers. Inadequate planning, particularly against unfavourable weather, led to the failure of the expedition.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2502863, imported by tools/import/wikidata.mjs. The item's own description reads \"1541 attack by the Holy Roman Empire on the regency of Algiers\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1541,
+    "end": 1541,
+    "date": "1541-10-20",
+    "endDate": "1541-11-01"
+  },
+  "place": "algiers-q3561",
+  "region": null,
+  "regionNote": null,
+  "parent": "ottoman-habsburg-wars",
+  "category": "war",
+  "actors": []
+}

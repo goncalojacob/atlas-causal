@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "sitawaka-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q136605166",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Sitawaka campaign",
+    "pt": "Campanha de Ceitavaca"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q136605166"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sitawaka campaign\", revision 1370747267"
+    }
+  ],
+  "title": "Sitawaka campaign",
+  "summary": "The English Wikipedia article \"Sitawaka campaign\", at revision 1370747267, opens: \"The Sitawaka campaign of 1594 was a successful military operation carried out by the Portuguese Empire and Sinhalese forces against the Kingdom of Sitawaka. It resulted in the deposition of king Nikapitiye Bandara and the installment of Jayavira Bandara Mudali on the throne.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q136605166, imported by tools/import/wikidata.mjs. The item's own description reads \"1594 military campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1594,
+    "end": 1594
+  },
+  "place": "sri-lanka-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "sinhalese-portuguese-conflicts"
+}

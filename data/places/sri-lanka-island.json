@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sri-lanka-island",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4526612",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Sri Lanka (island)"
+  },
+  "sources": [],
+  "names": [
+    "Sri Lanka",
+    "Sri Lanka (island)"
+  ],
+  "where": {
+    "lon": 80.75,
+    "lat": 7.5,
+    "precision": "region",
+    "label": "Sri Lanka (island)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

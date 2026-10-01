@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "italian-wars--ottoman-habsburg-wars--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-63"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman–Habsburg wars\", revision 1377471430"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Italian War of 1542–1546\", revision 1370624570"
+    }
+  ],
+  "from": "italian-wars",
+  "to": "ottoman-habsburg-wars",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Habsburgs fought the Ottomans with their attention and their money elsewhere, and the elsewhere was France. “Ottoman–Habsburg wars”, at revision 1377471430, says so in its lead: “By the 16th century, the Ottomans had become a serious threat to European powers … The Protestant Reformation, **French–Habsburg rivalry** and the numerous civil conflicts of the Holy Roman Empire **distracted Christians from their conflict with the Ottomans**.” The same article’s account of the stalemate after Rhodes names the three calls on Habsburg strength and links the third to this atlas’s own record of it: “Habsburg interests were split between fighting for devastated European land under Islamic control, trying to stop the gradual decentralization of Imperial authority in Germany, and for Spain’s ambitions in North Africa, the Low Countries and [[Italian Wars|against the French]].” **Where this edge is weak, and it is said here rather than left to be found**: the lead’s own link for the distraction is *French–Habsburg rivalry*, which is the whole dynastic quarrel and not only its wars, and it is the body that links the fighting against the French to *Italian Wars*. The atlas holds the Italian Wars and holds no record of the rivalry, so the edge is written from the war the rivalry was fought as. The second author is “Italian War of 1542–1546” at revision 1370624570, the revision that war’s own record cites, for the other half of the same split read from the French side — Suleiman “seeking to distract Charles from Ottoman advances in Hungary, encouraged the Franco-Imperial rift”, and Barbarossa’s fleet wintering at Toulon. `enabled` and not `caused`: neither article makes the French war a reason the Ottoman wars began — the first dates their origin to Mohács in 1526 — only a reason the Christian side fought them divided. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}

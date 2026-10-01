@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-goa-1638",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871118",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Goa (1638)",
+    "pt": "Batalha de Goa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871118"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Goa (1638)\", revision 1370441745"
+    }
+  ],
+  "title": "Battle of Goa (1638)",
+  "summary": "The English Wikipedia article \"Battle of Goa (1638)\", at revision 1370441745, opens: \"The Battle of Goa refers to a series of naval engagements between the Portuguese Armada and the Dutch East India Company fleets attempting to blockade and conquer the city of Goa. In 1638, forces commanded by the Viceroy of Portuguese India, D. Pedro da Silva and later António Teles de Meneses, fought off a large Dutch fleet sent to block the port colony of Goa, commanded by Admiral Adam Westerwolt, who was badly defeated at this encounter.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871118, imported by tools/import/wikidata.mjs. The item's own description reads \"1638 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1638,
+    "end": 1639
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}

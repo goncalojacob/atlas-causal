@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "capture-of-tunis-1569",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q107240919",
+  "wikipedia": {
+    "en": "Capture of Tunis (1569)"
+  },
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-01"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q107240919"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Tunis (1569)\", revision 1370609762"
+    }
+  ],
+  "title": "Capture of Tunis (1569)",
+  "summary": "The English Wikipedia article \"Capture of Tunis (1569)\", at revision 1370609762, opens: \"The Capture of Tunis in 1569 was a campaign led by Uluç Ali to conquer Tunis.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q107240919, imported by tools/import/wikidata.mjs. The item's own description reads \"1569 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1569,
+    "end": 1569
+  },
+  "place": "tunis-q3572",
+  "region": null,
+  "regionNote": null,
+  "parent": "ottoman-habsburg-wars",
+  "category": "war",
+  "actors": []
+}
