@@ -34,7 +34,12 @@ exactly that. The fire that measured this screened **rows 1 to 170** against bot
 **two** records: row 32, `Q140025`, as batch 82, and row 122, `Q2177009`, as
 batch 83. **About one import per 85 rows read** is the rate to budget for, and
 `docs/m42-pool.md` carries the reading of every refusal under *Deviation 1522*,
-*Batch 82* and *Batch 83*. **A later fire starts at row 171.**
+*Batch 82* and *Batch 83*. **A later fire starts at row 921.** The fire of 1 October 19:00Z screened
+rows 171 to 920 — 655 articles read — and wrote three records (rows 324 and 321
+as batch 84, row 249 as batch 85) and three edges; row 222 was written and taken
+back by rule 4, which is deviation 1523. Its rate is **one import per 218
+articles read**, and deviation 1524 measures the 158 `chinese-civil-war` rows as
+the largest block of this file and the emptiest.
 
 So this is a list to work, not a list to import. The rate to budget for is the
 one the 1 October stands already name: the edge kills most of them.
