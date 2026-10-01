@@ -19,13 +19,13 @@
       "to": 1399
     },
     {
-      "file": "index/attributes-1400-1499-450bcd96da09.json",
+      "file": "index/attributes-1400-1499-39e0658b7dcc.json",
       "from": 1400,
       "key": "1400-1499",
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-f9b786e2d697.json",
+      "file": "index/attributes-1500-1599-05023fe4063d.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
@@ -1024,7 +1024,7 @@
   ],
   "counts": {
     "actors": 2699,
-    "edges": 1206,
+    "edges": 1207,
     "events": 1625,
     "narratives": 2,
     "offices": 11,
@@ -1037,7 +1037,7 @@
   },
   "explanationShards": [
     {
-      "file": "index/explanations-1400-1499-5b617029e94b.json",
+      "file": "index/explanations-1400-1499-784007161c20.json",
       "from": 1400,
       "to": 1499
     },
@@ -1073,13 +1073,13 @@
     }
   ],
   "files": {
-    "citers": "index/citers-f0e8c0465ab9",
-    "core": "index/core-2157b0d4e11f.json",
+    "citers": "index/citers-bbcb46885895",
+    "core": "index/core-096311fc53aa.json",
     "grounds": "index/grounds-b722bdb968a5.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-3b1eec87ea25.json",
-    "search": "index/search-eaf590691247.json",
-    "sources": "index/sources-ae67b3b97ddb.json",
+    "review": "index/review-e2cb5886201d.json",
+    "search": "index/search-61ab3c512e78.json",
+    "sources": "index/sources-b6d2f4589ab4.json",
     "territories": "index/territories-8a2ff778ccbb.json"
   },
   "historyShards": [
@@ -1133,7 +1133,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-edge-1400-1499-c948bf10c74f.json",
+      "file": "index/history-edge-1400-1499-91e6ac642014.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "edge",
@@ -1517,8 +1517,8 @@
     }
   },
   "links": {
-    "active": 1194,
-    "explained": 1194
+    "active": 1195,
+    "explained": 1195
   },
   "officesByEvent": {
     "1908-portuguese-legislative-election": [

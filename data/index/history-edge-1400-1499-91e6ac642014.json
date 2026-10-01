@@ -29,6 +29,15 @@
         }
       ]
     },
+    "italian-wars--ottoman-habsburg-wars--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "spanish-colonization-of-the-americas--spanish-conquest-of-the-aztec-empire--enabled": {
       "from": "git",
       "versions": [

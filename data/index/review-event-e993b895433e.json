@@ -28411,6 +28411,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "italian-wars",
       "kind": "event",
       "origin": {
@@ -33083,6 +33084,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-01",
+      "degree": 1,
       "id": "ottoman-habsburg-wars",
       "kind": "event",
       "origin": {
@@ -48096,12 +48098,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "italian-wars",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "kaocen-revolt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -48223,12 +48219,6 @@
     },
     {
       "id": "operation-keyhole",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "ottoman-habsburg-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
