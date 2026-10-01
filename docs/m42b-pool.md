@@ -16245,7 +16245,15 @@ at a time), measured at this head.*
 8. **C8 is the lane's one real blocker now** (deviation 1382), not a question
    among others: the three degree-zero umbrellas left in this partition are all
    barred by A14 and nothing a fire can read will move them.
-9. **Still open, unchanged**: C8, deviations 1323, 1345, 1346's ocean islands,
+9. **Check a new deviation number against `docs/m42-pool.md` before using it.**
+   The 21 September amendment gave lane B a block from 950 and this brief gave
+   M42b one from 1200, but the two lanes have been drawing from the same range
+   for weeks: M42 is at **1514** and this lane at **1382**, so every number this
+   lane takes from here lies inside a range M42 has already spent. Two have
+   collided already (1212 and 1235, both old and both left alone); 1378 to 1382
+   were checked against M42's pool before being written and are free. One
+   `grep -c "Deviation <n>" docs/m42-pool.md` is the whole of the check.
+10. **Still open, unchanged**: C8, deviations 1323, 1345, 1346's ocean islands,
    1348's lane guard, 1353, 1358, 1361, 1362, 1365, 1366, 1377 (a merge commit
    gets its index in a commit of its own — both merges this fire were clean and
    left the index byte-identical, so it did not arise, which is not evidence it
