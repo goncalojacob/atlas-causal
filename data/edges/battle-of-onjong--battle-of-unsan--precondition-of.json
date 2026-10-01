@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "battle-of-onjong--battle-of-unsan--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Onjong\", revision 1377425566, \"Aftermath\""
+    }
+  ],
+  "from": "battle-of-onjong",
+  "to": "battle-of-unsan",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The battle's own Aftermath makes it the opening a second battle was fought through: \"With the loss of the 6th Infantry Division and the 10th Infantry Regiment, ROKA II Corps was devastated, and effectively ceased to be an organized fighting force. This meant the right flank of the US Eighth Army was completely open to the PVA … Exploiting the situation, the PVA launched another attack on the now exposed Eighth Army center, resulting in the loss of the ROKA 15th Infantry Regiment and the US 8th Cavalry Regiment at the Battle of Unsan.\" `precondition-of` and not `caused` because what the article says Onjong produced is the open flank, and Unsan is what the PVA then made of it. **The grammatical subject is one remove** — \"the situation\" and \"the now exposed\" are this record's own outcome, stated in the two sentences before, and the article is about nothing else — which is the same reading batch 82's edge rests on and the same judgement a reviewer might reverse: if it goes, it should be retracted rather than re-pointed, because no third event the atlas holds stands between them. `probable` and not `consensus` under rule 22 and A2 — the one witness is a Wikipedia record.",
+  "dispute": null
+}

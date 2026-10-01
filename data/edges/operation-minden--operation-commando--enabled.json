@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "operation-minden--operation-commando--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Minden\", revision 1377831575, \"Aftermath\""
+    }
+  ],
+  "from": "operation-minden",
+  "to": "operation-commando",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "This record is the grammatical subject of the claim, which is the shape the vein almost never offers: \"The successful implementation of Operation Minden led to the more large scale Operation Commando, which involved a substantial part of I Corps.\" The article's own lead says the same thing in one word — \"Operation Minden was the precursor to the much larger Operation Commando, which established the Jamestown Line.\" `enabled` and not `caused` because what the article credits is the *successful implementation*: Minden pushed the line nearly five kilometres north of the Imjin and left I Corps standing where the larger advance could be mounted from, which is a thing made possible rather than a thing compelled. `enabled` and not `precondition-of` because the article states a positive \"led to\" and does not argue that Commando was impossible without it. `probable` and not `consensus` under rule 22 and A2 — the one witness is a Wikipedia record. Both ends are filed under `korean-war`, so this edge is inside an umbrella and does not cross one.",
+  "dispute": null
+}

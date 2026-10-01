@@ -5885,3 +5885,61 @@ still not written.
 
 Both are `probable`: Wikipedia is the only source, and A2 leaves `consensus`
 open only through a work Wikipedia itself cites.
+
+## Batch 77 — one edge, over thirty years
+
+| from | type | to | confidence | the sentence that argues it |
+| --- | --- | --- | --- | --- |
+| `rwandan-revolution` | precondition-of | `rwandan-civil-war` | probable | *"The revolution caused at least 336,000 Tutsi to flee to neighbouring countries, where they lived as refugees"* and *"In 1990 the Rwandan Patriotic Front (RPF), a rebel group composed primarily of Tutsi refugees, invaded northern Rwanda; this began the Rwandan Civil War."* — "Rwandan Revolution", revision 1367896898, lead and § Post-revolution Rwanda |
+
+**Thirty-one years is why this is a precondition and not a cause**, for the same
+reason the Sétif massacre is one nine years out. The article does not say the
+revolution began the war; it says the revolution made the exiled population, and
+that the war was begun by the force that population raised. `precondition-of` is
+the type that says exactly that, and it is the honest reading of two sentences
+that are thirty years apart in the same lead.
+
+**It crosses an umbrella**, which is the count A15(11) asks every batch for: the
+revolution is filed under `decolonisation-of-africa` and the civil war is a main
+event, so the pair shares no parent. It is also the edge that took the new record
+straight into the largest connected component, 765 → 766.
+
+`probable`: Wikipedia is the only witness, and A2 leaves `consensus` open only
+through a work Wikipedia itself cites.
+
+## Batch 78 — one edge, and what a war leaves behind
+
+| from | type | to | confidence | the sentence that argues it |
+| --- | --- | --- | --- | --- |
+| `world-war-ii` | precondition-of | `malayan-emergency` | probable | *"Many MNLA fighters were veterans of the Malayan Peoples' Anti-Japanese Army (MPAJA), a communist guerrilla army previously trained, armed and funded by the British to fight against Japan during World War II"* and *"The economic disruption of World War II (WWII) on British Malaya led to widespread unemployment, low wages, and high levels of food price inflation. The weak economy was a factor in the growth of trade union movements and caused a rise in communist party membership."* — "Malayan Emergency", revision 1373880340, lead and § Socioeconomic issues (1941–1948) |
+
+**`precondition-of` because the article attributes the outbreak to something
+else.** Its own account of June 1948 is the killing of trade unionists and the
+retaliatory attacks that followed, not the war. What the war supplied is the
+army — raised, trained and armed by the British against Japan — and the
+grievance that gave it a following. That is a precondition and `caused` would
+overstate it.
+
+**It crosses an umbrella** (A15(11)): the Emergency is filed under
+`decolonisation-of-asia` and the Second World War is a main event, so the pair
+shares no parent.
+
+`probable`: Wikipedia is the only witness.
+
+## Batch 79 — one edge, and the word the article uses
+
+| from | type | to | confidence | the sentence that argues it |
+| --- | --- | --- | --- | --- |
+| `cambodian-genocide` | caused | `cambodian-vietnamese-war` | probable | *"Additionally, the Khmer Rouge conducted many cross-border raids into Vietnam, where they slaughtered an estimated 30,000 Vietnamese civilians. ... This caused an urgent response from the Vietnamese government, precipitating the Cambodian–Vietnamese War in which the Khmer Rouge was ultimately defeated."* — "Cambodian genocide", revision 1377684919, § Vietnamese; and *"The Cambodian–Vietnamese War began when Vietnam invaded Cambodia and deposed the genocidal Khmer Rouge regime"* — "Indochina wars", revision 1373921212 |
+
+**`caused` and not `precondition-of`, for once, because the article uses the
+word.** The two edges this fire wrote before it are preconditions because their
+articles describe what a thing left behind; this one says *caused* and then names
+the war in the same sentence. Two witnesses, each at its own revision, saying it
+from each end.
+
+**It does not cross an umbrella** (A15(11)): both ends are filed under
+`indochina-wars`, so it is one of the 591 inside one. It is siblings and not
+parent-to-child, so A14's standing C8 rule is untouched.
+
+`probable`: both witnesses are Wikipedia records.

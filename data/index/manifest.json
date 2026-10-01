@@ -43,13 +43,13 @@
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-266e7486cc1d.json",
+      "file": "index/attributes-1800-1899-eb74733f92f7.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-a1ced814ad40.json",
+      "file": "index/attributes-1900-1999-8f8c86b2b9b1.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -67,7 +67,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-dac23fa08529.json",
+      "file": "index/attributes-place-b4cde929c097.json",
       "from": null,
       "key": "place",
       "to": null
@@ -924,7 +924,7 @@
       "id": "culture"
     },
     {
-      "count": 13,
+      "count": 14,
       "id": "death"
     },
     {
@@ -948,15 +948,15 @@
       "id": "other"
     },
     {
-      "count": 43,
+      "count": 44,
       "id": "revolution"
     },
     {
-      "count": 88,
+      "count": 90,
       "id": "treaty"
     },
     {
-      "count": 815,
+      "count": 824,
       "id": "war"
     }
   ],
@@ -1024,11 +1024,11 @@
   ],
   "counts": {
     "actors": 2699,
-    "edges": 1193,
-    "events": 1614,
+    "edges": 1206,
+    "events": 1627,
     "narratives": 2,
     "offices": 11,
-    "places": 799,
+    "places": 803,
     "presences": 6691,
     "regions": 5,
     "relations": 138,
@@ -1057,12 +1057,12 @@
       "to": 1799
     },
     {
-      "file": "index/explanations-1800-1899-44998c16e510.json",
+      "file": "index/explanations-1800-1899-9d8786a14e3f.json",
       "from": 1800,
       "to": 1899
     },
     {
-      "file": "index/explanations-1900-1999-2414018c7907.json",
+      "file": "index/explanations-1900-1999-22ef21e5aa81.json",
       "from": 1900,
       "to": 1999
     },
@@ -1073,14 +1073,14 @@
     }
   ],
   "files": {
-    "citers": "index/citers-68c55919b34e",
-    "core": "index/core-758cd73857de.json",
-    "grounds": "index/grounds-1cd6c8a5cb00.json",
+    "citers": "index/citers-755bbbd1a751",
+    "core": "index/core-d54f1fd810f2.json",
+    "grounds": "index/grounds-555748b68619.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-0ba315223354.json",
-    "search": "index/search-44dc79168e8f.json",
-    "sources": "index/sources-dc8c309cbfe6.json",
-    "territories": "index/territories-e4afa9885d25.json"
+    "review": "index/review-fa2b6c98e9b9.json",
+    "search": "index/search-73d0968d6431.json",
+    "sources": "index/sources-5f52119a23b1.json",
+    "territories": "index/territories-921ddabcee75.json"
   },
   "historyShards": [
     {
@@ -1112,14 +1112,14 @@
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-295b01fbd91c.json",
+      "file": "index/history-event-1800-1899-d1bf27be671e.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-d11ed4a82143.json",
+      "file": "index/history-event-1900-1999-37bc01b58bd7.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
@@ -1161,14 +1161,14 @@
       "to": 1799
     },
     {
-      "file": "index/history-edge-1800-1899-ceb9508b9710.json",
+      "file": "index/history-edge-1800-1899-c05886a97fc7.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "edge",
       "to": 1899
     },
     {
-      "file": "index/history-edge-1900-1999-9948878ac068.json",
+      "file": "index/history-edge-1900-1999-59a766059ac3.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "edge",
@@ -1245,7 +1245,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-7b89b5d7963b.json",
+      "file": "index/history-place-place-fd97a2699daf.json",
       "from": null,
       "key": "place",
       "kind": "place",
@@ -1517,8 +1517,8 @@
     }
   },
   "links": {
-    "active": 1181,
-    "explained": 1181
+    "active": 1194,
+    "explained": 1194
   },
   "officesByEvent": {
     "1908-portuguese-legislative-election": [

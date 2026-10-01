@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "yom-kippur-war--camp-david-accords--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Yom Kippur War\", revision 1375181066, § Egyptian–Israeli Camp David Accords"
+    }
+  ],
+  "from": "yom-kippur-war",
+  "to": "camp-david-accords",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The war's own article names the Accords as what the war led to, with the war as the sentence's subject: \"The Yom Kippur War upset the status quo in the Middle East, and the war served as a direct antecedent of the 1978 Camp David Accords.\" `precondition-of` and not `caused` because that is what \"a direct antecedent of\" says: the article puts the war before the Accords as what made them possible and does not claim the war produced them — the same section gives the agency to Carter, who \"invited both Sadat and Begin to a summit at Camp David to negotiate a final peace\". The article's other candidate sentence was refused: \"These shifts contributed to the Israeli–Palestinian peace process, leading to the 1978 Camp David Accords, when Israel returned the Sinai Peninsula to Egypt, and the Egypt–Israel peace treaty, the first time an Arab country recognized Israel.\" It states a cause and names this record, but its subject is \"These shifts\", a phrase whose referent is the three preceding sentences. That is the refusal already recorded for the Treaty of Shimonoseki's \"these events\": a pronoun whose referent is a paragraph is not an attribution this atlas can make. `probable` and not `consensus` under rule 22 and A2 — the one witness is a Wikipedia record.",
+  "dispute": null
+}
