@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "treaty-of-addis-ababa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2399119",
+  "wikipedia": {
+    "en": "Treaty of Addis Ababa",
+    "pt": "Tratado de Adis Abeba"
+  },
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-01"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2399119"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Addis Ababa\", revision 1358464481"
+    }
+  ],
+  "title": "Treaty of Addis Ababa",
+  "summary": "The English Wikipedia article \"Treaty of Addis Ababa\", at revision 1358464481, opens: \"The Treaty of Addis Ababa, signed on 26 October 1896, formally ended the First Italo-Ethiopian War on terms mostly favourable to Ethiopia. This treaty superseded a secret agreement between Ethiopia and Italy negotiated days after the decisive Battle of Adwa in March of the same year, in which Ethiopian forces commanded by Menelik II defeated the Italians. The most important concession the Italians made was the abrogation of the Treaty of Wuchale and recognizing Ethiopia as an independent country.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2399119, imported by tools/import/wikidata.mjs. The item's own description reads \"October 1896 treaty between Ethiopia and Italy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1896,
+    "date": "1896-10-26"
+  },
+  "place": "addis-ababa",
+  "region": null,
+  "regionNote": null,
+  "parent": "first-italo-ethiopian-war",
+  "category": "treaty",
+  "actors": []
+}

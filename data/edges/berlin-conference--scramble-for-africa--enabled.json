@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "berlin-conference--scramble-for-africa--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Scramble for Africa\", revision 1373841219, § Berlin Conference (1884–1885)"
+    }
+  ],
+  "from": "berlin-conference",
+  "to": "scramble-for-africa",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article of the partition says what the conference did to it, and says it as a change of kind rather than a sequence: \"The Berlin Conference transformed Africa's colonization from informal economic penetration to systematic political control through its 'effective occupation' principle.\" Its Moroccan section names the same relation from the other side — \"Although the Berlin Conference had set the rules for the Scramble for Africa, it had not weakened the rival imperialists\" — and its own account of the conference is that it \"set the rules of effective control of African territories and reduced the risk of conflict between colonial powers\". `enabled` and not `caused`: the rush for African territory was already under way when Bismarck called the conference, and what the article credits it with is the rule under which a claim counted, which is what made a systematic partition possible rather than what set it going.",
+  "dispute": null
+}
