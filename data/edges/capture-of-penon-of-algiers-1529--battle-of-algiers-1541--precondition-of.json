@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "capture-of-penon-of-algiers-1529--battle-of-algiers-1541--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-63"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Peñón of Algiers (1529)\", revision 1370609401"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Algiers (1541)\", revision 1375834500"
+    }
+  ],
+  "from": "capture-of-penon-of-algiers-1529",
+  "to": "battle-of-algiers-1541",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Charles V sailed on Algiers in 1541 to take back a city the Ottomans had held since 1529, and the 1529 article says so in those words. “Capture of Peñón of Algiers (1529)”, at revision 1370609401, § Aftermath: “Over the following years, Barbarossa used Algiers as a major base for launching raids from the Barbary Coast. The huge Algiers expedition undertaken by Charles V in 1541 to retake Algiers ended in failure.” The second author, “Battle of Algiers (1541)” at revision 1375834500, § Background, dates the possession the expedition set out to undo to the same year: “Algiers had been under the control of the Ottoman emperor Suleiman the Magnificent since its help in 1529 by Hayreddin Barbarossa.” The type is `precondition-of` and not `caused`: what the 1529 capture supplied was the thing to be retaken, and neither article gives it as Charles’s motive — the 1541 article names that separately, as revenge for the siege of Buda, which this atlas does not hold. `probable`, on the articles alone (rule 22).",
+  "dispute": null
+}

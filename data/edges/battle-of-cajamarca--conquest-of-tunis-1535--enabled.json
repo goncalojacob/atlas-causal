@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-cajamarca--conquest-of-tunis-1535--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-63"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conquest of Tunis (1535)\", revision 1375228138"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cajamarca\", revision 1370108415"
+    }
+  ],
+  "from": "battle-of-cajamarca",
+  "to": "conquest-of-tunis-1535",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The campaign against Tunis was paid for with Atahualpa’s ransom, and the Tunis article says so. “Conquest of Tunis (1535)”, at revision 1375228138, § Background: “The expense involved for Charles V was considerable, and at 1,000,000 ducats on par with the cost of Charles’ campaign against Suleiman on the Danube. Unexpectedly, the funding of the conquest of Tunis came from the galleons sailing in from the New World, in the form of two million gold ducats extracted by Francisco Pizarro for releasing the Inca king Atahualpa, whom he nevertheless executed on 29 August 1533.” That sentence names the ransom and the two men but not the event this atlas holds, so the second author is what joins them: “Battle of Cajamarca”, at revision 1370108415, opens “The Battle of Cajamarca … was the ambush and seizure of the Incan ruler Atahualpa by a small Spanish force led by Francisco Pizarro, on November 16, 1532” — the seizure for whose release the ducats were extracted. The type is `enabled`: the money is a condition the first article states plainly and is not offered as the reason Charles went to Tunis, which the same section gives as the Ottoman fleet at Tunis threatening Italy and Spain. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}
