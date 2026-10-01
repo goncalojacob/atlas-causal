@@ -24365,3 +24365,77 @@ M42 started 2026-10-01T11:09:36Z by scheduled
 M42 started 2026-10-01T13:13:27Z by scheduled
 M42b started 2026-10-01T16:36:56Z by scheduled
 M42 started 2026-10-01T16:07:55Z by scheduled
+
+**M42b batch 65 — Asia's seventeenth century, from the Dutch–Portuguese War's Asian theatre, 1 October.**
+The trailing cells in this partition were **africa's and asia's 15th centuries,
+both zero**, and neither was taken: the atlas holds no umbrella reaching before
+1492 outside Europe, so any 15th-century African or Asian record either stands
+unfiled (+1 main each) or wants a new one (+1 main), and **batch 64 spent that
+coin the fire before**, with the main count already one of the three open
+questions to the owner. So the cell taken was the trailing one this lane could
+fill at **no cost to the main count** — **asia's 17th century at four active
+events**, against a **held** umbrella: `dutch-portuguese-war` (`Q377269`,
+1601–1661) had eighteen children and only three were Asian, all of them about
+Malacca. **Four events imported** — `Q2032681` *Battle of Bantam* (1601, place
+`banten-bay`, a new place record from the item's `P276` `Q1841490`, lane `asia`
+from its own point), `Q704333` *Battle of Macau* (1622, 13 sitelinks, place
+`portuguese-macau`, which the atlas already held), `Q4871118` *Battle of Goa
+(1638)* (1638–1639) and `Q130478490` *Battle of Mannar (1658)* (place
+`mannar-island`, another new place) — all four filed under the umbrella from
+their own `P361` on the first pass, so **main 231 before and 231 after**. Asia
+**220 → 224** and its 17th century **4 → 8**; active events **1391 → 1395**,
+active edges **1202 → 1203**, A15(11)'s number **603** before and after,
+largest component **779** before and after, components **397 → 400**, events
+with no edge **304 → 308**. **Deviation 1390 is a new rule**: where Wikidata's
+`P361` and the article's own infobox `part_of` disagree, **the article wins**,
+because the article is what the record cites and what its summary quotes —
+`Q2092338` *Battle of Swally* (11 sitelinks, the second best-linked Asian child)
+reads `part_of = Portuguese battles in the Indian Ocean` and fought the
+**English**, and `Q2567256` *Battle off Hormuz (1625)* reads
+`part_of = Anglo-Portuguese rivalry in the Persian Gulf`; both were refused, and
+one `index.php?...&action=raw` per candidate is what the check costs.
+**One edge** was written and it is not one of the four's:
+`battle-of-cajamarca --precondition-of--> battle-of-vilcaconga`, `probable`, from
+the Vilcaconga article at the revision that record already cites, § Battle, which
+opens on Cajamarca and names the mechanism — the emperor a captive, his
+commanders released from his stand-down order, the Spanish on the road to Cuzco
+and Quizquiz fortifying the pass across it. Siblings, so A14 does not reach it;
+no umbrella crossed. **The batch's four imports carry no edge at all, and
+`docs/m42b-pool.md` says so against A5 rather than around it**: Bantam and Goa
+are stubs that name no event, Macau's two cited causes are the 1580 succession
+crisis and the Sino–Dutch conflicts and the atlas holds neither, its one sentence
+reaching `siege-of-malacca-1640-1641` is **A15(5)'s chronology class** and was
+refused, and **Mannar does state a cause the atlas does not hold** — the Dutch
+capture of Colombo in 1655, which *"then allowed Rijckloff van Goens to launch a
+campaign, with Mannar being one of his targets"*, on a sentence carrying
+`{{citation needed}}`. **Importing the Siege of Colombo (1655–1656) is the next
+fire's first move** and the edge writes itself. **20 candidates of the same vein
+were left** and are counted in the pool file by lane; the two **Sieges of
+Mozambique (1607, 1608)** are named as the vein for **africa's 17th century**,
+which at seven is the next cell fillable at no cost to the main count, and the
+umbrella's own article states both outcomes and their reason in one sentence.
+**Deviation 1391**: batch 60's rule — check `data/edges/<from>--<to>--<type>` for
+all five types before fetching — was not run first, and
+`battle-of-abancay--battle-of-las-salinas--precondition-of` turned out to be
+already written from the very quote this fire went and fetched.
+**Deviation 1392**: `query.wikidata.org/sparql` answers **502** on this egress,
+and the shape of a vein comes instead from `api.php?action=query&list=backlinks`
+plus one `wbgetentities` — the umbrella's own `P527` holds ten where `P361` holds
+sixty-three, and would have missed every record of this batch.
+**Deviation 1393**: `battle-of-goa-1638` is the first record here written with
+`place: null` and a lane that still counts — `P625` absent, `P276` `Q1171` *Goa*
+refused because its class `Q12443800` *state of India* is not in the class table,
+and `P17` `Q668` *India* refused by **A15(6)** because the country's inception
+(1947) is after the event ended (1639) — while `laneFor()` still read `asia` off
+the country's point, so the record is on the timeline and not on the map.
+**Deviation 1394**: `tools/lib/history.mjs` reads each record's versions out of
+the repository's **own commits**, so an index built before the records are
+committed carries stale `history-*` shards and `validate --index` passes anyway,
+comparing one commit-behind build against another; four pure tests caught it on
+rule 16. The order is **commit the records, then build, then commit the index**.
+**Deviation 1388 stands unchanged**: the check is red on one browser test,
+`tests/m65-browser.test.mjs` `not ok 67`, `map left out estado-novo-1933-1974`,
+which is **M42's deviation 1521** — the same test, assertion and record as the
+previous fire read — and a display fault in `src/map/map.js` that no records lane
+may fix. Run **2270** on this fire's head reports `1940 / 1940 / 0` pure and
+`313 / 312 / 1` browser, read in the job's own log.
