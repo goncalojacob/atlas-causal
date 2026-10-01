@@ -11099,7 +11099,10 @@ runner, it took 606 s and 536 s on the two attempts, and the bounds in
 each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
 `docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
 the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again.
+failure is real, so this is reported and not re-run again. **Run 2233, on the
+commit that carries this deviation, is green** — the fourth run of the fire to
+pass on a tree whose `data/` is identical to the one that failed twice, which is
+the measurement rather than the assumption.
 
 **The proposed patch, which belongs to lane A and not here**: raise the
 `waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
@@ -11371,7 +11374,10 @@ runner, it took 606 s and 536 s on the two attempts, and the bounds in
 each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
 `docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
 the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again.
+failure is real, so this is reported and not re-run again. **Run 2233, on the
+commit that carries this deviation, is green** — the fourth run of the fire to
+pass on a tree whose `data/` is identical to the one that failed twice, which is
+the measurement rather than the assumption.
 
 **The proposed patch, which belongs to lane A and not here**: raise the
 `waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
@@ -11907,7 +11913,10 @@ runner, it took 606 s and 536 s on the two attempts, and the bounds in
 each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
 `docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
 the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again.
+failure is real, so this is reported and not re-run again. **Run 2233, on the
+commit that carries this deviation, is green** — the fourth run of the fire to
+pass on a tree whose `data/` is identical to the one that failed twice, which is
+the measurement rather than the assumption.
 
 **The proposed patch, which belongs to lane A and not here**: raise the
 `waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
@@ -12255,7 +12264,10 @@ runner, it took 606 s and 536 s on the two attempts, and the bounds in
 each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
 `docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
 the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again.
+failure is real, so this is reported and not re-run again. **Run 2233, on the
+commit that carries this deviation, is green** — the fourth run of the fire to
+pass on a tree whose `data/` is identical to the one that failed twice, which is
+the measurement rather than the assumption.
 
 **The proposed patch, which belongs to lane A and not here**: raise the
 `waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
@@ -12676,7 +12688,10 @@ runner, it took 606 s and 536 s on the two attempts, and the bounds in
 each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
 `docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
 the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again.
+failure is real, so this is reported and not re-run again. **Run 2233, on the
+commit that carries this deviation, is green** — the fourth run of the fire to
+pass on a tree whose `data/` is identical to the one that failed twice, which is
+the measurement rather than the assumption.
 
 **The proposed patch, which belongs to lane A and not here**: raise the
 `waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
@@ -13106,7 +13121,10 @@ runner, it took 606 s and 536 s on the two attempts, and the bounds in
 each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
 `docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
 the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again.
+failure is real, so this is reported and not re-run again. **Run 2233, on the
+commit that carries this deviation, is green** — the fourth run of the fire to
+pass on a tree whose `data/` is identical to the one that failed twice, which is
+the measurement rather than the assumption.
 
 **The proposed patch, which belongs to lane A and not here**: raise the
 `waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
@@ -13567,7 +13585,10 @@ runner, it took 606 s and 536 s on the two attempts, and the bounds in
 each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
 `docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
 the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again.
+failure is real, so this is reported and not re-run again. **Run 2233, on the
+commit that carries this deviation, is green** — the fourth run of the fire to
+pass on a tree whose `data/` is identical to the one that failed twice, which is
+the measurement rather than the assumption.
 
 **The proposed patch, which belongs to lane A and not here**: raise the
 `waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
@@ -13869,7 +13890,10 @@ runner, it took 606 s and 536 s on the two attempts, and the bounds in
 each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
 `docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
 the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again.
+failure is real, so this is reported and not re-run again. **Run 2233, on the
+commit that carries this deviation, is green** — the fourth run of the fire to
+pass on a tree whose `data/` is identical to the one that failed twice, which is
+the measurement rather than the assumption.
 
 **The proposed patch, which belongs to lane A and not here**: raise the
 `waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
@@ -14245,7 +14269,10 @@ runner, it took 606 s and 536 s on the two attempts, and the bounds in
 each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
 `docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
 the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again.
+failure is real, so this is reported and not re-run again. **Run 2233, on the
+commit that carries this deviation, is green** — the fourth run of the fire to
+pass on a tree whose `data/` is identical to the one that failed twice, which is
+the measurement rather than the assumption.
 
 **The proposed patch, which belongs to lane A and not here**: raise the
 `waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
@@ -14559,7 +14586,10 @@ runner, it took 606 s and 536 s on the two attempts, and the bounds in
 each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
 `docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
 the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again.
+failure is real, so this is reported and not re-run again. **Run 2233, on the
+commit that carries this deviation, is green** — the fourth run of the fire to
+pass on a tree whose `data/` is identical to the one that failed twice, which is
+the measurement rather than the assumption.
 
 **The proposed patch, which belongs to lane A and not here**: raise the
 `waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
@@ -14846,7 +14876,10 @@ runner, it took 606 s and 536 s on the two attempts, and the bounds in
 each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
 `docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
 the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again.
+failure is real, so this is reported and not re-run again. **Run 2233, on the
+commit that carries this deviation, is green** — the fourth run of the fire to
+pass on a tree whose `data/` is identical to the one that failed twice, which is
+the measurement rather than the assumption.
 
 **The proposed patch, which belongs to lane A and not here**: raise the
 `waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
@@ -15387,7 +15420,10 @@ runner, it took 606 s and 536 s on the two attempts, and the bounds in
 each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
 `docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
 the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again.
+failure is real, so this is reported and not re-run again. **Run 2233, on the
+commit that carries this deviation, is green** — the fourth run of the fire to
+pass on a tree whose `data/` is identical to the one that failed twice, which is
+the measurement rather than the assumption.
 
 **The proposed patch, which belongs to lane A and not here**: raise the
 `waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
@@ -15731,7 +15767,10 @@ runner, it took 606 s and 536 s on the two attempts, and the bounds in
 each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
 `docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
 the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again.
+failure is real, so this is reported and not re-run again. **Run 2233, on the
+commit that carries this deviation, is green** — the fourth run of the fire to
+pass on a tree whose `data/` is identical to the one that failed twice, which is
+the measurement rather than the assumption.
 
 **The proposed patch, which belongs to lane A and not here**: raise the
 `waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
@@ -16389,7 +16428,10 @@ runner, it took 606 s and 536 s on the two attempts, and the bounds in
 each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
 `docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
 the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again.
+failure is real, so this is reported and not re-run again. **Run 2233, on the
+commit that carries this deviation, is green** — the fourth run of the fire to
+pass on a tree whose `data/` is identical to the one that failed twice, which is
+the measurement rather than the assumption.
 
 **The proposed patch, which belongs to lane A and not here**: raise the
 `waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
@@ -16790,7 +16832,11 @@ at a time), measured at this head. **The check is green on every commit of this
 fire that carries a record, an index or a page** — run 2227 on `23fcdb4b`, the
 head that carried all of them, and run 2231 on `129d8fd6` — and **red, twice, on
 `1ee9028e`, which changes one paragraph of this file and nothing else** (run
-2232, both attempts). Deviation 1383 reads both failures. Runs 2219, 2220, 2221,
+2232, both attempts) — **and green again on `e1da2b90`, run 2233**, the commit
+that wrote deviation 1383. Three green runs against two red attempts on one
+intervening docs commit is the whole of the evidence, and deviation 1383 reads
+both failures. (This line's own commit is pushed without waiting for its run, as
+the last stand's was.) Runs 2219, 2220, 2221,
 2224, 2225, 2226, 2229 and 2230 were cancelled by a newer push, which the
 workflow's own `cancel-in-progress` does; the merge-commit failure deviation
 1377 describes did not recur.*
@@ -16823,7 +16869,10 @@ runner, it took 606 s and 536 s on the two attempts, and the bounds in
 each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
 `docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
 the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again.
+failure is real, so this is reported and not re-run again. **Run 2233, on the
+commit that carries this deviation, is green** — the fourth run of the fire to
+pass on a tree whose `data/` is identical to the one that failed twice, which is
+the measurement rather than the assumption.
 
 **The proposed patch, which belongs to lane A and not here**: raise the
 `waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
