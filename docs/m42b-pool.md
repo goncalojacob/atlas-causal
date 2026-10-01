@@ -15462,7 +15462,7 @@ it.** Measured on the records as they stand, 229 of 1,373 active events are
 umbrellas and every one of them predates most of its vein, so this is a trap any
 batch that writes to an umbrella will meet.
 
-### Deviation 1372 — the independence wars are a set of small islands, and the held records in them carry no edges
+### Deviation 1372 — the independence wars are a set of small islands, and the filing by campaign is what hides it
 
 The batch's three events sit in two components: `battle-of-maipu`,
 `battle-of-cancha-rayada-1818` and `battle-of-chacabuco` are in one of **six** —
