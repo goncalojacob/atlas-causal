@@ -3,10 +3,16 @@
   "kind": "event",
   "records": {
     "12-3-incident": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-10-01"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
           "on": "2026-10-01"
         }
       ]
@@ -8668,7 +8674,7 @@
       ]
     },
     "camp-david-accords": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -10563,7 +10569,7 @@
       ]
     },
     "egypt-israel-peace-treaty": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

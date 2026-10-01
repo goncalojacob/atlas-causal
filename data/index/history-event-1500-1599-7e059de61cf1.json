@@ -665,6 +665,15 @@
         }
       ]
     },
+    "capture-of-malacca-1511": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "capture-of-penon-of-algiers-1529": {
       "from": "git",
       "versions": [
@@ -914,6 +923,15 @@
         }
       ]
     },
+    "malay-portuguese-conflicts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "massacre-in-the-great-temple-of-tenochtitlan": {
       "from": "git",
       "versions": [
@@ -1118,6 +1136,15 @@
             "review"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "siege-of-malacca-1551": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

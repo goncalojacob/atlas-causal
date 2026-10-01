@@ -3758,6 +3758,42 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-malacca-1511--siege-of-malacca-1551--precondition-of",
+      "kind": "edge",
+      "locator": "\"Capture of Malacca (1511)\", revision 1373484620"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-malacca-1511--siege-of-malacca-1551--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Malacca (1551)\", revision 1375742313"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-malacca-1511--siege-of-malacca-1606--precondition-of",
+      "kind": "edge",
+      "locator": "\"Capture of Malacca (1511)\", revision 1373484620"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-malacca-1511--siege-of-malacca-1606--precondition-of",
+      "kind": "edge",
+      "locator": "\"Malay–Portuguese conflicts\", revision 1370627478"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-malacca-1511--siege-of-malacca-1640-1641--precondition-of",
+      "kind": "edge",
+      "locator": "\"Malay–Portuguese conflicts\", revision 1370627478"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-malacca-1511--siege-of-malacca-1640-1641--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Malacca (1640–1641)\", revision 1370743206"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-penon-of-algiers-1529--battle-of-algiers-1541--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Algiers (1541)\", revision 1375834500"
@@ -8690,6 +8726,18 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-tordesillas-1494--capture-of-malacca-1511--precondition-of",
+      "kind": "edge",
+      "locator": "\"Capture of Malacca (1511)\", revision 1373484620"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-tordesillas-1494--capture-of-malacca-1511--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Tordesillas\", revision 1374273992"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-tordesillas-1494--first-treaty-of-san-ildefonso--precondition-of",
       "kind": "edge",
       "locator": "\"First Treaty of San Ildefonso\", revision 1372949821, § Background"
@@ -12968,6 +13016,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-malacca-1511",
+      "kind": "event",
+      "locator": "\"Capture of Malacca (1511)\", revision 1373484620"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-penon-of-algiers-1529",
       "kind": "event",
       "locator": "\"Capture of Peñón of Algiers (1529)\", revision 1370609401"
@@ -14690,6 +14744,12 @@
     },
     {
       "dissent": false,
+      "id": "malay-portuguese-conflicts",
+      "kind": "event",
+      "locator": "\"Malay–Portuguese conflicts\", revision 1370627478"
+    },
+    {
+      "dissent": false,
       "id": "malayan-emergency",
       "kind": "event",
       "locator": "\"Malayan Emergency\", revision 1373880340"
@@ -16139,6 +16199,12 @@
       "id": "siege-of-mafeking",
       "kind": "event",
       "locator": "\"Siege of Mafeking\", revision 1370743154"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-malacca-1551",
+      "kind": "event",
+      "locator": "\"Siege of Malacca (1551)\", revision 1375742313"
     },
     {
       "dissent": false,

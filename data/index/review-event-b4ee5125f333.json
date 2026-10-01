@@ -19649,6 +19649,38 @@
         "wikipedia-en"
       ],
       "created": "2026-10-01",
+      "degree": 4,
+      "id": "capture-of-malacca-1511",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "malay-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Malacca (1511)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
       "degree": 1,
       "id": "capture-of-penon-of-algiers-1529",
       "kind": "event",
@@ -30375,6 +30407,35 @@
         "wikipedia-en"
       ],
       "created": "2026-10-01",
+      "id": "malay-portuguese-conflicts",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Malay–Portuguese conflicts"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
       "degree": 1,
       "id": "malayan-emergency",
       "kind": "event",
@@ -39172,8 +39233,41 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "siege-of-malacca-1551",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "malay-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Malacca (1551)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
-      "degree": 2,
+      "degree": 3,
       "id": "siege-of-malacca-1606",
       "kind": "event",
       "origin": {
@@ -39206,7 +39300,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-29",
-      "degree": 2,
+      "degree": 3,
       "id": "siege-of-malacca-1640-1641",
       "kind": "event",
       "origin": {
@@ -44516,7 +44610,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 5,
+      "degree": 6,
       "id": "treaty-of-tordesillas-1494",
       "kind": "event",
       "names": [
@@ -48211,6 +48305,12 @@
     },
     {
       "id": "los-andes-vs-prueba",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "malay-portuguese-conflicts",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

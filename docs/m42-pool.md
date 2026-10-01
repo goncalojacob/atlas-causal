@@ -20628,3 +20628,378 @@ that can write does not pay for them.*
   `decolonisation-of-africa`, `decolonisation-of-asia` and `indochina-wars` are
   read to the end; do not re-screen them.
 - **Deviation numbers: take the next above 1519.**
+
+## Deviation 1520 — the write permission cleared itself, and `curl` is refused where `node`'s `fetch` is not
+
+*1 October, the import fire that claimed at 13:13Z.*
+
+**Two fires lost their hour to deviation 1518 and this fire did not.** The
+one-line edit batch 80 needed — taking `Q3182793` out of `wikidata-state.json`'s
+`runs.import.done` — was attempted as the first thing this fire did, and it went
+through. So did `--import`, the record writes, the filing, the edges, the index
+rebuild and four pushes. Nothing was done differently: the same shell, the same
+command, the same file. **The refusal was the environment's and it was temporary**,
+which is the one reading the last two stands could not make from inside it.
+
+What a fire should take from this: **deviations 1516 and 1518 are not a standing
+condition and must not be read as one.** The instruction those stands left — try
+the import once, in one command, and spend the hour read-only if it is refused —
+is right, and the "try it first" half is what recovered this hour. A fire should
+not plan around the refusal before meeting it.
+
+One thing did change and it is worth a line of its own. **`curl` gets HTTP 429
+from `www.wikidata.org` where `node`'s `fetch` with the same `User-Agent` gets
+200.** Five `curl` attempts with the import's own UA string and growing backoff
+were all refused; the identical query through `fetch` answered on the first
+attempt, and ~20 further calls over the hour met no 429 at all. Deviation 1502
+reads a 429 as a missing User-Agent before a rate limit, and deviation 1518's
+stand added "send the UA and keep the backoff". This adds a third reading: **the
+client matters in this sandbox**, so a fire that needs an API call should make it
+from `node`, which is also where the import's own fetch layer lives.
+
+## Batch 80 — the 12-3 incident, written at last, and the three defects the tests caught in its filing
+
+Batch 80 was screened and argued in full by the fire of 1 October 11:09Z and not
+written, because `data/` could not be modified. **This fire wrote it exactly as
+that section specified**, and everything the screen had settled held against the
+live corpus: the interval, the category, the lane, the filing argument and the
+edge's verdict.
+
+**One thing the screen had wrong, and it is a correction and not a change of
+plan.** The screen said the item's own `P625` is 113.55, 22.2 and that `macau`
+would therefore be reused. `Q3182793` has **no `P625` at all**: that point belongs
+to `Q3916279`, *Portuguese Macau*, which is the item's `P276`, and A9 as A12
+orders it fell through to there. No held record carries `Q3916279` — `macau` holds
+`Q14773` — so the import wrote a new place, `portuguese-macau`, at
+113.546, 22.201 with `precision: region`. **The reuse test is the item and not the
+nearness of a point**, which is the rule working and not a miss: two records a
+hundredth of a degree apart are a city and the colony that governed it, and the
+atlas now holds both.
+
+### What was written
+
+| | |
+| --- | --- |
+| event | `12-3-incident`, 1966-11-18 to 1967-01-28, category `revolution`, lane `asia` (`regionMethod: nearest`) |
+| place | `portuguese-macau` from `Q3916279`, new, `precision: region` |
+| edge | `cultural-revolution --inspired--> 12-3-incident`, `probable`, on the incident article's own lead at revision 1377636747 |
+| filed under | `estado-novo-1933-1974`; main 229 before and after |
+
+### The three defects, all caught by `tests/` and none by the validator
+
+This is the part worth carrying forward, because the validator was clean at
+**0 errors** through all three and a fire that trusted it alone would have pushed
+them.
+
+1. **A single parent is a string on disk, not a one-element list.** A8 says
+   `parent` is a list and `parentsOf` reads all three of its shapes, so
+   `["estado-novo-1933-1974"]` validated and drew correctly. But the contribution
+   form's own `buildRecord` normalises one parent to a string, and
+   `tests/bundle.test.mjs` holds every record in `data/` to a byte-identical save
+   through it. `rwandan-revolution`, `malayan-emergency` and `cambodian-genocide`
+   — the three most recent single filings — are all strings.
+2. **`docs/m62-umbrellas.md` has to say why each filed event is part of its
+   umbrella**, and `tests/m62.test.mjs` fails by name when it does not: *"does not
+   say why '12-3-incident' is part of 'estado-novo-1933-1974'"*. A filing is two
+   writes and not one. The section is written, with the two umbrellas refused and
+   why.
+3. **An em dash is a literal UTF-8 byte in these files, not a `—` escape.**
+   `json.dumps` escapes non-ASCII by default and the byte-identity test catches it.
+   A fire writing a record from a script must ask for `ensure_ascii=False` or its
+   equivalent.
+
+## Batch 81 — the Camp David pair, and the sentence that kept it off an island
+
+The last stand called `Q309204` **"the best lead on this list"**: its lead states
+subject, marker and effect in one sentence, and the effect — the 1979
+Egypt–Israel peace treaty — was a record the atlas did not hold. *"That is one
+import that unlocks a second, which is rarer than it sounds in this vein."* This
+batch is both halves at once.
+
+`Q1129412` was **not in the seeds** `items` list, so one row was added to it; that
+file is the one the import is pointed at and is contributor-editable. `Q309204`
+was one of deviation 1515's 167 — ticked `done` with no record anywhere — so it
+was taken out of `runs.import.done` as `Q3182793` was.
+
+### What was written
+
+| | |
+| --- | --- |
+| `camp-david-accords` | `Q309204`, 1978-09-17 (`P585`, day precision), category `treaty`, no place, lane `americas` |
+| `egypt-israel-peace-treaty` | `Q1129412`, 1979-03-26 (`P585`, day precision), category `treaty`, no place, lane `americas` |
+| filed | both under `arab-israeli-conflict`; **main 229 before and after** |
+
+### The edge that mattered, and why the pair is not an island
+
+A5 lets a batch write edges among its own records *as well as* to what exists, and
+warns that a batch which grows the corpus and not the component has to say why.
+The Accords and the treaty alone would have been a **component of two**: the
+treaty's own article has no sentence that both states a cause and names a held
+event, over all 60 of them, and the Accords' article has three hits of which two
+are refused — one is chronology only (`yom-kippur-war`, A15(5)'s class) and one has
+*the vague language concerning Resolution 242* as its subject.
+
+**The connection came from a held record's own article.** The Yom Kippur War's
+article, at revision 1375181066, § *Egyptian–Israeli Camp David Accords*:
+
+> The Yom Kippur War upset the status quo in the Middle East, and the war served
+> as a direct antecedent of the 1978 Camp David Accords.
+
+The subject is the war, named, not a pronoun. `statesACause()` is **false** on
+"served as a direct antecedent of", which is **not** a refusal — A15(5)'s class is
+one of the four openers *with no cause stated*, and this sentence states the
+relation in the plain English of `precondition-of`. That is batch 80's own
+reasoning about "inspired by", met on a different word.
+
+| edge | type | confidence | witnesses |
+| --- | --- | --- | --- |
+| `yom-kippur-war --> camp-david-accords` | `precondition-of` | `probable` | "Yom Kippur War", rev 1375181066, § Egyptian–Israeli Camp David Accords |
+| `camp-david-accords --> egypt-israel-peace-treaty` | `caused` | `probable` | "Camp David Accords", rev 1374583077, § Partial agreements; and "Yom Kippur War", rev 1375181066, same section |
+
+The second has **two articles** and still only one author, so rule 22 and A2 hold
+it at `probable`. `yom-kippur-war` is in the largest component, so the batch moved
+that number: **768 → 770**, with the component count unchanged at 400.
+
+### One sentence refused, and the refusal is already on the record
+
+> These shifts contributed to the Israeli–Palestinian peace process, leading to
+> the 1978 Camp David Accords, when Israel returned the Sinai Peninsula to Egypt,
+> and the Egypt–Israel peace treaty, the first time an Arab country recognized
+> Israel.
+
+It states a cause and names both new records, and its subject is **"These
+shifts"**, whose referent is the three sentences before it. That is exactly the
+refusal recorded for the Treaty of Shimonoseki's *"these events"*. Both edges it
+would have given were written from other sentences, so nothing was lost.
+
+### Two things a reader should weigh, neither of them a defect
+
+- **Both records are placeless.** `Q309202` (Camp David) and `Q35525` (the White
+  House) are refused because none of their classes is a place class in
+  `wikidata-seeds.json`, and **A15(6) refused the treaty's `P17` outright because
+  the item names two countries** — Egypt and Israel — which is the gate doing
+  precisely what it was written for. They join the 60 placeless events. Adding
+  "official residence" and "presidential retreat" as place classes would place
+  them, and would place them *in the United States*, which is why this fire did
+  not: see the next point.
+- **Their lane is `americas`, and their subject is Africa and Asia.** The lane is
+  `regionMethod: override`, written by the import off the `P276` chain, which is
+  what A15(7) prescribes — the lane is derived from the item's own point or its
+  first located `P276`/`P131`, and both treaties were signed in the United States.
+  So `americas` is the rule's answer and this fire did not overrule it. **It is a
+  question for the owner**, because the atlas does have an override on the event
+  "for an event that belongs somewhere other than where it happened", and two
+  treaties between Egypt and Israel are the clearest case for it in the corpus.
+  Consequence to state plainly: **A10's trailing lane gained nothing from this
+  batch.** Africa stands where it stood.
+- **Neither of batch 81's edges crosses an umbrella**, because all three of their
+  endpoints are filed under `arab-israeli-conflict`. The crossing count moved by
+  batch 80's one edge alone.
+
+### Counts after batches 80 and 81
+
+- active events **1,380** (was 1,377); **main 229** — unchanged, which is what A6
+  requires of every filing; filed 1,151. Event records 1,620 (active 1,380,
+  retracted 219, merged 21).
+- per lane, active / main, through `buildTopology` with the region deriver:
+  Europe 555/85, **Africa 215/31** (unchanged), **Asia 217/57** (+1, batch 80),
+  Americas 393/56 (+2, batch 81).
+- active edges **1,187** (was 1,184), all 1,187 between two active events.
+- components **400** (unchanged); **largest connected component 770** (was 768);
+  next 15, 13, 13, 12, 11, 11, 8, 8, 7.
+- **edges crossing an umbrella (A15(11)): 594** (was 593), inside one 593 (was
+  591). Batch 80's one edge crosses; neither of batch 81's does.
+- active events with no edge at all: **307** (unchanged — every event this fire
+  wrote has one).
+- validator **0 errors, 601 warnings**, and `--index` clean.
+- A15(2)'s recache as the last step of each batch: 2,900 `wikipedia-en` citations
+  on active records, 2,822 on disk at the revision cited, **0 that should be on
+  disk and are not.**
+- M72: 1,712 citations on the 1,187 edges, 1,413 with a locator; 685 edges rest on
+  one source; `probable` 1,091, `consensus` 69, `disputed` 27.
+
+## Where the run stands after batches 80 and 81, for the fire that picks it up
+
+*1 October, the import fire that claimed at 13:13Z. **The write permission
+cleared** (deviation 1520) and this fire imported for the first time in three:
+batch 80 as the 11:09Z fire had specified it, and batch 81, which closed the best
+lead on the list.*
+
+**What is open, in the order a fire should weigh it:**
+
+- **Do not plan around deviations 1516 and 1518.** They were temporary and this
+  fire met none of it. Keep the instruction those stands left — try the import
+  first, in one command — but read a refusal as this hour's and not as the
+  branch's condition.
+- **A filing is four writes and the validator sees one of them.** This fire got
+  three of the four wrong on batch 80 and the fourth wrong on batch 81, with the
+  validator at **0 errors** throughout, so this is the list to work from:
+  1. a single `parent` is a **string** on disk, not a one-element list — A8 makes
+     it a list and `parentsOf` reads all three shapes, but the form's own
+     `buildRecord` normalises one parent to a string and `tests/bundle.test.mjs`
+     holds every record to a byte-identical save through it;
+  2. **`docs/m62-umbrellas.md`** must say why the record is part of its umbrella
+     (`tests/m62.test.mjs` fails by name);
+  3. **`docs/m67-umbrellas.md`** must argue it *as well*, whenever the record
+     names **neither an actor nor a place** — which every import-created record
+     does until a reviewer adds actors (`tests/m67.test.mjs`, likewise by name);
+  4. a record written from a script must emit **literal UTF-8**, not `\uXXXX`
+     (`json.dumps` needs `ensure_ascii=False`).
+
+  Run `node --test tests/bundle.test.mjs tests/m62.test.mjs tests/m67.test.mjs`
+  after any filing: half a minute, and it is the only check that sees any of this.
+- **Deviation 798's order is not a formality: rebuild the index *after* the
+  records commit, never with it.** `tools/lib/history.mjs` builds the history
+  shards out of the commits that touched each record's file, so an index built
+  before the records are committed names a state that no longer exists the moment
+  they are. `validate --index` was clean at the moment it ran and three suites
+  then failed on rule 16 for history shards alone. Batches 77 to 79 have the
+  shape right: one `data:` commit, then `cache:`, then `index: rebuild`.
+- **The 50 are the vein and 16 are now screened**, two of them written. Thirty-four
+  are unscreened and deviation 1515's table lists every one with its article, so no
+  fetching is needed to pick the next. The screen that kills them is always the
+  edge.
+- **`Q1129412` is a precedent worth reusing: an item outside the seeds may be added
+  to them.** Batch 81 needed a record the seeds had never asked for, and one row in
+  `wikidata-seeds.json` → `items` was the whole of it. Where a screened item's one
+  causal sentence names an **effect the atlas does not hold**, the question is
+  whether that effect is itself importable — which is the refusal recorded for
+  `Q233254` (the 1905 Japan–Korea treaty, effect "the complete withdrawal of
+  Chinese forces in Korea") and `Q541195` (the Anglo-Japanese Alliance, effect
+  "Japan's entry into World War I"). Neither of those two effects is an event with
+  an item of its own, so neither is unlocked this way; but the pattern is now one a
+  fire should test before refusing.
+- **A held record's own article is a source a batch may use, and it is underused.**
+  Batch 81's connecting edge came not from either imported article but from
+  `yom-kippur-war`'s, which names the new record as what the war led to. A13's
+  relations pass does this over the whole corpus on a curation fire; a batch can do
+  it for its own two or three records in one read, and it is the difference between
+  an island and the trunk.
+- **Two questions this fire raised and did not settle, both the owner's.** (a)
+  `camp-david-accords` and `egypt-israel-peace-treaty` sit in the **`americas`
+  lane** because A15(7) derives the lane from the signing place and both were
+  signed in the United States; their subject is Egypt and Israel. The event-level
+  region override exists for exactly this and this fire did not use it. (b) Adding
+  "official residence" and "presidential retreat" as **place classes** would place
+  those two records, and would place them in Washington; the class rows are data
+  and the decision is not a fire's.
+- **Deviation 1517 and deviation 1512 are still the owner's, and still together**,
+  with the same two cases waiting: "resulted from" as a causal marker, with the
+  Japan–Korea Treaty of 1905 behind it, and whether a run may date a record from
+  its article's title, with the Addis Ababa Agreement of 1972 behind that.
+- **Three identity fills are still waiting for a curation fire, not a batch.**
+  `east-timor-invasion-1975` is `Q2583734`, `spanish-american-war-1898` is
+  `Q12583`, `cuban-war-of-independence-1895-1898` is `Q1514908`. The East Timor
+  record needs A7 in the same pass: it is dated 1975 alone where its item runs
+  1975-12-07 to 1979-03-26.
+- **`Q8683`, the Cold War, is in the 50 and is still not a fire's to write.** Five
+  stands now record that it is an umbrella much of this corpus would fit, that no
+  record offers it, and that the decision is the owner's.
+- **The class-row vein is closed** (deviation 1519). Do not add rows for
+  `cultural heritage`, `airline`, `airport`, `dam` or `bridge`.
+- **Unchanged and still the owner's:** A6's lane rule against the period umbrellas
+  and the four filings it refuses; may a run identify an event named by description
+  where only one held record can be meant; deviation 1474's items whose class is not
+  a place of this atlas; the placeless events, now 62; deviations 1423, 1461, 1473,
+  1478, 1482, 1506, 1508 and 1511; A11's area clause; A15(12)'s uncategorised
+  events; the EEC's closing year; `origin/m42b`'s place placeholder summaries; and
+  C8, whose clearest single line is still `gulf-of-tonkin-incident`.
+- **Umbrella sweeps not yet asked**, if the 50 are ever exhausted: `arab-spring`,
+  `afghan-conflict`, `interwar-period`, `third-portuguese-republic-since-1974`, and
+  M42b's three American umbrellas. `scramble-for-africa`,
+  `decolonisation-of-africa`, `decolonisation-of-asia` and `indochina-wars` are read
+  to the end; do not re-screen them.
+- **The two lanes still draw deviation numbers from one line.** This fire took
+  **1520**; `m42b` was at 1377 on 1 October. A fire takes the next above what this
+  file says.
+- **The branch's check is red on one browser test and a fire must not clear it by
+  changing the test.** Deviation 1521 is the whole measurement: the map's camera
+  frames a lens without the parent the lens is keeping, found because
+  `12-3-incident` now sorts first in `tests/m65-browser.test.mjs`'s corpus-order
+  choice and its parent is in Lisbon. The record, the index, the filter and
+  `camera.js`'s arithmetic are all measured sound; the page's `frameCamera` is not.
+  The fix is a display change in `src/map/map.js`, which this run may not make, and
+  a test narrowed on this branch would be dropped by the landing merge anyway. **A
+  fire should not re-diagnose it and should not paper over it.**
+- **Deviation numbers: take the next above 1521.**
+
+## Deviation 1521 — the map's camera frames a lens without the parent it is keeping, and batch 80's filing is what found it
+
+*1 October, the import fire that claimed at 13:13Z. **The branch's check is red on
+one browser test and this fire did not clear it, because clearing it is a display
+change and this run may not make one.** What follows is the measurement, so that
+whoever may change it does not have to find this again.*
+
+**The failing test** is `tests/m65-browser.test.mjs` → *"choosing an event narrows
+all three views to it, its parts, its parent and one hop"*, and the assertion is
+`map left out estado-novo-1933-1974`. On CI it is the **only** failure in the
+whole suite (run 2260: pure 1,940 of 1,940, browser 312 of 313).
+
+**Why batch 80 found it.** The test chooses its subject from the corpus — *"a
+child of the hierarchy M62 wrote, with a link and a place … whichever one the
+corpus carries today"* — and takes the **first** active event that is not main,
+has a place and has an edge. `12-3-incident` sorts first in the whole corpus, so
+it is now that subject, and **its parent is on the other side of the world**:
+the incident is in Macau (113.5 E) and `estado-novo-1933-1974` is in Lisbon
+(9.2 W). `goa-annexed-1961` has had the same shape for weeks; it simply never
+sorted first. **Nothing about the filing is wrong** — this is A6's own filing, the
+regime containing its colonial incident — and the test's choice rule is what
+walked into it.
+
+**What is actually broken, measured three ways.** Not the record, not the index,
+not the filter, and not `camera.js`'s arithmetic.
+
+1. **The filter keeps the parent.** `workingSet(atlas, { selected: '12-3-incident' })`
+   over the atlas built *from the index the page fetches* gives
+   `shown = { 12-3-incident, cultural-revolution, estado-novo-1933-1974 }`, size 3,
+   with `lensFocus = { 12-3-incident }`. That is M65 and `parentsOf` doing exactly
+   what `src/lens.js` describes.
+2. **The index carries the point.** `core.places` holds
+   `portugal-q45 → [-9.18333, 38.7, "country"]`, active, and the event's `place`
+   column resolves to it.
+3. **The camera's arithmetic frames all three.** `frameOn(markNodes(atlas, union,
+   projection), wantedSets(working), box, { min: 1, max: 4, pad: 12 })`, run in
+   node over the real atlas, returns **k ≈ 2.68** for a 900×600 box and **k ≈ 2.07**
+   for 700×500 — in both cases the widest set, with every one of the three marks
+   inside the frame. `markNodes` produces all three nodes:
+   `12-3-incident@382.8,180.8`, `cultural-revolution@355.9,144.4`,
+   `estado-novo-1933-1974@55.5,136.8`.
+
+**And the page does something else.** In a real browser at 1280×900 the map draws
+**two** marks, `cultural-revolution` and `12-3-incident`; there is no element for
+the parent at all; and the transform is
+`translate(-1140.369397870371 -622.6702314814814) scale(4)` — `FIT_ZOOM`, the
+ceiling. Solving `x = (box.x0 + box.x1) / 2 − centre.x · k` for the box's centre
+gives **337 with `centre.x = 369.33`, which is the centre of the two Asian marks
+alone**; the same arithmetic with the centre of all three (219.15) gives −264, and
+a box cannot have a negative centre. So the page framed on **a set that is neither
+`shown` (three) nor `lensFocus` (one)**: the focus and its one-hop ring, *without*
+the parent.
+
+**The control that proves the rest of the stack is sound.** Open the same URL with
+`&bbox=-180,-85,180,85`, which makes `frameCamera` return early on `s.bbox` and
+leaves the camera at `translate(0 0) scale(1)`. The map then draws
+**`estado-novo-1933-1974`, `cultural-revolution`, `12-3-incident`** — all three.
+The filter, the index, the place and the mark are all fine; only the frame is
+wrong.
+
+**The reading to hand on.** `frameCamera` runs once per key and the key is
+`foci | holding | layers | box` (`src/map/map.js`). It carries **no count of
+attribute-shard arrivals**, which is the very thing `src/render-key.js` exists to
+carry — *"since a century landing changes what is drawn and the state cannot see
+it"*. A camera that frames before the lens's membership has settled, and then
+never re-frames because its key has not moved, matches every number above. That
+is a hypothesis about the cause; everything before it is measured.
+
+**Why this fire left it.** The brief's "what this run must not do" is explicit —
+**no display change** — and this is one, in `src/map/map.js` or in the key beside
+it. A fire could instead have narrowed the test's choice rule to a child whose
+parent shares its lane, and that would be worse twice over: it would hide a defect
+that affects **every lens whose ring is geographically wide**, not one record, and
+the landing merge keeps `origin/m0`'s side of any test file, so the change would be
+dropped and the failure would surface on `m0` anyway. **It belongs on `m0`, in
+front of a test, and it is not a lane fire's.**
+
+**What a reader loses meanwhile.** Exactly what the test's own comment says the
+assertion is for: *"a reader who walked down into a regime can see the regime."*
+Choose the 12-3 incident today and the Estado Novo is off the screen.
