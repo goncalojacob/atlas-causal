@@ -19627,3 +19627,122 @@ A11(b)'s partition check, made before anything was written and against
 **1,614** event records, among them `rwandan-civil-war` and
 `treaty-of-addis-ababa`, and **no `rwandan-revolution` and no record carrying
 `Q4162685`**.
+
+## Batch 78 — the Malayan Emergency, from the Asia umbrella's own links
+
+*1 October, the same import fire. **Asia, because batch 77 put Africa one
+ahead**: Africa 215, Asia 214, and A10's order of need is the lane that trails.*
+
+### The sweep: `decolonisation-of-asia`'s own links
+
+The third umbrella to be asked. `action=parse&prop=links` on
+`"Decolonisation of Asia"` at revision 1375271318, the revision the record cites:
+
+| | |
+| --- | --- |
+| mainspace links that exist | **747** |
+| not held by article title | **721** |
+| event-shaped by name | **93** |
+| read whole for a causal sentence naming a held event | **24** |
+| sentences that survived `statesACause` and `namesHeldEvents` | **16** |
+| imported | **1** |
+
+**The span is not the screen here and that is the difference from Africa.**
+`decolonisation-of-asia` runs 1898–2002, so almost everything the article links
+is inside it and nothing is refused on the dates. What refuses a candidate in
+this lane is the edge, every time.
+
+Of the 24 read: **one imported**; **two already held under another title**, which
+the by-title screen missed and the causal scan caught, because each article's own
+first sentence named the atlas's own record — `Geneva Conference (1954)` is
+`geneva-conference` (`Q482407`, en `1954 Geneva Conference`) and
+`San Francisco Peace Treaty` is `treaty-of-san-francisco`; **and twenty-one left**,
+their articles read whole with no sentence that argues an edge to the candidate.
+
+Three of the twenty-one are worth naming because their sentences look like edges
+and are not:
+
+- **`Aden Emergency`** states two causes and neither is toward itself: the
+  Armistice of Mudros *"led to the establishment of the Kingdom of Yemen"*, and
+  the 1962 coup *"resulted in the establishment of the Yemen Arab Republic"* —
+  with `1952-egyptian-revolution` named only as the thing Nasser had led.
+- **`1955 State of Vietnam referendum`** (`Q1257296`, 12 sitelinks) has one
+  sentence — *"Vietnam had been partitioned as a result of the 1954 Geneva
+  Accords that ended the First Indochina War"* — and it is **A15(5)'s
+  reattribution class**: the cause it names is the Geneva Accords, the event the
+  atlas holds in it is `first-indochina-war`, and an edge from the conference
+  would be written on a name the sentence does not use. Not written.
+- **`Indian independence movement`** names `world-war-ii` twice, both times as
+  what the Quit India Movement was *against*. The candidate is a 90-year subject
+  rather than an event, and an umbrella the article could support is A6's
+  question and not an import's.
+
+**The Dien Bien Phu edge the scan found is already here.** § Indochina of the
+Geneva Conference's article states *"hostilities culminated in a decisive French
+defeat at the Battle of Dien Bien Phu, resulting in the convening of the Geneva
+Conference"*, and `battle-of-dien-bien-phu--geneva-conference--caused` has been
+in `data/edges/` since before this fire. A5's "write edges to what exists" found
+nothing new between two held events in these 24 articles.
+
+### The record, the place, and the edge
+
+| record | item | revision cited | filed under | place | lane |
+| --- | --- | --- | --- | --- | --- |
+| `malayan-emergency` | `Q2354629` | 1373880340 | `decolonisation-of-asia` | `malay-peninsula` (new) | asia |
+
+35 sitelinks, 16 June 1948 to 12 July 1960, `category: war` from `P31` `Q80895`
+and `Q198` through the class table. **A9 wrote a place**, `malay-peninsula`, from
+`P276` `Q18758`'s own point at `precision: region` and `summary: null`, which is
+A15(3)'s rule; the lane is derived from that point and is `inside`, not nearest,
+so A15(7) has nothing to correct. The filing is argued in
+`docs/m62-umbrellas.md` on three readings that agree.
+
+`world-war-ii --precondition-of--> malayan-emergency`, `probable`, argued in
+`docs/m42-connections.md`. `verdictFor()` ran on all three candidate quotes
+before the edge was written: all three `write`, none chronology-only, none naming
+a third held event. **It crosses an umbrella.**
+
+**`world-war-ii` carries `m62-umbrella` and not `m42-umbrella`**, so deviation
+1500's rule — no active edge may touch an umbrella — does not reach it, and 27
+edges already run from it. The two flags are not the same flag and a fire that
+reads them as one will refuse an edge it is allowed to write.
+
+### Deviation 1513 — the atlas holds no Cold War, and a `P361` found it
+
+`Q2354629`'s `P361` names `Q8683`, the Cold War, as well as `Q230533`,
+decolonization. **Nothing on this branch carries `Q8683` and there is no
+`cold-war` record**, although A15(13) names one among the six summaries whose
+Portugal paragraph it cut — so either that record is M42b's and has not landed,
+or the amendment named a record that was already gone. Either way an item's own
+`P361` pointed at a hole in the corpus, which is the first time a filing has done
+that, and it is worth a line because **a `P361` naming nothing held is evidence
+about the atlas and not about the item**. A8's "every umbrella that fits" wrote
+one parent here where the item offered two.
+
+### Counts
+
+Before → after, measured across both batches of this fire where a row says so:
+
+- **active events 1,375 → 1,376**; **main 229 → 229, unmoved**; filed 1,146 →
+  1,147. The record arrived filed (A6).
+- **per lane, active / main**: Europe 555/85 unchanged, Americas 391/56
+  unchanged, Africa 215/31 unchanged, **Asia 214/57 → 215/57**. Africa and Asia
+  are level again at 215, against A15(1)'s target of 303 and Europe's 555.
+- **active edges 1,182 → 1,183. Largest connected component 766 → 767.**
+  Components 400 → 400.
+- **Edges crossing an umbrella (A15(11)): 592 → 593**, inside one 590 unchanged.
+- Active events with no edge at all: **307, unchanged** across both batches: each
+  imported record arrived with its edge.
+- **Candidates left unconnected (A15(1)): 21** from this sweep, beside batch 77's
+  23 and the Scramble's 13.
+- Validator **0 errors, 601 warnings** — unchanged again. Place records carry no
+  summary and no lane of their own, so neither batch added a warning.
+
+A11(b)'s partition check, made before the import and against `origin/m42b`'s own
+`data/events/`: no `malayan-emergency` and no record carrying `Q2354629`.
+
+A15(2)'s recache, the last step of the batch and over the batch's own citations:
+**2,890 `wikipedia-en` citations on active records, 2,814 on disk at the revision
+cited, 0 that should be on disk and are not.** The 76 the cache cannot hold
+beside a more-cited revision of the same item are A15(2)'s own accepted state and
+unchanged by either batch.

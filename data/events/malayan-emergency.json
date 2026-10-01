@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "malayan-emergency",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2354629",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Malayan Emergency",
+    "pt": "Emergência Malaia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2354629"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Malayan Emergency\", revision 1373880340"
+    }
+  ],
+  "title": "Malayan Emergency",
+  "summary": "The English Wikipedia article \"Malayan Emergency\", at revision 1373880340, opens: \"The Malayan Emergency, also known as the Anti–British National Liberation War, (1948–1960) was a guerrilla war fought in Malaya between communist pro-independence fighters of the Malayan National Liberation Army (MNLA) and the military forces of the Federation of Malaya and the Commonwealth. The MNLA fought to win Malayan independence from the British Empire and to establish a communist state, while the Malayan Federation and Commonwealth forces fought to protect British economic and colonial interests and combat communism. The term \"Emergency\" was used by the British to characterise the conflict in order to avoid referring to it as a war, because London-based insurers would not pay out in instances of civil wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2354629, imported by tools/import/wikidata.mjs. The item's own description reads \"1948–1960 conflict in British Malaya\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1948,
+    "end": 1960,
+    "date": "1948-06-16",
+    "endDate": "1960-07-12"
+  },
+  "place": "malay-peninsula",
+  "region": null,
+  "regionNote": null,
+  "parent": "decolonisation-of-asia",
+  "category": "war",
+  "actors": []
+}

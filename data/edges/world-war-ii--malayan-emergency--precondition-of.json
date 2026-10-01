@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--malayan-emergency--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Malayan Emergency\", revision 1373880340"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Malayan Emergency\", revision 1373880340, § Socioeconomic issues (1941–1948)"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "malayan-emergency",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Emergency's own article states twice what the war left behind for it to be fought with. Its lead, on who the insurgents were: \"Many MNLA fighters were veterans of the Malayan Peoples' Anti-Japanese Army (MPAJA), a communist guerrilla army previously trained, armed and funded by the British to fight against Japan during World War II.\" And § Socioeconomic issues (1941–1948), on why they had a following: \"The economic disruption of World War II (WWII) on British Malaya led to widespread unemployment, low wages, and high levels of food price inflation. The weak economy was a factor in the growth of trade union movements and caused a rise in communist party membership, with considerable labour unrest and a large number of strikes occurring between 1946 and 1948.\" The type is `precondition-of` and not `caused` because the article attributes the outbreak to the killing of trade unionists in June 1948 and not to the war: what the war supplied was the army and the grievance, which is what a precondition is. `probable` and not `consensus` under rule 22 and A2 — the witness is a Wikipedia record.",
+  "dispute": null
+}

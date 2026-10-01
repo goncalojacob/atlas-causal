@@ -511,3 +511,21 @@ Nothing propagates one step down: the record is new and has no children.
 
 **Main is 229 before and 229 after.** The imported record arrives filed, which
 is what A6 asks of an import.
+
+## Batch 78 — the Malayan Emergency, filed on three readings that agree
+
+*1 October, the same import fire.*
+
+| record | parent | why that umbrella |
+| --- | --- | --- |
+| `malayan-emergency` | `decolonisation-of-asia` | Three things say it and none contradicts the others. The **item's own `P361`** names `Q230533`, decolonization, of which this atlas's Asian record is the umbrella. The **record's own lead** says what the war was for: *"The MNLA fought to win Malayan independence from the British Empire and to establish a communist state"* (`"Malayan Emergency"`, revision 1373880340). And the **umbrella's own cited article** names the Emergency in the note to its decolonisation table — *"The Malayan Communist Party fought in the Malayan Emergency between June 1948 – 12 July 1960"* (`"Decolonisation of Asia"`, revision 1375271318, § Notes) — against the row `Malaya (1957)`. Span 16 June 1948 to 12 July 1960, inside the umbrella's 1898–2002; lane `asia` for both, derived from the place's own point. |
+
+The item's other `P361` is `Q8683`, the Cold War, and **this atlas holds no Cold
+War record at all** — A15(13) names one and nothing on this branch carries
+`Q8683`. So A8's "every umbrella that fits" writes one parent here and not two,
+and whether the Cold War should be a record of this atlas is a question for
+whoever reads that gap rather than a filing this fire could make.
+
+Nothing propagates one step down: the record is new and has no children.
+
+**Main is 229 before and 229 after.**

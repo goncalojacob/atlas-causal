@@ -5906,3 +5906,22 @@ straight into the largest connected component, 765 → 766.
 
 `probable`: Wikipedia is the only witness, and A2 leaves `consensus` open only
 through a work Wikipedia itself cites.
+
+## Batch 78 — one edge, and what a war leaves behind
+
+| from | type | to | confidence | the sentence that argues it |
+| --- | --- | --- | --- | --- |
+| `world-war-ii` | precondition-of | `malayan-emergency` | probable | *"Many MNLA fighters were veterans of the Malayan Peoples' Anti-Japanese Army (MPAJA), a communist guerrilla army previously trained, armed and funded by the British to fight against Japan during World War II"* and *"The economic disruption of World War II (WWII) on British Malaya led to widespread unemployment, low wages, and high levels of food price inflation. The weak economy was a factor in the growth of trade union movements and caused a rise in communist party membership."* — "Malayan Emergency", revision 1373880340, lead and § Socioeconomic issues (1941–1948) |
+
+**`precondition-of` because the article attributes the outbreak to something
+else.** Its own account of June 1948 is the killing of trade unionists and the
+retaliatory attacks that followed, not the war. What the war supplied is the
+army — raised, trained and armed by the British against Japan — and the
+grievance that gave it a following. That is a precondition and `caused` would
+overstate it.
+
+**It crosses an umbrella** (A15(11)): the Emergency is filed under
+`decolonisation-of-asia` and the Second World War is a main event, so the pair
+shares no parent.
+
+`probable`: Wikipedia is the only witness.
