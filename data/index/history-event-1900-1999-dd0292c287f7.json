@@ -13548,6 +13548,15 @@
         }
       ]
     },
+    "japanese-invasion-of-french-indochina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "japanese-invasion-of-sakhalin": {
       "from": "git",
       "versions": [

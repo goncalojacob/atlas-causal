@@ -5462,6 +5462,12 @@
     },
     {
       "dissent": false,
+      "id": "japanese-invasion-of-french-indochina--first-indochina-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Japanese invasion of French Indochina\", revision 1370624872, § Aftermath"
+    },
+    {
+      "dissent": false,
       "id": "japanese-invasion-of-sakhalin--treaty-of-portsmouth--enabled",
       "kind": "edge",
       "locator": "\"Japanese invasion of Sakhalin\", revision 1371432298, § Background"
@@ -14291,6 +14297,12 @@
       "id": "japanese-instrument-of-surrender",
       "kind": "event",
       "locator": "\"Japanese Instrument of Surrender\", revision 1371613000"
+    },
+    {
+      "dissent": false,
+      "id": "japanese-invasion-of-french-indochina",
+      "kind": "event",
+      "locator": "\"Japanese invasion of French Indochina\", revision 1370624872"
     },
     {
       "dissent": false,

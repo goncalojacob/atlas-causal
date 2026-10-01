@@ -3843,6 +3843,15 @@
         }
       ]
     },
+    "japanese-invasion-of-french-indochina--first-indochina-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "japanese-invasion-of-sakhalin--treaty-of-portsmouth--enabled": {
       "from": "git",
       "versions": [
