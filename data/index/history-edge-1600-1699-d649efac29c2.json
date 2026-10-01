@@ -60,7 +60,7 @@
       ]
     },
     "battle-of-kavanga--battle-of-kombi--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -239,7 +239,7 @@
       ]
     },
     "capture-of-luanda--battle-of-kavanga--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -248,7 +248,7 @@
       ]
     },
     "capture-of-luanda--battle-of-kombi--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -257,7 +257,7 @@
       ]
     },
     "capture-of-luanda--recapture-of-angola--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -290,7 +290,7 @@
       ]
     },
     "dutch-brazil-1630-1654--capture-of-luanda--enabled": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -402,7 +402,7 @@
       ]
     },
     "filips-van-zuylen-s-campaign-against-luanda--capture-of-luanda--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

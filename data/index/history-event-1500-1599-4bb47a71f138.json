@@ -21,7 +21,7 @@
       ]
     },
     "battle-of-abancay": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -204,7 +204,7 @@
       ]
     },
     "battle-of-inaquito": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -213,7 +213,7 @@
       ]
     },
     "battle-of-jaquijahuana": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -255,7 +255,7 @@
       ]
     },
     "battle-of-las-salinas": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -362,6 +362,15 @@
             "review"
           ],
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-10-01"
         }
       ]
     },
@@ -421,6 +430,15 @@
             "review"
           ],
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-10-01"
         }
       ]
     },
@@ -430,6 +448,13 @@
         {
           "first": true,
           "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "parent",
+            "review"
+          ],
+          "on": "2026-10-01"
         }
       ]
     },
@@ -1128,7 +1153,7 @@
       ]
     },
     "spanish-conquest-of-honduras": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

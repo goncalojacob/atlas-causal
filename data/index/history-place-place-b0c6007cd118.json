@@ -12,7 +12,7 @@
       ]
     },
     "abancay-river-ford": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -102,7 +102,7 @@
       ]
     },
     "adyar-river": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -682,7 +682,7 @@
       ]
     },
     "baton-rouge-louisiana": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -884,7 +884,7 @@
       ]
     },
     "bennington-vermont": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1087,7 +1087,7 @@
       ]
     },
     "boston": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1313,7 +1313,7 @@
       ]
     },
     "brooklyn": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1451,7 +1451,7 @@
       ]
     },
     "cachipampa": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1524,7 +1524,7 @@
       ]
     },
     "camden-south-carolina": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2057,7 +2057,7 @@
       ]
     },
     "cowpens-south-carolina": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2151,7 +2151,7 @@
       ]
     },
     "cuddalore": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2234,7 +2234,7 @@
       ]
     },
     "dande-river": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3544,7 +3544,7 @@
       ]
     },
     "greensboro-north-carolina": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4056,7 +4056,7 @@
       ]
     },
     "inaquito": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4328,7 +4328,7 @@
       ]
     },
     "jaquijahuana": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5090,7 +5090,7 @@
       ]
     },
     "las-tres-acequias": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6017,7 +6017,7 @@
       ]
     },
     "mobile-alabama": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6528,7 +6528,7 @@
       ]
     },
     "new-york-state": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6988,6 +6988,31 @@
         }
       ]
     },
+    "pamplona": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "created",
+            "review",
+            "sitelinks",
+            "summary"
+          ],
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "created",
+            "sitelinks"
+          ],
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "panaji": {
       "from": "git",
       "versions": [
@@ -7164,7 +7189,7 @@
       ]
     },
     "pensacola-florida": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7628,7 +7653,7 @@
       ]
     },
     "princeton-battlefield": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -9372,7 +9397,7 @@
       ]
     },
     "stillwater-new-york": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -9921,7 +9946,7 @@
       ]
     },
     "trenton-new-jersey": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -10598,7 +10623,7 @@
       ]
     },
     "white-plains-new-york": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -10868,7 +10893,7 @@
       ]
     },
     "yorktown-virginia": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

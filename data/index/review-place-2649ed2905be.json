@@ -11675,7 +11675,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 3,
       "id": "martinique-q17054",
       "kind": "place",
       "names": [
@@ -14171,6 +14171,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-01",
+      "degree": 2,
+      "id": "pamplona",
+      "kind": "place",
+      "names": [
+        "Pamplona"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [

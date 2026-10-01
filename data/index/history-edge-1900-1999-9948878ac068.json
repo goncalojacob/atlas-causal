@@ -3676,6 +3676,15 @@
         }
       ]
     },
+    "insurgency-in-kosovo--kosovo-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "invasion-of-south-georgia--operation-paraquet--caused": {
       "from": "git",
       "versions": [
@@ -5117,6 +5126,15 @@
         }
       ]
     },
+    "russian-revolution-of-1905--october-revolution--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "russian-revolution-of-1905--sveaborg-rebellion--caused": {
       "from": "git",
       "versions": [
@@ -5764,6 +5782,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "spanish-civil-war--anti-comintern-pact--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
@@ -6615,6 +6642,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "world-war-i--baltic-entente--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

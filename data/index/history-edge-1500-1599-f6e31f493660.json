@@ -3,7 +3,7 @@
   "kind": "edge",
   "records": {
     "battle-of-abancay--battle-of-las-salinas--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -84,7 +84,7 @@
       ]
     },
     "battle-of-inaquito--battle-of-jaquijahuana--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -102,7 +102,7 @@
       ]
     },
     "battle-of-las-salinas--battle-of-chupas--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -381,7 +381,7 @@
       ]
     },
     "new-laws--battle-of-inaquito--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -390,7 +390,7 @@
       ]
     },
     "new-laws--battle-of-jaquijahuana--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -417,7 +417,7 @@
       ]
     },
     "siege-of-cusco--battle-of-abancay--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -540,7 +540,7 @@
       ]
     },
     "spanish-conquest-of-the-aztec-empire--spanish-conquest-of-honduras--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
