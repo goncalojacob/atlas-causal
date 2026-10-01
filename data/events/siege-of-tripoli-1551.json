@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "siege-of-tripoli-1551",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "filed-from-article-part-of"
+    ],
+    "note": "A3: the article's own infobox reads part_of = \"the Ottoman-Habsburg wars and the Italian War of 1551-1559\", and the atlas holds both umbrellas, the second spanning 1551-1559. The item's P361 names only the first, so the second filing is the article's and was added by hand after the import; it is a display fact and enters no adjacency."
+  },
+  "wikidata": "Q2860095",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Siege of Tripoli (1551)",
+    "pt": "Cerco de Trípoli (1551)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2860095"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Tripoli (1551)\", revision 1370746050"
+    }
+  ],
+  "title": "Siege of Tripoli (1551)",
+  "summary": "The English Wikipedia article \"Siege of Tripoli (1551)\", at revision 1370746050, opens: \"The siege of Tripoli was a successful Ottoman siege of the North African city of Tripoli, then held by the Knights Hospitaller, in August 1551. The attack, which was led by Sinan Pasha and Dragut, appears to have been launched in retaliation for the capture of Mahdia by the Spanish and Hospitallers the previous year.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2860095, imported by tools/import/wikidata.mjs. The item's own description reads \"1551 siege of the Ottoman-Habsburg Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1551,
+    "end": 1551,
+    "date": "1551-08-09",
+    "endDate": "1551-08-15"
+  },
+  "place": "tripoli",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": [
+    "ottoman-habsburg-wars",
+    "italian-war-of-1551-1559"
+  ]
+}
