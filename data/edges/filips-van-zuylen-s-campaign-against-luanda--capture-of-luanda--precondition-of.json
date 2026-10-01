@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "filips-van-zuylen-s-campaign-against-luanda--capture-of-luanda--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-58"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Filips van Zuylen's campaign against Luanda\", revision 1370618257"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch Loango-Angola\", revision 1370615995"
+    }
+  ],
+  "from": "filips-van-zuylen-s-campaign-against-luanda",
+  "to": "capture-of-luanda",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The campaign of 1624 is the first of the Dutch West India Company's attempts on Luanda, and its own article presents the capture of 1641 as the end of that series rather than as a separate undertaking. “Filips van Zuylen's campaign against Luanda”, at revision 1370618257, § Aftermath: “Even though this campaign did not succeed, the Dutch West India Company would not give up on conquering Luanda, and in 1629, it was attacked once again. Finally in 1641, it was captured by the Dutch army, though 7 years later in 1648, it was reconquered by the Portuguese.” The “Dutch Loango-Angola” article, at revision 1370615995, is the second author for what the campaign was part of: “As part of the Groot Desseyn ('Grand Design') plan, the Dutch West India Company (WIC), which had been founded in 1621, tried to capture Luanda after they had captured Salvador da Bahia, the capital of Brazil. Under the leadership of Piet Hein, a Dutch fleet tried to capture Luanda in 1624, but failed, because Filips van Zuylen had tried to capture the city a few months earlier as well, leading the Portuguese to build reinforcements.” That second sentence states a consequence running the other way — van Zuylen's attempt is why the Portuguese reinforced and why Hein's attempt of the same year failed — and it is quoted here for what it does support, that this campaign opened the Company's design on Luanda, and not as evidence for the edge's direction. The type is `precondition-of` and the confidence `probable` because that is the whole of the claim: the first article presents one sustained design from 1624 to the capture, and neither says the 1641 capture required this failure. A reviewer who reads the two and disagrees should retract the edge rather than soften it.",
+  "dispute": null
+}

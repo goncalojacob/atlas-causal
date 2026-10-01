@@ -14992,3 +14992,168 @@ read the head's run, not the branch's most recent red.***
     (`Q132776772`), batch 48's Chilean four, the Almagrista eight and their
     missing decree, batch 52's three 16th-century refusals — **do not re-walk
     those** — and the place pass on records that already exist, which is M42's.
+
+## Batch 58 — the First Carnatic War after Madras, and the first Dutch design on Luanda
+
+*The fifty-second fire. Three events, two places, three edges; asia's 18th
+century from 17 to 19 and africa's 17th from 6 to 7. The main count did not
+move.*
+
+**Where the batch came from, and the two cells it could not open.** The
+trailing cell in this partition is **asia's 17th century, at four active
+events**, and this fire went at it first. The held umbrella that spans it is
+`dutch-portuguese-war` (`Q377269`), whose `P361` children Wikidata gives as
+40 with an English article; nineteen of those are in Asia or Africa before
+1800 and not held. **Six of them were read whole and every one was refused
+under A5** — the table below has them with the reason. The honest finding is
+general and worth the next fire's attention: *the Asian theatre of the
+Dutch–Portuguese War is written on Wikipedia as a set of stubs that name no
+other event causally at all*. Bantam (1601) and the Battle of Goa (1638) are
+two and three paragraphs with no § Background; Macau (1622) is 28 kB and
+names, of the events this atlas holds, only the handover of 1999, and that in
+a sentence about a public holiday. **Africa's 17th century, at six, was the
+second cell tried**, and the two sieges of Mozambique failed the same test.
+What carried in the end was the third article in the Luanda set, not either
+of the pair at the ends of the candidate (deviation 1367 again), and asia's
+18th century, which trails next, gave the two Carnatic records whose cause is
+stated in the verb.
+
+### Imported (A9, A15 (6), A15 (3))
+
+| record | item | when | lane / century | filed under | place |
+| --- | --- | --- | --- | --- | --- |
+| `battle-of-adyar` | `Q4870217` | 1746-10-24 | asia, 18th | `first-carnatic-war` | `adyar-river` (new, `region`) |
+| `siege-of-cuddalore-1748` | `Q2888637` | 1748-06-17 | asia, 18th | `first-carnatic-war` | `cuddalore` (new, `city`) |
+| `filips-van-zuylen-s-campaign-against-luanda` | `Q130377423` | 1624-06 to 1624-12-01 | africa, 17th | `dutch-portuguese-war` | `luanda` (held, `Q3897`) |
+
+**A15 (6) refused a country on all three** and none of them needed one: Adyar
+and Cuddalore take their point from the item's first located `P276` (the Adyar
+River, `Q2825422`, and Cuddalore, `Q279951`), the Luanda campaign from
+`Q3897`, which is the point the held `luanda` place already carries, so the
+import reused the record rather than writing a second. The `P17` each item
+names is `Q668` India, `Q668` India and `Q916` Angola, whose inceptions —
+1947, 1947, 1975 — are after every one of these events ended. **A15 (3)**:
+both new places carry `summary: null`. **A15 (8) did not fire on any of the
+three**: each item's English sitelink is its own article. The lane is left
+`null` on all three records and derived from the place's point, as the held
+`chennai` and `pondicherry` are.
+
+**The two Carnatic records were re-filed by hand from
+`war-of-the-austrian-succession`, which their `P361` names, to
+`first-carnatic-war`, which is that war's own child and where this atlas
+already keeps `battle-of-madras` and `action-of-6-july-1746`** (A3, A6; flag
+`refiled-to-subject-umbrella`). It is a refinement and not a widening — the
+grandparent is unchanged — and the main count is untouched either way.
+
+### Edges written (A5, M72, A14, A15 (5))
+
+| from → to | type | what carries it |
+| --- | --- | --- |
+| `battle-of-madras` → `battle-of-adyar` | `reacted-to` | *Battle of Madras*, rev 1370448492: *"Despite Dupleix's promise earlier to hand the territory over to the Nawab of the Carnatic, Dupleix refused to do so. A force of 10,000 sent by the Nawab to enforce the agreement was routed by a small French force led by Captain Louis Paradis at the battle of Adyar on 24 October 1746."* Second author, *First Carnatic War*, rev 1370619242: *"Anwaruddin **responded by** sending a 10,000-man army to take the fort from Dupleix by force."* |
+| `battle-of-madras` → `siege-of-cuddalore-1748` | `precondition-of` | *Siege of Cuddalore (1748)*, rev 1370740497: *"Dupleix decided to make another attack on Cuddalore, **where the British had taken refuge after the fall of Madras**."* Second author, *First Carnatic War*, rev 1370619242, on the same removal: Clive and three others *"made their way to Fort St. David (the British post at Cuddalore)"*. |
+| `filips-van-zuylen-s-campaign-against-luanda` → `capture-of-luanda` | `precondition-of` | the campaign's own article, rev 1370618257, § Aftermath: *"Even though this campaign did not succeed, the Dutch West India Company **would not give up on conquering Luanda**, and in 1629, it was attacked once again. Finally in 1641, it was captured by the Dutch army."* Second author, *Dutch Loango-Angola*, rev 1370615995, for what the campaign was part of — the *Groot Desseyn* — and the edge record says plainly that the same sentence states a consequence running the *other* way (van Zuylen's attempt is why the Portuguese reinforced and why Piet Hein's attempt of the same year failed), so it is quoted for the filing and not for the direction. |
+
+All three are `probable` on the articles alone (rule 22). **A14 held**: every
+one of the three runs between siblings, never from a parent to its own child.
+**A15 (5) refused two**, below.
+
+### What was refused, and why
+
+| candidate | reason |
+| --- | --- |
+| `Q2032681` *Battle of Bantam*, 1601, `P361` the held Dutch–Portuguese War | article read whole at rev 1371913893. It is three paragraphs and a ship list, and **names no event this atlas holds**. No edge, so under A5 not imported. |
+| `Q117350122` *Capture of Amboina*, 1605 | rev 1370608249. Names Bantam once, as a port van der Hagen's fleet *"stopped at"* on the way. No event this atlas holds, no edge. |
+| `Q704333` *Battle of Macau*, 1622, 13 sitelinks | rev 1370448450, the longest article in the set at 28 kB, read whole including §§ Background, Expedition, Aftermath and Commemoration. The only held event it names is `macau-handover-1999`, in *"a public holiday on the Macau Peninsula … observed every year until the handover of Macau to China in 1999"*. That is a calendar, not a cause. **The most promising candidate in the Asian vein and it still has no edge.** |
+| `Q2567256` *Battle off Hormuz*, 1625 | rev 1371758666. Names no held event. |
+| `Q4871118` *Battle of Goa*, 1638 | rev 1370441745, five sentences. Names no held event. |
+| `Q121433548` and `Q122227094`, the sieges of Mozambique of **1607 and 1608** | revs 1370743723 and 1370743726. The pair state a real link to each other — *"**Unlike what van Caerden had done the year before**, Verhoeff avoided anchoring his fleet within the inner harbour"* — but **neither names an event this atlas holds**, and A5 asks a batch to write to what already exists and not only to itself. The 1608 § Aftermath reaches *Portuguese Malacca* and says its *"defenses … had been strengthened"*, without naming the held siege of 1606 that strengthened them. Left for a fire that can import them together with a third record that anchors them. |
+| `Q4677351` *Action of 30 September 1639* | **its English sitelink redirects into *Battle of Goa (1638)***, which is `Q4871118`'s article: two items, one subject. Not a second event. Dropped before any reading of it, and recorded here so no fire counts it again. |
+| `Q3485992` *Siege of Pondicherry (1748)*, 4 sitelinks | rev 1370744503, and the only candidate in the Carnatic vein this fire refused. The *First Carnatic War* article's one sentence about it — *"In 1748 Major Stringer Lawrence arrived to take command of the British troops at Fort St. David. With the arrival of reinforcements from Europe, the British besieged Pondicherry in late 1748"* — states **no cause at all**, only the arrival of reinforcements, and the only held event it stands next to is its own parent, which A14 bars. **A15 (5)'s refusal class, applied at the point of writing the edge.** |
+| `battle-of-adyar` → `siege-of-cuddalore-1748` | **A15 (5), and a trap worth naming.** *First Carnatic War* carries an explicitly causal sentence — *"**Stung by his defeat at Adyar**, Anwaruddin sent his son Muhammad Ali to assist the British in the defence of Cuddalore"* — but it is about the French assault on Fort St. David of **December 1746**, which the article links as *Siege of Cuddalore (First Carnatic War)*, a different article from *Siege of Cuddalore (1748)*. Two sieges of one town two years apart, and the cited cause belongs to the earlier one. No edge written. (The 1746 siege **has no Wikidata item at all**, so it cannot be imported; a fire that wants this chain must wait for one.) |
+| `capture-of-bahia` → the Luanda campaign | **A15 (5)**. *Dutch Loango-Angola* has the Company trying Luanda *"after they had captured Salvador da Bahia"*, and the cause it states is the *Groot Desseyn* plan, which is a common cause of both and not Bahia causing Luanda. |
+
+**The candidates the batch left, counted (A15 (1))**: of the nineteen Asian
+and African `P361` children of `dutch-portuguese-war` not held, **six were
+read and refused**, **one was dropped as a redirect into another candidate's
+article**, and **twelve were not read** — `Q131686861`, `Q137801200`,
+`Q130198485`, `Q25830845`, `Q4677306`, `Q4677341`, `Q122452193`,
+`Q130478490`, `Q2092338`, `Q138002239`, `Q138011120` and `Q141304393`'s
+Asian siblings — all of them one or two sitelinks, and all of them in the
+same stub class as the six. Outside that umbrella the sweep over all 39 held
+pre-1800 umbrellas found **32** Asian and African candidates with a locatable
+point; this batch took three of them.
+
+### Per lane and per century (A10), after the batch
+
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 7 / 5 | 11 / 7 |
+| 16th c. | 44 / 1 | — | — | 49 / 3 | 93 / 4 |
+| 17th c. | 109 / 3 | **7 / 0** | 4 / 0 | 70 / 7 | 190 / 10 |
+| 18th c. | 62 / 3 | 14 / 0 | **19 / 0** | 79 / 2 | 174 / 5 |
+| 19th c. | 39 / 9 | 26 / 1 | 8 / 6 | 57 / 8 | 130 / 24 |
+| 20th c. | 245 / 60 | 89 / 23 | 155 / 37 | 89 / 30 | 578 / 150 |
+| 21st c. | 52 / 7 | 76 / 7 | 28 / 14 | 36 / 1 | 192 / 29 |
+| **all** | **555 / 85** | **212 / 31** | **214 / 57** | **387 / 56** | **1368 / 229** |
+
+*Active events, then of those the ones that are part of nothing. Africa and
+Asia stand at 212 and 214 against A10's 303.*
+
+### The component, and the measurement A15 (11) asks for
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1365 | **1368** |
+| main | 229 | **229** |
+| active edges | 1159 | **1162** |
+| largest connected component | 756 | **757** |
+| the Carnatic island | 2 | **4** |
+| edges crossing an umbrella | 578 | **578** |
+| edges inside one umbrella | 581 | **584** |
+
+**No edge in this batch crosses an umbrella, and that is a consequence of
+what the batch is, not an oversight.** All three run between siblings: Madras,
+Adyar and Cuddalore are all `first-carnatic-war`; the Luanda campaign and the
+capture of 1641 are both `dutch-portuguese-war`. A crossing edge needs a
+cited sentence tying an event under one umbrella to an event under another,
+and the only one this fire found in reach — the Treaty of Aix-la-Chapelle
+returning Madras — is `Q156086`, **a European record, which A15 (1) pauses
+for this lane**. The Luanda campaign is the one of the three that joined the
+757; the Carnatic pair enlarged the island that `battle-of-madras` and
+`action-of-6-july-1746` had to themselves, from two to four. Deviation 1365's
+remedy applied by hand again: `tools/m42-pool.mjs` still prints only the
+largest component and not the one a batch grew.
+
+**A15 (2), the last step.** `node tools/cache-evidence.mjs --fill` reports **0
+revisions that should be on disk and are not**, over 2,853 `wikipedia-en`
+citations on active records. The import cached three leads
+(`Q4870217`, `Q2888637`, `Q130377423`); the five revisions the three edges
+cite are leads of articles already on disk, and an edge is `unkeyed` to
+`tools/lib/leadcache.mjs` by construction.
+
+### Deviation 1369 — a town with two sieges, and the cause that belongs to the other one
+
+The *First Carnatic War* article states a cause for a siege of Cuddalore in so
+many words — "Stung by his defeat at Adyar" — and that cause belongs to the
+siege of December 1746, not to the siege of June 1748 this batch imported.
+What distinguishes them is only the disambiguator in the link target:
+`Siege of Cuddalore (First Carnatic War)` against
+`Siege of Cuddalore (1748)`. Deviation 1367 said to read the campaign's
+articles as a set; this is the other half of it — **having found the sentence,
+check which of the set's events it is about, by the link target and the date
+in the sentence, and not by the place name**. A name-matcher would have
+written this edge, and it would have been wrong. Nothing in the tools does
+this check; it was done by hand, as deviation 1360's reading is.
+
+### Deviation 1370 — a stub class is a finding about the source, not about the vein
+
+Six of this batch's ten refusals are one fact: a Wikipedia article of two to
+five paragraphs with no § Background names no other event, so an atlas whose
+unit of argument is an edge cannot take it however well the item is dated and
+placed. The Asian theatre of the Dutch–Portuguese War is almost entirely in
+that class, and **a fire should not read the long article first and hope**:
+`Q704333` is the best-sitelinked candidate in the whole vein, at thirteen, and
+28 kB of it yielded nothing but a sentence about a public holiday. The cheap
+test, before reading anything whole, is whether the candidate's article has a
+§ Background or § Aftermath at all. Every edge this fire wrote came from an
+article that has one.
