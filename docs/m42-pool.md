@@ -19381,8 +19381,8 @@ three of its four edges whose article the cache already held at another revision
 
 ### The suites, and what this fire added to them
 
-Both suites green, run the way the check runs them since M63: **2,251 tests,
-nothing skipped — 1,940 pure and 311 browser**. `tests/a9-chain.test.mjs` is new
+Both suites green on the final tree, run the way the check runs them since
+M63: **2,253 tests, nothing skipped — 1,940 pure and 313 browser**. `tests/a9-chain.test.mjs` is new
 and has eleven of them: the chain exported, the order A12(2) fixed, reuse, the
 gate at `P276` (deviation 1476), the recorded-refusal oracle, the lane guard,
 the own-point report, the class refusal, the `place-refused` flag and its
