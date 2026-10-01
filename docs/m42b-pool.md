@@ -18491,3 +18491,211 @@ So this lane's order has a fourth step, and it is the mirror of deviation 1394.
 repository's own commits. **1398 says run the suite after writing the batch note,
 because the correspondence tests read it.** A placeless, actorless import is the
 case that catches it, and this lane now writes one or two per fire.
+
+## Where the run stands, for the fire that picks it up
+
+*1 October, after the fifty-ninth fire: **two merges** (`origin/m0` and
+`origin/m42`) and **three batches** — 66, 67 and 68 — which took **africa's 17th
+century from seven to nine**, **asia's 16th from three to nine** and **africa's
+16th from seven to nine**, ten records in all, with **three edges, one per batch,
+none of them crossing an umbrella**. **Four things the next fire must know**: the
+main count did **not** move and has now held at **231** across five batches; the
+previous stand's move 1 — the Siege of Colombo of 1655–1656 — is **closed, not
+deferred**, because English Wikipedia has no article for it; looking for it turned
+up **the best vein left in this partition**, and it costs one main (§"The next
+fire's moves"); and the check is still red on **one** browser test which is **M42's
+deviation 1521**, not this lane's and not to be re-diagnosed.*
+
+| | before 66 | after 68 |
+| --- | --- | --- |
+| active events | 1397 | **1407** |
+| main | 231 | **231** |
+| largest connected component | 781 | **782** |
+| components | 400 | **407** |
+| events with no edge | 308 | **313** |
+| **edges crossing an umbrella** | 605 | **605** |
+| edges inside one umbrella | 600 | **603** |
+| active edges | 1205 | **1208** |
+
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 7 / 5 | 11 / 7 |
+| 16th c. | 45 / 2 | **9 / 0** | **9 / 1** | 49 / 3 | 112 / 6 |
+| 17th c. | 109 / 3 | **9 / 0** | 8 / 0 | 70 / 7 | 196 / 10 |
+| 18th c. | 62 / 3 | 14 / 0 | 19 / 0 | 79 / 2 | 174 / 5 |
+| 19th c. | 39 / 9 | 28 / 1 | 9 / 6 | 61 / 8 | 137 / 24 |
+| 20th c. | 245 / 60 | 90 / 23 | 159 / 37 | 91 / 30 | 585 / 150 |
+| 21st c. | 52 / 7 | 76 / 7 | 28 / 14 | 36 / 1 | 192 / 29 |
+| **all** | **556 / 86** | **226 / 31** | **232 / 58** | **393 / 56** | **1407 / 231** |
+
+**Africa and Asia stand at 226 and 232 against A10's 303**, so A15(1)'s pause holds
+and nothing of Europe before 1900 is this lane's to import. The trailing cells of
+this partition are now **africa's and asia's 15th centuries, both still zero** —
+and still unreachable without a main, for the reason batch 65's note gives — then
+**asia's 17th at eight**, then africa's 16th, africa's 17th and asia's 16th, all
+three at nine. The partition is flat for the first time in this lane's history:
+there is no cell that trails the others by more than one.
+
+### The next fire's moves, in order
+
+1. **The Sinhalese–Portuguese conflicts are the best vein left in this partition,
+   and the fire that takes them should take them whole.** `Q17034772`
+   *Sinhalese–Portuguese conflicts*, 1527–1658, 5 sitelinks, its own English
+   article, `P361` of nothing — **the atlas does not hold it**, and its backlinks
+   (read with deviation 1392's two calls) are **thirteen items, nine of them events
+   with their own `P361` naming it and their own English article, none of them
+   here**:
+
+   | item | title | sitelinks | year |
+   | --- | --- | --- | --- |
+   | `Q4871824` | Battle of Mulleriyawa | 3 | 1559 |
+   | `Q125998118` | Siege of Colombo (1587–1588) | 2 | 1587 |
+   | `Q136605166` | Sitawaka campaign | 2 | 1594 |
+   | `Q16250240` | Kandyan commerce raiding against Portugal (1612–1613) | 1 | 1612 |
+   | `Q133092642` | Battle of Vannarpannai | 2 | 1619 |
+   | `Q125701269` | Roland Crappé's raids on Portuguese colonies | 1 | 1619 |
+   | `Q125166578` | Conquest of Koneswaram Temple | 2 | 1622 |
+   | `Q4872161` | Battle of Randeniwela | 5 | 1630 |
+   | `Q4871077` | Battle of Gannoruwa | 3 | 1638 |
+
+   The other four backlinks are people (`Q7160021`, `Q6678633`, `Q4852617`,
+   `Q10306761`) and are not this lane's.
+
+   **The whole trade is one main.** Write the umbrella from its own article and the
+   nine are filed under it — **three into asia's 16th century (1559, 1587, 1594) and
+   six into asia's 17th (1612 to 1638)**, which is both of this partition's two
+   lowest non-zero cells in one batch, at **+1 main and not +9**. Deviation 1390's
+   `part_of` check still goes in front of each filing, and A5 still wants an edge per
+   import; `Q4871077` *Battle of Gannoruwa* at 1638 is the one with a `dutch-portuguese-war`
+   neighbour in reach, so the cross-umbrella edge this fire could not find may be
+   there. **The main count is the only thing standing in the way**, and it is already
+   one of the three open questions to the owner, so a fire that spends it should say
+   in its note that it did and why — the trade is nine filed records for one
+   umbrella, which is the best ratio any vein in this lane has offered.
+
+2. **The Siege of Colombo of 1655–1656 is closed. Do not look for it again.** The
+   previous stand's move 1 asked for it on the strength of `battle-of-mannar-1658`'s
+   § Background. **English Wikipedia has no article for it**: `intitle:"Siege of
+   Colombo"` returns *Sinhalese–Portuguese conflicts* and *Siege of Colombo
+   (1587–1588)* and nothing else, a title search over
+   `intitle:Colombo (siege OR capture OR battle)` returns the same two, and a
+   full-text search for *Dutch siege of Colombo 1655 Hulft* returns
+   *Gerard Pietersz Hulft*, *Battle of Mannar (1658)* and *Rajasinha II* — the
+   articles that mention it, not one about it. A record here needs a cached lead at
+   a named revision and a `wikipedia-en` citation, and an item with no English
+   article can give neither (batch 67 refused `Q136213515` on the same rule). The
+   `enabled` edge Mannar's article states therefore has **no second end in this
+   atlas and cannot be written**; what it points at is the Dutch capture of Colombo,
+   and if a fire ever writes that record from a non-Wikipedia source, this is the
+   edge to write beside it.
+
+3. **Do not re-diagnose deviation 1521.** Unchanged from the last two stands: the
+   check is red on one browser test, the records are sound, and the fix is a display
+   change in `src/map/map.js` that neither records lane may make.
+
+4. **The Capture of Mahdia (1550) is one raw fetch from being writable**, and batch
+   68's note says exactly what the fetch is for: `Q5037032`, 6 sitelinks, its `P361`
+   is `Q118929718` *Ottoman–Spanish War*, which the atlas does not hold and which has
+   no English article, so importing it files it nowhere and **raises the main count**
+   — unless its own infobox names the Ottoman–Habsburg wars, in which case it can be
+   filed there by hand as `siege-of-tripoli-1551` was filed under its second
+   umbrella. That would make the best-cited edge in africa's 16th century writable:
+   the Tripoli article names Mahdia as its cause twice, once with *"This led"*.
+
+5. **`battle-of-ugentana-1536` wants the 1535 battle beside it** (batch 67's note):
+   its article names *Battle of Ugentana*, of 1535, as the reason for the 1536
+   attack, with two causal connectives in one sentence. That article exists; the item
+   was not among `Q16932099`'s eleven backlinks, so its own `P361` must be read
+   before it is filed, with the same main-count caution as move 1.
+
+6. **Deviation 1398 is new and it is about order, not about data**: run the suite
+   *after* writing the batch note, because `tests/m67.test.mjs` reads
+   `docs/m42b-pool.md` at module load and fails a placeless, actorless import that
+   nothing has argued for yet. This lane writes one or two such records per fire.
+
+7. **Deviation 1397 is new and it is cheap**: Wikimedia answers **429** to a request
+   with no `User-Agent`, which is what this sandbox's `curl` sends. One `-A` and
+   `--retry-all-errors` and every call of three batches came back 200. It is not
+   SPARQL's 502 (deviation 1392) spreading to the action API.
+
+8. **`battle-of-goa-1638` still wants a place and the edit is still one line**
+   (deviation 1393, unchanged and not taken in this fire): `Q12443800` *state of
+   India* into `data/imports/wikidata-seeds.json` → `classes` at
+   `precision: region`, on the precedent of the eleven other first-level divisions
+   already there, then delete the record, drop `Q4871118` from
+   `data/imports/wikidata-state.json` → `runs.import.done`, and re-import. An
+   editorial edit to a closed vocabulary, to be taken deliberately.
+
+9. **Batch 60's rule held three times in this fire** and cost nothing each time:
+   `ls data/edges | grep <from>` across all five types before reading anything. Of
+   the three pairs this fire wrote, none was already written; of the pairs it
+   checked, `capture-of-malacca-1511` already had three `precondition-of` edges out
+   of it to the three Malacca sieges, which is why the fourth went to Bintan.
+
+10. **Deviation 1380 held three times out of three**: every one of the three edges
+   cites, for both of its authors, a revision one of the two records already cites.
+   No edge in this fire cost a fetch beyond the ones that read its ends.
+
+11. **The main count is still the first of the three open questions to the owner**,
+   and this fire strengthens the case rather than settling it: **five batches in a
+   row have now kept it at 231**, and move 1 above is the first vein where holding
+   it costs the lane something real — nine filed records sitting behind one
+   umbrella. **C8** and **A15(1)** are the other two, unchanged.
+
+12. **Do not re-measure the century convention** (deviation 1378): a record is filed
+   by the century of its **start** year, every active event counted, so the rows and
+   columns sum to 1,407.
+
+13. **Check a new deviation number against `docs/m42-pool.md` before using it.** This
+   lane is now at **1398** and M42 at 1522 or beyond, so every number this lane takes
+   lies inside a range M42 has already spent. 1395 to 1398 were checked with
+   `grep -c "Deviation <n>" docs/m42-pool.md` and were free.
+
+14. **Still open, unchanged**: C8, deviations 1323, 1345, 1346's ocean islands,
+   1348's lane guard, 1353, 1358, 1361, 1362, 1365, 1366, 1377, 1383, 1386, 1393,
+   question 11 (the Nine Years' War, `Q152218`), question 12, `Q718893`,
+   `Q20639061`, `Q5037062`, `Q4677270`, `Q4677390`, the nine atlas umbrellas with no
+   `wikidata`, the Gulf Coast campaign umbrella (`Q5617470`), the Angolan Wars
+   umbrella (`Q132776772`), batch 48's Chilean four, the Almagrista eight and their
+   missing decree, batch 52's three 16th-century refusals, `Q1226252` *tied island*
+   in the class table, `arauco-war`'s interval, `Q3051491` *Capture of Valdivia*, the
+   place pass on records that already exist (M42's), `capture-of-luanda`'s
+   `wikipedia.en` redirecting to *Dutch Loango-Angola*, `Q2915203`
+   *Ethiopian–Adal War*, read and refused twice for naming no event this atlas holds,
+   the Ottoman–Portuguese conflicts of 1538–1559, still unreached, the Italian Wars'
+   nine children to each other (still outside this partition while A15(1) holds, and
+   the quote is in the stand before the last one), the **22 Europe-lane children of
+   `ottoman-habsburg-wars` batch 68 read and left**, the Great Siege of Malta at 54
+   sitelinks among them, and the refiling question batch 64 left open on
+   `siege-of-malacca-1606`, `battle-of-cape-rachado` and `siege-of-malacca-1640-1641`.
+   **The Siege of Johor 1587 is off this list: batch 67 wrote it.**
+
+### What this fire left on disk
+
+*Twelve commits: the claim; the `origin/m0` merge; the `origin/m42` merge; batch
+66's records and caches, then its index; batch 67's, then its index; batch 68's,
+then its index; the three batch notes; deviation 1398; and this stand. The order
+of every batch was records → `build-index.mjs` → index, which is deviations 798
+and 1394 together, and the suite was run after the notes, which is 1398.*
+
+*The `origin/m42` merge took 261 conflicting paths and none of them was a record.
+`data/index/` was dropped and rebuilt rather than merged, as the protocol says;
+`sources.html` came from the rebuild; and the three JSON files both lanes append to
+— `data/imports/wikidata-seeds.json`, `data/imports/wikidata-state.json` and
+`tools/import/cache/titles.json` — were **unioned as JSON and not as text**, by a
+deep merge that keeps both sides' array entries and object keys, because a text
+merge of a conflict that falls mid-object breaks the file. The two records
+`origin/m42` brought (`japanese-invasion-of-french-indochina`,
+`russian-invasion-of-manchuria`) came over untouched.*
+
+*`validate --index` is clean at **0 errors, 608 warnings**. A15(2) reports **0
+revisions that should be on disk and are not**, 2,885 of 2,963 citations on disk at
+the revision cited and 78 unholdable beside a more-cited revision of the same item.*
+
+*The suite, measured at this head and run the way the check runs it: **1,940 pure
+tests, 1,940 passed, 0 failed, 0 skipped**, and **313 browser tests across the 40
+suites, 312 passed, 1 failed, 0 skipped**. The one is `not ok 67 — choosing an event
+narrows all three views to it, its parts, its parent and one hop`, with
+`error: 'map left out estado-novo-1933-1974'`, at `tests/m65-browser.test.mjs:89` —
+character for character the failure the previous two stands recorded, which is M42's
+deviation 1521 and a display fault in `src/map/map.js` that no records lane may fix.*
