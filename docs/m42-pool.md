@@ -22063,7 +22063,7 @@ did.
 ## The `P828`/`P1542` vein, measured: 50 pairs, 34 already held, and not one of the 16 writable today
 
 *Measured on 1 October by the fire that exhausted the umbrella-children vein,
-as the first job the stand above gives its own second candidate question, and
+as the first job the stand below gives its own second candidate question, and
 **written down in full so that no later fire has to query it again**.*
 
 The question: **of the causal links Wikidata states between two items this
@@ -22104,7 +22104,7 @@ mostly already there.
 | `world-war-ii` → `the-extermination-of-the-jews-1941-1945` | P1542 | A14's standing rule: parent to its own child, C8 |
 | `world-war-ii` → `soviet-invasion-of-poland` | P1542 | the same |
 | `lebanese-civil-war` → `sabra-and-shatila-massacre` | P1542 | the same |
-| `2006-lebanon-war` → `2006-hezbollah-cross-border-raid` | P1536 | the same, and the direction below |
+| `2006-lebanon-war` → `2006-hezbollah-cross-border-raid` | P1536 | the same, and the atlas holds the opposite edge |
 | `2014-pro-russian-unrest-in-ukraine` → `russo-ukrainian-war` | P1542 | child to its own parent — C8 from the other side |
 | `saur-revolution` → `afghan-conflict` | P1478, P1542 | the same |
 | `breakup-of-yugoslavia` → `war-in-bosnia-and-herzegovina` | P828 | **rule 4**: 1992-04-27 against 1992-04-06, deviation 1523's shape again |
