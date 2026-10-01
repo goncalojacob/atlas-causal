@@ -5180,6 +5180,12 @@
     },
     {
       "dissent": false,
+      "id": "cambodian-genocide",
+      "kind": "event",
+      "locator": "Q2885072"
+    },
+    {
+      "dissent": false,
       "id": "cambodian-vietnamese-war",
       "kind": "event",
       "locator": "Q635533"
@@ -6968,6 +6974,12 @@
     },
     {
       "dissent": false,
+      "id": "malayan-emergency",
+      "kind": "event",
+      "locator": "Q2354629"
+    },
+    {
+      "dissent": false,
       "id": "mali-war",
       "kind": "event",
       "locator": "Q2946372"
@@ -7913,6 +7925,12 @@
       "id": "rwandan-civil-war",
       "kind": "event",
       "locator": "Q426722, P31 Q8465"
+    },
+    {
+      "dissent": false,
+      "id": "rwandan-revolution",
+      "kind": "event",
+      "locator": "Q4162685"
     },
     {
       "dissent": false,

@@ -19175,6 +19175,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "death",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "cambodian-genocide",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "indochina-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Cambodian genocide"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -19187,7 +19219,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 2,
+      "degree": 3,
       "id": "cambodian-vietnamese-war",
       "kind": "event",
       "origin": {
@@ -30011,6 +30043,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "malayan-emergency",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "decolonisation-of-asia",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Malayan Emergency"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -35548,7 +35612,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 3,
+      "degree": 4,
       "id": "rwandan-civil-war",
       "kind": "event",
       "origin": {
@@ -35570,6 +35634,37 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Rwandan Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "rwandan-revolution",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "decolonisation-of-africa",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Rwandan Revolution"
     },
     {
       "authors": [
@@ -46049,7 +46144,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 29,
+      "degree": 30,
       "id": "world-war-ii",
       "kind": "event",
       "origin": {

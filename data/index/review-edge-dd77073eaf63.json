@@ -10077,6 +10077,28 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "cambodian-genocide",
+      "id": "cambodian-genocide--cambodian-vietnamese-war--caused",
+      "kind": "edge",
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cambodian-vietnamese-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -23814,6 +23836,28 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "rwandan-revolution",
+      "id": "rwandan-revolution--rwandan-civil-war--precondition-of",
+      "kind": "edge",
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "rwandan-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -32821,6 +32865,28 @@
       "revised": null,
       "status": "active",
       "to": "indonesian-national-revolution",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "world-war-ii",
+      "id": "world-war-ii--malayan-emergency--precondition-of",
+      "kind": "edge",
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "malayan-emergency",
       "type": "precondition-of"
     },
     {

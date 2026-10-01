@@ -5678,6 +5678,15 @@
         }
       ]
     },
+    "malay-peninsula": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "mali-q912": {
       "from": "git",
       "versions": [

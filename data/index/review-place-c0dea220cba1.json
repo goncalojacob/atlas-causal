@@ -3187,7 +3187,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "cambodia-q424",
       "kind": "place",
       "names": [
@@ -11494,6 +11494,34 @@
         "Malaca",
         "Malacca City",
         "Malaca (cidade)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "malay-peninsula",
+      "kind": "place",
+      "names": [
+        "Malay Peninsula",
+        "Península da Malásia"
       ],
       "origin": {
         "tool": "wikidata"

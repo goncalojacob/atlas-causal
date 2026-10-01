@@ -3596,6 +3596,18 @@
     },
     {
       "dissent": false,
+      "id": "cambodian-genocide--cambodian-vietnamese-war--caused",
+      "kind": "edge",
+      "locator": "\"Cambodian genocide\", revision 1377684919, § Vietnamese"
+    },
+    {
+      "dissent": false,
+      "id": "cambodian-genocide--cambodian-vietnamese-war--caused",
+      "kind": "edge",
+      "locator": "\"Indochina wars\", revision 1373921212"
+    },
+    {
+      "dissent": false,
       "id": "cambodian-vietnamese-war--sino-vietnamese-war--reacted-to",
       "kind": "edge",
       "locator": "\"Indochina wars\", revision 1373921212, § Third Indochina War"
@@ -6752,6 +6764,18 @@
     },
     {
       "dissent": false,
+      "id": "rwandan-revolution--rwandan-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Rwandan Revolution\", revision 1367896898"
+    },
+    {
+      "dissent": false,
+      "id": "rwandan-revolution--rwandan-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Rwandan Revolution\", revision 1367896898, § Post-revolution Rwanda"
+    },
+    {
+      "dissent": false,
       "id": "saint-domingue-and-the-french-sugar-colony--haitian-revolution-1791-1804--caused",
       "kind": "edge",
       "locator": "\"Haitian Revolution\", revision 1375172946"
@@ -9191,6 +9215,18 @@
       "id": "world-war-ii--indonesian-national-revolution--precondition-of",
       "kind": "edge",
       "locator": "\"Indonesian National Revolution\", revision 1375837705, § Japanese surrender"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--malayan-emergency--precondition-of",
+      "kind": "edge",
+      "locator": "\"Malayan Emergency\", revision 1373880340"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--malayan-emergency--precondition-of",
+      "kind": "edge",
+      "locator": "\"Malayan Emergency\", revision 1373880340, § Socioeconomic issues (1941–1948)"
     },
     {
       "dissent": false,
@@ -12704,6 +12740,12 @@
     },
     {
       "dissent": false,
+      "id": "cambodian-genocide",
+      "kind": "event",
+      "locator": "\"Cambodian genocide\", revision 1377684919"
+    },
+    {
+      "dissent": false,
       "id": "cambodian-vietnamese-war",
       "kind": "event",
       "locator": "\"Cambodian–Vietnamese War\", revision 1375855358: \"an armed conflict from 1978 to 1989 between Democratic Kampuchea and the Socialist Republic of Vietnam\""
@@ -14450,6 +14492,12 @@
     },
     {
       "dissent": false,
+      "id": "malayan-emergency",
+      "kind": "event",
+      "locator": "\"Malayan Emergency\", revision 1373880340"
+    },
+    {
+      "dissent": false,
       "id": "mali-war",
       "kind": "event",
       "locator": "\"Mali War\", revision 1376141121"
@@ -15359,6 +15407,12 @@
       "id": "rwandan-civil-war",
       "kind": "event",
       "locator": "\"Rwandan Civil War\", revision 1371242033"
+    },
+    {
+      "dissent": false,
+      "id": "rwandan-revolution",
+      "kind": "event",
+      "locator": "\"Rwandan Revolution\", revision 1367896898"
     },
     {
       "dissent": false,

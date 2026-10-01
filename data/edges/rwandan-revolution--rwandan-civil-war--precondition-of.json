@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "rwandan-revolution--rwandan-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rwandan Revolution\", revision 1367896898"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rwandan Revolution\", revision 1367896898, § Post-revolution Rwanda"
+    }
+  ],
+  "from": "rwandan-revolution",
+  "to": "rwandan-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The revolution's own article states what the revolution made and what that thing then did. Its lead: \"The revolution caused at least 336,000 Tutsi to flee to neighbouring countries, where they lived as refugees\", and of those refugees, \"No further threat was posed by the refugees until the 1990s, when a civil war initiated by the Tutsi-refugee Rwandan Patriotic Front (RPF) forced the Hutu government into negotiations.\" § Post-revolution Rwanda names the war: \"In 1990 the Rwandan Patriotic Front (RPF), a rebel group composed primarily of Tutsi refugees, invaded northern Rwanda; this began the Rwandan Civil War.\" The type is `precondition-of` and not `caused` because that is what the article argues across thirty years: the revolution did not bring the war about, it made the exiled population the war's own side was raised from. `probable` and not `consensus` under rule 22 and A2 — the witness is a Wikipedia record.",
+  "dispute": null
+}
