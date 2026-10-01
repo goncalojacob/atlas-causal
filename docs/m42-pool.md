@@ -21939,8 +21939,10 @@ them Africa. **Start at row 921.** This stand supersedes the one of 16:07Z.*
 ## Batch 86 — the vein's tail, and the two rows in it that pass
 
 Rows **921 to 1008** were screened — the last 88 of
-`docs/m42-umbrella-children.md`, **88 articles read, none refused by the span
-gate** — and with them **the vein is exhausted**. The 19:00Z stand said to
+`docs/m42-umbrella-children.md`, **88 articles read and none refused before
+reading** — and with them **the vein is exhausted**. No span gate ran on this
+stretch, because the vein's rows carry no dates and this fire's screen passed
+none; that is the limitation row 1008 below exposed, not a clean sweep. The 19:00Z stand said to
 budget nothing from the tail because it is the file's lowest sitelink counts
 and deviation 1524's stubs are thickest there. The tail paid **two**, which is
 better than its rate deserved and does not change the reading: 1,008 rows have
