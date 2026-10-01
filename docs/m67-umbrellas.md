@@ -1296,3 +1296,46 @@ The five events filed under it — `philippine-declaration-of-independence`,
 it as a second parent under A8 — `first-indochina-war` and
 `east-timor-invasion-1975` — are argued there, one line each, each from the same
 revision.
+## M42b batch 63 — the Peñón of Algiers, bare because nothing it names can be reached
+
+*1 October, the fire that claimed at 10:37Z. The measurement is in
+`docs/m42b-pool.md` → "Batch 63". A1's clause, for one record of eight, and for
+a reason that is the import's refusal log and not a judgment of this fire's.*
+
+`capture-of-penon-of-algiers-1529` **names neither an actor nor a place**, and
+the other seven records of its batch name a place. It is the one that cannot,
+and both halves of that have a reason on disk.
+
+**No place.** The item, `Q3403025`, carries no `P625` of its own. Its `P276` is
+`Q7179708` *Peñón of Algiers*, which does carry a point — 36.7867, 3.0683, the
+rock in the harbour the Spanish fortress stood on — but its only class is
+`Q1226252` *tied island*, and `data/imports/wikidata-seeds.json` → `classes` has
+no row for that class, so the import refused to write a place record for it and
+said so: *"no place from Q7179708: none of its classes (Q1226252) is in
+data/imports/wikidata-seeds.json → classes"*. Its `P17` is `Q262` Algeria,
+refused under A15 (6) because the country's inception, 1962, is 433 years after
+the event ended: *"no place from the country Q262: the country's inception
+(1962) is after the event ended (1529)"*. The row is a real editorial call and
+the pool file argues both sides of it — `Q23442` *island* is `region` in the
+table, and a fortified rock a few hundred metres across is not an area — so it
+was left for whoever makes that call rather than guessed at here.
+
+**No actor.** The item's `P710` gives two participants, `Q12560` the Ottoman
+Empire and `Q766543` the Hispanic Monarchy, and the import's rule is that
+`P710` is read only where the atlas holds every participant the item names. It does not, so the line is dropped
+whole rather than half-written. An event with no actor is not a defect (M67 A1).
+
+**Why it belongs where it is filed.** Its `P361` is `Q118929718`
+*Ottoman–Spanish War* (1515–1577), which has two sitelinks and **no English
+article**, so there is no record to file it under and no source to write one
+from; that item's own `P361` is `Q786171` *Ottoman–Habsburg wars*, which this
+batch imported as `ottoman-habsburg-wars` and dates 1526 to 1791. The record's
+span, 1529-05-29, falls inside it. It is also argued for by an edge this batch
+wrote from a cited article: `capture-of-penon-of-algiers-1529
+--precondition-of--> battle-of-algiers-1541`, from the § Aftermath of "Capture
+of Peñón of Algiers (1529)" at revision 1370609401 — *"The huge Algiers
+expedition undertaken by Charles V in 1541 to retake Algiers ended in
+failure."* What it carries instead of a place is **a lane the import wrote on
+purpose**, `africa`, kept from the country it refused as a point, which is
+A15 (6)'s own instruction. The filing is this fire's, from `P361` one level up
+and the span; this section is the measurement the bareness owes.
