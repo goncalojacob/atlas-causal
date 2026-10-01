@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "cancha-rayada",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "a9-place",
+      "point-from-event-item"
+    ],
+    "note": "The point is Q333088's own P625, which tools/import/wikidata.mjs read and could put no name to; the name is the one the cited article gives the ground — \"the Cancha Rayada plains, about seven kilometers away\" from Talca (\"Battle of Cancha Rayada (1818)\", revision 1370436071). No Wikidata item is claimed for the place itself."
+  },
+  "sources": [],
+  "names": [
+    "Cancha Rayada"
+  ],
+  "where": {
+    "lon": -71.645833303149,
+    "lat": -35.405459380154,
+    "precision": "point",
+    "label": "Cancha Rayada"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
