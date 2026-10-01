@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mannar-island",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q426532",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Mannar Island",
+    "pt": "Ilha de Manar"
+  },
+  "sources": [],
+  "names": [
+    "Mannar Island",
+    "Mannar",
+    "Ilha de Manar"
+  ],
+  "where": {
+    "lon": 79.83333333,
+    "lat": 9.05,
+    "precision": "region",
+    "label": "Mannar Island"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
