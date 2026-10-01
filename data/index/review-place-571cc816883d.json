@@ -5653,6 +5653,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "east-africa",
+      "kind": "place",
+      "names": [
+        "East Africa",
+        "África Oriental"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -8414,7 +8442,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 2,
       "id": "imjin-river",
       "kind": "place",
       "names": [

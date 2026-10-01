@@ -1742,6 +1742,12 @@
     },
     {
       "dissent": false,
+      "id": "abushiri-revolt--blockade-of-zanzibar--caused",
+      "kind": "edge",
+      "locator": "\"Blockade of Zanzibar\", revision 1371442681, \"Blockade — Early stages\""
+    },
+    {
+      "dissent": false,
       "id": "action-of-6-july-1746--battle-of-madras--enabled",
       "kind": "edge",
       "locator": "\"Action of 6 July 1746\", revision 1370426720, § Battle"
@@ -6275,6 +6281,12 @@
       "id": "operation-linebacker-ii--paris-peace-accords--enabled",
       "kind": "edge",
       "locator": "\"Operation Linebacker II\", revision 1374115791, § Aftermath — Outcome and assessments, Diplomatic"
+    },
+    {
+      "dissent": false,
+      "id": "operation-minden--operation-commando--enabled",
+      "kind": "edge",
+      "locator": "\"Operation Minden\", revision 1377831575, \"Aftermath\""
     },
     {
       "dissent": false,
@@ -13004,6 +13016,12 @@
     },
     {
       "dissent": false,
+      "id": "blockade-of-zanzibar",
+      "kind": "event",
+      "locator": "\"Blockade of Zanzibar\", revision 1371442681"
+    },
+    {
+      "dissent": false,
       "id": "bluff-cove-air-attacks",
       "kind": "event",
       "locator": "\"Bluff Cove air attacks\", revision 1370604761"
@@ -15293,6 +15311,12 @@
       "id": "operation-linebacker-ii",
       "kind": "event",
       "locator": "\"Operation Linebacker II\", revision 1374115791"
+    },
+    {
+      "dissent": false,
+      "id": "operation-minden",
+      "kind": "event",
+      "locator": "\"Operation Minden\", revision 1377831575"
     },
     {
       "dissent": false,

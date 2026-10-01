@@ -21935,3 +21935,384 @@ them Africa. **Start at row 921.** This stand supersedes the one of 16:07Z.*
   is not closed but is known empty** (deviation 1524).
 - **Deviation numbers: take the next above 1524.** `m42b` was at 1377 on
   1 October.
+
+## Batch 86 — the vein's tail, and the two rows in it that pass
+
+Rows **921 to 1008** were screened — the last 88 of
+`docs/m42-umbrella-children.md`, **88 articles read and none refused before
+reading** — and with them **the vein is exhausted**. No span gate ran on this
+stretch, because the vein's rows carry no dates and this fire's screen passed
+none; that is the limitation row 1008 below exposed, not a clean sweep. The 19:00Z stand said to
+budget nothing from the tail because it is the file's lowest sitelink counts
+and deviation 1524's stubs are thickest there. The tail paid **two**, which is
+better than its rate deserved and does not change the reading: 1,008 rows have
+now yielded **seven** records across batches 82 to 86.
+
+### What was written
+
+| | |
+| --- | --- |
+| `operation-minden` | `Q7097291`, 1951-09-08 to 1951-09-12, category `war`, place `imjin-river`, lane `asia`, filed under `korean-war` |
+| `blockade-of-zanzibar` | `Q134376352`, 1888-11 to 1889-10, category `war`, place `east-africa`, lane `africa`, filed under `scramble-for-africa` |
+
+Both filings are the item's own `P361` and neither raises the main count.
+`imjin-river` was **reused** on the item under A9 — it has been a place record
+since batch 53, written from `Q495534` for `battle-of-the-imjin-river` — and
+`east-africa` is **new**, written from `Q27407` with `precision: region`,
+`region: null` and `summary: null` under A15(3). Operation Minden carries its
+own `P625` (38.3167, 127.2333) and the import still took the `P276` river,
+which is the same reading batch 53 wrote down: the point is 77 km up the Imjin
+from the river item's point, which is the length of the thing and not a
+disagreement, and a place record wants a name the ground answers to.
+
+### The two edges
+
+> Following the expansion of the German East Africa Company over three years, a
+> revolt, known as Abushiri revolt, began in August 1888, which sparked the
+> initiative for a blockade by the Germans.
+
+> The successful implementation of Operation Minden led to the more large scale
+> Operation Commando, which involved a substantial part of I Corps.
+
+| edge | type | confidence | witness |
+| --- | --- | --- | --- |
+| `abushiri-revolt --> blockade-of-zanzibar` | `caused` | `probable` | "Blockade of Zanzibar", rev 1371442681, "Blockade — Early stages" |
+| `operation-minden --> operation-commando` | `enabled` | `probable` | "Operation Minden", rev 1377831575, "Aftermath" |
+
+The first opens on an order of events — *"Following the expansion…"* — and then
+states a cause, so **A15(5)'s refusal class does not reach it**: `isChronologyOnly`
+is false exactly because `sparked` is in `CAUSAL_MARKERS`. `caused` and not
+`enabled` because what the article says the revolt produced is the decision to
+blockade, and the German memorandum, the British accession of 5 November and the
+Portuguese and Italian ones the same article dates are that decision carried out.
+
+The second is the shape this vein almost never offers: **the record is the
+grammatical subject**, with no remove at all, which neither batch 82's edge nor
+batch 85's could manage. The article's own lead says it in one word — *"Operation
+Minden was the precursor to the much larger Operation Commando"*. `enabled` and
+not `caused` because what the article credits is the *successful implementation*:
+Minden left the line five kilometres north of the Imjin and I Corps standing
+where the larger advance could be mounted from, which is a thing made possible
+and not a thing compelled. Not `precondition-of` either, because the article
+states a positive "led to" and never argues Commando was impossible without it.
+
+Rule 4 passes at both and it is worth saying how, after deviation 1523: Minden is
+dated 1951-09-08 against Commando's 1951-10-02, so the same-year day comparison
+decides it; the Abushiri revolt carries no `date` at all, so the day comparison
+never runs and the year bound alone passes 1888 against 1888.
+
+**Both edges are inside an umbrella and neither crosses one** — Minden and
+Commando are both under `korean-war`, the revolt and the blockade both under
+`scramble-for-africa`.
+
+### What the other 86 rows refused, by class
+
+15 sentence hits in 88 articles; 2 are the edges above and 13 are not edges.
+
+| class | rows | the shape |
+| --- | --- | --- |
+| background boilerplate, the subject not the record | 5 | `Q7096760`, `Q7096780`, `Q7096794`, `Q7096859`, `Q7097371` — the *same sentence* in five Iraq War operation articles, on coalition errors leading to the Iraqi insurgency |
+| a cause stated of something that is not the record | 2 | `Q137885050` "in the aftermath of the Iranian Revolution **which** varyingly resulted in protests" — the marker governs the unrest's own outcome, not the link to the revolution; `Q4871914`, which is deviation 1525 |
+| third parties | 2 | `Q132745826` the Patriarch's negotiations with Russia before World War I; `Q126959794` a pasha who had served on the Mesopotamian Front |
+| comparisons | 1 | `Q132745826` "less well known than the Armenian genocide" |
+| concurrency | 1 | `Q4688008` "As the frontline battlefields raged at the Battle of Shanghai and Battle of Nanking" |
+| a homonym the screen could not tell apart | 1 | `Q140389960`, the Turkish invasion of Georgia, 1921: *"Turkish troops … on the Eastern Front entered Georgian territory"* means the Caucasus front of that year and the atlas's `eastern-front` is the Second World War's. The vein carries no `when` per row, so deviation 1480's span guard had nothing to decide on; a screen rebuilt from this file should read each candidate's `P580` into it |
+| a list and not an event | 2 | `Q4688008` *Aerial engagements of the Second Sino-Japanese War* and `Q126959794` *United Kingdom during the Turkish War of Independence* are surveys; neither would be importable even with an edge |
+
+## Deviation 1525 — the vocabulary has no type for one event ending another, and a row turned on it
+
+Row 931, `Q4871914`, the **Battle of Northern and Eastern Henan**, under
+`second-sino-japanese-war`, states its link to a held record as plainly as any
+row of the vein:
+
+> The Japanese advance continued until they were halted by the catastrophic 1938
+> Yellow River flood, which was caused by the Chinese Army diverting the Yellow
+> River into the Jialu and Huai Rivers.
+
+`1938-yellow-river-flood` is an active record of this atlas, filed under the same
+umbrella, so this is not a naming problem and not a span problem. **It is a
+vocabulary problem.** What the sentence states is that the flood *halted* the
+battle, and none of the five edge types says that: `caused`, `enabled`,
+`precondition-of` and `inspired` all run from a thing to a thing it brought
+about, and `reacted-to` runs the other way and would be a different claim —
+that the flood answered the advance, which this sentence does not say and the
+article's own framing (the Army diverting the river) only hints at.
+
+The brief forbids a new type and is right to: *"Five edge types exist
+specifically so everything does not collapse into plain causation."* So the row
+is refused and written down instead, because **it is the second refusal in two
+fires that is the atlas's own shape and not the article's** — deviation 1523 was
+rule 4 reading two overlapping intervals, this is the type vocabulary having no
+word for an ending. Both are one sentence from the owner away from being edges,
+and neither is rare: a war halted by a flood, a siege lifted by a relief column,
+an offensive stopped by a winter are all this shape.
+
+Two readings a person might take, and a fire may take neither on its own:
+
+1. **`reacted-to`, from the flood to the battle**, on the ground that the
+   article names the Chinese Army as the flood's author and a deliberate
+   inundation in front of an advancing army is an answer to it. That is a claim
+   about intent the quoted sentence does not make.
+2. **Nothing, and the row stays refused**, on the ground that "halted" is an
+   outcome of the battle and belongs in the battle's own prose rather than in an
+   edge.
+
+The honest position until the owner writes one is (2), which is what this batch
+did.
+
+## The `P828`/`P1542` vein, measured: 50 pairs, 34 already held, and not one of the 16 writable today
+
+*Measured on 1 October by the fire that exhausted the umbrella-children vein,
+as the first job the stand below gives its own second candidate question, and
+**written down in full so that no later fire has to query it again**.*
+
+The question: **of the causal links Wikidata states between two items this
+atlas already holds, how many are edges the atlas does not have?** It costs no
+article reads at all — one `wbgetentities` pass over the 1,255 active events
+that carry an item, 26 requests, about a minute — and it was never asked.
+
+### How to re-take it
+
+Read every active event's `wikidata` into a map, `wbgetentities` in chunks of
+50 with `props=claims`, and keep every `P828` (has cause), `P1542` (has
+effect), `P1478` (has immediate cause) and `P1536` (immediate cause of) whose
+value is also a held item. **Normalise to a direction before anything else**:
+`P828` and `P1478` are stated *on the effect*, so the edge runs object → subject;
+`P1542` and `P1536` are stated *on the cause*, so it runs subject → object.
+
+### What it found
+
+| | |
+| --- | --- |
+| held active events carrying an item | 1,255 |
+| raw claims between two held items | **69** (P828 26, P1542 36, P1478 4, P1536 3) |
+| distinct directed pairs | **50** |
+| pairs the atlas already holds as an edge | **34** |
+| pairs it does not | **16** |
+
+**The 34 are the reassuring half of the measurement.** Two thirds of what
+Wikidata states, this atlas had already read out of prose and written, and the
+types it chose for them — 24 `caused`, 5 `enabled`, 4 `precondition-of`, 1
+`reacted-to` — are a reasonable spread rather than everything collapsed into
+causation. The vein is not finding the atlas wrong; it is finding the atlas
+mostly already there.
+
+### The 16 it does not hold, and why each is refused today
+
+| from → to | property | refused by |
+| --- | --- | --- |
+| `world-war-ii` → `the-extermination-of-the-jews-1941-1945` | P1542 | A14's standing rule: parent to its own child, C8 |
+| `world-war-ii` → `soviet-invasion-of-poland` | P1542 | the same |
+| `lebanese-civil-war` → `sabra-and-shatila-massacre` | P1542 | the same |
+| `2006-lebanon-war` → `2006-hezbollah-cross-border-raid` | P1536 | the same, and the atlas holds the opposite edge |
+| `2014-pro-russian-unrest-in-ukraine` → `russo-ukrainian-war` | P1542 | child to its own parent — C8 from the other side |
+| `saur-revolution` → `afghan-conflict` | P1478, P1542 | the same |
+| `breakup-of-yugoslavia` → `war-in-bosnia-and-herzegovina` | P828 | **rule 4**: 1992-04-27 against 1992-04-06, deviation 1523's shape again |
+| `2011-south-sudanese-independence-referendum` → `comprehensive-peace-agreement` | P1536 | rule 4 (2011 against 2005), and the atlas holds the opposite edge |
+| `battles-of-khalkhin-gol` → `molotov-ribbentrop-pact` | P1542 | no witness — see below |
+| `belovezh-accords` → `full-scale-russo-ukrainian-war` | P1542 | no witness |
+| `paris-peace-conference` → `treaty-of-neuilly-sur-seine` | P1542, P828 | no witness |
+| `paris-peace-conference` → `treaty-of-sevres` | P1542, P828 | no witness |
+| `euromaidan` → `war-in-donbas` | P828 | no witness |
+| `revolution-of-dignity` → `war-in-donbas` | P1478 | no witness |
+| `world-war-i` → `russian-civil-war` | P1542 | no witness |
+| `1994-genocide-against-tutsi` → `operation-turquoise` | P828 | **not a refusal: the atlas already holds it** |
+
+**The last row is the measurement correcting itself and is worth keeping.**
+`operation-turquoise --reacted-to--> 1994-genocide-against-tutsi` has been in
+`data/edges/` all along, and a direction test that does not know this atlas's
+own vocabulary reads it as the opposite of Wikidata's claim. `reacted-to` is
+the one of the five types whose arrow runs from the answer to the thing
+answered — `vocab.js` carries it as `reads: 'answered by'` — so "Turquoise has
+cause: the genocide" and "Turquoise reacted to the genocide" are the same
+sentence. **A later fire re-taking this must fold `reacted-to` before diffing**,
+or it will report a contradiction that is a reading error.
+
+### The finding that matters: seven pairs clear every gate and still cannot be written
+
+Seven of the sixteen are refused by nothing structural. They are not
+parent-and-child in either direction, they pass rule 4, and Wikidata states
+them plainly. **Each one's own English article was then read for the sentence
+that states the link — both ends, lead and body, through the same
+`namesHeldEvents`/`statesACause`/`isChronologyOnly` screen every batch since 82
+has used — and not one of the fourteen articles has one.** The two sentences
+the screen returned are not the claim: *War in Donbas* on Yanukovych's decision
+to abandon the EU agreement, and *Russian Civil War* on seven million street
+children. Prose that names both events and states a cause between them is not
+there to quote.
+
+So an edge from this vein would rest on **the Wikidata statement alone**, and
+that is a standard this atlas has not set. **Sixteen edges in `data/edges/`
+already cite `wikidata` as a source and every one of them cites it beside a
+quoted Wikipedia sentence**, as the second pointer and never the only witness —
+`prelude-to-the-russian-invasion-of-ukraine--full-scale-russo-ukrainian-war--precondition-of`
+says so in its own words: *"The item says the same thing as a pointer,
+Q110116635 P156."* A2 names Wikidata as a source a batch may draw on; it does
+not say an item's bare claim is a witness an edge may stand on by itself.
+
+**This is an owner question and a fire may not settle it.** Stated as narrowly
+as it can be:
+
+> **C9.** May a batch write an edge whose only witness is a Wikidata statement
+> — `Q15860072 P828 → Q15733401`, cited with that locator and nothing else —
+> where no article of either end states the link in prose?
+
+The case for yes: the claim is the item's and not the assistant's, the
+explanation would quote a statement rather than argue a link, which is the same
+shape as the imported summaries the 2 September exception already allows, and
+`probable` under rule 22 says exactly how far it should be trusted. The case
+for no: an edge is "a small historiographical argument", and a property on an
+item is a pointer with no argument in it at all, so the explanation would have
+to be the assistant's own reasoning about why the link holds — which is the one
+thing CLAUDE.md says is not negotiable.
+
+**Until it is answered, these seven are written down here and not in
+`data/edges/`**, with their properties and locators, so that answering it costs
+one fire and no measurement:
+
+| edge | locator |
+| --- | --- |
+| `battles-of-khalkhin-gol` → `molotov-ribbentrop-pact` | `Q188925 P1542 → Q130796` |
+| `belovezh-accords` → `full-scale-russo-ukrainian-war` | `Q76986 P1542 → Q110999040` |
+| `paris-peace-conference` → `treaty-of-neuilly-sur-seine` | `Q199820 P1542 → Q269267`, and `Q269267 P828 → Q199820` |
+| `paris-peace-conference` → `treaty-of-sevres` | `Q199820 P1542 → Q182515`, and `Q182515 P828 → Q199820` |
+| `euromaidan` → `war-in-donbas` | `Q16335075 P828 → Q15224558` |
+| `revolution-of-dignity` → `war-in-donbas` | `Q16335075 P1478 → Q15733401` |
+| `world-war-i` → `russian-civil-war` | `Q361 P1542 → Q79911` |
+
+**And the three structural refusals are the same three the vein keeps finding.**
+Four of the sixteen are C8, two more are C8 read from the child's side, and one
+is deviation 1523's rule-4 shape. **Seven of sixteen — nearly half — are not
+refused by any source but by the atlas's own open questions.** That is the same
+proportion the umbrella vein reported in deviations 1523 and 1525, measured a
+second time on a completely different question, and it is the strongest thing
+either measurement says: *the supply is not the constraint and has not been for
+three fires. The constraint is four sentences the owner has not written yet* —
+C8, C9, rule 4 on overlapping intervals, and a type for an ending.
+
+## Where the run stands after batch 86, for the fire that picks it up
+
+*1 October, the import fire that claimed at 21:18Z. It screened the **last 88
+rows** of the vein — 88 articles read — wrote **two** records and two edges, one
+of them Africa, and **exhausted the vein**. This stand supersedes the one of
+19:00Z.*
+
+**The one thing this stand is for: there is no next batch in the vein.**
+`docs/m42-umbrella-children.md` is screened end to end, rows 1 to 1,008, across
+batches 82 to 86 and the three stands between them. **A fire that picks this up
+and goes looking for row 1,009 will not find one.** What it needs is a new
+question, and the rest of this stand is what a fire has to answer it with.
+
+**What the vein cost and paid, now that it is whole:** 1,008 rows, ~1,000
+articles read over five fires, **7 records and 7 edges** — two in batches 82
+and 83, three in 84 and 85, two here. One import per ~144 articles read. That
+is the honest rate for *this* question — the `P361` children
+of a held umbrella — and the three measurements inside it disagree usefully: the
+first 170 rows paid two, rows 421 to 920 paid one in 422, and the last 88 paid
+two. **Sitelink count did not predict yield.** What predicted it was whether the
+article has an Aftermath or a Background section that names another held record
+as a subject, which no property on the item exposes.
+
+**Four candidate next questions, in the order a fire should weigh them.**
+**The second is measured — this fire measured it, and the section above is the
+answer.** The other three are not started and not measured; each is a fire's
+own first job to measure before it imports.
+
+1. **The inverse of this vein: `P361` *parents* the atlas does not hold, of
+   items it does.** Every held event's own `P361` that is not a held record is a
+   candidate umbrella. A6 says the main count must not rise, so such an import
+   must itself be filed under something held — but where the chain is
+   grandparent-held, the middle term can come in without moving the main count.
+   This has never been asked and is one query.
+2. **`P1542` (has effect) and `P828` (has cause) between two held items.**
+   **This fire picked it and measured it before the fire ended; the section
+   immediately above this stand is the answer, and the short version is that
+   it is measured and closed to batches until the owner answers C9.** 50 directed
+   pairs, 34 of them edges the atlas already holds, 16 it does not, and not
+   one of the 16 writable today: four are C8, two are C8 from the child's
+   side, one is deviation 1523's rule-4 shape, one was a reading error of
+   `reacted-to`'s own direction, and the remaining **seven clear every gate
+   and have no witness but the item's bare claim**. Do not re-query it: the
+   seven are written out with their locators where a fire can write them the
+   day C9 is answered.
+3. **`P710` participants into actors**, which A11(a) already reads on a curation
+   fire but which no import fire has swept.
+4. **The `done`-cursor vein of deviation 1515**, which measured 167 ticked items
+   never written and 53 importable. It is the only vein with a number attached
+   and the number is small.
+
+**Everything else below is unchanged from the 19:00Z stand and still true.**
+
+- **The write and the network are both open.** Deviations 1516 and 1518 remain
+  over. `node`'s `fetch` answers where `curl` does not (deviation 1520).
+- **The screen is a script and lives in the scratchpad, so every fire rewrites
+  it.** The method: `tools/import/chronology.mjs`'s own `namesHeldEvents`,
+  `statesACause` and `isChronologyOnly` over every sentence of the article's
+  plain-text extract, with the row's `P361` parents and its held umbrella
+  excluded. 88 articles in about four minutes. **One correction this fire owes
+  it**, from row 1008 above: pass each candidate's own start year as `when`, or
+  deviation 1480's span guard cannot tell a 1921 front from a 1941 one.
+- **Two structural refusals are now the binding constraint and both are the
+  atlas's own.** Deviation 1523 (rule 4 on two overlapping intervals) and
+  deviation 1525 (no edge type for an ending). Between them they took two edges
+  that were stated outright, with a held record as the subject, in five fires
+  that found seven. **That is more than a fifth of the yield lost to the model
+  and not to the sources**, and two sentences from the owner release both.
+- **Deviation 1521 is over and the branch's check is green again.** The 19:00Z
+  stand left `tests/m65-browser.test.mjs` red on *"choosing an event narrows all
+  three views to it, its parts, its parent and one hop"* — `map left out
+  estado-novo-1933-1974` — and said the fix was a display change this run may
+  not make. It was made on `m0`, as commit 1d4c3845, *"the map is asked for the
+  chosen event; its umbrellas only where the frame holds them"*: M89 §2 frames
+  the map's camera on the choice's own marks, so an umbrella a continent away is
+  outside the frame and is not drawn, and the map now asserts the chosen event
+  while the graph and the timeline keep asserting every umbrella. STEP 1's merge
+  brought it onto this branch and the suite passes 3 of 3 here. **The whole
+  check is green for the first time in four fires**: 1,940 of 1,940 pure and
+  **313 of 313 browser**, nothing skipped, run the way M63 runs them. **Whether the
+  frame should hold the umbrellas too is noted on that commit as a lane A
+  question**, so a fire that sees this test go red again on a record with a
+  distant parent should read 1d4c3845 before calling it a corpus fault.
+- **Two owner questions are still open and this fire met neither**: C8, and
+  A6's span rule against the period umbrellas.
+- **Do not re-screen**: **the whole of `docs/m42-umbrella-children.md`, rows 1
+  to 1,008**; the 17 children of `arab-spring` and `afghan-conflict` under
+  deviation 1522; `Q87138`, `Q29269`, `Q185729`, `Q2659185`, `Q276172`,
+  `Q5033913` (deviation 1523), `Q4871914` (deviation 1525), `Q17149843` (a
+  redirect, A15(8)); `scramble-for-africa`, `decolonisation-of-africa`,
+  `decolonisation-of-asia`, `indochina-wars`.
+- **Three identity fills are still waiting for a curation fire, not a batch.**
+  `east-timor-invasion-1975` is `Q2583734`, `spanish-american-war-1898` is
+  `Q12583`, `cuban-war-of-independence-1895-1898` is `Q1514908`; the East Timor
+  record needs A7 in the same pass.
+- **The candidates sweep (A2) overwrites a ticked file.** `--candidates` writes
+  `docs/wikidata-candidates.md`, which carries M41a's 150 ticks and is an
+  *input*. Pass `--to` a scratch path.
+- **Unchanged and still the owner's:** `Q8683`, the Cold War; the two Camp David
+  records' `americas` lane and the place classes that would place them;
+  deviations 1517 and 1512, together; may a run identify an event named by
+  description where only one held record can be meant (five refusals);
+  deviation 1474's items; the placeless events; deviations 1423, 1461, 1473,
+  1478, 1482, 1506, 1508 and 1511; A11's area clause; A15(12)'s uncategorised
+  events; the EEC's closing year; `origin/m42b`'s place placeholder summaries;
+  and C8.
+- **Deviation numbers: take the next above 1525.** `m42b` was at 1377 on
+  1 October.
+
+### Counts after batch 86
+
+- active events **1,387** (was 1,385); **main 229** — unchanged, as A6 requires;
+  filed 1,158.
+- per lane, active / main: Europe 555/85, Americas 393/56, **Asia 221/57** (+1),
+  **Africa 218/31** (+1).
+- active edges **1,194** (was 1,192), all between two active events.
+- components **400** (unchanged); **largest connected component 774**
+  (unchanged — both edges land outside it).
+- **edges crossing an umbrella (A15(11)): 598** (unchanged — both of this
+  batch's edges are inside one), inside one **596** (was 594).
+- active events with no edge at all: **306** (was 307).
+- validator **0 errors, 601 warnings** (was 602), and `--index` clean. Neither
+  new record warns; the warning that went is a `degree-zero` one.
+- A15(2)'s recache: **2,914** `wikipedia-en` citations on active records,
+  **2,836** on disk at the revision cited, **0 that should be on disk and are
+  not.**

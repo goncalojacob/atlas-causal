@@ -4583,6 +4583,15 @@
         }
       ]
     },
+    "operation-minden--operation-commando--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "operation-musketeer-1956--closure-of-the-suez-canal-1956-1957--caused": {
       "from": "git",
       "versions": [

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "abushiri-revolt--blockade-of-zanzibar--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Blockade of Zanzibar\", revision 1371442681, \"Blockade — Early stages\""
+    }
+  ],
+  "from": "abushiri-revolt",
+  "to": "blockade-of-zanzibar",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The blockade's own article gives the revolt as what started it, with the revolt as the grammatical subject of the causal clause: \"Following the expansion of the German East Africa Company over three years, a revolt, known as Abushiri revolt, began in August 1888, which sparked the initiative for a blockade by the Germans.\" The sentence opens on an order of events — the Company's expansion, then the revolt — but it does not stop there: `sparked the initiative for` is a cause stated, which is why A15(5)'s refusal class does not reach it. `caused` and not `enabled` because what the article says the revolt produced is the decision to blockade and not merely the conditions for one; the German memorandum that followed, and the British, Portuguese and Italian accessions the same article dates to November 1888, are that decision being carried out. `probable` and not `consensus` under rule 22 and A2 — the one witness is a Wikipedia record. Both ends are filed under `scramble-for-africa`, so this edge is inside an umbrella and does not cross one.",
+  "dispute": null
+}

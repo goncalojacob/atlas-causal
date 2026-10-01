@@ -918,6 +918,15 @@
         }
       ]
     },
+    "blockade-of-zanzibar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "boer-wars": {
       "from": "git",
       "versions": [
