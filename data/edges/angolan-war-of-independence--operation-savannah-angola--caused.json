@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "angolan-war-of-independence--operation-savannah-angola--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Savannah (Angola)\", revision 1370699279, lead"
+    }
+  ],
+  "from": "angolan-war-of-independence",
+  "to": "operation-savannah-angola",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The operation's own lead states what it came out of, and **the operation is the sentence's subject**: \"It was part of the South African Border War and arose due to the Angolan War of Independence.\" \"Arose due to\" is a claim that the war of independence brought the incursion about and not merely that it came first, so `caused` and not `precondition-of`; the sentence's other clause names the South African Border War, which this atlas does not hold, so nothing is written from it. The same lead's third sentence — \"The operation also materially influenced the subsequent Angolan Civil War\" — is a second edge this article states and it is **not written**: the civil war is the record's own `parent`, and whether a batch may draw an edge between a part and the whole it is part of is the owner's open question C8, which A14 answers \"not yet\". `probable` and not `consensus` under rule 22 and A2 — the one witness is a Wikipedia record.",
+  "dispute": null
+}
