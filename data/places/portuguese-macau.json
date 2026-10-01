@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "portuguese-macau",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3916279",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Portuguese Macau",
+    "pt": "Macau português"
+  },
+  "sources": [],
+  "names": [
+    "Portuguese Macau",
+    "Província Ultramarina de Macau",
+    "Macau português"
+  ],
+  "where": {
+    "lon": 113.54611111111112,
+    "lat": 22.200555555555557,
+    "precision": "region",
+    "label": "Portuguese Macau"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

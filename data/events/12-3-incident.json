@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "12-3-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3182793",
+  "wikipedia": {
+    "en": "12-3 incident",
+    "pt": "Motim 1-2-3"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-01"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3182793"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"12-3 incident\", revision 1377636747"
+    }
+  ],
+  "title": "12-3 incident",
+  "summary": "The English Wikipedia article \"12-3 incident\", at revision 1377636747, opens: \"The 12-3 incident was a series of political demonstrations and riots against Portuguese colonial rule in Macau which occurred on December 3, 1966. The incident, inspired by the Cultural Revolution in the People's Republic of China, occurred as a direct response to a violent police crackdown by colonial authorities against local Chinese protesters demonstrating against corruption and colonialism in Macau. Eight protesters were killed by the Macau Police.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3182793, imported by tools/import/wikidata.mjs. The item's own description reads \"1966 Macau riot\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1966,
+    "end": 1967,
+    "date": "1966-11-18",
+    "endDate": "1967-01-28"
+  },
+  "place": "portuguese-macau",
+  "region": null,
+  "regionNote": null,
+  "parent": [
+    "estado-novo-1933-1974"
+  ],
+  "category": "revolution",
+  "actors": []
+}
