@@ -17206,22 +17206,37 @@ experiment and that no record can fix.*
 **Africa and Asia stand at 222 and 216 against A10's 303**, so A15(1)'s pause
 holds and nothing of Europe before 1900 is this lane's to import.
 
-*Four commits: the `origin/m42` merge, batch 63's records, its index, the eighth
-edge with the M67 A1 note the test asked for, that index, and this stand with the
-batch section above it. `validate --index` is clean at **0 errors, 597 warnings**
+*Seven commits: the claim, the `origin/m42` merge, batch 63's records, its index,
+the eighth edge with the M67 A1 note the test asked for, that index, and this
+stand with the batch section above it. `validate --index` is clean at **0 errors, 597 warnings**
 (599 before the eighth edge, which took two records off the degree-zero list).
 A15(2) reports **0 revisions that should be on disk and are not**, 2,844 of 2,920
 citations on disk at the revision cited and 76 unholdable beside a more-cited
 revision of the same item.*
 
-*The suite at this head is **1,940 pure tests, 0 failed, 0 skipped**, and **313
-browser tests across the 40 suites, 2 failed** — the two of
+*The suite, measured at this head and run the way the check runs them: **1,940
+pure tests, 1,940 passed, 0 failed, 0 skipped**, and **313 browser tests across
+the 40 suites, 311 passed, 2 failed, 0 skipped**. At the head before the eighth
+edge the pure pass had **one failure** — `tests/m67.test.mjs`, on the batch's own
+bare record — fixed in the next commit by writing the section M67 A1 asks for in
+`docs/m67-umbrellas.md`. The two that remain are the two of
 `tests/graph-labels-browser.test.mjs` that deviation 1386 is about, and the same
-two the check reports. `tests/m67.test.mjs` failed once, on the batch's own
-record, and was fixed by writing the section M67 A1 asks for in
-`docs/m67-umbrellas.md`; it is green. The check went **red on run 2242**
+two the check reports. The check went **red on run 2242**
 (`4515d4f9`) for the same two tests, which were read in the job's own log and not
 assumed; runs 2239 and 2241 were cancelled by a newer push.*
+
+**One observation for the other lane, since it costs nothing to write down.**
+`docs/m42-pool.md`'s deviations 1516 and 1518 report the import tool refused by
+this environment's permission layer on two fires running. **It was not refused
+here.** This fire appended eight QIDs to `data/imports/wikidata-seeds.json` →
+`items` and ran `node tools/import/wikidata.mjs --import --batch 10` against the
+live service with no denial at all: 14 calls, ten records created, twelve leads
+cached. What 1518 records being denied is narrower than "the import tool" — it is
+**taking a QID back out of `wikidata-state.json`'s `runs.import.done` list**,
+which is an edit that undoes a cursor. Appending to `items` needs no such edit,
+because `nextBatch()` takes everything in `items` that is not in `done`, so a new
+QID is pending by arithmetic. A lane that wants to re-import an item it has
+already done is blocked; a lane that wants to import a new one is not.
 
 ### The next fire's moves, in order
 
