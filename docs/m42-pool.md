@@ -19851,3 +19851,115 @@ record carrying `Q2885072`.
 A15(2)'s recache, the batch's last step: **2,893 `wikipedia-en` citations on
 active records, 2,817 on disk at the revision cited, 0 that should be on disk and
 are not.**
+
+### The suites and the check, for the whole fire
+
+Both suites green on this fire's final tree, run the way the check runs them
+since M63: **2,253 tests, nothing skipped — 1,940 pure and 313 browser**,
+neither needing a second run. **No test was added, because no code changed**:
+every rule this fire leaned on was already written. `tests/m42-filing.test.mjs`
+and `tests/m62.test.mjs` were run after each of the three filings and the only
+assertion that ever failed was the stale-index one, which is deviation 798's
+order doing its job — records committed, then the index rebuilt, then the index
+committed.
+
+**The check is green on this fire's head**: run **2218** of `validate.yml`,
+commit `9e7efc11`, conclusion **`success`**. Runs 2216 and 2217 were cancelled by
+the next push, which is deviation 1258's chain and costs nothing. Run 2215, on
+the merge of `origin/m0`, was green too.
+
+## Where the run stands after batches 77, 78 and 79, for the fire that picks it up
+
+*1 October, the import fire that claimed at 06:17Z. **Three batches, three
+records, three edges** — the first fire since 25 September to import more than
+one thing, and what made it possible was asking three more held umbrellas the
+question the 30 September stand left.*
+
+**What is open, in the order a fire should weigh it:**
+
+- **The method works and there are seven umbrellas left to ask.** A held
+  umbrella's own `prop=links`, screened for event-shaped titles, resolved to
+  items, then **every surviving article read whole through `statesACause()` and
+  `namesHeldEvents()` over the live corpus** — that is the whole of it, and it
+  produced one import per sweep from three sweeps. Asked so far:
+  `scramble-for-africa` (30 September), `decolonisation-of-africa`,
+  `decolonisation-of-asia`, `indochina-wars`. **Not yet asked:** `arab-spring`,
+  `afghan-conflict`, `interwar-period`, `third-portuguese-republic-since-1974`,
+  and M42b's three American umbrellas. `afghan-conflict` is the obvious next one
+  for the Asia lane and `arab-spring` for Africa's, and the three scripts are in
+  this fire's scratchpad shape: sweep the links, resolve the titles to items in
+  chunks of 40, read each article at its current revision, scan every sentence.
+- **The screen that matters is the edge and not the span, and the wide umbrellas
+  prove it.** `decolonisation-of-africa` refused five of eight candidates on the
+  edge and three on the span and the class; `decolonisation-of-asia`, whose span
+  is 1898–2002, refused twenty-one of twenty-four and **none on the span**. A
+  fire that budgets by "candidates inside the span" will overcount what it can
+  use by about five to one.
+- **The by-title screen misses records the atlas holds, and the causal scan is
+  what catches them.** `Geneva Conference (1954)` is `geneva-conference` and
+  `San Francisco Peace Treaty` is `treaty-of-san-francisco`: both were in the
+  "unheld" column and both were found only because their own first sentences
+  named the atlas's own record. **Fold the item's `enwiki` sitelink title as well
+  as the link title** and this gets cheaper; the held index this fire built
+  already folds `wikipedia.en`, and the misses were redirects the link list gives
+  under a third name.
+- **Deviation 1514 is the one a fire should act on and it is cheap.** `Q2885072`
+  sat in `wikidata-state.json`'s `import.done` list with **no record on the
+  branch carrying it** — ticked as a candidate before the class table held
+  `Q750215`, refused, marked done. It was the most prominent record this fire
+  imported, 51 sitelinks, and it was sitting behind a cursor. **There are 1,805
+  ids in that list and nobody has asked how many more are in the same
+  position.** One pass over `done` against the records on disk would name every
+  one of them, and each is a candidate this atlas already decided it wanted. That
+  measurement is the single highest-yield thing left on this list.
+- **Deviation 1512 is a decision, not a bug, and it is worth putting to the
+  owner.** `spanFromTitle()` corrects an interval and cannot supply one, so an
+  item with no date at all is refused before its article's title is read.
+  `Q2082182`, the Addis Ababa Agreement of 1972, is the case: 20 sitelinks, a
+  class the table holds, **two edges waiting in its own article** — the lead on
+  what it ended (`first-sudanese-civil-war`) and § Termination on what its
+  abolition initiated (`second-sudanese-civil-war`) — and no `P580`, `P582` or
+  `P585` on the item. Whether a run may date a record from its article's own
+  title where the item asserts nothing is the question; A7 already lets a run
+  read a span from a cited article, so the answer is probably yes, and it is one
+  line in front of one test.
+- **Naming by description is now the standard refusal and it has three cases.**
+  Batch 76 refused the First Moroccan Crisis and the Agadir Crisis on it; this
+  fire refused the **1960 South African republic referendum** (its article names
+  `congo-crisis` as *"the eruption of the former Belgian Congo into bloody civil
+  war following independence"*) and the **Italo-Ethiopian War of 1887–1889** (its
+  article names `first-italo-ethiopian-war` as *"another Italo-Ethiopian War"*).
+  Each is a sound causal sentence whose object the atlas holds under a different
+  name. **Four refusals is enough to be a question rather than a judgement call**,
+  and it is the owner's or a reviewer's: may a run identify an event named by
+  description where only one held record can be meant?
+- **The Scramble for Africa's sixteen are read to the end and the vein is
+  closed.** Do not re-screen it. Four of the thirteen this fire read are the
+  Portuguese campaigns in Angola and Mozambique and their articles are 686 to
+  2,921 characters with no causal prose at all: **this atlas's own subject is not
+  the same thing as a record that can earn an edge.**
+- **Deviation 1513: the atlas holds no Cold War record.** `Q2354629`'s `P361`
+  names `Q8683` and nothing on this branch carries it, although A15(13) names a
+  `cold-war` record among the six whose Portugal paragraph it cut. Either it is
+  M42b's and has not landed, or the amendment named something already gone. It is
+  a hole a filing found, and the Cold War is an umbrella a great many of this
+  corpus's events would fit.
+- **The two lanes are drawing deviation numbers from one line and will collide.**
+  This fire took 1512 to 1514 on the pool file's own instruction; `m42b` wrote
+  1374 to 1377 on the same morning. The blocks overlapped once before and
+  `STATUS.md` says so at the M42b renumbering; whoever lands the two branches
+  will have to renumber again. **A fire should keep taking the next above what
+  this file says and leave the renumbering to the landing**, which is what the
+  last six fires did.
+- **Unchanged and still the owner's:** A6's lane rule against the period
+  umbrellas and the four filings it refuses; deviation 1474's items whose class is
+  not a place of this atlas, which refused both of this fire's own place lookups;
+  the 60 placeless events whose only located thing is their own point; deviations
+  1473, 1478, 1482, 1506 and 1508; `execution-of-the-romanov-family` and
+  deviation 1423; A11's area clause; A15(12)'s uncategorised events; the EEC's
+  closing year; deviation 1461's two display faults; `origin/m42b`'s place
+  placeholder summaries; deviation 1511's 182 `naturalearth.mjs --places`
+  matches; and C8, whose clearest single line is still
+  `gulf-of-tonkin-incident`.
+- **Deviation numbers: take the next above 1514.** This fire wrote 1512, 1513 and
+  1514.
