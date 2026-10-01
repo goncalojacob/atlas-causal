@@ -24366,6 +24366,7 @@ M42 started 2026-10-01T13:13:27Z by scheduled
 M42b started 2026-10-01T16:36:56Z by scheduled
 M42 started 2026-10-01T16:07:55Z by scheduled
 M42b started 2026-10-01T18:52:52Z by scheduled
+M42b started 2026-10-01T21:17:30Z by scheduled
 
 **M42b batch 65 — Asia's seventeenth century, from the Dutch–Portuguese War's Asian theatre, 1 October.**
 The trailing cells in this partition were **africa's and asia's 15th centuries,
