@@ -7019,6 +7019,15 @@
         }
       ]
     },
+    "world-war-ii--malayan-emergency--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "world-war-ii--massacres-of-poles-in-volhynia-and-eastern-galicia--enabled": {
       "from": "git",
       "versions": [

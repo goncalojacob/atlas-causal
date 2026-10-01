@@ -32849,6 +32849,28 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "world-war-ii",
+      "id": "world-war-ii--malayan-emergency--precondition-of",
+      "kind": "edge",
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "malayan-emergency",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],

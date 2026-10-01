@@ -14750,6 +14750,15 @@
         }
       ]
     },
+    "malayan-emergency": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "march-on-rome": {
       "from": "git",
       "versions": [

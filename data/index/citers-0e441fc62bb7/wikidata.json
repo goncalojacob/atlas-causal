@@ -6968,6 +6968,12 @@
     },
     {
       "dissent": false,
+      "id": "malayan-emergency",
+      "kind": "event",
+      "locator": "Q2354629"
+    },
+    {
+      "dissent": false,
       "id": "mali-war",
       "kind": "event",
       "locator": "Q2946372"

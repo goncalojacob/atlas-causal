@@ -9206,6 +9206,18 @@
     },
     {
       "dissent": false,
+      "id": "world-war-ii--malayan-emergency--precondition-of",
+      "kind": "edge",
+      "locator": "\"Malayan Emergency\", revision 1373880340"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-ii--malayan-emergency--precondition-of",
+      "kind": "edge",
+      "locator": "\"Malayan Emergency\", revision 1373880340, § Socioeconomic issues (1941–1948)"
+    },
+    {
+      "dissent": false,
       "id": "world-war-ii--massacres-of-poles-in-volhynia-and-eastern-galicia--enabled",
       "kind": "edge",
       "locator": "\"Massacres of Poles in Volhynia and Eastern Galicia\", revision 1372344283, § lead and § Background"
@@ -14459,6 +14471,12 @@
       "id": "mahsa-amini-protests",
       "kind": "event",
       "locator": "\"Mahsa Amini protests\", revision 1375202189"
+    },
+    {
+      "dissent": false,
+      "id": "malayan-emergency",
+      "kind": "event",
+      "locator": "\"Malayan Emergency\", revision 1373880340"
     },
     {
       "dissent": false,
