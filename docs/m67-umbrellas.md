@@ -1296,3 +1296,40 @@ The five events filed under it — `philippine-declaration-of-independence`,
 it as a second parent under A8 — `first-indochina-war` and
 `east-timor-invasion-1975` — are argued there, one line each, each from the same
 revision.
+
+## M42 batch 81, 1 October — two treaties that name neither, and the gate that is why
+
+`camp-david-accords` and `egypt-israel-peace-treaty` are both filed under
+`arab-israeli-conflict` and **neither names an actor nor a place.** Both gaps are
+the import's rules working rather than failing, and each has a different cause.
+
+**The place.** A9 as A12 orders it reads the item's own `P625` first, then `P276`,
+`P131`, `P17`. Neither item has a `P625`. Both have a `P276` — `Q309202`, Camp
+David, and `Q35525`, the White House — and **both were refused because none of
+their classes is a place class this atlas holds**: a presidential retreat and an
+official residence are buildings, and the class table is data a person argues
+with and not something a batch widens on its own. The Accords have no `P17` at
+all. The treaty has two, `Q79` and `Q801`, and **A15(6) refuses a `P17` country
+where the item names more than one** — which is exactly the case it was written
+for: a treaty between Egypt and Israel does not happen in either of them, and
+putting it in one would have asserted a side.
+
+So there is no place record to reach for, and this atlas does not invent one. What
+the records carry instead is a **lane written on purpose**, `americas` for both,
+which A15(7) derives from the first located step of the `P276` chain: both
+treaties were signed in the United States. That the lane and the subject disagree
+is recorded in `docs/m42-pool.md` as a question for the owner, together with the
+event-level region override that exists for it; a fire did not settle it.
+
+**The actors.** The Wikidata import never writes `actors` — it is one of the
+fields `tools/import/identity.mjs` refuses to touch — so every record it creates
+arrives with none, and a reviewer adds them. Egypt, Israel and the United States
+are the obvious three and all three are held actors; naming them is a person's
+write on `review.html` and not a batch's.
+
+**Why each belongs under the umbrella anyway**, which is what this document is
+for: the filing rests on the items' own `P361` chain and not on an actor or a
+point. Both name `Q4783126`, *Arab–Israeli peace projects*, whose own `P361` is
+`Q8669` — the item `arab-israeli-conflict` carries. The umbrella's span runs from
+15 May 1948 and is open, so 17 September 1978 and 26 March 1979 are both inside
+it. `docs/m62-umbrellas.md` → "Batch 81" is the filing argued in full.
