@@ -529,3 +529,27 @@ whoever reads that gap rather than a filing this fire could make.
 Nothing propagates one step down: the record is new and has no children.
 
 **Main is 229 before and 229 after.**
+
+## Batch 79 — the Cambodian genocide, and the weakest of the three filings
+
+*1 October, the same import fire.*
+
+| record | parent | why that umbrella |
+| --- | --- | --- |
+| `cambodian-genocide` | `indochina-wars` | By span and lane it is the only umbrella that fits: 17 April 1975 to 7 January 1979, inside the umbrella's 1945–1991, lane `asia` for both. `cambodian-civil-war` ends on the very day the genocide begins and `cambodian-vietnamese-war` begins three years into it, so neither contains it. The argument is the umbrella's own article, whose subject is *"a series of wars which were waged in Indochina from 1945 to 1991, by communist forces"* and which names the regime that conducted the genocide as a party to those wars: *"The Cambodian–Vietnamese War began when Vietnam invaded Cambodia and deposed the genocidal Khmer Rouge regime"* (`"Indochina wars"`, revision 1373921212). |
+
+**This is the weakest of this fire's three filings and it is worth saying so.**
+The umbrella's article links the Cambodian genocide on the adjective *genocidal*
+and not on its own title, so the sentence names the thing by what it was rather
+than by what it is called here. What carries the filing is not that sentence
+alone but that the war the sentence is about — `cambodian-vietnamese-war` — is
+itself filed under this umbrella, and the genocide's own article says the
+genocide precipitated it. A genocide filed under the war it belongs to is this
+atlas's established practice: `herero-and-nama-genocide` sits under
+`herero-wars` and `massacre-of-arabs-during-the-zanzibar-revolution` under
+`zanzibar-revolution`.
+
+A reviewer who disagrees should move it rather than unfile it: the alternative
+is a main event, and A6 refuses that without a reason.
+
+**Main is 229 before and 229 after.**

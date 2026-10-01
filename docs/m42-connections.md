@@ -5925,3 +5925,21 @@ overstate it.
 shares no parent.
 
 `probable`: Wikipedia is the only witness.
+
+## Batch 79 — one edge, and the word the article uses
+
+| from | type | to | confidence | the sentence that argues it |
+| --- | --- | --- | --- | --- |
+| `cambodian-genocide` | caused | `cambodian-vietnamese-war` | probable | *"Additionally, the Khmer Rouge conducted many cross-border raids into Vietnam, where they slaughtered an estimated 30,000 Vietnamese civilians. ... This caused an urgent response from the Vietnamese government, precipitating the Cambodian–Vietnamese War in which the Khmer Rouge was ultimately defeated."* — "Cambodian genocide", revision 1377684919, § Vietnamese; and *"The Cambodian–Vietnamese War began when Vietnam invaded Cambodia and deposed the genocidal Khmer Rouge regime"* — "Indochina wars", revision 1373921212 |
+
+**`caused` and not `precondition-of`, for once, because the article uses the
+word.** The two edges this fire wrote before it are preconditions because their
+articles describe what a thing left behind; this one says *caused* and then names
+the war in the same sentence. Two witnesses, each at its own revision, saying it
+from each end.
+
+**It does not cross an umbrella** (A15(11)): both ends are filed under
+`indochina-wars`, so it is one of the 591 inside one. It is siblings and not
+parent-to-child, so A14's standing C8 rule is untouched.
+
+`probable`: both witnesses are Wikipedia records.

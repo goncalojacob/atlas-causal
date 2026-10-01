@@ -19746,3 +19746,108 @@ A15(2)'s recache, the last step of the batch and over the batch's own citations:
 cited, 0 that should be on disk and are not.** The 76 the cache cannot hold
 beside a more-cited revision of the same item are A15(2)'s own accepted state and
 unchanged by either batch.
+
+## Batch 79 — the Cambodian genocide, and a cursor that said a record existed
+
+*1 October, the same import fire. **Asia again**, because Africa's own vein is
+spent for this fire and the two lanes were level at 215.*
+
+### The sweep: `indochina-wars`'s own links
+
+The fourth umbrella asked, and the first whose own article is short:
+
+| | |
+| --- | --- |
+| mainspace links that exist | **136** |
+| not held by article title | **119** |
+| event-shaped by name | **31** |
+| read whole for a causal sentence naming a held event | **10** |
+| imported | **1** |
+
+A short article is not a poor one. Ten read, four with surviving sentences, and
+**the one with 51 sitelinks is the one that earns its edge**.
+
+The three that do not:
+
+- **`Vietnamese famine of 1944–1945`** names `world-war-ii` in its own first
+  sentence, but as *when* and *where* the famine happened — *"a famine that
+  occurred in northern Vietnam in French Indochina during World War II from
+  October 1944 to late 1945"* — and not as a cause. A sentence that survives
+  `statesACause` because it contains "during" is not an argument.
+- **`Third Indochina War`** names `paris-peace-accords` as what ended it, which
+  runs the wrong way for a record whose span would contain the accords.
+- **`Insurgency in Laos`** states a cause whose object is American involvement in
+  Laos and not the insurgency: *"When the French withdrew from Indochina shortly
+  after their defeat in the Battle of Dien Bien Phu, the Americans became
+  increasingly involved in Laos."*
+
+### The record
+
+| record | item | revision cited | filed under | place | lane |
+| --- | --- | --- | --- | --- | --- |
+| `cambodian-genocide` | `Q2885072` | 1377684919 | `indochina-wars` | `cambodia-q424` (reused) | asia |
+
+50 sitelinks — the most prominent record this fire imported — 17 April 1975 to 7
+January 1979, `category: death` from `P31` `Q750215` (mass murder) through the
+class table, which is the reading M42b batch 6 argued when it added that class.
+A9 reused the existing `cambodia-q424` rather than writing a place: the chain
+refused `Q330988` (Democratic Kampuchea, whose class is not a place of this
+atlas, deviation 1474's class again) and reached `P17` `Q424`. The filing is
+argued in `docs/m62-umbrellas.md` and is **the weakest of this fire's three**;
+the document says why.
+
+`cambodian-genocide --caused--> cambodian-vietnamese-war`, `probable`, argued in
+`docs/m42-connections.md`. `verdictFor()` ran on both quotes before the edge was
+written: both `write`. **It does not cross an umbrella** — both ends are filed
+under `indochina-wars` — which is the first edge of this fire that does not, and
+A15(11) asks for the number either way.
+
+### Deviation 1514 — a cursor that says `done` where no record exists, and an `items` list that repeats
+
+Two faults, both found in one command, both the import's own bookkeeping.
+
+**First: `Q2885072` was in `wikidata-state.json`'s `import.done` list and no
+record on this branch carried it.** `docs/wikidata-candidates.md` line 1862 has
+it ticked, 51 sitelinks, class `mass murder` — and `Q750215` was not in the class
+table until M42b batch 6, so the run that ticked it was refused by the table and
+marked the item done anyway. **A `done` cursor is not evidence that a record
+exists.** This fire removed the one entry and re-ran, which is a correction to a
+file the tool writes and not to data; the question of how many more of the 1,805
+`done` items are in the same position is a measurement for a later fire and is
+worth making, because every one of them is a candidate the atlas already decided
+to want.
+
+**Second: `items` repeats and the import does not notice.** `Q2885072` was
+already in the seeds `items` list; adding it again made the list hold it twice,
+the import read *"2 item(s) this batch"*, and it **created two records from one
+item** — `cambodian-genocide` and `cambodian-genocide-q2885072`, each with the
+same summary at the same revision. The second pass of a single run does not see
+the record the first pass just wrote. The duplicate was deleted before anything
+was committed and the duplicate `items` entry taken back out; **nothing of this
+reached the index or the branch.** A fire that adds an item to that list should
+check it is not there, and a fire with a spare hour could make the tool refuse a
+repeated id outright.
+
+### Counts
+
+Before → after this batch:
+
+- **active events 1,376 → 1,377**; **main 229 → 229, unmoved**; filed 1,147 →
+  1,148.
+- **per lane, active / main**: Europe 555/85 and Americas 391/56 unchanged,
+  Africa 215/31 unchanged, **Asia 215/57 → 216/57**. Asia is one ahead of Africa
+  and the next batch is Africa's.
+- **active edges 1,183 → 1,184. Largest connected component 767 → 768.**
+  Components 400 → 400.
+- **Edges crossing an umbrella (A15(11)): 593, unchanged**; inside one 590 → 591.
+- Active events with no edge at all: **307, unchanged** for the third batch
+  running.
+- **Candidates left unconnected (A15(1)): 9** from this sweep.
+- Validator **0 errors, 601 warnings** — unchanged for the third batch.
+
+A11(b)'s partition check: `origin/m42b` holds no `cambodian-genocide` and no
+record carrying `Q2885072`.
+
+A15(2)'s recache, the batch's last step: **2,893 `wikipedia-en` citations on
+active records, 2,817 on disk at the revision cited, 0 that should be on disk and
+are not.**
