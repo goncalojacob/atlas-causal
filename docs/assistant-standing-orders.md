@@ -124,6 +124,19 @@ each hold A10's 303 active events. Part A's findings, if any need code, are
 M89, gated on M88 done. Lane A then: land M88, M89, and keep the snapshots
 daily until the owner returns.
 
+**1 October, 08:00 Lisbon (added by the assistant).** The owner, back on 30
+September, said "Stop at 8am": the assistant's supervision loop stopped at
+07:00Z on 1 October. Between 25 September and 30 September the landing
+fallback routine (`trig_0136jn2YgnxH85MJ9BRBP9Nr`, cron :50, still enabled)
+landed M88 (PR #33), M89 (PR #34) and the daily snapshots up to PR #38; the
+assistant landed the 1 October curation snapshot (PR #39) because the
+routine skipped it. Left running: M42, M42b and the landing fallback.
+Disabled: every lane A routine up to M89. The corpus at the stop: 1,614
+event records, 1,374 active, 1,193 edges, 799 places; curation fires on
+22, 23, 24, 25, 29, 30 September and 1 October. What waits for the owner is
+§6, questions 1 to 12; the third review is `docs/review-2026-09-26.md`.
+The protocol for restarting the loop is §4 above and the memory notes.
+
 **Two lessons from 22 September's landings**, for every brief from here:
 a test of a display property over the live corpus derives its expectation
 from the corpus it runs on and never assumes the corpus of the day happens

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "peninsular-war--mexican-war-of-independence--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-62"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mexican War of Independence\", revision 1371682352, § Age of Revolution, Spain and New Spain and § French invasion of Spain and political crisis in New Spain, 1808–1809"
+    }
+  ],
+  "from": "peninsular-war",
+  "to": "mexican-war-of-independence",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Mexico's article names the Peninsular War by its own link and gives it as what unsettled the viceroyalty: \"In the early 19th century, the Age of Revolution was already underway when the 1808 Napoleonic **invasion of the Iberian Peninsula** destabilized not only Spain but also Spain's overseas possessions.\" The section that follows states the mechanism: \"In 1808 viceroy José de Iturrigaray (1803–1808) was in office when Napoleon's forces invaded Iberia and deposed the Spanish monarch Charles IV and Napoleon's brother Joseph was declared the monarch. **This turn of events set off a crisis of legitimacy.**\" What the article attributes to the war in Spain is that crisis and the coup against Iturrigaray it ended in, not the rising itself: \"For creoles, it was clear that to gain power they needed to form conspiracies against Peninsular rule, and later they took up arms to achieve their goals.\" A crisis of legitimacy reaching New Spain from Spain is a precondition of the war that followed in 1810 and not its cause, which is why this is `precondition-of` and matches the four edges the atlas already draws from the Peninsular War into Spanish America.",
+  "dispute": null
+}

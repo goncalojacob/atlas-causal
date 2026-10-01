@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "attack-on-bintan-1521",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q118900813",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Attack on Bintan (1521)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q118900813"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Attack on Bintan (1521)\", revision 1372970515"
+    }
+  ],
+  "title": "Attack on Bintan (1521)",
+  "summary": "The English Wikipedia article \"Attack on Bintan (1521)\", at revision 1372970515, opens: \"The Attack on Bintan in 1521 was an engagement between the Malaccans and the Portuguese who attacked the island in order to destroy Mahmud Shah of Malacca's base in Bintan, however, the attack was successfully fended off.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q118900813, imported by tools/import/wikidata.mjs. The item's own description reads \"16th c. military engagement\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1521,
+    "end": 1521,
+    "date": "1521-10"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "malay-portuguese-conflicts"
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "island-of-mozambique",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q331099",
+  "sitelinks": {
+    "count": 54,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Island of Mozambique",
+    "pt": "Ilha de Moçambique"
+  },
+  "sources": [],
+  "names": [
+    "Island of Mozambique",
+    "Ilha de Moçambique"
+  ],
+  "where": {
+    "lon": 40.732777777778,
+    "lat": -15.036666666667,
+    "precision": "point",
+    "label": "Island of Mozambique"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

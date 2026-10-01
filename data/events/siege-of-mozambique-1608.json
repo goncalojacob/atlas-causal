@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-mozambique-1608",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q122227094",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Siege of Mozambique (1608)",
+    "pt": "Cerco de Moçambique (1608)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q122227094"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Mozambique (1608)\", revision 1370743726"
+    }
+  ],
+  "title": "Siege of Mozambique (1608)",
+  "summary": "The English Wikipedia article \"Siege of Mozambique (1608)\", at revision 1370743726, opens: \"The siege of Mozambique of 1608 was a second, unsuccessful, attack by the Dutch East India Company on the Portuguese fortress of Mozambique, on the island of Mozambique, in 1608.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q122227094, imported by tools/import/wikidata.mjs. The item's own description reads \"1608 sieges involving Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1608,
+    "end": 1608,
+    "date": "1608-07",
+    "endDate": "1608-08-18"
+  },
+  "place": "island-of-mozambique",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}

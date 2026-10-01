@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "siege-of-mozambique-1607--siege-of-mozambique-1608--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-66"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Mozambique (1608)\", revision 1370743726"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Mozambique (1607)\", revision 1370743723"
+    }
+  ],
+  "from": "siege-of-mozambique-1607",
+  "to": "siege-of-mozambique-1608",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The second Dutch attack on Fort São Sebastião was fought against the first one, and both articles say so in the same terms. “Siege of Mozambique (1608)”, at revision 1370743726, § The siege: “Verhoeff arrived at Mozambique on July 18, 1608. Unlike what van Caerden had done the year before, Verhoeff avoided anchoring his fleet within the inner harbour, which would have necessitated sailing past the Portuguese forts artillery and instead he remained in the more exposed outer harbour.” The same article records the Portuguese commander reasoning from the same precedent: Dom Estêvão de Ataíde “replied that he hoped to force him to withdraw as he had done to Van Caerden”. The second author, “Siege of Mozambique (1607)” at revision 1370743723, § Aftermath, states what the first siege had settled: “The 1607 siege of Mozambique demonstrated the viability of resisting powerful Dutch attacks with very limited garrisons.” `reacted-to`, running forward in time from the repulse to the attempt that answered it. `probable`, and not more: the 1608 article gives the expedition's own cause as the Habsburg–Dutch peace negotiations and the truce they were heading for — “hence the directors of the VOC dispatched a number of ships east tasked with capturing as many Portuguese territories as possible before the Twelve Years Truce was signed” — neither of which this atlas holds, so what the 1607 siege governs here is which fort was attacked and how, and not that a fleet sailed. On the articles alone, which rule 22 keeps below `consensus`.",
+  "dispute": null
+}

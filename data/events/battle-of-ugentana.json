@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-ugentana",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a7-widened",
+      "filed-from-article-part-of"
+    ],
+    "note": "A7: the record was dated 1536, the item's only P585. Its own cited article at revision 1373042668 opens \"The Battle of Ugentana ... took place in 1535\" and its infobox reads \"date = 1535\", which is also what battle-of-ugentana-1536 calls the earlier attack. A3: the item carries no P361 and the article's infobox reads part_of = Malay-Portuguese conflicts, which the atlas holds and whose 1509-1641 span fits, so the filing is from the article."
+  },
+  "wikidata": "Q116214211",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Ugentana",
+    "pt": "Batalha de Ugentana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q116214211"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ugentana\", revision 1373042668"
+    }
+  ],
+  "title": "Battle of Ugentana",
+  "summary": "The English Wikipedia article \"Battle of Ugentana\", at revision 1373042668, opens: \"The Battle of Ugentana, also known as Battle of Ugentana River was a military operation that took place in 1535, between Portuguese forces and those of Sultan Alauddin Riayat Shah II of Johor.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q116214211, imported by tools/import/wikidata.mjs. The item's own description reads \"1536 successful Portuguese attack on Ugentana\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1535,
+    "end": 1535
+  },
+  "place": "malay-peninsula",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "malay-portuguese-conflicts"
+}

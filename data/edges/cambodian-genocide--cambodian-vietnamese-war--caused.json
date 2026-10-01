@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "cambodian-genocide--cambodian-vietnamese-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cambodian genocide\", revision 1377684919, § Vietnamese"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Indochina wars\", revision 1373921212"
+    }
+  ],
+  "from": "cambodian-genocide",
+  "to": "cambodian-vietnamese-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The genocide's own article states the cause in its § Vietnamese, where the campaign against the Vietnamese crosses the border: \"Additionally, the Khmer Rouge conducted many cross-border raids into Vietnam, where they slaughtered an estimated 30,000 Vietnamese civilians. Most notably, during the Ba Chúc massacre in April 1978, the Khmer Rouge military crossed the border and entered the village, slaughtering 3,157 Vietnamese civilians. This caused an urgent response from the Vietnamese government, precipitating the Cambodian–Vietnamese War in which the Khmer Rouge was ultimately defeated.\" The Indochina wars' own article says the same thing from the other end: \"The Cambodian–Vietnamese War began when Vietnam invaded Cambodia and deposed the genocidal Khmer Rouge regime.\" `caused` and not `precondition-of` because the article uses the word: the killing caused the response, and the response was the war. `probable` and not `consensus` under rule 22 and A2 — both witnesses are Wikipedia records.",
+  "dispute": null
+}

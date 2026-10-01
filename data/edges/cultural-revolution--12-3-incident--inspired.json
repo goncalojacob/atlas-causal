@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "cultural-revolution--12-3-incident--inspired",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"12-3 incident\", revision 1377636747"
+    }
+  ],
+  "from": "cultural-revolution",
+  "to": "12-3-incident",
+  "type": "inspired",
+  "confidence": "probable",
+  "explanation": "The incident's own article states the relation in its first sentences, at revision 1377636747: \"The 12-3 incident was a series of political demonstrations and riots against Portuguese colonial rule in Macau which occurred on December 3, 1966. The incident, inspired by the Cultural Revolution in the People's Republic of China, occurred as a direct response to a violent police crackdown by colonial authorities against local Chinese protesters demonstrating against corruption and colonialism in Macau.\" `inspired` and not `caused` because the article uses that word and reserves cause for something else in the same sentence: the direct cause it names is the police crackdown in Macau, which this atlas does not hold as a record of its own, and what it attributes to the Cultural Revolution is the inspiration. `probable` and not `consensus` under rule 22 and A2 — the one witness is a Wikipedia record, and the Cultural Revolution's own article at revision 1376093155 does not mention Macau, so there is no second witness to cite.",
+  "dispute": null
+}

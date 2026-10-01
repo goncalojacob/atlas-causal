@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-algiers-1541--italian-war-of-1542-1546--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-63"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Italian War of 1542–1546\", revision 1370624570"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Algiers (1541)\", revision 1375834500"
+    }
+  ],
+  "from": "battle-of-algiers-1541",
+  "to": "italian-war-of-1542-1546",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Francis I had promised not to declare war on Charles V for as long as the Emperor was campaigning against Algiers; the campaign collapsed in November 1541 and the declaration followed in July 1542. “Italian War of 1542–1546”, at revision 1370624570, § Prelude: “By the end of September, Charles was in Mallorca, preparing an attack on Algiers; Francis, considering it impolitic to attack a fellow Christian who was fighting the Muslims, promised not to declare war for as long as the Emperor was campaigning. The Imperial expedition, however, was entirely unsuccessful; storms scattered the invasion fleet soon after the initial landing, and Charles had returned to Spain with the remainder of his troops by November.” The second author, “Battle of Algiers (1541)” at revision 1375834500, § Expedition, is where the campaign ends: “Charles could not depart for the open sea until 23 November … He finally reached Cartagena, in southeast Spain, on 3 December.” The type is `enabled` because the article makes the forbearance conditional on the campaign rather than on its outcome: the condition lapsed and the war that the same paragraph then reports was free to begin. It is not read as `caused` — the Prelude gives Francis’s own reasons, Milan and Rincon’s murder, and Ottoman promises of aid, and the failure at Algiers is not among them. `probable`, on the articles alone (rule 22).",
+  "dispute": null
+}

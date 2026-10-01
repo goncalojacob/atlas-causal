@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "capture-of-malacca-1511--siege-of-malacca-1551--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-64"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Malacca (1551)\", revision 1375742313"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Malacca (1511)\", revision 1373484620"
+    }
+  ],
+  "from": "capture-of-malacca-1511",
+  "to": "siege-of-malacca-1551",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The 1551 siege was a siege of Portuguese Malacca, and Malacca was Portuguese because of 1511. “Siege of Malacca (1551)”, at revision 1375742313 — the revision this record cites — names the object of the attack in its § Context: “By 1551 however, the Sultan of Johor Alauddin Riayat Shah II disregarded the peace treaty and without provocation forged a coalition with the Sultan of Pahang, the Sultan of Perak and the queen of Jepara in Java **to attack Portuguese Malacca**.” That the city was held and not merely sacked is the other end’s own article, “Capture of Malacca (1511)” at revision 1373484620, § Aftermath → The fortress: “Contrary to Sultan Mahmud Shah’s hopes, Albuquerque **did not intend to just sack the city, but to hold it permanently**”, with a fortress whose garrison was 500 men. `precondition-of` and not `caused`: the 1551 article gives the coalition’s own reasons as a disregarded treaty and no provocation, and makes the conquest no part of why the sultans moved in that year — the conquest is what made Malacca a Portuguese city to besiege, not the occasion of the besieging. The two records are siblings under `malay-portuguese-conflicts`, not parent and child, so A14 does not bar the edge. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}

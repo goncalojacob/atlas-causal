@@ -491,3 +491,156 @@ names no actor, so it can only take children in its own lane — and the questio
 of what a period's lane should be is the line the 30 September fire left.
 
 **Main is 229 before and 229 after.** It has not risen.
+
+## Batch 77 — one filing, argued from the umbrella's own article
+
+*1 October, the import fire that claimed at 06:17Z.*
+
+| record | parent | why that umbrella |
+| --- | --- | --- |
+| `rwandan-revolution` | `decolonisation-of-africa` | The umbrella's **own cited article** names it as the step by which the Belgian trusteeship ended: *"Following the Rwandan Revolution, the trusteeship became the independent states of the Republic of Rwanda and the Kingdom of Burundi in 1962"* (`"Decolonisation of Africa"`, revision 1372152864, § Belgium). The span half holds on the dates and not only the years — 1 November 1959 to September 1961, inside the article's own "mid-1950s to 1976" — and the subject half is the lane, which is `africa` for both. |
+
+The item carries no `P361`, so the filing is this fire's and is argued from the
+article the umbrella already cites rather than from Wikidata. It is the shape
+batch 76 used for `fashoda-incident`, with the difference that the sentence is
+in the **umbrella's** article rather than the child's: a period's own article
+naming an episode is the period's author saying what the period contains, which
+is the strongest filing argument this atlas can read.
+
+Nothing propagates one step down: the record is new and has no children.
+
+**Main is 229 before and 229 after.** The imported record arrives filed, which
+is what A6 asks of an import.
+
+## Batch 78 — the Malayan Emergency, filed on three readings that agree
+
+*1 October, the same import fire.*
+
+| record | parent | why that umbrella |
+| --- | --- | --- |
+| `malayan-emergency` | `decolonisation-of-asia` | Three things say it and none contradicts the others. The **item's own `P361`** names `Q230533`, decolonization, of which this atlas's Asian record is the umbrella. The **record's own lead** says what the war was for: *"The MNLA fought to win Malayan independence from the British Empire and to establish a communist state"* (`"Malayan Emergency"`, revision 1373880340). And the **umbrella's own cited article** names the Emergency in the note to its decolonisation table — *"The Malayan Communist Party fought in the Malayan Emergency between June 1948 – 12 July 1960"* (`"Decolonisation of Asia"`, revision 1375271318, § Notes) — against the row `Malaya (1957)`. Span 16 June 1948 to 12 July 1960, inside the umbrella's 1898–2002; lane `asia` for both, derived from the place's own point. |
+
+The item's other `P361` is `Q8683`, the Cold War, and **this atlas holds no Cold
+War record at all** — A15(13) names one and nothing on this branch carries
+`Q8683`. So A8's "every umbrella that fits" writes one parent here and not two,
+and whether the Cold War should be a record of this atlas is a question for
+whoever reads that gap rather than a filing this fire could make.
+
+Nothing propagates one step down: the record is new and has no children.
+
+**Main is 229 before and 229 after.**
+
+## Batch 79 — the Cambodian genocide, and the weakest of the three filings
+
+*1 October, the same import fire.*
+
+| record | parent | why that umbrella |
+| --- | --- | --- |
+| `cambodian-genocide` | `indochina-wars` | By span and lane it is the only umbrella that fits: 17 April 1975 to 7 January 1979, inside the umbrella's 1945–1991, lane `asia` for both. `cambodian-civil-war` ends on the very day the genocide begins and `cambodian-vietnamese-war` begins three years into it, so neither contains it. The argument is the umbrella's own article, whose subject is *"a series of wars which were waged in Indochina from 1945 to 1991, by communist forces"* and which names the regime that conducted the genocide as a party to those wars: *"The Cambodian–Vietnamese War began when Vietnam invaded Cambodia and deposed the genocidal Khmer Rouge regime"* (`"Indochina wars"`, revision 1373921212). |
+
+**This is the weakest of this fire's three filings and it is worth saying so.**
+The umbrella's article links the Cambodian genocide on the adjective *genocidal*
+and not on its own title, so the sentence names the thing by what it was rather
+than by what it is called here. What carries the filing is not that sentence
+alone but that the war the sentence is about — `cambodian-vietnamese-war` — is
+itself filed under this umbrella, and the genocide's own article says the
+genocide precipitated it. A genocide filed under the war it belongs to is this
+atlas's established practice: `herero-and-nama-genocide` sits under
+`herero-wars` and `massacre-of-arabs-during-the-zanzibar-revolution` under
+`zanzibar-revolution`.
+
+A reviewer who disagrees should move it rather than unfile it: the alternative
+is a main event, and A6 refuses that without a reason.
+
+**Main is 229 before and 229 after.**
+
+## Batch 80 — the 12-3 incident, filed where the item says nothing
+
+The item `Q3182793` carries **no `P361` at all**, so the import filed nothing and
+the record arrived as a main event. This is the filing that kept it from being
+one, and the whole of its argument is the record's own place and span against two
+candidate umbrellas rather than an item's claim.
+
+| record | parent | why |
+| --- | --- | --- |
+| `12-3-incident` | `estado-novo-1933-1974` | Macau in December 1966 was Portuguese, and the Estado Novo's span (19 March 1933 to 25 April 1974) contains the incident's (18 November 1966 to 28 January 1967). `goa-annexed-1961` is the precedent and it is close: an action against Portuguese territory in Asia, inside the regime, filed under this umbrella among others. |
+
+**Two umbrellas that fit on the years were refused, and for different reasons.**
+`portuguese-colonial-war-1961-1974` contains 1966 on the dates, but the colonial
+war is the three African theatres and Macau was not one of them: the years fit
+and the war does not, which is rule 24's arithmetic passing where the reading
+fails. `cultural-revolution` contains the span too (16 May 1966 to 6 October
+1976) and would have been the easy filing, but the Cultural Revolution is what
+*inspired* the incident and not what the incident was part of — the article says
+"inspired by" — so it is the edge and not the parent. In this data model that
+distinction is the model: `parent` is part-of and is display, an edge is the
+argument. Filing it there would also have barred the edge under A14's standing
+C8 rule, which is a consequence of the reading and not a reason for it.
+
+**Main is 229 before and 229 after.**
+
+## Batch 81 — two filings one hop down the item's own `P361` chain
+
+The import files from `P361` alone and both items name `Q4783126`, *Arab–Israeli
+peace projects*, which this atlas does not hold. **But `Q4783126`'s own `P361` is
+`Q8669`, which the atlas holds as `arab-israeli-conflict`** — so the filing is
+not a reading laid over the items, it is the items' own chain followed one hop
+further than the import follows it.
+
+| record | parent | why |
+| --- | --- | --- |
+| `camp-david-accords` | `arab-israeli-conflict` | The item's `P361` is `Q4783126`, whose own `P361` is `Q8669`, the umbrella this atlas holds. 17 September 1978 is inside the umbrella's span, which runs from 15 May 1948 and is open. |
+| `egypt-israel-peace-treaty` | `arab-israeli-conflict` | The same chain and the same umbrella; 26 March 1979 is inside it. The treaty is the conflict's first settlement with an Arab state, which is the umbrella's own subject. |
+
+**Neither is filed under the other**, although the Accords caused the treaty:
+that is the edge and not the parent. The treaty was not part of the Accords — it
+was the instrument the Accords' second framework was a draft of — and filing it
+there would have barred the edge under A14's standing C8 rule.
+
+**Main is 229 before and 229 after.** Both arrived as main events, because the
+import found no held umbrella in their `P361`.
+
+## Batch 82 — one filing the import made for itself, from the item's own `P361`
+
+`Q140025`, the Japanese invasion of French Indochina, names two things in its
+`P361`: `Q170314`, which this atlas holds as `second-sino-japanese-war`, and
+`Q1648564`, *Japanese invasion of Southeast Asia*, which has no English article
+and no record here. So the import filed it from the first without being told to,
+and the filing is the item's own claim and not a reading laid over it.
+
+| record | parent | why |
+| --- | --- | --- |
+| `japanese-invasion-of-french-indochina` | `second-sino-japanese-war` | The item's `P361` is `Q170314`, the item this atlas holds as the umbrella. 22–26 September 1940 is inside the umbrella's span, 1937-07-07 to 1945-09-09. The invasion's own article states the same relation in its first paragraph — the fighting lasted *"the same time as the Battle of South Guangxi in the Sino-Japanese War, which was the main objective as to why Japan occupied Vietnam during this time."* |
+
+**It is not filed under `world-war-ii`** as well, although the invasion is part
+of that war too on any reading: `Q140025` does not name it, A8 asks for every
+umbrella that *fits* and the second umbrella here would be the fire's reading
+rather than the item's. A reviewer who wants it can add it; `parentsOf` reads
+the list either way.
+
+**Main is 229 before and 229 after.** The record arrived filed, so the count
+never moved.
+
+## Batch 83 — the second filing the import made for itself
+
+`Q2177009`, the Russian invasion of Manchuria, names one thing in its `P361`:
+`Q150229`, which this atlas holds as `boxer-rebellion`. The import filed it
+there unprompted, as it did batch 82's record.
+
+| record | parent | why |
+| --- | --- | --- |
+| `russian-invasion-of-manchuria` | `boxer-rebellion` | The item's `P361` is `Q150229`, the item this atlas holds as the umbrella. June to November 1900 is inside the umbrella's span, 1899-08 to 1901-09. The invasion was the Russian column of the intervention the rebellion provoked, and the record's own article opens on the rebellion as the occasion for it. |
+
+**Main is 229 before and 229 after**: the record arrived filed.
+
+## Batch 84 — two Africa filings the import made for itself
+
+The first two records this vein has put in the lane that trails. Both arrived
+filed, from the items' own `P361`, and neither needed a word from the fire.
+
+| record | parent | why |
+| --- | --- | --- |
+| `operation-savannah-angola` | `angolan-civil-war` | The item's `P361` names `Q1993848` and `Q12055176`; the second is the item this atlas holds as `angolan-civil-war`, the first is the South African Border War and is not held. 1975 to 1976 is inside the umbrella's 1975 to 2002. The incursion was fought to put UNITA in control of southern Angola against the MPLA, which is the civil war itself and not a separate quarrel — the record's own lead says the operation "materially influenced the subsequent Angolan Civil War", and the article's Background is the civil war's first year told as the operation's occasion. |
+| `battle-of-afabet` | `eritrean-war-of-independence` | The item's `P361` is `Q740289`, which this atlas holds as `eritrean-war-of-independence`. March 1988 is inside the umbrella's 1961 to 1991. Afabet was the EPLF's destruction of the Ethiopian Nadew Command, which is the war of independence's own decisive engagement; the record's article is about nothing else. |
+
+**Main is 229 before and 229 after**: both records arrived filed.

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "battle-of-cajamarca--battle-of-vilcaconga--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Vilcaconga\", revision 1370592503, § Battle"
+    }
+  ],
+  "from": "battle-of-cajamarca",
+  "to": "battle-of-vilcaconga",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The Vilcaconga article opens its own account of the battle with Cajamarca and makes the connection in the same breath: “The Spanish emerged as victors in the Battle of Cajamarca in November 1532. Some 180 Spaniards under Francisco Pizarro were in control of major parts of the vast Inca Empire and held its emperor, Atahualpa, hostage.” What follows is the mechanism: “The Incas still controlled large territory including their capital Cuzco, and commanders who had been ordered to stand down by a captive Atahualpa now moved south toward the Spanish, able to rally tens of thousands of soldiers. The Spanish, for their part, sought to conquer Cuzco and add it to their territory.” So Cajamarca put the emperor in Spanish hands and set the Spanish on the road to Cuzco, and Quizquiz fortified the pass at Vilcaconga across that road. `precondition-of` and not `caused`: the article says Cajamarca gave the Spanish the hostage and the advance that brought them to the pass, not that it brought the battle at the pass about — the Inca decision to fight there is the article's, and the Incas' own. Probable: Wikipedia alone at one revision, and the only work the article cites for the section is a chapter by John F. Guilmartin with no page and no identifier, which rule 13 will not take as a source record. The two events are siblings under `spanish-conquest-of-the-inca-empire`, so A14's bar on an edge from a parent to its own child does not reach this one.",
+  "dispute": null
+}

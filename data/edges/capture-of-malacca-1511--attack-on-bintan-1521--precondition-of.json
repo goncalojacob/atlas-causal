@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "capture-of-malacca-1511--attack-on-bintan-1521--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-67"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Attack on Bintan (1521)\", revision 1372970515"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Malacca (1511)\", revision 1373484620"
+    }
+  ],
+  "from": "capture-of-malacca-1511",
+  "to": "attack-on-bintan-1521",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "There was nothing for the Portuguese to attack on Bintan until they had taken Malacca: the island was where the sultan they had driven out rebuilt, and the attack of 1521 was aimed at that. “Attack on Bintan (1521)”, at revision 1372970515, § Background: “In 1511, the governor of Portuguese India Afonso de Albuquerque captured the Malay city of Malacca. The Sultan of Malacca Mahmud Shah fled with his forces to Bintan Island and established his rule there. He built a new city and fleet there, and continuously harassed Portuguese Malacca and its shipping, Mahmud never gave up the idea of recapturing Malacca from the Portuguese and he constantly attacked Malacca with raids from 1517 to 1520”. The second author is the article the record at the other end already cites, “Capture of Malacca (1511)” at revision 1373484620, which states the same chain from the other end: “Afterwards, Mahmud moved to Bintan, an island kingdom south-east of Singapore that he usurped to wage war on the Portuguese in Malacca, harassing the city, its trade and sabotaging their diplomatic relations with China, until the Portuguese eventually devastated Bintan in 1526”. `precondition-of` and not `caused`: the capture of Malacca is what put a hostile court on Bintan and made it a target, while what the article gives as the immediate occasion is the raids of 1517 to 1520 and the destruction of Pago in 1520, neither of which this atlas holds. `probable`, on the articles alone, which rule 22 keeps below `consensus`.",
+  "dispute": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "camp-david-accords",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q309204",
+  "wikipedia": {
+    "en": "Camp David Accords",
+    "pt": "Acordos de Camp David"
+  },
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-01"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q309204"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Camp David Accords\", revision 1374583077"
+    }
+  ],
+  "title": "Camp David Accords",
+  "summary": "The English Wikipedia article \"Camp David Accords\", at revision 1374583077, opens: \"The Camp David Accords were a pair of political agreements signed by Egyptian president Anwar Sadat and Israeli prime minister Menachem Begin on 17 September 1978, following twelve days of secret negotiations at Camp David, the country retreat of the president of the United States in Maryland. The two framework agreements were signed at the White House and were witnessed by President Jimmy Carter. The second of these frameworks led directly to the 1979 Egypt–Israel peace treaty. Due to the agreement, Sadat and Begin received the shared 1978 Nobel Peace Prize. The first framework, which dealt with the Palestinian territories, was written without participation of any Palestinians and was condemned by the United Nations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q309204, imported by tools/import/wikidata.mjs. The item's own description reads \"1978 political agreement between Egypt and Israel\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1978,
+    "end": 1978,
+    "date": "1978-09-17"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "arab-israeli-conflict",
+  "category": "treaty",
+  "actors": []
+}

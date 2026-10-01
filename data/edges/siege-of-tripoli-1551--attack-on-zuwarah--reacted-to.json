@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "siege-of-tripoli-1551--attack-on-zuwarah--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-68"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Attack on Zuwarah\", revision 1370429622"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Tripoli (1551)\", revision 1370746050"
+    }
+  ],
+  "from": "siege-of-tripoli-1551",
+  "to": "attack-on-zuwarah",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The Knights sacked Zuwarah because they had lost Tripoli the year before, and both articles say so. “Attack on Zuwarah”, at revision 1370429622, § Background: “After the Ottoman Conquest of Tripoli in 1551, the loss created anger in Malta. After the Maltese garrison leader, Gaspard de Vallier, arrived in Malta, he was heavily rebuked, stripped of the habit of the order, and imprisoned. … After spring had passed, the rumor had died, and the Knights began to resume offensive operations against the Barbary Coast. The Knights of Malta were in shortage of sailors and laborers for the work in fortifications. The Knights targeted the city of Zuwarah.” The second author, “Siege of Tripoli (1551)” at revision 1370746050, § Aftermath → Attempts to retake Tripoli, puts the two in the same sentence: “The Hospitallers began making plans to recapture Tripoli shortly after they lost the city, and they raided its hinterland in 1552. That year, a Hospitaller force landed at Zuwarah and began to sack the town, but the knights were repelled and were forced to retreat by an Ottoman counterattack led by Murad Agha.” `reacted-to`, running forward in time from the loss to the raid that answered it. `probable`, on the articles alone, which rule 22 keeps below `consensus`.",
+  "dispute": null
+}

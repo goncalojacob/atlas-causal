@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "rwandan-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4162685",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Rwandan Revolution",
+    "pt": "Revolução Ruandesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4162685"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rwandan Revolution\", revision 1367896898"
+    }
+  ],
+  "title": "Rwandan Revolution",
+  "summary": "The English Wikipedia article \"Rwandan Revolution\", at revision 1367896898, opens: \"The Rwandan Revolution, also known as the Hutu Revolution, Social Revolution, or Wind of Destruction, was a period of ethnic violence in Rwanda from 1959 to 1961 between the Hutu and the Tutsi, two of the three ethnic groups in Rwanda. The revolution saw the country transition from a Tutsi monarchy under Belgian colonial authority to an independent Hutu-dominated republic.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4162685, imported by tools/import/wikidata.mjs. The item's own description reads \"period of ethnic violence in Rwanda (1959–1961)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1959,
+    "end": 1961,
+    "date": "1959-11-01",
+    "endDate": "1961-09"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "decolonisation-of-africa",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "kandyan-commerce-raiding-against-portugal-1612-1613",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16250240",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Kandyan commerce raiding against Portugal (1612–1613)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16250240"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kandyan commerce raiding against Portugal (1612–1613)\", revision 1372825928"
+    }
+  ],
+  "title": "Kandyan commerce raiding against Portugal (1612–1613)",
+  "summary": "The English Wikipedia article \"Kandyan commerce raiding against Portugal (1612–1613)\", at revision 1372825928, opens: \"The Kandyan naval raid was a series of commerce raidings by the Kingdom of Kandy against the Portuguese Empire from 16 May 1612 to 6 March 1613. With the help of Dutch envoy Marcellus de Bochouwer, King Senarat of Kandy commissioned a fleet of 3 war galleys and 3 yachts under the Admiralty of a nephew of Kuruvita Rala, the prince of Uva. They sailed from Koddiyar bay and managed to engage and inflict losses on Portuguese shipping around Ceylon and along the coast line from Cape Comorin to Calicut.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16250240, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1612,
+    "end": 1613,
+    "date": "1612-05-16",
+    "endDate": "1613-03-06"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "other",
+  "actors": [],
+  "parent": "sinhalese-portuguese-conflicts"
+}

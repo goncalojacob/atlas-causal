@@ -1296,3 +1296,141 @@ The five events filed under it — `philippine-declaration-of-independence`,
 it as a second parent under A8 — `first-indochina-war` and
 `east-timor-invasion-1975` — are argued there, one line each, each from the same
 revision.
+## M42b batch 63 — the Peñón of Algiers, bare because nothing it names can be reached
+
+*1 October, the fire that claimed at 10:37Z. The measurement is in
+`docs/m42b-pool.md` → "Batch 63". A1's clause, for one record of eight, and for
+a reason that is the import's refusal log and not a judgment of this fire's.*
+
+`capture-of-penon-of-algiers-1529` **names neither an actor nor a place**, and
+the other seven records of its batch name a place. It is the one that cannot,
+and both halves of that have a reason on disk.
+
+**No place.** The item, `Q3403025`, carries no `P625` of its own. Its `P276` is
+`Q7179708` *Peñón of Algiers*, which does carry a point — 36.7867, 3.0683, the
+rock in the harbour the Spanish fortress stood on — but its only class is
+`Q1226252` *tied island*, and `data/imports/wikidata-seeds.json` → `classes` has
+no row for that class, so the import refused to write a place record for it and
+said so: *"no place from Q7179708: none of its classes (Q1226252) is in
+data/imports/wikidata-seeds.json → classes"*. Its `P17` is `Q262` Algeria,
+refused under A15 (6) because the country's inception, 1962, is 433 years after
+the event ended: *"no place from the country Q262: the country's inception
+(1962) is after the event ended (1529)"*. The row is a real editorial call and
+the pool file argues both sides of it — `Q23442` *island* is `region` in the
+table, and a fortified rock a few hundred metres across is not an area — so it
+was left for whoever makes that call rather than guessed at here.
+
+**No actor.** The item's `P710` gives two participants, `Q12560` the Ottoman
+Empire and `Q766543` the Hispanic Monarchy, and the import's rule is that
+`P710` is read only where the atlas holds every participant the item names. It does not, so the line is dropped
+whole rather than half-written. An event with no actor is not a defect (M67 A1).
+
+**Why it belongs where it is filed.** Its `P361` is `Q118929718`
+*Ottoman–Spanish War* (1515–1577), which has two sitelinks and **no English
+article**, so there is no record to file it under and no source to write one
+from; that item's own `P361` is `Q786171` *Ottoman–Habsburg wars*, which this
+batch imported as `ottoman-habsburg-wars` and dates 1526 to 1791. The record's
+span, 1529-05-29, falls inside it. It is also argued for by an edge this batch
+wrote from a cited article: `capture-of-penon-of-algiers-1529
+--precondition-of--> battle-of-algiers-1541`, from the § Aftermath of "Capture
+of Peñón of Algiers (1529)" at revision 1370609401 — *"The huge Algiers
+expedition undertaken by Charles V in 1541 to retake Algiers ended in
+failure."* What it carries instead of a place is **a lane the import wrote on
+purpose**, `africa`, kept from the country it refused as a point, which is
+A15 (6)'s own instruction. The filing is this fire's, from `P361` one level up
+and the span; this section is the measurement the bareness owes.
+
+
+## M42 batch 81, 1 October — two treaties that name neither, and the gate that is why
+
+`camp-david-accords` and `egypt-israel-peace-treaty` are both filed under
+`arab-israeli-conflict` and **neither names an actor nor a place.** Both gaps are
+the import's rules working rather than failing, and each has a different cause.
+
+**The place.** A9 as A12 orders it reads the item's own `P625` first, then `P276`,
+`P131`, `P17`. Neither item has a `P625`. Both have a `P276` — `Q309202`, Camp
+David, and `Q35525`, the White House — and **both were refused because none of
+their classes is a place class this atlas holds**: a presidential retreat and an
+official residence are buildings, and the class table is data a person argues
+with and not something a batch widens on its own. The Accords have no `P17` at
+all. The treaty has two, `Q79` and `Q801`, and **A15(6) refuses a `P17` country
+where the item names more than one** — which is exactly the case it was written
+for: a treaty between Egypt and Israel does not happen in either of them, and
+putting it in one would have asserted a side.
+
+So there is no place record to reach for, and this atlas does not invent one. What
+the records carry instead is a **lane written on purpose**, `americas` for both,
+which A15(7) derives from the first located step of the `P276` chain: both
+treaties were signed in the United States. That the lane and the subject disagree
+is recorded in `docs/m42-pool.md` as a question for the owner, together with the
+event-level region override that exists for it; a fire did not settle it.
+
+**The actors.** The Wikidata import never writes `actors` — it is one of the
+fields `tools/import/identity.mjs` refuses to touch — so every record it creates
+arrives with none, and a reviewer adds them. Egypt, Israel and the United States
+are the obvious three and all three are held actors; naming them is a person's
+write on `review.html` and not a batch's.
+
+**Why each belongs under the umbrella anyway**, which is what this document is
+for: the filing rests on the items' own `P361` chain and not on an actor or a
+point. Both name `Q4783126`, *Arab–Israeli peace projects*, whose own `P361` is
+`Q8669` — the item `arab-israeli-conflict` carries. The umbrella's span runs from
+15 May 1948 and is open, so 17 September 1978 and 26 March 1979 are both inside
+it. `docs/m62-umbrellas.md` → "Batch 81" is the filing argued in full.
+
+## Batch 82 — `japanese-invasion-of-french-indochina`, which names neither
+
+The record carries no `actors` and `place: null`, so this document owes it an
+argument.
+
+**The place, and why there is none.** A9 asks for the item's own `P625` first:
+`Q140025` has none. Its `P276` is `Q185682`, *French Indochina*, which this atlas
+does hold as a place record (`french-indochina-q185682`) with Hanoi's point on
+it — and **A15(6) refused it**, in the import's own words: *"no place from the
+country `Q185682`: the country's point is 1555 km from the nearest point on the
+event's own chain."* That is the 1,000 km clause doing exactly what it was
+written for. The fighting was in Tonkin, at Lạng Sơn and Đồng Đăng on the Chinese
+border, and the atlas holds no place record for either; inventing one is not a
+batch's write.
+
+**The lane is written anyway, and from the item.** `region: "asia"`, under
+A15(7), derived from the item's own point rather than from a place record — which
+is why this record, unlike batch 81's two, does move a lane count.
+
+**The actors.** None, because `tools/import/identity.mjs` never writes `actors`:
+Japan, Vichy France and French Indochina are the three a reviewer would add, and
+all of that is a person's write on `review.html`.
+
+**Why it belongs under the umbrella anyway.** The filing is the item's own
+`P361` — `Q170314`, which the atlas holds as `second-sino-japanese-war` — and the
+dates sit inside the umbrella's span. `docs/m62-umbrellas.md` → "Batch 82"
+argues it in full.
+
+## Batch 85 — `battle-of-onjong`, which names neither either
+
+The second record of the umbrella-children vein to arrive with no `actors` and
+`place: null`, and the reasons are not batch 82's.
+
+**The place, and why there is none.** A9 asks for the item's own `P625` first and
+`Q4871945` has one — 125.896, 40.1092, the village of Onjong in North Pyongan.
+What it has no third of is a `P276`, a `P131` or a `P17`: the chain is one item
+long, and that item is a battle. So the import had a point and no place to hang
+it on, and said so: *"no place for `Q4871945`: its own point (125.896, 40.1092)
+and no name a tool can read; a person writes that place."* A place record wants a
+label and a precision, and the only name on the item is the battle's own, which
+is not the name of the ground. Onjong is an atlas place record waiting to be
+written by somebody, not a label a batch may derive from a battle.
+
+**The lane is written anyway, and from the item.** `region: "asia"`, under
+A15(7), derived from that same own point — so this record does move a lane count
+even without a place.
+
+**The actors.** None, because `tools/import/identity.mjs` never writes `actors`.
+The Chinese People's Volunteer Army, the Republic of Korea Army and the United
+Nations Command are the three a reviewer would add, on `review.html`.
+
+**Why it belongs under the umbrella anyway.** The filing is the item's own `P361`
+— `Q8663`, which this atlas holds as `korean-war` — and 25 to 29 October 1950 is
+inside the umbrella's span. Onjong was the first engagement between Chinese and
+United Nations ground forces in that war, which is why the record's one edge runs
+to `battle-of-unsan` and stays inside the same umbrella.

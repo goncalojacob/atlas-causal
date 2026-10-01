@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "capture-of-malacca-1511--siege-of-malacca-1640-1641--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-64"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Malacca (1640–1641)\", revision 1370743206"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Malay–Portuguese conflicts\", revision 1370627478"
+    }
+  ],
+  "from": "capture-of-malacca-1511",
+  "to": "siege-of-malacca-1640-1641",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The siege that ended the possession the conquest began, and the one place the articles state the span outright. “Siege of Malacca (1640–1641)”, at revision 1370743206 — the revision that record already cites — opens: “The siege of Malacca (3 August 1640 – 14 January 1641) was initiated by the Dutch East India Company and their local ally, Johor, **against Portuguese Malacca**”, and its § Background says when Malacca became that: “Malacca, established by the Malays in the 1400s, was a significant hub of trade toward the beginning of the 16th century. **It was conquered by the Portuguese Empire in 1511**”. “Malay–Portuguese conflicts” at revision 1370627478 closes the arithmetic from the other side: the siege ended “nearly 130 years of official Portuguese presence in the region”. `precondition-of` and not `caused`: the 1640–1641 article puts the roots of the conflict in the Dutch arrival of the late sixteenth century and the Company’s years of attempts, not in the conquest; what the conquest supplies is the Portuguese Malacca the siege was against. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}

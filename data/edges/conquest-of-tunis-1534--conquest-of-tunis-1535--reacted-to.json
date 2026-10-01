@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "conquest-of-tunis-1534--conquest-of-tunis-1535--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-63"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conquest of Tunis (1534)\", revision 1370612766"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conquest of Tunis (1535)\", revision 1375228138"
+    }
+  ],
+  "from": "conquest-of-tunis-1534",
+  "to": "conquest-of-tunis-1535",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "Charles V’s expedition of 1535 was a counter-offensive against Barbarossa’s capture of Tunis the year before, and the 1534 article uses that word. “Conquest of Tunis (1534)”, at revision 1370612766: “Barbarossa thus established a strong naval base in Tunis, which could be used for raids in the region, and on nearby Malta … In 1535 however, upon the plea of Muley Hasan, Emperor Charles V mounted a counter-offensive and retook the city in the conquest of Tunis of 1535.” The second author, “Conquest of Tunis (1535)” at revision 1375228138, § Background, puts the same answer in the verb: “Barbarossa established a strong naval base in Tunis … Charles V was informed that should Barbarossa remain in power in Tunis, both Italy and Spain might be threatened by the Ottoman navy. He therefore assembled a large fleet to drive the Ottomans from the region.” `reacted-to`, running forward in time from the capture to the answer to it. `probable`, on the articles alone (rule 22).",
+  "dispute": null
+}
