@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "peninsular-war--bolivian-war-of-independence--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-62"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bolivian War of Independence\", revision 1377484018, § The juntas of 1809"
+    }
+  ],
+  "from": "peninsular-war",
+  "to": "bolivian-war-of-independence",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Charcas's article opens its account of 1809 on the war in Spain: \"**During the Peninsular War which took place in Spain**, Charcas (today Bolivia) closely followed the reports that arrived describing the rapidly evolving political situation in Spain, **which led the Peninsula to near anarchy**. The sense of uncertainty was heightened by the fact that news of 17 March Mutiny of Aranjuez and 6 May 1808 abdication of Ferdinand VII in favor of Joseph Bonaparte arrived within a month of each other, on 21 August and 17 September, respectively.\" It then states what the Audiencia concluded from it: \"The Audiencia decided that **the situation had become so anarchic both in Charcas and in the Peninsula, that Charcas needed to take the government into its own hands.** It removed García León de Pizarro from office and transformed itself into a junta\". The same article dates the war's first outbreak to that act — \"On 25 May 1809, the citizens of Sucre participated in the first outbreak that was part of the initiation of the war of independence in Bolivia\" (§ The Colonial Governing Power and the Causes of the War). The anarchy in the Peninsula is what the article gives as the condition the junta answered, so this is `precondition-of`; the article spends its causes section on grievances that long predate 1808 and does not make the war in Spain the cause of the war in Charcas.",
+  "dispute": null
+}
