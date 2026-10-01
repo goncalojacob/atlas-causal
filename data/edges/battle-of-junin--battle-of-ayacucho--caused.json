@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-junin--battle-of-ayacucho--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-60"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ayacucho\", revision 1375770122, §§ Olañeta's rebellion and Ayacucho campaign"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Junín\", revision 1370266471, § Battle"
+    }
+  ],
+  "from": "battle-of-junin",
+  "to": "battle-of-ayacucho",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Ayacucho's own article opens its campaign section on Junín's consequence, having just named the battle: Bolívar \"moved the whole month of May to Jauja\", to face Canterac, \"who was isolated in Junín on 6 August 1824\", after which \"**the defeat of Canterac forced La Serna to bring Jerónimo Valdés in from Potosí on a forced march with his troops**\" — and the viceroy, rejecting a direct assault on Cusco, \"intended to cut Sucre's rearguard through march and countermarch maneuvers, **which led to the encounter in Ayacucho along the Andean range**\". Junín's own article says the same thing from the patriot side: \"The retreat of Canterac's troops after the defeat in Junin was relentless and defections from the Spanish royalist troops to the patriots increased considerably. Eventually De la Serna, had to step in as commander of the Spanish forces to try to restore morale. **The patriot victory paved the way for a final triumph over the Spanish** … The final Spanish capitulation would come after the Battle of Ayacucho, on 9 December 1824.\" Two sentences in the target's own article state the mechanism — a forced march and a manoeuvre against the rearguard — and not merely the order of the two battles.",
+  "dispute": null
+}
