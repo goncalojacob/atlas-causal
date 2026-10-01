@@ -18981,3 +18981,21 @@ fire in six to import anything**, and what unblocked it was not a rule moving.*
 pattern naming a tool kills the shell that runs it, because the shell's own command
 line contains the pattern: `pkill -f 'wikidata.mjs --candidates'` took out the
 heredoc being written in the same command. Match on the pid from `pgrep -af` instead.
+
+**The check is green on the head this stand was written against, and the one red
+run was this batch's own fault rather than the load.** Run **2186** of
+`validate.yml`, commit `aba81476`, conclusion **`success`** — the head carrying
+both imports, both edges, the dropped third one and this document. Run **2182**,
+at `622223a9`, **failed**, and it failed on the assertion deviation 1500 is about:
+`tests/m42-filing.test.mjs` refusing the edge on to `scramble-for-africa`. Runs
+2184 and 2185 were cancelled by the next push, which is deviation 1258's chain and
+costs nothing. **A fire that meets a red check should read it before reaching for
+the load**: this one named the rule, the edge and the line, and the fix was to take
+the edge back.
+
+Both suites are green on this fire's tree, run the way the check runs them since
+M63: **2,241 tests, nothing skipped — 1,928 pure and 313 browser**, neither needing
+a second run. Deviation 1499's intermittent narrative-framing assertion did not
+appear. **No test was added, because no code changed**: the rule this fire broke
+was already written and already caught it, which is what deviations 711 and 717
+are for.
