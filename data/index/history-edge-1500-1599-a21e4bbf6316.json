@@ -47,12 +47,30 @@
         }
       ]
     },
+    "battle-of-algiers-1541--italian-war-of-1542-1546--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-andalien--battle-of-penco--reacted-to": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-cajamarca--conquest-of-tunis-1535--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
@@ -296,6 +314,51 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "capture-of-penon-of-algiers-1529--battle-of-algiers-1541--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "capture-of-tunis-1569--conquest-of-tunis-1573--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "conquest-of-tunis-1534--conquest-of-tunis-1535--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "conquest-of-tunis-1535--capture-of-tunis-1569--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "conquest-of-tunis-1573--conquest-of-tunis-1574--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

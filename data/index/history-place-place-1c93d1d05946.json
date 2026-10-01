@@ -4923,6 +4923,15 @@
         }
       ]
     },
+    "la-goulette": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "la-guaira": {
       "from": "git",
       "versions": [
@@ -10031,6 +10040,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "tunis-q3572": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

@@ -47,6 +47,15 @@
         }
       ]
     },
+    "battle-of-algiers-1541": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-andalien": {
       "from": "git",
       "versions": [
@@ -656,6 +665,60 @@
         }
       ]
     },
+    "capture-of-penon-of-algiers-1529": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "capture-of-tunis-1569": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "conquest-of-tunis-1534": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "conquest-of-tunis-1535": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "conquest-of-tunis-1573": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "conquest-of-tunis-1574": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "fall-of-tenochtitlan": {
       "from": "git",
       "versions": [
@@ -881,6 +944,15 @@
             "review"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "ottoman-habsburg-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

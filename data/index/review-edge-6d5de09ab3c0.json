@@ -4684,6 +4684,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "from": "battle-of-algiers-1541",
+      "id": "battle-of-algiers-1541--italian-war-of-1542-1546--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-63"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "italian-war-of-1542-1546",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "from": "battle-of-andalien",
       "id": "battle-of-andalien--battle-of-penco--reacted-to",
@@ -5096,6 +5125,35 @@
       "status": "active",
       "to": "new-york-and-new-jersey-campaign",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "battle-of-cajamarca",
+      "id": "battle-of-cajamarca--conquest-of-tunis-1535--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-63"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "conquest-of-tunis-1535",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -10478,6 +10536,35 @@
         "wikipedia-en"
       ],
       "created": "2026-10-01",
+      "from": "capture-of-penon-of-algiers-1529",
+      "id": "capture-of-penon-of-algiers-1529--battle-of-algiers-1541--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-63"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-algiers-1541",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
       "from": "capture-of-st-lucia",
       "id": "capture-of-st-lucia--battle-of-martinique-1779--enabled",
       "kind": "edge",
@@ -10495,6 +10582,35 @@
       "status": "active",
       "to": "battle-of-martinique-1779",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "capture-of-tunis-1569",
+      "id": "capture-of-tunis-1569--conquest-of-tunis-1573--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-63"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "conquest-of-tunis-1573",
+      "type": "precondition-of"
     },
     {
       "authors": [
@@ -11217,6 +11333,93 @@
       "status": "active",
       "to": "angolan-war-of-independence",
       "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "conquest-of-tunis-1534",
+      "id": "conquest-of-tunis-1534--conquest-of-tunis-1535--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-63"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "conquest-of-tunis-1535",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "conquest-of-tunis-1535",
+      "id": "conquest-of-tunis-1535--capture-of-tunis-1569--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-63"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "capture-of-tunis-1569",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "conquest-of-tunis-1573",
+      "id": "conquest-of-tunis-1573--conquest-of-tunis-1574--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-63"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "conquest-of-tunis-1574",
+      "type": "reacted-to"
     },
     {
       "authors": [

@@ -2966,6 +2966,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-algiers-1541",
+      "kind": "event",
+      "locator": "Q2502863"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-algiers-1956-1957",
       "kind": "event",
       "locator": "Q1761043"
@@ -5246,6 +5252,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-penon-of-algiers-1529",
+      "kind": "event",
+      "locator": "Q3403025"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-sint-eustatius",
       "kind": "event",
       "locator": "Q4188867"
@@ -5261,6 +5273,12 @@
       "id": "capture-of-tortuga",
       "kind": "event",
       "locator": "Q112083686"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-tunis-1569",
+      "kind": "event",
+      "locator": "Q107240919"
     },
     {
       "dissent": false,
@@ -5405,6 +5423,30 @@
       "id": "conquest-of-paraiba",
       "kind": "event",
       "locator": "Q121494180"
+    },
+    {
+      "dissent": false,
+      "id": "conquest-of-tunis-1534",
+      "kind": "event",
+      "locator": "Q5245689"
+    },
+    {
+      "dissent": false,
+      "id": "conquest-of-tunis-1535",
+      "kind": "event",
+      "locator": "Q700893"
+    },
+    {
+      "dissent": false,
+      "id": "conquest-of-tunis-1573",
+      "kind": "event",
+      "locator": "Q12251145"
+    },
+    {
+      "dissent": false,
+      "id": "conquest-of-tunis-1574",
+      "kind": "event",
+      "locator": "Q2664371"
     },
     {
       "dissent": false,
@@ -7433,6 +7475,12 @@
       "id": "orange-revolution",
       "kind": "event",
       "locator": "Q836386"
+    },
+    {
+      "dissent": false,
+      "id": "ottoman-habsburg-wars",
+      "kind": "event",
+      "locator": "Q786171"
     },
     {
       "dissent": false,
