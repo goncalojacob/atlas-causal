@@ -20,6 +20,15 @@
         }
       ]
     },
+    "attack-on-bintan-1521": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-abancay": {
       "from": "git",
       "versions": [
@@ -230,6 +239,15 @@
         }
       ]
     },
+    "battle-of-johor-1586": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-la-motta-1513": {
       "from": "git",
       "versions": [
@@ -278,6 +296,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-malacca-1534": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
@@ -646,6 +673,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-ugentana-1536": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
@@ -1022,6 +1058,15 @@
         }
       ]
     },
+    "siege-of-campar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "siege-of-concepcion": {
       "from": "git",
       "versions": [
@@ -1136,6 +1181,15 @@
             "review"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "siege-of-johor-1587": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

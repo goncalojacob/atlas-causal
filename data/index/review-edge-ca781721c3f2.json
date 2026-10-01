@@ -10587,6 +10587,35 @@
       ],
       "created": "2026-10-01",
       "from": "capture-of-malacca-1511",
+      "id": "capture-of-malacca-1511--attack-on-bintan-1521--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-67"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "attack-on-bintan-1521",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "capture-of-malacca-1511",
       "id": "capture-of-malacca-1511--siege-of-malacca-1551--precondition-of",
       "kind": "edge",
       "origin": {

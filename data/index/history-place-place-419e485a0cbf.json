@@ -4387,6 +4387,24 @@
         }
       ]
     },
+    "johor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "johor-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "jordan-q810": {
       "from": "git",
       "versions": [

@@ -9086,6 +9086,62 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "johor",
+      "kind": "place",
+      "names": [
+        "Johor",
+        "Jor"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "johor-river",
+      "kind": "place",
+      "names": [
+        "Johor River",
+        "Rio Johor"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -11568,7 +11624,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 4,
+      "degree": 5,
       "id": "malacca-city",
       "kind": "place",
       "names": [
@@ -11598,7 +11654,7 @@
         }
       ],
       "created": "2026-10-01",
-      "degree": 2,
+      "degree": 3,
       "id": "malay-peninsula",
       "kind": "place",
       "names": [

@@ -3764,6 +3764,18 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-malacca-1511--attack-on-bintan-1521--precondition-of",
+      "kind": "edge",
+      "locator": "\"Attack on Bintan (1521)\", revision 1372970515"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-malacca-1511--attack-on-bintan-1521--precondition-of",
+      "kind": "edge",
+      "locator": "\"Capture of Malacca (1511)\", revision 1373484620"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-malacca-1511--siege-of-malacca-1551--precondition-of",
       "kind": "edge",
       "locator": "\"Capture of Malacca (1511)\", revision 1373484620"
@@ -10604,6 +10616,12 @@
     },
     {
       "dissent": false,
+      "id": "attack-on-bintan-1521",
+      "kind": "event",
+      "locator": "\"Attack on Bintan (1521)\", revision 1372970515"
+    },
+    {
+      "dissent": false,
       "id": "attack-on-the-moncada-barracks",
       "kind": "event",
       "locator": "\"Attack on the Moncada Barracks\", revision 1370861034"
@@ -11432,6 +11450,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-johor-1586",
+      "kind": "event",
+      "locator": "\"Battle of Johor (1586)\", revision 1370444348"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-junin",
       "kind": "event",
       "locator": "\"Battle of Junín\", revision 1370266471"
@@ -11681,6 +11705,12 @@
       "id": "battle-of-maipu",
       "kind": "event",
       "locator": "\"Battle of Maipú\", revision 1370268820"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-malacca-1534",
+      "kind": "event",
+      "locator": "\"Battle of Malacca (1534)\", revision 1370448660"
     },
     {
       "dissent": false,
@@ -12599,6 +12629,12 @@
       "id": "battle-of-two-sisters",
       "kind": "event",
       "locator": "\"Battle of Two Sisters\", revision 1372847051"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ugentana-1536",
+      "kind": "event",
+      "locator": "\"Battle of Ugentana (1536)\", revision 1373045056"
     },
     {
       "dissent": false,
@@ -16094,6 +16130,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-campar",
+      "kind": "event",
+      "locator": "\"Siege of Campar\", revision 1370740012"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-ciudad-rodrigo-1812",
       "kind": "event",
       "locator": "\"Siege of Ciudad Rodrigo (1812)\", revision 1370740278"
@@ -16205,6 +16247,12 @@
       "id": "siege-of-jaffa",
       "kind": "event",
       "locator": "\"Siege of Jaffa\", revision 1371106198"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-johor-1587",
+      "kind": "event",
+      "locator": "\"Siege of Johor (1587)\", revision 1370742162"
     },
     {
       "dissent": false,

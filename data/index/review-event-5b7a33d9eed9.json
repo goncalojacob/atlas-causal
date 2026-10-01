@@ -5999,6 +5999,38 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "attack-on-bintan-1521",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "malay-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Attack on Bintan (1521)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata"
       ],
@@ -10678,6 +10710,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "id": "battle-of-johor-1586",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "malay-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Johor (1586)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 2,
       "id": "battle-of-junin",
@@ -12083,6 +12146,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Maipú"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "battle-of-malacca-1534",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "malay-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Malacca (1534)"
     },
     {
       "authors": [
@@ -17099,6 +17194,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "battle-of-ugentana-1536",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "malay-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ugentana (1536)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -19775,7 +19902,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-01",
-      "degree": 4,
+      "degree": 5,
       "id": "capture-of-malacca-1511",
       "kind": "event",
       "origin": {
@@ -38482,6 +38609,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "id": "siege-of-campar",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "malay-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Campar"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "siege-of-ciudad-rodrigo-1812",
@@ -39084,6 +39242,38 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Jaffa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "siege-of-johor-1587",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "malay-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Johor (1587)"
     },
     {
       "authors": [
@@ -47755,6 +47945,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-johor-1586",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-juterbog",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -47852,6 +48048,12 @@
     },
     {
       "id": "battle-of-macau",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-malacca-1534",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -48080,6 +48282,12 @@
     },
     {
       "id": "battle-of-two-sisters",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-ugentana-1536",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -48925,6 +49133,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-campar",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-concepcion",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -48974,6 +49188,12 @@
     },
     {
       "id": "siege-of-jadotville",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-johor-1587",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

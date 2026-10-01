@@ -2804,6 +2804,12 @@
     },
     {
       "dissent": false,
+      "id": "attack-on-bintan-1521",
+      "kind": "event",
+      "locator": "Q118900813"
+    },
+    {
+      "dissent": false,
       "id": "attack-on-cerro-montezuma",
       "kind": "event",
       "locator": "Q105883497"
@@ -3656,6 +3662,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-johor-1586",
+      "kind": "event",
+      "locator": "Q127868092"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-junin",
       "kind": "event",
       "locator": "Q1508820"
@@ -3905,6 +3917,12 @@
       "id": "battle-of-maipu",
       "kind": "event",
       "locator": "Q1073849"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-malacca-1534",
+      "kind": "event",
+      "locator": "Q127868126"
     },
     {
       "dissent": false,
@@ -4811,6 +4829,12 @@
       "id": "battle-of-two-sisters",
       "kind": "event",
       "locator": "Q4872617"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ugentana-1536",
+      "kind": "event",
+      "locator": "Q116214216"
     },
     {
       "dissent": false,
@@ -8432,6 +8456,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-campar",
+      "kind": "event",
+      "locator": "Q130520296"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-ciudad-rodrigo-1812",
       "kind": "event",
       "locator": "Q567571"
@@ -8543,6 +8573,12 @@
       "id": "siege-of-jaffa",
       "kind": "event",
       "locator": "Q3178783"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-johor-1587",
+      "kind": "event",
+      "locator": "Q55633157"
     },
     {
       "dissent": false,
