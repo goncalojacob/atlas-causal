@@ -12842,10 +12842,9 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "filed-from-p361",
-          "a9-place"
+          "filed-from-p361"
         ],
-        "note": "Held back by the curation fire of 29 September: A9's chain places this at `pamplona` (Q10282) and the place record trips the map's label placer, which renders \"Pamplona\" overlapping \"PYRENEES\". The placement is right and is one line to re-apply once src/map/labels.js measures a letterspaced label's width. A11(a), A9: the item's P276 is Q10282, Pamplona, 7 km from Noáin; the place record is written from that item and the lane derives to europe from its own point.",
+        "note": "A11(a), A9: the item's P276 is Q10282, Pamplona. The placement is right and is not written: the place record put a second 'Pamplona' on the map beside Natural Earth's own, and its label overlapped the tracked all-caps 'PYRENEES' that tests/map-browser.test.mjs forbids. The fix is data, not display: tools/import/naturalearth.mjs --places, which holds Pamplona at Q10282.",
         "status": "draft"
       },
       "revised": "2026-10-01",
@@ -13147,10 +13146,9 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "filed-from-p361",
-          "a9-place"
+          "filed-from-p361"
         ],
-        "note": "Held back by the curation fire of 29 September: A9's chain places this at `pamplona` (Q10282) and the place record trips the map's label placer, which renders \"Pamplona\" overlapping \"PYRENEES\". The placement is right and is one line to re-apply once src/map/labels.js measures a letterspaced label's width. A11(a), A9: the item's P276 is Q10282, Pamplona, which this fire wrote for the Battle of Noáin five weeks later in the same campaign.",
+        "note": "A11(a), A9: the item's P276 is Q10282, Pamplona. The placement is right and is not written: the place record put a second 'Pamplona' on the map beside Natural Earth's own, and its label overlapped the tracked all-caps 'PYRENEES' that tests/map-browser.test.mjs forbids. The fix is data, not display: tools/import/naturalearth.mjs --places, which holds Pamplona at Q10282.",
         "status": "draft"
       },
       "revised": "2026-10-01",

@@ -6988,31 +6988,6 @@
         }
       ]
     },
-    "pamplona": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "created",
-            "review",
-            "sitelinks",
-            "summary"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "created",
-            "sitelinks"
-          ],
-          "on": "2026-10-01"
-        }
-      ]
-    },
     "panaji": {
       "from": "git",
       "versions": [
