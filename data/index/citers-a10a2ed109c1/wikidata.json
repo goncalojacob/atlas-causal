@@ -2258,6 +2258,12 @@
     },
     {
       "dissent": false,
+      "id": "2012-2013-egyptian-protests",
+      "kind": "event",
+      "locator": "Q3720660"
+    },
+    {
+      "dissent": false,
       "id": "2012-malian-coup-d-etat",
       "kind": "event",
       "locator": "Q875912"
@@ -7244,6 +7250,12 @@
     },
     {
       "dissent": false,
+      "id": "middle-eastern-crisis-2023-present",
+      "kind": "event",
+      "locator": "Q124373310"
+    },
+    {
+      "dissent": false,
       "id": "milk-bar-cafe-bombing",
       "kind": "event",
       "locator": "Q76832368"
@@ -9371,6 +9383,12 @@
       "id": "third-battle-of-ypres",
       "kind": "event",
       "locator": "Q426227"
+    },
+    {
+      "dissent": false,
+      "id": "third-indochina-war",
+      "kind": "event",
+      "locator": "Q796498"
     },
     {
       "dissent": false,

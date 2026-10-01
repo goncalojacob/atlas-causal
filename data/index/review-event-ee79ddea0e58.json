@@ -3157,6 +3157,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "2012-2013-egyptian-protests",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2012–2013 Egyptian protests"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -3280,12 +3308,14 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "2012-2013-egyptian-protests",
       "review": {
         "flags": [
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "filed-from-p361"
         ],
         "status": "draft"
       },
@@ -19805,7 +19835,10 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "indochina-wars",
+      "parent": [
+        "indochina-wars",
+        "third-indochina-war"
+      ],
       "review": {
         "flags": [
           "imported-facts",
@@ -19813,7 +19846,8 @@
           "participants-from-p710",
           "summary-from-lead",
           "a7-widened",
-          "m42-filed"
+          "m42-filed",
+          "filed-from-p361"
         ],
         "note": "Wikidata Q635533 names 6 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 5 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.\n\nA7: the span was 1989-1991, the withdrawal and the Paris accords, not the war. The lead this summary quotes says, at the cached revision, \"an armed conflict from 1978 to 1989\". So 1978-1989, and the two days go: the article gives none.",
         "status": "draft"
@@ -26136,13 +26170,15 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "middle-eastern-crisis-2023-present",
       "review": {
         "flags": [
           "imported-facts",
           "summary-drafted",
           "a9-place",
           "end-unstated",
-          "a15-category-from-p31"
+          "a15-category-from-p31",
+          "filed-from-p361"
         ],
         "status": "draft"
       },
@@ -31502,6 +31538,35 @@
       "revised": "2026-09-25",
       "status": "active",
       "title": "Mexican War of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "middle-eastern-crisis-2023-present",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Middle Eastern crisis (2023–present)"
     },
     {
       "authors": [
@@ -41682,13 +41747,17 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "indochina-wars",
+      "parent": [
+        "indochina-wars",
+        "third-indochina-war"
+      ],
       "review": {
         "flags": [
           "imported-facts",
           "participants-from-p710",
           "summary-from-lead",
-          "a15-country-refused"
+          "a15-country-refused",
+          "filed-from-p361"
         ],
         "note": "Wikidata Q623171 names 2 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 1 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing. A15(6): the place was north-vietnam, from the item's P17, and it is refused because the country was dissolved (1976) before the event began (1979). The lane is unchanged.",
         "status": "draft"
@@ -44394,6 +44463,38 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "third-indochina-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "indochina-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Third Indochina War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -46115,12 +46216,14 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "middle-eastern-crisis-2023-present",
       "review": {
         "flags": [
           "imported-facts",
           "summary-drafted",
           "a9-place",
-          "a15-category-from-p31"
+          "a15-category-from-p31",
+          "filed-from-p361"
         ],
         "status": "draft"
       },
@@ -48022,6 +48125,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "2012-2013-egyptian-protests",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "2013-colombian-clashes",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -49378,6 +49487,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "middle-eastern-crisis-2023-present",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "milk-bar-cafe-bombing",
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -49997,6 +50112,12 @@
     },
     {
       "id": "third-battle-of-ypres",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "third-indochina-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

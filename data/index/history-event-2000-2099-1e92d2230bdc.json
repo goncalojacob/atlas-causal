@@ -1312,6 +1312,15 @@
         }
       ]
     },
+    "2012-2013-egyptian-protests": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "2012-azorean-regional-election": {
       "from": "git",
       "versions": [
@@ -1471,6 +1480,13 @@
             "review",
             "sources",
             "summary"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "parent",
+            "review"
           ],
           "on": "2026-09-22"
         }
@@ -4877,6 +4893,13 @@
             "sources"
           ],
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "parent",
+            "review"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -5778,6 +5801,15 @@
             "parent"
           ],
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "middle-eastern-crisis-2023-present": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
@@ -7215,6 +7247,13 @@
             "category",
             "review",
             "sources"
+          ],
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "parent",
+            "review"
           ],
           "on": "2026-09-29"
         }

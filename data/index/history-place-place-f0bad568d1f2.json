@@ -5741,6 +5741,15 @@
         }
       ]
     },
+    "mainland-southeast-asia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "malacca-city": {
       "from": "git",
       "versions": [

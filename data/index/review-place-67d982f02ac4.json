@@ -5823,7 +5823,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "egypt-q79",
       "kind": "place",
       "names": [
@@ -11705,6 +11705,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "mainland-southeast-asia",
+      "kind": "place",
+      "names": [
+        "Mainland Southeast Asia",
+        "Indochina"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
       "degree": 5,
       "id": "malacca-city",
@@ -12341,7 +12369,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "middle-east",
       "kind": "place",
       "names": [
