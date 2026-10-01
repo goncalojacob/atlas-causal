@@ -13,15 +13,16 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": "2026-09-29",
+  "revised": "2026-10-01",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "filed-from-p361"
+      "filed-from-p361",
+      "a9-place"
     ],
-    "note": "Held back by the curation fire of 29 September: A9's chain places this at `pamplona` (Q10282) and the place record trips the map's label placer, which renders \"Pamplona\" overlapping \"PYRENEES\". The placement is right and is one line to re-apply once src/map/labels.js measures a letterspaced label's width."
+    "note": "Held back by the curation fire of 29 September: A9's chain places this at `pamplona` (Q10282) and the place record trips the map's label placer, which renders \"Pamplona\" overlapping \"PYRENEES\". The placement is right and is one line to re-apply once src/map/labels.js measures a letterspaced label's width. A11(a), A9: the item's P276 is Q10282, Pamplona, 7 km from Noáin; the place record is written from that item and the lane derives to europe from its own point."
   },
   "origin": {
     "tool": "wikidata"
@@ -52,9 +53,9 @@
     "end": 1521,
     "date": "1521-06-30"
   },
-  "place": null,
-  "region": "europe",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "place": "pamplona",
+  "region": null,
+  "regionNote": null,
   "parent": [
     "italian-war-of-1521-1526",
     "spanish-conquest-of-iberian-navarre"

@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-29",
+  "revised": "2026-10-01",
   "review": {
     "status": "draft",
     "flags": [
@@ -25,9 +25,10 @@
       "summary-drafted",
       "title-from-article",
       "a15-country-refused",
-      "a15-category-from-p31"
+      "a15-category-from-p31",
+      "place-refused"
     ],
-    "note": "A15(6): the place was soviet-union-q15180, from the item's P17, and it is refused because the country's point is 3334 km from the nearest point on the event's own chain. The lane is unchanged."
+    "note": "A15(6): the place was soviet-union-q15180, from the item's P17, and it is refused because the country's point is 3334 km from the nearest point on the event's own chain. The lane is unchanged. A11(a), A9: no place is written. The item names six locations and the chain takes the first that passes, Central Europe; a front from the Vistula to the Volga is not its point. A15(6)'s second refusal is written for P17 and does not reach a P276 of six regions."
   },
   "origin": {
     "tool": "wikidata"
