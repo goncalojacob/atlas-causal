@@ -17221,9 +17221,13 @@ edge the pure pass had **one failure** — `tests/m67.test.mjs`, on the batch's 
 bare record — fixed in the next commit by writing the section M67 A1 asks for in
 `docs/m67-umbrellas.md`. The two that remain are the two of
 `tests/graph-labels-browser.test.mjs` that deviation 1386 is about, and the same
-two the check reports. The check went **red on run 2242**
-(`4515d4f9`) for the same two tests, which were read in the job's own log and not
-assumed; runs 2239 and 2241 were cancelled by a newer push.*
+two the check reports. **The check is red on run 2248** (`453a9325`, this fire's
+head): `Validate records` green, `Tests` red at **313 browser tests, 311 passed,
+2 failed**, read in the job's own log and not assumed — the pure pass is green
+there, because the step only reaches the browser suites when it is. It was red
+the same way on **run 2242** (`4515d4f9`) at 311 of 313. Runs 2239, 2241, 2244,
+2245 and 2246 were cancelled by a newer push, which the workflow's own
+`cancel-in-progress` does.*
 
 **One observation for the other lane, since it costs nothing to write down.**
 `docs/m42-pool.md`'s deviations 1516 and 1518 report the import tool refused by
