@@ -11071,6 +11071,47 @@ three by the tool, six edges**, the main count unmoved at 235, **thirteen
 candidates left with one reason** (no English article, so nothing for A15(1)
 to read), and one deviation, **1343**, found and closed inside the batch.
 
+### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+
+`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
+**the check is red on it twice**, where the same tree with the same `data/` went
+green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
+Both failures were read rather than assumed, and they are **two different suites
+failing two different ways**:
+
+| attempt | suite | what it reports |
+| --- | --- | --- |
+| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
+| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
+
+Both were run here at this exact head, against the live corpus:
+`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
+`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
+seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
+suites do not touch what this fire wrote: batch 62's three edges run between the
+Peninsular War and three Spanish American wars of independence, and the label
+test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
+are green on their own latest runs, so this is not lane-wide either.
+
+**What it is**: the browser pass is the second of two on a four-core shared
+runner, it took 606 s and 536 s on the two attempts, and the bounds in
+`tests/browser.mjs` are tight enough that a slow round drops *a different test
+each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
+`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
+the 581 and 668 those documents measured. One re-run has been spent, and a second
+failure is real, so this is reported and not re-run again.
+
+**The proposed patch, which belongs to lane A and not here**: raise the
+`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
+the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
+rather than sitting at a constant that was generous at 581 events and is not at
+1,377. **This lane must not push it**: STEP 1's own merge rule keeps
+`origin/m0`'s side of any test file, so a bound this branch raised would be
+dropped at the next merge, and the record lanes have no standing to change a
+display suite. Nothing under `data/` is implicated and `validate --index` is
+clean at 0 errors, so the records this fire wrote are sound; what is red is the
+timing of two display suites on one docs commit.
+
 ### The next fire's moves, in order
 
 1. **The eight-to-thirteen Egyptian children with no English article are not
@@ -11301,6 +11342,47 @@ rebuilding `data/index/`, union-merging the title cache and re-measuring the
 M53 coverage row on the merged corpus. Then **one batch, 43**: five events,
 five places, eight edges, one deviation (1346), the main count unmoved at 235
 and the largest component moved from 715 to 723.
+
+### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+
+`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
+**the check is red on it twice**, where the same tree with the same `data/` went
+green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
+Both failures were read rather than assumed, and they are **two different suites
+failing two different ways**:
+
+| attempt | suite | what it reports |
+| --- | --- | --- |
+| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
+| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
+
+Both were run here at this exact head, against the live corpus:
+`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
+`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
+seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
+suites do not touch what this fire wrote: batch 62's three edges run between the
+Peninsular War and three Spanish American wars of independence, and the label
+test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
+are green on their own latest runs, so this is not lane-wide either.
+
+**What it is**: the browser pass is the second of two on a four-core shared
+runner, it took 606 s and 536 s on the two attempts, and the bounds in
+`tests/browser.mjs` are tight enough that a slow round drops *a different test
+each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
+`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
+the 581 and 668 those documents measured. One re-run has been spent, and a second
+failure is real, so this is reported and not re-run again.
+
+**The proposed patch, which belongs to lane A and not here**: raise the
+`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
+the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
+rather than sitting at a constant that was generous at 581 events and is not at
+1,377. **This lane must not push it**: STEP 1's own merge rule keeps
+`origin/m0`'s side of any test file, so a bound this branch raised would be
+dropped at the next merge, and the record lanes have no standing to change a
+display suite. Nothing under `data/` is implicated and `validate --index` is
+clean at 0 errors, so the records this fire wrote are sound; what is red is the
+timing of two display suites on one docs commit.
 
 ### The next fire's moves, in order
 
@@ -11797,6 +11879,47 @@ place, is filed under `second-boer-war`, and was not in `docs/m67-umbrellas.md`.
 M42 had already written that paragraph by 19:0x and its own check was green on
 run 2031. The second merge brought it over and the test passes.
 
+### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+
+`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
+**the check is red on it twice**, where the same tree with the same `data/` went
+green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
+Both failures were read rather than assumed, and they are **two different suites
+failing two different ways**:
+
+| attempt | suite | what it reports |
+| --- | --- | --- |
+| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
+| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
+
+Both were run here at this exact head, against the live corpus:
+`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
+`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
+seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
+suites do not touch what this fire wrote: batch 62's three edges run between the
+Peninsular War and three Spanish American wars of independence, and the label
+test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
+are green on their own latest runs, so this is not lane-wide either.
+
+**What it is**: the browser pass is the second of two on a four-core shared
+runner, it took 606 s and 536 s on the two attempts, and the bounds in
+`tests/browser.mjs` are tight enough that a slow round drops *a different test
+each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
+`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
+the 581 and 668 those documents measured. One re-run has been spent, and a second
+failure is real, so this is reported and not re-run again.
+
+**The proposed patch, which belongs to lane A and not here**: raise the
+`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
+the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
+rather than sitting at a constant that was generous at 581 events and is not at
+1,377. **This lane must not push it**: STEP 1's own merge rule keeps
+`origin/m0`'s side of any test file, so a bound this branch raised would be
+dropped at the next merge, and the record lanes have no standing to change a
+display suite. Nothing under `data/` is implicated and `validate --index` is
+clean at 0 errors, so the records this fire wrote are sound; what is red is the
+timing of two display suites on one docs commit.
+
 ### The next fire's moves, in order
 
 1. **The `africa` seventeenth century is one anchor record away.** The two
@@ -12103,6 +12226,47 @@ the 407 components that are not the largest hold **590 events** between them,
 and they are **319 singletons, 62 pairs and 26 of three or more**. Every one of
 those 62 pairs is two events an edge already joins, waiting on one sourced edge
 to a third — the cheapest connectivity this corpus has left.
+
+### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+
+`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
+**the check is red on it twice**, where the same tree with the same `data/` went
+green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
+Both failures were read rather than assumed, and they are **two different suites
+failing two different ways**:
+
+| attempt | suite | what it reports |
+| --- | --- | --- |
+| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
+| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
+
+Both were run here at this exact head, against the live corpus:
+`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
+`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
+seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
+suites do not touch what this fire wrote: batch 62's three edges run between the
+Peninsular War and three Spanish American wars of independence, and the label
+test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
+are green on their own latest runs, so this is not lane-wide either.
+
+**What it is**: the browser pass is the second of two on a four-core shared
+runner, it took 606 s and 536 s on the two attempts, and the bounds in
+`tests/browser.mjs` are tight enough that a slow round drops *a different test
+each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
+`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
+the 581 and 668 those documents measured. One re-run has been spent, and a second
+failure is real, so this is reported and not re-run again.
+
+**The proposed patch, which belongs to lane A and not here**: raise the
+`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
+the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
+rather than sitting at a constant that was generous at 581 events and is not at
+1,377. **This lane must not push it**: STEP 1's own merge rule keeps
+`origin/m0`'s side of any test file, so a bound this branch raised would be
+dropped at the next merge, and the record lanes have no standing to change a
+display suite. Nothing under `data/` is implicated and `validate --index` is
+clean at 0 errors, so the records this fire wrote are sound; what is red is the
+timing of two display suites on one docs commit.
 
 ### The next fire's moves, in order
 
@@ -12483,6 +12647,47 @@ pre-1800 child left for this lane. The American Revolutionary War's land war
 is 182 unheld Americas records deep and **not one of their leads names a held
 sibling causally**, because what the atlas holds of that war is its naval and
 Caribbean theatre.
+
+### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+
+`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
+**the check is red on it twice**, where the same tree with the same `data/` went
+green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
+Both failures were read rather than assumed, and they are **two different suites
+failing two different ways**:
+
+| attempt | suite | what it reports |
+| --- | --- | --- |
+| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
+| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
+
+Both were run here at this exact head, against the live corpus:
+`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
+`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
+seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
+suites do not touch what this fire wrote: batch 62's three edges run between the
+Peninsular War and three Spanish American wars of independence, and the label
+test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
+are green on their own latest runs, so this is not lane-wide either.
+
+**What it is**: the browser pass is the second of two on a four-core shared
+runner, it took 606 s and 536 s on the two attempts, and the bounds in
+`tests/browser.mjs` are tight enough that a slow round drops *a different test
+each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
+`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
+the 581 and 668 those documents measured. One re-run has been spent, and a second
+failure is real, so this is reported and not re-run again.
+
+**The proposed patch, which belongs to lane A and not here**: raise the
+`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
+the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
+rather than sitting at a constant that was generous at 581 events and is not at
+1,377. **This lane must not push it**: STEP 1's own merge rule keeps
+`origin/m0`'s side of any test file, so a bound this branch raised would be
+dropped at the next merge, and the record lanes have no standing to change a
+display suite. Nothing under `data/` is implicated and `validate --index` is
+clean at 0 errors, so the records this fire wrote are sound; what is red is the
+timing of two display suites on one docs commit.
 
 ### The next fire's moves, in order
 
@@ -12872,6 +13077,47 @@ Then **the tool change A15 (8) had been asking for** (deviation 1200), with its
 test first, and **two batches in the africa cell before 1800**, which is the
 cell that trails most inside this lane's partition. Three events, one place,
 five edges, the main count unmoved at 230, and the largest component 739 → 742.
+
+### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+
+`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
+**the check is red on it twice**, where the same tree with the same `data/` went
+green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
+Both failures were read rather than assumed, and they are **two different suites
+failing two different ways**:
+
+| attempt | suite | what it reports |
+| --- | --- | --- |
+| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
+| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
+
+Both were run here at this exact head, against the live corpus:
+`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
+`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
+seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
+suites do not touch what this fire wrote: batch 62's three edges run between the
+Peninsular War and three Spanish American wars of independence, and the label
+test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
+are green on their own latest runs, so this is not lane-wide either.
+
+**What it is**: the browser pass is the second of two on a four-core shared
+runner, it took 606 s and 536 s on the two attempts, and the bounds in
+`tests/browser.mjs` are tight enough that a slow round drops *a different test
+each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
+`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
+the 581 and 668 those documents measured. One re-run has been spent, and a second
+failure is real, so this is reported and not re-run again.
+
+**The proposed patch, which belongs to lane A and not here**: raise the
+`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
+the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
+rather than sitting at a constant that was generous at 581 events and is not at
+1,377. **This lane must not push it**: STEP 1's own merge rule keeps
+`origin/m0`'s side of any test file, so a bound this branch raised would be
+dropped at the next merge, and the record lanes have no standing to change a
+display suite. Nothing under `data/` is implicated and `validate --index` is
+clean at 0 errors, so the records this fire wrote are sound; what is red is the
+timing of two display suites on one docs commit.
 
 ### The next fire's moves, in order
 
@@ -13293,6 +13539,47 @@ establishes it is tabled under batch 51.*
 | undated | 1 / 1 | 1 / 1 | — | — |
 | **all** | **555 / 85** | **211 / 31** | **211 / 62** | **363 / 56** |
 
+### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+
+`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
+**the check is red on it twice**, where the same tree with the same `data/` went
+green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
+Both failures were read rather than assumed, and they are **two different suites
+failing two different ways**:
+
+| attempt | suite | what it reports |
+| --- | --- | --- |
+| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
+| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
+
+Both were run here at this exact head, against the live corpus:
+`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
+`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
+seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
+suites do not touch what this fire wrote: batch 62's three edges run between the
+Peninsular War and three Spanish American wars of independence, and the label
+test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
+are green on their own latest runs, so this is not lane-wide either.
+
+**What it is**: the browser pass is the second of two on a four-core shared
+runner, it took 606 s and 536 s on the two attempts, and the bounds in
+`tests/browser.mjs` are tight enough that a slow round drops *a different test
+each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
+`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
+the 581 and 668 those documents measured. One re-run has been spent, and a second
+failure is real, so this is reported and not re-run again.
+
+**The proposed patch, which belongs to lane A and not here**: raise the
+`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
+the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
+rather than sitting at a constant that was generous at 581 events and is not at
+1,377. **This lane must not push it**: STEP 1's own merge rule keeps
+`origin/m0`'s side of any test file, so a bound this branch raised would be
+dropped at the next merge, and the record lanes have no standing to change a
+display suite. Nothing under `data/` is implicated and `validate --index` is
+clean at 0 errors, so the records this fire wrote are sound; what is red is the
+timing of two display suites on one docs commit.
+
 ### The next fire's moves, in order
 
 1. **The question to the owner is now three questions, and the third is new.**
@@ -13553,6 +13840,47 @@ read to establish that.*
 | 2000s | 52 / 7 | 76 / 7 | 29 / 15 | 39 / 1 |
 | undated | 1 / 1 | 1 / 1 | — | — |
 | **all** | **555 / 85** | **211 / 31** | **211 / 62** | **365 / 56** |
+
+### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+
+`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
+**the check is red on it twice**, where the same tree with the same `data/` went
+green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
+Both failures were read rather than assumed, and they are **two different suites
+failing two different ways**:
+
+| attempt | suite | what it reports |
+| --- | --- | --- |
+| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
+| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
+
+Both were run here at this exact head, against the live corpus:
+`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
+`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
+seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
+suites do not touch what this fire wrote: batch 62's three edges run between the
+Peninsular War and three Spanish American wars of independence, and the label
+test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
+are green on their own latest runs, so this is not lane-wide either.
+
+**What it is**: the browser pass is the second of two on a four-core shared
+runner, it took 606 s and 536 s on the two attempts, and the bounds in
+`tests/browser.mjs` are tight enough that a slow round drops *a different test
+each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
+`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
+the 581 and 668 those documents measured. One re-run has been spent, and a second
+failure is real, so this is reported and not re-run again.
+
+**The proposed patch, which belongs to lane A and not here**: raise the
+`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
+the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
+rather than sitting at a constant that was generous at 581 events and is not at
+1,377. **This lane must not push it**: STEP 1's own merge rule keeps
+`origin/m0`'s side of any test file, so a bound this branch raised would be
+dropped at the next merge, and the record lanes have no standing to change a
+display suite. Nothing under `data/` is implicated and `validate --index` is
+clean at 0 errors, so the records this fire wrote are sound; what is red is the
+timing of two display suites on one docs commit.
 
 ### The next fire's moves, in order
 
@@ -13889,6 +14217,47 @@ and about 250 of them are one vein — the land war of the American Revolution.*
 | undated | 1 / 1 | 1 / 1 | — | — |
 | **all** | **555 / 85** | **211 / 31** | **211 / 62** | **369 / 56** |
 
+### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+
+`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
+**the check is red on it twice**, where the same tree with the same `data/` went
+green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
+Both failures were read rather than assumed, and they are **two different suites
+failing two different ways**:
+
+| attempt | suite | what it reports |
+| --- | --- | --- |
+| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
+| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
+
+Both were run here at this exact head, against the live corpus:
+`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
+`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
+seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
+suites do not touch what this fire wrote: batch 62's three edges run between the
+Peninsular War and three Spanish American wars of independence, and the label
+test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
+are green on their own latest runs, so this is not lane-wide either.
+
+**What it is**: the browser pass is the second of two on a four-core shared
+runner, it took 606 s and 536 s on the two attempts, and the bounds in
+`tests/browser.mjs` are tight enough that a slow round drops *a different test
+each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
+`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
+the 581 and 668 those documents measured. One re-run has been spent, and a second
+failure is real, so this is reported and not re-run again.
+
+**The proposed patch, which belongs to lane A and not here**: raise the
+`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
+the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
+rather than sitting at a constant that was generous at 581 events and is not at
+1,377. **This lane must not push it**: STEP 1's own merge rule keeps
+`origin/m0`'s side of any test file, so a bound this branch raised would be
+dropped at the next merge, and the record lanes have no standing to change a
+display suite. Nothing under `data/` is implicated and `validate --index` is
+clean at 0 errors, so the records this fire wrote are sound; what is red is the
+timing of two display suites on one docs commit.
+
 ### The next fire's moves, in order
 
 1. **The three questions to the owner are unchanged and none of them is a run's
@@ -14162,6 +14531,47 @@ articles the atlas already cites rather than by asking Wikidata anything.*
 | undated | 1 / 1 | 1 / 1 | — | — | — | — | 2 / 2 |
 | **all** | **555 / 85** | **211 / 31** | **211 / 62** | **374 / 56** | **—** | **—** | **1351 / 234** |
 
+### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+
+`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
+**the check is red on it twice**, where the same tree with the same `data/` went
+green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
+Both failures were read rather than assumed, and they are **two different suites
+failing two different ways**:
+
+| attempt | suite | what it reports |
+| --- | --- | --- |
+| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
+| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
+
+Both were run here at this exact head, against the live corpus:
+`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
+`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
+seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
+suites do not touch what this fire wrote: batch 62's three edges run between the
+Peninsular War and three Spanish American wars of independence, and the label
+test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
+are green on their own latest runs, so this is not lane-wide either.
+
+**What it is**: the browser pass is the second of two on a four-core shared
+runner, it took 606 s and 536 s on the two attempts, and the bounds in
+`tests/browser.mjs` are tight enough that a slow round drops *a different test
+each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
+`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
+the 581 and 668 those documents measured. One re-run has been spent, and a second
+failure is real, so this is reported and not re-run again.
+
+**The proposed patch, which belongs to lane A and not here**: raise the
+`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
+the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
+rather than sitting at a constant that was generous at 581 events and is not at
+1,377. **This lane must not push it**: STEP 1's own merge rule keeps
+`origin/m0`'s side of any test file, so a bound this branch raised would be
+dropped at the next merge, and the record lanes have no standing to change a
+display suite. Nothing under `data/` is implicated and `validate --index` is
+clean at 0 errors, so the records this fire wrote are sound; what is red is the
+timing of two display suites on one docs commit.
+
 ### The next fire's moves, in order
 
 1. **The three questions to the owner are unchanged and none of them is a run's
@@ -14407,6 +14817,47 @@ cheap sentences are. The crossings live at the vein's ends, which is what batch
 | main | 234 | **234** |
 | largest connected component | 752 | **756** |
 | edges crossing an umbrella | 578 | **578** |
+
+### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+
+`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
+**the check is red on it twice**, where the same tree with the same `data/` went
+green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
+Both failures were read rather than assumed, and they are **two different suites
+failing two different ways**:
+
+| attempt | suite | what it reports |
+| --- | --- | --- |
+| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
+| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
+
+Both were run here at this exact head, against the live corpus:
+`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
+`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
+seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
+suites do not touch what this fire wrote: batch 62's three edges run between the
+Peninsular War and three Spanish American wars of independence, and the label
+test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
+are green on their own latest runs, so this is not lane-wide either.
+
+**What it is**: the browser pass is the second of two on a four-core shared
+runner, it took 606 s and 536 s on the two attempts, and the bounds in
+`tests/browser.mjs` are tight enough that a slow round drops *a different test
+each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
+`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
+the 581 and 668 those documents measured. One re-run has been spent, and a second
+failure is real, so this is reported and not re-run again.
+
+**The proposed patch, which belongs to lane A and not here**: raise the
+`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
+the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
+rather than sitting at a constant that was generous at 581 events and is not at
+1,377. **This lane must not push it**: STEP 1's own merge rule keeps
+`origin/m0`'s side of any test file, so a bound this branch raised would be
+dropped at the next merge, and the record lanes have no standing to change a
+display suite. Nothing under `data/` is implicated and `validate --index` is
+clean at 0 errors, so the records this fire wrote are sound; what is red is the
+timing of two display suites on one docs commit.
 
 ### The next fire's moves, in order
 
@@ -14908,6 +15359,47 @@ closed on the head and there is nothing left to fix. **A red run on an
 intermediate commit of a fire whose head is green is this, nine times in ten:
 read the head's run, not the branch's most recent red.***
 
+### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+
+`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
+**the check is red on it twice**, where the same tree with the same `data/` went
+green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
+Both failures were read rather than assumed, and they are **two different suites
+failing two different ways**:
+
+| attempt | suite | what it reports |
+| --- | --- | --- |
+| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
+| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
+
+Both were run here at this exact head, against the live corpus:
+`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
+`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
+seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
+suites do not touch what this fire wrote: batch 62's three edges run between the
+Peninsular War and three Spanish American wars of independence, and the label
+test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
+are green on their own latest runs, so this is not lane-wide either.
+
+**What it is**: the browser pass is the second of two on a four-core shared
+runner, it took 606 s and 536 s on the two attempts, and the bounds in
+`tests/browser.mjs` are tight enough that a slow round drops *a different test
+each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
+`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
+the 581 and 668 those documents measured. One re-run has been spent, and a second
+failure is real, so this is reported and not re-run again.
+
+**The proposed patch, which belongs to lane A and not here**: raise the
+`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
+the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
+rather than sitting at a constant that was generous at 581 events and is not at
+1,377. **This lane must not push it**: STEP 1's own merge rule keeps
+`origin/m0`'s side of any test file, so a bound this branch raised would be
+dropped at the next merge, and the record lanes have no standing to change a
+display suite. Nothing under `data/` is implicated and `validate --index` is
+clean at 0 errors, so the records this fire wrote are sound; what is red is the
+timing of two display suites on one docs commit.
+
 ### The next fire's moves, in order
 
 1. **The three questions to the owner are unchanged and none of them is a run's
@@ -15210,6 +15702,47 @@ lane is now satisfied and nobody had measured it** — move 2 below.*
 rebuild, and this stand. `validate --index` is clean at **0 errors**, A15 (2)'s
 recache reports **0 revisions that should be on disk and are not**, and the
 suite is **green** — **2,242 tests, 0 failed, 0 skipped** (1,929 pure and 313 across the 40 browser suites, run the way the check runs them). The check is green on the head of this fire: run 2180, `599d0f49`, conclusion `success`. The `origin/m42` merge commit, run 2179, is green too — deviation 1368's procedure was followed from the start this time and no intermediate commit went red.*
+
+### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+
+`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
+**the check is red on it twice**, where the same tree with the same `data/` went
+green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
+Both failures were read rather than assumed, and they are **two different suites
+failing two different ways**:
+
+| attempt | suite | what it reports |
+| --- | --- | --- |
+| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
+| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
+
+Both were run here at this exact head, against the live corpus:
+`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
+`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
+seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
+suites do not touch what this fire wrote: batch 62's three edges run between the
+Peninsular War and three Spanish American wars of independence, and the label
+test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
+are green on their own latest runs, so this is not lane-wide either.
+
+**What it is**: the browser pass is the second of two on a four-core shared
+runner, it took 606 s and 536 s on the two attempts, and the bounds in
+`tests/browser.mjs` are tight enough that a slow round drops *a different test
+each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
+`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
+the 581 and 668 those documents measured. One re-run has been spent, and a second
+failure is real, so this is reported and not re-run again.
+
+**The proposed patch, which belongs to lane A and not here**: raise the
+`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
+the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
+rather than sitting at a constant that was generous at 581 events and is not at
+1,377. **This lane must not push it**: STEP 1's own merge rule keeps
+`origin/m0`'s side of any test file, so a bound this branch raised would be
+dropped at the next merge, and the record lanes have no standing to change a
+display suite. Nothing under `data/` is implicated and `validate --index` is
+clean at 0 errors, so the records this fire wrote are sound; what is red is the
+timing of two display suites on one docs commit.
 
 ### The next fire's moves, in order
 
@@ -15828,6 +16361,47 @@ every one of them. The red commit here was cured incidentally by batch 61's own
 index commit, which is why the head is green and the branch is sound; a fire
 whose merge is its last commit would leave the branch red.
 
+### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+
+`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
+**the check is red on it twice**, where the same tree with the same `data/` went
+green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
+Both failures were read rather than assumed, and they are **two different suites
+failing two different ways**:
+
+| attempt | suite | what it reports |
+| --- | --- | --- |
+| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
+| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
+
+Both were run here at this exact head, against the live corpus:
+`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
+`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
+seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
+suites do not touch what this fire wrote: batch 62's three edges run between the
+Peninsular War and three Spanish American wars of independence, and the label
+test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
+are green on their own latest runs, so this is not lane-wide either.
+
+**What it is**: the browser pass is the second of two on a four-core shared
+runner, it took 606 s and 536 s on the two attempts, and the bounds in
+`tests/browser.mjs` are tight enough that a slow round drops *a different test
+each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
+`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
+the 581 and 668 those documents measured. One re-run has been spent, and a second
+failure is real, so this is reported and not re-run again.
+
+**The proposed patch, which belongs to lane A and not here**: raise the
+`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
+the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
+rather than sitting at a constant that was generous at 581 events and is not at
+1,377. **This lane must not push it**: STEP 1's own merge rule keeps
+`origin/m0`'s side of any test file, so a bound this branch raised would be
+dropped at the next merge, and the record lanes have no standing to change a
+display suite. Nothing under `data/` is implicated and `validate --index` is
+clean at 0 errors, so the records this fire wrote are sound; what is red is the
+timing of two display suites on one docs commit.
+
 ### The next fire's moves, in order
 
 1. **Give a merge commit its index in a commit of its own (deviation 1377).**
@@ -16212,12 +16786,55 @@ should be on disk and are not**, 2,820 of 2,896 citations on disk at the
 revision cited and 76 unholdable beside a more-cited revision of the same item.
 The suite is **green — 2,253 tests, 0 failed, 0 skipped** (1,940 pure and 313
 across the 40 browser suites, run the way the check runs them, one browser suite
-at a time), measured at this head. **The check is green on the head of this
-fire: run 2231, `129d8fd6`, conclusion `success`**, and green on run 2227
-(`23fcdb4b`), the head that carried every record and index change. Runs 2219,
-2220, 2221, 2224, 2225, 2226, 2229 and 2230 were cancelled by a newer push,
-which the workflow's own `cancel-in-progress` does; **no run of this fire went
-red**, and the merge-commit failure deviation 1377 describes did not recur.*
+at a time), measured at this head. **The check is green on every commit of this
+fire that carries a record, an index or a page** — run 2227 on `23fcdb4b`, the
+head that carried all of them, and run 2231 on `129d8fd6` — and **red, twice, on
+`1ee9028e`, which changes one paragraph of this file and nothing else** (run
+2232, both attempts). Deviation 1383 reads both failures. Runs 2219, 2220, 2221,
+2224, 2225, 2226, 2229 and 2230 were cancelled by a newer push, which the
+workflow's own `cancel-in-progress` does; the merge-commit failure deviation
+1377 describes did not recur.*
+
+### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+
+`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
+**the check is red on it twice**, where the same tree with the same `data/` went
+green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
+Both failures were read rather than assumed, and they are **two different suites
+failing two different ways**:
+
+| attempt | suite | what it reports |
+| --- | --- | --- |
+| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
+| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
+
+Both were run here at this exact head, against the live corpus:
+`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
+`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
+seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
+suites do not touch what this fire wrote: batch 62's three edges run between the
+Peninsular War and three Spanish American wars of independence, and the label
+test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
+are green on their own latest runs, so this is not lane-wide either.
+
+**What it is**: the browser pass is the second of two on a four-core shared
+runner, it took 606 s and 536 s on the two attempts, and the bounds in
+`tests/browser.mjs` are tight enough that a slow round drops *a different test
+each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
+`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
+the 581 and 668 those documents measured. One re-run has been spent, and a second
+failure is real, so this is reported and not re-run again.
+
+**The proposed patch, which belongs to lane A and not here**: raise the
+`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
+the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
+rather than sitting at a constant that was generous at 581 events and is not at
+1,377. **This lane must not push it**: STEP 1's own merge rule keeps
+`origin/m0`'s side of any test file, so a bound this branch raised would be
+dropped at the next merge, and the record lanes have no standing to change a
+display suite. Nothing under `data/` is implicated and `validate --index` is
+clean at 0 errors, so the records this fire wrote are sound; what is red is the
+timing of two display suites on one docs commit.
 
 ### The next fire's moves, in order
 
