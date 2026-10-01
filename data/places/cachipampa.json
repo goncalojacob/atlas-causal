@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "cachipampa",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q947591, the Battle of Las Salinas, read on 2026-09-30 — A9’s first step as A12 (2) corrects it, and the item offers nothing else located: no P276, and a P17 of Peru, whose inception is 1821 and which A15 (6) refuses. The name is the battlefield the cited article names at revision 1370267925, \"the ancient Indian salt mines of Cachipampa, about 5 km south of Cuzco\"; the precision is point because a salt pan is not a settlement."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Cachipampa"
+  ],
+  "where": {
+    "lon": -71.97805555555556,
+    "lat": -13.566666666666666,
+    "precision": "point",
+    "label": "Cachipampa"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -754,6 +754,10 @@ const LEAD_PROVENANCE = PROVENANCE_SENTENCES[0];
 export const LEAD_SUMMARY_FLAG = 'summary-from-lead';
 export const A9_PLACE_FLAG = 'a9-place';
 export const FILED_FLAG = 'filed-from-p361';
+// A15 (8)'s own flag: the record's English sitelink lands on an article about
+// something wider, so nothing of that article is quoted here and the span is
+// the item's own until a reviewer reads the section that names it.
+export const REDIRECT_FLAG = 'article-is-redirect';
 
 // 1 — the summary, from the article's own lead at the revision it was read at
 // (A12 (1), and the brief's "a summary that is the cached lead at a revision,
@@ -1478,6 +1482,10 @@ function emptyReport() {
     // And what the second filing pass took, once the run's own umbrellas
     // existed to file against (deviation 1331).
     refiled: [],
+    // A15 (8): the records written with the flag, and the article each one's
+    // sitelink landed on, so the batch note can say which spans still want a
+    // section read.
+    redirected: [],
   };
 }
 
@@ -1848,14 +1856,16 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
       const lead = await readLead(cacheDir, qid, 'en');
       // A15 (8) before the summary, because the summary is the lead: an item
       // whose English sitelink redirects into another subject has no article
-      // of its own to quote, and a record quoting one is worse than no record.
-      // It is listed for a person, as an unknown class is (deviation 1347).
-      if (leadIsRedirect(read, lead)) {
-        refuse(report, qid, `A15 (8): its English sitelink resolves to "${lead.title}", `
-          + `which folds to none of the item's own names; nothing here is this item's account of itself`);
-        continue;
-      }
-      const summary = leadSummary(read, lead);
+      // of its own to quote, and a record quoting one is worse than no record
+      // (deviation 1347). But that is a reason to quote nothing, not a reason
+      // to write nothing: the amendment's own remedy is the record with the
+      // `article-is-redirect` flag on it, its span the item's own until a
+      // reviewer reads the section that names it, which is the shape the four
+      // records kept on 29 September already carry. Refusing instead threw
+      // away every item whose own title Wikipedia files under a wider
+      // article — the Capture of Luanda (1641) among them (deviation 1200).
+      const redirected = leadIsRedirect(read, lead);
+      const summary = redirected ? null : leadSummary(read, lead);
       const citation = summary ? leadCitation(lead, 'en') : null;
 
       // And the filing: every umbrella the item's own P361 names and this atlas
@@ -1873,6 +1883,10 @@ export async function runImportMode(dataDir, { fetcher, today, batchSize = BATCH
         record.summary = summary;
         if (citation) record.sources.push(citation);
         record.review.flags.push(LEAD_SUMMARY_FLAG);
+      }
+      if (redirected) {
+        record.review.flags.push(REDIRECT_FLAG);
+        report.redirected.push({ qid, id, landed: lead?.title ?? null });
       }
       if (found.flagged) record.review.flags.push(A9_PLACE_FLAG);
       if (filed.parents.length) {
@@ -2477,6 +2491,9 @@ export function reportLines(report, mode) {
   // What the three passes would not do. Printed, because the first batch to run
   // them out of the tool had three events it could have placed and the only
   // record of the refusal was a field nothing read (deviation 1322).
+  // A15 (8): written, and written short. The span and the summary of one of
+  // these are the item's own, so the line says which section a reviewer owes it.
+  for (const r of report.redirected ?? []) lines.push(`redirect ${r.qid} -> ${r.id}: its sitelink lands on "${r.landed}", so nothing of that article is quoted and the span is the item's own`);
   for (const u of report.unfiled ?? []) lines.push(`not filed ${u.qid} under ${u.id}: ${u.why}`);
   for (const r of report.refiled ?? []) lines.push(`filed ${r.id} under ${r.parents.join(', ')} on the second pass: its umbrella was created in this same run`);
   for (const o of report.offLane ?? []) lines.push(`no place for ${o.qid}: its lane is ${o.placeLane ?? 'nowhere'} and the event's is ${o.eventLane ?? 'nowhere'}`);

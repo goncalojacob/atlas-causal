@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "new-york-and-new-jersey-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2630469",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "New York and New Jersey campaign",
+    "pt": "Campanha de Nova Iorque e Nova Jérsei"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2630469"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"New York and New Jersey campaign\", revision 1370629551"
+    }
+  ],
+  "title": "New York and New Jersey campaign",
+  "summary": "The English Wikipedia article \"New York and New Jersey campaign\", at revision 1370629551, opens: \"The New York and New Jersey campaign in 1776 and the winter months of 1777 was a series of American Revolutionary War battles for control of the Port of New York and the state of New Jersey, fought between British forces under General Sir William Howe and the Continental Army under General George Washington. Howe was successful in driving Washington out of New York, but overextended his reach into New Jersey, and ended the New York and New Jersey campaign in January 1777 with only a few outposts near New York City under British control. The British held New York Harbor for the rest of the Revolutionary War, using it as a base for expeditions against other targets.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2630469, imported by tools/import/wikidata.mjs. The item's own description reads \"Campaign in NJ\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1776,
+    "end": 1777,
+    "date": "1776-07",
+    "endDate": "1777-03"
+  },
+  "place": "new-york-state",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

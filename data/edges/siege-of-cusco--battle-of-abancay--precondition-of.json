@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "siege-of-cusco--battle-of-abancay--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-51"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Abancay\", revision 1370430763"
+    }
+  ],
+  "from": "siege-of-cusco",
+  "to": "battle-of-abancay",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Abancay’s own article says why Alvarado’s army was in the field at all: “Alonso de Alvarado, sent by Francisco Pizarro to relieve the siege of Cusco, was camped at Jauja with five hundred men. He guarded the bridge and a ford on the Rio de Abancay, awaiting Almagro’s men.” The force Almagro captured almost intact is the relief column the siege called out, and the article’s next paragraph turns on Almagro “emerging as the victor both in the siege of Cuzco and from initial disputes between the Pizarro brothers”. `precondition-of` and not `caused`: the battle’s own turn is given as Pedro de Lerma’s desertion at the ford, not the siege. `probable`, because the only source the atlas can open here is the article (rule 22).",
+  "dispute": null
+}

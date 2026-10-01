@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "battle-of-inaquito",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    },
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": "2026-09-30",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-by-span-and-subject",
+      "m42b-batch-52"
+    ],
+    "note": "Filed under spanish-conquest-of-the-inca-empire by span and subject (M62): 18 January 1546 is inside 1532-1572, and the item’s own description calls it \"1546 Part of the Spanish conquest of Peru\". The item’s own P361 is Q5884503, the Great Encomendero Uprising, which this atlas does not hold and which has no English Wikipedia article to be written from; battle-of-jaquijahuana, the same uprising’s last battle, is already filed under this umbrella and carries the same P361."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1609295",
+  "wikipedia": {
+    "en": "Battle of Iñaquito"
+  },
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-09-30"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1609295"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Iñaquito\", revision 1370443968"
+    }
+  ],
+  "title": "Battle of Iñaquito",
+  "summary": "The English Wikipedia article \"Battle of Iñaquito\", at revision 1370443968, opens: \"After his unheard claims as governor of New Castile (Peru) following the death of his brother, Gonzalo Pizarro pressed claims to be recognized as the ruler of the land he and his brothers had conquered. After the arrival of appointed royal viceroy Blasco Núñez Vela in 1544, Gonzalo succeeded to have him repelled and sent to Panama in chains. He was released, however, and returned to Peru by sea while Gonzalo was mustering an army. The two met on January 18 at Iñaquito in the outskirts of Quito, present-day capital of Ecuador, where the superiority of the Nueva Castilla army ensured victory for Gonzalo. Blasco Núñez Vela reportedly fought but fell as a victim in battle and was later decapitated on the field of defeat, a fate Gonzalo himself would share two years later at Jaquijahuana.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1609295, imported by tools/import/wikidata.mjs. The item's own description reads \"1546 Part of the Spanish conquest of Peru\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1546,
+    "end": 1546,
+    "date": "1546-01-18"
+  },
+  "place": "inaquito",
+  "region": null,
+  "regionNote": null,
+  "parent": "spanish-conquest-of-the-inca-empire",
+  "category": "war",
+  "actors": []
+}

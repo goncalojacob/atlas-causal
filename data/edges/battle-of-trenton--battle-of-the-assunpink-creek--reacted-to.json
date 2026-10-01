@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-trenton--battle-of-the-assunpink-creek--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-57"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Princeton\", revision 1375498890"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Assunpink Creek\", revision 1371410210"
+    }
+  ],
+  "from": "battle-of-trenton",
+  "to": "battle-of-the-assunpink-creek",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The second battle at Trenton was the British answer to the first, and the Princeton article, at revision 1375498890, says so in those words in its § Victories at Trenton: “In response to the loss at Trenton, General Cornwallis left New York City and reassembled a British force of more than 9,000 at Princeton to oppose Washington. Leaving 1,200 men under the command of Lieutenant Colonel Mawhood at Princeton, Cornwallis left Princeton on January 2 in command of 8,000 men to attack Washington's army of 6,000 troops … After three failed attempts to cross the bridge over the Assunpink Creek, beyond which were the primary American defenses, Cornwallis called off the attack until the next day.” The Assunpink Creek article, at revision 1371410210, is the second author and states the American expectation of the same reaction in its lead: “Following the victory at the Battle of Trenton early in the morning of December 26, 1776, General George Washington of the Continental Army and his war council expected a strong British counterattack. Washington and the council decided to meet this attack in Trenton and established a defensive position south of the Assunpink Creek.” The type is `reacted-to` because that is exactly what both articles describe — a force assembled and marched in response to a defeat — and the edge runs forward in time, from the defeat to the answer to it. `probable`, on the articles alone (rule 22).",
+  "dispute": null
+}

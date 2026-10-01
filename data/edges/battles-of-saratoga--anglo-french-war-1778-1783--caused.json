@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battles-of-saratoga--anglo-french-war-1778-1783--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-54"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battles of Saratoga\", revision 1377478794"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-French War (1778–1783)\", revision 1370901054"
+    }
+  ],
+  "from": "battles-of-saratoga",
+  "to": "anglo-french-war-1778-1783",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Both articles state the cause and not the order. Saratoga’s own lead, at revision 1377478794: “The outcome greatly affected the course of the war, persuading France to enter the war as an American ally”, and, quoting Edmund Morgan, that Saratoga “won for Americans the foreign assistance from France, which was the last element needed for victory”. The Anglo-French War article, at revision 1370901054, says the same thing from the French end and dates it: “Within days of the news of Burgoyne’s surrender reaching France, King Louis XVI decided to enter into negotiations with the Americans that resulted in a formal Franco-American alliance and the French entry into the war, moving the conflict onto a global stage.” `caused` rather than `enabled`: the decision is attributed to the news of the surrender, not merely made possible by it. `probable`, on the two articles alone (rule 22) — the second cites Ketchum 1997, which nobody here has opened.",
+  "dispute": null
+}

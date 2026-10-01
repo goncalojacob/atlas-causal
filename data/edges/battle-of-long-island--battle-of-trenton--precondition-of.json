@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-long-island--battle-of-trenton--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-56"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Trenton\", revision 1377458911"
+    }
+  ],
+  "from": "battle-of-long-island",
+  "to": "battle-of-trenton",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "This is the condition Trenton was a gamble against, and it is deliberately not the same claim as the campaign-level edge beside it. The Trenton article, at revision 1377458911, names Long Island by name in its § Background: “In early December 1776, American morale was incredibly low. The Americans had been ousted from New York by the British and their Hessian auxiliaries, and the Continental Army was forced to retreat across New Jersey. Ninety percent of the Continental Army soldiers who had served at Long Island were gone. Men had deserted, feeling that the cause for independence was lost.” “Ousted from New York” carries the article's own link to the Battle of Long Island, so the event this sentence names is the battle. What the sentence states is the state the army was in, not the decision to attack — the decision the same article puts on the campaign as a whole — so the type here is `precondition-of` and not `caused`: Long Island is what left the army needing Trenton, and the campaign is what produced it. **One article carries this and not two**: the Long Island article, at revision 1370268460, attributes the retreat across New Jersey to White Plains and Fort Washington (“Because of these defeats, Washington and the army retreated across New Jersey and into Pennsylvania”) and not to Long Island, so it is not a second author for this claim and is not cited as one. `probable`, on the one article (rule 22).",
+  "dispute": null
+}

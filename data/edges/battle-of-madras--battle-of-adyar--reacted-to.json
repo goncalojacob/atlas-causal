@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-madras--battle-of-adyar--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-58"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Madras\", revision 1370448492"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Carnatic War\", revision 1370619242"
+    }
+  ],
+  "from": "battle-of-madras",
+  "to": "battle-of-adyar",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The Nawab of the Carnatic marched on Madras because the French had taken it and then refused to hand it over, and the Madras article says so in those words. “Battle of Madras”, at revision 1370448492, in its account of the occupation: “The French occupied the town for the duration of the war. Despite Dupleix's promise earlier to hand the territory over to the Nawab of the Carnatic, Dupleix refused to do so. A force of 10,000 sent by the Nawab to enforce the agreement was routed by a small French force led by Captain Louis Paradis at the battle of Adyar on 24 October 1746.” The “First Carnatic War” article, at revision 1370619242, is the second author and puts the same reaction in the verb: “Dupleix, in the meantime, had before the assault promised to turn over Fort St. George to the Nawab of the Carnatic Anwaruddin Khan, but refused to do so. Anwaruddin responded by sending a 10,000-man army to take the fort from Dupleix by force.” The type is `reacted-to` because both articles describe an army sent in answer to the capture and the broken promise about it, and the edge runs forward in time from the capture to the answer. `probable`, on the articles alone (rule 22).",
+  "dispute": null
+}

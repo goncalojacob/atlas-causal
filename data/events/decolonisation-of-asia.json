@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "decolonisation-of-asia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "m42-umbrella"
+    ]
+  },
+  "wikidata": "Q5249554",
+  "wikipedia": {
+    "en": "Decolonisation of Asia"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-09-30"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Decolonisation of Asia\", revision 1375271318: \"concluding with the independence of the Democratic Republic of Timor-Leste from Indonesia in 2002\""
+    },
+    {
+      "source": "wikidata",
+      "locator": "Q5249554"
+    }
+  ],
+  "title": "Decolonisation of Asia",
+  "summary": "The period in which the colonial possessions of the European powers, the United States and Japan in Asia gave way to sovereign states. The end is the one the cited article states in its first sentence and no other: the process concluded with Timor-Leste's independence in 2002. The article states no start, so the start is the earliest end of a colony in Asia that its own list dates and that was decolonisation rather than a transfer between colonial powers: 1898, where \"Spanish Philippines (1565-1898)\" closes and the article's prose has \"Philippine revolutionaries unilaterally declared independence from Spain in 1898\". Every earlier end in that list - Dutch Malacca in 1824, Dutch India in 1825, Danish India in 1869 - is a colony passing from one European power to another, which is why none of them is this start. A reviewer who reads the article differently should move the start, and that is what review.html is for. Nothing here is this atlas's account of the period: it is an umbrella, which is a display fact and not an argument.",
+  "when": {
+    "start": 1898,
+    "end": 2002
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Asia is the period's own subject, so the lane is the article's and not a derivation: this event points at no place record and a continent has no point.",
+  "category": "other",
+  "actors": []
+}

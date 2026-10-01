@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "capture-of-luanda--recapture-of-angola--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-49"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Recapture of Angola\", revision 1370706489, § lead"
+    }
+  ],
+  "from": "capture-of-luanda",
+  "to": "recapture-of-angola",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The later record’s own cited article says what the campaign of 1648 was a campaign against: “The Recapture of Angola, or Reconquest of Angola, was a military campaign fought between the Portuguese and the Dutch occupiers of Angola. Its most important episode was the siege imposed by the Portuguese on the larger Dutch garrison of Luanda.” The garrison and the occupation are what 1641 put there, and the same article closes the circle: Salvador de Sá “besieged them and regained it for Portugal exactly seven years after its loss”. So this is not one event following another but one event being the object of the next: `precondition-of` rather than `caused`, because what brought the Brazilian fleet to Luanda in 1648 was the Portuguese decision to mount it and not the 1641 landing by itself. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article (rule 22).",
+  "dispute": null
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-fort-washington--battle-of-trenton--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-57"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Long Island\", revision 1370268460"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Washington\", revision 1377296439"
+    }
+  ],
+  "from": "battle-of-fort-washington",
+  "to": "battle-of-trenton",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The other half of the Long Island article's sentence, at revision 1370268460: “Howe defeated Washington in battle again at White Plains and then again at Fort Washington. Because of these defeats, Washington and the army retreated across New Jersey and into Pennsylvania.” The Fort Washington article, at revision 1377296439, is the second author and states it from its own end in its § Aftermath: “Three days after the fall of Fort Washington, the Patriots abandoned Fort Lee. Washington and the army retreated through New Jersey and crossed the Delaware River into Pennsylvania northwest of Trenton, pursued as far as New Brunswick, New Jersey, by British forces. After about one month, on the night of December 25–26, 1776, Washington crossed the Delaware and defeated the Hessian garrison under the command of Rall at Trenton.” Taken alone the second passage is a sequence; taken with the first, which says “because of”, it is the same claim stated twice. `precondition-of`, for the reason the White Plains edge beside it gives. `probable`, on the articles alone (rule 22).",
+  "dispute": null
+}

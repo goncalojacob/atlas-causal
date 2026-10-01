@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jaquijahuana",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q2338093, the Battle of Jaquijahuana, read on 2026-09-30 — A9’s first step as A12 (2) corrects it. The item’s P276 is Saqsaywaman (Q828336), some 25 km east of the point the item itself gives, so the item’s own point is what this record carries."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Jaquijahuana"
+  ],
+  "where": {
+    "lon": -72.206667,
+    "lat": -13.468333,
+    "precision": "point",
+    "label": "Jaquijahuana"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

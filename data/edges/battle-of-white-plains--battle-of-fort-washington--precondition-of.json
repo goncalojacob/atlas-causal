@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-white-plains--battle-of-fort-washington--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-57"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Washington\", revision 1377296439"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of White Plains\", revision 1374379337"
+    }
+  ],
+  "from": "battle-of-white-plains",
+  "to": "battle-of-fort-washington",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Fort Washington fell with 1,200 men in it because the army it belonged to had gone north to White Plains. The Fort Washington article, at revision 1377296439, puts the two in one breath in its § Movements: “Washington, aware of the danger, withdrew most of his troops north to White Plains. He left a garrison of 1,200 men at Fort Washington under the command of Colonel Robert Magaw, although this force was inadequate to fully defend the extensive works in hindsight.” The White Plains article, at revision 1374379337, is the second author and states the British side of it in its § Aftermath: “Howe chose not to follow, instead attempting without success to draw Washington out. On November 5, he turned his army south to finish evicting Continental Army troops from Manhattan, a task he accomplished with the November 16 Battle of Fort Washington.” So both the garrison's weakness and Howe's choice of target are traced to White Plains and what followed it. `precondition-of`, because what White Plains produced was the situation Fort Washington was lost in and not the assault itself. `probable`, on the articles alone (rule 22).",
+  "dispute": null
+}
