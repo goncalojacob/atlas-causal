@@ -23805,6 +23805,45 @@ is a **main** event, so A15(11)'s number in this lane is blocked by A6. That is
 the sharpest form the main-count question has taken and it goes to the owner
 beside C8.
 
+**M42b batch 61 — the Peninsular War joined to three South American wars, 1
+October.** The americas 19th century, with an edge pass over the americas 18th
+beside it. **One event imported** — `Q5722281` *Battle of Carabobo (1814)*, the
+one candidate batch 60's own refusals proved would pay: `titleFor()` kept the
+article's disambiguator, A15(6) admitted Venezuela as its place (`P571` 1811,
+before the event's end, no `P576`, no second country, and the point the held
+`second-battle-of-la-puerta` already stands on), A15(4) found no range to widen,
+and it is filed under `venezuelan-war-of-independence` from `P361`, so the main
+count did not move. **Nine edges**, all `probable` on the articles alone,
+A14 holding on every one. **Seven of the nine cross an umbrella, and A15(11)'s
+number in this lane moved for the first time: 584 → 591.** Largest component
+**759 → 765**, components **406 → 400**, events with no edge **314 → 307**,
+active edges **1172 → 1181**, main **229** before and after. The last batch's
+conclusion — that A15(11) cannot move here without importing main events A6 bars
+— **is withdrawn**: the crossing edges were already available between umbrellas
+the atlas holds, and what was missing was reading the European war behind the
+Spanish American ones. The Peninsular War is a precondition of the Chilean,
+Peruvian and Argentine wars of independence by each article's own Background; the
+French Revolution inspired the Argentine one; the American Revolutionary War is a
+precondition of the British intervention in Spanish American independence; and
+the capture of St George's Caye and the siege of Yorktown both stand behind the
+battle of Roatán. **Deviation 1200**: before concluding a measurement cannot move
+without an import, run the edge pass over the lane's **umbrellas** and not only
+its leaves — a war umbrella with degree zero is the cheapest crossing edge there
+is, because its parent is almost never the parent of what caused it. **Deviation
+1201**: where the cited article states the *contrary* of the edge — Túpac Amaru
+II, whose article says no colonial uprising "constituted a true independence
+movement" — no edge is written and no confidence is lowered to carry it.
+**Deviation 1202**, caught by `tests/leadcache.test.mjs` in the same fire and
+fixed in it: A15(2)'s recache picks a cached revision by counting citations and
+counts an **edge's**, although `leadcache.mjs` classes every edge `unkeyed` and
+the cache can never answer one — so two of this batch's edges took away the lead
+`argentine-war-of-independence` cites and one took away
+`peruvian-war-of-independence`'s. Every quoted sentence was checked through
+`revids` against the revision the target record already cites and is verbatim
+there, so the three locators name those revisions; A15(2) now reports **0
+revisions that should be on disk and are not** and 2,808 of 2,884 citations on
+disk at the revision cited, two better than the fire found them.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
