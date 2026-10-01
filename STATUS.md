@@ -23779,6 +23779,32 @@ written, refused by the validator and withdrawn rather than argued with.
 `validate --index` clean at 0 errors and A15(2)'s recache at 0 missing revisions.
 Africa and Asia stand at 214 and 214 against A10's 303.
 
+**M42b batch 60 — one edge between two records the atlas already held, 1
+October.** The same fire, executing batch 59's own first move: **an edge pass and
+not an import** — no event, no place, no record created, only the articles of
+events already here read for the edges those articles state.
+`battle-of-junin` → `battle-of-ayacucho`, `caused`, `probable`, two authors, both
+children of `peruvian-war-of-independence` so A14 holds; it merges the singleton
+Junín into `{battle-of-ayacucho, battle-of-tumusla}`, **2 → 3**. Active edges
+**1167 → 1168**, inside one umbrella **588 → 589**, crossing one unchanged at
+**579**, main still **229**. **Six pairs refused**, each named with its revision,
+and two of them are rules worth keeping: `battle-of-torata` →
+`battle-of-moquegua` **already exists**, written by batch 36, which is why an
+edge pass must check `data/edges/<from>--<to>--<type>.json` before writing and
+must check all five types; and `battle-of-ayacucho` → `second-siege-of-callao` is
+refused by **rule 4** although the siege's own article states the link outright,
+because the siege runs from 1824-12-05 and the battle is 1824-12-09 —
+**deviation 1373**, which is deviation 1371 met from the other side: 1371 is an
+umbrella older than its own cause, 1373 is any record with a long span, and
+**183 of 1,373 active events have a span longer than two years.** The lane's
+structural finding: **no edge either batch wrote crosses an umbrella, and that is
+now explained** — the vein is filed by campaign and every record that would
+straddle two campaigns (the Liberating Expedition of Peru, the two Intermedios
+campaigns, Bolívar's campaign to liberate New Granada, the Admirable Campaign)
+is a **main** event, so A15(11)'s number in this lane is blocked by A6. That is
+the sharpest form the main-count question has taken and it goes to the owner
+beside C8.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
