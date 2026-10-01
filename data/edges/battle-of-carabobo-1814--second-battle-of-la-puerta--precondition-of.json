@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-carabobo-1814--second-battle-of-la-puerta--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-61"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of La Puerta\", revision 1370736349, § The Battle"
+    }
+  ],
+  "from": "battle-of-carabobo-1814",
+  "to": "second-battle-of-la-puerta",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "La Puerta's own article opens its account of the battle on Carabobo, and gives the victory as the reason the Republicans took the field against Boves at all: \"**The Republicans had won the Battle of Carabobo on 28 May and had become overconfident when they decided to confront the irregular Royalist army**, made up mainly of llanero horsemen, commanded by José Tomás Boves. The two armies met at the gorges of La Puerta, near the Sémen River and San Juan de Los Morros, in the current state of Guárico.\" The claim in the sentence is not the order of the two battles but a state of mind the first produced and a decision that followed from it, so the earlier victory is a precondition of the later defeat rather than its cause: the article nowhere says Carabobo brought the rout about.",
+  "dispute": null
+}

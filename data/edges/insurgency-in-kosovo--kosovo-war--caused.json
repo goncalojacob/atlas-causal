@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "insurgency-in-kosovo--kosovo-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Insurgency in Kosovo (1995–1998)\", revision 1377784274"
+    }
+  ],
+  "from": "insurgency-in-kosovo",
+  "to": "kosovo-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The insurgency’s own article states the escalation and its outcome in one sentence: \"The total number of attacks by the KLA in 1998 was 1,470, compared to 66 the year before. After the attacks against the Yugoslav police intensified in 1998, security increased as did the presence of Yugoslav Army personnel, which led to the Kosovo War.\" The cause named is the intensification of the insurgency itself and the Yugoslav deployment it drew, which is this record; the two are sibling parts of the Yugoslav wars and neither is inside the other.",
+  "dispute": null
+}

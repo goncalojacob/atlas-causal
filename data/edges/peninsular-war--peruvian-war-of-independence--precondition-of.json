@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "peninsular-war--peruvian-war-of-independence--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-61"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peruvian War of Independence\", revision 1375180136, § Background"
+    }
+  ],
+  "from": "peninsular-war",
+  "to": "peruvian-war-of-independence",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Peru's § Background states the mechanism in two sentences and names each step of it: \"The Atlantic liberal revolutions transformed the political map of both America and Europe. **French Emperor Napoleon Bonaparte's 1808 invasion of Spain resulted in the abdications of Charles IV and Ferdinand VII in favour of Joseph Bonaparte. In Spanish America, autonomous governments arose in the power vacuum and instability of mainland Spain in Europe.**\" Invasion, abdication, vacuum, juntas: the article gives the war in Spain as what made autonomous government possible in the viceroyalty. It also says what Peru did with that opening, which is why the type is not the stronger one — \"Initially, Peru was a stronghold for royalists, with Viceroy José Fernando de Abascal y Sousa using Peru as a base for counterrevolutionary forces.\"",
+  "dispute": null
+}

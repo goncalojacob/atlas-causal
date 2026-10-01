@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-22",
+  "revised": "2026-10-01",
   "review": {
     "status": "draft",
     "flags": [
@@ -26,7 +26,8 @@
       "a9-place",
       "filed-from-p361",
       "participants-from-p710"
-    ]
+    ],
+    "note": "A6, A8: the item's P361 names Operation Gothic Serpent, the operation this battle ended; somali-civil-war comes off because Gothic Serpent is filed under it."
   },
   "origin": {
     "tool": "wikidata"
@@ -61,7 +62,7 @@
   "place": "mogadishu",
   "region": null,
   "regionNote": null,
-  "parent": "somali-civil-war",
+  "parent": "operation-gothic-serpent",
   "category": "war",
   "actors": [
     {

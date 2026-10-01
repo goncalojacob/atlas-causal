@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "russian-revolution-of-1905--october-revolution--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russian Revolution of 1905\", revision 1376714992"
+    }
+  ],
+  "from": "russian-revolution-of-1905",
+  "to": "october-revolution",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The 1905 revolution’s own article carries the claim in the words it is always made in: \"Vladimir Lenin later famously described the Revolution of 1905 as the “dress rehearsal” without which the “victory of the October Revolution in 1917 would have been impossible.”\" \"Without which … would have been impossible\" is `precondition-of` exactly. It is Lenin’s judgement and the article attributes it to him, which is why the confidence is `probable` and not `consensus`. The atlas already draws `moscow-uprising-of-1905 --enabled--> october-revolution`; that is one rising inside 1905 and this is the revolution entire, which is the claim the quote makes.",
+  "dispute": null
+}

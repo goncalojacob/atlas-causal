@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-01",
   "origin": {
     "tool": "wikidata"
   },
@@ -24,7 +24,8 @@
       "summary-from-lead",
       "a9-place",
       "filed-from-p361"
-    ]
+    ],
+    "note": "A6, A8: the item's P361 names the Bundner Wirren, whose span contains this war's; thirty-years-war comes off because the Bundner Wirren is filed under it."
   },
   "wikidata": "Q3778677",
   "sitelinks": {
@@ -57,5 +58,5 @@
   "regionNote": null,
   "category": "war",
   "actors": [],
-  "parent": "thirty-years-war"
+  "parent": "bundner-wirren"
 }

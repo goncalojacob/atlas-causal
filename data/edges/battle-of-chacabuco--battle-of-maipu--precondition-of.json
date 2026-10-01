@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-chacabuco--battle-of-maipu--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-59"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chacabuco\", revision 1373197409, § Aftermath"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Maipú\", revision 1370268820, § Background"
+    }
+  ],
+  "from": "battle-of-chacabuco",
+  "to": "battle-of-maipu",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Chacabuco's own article makes Maipú the completion of what Chacabuco began: \"The victory at Chacabuco marked the beginning of the expulsion of Spanish forces from Chile, a process completed the following year at the Battle of Maipú.\" The same section says what was left to complete — the royalists \"retreated to the southern tip of Chile, where they established a small enclave, forming what was essentially a mini Spanish Chile. They were reinforced by sea and continued to pose a threat to the Chilean nation until they were ultimately forced to withdraw by sea to Lima.\" Maipú's own article opens on the same ground: \"In 1817, the Argentine General José de San Martín led an army across the Andes and defeated the Spanish in the battle of Chacabuco and captured Santiago. The Spanish viceroyalty sent a Spanish army to Santiago under General Mariano Osorio, which defeated San Martín at the Second Battle of Cancha Rayada.\" `precondition-of` is what those two sentences support and no more: Chacabuco took Santiago and left standing the royalist force Maipú destroyed. Neither article says Chacabuco caused Maipú, and the expedition Pezuela sent is not written as a response in either of them.",
+  "dispute": null
+}

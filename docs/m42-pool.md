@@ -18633,3 +18633,828 @@ byte-identical to a fresh build on the pushed tree. **"Records first, rebuild, t
 commit the index" (798) means rebuild after the records' commit**, not merely
 before the index's — which is what this fire did the first time and what the check
 caught. The corrected shard is `63dde31b3eaa`.
+
+## Batch 76 — the Scramble's own article, and the degree that was never a gap
+
+*1 October, the fire that claimed at 23:50Z on 30 September. **An import fire
+that imported**, which the last five did not. Today's `## Curation 2026-09-30`
+section was already in this file and the clock had not reached 02:00Z on
+1 October, so A11(a) and A13 were not this fire's; all six A14 and all thirteen
+A15 sections were here, so every pass was skipped by its own rule. `origin/m0`
+was an ancestor of `m42` at the claim, so no merge was needed and `data/` was
+untouched by one.*
+
+**Two events imported, both filed, two edges written, and the main count did not
+move.** The three-way bind of A15(1), A14(6) and A6 is still the owner's and this
+fire did not ask for it to be relaxed — it found a case the bind does not reach.
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1,334 | **1,336** |
+| main | 229 | **229** |
+| filed | 1,105 | 1,107 |
+| active edges | 1,122 | **1,124** |
+| largest connected component | 740 | **742** |
+| edges crossing an umbrella (A15(11), A5) | 574 | **575** |
+| components | 407 | 407 |
+| events with no edge | 318 | 318 |
+
+| lane | active | main |
+| --- | --- | --- |
+| europe | 555 | 85 |
+| americas | 359 | 56 |
+| asia | 212 | 57 |
+| **africa** | **210** | **31** |
+| (no lane) | — | 51 |
+
+Validator **0 errors, 612 warnings**; `--index` clean. A10's order of need is
+unmoved: **Africa still trails**, 210 against Asia's 212, and A15(1)'s threshold
+is untouched — Africa is 93 short of 303 and Asia 91, so M42b's Europe-before-1900
+clause stays paused on this fire's evidence too.
+
+### What the bind does not reach, and it was in front of five fires
+
+The bind's third leg is A6: *what connects and is not a child has no umbrella
+that fits, so importing it raises the main count.* Batch 71 measured that over
+the candidates it had and the four stands since repeated it. **It is a statement
+about those candidates and not about the corpus**, and the counter-example is a
+held umbrella this lane has had all along: `scramble-for-africa`, 1885–1914,
+Africa, with an article of 60,064 characters that the atlas already cites at
+revision 1373841219.
+
+**An umbrella's own article is a list of what it says belongs to it.** Reading it
+for events the atlas does not hold gives candidates that arrive **filed**, so A6
+is satisfied by the filing rather than relaxed, and A15(1) is satisfied where the
+same article states a cause between two of them. That is the whole of this fire's
+method and it needed one article read.
+
+Five candidates came out of that reading. **Two were imported** and three were
+refused, below.
+
+### The two imports
+
+`node tools/import/wikidata.mjs --import --batch 2`, after appending the two
+qids to `data/imports/wikidata-seeds.json` → `items` — the route batch 67's stand
+recommended and the cursor was caught up for (`pending` empty, 1,770 done).
+Six calls, four leads cached, 0 refused.
+
+| record | item | revision cited | filed under | why that umbrella |
+| --- | --- | --- | --- | --- |
+| `fashoda-incident` | `Q722699` | 1375541414 | `scramble-for-africa` | its own article: *"This period in African history is usually termed the Scramble for Africa by modern historiography"* |
+| `treaty-of-addis-ababa` | `Q2399119` | 1358464481 | `first-italo-ethiopian-war` | its own lead: it *"formally ended the First Italo-Ethiopian War on terms mostly favourable to Ethiopia"* |
+
+Neither item carried a `P361` the atlas holds, so **the filing is this fire's and
+is argued from each record's own cited article** rather than taken from the item.
+`treaty-of-addis-ababa` is filed under the war and not under the Scramble
+although the Scramble's article names it too: the war is the nearer umbrella and
+is itself filed under the Scramble, so the ancestry reaches it either way, and
+rule 24 is satisfied because the war's span is 1895–1896 and the treaty is 1896.
+
+A9 wrote a place for each from the item's own point: `kodok` (modern Fashoda) and
+`addis-ababa`, both with the lane derived from that point, which is A15(7)'s rule.
+Neither record warns.
+
+### The two edges
+
+A15(5)'s verdict was taken on all five quotes **before any edge was written**, with
+`verdictFor()` and the live candidate list: **none opens with chronology and none
+names a third held event as the cause**, so nothing was refused at the point of
+writing on this batch.
+
+- **`fashoda-incident --caused--> entente-cordiale`**, `probable`. Two articles at
+  two revisions, saying the same thing at two strengths. The Scramble's article,
+  § Britain's administration of Egypt and South Africa: *"The Fashoda Incident
+  ultimately led to the signature of the Entente Cordiale of 1904, which
+  guaranteed peace between the two."* The incident's own article, § Aftermath,
+  attributes the reading rather than asserting it: *"its classic diplomatic
+  solution is considered by most historians to be the precursor of the Entente
+  Cordiale of 1904."* `probable` and not `consensus`, under rule 22 and A2: both
+  witnesses are Wikipedia records. **This edge crosses an umbrella** — Fashoda is
+  under the Scramble and the Entente is a main event — which is the count A15(11)
+  asks for.
+- **`battle-of-adwa --caused--> treaty-of-addis-ababa`**, `probable`. The
+  Scramble's article, § Independent states: *"its independence from Italy was
+  recognized after the Battle of Adwa which resulted in the Treaty of Addis Ababa
+  in 1896."* The treaty's own article dates the first agreement to *"days after
+  the decisive Battle of Adwa in March of the same year"*. Both ends are children
+  of `first-italo-ethiopian-war`, so this one is **inside one umbrella** and is
+  not in the crossing count; it is siblings and not parent-to-child, so C8's
+  standing rule is untouched.
+
+**Every locator was read off the article rather than guessed from its section
+list.** Three of the five section names a first draft wrote were wrong: the
+Fashoda sentence is in § Britain's administration of Egypt and South Africa and
+not § Anglo-French Agreement, and the "precursor" sentence is in the incident's
+own article and not the Scramble's. A locator is evidence, so it is worth the one
+extra read it costs.
+
+### Deviation 1500 — a period umbrella is degree zero by rule, and a fire can lose a day to that
+
+This fire wrote a third edge and had to take it back, and the reason is worth more
+than the edge was.
+
+`scramble-for-africa` has **degree zero** and 87 sitelinks and is a main event, so
+it reads exactly like the most valuable connection in the Africa lane: a large
+record nothing in the graph hangs on. The fire wrote
+`berlin-conference --enabled--> scramble-for-africa` for it, argued from the
+Scramble's own § Berlin Conference (1884–1885): *"The Berlin Conference transformed
+Africa's colonization from informal economic penetration to systematic political
+control through its 'effective occupation' principle"*, with § Moroccan Crises
+naming the same relation from the other side.
+
+**`tests/m42-filing.test.mjs` refuses it**, and the test is right:
+
+> *an umbrella is not a claim: this pass wrote no edge on to one* —
+> `edge "berlin-conference--scramble-for-africa--enabled" runs to the umbrella
+> "scramble-for-africa", which is a display fact and not an argument`
+
+The rule is that no **active** edge may have an `m42-umbrella` record at either
+end, because `parent` says what an event is part of and an edge says what caused
+what, and a period cannot be the second. **So the eleven umbrellas are degree
+zero by rule and not by neglect**, and every `degree-zero` warning on one of them
+is not work:
+
+`afghan-conflict`, `arab-spring`, `colombian-conflict-2018-present`,
+`colombian-conflict-between-1974-1990`, `decolonisation-of-africa`,
+`decolonisation-of-asia`, `indochina-wars`, `interwar-period`,
+`nova-republica-brazil-since-1985`, `scramble-for-africa`,
+`third-portuguese-republic-since-1974`.
+
+**A fire that reads the isolated set as a to-do list will spend itself on six of
+them.** This one nearly did: `arab-spring`, `decolonisation-of-africa`,
+`decolonisation-of-asia`, `indochina-wars` and `afghan-conflict` were all in its
+first screen of 20 isolated Africa and Asia events, and five of those twenty are
+umbrellas. The edge is gone, 612 warnings is 611 plus that one degree-zero back,
+and the test caught it **before anything reached `m0`**, which is what deviations
+711 and 717 are for.
+
+### The three refusals, which A15(1) asks to be counted
+
+| candidate | item | why not |
+| --- | --- | --- |
+| `First Moroccan Crisis` | `Q167455`, rev 1370619540 | **A15(1).** 3,586 characters and no causal sentence naming a held event. Its one sentence that names one runs the wrong way: *"The First Moroccan Crisis also showed that the Entente Cordiale was strong, as Britain had defended France in the crisis"* — the crisis revealing the Entente, not the Entente causing the crisis. The Scramble's own *"As a result of the Entente Cordiale, the German Kaiser decided to test the solidity of such influence, using the contested territory of Morocco as a battlefield"* **does** state a cause, and its object is this crisis **by description and not by name** — which is deviation 1495's blind spot, and supplying the identification is the reading this atlas does not let an assistant make. It is the owner's or a reviewer's. |
+| `Agadir Crisis` | `Q164771`, rev 1376783721 | **A15(1).** Same shape: *"As in the First Moroccan Crisis, British support of France showed the strength of the Entente Cordiale."* No cause stated towards it. |
+| `1890 British Ultimatum` | `Q3320778`, rev 1375614563 | Two reasons, either sufficient. **A15(5)**: its one causal sentence naming held events is the reattribution class — *"Combined with a variety of other factors, such as the Portuguese royal family's expenses, the Lisbon Regicide, political instability and changing religious and social views in Portugal led to the 5 October 1910 revolution, which overthrew the Portuguese monarchy"* names `lisbon-regicide` as one of the causes, so an edge from the ultimatum is written from that event or not at all. And **the class table**: its only `P31` is `Q188689`, which `data/imports/wikidata-seeds.json` → `classes` does not hold, so the import would refuse it and list it. **This is the best of the three and the nearest to this atlas's own subject** — it is about Portugal's claim between Angola and Mozambique — and its `P361` already names `Q179848`, so it would arrive filed under `scramble-for-africa` with no filing argument needed. A fire that adds `Q188689` to the class table with a note, and finds the edge the article supports, should write it. |
+
+### The vein this leaves, measured rather than hoped for
+
+The method above generalises and the fire measured how far. `action=parse&prop=links`
+on the Scramble's article at revision 1373841219 returns **1,091 mainspace links**,
+of which **1,024** are not held by article title. Most are places, people and
+polities, and the WWI navbox is a large part of the rest; a name filter for
+event-shaped titles leaves 226, and dropping the navbox noise leaves **36 Africa
+candidates**. Of those, 33 resolve to items, 30 are unheld, and **16 are dated
+inside the umbrella's own span**, 14 of them with a `P31` the class table already
+knows:
+
+| start | item | label | class known |
+| --- | --- | --- | --- |
+| 1886–1889 | `Q3062431` | Emin Pasha Relief Expedition | yes |
+| 1886 | `Q131632307` | Battle of Buaró | yes |
+| 1887 | `Q3778598` | Italo-Ethiopian War of 1887–1889 | yes |
+| 1889–1890 | `Q16889931` | Brussels Anti-Slavery Conference 1889–90 | yes |
+| 1890 | `Q3320778` | 1890 British Ultimatum | **no** (`Q188689`) |
+| 1895 | `Q2745584` | Battle of Marracuene | yes |
+| 1895 | `Q2638505` | Franco-Hova Wars | yes |
+| 1899–1901 | `Q136483840` | Rabih War | yes |
+| 1900 | `Q123411905` | Battle of Jigjiga | yes |
+| 1901 | `Q617278` | Anglo-Aro War | yes |
+| 1904 | `Q1674550` | Battle of the Cunene | yes |
+| 1905–1906 | `Q167455` | First Moroccan Crisis | yes |
+| 1906 | `Q163573` | Algeciras Conference | **no** |
+| 1907 | `Q2984842` | Battle of Mufilo | yes |
+| 1911 | `Q164771` | Agadir Crisis | yes |
+| 1913 | `Q109561628` | Battle of Dul Madoba | yes |
+
+**Four of them are Portuguese campaigns in Angola and Mozambique** — Buaró,
+Marracuene, Mufilo, the Cunene — which is this atlas's own subject reached through
+the world rather than beside it. **Each still has to earn its edge under A15(1)**,
+and this fire's three refusals are the warning that a date inside the span is the
+cheap half: `Italo-Ethiopian War of 1887–1889 --> first-italo-ethiopian-war` and
+`Algeciras Conference` closing the First Moroccan Crisis are the two whose articles
+are most likely to state one.
+
+**The sitelink column in the screening output is `1` for every row and means
+nothing**: the query asked for `sitefilter=enwiki`, so it counts the English
+article and not the item's languages. A fire that wants prominence must ask again
+without the filter.
+
+### Deviation 1501 — `--candidates` does not finish here, and it is not the rate limit
+
+Batch 75's stand said `tools/import/wikidata.mjs --candidates` "cannot run from
+this container today" on a 429 from `/w/api.php`. **This fire found the 429
+clears**: `api/rest_v1/page/summary`, `en.wikipedia.org/w/api.php` and
+`www.wikidata.org/w/api.php` all answer 429 on a first request and **200 on a
+retry with a 20-second wait**, which is wider than the tool's own backoff (base
+2,000 ms, four retries, so 16 s at the last attempt). Every read this fire made —
+the article bodies, the sections, the links, the search, the entities, the import
+itself — went through a retrying fetcher and none failed.
+
+**`--candidates` still did not finish.** It ran in the background for over 100
+minutes with `--budget 120` and wrote neither its report nor a line of output
+before it was stopped. So the verdict to carry forward is narrower and more useful
+than "no network": **an article can be read at a revision, an item can be read,
+the search API answers, and `--import` works — and the candidates mode is the one
+thing that does not.** A fire that wants candidates should read a held umbrella's
+own links, as above, rather than wait on that mode.
+
+### What this fire did not touch
+
+A11(b)'s partition check was made before the batch and against `origin/m42b`'s
+own records: **none of the five candidates is among the 1,605 event records on
+that branch.** `docs/m42-pool.md` is the only document changed. No code, no test,
+no schema, no display, no new type, confidence, hex value or token.
+
+## Where the run stands after batch 76, for the fire that picks it up
+
+*1 October, the fire that claimed at 23:50Z on 30 September. **The first import
+fire in six to import anything**, and what unblocked it was not a rule moving.*
+
+**What is open, in the order a fire should weigh it:**
+
+- **The bind is narrower than four stands have said, and this is the one thing on
+  this list that changes what the next fire does.** A15(1), A14(6) and A6 still
+  close on each other for a candidate that *no held umbrella fits* — that part is
+  unchanged and still the owner's, and the two records a relaxation would unblock
+  are still `Jewish exodus from the Muslim world` (rev 1375572604) and
+  `Decline and modernization of the Ottoman Empire` (rev 1374227337). But **A6 is
+  satisfied by a filing and not only by a relaxation**, and a held umbrella's own
+  article is where the filings are: `scramble-for-africa`, 1885–1914, Africa, at
+  revision 1373841219, gave this fire five candidates from one read and the batch
+  section leaves **16 screened and dated inside its span**, four of them Portuguese
+  campaigns in Angola and Mozambique. **Start there.** The same question has not
+  been asked of the other ten umbrellas.
+- **Read a degree-zero umbrella as finished, not as a gap. Deviation 1500.**
+  `tests/m42-filing.test.mjs` forbids any active edge with an `m42-umbrella` record
+  at either end, so the eleven umbrellas — `afghan-conflict`, `arab-spring`, the two
+  Colombian ones, `decolonisation-of-africa`, `decolonisation-of-asia`,
+  `indochina-wars`, `interwar-period`, `nova-republica-brazil-since-1985`,
+  `scramble-for-africa`, `third-portuguese-republic-since-1974` — are degree zero
+  **by rule**. Five of the twenty isolated Africa and Asia events are umbrellas.
+  This fire wrote an edge on to one, had it refused by the test and took it back;
+  a fire that screens by degree without this filter will spend itself on them.
+- **A15(1) is the gate that bites now, not A6.** All three refusals of this batch
+  are it: a candidate inside the span whose article states no cause towards
+  anything held. Of the two shapes that defeated them, one is deviation 1495's
+  blind spot seen from the other side — the Scramble's *"As a result of the Entente
+  Cordiale, the German Kaiser decided to test the solidity of such influence, using
+  the contested territory of Morocco as a battlefield"* names the First Moroccan
+  Crisis **by description**, and identifying it is a reading an assistant does not
+  get to make. That pair is a good first question for the owner or a reviewer.
+- **`1890 British Ultimatum` is the best single candidate left and it needs one
+  decision.** `Q3320778`, rev 1375614563, `P361` already `Q179848`, so it arrives
+  filed under the Scramble with no filing argument owed. It is about Portugal's
+  claim between Angola and Mozambique, which is this atlas's own subject. Two
+  things block it: its only `P31` is `Q188689`, which the class table does not
+  hold — adding it with a note is the ordinary editorial move and three classes in
+  that file say they were added that way — and its one causal sentence naming held
+  events is A15(5)'s reattribution class, which points at
+  `lisbon-regicide --> the 5 October 1910 revolution` instead — and **the atlas
+  already holds that one**, `lisbon-regicide--republic-proclaimed-1910--enabled`,
+  so the reattribution yields nothing new and the ultimatum needs a sentence of its
+  own. This fire read only the sentences its screen surfaced; the article is 13,129
+  characters and the rest of it has not been read.
+- **The network verdict has changed and the old one will cost a fire work.
+  Deviation 1501.** A 429 from any of the three endpoints **clears on a retry with
+  a ~20-second wait**, which is wider than the import tool's own 16-second cap.
+  Article bodies at a revision (`action=parse&oldid=&prop=text`), section lists,
+  `prop=links`, `list=search`, `wbgetentities` and `--import` itself all worked on
+  this fire. **Only `--candidates` does not**: it ran 100 minutes with a budget of
+  120 and wrote nothing. Do not read batch 75's "cannot run" as "no network"; do
+  not budget a fire on `--candidates`.
+- **A held umbrella's `prop=links` is the candidate mode that works.** 1,091 links
+  → 1,024 unheld → 226 event-shaped → 36 after dropping the WWI navbox → 16 inside
+  the span. Two calls for titles→items and items→dates, batched 45 and 40 at a
+  time. The batch section has the table and the method.
+- **`arab-spring` is unchanged and still the owner's**, and deviation 1500 adds a
+  reason to leave it alone: it is an umbrella, so it was never going to take an
+  edge. Deviation 1496's lane question stands —
+  `2011-yemeni-revolution` and `2011-bahraini-uprising` are waiting on it. Do not
+  write a lane on to either.
+- **Africa's twenty post-independence mains and the national-complex idea: closed,
+  measured.** Batch 75's stand asked a fire to read for a *national* complex rather
+  than a continental period. This one did, through `api/rest_v1/page/summary`, and
+  **all three are set-index pages, not periods**: `Liberian Civil War` is a
+  disambiguation (`Q1185186`), `Sudanese Civil War` (`Q1163563`) opens *"refers to
+  at least three separate conflicts"*, and `Congo Wars` redirects to
+  `Congolese Civil War` (`Q364610`), which opens *"may refer to any of a number of
+  armed internal conflicts"* — the same refusal batch 75 made. **Do not re-run
+  this.** The obvious Africa main-to-main edges are written too: of fourteen
+  plausible pairs screened by hand, eleven already have an edge and the three that
+  do not are `rwandan-civil-war ↔ first-congo-war` (the genocide carries that
+  link already, and the civil war's own route is not in either article's causal
+  prose), `arab-spring ↔ 2013-egyptian-coup-d-etat` (the umbrella, above) and
+  `second-italo-ethiopian-war ↔ rif-war` (nothing in either article).
+- **The isolated-event article sweep is spent for Africa.** Nine isolated Africa
+  events read whole at their cited revisions — `abushiri-revolt`,
+  `benin-expedition-of-1897`, `wadai-war`, `kaocen-revolt`,
+  `massacre-of-arabs-during-the-zanzibar-revolution`, `effacer-le-tableau` and the
+  three umbrellas — and **not one causal sentence naming a held event**. Twelve
+  thinly-connected Africa events with ten or more sitelinks were read as well
+  (`congo-crisis`, `nigerian-civil-war`, `italo-turkish-war`, `rif-war`,
+  `zanzibar-revolution`, `2013-egyptian-coup-d-etat`, `first-matabele-war`,
+  `anglo-zanzibar-war`, `ifni-war` and the three umbrellas): seventeen sentences
+  survived `statesACause` and `namesHeldEvents`, and **every one of them named
+  `world-war-i`, `world-war-ii` or an event the pair already has an edge for**.
+  The `decolonisation-of-africa` sentence that looked like six filings —
+  *"Major events during the decolonisation of Africa include the Mau Mau rebellion,
+  the Algerian War, the Congo Crisis, the Angolan War of Independence, the Zanzibar
+  Revolution, and the events leading to the Nigerian Civil War"* — turned out to be
+  **already acted on**: all five of those the atlas holds are filed under it or
+  under a nearer umbrella, and `Mau Mau rebellion` is the one event in the sentence
+  the atlas does not hold at all. That is a candidate.
+- **A15(6)'s note oracle is still written and still unused.** `refusedPlaces()`
+  reads 28 refusals off disk; the next places pass should hand it
+  `refusedPlaces(record)`. Unchanged from the last six stands.
+- **Unchanged and still the owner's:** A6's lane rule against the period umbrellas;
+  deviations 1473 and 1482; `execution-of-the-romanov-family` and deviation 1423;
+  A11's area clause; deviation 1478; A15(12)'s 177 uncategorised events; the EEC's
+  closing year; deviation 1461's two display faults; `origin/m42b`'s five place
+  placeholder summaries; and deviation 1499's intermittent narrative-framing
+  assertion, which did not appear on this fire.
+- **Deviation numbers: take the next above 1501.** This fire wrote **1500** (a
+  period umbrella is degree zero by rule, so the degree-zero warning on one is not
+  work) and **1501** (`--candidates` is the one mode that does not finish here; a
+  429 elsewhere clears on a wider retry than the tool's own).
+
+**One more thing about this sandbox, cheap and worth the line.** `pkill -f` with a
+pattern naming a tool kills the shell that runs it, because the shell's own command
+line contains the pattern: `pkill -f 'wikidata.mjs --candidates'` took out the
+heredoc being written in the same command. Match on the pid from `pgrep -af` instead.
+
+**The check is green on the head this stand was written against, and the one red
+run was this batch's own fault rather than the load.** Run **2186** of
+`validate.yml`, commit `aba81476`, conclusion **`success`** — the head carrying
+both imports, both edges, the dropped third one and this document. Run **2182**,
+at `622223a9`, **failed**, and it failed on the assertion deviation 1500 is about:
+`tests/m42-filing.test.mjs` refusing the edge on to `scramble-for-africa`. Runs
+2184 and 2185 were cancelled by the next push, which is deviation 1258's chain and
+costs nothing. **A fire that meets a red check should read it before reaching for
+the load**: this one named the rule, the edge and the line, and the fix was to take
+the edge back.
+
+Both suites are green on this fire's tree, run the way the check runs them since
+M63: **2,241 tests, nothing skipped — 1,928 pure and 313 browser**, neither needing
+a second run. Deviation 1499's intermittent narrative-framing assertion did not
+appear. **No test was added, because no code changed**: the rule this fire broke
+was already written and already caught it, which is what deviations 711 and 717
+are for.
+
+## Curation 2026-10-01
+
+*1 October, the fire that claimed at 02:42Z. **The curation fire**, and the
+first after 02:00Z: A11(a) over every active event, A13's relations pass over
+the half of the corpus no pass had read, and nothing imported. All six A14 and
+all thirteen A15 sections were already in this file, so no pass was owed before
+it. **Two events placed, four edges, ten filings, one interval widened — and four
+faults found in rules that had been reporting they ran.***
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1,370 | **1,370** |
+| main events | 229 | **229** |
+| filed | 1,141 | **1,141** |
+| active edges | 1,164 | **1,168** |
+| components | 406 | **406** |
+| **largest component** | 759 | **759** |
+| second component | 15 | **15** |
+| events with no edge | 315 | **315** |
+| edges crossing an umbrella (A15(11)) | 579 | **584** |
+| edges inside one umbrella | 585 | **584** |
+| active events carrying no place | 146 | **144** |
+| validator | 0 errors, 610 warnings | **0 errors, 609 warnings** |
+
+The largest component did not move **because this fire's target set was inside
+it**: A13 read the 759 events in the component itself, which no pass had done,
+and every edge it wrote therefore joined two events already joined. The 30
+September fire read the 574 outside it and moved the component by one. Those
+are two different questions and this is the second of them.
+
+### The network, which answers at once with a User-Agent and refuses without one
+
+Deviation 1501 said a 429 clears on a ~20-second retry. **It clears on the
+first try when the request carries the import's own User-Agent.** A bare
+`curl` to either `en.wikipedia.org/w/api.php` or `www.wikidata.org/w/api.php`
+returned 429; the same URL with
+`atlas-causal import (+https://github.com/goncalojacob/atlas-causal)` returned
+200 immediately, and every one of this fire's ~1,100 calls went through at
+1.1–1.3 s spacing with **no failure at all** — 674 article extracts, 1,238
+items for the filing pass, 737 for `P710`, 146 for the places pass. Deviation
+1502: a 429 from these endpoints is a missing User-Agent before it is a rate
+limit, and a fire that reaches for the backoff first will spend twenty seconds
+a call to get the same answer.
+
+### Places — the chain is the import's own now, and the gate could not see 124 of the 797
+
+146 active events carry no place, 105 of them with no refusal note at all: the
+Americas lane's arrivals, which no places pass on this branch had read.
+
+**First, the chain stopped being a copy.** The 30 September fire wrote A9's
+walk a second time in a script and the copy was weaker than the rule — it
+handed A15(6)'s distance test the item's own points instead of the event's
+chain, passed what the rule refuses and reported that the rule had run
+(deviation 1477). `eventPlace()` is **exported** now and
+`tests/a9-chain.test.mjs` holds it exported, with the gate at every step, the
+lane guard, the reuse rule and the recorded-refusal oracle each asserted. There
+is one chain.
+
+**Deviation 1503 — A15(6)'s gate asked the item's class and could not see a
+country this atlas already holds as one.** `countryGateApplies()` fires on the
+item's own `P17` or on a candidate the class table calls a `country`.
+`france-q142` is a **place record of this atlas at `country` precision**, and
+the class table reads `Q142`'s `P31` as an **actor**, so `classify()` returns no
+precision and the gate did not run. The first reading of this pass put
+`italian-war-of-1551-1559` — a war of 1551 to 1559 — **in France, whose `P571`
+is 1958**, and the gate that exists to refuse exactly that said nothing.
+**124 of the 797 place records are countries** and it could see none of them.
+The gate is given the held record's own `where.precision` first, and the test
+holds both halves: a held country is gated, a held city is not.
+
+**Deviation 1504 — the note is the cheapest oracle and only one of its three
+sentence shapes can be read.** A15(6) writes *"the place was X, …, and it is
+refused because …"*, which `refusedPlaces()` parses. Five records refuse **every**
+candidate and say so in prose no expression reads — *"a war on two seas has no
+one point"*, *"the place is cleared and the Africa lane kept"*, *"the first
+candidate its lane admits is Southern Lebanon, which is one front and not the
+war"*. This fire's first reading placed `1948-arab-israeli-war` at the Sinai and
+then at Southern Lebanon, both of which that record's own note had already
+refused in so many words. That is the third fire in a row to re-derive a
+judgement sitting on disk. **`place-refused` is now a flag**, on those five, with
+the predicate `placeRefused()` beside `refusedPlaces()`: the note stays, because
+it is the argument, and the flag is the half a pass can ask about. A reviewer who
+disagrees takes the flag off and the next fire places the event.
+
+**Deviation 1505 — the lane of a held event is the record's own.** The pass
+re-derived each event's lane from its item, the way `--import` does for a record
+that does not exist yet. `1948-arab-israeli-war` carries `region: asia`, which
+**A15(7) confirmed by hand**, and the re-derivation handed A14(2)'s guard a lane
+read off the item's first located thing instead. A pass over held records takes
+the record's answer; only a record with no answer gets one derived.
+
+| | |
+| --- | --- |
+| placeless active events read | **146** |
+| refused by the gate at some step | 73 |
+| the chosen item's class is not a place of this atlas (deviation 1474) | 35 |
+| refused by A14(2)'s lane guard | 6 |
+| only the item's own point is located — a person must write the place | 60 |
+| refused by hand, the item naming six regions (`eastern-front`) | 1 |
+| placed, and then taken back on a label collision | 2 |
+| **written** | **2** |
+
+  battle-of-martinique-1779  -> martinique-q17054
+  battle-of-martinique-1780  -> martinique-q17054
+
+The two Martinique actions are naval encounters off an island this atlas
+already holds, in the lane that agrees.
+
+**Deviation 1511 — a right placement the map could not carry, and the fix is
+data rather than display.** `battle-of-noain` and `battle-of-pampeluna` are
+five weeks apart in the same 1521 campaign in Navarre and the item's `P276` is
+**Pamplona** for both. Writing the place record put a second *"Pamplona"* on
+the map — the atlas labels its own places where Natural Earth has no city for
+them (`names.js`) — and that label **overlapped the tracked all-caps
+"PYRENEES"**, which `tests/map-browser.test.mjs` forbids outright. The cause is
+measurable: `labelBox()` sizes a feature name at `EM_TRACKED` (0.63 em a
+character), which is a mixed-case average, and **a feature name is upper
+case** — eight caps plus seven tracking gaps come to about 0.77 em each, so the
+box under-measures by roughly a fifth and Pamplona landed in the slack.
+
+**The fix is not the estimate.** Changing `EM_TRACKED` changes which names
+appear everywhere on the map, which is the display change this lane may not
+make. The fix is that **Natural Earth holds Pamplona, at `WIKIDATAID` Q10282 —
+the very item the record carries** — so the city should name the place and the
+atlas should not draw its own. That is `tools/import/naturalearth.mjs
+--places`, and this fire ran it to see: it matches **167 on wikidata and 15 on
+the name**, against the seven entries `data/imports/naturalearth-places.json`
+holds today. **182 matches are waiting**, because the place corpus has grown
+from 26 records to 798 since that mapping was last written, and nobody has
+re-run it. **That is a piece of work of its own and not a thing to slip into a
+curation fire**: it changes what 182 places are labelled by and at what zoom.
+It was run, read and reverted; the two placements were taken back with the
+reason on each record, and the lane `europe` is kept.
+
+**`eastern-front` is the one refused by hand, and it is A15(6)'s second refusal
+one property early.** Its item names **six** locations — the Soviet Union
+(refused at 2,837 km), Central Europe, Eastern Europe, Europe, Northern Europe,
+the Balkans — and A9's chain takes the first that passes, which is Central
+Europe. A front that ran from the Vistula to the Volga is not Central Europe's
+point. A15(6) refuses a `P17` that names more than one country *because* it then
+names no one country; **a `P276` that names six regions is the same accident and
+nothing refuses it.** Deviation 1506, and a line for the owner: the multiplicity
+refusal is written for one property and the chain has four.
+
+### A7 — one widening, and the warning that points both ways
+
+Six active records carry `span-vs-article-title`. **One is a widening and it is
+written**: `battle-of-algiers-1956-1957` was dated 1957 and the article it cites
+at revision 1374865618 is titled *"Battle of Algiers (1956–1957)"*; A15(4) is
+what reads a title and the start is 1956 now, with the item's `P580` of 7 January
+1957 kept as the date the campaign's dated phase opens on.
+
+**Deviation 1507 — `spanFromTitle()` is two-way and A7 is not.** The other five
+would be changed by **narrowing**: the 1975 spring offensive from 1974-12-13 to
+1975, the siege of Zaragoza from 1808-12-20 to 1809, the India–Pakistan war from
+1947–1949 to 1947–1948, the siege of Crema from 1513 to 1514. Each would throw
+away a dated `P580` the item states in favour of the year somebody put in a
+title. At import time the question cannot arise, because the record has no dates
+but the item's; on a held record it does, and what answers it is A7's direction
+rather than the function's.
+
+The 25 `span-vs-lead-*` warnings are the 30 September fire's set and its reading
+stands: fourteen a bound inside the record's, five Old Style against New Style,
+two deviation 1478's first-sentence fault.
+
+### A13 — the relations pass, over the component itself
+
+**759 events are inside the largest component and 674 of them cite an English
+article.** All 674 were read whole at their current revision through the action
+API's `explaintext` extract, one request each at 1.1 s, and **there were no read
+failures at all**. This is the set the five previous passes had left: every one
+of them took the events *outside* the component, because that is where an edge
+moves the picture.
+
+| | |
+| --- | --- |
+| sentences carrying a causal marker and naming no held event | **15,316** |
+| the pair is already an edge the atlas holds | **323** |
+| a parent/child pair, which A14(6) forbids until C8 | **164** |
+| the quote opens on chronology and states no cause (A15(5)) | **106** |
+| the two spans cannot touch (over 25 years apart) | **79** |
+| an umbrella at one end, which no edge may touch (deviation 1500) | **11** |
+| the quote names a third held event as the cause (A15(5)) | **45** |
+| **pairs read one by one** | **162** |
+| **written** | **4** |
+| **disputed** | **0** |
+
+  insurgency-in-kosovo       --caused-->          kosovo-war
+  world-war-i                --enabled-->         baltic-entente
+  spanish-civil-war          --reacted-to-->      anti-comintern-pact
+  russian-revolution-of-1905 --precondition-of--> october-revolution
+
+**The four, each quoting the sentence that carries the claim.**
+
+1. **`insurgency-in-kosovo --caused--> kosovo-war`.** The insurgency's own
+   article, at revision 1377784274: *"The total number of attacks by the KLA in
+   1998 was 1,470, compared to 66 the year before. After the attacks against the
+   Yugoslav police intensified in 1998, security increased as did the presence of
+   Yugoslav Army personnel, which led to the Kosovo War."* The two are **sibling**
+   parts of the Yugoslav wars and neither is inside the other, so A14(6) does not
+   reach them.
+2. **`world-war-i --enabled--> baltic-entente`**, revision 1363789006: *"Thanks to
+   the victory of Entente in World War I and the relative international weakening
+   of both Germany and Russia, **it became possible** for the Baltic states to
+   turn theoretical ideas into practice."* `enabled` is for exactly that — sixteen
+   years and three independences stand between the two, and what the war did was
+   remove the weight that had made it impossible.
+3. **`spanish-civil-war --reacted-to--> anti-comintern-pact`**, revision
+   1377358025: *"The Spanish Civil War … **reinforced the urgency** in the mind of
+   the German leadership to create some sort of anti-Soviet military arrangement."*
+   Reinforced an urgency, not created the pact: a reaction and not a cause, and
+   the pact of November 1936 answers a war running since July.
+4. **`russian-revolution-of-1905 --precondition-of--> october-revolution`**,
+   revision 1376714992: *"Vladimir Lenin later famously described the Revolution of
+   1905 as the 'dress rehearsal' **without which** the 'victory of the October
+   Revolution in 1917 **would have been impossible**.'"* That is `precondition-of`
+   word for word. It is Lenin's judgement and the article attributes it to him,
+   which is why the confidence is `probable`. The atlas draws
+   `moscow-uprising-of-1905 --enabled--> october-revolution`; that is one rising
+   inside 1905 and this is the revolution entire.
+
+### The contradictions, of which there were none — screened rather than eyed
+
+A13 asks for an edge to be disputed where the article contradicts its type or
+direction. **323 quotes fell on a pair the atlas already links**, and this fire
+screened them mechanically rather than by eye: for each, where the first causal
+marker falls, which end is named before it and which after, against the held
+edge's own direction. **Six came out and all six are false**:
+`suez-crisis--closure-of-the-suez-canal-1956-1957--caused` is *"The closure …
+**was caused by** the Second Arab–Israeli war, also known as the Suez Crisis"*,
+which agrees; `october-revolution--russian-civil-war--caused` is *"**sparked by**
+the overthrowing of the Russian Provisional Government in the October
+Revolution"*, which agrees; `world-war-ii--treaty-of-san-francisco--caused` is
+the treaty's definition; the two `soviet-afghan-war` hits are naming sentences
+in three alphabets. **Nothing was disputed and nothing was silently changed.**
+
+**The one worth keeping is not a contradiction but a second relation the other
+way.** `dutch-brazil-1630-1654--recapture-of-angola--precondition-of` is held,
+and the Angola article says *"the decisive Portuguese victory in the Recapture of
+Angola … **crippled** the Dutch colony in Brazil as it could not survive without
+the slaves from Angola."* The held edge says Dutch Brazil's need for slaves made
+Angola the target; the quote says the recapture then ruined the colony. Both are
+true and the second cannot be drawn: rule 5 would refuse the reverse edge, and
+the effect — the end of Dutch Brazil — is not a record of its own.
+
+### The refusals, which are the load-bearing half
+
+Of the 162 read one by one, **158 were refused** and the classes are the ones the
+30 September fire named, with two worth writing down.
+
+- **The atlas already holds the edge the quote argues for, from a nearer
+  record.** *"The outbreak of the Spanish American wars of independence … was a
+  result of Napoleon's destabilizing actions in Spain"*, off the Napoleonic Wars'
+  article, would be `napoleonic-wars --caused--> spanish-american-wars-of-independence`
+  — and **`peninsular-war--spanish-american-wars-of-independence--caused` is
+  already here**. Napoleon's actions in Spain *are* the Peninsular War, which the
+  atlas holds and already draws this from.
+- **The same claim, counted twice through a part.** *"The cost of participation in
+  the American war inexorably led to France's own bankruptcy six years later,
+  setting the stage for the French Revolution"* is the best single sentence in the
+  162, and the atlas already holds
+  `anglo-french-war-1778-1783--estates-general-of-1789--precondition-of`, where
+  `estates-general-of-1789` is a **child of `french-revolution`**. The same war
+  already reaches the revolution through its first act; a second edge to the
+  umbrella would be the whole standing in for the part. The 30 September fire
+  refused the mirror of this — a second edge from an earlier phase — and the rule
+  is the same from either end.
+- **Rule 4, the arrow of time.** *"the Spanish Constitution of 1812 … served as
+  the basis for independence in New Spain and Central America"* is an `enabled`
+  the atlas does not hold, and the constitution is 1812 while the wars start in
+  1808: `from.start > to.start` is a rule 4 **error**, not a judgement.
+- **Deviation 1508 — a homonym across countries, which no span test parts.**
+  *"…started the Third Brazilian Republic, better known as the Estado Novo"*, off
+  Brazil's Revolution of 1930, matched `estado-novo-1933-1974`, which is
+  **Portugal's**. Deviation 1480's second fault was a name repeating across
+  centuries and deviation 1480's fix parts those by span; Brazil's Estado Novo
+  (1937–1945) and Portugal's (1933–1974) **overlap**, so the nearest-span rule
+  keeps the wrong one and cannot do otherwise. `february-revolution`'s article
+  matching the atlas's `eastern-front` — which is the Second World War's — is the
+  same shape at 24 years, one short of this fire's own 25-year screen.
+- **The effect is not an event the atlas holds**, which is still the largest
+  class: *"the loss of the war in 1905 led to major political unrest in Imperial
+  Russia"* names the Russo-Japanese War as the cause without naming it, and the
+  atlas holds `russo-japanese-war--russian-revolution-of-1905--caused` already;
+  *"This later led to the Philippine–American War"* refers to the Battle of Manila
+  of 1898, which this atlas does not hold.
+
+### Parents (A6, A8) — the question asked of every event and not only the mains
+
+The 30 September fire read the **202 main events** with an item. This one read
+**all 1,238**, because an event already filed can still belong under a nearer
+umbrella and nothing had asked.
+
+| | |
+| --- | --- |
+| active events with an item | **1,238** |
+| the item names no `P361` | 239 |
+| every umbrella it names is already on the record | 947 |
+| named one the atlas holds whose span refuses the child (rule 24) | 52 |
+| **offered, and the grandparent of a parent already held** | **37** |
+| refused on A6's lane rule (unchanged, still the owner's) | 4 |
+| refused on the dates | 1 |
+| **written** | **10** |
+
+**Deviation 1509 — `filedUnder()` reduces among the umbrellas it chooses and
+knows nothing of the ones the record carries.** 37 of 52 candidates were the
+grandparent: `battle-of-chotusitz` offered `war-of-the-austrian-succession` when
+it already carries `first-silesian-war`, which is filed under it. At import time
+that cannot happen, because a new record has no parents; on a held record it is
+every candidate but fifteen. The reduction has to run over the record's own
+parents too, and over **every** active event's parents and not only those with an
+item, because an intermediate without an item breaks the walk.
+
+The ten, and the reasoning for each, are the table in
+`docs/m62-umbrellas.md` → *"Curation 1 October 2026"*. Five take a nearer
+umbrella and drop the farther; three gain a second where neither reaches the
+other; one — `operation-green-sea` — is not a filing at all.
+
+**Deviation 1510 — a filing propagates one step down.** Filing
+`guinea-bissau-war-of-independence` under the colonial war did not touch
+`operation-green-sea`, and it made *that* record's two parents nest all the same.
+`tests/m42-filing.test.mjs` caught it on the next run. A pass that files a record
+has to re-ask the question of everything beneath it.
+
+**Refused on the dates: `iberian-pact` under `world-war-ii`.** The item's `P361`
+names the war and rule 24's year arithmetic contains it — 1939 inside 1939–1945 —
+but the pact was signed on **17 March 1939** and the war began on 1 September.
+The record already carries `interwar-period`, which is where that March belongs.
+
+**Main is 229 before and 229 after**, and it has not risen through thirty-seven
+batches and seven curation fires.
+
+### P710 — 737 eligible, nothing written, and the sixth fire in a row
+
+**965 active events name no actor**; 737 carry a category the vocabulary has a
+role for (`war` → `belligerent`, `treaty` → `signatory`, and no third mapping).
+All 737 read against their items in fifteen calls.
+
+| | |
+| --- | --- |
+| the item names no participant | **370** |
+| participants the atlas holds none of | **268** |
+| a partial list, withheld under deviation 1404 | **94** |
+| the actors the atlas holds do not span the event (deviation 1444) | **5** |
+| **written** | **0** |
+
+Still structural and still not a gap in the reading: 638 of the 737 name no
+participant or name none this atlas holds, and the actor corpus begins in 1886.
+
+### Summaries, polities, and A15(3)'s residue
+
+**Five active events carry a summary under two sentences** and they are the same
+five as on 30 September: `cavaco-absolute-majority-1987`,
+`fiftieth-anniversary-25-april-2024`, `montenegro-government-2024`,
+`santa-maria-hijacking-1961`, `soares-elected-president-1986` — Portugal records
+of the dated exception, no item, no cited article, each one long sentence of real
+prose. A11(a) fills a summary from a lead and there is none to read; a second
+sentence written here would be A4's forbidden claim. **Nothing to write.**
+
+**202 actors are named by an active event, 164 of them are not persons, and all
+164 carry a description.** A11's clause is met for the third fire running. The
+area half is unchanged and still the owner's.
+
+**A15(3)'s residue did not come back with this merge.** One place record in 797
+carries a summary and it is `central-portugal`, the one sentence a person wrote.
+The five `origin/m42b` placeholders the 30 September fire named are not on this
+branch now; whether they return is still a line for whoever lands the two
+branches.
+
+### A15(2) — the recache, as the last step
+
+Run over this fire's own citations, as A15(2) makes it the last step of every
+batch. **2,863 `wikipedia-en` citations on active records, 2,787 on disk at the
+revision cited, 0 that should be on disk and are not.** The 76 the cache cannot
+hold beside a more-cited revision of the same item are A15(2)'s own accepted
+state and not a defect — 73 before this fire, and the three it added are the
+three of its four edges whose article the cache already held at another revision.
+`tests/a15-cache.test.mjs` passes.
+
+### The suites, and what this fire added to them
+
+Both suites green on the final tree, run the way the check runs them since
+M63: **2,253 tests, nothing skipped — 1,940 pure and 313 browser**. `tests/a9-chain.test.mjs` is new
+and has eleven of them: the chain exported, the order A12(2) fixed, reuse, the
+gate at `P276` (deviation 1476), the recorded-refusal oracle, the lane guard,
+the own-point report, the class refusal, the `place-refused` flag and its
+distinction from a refusal of one candidate, and both halves of deviation 1503's
+held-precision gate. **Each was written before the records it judges** (711,
+717): the gate test failed on the live `france-q142` shape before the one-line
+fix went in.
+
+`docs/m62-umbrellas.md` gained the section `tests/m62.test.mjs` requires — the
+document is where a filing's judgement lives, and a filing it does not account
+for is a filing nobody argued for.
+
+**The check is green on the head this stand was written against**: run **2204**
+of `validate.yml`, commit `b48b0846`, conclusion **`success`**. Runs 2194, 2199
+and 2202 failed and **all three failed the same way, which is worth writing
+down**: each was an index built *before* the commit that carried it. The
+history shards come out of the repository's own commits
+(`tools/lib/history.mjs`), so an index built and committed in one go is always
+one commit short of itself and `validate --index` refuses it on CI however
+clean it was locally. Deviation 798 says records first, rebuild, then commit
+the index — **and the rebuild has to happen after the records commit exists**,
+not after the records are written. Runs 2201 and 2203 were cancelled by the
+next push, which is deviation 1258's chain and costs nothing.
+
+### Where the run stands after the 1 October curation fire, for the fire that picks it up
+
+**What is open, in the order a fire should weigh it:**
+
+- **Import is what the next fire does, and the 30 September stand's vein is
+  still the one that works.** `scramble-for-africa`'s `prop=links` left **16
+  candidates screened and dated inside its span**, four of them Portuguese
+  campaigns in Angola and Mozambique, and **the same question has not been asked
+  of the other ten umbrellas**. Start there. `--candidates` is still the one mode
+  that does not finish here (deviation 1501); everything else works, and
+  **deviation 1502 says it works on the first try with a User-Agent**.
+- **`1890 British Ultimatum` is still the best single candidate and still needs
+  the one decision** the 30 September stand names: `Q3320778`, rev 1375614563,
+  `P361` already `Q179848`. Its only `P31` is `Q188689`, which the class table
+  does not hold, and its 13,129 characters have not been read past the sentences
+  one screen surfaced.
+- **A13 has now read both halves of the corpus and the second half is spent.**
+  674 articles inside the component, four edges, and every one of them joined two
+  events already joined. A fire that wants the component to move has to go back
+  outside it — or to events the atlas does not hold yet, which is import.
+- **Three rules were found reporting that they ran.** Deviations 1503 (the gate
+  blind to 124 held countries), 1505 (a held event's lane re-derived from its
+  item) and 1509 (`filedUnder()` reducing against nothing the record carries) are
+  all the same shape: **a function written for a record that does not exist yet,
+  applied to one that does**. A pass over held records should be read for that
+  shape before it is trusted. `eventPlace()` is exported now so that at least the
+  places chain cannot drift again.
+- **Deviation 1506 is the owner's, and it is small.** A15(6) refuses a `P17`
+  naming more than one country because it then names no one country. A `P276`
+  naming six regions is the same accident and nothing refuses it;
+  `eastern-front` is the case and it was refused by hand.
+- **Deviation 1508 is the owner's too.** Brazil's Estado Novo and Portugal's
+  overlap in time, so deviation 1480's nearest-span rule cannot part them. A
+  homonym across countries is not a homonym across centuries.
+- **Unchanged and still the owner's:** A6's lane rule against the period
+  umbrellas, and the four filings it refuses; deviation 1474's 35 items whose
+  class is not a place of this atlas; the 60 placeless events whose only located
+  thing is their own point, which a person must write; deviations 1473 and 1482;
+  `execution-of-the-romanov-family` and deviation 1423, now also carrying
+  `place-refused`; A11's area clause; deviation 1478; A15(12)'s uncategorised
+  events; the EEC's closing year; deviation 1461's two display faults;
+  `origin/m42b`'s place placeholder summaries; deviation 1499, which did not
+  appear on this fire; and C8, whose clearest single line is still
+  `gulf-of-tonkin-incident`.
+- **`naturalearth.mjs --places` has 182 matches waiting and is a piece of work
+  of its own.** Deviation 1511. The place corpus went from 26 records to 798 and
+  the mapping was never re-run, so the atlas draws its own label for places
+  Natural Earth already names. It is what would let Noáin and Pampeluna be
+  placed, and it is also a question about 182 labels that somebody should look
+  at rather than a fire slip in.
+- **Deviation numbers: take the next above 1511.** This fire wrote 1502 to 1511.

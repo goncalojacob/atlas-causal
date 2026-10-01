@@ -23751,6 +23751,99 @@ participants) for the day the owner answers whether a batch opening an empty lan
 may raise the main count by the one umbrella it needs.
 
 
+**M42b batch 59 — Salta, Cancha Rayada and Maipú, and the islands the
+independence wars are, 1 October.** The fifty-third fire took the trailing
+reachable cell of the partition, the americas' 19th century, **57 → 60**; the
+15th is lower at 7 but neither of its two umbrellas has a fresh `P361` child
+dated in it, which this fire measured so no later one spends itself on it. Three
+events from Wikidata — `battle-of-salta` (`Q592091`),
+`battle-of-cancha-rayada-1818` (`Q333088`) and `battle-of-maipu` (`Q1073849`) —
+each filed from its own `P361`, each placed, **two places written by hand from
+the event items' own `P625`** because the import could put no name to either
+point, each with `summary: null` and with the item and the revision its name came
+from in `review.note`. **Main stays at 229.** **Three edges, each with two
+articles and a locator apiece**, which is M72's second author on all three; six
+candidates refused, one of them by **rule 4** and one unread on deviation 1370's
+test. The finding is **deviation 1372**: the Spanish-American independence vein
+is a set of small islands and the records already in it carry almost no edges —
+`battle-of-tucuman` had none at all until this fire, and 314 active events still
+have none — so the batch grew a component of 6 and one of 2 while the largest
+stood unmoved at **759**, and **579 / 588** is where A15(11)'s arithmetic sits.
+The conclusion is written into the next fire's first move: **the cheapest batch
+left in this cell writes edges between records the atlas already holds**, which
+needs no import and cannot touch the main count. Second finding, **deviation
+1371**: an edge into an umbrella runs backwards against rule 4 whatever the
+source says, because an umbrella is nearly always older than the thing that fed
+it — the cited `battle-of-maipu` → `peruvian-war-of-independence` edge was
+written, refused by the validator and withdrawn rather than argued with.
+`validate --index` clean at 0 errors and A15(2)'s recache at 0 missing revisions.
+Africa and Asia stand at 214 and 214 against A10's 303.
+
+**M42b batch 60 — one edge between two records the atlas already held, 1
+October.** The same fire, executing batch 59's own first move: **an edge pass and
+not an import** — no event, no place, no record created, only the articles of
+events already here read for the edges those articles state.
+`battle-of-junin` → `battle-of-ayacucho`, `caused`, `probable`, two authors, both
+children of `peruvian-war-of-independence` so A14 holds; it merges the singleton
+Junín into `{battle-of-ayacucho, battle-of-tumusla}`, **2 → 3**. Active edges
+**1167 → 1168**, inside one umbrella **588 → 589**, crossing one unchanged at
+**579**, main still **229**. **Six pairs refused**, each named with its revision,
+and two of them are rules worth keeping: `battle-of-torata` →
+`battle-of-moquegua` **already exists**, written by batch 36, which is why an
+edge pass must check `data/edges/<from>--<to>--<type>.json` before writing and
+must check all five types; and `battle-of-ayacucho` → `second-siege-of-callao` is
+refused by **rule 4** although the siege's own article states the link outright,
+because the siege runs from 1824-12-05 and the battle is 1824-12-09 —
+**deviation 1373**, which is deviation 1371 met from the other side: 1371 is an
+umbrella older than its own cause, 1373 is any record with a long span, and
+**183 of 1,373 active events have a span longer than two years.** The lane's
+structural finding: **no edge either batch wrote crosses an umbrella, and that is
+now explained** — the vein is filed by campaign and every record that would
+straddle two campaigns (the Liberating Expedition of Peru, the two Intermedios
+campaigns, Bolívar's campaign to liberate New Granada, the Admirable Campaign)
+is a **main** event, so A15(11)'s number in this lane is blocked by A6. That is
+the sharpest form the main-count question has taken and it goes to the owner
+beside C8.
+
+**M42b batch 61 — the Peninsular War joined to three South American wars, 1
+October.** The americas 19th century, with an edge pass over the americas 18th
+beside it. **One event imported** — `Q5722281` *Battle of Carabobo (1814)*, the
+one candidate batch 60's own refusals proved would pay: `titleFor()` kept the
+article's disambiguator, A15(6) admitted Venezuela as its place (`P571` 1811,
+before the event's end, no `P576`, no second country, and the point the held
+`second-battle-of-la-puerta` already stands on), A15(4) found no range to widen,
+and it is filed under `venezuelan-war-of-independence` from `P361`, so the main
+count did not move. **Nine edges**, all `probable` on the articles alone,
+A14 holding on every one. **Seven of the nine cross an umbrella, and A15(11)'s
+number in this lane moved for the first time: 584 → 591.** Largest component
+**759 → 765**, components **406 → 400**, events with no edge **314 → 307**,
+active edges **1172 → 1181**, main **229** before and after. The last batch's
+conclusion — that A15(11) cannot move here without importing main events A6 bars
+— **is withdrawn**: the crossing edges were already available between umbrellas
+the atlas holds, and what was missing was reading the European war behind the
+Spanish American ones. The Peninsular War is a precondition of the Chilean,
+Peruvian and Argentine wars of independence by each article's own Background; the
+French Revolution inspired the Argentine one; the American Revolutionary War is a
+precondition of the British intervention in Spanish American independence; and
+the capture of St George's Caye and the siege of Yorktown both stand behind the
+battle of Roatán. **Deviation 1374**: before concluding a measurement cannot move
+without an import, run the edge pass over the lane's **umbrellas** and not only
+its leaves — a war umbrella with degree zero is the cheapest crossing edge there
+is, because its parent is almost never the parent of what caused it. **Deviation
+1375**: where the cited article states the *contrary* of the edge — Túpac Amaru
+II, whose article says no colonial uprising "constituted a true independence
+movement" — no edge is written and no confidence is lowered to carry it.
+**Deviation 1376**, caught by `tests/leadcache.test.mjs` in the same fire and
+fixed in it: A15(2)'s recache picks a cached revision by counting citations and
+counts an **edge's**, although `leadcache.mjs` classes every edge `unkeyed` and
+the cache can never answer one — so two of this batch's edges took away the lead
+`argentine-war-of-independence` cites and one took away
+`peruvian-war-of-independence`'s. Every quoted sentence was checked through
+`revids` against the revision the target record already cites and is verbatim
+there, so the three locators name those revisions; A15(2) now reports **0
+revisions that should be on disk and are not** and 2,808 of 2,884 citations on
+disk at the revision cited, two better than the fire found them.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
@@ -24161,4 +24254,7 @@ M42 started 2026-09-30T18:07:54Z by scheduled
 M42b started 2026-09-30T21:37:04Z by scheduled
 M42 started 2026-09-30T21:07:29Z by scheduled
 M42 started 2026-09-30T23:50:11Z by scheduled
+M42 started 2026-10-01T02:42:41Z by scheduled
 M42b started 2026-09-30T23:58:46Z by scheduled
+M42b started 2026-10-01T02:21:47Z by scheduled
+M42b started 2026-10-01T04:37:08Z by scheduled
