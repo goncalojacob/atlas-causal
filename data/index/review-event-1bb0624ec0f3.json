@@ -20,9 +20,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "estado-novo-1933-1974"
-      ],
+      "parent": "estado-novo-1933-1974",
       "review": {
         "flags": [
           "imported-facts",

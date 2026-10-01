@@ -55,9 +55,7 @@
   "place": "portuguese-macau",
   "region": null,
   "regionNote": null,
-  "parent": [
-    "estado-novo-1933-1974"
-  ],
+  "parent": "estado-novo-1933-1974",
   "category": "revolution",
   "actors": []
 }
