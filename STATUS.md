@@ -23890,6 +23890,58 @@ records unfiled against their own `P361` chain, and writing an edge chosen to
 move a layout, which has no sentence behind it. The records are sound and
 `validate --index` is clean at **0 errors, 597 warnings**.
 
+**M42b batch 64 — Asia's sixteenth century, from the Malay–Portuguese conflicts, 1 October.**
+The trailing cell in this partition was **asia's 16th century at zero active
+events**, and the handhold was already on the board: the three Asian records the
+atlas held before 1641 are all fights over **Malacca**, and the item that contains
+them and reaches back to 1509 is `Q16932099` *Malay–Portuguese conflicts*. So the
+Ottoman–Portuguese vein the previous stand named was set aside for this one.
+**Three events imported**: the series as the umbrella (1509–1641, place
+`malay-peninsula`, a new place record from the item's `P276` at 100 E / 7 N,
+`precision: region`, `summary: null` per A15(3)), `Q4110453` *Capture of Malacca
+(1511)* and `Q121283200` *Siege of Malacca (1551)*, both filed under it on the
+tool's second pass — the one `umbrellasWith()` exists for, which held without a
+hand edit this time (deviation 1331 paid off). `malacca-city`, the place the atlas
+already held, was reused for both children and A15(6) refused `P17` on both: one
+names Malaysia, whose inception is 412 years after the siege, and the other names
+two countries. **Four edges**, all `precondition-of`, all `probable` on the
+articles alone, **three of them crossing an umbrella**: the **Treaty of
+Tordesillas** as a precondition of the capture, from the capture's own article
+naming King Manuel's belief that Malacca lay near *"the antimeridian of
+Tordesillas"* and his intent to *"beat the Castilians to the Far-East"*, with the
+Tordesillas article at the revision that record itself cites for the division; and
+the **capture as a precondition of each of the three sieges of Portuguese Malacca
+the atlas now holds** — 1551, 1606 and 1640–1641 — the cleanest carried by the
+1640–41 article's own § Background, *"It was conquered by the Portuguese Empire in
+1511"*, beside its lead's *"against Portuguese Malacca"*. Those three are **three
+records of one argument** and each explanation says so. Asia **217 → 220** and its
+16th century **0 → 3**; active events **1388 → 1391**, main **230 → 231**,
+A15(11)'s number **600 → 603**, active edges **1198 → 1202**, largest component
+**774 → 779**, components **397** before and after, events with no edge **303 →
+304** — the umbrella, left degree-zero on purpose, because its own article's
+background runs from Vasco da Gama and King Manuel's trade ambition, neither of
+which the atlas holds, and writing an edge the article does not carry to take that
+number down is what deviation 1386 refused. **A15(5) refused two edges**, both on
+quotes that give an order and no cause, and the mechanical-match trap caught a
+third: the 1551 article names `italian-wars`, which the atlas holds, but only as
+where some of the garrison's veterans had fought. **Seven of the umbrella's nine
+`P361` children were left**, counted in the pool file: the *Siege of Johor (1587)*
+for want of any cited sentence joining it to what exists, and six at one or two
+sitelinks carrying no date at all. **Deviation 1387**: deviation 1386's red is
+**gone** and it was not fixed — one worktree shows the same two labels touching at
+this fire's pre-batch merge and clear at its head, with nothing under `src/`
+changed between them, so what moved was a barycentre and the defect in
+`label-fit.js` is still there and still lane A's. **Deviation 1388**: the check is
+red on one browser test, `tests/m65-browser.test.mjs`, and it is **M42's deviation
+1521** — the map's camera framing a lens without the parent the lens keeps, which
+arrived through STEP 1's merge, is measured in full in `docs/m42-pool.md`, and is
+a display change neither records lane may make. **Deviation 1389**: `origin/m42`
+was merged twice this fire, because the first merge left `tests/m67.test.mjs` red
+on M42's own `camp-david-accords` before M42 had pushed the section M67 A1 wants
+for it; re-fetching that lane, rather than writing its argument for it, is the
+rule. The records are sound and `validate --index` is clean at **0 errors, 598
+warnings**.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

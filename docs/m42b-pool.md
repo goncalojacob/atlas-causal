@@ -17309,3 +17309,383 @@ already done is blocked; a lane that wants to import a new one is not.
    records that already exist (M42's), `capture-of-luanda`'s `wikipedia.en`
    redirecting to *Dutch Loango-Angola*, and `Q2915203` *Ethiopian–Adal War*,
    read and refused twice now for naming no event this atlas holds.
+
+## Batch 64 — the Malay–Portuguese conflicts, and Asia's 16th century from zero
+
+*1 October, the fire that claimed at 13:37Z. Two merges of `origin/m42` (the
+second for a reason given below), **one batch**, which took the trailing cell of
+this lane's partition — **asia, 16th century, 0 active events** — from zero to
+three, and wrote **four edges, three of them crossing an umbrella**. The check is
+red on one browser test and it is **M42's deviation 1521**, measured there and not
+re-diagnosed here; **deviation 1386's red is gone**, and deviation 1387 below says
+what moved it.*
+
+| | before 64 | after 64 |
+| --- | --- | --- |
+| active events | 1388 | **1391** |
+| main | 230 | **231** |
+| largest connected component | 774 | **779** |
+| components | 397 | **397** |
+| events with no edge | 303 | **304** |
+| **edges crossing an umbrella** | 600 | **603** |
+| edges inside one umbrella | 598 | **599** |
+| active edges | 1198 | **1202** |
+
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 7 / 5 | 11 / 7 |
+| 16th c. | 45 / 2 | 7 / 0 | **3 / 1** | 49 / 3 | 104 / 6 |
+| 17th c. | 109 / 3 | 7 / 0 | 4 / 0 | 70 / 7 | 190 / 10 |
+| 18th c. | 62 / 3 | 14 / 0 | 19 / 0 | 79 / 2 | 174 / 5 |
+| 19th c. | 39 / 9 | 28 / 1 | 8 / 6 | 61 / 8 | 136 / 24 |
+| 20th c. | 245 / 60 | 90 / 23 | 158 / 37 | 91 / 30 | 584 / 150 |
+| 21st c. | 52 / 7 | 76 / 7 | 28 / 14 | 36 / 1 | 192 / 29 |
+| **all** | **556 / 86** | **222 / 31** | **220 / 58** | **393 / 56** | **1391 / 231** |
+
+**Africa and Asia stand at 222 and 220 against A10's 303**, so A15(1)'s pause
+holds and nothing of Europe before 1900 is this lane's to import.
+
+### Why this vein, and what it is
+
+Asia's 15th, 16th and 17th centuries read 0, 0 and 4 at the start of this fire
+and were the trailing cells of this lane's partition; the previous stand named
+asia's 16th as the one to take and the Ottoman–Portuguese conflicts of 1538–1559
+as the vein to try. **A different one was taken, for a reason worth writing
+down.** The earliest Asian event the atlas held was `battle-of-cape-rachado` of
+1606, and the three Asian records it held before 1641 are all sieges of or
+battles over **Malacca**, filed under `dutch-portuguese-war`. The item that
+contains them, and reaches back to 1509, is `Q16932099` *Malay–Portuguese
+conflicts*, 1509–1641 — so the handhold the Ottoman vein would have had to find
+was already on the board.
+
+Imported through `tools/import/wikidata.mjs --import --batch 10`, three items,
+eight calls:
+
+- **`malay-portuguese-conflicts`** (`Q16932099`, 6 sitelinks, `P31` `Q198` war),
+  1509–1641, place `malay-peninsula` — a new place record from the item's
+  `P276` `Q18758`, point 100 E / 7 N, `precision: region`, `summary: null`
+  (A15(3)). Lane `asia`, derived from that point.
+- **`capture-of-malacca-1511`** (`Q4110453`, 14 sitelinks), 1511-07-25 to
+  1511-08-15 from `P580`/`P582`, place `malacca-city` — the record the atlas
+  already held for `Q61089`. Filed under the umbrella.
+- **`siege-of-malacca-1551`** (`Q121283200`, 3 sitelinks), 1551-06 to 1551-09,
+  place `malacca-city` — the import reused it for `Q185221` *Malacca* (the
+  state) on "the same name at the same point". Filed under the umbrella.
+
+Both children were filed **on the second pass**, the one `umbrellasWith()` exists
+for: their umbrella was created in the same run, which is the fault deviation
+1331 paid off and it held here without a hand edit.
+
+**`P17` was refused on both sieges, correctly, and A15(6) is why.** Q121283200's
+only country is `Q833` Malaysia, whose inception (1963) is 412 years after the
+siege; Q55633157 names two countries. Neither event is on a modern state's
+point.
+
+### The main count rose by one, and this is why (A3, A6)
+
+230 → **231**, and the one is `malay-portuguese-conflicts`. There is no held
+umbrella it could go inside: the atlas holds no Asian period or series covering
+1509, and `dutch-portuguese-war` begins in 1601. The alternative was to import
+the two sieges unfiled, which is **+2 main** and leaves them unfiled against
+their own `P361` chain — the trade deviation 1386 refused in the other
+direction. One new main event that files two records and opens a century from
+zero is the deviation-1384 case, and it is taken on that reading.
+
+### The edges, and what carries each
+
+Four, all `precondition-of`, all `probable` (rule 22 — Wikipedia only).
+**Three of the four cross an umbrella.**
+
+1. `treaty-of-tordesillas-1494 --precondition-of--> capture-of-malacca-1511`
+   — crosses. From *Capture of Malacca (1511)* at revision 1373484620, the
+   revision the record cites, § Background: *"Since then, King Manuel showed an
+   interest in making contact with Malacca, believing it to be at, or at least
+   close to, the antimeridian of Tordesillas"*, and the lead's *"intended to
+   beat the Castilians to the Far-East"*; with *Treaty of Tordesillas* at
+   revision 1374273992 — **the revision that record itself cites**, which is
+   deviation 1380's rule and it held again — § Antimeridian: *"Portugal gained
+   control of all lands and seas west of the Zaragoza line, including all of
+   Asia and its neighboring islands so far discovered."* The edge says in its
+   own text where it is weak: the antimeridian was not fixed until Zaragoza in
+   1529, so what the Background reports is a belief about an unsettled line.
+2. `capture-of-malacca-1511 --precondition-of--> siege-of-malacca-1551`
+   — does **not** cross; the two are siblings under the new umbrella, which A14
+   permits. From *Siege of Malacca (1551)* at revision 1375742313, § Context:
+   the coalition formed *"to attack Portuguese Malacca"*, with the 1511
+   article's § Aftermath for the permanence: Albuquerque *"did not intend to
+   just sack the city, but to hold it permanently"*.
+3. `capture-of-malacca-1511 --precondition-of--> siege-of-malacca-1606`
+   — crosses (the other end is under `dutch-portuguese-war`). From
+   *Malay–Portuguese conflicts* at revision 1370627478, § Later conflicts, for
+   Matelief's siege and *"The small Portuguese garrison, under the command of
+   André Furtado de Mendonça"*, and the same article's close: the 1641 siege
+   ended *"nearly 130 years of official Portuguese presence in the region"*,
+   which counts back to 1511.
+4. `capture-of-malacca-1511 --precondition-of--> siege-of-malacca-1640-1641`
+   — crosses. The cleanest of the four: *Siege of Malacca (1640–1641)* at
+   revision 1370743206, the revision that record already cites, opens *"against
+   Portuguese Malacca"* and its § Background says *"It was conquered by the
+   Portuguese Empire in 1511."*
+
+**Edges 2, 3 and 4 are three records of one argument** — one per siege of the
+city the conquest created — and each explanation says so, in its own text, so a
+reader does not read three independent findings off them. The largest component
+went 774 → **779**: the three new events plus the Malacca group of three, which
+was a component of its own and is now inside the trunk.
+
+### What was refused, and what was left
+
+**The chronology refusal class (A15(5)) refused two**, both on quotes that state
+an order and no cause:
+
+- `siege-of-malacca-1551 --> siege-of-johor-1587`. The 1587 account gives its own
+  cause and it is not the 1551 siege: *"In 1586 naval forces of Johor began
+  diverting shipping to the Singapore Strait … A large Johor fleet attempted to
+  attack Malacca itself"*, and the captain of Malacca asked Goa for men *"to deal
+  with the threat"*. Thirty-six years and a different provocation; nothing links
+  the two sieges.
+- `siege-of-malacca-1606 --> siege-of-malacca-1640-1641` would have been refused
+  on *"Cornelis Matelief de Jonge began a siege in 1606, but was forced to lift
+  it prematurely. Another siege attempt was launched in 1608"* — a list of prior
+  attempts. **It already exists**, written by an earlier fire, and nothing was
+  done to it: a batch does not retract another fire's edge on its own reading.
+
+**The mechanical-match trap deviation 1386 describes caught one and it was
+dropped**: the *Siege of Malacca (1551)* article names `italian-wars`, which the
+atlas holds — *"among whom there were a number of veterans from the Italian
+Wars"*. That is where soldiers came from, not why a siege happened.
+
+**Seven of the umbrella's nine `P361` children were left, and A15(1) asks for
+the count**: `Q55633157` *Siege of Johor (1587)*, at 5 sitelinks and dated,
+which is the one worth a later fire — it was left only because **no cited
+sentence joins it to anything the atlas holds**, its own article giving the 1586
+shipping diversion as its cause and the atlas holding no record of that. The
+other six are `Q116214216` *Battle of Ugentana*, `Q118900813` *Attack on
+Bintan*, `Q127868092` *Battle of Johor*, `Q127868126` *Battle of Malacca*,
+`Q130520296` *Siege of Campar* and `Q136213515` *Battle of Malacca*, all at one
+or two sitelinks and **none carrying `P580` or `P585` at all**, so there is no
+date to write and nothing to widen from.
+
+**The umbrella is degree-zero and was left so on purpose.** Its article's
+§ Background runs from Vasco da Gama's 1498 landfall and King Manuel's wish to
+reach the Indian Ocean trade — neither of which the atlas holds — and it does
+not name Tordesillas. The Tordesillas edge was written to the **capture**, where
+the sentence is, and not to the series, where it is not. `noEdge` therefore went
+303 → 304. Writing an edge the series' own article does not carry, to take that
+number back down, is the thing deviation 1386 refused.
+
+### Deviation 1387 — deviation 1386's red is gone, and no display was touched
+
+The previous stand told this fire to expect `tests/graph-labels-browser.test.mjs`
+red on two of three, with *Dutch–Portuguese War* and *Thirty Years' War* drawn
+over each other, and said the fix was two numbers in a file this lane may not
+change. **At this fire's head the suite is green, 3 of 3**, and it was run alone
+to be sure.
+
+It was not fixed. It **moved**, and the measurement is one worktree:
+
+| the tree | result |
+| --- | --- |
+| `040189944`, this fire's first merge, before batch 64 | **red**, 2 of 3 — the same pair |
+| this fire's head, batch 64 and the second merge | **green**, 3 of 3 |
+
+Nothing under `src/` changed between the two; `SLACK` in
+`src/graph-view/label-fit.js` is still 1.1. What changed is the corpus: three
+events, one of them a main event in the **asia** band. The graph's y is bands
+and a barycentre pass (`src/graph-view/layout.js`), so a main event added
+anywhere moves every barycentre that reaches it, and the two names that were
+touching are no longer in the same place. **That is the honest reading of
+deviation 1386 and it makes it worse, not better**: the defect is that the
+placer's box and the rendered rectangle disagree about an en dash and an
+apostrophe, and whether it shows is an accident of which records the atlas
+happens to hold this hour. It will come back. **It is still lane A's**, and the
+next fire should not read a green suite as the defect being gone.
+
+### Deviation 1388 — the check is red on M42's deviation 1521, read and not re-diagnosed
+
+`tests/m65-browser.test.mjs` → *"choosing an event narrows all three views to it,
+its parts, its parent and one hop"* fails at this head with `map left out
+estado-novo-1933-1974`. **It is not this lane's and it is already measured**:
+`docs/m42-pool.md` → deviation 1521 has it in full — the test picks its subject
+in corpus order, M42's batch 80 put `12-3-incident` first, its parent is in
+Lisbon and the incident in Macau, and the page's `frameCamera` in
+`src/map/map.js` frames the lens without the parent the lens keeps. M42 measured
+the record, the index, the filter and `camera.js`'s arithmetic all sound. The fix
+is a display change neither records lane may make. It arrived here through this
+fire's merge of `origin/m42`, which is the merge STEP 1 requires. **Nothing was
+done to it beyond reading the failure**, which is what the brief asks when the
+check is red.
+
+### Deviation 1389 — `origin/m42` was merged twice in one fire, and the second merge is why
+
+STEP 1 says to merge `origin/m42` **once a fire**. This fire merged it twice and
+the second was not optional. The first merge brought M42's batches 80 and 81,
+among them `camp-david-accords`, which names neither an actor nor a place and is
+filed under `arab-israeli-conflict` — and **`tests/m67.test.mjs` went red on it**,
+because M67 A1 wants a section in `docs/m67-umbrellas.md` arguing such a record
+and M42 had not pushed it yet when the merge was taken. Writing that section here
+would be this lane writing M42's argument for M42's record. Re-fetching found M42
+had pushed it four commits later, so the second merge brought it and the test went
+green. **The rule for the next fire**: when a merge of the other lane leaves a
+test red on the other lane's own record, re-fetch that lane before writing
+anything — the lane that owns the record is usually minutes behind, not wrong.
+
+### What this fire did not do
+
+- **Did not refile the held Malacca records under the new umbrella**, and the
+  question is left open with the quote in hand. The *Malay–Portuguese conflicts*
+  article's § Later conflicts contains **Siege of Malacca 1606** and **Siege of
+  Malacca 1641** as sections of its own, so A8's "every umbrella whose span and
+  subject fit" has a real case for giving `siege-of-malacca-1606`,
+  `battle-of-cape-rachado` and `siege-of-malacca-1640-1641` a second parent. It
+  was not taken here for two reasons and the second is the honest one: those two
+  sieges were Dutch-led, with Johor as an ally, so whether a *Malay*–Portuguese
+  series contains them is an editorial call that deserves its own section rather
+  than a line inside an import batch; **and refiling them would take the
+  crossing-an-umbrella count down**, because edges 3 and 4 cross only while the
+  two ends have no parent in common. A pass that refiles them should expect 603
+  → 601 and should not read that as a loss.
+- **Did not widen `capture-of-malacca-1511`'s interval.** The item gives
+  1511-07-25 to 1511-08-15; the *umbrella's* article says the operation *"lasted
+  two months from July 1 to September 1"*. A7 widens from **the record's own**
+  cited article, and the record's own lead gives only the year, so the item's
+  dates stand. A fire that wants to widen it should cite the capture's own
+  article, not the series'.
+
+## Where the run stands, for the fire that picks it up
+
+*1 October, after the fifty-seventh fire: **two merges** of `origin/m42` and **one
+batch** — 64, which opened **asia's 16th century from zero to three** with the
+series its own `P361` chain names, and wrote **four edges, three of them crossing
+an umbrella**, taking the largest component 774 → 779. **Three things the next
+fire must know**: the main count rose by one and the batch section says why;
+**deviation 1386's red is gone and deviation 1387 says it only moved**; and the
+check is red on one browser test which is **M42's deviation 1521**, not this
+lane's and not to be re-diagnosed.*
+
+| | before 64 | after 64 |
+| --- | --- | --- |
+| active events | 1388 | **1391** |
+| main | 230 | **231** |
+| largest connected component | 774 | **779** |
+| components | 397 | **397** |
+| events with no edge | 303 | **304** |
+| **edges crossing an umbrella** | 600 | **603** |
+| edges inside one umbrella | 598 | **599** |
+| active edges | 1198 | **1202** |
+
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 7 / 5 | 11 / 7 |
+| 16th c. | 45 / 2 | 7 / 0 | **3 / 1** | 49 / 3 | 104 / 6 |
+| 17th c. | 109 / 3 | 7 / 0 | 4 / 0 | 70 / 7 | 190 / 10 |
+| 18th c. | 62 / 3 | 14 / 0 | 19 / 0 | 79 / 2 | 174 / 5 |
+| 19th c. | 39 / 9 | 28 / 1 | 8 / 6 | 61 / 8 | 136 / 24 |
+| 20th c. | 245 / 60 | 90 / 23 | 158 / 37 | 91 / 30 | 584 / 150 |
+| 21st c. | 52 / 7 | 76 / 7 | 28 / 14 | 36 / 1 | 192 / 29 |
+| **all** | **556 / 86** | **222 / 31** | **220 / 58** | **393 / 56** | **1391 / 231** |
+
+**Africa and Asia stand at 222 and 220 against A10's 303**, so A15(1)'s pause
+holds and nothing of Europe before 1900 is this lane's to import.
+
+*Four commits: the claim, the first `origin/m42` merge, batch 64's records and
+caches, the second `origin/m42` merge with the index rebuilt on it, and this
+stand with the batch section above it. `validate --index` is clean at **0 errors,
+598 warnings**. A15(2) reports **0 revisions that should be on disk and are not**,
+2,860 of 2,938 citations on disk at the revision cited and 78 unholdable beside a
+more-cited revision of the same item; the recache also filled the two leads M42's
+batch 81 owed, which arrived through the merge.*
+
+*The suite, measured at this head and run the way the check runs it: **1,940 pure
+tests, 1,940 passed, 0 failed, 0 skipped**, and **313 browser tests across the 40
+suites, 312 passed, 1 failed, 0 skipped**. The one is deviation 1388 above, which
+is M42's 1521. At the head before the second merge the pure pass had one failure,
+`tests/m67.test.mjs` on M42's `camp-david-accords`; deviation 1389 says what that
+was and what the next fire should do about it.*
+
+### The next fire's moves, in order
+
+1. **Do not re-diagnose deviation 1521** (deviation 1388 above). The check is red
+   on one browser test, the records are sound, and the fix is a display change in
+   `src/map/map.js` that neither records lane may make. If lane A has since fixed
+   `frameCamera`, merging `origin/m0` takes the red with it.
+2. **Do not read `tests/graph-labels-browser.test.mjs` being green as a fix**
+   (deviation 1387). It is green at this head because batch 64's three records
+   moved a barycentre, not because the box arithmetic in
+   `src/graph-view/label-fit.js` was corrected. It will come back, on whichever
+   pair of names the next main event happens to put together.
+3. **Asia's 15th and 17th centuries are now the trailing cells — 0 and 4** —
+   africa's 16th and 17th standing at 7 each. Two veins are in hand for asia and
+   both have a handhold the atlas now holds:
+   - **The Siege of Johor (1587)**, `Q55633157`, 5 sitelinks, dated 1587-07 to
+     1587-08, `P625` of its own at 1.4872, 103.7811. It was left by batch 64 only
+     for want of a cited edge; it is already the ninth child of a **held**
+     umbrella, so filing it costs no main event. Its own article gives the 1586
+     Johor shipping diversion as its cause and the atlas holds no record of that
+     — so the fire that takes it should either import that too or accept it as a
+     filed record with no edge and say so against A5.
+   - **The Ottoman–Portuguese conflicts of 1538–1559** — Diu, Aden, Hormuz —
+     which the previous stand named and this fire did not reach. The handhold has
+     improved: `malay-portuguese-conflicts` is now a held Asian series and
+     `capture-of-malacca-1511` names *"Hormuz, Goa, and Aden"* in its own lead as
+     the other pillars of Albuquerque's project.
+4. **The refiling question batch 64 left open** is the cheapest real work in this
+   partition and needs no network: the *Malay–Portuguese conflicts* article at
+   revision 1370627478 carries **Siege of Malacca 1606** and **Siege of Malacca
+   1641** as sections of its own, which is A8's case for a second parent on
+   `siege-of-malacca-1606`, `battle-of-cape-rachado` and
+   `siege-of-malacca-1640-1641`. Read batch 64's "What this fire did not do"
+   first: it is an editorial call, and taking it **lowers** the
+   crossing-an-umbrella count from 603 to about 601, which is not a loss.
+5. **The two cheap edge passes deviation 1385 measured are still unspent** and
+   are still the best value per call in this partition:
+   - `battle-of-cajamarca` into its own siblings — the opening act of a chain of
+     eight it is not joined to; A14 does not bar it, they are siblings.
+   - **The Italian Wars' nine children to each other**, with one quote already in
+     hand from batch 63's section: *Italian War of 1542–1546*, rev 1370624570,
+     § Prelude — *"The war arose from the failure of the Truce of Nice, which
+     ended the Italian War of 1536–1538 …"*, which is
+     `italian-war-of-1536-1538 --precondition-of--> italian-war-of-1542-1546`.
+6. **Africa's 16th century still has the two candidates batch 63 counted**:
+   `Q108542187` *Algiers Expedition (1519)* and `Q2293284` *Battle of Alborán*,
+   both at nine sitelinks, both with a held umbrella and a held neighbour chain.
+7. **Deviation 1380 is a rule and it held again on all four edges**: before
+   citing a revision, check what the record at the other end already cites. Two
+   of batch 64's four cite exactly that revision and cost no fetch.
+8. **Batch 60's rule held too**: check `data/edges/<from>--<to>--<type>.json` for
+   all five types before fetching anything. It is how batch 64 found that
+   `siege-of-malacca-1606--siege-of-malacca-1640-1641--precondition-of` already
+   existed and left it alone.
+9. **Deviation 1389 is a new rule**: when a merge of `origin/m42` leaves a test
+   red on M42's own record, re-fetch `origin/m42` before writing anything. That
+   lane is usually minutes behind, not wrong, and writing its argument for it is
+   not this lane's to do.
+10. **Rate limits are real on this egress and were not last fire.** The action
+   and entity APIs returned 429 on roughly half of this fire's hand fetches with
+   the import's own user agent, and the backoff had to go to 25 seconds. The
+   import tool itself was never refused — 8 calls, 3 records, 6 leads, no denial
+   — which matches batch 63's observation. A fire doing much hand reading should
+   prefer `index.php?...&action=raw` with an `oldid`, which was never rate-limited
+   here and gives the whole article at the exact revision.
+11. **Do not re-measure the century convention** (deviation 1378): a record is
+   filed by the century of its **start** year, every active event counted, so the
+   rows and columns sum to 1,391.
+12. **Check a new deviation number against `docs/m42-pool.md` before using it.**
+   M42 is at **1521** and this lane at **1389**, so every number this lane takes
+   lies inside a range M42 has already spent. 1387, 1388 and 1389 were checked
+   and were free. One `grep -c "Deviation <n>" docs/m42-pool.md` is the check.
+13. **The three questions to the owner are unchanged**: the main count (now with
+   batch 64 as a second worked case of raising it by one, after deviation 1384);
+   **C8**; and **A15(1)**. Do not spend a fire re-establishing the balance.
+14. **Still open, unchanged**: C8, deviations 1323, 1345, 1346's ocean islands,
+   1348's lane guard, 1353, 1358, 1361, 1362, 1365, 1366, 1377, 1383, 1386,
+   question 11 (the Nine Years' War, `Q152218`), question 12, `Q718893`,
+   `Q20639061`, `Q5037062`, `Q4677270`, `Q4677390`, the nine atlas umbrellas with
+   no `wikidata`, the Gulf Coast campaign umbrella (`Q5617470`), the Angolan Wars
+   umbrella (`Q132776772`), batch 48's Chilean four, the Almagrista eight and
+   their missing decree, batch 52's three 16th-century refusals, `Q1226252` *tied
+   island* in the class table, `arauco-war`'s interval, `Q3051491` *Capture of
+   Valdivia*, the place pass on records that already exist (M42's),
+   `capture-of-luanda`'s `wikipedia.en` redirecting to *Dutch Loango-Angola*, and
+   `Q2915203` *Ethiopian–Adal War*, read and refused twice for naming no event
+   this atlas holds.
