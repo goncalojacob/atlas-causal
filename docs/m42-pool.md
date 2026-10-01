@@ -22204,17 +22204,19 @@ and goes looking for row 1,009 will not find one.** What it needs is a new
 question, and the rest of this stand is what a fire has to answer it with.
 
 **What the vein cost and paid, now that it is whole:** 1,008 rows, ~1,000
-articles read over five fires, **7 records and 7 edges**: two in batches 82 and 83, three in 84 and 85,
-two here. One import per ~144 articles read. That is the honest rate for *this* question — the `P361` children
+articles read over five fires, **7 records and 7 edges** — two in batches 82
+and 83, three in 84 and 85, two here. One import per ~144 articles read. That
+is the honest rate for *this* question — the `P361` children
 of a held umbrella — and the three measurements inside it disagree usefully: the
 first 170 rows paid two, rows 421 to 920 paid one in 422, and the last 88 paid
 two. **Sitelink count did not predict yield.** What predicted it was whether the
 article has an Aftermath or a Background section that names another held record
 as a subject, which no property on the item exposes.
 
-**Four candidate next questions, in the order a fire should weigh them.** None
-is started and none is measured; each is a fire's own first job to measure
-before it imports.
+**Four candidate next questions, in the order a fire should weigh them.**
+**The second is measured — this fire measured it, and the section above is the
+answer.** The other three are not started and not measured; each is a fire's
+own first job to measure before it imports.
 
 1. **The inverse of this vein: `P361` *parents* the atlas does not hold, of
    items it does.** Every held event's own `P361` that is not a held record is a
