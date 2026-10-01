@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-mozambique-1607",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q121433548",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Siege of Mozambique (1607)",
+    "pt": "Cerco de Moçambique (1607)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q121433548"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Mozambique (1607)\", revision 1370743723"
+    }
+  ],
+  "title": "Siege of Mozambique (1607)",
+  "summary": "The English Wikipedia article \"Siege of Mozambique (1607)\", at revision 1370743723, opens: \"The 1607 Siege of Mozambique was an armed encounter between the forces of the Portuguese Empire and those of the Dutch East India Company or VOC, who attempted to capture the Portuguese Fort São Sebastião on the island of Mozambique. After a six-month campaign, the Dutch withdrew.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q121433548, imported by tools/import/wikidata.mjs. The item's own description reads \"1607 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1607,
+    "end": 1607,
+    "date": "1607-03-29",
+    "endDate": "1607-08-20"
+  },
+  "place": "island-of-mozambique",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}
