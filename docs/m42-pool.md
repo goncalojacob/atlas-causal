@@ -21413,3 +21413,162 @@ row 101.***
 - **The class-row vein is closed** (deviation 1519).
 - **Deviation numbers: take the next above 1522.** `m42b` was at 1377 on
   1 October.
+
+## Batch 83 — the Russian invasion of Manchuria, and the first witness whose subject is the record
+
+Rows **101 to 170** of `docs/m42-umbrella-children.md` were screened after batch
+82 was pushed — 70 more rows — and **one passes**: row 122, `Q2177009`. With the
+hundred before it the fire's rate is **two imports in 170 rows read**.
+
+### What was written
+
+| | |
+| --- | --- |
+| `russian-invasion-of-manchuria` | `Q2177009`, 1900-06 to 1900-11, category `war`, **place `manchuria`** (a record the atlas already held), lane `asia` from that place |
+| filed | under `boxer-rebellion`, **by the import itself**, from the item's own `P361` `Q150229`; **main 229 before and after** |
+
+This one needed nothing said about a missing place: `Q2177009`'s `P276` is
+`Q81126`, Manchuria, which this atlas holds as a place record, so A9 reused it
+and the lane came from its point rather than from a note. It is therefore the
+first record of this vein with a place as well as a lane, and
+`docs/m67-umbrellas.md` owes it nothing.
+
+### The edge
+
+> The invasion concluded with the full occupation of Manchuria by Russia,
+> causing tensions that led to the Russo-Japanese War.
+
+| edge | type | confidence | witness |
+| --- | --- | --- | --- |
+| `russian-invasion-of-manchuria --> russo-japanese-war` | `precondition-of` | `probable` | "Russian invasion of Manchuria", rev 1370729162, lead |
+
+**The subject is the invasion**, which is what 168 of these 170 rows could not
+manage: the hits this vein produces are nearly always about a candidate's parts,
+its third parties or its commemorations. `precondition-of` and not `caused`
+because the article puts a step between the two — the invasion caused tensions,
+the tensions led to the war.
+
+The lead's other candidate was refused and the edge record says so: *"occurred in
+the aftermath of the First Sino-Japanese War (1894–1895) when concerns regarding
+Qing China's defeat … caused the Russian Empire to speed up its long-held
+designs"*. Its subject is the concerns, so an edge from `first-sino-japanese-war`
+would attribute to that war what the article attributes to anxiety about its
+outcome.
+
+`russo-japanese-war` is in the largest component and the edge **crosses an
+umbrella** — the invasion is filed under `boxer-rebellion`, the war is filed
+elsewhere — so both numbers moved again.
+
+### One new warning, left standing on purpose
+
+`span-vs-lead-sentence` on `events/russian-invasion-of-manchuria.json`: *"the
+first sentence of the cached en lead states 1894–1895 and the record is dated
+1900"*. **It is a false positive**, and the honest thing is to leave it rather
+than silence it: the 1894–1895 in that sentence is the First Sino-Japanese War's
+years, not this record's. The record keeps the item's own 1900-06 to 1900-11, the
+article title carries no years, so A15(4) has nothing to correct it with, and a
+reviewer meets the warning on `review.html` with the sentence in front of them.
+Warnings are 602 and not 601 for this reason alone.
+
+### The nine other rows of 101 to 170 that had a hit, and why none is an edge
+
+| item | its hit, and the reading |
+| --- | --- |
+| `Q705165` Bombing of Chongqing | *"In response to the Japanese invasion of French Indochina, the Empire of Japan was finally met with the U.S. scrap metal and oil embargo"* — names **batch 82's own record**, which is the corpus getting denser, but the subject is the embargo |
+| `Q3267629` Operation Badr (1985) | both hits match `operation-badr-1973`, a **homonym**: the article means the 1985 operation throughout. Deviation 1480's guard has no years to separate them on here |
+| `Q131842850` Iron Wall (Israeli military operation) | *"marks the biggest displacement of civilians in the West Bank since the Six-Day War"* — a comparison, not a cause |
+| `Q699096` Battle of Guningtou | a veteran of `second-sino-japanese-war` executed for collaboration |
+| `Q6067801` Anbar campaign | the American media comparing an attack to `battle-of-mogadishu-1993` |
+| `Q136001786`, `Q133287207`, `Q125273168` | three 2024–2025 strike and aid-convoy records whose hits are third parties' reactions |
+| `Q1149113` Operation Kaman 99 | the hit is about the Iran–Iraq War, its own parent |
+
+### Counts after batch 83
+
+- active events **1,382** (was 1,381); **main 229** — unchanged; filed 1,153.
+- per lane, active / main: Europe 555/85, Americas 393/56, **Asia 219/57** (+1),
+  **Africa 215/31** (unchanged).
+- active edges **1,189** (was 1,188), all between two active events.
+- components **400** (unchanged); **largest connected component 772** (was 771).
+- **edges crossing an umbrella (A15(11)): 596** (was 595), inside one 593.
+- active events with no edge at all: **307** (unchanged).
+- validator **0 errors, 602 warnings** (the one above), and `--index` clean.
+- A15(2)'s recache: **2,904** `wikipedia-en` citations on active records,
+  **2,826** on disk at the revision cited, **0 that should be on disk and are
+  not.**
+
+## Where the run stands after batches 82 and 83, for the fire that picks it up
+
+*1 October, the import fire that claimed at 16:07Z — the longest single fire on
+this lane so far. It measured the supply (deviation 1522), screened **170 rows**
+of it and wrote **two** records and two edges, both Asia, both filed by the
+import itself. **Start at row 171.** Two earlier stands in this fire are
+superseded by this one.*
+
+**What is open, in the order a fire should weigh it:**
+
+- **The write and the network are both open.** Deviations 1516 and 1518 are over.
+- **`docs/m42-umbrella-children.md` is the vein; rows 1 to 170 are screened;
+  start at row 171.** 1,008 rows past the class, date, article and filing gates,
+  in Africa and Asia, each naming its held umbrella. **Budget about one import
+  per 85 rows read** — this fire's measured rate, and far worse than any earlier
+  stand's guess. Read the item's article with its own `P361` parents **excluded**
+  from the held-event match, because an edge to those is what A14 forbids.
+- **The one thing that distinguishes a writable row**, now that 170 have been
+  read: a sentence whose **subject is the candidate itself** and whose effect is
+  a held record that is not its parent. Batch 83 has exactly that; batch 82 has
+  it one remove away (the subject is the occupation its invasion began, which the
+  edge's `explanation` states). Everything else this vein offers is a
+  candidate's parts, its third parties, its commemorations and its comparisons.
+- **Two owner questions are the binding constraint.** (a) **C8**, the
+  parent-to-child edge: 17 children of two umbrellas were refused this fire
+  because the only relation their articles state is their membership of the
+  umbrella, and that is the shape of most of the 1,008. (b) **A6's lane rule
+  against the period umbrellas**, which refuses a child dated outside its
+  umbrella — 9 of the top 30 — and which is all that stands between the atlas
+  and the **Mahdist War's `fashoda-incident` edge**, found whole and an Africa
+  row. Either one, settled, is worth more than any number of fires at the
+  current rate.
+- **Africa still has not moved, and the vein says why.** Its rows sit inside
+  their umbrellas' years but are nearly all one-sitelink massacre and operation
+  articles. Both large Africa rows anywhere — `Q476855` Mau Mau and `Q31944` the
+  Mahdist War — are refused on the span gate alone. **Africa 215/31 is where it
+  was on 30 September.**
+- **Two judgements in these batches a person might reverse**, both stated in the
+  records themselves: batch 82's edge rests on reading an article's Aftermath
+  section as describing the consequences of the thing the article is about (its
+  `explanation` says to retract rather than re-point), and batch 83's record
+  carries a `span-vs-lead-sentence` warning that is a false positive and was
+  left standing.
+- **`Q856650`, the Iraqi invasion of Kuwait, carries `P580` = `+2009-08-02`**
+  beside a 1990 end — A15(4)'s own case. It fails only on the edge.
+- **The candidates sweep (A2) overwrites a ticked file.** `--candidates` writes
+  `docs/wikidata-candidates.md`, which carries M41a's 150 ticks and is an
+  *input*. Pass `--to` a scratch path.
+- **Do not re-screen**: rows 1 to 170 of the vein file; the 17 children of
+  `arab-spring` and `afghan-conflict` under deviation 1522; `Q87138`, `Q29269`,
+  `Q185729`, `Q2659185`, `Q276172`; `scramble-for-africa`,
+  `decolonisation-of-africa`, `decolonisation-of-asia`, `indochina-wars`.
+- **Three identity fills are still waiting for a curation fire, not a batch.**
+  `east-timor-invasion-1975` is `Q2583734`, `spanish-american-war-1898` is
+  `Q12583`, `cuban-war-of-independence-1895-1898` is `Q1514908`; the East Timor
+  record needs A7 in the same pass.
+- **The branch's check is red on one browser test, and this fire confirmed it is
+  deviation 1521 and nothing of these batches':** `tests/m65-browser.test.mjs` →
+  *"choosing an event narrows all three views to it, its parts, its parent and
+  one hop"*, `map left out estado-novo-1933-1974`, reproduced locally after both
+  batches, with the browser suite at **312 of 313** and the pure suite green.
+  Neither record this fire wrote can have changed that test's subject — it picks
+  the first active non-main event **with a place**, and batch 82's record has
+  none while batch 83's sorts far later. The fix is a display change in
+  `src/map/map.js`, which this run may not make.
+- **Unchanged and still the owner's:** `Q8683`, the Cold War; the two Camp David
+  records' `americas` lane and the place classes that would place them;
+  deviations 1517 and 1512, together; may a run identify an event named by
+  description where only one held record can be meant (five refusals);
+  deviation 1474's items; the placeless events, now 63; deviations 1423, 1461,
+  1473, 1478, 1482, 1506, 1508 and 1511; A11's area clause; A15(12)'s
+  uncategorised events; the EEC's closing year; `origin/m42b`'s place placeholder
+  summaries; and C8.
+- **The class-row vein is closed** (deviation 1519).
+- **Deviation numbers: take the next above 1522.** `m42b` was at 1377 on
+  1 October.

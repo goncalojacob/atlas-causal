@@ -30,11 +30,11 @@ has cleared **the edge** (A5, A15(1)), and none has cleared the **span gate** â€
 a child dated outside its umbrella's own years is A6's open question, which is
 the owner's and not a fire's, and the two largest rows of the earlier vein
 (`Q476855` the Mau Mau rebellion, `Q31944` the Mahdist War) are refused on
-exactly that. The fire that measured this screened **rows 1 to 100** against both: rows 1 to
-30 produced nothing and rows 31 to 100 produced **one** record, row 32,
-`Q140025`, written as batch 82. **One import in a hundred rows read** is the rate
-to budget for, and `docs/m42-pool.md` carries the reading of every refusal under
-*Deviation 1522* and *Batch 82*. **A later fire starts at row 101.**
+exactly that. The fire that measured this screened **rows 1 to 170** against both and wrote
+**two** records: row 32, `Q140025`, as batch 82, and row 122, `Q2177009`, as
+batch 83. **About one import per 85 rows read** is the rate to budget for, and
+`docs/m42-pool.md` carries the reading of every refusal under *Deviation 1522*,
+*Batch 82* and *Batch 83*. **A later fire starts at row 171.**
 
 So this is a list to work, not a list to import. The rate to budget for is the
 one the 1 October stands already name: the edge kills most of them.
