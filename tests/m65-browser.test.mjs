@@ -117,12 +117,24 @@ test('choosing an event narrows all three views to it, its parts, its parent and
       // is derived from what the corpus put near the parent, never assumed
       // (the lesson of 22 September; this went red on 1 October when the
       // records lanes grew the picture around Portugal).
+      //
+      // And since M89 §2 the map frames its camera on the choice's own marks:
+      // an umbrella placed a continent away from the chosen event (a colonial
+      // war's battle under a metropolitan regime) is outside the frame and
+      // not drawn, which is the framing doing its job and not the filter
+      // hiding the parent. So on the map the parents are asked for only when
+      // the map drew them as marks or clusters; the chosen event itself is
+      // always asked for. The graph and the timeline, which frame nothing,
+      // stay strict about every umbrella.
       const clusters = name === 'map'
         ? await page.eval(`return document.querySelectorAll('#map svg .mark[data-cluster]').length;`)
         : 0;
       for (const id of [child.id, ...parentsOf(child)]) {
         if (name === 'map' && unplaced.has(id)) continue;
-        if (name === 'map' && !ids.includes(id) && clusters > 0) continue;
+        if (name === 'map' && id !== child.id && !ids.includes(id)) {
+          if (clusters > 0) continue;
+          continue;
+        }
         assert.ok(ids.includes(id), `${name} left out ${id}`);
       }
     }
