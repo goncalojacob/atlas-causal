@@ -434,3 +434,60 @@ half.** It runs 1940–1944 (A14(1) widened it from its own lead the same day),
 which straddles the boundary: rule 24 refuses it inside the extermination
 record and 1944 puts it outside the persecution record. The war contains it and
 the two halves do not, which is the honest filing and not a convenience.
+
+## Curation 1 October 2026 — ten filings, and the half of the corpus the screen had never looked at
+
+The 30 September fire read the **202 main events** that carry an item for
+`P361`. This one read **all 1,238 events that carry one**, because an event
+already filed can still be filed under a *nearer* umbrella, and nothing had
+ever asked. 52 candidates came out of `filedUnder()`; **37 of them were the
+grandparent of a parent the record already holds** — a reduction `filedUnder()`
+cannot make, because it reduces among the umbrellas it chooses and is handed
+nothing about the ones the record carries. That is right at import time, where
+a new record has no parents, and wrong on a held one.
+
+**Where the nearer umbrella arrives, the farther one comes off**, which is
+deviation 1316's rule: a parent reached through another is not a second
+umbrella.
+
+| record | now part of | and no longer | why |
+| --- | --- | --- | --- |
+| `2011-military-intervention-in-libya` | `libyan-civil-war` | `arab-spring` | The item's `P361` names the civil war, whose span contains the intervention; the civil war is itself filed under the Arab Spring. |
+| `battle-of-mogadishu-1993` | `operation-gothic-serpent` | `somali-civil-war` | The battle is the action that ended the operation, and the operation is filed under the civil war. |
+| `battle-of-nam-river` | `battle-of-the-pusan-perimeter` | `korean-war` | August–September 1950 on the Naktong is the perimeter, which is filed under the war. |
+| `battle-of-pavia` | `italian-campaign-of-1524-1525` | `italian-war-of-1521-1526` | Pavia closed the campaign, and the campaign is filed under the war. |
+| `valtellina-war` | `bundner-wirren` | `thirty-years-war` | The Valtellina war is one part of the Grisons troubles, which are filed under the Thirty Years' War. |
+| `guinea-bissau-war-of-independence` | `portuguese-colonial-war-1961-1974` | `decolonisation-of-africa` | One of the colonial war's three theatres; the colonial war is filed under the decolonisation. |
+| `mozambican-war-of-independence` | `portuguese-colonial-war-1961-1974` | `decolonisation-of-africa` | The same, for the second of the three. |
+| `operation-green-sea` | `guinea-bissau-war-of-independence` | `portuguese-colonial-war-1961-1974` | Not a filing of its own: filing the Guinea-Bissau war under the colonial war made this record's two parents nest, one step down. |
+
+**And three that gained a second umbrella rather than a nearer one**, where
+neither reaches the other and A8's "every umbrella that fits" means both:
+
+| record | parents now | why |
+| --- | --- | --- |
+| `finnish-civil-war` | `russian-civil-war`, `world-war-i` | The item's `P361` names the First World War, whose span (to 11 November 1918) contains the civil war's (27 January – 15 May 1918). Neither umbrella is inside the other. |
+| `goa-annexed-1961` | `estado-novo-1933-1974`, `portuguese-colonial-war-1961-1974` | The item's `P361` names the colonial war and December 1961 is inside it. Whether Goa belongs beside the three African theatres is a reviewer's question; this filing is the item's claim and not a reading. |
+| `second-battle-of-guararapes` | `dutch-brazil-1630-1654`, `insurrection-of-pernambuco` | The item's `P361` names the insurrection, whose span contains 1649. The insurrection and Dutch Brazil are siblings under the Dutch–Portuguese war and neither reaches the other. |
+
+**`a filing propagates one step down`, which is this fire's finding here.**
+Filing `guinea-bissau-war-of-independence` under the colonial war did not touch
+`operation-green-sea`, and it made that record's own parent list redundant all
+the same. `tests/m42-filing.test.mjs` caught it on the very next run. A pass
+that files a record has to re-ask the question of everything beneath it.
+
+**Refused: `iberian-pact` under `world-war-ii`.** The item's `P361` names the
+war and rule 24's year arithmetic contains it — 1939 inside 1939–1945 — but the
+pact was signed on **17 March 1939** and the war began on 1 September. The
+record already carries `interwar-period`, which is where that March belongs.
+The containment a filing needs is the one the dates state and not the one the
+years allow.
+
+**And the four A6 lane-rule filings are unchanged and still the owner's**:
+`2011-yemeni-revolution` under `arab-spring`, and `rif-war`,
+`second-italo-ethiopian-war` and `soviet-japanese-border-conflicts` under
+`interwar-period`. `tests/m42-filing.test.mjs` refuses each — a period umbrella
+names no actor, so it can only take children in its own lane — and the question
+of what a period's lane should be is the line the 30 September fire left.
+
+**Main is 229 before and 229 after.** It has not risen.
