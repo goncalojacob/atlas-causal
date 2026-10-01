@@ -19873,10 +19873,13 @@ assertion that ever failed was the stale-index one, which is deviation 798's
 order doing its job — records committed, then the index rebuilt, then the index
 committed.
 
-**The check is green on this fire's head**: run **2218** of `validate.yml`,
-commit `9e7efc11`, conclusion **`success`**. Runs 2216 and 2217 were cancelled by
-the next push, which is deviation 1258's chain and costs nothing. Run 2215, on
-the merge of `origin/m0`, was green too.
+**The check is green on this fire's head, twice over.** Run **2218** of
+`validate.yml`, commit `9e7efc11` — the head carrying all three batches, their
+caches and their index — conclusion **`success`**; and run **2223**, commit
+`4a65ce23`, the final docs head, **`success`** as well. Run **2215**, on the merge
+of `origin/m0`, was green too. Runs 2216, 2217 and 2222 were cancelled by the
+next push, which is deviation 1258's chain and costs nothing: **three of the
+seven runs this fire started were cancellations and none of them is a fault.**
 
 ## Where the run stands after batches 77, 78 and 79, for the fire that picks it up
 
