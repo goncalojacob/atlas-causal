@@ -66,10 +66,7 @@
   "place": "cambodia-q424",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": [
-    "indochina-wars",
-    "third-indochina-war"
-  ],
+  "parent": "third-indochina-war",
   "category": "war",
   "actors": [
     {
