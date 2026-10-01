@@ -39685,6 +39685,71 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "siege-of-mozambique-1607",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Mozambique (1607)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "siege-of-mozambique-1608",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Mozambique (1608)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "siege-of-namur-1746",

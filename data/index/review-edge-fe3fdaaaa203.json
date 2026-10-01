@@ -26136,6 +26136,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "from": "siege-of-mozambique-1607",
+      "id": "siege-of-mozambique-1607--siege-of-mozambique-1608--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-66"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "siege-of-mozambique-1608",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "from": "siege-of-namur-1746",
       "id": "siege-of-namur-1746--battle-of-rocoux--precondition-of",

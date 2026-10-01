@@ -1779,6 +1779,24 @@
         }
       ]
     },
+    "siege-of-mozambique-1607": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "siege-of-mozambique-1608": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "siege-of-nuremberg": {
       "from": "git",
       "versions": [

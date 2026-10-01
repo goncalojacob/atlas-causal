@@ -7376,6 +7376,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-mozambique-1607--siege-of-mozambique-1608--reacted-to",
+      "kind": "edge",
+      "locator": "\"Siege of Mozambique (1607)\", revision 1370743723"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mozambique-1607--siege-of-mozambique-1608--reacted-to",
+      "kind": "edge",
+      "locator": "\"Siege of Mozambique (1608)\", revision 1370743726"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-namur-1746--battle-of-rocoux--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Rocoux\", revision 1370587617, § Battle"
@@ -16301,6 +16313,18 @@
       "id": "siege-of-mitu",
       "kind": "event",
       "locator": "\"Siege of Mitú\", revision 1370743579"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mozambique-1607",
+      "kind": "event",
+      "locator": "\"Siege of Mozambique (1607)\", revision 1370743723"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mozambique-1608",
+      "kind": "event",
+      "locator": "\"Siege of Mozambique (1608)\", revision 1370743726"
     },
     {
       "dissent": false,
