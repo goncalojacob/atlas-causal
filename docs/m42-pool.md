@@ -20097,6 +20097,37 @@ that whether the atlas holds one is **the owner's decision and not a filing's**.
 It is noted here only so that a later fire does not mistake it for a gap it may
 close on its own.
 
+### Three of the 53 are records the atlas already holds, so the figure is 50
+
+The 53 were then screened against the held corpus, because an item ticked `done`
+with no record carrying its id may still be an **event** the atlas holds under a
+record that never got the identifier. An exact fold of the names finds **none** —
+and that is the trap, because the one case batch 80 found by accident
+(`Q2583734`) is held under a paraphrase. On a stemmed token overlap of 0.6 or
+better against every active event's title, `wikipedia.en` and `names`, **four
+items match and three of them are duplicates:**
+
+| item | article | held as | the held record's `wikidata` |
+| --- | --- | --- | --- |
+| `Q12583` | Spanish-American War | `spanish-american-war-1898` (*"The Spanish-American War"*) | **absent** |
+| `Q1514908` | Cuban War of Independence | `cuban-war-of-independence-1895-1898` | **absent** |
+| `Q2583734` | Indonesian invasion of East Timor | `east-timor-invasion-1975` (*"Indonesia invades East Timor"*) | **absent** |
+| `Q6540361` | Surrender of Japan | `japanese-instrument-of-surrender` | `Q665554` — **a different item** |
+
+All three duplicates are `origin.tool: assistant` records from the 3-4 September
+drafting, which is why they carry no identifier: the import never wrote them and
+the enrichment pass fills a field only on a record whose id it can match. **They
+are identity fills and not imports** — `mergeIdentity` fills an absent field and
+changes nothing — and they belong to a **curation** fire, not to a batch.
+
+`Q6540361` is the one to judge rather than to fill: the surrender of Japan and
+the instrument that recorded it are two items on Wikidata, so the atlas holding
+one is not a reason to refuse the other. It is left in the importable column.
+
+**So the vein is 50 and not 53**, and a fire that works it should run this
+overlap screen before each import rather than trusting the absence of the id.
+Three duplicates in 53 is a rate worth the one command.
+
 ## Batch 80, screened and not written — the 12-3 incident, ready for whoever can write it
 
 A10 puts this fire in **Africa's** lane: before this fire Africa stood at 215
@@ -20278,14 +20309,20 @@ write does not pay for either again.*
   were run against the live corpus. **If it is still refused, say so in one line
   and do not hand-write the record**: an import's records are the tool's to
   write, and a fire that wrote them by hand would be asserting the import ran.
-- **The 53 are the vein now, not the umbrella sweeps.** Deviation 1515's table
-  lists every one of them with its article, so no fire needs to fetch them again.
-  They beat the link sweeps on every measure: the four sweeps of 30 September and
+- **The 50 are the vein now, not the umbrella sweeps.** Deviation 1515's table
+  lists all 53 with its article, so no fire needs to fetch them again, and its
+  last subsection names the **three that are duplicates** of records the atlas
+  already holds — `spanish-american-war-1898`,
+  `cuban-war-of-independence-1895-1898` and `east-timor-invasion-1975`, all three
+  identity fills for a curation fire and not imports. **Fifty are left.** They
+  beat the link sweeps on every measure: the four sweeps of 30 September and
   1 October each read between 136 and 500 links to produce one import, and these
-  53 are items the seeds file already asked for, each with a class the table
+  fifty are items the seeds file already asked for, each with a class the table
   holds and a date the item states. **The screen they still have to pass is the
   edge**, which is where Africa's two and four of Asia's six died this fire, so
-  budget about one import per five or six screened and not one per candidate.
+  budget about one import per five or six screened and not one per candidate —
+  and **run the overlap screen first**, because the absence of the id proves
+  nothing and an exact fold of the names caught none of the three.
 - **109 items are waiting on twelve rows in a data file.** `Q210272` blocks 17 of
   them, `Q46970` 14, `Q15911738` 11, `Q537127` and `Q1248784` 10 each,
   `Q94993988` 9. Adding a class to
@@ -20303,11 +20340,15 @@ write does not pay for either again.*
   a run may date a record from its article's title where the item asserts no date,
   with the Addis Ababa Agreement of 1972 and its two waiting edges. Neither is a
   fire's to decide.
-- **`east-timor-invasion-1975` is a curation job, not an import.** `Q2583734` is
-  the item and the held record carries no `wikidata` at all. The identity rule
-  fills an absent field and never changes one, so the fill is clean — but the held
-  record is dated 1975 alone where the item runs 1975-12-07 to 1979-03-26, so A7
-  belongs in the same pass. **The next curation fire should take both.**
+- **Three identity fills are waiting for a curation fire, not a batch.**
+  `east-timor-invasion-1975` is `Q2583734`, `spanish-american-war-1898` is
+  `Q12583` and `cuban-war-of-independence-1895-1898` is `Q1514908`; all three are
+  `origin.tool: assistant` records from the 3-4 September drafting and all three
+  carry no `wikidata` at all. The identity rule fills an absent field and never
+  changes one, so each fill is clean. **One of them needs A7 in the same pass**:
+  the East Timor record is dated 1975 alone where its item runs 1975-12-07 to
+  1979-03-26. Until they are filled, a batch working the 50 will keep finding
+  them.
 - **`Q8683`, the Cold War, is in the 53 and is still not a fire's to write.**
   Three stands now record that it is an umbrella much of this corpus would fit and
   that no record offers it, and that the decision is the owner's. A fire that
