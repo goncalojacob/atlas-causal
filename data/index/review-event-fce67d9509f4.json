@@ -7782,6 +7782,39 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "battle-of-cancha-rayada-1818",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "chilean-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cancha Rayada (1818)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "battle-of-cap-francais-1793",
@@ -8066,7 +8099,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-chacabuco",
       "kind": "event",
       "origin": {
@@ -11833,6 +11866,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "degree": 2,
+      "id": "battle-of-maipu",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "chilean-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Maipú"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "battle-of-maraycalla",
@@ -14473,6 +14538,39 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "battle-of-salta",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "argentine-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Salta"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "battle-of-san-carlos",
@@ -16613,6 +16711,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 1,
       "id": "battle-of-tucuman",
       "kind": "event",
       "origin": {
@@ -47104,12 +47203,6 @@
     },
     {
       "id": "battle-of-trzciana",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-tucuman",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

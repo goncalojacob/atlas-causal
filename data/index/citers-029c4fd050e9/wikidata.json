@@ -3128,6 +3128,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cancha-rayada-1818",
+      "kind": "event",
+      "locator": "Q333088"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cap-francais-1793",
       "kind": "event",
       "locator": "Q2890742"
@@ -3860,6 +3866,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-maipu",
+      "kind": "event",
+      "locator": "Q1073849"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-maraycalla",
       "kind": "event",
       "locator": "Q3636517"
@@ -4343,6 +4355,12 @@
       "id": "battle-of-salamanca",
       "kind": "event",
       "locator": "Q708580"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-salta",
+      "kind": "event",
+      "locator": "Q592091"
     },
     {
       "dissent": false,

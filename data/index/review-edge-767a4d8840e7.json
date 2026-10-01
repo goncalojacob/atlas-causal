@@ -5107,6 +5107,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "from": "battle-of-cancha-rayada-1818",
+      "id": "battle-of-cancha-rayada-1818--battle-of-maipu--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-59"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-maipu",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
       "from": "battle-of-cape-rachado",
       "id": "battle-of-cape-rachado--siege-of-malacca-1640-1641--enabled",
@@ -5180,6 +5209,35 @@
       "revised": null,
       "status": "active",
       "to": "la-noche-triste",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "battle-of-chacabuco",
+      "id": "battle-of-chacabuco--battle-of-maipu--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-59"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-maipu",
       "type": "precondition-of"
     },
     {
@@ -9023,6 +9081,35 @@
       "status": "active",
       "to": "battle-of-mataquito",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "battle-of-tucuman",
+      "id": "battle-of-tucuman--battle-of-salta--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-59"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-salta",
+      "type": "enabled"
     },
     {
       "authors": [

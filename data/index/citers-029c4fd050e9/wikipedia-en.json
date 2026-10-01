@@ -2294,6 +2294,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cancha-rayada-1818--battle-of-maipu--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Maipú\", revision 1370268820, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cancha-rayada-1818--battle-of-maipu--caused",
+      "kind": "edge",
+      "locator": "\"Chilean War of Independence\", revision 1371212438, § Patria Nueva"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cape-rachado--siege-of-malacca-1640-1641--enabled",
       "kind": "edge",
       "locator": "\"Battle of Cape Rachado\", revision 1370436218"
@@ -2321,6 +2333,18 @@
       "id": "battle-of-cempoala--la-noche-triste--precondition-of",
       "kind": "edge",
       "locator": "\"La Noche Triste\", revision 1370626402, § Cortés heads off Spanish punitive expedition"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chacabuco--battle-of-maipu--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Chacabuco\", revision 1373197409, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chacabuco--battle-of-maipu--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Maipú\", revision 1370268820, § Background"
     },
     {
       "dissent": false,
@@ -3329,6 +3353,18 @@
       "id": "battle-of-tucapel--battle-of-mataquito--reacted-to",
       "kind": "edge",
       "locator": "\"Battle of Mataquito\", revision 1376467018, lead"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tucuman--battle-of-salta--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Salta\", revision 1370273475, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tucuman--battle-of-salta--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Tucumán\", revision 1370275835, § Results"
     },
     {
       "dissent": false,
@@ -10532,6 +10568,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cancha-rayada-1818",
+      "kind": "event",
+      "locator": "\"Battle of Cancha Rayada (1818)\", revision 1370436071"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cap-francais-1793",
       "kind": "event",
       "locator": "\"Battle of Cap-Français (1793)\", revision 1370108549"
@@ -11258,6 +11300,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-maipu",
+      "kind": "event",
+      "locator": "\"Battle of Maipú\", revision 1370268820"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-maraycalla",
       "kind": "event",
       "locator": "\"Battle of Maraycalla\", revision 1370448960"
@@ -11741,6 +11789,12 @@
       "id": "battle-of-salamanca",
       "kind": "event",
       "locator": "\"Battle of Salamanca\", revision 1370273420"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-salta",
+      "kind": "event",
+      "locator": "\"Battle of Salta\", revision 1370273475"
     },
     {
       "dissent": false,

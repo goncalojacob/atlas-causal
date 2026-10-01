@@ -448,6 +448,15 @@
         }
       ]
     },
+    "battle-of-cancha-rayada-1818": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-cerro-de-pasco": {
       "from": "git",
       "versions": [
@@ -606,6 +615,15 @@
         }
       ]
     },
+    "battle-of-maipu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-mocha": {
       "from": "git",
       "versions": [
@@ -666,6 +684,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-salta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
@@ -1198,7 +1225,7 @@
       ]
     },
     "fashoda-incident": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2314,7 +2341,7 @@
       ]
     },
     "treaty-of-addis-ababa": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

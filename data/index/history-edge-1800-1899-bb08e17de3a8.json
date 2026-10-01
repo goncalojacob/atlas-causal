@@ -48,7 +48,7 @@
       ]
     },
     "battle-of-adwa--treaty-of-addis-ababa--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -107,6 +107,24 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-cancha-rayada-1818--battle-of-maipu--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-chacabuco--battle-of-maipu--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
@@ -206,6 +224,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-tucuman--battle-of-salta--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
@@ -360,7 +387,7 @@
       ]
     },
     "fashoda-incident--entente-cordiale--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
