@@ -3440,6 +3440,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ugentana--battle-of-ugentana-1536--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Ugentana (1536)\", revision 1373045056"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ugentana--battle-of-ugentana-1536--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Ugentana\", revision 1373042668"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-unsan--battle-of-the-ch-ongch-on-river--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of the Ch'ongch'on River\", revision 1374278822, § Background and § Actions at Ipsok"
@@ -12695,6 +12707,12 @@
       "id": "battle-of-two-sisters",
       "kind": "event",
       "locator": "\"Battle of Two Sisters\", revision 1372847051"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ugentana",
+      "kind": "event",
+      "locator": "\"Battle of Ugentana\", revision 1373042668"
     },
     {
       "dissent": false,

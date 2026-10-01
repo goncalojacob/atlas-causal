@@ -694,6 +694,15 @@
         }
       ]
     },
+    "battle-of-ugentana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-ugentana-1536": {
       "from": "git",
       "versions": [

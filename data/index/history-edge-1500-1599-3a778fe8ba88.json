@@ -317,6 +317,15 @@
         }
       ]
     },
+    "battle-of-ugentana--battle-of-ugentana-1536--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-vilcaconga--battle-of-cusco--enabled": {
       "from": "git",
       "versions": [

@@ -9360,6 +9360,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "from": "battle-of-ugentana",
+      "id": "battle-of-ugentana--battle-of-ugentana-1536--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-70"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-ugentana-1536",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "from": "battle-of-unsan",
       "id": "battle-of-unsan--battle-of-the-ch-ongch-on-river--precondition-of",

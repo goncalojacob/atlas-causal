@@ -17394,6 +17394,41 @@
         "wikipedia-en"
       ],
       "created": "2026-10-01",
+      "degree": 1,
+      "id": "battle-of-ugentana",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "malay-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a7-widened",
+          "filed-from-article-part-of"
+        ],
+        "note": "A7: the record was dated 1536, the item's only P585. Its own cited article at revision 1373042668 opens \"The Battle of Ugentana ... took place in 1535\" and its infobox reads \"date = 1535\", which is also what battle-of-ugentana-1536 calls the earlier attack. A3: the item carries no P361 and the article's infobox reads part_of = Malay-Portuguese conflicts, which the atlas holds and whose 1509-1641 span fits, so the filing is from the article.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ugentana"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
       "id": "battle-of-ugentana-1536",
       "kind": "event",
       "origin": {
@@ -48750,12 +48785,6 @@
     },
     {
       "id": "battle-of-two-sisters",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-ugentana-1536",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
