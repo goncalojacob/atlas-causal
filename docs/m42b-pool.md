@@ -16212,7 +16212,12 @@ should be on disk and are not**, 2,820 of 2,896 citations on disk at the
 revision cited and 76 unholdable beside a more-cited revision of the same item.
 The suite is **green — 2,253 tests, 0 failed, 0 skipped** (1,940 pure and 313
 across the 40 browser suites, run the way the check runs them, one browser suite
-at a time), measured at this head.*
+at a time), measured at this head. **The check is green on the head of this
+fire: run 2231, `129d8fd6`, conclusion `success`**, and green on run 2227
+(`23fcdb4b`), the head that carried every record and index change. Runs 2219,
+2220, 2221, 2224, 2225, 2226, 2229 and 2230 were cancelled by a newer push,
+which the workflow's own `cancel-in-progress` does; **no run of this fire went
+red**, and the merge-commit failure deviation 1377 describes did not recur.*
 
 ### The next fire's moves, in order
 
