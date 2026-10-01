@@ -18589,11 +18589,47 @@ measurement that narrows what the next fire should try.*
   A11's area clause; deviation 1478; A15(12)'s 177 uncategorised events; the EEC's
   closing year; deviation 1461's two display faults; and `origin/m42b`'s five place
   placeholder summaries.
-- **Deviation numbers: take the next above 1497.** This fire wrote **1493** (the two
+- **Deviation numbers: take the next above 1499.** This fire wrote **1493** (the two
   Wikimedia APIs are rate-limited separately, so a 429 on one is not "no network"),
   **1494** (a filing's argument may not fit the record it files: `review.note` caps
   at 500), **1495** (the sweeps are blind to an article naming a held event by
   description rather than title) and **1496** (an umbrella for something that
   happened across two lanes cannot hold the members outside its own) and **1497**
   (one parent is a bare string; a list of one validates and is not the bytes the
-  form writes).
+  form writes) and **1498** (a history shard reads git, so the index must be
+  rebuilt *after* the records' commit) and **1499** (a queued re-run and a push
+  cancel each other; and the narrative framing assertion is intermittent).
+
+**The check's one red browser test was read and not assumed.** Run 2171, at head
+`6828a4fa`, failed a single browser assertion —
+*reading a narrative draws the walk, its neighbours dimmed, and nothing else*,
+with `map drew wiriyamu-massacre-1972 off the screen`
+(`tests/lens-browser.test.mjs:382`). It is **M74's "drawn is not the same as
+seen"** clause, a bounding-box check on whether the camera's frame holds every
+step, and **nothing in this batch is in that walk**: the records written are a
+Cambodian filing and an edge between two Asian events, and the narrative is
+Mozambican. The evidence that it is not this batch's: `node --test
+tests/lens-browser.test.mjs` passes **3 of 3** on the pushed tree, the full serial
+browser run passed **313 of 313** on the same tree, and run 2167 passed the same
+**313 of 313** on the very same records fifteen minutes earlier — the only commits
+between them are a history shard and this document. **It passed on the next run**:
+run 2173, head `042649a1`, is green — 1928 pure and 313 browser, the whole check —
+so the assertion is confirmed intermittent and not this batch's. (The re-run this
+fire queued on 2171 never finished: pushing this document cancelled it by
+concurrency, and 2173 is what gave the verdict. **A later fire should not queue a
+re-run and then push** — one or the other.) **A fire that meets this assertion again
+should not re-run a second time**: it is a framing check on a walk whose outermost
+step sits at the edge of the camera's rectangle, and the honest fix is to make that
+one step's visibility robust rather than to keep re-running — which is a test change
+and wants its own pass, not a batch's tail. **Deviation 1499.**
+
+**Deviation 1498, from the check rather than from the reading.** The first index
+commit of this batch went red on rule 16, at
+`history-edge-1900-1999`, and the reason is that **one part of the index does not
+read `data/` at all**: `tools/lib/history.mjs` builds each record's versions out of
+the repository's own commits. An index built in a dirty tree therefore records one
+version fewer for a record whose change is not committed yet, and cannot be
+byte-identical to a fresh build on the pushed tree. **"Records first, rebuild, then
+commit the index" (798) means rebuild after the records' commit**, not merely
+before the index's — which is what this fire did the first time and what the check
+caught. The corrected shard is `63dde31b3eaa`.

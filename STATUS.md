@@ -2458,7 +2458,12 @@ In full in the history file. The ones that decide something:
   three shapes for `parent` are not interchangeable on disk — the contribution
   form's writer normalises one parent to a bare string, so `["indochina-wars"]`
   validated and failed *an unedited save of a record in data/ is byte identical*,
-  the one test that sees it.
+  the one test that sees it. **Deviation 1498**, which the check found and not the
+  reading: `tools/lib/history.mjs` builds its shards out of the repository's own
+  commits rather than out of `data/`, so an index built in a dirty tree records one
+  version fewer than a fresh build on the pushed tree and goes red on rule 16 at
+  `history-edge-1900-1999`. **798's "records first, rebuild, then commit the index"
+  means rebuild *after* the records' commit**, not merely before the index's.
 
 - **The seventh relation type. Answered, and half done.** Rule 19 refused
   `portugal member-of european-union`, so ten memberships were written as
@@ -24155,4 +24160,5 @@ M42b started 2026-09-30T18:36:59Z by scheduled
 M42 started 2026-09-30T18:07:54Z by scheduled
 M42b started 2026-09-30T21:37:04Z by scheduled
 M42 started 2026-09-30T21:07:29Z by scheduled
+M42 started 2026-09-30T23:50:11Z by scheduled
 M42b started 2026-09-30T23:58:46Z by scheduled
