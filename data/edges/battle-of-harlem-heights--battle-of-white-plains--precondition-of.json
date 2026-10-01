@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-harlem-heights--battle-of-white-plains--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-57"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Washington\", revision 1377296439"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of White Plains\", revision 1374379337"
+    }
+  ],
+  "from": "battle-of-harlem-heights",
+  "to": "battle-of-white-plains",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The check at Harlem Heights is why Howe stopped pushing north up Manhattan and went round instead, and the flanking movement is what brought both armies to White Plains. The Fort Washington article, at revision 1377296439, states the turn in one sentence in its § Movements: “His northward progress was checked the next day in the Battle of Harlem Heights, after which he sought to flank the strong U.S. position on the north of the island. After an abortive landing attempt on October 11, Howe began landing troops in southern Westchester County, New York (in today's The Bronx) on October 18, intending to cut off the Continental Army's avenue of retreat. Washington, aware of the danger, withdrew most of his troops north to White Plains.” The White Plains article, at revision 1374379337, is the second author and tells it the same way in its § Background: “Howe followed up with a landing on Manhattan on September 15, but his advance was checked the next day at Harlem Heights. After an abortive landing at Throg's Neck, he landed troops with some resistance at Pell's Point on October 18 to begin an encircling maneuver that was intended to trap Washington's army.” `precondition-of` and not `caused`, because the immediate cause of a battle at White Plains is the encircling manoeuvre and the lightly held supply depot there, and this atlas holds neither Throg's Neck nor Pell's Point: what Harlem Heights supplied was the reason Howe was flanking at all. `probable`, on the articles alone (rule 22).",
+  "dispute": null
+}

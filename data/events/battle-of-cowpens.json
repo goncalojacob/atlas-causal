@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-cowpens",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1326527",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Cowpens",
+    "pt": "Batalha de Cowpens"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1326527"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cowpens\", revision 1376280446"
+    }
+  ],
+  "title": "Battle of Cowpens",
+  "summary": "The English Wikipedia article \"Battle of Cowpens\", at revision 1376280446, opens: \"The Battle of Cowpens was a military engagement of the American Revolutionary War fought on January 17, 1781, near the town of Cowpens, South Carolina. An American army of nearly 2,000 regulars and militia under Brigadier general Daniel Morgan defeated a force of about 1,000 British and Loyalist troops commanded by Lieutenant-colonel Banastre Tarleton. It was the worst defeat suffered by the British in North America during the conflict following the 1777 Saratoga campaign.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1326527, imported by tools/import/wikidata.mjs. The item's own description reads \"1781 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781,
+    "date": "1781-01-17"
+  },
+  "place": "cowpens-south-carolina",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

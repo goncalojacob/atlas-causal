@@ -1239,3 +1239,60 @@ are also argued for by an edge this batch wrote from a cited article:
 `battle-of-belmont-1899 --precondition-of--> battle-of-graspan`. The filing is the
 import's, from `P361` and the span; this paragraph is the measurement the bareness
 owes.
+
+## Batch 51 (M42b) — the conquest of Honduras stands in no country
+
+One of batch 51's three records names neither an actor nor a place, and it is the
+one that is not a battle.
+
+**`spanish-conquest-of-honduras` — the only country the item offers had not been
+founded.** Q5783531 carries no `P625` of its own, and both its `P276` and its
+`P17` are Q783, Honduras the sovereign state, whose `P571` is 1821 — 282 years
+after this conquest ends. **A15(6) refused it on the inception clause**, the same
+refusal `battle-of-belmont-1899` and `battle-of-vaal-krantz` drew, so the record
+carries the `americas` lane and a `regionNote` that says why. It names no actor
+because the item names no `P710` participant the atlas holds; M67's own A1 says
+an event with no actor is not a defect. The two records it stands beside on disk,
+`spanish-conquest-of-guatemala` and `spanish-conquest-of-el-salvador`, are
+placeless for the same reason, so the batch is consistent with what was already
+here rather than an exception to it.
+
+**Why it belongs where it is filed.** The item's own `P361` is Q1047607, whose
+record is `spanish-colonization-of-the-americas`, and the atlas dates that
+umbrella 1493-09-24 to 1898-07-13; this record's span, 1524-03 to 1539, falls
+inside it. It is also argued for by an edge this batch wrote from a cited
+article: `spanish-conquest-of-the-aztec-empire --precondition-of-->
+spanish-conquest-of-honduras`, from the § Background of "Spanish conquest of
+Honduras" at revision 1370748307 — *"The conquest of Central America that
+followed was effectively an extension of the campaign that overthrew the Aztec
+Empire; Cortés himself took an active part in the conquest of Honduras in
+1524-1525."* The filing is the import's, from `P361` and the span; this paragraph
+is the measurement the bareness owes.
+## M42 batch 74 — Asia's period umbrella, bare for the reason section 15 gave
+
+*30 September, the fire that claimed at 18:07Z. The measurement is in
+`docs/m42-pool.md` → "Batch 74". A1's clause again, for one record and for
+exactly the reason section 15 wrote down.*
+
+`decolonisation-of-asia` **names neither an actor nor a place, because a period
+has neither to give.** A continent has no point, so there is no place record to
+reach for; and the actor of the decolonisation of Asia is every colonial power
+that held ground there and every independence movement that took it back, which
+is a list an umbrella has no business asserting. `decolonisation-of-africa`,
+`interwar-period`, `scramble-for-africa`, `arab-spring`, `indochina-wars` and
+`afghan-conflict` are bare for the same reason and were accounted for the same
+way.
+
+What it carries instead is **a lane written on purpose** — Asia is the period's
+own subject and not a derivation from a point it does not have — and a span with
+a citation behind it: *"Decolonisation of Asia"*, revision 1375271318,
+*"concluding with the independence of the Democratic Republic of Timor-Leste from
+Indonesia in 2002"*. The start is 1898 and the pool file argues it at length,
+because the article states no start and its own list of colonies dates one.
+
+The five events filed under it — `philippine-declaration-of-independence`,
+`philippine-american-war`, `indonesian-national-revolution`,
+`partition-of-india` and `east-timor-independence-2002` — and the two that gained
+it as a second parent under A8 — `first-indochina-war` and
+`east-timor-invasion-1975` — are argued there, one line each, each from the same
+revision.

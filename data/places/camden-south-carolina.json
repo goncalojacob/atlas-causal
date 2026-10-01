@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "camden-south-carolina",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1144372",
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Camden, South Carolina",
+    "pt": "Camden (Carolina do Sul)"
+  },
+  "sources": [],
+  "names": [
+    "Camden",
+    "Camden, South Carolina",
+    "Camden (Carolina do Sul)"
+  ],
+  "where": {
+    "lon": -80.609166666667,
+    "lat": 34.259166666667,
+    "precision": "city",
+    "label": "Camden, South Carolina"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

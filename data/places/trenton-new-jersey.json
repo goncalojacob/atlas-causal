@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "trenton-new-jersey",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q25330",
+  "sitelinks": {
+    "count": 120,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Trenton, New Jersey",
+    "pt": "Trenton (Nova Jérsia)"
+  },
+  "sources": [],
+  "names": [
+    "Trenton",
+    "Trenton, New Jersey",
+    "Trenton (Nova Jérsia)"
+  ],
+  "where": {
+    "lon": -74.76583333333333,
+    "lat": 40.22027777777778,
+    "precision": "city",
+    "label": "Trenton, New Jersey"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

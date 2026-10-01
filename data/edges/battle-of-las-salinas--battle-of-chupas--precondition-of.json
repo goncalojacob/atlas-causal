@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-las-salinas--battle-of-chupas--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-52"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chupas\", revision 1370437248"
+    }
+  ],
+  "from": "battle-of-las-salinas",
+  "to": "battle-of-chupas",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Chupas’s own article gives Las Salinas as the reason its loser raised an army: “Desperate not to face the same fate as his father after the battle of Las Salinas, Diego de Almagro II gathered an army of supporters.” Almagro the elder was captured at Las Salinas and executed in July 1538; the son’s fear of the same end is what the article says put the Almagrist force at Huamanga in 1542. `precondition-of` and not `caused`: four years and the assassination of Francisco Pizarro stand between them, and the article turns Chupas itself on Vaca de Castro’s governorship. `probable`, because the only source the atlas can open here is the article (rule 22).",
+  "dispute": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-kombi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871476",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Kombi",
+    "pt": "Batalha de Combi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871476"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kombi\", revision 1370445877"
+    }
+  ],
+  "title": "Battle of Kombi",
+  "summary": "The English Wikipedia article \"Battle of Kombi\", at revision 1370445877, opens: \"The Battle of Kombi was a decisive battle in the war between Ndongo-Matamba and Portugal during the Dutch period of Angolan history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871476, imported by tools/import/wikidata.mjs. The item's own description reads \"1647 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1647,
+    "end": 1647,
+    "date": "1647-10-29"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}

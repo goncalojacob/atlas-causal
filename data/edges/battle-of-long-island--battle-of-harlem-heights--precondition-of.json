@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-long-island--battle-of-harlem-heights--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-57"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Harlem Heights\", revision 1375220259"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Washington\", revision 1377296439"
+    }
+  ],
+  "from": "battle-of-long-island",
+  "to": "battle-of-harlem-heights",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Harlem Heights was fought on Manhattan because Long Island had put the Continental Army there, and both articles state that mechanism rather than the order of the two battles. The Harlem Heights article, at revision 1375220259, opens its § Background with it: “On August 27, 1776, British troops under the command of General William Howe flanked and defeated the American army at the Battle of Brooklyn. Howe moved his forces and pinned the Americans down at Brooklyn Heights, with the East River to the American rear. On the night of August 29, General George Washington, Commander-in-Chief of the Continental Army, evacuated his entire army of 9,000 men and their equipment across the water to Manhattan.” The article's own link behind “Battle of Brooklyn” is the Battle of Long Island, so the event named is the battle this atlas holds. The Fort Washington article, at revision 1377296439, is the second author and states the British half of the same turn in its § Movements: “After first gaining control of western Long Island in the Battle of Long Island at the end of August 1776, British General William Howe launched an invasion of Manhattan on September 15. His northward progress was checked the next day in the Battle of Harlem Heights.” The type is `precondition-of` and not `caused` because neither article says the defeat produced the engagement of 16 September — what it produced was an army on Manhattan and a British army following it there. `probable`, on the articles alone (rule 22).",
+  "dispute": null
+}

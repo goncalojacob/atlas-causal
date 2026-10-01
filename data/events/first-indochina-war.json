@@ -67,7 +67,10 @@
   },
   "place": "french-indochina-q185682",
   "region": "asia",
-  "parent": "indochina-wars",
+  "parent": [
+    "indochina-wars",
+    "decolonisation-of-asia"
+  ],
   "category": "war",
   "actors": [
     {

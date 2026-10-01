@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "spain-and-the-american-revolutionary-war--capture-of-fort-bute--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-53"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spain and the American Revolutionary War\", revision 1373209544"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Fort Bute\", revision 1370608614"
+    }
+  ],
+  "from": "spain-and-the-american-revolutionary-war",
+  "to": "capture-of-fort-bute",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Spain's own entry into the war is what put Gálvez in the field, and both ends' articles say so. The atlas's record for that entry cites “Spain and the American Revolutionary War” at revision 1373209544, which reads: “On the mainland, the governor of Spanish Louisiana, Count Bernardo de Gálvez, led a series of successful offensives against the British forts in the Mississippi Valley, first the attack and capture of Fort Bute at Manchac”. The Fort Bute article, at revision 1370608614, gives the mechanism: “Spain's formal declaration of war against Britain was made by King Charles III on May 8, 1779. This declaration was followed by another on July 8 that authorized his colonial subjects to engage in hostilities against the British in North America”, and “When Bernardo de Gálvez, the colonial Governor of Spanish Louisiana, received word of this on July 21, he immediately began to secretly plan offensive operations”. `enabled` and not `caused`: the declaration authorised the attack, it did not order this one — the same article has Gálvez choosing his moment because he had intercepted British plans against New Orleans. `probable`, because the only sources the atlas can open here are the two articles (rule 22).",
+  "dispute": null
+}

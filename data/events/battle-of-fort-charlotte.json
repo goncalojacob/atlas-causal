@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-fort-charlotte",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361",
+      "m42b-batch-53"
+    ]
+  },
+  "wikidata": "Q2682171",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Fort Charlotte"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2682171"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Charlotte\", revision 1374387321"
+    }
+  ],
+  "title": "Battle of Fort Charlotte",
+  "summary": "The English Wikipedia article \"Battle of Fort Charlotte\", at revision 1374387321, opens: \"The Battle of Fort Charlotte, also known as the siege of Fort Charlotte, was a two-week siege conducted by Spanish general Bernardo de Gálvez against the British fortifications guarding the port of Mobile, during the Anglo-Spanish War of 1779-1783. Fort Charlotte was the last remaining British frontier post capable of threatening New Orleans, Louisiana. Its fall drove the British from the western reaches of West Florida and reduced the British military presence in West Florida to its capital, Pensacola.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2682171, imported by tools/import/wikidata.mjs. The item's own description reads \"1780 battle of the Anglo-Spanish War during the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1780,
+    "end": 1780,
+    "date": "1780-03-02",
+    "endDate": "1780-03-14"
+  },
+  "place": "mobile-alabama",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

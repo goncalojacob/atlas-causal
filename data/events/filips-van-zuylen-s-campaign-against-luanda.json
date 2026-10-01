@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "filips-van-zuylen-s-campaign-against-luanda",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q130377423",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Filips van Zuylen's campaign against Luanda"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q130377423"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Filips van Zuylen's campaign against Luanda\", revision 1370618257"
+    }
+  ],
+  "title": "Filips van Zuylen's campaign against Luanda",
+  "summary": "The English Wikipedia article \"Filips van Zuylen's campaign against Luanda\", at revision 1370618257, opens: \"The Filips van Zuylen's campaign against Luanda took place in 1624, it was an episode of the Dutch-Portuguese War that resulted in a heavy defeat for the Dutch West India Company. After two failed attempts to conquer the city, the invading forces would retreat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q130377423, imported by tools/import/wikidata.mjs. The item's own description reads \"1624 military campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1624,
+    "end": 1624,
+    "date": "1624-06",
+    "endDate": "1624-12-01"
+  },
+  "place": "luanda",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}

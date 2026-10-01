@@ -174,7 +174,7 @@
       ]
     },
     "import": {
-      "updated": "2026-09-30",
+      "updated": "2026-10-01",
       "pending": [],
       "done": [
         "Q64",
@@ -1946,7 +1946,35 @@
         "Q248979",
         "Q3237997",
         "Q369859",
-        "Q2888674"
+        "Q2888674",
+        "Q5037028",
+        "Q4871476",
+        "Q139022658",
+        "Q3097919",
+        "Q2888231",
+        "Q2682171",
+        "Q2060558",
+        "Q778010",
+        "Q815128",
+        "Q846674",
+        "Q1419459",
+        "Q459447",
+        "Q334029",
+        "Q1754313",
+        "Q1539513",
+        "Q1326527",
+        "Q425773",
+        "Q2630469",
+        "Q862751",
+        "Q653664",
+        "Q668595",
+        "Q960723",
+        "Q706755",
+        "Q233417",
+        "Q1132579",
+        "Q4870217",
+        "Q2888637",
+        "Q130377423"
       ]
     }
   },
@@ -2142,6 +2170,14 @@
     "Q3237997": {
       "on": "2026-09-30",
       "why": "A15(1): imported and removed in the same fire because it cannot be connected with an edge. The Relief of Ladysmith is a campaign whose relation to the four battles the atlas holds is part-of and not causation, and the item’s P580, 28 October 1899, is five days before the siege it relieved began, so the one edge that reads the right way round fails rule 4. See m42-pool.md, batch 70."
+    },
+    "Q5037028": {
+      "on": "2026-09-30",
+      "why": "A15 (8): its English sitelink resolves to \"Dutch Loango-Angola\", which folds to none of the item's own names; nothing here is this item's account of itself"
+    },
+    "Q4871476": {
+      "on": "2026-09-30",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   }
 }

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "abancay-river-ford",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ],
+    "note": "The point is the P625 of Wikidata Q283288, the Battle of Abancay, read on 2026-09-30 — A9’s first step as A12 (2) corrects it, the item’s own point before its P276. That P276 is Abancay the city (Q215238), whose inception the item gives as 1540, three years after the battle; the article puts the fighting at \"the bridge and a ford on the Rio de Abancay\", which is what this record is a point for and why its precision is point and not city."
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "sources": [],
+  "names": [
+    "Abancay"
+  ],
+  "where": {
+    "lon": -72.88333333,
+    "lat": -13.63333333,
+    "precision": "point",
+    "label": "Abancay"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

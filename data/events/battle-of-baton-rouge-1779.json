@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-baton-rouge-1779",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-09-30",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361",
+      "m42b-batch-53"
+    ]
+  },
+  "wikidata": "Q2888231",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-09-30"
+  },
+  "wikipedia": {
+    "en": "Battle of Baton Rouge (1779)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888231"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Baton Rouge (1779)\", revision 1370433595"
+    }
+  ],
+  "title": "Battle of Baton Rouge (1779)",
+  "summary": "The English Wikipedia article \"Battle of Baton Rouge (1779)\", at revision 1370433595, opens: \"The Battle of Baton Rouge was a brief siege during the Anglo-Spanish War that was decided on September 21, 1779. Fort New Richmond was the second British outpost to fall to Spanish arms during Bernardo de Gálvez's march into West Florida.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888231, imported by tools/import/wikidata.mjs. The item's own description reads \"1779 Spanish victory in the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1779,
+    "end": 1779,
+    "date": "1779-09-20",
+    "endDate": "1779-09-21"
+  },
+  "place": "baton-rouge-louisiana",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}
