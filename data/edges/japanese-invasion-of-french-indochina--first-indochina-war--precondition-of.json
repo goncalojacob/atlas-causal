@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "japanese-invasion-of-french-indochina--first-indochina-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Japanese invasion of French Indochina\", revision 1370624872, § Aftermath"
+    }
+  ],
+  "from": "japanese-invasion-of-french-indochina",
+  "to": "first-indochina-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The invasion's own article, in its Aftermath section, names the First Indochina War as what followed from what the invasion began: \"The Japanese occupation of Indochina helped strengthen the Viet Minh and contributed to the outbreak of the First Indochina War in 1946 against French rule.\" `precondition-of` and not `caused` because \"contributed to the outbreak\" claims a contribution and not a production, and the same section gives the proximate agency to the Viet Minh, who \"took control in the August Revolution\" of 1945 and issued their own proclamation of independence. **State the gap plainly, because a reviewer should see it:** the sentence's subject is \"The Japanese occupation of Indochina\", which is the five-year occupation this four-day invasion of 22–26 September 1940 began, and not the invasion itself. The edge is written at `probable` on the reading that an article's own Aftermath section describes the consequences of the thing the article is about; a reviewer who disagrees should retract it rather than re-point it, because no sentence in the article names the invasion itself as a cause of anything. `probable` and not `consensus` under rule 22 and A2 — the one witness is a Wikipedia record. `statesACause()` is false on \"contributed to\", which is not a refusal: A15(5)'s class is the four chronological openers with no cause stated, and this is the plain English of a contribution, as \"served as a direct antecedent of\" was for batch 81 and \"inspired by\" for batch 80.",
+  "dispute": null
+}

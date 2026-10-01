@@ -24806,7 +24806,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 5,
       "id": "first-indochina-war",
       "kind": "event",
       "origin": {
@@ -28925,6 +28925,38 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Japanese Instrument of Surrender"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "japanese-invasion-of-french-indochina",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-sino-japanese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Japanese invasion of French Indochina"
     },
     {
       "authors": [
@@ -35962,6 +35994,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "russian-invasion-of-manchuria",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "boxer-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Russian invasion of Manchuria"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -36046,7 +36110,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 8,
+      "degree": 9,
       "id": "russo-japanese-war",
       "kind": "event",
       "origin": {

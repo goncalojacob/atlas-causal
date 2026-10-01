@@ -13548,6 +13548,15 @@
         }
       ]
     },
+    "japanese-invasion-of-french-indochina": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "japanese-invasion-of-sakhalin": {
       "from": "git",
       "versions": [
@@ -18178,6 +18187,15 @@
             "sources"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "russian-invasion-of-manchuria": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

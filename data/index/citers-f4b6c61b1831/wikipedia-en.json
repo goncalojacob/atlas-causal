@@ -5600,6 +5600,12 @@
     },
     {
       "dissent": false,
+      "id": "japanese-invasion-of-french-indochina--first-indochina-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Japanese invasion of French Indochina\", revision 1370624872, § Aftermath"
+    },
+    {
+      "dissent": false,
       "id": "japanese-invasion-of-sakhalin--treaty-of-portsmouth--enabled",
       "kind": "edge",
       "locator": "\"Japanese invasion of Sakhalin\", revision 1371432298, § Background"
@@ -6803,6 +6809,12 @@
       "id": "russian-civil-war--tambov-rebellion--caused",
       "kind": "edge",
       "locator": "\"Tambov Rebellion\", revision 1370749600, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "russian-invasion-of-manchuria--russo-japanese-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Russian invasion of Manchuria\", revision 1370729162, lead"
     },
     {
       "dissent": false,
@@ -14534,6 +14546,12 @@
     },
     {
       "dissent": false,
+      "id": "japanese-invasion-of-french-indochina",
+      "kind": "event",
+      "locator": "\"Japanese invasion of French Indochina\", revision 1370624872"
+    },
+    {
+      "dissent": false,
       "id": "japanese-invasion-of-sakhalin",
       "kind": "event",
       "locator": "\"Japanese invasion of Sakhalin\", revision 1371432298"
@@ -15665,6 +15683,12 @@
       "id": "russian-civil-war",
       "kind": "event",
       "locator": "\"Russian Civil War\", revision 1372728974"
+    },
+    {
+      "dissent": false,
+      "id": "russian-invasion-of-manchuria",
+      "kind": "event",
+      "locator": "\"Russian invasion of Manchuria\", revision 1370729162"
     },
     {
       "dissent": false,

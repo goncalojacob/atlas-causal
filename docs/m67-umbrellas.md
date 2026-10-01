@@ -1377,3 +1377,31 @@ point. Both name `Q4783126`, *Arab–Israeli peace projects*, whose own `P361` i
 `Q8669` — the item `arab-israeli-conflict` carries. The umbrella's span runs from
 15 May 1948 and is open, so 17 September 1978 and 26 March 1979 are both inside
 it. `docs/m62-umbrellas.md` → "Batch 81" is the filing argued in full.
+
+## Batch 82 — `japanese-invasion-of-french-indochina`, which names neither
+
+The record carries no `actors` and `place: null`, so this document owes it an
+argument.
+
+**The place, and why there is none.** A9 asks for the item's own `P625` first:
+`Q140025` has none. Its `P276` is `Q185682`, *French Indochina*, which this atlas
+does hold as a place record (`french-indochina-q185682`) with Hanoi's point on
+it — and **A15(6) refused it**, in the import's own words: *"no place from the
+country `Q185682`: the country's point is 1555 km from the nearest point on the
+event's own chain."* That is the 1,000 km clause doing exactly what it was
+written for. The fighting was in Tonkin, at Lạng Sơn and Đồng Đăng on the Chinese
+border, and the atlas holds no place record for either; inventing one is not a
+batch's write.
+
+**The lane is written anyway, and from the item.** `region: "asia"`, under
+A15(7), derived from the item's own point rather than from a place record — which
+is why this record, unlike batch 81's two, does move a lane count.
+
+**The actors.** None, because `tools/import/identity.mjs` never writes `actors`:
+Japan, Vichy France and French Indochina are the three a reviewer would add, and
+all of that is a person's write on `review.html`.
+
+**Why it belongs under the umbrella anyway.** The filing is the item's own
+`P361` — `Q170314`, which the atlas holds as `second-sino-japanese-war` — and the
+dates sit inside the umbrella's span. `docs/m62-umbrellas.md` → "Batch 82"
+argues it in full.

@@ -599,3 +599,36 @@ there would have barred the edge under A14's standing C8 rule.
 
 **Main is 229 before and 229 after.** Both arrived as main events, because the
 import found no held umbrella in their `P361`.
+
+## Batch 82 — one filing the import made for itself, from the item's own `P361`
+
+`Q140025`, the Japanese invasion of French Indochina, names two things in its
+`P361`: `Q170314`, which this atlas holds as `second-sino-japanese-war`, and
+`Q1648564`, *Japanese invasion of Southeast Asia*, which has no English article
+and no record here. So the import filed it from the first without being told to,
+and the filing is the item's own claim and not a reading laid over it.
+
+| record | parent | why |
+| --- | --- | --- |
+| `japanese-invasion-of-french-indochina` | `second-sino-japanese-war` | The item's `P361` is `Q170314`, the item this atlas holds as the umbrella. 22–26 September 1940 is inside the umbrella's span, 1937-07-07 to 1945-09-09. The invasion's own article states the same relation in its first paragraph — the fighting lasted *"the same time as the Battle of South Guangxi in the Sino-Japanese War, which was the main objective as to why Japan occupied Vietnam during this time."* |
+
+**It is not filed under `world-war-ii`** as well, although the invasion is part
+of that war too on any reading: `Q140025` does not name it, A8 asks for every
+umbrella that *fits* and the second umbrella here would be the fire's reading
+rather than the item's. A reviewer who wants it can add it; `parentsOf` reads
+the list either way.
+
+**Main is 229 before and 229 after.** The record arrived filed, so the count
+never moved.
+
+## Batch 83 — the second filing the import made for itself
+
+`Q2177009`, the Russian invasion of Manchuria, names one thing in its `P361`:
+`Q150229`, which this atlas holds as `boxer-rebellion`. The import filed it
+there unprompted, as it did batch 82's record.
+
+| record | parent | why |
+| --- | --- | --- |
+| `russian-invasion-of-manchuria` | `boxer-rebellion` | The item's `P361` is `Q150229`, the item this atlas holds as the umbrella. June to November 1900 is inside the umbrella's span, 1899-08 to 1901-09. The invasion was the Russian column of the intervention the rebellion provoked, and the record's own article opens on the rebellion as the occasion for it. |
+
+**Main is 229 before and 229 after**: the record arrived filed.

@@ -6794,6 +6794,12 @@
     },
     {
       "dissent": false,
+      "id": "japanese-invasion-of-french-indochina",
+      "kind": "event",
+      "locator": "Q140025"
+    },
+    {
+      "dissent": false,
       "id": "japanese-invasion-of-sakhalin",
       "kind": "event",
       "locator": "Q4538445"
@@ -7973,6 +7979,12 @@
       "id": "russian-civil-war",
       "kind": "event",
       "locator": "Q79911, P31 Q8465 / Q350604"
+    },
+    {
+      "dissent": false,
+      "id": "russian-invasion-of-manchuria",
+      "kind": "event",
+      "locator": "Q2177009"
     },
     {
       "dissent": false,
