@@ -22263,7 +22263,9 @@ before it imports.
   the map's camera on the choice's own marks, so an umbrella a continent away is
   outside the frame and is not drawn, and the map now asserts the chosen event
   while the graph and the timeline keep asserting every umbrella. STEP 1's merge
-  brought it onto this branch and the suite passes 3 of 3 here. **Whether the
+  brought it onto this branch and the suite passes 3 of 3 here. **The whole
+  check is green for the first time in four fires**: 1,940 of 1,940 pure and
+  **313 of 313 browser**, nothing skipped, run the way M63 runs them. **Whether the
   frame should hold the umbrellas too is noted on that commit as a lane A
   question**, so a fire that sees this test go red again on a record with a
   distant parent should read 1d4c3845 before calling it a corpus fault.
