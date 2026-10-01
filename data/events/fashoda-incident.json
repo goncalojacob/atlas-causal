@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "fashoda-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q722699",
+  "wikipedia": {
+    "en": "Fashoda Incident",
+    "pt": "Incidente de Fachoda"
+  },
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-01"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q722699"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fashoda Incident\", revision 1375541414"
+    }
+  ],
+  "title": "Fashoda Incident",
+  "summary": "The English Wikipedia article \"Fashoda Incident\", at revision 1375541414, opens: \"The Fashoda Incident, also known as the Fashoda Crisis, was the climax of imperialist territorial disputes between Britain and France in East Africa, occurring between 10 July and 3 November 1898. A French expedition to Fashoda on the White Nile sought to gain control of the Upper Nile river basin and thereby exclude Britain from Sudan. The French party and a British-Egyptian force met on friendly terms. However, in Europe, it became a war scare. Both empires stood on the verge of war with heated rhetoric on both sides. Under heavy pressure, the French withdrew, ensuring Anglo-Egyptian control over the area.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q722699, imported by tools/import/wikidata.mjs. The item's own description reads \"imperial territorial disputes between Britain and France in Eastern Africa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-09-18",
+    "endDate": "1898-11-03"
+  },
+  "place": "kodok",
+  "region": null,
+  "regionNote": null,
+  "parent": "scramble-for-africa",
+  "actors": []
+}

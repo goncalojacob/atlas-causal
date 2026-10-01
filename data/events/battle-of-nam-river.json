@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": "2026-09-24",
+  "revised": "2026-10-01",
   "review": {
     "status": "draft",
     "flags": [
@@ -27,7 +27,7 @@
       "summary-from-lead",
       "parent"
     ],
-    "note": "Filed under korean-war and not under the umbrella its own article names. The article's infobox reads \"part of the Battle of Pusan Perimeter\", but that record runs 4 August – 18 September 1950 and this battle runs to 19 September, so M62's span test refuses the nearer umbrella by one day. A later fire that widens the perimeter's interval under A7 from the perimeter's own article should re-file this record under it."
+    "note": "A6, A8: the item's P361 names the Pusan Perimeter, which contains this action's span; korean-war comes off because the perimeter is filed under it."
   },
   "origin": {
     "tool": "wikidata"
@@ -61,7 +61,7 @@
   "place": "nam-river",
   "region": null,
   "regionNote": null,
-  "parent": "korean-war",
+  "parent": "battle-of-the-pusan-perimeter",
   "category": "war",
   "actors": [
     {

@@ -13,14 +13,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-25",
+  "revised": "2026-10-01",
   "review": {
     "status": "draft",
     "flags": [
       "identity-by-hand",
-      "filed-by-span-and-subject"
+      "filed-by-span-and-subject",
+      "filed-from-p361"
     ],
-    "note": "A6 and M62: inside the span (1961, against 1933 to 1974) and inside the subject — the Estado Novo is the government whose territory was taken. Not filed under portuguese-colonial-war-1961-1974, whose subject is the fighting in Africa: a war is its own umbrella by its fighting (A6). M67 rule 1 does not bite — the annexation neither made the regime nor ended it."
+    "note": "A6, A8: the item's P361 names the Portuguese Colonial War, whose span contains December 1961; the Estado Novo stays, because neither umbrella reaches the other. Whether Goa belongs with the three African theatres is a reviewer's question and this filing is the item's claim, not a reading."
   },
   "origin": {
     "tool": "assistant"
@@ -54,7 +55,10 @@
   },
   "place": "panaji",
   "region": null,
-  "parent": "estado-novo-1933-1974",
+  "parent": [
+    "estado-novo-1933-1974",
+    "portuguese-colonial-war-1961-1974"
+  ],
   "actors": [
     {
       "actor": "republic-of-india",

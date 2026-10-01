@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "spanish-civil-war--anti-comintern-pact--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anti-Comintern Pact\", revision 1377358025"
+    }
+  ],
+  "from": "spanish-civil-war",
+  "to": "anti-comintern-pact",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The pact’s own article gives the war as what sharpened the German wish for it: \"The Spanish Civil War, in which Germany supported the Nationalists and the Soviet Union the Republicans, reinforced the urgency in the mind of the German leadership to create some sort of anti-Soviet military arrangement to counteract a potential aggression by the Soviet Union.\" The sentence says the war reinforced an urgency rather than created the pact, so the claim is a reaction and not a cause: the pact of November 1936 answers a war that had been running since July.",
+  "dispute": null
+}

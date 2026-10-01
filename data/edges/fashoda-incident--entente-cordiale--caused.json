@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "fashoda-incident--entente-cordiale--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Scramble for Africa\", revision 1373841219, § Britain's administration of Egypt and South Africa"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fashoda Incident\", revision 1375541414, § Aftermath"
+    }
+  ],
+  "from": "fashoda-incident",
+  "to": "entente-cordiale",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Two articles at two revisions, saying the same thing at two strengths. The article of the partition states it as a cause: \"The Fashoda Incident ultimately led to the signature of the Entente Cordiale of 1904, which guaranteed peace between the two.\" The incident's own article attributes the reading to the historians rather than asserting it: \"The Fashoda Incident was the last serious colonial dispute between Britain and France, and its classic diplomatic solution is considered by most historians to be the precursor of the Entente Cordiale of 1904.\" `probable` rather than `consensus`, because both witnesses are Wikipedia records and neither is the work either of them rests on.",
+  "dispute": null
+}
