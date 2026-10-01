@@ -2822,6 +2822,12 @@
     },
     {
       "dissent": false,
+      "id": "attack-on-zuwarah",
+      "kind": "event",
+      "locator": "Q133837258"
+    },
+    {
+      "dissent": false,
       "id": "august-1915-portuguese-presidential-election",
       "kind": "event",
       "locator": "Q97516196"
@@ -8861,6 +8867,12 @@
       "id": "siege-of-tournai-1745",
       "kind": "event",
       "locator": "Q16677044"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-tripoli-1551",
+      "kind": "event",
+      "locator": "Q2860095"
     },
     {
       "dissent": false,

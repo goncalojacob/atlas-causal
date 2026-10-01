@@ -20515,7 +20515,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "tripoli",
       "kind": "place",
       "names": [
@@ -22594,6 +22594,35 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q207259, Zliten, reached by A9's second step from Q11681484's P276 because the Zliten uprising item carries no P625 of its own. `city` off that item's class Q515 (A12 (2)).",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "zuwarah",
+      "kind": "place",
+      "names": [
+        "Zuwara",
+        "Zuwarah",
+        "Zuara"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,

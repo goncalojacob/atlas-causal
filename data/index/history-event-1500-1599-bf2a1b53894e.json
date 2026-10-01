@@ -29,6 +29,15 @@
         }
       ]
     },
+    "attack-on-zuwarah": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-abancay": {
       "from": "git",
       "versions": [
@@ -1267,6 +1276,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-tripoli-1551": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

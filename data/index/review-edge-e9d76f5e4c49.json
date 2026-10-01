@@ -26844,6 +26844,35 @@
         "wikipedia-en"
       ],
       "created": "2026-10-01",
+      "from": "siege-of-tripoli-1551",
+      "id": "siege-of-tripoli-1551--attack-on-zuwarah--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-68"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "attack-on-zuwarah",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
       "from": "siege-of-yorktown",
       "id": "siege-of-yorktown--battle-of-roatan--enabled",
       "kind": "edge",

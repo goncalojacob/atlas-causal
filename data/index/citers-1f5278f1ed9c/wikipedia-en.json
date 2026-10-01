@@ -7574,6 +7574,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-tripoli-1551--attack-on-zuwarah--reacted-to",
+      "kind": "edge",
+      "locator": "\"Attack on Zuwarah\", revision 1370429622"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-tripoli-1551--attack-on-zuwarah--reacted-to",
+      "kind": "edge",
+      "locator": "\"Siege of Tripoli (1551)\", revision 1370746050"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-yorktown--battle-of-roatan--enabled",
       "kind": "edge",
       "locator": "\"Battle of Roatán\", revision 1370587600, § Background"
@@ -10625,6 +10637,12 @@
       "id": "attack-on-the-moncada-barracks",
       "kind": "event",
       "locator": "\"Attack on the Moncada Barracks\", revision 1370861034"
+    },
+    {
+      "dissent": false,
+      "id": "attack-on-zuwarah",
+      "kind": "event",
+      "locator": "\"Attack on Zuwarah\", revision 1370429622"
     },
     {
       "dissent": false,
@@ -16535,6 +16553,12 @@
       "id": "siege-of-tournai-1745",
       "kind": "event",
       "locator": "\"Siege of Tournai (1745)\", revision 1370745959"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-tripoli-1551",
+      "kind": "event",
+      "locator": "\"Siege of Tripoli (1551)\", revision 1370746050"
     },
     {
       "dissent": false,

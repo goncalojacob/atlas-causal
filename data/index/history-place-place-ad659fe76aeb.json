@@ -11098,6 +11098,15 @@
           "on": "2026-09-25"
         }
       ]
+    },
+    "zuwarah": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
     }
   },
   "schema": 1,
