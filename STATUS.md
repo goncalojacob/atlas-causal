@@ -23751,6 +23751,34 @@ participants) for the day the owner answers whether a batch opening an empty lan
 may raise the main count by the one umbrella it needs.
 
 
+**M42b batch 59 — Salta, Cancha Rayada and Maipú, and the islands the
+independence wars are, 1 October.** The fifty-third fire took the trailing
+reachable cell of the partition, the americas' 19th century, **57 → 60**; the
+15th is lower at 7 but neither of its two umbrellas has a fresh `P361` child
+dated in it, which this fire measured so no later one spends itself on it. Three
+events from Wikidata — `battle-of-salta` (`Q592091`),
+`battle-of-cancha-rayada-1818` (`Q333088`) and `battle-of-maipu` (`Q1073849`) —
+each filed from its own `P361`, each placed, **two places written by hand from
+the event items' own `P625`** because the import could put no name to either
+point, each with `summary: null` and with the item and the revision its name came
+from in `review.note`. **Main stays at 229.** **Three edges, each with two
+articles and a locator apiece**, which is M72's second author on all three; six
+candidates refused, one of them by **rule 4** and one unread on deviation 1370's
+test. The finding is **deviation 1372**: the Spanish-American independence vein
+is a set of small islands and the records already in it carry almost no edges —
+`battle-of-tucuman` had none at all until this fire, and 314 active events still
+have none — so the batch grew a component of 6 and one of 2 while the largest
+stood unmoved at **759**, and **579 / 588** is where A15(11)'s arithmetic sits.
+The conclusion is written into the next fire's first move: **the cheapest batch
+left in this cell writes edges between records the atlas already holds**, which
+needs no import and cannot touch the main count. Second finding, **deviation
+1371**: an edge into an umbrella runs backwards against rule 4 whatever the
+source says, because an umbrella is nearly always older than the thing that fed
+it — the cited `battle-of-maipu` → `peruvian-war-of-independence` edge was
+written, refused by the validator and withdrawn rather than argued with.
+`validate --index` clean at 0 errors and A15(2)'s recache at 0 missing revisions.
+Africa and Asia stand at 214 and 214 against A10's 303.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
