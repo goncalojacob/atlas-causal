@@ -5885,3 +5885,24 @@ still not written.
 
 Both are `probable`: Wikipedia is the only source, and A2 leaves `consensus`
 open only through a work Wikipedia itself cites.
+
+## Batch 77 — one edge, over thirty years
+
+| from | type | to | confidence | the sentence that argues it |
+| --- | --- | --- | --- | --- |
+| `rwandan-revolution` | precondition-of | `rwandan-civil-war` | probable | *"The revolution caused at least 336,000 Tutsi to flee to neighbouring countries, where they lived as refugees"* and *"In 1990 the Rwandan Patriotic Front (RPF), a rebel group composed primarily of Tutsi refugees, invaded northern Rwanda; this began the Rwandan Civil War."* — "Rwandan Revolution", revision 1367896898, lead and § Post-revolution Rwanda |
+
+**Thirty-one years is why this is a precondition and not a cause**, for the same
+reason the Sétif massacre is one nine years out. The article does not say the
+revolution began the war; it says the revolution made the exiled population, and
+that the war was begun by the force that population raised. `precondition-of` is
+the type that says exactly that, and it is the honest reading of two sentences
+that are thirty years apart in the same lead.
+
+**It crosses an umbrella**, which is the count A15(11) asks every batch for: the
+revolution is filed under `decolonisation-of-africa` and the civil war is a main
+event, so the pair shares no parent. It is also the edge that took the new record
+straight into the largest connected component, 765 → 766.
+
+`probable`: Wikipedia is the only witness, and A2 leaves `consensus` open only
+through a work Wikipedia itself cites.

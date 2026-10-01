@@ -19458,3 +19458,172 @@ next push, which is deviation 1258's chain and costs nothing.
   placed, and it is also a question about 182 labels that somebody should look
   at rather than a fire slip in.
 - **Deviation numbers: take the next above 1511.** This fire wrote 1502 to 1511.
+
+## Batch 77 — the Rwandan Revolution, and the Scramble's sixteen read to the end
+
+*1 October, the import fire that claimed at 06:17Z. **An import fire**: today's
+`## Curation 2026-10-01` section was already in this file, and so were all six
+A14 and all thirteen A15 sections, so no pass was owed before it. **Africa, by
+A10's order of need** — Africa 214 and Asia 214 at the start, Europe 555, and
+the lane that trails is taken first.*
+
+### The sweep: `decolonisation-of-africa`'s own links
+
+The 30 September stand left the method and said the same question had not been
+asked of the other ten umbrellas. It has now been asked of one of them.
+`action=parse&prop=links` on `"Decolonisation of Africa"` at revision
+1372152864, the revision the record already cites:
+
+| | |
+| --- | --- |
+| mainspace links that exist | **848** |
+| not held by article title | **817** |
+| event-shaped by name | **50** |
+| resolved to items and dated | **24** |
+| **dated inside the umbrella's own span** | **8** |
+| imported | **1** |
+
+Of the eight inside the span: **one imported**; one refused on the class table
+(`Q7321053`, Rhodesia's Unilateral Declaration of Independence, whose only `P31`
+is `Q3884316`); one refused on the lane (`Q3513409`, the Belgo-Congolese Round
+Table Conference — its `P131` is Brussels and its `P17` Belgium, so A9 would
+place it in Europe and it is M42b's half of the partition, not this one); and
+**five refused under A15(1)**, their articles read whole at their current
+revisions with no causal sentence naming a held event: the 1956 Gold Coast
+general election, the 1960 Ghanaian constitutional referendum, the 1960 South
+African republic referendum, the 1970 Gambian republic referendum and the 1974
+Comorian independence referendum.
+
+**The 1960 South African republic referendum is the near miss and it is the same
+near miss as the Moroccan crises.** Its § "Yes" campaign states a cause —
+*"The pro-republic campaign focused on the need for white unity in the face of
+British decolonisation in Africa, and the eruption of the former Belgian Congo
+into bloody civil war following independence, which Verwoerd warned might give
+rise to similar chaos in South Africa"* — and the thing it names is
+`congo-crisis`, **by description and not by name**. Batch 76 refused the First
+Moroccan Crisis on exactly that reading and this fire refuses this one the same
+way: supplying the identification is a reading an assistant does not get to
+make. It is a good question for the owner or a reviewer, and it is the second
+one of its shape, which is worth noticing.
+
+**`Q2082182`, the Addis Ababa Agreement of 1972, is the one refusal that is the
+tool's and not the reading's, and it is the most valuable thing this sweep
+found.** 20 sitelinks, a class the table holds, and **two** edges waiting in its
+own article at revision 1329096391 — its lead, *"a set of compromises within a
+1972 treaty that ended the First Sudanese Civil War (1955–1972)"*, and its
+§ Termination, *"The Southern Sudan Autonomous Region was abolished on 5 June
+1983, ending the Addis Ababa Agreement. This initiated the Second Sudanese Civil
+War (1983–2005)"*, with both wars held and active here. **The item carries no
+date at all** — no `P580`, no `P582`, no `P585` — so `intervalFor()` returns
+null and the import refuses it before any of that is reached. A15(4) taught the
+import to read the span off the article's **title** where the item disagrees;
+the title here is `Addis Ababa Agreement (1972)` and states the year outright,
+but `spanFromTitle()` only corrects an interval that exists. **Deviation 1512**
+below.
+
+### The record
+
+| record | item | revision cited | filed under | lane |
+| --- | --- | --- | --- | --- |
+| `rwandan-revolution` | `Q4162685` | 1367896898 | `decolonisation-of-africa` | africa |
+
+The filing is argued in `docs/m62-umbrellas.md` and comes from the **umbrella's
+own** cited article rather than the child's: *"Following the Rwandan Revolution,
+the trusteeship became the independent states of the Republic of Rwanda and the
+Kingdom of Burundi in 1962"* (§ Belgium). A period's article naming an episode is
+the period's author saying what the period contains.
+
+**A9 wrote no place and that is a refusal already on the books.** The item has no
+`P625`, no `P276` and no `P131`; its `P17` is `Q590743`, Ruanda-Urundi, and the
+import's own line is *"no place from Q590743: its class is not a place of this
+atlas"* — deviation 1474's class, the 35 items whose class the place table does
+not hold. The lane is `africa` all the same, from the country's own point, which
+is A15(7)'s rule. The record's `category` is `war`, read off `P31` `Q766875`
+(ethnic conflict) by the class table; its other `P31`, `Q10931`, carries no
+category there and the table is the authority, not this fire.
+
+### The edge, and A15(5)'s verdict taken before it was written
+
+`rwandan-revolution --precondition-of--> rwandan-civil-war`, `probable`, argued
+in `docs/m42-connections.md`. `verdictFor()` was run on all three candidate
+quotes against the live candidate list **before anything was written**: all three
+came back `write`, none opens with chronology and none names a third held event
+as the cause. **It crosses an umbrella** (A15(11)): the revolution is filed and
+the civil war is a main event, so the pair shares no parent.
+
+### The Scramble's sixteen are now read to the end, and the vein is spent
+
+The 30 September fire screened 16 candidates inside `scramble-for-africa`'s span
+and read three of them. **This fire read the other thirteen** — the Emin Pasha
+Relief Expedition, Buaró, the Italo-Ethiopian War of 1887–1889, the Brussels
+Anti-Slavery Conference, Marracuene, the Franco-Hova Wars, the Rabih War,
+Jigjiga, the Anglo-Aro War, the Cunene, the Algeciras Conference, Mufilo and Dul
+Madoba — whole, at their current revisions, through `statesACause()` and
+`namesHeldEvents()` over the live corpus. **Not one earns an edge.**
+
+Two came close and both fail the same way the Moroccan crises did:
+
+- **The Italo-Ethiopian War of 1887–1889** (`Q3778598`, rev 1370624669) is the
+  one the 30 September stand predicted. Its lead says *"The treaty also contained
+  clauses whose different interpretations led to another Italo-Ethiopian War"* —
+  a cause stated, and the thing caused is `first-italo-ethiopian-war`, **named by
+  description**; and the cause named is the Treaty of Wuchale, which this atlas
+  does not hold, so A15(5)'s reattribution has nowhere to point. The only
+  sentence that names a held event by name is nomenclature and not a claim: *"It
+  may be called the First Italo-Ethiopian War and the war of 1895–1896 as the
+  Second Italo-Ethiopian War."*
+- **The Algeciras Conference** (`Q163573`, rev 1372665132) names
+  `russo-japanese-war` twice as a cause, and both times the thing caused is
+  Russia's negotiating position and not the conference. Its class is not in the
+  table either.
+
+**Four of the thirteen are the Portuguese campaigns in Angola and Mozambique** —
+Buaró, Marracuene, Mufilo, the Cunene — which the 30 September stand called this
+atlas's own subject reached through the world. Their articles are 686 to 2,921
+characters long and contain no causal prose at all. A record of this atlas's own
+subject is not the same thing as a record that can earn an edge.
+
+### Deviation 1512 — `spanFromTitle()` corrects an interval and cannot supply one
+
+A15(4) asked the import to run the `span-vs-article-title` comparison at the
+point of writing, and it does: `spanFromTitle(when, title)` takes the title's
+years where the item's disagree. Its first line is
+`if (!when || !Number.isInteger(when.start)) return { when, from: null }` — so an
+item with **no** date is refused by `intervalFor()` one step earlier and the
+title is never read. For `Q2082182` that costs a record whose article names its
+own year in its own title and has two edges waiting in its body.
+
+Whether a run may date a record from its article's title alone, with nothing from
+the item, is **a decision and not a bug**: it is reading a cited source, which A7
+allows for widening, and it is also the import asserting a span no editor of the
+item asserted. The next fire can take it either way; this one wrote the deviation
+rather than the code, because a one-line change to `intervalFor()`'s contract
+belongs in front of a test and the records it would create are not this batch's.
+
+### Counts
+
+Before → after, both measured with `tools/m42-pool.mjs` and the lane counts with
+the topology's own `region`:
+
+- **active events 1,374 → 1,375**; **main 229 → 229, unmoved**; filed 1,145 →
+  1,146. **The main count did not rise** (A6), because the one record arrived
+  filed.
+- **per lane, active / main**: Europe 555/85 unchanged, Americas 391/56
+  unchanged, Asia 214/57 unchanged, **Africa 214/31 → 215/31**. Africa is now
+  ahead of Asia by one; A15(1)'s target for both is 303.
+- **active edges 1,181 → 1,182. Largest connected component 765 → 766.**
+  Components 400 → 400: the record did not start one, it joined the largest.
+- **Edges crossing an umbrella (A15(11)): 591 → 592**, inside one 590 unchanged.
+  The one edge written crosses.
+- Active events with no edge at all: **307, unchanged**.
+- **Candidates left unconnected, which A15(1) asks every batch note to carry:
+  23** from this sweep (the 24 resolved less the one imported) and **13** from
+  the Scramble's sixteen, now read and left for good.
+- Validator **0 errors, 601 warnings**, which is batch 76's number unchanged: the
+  new record is filed, lane-derived and cited, so it adds none.
+
+A11(b)'s partition check, made before anything was written and against
+`origin/m42b`'s own `data/events/` rather than its seeds: that branch holds
+**1,614** event records, among them `rwandan-civil-war` and
+`treaty-of-addis-ababa`, and **no `rwandan-revolution` and no record carrying
+`Q4162685`**.

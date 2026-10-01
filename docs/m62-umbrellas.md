@@ -491,3 +491,23 @@ names no actor, so it can only take children in its own lane — and the questio
 of what a period's lane should be is the line the 30 September fire left.
 
 **Main is 229 before and 229 after.** It has not risen.
+
+## Batch 77 — one filing, argued from the umbrella's own article
+
+*1 October, the import fire that claimed at 06:17Z.*
+
+| record | parent | why that umbrella |
+| --- | --- | --- |
+| `rwandan-revolution` | `decolonisation-of-africa` | The umbrella's **own cited article** names it as the step by which the Belgian trusteeship ended: *"Following the Rwandan Revolution, the trusteeship became the independent states of the Republic of Rwanda and the Kingdom of Burundi in 1962"* (`"Decolonisation of Africa"`, revision 1372152864, § Belgium). The span half holds on the dates and not only the years — 1 November 1959 to September 1961, inside the article's own "mid-1950s to 1976" — and the subject half is the lane, which is `africa` for both. |
+
+The item carries no `P361`, so the filing is this fire's and is argued from the
+article the umbrella already cites rather than from Wikidata. It is the shape
+batch 76 used for `fashoda-incident`, with the difference that the sentence is
+in the **umbrella's** article rather than the child's: a period's own article
+naming an episode is the period's author saying what the period contains, which
+is the strongest filing argument this atlas can read.
+
+Nothing propagates one step down: the record is new and has no children.
+
+**Main is 229 before and 229 after.** The imported record arrives filed, which
+is what A6 asks of an import.
