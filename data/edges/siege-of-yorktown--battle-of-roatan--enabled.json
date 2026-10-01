@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "siege-of-yorktown--battle-of-roatan--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-61"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Roatán\", revision 1370587600, § Background"
+    }
+  ],
+  "from": "siege-of-yorktown",
+  "to": "battle-of-roatan",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Gálvez had planned the Central American offensive since 1780 and the article says plainly what held it: \"He raised as many as 15,000 militia, and received financial and logistical support from many parts of the Spanish colonial empire in the Americas. **For logistical and diplomatic reasons, no operations were launched until after the American victory at Yorktown in October 1781. The British loss opened the possibility that the British would be able to deploy troops to Central America to better defend the area.** Gálvez's plans called for assaults on the British presence in the Bay Islands (principally Roatán), followed by a sweep along the coast to eliminate the British from the mainland.\" Taken alone the first of those two sentences is chronology and nothing more; the second states the mechanism — the British defeat freed British troops for Central America, and that is what released an assault already prepared. Yorktown is therefore what let the Roatán operation sail, not what caused it.",
+  "dispute": null
+}

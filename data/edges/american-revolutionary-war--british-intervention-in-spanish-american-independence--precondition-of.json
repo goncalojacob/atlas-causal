@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "american-revolutionary-war--british-intervention-in-spanish-american-independence--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-61"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"British intervention in Spanish American independence\", revision 1366734765, § Background"
+    }
+  ],
+  "from": "american-revolutionary-war",
+  "to": "british-intervention-in-spanish-american-independence",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article's § Background turns on the loss of the Thirteen Colonies: \"By 1783 Britain had lost her Thirteen Colonies of North America, **which had become independent with the support of both France and Spain. Britain then looked to restore her loss of prestige, and expand its influence in the Americas.**\" What follows in the same section is the record of that search — the Nootka Crisis of 1789, Francisco de Miranda putting the independence of Spanish America to British ministers, the Vansittart Plan of 1795 \"with the aim of an expedition striking Buenos Aires and from then on to Callao via the Andes\". The war against the colonies is what set Britain looking south; the article does not say it caused any of the interventions that came of it, and this edge does not either.",
+  "dispute": null
+}

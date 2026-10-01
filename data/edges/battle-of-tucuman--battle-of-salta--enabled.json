@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-tucuman--battle-of-salta--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-59"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Salta\", revision 1370273475, § Background"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tucumán\", revision 1370275835, § Results"
+    }
+  ],
+  "from": "battle-of-tucuman",
+  "to": "battle-of-salta",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "Salta's own article states what the earlier victory gave Belgrano to fight with: \"Belgrano had taken advantage of the victory at Tucumán to reinforce his army. In four months he improved the discipline of his troops, improved training and recruited sufficient men so as to duplicate their numbers. The artillery abandoned by Tristán in the previous battle helped Belgrano to fill his lack of equipment.\" Tucumán's own article counts the same materiel from the other side — \"The materiel abandoned by the Spaniards —13 cannons, 358 muskets, 39 wagons, 70 ammunition boxes and 87 tents— would serve the Army of the North in the subsequent campaign\" — and names the march it paid for: \"Belgrano would gain Juan Antonio Álvarez de Arenales, with whom he would start on 12 January the march towards Salta, where the royalists had entrenched.\" `enabled` and not `caused`: what the two articles state is that the men and the guns Tucumán left behind are what went north, not that the first battle made the second one necessary.",
+  "dispute": null
+}

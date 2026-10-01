@@ -15306,3 +15306,603 @@ suite is **green** — **2,242 tests, 0 failed, 0 skipped** (1,929 pure and 313 
     `capture-of-luanda` carries `wikipedia.en: "Capture of Luanda"`, which
     **redirects to *Dutch Loango-Angola***. That is A15 (8)'s case on a record
     this lane did not write, and A15 (8) is M42's data pass, not a batch's.
+
+## Batch 59 — Salta, Cancha Rayada and Maipú, and the islands the independence wars are
+
+*1 October, the fifty-third fire. The last stand's move 3 sent this fire to the
+americas, and inside the americas the trailing reachable cell is the **19th
+century at 57** — the 15th is lower at 7 but has no fresh `P361` child at all
+under either of its two umbrellas, so nothing can be imported into it by this
+route. The vein worked is the five Spanish-American wars of independence, whose
+umbrellas this atlas holds with 20-odd children each already here.*
+
+### Imported (A9, A15 (6), A15 (3))
+
+| record | item | when | lane / century | filed under | place |
+| --- | --- | --- | --- | --- | --- |
+| `battle-of-salta` | `Q592091` | 1813-02-20 | americas, 19th | `argentine-war-of-independence` | `campo-de-castanares` (new, `point`) |
+| `battle-of-cancha-rayada-1818` | `Q333088` | 1818-03-19 | americas, 19th | `chilean-war-of-independence` | `cancha-rayada` (new, `point`) |
+| `battle-of-maipu` | `Q1073849` | 1818-04-05 | americas, 19th | `chilean-war-of-independence` | `santiago` (held, `Q2887`) |
+
+**A15 (4) held on all three**: 1813-02-20 against *"'''Battle of Salta''' took
+place on February 20, 1813"*; 1818-03-19 against *"'''Battle of Cancha Rayada'''
+(March 19, 1818)"*; 1818-04-05 against Maipú's infobox *"5 April 1818"* and the
+*Chilean War of Independence* article's *"on April 5, 1818"*. **A15 (6) refused
+the country on Salta** — `Q414` Argentina's inception, 1816, is after the event
+ended in 1813 — and `Q44803` Salta Province was refused for its class, so the
+import could reach no named place for either Salta or Cancha Rayada and said so:
+*"its own point (…) and no name a tool can read; a person writes that place"*.
+
+**The two places were written by hand from the event items' own `P625`**, which
+is A9's first preference, and each carries in `review.note` which item's point
+it is and which revision of which article its name comes from — *"the plains of
+Castañares, north of the present-day Argentine city of Salta"* (*Battle of
+Salta*, rev 1370273475) and *"the Cancha Rayada plains, about seven kilometers
+away"* from Talca (*Battle of Cancha Rayada (1818)*, rev 1370436071). **No
+Wikidata item is claimed for either place**: the point is the battle's, not a
+settlement's, and the records say so. **A15 (3)**: both carry `summary: null`.
+Both derive to `americas`, the lane the three events are drawn in, so the **24
+September lane guard** holds; `region` is left `null` on all three events and
+comes from the place.
+
+**A15 (8) did not fire**: each item's English sitelink is its own article.
+*Second Battle of Cancha Rayada*, which is what the Maipú and war articles link,
+is a redirect **into** `Q333088`'s article and not away from it, and
+`titleFor()` kept the disambiguator, so the record's title is *Battle of Cancha
+Rayada (1818)*.
+
+### Edges written (A5, M72, A14, A15 (5))
+
+| from → to | type | what carries it |
+| --- | --- | --- |
+| `battle-of-tucuman` → `battle-of-salta` | `enabled` | *Battle of Salta*, rev 1370273475, § Background: *"Belgrano had taken advantage of the victory at Tucumán to reinforce his army. … The artillery abandoned by Tristán in the previous battle **helped Belgrano to fill his lack of equipment**."* Second author, *Battle of Tucumán*, rev 1370275835, § Results, counting the same materiel from the other side: *"13 cannons, 358 muskets, 39 wagons, 70 ammunition boxes and 87 tents— **would serve the Army of the North in the subsequent campaign**"*, and the march it paid for — *"he would start on 12 January the march towards Salta, where the royalists had entrenched"*. |
+| `battle-of-chacabuco` → `battle-of-maipu` | `precondition-of` | *Battle of Chacabuco*, rev 1373197409, § Aftermath: *"The victory at Chacabuco marked the **beginning of the expulsion** of Spanish forces from Chile, **a process completed the following year at the Battle of Maipú**."* The same section says what was left to complete: the royalists *"retreated to the southern tip of Chile, where they established a small enclave … **reinforced by sea and continued to pose a threat to the Chilean nation**"*. Second author, *Battle of Maipú*, rev 1370268820, § Background, for the same ground. |
+| `battle-of-cancha-rayada-1818` → `battle-of-maipu` | `caused` | *Battle of Maipú*, rev 1370268820, § Background: Osorio *"realized that he had **not defeated the Patriot army conclusively at Cancha Rayada**, and moreover, that the latter was fit to fight and to win. **Facing this fact, another encounter … became inevitable**."* And on the patriot side: *"Despite being defeated at Cancha Rayada, the Patriot army regrouped again in less than two days … **Hence**, on April 2 …"*. Second author, *Chilean War of Independence*, rev 1371212438, § Patria Nueva, for the fortnight between the two. |
+
+All three are `probable` on the articles alone (rule 22) and each names a second
+author (M72). **A14 held**: every one runs between siblings. The
+`precondition-of` edge says in the record itself what its two sentences do *not*
+state — that neither article makes Chacabuco the cause of Maipú, and that
+Pezuela's expedition is not written as a response in either of them — which is
+why it is not `caused`.
+
+### What was refused, and why
+
+| candidate | reason |
+| --- | --- |
+| `Q3051491` *Capture of Valdivia*, 1820 | **refused by the import: no `P31` at all**, so nothing says what kind of thing it is. This one is worth the owner's eye, because the refusal is the *item's* and not the article's: at 27 kB with §§ Background, Aftermath and ten more it is the best-documented candidate in the vein, and its § Background states a cause naming this batch's own Maipú — after Maipú and the capture of Talcahuano *"the two remaining redoubts of Royalism **were viewed as a threat to the nascent Republic, since expeditions from Spain could arrive at them** and use these fortified localities as bases to overthrow the Republic"*. The edge was there and the item would not let the record be written. |
+| `Q5722376` *Battle of Corpahuaico*, 1824-12-03 | rev 1370109263, 3.5 kB, § Description and nothing else. The only events it names that this atlas holds are its own ancestors — *Peruvian War of Independence* and *Spanish American wars of independence* — and **A14 bars an edge from a parent to its own child**. No edge, so under A5 not imported. |
+| `Q388210` *Battle of Carabobo*, 1821-06-24, 18 sitelinks | rev 1375140230, § Before the battle read whole. It walks Miranda, the Admirable Campaign, the two lost republics, Gran Colombia and the 1820 armistice, and **names no event this atlas holds** — the Admirable Campaign is itself a candidate and not a record. The best-sitelinked candidate in the Venezuelan vein and it still has no anchor. |
+| `Q2890925` *Battle of Lake Maracaibo*, 1823 | rev 1370267825. § Consequences reaches only Morales's surrender of the ships and forts and the Spanish departure of 5 August; no held event. |
+| `Q5807357` *First siege of Callao*, 1821 | rev 1372494574, § Background. The occupation of Lima and Cochrane's earlier maritime blockade are what it states, and neither is a record here; the held `second-siege-of-callao` of 1824 is not named. |
+| `Q5723183` *Battle of Zepita*, 1823 | **1,459 bytes and no sections at all.** Refused on deviation 1370's test before it was read for a cause — the test paid again. |
+| `battle-of-maipu` → `peruvian-war-of-independence`, `enabled` | **written, validated and withdrawn: rule 4.** Deviation 1371 below. |
+
+**The candidates the batch left, counted (A15 (1))**: the sweep this fire ran —
+`P361` children, with an English article, of all **37** held umbrellas in this
+lane's partition that carry a `wikidata` id — returned **459** unique items this
+atlas does not hold, of which **110** are americas events dated in the 19th
+century: 54 under `american-indian-wars`, 17 Venezuelan, 16 Chilean, 10
+Argentine, 8 Peruvian, 6 Bolivian, and one each under
+`saint-domingue-expedition` and `spanish-american-wars-of-independence` — which
+sums to 113 and not 110, because three of the items are `P361` children of two
+of these umbrellas at once. This
+batch took three of them, read and refused five more, and refused one on
+deviation 1370's test. A further 25 americas candidates carry **no date at all**
+in the item and were not sorted into a century.
+
+### Per lane and per century (A10), after the batch
+
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 7 / 5 | 11 / 7 |
+| 16th c. | 44 / 1 | — | — | 49 / 3 | 93 / 4 |
+| 17th c. | 109 / 3 | 7 / 0 | 4 / 0 | 70 / 7 | 190 / 10 |
+| 18th c. | 62 / 3 | 14 / 0 | 19 / 0 | 79 / 2 | 174 / 5 |
+| 19th c. | 39 / 9 | 28 / 1 | 8 / 6 | **60 / 8** | 135 / 24 |
+| 20th c. | 244 / 59 | 88 / 22 | 155 / 37 | 89 / 30 | 576 / 148 |
+| 21st c. | 52 / 7 | 76 / 7 | 28 / 14 | 36 / 1 | 192 / 29 |
+| **all** | **555 / 85** | **214 / 31** | **214 / 57** | **390 / 56** | **1373 / 229** |
+
+*Active events, then of those the ones that are part of nothing. Africa and Asia
+stand at 214 and 214 against A10's 303. Africa's 19th century is 28 and not the
+26 of the last stand: two events arrived with this fire's `origin/m42` merge and
+are M42's, not this batch's.*
+
+### The component, and the measurement A15 (11) asks for
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1370 | **1373** |
+| main | 229 | **229** |
+| largest connected component | 759 | 759 |
+| the Chacabuco island | 3 | **6** |
+| the Tucumán island | 1 | **2** |
+| edges crossing an umbrella | 579 | 579 |
+| edges inside one umbrella | 585 | **588** |
+| active edges | 1164 | **1167** |
+
+**All three edges are inside one umbrella and none crosses one**, which is the
+honest answer and not a good one. The reason is deviation 1372: the component
+the batch grew is not the largest and is nowhere near it.
+
+### Deviation 1371 — rule 4 bars an edge to an umbrella that began before the event, however the source words it
+
+Maipú's own § Outcome states an enabling in the word itself: *"The victory had
+large consequences; it brought to an end major Spanish operations in Chile, and
+**allowed** the combined Chilean and Argentine force to launch a series of
+attacks against Spanish positions along South America's Pacific coast,
+**culminating in the liberation of large parts of Peru** from Spanish rule."*
+The *Chilean War of Independence* article, § Incorporation of Valdivia and
+Chiloé, says why that expedition followed rather than the business ending in
+Chile: *"San Martín and O'Higgins were in agreement that the danger would not be
+passed until the Viceroyalty of Peru itself was independent from Spain. **Thus,
+a fleet and army was prepared for an expedition to the country**, and in 1820,
+San Martín and Cochrane set off for Peru."* That is A15 (5) satisfied twice over
+and A14 satisfied — `peruvian-war-of-independence` is not Maipú's parent — and
+the edge was written. The validator refused it:
+
+```
+error [rule 4] edges/battle-of-maipu--peruvian-war-of-independence--enabled.json:
+  arrow of time: "battle-of-maipu" cannot start after "peruvian-war-of-independence"
+```
+
+Maipú is 1818 and the Peruvian war is dated from 1809, so an edge into it from
+1818 runs backwards whatever the sentence says. **The edge was withdrawn, not
+argued with**, and the record deleted before the commit. The rule is right and
+the reading that produced the edge was wrong in one specific way worth naming:
+the quoted sentences are about the **campaign of 1820–1824 inside** the Peruvian
+war, which this atlas does not hold as a record of its own, and not about the
+war that began in 1809. `Q6123592` *Second Intermedios campaign* and the
+Liberating Expedition are the records that would take such an edge, and a fire
+that imports one of them can write it. **The general rule for a batch: before
+writing an edge into an umbrella, compare the umbrella's `when.start` with the
+event's, because an umbrella is almost always older than the thing that fed
+it.** Measured on the records as they stand, 229 of 1,373 active events are
+umbrellas and every one of them predates most of its vein, so this is a trap any
+batch that writes to an umbrella will meet.
+
+### Deviation 1372 — the independence wars are a set of small islands, and the filing by campaign is what hides it
+
+The batch's three events sit in two components: `battle-of-maipu`,
+`battle-of-cancha-rayada-1818` and `battle-of-chacabuco` are in one of **six** —
+with `crossing-of-the-andes`, `battle-of-rancagua` and
+`battle-of-las-tres-acequias` — and `battle-of-salta` with `battle-of-tucuman`
+in one of **two**, which before this batch was `battle-of-tucuman` alone. The
+largest component did not move at all, and neither did the next nine sizes. This
+is deviation 1365's blind spot again, and the remedy was applied by hand again.
+
+What is new is the cause, and it is a finding about the corpus rather than about
+the tool. The americas 19th century holds **60** active events after this batch
+and **the Spanish-American independence vein inside it is a set of small
+islands**. Counted on the records: the four groups the vein's edges make are
+`{crossing-of-the-andes, battle-of-rancagua, battle-of-las-tres-acequias,
+battle-of-chacabuco, battle-of-cancha-rayada-1818, battle-of-maipu}` at six,
+`{battle-of-ayacucho, battle-of-tumusla}` at two, `{battle-of-torata,
+battle-of-moquegua}` at two and `{battle-of-tucuman, battle-of-salta}` at two —
+and beside them six held events with **no edge at all**:
+`battle-of-cerro-de-pasco`, `battle-of-ica`, `second-siege-of-callao`,
+`second-battle-of-la-puerta`, `battle-of-suipacha` and `batalla-de-la-florida`.
+`battle-of-tucuman` was a seventh until this fire. Across the whole atlas **314**
+active events have no edge.
+
+The filing is what hides this. **Twenty-two** of the vein's events are filed
+straight under `spanish-american-wars-of-independence` and only 7, 5, 4, 2 and 1
+under the Peruvian, Argentine, Chilean, Bolivian and Venezuelan wars
+respectively, so a lane that looks organised by campaign is not, and **filing is
+not an edge** — `parent` does not enter the adjacency, by design.
+
+**So the cheapest move left in this cell is not an import at all: it is edges
+between records the atlas already holds.** A5 asks a batch to write edges to
+what exists and says nothing about the two ends having to be new, and the
+articles for these events are the same ones a batch reads anyway. A fire that
+spends itself on, say, the Peruvian chain — `battle-of-cerro-de-pasco` 1820,
+`battle-of-ica` 1822, `battle-of-torata` and `battle-of-moquegua` 1823,
+`battle-of-junin` and `battle-of-ayacucho` and `second-siege-of-callao` 1824,
+all held, all in the same campaign, and sitting in three islands and two
+singletons — moves the component arithmetic further than three more imports
+would, and cannot touch the main count. **This fire went on and did it: batch
+60 below.**
+
+## Batch 60 — one edge between two records the atlas already held, and the two rules that stopped the rest
+
+*The same fire, immediately after batch 59, executing that batch's own move 1:
+**no import, no new record, no new place** — a pass that reads the articles of
+events this atlas already holds and writes the edges between them that those
+articles state. One edge was written. The pass is worth repeating and the note
+says why it yielded one and not six.*
+
+### The edge written (A5, M72, A14, A15 (5))
+
+| from → to | type | what carries it |
+| --- | --- | --- |
+| `battle-of-junin` → `battle-of-ayacucho` | `caused` | *Battle of Ayacucho*, rev 1375770122, §§ Olañeta's rebellion and Ayacucho campaign. The first names the battle — Bolívar "moved the whole month of May to Jauja", to face Canterac, "who was isolated in Junín on 6 August 1824" — and the second opens on its consequence: "**the defeat of Canterac forced La Serna to bring Jerónimo Valdés in from Potosí on a forced march with his troops**", and the viceroy, rejecting a direct assault on Cusco, "intended to cut Sucre's rearguard through march and countermarch maneuvers, **which led to the encounter in Ayacucho along the Andean range**". Second author, *Battle of Junín*, rev 1370266471, § Battle, from the patriot side: "The retreat of Canterac's troops after the defeat in Junin was relentless and defections … increased considerably. Eventually De la Serna, had to step in as commander of the Spanish forces to try to restore morale. **The patriot victory paved the way for a final triumph over the Spanish** … The final Spanish capitulation would come after the Battle of Ayacucho, on 9 December 1824." |
+
+`probable` on the articles alone (rule 22), two authors (M72), **A14 held** —
+both are children of `peruvian-war-of-independence` and neither is the other's
+parent. The edge merged the singleton `battle-of-junin` into
+`{battle-of-ayacucho, battle-of-tumusla}`, so that island is **2 → 3**.
+
+### What the pass refused, and the two rules behind it
+
+| pair | reason |
+| --- | --- |
+| `battle-of-torata` → `battle-of-moquegua` | **already here.** Batch 36 wrote it, `caused`, on Torata's lead and Ayacucho's § Background, and this pass found that out by overwriting the file and reading the count: active edges did not move by two. The record was restored from `HEAD` untouched — *a batch already pushed is never re-imported*, and that holds for a record a later batch would write identically. **The first rule for an edge pass: check `data/edges/<from>--<to>--<type>.json` before writing it**, and check the other four types too, because a different type is a different file and not a conflict. |
+| `battle-of-junin` → `second-siege-of-callao` | **A15 (5), and the pass's hardest call.** The siege's own § Callao mutiny states a deterioration and not a cause of the siege: "**After the triumph of the Liberation Army in the Battle of Junín in August 1824, the situation of the royalists was further affected**; At the beginning of December 1824, the royalist soldiers still stationed in Lima withdrew to the mountains, only to abandon the fight shortly after when they learned the result of the Battle of Ayacucho fought on December 9". Junín worsening the royalist position and the Lima garrison withdrawing in early December is two facts next to each other; that the withdrawal is *why Callao came to be besieged* is this reader's inference and not the article's sentence. **No edge.** |
+| `battle-of-ayacucho` → `second-siege-of-callao` | **rule 4, and deviation 1373 below.** The same section states the link outright — the royalists abandoned the fight "when they learned the result of the Battle of Ayacucho" — but the siege is dated 1824-12-05 to 1826-01-23 and Ayacucho 1824-12-09, so an edge from the battle to the siege starts after its target and the arrow of time refuses it. |
+| `battle-of-ica` → `battle-of-torata` | **A15 (5).** Ica's § Aftermath, rev 1370443527, reaches the right period and names nothing in it: "The outcome of the battle increased the material and morale of the Royalists. From now on, the Patriots in Southern Peru were on the defensive. After inflicting further defeats in January 1823, the Royalist general José Canterac would reoccupy Lima on 18 June 1823." The "further defeats in January 1823" are Torata and Moquegua, and the article does not say so. `battle-of-ica` keeps its degree of zero. |
+| `battle-of-suipacha` → anything held | **A15 (5).** § Background, rev 1370274854, has the expedition sent "After the 1810 May Revolution", which this atlas does not hold as a record, and § Aftermath states only morale and a political consequence — "it did secure for a long time the hegemony of the Revolutionary forces over the major part of the former Viceroyalty of the Río de la Plata" — naming no event. Degree stays zero. |
+| `second-battle-of-la-puerta` → anything held | **nothing held at either end of what it states.** § The Battle, rev 1370736349, makes the cause the *Battle of Carabobo (1814)* — "The Republicans had won the Battle of Carabobo on 28 May and had become overconfident when they decided to confront the irregular Royalist army" — which is `Q5722281`, a candidate and not a record; § Consequences runs to the *1814 Caracas Exodus*, likewise not here. **This is the one refusal an import would fix**, and `Q5722281` is the item to fetch. |
+| `battle-of-cerro-de-pasco` → anything held | **there is no English article at all.** `action=query` returns `missing` for *Battle of Cerro de Pasco*, which is why the record carries no `wikipedia.en`. Nothing to read, no edge, and nothing a later fire can do about it from English Wikipedia. |
+
+### The component, and A15 (11), after batch 60
+
+| | before 59 | after 59 | after 60 |
+| --- | --- | --- | --- |
+| active events | 1370 | 1373 | **1373** |
+| main | 229 | 229 | **229** |
+| largest connected component | 759 | 759 | **759** |
+| the Chacabuco island | 3 | 6 | **6** |
+| the Ayacucho island | 2 | 2 | **3** |
+| the Tucumán island | 1 | 2 | **2** |
+| edges crossing an umbrella | 579 | 579 | **579** |
+| edges inside one umbrella | 585 | 588 | **589** |
+| active edges | 1164 | 1167 | **1168** |
+
+**No edge this fire crosses an umbrella, and that is now explained rather than
+just reported.** Every edge either fire wrote runs between two children of one
+war, because the vein's events are filed by campaign and the records that would
+*straddle* two campaigns — the Liberating Expedition of Peru, the First and
+Second Intermedios campaigns, Bolívar's campaign to liberate New Granada — are
+candidates and not records. **A15 (11)'s number will not move in this lane until
+one of them is imported**, and each is a main event, which is the main-count
+question again.
+
+### Deviation 1373 — a long siege cannot take an edge from the battle that decided it
+
+Rule 4 compares the two records' starts. `second-siege-of-callao` runs
+1824-12-05 to 1826-01-23 and `battle-of-ayacucho` is 1824-12-09, so the edge the
+siege's own article states — the garrison abandoned the fight "when they learned
+the result of the Battle of Ayacucho" — cannot be written in that direction, and
+in the other direction it is not what the article says. This is deviation 1371's
+rule met from the other side: **1371 is about an umbrella that began before its
+own cause, and 1373 is about any record with a long span.** Both reduce to one
+check a batch can make before it reads an article for the quote: **compare
+`when.start` at the two ends, not `when.end`, and not the dates in the
+sentence.** Measured on the records as they stand, **183 of 1,373**
+active events have a span longer than two years, so this is not a rare shape.
+
+The rule is right and the atlas is poorer for the honest consequence: a reader
+following Ayacucho will not be shown the fortress that held out for thirteen
+months after it. What would carry that link is a record for the **capitulation of
+Ayacucho**, dated the day of the battle, which the article gives a section of its
+own; that is a new record and a question for a fire that is importing, not for an
+edge pass.
+
+## Batch 61 — the Peninsular War joined to three South American wars, and A15 (11) moves
+
+*The americas 19th century, with an edge pass over the americas 18th beside it.
+**One event imported** — `Q5722281` *Battle of Carabobo (1814)*, which batch
+60's note named as the one candidate its own refusals proved would pay — and
+**nine edges** written to records the atlas already held. **Seven of the nine
+cross an umbrella.** That number has been zero for every batch of this lane,
+and the last stand concluded it could not move here without importing main
+events, which A6 bars. That conclusion was wrong, and the way it is wrong is
+the finding of this batch: **the crossing edges were already available between
+umbrellas the atlas holds**, and what was missing was reading the European war
+that stands behind the Spanish American ones. Nothing was imported to get
+them. The main count did not move.*
+
+### What was imported (A9, A15 (4), A15 (6), A3)
+
+| item | record | date | place | filed under |
+| --- | --- | --- | --- | --- |
+| `Q5722281` *Battle of Carabobo* | `battle-of-carabobo-1814` | 1814-05-28 (`P585`) | `venezuela-q717`, reused, precision `country` | `venezuelan-war-of-independence`, from `P361` |
+
+`titleFor()` kept the article's disambiguator, so the record is titled *Battle
+of Carabobo (1814)* and not *Battle of Carabobo*, which is the second battle,
+fought in 1821. **A15 (6) admitted the country**: the item carries no `P625`, no `P276`
+and no `P131`, so the place comes from `P17` alone — Venezuela, `Q717`, whose
+`P571` is 1811-07-05, before the event's end, with no `P576` and no second
+country named, and whose point is the point the held
+`second-battle-of-la-puerta` already stands on. **A15 (4) found nothing to
+widen**: the article's title states 1814 and its first sentence states no
+range, and `P585`'s single day stands. The summary is the cached lead at
+revision 1370436287. **Filed, so not a main event** — 229 before the batch and
+229 after.
+
+### The nine edges (A5, M72, A14, A15 (5), A15 (11))
+
+**Seven cross an umbrella** — their two endpoints have no parent in common —
+and they are marked ✚.
+
+| from → to | type | ✚ | what carries it |
+| --- | --- | --- | --- |
+| `battle-of-carabobo-1814` → `second-battle-of-la-puerta` | `precondition-of` | | *Second Battle of La Puerta*, rev 1370736349, § The Battle: "**The Republicans had won the Battle of Carabobo on 28 May and had become overconfident when they decided to confront the irregular Royalist army**, made up mainly of llanero horsemen, commanded by José Tomás Boves." A state of mind the first battle produced and a decision that followed from it, which is a precondition and not a cause: the article nowhere says Carabobo brought the rout about. |
+| `capture-of-cayo-cocina` → `battle-of-roatan` | `precondition-of` | ✚ | *Battle of Roatán*, rev 1370587600, § Background: Gálvez "had moved quickly when the declaration of war arrived, **seizing St. George's Caye** … **Many of the British fled that occupation to the island of Roatán** … British commander Edward Marcus Despard used Roatán as a base for guerilla-style operations … and for privateering operations against Spanish shipping." The flight from one island to the other, and what the refugees made of the second, is the stated mechanism. |
+| `siege-of-yorktown` → `battle-of-roatan` | `enabled` | ✚ | The same section: "**For logistical and diplomatic reasons, no operations were launched until after the American victory at Yorktown in October 1781. The British loss opened the possibility that the British would be able to deploy troops to Central America to better defend the area.**" The first sentence alone is chronology and A15 (5) would refuse it; the second states the mechanism, and an assault prepared since 1780 sailing when Yorktown released it is `enabled` and not `caused`. |
+| `capture-of-st-lucia` → `battle-of-martinique-1779` | `enabled` | | *Battle of Martinique (1779)*, rev 1370449172, § Background: Parker's fleet "was anchored at St. Lucia, **which the British had captured a year before in the Capture of St. Lucia**", and § Battle: a British ship "which was stationed in Saint Lucia channel, gave a signal indicating the arrival of an unknown fleet. Parker immediately scrambled". The capture is what put the squadron within sight of Flotte's convoy. |
+| `peninsular-war` → `chilean-war-of-independence` | `precondition-of` | ✚ | *Chilean War of Independence*, rev 1371212438, § Background, first paragraph: "**In May 1808 the overthrow of Charles [IV] and the start of the Peninsular War plunged the empire into a state of agitation.**" The same section follows the news to Santiago. A crisis of legitimacy arriving from Spain; the article gives the rising itself to local quarrels. |
+| `peninsular-war` → `peruvian-war-of-independence` | `precondition-of` | ✚ | *Peruvian War of Independence*, rev 1375180136, § Background: "**French Emperor Napoleon Bonaparte's 1808 invasion of Spain resulted in the abdications of Charles IV and Ferdinand VII in favour of Joseph Bonaparte. In Spanish America, autonomous governments arose in the power vacuum and instability of mainland Spain in Europe.**" Invasion, abdication, vacuum, juntas — four steps, all the article's. |
+| `peninsular-war` → `argentine-war-of-independence` | `precondition-of` | ✚ | *Argentine War of Independence*, rev 1375018429, § The Revolution: "**The military conflict in Spain worsened by 1810. The city of Seville had been invaded by French armies … The Junta of Seville was disestablished** … **This began the May Revolution in Buenos Aires, as soon as the news was known.** Several citizens thought that Cisneros, appointed by the disestablished Junta, did not have the right to rule anymore." An argument about authority and not about arms. |
+| `french-revolution` → `argentine-war-of-independence` | `inspired` | ✚ | The same article at the same revision, § Background: "**The ideas of the American and French Revolutions, and the Age of Enlightenment, promoted desires of social change among the criollos.**" An influence on what a party to the war wanted, which is what `inspired` is for and all the sentence claims. |
+| `american-revolutionary-war` → `british-intervention-in-spanish-american-independence` | `precondition-of` | ✚ | *British intervention in Spanish American independence*, rev 1366734765, § Background: "By 1783 Britain had lost her Thirteen Colonies of North America, **which had become independent with the support of both France and Spain. Britain then looked to restore her loss of prestige, and expand its influence in the Americas.**" The rest of the section is the record of that search — the Nootka Crisis, Miranda before British ministers, the Vansittart Plan of 1795. |
+
+All nine `probable` on the articles alone (rule 22). **A14 held on all nine** —
+no edge runs from a parent to its own child, and the three Peninsular War edges
+are the clearest case: `peninsular-war` is a child of `napoleonic-wars` and each
+target is a child of `spanish-american-wars-of-independence`, so they are not
+related by `parent` in either direction.
+
+### What was refused, and under which rule
+
+The pass read 33 articles in all — the 15 degree-zero records of the americas
+18th century and 18 of the 19th — in **five** `action=query` requests.
+
+| refused | rule |
+| --- | --- |
+| *Action of 12 December 1779*, *Battle of Guadeloupe (1779)*, *Battle of Río Bueno (1759)*, *Capture of Fort-Dauphin (1794)*, *Battle of Croix-des-Bouquets*, *Battle of Saint-Raphaël*, *Battle of Gonaïves*, *Battle of La Bombarde* | **deviation 1370's test, which paid a fourth time.** None has a § Background or an § Aftermath; the four Haitian ones are 2–4 kB stubs whose whole body is a § Battle. Read anyway, because the fetch was already spent, and none states a cause naming a held event: *Action of 12 December 1779* comes closest, giving the prize's cargo as arms "heading from Cádiz to Fort Omoa, which had recently been captured and then abandoned by British forces", which is where the Spanish ship was going and not why the engagement happened. |
+| *Battle off Barbados*, *Battle of Martinique (1780)*, *Capture of Sint Eustatius* | **A15 (5).** Each has a § Background and each names no held event in it as a cause. Sint Eustatius's turns on France's entry into the war in 1778, which this atlas does not hold as a record; Martinique 1780's § Origins is de Guichen succeeding d'Estaing and sailing, with no antecedent event; Barbados's is Biddle's orders from John Rutledge. |
+| `battle-of-ayacucho` → `second-siege-of-callao` | **rule 4, for the second fire running.** The siege's own lead states the link — the garrison "refused to accept the capitulation of the Battle of Ayacucho" — but the siege is dated 1824-12-05 and Ayacucho 1824-12-09, and in the same year with both dated the day decides. Deviation 1373's shape exactly, and the measurement is cheap: **compare the two `when.date`s before reading an article**. |
+| `rebellion-of-tupac-amaru-ii` → `peruvian-war-of-independence` | **the article states the contrary**, which is a refusal class the notes have not had to name before. Read at rev 1377781627 — the current one, not the one the record cites — § Background: "Throughout the colonial period of Peru, there were several social uprisings, **though none constituted a true independence movement**. The Rebellion of Túpac Amaru II, although not the first or the last, was the most significant … However, **there is debate as to whether the purpose of this rebellion was truly independence** or a revolution of the viceregal social order." An article that disputes the link is not a source for it, and `disputed` is for an edge two sources disagree about and not for one no source asserts. |
+| *Los Andes vs Prueba* | **A15 (5).** 14 kB with a § Background, and the background is the ship, her privateer's commission and her captain — no event. |
+| `battle-of-viluma` → `argentine-war-of-independence`, `battle-of-ibarra-1812` → `ecuadorian-war-of-independence`, `battle-of-suipacha` → `bolivian-war-of-independence`, `battle-of-buceo` → `argentine-war-of-independence`, `battle-of-las-piedras-1811` → `spanish-american-wars-of-independence`, `battle-of-ica` → `peruvian-war-of-independence` | **not a causal claim.** In every one the war is named in the lead as what the battle was *part of*, which is filing and not an edge; three of the six are already filed under that war or its own parent. |
+
+### The component, and A15 (11), after batch 61
+
+| | before 61 | after 61 |
+| --- | --- | --- |
+| active events | 1373 | **1374** |
+| main | 229 | **229** |
+| largest connected component | 759 | **765** |
+| components | 406 | **400** |
+| events with no edge | 314 | **307** |
+| **edges crossing an umbrella** | 584 | **591** |
+| edges inside one umbrella | 588 | **590** |
+| active edges | 1172 | **1181** |
+
+*The before column is measured on this fire's head after the `origin/m42`
+merge, which brought four edges of M42's 1 October curation fire with it; the
+last stand's figures (759 / 579 / 585 / 1164) were taken before that merge,
+which is why the crossing count reads 584 here and 579 there.*
+
+**Six of the seven crossing edges went into the largest component**, which is
+why it moved by 6 on nine edges: the three Peninsular War edges and the French
+Revolution one attached `chilean-`, `peruvian-` and `argentine-war-of-independence`
+and nothing else, because each of those three was a degree-zero umbrella sitting
+beside the component its own children are in.
+
+### The three findings
+
+1. **A15 (11) was never blocked by A6 in this lane.** The last stand's move 4
+   said every record that would make an edge cross an umbrella here is itself a
+   main event, and listed five candidates. What it missed is that **the
+   umbrellas already here are not connected to each other**: four of the
+   Spanish American wars of independence had degree zero, and the European war
+   that every one of their articles opens on — the Peninsular War — was held,
+   filed under `napoleonic-wars`, and unlinked to any of them. Seven crossing
+   edges came out of that for the cost of five HTTP requests and no import.
+   **Deviation 1374: before concluding that a measurement cannot move without
+   an import, run the edge pass over the lane's own umbrellas, not only over
+   its leaves.** A war umbrella with degree zero is the cheapest crossing edge
+   there is, because its parent is almost never the parent of what caused it.
+2. **An article that disputes a link is not a source for it.** Túpac Amaru II
+   is the first case this run has met where the target's own article names the
+   candidate and then argues against the connection. `disputed` is the wrong
+   answer — that confidence is for a link historians disagree about, and here
+   the only reading on the page is against. **Deviation 1375: where the cited
+   article states the contrary of the edge, no edge is written and no
+   confidence is lowered to carry it.**
+3. **A15 (2)'s recache can take away the evidence it is supposed to keep**,
+   and this batch made it do so. `cache-evidence --fill` picks which revision of
+   an item the cache holds by counting citations — most cited wins, ties to the
+   later — and it counts an **edge's** citation, although an edge's citation can
+   never be answered by the cache: `leadcache.mjs` classes every edge `unkeyed`,
+   because an edge names an article and carries no item. Two of this batch's
+   edges cited revision 1376918380 of *Argentine War of Independence* against
+   the record's own 1375018429, and one cited 1377781627 of *Peruvian War of
+   Independence* against the record's 1375180136; `--fill` replaced both cached
+   leads with the newer revisions and `tests/leadcache.test.mjs` failed, naming
+   exactly those two records. The remedy taken was the honest one and not a
+   change to the tool: every sentence the three edges quote was checked through
+   `revids` against the revision the target record already cites and is verbatim
+   there, so the three locators name those revisions and the cache went back.
+   A15 (2) then reports **0 revisions that should be on disk and are not** and
+   **2,808 of 2,884 citations on disk at the revision cited**, two more than
+   before the batch, with the unholdable count down from 78 to 76.
+   **Deviation 1376: an edge quoting an article a held record already cites
+   names that record's revision, where the sentence is verbatim there.** *(The
+   commit that made this fix, `fea1ccec`, calls it deviation 1202 in its message:
+   the numbers were assigned from 1200 as the brief says and only then found to be
+   taken — this lane's own 1200, 1201 and 1202 were spent on batches 46 and 53.
+   The numbers here, 1374 to 1377, are the correct ones; `fea1ccec`'s message
+   cannot be corrected without rewriting a pushed commit, so it is corrected
+   here.)* A later
+   fire may prefer to fix the vote instead — the one-line version is that
+   `citations.mjs` should not count a citation it will class `unkeyed` — but that
+   is a change to a tool both lanes run and belongs to a fire that can test it
+   against M42's own batches.
+4. **Deviation 1373's measurement should run before the fetch, not after.**
+   `battle-of-ayacucho` → `second-siege-of-callao` was refused by rule 4 for the
+   second fire running, and both times the article was read first. The two
+   `when.date`s are on disk; nothing had to be fetched to know the answer.
+
+## Where the run stands, for the fire that picks it up
+
+*1 October, after the fifty-fourth fire: one merge (`origin/m42`, conflicting in
+264 index paths and the two import files, where this branch's side was a
+superset of M42's in both), **one batch** — 61, which imported one event and
+wrote **nine edges, seven of them crossing an umbrella**. **A15 (11)'s number
+moved in this lane for the first time: 584 → 591.** The last stand said it could
+not move here without importing main events that A6 bars; that was wrong, and
+the reason is the first finding below. The main count did not move. **One
+regression was caught by a test and fixed in the same fire**: A15 (2)'s recache
+took away the evidence two held records cite, because the vote that picks a
+cached revision counts edge citations it can never answer (deviation 1376).*
+
+| | before 61 | after 61 |
+| --- | --- | --- |
+| active events | 1373 | **1374** |
+| main | 229 | **229** |
+| largest connected component | 759 | **765** |
+| components | 406 | **400** |
+| events with no edge | 314 | **307** |
+| **edges crossing an umbrella** | 584 | **591** |
+| edges inside one umbrella | 588 | **590** |
+| active edges | 1172 | **1181** |
+
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 5 / 3 | 9 / 5 |
+| 16th c. | 44 / 1 | — | — | 51 / 5 | 95 / 6 |
+| 17th c. | 109 / 3 | 7 / 0 | 4 / 0 | 70 / 7 | 190 / 10 |
+| 18th c. | 62 / 3 | 14 / 0 | 19 / 0 | 79 / 2 | 174 / 5 |
+| 19th c. | 39 / 9 | 24 / 1 | 8 / 6 | **61 / 8** | 132 / 24 |
+| 20th c. | 244 / 59 | 92 / 22 | 154 / 37 | 86 / 30 | 576 / 148 |
+| 21st c. | 52 / 7 | 76 / 7 | 29 / 14 | 39 / 1 | 196 / 29 |
+| **all** | **554 / 84** | **213 / 30** | **214 / 57** | **391 / 56** | **1372 / 227** |
+
+*Active events, then of those the ones that are part of nothing. **Two active
+events fall outside this table** and always have — `decolonisation-of-africa`
+and `the-troubles` carry a range for `when.start` rather than a year, so a
+century cannot be read off them; counting them gives africa 214, europe 555 and
+1374 in all, which is the figure the component table above uses. Earlier stands
+printed the ranged two into the 20th century and so read africa 214 and europe
+555 in this table. **Africa and Asia stand at 214 and 214 against A10's 303.**
+The americas lane moved by one, in the 19th century, and the whole gain of the
+fire is in the edges.*
+
+*Several cells moved without this batch touching them, and the `origin/m42`
+merge is why: four africa events moved from the 19th century to the 20th
+(28 / 1 and 88 / 22 become 24 / 1 and 92 / 22), two americas events from the
+15th to the 16th (7 / 5 and 49 / 3 become 5 / 3 and 51 / 5) and three from the
+20th to the 21st (89 / 30 and 36 / 1 become 86 / 30 and 39 / 1). Each lane's
+total is unchanged, so these are dates M42's 1 October curation fire corrected
+and not placements it moved. **The americas 15th century is now 5, not 7**, which
+makes batch 60's move 8 — that the century has no `P361` child left to raise it —
+a measurement a later fire should take again rather than trust.*
+
+*The `origin/m42` merge is also why the before column reads 584 crossing and
+1172 active edges where the last stand read 579 and 1164: M42's 1 October
+curation fire wrote four edges and the merge brought them. Nothing of this
+batch's seven is M42's.*
+
+*Five commits besides this line: the claim, the `origin/m42` merge, batch 61's
+records, its index, and the locator correction deviation 1376 names with its own
+index rebuild folded in. `validate --index` is clean at **0 errors** and the
+index is byte-identical to a fresh build at this head. A15 (2) reports **0
+revisions that should be on disk and are not**, 2,808 of 2,884 citations on disk
+at the revision cited and 76 unholdable beside a more-cited revision of the same
+item — two better and two fewer than the fire found them. The suite is **green —
+2,253 tests, 0 failed, 0 skipped** (1,940 pure and 313 across the 40 browser
+suites, run the way the check runs them, one browser suite at a time), measured
+at this head. **The check is green on the head of this fire: run 2211,
+`ce1d980c`, conclusion `success`.** Runs 2205, 2208 and 2209 were cancelled by a
+newer push, which the workflow's own `cancel-in-progress` does; run 2206 is the
+merge commit explained below and is the only red one.*
+
+*One intermediate commit went red and **it was read rather than assumed**: run
+2206, the `origin/m42` merge commit `3a149be1`, failed its **pure** pass with
+four failures that are one cause — `tests/build-index.test.mjs`,
+`tests/m62.test.mjs`, `tests/m67.test.mjs` and `tests/validate-cli.test.mjs` all
+report **rule 16** over five index files (`manifest.json`, two
+`history-event-1500-1599-*` and two `history-edge-1900-1999-*`). Reproduced in a
+worktree at that commit, where the pure pass gives 1,936 of 1,940 and
+`node tools/validate.mjs` **without** `--index` gives 0 errors. **This is the
+third fire running that deviation 1363's shape has landed on a merge commit**,
+the second after the last stand wrote the remedy down, so the remedy goes here as
+a deviation of its own rather than a sentence in a stand nobody reads twice.*
+
+**Deviation 1377: a merge commit gets its index in a second commit, like a
+batch, and `validate --index` run before the commit exists proves nothing.** The
+history shards are built out of the repository's own commits
+(`tools/lib/history.mjs`), so a shard built while `HEAD` is the pre-merge commit
+cannot know the merge commit and is stale the moment it is committed inside it.
+Running `node tools/validate.mjs --index` before committing passes — both the
+build and the check see the same pre-merge `HEAD` — which is exactly why it is no
+evidence. **The procedure, for a merge as for a batch:** resolve, drop
+`data/index/`, commit the merge **without** an index, then `node
+tools/build-index.mjs`, then `node tools/validate.mjs --index`, then commit the
+index on top. Three commits where this fire used two, and the check goes green on
+every one of them. The red commit here was cured incidentally by batch 61's own
+index commit, which is why the head is green and the branch is sound; a fire
+whose merge is its last commit would leave the branch red.
+
+### The next fire's moves, in order
+
+1. **Give a merge commit its index in a commit of its own (deviation 1377).**
+   Before anything else, if this fire merges `origin/m0` or `origin/m42`:
+   resolve, drop `data/index/`, **commit the merge with no index**, build, check
+   `--index`, commit the index on top. Three fires running have put a stale index
+   inside a merge commit and gone red on it.
+2. **Run the edge pass over the lane's umbrellas again, because it has barely
+   been run.** Deviation 1374 is the finding of this fire and it is not spent:
+   the crossing edges in this lane are between **umbrellas the atlas already
+   holds**, not between the leaves the last six fires worked. This fire did the
+   Spanish American wars and the Peninsular War. **Still unread, and each a
+   degree-zero or near-degree-zero umbrella whose own article names a cause the
+   atlas holds**: `ecuadorian-war-of-independence` (degree 0),
+   `colombian-war-of-independence` (degree 0), `bolivian-war-of-independence`
+   (degree 0), `mexican-war-of-independence` (degree 1), `haitian-revolution-1791-1804`,
+   `cuban-war-of-independence-1895-1898`, `beaver-wars`, `arauco-war`,
+   `war-of-jenkins-ear`. Five HTTP requests bought seven crossing edges this
+   fire; the same money is on the table again.
+3. **The Peninsular War is the cheapest `from` in the atlas for this lane** and
+   three of its four children here are now linked. The fourth is
+   `mexican-war-of-independence`, whose article opens on the same 1808 crisis.
+   `colombian-` and `ecuadorian-war-of-independence` and
+   `bolivian-war-of-independence` are the other three obvious targets, and
+   `french-revolution` is a second `from` for the same set under `inspired`.
+   Check `data/edges/<from>--<to>--<type>.json` for all five types first
+   (batch 60's rule) and compare the two `when.date`s before fetching anything
+   (deviation 1373, and this fire's finding 4).
+4. **`battle-of-rio-bueno-1759` is a filing and not an edge.** Its article's
+   infobox says `partof = [[Arauco War]]`, the atlas holds `arauco-war`, and the
+   record is filed under `spanish-colonization-of-the-americas` instead. Under
+   A8 a record takes **every** umbrella whose span and subject fit, so this is a
+   second parent and not a replacement, and it costs no fetch — the article is
+   already in hand at rev 1370587848. Measured and left for the next fire only
+   because this one's budget went on the cache regression.
+5. **`Q3051491` *Capture of Valdivia* is still the refusal worth the owner's
+   eye**, unchanged from the last stand: *may a batch write a record for an item
+   that has no `P31`, where the class is plain from the article and the edge is
+   cited?* Not a run's to settle.
+6. **The three questions to the owner are otherwise unchanged**: the main count;
+   **C8**; and **A15 (1)**. Africa and Asia stand at 214 and 214 against A10's
+   303. Do not spend a fire re-establishing this. The last stand's move 4 — that
+   A15 (11) is blocked by A6 in this lane — **is withdrawn**: it was an artefact
+   of looking only at leaves, and the owner does not need to decide anything for
+   the number to keep moving.
+7. **Do not re-walk this batch's refusals.** The eight articles with no
+   § Background or § Aftermath were read anyway and carry nothing; *Battle off
+   Barbados*, *Battle of Martinique (1780)* and *Capture of Sint Eustatius* have
+   one and name no held event as a cause; `battle-of-ayacucho` →
+   `second-siege-of-callao` is rule 4 and will stay rule 4; the Túpac Amaru link
+   is refused because the article argues against it (deviation 1375), which no
+   later reading will change. Every one is named with its revision in batch 61's
+   table above.
+8. **Deviation 1370's test paid a fourth time** and still costs nothing: before
+   reading a candidate's article whole, check whether it has a § Background or an
+   § Aftermath. All eight failures this fire were stubs; none of the eight
+   yielded an edge, and the three that passed the test and still yielded nothing
+   were the exception.
+9. **Nothing about the 429s has changed.** One `wbgetentities` call for three
+   items, five `action=query&prop=revisions&rvprop=ids|content` requests carrying
+   eight titles each, one `revids` request to check two old revisions, a real
+   `User-Agent` and a 25-second backoff over seven attempts. `wbsearchentities`
+   was not used. A bare first request without the backoff drew a 429 and is the
+   only one that did.
+10. **Still open, unchanged**: C8, deviations 1323, 1345, 1346's ocean islands,
+   1348's lane guard, 1353, 1358, 1361, 1362, 1365 (whose remedy was applied by
+   hand again — `tools/m42-pool.mjs` still does not print the component a
+   batch's own records are in), 1366, question 11 (the Nine Years' War,
+   `Q152218`), question 12, `Q718893`, `Q20639061`, `Q5037062`, `Q4677270`,
+   `Q4677390`, the nine atlas umbrellas with no `wikidata`, the Gulf Coast
+   campaign umbrella (`Q5617470`), the Angolan Wars umbrella (`Q132776772`),
+   batch 48's Chilean four, the Almagrista eight and their missing decree, batch
+   52's three 16th-century refusals, the place pass on records that already
+   exist (M42's), `capture-of-luanda`'s `wikipedia.en` redirecting to *Dutch
+   Loango-Angola*, the americas 15th century at 5 with no `P361` child to raise
+   it (batch 60's move 8), Africa's and Asia's 15th and 16th centuries at 0 with
+   `Q2915203` *Ethiopian–Adal War* still the candidate, and Asia's 17th at 4 for
+   the reason deviation 1370 gives.
