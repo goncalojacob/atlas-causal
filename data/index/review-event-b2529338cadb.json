@@ -19835,10 +19835,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "indochina-wars",
-        "third-indochina-war"
-      ],
+      "parent": "third-indochina-war",
       "review": {
         "flags": [
           "imported-facts",
@@ -41747,10 +41744,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "indochina-wars",
-        "third-indochina-war"
-      ],
+      "parent": "third-indochina-war",
       "review": {
         "flags": [
           "imported-facts",
