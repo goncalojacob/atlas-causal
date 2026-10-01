@@ -26,7 +26,8 @@
       "participants-from-p710",
       "summary-from-lead",
       "a7-widened",
-      "m42-filed"
+      "m42-filed",
+      "filed-from-p361"
     ],
     "note": "Wikidata Q635533 names 6 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 5 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing.\n\nA7: the span was 1989-1991, the withdrawal and the Paris accords, not the war. The lead this summary quotes says, at the cached revision, \"an armed conflict from 1978 to 1989\". So 1978-1989, and the two days go: the article gives none."
   },
@@ -65,7 +66,10 @@
   "place": "cambodia-q424",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": "indochina-wars",
+  "parent": [
+    "indochina-wars",
+    "third-indochina-war"
+  ],
   "category": "war",
   "actors": [
     {
