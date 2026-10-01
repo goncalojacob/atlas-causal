@@ -5084,6 +5084,12 @@
     },
     {
       "dissent": false,
+      "id": "blockade-of-zanzibar",
+      "kind": "event",
+      "locator": "Q134376352"
+    },
+    {
+      "dissent": false,
       "id": "bluff-cove-air-attacks",
       "kind": "event",
       "locator": "Q4930640"
@@ -7385,6 +7391,12 @@
       "id": "operation-linebacker-ii",
       "kind": "event",
       "locator": "Q486866"
+    },
+    {
+      "dissent": false,
+      "id": "operation-minden",
+      "kind": "event",
+      "locator": "Q7097291"
     },
     {
       "dissent": false,

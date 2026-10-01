@@ -16277,6 +16277,15 @@
         }
       ]
     },
+    "operation-minden": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "operation-musketeer-1956": {
       "from": "git",
       "versions": [

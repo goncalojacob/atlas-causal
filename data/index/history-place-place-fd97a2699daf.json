@@ -2679,6 +2679,15 @@
         }
       ]
     },
+    "east-africa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "east-pakistan": {
       "from": "git",
       "versions": [

@@ -4169,6 +4169,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "abushiri-revolt",
       "kind": "event",
       "origin": {
@@ -18557,6 +18558,39 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "blockade-of-zanzibar",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Blockade of Zanzibar"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "bluff-cove-air-attacks",
       "kind": "event",
@@ -32250,7 +32284,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "operation-commando",
       "kind": "event",
       "origin": {
@@ -32550,6 +32584,38 @@
       "revised": null,
       "status": "active",
       "title": "Operation Linebacker II"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "operation-minden",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "korean-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Minden"
     },
     {
       "authors": [
@@ -46853,12 +46919,6 @@
     },
     {
       "id": "2025-catatumbo-clashes",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "abushiri-revolt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
