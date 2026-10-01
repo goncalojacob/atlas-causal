@@ -15384,7 +15384,9 @@ lane's partition that carry a `wikidata` id — returned **459** unique items th
 atlas does not hold, of which **110** are americas events dated in the 19th
 century: 54 under `american-indian-wars`, 17 Venezuelan, 16 Chilean, 10
 Argentine, 8 Peruvian, 6 Bolivian, and one each under
-`saint-domingue-expedition` and `spanish-american-wars-of-independence`. This
+`saint-domingue-expedition` and `spanish-american-wars-of-independence` — which
+sums to 113 and not 110, because three of the items are `P361` children of two
+of these umbrellas at once. This
 batch took three of them, read and refused five more, and refused one on
 deviation 1370's test. A further 25 americas candidates carry **no date at all**
 in the item and were not sorted into a century.
