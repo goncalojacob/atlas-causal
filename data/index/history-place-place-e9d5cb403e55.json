@@ -641,7 +641,7 @@
       ]
     },
     "banten-bay": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5763,7 +5763,7 @@
       ]
     },
     "mannar-island": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
