@@ -6752,6 +6752,18 @@
     },
     {
       "dissent": false,
+      "id": "rwandan-revolution--rwandan-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Rwandan Revolution\", revision 1367896898"
+    },
+    {
+      "dissent": false,
+      "id": "rwandan-revolution--rwandan-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Rwandan Revolution\", revision 1367896898, § Post-revolution Rwanda"
+    },
+    {
+      "dissent": false,
       "id": "saint-domingue-and-the-french-sugar-colony--haitian-revolution-1791-1804--caused",
       "kind": "edge",
       "locator": "\"Haitian Revolution\", revision 1375172946"
@@ -15359,6 +15371,12 @@
       "id": "rwandan-civil-war",
       "kind": "event",
       "locator": "\"Rwandan Civil War\", revision 1371242033"
+    },
+    {
+      "dissent": false,
+      "id": "rwandan-revolution",
+      "kind": "event",
+      "locator": "\"Rwandan Revolution\", revision 1367896898"
     },
     {
       "dissent": false,

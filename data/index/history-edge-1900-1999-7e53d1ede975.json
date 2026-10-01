@@ -5250,6 +5250,15 @@
         }
       ]
     },
+    "rwandan-revolution--rwandan-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "salazar-finance-minister-1928--salazar-president-of-council-1932--caused": {
       "from": "git",
       "versions": [

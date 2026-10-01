@@ -35548,7 +35548,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 3,
+      "degree": 4,
       "id": "rwandan-civil-war",
       "kind": "event",
       "origin": {
@@ -35570,6 +35570,37 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Rwandan Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "rwandan-revolution",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "decolonisation-of-africa",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Rwandan Revolution"
     },
     {
       "authors": [
