@@ -17599,7 +17599,15 @@ batch 81 owed, which arrived through the merge.*
 *The suite, measured at this head and run the way the check runs it: **1,940 pure
 tests, 1,940 passed, 0 failed, 0 skipped**, and **313 browser tests across the 40
 suites, 312 passed, 1 failed, 0 skipped**. The one is deviation 1388 above, which
-is M42's 1521. At the head before the second merge the pure pass had one failure,
+is M42's 1521. **The check agrees, read in the job's own log and not assumed**:
+run **2262** on `641351ff4`, the records-and-index head of this fire, reports
+`# tests 1940 / # pass 1940 / # fail 0` for the pure pass and `# tests 313 /
+# pass 312 / # fail 1` for the browser pass, the one being `not ok 67 — choosing
+an event narrows all three views to it, its parts, its parent and one hop`, with
+`error: 'map left out estado-novo-1933-1974'`. `tests/graph-labels-browser.test.mjs`
+is green on the runner too, which is deviation 1387's measurement confirmed off
+this sandbox. Run 2263, on the docs commit above, touches two markdown files and
+nothing the suite reads. At the head before the second merge the pure pass had one failure,
 `tests/m67.test.mjs` on M42's `camp-david-accords`; deviation 1389 says what that
 was and what the next fire should do about it.*
 
