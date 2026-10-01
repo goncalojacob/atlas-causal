@@ -3620,6 +3620,18 @@
     },
     {
       "dissent": false,
+      "id": "camp-david-accords--egypt-israel-peace-treaty--caused",
+      "kind": "edge",
+      "locator": "\"Camp David Accords\", revision 1374583077, § Partial agreements"
+    },
+    {
+      "dissent": false,
+      "id": "camp-david-accords--egypt-israel-peace-treaty--caused",
+      "kind": "edge",
+      "locator": "\"Yom Kippur War\", revision 1375181066, § Egyptian–Israeli Camp David Accords"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-alexandria-1798--battle-of-shubra-khit--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Shubra Khit\", revision 1371091764, § Background"
@@ -9326,6 +9338,12 @@
     },
     {
       "dissent": false,
+      "id": "yom-kippur-war--camp-david-accords--precondition-of",
+      "kind": "edge",
+      "locator": "\"Yom Kippur War\", revision 1375181066, § Egyptian–Israeli Camp David Accords"
+    },
+    {
+      "dissent": false,
       "id": "yom-kippur-war--imf-agreement-1978--precondition-of",
       "kind": "edge",
       "locator": "\"Yom Kippur War\", revision 1373227342"
@@ -12770,6 +12788,12 @@
     },
     {
       "dissent": false,
+      "id": "camp-david-accords",
+      "kind": "event",
+      "locator": "\"Camp David Accords\", revision 1374583077"
+    },
+    {
+      "dissent": false,
       "id": "campaign-of-porto-calvo",
       "kind": "event",
       "locator": "\"Campaign of Porto Calvo\", revision 1373668892"
@@ -13301,6 +13325,12 @@
       "id": "effacer-le-tableau",
       "kind": "event",
       "locator": "\"Effacer le tableau\", revision 1373623402"
+    },
+    {
+      "dissent": false,
+      "id": "egypt-israel-peace-treaty",
+      "kind": "event",
+      "locator": "\"Egypt–Israel peace treaty\", revision 1368884596"
     },
     {
       "dissent": false,

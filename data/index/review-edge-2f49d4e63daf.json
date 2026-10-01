@@ -10128,6 +10128,28 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "camp-david-accords",
+      "id": "camp-david-accords--egypt-israel-peace-treaty--caused",
+      "kind": "edge",
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "egypt-israel-peace-treaty",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -33223,6 +33245,28 @@
       "status": "active",
       "to": "xinhai-revolution",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "yom-kippur-war",
+      "id": "yom-kippur-war--camp-david-accords--precondition-of",
+      "kind": "edge",
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "camp-david-accords",
+      "type": "precondition-of"
     },
     {
       "authors": [

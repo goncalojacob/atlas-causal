@@ -5198,6 +5198,12 @@
     },
     {
       "dissent": false,
+      "id": "camp-david-accords",
+      "kind": "event",
+      "locator": "Q309204"
+    },
+    {
+      "dissent": false,
       "id": "campaign-of-porto-calvo",
       "kind": "event",
       "locator": "Q121754881"
@@ -5723,6 +5729,12 @@
       "id": "effacer-le-tableau",
       "kind": "event",
       "locator": "Q39086159"
+    },
+    {
+      "dissent": false,
+      "id": "egypt-israel-peace-treaty",
+      "kind": "event",
+      "locator": "Q1129412"
     },
     {
       "dissent": false,

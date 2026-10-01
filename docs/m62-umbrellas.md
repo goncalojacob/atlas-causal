@@ -578,3 +578,24 @@ argument. Filing it there would also have barred the edge under A14's standing
 C8 rule, which is a consequence of the reading and not a reason for it.
 
 **Main is 229 before and 229 after.**
+
+## Batch 81 — two filings one hop down the item's own `P361` chain
+
+The import files from `P361` alone and both items name `Q4783126`, *Arab–Israeli
+peace projects*, which this atlas does not hold. **But `Q4783126`'s own `P361` is
+`Q8669`, which the atlas holds as `arab-israeli-conflict`** — so the filing is
+not a reading laid over the items, it is the items' own chain followed one hop
+further than the import follows it.
+
+| record | parent | why |
+| --- | --- | --- |
+| `camp-david-accords` | `arab-israeli-conflict` | The item's `P361` is `Q4783126`, whose own `P361` is `Q8669`, the umbrella this atlas holds. 17 September 1978 is inside the umbrella's span, which runs from 15 May 1948 and is open. |
+| `egypt-israel-peace-treaty` | `arab-israeli-conflict` | The same chain and the same umbrella; 26 March 1979 is inside it. The treaty is the conflict's first settlement with an Arab state, which is the umbrella's own subject. |
+
+**Neither is filed under the other**, although the Accords caused the treaty:
+that is the edge and not the parent. The treaty was not part of the Accords — it
+was the instrument the Accords' second framework was a draft of — and filing it
+there would have barred the edge under A14's standing C8 rule.
+
+**Main is 229 before and 229 after.** Both arrived as main events, because the
+import found no held umbrella in their `P361`.
