@@ -7593,6 +7593,15 @@
         }
       ]
     },
+    "portuguese-macau": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "portuguese-mozambique-q889394": {
       "from": "git",
       "versions": [

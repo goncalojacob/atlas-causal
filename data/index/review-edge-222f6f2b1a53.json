@@ -10186,6 +10186,28 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "camp-david-accords",
+      "id": "camp-david-accords--egypt-israel-peace-treaty--caused",
+      "kind": "edge",
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "egypt-israel-peace-treaty",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -12853,6 +12875,28 @@
       "status": "active",
       "to": "spanish-american-war-1898",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "cultural-revolution",
+      "id": "cultural-revolution--12-3-incident--inspired",
+      "kind": "edge",
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "12-3-incident",
+      "type": "inspired"
     },
     {
       "authors": [
@@ -33520,6 +33564,28 @@
       "status": "active",
       "to": "xinhai-revolution",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "yom-kippur-war",
+      "id": "yom-kippur-war--camp-david-accords--precondition-of",
+      "kind": "edge",
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "camp-david-accords",
+      "type": "precondition-of"
     },
     {
       "authors": [

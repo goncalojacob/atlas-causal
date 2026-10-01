@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "camp-david-accords--egypt-israel-peace-treaty--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Camp David Accords\", revision 1374583077, § Partial agreements"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Yom Kippur War\", revision 1375181066, § Egyptian–Israeli Camp David Accords"
+    }
+  ],
+  "from": "camp-david-accords",
+  "to": "egypt-israel-peace-treaty",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Two articles state it and they agree. The Accords' own article says which of the two frameworks did it: \"The Camp David Accords comprise two separate agreements: \"A Framework for Peace in the Middle East\" and \"A Framework for the Conclusion of a Peace Treaty between Egypt and Israel\", the second leading towards the Egypt–Israel peace treaty signed in March 1979.\" The Yom Kippur War's article says it in one line with the Accords as subject: \"The Accords resulted in the Egypt–Israel peace treaty, the first ever between Israel and an Arab state.\" `caused` and not `precondition-of` because \"resulted in\" is a claim about production and not only about order, and because the second framework was the treaty's own text in draft: what the Accords settled is what the treaty signed. `probable` and not `consensus` under rule 22 and A2 — both witnesses are Wikipedia records, so the two citations are two articles and not two authors.",
+  "dispute": null
+}

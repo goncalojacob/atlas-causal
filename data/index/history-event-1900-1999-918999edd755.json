@@ -2,6 +2,15 @@
   "from": 1900,
   "kind": "event",
   "records": {
+    "12-3-incident": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "1900-portuguese-legislative-election": {
       "from": "git",
       "versions": [
@@ -8658,6 +8667,15 @@
         }
       ]
     },
+    "camp-david-accords": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "carlos-manuel-de-cespedes-barracks-attack-1953": {
       "from": "git",
       "versions": [
@@ -10541,6 +10559,15 @@
             "parent"
           ],
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "egypt-israel-peace-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

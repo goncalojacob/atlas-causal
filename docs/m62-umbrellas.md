@@ -553,3 +553,49 @@ A reviewer who disagrees should move it rather than unfile it: the alternative
 is a main event, and A6 refuses that without a reason.
 
 **Main is 229 before and 229 after.**
+
+## Batch 80 — the 12-3 incident, filed where the item says nothing
+
+The item `Q3182793` carries **no `P361` at all**, so the import filed nothing and
+the record arrived as a main event. This is the filing that kept it from being
+one, and the whole of its argument is the record's own place and span against two
+candidate umbrellas rather than an item's claim.
+
+| record | parent | why |
+| --- | --- | --- |
+| `12-3-incident` | `estado-novo-1933-1974` | Macau in December 1966 was Portuguese, and the Estado Novo's span (19 March 1933 to 25 April 1974) contains the incident's (18 November 1966 to 28 January 1967). `goa-annexed-1961` is the precedent and it is close: an action against Portuguese territory in Asia, inside the regime, filed under this umbrella among others. |
+
+**Two umbrellas that fit on the years were refused, and for different reasons.**
+`portuguese-colonial-war-1961-1974` contains 1966 on the dates, but the colonial
+war is the three African theatres and Macau was not one of them: the years fit
+and the war does not, which is rule 24's arithmetic passing where the reading
+fails. `cultural-revolution` contains the span too (16 May 1966 to 6 October
+1976) and would have been the easy filing, but the Cultural Revolution is what
+*inspired* the incident and not what the incident was part of — the article says
+"inspired by" — so it is the edge and not the parent. In this data model that
+distinction is the model: `parent` is part-of and is display, an edge is the
+argument. Filing it there would also have barred the edge under A14's standing
+C8 rule, which is a consequence of the reading and not a reason for it.
+
+**Main is 229 before and 229 after.**
+
+## Batch 81 — two filings one hop down the item's own `P361` chain
+
+The import files from `P361` alone and both items name `Q4783126`, *Arab–Israeli
+peace projects*, which this atlas does not hold. **But `Q4783126`'s own `P361` is
+`Q8669`, which the atlas holds as `arab-israeli-conflict`** — so the filing is
+not a reading laid over the items, it is the items' own chain followed one hop
+further than the import follows it.
+
+| record | parent | why |
+| --- | --- | --- |
+| `camp-david-accords` | `arab-israeli-conflict` | The item's `P361` is `Q4783126`, whose own `P361` is `Q8669`, the umbrella this atlas holds. 17 September 1978 is inside the umbrella's span, which runs from 15 May 1948 and is open. |
+| `egypt-israel-peace-treaty` | `arab-israeli-conflict` | The same chain and the same umbrella; 26 March 1979 is inside it. The treaty is the conflict's first settlement with an Arab state, which is the umbrella's own subject. |
+
+**Neither is filed under the other**, although the Accords caused the treaty:
+that is the edge and not the parent. The treaty was not part of the Accords — it
+was the instrument the Accords' second framework was a draft of — and filing it
+there would have barred the edge under A14's standing C8 rule.
+
+**Main is 229 before and 229 after.** Both arrived as main events, because the
+import found no held umbrella in their `P361`.

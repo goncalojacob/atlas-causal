@@ -1742,6 +1742,12 @@
     },
     {
       "dissent": false,
+      "id": "12-3-incident",
+      "kind": "event",
+      "locator": "Q3182793"
+    },
+    {
+      "dissent": false,
       "id": "13-vendemiaire",
       "kind": "event",
       "locator": "Q720498"
@@ -5198,6 +5204,12 @@
     },
     {
       "dissent": false,
+      "id": "camp-david-accords",
+      "kind": "event",
+      "locator": "Q309204"
+    },
+    {
+      "dissent": false,
       "id": "campaign-of-porto-calvo",
       "kind": "event",
       "locator": "Q121754881"
@@ -5759,6 +5771,12 @@
       "id": "effacer-le-tableau",
       "kind": "event",
       "locator": "Q39086159"
+    },
+    {
+      "dissent": false,
+      "id": "egypt-israel-peace-treaty",
+      "kind": "event",
+      "locator": "Q1129412"
     },
     {
       "dissent": false,

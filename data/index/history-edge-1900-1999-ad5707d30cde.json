@@ -1765,6 +1765,15 @@
         }
       ]
     },
+    "camp-david-accords--egypt-israel-peace-treaty--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "carnation-revolution-1974--1975-sao-tomean-legislative-election--enabled": {
       "from": "git",
       "versions": [
@@ -2530,6 +2539,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "cultural-revolution--12-3-incident--inspired": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
@@ -7175,6 +7193,15 @@
             "status"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "yom-kippur-war--camp-david-accords--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
