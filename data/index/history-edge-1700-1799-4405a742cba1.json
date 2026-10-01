@@ -26,6 +26,15 @@
         }
       ]
     },
+    "american-revolutionary-war--british-intervention-in-spanish-american-independence--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "american-revolutionary-war--french-revolution--inspired": {
       "from": "git",
       "versions": [
@@ -587,6 +596,15 @@
         }
       ]
     },
+    "capture-of-cayo-cocina--battle-of-roatan--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "capture-of-fort-bute--battle-of-baton-rouge-1779--precondition-of": {
       "from": "git",
       "versions": [
@@ -602,6 +620,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "capture-of-st-lucia--battle-of-martinique-1779--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
@@ -644,6 +671,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "french-revolution--argentine-war-of-independence--inspired": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
@@ -974,6 +1010,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-yorktown--battle-of-roatan--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

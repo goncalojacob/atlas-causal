@@ -365,7 +365,17 @@
         },
         {
           "fields": [
+            "place",
+            "region",
             "regionNote",
+            "review"
+          ],
+          "on": "2026-10-01"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
             "review"
           ],
           "on": "2026-10-01"
@@ -431,7 +441,17 @@
         },
         {
           "fields": [
+            "place",
+            "region",
             "regionNote",
+            "review"
+          ],
+          "on": "2026-10-01"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
             "review"
           ],
           "on": "2026-10-01"

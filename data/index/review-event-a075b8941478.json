@@ -4901,7 +4901,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 3,
+      "degree": 4,
       "id": "american-revolutionary-war",
       "kind": "event",
       "origin": {
@@ -5554,6 +5554,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 2,
       "id": "argentine-war-of-independence",
       "kind": "event",
       "origin": {
@@ -7935,6 +7936,39 @@
       "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Caporetto"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "battle-of-carabobo-1814",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "venezuelan-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Carabobo (1814)"
     },
     {
       "authors": [
@@ -11999,6 +12033,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "degree": 1,
       "id": "battle-of-martinique-1779",
       "kind": "event",
       "origin": {
@@ -14235,6 +14270,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "degree": 2,
       "id": "battle-of-roatan",
       "kind": "event",
       "origin": {
@@ -18852,6 +18888,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "degree": 1,
       "id": "british-intervention-in-spanish-american-independence",
       "kind": "event",
       "origin": {
@@ -19316,7 +19353,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "capture-of-cayo-cocina",
       "kind": "event",
       "origin": {
@@ -19515,7 +19552,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
-      "degree": 2,
+      "degree": 3,
       "id": "capture-of-st-lucia",
       "kind": "event",
       "origin": {
@@ -19910,6 +19947,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 1,
       "id": "chilean-war-of-independence",
       "kind": "event",
       "origin": {
@@ -25015,7 +25053,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 8,
+      "degree": 9,
       "id": "french-revolution",
       "kind": "event",
       "origin": {
@@ -33200,7 +33238,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 5,
+      "degree": 8,
       "id": "peninsular-war",
       "kind": "event",
       "origin": {
@@ -33230,6 +33268,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
+      "degree": 1,
       "id": "peruvian-war-of-independence",
       "kind": "event",
       "origin": {
@@ -36247,6 +36286,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-25",
+      "degree": 1,
       "id": "second-battle-of-la-puerta",
       "kind": "event",
       "origin": {
@@ -39852,7 +39892,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-30",
-      "degree": 3,
+      "degree": 4,
       "id": "siege-of-yorktown",
       "kind": "event",
       "origin": {
@@ -46552,12 +46592,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "argentine-war-of-independence",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "assassination-of-miguel-uribe-turbay",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -47014,12 +47048,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "battle-of-martinique-1779",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "battle-of-martinique-1780",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -47105,12 +47133,6 @@
     },
     {
       "id": "battle-of-rio-bueno-1759",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-roatan",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -47422,12 +47444,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "british-intervention-in-spanish-american-independence",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "bundner-wirren",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -47474,12 +47490,6 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
-    },
-    {
-      "id": "chilean-war-of-independence",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
     },
     {
       "id": "cienfuegos-uprising",
@@ -47902,12 +47912,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "peruvian-war-of-independence",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "portuguese-campaigns-in-the-amazon-river-of-1623-1625",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -48035,12 +48039,6 @@
     },
     {
       "id": "scramble-for-africa",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "second-battle-of-la-puerta",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

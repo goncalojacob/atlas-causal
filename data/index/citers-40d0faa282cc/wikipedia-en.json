@@ -1796,6 +1796,12 @@
     },
     {
       "dissent": false,
+      "id": "american-revolutionary-war--british-intervention-in-spanish-american-independence--precondition-of",
+      "kind": "edge",
+      "locator": "\"British intervention in Spanish American independence\", revision 1366734765, § Background"
+    },
+    {
+      "dissent": false,
       "id": "american-revolutionary-war--french-revolution--inspired",
       "kind": "edge",
       "locator": "\"French Revolution\", revision 1375966584, \"Causes\""
@@ -2315,6 +2321,12 @@
       "id": "battle-of-cape-rachado--siege-of-malacca-1640-1641--enabled",
       "kind": "edge",
       "locator": "\"Siege of Malacca (1640–1641)\", revision 1370743206"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-carabobo-1814--second-battle-of-la-puerta--precondition-of",
+      "kind": "edge",
+      "locator": "\"Second Battle of La Puerta\", revision 1370736349, § The Battle"
     },
     {
       "dissent": false,
@@ -3656,6 +3668,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-cayo-cocina--battle-of-roatan--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Roatán\", revision 1370587600, § Background"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-fort-bute--battle-of-baton-rouge-1779--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Baton Rouge (1779)\", revision 1370433595"
@@ -3689,6 +3707,12 @@
       "id": "capture-of-luanda--recapture-of-angola--precondition-of",
       "kind": "edge",
       "locator": "\"Recapture of Angola\", revision 1370706489, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-st-lucia--battle-of-martinique-1779--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Martinique (1779)\", revision 1370449172, §§ Background and Battle"
     },
     {
       "dissent": false,
@@ -4751,6 +4775,12 @@
       "id": "french-revolution--action-of-31-july-1793--precondition-of",
       "kind": "edge",
       "locator": "\"Action of 31 July 1793\", revision 1370426629"
+    },
+    {
+      "dissent": false,
+      "id": "french-revolution--argentine-war-of-independence--inspired",
+      "kind": "edge",
+      "locator": "\"Argentine War of Independence\", revision 1376918380, § Background"
     },
     {
       "dissent": false,
@@ -6236,9 +6266,27 @@
     },
     {
       "dissent": false,
+      "id": "peninsular-war--argentine-war-of-independence--precondition-of",
+      "kind": "edge",
+      "locator": "\"Argentine War of Independence\", revision 1376918380, § The Revolution"
+    },
+    {
+      "dissent": false,
+      "id": "peninsular-war--chilean-war-of-independence--precondition-of",
+      "kind": "edge",
+      "locator": "\"Chilean War of Independence\", revision 1371212438, § Background"
+    },
+    {
+      "dissent": false,
       "id": "peninsular-war--independence-of-brazil-1822--caused",
       "kind": "edge",
       "locator": "\"Spanish American wars of independence\", revision 1375550213, \"Background\""
+    },
+    {
+      "dissent": false,
+      "id": "peninsular-war--peruvian-war-of-independence--precondition-of",
+      "kind": "edge",
+      "locator": "\"Peruvian War of Independence\", revision 1377781627, § Background"
     },
     {
       "dissent": false,
@@ -7289,6 +7337,12 @@
       "id": "siege-of-tournai-1745--battle-of-fontenoy--caused",
       "kind": "edge",
       "locator": "\"Siege of Tournai (1745)\", revision 1370745959"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-yorktown--battle-of-roatan--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Roatán\", revision 1370587600, § Background"
     },
     {
       "dissent": false,
@@ -10631,6 +10685,12 @@
       "id": "battle-of-caporetto",
       "kind": "event",
       "locator": "\"Battle of Caporetto\", revision 1370436282"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-carabobo-1814",
+      "kind": "event",
+      "locator": "\"Battle of Carabobo (1814)\", revision 1370436287"
     },
     {
       "dissent": false,

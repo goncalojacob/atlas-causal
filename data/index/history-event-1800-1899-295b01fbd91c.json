@@ -457,6 +457,15 @@
         }
       ]
     },
+    "battle-of-carabobo-1814": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-cerro-de-pasco": {
       "from": "git",
       "versions": [
