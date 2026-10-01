@@ -49,7 +49,7 @@
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-17f67836c7a2.json",
+      "file": "index/attributes-1900-1999-9bfe3a37a953.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -924,7 +924,7 @@
       "id": "culture"
     },
     {
-      "count": 13,
+      "count": 14,
       "id": "death"
     },
     {
@@ -1024,8 +1024,8 @@
   ],
   "counts": {
     "actors": 2699,
-    "edges": 1195,
-    "events": 1616,
+    "edges": 1196,
+    "events": 1617,
     "narratives": 2,
     "offices": 11,
     "places": 800,
@@ -1062,7 +1062,7 @@
       "to": 1899
     },
     {
-      "file": "index/explanations-1900-1999-e323bb17aa69.json",
+      "file": "index/explanations-1900-1999-34e3249b7a29.json",
       "from": 1900,
       "to": 1999
     },
@@ -1073,14 +1073,14 @@
     }
   ],
   "files": {
-    "citers": "index/citers-0e441fc62bb7",
-    "core": "index/core-4a84494aebdb.json",
-    "grounds": "index/grounds-79c1cd057646.json",
+    "citers": "index/citers-d75bdb54e937",
+    "core": "index/core-40550e24d952.json",
+    "grounds": "index/grounds-cd6d9a3ca3c8.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-6c5aae14435a.json",
-    "search": "index/search-0a14f4decb4a.json",
-    "sources": "index/sources-d87a78dc09d8.json",
-    "territories": "index/territories-c701afd2834b.json"
+    "review": "index/review-18a91c909d21.json",
+    "search": "index/search-056a96578416.json",
+    "sources": "index/sources-6d1e71bb3617.json",
+    "territories": "index/territories-5fba1404f071.json"
   },
   "historyShards": [
     {
@@ -1119,7 +1119,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-debdd8145a81.json",
+      "file": "index/history-event-1900-1999-5be5d7450f77.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
@@ -1168,7 +1168,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-edge-1900-1999-fbd2604fcfdb.json",
+      "file": "index/history-edge-1900-1999-b3324aa5cbb4.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "edge",
@@ -1517,8 +1517,8 @@
     }
   },
   "links": {
-    "active": 1183,
-    "explained": 1183
+    "active": 1184,
+    "explained": 1184
   },
   "officesByEvent": {
     "1908-portuguese-legislative-election": [

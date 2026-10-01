@@ -8602,6 +8602,15 @@
         }
       ]
     },
+    "cambodian-genocide": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "cambodian-vietnamese-war": {
       "from": "git",
       "versions": [

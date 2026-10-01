@@ -3596,6 +3596,18 @@
     },
     {
       "dissent": false,
+      "id": "cambodian-genocide--cambodian-vietnamese-war--caused",
+      "kind": "edge",
+      "locator": "\"Cambodian genocide\", revision 1377684919, § Vietnamese"
+    },
+    {
+      "dissent": false,
+      "id": "cambodian-genocide--cambodian-vietnamese-war--caused",
+      "kind": "edge",
+      "locator": "\"Indochina wars\", revision 1373921212"
+    },
+    {
+      "dissent": false,
       "id": "cambodian-vietnamese-war--sino-vietnamese-war--reacted-to",
       "kind": "edge",
       "locator": "\"Indochina wars\", revision 1373921212, § Third Indochina War"
@@ -12725,6 +12737,12 @@
       "id": "cambodian-civil-war",
       "kind": "event",
       "locator": "\"Cambodian Civil War\", revision 1375075951"
+    },
+    {
+      "dissent": false,
+      "id": "cambodian-genocide",
+      "kind": "event",
+      "locator": "\"Cambodian genocide\", revision 1377684919"
     },
     {
       "dissent": false,

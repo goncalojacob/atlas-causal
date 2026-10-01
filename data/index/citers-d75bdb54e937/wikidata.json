@@ -5180,6 +5180,12 @@
     },
     {
       "dissent": false,
+      "id": "cambodian-genocide",
+      "kind": "event",
+      "locator": "Q2885072"
+    },
+    {
+      "dissent": false,
       "id": "cambodian-vietnamese-war",
       "kind": "event",
       "locator": "Q635533"
