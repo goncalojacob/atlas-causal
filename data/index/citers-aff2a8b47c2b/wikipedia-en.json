@@ -2552,6 +2552,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-junin--battle-of-ayacucho--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Ayacucho\", revision 1375770122, §§ Olañeta's rebellion and Ayacucho campaign"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-junin--battle-of-ayacucho--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Junín\", revision 1370266471, § Battle"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-junin--battle-of-ayacucho--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Ayacucho\", revision 1375770122, § Background and § Aftermath"
