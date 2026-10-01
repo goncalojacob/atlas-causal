@@ -19707,17 +19707,27 @@ a third held event. **It crosses an umbrella.**
 edges already run from it. The two flags are not the same flag and a fire that
 reads them as one will refuse an edge it is allowed to write.
 
-### Deviation 1513 — the atlas holds no Cold War, and a `P361` found it
+### Deviation 1513, withdrawn as a deviation and kept as a finding — a `P361` pointed at a gap this file had already named
 
 `Q2354629`'s `P361` names `Q8683`, the Cold War, as well as `Q230533`,
-decolonization. **Nothing on this branch carries `Q8683` and there is no
-`cold-war` record**, although A15(13) names one among the six summaries whose
-Portugal paragraph it cut — so either that record is M42b's and has not landed,
-or the amendment named a record that was already gone. Either way an item's own
-`P361` pointed at a hole in the corpus, which is the first time a filing has done
-that, and it is worth a line because **a `P361` naming nothing held is evidence
-about the atlas and not about the item**. A8's "every umbrella that fits" wrote
-one parent here where the item offered two.
+decolonization, and **nothing on this branch carries `Q8683`**. This fire first
+wrote that up as a new deviation and as an open question — whether the record was
+M42b's and unlanded, or retracted. **It is neither, and this file says so forty
+pages up**: A15(13)'s own section settled it, *"There is no `cold-war` record.
+A15(13) names six and the atlas holds five ... the sixth is the amendment's own
+slip and not a record somebody retracted"*, measured across `m42`, `m42b` and
+`m0`. `git log --all -- data/events/cold-war.json` is empty, which is the same
+answer from the other side. **A number is withdrawn rather than left standing on
+a question somebody had already answered**; the batch 79 commit message names it
+as a deviation and this is the correction.
+
+What is left is worth keeping without a number. **An item's `P361` naming nothing
+held is evidence about the atlas and not about the item**, and this is the first
+filing on this lane where it has happened: the Cold War is an umbrella a great
+many events of this corpus would fit by span and subject, and it is absent. A8's
+"every umbrella that fits" therefore wrote one parent here where the item offered
+two. Whether the atlas should hold a Cold War record is A6's question and the
+owner's, not a filing's.
 
 ### Counts
 
@@ -19938,12 +19948,16 @@ question the 30 September stand left.*
   Portuguese campaigns in Angola and Mozambique and their articles are 686 to
   2,921 characters with no causal prose at all: **this atlas's own subject is not
   the same thing as a record that can earn an edge.**
-- **Deviation 1513: the atlas holds no Cold War record.** `Q2354629`'s `P361`
-  names `Q8683` and nothing on this branch carries it, although A15(13) names a
-  `cold-war` record among the six whose Portugal paragraph it cut. Either it is
-  M42b's and has not landed, or the amendment named something already gone. It is
-  a hole a filing found, and the Cold War is an umbrella a great many of this
-  corpus's events would fit.
+- **The atlas holds no Cold War record, and that is A6's question.**
+  `Q2354629`'s `P361` names `Q8683` and nothing on this branch carries it. This
+  is **not** a new finding and this fire withdrew the number it first gave it:
+  A15(13)'s own section had already measured it across all three branches and
+  called the sixth summary the amendment's own slip. What stands is that the Cold
+  War is an umbrella a great many of this corpus's events would fit by span and
+  subject, and no record offers it — which is the owner's to decide and not a
+  filing's. **The lesson for a fire is narrower and worth more: search this file
+  before writing a deviation.** Nineteen thousand lines of it are measurements
+  somebody already made.
 - **The two lanes are drawing deviation numbers from one line and will collide.**
   This fire took 1512 to 1514 on the pool file's own instruction; `m42b` wrote
   1374 to 1377 on the same morning. The blocks overlapped once before and
@@ -19961,5 +19975,6 @@ question the 30 September stand left.*
   placeholder summaries; deviation 1511's 182 `naturalearth.mjs --places`
   matches; and C8, whose clearest single line is still
   `gulf-of-tonkin-incident`.
-- **Deviation numbers: take the next above 1514.** This fire wrote 1512, 1513 and
-  1514.
+- **Deviation numbers: take the next above 1514.** This fire wrote **1512** and
+  **1514**; **1513 is withdrawn** and its number is spent rather than reused, so
+  that the batch 79 commit message naming it still resolves to something.
