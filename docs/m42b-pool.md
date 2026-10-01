@@ -18995,9 +18995,12 @@ crossing an umbrella**. **Four things the next fire must know**: the main count
 **rose to 232**, for the first time in six batches, and batch 69's note says why and
 that the owner's first open question is unchanged by it; the previous stand's moves
 **1, 4 and 5 are all closed**, two of them taken and one with a negative answer;
-`review.note`'s 500-character cap bit twice (deviation 1399); and the check is still
-red on **one** browser test which is **M42's deviation 1521**, not this lane's and
-not to be re-diagnosed.*
+`review.note`'s 500-character cap bit twice (deviation 1399); and **the suite is
+green for the first time in four fires** — the `origin/m0` merge of this fire carried
+`test(m65-browser): the map is asked for the chosen event; its umbrellas only where
+the frame holds them`, which is the fix for **M42's deviation 1521**, so the one
+browser failure the last three stands recorded is gone and there is nothing left to
+not re-diagnose.*
 
 | | before 69 | after 70 |
 | --- | --- | --- |
@@ -19101,9 +19104,11 @@ partition's shape has moved for the first time since batch 64, and **Africa befo
    wants the number to move has to write an edge between two records in different
    umbrellas, and the only one currently cited in the corpus is Mahdia → Tripoli.
 
-10. **Do not re-diagnose deviation 1521.** Unchanged from the last three stands: the
-   check is red on one browser test, the records are sound, and the fix is a display
-   change in `src/map/map.js` that neither records lane may make.
+10. **Deviation 1521 is fixed and the suite is green.** Measured at this head, the
+   way the check runs it: **1,940 pure tests, 1,940 passed, 0 failed, 0 skipped**, and
+   **313 browser tests across the 40 suites, 313 passed, 0 failed, 0 skipped**. The
+   fix was lane A's, on `origin/m0`, and this fire's merge carried it; it is off the
+   open list and the next fire should expect green rather than one red.
 
 11. **Do not re-measure the century convention** (deviation 1378): a record is filed
    by the century of its **start** year, every active event counted, so the rows and
@@ -19130,3 +19135,31 @@ partition's shape has moved for the first time since batch 64, and **Africa befo
    question batch 64 left open on `siege-of-malacca-1606`, `battle-of-cape-rachado`
    and `siege-of-malacca-1640-1641`. **The Siege of Colombo of 1655–1656 stays closed**
    (the stand before this one): English Wikipedia has no article for it.
+
+### What this fire left on disk
+
+*Eight commits: the claim; the merge of `origin/m0` and `origin/m42`; batch 69's
+records and caches, then the A7 note cut to rule 1's cap, then its index; batch 70's
+records, caches and edge, then its index; and the two batch notes with this stand.
+The order of each batch was records → `build-index.mjs` → index, which is deviations
+798 and 1394 together, and the suite was run after the notes, which is 1398.*
+
+*The `origin/m42` merge took **262** conflicting paths and none of them was a record.
+`data/index/` was dropped and rebuilt rather than merged, as the protocol says;
+`sources.html` came from the rebuild; `STATUS.md` and the two import lists kept both
+sides; and `tools/import/cache/titles.json` was **merged key by key and not as
+text**, because this fire's conflict fell **mid-object** — a plain keep-both left the
+*Siege of Tripoli (1551)* entry cut in half and the file unparseable. The three
+records `origin/m42` brought (`battle-of-afabet`, `operation-savannah-angola`,
+`battle-of-onjong`) and their three edges came over untouched. The `origin/m0` merge
+was one test file, taken whole.*
+
+*`validate --index` is clean at **0 errors, 616 warnings**. A15(2) reports **0
+revisions that should be on disk and are not**, 2,903 of 2,981 citations on disk at
+the revision cited and 78 unholdable beside a more-cited revision of the same item.*
+
+*The suite, measured at this head and run the way the check runs it: **1,940 pure
+tests, 1,940 passed, 0 failed, 0 skipped**, and **313 browser tests across the 40
+suites, 313 passed, 0 failed, 0 skipped**. **Pure green, for the first time in four
+fires**: the one failure the last three stands recorded was M42's deviation 1521, and
+the fix for it came in on `origin/m0` in this fire's own merge.*

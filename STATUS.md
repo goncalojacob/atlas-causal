@@ -24368,6 +24368,51 @@ M42 started 2026-10-01T16:07:55Z by scheduled
 M42b started 2026-10-01T18:52:52Z by scheduled
 M42b started 2026-10-01T21:17:30Z by scheduled
 
+**M42b batches 69 and 70 — the Sinhalese–Portuguese conflicts, and the 1535 Battle of
+Ugentana, 1 October.** The sixtieth fire merged `origin/m0` and `origin/m42` and took
+the previous stand's moves 1, 4 and 5, closing all three. **Batch 69** wrote
+`Q17034772` *Sinhalese–Portuguese conflicts* (1518–1658) from its own article and
+**eight of its nine unheld event backlinks** — three into **asia's 16th century**
+(Mulleriyawa 1559, the Siege of Colombo 1587–1588, the Sitawaka campaign 1594) and
+five into **asia's 17th** (the Kandyan commerce raiding 1612–1613, Crappé's raids
+1619, Koneswaram 1622, Randeniwela 1630, Gannoruwa 1638) — at **+1 main and not +9**,
+with three new places all at `summary: null`. The ninth, `Q133092642` *Battle of
+Vannarpannai*, was **refused under deviation 1390**: its infobox reads
+`part_of = Portuguese conquest of the Jaffna kingdom`, a fourth application of that
+rule. **The main count rose from 231 to 232**, the first move in six batches, and the
+pool file says so against A6 rather than around it: one umbrella that files eight
+children is A6's own instrument. A15(6) refused the umbrella's `P17` *Sri Lanka*
+(inception 1972, after the event ended in 1658). **A7 widened its start to 1518**
+from the first sentence and the infobox of the revision it cites, against the item's
+1527. **The eight carry no edge at all** and the note says why: the nine articles were
+run whole through `tools/import/chronology.mjs` against every active event and the
+3,208 cached leads swept the other way, and the one sentence that reached a held
+event — Mulleriyawa's *"After the unsuccessful siege of Kotte … the Portuguese laid
+plans to invade Sitawaka"* — is **A15(5)'s chronology class, refused**. **Batch 70**
+wrote `Q116214211` *Battle of Ugentana* (1535), which carries **no `P361`** and was
+filed by hand from its article's own `part_of = Malay–Portuguese conflicts` on batch
+68's precedent, at **no cost to the main count**; A7 moved its year from the item's
+1536 to the article's **1535**. Its **one edge** —
+`battle-of-ugentana --caused--> battle-of-ugentana-1536`, `probable`, two authors at
+revisions both records already cite — is the best-stated this lane has written in six
+batches: *"Hence, he was able to rebuild his city … and **for that reason** Dom
+Estevão was compelled to try and attack Ugentana once more"*, with the mechanism
+twice more in the same section. `verdictFor()` passed it before it was written.
+**Active events 1410 → 1420, main 231 → 232, largest component 784 → 784, components
+407 → 416, active edges 1211 → 1212, A15(11)'s crossing number 607 before and 607
+after** — zero crossing edges again, which the stand now names as this lane's weakest
+number with the Capture of Mahdia the only lead that touches it. **Africa and Asia
+stand at 228 and 243 against A10's 303**, so A15(1)'s pause holds; the trailing cells
+are now **africa's 16th and 17th, both at nine**, four behind asia's. **Deviations
+1399** (`review.note` is capped at 500 characters by rule 1, and it bit twice),
+**1400** (a lane the import cannot reach belongs in the seeds file's `lanes`, not in a
+hand-written `region`) and **1401** (the Capture of Mahdia's infobox names the
+Spanish–Ottoman wars and agrees with its item, so move 4 is closed with a negative
+answer). `validate --index` clean at 0 errors, 616 warnings; A15(2) at 0 revisions
+missing. **The suite is pure green for the first time in four fires** — 1,940 pure
+tests and 313 browser tests, all passing, 0 skipped — because this fire's `origin/m0`
+merge carried lane A's fix for M42's deviation 1521.
+
 **M42b batch 65 — Asia's seventeenth century, from the Dutch–Portuguese War's Asian theatre, 1 October.**
 The trailing cells in this partition were **africa's and asia's 15th centuries,
 both zero**, and neither was taken: the atlas holds no umbrella reaching before
