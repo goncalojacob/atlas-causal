@@ -23844,6 +23844,52 @@ there, so the three locators name those revisions; A15(2) now reports **0
 revisions that should be on disk and are not** and 2,808 of 2,884 citations on
 disk at the revision cited, two better than the fire found them.
 
+**M42b batch 63 — Africa's sixteenth century, from Algiers and Tunis, 1 October.**
+The trailing cell in this partition was **africa's 16th century at zero active
+events**, and the cell's hard problem is that nothing of its own region and
+century existed for a candidate to connect to — before this batch the earliest
+active African event the atlas held was of 1624 and the earliest Asian one of
+1606. What carried was Charles V's North African campaigns, the one 16th-century
+African vein the held corpus touches. **Eight events imported**: `Q786171`
+*Ottoman–Habsburg wars* (1526–1791) as the umbrella, and the captures and
+conquests of Algiers and Tunis of 1529, 1534, 1535, 1541, 1569, 1573 and 1574
+filed under it from each item's own `P361` chain — which runs through
+`Q118929718` *Ottoman–Spanish War*, an item with two sitelinks and **no English
+article**, so the grandparent is the umbrella and the pool file says what that
+costs. Two places written, `tunis-q3572` and `la-goulette`, both `summary: null`
+(A15(3)); A15(6) refused Algeria's point on the 1529 record for an inception 433
+years after the event and kept the `region`. **Eight edges**, all `probable` on
+the articles alone, **three of them crossing an umbrella**: the Algiers
+expedition of 1541 **enabled** the Italian War of 1542–1546, whose own Prelude
+makes Francis I's forbearance conditional on Charles V campaigning there; the
+**battle of Cajamarca enabled the conquest of Tunis of 1535**, the Tunis article
+saying the campaign was paid for with the two million ducats extracted for
+Atahualpa's release; and the Italian Wars enabled the Ottoman–Habsburg wars by
+the latter's own lead on the distraction. Africa **215 → 222** and its 16th
+century **0 → 7**; active events **1377 → 1385**, main **229 → 230**, A15(11)'s
+number **596 → 599**, active edges **1187 → 1195**, events with no edge **305 →
+303**, largest component **772** before and after, components **397** before and
+after. **Deviation 1384**: the main count rose by one and the umbrella is why —
+the two ways to open the cell were seven main events or one, and A3 and A6 ask a
+run that raises the count to say so. **Deviation 1385**: the corpus grew and the
+largest component did not, because what the crossing edges reached is small —
+`italian-wars` has nine children with two edges among them, and
+`battle-of-cajamarca` carried no edge at all; the atlas's own 16th century is a
+scatter of twos and eights with no chain into its 19th, and the next fire's
+cheapest moves are named there. **Deviation 1386, and the one thing the next fire
+must read first**: `tests/graph-labels-browser.test.mjs` fails deterministically
+at this head — *Dutch–Portuguese War* and *Thirty Years' War* drawn over each
+other at the world view — and five experiments in a worktree localise it to this
+one new main event being in the layout at all, not to corpus size, not to the
+seven records, and not to the umbrella's degree. The box the placer measures by
+is an estimate whose own comment in `src/graph-view/label-fit.js` records this
+failure having happened before; the patch is one of two numbers there, **this
+brief forbids a display change to this lane**, and the deviation refuses both
+green shortcuts it found — withdrawing the umbrella, which would leave seven
+records unfiled against their own `P361` chain, and writing an edge chosen to
+move a layout, which has no sentence behind it. The records are sound and
+`validate --index` is clean at **0 errors, 597 warnings**.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done

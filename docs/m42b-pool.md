@@ -16791,150 +16791,502 @@ opening engagement, and an engagement to the next, where the article states it*
 waiting on the owner in this partition**, and this measurement is the evidence
 for it.
 
+## Batch 63 — Africa's sixteenth century, from Algiers and Tunis
+
+*1 October, the fifty-sixth fire. One merge (`origin/m42`, two docs commits, one
+conflict in `STATUS.md`'s claim list resolved by keeping both sides), **one
+batch** — 63, which **imported eight events and two places and wrote eight
+edges, three of them crossing an umbrella**. The trailing cell in this partition
+was **africa's 16th century at zero**, and it now holds seven. **The main count
+rises by one, from 229 to 230** (deviation 1384), and **the largest component
+does not move at all** (deviation 1385), which is the first thing in this lane
+to measure how thin the atlas's own 16th century is.*
+
+### Where the batch came from
+
+The measurement at the head of this fire read the four lanes of this partition
+as **europe 555, africa 215, asia 216, americas 391**, and the empty cells
+inside it as **africa's and asia's 15th and 16th centuries, all four at zero**.
+Africa trails Asia by one, so africa's 16th was the cell.
+
+It is a cell with a hard problem, and naming it is most of this section's
+value: **before this batch the earliest active event the atlas held in Africa was
+`filips-van-zuylen-s-campaign-against-luanda` of 1624, and the earliest in Asia
+`battle-of-cape-rachado` of 1606** — so the whole of both lanes before the
+seventeenth century was empty. A candidate in africa's 16th century therefore has
+nothing of its own region and century to connect to, and A5 asks every batch to
+write its edges to what already exists. The previous fire's stand named
+`Q2915203` *Ethiopian–Adal War* as the standing candidate for this cell; it was
+read and left, for exactly that reason — its article names the Ottomans and the
+Portuguese and **no event this atlas holds**.
+
+What carried instead was the one 16th-century African vein that touches the
+corpus already here: **Charles V's North African campaigns**, which the held
+`italian-wars` children stand beside in time and which the *Italian War of
+1542–1546* article joins to them in so many words. The vein was found by asking
+Wikidata for everything under `Q786171` *Ottoman–Habsburg wars* through `P361`
+at one and two hops — about sixty items — and keeping the ones on African ground
+before 1800.
+
+### Imported (A9, A15 (3), A15 (6), A15 (8))
+
+| record | item | when | lane / century | filed under | place |
+| --- | --- | --- | --- | --- | --- |
+| `ottoman-habsburg-wars` | `Q786171` | 1526 to 1791 | europe, 16th (spans to the 18th) | — (the umbrella) | `central-and-eastern-europe` (held) |
+| `capture-of-penon-of-algiers-1529` | `Q3403025` | 1529-05-29 | africa, 16th | `ottoman-habsburg-wars` | none — refused, below |
+| `conquest-of-tunis-1534` | `Q5245689` | 1534-08-16 | africa, 16th | `ottoman-habsburg-wars` | `tunis-q3572` (new, `city`) |
+| `conquest-of-tunis-1535` | `Q700893` | 1535-06-16 to 1535-07-21 | africa, 16th | `ottoman-habsburg-wars` | `la-goulette` (new, `city`) |
+| `battle-of-algiers-1541` | `Q2502863` | 1541-10-20 to 1541-11-01 | africa, 16th | `ottoman-habsburg-wars` | `algiers-q3561` (held) |
+| `capture-of-tunis-1569` | `Q107240919` | 1569 | africa, 16th | `ottoman-habsburg-wars` | `tunis-q3572` |
+| `conquest-of-tunis-1573` | `Q12251145` | 1573 | africa, 16th | `ottoman-habsburg-wars` | `tunis-q3572` |
+| `conquest-of-tunis-1574` | `Q2664371` | 1574-07-12 to 1574-09-13 | africa, 16th | `la-goulette` in place, `ottoman-habsburg-wars` as parent | `la-goulette` |
+
+Everything in the table is `tools/import/wikidata.mjs --import`'s own work
+except the `parent` column, which is this fire's and carries the flag
+`filed-from-p361` beside `imported-facts` and `summary-from-lead`. **A15 (3)**:
+both new places carry `summary: null`. **A15 (8) did not fire on any of the
+eight** — the tool read each item's English sitelink as its own article,
+`Q2502863` included, whose label is *Algiers expedition* and whose article is
+*Battle of Algiers (1541)*; the title is the article's own and not a redirect
+into another, so the flag does not apply and `titleFor()` kept the
+disambiguator. **A15 (6) refused a country on every record that named one** and
+the one that mattered is `capture-of-penon-of-algiers-1529`: its only located
+thing was `Q262` Algeria, whose inception is **1962**, which is 433 years after
+the event ended, so the country was refused and the `region` kept — the record
+is `region: africa` with `place: null`, which is not a defect (A9's own rule:
+a point comes from `P625` or the record stays placeless).
+
+**The filing is the item's own `P361` chain with one link missing.** All seven
+battles name `Q118929718` *Ottoman–Spanish War* (1515–1577) as their `P361`,
+and that item **has two sitelinks and no English article at all**, so there is
+no source to write a record from and it cannot be the umbrella. Its own `P361`
+is `Q786171` *Ottoman–Habsburg wars*, which has 30 sitelinks and an English
+article, and that is what the seven are filed under: the span, 1526 to 1791,
+contains every one of them, and the subject is the Habsburg–Ottoman war the
+article's second paragraph extends to the Maghreb in its own words — *"Ottoman
+ships sweeping away Venetian possessions in the Aegean and Ionian seas and
+Ottoman-supported Barbary pirates seizing Spanish colonies in the Maghreb"* —
+with Habsburg Spain named as a belligerent in the first. **The honest caveat,
+for the reviewer**: the same lead says the wars *"were dominated by land
+campaigns in Hungary"*, so this umbrella's article is not primarily about the
+sea the seven were fought on. The grandparent is the closest umbrella with an
+article, and a reviewer who disagrees should write the Ottoman–Spanish War as a
+record of its own from a source that is not Wikidata and re-file the seven one
+level down.
+
+### Edges written (A5, M72, A14, A15 (5), A15 (11))
+
+Eight, every one `probable` on the articles alone (rule 22), every one with a
+locator and a second author, all drafted under the dated exception and queued
+for `review.html` with the flag `m42b-batch-63`. The eighth, at the foot of the
+table, is the umbrella's own and was found late — the paragraph after the table
+says how and why that matters.
+
+| from → to | type | what carries it |
+| --- | --- | --- |
+| `capture-of-penon-of-algiers-1529` → `battle-of-algiers-1541` | `precondition-of` | *Capture of Peñón of Algiers (1529)*, rev 1370609401, § Aftermath: *"The huge Algiers expedition undertaken by Charles V in 1541 **to retake Algiers** ended in failure."* Second author *Battle of Algiers (1541)*, rev 1375834500, § Background, on what was there to retake: *"Algiers had been under the control of the Ottoman emperor Suleiman the Magnificent **since its help in 1529** by Hayreddin Barbarossa."* |
+| `battle-of-algiers-1541` → `italian-war-of-1542-1546` | **`enabled` ✦ crosses an umbrella** | *Italian War of 1542–1546*, rev 1370624570, § Prelude: *"Francis, considering it impolitic to attack a fellow Christian who was fighting the Muslims, **promised not to declare war for as long as the Emperor was campaigning.** The Imperial expedition, however, was entirely unsuccessful; storms scattered the invasion fleet soon after the initial landing, and Charles had returned to Spain with the remainder of his troops by November."* Second author the expedition's own article, rev 1375834500, for where the campaign ends: *"Charles could not depart for the open sea until 23 November … He finally reached Cartagena … on 3 December."* |
+| `conquest-of-tunis-1534` → `conquest-of-tunis-1535` | `reacted-to` | *Conquest of Tunis (1534)*, rev 1370612766: *"In 1535 however, upon the plea of Muley Hasan, Emperor Charles V mounted a **counter-offensive** and retook the city in the conquest of Tunis of 1535."* Second author *Conquest of Tunis (1535)*, rev 1375228138, § Background, with the answer in the verb: *"Charles V was informed that should Barbarossa remain in power in Tunis, both Italy and Spain might be threatened by the Ottoman navy. **He therefore assembled a large fleet** to drive the Ottomans from the region."* |
+| `battle-of-cajamarca` → `conquest-of-tunis-1535` | **`enabled` ✦ crosses an umbrella** | *Conquest of Tunis (1535)*, rev 1375228138, § Background: *"Unexpectedly, **the funding of the conquest of Tunis came from the galleons sailing in from the New World, in the form of two million gold ducats extracted by Francisco Pizarro for releasing the Inca king Atahualpa**, whom he nevertheless executed on 29 August 1533."* That sentence names the ransom and two men and not the held event, so the second author is what joins them: *Battle of Cajamarca*, rev 1370108415, opens *"the ambush and seizure of the Incan ruler Atahualpa by a small Spanish force led by Francisco Pizarro, on November 16, 1532"* |
+| `conquest-of-tunis-1535` → `capture-of-tunis-1569` | `precondition-of` | *Conquest of Tunis (1574)*, rev 1370612776, § Background: *"**He established a garrison and a vassal ruler in the person of Lhacène of the Hafsid dynasty.** The Bey of Algiers Uluj Ali Pasha captured Tunis in 1569 for the Ottoman Empire."* Second author *Capture of Tunis (1569)*, rev 1370609762, on what the campaign met: *"Uluç Ali encountered **the Hafsid sultan** at Beja … Mulay Ahmad III was forced to take refuge in **the Spanish presidio of La Goletta**"* |
+| `capture-of-tunis-1569` → `conquest-of-tunis-1573` | `precondition-of` | *Conquest of Tunis (1573)*, rev 1370612771, § Background: *"**Knowing the Spanish garrison in the La Goleta fort in Tunis was still besieged since the 1569 capture of the city by Occhiali, this was the chosen target.**"* Second author *Capture of Tunis (1569)*, rev 1370609762: *"The Christian forces were able to recover Tunis in 1573"* |
+| `conquest-of-tunis-1573` → `conquest-of-tunis-1574` | `reacted-to` | *Conquest of Tunis (1574)*, rev 1370612776, opening: *"the conquest of Tunis by the Ottoman Empire **over the Spanish Empire, which had seized the place a year earlier**"*; § Background: *"in the aftermath of the 1571 Christian victory at the Battle of Lepanto, John of Austria re-conquered Tunis in October 1573."* Second author *Conquest of Tunis (1573)*, rev 1370612771, § Consequences: *"However, Occhiali would retake Tunis the following year due to the disbanding of the Spanish fleet."* |
+| `italian-wars` → `ottoman-habsburg-wars` | **`enabled` ✦ crosses an umbrella** | *Ottoman–Habsburg wars*, rev 1377471430, lead: *"The Protestant Reformation, **French–Habsburg rivalry** and the numerous civil conflicts of the Holy Roman Empire **distracted Christians from their conflict with the Ottomans**."* The same article on the stalemate after Rhodes links the third call on Habsburg strength to this atlas's own record of it: *"Habsburg interests were split between fighting for devastated European land under Islamic control, trying to stop the gradual decentralization of Imperial authority in Germany, and for Spain's ambitions in North Africa, the Low Countries and `[[Italian Wars|against the French]]`."* Second author *Italian War of 1542–1546*, rev 1370624570, from the French side of the same split: *"Suleiman the Magnificent of the Ottoman Empire, **seeking to distract Charles from Ottoman advances in Hungary**, encouraged the Franco-Imperial rift."* **The edge's own `explanation` says where it is weak**: the lead links the distraction to *French–Habsburg rivalry*, which is the dynastic quarrel and not only its wars, and it is the body that links the fighting to *Italian Wars*; the atlas holds the war and not the rivalry |
+
+**A14 held on all eight.** Five run between siblings inside
+`ottoman-habsburg-wars`; of the three that cross, one goes to a child of
+`italian-wars`, one comes from a child of `spanish-conquest-of-the-inca-empire`,
+and the eighth runs between two events that are each part of nothing — which is
+why the measure counts it as crossing, there being no parent for the two to
+share. No edge in this batch runs between a parent and its own child, and in
+particular none runs from `ottoman-habsburg-wars` to any of the seven.
+
+**Deviation 1380 held and cost nothing**: every revision cited here is the
+revision the record at that end already cites. Both held endpoints were checked
+first — `italian-war-of-1542-1546` cites *Italian War of 1542–1546* at rev
+1370624570 and `battle-of-cajamarca` cites *Battle of Cajamarca* at rev
+1370108415 — and the two edges that touch them cite those and no others.
+**Batch 60's rule held too**: `data/edges/<from>--<to>--<type>.json` was checked
+for all five types on both held pairs before anything was fetched, and the only
+edge either endpoint carried was
+`italian-war-of-1542-1546--italian-war-of-1551-1559--precondition-of`.
+
+**Three of the seven say in their own `explanation` why they are the weakest
+type the evidence allows**, which is the honest form of A15 (5) when the
+chronology is real and the claim is thin: the 1529→1541, 1535→1569 and
+1569→1573 edges are `precondition-of` and not `caused`, because what each
+article states is an **object** — a city to retake, a garrison and a vassal to
+overthrow, a besieged fort to relieve — and never a motive. The 1541 article
+names Charles's motive separately and it is the siege of Buda, which this atlas
+does not hold.
+
+### What was refused
+
+| candidate | reason |
+| --- | --- |
+| `conquest-of-tunis-1535` → `battle-of-algiers-1541` | **A15 (5), the chronology class, and the one outright refusal of the batch.** The 1535 article's lead is the only place the two stand together and it puts them side by side as reputations and not as causes: *"the conquest of Tunis would be obscured in historiography by other battles, including failures like the Algiers expedition and victories like the battle of Lepanto."* No cause stated, no edge. |
+| `siege-of-buda-1541` (`Q...`, not held) | The cause the 1541 article *does* state — *"wishing to obtain revenge for the recent siege of Buda"* — names an event in Hungary in 1541. **This atlas holds no record of it and this lane may not import one**: it is Europe before 1900, which A15 (1) pauses until Africa and Asia reach 303. Counted here as the one candidate a held article named and this batch could not take. |
+| `Q118929718` *Ottoman–Spanish War*, 1515–1577 | The seven battles' own direct `P361`. **Two sitelinks and no English article**, so there is no source and no record. The filing goes to its own parent instead, and the paragraph above says what that costs. |
+| `Q2915203` *Ethiopian–Adal War*, 1529–1543 | The standing candidate the last stand named for this cell, read and left again. It is africa's 16th century and it would open the cell, but **its article names no event this atlas holds**, so under A5 there is no edge to write and it is not imported. It stays the first candidate for a fire that can bring a second record in with it. |
+| `Q7179708` *Peñón of Algiers* as a place | Refused by the tool, not by this fire: **its only class is `Q1226252` *tied island*, which `data/imports/wikidata-seeds.json` → `classes` has no row for**, so no place record was written and `capture-of-penon-of-algiers-1529` is placeless. The item has a point (36.7867, 3.0683) and 15 sitelinks, so the only thing missing is the editorial call on the row, and it is a real call: the nearest sibling in the table is `Q23442` *island* → `region`, but this is a fortified rock a few hundred metres across in a harbour, which `region` would draw coarse and faint. **This fire did not add the row**, because the import's own rule 2 forbids writing `place` onto a record that already exists, so adding the row would not fill this record in anyway — it belongs to a pass, with `point` the precision to argue for. |
+| `Q165425` *Battle of Lepanto* (72 sitelinks), and the Holy League | Named by both the 1573 and the 1574 articles as what the Spanish momentum came from, and the most-linked item anywhere near this vein. **Europe before 1900, so not this lane's** (A15 (1)). The 1569→1573→1574 chain therefore ends in this partition rather than reaching the corpus through Lepanto, which is most of why deviation 1385 reads as it does. |
+
+**The candidates the batch left, counted (A15 (1)).** The sweep over `Q786171`'s
+`P361` descendants at one and two hops returned about sixty items. Of those,
+**fifteen are on African ground before 1800**; this batch took **seven** and
+left **eight**: `Q108542187` *Algiers Expedition (1519)* (9 sitelinks),
+`Q2293284` *Battle of Alborán* (9), `Q118946676` *Battle of Algiers* 1529 (1),
+`Q134437693` *Attack on Sousse* 1537 (1), `Q135623349` *Battle of Monastir*
+1540 (2), `Q133837258` *Attack on Zuwarah* 1552 (1), `Q85968980` *Capture of
+Bizerte* 1557 (1), `Q118946681` *Battle of Béja* 1569 (1). **Six of the eight
+are at one or two sitelinks and were left on deviation 1370's test**; the two
+worth a next fire are the Algiers expedition of 1519 and Alborán, both at nine,
+and both now have a held umbrella and a held neighbour chain to connect to,
+which is the thing this cell did not have an hour ago.
+
+### The numbers
+
+| | before 63 | after 63 |
+| --- | --- | --- |
+| active events | 1377 | **1385** |
+| main | 229 | **230** |
+| largest connected component | 772 | **772** |
+| components | 397 | **397** |
+| events with no edge | 305 | **303** |
+| **edges crossing an umbrella** | 596 | **599** |
+| edges inside one umbrella | 591 | **596** |
+| active edges | 1187 | **1195** |
+
+Eight edges: three cross an umbrella and five are inside one, which is the whole
+of the +3 and +5. **`noEdge` falls by two** — the eight new records all carry an
+edge, and the eighth edge also took `italian-wars` itself off the degree-zero
+list, which it had been on since it was imported. The validator's warning count
+falls with it, from 599 to **597**. The component count is unchanged rather than
+up by one, because the two chains this batch made joined components that existed
+and the eighth edge put the umbrella in `italian-wars`'s.
+
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 5 / 3 | 9 / 5 |
+| 16th c. | 45 / 2 | **7 / 0** | — | 51 / 5 | 103 / 7 |
+| 17th c. | 109 / 3 | 7 / 0 | 4 / 0 | 70 / 7 | 190 / 10 |
+| 18th c. | 62 / 3 | 14 / 0 | 19 / 0 | 79 / 2 | 174 / 5 |
+| 19th c. | 39 / 9 | 24 / 1 | 8 / 6 | 61 / 8 | 132 / 24 |
+| 20th c. | 245 / 60 | 94 / 23 | 156 / 37 | 86 / 30 | 581 / 150 |
+| 21st c. | 52 / 7 | 76 / 7 | 29 / 14 | 39 / 1 | 196 / 29 |
+| **all** | **556 / 86** | **222 / 31** | **216 / 57** | **391 / 56** | **1385 / 230** |
+
+*Active events, then of those the ones that are part of nothing, filed by the
+century of the **start** year as deviation 1378 settled. Two small differences
+from the tables above this one, both of them this table being right where they
+were not: the rows now **include** the two records earlier stands held out of
+the table and counted separately, so europe's 20th reads 245 and not 244 and
+africa's 20th 94 and not 93, and the row and column sums are therefore exact —
+every one of the 1,385 active events is in exactly one cell, and `all` is 1,385.
+The batch's own eight are the seven in africa's 16th and the umbrella, which is
+`europe` by its place and 16th by its start.*
+
+**Africa and Asia stand at 222 and 216 against A10's 303**, so **A15 (1)'s pause
+holds** and nothing of Europe before 1900 is this lane's. Africa gained seven
+and is now six ahead of Asia, which makes **asia's 15th, 16th and 17th
+centuries — 0, 0 and 4 — the trailing cells for the next fire**.
+
+### Deviation 1384: the main count rises by one, and the umbrella is why
+
+This brief says the main count must not rise from what a fire finds it at, and
+A3 and A6 say an import that leaves it higher **has to say why**. It is 229
+before this batch and **230 after**, and the one that was added is
+`ottoman-habsburg-wars`.
+
+The arithmetic is the argument. Africa's 16th century held nothing, so there
+was no existing main event in it to file under a new umbrella and nothing to
+offset against. The two ways to open the cell were:
+
+1. import the seven battles with no umbrella: **main 229 → 236**;
+2. import the umbrella their own `P361` chain names and file all seven under it:
+   **main 229 → 230**.
+
+The second is what was done, and against the first it is three-quarters of a
+hundredth of the corpus rather than seven main events on a resting timeline
+A6 wants in the low tens per century. The 16th century's main count across all
+four lanes is **7** after this batch, against 6 before it — europe 2, americas
+5, and the umbrella is europe's third. It is also an umbrella the *other* lane
+can file under: M42 owns Africa and Asia after 1800 and Europe is nobody's
+before 1900, but the Ottoman–Habsburg wars run to 1791 and the Hungarian half
+of them is unwritten in this atlas, so the next fire that opens any of it has a
+parent waiting.
+
+**What this does not license**: a fire may not write an umbrella to hold
+records it has not imported, and it may not write one where a held umbrella
+already fits. Both were checked here — `italian-wars` (1494–1559) was the only
+held umbrella whose span covers 1529 to 1559, and filing Tunis and Algiers
+under the Italian Wars would be false, because the Italian Wars article is
+about the Habsburg–Valois fight in Italy and the items' own `P361` says
+Ottoman–Spanish War.
+
+### Deviation 1385: the corpus grew, the largest component did not, and what that measures
+
+A5 asks a batch that grows the corpus and not the component to say why. This one
+grew the corpus by eight and left the component count where it was, and **left
+the largest component at exactly 772**. The reason was measured and not assumed,
+by walking the component each new chain joined:
+
+| chain | the component it is now in | size |
+| --- | --- | --- |
+| `capture-of-penon-of-algiers-1529`, `battle-of-algiers-1541` | with `italian-war-of-1542-1546` and `italian-war-of-1551-1559` | **4** |
+| `conquest-of-tunis-1534`, `-1535`, `capture-of-tunis-1569`, `conquest-of-tunis-1573`, `-1574` | with `battle-of-cajamarca` | **6** |
+| `ottoman-habsburg-wars` | with `italian-wars` | **2** |
+
+So the two edges that cross an umbrella did exactly what A15 (11) asks and the
+component still did not move, **because what they reached is small**. Measured:
+`italian-wars` has **nine** direct children and **two** edges between any two of
+them, so its largest piece was a pair; and `battle-of-cajamarca` carried **no
+edge at all** before this batch, though `spanish-conquest-of-the-inca-empire` has
+eleven children with eight edges among them — the Inca conquest is well joined
+and Cajamarca, the event that opens it, was not attached to any of it.
+
+**The finding, stated plainly: the 772-event component is a modern one, and the
+atlas's own sixteenth century is a scatter of twos and eights.** This lane has
+been reading the largest component as a measure of its own batches, and the walk
+shows that a 16th-century batch cannot reach it however well it connects,
+because no edge chain runs out of the atlas's 16th century into its 19th. The
+cheapest moves that would change that are all edges between records already
+here, and none of them is an import:
+
+1. **`battle-of-cajamarca` to its own siblings.** It is the opening act of a
+   chain of eight that it is not joined to, and an edge from it into
+   `battle-of-cusco` or `battle-of-vilcaconga` would merge a 6 and an 8 at a
+   stroke. A14 does not bar it — they are siblings, not parent and child.
+2. **The Italian Wars' nine children to each other.** Each sub-war's article
+   opens on the one before it, and one of them is already read and quoted in
+   this very batch: *Italian War of 1542–1546*, rev 1370624570, § Prelude —
+   *"The war arose from the failure of the Truce of Nice, **which ended the
+   Italian War of 1536–1538**, to resolve the long-standing conflict between
+   Charles and Francis."* That is `italian-war-of-1536-1538 --precondition-of-->
+   italian-war-of-1542-1546`, cited, from a revision the atlas already holds,
+   and it is one of eight such links the sequence offers.
+3. **One edge out of the 16th or 17th century into something later**, which is
+   the only thing that would move 772 itself.
+
+**The first two are the next fire's best move in this partition**, they need no
+network beyond revisions the records already cite, and the second is already
+half-written above.
+
+### Deviation 1386: one new main event puts two old labels on each other, and the check is red for it
+
+**This is not deviation 1383 again and it is not load.**
+`tests/graph-labels-browser.test.mjs` fails **deterministically** at this head,
+on two of its three tests, with the same answer every time:
+
+```
+not ok - at the world view a label is no longer than it was, and none is drawn over another
+  error: and no two of them touch
+    + [ [ 'Dutch–Portuguese War', "Thirty Years' War" ] ]
+    - []
+not ok - a label is the same size on screen however far the picture is zoomed
+  error: nothing overlaps at k = 1 — the same pair
+```
+
+Both labels belong to records this fire did not touch. The file was run five
+times across this fire's two heads and the pair is identical every time; its
+first test, *"a node with room round it is named in full"*, failed once and
+passed four times, which **is** 1383's timing fault and is not this.
+
+**It was localised by experiment, in a worktree, and not by reading the code.**
+
+| the tree | result |
+| --- | --- |
+| the pre-batch head `1306cb1f` | **green, 3 of 3** |
+| as pushed: `ottoman-habsburg-wars` main and degree-zero, the seven filed under it | **red**, the pair above |
+| the umbrella's file removed and the seven left main — 7 new main events instead of 1 | **green, 3 of 3** |
+| as pushed, plus one throwaway edge from the umbrella **to `thirty-years-war`** | **green, 3 of 3** |
+| as pushed, plus the real cited edge from `italian-wars` **into** the umbrella | **red**, the same pair |
+
+So it is not corpus size, and it is not the seven records: **it is this one new
+main event in the europe band between 1526 and 1791.** The two rows that go green
+say something sharper than "give it an edge". The throwaway edge went *to*
+`thirty-years-war`, which is one of the two names that collide, so what moved was
+that node's own barycentre; the real edge, which runs into the umbrella from
+`italian-wars`, gives the umbrella a degree and a component and **changes
+nothing about the collision**. The node is in the layout either way, and the two
+labels either side of it are drawn over each other either way.
+
+**What the defect is.** `src/graph-view/label-fit.js` says it in its own
+comments: the box a label is placed by is an *estimate* — `EM = 0.55` of the font
+size per character, `SLACK = 1.1` and `SLACK_CHARS = 1` on top — and the comment
+beside `SLACK` records this exact failure having happened before: *"which is what
+put two names on each other at the arrival view while every box said they were
+clear."* The placer skips a label whose box hits one already placed, so a drawn
+overlap means the box and the rendered rectangle disagree. Both names in the pair
+carry a character the average is wrong about — an en dash in *Dutch–Portuguese
+War*, an apostrophe in *Thirty Years' War*.
+
+**What this lane did not do, and why.** The patch is one of two numbers in
+`label-fit.js`, or a placer that measures the text it is about to write instead
+of estimating it. **This brief forbids a display change to this lane**, and
+deviation 1383 settled the same point for the same suite: a records lane has no
+standing to change how the atlas is drawn, and STEP 1's merge rule would drop a
+test-file change at the next merge in any case. **It is lane A's.**
+
+**What this lane did not do either, and why not.** The two green rows above are a
+real temptation and both are refused:
+
+- *Drop the umbrella and leave the seven main.* Green, and wrong twice over: the
+  seven would be **unfiled against their own `P361` chain**, which says they are
+  part of a war series, and the 16th century's main count would go from 6 to 13 —
+  more than doubling the century A6 exists to keep in the low tens. A label
+  collision is a defect in how one picture is drawn; an unfiled record is a
+  defect in what the atlas says.
+- *Write an edge chosen to move the layout.* The throwaway edge to
+  `thirty-years-war` is green and **there is no sentence anywhere behind it**.
+  The *Ottoman–Habsburg wars* article at rev 1377471430 was read whole and then
+  scanned mechanically against the titles of the other 1,384 active events, every
+  one of nine characters or more: **twelve match**, and four of the twelve are
+  this batch's own Tunis records. What is left is `italian-wars`, which the
+  eighth edge is written from, and five that carry no cause the atlas could use:
+  `world-war-i`, `treaty-of-sevres` and `treaty-of-trianon` in the sentence
+  *"In 1918, the Austro-Hungarian Empire surrendered to partition under the
+  Treaties of Saint Germain and Trianon, as did the Ottomans under the Treaty of
+  Sèvres"*, which is a dissolution after the series and not a cause of anything
+  in it; and `french-revolution` and `french-revolutionary-wars` in
+  *"found themselves threatened by the **imminent** French Revolutionary Wars"*,
+  a war that had not started — it begins in 1792 and this series ends in 1791,
+  so an edge from it would run backwards in time and rule 4 would refuse it. The *Thirty Years' War* article at the revision its own record
+  cites, 1376022805, was searched for "Ottoman": three mentions, every one a
+  condition or an absence — Austria *"securing its eastern border against the
+  Ottoman Empire"*, and the Ottomans kept from joining Bethlen by the Polish war
+  of 1620 and the Persian war of 1623. **An edge written to move a layout, with
+  no sentence behind it, is the one thing this project exists not to do.**
+
+**The eighth edge is not that edge, and the order it was found in is worth
+recording.** `italian-wars --enabled--> ottoman-habsburg-wars` came out of that
+same scan, which was run because A5 wants every imported record connected and
+the umbrella was the one of the eight without an edge. It is carried by the
+lead's own sentence about the distraction, it took two records off the
+degree-zero list, and **it does not fix the collision** — which is the honest
+reason to be sure it was not written for one.
+
+**For the owner, in one line**: the check on `m42b` is red on two display tests
+because one new umbrella event made two old labels overlap in the graph; the
+records are sound, `validate --index` is clean at 0 errors, and the fix is two
+numbers in a file this lane may not touch.
+
 ## Where the run stands, for the fire that picks it up
 
-*1 October, after the fifty-fifth fire: two clean merges, **one batch** — 62,
-which imported nothing and wrote **three edges, all three crossing an
-umbrella** — and, after it, **one measurement that found nothing to write**.
-**A15(11)'s number moved again: 593 → 596**, and the largest component
-768 → 772. The main count did not move. The last stand's move 2 was the whole of
-the batch; the measurement above says the move is now spent, and deviation 1382
-says why.*
+*1 October, after the fifty-sixth fire: one merge (`origin/m42`), **one batch** —
+63, the first in nineteen fires to import anything, which **opened africa's 16th
+century from zero to seven** with the umbrella their own `P361` chain names, and
+wrote **eight edges, three of them crossing an umbrella**. **Two things the next
+fire must know**: the main count rose by one and deviation 1384 says why, and
+**the check is red** on two display tests for a reason deviation 1386 localised by
+experiment and that no record can fix.*
 
-| | before 62 | after 62 |
+| | before 63 | after 63 |
 | --- | --- | --- |
-| active events | 1377 | **1377** |
-| main | 229 | **229** |
-| largest connected component | 768 | **772** |
-| components | 400 | **397** |
-| events with no edge | 307 | **305** |
-| **edges crossing an umbrella** | 593 | **596** |
-| edges inside one umbrella | 591 | **591** |
-| active edges | 1184 | **1187** |
+| active events | 1377 | **1385** |
+| main | 229 | **230** |
+| largest connected component | 772 | **772** |
+| components | 397 | **397** |
+| events with no edge | 305 | **303** |
+| **edges crossing an umbrella** | 596 | **599** |
+| edges inside one umbrella | 591 | **596** |
+| active edges | 1187 | **1195** |
 
-The per-lane and per-century table is in the batch section above and did not
-move: **europe 554 / 84, africa 214 / 30, asia 216 / 57, americas 391 / 56**,
-1375 in the table and 1377 with the two ranged records. **Africa and Asia stand
-at 214 and 216 against A10's 303**, so A15(1)'s pause holds and nothing of
-Europe before 1900 is this lane's.
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | — | — | 5 / 3 | 9 / 5 |
+| 16th c. | 45 / 2 | **7 / 0** | — | 51 / 5 | 103 / 7 |
+| 17th c. | 109 / 3 | 7 / 0 | 4 / 0 | 70 / 7 | 190 / 10 |
+| 18th c. | 62 / 3 | 14 / 0 | 19 / 0 | 79 / 2 | 174 / 5 |
+| 19th c. | 39 / 9 | 24 / 1 | 8 / 6 | 61 / 8 | 132 / 24 |
+| 20th c. | 245 / 60 | 94 / 23 | 156 / 37 | 86 / 30 | 581 / 150 |
+| 21st c. | 52 / 7 | 76 / 7 | 29 / 14 | 39 / 1 | 196 / 29 |
+| **all** | **556 / 86** | **222 / 31** | **216 / 57** | **391 / 56** | **1385 / 230** |
 
-*Seven commits: the claim, the `origin/m0` merge, the `origin/m42` merge, batch
-62's records, its index, the prerendered bibliography the index commit left out,
-and the locator correction deviation 1380 names with its own index rebuild
-folded in, and this stand with the measurement section above it.
-`validate --index` is clean at **0 errors, 599 warnings** (601 before
-the batch: three events left degree zero). A15(2) reports **0 revisions that
-should be on disk and are not**, 2,820 of 2,896 citations on disk at the
-revision cited and 76 unholdable beside a more-cited revision of the same item.
-The suite is **green — 2,253 tests, 0 failed, 0 skipped** (1,940 pure and 313
-across the 40 browser suites, run the way the check runs them, one browser suite
-at a time), measured at this head. **The check is green on every commit of this
-fire that carries a record, an index or a page** — run 2227 on `23fcdb4b`, the
-head that carried all of them, and run 2231 on `129d8fd6` — and **red, twice, on
-`1ee9028e`, which changes one paragraph of this file and nothing else** (run
-2232, both attempts) — **and green again on `e1da2b90`, run 2233**, the commit
-that wrote deviation 1383. Three green runs against two red attempts on one
-intervening docs commit is the whole of the evidence, and deviation 1383 reads
-both failures. (This line's own commit is pushed without waiting for its run, as
-the last stand's was.) Runs 2219, 2220, 2221,
-2224, 2225, 2226, 2229 and 2230 were cancelled by a newer push, which the
-workflow's own `cancel-in-progress` does; the merge-commit failure deviation
-1377 describes did not recur.*
+**Africa and Asia stand at 222 and 216 against A10's 303**, so A15(1)'s pause
+holds and nothing of Europe before 1900 is this lane's to import.
 
-### Deviation 1383: two browser suites fail on this branch's head for want of runner time, and the fix is not this lane's to push
+*Four commits: the `origin/m42` merge, batch 63's records, its index, the eighth
+edge with the M67 A1 note the test asked for, that index, and this stand with the
+batch section above it. `validate --index` is clean at **0 errors, 597 warnings**
+(599 before the eighth edge, which took two records off the degree-zero list).
+A15(2) reports **0 revisions that should be on disk and are not**, 2,844 of 2,920
+citations on disk at the revision cited and 76 unholdable beside a more-cited
+revision of the same item.*
 
-`1ee9028e` changes one paragraph of `docs/m42b-pool.md` and nothing else, and
-**the check is red on it twice**, where the same tree with the same `data/` went
-green on `23fcdb4b` (run 2227) and `129d8fd6` (run 2231) half an hour earlier.
-Both failures were read rather than assumed, and they are **two different suites
-failing two different ways**:
-
-| attempt | suite | what it reports |
-| --- | --- | --- |
-| 1 (run 2232) | `tests/panel-browser.test.mjs` | the whole file hit the workflow's `--test-timeout=120000`: `failureType: 'testTimeoutFailure'`, `duration_ms: 120074`. **0 failed, 1 cancelled** — no assertion was broken |
-| 2 (the one re-run) | `tests/graph-labels-browser.test.mjs:102` | "a node with room round it is named in full": `timed out waiting for hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict to be named in full`, through `waitFor` in `tests/browser.mjs:452`, `duration_ms: 13052`. **1 failed, 0 cancelled** |
-
-Both were run here at this exact head, against the live corpus:
-`panel-browser` passes in **48 s** against the workflow's 120 s file cap, and
-`graph-labels-browser` passes **three times out of three** in 6.0, 6.9 and 7.2
-seconds against a `waitFor` bound the failing CI test blew past at 13 s. The two
-suites do not touch what this fire wrote: batch 62's three edges run between the
-Peninsular War and three Spanish American wars of independence, and the label
-test is about the Hague Convention's 59-character title. `m42`, `m0` and `main`
-are green on their own latest runs, so this is not lane-wide either.
-
-**What it is**: the browser pass is the second of two on a four-core shared
-runner, it took 606 s and 536 s on the two attempts, and the bounds in
-`tests/browser.mjs` are tight enough that a slow round drops *a different test
-each time* — which is the fault `docs/m63-load.md` diagnosed at M63 and
-`docs/m78-flakes.md` at M78, now reappearing at 1,377 active events rather than
-the 581 and 668 those documents measured. One re-run has been spent, and a second
-failure is real, so this is reported and not re-run again. **Run 2233, on the
-commit that carries this deviation, is green** — the fourth run of the fire to
-pass on a tree whose `data/` is identical to the one that failed twice, which is
-the measurement rather than the assumption.
-
-**The proposed patch, which belongs to lane A and not here**: raise the
-`waitFor` bound in `tests/browser.mjs` (and with it the browser pass's share of
-the workflow's `--test-timeout`) so it scales with the corpus the suites draw,
-rather than sitting at a constant that was generous at 581 events and is not at
-1,377. **This lane must not push it**: STEP 1's own merge rule keeps
-`origin/m0`'s side of any test file, so a bound this branch raised would be
-dropped at the next merge, and the record lanes have no standing to change a
-display suite. Nothing under `data/` is implicated and `validate --index` is
-clean at 0 errors, so the records this fire wrote are sound; what is red is the
-timing of two display suites on one docs commit.
+*The suite at this head is **1,940 pure tests, 0 failed, 0 skipped**, and **313
+browser tests across the 40 suites, 2 failed** — the two of
+`tests/graph-labels-browser.test.mjs` that deviation 1386 is about, and the same
+two the check reports. `tests/m67.test.mjs` failed once, on the batch's own
+record, and was fixed by writing the section M67 A1 asks for in
+`docs/m67-umbrellas.md`; it is green. The check went **red on run 2242**
+(`4515d4f9`) for the same two tests, which were read in the job's own log and not
+assumed; runs 2239 and 2241 were cancelled by a newer push.*
 
 ### The next fire's moves, in order
 
-1. **The umbrella edge pass in this lane is now spent, and deviation 1382 says
-   why.** Of the five umbrellas the last stand named, `mexican-`, `colombian-`
-   and `bolivian-war-of-independence` are done, `ecuadorian-war-of-independence`
-   is closed (refusal 2 above), and the four it named after them
-   (`haitian-revolution-1791-1804`, `cuban-war-of-independence-1895-1898`,
-   `beaver-wars`, `war-of-jenkins-ear`) were **not** degree-zero or near it —
-   three of the four already carry two or three edges each. The measurement is
-   in the section above this stand; **do not re-walk the four**.
-2. **Check `data/edges/<from>--<to>--<type>.json` for all five types and compare
-   the two `when.date`s before fetching anything** (batch 60's rule, deviation
-   1373). Both held this fire and cost nothing.
-3. **Deviation 1380 is a rule now, not a remedy**: before citing a revision,
-   check what the target record already cites.
-4. **Do not re-measure the century convention** (deviation 1378). The stands
-   print `floor(y / 100) + 1`; the nine round-year records are listed above.
-5. **`arauco-war`'s interval is the one blocker worth the owner's eye that this
-   fire added** (deviation 1379): the atlas dates it 1546–1662, its own article
-   gives three datings and "sporadically the 18th century", and at least one
-   held battle (`battle-of-rio-bueno-1759`) is filed elsewhere only because of
-   it. A fire that finds a cited single end may widen it under A7; none should
-   invent one.
-6. **`Q3051491` *Capture of Valdivia*** is unchanged and still the refusal worth
-   the owner's eye: *may a batch write a record for an item that has no `P31`,
-   where the class is plain from the article and the edge is cited?*
-7. **The three questions to the owner are otherwise unchanged**: the main count;
-   **C8**; and **A15(1)**. Do not spend a fire re-establishing the balance.
-8. **C8 is the lane's one real blocker now** (deviation 1382), not a question
-   among others: the three degree-zero umbrellas left in this partition are all
-   barred by A14 and nothing a fire can read will move them.
-9. **Check a new deviation number against `docs/m42-pool.md` before using it.**
-   The 21 September amendment gave lane B a block from 950 and this brief gave
-   M42b one from 1200, but the two lanes have been drawing from the same range
-   for weeks: M42 is at **1514** and this lane at **1382**, so every number this
-   lane takes from here lies inside a range M42 has already spent. Two have
-   collided already (1212 and 1235, both old and both left alone); 1378 to 1382
-   were checked against M42's pool before being written and are free. One
+1. **Read deviation 1386 before anything else.** The check is red and the records
+   are sound. **Do not "fix" it by withdrawing a record and do not write an edge
+   to move a layout**; the deviation refuses both and says why. If the owner or
+   lane A has since raised `SLACK` in `src/graph-view/label-fit.js`, merge
+   `origin/m0` and the red goes with it.
+2. **The two cheap edge passes deviation 1385 measured**, which need no network
+   beyond revisions the records already cite and are the best value in this
+   partition:
+   - `battle-of-cajamarca` into its own siblings. It is the opening act of a
+     chain of eight it is not joined to; A14 does not bar it, they are siblings.
+   - **The Italian Wars' nine children to each other**, and one of the eight is
+     already quoted in batch 63's section: *Italian War of 1542–1546*, rev
+     1370624570, § Prelude — *"The war arose from the failure of the Truce of
+     Nice, which ended the Italian War of 1536–1538, to resolve the long-standing
+     conflict between Charles and Francis."* That is
+     `italian-war-of-1536-1538 --precondition-of--> italian-war-of-1542-1546`,
+     cited, from a revision the atlas holds.
+3. **Asia's 15th, 16th and 17th centuries — 0, 0 and 4 — are now the trailing
+   cells**, africa having gone six ahead. Asia's 16th has the same problem
+   africa's had an hour ago and one fewer handhold: the earliest Asian event the
+   atlas holds is `battle-of-cape-rachado` of 1606. The vein worth trying is the
+   **Ottoman–Portuguese conflicts of 1538–1559** — Diu, Aden, Hormuz — because
+   Portugal is this atlas's own subject and because `ottoman-habsburg-wars` now
+   exists as a neighbour umbrella; but check first what any candidate's article
+   names of what the atlas holds, which is what refused `Q2915203` twice.
+4. **Africa's 16th century has eight candidates left and two worth reading**,
+   counted in batch 63's refusal section: `Q108542187` *Algiers Expedition
+   (1519)* and `Q2293284` *Battle of Alborán*, both at nine sitelinks, and both
+   now have a held umbrella and a held neighbour chain to connect to.
+5. **Deviation 1380 is a rule**: before citing a revision, check what the record
+   at the other end already cites. It held on all eight edges this fire and cost
+   nothing.
+6. **Batch 60's rule held too**: check `data/edges/<from>--<to>--<type>.json` for
+   all five types and compare the two `when.date`s before fetching anything.
+7. **Do not re-measure the century convention** (deviation 1378). The table above
+   files a record by the century of its **start** year and includes every active
+   event, so its rows and columns sum exactly to 1,385; the tables before batch 63
+   held two records out and read europe's 20th at 244 and africa's at 93.
+8. **The class table has one row waiting and it is an editorial call, not a
+   guess**: `Q1226252` *tied island*, for the Peñón of Algiers. Batch 63's
+   refusal section and `docs/m67-umbrellas.md` argue both sides; the import's own
+   rule 2 means adding it will not fill the existing record in, so it belongs to
+   a pass.
+9. **`arauco-war`'s interval** is still the one blocker worth the owner's eye that
+   this lane added (deviation 1379), and **`Q3051491` *Capture of Valdivia***
+   still the refusal worth it: *may a batch write a record for an item with no
+   `P31`, where the class is plain from the article and the edge is cited?*
+10. **The three questions to the owner are unchanged**: the main count — now with
+   deviation 1384 as a worked case of when raising it is right; **C8**; and
+   **A15(1)**. Do not spend a fire re-establishing the balance.
+11. **Check a new deviation number against `docs/m42-pool.md` before using it.**
+   M42 is at **1517** and this lane at **1386**, so every number this lane takes
+   lies inside a range M42 has already spent. 1384, 1385 and 1386 were checked
+   against M42's pool before being written and were free. One
    `grep -c "Deviation <n>" docs/m42-pool.md` is the whole of the check.
-10. **Still open, unchanged**: C8, deviations 1323, 1345, 1346's ocean islands,
-   1348's lane guard, 1353, 1358, 1361, 1362, 1365, 1366, 1377 (a merge commit
-   gets its index in a commit of its own — both merges this fire were clean and
-   left the index byte-identical, so it did not arise, which is not evidence it
-   is spent), question 11 (the Nine Years' War, `Q152218`), question 12,
-   `Q718893`, `Q20639061`, `Q5037062`, `Q4677270`, `Q4677390`, the nine atlas
-   umbrellas with no `wikidata`, the Gulf Coast campaign umbrella (`Q5617470`),
-   the Angolan Wars umbrella (`Q132776772`), batch 48's Chilean four, the
-   Almagrista eight and their missing decree, batch 52's three 16th-century
-   refusals, the place pass on records that already exist (M42's),
-   `capture-of-luanda`'s `wikipedia.en` redirecting to *Dutch Loango-Angola*,
-   Africa's and Asia's 15th and 16th centuries at 0 with `Q2915203`
-   *Ethiopian–Adal War* still the candidate, and Asia's 17th at 4 for the reason
-   deviation 1370 gives.
+12. **Still open, unchanged**: C8, deviations 1323, 1345, 1346's ocean islands,
+   1348's lane guard, 1353, 1358, 1361, 1362, 1365, 1366, 1377, 1383, question 11
+   (the Nine Years' War, `Q152218`), question 12, `Q718893`, `Q20639061`,
+   `Q5037062`, `Q4677270`, `Q4677390`, the nine atlas umbrellas with no
+   `wikidata`, the Gulf Coast campaign umbrella (`Q5617470`), the Angolan Wars
+   umbrella (`Q132776772`), batch 48's Chilean four, the Almagrista eight and
+   their missing decree, batch 52's three 16th-century refusals, the place pass on
+   records that already exist (M42's), `capture-of-luanda`'s `wikipedia.en`
+   redirecting to *Dutch Loango-Angola*, and `Q2915203` *Ethiopian–Adal War*,
+   read and refused twice now for naming no event this atlas holds.
