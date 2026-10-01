@@ -7256,6 +7256,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "id": "battle-of-bantam",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Bantam"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-30",
       "degree": 1,
       "id": "battle-of-baton-rouge-1779",
@@ -7790,7 +7822,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-cajamarca",
       "kind": "event",
       "origin": {
@@ -9546,6 +9578,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Gibraltar (1621)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "battle-of-goa-1638",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Goa (1638)"
     },
     {
       "authors": [
@@ -11901,6 +11964,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "id": "battle-of-macau",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Macau"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
       "degree": 3,
       "id": "battle-of-madras",
@@ -11989,6 +12083,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Maipú"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "id": "battle-of-mannar-1658",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Mannar (1658)"
     },
     {
       "authors": [
@@ -17278,7 +17404,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-vilcaconga",
       "kind": "event",
       "origin": {
@@ -47212,6 +47338,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-bantam",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-bicocca",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -47404,6 +47536,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-goa-1638",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-gonaives",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -47579,6 +47717,18 @@
     },
     {
       "id": "battle-of-mabila",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-macau",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-mannar-1658",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

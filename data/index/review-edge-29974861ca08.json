@@ -5138,6 +5138,34 @@
       ],
       "created": "2026-10-01",
       "from": "battle-of-cajamarca",
+      "id": "battle-of-cajamarca--battle-of-vilcaconga--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-vilcaconga",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "battle-of-cajamarca",
       "id": "battle-of-cajamarca--conquest-of-tunis-1535--enabled",
       "kind": "edge",
       "origin": {

@@ -2300,6 +2300,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cajamarca--battle-of-vilcaconga--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Vilcaconga\", revision 1370592503, § Battle"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cajamarca--conquest-of-tunis-1535--enabled",
       "kind": "edge",
       "locator": "\"Battle of Cajamarca\", revision 1370108415"
@@ -10778,6 +10784,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bantam",
+      "kind": "event",
+      "locator": "\"Battle of Bantam\", revision 1371913893"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-baton-rouge-1779",
       "kind": "event",
       "locator": "\"Battle of Baton Rouge (1779)\", revision 1370433595"
@@ -11204,6 +11216,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-goa-1638",
+      "kind": "event",
+      "locator": "\"Battle of Goa (1638)\", revision 1370441745"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gonaives",
       "kind": "event",
       "locator": "\"Battle of Gonaïves\", revision 1370110941"
@@ -11618,6 +11636,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-macau",
+      "kind": "event",
+      "locator": "\"Battle of Macau\", revision 1370448450"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-madras",
       "kind": "event",
       "locator": "\"Battle of Madras\", revision 1370448492"
@@ -11633,6 +11657,12 @@
       "id": "battle-of-maipu",
       "kind": "event",
       "locator": "\"Battle of Maipú\", revision 1370268820"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mannar-1658",
+      "kind": "event",
+      "locator": "\"Battle of Mannar (1658)\", revision 1376684125"
     },
     {
       "dissent": false,

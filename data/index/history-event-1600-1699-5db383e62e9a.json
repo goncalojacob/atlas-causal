@@ -100,6 +100,15 @@
         }
       ]
     },
+    "battle-of-bantam": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-bloody-brook": {
       "from": "git",
       "versions": [
@@ -296,6 +305,15 @@
         }
       ]
     },
+    "battle-of-goa-1638": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-herbsthausen": {
       "from": "git",
       "versions": [
@@ -458,6 +476,24 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-macau": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-mannar-1658": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

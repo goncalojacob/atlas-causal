@@ -3032,6 +3032,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bantam",
+      "kind": "event",
+      "locator": "Q2032681"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-baton-rouge-1779",
       "kind": "event",
       "locator": "Q2888231"
@@ -3458,6 +3464,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-goa-1638",
+      "kind": "event",
+      "locator": "Q4871118"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gonaives",
       "kind": "event",
       "locator": "Q2890666"
@@ -3872,6 +3884,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-macau",
+      "kind": "event",
+      "locator": "Q704333"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-madras",
       "kind": "event",
       "locator": "Q3063400"
@@ -3887,6 +3905,12 @@
       "id": "battle-of-maipu",
       "kind": "event",
       "locator": "Q1073849"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mannar-1658",
+      "kind": "event",
+      "locator": "Q130478490"
     },
     {
       "dissent": false,

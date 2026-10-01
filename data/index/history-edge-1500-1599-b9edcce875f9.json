@@ -65,6 +65,15 @@
         }
       ]
     },
+    "battle-of-cajamarca--battle-of-vilcaconga--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-cajamarca--conquest-of-tunis-1535--enabled": {
       "from": "git",
       "versions": [
