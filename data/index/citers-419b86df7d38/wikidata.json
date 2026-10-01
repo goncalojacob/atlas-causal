@@ -1742,6 +1742,12 @@
     },
     {
       "dissent": false,
+      "id": "12-3-incident",
+      "kind": "event",
+      "locator": "Q3182793"
+    },
+    {
+      "dissent": false,
       "id": "13-vendemiaire",
       "kind": "event",
       "locator": "Q720498"

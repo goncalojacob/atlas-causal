@@ -2,6 +2,15 @@
   "from": 1900,
   "kind": "event",
   "records": {
+    "12-3-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "1900-portuguese-legislative-election": {
       "from": "git",
       "versions": [

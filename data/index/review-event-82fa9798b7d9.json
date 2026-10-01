@@ -13,6 +13,40 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "12-3-incident",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "estado-novo-1933-1974"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "12-3 incident"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "13-vendemiaire",
       "kind": "event",
@@ -21836,7 +21870,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-05",
-      "degree": 1,
+      "degree": 2,
       "id": "cultural-revolution",
       "kind": "event",
       "origin": {
