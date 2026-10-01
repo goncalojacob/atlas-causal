@@ -6656,6 +6656,12 @@
     },
     {
       "dissent": false,
+      "id": "russian-invasion-of-manchuria--russo-japanese-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Russian invasion of Manchuria\", revision 1370729162, lead"
+    },
+    {
+      "dissent": false,
       "id": "russian-revolution-of-1905--constitutionalization-attempts-in-iran--inspired",
       "kind": "edge",
       "locator": "\"Constitutionalization attempts in Iran\", revision 1354003965"
@@ -15425,6 +15431,12 @@
       "id": "russian-civil-war",
       "kind": "event",
       "locator": "\"Russian Civil War\", revision 1372728974"
+    },
+    {
+      "dissent": false,
+      "id": "russian-invasion-of-manchuria",
+      "kind": "event",
+      "locator": "\"Russian invasion of Manchuria\", revision 1370729162"
     },
     {
       "dissent": false,
