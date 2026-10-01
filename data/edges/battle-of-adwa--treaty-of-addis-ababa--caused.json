@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "battle-of-adwa--treaty-of-addis-ababa--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Scramble for Africa\", revision 1373841219, § Independent states"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Addis Ababa\", revision 1358464481"
+    }
+  ],
+  "from": "battle-of-adwa",
+  "to": "treaty-of-addis-ababa",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article of the partition puts the defeat and the treaty in one clause, with the treaty as the result: \"The same powers assumed Ethiopia to be a protectorate of Italy although the country had never accepted this, and its independence from Italy was recognized after the Battle of Adwa which resulted in the Treaty of Addis Ababa in 1896.\" The treaty's own article states what it settled — it \"formally ended the First Italo-Ethiopian War on terms mostly favourable to Ethiopia\" — and dates the first agreement to \"days after the decisive Battle of Adwa in March of the same year, in which Ethiopian forces commanded by Menelik II defeated the Italians\". The battle is the defeat the terms were written from.",
+  "dispute": null
+}

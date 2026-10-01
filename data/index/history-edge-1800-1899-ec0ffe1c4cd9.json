@@ -47,6 +47,15 @@
         }
       ]
     },
+    "battle-of-adwa--treaty-of-addis-ababa--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-albuera--siege-of-badajoz-1812--precondition-of": {
       "from": "git",
       "versions": [
@@ -347,6 +356,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "fashoda-incident--entente-cordiale--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

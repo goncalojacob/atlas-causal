@@ -74,6 +74,15 @@
         }
       ]
     },
+    "addis-ababa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "adrar-des-ifoghas": {
       "from": "git",
       "versions": [
@@ -4706,6 +4715,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "kodok": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

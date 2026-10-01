@@ -18633,3 +18633,369 @@ byte-identical to a fresh build on the pushed tree. **"Records first, rebuild, t
 commit the index" (798) means rebuild after the records' commit**, not merely
 before the index's — which is what this fire did the first time and what the check
 caught. The corrected shard is `63dde31b3eaa`.
+
+## Batch 76 — the Scramble's own article, and the degree that was never a gap
+
+*1 October, the fire that claimed at 23:50Z on 30 September. **An import fire
+that imported**, which the last five did not. Today's `## Curation 2026-09-30`
+section was already in this file and the clock had not reached 02:00Z on
+1 October, so A11(a) and A13 were not this fire's; all six A14 and all thirteen
+A15 sections were here, so every pass was skipped by its own rule. `origin/m0`
+was an ancestor of `m42` at the claim, so no merge was needed and `data/` was
+untouched by one.*
+
+**Two events imported, both filed, two edges written, and the main count did not
+move.** The three-way bind of A15(1), A14(6) and A6 is still the owner's and this
+fire did not ask for it to be relaxed — it found a case the bind does not reach.
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1,334 | **1,336** |
+| main | 229 | **229** |
+| filed | 1,105 | 1,107 |
+| active edges | 1,122 | **1,124** |
+| largest connected component | 740 | **742** |
+| edges crossing an umbrella (A15(11), A5) | 574 | **575** |
+| components | 407 | 407 |
+| events with no edge | 318 | 318 |
+
+| lane | active | main |
+| --- | --- | --- |
+| europe | 555 | 85 |
+| americas | 359 | 56 |
+| asia | 212 | 57 |
+| **africa** | **210** | **31** |
+| (no lane) | — | 51 |
+
+Validator **0 errors, 612 warnings**; `--index` clean. A10's order of need is
+unmoved: **Africa still trails**, 210 against Asia's 212, and A15(1)'s threshold
+is untouched — Africa is 93 short of 303 and Asia 91, so M42b's Europe-before-1900
+clause stays paused on this fire's evidence too.
+
+### What the bind does not reach, and it was in front of five fires
+
+The bind's third leg is A6: *what connects and is not a child has no umbrella
+that fits, so importing it raises the main count.* Batch 71 measured that over
+the candidates it had and the four stands since repeated it. **It is a statement
+about those candidates and not about the corpus**, and the counter-example is a
+held umbrella this lane has had all along: `scramble-for-africa`, 1885–1914,
+Africa, with an article of 60,064 characters that the atlas already cites at
+revision 1373841219.
+
+**An umbrella's own article is a list of what it says belongs to it.** Reading it
+for events the atlas does not hold gives candidates that arrive **filed**, so A6
+is satisfied by the filing rather than relaxed, and A15(1) is satisfied where the
+same article states a cause between two of them. That is the whole of this fire's
+method and it needed one article read.
+
+Five candidates came out of that reading. **Two were imported** and three were
+refused, below.
+
+### The two imports
+
+`node tools/import/wikidata.mjs --import --batch 2`, after appending the two
+qids to `data/imports/wikidata-seeds.json` → `items` — the route batch 67's stand
+recommended and the cursor was caught up for (`pending` empty, 1,770 done).
+Six calls, four leads cached, 0 refused.
+
+| record | item | revision cited | filed under | why that umbrella |
+| --- | --- | --- | --- | --- |
+| `fashoda-incident` | `Q722699` | 1375541414 | `scramble-for-africa` | its own article: *"This period in African history is usually termed the Scramble for Africa by modern historiography"* |
+| `treaty-of-addis-ababa` | `Q2399119` | 1358464481 | `first-italo-ethiopian-war` | its own lead: it *"formally ended the First Italo-Ethiopian War on terms mostly favourable to Ethiopia"* |
+
+Neither item carried a `P361` the atlas holds, so **the filing is this fire's and
+is argued from each record's own cited article** rather than taken from the item.
+`treaty-of-addis-ababa` is filed under the war and not under the Scramble
+although the Scramble's article names it too: the war is the nearer umbrella and
+is itself filed under the Scramble, so the ancestry reaches it either way, and
+rule 24 is satisfied because the war's span is 1895–1896 and the treaty is 1896.
+
+A9 wrote a place for each from the item's own point: `kodok` (modern Fashoda) and
+`addis-ababa`, both with the lane derived from that point, which is A15(7)'s rule.
+Neither record warns.
+
+### The two edges
+
+A15(5)'s verdict was taken on all five quotes **before any edge was written**, with
+`verdictFor()` and the live candidate list: **none opens with chronology and none
+names a third held event as the cause**, so nothing was refused at the point of
+writing on this batch.
+
+- **`fashoda-incident --caused--> entente-cordiale`**, `probable`. Two articles at
+  two revisions, saying the same thing at two strengths. The Scramble's article,
+  § Britain's administration of Egypt and South Africa: *"The Fashoda Incident
+  ultimately led to the signature of the Entente Cordiale of 1904, which
+  guaranteed peace between the two."* The incident's own article, § Aftermath,
+  attributes the reading rather than asserting it: *"its classic diplomatic
+  solution is considered by most historians to be the precursor of the Entente
+  Cordiale of 1904."* `probable` and not `consensus`, under rule 22 and A2: both
+  witnesses are Wikipedia records. **This edge crosses an umbrella** — Fashoda is
+  under the Scramble and the Entente is a main event — which is the count A15(11)
+  asks for.
+- **`battle-of-adwa --caused--> treaty-of-addis-ababa`**, `probable`. The
+  Scramble's article, § Independent states: *"its independence from Italy was
+  recognized after the Battle of Adwa which resulted in the Treaty of Addis Ababa
+  in 1896."* The treaty's own article dates the first agreement to *"days after
+  the decisive Battle of Adwa in March of the same year"*. Both ends are children
+  of `first-italo-ethiopian-war`, so this one is **inside one umbrella** and is
+  not in the crossing count; it is siblings and not parent-to-child, so C8's
+  standing rule is untouched.
+
+**Every locator was read off the article rather than guessed from its section
+list.** Three of the five section names a first draft wrote were wrong: the
+Fashoda sentence is in § Britain's administration of Egypt and South Africa and
+not § Anglo-French Agreement, and the "precursor" sentence is in the incident's
+own article and not the Scramble's. A locator is evidence, so it is worth the one
+extra read it costs.
+
+### Deviation 1500 — a period umbrella is degree zero by rule, and a fire can lose a day to that
+
+This fire wrote a third edge and had to take it back, and the reason is worth more
+than the edge was.
+
+`scramble-for-africa` has **degree zero** and 87 sitelinks and is a main event, so
+it reads exactly like the most valuable connection in the Africa lane: a large
+record nothing in the graph hangs on. The fire wrote
+`berlin-conference --enabled--> scramble-for-africa` for it, argued from the
+Scramble's own § Berlin Conference (1884–1885): *"The Berlin Conference transformed
+Africa's colonization from informal economic penetration to systematic political
+control through its 'effective occupation' principle"*, with § Moroccan Crises
+naming the same relation from the other side.
+
+**`tests/m42-filing.test.mjs` refuses it**, and the test is right:
+
+> *an umbrella is not a claim: this pass wrote no edge on to one* —
+> `edge "berlin-conference--scramble-for-africa--enabled" runs to the umbrella
+> "scramble-for-africa", which is a display fact and not an argument`
+
+The rule is that no **active** edge may have an `m42-umbrella` record at either
+end, because `parent` says what an event is part of and an edge says what caused
+what, and a period cannot be the second. **So the eleven umbrellas are degree
+zero by rule and not by neglect**, and every `degree-zero` warning on one of them
+is not work:
+
+`afghan-conflict`, `arab-spring`, `colombian-conflict-2018-present`,
+`colombian-conflict-between-1974-1990`, `decolonisation-of-africa`,
+`decolonisation-of-asia`, `indochina-wars`, `interwar-period`,
+`nova-republica-brazil-since-1985`, `scramble-for-africa`,
+`third-portuguese-republic-since-1974`.
+
+**A fire that reads the isolated set as a to-do list will spend itself on six of
+them.** This one nearly did: `arab-spring`, `decolonisation-of-africa`,
+`decolonisation-of-asia`, `indochina-wars` and `afghan-conflict` were all in its
+first screen of 20 isolated Africa and Asia events, and five of those twenty are
+umbrellas. The edge is gone, 612 warnings is 611 plus that one degree-zero back,
+and the test caught it **before anything reached `m0`**, which is what deviations
+711 and 717 are for.
+
+### The three refusals, which A15(1) asks to be counted
+
+| candidate | item | why not |
+| --- | --- | --- |
+| `First Moroccan Crisis` | `Q167455`, rev 1370619540 | **A15(1).** 3,586 characters and no causal sentence naming a held event. Its one sentence that names one runs the wrong way: *"The First Moroccan Crisis also showed that the Entente Cordiale was strong, as Britain had defended France in the crisis"* — the crisis revealing the Entente, not the Entente causing the crisis. The Scramble's own *"As a result of the Entente Cordiale, the German Kaiser decided to test the solidity of such influence, using the contested territory of Morocco as a battlefield"* **does** state a cause, and its object is this crisis **by description and not by name** — which is deviation 1495's blind spot, and supplying the identification is the reading this atlas does not let an assistant make. It is the owner's or a reviewer's. |
+| `Agadir Crisis` | `Q164771`, rev 1376783721 | **A15(1).** Same shape: *"As in the First Moroccan Crisis, British support of France showed the strength of the Entente Cordiale."* No cause stated towards it. |
+| `1890 British Ultimatum` | `Q3320778`, rev 1375614563 | Two reasons, either sufficient. **A15(5)**: its one causal sentence naming held events is the reattribution class — *"Combined with a variety of other factors, such as the Portuguese royal family's expenses, the Lisbon Regicide, political instability and changing religious and social views in Portugal led to the 5 October 1910 revolution, which overthrew the Portuguese monarchy"* names `lisbon-regicide` as one of the causes, so an edge from the ultimatum is written from that event or not at all. And **the class table**: its only `P31` is `Q188689`, which `data/imports/wikidata-seeds.json` → `classes` does not hold, so the import would refuse it and list it. **This is the best of the three and the nearest to this atlas's own subject** — it is about Portugal's claim between Angola and Mozambique — and its `P361` already names `Q179848`, so it would arrive filed under `scramble-for-africa` with no filing argument needed. A fire that adds `Q188689` to the class table with a note, and finds the edge the article supports, should write it. |
+
+### The vein this leaves, measured rather than hoped for
+
+The method above generalises and the fire measured how far. `action=parse&prop=links`
+on the Scramble's article at revision 1373841219 returns **1,091 mainspace links**,
+of which **1,024** are not held by article title. Most are places, people and
+polities, and the WWI navbox is a large part of the rest; a name filter for
+event-shaped titles leaves 226, and dropping the navbox noise leaves **36 Africa
+candidates**. Of those, 33 resolve to items, 30 are unheld, and **16 are dated
+inside the umbrella's own span**, 14 of them with a `P31` the class table already
+knows:
+
+| start | item | label | class known |
+| --- | --- | --- | --- |
+| 1886–1889 | `Q3062431` | Emin Pasha Relief Expedition | yes |
+| 1886 | `Q131632307` | Battle of Buaró | yes |
+| 1887 | `Q3778598` | Italo-Ethiopian War of 1887–1889 | yes |
+| 1889–1890 | `Q16889931` | Brussels Anti-Slavery Conference 1889–90 | yes |
+| 1890 | `Q3320778` | 1890 British Ultimatum | **no** (`Q188689`) |
+| 1895 | `Q2745584` | Battle of Marracuene | yes |
+| 1895 | `Q2638505` | Franco-Hova Wars | yes |
+| 1899–1901 | `Q136483840` | Rabih War | yes |
+| 1900 | `Q123411905` | Battle of Jigjiga | yes |
+| 1901 | `Q617278` | Anglo-Aro War | yes |
+| 1904 | `Q1674550` | Battle of the Cunene | yes |
+| 1905–1906 | `Q167455` | First Moroccan Crisis | yes |
+| 1906 | `Q163573` | Algeciras Conference | **no** |
+| 1907 | `Q2984842` | Battle of Mufilo | yes |
+| 1911 | `Q164771` | Agadir Crisis | yes |
+| 1913 | `Q109561628` | Battle of Dul Madoba | yes |
+
+**Four of them are Portuguese campaigns in Angola and Mozambique** — Buaró,
+Marracuene, Mufilo, the Cunene — which is this atlas's own subject reached through
+the world rather than beside it. **Each still has to earn its edge under A15(1)**,
+and this fire's three refusals are the warning that a date inside the span is the
+cheap half: `Italo-Ethiopian War of 1887–1889 --> first-italo-ethiopian-war` and
+`Algeciras Conference` closing the First Moroccan Crisis are the two whose articles
+are most likely to state one.
+
+**The sitelink column in the screening output is `1` for every row and means
+nothing**: the query asked for `sitefilter=enwiki`, so it counts the English
+article and not the item's languages. A fire that wants prominence must ask again
+without the filter.
+
+### Deviation 1501 — `--candidates` does not finish here, and it is not the rate limit
+
+Batch 75's stand said `tools/import/wikidata.mjs --candidates` "cannot run from
+this container today" on a 429 from `/w/api.php`. **This fire found the 429
+clears**: `api/rest_v1/page/summary`, `en.wikipedia.org/w/api.php` and
+`www.wikidata.org/w/api.php` all answer 429 on a first request and **200 on a
+retry with a 20-second wait**, which is wider than the tool's own backoff (base
+2,000 ms, four retries, so 16 s at the last attempt). Every read this fire made —
+the article bodies, the sections, the links, the search, the entities, the import
+itself — went through a retrying fetcher and none failed.
+
+**`--candidates` still did not finish.** It ran in the background for over 100
+minutes with `--budget 120` and wrote neither its report nor a line of output
+before it was stopped. So the verdict to carry forward is narrower and more useful
+than "no network": **an article can be read at a revision, an item can be read,
+the search API answers, and `--import` works — and the candidates mode is the one
+thing that does not.** A fire that wants candidates should read a held umbrella's
+own links, as above, rather than wait on that mode.
+
+### What this fire did not touch
+
+A11(b)'s partition check was made before the batch and against `origin/m42b`'s
+own records: **none of the five candidates is among the 1,605 event records on
+that branch.** `docs/m42-pool.md` is the only document changed. No code, no test,
+no schema, no display, no new type, confidence, hex value or token.
+
+## Where the run stands after batch 76, for the fire that picks it up
+
+*1 October, the fire that claimed at 23:50Z on 30 September. **The first import
+fire in six to import anything**, and what unblocked it was not a rule moving.*
+
+**What is open, in the order a fire should weigh it:**
+
+- **The bind is narrower than four stands have said, and this is the one thing on
+  this list that changes what the next fire does.** A15(1), A14(6) and A6 still
+  close on each other for a candidate that *no held umbrella fits* — that part is
+  unchanged and still the owner's, and the two records a relaxation would unblock
+  are still `Jewish exodus from the Muslim world` (rev 1375572604) and
+  `Decline and modernization of the Ottoman Empire` (rev 1374227337). But **A6 is
+  satisfied by a filing and not only by a relaxation**, and a held umbrella's own
+  article is where the filings are: `scramble-for-africa`, 1885–1914, Africa, at
+  revision 1373841219, gave this fire five candidates from one read and the batch
+  section leaves **16 screened and dated inside its span**, four of them Portuguese
+  campaigns in Angola and Mozambique. **Start there.** The same question has not
+  been asked of the other ten umbrellas.
+- **Read a degree-zero umbrella as finished, not as a gap. Deviation 1500.**
+  `tests/m42-filing.test.mjs` forbids any active edge with an `m42-umbrella` record
+  at either end, so the eleven umbrellas — `afghan-conflict`, `arab-spring`, the two
+  Colombian ones, `decolonisation-of-africa`, `decolonisation-of-asia`,
+  `indochina-wars`, `interwar-period`, `nova-republica-brazil-since-1985`,
+  `scramble-for-africa`, `third-portuguese-republic-since-1974` — are degree zero
+  **by rule**. Five of the twenty isolated Africa and Asia events are umbrellas.
+  This fire wrote an edge on to one, had it refused by the test and took it back;
+  a fire that screens by degree without this filter will spend itself on them.
+- **A15(1) is the gate that bites now, not A6.** All three refusals of this batch
+  are it: a candidate inside the span whose article states no cause towards
+  anything held. Of the two shapes that defeated them, one is deviation 1495's
+  blind spot seen from the other side — the Scramble's *"As a result of the Entente
+  Cordiale, the German Kaiser decided to test the solidity of such influence, using
+  the contested territory of Morocco as a battlefield"* names the First Moroccan
+  Crisis **by description**, and identifying it is a reading an assistant does not
+  get to make. That pair is a good first question for the owner or a reviewer.
+- **`1890 British Ultimatum` is the best single candidate left and it needs one
+  decision.** `Q3320778`, rev 1375614563, `P361` already `Q179848`, so it arrives
+  filed under the Scramble with no filing argument owed. It is about Portugal's
+  claim between Angola and Mozambique, which is this atlas's own subject. Two
+  things block it: its only `P31` is `Q188689`, which the class table does not
+  hold — adding it with a note is the ordinary editorial move and three classes in
+  that file say they were added that way — and its one causal sentence naming held
+  events is A15(5)'s reattribution class, which points at
+  `lisbon-regicide --> the 5 October 1910 revolution` instead — and **the atlas
+  already holds that one**, `lisbon-regicide--republic-proclaimed-1910--enabled`,
+  so the reattribution yields nothing new and the ultimatum needs a sentence of its
+  own. This fire read only the sentences its screen surfaced; the article is 13,129
+  characters and the rest of it has not been read.
+- **The network verdict has changed and the old one will cost a fire work.
+  Deviation 1501.** A 429 from any of the three endpoints **clears on a retry with
+  a ~20-second wait**, which is wider than the import tool's own 16-second cap.
+  Article bodies at a revision (`action=parse&oldid=&prop=text`), section lists,
+  `prop=links`, `list=search`, `wbgetentities` and `--import` itself all worked on
+  this fire. **Only `--candidates` does not**: it ran 100 minutes with a budget of
+  120 and wrote nothing. Do not read batch 75's "cannot run" as "no network"; do
+  not budget a fire on `--candidates`.
+- **A held umbrella's `prop=links` is the candidate mode that works.** 1,091 links
+  → 1,024 unheld → 226 event-shaped → 36 after dropping the WWI navbox → 16 inside
+  the span. Two calls for titles→items and items→dates, batched 45 and 40 at a
+  time. The batch section has the table and the method.
+- **`arab-spring` is unchanged and still the owner's**, and deviation 1500 adds a
+  reason to leave it alone: it is an umbrella, so it was never going to take an
+  edge. Deviation 1496's lane question stands —
+  `2011-yemeni-revolution` and `2011-bahraini-uprising` are waiting on it. Do not
+  write a lane on to either.
+- **Africa's twenty post-independence mains and the national-complex idea: closed,
+  measured.** Batch 75's stand asked a fire to read for a *national* complex rather
+  than a continental period. This one did, through `api/rest_v1/page/summary`, and
+  **all three are set-index pages, not periods**: `Liberian Civil War` is a
+  disambiguation (`Q1185186`), `Sudanese Civil War` (`Q1163563`) opens *"refers to
+  at least three separate conflicts"*, and `Congo Wars` redirects to
+  `Congolese Civil War` (`Q364610`), which opens *"may refer to any of a number of
+  armed internal conflicts"* — the same refusal batch 75 made. **Do not re-run
+  this.** The obvious Africa main-to-main edges are written too: of fourteen
+  plausible pairs screened by hand, eleven already have an edge and the three that
+  do not are `rwandan-civil-war ↔ first-congo-war` (the genocide carries that
+  link already, and the civil war's own route is not in either article's causal
+  prose), `arab-spring ↔ 2013-egyptian-coup-d-etat` (the umbrella, above) and
+  `second-italo-ethiopian-war ↔ rif-war` (nothing in either article).
+- **The isolated-event article sweep is spent for Africa.** Nine isolated Africa
+  events read whole at their cited revisions — `abushiri-revolt`,
+  `benin-expedition-of-1897`, `wadai-war`, `kaocen-revolt`,
+  `massacre-of-arabs-during-the-zanzibar-revolution`, `effacer-le-tableau` and the
+  three umbrellas — and **not one causal sentence naming a held event**. Twelve
+  thinly-connected Africa events with ten or more sitelinks were read as well
+  (`congo-crisis`, `nigerian-civil-war`, `italo-turkish-war`, `rif-war`,
+  `zanzibar-revolution`, `2013-egyptian-coup-d-etat`, `first-matabele-war`,
+  `anglo-zanzibar-war`, `ifni-war` and the three umbrellas): seventeen sentences
+  survived `statesACause` and `namesHeldEvents`, and **every one of them named
+  `world-war-i`, `world-war-ii` or an event the pair already has an edge for**.
+  The `decolonisation-of-africa` sentence that looked like six filings —
+  *"Major events during the decolonisation of Africa include the Mau Mau rebellion,
+  the Algerian War, the Congo Crisis, the Angolan War of Independence, the Zanzibar
+  Revolution, and the events leading to the Nigerian Civil War"* — turned out to be
+  **already acted on**: all five of those the atlas holds are filed under it or
+  under a nearer umbrella, and `Mau Mau rebellion` is the one event in the sentence
+  the atlas does not hold at all. That is a candidate.
+- **A15(6)'s note oracle is still written and still unused.** `refusedPlaces()`
+  reads 28 refusals off disk; the next places pass should hand it
+  `refusedPlaces(record)`. Unchanged from the last six stands.
+- **Unchanged and still the owner's:** A6's lane rule against the period umbrellas;
+  deviations 1473 and 1482; `execution-of-the-romanov-family` and deviation 1423;
+  A11's area clause; deviation 1478; A15(12)'s 177 uncategorised events; the EEC's
+  closing year; deviation 1461's two display faults; `origin/m42b`'s five place
+  placeholder summaries; and deviation 1499's intermittent narrative-framing
+  assertion, which did not appear on this fire.
+- **Deviation numbers: take the next above 1501.** This fire wrote **1500** (a
+  period umbrella is degree zero by rule, so the degree-zero warning on one is not
+  work) and **1501** (`--candidates` is the one mode that does not finish here; a
+  429 elsewhere clears on a wider retry than the tool's own).
+
+**One more thing about this sandbox, cheap and worth the line.** `pkill -f` with a
+pattern naming a tool kills the shell that runs it, because the shell's own command
+line contains the pattern: `pkill -f 'wikidata.mjs --candidates'` took out the
+heredoc being written in the same command. Match on the pid from `pgrep -af` instead.
+
+**The check is green on the head this stand was written against, and the one red
+run was this batch's own fault rather than the load.** Run **2186** of
+`validate.yml`, commit `aba81476`, conclusion **`success`** — the head carrying
+both imports, both edges, the dropped third one and this document. Run **2182**,
+at `622223a9`, **failed**, and it failed on the assertion deviation 1500 is about:
+`tests/m42-filing.test.mjs` refusing the edge on to `scramble-for-africa`. Runs
+2184 and 2185 were cancelled by the next push, which is deviation 1258's chain and
+costs nothing. **A fire that meets a red check should read it before reaching for
+the load**: this one named the rule, the edge and the line, and the fix was to take
+the edge back.
+
+Both suites are green on this fire's tree, run the way the check runs them since
+M63: **2,241 tests, nothing skipped — 1,928 pure and 313 browser**, neither needing
+a second run. Deviation 1499's intermittent narrative-framing assertion did not
+appear. **No test was added, because no code changed**: the rule this fire broke
+was already written and already caught it, which is what deviations 711 and 717
+are for.

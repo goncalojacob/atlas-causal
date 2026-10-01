@@ -6688,7 +6688,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-adwa",
       "kind": "event",
       "origin": {
@@ -22724,7 +22724,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 4,
+      "degree": 5,
       "id": "entente-cordiale",
       "kind": "event",
       "origin": {
@@ -23471,6 +23471,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "false positives in Colombia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "fashoda-incident",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Fashoda Incident"
     },
     {
       "authors": [
@@ -42995,6 +43026,38 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Treaty of Accession 1985"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "treaty-of-addis-ababa",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-italo-ethiopian-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Addis Ababa"
     },
     {
       "authors": [
