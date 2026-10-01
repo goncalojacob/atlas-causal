@@ -22058,129 +22058,6 @@ Two readings a person might take, and a fire may take neither on its own:
 The honest position until the owner writes one is (2), which is what this batch
 did.
 
-## Where the run stands after batch 86, for the fire that picks it up
-
-*1 October, the import fire that claimed at 21:18Z. It screened the **last 88
-rows** of the vein — 88 articles read — wrote **two** records and two edges, one
-of them Africa, and **exhausted the vein**. This stand supersedes the one of
-19:00Z.*
-
-**The one thing this stand is for: there is no next batch in the vein.**
-`docs/m42-umbrella-children.md` is screened end to end, rows 1 to 1,008, across
-batches 82 to 86 and the three stands between them. **A fire that picks this up
-and goes looking for row 1,009 will not find one.** What it needs is a new
-question, and the rest of this stand is what a fire has to answer it with.
-
-**What the vein cost and paid, now that it is whole:** 1,008 rows, ~1,000
-articles read over five fires, **7 records and 8 edges**. One import per ~143
-articles read. That is the honest rate for *this* question — the `P361` children
-of a held umbrella — and the three measurements inside it disagree usefully: the
-first 170 rows paid two, rows 421 to 920 paid one in 422, and the last 88 paid
-two. **Sitelink count did not predict yield.** What predicted it was whether the
-article has an Aftermath or a Background section that names another held record
-as a subject, which no property on the item exposes.
-
-**Four candidate next questions, in the order a fire should weigh them.** None
-is started and none is measured; each is a fire's own first job to measure
-before it imports.
-
-1. **The inverse of this vein: `P361` *parents* the atlas does not hold, of
-   items it does.** Every held event's own `P361` that is not a held record is a
-   candidate umbrella. A6 says the main count must not rise, so such an import
-   must itself be filed under something held — but where the chain is
-   grandparent-held, the middle term can come in without moving the main count.
-   This has never been asked and is one query.
-2. **`P1542` (has effect) and `P828` (has cause) between two held items.**
-   **This fire picked it and measured it before the fire ended; the section
-   below this stand is the answer, and the short version is that it is
-   measured and closed to batches until the owner answers C9.** 50 directed
-   pairs, 34 of them edges the atlas already holds, 16 it does not, and not
-   one of the 16 writable today: four are C8, two are C8 from the child's
-   side, one is deviation 1523's rule-4 shape, one was a reading error of
-   `reacted-to`'s own direction, and the remaining **seven clear every gate
-   and have no witness but the item's bare claim**. Do not re-query it: the
-   seven are written out with their locators where a fire can write them the
-   day C9 is answered.
-3. **`P710` participants into actors**, which A11(a) already reads on a curation
-   fire but which no import fire has swept.
-4. **The `done`-cursor vein of deviation 1515**, which measured 167 ticked items
-   never written and 53 importable. It is the only vein with a number attached
-   and the number is small.
-
-**Everything else below is unchanged from the 19:00Z stand and still true.**
-
-- **The write and the network are both open.** Deviations 1516 and 1518 remain
-  over. `node`'s `fetch` answers where `curl` does not (deviation 1520).
-- **The screen is a script and lives in the scratchpad, so every fire rewrites
-  it.** The method: `tools/import/chronology.mjs`'s own `namesHeldEvents`,
-  `statesACause` and `isChronologyOnly` over every sentence of the article's
-  plain-text extract, with the row's `P361` parents and its held umbrella
-  excluded. 88 articles in about four minutes. **One correction this fire owes
-  it**, from row 1008 above: pass each candidate's own start year as `when`, or
-  deviation 1480's span guard cannot tell a 1921 front from a 1941 one.
-- **Two structural refusals are now the binding constraint and both are the
-  atlas's own.** Deviation 1523 (rule 4 on two overlapping intervals) and
-  deviation 1525 (no edge type for an ending). Between them they took two edges
-  that were stated outright, with a held record as the subject, in five fires
-  that found eight. **That is a fifth of the yield lost to the model and not to
-  the sources**, and two sentences from the owner release both.
-- **Deviation 1521 is over and the branch's check is green again.** The 19:00Z
-  stand left `tests/m65-browser.test.mjs` red on *"choosing an event narrows all
-  three views to it, its parts, its parent and one hop"* — `map left out
-  estado-novo-1933-1974` — and said the fix was a display change this run may
-  not make. It was made on `m0`, as commit 1d4c3845, *"the map is asked for the
-  chosen event; its umbrellas only where the frame holds them"*: M89 §2 frames
-  the map's camera on the choice's own marks, so an umbrella a continent away is
-  outside the frame and is not drawn, and the map now asserts the chosen event
-  while the graph and the timeline keep asserting every umbrella. STEP 1's merge
-  brought it onto this branch and the suite passes 3 of 3 here. **Whether the
-  frame should hold the umbrellas too is noted on that commit as a lane A
-  question**, so a fire that sees this test go red again on a record with a
-  distant parent should read 1d4c3845 before calling it a corpus fault.
-- **Two owner questions are still open and this fire met neither**: C8, and
-  A6's span rule against the period umbrellas.
-- **Do not re-screen**: **the whole of `docs/m42-umbrella-children.md`, rows 1
-  to 1,008**; the 17 children of `arab-spring` and `afghan-conflict` under
-  deviation 1522; `Q87138`, `Q29269`, `Q185729`, `Q2659185`, `Q276172`,
-  `Q5033913` (deviation 1523), `Q4871914` (deviation 1525), `Q17149843` (a
-  redirect, A15(8)); `scramble-for-africa`, `decolonisation-of-africa`,
-  `decolonisation-of-asia`, `indochina-wars`.
-- **Three identity fills are still waiting for a curation fire, not a batch.**
-  `east-timor-invasion-1975` is `Q2583734`, `spanish-american-war-1898` is
-  `Q12583`, `cuban-war-of-independence-1895-1898` is `Q1514908`; the East Timor
-  record needs A7 in the same pass.
-- **The candidates sweep (A2) overwrites a ticked file.** `--candidates` writes
-  `docs/wikidata-candidates.md`, which carries M41a's 150 ticks and is an
-  *input*. Pass `--to` a scratch path.
-- **Unchanged and still the owner's:** `Q8683`, the Cold War; the two Camp David
-  records' `americas` lane and the place classes that would place them;
-  deviations 1517 and 1512, together; may a run identify an event named by
-  description where only one held record can be meant (five refusals);
-  deviation 1474's items; the placeless events; deviations 1423, 1461, 1473,
-  1478, 1482, 1506, 1508 and 1511; A11's area clause; A15(12)'s uncategorised
-  events; the EEC's closing year; `origin/m42b`'s place placeholder summaries;
-  and C8.
-- **Deviation numbers: take the next above 1525.** `m42b` was at 1377 on
-  1 October.
-
-### Counts after batch 86
-
-- active events **1,387** (was 1,385); **main 229** — unchanged, as A6 requires;
-  filed 1,158.
-- per lane, active / main: Europe 555/85, Americas 393/56, **Asia 221/57** (+1),
-  **Africa 218/31** (+1).
-- active edges **1,194** (was 1,192), all between two active events.
-- components **400** (unchanged); **largest connected component 774**
-  (unchanged — both edges land outside it).
-- **edges crossing an umbrella (A15(11)): 598** (unchanged — both of this
-  batch's edges are inside one), inside one **596** (was 594).
-- active events with no edge at all: **306** (was 307).
-- validator **0 errors, 601 warnings** (was 602), and `--index` clean. Neither
-  new record warns; the warning that went is a `degree-zero` one.
-- A15(2)'s recache: **2,914** `wikipedia-en` citations on active records,
-  **2,836** on disk at the revision cited, **0 that should be on disk and are
-  not.**
-
 ## The `P828`/`P1542` vein, measured: 50 pairs, 34 already held, and not one of the 16 writable today
 
 *Measured on 1 October by the fire that exhausted the umbrella-children vein,
@@ -22310,3 +22187,126 @@ second time on a completely different question, and it is the strongest thing
 either measurement says: *the supply is not the constraint and has not been for
 three fires. The constraint is four sentences the owner has not written yet* —
 C8, C9, rule 4 on overlapping intervals, and a type for an ending.
+
+## Where the run stands after batch 86, for the fire that picks it up
+
+*1 October, the import fire that claimed at 21:18Z. It screened the **last 88
+rows** of the vein — 88 articles read — wrote **two** records and two edges, one
+of them Africa, and **exhausted the vein**. This stand supersedes the one of
+19:00Z.*
+
+**The one thing this stand is for: there is no next batch in the vein.**
+`docs/m42-umbrella-children.md` is screened end to end, rows 1 to 1,008, across
+batches 82 to 86 and the three stands between them. **A fire that picks this up
+and goes looking for row 1,009 will not find one.** What it needs is a new
+question, and the rest of this stand is what a fire has to answer it with.
+
+**What the vein cost and paid, now that it is whole:** 1,008 rows, ~1,000
+articles read over five fires, **7 records and 8 edges**. One import per ~143
+articles read. That is the honest rate for *this* question — the `P361` children
+of a held umbrella — and the three measurements inside it disagree usefully: the
+first 170 rows paid two, rows 421 to 920 paid one in 422, and the last 88 paid
+two. **Sitelink count did not predict yield.** What predicted it was whether the
+article has an Aftermath or a Background section that names another held record
+as a subject, which no property on the item exposes.
+
+**Four candidate next questions, in the order a fire should weigh them.** None
+is started and none is measured; each is a fire's own first job to measure
+before it imports.
+
+1. **The inverse of this vein: `P361` *parents* the atlas does not hold, of
+   items it does.** Every held event's own `P361` that is not a held record is a
+   candidate umbrella. A6 says the main count must not rise, so such an import
+   must itself be filed under something held — but where the chain is
+   grandparent-held, the middle term can come in without moving the main count.
+   This has never been asked and is one query.
+2. **`P1542` (has effect) and `P828` (has cause) between two held items.**
+   **This fire picked it and measured it before the fire ended; the section
+   immediately above this stand is the answer, and the short version is that
+   it is measured and closed to batches until the owner answers C9.** 50 directed
+   pairs, 34 of them edges the atlas already holds, 16 it does not, and not
+   one of the 16 writable today: four are C8, two are C8 from the child's
+   side, one is deviation 1523's rule-4 shape, one was a reading error of
+   `reacted-to`'s own direction, and the remaining **seven clear every gate
+   and have no witness but the item's bare claim**. Do not re-query it: the
+   seven are written out with their locators where a fire can write them the
+   day C9 is answered.
+3. **`P710` participants into actors**, which A11(a) already reads on a curation
+   fire but which no import fire has swept.
+4. **The `done`-cursor vein of deviation 1515**, which measured 167 ticked items
+   never written and 53 importable. It is the only vein with a number attached
+   and the number is small.
+
+**Everything else below is unchanged from the 19:00Z stand and still true.**
+
+- **The write and the network are both open.** Deviations 1516 and 1518 remain
+  over. `node`'s `fetch` answers where `curl` does not (deviation 1520).
+- **The screen is a script and lives in the scratchpad, so every fire rewrites
+  it.** The method: `tools/import/chronology.mjs`'s own `namesHeldEvents`,
+  `statesACause` and `isChronologyOnly` over every sentence of the article's
+  plain-text extract, with the row's `P361` parents and its held umbrella
+  excluded. 88 articles in about four minutes. **One correction this fire owes
+  it**, from row 1008 above: pass each candidate's own start year as `when`, or
+  deviation 1480's span guard cannot tell a 1921 front from a 1941 one.
+- **Two structural refusals are now the binding constraint and both are the
+  atlas's own.** Deviation 1523 (rule 4 on two overlapping intervals) and
+  deviation 1525 (no edge type for an ending). Between them they took two edges
+  that were stated outright, with a held record as the subject, in five fires
+  that found eight. **That is a fifth of the yield lost to the model and not to
+  the sources**, and two sentences from the owner release both.
+- **Deviation 1521 is over and the branch's check is green again.** The 19:00Z
+  stand left `tests/m65-browser.test.mjs` red on *"choosing an event narrows all
+  three views to it, its parts, its parent and one hop"* — `map left out
+  estado-novo-1933-1974` — and said the fix was a display change this run may
+  not make. It was made on `m0`, as commit 1d4c3845, *"the map is asked for the
+  chosen event; its umbrellas only where the frame holds them"*: M89 §2 frames
+  the map's camera on the choice's own marks, so an umbrella a continent away is
+  outside the frame and is not drawn, and the map now asserts the chosen event
+  while the graph and the timeline keep asserting every umbrella. STEP 1's merge
+  brought it onto this branch and the suite passes 3 of 3 here. **Whether the
+  frame should hold the umbrellas too is noted on that commit as a lane A
+  question**, so a fire that sees this test go red again on a record with a
+  distant parent should read 1d4c3845 before calling it a corpus fault.
+- **Two owner questions are still open and this fire met neither**: C8, and
+  A6's span rule against the period umbrellas.
+- **Do not re-screen**: **the whole of `docs/m42-umbrella-children.md`, rows 1
+  to 1,008**; the 17 children of `arab-spring` and `afghan-conflict` under
+  deviation 1522; `Q87138`, `Q29269`, `Q185729`, `Q2659185`, `Q276172`,
+  `Q5033913` (deviation 1523), `Q4871914` (deviation 1525), `Q17149843` (a
+  redirect, A15(8)); `scramble-for-africa`, `decolonisation-of-africa`,
+  `decolonisation-of-asia`, `indochina-wars`.
+- **Three identity fills are still waiting for a curation fire, not a batch.**
+  `east-timor-invasion-1975` is `Q2583734`, `spanish-american-war-1898` is
+  `Q12583`, `cuban-war-of-independence-1895-1898` is `Q1514908`; the East Timor
+  record needs A7 in the same pass.
+- **The candidates sweep (A2) overwrites a ticked file.** `--candidates` writes
+  `docs/wikidata-candidates.md`, which carries M41a's 150 ticks and is an
+  *input*. Pass `--to` a scratch path.
+- **Unchanged and still the owner's:** `Q8683`, the Cold War; the two Camp David
+  records' `americas` lane and the place classes that would place them;
+  deviations 1517 and 1512, together; may a run identify an event named by
+  description where only one held record can be meant (five refusals);
+  deviation 1474's items; the placeless events; deviations 1423, 1461, 1473,
+  1478, 1482, 1506, 1508 and 1511; A11's area clause; A15(12)'s uncategorised
+  events; the EEC's closing year; `origin/m42b`'s place placeholder summaries;
+  and C8.
+- **Deviation numbers: take the next above 1525.** `m42b` was at 1377 on
+  1 October.
+
+### Counts after batch 86
+
+- active events **1,387** (was 1,385); **main 229** — unchanged, as A6 requires;
+  filed 1,158.
+- per lane, active / main: Europe 555/85, Americas 393/56, **Asia 221/57** (+1),
+  **Africa 218/31** (+1).
+- active edges **1,194** (was 1,192), all between two active events.
+- components **400** (unchanged); **largest connected component 774**
+  (unchanged — both edges land outside it).
+- **edges crossing an umbrella (A15(11)): 598** (unchanged — both of this
+  batch's edges are inside one), inside one **596** (was 594).
+- active events with no edge at all: **306** (was 307).
+- validator **0 errors, 601 warnings** (was 602), and `--index` clean. Neither
+  new record warns; the warning that went is a `degree-zero` one.
+- A15(2)'s recache: **2,914** `wikipedia-en` citations on active records,
+  **2,836** on disk at the revision cited, **0 that should be on disk and are
+  not.**
