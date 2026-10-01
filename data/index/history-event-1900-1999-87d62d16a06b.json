@@ -6635,6 +6635,15 @@
         }
       ]
     },
+    "battle-of-afabet": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-alegria-de-pio": {
       "from": "git",
       "versions": [
@@ -16355,6 +16364,15 @@
             "summary"
           ],
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-savannah-angola": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

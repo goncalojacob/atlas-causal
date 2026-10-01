@@ -1043,6 +1043,15 @@
         }
       ]
     },
+    "angolan-war-of-independence--operation-savannah-angola--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "anschluss--austrian-state-treaty--precondition-of": {
       "from": "git",
       "versions": [
@@ -1239,6 +1248,15 @@
             "sources"
           ],
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "battle-of-afabet--somali-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

@@ -2948,6 +2948,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-afabet",
+      "kind": "event",
+      "locator": "Q2039487"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-agnadello",
       "kind": "event",
       "locator": "Q1754732"
@@ -7421,6 +7427,12 @@
       "id": "operation-rosary",
       "kind": "event",
       "locator": "Q2992361"
+    },
+    {
+      "dissent": false,
+      "id": "operation-savannah-angola",
+      "kind": "event",
+      "locator": "Q7097499"
     },
     {
       "dissent": false,

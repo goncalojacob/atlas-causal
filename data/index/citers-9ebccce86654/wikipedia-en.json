@@ -1922,6 +1922,12 @@
     },
     {
       "dissent": false,
+      "id": "angolan-war-of-independence--operation-savannah-angola--caused",
+      "kind": "edge",
+      "locator": "\"Operation Savannah (Angola)\", revision 1370699279, lead"
+    },
+    {
+      "dissent": false,
       "id": "anschluss--austrian-state-treaty--precondition-of",
       "kind": "edge",
       "locator": "\"Anschluss\", revision 1374499407, § Changes in Central Europe"
@@ -2117,6 +2123,12 @@
       "id": "battle-of-adwa--treaty-of-addis-ababa--caused",
       "kind": "edge",
       "locator": "\"Treaty of Addis Ababa\", revision 1358464481"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-afabet--somali-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Afabet\", revision 1376904281, \"Aftermath\""
     },
     {
       "dissent": false,
@@ -10544,6 +10556,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-afabet",
+      "kind": "event",
+      "locator": "\"Battle of Afabet\", revision 1376904281"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-agnadello",
       "kind": "event",
       "locator": "\"Battle of Agnadello\", revision 1370431087"
@@ -14957,6 +14975,12 @@
       "id": "operation-rosary",
       "kind": "event",
       "locator": "\"1982 invasion of the Falkland Islands\", revision 1372863686"
+    },
+    {
+      "dissent": false,
+      "id": "operation-savannah-angola",
+      "kind": "event",
+      "locator": "\"Operation Savannah (Angola)\", revision 1370699279"
     },
     {
       "dissent": false,

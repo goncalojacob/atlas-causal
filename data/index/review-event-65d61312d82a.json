@@ -5309,7 +5309,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "angolan-war-of-independence",
       "kind": "event",
       "origin": {
@@ -6776,6 +6776,39 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Adyar"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "battle-of-afabet",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "eritrean-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Afabet"
     },
     {
       "authors": [
@@ -32772,6 +32805,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "operation-savannah-angola",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "angolan-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Savannah (Angola)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -40741,7 +40806,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 2,
+      "degree": 3,
       "id": "somali-civil-war",
       "kind": "event",
       "origin": {

@@ -3755,6 +3755,28 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "angolan-war-of-independence",
+      "id": "angolan-war-of-independence--operation-savannah-angola--caused",
+      "kind": "edge",
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "operation-savannah-angola",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -4504,6 +4526,28 @@
       "status": "active",
       "to": "treaty-of-addis-ababa",
       "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "battle-of-afabet",
+      "id": "battle-of-afabet--somali-civil-war--precondition-of",
+      "kind": "edge",
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "somali-civil-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
