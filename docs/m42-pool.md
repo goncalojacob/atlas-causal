@@ -19395,6 +19395,18 @@ fix went in.
 document is where a filing's judgement lives, and a filing it does not account
 for is a filing nobody argued for.
 
+**The check is green on the head this stand was written against**: run **2204**
+of `validate.yml`, commit `b48b0846`, conclusion **`success`**. Runs 2194, 2199
+and 2202 failed and **all three failed the same way, which is worth writing
+down**: each was an index built *before* the commit that carried it. The
+history shards come out of the repository's own commits
+(`tools/lib/history.mjs`), so an index built and committed in one go is always
+one commit short of itself and `validate --index` refuses it on CI however
+clean it was locally. Deviation 798 says records first, rebuild, then commit
+the index — **and the rebuild has to happen after the records commit exists**,
+not after the records are written. Runs 2201 and 2203 were cancelled by the
+next push, which is deviation 1258's chain and costs nothing.
+
 ### Where the run stands after the 1 October curation fire, for the fire that picks it up
 
 **What is open, in the order a fire should weigh it:**
