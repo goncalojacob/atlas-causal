@@ -6649,7 +6649,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "battle-of-adwa",
       "kind": "event",
       "origin": {
@@ -17261,7 +17261,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "berlin-conference",
       "kind": "event",
       "origin": {
@@ -21795,7 +21795,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 4,
+      "degree": 5,
       "id": "entente-cordiale",
       "kind": "event",
       "origin": {
@@ -22541,6 +22541,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "false positives in Colombia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "fashoda-incident",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Fashoda Incident"
     },
     {
       "authors": [
@@ -34855,6 +34886,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
+      "degree": 1,
       "id": "scramble-for-africa",
       "kind": "event",
       "origin": {
@@ -41828,6 +41860,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "degree": 1,
+      "id": "treaty-of-addis-ababa",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-italo-ethiopian-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Addis Ababa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -46690,12 +46754,6 @@
     },
     {
       "id": "sack-of-rome-1527",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "scramble-for-africa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

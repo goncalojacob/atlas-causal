@@ -4400,6 +4400,28 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "battle-of-adwa",
+      "id": "battle-of-adwa--treaty-of-addis-ababa--caused",
+      "kind": "edge",
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-addis-ababa",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -8674,6 +8696,28 @@
       "status": "active",
       "to": "heligoland-zanzibar-treaty",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "berlin-conference",
+      "id": "berlin-conference--scramble-for-africa--enabled",
+      "kind": "edge",
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "scramble-for-africa",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -13240,6 +13284,28 @@
       "revised": null,
       "status": "active",
       "to": "battle-of-colhuacatonco",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-01",
+      "from": "fashoda-incident",
+      "id": "fashoda-incident--entente-cordiale--caused",
+      "kind": "edge",
+      "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "entente-cordiale",
       "type": "caused"
     },
     {

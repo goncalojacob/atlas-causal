@@ -5672,6 +5672,12 @@
     },
     {
       "dissent": false,
+      "id": "fashoda-incident",
+      "kind": "event",
+      "locator": "Q722699"
+    },
+    {
+      "dissent": false,
       "id": "february-revolution",
       "kind": "event",
       "locator": "Q101534"
@@ -8909,6 +8915,12 @@
       "id": "treaty-of-accession-1985",
       "kind": "event",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-addis-ababa",
+      "kind": "event",
+      "locator": "Q2399119"
     },
     {
       "dissent": false,

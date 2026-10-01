@@ -47,6 +47,15 @@
         }
       ]
     },
+    "battle-of-adwa--treaty-of-addis-ababa--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "battle-of-albuera--siege-of-badajoz-1812--precondition-of": {
       "from": "git",
       "versions": [
@@ -218,6 +227,26 @@
         }
       ]
     },
+    "berlin-conference--scramble-for-africa--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "authors",
+            "created",
+            "explanation",
+            "origin",
+            "review",
+            "sources"
+          ],
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "berlin-conference--second-boer-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -329,6 +358,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "fashoda-incident--entente-cordiale--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

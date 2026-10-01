@@ -2084,6 +2084,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-adwa--treaty-of-addis-ababa--caused",
+      "kind": "edge",
+      "locator": "\"Scramble for Africa\", revision 1373841219, § Independent states"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-adwa--treaty-of-addis-ababa--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Addis Ababa\", revision 1358464481"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-agnadello--battle-of-the-citadel-of-vicenza--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of the citadel of Vicenza\", revision 1370602838, § The Battle"
@@ -3164,6 +3176,12 @@
     },
     {
       "dissent": false,
+      "id": "berlin-conference--scramble-for-africa--enabled",
+      "kind": "edge",
+      "locator": "\"Scramble for Africa\", revision 1373841219, § Berlin Conference (1884–1885)"
+    },
+    {
+      "dissent": false,
       "id": "berlin-conference--second-boer-war--precondition-of",
       "kind": "edge",
       "locator": "\"Berlin Conference\", revision 1369494326, § Aftermath"
@@ -4067,6 +4085,18 @@
       "id": "fall-of-tenochtitlan--battle-of-colhuacatonco--caused",
       "kind": "edge",
       "locator": "\"Fall of Tenochtitlan\", revision 1371683304"
+    },
+    {
+      "dissent": false,
+      "id": "fashoda-incident--entente-cordiale--caused",
+      "kind": "edge",
+      "locator": "\"Fashoda Incident\", revision 1375541414, § Aftermath"
+    },
+    {
+      "dissent": false,
+      "id": "fashoda-incident--entente-cordiale--caused",
+      "kind": "edge",
+      "locator": "\"Scramble for Africa\", revision 1373841219, § Britain's administration of Egypt and South Africa"
     },
     {
       "dissent": false,
@@ -12662,6 +12692,12 @@
     },
     {
       "dissent": false,
+      "id": "fashoda-incident",
+      "kind": "event",
+      "locator": "\"Fashoda Incident\", revision 1375541414"
+    },
+    {
+      "dissent": false,
       "id": "february-revolution",
       "kind": "event",
       "locator": "\"February Revolution\", revision 1370618162"
@@ -16001,6 +16037,12 @@
       "id": "treaty-of-accession-1985",
       "kind": "event",
       "locator": "\"Treaty of Accession 1985\", revision 1287624946"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-addis-ababa",
+      "kind": "event",
+      "locator": "\"Treaty of Addis Ababa\", revision 1358464481"
     },
     {
       "dissent": false,

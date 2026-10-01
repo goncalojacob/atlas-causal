@@ -1188,6 +1188,15 @@
         }
       ]
     },
+    "fashoda-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
     "first-franco-dahomean-war": {
       "from": "git",
       "versions": [
@@ -2292,6 +2301,15 @@
             "parent"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "treaty-of-addis-ababa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },
