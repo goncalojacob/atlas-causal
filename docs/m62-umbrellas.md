@@ -620,3 +620,15 @@ the list either way.
 
 **Main is 229 before and 229 after.** The record arrived filed, so the count
 never moved.
+
+## Batch 83 — the second filing the import made for itself
+
+`Q2177009`, the Russian invasion of Manchuria, names one thing in its `P361`:
+`Q150229`, which this atlas holds as `boxer-rebellion`. The import filed it
+there unprompted, as it did batch 82's record.
+
+| record | parent | why |
+| --- | --- | --- |
+| `russian-invasion-of-manchuria` | `boxer-rebellion` | The item's `P361` is `Q150229`, the item this atlas holds as the umbrella. June to November 1900 is inside the umbrella's span, 1899-08 to 1901-09. The invasion was the Russian column of the intervention the rebellion provoked, and the record's own article opens on the rebellion as the occasion for it. |
+
+**Main is 229 before and 229 after**: the record arrived filed.
