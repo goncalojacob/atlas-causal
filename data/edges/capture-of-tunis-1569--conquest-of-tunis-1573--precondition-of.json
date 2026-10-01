@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "capture-of-tunis-1569--conquest-of-tunis-1573--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-63"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conquest of Tunis (1573)\", revision 1370612771"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Tunis (1569)\", revision 1370609762"
+    }
+  ],
+  "from": "capture-of-tunis-1569",
+  "to": "conquest-of-tunis-1573",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Tunis was the target Don John chose in 1573 because the Spanish fort there had been under siege since the capture of 1569, and the 1573 article gives that as the reason for the choice. “Conquest of Tunis (1573)”, at revision 1370612771, § Background: “A new grand campaign was cancelled with the disbanding of the Holy League and the negotiations between the Ottomans and the Republic of Venice, leading the Spanish Monarchy to ponder about a new conquest in Africa. Knowing the Spanish garrison in the La Goleta fort in Tunis was still besieged since the 1569 capture of the city by Occhiali, this was the chosen target.” The second author, “Capture of Tunis (1569)” at revision 1370609762, carries the recovery from the other end: “The Christian forces were able to recover Tunis in 1573 however the Ottoman forces under Uluç Ali conquered Tunis yet again in 1574.” `precondition-of` rather than `caused`: the same paragraph gives the campaign’s cause as Lepanto’s momentum and the collapse of the Holy League, and the 1569 capture as what made Tunis the place to spend it on. `probable`, on the articles alone (rule 22).",
+  "dispute": null
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "conquest-of-tunis-1535--capture-of-tunis-1569--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-63"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conquest of Tunis (1574)\", revision 1370612776"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Tunis (1569)\", revision 1370609762"
+    }
+  ],
+  "from": "conquest-of-tunis-1535",
+  "to": "capture-of-tunis-1569",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "What Uluç Ali took in 1569 was the Spanish-installed Hafsid Tunis that the conquest of 1535 had put there. “Conquest of Tunis (1574)”, at revision 1370612776, § Background: “In the next year, however, Holy Roman Emperor Charles V had launched a major expedition and captured it in turn. He established a garrison and a vassal ruler in the person of Lhacène of the Hafsid dynasty. The Bey of Algiers Uluj Ali Pasha captured Tunis in 1569 for the Ottoman Empire.” The second author, “Capture of Tunis (1569)” at revision 1370609762, names both halves of that settlement as what the campaign met: “Uluç Ali encountered the Hafsid sultan at Beja, west of Tunis, Uluç Ali defeated him in battle and conquered Tunis without suffering any great losses. Mulay Ahmad III was forced to take refuge in the Spanish presidio of La Goletta in the bay of Tunis.” The type is the weakest of the five on purpose: **neither article states a motive for 1569**, only the object of it, so this is `precondition-of` — there was a Spanish-backed Hafsid Tunis and a Spanish presidio beside it to be taken because of 1535 — and it is not written as `caused` or `reacted-to`. `probable`, on the articles alone (rule 22).",
+  "dispute": null
+}

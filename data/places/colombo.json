@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "colombo",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q35381",
+  "sitelinks": {
+    "count": 137,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Colombo",
+    "pt": "Colombo"
+  },
+  "sources": [],
+  "names": [
+    "Colombo"
+  ],
+  "where": {
+    "lon": 79.86055555555555,
+    "lat": 6.926666666666667,
+    "precision": "city",
+    "label": "Colombo"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

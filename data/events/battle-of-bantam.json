@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-bantam",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2032681",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Bantam"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2032681"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bantam\", revision 1371913893"
+    }
+  ],
+  "title": "Battle of Bantam",
+  "summary": "The English Wikipedia article \"Battle of Bantam\", at revision 1371913893, opens: \"The naval Battle of Bantam took place on 27 December 1601 in Bantam Bay, Indonesia, when an exploration fleet of five Dutch ships under the command of Wolfert Harmensz and a Portuguese fleet under André Furtado de Mendonça, sent from Goa to restore Portuguese authority, met in the Indonesian archipelago. The battle resulted in Dutch victory and forced the Portuguese to retreat. The outnumbered Dutch fleet took three Portuguese fustas as prizes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2032681, imported by tools/import/wikidata.mjs. The item's own description reads \"1601 naval battle of the Dutch-Portuguese War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1601,
+    "end": 1601,
+    "date": "1601-12-27"
+  },
+  "place": "banten-bay",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}

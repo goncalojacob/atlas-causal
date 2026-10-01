@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "capture-of-malacca-1511--siege-of-malacca-1606--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-64"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Malay–Portuguese conflicts\", revision 1370627478"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Malacca (1511)\", revision 1373484620"
+    }
+  ],
+  "from": "capture-of-malacca-1511",
+  "to": "siege-of-malacca-1606",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same condition, read for the Dutch siege of 1606. “Malay–Portuguese conflicts”, at revision 1370627478, gathers both ends of this edge into one series and says what the Dutch admiral found at Malacca: in § Later conflicts → Siege of Malacca 1606, “In 1606, Dutch East India Company admiral Cornelis Matelief besieged Malacca with the support of the ruler of Johor”, and “The small Portuguese garrison, under the command of André Furtado de Mendonça managed to hold out” — a Portuguese garrison in the city because, in the same article’s § Portuguese Conquest of Malacca 1511, “Albuquerque subsequently **built a fort**, established various institutions in the city, and confirmed religious freedom to its inhabitants.” The same article closes the series by measuring the possession from the conquest: the 1641 siege ended “nearly **130 years** of official Portuguese presence in the region”, which counts back to 1511. The second author is “Capture of Malacca (1511)” at revision 1373484620, the revision that record cites, for the intention the possession rested on: Albuquerque “did not intend to just sack the city, but to hold it permanently”. `precondition-of`: the Dutch came for a Portuguese city, and the conquest is what made it one. It is not a reason the Dutch came in 1606 — that is the Johor alliance and the Company’s war, which the atlas files this siege under as `dutch-portuguese-war` — so `caused` would overstate it. **This edge, the one to the 1551 siege and the one to the 1640–1641 siege share a single argument** and are three records of it, one per siege of the city the 1511 conquest created; they are not three independent findings. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}

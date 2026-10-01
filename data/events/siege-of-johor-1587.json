@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-johor-1587",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q55633157",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Siege of Johor (1587)",
+    "pt": "Cerco de Jor (1587)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q55633157"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Johor (1587)\", revision 1370742162"
+    }
+  ],
+  "title": "Siege of Johor (1587)",
+  "summary": "The English Wikipedia article \"Siege of Johor (1587)\", at revision 1370742162, opens: \"The siege of Johor of 1587 was a military operation in which Portuguese forces successfully sieged, sacked, and razed Johor, capital of its eponymous sultanate. The city would later be rebuilt at a different location.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q55633157, imported by tools/import/wikidata.mjs. The item's own description reads \"1587 successful Portuguese siege on Johor\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1587,
+    "end": 1587,
+    "date": "1587-07",
+    "endDate": "1587-08"
+  },
+  "place": "johor",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "malay-portuguese-conflicts"
+}

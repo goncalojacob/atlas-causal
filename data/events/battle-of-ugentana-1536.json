@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-ugentana-1536",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q116214216",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Battle of Ugentana (1536)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q116214216"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ugentana (1536)\", revision 1373045056"
+    }
+  ],
+  "title": "Battle of Ugentana (1536)",
+  "summary": "The English Wikipedia article \"Battle of Ugentana (1536)\", at revision 1373045056, opens: \"The Second Battle of Ugentana, was a military operation that took place in 1536, between Portuguese forces and those of Sultan Alauddin Riayat Shah II of Johor.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q116214216, imported by tools/import/wikidata.mjs. The item's own description reads \"successful Portuguese attack on Ugentana in 1536\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1536,
+    "end": 1536
+  },
+  "place": "johor-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "malay-portuguese-conflicts"
+}

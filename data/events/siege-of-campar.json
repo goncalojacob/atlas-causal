@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-campar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q130520296",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Siege of Campar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q130520296"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Campar\", revision 1370740012"
+    }
+  ],
+  "title": "Siege of Campar",
+  "summary": "The English Wikipedia article \"Siege of Campar\", at revision 1370740012, opens: \"The siege of Campar was a 1543 military conflict between the Kingdom of Portugal and the combined forces of Mahmud and the sultanates of Bintang and Lingga.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q130520296, imported by tools/import/wikidata.mjs. The item's own description reads \"1543 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1543,
+    "end": 1543
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "malay-portuguese-conflicts"
+}

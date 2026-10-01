@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "treaty-of-tordesillas-1494--capture-of-malacca-1511--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-64"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Malacca (1511)\", revision 1373484620"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Tordesillas\", revision 1374273992"
+    }
+  ],
+  "from": "treaty-of-tordesillas-1494",
+  "to": "capture-of-malacca-1511",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Malacca was taken for a line drawn on a map in Castile seventeen years earlier. “Capture of Malacca (1511)”, at revision 1373484620 — the revision this record cites — says in its § Background why the Portuguese king wanted the city at all: “Since then, King Manuel showed an interest in making contact with Malacca, **believing it to be at, or at least close to, the antimeridian of Tordesillas**.” Its lead gives the same motive as the plan behind the expedition: the capture “was the result of a plan by King Manuel I of Portugal, who since 1505 had **intended to beat the Castilians to the Far-East**”. The treaty’s own record cites “Treaty of Tordesillas” at revision 1374273992, and that article’s § Antimeridian states the division the race was run inside: “Portugal gained control of all lands and seas west of the Zaragoza line, **including all of Asia and its neighboring islands so far discovered**.” `precondition-of` and not `caused`: neither article makes the treaty a reason the expedition sailed in 1511 rather than another year, and the fleet went for the city’s trade as much as for the meridian — the lead names Albuquerque’s own project “of establishing firm foundations for Portuguese India, alongside Hormuz, Goa, and Aden” beside the king’s. What the treaty supplies is the condition under which a Portuguese crown had a claim to press in the Far East and a rival to press it before. **Where this is weak, and it is said here rather than left to be found**: the antimeridian the Background names was not fixed until Zaragoza in 1529, eighteen years after the capture; what Tordesillas itself drew was the Atlantic meridian, and the article’s own § Antimeridian says the line “did not encircle the earth” at first. The belief the Background reports is therefore a belief about where an unsettled line would fall, which is what it says. `probable`, on the two articles alone (rule 22).",
+  "dispute": null
+}

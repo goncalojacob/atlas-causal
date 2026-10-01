@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "roland-crappe-s-raids-on-portuguese-colonies",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q125701269",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Roland Crappé's raids on Portuguese colonies"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q125701269"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Roland Crappé's raids on Portuguese colonies\", revision 1373846591"
+    }
+  ],
+  "title": "Roland Crappé's raids on Portuguese colonies",
+  "summary": "The English Wikipedia article \"Roland Crappé's raids on Portuguese colonies\", at revision 1373846591, opens: \"Roland Crappé's raids on Portuguese colonies refers to a series of raids by Dutchman in Danish service, Roland Crappé, on Portuguese Ceylon and India. The raids were partially unsuccessful, in that Crappé's ship, Øresund, caught fire and sank.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q125701269, imported by tools/import/wikidata.mjs. The item's own description reads \"Danish raids in India and Sri Lanka, 1619\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1619,
+    "end": 1619,
+    "date": "1619-01",
+    "endDate": "1619-09-24"
+  },
+  "place": "sri-lanka-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "sinhalese-portuguese-conflicts"
+}

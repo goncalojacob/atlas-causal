@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "johor-river",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1702507",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Johor River",
+    "pt": "Rio Johor"
+  },
+  "sources": [],
+  "names": [
+    "Johor River",
+    "Rio Johor"
+  ],
+  "where": {
+    "lon": 104.01666666667,
+    "lat": 1.45,
+    "precision": "region",
+    "label": "Johor River"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

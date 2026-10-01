@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "peninsular-war--colombian-war-of-independence--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-62"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Colombian War of Independence\", revision 1375635940, § Political background"
+    }
+  ],
+  "from": "peninsular-war",
+  "to": "colombian-war-of-independence",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "New Granada's § Political background is headed \"See also: Peninsular war\" and names the crisis in Spain as what brought on 20 July 1810: \"**The development that precipitated the events of July 20, 1810, was the crisis of the Spanish monarchy caused by the 1808 abdications of Charles IV and Ferdinand VII forced by Napoleon Bonaparte in favor of his brother Joseph Bonaparte.**\" The same section follows the crisis to the colonies: \"the general population rejected the new king and opposition, led by the priesthood and patriots, became widespread after the French army's first examples of repression (such as the executions of May 3, 1808, in Madrid) became widely known … Eventually an emergency government in the form of a Supreme Central Junta was formed in Spain. **Most of the authorities in the Americas swore allegiance to the new Supreme Central Junta.**\" **What the sentence names as the cause is the crisis of the monarchy from the abdications of Bayonne, which this atlas holds no record of**; the Peninsular War is the record this atlas keeps of Napoleon's 1808 intervention in Spain, and it is the article's own cross-reference at the head of the section. The edge is `precondition-of` on that reading and a reviewer who holds the abdications to be a separate event should re-point it rather than widen this one.",
+  "dispute": null
+}
