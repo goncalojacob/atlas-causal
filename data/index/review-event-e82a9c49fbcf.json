@@ -713,12 +713,13 @@
           "imported-facts",
           "m67-lined",
           "summary-from-lead",
-          "a15-lane-from-point"
+          "a15-lane-from-point",
+          "place-refused"
         ],
         "note": "A14(2): the place was sinai-peninsula, which the lane guard puts in Africa against this record's own Asia. The Sinai is where the Egyptian front ran, not where the war was; the place is cleared and the lane kept, as before A9. A15(7): the lane asia is confirmed - two of the three locations the item names (Southern Lebanon, Palestine) are in it and the third is the Sinai. No place is written: the first candidate its lane admits is Southern Lebanon, which is one front and not the war, which is the",
         "status": "draft"
       },
-      "revised": "2026-09-29",
+      "revised": "2026-10-01",
       "status": "active",
       "title": "1948 Arab–Israeli War"
     },
@@ -2956,18 +2957,19 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "arab-spring",
+      "parent": "libyan-civil-war",
       "review": {
         "flags": [
           "imported-facts",
           "summary-from-lead",
           "a9-place",
-          "filed-by-span-and-subject"
+          "filed-by-span-and-subject",
+          "filed-from-p361"
         ],
-        "note": "A6 and A8: `P361` names Q81545, the Libyan Civil War, which this atlas closes on 2011-10-23 while the intervention ran to NATO's mandate ending on 31 October — eight days outside its parent, and A7 cannot widen a parent dated from its own article. Filed instead under `arab-spring`, whose span (2010-12-17 to 2012-12) holds it and whose subject is the one the civil war is filed under. Place from A9's `P276` = Q1016, the `libya-q1016` record already here.",
+        "note": "A6, A8: the item's P361 names the Libyan Civil War, which contains the intervention's span; arab-spring comes off because the civil war is itself filed under it and a parent reached through another is not a second umbrella.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-10-01",
       "status": "active",
       "title": "2011 military intervention in Libya"
     },
@@ -5343,7 +5345,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "anti-comintern-pact",
       "kind": "event",
       "origin": {
@@ -6273,7 +6275,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "baltic-entente",
       "kind": "event",
       "origin": {
@@ -6903,11 +6905,14 @@
           "imported-facts",
           "summary-from-lead",
           "a9-place",
-          "filed-from-p361"
+          "filed-from-p361",
+          "span-from-title",
+          "a7-widened"
         ],
+        "note": "A7, A15(4): the start is widened from 1957 to 1956, from the title of the cited article at revision 1374865618 - \"Battle of Algiers (1956-1957)\". The item's P580, 7 January 1957, is kept as the precise date the campaign's dated phase opens on; the title is what says the campaign began the year before.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Battle of Algiers (1956–1957)"
     },
@@ -12004,11 +12009,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a9-place"
         ],
+        "note": "A11(a), A9: the item's P276 is Q17054, Martinique, which this atlas already holds; the lane agrees (americas).",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Battle of Martinique (1779)"
     },
@@ -12035,11 +12042,13 @@
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "filed-from-p361"
+          "filed-from-p361",
+          "a9-place"
         ],
+        "note": "A11(a), A9: the item's P276 is Q17054, Martinique, which this atlas already holds; the lane agrees (americas).",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Battle of Martinique (1780)"
     },
@@ -12357,7 +12366,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "somali-civil-war",
+      "parent": "operation-gothic-serpent",
       "review": {
         "flags": [
           "imported-facts",
@@ -12366,9 +12375,10 @@
           "filed-from-p361",
           "participants-from-p710"
         ],
+        "note": "A6, A8: the item's P361 names Operation Gothic Serpent, the operation this battle ended; somali-civil-war comes off because Gothic Serpent is filed under it.",
         "status": "draft"
       },
-      "revised": "2026-09-22",
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Battle of Mogadishu (1993)"
     },
@@ -12727,7 +12737,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "korean-war",
+      "parent": "battle-of-the-pusan-perimeter",
       "review": {
         "flags": [
           "imported-facts",
@@ -12736,10 +12746,10 @@
           "summary-from-lead",
           "parent"
         ],
-        "note": "Filed under korean-war and not under the umbrella its own article names. The article's infobox reads \"part of the Battle of Pusan Perimeter\", but that record runs 4 August – 18 September 1950 and this battle runs to 19 September, so M62's span test refuses the nearer umbrella by one day. A later fire that widens the perimeter's interval under A7 from the perimeter's own article should re-file this record under it.",
+        "note": "A6, A8: the item's P361 names the Pusan Perimeter, which contains this action's span; korean-war comes off because the perimeter is filed under it.",
         "status": "draft"
       },
-      "revised": "2026-09-24",
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Battle of Nam River"
     },
@@ -12899,10 +12909,10 @@
           "summary-from-lead",
           "filed-from-p361"
         ],
-        "note": "Held back by the curation fire of 29 September: A9's chain places this at `pamplona` (Q10282) and the place record trips the map's label placer, which renders \"Pamplona\" overlapping \"PYRENEES\". The placement is right and is one line to re-apply once src/map/labels.js measures a letterspaced label's width.",
+        "note": "A11(a), A9: the item's P276 is Q10282, Pamplona. The placement is right and is not written: the place record put a second 'Pamplona' on the map beside Natural Earth's own, and its label overlapped the tracked all-caps 'PYRENEES' that tests/map-browser.test.mjs forbids. The fix is data, not display: tools/import/naturalearth.mjs --places, which holds Pamplona at Q10282.",
         "status": "draft"
       },
-      "revised": "2026-09-29",
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Battle of Noáin"
     },
@@ -13203,10 +13213,10 @@
           "summary-from-lead",
           "filed-from-p361"
         ],
-        "note": "Held back by the curation fire of 29 September: A9's chain places this at `pamplona` (Q10282) and the place record trips the map's label placer, which renders \"Pamplona\" overlapping \"PYRENEES\". The placement is right and is one line to re-apply once src/map/labels.js measures a letterspaced label's width.",
+        "note": "A11(a), A9: the item's P276 is Q10282, Pamplona. The placement is right and is not written: the place record put a second 'Pamplona' on the map beside Natural Earth's own, and its label overlapped the tracked all-caps 'PYRENEES' that tests/map-browser.test.mjs forbids. The fix is data, not display: tools/import/naturalearth.mjs --places, which holds Pamplona at Q10282.",
         "status": "draft"
       },
-      "revised": "2026-09-29",
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Battle of Pampeluna"
     },
@@ -13229,16 +13239,17 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "italian-war-of-1521-1526",
+      "parent": "italian-campaign-of-1524-1525",
       "review": {
         "flags": [
           "imported-facts",
-          "summary-from-lead"
+          "summary-from-lead",
+          "filed-from-p361"
         ],
-        "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because deviation 1230 is not fixed: the import fetches only the P17 countries, so the P276 town it should reach first is not there to read and the engagement came out placeless with a lane derived from its own point. The point and the names are the town item's own; nothing here is guessed.",
+        "note": "A6, A8: the item's P361 names the campaign of 1524-1525, which Pavia closed; italian-war-of-1521-1526 comes off because the campaign is filed under it.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Battle of Pavia"
     },
@@ -22522,12 +22533,13 @@
           "summary-drafted",
           "title-from-article",
           "a15-country-refused",
-          "a15-category-from-p31"
+          "a15-category-from-p31",
+          "place-refused"
         ],
-        "note": "A15(6): the place was soviet-union-q15180, from the item's P17, and it is refused because the country's point is 3334 km from the nearest point on the event's own chain. The lane is unchanged.",
+        "note": "A15(6): the place was soviet-union-q15180, from the item's P17, and it is refused because the country's point is 3334 km from the nearest point on the event's own chain. The lane is unchanged. A11(a), A9: no place is written. The item names six locations and the chain takes the first that passes, Central Europe; a front from the Vistula to the Volga is not its point. A15(6)'s second refusal is written for P17 and does not reach a P276 of six regions.",
         "status": "draft"
       },
-      "revised": "2026-09-29",
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Eastern Front (World War II)"
     },
@@ -23273,12 +23285,13 @@
           "imported-facts",
           "summary-from-lead",
           "a14-lane-guard",
-          "a15-days"
+          "a15-days",
+          "place-refused"
         ],
         "note": "A14(2): the place was ipatiev-house, which the lane guard puts in Europe against this record's own Asia. The house is the right place and Yekaterinburg is east of the Urals, so what disagrees is the lane polygon, not the reading; the guard is mechanical and the place is cleared anyway, with the lane kept. Deviation 1409 asks the owner about exactly this case. A15(4): the cited article states \"16-17 July 1918\", so the day bounds are 1918-07-16 to 1918-07-17; the years are unchanged. A15(7) leaves",
         "status": "draft"
       },
-      "revised": "2026-09-29",
+      "revised": "2026-10-01",
       "status": "active",
       "title": "execution of the Romanov family"
     },
@@ -23791,7 +23804,10 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "russian-civil-war",
+      "parent": [
+        "russian-civil-war",
+        "world-war-i"
+      ],
       "review": {
         "flags": [
           "imported-facts",
@@ -23801,9 +23817,10 @@
           "filed-from-p361",
           "a15-category-from-p31"
         ],
+        "note": "A6, A8: the item's P361 names the First World War as well, whose span contains this one; neither umbrella reaches the other, so the record carries both.",
         "status": "draft"
       },
-      "revised": "2026-09-29",
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Finnish Civil War"
     },
@@ -25522,16 +25539,20 @@
       "origin": {
         "tool": "assistant"
       },
-      "parent": "estado-novo-1933-1974",
+      "parent": [
+        "estado-novo-1933-1974",
+        "portuguese-colonial-war-1961-1974"
+      ],
       "review": {
         "flags": [
           "identity-by-hand",
-          "filed-by-span-and-subject"
+          "filed-by-span-and-subject",
+          "filed-from-p361"
         ],
-        "note": "A6 and M62: inside the span (1961, against 1933 to 1974) and inside the subject — the Estado Novo is the government whose territory was taken. Not filed under portuguese-colonial-war-1961-1974, whose subject is the fighting in Africa: a war is its own umbrella by its fighting (A6). M67 rule 1 does not bite — the annexation neither made the regime nor ended it.",
+        "note": "A6, A8: the item's P361 names the Portuguese Colonial War, whose span contains December 1961; the Estado Novo stays, because neither umbrella reaches the other. Whether Goa belongs with the three African theatres is a reviewer's question and this filing is the item's claim, not a reading.",
         "status": "draft"
       },
-      "revised": "2026-09-25",
+      "revised": "2026-10-01",
       "status": "active",
       "title": "India annexes Goa, Daman and Diu"
     },
@@ -25957,18 +25978,19 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "decolonisation-of-africa",
+      "parent": "portuguese-colonial-war-1961-1974",
       "review": {
         "flags": [
           "imported-facts",
           "summary-from-lead",
           "a9-place",
-          "filed-by-span-and-subject"
+          "filed-by-span-and-subject",
+          "filed-from-p361"
         ],
-        "note": "The same refusal as its Mozambican sibling: `P361` names Q609836, the Portuguese Colonial War, and this war ends on 10 September 1974, four and a half months after this atlas closes that record at the Carnation Revolution. Filed under `decolonisation-of-africa`, whose span and lane it is inside. The atlas already holds this war's first day as `guinea-war-begins-1963` and its declaration as `guinea-bissau-declares-independence-1973`.",
+        "note": "A6, A8: the item's P361 names the Portuguese Colonial War, of which this is one of the three theatres; decolonisation-of-africa comes off because the colonial war is filed under it.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Guinea-Bissau War of Independence"
     },
@@ -27219,7 +27241,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "insurgency-in-kosovo",
       "kind": "event",
       "origin": {
@@ -28165,12 +28187,13 @@
           "imported-facts",
           "summary-from-lead",
           "lane-from-seeds",
-          "filed-from-p361"
+          "filed-from-p361",
+          "place-refused"
         ],
         "note": "A9 reaches no point: no `P625`, and its `P276` is Q1529261, the Tripolitania vilayet, which carries none either; no `P131` and no `P17`. So it is placeless and the lane is named for the item in the seeds file — africa, the theatre the article's first sentence gives, from Tripoli to Fezzan. The Aegean half is in no lane: a war on two seas has no one point and no place record is better than a wrong one. Filed under `scramble-for-africa` from `P361`.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Italo-Turkish War"
     },
@@ -28933,7 +28956,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 4,
+      "degree": 5,
       "id": "kosovo-war",
       "kind": "event",
       "origin": {
@@ -30849,18 +30872,19 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "decolonisation-of-africa",
+      "parent": "portuguese-colonial-war-1961-1974",
       "review": {
         "flags": [
           "imported-facts",
           "summary-from-lead",
           "a9-place",
-          "filed-by-span-and-subject"
+          "filed-by-span-and-subject",
+          "filed-from-p361"
         ],
-        "note": "A6 and A8: `P361` names Q609836, the Portuguese Colonial War, which this atlas closes on 1974-04-25, the Carnation Revolution's day, while this war ran to the ceasefire of 8 September 1974. A child dated outside its parent is a warning, and A7 cannot widen the parent: the article printed on that record dates the war 1961 to 1974. Filed instead under `decolonisation-of-africa`, by A6's two halves — inside its span and in its lane. The argument is in docs/m42-pool.md, batch 41.",
+        "note": "A6, A8: the item's P361 names the Portuguese Colonial War, of which this is one of the three theatres; decolonisation-of-africa comes off because the colonial war is filed under it.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Mozambican War of Independence"
     },
@@ -31562,7 +31586,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 8,
+      "degree": 9,
       "id": "october-revolution",
       "kind": "event",
       "origin": {
@@ -32045,10 +32069,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": [
-        "guinea-bissau-war-of-independence",
-        "portuguese-colonial-war-1961-1974"
-      ],
+      "parent": "guinea-bissau-war-of-independence",
       "review": {
         "flags": [
           "imported-facts",
@@ -32058,10 +32079,10 @@
           "second-parent-a8",
           "actors-from-p710"
         ],
-        "note": "Two parents, which is A8: `P361` names the Guinea-Bissau war of independence, and the raid is also inside `portuguese-colonial-war-1961-1974`, which that war is not filed under because it outlasts it (batch 41). Neither is reachable from the other. Place from A9: the item's `P625` and its `P276` (Q3733, Conakry) agree. Actors from `P710` (A12 (4)). No edge: the article's Consequences are the Guinean purges, UNSC Resolution 290 and the Soviet patrol, none of them held here.",
+        "note": "A6, A8, deviation 1316: portuguese-colonial-war-1961-1974 comes off because this fire filed guinea-bissau-war-of-independence under it, so the operation is already inside the colonial war through the war it belongs to. Filing a record under a nearer umbrella can make a descendant's own list redundant; this is that, one step down.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Operation Green Sea"
     },
@@ -32299,12 +32320,13 @@
           "imported-facts",
           "filed-from-p361",
           "summary-from-lead",
-          "a7-widened"
+          "a7-widened",
+          "place-refused"
         ],
         "note": "A7: the end was unstated, because the item carries P580 and no P582. The cited article's first sentence says, at the cached revision 1368407310, \"from 4 December 2018 until 13 January 2019\". So the end is 13 January 2019 and `end-unstated` goes with it. The place is still refused, for the reason the earlier note gave.",
         "status": "draft"
       },
-      "revised": "2026-09-29",
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Operation Northern Shield"
     },
@@ -35309,7 +35331,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 5,
+      "degree": 6,
       "id": "russian-revolution-of-1905",
       "kind": "event",
       "origin": {
@@ -36194,17 +36216,21 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "dutch-brazil-1630-1654",
+      "parent": [
+        "dutch-brazil-1630-1654",
+        "insurrection-of-pernambuco"
+      ],
       "review": {
         "flags": [
           "imported-facts",
           "summary-from-lead",
-          "a9-place"
+          "a9-place",
+          "filed-from-p361"
         ],
-        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one. The point and the names are the located item's own.",
+        "note": "Place read from the item's own P276 under A9 as A12 corrects it, and attached by hand because the import reuses a place record and never creates one. The point and the names are the located item's own. A6, A8: the item's P361 names the Insurrection of Pernambuco, whose span contains 1649. It and Dutch Brazil are both filed under the Dutch-Portuguese war and neither reaches the other, so the record carries both.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Second Battle of Guararapes"
     },
@@ -40842,7 +40868,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 5,
       "id": "spanish-civil-war",
       "kind": "event",
       "origin": {
@@ -44784,7 +44810,7 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "thirty-years-war",
+      "parent": "bundner-wirren",
       "review": {
         "flags": [
           "imported-facts",
@@ -44792,9 +44818,10 @@
           "a9-place",
           "filed-from-p361"
         ],
+        "note": "A6, A8: the item's P361 names the Bundner Wirren, whose span contains this war's; thirty-years-war comes off because the Bundner Wirren is filed under it.",
         "status": "draft"
       },
-      "revised": null,
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Valtellina War"
     },
@@ -45943,7 +45970,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 20,
+      "degree": 21,
       "id": "world-war-i",
       "kind": "event",
       "origin": {
@@ -46172,12 +46199,13 @@
           "summary-drafted",
           "filed-from-p527",
           "a15-lane-from-point",
-          "a15-category-from-p31"
+          "a15-category-from-p31",
+          "place-refused"
         ],
         "note": "A14(2): the place was near-east, which the lane guard puts in Asia against this record's own Africa. The war ran on two fronts in two lanes and neither place holds it; the place is cleared and the Africa lane kept. A15(7): the item names five locations and they split three asia (Golan, Near East, Middle East) to two africa (Suez Canal, Sinai), which is no majority and no correction: the war had a front on each side. The lane africa stands as it was.",
         "status": "draft"
       },
-      "revised": "2026-09-29",
+      "revised": "2026-10-01",
       "status": "active",
       "title": "Yom Kippur War"
     },
@@ -46600,12 +46628,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-algiers-1956-1957",
-      "kind": "event",
-      "message": "the title states 1956–1957 and the record is dated 1957",
-      "rule": "span-vs-article-title"
     },
     {
       "id": "battle-of-ap-bac",

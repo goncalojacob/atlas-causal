@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "world-war-i--baltic-entente--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Baltic Entente\", revision 1363789006"
+    }
+  ],
+  "from": "world-war-i",
+  "to": "baltic-entente",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Entente’s own article puts the war between the idea and the thing: \"Thanks to the victory of Entente in World War I and the relative international weakening of both Germany and Russia, it became possible for the Baltic states to turn theoretical ideas into practice and to establish themselves politically in the international arena.\" \"It became possible\" is what `enabled` is for: the war did not bring the Baltic Entente about — sixteen years and three independences stand between them — it removed the two powers whose weight had made it impossible.",
+  "dispute": null
+}

@@ -17,15 +17,18 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-22",
+  "revised": "2026-10-01",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-from-lead",
       "a9-place",
-      "filed-from-p361"
-    ]
+      "filed-from-p361",
+      "span-from-title",
+      "a7-widened"
+    ],
+    "note": "A7, A15(4): the start is widened from 1957 to 1956, from the title of the cited article at revision 1374865618 - \"Battle of Algiers (1956-1957)\". The item's P580, 7 January 1957, is kept as the precise date the campaign's dated phase opens on; the title is what says the campaign began the year before."
   },
   "origin": {
     "tool": "wikidata"
@@ -51,7 +54,7 @@
   "title": "Battle of Algiers (1956–1957)",
   "summary": "The English Wikipedia article \"Battle of Algiers (1956–1957)\", at revision 1374865618, opens: \"The Battle of Algiers, also called the great repression of Algiers, was a campaign fought during the Algerian War. It consisted of urban guerrilla warfare and terrorist attacks carried out by the National Liberation Front (FLN) against the French authorities in Algiers, and by the French authorities, army, and French terrorist organizations against the FLN.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1761043, imported by tools/import/wikidata.mjs. The item's own description reads \"1956 urban guerrilla warfare carried out by the National Liberation Front (FLN) against the French Algerian authorities\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
   "when": {
-    "start": 1957,
+    "start": 1956,
     "end": 1957,
     "date": "1957-01-07",
     "endDate": "1957-10-09"

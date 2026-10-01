@@ -17,14 +17,15 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-29",
+  "revised": "2026-10-01",
   "review": {
     "status": "draft",
     "flags": [
       "imported-facts",
       "summary-from-lead",
       "a14-lane-guard",
-      "a15-days"
+      "a15-days",
+      "place-refused"
     ],
     "note": "A14(2): the place was ipatiev-house, which the lane guard puts in Europe against this record's own Asia. The house is the right place and Yekaterinburg is east of the Urals, so what disagrees is the lane polygon, not the reading; the guard is mechanical and the place is cleared anyway, with the lane kept. Deviation 1409 asks the owner about exactly this case. A15(4): the cited article states \"16-17 July 1918\", so the day bounds are 1918-07-16 to 1918-07-17; the years are unchanged. A15(7) leaves"
   },

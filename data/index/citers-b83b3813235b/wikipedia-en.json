@@ -5180,6 +5180,12 @@
     },
     {
       "dissent": false,
+      "id": "insurgency-in-kosovo--kosovo-war--caused",
+      "kind": "edge",
+      "locator": "\"Insurgency in Kosovo (1995–1998)\", revision 1377784274"
+    },
+    {
+      "dissent": false,
       "id": "insurrection-of-10-august-1792--execution-of-louis-xvi--precondition-of",
       "kind": "edge",
       "locator": "\"Execution of Louis XVI\", revision 1373172133, § Background"
@@ -6590,6 +6596,12 @@
     },
     {
       "dissent": false,
+      "id": "russian-revolution-of-1905--october-revolution--precondition-of",
+      "kind": "edge",
+      "locator": "\"Russian Revolution of 1905\", revision 1376714992"
+    },
+    {
+      "dissent": false,
       "id": "russian-revolution-of-1905--sveaborg-rebellion--caused",
       "kind": "edge",
       "locator": "\"Sveaborg rebellion\", revision 1370749115, § lead"
@@ -7487,6 +7499,12 @@
       "id": "spanish-american-war-1898--treaty-of-paris-1898--caused",
       "kind": "edge",
       "locator": "\"Treaty of Paris (1898)\", revision 1375676698, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-civil-war--anti-comintern-pact--reacted-to",
+      "kind": "edge",
+      "locator": "\"Anti-Comintern Pact\", revision 1377358025"
     },
     {
       "dissent": false,
@@ -8915,6 +8933,12 @@
       "id": "world-war-i--armistice-of-mudros--caused",
       "kind": "edge",
       "locator": "\"Armistice of Mudros\", revision 1369160266, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "world-war-i--baltic-entente--enabled",
+      "kind": "edge",
+      "locator": "\"Baltic Entente\", revision 1363789006"
     },
     {
       "dissent": false,

@@ -759,6 +759,31 @@ export const FILED_FLAG = 'filed-from-p361';
 // the item's own until a reviewer reads the section that names it.
 export const REDIRECT_FLAG = 'article-is-redirect';
 
+// A11(a)'s own flag: **this event takes no place at all**, and a later pass
+// must not go looking for one.
+//
+// `refusedPlaces()` reads the ids A15(6) refused, one candidate at a time, and
+// that is the right shape for a refusal of a candidate: `1952-egyptian-revolution`
+// refuses the modern state through `P17` and is still placed through `P276`.
+// But five records refuse **every** candidate, and they say so in prose a
+// regular expression cannot read — *"a war on two seas has no one point"*,
+// *"the place is cleared and the Africa lane kept"*, *"the first candidate its
+// lane admits is Southern Lebanon, which is one front and not the war"*. Three
+// curation fires in a row have re-derived those refusals from the network and
+// then taken the placements back by hand, which is deviation 1477's fault in
+// its third costume: a judgement already on disk, written where nothing can
+// read it.
+//
+// So the judgement gets a flag beside the sentence that explains it. The note
+// stays — it is the whole of the argument and a reviewer reads it — and the
+// flag is the half a pass can ask about. A reviewer who disagrees takes the
+// flag off and the next fire places the event.
+export const PLACE_REFUSED_FLAG = 'place-refused';
+
+export function placeRefused(record) {
+  return (record?.review?.flags ?? []).includes(PLACE_REFUSED_FLAG);
+}
+
 // 1 — the summary, from the article's own lead at the revision it was read at
 // (A12 (1), and the brief's "a summary that is the cached lead at a revision,
 // never the placeholder"). The framing is the one `src/summary.js` already
@@ -1531,7 +1556,17 @@ function skipSigned(report, record, qid) {
 //
 // → { place, flagged } — `flagged` is whether this pass is what found it, and
 // is what puts `a9-place` on the event.
-async function eventPlace(read, {
+//
+// **Exported because a curation fire has to walk the same chain over the
+// events the atlas already holds, and a second copy of it is worse than no
+// pass at all.** Deviation 1477 is that fault written down: the 30 September
+// fire handed A15(6)'s distance test the item's own points instead of the
+// event's chain, passed what the rule refuses, and reported that the rule had
+// run. The chain has four steps, a gate at every one of them (deviation 1476),
+// a lane guard, a reuse rule and a recorded-refusal oracle, and every one of
+// them is a place a copy drifts. So the import's own function is the only one,
+// and `tests/a9-chain.test.mjs` holds it exported.
+export async function eventPlace(read, {
   dataDir, entries, entityOf, byItem, taken, written, report,
   deriveRegion, classes, today, lane, when = null, chainPoints = [], refused = new Set(),
 }) {
@@ -1547,12 +1582,24 @@ async function eventPlace(read, {
     // whether or not a record for it already exists.
     const gateEntity = entityOf(qid);
     const gateCandidate = gateEntity && !isMissing(gateEntity) ? readEntity(gateEntity) : null;
+    // A place this atlas already holds at that item, if any: its own
+    // `where.precision` is this atlas's answer about what the thing is, and it
+    // is read before the item's class because the class table can disagree
+    // with it. `france-q142` is the case — the atlas holds it as a place at
+    // `country` precision, and the class table reads `Q142`'s `P31` as an
+    // actor, so `classify()` returns no precision at all and A15(6)'s gate
+    // never ran on France. 124 of the 797 place records are countries and the
+    // gate could not see one of them.
+    const heldAtItem = byItem.get(`place:${qid}`);
+    const heldPrecision = heldAtItem
+      ? entries.find((e) => e.record?.id === heldAtItem)?.record?.where?.precision ?? null
+      : null;
     // Deviation 1476: the gate asks what the item is, not which property
     // reached it, so a country standing in `P276` is tested like any other.
     if (countryGateApplies({
       qid,
       countries,
-      precision: gateCandidate ? classify(gateCandidate, classes).precision ?? null : null,
+      precision: heldPrecision ?? (gateCandidate ? classify(gateCandidate, classes).precision ?? null : null),
     })) {
       const why = countryRefusal({
         when,

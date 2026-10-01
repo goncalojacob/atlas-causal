@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-10-01",
   "origin": {
     "tool": "wikidata"
   },
@@ -23,9 +23,10 @@
       "imported-facts",
       "summary-from-lead",
       "a9-place",
-      "filed-by-span-and-subject"
+      "filed-by-span-and-subject",
+      "filed-from-p361"
     ],
-    "note": "The same refusal as its Mozambican sibling: `P361` names Q609836, the Portuguese Colonial War, and this war ends on 10 September 1974, four and a half months after this atlas closes that record at the Carnation Revolution. Filed under `decolonisation-of-africa`, whose span and lane it is inside. The atlas already holds this war's first day as `guinea-war-begins-1963` and its declaration as `guinea-bissau-declares-independence-1973`."
+    "note": "A6, A8: the item's P361 names the Portuguese Colonial War, of which this is one of the three theatres; decolonisation-of-africa comes off because the colonial war is filed under it."
   },
   "wikidata": "Q2609193",
   "sitelinks": {
@@ -59,5 +60,5 @@
   "region": null,
   "category": "war",
   "actors": [],
-  "parent": "decolonisation-of-africa"
+  "parent": "portuguese-colonial-war-1961-1974"
 }

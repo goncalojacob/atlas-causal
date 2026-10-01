@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-29",
+  "revised": "2026-10-01",
   "review": {
     "status": "draft",
     "flags": [
@@ -27,7 +27,8 @@
       "summary-from-lead",
       "filed-from-p361",
       "a15-category-from-p31"
-    ]
+    ],
+    "note": "A6, A8: the item's P361 names the First World War as well, whose span contains this one; neither umbrella reaches the other, so the record carries both."
   },
   "origin": {
     "tool": "wikidata"
@@ -66,7 +67,10 @@
   "place": "finland-q33",
   "region": "europe",
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": "russian-civil-war",
+  "parent": [
+    "russian-civil-war",
+    "world-war-i"
+  ],
   "category": "war",
   "actors": [
     {
