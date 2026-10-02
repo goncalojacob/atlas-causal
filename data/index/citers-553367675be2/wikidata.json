@@ -2564,6 +2564,12 @@
     },
     {
       "dissent": false,
+      "id": "agadir-crisis",
+      "kind": "event",
+      "locator": "Q164771"
+    },
+    {
+      "dissent": false,
       "id": "algerian-war",
       "kind": "event",
       "locator": "Q200790"
@@ -6314,6 +6320,12 @@
     },
     {
       "dissent": false,
+      "id": "first-moroccan-crisis",
+      "kind": "event",
+      "locator": "Q167455"
+    },
+    {
+      "dissent": false,
       "id": "first-portuguese-republic-1910-1926",
       "kind": "event",
       "locator": "Q167360"
@@ -9647,6 +9659,12 @@
       "id": "treaty-of-bucharest",
       "kind": "event",
       "locator": "Q500067, P31 Q625298"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-fes",
+      "kind": "event",
+      "locator": "Q931982"
     },
     {
       "dissent": false,

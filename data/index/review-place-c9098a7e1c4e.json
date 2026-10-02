@@ -6481,6 +6481,34 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "fez-morocco",
+      "kind": "place",
+      "names": [
+        "Fez",
+        "Fez, Morocco"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 3,
       "id": "finland-q33",
@@ -20278,6 +20306,34 @@
       "kind": "place",
       "names": [
         "Tambov Governorate"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "tangier",
+      "kind": "place",
+      "names": [
+        "Tangier",
+        "Tânger"
       ],
       "origin": {
         "tool": "assistant"

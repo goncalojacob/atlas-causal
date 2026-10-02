@@ -1802,6 +1802,12 @@
     },
     {
       "dissent": false,
+      "id": "agadir-crisis--world-war-i--precondition-of",
+      "kind": "edge",
+      "locator": "\"Agadir Crisis\", revision 1376783721"
+    },
+    {
+      "dissent": false,
       "id": "algerian-war--angola-war-begins-1961--precondition-of",
       "kind": "edge",
       "locator": "\"Algerian War\", revision 1373081356"
@@ -4598,6 +4604,12 @@
     },
     {
       "dissent": false,
+      "id": "entente-cordiale--treaty-of-fes--precondition-of",
+      "kind": "edge",
+      "locator": "\"Treaty of Fes\", revision 1361628067"
+    },
+    {
+      "dissent": false,
       "id": "eritrean-war-of-independence--eritrean-ethiopian-war--precondition-of",
       "kind": "edge",
       "locator": "\"Eritrean–Ethiopian War\", revision 1372677015, § lead"
@@ -4949,6 +4961,18 @@
       "id": "first-matabele-war--second-matabele-war--precondition-of",
       "kind": "edge",
       "locator": "\"First Chimurenga\", revision 1370619280, § The War in Matabeleland"
+    },
+    {
+      "dissent": false,
+      "id": "first-moroccan-crisis--agadir-crisis--caused",
+      "kind": "edge",
+      "locator": "\"First Moroccan Crisis\", revision 1370619540"
+    },
+    {
+      "dissent": false,
+      "id": "first-moroccan-crisis--world-war-i--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Moroccan Crisis\", revision 1370619540"
     },
     {
       "dissent": false,
@@ -10568,6 +10592,18 @@
     },
     {
       "dissent": false,
+      "id": "agadir-crisis",
+      "kind": "event",
+      "locator": "\"Agadir Crisis\", revision 1376783721"
+    },
+    {
+      "dissent": false,
+      "id": "agadir-crisis",
+      "kind": "event",
+      "locator": "\"Agadir Crisis\", revision 1376783721, first sentence: \"in July 1911\""
+    },
+    {
+      "dissent": false,
       "id": "algerian-war",
       "kind": "event",
       "locator": "\"Algerian War\", revision 1373081356"
@@ -14246,6 +14282,18 @@
     },
     {
       "dissent": false,
+      "id": "first-moroccan-crisis",
+      "kind": "event",
+      "locator": "\"First Moroccan Crisis\", revision 1370619540"
+    },
+    {
+      "dissent": false,
+      "id": "first-moroccan-crisis",
+      "kind": "event",
+      "locator": "\"First Moroccan Crisis\", revision 1370619540, first sentence: \"between March 31, 1905, and April 7, 1906\""
+    },
+    {
+      "dissent": false,
       "id": "first-portuguese-republic-1910-1926",
       "kind": "event",
       "locator": "\"First Portuguese Republic\", revision 1370244290"
@@ -17681,6 +17729,12 @@
       "id": "treaty-of-bucharest",
       "kind": "event",
       "locator": "\"Treaty of Bucharest (1913)\", revision 1359715572"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-fes",
+      "kind": "event",
+      "locator": "\"Treaty of Fes\", revision 1361628067"
     },
     {
       "dissent": false,

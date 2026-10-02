@@ -843,6 +843,15 @@
         }
       ]
     },
+    "agadir-crisis--world-war-i--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "algerian-war--angola-war-begins-1961--precondition-of": {
       "from": "git",
       "versions": [
@@ -2964,6 +2973,15 @@
         }
       ]
     },
+    "entente-cordiale--treaty-of-fes--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "eritrean-war-of-independence--eritrean-ethiopian-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -3281,6 +3299,24 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "first-moroccan-crisis--agadir-crisis--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "first-moroccan-crisis--world-war-i--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
