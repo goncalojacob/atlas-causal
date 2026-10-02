@@ -24072,6 +24072,65 @@ browser failure did not reproduce, here or on the runner, so this fire reads 313
 where the previous stand carried it as standing.
 
 ## Milestones landed
+
+**M42b batches 78 to 81 — eleven active events, three edges, and africa before 1800 given a
+method, 2 October.** The 07:36Z fire. Four batches off two sweeps, and the two things worth
+carrying forward are measurements rather than records.
+
+**The cache sweep is run and the answer is no.** Move 5 of the batch-72 stand had been unspent
+for three fires: nobody had swept the 3,000-odd cached Wikipedia leads for a sentence joining
+two events already on disk, and it costs no main, no import and no API call. Run — 2,037
+cached leads, 1,299 of them an active record's own item, 3,883 sentences through
+`tools/import/chronology.mjs` — it returns **24 rows and not one edge**. Ten are
+`covid-19-pandemic-in-<country>` saying it is *part of* the pandemic, which is a filing fact;
+four are a name matching something that is not an event; three name a held event as a yardstick
+(*"the largest refugee crisis since World War II"*); one is a homonym the span could not part;
+two are deviation 1539 exactly. **A lead says what a thing was, not what caused it**, and the
+sweep that would pay is the same one over article bodies — which is a fetch per record and is
+how batches 73, 74 and 80 got their edges.
+
+**Africa before 1800 has a vein, and it is the forward direction.** Batches 76 and 77 proved
+the `P361` lists of what the atlas holds are exhausted for that cell; the question nobody had
+asked is the other way round. Items of a class the seeds table knows, `P17` a country on the
+African continent, dated before 1800, with an English article: **115 candidates**, 11 in the
+15th century, 44 in the 16th, 39 in the 17th and 19 in the 18th — and a third of the class
+table was never asked, because the first of three chunks timed out at 504 three times. **Of the
+115, exactly one has a `P361` the atlas holds**, so the vein needs umbrellas: `Q430726` would
+hold nine of them, `Q118929718` eight, `Q133886090` seven. That is the next fire's first move
+and it costs one main per umbrella, which A6 allows a batch to do if it says why — and the why
+is that africa is 55 events short of the 303 that lifts A15(1)'s pause and cannot get there at
++0 main.
+
+**What landed.** Eleven active events, **+0 main, seventh batch running**: three placeless
+actions of the Dutch–Portuguese War in asia's 17th century (78); the siege of Jacmel and the
+action of 1 January 1800 in the Caribbean (79); the War of Jenkins' Ear's Florida and Georgia
+land war — `siege-of-st-augustine-1740`, `battle-of-bloody-mose`, `invasion-of-georgia-1742`,
+`battle-of-bloody-marsh` — and `attacks-on-fuerteventura-in-1740` in africa (80); and
+`battle-of-porto-praya` off Cape Verde (81). **Three edges**, all in batch 80 and all from two
+articles at the revisions the records cite, and all three inside one umbrella, so A15(11)'s
+crossing count is level at 615. Two places written by hand: `fort-mose`, because the item
+carries its own `P625` and names no located item a tool can read a name off, and **`praia`,
+because no lane polygon reaches Cape Verde** — `regions.json` is Natural Earth 110m land and
+the archipelago is 570 km offshore — which closes one of deviation 1346's ocean islands with
+the override CLAUDE.md keeps for exactly that.
+
+**Three refusals worth the space.** `Q10369402` *Second Battle of Salvador* imported cleanly and
+was dropped: it is the record this atlas already has as `siege-of-salvador-1638` under
+`Q932845`, and **Wikidata holds one event under two items** whose labels contradict each other
+(*First* with `P580` May 1638, *Second* with `P585` April 1638) — the import's held check is by
+item id and cannot see it, though the redirect it already flags would (deviation 1549).
+`Q4677387` and `Q4677277` were created and dropped as **europe-lane** records, which A15(1)
+pauses: they are children of an americas umbrella, which is how they got written at all, and
+**the inverse sweep's lane is the umbrella's and not the candidate's** (deviation 1548). And a
+fourth edge was read and refused on a homonym: *"formally ratified by Spain in the subsequent
+Treaty of Madrid"* is the Anglo-Spanish treaty of October 1750, and the Treaty of Madrid this
+atlas holds is the Spanish–Portuguese one of 13 January (deviation 1550).
+
+**Deviations 1547 to 1551**, and 1541 to 1546 are M42's. 1547: `statesACause` returned true on
+*"enforcing United Nations Security Council resolutions"* because `CAUSAL_MARKERS` holds
+`forcing` and matches it as a substring. 1551: a backtick in a `git commit -m` string is a
+command substitution, and batch 81's message lost the word it quoted.
+
 M42b started 2026-10-02T07:36:48Z by scheduled
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
