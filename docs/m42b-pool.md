@@ -21092,3 +21092,287 @@ data/index/`. The `--index` identity step is skipped on a branch push, as always
 `node tools/validate.mjs --index` was clean at this head here. Runs 2388, 2389 and 2390 on this
 fire's intermediate heads were **cancelled by the next push**, which is the workflow's own
 concurrency and not a failure.*
+
+## Batch 82 — the Regency of Algiers against the Sharifian dynasties, and the question asked the other way round
+
+**Move 1 of the batch-81 stand, with the four umbrellas it listed read first.** Batch 81 found
+africa before 1800 by asking a *forward* question — items of a class the seeds table knows,
+`P17` a country on the African continent (`?country wdt:P30 wd:Q15`), dated before 1800 — and
+left a table of the umbrellas its 115 candidates pointed at. Two of those four turn out to be
+writable and two not:
+
+| item | English article | own dates | verdict |
+| --- | --- | --- | --- |
+| `Q28493960` *Conflicts between the Regency of Algiers and the Sharifian dynasties* | yes, under the title *Conflicts between the Regency of Algiers and Morocco* | `P580` 1550, `P582` 1795 | **written by the import** |
+| `Q340075` *Moroccan–Portuguese conflicts* | yes | **none at all** — no `P580`, `P582` or `P585` | batch 83, by hand under A6 |
+| `Q132132698` *Barbary–Portuguese conflicts* | yes | 1617–1819 | open, and the next one to take |
+| `Q86667216` *Spanish–Algerian conflicts* | **no** | 1516–1792 | **A2 refuses it**: there is no article to read |
+
+**And the sweep that found the children is not batch 81's.** Asking `?item wdt:P361 ?u` of those
+four directly — an English article, a `P580` or `P585` before 1800 — returns **64 candidates and
+the atlas holds none of them**, where batch 81's `P17` query had said the same four umbrellas
+would hold nine, three, two and two of its 115. `P17` is simply not set on most of them. The
+inverse-`P361` sweep of batch 77 could not see them either, because an umbrella the atlas does
+not hold has no children to walk. **Three sweeps, three different answers, and the cheapest of
+the three had never been run**: ask the umbrella for its children rather than the world for its
+events.
+
+### What was imported
+
+The umbrella and **21 of its 22 children before 1800**, through
+`tools/import/wikidata.mjs --import`, the umbrella in a batch of its own first so that the
+children's `P361` would find it held:
+
+| | |
+| --- | --- |
+| events created | 22 — `conflicts-between-the-regency-of-algiers-and-morocco` and 21 children |
+| **main** | **+1**, the umbrella, and nothing else |
+| places created | 13 by the import, 1 by hand (`wadi-al-laban`) |
+| leads cached | 23 |
+| refused | 1 — `Q106959443` *Maghrebi War*: no place record for its location, no lane reachable from its point and no lane named for it in the seeds file, so a placeless event has nothing to carry |
+| placeless, lane written by the import | 3 — `expedition-to-touat-1557`, `oran-expedition-1707`, `capture-of-the-rif-1792` |
+| `article-is-redirect` (A15(8)) | 2 — `battle-of-djidioua` (sitelink lands on *Battle of Moulouya*) and `laghouat-rebellion-1727` (on *Laghouat Expedition (1708–1713)*) |
+
+**A6's reason for the one main**, said plainly: africa's 16th, 17th and 18th centuries held 17,
+14 and 17 active events against europe's 45, 109 and 62, A15(1)'s pause on Europe before 1900
+does not lift until africa and asia each reach 303, and africa sat at 248. One umbrella buys
+twenty-one children at +0 each. It is the case A6's escape clause was written for and the
+clause is quoted here rather than assumed.
+
+**`wadi-al-laban` is written by hand and the reason is naming, not geometry.** `Q4117011` carries
+its own `P625` and nothing a tool can turn into a place: no settlement, no country with a usable
+point, no class the places table knows. The name is the one its own article gives — *"It took
+place north of Fes, at Wadi al-Laban, an affluent of the Sebou River"* — and the point is the
+event item's own.
+
+### The one edge, and the six sentences refused
+
+`campaign-of-tlemcen-1557 --precondition-of--> battle-of-wadi-al-laban`, cited to *"Battle of
+Wadi al-Laban"*, revision 1370276629, §§ Background and Battle: the Saadians held Tlemcen and
+were forced out of it, and *"the Ottoman force pursued the retreating Saadian army into
+Morocco"* to the battle. `precondition-of` and not `caused`, because the article gives the
+sultan's assassination and Hasan Pasha's reappointment as what set the march going. **Two
+siblings under one umbrella, so it crosses no umbrella** (A15(11)).
+
+A15(5) refused six sentences, and five of the six are the same two mistakes:
+
+1. **`battle-of-al-kawiya`** — *"the Moroccan forces continued their raids into Algerian
+   territory resulting in an engagement and defeat in 1694 and another in 1696 in the Battle of
+   Tlemcen"*. Deviation 1539: the marker attaches the raids to the engagements and not the 1696
+   battle to the 1700 one.
+2. **`battle-of-moulouya`** — *"The Moroccan incursions to the east of the Moulouya upstream …
+   prompted Hadj Chabane to declare war"*. The same: `capture-of-oujda-1647` is named two
+   sentences earlier and the marker does not reach it.
+3. **`battle-of-tlemcen-1696`** — *"Previous attempts to invade Algerian territory, such as the
+   Battle of Djebel Amour and the Battle of Moulouya, ended in victories for the Algerian
+   forces."* Background, and no cause claimed.
+4. **`battle-of-tadla`** — *"An attempt to invade the country ensued the following year in the
+   Battle of Wadi al-Laban."* "Ensued" is the refusal class exactly, and the cause the sentence
+   before it names is the assassination of Mohammed ash-Sheikh, which is no event here.
+5. **`capture-of-the-rif-1792`** — *"the Algerians were able to gain possession and recognition
+   of sovereignty over a portion of eastern Morocco around Oujda, initially after a set of
+   victories … such as the Battle of Moulouya and the Siege of Oran"*. What the victories are
+   said to have won is a possession and not the 1792 event.
+6. **`siege-of-oran-1700-1701`** — *"his action against Oran was a face-saving measure following
+   his defeat at al-Jadwiya"*. This is A15(5)'s third-event clause and the one refusal that is
+   not a false positive: the article states a cause, and names the Battle of Chelif (al-Jadwiya)
+   as it. The atlas does not hold that battle, so the edge is written from it or not at all, and
+   not at all is where it stands.
+
+**Deviation 1552. An item with two `P585` values produces an inverted interval, and rule 15 is
+what catches it.** `Q107354224` *Oran expedition* carries `P585` 1703 and `P585` 1707, both at
+normal rank; the import wrote `when.start` 1707 and `when.end` 1703 and the validator refused
+the record. The fix is A7 and A15(4): the article's own title is *Oran expedition (1707)* and
+its first sentence reads *"The Oran Expedition in 1707 …"*, so the span is 1707 and the record
+carries `interval-from-article` beside its flags. **The import should refuse an interval it has
+ordered backwards rather than write it**, which is a one-line guard in `intervalFor()` and is
+`origin/m42`'s file to change, not this lane's.
+
+## Batch 83 — the Moroccan–Portuguese conflicts, 1415 to 1769, and the year the atlas was supposed to start in
+
+**The atlas's own subject is 1415 to 1580 and before this batch its earliest active event was
+1492.** `data/events/` held nothing of the Moroccan coast, nothing of Ceuta, nothing of Alcácer
+Quibir; the africa lane held nothing at all before 1800 and nothing in the 15th century. The
+vein batch 82's sweep found closes that, and it is the largest single thing this lane has
+imported.
+
+### The umbrella, written by hand under A6
+
+`Q340075` carries **no `P580`, `P582` or `P585` at all**, so `tools/import/wikidata.mjs` has no
+date to put on a timeline and cannot take it. A6 lets a run write a period umbrella from its own
+Wikipedia article, and `moroccan-portuguese-conflicts` is written that way, as `kongo-civil-war`
+was: the span **1415–1769** is the first sentence of revision 1370628730, which the summary
+quotes — *"Moroccan–Portuguese conflicts refer to a series of military engagements between
+Morocco and Portugal throughout history from 1415 to 1769"* — and the flags say
+`umbrella-written-from-article`. **The place is empty and the lane is written**: the item's only
+`P17` is the present-day Kingdom of Morocco, whose inception A15(6) puts 187 years after the
+span ends, and A15(6) is obeyed rather than worked around. +1 main, the second and last of this
+fire.
+
+### What was imported under it
+
+| | |
+| --- | --- |
+| items put to the import | 25, every `P361` child of `Q340075` before 1800 with an English article |
+| events created | 25, **all +0 main**, all filed under the umbrella from their own `P361` |
+| refused | **none** |
+| places created | 14 |
+| leads cached | 40 |
+| earliest | `portuguese-conquest-of-ceuta`, 1415-08-21 — the atlas's new first event |
+| latest | `siege-of-mazagan-1769`, the loss the umbrella's article says ended the conflicts |
+| placeless, lane written by the import | 6, every one of them A15(6) refusing `Q1028` for a pre-1956 event |
+
+### Two edges, one of them across an umbrella
+
+1. `conquest-of-asilah --enabled--> portuguese-conquest-of-tangier`, four days apart in August
+   1471, cited to *"Portuguese conquest of Tangier"*, revision 1370704790, § The Conquest:
+   *"Fearing the same fate as Asilah, where 2,000 residents were killed and more 5,000 sold into
+   captivity, the civilians of Tangier fled the city."* A stated reason, naming the event
+   feared. `enabled` and not `caused`, because the article gives the king's order as what set
+   the campaign going — *"Shortly after the conquest of Asilah … Afonso V ordered Dom João … to
+   take Tangier"*, which on its own is the chronology A15(5) refuses. Two siblings: no crossing.
+2. `capture-of-fez-1576 --precondition-of--> battle-of-alcacer-quibir`, cited to *"Capture of
+   Fez (1576)"*, revision 1370608603: *"Meanwhile, al-Mutawakkil fled first to what is now Spain
+   and then to Portugal, where King Sebastian promised support for an attempt to recover the
+   throne. This led to the Portuguese expedition of 1578 and the Battle of Ksar al-Kabir …"*
+   **This is the fire's one edge across an umbrella** (A15(11)): the near end is filed under
+   batch 82's Algiers–Sharifian umbrella and the far end under batch 83's Moroccan–Portuguese
+   one, so the two veins of this fire are joined by an argument and not only by a lane.
+
+**Deviation 1554. The sweep reads a record's `title` and `aliases`, so an article that names a
+held event by any of its other names is invisible to it.** That second edge is the proof: the
+quote calls the battle *"the Battle of Ksar al-Kabir (also known as the Battle of the Three
+Kings)"* and the record is `battle-of-alcacer-quibir`, so `namesHeldEvents` matched nothing and
+both the strict and the loosened sweep returned no hit for it. It was found by a plain regular
+expression over causal markers, read by eye. The fix is not in `chronology.mjs`: it is that a
+record's `aliases` should hold the names its own article gives it — the Alcácer Quibir record's
+lead names both alternatives and its `aliases` is `[]`, as every imported record's is.
+
+**Deviation 1555. A record written by hand must use the importer's own quotation marks.** This
+umbrella's summary opens with the import's framing — *The English Wikipedia article "X", at
+revision N, opens: "…"* — and `src/summary.js` finds that framing with a **literal** regular
+expression, `OPENS`. Batch 83 wrote the article's name and the quoted lead in typographic quotes,
+so `readSummary` could not split the source's account from the importer's note, and the record's
+search entry carried the framing: `tests/search.test.mjs` → *"an imported event is indexed by the
+source's own lead, not by the framing around it"* failed on exactly that, naming the two phrases
+only the importer writes. `kongo-civil-war`, written the same way a fire earlier, had it right.
+The characters are the whole of the defect and the whole of the fix.
+
+**Deviation 1553. The lane deriver puts Ceuta in Europe.** `portuguese-conquest-of-ceuta` and
+`siege-of-ceuta-1419` came out of the import in the **europe** lane, which A15(1) has paused,
+because `data/geo/regions.json` is Natural Earth 110m and at that resolution the nearest lane
+polygon to 35.89 N, 5.31 W is Iberia: the Strait of Gibraltar is 14 km wide and the point is
+nearer Spain's coastline than Africa's. The override CLAUDE.md keeps for a place the polygons
+put in the wrong lane is written on both place records, with the reason in `regionNote`, and the
+africa count is two higher for it. **Deviation 1346's ocean islands are about a point no polygon
+reaches; this is a point two polygons both reach.** Every other strait in the atlas's reach is
+worth the same look: Gibraltar, the Bosphorus, Bab-el-Mandeb, Hormuz, Malacca.
+
+### What was refused here, and one of the refusals is an opening
+
+- **`battle-of-alcacer-quibir`'s own aftermath** — *"The defeat of Portugal and disappearance of
+  the childless Sebastian led to the end of the Aviz dynasty, and the integration of the country
+  into the Iberian Union"* — is a stated cause whose far end **the atlas does not hold**. Nor
+  does it hold the 1580 Portuguese succession crisis, which the umbrella's article calls the
+  battle a catalyst for. Two of the best-attested consequences in the whole period, and no
+  record to point at: **the Iberian Union and the 1580 succession crisis are the next umbrellas
+  worth a main**, and they would each arrive with an edge already written.
+- **`portuguese-conquest-of-ceuta`** — *"Ceuta was transferred to Spain under the Treaty of
+  Lisbon in 1668 after the Restoration War"* — names `treaty-of-lisbon` and
+  `portuguese-restoration-war`, both held, and states no cause: "after". An edge that would have
+  crossed an umbrella, refused for the right reason.
+- **`battle-of-the-alcaides`** — *"The Battle of Alcaides allowed the Portuguese to tighten
+  their grip on the region and encroach on Marrakesh."* "Encroach on Marrakesh" is the process
+  the `raid-of-marrakesh-1515` article describes in the same words for the years before the
+  raid; it is not the raid, which that article dates to a failed agreement and an army sent back
+  in October 1514. A near miss and not an edge.
+
+## Where the run stands, for the fire that picks it up
+
+*2 October, the 09:36Z fire. **Two batches, 48 active events, two umbrellas, three edges and the
+year 1415.** Africa before 1800 was the lane that trailed most and had looked finished twice;
+it is now three events short of lifting A15(1)'s pause on its own.*
+
+### The numbers
+
+| | at the fire's head | after the merge of `origin/m42` | after 82 | after 83 |
+| --- | --- | --- | --- | --- |
+| active events | 1,464 | 1,468 | 1,490 | **1,516** |
+| main | 234 | 234 | 235 | **236** |
+| largest connected component | 786 | 790 | 790 | **790** |
+| components | 448 | — | 469 | **493** |
+| events with no edge | 348 | — | 368 | **390** |
+| **edges crossing an umbrella** | 615 | 618 | 618 | **619** |
+| edges inside one umbrella | 611 | 613 | 614 | **615** |
+| active edges | 1,226 | 1,231 | 1,232 | **1,234** |
+
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | **12 / 1** | — | 5 / 3 | 21 / 6 |
+| 16th c. | 45 / 2 | **38 / 3** | 14 / 2 | 53 / 6 | 150 / 13 |
+| 17th c. | 109 / 3 | 22 / 1 | 22 / 0 | 71 / 6 | 224 / 10 |
+| 18th c. | 62 / 3 | 24 / 0 | 19 / 0 | 84 / 2 | 189 / 5 |
+| 19th c. | 39 / 9 | 25 / 1 | 8 / 6 | 62 / 8 | 134 / 24 |
+| 20th c. | 245 / 60 | 102 / 24 | 164 / 37 | 88 / 30 | 599 / 151 |
+| 21st c. | 52 / 7 | 77 / 7 | 31 / 12 | 39 / 1 | 199 / 27 |
+| **all** | **556 / 86** | **300 / 37** | **258 / 57** | **402 / 56** | **1516 / 236** |
+
+**Africa 300 and asia 258 against A10's 303.** Europe is 556, exactly what the fire found it at.
+The africa 15th century went from nothing to twelve and its 16th from 17 to 38.
+
+### The next fire's moves, in order
+
+1. **Finish africa: three events.** `Q132132698` *Barbary–Portuguese conflicts* (1617–1819, an
+   English article and its own dates) is the third of batch 82's four umbrellas and the import
+   can take it outright. Its `P361` children before 1800 are `Q125662483` *Action of 26 May
+   1789*, `Q116609273` *Battle of the Bay of Velez*, `Q111208948` *Sack of Madeira*,
+   `Q138022960` *Portuguese expedition to Tripoli*, `Q135153487` *Action of 15 August 1799* and
+   `Q132175198` *Sinking of the Nossa Senhora da Conceição* — six, of which the lane deriver
+   will keep the African ones. **One umbrella and six children lifts A15(1)'s pause on the
+   africa side**, and the batch note must say that is what it is doing.
+2. **Then asia, which is 45 short and has never been asked the question that worked.** The
+   `P361`-children sweep of batch 82 is the cheapest query in this document and it has only been
+   pointed at four African umbrellas. Point it at the Asian ones: `Q133886090` *Spanish–Ottoman
+   Wars* alone returned twenty rows before 1800 in batch 82's first query and they were left
+   because their ground is Mediterranean rather than African. Asia's 18th century holds nineteen
+   events and **no main at all**, and its 17th holds twenty-two and none either.
+3. **The Iberian Union and the 1580 succession crisis are two mains that arrive with edges
+   already written** — see batch 83's refusals. `battle-of-alcacer-quibir`'s own article states
+   the cause of both in one sentence, and the atlas holds the battle now. This is the best
+   value left anywhere in the partition: a main that closes a refusal is not the same purchase
+   as a main that buys children.
+4. **`aliases` is empty on every imported record and deviation 1554 is what that costs.** A
+   record whose article names it twice over — *Battle of Ksar al-Kabir*, *Battle of the Three
+   Kings*, *Battle of Wadi al-Makhazin* — is found by none of the sweeps under those names. The
+   import may write `names` on a draft record under I8; whether that clause reaches an event's
+   `aliases` is a question for `origin/m42`'s file and not a change this lane should make alone.
+5. **Every strait is a deviation 1553.** Ceuta is fixed; Gibraltar's other shore, the
+   Bosphorus, Bab-el-Mandeb, Hormuz and Malacca are all places where two lane polygons are
+   within 110m resolution of one point, and the atlas has records at four of the five.
+6. **The chronology sweep over article bodies earns its keep and the sweep over leads does not.**
+   This fire read 48 article bodies and wrote three edges; the 07:36Z fire read 1,299 cached
+   leads and wrote none. Move 6 of that fire's stand is confirmed: fetch the body.
+7. **Still open, unchanged**: C8; deviations 1323, 1345, 1346's remaining ocean islands, 1348's
+   lane guard, 1353, 1358, 1361, 1362, 1365, 1366, 1377, 1383, 1386, question 11 (the Nine
+   Years' War, `Q152218`), question 12, `Q718893`, `Q20639061`, `Q5037062`, `Q4677270`,
+   `Q4677390`, the nine atlas umbrellas with no `wikidata`, the Gulf Coast campaign umbrella
+   (`Q5617470`), batch 48's Chilean four, the Almagrista eight and their missing decree, batch
+   52's three 16th-century refusals, `Q1226252` *tied island*, `arauco-war`'s interval,
+   `Q3051491` *Capture of Valdivia*, the place pass on records that already exist (M42's),
+   `capture-of-luanda`'s `wikipedia.en` redirecting to *Dutch Loango-Angola*, `Q2915203`
+   *Ethiopian–Adal War*, `Q133092642` *Battle of Vannarpannai*, the Italian Wars' nine children
+   to each other, the 22 Europe-lane children of `ottoman-habsburg-wars`, the refiling question
+   batch 64 left open on `siege-of-malacca-1606`, `battle-of-cape-rachado` and
+   `siege-of-malacca-1640-1641`, `kandyan-commerce-raiding-against-portugal-1612-1613`'s place,
+   `Q10369402` *Second Battle of Salvador*, `Q138011120` *South Atlantic campaign*, `Q2713453`
+   *Voyage of the Glorioso*, `Q4677387` and `Q4677277`. **Newly open**: `Q106959443` *Maghrebi
+   War*, refused for want of a lane; `Q86667216` *Spanish–Algerian conflicts*, which A2 refuses
+   for want of an English article and whose eight children are therefore unfilable; the
+   remaining 36 of batch 82's 64 candidates, which are Mediterranean rather than African ground.
+8. **Deviation numbers: 1555 is the highest taken.** This fire used **1552** (two `P585` values
+   make an inverted interval), **1553** (two lane polygons reach one point and the nearer one is
+   the wrong continent), **1554** (the sweep is blind to a record's other names) and **1555** (a
+   hand-written summary must use the importer's own quotation marks or `src/summary.js` cannot
+   split it). Read
+   deviation 1484 before taking the next one and run its three greps over **both** pool files and
+   `STATUS.md`.

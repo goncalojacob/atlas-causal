@@ -25128,6 +25128,43 @@ both level, which is the measurement saying the atlas is gaining events faster t
 Africa **245** and Asia **255** against A10's 303, so A15(1)'s pause holds.
 
 M42b started 2026-10-02T04:36:39Z by scheduled
+**M42b batches 82 and 83 — africa before 1800, from nothing to three events short, 2 October.**
+Two batches, **48 active events, two umbrellas, three edges and the year 1415**. **Batch 82**
+read batch 81's four African umbrellas before taking any of them: `Q28493960` has an English
+article and its own dates and the import wrote it; `Q340075` has an article and **no date at
+all**; `Q132132698` has both and is still open; `Q86667216` has **no English article**, which
+A2 refuses. Then the sweep nobody had run — `?item wdt:P361 ?u` asked of those four directly —
+returned **64 candidates and the atlas held none of them**, where batch 81's blunter `P17` query
+had promised sixteen. The umbrella and **21 of its 22 children before 1800** are in, 13 places
+from the import and `wadi-al-laban` by hand; `Q106959443` *Maghrebi War* refused for want of a
+lane. One edge, `campaign-of-tlemcen-1557` → `battle-of-wadi-al-laban`, `precondition-of`.
+**A15(5) refused six sentences**, five of them deviation 1539's mistake again and one of them
+the third-event clause working exactly as written: the Siege of Oran (1700–1701) names the
+Battle of Chelif as its cause and the atlas does not hold that battle, so the edge is not
+written at all. **Batch 83** is the Moroccan–Portuguese conflicts, 1415 to 1769: the umbrella
+**written by hand under A6** because `Q340075` carries no `P580`, `P582` or `P585`, its span
+quoted from its own article at revision 1370628730, its place left empty because A15(6) refuses
+`Q1028` for a pre-1956 event — and **25 children imported under it, none refused, all +0 main**,
+with 14 places. **The atlas now begins where its own brief says it begins**: before this batch
+the earliest active event was 1492, the africa lane held nothing before 1800 and nothing in the
+15th century; `portuguese-conquest-of-ceuta` is 1415-08-21. Two edges, and the second of them is
+**this fire's one edge across an umbrella**: `capture-of-fez-1576` → `battle-of-alcacer-quibir`,
+`precondition-of`, which joins the fire's two veins by an argument. **Deviation 1552**: two
+`P585` values on one item make an inverted interval (`Q107354224`, start 1707 end 1703), caught
+by rule 15 and fixed from the article under A7. **Deviation 1553**: the lane deriver puts Ceuta
+in **europe**, because `data/geo/regions.json` is Natural Earth 110m and the nearest polygon to a
+point 14 km from Spain across the strait is Iberia; the override is written on both place records
+and every other strait deserves the same look. **Deviation 1554**: the chronology sweep reads a
+record's `title` and `aliases`, so an article naming a held event by another of its names is
+invisible to it — the crossing edge's own quote says *"the Battle of Ksar al-Kabir"* and was
+found by eye, not by the sweep. **Deviation 1555**: a hand-written summary must use the
+importer's own straight quotes or `src/summary.js` cannot split the source's account from the
+note; `tests/search.test.mjs` caught it.
+**The main count rose by exactly two, both of them umbrellas, and A6's reason is in both notes.**
+Largest component **790** and crossing count **619**. **Africa 300 and asia 258 against A10's
+303**, so A15(1)'s pause holds — and africa is now three events short of lifting it on its own,
+which the next fire should spend `Q132132698` on.
+
 M42b started 2026-10-02T09:37:29Z by scheduled
 
 **M42 batches 90 and 91 — the Moroccan question and the Bizerte crisis, 2 October.**
