@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "toyotomi-hideyoshi-s-1st-korean-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q122846639",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Toyotomi Hideyoshi's 1st Korean Campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q122846639"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Imjin War\", revision 1377975613"
+    }
+  ],
+  "title": "Toyotomi Hideyoshi's 1st Korean Campaign",
+  "summary": "The English Wikipedia article \"Imjin War\", at revision 1377975613, opens: \"The Imjin War was a series of two Japanese invasions of Korea: an initial invasion in 1592 also individually called the \"Imjin War\", a brief truce in 1596 between the conflicts, followed by a second invasion in 1597 called the Chŏngyu War. The conflict ended in 1598 with the withdrawal of Japanese forces from the Korean Peninsula after a military stalemate in Korea's southern provinces.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q122846639, imported by tools/import/wikidata.mjs. The item's own description reads \"1592-1593 invasion of Joseon by Japan Toyotomi government\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1592,
+    "end": 1593,
+    "date": "1592-05-23"
+  },
+  "place": "joseon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "imjin-war"
+}

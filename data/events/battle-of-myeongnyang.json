@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-myeongnyang",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q385677",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Myeongnyang",
+    "pt": "Batalha de Myeongnyang"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q385677"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Myeongnyang\", revision 1370450929"
+    }
+  ],
+  "title": "Battle of Myeongnyang",
+  "summary": "The English Wikipedia article \"Battle of Myeongnyang\", at revision 1370450929, opens: \"The Battle of Myeongnyang was fought on October 26, 1597 between the Joseon Navy led by Admiral Yi Sun-sin and the Japanese navy in the Myeongnyang Strait, near Jindo Island, off the southwest corner of the Korean Peninsula. With only 13 ships remaining from Admiral Wŏn Kyun's disastrous defeat at the Battle of Chilcheollyang, Admiral Yi held the strait as a \"last stand\" battle against the Japanese navy, who were sailing to support their land army's advance towards the Joseon capital of Hanyang.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q385677, imported by tools/import/wikidata.mjs. The item's own description reads \"1597 fought during the Japanese invasions of Korea\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1597,
+    "end": 1597,
+    "date": "1597-10-26"
+  },
+  "place": "myeongnyang-strait",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "toyotomi-hideyoshi-s-2nd-korean-campaign"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-jeokjinpo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q626280",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Jeokjinpo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q626280"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Jeokjinpo\", revision 1370444178"
+    }
+  ],
+  "title": "Battle of Jeokjinpo",
+  "summary": "The English Wikipedia article \"Battle of Jeokjinpo\", at revision 1370444178, opens: \"The Battle of Jeokjinpo was fought on 8 May 1592. After the Battle of Happo, further reports of an additional 13 Japanese ships prevented Yi Sun-sin and his fleet from resting long on the morning of 8 May. Admiral Yi once again ordered his fleet to pursue the Japanese in the direction of Jinhae. The Korean forces caught up with the Japanese ships at Jeokjinpo. The Koreans easily sank 11 Japanese warships.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q626280, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the 1592 Japanese invasion of Korea\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1592,
+    "end": 1592,
+    "date": "1592-05-08"
+  },
+  "place": "joseon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "toyotomi-hideyoshi-s-1st-korean-campaign"
+}

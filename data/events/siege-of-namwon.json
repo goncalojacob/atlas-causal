@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-namwon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q625131",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Namwon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q625131"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Namwon\", revision 1370743867"
+    }
+  ],
+  "title": "Siege of Namwon",
+  "summary": "The English Wikipedia article \"Siege of Namwon\", at revision 1370743867, opens: \"The siege of Namwon was a military engagement that occurred from 23 September to 26 September 1597. It ended in Japanese victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q625131, imported by tools/import/wikidata.mjs. The item's own description reads \"1597 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1597,
+    "end": 1597,
+    "date": "1597-09-23",
+    "endDate": "1597-09-26"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "toyotomi-hideyoshi-s-2nd-korean-campaign"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "geoje",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q42057",
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Geoje",
+    "pt": "Geoje"
+  },
+  "sources": [],
+  "names": [
+    "Geoje"
+  ],
+  "where": {
+    "lon": 128.58861111111,
+    "lat": 34.850277777778,
+    "precision": "city",
+    "label": "Geoje"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

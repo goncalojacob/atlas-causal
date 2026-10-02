@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "yonan-county",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q213173",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Yonan County"
+  },
+  "sources": [],
+  "names": [
+    "Yonan County"
+  ],
+  "where": {
+    "lon": 126.08333,
+    "lat": 37.91667,
+    "precision": "region",
+    "label": "Yonan County"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

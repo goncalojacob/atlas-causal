@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-jinju-1593",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q484733",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Jinju (1593)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q484733"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Jinju (1593)\", revision 1376645524"
+    }
+  ],
+  "title": "Siege of Jinju (1593)",
+  "summary": "The English Wikipedia article \"Siege of Jinju (1593)\", at revision 1376645524, opens: \"The second siege of Jinju was a battle fought on 1593 at Jinju Fortress during the Imjin War. It occurred from 20 July to 27 July and ended in the massacre of the entire garrison and a substantial portion of the population. The Second Battle of Jinju became the origin of the Uwajima Ushi-oni Festival in Uwajima, Ehime Prefecture, Japan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q484733, imported by tools/import/wikidata.mjs. The item's own description reads \"1593 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1593,
+    "end": 1593,
+    "date": "1593-07-21",
+    "endDate": "1593-07-27"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "toyotomi-hideyoshi-s-1st-korean-campaign"
+}

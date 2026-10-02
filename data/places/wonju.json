@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "wonju",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q42131",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Wonju",
+    "pt": "Wonju"
+  },
+  "sources": [],
+  "names": [
+    "Wonju"
+  ],
+  "where": {
+    "lon": 127.92083333333,
+    "lat": 37.341666666667,
+    "precision": "city",
+    "label": "Wonju"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
