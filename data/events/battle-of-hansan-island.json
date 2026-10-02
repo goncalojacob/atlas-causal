@@ -1,61 +1,61 @@
 {
- "schema": 1,
- "id": "battle-of-hansan-island",
- "kind": "event",
- "status": "active",
- "supersededBy": null,
- "aliases": [],
- "authors": [
-  {
-   "name": "Wikidata import (tools/import/wikidata.mjs)",
-   "github": null
-  }
- ],
- "license": "CC-BY-SA-4.0",
- "created": "2026-10-02",
- "revised": null,
- "origin": {
-  "tool": "wikidata"
- },
- "review": {
-  "status": "draft",
-  "flags": [
-   "imported-facts",
-   "summary-from-lead",
-   "a9-place",
-   "filed-from-p361"
+  "schema": 1,
+  "id": "battle-of-hansan-island",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
   ],
-  "note": "A7: the item has a P580 and no P582, so the import wrote an open end and rule 24 refused the P361 the item itself asserts. The cited article, revision 1376900415, opens \"took place on 15 August 1592\", which states one day, so the end is 1592. The day stays the item's own 8 July: that and the article's 15 August are one day in two calendars and this run does not choose, so the span-vs-lead warning stands. Closed, the item's P361 files it under the 1st Korean campaign."
- },
- "wikidata": "Q487332",
- "sitelinks": {
-  "count": 14,
-  "on": "2026-10-02"
- },
- "wikipedia": {
-  "en": "Battle of Hansan Island"
- },
- "sources": [
-  {
-   "source": "wikidata",
-   "locator": "Q487332"
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
   },
-  {
-   "source": "wikipedia-en",
-   "locator": "\"Battle of Hansan Island\", revision 1376900415"
-  }
- ],
- "title": "Battle of Hansan Island",
- "summary": "The English Wikipedia article \"Battle of Hansan Island\", at revision 1376900415, opens: \"The Battle of Hansan Island and the following engagement at Angolpo took place on 15 August 1592. In two naval encounters, Korean Admiral Yi Sun-sin's fleet managed to destroy roughly 100 Japanese ships and halted Japanese naval operations along the southern coast.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q487332, imported by tools/import/wikidata.mjs. The item's own description reads \"naval battle (1592) in southern Korea during the First Japanese Invasion of Korea\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
- "when": {
-  "start": 1592,
-  "end": 1592,
-  "date": "1592-07-08"
- },
- "place": "hansando",
- "region": null,
- "regionNote": null,
- "category": "war",
- "actors": [],
- "parent": "toyotomi-hideyoshi-s-1st-korean-campaign"
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ],
+    "note": "A7: the item has a P580 and no P582, so the import wrote an open end and rule 24 refused the P361 the item itself asserts. The cited article, revision 1376900415, opens \"took place on 15 August 1592\", which states one day, so the end is 1592. The day stays the item's own 8 July: that and the article's 15 August are one day in two calendars and this run does not choose, so the span-vs-lead warning stands. Closed, the item's P361 files it under the 1st Korean campaign."
+  },
+  "wikidata": "Q487332",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Hansan Island"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q487332"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Hansan Island\", revision 1376900415"
+    }
+  ],
+  "title": "Battle of Hansan Island",
+  "summary": "The English Wikipedia article \"Battle of Hansan Island\", at revision 1376900415, opens: \"The Battle of Hansan Island and the following engagement at Angolpo took place on 15 August 1592. In two naval encounters, Korean Admiral Yi Sun-sin's fleet managed to destroy roughly 100 Japanese ships and halted Japanese naval operations along the southern coast.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q487332, imported by tools/import/wikidata.mjs. The item's own description reads \"naval battle (1592) in southern Korea during the First Japanese Invasion of Korea\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1592,
+    "end": 1592,
+    "date": "1592-07-08"
+  },
+  "place": "hansando",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "toyotomi-hideyoshi-s-1st-korean-campaign"
 }
