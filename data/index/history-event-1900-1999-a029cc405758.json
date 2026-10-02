@@ -22493,6 +22493,15 @@
         }
       ]
     },
+    "western-desert-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "white-revolution": {
       "from": "git",
       "versions": [

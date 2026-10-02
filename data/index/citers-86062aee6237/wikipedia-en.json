@@ -9482,6 +9482,24 @@
     },
     {
       "dissent": false,
+      "id": "western-desert-campaign--tunisian-campaign--caused",
+      "kind": "edge",
+      "locator": "\"Tunisian campaign\", revision 1375742094"
+    },
+    {
+      "dissent": false,
+      "id": "western-desert-campaign--tunisian-campaign--caused",
+      "kind": "edge",
+      "locator": "\"Western Desert campaign\", revision 1377719249"
+    },
+    {
+      "dissent": false,
+      "id": "western-desert-campaign--tunisian-campaign--caused",
+      "kind": "edge",
+      "locator": "\"Western Desert campaign\", revision 1377719249: \"The Axis forces retreated through Libya into Tunisia and fought the Tunisian campaign\""
+    },
+    {
+      "dissent": false,
       "id": "wheeler-s-surprise--battle-of-bloody-brook--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Bloody Brook\", revision 1374876685"
@@ -18377,6 +18395,12 @@
       "id": "warsaw-uprising",
       "kind": "event",
       "locator": "\"Warsaw Uprising\", revision 1372481662"
+    },
+    {
+      "dissent": false,
+      "id": "western-desert-campaign",
+      "kind": "event",
+      "locator": "\"Western Desert campaign\", revision 1377719249"
     },
     {
       "dissent": false,

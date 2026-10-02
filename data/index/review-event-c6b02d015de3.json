@@ -47435,7 +47435,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 2,
       "id": "tunisian-campaign",
       "kind": "event",
       "names": [
@@ -48801,6 +48801,43 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Warsaw Uprising"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "western-desert-campaign",
+      "kind": "event",
+      "names": [
+        "Desert War"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "north-african-campaign",
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361",
+          "a15-category-from-p31"
+        ],
+        "note": "A6, A8: `P361` is `Q218678`, held as `north-african-campaign`, the only parent — `world-war-ii` is reachable through it (deviation 1564). A9: the own-`P625` step reuses only and nothing stands at (28.95, 30.8333); `P276` `Q14314106` is written here as `western-desert`, so `P17` Q79 was never reached. A15(4): first sentence and title state no range, so `P580`/`P582` stand. A15(7): africa, from the item’s own point. A15(12): `P31` `Q831663` is `war`. No `P710`.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Western Desert campaign"
     },
     {
       "authors": [

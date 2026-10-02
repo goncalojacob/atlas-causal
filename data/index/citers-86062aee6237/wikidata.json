@@ -10250,6 +10250,12 @@
     },
     {
       "dissent": false,
+      "id": "western-desert-campaign",
+      "kind": "event",
+      "locator": "Q625798"
+    },
+    {
+      "dissent": false,
       "id": "wheeler-s-surprise",
       "kind": "event",
       "locator": "Q7992172"

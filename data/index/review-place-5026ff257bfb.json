@@ -22627,6 +22627,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "western-desert",
+      "kind": "place",
+      "names": [
+        "Western Desert",
+        "Deserto Ocidental"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "a9-place"
+        ],
+        "note": "Written for `western-desert-campaign`, which reaches it at A9’s second step: the first step, the item’s own `P625` at (28.95, 30.8333), reuses and never writes, and the one record within a degree, `alexandria`, folds to no name this item gives. The precision is the item’s own class, `P31` `Q8514`, desert, added to the class table in this batch at `region`. `P17`, `Q79`, was never reached. A15(3): a place carries no summary.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],

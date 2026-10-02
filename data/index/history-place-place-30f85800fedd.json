@@ -10966,6 +10966,15 @@
         }
       ]
     },
+    "western-desert": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "white-plains-new-york": {
       "from": "git",
       "versions": [

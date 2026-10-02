@@ -6793,6 +6793,15 @@
         }
       ]
     },
+    "western-desert-campaign--tunisian-campaign--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "white-revolution--iranian-revolution--precondition-of": {
       "from": "git",
       "versions": [
