@@ -4940,6 +4940,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "allied-invasion-of-sicily",
       "kind": "event",
       "origin": {
@@ -33605,6 +33606,46 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "north-african-campaign",
+      "kind": "event",
+      "names": [
+        "North Africa campaign"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "place-refused",
+          "a15-lane-from-point",
+          "a15-days",
+          "a15-category-from-p31",
+          "participants-from-p710",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A9, A15(6): no place. No `P625`; `P276` is five territories and the first with a point is the Kingdom of Egypt, whose point is Cairo — a campaign from Morocco to the Nile delta is not Cairo, the judgement `eastern-front` carries. A15(7): the lane is that point, africa. A15(4): `P580`/`P582` are 1940-06-10 and 1943-05-16 and contain the lead's own days. A6, A8: `P361` `Q696817` is not held, so filed by span and subject. A11(a): of 35 `P710` only two are actors here. The pool note has the rest.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "North African campaign"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
@@ -49389,12 +49430,6 @@
     },
     {
       "id": "afghan-conflict",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "allied-invasion-of-sicily",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

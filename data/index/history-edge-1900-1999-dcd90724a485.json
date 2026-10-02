@@ -4538,6 +4538,15 @@
         }
       ]
     },
+    "north-african-campaign--allied-invasion-of-sicily--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "october-revolution--execution-of-the-romanov-family--precondition-of": {
       "from": "git",
       "versions": [

@@ -7604,6 +7604,12 @@
     },
     {
       "dissent": false,
+      "id": "north-african-campaign",
+      "kind": "event",
+      "locator": "Q218678"
+    },
+    {
+      "dissent": false,
       "id": "north-channel-naval-duel",
       "kind": "event",
       "locator": "Q4090286"

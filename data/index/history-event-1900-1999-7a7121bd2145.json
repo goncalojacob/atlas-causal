@@ -16111,6 +16111,15 @@
         }
       ]
     },
+    "north-african-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "nova-republica-brazil-since-1985": {
       "from": "git",
       "versions": [

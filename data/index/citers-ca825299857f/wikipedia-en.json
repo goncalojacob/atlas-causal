@@ -6296,6 +6296,24 @@
     },
     {
       "dissent": false,
+      "id": "north-african-campaign--allied-invasion-of-sicily--enabled",
+      "kind": "edge",
+      "locator": "\"Allied invasion of Sicily\", revision 1376074492"
+    },
+    {
+      "dissent": false,
+      "id": "north-african-campaign--allied-invasion-of-sicily--enabled",
+      "kind": "edge",
+      "locator": "\"Allied invasion of Sicily\", revision 1376074492: \"With the conclusion of the North Africa campaign in May 1943 … the Allied powers … decided to attack Axis forces in Europe via Italy\""
+    },
+    {
+      "dissent": false,
+      "id": "north-african-campaign--allied-invasion-of-sicily--enabled",
+      "kind": "edge",
+      "locator": "\"North African campaign\", revision 1376649690"
+    },
+    {
+      "dissent": false,
       "id": "north-channel-naval-duel--battle-of-flamborough-head--precondition-of",
       "kind": "edge",
       "locator": "\"North Channel Naval Duel\", revision 1370629780"
@@ -15593,6 +15611,12 @@
       "id": "nigerian-civil-war",
       "kind": "event",
       "locator": "\"Nigerian Civil War\", revision 1374012434"
+    },
+    {
+      "dissent": false,
+      "id": "north-african-campaign",
+      "kind": "event",
+      "locator": "\"North African campaign\", revision 1376649690"
     },
     {
       "dissent": false,
