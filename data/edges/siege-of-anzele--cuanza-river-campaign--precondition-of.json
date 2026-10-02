@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "siege-of-anzele--cuanza-river-campaign--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-73"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cuanza River Campaign\", revision 1370614389"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Anzele\", revision 1370738927"
+    }
+  ],
+  "from": "siege-of-anzele",
+  "to": "cuanza-river-campaign",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The campaign of 1580 was launched from the position the fort at Anzele had held the year before, and the article for the campaign says so in its own first paragraph of background. \u201cCuanza River Campaign\u201d, at revision 1370614389, opens its \u00a7 Background: \u201cPreviously, Paulo Dias de Novais had won a siege in Anzele led by the Ngola forces, consisting of 12,000 men. After the siege, the Ngola warriors sought to make peace with the governor, which he declined, as he already planned to attack them again with a larger force, with the support of the king of Congo.\u201d The second author, \u201cSiege of Anzele\u201d at revision 1370738927, gives the same relation from the other end \u2014 the siege is \u201cthe first military action of the Angolan Wars, which would then continue for over a century\u201d \u2014 and dates the Ndongo attack to 1579, before the expedition of May 1580. `precondition-of` and not `caused`: the article names the governor's own plan, not the siege, as what put the fleet on the river, and the siege is what left him in Angola to make it. `probable`: rule 22 keeps an edge carried by Wikipedia records below `consensus`, and the chain is the article's own narration rather than a historian's stated judgement.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

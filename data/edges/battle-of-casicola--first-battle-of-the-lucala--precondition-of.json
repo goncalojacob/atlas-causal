@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-casicola--first-battle-of-the-lucala--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-73"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of the Lucala\", revision 1370619097"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Angolan Wars\", revision 1370826485"
+    }
+  ],
+  "from": "battle-of-casicola",
+  "to": "first-battle-of-the-lucala",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "Casicola is what the article for the Lucala gives as the state of the war the Lucala was fought in. \u201cFirst Battle of the Lucala\u201d, at revision 1370619097, \u00a7 History: \u201cNdongo had previously suffered a major defeat at the Battle of Casicola against a Portuguese army commanded by captain-major Andr\u00e9 Ferreira Pereira. After Casicola, a great number of Ambundu tribal lords in the vicinity of Luanda switched their allegiance to Portugal, which allowed Paulo Dias de Novais to secure the region around the city. He then ordered the army to move into Cambambe to secure the mines therein.\u201d The second author, \u201cAngolan Wars\u201d at revision 1370826485, closes the same loop from the umbrella's side: the Lucala \u201cconfirmed the victory of Casicola\u201d. `precondition-of` and nothing stronger, because the proximate cause the Lucala article names is the ambush of Jo\u00e3o Castanho de Vel\u00eas on the march to Cambambe, which this atlas does not hold: Casicola is what sent the army towards Cambambe, not what the ngola answered. `probable`, under rule 22 and because the two articles disagree about the Lucala's year (see that record's review note).",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}
