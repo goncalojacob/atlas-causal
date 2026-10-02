@@ -2170,6 +2170,15 @@
         }
       ]
     },
+    "1966-anti-igbo-pogrom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "1966-nigerian-coup-d-etat": {
       "from": "git",
       "versions": [
