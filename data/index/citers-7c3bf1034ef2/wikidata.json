@@ -2834,6 +2834,12 @@
     },
     {
       "dissent": false,
+      "id": "atomic-bombings-of-hiroshima-and-nagasaki",
+      "kind": "event",
+      "locator": "Q488"
+    },
+    {
+      "dissent": false,
       "id": "attack-on-bintan-1521",
       "kind": "event",
       "locator": "Q118900813"
@@ -9461,6 +9467,12 @@
       "id": "sunda-strait-campaign-of-january-1794",
       "kind": "event",
       "locator": "Q7639108"
+    },
+    {
+      "dissent": false,
+      "id": "surrender-of-japan",
+      "kind": "event",
+      "locator": "Q6540361"
     },
     {
       "dissent": false,

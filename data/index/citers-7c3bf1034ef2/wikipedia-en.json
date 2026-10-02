@@ -2060,6 +2060,30 @@
     },
     {
       "dissent": false,
+      "id": "atomic-bombings-of-hiroshima-and-nagasaki--surrender-of-japan--caused",
+      "kind": "edge",
+      "locator": "\"Atomic bombings of Hiroshima and Nagasaki\", revision 1375714163"
+    },
+    {
+      "dissent": false,
+      "id": "atomic-bombings-of-hiroshima-and-nagasaki--surrender-of-japan--caused",
+      "kind": "edge",
+      "locator": "\"Surrender of Japan\", revision 1372687290"
+    },
+    {
+      "dissent": true,
+      "id": "atomic-bombings-of-hiroshima-and-nagasaki--surrender-of-japan--caused",
+      "kind": "edge",
+      "locator": "\"Atomic bombings of Hiroshima and Nagasaki\", revision 1375714163"
+    },
+    {
+      "dissent": true,
+      "id": "atomic-bombings-of-hiroshima-and-nagasaki--surrender-of-japan--caused",
+      "kind": "edge",
+      "locator": "\"Surrender of Japan\", revision 1372687290"
+    },
+    {
+      "dissent": false,
       "id": "attack-on-the-moncada-barracks--cuban-revolution--caused",
       "kind": "edge",
       "locator": "\"Moncada Barracks\", revision 1370861034, § lead"
@@ -6788,6 +6812,12 @@
     },
     {
       "dissent": false,
+      "id": "potsdam-declaration--surrender-of-japan--precondition-of",
+      "kind": "edge",
+      "locator": "\"Surrender of Japan\", revision 1372687290"
+    },
+    {
+      "dissent": false,
       "id": "prelude-to-the-russian-invasion-of-ukraine--full-scale-russo-ukrainian-war--precondition-of",
       "kind": "edge",
       "locator": "\"Prelude to the 2022 Russian invasion of Ukraine\", revision 1370705034, lead and the closing narrative"
@@ -10823,6 +10853,18 @@
       "id": "atlantic-revolutions",
       "kind": "event",
       "locator": "\"Age of Revolution\", revision 1376788977, § Atlantic Revolutions"
+    },
+    {
+      "dissent": false,
+      "id": "atomic-bombings-of-hiroshima-and-nagasaki",
+      "kind": "event",
+      "locator": "\"Atomic bombings of Hiroshima and Nagasaki\", revision 1375714163"
+    },
+    {
+      "dissent": false,
+      "id": "atomic-bombings-of-hiroshima-and-nagasaki",
+      "kind": "event",
+      "locator": "\"Atomic bombings of Hiroshima and Nagasaki\", revision 1375714163, first sentence: \"On 6 and 9 August 1945\""
     },
     {
       "dissent": false,
@@ -17339,6 +17381,18 @@
       "id": "sunda-strait-campaign-of-january-1794",
       "kind": "event",
       "locator": "\"Sunda Strait campaign of January 1794\", revision 1370749005"
+    },
+    {
+      "dissent": false,
+      "id": "surrender-of-japan",
+      "kind": "event",
+      "locator": "\"Surrender of Japan\", revision 1372687290"
+    },
+    {
+      "dissent": false,
+      "id": "surrender-of-japan",
+      "kind": "event",
+      "locator": "\"Surrender of Japan\", revision 1372687290, first sentence: \"announced by Emperor Hirohito on 15 August and formally signed on 2 September 1945\""
     },
     {
       "dissent": false,

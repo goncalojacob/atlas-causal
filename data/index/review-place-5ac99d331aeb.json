@@ -8244,6 +8244,33 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "hiroshima",
+      "kind": "place",
+      "names": [
+        "Hiroshima"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "hispanic-america",
@@ -21051,7 +21078,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 2,
       "id": "tokyo-bay",
       "kind": "place",
       "names": [

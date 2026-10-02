@@ -6217,6 +6217,15 @@
         }
       ]
     },
+    "atomic-bombings-of-hiroshima-and-nagasaki": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "attack-on-the-moncada-barracks": {
       "from": "git",
       "versions": [
@@ -20198,6 +20207,15 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "surrender-of-japan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
