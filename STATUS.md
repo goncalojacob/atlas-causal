@@ -24574,3 +24574,101 @@ rows still clearing every gate in the inverse vein has an africa-lane child.
 A15(11) went **607 → 610** on no edge written, which is deviation 1526's whole case.
 The check was green at batch 87's head — 1,940 of 1,940 pure, 313 of 313 browser,
 nothing skipped, and the branch's `validate` run on `127f775c` completed success.
+
+**M42 curation fire, 2 October — the network refused, and the five passes that
+did not need it.** The fire that claimed at 02:07Z was the first after 02:00Z, so
+A11(a) over every active event and A13's relations pass, and nothing imported.
+All six A14 and all thirteen A15 sections were already on the branch.
+**Deviation 1529: both routes to the network were refused before a request left
+the sandbox** — a script of this fire's own and the repository's own
+`createFetcher`, which is the sanctioned path — so the three A11(a) clauses that
+read Wikidata (the place, the `P710` participant, the `P361` umbrella) could not
+run and the three that read what is on disk did. Their target sets are measured
+in the pool file so the next fire with a network starts from a number: **159
+placeless active events, 105 of them with no refusal note**; 737 eligible for
+`P710`; and the held-records half of the umbrella question, which is deviations
+1509 and 1510 and is two assertions of `tests/m42-filing.test.mjs` — green
+before and after, **0 filings and none owed**.
+**Summaries: 0 written and the reason is the fire's.** 27 records still carry the
+import's placeholder, 23 events and 4 actors. 18 of the events name no English
+article at all; **the 5 that have a lead on disk are exactly the 5 A15(8) forbids
+quoting**, and the cache shows why — `battle-of-musa-dagh` would take a
+mountain's description, `milk-bar-cafe-bombing` a lawyer's biography. The five
+summaries under two sentences are the same Portugal records as on 30 September
+and 1 October and a second sentence written here would be A4's forbidden claim.
+**A7: one widening, and a rule that had been reporting a contradiction where
+there was a gap.** **Deviation 1528** — `datesInLead` reads two of its three
+range shapes in both date orders and the third, the only one crossing a month,
+had no month-first mirror, so *"on October 1, 1814, to October 2, 1814"* matched
+the one-day pattern on its opening clause and reported `battle-of-rancagua` as
+contradicting a lead that in fact states the range the record was missing. Nine
+active events carry the shape; eight already hold the range and warn neither
+before nor after. The record now runs **1814-10-01 to 1814-10-02**, flagged
+`a15-days`, with the clause quoted at revision 1371210959. `span-vs-lead-dates`
+goes 22 → 21 and nothing else moves. **The other 32 warnings were refused and
+the classes were taken off the rule's own reading rather than by eye**, because
+the first binning this fire wrote was wrong in five places: 16 are a bound
+inside the record's span, which A7 may not take (deviation 1507); 15 are one day
+against one day, of which five are Old Style against New Style, four are the
+COVID records holding a first case against a declaration, and six are off by a
+day or a few; 1 is deviation 1478's fault, the years in the sentence belonging
+to another event it names. `iraqi-conflict`'s end is the one borderline widening
+and it is left for the owner: its article's present tense against its item's
+`P582`, which is a disagreement and not a widening.
+**Polities: A11's clause met for the fourth fire running.** 202 actors are named
+by an active event — 115 polities, 49 institutions, 38 persons — and **all 115
+polities carry a description**. The three without are a utility, a party and a
+university, and A11's clause asks for area, population and geopolitical context
+*for a state or a polity*; whether an institution an event names owes the reader
+a sentence is a line for the owner.
+**A13: one edge, nothing disputed.** Both halves of the corpus as it stood have
+been read — the 574 outside the component on 30 September, the 674 inside it on
+1 October — so this fire's set was the part that did not exist yet: **the 64
+active events created on 1 and 2 October that cite an English article**, written
+by batches 80 to 88. With no network there are no bodies, so the pass read 64
+**leads** and no bodies, which is A11(a)'s clause rather than A13's full one, and
+**the body half of those 64 is the first thing the next fire with a network
+should take**. 18 sentences carried a causal marker, 13 named no other held
+event, 1 was already an edge, 2 were kin, and 2 were read one by one.
+**Written: `first-sino-japanese-war --reacted-to--> russian-invasion-of-manchuria`**,
+from the invasion's own article at revision 1370729162 — *"concerns regarding
+Qing China's defeat … caused the Russian Empire to speed up their long held
+designs"*; `reacted-to` and not `caused` because the designs were long held and
+what the war's outcome did was make Russia act on them now. That sentence is
+also why A15(5)'s refusal is an **opener** test: it carries *"in the aftermath
+of"* without opening with it, and a rule refusing the phrase wherever it fell
+would have lost the edge. **Refused: `arab-cold-war --> 1952-egyptian-revolution`**,
+whose *"is marked by"* is where historians draw a period's boundary, and whose
+`led to` governs Nasser's presidency — **a refusal class nobody had written down:
+the marker sits in a subordinate clause whose subject is neither end.** The
+contradiction screen's one quote, on `angolan-war-of-independence --caused-->
+operation-savannah-angola`, agrees with the held edge.
+**Deviation 1530 — the lead cache is keyed by item *and* language, and a script
+that forgets the language reads Portuguese.** 2,013 English leads sit beside
+1,219 Portuguese ones as `<item>.en.json` and `<item>.pt.json`; this fire's first
+measurement script keyed on the item alone, `.pt` sorts after `.en`, and the
+reading that came out said the validator was comparing records against
+Portuguese articles at Portuguese revisions. It is not: the fault was the
+measurement's and it looked exactly like a fault in the thing measured, which is
+the shape of deviations 1477, 1503, 1505 and 1509.
+**Counts, and a curation fire should move few of them.** active events **1,429**
+unchanged; **main 231** unchanged, and it has not risen through thirty-eight
+batches and eight curation fires; filed **1,198** unchanged. Per lane, active /
+main, every one unchanged: Europe **556/86**, Americas **393/56**, Asia
+**249/57**, Africa **231/32** — still 72 short of A10's 303 and still the lane
+with no vein. active edges **1,214 → 1,215**; components **423** unchanged and
+the **largest connected component 784** unchanged, because both ends of the one
+edge already carried edges and already stood in the same component — `events with
+no edge` is **327** before and after. **A15(11): edges crossing an umbrella
+610 → 611**, inside one **604** unchanged, so the edge crosses one. Validator
+**0 errors, 622 warnings** (was 623, the one deviation 1528 took away), and
+`--index` clean. A15(2)'s recache, as the last step: **2,994** `wikipedia-en`
+citations on active records, **2,916** on disk at the revision cited, **0 that
+should be on disk and are not** — the two citations this fire added are both at
+revisions the cache already held, which is why a pass that could not fetch had
+nothing to fetch. Both suites green on the final tree, run the way the check runs
+them since M63: **2,254 tests, nothing skipped — 1,941 pure and 313 browser**.
+The one test added is deviation 1528's and it was written before the record it
+judges (711, 717): it failed on `battle-of-rancagua`'s own sentence, verbatim
+from the cache, before the pattern went in. **Deviations 1528, 1529 and 1530;
+take the next above 1530.**
