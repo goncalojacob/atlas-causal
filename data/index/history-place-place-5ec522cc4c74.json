@@ -2490,6 +2490,15 @@
         }
       ]
     },
+    "demerara": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "demmin": {
       "from": "git",
       "versions": [
@@ -4276,6 +4285,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "hondo-river-belize": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -9065,6 +9083,15 @@
         }
       ]
     },
+    "saint-louis-du-sud": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "saint-marc": {
       "from": "git",
       "versions": [
@@ -9153,6 +9180,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "saint-vincent-saint-vincent-and-the-grenadines": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -9285,6 +9321,24 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "san-juan-puerto-rico": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "san-juan-river-nicaragua": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -10756,6 +10810,15 @@
       ]
     },
     "tlemcen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "tobago": {
       "from": "git",
       "versions": [
         {

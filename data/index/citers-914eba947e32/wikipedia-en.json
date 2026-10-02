@@ -3890,6 +3890,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-demerara-and-essequibo--treaty-of-paris-1783--precondition-of",
+      "kind": "edge",
+      "locator": "\"Capture of Demerara and Essequibo\", revision 1370608539, § lead"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-fez-1576--battle-of-alcacer-quibir--precondition-of",
       "kind": "edge",
       "locator": "\"Capture of Fez (1576)\", revision 1370608603, § Aftermath"
@@ -10718,6 +10724,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-18-october-1782",
+      "kind": "event",
+      "locator": "\"Action of 18 October 1782\", revision 1370426131"
+    },
+    {
+      "dissent": false,
       "id": "action-of-27-june-1798",
       "kind": "event",
       "locator": "\"Action of 27 June 1798\", revision 1373255379"
@@ -11261,6 +11273,12 @@
       "id": "battle-of-angolpo",
       "kind": "event",
       "locator": "\"Battle of Angolpo\", revision 1370432065"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-anguilla",
+      "kind": "event",
+      "locator": "\"Battle of Anguilla\", revision 1370432072"
     },
     {
       "dissent": false,
@@ -12428,6 +12446,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mborore",
+      "kind": "event",
+      "locator": "\"Battle of Mbororé\", revision 1370269258"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mbwila",
       "kind": "event",
       "locator": "\"Battle of Mbwila\", revision 1370449389"
@@ -12962,6 +12986,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-saint-louis-du-sud",
+      "kind": "event",
+      "locator": "\"Battle of Saint-Louis-du-Sud\", revision 1370588032"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-saint-mathieu",
       "kind": "event",
       "locator": "\"Battle of Saint-Mathieu\", revision 1370588044"
@@ -12995,6 +13025,12 @@
       "id": "battle-of-san-fernando-de-omoa",
       "kind": "event",
       "locator": "\"Battle of San Fernando de Omoa\", revision 1370588302"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-san-juan-1797",
+      "kind": "event",
+      "locator": "\"Battle of San Juan (1797)\", revision 1370588347"
     },
     {
       "dissent": false,
@@ -13247,6 +13283,12 @@
       "id": "battle-of-the-bay-of-velez",
       "kind": "event",
       "locator": "\"Battle of the Bay of Velez\", revision 1375535408"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-black-river",
+      "kind": "event",
+      "locator": "\"Battle of the Black River\", revision 1370598348"
     },
     {
       "dissent": false,
@@ -14036,6 +14078,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-demerara-and-essequibo",
+      "kind": "event",
+      "locator": "\"Capture of Demerara and Essequibo\", revision 1370608539"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-fez-1554",
       "kind": "event",
       "locator": "\"Capture of Fez (1554)\", revision 1376418565"
@@ -14099,6 +14147,18 @@
       "id": "capture-of-penon-of-algiers-1529",
       "kind": "event",
       "locator": "\"Capture of Peñón of Algiers (1529)\", revision 1370609401"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-rio-hondo",
+      "kind": "event",
+      "locator": "\"Capture of Río Hondo\", revision 1370609473"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-saint-vincent",
+      "kind": "event",
+      "locator": "\"Capture of Saint Vincent\", revision 1370609501"
     },
     {
       "dissent": false,
@@ -15551,6 +15611,12 @@
       "id": "invasion-of-the-cape-colony",
       "kind": "event",
       "locator": "\"Invasion of the Cape Colony\", revision 1372363415"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-tobago",
+      "kind": "event",
+      "locator": "\"Invasion of Tobago\", revision 1374476457"
     },
     {
       "dissent": false,
@@ -17057,6 +17123,12 @@
       "id": "saint-domingue-expedition",
       "kind": "event",
       "locator": "\"Saint-Domingue expedition\", revision 1373644192"
+    },
+    {
+      "dissent": false,
+      "id": "san-juan-expedition-1780",
+      "kind": "event",
+      "locator": "\"San Juan Expedition (1780)\", revision 1370730001"
     },
     {
       "dissent": false,

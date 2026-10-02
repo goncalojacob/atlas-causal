@@ -666,6 +666,15 @@
         }
       ]
     },
+    "battle-of-mborore": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-mbwila": {
       "from": "git",
       "versions": [

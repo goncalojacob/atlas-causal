@@ -2504,6 +2504,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-18-october-1782",
+      "kind": "event",
+      "locator": "Q2984963"
+    },
+    {
+      "dissent": false,
       "id": "action-of-2-may-1654",
       "kind": "event",
       "locator": "Q4677341"
@@ -3149,6 +3155,12 @@
       "id": "battle-of-angolpo",
       "kind": "event",
       "locator": "Q96102654"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-anguilla",
+      "kind": "event",
+      "locator": "Q21070658"
     },
     {
       "dissent": false,
@@ -4334,6 +4346,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mborore",
+      "kind": "event",
+      "locator": "Q932519"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mbwila",
       "kind": "event",
       "locator": "Q1752752"
@@ -4862,6 +4880,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-saint-louis-du-sud",
+      "kind": "event",
+      "locator": "Q14644681"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-saint-mathieu",
       "kind": "event",
       "locator": "Q575924"
@@ -4895,6 +4919,12 @@
       "id": "battle-of-san-fernando-de-omoa",
       "kind": "event",
       "locator": "Q4090319"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-san-juan-1797",
+      "kind": "event",
+      "locator": "Q656046"
     },
     {
       "dissent": false,
@@ -5147,6 +5177,12 @@
       "id": "battle-of-the-bay-of-velez",
       "kind": "event",
       "locator": "Q116609273"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-black-river",
+      "kind": "event",
+      "locator": "Q4872851"
     },
     {
       "dissent": false,
@@ -5930,6 +5966,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-demerara-and-essequibo",
+      "kind": "event",
+      "locator": "Q5037004"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-fez-1554",
       "kind": "event",
       "locator": "Q105162351"
@@ -5993,6 +6035,18 @@
       "id": "capture-of-penon-of-algiers-1529",
       "kind": "event",
       "locator": "Q3403025"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-rio-hondo",
+      "kind": "event",
+      "locator": "Q5037053"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-saint-vincent",
+      "kind": "event",
+      "locator": "Q5037055"
     },
     {
       "dissent": false,
@@ -7433,6 +7487,12 @@
       "id": "invasion-of-the-cape-colony",
       "kind": "event",
       "locator": "Q1977699"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-tobago",
+      "kind": "event",
+      "locator": "Q536360"
     },
     {
       "dissent": false,
@@ -9029,6 +9089,12 @@
       "id": "saint-domingue-expedition",
       "kind": "event",
       "locator": "Q3062411"
+    },
+    {
+      "dissent": false,
+      "id": "san-juan-expedition-1780",
+      "kind": "event",
+      "locator": "Q7414580"
     },
     {
       "dissent": false,

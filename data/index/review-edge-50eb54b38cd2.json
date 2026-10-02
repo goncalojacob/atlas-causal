@@ -10964,6 +10964,34 @@
         "wikipedia-en"
       ],
       "created": "2026-10-02",
+      "from": "capture-of-demerara-and-essequibo",
+      "id": "capture-of-demerara-and-essequibo--treaty-of-paris-1783--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-paris-1783",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
       "from": "capture-of-fez-1576",
       "id": "capture-of-fez-1576--battle-of-alcacer-quibir--precondition-of",
       "kind": "edge",
