@@ -23415,7 +23415,9 @@ active events carrying an item, eleven chunked calls:
 
 | | |
 | --- | --- |
-| children of a held umbrella, `P17` in Africa, starting 1800 or later, ≥ 2 sitelinks, not held | **349** |
+| children of a held umbrella, `P17` in Africa, starting 1800 or later, ≥ 2 sitelinks, not held by an **active** record | **349** |
+| of those, a QID a **retracted or merged** record already holds (deviation 1545) | 3 |
+| **the vein proper** | **346** |
 | of those, ≥ 5 sitelinks | 148 |
 | ≥ 8 sitelinks | 68 |
 | by decade | 1800s 14, 1880s 1, 1890s 10, 1900s 22, 1910s 36, 1920s 10, 1930s 8, 1940s 13, 1950s 9, 1960s 30, 1970s 31, 1980s 5, 1990s 21, 2000s 31, 2010s 56, 2020s 52 |
@@ -23522,6 +23524,56 @@ of their ends are filed under it. A5's "edges to what exists" was met and
 A15(11)'s number did not move, which is the honest reading: a chain that runs
 inside one umbrella is a chain, and it is not reach.
 
+### The same vein for Asia, and the gate both of them need
+
+*Asked once, with the same query and `P30 wd:Q48` in place of Africa's
+`wd:Q15`, because Asia is the other lane A10 puts in front of this one and no
+fire had a number for it.*
+
+| | |
+| --- | --- |
+| children of a held umbrella, `P17` in Asia, 1800 or later, ≥ 2 sitelinks, not held by an active record | **1,214** |
+| a QID a retracted or merged record holds (deviation 1545) | 3 |
+| **the vein proper** | **1,211** |
+| of those, ≥ 5 sitelinks | 727 |
+| ≥ 8 sitelinks | 440 |
+| by decade | 1800s 5, 1810s 11, 1890s 45, 1900s 24, 1910s 92, 1920s 29, 1930s 35, 1940s 158, 1950s 76, 1960s 62, 1970s 87, 1980s 61, 1990s 52, 2000s 204, 2010s 63, 2020s 209 |
+
+**Asia's vein is three and a half times Africa's**, and the lanes are now level:
+Africa 221 and Asia 223, so Africa trails by **two events** and both are about
+80 short of A10's 303. A fire reading A10 as "the lane that trails" takes Africa
+by two events' worth of margin while Asia offers 1,211 rows against Africa's
+346. **Which of those A10 means is the owner's to say**; a fire should not
+quietly re-order the lanes, and nothing here does.
+
+What the Asian vein's top of the list shows is that **the gaps at this level are
+large**: `Q38789` the Battle of Stalingrad, `Q184425` the Pacific War, `Q192055`
+the Nanjing Massacre, `Q46333` the Long March, `Q184320` Borodino, `Q192660`
+Okinawa, `Q6540361` the surrender of Japan, `Q122976243` the October 7 attacks,
+`Q49105` the First Intifada, `Q296754` the Battle of Singapore — none of them
+held, every one of them a child of an umbrella that is. Whether their own
+articles argue is unmeasured, and **the high-sitelink end of a vein is the one
+place this fire's two screens were never pointed**, because Africa's whole vein
+tops out at 41 sitelinks and Asia's starts at 116.
+
+### Deviation 1545 — a forward vein must exclude what the atlas withdrew
+
+Both veins above were first computed against the QIDs of **active** events only,
+which is wrong in a way that would have imported a retraction. `Q178810` the
+Syrian Civil War came back as a candidate and this atlas holds it as a
+**retracted** record; so did `Q18651204` Resolute Support Mission and
+`Q134884640` Operation Rising Lion. Africa's three are `Q705553` the Maji Maji
+Rebellion and `Q2139988` the Eritrean Civil Wars, both retracted, and
+`Q51750785` the Wiriyamu Massacre, merged. **The Maji Maji Rebellion was on this
+fire's own shortlist of major African gaps** and was read for an edge before the
+gate caught it, which is how close the defect came to writing a record somebody
+had deliberately withdrawn — A15(8) retracted the Eritrean Civil Wars for cause.
+Six rows of 1,563 is a small correction and the *class* is not small: **a forward
+`P361` walk must test a candidate's QID against every record of any status, not
+against the active ones**, and so must any reverse walk. Corrected in both tables
+above. Not a code change — neither vein is in a committed tool — but the next
+fire that writes one owes it this gate.
+
 ### The structured-causal vein, measured once and closed
 
 *This is the other half of the fire and it is a negative result, written down so
@@ -23603,8 +23655,9 @@ it on reading articles, which is the only thing that writes an edge.
 
 **What is open, in the order a fire should weigh it:**
 
-- **Africa has a vein now and it is the forward `P361` walk: 349 rows, measured
-  above, 261 of them not yet read.** That is the batch-88 stand's open problem
+- **Africa has a vein now and it is the forward `P361` walk: 346 rows after
+  deviation 1545's gate, measured above, 258 of them not yet read — and Asia's
+  is 1,211.** That is the batch-88 stand's open problem
   closed. Take batches from it under A15(1) and expect the yield this fire got:
   **1 connectable row in 88 articles read.** That ratio is the thing to improve,
   not the vein.
@@ -23690,8 +23743,8 @@ it on reading articles, which is the only thing that writes an edge.
   measurable, already-targeted work anywhere in this file.
 - **A13's body half of the 2 October curation fire's own 64 records is still
   unread** and still wants a network.
-- **Deviation numbers: take the next above 1544.** This fire wrote 1541, 1542,
-  1543 and 1544. **`origin/m42b` stood at 1540** when this fire read it, which is why
+- **Deviation numbers: take the next above 1545.** This fire wrote 1541, 1542,
+  1543, 1544 and 1545. **`origin/m42b` stood at 1540** when this fire read it, which is why
   this fire started at 1541 and not at 1537. The collision rule of the previous
   stand holds and is unchanged: read `origin/m42b`'s own numbers before taking
   one, because no stand here can know them. The lane-offset fix is still the

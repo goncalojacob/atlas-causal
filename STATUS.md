@@ -24988,4 +24988,25 @@ byte-identical save and a one-element `parent` list is not the normal form, and
 `tests/m42-filing.test.mjs` holds every filing to a paragraph that names the
 record in backticks — the pool note named it only inside an edge id. Both fixed
 in a commit of their own and both suites green after.
-Deviations 1541, 1542, 1543, 1544; `origin/m42b` stood at 1540.
+**Asia measured too, and a gate both veins needed.** The same query with Asia's
+continent in place of Africa's returns **1,214 rows**, three and a half times
+Africa's, 727 of them with five sitelinks or more and 440 with eight — and its
+top of the list is the measure of how large the gaps are at this level: the
+Battle of Stalingrad, the Pacific War, the Nanjing Massacre, the Long March,
+Borodino, Okinawa, the surrender of Japan, the October 7 attacks, the First
+Intifada, the Battle of Singapore, **none of them held and every one a child of
+an umbrella that is.** The lanes are now level — **Africa 221 and Asia 223**, so
+Africa trails by two events while Asia's vein is 3.5× richer; which of those A10
+means by "the lane that trails" is the owner's to say and this fire did not
+re-order them. **Deviation 1545** is the gate both veins needed: computed against
+the QIDs of **active** events only, they returned `Q178810` the Syrian Civil War
+as a candidate, which this atlas holds as a **retracted** record — with
+`Q18651204`, `Q134884640`, `Q2139988` the Eritrean Civil Wars (retracted under
+A15(8), for cause), `Q51750785` Wiriyamu (merged) and **`Q705553` the Maji Maji
+Rebellion, which was on this fire's own shortlist of major African gaps and was
+read for an edge before the gate caught it.** Six rows of 1,563 is a small
+correction; the class is not. **A forward `P361` walk must test a candidate
+against every record of any status, not against the active ones.** Corrected
+counts: **Africa 346, Asia 1,211.** Not a code change — neither vein lives in a
+committed tool — but the next fire that writes one owes it this gate.
+Deviations 1541, 1542, 1543, 1544, 1545; `origin/m42b` stood at 1540.
