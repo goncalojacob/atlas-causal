@@ -19874,6 +19874,15 @@
         }
       ]
     },
+    "soviet-invasion-of-manchuria": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "soviet-invasion-of-poland": {
       "from": "git",
       "versions": [

@@ -9320,6 +9320,12 @@
     },
     {
       "dissent": false,
+      "id": "soviet-invasion-of-manchuria",
+      "kind": "event",
+      "locator": "Q6165880"
+    },
+    {
+      "dissent": false,
       "id": "soviet-invasion-of-poland",
       "kind": "event",
       "locator": "Q2305266"
