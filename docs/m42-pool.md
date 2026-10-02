@@ -23743,6 +23743,16 @@ it on reading articles, which is the only thing that writes an edge.
   measurable, already-targeted work anywhere in this file.
 - **A13's body half of the 2 October curation fire's own 64 records is still
   unread** and still wants a network.
+- **§3's own table stopped at batch 17 and this fire did not resurrect it.**
+  A5 asks for the largest component before and after each batch and §3 says it
+  is *"appended as each batch lands"*; its last row is **batch 17**, 72 batches
+  ago, and every batch since has put the same numbers in its own `### Counts
+  after batch N` section instead. Adding a single row for 89 to a table whose
+  columns are cumulative would read as though batches 18 to 88 had not happened,
+  so this fire left the table alone and says so here. **A line for the owner:**
+  either §3's table is retired in writing, or a fire backfills 72 rows from
+  `tools/m42-pool.mjs --at <rev>`, which the tool can actually do. Neither is a
+  records-lane decision.
 - **Deviation numbers: take the next above 1545.** This fire wrote 1541, 1542,
   1543, 1544 and 1545. **`origin/m42b` stood at 1540** when this fire read it, which is why
   this fire started at 1541 and not at 1537. The collision rule of the previous
