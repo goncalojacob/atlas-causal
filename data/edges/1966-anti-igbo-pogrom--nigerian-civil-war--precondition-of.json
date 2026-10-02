@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "1966-anti-igbo-pogrom--nigerian-civil-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-89"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1966 anti-Igbo pogrom\", revision 1376650990"
+    }
+  ],
+  "from": "1966-anti-igbo-pogrom",
+  "to": "nigerian-civil-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The same article closes the other side of the link. “1966 anti-Igbo pogrom”, at revision 1376650990, lead: “These events led to the secession of the eastern Nigerian region and the declaration of Biafra, which ultimately led to the Nigerian Civil War.” § Aftermath: “It also was the precursor to Ojukwu's declaration of Eastern Nigeria's secession from the federation as the Republic of Biafra, and the resulting Nigerian Civil War (1967–1970)”; and § Background, of the September killings: “It has been described as the most painful and provocative incident leading to the Nigeria-Biafra War.” `precondition-of` and not `caused`, because the cause the article puts next to the war is the secession and the declaration of Biafra, and this atlas holds neither: the pogrom is what the secession answered, one step back. `probable` under rule 22.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

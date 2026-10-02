@@ -1472,6 +1472,18 @@
     },
     {
       "dissent": false,
+      "id": "1966-anti-igbo-pogrom--nigerian-civil-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"1966 anti-Igbo pogrom\", revision 1376650990"
+    },
+    {
+      "dissent": false,
+      "id": "1966-nigerian-coup-d-etat--1966-anti-igbo-pogrom--precondition-of",
+      "kind": "edge",
+      "locator": "\"1966 anti-Igbo pogrom\", revision 1376650990"
+    },
+    {
+      "dissent": false,
       "id": "1966-nigerian-coup-d-etat--nigerian-civil-war--caused",
       "kind": "edge",
       "locator": "\"Nigerian Civil War\", revision 1374012434, lead"
@@ -9929,6 +9941,12 @@
       "id": "1965-portuguese-presidential-election",
       "kind": "event",
       "locator": "\"1965 Portuguese presidential election\", revision 1334103559"
+    },
+    {
+      "dissent": false,
+      "id": "1966-anti-igbo-pogrom",
+      "kind": "event",
+      "locator": "\"1966 anti-Igbo pogrom\", revision 1376650990"
     },
     {
       "dissent": false,

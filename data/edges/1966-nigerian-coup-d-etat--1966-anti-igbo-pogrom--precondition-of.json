@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "1966-nigerian-coup-d-etat--1966-anti-igbo-pogrom--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-89"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1966 anti-Igbo pogrom\", revision 1376650990"
+    }
+  ],
+  "from": "1966-nigerian-coup-d-etat",
+  "to": "1966-anti-igbo-pogrom",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The pogrom's own article names the January coup as what it stood on. “1966 anti-Igbo pogrom”, at revision 1376650990, § Background: “The events took place in the context of military coups d'etat and in the prelude to the Nigerian Civil War. The immediate precursor to the massacres was the January 1966 Nigerian coup d'etat. Most of the politicians and senior army officers killed in the coup d'etat were northerners because Northerners were the majority in Nigeria's government”; and later, in the same section: “The failure of the Ironsi regime to punish the army mutineers responsible for the January 1966 coup further exacerbated the situation.” `precondition-of` and nothing stronger: the article calls the coup the immediate precursor and gives the grievance it left behind, but the proximate causes it names are the unitary decree of 24 May 1966 and the regime's failure to prosecute, neither of which this atlas holds as an event. `probable` under rule 22, the only citation being a Wikipedia record.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}
