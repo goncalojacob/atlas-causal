@@ -20685,3 +20685,11 @@ fresh" is deviation 1540, real; the two rule-24 failures of the second run
 `build-index.mjs` while a suite is running**, and never read a suite's totals off a `tail`
 — the first run's detail was lost to one, and finding which four tests failed cost a whole
 second run.*
+
+*The branch's check is **green on this fire's head `7d776718`** — run **2373**, every step
+success: `Validate records`, then `Tests`, then `Whether this pull request touches
+data/index/`. The `--index` identity step is skipped on a branch push, as always (it runs on
+a pull request that touches `data/index/`), and `node tools/validate.mjs --index` was clean
+at this head here. Three earlier runs on this fire's intermediate heads (2371, 2372) were
+**cancelled by the next push**, which is the workflow's own concurrency and not a failure —
+a fire that wants a conclusion should stop pushing and let one run finish.*
