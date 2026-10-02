@@ -1077,7 +1077,7 @@
     "core": "index/core-f11bfdfe9dd1.json",
     "grounds": "index/grounds-bbc89b2202c7.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-c14a607966c0.json",
+    "review": "index/review-ece81b6ca83d.json",
     "search": "index/search-cf1b98811bbb.json",
     "sources": "index/sources-4dc96c9c47ee.json",
     "territories": "index/territories-160407d0c923.json"
@@ -1112,7 +1112,7 @@
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-a1d06e5d5f26.json",
+      "file": "index/history-event-1800-1899-bc01170e2ef1.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
