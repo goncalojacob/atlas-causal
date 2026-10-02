@@ -4011,7 +4011,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "lane-written-by-hand"
         ],
         "status": "draft"
       },
@@ -16964,7 +16965,8 @@
       "review": {
         "flags": [
           "imported-facts",
-          "a9-place"
+          "a9-place",
+          "lane-written-by-hand"
         ],
         "status": "draft"
       },

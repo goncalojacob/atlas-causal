@@ -1844,6 +1844,14 @@
         {
           "first": true,
           "on": "2026-10-02"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-10-02"
         }
       ]
     },
@@ -8093,6 +8101,14 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-10-02"
         }
       ]

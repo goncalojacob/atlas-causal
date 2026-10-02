@@ -1074,10 +1074,10 @@
   ],
   "files": {
     "citers": "index/citers-c0993b5f97d5",
-    "core": "index/core-8242c4d609f0.json",
+    "core": "index/core-40a47b42c5ca.json",
     "grounds": "index/grounds-e607c80903f4.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-8e1f1c771384.json",
+    "review": "index/review-759b1308b971.json",
     "search": "index/search-bf139570f222.json",
     "sources": "index/sources-1766e6b2011b.json",
     "territories": "index/territories-0540860e38ba.json"
@@ -1245,7 +1245,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-b6cd26ef993c.json",
+      "file": "index/history-place-place-27ea8513d5f2.json",
       "from": null,
       "key": "place",
       "kind": "place",
