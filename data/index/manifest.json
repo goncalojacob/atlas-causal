@@ -49,13 +49,13 @@
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-75ba90e4322c.json",
+      "file": "index/attributes-1900-1999-ef84962f1067.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
     },
     {
-      "file": "index/attributes-2000-2099-71f0b5a27482.json",
+      "file": "index/attributes-2000-2099-9c924176ee1b.json",
       "from": 2000,
       "key": "2000-2099",
       "to": 2099
@@ -956,7 +956,7 @@
       "id": "treaty"
     },
     {
-      "count": 857,
+      "count": 861,
       "id": "war"
     }
   ],
@@ -1025,7 +1025,7 @@
   "counts": {
     "actors": 2699,
     "edges": 1226,
-    "events": 1665,
+    "events": 1669,
     "narratives": 2,
     "offices": 11,
     "places": 815,
@@ -1073,14 +1073,14 @@
     }
   ],
   "files": {
-    "citers": "index/citers-a10a2ed109c1",
-    "core": "index/core-ae80a05fd378.json",
-    "grounds": "index/grounds-063531eda87d.json",
+    "citers": "index/citers-6da04b619cb3",
+    "core": "index/core-7f2947af9be7.json",
+    "grounds": "index/grounds-bbc89b2202c7.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-99e8d66e78e8.json",
-    "search": "index/search-4053599356ac.json",
-    "sources": "index/sources-0e9904ede144.json",
-    "territories": "index/territories-c93100c2f8a0.json"
+    "review": "index/review-e16243fa0cbf.json",
+    "search": "index/search-eb099ae2c6a5.json",
+    "sources": "index/sources-1a71f7f2d4b1.json",
+    "territories": "index/territories-160407d0c923.json"
   },
   "historyShards": [
     {
@@ -1119,14 +1119,14 @@
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-7cf402a33ffb.json",
+      "file": "index/history-event-1900-1999-e3bd4d20b39a.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
       "to": 1999
     },
     {
-      "file": "index/history-event-2000-2099-1e92d2230bdc.json",
+      "file": "index/history-event-2000-2099-a477e8743985.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "event",

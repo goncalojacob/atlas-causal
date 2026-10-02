@@ -2684,6 +2684,12 @@
     },
     {
       "dissent": false,
+      "id": "arab-cold-war",
+      "kind": "event",
+      "locator": "Q4783165"
+    },
+    {
+      "dissent": false,
       "id": "arab-israeli-conflict",
       "kind": "event",
       "locator": "Q8669"
@@ -6758,6 +6764,12 @@
     },
     {
       "dissent": false,
+      "id": "iraqi-conflict",
+      "kind": "event",
+      "locator": "Q47015896"
+    },
+    {
+      "dissent": false,
       "id": "iraqi-insurgency",
       "kind": "event",
       "locator": "Q926905"
@@ -6785,6 +6797,12 @@
       "id": "israeli-declaration-of-independence",
       "kind": "event",
       "locator": "Q223732"
+    },
+    {
+      "dissent": false,
+      "id": "israeli-palestinian-conflict",
+      "kind": "event",
+      "locator": "Q151622"
     },
     {
       "dissent": false,
@@ -7367,6 +7385,12 @@
       "id": "myanmar-civil-war",
       "kind": "event",
       "locator": "Q110613097, P31 Q8465"
+    },
+    {
+      "dissent": false,
+      "id": "myanmar-conflict",
+      "kind": "event",
+      "locator": "Q852088"
     },
     {
       "dissent": false,

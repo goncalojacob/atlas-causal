@@ -5191,6 +5191,13 @@
             "sources"
           ],
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "parent",
+            "review"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -5237,6 +5244,15 @@
             "sources"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "iraqi-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -5957,6 +5973,13 @@
             "sources"
           ],
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "parent",
+            "review"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -6581,6 +6604,13 @@
             "review",
             "sources",
             "summary"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "parent",
+            "review"
           ],
           "on": "2026-09-22"
         }

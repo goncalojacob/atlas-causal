@@ -10574,6 +10574,12 @@
     },
     {
       "dissent": false,
+      "id": "arab-cold-war",
+      "kind": "event",
+      "locator": "\"Arab Cold War\", revision 1377860441"
+    },
+    {
+      "dissent": false,
       "id": "arab-israeli-conflict",
       "kind": "event",
       "locator": "\"Arab–Israeli conflict\", revision 1375600856"
@@ -14600,6 +14606,12 @@
     },
     {
       "dissent": false,
+      "id": "iraqi-conflict",
+      "kind": "event",
+      "locator": "\"Iraqi conflict\", revision 1377860410"
+    },
+    {
+      "dissent": false,
       "id": "iraqi-insurgency",
       "kind": "event",
       "locator": "\"Iraqi insurgency (2003–2011)\", revision 1375582804"
@@ -14621,6 +14633,12 @@
       "id": "israeli-declaration-of-independence",
       "kind": "event",
       "locator": "\"Israeli Declaration of Independence\", revision 1372097190"
+    },
+    {
+      "dissent": false,
+      "id": "israeli-palestinian-conflict",
+      "kind": "event",
+      "locator": "\"Israeli–Palestinian conflict\", revision 1377864296"
     },
     {
       "dissent": false,
@@ -15131,6 +15149,12 @@
       "id": "myanmar-civil-war",
       "kind": "event",
       "locator": "\"Myanmar civil war (2021–present)\", revision 1376089047"
+    },
+    {
+      "dissent": false,
+      "id": "myanmar-conflict",
+      "kind": "event",
+      "locator": "\"Myanmar conflict\", revision 1376655457"
     },
     {
       "dissent": false,

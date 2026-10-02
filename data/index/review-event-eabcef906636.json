@@ -1034,12 +1034,14 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "arab-cold-war",
       "review": {
         "flags": [
           "imported-facts",
           "m42-reinstated",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "filed-from-p361"
         ],
         "status": "draft"
       },
@@ -5427,6 +5429,35 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Anti-Comintern Pact"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "arab-cold-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Arab Cold War"
     },
     {
       "authors": [
@@ -28720,12 +28751,14 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "iraqi-conflict",
       "review": {
         "flags": [
           "imported-facts",
           "summary-drafted",
           "a9-place",
-          "a15-category-from-p31"
+          "a15-category-from-p31",
+          "filed-from-p361"
         ],
         "status": "draft"
       },
@@ -28770,6 +28803,35 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Iraqi Civil War of 2006–2008"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "iraqi-conflict",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Iraqi conflict"
     },
     {
       "authors": [
@@ -28909,6 +28971,38 @@
       "revised": null,
       "status": "active",
       "title": "Israeli Declaration of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "israeli-palestinian-conflict",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "arab-israeli-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Israeli–Palestinian conflict"
     },
     {
       "authors": [
@@ -32208,6 +32302,7 @@
       "origin": {
         "tool": "wikidata"
       },
+      "parent": "myanmar-conflict",
       "review": {
         "flags": [
           "imported-facts",
@@ -32216,13 +32311,44 @@
           "summary-from-lead",
           "title-from-article",
           "end-unstated",
-          "a15-category-from-p31"
+          "a15-category-from-p31",
+          "filed-from-p361"
         ],
         "status": "draft"
       },
       "revised": "2026-09-29",
       "status": "active",
       "title": "Myanmar civil war (2021–present)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "myanmar-conflict",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Myanmar conflict"
     },
     {
       "authors": [
@@ -38009,12 +38135,13 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "arab-israeli-conflict",
+      "parent": "israeli-palestinian-conflict",
       "review": {
         "flags": [
           "imported-facts",
           "a9-place",
-          "summary-from-lead"
+          "summary-from-lead",
+          "filed-from-p361"
         ],
         "status": "draft"
       },
@@ -48221,6 +48348,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "arab-cold-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "arab-spring",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -49427,6 +49560,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "iraqi-conflict",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "israeli-palestinian-conflict",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "italian-war-of-1521-1526",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -49506,6 +49651,12 @@
     },
     {
       "id": "mount-kent-skirmish",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "myanmar-conflict",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

@@ -1876,6 +1876,13 @@
             "summary"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "parent",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -5547,6 +5554,15 @@
             "category"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "arab-cold-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -13445,6 +13461,15 @@
         }
       ]
     },
+    "israeli-palestinian-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "italo-turkish-war": {
       "from": "git",
       "versions": [
@@ -15778,6 +15803,15 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "myanmar-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
