@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "capture-of-demerara-and-essequibo--treaty-of-paris-1783--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Demerara and Essequibo\", revision 1370608539, § lead"
+    }
+  ],
+  "from": "capture-of-demerara-and-essequibo",
+  "to": "treaty-of-paris-1783",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The near end's own article closes its lead with \"The Treaty of Paris in 1783 restored these territories to the Dutch\". The restoration is a clause about these two colonies and it presupposes their capture: there is nothing to restore unless they were taken. `precondition-of` and not `caused` because the treaty was brought about by the war and not by this expedition, and the sentence claims no more than that the treaty undid what the expedition did. `probable`, on one article's lead at one revision.",
+  "dispute": null
+}
