@@ -4521,6 +4521,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "action-of-17-july-1628",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "anglo-french-war-1627-1629",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Action of 17 July 1628"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "action-of-18-february-1639",
       "kind": "event",
@@ -5603,6 +5635,37 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Anglo-Irish Treaty"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "anglo-powhatan-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Anglo-Powhatan Wars"
     },
     {
       "authors": [
@@ -11420,6 +11483,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Guisa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-gully-hole-creek",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "invasion-of-georgia-1742",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Gully Hole Creek"
     },
     {
       "authors": [
@@ -24336,6 +24430,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "chickasaw-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Chickasaw Wars"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 1,
       "id": "chilean-war-of-independence",
@@ -24502,6 +24628,69 @@
       "revised": null,
       "status": "active",
       "title": "Chios expedition (1599)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "choctaw-civil-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Choctaw Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "chowanoc-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Chowanoc War"
     },
     {
       "authors": [
@@ -26974,6 +27163,37 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "dummer-s-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Dummer's War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -27772,6 +27992,37 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Eritrean War of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "esopus-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Esopus Wars"
     },
     {
       "authors": [
@@ -29778,6 +30029,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Fourth Geneva Convention"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "fox-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Fox Wars"
     },
     {
       "authors": [
@@ -34033,6 +34315,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "kieft-s-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Kieft's War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -34064,6 +34377,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Killing of Muammar Gaddafi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "king-george-s-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-austrian-succession",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "King George's War"
     },
     {
       "authors": [
@@ -35582,6 +35926,36 @@
       "revised": "2026-09-23",
       "status": "active",
       "title": "Marco Polo Bridge incident"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "massacre-at-matanzas-inlet",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spanish-assault-on-french-florida",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Massacre at Matanzas Inlet"
     },
     {
       "authors": [
@@ -38889,6 +39263,38 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "peach-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Peach War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -38945,6 +39351,38 @@
       "revised": null,
       "status": "active",
       "title": "Peninsular War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "pequot-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Pequot War"
     },
     {
       "authors": [
@@ -40070,6 +40508,37 @@
       "revised": null,
       "status": "active",
       "title": "Pukkwan campaign"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "queen-anne-s-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Queen Anne's War"
     },
     {
       "authors": [
@@ -45289,6 +45758,38 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Lons-le-Saunier"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "siege-of-louisbourg-1745",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "king-george-s-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "note": "A8 and deviation 1316: the item's P361 names only the War of the Austrian Succession, and the cited article, revision 1375096903, says the siege was fought \"during the War of the Austrian Succession, known as King George's War in the British colonies\". The atlas holds king-george-s-war, 1744-1748, which contains 1745 and is that war's North American theatre, so it is the nearer umbrella. The Austrian Succession is reached through it and dropped as redundant, which is filedUnder's own rule.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Louisbourg (1745)"
     },
     {
       "authors": [
@@ -52070,6 +52571,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "tuscarora-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Tuscarora War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -53726,6 +54259,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "yamasee-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Yamasee War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -54070,6 +54635,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "action-of-17-july-1628",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "action-of-18-february-1639",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -54179,6 +54750,12 @@
     },
     {
       "id": "anglo-french-war-1627-1629",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "anglo-powhatan-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -54659,6 +55236,12 @@
     },
     {
       "id": "battle-of-guisa",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-gully-hole-creek",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -55624,7 +56207,25 @@
       "rule": "degree-zero"
     },
     {
+      "id": "chickasaw-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "chios-expedition-1599",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "choctaw-civil-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "chowanoc-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -55762,6 +56363,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "dummer-s-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "dutch-conquest-of-malabar",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -55787,6 +56394,12 @@
     },
     {
       "id": "effacer-le-tableau",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "esopus-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -55847,6 +56460,12 @@
     },
     {
       "id": "first-silesian-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "fox-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -55984,6 +56603,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "kieft-s-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "king-george-s-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "laghouat-expedition-1708-1713",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -56021,6 +56652,12 @@
     },
     {
       "id": "malay-portuguese-conflicts",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "massacre-at-matanzas-inlet",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -56188,6 +56825,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "peach-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "pequot-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "portuguese-campaigns-in-the-amazon-river-of-1623-1625",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -56249,6 +56898,12 @@
     },
     {
       "id": "pukkwan-campaign",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "queen-anne-s-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -56650,6 +57305,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-louisbourg-1745",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-mafeking",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -56950,6 +57611,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "tuscarora-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "valladolid-debate",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -56978,6 +57645,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "yamasee-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     }
   ]
 }

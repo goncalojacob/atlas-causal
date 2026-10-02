@@ -2498,6 +2498,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-17-july-1628",
+      "kind": "event",
+      "locator": "Q4677272"
+    },
+    {
+      "dissent": false,
       "id": "action-of-18-february-1639",
       "kind": "event",
       "locator": "Q2594731"
@@ -2717,6 +2723,12 @@
       "id": "anglo-irish-treaty",
       "kind": "event",
       "locator": "Q541191, P31 Q625298"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-powhatan-wars",
+      "kind": "event",
+      "locator": "Q1342672"
     },
     {
       "dissent": false,
@@ -3809,6 +3821,12 @@
       "id": "battle-of-guisa",
       "kind": "event",
       "locator": "Q107261337"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gully-hole-creek",
+      "kind": "event",
+      "locator": "Q4871162"
     },
     {
       "dissent": false,
@@ -6134,6 +6152,12 @@
     },
     {
       "dissent": false,
+      "id": "chickasaw-wars",
+      "kind": "event",
+      "locator": "Q495858"
+    },
+    {
+      "dissent": false,
       "id": "chilean-war-of-independence",
       "kind": "event",
       "locator": "Q1072889"
@@ -6167,6 +6191,18 @@
       "id": "chios-expedition-1599",
       "kind": "event",
       "locator": "Q120848063"
+    },
+    {
+      "dissent": false,
+      "id": "choctaw-civil-war",
+      "kind": "event",
+      "locator": "Q60742221"
+    },
+    {
+      "dissent": false,
+      "id": "chowanoc-war",
+      "kind": "event",
+      "locator": "Q124518156"
     },
     {
       "dissent": false,
@@ -6542,6 +6578,12 @@
     },
     {
       "dissent": false,
+      "id": "dummer-s-war",
+      "kind": "event",
+      "locator": "Q1265114"
+    },
+    {
+      "dissent": false,
       "id": "dutch-conquest-of-malabar",
       "kind": "event",
       "locator": "Q122452193"
@@ -6647,6 +6689,12 @@
       "id": "eritrean-war-of-independence",
       "kind": "event",
       "locator": "Q607257, P31 Q1006311"
+    },
+    {
+      "dissent": false,
+      "id": "esopus-wars",
+      "kind": "event",
+      "locator": "Q1367977"
     },
     {
       "dissent": false,
@@ -7013,6 +7061,12 @@
       "id": "fourth-geneva-convention",
       "kind": "event",
       "locator": "Q973748"
+    },
+    {
+      "dissent": false,
+      "id": "fox-wars",
+      "kind": "event",
+      "locator": "Q5477039"
     },
     {
       "dissent": false,
@@ -7766,9 +7820,21 @@
     },
     {
       "dissent": false,
+      "id": "kieft-s-war",
+      "kind": "event",
+      "locator": "Q1377132"
+    },
+    {
+      "dissent": false,
       "id": "killing-of-muammar-gaddafi",
       "kind": "event",
       "locator": "Q431888"
+    },
+    {
+      "dissent": false,
+      "id": "king-george-s-war",
+      "kind": "event",
+      "locator": "Q517578"
     },
     {
       "dissent": false,
@@ -8009,6 +8075,12 @@
       "id": "marco-polo-bridge-incident",
       "kind": "event",
       "locator": "Q219230"
+    },
+    {
+      "dissent": false,
+      "id": "massacre-at-matanzas-inlet",
+      "kind": "event",
+      "locator": "Q106611332"
     },
     {
       "dissent": false,
@@ -8594,9 +8666,21 @@
     },
     {
       "dissent": false,
+      "id": "peach-war",
+      "kind": "event",
+      "locator": "Q1546544"
+    },
+    {
+      "dissent": false,
       "id": "peninsular-war",
       "kind": "event",
       "locator": "Q152499"
+    },
+    {
+      "dissent": false,
+      "id": "pequot-war",
+      "kind": "event",
+      "locator": "Q1207617"
     },
     {
       "dissent": false,
@@ -8765,6 +8849,12 @@
       "id": "pukkwan-campaign",
       "kind": "event",
       "locator": "Q12599044"
+    },
+    {
+      "dissent": false,
+      "id": "queen-anne-s-war",
+      "kind": "event",
+      "locator": "Q869045"
     },
     {
       "dissent": false,
@@ -9713,6 +9803,12 @@
       "id": "siege-of-lons-le-saunier",
       "kind": "event",
       "locator": "Q76721867"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-louisbourg-1745",
+      "kind": "event",
+      "locator": "Q1152894"
     },
     {
       "dissent": false,
@@ -10874,6 +10970,12 @@
     },
     {
       "dissent": false,
+      "id": "tuscarora-war",
+      "kind": "event",
+      "locator": "Q2038126"
+    },
+    {
+      "dissent": false,
       "id": "twelve-day-war",
       "kind": "event",
       "locator": "Q134900605"
@@ -11165,6 +11267,12 @@
       "id": "xinhai-revolution",
       "kind": "event",
       "locator": "Q190517"
+    },
+    {
+      "dissent": false,
+      "id": "yamasee-war",
+      "kind": "event",
+      "locator": "Q1520241"
     },
     {
       "dissent": false,

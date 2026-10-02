@@ -6370,6 +6370,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "eastern-north-carolina",
+      "kind": "place",
+      "names": [
+        "Eastern North Carolina"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -8211,7 +8238,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "great-lakes-region",
       "kind": "place",
       "names": [
@@ -14071,6 +14098,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "mississippi-river",
+      "kind": "place",
+      "names": [
+        "Mississippi River",
+        "Rio Mississípi",
+        "Rio Mississippi"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "mitu",
@@ -15278,6 +15334,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 2,
+      "id": "new-england",
+      "kind": "place",
+      "names": [
+        "New England",
+        "Nova Inglaterra"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -15481,7 +15565,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 4,
+      "degree": 6,
       "id": "north-america",
       "kind": "place",
       "names": [
@@ -16682,6 +16766,34 @@
           "a9-place"
         ],
         "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because deviation 1230 is not fixed: the import fetches only the P17 countries, so the P276 town it should reach first is not there to read and the engagement came out placeless with a lane derived from its own point. The point and the names are the town item's own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "pavonia-new-netherland",
+      "kind": "place",
+      "names": [
+        "Pavonia",
+        "Pavonia, New Netherland"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -21048,6 +21160,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "south-carolina-q1456",
+      "kind": "place",
+      "names": [
+        "South Carolina",
+        "Carolina do Sul"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "south-deerfield-massachusetts",
@@ -21262,6 +21402,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "southeastern-united-states",
+      "kind": "place",
+      "names": [
+        "Southeastern United States",
+        "Região Sudeste dos Estados Unidos"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -21592,7 +21760,36 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 2,
+      "degree": 1,
+      "id": "st-lawrence-river",
+      "kind": "place",
+      "names": [
+        "St. Lawrence River",
+        "Rio São Lourenço",
+        "Rio São Lourenço (América do Norte)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 3,
       "id": "st-simons-georgia",
       "kind": "place",
       "names": [
