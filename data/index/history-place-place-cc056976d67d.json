@@ -1002,6 +1002,15 @@
         }
       ]
     },
+    "black-rocks-at-pungo-andongo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "bloody-ridge": {
       "from": "git",
       "versions": [
@@ -2201,6 +2210,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "cuanza-river": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -3548,6 +3566,15 @@
         }
       ]
     },
+    "goa-q1171": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "gonaives": {
       "from": "git",
       "versions": [
@@ -4371,6 +4398,15 @@
         }
       ]
     },
+    "jambi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "jammu-and-kashmir-q2571484": {
       "from": "git",
       "versions": [
@@ -4847,6 +4883,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "koneswaram-temple": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

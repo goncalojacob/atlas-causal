@@ -320,6 +320,16 @@
         {
           "first": true,
           "on": "2026-10-01"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-10-01"
         }
       ]
     },
@@ -354,6 +364,15 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-10-02"
         }
       ]
@@ -662,6 +681,15 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-10-02"
         }
       ]
@@ -1140,6 +1168,16 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-10-01"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review",
+            "sitelinks"
+          ],
           "on": "2026-10-01"
         }
       ]
