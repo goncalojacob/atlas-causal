@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agadir-crisis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "a15-days",
+      "a15-country-refused",
+      "filed-by-span-and-subject"
+    ],
+    "note": "A15(4): the item's only date is P585 1911-11 (month); the lead states July 1911 and resolution on 4 November 1911, the range carried here. A15(6): the place would have been morocco-q1028, from the item's own P625 (Morocco's centroid) and then P276 and P17; refused because the item's first P571 is 1956, after the event ended. The lane is that same own point. A6: P361 is Q310802, not a record here, so the filing is by span and subject inside `scramble-for-africa`. Nobody has read this record."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q164771",
+  "wikipedia": {
+    "en": "Agadir Crisis",
+    "pt": "Crise de Agadir"
+  },
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q164771"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Agadir Crisis\", revision 1376783721"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Agadir Crisis\", revision 1376783721, first sentence: \"in July 1911\""
+    }
+  ],
+  "title": "Agadir Crisis",
+  "summary": "The English Wikipedia article \"Agadir Crisis\", at revision 1376783721, opens: \"The Agadir Crisis, Agadir Incident, or Second Moroccan Crisis, was a brief crisis sparked by the deployment of a substantial force of French troops in the interior of Morocco in July 1911 and the deployment of the German gunboat SMS Panther to Agadir, a Moroccan Atlantic port. Germany did not object to France's expansion but demanded \"territorial compensation\" for itself. Berlin threatened warfare, sent a gunboat and stirred up German nationalists. Negotiations between Berlin and Paris resolved the crisis on 4 November 1911: France took over Morocco as a protectorate in exchange for territorial concessions to German Cameroon from the French Congo.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q164771, whose only date is P585 November 1911 at month precision; the span carried here is the one the article's own lead states, July 1911 to 4 November 1911.",
+  "when": {
+    "start": 1911,
+    "end": 1911,
+    "date": "1911-07",
+    "endDate": "1911-11-04"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "scramble-for-africa",
+  "actors": []
+}
