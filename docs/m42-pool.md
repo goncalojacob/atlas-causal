@@ -23786,3 +23786,12 @@ it on reading articles, which is the only thing that writes an edge.
   refusal class of the 2 October stand (a marker in a subordinate clause whose
   subject is neither end); and C8, whose clearest single line is still
   `gulf-of-tonkin-incident`.
+
+### The check, green on this fire's head
+
+Run **2383** on `b4f553ff`, `conclusion: success` — the whole job: records
+validated, the tests, and both index steps. Locally on the same head, the two
+commands the check uses since M63: **1,941 pure tests, 1,941 passing, 0 failing,
+0 skipped**, and **313 browser tests, 313 passing, 0 failing, 0 skipped**, both
+exit 0. The two failures this fire's own batch caused (deviation-free, both
+fixed in `c49a3d71`) are in the batch-89 section.
