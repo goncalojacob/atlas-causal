@@ -24774,3 +24774,27 @@ are what showed it.
 and -91 stand's §6, plus deviation 1548's point-only reuse (this fire met the
 same shape from the other side and reused by hand again), §2 above, and the
 `docs/m42-pool.md` §3 table stopped at batch 17.
+
+### The check, green on this fire's head
+
+**Run 2435 on `98ad48d3` concluded `success`**, read in the job's own steps:
+*Validate records* and *Tests* both green, and the index step correctly skipped
+because this is a push and not a pull request. Locally on the same head: **1,941
+pure tests, 1,941 passing, 0 failing, 0 skipped**, and **313 browser tests, 313
+passing, 0 failing, 0 skipped**, both exit 0. `node tools/validate.mjs --index`:
+**0 errors, 637 warnings**.
+
+**Run 2428 on `44581565` was red before that, and the whole of why is deviation
+1562 above** — not load, and read rather than assumed: the failing test was named
+from the job log, reproduced by probe, and fixed. **A sibling worth the owner's
+eye:** `origin/m42b`'s own fire, within the same hour, hit the same *class* of
+fault from the other side — *"the batch's 24 records shifted the index id order,
+which re-breaks the ties the graph layout and the label placer resolve by id, so
+a different node is the longest on screen"* — and documented it rather than fixing
+it (its deviation 1561). **Two lanes, one hour, two browser tests whose subject is
+whatever the data happens to make biggest or emptiest.** The pattern is that a
+test which picks its own target out of the picture is a test the next batch of
+records can break, and there are probably more of them; a pass over the browser
+suite looking for that shape is the cheapest reliability work available, and it is
+test code, so it is a line for the owner rather than a thing either records lane
+should do on its own.
