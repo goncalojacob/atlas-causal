@@ -25222,3 +25222,228 @@ of the test's own comment, and the data was changed to obey it. Run 2446 on
 **1,941 pure tests, 1,941 passing, 0 failing, 0 skipped**, and **313 browser
 tests, 313 passing, 0 failing, 0 skipped**, both exit 0.
 `node tools/validate.mjs --index`: **0 errors, 637 warnings**.
+
+## Batch 99 — the Western Desert campaign, the stage the Tunisian campaign's own source named, 2 October
+
+**The stand after 98 said the vein had three rows left and that El Alamein and the
+Western Desert campaign were a pair with an edge between them. That reading was
+wrong, and the whole of why is §A below: El Alamein's own `P361` **is** the
+Western Desert campaign, so the one edge the pair had is a parent's to its own
+child, which A14's C8 rule forbids.** What is left after that reading is corrected
+is one record that can be connected and four that cannot — so this batch is one
+record, and A15(1) is what says a batch takes only what it can connect. **Africa
+255 → 256 and now trails Asia by three**, where six batches ago it trailed by nine.
+
+**Two records.** `western-desert-campaign`, `Q625798`, 27 sitelinks, 11 June 1940
+to 4 February 1943, place **`western-desert`**, which is the second record:
+`Q14314106`, 23 sitelinks, `(28.4167, 26.5833)`, `region`. Filed under
+`north-african-campaign` alone, which is its own `P361` (`Q218678`) and the only
+umbrella that adds anything — `world-war-ii` is reachable through it, which is
+deviation 1564's rule.
+
+| what the passes asked | what the items and the articles said |
+| --- | --- |
+| A9, the places | **The chain reached A9's second step and stopped there.** The campaign's own `P625` is `(28.95, 30.8333)`, which is El Alamein the town's point to four decimals — the first step reuses and never writes, and the one place record within a degree of it is `alexandria`, which folds to no name the item gives. So the chain went on to `P276` `Q14314106`, the Western Desert, and wrote the place. `P17` — `Q79`, Egypt — was **never reached**, so A15(6)'s gate had nothing to refuse for the fourth batch running, and `egypt-q79` (a `country` place 0.7° from the Western Desert's point) was never a candidate. |
+| the class table | **One class added: `Q8514`, desert, as a `place` at `region`.** It is `Q14314106`'s only `P31` and the table had never decided about it, so `classify()` would have returned no precision, `eventPlace` would have reported `offClass`, and the chain would have fallen through to `P17` — which is to say **a desert would have been replaced by a country**. The label and the gloss (*"barren area of land where little precipitation occurs"*) were read from the class item itself over the network, as `Q164142` was by batch 98; `region` is Q82794's and Q3502482's precedent, ground larger than a settlement and not a state. |
+| A15(4) and A7, the days | **Nothing to widen.** `P580`/`P582` are 1940-06-11 and 1943-02-04. The article's **first sentence states no dates at all** — *"The Western Desert campaign took place in the deserts of Egypt and Libya and was the main theatre in the North African campaign of the Second World War"* — and its title carries no span, so `span-vs-lead-dates` and `span-vs-article-title` have nothing to compare and the item's span stands unflagged. |
+| A15(7), the lane | africa, derived from the item's own point through `createRegionDeriver`, `method: "inside"`; the place's own point derives africa too, so `lanesAgree` and nothing is cleared. |
+| A15(12), the categories | `war`. `P31` is `Q831663`, military campaign, in the table at `war` since M42 batch 18 and the same single class the Tunisian campaign carries. |
+| A11(a), the actors | **The item carries no `P710`**, so the list is the lead's: `united-kingdom` and `nazi-germany`, both `belligerent`. **The Kingdom of Italy is refused for the reason batch 96 gives** — this atlas's `italy` is the 1878–1885 record the CShapes import wrote — and that refusal is more expensive here than in the three batches before it, because the lead's own account is *"Military operations began in June 1940 with the Italian declaration of war"* and *"Italy was the main Axis power in the Mediterranean and North Africa"*. The principal belligerent of this campaign is the one actor the atlas cannot name. |
+| A15(2), the cache | `Q625798` at revision **1377719249**, written to `tools/import/cache/wikipedia/` and added to the title table with `Q14314106`. `node tools/cache-evidence.mjs`: **0 revisions that should be on disk and are not**, over all 3,080 citations. |
+| A15(8), the redirect test | Both titles were asked of the action API with `redirects=1` and `prop=pageprops`: *"Western Desert campaign"* → `Q625798`, *"Western Desert"* → `Q14314106`, no redirect on either, and the REST summary's `type` is `standard`. The leads are the items' own. |
+
+**One edge, and it is the one batch 98 asked for by name.**
+`western-desert-campaign--tunisian-campaign--caused`, `probable`, on the campaign's
+own § Analysis: *"The Axis forces retreated through Libya into Tunisia and fought
+the Tunisian campaign, eventually to be trapped between the Anglo-American forces
+of the First Army to the west and the Eighth Army from the east."* Batch 98's
+`operation-torch--tunisian-campaign--caused` ends with *"The other cause the
+sentence names, the defeat in the Western Desert, is not a record this atlas
+holds — `Q625798` — and when it is written this edge should be read beside a
+second one from it."* It is written and this is that second edge: the two are the
+two halves of one pincer, east and west.
+
+**A15(5) did a day's work on this edge and it is worth reading twice.** The
+obvious quote was the campaign's **lead** — *"The Eighth Army drove Axis forces
+out of Libya to Tunisia, which was invaded from the west by the Allied First Army
+in Operation Torch. In the Tunisian campaign the remaining Axis forces
+surrendered"* — and `verdictFor` **refused it**: `write: false`, *"the quote names
+a third event the atlas holds as the cause"*, `reattribute: operation-torch`.
+That is the amendment working exactly as written: the lead's sentence names Torch,
+the edge from Torch already exists, and an edge drawn from this article's subject
+on that sentence would have been the second copy of one argument. The § Analysis
+sentence names no third held event and returns `write: true`. **The refusal class
+refused one quote and the reattribution clause refused a second; both are counted
+below.**
+
+### What this batch left, and the two rules that left it
+
+**Four candidates refused, and C8 is three of the four.** The stand after 98 named
+five rows in this vein; the items say the vein is shaped differently than it read.
+
+1. **Second Battle of El Alamein, `Q153376`** — 47 sitelinks, the largest
+   unimported row in the vein. Its `P361` is `Q625798` **and** `Q10564977`
+   (*Battles of El Alamein*, a series the atlas does not hold and which carries no
+   span and no point). So its only held umbrella is the record this batch wrote,
+   and its one obvious edge — the lead's *"The Allied victory at El Alamein was
+   the beginning of the end of the Western Desert Campaign"* — is a **child's to
+   its own parent**, which C8 forbids. Its other two candidates both name
+   Operation Torch and so fall to A15(5)'s reattribution clause, and the third
+   (*"forced to retreat from Egypt and Libya to the borders of Tunisia"*) names
+   Tunisia the country and not the campaign, so writing it would have been the
+   import inventing the link that `verdictFor`'s `write: true` does not check for.
+   **Left, with no edge it is allowed to write.**
+2. **Italian invasion of Egypt, `Q698421`**, and **Battle of Gazala, `Q327035`**,
+   and **Battle of Alam el Halfa, `Q541997`** — the three `P527` of the record
+   this batch wrote, all three unheld, all three `P361` `Q625798`. Every one of
+   them is in the same position as El Alamein: the obvious edge is to the stage
+   above, and C8 forbids it. **Left.**
+3. **East African campaign, `Q1052120`** — 30 sitelinks, africa, and the one row
+   of the vein C8 does *not* block, because it carries **no `P361` at all** and
+   would file under `world-war-ii` by span and subject. Its place is free: `P276`
+   is `Q27407`, which this atlas already holds as `east-africa`. **It was left for
+   a different reason: no edge.** Its article names five held events and not one
+   of them causally. *"In late 1940, Italian forces suffered defeats in the
+   Mediterranean Campaign, Operation Compass in the Western Desert, the Battle of
+   Britain and in the Greco-Italian War. General Ugo Cavallero … thought that the
+   Italians should abandon offensive actions"* is the nearest thing to a cause, and
+   `verdictFor` refuses it — it names `battle-of-britain`, a third held event, as
+   one of the causes. The Second Italo-Ethiopian War is the edge a reader would
+   expect, and **it was looked for in both articles and is not stated in either**:
+   the campaign's own article says only that Italian East Africa was proclaimed
+   *"from Ethiopia after the Second Italo-Abyssinian War"*, and the war's own
+   article (revision 1376450865, fetched for this) says only that *"Ethiopian
+   resistance to Italian rule would continue until the country was liberated in
+   1941"*. Neither states that the one brought about the other. **A date is not a
+   claim and this fire did not write one.** `second-italo-ethiopian-war` is in the
+   795, so that edge, if a person finds it stated, is the one that would put an
+   African WWII cluster into the largest component.
+
+**C8's bill in this lane is now nine edges over three fires, and this is where it
+stops being an inconvenience.** Batch 98 reported the first two; this batch
+refuses four more of exactly the same shape, and the shape is not incidental —
+**the vein the stand after 96 called "a lane's worth of work that needs no
+decision from anybody" is an umbrella and its children, which is the one shape C8
+is about.** Everything below `north-african-campaign` and `western-desert-campaign`
+is now unreachable by any edge a batch may write. A records lane cannot decide
+C8 and does not try to; what it can do is say how much is behind the door. **It is
+the rest of the North African campaign.**
+
+**And the missing sixth type was met three more times.** §4 of the stand after 96
+and 97 named four; this batch adds `greco-italian-war --> western-desert-campaign`
+(*"On 9 February, Churchill ordered the advance to stop and troops to be
+dispatched to Greece … since a German attack through Macedonia was thought
+imminent"*), `battle-of-greece` on the same transfer (*"The best-equipped units in
+XIII Corps went to Greece as part of Operation Lustre in the Battle of Greece"*),
+and `east-african-campaign --> western-desert-campaign` (*"British Commonwealth
+and Empire troops released after the conclusion of the East Africa Campaign were
+sent to Egypt"*). All three are the same sentence shape: **an article states that
+one event changed how a war already running was fought, by moving the troops
+fighting it.** None of the five types says that. `greco-italian-war` is in the
+795, so this is the second fire in a row in which the missing type is what stands
+between an African cluster and the largest component. **Seven refusals now, over
+three fires.**
+
+### The counts
+
+| | before 99 | after 99 |
+| --- | --- | --- |
+| active events | 1,466 | **1,467** |
+| **main events** | **234** | **234** |
+| active edges | 1,237 | **1,238** |
+| largest component | 795 | **795** |
+| components | 441 | **441** |
+| active events with no edge | 340 | **340** |
+| **edges crossing an umbrella (A15(11))** | **619** | **619** |
+| place records | 799 | **800** |
+
+Per lane (A10): **Africa 255/35 → 256/35**, Asia 259/57, Americas 396/56, Europe
+556/86. `node tools/validate.mjs`: **0 errors, 637 warnings** — the same warning
+count as before the batch, which is the check that the two records added none.
+**The edge is inside one umbrella and not across one**, which is why A15(11)'s
+number does not move: both ends are children of `north-african-campaign`. The
+component count does not move either, and for the better reason: the new record
+joined batch 98's island of two rather than making a third island, so **the cluster
+this vein has produced over four batches is now three islands of 3, 3 and 1** where
+one connected cluster of six was available and C8 refused five of its edges.
+
+**Deviation 1569 — `review.note` is 500 characters and this lane's note has
+reached it.** Rule 1 refused both of this batch's records on `/review/note`
+before anything else: the event's first note was 810 characters and the place's
+535, against the schema's `maxLength: 500`. The shape is not padding — it is one
+clause per pass (A6/A8, A9, A15(4), A15(7), A15(12), A11(a)) and batch 98's
+records are at 472, so the ceiling was two passes away and nothing said so. The
+event's note was cut twice to fit and **the Kingdom of Italy refusal came out of
+it**, which is the kind of thing that belongs on the record and not only in a pool
+file. Worth knowing for the next fire: write the note last, count it, and put what
+will not fit in the batch note. Worth deciding by somebody: whether a record whose
+provenance is six amendments deep wants a longer note than one a person wrote by
+hand.
+
+## Where the run stands after batch 99, for the fire that picks it up
+
+**The stands after 92 and after 96/97 still decide what a fire can do; read them.**
+What this batch adds to them is one correction and one bill.
+
+**1. The correction: the Western Desert vein is closed, and the stand after 98
+read it wrong.** That stand named five candidates and said *"El Alamein and the
+Western Desert campaign are a pair — the campaign's lead names the battle as the
+thing that ended it — so a batch taking both has an edge to write."* The items say
+otherwise: **`Q153376`'s own `P361` is `Q625798`**, so the pair's one edge is a
+parent's to its own child and A14's C8 rule forbids it. The same is true of the
+three `P527` this batch's record now has — the Italian invasion of Egypt
+`Q698421`, the Battle of Gazala `Q327035`, the Battle of Alam el Halfa `Q541997`,
+none of them held, none of them on `origin/m42b`. **Every remaining row of this
+vein is a child of a record this atlas holds, and so has no edge a batch may
+write.** Do not re-open it expecting a pair: the next fire that wants it must
+either have C8 decided or find an edge that leaves the umbrella, and this batch
+looked for one in two articles and found none.
+
+**2. The one row of the vein C8 does not block is `east-african-campaign`,
+`Q1052120`, and it is blocked by the other thing.** No `P361` at all, so it files
+under `world-war-ii` by span and subject at +0 main; its place is free, because
+`P276` is `Q27407` and this atlas already holds `east-africa`. **What it has not
+got is an edge**, and this batch established that over two articles rather than
+guessing: the campaign's own (revision 1376827223) names five held events and none
+causally, and the Second Italo-Ethiopian War's own (revision 1376450865) — the
+edge a reader would expect, and `second-italo-ethiopian-war` **is in the 795** —
+states only that Ethiopian resistance *"would continue until the country was
+liberated in 1941"*. Neither article says the one brought about the other. **If a
+person finds that sentence in a work Wikipedia cites, that single edge puts an
+African WWII cluster into the largest component.** It is the cheapest unclaimed
+connection this lane knows of.
+
+**3. The bill, stated once so the owner can price the two open questions.**
+Over batches 96 to 99 this vein has cost **nine edges to C8** (two in 98, four in
+99, and the three the stand after 96 named are the other question's) and **seven
+edges to the missing sixth type** (four over 94–97, three in 99). Three of the C8
+refusals and at least two of the type refusals would have reached the 795.
+What the lane has instead is **three islands of 3, 3 and 1** where one connected
+cluster of seven was available. Neither rule is a records lane's to change and
+this fire did not try; the number is here because the owner asked for chains
+throughout the globe and time and this is what is standing in front of them.
+
+**4. The sixth type, said once more and precisely, because it is now the most
+expensive thing in this lane.** Seven sentences, all one shape: *an article states
+that one event changed how a war already running was fought* — by moving the
+troops fighting it, or the supplies, or the priority. `caused` and `enabled` both
+assert the later war was brought about; `reacted-to` reverses it;
+`precondition-of` reads backwards; `inspired` is about ideas. The three this
+batch met are in its own section above, with their quotes.
+
+**5. Still open, unchanged, and still the owner's.** Everything in §10 of the
+stand after 96 and 97, plus §§1–4 above. `docs/m42-pool.md` §3's table still stops
+at batch 17, and `docs/m53-polities.md` §4.1 still carries its figures paragraph
+four times with two of the four stale — deviation 1563, and this fire updated the
+two current copies again and again left the stale two alone, for 1563's reason.
+
+**6. Deviation numbers: this fire took 1569 and nothing else.** `origin/m42b` had
+taken up to **1568** when it was read at 19:30Z. Take the next above 1569, and
+read that branch again before you take one.
+
+**7. The network, unchanged, with one thing worth knowing.** `Special:EntityData`,
+`wbgetentities`, the action API (`prop=revisions`, `prop=extracts`,
+`prop=pageprops`) and the REST summary endpoint all answered. **`wbgetentities`
+returned `429` four times in a row before answering**, which the retry loop of up
+to thirty tries at seven seconds absorbed; a fire that calls it without the loop
+will read a rate limit as a missing item. Eight documents over the batch.
