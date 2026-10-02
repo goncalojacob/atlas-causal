@@ -20655,3 +20655,31 @@ after the commit that writes the records, and `sources.html` is part of it** (de
    Read deviation 1484 before taking the next one, and run its three greps: `[Dd]eviations\? <n>`
    over both pool files and `STATUS.md`, `^<n>\. \*\*` over `STATUS.md`, and
    `^\*\*Deviation <n>` over both pool files.
+
+### What this fire left on disk
+
+*Eight commits: the claim; the merge of `origin/m0`; the merge of `origin/m42`; batch 75's
+records, index and cache; batch 76's; batch 77's; this fire's notes and stand; the fourth
+index commit that deviation 1540 made necessary; and the note recording it. Each batch ran
+records → `build-index.mjs` → index → `cache-evidence.mjs --fill`, which is deviations 798,
+1394 and A15(2) in order — and **deviation 1540 says that order is wrong about one thing**:
+the rebuild belongs after the commit, not before it.*
+
+*`validate --index` is clean at **0 errors, 637 warnings**. A15(2) reports **0 revisions that
+should be on disk and are not**, 2,951 of 3,029 citations on disk at the revision cited and
+78 unholdable beside a more-cited revision of the same item.*
+
+*The suite at this fire's head, run the way the check runs it: **1,941 pure tests, 1,941
+passed, 0 failed, 0 skipped** and **313 browser tests across the 40 suites, 313 passed,
+0 failed, 0 skipped**. Deviation 1388's single browser failure did not reproduce, for the
+second fire running.*
+
+*Two things are worth saying about how the suite was run, because both cost this fire time.
+**The first full run came back 4 failed and the second 3**, and all of them were one defect
+plus a race: `tests/build-index.test.mjs` → "the repository data/ validates and its index is
+fresh" is deviation 1540, real; the two rule-24 failures of the second run
+(`tests/m62.test.mjs`, `tests/m67.test.mjs`) were **the suite reading `data/index/` while
+`build-index.mjs` was rewriting it**, and both pass alone and in the clean run. **Never run
+`build-index.mjs` while a suite is running**, and never read a suite's totals off a `tail`
+— the first run's detail was lost to one, and finding which four tests failed cost a whole
+second run.*
