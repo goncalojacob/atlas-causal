@@ -24771,12 +24771,12 @@ on the record head reported `docs/m53-polities.md §4.1 says 411 counted by the 
 rule` against a measured 412, which is the retake above; the other eleven were rule
 16 on the stale index and went with `tools/build-index.mjs`.
 
-**Run 2468 on `79930ee98` was still in its Tests step when this was written** — its
-`Validate records` step concluded `success` at 19:39:25Z and the two index steps had
-not run. Runs 2466 and 2467, on the record head and the index head, were **cancelled
-by the push that superseded them** and not red. The local figures above are on the
-same head the run is on, so a red Tests step would be news rather than a repeat;
-whoever reads this next should look at the run before trusting the line above it.
+**Run 2469 on `66d2fe649` concluded `success`** — the head this entry was written on,
+with the records, the index, the pool note and this account all on it. Runs 2466, 2467
+and 2468, on the record head, the index head and the pool-note head, were each
+**cancelled by the push that superseded them** and none of them was red: the one red
+thing this fire met was local, is § the check above, and was fixed before the first
+push.
 
 **M42 batch 87 — the inverse vein measured, and three umbrellas off it, 1 October.**
 The fire that claimed at 23:30Z merged `origin/m0`, then answered the first of the
