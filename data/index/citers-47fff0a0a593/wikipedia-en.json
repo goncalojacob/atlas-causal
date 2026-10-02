@@ -4946,6 +4946,12 @@
     },
     {
       "dissent": false,
+      "id": "first-sino-japanese-war--russian-invasion-of-manchuria--reacted-to",
+      "kind": "edge",
+      "locator": "\"Russian invasion of Manchuria\", revision 1370729162"
+    },
+    {
+      "dissent": false,
       "id": "first-sino-japanese-war--russo-japanese-war--precondition-of",
       "kind": "edge",
       "locator": "\"Russo-Japanese War\", revision 1375146144, § lead"
@@ -12323,6 +12329,12 @@
       "id": "battle-of-rancagua",
       "kind": "event",
       "locator": "\"Battle of Rancagua\", revision 1371210959"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-rancagua",
+      "kind": "event",
+      "locator": "\"Battle of Rancagua\", revision 1371210959, first sentence: \"on October 1, 1814, to October 2, 1814\""
     },
     {
       "dissent": false,
