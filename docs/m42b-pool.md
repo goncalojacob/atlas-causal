@@ -21307,6 +21307,34 @@ worth the same look: Gibraltar, the Bosphorus, Bab-el-Mandeb, Hormuz, Malacca.
   raid; it is not the raid, which that article dates to a failed agreement and an army sent back
   in October 1514. A near miss and not an edge.
 
+### Deviation 1556: a year in the prose is a measurement, and three tests disagreed about it
+
+Batch 83 moved the corpus's earliest active event from 1492 to **1415**, and the atlas says that
+year out loud in four files — the masthead's tagline in `index.html`, `WHAT_IT_IS` in
+`src/intro.js` (the intro card), `about.html`'s lead and `essay.html`'s *"The atlas runs 1492 to
+2026"*. **Two tests derive the number and one pinned it**, so the three could not all pass:
+
+| test | what it asks | at 1415 |
+| --- | --- | --- |
+| `tests/m82.test.mjs` → A3 | `WHAT_IT_IS` contains `String(atlas.extent.min)` | **failed** until the sentence said 1415 |
+| `tests/m89.test.mjs` → §9 | `essay.html` contains `` `${atlas.extent.min} to ` `` | **failed** the same way |
+| `tests/m85.test.mjs` | `about.html` contains the literal *"The history of the world since 1492 as a graph"* | **failed once the other two were fixed** |
+
+The year was changed in all four files — it is a reading of the corpus and the comment beside
+each one already said so — and then `tests/m85.test.mjs` was the one thing left wrong. **That
+file's own header says what the defect is**: *"Nothing here pins a count or a pixel: every
+expectation about the corpus is derived from the corpus the test is run on, which is 22
+September's lesson — M83's merged-lines test was true at 581 events and false at 668."* A copy of
+`WHAT_IT_IS` written out in a string is exactly a pinned count. The assertion now imports
+`WHAT_IT_IS` and compares against the page with its line wrapping collapsed, which is the only
+reason the old literal was a fragment rather than the sentence.
+
+**This is the one test file this lane has edited and the merge rule will drop it.** STEP 1 keeps
+`origin/m0`'s side of any test file, so the next fire that merges `origin/m0` will get the
+literal back and the check will go red on it again until `m0` carries the same change. **It is
+one line and it belongs on `m0`**, not here; a fire that hits this again should re-apply it and
+say so rather than touch the prose.
+
 ## Where the run stands, for the fire that picks it up
 
 *2 October, the 09:36Z fire. **Two batches, 48 active events, two umbrellas, three edges and the
@@ -21389,10 +21417,11 @@ The africa 15th century went from nothing to twelve and its 16th from 17 to 38.
    War*, refused for want of a lane; `Q86667216` *Spanish–Algerian conflicts*, which A2 refuses
    for want of an English article and whose eight children are therefore unfilable; the
    remaining 36 of batch 82's 64 candidates, which are Mediterranean rather than African ground.
-8. **Deviation numbers: 1555 is the highest taken.** This fire used **1552** (two `P585` values
+8. **Deviation numbers: 1556 is the highest taken.** This fire used **1552** (two `P585` values
    make an inverted interval), **1553** (two lane polygons reach one point and the nearer one is
    the wrong continent), **1554** (the sweep is blind to a record's other names) and **1555** (a
    hand-written summary must use the importer's own quotation marks or `src/summary.js` cannot
-   split it). Read
+   split it) and **1556** (the year in the prose is a measurement, and `tests/m85.test.mjs`
+   pinned it). Read
    deviation 1484 before taking the next one and run its three greps over **both** pool files and
    `STATUS.md`.

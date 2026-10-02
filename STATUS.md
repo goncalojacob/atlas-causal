@@ -25160,6 +25160,13 @@ invisible to it — the crossing edge's own quote says *"the Battle of Ksar al-K
 found by eye, not by the sweep. **Deviation 1555**: a hand-written summary must use the
 importer's own straight quotes or `src/summary.js` cannot split the source's account from the
 note; `tests/search.test.mjs` caught it.
+**Deviation 1556**: the year the atlas says it begins at is a measurement, and three tests
+disagreed about it. `tests/m82.test.mjs` and `tests/m89.test.mjs` derive it from
+`atlas.extent.min` and `tests/m85.test.mjs` pinned the literal *"since 1492"*, so the four files
+that say it — the masthead, the intro card, `about.html` and `essay.html` — now say 1415, and
+`tests/m85.test.mjs` reads `WHAT_IT_IS` instead of copying it, which that file's own header
+already required. **That is the one test file this lane has edited and STEP 1's merge rule will
+drop it**: the line belongs on `m0`.
 **The main count rose by exactly two, both of them umbrellas, and A6's reason is in both notes.**
 Largest component **790** and crossing count **619**. **Africa 300 and asia 258 against A10's
 303**, so A15(1)'s pause holds — and africa is now three events short of lifting it on its own,
