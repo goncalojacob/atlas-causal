@@ -1,0 +1,38 @@
+{
+ "schema": 1,
+ "id": "battle-of-chilcheollyang--battle-of-myeongnyang--precondition-of",
+ "kind": "edge",
+ "status": "active",
+ "supersededBy": null,
+ "aliases": [],
+ "authors": [
+  {
+   "name": "Claude (assistant draft, unreviewed)",
+   "github": null
+  }
+ ],
+ "license": "CC-BY-SA-4.0",
+ "created": "2026-10-02",
+ "revised": null,
+ "review": {
+  "status": "draft",
+  "flags": [
+   "edge-drafted"
+  ]
+ },
+ "origin": {
+  "tool": "assistant"
+ },
+ "sources": [
+  {
+   "source": "wikipedia-en",
+   "locator": "\"Battle of Myeongnyang\", revision 1370450929, § lead"
+  }
+ ],
+ "from": "battle-of-chilcheollyang",
+ "to": "battle-of-myeongnyang",
+ "type": "precondition-of",
+ "confidence": "probable",
+ "explanation": "The far end's own article says Yi Sun-sin held the strait \"with only 13 ships remaining from Admiral Wŏn Kyun's disastrous defeat at the Battle of Chilcheollyang\". The sentence does not say the earlier defeat brought the later battle about — the Japanese fleet sailing to support the advance on Hanyang is what did that — but it states what the Joseon navy had to fight it with, which is the condition the engagement was fought under and the whole of why it is remembered as a last stand. `precondition-of` and not `caused` for exactly that reason, and `probable` because one article's lead is the only thing cited here.",
+ "dispute": null
+}
