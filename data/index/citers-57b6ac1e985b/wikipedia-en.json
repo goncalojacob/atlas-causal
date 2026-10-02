@@ -12602,6 +12602,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-talandongo",
+      "kind": "event",
+      "locator": "\"Battle of Talandongo\", revision 1370590437"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-talavera",
       "kind": "event",
       "locator": "\"Battle of Talavera\", revision 1370880065"

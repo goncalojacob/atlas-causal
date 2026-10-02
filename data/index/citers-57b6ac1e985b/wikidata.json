@@ -4676,6 +4676,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-talandongo",
+      "kind": "event",
+      "locator": "Q130485022"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-talavera",
       "kind": "event",
       "locator": "Q169023"

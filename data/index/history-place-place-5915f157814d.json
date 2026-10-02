@@ -1003,7 +1003,7 @@
       ]
     },
     "black-rocks-at-pungo-andongo": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1541,6 +1541,15 @@
             "summary"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "cambambe": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -2214,7 +2223,7 @@
       ]
     },
     "cuanza-river": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3567,7 +3576,7 @@
       ]
     },
     "goa-q1171": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4399,7 +4408,7 @@
       ]
     },
     "jambi": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -4887,7 +4896,7 @@
       ]
     },
     "koneswaram-temple": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

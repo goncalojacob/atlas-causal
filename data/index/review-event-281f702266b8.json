@@ -16273,6 +16273,39 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "battle-of-talandongo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "angolan-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A3/A6: the article's own part_of is Colonization of Angola (Q5148448), which this atlas does not hold and which carries no P580, P582 or P585, so the import had nothing to file it under. It is filed under the umbrella the atlas does hold whose span and subject fit: \"Angolan Wars\" at revision 1370826485 calls itself the conflicts in Angola involving Portugal and the Kingdom of Ndongo \"from 1579 to 1683\", and this battle names those two belligerents on 1583-02-02.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Talandongo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "battle-of-talavera",
@@ -49601,6 +49634,12 @@
     },
     {
       "id": "battle-of-tabocas",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-talandongo",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

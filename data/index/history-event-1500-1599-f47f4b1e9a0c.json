@@ -685,6 +685,15 @@
         }
       ]
     },
+    "battle-of-talandongo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-the-citadel-of-vicenza": {
       "from": "git",
       "versions": [
