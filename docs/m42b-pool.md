@@ -21594,3 +21594,238 @@ clause stays paused, because it asks for africa **and** asia and asia is 261. Mo
 stand — the Iberian Union and the 1580 succession crisis, which are europe-lane records of 1580 —
 is therefore **still blocked**, and that is the stand's own best-value move going unspent for one
 more fire.
+
+## Batch 85 — the Indian Ocean theatre, and the cheapest query pointed at Asia for the first time
+
+**Move 2 of the 09:36Z stand, which has been the right move for three fires and had nothing to
+point at.** The stand said the `P361`-children sweep *"has only been pointed at four African
+umbrellas"* and that asia *"has never been asked the question that worked"*. Batch 84's second
+umbrella is what it needed: ask `Q762191` *Ottoman–Portuguese conflicts of 1538–1560* and
+`Q1187249` *Ottoman–Portuguese confrontations* for their children with an English article, and
+**25 rows come back**, of which the atlas held three (two of them written an hour earlier).
+
+### What was imported
+
+| | |
+| --- | --- |
+| items put to the import | 18 — every child dated **inside** `Q762191`'s own 1538–1560 |
+| events created | **18, +0 main**, every one filed under the umbrella from its own `P361` |
+| places created | **12**, every one with a lane derived from its own point |
+| leads cached | 28 |
+| refused | **none by the import** |
+| `article-is-redirect` (A15(8)) | 2 — `battle-of-bab-al-mandab` and `battle-of-kamaran`, whose sitelinks both land on *Sefer Reis*; neither quotes that article and both spans are the item's own |
+| placeless, lane derived or seeded | 4 — `siege-of-qatif-1551` and `battle-of-punnaikayal` (asia, derived), `battle-of-jarte` (africa, derived), `battle-of-wofla` (africa, seeded: the item carries no location at all) |
+| A15(6) country refusals | **3, all three right** — `Q851` Saudi Arabia, inception 1727, for a 1551 event; `Q668` India, 1947, for 1553; `Q115` Ethiopia, 1995, for 1542 |
+
+| lane | records |
+| --- | --- |
+| **asia, 10** | `siege-of-diu-1538`, `siege-of-diu-1546`, `aden-revolt`, `siege-of-qatif-1551`, `ottoman-campaign-against-hormuz`, `battle-of-punnaikayal`, `battle-of-the-strait-of-hormuz-1553`, `battle-of-the-gulf-of-oman`, `siege-of-bahrain`, `attack-on-jeddah-1541` |
+| **africa, 8** | `battle-of-suakin-1541`, `battle-of-el-tor`, `battle-of-suez-1541`, `battle-of-jarte`, `battle-of-wofla`, `battle-of-wayna-daga`, `battle-of-bab-al-mandab`, `battle-of-kamaran` |
+
+**Seven candidates were left and the note owes the count.** Three fall outside `Q762191`'s span
+and rule 24 would refuse them the filing, so taking them would have cost a main each:
+`Q19610920` *Siege of Jeddah* (1517), `Q7509975` *Siege of Diu* (1531) and `Q118946422` *Capture
+of Muscat* (1581). The last of those is inside `Q1187249`'s 1538–1718, as is `Q898763`
+*Ottoman–Portuguese conflicts of 1586–1589*, which is itself an umbrella — so **taking
+`Q1187249` is one main that buys four records and a second umbrella**, and that is the next
+fire's cheapest purchase in this lane. The other three rows were the two umbrellas and
+`Q116609273`, all taken in batch 84.
+
+### One edge, and five refusals
+
+**Written.** `battle-of-jarte --reacted-to--> battle-of-wofla`, cited to *"Ottoman–Portuguese
+conflicts (1538–1560)"*, revision 1376305276 (the live revision at import time and the one the
+umbrella record itself cites), § Ethiopian campaign: *"The Portuguese were again victorious at
+the Battle of Jarte, killing almost all of the Turkish contingent. However, imam then requested
+aid from the Ottoman governor of Yemen in Aden, who sent 2,000 Arabian musketeers, 900 Turkish
+pikemen, 1,000 Turkish foot musketeers, some Shqiptar foot soldiers (with muskets) and Turkish
+horsemen. In the Battle of Wofla, Somali and Turkish forces defeated the Portuguese."* The
+article names the request as the imam's answer to the defeat and the force it brought as the
+force that won the second battle; Wofla's own lead agrees about what decided it — *"Reinforced
+with a superiority not only in numbers but in firearms, Imam Ahmad was victorious"* — without
+naming Jarte, so the citation is the umbrella's article. `reacted-to` runs forward in time and
+reads *"Wofla answered Jarte"*, which is the sentence. Both ends are under the same umbrella, so
+**this edge does not cross one** — the crossing count is unchanged at 620 and the inside-one
+count goes 617 → 618.
+
+**Refused, and each for a different reason worth writing down.**
+
+1. **A15(5), straight.** *"**Following these events**, the Portuguese dispatched considerable
+   reinforcements to Hormuz, and the following year defeated an Ottoman fleet at the Battle of
+   the Strait of Hormuz"* — a chronological opener with no causal marker, which is the refusal
+   class as written.
+2. **`battle-of-suakin-1541` → `battle-of-suez-1541`** (deviation 1560, below): *"**After**
+   sacking Suakin, the governor detached 16 light oarvessels and 250 picked men. The aim was to
+   attack Suez but the attack was a failure as the heavy defence … **forced** the Portuguese to
+   retreat."*
+3. **`siege-of-diu-1538` → `aden-revolt`**, the same shape: the *Aden Revolt* article's
+   background has *"**in order to** provide an Ottoman base for raids against Portuguese
+   possessions"* on the 1538 capture of Aden, and the Diu sentence beside it is *"Sailing on to
+   India, the Ottomans failed against the Portuguese at the Siege of Diu in September 1538, but
+   then returned to Aden where they fortified the city"*. The marker belongs to the capture, not
+   to anything about the revolt.
+4. **`battle-of-the-strait-of-hormuz-1553` → `battle-of-the-gulf-of-oman`**, which is the one
+   that hurts. The *Gulf of Oman* article's background states the mechanism — Murat Reis *"also
+   led an unsuccessful campaign against the Portuguese the following year"*, Seydi Ali was
+   nominated *"in replacement of Murat Reis"* and *"was ordered to link up his galleys with
+   those in Suez … but such a task meant sailing through Portuguese controlled waters"* — but it
+   never names the Battle of the Strait of Hormuz, and the article that does name it says only
+   *"Seydi Ali Reis was appointed as the admiral **after** the failure of the third expedition"*.
+   Joining the two halves is the Bunker Hill case of this document and it is refused for the same
+   reason: a person reading both articles may write this edge, a fire may not.
+5. **`battle-of-wofla` → `battle-of-wayna-daga`**: *"Gelawdewos was **eventually able to**
+   reorganize his forces and absorb the remaining Portuguese soldiers"* — the remnant is a
+   consequence of Wofla, but *eventually able to* is not a cause stated.
+
+**And the lead sweep returned nothing at all.** All 18 cached leads were read with
+`namesHeldEvents` and **not one of them names a held event**. The 09:36Z stand's move 6 said the
+body sweep earns its keep and the lead sweep does not; this fire read 18 leads for zero hits and
+10 bodies for one edge, which says the same thing again and more cheaply.
+
+### Deviation 1560 — a two-sentence window passes `statesACause` on a marker in a different clause
+
+`statesACause` asks whether **any** of `CAUSAL_MARKERS` appears anywhere in the quote, and a
+window of two sentences is long enough to contain a marker that belongs to neither end of the
+proposed edge. *"After sacking Suakin … the attack was a failure as the heavy defence … forced
+the Portuguese to retreat"* contains `forced`, so `isChronologyOnly` returns **false** and
+A15(5) lets it through — but `forced` is about why Suez failed, not about what Suakin bore on.
+The same shape refused the Diu–Aden pair above. Two findings in one batch out of five candidate
+quotes is a high enough rate to say the rule has a hole: **A15(5) catches the sentence that
+opens on chronology and says nothing, and misses the sentence that opens on chronology and says
+something about a third thing.** The judgement a fire must still make by hand is whether the
+marker governs the pair, and this document is the only place that is written down. The fix is not
+in `chronology.mjs`, which is pure and shared with `origin/m42`; it is a narrower window, or a
+caller that checks which clause the marker sits in.
+
+### Deviation 1484 again, and a renumber inside this fire
+
+**`origin/m42` holds 1557**, for a place reuse in a Manchuria record, written into
+`docs/m42-pool.md` and never registered in `STATUS.md`. This fire wrote its first two findings as
+1557 and 1558 after running deviation 1484's three checks over **this branch's** files only, and
+the collision surfaced when the checks were re-run with `git show origin/m42:docs/m42-pool.md`
+and `git show origin/m42:STATUS.md` added to the file list. They are now **1558** (the ocean
+centroid) and **1559** (the See-also list), and `barbary-portuguese-conflicts`'s `regionNote`
+says 1558. Batch 84's two commit messages still say 1557 and cannot be corrected; this paragraph
+is the correction. **Deviation 1484's instruction is incomplete and this is the amendment: the
+three greps must run over `origin/m42`'s `docs/m42-pool.md` and `STATUS.md` as well as this
+branch's, because that is where the other lane's numbers live and most of them never reach the
+register.** The first free number after this batch is **1561**.
+
+### The numbers after batch 85
+
+| | before 84 | after 84 | after 85 |
+| --- | --- | --- | --- |
+| active events | 1,518 | 1,524 | **1,542** |
+| main | 236 | 238 | **238** |
+| largest connected component | 792 | 792 | **792** |
+| components | 493 | 498 | **515** |
+| events with no edge | 391 | 394 | **410** |
+| **edges crossing an umbrella** | 619 | 620 | **620** |
+| edges inside one umbrella | 617 | 617 | **618** |
+| active edges | 1,236 | 1,237 | **1,238** |
+
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | 12 / 1 | — | 7 / 5 | 23 / 8 |
+| 16th c. | 45 / 2 | **47 / 3** | **25 / 3** | 51 / 4 | 168 / 12 |
+| 17th c. | 109 / 3 | 26 / 2 | 22 / 0 | 71 / 6 | 228 / 11 |
+| 18th c. | 62 / 3 | 24 / 0 | 19 / 0 | 85 / 2 | 190 / 5 |
+| 19th c. | 39 / 9 | 29 / 1 | 9 / 6 | 61 / 8 | 138 / 24 |
+| 20th c. | 245 / 60 | 98 / 24 | 166 / 37 | 91 / 30 | 600 / 151 |
+| 21st c. | 52 / 7 | 77 / 7 | 30 / 12 | 36 / 1 | 195 / 27 |
+| **all** | **556 / 86** | **313 / 38** | **271 / 58** | **402 / 56** | **1542 / 238** |
+
+**Africa 313 and asia 271 against A10's 303.** Africa cleared it in batch 84 and is now ten past
+it; **asia is 32 short**, and the whole of A15(1)'s europe clause now rests on that one number.
+The asia 16th century went from 15 to 25 and africa's from 39 to 47 — the two cells the two
+batches were aimed at.
+
+## Where the run stands, for the fire that picks it up
+
+*2 October, the 12:36Z fire. **Two batches, 24 active events, two umbrellas, two edges — and
+africa is past A10's 303, so half of A15(1)'s europe pause is lifted.** Asia is 32 short and the
+other half rests entirely on it.*
+
+### The numbers
+
+| | at the fire's head | after the merge of `origin/m42` | after 84 | after 85 |
+| --- | --- | --- | --- | --- |
+| active events | 1,514 | 1,518 | 1,524 | **1,542** |
+| main | 235 | 236 | 238 | **238** |
+| largest connected component | 790 | 792 | 792 | **792** |
+| components | — | 493 | 498 | **515** |
+| events with no edge | — | 391 | 394 | **410** |
+| **edges crossing an umbrella** | 619 | 619 | 620 | **620** |
+| edges inside one umbrella | 615 | 617 | 617 | **618** |
+| active edges | 1,234 | 1,236 | 1,237 | **1,238** |
+
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | 12 / 1 | — | 7 / 5 | 23 / 8 |
+| 16th c. | 45 / 2 | 47 / 3 | 25 / 3 | 51 / 4 | 168 / 12 |
+| 17th c. | 109 / 3 | 26 / 2 | 22 / 0 | 71 / 6 | 228 / 11 |
+| 18th c. | 62 / 3 | 24 / 0 | 19 / 0 | 85 / 2 | 190 / 5 |
+| 19th c. | 39 / 9 | 29 / 1 | 9 / 6 | 61 / 8 | 138 / 24 |
+| 20th c. | 245 / 60 | 98 / 24 | 166 / 37 | 91 / 30 | 600 / 151 |
+| 21st c. | 52 / 7 | 77 / 7 | 30 / 12 | 36 / 1 | 195 / 27 |
+| **all** | **556 / 86** | **313 / 38** | **271 / 58** | **402 / 56** | **1542 / 238** |
+
+**Africa 313, asia 271, A10's threshold 303.** Europe is 556, exactly what the fire found it at,
+and nothing of Europe before 1900 was written.
+
+### The next fire's moves, in order
+
+1. **Asia is 32 short and the vein is open.** `Q1187249` *Ottoman–Portuguese confrontations*
+   (1538–1718, an English article and its own dates) is **one main that buys four records**: it
+   files `Q118946422` *Capture of Muscat* (1581) and `Q898763` *Ottoman–Portuguese conflicts of
+   1586–1589*, which is itself an umbrella, and that one's own `P361` children have never been
+   asked for. It needs a seeded lane, as `Q762191` did — its confrontations run the same Indian
+   Ocean, Persian Gulf and Red Sea the article names.
+2. **Then the same query at every Asian umbrella the atlas now holds.** Batch 85 is the proof
+   that `?item wdt:P361 ?u` against a *held* umbrella is the cheapest query in either pool file:
+   25 rows for one SPARQL call, 18 records for 30 API calls, +0 main. The atlas now holds
+   `siege-of-malacca-1551`, `siege-of-malacca-1606`, `siege-of-malacca-1640-1641` and the three
+   Dutch–Portuguese theatres of batches 37 to 40, and none of them has been asked.
+3. **`Q19610920` *Siege of Jeddah* (1517) and `Q7509975` *Siege of Diu* (1531)** are two asia
+   records that cost a main each under rule 24, because no held umbrella's span contains them.
+   `Q1187249` does not either (it starts 1538). They are worth taking once asia's count matters
+   more than the main count, and the note should say which it is choosing.
+4. **Move 3 of the 09:36Z stand is still blocked and is still the best value in the partition.**
+   The Iberian Union and the 1580 succession crisis are europe-lane records of 1580, and
+   A15(1)'s pause asks for africa **and** asia at 303. One fire's worth of asia lifts it.
+5. **Deviation 1560 is a hole in A15(5) and no tool closes it.** A causal marker anywhere in a
+   two-sentence window makes the quote pass, including a marker about a third thing. Two of this
+   fire's five candidate quotes failed that way. Until the window narrows, a fire must read which
+   clause the marker governs — and the honest answer was *no edge* four times out of five.
+6. **Deviation 1559: cut the article at `See also` before counting names.** Four of the eight
+   held events the Ottoman umbrella article "named" were titles in its See-also list, and three
+   more sweeps in this fire hit the same thing. The cut belongs in the caller, not in
+   `chronology.mjs`.
+7. **The network is back but rate-limited, and the limit moves.** Deviation 1547's one-request-a-
+   minute was not in force at 12:40Z — `Special:EntityData` and WDQS both answered in under a
+   second — but `api.php` returned `HTTP 429` with `retry-after: 21` on the first body fetch and
+   tightened to *"You are making too many requests to the API"* after the 30-call import. **The
+   import's own pacing gets through; a hand-rolled loop needs 65 seconds between calls.** WDQS
+   itself was healthy all fire.
+8. **Still open, unchanged**: C8; deviations 1323, 1345, 1346's remaining ocean islands (Madeira
+   is settled, by the `praia` precedent and a measurement), 1348's lane guard, 1353, 1358, 1361,
+   1362, 1365, 1366, 1377, 1383, 1386, question 11 (the Nine Years' War, `Q152218`), question 12,
+   `Q718893`, `Q20639061`, `Q5037062`, `Q4677270`, `Q4677390`, the nine atlas umbrellas with no
+   `wikidata`, the Gulf Coast campaign umbrella (`Q5617470`), batch 48's Chilean four, the
+   Almagrista eight and their missing decree, batch 52's three 16th-century refusals, `Q1226252`
+   *tied island*, `arauco-war`'s interval, `Q3051491` *Capture of Valdivia*, the place pass on
+   records that already exist (M42's), `capture-of-luanda`'s `wikipedia.en` redirect, `Q2915203`
+   *Ethiopian–Adal War*, `Q133092642` *Battle of Vannarpannai*, the Italian Wars' nine children
+   to each other, the 22 Europe-lane children of `ottoman-habsburg-wars`, batch 64's refiling
+   question, `kandyan-commerce-raiding-against-portugal-1612-1613`'s place, `Q10369402`, 
+   `Q138011120`, `Q2713453`, `Q4677387`, `Q4677277`, `Q106959443` *Maghrebi War*, `Q86667216`
+   *Spanish–Algerian conflicts*, and batch 82's remaining 36 Mediterranean candidates.
+   **Newly open**: `Q132175198` and `Q135153487`, the two Barbary children A15(1) refuses for
+   deriving the europe lane — they become importable the day asia reaches 303.
+9. **Deviation numbers: 1560 is the highest taken; 1561 is the first free.** This fire used
+   **1558** (an item whose locations are two oceans and a continent takes its lane from an
+   ocean), **1559** (the sweep reads a See-also list as a sentence) and **1560** (a two-sentence
+   window passes `statesACause` on a marker in a different clause). **Read deviation 1484 before
+   taking the next one, and run its three greps over `origin/m42`'s `docs/m42-pool.md` and
+   `STATUS.md` as well as this branch's files** — that is this fire's amendment to 1484, and it
+   is what caught `origin/m42` already holding 1557.
