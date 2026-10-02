@@ -24072,6 +24072,7 @@ browser failure did not reproduce, here or on the runner, so this fire reads 313
 where the previous stand carried it as standing.
 
 ## Milestones landed
+M42b started 2026-10-02T07:36:48Z by scheduled
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
 M7 started 2026-09-03T18:20:47Z by shepherd
