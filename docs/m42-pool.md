@@ -23608,15 +23608,28 @@ it on reading articles, which is the only thing that writes an edge.
   closed. Take batches from it under A15(1) and expect the yield this fire got:
   **1 connectable row in 88 articles read.** That ratio is the thing to improve,
   not the vein.
-- **The yield is an article-reading problem and not a query problem.** This fire
-  screened with a regex over causal markers and held titles; 8 of 88 articles
-  tripped it and 7 of the 8 were refusals a person sees at a glance. The screen
-  is cheap and it is also what threw away whatever it could not name: a held
-  event the article calls by a different name is invisible to it. **The next
-  improvement is to screen on the article's own wikilinks** — an article that
-  links `[[Nigerian Civil War]]` names it however the sentence is phrased — and
-  then read only the sentences around those links. Unmeasured, and it is the
-  cheapest remaining idea.
+- **The yield is an article-reading problem and not a query problem, and the
+  wikilink screen this stand was going to recommend was tried and does not fix
+  it.** This fire screened twice. The first screen was a regex over causal
+  markers and held *titles*: 8 of 88 articles tripped it, 7 of the 8 refusals a
+  person sees at a glance. Its known hole is a held event the article calls by
+  another name, so the second screen matched **link targets** instead —
+  `[[Nigerian Civil War|the civil war]]` names the record however the sentence
+  phrases it — with navboxes, infoboxes and everything from "See also" down cut
+  away first, and only prose sentences carrying a causal marker kept.
+  **Over 45 of the 201 candidates that link a held event at all: 4 articles
+  tripped it, and all 4 are refusals** — Blaauwberg's "during the War of the
+  Third Coalition" again, the Mediterranean theatre's "resulted in … diverted
+  from the Western and Eastern fronts", the Mali article's sentence about the
+  *2012* offensive and not its own, and the Relief of Ladysmith naming the
+  Battle of Pieters Hill, which is not a record here. **The screen is better and
+  the yield is not**, which places the cost where it actually is: the articles
+  of these children mostly narrate, and a narration is not an argument. Two
+  things fall out of it worth keeping: the **raw** link list is useless (a
+  navbox makes Blaauwberg link the Falklands War, so 201 of 324 "link a held
+  event" and it means nothing), and a candidate whose article argues about
+  another event usually argues about one the atlas *does not hold*, which is the
+  same wall from the other side.
 - **The structured-causal vein is measured and closed. Do not measure it
   again** (its section above). 359 claims, 68 with both ends held, 53 already
   edges, 0 new. It remains useful only as a pointer at pairs worth reading.
