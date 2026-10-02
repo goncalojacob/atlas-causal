@@ -24708,10 +24708,41 @@ summary endpoint was not used at all: the lead was taken from the
 `Special:Export` wikitext, templates and refs stripped, which is what put the
 cache entry on disk at a revision the export itself names.
 
-**4. Deviation numbers: take the next above 1557.** This fire wrote **1557**
-only, over all three batches. **`origin/m42b` stood at 1556 when this fire read it**, which is why 1557
+**4. Deviation numbers: take the next above 1558.** This fire wrote **1557**
+and **1558**, over three batches and one test repair. **`origin/m42b` stood at 1556 when this fire read it**, which is why 1557
 and not the 1549 the batch-92 stand's arithmetic would have given — read
 `origin/m42b`'s own numbers before taking one, as the previous stands say.
+
+**4c. Deviation 1558 — the check was red and it was this fire's data that made it
+red, and the fault was in a test's reading of its own picture.**
+`tests/m83-browser.test.mjs`'s **B8**, *"a click on the graph's empty ground puts
+the selection down"*, failed on the runner and passed locally. It opens
+`?view=graph&selected=world-war-ii` — **the exact picture this fire made denser**,
+since all three records are children of that umbrella — searches a 19×19 grid for
+the point furthest from anything drawn, clicks it and expects the selection to go
+down. Two things were wrong with it and this fire's three records were enough to
+trip both:
+
+- **It measured to bounding-box centres.** A long diagonal `line.edge` has its
+  box centre in the middle of the line and its ink across half the pane, so a
+  point sitting on top of an edge read as 100 px from everything. A click there
+  opens that edge's card instead of putting the selection down.
+- **It measured before the picture stopped moving.** `NODES` waits for the first
+  mark, not the last; the arrangement is drawn again as the attribute shards
+  land. Measured, on this fire's head: **68 lines at `NODES`, 60 after** — and
+  the "emptiest" point moved between runs of the same commit on the same
+  machine, `(431, 422)` and then `(479, 201)`. That is the flake, and a slow
+  four-core runner meets it where a fast machine does not.
+
+The fix is in the test and makes it stricter, not looser: wait for the count of
+marks and lines to hold still for three polls (`STILL`), then measure **to the
+ink** — to a circle's rim and to a line's segment. With both, the chosen point
+was `(527, 201)` at 249 px from everything on **three runs out of three**, where
+before it had been a different point each time. Nothing was skipped, disabled or
+quarantined, and the suite is 14 of 14 locally. **A records lane does not
+normally touch test code**, and this is written down rather than left implicit
+for that reason: the test was wrong about its own picture and this fire's records
+are what showed it.
 
 **4b. Two mistakes this fire made that cost it commits, both worth not repeating.**
 
