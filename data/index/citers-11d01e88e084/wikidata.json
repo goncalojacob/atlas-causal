@@ -7820,6 +7820,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-torch",
+      "kind": "event",
+      "locator": "Q194132"
+    },
+    {
+      "dissent": false,
       "id": "operation-turquoise",
       "kind": "event",
       "locator": "Q1433226"
@@ -9977,6 +9983,12 @@
       "id": "tulip-revolution",
       "kind": "event",
       "locator": "Q459162"
+    },
+    {
+      "dissent": false,
+      "id": "tunisian-campaign",
+      "kind": "event",
+      "locator": "Q852365"
     },
     {
       "dissent": false,

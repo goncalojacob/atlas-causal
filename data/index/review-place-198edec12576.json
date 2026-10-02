@@ -7013,7 +7013,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "french-protectorate-in-morocco",
       "kind": "place",
       "names": [
@@ -7029,6 +7029,35 @@
           "imported-facts",
           "a9-place"
         ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "french-protectorate-of-tunisia",
+      "kind": "place",
+      "names": [
+        "French protectorate of Tunisia",
+        "French Tunisia",
+        "Regency of Tunis"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "a9-place"
+        ],
+        "note": "Written for `tunisian-campaign`, whose item reaches it at A9's second step: the chain's first step, the item's own `P625`, reuses and never writes, and `tunisia-q948` is 2.8° away and folds to no name this item gives. The precision is the item's own class, `P31` `Q164142`, protectorate, added to the class table in this batch at `region` on Q133156's precedent. A15(3): a place carries no summary.",
         "status": "draft"
       },
       "revised": null,

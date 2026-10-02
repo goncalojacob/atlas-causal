@@ -3383,6 +3383,15 @@
         }
       ]
     },
+    "french-protectorate-of-tunisia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "fuhrerbau": {
       "from": "git",
       "versions": [

@@ -4745,6 +4745,15 @@
         }
       ]
     },
+    "operation-torch--tunisian-campaign--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "operation-turquoise--1994-genocide-against-tutsi--reacted-to": {
       "from": "git",
       "versions": [

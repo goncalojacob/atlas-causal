@@ -6518,6 +6518,24 @@
     },
     {
       "dissent": false,
+      "id": "operation-torch--tunisian-campaign--caused",
+      "kind": "edge",
+      "locator": "\"Operation Torch\", revision 1373652877"
+    },
+    {
+      "dissent": false,
+      "id": "operation-torch--tunisian-campaign--caused",
+      "kind": "edge",
+      "locator": "\"Tunisian campaign\", revision 1375742094"
+    },
+    {
+      "dissent": false,
+      "id": "operation-torch--tunisian-campaign--caused",
+      "kind": "edge",
+      "locator": "\"Tunisian campaign\", revision 1375742094: \"withdrawn into and occupied Tunisia, after their defeat in the Western Desert and the success of Operation Torch\""
+    },
+    {
+      "dissent": false,
       "id": "operation-turquoise--1994-genocide-against-tutsi--reacted-to",
       "kind": "edge",
       "locator": "\"Opération Turquoise\", revision 1357895302, \"Background\" and \"Implementation\""
@@ -15866,6 +15884,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-torch",
+      "kind": "event",
+      "locator": "\"Operation Torch\", revision 1373652877"
+    },
+    {
+      "dissent": false,
       "id": "operation-turquoise",
       "kind": "event",
       "locator": "\"Opération Turquoise\", revision 1357895302"
@@ -18113,6 +18137,12 @@
       "id": "tulip-revolution",
       "kind": "event",
       "locator": "\"Tulip Revolution\", revision 1372025111"
+    },
+    {
+      "dissent": false,
+      "id": "tunisian-campaign",
+      "kind": "event",
+      "locator": "\"Tunisian campaign\", revision 1375742094"
     },
     {
       "dissent": false,

@@ -34913,6 +34913,46 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "operation-torch",
+      "kind": "event",
+      "names": [
+        "Operation Gymnast"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": [
+        "world-war-ii",
+        "north-african-campaign"
+      ],
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361",
+          "a15-category-from-p31"
+        ],
+        "note": "A9: the own-`P625` step reuses only and no place here stands at (-2.029, 35.085); `P276` is `Q907234`, held as `french-protectorate-in-morocco`, so `P17` is never reached. A15(4): `P580`/`P582` are 1942-11-08 and 1942-11-16 and the first sentence agrees. A6, A8: `P361` is `Q362` and `north-african-campaign` fits too, so both are written. A15(12): `P31` `Q645883` is `war`; `Q348120`, amphibious warfare, says how it was fought. No `P710`.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Torch"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 2,
       "id": "operation-turquoise",
@@ -47384,6 +47424,50 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Tulip Revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "tunisian-campaign",
+      "kind": "event",
+      "names": [
+        "Tunisia campaign",
+        "Battle of Tunisia"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": [
+        "world-war-ii",
+        "north-african-campaign"
+      ],
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361",
+          "a15-category-from-p31",
+          "title-from-article",
+          "a7-widened",
+          "a15-days"
+        ],
+        "note": "A9: the own-`P625` step reuses only and `tunisia-q948` is 2.8° away, so the chain went on to `P276` `Q2017684` and `french-protectorate-of-tunisia` was written from it; `P17` `Q948` is never reached. A7, A15(4): `P582` is 1943-05-09 and the first sentence says 13 May 1943, so the end is widened to the article's. A12(5): the title is the article's, not the item's “Tunisia campaign”. A6, A8: `P361` is `Q218678`, written in batch 96, and `world-war-ii` fits too.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Tunisian campaign"
     },
     {
       "authors": [
