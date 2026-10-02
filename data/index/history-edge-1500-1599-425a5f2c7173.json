@@ -83,6 +83,15 @@
         }
       ]
     },
+    "battle-of-casicola--first-battle-of-the-lucala--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-cempoala--la-noche-triste--precondition-of": {
       "from": "git",
       "versions": [
@@ -557,6 +566,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "siege-of-anzele--cuanza-river-campaign--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

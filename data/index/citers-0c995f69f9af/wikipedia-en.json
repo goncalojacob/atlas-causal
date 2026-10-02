@@ -2384,6 +2384,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-casicola--first-battle-of-the-lucala--precondition-of",
+      "kind": "edge",
+      "locator": "\"Angolan Wars\", revision 1370826485"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-casicola--first-battle-of-the-lucala--precondition-of",
+      "kind": "edge",
+      "locator": "\"First Battle of the Lucala\", revision 1370619097"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cempoala--la-noche-triste--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Cempoala\", revision 1370436634, § Aftermath"
@@ -6782,6 +6794,18 @@
     },
     {
       "dissent": false,
+      "id": "recapture-of-angola--battle-of-mbwila--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Mbwila\", revision 1370449389"
+    },
+    {
+      "dissent": false,
+      "id": "recapture-of-angola--battle-of-mbwila--precondition-of",
+      "kind": "edge",
+      "locator": "\"Recapture of Angola\", revision 1370706489"
+    },
+    {
+      "dissent": false,
       "id": "republic-proclaimed-1910--first-portuguese-republic-1910-1926--caused",
       "kind": "edge",
       "locator": "\"First Portuguese Republic\", revision 1370244290, § lead"
@@ -7253,6 +7277,18 @@
       "id": "siege-of-acre-1799--battle-of-mount-tabor-1799--caused",
       "kind": "edge",
       "locator": "\"Battle of Mount Tabor (1799)\", revision 1373988420"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-anzele--cuanza-river-campaign--precondition-of",
+      "kind": "edge",
+      "locator": "\"Cuanza River Campaign\", revision 1370614389"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-anzele--cuanza-river-campaign--precondition-of",
+      "kind": "edge",
+      "locator": "\"Siege of Anzele\", revision 1370738927"
     },
     {
       "dissent": false,
@@ -10574,6 +10610,12 @@
     },
     {
       "dissent": false,
+      "id": "angolan-wars",
+      "kind": "event",
+      "locator": "\"Angolan Wars\", revision 1370826485"
+    },
+    {
+      "dissent": false,
       "id": "anschluss",
       "kind": "event",
       "locator": "\"Anschluss\", revision 1374499407"
@@ -11081,6 +11123,12 @@
       "id": "battle-of-casaloldo",
       "kind": "event",
       "locator": "\"Battle of Casaloldo\", revision 1370436439"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-casicola",
+      "kind": "event",
+      "locator": "\"Battle of Casicola\", revision 1370436449"
     },
     {
       "dissent": false,
@@ -11873,6 +11921,12 @@
       "id": "battle-of-mataquito",
       "kind": "event",
       "locator": "\"Battle of Mataquito\", revision 1376467018"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mbwila",
+      "kind": "event",
+      "locator": "\"Battle of Mbwila\", revision 1370449389"
     },
     {
       "dissent": false,
@@ -13634,6 +13688,12 @@
     },
     {
       "dissent": false,
+      "id": "cuanza-river-campaign",
+      "kind": "event",
+      "locator": "\"Cuanza River Campaign\", revision 1370614389"
+    },
+    {
+      "dissent": false,
       "id": "cuban-revolution",
       "kind": "event",
       "locator": "\"Cuban Revolution\", revision 1373305240, infobox: \"26 July 1953 – 1 January 1959\""
@@ -14009,6 +14069,12 @@
       "id": "first-battle-of-seoul",
       "kind": "event",
       "locator": "\"First Battle of Seoul\", revision 1370618963"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-the-lucala",
+      "kind": "event",
+      "locator": "\"First Battle of the Lucala\", revision 1370619097"
     },
     {
       "dissent": false,
@@ -16265,6 +16331,12 @@
       "id": "siege-of-acre-1799",
       "kind": "event",
       "locator": "\"Siege of Acre (1799)\", revision 1372403085"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-anzele",
+      "kind": "event",
+      "locator": "\"Siege of Anzele\", revision 1370738927"
     },
     {
       "dissent": false,

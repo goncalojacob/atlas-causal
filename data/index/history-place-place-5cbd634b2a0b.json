@@ -1687,6 +1687,15 @@
         }
       ]
     },
+    "caxito": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "cecilienhof": {
       "from": "git",
       "versions": [
@@ -5542,6 +5551,15 @@
         }
       ]
     },
+    "lucala-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "lugou-bridge": {
       "from": "git",
       "versions": [
@@ -5769,7 +5787,7 @@
       ]
     },
     "mainland-southeast-asia": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

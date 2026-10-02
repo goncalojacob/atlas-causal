@@ -5368,6 +5368,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "angolan-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Angolan Wars"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "founding",
       "cites": [
         "wikidata",
@@ -8288,6 +8317,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Casaloldo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "battle-of-casicola",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "angolan-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Casicola"
     },
     {
       "authors": [
@@ -12690,6 +12751,38 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Battle of Mataquito"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "battle-of-mbwila",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "angolan-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Mbwila"
     },
     {
       "authors": [
@@ -22843,6 +22936,39 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "cuanza-river-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "angolan-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "note": "A7: the item gives no P582 and the import wrote `end-unstated`, so rule 24 could not file it. \"Cuanza River Campaign\" at revision 1370614389 - the revision this record cites - has `date = May 1580 - November 1, 1582` in its infobox and says the troops \"camped in Mocumbe for two years\". The end is read from there, 1582-11-01; the start is unchanged. With the end stated the item's own P361 (Q132776772) files it under angolan-wars, which is why that parent is written here and not by the import.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Cuanza River Campaign"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -25263,6 +25389,41 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "First Battle of Seoul"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "first-battle-of-the-lucala",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "angolan-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361",
+          "date"
+        ],
+        "note": "The cited article contradicts itself about the year and the record keeps the item's. \"First Battle of the Lucala\" at revision 1370619097 has `date = 13 September 1585` in its infobox, which is also P585 on Q138641767 and what \"Angolan Wars\" says; its first sentence says \"September 13, 1586\". A7 widens from a cited article; it does not choose between two years one article gives. A person must read Delgado, \"Historia de Angola\" I, pp. 324-325, which both sentences cite.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Battle of the Lucala"
     },
     {
       "authors": [
@@ -36161,7 +36322,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-29",
-      "degree": 2,
+      "degree": 3,
       "id": "recapture-of-angola",
       "kind": "event",
       "origin": {
@@ -38981,6 +39142,39 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Acre (1799)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "siege-of-anzele",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "angolan-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Anzele"
     },
     {
       "authors": [
@@ -48534,6 +48728,12 @@
     },
     {
       "id": "anglo-french-war-1627-1629",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "angolan-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

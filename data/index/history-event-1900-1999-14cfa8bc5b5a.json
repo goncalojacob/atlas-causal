@@ -5558,7 +5558,7 @@
       ]
     },
     "arab-cold-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -8709,6 +8709,12 @@
           "fields": [
             "parent",
             "review"
+          ],
+          "on": "2026-09-30"
+        },
+        {
+          "fields": [
+            "parent"
           ],
           "on": "2026-09-30"
         }
@@ -13456,7 +13462,7 @@
       ]
     },
     "israeli-palestinian-conflict": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -15801,7 +15807,7 @@
       ]
     },
     "myanmar-conflict": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -19524,6 +19530,12 @@
             "review"
           ],
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -20674,7 +20686,7 @@
       ]
     },
     "third-indochina-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

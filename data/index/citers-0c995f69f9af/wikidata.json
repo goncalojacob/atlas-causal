@@ -2666,6 +2666,12 @@
     },
     {
       "dissent": false,
+      "id": "angolan-wars",
+      "kind": "event",
+      "locator": "Q132776772"
+    },
+    {
+      "dissent": false,
       "id": "anschluss",
       "kind": "event",
       "locator": "Q154681"
@@ -3221,6 +3227,12 @@
       "id": "battle-of-casaloldo",
       "kind": "event",
       "locator": "Q3636372"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-casicola",
+      "kind": "event",
+      "locator": "Q138632220"
     },
     {
       "dissent": false,
@@ -4019,6 +4031,12 @@
       "id": "battle-of-mataquito",
       "kind": "event",
       "locator": "Q1617667"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mbwila",
+      "kind": "event",
+      "locator": "Q1752752"
     },
     {
       "dissent": false,
@@ -5780,6 +5798,12 @@
     },
     {
       "dissent": false,
+      "id": "cuanza-river-campaign",
+      "kind": "event",
+      "locator": "Q130493316"
+    },
+    {
+      "dissent": false,
       "id": "cuban-revolution",
       "kind": "event",
       "locator": "Q11264"
@@ -6155,6 +6179,12 @@
       "id": "first-battle-of-seoul",
       "kind": "event",
       "locator": "Q18016068"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-the-lucala",
+      "kind": "event",
+      "locator": "Q138641767"
     },
     {
       "dissent": false,
@@ -8525,6 +8555,12 @@
       "id": "siege-of-acre-1799",
       "kind": "event",
       "locator": "Q815109"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-anzele",
+      "kind": "event",
+      "locator": "Q138606175"
     },
     {
       "dissent": false,
