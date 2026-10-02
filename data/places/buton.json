@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "buton",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1018014",
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Buton",
+    "pt": "Buton"
+  },
+  "sources": [],
+  "names": [
+    "Buton Island",
+    "Buton"
+  ],
+  "where": {
+    "lon": 122.888330555556,
+    "lat": -5.01388888888889,
+    "precision": "region",
+    "label": "Buton"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

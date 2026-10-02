@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-kitombo--battle-of-pungo-andongo--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-74"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pungo Andongo\", revision 1370586775"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kitombo\", revision 1370267185"
+    }
+  ],
+  "from": "battle-of-kitombo",
+  "to": "battle-of-pungo-andongo",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The Ndongo revolt that brought the Portuguese to Pungo Andongo in 1671 is one the article for the siege attributes to the defeat at Kitombo the autumn before. “Battle of Pungo Andongo”, at revision 1370586775, § Background: “In 1670, the Portuguese were routed at the Battle of Kitombo by the forces of the Count of Soyo Estevão da Silva, supported by the Dutch. … Encouraged by such setbacks, the King of Ndongo, Dom João Hari (Ngola Hari), took the opportunity to revolt against Portuguese suzerainty, cut all communications between Luanda and the Portuguese-allied Kingdom of Cassanje and attacked Portuguese trade caravans.” The second author, “Battle of Kitombo” at revision 1370267185, gives the defeat its weight from the other end — the battle “resulted in a decisive victory for Soyo” and “few, if any, of the invaders escaped death or capture” — which is what made it an opening rather than a reverse. `enabled`: the revolt is the Ngola’s own act and Kitombo is what made it look possible, which is the article’s own “took the opportunity”. `probable`, rule 22.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

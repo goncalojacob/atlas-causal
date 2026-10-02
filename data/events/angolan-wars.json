@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "angolan-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q132776772",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Angolan Wars",
+    "pt": "Guerras Angolanas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q132776772"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Angolan Wars\", revision 1370826485"
+    }
+  ],
+  "title": "Angolan Wars",
+  "summary": "The English Wikipedia article \"Angolan Wars\", at revision 1370826485, opens: \"The Angolan Wars were a long series of conflicts in modern-day Angola involving Portugal, the Kingdom of Ndongo, the Kingdom of Kongo, the Kingdom of Matamba, the Kingdom of Kasanje, the Kingdom of Libolo and the Dutch West India Company primarily, that lasted from 1579 to 1683.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q132776772, imported by tools/import/wikidata.mjs. The item's own description reads \"1579–1683 series of wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1579,
+    "end": 1683,
+    "date": "1579-09",
+    "endDate": "1683-09-07"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
