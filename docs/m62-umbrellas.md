@@ -657,3 +657,11 @@ M62, and they are the two highest-sitelink events the atlas was missing.
 
 **Main is 234 before and 234 after**: both records arrived or were filed, and
 neither reached the resting picture.
+
+## Batch 93 — the third side of batch 92's argument, filed under `world-war-ii`
+
+| record | parent | why |
+| --- | --- | --- |
+| `soviet-invasion-of-manchuria` | `world-war-ii` | By span and subject, because the item's own `P361` values are `Q220602`, the Soviet–Japanese War, and `Q5865416`, the history of Manchuria, and this atlas holds neither. 8 to 20 August 1945 is inside the umbrella's 1939-09-01 to 1945-09-02. The subject: the article's first sentence makes it the Soviet Union's invasion of the Empire of Japan's puppet states, and its § Summary gives the reason for its timing as the Allies' own agreements — *"the Soviet Union entered World War II's Pacific Theatre within three months of the end of the war in Europe"* — so it is an operation of that war by the parties to it and not a separate quarrel. Not filed under `second-sino-japanese-war`, which the article's categories name and no statement in it does, and not under `pacific-war`, which this atlas still does not hold — `Q184425` is still the candidate `docs/m42-pool.md` names, and the fire that imports it should re-read this filing with batch 92's two. |
+
+**Main is 234 before and 234 after.**

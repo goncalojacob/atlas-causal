@@ -24385,3 +24385,131 @@ umbrella) or `docs/m67-umbrellas.md` (for a record that names neither an actor
 nor a place) in the same commit as the record**, or `tests/m62.test.mjs` and
 `tests/m67.test.mjs` fail. The pool note alone satisfies `tests/m42-filing.test.mjs`
 and does **not** satisfy those two.
+
+## Batch 93 — the Soviet invasion of Manchuria, and the third side of batch 92's argument, 2 October
+
+**The candidate the previous stand named, taken for the reason it named.** Batch
+92 wrote `atomic-bombings-of-hiroshima-and-nagasaki--surrender-of-japan--caused`
+and marked it `disputed`, because both cited articles say the link is what
+historians argue about; its `dispute.text` names the Soviet entry into the war
+as the competing cause and ended on the admission that *"this atlas does not yet
+hold [it] as a record"*. It does now. The dispute points at something a reader
+can click.
+
+**The record.** `soviet-invasion-of-manchuria`, `Q6165880`, 43 sitelinks, 8 to
+20 August 1945, `war`, place `manchuria`, lane asia, filed under
+`world-war-ii` — the filing is argued in `docs/m62-umbrellas.md` under this
+batch's own heading.
+
+| what A9 to A15 asked | what the item and the article said |
+| --- | --- |
+| A9, the place | The item's own `P625` is `(125, 49)` at one-degree precision; its `P276` is `Q113344999`, Inner Manchuria, which carries no point and whose `P361` is `Q81126` — this atlas's `manchuria`, a region-precision place at `(125, 45)`. Reused (deviation 1557). A15(6) refuses Inner Manchuria's `P17`, `Q148`, whose inception is after this event's end. |
+| A15(7), the lane | `(125, 49)` derives asia, and so does `manchuria`'s own point. No `region` written. |
+| A15(4), the days | `P580` 1945-08-09 and `P582` 1945-08-20; the article's first sentence states the invasion *"began on 8 August 1945"*, which is the start carried here under A7. The same article's § Summary says *"The invasion began on 9 August 1945"* and dates the Soviet declaration of war to 5 p.m. Moscow time on 8 August. **The two readings are the article's own and the record says so**; a reviewer settles which it keeps, and `span-vs-lead-dates` is silent either way because the record and the first sentence agree. |
+| A6 and A8, the filing | `P361` is `Q220602`, the Soviet–Japanese War, and `Q5865416`, the history of Manchuria. Neither is held, so the filing is by span and subject, and `world-war-ii` is the only umbrella that fits: `second-sino-japanese-war` is named by the article's **categories** and by no statement in it, and `pacific-war` (`Q184425`) is still unheld. One parent, not two, per deviation 1527. |
+| A15(12), the category | `P31` is `Q467011` and `Q645883`; both are already in the class table at `war`. |
+| A11(a), the actors | `P710` is `Q15180` and `Q30623`. `soviet-union` takes the role `invader`; `Q30623`, Manchukuo, is not an actor this atlas holds, so the other line is `imperial-japan` as `target`, on the first sentence's own words — the invasion was of *"the Empire of Japan's puppet states of Manchukuo and Mengjiang"*. |
+| A15(2), the cache | The lead is on disk at `tools/import/cache/wikipedia/Q6165880.en.json`, revision **1376133899**, and the title table has the article. `node tools/cache-evidence.mjs`: **0 revisions that should be on disk and are not**, over all 3,056 `wikipedia-en` citations on active records. |
+| A15(8), the redirect test | The item's English sitelink is *"Soviet invasion of Manchuria"* and `Special:Export` returned a page of that title whose wikitext is not a redirect. No flag. |
+
+**The two edges, both `probable`, both to records already in the largest
+component.**
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `soviet-invasion-of-manchuria--surrender-of-japan--caused` | `caused` | The lead: *"The Soviet entry into the war against Japan and the defeat of the Kwantung Army are often considered a major factor, alongside the atomic bombings, in the Japanese government's decision to surrender unconditionally by 15 August."* A cause stated and hedged, so `probable`; `consensus` is refused by A2 and by rule 22 alike. |
+| `soviet-invasion-of-manchuria--korean-war--precondition-of` | `precondition-of` | § Aftermath, two consecutive sentences: the occupation *"allowed for parts of those regions to be transferred by the Soviet Union into the control of local communists"*, and *"The control of these regions by communist governments backed by Soviet authorities would be a factor in the rise of the CCP and shape the political conflict of the Korean War."* § Soviet plan says what the invasion was for in Korea: to *"invade the Korean Peninsula up to the 38th parallel, establishing in the process what later became North Korea"*. `precondition-of` and not `caused`, because the article's link runs through the occupation and the division and claims no more. |
+
+**A15(5), applied at the point of writing: four refusals, counted.**
+
+1. **`atomic-bombings-of-hiroshima-and-nagasaki --> soviet-invasion-of-manchuria`, refused.** The lead's sentence is sequence — *"The invasion began two days after the atomic bombing of Hiroshima and one day before the atomic bombing of Nagasaki"* — and `verdictFor` lets it through only because the opener is not the opening. The article itself refutes the edge in § Summary: *"the timing of the invasion had been planned well in advance and was determined by the timing of the agreements at Tehran and Yalta, the long-term buildup of Soviet forces in the Far East since Tehran, and the date of the German surrender"*. **Refused on the article's own refutation, not on the opener test** — the one shape of refusal this pool file has not recorded before.
+2. **`soviet-invasion-of-manchuria --> japanese-instrument-of-surrender`, refused.** *"fighting continued until 2 September, when the Japanese Instrument of Surrender was signed"* is an order of events.
+3. **`soviet-invasion-of-manchuria --> chinese-civil-war`, refused.** The article's only causal sentence about the civil war runs the other way — *"The resumption of full-scale conflict in the Chinese Civil War prompted the Red Army to withdraw by 3 May 1946"* — and its object, the withdrawal, is not a record. What the article does state forward, *"would be a factor in the rise of the CCP"*, names no event this atlas holds.
+4. **The § Aftermath sentence, refused as edge 1's locator.** *"The invasion of Manchuria was a factor that contributed to the surrender of Japan and the end of World War II"* states the same cause the lead does, but `verdictFor` returns `reattribute: [world-war-ii]` because it names a third held event. Here that event is the record's own **parent** and plainly not the cause, so the edge rests on the lead sentence instead and the § Aftermath one is quoted in the explanation as corroboration. **A15(5)'s third-event guard has no exception for a parent, and this is the first time that mattered**; a line for the owner, below.
+
+**Tehran and Yalta are the invasion's stated cause and the atlas holds
+neither.** § Summary names them twice, in the strongest causal language in the
+article — *"determined by the timing of the agreements at Tehran and Yalta"*,
+and *"At the Yalta Conference in February 1945, Stalin secured Roosevelt's
+acceptance of Soviet expansion in the Far East, in return for agreeing to enter
+the Pacific war within two or three months after the defeat of Germany"*. The
+atlas holds `potsdam-conference` and `potsdam-declaration` and no Yalta or
+Tehran record. **Two conferences, both inside `world-war-ii`'s span, both at
++0 main, both with a held far end in this very event**: the cheapest pair of
+candidates this lane has had in six batches.
+
+### The counts
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1,459 | **1,460** |
+| **main events** | **234** | **234** |
+| active edges | 1,230 | **1,232** |
+| largest component | 792 | **793** |
+| components | 440 | 440 |
+| active events with no edge | 341 | 341 |
+| **edges crossing an umbrella (A15(11))** | **618** | **619** |
+
+Per lane (A10), on the `region` column of a fresh `data/index/core-*.json`:
+Africa 250 active / 35 main **unchanged**, Asia 257/57 → **258/57**, Americas
+396/56, Europe 556/86. **Africa trails by eight and the reason is the previous
+stand's §4 and not a records decision**: every remaining African gap of weight
+falls outside both African umbrellas, so importing one raises the main count,
+which A6 forbids. One edge of the two crosses an umbrella — `korean-war` is a
+main event with no parent and this record's parent is `world-war-ii` — and the
+other is inside `world-war-ii`.
+
+`node tools/validate.mjs`: **0 errors, 637 warnings** — the same 637 the previous fire
+ended on, so this batch added none.
+
+## Where the run stands after batch 93, for the fire that picks it up
+
+**Read the stand after batch 92 as well. Its §1 (choose the candidate by its far
+end), §2 (why Asia and not Africa) and §4 (the Cold War umbrella, the owner's
+call) are unchanged and still decide what the next fire can do.** Two things are
+new.
+
+**1. The next two candidates are named, measured only by name, and they are
+conferences.** `Q7163` the Yalta Conference and `Q188672` the Tehran Conference —
+ids to be confirmed from the item, which this fire did not fetch. The reason to
+take them is in the batch note above: the article this fire imported states, in
+§ Summary, that the invasion's timing *"was determined by the timing of the
+agreements at Tehran and Yalta"*, which is a cause stated in an article the
+atlas now cites, with a held far end. Both fall inside `world-war-ii`'s span, so
+both file at +0 main; both are `treaty` or near it in the class table, which the
+fire should check rather than assume; and `potsdam-conference`, which the atlas
+already holds, is their obvious third. **A fire that takes them gets edges in
+both directions**: Yalta → this invasion, and the conferences to each other if
+the articles state it.
+
+**2. A15(5)'s third-event guard has no exception for a parent, and that is one
+line for the owner.** `verdictFor` refused *"The invasion of Manchuria was a
+factor that contributed to the surrender of Japan and the end of World War II"*
+as a locator, naming `world-war-ii` as the third event the edge should be written
+from instead. `world-war-ii` is the subject's own **parent**: a sentence that
+says *"X contributed to Y and to the end of the war X is part of"* is not naming
+a third cause, it is naming the umbrella. The fix is one clause in
+`tools/import/chronology.mjs` — exclude the ends' parents as well as the ends,
+through `parentsOf` — and it is a records lane writing tool code, so it is
+written here rather than done. Until then the workaround is this batch's: rest
+the edge on a sentence that states the same cause and names no umbrella.
+
+**3. The network, unchanged from batch 92's stand §1, with one measurement
+added.** `Special:Export` and the Wikibase REST entity endpoint both answered,
+each on a retry loop of up to thirty tries at seven seconds; the first call of
+this fire got a 429 carrying the same *"created during active wdqs outage"*
+message. Six documents were read this way — the item, the article's export and the
+four items its `P710` and `P361` name — and every one arrived. The REST
+summary endpoint was not used at all: the lead was taken from the
+`Special:Export` wikitext, templates and refs stripped, which is what put the
+cache entry on disk at a revision the export itself names.
+
+**4. Deviation numbers: take the next above 1557.** This fire wrote **1557**
+only. **`origin/m42b` stood at 1556 when this fire read it**, which is why 1557
+and not the 1549 the batch-92 stand's arithmetic would have given — read
+`origin/m42b`'s own numbers before taking one, as the previous stands say.
+
+**5. Still open, unchanged, and still the owner's.** Everything in the batch-90
+and -91 stand's §6, plus deviation 1548's point-only reuse (this fire met the
+same shape from the other side and reused by hand again), §2 above, and the
+`docs/m42-pool.md` §3 table stopped at batch 17.
