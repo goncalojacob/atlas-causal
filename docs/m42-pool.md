@@ -23450,8 +23450,9 @@ another candidate in the vein.
     War of Attrition as the period it fell in.
 - **1 of the 8 connects**, and it is this batch.
 
-**The batch: one event, one place, two edges, one class.** `Q4572480`, the 1966
-anti-Igbo pogrom, Nigeria, May to October 1966. Its article states a cause at
+**The batch: one event, one place, two edges, one class.** `Q4572480`, written
+here as `1966-anti-igbo-pogrom` and filed under `decolonisation-of-africa`: the
+1966 anti-Igbo pogrom, Nigeria, May to October 1966. Its article states a cause at
 **both** ends, which is why it is the only row here and why it moves a component
 rather than only a lane count.
 

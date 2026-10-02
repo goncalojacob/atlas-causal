@@ -1173,9 +1173,7 @@
       "origin": {
         "tool": "assistant"
       },
-      "parent": [
-        "decolonisation-of-africa"
-      ],
+      "parent": "decolonisation-of-africa",
       "review": {
         "flags": [
           "summary-from-lead",
