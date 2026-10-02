@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-amboina",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q117350122",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Capture of Amboina"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q117350122"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Amboina\", revision 1370608249"
+    }
+  ],
+  "title": "Capture of Amboina",
+  "summary": "The English Wikipedia article \"Capture of Amboina\", at revision 1370608249, opens: \"The Capture of Amboina was the capture of the Portuguese fort Nossa Senhora de Anunciada in Amboina by the Dutch East India Company, under admiral Steven van der Hagen. The Portuguese governor of Ambon Gaspar de Melo surrendered the fort on 22 February 1605 to the Dutch forces, the fort was renamed to fort Victoria, and Ambon was placed under Dutch Control. The capture was one of the last major defeat of the Portuguese in the Moluccas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q117350122, imported by tools/import/wikidata.mjs. The item's own description reads \"1605 Dutch–Portuguese War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1605,
+    "end": 1605,
+    "date": "1605-02-22"
+  },
+  "place": "fort-victoria-ambon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}

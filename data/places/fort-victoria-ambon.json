@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "fort-victoria-ambon",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2488326",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Fort Victoria (Ambon)",
+    "pt": "Forte de Nossa Senhora da Anunciada de Amboíno"
+  },
+  "sources": [],
+  "names": [
+    "Fort of Our Lady of the Annunciation",
+    "Forte de Nossa Senhora da Anunciada de Amboíno",
+    "Fort Victoria (Ambon)"
+  ],
+  "where": {
+    "lon": 128.182349,
+    "lat": -3.692567,
+    "precision": "point",
+    "label": "Fort Victoria (Ambon)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
