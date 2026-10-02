@@ -31,7 +31,7 @@
       "to": 1599
     },
     {
-      "file": "index/attributes-1600-1699-b9f13712211e.json",
+      "file": "index/attributes-1600-1699-926feb7f5c48.json",
       "from": 1600,
       "key": "1600-1699",
       "to": 1699
@@ -67,7 +67,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-1406bf1ee250.json",
+      "file": "index/attributes-place-90f9e7b4ced9.json",
       "from": null,
       "key": "place",
       "to": null
@@ -956,7 +956,7 @@
       "id": "treaty"
     },
     {
-      "count": 884,
+      "count": 887,
       "id": "war"
     }
   ],
@@ -1025,10 +1025,10 @@
   "counts": {
     "actors": 2699,
     "edges": 1235,
-    "events": 1693,
+    "events": 1696,
     "narratives": 2,
     "offices": 11,
-    "places": 833,
+    "places": 834,
     "presences": 6691,
     "regions": 5,
     "relations": 138,
@@ -1073,13 +1073,13 @@
     }
   ],
   "files": {
-    "citers": "index/citers-5755051f6620",
-    "core": "index/core-e514bfd21fa7.json",
+    "citers": "index/citers-99fd7b92c30d",
+    "core": "index/core-4cdc469bd573.json",
     "grounds": "index/grounds-5303c1ca382f.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-d5d9c04abc82.json",
-    "search": "index/search-082b0433d35f.json",
-    "sources": "index/sources-00975d028e11.json",
+    "review": "index/review-bcc575ab06e8.json",
+    "search": "index/search-902483871acf.json",
+    "sources": "index/sources-6416cb2d8bc7.json",
     "territories": "index/territories-5ff6b360a7e0.json"
   },
   "historyShards": [
@@ -1098,7 +1098,7 @@
       "to": 1599
     },
     {
-      "file": "index/history-event-1600-1699-0f8c5d5b9f17.json",
+      "file": "index/history-event-1600-1699-83d3f7ab5941.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "event",
@@ -1245,7 +1245,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-c0f4d44b4972.json",
+      "file": "index/history-place-place-82f7b933aca6.json",
       "from": null,
       "key": "place",
       "kind": "place",

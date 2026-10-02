@@ -6392,6 +6392,15 @@
         }
       ]
     },
+    "mormugao": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "morocco-q1028": {
       "from": "git",
       "versions": [

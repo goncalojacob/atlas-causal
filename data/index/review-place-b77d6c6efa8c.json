@@ -4367,7 +4367,7 @@
         }
       ],
       "created": "2026-10-01",
-      "degree": 1,
+      "degree": 3,
       "id": "colombo",
       "kind": "place",
       "names": [
@@ -13191,6 +13191,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "mormugao",
+      "kind": "place",
+      "names": [
+        "Mormugao"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
