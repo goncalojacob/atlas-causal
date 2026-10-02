@@ -20340,3 +20340,11 @@ went from 1,545 entries (after the merge union) to **1,556**.*
 *The suite at this fire's head, run the way the check runs it: **1,940 pure tests, 1,940
 passed, 0 failed, 0 skipped** (after deviation 1532's fix; before it, one failed) and
 **313 browser tests across the 40 suites, 313 passed, 0 failed, 0 skipped**.*
+
+*The branch's check is **green on this fire's head `5e06d3d0`** — run **2355**, every step
+success: `Validate records`, then `Tests`. Deviation 1388's single browser failure
+(`tests/m65-browser.test.mjs` `not ok 67`, `map left out estado-novo-1933-1974`) **did not
+reproduce here**, locally or on the runner; the previous stand carried it as standing and
+this fire reads 313 of 313. The `--index` identity step is skipped on a branch push (it
+runs on a pull request that touches `data/index/`), and `node tools/validate.mjs --index`
+was clean at this head here.*

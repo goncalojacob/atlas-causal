@@ -24066,7 +24066,10 @@ forbids until C8 is decided. **Writing an umbrella puts every chain through it i
 A14's reach**, and that is the strongest argument yet for deciding C8. The fire's two
 batches left four and two candidates counted under A15(1). `validate --index` clean at
 **0 errors, 632 warnings**; **1,940 of 1,940 pure tests and 313 of 313 browser tests,
-nothing skipped**, run the way the check runs them.
+nothing skipped**, run the way the check runs them. **The branch's check is green on
+this fire's head `5e06d3d0`, run 2355, every step success** — and deviation 1388's one
+browser failure did not reproduce, here or on the runner, so this fire reads 313 of 313
+where the previous stand carried it as standing.
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
