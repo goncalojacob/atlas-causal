@@ -2,6 +2,15 @@
   "from": 1500,
   "kind": "event",
   "records": {
+    "aden-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "angolan-wars": {
       "from": "git",
       "versions": [
@@ -35,6 +44,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "attack-on-jeddah-1541": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -111,6 +129,15 @@
       ]
     },
     "battle-of-azemmour": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-bab-al-mandab": {
       "from": "git",
       "versions": [
         {
@@ -226,6 +253,15 @@
         }
       ]
     },
+    "battle-of-el-tor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-flodden": {
       "from": "git",
       "versions": [
@@ -284,12 +320,30 @@
         }
       ]
     },
+    "battle-of-jarte": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-johor-1586": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-kamaran": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -634,6 +688,15 @@
         }
       ]
     },
+    "battle-of-punnaikayal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-punta-quemada": {
       "from": "git",
       "versions": [
@@ -712,6 +775,24 @@
         }
       ]
     },
+    "battle-of-suakin-1541": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-suez-1541": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-tacuzcalco": {
       "from": "git",
       "versions": [
@@ -784,6 +865,15 @@
         }
       ]
     },
+    "battle-of-the-gulf-of-oman": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-the-sesia-1524": {
       "from": "git",
       "versions": [
@@ -799,6 +889,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-strait-of-hormuz-1553": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -846,6 +945,24 @@
       ]
     },
     "battle-of-wadi-al-laban": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-wayna-daga": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-wofla": {
       "from": "git",
       "versions": [
         {
@@ -1287,6 +1404,15 @@
         }
       ]
     },
+    "ottoman-campaign-against-hormuz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "ottoman-habsburg-wars": {
       "from": "git",
       "versions": [
@@ -1389,6 +1515,15 @@
         }
       ]
     },
+    "siege-of-bahrain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "siege-of-campar": {
       "from": "git",
       "versions": [
@@ -1455,6 +1590,24 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-diu-1538": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "siege-of-diu-1546": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -1616,6 +1769,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-qatif-1551": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

@@ -21476,7 +21476,7 @@ this batch's four children, and the Ottoman one takes the fourth and **eighteen 
 — the whole Indian Ocean theatre, which is the asia vein the stand's move 2 was looking for. A3's
 teeth are met by the purchase, not waived.
 
-**Deviation 1557 — the lane of a conflict whose locations are two oceans and a continent.** The
+**Deviation 1558 — the lane of a conflict whose locations are two oceans and a continent.** The
 Barbary item has no `P625` and three `P276` values, in this order: `Q97` the Atlantic Ocean,
 `Q4918` the Mediterranean Sea, `Q27381` North Africa. `wikidata.mjs` takes the first of them a
 lane polygon reaches: the Atlantic's centroid at 0N 30W reaches none, the Mediterranean's at 38N
@@ -21557,7 +21557,7 @@ in sentences that state no cause, plus one sentence that is exactly the refusal 
 *"**Following these events**, the Portuguese dispatched considerable reinforcements to Hormuz, and
 the following year defeated an Ottoman fleet at the Battle of the Strait of Hormuz."*
 
-**Deviation 1558 — the sweep reads a "See also" list as a sentence.** Four of those eight names
+**Deviation 1559 — the sweep reads a "See also" list as a sentence.** Four of those eight names
 (`conquest-of-tunis-1535` and the three sieges of Malacca) are in the article's `== See also ==`
 block, which `stripHeadings` strips the heading of and leaves the body of. A list of article
 titles is not prose and can state no cause, so nothing was written from it; but a sweep that

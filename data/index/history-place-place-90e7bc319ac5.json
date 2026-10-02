@@ -83,6 +83,15 @@
         }
       ]
     },
+    "aden-q131694": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "adrar-des-ifoghas": {
       "from": "git",
       "versions": [
@@ -564,6 +573,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "bab-al-mandab-strait": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -2662,6 +2680,15 @@
         }
       ]
     },
+    "diu-india": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "djidioua": {
       "from": "git",
       "versions": [
@@ -2928,6 +2955,15 @@
       ]
     },
     "el-jadida": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "el-tor-egypt": {
       "from": "git",
       "versions": [
         {
@@ -3952,6 +3988,15 @@
         }
       ]
     },
+    "gulf-of-oman": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "gulf-of-salerno": {
       "from": "git",
       "versions": [
@@ -4653,6 +4698,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "jeddah": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -5373,6 +5427,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "lake-tana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -7759,6 +7822,15 @@
         }
       ]
     },
+    "persian-gulf": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "peru-q419": {
       "from": "git",
       "versions": [
@@ -8354,6 +8426,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "qal-at-al-bahrain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -10033,6 +10114,15 @@
         }
       ]
     },
+    "strait-of-hormuz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "strait-of-magellan": {
       "from": "git",
       "versions": [
@@ -10058,6 +10148,15 @@
         }
       ]
     },
+    "suakin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "sudbury-massachusetts": {
       "from": "git",
       "versions": [
@@ -10070,6 +10169,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "suez": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

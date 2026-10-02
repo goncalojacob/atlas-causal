@@ -2552,6 +2552,12 @@
     },
     {
       "dissent": false,
+      "id": "aden-revolt",
+      "kind": "event",
+      "locator": "Q3049873"
+    },
+    {
+      "dissent": false,
       "id": "afghan-civil-war",
       "kind": "event",
       "locator": "Q2405009"
@@ -2888,6 +2894,12 @@
     },
     {
       "dissent": false,
+      "id": "attack-on-jeddah-1541",
+      "kind": "event",
+      "locator": "Q116056582"
+    },
+    {
+      "dissent": false,
       "id": "attack-on-the-moncada-barracks",
       "kind": "event",
       "locator": "Q11211553"
@@ -3131,6 +3143,12 @@
       "id": "battle-of-azemmour",
       "kind": "event",
       "locator": "Q2887914"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bab-al-mandab",
+      "kind": "event",
+      "locator": "Q113669215"
     },
     {
       "dissent": false,
@@ -3518,6 +3536,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-el-tor",
+      "kind": "event",
+      "locator": "Q115518405"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-elmina-1625",
       "kind": "event",
       "locator": "Q1140266"
@@ -3818,6 +3842,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-jarte",
+      "kind": "event",
+      "locator": "Q834881"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jean-rabel",
       "kind": "event",
       "locator": "Q4871314"
@@ -3851,6 +3881,12 @@
       "id": "battle-of-kallo",
       "kind": "event",
       "locator": "Q2888890"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kamaran",
+      "kind": "event",
+      "locator": "Q113685703"
     },
     {
       "dissent": false,
@@ -4520,6 +4556,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-punnaikayal",
+      "kind": "event",
+      "locator": "Q133236850"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-punta-quemada",
       "kind": "event",
       "locator": "Q1615387"
@@ -4796,6 +4838,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-suakin-1541",
+      "kind": "event",
+      "locator": "Q115517775"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-suez-1541",
+      "kind": "event",
+      "locator": "Q113648919"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-suipacha",
       "kind": "event",
       "locator": "Q2890073"
@@ -4934,6 +4988,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-gulf-of-oman",
+      "kind": "event",
+      "locator": "Q4872923"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-imjin-river",
       "kind": "event",
       "locator": "Q16170016"
@@ -5003,6 +5063,12 @@
       "id": "battle-of-the-spurs",
       "kind": "event",
       "locator": "Q699475"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-strait-of-hormuz-1553",
+      "kind": "event",
+      "locator": "Q55605053"
     },
     {
       "dissent": false,
@@ -5246,6 +5312,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-wayna-daga",
+      "kind": "event",
+      "locator": "Q957263"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-werben",
       "kind": "event",
       "locator": "Q653487"
@@ -5303,6 +5375,12 @@
       "id": "battle-of-wittstock",
       "kind": "event",
       "locator": "Q428972"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-wofla",
+      "kind": "event",
+      "locator": "Q835180"
     },
     {
       "dissent": false,
@@ -8102,6 +8180,12 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-campaign-against-hormuz",
+      "kind": "event",
+      "locator": "Q2935422"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-habsburg-wars",
       "kind": "event",
       "locator": "Q786171"
@@ -9008,6 +9092,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-bahrain",
+      "kind": "event",
+      "locator": "Q55633151"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-bautzen-1620",
       "kind": "event",
       "locator": "Q136351768"
@@ -9131,6 +9221,18 @@
       "id": "siege-of-dijon",
       "kind": "event",
       "locator": "Q3485875"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-diu-1538",
+      "kind": "event",
+      "locator": "Q3394749"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-diu-1546",
+      "kind": "event",
+      "locator": "Q7443525"
     },
     {
       "dissent": false,
@@ -9455,6 +9557,12 @@
       "id": "siege-of-prague-1744",
       "kind": "event",
       "locator": "Q139855572"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-qatif-1551",
+      "kind": "event",
+      "locator": "Q115517267"
     },
     {
       "dissent": false,

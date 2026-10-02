@@ -2672,6 +2672,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-jarte--battle-of-wofla--reacted-to",
+      "kind": "edge",
+      "locator": "\"Ottoman–Portuguese conflicts (1538–1560)\", revision 1376305276"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-junin--battle-of-ayacucho--caused",
       "kind": "edge",
       "locator": "\"Battle of Ayacucho\", revision 1375770122, §§ Olañeta's rebellion and Ayacucho campaign"
@@ -10670,6 +10676,12 @@
     },
     {
       "dissent": false,
+      "id": "aden-revolt",
+      "kind": "event",
+      "locator": "\"Aden Revolt\", revision 1370426945"
+    },
+    {
+      "dissent": false,
       "id": "afghan-civil-war",
       "kind": "event",
       "locator": "\"Afghan Civil War (1989–1992)\", revision 1371765193"
@@ -10943,6 +10955,12 @@
       "id": "attack-on-bintan-1521",
       "kind": "event",
       "locator": "\"Attack on Bintan (1521)\", revision 1372970515"
+    },
+    {
+      "dissent": false,
+      "id": "attack-on-jeddah-1541",
+      "kind": "event",
+      "locator": "\"Attack on Jeddah (1541)\", revision 1370429469"
     },
     {
       "dissent": false,
@@ -11546,6 +11564,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-el-tor",
+      "kind": "event",
+      "locator": "\"Battle of El Tor\", revision 1374080276"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-elmina-1625",
       "kind": "event",
       "locator": "\"Battle of Elmina (1625)\", revision 1375871907"
@@ -11849,6 +11873,12 @@
       "id": "battle-of-jaquijahuana",
       "kind": "event",
       "locator": "\"Battle of Jaquijahuana\", revision 1370444091"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-jarte",
+      "kind": "event",
+      "locator": "\"Battle of Jarte\", revision 1374242866"
     },
     {
       "dissent": false,
@@ -12554,6 +12584,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-punnaikayal",
+      "kind": "event",
+      "locator": "\"Battle of Punnaikayal\", revision 1370586781"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-punta-quemada",
       "kind": "event",
       "locator": "\"Battle of Punta Quemada\", revision 1370586796"
@@ -12836,6 +12872,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-suakin-1541",
+      "kind": "event",
+      "locator": "\"Battle of Suakin (1541)\", revision 1373265699"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-suez-1541",
+      "kind": "event",
+      "locator": "\"Battle of Suez (1541)\", revision 1370590062"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-suipacha",
       "kind": "event",
       "locator": "\"Battle of Suipacha\", revision 1370274854"
@@ -12974,6 +13022,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-gulf-of-oman",
+      "kind": "event",
+      "locator": "\"Battle of the Gulf of Oman\", revision 1370874327"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-imjin-river",
       "kind": "event",
       "locator": "\"Battle of the Imjin River\", revision 1376480748"
@@ -13049,6 +13103,12 @@
       "id": "battle-of-the-spurs",
       "kind": "event",
       "locator": "\"Battle of the Spurs\", revision 1370602393"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-strait-of-hormuz-1553",
+      "kind": "event",
+      "locator": "\"Battle of the Strait of Hormuz (1553)\", revision 1370602416"
     },
     {
       "dissent": false,
@@ -13298,6 +13358,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-wayna-daga",
+      "kind": "event",
+      "locator": "\"Battle of Wayna Daga\", revision 1370593467"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-werben",
       "kind": "event",
       "locator": "\"Battle of Werben\", revision 1370276785"
@@ -13355,6 +13421,12 @@
       "id": "battle-of-wittstock",
       "kind": "event",
       "locator": "\"Battle of Wittstock\", revision 1371435921"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-wofla",
+      "kind": "event",
+      "locator": "\"Battle of Wofla\", revision 1370594387"
     },
     {
       "dissent": false,
@@ -16082,6 +16154,12 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-campaign-against-hormuz",
+      "kind": "event",
+      "locator": "\"Ottoman campaign against Hormuz\", revision 1376300939"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-habsburg-wars",
       "kind": "event",
       "locator": "\"Ottoman–Habsburg wars\", revision 1377471430"
@@ -16934,6 +17012,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-bahrain",
+      "kind": "event",
+      "locator": "\"Siege of Bahrain\", revision 1376466141"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-bautzen-1620",
       "kind": "event",
       "locator": "\"Siege of Bautzen (1620)\", revision 1370739355"
@@ -17057,6 +17141,18 @@
       "id": "siege-of-dijon",
       "kind": "event",
       "locator": "\"Siege of Dijon\", revision 1370740741"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-diu-1538",
+      "kind": "event",
+      "locator": "\"Siege of Diu (1538)\", revision 1374556346"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-diu-1546",
+      "kind": "event",
+      "locator": "\"Siege of Diu (1546)\", revision 1370740757"
     },
     {
       "dissent": false,
@@ -17381,6 +17477,12 @@
       "id": "siege-of-prague-1744",
       "kind": "event",
       "locator": "\"Siege of Prague (1744)\", revision 1371733911"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-qatif-1551",
+      "kind": "event",
+      "locator": "\"Siege of Qatif (1551)\", revision 1370744652"
     },
     {
       "dissent": false,
