@@ -24713,6 +24713,24 @@ only, over all three batches. **`origin/m42b` stood at 1556 when this fire read 
 and not the 1549 the batch-92 stand's arithmetic would have given — read
 `origin/m42b`'s own numbers before taking one, as the previous stands say.
 
+**4b. Two mistakes this fire made that cost it commits, both worth not repeating.**
+
+- **Deviation 798 is about the history shards, and this fire read it as being
+  about order alone.** It built each batch's index *before* committing that
+  batch's records, which is the wrong half of "records first, rebuild, then
+  commit the index": the history shards in `data/index/` are built out of the
+  repository's **own commits**, so an index built before the records are
+  committed is missing their first version and `rule 16` refuses it. Three of
+  this fire's index commits were stale for that reason and one rebuild on the
+  head that had all three records fixed them. **Rebuild after the records commit
+  exists, not before.**
+- **A record with no category carries no `category` key at all, not
+  `"category": null`.** `tests/bundle.test.mjs` holds every record to a
+  byte-identical round trip through the contribution form's own writer, and that
+  writer omits the key. Batches 94 and 95 wrote the null and a fourth commit took
+  it out. Two of the three records this fire wrote are uncategorised, which is
+  why it met this at all; A15(12)'s count is unchanged either way.
+
 **5. Still open, unchanged, and still the owner's.** Everything in the batch-90
 and -91 stand's §6, plus deviation 1548's point-only reuse (this fire met the
 same shape from the other side and reused by hand again), §2 above, and the
