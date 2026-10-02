@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "action-of-27-june-1798",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4677323",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Action of 27 June 1798"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4677323"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 27 June 1798\", revision 1373255379"
+    }
+  ],
+  "title": "Action of 27 June 1798",
+  "summary": "The English Wikipedia article \"Action of 27 June 1798\", at revision 1373255379, opens: \"The action of 27 June 1798 was a single-ship action fought between the British and French navies in the Strait of Sicily as part of the Mediterranean campaign of 1798. On 19 May 1798, a French fleet left Toulon to invade Egypt. On 12 June the French fleet captured Malta, after which the 32-gun frigate Sensible, captained by Frigate Captain Guillaume-François-Joseph Bourdé, was detached from the fleet to transport wounded troops and loot back to France. Meanwhile, the 38-gun British frigate HMS Seahorse, under Captain Edward Foote, was detached from the Mediterranean Fleet in the Tagus River with orders to reinforce Sir Horatio Nelson's fleet, which was searching for the French fleet.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4677323, imported by tools/import/wikidata.mjs. The item's own description reads \"1798 minor naval engagement during the French Revolutionary Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1798,
+    "end": 1798,
+    "date": "1798-06-27"
+  },
+  "place": "strait-of-sicily",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

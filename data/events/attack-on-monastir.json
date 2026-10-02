@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "attack-on-monastir",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q131765078",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Attack on Monastir"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q131765078"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Attack on Monastir\", revision 1370429514"
+    }
+  ],
+  "title": "Attack on Monastir",
+  "summary": "The English Wikipedia article \"Attack on Monastir\", at revision 1370429514, opens: \"The attack on Monastir was an attempt by the Maltese knights of Hospitallers to attack and sack the Tunisian city of Monastir; the attack, however, failed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q131765078, imported by tools/import/wikidata.mjs. The item's own description reads \"1603 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1603,
+    "end": 1603,
+    "date": "1603-10-06"
+  },
+  "place": "monastir-tunisia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-habsburg-wars"
+}

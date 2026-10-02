@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-swally",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2092338",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Swally",
+    "pt": "Batalha de Suvali"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2092338"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Swally\", revision 1371286628"
+    }
+  ],
+  "title": "Battle of Swally",
+  "summary": "The English Wikipedia article \"Battle of Swally\", at revision 1371286628, opens: \"The naval Battle of Swally, also known as Battle of Suvali, took place on 29–30 November 1612 off the coast of Suvali a village near the Surat city and was a victory for four English East India Company galleons over four Portuguese galleons and 26 barks.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2092338, imported by tools/import/wikidata.mjs. The item's own description reads \"part of Portuguese battles in the Indian Ocean (1612)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1612,
+    "end": 1612,
+    "date": "1612-12-09",
+    "endDate": "1612-12-10"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}

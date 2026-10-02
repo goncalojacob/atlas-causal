@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-pondicherry-1748",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3485992",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Pondicherry (1748)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485992"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Pondicherry (1748)\", revision 1370744503"
+    }
+  ],
+  "title": "Siege of Pondicherry (1748)",
+  "summary": "The English Wikipedia article \"Siege of Pondicherry (1748)\", at revision 1370744503, opens: \"The siege of Pondicherry was conducted by British forces against a French East India Company garrison under the command of Governor-General Joseph François Dupleix at the Indian port of Pondicherry. The British siege strategy, conducted with inexperience in siege tactics by Admiral Edward Boscawen, was lifted with the arrival of monsoon rains, on 27 October 1748. The siege was the last major action of the First Carnatic War, as the Indian theatre of the War of the Austrian Succession is sometimes known.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485992, imported by tools/import/wikidata.mjs. The item's own description reads \"1748 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1748,
+    "end": 1748,
+    "date": "1748-04-29",
+    "endDate": "1748-09-30"
+  },
+  "place": "pondicherry",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-carnatic-war"
+}

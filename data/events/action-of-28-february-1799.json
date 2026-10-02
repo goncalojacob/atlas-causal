@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "action-of-28-february-1799",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q20036667",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Action of 28 February 1799"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20036667"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 28 February 1799\", revision 1370426459"
+    }
+  ],
+  "title": "Action of 28 February 1799",
+  "summary": "The English Wikipedia article \"Action of 28 February 1799\", at revision 1370426459, opens: \"The action of 28 February 1799 was a minor naval engagement of the East Indies theatre of the French Revolutionary Wars, fought off the mouth of the Hooghly River in the Bay of Bengal between the French frigate Forte and the Royal Navy frigate HMS Sybille. Forte was an exceptionally large and powerful ship engaged on a commerce raiding operation against British merchant shipping off the port of Calcutta in British India. To eliminate this threat, Sybille was sent from Madras in pursuit. Acting on information from released prisoners, Edward Cooke, captain of Sybille, was sailing off Balasore when distant gunfire alerted him to the presence of Forte on the evening of 28 February. The French frigate was discovered at anchor in the sandbanks at the mouth of the Hooghly with two recently captured British merchant ships.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20036667, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 minor naval engagement during the French Revolutionary Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-02-28"
+  },
+  "place": "hooghly-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

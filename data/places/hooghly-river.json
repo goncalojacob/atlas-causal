@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "hooghly-river",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q739687",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Hooghly River",
+    "pt": "Rio Golim"
+  },
+  "sources": [],
+  "names": [
+    "Hooghly River",
+    "Rio Hooghly",
+    "Rio Golim"
+  ],
+  "where": {
+    "lon": 88.378611111111,
+    "lat": 23.409166666667,
+    "precision": "region",
+    "label": "Hooghly River"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
