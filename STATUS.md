@@ -24922,6 +24922,13 @@ held events). **Deviation 1539**: `statesACause` returned true on a sentence who
 was *"due to illness"* — the gate is a filter and not an authority. **Deviation 1538**:
 `api.php`'s 429 is the missing `User-Agent` header, reproducibly, and not deviation 1530's
 twenty-minute window; `rest.php` is 429 with the header too.
+**Deviation 1540**: the index must be rebuilt *after* the commit that writes the records, because
+`tools/lib/history.mjs` reads each record's versions out of the commits that touched its file.
+All three batches rebuilt first and left rule 16 stale in three history shards;
+`tests/build-index.test.mjs` caught it and a fourth index commit fixed it. The same commit
+showed that `git add data/index` is not the index — `build-index.mjs` writes `sources.html`
+and `narratives.html` at the repository root since H8, and three citation counts had been
+left behind.
 **The main count is level at 234 from the first commit to the last** — the first fire of this
 lane to grow by six and claim nothing. Largest component **786** and crossing count **615**,
 both level, which is the measurement saying the atlas is gaining events faster than arguments.

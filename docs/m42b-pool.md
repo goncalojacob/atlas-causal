@@ -17951,7 +17951,7 @@ should use `list=backlinks` plus one `wbgetentities`, not SPARQL.**
 *1 October, after the fifty-eighth fire: **one merge** of `origin/m42` and **one
 batch** — 65, which took **asia's 17th century from four to eight** with the four
 Asian children of the held `dutch-portuguese-war` umbrella whose own articles agree
-they belong to it, and wrote **one edge, crossing no umbrella**. **Three things the
+they belong to it, and wrote **one edge, crossing no umbrella**. **Four things the
 next fire must know**: the main count did **not** move, which is the first batch in
 three fires that can say so; **the batch's four imports carry no edge and the batch
 section says so against A5** — the vein's articles are stubs, and the one named
@@ -20571,12 +20571,14 @@ lane has managed while growing. Nine class rows went into the table, **nine reco
 place**, and africa's 16th century went 16 → 17, asia's 17th 17 → 19 and the americas 393 →
 396. **No edge was written**, and that is the fire's real finding: the largest component and
 the crossing count are both level, at **786** and **615**, because A15(5) refused four
-sentences across five articles and every one of the refusals was correct. **Three things the
+sentences across five articles and every one of the refusals was correct. **Four things the
 next fire must know**: the inverse-`P361` sweep, run whole for the first time, says **africa
 before 1800 is zero and the americas is 494**, so the lane that trails is no longer the lane
 with candidates; **`api.php`'s 429 is the missing `User-Agent`** and not a twenty-minute
-window (deviation 1538, correcting 1530); and **deleting a record to re-import it throws away
-every pass an earlier batch made over it** (deviation 1537).*
+window (deviation 1538, correcting 1530); **deleting a record to re-import it throws away
+every pass an earlier batch made over it** (deviation 1537); and **the index must be rebuilt
+after the commit that writes the records, and `sources.html` is part of it** (deviation
+1540, which is move 9 below and cost this fire a fourth index commit).*
 
 ### The next fire's moves, in order
 
@@ -20637,7 +20639,19 @@ every pass an earlier batch made over it** (deviation 1537).*
    `kandyan-commerce-raiding-against-portugal-1612-1613`'s place, which batch 75 could not
    write because the lane guard refused `Q1239`. **`Q25830845` and `Q19019163` are no longer
    open** — this fire imported both — and **the Angolan vein is finished**.
-9. **Deviation numbers: 1539 is the highest taken**; this fire used 1537, 1538 and 1539.
+9. **Deviation 1540 is a rule about the order of two commits and it bit this fire three
+   times.** `tools/lib/history.mjs` reads each record's versions out of the commits that
+   touched its file, so **the index must be rebuilt after the commit that writes the
+   records**, not before it. All three batches of this fire rebuilt first and committed the
+   index second, and all three left rule 16 stale in three history shards —
+   `tests/build-index.test.mjs` → *"the repository data/ validates and its index is fresh"*
+   is what caught it, and `node tools/validate.mjs --index` run before the record commit
+   does not, because at that moment the index is fresh. The same commit also showed that
+   **`git add data/index` is not the index**: `build-index.mjs` writes `sources.html` and
+   `narratives.html` at the repository root since H8, and three citation counts in
+   `sources.html` had been left behind. The order is: records → **commit** → rebuild →
+   `git add -A data/index sources.html narratives.html` → commit.
+10. **Deviation numbers: 1540 is the highest taken**; this fire used 1537, 1538, 1539 and 1540.
    Read deviation 1484 before taking the next one, and run its three greps: `[Dd]eviations\? <n>`
    over both pool files and `STATUS.md`, `^<n>\. \*\*` over `STATUS.md`, and
    `^\*\*Deviation <n>` over both pool files.
