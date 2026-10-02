@@ -4612,6 +4612,36 @@
         "wikidata"
       ],
       "created": "2026-10-02",
+      "id": "action-of-26-may-1789",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "barbary-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "article-is-redirect",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Action of 26 May 1789"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-10-02",
       "id": "action-of-30-september-1639",
       "kind": "event",
       "origin": {
@@ -6840,6 +6870,35 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Bangladesh Liberation War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "barbary-portuguese-conflicts",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Barbary–Portuguese conflicts"
     },
     {
       "authors": [
@@ -17198,6 +17257,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-02",
+      "degree": 1,
       "id": "battle-of-taza-1553",
       "kind": "event",
       "origin": {
@@ -17408,6 +17468,39 @@
       "revised": null,
       "status": "active",
       "title": "Battle of the Assunpink Creek"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "battle-of-the-bay-of-velez",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-portuguese-conflicts-1538-1560",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the Bay of Velez"
     },
     {
       "authors": [
@@ -36319,6 +36412,36 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "ottoman-portuguese-conflicts-1538-1560",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "span-from-title",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Ottoman–Portuguese conflicts (1538–1560)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -37451,6 +37574,42 @@
       "revised": null,
       "status": "active",
       "title": "Portuguese conquest of Tangier"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "portuguese-expedition-to-tripoli",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "barbary-portuguese-conflicts",
+        "french-revolutionary-wars"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "filed-by-hand"
+        ],
+        "note": "Second umbrella added by hand under A3/A6/A8, on the article's own first sentence: \"The Portuguese expedition to Tripoli was a naval operation carried out by the Portuguese Navy against Ottoman Tripolitania during the French Revolutionary Wars\" (\"Portuguese expedition to Tripoli\", revision 1370704835). french-revolutionary-wars runs 1792 to 1802 and contains 1799, and neither umbrella is reachable from the other. The item's own P361 named only the Barbary conflicts. M42b batch 84.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Portuguese expedition to Tripoli"
     },
     {
       "authors": [
@@ -39454,6 +39613,37 @@
       "revised": null,
       "status": "active",
       "title": "Sack of Brescia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "sack-of-madeira",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "barbary-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Sack of Madeira"
     },
     {
       "authors": [
@@ -51187,6 +51377,18 @@
       "rule": "summary-imported"
     },
     {
+      "id": "action-of-26-may-1789",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "action-of-26-may-1789",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "action-of-30-september-1639",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -51308,6 +51510,12 @@
     },
     {
       "id": "bala-hissar-uprising",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "barbary-portuguese-conflicts",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -52040,12 +52248,6 @@
     },
     {
       "id": "battle-of-tarbes",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "battle-of-taza-1553",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -52891,6 +53093,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "ottoman-portuguese-conflicts-1538-1560",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "palace-of-justice-siege",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -52922,6 +53130,12 @@
     },
     {
       "id": "portuguese-conquest-of-ksar-es-seghir",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "portuguese-expedition-to-tripoli",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -53060,6 +53274,12 @@
     },
     {
       "id": "sack-of-brescia",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "sack-of-madeira",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

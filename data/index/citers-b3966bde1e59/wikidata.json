@@ -2516,6 +2516,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-26-may-1789",
+      "kind": "event",
+      "locator": "Q125662483"
+    },
+    {
+      "dissent": false,
       "id": "action-of-30-september-1639",
       "kind": "event",
       "locator": "Q4677351"
@@ -2963,6 +2969,12 @@
       "id": "bangladesh-liberation-war",
       "kind": "event",
       "locator": "Q371394, P31 Q198"
+    },
+    {
+      "dissent": false,
+      "id": "barbary-portuguese-conflicts",
+      "kind": "event",
+      "locator": "Q132132698"
     },
     {
       "dissent": false,
@@ -4889,6 +4901,12 @@
       "id": "battle-of-the-assunpink-creek",
       "kind": "event",
       "locator": "Q233417"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-bay-of-velez",
+      "kind": "event",
+      "locator": "Q116609273"
     },
     {
       "dissent": false,
@@ -8090,6 +8108,12 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-portuguese-conflicts-1538-1560",
+      "kind": "event",
+      "locator": "Q762191"
+    },
+    {
+      "dissent": false,
       "id": "palace-of-justice-siege",
       "kind": "event",
       "locator": "Q829836"
@@ -8285,6 +8309,12 @@
       "id": "portuguese-conquest-of-tangier",
       "kind": "event",
       "locator": "Q124474956"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-expedition-to-tripoli",
+      "kind": "event",
+      "locator": "Q138022960"
     },
     {
       "dissent": false,
@@ -8645,6 +8675,12 @@
       "id": "sack-of-brescia",
       "kind": "event",
       "locator": "Q11703607"
+    },
+    {
+      "dissent": false,
+      "id": "sack-of-madeira",
+      "kind": "event",
+      "locator": "Q111208948"
     },
     {
       "dissent": false,

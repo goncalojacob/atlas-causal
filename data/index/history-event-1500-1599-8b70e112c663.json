@@ -766,6 +766,15 @@
         }
       ]
     },
+    "battle-of-the-bay-of-velez": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-the-citadel-of-vicenza": {
       "from": "git",
       "versions": [
@@ -1284,6 +1293,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "ottoman-portuguese-conflicts-1538-1560": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

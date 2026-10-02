@@ -655,7 +655,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "algiers-q3561",
       "kind": "place",
       "names": [
@@ -16159,6 +16159,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "penon-de-velez-de-la-gomera",
+      "kind": "place",
+      "names": [
+        "Peñón de Vélez de la Gomera",
+        "Ilhote de Vélez de la Gomera"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-30",
       "degree": 1,
       "id": "pensacola-florida",
@@ -22243,7 +22271,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "tripoli",
       "kind": "place",
       "names": [

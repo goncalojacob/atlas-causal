@@ -76,6 +76,15 @@
         }
       ]
     },
+    "action-of-26-may-1789": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "action-of-31-july-1793": {
       "from": "git",
       "versions": [
@@ -1500,6 +1509,15 @@
       ]
     },
     "oran-expedition-1707": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "portuguese-expedition-to-tripoli": {
       "from": "git",
       "versions": [
         {

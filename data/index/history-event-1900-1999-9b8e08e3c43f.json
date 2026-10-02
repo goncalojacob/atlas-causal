@@ -6218,7 +6218,7 @@
       ]
     },
     "atomic-bombings-of-hiroshima-and-nagasaki": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -20211,7 +20211,7 @@
       ]
     },
     "surrender-of-japan": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

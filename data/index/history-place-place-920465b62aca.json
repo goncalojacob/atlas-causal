@@ -4118,7 +4118,7 @@
       ]
     },
     "hiroshima": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7708,6 +7708,15 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "penon-de-velez-de-la-gomera": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

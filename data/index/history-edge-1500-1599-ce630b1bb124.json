@@ -299,6 +299,15 @@
         }
       ]
     },
+    "battle-of-the-bay-of-velez--battle-of-taza-1553--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-the-spurs--siege-of-dijon--enabled": {
       "from": "git",
       "versions": [

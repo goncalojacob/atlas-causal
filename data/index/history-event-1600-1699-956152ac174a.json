@@ -109,6 +109,15 @@
         }
       ]
     },
+    "barbary-portuguese-conflicts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-in-the-bay-of-sao-salvador": {
       "from": "git",
       "versions": [
@@ -1786,6 +1795,15 @@
       ]
     },
     "sack-of-bombay-1626": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "sack-of-madeira": {
       "from": "git",
       "versions": [
         {

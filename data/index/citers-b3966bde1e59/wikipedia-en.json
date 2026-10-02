@@ -3350,6 +3350,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-bay-of-velez--battle-of-taza-1553--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Taza (1553)\", revision 1370590714"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-ch-ongch-on-river--battle-of-chosin-reservoir--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Chosin Reservoir\", revision 1370109047, § Battle / Actions at Yudam-ni"
@@ -11012,6 +11018,12 @@
     },
     {
       "dissent": false,
+      "id": "barbary-portuguese-conflicts",
+      "kind": "event",
+      "locator": "\"Barbary–Portuguese conflicts\", revision 1370430401"
+    },
+    {
+      "dissent": false,
       "id": "baring-crisis",
       "kind": "event",
       "locator": "\"Baring crisis\", revision 1370190462"
@@ -12929,6 +12941,12 @@
       "id": "battle-of-the-assunpink-creek",
       "kind": "event",
       "locator": "\"Battle of the Assunpink Creek\", revision 1371410210"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-bay-of-velez",
+      "kind": "event",
+      "locator": "\"Battle of the Bay of Velez\", revision 1375535408"
     },
     {
       "dissent": false,
@@ -16070,6 +16088,12 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-portuguese-conflicts-1538-1560",
+      "kind": "event",
+      "locator": "\"Ottoman–Portuguese conflicts (1538–1560)\", revision 1376305276"
+    },
+    {
+      "dissent": false,
       "id": "palace-of-justice-siege",
       "kind": "event",
       "locator": "\"Palace of Justice siege\", revision 1374219418"
@@ -16259,6 +16283,12 @@
       "id": "portuguese-conquest-of-tangier",
       "kind": "event",
       "locator": "\"Portuguese conquest of Tangier\", revision 1370704790"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-expedition-to-tripoli",
+      "kind": "event",
+      "locator": "\"Portuguese expedition to Tripoli\", revision 1370704835"
     },
     {
       "dissent": false,
@@ -16607,6 +16637,12 @@
       "id": "sack-of-brescia",
       "kind": "event",
       "locator": "\"Sack of Brescia\", revision 1370729504"
+    },
+    {
+      "dissent": false,
+      "id": "sack-of-madeira",
+      "kind": "event",
+      "locator": "\"Sack of Madeira\", revision 1340652442"
     },
     {
       "dissent": false,
