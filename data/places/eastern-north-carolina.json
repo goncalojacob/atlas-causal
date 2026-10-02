@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "eastern-north-carolina",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5330337",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Eastern North Carolina"
+  },
+  "sources": [],
+  "names": [
+    "Eastern North Carolina"
+  ],
+  "where": {
+    "lon": -77,
+    "lat": 35,
+    "precision": "region",
+    "label": "Eastern North Carolina"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

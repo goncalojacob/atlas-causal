@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "south-carolina-q1456",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1456",
+  "sitelinks": {
+    "count": 192,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "South Carolina",
+    "pt": "Carolina do Sul"
+  },
+  "sources": [],
+  "names": [
+    "South Carolina",
+    "Carolina do Sul"
+  ],
+  "where": {
+    "lon": -81,
+    "lat": 34,
+    "precision": "region",
+    "label": "South Carolina"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

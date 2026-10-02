@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-louisbourg-1745",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1152894",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Louisbourg (1745)",
+    "pt": "Cerco de Louisbourg (1745)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1152894"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Louisbourg (1745)\", revision 1375096903"
+    }
+  ],
+  "title": "Siege of Louisbourg (1745)",
+  "summary": "The English Wikipedia article \"Siege of Louisbourg (1745)\", at revision 1375096903, opens: \"The siege of Louisbourg was the 1745 capture of the French settlement of Louisbourg on present-day Cape Breton Island, Nova Scotia, by British North American forces during the War of the Austrian Succession, known as King George's War in the British colonies. The Fortress of Louisbourg was taken with the aid of a British fleet. The northern British colonies regarded Louisbourg, the capital of the French province of Île-Royale, as a menace, calling it the \"American Dunkirk\" due to its use as a base for privateers. There was regular, intermittent warfare between the French and the Wabanaki Confederacy on one side and the northern New England colonies on the other.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1152894, imported by tools/import/wikidata.mjs. The item's own description reads \"1745 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1745,
+    "end": 1745,
+    "date": "1745-05-11",
+    "endDate": "1745-06-28"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-austrian-succession"
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mississippi-river",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1497",
+  "sitelinks": {
+    "count": 172,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Mississippi River",
+    "pt": "Rio Mississippi"
+  },
+  "sources": [],
+  "names": [
+    "Mississippi River",
+    "Rio Mississípi",
+    "Rio Mississippi"
+  ],
+  "where": {
+    "lon": -95.2075,
+    "lat": 47.2397,
+    "precision": "region",
+    "label": "Mississippi River"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "choctaw-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q60742221",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Choctaw Civil War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q60742221"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Choctaw Civil War\", revision 1374108685"
+    }
+  ],
+  "title": "Choctaw Civil War",
+  "summary": "The English Wikipedia article \"Choctaw Civil War\", at revision 1374108685, opens: \"The Choctaw Civil War was a period of economic and social unrest among the Choctaw people that degenerated into a civil war between 1747 and 1750. Fought between two different factions within the Choctaw, the conflict was sparked by bitter disagreements on whether the Choctaw would trade with British or French colonists. Hundreds of Choctaw died in the war and the pro-French faction retained their influence within the Choctaw nation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q60742221, imported by tools/import/wikidata.mjs. The item's own description reads \"1747–1750 civil war within the Choctaw nation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1747,
+    "end": 1750
+  },
+  "place": "southeastern-united-states",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

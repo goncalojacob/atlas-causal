@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "action-of-17-july-1628",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4677272",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Action of 17 July 1628"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4677272"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Action of 17 July 1628\", revision 1371464896"
+    }
+  ],
+  "title": "Action of 17 July 1628",
+  "summary": "The English Wikipedia article \"Action of 17 July 1628\", at revision 1371464896, opens: \"The action of 17 July 1628 took place during the Anglo-French War (1627–1629). The English force led by the Kirke brothers succeeded in capturing a supply convoy bound for New France, severely impairing that colony's ability to resist attack.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4677272, imported by tools/import/wikidata.mjs. The item's own description reads \"1628 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1628,
+    "end": 1628,
+    "date": "1628-07-17"
+  },
+  "place": "st-lawrence-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-french-war-1627-1629"
+}

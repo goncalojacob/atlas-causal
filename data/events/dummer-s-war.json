@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dummer-s-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1265114",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Dummer's War",
+    "pt": "Guerra de Dummer"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1265114"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dummer's War\", revision 1375086224"
+    }
+  ],
+  "title": "Dummer's War",
+  "summary": "The English Wikipedia article \"Dummer's War\", at revision 1375086224, opens: \"Dummer's War (1722–1725) was a series of battles between the New England Colonies and the Wabanaki Confederacy, who were allied with New France. The eastern theater of the war was located primarily along the border between New England and Acadia in Maine, as well as in Nova Scotia; the western theater was located in northern Massachusetts and Vermont in the frontier areas between Canada and New England.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1265114, imported by tools/import/wikidata.mjs. The item's own description reads \"war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1722,
+    "end": 1725,
+    "date": "1722-07-25",
+    "endDate": "1725-12-15"
+  },
+  "place": "new-england",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

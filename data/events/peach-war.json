@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "peach-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1546544",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Peach War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1546544"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peach War\", revision 1376133255"
+    }
+  ],
+  "title": "Peach War",
+  "summary": "The English Wikipedia article \"Peach War\", at revision 1376133255, opens: \"The Peach War, sometimes called the Peach Tree War, was a one-day occupation of New Amsterdam on September 15, 1655, by several hundred Munsee, followed by raids on Staten Island and Pavonia. Forty-three colonists were killed and over 100, mostly women and children, were taken captive, but released later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1546544, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1655,
+    "end": 1655,
+    "date": "1655-09-15"
+  },
+  "place": "pavonia-new-netherland",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

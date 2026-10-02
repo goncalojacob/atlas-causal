@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "queen-anne-s-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q869045",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Queen Anne's War",
+    "pt": "Guerra da Rainha Ana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q869045"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Queen Anne's War\", revision 1375172739"
+    }
+  ],
+  "title": "Queen Anne's War",
+  "summary": "The English Wikipedia article \"Queen Anne's War\", at revision 1375172739, opens: \"Queen Anne's War (1702–1713) was the second in a series of French and Indian Wars fought in North America involving the colonial empires of Great Britain, France, and Spain. In the United States, it is regarded as a standalone conflict. Elsewhere it is viewed as the American theater of the War of the Spanish Succession. It is also known as the Third Indian War. In France it was known as the Second Intercolonial War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q869045, imported by tools/import/wikidata.mjs. The item's own description reads \"North American theater of the War of the Spanish Succession\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1702,
+    "end": 1713,
+    "date": "1702-03-08",
+    "endDate": "1713-07-13"
+  },
+  "place": "north-america",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}
