@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-bay-of-velez--battle-of-taza-1553--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-84"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Taza (1553)\", revision 1370590714"
+    }
+  ],
+  "from": "battle-of-the-bay-of-velez",
+  "to": "battle-of-taza-1553",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The far end's own article opens its background on this battle: it is what put the Wattasid claimant in Salah Reis's hands, and that is the standing the Taza campaign was fought on. “Battle of Taza (1553)”, at revision 1370590714, § Background: “A fleet of 5 Portuguese caravels transporting him was intercepted and defeated by Salah Reis in the Battle of Velez. The Velez was captured by Salah Reis. Abou Hassan sought intervention against the Sharif in Fez, having been captured by Salah Reis and held in strict captivity in Algiers prior to offering his vassalage to Salah Reis.” The same article's § Battle has Salah Reis setting out in September and bringing “the Wattasid sovereign with him”. What the article states is what the sea battle delivered, not that it caused the campaign, so the type is `enabled` and not `caused`. `probable` under rule 22: the only citation is a Wikipedia article, and this one carries no bibliography a second author could be taken from (M72).",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

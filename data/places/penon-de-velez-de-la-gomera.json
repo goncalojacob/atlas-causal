@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "penon-de-velez-de-la-gomera",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q191146",
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Peñón de Vélez de la Gomera",
+    "pt": "Ilhote de Vélez de la Gomera"
+  },
+  "sources": [],
+  "names": [
+    "Peñón de Vélez de la Gomera",
+    "Ilhote de Vélez de la Gomera"
+  ],
+  "where": {
+    "lon": -4.299722222222222,
+    "lat": 35.172222222222224,
+    "precision": "region",
+    "label": "Peñón de Vélez de la Gomera"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
