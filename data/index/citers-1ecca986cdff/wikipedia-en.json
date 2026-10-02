@@ -11516,6 +11516,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-jambi",
+      "kind": "event",
+      "locator": "\"Battle of Jambi\", revision 1374833022"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jankau",
       "kind": "event",
       "locator": "\"Battle of Jankau\", revision 1370444085"
@@ -12134,6 +12140,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-principe",
+      "kind": "event",
+      "locator": "\"Battle of Príncipe\", revision 1370586694"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-providien",
       "kind": "event",
       "locator": "\"Battle of Providien\", revision 1370586674"
@@ -12155,6 +12167,12 @@
       "id": "battle-of-puerto-de-cavite",
       "kind": "event",
       "locator": "\"Battle of Puerto de Cavite\", revision 1370586744"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-pulo-buton",
+      "kind": "event",
+      "locator": "\"Battle of Pulo Buton\", revision 1370586763"
     },
     {
       "dissent": false,
@@ -13175,6 +13193,12 @@
       "id": "capture-of-alexandria-1798",
       "kind": "event",
       "locator": "\"Capture of Alexandria (1798)\", revision 1370608238"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-amboina",
+      "kind": "event",
+      "locator": "\"Capture of Amboina\", revision 1370608249"
     },
     {
       "dissent": false,
@@ -15935,6 +15959,12 @@
       "id": "sabra-and-shatila-massacre",
       "kind": "event",
       "locator": "\"Sabra and Shatila massacre\", revision 1375981084"
+    },
+    {
+      "dissent": false,
+      "id": "sack-of-bombay-1626",
+      "kind": "event",
+      "locator": "\"Sack of Bombay (1626)\", revision 1375139978"
     },
     {
       "dissent": false,

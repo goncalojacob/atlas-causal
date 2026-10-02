@@ -1444,6 +1444,15 @@
         }
       ]
     },
+    "buton": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "bysjon": {
       "from": "git",
       "versions": [
@@ -3184,6 +3193,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "fort-victoria-ambon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -6425,6 +6443,15 @@
         }
       ]
     },
+    "mumbai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "munich": {
       "from": "git",
       "versions": [
@@ -8761,6 +8788,15 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "santo-antonio": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

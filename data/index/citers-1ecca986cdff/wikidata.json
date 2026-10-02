@@ -3662,6 +3662,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-jambi",
+      "kind": "event",
+      "locator": "Q130198485"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jankau",
       "kind": "event",
       "locator": "Q1415925"
@@ -4280,6 +4286,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-principe",
+      "kind": "event",
+      "locator": "Q138002239"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-providien",
       "kind": "event",
       "locator": "Q2601189"
@@ -4301,6 +4313,12 @@
       "id": "battle-of-puerto-de-cavite",
       "kind": "event",
       "locator": "Q2890933"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-pulo-buton",
+      "kind": "event",
+      "locator": "Q131686861"
     },
     {
       "dissent": false,
@@ -5315,6 +5333,12 @@
       "id": "capture-of-alexandria-1798",
       "kind": "event",
       "locator": "Q3403790"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-amboina",
+      "kind": "event",
+      "locator": "Q117350122"
     },
     {
       "dissent": false,
@@ -8159,6 +8183,12 @@
       "id": "sabra-and-shatila-massacre",
       "kind": "event",
       "locator": "Q208199"
+    },
+    {
+      "dissent": false,
+      "id": "sack-of-bombay-1626",
+      "kind": "event",
+      "locator": "Q137801200"
     },
     {
       "dissent": false,
