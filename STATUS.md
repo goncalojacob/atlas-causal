@@ -24033,6 +24033,41 @@ identical"* does not. The same slip had escaped 132 strings in
 all of them literally; the index rebuilt byte-identical. **Run the pure suite before
 the final push, not only the validator.**
 
+**M42b batch 74 — the Kongo Civil War written from its article, 2 October.** The
+same fire, after batch 73. The batch-73 stand had said this was blocked because
+`api.php` was 429ing everything; **it was not — the throttle is a time window of
+about twenty minutes and not a fire**, which is deviation 1530 corrected by the fire
+that wrote it. So move 1 was carried out as written. `Q6429210` *Kongo Civil War*
+dates itself **1600-1700 at century precision**, which
+`tools/import/wikidata.mjs` refuses outright (deviation 1529), and A6 says a run
+writes a period umbrella from its own Wikipedia article: `kongo-civil-war` is written
+by hand at **1665-1709**, the span the first sentence of revision 1376270418 states
+and the record quotes, with its lead cached through the import's own `leadRecord()`
+so A15(2) counts it, its keys through `inSchemaOrder`, and
+`origin: { tool: "assistant" }` because claiming the import wrote it would be false.
+**Then the import filed three `P361` children under a record it had not created**,
+finding it by its `wikidata` field — a mechanism worth keeping, because it removes the
+reason batch 72 deleted and re-imported a record to keep a parent the tool's own
+reading. Five records in all; **africa's 17th century goes from ten to thirteen and
+its 18th from fourteen to fifteen**, and across the fire's two batches africa gained
+**eleven** active events before 1800, the most this lane has put there. Africa stands
+at **244** and asia at **253** against A10's 303. **The main count went 233 to 234**,
+the second umbrella of the fire, each having filed four or five children. Two edges,
+both crossing an umbrella and both passing A15(5) at the point of writing:
+`battle-of-mbwila -> kongo-civil-war`, `caused`, which **three articles state
+independently**, and `battle-of-kitombo -> battle-of-pungo-andongo`, `enabled`. **So
+A15(11) goes 612 to 614 and the largest component 785 to 786** — three crossings and
+two component moves in one fire. **Deviation 1533**, the fire's most interesting
+finding: a third edge, `battle-of-mbwila -> battle-of-mbidizi-river`, is sound, cited
+and umbrella-crossing, passes `verdictFor()`, and **cannot be written** — the chain its
+article states runs through the civil war, which this batch made the atlas hold, so
+A15(5) redirects the edge onto `kongo-civil-war -> battle-of-mbidizi-river`, which A14
+forbids until C8 is decided. **Writing an umbrella puts every chain through it into
+A14's reach**, and that is the strongest argument yet for deciding C8. The fire's two
+batches left four and two candidates counted under A15(1). `validate --index` clean at
+**0 errors, 632 warnings**; **1,940 of 1,940 pure tests and 313 of 313 browser tests,
+nothing skipped**, run the way the check runs them.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
