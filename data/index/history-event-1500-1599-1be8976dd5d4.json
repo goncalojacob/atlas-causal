@@ -468,6 +468,15 @@
         }
       ]
     },
+    "battle-of-monastir-1540": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-montemurlo": {
       "from": "git",
       "versions": [
@@ -1034,6 +1043,15 @@
         }
       ]
     },
+    "capture-of-muscat-1552": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "capture-of-penon-of-algiers-1529": {
       "from": "git",
       "versions": [
@@ -1049,6 +1067,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "chios-expedition-1599": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -1674,6 +1701,15 @@
             "review"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "siege-of-hormuz-1552": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

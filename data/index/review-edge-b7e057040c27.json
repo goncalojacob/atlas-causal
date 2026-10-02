@@ -3031,6 +3031,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "from": "aden-revolt",
+      "id": "aden-revolt--capture-of-muscat-1552--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-86"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "capture-of-muscat-1552",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "afghan-civil-war",
       "id": "afghan-civil-war--afghan-civil-war-q1980081--precondition-of",

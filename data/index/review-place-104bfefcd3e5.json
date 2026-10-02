@@ -876,6 +876,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "annaba",
+      "kind": "place",
+      "names": [
+        "Annaba"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -4400,6 +4427,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "chios",
+      "kind": "place",
+      "names": [
+        "Chios",
+        "Quios"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -8904,6 +8959,62 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "hooghly-river",
+      "kind": "place",
+      "names": [
+        "Hooghly River",
+        "Rio Hooghly",
+        "Rio Golim"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "hormuz-island",
+      "kind": "place",
+      "names": [
+        "Hormuz Island"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -13939,6 +14050,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "mokha",
+      "kind": "place",
+      "names": [
+        "Mocha",
+        "Moca",
+        "Mokha",
+        "Moca (Iêmen)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "mole-saint-nicolas",
@@ -13985,6 +14126,35 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "monastir-tunisia",
+      "kind": "place",
+      "names": [
+        "Monastir",
+        "Monastir (Tunísia)",
+        "Monastir, Tunisia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -15948,6 +16118,33 @@
       ],
       "created": "2026-10-02",
       "degree": 1,
+      "id": "ouerdanin",
+      "kind": "place",
+      "names": [
+        "Ouerdanin"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
       "id": "oujda",
       "kind": "place",
       "names": [
@@ -16873,7 +17070,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 3,
+      "degree": 4,
       "id": "pondicherry",
       "kind": "place",
       "names": [
@@ -21173,7 +21370,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 2,
       "id": "strait-of-hormuz",
       "kind": "place",
       "names": [
@@ -21207,6 +21404,34 @@
       "names": [
         "Strait of Magellan",
         "Estreito de Magalhães"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "strait-of-sicily",
+      "kind": "place",
+      "names": [
+        "Strait of Sicily",
+        "Estreito da Sicília"
       ],
       "origin": {
         "tool": "wikidata"
@@ -23199,6 +23424,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "vannarpannai",
+      "kind": "place",
+      "names": [
+        "Vannarpannai"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

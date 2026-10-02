@@ -344,6 +344,15 @@
         }
       ]
     },
+    "annaba": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "annual": {
       "from": "git",
       "versions": [
@@ -2030,6 +2039,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "chios": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -4222,6 +4240,24 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "hooghly-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "hormuz-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -6597,6 +6633,15 @@
         }
       ]
     },
+    "mokha": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "mole-saint-nicolas": {
       "from": "git",
       "versions": [
@@ -6624,6 +6669,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "monastir-tunisia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -7554,6 +7608,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "ouerdanin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -10132,6 +10195,15 @@
         }
       ]
     },
+    "strait-of-sicily": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "stralsund": {
       "from": "git",
       "versions": [
@@ -11030,6 +11102,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "vannarpannai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

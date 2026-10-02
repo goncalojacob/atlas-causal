@@ -4639,6 +4639,70 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "action-of-27-june-1798",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-revolutionary-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Action of 27 June 1798"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "action-of-28-february-1799",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-revolutionary-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Action of 28 February 1799"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-10-02",
@@ -4738,6 +4802,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "action-of-6-september-1782",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "spain-and-the-american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Action of 6 September 1782"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "action-of-8-january-1780",
@@ -4804,6 +4899,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-02",
+      "degree": 1,
       "id": "aden-revolt",
       "kind": "event",
       "origin": {
@@ -6489,6 +6585,38 @@
       "revised": null,
       "status": "active",
       "title": "Attack on Jeddah (1541)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "attack-on-monastir",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-habsburg-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Attack on Monastir"
     },
     {
       "authors": [
@@ -8759,6 +8887,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Cape Rachado"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-cape-spartel",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "lane-overridden"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cape Spartel"
     },
     {
       "authors": [
@@ -13810,6 +13970,38 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-moca-1779",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-revolutionary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Moca (1779)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-09-25",
@@ -13934,6 +14126,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Mollwitz"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-monastir-1540",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-habsburg-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Monastir (1540)"
     },
     {
       "authors": [
@@ -14868,6 +15092,37 @@
       "revised": "2026-10-01",
       "status": "active",
       "title": "Battle of Pampeluna"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-paphos",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-habsburg-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Paphos"
     },
     {
       "authors": [
@@ -17214,6 +17469,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "battle-of-swally",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Swally"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "id": "battle-of-tabocas",
       "kind": "event",
@@ -19365,6 +19651,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "battle-of-vannarpannai",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "sinhalese-portuguese-conflicts",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Vannarpannai"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "battle-of-vega-real",
       "kind": "event",
@@ -20360,6 +20678,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle off Barbados"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-off-hormuz-1625",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "dutch-portuguese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle off Hormuz (1625)"
     },
     {
       "authors": [
@@ -22289,6 +22638,38 @@
         "wikipedia-en"
       ],
       "created": "2026-10-02",
+      "degree": 1,
+      "id": "capture-of-muscat-1552",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-campaign-against-hormuz",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Muscat (1552)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
       "id": "capture-of-oujda-1647",
       "kind": "event",
       "origin": {
@@ -23008,6 +23389,38 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Chinese spring offensive"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "chios-expedition-1599",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-habsburg-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Chios expedition (1599)"
     },
     {
       "authors": [
@@ -38496,6 +38909,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "raid-on-bone",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-habsburg-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Raid on Bone"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "raid-on-chignecto-1696",
@@ -43072,6 +43517,37 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata"
+      ],
+      "created": "2026-10-02",
+      "id": "siege-of-hormuz-1552",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-campaign-against-hormuz",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "article-is-redirect",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Hormuz (1552)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata",
         "wikipedia-en"
       ],
@@ -44270,6 +44746,37 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Pilsen"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "siege-of-pondicherry-1748",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-carnatic-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Pondicherry (1748)"
     },
     {
       "authors": [
@@ -51959,6 +52466,18 @@
       "rule": "summary-imported"
     },
     {
+      "id": "action-of-27-june-1798",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "action-of-28-february-1799",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "action-of-30-september-1639",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -51971,7 +52490,7 @@
       "rule": "summary-imported"
     },
     {
-      "id": "aden-revolt",
+      "id": "action-of-6-september-1782",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -52074,6 +52593,12 @@
     },
     {
       "id": "attack-on-jeddah-1541",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "attack-on-monastir",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -52194,6 +52719,12 @@
     },
     {
       "id": "battle-of-bysjon",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-cape-spartel",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -52643,6 +53174,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-moca-1779",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-mocha",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -52653,6 +53190,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "battle-of-monastir-1540",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "battle-of-moulouya",
@@ -52710,6 +53253,12 @@
     },
     {
       "id": "battle-of-pampeluna",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-paphos",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -52842,6 +53391,12 @@
     },
     {
       "id": "battle-of-suipacha",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-swally",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -52985,6 +53540,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-vannarpannai",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-vega-real",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -53088,6 +53649,12 @@
     },
     {
       "id": "battle-off-barbados",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-off-hormuz-1625",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -53226,6 +53793,12 @@
     },
     {
       "id": "chaouia-expedition",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "chios-expedition-1599",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -53837,6 +54410,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "raid-on-bone",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "raid-on-dover",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -54125,6 +54704,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-hormuz-1552",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-hormuz-1552",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "siege-of-jacmel",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -54240,6 +54831,12 @@
     },
     {
       "id": "siege-of-philippsburg-1644",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-pondicherry-1748",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

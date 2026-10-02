@@ -2522,6 +2522,18 @@
     },
     {
       "dissent": false,
+      "id": "action-of-27-june-1798",
+      "kind": "event",
+      "locator": "Q4677323"
+    },
+    {
+      "dissent": false,
+      "id": "action-of-28-february-1799",
+      "kind": "event",
+      "locator": "Q20036667"
+    },
+    {
+      "dissent": false,
       "id": "action-of-30-september-1639",
       "kind": "event",
       "locator": "Q4677351"
@@ -2537,6 +2549,12 @@
       "id": "action-of-6-july-1746",
       "kind": "event",
       "locator": "Q2889560"
+    },
+    {
+      "dissent": false,
+      "id": "action-of-6-september-1782",
+      "kind": "event",
+      "locator": "Q139073625"
     },
     {
       "dissent": false,
@@ -2897,6 +2915,12 @@
       "id": "attack-on-jeddah-1541",
       "kind": "event",
       "locator": "Q116056582"
+    },
+    {
+      "dissent": false,
+      "id": "attack-on-monastir",
+      "kind": "event",
+      "locator": "Q131765078"
     },
     {
       "dissent": false,
@@ -3311,6 +3335,12 @@
       "id": "battle-of-cape-rachado",
       "kind": "event",
       "locator": "Q1953346"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cape-spartel",
+      "kind": "event",
+      "locator": "Q1781080"
     },
     {
       "dissent": false,
@@ -4232,6 +4262,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-moca-1779",
+      "kind": "event",
+      "locator": "Q138018817"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mocha",
       "kind": "event",
       "locator": "Q10858449"
@@ -4253,6 +4289,12 @@
       "id": "battle-of-mollwitz",
       "kind": "event",
       "locator": "Q663435"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-monastir-1540",
+      "kind": "event",
+      "locator": "Q135623349"
     },
     {
       "dissent": false,
@@ -4421,6 +4463,12 @@
       "id": "battle-of-pampeluna",
       "kind": "event",
       "locator": "Q3174545"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-paphos",
+      "kind": "event",
+      "locator": "Q118946728"
     },
     {
       "dissent": false,
@@ -4856,6 +4904,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-swally",
+      "kind": "event",
+      "locator": "Q2092338"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tabocas",
       "kind": "event",
       "locator": "Q4872481"
@@ -5240,6 +5294,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-vannarpannai",
+      "kind": "event",
+      "locator": "Q133092642"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-vega-real",
       "kind": "event",
       "locator": "Q5723209"
@@ -5423,6 +5483,12 @@
       "id": "battle-off-barbados",
       "kind": "event",
       "locator": "Q4873060"
+    },
+    {
+      "dissent": false,
+      "id": "battle-off-hormuz-1625",
+      "kind": "event",
+      "locator": "Q2567256"
     },
     {
       "dissent": false,
@@ -5762,6 +5828,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-muscat-1552",
+      "kind": "event",
+      "locator": "Q5037040"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-oujda-1647",
       "kind": "event",
       "locator": "Q109312791"
@@ -5885,6 +5957,12 @@
       "id": "chinese-spring-offensive",
       "kind": "event",
       "locator": "Q485256"
+    },
+    {
+      "dissent": false,
+      "id": "chios-expedition-1599",
+      "kind": "event",
+      "locator": "Q120848063"
     },
     {
       "dissent": false,
@@ -8468,6 +8546,12 @@
     },
     {
       "dissent": false,
+      "id": "raid-on-bone",
+      "kind": "event",
+      "locator": "Q7283724"
+    },
+    {
+      "dissent": false,
       "id": "raid-on-chignecto-1696",
       "kind": "event",
       "locator": "Q5934341"
@@ -9296,6 +9380,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-hormuz-1552",
+      "kind": "event",
+      "locator": "Q124655726"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-jacmel",
       "kind": "event",
       "locator": "Q140288692"
@@ -9515,6 +9605,12 @@
       "id": "siege-of-pilsen",
       "kind": "event",
       "locator": "Q944855"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pondicherry-1748",
+      "kind": "event",
+      "locator": "Q3485992"
     },
     {
       "dissent": false,

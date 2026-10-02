@@ -2,6 +2,15 @@
   "from": 1500,
   "kind": "edge",
   "records": {
+    "aden-revolt--capture-of-muscat-1552--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-abancay--battle-of-las-salinas--precondition-of": {
       "from": "git",
       "versions": [

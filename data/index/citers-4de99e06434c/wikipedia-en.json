@@ -1784,6 +1784,12 @@
     },
     {
       "dissent": false,
+      "id": "aden-revolt--capture-of-muscat-1552--enabled",
+      "kind": "edge",
+      "locator": "\"Capture of Muscat (1552)\", revision 1376303792"
+    },
+    {
+      "dissent": false,
       "id": "afghan-civil-war--afghan-civil-war-q1980081--precondition-of",
       "kind": "edge",
       "locator": "\"Afghan Civil War (1992–1996)\", revision 1371836551, § lead and § Background — 1989–1992 civil war"
@@ -10652,6 +10658,18 @@
     },
     {
       "dissent": false,
+      "id": "action-of-27-june-1798",
+      "kind": "event",
+      "locator": "\"Action of 27 June 1798\", revision 1373255379"
+    },
+    {
+      "dissent": false,
+      "id": "action-of-28-february-1799",
+      "kind": "event",
+      "locator": "\"Action of 28 February 1799\", revision 1370426459"
+    },
+    {
+      "dissent": false,
       "id": "action-of-31-july-1793",
       "kind": "event",
       "locator": "\"Action of 31 July 1793\", revision 1370426629"
@@ -10661,6 +10679,12 @@
       "id": "action-of-6-july-1746",
       "kind": "event",
       "locator": "\"Action of 6 July 1746\", revision 1370426720"
+    },
+    {
+      "dissent": false,
+      "id": "action-of-6-september-1782",
+      "kind": "event",
+      "locator": "\"Action of 6 September 1782\", revision 1372715083"
     },
     {
       "dissent": false,
@@ -10961,6 +10985,12 @@
       "id": "attack-on-jeddah-1541",
       "kind": "event",
       "locator": "\"Attack on Jeddah (1541)\", revision 1370429469"
+    },
+    {
+      "dissent": false,
+      "id": "attack-on-monastir",
+      "kind": "event",
+      "locator": "\"Attack on Monastir\", revision 1370429514"
     },
     {
       "dissent": false,
@@ -11357,6 +11387,12 @@
       "id": "battle-of-cape-rachado",
       "kind": "event",
       "locator": "\"Battle of Cape Rachado\", revision 1370436218"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cape-spartel",
+      "kind": "event",
+      "locator": "\"Battle of Cape Spartel\", revision 1372250096"
     },
     {
       "dissent": false,
@@ -12260,6 +12296,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-moca-1779",
+      "kind": "event",
+      "locator": "\"Battle of Moca (1779)\", revision 1370449998"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-modder-river",
       "kind": "event",
       "locator": "\"Battle of Modder River\", revision 1370450027"
@@ -12275,6 +12317,12 @@
       "id": "battle-of-mollwitz",
       "kind": "event",
       "locator": "\"Battle of Mollwitz\", revision 1370564561"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-monastir-1540",
+      "kind": "event",
+      "locator": "\"Battle of Monastir (1540)\", revision 1370269649"
     },
     {
       "dissent": false,
@@ -12443,6 +12491,12 @@
       "id": "battle-of-pampeluna",
       "kind": "event",
       "locator": "\"Battle of Pampeluna\", revision 1372120891"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-paphos",
+      "kind": "event",
+      "locator": "\"Battle of Paphos\", revision 1370452808"
     },
     {
       "dissent": false,
@@ -12890,6 +12944,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-swally",
+      "kind": "event",
+      "locator": "\"Battle of Swally\", revision 1371286628"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tabocas",
       "kind": "event",
       "locator": "\"Battle of Tabocas\", revision 1370590318"
@@ -13286,6 +13346,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-vannarpannai",
+      "kind": "event",
+      "locator": "\"Battle of Vannarpannai\", revision 1370592170"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-vega-real",
       "kind": "event",
       "locator": "\"Battle of Vega Real\", revision 1370592275"
@@ -13469,6 +13535,12 @@
       "id": "battle-off-barbados",
       "kind": "event",
       "locator": "\"Battle off Barbados\", revision 1370603201"
+    },
+    {
+      "dissent": false,
+      "id": "battle-off-hormuz-1625",
+      "kind": "event",
+      "locator": "\"Battle off Hormuz (1625)\", revision 1371758666"
     },
     {
       "dissent": false,
@@ -13802,6 +13874,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-muscat-1552",
+      "kind": "event",
+      "locator": "\"Capture of Muscat (1552)\", revision 1376303792"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-oujda-1647",
       "kind": "event",
       "locator": "\"Capture of Oujda (1647)\", revision 1292600657"
@@ -13913,6 +13991,12 @@
       "id": "chinese-spring-offensive",
       "kind": "event",
       "locator": "\"Chinese spring offensive\", revision 1376272952"
+    },
+    {
+      "dissent": false,
+      "id": "chios-expedition-1599",
+      "kind": "event",
+      "locator": "\"Chios expedition (1599)\", revision 1370611264"
     },
     {
       "dissent": false,
@@ -16442,6 +16526,12 @@
     },
     {
       "dissent": false,
+      "id": "raid-on-bone",
+      "kind": "event",
+      "locator": "\"Raid on Bone\", revision 1366208626"
+    },
+    {
+      "dissent": false,
       "id": "raid-on-chignecto-1696",
       "kind": "event",
       "locator": "\"Raid on Chignecto (1696)\", revision 1375097023"
@@ -17435,6 +17525,12 @@
       "id": "siege-of-pilsen",
       "kind": "event",
       "locator": "\"Siege of Pilsen\", revision 1370744459"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pondicherry-1748",
+      "kind": "event",
+      "locator": "\"Siege of Pondicherry (1748)\", revision 1370744503"
     },
     {
       "dissent": false,
