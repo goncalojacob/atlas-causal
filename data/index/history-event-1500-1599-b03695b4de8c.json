@@ -686,7 +686,7 @@
       ]
     },
     "battle-of-talandongo": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1062,6 +1062,15 @@
             "review"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "jaragua-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

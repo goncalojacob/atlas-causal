@@ -1545,7 +1545,7 @@
       ]
     },
     "cambambe": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5858,6 +5858,15 @@
         }
       ]
     },
+    "malabar-coast": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "malacca-city": {
       "from": "git",
       "versions": [
@@ -6951,6 +6960,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "northeast-region-brazil": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -10099,6 +10117,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "tiruchendur": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

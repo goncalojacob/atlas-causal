@@ -170,6 +170,15 @@
         }
       ]
     },
+    "battle-of-casa-forte": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-chedabucto": {
       "from": "git",
       "versions": [
@@ -1215,6 +1224,33 @@
             "parent"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "dutch-conquest-of-malabar": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "dutch-invasions-of-brazil": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "dutch-occupation-of-tiruchendur": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

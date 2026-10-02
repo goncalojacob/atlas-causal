@@ -12066,6 +12066,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "malabar-coast",
+      "kind": "place",
+      "names": [
+        "Malabar Coast",
+        "Costa do Malabar"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
       "degree": 5,
       "id": "malacca-city",
@@ -14293,6 +14321,35 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "northeast-region-brazil",
+      "kind": "place",
+      "names": [
+        "Northeast Region",
+        "Região Nordeste do Brasil",
+        "Northeast Region, Brazil"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -20817,6 +20874,34 @@
           "a9-place"
         ],
         "note": "Written from Q2312553, the commune and village of Kidal Region, by A9's second step (P276) and not its first. The battle item's own P625 is 28 km west of the village, which is the \"outskirts of Tinzaouaten\" its own article names, so the village is where the battle was and is a place a later record can reuse; a place record written at the battlefield point and called Tinzaouaten would be neither. `city` off the item's own class, a commune and village.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "tiruchendur",
+      "kind": "place",
+      "names": [
+        "Thiruchendur",
+        "Tiruchendur"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
