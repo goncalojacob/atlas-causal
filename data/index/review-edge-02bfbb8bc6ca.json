@@ -936,6 +936,64 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "from": "1966-anti-igbo-pogrom",
+      "id": "1966-anti-igbo-pogrom--nigerian-civil-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-89"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "nigerian-civil-war",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "from": "1966-nigerian-coup-d-etat",
+      "id": "1966-nigerian-coup-d-etat--1966-anti-igbo-pogrom--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-89"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1966-anti-igbo-pogrom",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
       "from": "1966-nigerian-coup-d-etat",
       "id": "1966-nigerian-coup-d-etat--nigerian-civil-war--caused",

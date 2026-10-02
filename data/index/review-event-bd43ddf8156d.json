@@ -1159,6 +1159,37 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 2,
+      "id": "1966-anti-igbo-pogrom",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "decolonisation-of-africa",
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "note": "Written by hand under A6 and A8 rather than by the import, because its P361 (Q829875, the Nigerian Civil War) is dated 1967-1970 and this event ran May to October 1966, so the umbrella the item names does not hold it: the filing here is decolonisation-of-africa, which does. Everything else - the item, the sitelink count, the span, the place chain - is read off the item. Nobody has read this record.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1966 anti-Igbo pogrom"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -1172,7 +1203,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 2,
       "id": "1966-nigerian-coup-d-etat",
       "kind": "event",
       "origin": {
@@ -33350,7 +33381,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 1,
+      "degree": 2,
       "id": "nigerian-civil-war",
       "kind": "event",
       "origin": {

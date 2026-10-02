@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "1966-anti-igbo-pogrom",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "a9-place"
+    ],
+    "note": "Written by hand under A6 and A8 rather than by the import, because its P361 (Q829875, the Nigerian Civil War) is dated 1967-1970 and this event ran May to October 1966, so the umbrella the item names does not hold it: the filing here is decolonisation-of-africa, which does. Everything else - the item, the sitelink count, the span, the place chain - is read off the item. Nobody has read this record."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q4572480",
+  "wikipedia": {
+    "en": "1966 anti-Igbo pogrom",
+    "pt": "Massacre dos ibos em 1966"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4572480"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1966 anti-Igbo pogrom\", revision 1376650990"
+    }
+  ],
+  "title": "1966 anti-Igbo pogrom",
+  "summary": "The English Wikipedia article \"1966 anti-Igbo pogrom\", at revision 1376650990, opens: \"The 1966 anti-Igbo pogroms were a series of widespread massacres and pogroms committed against Igbo people–and other people of southern Nigerian origin–living in northern Nigeria, starting in May 1966 and reaching its peak after 29 September 1966. Between 8,000 and 30,000 Igbos and easterners have been estimated to have been killed. A further 1 million Igbos fled the Northern Region into the East. In response to the killings, some northerners were massacred in Port Harcourt and other cities in eastern Nigeria. These events led to the secession of the eastern Nigerian region and the declaration of Biafra, which ultimately led to the Nigerian Civil War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4572480, whose P580 is May 1966 and P585 October 1966, both at month precision, which is the span carried here.",
+  "when": {
+    "start": 1966,
+    "end": 1966,
+    "date": "1966-05",
+    "endDate": "1966-10"
+  },
+  "place": "northern-region-nigeria-q3509092",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "decolonisation-of-africa"
+}

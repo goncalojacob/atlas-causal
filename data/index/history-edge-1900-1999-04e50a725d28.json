@@ -364,6 +364,24 @@
         }
       ]
     },
+    "1966-anti-igbo-pogrom--nigerian-civil-war--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "1966-nigerian-coup-d-etat--1966-anti-igbo-pogrom--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "1966-nigerian-coup-d-etat--nigerian-civil-war--caused": {
       "from": "git",
       "versions": [

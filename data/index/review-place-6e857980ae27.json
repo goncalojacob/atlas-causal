@@ -14455,6 +14455,35 @@
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "northern-region-nigeria-q3509092",
+      "kind": "place",
+      "names": [
+        "Northern Region",
+        "Northern Nigeria",
+        "Região Norte"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "novara",

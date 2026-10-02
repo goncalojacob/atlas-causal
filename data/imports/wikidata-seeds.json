@@ -5802,6 +5802,12 @@
       "label": "truck bombing",
       "note": "Added in M42 batch 44 from the class Q114926903, the October 2022 Mogadishu bombings, names. The label and the description — \"terrorist attack carried out through the explosion of a vehicle\" — are read from the item itself over the network. No category: none of the twelve of data/categories.json names an attack of this kind — `war` is organised armed force between polities and `disaster` is harm nobody chose — and every comparable record already here (the 2017 Mogadishu bombings, the Bogota car bombing, the Lisbon bomb attacks) carries none, so none is guessed."
     },
+    "Q27535996": {
+      "kind": "place",
+      "precision": "region",
+      "label": "region of Nigeria",
+      "note": "Added in M42 batch 89, for Q3509092 Northern Region, which is the P276 of the 1966 anti-Igbo pogrom and the ground the pogroms happened on. The label and the gloss are read from the class item itself over the network: Wikidata's own description is 'former administrative territorial entity of Nigeria, between 1960 and 1967', which is an area and not a point, so it takes the region precision and the map draws it wide and faint."
+    },
     "Q27865981": {
       "kind": "event",
       "category": "law",

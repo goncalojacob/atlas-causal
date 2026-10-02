@@ -24694,6 +24694,7 @@ M42 started 2026-10-01T19:00:35Z by scheduled
 M42 started 2026-10-01T21:18:58Z by scheduled
 M42 started 2026-10-01T23:30:14Z by scheduled
 M42 started 2026-10-02T02:07:00Z by scheduled
+M42 started 2026-10-02T05:07:34Z by scheduled
 
 **M42 batch 87 — the inverse vein measured, and three umbrellas off it, 1 October.**
 The fire that claimed at 23:30Z merged `origin/m0`, then answered the first of the
@@ -24893,6 +24894,137 @@ was checked all the same, by the `Tests` step running the suite's own
 cancelled by the next push, deviation 1258's chain.
 **Take the next above 1536.**
 M42b started 2026-10-02T01:48:08Z by scheduled
+
+**M42 batch 89 — the network open, Africa's forward vein, and one row of 88,
+2 October.** The fire that claimed at 05:07Z merged `origin/m0` (29 commits,
+`m42b`'s batches 73 and 74 among them, clean, index byte-identical after a
+rebuild) and then found what the 2 October stand called *"the whole question"*:
+**the network answers.** Wikidata's `api.php`, Wikipedia's `api.php` and
+`query.wikidata.org` all returned, and nothing in the repository had changed
+since deviation 1535's double refusal — **deviation 1541**. So the fire spent
+itself on the one thing a network buys that disk work cannot: reading articles.
+**The batch-88 stand's open problem is closed.** It said Africa has no vein; it
+had been asking the inverse `P361` question (a held event's own parents). Asked
+forward — the `P361` **children** of the 1,314 active events carrying an item,
+`P17` in Africa, 1800 or later, two sitelinks or more, not held — the answer is
+**349 rows**, 148 of them with five sitelinks or more, spread over every decade
+from the 1800s to the 2020s. Against Africa's 82-event shortfall that is not
+thin, and it is the walk A15(1) binds, so **the vein's size is not a batch's
+size**. The gate was measured rather than guessed: the **88** candidates with
+six sitelinks or more and an African `P17` had their own articles read in full,
+lead and body, and screened for a causal sentence naming a held record or
+another candidate. **Eight of 88 tripped the screen and seven of the eight are
+refusals** — order and not cause (Abukir's "prelude to"), a marker governing a
+context (Blaauwberg "during the War of the Third Coalition"), an effect that is
+not a record (Sandfontein's garrison transfer), a sentence about a third place
+entirely (the Mediterranean theatre naming the Greek Civil War). **One
+connects**, and it is the batch: `Q4572480`, the **1966 anti-Igbo pogrom**,
+Nigeria, May to October 1966, whose article states a cause at *both* ends. It is
+**filed under `decolonisation-of-africa` and not under its own `P361`**, which is
+the Nigerian Civil War and is dated 1967–1970 — after it; the first row in this
+lane where the item's own umbrella is not one that fits, and A8 asks for every
+umbrella that *fits*. Its place is `P276` — **`northern-region-nigeria-q3509092`**,
+written here, `precision: region`, lane africa from the item's own point, 2 km
+from the event's own `P625` — and the class table gains `Q27535996` "region of
+Nigeria", read off the item. The country step would have *passed* A15(6) and put
+a pogrom in the north on a point 190 km away, which is **deviation 1543**: the
+gate is a floor and A9's chain order is the actual protection. **Two edges, both
+`precondition-of`, both `probable` under rule 22**, quoted at revision 1376650990:
+the January coup as the pogrom's *"immediate precursor"*, and the pogrom as what
+the secession and the declaration of Biafra answered on the way to the civil war
+— `precondition-of` and not `caused` in both, because the proximate causes the
+article names (the unitary decree of 24 May; the secession) are not records here.
+A15(5)'s third clause was checked and does not bite: there is no Biafra record to
+re-point at. **The other half of the fire is a negative result, written down so
+nobody re-derives it**: Wikidata's four causal properties (`P828`, `P1542`,
+`P1478`, `P1479`) asked of every held event give **359 claims, 68 with both ends
+held, 53 already edges here, 15 not, 6 of those parent-to-child and barred by
+A14's C8 rule, 9 left — and 0 edges written**, because not one of the nine
+articles states what its item claims, and two of the nine are statements this
+atlas already holds as edges written from the correct end. Asked of the 349
+Africa candidates the same properties return **one claim in total**, pointing at
+nothing. **The vein is closed in both directions.** It also found a gap worth a
+line and not an edge: **`attack-on-pearl-harbor` is not in this atlas**, named by
+the Khalkhin Gol article, and outside this lane's partition. A15(2) ran as the
+batch's last step — 3 citations off disk before, all three the batch's own, the
+article absent from the title table too; `--fill` wrote one title and one lead in
+two requests and the count is **0 off disk**. Counts: **active events 1,447**,
+**main 234 — level**, filed 1,213; **Africa 221/32** (was 220/32), 82 short of
+A10's 303, Asia 223/57 and 80 short; **active edges 1,223 (+2)**; **components
+434 and largest connected component 786, both unchanged** — because the coup, the
+pogrom and the civil war are a component of **three** unattached to the main
+graph, which is the plainest demonstration yet that **a batch may write two good
+edges and move neither number**; edges crossing an umbrella **615, unchanged**,
+inside one 606 → 608; validator **0 errors and the same 631 warnings** as before
+the batch. **Deviation 1542** is a line for the owner: the per-lane counts these
+stands carry are not reproducible, because no script is committed and every fire
+re-derives them — this fire's derivation gives Europe 607 where the batch-88
+stand gives 556 on the same corpus plus one event, while the main counts agree
+exactly (Africa 32, Asia 57). A lane-count command, the way `tools/m53-retake.mjs`
+retakes its own row, is the fix, and whether a records lane may write one is the
+owner's call. **Two more measurements, both negative and both worth the fire.** The refusals
+above all say *the effect is not a record here*, which suggests a cluster of
+missing mid-level African events whose import would unlock the children's edges.
+This fire tested that: **165** of the 201 candidate articles read, every
+**unheld** event-shaped link target inside a causal sentence tallied, and the
+answer is **23 distinct targets, 22 of them appearing once**, scattered over four
+continents. **There is no hub**; these articles barely argue about any event,
+held or not, and with batch 88's reading of the umbrellas **both ends of this
+vein have now been read and neither argues.** And **deviation 1544**, which the
+screen found by accident and is worth more than the screen was: "Carnation
+Revolution" came back as *unheld*, because `carnation-revolution` is a **merged
+tombstone carrying the en title** and `carnation-revolution-1974`, the active
+record it was merged into, carries none. Over the corpus, **17 active events have
+no `wikipedia.en` while a merged tombstone naming them in `supersededBy` does** —
+eight of them Portuguese elections — and **154 active events carry no
+`wikipedia.en` at all**, 132 no `wikidata`. A merge moved the identity to the
+stone instead of the survivor. **Not fixed here, deliberately:** identity fields
+are the import's to write and never a run's by hand, so the 17 are a line for the
+owner and a pass for a curation fire with a network. It also means every screen in
+the pool file that matched on a held article title was reading a corpus 154
+records short, this fire's two included. **Two real test failures, both this
+fire's own and both caught by suites that already existed** (deviation 711's rule
+earning its keep): `tests/bundle.test.mjs` holds a record to its own
+byte-identical save and a one-element `parent` list is not the normal form, and
+`tests/m42-filing.test.mjs` holds every filing to a paragraph that names the
+record in backticks — the pool note named it only inside an edge id. Both fixed
+in a commit of their own and both suites green after.
+**Asia measured too, and a gate both veins needed.** The same query with Asia's
+continent in place of Africa's returns **1,214 rows**, three and a half times
+Africa's, 727 of them with five sitelinks or more and 440 with eight — and its
+top of the list is the measure of how large the gaps are at this level: the
+Battle of Stalingrad, the Pacific War, the Nanjing Massacre, the Long March,
+Borodino, Okinawa, the surrender of Japan, the October 7 attacks, the First
+Intifada, the Battle of Singapore, **none of them held and every one a child of
+an umbrella that is.** The lanes are now level — **Africa 221 and Asia 223**, so
+Africa trails by two events while Asia's vein is 3.5× richer; which of those A10
+means by "the lane that trails" is the owner's to say and this fire did not
+re-order them. **Deviation 1545** is the gate both veins needed: computed against
+the QIDs of **active** events only, they returned `Q178810` the Syrian Civil War
+as a candidate, which this atlas holds as a **retracted** record — with
+`Q18651204`, `Q134884640`, `Q2139988` the Eritrean Civil Wars (retracted under
+A15(8), for cause), `Q51750785` Wiriyamu (merged) and **`Q705553` the Maji Maji
+Rebellion, which was on this fire's own shortlist of major African gaps and was
+read for an edge before the gate caught it.** Six rows of 1,563 is a small
+correction; the class is not. **A forward `P361` walk must test a candidate
+against every record of any status, not against the active ones.** Corrected
+counts: **Africa 346, Asia 1,211.** Not a code change — neither vein lives in a
+committed tool — but the next fire that writes one owes it this gate.
+**Deviation 1546, found by a `git status` after everything was green.**
+`tools/build-index.mjs` writes `data/index/`, `sources.html` and
+`narratives.html` in one run; batch 89's index commit staged the index and the
+lead cache and **missed `sources.html`**, whose counts the batch had moved by
+exactly its own four citations (5,951 → 5,955; `wikipedia-en` 3,036 → 3,039,
+`wikidata` 1,723 → 1,724). `validate --index` said **0 errors** the whole time
+because **its page check is main-only**, so the branch, the 1,941 local tests and
+the check were all green over a head whose prerendered page did not match a fresh
+build — the one thing the landing routine's `validate --index` on `m0` would have
+stopped on. Fixed in a commit of its own. **A line for the owner:** either that
+page check runs on every branch, or a batch's index commit is
+`git add -A data/index sources.html narratives.html entry` and never
+`data/index/` alone; the second is the cheaper half and a records lane should not
+pick between them alone.
+Deviations 1541 to 1546; `origin/m42b` stood at 1540.
 **M42b batches 75, 76 and 77 — six active events, nine placements and not one main, 2 October.**
 Three batches and two merges (`origin/m0` with both lanes' snapshots, `origin/m42`'s batch 88).
 **Batch 75** was move 1 of the batch-74 stand: seven class rows into
