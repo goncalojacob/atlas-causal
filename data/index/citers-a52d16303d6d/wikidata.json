@@ -2258,6 +2258,12 @@
     },
     {
       "dissent": false,
+      "id": "2012-2013-egyptian-protests",
+      "kind": "event",
+      "locator": "Q3720660"
+    },
+    {
+      "dissent": false,
       "id": "2012-malian-coup-d-etat",
       "kind": "event",
       "locator": "Q875912"
@@ -2675,6 +2681,12 @@
       "id": "anti-comintern-pact",
       "kind": "event",
       "locator": "Q152195, P31 Q131569"
+    },
+    {
+      "dissent": false,
+      "id": "arab-cold-war",
+      "kind": "event",
+      "locator": "Q4783165"
     },
     {
       "dissent": false,
@@ -6782,6 +6794,12 @@
     },
     {
       "dissent": false,
+      "id": "iraqi-conflict",
+      "kind": "event",
+      "locator": "Q47015896"
+    },
+    {
+      "dissent": false,
       "id": "iraqi-insurgency",
       "kind": "event",
       "locator": "Q926905"
@@ -6809,6 +6827,12 @@
       "id": "israeli-declaration-of-independence",
       "kind": "event",
       "locator": "Q223732"
+    },
+    {
+      "dissent": false,
+      "id": "israeli-palestinian-conflict",
+      "kind": "event",
+      "locator": "Q151622"
     },
     {
       "dissent": false,
@@ -7274,6 +7298,12 @@
     },
     {
       "dissent": false,
+      "id": "middle-eastern-crisis-2023-present",
+      "kind": "event",
+      "locator": "Q124373310"
+    },
+    {
+      "dissent": false,
       "id": "milk-bar-cafe-bombing",
       "kind": "event",
       "locator": "Q76832368"
@@ -7385,6 +7415,12 @@
       "id": "myanmar-civil-war",
       "kind": "event",
       "locator": "Q110613097, P31 Q8465"
+    },
+    {
+      "dissent": false,
+      "id": "myanmar-conflict",
+      "kind": "event",
+      "locator": "Q852088"
     },
     {
       "dissent": false,
@@ -9407,6 +9443,12 @@
       "id": "third-battle-of-ypres",
       "kind": "event",
       "locator": "Q426227"
+    },
+    {
+      "dissent": false,
+      "id": "third-indochina-war",
+      "kind": "event",
+      "locator": "Q796498"
     },
     {
       "dissent": false,

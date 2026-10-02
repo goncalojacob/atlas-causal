@@ -1876,6 +1876,13 @@
             "summary"
           ],
           "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "parent",
+            "review"
+          ],
+          "on": "2026-09-22"
         }
       ]
     },
@@ -5550,6 +5557,15 @@
         }
       ]
     },
+    "arab-cold-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "arab-israeli-conflict": {
       "from": "git",
       "versions": [
@@ -8681,6 +8697,13 @@
             "when"
           ],
           "on": "2026-09-24"
+        },
+        {
+          "fields": [
+            "parent",
+            "review"
+          ],
+          "on": "2026-09-30"
         },
         {
           "fields": [
@@ -13432,6 +13455,15 @@
         }
       ]
     },
+    "israeli-palestinian-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "italo-turkish-war": {
       "from": "git",
       "versions": [
@@ -15765,6 +15797,15 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "myanmar-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -19476,6 +19517,13 @@
             "review"
           ],
           "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "parent",
+            "review"
+          ],
+          "on": "2026-09-29"
         }
       ]
     },
@@ -20622,6 +20670,15 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "third-indochina-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
         }
       ]
     },

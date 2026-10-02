@@ -10202,6 +10202,12 @@
     },
     {
       "dissent": false,
+      "id": "2012-2013-egyptian-protests",
+      "kind": "event",
+      "locator": "\"2012–2013 Egyptian protests\", revision 1376813376"
+    },
+    {
+      "dissent": false,
       "id": "2012-malian-coup-d-etat",
       "kind": "event",
       "locator": "\"2012 Malian coup d'état\", revision 1370102863"
@@ -10577,6 +10583,12 @@
       "id": "anti-comintern-pact",
       "kind": "event",
       "locator": "\"Anti-Comintern Pact\", revision 1371954457"
+    },
+    {
+      "dissent": false,
+      "id": "arab-cold-war",
+      "kind": "event",
+      "locator": "\"Arab Cold War\", revision 1377860441"
     },
     {
       "dissent": false,
@@ -14636,6 +14648,12 @@
     },
     {
       "dissent": false,
+      "id": "iraqi-conflict",
+      "kind": "event",
+      "locator": "\"Iraqi conflict\", revision 1377860410"
+    },
+    {
+      "dissent": false,
       "id": "iraqi-insurgency",
       "kind": "event",
       "locator": "\"Iraqi insurgency (2003–2011)\", revision 1375582804"
@@ -14657,6 +14675,12 @@
       "id": "israeli-declaration-of-independence",
       "kind": "event",
       "locator": "\"Israeli Declaration of Independence\", revision 1372097190"
+    },
+    {
+      "dissent": false,
+      "id": "israeli-palestinian-conflict",
+      "kind": "event",
+      "locator": "\"Israeli–Palestinian conflict\", revision 1377864296"
     },
     {
       "dissent": false,
@@ -15080,6 +15104,12 @@
     },
     {
       "dissent": false,
+      "id": "middle-eastern-crisis-2023-present",
+      "kind": "event",
+      "locator": "\"Middle Eastern crisis (2023–present)\", revision 1377899228"
+    },
+    {
+      "dissent": false,
       "id": "milk-bar-cafe-bombing",
       "kind": "event",
       "locator": "\"Zohra Drif\", revision 1370227344, § Milk Bar Café bombing (1956)"
@@ -15161,6 +15191,12 @@
       "id": "myanmar-civil-war",
       "kind": "event",
       "locator": "\"Myanmar civil war (2021–present)\", revision 1376089047"
+    },
+    {
+      "dissent": false,
+      "id": "myanmar-conflict",
+      "kind": "event",
+      "locator": "\"Myanmar conflict\", revision 1376655457"
     },
     {
       "dissent": false,
@@ -17363,6 +17399,12 @@
       "id": "third-battle-of-ypres",
       "kind": "event",
       "locator": "\"Battle of Passchendaele\", revision 1375345710"
+    },
+    {
+      "dissent": false,
+      "id": "third-indochina-war",
+      "kind": "event",
+      "locator": "\"Third Indochina War\", revision 1373461794"
     },
     {
       "dissent": false,

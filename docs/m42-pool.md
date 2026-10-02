@@ -22316,3 +22316,694 @@ own first job to measure before it imports.
 - A15(2)'s recache: **2,914** `wikipedia-en` citations on active records,
   **2,836** on disk at the revision cited, **0 that should be on disk and are
   not.**
+
+## The inverse vein, measured — the 171 `P361` parents the atlas does not hold
+
+*1 October, the import fire that claimed at 23:30Z. The batch-86 stand left
+four candidate next questions and said the first was one query and had never
+been asked. It has been asked.*
+
+**The answer is `docs/m42-inverse-vein.md`**, written by this fire and ticked
+by hand from here on. The short version:
+
+| | |
+| --- | --- |
+| active events carrying a Wikidata item | 1,290 of 1,422 |
+| distinct `P361` targets they name | 301 |
+| already a record here, any status | 130 |
+| **not held — the vein** | **171** |
+| of those, with an English article | 137 |
+| not a disambiguation page or a list, by their own `P31` | 162 |
+| **with an article, a classifiable class and `net` main ≤ 0** | **78** |
+
+Two chunked `wbgetentities` sweeps asked it — 26 calls for the `P361`
+statements and 5 for the 171 targets' own labels, classes, dates, points and
+sitelinks. No article was read to produce the table, and that is the finding
+that matters about this vein as against the last one.
+
+**The vein is a different shape from `docs/m42-umbrella-children.md` and
+cheaper per row.** That vein's rows were *children* — a battle, an operation —
+and each one cost an article read for a sentence that might be an edge, which
+is why 1,008 rows paid 7 records. **These rows are umbrellas.** An umbrella
+needs no article read to be judged: the span, the class and the `net` column
+decide it, and all three were in the table before any fire touched it. The
+cost is one import call per row.
+
+**And the counterpart, stated plainly because A5 asks for it: an umbrella
+carries no edge.** All seven umbrellas the atlas already holds —
+`indochina-wars`, `scramble-for-africa`, `decolonisation-of-africa`,
+`decolonisation-of-asia`, `arab-spring`, `afghan-conflict`,
+`interwar-period` — have **degree zero**, and that is A6's design and not an
+oversight: an umbrella's connection to the atlas is the filing, which is why
+A6 created the class at all. **So this vein cannot grow the largest connected
+component, and no fire should take a batch from it expecting to.** What it
+moves is the main count, which is A6's standing demand, and the active count
+per lane, which is A10's.
+
+**`net` is the column that decides a row**, and it is arithmetic and not
+judgement: **+1** for the umbrella itself unless one of *its* own `P361`
+parents is a held record (then the umbrella is filed and adds no main event),
+**−1** for every held child of it that is main today. A row above zero is
+refused by A6 whatever its article says, and four rows were refused on exactly
+that — `Q86831539` the War in the Sahel and `Q3119132` the India–Pakistan
+wars among them, both of which have an article, a clean span and held children
+already filed under something else.
+
+**The one bad news in the measurement: the vein is thin for the lane A10 puts
+first.** Six of the 171 rows have a child in the `africa` lane, and two of the
+six are the Cold War and the War on Terrorism, which the stand has ruled out.
+**Africa has four rows in this whole vein**; Asia has thirty-one. A fire that
+needs Africa volume will not get much of it here, and that is worth knowing
+before it spends a fire finding out.
+
+## Batch 87 — three umbrellas off the inverse vein, and the five children they file
+
+**Four items taken, three written, one refused.** Africa first under A10. The
+tool's own `--import` walked them: `data/imports/wikidata-state.json` had
+**0 pending** items of 1,815 done, so the four appended to
+`data/imports/wikidata-seeds.json` → `items` were the whole batch and nothing
+else came with them. Two calls spent.
+
+### What was written
+
+| | |
+| --- | --- |
+| `2012-2013-egyptian-protests` | `Q3720660`, 2012-11-22 to 2013-07-03, **no category**, place `egypt-q79`, lane `africa` |
+| `third-indochina-war` | `Q796498`, 1975-05-01 to 1991-10-23, category `war`, place `mainland-southeast-asia` (**new**), lane `asia`, **filed under `indochina-wars`** |
+| `middle-eastern-crisis-2023-present` | `Q124373310`, 2023-10-07 to `end-unstated`, **no category**, place `middle-east`, lane `asia` |
+
+`mainland-southeast-asia` is the batch's one new place, from `Q43467`, with
+`precision: region`, `region` derived from its own point and `summary: null`
+under A15(3). It is there because **A15(6) refused every one of the Third
+Indochina War's countries on the one gate that reads them**: the item names
+five — Vietnam, Laos, Cambodia, China, Thailand — so it names no one country,
+and the chain walked past all five to the first located thing that was not a
+state. That is refusal 2 of the amendment firing five times in one record, and
+it is the right answer: a war across five countries does not stand in the
+first of them alphabetically.
+
+Two of the three carry **no category**, which A15(12) counts: `Q273120`
+(protest) and `Q5791104` (international crisis) are both in the class table and
+both deliberately carry no category, because neither a protest that seizes
+nothing nor a crisis in relations between states is one of the twelve kinds of
+`data/categories.json`. `Q124373322`, the other class
+`middle-eastern-crisis-2023-present` names, is **not in the table at all** and
+was not added: one known class is enough to classify an item, and a second
+would only be a second place to argue.
+
+### What was filed, and under which
+
+Five children, each one the child's **own** `P361` and each dated inside its
+umbrella:
+
+| child | under | its span against the umbrella's |
+| --- | --- | --- |
+| `2013-egyptian-coup-d-etat` | `2012-2013-egyptian-protests` | 2013-07-03 against 2012-11-22 to 2013-07-03 |
+| `cambodian-vietnamese-war` | `third-indochina-war` | 1978–1989 against 1975–1991 |
+| `sino-vietnamese-war` | `third-indochina-war` | 1979 against 1975–1991 |
+| `gaza-war` | `middle-eastern-crisis-2023-present` | 2023-10-07 against 2023-10-07 to ongoing |
+| `twelve-day-war` | `middle-eastern-crisis-2023-present` | 2025-06 against 2023-10-07 to ongoing |
+
+The two Indochina children **take `third-indochina-war` in place of
+`indochina-wars`, and the atlas made that choice rather than this fire**: see
+deviation 1527. The first writing kept both, on the reading that A8 asks for
+every umbrella whose span and subject fit; `tests/m42-filing.test.mjs` refused
+it, because `third-indochina-war` is itself part of `indochina-wars` and a
+parent reachable through another parent tells a reader nothing the tree did not.
+Nothing in the main count turns on it either way: both children were filed
+already.
+
+**One filing the import refused and was right to.** `Q3720660`'s own `P361` is
+`Q33761`, the Arab Spring, which the atlas holds — so the 2012–2013 Egyptian
+protests would have been filed under it and added no main event. Rule 24
+stopped it: `arab-spring` is dated 2010 to 2012-12 here and the protests run to
+2013-07-03, which is outside it. So the protests are **a main event**, and the
++1 that cost is what the coup's −1 pays for.
+
+### The main count, and the lanes
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1,422 | **1,425** |
+| **main** | 232 | **231** |
+| filed under a parent | 1,190 | 1,194 |
+
+**The main count fell by one, which is what A6 asks for.** The arithmetic:
+`third-indochina-war` is filed and adds nothing; the Egyptian protests and the
+Middle Eastern crisis are main and add two; the coup, the Gaza war and the
+Twelve-Day War were main and are not now, which takes three.
+
+Per lane, active / main:
+
+| lane | before | after |
+| --- | --- | --- |
+| europe | 556/86 | 556/86 |
+| americas | 393/56 | 393/56 |
+| **asia** | 244/59 | **246/58** |
+| **africa** | 229/31 | **230/31** |
+
+Africa is still **73 active events short** of A10's 303 and Asia **57 short**.
+
+### The edges: none, and A5's "has to say why"
+
+**No edge was written and the largest connected component is unmoved at 784.**
+A5 says a batch that grows the corpus and not the component has to say why, so:
+
+1. **An umbrella carries no edge, by A6's design.** All seven held umbrellas
+   have degree zero. This batch's three records are umbrellas and the vein they
+   came from holds nothing else. The connection they make is the filing, which
+   is what A6 created the class for.
+2. **The three articles were screened anyway**, over every sentence of their
+   plain-text extracts — 425, 57 and 271 sentences, 118,823 characters — with
+   `tools/import/chronology.mjs`'s own `namesHeldEvents`, `statesACause` and
+   `isChronologyOnly`, each record's own parents and children excluded as kin.
+   **14 sentences named a held record that was not kin. None is an edge.**
+
+| class | hits | the shape |
+| --- | --- | --- |
+| comparisons | 4 | *"for the first time since the 1973 Yom Kippur War"*, *"its largest offensive in the territory since the Second Intifada"*, *"the largest attack on Iran since the Iran-Iraq War"*, *"its largest military buildup in the Middle East since the 2003 invasion of Iraq"* — a scale, not a link |
+| see-also and bibliography lists | 3 | the extract carries the article's own tail: *"First Indochina War Vietnam War Sino-Soviet split Bibliography Ang, Cheng Guan (2024)"* names three held records in one line of a list |
+| A15(5)'s chronology class | 2 | *"After the Fall of Saigon and Phnom Penh in April 1975…"*, *"After the Paris Peace Conference in 1989…"* — `isChronologyOnly` true, refused at the point of writing as A15(5) requires |
+| **homonyms, and the span guard could not catch them** | 2 | *"the conclusion of the 1991 Paris Peace Accords"* is the Cambodia agreements; the atlas's `paris-peace-accords` is `Q696802`, the 1973 Vietnam accords. *"the Paris Peace Conference in 1989"* likewise against `paris-peace-conference`, `Q199820`, 1919–1920. **Deviation 1480's guard decides between two held homonyms and these are one held record against an unheld twin, which it cannot see at all** |
+| third parties | 2 | the Genocide Convention invoked in South Africa's ICJ case — a treaty cited in a proceeding, not a link between two events |
+| **deviation 1525's class, for the third time in three fires** | 1 | *"These incursions would result in the Cambodian-Vietnamese War in which the newly unified Vietnam overthrew the Pol Pot regime and the Khmer Rouge, **in turn ending the Cambodian genocide**."* `cambodian-genocide` is a held record filed under the same umbrella. What the sentence states is that the war *ended* it, and no edge type says that |
+| an anniversary | 1 | *"Beginning with the anniversary of the 2011 Egyptian revolution, small-scale protests took place in January"* — a date, not a cause |
+
+### A15(11) — and a thing the measurement does that nobody asked it to
+
+**Edges crossing an umbrella: 609, up from 607. Inside one: 605, down from
+607.** **No edge was written.** Four edges changed class and not one of them
+changed, which is deviation 1526:
+
+| edge | before | after | why |
+| --- | --- | --- | --- |
+| `gaza-war --precondition-of--> twelve-day-war` | crossing | **inside** | both ends were unparented and both are now under `middle-eastern-crisis-2023-present` |
+| `cambodian-genocide --caused--> cambodian-vietnamese-war` | inside | **crossing** | both were under `indochina-wars`; the child is now under `third-indochina-war` and the genocide is not |
+| `vietnam-war --precondition-of--> cambodian-vietnamese-war` | inside | **crossing** | the same, one level down |
+| `vietnam-war --precondition-of--> sino-vietnamese-war` | inside | **crossing** | the same |
+
+So the number moved **in both directions at once and by more than the edges
+written, which were none** — one filing lowered it and an intermediate
+umbrella raised it three times, because the two children left the
+grandparent's umbrella for the parent's and their links to events still under
+the grandparent now cross. Nothing about any of those four chains is different
+from this morning.
+
+That is deviation 1526, and the short of it is that **A15(11)'s total is a
+measure of the shape of the parent tree and not of how connected the atlas
+is.** A6 asks for filing; filing moves this number either way; and a fire that
+quotes `tools/m42-pool.mjs`'s corpus total as the amendment's number — which
+five batch notes have now done — is quoting something else.
+
+### What was refused, and the candidates left
+
+**One of the four taken was refused**, and five more were refused before the
+import ran. All six are in `docs/m42-inverse-vein.md`'s refusals table with the
+reason, so no fire reads them again. In brief:
+
+| item | why |
+| --- | --- |
+| `Q138772633` Iran–Israel conflict | the import's own place step: its `P361` chain is the item alone, the item carries no `P625`, and the seeds file names no lane for it — a placeless event must carry a region. **This one is a fire away from writable**: a lane for `Q138772633` in the seeds file's `lanes` would do it, and that is a judgement about a conflict with ends in two lanes |
+| `Q184425` Pacific War | `classify()` reads its class `Q718893`, theater of war, as a **place** and not an event. The record is not importable as an event without a class-table edit, which is a judgement about the twelve kinds a person makes. It would also have filed nothing: its one held `P361` child, `second-sino-japanese-war`, runs 1937–1945 and the Pacific War 1941–1945, so rule 24 refuses it |
+| `Q5692053` Ethiopian–Somali conflict | **no interval at all** — no `P580`, no `P582`, no `P585` — and the article's first sentence states no span either: *"is a territorial and political dispute between Ethiopia, Somalia, and insurgents in the area."* A7 widens an interval from a cited article; it does not conjure one where the item gives none and the article states none. This was the batch's best remaining Africa row and it is refused on the facts |
+| `Q6589923` ethnic violence in South Sudan | unclassified: its only class `Q13634374` is not in the class table |
+| `Q86831539` War in the Sahel | A6: `net` +1 |
+| `Q3119132` India–Pakistan wars and conflicts | A6: `net` +1 |
+
+**A15(1)'s count of candidates left: 168 of the 171 rows are untouched**, 75 of
+them with an article, a classifiable class and `net` ≤ 0. Four of those are in
+the africa lane.
+
+### A15(2) — the cache, as the last step
+
+`node tools/cache-evidence.mjs --fill`: **2,988** `wikipedia-en` citations on
+active records, **2,910** on disk at the revision cited, **0 that should be on
+disk and are not**. The batch's own three citations are among them — the
+import's `fetchLeads` wrote each lead as it read it. Nine further leads are on
+disk for items this fire **refused** (`Q184425`, `Q5692053`, `Q6589923`,
+`Q138772633`, in both languages): they are the evidence of the refusals and the
+cache is an input and not data, so they stay.
+
+## Deviation 1526 — A6's filing lowers A15(11)'s own number, and the total cannot tell you which happened
+
+Batch 87 wrote **no edge** and A15(11)'s count moved four times: edges
+crossing an umbrella went from **607 to 609** and edges inside one from **607
+to 605**. The four are in the batch's own section. One filing lowered the
+count — `gaza-war --precondition-of--> twelve-day-war`, whose two ends were
+unparented and are now both under `middle-eastern-crisis-2023-present` — and
+**inserting an umbrella between a child and its grandparent raised it three
+times**: `cambodian-vietnamese-war` and `sino-vietnamese-war` moved from
+`indochina-wars` to `third-indochina-war` (deviation 1527), so their edges to
+`vietnam-war` and `cambodian-genocide`, which are still under
+`indochina-wars`, stopped sharing a parent.
+
+**Not one of those four chains is different from what it was this morning.**
+
+**So the two amendments pull against each other by arithmetic, not by
+accident.** A15(11) counts the edges whose two endpoints share no parent, on
+the reasoning that an edge inside one umbrella is a chain within one subject
+and an edge across two is the global chain the owner asked for. A6 asks that
+every main event be filed under an umbrella whose span and subject fit. **Both
+of A6's moves — filing an unparented event, and filing a child one level
+deeper — change this number, in opposite directions, while the graph of events
+and edges is untouched.**
+
+So the total is not a measure on its own: it is a measure of the shape of the
+parent tree. **It falls when a filing pass does exactly what A6 demands, and
+it rises when a filing pass does the other thing A6 demands**, and the total
+tells them apart from neither. Three readings
+a fire might take, and it may not choose between them on its own:
+
+1. **Report the two movements separately** — edges written that cross an
+   umbrella, and the net change from filings — which is what this batch's
+   section does by hand and what a fire should keep doing until somebody
+   decides. It costs nothing and it is honest.
+2. **Count the measure over the edges a batch *wrote*** and not over the whole
+   corpus, which is what A15(11)'s own wording asks for (*"the number of edges
+   written that cross an umbrella"*) and which `tools/m42-pool.mjs` does not
+   do: the tool reports the corpus total, and five batch notes have quoted that
+   total as though it were the amendment's number.
+3. **Read the total as a ratio against the active edge count** rather than as
+   a level, and accept that it drifts as the tree is reshaped.
+
+(2) is probably what the amendment meant — its wording is *"the number of
+edges **written** that cross an umbrella"* — and (1) is what a fire can do
+today without changing a tool the other lane also reads. **The owner's own
+question is the one underneath**: whether an edge between two parts of one war
+is less of a chain than an edge between two wars. A15(11) assumes it is. That
+is defensible and it is not obvious, and either way a filing pass that is doing
+its job should not be readable as the corpus getting more or less connected.
+
+## Deviation 1527 — A8 does not mean every umbrella, and a test already said so
+
+Batch 87 filed `cambodian-vietnamese-war` and `sino-vietnamese-war` under
+`third-indochina-war` and **kept `indochina-wars` beside it**, reading A8
+literally: *"a filing writes every umbrella whose span and subject fit, not
+the first."* Both fit. Both are true sentences about the Cambodian–Vietnamese
+War.
+
+`tests/m42-filing.test.mjs` refused the batch — *"cambodian-vietnamese-war is
+part of 'indochina-wars' and is inside it already through
+'third-indochina-war'"* — and the test is right and the reading was wrong.
+Its own comment is the rule: **"a second parent earns its place by being
+somewhere the first does not reach."** A8's case is the one the owner gave it,
+*"the angola independence is both under the Portuguese third republic and
+african decolonization"* — two umbrellas on **different axes**, neither inside
+the other. A parent that is an ancestor of another parent is not a second
+umbrella; it is the same umbrella said twice, and the tree already says it.
+
+**This is the first batch of this run to file a child under an umbrella that
+is itself filed**, which is why it is the first to meet the rule. The inverse
+vein will keep producing that shape — 29 of its 171 rows have a held `P361`
+parent of their own, so every child filed under one of them is a child whose
+grandparent it may already name. **A fire taking a batch from
+`docs/m42-inverse-vein.md` should file the child under the narrowest umbrella
+that fits and take the wider one off**, not add to it. The test will catch it
+either way; this note is so the next fire does not spend the cycle.
+
+## Where the run stands after batch 87, for the fire that picks it up
+
+*1 October, the import fire that claimed at 23:30Z. It answered the first of
+the four candidate next questions the batch-86 stand left, wrote **three**
+records and **no** edge, and left a vein of 168 untouched rows behind it. This
+stand supersedes the one after batch 86.*
+
+**The one thing this stand is for: there is a vein again, it is
+`docs/m42-inverse-vein.md`, and it is nothing like the last one.** 171 rows,
+78 of them clearing every gate, and **no article has to be read to judge a
+row** — the `net` column, the class and the span decide it, and all three are
+already in the table. A batch is one import call per row. But **an umbrella
+carries no edge**, so this vein cannot grow the largest connected component
+and no fire should take a batch from it expecting to. What it moves is the main
+count (A6) and the active count per lane (A10).
+
+**Read these before taking a batch from it.**
+
+1. **File the child under the narrowest umbrella that fits and take the wider
+   one off** — deviation 1527. 29 of the 171 rows have a held `P361` parent of
+   their own, so a child filed under one of them may already name its
+   grandparent, and `tests/m42-filing.test.mjs` refuses that. This fire spent a
+   cycle on it.
+2. **A row at `net` above 0 is refused by A6** however good its article is. Two
+   rows with clean spans and real articles went that way — `Q86831539` and
+   `Q3119132`.
+3. **Africa has four rows in this whole vein** and Asia thirty-one. A10 puts
+   Africa first and this vein will not serve it for long. The fire after the
+   next one needs a different question for the africa lane.
+4. **`Q138772633`, the Iran–Israel conflict, is one judgement from writable**:
+   `--import` refused it because its `P361` chain is the item alone, it carries
+   no `P625`, and the seeds file names no lane for it. A `lanes` entry for it
+   would do it. That is a judgement about a conflict with ends in two lanes and
+   it is left for a person.
+
+**The three other candidate questions, still as the batch-86 stand left them.**
+
+1. ~~The inverse of the vein: `P361` parents the atlas does not hold.~~
+   **Measured by this fire; `docs/m42-inverse-vein.md` is the answer.**
+2. **`P1542` / `P828` between two held items** — measured by the batch-86 fire
+   and **closed to batches until the owner answers C9.** Do not re-query it;
+   the seven that clear every gate are written out with their locators.
+3. **`P710` participants into actors**, which A11(a) reads on a curation fire
+   and no import fire has swept. Not measured.
+4. **The `done`-cursor vein of deviation 1515** — 167 ticked items never
+   written, 53 importable. Not measured since. **It is the only remaining vein
+   whose rows are events rather than umbrellas, so it is the only one that can
+   write an edge**, and a fire that wants the component to move should take it
+   ahead of this one.
+
+**What is new in this stand and not in the last.**
+
+- **Deviation 1526: A15(11)'s total measures the parent tree, not the graph.**
+  This batch wrote no edge and the number moved four times, in both
+  directions. A fire quoting `tools/m42-pool.mjs`'s corpus total as the
+  amendment's number is quoting something else — the amendment says *edges
+  written*. Five batch notes have now done it, this one included until it was
+  corrected.
+- **Deviation 1527: A8 does not mean every umbrella**, only ones on different
+  axes. The read above.
+- **The seeds file is a usable channel again.** `data/imports/wikidata-state.json`
+  had 0 pending of 1,815 done, so items appended to
+  `data/imports/wikidata-seeds.json` → `items` are the whole of the next
+  `--import` batch and nothing else comes with them. That is how this batch
+  ran and it is cleaner than a scratchpad driver: every A15 gate, the place
+  chain, the lead fetch, the category reading and the filing all ran as
+  written.
+
+**Unchanged from the batch-86 stand and still true.**
+
+- **The write and the network are both open.** Deviations 1516 and 1518 remain
+  over; `node`'s `fetch` answers where `curl` does not (deviation 1520). A
+  `User-Agent` header is needed: the API answered 429 without one.
+- **Two structural refusals are still the binding constraint on edges**, and
+  this fire met one of them again: **deviation 1525 took its third edge in
+  three fires** — *"in turn ending the Cambodian genocide"*, a held record
+  under the same umbrella, and no edge type for an ending. Deviation 1523
+  (rule 4 on two overlapping intervals) is the other. **Two sentences from the
+  owner release both.**
+- **Two owner questions are still open and this fire met neither**: C8, and
+  A6's span rule against the period umbrellas.
+- **Do not re-screen**: the whole of `docs/m42-umbrella-children.md`, rows 1 to
+  1,008; the 17 children of `arab-spring` and `afghan-conflict` (deviation
+  1522); `Q87138`, `Q29269`, `Q185729`, `Q2659185`, `Q276172`, `Q5033913`
+  (deviation 1523), `Q4871914` (1525), `Q17149843` (a redirect, A15(8));
+  `scramble-for-africa`, `decolonisation-of-africa`, `decolonisation-of-asia`,
+  `indochina-wars`; and the six refusals in
+  `docs/m42-inverse-vein.md`'s own table.
+- **Three identity fills are still waiting for a curation fire, not a batch.**
+  `east-timor-invasion-1975` is `Q2583734`, `spanish-american-war-1898` is
+  `Q12583`, `cuban-war-of-independence-1895-1898` is `Q1514908`; the East Timor
+  record needs A7 in the same pass.
+- **The candidates sweep (A2) overwrites a ticked file.** Pass `--to` a scratch
+  path.
+- **A new homonym class the span guard cannot see.** Deviation 1480 decides
+  between two *held* homonyms by the subject's years. This fire met two cases
+  of **one held record against an unheld twin** — the 1991 Paris Peace Accords
+  against the atlas's 1973 ones, the 1989 Paris Peace Conference against the
+  atlas's 1919–1920 one — which the guard cannot see at all, because there is
+  only one candidate and nothing to choose between. Both were caught by reading;
+  neither would have been caught by the screen.
+- **Unchanged and still the owner's:** `Q8683`, the Cold War; `Q184425`, the
+  Pacific War, whose class the table reads as a place; the two Camp David
+  records' `americas` lane; deviations 1517 and 1512, together; may a run
+  identify an event named by description where only one held record can be
+  meant; deviation 1474's items; the placeless events; deviations 1423, 1461,
+  1473, 1478, 1482, 1506, 1508 and 1511; A11's area clause; A15(12)'s
+  uncategorised events, now two more; the EEC's closing year;
+  `origin/m42b`'s place placeholder summaries; and C8.
+- **Deviation numbers: take the next above 1527.** `m42b` was at 1377 on
+  1 October.
+
+### Counts after batch 87
+
+- active events **1,425** (was 1,422); **main 231** — **down one**, which is
+  what A6 asks; filed 1,194.
+- per lane, active / main: Europe **556/86** and Americas **393/56**, both
+  unchanged; **Asia 246/58** (was 244/59), **Africa 230/31** (was 229/31).
+  Africa is **73 short** of A10's 303 and Asia **57 short**.
+- active edges **1,214** (unchanged — **no edge was written**, and the batch's
+  section says why under A5).
+- components **419** (was 416, up three: three new edgeless umbrellas);
+  **largest connected component 784** (unchanged).
+- **edges crossing an umbrella (A15(11)): 609** (was 607), inside one **605**
+  (was 607) — and **not one edge was written**. Deviation 1526.
+- active events with no edge at all: **323** (was 320).
+- validator **0 errors, 618 warnings** (was 615; the three are `degree-zero`
+  on the three new records), and `--index` clean.
+- A15(2)'s recache: **2,988** `wikipedia-en` citations on active records,
+  **2,910** on disk at the revision cited, **0 that should be on disk and are
+  not.**
+
+## Batch 88 — four more off the inverse vein, and the second batch in a row to write no edge
+
+*Same fire as batch 87, after the whole suite came back green at that head —
+1,940 of 1,940 pure and 313 of 313 browser, nothing skipped. Taken before
+02:00Z, so this is still the import fire of 1 October and not the curation fire
+of the 2nd.*
+
+**Africa is exhausted in this vein and this batch is the proof**, not a choice:
+of the six rows with an africa-lane child, one is the Cold War and one the War
+on Terrorism (both ruled out by the stand), one was written as batch 87, and
+the remaining three were refused on the facts — `Q5692053` for having no
+interval anywhere, `Q6589923` for an unclassified class, `Q17512479` for asking
+that the Mali war be filed under the Arab Winter. **So batch 88 is Asia**, which
+A10 puts third and which is what this vein has.
+
+### What was written
+
+| | |
+| --- | --- |
+| `arab-cold-war` | `Q4783165`, 1952–1970, category `war`, place `arab-world`, lane **`africa`** |
+| `myanmar-conflict` | `Q852088`, 1947 to `end-unstated`, category `war`, **placeless**, lane `asia` |
+| `iraqi-conflict` | `Q47015896`, 2003-03-20 to 2017-12-09, category `war`, place `iraq-q796`, lane `asia` |
+| `israeli-palestinian-conflict` | `Q151622`, 1948-05-14 to `end-unstated`, category `war`, place `palestine-q23792`, lane `asia`, **filed under `arab-israeli-conflict`** |
+
+No new place record: all three placed records reused one the atlas already
+held. `arab-cold-war` landing in the **africa** lane is the place's own point
+answering — `arab-world`'s centroid is in Africa, and the lane is derived and
+not written.
+
+**`myanmar-conflict` is placeless and A15(6) is why**, in its first refusal
+rather than its second: *"the country's inception (1948) is after the event
+ended (1947)"*. Myanmar `Q836` has `P571` 1948 and the conflict's interval is
+1947 with no end, so the gate compared 1948 against the only year it has and
+refused. **That is the gate reading an open interval's start as its end**, and
+on this record the refusal is right by luck — the Union of Burma did not exist
+in 1947 — but the reasoning would refuse a 1947-to-present conflict from a
+state founded in 1948 for the whole of the 78 years it did exist. Worth a
+person's eye; not corrected here, because changing a gate the other lane also
+runs is not a batch's business.
+
+**And the refused country still wrote the lane**, which is right and is worth
+saying: the item has no `P625`, so `ownPoint` fell through to the first located
+thing on the chain — `Q836` itself — and the record reads `region: "asia"` with
+`place: null`, its own `regionNote` saying *"derived from its own point"*. The
+gate governs the **place**, which is an assertion that the event happened
+*there*, and not the **lane**, which is which row of the timeline a bar is drawn
+in. Myanmar's point answers that correctly whatever year the state was founded,
+because the ground did not move. `docs/m67-umbrellas.md` carries the record as a
+bare main event, as M67's rule requires, with both halves argued — and
+`tests/m67.test.mjs` is what asked for it.
+
+### What was filed
+
+| child | under | its span against the umbrella's |
+| --- | --- | --- |
+| `1958-lebanon-crisis` | `arab-cold-war` | 1958 against 1952–1970 |
+| `myanmar-civil-war` | `myanmar-conflict` | 2021–ongoing against 1947–ongoing |
+| `iraq-war` | `iraqi-conflict` | 2003–2011 against 2003–2017 |
+| `second-intifada` | `israeli-palestinian-conflict` | 2000–2005 against 1948–ongoing |
+
+`second-intifada` **gave up `arab-israeli-conflict` for the narrower umbrella**
+rather than keeping both, under deviation 1527 — `israeli-palestinian-conflict`
+is itself filed under `arab-israeli-conflict`, so keeping both would have said
+the same thing twice. `tests/m42-filing.test.mjs` passes.
+
+**Two of `arab-cold-war`'s three held `P361` children were not filed**, and
+rule 24 is why: `black-september` runs 1970-09 to 1971-07 and the Arab Cold War
+ends in 1970, and `lebanese-civil-war` runs 1975–1990. Wikidata says both are
+part of it; the atlas's own span says they are not inside it. The span wins and
+the children stay where they are.
+
+### The main count, and the lanes
+
+| | before 87 | after 87 | after 88 |
+| --- | --- | --- | --- |
+| active events | 1,422 | 1,425 | **1,429** |
+| **main** | 232 | 231 | **231** |
+| filed | 1,190 | 1,194 | **1,198** |
+
+**The main count is level across batch 88 and down one across the fire**, which
+is what A6 asks. The arithmetic for 88: two main umbrellas in
+(`myanmar-conflict`, `iraqi-conflict`), one filed on arrival
+(`israeli-palestinian-conflict`), one main umbrella in the africa lane
+(`arab-cold-war`), and three children off the resting picture.
+
+Per lane, active / main:
+
+| lane | before 87 | after 88 |
+| --- | --- | --- |
+| europe | 556/86 | 556/86 |
+| americas | 393/56 | 393/56 |
+| **asia** | 244/59 | **249/57** |
+| **africa** | 229/31 | **231/32** |
+
+Africa is **72 short** of A10's 303 and Asia **54 short**.
+
+### The edges: none again, and this is now the vein's measured rate
+
+**No edge, for the second batch running. Active edges 1,214, unchanged;
+largest connected component 784, unchanged.** A5 asks why and the answer is
+the same answer, now with a number behind it:
+
+The four articles were screened whole — **1,131 sentences** across them, with
+`tools/import/chronology.mjs`'s own `namesHeldEvents`, `statesACause` and
+`isChronologyOnly`, each record's parents and children excluded as kin.
+**56 sentences named a held non-kin record; 8 carried a causal marker; none is
+an edge.** With batch 87's three articles that is **seven articles, 1,884
+sentences, 70 hits and zero edges.**
+
+| class | hits | the shape |
+| --- | --- | --- |
+| the marker governs something the atlas does not hold | 5 | *"resulted in the ethnic cleansing of 750,000 Palestinian Arabs"*, *"resulted in a short-term Israeli occupation of the Gaza Strip"*, *"Palestinian refugees lost both their homes … as a result of"*, *"led to renewed tensions between the Yishuv and Mandate authorities"*, *"Nasser's prestige had declined due to"* — in every one the cause or the effect is a condition, a displacement or a reputation, and the held record is only one end |
+| **a homonym, the fire's third** | 2 | *"began the 1936-1939 Arab revolt in Palestine"* and *"in response to the violence of the Arab Revolt"* both read the atlas's `arab-revolt`, which is `Q239060`, the **Great Arab Revolt of 1916–18 against the Ottomans**. Two different revolts, one name, and only one of them held |
+| not causal at all | 1 | *"were forced to back down in what became known as the Suez Crisis"* — a naming, and `statesACause` read `known as` |
+| mentions, dates, comparisons, polls and treaty citations | 48 | the Israeli–Palestinian conflict article alone contributed 39 hits, nearly all of the form *"since the 1967 Six-Day War"* or *"contravened the Fourth Geneva Convention"* |
+
+**The reading to take from seven articles and no edges: this vein's rows are
+umbrellas, and an umbrella's article is a survey.** It names dozens of held
+records because it ranges over decades, and it argues about almost none of them,
+because arguing is what the *children's* articles do. The last vein paid 7 edges
+in 1,008 child articles; this one has paid 0 in 7 umbrella articles and there is
+no reason to expect the next seven to differ. **A fire that wants the largest
+component to move should take deviation 1515's `done`-cursor vein, whose rows
+are events.**
+
+### A15(11), again, and more evidence for deviation 1526
+
+**Edges crossing an umbrella: 610, up from 609. Inside one: 604, down from
+605.** **No edge was written.** `second-intifada` moved from
+`arab-israeli-conflict` to `israeli-palestinian-conflict`, so one of its edges
+to an event still under `arab-israeli-conflict` stopped sharing a parent.
+
+That is the third time in one fire that **A15(11)'s total moved with no edge
+written** — once down in batch 87 and twice up — and it is the whole of
+deviation 1526's case: the number measures the shape of the parent tree.
+Across the fire it went **607 → 610** while the graph of events and edges was
+untouched but for three records that carry no edge at all.
+
+### What was refused
+
+Ten rows were read and not written, each with its reason in
+`docs/m42-inverse-vein.md`'s table so nothing re-reads them. The six of batch
+87, and four more here:
+
+| item | why |
+| --- | --- |
+| `Q5308408` Sino-Indian border dispute | unclassified: `Q1078001` is not in the class table |
+| `Q506079` Sino-Soviet split | no interval on the item, and neither of its two classes is in the table |
+| `Q104901608` Late Ottoman genocides | no interval on the item, and `Q1517761` is not in the table |
+| `Q1837704` dissolution of the Ottoman Empire | A6: its one held child, `young-turk-revolution-of-1908`, is dated 1908 and the item's span starts 1922, so rule 24 refuses the filing and the umbrella would be a bare +1 on the main count |
+| `Q3241199` Israeli–Lebanese conflict | **the item's own span disagrees with its own description** — `P580` is 2000 and the description reads *"desde 1948"* — and its three held children straddle the difference, so a filing on either reading would be wrong for the other. A7 would settle it from the article; this fire did not read it, and a filing made on a span it doubts is worse than no record |
+| `Q321780` Abkhazia conflict **and** `Q29242` Georgian–Ossetian conflict | **a pair that shares its only held child.** Both are Wikidata `P361` parents of `russo-georgian-war` and neither is inside the other, so A8 would take both — and two main umbrellas against one main child is **+1 on the main count**, which A6 refuses. Taking one and not the other is an arbitrary choice between two equal claims about the same war, which a fire should not make. **Left for a person**: the Russo-Georgian war was fought in both theatres and the honest answer is probably both umbrellas plus a third main event off the picture, which is not a batch's call |
+
+**A15(1)'s count of candidates left: 164 of the 171 rows are untouched**, 71 of
+them with an article, a classifiable class and `net` ≤ 0, and **none of those
+71 in the africa lane.**
+
+### A15(2) — the cache, as the last step
+
+`node tools/cache-evidence.mjs --fill`: **2,992** `wikipedia-en` citations on
+active records, **2,914** on disk at the revision cited, **0 that should be on
+disk and are not.** Seven leads were written by the import as it read them.
+
+## Where the run stands after batch 88, for the fire that picks it up
+
+*Same fire, 1 October, claimed 23:30Z, two batches. **This stand supersedes the
+one after batch 87**; everything in that one marked "unchanged" is unchanged
+again and is not repeated here. Read that stand's four numbered reads before
+taking a batch from the vein — they all still hold.*
+
+**The one thing this stand is for: the inverse vein works and it cannot write
+an edge, and those are both now measured rather than argued.**
+
+- **It works.** Two batches, eight rows read, **seven records written** and one
+  refused at the place step, over **eleven import calls** — against the last
+  vein's seven records in a thousand articles. No article has to be read to
+  judge a row.
+- **It cannot write an edge.** Seven umbrella articles, **1,884 sentences**, 70
+  sentences naming a held non-kin record, **zero edges**. An umbrella's article
+  is a survey: it names dozens of held records because it ranges over decades
+  and argues about almost none of them, because arguing is what the children's
+  articles do. **Do not take a batch from this vein expecting the largest
+  connected component to move. It has not moved from 784 all fire.**
+- **So the next fire that wants the component to move should take deviation
+  1515's `done`-cursor vein** — 167 ticked items never written, 53 importable,
+  and the only remaining vein whose rows are *events*. It is question 4 of the
+  batch-86 stand and it is still unmeasured.
+
+**Africa is exhausted in this vein.** 164 rows are untouched, 71 of them
+clearing every gate, and **none of those 71 has a child in the africa lane.**
+A10 puts Africa first and this vein has nothing more for it. **The fire that
+wants Africa needs a different question**, and neither of the two remaining
+unmeasured ones (`P710` participants; the `done`-cursor vein) is known to
+favour it. That is the open problem this fire hands on.
+
+**Three things a fire taking this vein should know that batch 88 learned.**
+
+1. **A pair of umbrellas that shares its only main child is +1 on the main
+   count and A6 refuses it.** `Q321780` and `Q29242` — the Abkhazia conflict
+   and the Georgian–Ossetian conflict — are both `P361` parents of
+   `russo-georgian-war`, neither inside the other. Taking one is arbitrary;
+   taking both breaks A6. **Left for a person** and written down rather than
+   guessed at.
+2. **An item whose span disagrees with its own description is not importable
+   until somebody reads the article.** `Q3241199`, the Israeli–Lebanese
+   conflict: `P580` 2000, description *"desde 1948"*, three held children
+   straddling the gap. A filing made on a span the fire doubts is worse than no
+   record.
+3. **A15(6)'s first refusal reads an open interval's start as its end.**
+   `myanmar-conflict` is 1947 with no end and the gate refused Myanmar `Q836`
+   because its 1948 inception is *"after the event ended (1947)"*. Right by luck
+   here; it would refuse a 1947-to-present conflict from a state founded in 1948
+   for all 78 years the state existed. **Not corrected** — the gate runs in both
+   lanes and that is not a batch's business — and worth a person's eye.
+
+**The fire's third homonym class, and it is a fourth kind.** The batch-87 stand
+recorded one held record against an unheld twin (the 1973 Paris Peace Accords
+against the 1991 ones). Batch 88 met it again: the atlas's `arab-revolt` is
+`Q239060`, the **Great Arab Revolt of 1916–18**, and two sentences of the
+Israeli–Palestinian conflict article mean the **1936–39 Arab revolt in
+Palestine**. Deviation 1480's guard decides between two *held* homonyms by the
+subject's years and cannot see this case at all, because only one candidate
+exists and there is nothing to choose between. **Three instances in one fire,
+all caught by reading and none by the screen.** A screen rebuilt for a future
+vein should treat a name whose years are far from the subject's as suspect even
+when it is the only candidate.
+
+**Deviation numbers: take the next above 1527.** `m42b` was at 1377 on
+1 October.
+
+### Counts after batch 88
+
+- active events **1,429** (was 1,422 at the fire's start); **main 231** — **down
+  one across the fire and level across batch 88**, which is what A6 asks; filed
+  **1,198**.
+- per lane, active / main: Europe **556/86** and Americas **393/56**, both
+  untouched all fire; **Asia 249/57** (was 244/59), **Africa 231/32** (was
+  229/31). Africa is **72 short** of A10's 303 and Asia **54 short**.
+- active edges **1,214** — **unchanged all fire, no edge written in either
+  batch**, and both notes say why under A5.
+- components **423** (was 416: seven new records, every one of them edgeless);
+  **largest connected component 784 — unchanged all fire.**
+- **edges crossing an umbrella (A15(11)): 610** (was 607), inside one **604**
+  (was 607) — **with no edge written at all.** Three movements, one down and
+  two up, every one of them a filing. Deviation 1526.
+- active events with no edge at all: **327** (was 320).
+- validator **0 errors, 623 warnings** (was 615; the eight are `degree-zero` on
+  the seven new records and one more), and `--index` clean.
+- **the whole check green at the batch-87 head**: 1,940 of 1,940 pure, **313 of
+  313 browser**, nothing skipped, run the way M63 runs them; and the branch's
+  `validate` run on `127f775c` **completed success**.
+- A15(2)'s recache: **2,992** `wikipedia-en` citations on active records,
+  **2,914** on disk at the revision cited, **0 that should be on disk and are
+  not.**

@@ -1434,3 +1434,62 @@ Nations Command are the three a reviewer would add, on `review.html`.
 inside the umbrella's span. Onjong was the first engagement between Chinese and
 United Nations ground forces in that war, which is why the record's one edge runs
 to `battle-of-unsan` and stays inside the same umbrella.
+
+## M42 batch 88, 1 October — `myanmar-conflict`, bare because the gate refused the one country it names
+
+The first bare record of the **inverse vein** — `P361` parents the atlas does
+not hold — and the first that is bare *and* an umbrella in its own right, so it
+is a main event with no place and no actors and something has to say why.
+
+**The place, and why there is none.** A9's chain for `Q852088` is three items
+long and two of them give nothing: the item carries no `P625` of its own and no
+`P276`, so the chain reaches `P17` with Myanmar, `Q836`, as the only candidate.
+**A15(6) refused it**, in the amendment's first refusal rather than its second:
+*"no place from the country `Q836`: the country's inception (1948) is after the
+event ended (1947)."*
+
+**That refusal is right and its reasoning is not**, and the distinction matters
+enough to write down. The Myanmar conflict's interval is `start: 1947` with
+`end: null` — an insurgency that is still running — and the gate compared
+`Q836`'s `P571` of 1948 against the only year the record has. What it meant to
+ask is whether the state existed when the event happened; what it actually asked
+is whether the state existed before the event's *start*, because for an open
+interval the start is the only year there is. On this record the answer comes out
+correct for the wrong reason: the Union of Burma was not proclaimed until
+January 1948 and the conflict's own first sentence dates it to 1947, so a 1947
+event genuinely did not happen in a state founded in 1948. But the same
+comparison would refuse a 1947-to-present conflict from a 1948 state for the
+whole of the 78 years that state has existed, which is every year of the conflict
+but one.
+
+**Not corrected here.** `countryRefusal()` runs in both lanes and on every
+import, and widening it is a change to a gate that has refused 32 placements
+somebody has read. It is written down in `docs/m42-pool.md`'s batch 88 note and
+in that fire's stand as a thing for a person, and the record stays placeless
+rather than being placed on a state that did not exist.
+
+**The lane is written anyway, and the refused country is what wrote it.**
+`region: "asia"`, and the record's own `regionNote` says where from: *"derived
+from its own point"*. The item has no `P625`, so `runImportMode`'s `ownPoint`
+falls through to `elsewhere[0]` — the first located thing on the chain — which is
+`Q836`, Myanmar. **So the country A15(6) refused as this event's place still
+supplied its lane.**
+
+That is not a contradiction and it should not be "fixed": the two questions are
+different ones. A place is an assertion that the event happened *there*, and
+A15(6) exists because a modern state's centroid is a bad answer to it. A lane is
+which row of the timeline a bar is drawn in — a display fact, as `src/lanes.js`
+has it — and Myanmar's point answers that correctly whatever year the state was
+founded, because the ground did not move. **The gate governs the place and not
+the lane, and this record is the clean illustration**: asia is right, and
+`place: null` is also right.
+
+**The actors.** None, because `tools/import/identity.mjs` never writes `actors`
+and `P710` is a curation fire's read, not a batch's. The Tatmadaw and the ethnic
+armed organisations are what a reviewer would add on `review.html`.
+
+**Why it is main and stays main.** `Q852088` has no `P361` of its own, so there
+is no umbrella to file it under and the import wrote none. It pays for its own
+main slot by taking `myanmar-civil-war` off the resting picture — the child's own
+`P361`, 2021 inside 1947-to-ongoing — so batch 88's main count is level at 231
+and A6 is satisfied without this record being filed anywhere.
