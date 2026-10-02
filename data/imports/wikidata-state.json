@@ -2011,7 +2011,8 @@
         "Q130493316",
         "Q138632220",
         "Q138641767",
-        "Q1752752"
+        "Q1752752",
+        "Q6429210"
       ]
     }
   },
@@ -2231,6 +2232,10 @@
     "Q138772633": {
       "on": "2026-10-01",
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q6429210": {
+      "on": "2026-10-02",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
     }
   }
 }
