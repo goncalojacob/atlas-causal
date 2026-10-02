@@ -21080,3 +21080,15 @@ deviation 1540's order and the first fire to get it right first time.*
 should be on disk and are not**, 2,968 of 3,046 citations on disk at the revision cited and 78
 unholdable beside a more-cited revision of the same item.*
 
+*The suite at this fire's head, run the way the check runs it: **1,941 pure tests, 1,941
+passed, 0 failed, 0 skipped** and **313 browser tests across the 40 suites, 313 passed, 0
+failed, 0 skipped**. Deviation 1388's single browser failure did not reproduce, for the third
+fire running. Both runs were clean first time, which is deviation 1540's warning kept —
+`build-index.mjs` was never running while a suite was.*
+
+*The branch's check is **green on this fire's head `787558f9`** — run **2394**, every step
+success: `Validate records`, then `Tests`, then `Whether this pull request touches
+data/index/`. The `--index` identity step is skipped on a branch push, as always, and
+`node tools/validate.mjs --index` was clean at this head here. Runs 2388, 2389 and 2390 on this
+fire's intermediate heads were **cancelled by the next push**, which is the workflow's own
+concurrency and not a failure.*
