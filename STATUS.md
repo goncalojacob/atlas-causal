@@ -25336,7 +25336,11 @@ different node is therefore the longest one on screen, and **that node travels 7
 the pointer it is zoomed on** and leaves a 1280-wide viewport, where the node the test used to
 pick stays put. Two browser probes at the two heads are in `docs/m42b-pool.md`. This lane did not
 touch the anchor arithmetic — the brief forbids a display change, and the owner should see the
-measurement first.
+measurement first. **Batch 86 then turned the same test green again, with no code change
+between the two heads**, which is the proof of the mechanism and the reason it is worth writing
+down: the fault is hidden, not fixed, and the node that leaves the viewport is still there for
+whichever future batch makes it the test's subject again. At this fire's final head the suite is
+**313 of 313 here and on the runner**, and run **2438** on `2f6dba74` is success.
 
 **Four deviations and an amendment to a fifth.** **1558**: an item whose `P276` is two oceans
 and a continent takes its lane from an ocean, because the import reads the first location a lane

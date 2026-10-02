@@ -21754,6 +21754,15 @@ the brief forbids a display change, and the owner should see the measurement bef
 touches the anchor arithmetic. It is filed here, with the two probes that produced it, as the
 first thing a display milestone should read.
 
+**And batch 86 turned it green again, which is the proof.** The same suite, run alone at this
+fire's final head, is **313 of 313 with nothing skipped** — the test that failed after batch 85
+passes after batch 86. Nothing in the picture's code changed between the two heads; 16 more
+records did, and they moved the id order again. A fault a records batch can switch on and a
+records batch can switch off is a fault in what the test *selects*, not in what it asserts — and
+the thing underneath it, a node that leaves the viewport when the wheel zooms on to it, is still
+there waiting for whichever corpus brings that node back. **It is not fixed. It is hidden
+again.**
+
 **What a records fire should take from it.** A browser test that selects its subject from the
 corpus is sensitive to records in *any* century, not only the ones it draws, because the id order
 is global. That is not a reason to pin the subject — the test's own comment explains why it
@@ -22013,14 +22022,13 @@ stopped it is in that batch's note.
    does not touch. Worth a batch of its own once asia is clear, and worth saying in a reply on
    `origin/m42`'s own pool file if the lanes ever exchange notes.
 
-12. **The browser suite is red here and green on the runner, and deviation 1561 says why.** One
-   test of 313 fails in this sandbox — `tests/graph-labels-browser.test.mjs` → *"a node with room
-   round it is named in full"* — and it fails **alone** as well as in the full pass, so it is not
-   deviation 1383's timing fault. It passes at this fire's pre-batch head. The cause is the id
-   order of `data/index/`, which is global, and the node it now lands on leaves the viewport when
-   the wheel zooms on to it. **The next fire should expect this test to keep failing locally
-   until a display milestone fixes the anchor arithmetic**, and should check the runner rather
-   than this sandbox for the suite's verdict.
+12. **Deviation 1561 is hidden, not fixed, and the next fire should expect it back.**
+   `tests/graph-labels-browser.test.mjs` → *"a node with room round it is named in full"* went
+   red after batch 85 and **green again after batch 86**, with no code change between the two
+   heads: the test picks its subject from the corpus, and the index's id order decides which node
+   that is. At this fire's final head the suite is **313 of 313** here and on the runner. When
+   some future batch makes that long-named node the subject again the test will fail again, and
+   **the answer is not to pin the subject** — it is the zoom anchor, measured in the deviation.
 13. **Deviation numbers: 1561 is the highest taken; 1562 is the first free.** This fire used
    **1558** (an item whose locations are two oceans and a continent takes its lane from an
    ocean), **1559** (the sweep reads a See-also list as a sentence), **1560** (a two-sentence
