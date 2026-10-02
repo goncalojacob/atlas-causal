@@ -25196,3 +25196,11 @@ commit exists, not before: the history shards are built out of the repository's
 own commits, and three of this fire's index commits were stale for exactly that
 reason. And a record with no category carries **no `category` key**, not
 `"category": null`, which `tests/bundle.test.mjs` refuses.
+**Deviation 1562** (renumbered from 1558, which `origin/m42b` had taken while this
+fire was running): `tests/m83-browser.test.mjs`'s B8 was wrong about its own
+picture in two ways and this fire's three children of `world-war-ii` were enough
+to trip both — it measured the emptiest point of the graph to bounding-box
+centres, so a point on top of a long diagonal edge read as far from everything,
+and it measured before the picture stopped moving. Now it waits for the count of
+marks and lines to hold still and measures to the ink. The check was red once for
+that and nothing was skipped or disabled.

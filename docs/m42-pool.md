@@ -24708,12 +24708,20 @@ summary endpoint was not used at all: the lead was taken from the
 `Special:Export` wikitext, templates and refs stripped, which is what put the
 cache entry on disk at a revision the export itself names.
 
-**4. Deviation numbers: take the next above 1558.** This fire wrote **1557**
-and **1558**, over three batches and one test repair. **`origin/m42b` stood at 1556 when this fire read it**, which is why 1557
+**4. Deviation numbers: take the next above 1562, and read `origin/m42b` again
+first — this fire had to renumber once.** It wrote **1557** and **1562**, over
+three batches and one test repair. It took 1557 and 1558 after reading
+`origin/m42b` at **1556**; by the time the test repair was pushed that branch had
+written **1558 to 1561** (its own 1558 is *"the lane of a conflict whose locations
+are two oceans and a continent"*), so the test repair was renumbered **1558 →
+1562** and the commit message that announced it as 1558 is wrong where the file
+is right. **The collision rule is not "read m42b once at the start of the fire";
+it is read it again before every number you take**, because the other lane is
+writing while you are. **`origin/m42b` stood at 1556 when this fire read it**, which is why 1557
 and not the 1549 the batch-92 stand's arithmetic would have given — read
 `origin/m42b`'s own numbers before taking one, as the previous stands say.
 
-**4c. Deviation 1558 — the check was red and it was this fire's data that made it
+**4c. Deviation 1562 — the check was red and it was this fire's data that made it
 red, and the fault was in a test's reading of its own picture.**
 `tests/m83-browser.test.mjs`'s **B8**, *"a click on the graph's empty ground puts
 the selection down"*, failed on the runner and passed locally. It opens

@@ -28,7 +28,7 @@ const PHONE = { width: 390, height: 844, deviceScaleFactor: 1, mobile: true };
 const ready = 'return Boolean(document.querySelector("#map svg.map"));';
 const NODES = "return document.querySelectorAll('#graph svg.graph circle.node[data-id]').length > 0;";
 // Whether the graph has stopped redrawing: the count of marks and lines, read
-// three polls running without changing (deviation 1558).
+// three polls running without changing (deviation 1562).
 const STILL = `
   const now = document.querySelectorAll('#graph svg.graph circle.node[data-id], #graph svg.graph line.edge').length;
   const held = window.__graphStill && window.__graphStill.n === now ? window.__graphStill.held + 1 : 0;
@@ -440,7 +440,7 @@ test('B8: a click on the graph\'s empty ground puts the selection down', { skip 
     await seenIntro(page);
     await open(page, url(WAR), ready);
     await waitFor(page, NODES, 'the graph to draw its nodes');
-    // Deviation 1558: the first nodes are not the picture. The arrangement is
+    // Deviation 1562: the first nodes are not the picture. The arrangement is
     // drawn again as the attribute shards land, and the emptiest point of a
     // picture that is still moving is empty only until the next frame — which
     // is what made this test fail on the check and pass on a fast machine.
@@ -449,7 +449,7 @@ test('B8: a click on the graph\'s empty ground puts the selection down', { skip 
 
     // A point of the picture with no mark and no line anywhere near it: the
     // place furthest from anything the page drew. **Measured to the ink**, not
-    // to bounding-box centres (deviation 1558): a long diagonal line's box has
+    // to bounding-box centres (deviation 1562): a long diagonal line's box has
     // its centre in the middle of the line and its ink across half the pane, so
     // the old reading called a point on top of an edge empty. Distance to a
     // circle is to its rim and to a line is to the segment.
