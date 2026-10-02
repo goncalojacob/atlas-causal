@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "atomic-bombings-of-hiroshima-and-nagasaki--surrender-of-japan--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-92"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Atomic bombings of Hiroshima and Nagasaki\", revision 1375714163"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Surrender of Japan\", revision 1372687290"
+    }
+  ],
+  "from": "atomic-bombings-of-hiroshima-and-nagasaki",
+  "to": "surrender-of-japan",
+  "type": "caused",
+  "confidence": "disputed",
+  "explanation": "`disputed` because both cited articles say in so many words that this is the link historians argue about, and this atlas marks that rather than picking a side. “Surrender of Japan”, at revision 1372687290, lead: “The role of the atomic bombings in Japan's unconditional surrender, and the ethics of the two attacks, is debated.” The far article is careful in the same way: “Atomic bombings of Hiroshima and Nagasaki”, at revision 1375714163, lead, writes only sequence — “Japan announced its surrender to the Allies on 15 August, six days after the bombing of Nagasaki and the Soviet Union's declaration of war against Japan and invasion of Manchuria” — and names the Soviet entry in the same breath. The type is `caused` because that is the claim under dispute; the confidence is what says the atlas does not hold it settled. `disputed` and never `consensus`, which rule 22 would refuse here anyway.",
+  "dispute": {
+    "text": "Who disagrees, in the cited articles' own words. “Atomic bombings of Hiroshima and Nagasaki”, at revision 1375714163: “Supporters argue that the atomic bombings were necessary to bring an end to the war with minimal casualties and ultimately prevented a greater loss of life on both sides… Conversely, critics argue that the bombings were unnecessary for the war's end and were a war crime.” The same article's § Surrender of Japan and subsequent occupation gives the evidence both readings are built on, from the emperor's own words: his 14 August capitulation broadcast “specifically mentions the use of nuclear ordnance devices, from the aspect of the unprecedented damage they caused”, while in the Rescript to the Soldiers and Sailors of 17 August “Hirohito did not refer to the atomic bombs… and instead described the Soviet declaration of war as ‘endangering the very foundation of the Empire's existence’.” The competing cause named on the other side is the Soviet entry into the war and the invasion of Manchuria, which this atlas does not yet hold as a record.",
+    "sources": [
+      {
+        "source": "wikipedia-en",
+        "locator": "\"Atomic bombings of Hiroshima and Nagasaki\", revision 1375714163"
+      },
+      {
+        "source": "wikipedia-en",
+        "locator": "\"Surrender of Japan\", revision 1372687290"
+      }
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  }
+}

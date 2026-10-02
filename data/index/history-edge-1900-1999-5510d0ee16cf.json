@@ -1221,6 +1221,15 @@
         }
       ]
     },
+    "atomic-bombings-of-hiroshima-and-nagasaki--surrender-of-japan--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "attack-on-the-moncada-barracks--cuban-revolution--caused": {
       "from": "git",
       "versions": [
@@ -5038,6 +5047,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "potsdam-declaration--surrender-of-japan--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

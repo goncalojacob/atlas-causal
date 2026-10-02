@@ -24755,6 +24755,7 @@ M42 started 2026-10-01T23:30:14Z by scheduled
 M42 started 2026-10-02T02:07:00Z by scheduled
 M42 started 2026-10-02T05:07:34Z by scheduled
 M42 started 2026-10-02T08:07:42Z by scheduled
+M42 started 2026-10-02T12:16:46Z by scheduled
 
 **M42 batch 87 — the inverse vein measured, and three umbrellas off it, 1 October.**
 The fire that claimed at 23:30Z merged `origin/m0`, then answered the first of the
@@ -25230,3 +25231,44 @@ ends are waiting behind that one decision, and the pool file's stand names them.
 Deviation 1547; `origin/m42b` stood at 1540 when batch 89's fire read it.
 
 M42b started 2026-10-02T12:37:07Z by scheduled
+**M42 batch 92 — the surrender of Japan, the atomic bombings, and the atlas's
+clearest disputed edge, 2 October.** The same 08:07Z fire, third batch. Asia and
+not Africa, said plainly in the note: both African umbrellas' windows are now read
+out and every remaining African gap of weight falls outside both, so A6 forbids
+importing any of them until the Cold War umbrella is decided. `surrender-of-japan`
+(Q6540361, 55 sitelinks) filed from its own `P361`, `Q362` = `world-war-ii`, place
+`tokyo-bay`; `atomic-bombings-of-hiroshima-and-nagasaki` (Q488, **102 sitelinks,
+the highest-sitelink gap in the atlas**) filed by span and subject, place
+`hiroshima` from the first of its two `P276` values. `Q4688003` added to the class
+table at `war`; `Q29431432`, dyad, refused as a class that says how many things an
+item groups rather than what kind of event it is.
+**The edge worth the owner's attention.**
+`atomic-bombings-of-hiroshima-and-nagasaki--surrender-of-japan--caused` is written
+**`disputed`**, because both cited articles say in so many words that this is the
+link historians argue about — the surrender article's lead: *"The role of the
+atomic bombings in Japan's unconditional surrender, and the ethics of the two
+attacks, is debated."* `dispute.text` names both sides out of the articles and out
+of the emperor's own two statements, the 14 August broadcast that names the bombs
+and the 17 August rescript that names the Soviet declaration of war instead. It is
+the first edge either lane has written where the sources themselves say the link is
+contested, which is what the project's hardest rule is for. The competing cause it
+names, the Soviet invasion of Manchuria, is not yet a record here, and the stand
+names it as the next batch.
+Refused: `potsdam-declaration` to the bombings, because the bombings article dates
+the bombing orders to 25 July, the day before the declaration.
+**Counts: 1,457 → 1,459 active, main level at 234, 1,228 → 1,230 active edges,
+largest component 790 → 792.** Over the whole fire: **1,453 → 1,459 active, main
+234 throughout, 1,223 → 1,230 edges, component 786 → 792, edges crossing an
+umbrella 615 → 618**, components unchanged at 440 and events with no edge unchanged
+at 341. Africa 246 → 250, Asia 255 → 257. Validator **0 errors, 637 warnings**
+throughout; locally **1,941 pure and 313 browser tests, all passing, 0 skipped**.
+**Deviation 1548:** A9's own-`P625` step can only *reuse* a place, and the reuse
+matches a folded name as well as a point — but an event item's names never fold to
+a place's, so an event standing on top of a held place walks past it and falls
+through to its country. `surrender-of-japan` would have been placed on the Empire
+of Japan's centroid; `tokyo-bay`, 0.06° away, was written by hand. The fix is a
+point-only reuse at that one step, which is a change to the import tool and so a
+line for the owner. **A line for a records lane instead:** a filing owes its
+paragraph to `docs/m62-umbrellas.md` or `docs/m67-umbrellas.md` **in the same
+commit as the record**, not only to the pool file; two of this fire's intermediate
+commits were red for exactly that.

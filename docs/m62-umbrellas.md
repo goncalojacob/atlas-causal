@@ -644,3 +644,16 @@ filed, from the items' own `P361`, and neither needed a word from the fire.
 | `battle-of-afabet` | `eritrean-war-of-independence` | The item's `P361` is `Q740289`, which this atlas holds as `eritrean-war-of-independence`. March 1988 is inside the umbrella's 1961 to 1991. Afabet was the EPLF's destruction of the Ethiopian Nadew Command, which is the war of independence's own decisive engagement; the record's article is about nothing else. |
 
 **Main is 229 before and 229 after**: both records arrived filed.
+
+## Batch 92 — two filings under `world-war-ii`, one from the item and one by span and subject
+
+Both of these are Asia-lane children of an umbrella this atlas has held since
+M62, and they are the two highest-sitelink events the atlas was missing.
+
+| record | parent | why |
+| --- | --- | --- |
+| `surrender-of-japan` | `world-war-ii` | The item's `P361` is `Q362`, which this atlas holds as `world-war-ii`, so the filing is the item's own and needed no judgement here. 15 August to 2 September 1945 is inside the umbrella's 1939-09-01 to 1945-09-02 — it is the day the umbrella's own `endDate` stands on. |
+| `atomic-bombings-of-hiroshima-and-nagasaki` | `world-war-ii` | By span and subject, because the item's `P361` is `Q590545`, air raids on Japan, which is not a record here. 6 to 9 August 1945 is inside the umbrella's span. The subject: the record's own lead places it *"during the final days of World War II"* and its § Background is the Allied preparation for the invasion of Japan; the bombings were an operation of that war by the parties to it, and nothing in the article makes them a separate quarrel. Not filed under `pacific-war`, which would be the narrower and better umbrella, because this atlas does not hold it — `Q184425` is named as a candidate left in `docs/m42-pool.md`'s batch 92 note, and a fire that imports it should re-read this filing. |
+
+**Main is 234 before and 234 after**: both records arrived or were filed, and
+neither reached the resting picture.

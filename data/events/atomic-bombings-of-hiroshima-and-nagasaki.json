@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "atomic-bombings-of-hiroshima-and-nagasaki",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "a9-place",
+      "a15-days",
+      "filed-by-span-and-subject"
+    ],
+    "note": "A15(4): the item carries two P585 values, 1945-08-06 and 1945-08-09, and the lead states “On 6 and 9 August 1945”, which is the range here. A9: the item names two P276 locations, Q34664 Hiroshima and Q38234 Nagasaki; the chain takes the first and an event carries one place, so `hiroshima` is this record's. A6: P361 is Q590545, air raids on Japan, not a record here, so the filing is by span and subject under `world-war-ii`. A15(12): Q4688003 is new in the class table, at `war`."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q488",
+  "wikipedia": {
+    "en": "Atomic bombings of Hiroshima and Nagasaki",
+    "pt": "Bombardeamentos atômicos de Hiroshima e Nagasaki"
+  },
+  "sitelinks": {
+    "count": 102,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q488"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Atomic bombings of Hiroshima and Nagasaki\", revision 1375714163"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Atomic bombings of Hiroshima and Nagasaki\", revision 1375714163, first sentence: \"On 6 and 9 August 1945\""
+    }
+  ],
+  "title": "Atomic bombings of Hiroshima and Nagasaki",
+  "summary": "The English Wikipedia article \"Atomic bombings of Hiroshima and Nagasaki\", at revision 1375714163, opens: \"On 6 and 9 August 1945, the United States detonated two atomic bombs over the Japanese cities of Hiroshima and Nagasaki, respectively, during the final days of World War II. The aerial bombings killed 150,000 to 246,000 people, most of whom were civilians, and remain the first and only uses of nuclear weapons in an armed conflict.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q488, whose two P585 values are 6 August 1945 and 9 August 1945, both at day precision, which is the span carried here.",
+  "when": {
+    "start": 1945,
+    "end": 1945,
+    "date": "1945-08-06",
+    "endDate": "1945-08-09"
+  },
+  "place": "hiroshima",
+  "region": null,
+  "regionNote": null,
+  "parent": "world-war-ii",
+  "category": "war",
+  "actors": []
+}

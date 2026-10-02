@@ -4117,6 +4117,15 @@
         }
       ]
     },
+    "hiroshima": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "hispanic-america": {
       "from": "git",
       "versions": [
