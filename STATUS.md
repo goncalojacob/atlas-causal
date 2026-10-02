@@ -24535,3 +24535,41 @@ filing lowered it, and inserting an umbrella between a child and its grandparent
 raised it three times — with not one of those four chains different from before. The
 amendment says *edges written*; `tools/m42-pool.mjs` reports the corpus total, and
 five batch notes have quoted the one as the other.
+
+**M42 batch 88 — four more off the inverse vein, and Africa exhausted in it, 1 October.**
+The same fire, after the whole suite came back green at batch 87's head. **Africa is
+exhausted in this vein and the note shows the working**: of the six rows with an
+africa-lane child, two are ruled out by the batch-86 stand, one was batch 87, and
+three are refused on the facts — `Q5692053` (no interval anywhere, on the item or in
+the article's first sentence), `Q6589923` (class not in the table), `Q17512479` (it
+would file the Mali war under the Arab Winter). So batch 88 is Asia. **Four written**:
+`arab-cold-war` (`Q4783165`, 1952–1970, place `arab-world`, and the lane its point
+derives is **`africa`**), `myanmar-conflict` (`Q852088`, 1947 to `end-unstated`,
+**placeless**), `iraqi-conflict` (`Q47015896`, 2003–2017, place `iraq-q796`) and
+`israeli-palestinian-conflict` (`Q151622`, 1948 to `end-unstated`, place
+`palestine-q23792`, filed under `arab-israeli-conflict` by its own `P361`).
+**Four children filed**, and `second-intifada` **gives up `arab-israeli-conflict` for
+the narrower umbrella** under deviation 1527. **Two of the Arab Cold War's three
+`P361` children were not filed**: `black-september` ends 1971 and
+`lebanese-civil-war` runs 1975–1990, both outside its 1952–1970, and rule 24 wins
+over Wikidata's claim. **Four more refused**, each written down: `Q5308408`,
+`Q506079` and `Q104901608` on an unclassified class or no interval; `Q1837704`,
+whose one held child is dated 1908 against the item's 1922 start, so the umbrella
+would be a bare +1 on the main count; `Q3241199`, whose `P580` of 2000 disagrees with
+its own description's 1948 while its three children straddle the gap; and the pair
+`Q321780` / `Q29242`, **which share their only main child** — two main umbrellas
+against one main child is +1 on the main count, and choosing one of two equal claims
+about the same war is not a batch's call, so both are left for a person.
+**The main count is level at 231 across batch 88 and down one across the fire.**
+Per lane: Asia **249/57** (was 244/59) and Africa **231/32** (was 229/31); Europe and
+the Americas untouched all fire. **No edge in either batch**, and that is now the
+vein's measured rate rather than an excuse: **seven umbrella articles, 1,884
+sentences, 70 sentences naming a held non-kin record, zero edges** — an umbrella's
+article is a survey, and arguing is what the children's articles do. The largest
+connected component has not moved from **784** all fire. **So the next fire that
+wants the component to move, or wants the africa lane, should take deviation 1515's
+`done`-cursor vein**, the only remaining one whose rows are events; none of the 71
+rows still clearing every gate in the inverse vein has an africa-lane child.
+A15(11) went **607 → 610** on no edge written, which is deviation 1526's whole case.
+The check was green at batch 87's head — 1,940 of 1,940 pure, 313 of 313 browser,
+nothing skipped, and the branch's `validate` run on `127f775c` completed success.
