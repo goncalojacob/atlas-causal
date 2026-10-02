@@ -8647,6 +8647,15 @@
         }
       ]
     },
+    "cairo-conference": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "cambodian-civil-war": {
       "from": "git",
       "versions": [
@@ -19874,6 +19883,15 @@
         }
       ]
     },
+    "soviet-invasion-of-manchuria": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "soviet-invasion-of-poland": {
       "from": "git",
       "versions": [
@@ -20366,6 +20384,15 @@
             "when"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "tehran-conference": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

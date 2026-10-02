@@ -1819,6 +1819,15 @@
         }
       ]
     },
+    "cairo-conference--potsdam-declaration--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "cambodian-genocide--cambodian-vietnamese-war--caused": {
       "from": "git",
       "versions": [
@@ -5956,6 +5965,24 @@
         }
       ]
     },
+    "soviet-invasion-of-manchuria--korean-war--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "soviet-invasion-of-manchuria--surrender-of-japan--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "spanish-civil-war--anti-comintern-pact--reacted-to": {
       "from": "git",
       "versions": [
@@ -6057,6 +6084,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "tehran-conference--soviet-invasion-of-manchuria--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

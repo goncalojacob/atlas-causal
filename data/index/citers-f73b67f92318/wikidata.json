@@ -5702,6 +5702,12 @@
     },
     {
       "dissent": false,
+      "id": "cairo-conference",
+      "kind": "event",
+      "locator": "Q696894"
+    },
+    {
+      "dissent": false,
       "id": "cambodian-civil-war",
       "kind": "event",
       "locator": "Q817206"
@@ -9908,6 +9914,12 @@
     },
     {
       "dissent": false,
+      "id": "soviet-invasion-of-manchuria",
+      "kind": "event",
+      "locator": "Q6165880"
+    },
+    {
+      "dissent": false,
       "id": "soviet-invasion-of-poland",
       "kind": "event",
       "locator": "Q2305266"
@@ -10109,6 +10121,12 @@
       "id": "targa-expedition-1490",
       "kind": "event",
       "locator": "Q116763820"
+    },
+    {
+      "dissent": false,
+      "id": "tehran-conference",
+      "kind": "event",
+      "locator": "Q150974"
     },
     {
       "dissent": false,

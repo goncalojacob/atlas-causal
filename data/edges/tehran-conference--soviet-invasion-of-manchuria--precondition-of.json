@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "tehran-conference--soviet-invasion-of-manchuria--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-94"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tehran Conference\", revision 1374026870"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tehran Conference\", revision 1374026870: \"Stalin agreed to enter the war against Japan once Germany was defeated\""
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Soviet invasion of Manchuria\", revision 1376133899, § Summary: \"determined by the timing of the agreements at Tehran and Yalta\""
+    }
+  ],
+  "from": "tehran-conference",
+  "to": "soviet-invasion-of-manchuria",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The far article says it in so many words. “Soviet invasion of Manchuria”, at revision 1376133899, § Summary: “the timing of the invasion had been planned well in advance and was determined by the timing of the agreements at Tehran and Yalta, the long-term buildup of Soviet forces in the Far East since Tehran, and the date of the German surrender some three months earlier”. The near article says what the agreement was: “Tehran Conference”, at revision 1374026870, § Operation Overlord, “Stalin agreed to enter the war against Japan once Germany was defeated”, and its lead lists “operations in Yugoslavia and against Japan” among what the conference addressed. `precondition-of` and not `caused`, because what the conference settled was the condition and the timing of an invasion nobody there ordered; `probable` and not `consensus`, because A2 allows `consensus` only through a work Wikipedia cites and rule 22 would refuse it on two Wikipedia citations anyway. The Yalta Conference is the other half of the sentence and this atlas does not hold it: its lane is Europe, so it is M42b’s, and the pool note hands it over.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

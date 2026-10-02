@@ -3764,6 +3764,18 @@
     },
     {
       "dissent": false,
+      "id": "cairo-conference--potsdam-declaration--precondition-of",
+      "kind": "edge",
+      "locator": "\"Cairo Conference\", revision 1369040877"
+    },
+    {
+      "dissent": false,
+      "id": "cairo-conference--potsdam-declaration--precondition-of",
+      "kind": "edge",
+      "locator": "\"Cairo Conference\", revision 1369040877: \"using the Cairo Declaration as the basis for unconditional surrender\""
+    },
+    {
+      "dissent": false,
       "id": "cambodian-genocide--cambodian-vietnamese-war--caused",
       "kind": "edge",
       "locator": "\"Cambodian genocide\", revision 1377684919, § Vietnamese"
@@ -8000,6 +8012,30 @@
     },
     {
       "dissent": false,
+      "id": "soviet-invasion-of-manchuria--korean-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Soviet invasion of Manchuria\", revision 1376133899"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-invasion-of-manchuria--korean-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Soviet invasion of Manchuria\", revision 1376133899, § Aftermath: \"would be a factor in the rise of the CCP and shape the political conflict of the Korean War\""
+    },
+    {
+      "dissent": false,
+      "id": "soviet-invasion-of-manchuria--surrender-of-japan--caused",
+      "kind": "edge",
+      "locator": "\"Soviet invasion of Manchuria\", revision 1376133899"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-invasion-of-manchuria--surrender-of-japan--caused",
+      "kind": "edge",
+      "locator": "\"Soviet invasion of Manchuria\", revision 1376133899, lead: \"often considered a major factor, alongside the atomic bombings, in the Japanese government’s decision to surrender\""
+    },
+    {
+      "dissent": false,
       "id": "spain-and-the-american-revolutionary-war--armada-of-1779--enabled",
       "kind": "edge",
       "locator": "\"Armada of 1779\", revision 1370428966"
@@ -8213,6 +8249,24 @@
       "id": "taif-agreement--operation-accountability--precondition-of",
       "kind": "edge",
       "locator": "\"Operation Accountability\", revision 1370630524, § Historical background"
+    },
+    {
+      "dissent": false,
+      "id": "tehran-conference--soviet-invasion-of-manchuria--precondition-of",
+      "kind": "edge",
+      "locator": "\"Soviet invasion of Manchuria\", revision 1376133899, § Summary: \"determined by the timing of the agreements at Tehran and Yalta\""
+    },
+    {
+      "dissent": false,
+      "id": "tehran-conference--soviet-invasion-of-manchuria--precondition-of",
+      "kind": "edge",
+      "locator": "\"Tehran Conference\", revision 1374026870"
+    },
+    {
+      "dissent": false,
+      "id": "tehran-conference--soviet-invasion-of-manchuria--precondition-of",
+      "kind": "edge",
+      "locator": "\"Tehran Conference\", revision 1374026870: \"Stalin agreed to enter the war against Japan once Germany was defeated\""
     },
     {
       "dissent": false,
@@ -13748,6 +13802,12 @@
     },
     {
       "dissent": false,
+      "id": "cairo-conference",
+      "kind": "event",
+      "locator": "\"Cairo Conference\", revision 1369040877"
+    },
+    {
+      "dissent": false,
       "id": "cambodian-civil-war",
       "kind": "event",
       "locator": "\"Cambodian Civil War\", revision 1375075951"
@@ -17834,6 +17894,18 @@
     },
     {
       "dissent": false,
+      "id": "soviet-invasion-of-manchuria",
+      "kind": "event",
+      "locator": "\"Soviet invasion of Manchuria\", revision 1376133899"
+    },
+    {
+      "dissent": false,
+      "id": "soviet-invasion-of-manchuria",
+      "kind": "event",
+      "locator": "\"Soviet invasion of Manchuria\", revision 1376133899, first sentence: \"began on 8 August 1945\""
+    },
+    {
+      "dissent": false,
       "id": "soviet-invasion-of-poland",
       "kind": "event",
       "locator": "\"Soviet invasion of Poland\", revision 1375354648"
@@ -18047,6 +18119,12 @@
       "id": "targa-expedition-1490",
       "kind": "event",
       "locator": "\"Targa expedition (1490)\", revision 1370749696"
+    },
+    {
+      "dissent": false,
+      "id": "tehran-conference",
+      "kind": "event",
+      "locator": "\"Tehran Conference\", revision 1374026870"
     },
     {
       "dissent": false,

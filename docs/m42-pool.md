@@ -24385,3 +24385,416 @@ umbrella) or `docs/m67-umbrellas.md` (for a record that names neither an actor
 nor a place) in the same commit as the record**, or `tests/m62.test.mjs` and
 `tests/m67.test.mjs` fail. The pool note alone satisfies `tests/m42-filing.test.mjs`
 and does **not** satisfy those two.
+
+## Batch 93 — the Soviet invasion of Manchuria, and the third side of batch 92's argument, 2 October
+
+**The candidate the previous stand named, taken for the reason it named.** Batch
+92 wrote `atomic-bombings-of-hiroshima-and-nagasaki--surrender-of-japan--caused`
+and marked it `disputed`, because both cited articles say the link is what
+historians argue about; its `dispute.text` names the Soviet entry into the war
+as the competing cause and ended on the admission that *"this atlas does not yet
+hold [it] as a record"*. It does now. The dispute points at something a reader
+can click.
+
+**The record.** `soviet-invasion-of-manchuria`, `Q6165880`, 43 sitelinks, 8 to
+20 August 1945, `war`, place `manchuria`, lane asia, filed under
+`world-war-ii` — the filing is argued in `docs/m62-umbrellas.md` under this
+batch's own heading.
+
+| what A9 to A15 asked | what the item and the article said |
+| --- | --- |
+| A9, the place | The item's own `P625` is `(125, 49)` at one-degree precision; its `P276` is `Q113344999`, Inner Manchuria, which carries no point and whose `P361` is `Q81126` — this atlas's `manchuria`, a region-precision place at `(125, 45)`. Reused (deviation 1557). A15(6) refuses Inner Manchuria's `P17`, `Q148`, whose inception is after this event's end. |
+| A15(7), the lane | `(125, 49)` derives asia, and so does `manchuria`'s own point. No `region` written. |
+| A15(4), the days | `P580` 1945-08-09 and `P582` 1945-08-20; the article's first sentence states the invasion *"began on 8 August 1945"*, which is the start carried here under A7. The same article's § Summary says *"The invasion began on 9 August 1945"* and dates the Soviet declaration of war to 5 p.m. Moscow time on 8 August. **The two readings are the article's own and the record says so**; a reviewer settles which it keeps, and `span-vs-lead-dates` is silent either way because the record and the first sentence agree. |
+| A6 and A8, the filing | `P361` is `Q220602`, the Soviet–Japanese War, and `Q5865416`, the history of Manchuria. Neither is held, so the filing is by span and subject, and `world-war-ii` is the only umbrella that fits: `second-sino-japanese-war` is named by the article's **categories** and by no statement in it, and `pacific-war` (`Q184425`) is still unheld. One parent, not two, per deviation 1527. |
+| A15(12), the category | `P31` is `Q467011` and `Q645883`; both are already in the class table at `war`. |
+| A11(a), the actors | `P710` is `Q15180` and `Q30623`. `soviet-union` takes the role `invader`; `Q30623`, Manchukuo, is not an actor this atlas holds, so the other line is `imperial-japan` as `target`, on the first sentence's own words — the invasion was of *"the Empire of Japan's puppet states of Manchukuo and Mengjiang"*. |
+| A15(2), the cache | The lead is on disk at `tools/import/cache/wikipedia/Q6165880.en.json`, revision **1376133899**, and the title table has the article. `node tools/cache-evidence.mjs`: **0 revisions that should be on disk and are not**, over all 3,056 `wikipedia-en` citations on active records. |
+| A15(8), the redirect test | The item's English sitelink is *"Soviet invasion of Manchuria"* and `Special:Export` returned a page of that title whose wikitext is not a redirect. No flag. |
+
+**The two edges, both `probable`, both to records already in the largest
+component.**
+
+| edge | type | the sentence it rests on |
+| --- | --- | --- |
+| `soviet-invasion-of-manchuria--surrender-of-japan--caused` | `caused` | The lead: *"The Soviet entry into the war against Japan and the defeat of the Kwantung Army are often considered a major factor, alongside the atomic bombings, in the Japanese government's decision to surrender unconditionally by 15 August."* A cause stated and hedged, so `probable`; `consensus` is refused by A2 and by rule 22 alike. |
+| `soviet-invasion-of-manchuria--korean-war--precondition-of` | `precondition-of` | § Aftermath, two consecutive sentences: the occupation *"allowed for parts of those regions to be transferred by the Soviet Union into the control of local communists"*, and *"The control of these regions by communist governments backed by Soviet authorities would be a factor in the rise of the CCP and shape the political conflict of the Korean War."* § Soviet plan says what the invasion was for in Korea: to *"invade the Korean Peninsula up to the 38th parallel, establishing in the process what later became North Korea"*. `precondition-of` and not `caused`, because the article's link runs through the occupation and the division and claims no more. |
+
+**A15(5), applied at the point of writing: four refusals, counted.**
+
+1. **`atomic-bombings-of-hiroshima-and-nagasaki --> soviet-invasion-of-manchuria`, refused.** The lead's sentence is sequence — *"The invasion began two days after the atomic bombing of Hiroshima and one day before the atomic bombing of Nagasaki"* — and `verdictFor` lets it through only because the opener is not the opening. The article itself refutes the edge in § Summary: *"the timing of the invasion had been planned well in advance and was determined by the timing of the agreements at Tehran and Yalta, the long-term buildup of Soviet forces in the Far East since Tehran, and the date of the German surrender"*. **Refused on the article's own refutation, not on the opener test** — the one shape of refusal this pool file has not recorded before.
+2. **`soviet-invasion-of-manchuria --> japanese-instrument-of-surrender`, refused.** *"fighting continued until 2 September, when the Japanese Instrument of Surrender was signed"* is an order of events.
+3. **`soviet-invasion-of-manchuria --> chinese-civil-war`, refused.** The article's only causal sentence about the civil war runs the other way — *"The resumption of full-scale conflict in the Chinese Civil War prompted the Red Army to withdraw by 3 May 1946"* — and its object, the withdrawal, is not a record. What the article does state forward, *"would be a factor in the rise of the CCP"*, names no event this atlas holds.
+4. **The § Aftermath sentence, refused as edge 1's locator.** *"The invasion of Manchuria was a factor that contributed to the surrender of Japan and the end of World War II"* states the same cause the lead does, but `verdictFor` returns `reattribute: [world-war-ii]` because it names a third held event. Here that event is the record's own **parent** and plainly not the cause, so the edge rests on the lead sentence instead and the § Aftermath one is quoted in the explanation as corroboration. **A15(5)'s third-event guard has no exception for a parent, and this is the first time that mattered**; a line for the owner, below.
+
+**Tehran and Yalta are the invasion's stated cause and the atlas holds
+neither.** § Summary names them twice, in the strongest causal language in the
+article — *"determined by the timing of the agreements at Tehran and Yalta"*,
+and *"At the Yalta Conference in February 1945, Stalin secured Roosevelt's
+acceptance of Soviet expansion in the Far East, in return for agreeing to enter
+the Pacific war within two or three months after the defeat of Germany"*. The
+atlas holds `potsdam-conference` and `potsdam-declaration` and no Yalta or
+Tehran record. **Two conferences, both inside `world-war-ii`'s span, both at
++0 main, both with a held far end in this very event**: the cheapest pair of
+candidates this lane has had in six batches.
+
+### The counts
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1,459 | **1,460** |
+| **main events** | **234** | **234** |
+| active edges | 1,230 | **1,232** |
+| largest component | 792 | **793** |
+| components | 440 | 440 |
+| active events with no edge | 341 | 341 |
+| **edges crossing an umbrella (A15(11))** | **618** | **619** |
+
+Per lane (A10), on the `region` column of a fresh `data/index/core-*.json`:
+Africa 250 active / 35 main **unchanged**, Asia 257/57 → **258/57**, Americas
+396/56, Europe 556/86. **Africa trails by eight and the reason is the previous
+stand's §4 and not a records decision**: every remaining African gap of weight
+falls outside both African umbrellas, so importing one raises the main count,
+which A6 forbids. One edge of the two crosses an umbrella — `korean-war` is a
+main event with no parent and this record's parent is `world-war-ii` — and the
+other is inside `world-war-ii`.
+
+`node tools/validate.mjs`: **0 errors, 637 warnings** — the same 637 the previous fire
+ended on, so this batch added none.
+
+## Batch 94 — the Tehran Conference, named as the invasion's cause by the invasion's own article, 2 October
+
+**The same method, one hop back.** Batch 93's import made the Soviet invasion of
+Manchuria a record; its article's § Summary says in so many words what put the
+invasion where it is in time — *"the timing of the invasion had been planned well
+in advance and was determined by the timing of the agreements at Tehran and
+Yalta, the long-term buildup of Soviet forces in the Far East since Tehran"*. Two
+conferences are named there. **One of them is this lane's and one is not**: the
+Tehran Conference is in Tehran, which derives the asia lane, and the Yalta
+Conference is in Crimea, which derives Europe and is therefore M42b's, as the
+batch-90 stand already handed over the Algeciras Conference for the same reason.
+
+**The record.** `tehran-conference`, `Q150974`, 71 sitelinks, 28 November to
+1 December 1943, place `tehran`, lane asia, filed under `world-war-ii` by span
+and subject; **no category**. The filing is argued in `docs/m62-umbrellas.md`.
+
+| what the passes asked | what the item and the article said |
+| --- | --- |
+| A9, the place | The item's first `P276` is `Q3616`, which this atlas has held as `tehran` since before this run, and the item's own `P625` is 0.03° from that record's point. The reuse holds on the item **and** on the point, which is the first candidate in nine batches where it did — deviations 1548 and 1557 are both about the case where it does not. |
+| A15(7), the lane | `(51.414, 35.699)` derives asia, and so does `tehran`'s own point. No `region` written. |
+| A15(4), the days | `P580` and `P582` are 1943-11-28 and 1943-12-01; the first sentence states *"from 28 November to 1 December 1943"*. They agree, so there is nothing to widen and no `date` note. |
+| A6 and A8, the filing | The item carries **no `P361`**, so the filing is by span and subject. One parent. |
+| A15(12), the category | **None, and deliberately.** `P31` is `Q625994`, which the class table already carries with no category and a note saying why — *"it is a conference and not a treaty"* — and `Q1072326`, which is **not in the table at all**. A15(12)'s rule is that an item whose class maps to nothing stays uncategorised and is counted, so it is: this is the batch's one uncategorised record, and `Q1072326` is a row for whoever next reads the table rather than a guess made here. Note that `potsdam-conference`, the same shape of record, carries `treaty` from its own `P31`; the two readings are the items' and not this file's. |
+| A11(a), the actors | `P710` is `Q145`, `Q30` and `Q15180` — `united-kingdom`, `united-states-of-america` and `soviet-union`, all three `negotiator`, which is exactly how `potsdam-conference` already reads the same three items. |
+| A15(2), the cache | The lead is on disk at `tools/import/cache/wikipedia/Q150974.en.json`, revision **1374026870**, and the title table has the article. `node tools/cache-evidence.mjs`: **0 revisions that should be on disk and are not**, over all 3,060 `wikipedia-en` citations on active records. |
+| A15(8), the redirect test | The item's English sitelink is *"Tehran Conference"* and `Special:Export` returned a page of that title whose wikitext is not a redirect. No flag. |
+
+**One edge.** `tehran-conference--soviet-invasion-of-manchuria--precondition-of`,
+`probable`, resting on both articles at once: the far one for the causal claim
+(§ Summary, quoted above) and the near one for what the agreement was — *"Stalin
+agreed to enter the war against Japan once Germany was defeated"*. `precondition-of`
+and not `caused`, because what the conference settled was the condition and the
+timing of an invasion nobody there ordered. **Three citations across two
+articles**, which is the first edge either lane has written this fire with more
+than one source behind it.
+
+**A15(5): two refusals, counted.**
+
+1. **`tehran-conference --> eastern-front`, refused, and the reason is the
+   vocabulary rather than the evidence.** The article's lead states a cause
+   plainly — *"the main outcome of the meeting was a British and American
+   commitment to opening a second front against Nazi Germany, thereby forcing it
+   to pull military assets away from the Eastern Front with the Soviets"* — and
+   `verdictFor` lets it through. But `eastern-front` is a record that began in
+   June 1941 and was still running: the claim is about **the course of an event
+   already under way**, and none of the five edge types says that without
+   overstating it. `caused` and `enabled` would both assert that a 1943
+   conference brought about a front that had been fighting for two years.
+   **The honest edge here is to Operation Overlord, which this atlas does not
+   hold** — named below.
+2. **`tehran-conference --> potsdam-conference`, refused.** *"The Big Three would
+   not meet again until 1945, when the Yalta Conference was held… and the Potsdam
+   Conference was held…"* is an order of events.
+
+### The counts, over both of this fire's batches
+
+| | before the fire | after 93 | after 94 |
+| --- | --- | --- | --- |
+| active events | 1,459 | 1,460 | **1,461** |
+| **main events** | **234** | **234** | **234** |
+| active edges | 1,230 | 1,232 | **1,233** |
+| largest component | 792 | 793 | **794** |
+| components | 440 | 440 | 440 |
+| active events with no edge | 341 | 341 | 341 |
+| **edges crossing an umbrella (A15(11))** | **618** | **619** | **619** |
+
+Batch 94's one edge runs between two children of `world-war-ii`, so it crosses no
+umbrella and the figure stands still; batch 93's edge to `korean-war` is the one
+that moved it. Per lane (A10): Africa 250/35 **unchanged over the whole fire**,
+Asia 257/57 → **259/57**, Americas 396/56, Europe 556/86.
+`node tools/validate.mjs`: **0 errors, 637 warnings** throughout.
+
+## Batch 95 — the Cairo Conference, and Africa moves for the first time in six batches, 2 October
+
+**The thing four stands in a row have said Africa did not have.** The blocker is
+A6: Africa's two umbrellas are `scramble-for-africa` (1885–1914) and
+`decolonisation-of-africa` (1954/56–1976), every remaining African gap of weight
+falls outside both, and importing one of those raises the main count. **The
+Cairo Conference falls inside neither of them and inside a third**:
+`world-war-ii`, which this atlas has held since M62 and whose span covers
+22–26 November 1943. Its place is Cairo, which derives the **africa** lane. So
+it files at +0 main in the trailing lane, which is what A10's order of need has
+been asking for since batch 89. It was found in batch 94's own article — the
+Tehran Conference's first sentence names it — which is the far-end method three
+batches running.
+
+**The record.** `cairo-conference`, `Q696894`, 46 sitelinks, 22 to 26 November
+1943, place `cairo`, lane **africa**, filed under `world-war-ii` by span and
+subject; no category. Argued in `docs/m62-umbrellas.md`.
+
+| what the passes asked | what the item and the article said |
+| --- | --- |
+| A9, the place | **The first candidate this fire where the chain ran past its first two steps.** The item carries no `P625` and no `P276`. Its `P131` is `Q85`, which this atlas holds as `cairo`, so the chain stops at the third step and `P17` — `Q79`, Egypt — is never reached, which is also the first time A15(6)'s country gate had nothing to refuse because nothing got that far. |
+| A15(7), the lane | `cairo`'s point, `(31.236, 30.044)`, derives africa. No `region` written. |
+| A15(4), the days | `P580`/`P582` are 1943-11-22 and 1943-11-26; the first sentence states *"22–26 November 1943"*. They agree. |
+| A6 and A8, the filing | No `P361` at all, as with Tehran. One parent. |
+| A15(12), the category | **None.** `P31` is `Q625994` alone — the class the table carries with no category on purpose. Two of this fire's three records are uncategorised for the same reason, and both are conferences. |
+| A11(a), the actors | The item's twelve `P710` are **all people** — Chiang Kai-shek, Churchill, Roosevelt and nine more — and not one of them is an actor this atlas holds, so `P710` gave nothing. The two parties written instead are the first sentence's: *"held at Cairo in Egypt between China, the United Kingdom, and the United States"*, read as `united-kingdom` and `united-states-of-america`, both `negotiator`. **The third is refused and the reason matters**: the party at Cairo was the Republic of China, and `china` here is `Q148`, the People's Republic — a different polity, whose own item begins in 1949. Naming it for 1943 would be a wrong claim and not a partial list, so the list is partial on purpose. |
+| A15(2), the cache | On disk at `tools/import/cache/wikipedia/Q696894.en.json`, revision **1369040877**, and the title table has the article. `node tools/cache-evidence.mjs`: **0 revisions that should be on disk and are not**, over all 3,063 citations. |
+| A15(8), the redirect test | The item's English sitelink is *"Cairo Conference"*; `Special:Export` returned a page of that title, not a redirect. No flag. |
+
+**One edge.** `cairo-conference--potsdam-declaration--precondition-of`,
+`probable`, on the article's § Influence: *"In July 1945, the Potsdam
+Proclamation of China, Britain, and the United States made an ultimatum to
+Japan, also using the Cairo Declaration as the basis for unconditional
+surrender."* The atlas holds the conference and not the declaration it issued,
+so the edge runs from the conference, which is what the article's own lead and
+§ Influence join: *"The Cairo Declaration, issued after the conference, demanded
+Japan's unconditional surrender"*. **A line for whoever writes the Cairo
+Declaration as a record**: this edge should be re-pointed at it, and the
+explanation says so.
+
+**A15(5): two refusals, counted.**
+
+1. **`cairo-conference --> tehran-conference`, refused.** The Tehran article's
+   *"The meeting occurred shortly after the Cairo Conference was held in
+   Egypt…"* is an order of events, and the Cairo article's own account of the
+   sequel is the same. The two conferences are four days apart and the atlas
+   says so with their dates, which is all either article claims.
+2. **`cairo-conference --> second-sino-japanese-war`, refused.** *"the aim of a
+   joint Chinese, British, and American counter-attack on Burma was eventually
+   achieved"* names no event this atlas holds as the thing achieved, and the
+   conference's aid to China is a decision about a war already four years old —
+   the same shape batch 94 refused for `eastern-front`, and the second time this
+   fire has met it. **Two refusals of one kind in one fire is a pattern, not an
+   accident**: see the stand.
+
+### The counts, over all three of this fire's batches
+
+| | before the fire | 93 | 94 | 95 |
+| --- | --- | --- | --- | --- |
+| active events | 1,459 | 1,460 | 1,461 | **1,462** |
+| **main events** | **234** | **234** | **234** | **234** |
+| active edges | 1,230 | 1,232 | 1,233 | **1,234** |
+| largest component | 792 | 793 | 794 | **795** |
+| components | 440 | 440 | 440 | 440 |
+| active events with no edge | 341 | 341 | 341 | 341 |
+| **edges crossing an umbrella (A15(11))** | **618** | **619** | **619** | **619** |
+
+Per lane (A10): **Africa 250/35 → 251/35**, Asia 257/57 → 259/57, Americas
+396/56, Europe 556/86. Africa trails Asia by eight instead of nine.
+`node tools/validate.mjs`: **0 errors, 637 warnings** throughout the fire.
+
+## Where the run stands after batches 93, 94 and 95, for the fire that picks it up
+
+**Read the stand after batch 92 as well. Its §1 (choose the candidate by its far
+end), §2 (why Asia and not Africa) and §4 (the Cold War umbrella, the owner's
+call) are unchanged and still decide what the next fire can do.** This fire wrote
+three batches, 93, 94 and 95, and the method is batch 92's own: **pick the
+candidate by its far end.** Batch 93's far end was the record batch 92's
+`disputed` edge pointed at and could not reach; batch 94's was batch 93; batch
+95's was batch 94, found in batch 94's own first sentence. **Three batches, one
+chain, and the third of them landed in the trailing lane** — see batch 95's note
+on why `world-war-ii` is the umbrella that unblocks Africa where the two African
+ones cannot.
+
+**1. The Big Three conferences, correctly identified this time, and one of them
+is not this lane's.** An earlier draft of this stand guessed `Q7163` and
+`Q188672` for Yalta and Tehran and **both guesses were wrong** — `Q7163` is
+*politics* and `Q188672` is *bran*. The ids, resolved through
+`query.wikidata.org/sparql` on the articles' own `schema:about`, are
+**`Q150974` the Tehran Conference** and **`Q161227` the Yalta Conference**. Batch
+94 imported the first. **The second is M42b's**, because Yalta is in Crimea and
+A15(7)'s lane rule derives Europe from the point: a fire on that branch gets a
+record whose far end — `tehran-conference`, `potsdam-conference` and
+`soviet-invasion-of-manchuria` — is already here and in the largest component,
+and the Yalta article states the pledge in its own words (*"Stalin pledged that
+the Soviet Union would enter the Pacific War three months after the defeat of
+Germany"*, and *"Stalin agreed to enter the fight against the Empire of Japan 'in
+two or three months after Germany has surrendered'"*). **Taking it would be the
+first edge either lane has written from one branch's import into the other's.**
+The lesson for any stand: **never write an item id that was not read from the
+item.** One SPARQL request answers it.
+
+**1b. The vein batch 95 opened, and it is the most valuable thing in this file.**
+**`world-war-ii` is a worldwide umbrella spanning 1939 to 1945, and events inside
+it fall in every lane** — which means an Africa-lane or Asia-lane event of that
+war files at +0 main *without* needing the Cold War umbrella the batch-90 stand
+says is the owner's call. Batch 95 is the proof. The candidates already named in
+articles this atlas now cites, with their lanes:
+
+- **Anglo-Soviet invasion of Iran**, `Q541369` (resolved by SPARQL, not guessed),
+  1941, named in Tehran's own first sentence. **Asia.** Inside the span.
+- **Operation Overlord** and the **Yalta Conference**, `Q161227`. **Europe**, so
+  M42b's, and the Overlord one is also the honest target of the second-front
+  claim batch 94 refused for want of an edge type.
+- **The Cairo Declaration**, which this fire's own edge points at through the
+  conference and asks to be re-pointed at.
+- And the general case: **the North African and East African campaigns, the
+  Burma campaign, the Pacific War (`Q184425`, already named twice in this file)**
+  — every one of them inside `world-war-ii`'s span, and the first two in the lane
+  that trails. A fire that wants Africa should sweep that war's African theatre
+  before it waits on anything the owner has to decide.
+
+**1c. `soviet-invasion-of-manchuria` carries no `names`, and that cost this fire
+an edge it could see.** The Yalta article names the invasion only as *Operation
+August Storm*, and the item gives three other names — *Operation August Storm*,
+*Manchurian Operation*, *Manchurian Strategic Offensive Operation*. The record
+carries none of them, because I8's names clause is the **import's** to write and
+batch 93 was a records batch, so `namesHeldEvents` could not see the invasion in
+the Yalta article at all; it was found by reading. **A curation fire's relations
+pass has the same blindness over the whole corpus**, and I8 is the remedy
+already decided: the next one should write the names, with `imported-names`, on
+every draft record whose item gives them.
+
+**1d. Two refusals of one shape, and the gap in the type vocabulary they name.**
+Batch 94 refused `tehran-conference --> eastern-front` and batch 95 refused
+`cairo-conference --> second-sino-japanese-war`, both for the same reason: the
+article states plainly that the meeting changed how a war **already running** was
+fought, and none of the five edge types says that. `caused` and `enabled` would
+both assert that a conference brought about a war that had been fighting for
+years; `precondition-of` reads backwards. **This is not a fire's mistake to fix,
+it is a question for the owner**, and it is a common shape — a wartime conference
+is mostly a record about the conduct of a war, and this atlas can currently only
+link it to the war's discrete events. Two refusals in one fire out of eight
+candidates read. A sixth type is a change to a closed vocabulary and so not a
+records lane's to make; the alternative, which costs nothing, is to import the
+operations the conference decided (Overlord, the Burma campaign) and link to
+those, which is §1b's own prescription.
+
+**2. A15(5)'s third-event guard has no exception for a parent, and that is one
+line for the owner.** `verdictFor` refused *"The invasion of Manchuria was a
+factor that contributed to the surrender of Japan and the end of World War II"*
+as a locator, naming `world-war-ii` as the third event the edge should be written
+from instead. `world-war-ii` is the subject's own **parent**: a sentence that
+says *"X contributed to Y and to the end of the war X is part of"* is not naming
+a third cause, it is naming the umbrella. The fix is one clause in
+`tools/import/chronology.mjs` — exclude the ends' parents as well as the ends,
+through `parentsOf` — and it is a records lane writing tool code, so it is
+written here rather than done. Until then the workaround is this batch's: rest
+the edge on a sentence that states the same cause and names no umbrella.
+
+**3. The network, unchanged from batch 92's stand §1, with two measurements
+added.** `Special:Export` and the Wikibase REST entity endpoint both answered,
+each on a retry loop of up to thirty tries at seven seconds; the first call of
+this fire got a 429 carrying the same *"created during active wdqs outage"*
+message. Fifteen documents were read this way over the three batches — the two items, the
+three article exports, the four items batch 93's `P710` and `P361` name, the two
+ids the wrong guesses cost, and one SPARQL query — and every one arrived. **The
+SPARQL endpoint answered on the first attempt**, which is worth knowing: it is
+the only one of the four paths that did, and it is the one that resolves a title
+to an item. The REST
+summary endpoint was not used at all: the lead was taken from the
+`Special:Export` wikitext, templates and refs stripped, which is what put the
+cache entry on disk at a revision the export itself names.
+
+**4. Deviation numbers: take the next above 1562, and read `origin/m42b` again
+first — this fire had to renumber once.** It wrote **1557** and **1562**, over
+three batches and one test repair. It took 1557 and 1558 after reading
+`origin/m42b` at **1556**; by the time the test repair was pushed that branch had
+written **1558 to 1561** (its own 1558 is *"the lane of a conflict whose locations
+are two oceans and a continent"*), so the test repair was renumbered **1558 →
+1562** and the commit message that announced it as 1558 is wrong where the file
+is right. **The collision rule is not "read m42b once at the start of the fire";
+it is read it again before every number you take**, because the other lane is
+writing while you are. **`origin/m42b` stood at 1556 when this fire read it**, which is why 1557
+and not the 1549 the batch-92 stand's arithmetic would have given — read
+`origin/m42b`'s own numbers before taking one, as the previous stands say.
+
+**4c. Deviation 1562 — the check was red and it was this fire's data that made it
+red, and the fault was in a test's reading of its own picture.**
+`tests/m83-browser.test.mjs`'s **B8**, *"a click on the graph's empty ground puts
+the selection down"*, failed on the runner and passed locally. It opens
+`?view=graph&selected=world-war-ii` — **the exact picture this fire made denser**,
+since all three records are children of that umbrella — searches a 19×19 grid for
+the point furthest from anything drawn, clicks it and expects the selection to go
+down. Two things were wrong with it and this fire's three records were enough to
+trip both:
+
+- **It measured to bounding-box centres.** A long diagonal `line.edge` has its
+  box centre in the middle of the line and its ink across half the pane, so a
+  point sitting on top of an edge read as 100 px from everything. A click there
+  opens that edge's card instead of putting the selection down.
+- **It measured before the picture stopped moving.** `NODES` waits for the first
+  mark, not the last; the arrangement is drawn again as the attribute shards
+  land. Measured, on this fire's head: **68 lines at `NODES`, 60 after** — and
+  the "emptiest" point moved between runs of the same commit on the same
+  machine, `(431, 422)` and then `(479, 201)`. That is the flake, and a slow
+  four-core runner meets it where a fast machine does not.
+
+The fix is in the test and makes it stricter, not looser: wait for the count of
+marks and lines to hold still for three polls (`STILL`), then measure **to the
+ink** — to a circle's rim and to a line's segment. With both, the chosen point
+was `(527, 201)` at 249 px from everything on **three runs out of three**, where
+before it had been a different point each time. Nothing was skipped, disabled or
+quarantined, and the suite is 14 of 14 locally. **A records lane does not
+normally touch test code**, and this is written down rather than left implicit
+for that reason: the test was wrong about its own picture and this fire's records
+are what showed it.
+
+**4b. Two mistakes this fire made that cost it commits, both worth not repeating.**
+
+- **Deviation 798 is about the history shards, and this fire read it as being
+  about order alone.** It built each batch's index *before* committing that
+  batch's records, which is the wrong half of "records first, rebuild, then
+  commit the index": the history shards in `data/index/` are built out of the
+  repository's **own commits**, so an index built before the records are
+  committed is missing their first version and `rule 16` refuses it. Three of
+  this fire's index commits were stale for that reason and one rebuild on the
+  head that had all three records fixed them. **Rebuild after the records commit
+  exists, not before.**
+- **A record with no category carries no `category` key at all, not
+  `"category": null`.** `tests/bundle.test.mjs` holds every record to a
+  byte-identical round trip through the contribution form's own writer, and that
+  writer omits the key. Batches 94 and 95 wrote the null and a fourth commit took
+  it out. Two of the three records this fire wrote are uncategorised, which is
+  why it met this at all; A15(12)'s count is unchanged either way.
+
+**5. Still open, unchanged, and still the owner's.** Everything in the batch-90
+and -91 stand's §6, plus deviation 1548's point-only reuse (this fire met the
+same shape from the other side and reused by hand again), §2 above, and the
+`docs/m42-pool.md` §3 table stopped at batch 17.
+
+### The check, green on this fire's head
+
+**Run 2435 on `98ad48d3` concluded `success`**, read in the job's own steps:
+*Validate records* and *Tests* both green, and the index step correctly skipped
+because this is a push and not a pull request. Locally on the same head: **1,941
+pure tests, 1,941 passing, 0 failing, 0 skipped**, and **313 browser tests, 313
+passing, 0 failing, 0 skipped**, both exit 0. `node tools/validate.mjs --index`:
+**0 errors, 637 warnings**.
+
+**Run 2428 on `44581565` was red before that, and the whole of why is deviation
+1562 above** — not load, and read rather than assumed: the failing test was named
+from the job log, reproduced by probe, and fixed. **A sibling worth the owner's
+eye:** `origin/m42b`'s own fire, within the same hour, hit the same *class* of
+fault from the other side — *"the batch's 24 records shifted the index id order,
+which re-breaks the ties the graph layout and the label placer resolve by id, so
+a different node is the longest on screen"* — and documented it rather than fixing
+it (its deviation 1561). **Two lanes, one hour, two browser tests whose subject is
+whatever the data happens to make biggest or emptiest.** The pattern is that a
+test which picks its own target out of the picture is a test the next batch of
+records can break, and there are probably more of them; a pass over the browser
+suite looking for that shape is the cheapest reliability work available, and it is
+test code, so it is a line for the owner rather than a thing either records lane
+should do on its own.

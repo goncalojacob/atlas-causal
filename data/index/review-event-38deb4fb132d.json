@@ -21968,6 +21968,38 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "cairo-conference",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "a9-place",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A9: no `P625` and no `P276`; the item's `P131` is `Q85`, held here as `cairo`, so the chain stops there and `P17` `Q79` is never reached. A15(4): `P580`/`P582` are 1943-11-22 and 1943-11-26 and the first sentence says the same. A6: no `P361`, so filed by span and subject under `world-war-ii`. No category: `P31` is `Q625994` alone, carried in the class table with no category on purpose. A11(a): the twelve `P710` are people, none of them actors here; the two parties are the first sentence's.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Cairo Conference"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -33040,7 +33072,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 5,
+      "degree": 6,
       "id": "korean-war",
       "kind": "event",
       "origin": {
@@ -38652,7 +38684,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "potsdam-declaration",
       "kind": "event",
       "origin": {
@@ -46399,6 +46431,40 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 3,
+      "id": "soviet-invasion-of-manchuria",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "a9-place",
+          "a15-days",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A15(4): P580 and P582 are 1945-08-09 and 1945-08-20; the first sentence states the invasion “began on 8 August 1945”, which is the start carried here, while § Summary says 9 August — a reviewer settles which. A9: the item’s P625 is (125, 49) and its P276, Q113344999, carries no point and is part of Q81126, so `manchuria` is reused rather than duplicated (deviation 1557). A6: P361 names Q220602 and Q5865416, neither held here, so the filing is by span and subject. A15(12): P31 Q467011 → `war`.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Soviet invasion of Manchuria"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -47297,7 +47363,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-02",
-      "degree": 2,
+      "degree": 3,
       "id": "surrender-of-japan",
       "kind": "event",
       "origin": {
@@ -47567,6 +47633,38 @@
       "revised": null,
       "status": "active",
       "title": "Targa expedition (1490)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "tehran-conference",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "a9-place",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A9: the item’s first `P276` is `Q3616`, held here as the place `tehran`; the item’s own `P625` is 0.03° from it, so the reuse holds either way. A15(4): `P580`/`P582` are 1943-11-28 and 1943-12-01 and the first sentence says the same. A6: no `P361` at all, so filed by span and subject under `world-war-ii`. No category: `P31` is `Q625994`, in the class table with no category on purpose, and `Q1072326`, not in the table and listed rather than guessed. A11(a): `P710` is `Q145`, `Q30`, `Q15180`.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Tehran Conference"
     },
     {
       "authors": [

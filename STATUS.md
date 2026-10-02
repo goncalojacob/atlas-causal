@@ -24756,6 +24756,7 @@ M42 started 2026-10-02T02:07:00Z by scheduled
 M42 started 2026-10-02T05:07:34Z by scheduled
 M42 started 2026-10-02T08:07:42Z by scheduled
 M42 started 2026-10-02T12:16:46Z by scheduled
+M42 started 2026-10-02T16:08:24Z by scheduled
 
 **M42 batch 87 — the inverse vein measured, and three umbrellas off it, 1 October.**
 The fire that claimed at 23:30Z merged `origin/m0`, then answered the first of the
@@ -25356,3 +25357,40 @@ whatever the validator says, and this fire read "0 errors" three times from a ru
 order. Fixed by one rebuild committed alone; `validate --index` exits 0 at this head.
 
 M42b started 2026-10-02T16:37:14Z by scheduled
+**M42 batches 93, 94 and 95 — one chain, three conferences back, and Africa moved,
+2 October.** The fire that claimed at 12:16Z took the candidate the previous stand
+named and then followed it backwards twice. **Batch 93:**
+`soviet-invasion-of-manchuria` (Q6165880), which batch 92's `disputed` edge named
+as the competing cause of the surrender of Japan and could not point at, with
+`caused` to `surrender-of-japan` and `precondition-of` to `korean-war`, the second
+crossing an umbrella. **Batch 94:** `tehran-conference` (Q150974), because the
+invasion's own article says its timing *"was determined by the timing of the
+agreements at Tehran and Yalta"* — Tehran derives asia and Yalta derives Europe,
+so the Yalta Conference (`Q161227`) is handed to M42b with its id resolved by
+SPARQL. **Batch 95:** `cairo-conference` (Q696894), found in Tehran's own first
+sentence, **lane africa** — the first record this lane has put in the trailing
+lane since batch 91, and the method that made it possible is one sentence:
+`world-war-ii` is a worldwide umbrella, so an African event of that war files at
++0 main without the Cold War umbrella the last four stands have been waiting on.
+Over the fire: **1,459 → 1,462 active, main 234 throughout, 1,230 → 1,234 edges,
+largest component 792 → 795, edges crossing an umbrella 618 → 619**, components
+unchanged at 440 and events with no edge unchanged at 341. **Africa 250 → 251**,
+Asia 257 → 259. Validator **0 errors, 637 warnings** throughout; locally **1,941
+pure and 313 browser tests, all passing, 0 skipped**. **Deviation 1557:** A9's
+own-`P625` reuse step met the shape of 1548 from the other side — the Soviet
+invasion of Manchuria's point `(125, 49)` is 4° from the held `manchuria`, a
+region-precision place that is the thing the event happened inside, and the reuse
+was made by hand through the item's own `P276` chain rather than by point or name.
+**Two lines for a records lane.** The index must be rebuilt **after** the records
+commit exists, not before: the history shards are built out of the repository's
+own commits, and three of this fire's index commits were stale for exactly that
+reason. And a record with no category carries **no `category` key**, not
+`"category": null`, which `tests/bundle.test.mjs` refuses.
+**Deviation 1562** (renumbered from 1558, which `origin/m42b` had taken while this
+fire was running): `tests/m83-browser.test.mjs`'s B8 was wrong about its own
+picture in two ways and this fire's three children of `world-war-ii` were enough
+to trip both — it measured the emptiest point of the graph to bounding-box
+centres, so a point on top of a long diagonal edge read as far from everything,
+and it measured before the picture stopped moving. Now it waits for the count of
+marks and lines to hold still and measures to the ink. The check was red once for
+that and nothing was skipped or disabled.
