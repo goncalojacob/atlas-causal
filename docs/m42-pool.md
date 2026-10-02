@@ -24044,3 +24044,124 @@ cited, 78 unholdable beside a more-cited revision of the same item, 0 that
 should be on disk and are not.** **Validator: 0 errors, 637 warnings**, still
 the same 637.
 
+
+## Where the run stands after batches 90 and 91, for the fire that picks it up
+
+**This stand supersedes the one after batch 89.** Two things in it are now
+answered and one of its recommendations is withdrawn.
+
+**1. `api.php` refusing is not the same as having no network, and this is the
+most useful thing this fire found.** Wikimedia is rate-limiting this sandbox's
+egress address to **1 request per minute** with the message *"this rule was
+created during active wdqs outage (d7f65f1)"*, and it applies to
+`en.wikipedia.org/w/api.php`, `www.wikidata.org/w/api.php`,
+`Special:EntityData/<Q>.json` and the REST summary endpoint alike. **Three
+endpoints answered 200 on every single attempt this fire made** (deviation
+1547):
+
+| what you need | use this |
+| --- | --- |
+| an article's wikitext **and its revision id** | `https://en.wikipedia.org/wiki/Special:Export/<title>` |
+| a whole Wikidata item | `https://www.wikidata.org/w/rest.php/wikibase/v1/entities/items/<Q>` |
+| a title-to-item or class sweep | `query.wikidata.org/sparql`, one request a minute |
+
+`Special:Export` is the important one: it is the only path this fire found that
+gives the revision id without `api.php`, which is what a `wikipedia-en` locator
+and A15(2)'s cache both need. The REST summary endpoint — the one `fetchLeads`
+actually calls — answers about **one try in six**, so the eight leads these two
+batches cached were each taken on a retry loop of up to fourteen tries at seven
+seconds. **This belongs in `tools/import/wikidata.mjs` and not in a pool note:**
+a fallback from the REST summary to `Special:Export` plus a wikitext lead
+extractor, and from `Special:EntityData` to the Wikibase REST endpoint, would
+make every future fire's reading cheap. It is a code change in the import tool,
+which is a records lane writing tool code, so it is written here for the owner
+rather than done.
+
+**2. The component moved twice, 786 → 789 → 790, after four fires stuck.** Both
+batches were chosen for their *far ends* rather than their near ones, which is
+the batch-89 stand's own prescription taken literally: pick a candidate whose
+article argues about a record that is **already in the largest component**, and
+the import joins it. `world-war-i`, `entente-cordiale` and `algerian-war` are
+all in it. `decolonisation-of-africa` is **not** — worth knowing, because a
+filing under it connects nothing.
+
+**3. The vein, stated so the next fire can keep working it.** Not the `P361`
+walk. The question is: **which African events of real weight does the atlas not
+hold, and which of those fall inside a held umbrella's span?** The second half
+is what keeps A6's main count flat and is the whole difficulty, because Africa
+has exactly **two** umbrellas — `scramble-for-africa` (1885–1914) and
+`decolonisation-of-africa` (1954/56–1976) — and the gaps are mostly outside
+both. This fire read both windows out:
+
+- Inside `scramble-for-africa`: the Moroccan question was the gap, and batch 90
+  took all three of it. `Q1137302` the Battle of Omdurman is still there and
+  still unconnectable (A15(5); both its article and Fashoda's state only
+  sequence). `Q163573` the Algeciras Conference is inside the span but its lane
+  is Europe by A15(7), so it is **M42b's**, and it would complete the group —
+  worth handing over.
+- Inside `decolonisation-of-africa`: batch 91's sweep returned **13 items at 14
+  sitelinks or more and the atlas holds 9**. This window is nearly done at this
+  level.
+
+**4. What is blocking Africa is the absence of a third umbrella, and that is the
+owner's call.** The unheld African events of real weight are, measured by name
+at every status: the Mau Mau rebellion, the Mahdist War, the Anglo-Egyptian War,
+the Egyptian revolution of 2011, the Tunisian Revolution, the Mozambican Civil
+War, the Ethiopian Revolution, the Uganda–Tanzania War, the Ugandan Bush War,
+the Tigray War, the Western Sahara conflict, the Chadian–Libyan War, the Green
+March, the First Libyan Civil War, the South African Border War and Apartheid.
+**Every one of them is either before 1885 or after 1976**, so not one fits
+either African umbrella, and importing any of them raises the main count. The
+Mozambican Civil War's own `P361` is `Q8683`, **the Cold War**, and there is no
+Cold War record in `data/events/` at all. A6 allows a period umbrella that
+Wikipedia names, with a span and a region — the Cold War qualifies on its face —
+but the previous stands list *"A6's lane rule against the period umbrellas"* as
+the owner's own open question, and a worldwide umbrella spanning 1947 to 1991
+would swallow a large part of the corpus in one move. **So a records lane should
+not create it alone, and until somebody does, Africa after 1976 cannot be
+imported without raising the main count.** That is the single clearest blocker
+in this file and it is one decision wide. Three chains are waiting behind it and
+each has a held far end: **Uganda–Tanzania War → Ugandan Bush War →
+`rwandan-civil-war`** (the RPF out of the NRA, and `rwandan-civil-war` is in the
+component); **`mozambican-war-of-independence` and `rhodesian-bush-war` →
+Mozambican Civil War**; **Ethiopian Revolution → `ogaden-war` and
+`ethiopian-civil-war`**; and **First Libyan Civil War → `mali-war`**.
+
+**5. The next African query should not go through `P17` on a modern state.**
+Batch 91's sweep returned 13 rows for a whole 22-year window because an event of
+that era whose `P17` is French Algeria, Portuguese Angola or Rhodesia is
+invisible to it. A list of the historical African polities, and the same sweep
+over them, is the cheapest unmeasured thing left for this lane; this fire did
+not build it.
+
+**6. Still open, unchanged, and still the owner's.** §3's own table, stopped at
+batch 17 (batch-89 stand). Deviation 1546's choice between a branch-wide page
+check and `git add -A data/index sources.html narratives.html entry` — this fire
+used the second form at both index commits and it worked, but note that `entry`
+is not a path in this repository, so `git add` with it and `2>/dev/null` stages
+**nothing at all**; use the three real paths. Deviation 1544's 17 active events
+whose `wikipedia.en` is on a merged tombstone instead. Deviation 1515's
+`done`-cursor vein, still the only remaining vein whose rows are events and
+still unmeasured. A13's body half of the 2 October curation fire's 64 records.
+A11(a)'s three runnable clauses — the place for 159 placeless active events,
+`P710` on 737 eligible events, the `P361` umbrella read — which are **the largest
+block of already-targeted work anywhere in this file** and which the next
+curation fire should spend itself on; with the three endpoints in §1 above, the
+network is no longer the obstacle it was. `iraqi-conflict`'s end; A15(12)'s
+uncategorised events, which batch 90 adds two to, both deliberate (`Q5791104`
+has no category on purpose); the EEC's closing year; deviations 1461, 1473,
+1474, 1478, 1482, 1506, 1507, 1508, 1511; A11's area clause; and C8.
+
+**7. Deviation numbers: take the next above 1547.** This fire wrote **1547**
+only. `origin/m42b` stood at 1540 when batch 89's fire read it; this fire did
+not re-read it, so the collision rule of the previous stands holds unchanged —
+read `origin/m42b`'s own numbers before taking one.
+
+### The check, green on this fire's head
+
+Locally on `bizerte-crisis`'s index commit, the two commands the check uses
+since M63: **1,941 pure tests, 1,941 passing, 0 failing, 0 skipped**, and
+**313 browser tests, 313 passing, 0 failing, 0 skipped**, both exit 0.
+`node tools/validate.mjs --index`: **0 errors, 637 warnings**, the same 637 the
+fire found before it wrote anything. The GitHub run on this head is recorded
+below.
