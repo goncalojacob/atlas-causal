@@ -5558,7 +5558,7 @@
       ]
     },
     "arab-cold-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -13462,7 +13462,7 @@
       ]
     },
     "israeli-palestinian-conflict": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -15807,7 +15807,7 @@
       ]
     },
     "myanmar-conflict": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
