@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "western-desert",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "a9-place"
+    ],
+    "note": "Written for `western-desert-campaign`, which reaches it at A9’s second step: the first step, the item’s own `P625` at (28.95, 30.8333), reuses and never writes, and the one record within a degree, `alexandria`, folds to no name this item gives. The precision is the item’s own class, `P31` `Q8514`, desert, added to the class table in this batch at `region`. `P17`, `Q79`, was never reached. A15(3): a place carries no summary."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q14314106",
+  "wikipedia": {
+    "en": "Western Desert"
+  },
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-02"
+  },
+  "sources": [],
+  "names": [
+    "Western Desert",
+    "Deserto Ocidental"
+  ],
+  "where": {
+    "lon": 28.4167,
+    "lat": 26.5833,
+    "precision": "region",
+    "label": "Western Desert"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

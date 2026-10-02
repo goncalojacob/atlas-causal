@@ -6238,6 +6238,12 @@
       "precision": "region",
       "label": "protectorate",
       "note": "Added in M42 batch 98, read from the item itself (Q164142, “territory that is protected diplomatically or militarily by a stronger state”), because A9's chain reached Q2017684, the French protectorate of Tunisia, for the Tunisian campaign and the table had not decided about it. `place` at `region`, on the precedent of Q133156, colony: ground larger than a settlement and not a state, which is A12 (2)'s reading. Its other class, Q3024240 historical country, reads as an actor, and taking it would have made a polity out of the ground an event happened on."
+    },
+    "Q8514": {
+      "kind": "place",
+      "precision": "region",
+      "label": "desert",
+      "note": "Added in M42 batch 99, read from the item itself (Q8514, “barren area of land where little precipitation occurs”), because A9’s chain reached Q14314106, the Western Desert, for the Western Desert campaign and the table had not decided about it. `place` at `region`, on the precedent of Q82794 (region) and Q3502482 (cultural region): ground larger than a settlement and not a state, which is A12 (2)’s reading. Without it the chain would have fallen through to `P17` Q79, Egypt, and A15 (6)’s gate would have had to refuse a country for a desert."
     }
   },
   "reconcile": true
