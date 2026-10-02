@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "gonave-island",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q268282",
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Gonâve Island",
+    "pt": "Ilha de la Gonâve"
+  },
+  "sources": [],
+  "names": [
+    "Gonâve Island",
+    "Ilha de la Gonâve"
+  ],
+  "where": {
+    "lon": -73.083333333333,
+    "lat": 18.833333333333,
+    "precision": "region",
+    "label": "Gonâve Island"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
