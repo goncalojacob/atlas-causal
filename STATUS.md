@@ -24892,4 +24892,39 @@ was checked all the same, by the `Tests` step running the suite's own
 cancelled by the next push, deviation 1258's chain.
 **Take the next above 1536.**
 M42b started 2026-10-02T01:48:08Z by scheduled
+**M42b batches 75, 76 and 77 — six active events, nine placements and not one main, 2 October.**
+Three batches and two merges (`origin/m0` with both lanes' snapshots, `origin/m42`'s batch 88).
+**Batch 75** was move 1 of the batch-74 stand: seven class rows into
+`data/imports/wikidata-seeds.json`, then the six placeless records deleted and re-imported.
+**Five gained a place**; `Q93352` *coast* bought nothing, because the 24 September lane guard
+refused `Q1239` for `kandyan-commerce-raiding-against-portugal-1612-1613`, and that record is
+restored byte-for-byte. **Deviation 1537**: the re-import threw away batch 73's A7 widening,
+parent and note on `cuanza-river-campaign` — the import writes the item's own fields and knows
+nothing of a pass over the record it replaces — and all four were written back by hand.
+**Batch 76** asked `?i wdt:P361 wd:Q5148448` (*Colonization of Angola*) and got two rows, one
+of them held: `battle-of-talandongo` (1583-02-02) is the whole vein. Its own `part_of` is an
+umbrella with no `P580`, `P582` or `P585`, so it is **filed by hand under `angolan-wars`** —
+A3/A6 read off two cited articles, with the new flag `filed-by-span-and-subject` and the
+reasoning in the note. Writing `Q5148448` as an umbrella was refused: one main for one child.
+**Batch 77** ran the inverse-`P361` sweep **whole** for the first time — 1,315 held items in
+four `VALUES` chunks — and the answer is the fire's headline: **5,063 candidates this atlas
+does not hold, 4,667 of a class the table knows, and within the partition the americas has 494,
+asia before 1800 has two and africa before 1800 has none.** Five taken, all `P361` children of
+held umbrellas and so all **+0 main**: `jaragua-massacre`, `dutch-invasions-of-brazil`,
+`battle-of-casa-forte`, `dutch-occupation-of-tiruchendur`, `dutch-conquest-of-malabar`. Two
+more class rows; three of the five placed, and A15(6) refused the other two for the right
+reason (Brazil's inception 1822 after 1645, Haiti's 1804 after 1503).
+**No edge across the fire, and the refusals are the point.** A15(5) refused four sentences in
+three different ways: chronology only (`battle-of-tabocas` → `battle-of-casa-forte`, held on
+both ends and textually unsupported); a cause the atlas holds no event for (the Dutch blockade
+of Goa); and a policy in the cause slot (the WIC's debt collection, in a sentence naming two
+held events). **Deviation 1539**: `statesACause` returned true on a sentence whose only marker
+was *"due to illness"* — the gate is a filter and not an authority. **Deviation 1538**:
+`api.php`'s 429 is the missing `User-Agent` header, reproducibly, and not deviation 1530's
+twenty-minute window; `rest.php` is 429 with the header too.
+**The main count is level at 234 from the first commit to the last** — the first fire of this
+lane to grow by six and claim nothing. Largest component **786** and crossing count **615**,
+both level, which is the measurement saying the atlas is gaining events faster than arguments.
+Africa **245** and Asia **255** against A10's 303, so A15(1)'s pause holds.
+
 M42b started 2026-10-02T04:36:39Z by scheduled
