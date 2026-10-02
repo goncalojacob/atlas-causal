@@ -22,9 +22,10 @@
     "flags": [
       "imported-facts",
       "summary-from-lead",
-      "filed-from-p361"
+      "filed-from-p361",
+      "a9-place"
     ],
-    "note": "A7: the item gives no P582 and the import wrote `end-unstated`, so rule 24 could not file it. \"Cuanza River Campaign\" at revision 1370614389 - the revision this record cites - has `date = May 1580 - November 1, 1582` in its infobox and says the troops \"camped in Mocumbe for two years\". The end is read from there, 1582-11-01; the start is unchanged. With the end stated the item's own P361 (Q132776772) files it under angolan-wars, which is why that parent is written here and not by the import."
+    "note": "A7: the item gives no P582. \"Cuanza River Campaign\" at revision 1370614389 - the revision cited here - has `date = May 1580 - November 1, 1582` in its infobox and says the troops \"camped in Mocumbe for two years\", so the end is 1582-11-01 and its own P361 then files it under angolan-wars (batch 73). Batch 75 placed it at cuanza-river by re-importing, and wrote the end, the parent and this note back by hand: a re-import knows nothing of a pass over the record it replaces (deviation 1537)."
   },
   "wikidata": "Q130493316",
   "sitelinks": {
@@ -52,9 +53,9 @@
     "date": "1580-05",
     "endDate": "1582-11-01"
   },
-  "place": null,
-  "region": "africa",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "place": "cuanza-river",
+  "region": null,
+  "regionNote": null,
   "category": "war",
   "actors": [],
   "parent": "angolan-wars"

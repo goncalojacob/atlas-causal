@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "cuanza-river",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q213840",
+  "sitelinks": {
+    "count": 56,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Cuanza River",
+    "pt": "Rio Cuanza"
+  },
+  "sources": [],
+  "names": [
+    "Cuanza River",
+    "Rio Cuanza"
+  ],
+  "where": {
+    "lon": 17.430102777778,
+    "lat": -13.680927777778,
+    "precision": "region",
+    "label": "Cuanza River"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
