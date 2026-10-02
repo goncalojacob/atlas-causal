@@ -20650,7 +20650,9 @@ after the commit that writes the records, and `sources.html` is part of it** (de
    **`git add data/index` is not the index**: `build-index.mjs` writes `sources.html` and
    `narratives.html` at the repository root since H8, and three citation counts in
    `sources.html` had been left behind. The order is: records → **commit** → rebuild →
-   `git add -A data/index sources.html narratives.html` → commit.
+   `git add -A data/index sources.html narratives.html` → commit. **`origin/m0` is not
+   affected**: checked out in a worktree of its own and rebuilt, it comes back with nothing
+   changed, so the staleness was this fire's own four commits on `m42b` and nowhere else.
 10. **Deviation numbers: 1540 is the highest taken**; this fire used 1537, 1538, 1539 and 1540.
    Read deviation 1484 before taking the next one, and run its three greps: `[Dd]eviations\? <n>`
    over both pool files and `STATUS.md`, `^<n>\. \*\*` over `STATUS.md`, and
