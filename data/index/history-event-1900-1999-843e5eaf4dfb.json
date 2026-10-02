@@ -8648,10 +8648,16 @@
       ]
     },
     "cairo-conference": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [
+            "category"
+          ],
           "on": "2026-10-02"
         }
       ]
@@ -20392,6 +20398,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [
+            "category"
+          ],
           "on": "2026-10-02"
         }
       ]
