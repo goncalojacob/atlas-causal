@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "chaouia-morocco",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2956471",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Chaouia (Morocco)"
+  },
+  "sources": [],
+  "names": [
+    "Chaouia",
+    "Chaouia (Morocco)"
+  ],
+  "where": {
+    "lon": -3.86,
+    "lat": 34.61,
+    "precision": "region",
+    "label": "Chaouia (Morocco)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

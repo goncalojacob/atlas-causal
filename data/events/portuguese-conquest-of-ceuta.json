@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "portuguese-conquest-of-ceuta",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888296",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Portuguese conquest of Ceuta",
+    "pt": "Conquista de Ceuta"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888296"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese conquest of Ceuta\", revision 1376216346"
+    }
+  ],
+  "title": "Portuguese conquest of Ceuta",
+  "summary": "The English Wikipedia article \"Portuguese conquest of Ceuta\", at revision 1376216346, opens: \"Portuguese forces under the command of King John I conquered the North African city of Ceuta from the Marinid Sultanate on 21 August 1415. The city's defenses fell under Portuguese control after a carefully prepared attack, and the successful capture of the city marked the beginning of the Portuguese Empire. Ceuta remained under Portuguese control until it was transferred to Spain in 1668.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888296, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese conquest of Ceuta (1415)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1415,
+    "end": 1415,
+    "date": "1415-08-21"
+  },
+  "place": "ceuta-under-muslim-rule",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "moroccan-portuguese-conflicts"
+}

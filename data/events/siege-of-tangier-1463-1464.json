@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-tangier-1463-1464",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q121282974",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Tangier (1463–1464)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q121282974"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Tangier (1463–1464)\", revision 1370745656"
+    }
+  ],
+  "title": "Siege of Tangier (1463–1464)",
+  "summary": "The English Wikipedia article \"Siege of Tangier (1463–1464)\", at revision 1370745656, opens: \"The siege of Tangier (1463–1464) was an attempt by the Portuguese, led by Afonso V of Portugal to capture the city of Tangiers. The expedition ended in failure.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q121282974, imported by tools/import/wikidata.mjs. The item's own description reads \"1463 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1463,
+    "end": 1464,
+    "date": "1463-11",
+    "endDate": "1464-01-19"
+  },
+  "place": "tangier",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "moroccan-portuguese-conflicts"
+}

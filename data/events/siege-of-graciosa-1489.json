@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-graciosa-1489",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q124639433",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Graciosa (1489)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q124639433"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Graciosa (1489)\", revision 1370741574"
+    }
+  ],
+  "title": "Siege of Graciosa (1489)",
+  "summary": "The English Wikipedia article \"Siege of Graciosa (1489)\", at revision 1370741574, opens: \"The siege of Graciosa was a military campaign launched in 1489 by the Wattassid sultan Mohammed al-Wattasi in order to take the Portuguese stronghold of Graciosa. The Portuguese forces eventually capitulated, then evacuated the place.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q124639433, imported by tools/import/wikidata.mjs. The item's own description reads \"Moroccan siege of Portuguese fortress\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1489,
+    "end": 1489,
+    "date": "1489-07",
+    "endDate": "1489-08-27"
+  },
+  "place": "graciosa-fortress",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "moroccan-portuguese-conflicts"
+}

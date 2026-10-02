@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-mazagan-1769",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q116769248",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Mazagan (1769)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q116769248"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Mazagan (1769)\", revision 1376737660"
+    }
+  ],
+  "title": "Siege of Mazagan (1769)",
+  "summary": "The English Wikipedia article \"Siege of Mazagan (1769)\", at revision 1376737660, opens: \"The siege of Mazagan of 1769 was the last engagement between Morocco and the Portuguese in Mazagan. The Moroccan army under Sultan Mohammed ben Abdallah was victorious and the Portuguese evacuated their last garrison in Morocco, bringing an end to their 354-year-long conflict.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q116769248, imported by tools/import/wikidata.mjs. The item's own description reads \"1769 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1769,
+    "end": 1769,
+    "endDate": "1769-03-11"
+  },
+  "place": "mazagan",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "moroccan-portuguese-conflicts"
+}

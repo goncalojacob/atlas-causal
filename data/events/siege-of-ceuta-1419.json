@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-ceuta-1419",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7509914",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Ceuta (1419)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7509914"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Ceuta (1419)\", revision 1370740121"
+    }
+  ],
+  "title": "Siege of Ceuta (1419)",
+  "summary": "The English Wikipedia article \"Siege of Ceuta (1419)\", at revision 1370740121, opens: \"The siege of Ceuta of 1419 was fought between the besieging forces of the Marinid sultanate, led by Sultan Abu Said Uthman III, including allied forces from the Emirate of Granada, and the Portuguese garrison of Ceuta, led by Pedro de Menezes, 1st Count of Vila Real. After the loss of the city in a surprise attack in 1415 known as the Conquest of Ceuta, the Sultan gathered an army four years later and besieged the city. The Portuguese gathered a fleet under the command of Princes Henry the Navigator and John of Reguengos to relieve Ceuta. According to the chroniclers, the relief fleet turned out to be quite unnecessary. In a bold gambit, Pedro de Menezes led the Portuguese garrison in a sally against the Marinid siege camp and forced the lifting of the siege before the relief fleet even arrived.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7509914, imported by tools/import/wikidata.mjs. The item's own description reads \"Marinid siege to Portuguese Ceuta in August 1419\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1419,
+    "end": 1419,
+    "date": "1419-08-13",
+    "endDate": "1419-08-17"
+  },
+  "place": "portuguese-ceuta",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "moroccan-portuguese-conflicts"
+}

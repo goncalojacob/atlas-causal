@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ksar-es-seghir",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2383366",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Ksar es-Seghir",
+    "pt": "Alcácer-Ceguer"
+  },
+  "sources": [],
+  "names": [
+    "Ksar es-Seghir",
+    "Alcácer Ceguer",
+    "Alcácer-Ceguer"
+  ],
+  "where": {
+    "lon": -5.5568524,
+    "lat": 35.843159,
+    "precision": "city",
+    "label": "Ksar es-Seghir"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

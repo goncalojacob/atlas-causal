@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "capture-of-fez-1576--battle-of-alcacer-quibir--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-83"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Fez (1576)\", revision 1370608603, § Aftermath"
+    }
+  ],
+  "from": "capture-of-fez-1576",
+  "to": "battle-of-alcacer-quibir",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The near end's own article runs the line from the capture to the battle, and it is the article's own “led to”. “Capture of Fez (1576)”, at revision 1370608603: “Meanwhile, al-Mutawakkil fled first to what is now Spain and then to Portugal, where King Sebastian promised support for an attempt to recover the throne. This led to the Portuguese expedition of 1578 and the Battle of Ksar al-Kabir (also known as the Battle of the Three Kings), a major Portuguese defeat that contributed to the dynastic crisis culminating in the Iberian Union of 1580.” The Battle of Ksar al-Kabir is this atlas's `battle-of-alcacer-quibir`, whose own article opens “fought in northern Morocco, near the town of Ksar-el-Kebir” and gives both alternative names. `precondition-of` and not `caused`, because what the article's “This” names is the deposed claimant's flight and Sebastian's promise, two steps the capture produced rather than the expedition itself: without the capture there is no exiled claimant to ask for a crusade. The far end's article agrees about the claimant — “The Christian king Sebastian I had planned a crusade after Abu Abdallah asked him to help recover his throne” — but names no event as the cause there, so the citation is this one. `probable` under rule 22.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

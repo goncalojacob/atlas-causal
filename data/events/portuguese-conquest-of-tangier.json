@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "portuguese-conquest-of-tangier",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q124474956",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Portuguese conquest of Tangier"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q124474956"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese conquest of Tangier\", revision 1370704790"
+    }
+  ],
+  "title": "Portuguese conquest of Tangier",
+  "summary": "The English Wikipedia article \"Portuguese conquest of Tangier\", at revision 1370704790, opens: \"The Portuguese conquest of Tangier from the Wattasid dynasty, was a campaign that took place on 28 August 1471 by Portuguese forces under the order of King Afonso V, surnamed the African.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q124474956, imported by tools/import/wikidata.mjs. The item's own description reads \"1471 Portuguese military campaign on Tangier\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1471,
+    "end": 1471,
+    "date": "1471-08-28"
+  },
+  "place": "tangier",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "moroccan-portuguese-conflicts"
+}

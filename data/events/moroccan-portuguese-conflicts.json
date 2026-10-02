@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "moroccan-portuguese-conflicts",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "umbrella-written-from-article"
+    ],
+    "note": "Written by hand, not imported: Q340075 carries no P580, P582 or P585 at all, so the import has no date to put on a timeline. A6 lets a run write a period umbrella from its own article; the span 1415-1769 is the first sentence of the revision cited here, which the record quotes. The place is empty rather than morocco-q1028 because A15(6) refuses a P17 country whose inception (1956) is after the event ended, and the lane is written for the same reason. Nobody has read this record."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q340075",
+  "wikipedia": {
+    "en": "Moroccan–Portuguese conflicts",
+    "pt": "Guerras luso-marroquinas"
+  },
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q340075"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Moroccan–Portuguese conflicts\", revision 1370628730"
+    }
+  ],
+  "title": "Moroccan–Portuguese conflicts",
+  "summary": "The English Wikipedia article “Moroccan–Portuguese conflicts”, at revision 1370628730, opens: “Moroccan–Portuguese conflicts refer to a series of military engagements between Morocco and Portugal throughout history from 1415 to 1769. The first military conflict, in 21 August 1415, took the form of a surprise assault on Ceuta by 45,000 Portuguese soldiers who traveled on 200 ships. It was later followed by the Siege of Ceuta in 1419. These events marked the beginning of the decline of the Marinid Sultanate and the start of the Portuguese Empire.” That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q340075, which carries no start, end or point in time of its own — which is why tools/import/wikidata.mjs could not take it and this record was written from the article instead, under A6. The years here are the article's own, from the sentence quoted above.",
+  "when": {
+    "start": 1415,
+    "end": 1769
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by this run: the record points at no place, because the item's only P17 is the present-day Kingdom of Morocco, whose inception A15(6) puts after this span. The ground the article describes is the Moroccan coast, which is the africa lane.",
+  "category": "war",
+  "actors": []
+}

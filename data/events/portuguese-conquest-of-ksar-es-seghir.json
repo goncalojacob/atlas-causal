@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "portuguese-conquest-of-ksar-es-seghir",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q116687288",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Portuguese conquest of Ksar es-Seghir",
+    "pt": "Conquista de Alcácer-Ceguer"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q116687288"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese conquest of Ksar es-Seghir\", revision 1375892596"
+    }
+  ],
+  "title": "Portuguese conquest of Ksar es-Seghir",
+  "summary": "The English Wikipedia article \"Portuguese conquest of Ksar es-Seghir\", at revision 1375892596, opens: \"The Portuguese conquest of Ksar es-Seghir in modern Morocco from the Marinid dynasty took place between 23 and 24 October 1458 by Portuguese forces under the command of King Afonso V, surnamed the African.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q116687288, imported by tools/import/wikidata.mjs. The item's own description reads \"1458 conquest\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1458,
+    "end": 1458,
+    "date": "1458-10-16",
+    "endDate": "1458-10-18"
+  },
+  "place": "ksar-es-seghir",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "moroccan-portuguese-conflicts"
+}
