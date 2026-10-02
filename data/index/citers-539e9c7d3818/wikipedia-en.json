@@ -3758,6 +3758,12 @@
     },
     {
       "dissent": false,
+      "id": "campaign-of-tlemcen-1557--battle-of-wadi-al-laban--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Wadi al-Laban\", revision 1370276629, § Background and § Battle"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-alexandria-1798--battle-of-shubra-khit--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Shubra Khit\", revision 1371091764, § Background"
@@ -11024,6 +11030,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-al-kawiya",
+      "kind": "event",
+      "locator": "\"Battle of al-Kawiya\", revision 1370597364"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-albuera",
       "kind": "event",
       "locator": "\"Battle of Albuera\", revision 1373550746"
@@ -11423,6 +11435,12 @@
       "id": "battle-of-dien-bien-phu",
       "kind": "event",
       "locator": "\"Battle of Dien Bien Phu\", revision 1372169112"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-djebel-amour",
+      "kind": "event",
+      "locator": "\"Battle of Djebel Amour\", revision 1370109775"
     },
     {
       "dissent": false,
@@ -12152,6 +12170,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-moulouya",
+      "kind": "event",
+      "locator": "\"Battle of Moulouya\", revision 1377682642"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mount-harriet",
       "kind": "event",
       "locator": "\"Battle of Mount Harriet\", revision 1371845772"
@@ -12275,6 +12299,12 @@
       "id": "battle-of-otumba",
       "kind": "event",
       "locator": "\"Battle of Otumba\", revision 1370271351"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-oued-zadidja",
+      "kind": "event",
+      "locator": "\"Battle of Oued Zadidja\", revision 1370452500"
     },
     {
       "dissent": false,
@@ -12728,6 +12758,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tadla",
+      "kind": "event",
+      "locator": "\"Battle of Tadla\", revision 1370275084"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-taejon",
       "kind": "event",
       "locator": "\"Battle of Taejon\", revision 1370312872"
@@ -12761,6 +12797,12 @@
       "id": "battle-of-tashihchiao",
       "kind": "event",
       "locator": "\"Battle of Tashihchiao\", revision 1370590643"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-taza-1553",
+      "kind": "event",
+      "locator": "\"Battle of Taza (1553)\", revision 1370590714"
     },
     {
       "dissent": false,
@@ -12923,6 +12965,12 @@
       "id": "battle-of-tinzaouaten-2024",
       "kind": "event",
       "locator": "\"Battle of Tinzaouaten (2024)\", revision 1373950868"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tlemcen-1696",
+      "kind": "event",
+      "locator": "\"Battle of Tlemcen (1696)\", revision 1370591144"
     },
     {
       "dissent": false,
@@ -13115,6 +13163,12 @@
       "id": "battle-of-vlotho",
       "kind": "event",
       "locator": "\"Battle of Vlotho\", revision 1370276559"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-wadi-al-laban",
+      "kind": "event",
+      "locator": "\"Battle of Wadi al-Laban\", revision 1370276629"
     },
     {
       "dissent": false,
@@ -13460,6 +13514,18 @@
     },
     {
       "dissent": false,
+      "id": "campaign-of-tlemcen-1551",
+      "kind": "event",
+      "locator": "\"Campaign of Tlemcen (1551)\", revision 1376495158"
+    },
+    {
+      "dissent": false,
+      "id": "campaign-of-tlemcen-1557",
+      "kind": "event",
+      "locator": "\"Campaign of Tlemcen (1557)\", revision 1370607753"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-alexandria-1798",
       "kind": "event",
       "locator": "\"Capture of Alexandria (1798)\", revision 1370608238"
@@ -13487,6 +13553,18 @@
       "id": "capture-of-cayo-cocina",
       "kind": "event",
       "locator": "\"Capture of Cayo Cocina\", revision 1366231642"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-fez-1554",
+      "kind": "event",
+      "locator": "\"Capture of Fez (1554)\", revision 1376418565"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-fez-1576",
+      "kind": "event",
+      "locator": "\"Capture of Fez (1576)\", revision 1370608603"
     },
     {
       "dissent": false,
@@ -13526,6 +13604,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-oujda-1647",
+      "kind": "event",
+      "locator": "\"Capture of Oujda (1647)\", revision 1292600657"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-penon-of-algiers-1529",
       "kind": "event",
       "locator": "\"Capture of Peñón of Algiers (1529)\", revision 1370609401"
@@ -13541,6 +13625,12 @@
       "id": "capture-of-st-lucia",
       "kind": "event",
       "locator": "\"Capture of St. Lucia\", revision 1370609642"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-the-rif-1792",
+      "kind": "event",
+      "locator": "\"Capture of the Rif (1792)\", revision 1370610053"
     },
     {
       "dissent": false,
@@ -13679,6 +13769,12 @@
       "id": "comprehensive-peace-agreement",
       "kind": "event",
       "locator": "\"Comprehensive Peace Agreement\", revision 1372495468"
+    },
+    {
+      "dissent": false,
+      "id": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "kind": "event",
+      "locator": "\"Conflicts between the Regency of Algiers and Morocco\", revision 1377675247"
     },
     {
       "dissent": false,
@@ -14171,6 +14267,12 @@
       "id": "execution-of-the-romanov-family",
       "kind": "event",
       "locator": "\"Murder of the Romanov family\", revision 1374973698, first sentence: \"16–17 July 1918\""
+    },
+    {
+      "dissent": false,
+      "id": "expedition-to-touat-1557",
+      "kind": "event",
+      "locator": "\"Expedition to Touat (1557)\", revision 1376413417"
     },
     {
       "dissent": false,
@@ -15242,6 +15344,12 @@
     },
     {
       "dissent": false,
+      "id": "laghouat-expedition-1708-1713",
+      "kind": "event",
+      "locator": "\"Laghouat Expedition (1708–1713)\", revision 1370626439"
+    },
+    {
+      "dissent": false,
       "id": "laotian-civil-war",
       "kind": "event",
       "locator": "\"Laotian Civil War\", revision 1370626595"
@@ -15803,6 +15911,12 @@
       "id": "operation-verano",
       "kind": "event",
       "locator": "\"Operation Verano\", revision 1371154085"
+    },
+    {
+      "dissent": false,
+      "id": "oran-expedition-1707",
+      "kind": "event",
+      "locator": "\"Oran expedition (1707)\", revision 1370701216"
     },
     {
       "dissent": false,
@@ -16943,6 +17057,18 @@
       "id": "siege-of-nuremberg",
       "kind": "event",
       "locator": "\"Siege of Nuremberg\", revision 1370744103"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-oran-1693",
+      "kind": "event",
+      "locator": "\"Siege of Oran (1693)\", revision 1370744185"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-oran-1700-1701",
+      "kind": "event",
+      "locator": "\"Siege of Oran (1700-1701)\", revision 1370744190"
     },
     {
       "dissent": false,

@@ -7262,6 +7262,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "battle-of-al-kawiya",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of al-Kawiya"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 2,
       "id": "battle-of-albuera",
@@ -9465,6 +9496,69 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Dien Bien Phu"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-djebel-amour",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Djebel Amour"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-djidioua",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "article-is-redirect",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Djidioua"
     },
     {
       "authors": [
@@ -13516,6 +13610,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "battle-of-moulouya",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Moulouya"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "battle-of-mount-harriet",
       "kind": "event",
@@ -14196,6 +14322,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Otumba"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-oued-zadidja",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Oued Zadidja"
     },
     {
       "authors": [
@@ -16577,6 +16735,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-tadla",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Tadla"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -16770,6 +16960,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Tashihchiao"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-taza-1553",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Taza (1553)"
     },
     {
       "authors": [
@@ -17684,6 +17906,37 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Battle of Tinzaouaten (2024)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-tlemcen-1696",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Tlemcen (1696)"
     },
     {
       "authors": [
@@ -18696,6 +18949,39 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Vlotho"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "battle-of-wadi-al-laban",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "place-written-by-hand"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Wadi al-Laban"
     },
     {
       "authors": [
@@ -20693,6 +20979,70 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "campaign-of-tlemcen-1551",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Campaign of Tlemcen (1551)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "campaign-of-tlemcen-1557",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Campaign of Tlemcen (1557)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
       "degree": 2,
       "id": "capture-of-alexandria-1798",
@@ -20842,6 +21192,68 @@
       "revised": null,
       "status": "active",
       "title": "Capture of Cayo Cocina"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "capture-of-fez-1554",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Fez (1554)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "capture-of-fez-1576",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Fez (1576)"
     },
     {
       "authors": [
@@ -21052,6 +21464,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "capture-of-oujda-1647",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Oujda (1647)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-01",
       "degree": 1,
       "id": "capture-of-penon-of-algiers-1529",
@@ -21135,6 +21579,37 @@
       "revised": null,
       "status": "active",
       "title": "Capture of St. Lucia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "capture-of-the-rif-1792",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of the Rif (1792)"
     },
     {
       "authors": [
@@ -22002,6 +22477,36 @@
       "revised": null,
       "status": "active",
       "title": "Comprehensive Peace Agreement"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Conflicts between the Regency of Algiers and Morocco"
     },
     {
       "authors": [
@@ -25255,6 +25760,37 @@
       "revised": "2026-10-01",
       "status": "active",
       "title": "execution of the Romanov family"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "expedition-to-touat-1557",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Expedition to Touat (1557)"
     },
     {
       "authors": [
@@ -31414,6 +31950,67 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "laghouat-expedition-1708-1713",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Laghouat Expedition (1708–1713)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-10-02",
+      "id": "laghouat-rebellion-1727",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "article-is-redirect",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Laghouat Rebellion (1727)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -35142,6 +35739,39 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Operation Verano"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "oran-expedition-1707",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "span-from-title",
+          "summary-from-lead",
+          "filed-from-p361",
+          "interval-from-article"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Oran expedition (1707)"
     },
     {
       "authors": [
@@ -41852,6 +42482,70 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Nuremberg"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "siege-of-oran-1693",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Oran (1693)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "siege-of-oran-1700-1701",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Oran (1700-1701)"
     },
     {
       "authors": [
@@ -49740,6 +50434,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-al-kawiya",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-ap-bac",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -49894,6 +50594,24 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-djebel-amour",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-djidioua",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-djidioua",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "battle-of-domitz",
@@ -50202,6 +50920,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "battle-of-moulouya",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-mount-harriet",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -50239,6 +50963,12 @@
     },
     {
       "id": "battle-of-noain",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-oued-zadidja",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -50370,6 +51100,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-tadla",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-talandongo",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -50388,6 +51124,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-taza-1553",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-thann-1638",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -50401,6 +51143,12 @@
     },
     {
       "id": "battle-of-the-sesia-1524",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-tlemcen-1696",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -50616,7 +51364,25 @@
       "rule": "degree-zero"
     },
     {
+      "id": "campaign-of-tlemcen-1551",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "capture-of-amboina",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "capture-of-fez-1554",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "capture-of-fez-1576",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -50634,7 +51400,19 @@
       "rule": "summary-imported"
     },
     {
+      "id": "capture-of-oujda-1647",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "capture-of-sint-eustatius",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "capture-of-the-rif-1792",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -50698,6 +51476,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "conquest-of-koneswaram-temple",
@@ -50815,6 +51599,12 @@
     },
     {
       "id": "effacer-le-tableau",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "expedition-to-touat-1557",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -50982,6 +51772,24 @@
       "rule": "degree-zero"
     },
     {
+      "id": "laghouat-expedition-1708-1713",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "laghouat-rebellion-1727",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "laghouat-rebellion-1727",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
+    },
+    {
       "id": "las-palmas-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -51115,6 +51923,12 @@
     },
     {
       "id": "operation-keyhole",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "oran-expedition-1707",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -51505,6 +52319,18 @@
     },
     {
       "id": "siege-of-mitu",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-oran-1693",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-oran-1700-1701",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

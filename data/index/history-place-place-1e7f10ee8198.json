@@ -257,6 +257,15 @@
         }
       ]
     },
+    "amour-range": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "amsterdam": {
       "from": "git",
       "versions": [
@@ -455,6 +464,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "arzew": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -1003,7 +1021,7 @@
       ]
     },
     "bizerte": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1872,6 +1890,15 @@
         }
       ]
     },
+    "chelif-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "chemnitz": {
       "from": "git",
       "versions": [
@@ -2582,6 +2609,15 @@
         }
       ]
     },
+    "djidioua": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "dolni-vestonice": {
       "from": "git",
       "versions": [
@@ -3118,7 +3154,7 @@
       ]
     },
     "fez-morocco": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5199,6 +5235,15 @@
         }
       ]
     },
+    "laghouat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "lajes": {
       "from": "git",
       "versions": [
@@ -5837,6 +5882,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "maghreb": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -6497,6 +6551,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "moulouya-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -7224,6 +7287,15 @@
         }
       ]
     },
+    "oran": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "oriente-province": {
       "from": "git",
       "versions": [
@@ -7285,6 +7357,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "oujda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -9889,6 +9970,15 @@
         }
       ]
     },
+    "tadla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "tagarangabotte": {
       "from": "git",
       "versions": [
@@ -9947,7 +10037,7 @@
       ]
     },
     "tangier": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -9979,6 +10069,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "taza": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -10250,6 +10349,15 @@
             "review"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "tlemcen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -10851,6 +10959,15 @@
         {
           "first": true,
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "wadi-al-laban": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

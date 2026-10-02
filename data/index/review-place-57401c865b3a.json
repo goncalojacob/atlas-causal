@@ -674,6 +674,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "amour-range",
+      "kind": "place",
+      "names": [
+        "Amour Range"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -1092,6 +1119,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "arzew",
+      "kind": "place",
+      "names": [
+        "Arzew"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -3998,6 +4052,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-02",
+      "degree": 2,
+      "id": "chelif-river",
+      "kind": "place",
+      "names": [
+        "Chelif River",
+        "Rio Chelife"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "chemnitz",
@@ -5486,6 +5568,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "djidioua",
+      "kind": "place",
+      "names": [
+        "Djidioua"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "dolni-vestonice",
@@ -6510,7 +6619,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 3,
       "id": "fez-morocco",
       "kind": "place",
       "names": [
@@ -10937,6 +11046,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 2,
+      "id": "laghouat",
+      "kind": "place",
+      "names": [
+        "Laghouat"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -12045,6 +12181,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "maghreb",
+      "kind": "place",
+      "names": [
+        "Maghreb",
+        "Magrebe"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -13474,6 +13638,35 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "moulouya-river",
+      "kind": "place",
+      "names": [
+        "Moulouya River",
+        "Rio Moulouya",
+        "Rio Mulucha"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -14990,6 +15183,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "oran",
+      "kind": "place",
+      "names": [
+        "Oran",
+        "Orã"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "oriente-province",
@@ -15116,6 +15337,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "oujda",
+      "kind": "place",
+      "names": [
+        "Oujda",
+        "Ujda"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -20440,6 +20689,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "tadla",
+      "kind": "place",
+      "names": [
+        "Tadla"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "tagarangabotte",
@@ -20675,6 +20951,33 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q2409264, Battle of Tashihchiao, read on 2026-09-24, and the article at revision 1370590643 puts the town \"about 25 kilometres (16 mi) southwest of the city of Haicheng\", which this coordinate is. The item names no location A9's second step could read. The record carries no `wikidata` key: a place claiming to be the battle would be a worse record than one claiming nothing.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "taza",
+      "kind": "place",
+      "names": [
+        "Taza"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -21261,6 +21564,34 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 3,
+      "id": "tlemcen",
+      "kind": "place",
+      "names": [
+        "Tlemcen",
+        "Tremecém"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -22484,6 +22815,33 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "wadi-al-laban",
+      "kind": "place",
+      "names": [
+        "Wadi al-Laban"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "place-written-by-hand"
+        ],
+        "note": "Written by hand because the import had the point and no name it could read: Q4117011 carries its own P625 and names no settlement, no country with a point and no class the places table knows, so the event was left placeless with the africa lane. The name is the one its own article gives — “Battle of Wadi al-Laban”, revision 1370276629: “It took place north of Fes, at Wadi al-Laban, an affluent of the Sebou River, one day north of Fes.” The point is the event item's own and the lane is derived.",
         "status": "draft"
       },
       "revised": null,
