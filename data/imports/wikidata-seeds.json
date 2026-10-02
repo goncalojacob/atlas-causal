@@ -6226,6 +6226,12 @@
       "precision": "region",
       "label": "official subdivision of Brazil into subregions",
       "note": "Added in M42b batch 77 to place `dutch-invasions-of-brazil`, whose P276 is Q1136194 *Northeast Region* and whose only class this is. The precision follows Q82794 *region*, Q36784 *region of France* and Q743074 *region of Mali*, all `region` here."
+    },
+    "Q4688003": {
+      "kind": "event",
+      "category": "war",
+      "label": "aerial bombing of a city",
+      "note": "Added in M42 batch 90's fire, read from the item itself (Q4688003, “bombardment of a city from aircraft”), because Q488, the atomic bombings of Hiroshima and Nagasaki, carries it and the table did not. `war` of the twelve: it is a military action inside a war, which is what Q178561, battle, already takes. The item's other class, Q29431432 “dyad” (“concrete group of 2 specific members”), was refused on the precedent of Q19833559, preparation, in batch 33's note: it says how many things the item groups and not what kind of event it is, and the table is for classes that say what a record is."
     }
   },
   "reconcile": true

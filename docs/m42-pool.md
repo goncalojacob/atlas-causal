@@ -24165,3 +24165,150 @@ since M63: **1,941 pure tests, 1,941 passing, 0 failing, 0 skipped**, and
 `node tools/validate.mjs --index`: **0 errors, 637 warnings**, the same 637 the
 fire found before it wrote anything. The GitHub run on this head is recorded
 below.
+
+## Batch 92 — the surrender of Japan, the atomic bombings, and the atlas's clearest disputed edge, 2 October
+
+*The same 08:07Z fire, after batch 91. Asia, not Africa, and the reason is in
+batch 91's note: both African umbrellas' windows have now been read out, and
+every remaining African gap of weight falls outside both of them, which A6
+refuses. A10's order of need says Africa first and Africa is 250 against Asia's
+255 — five apart — so this is a departure from A10's letter, made because the
+lane that trails has nothing importable left at +0 main until the owner decides
+the Cold War umbrella. Said here rather than quietly.*
+
+**The same question, asked of `world-war-ii`.** Which events inside its
+1939-to-1945 span does the atlas not hold, in the Asia lane, and which of them
+argue about something held? Measured by name: `potsdam-declaration`,
+`second-sino-japanese-war`, `chinese-civil-war`, `six-day-war` and the rest are
+held; **the Pacific War, the attack on Pearl Harbor, the surrender of Japan, the
+atomic bombings of Hiroshima and Nagasaki, the Soviet invasion of Manchuria, the
+Nanjing Massacre, the Long March, the Battle of Stalingrad, Okinawa, Singapore,
+the Marco Polo Bridge Incident, the Mukden Incident, the First Intifada, the
+Oslo Accords and the 1948 Arab–Israeli War are not.** Two of those are **the
+highest-sitelink gaps in this whole atlas** — `Q488` the atomic bombings at
+**102 sitelinks** and `Q6540361` the surrender at **55** — and `potsdam-
+declaration`, which both articles argue about, is held and is in the largest
+component. So:
+
+- **`surrender-of-japan`** (Q6540361, 55 sitelinks), filed from the item's own
+  `P361`, `Q362` = `world-war-ii`. Category `treaty`, from `Q217901`
+  capitulation. Span: the item's only date is `P585` 2 September 1945 and the
+  lead states *"announced by Emperor Hirohito on 15 August and formally signed
+  on 2 September 1945"*, so A15(4) takes the range.
+- **`atomic-bombings-of-hiroshima-and-nagasaki`** (Q488, 102 sitelinks), filed
+  by span and subject under `world-war-ii` — its own `P361` is `Q590545`, air
+  raids on Japan, which is not a record here. Span from the item's two `P585`
+  values, 6 and 9 August 1945, which the lead states as *"On 6 and 9 August
+  1945"*. Place `hiroshima` (Q34664), new, from the first of the item's two
+  `P276` values; an event carries one place, so Nagasaki is in the title and the
+  summary and nowhere else, which the record's note says.
+
+**A class row, and one refused.** `Q488`'s two `P31` values were both missing
+from `data/imports/wikidata-seeds.json`. **`Q4688003`, "aerial bombing of a
+city"**, is added at `kind: event, category: war` — a military action inside a
+war, which is what `Q178561` battle already takes. **`Q29431432`, "dyad"
+("concrete group of 2 specific members")**, is refused on the precedent of
+batch 33's refusal of `Q19833559` preparation: it says how many things the item
+groups, not what kind of event it is, and the table is for classes that say what
+a record is.
+
+**Deviation 1548 — the own-`P625` reuse step cannot see a place that is sitting
+on the point.** A9's chain reads the item's own `P625` first and that step *may
+only reuse*, never write, which `eventPlace`'s own comment explains at length.
+But the reuse it attempts is `reusablePlace({ names: namesFor(candidate), point
+})` — a **folded name match plus a point within a degree, both** — and
+`namesFor` on an *event* item returns the event's names. "Surrender of Japan"
+folds to no place's name, ever. So for `Q6540361`, whose own `P625` is
+`(139.76, 35.3547)` and which this atlas already holds a place for **0.06° away**
+(`tokyo-bay`, Q141017, `(139.78333, 35.41667)`), the chain walks past it, falls
+through to `P17` = `Q188712` the Empire of Japan — which **passes** A15(6)'s gate
+honestly (inception 1868, dissolution 1947, one country, no chain point to
+measure against) — and the record would be placed on a whole empire's centroid
+for a ceremony held on a battleship in Tokyo Bay. **This batch wrote `tokyo-bay`
+instead**, which is the judgement the tool's own comment says stays a person's
+(*"what the tool does is report it … a person writes that place"*). **The fix is
+one clause**: at the own-`P625` step, a reuse on the **point alone** where
+exactly one held place is within some small radius, since the name match can
+never fire there by construction. That is a code change in the import tool and
+therefore a line for the owner, not a records lane's; `report.ownPoint` is where
+the cases are already being listed.
+
+### The two edges, and the one the chronology refused
+
+**`potsdam-declaration--surrender-of-japan--precondition-of`**, `probable`,
+cited at "Surrender of Japan" revision 1372687290: the lead has the Allies
+calling for unconditional surrender *"in the Potsdam Declaration on 26 July
+1945—the alternative being 'prompt and utter destruction'"*, and four paragraphs
+later *"Emperor Hirohito subsequently ordered the Supreme Council for the
+Direction of the War to accept the terms the Allies had set down in the Potsdam
+Declaration."* `precondition-of` and not `caused`, because what the declaration
+supplied was the terms there was a surrender *on*, and the article's own
+§ Japanese reaction has the Japanese government rejecting it on 28 July.
+
+**`atomic-bombings-of-hiroshima-and-nagasaki--surrender-of-japan--caused`, and
+it is `disputed`.** This is the first edge either lane has written where the
+cited articles say in so many words that the link is the thing historians argue
+about, so it is the one the project's own hardest rule is for — *"Presenting a
+disputed link as fact is the worst mistake this project can make… When
+historians disagree, mark it `disputed` and say who disagrees in `dispute`
+rather than picking a side."* The citation for the confidence is the surrender
+article's own lead: *"The role of the atomic bombings in Japan's unconditional
+surrender, and the ethics of the two attacks, is debated."* The far article is
+careful in exactly the same way — its lead writes only sequence, *"Japan
+announced its surrender to the Allies on 15 August, six days after the bombing
+of Nagasaki and the Soviet Union's declaration of war against Japan and invasion
+of Manchuria"* — and names the Soviet entry in the same breath.
+
+`dispute.text` carries who disagrees, in the articles' own words (*"Supporters
+argue that the atomic bombings were necessary to bring an end to the war… 
+Conversely, critics argue that the bombings were unnecessary for the war's
+end"*) and the evidence both readings are built on, which the bombings article's
+§ Surrender of Japan and subsequent occupation sets out from the emperor's own
+two statements: the 14 August broadcast *"specifically mentions the use of
+nuclear ordnance devices"*, while in the Rescript to the Soldiers and Sailors of
+17 August *"Hirohito did not refer to the atomic bombs… and instead described
+the Soviet declaration of war as 'endangering the very foundation of the
+Empire's existence'."* **The competing cause the dispute names — the Soviet
+entry and the invasion of Manchuria — is `Q6165880`, which this atlas does not
+hold**, and that is the single most valuable record the next Asia batch could
+write: it would turn a two-sided dispute into a three-record argument a reader
+can walk.
+
+**Refused: `potsdam-declaration → atomic-bombings-of-hiroshima-and-nagasaki`.**
+Tempting and wrong. The bombings article's own § Potsdam Declaration gives the
+declaration as an ultimatum, the Japanese *mokusatsu* rejection of 28 July, and
+*"The atomic bomb was not mentioned in the communiqué"* — and its lead dates
+the bombing orders to **25 July**, the day *before* the declaration. An edge
+from the declaration to the bombings would reverse the article's own chronology.
+Not written, and counted here.
+
+### Counts after batch 92
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1,457 | **1,459** |
+| **main events** | **234** | **234** |
+| active edges | 1,228 | **1,230** |
+| **largest component** | **790** | **792** |
+| components | 440 | 440 |
+| active events with no edge | 341 | **341** |
+| edges crossing an umbrella (A15(11)) | 618 | **618** |
+
+Both new records are children of `world-war-ii` and so is `potsdam-declaration`,
+so neither edge crosses an umbrella; the component moved because
+`potsdam-declaration` was already in it. **Per lane: Asia 257 active / 57 main**,
+Africa 250/35, Americas 396/56, Europe 556/86.
+
+**A15(1), candidates left unconnected: 14** — the Pacific War, Pearl Harbor
+(Oceania's by its point, and the batch-89 stand already handed it over), the
+Soviet invasion of Manchuria, the Nanjing Massacre, the Long March, Stalingrad,
+Okinawa, Singapore, the Marco Polo Bridge Incident, the Mukden Incident, the
+First Intifada, the Oslo Accords, the 1948 Arab–Israeli War, and
+`Q4127978`/`Q617278` from batch 90's African list. Not one of them was read for
+an edge in this batch; they are named so the next fire does not re-measure them.
+**A15(2):** four leads cached (`Q488` and `Q6540361`, each in `en` and `pt`),
+two rows added to the title table; `cache-evidence.mjs` reports **3,050
+citations, 2,972 on disk at the revision cited, 78 unholdable beside a
+more-cited revision of the same item, 0 that should be on disk and are not.**
+**Validator: 0 errors, 637 warnings.**
+
