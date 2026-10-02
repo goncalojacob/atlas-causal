@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "iraqi-conflict",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q47015896",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Iraqi conflict"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q47015896"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Iraqi conflict\", revision 1377860410"
+    }
+  ],
+  "title": "Iraqi conflict",
+  "summary": "The English Wikipedia article \"Iraqi conflict\", at revision 1377860410, opens: \"The Iraqi conflict is a series of violent events that began with the 2003 American-led invasion of Iraq and deposition of Iraqi dictator Saddam Hussein, followed by a series of conflicts including the protracted Iraq War (2003–2011), the Iraqi insurgency (2011–2013), the War in Iraq (2013–2017), and most recently, the small-scale Islamic State insurgency in 4 provinces located in Northern Iraq since 2017.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q47015896, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict in Iraq\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2003,
+    "end": 2017,
+    "date": "2003-03-20",
+    "endDate": "2017-12-09"
+  },
+  "place": "iraq-q796",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
