@@ -21,7 +21,8 @@
     "status": "draft",
     "flags": [
       "imported-facts",
-      "a9-place"
+      "a9-place",
+      "lane-written-by-hand"
     ]
   },
   "wikidata": "Q106428150",
@@ -40,7 +41,7 @@
     "precision": "city",
     "label": "Ceuta under Muslim rule"
   },
-  "region": null,
-  "regionNote": null,
+  "region": "africa",
+  "regionNote": "Lane written by this run, not derived: Ceuta is on the African side of the Strait of Gibraltar, 14 km from Spain, and at the 110m resolution of data/geo/regions.json the nearest lane polygon to this point is Iberia. The override says africa, which is the continent the city is on.",
   "summary": null
 }
