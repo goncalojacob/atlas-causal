@@ -1835,7 +1835,8 @@
     "Q109058273",
     "Q4871118",
     "Q125166578",
-    "Q16250240"
+    "Q16250240",
+    "Q130485022"
   ],
   "lanes": {
     "Q10303008": "americas",
@@ -6196,6 +6197,12 @@
       "precision": "point",
       "label": "rock formation",
       "note": "Added in M42b batch 75 to place a record this lane already holds. The class is read off the item that carries the located thing, never guessed, and the precision follows the row already in this table for the same kind of ground: Q839954 *archaeological site* is `point`; a named rock is one place on the ground with a coordinate of its own. Carried by Q7260173 *Pedras Negras de Pungo Andongo*, the location of `battle-of-pungo-andongo`, batch 74."
+    },
+    "Q378508": {
+      "kind": "place",
+      "precision": "city",
+      "label": "second-level administrative subdivision of Angola",
+      "note": "Added in M42b batch 76 to place `battle-of-talandongo`, whose P276 is Q1003771 *Cambambe* and whose only class this is. The precision follows the rows this table already has for the same kind of ground - Q2989398 *commune of Algeria*, Q41067667 *municipality of Tunisia* and Q2555896 *municipality of Colombia* are all `city`."
     }
   },
   "reconcile": true
