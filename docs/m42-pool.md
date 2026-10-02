@@ -25086,3 +25086,112 @@ took 1563 and nothing else.
 **10. Still open, unchanged, and still the owner's.** Everything in the
 batch-90-and-91 stand's §6 and in the batch-93-to-95 stand's §5, plus §2, §4,
 §5 and §6 above, and the `docs/m42-pool.md` §3 table still stopped at batch 17.
+
+## Batch 98 — Operation Torch and the Tunisian campaign, the first children of the umbrella this fire wrote, 2 October
+
+**The stand two sections up said take them in pairs, and this is the pair.** A14's
+standing rule — until the owner decides the 22 September C8, a batch writes no
+edge from a parent to its own child — means a child of `north-african-campaign`
+taken **alone** has no edge it is allowed to write. Taken two at a time, the
+articles state the sequence themselves. **Africa 253 → 255 and now trails Asia by
+four**, where five batches ago it trailed by nine.
+
+**Three records.** `operation-torch`, `Q194132`, 51 sitelinks, 8–16 November
+1942, place `french-protectorate-in-morocco`, category `war`.
+`tunisian-campaign`, `Q852365`, 35 sitelinks, 17 November 1942 to 13 May 1943,
+place **`french-protectorate-of-tunisia`**, which is the third record: `Q2017684`,
+39 sitelinks, `(10.150, 36.833)`, `region`. Both events are filed under **two**
+umbrellas; `docs/m62-umbrellas.md` argues it.
+
+| what the passes asked | what the items and the articles said |
+| --- | --- |
+| A9, the places | **Both reached A9's second step and neither needed the third.** Torch carries its own `P625` at `(-2.029, 35.085)` — the first step, which reuses and never writes, and no place here stands there — so the chain went on to `P276` `Q907234`, which this atlas already holds as `french-protectorate-in-morocco` at `region`. The Tunisian campaign carries its own `P625` at `(9, 34)`; `tunisia-q948` is **2.8° away and folds to no name the item gives**, which is deviation 1548's shape met a third time, so no reuse, and the chain went on to `P276` `Q2017684` and wrote the place. In both cases `P17` — `Q142` and `Q948` — was never reached, so A15(6)'s gate had nothing to refuse for the third batch running. |
+| the class table | **One class added: `Q164142`, protectorate, as a `place` at `region`.** It is `Q2017684`'s first `P31` and the table had never decided about it, so the chain would have written a place with no precision. The label and the gloss were read from the item itself over the network, as Q133156 (colony) was by the curation fire of 25 September, and `region` is that same precedent: ground larger than a settlement and not a state. **The check that this is the atlas's own answer and not a guess**: `french-protectorate-in-morocco`, already a place record here at `region`, carries the very same class. The item's other class, `Q3024240` historical country, reads as an **actor**, and taking it would have made a polity record out of the ground an event happened on. |
+| A15(4) and A7, the days | Torch's `P580`/`P582` and its first sentence agree exactly. **The Tunisian campaign's do not**: `P582` is 1943-05-09 and the first sentence says *"to 13 May 1943"*, so the end is **widened to the article's under A7**, at the revision cited, with `a7-widened` and `a15-days`. Four days, and the article is the record's own source for them. |
+| A12(5), the title | **`tunisian-campaign` is titled from the article, not the item.** The item's label is *"Tunisia campaign"*; the English sitelink and the article are *"Tunisian campaign"*. The label is kept in `names`, with *"Battle of Tunisia"* from the lead. Flag `title-from-article`. |
+| A15(12), the categories | Both `war`. Torch's `P31` is `Q348120` and `Q645883`; the table has the second at `war` and **not** the first — `Q348120` is *amphibious warfare*, which says **how** the operation was fought and not what kind of thing it is, the same reading batch 92 gave `Q29431432` (dyad) and batch 33 gave `Q19833559` (preparation). It is left out of the table on purpose. The campaign's `P31` is `Q831663`, military campaign, `war` since M42 batch 18. |
+| A11(a), the actors | **Torch's item carries no `P710` at all** and the campaign's carries none this atlas maps, so both lists are the leads': the United States and the United Kingdom on Torch, those two and `nazi-germany` on the campaign, all `belligerent`. Vichy France, which the Torch lead names as the defender, is **not** an actor this atlas holds, and the Kingdom of Italy is refused for the reason batch 96 gives. |
+| A15(2), the cache | `Q194132` at revision **1373652877** and `Q852365` at **1375742094**, both on disk, both in the title table. `node tools/cache-evidence.mjs`: **0 revisions that should be on disk and are not**, over all 3,076 citations. |
+| A15(8), the redirect test | Both exports returned the item's own English sitelink title. No redirects. |
+
+**One edge.** `operation-torch--tunisian-campaign--caused`, `probable`, on the
+campaign's own lead: *"Despite initial successes by the German and Italian forces
+brought from the mainland and which had withdrawn into and occupied Tunisia,
+after their defeat in the Western Desert and the success of Operation Torch,
+massive supply interdiction efforts and Allied assaults from east and west led to
+the decisive defeat of the Axis."* § Operation Torch says what the landings were
+for: *"an advance would be made to Tunis"*. `verdictFor`: `write: true` — a cause
+stated, and the only other event named in it, the Western Desert campaign
+(`Q625798`), is **not** a record this atlas holds, which is why the quote is not
+reattributed and why the explanation asks for a second edge from that record once
+somebody writes it.
+
+**Two edges refused, and neither is the shape this fire has been complaining
+about.**
+
+1. **`north-african-campaign --> operation-torch` and
+   `north-african-campaign --> tunisian-campaign`, both refused by A14's C8
+   rule**, which forbids an edge from a parent to its own child while the owner
+   has not decided. Both are the obvious edge each record has; both would have
+   joined these two to batch 96's record and so to `allied-invasion-of-sicily`.
+   **This is the first time in this lane that C8 has cost a batch a connection it
+   could otherwise have made**, and it is worth the owner knowing: the vein this
+   fire opened is an umbrella and its children, which is exactly the shape C8 is
+   about.
+2. **`tunisian-campaign --> allied-invasion-of-sicily`, refused**: the campaign's
+   article ends with the Axis surrender in Tunisia and names no invasion of
+   Sicily at all; batch 96's edge already carries that link from the campaign
+   above.
+
+### The counts
+
+| | before 98 | after 98 |
+| --- | --- | --- |
+| active events | 1,464 | **1,466** |
+| **main events** | **234** | **234** |
+| active edges | 1,236 | **1,237** |
+| largest component | 795 | **795** |
+| components | 440 | **441** |
+| active events with no edge | 340 | **340** |
+| **edges crossing an umbrella (A15(11))** | **619** | **619** |
+| place records | 798 | **799** |
+
+Per lane (A10): **Africa 253/35 → 255/35**, Asia 259/57, Americas 396/56, Europe
+556/86. `node tools/validate.mjs`: **0 errors, 637 warnings**.
+
+**The components count rose by one and that is the honest reading**: Torch and
+the campaign are a pair of their own, because the edge that would have joined
+them to batch 96's record is the one C8 forbids. Over the whole fire the atlas
+gained **two new islands** — `north-african-campaign`/`allied-invasion-of-sicily`/
+`casablanca-conference`, and this pair — where one connected cluster of five was
+available and refused by two rules it is nobody's place here to change.
+
+## Where the run stands after batch 98, for the fire that picks it up
+
+**Read the stand after 96 and 97 above: all ten of its sections still hold.**
+This batch is its §1 and §2 carried out, and it adds three things.
+
+**A. The vein's remaining rows, measured and resolved.** Of the five candidates
+§1 named, **two are now records** (`operation-torch`, `tunisian-campaign`) and
+three are not: the **Second Battle of El Alamein** `Q153376`, the **Western
+Desert campaign** `Q625798` (which is `north-african-campaign`'s own `P527`), and
+the **East African campaign** `Q1052120`. All three are africa, all three file
+inside `north-african-campaign` or `world-war-ii` at **+0 main**, and none is
+held on `origin/m42b` either. **El Alamein and the Western Desert campaign are a
+pair** — the campaign's lead names the battle as the thing that ended it — so a
+batch taking both has an edge to write, and the Western Desert record is also the
+second cause named in this batch's edge, which the explanation asks for.
+
+**B. C8 now has a price in this lane, and the batch note states it.** Two
+refusals in this batch alone, both parent-to-child inside the umbrella this fire
+wrote, and both would have joined five records into one component instead of two
+islands of three and two. Taken with §4 of the stand above — four refusals for a
+missing sixth edge type — **the two undecided questions have now cost this fire
+six edges between them**, and three of those six would have reached the 795.
+That is the number the owner asked for when they asked for chains throughout the
+globe and time, so it is put here plainly rather than left in the arithmetic.
+
+**C. Deviation numbers: this fire took 1563 and nothing else.** `origin/m42b`
+stood at 1562 both times it was read, the second time after it had merged
+`origin/m42` and pushed. Take the next above 1563, and read that branch again
+before you take one.

@@ -697,3 +697,12 @@ neither reached the resting picture.
 | `casablanca-conference` | `world-war-ii` | By span and subject; the item carries no `P361`. 14 to 24 January 1943 is inside the umbrella's 1939-09-01 to 1945-09-02. The subject needs no reading at all: the item's `P2348` — the time period it belongs to — **is `Q362`, `world-war-ii`'s own item**, which is the closest thing to a stated filing any candidate in this lane has brought, and the first sentence says the conference was held *"to plan the Allied European strategy for the next phase of World War II"*. **Its lane is africa**, from the place record `casablanca` this batch wrote: the fourth African filing in three batches and the third inside this one umbrella, which is what §1b of the batch-95 stand predicted would happen once the lane stopped waiting on an umbrella of its own. |
 
 **Main is 234 before and 234 after.**
+
+## Batch 98 — the first two records filed inside an umbrella this lane wrote itself
+
+| record | parent | why |
+| --- | --- | --- |
+| `operation-torch` | `world-war-ii`, `north-african-campaign` | **Two parents, which is A8 read literally: *every* umbrella whose span and subject fit, not the first.** The item's `P361` is `Q362`, `world-war-ii`'s own item, so the filing from the property is that one; and 8–16 November 1942 is also inside `north-african-campaign`'s 1940-06-10 to 1943-05-16, whose own lead names Torch as one of the three campaigns it included — *"in Morocco and Algeria (Operation Torch)"*. The two are nested, and that is not a reason to drop one: the tighter umbrella is what a reader following the campaign wants, and the wider one is what the item states. |
+| `tunisian-campaign` | `world-war-ii`, `north-african-campaign` | The same two, and this time the tighter one comes from the property: **`P361` is `Q218678`, which batch 96 of this very fire wrote**. It is the first time either records lane has filed a record from a `P361` naming an umbrella the same fire created. 17 November 1942 to 13 May 1943 is inside both spans. |
+
+**Main is 234 before and 234 after**, and both records are filed twice over.

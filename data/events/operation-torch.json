@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "operation-torch",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361",
+      "a15-category-from-p31"
+    ],
+    "note": "A9: the own-`P625` step reuses only and no place here stands at (-2.029, 35.085); `P276` is `Q907234`, held as `french-protectorate-in-morocco`, so `P17` is never reached. A15(4): `P580`/`P582` are 1942-11-08 and 1942-11-16 and the first sentence agrees. A6, A8: `P361` is `Q362` and `north-african-campaign` fits too, so both are written. A15(12): `P31` `Q645883` is `war`; `Q348120`, amphibious warfare, says how it was fought. No `P710`."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q194132",
+  "wikipedia": {
+    "en": "Operation Torch"
+  },
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q194132"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Torch\", revision 1373652877"
+    }
+  ],
+  "title": "Operation Torch",
+  "names": [
+    "Operation Gymnast"
+  ],
+  "summary": "The English Wikipedia article \"Operation Torch\", at revision 1373652877, opens: \"Operation Torch (8–16 November 1942) was an Allied invasion of French North Africa during World War II. Torch was a compromise operation that met the British objective of securing victory in North Africa while allowing American armed forces the opportunity to begin their fight against Nazi Germany and Fascist Italy on a limited scale.\" That is the article’s account and not yet this atlas’s; nobody has read this record, and review.html is where somebody does. Wikidata item Q194132, whose P580 and P582 are 8 and 16 November 1942, the range the first sentence states.",
+  "when": {
+    "start": 1942,
+    "end": 1942,
+    "date": "1942-11-08",
+    "endDate": "1942-11-16"
+  },
+  "place": "french-protectorate-in-morocco",
+  "region": null,
+  "regionNote": null,
+  "parent": [
+    "world-war-ii",
+    "north-african-campaign"
+  ],
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    }
+  ]
+}
