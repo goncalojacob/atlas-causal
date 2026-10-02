@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-kitombo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871456",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Kitombo",
+    "pt": "Batalha de Quitombo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871456"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kitombo\", revision 1370267185"
+    }
+  ],
+  "title": "Battle of Kitombo",
+  "summary": "The English Wikipedia article \"Battle of Kitombo\", at revision 1370267185, opens: \"The Battle of Kitombo was a military engagement between forces of the BaKongo state of Soyo, formerly a province of the Kingdom of Kongo, and the Portuguese colony of Angola on 18 October 1670. Earlier in the year a Portuguese expeditionary force had invaded Soyo with the intention of ending its independent existence. The Soyo were supported by the Kingdom of Ngoyo, which provided men and equipment, and by the Dutch, who provided guns, light cannons and ammunition. The combined Soyo-Ngoyo force was led by Estêvão Da Silva, and the Portuguese by João Soares de Almeida. Both commanders were killed in the battle, which resulted in a decisive victory for Soyo. Few, if any, of the invaders escaped death or capture.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871456, imported by tools/import/wikidata.mjs. The item's own description reads \"1670 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1670,
+    "end": 1670,
+    "date": "1670-10-18"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "kongo-civil-war"
+}
