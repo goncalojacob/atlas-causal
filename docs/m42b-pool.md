@@ -21711,6 +21711,55 @@ three greps must run over `origin/m42`'s `docs/m42-pool.md` and `STATUS.md` as w
 branch's, because that is where the other lane's numbers live and most of them never reach the
 register.** The first free number after this batch is **1561**.
 
+### Deviation 1561 — adding records in the sixteenth century changed which node a twentieth-century browser test picks, and that node exposes a zoom fault
+
+`tests/graph-labels-browser.test.mjs` → *"a node with room round it is named in full, with nothing
+left off"* **passes at this fire's pre-batch head and fails at its post-batch head, in this
+sandbox**, and the branch's own check is **green on the same tree** (run 2432: 313 browser tests,
+313 passed, 0 skipped, on 4 cores and 15.6 GB). Both halves of that are worth writing down,
+because the honest answer is neither "load" nor "my records broke the atlas".
+
+**What the test does.** At `?view=graph&from=1900&to=1999` it finds the mark on screen whose
+`<title>` is longest, opens that event as a lens, zooms the wheel on to it until `k >= 6`, and
+waits for its whole name to be drawn. Nothing in it pins a count or a character, by design.
+
+**What changed.** A browser probe of the same path, run at both heads:
+
+| | pre-batch head `96915034` | post-batch head |
+| --- | --- | --- |
+| the mark it picks | `hague-convention-…-armed-conflict`, **87 characters** | `treaty-on-the-final-settlement-with-respect-to-germany`, **54** |
+| the node's x before the zoom | 842 | 804 |
+| `k` reached | 7.05 | 6.22 |
+| the node's x after the zoom | **832** — still under the pointer | **1562** — off the right edge of a 1280-wide window |
+| labels drawn | the 87-character name, in full | **none** |
+
+So the test did not start failing because a label got cut. It started failing because **a
+different node is now the longest one on screen**, and that node leaves the viewport when the
+wheel zooms on to it.
+
+**Why a different node.** The two batches added 24 active events, all of them between 1538 and
+1819, and **none** of them inside the window the test drives. What they changed is the index: a
+record in `data/index/` is a positional row over the file's own id table (`src/spine.js`), so
+inserting `aden-revolt`, `attack-on-jeddah-1541`, `barbary-portuguese-conflicts` and the rest
+**shifts the index of every id that sorts after them**. Both `graph-view/layout.js`'s barycentre
+pass and `map/labels.js`'s `placeLabels` break ties by id, so a picture of the twentieth century
+is re-arranged, within its ties, by records in the sixteenth. The Hague Convention's mark moved
+far enough to leave the drawn rectangle, and the next-longest title on screen won.
+
+**And the node it now picks shows a real fault.** The wheel zoom is supposed to keep the point
+under the pointer where it is; `graph-view/stretch.js` makes what the reader sees `k * s` across
+and `k` down, and at `k = 6.22` this node travels 758 px to the right of the pointer it was
+zoomed on. The Hague node, elsewhere in the picture, does not. **This lane does not fix it**:
+the brief forbids a display change, and the owner should see the measurement before anyone
+touches the anchor arithmetic. It is filed here, with the two probes that produced it, as the
+first thing a display milestone should read.
+
+**What a records fire should take from it.** A browser test that selects its subject from the
+corpus is sensitive to records in *any* century, not only the ones it draws, because the id order
+is global. That is not a reason to pin the subject — the test's own comment explains why it
+refuses to — but it is a reason for a records batch to run the browser suite and read a failure
+in that suite as a fact about the picture rather than as load.
+
 ### The numbers after batch 85
 
 | | before 84 | after 84 | after 85 |
@@ -21822,10 +21871,39 @@ and nothing of Europe before 1900 was written.
    *Spanish–Algerian conflicts*, and batch 82's remaining 36 Mediterranean candidates.
    **Newly open**: `Q132175198` and `Q135153487`, the two Barbary children A15(1) refuses for
    deriving the europe lane — they become importable the day asia reaches 303.
-9. **Deviation numbers: 1560 is the highest taken; 1561 is the first free.** This fire used
+9. **Two old faults bit this fire and both are already written down, which is the point.**
+   **Deviation 1538's warning paid for itself**: `node tools/validate.mjs --index | tail -3` in a
+   `&&` chain exits 0 whatever the validator says, and this fire ran it that way three times and
+   read "0 errors" three times from a run that had **3**. Read with its own exit status, rule 16
+   was failing on `manifest.json` and two `history-edge-1500-1599` shards — which is
+   **deviation 1264's order**: the batch-85 index was built before the commit carrying the Jarte
+   edge existed, so the history shard that edge belongs in was written from a history that did
+   not yet hold it. The same fault is in this fire's merge commit, where the index was rebuilt to
+   check the merge and committed with it. Both were fixed by one rebuild-and-commit-alone, and
+   `validate --index` exits **0** at this head. **The next fire must run the validator as its own
+   command and read `$?`** — never into a pipe, and never as the last link of a `&&` chain.
+10. **`origin/m42` is handing Europe-lane work to this lane and this lane cannot take it.** Its
+   batch 94 note says Yalta *"derives Europe and is handed to M42b in the stand"* and its
+   refusal names *"Operation Overlord, which is Europe's and so M42b's"*. Both are 20th-century
+   Europe, which **A15(1) does not pause** — the pause is on Europe *before 1900* — so these are
+   takeable, and they are the first Europe-lane work this lane has been offered that the pause
+   does not touch. Worth a batch of its own once asia is clear, and worth saying in a reply on
+   `origin/m42`'s own pool file if the lanes ever exchange notes.
+
+11. **The browser suite is red here and green on the runner, and deviation 1561 says why.** One
+   test of 313 fails in this sandbox — `tests/graph-labels-browser.test.mjs` → *"a node with room
+   round it is named in full"* — and it fails **alone** as well as in the full pass, so it is not
+   deviation 1383's timing fault. It passes at this fire's pre-batch head. The cause is the id
+   order of `data/index/`, which is global, and the node it now lands on leaves the viewport when
+   the wheel zooms on to it. **The next fire should expect this test to keep failing locally
+   until a display milestone fixes the anchor arithmetic**, and should check the runner rather
+   than this sandbox for the suite's verdict.
+12. **Deviation numbers: 1561 is the highest taken; 1562 is the first free.** This fire used
    **1558** (an item whose locations are two oceans and a continent takes its lane from an
-   ocean), **1559** (the sweep reads a See-also list as a sentence) and **1560** (a two-sentence
-   window passes `statesACause` on a marker in a different clause). **Read deviation 1484 before
+   ocean), **1559** (the sweep reads a See-also list as a sentence), **1560** (a two-sentence
+   window passes `statesACause` on a marker in a different clause) and **1561** (records in one
+   century re-arrange another century's picture through the index's id order, and the node that
+   then wins a browser test exposes a zoom anchor fault). **Read deviation 1484 before
    taking the next one, and run its three greps over `origin/m42`'s `docs/m42-pool.md` and
    `STATUS.md` as well as this branch's files** — that is this fire's amendment to 1484, and it
    is what caught `origin/m42` already holding 1557.

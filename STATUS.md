@@ -25307,11 +25307,28 @@ window governed a different clause, one that would have needed two articles' hal
 Hill case), and one plain chronology. The lead sweep over all eighteen cached leads named **no**
 held event at all, which is the third fire in a row to measure that.
 
-**Three deviations and an amendment to a fourth.** **1558**: an item whose `P276` is two oceans
+**The check is green on this fire's head `419a9cbb`** — run 2432, conclusion success, with
+**1,941 pure tests and 313 browser tests, all passing and none skipped** on the runner. In this
+sandbox one browser test of the 313 is red, and **deviation 1561** is the measurement of why: the
+two batches added 24 records between 1538 and 1819, none of them inside the 1900–1999 window
+`tests/graph-labels-browser.test.mjs` drives, but a record in `data/index/` is a positional row
+over the file's own id table, so inserting ids re-breaks the ties that
+`graph-view/layout.js`'s barycentre pass and `map/labels.js`'s `placeLabels` resolve by id. A
+different node is therefore the longest one on screen, and **that node travels 758 px away from
+the pointer it is zoomed on** and leaves a 1280-wide viewport, where the node the test used to
+pick stays put. Two browser probes at the two heads are in `docs/m42b-pool.md`. This lane did not
+touch the anchor arithmetic — the brief forbids a display change, and the owner should see the
+measurement first.
+
+**Four deviations and an amendment to a fifth.** **1558**: an item whose `P276` is two oceans
 and a continent takes its lane from an ocean, because the import reads the first location a lane
 polygon reaches and the Mediterranean's centroid is inside the europe lane. **1559**: the
 chronology sweep reads an article's `See also` list as a sentence. **1560**: a two-sentence
 window passes `statesACause` on a causal marker that belongs to neither end of the proposed edge,
-which is a hole in A15(5) that no tool closes. And **deviation 1484's three greps must run over
+which is a hole in A15(5) that no tool closes. **1561**: the finding above. And **deviation 1484's three greps must run over
 `origin/m42`'s `docs/m42-pool.md` and `STATUS.md` as well as this branch's** — they do not, as
 written, and `origin/m42` already held 1557, which this fire had to renumber mid-flight.
+**Deviation 1538 also paid for itself**: `validate --index | tail -3` in a `&&` chain exits 0
+whatever the validator says, and this fire read "0 errors" three times from a run that had three
+— rule 16 on the manifest and two `history-edge-1500-1599` shards, which is deviation 1264's
+order. Fixed by one rebuild committed alone; `validate --index` exits 0 at this head.
