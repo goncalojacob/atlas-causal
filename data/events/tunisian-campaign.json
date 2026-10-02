@@ -25,7 +25,7 @@
       "a7-widened",
       "a15-days"
     ],
-    "note": "A9: the own-`P625` step reuses only and `tunisia-q948` is 2.8° away, so the chain went on to `P276` `Q2017684` and `french-protectorate-of-tunisia` was written from it; `P17` `Q948` is never reached. A7, A15(4): `P582` is 1943-05-09 and the first sentence says 13 May 1943, so the end is widened to the article's. A12(5): the title is the article's, not the item's “Tunisia campaign”. A6, A8: `P361` is `Q218678`, written in batch 96, and `world-war-ii` fits too."
+    "note": "A9: the own-`P625` step reuses only and `tunisia-q948` is 2.8° away, so the chain went on to `P276` `Q2017684` and `french-protectorate-of-tunisia` was written from it; `P17` `Q948` is never reached. A7, A15(4): `P582` is 1943-05-09 and the first sentence says 13 May 1943, so the end is widened to the article's. A12(5): the title is the article's, not the item's “Tunisia campaign”. A6, A8: `P361` is `Q218678`, batch 96's; `world-war-ii` is reachable through it, so not a second parent."
   },
   "origin": {
     "tool": "assistant"
@@ -63,10 +63,7 @@
   "place": "french-protectorate-of-tunisia",
   "region": null,
   "regionNote": null,
-  "parent": [
-    "world-war-ii",
-    "north-african-campaign"
-  ],
+  "parent": "north-african-campaign",
   "category": "war",
   "actors": [
     {

@@ -25100,8 +25100,10 @@ four**, where five batches ago it trailed by nine.
 1942, place `french-protectorate-in-morocco`, category `war`.
 `tunisian-campaign`, `Q852365`, 35 sitelinks, 17 November 1942 to 13 May 1943,
 place **`french-protectorate-of-tunisia`**, which is the third record: `Q2017684`,
-39 sitelinks, `(10.150, 36.833)`, `region`. Both events are filed under **two**
-umbrellas; `docs/m62-umbrellas.md` argues it.
+39 sitelinks, `(10.150, 36.833)`, `region`. Both events are filed under
+`north-african-campaign` alone, which is **not** what this batch wrote first;
+`docs/m62-umbrellas.md` and deviation 1564 below say what the check refused and
+why it was right.
 
 | what the passes asked | what the items and the articles said |
 | --- | --- |
@@ -25158,6 +25160,19 @@ about.**
 
 Per lane (A10): **Africa 253/35 → 255/35**, Asia 259/57, Americas 396/56, Europe
 556/86. `node tools/validate.mjs`: **0 errors, 637 warnings**.
+
+**Deviation 1564 — A8's “every umbrella that fits” means every umbrella that
+*adds* something, and the check says so.** This batch first wrote both records
+under `world-war-ii` **and** `north-african-campaign`, read the amendment
+literally, and pushed it; `tests/m42-filing.test.mjs` turned the branch check red
+on *“no parent of an event is reachable through another of its parents”*, and
+the test's own comment is the answer: *“A second parent earns its place by being
+somewhere the first does not reach.”* The owner's example makes the same point —
+Angola's independence is under the Portuguese third republic **and** African
+decolonisation, and neither contains the other. **The validator does not catch
+this and the test does**, which is worth knowing for a lane that validates before
+it pushes: `node tools/validate.mjs` was 0 errors on the parent list the check
+then refused. Both records now carry `north-african-campaign` alone.
 
 **The components count rose by one and that is the honest reading**: Torch and
 the campaign are a pair of their own, because the edge that would have joined
