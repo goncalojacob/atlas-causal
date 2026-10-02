@@ -25436,3 +25436,41 @@ Portuguese records that touch Japan, which are asia before 1800 and so this lane
 A15(1)'s europe pause is lifted in full.** Europe is **556**, exactly what the fire found it at.
 `validate --index` 0 errors at every commit and at this head; the suite is green after two
 one-space JSON files were re-dumped at two (deviations 1563 and 1564).
+
+**M42b batch 88 — South America and the Caribbean, and the first edge of the fire that grew the
+component, 2 October.** With asia and africa both past 303 the lane that trails inside this
+partition is the **americas**, 402 against europe's 556, and the brief asks for South and Central
+America before North America. So this batch was taken off batch 87's own measurement: of the 241
+unheld pre-1800 americas rows, **17 lie south of 25° north**, every one already a `P361` child of a
+held umbrella and every one checked against its span first. **11 events, 7 places, +0 main.**
+
+Five of the seventeen did not become records, and **four of them for a reason no stand had
+identified before (deviation 1565)**: `wikidata-state.json`'s `done` list is never cleared, so an
+item processed once is skipped for ever — including an item whose record was afterwards removed.
+`Q113627918` *West Indies Campaign (1793–1798)* is importable today by every rule the tool has and
+was imported once before A15(8) existed, with the wrong article's lead quoted inside it (deviation
+1347); the record went and the `done` entry stayed. `Q27230923`, `Q10369402` and `Q9172888` are the
+same shape, and all three have sat open in these stands for fires. **Adding them to the seeds does
+nothing, and whether a fire may clear a `done` entry for an item with no record is a question for
+the owner.** The fifth, `Q689128` *Haitian Revolution*, was excluded by hand: the atlas holds
+`haitian-revolution-1791-1804` with no `wikidata` id, so an import would have duplicated it and it
+is a `--reconcile` candidate instead.
+
+**One edge**: `capture-of-demerara-and-essequibo --precondition-of--> treaty-of-paris-1783`, from
+the near end's own lead at revision 1370608539 — *"The Treaty of Paris in 1783 restored these
+territories to the Dutch"* — which presupposes the capture without saying the expedition brought
+the treaty about. It crosses an umbrella, and **it is the only edge of this fire that grew the
+largest connected component, 795 → 796**. That is the difference between a batch of a new
+umbrella's children and a batch of a held umbrella's, in one number.
+
+Seven candidates were refused under **A14** and none under A15(5). A reverse scan — every held lead
+read for a mention of any of the eleven — returned nothing, which is A5's problem measured on a
+batch of minor naval actions: the war's article names them and nothing else does.
+
+**Active 1,599 → 1,610; main 239 → 239; americas 402 → 413**, its eighteenth century now 95 and
+the largest pre-1800 cell in the lane. Europe **556**, unmoved for the third fire running.
+`api.php` refused **11 of 16** single-article extract requests, at 66 and again at 150 seconds
+between calls, while WDQS and the import answered everything; both edges came out of leads the import had already
+cached. The stand also measures europe's own queue for the first time: `Q164432` *Eighty Years'
+War* has **145 unheld children inside its span**, one main for up to 145 europe-lane records, and
+it is the first of the three bridges earlier stands asked for by name.
