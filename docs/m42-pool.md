@@ -23401,3 +23401,262 @@ deviation 1258's chain and costs nothing.
   numbers here, even there, or a block each — and it is the owner's call, not a
   fire's. Until then, **read `origin/m42b`'s own numbers before taking one**,
   the way A11(b) already says to read its `data/events/` ids before a batch.
+
+## Batch 89 — the forward P361 vein, Africa's first in four fires, and the one row that connects
+
+*2 October, the 05:07Z fire, which found the network open. Deviation 1541. The
+batch-88 stand's open problem was that **Africa has no vein**: 71 inverse-vein
+rows clearing every gate and not one with an africa-lane child. This fire asked
+the question the other way round and the problem is gone — the vein is large
+and it is the **forward** walk, which is also the walk A15(1) binds.*
+
+**The vein, measured.** One SPARQL query over the `P361` children of the 1,314
+active events carrying an item, eleven chunked calls:
+
+| | |
+| --- | --- |
+| children of a held umbrella, `P17` in Africa, starting 1800 or later, ≥ 2 sitelinks, not held | **349** |
+| of those, ≥ 5 sitelinks | 148 |
+| ≥ 8 sitelinks | 68 |
+| by decade | 1800s 14, 1880s 1, 1890s 10, 1900s 22, 1910s 36, 1920s 10, 1930s 8, 1940s 13, 1950s 9, 1960s 30, 1970s 31, 1980s 5, 1990s 21, 2000s 31, 2010s 56, 2020s 52 |
+
+349 rows against Africa's 82-event shortfall is not a thin vein, and it is the
+first one this lane has had for Africa. **It is not an import list.** A15(1)
+binds the forward walk: only the children a batch can connect to what exists
+with an edge may be imported. So the vein's size is not the batch's size, and
+the rest of this section is what the gate costs.
+
+**The gate, measured over 88 of the 349.** Every candidate with ≥ 6 sitelinks
+whose `P17` is an African state (the Ottoman-Empire rows are refused below) had
+its **own** article read in full — lead and body, 88 articles — and screened for
+a sentence that carries a causal marker and names an event this atlas holds or
+another candidate in the vein.
+
+- **8 articles of 88 produced such a sentence.**
+- **7 of the 8 are refusals**, and every one of them is a class worth naming:
+  - *order and not cause* (A15(5)): `Q2510511` Abukir, "a prelude to the Battle
+    of Alexandria and resulted in British losses of 730 killed" — the result is
+    the casualties, not Alexandria.
+  - *the marker governs a context, not a link*: `Q2786767` Blaauwberg, "an
+    operation **during** the War of the Third Coalition … and resulted in the
+    capture of the Dutch Cape Colony" — the capture is not an event here.
+  - *the effect is not a record*: `Q689490` Sandfontein, "The outbreak of World
+    War I led to the transfer of the British Imperial garrison from South Africa
+    to France"; `Q659991` the African theatre, "new demands on the population
+    caused by the outbreak of World War I".
+  - *the sentence is about a third place entirely*: `Q696817` the Mediterranean
+    theatre naming the Greek Civil War; `Q51750785` Wiriyamu naming the
+    Portuguese Colonial War's own 1961 outbreak; `Q2909590` Bulmus 6 naming the
+    War of Attrition as the period it fell in.
+- **1 of the 8 connects**, and it is this batch.
+
+**The batch: one event, one place, two edges, one class.** `Q4572480`, the 1966
+anti-Igbo pogrom, Nigeria, May to October 1966. Its article states a cause at
+**both** ends, which is why it is the only row here and why it moves a component
+rather than only a lane count.
+
+- **Filed under `decolonisation-of-africa` and not under its own `P361`.** The
+  item's `P361` is `Q829875`, the Nigerian Civil War, which this atlas holds and
+  dates 1967-07-06 to 1970-01-15. The pogrom ran May to October 1966, *before*
+  its stated umbrella, so that filing would be rule 24's warning and the
+  umbrella does not in fact hold it. A8 asks for every umbrella that fits and
+  this is the first row in this lane where the item's own answer is not one of
+  them. The fit is the civil war's own parent, which covers 1954/56–1976.
+- **Place from `P276`, not from the country.** A9 as A12 corrects it: the item's
+  own `P625` is 10.533 N, 7.485 E and no place here stands at it, so the chain
+  moved to `P276` — `Q3509092` Northern Region, whose own `P625` is 2 km away.
+  Written as `northern-region-nigeria-q3509092`, `precision: region`, lane
+  **africa** derived from that point. The country step would have given
+  `nigeria-q1033` at 8 E, 9 N, which A15(6) would have *passed* — Nigeria's
+  inception is 1960, it names one country, and the chain it would be measured
+  against is placeless — and which would have put a pogrom in the north of the
+  country on a point 190 km from it. **A15(6) is a floor and not a preference:
+  the chain's order is what keeps the country last.**
+- **The class table gains one row.** `Q27535996`, Northern Region's `P31`,
+  label "region of Nigeria", Wikidata's own description "former administrative
+  territorial entity of Nigeria, between 1960 and 1967" — an area and not a
+  point, so `precision: region`. Data and not code, as the seeds file is for.
+- **No category.** Its `P31` are `Q177716`, `Q3199915` massacre, `Q21480300`
+  mass shooting and `Q170518`; the two the table holds carry no category, and
+  the twelve of `data/categories.json` have no kind for a pogrom. A15(12)'s
+  residue, not a new instance of it.
+- **No actors.** The item carries no `P710`.
+
+**The two edges, both `precondition-of`, both `probable` under rule 22.**
+
+1. `1966-nigerian-coup-d-etat --precondition-of-> 1966-anti-igbo-pogrom`, from
+   the pogrom's own § Background at revision 1376650990: *"The immediate
+   precursor to the massacres was the January 1966 Nigerian coup d'etat. Most of
+   the politicians and senior army officers killed in the coup d'etat were
+   northerners…"*, with *"The failure of the Ironsi regime to punish the army
+   mutineers responsible for the January 1966 coup further exacerbated the
+   situation"* beside it. Not `caused`: the proximate causes the article names
+   are the unitary decree of 24 May 1966 and that failure to prosecute, and this
+   atlas holds neither as an event.
+2. `1966-anti-igbo-pogrom --precondition-of-> nigerian-civil-war`, from the lead
+   and § Aftermath of the same revision: *"These events led to the secession of
+   the eastern Nigerian region and the declaration of Biafra, which ultimately
+   led to the Nigerian Civil War"*; *"It also was the precursor to Ojukwu's
+   declaration of Eastern Nigeria's secession from the federation as the Republic
+   of Biafra, and the resulting Nigerian Civil War (1967–1970)"*. Not `caused`,
+   for the reason the m42b batch-73 edge gives: the cause the article puts next
+   to the war is the secession, which this atlas does not hold. **A15(5)'s third
+   clause was checked and does not bite** — there is no Biafra record and no
+   secession record, so the edge is written from the pogrom and not re-pointed.
+
+### A15(5) refused at the point of writing, and what the refusals cost
+
+Seven of the eight sentences above, listed with their class. The two sentences
+the batch did write were read against the clause as well: neither opens with
+'After', 'Following', 'In the aftermath' or 'Shortly after', and both state a
+relation ("immediate precursor to", "led to", "the resulting") and not an order.
+**Candidates left unconnected, which A15(1) asks every forward batch to count:
+87 of the 88 read, and 261 of the 349 not yet read.**
+
+### A15(11) — and an A5 note the measurement makes awkward
+
+**Edges crossing an umbrella: 615, unchanged. Inside one: 606 → 608.** Both
+edges this batch wrote are *inside* `decolonisation-of-africa`, because all three
+of their ends are filed under it. A5's "edges to what exists" was met and
+A15(11)'s number did not move, which is the honest reading: a chain that runs
+inside one umbrella is a chain, and it is not reach.
+
+### The structured-causal vein, measured once and closed
+
+*This is the other half of the fire and it is a negative result, written down so
+that no later fire spends a hundred requests re-deriving it.*
+
+Wikidata carries four causal properties — `P828` has cause, `P1542` has effect,
+`P1478` immediate cause, `P1479` contributing factor. Asked of the 1,314 active
+events carrying an item, in chunks, over about fifty calls:
+
+| | |
+| --- | --- |
+| structured causal claims on held events | **359** |
+| with **both** ends held here | **68** |
+| of those, an edge already exists either way | **53** |
+| no edge either way | **15** |
+| of those 15, parent → its own child (barred by A14's C8 rule) | **6** |
+| left to read | **9** |
+| **edges written from the 9** | **0** |
+
+All nine were read against their own articles. Not one article states what the
+item's claim says, and **two of the nine are statements the atlas already holds
+as edges written from the right end** — the Sèvres article's *"which ignited the
+Turkish War of Independence"* is `treaty-of-sevres --caused-> turkish-war-of-independence`,
+already here; the Russian Civil War's *"sparked by the overthrowing of the
+Russian Provisional Government in the October Revolution"* is
+`october-revolution --caused-> russian-civil-war`, already here. The claim
+`world-war-i → russian-civil-war` and the claim
+`paris-peace-conference → treaty-of-sèvres` are not in either article at all.
+The Khalkhin Gol article does carry a real chain — *"eventually leading to the
+Japanese attack on Pearl Harbor"* — and it points at an event **this atlas does
+not hold**, which is a gap worth a line and not an edge.
+
+**And the same question asked of the 349 Africa candidates returns one claim in
+total, pointing at nothing held and nothing in the vein.** So the vein is empty
+for this lane in both directions. **Do not measure it again.** What it is good
+for is narrow and real: it is a cheap *pointer* at pairs whose articles are worth
+reading, and the reading is still the whole of the work.
+
+### A15(2) ran as the batch's last step
+
+`node tools/cache-evidence.mjs` before: **3,026 `wikipedia-en` citations on
+active records, 2,945 on disk at the revision cited, 78 a revision the cache
+cannot hold beside a more-cited one of the same item, 3 that should be on disk
+and were not** — all three this batch's own, and the article was not in the title
+table either. `--fill`: **1 title asked in 1 request, 1 lead written in 1
+request**, `Q4572480` "1966 anti-Igbo pogrom" at 1376650990. After: **2,948 on
+disk, 0 off disk.**
+
+### Counts after batch 89
+
+- active events **1,447** (was 1,446); **main 234 — level across the batch**,
+  which is what A6 asks; filed **1,213**.
+- per lane, active / main, on this fire's own derivation (the point of the
+  event's place, then the lane of a parent, then of a child — **deviation 1542**
+  below): Europe **607/70**, Americas **345/28**, Asia **223/57**, **Africa
+  221/32** (was 220/32). Africa is **82 short** of A10's 303 and Asia **80
+  short**.
+- active edges **1,223** (was 1,221): **+2, both written by this batch.**
+- components **434 — unchanged**; **largest connected component 786 —
+  unchanged.** The two edges joined the new event to the component the 1966 coup
+  and the Nigerian Civil War already formed, which is a component of **three**
+  and is not the largest. **A batch may write two good edges and move neither
+  number**, and that is worth saying plainly: the pogrom's neighbourhood is not
+  attached to the main graph at all.
+- active events with no edge at all **335 — unchanged** (the new event has two).
+- edges crossing an umbrella **615 — unchanged**; inside one **606 → 608**.
+- validator **0 errors, 631 warnings** — the same 631 as before the batch, so
+  nothing this batch wrote warns.
+
+## Where the run stands after batch 89, for the fire that picks it up
+
+**This stand supersedes the one after the 2 October curation fire.** Its first
+bullet — *"the network is the whole question for the next fire"* — is answered:
+**the network is open.** Wikidata's `api.php`, Wikipedia's `api.php` and
+`query.wikidata.org` all answer, and nothing in the repository changed between
+that fire and this one (deviation 1541). A fire that finds a refusal should
+record it and move to disk work, and a fire that finds the network should spend
+it on reading articles, which is the only thing that writes an edge.
+
+**What is open, in the order a fire should weigh it:**
+
+- **Africa has a vein now and it is the forward `P361` walk: 349 rows, measured
+  above, 261 of them not yet read.** That is the batch-88 stand's open problem
+  closed. Take batches from it under A15(1) and expect the yield this fire got:
+  **1 connectable row in 88 articles read.** That ratio is the thing to improve,
+  not the vein.
+- **The yield is an article-reading problem and not a query problem.** This fire
+  screened with a regex over causal markers and held titles; 8 of 88 articles
+  tripped it and 7 of the 8 were refusals a person sees at a glance. The screen
+  is cheap and it is also what threw away whatever it could not name: a held
+  event the article calls by a different name is invisible to it. **The next
+  improvement is to screen on the article's own wikilinks** — an article that
+  links `[[Nigerian Civil War]]` names it however the sentence is phrased — and
+  then read only the sentences around those links. Unmeasured, and it is the
+  cheapest remaining idea.
+- **The structured-causal vein is measured and closed. Do not measure it
+  again** (its section above). 359 claims, 68 with both ends held, 53 already
+  edges, 0 new. It remains useful only as a pointer at pairs worth reading.
+- **`attack-on-pearl-harbor` is not in this atlas.** Found by that measurement:
+  the Khalkhin Gol article states *"eventually leading to the Japanese attack on
+  Pearl Harbor and American entry into World War II in December 1941"*, and the
+  far end is a gap. It is not this lane's partition to settle under A11(b) — it
+  is Oceania or the Americas by its point — so it is written down here rather
+  than taken.
+- **The component has not moved from 786 for three fires, and batch 89 shows
+  why a good edge need not move it:** the 1966 coup, the pogrom and the Nigerian
+  Civil War are a component of three, unattached to the main graph. **The
+  component moves when an edge reaches a record that is already in it**, and the
+  vein above is children of umbrellas, whose neighbours are each other.
+  Deviation 1515's `done`-cursor vein — 167 ticked items never written, 53
+  importable — is still the only remaining vein whose rows are events and it is
+  still unmeasured.
+- **Three of A11(a)'s six clauses are now runnable and were not run here**,
+  because today's `## Curation 2026-10-02` section already exists and STEP 3
+  makes this an import fire. They are the ones the 2 October curation fire lost
+  to the network: the place for **159 placeless active events, 105 of them with
+  no refusal note**; `P710` participants on **737 eligible events**; and the
+  `P361` umbrella read. **The next curation fire, if the network holds, should
+  spend itself there and nowhere else** — that is the largest block of
+  measurable, already-targeted work anywhere in this file.
+- **A13's body half of the 2 October curation fire's own 64 records is still
+  unread** and still wants a network.
+- **Deviation numbers: take the next above 1543.** This fire wrote 1541, 1542
+  and 1543. **`origin/m42b` stood at 1540** when this fire read it, which is why
+  this fire started at 1541 and not at 1537. The collision rule of the previous
+  stand holds and is unchanged: read `origin/m42b`'s own numbers before taking
+  one, because no stand here can know them. The lane-offset fix is still the
+  owner's call.
+- **Unchanged and still the owner's:** `iraqi-conflict`'s end; whether an
+  institution an event names owes the reader a sentence; A6's lane rule against
+  the period umbrellas; deviation 1474's 35 items; the 60 placeless events whose
+  only located thing is their own point; deviations 1473, 1478, 1482, 1506,
+  1507, 1508; A11's area clause; A15(12)'s uncategorised events, which batch 89
+  adds one to; the EEC's closing year; deviation 1461's two display faults;
+  deviation 1511's 182 `naturalearth.mjs --places` matches; the three
+  `myanmar-conflict`-shaped gate questions of the batch-88 stand; the A13
+  refusal class of the 2 October stand (a marker in a subordinate clause whose
+  subject is neither end); and C8, whose clearest single line is still
+  `gulf-of-tonkin-incident`.
