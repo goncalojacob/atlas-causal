@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "recapture-of-angola--battle-of-mbwila--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-73"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mbwila\", revision 1370449389"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Recapture of Angola\", revision 1370706489"
+    }
+  ],
+  "from": "recapture-of-angola",
+  "to": "battle-of-mbwila",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The policy that brought Portuguese and Kongolese armies to Mbwila in 1665 is the one the Angolan governors adopted once the Dutch were out of Luanda, and the article for the battle states it as its own origin. “Battle of Mbwila”, at revision 1370449389, § Origins of the war: “In the years following the Dutch withdrawal, Angolan governors sought to obtain revenge against Kongo and to support the slave trade with a highly aggressive policy. Included in this policy were attacks on the zone of small, semi-independent states called Dembos that separated Angola from Kongo. Both Kongo and Angola claimed authority over the Dembos.” Two sentences later the succession struggle in Mbwila itself is what the two sides answer. The withdrawal is this atlas's `recapture-of-angola`, which the same section dates: “the Portuguese eventually forced the Dutch out in 1648”. `precondition-of`: the recapture is what made the revenge policy possible, and the article names the Mbwila succession, not the recapture, as the occasion. `probable`, rule 22.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

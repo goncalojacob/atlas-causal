@@ -24,7 +24,8 @@
       "imported-facts",
       "summary-drafted",
       "a9-place",
-      "a15-category-from-p31"
+      "a15-category-from-p31",
+      "filed-from-p361"
     ]
   },
   "origin": {
@@ -67,6 +68,7 @@
   },
   "place": "middle-east",
   "region": "asia",
+  "parent": "middle-eastern-crisis-2023-present",
   "category": "war",
   "actors": [
     {

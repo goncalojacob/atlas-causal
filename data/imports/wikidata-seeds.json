@@ -1807,7 +1807,32 @@
     "Q2039487",
     "Q4871945",
     "Q134376352",
-    "Q7097291"
+    "Q7097291",
+    "Q5037032",
+    "Q138002239",
+    "Q117350122",
+    "Q131686861",
+    "Q137801200",
+    "Q130198485",
+    "Q3720660",
+    "Q796498",
+    "Q138772633",
+    "Q124373310",
+    "Q4783165",
+    "Q852088",
+    "Q47015896",
+    "Q151622",
+    "Q132776772",
+    "Q138606175",
+    "Q130493316",
+    "Q138632220",
+    "Q138641767",
+    "Q1752752",
+    "Q6429210",
+    "Q4871456",
+    "Q4871702",
+    "Q4872479",
+    "Q109058273"
   ],
   "lanes": {
     "Q10303008": "americas",
@@ -2091,7 +2116,14 @@
     "Q385820": "africa",
     "Q4871476": "africa",
     "Q16250240": "asia",
-    "Q4872161": "asia"
+    "Q4872161": "asia",
+    "Q132776772": "africa",
+    "Q1752752": "africa",
+    "Q6429210": "africa",
+    "Q4871702": "africa",
+    "Q4871456": "africa",
+    "Q4872479": "africa",
+    "Q109058273": "africa"
   },
   "queries": [
     {
@@ -5822,7 +5854,8 @@
     "Q104212151": {
       "kind": "event",
       "label": "series of wars",
-      "note": "Added in M40a from the import report, where 2 ticked world candidate(s) were refused under it. Every one of them is an event of a kind M40's queries asked for. The label is what the candidate list called those items, not the class's own label read from Wikidata: this sandbox has no network to read it with."
+      "note": "Added in M42 batch 18 as an event class with no category. The category is filled in M42b batch 73, under A15(12), which asks that an event be categorised from its own `instance of` through the closed list of data/categories.json: a series of wars is \"a war, a campaign, a battle or a siege: organised armed force between polities\", which is that file's `war` in its own words. The label and the gloss are the class item's own, read over the network; nothing here is guessed from the name.",
+      "category": "war"
     },
     "Q104708121": {
       "kind": "event",

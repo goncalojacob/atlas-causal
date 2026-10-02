@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "m-banza-kongo",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q500189",
+  "sitelinks": {
+    "count": 57,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "M'banza-Kongo",
+    "pt": "M'banza Congo"
+  },
+  "sources": [],
+  "names": [
+    "M'banza-Kongo",
+    "M'banza Congo"
+  ],
+  "where": {
+    "lon": 14.25,
+    "lat": -6.2666666666667,
+    "precision": "city",
+    "label": "M'banza-Kongo"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

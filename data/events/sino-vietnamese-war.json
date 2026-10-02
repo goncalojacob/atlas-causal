@@ -24,7 +24,8 @@
       "imported-facts",
       "participants-from-p710",
       "summary-from-lead",
-      "a15-country-refused"
+      "a15-country-refused",
+      "filed-from-p361"
     ],
     "note": "Wikidata Q623171 names 2 participants (P710) and the atlas holds an actor for 1 of them, so this list is partial: 1 more are named on the item and are not here. Whoever reviews this should read the item before taking these as the parties to the thing. A15(6): the place was north-vietnam, from the item's P17, and it is refused because the country was dissolved (1976) before the event began (1979). The lane is unchanged."
   },
@@ -61,7 +62,7 @@
   "place": null,
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": "indochina-wars",
+  "parent": "third-indochina-war",
   "category": "war",
   "actors": [
     {

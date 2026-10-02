@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "middle-eastern-crisis-2023-present",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q124373310",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Middle Eastern crisis (2023–present)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q124373310"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Middle Eastern crisis (2023–present)\", revision 1377899228"
+    }
+  ],
+  "title": "Middle Eastern crisis (2023–present)",
+  "summary": "The English Wikipedia article \"Middle Eastern crisis (2023–present)\", at revision 1377899228, opens: \"The Middle East is currently experiencing an ongoing series of interrelated wars, conflicts, and heightened instability, triggered by the ongoing Gaza war and the genocide in Gaza. These have primarily consisted of conflicts between Israel and the United States on one side, and Iran and militias that form the \"Axis of Resistance\", which includes such groups as Hamas, Hezbollah, and the Houthis, on the other. Allies of Israel, including the United Kingdom and France, have also intervened militarily in various theaters. The crisis has involved all Middle Eastern countries, significantly affecting the region as a whole.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q124373310, imported by tools/import/wikidata.mjs. The item's own description reads \"series of conflicts in the Middle East beginning on 7 October 2023\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2023,
+    "end": null,
+    "date": "2023-10-07"
+  },
+  "place": "middle-east",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

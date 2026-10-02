@@ -22,8 +22,10 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
-    ]
+      "summary-from-lead",
+      "a15-days"
+    ],
+    "note": "A15(4): the record was dated {\"start\":1814,\"end\":1814,\"date\":\"1814-10-02\"} and the first sentence of the cited article states \"on October 1, 1814, to October 2, 1814\", so the day bounds are 1814-10-01 to 1814-10-02. The years are unchanged. Deviation 1534: that clause is the month-first mirror of the crossing shape and datesInLead read only its opening day, so the range was reported as a contradiction instead of the gap it is."
   },
   "wikidata": "Q1310755",
   "sitelinks": {
@@ -42,6 +44,10 @@
     {
       "source": "wikipedia-en",
       "locator": "\"Battle of Rancagua\", revision 1371210959"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Rancagua\", revision 1371210959, first sentence: \"on October 1, 1814, to October 2, 1814\""
     }
   ],
   "title": "Battle of Rancagua",
@@ -49,7 +55,8 @@
   "when": {
     "start": 1814,
     "end": 1814,
-    "date": "1814-10-02"
+    "date": "1814-10-01",
+    "endDate": "1814-10-02"
   },
   "place": "rancagua",
   "region": null,

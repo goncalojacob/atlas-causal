@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "myanmar-conflict",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q852088",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Myanmar conflict",
+    "pt": "Conflitos armados em Myanmar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q852088"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Myanmar conflict\", revision 1376655457"
+    }
+  ],
+  "title": "Myanmar conflict",
+  "summary": "The English Wikipedia article \"Myanmar conflict\", at revision 1376655457, opens: \"Myanmar has been in armed conflict since 1948, when the country, then known as Burma, gained independence from the United Kingdom. The conflict has largely been ethnic-based, with ethnic armed organisations fighting Myanmar's armed forces, the Tatmadaw, for self-determination. Despite numerous ceasefires and the creation of autonomous self-administered zones in 2008, armed groups continue to call for independence, increased autonomy, democracy, or the federalisation of Myanmar. It is the world's longest ongoing civil war, spanning almost eight decades.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q852088, imported by tools/import/wikidata.mjs. The item's own description reads \"series of ongoing insurgencies within Myanmar which began in 1948\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1947,
+    "end": null,
+    "date": "1947-07-19"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

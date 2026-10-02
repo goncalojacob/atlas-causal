@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sack-of-bombay-1626",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q137801200",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Sack of Bombay (1626)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q137801200"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sack of Bombay (1626)\", revision 1375139978"
+    }
+  ],
+  "title": "Sack of Bombay (1626)",
+  "summary": "The English Wikipedia article \"Sack of Bombay (1626)\", at revision 1375139978, opens: \"The Sack of Bombay was a short Anglo–Dutch raid on the Portuguese settlement at Bombay in October 1626.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q137801200, imported by tools/import/wikidata.mjs. The item's own description reads \"1626 sack\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1626,
+    "end": 1626,
+    "date": "1626-10-14",
+    "endDate": "1626-10-15"
+  },
+  "place": "mumbai",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}
