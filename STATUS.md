@@ -25246,3 +25246,38 @@ one located territory exactly as it refuses a `P17` naming more than one
 country; it has now been walked round by hand twice. And `P2348` — the time
 period an item belongs to — should sit in the filing pass behind `P361`:
 Casablanca's is `Q362` outright.
+
+**M42 batch 98 and the filing the check refused, 2 October.** The same fire,
+continuing. **Batch 98:** `operation-torch` (Q194132, 51 sitelinks) and
+`tunisian-campaign` (Q852365, 35 sitelinks), the first two children of the
+umbrella batch 96 wrote, with the place `french-protectorate-of-tunisia`
+(Q2017684) and one class added to the import's table — `Q164142`, protectorate,
+as a `place` at `region` on Q133156's precedent, read from the item itself. The
+campaign's `P361` is `Q218678`, **the record this same fire wrote three hours
+earlier**, which is the first time either records lane has filed from a `P361`
+naming an umbrella the fire created. Its end is widened from 9 to 13 May 1943
+under A7, from the article at the revision cited, and its title is the article's
+and not the item's *"Tunisia campaign"*. One edge, `caused` from Torch to the
+campaign, on the campaign's own lead naming *"the success of Operation Torch"*
+as one of the two things that drove the Axis into Tunisia. **Deviation 1564:**
+the batch first filed both records under **both** `world-war-ii` and
+`north-african-campaign`, reading A8's *every umbrella that fits* literally, and
+pushed it; the branch check went red on `tests/m42-filing.test.mjs`'s *"no parent
+of an event is reachable through another of its parents"*, whose own comment is
+the answer — *"A second parent earns its place by being somewhere the first does
+not reach"*, which is exactly what the owner's Angola example is. Both now carry
+`north-african-campaign` alone. **The validator does not catch this and the test
+does**: `node tools/validate.mjs` read 0 errors on the parent list the check then
+refused, which is a line worth keeping for a lane that validates before it
+pushes. Over the whole fire, batches 96 to 98: **1,462 → 1,466 active, main 234
+throughout, 1,234 → 1,237 edges, largest component 795 unchanged, components 440
+→ 441, events with no edge 341 → 340, edges crossing an umbrella 619 and inside
+one 615 → 618, places 797 → 799. Africa 251 → 255, Asia 259** — the trailing lane
+has closed from nine behind to four in six batches, every one of them +0 main.
+Validator **0 errors, 637 warnings**; `cache-evidence` **0 revisions missing**;
+`docs/m53-polities.md` §4.1 retaken at **411 and 412 of 1,466**. **The check,
+green on this fire's head: run 2449 on `f1202f24e` concluded `success`**, after
+run 2447 on `b0d15798b` was red for deviation 1564 and run 2446 on `2e2e2603d`
+was green. Locally on the final head: **1,941 pure tests, 1,941 passing, 0
+failing, 0 skipped**, and **313 browser tests, 313 passing, 0 failing, 0
+skipped**.

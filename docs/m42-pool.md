@@ -25210,3 +25210,15 @@ globe and time, so it is put here plainly rather than left in the arithmetic.
 stood at 1562 both times it was read, the second time after it had merged
 `origin/m42` and pushed. Take the next above 1563, and read that branch again
 before you take one.
+
+### The check, on this fire's heads
+
+**Run 2449 on `f1202f24e` concluded `success`** — the final head, with batch 98's
+filing corrected. **Run 2447 on `b0d15798b` was red before it, and the whole of
+why is deviation 1564 above**: not load, and read rather than assumed — the
+failing test was named by the local suite on the same head, the rule was read out
+of the test's own comment, and the data was changed to obey it. Run 2446 on
+`2e2e2603d`, the head of batches 96 and 97, was green. Locally on `f1202f24e`:
+**1,941 pure tests, 1,941 passing, 0 failing, 0 skipped**, and **313 browser
+tests, 313 passing, 0 failing, 0 skipped**, both exit 0.
+`node tools/validate.mjs --index`: **0 errors, 637 warnings**.
