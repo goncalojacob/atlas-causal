@@ -1,0 +1,30 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "covid-19-pandemic-in-europe--covid-state-of-emergency-2020--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "covid-state-of-emergency-2020--marcelo-reelected-2021--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "covid-state-of-emergency-2020--world-youth-day-2023--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "covid-state-of-emergency-2020",
+      "kind": "event",
+      "locator": null
+    }
+  ],
+  "id": "dre-2020-state-of-emergency",
+  "schema": 1
+}
