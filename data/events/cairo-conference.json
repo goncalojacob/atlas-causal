@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "cairo-conference",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "a9-place",
+      "filed-by-span-and-subject"
+    ],
+    "note": "A9: no `P625` and no `P276`; the item's `P131` is `Q85`, held here as `cairo`, so the chain stops there and `P17` `Q79` is never reached. A15(4): `P580`/`P582` are 1943-11-22 and 1943-11-26 and the first sentence says the same. A6: no `P361`, so filed by span and subject under `world-war-ii`. No category: `P31` is `Q625994` alone, carried in the class table with no category on purpose. A11(a): the twelve `P710` are people, none of them actors here; the two parties are the first sentence's."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q696894",
+  "wikipedia": {
+    "en": "Cairo Conference",
+    "pt": "Conferência do Cairo"
+  },
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q696894"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cairo Conference\", revision 1369040877"
+    }
+  ],
+  "title": "Cairo Conference",
+  "summary": "The English Wikipedia article \"Cairo Conference\", at revision 1369040877, opens: \"The Cairo Conference (codenamed Sextant), also known as the First Cairo Conference, was one of fourteen summit meetings during World War II, which took place on 22–26 November 1943. The Conference was held at Cairo in Egypt between China, the United Kingdom, and the United States. Attended by Chairman of the National Government of China Chiang Kai-shek, British Prime Minister Winston Churchill, and US President Franklin D. Roosevelt, it outlined the Allied position against the Empire of Japan during World War II and made decisions about post-war Asia.\" That is the article’s account and not yet this atlas’s; nobody has read this record, and review.html is where somebody does. Wikidata item Q696894, whose P580 and P582 are 22 and 26 November 1943, the range the first sentence states.",
+  "when": {
+    "start": 1943,
+    "end": 1943,
+    "date": "1943-11-22",
+    "endDate": "1943-11-26"
+  },
+  "place": "cairo",
+  "region": null,
+  "regionNote": null,
+  "parent": "world-war-ii",
+  "category": null,
+  "actors": [
+    {
+      "actor": "united-kingdom",
+      "role": "negotiator"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "negotiator"
+    }
+  ]
+}

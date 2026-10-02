@@ -24534,14 +24534,89 @@ that moved it. Per lane (A10): Africa 250/35 **unchanged over the whole fire**,
 Asia 257/57 → **259/57**, Americas 396/56, Europe 556/86.
 `node tools/validate.mjs`: **0 errors, 637 warnings** throughout.
 
-## Where the run stands after batches 93 and 94, for the fire that picks it up
+## Batch 95 — the Cairo Conference, and Africa moves for the first time in six batches, 2 October
+
+**The thing four stands in a row have said Africa did not have.** The blocker is
+A6: Africa's two umbrellas are `scramble-for-africa` (1885–1914) and
+`decolonisation-of-africa` (1954/56–1976), every remaining African gap of weight
+falls outside both, and importing one of those raises the main count. **The
+Cairo Conference falls inside neither of them and inside a third**:
+`world-war-ii`, which this atlas has held since M62 and whose span covers
+22–26 November 1943. Its place is Cairo, which derives the **africa** lane. So
+it files at +0 main in the trailing lane, which is what A10's order of need has
+been asking for since batch 89. It was found in batch 94's own article — the
+Tehran Conference's first sentence names it — which is the far-end method three
+batches running.
+
+**The record.** `cairo-conference`, `Q696894`, 46 sitelinks, 22 to 26 November
+1943, place `cairo`, lane **africa**, filed under `world-war-ii` by span and
+subject; no category. Argued in `docs/m62-umbrellas.md`.
+
+| what the passes asked | what the item and the article said |
+| --- | --- |
+| A9, the place | **The first candidate this fire where the chain ran past its first two steps.** The item carries no `P625` and no `P276`. Its `P131` is `Q85`, which this atlas holds as `cairo`, so the chain stops at the third step and `P17` — `Q79`, Egypt — is never reached, which is also the first time A15(6)'s country gate had nothing to refuse because nothing got that far. |
+| A15(7), the lane | `cairo`'s point, `(31.236, 30.044)`, derives africa. No `region` written. |
+| A15(4), the days | `P580`/`P582` are 1943-11-22 and 1943-11-26; the first sentence states *"22–26 November 1943"*. They agree. |
+| A6 and A8, the filing | No `P361` at all, as with Tehran. One parent. |
+| A15(12), the category | **None.** `P31` is `Q625994` alone — the class the table carries with no category on purpose. Two of this fire's three records are uncategorised for the same reason, and both are conferences. |
+| A11(a), the actors | The item's twelve `P710` are **all people** — Chiang Kai-shek, Churchill, Roosevelt and nine more — and not one of them is an actor this atlas holds, so `P710` gave nothing. The two parties written instead are the first sentence's: *"held at Cairo in Egypt between China, the United Kingdom, and the United States"*, read as `united-kingdom` and `united-states-of-america`, both `negotiator`. **The third is refused and the reason matters**: the party at Cairo was the Republic of China, and `china` here is `Q148`, the People's Republic — a different polity, whose own item begins in 1949. Naming it for 1943 would be a wrong claim and not a partial list, so the list is partial on purpose. |
+| A15(2), the cache | On disk at `tools/import/cache/wikipedia/Q696894.en.json`, revision **1369040877**, and the title table has the article. `node tools/cache-evidence.mjs`: **0 revisions that should be on disk and are not**, over all 3,063 citations. |
+| A15(8), the redirect test | The item's English sitelink is *"Cairo Conference"*; `Special:Export` returned a page of that title, not a redirect. No flag. |
+
+**One edge.** `cairo-conference--potsdam-declaration--precondition-of`,
+`probable`, on the article's § Influence: *"In July 1945, the Potsdam
+Proclamation of China, Britain, and the United States made an ultimatum to
+Japan, also using the Cairo Declaration as the basis for unconditional
+surrender."* The atlas holds the conference and not the declaration it issued,
+so the edge runs from the conference, which is what the article's own lead and
+§ Influence join: *"The Cairo Declaration, issued after the conference, demanded
+Japan's unconditional surrender"*. **A line for whoever writes the Cairo
+Declaration as a record**: this edge should be re-pointed at it, and the
+explanation says so.
+
+**A15(5): two refusals, counted.**
+
+1. **`cairo-conference --> tehran-conference`, refused.** The Tehran article's
+   *"The meeting occurred shortly after the Cairo Conference was held in
+   Egypt…"* is an order of events, and the Cairo article's own account of the
+   sequel is the same. The two conferences are four days apart and the atlas
+   says so with their dates, which is all either article claims.
+2. **`cairo-conference --> second-sino-japanese-war`, refused.** *"the aim of a
+   joint Chinese, British, and American counter-attack on Burma was eventually
+   achieved"* names no event this atlas holds as the thing achieved, and the
+   conference's aid to China is a decision about a war already four years old —
+   the same shape batch 94 refused for `eastern-front`, and the second time this
+   fire has met it. **Two refusals of one kind in one fire is a pattern, not an
+   accident**: see the stand.
+
+### The counts, over all three of this fire's batches
+
+| | before the fire | 93 | 94 | 95 |
+| --- | --- | --- | --- | --- |
+| active events | 1,459 | 1,460 | 1,461 | **1,462** |
+| **main events** | **234** | **234** | **234** | **234** |
+| active edges | 1,230 | 1,232 | 1,233 | **1,234** |
+| largest component | 792 | 793 | 794 | **795** |
+| components | 440 | 440 | 440 | 440 |
+| active events with no edge | 341 | 341 | 341 | 341 |
+| **edges crossing an umbrella (A15(11))** | **618** | **619** | **619** | **619** |
+
+Per lane (A10): **Africa 250/35 → 251/35**, Asia 257/57 → 259/57, Americas
+396/56, Europe 556/86. Africa trails Asia by eight instead of nine.
+`node tools/validate.mjs`: **0 errors, 637 warnings** throughout the fire.
+
+## Where the run stands after batches 93, 94 and 95, for the fire that picks it up
 
 **Read the stand after batch 92 as well. Its §1 (choose the candidate by its far
 end), §2 (why Asia and not Africa) and §4 (the Cold War umbrella, the owner's
 call) are unchanged and still decide what the next fire can do.** This fire wrote
-two batches, 93 and 94, and the method is batch 92's own: **pick the candidate by
-its far end.** Batch 93's far end was the record batch 92's `disputed` edge
-pointed at and could not reach; batch 94's was batch 93.
+three batches, 93, 94 and 95, and the method is batch 92's own: **pick the
+candidate by its far end.** Batch 93's far end was the record batch 92's
+`disputed` edge pointed at and could not reach; batch 94's was batch 93; batch
+95's was batch 94, found in batch 94's own first sentence. **Three batches, one
+chain, and the third of them landed in the trailing lane** — see batch 95's note
+on why `world-war-ii` is the umbrella that unblocks Africa where the two African
+ones cannot.
 
 **1. The Big Three conferences, correctly identified this time, and one of them
 is not this lane's.** An earlier draft of this stand guessed `Q7163` and
@@ -24561,20 +24636,25 @@ first edge either lane has written from one branch's import into the other's.**
 The lesson for any stand: **never write an item id that was not read from the
 item.** One SPARQL request answers it.
 
-**1b. What the Tehran article asks for next, in this lane and not.** Three
-candidates, every one of them named in an article the atlas now cites:
-**Operation Overlord** (the honest target of the second-front claim batch 94
-refused for want of an edge type — but its lane is Europe, so M42b's), the
-**Cairo Conference** (Egypt, so **Africa and this lane's**, held 22–26 November
-1943, immediately before Tehran and named in its first sentence — the first
-African candidate in six batches that may fall inside an umbrella the atlas
-holds, since `world-war-ii`'s span covers it and `scramble-for-africa` does not;
-a fire should check the item rather than trust this sentence), and the
-**Anglo-Soviet invasion of Iran** (asia lane, 1941, inside `world-war-ii`'s
-span, named in Tehran's own first sentence). **The Cairo Conference is the one to
-read first**: if it files under `world-war-ii` at +0 main, it is an Africa-lane
-record that A6 allows, which is the thing the last four stands have said Africa
-does not have.
+**1b. The vein batch 95 opened, and it is the most valuable thing in this file.**
+**`world-war-ii` is a worldwide umbrella spanning 1939 to 1945, and events inside
+it fall in every lane** — which means an Africa-lane or Asia-lane event of that
+war files at +0 main *without* needing the Cold War umbrella the batch-90 stand
+says is the owner's call. Batch 95 is the proof. The candidates already named in
+articles this atlas now cites, with their lanes:
+
+- **Anglo-Soviet invasion of Iran**, `Q541369` (resolved by SPARQL, not guessed),
+  1941, named in Tehran's own first sentence. **Asia.** Inside the span.
+- **Operation Overlord** and the **Yalta Conference**, `Q161227`. **Europe**, so
+  M42b's, and the Overlord one is also the honest target of the second-front
+  claim batch 94 refused for want of an edge type.
+- **The Cairo Declaration**, which this fire's own edge points at through the
+  conference and asks to be re-pointed at.
+- And the general case: **the North African and East African campaigns, the
+  Burma campaign, the Pacific War (`Q184425`, already named twice in this file)**
+  — every one of them inside `world-war-ii`'s span, and the first two in the lane
+  that trails. A fire that wants Africa should sweep that war's African theatre
+  before it waits on anything the owner has to decide.
 
 **1c. `soviet-invasion-of-manchuria` carries no `names`, and that cost this fire
 an edge it could see.** The Yalta article names the invasion only as *Operation
@@ -24586,6 +24666,21 @@ the Yalta article at all; it was found by reading. **A curation fire's relations
 pass has the same blindness over the whole corpus**, and I8 is the remedy
 already decided: the next one should write the names, with `imported-names`, on
 every draft record whose item gives them.
+
+**1d. Two refusals of one shape, and the gap in the type vocabulary they name.**
+Batch 94 refused `tehran-conference --> eastern-front` and batch 95 refused
+`cairo-conference --> second-sino-japanese-war`, both for the same reason: the
+article states plainly that the meeting changed how a war **already running** was
+fought, and none of the five edge types says that. `caused` and `enabled` would
+both assert that a conference brought about a war that had been fighting for
+years; `precondition-of` reads backwards. **This is not a fire's mistake to fix,
+it is a question for the owner**, and it is a common shape — a wartime conference
+is mostly a record about the conduct of a war, and this atlas can currently only
+link it to the war's discrete events. Two refusals in one fire out of eight
+candidates read. A sixth type is a change to a closed vocabulary and so not a
+records lane's to make; the alternative, which costs nothing, is to import the
+operations the conference decided (Overlord, the Burma campaign) and link to
+those, which is §1b's own prescription.
 
 **2. A15(5)'s third-event guard has no exception for a parent, and that is one
 line for the owner.** `verdictFor` refused *"The invasion of Manchuria was a
@@ -24603,7 +24698,7 @@ the edge on a sentence that states the same cause and names no umbrella.
 added.** `Special:Export` and the Wikibase REST entity endpoint both answered,
 each on a retry loop of up to thirty tries at seven seconds; the first call of
 this fire got a 429 carrying the same *"created during active wdqs outage"*
-message. Twelve documents were read this way over the two batches — the two items, the
+message. Fifteen documents were read this way over the three batches — the two items, the
 three article exports, the four items batch 93's `P710` and `P361` name, the two
 ids the wrong guesses cost, and one SPARQL query — and every one arrived. **The
 SPARQL endpoint answered on the first attempt**, which is worth knowing: it is
@@ -24614,7 +24709,7 @@ summary endpoint was not used at all: the lead was taken from the
 cache entry on disk at a revision the export itself names.
 
 **4. Deviation numbers: take the next above 1557.** This fire wrote **1557**
-only, over both batches. **`origin/m42b` stood at 1556 when this fire read it**, which is why 1557
+only, over all three batches. **`origin/m42b` stood at 1556 when this fire read it**, which is why 1557
 and not the 1549 the batch-92 stand's arithmetic would have given — read
 `origin/m42b`'s own numbers before taking one, as the previous stands say.
 

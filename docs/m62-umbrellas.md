@@ -673,3 +673,11 @@ neither reached the resting picture.
 | `tehran-conference` | `world-war-ii` | By span and subject, because the item carries **no `P361` at all**. 28 November to 1 December 1943 is inside the umbrella's 1939-09-01 to 1945-09-02. The subject: the article's own first sentence makes it *"a strategy meeting of the Allies of World War II"*, and everything it settled — Overlord, the second front, the Soviet entry against Japan — is that war's conduct. `potsdam-conference`, the same shape of record, has been filed under the same umbrella since M62, and `yalta-conference`, the third of the Big Three conferences, is not here: its lane is Europe, so it is M42b's. |
 
 **Main is 234 before and 234 after.**
+
+## Batch 95 — the conference before Tehran, and the first Africa filing in six batches
+
+| record | parent | why |
+| --- | --- | --- |
+| `cairo-conference` | `world-war-ii` | By span and subject; the item carries no `P361`. 22 to 26 November 1943 is inside the umbrella's 1939-09-01 to 1945-09-02. The subject: the article's first sentence calls it *"one of fourteen summit meetings during World War II"* and says it *"outlined the Allied position against the Empire of Japan during World War II"* — the same reading `potsdam-conference` and `tehran-conference` are filed under, and with less to judge than either, because the article names the war twice in one sentence. **Its lane is africa**, which makes it the first record this lane has filed in the trailing lane since batch 91: A6 forbids raising the main count and every other African gap of weight falls outside both African umbrellas, but this one falls inside a third umbrella the atlas has held since M62. |
+
+**Main is 234 before and 234 after.**
