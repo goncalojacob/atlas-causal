@@ -11341,6 +11341,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "battle-of-kitombo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "kongo-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Kitombo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "battle-of-kolding-1644",
       "kind": "event",
@@ -12765,7 +12797,38 @@
         "wikipedia-en"
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "id": "battle-of-mbidizi-river",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "kongo-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Mbidizi River"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 2,
       "id": "battle-of-mbwila",
       "kind": "event",
       "origin": {
@@ -14548,6 +14611,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "battle-of-pungo-andongo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "angolan-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Pungo Andongo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "battle-of-punta-quemada",
@@ -15533,6 +15628,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Santiago de Cuba (1748)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-sao-salvador",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "kongo-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of São Salvador"
     },
     {
       "authors": [
@@ -30344,6 +30471,37 @@
       "revised": null,
       "status": "active",
       "title": "King William's War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "kongo-civil-war",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "umbrella-written-from-article"
+        ],
+        "note": "Written by hand, not imported: Q6429210 dates itself 1600-1700 at century precision and tools/import/wikidata.mjs refuses that outright. A6 lets a run write a period umbrella from its own Wikipedia article; the span 1665-1709 is the first sentence of the revision cited here, which the record quotes. Everything else - the item, the sitelink count, the class Q8465 behind the category - is read off the item. Nobody has read this record.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Kongo Civil War"
     },
     {
       "authors": [
@@ -49261,6 +49419,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-mbidizi-river",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-mocha",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -49382,6 +49546,12 @@
     },
     {
       "id": "battle-of-saint-raphael",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-sao-salvador",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

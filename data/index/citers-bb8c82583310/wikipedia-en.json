@@ -2678,6 +2678,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kitombo--battle-of-pungo-andongo--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Kitombo\", revision 1370267185"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kitombo--battle-of-pungo-andongo--enabled",
+      "kind": "edge",
+      "locator": "\"Battle of Pungo Andongo\", revision 1370586775"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-konna--battle-of-ifoghas--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Ifoghas\", revision 1370443583, lead"
@@ -2813,6 +2825,18 @@
       "id": "battle-of-mata-redonda--campaign-of-porto-calvo--precondition-of",
       "kind": "edge",
       "locator": "\"Campaign of Porto Calvo\", revision 1373668892, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mbwila--kongo-civil-war--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Mbidizi River\", revision 1370449386"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mbwila--kongo-civil-war--caused",
+      "kind": "edge",
+      "locator": "\"Kongo Civil War\", revision 1376270418"
     },
     {
       "dissent": false,
@@ -11666,6 +11690,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kitombo",
+      "kind": "event",
+      "locator": "\"Battle of Kitombo\", revision 1370267185"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kolding-1644",
       "kind": "event",
       "locator": "\"Battle of Kolding (1644)\", revision 1370445808"
@@ -11921,6 +11951,12 @@
       "id": "battle-of-mataquito",
       "kind": "event",
       "locator": "\"Battle of Mataquito\", revision 1376467018"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mbidizi-river",
+      "kind": "event",
+      "locator": "\"Battle of Mbidizi River\", revision 1370449386"
     },
     {
       "dissent": false,
@@ -12248,6 +12284,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-pungo-andongo",
+      "kind": "event",
+      "locator": "\"Battle of Pungo Andongo\", revision 1370586775"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-punta-quemada",
       "kind": "event",
       "locator": "\"Battle of Punta Quemada\", revision 1370586796"
@@ -12431,6 +12473,12 @@
       "id": "battle-of-santiago-de-cuba-1748",
       "kind": "event",
       "locator": "\"Battle of Santiago de Cuba (1748)\", revision 1370588626"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sao-salvador",
+      "kind": "event",
+      "locator": "\"Battle of São Salvador\", revision 1370590283"
     },
     {
       "dissent": false,
@@ -14933,6 +14981,12 @@
       "id": "king-william-s-war",
       "kind": "event",
       "locator": "\"King William's War\", revision 1375172085"
+    },
+    {
+      "dissent": false,
+      "id": "kongo-civil-war",
+      "kind": "event",
+      "locator": "\"Kongo Civil War\", revision 1376270418"
     },
     {
       "dissent": false,

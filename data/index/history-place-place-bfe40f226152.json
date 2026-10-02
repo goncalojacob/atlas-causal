@@ -5638,6 +5638,15 @@
         }
       ]
     },
+    "m-banza-kongo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "ma-ujowice": {
       "from": "git",
       "versions": [

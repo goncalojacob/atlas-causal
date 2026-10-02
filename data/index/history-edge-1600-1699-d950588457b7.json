@@ -68,6 +68,15 @@
         }
       ]
     },
+    "battle-of-kitombo--battle-of-pungo-andongo--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-lutzen-1632--battle-of-oldendorf--precondition-of": {
       "from": "git",
       "versions": [
@@ -83,6 +92,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-mbwila--kongo-civil-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
