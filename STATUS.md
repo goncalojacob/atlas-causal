@@ -24449,6 +24449,43 @@ are not**. The suite at this head, run the way the check runs it: **1,940 pure t
 1,940 passed, 0 failed, 0 skipped**, and **313 browser tests across the 40 suites,
 313 passed, 0 failed, 0 skipped** — green for the second fire running.
 
+**M42b batch 72 — the Dutch–Portuguese War's unheld children, 2 October.** The same
+fire's second batch, and the stand's move 1 read the right way round. The umbrella's
+`P527` *has part* names ten children, seven of them held, which reads as an exhausted
+vein; the **inverse** question put to the query service —
+`?i wdt:P361 wd:Q377269` — returns **43**, of which the atlas held 24 and **19 were
+open, 16 with an English article**. The two directions of one property are not the
+same list, and `P527`, maintained by hand on the umbrella's own item, is always the
+short one. Because `dutch-portuguese-war` is **held**, every child of it files at
+**no cost to the main count** — the shape this lane has been short of since batch 64.
+Five were taken and all five filed: `battle-of-principe` (1598, africa),
+`capture-of-amboina` (1605), `battle-of-pulo-buton` (1606), `sack-of-bombay-1626`
+and `battle-of-jambi` (1630), the last four taking **asia's 17th century from
+thirteen to seventeen**; four new places, all at `summary: null`.
+**A7 paid for Príncipe**: rule 24 refused the 1598 battle as dated outside a parent
+the item dated 1601–1661, so it arrived main — and the article the record already
+cites, at the revision it already cites (1374150566), reads `date = 1598–1663` in its
+infobox and *"Beginning in 1598"* in its first sentence. Widening to the span the
+citation states files the child and **returns the main count to 233**. The record was
+deleted and re-imported rather than hand-filed, so its parent is the tool's own
+reading of `P361`. One consequence worth recording: the widening moves **the umbrella
+itself** from americas' 17th century to its 16th under deviation 1378's start-year
+convention, with one main, on no change to any other record. **Deviation 1390 refused
+two of the seven read** — its fifth and sixth applications — `Q2092338` *Battle of
+Swally* (11 sitelinks; `part_of = Portuguese battles in the Indian Ocean`, unlinked
+and naming no article) and `Q2567256` *Battle off Hormuz (1625)*; *Sack of Bombay*
+names two umbrellas and one is held, which is A8's own case. **No edge, and the note
+gives the measurement**: the five articles were split into sentences and run through
+`tools/import/chronology.mjs` against all 1,428 active events, and the **3,218**
+cached leads were swept the other way against the five — **zero sentences in either
+direction state a cause naming across**, two being in A15(5)'s chronology class. A
+sibling edge would have crossed no umbrella in any case, so the crossing count stands
+at **608**. Africa **231** and Asia **248** against A10's 303. `validate --index`
+clean at **0 errors, 620 warnings**, the five new ones being the batch's own
+`degree-zero`; A15(2) reports **0 revisions that should be on disk and are not**, and
+the title table 1,532 entries to **1,538**. **Eleven candidates with English articles
+remain unread in this vein** and are listed at the end of batch 72's note.
+
 **M42b batches 69 and 70 — the Sinhalese–Portuguese conflicts, and the 1535 Battle of
 Ugentana, 1 October.** The sixtieth fire merged `origin/m0` and `origin/m42` and took
 the previous stand's moves 1, 4 and 5, closing all three. **Batch 69** wrote
