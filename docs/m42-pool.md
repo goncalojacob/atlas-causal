@@ -22793,6 +22793,17 @@ state founded in 1948 for the whole of the 78 years it did exist. Worth a
 person's eye; not corrected here, because changing a gate the other lane also
 runs is not a batch's business.
 
+**And the refused country still wrote the lane**, which is right and is worth
+saying: the item has no `P625`, so `ownPoint` fell through to the first located
+thing on the chain — `Q836` itself — and the record reads `region: "asia"` with
+`place: null`, its own `regionNote` saying *"derived from its own point"*. The
+gate governs the **place**, which is an assertion that the event happened
+*there*, and not the **lane**, which is which row of the timeline a bar is drawn
+in. Myanmar's point answers that correctly whatever year the state was founded,
+because the ground did not move. `docs/m67-umbrellas.md` carries the record as a
+bare main event, as M67's rule requires, with both halves argued — and
+`tests/m67.test.mjs` is what asked for it.
+
 ### What was filed
 
 | child | under | its span against the umbrella's |
