@@ -24312,3 +24312,76 @@ citations, 2,972 on disk at the revision cited, 78 unholdable beside a
 more-cited revision of the same item, 0 that should be on disk and are not.**
 **Validator: 0 errors, 637 warnings.**
 
+
+## Where the run stands after batch 92, for the fire that picks it up
+
+**This supersedes the stand after batches 90 and 91 on three points and leaves
+the rest of it standing — read that one too, especially §1 on the network and §4
+on the Cold War umbrella, which are unchanged and are the two things that decide
+what the next fire can do.**
+
+**1. The component moved three times in one fire: 786 → 789 → 790 → 792.** It
+had not moved in four fires before this one. The method is one sentence and it is
+the whole of what these three batches did differently: **choose the candidate by
+its far end.** Ask which records are already in the largest component, then look
+for an unheld event whose own cited article argues about one of them. The
+near-end questions — does it fit an umbrella, does it have a place, what is its
+category — are gates it must pass, not reasons to pick it.
+
+**2. Asia is where the next batch goes, and A10's letter now has to be read
+against its purpose.** Africa 250 active, Asia 257. Africa still trails by seven,
+so A10's order of need still says Africa — but Africa has nothing importable
+left at +0 main, because every remaining African gap of weight falls outside both
+African umbrellas and A6 forbids raising the main count. Batch 92 went to Asia
+for that reason and said so in its own note. **A fire that wants to put the next
+batch in Africa has exactly one way to do it and it is not a records decision:**
+the Cold War umbrella (see the previous stand's §4). Asia, by contrast, has a
+measured and unexhausted field — batch 92's own sweep of `world-war-ii`'s span
+named **fifteen** unheld events of weight in the Asia lane and took two.
+
+**3. The next Asia batch, named.** `Q6165880` **the Soviet invasion of Manchuria**
+is the single most valuable record either lane could write next, and the reason
+is batch 92's disputed edge. That edge —
+`atomic-bombings-of-hiroshima-and-nagasaki--surrender-of-japan--caused`, marked
+`disputed` because both cited articles say the link is what historians argue
+about — names the Soviet entry as the competing cause **in its own
+`dispute.text`**, out of the emperor's two statements. The atlas does not hold
+it, so the dispute currently points at nothing. Importing it turns a two-sided
+note into a three-record argument a reader can walk, which is what this project
+is for. Its facts are already measured: 1945-08-09 to 1945-08-20 from `P580` and
+`P582`, `P625` `(125, 49)` which derives the asia lane, `P276` `Q113344999`,
+`P361` `Q220602` and `Q5865416`, `P31` `Q467011` (invasion → `war`, already in
+the class table), 43 sitelinks. Its span is inside `world-war-ii`, so it files at
++0 main. **Then** `Q184425` the Pacific War, which is the narrower and better
+umbrella for both of batch 92's records and for several of the fifteen — see the
+note in `docs/m62-umbrellas.md` asking the fire that imports it to re-read batch
+92's filing. After that: the First Intifada and the Oslo Accords, which chain
+into `second-intifada`, held and in the component.
+
+**4. Deviation 1548 and the class table, both one line of work for the owner.**
+The reuse step of A9's chain cannot see a held place sitting on the item's own
+point, because it matches a folded **name** as well as the point and an event
+item's names never fold to a place's; `surrender-of-japan` would have been placed
+on the Empire of Japan's centroid instead of `tokyo-bay`, 0.06° away. The fix is
+a point-only reuse at that one step. Separately, `Q488`'s classes were both
+missing from `data/imports/wikidata-seeds.json`, which is normal and is why the
+table is data — but it means **the highest-sitelink gap in the atlas was behind a
+one-row edit**, and a fire that is refusing candidates on unknown classes should
+check whether that is all that is stopping them.
+
+**5. Deviation numbers: take the next above 1548.** This fire wrote **1547** and
+**1548**. Read `origin/m42b`'s own numbers before taking one; it stood at 1540
+when batch 89's fire read it and this fire did not re-read it.
+
+**6. The check.** Locally on batch 92's head, the two commands the check uses
+since M63: **1,941 pure tests, 1,941 passing, 0 failing, 0 skipped**, and **313
+browser tests, 313 passing, 0 failing, 0 skipped**, both exit 0.
+`node tools/validate.mjs --index`: **0 errors, 637 warnings** — the same 637 this
+fire found before it wrote anything, across three batches, five events, three
+places and seven edges. Two intermediate commits in this fire were red on the
+check for the same cause and it is worth knowing: **a batch that files a record
+under an umbrella must add its paragraph to `docs/m62-umbrellas.md` (for an M62
+umbrella) or `docs/m67-umbrellas.md` (for a record that names neither an actor
+nor a place) in the same commit as the record**, or `tests/m62.test.mjs` and
+`tests/m67.test.mjs` fail. The pool note alone satisfies `tests/m42-filing.test.mjs`
+and does **not** satisfy those two.
