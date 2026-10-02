@@ -24902,3 +24902,71 @@ A15(11) count is unchanged at 619 while the inside-one count rises from 615 to
 616. `node tools/validate.mjs`: **0 errors, 637 warnings** — the new
 `span-vs-lead-dates` on this record is matched by a `degree-zero` leaving as
 Sicily stops being isolated.
+
+## Batch 97 — the Casablanca Conference, where the invasion of Sicily was decided, 2 October
+
+**Batch 96's own far end, asked who decided it.** `allied-invasion-of-sicily` had
+carried no edge at all until batch 96 gave it one; the question that batch left
+was what else could reach it, and the answer is the conference that ordered it.
+Casablanca is in Morocco, so this is the trailing lane again — **three African
+records in three batches**, all three inside `world-war-ii`, which is the vein
+batch 95 opened and the first time this lane has had one.
+
+**Two records.** `casablanca-conference`, `Q502093`, 42 sitelinks, 14 to 24
+January 1943, place **`casablanca`**, lane **africa**, filed under
+`world-war-ii`, no category. And the place itself: **`casablanca`**, `Q7903`,
+153 sitelinks, `(-7.620, 33.599)`, `city`, written because A9's chain reached it
+and this atlas did not hold it.
+
+| what the passes asked | what the item and the article said |
+| --- | --- |
+| A9, the place | **The chain ran to its third step and stopped there, as batch 95's did.** No `P625`, no `P276`; `P131` is `Q7903`, Casablanca, which this atlas had never written. So the place is written from the item, at the precision its own `P31` gives — `Q515`, city — and `P17` `Q1028`, Morocco, is never reached, which is the second batch running where A15(6)'s country gate had nothing to refuse because nothing got that far. The place carries `summary: null`, which is A15(3). |
+| A15(7), the lane | Casablanca's point derives **africa**. No `region` written on the event: the place carries it. |
+| A15(4), the days | `P580`/`P582` are 1943-01-14 and 1943-01-24; the first sentence states *"from January 14 to 24, 1943"*. They agree, which is the first candidate in two batches where they did. |
+| A6 and A8, the filing | No `P361` — but the item carries **`P2348`, the time period it belongs to, and its value is `Q362`**, which is `world-war-ii`'s own item. No candidate in this lane has brought a stated filing that close without it being a `P361`. **A line for whoever next touches the import**: `P2348` is not in the filing pass's list of properties and this is the case for putting it there, behind `P361` and ahead of span-and-subject. One parent. |
+| A15(12), the category | **None.** `P31` is `Q625994` alone, the convention class the table carries with no category on purpose — the same class, and the same answer, as `cairo-conference`. |
+| A11(a), the actors | The four `P710` are **all people** — Roosevelt, Churchill, de Gaulle, Giraud — and not one is an actor here, which is the third conference running where `P710` gave nothing. The two parties written are the first sentence's: *"between US President Franklin Roosevelt … and British Prime Minister Winston Churchill"*, read as `united-states-of-america` and `united-kingdom`, both `negotiator`. Free France is named in the body and is **not** an actor this atlas holds. |
+| A15(2), the cache | On disk at `tools/import/cache/wikipedia/Q502093.en.json`, revision **1369040863**; the title table has the article. |
+| A15(8), the redirect test | `Special:Export` returned *"Casablanca Conference"*, the item's own English sitelink. No redirect. |
+
+**One edge.** `casablanca-conference--allied-invasion-of-sicily--caused`,
+`probable`, on the article's own lead: *"Key decisions included a commitment to
+demand Axis powers' unconditional surrender; plans for an invasion of Sicily and
+Italy before the main invasion of France… Of all the decisions made, the most
+important was the Allied invasion of Sicily, which Churchill pushed for in part
+to divert American attention from opening a second front in France in 1943."*
+`caused` and not `precondition-of`: the article does not say the conference made
+the invasion possible, it says the invasion **was** the conference's decision,
+and § Strategy names who argued for it and against what — *"Churchill … favored
+an Allied assault on the island of Sicily followed by an invasion of mainland
+Italy"*, against Roosevelt's cross-Channel invasion. `verdictFor`: `write: true`.
+
+**A15(5): one refusal.** `casablanca-conference --> eastern-front`, refused, on
+§ Strategy's account of the second front: the sentence is about where German
+reserves would be pulled to, which is how a running war was fought, and it is the
+**fourth** instance of that shape in two fires. The pattern is now large enough
+to be worth the owner's decision rather than another line in a batch note; the
+stand says what the choice is.
+
+### The counts, over both of this fire's batches
+
+| | before the fire | 96 | 97 |
+| --- | --- | --- | --- |
+| active events | 1,462 | 1,463 | **1,464** |
+| **main events** | **234** | **234** | **234** |
+| active edges | 1,234 | 1,235 | **1,236** |
+| largest component | 795 | 795 | **795** |
+| components | 440 | 440 | 440 |
+| active events with no edge | 341 | 340 | **340** |
+| **edges crossing an umbrella (A15(11))** | **619** | **619** | **619** |
+| place records | 797 | 797 | **798** |
+
+Per lane (A10): **Africa 251/35 → 253/35**, Asia 259/57, Americas 396/56, Europe
+556/86. **Africa trails Asia by six, where it trailed by nine four batches ago.**
+`node tools/validate.mjs`: **0 errors, 637 warnings** throughout.
+`node tools/cache-evidence.mjs`: **0 revisions that should be on disk and are
+not**, over all 3,071 `wikipedia-en` citations.
+
+**Both edges are inside one umbrella and neither crosses one**: every end of
+both is a child of `world-war-ii`, so A15(11)'s crossing count is unchanged at
+619 while the inside-one count rises from 615 to 617.

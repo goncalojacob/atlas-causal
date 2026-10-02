@@ -689,3 +689,11 @@ neither reached the resting picture.
 | `north-african-campaign` | `world-war-ii` | The item **does** carry a `P361` and it is not an umbrella this atlas holds: `Q696817`, the Mediterranean and Middle East Theatre of World War II. A8 says a filing writes every umbrella that fits, and the only one here is `world-war-ii` — 10 June 1940 to 16 May 1943 is inside its 1939-09-01 to 1945-09-02, and the article's own first words are *"The North African campaign of World War II"*, which is the subject stated by the title. The two African umbrellas do not reach it: `scramble-for-africa` closes in 1914 and `decolonisation-of-africa` opens in 1954. **Its lane is africa**, the second African filing in two batches, and it is the first record in the trailing lane that is itself an umbrella — Operation Torch, the Western Desert campaign, El Alamein and the Tunisian campaign are all its `P527` or its lead's own list, and every one of them would file inside it at +0 main. |
 
 **Main is 234 before and 234 after.**
+
+## Batch 97 — the conference that decided Sicily, and the fourth filing in the trailing lane
+
+| record | parent | why |
+| --- | --- | --- |
+| `casablanca-conference` | `world-war-ii` | By span and subject; the item carries no `P361`. 14 to 24 January 1943 is inside the umbrella's 1939-09-01 to 1945-09-02. The subject needs no reading at all: the item's `P2348` — the time period it belongs to — **is `Q362`, `world-war-ii`'s own item**, which is the closest thing to a stated filing any candidate in this lane has brought, and the first sentence says the conference was held *"to plan the Allied European strategy for the next phase of World War II"*. **Its lane is africa**, from the place record `casablanca` this batch wrote: the fourth African filing in three batches and the third inside this one umbrella, which is what §1b of the batch-95 stand predicted would happen once the lane stopped waiting on an umbrella of its own. |
+
+**Main is 234 before and 234 after.**
