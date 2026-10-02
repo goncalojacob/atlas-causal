@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "2012-2013-egyptian-protests",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3720660",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "2012–2013 Egyptian protests",
+    "pt": "Protestos no Egito em 2012–2013"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3720660"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2012–2013 Egyptian protests\", revision 1376813376"
+    }
+  ],
+  "title": "2012–2013 Egyptian protests",
+  "summary": "The English Wikipedia article \"2012–2013 Egyptian protests\", at revision 1376813376, opens: \"The 2012–2013 Egyptian protests were part of the crisis in Egypt including the June 2013 protests, the July 2013 coup d'état, and part of the post-coup unrest. They saw varying opposition against three contiguous heads of state; namely, the Supreme Council of the Armed Forces (SCAF), Muslim Brotherhood, and the de facto ruling Egyptian Armed Forces.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3720660, imported by tools/import/wikidata.mjs. The item's own description reads \"period of unrest around the 2012 presidential elections and 2013 coup\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2012,
+    "end": 2013,
+    "date": "2012-11-22",
+    "endDate": "2013-07-03"
+  },
+  "place": "egypt-q79",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

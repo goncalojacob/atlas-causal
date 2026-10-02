@@ -174,7 +174,7 @@
       ]
     },
     "import": {
-      "updated": "2026-10-01",
+      "updated": "2026-10-02",
       "pending": [],
       "done": [
         "Q64",
@@ -1991,7 +1991,15 @@
         "Q2039487",
         "Q4871945",
         "Q134376352",
-        "Q7097291"
+        "Q7097291",
+        "Q3720660",
+        "Q796498",
+        "Q138772633",
+        "Q124373310",
+        "Q4783165",
+        "Q852088",
+        "Q47015896",
+        "Q151622"
       ]
     }
   },
@@ -2205,6 +2213,10 @@
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     },
     "Q4872161": {
+      "on": "2026-10-01",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q138772633": {
       "on": "2026-10-01",
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }

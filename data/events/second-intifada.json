@@ -23,7 +23,8 @@
     "flags": [
       "imported-facts",
       "a9-place",
-      "summary-from-lead"
+      "summary-from-lead",
+      "filed-from-p361"
     ]
   },
   "origin": {
@@ -59,7 +60,7 @@
   "place": "occupied-palestinian-territory",
   "region": "asia",
   "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
-  "parent": "arab-israeli-conflict",
+  "parent": "israeli-palestinian-conflict",
   "category": "revolution",
   "actors": []
 }
