@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "fez-morocco",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q80985",
+  "wikipedia": {
+    "en": "Fez, Morocco",
+    "pt": "Fez"
+  },
+  "sitelinks": {
+    "count": 124,
+    "on": "2026-10-02"
+  },
+  "sources": [],
+  "names": [
+    "Fez",
+    "Fez, Morocco"
+  ],
+  "where": {
+    "lon": -5.003333333333333,
+    "lat": 34.04333333333334,
+    "precision": "city",
+    "label": "Fez, Morocco"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

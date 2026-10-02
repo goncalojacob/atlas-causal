@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "first-moroccan-crisis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "a9-place",
+      "a15-days",
+      "filed-by-span-and-subject"
+    ],
+    "note": "A15(4): the item dates this P580 1905-03-31 to P582 1906-05 (month); the cited article's first sentence states \"between March 31, 1905, and April 7, 1906\", which is carried here. A9: no own P625; P276 is Q126148, Tangier, a city whose point is in the africa lane, written as `tangier`. A6: P361 is empty, so the filing is by span and subject inside `scramble-for-africa`, whose navbox the article carries. Q5791104 has no category in the class table. Nobody has read this record."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q167455",
+  "wikipedia": {
+    "en": "First Moroccan Crisis",
+    "pt": "Primeira Crise de Marrocos"
+  },
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q167455"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Moroccan Crisis\", revision 1370619540"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Moroccan Crisis\", revision 1370619540, first sentence: \"between March 31, 1905, and April 7, 1906\""
+    }
+  ],
+  "title": "First Moroccan Crisis",
+  "summary": "The English Wikipedia article \"First Moroccan Crisis\", at revision 1370619540, opens: \"The First Moroccan Crisis or the Tangier Crisis was an international crisis between March 31, 1905, and April 7, 1906, over the status of Morocco. Germany wanted to challenge France's growing control over Morocco, aggravating France and Great Britain. The crisis was resolved by the Algeciras Conference of 1906, a conference of mostly European countries that affirmed French control; this worsened German relations with both France and Britain and helped enhance the new Anglo-French Entente.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q167455, whose P580 is 31 March 1905 at day precision and whose P582 is May 1906 at month precision; the span carried here is the one the article's own first sentence states, 31 March 1905 to 7 April 1906.",
+  "when": {
+    "start": 1905,
+    "end": 1906,
+    "date": "1905-03-31",
+    "endDate": "1906-04-07"
+  },
+  "place": "tangier",
+  "region": null,
+  "regionNote": null,
+  "parent": "scramble-for-africa",
+  "actors": []
+}

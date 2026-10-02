@@ -7,6 +7,12 @@
    "redirect": false,
    "missing": false
   },
+  "12-3 incident": {
+   "canonical": "12-3 incident",
+   "qid": "Q3182793",
+   "redirect": false,
+   "missing": false
+  },
   "13 Vendémiaire": {
    "canonical": "13 Vendémiaire",
    "qid": "Q720498",
@@ -196,6 +202,12 @@
   "1966 Nigerian coup d'état": {
    "canonical": "1966 Nigerian coup d'état",
    "qid": "Q16205928",
+   "redirect": false,
+   "missing": false
+  },
+  "1966 anti-Igbo pogrom": {
+   "canonical": "1966 anti-Igbo pogrom",
+   "qid": "Q4572480",
    "redirect": false,
    "missing": false
   },
@@ -535,6 +547,12 @@
    "redirect": false,
    "missing": false
   },
+  "2012–2013 Egyptian protests": {
+   "canonical": "2012–2013 Egyptian protests",
+   "qid": "Q3720660",
+   "redirect": false,
+   "missing": false
+  },
   "2013 Colombian clashes": {
    "canonical": "2013 Colombian clashes",
    "qid": "Q14186580",
@@ -709,6 +727,12 @@
    "redirect": false,
    "missing": false
   },
+  "Action of 1 January 1800": {
+   "canonical": "Action of 1 January 1800",
+   "qid": "Q2171443",
+   "redirect": false,
+   "missing": false
+  },
   "Action of 11 September 1778": {
    "canonical": "Action of 11 September 1778",
    "qid": "Q124344830",
@@ -802,6 +826,12 @@
   "Afghanistan": {
    "canonical": "Afghanistan",
    "qid": "Q889",
+   "redirect": false,
+   "missing": false
+  },
+  "Agadir Crisis": {
+   "canonical": "Agadir Crisis",
+   "qid": "Q164771",
    "redirect": false,
    "missing": false
   },
@@ -919,6 +949,12 @@
    "redirect": false,
    "missing": false
   },
+  "Angolan Wars": {
+   "canonical": "Angolan Wars",
+   "qid": "Q132776772",
+   "redirect": false,
+   "missing": false
+  },
   "Anschluss": {
    "canonical": "Anschluss",
    "qid": "Q154681",
@@ -928,6 +964,12 @@
   "Anti-Comintern Pact": {
    "canonical": "Anti-Comintern Pact",
    "qid": "Q152195",
+   "redirect": false,
+   "missing": false
+  },
+  "Arab Cold War": {
+   "canonical": "Arab Cold War",
+   "qid": "Q4783165",
    "redirect": false,
    "missing": false
   },
@@ -1039,9 +1081,27 @@
    "redirect": false,
    "missing": false
   },
+  "Attack on Bintan (1521)": {
+   "canonical": "Attack on Bintan (1521)",
+   "qid": "Q118900813",
+   "redirect": false,
+   "missing": false
+  },
+  "Attack on Zuwarah": {
+   "canonical": "Attack on Zuwarah",
+   "qid": "Q133837258",
+   "redirect": false,
+   "missing": false
+  },
   "Attack on the Moncada Barracks": {
    "canonical": "Attack on the Moncada Barracks",
    "qid": "Q11211553",
+   "redirect": false,
+   "missing": false
+  },
+  "Attacks on Fuerteventura in 1740": {
+   "canonical": "Attacks on Fuerteventura in 1740",
+   "qid": "Q22936135",
    "redirect": false,
    "missing": false
   },
@@ -1195,6 +1255,18 @@
    "redirect": false,
    "missing": false
   },
+  "Battle of Adyar": {
+   "canonical": "Battle of Adyar",
+   "qid": "Q4870217",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Afabet": {
+   "canonical": "Battle of Afabet",
+   "qid": "Q2039487",
+   "redirect": false,
+   "missing": false
+  },
   "Battle of Agnadello": {
    "canonical": "Battle of Agnadello",
    "qid": "Q1754732",
@@ -1216,6 +1288,12 @@
   "Battle of Alegría de Pío": {
    "canonical": "Battle of Alegría de Pío",
    "qid": "Q5778565",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Algiers (1541)": {
+   "canonical": "Battle of Algiers (1541)",
+   "qid": "Q2502863",
    "redirect": false,
    "missing": false
   },
@@ -1273,6 +1351,12 @@
    "redirect": false,
    "missing": false
   },
+  "Battle of Bantam": {
+   "canonical": "Battle of Bantam",
+   "qid": "Q2032681",
+   "redirect": false,
+   "missing": false
+  },
   "Battle of Baton Rouge (1779)": {
    "canonical": "Battle of Baton Rouge (1779)",
    "qid": "Q2888231",
@@ -1306,6 +1390,18 @@
   "Battle of Bloody Brook": {
    "canonical": "Battle of Bloody Brook",
    "qid": "Q885253",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Bloody Marsh": {
+   "canonical": "Battle of Bloody Marsh",
+   "qid": "Q2888163",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Bloody Mose": {
+   "canonical": "Battle of Bloody Mose",
+   "qid": "Q7510020",
    "redirect": false,
    "missing": false
   },
@@ -1381,6 +1477,12 @@
    "redirect": false,
    "missing": false
   },
+  "Battle of Cancha Rayada (1818)": {
+   "canonical": "Battle of Cancha Rayada (1818)",
+   "qid": "Q333088",
+   "redirect": false,
+   "missing": false
+  },
   "Battle of Cap-Français (1793)": {
    "canonical": "Battle of Cap-Français (1793)",
    "qid": "Q2890742",
@@ -1405,15 +1507,33 @@
    "redirect": false,
    "missing": false
   },
+  "Battle of Carabobo (1814)": {
+   "canonical": "Battle of Carabobo (1814)",
+   "qid": "Q5722281",
+   "redirect": false,
+   "missing": false
+  },
   "Battle of Cartagena de Indias": {
    "canonical": "Battle of Cartagena de Indias",
    "qid": "Q2366970",
    "redirect": false,
    "missing": false
   },
+  "Battle of Casa Forte": {
+   "canonical": "Battle of Casa Forte",
+   "qid": "Q18500027",
+   "redirect": false,
+   "missing": false
+  },
   "Battle of Casaloldo": {
    "canonical": "Battle of Casaloldo",
    "qid": "Q3636372",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Casicola": {
+   "canonical": "Battle of Casicola",
+   "qid": "Q138632220",
    "redirect": false,
    "missing": false
   },
@@ -1639,6 +1759,12 @@
    "redirect": false,
    "missing": false
   },
+  "Battle of Fort Washington": {
+   "canonical": "Battle of Fort Washington",
+   "qid": "Q706755",
+   "redirect": false,
+   "missing": false
+  },
   "Battle of Frankfurt an der Oder": {
    "canonical": "Battle of Frankfurt an der Oder",
    "qid": "Q3636439",
@@ -1648,6 +1774,12 @@
   "Battle of Freiburg": {
    "canonical": "Battle of Freiburg",
    "qid": "Q174574",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Gannoruwa": {
+   "canonical": "Battle of Gannoruwa",
+   "qid": "Q4871077",
    "redirect": false,
    "missing": false
   },
@@ -1666,6 +1798,12 @@
   "Battle of Gibraltar (1621)": {
    "canonical": "Battle of Gibraltar (1621)",
    "qid": "Q2890865",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Goa (1638)": {
+   "canonical": "Battle of Goa (1638)",
+   "qid": "Q4871118",
    "redirect": false,
    "missing": false
   },
@@ -1720,6 +1858,12 @@
   "Battle of Hamburger Hill": {
    "canonical": "Battle of Hamburger Hill",
    "qid": "Q247395",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Harlem Heights": {
+   "canonical": "Battle of Harlem Heights",
+   "qid": "Q668595",
    "redirect": false,
    "missing": false
   },
@@ -1813,6 +1957,12 @@
    "redirect": false,
    "missing": false
   },
+  "Battle of Jambi": {
+   "canonical": "Battle of Jambi",
+   "qid": "Q130198485",
+   "redirect": false,
+   "missing": false
+  },
   "Battle of Jankau": {
    "canonical": "Battle of Jankau",
    "qid": "Q1415925",
@@ -1828,6 +1978,12 @@
   "Battle of Jean-Rabel": {
    "canonical": "Battle of Jean-Rabel",
    "qid": "Q4871314",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Johor (1586)": {
+   "canonical": "Battle of Johor (1586)",
+   "qid": "Q127868092",
    "redirect": false,
    "missing": false
   },
@@ -1888,6 +2044,12 @@
   "Battle of Kidal (2012)": {
    "canonical": "Battle of Kidal (2012)",
    "qid": "Q3560870",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Kitombo": {
+   "canonical": "Battle of Kitombo",
+   "qid": "Q4871456",
    "redirect": false,
    "missing": false
   },
@@ -2029,6 +2191,12 @@
    "redirect": false,
    "missing": false
   },
+  "Battle of Long Island": {
+   "canonical": "Battle of Long Island",
+   "qid": "Q862751",
+   "redirect": false,
+   "missing": false
+  },
   "Battle of Long Tan": {
    "canonical": "Battle of Long Tan",
    "qid": "Q259526",
@@ -2047,6 +2215,12 @@
    "redirect": false,
    "missing": false
   },
+  "Battle of Macau": {
+   "canonical": "Battle of Macau",
+   "qid": "Q704333",
+   "redirect": false,
+   "missing": false
+  },
   "Battle of Madras": {
    "canonical": "Battle of Madras",
    "qid": "Q3063400",
@@ -2056,6 +2230,24 @@
   "Battle of Magersfontein": {
    "canonical": "Battle of Magersfontein",
    "qid": "Q1388058",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Maipú": {
+   "canonical": "Battle of Maipú",
+   "qid": "Q1073849",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Malacca (1534)": {
+   "canonical": "Battle of Malacca (1534)",
+   "qid": "Q127868126",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Mannar (1658)": {
+   "canonical": "Battle of Mannar (1658)",
+   "qid": "Q130478490",
    "redirect": false,
    "missing": false
   },
@@ -2110,6 +2302,18 @@
   "Battle of Mataquito": {
    "canonical": "Battle of Mataquito",
    "qid": "Q1617667",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Mbidizi River": {
+   "canonical": "Battle of Mbidizi River",
+   "qid": "Q4871702",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Mbwila": {
+   "canonical": "Battle of Mbwila",
+   "qid": "Q1752752",
    "redirect": false,
    "missing": false
   },
@@ -2203,6 +2407,12 @@
    "redirect": false,
    "missing": false
   },
+  "Battle of Mulleriyawa": {
+   "canonical": "Battle of Mulleriyawa",
+   "qid": "Q4871824",
+   "redirect": false,
+   "missing": false
+  },
   "Battle of Nam River": {
    "canonical": "Battle of Nam River",
    "qid": "Q2890901",
@@ -2266,6 +2476,12 @@
   "Battle of Ollantaytambo": {
    "canonical": "Battle of Ollantaytambo",
    "qid": "Q2338569",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Onjong": {
+   "canonical": "Battle of Onjong",
+   "qid": "Q4871945",
    "redirect": false,
    "missing": false
   },
@@ -2359,6 +2575,12 @@
    "redirect": false,
    "missing": false
   },
+  "Battle of Porto Praya": {
+   "canonical": "Battle of Porto Praya",
+   "qid": "Q2732287",
+   "redirect": false,
+   "missing": false
+  },
   "Battle of Prague (1648)": {
    "canonical": "Battle of Prague (1648)",
    "qid": "Q3494380",
@@ -2371,9 +2593,21 @@
    "redirect": false,
    "missing": false
   },
+  "Battle of Princeton": {
+   "canonical": "Battle of Princeton",
+   "qid": "Q1132579",
+   "redirect": false,
+   "missing": false
+  },
   "Battle of Providien": {
    "canonical": "Battle of Providien",
    "qid": "Q2601189",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Príncipe": {
+   "canonical": "Battle of Príncipe",
+   "qid": "Q138002239",
    "redirect": false,
    "missing": false
   },
@@ -2392,6 +2626,18 @@
   "Battle of Puerto de Cavite": {
    "canonical": "Battle of Puerto de Cavite",
    "qid": "Q2890933",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Pulo Buton": {
+   "canonical": "Battle of Pulo Buton",
+   "qid": "Q131686861",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Pungo Andongo": {
+   "canonical": "Battle of Pungo Andongo",
+   "qid": "Q109058273",
    "redirect": false,
    "missing": false
   },
@@ -2434,6 +2680,12 @@
   "Battle of Rancagua": {
    "canonical": "Battle of Rancagua",
    "qid": "Q1310755",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Randeniwela": {
+   "canonical": "Battle of Randeniwela",
+   "qid": "Q4872161",
    "redirect": false,
    "missing": false
   },
@@ -2536,6 +2788,12 @@
   "Battle of Salamanca": {
    "canonical": "Battle of Salamanca",
    "qid": "Q708580",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Salta": {
+   "canonical": "Battle of Salta",
+   "qid": "Q592091",
    "redirect": false,
    "missing": false
   },
@@ -2665,6 +2923,12 @@
    "redirect": false,
    "missing": false
   },
+  "Battle of São Salvador": {
+   "canonical": "Battle of São Salvador",
+   "qid": "Q4872479",
+   "redirect": false,
+   "missing": false
+  },
   "Battle of Tabocas": {
    "canonical": "Battle of Tabocas",
    "qid": "Q4872481",
@@ -2680,6 +2944,12 @@
   "Battle of Taejon": {
    "canonical": "Battle of Taejon",
    "qid": "Q492880",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Talandongo": {
+   "canonical": "Battle of Talandongo",
+   "qid": "Q130485022",
    "redirect": false,
    "missing": false
   },
@@ -2749,6 +3019,12 @@
    "redirect": false,
    "missing": false
   },
+  "Battle of Trenton": {
+   "canonical": "Battle of Trenton",
+   "qid": "Q653664",
+   "redirect": false,
+   "missing": false
+  },
   "Battle of Triebl": {
    "canonical": "Battle of Triebl",
    "qid": "Q2237118",
@@ -2812,6 +3088,18 @@
   "Battle of Two Sisters": {
    "canonical": "Battle of Two Sisters",
    "qid": "Q4872617",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Ugentana": {
+   "canonical": "Battle of Ugentana",
+   "qid": "Q116214211",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of Ugentana (1536)": {
+   "canonical": "Battle of Ugentana (1536)",
+   "qid": "Q116214216",
    "redirect": false,
    "missing": false
   },
@@ -2929,6 +3217,12 @@
    "redirect": false,
    "missing": false
   },
+  "Battle of White Plains": {
+   "canonical": "Battle of White Plains",
+   "qid": "Q960723",
+   "redirect": false,
+   "missing": false
+  },
   "Battle of Wiesloch (1632)": {
    "canonical": "Battle of Wiesloch (1632)",
    "qid": "Q835869",
@@ -3010,6 +3304,12 @@
   "Battle of the Alte Veste": {
    "canonical": "Battle of the Alte Veste",
    "qid": "Q2002331",
+   "redirect": false,
+   "missing": false
+  },
+  "Battle of the Assunpink Creek": {
+   "canonical": "Battle of the Assunpink Creek",
+   "qid": "Q233417",
    "redirect": false,
    "missing": false
   },
@@ -3229,6 +3529,12 @@
    "redirect": false,
    "missing": false
   },
+  "Bizerte crisis": {
+   "canonical": "Bizerte crisis",
+   "qid": "Q879267",
+   "redirect": false,
+   "missing": false
+  },
   "Black Monday (1987)": {
    "canonical": "Black Monday (1987)",
    "qid": "Q868261",
@@ -3250,6 +3556,12 @@
   "Blockade of Saint-Domingue": {
    "canonical": "Blockade of Saint-Domingue",
    "qid": "Q4927230",
+   "redirect": false,
+   "missing": false
+  },
+  "Blockade of Zanzibar": {
+   "canonical": "Blockade of Zanzibar",
+   "qid": "Q134376352",
    "redirect": false,
    "missing": false
   },
@@ -3529,6 +3841,12 @@
    "redirect": false,
    "missing": false
   },
+  "Cambodian genocide": {
+   "canonical": "Cambodian genocide",
+   "qid": "Q2885072",
+   "redirect": false,
+   "missing": false
+  },
   "Cambodian–Vietnamese War": {
    "canonical": "Cambodian–Vietnamese War",
    "qid": "Q635533",
@@ -3538,6 +3856,12 @@
   "Cameroon": {
    "canonical": "Cameroon",
    "qid": "Q1009",
+   "redirect": false,
+   "missing": false
+  },
+  "Camp David Accords": {
+   "canonical": "Camp David Accords",
+   "qid": "Q309204",
    "redirect": false,
    "missing": false
   },
@@ -3583,6 +3907,12 @@
    "redirect": false,
    "missing": false
   },
+  "Capture of Amboina": {
+   "canonical": "Capture of Amboina",
+   "qid": "Q117350122",
+   "redirect": false,
+   "missing": false
+  },
   "Capture of Ayaviri": {
    "canonical": "Capture of Ayaviri",
    "qid": "Q140157741",
@@ -3619,6 +3949,24 @@
    "redirect": false,
    "missing": false
   },
+  "Capture of Mahdia (1550)": {
+   "canonical": "Capture of Mahdia (1550)",
+   "qid": "Q5037032",
+   "redirect": false,
+   "missing": false
+  },
+  "Capture of Malacca (1511)": {
+   "canonical": "Capture of Malacca (1511)",
+   "qid": "Q4110453",
+   "redirect": false,
+   "missing": false
+  },
+  "Capture of Peñón of Algiers (1529)": {
+   "canonical": "Capture of Peñón of Algiers (1529)",
+   "qid": "Q3403025",
+   "redirect": false,
+   "missing": false
+  },
   "Capture of Sint Eustatius": {
    "canonical": "Capture of Sint Eustatius",
    "qid": "Q4188867",
@@ -3634,6 +3982,12 @@
   "Capture of Tortuga": {
    "canonical": "Capture of Tortuga",
    "qid": "Q112083686",
+   "redirect": false,
+   "missing": false
+  },
+  "Capture of Tunis (1569)": {
+   "canonical": "Capture of Tunis (1569)",
+   "qid": "Q107240919",
    "redirect": false,
    "missing": false
   },
@@ -3817,9 +4171,39 @@
    "redirect": false,
    "missing": false
   },
+  "Conquest of Koneswaram Temple": {
+   "canonical": "Conquest of Koneswaram Temple",
+   "qid": "Q125166578",
+   "redirect": false,
+   "missing": false
+  },
   "Conquest of Paraíba": {
    "canonical": "Conquest of Paraíba",
    "qid": "Q121494180",
+   "redirect": false,
+   "missing": false
+  },
+  "Conquest of Tunis (1534)": {
+   "canonical": "Conquest of Tunis (1534)",
+   "qid": "Q5245689",
+   "redirect": false,
+   "missing": false
+  },
+  "Conquest of Tunis (1535)": {
+   "canonical": "Conquest of Tunis (1535)",
+   "qid": "Q700893",
+   "redirect": false,
+   "missing": false
+  },
+  "Conquest of Tunis (1573)": {
+   "canonical": "Conquest of Tunis (1573)",
+   "qid": "Q12251145",
+   "redirect": false,
+   "missing": false
+  },
+  "Conquest of Tunis (1574)": {
+   "canonical": "Conquest of Tunis (1574)",
+   "qid": "Q2664371",
    "redirect": false,
    "missing": false
   },
@@ -3916,6 +4300,12 @@
   "Crossing of the Andes": {
    "canonical": "Crossing of the Andes",
    "qid": "Q968126",
+   "redirect": false,
+   "missing": false
+  },
+  "Cuanza River Campaign": {
+   "canonical": "Cuanza River Campaign",
+   "qid": "Q130493316",
    "redirect": false,
    "missing": false
   },
@@ -4075,6 +4465,24 @@
    "redirect": false,
    "missing": false
   },
+  "Dutch conquest of Malabar": {
+   "canonical": "Dutch conquest of Malabar",
+   "qid": "Q122452193",
+   "redirect": false,
+   "missing": false
+  },
+  "Dutch invasions of Brazil": {
+   "canonical": "Dutch invasions of Brazil",
+   "qid": "Q19019163",
+   "redirect": false,
+   "missing": false
+  },
+  "Dutch occupation of Tiruchendur": {
+   "canonical": "Dutch occupation of Tiruchendur",
+   "qid": "Q25830845",
+   "redirect": false,
+   "missing": false
+  },
   "Dutch–Portuguese War": {
    "canonical": "Dutch–Portuguese War",
    "qid": "Q377269",
@@ -4144,6 +4552,12 @@
   "Egyptian revolution of 1952": {
    "canonical": "Egyptian revolution of 1952",
    "qid": "Q1780431",
+   "redirect": false,
+   "missing": false
+  },
+  "Egypt–Israel peace treaty": {
+   "canonical": "Egypt–Israel peace treaty",
+   "qid": "Q1129412",
    "redirect": false,
    "missing": false
   },
@@ -4309,6 +4723,12 @@
    "redirect": false,
    "missing": false
   },
+  "Fashoda Incident": {
+   "canonical": "Fashoda Incident",
+   "qid": "Q722699",
+   "redirect": false,
+   "missing": false
+  },
   "February Revolution": {
    "canonical": "February Revolution",
    "qid": "Q101534",
@@ -4324,6 +4744,12 @@
   "Fiji": {
    "canonical": "Fiji",
    "qid": "Q712",
+   "redirect": false,
+   "missing": false
+  },
+  "Filips van Zuylen's campaign against Luanda": {
+   "canonical": "Filips van Zuylen's campaign against Luanda",
+   "qid": "Q130377423",
    "redirect": false,
    "missing": false
   },
@@ -4387,6 +4813,12 @@
    "redirect": false,
    "missing": false
   },
+  "First Battle of the Lucala": {
+   "canonical": "First Battle of the Lucala",
+   "qid": "Q138641767",
+   "redirect": false,
+   "missing": false
+  },
   "First Carnatic War": {
    "canonical": "First Carnatic War",
    "qid": "Q1362162",
@@ -4438,6 +4870,12 @@
   "First Matabele War": {
    "canonical": "First Matabele War",
    "qid": "Q857982",
+   "redirect": false,
+   "missing": false
+  },
+  "First Moroccan Crisis": {
+   "canonical": "First Moroccan Crisis",
+   "qid": "Q167455",
    "redirect": false,
    "missing": false
   },
@@ -5041,6 +5479,12 @@
    "redirect": false,
    "missing": false
   },
+  "Invasion of Georgia (1742)": {
+   "canonical": "Invasion of Georgia (1742)",
+   "qid": "Q6059634",
+   "redirect": false,
+   "missing": false
+  },
   "Invasion of Jersey (1779)": {
    "canonical": "Invasion of Jersey (1779)",
    "qid": "Q5484470",
@@ -5101,6 +5545,12 @@
    "redirect": false,
    "missing": false
   },
+  "Iraqi conflict": {
+   "canonical": "Iraqi conflict",
+   "qid": "Q47015896",
+   "redirect": false,
+   "missing": false
+  },
   "Iraqi insurgency (2003–2011)": {
    "canonical": "Iraqi insurgency (2003–2011)",
    "qid": "Q926905",
@@ -5128,6 +5578,12 @@
   "Israeli Declaration of Independence": {
    "canonical": "Israeli Declaration of Independence",
    "qid": "Q223732",
+   "redirect": false,
+   "missing": false
+  },
+  "Israeli–Palestinian conflict": {
+   "canonical": "Israeli–Palestinian conflict",
+   "qid": "Q151622",
    "redirect": false,
    "missing": false
   },
@@ -5227,6 +5683,12 @@
    "redirect": false,
    "missing": false
   },
+  "Japanese invasion of French Indochina": {
+   "canonical": "Japanese invasion of French Indochina",
+   "qid": "Q140025",
+   "redirect": false,
+   "missing": false
+  },
   "Japanese invasion of Sakhalin": {
    "canonical": "Japanese invasion of Sakhalin",
    "qid": "Q4538445",
@@ -5242,6 +5704,12 @@
   "Japan–Korea Treaty of 1910": {
    "canonical": "Japan–Korea Treaty of 1910",
    "qid": "Q495558",
+   "redirect": false,
+   "missing": false
+  },
+  "Jaragua massacre": {
+   "canonical": "Jaragua massacre",
+   "qid": "Q6159472",
    "redirect": false,
    "missing": false
   },
@@ -5266,6 +5734,12 @@
   "Junker mutiny": {
    "canonical": "Junker mutiny",
    "qid": "Q28492393",
+   "redirect": false,
+   "missing": false
+  },
+  "Kandyan commerce raiding against Portugal (1612–1613)": {
+   "canonical": "Kandyan commerce raiding against Portugal (1612–1613)",
+   "qid": "Q16250240",
    "redirect": false,
    "missing": false
   },
@@ -5356,6 +5830,12 @@
   "Kingdom of Portugal": {
    "canonical": "Kingdom of Portugal",
    "qid": "Q45670",
+   "redirect": false,
+   "missing": false
+  },
+  "Kongo Civil War": {
+   "canonical": "Kongo Civil War",
+   "qid": "Q6429210",
    "redirect": false,
    "missing": false
   },
@@ -5581,9 +6061,21 @@
    "redirect": false,
    "missing": false
   },
+  "Malayan Emergency": {
+   "canonical": "Malayan Emergency",
+   "qid": "Q2354629",
+   "redirect": false,
+   "missing": false
+  },
   "Malaysia": {
    "canonical": "Malaysia",
    "qid": "Q833",
+   "redirect": false,
+   "missing": false
+  },
+  "Malay–Portuguese conflicts": {
+   "canonical": "Malay–Portuguese conflicts",
+   "qid": "Q16932099",
    "redirect": false,
    "missing": false
   },
@@ -5698,6 +6190,12 @@
   "Mexico": {
    "canonical": "Mexico",
    "qid": "Q96",
+   "redirect": false,
+   "missing": false
+  },
+  "Middle Eastern crisis (2023–present)": {
+   "canonical": "Middle Eastern crisis (2023–present)",
+   "qid": "Q124373310",
    "redirect": false,
    "missing": false
   },
@@ -5833,6 +6331,12 @@
    "redirect": false,
    "missing": false
   },
+  "Myanmar conflict": {
+   "canonical": "Myanmar conflict",
+   "qid": "Q852088",
+   "redirect": false,
+   "missing": false
+  },
   "Namibia": {
    "canonical": "Namibia",
    "qid": "Q1030",
@@ -5908,6 +6412,12 @@
   "New Laws": {
    "canonical": "New Laws",
    "qid": "Q1121487",
+   "redirect": false,
+   "missing": false
+  },
+  "New York and New Jersey campaign": {
+   "canonical": "New York and New Jersey campaign",
+   "qid": "Q2630469",
    "redirect": false,
    "missing": false
   },
@@ -6091,6 +6601,12 @@
    "redirect": false,
    "missing": false
   },
+  "Operation Minden": {
+   "canonical": "Operation Minden",
+   "qid": "Q7097291",
+   "redirect": false,
+   "missing": false
+  },
   "Operation Musketeer (1956)": {
    "canonical": "Operation Musketeer (1956)",
    "qid": "Q2915155",
@@ -6133,6 +6649,12 @@
    "redirect": false,
    "missing": false
   },
+  "Operation Savannah (Angola)": {
+   "canonical": "Operation Savannah (Angola)",
+   "qid": "Q7097499",
+   "redirect": false,
+   "missing": false
+  },
   "Operation Serval": {
    "canonical": "Operation Serval",
    "qid": "Q2926766",
@@ -6172,6 +6694,12 @@
   "Ottoman Empire": {
    "canonical": "Ottoman Empire",
    "qid": "Q12560",
+   "redirect": false,
+   "missing": false
+  },
+  "Ottoman–Habsburg wars": {
+   "canonical": "Ottoman–Habsburg wars",
+   "qid": "Q786171",
    "redirect": false,
    "missing": false
   },
@@ -6661,6 +7189,12 @@
    "redirect": false,
    "missing": false
   },
+  "Roland Crappé's raids on Portuguese colonies": {
+   "canonical": "Roland Crappé's raids on Portuguese colonies",
+   "qid": "Q125701269",
+   "redirect": false,
+   "missing": false
+  },
   "Romani Holocaust": {
    "canonical": "Romani Holocaust",
    "qid": "Q117571",
@@ -6733,6 +7267,12 @@
    "redirect": false,
    "missing": false
   },
+  "Russian invasion of Manchuria": {
+   "canonical": "Russian invasion of Manchuria",
+   "qid": "Q2177009",
+   "redirect": false,
+   "missing": false
+  },
   "Russo-Georgian War": {
    "canonical": "Russo-Georgian War",
    "qid": "Q620735",
@@ -6775,6 +7315,12 @@
    "redirect": false,
    "missing": false
   },
+  "Rwandan Revolution": {
+   "canonical": "Rwandan Revolution",
+   "qid": "Q4162685",
+   "redirect": false,
+   "missing": false
+  },
   "Rwandan genocide": {
    "canonical": "Rwandan genocide",
    "qid": "Q131297",
@@ -6790,6 +7336,12 @@
   "Sabra and Shatila massacre": {
    "canonical": "Sabra and Shatila massacre",
    "qid": "Q208199",
+   "redirect": false,
+   "missing": false
+  },
+  "Sack of Bombay (1626)": {
+   "canonical": "Sack of Bombay (1626)",
+   "qid": "Q137801200",
    "redirect": false,
    "missing": false
   },
@@ -7075,6 +7627,12 @@
    "redirect": false,
    "missing": false
   },
+  "Siege of Anzele": {
+   "canonical": "Siege of Anzele",
+   "qid": "Q138606175",
+   "redirect": false,
+   "missing": false
+  },
   "Siege of Arras (1640)": {
    "canonical": "Siege of Arras (1640)",
    "qid": "Q815115",
@@ -7147,9 +7705,21 @@
    "redirect": false,
    "missing": false
   },
+  "Siege of Campar": {
+   "canonical": "Siege of Campar",
+   "qid": "Q130520296",
+   "redirect": false,
+   "missing": false
+  },
   "Siege of Ciudad Rodrigo (1812)": {
    "canonical": "Siege of Ciudad Rodrigo (1812)",
    "qid": "Q567571",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Colombo (1587–1588)": {
+   "canonical": "Siege of Colombo (1587–1588)",
+   "qid": "Q125998118",
    "redirect": false,
    "missing": false
   },
@@ -7162,6 +7732,12 @@
   "Siege of Crema (1514)": {
    "canonical": "Siege of Crema (1514)",
    "qid": "Q110448326",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Cuddalore (1748)": {
+   "canonical": "Siege of Cuddalore (1748)",
+   "qid": "Q2888637",
    "redirect": false,
    "missing": false
   },
@@ -7249,6 +7825,12 @@
    "redirect": false,
    "missing": false
   },
+  "Siege of Jacmel": {
+   "canonical": "Siege of Jacmel",
+   "qid": "Q140288692",
+   "redirect": false,
+   "missing": false
+  },
   "Siege of Jadotville": {
    "canonical": "Siege of Jadotville",
    "qid": "Q2404547",
@@ -7258,6 +7840,12 @@
   "Siege of Jaffa": {
    "canonical": "Siege of Jaffa",
    "qid": "Q3178783",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Johor (1587)": {
+   "canonical": "Siege of Johor (1587)",
+   "qid": "Q55633157",
    "redirect": false,
    "missing": false
   },
@@ -7327,6 +7915,12 @@
    "redirect": false,
    "missing": false
   },
+  "Siege of Malacca (1551)": {
+   "canonical": "Siege of Malacca (1551)",
+   "qid": "Q121283200",
+   "redirect": false,
+   "missing": false
+  },
   "Siege of Malacca (1606)": {
    "canonical": "Siege of Malacca (1606)",
    "qid": "Q7510222",
@@ -7360,6 +7954,18 @@
   "Siege of Mitú": {
    "canonical": "Siege of Mitú",
    "qid": "Q3403831",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Mozambique (1607)": {
+   "canonical": "Siege of Mozambique (1607)",
+   "qid": "Q121433548",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Mozambique (1608)": {
+   "canonical": "Siege of Mozambique (1608)",
+   "qid": "Q122227094",
    "redirect": false,
    "missing": false
   },
@@ -7507,6 +8113,12 @@
    "redirect": false,
    "missing": false
   },
+  "Siege of St. Augustine (1740)": {
+   "canonical": "Siege of St. Augustine (1740)",
+   "qid": "Q3486020",
+   "redirect": false,
+   "missing": false
+  },
   "Siege of Stralsund (1628)": {
    "canonical": "Siege of Stralsund (1628)",
    "qid": "Q2612839",
@@ -7522,6 +8134,12 @@
   "Siege of Tournai (1745)": {
    "canonical": "Siege of Tournai (1745)",
    "qid": "Q16677044",
+   "redirect": false,
+   "missing": false
+  },
+  "Siege of Tripoli (1551)": {
+   "canonical": "Siege of Tripoli (1551)",
+   "qid": "Q2860095",
    "redirect": false,
    "missing": false
   },
@@ -7579,6 +8197,12 @@
    "redirect": false,
    "missing": false
   },
+  "Sinhalese–Portuguese conflicts": {
+   "canonical": "Sinhalese–Portuguese conflicts",
+   "qid": "Q17034772",
+   "redirect": false,
+   "missing": false
+  },
   "Sinking of ARA General Belgrano": {
    "canonical": "Sinking of ARA General Belgrano",
    "qid": "Q3284956",
@@ -7600,6 +8224,12 @@
   "Sino-Vietnamese War": {
    "canonical": "Sino-Vietnamese War",
    "qid": "Q623171",
+   "redirect": false,
+   "missing": false
+  },
+  "Sitawaka campaign": {
+   "canonical": "Sitawaka campaign",
+   "qid": "Q136605166",
    "redirect": false,
    "missing": false
   },
@@ -8095,6 +8725,12 @@
    "redirect": false,
    "missing": false
   },
+  "Third Indochina War": {
+   "canonical": "Third Indochina War",
+   "qid": "Q796498",
+   "redirect": false,
+   "missing": false
+  },
   "Third Portuguese Republic": {
    "canonical": "Third Portuguese Republic",
    "qid": "Q1259200",
@@ -8167,6 +8803,12 @@
    "redirect": false,
    "missing": false
   },
+  "Treaty of Addis Ababa": {
+   "canonical": "Treaty of Addis Ababa",
+   "qid": "Q2399119",
+   "redirect": false,
+   "missing": false
+  },
   "Treaty of Amsterdam": {
    "canonical": "Treaty of Amsterdam",
    "qid": "Q193739",
@@ -8182,6 +8824,12 @@
   "Treaty of Bucharest (1913)": {
    "canonical": "Treaty of Bucharest (1913)",
    "qid": "Q500067",
+   "redirect": false,
+   "missing": false
+  },
+  "Treaty of Fes": {
+   "canonical": "Treaty of Fes",
+   "qid": "Q931982",
    "redirect": false,
    "missing": false
   },
@@ -8800,630 +9448,6 @@
   "Łódź insurrection": {
    "canonical": "Łódź insurrection",
    "qid": "Q766868",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Long Island": {
-   "canonical": "Battle of Long Island",
-   "qid": "Q862751",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Trenton": {
-   "canonical": "Battle of Trenton",
-   "qid": "Q653664",
-   "redirect": false,
-   "missing": false
-  },
-  "New York and New Jersey campaign": {
-   "canonical": "New York and New Jersey campaign",
-   "qid": "Q2630469",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Fort Washington": {
-   "canonical": "Battle of Fort Washington",
-   "qid": "Q706755",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Harlem Heights": {
-   "canonical": "Battle of Harlem Heights",
-   "qid": "Q668595",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Princeton": {
-   "canonical": "Battle of Princeton",
-   "qid": "Q1132579",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of White Plains": {
-   "canonical": "Battle of White Plains",
-   "qid": "Q960723",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of the Assunpink Creek": {
-   "canonical": "Battle of the Assunpink Creek",
-   "qid": "Q233417",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Adyar": {
-   "canonical": "Battle of Adyar",
-   "qid": "Q4870217",
-   "redirect": false,
-   "missing": false
-  },
-  "Filips van Zuylen's campaign against Luanda": {
-   "canonical": "Filips van Zuylen's campaign against Luanda",
-   "qid": "Q130377423",
-   "redirect": false,
-   "missing": false
-  },
-  "Siege of Cuddalore (1748)": {
-   "canonical": "Siege of Cuddalore (1748)",
-   "qid": "Q2888637",
-   "redirect": false,
-   "missing": false
-  },
-  "Fashoda Incident": {
-   "canonical": "Fashoda Incident",
-   "qid": "Q722699",
-   "redirect": false,
-   "missing": false
-  },
-  "Treaty of Addis Ababa": {
-   "canonical": "Treaty of Addis Ababa",
-   "qid": "Q2399119",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Cancha Rayada (1818)": {
-   "canonical": "Battle of Cancha Rayada (1818)",
-   "qid": "Q333088",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Maipú": {
-   "canonical": "Battle of Maipú",
-   "qid": "Q1073849",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Salta": {
-   "canonical": "Battle of Salta",
-   "qid": "Q592091",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Carabobo (1814)": {
-   "canonical": "Battle of Carabobo (1814)",
-   "qid": "Q5722281",
-   "redirect": false,
-   "missing": false
-  },
-  "Rwandan Revolution": {
-   "canonical": "Rwandan Revolution",
-   "qid": "Q4162685",
-   "redirect": false,
-   "missing": false
-  },
-  "Malayan Emergency": {
-   "canonical": "Malayan Emergency",
-   "qid": "Q2354629",
-   "redirect": false,
-   "missing": false
-  },
-  "Cambodian genocide": {
-   "canonical": "Cambodian genocide",
-   "qid": "Q2885072",
-   "redirect": false,
-   "missing": false
-  },
-  "12-3 incident": {
-   "canonical": "12-3 incident",
-   "qid": "Q3182793",
-   "redirect": false,
-   "missing": false
-  },
-  "Camp David Accords": {
-   "canonical": "Camp David Accords",
-   "qid": "Q309204",
-   "redirect": false,
-   "missing": false
-  },
-  "Egypt–Israel peace treaty": {
-   "canonical": "Egypt–Israel peace treaty",
-   "qid": "Q1129412",
-   "redirect": false,
-   "missing": false
-  },
-  "Japanese invasion of French Indochina": {
-   "canonical": "Japanese invasion of French Indochina",
-   "qid": "Q140025",
-   "redirect": false,
-   "missing": false
-  },
-  "Russian invasion of Manchuria": {
-   "canonical": "Russian invasion of Manchuria",
-   "qid": "Q2177009",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Afabet": {
-   "canonical": "Battle of Afabet",
-   "qid": "Q2039487",
-   "redirect": false,
-   "missing": false
-  },
-  "Operation Savannah (Angola)": {
-   "canonical": "Operation Savannah (Angola)",
-   "qid": "Q7097499",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Onjong": {
-   "canonical": "Battle of Onjong",
-   "qid": "Q4871945",
-   "redirect": false,
-   "missing": false
-  },
-  "Blockade of Zanzibar": {
-   "canonical": "Blockade of Zanzibar",
-   "qid": "Q134376352",
-   "redirect": false,
-   "missing": false
-  },
-  "Operation Minden": {
-   "canonical": "Operation Minden",
-   "qid": "Q7097291",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Algiers (1541)": {
-   "canonical": "Battle of Algiers (1541)",
-   "qid": "Q2502863",
-   "redirect": false,
-   "missing": false
-  },
-  "Capture of Peñón of Algiers (1529)": {
-   "canonical": "Capture of Peñón of Algiers (1529)",
-   "qid": "Q3403025",
-   "redirect": false,
-   "missing": false
-  },
-  "Capture of Tunis (1569)": {
-   "canonical": "Capture of Tunis (1569)",
-   "qid": "Q107240919",
-   "redirect": false,
-   "missing": false
-  },
-  "Conquest of Tunis (1534)": {
-   "canonical": "Conquest of Tunis (1534)",
-   "qid": "Q5245689",
-   "redirect": false,
-   "missing": false
-  },
-  "Conquest of Tunis (1535)": {
-   "canonical": "Conquest of Tunis (1535)",
-   "qid": "Q700893",
-   "redirect": false,
-   "missing": false
-  },
-  "Conquest of Tunis (1573)": {
-   "canonical": "Conquest of Tunis (1573)",
-   "qid": "Q12251145",
-   "redirect": false,
-   "missing": false
-  },
-  "Conquest of Tunis (1574)": {
-   "canonical": "Conquest of Tunis (1574)",
-   "qid": "Q2664371",
-   "redirect": false,
-   "missing": false
-  },
-  "Ottoman–Habsburg wars": {
-   "canonical": "Ottoman–Habsburg wars",
-   "qid": "Q786171",
-   "redirect": false,
-   "missing": false
-  },
-  "Capture of Malacca (1511)": {
-   "canonical": "Capture of Malacca (1511)",
-   "qid": "Q4110453",
-   "redirect": false,
-   "missing": false
-  },
-  "Malay–Portuguese conflicts": {
-   "canonical": "Malay–Portuguese conflicts",
-   "qid": "Q16932099",
-   "redirect": false,
-   "missing": false
-  },
-  "Siege of Malacca (1551)": {
-   "canonical": "Siege of Malacca (1551)",
-   "qid": "Q121283200",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Bantam": {
-   "canonical": "Battle of Bantam",
-   "qid": "Q2032681",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Goa (1638)": {
-   "canonical": "Battle of Goa (1638)",
-   "qid": "Q4871118",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Macau": {
-   "canonical": "Battle of Macau",
-   "qid": "Q704333",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Mannar (1658)": {
-   "canonical": "Battle of Mannar (1658)",
-   "qid": "Q130478490",
-   "redirect": false,
-   "missing": false
-  },
-  "Siege of Mozambique (1607)": {
-   "canonical": "Siege of Mozambique (1607)",
-   "qid": "Q121433548",
-   "redirect": false,
-   "missing": false
-  },
-  "Siege of Mozambique (1608)": {
-   "canonical": "Siege of Mozambique (1608)",
-   "qid": "Q122227094",
-   "redirect": false,
-   "missing": false
-  },
-  "Attack on Bintan (1521)": {
-   "canonical": "Attack on Bintan (1521)",
-   "qid": "Q118900813",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Johor (1586)": {
-   "canonical": "Battle of Johor (1586)",
-   "qid": "Q127868092",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Malacca (1534)": {
-   "canonical": "Battle of Malacca (1534)",
-   "qid": "Q127868126",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Ugentana (1536)": {
-   "canonical": "Battle of Ugentana (1536)",
-   "qid": "Q116214216",
-   "redirect": false,
-   "missing": false
-  },
-  "Siege of Campar": {
-   "canonical": "Siege of Campar",
-   "qid": "Q130520296",
-   "redirect": false,
-   "missing": false
-  },
-  "Siege of Johor (1587)": {
-   "canonical": "Siege of Johor (1587)",
-   "qid": "Q55633157",
-   "redirect": false,
-   "missing": false
-  },
-  "Attack on Zuwarah": {
-   "canonical": "Attack on Zuwarah",
-   "qid": "Q133837258",
-   "redirect": false,
-   "missing": false
-  },
-  "Siege of Tripoli (1551)": {
-   "canonical": "Siege of Tripoli (1551)",
-   "qid": "Q2860095",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Gannoruwa": {
-   "canonical": "Battle of Gannoruwa",
-   "qid": "Q4871077",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Mulleriyawa": {
-   "canonical": "Battle of Mulleriyawa",
-   "qid": "Q4871824",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Randeniwela": {
-   "canonical": "Battle of Randeniwela",
-   "qid": "Q4872161",
-   "redirect": false,
-   "missing": false
-  },
-  "Conquest of Koneswaram Temple": {
-   "canonical": "Conquest of Koneswaram Temple",
-   "qid": "Q125166578",
-   "redirect": false,
-   "missing": false
-  },
-  "Kandyan commerce raiding against Portugal (1612–1613)": {
-   "canonical": "Kandyan commerce raiding against Portugal (1612–1613)",
-   "qid": "Q16250240",
-   "redirect": false,
-   "missing": false
-  },
-  "Roland Crappé's raids on Portuguese colonies": {
-   "canonical": "Roland Crappé's raids on Portuguese colonies",
-   "qid": "Q125701269",
-   "redirect": false,
-   "missing": false
-  },
-  "Siege of Colombo (1587–1588)": {
-   "canonical": "Siege of Colombo (1587–1588)",
-   "qid": "Q125998118",
-   "redirect": false,
-   "missing": false
-  },
-  "Sinhalese–Portuguese conflicts": {
-   "canonical": "Sinhalese–Portuguese conflicts",
-   "qid": "Q17034772",
-   "redirect": false,
-   "missing": false
-  },
-  "Sitawaka campaign": {
-   "canonical": "Sitawaka campaign",
-   "qid": "Q136605166",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Ugentana": {
-   "canonical": "Battle of Ugentana",
-   "qid": "Q116214211",
-   "redirect": false,
-   "missing": false
-  },
-  "Capture of Mahdia (1550)": {
-   "canonical": "Capture of Mahdia (1550)",
-   "qid": "Q5037032",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Jambi": {
-   "canonical": "Battle of Jambi",
-   "qid": "Q130198485",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Príncipe": {
-   "canonical": "Battle of Príncipe",
-   "qid": "Q138002239",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Pulo Buton": {
-   "canonical": "Battle of Pulo Buton",
-   "qid": "Q131686861",
-   "redirect": false,
-   "missing": false
-  },
-  "Capture of Amboina": {
-   "canonical": "Capture of Amboina",
-   "qid": "Q117350122",
-   "redirect": false,
-   "missing": false
-  },
-  "Sack of Bombay (1626)": {
-   "canonical": "Sack of Bombay (1626)",
-   "qid": "Q137801200",
-   "redirect": false,
-   "missing": false
-  },
-  "2012–2013 Egyptian protests": {
-   "canonical": "2012–2013 Egyptian protests",
-   "qid": "Q3720660",
-   "redirect": false,
-   "missing": false
-  },
-  "Middle Eastern crisis (2023–present)": {
-   "canonical": "Middle Eastern crisis (2023–present)",
-   "qid": "Q124373310",
-   "redirect": false,
-   "missing": false
-  },
-  "Third Indochina War": {
-   "canonical": "Third Indochina War",
-   "qid": "Q796498",
-   "redirect": false,
-   "missing": false
-  },
-  "Arab Cold War": {
-   "canonical": "Arab Cold War",
-   "qid": "Q4783165",
-   "redirect": false,
-   "missing": false
-  },
-  "Iraqi conflict": {
-   "canonical": "Iraqi conflict",
-   "qid": "Q47015896",
-   "redirect": false,
-   "missing": false
-  },
-  "Israeli–Palestinian conflict": {
-   "canonical": "Israeli–Palestinian conflict",
-   "qid": "Q151622",
-   "redirect": false,
-   "missing": false
-  },
-  "Myanmar conflict": {
-   "canonical": "Myanmar conflict",
-   "qid": "Q852088",
-   "redirect": false,
-   "missing": false
-  },
-  "Angolan Wars": {
-   "canonical": "Angolan Wars",
-   "qid": "Q132776772",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Casicola": {
-   "canonical": "Battle of Casicola",
-   "qid": "Q138632220",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Mbwila": {
-   "canonical": "Battle of Mbwila",
-   "qid": "Q1752752",
-   "redirect": false,
-   "missing": false
-  },
-  "Cuanza River Campaign": {
-   "canonical": "Cuanza River Campaign",
-   "qid": "Q130493316",
-   "redirect": false,
-   "missing": false
-  },
-  "First Battle of the Lucala": {
-   "canonical": "First Battle of the Lucala",
-   "qid": "Q138641767",
-   "redirect": false,
-   "missing": false
-  },
-  "Siege of Anzele": {
-   "canonical": "Siege of Anzele",
-   "qid": "Q138606175",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Kitombo": {
-   "canonical": "Battle of Kitombo",
-   "qid": "Q4871456",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Mbidizi River": {
-   "canonical": "Battle of Mbidizi River",
-   "qid": "Q4871702",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Pungo Andongo": {
-   "canonical": "Battle of Pungo Andongo",
-   "qid": "Q109058273",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of São Salvador": {
-   "canonical": "Battle of São Salvador",
-   "qid": "Q4872479",
-   "redirect": false,
-   "missing": false
-  },
-  "Kongo Civil War": {
-   "canonical": "Kongo Civil War",
-   "qid": "Q6429210",
-   "redirect": false,
-   "missing": false
-  },
-  "1966 anti-Igbo pogrom": {
-   "canonical": "1966 anti-Igbo pogrom",
-   "qid": "Q4572480",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Talandongo": {
-   "canonical": "Battle of Talandongo",
-   "qid": "Q130485022",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Casa Forte": {
-   "canonical": "Battle of Casa Forte",
-   "qid": "Q18500027",
-   "redirect": false,
-   "missing": false
-  },
-  "Dutch conquest of Malabar": {
-   "canonical": "Dutch conquest of Malabar",
-   "qid": "Q122452193",
-   "redirect": false,
-   "missing": false
-  },
-  "Dutch invasions of Brazil": {
-   "canonical": "Dutch invasions of Brazil",
-   "qid": "Q19019163",
-   "redirect": false,
-   "missing": false
-  },
-  "Dutch occupation of Tiruchendur": {
-   "canonical": "Dutch occupation of Tiruchendur",
-   "qid": "Q25830845",
-   "redirect": false,
-   "missing": false
-  },
-  "Jaragua massacre": {
-   "canonical": "Jaragua massacre",
-   "qid": "Q6159472",
-   "redirect": false,
-   "missing": false
-  },
-  "Action of 1 January 1800": {
-   "canonical": "Action of 1 January 1800",
-   "qid": "Q2171443",
-   "redirect": false,
-   "missing": false
-  },
-  "Siege of Jacmel": {
-   "canonical": "Siege of Jacmel",
-   "qid": "Q140288692",
-   "redirect": false,
-   "missing": false
-  },
-  "Attacks on Fuerteventura in 1740": {
-   "canonical": "Attacks on Fuerteventura in 1740",
-   "qid": "Q22936135",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Bloody Marsh": {
-   "canonical": "Battle of Bloody Marsh",
-   "qid": "Q2888163",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Bloody Mose": {
-   "canonical": "Battle of Bloody Mose",
-   "qid": "Q7510020",
-   "redirect": false,
-   "missing": false
-  },
-  "Invasion of Georgia (1742)": {
-   "canonical": "Invasion of Georgia (1742)",
-   "qid": "Q6059634",
-   "redirect": false,
-   "missing": false
-  },
-  "Siege of St. Augustine (1740)": {
-   "canonical": "Siege of St. Augustine (1740)",
-   "qid": "Q3486020",
-   "redirect": false,
-   "missing": false
-  },
-  "Battle of Porto Praya": {
-   "canonical": "Battle of Porto Praya",
-   "qid": "Q2732287",
    "redirect": false,
    "missing": false
   }

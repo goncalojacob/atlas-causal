@@ -2588,6 +2588,12 @@
     },
     {
       "dissent": false,
+      "id": "agadir-crisis",
+      "kind": "event",
+      "locator": "Q164771"
+    },
+    {
+      "dissent": false,
       "id": "algerian-war",
       "kind": "event",
       "locator": "Q200790"
@@ -5276,6 +5282,12 @@
     },
     {
       "dissent": false,
+      "id": "bizerte-crisis",
+      "kind": "event",
+      "locator": "Q879267"
+    },
+    {
+      "dissent": false,
       "id": "black-monday",
       "kind": "event",
       "locator": "Q868261"
@@ -6359,6 +6371,12 @@
       "id": "first-matabele-war",
       "kind": "event",
       "locator": "Q857982"
+    },
+    {
+      "dissent": false,
+      "id": "first-moroccan-crisis",
+      "kind": "event",
+      "locator": "Q167455"
     },
     {
       "dissent": false,
@@ -9713,6 +9731,12 @@
       "id": "treaty-of-bucharest",
       "kind": "event",
       "locator": "Q500067, P31 Q625298"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-fes",
+      "kind": "event",
+      "locator": "Q931982"
     },
     {
       "dissent": false,

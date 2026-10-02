@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "first-moroccan-crisis--world-war-i--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-90"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Moroccan Crisis\", revision 1370619540"
+    }
+  ],
+  "from": "first-moroccan-crisis",
+  "to": "world-war-i",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article puts the crisis among the things the war grew out of, and says through what. “First Moroccan Crisis”, at revision 1370619540, § Consequence: “Although the Algeciras Conference temporarily solved the First Moroccan Crisis, it only worsened the tensions between the Triple Alliance and Triple Entente that ultimately led to the First World War.” Its lead says the same thing one step earlier: the settlement “worsened German relations with both France and Britain and helped enhance the new Anglo-French Entente”. `precondition-of` and not `caused`, because what the article says led to the war is the state of the alliances the crisis worsened, and nine years separate the two records. `probable` under rule 22.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

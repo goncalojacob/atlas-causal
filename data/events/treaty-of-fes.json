@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "treaty-of-fes",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "a9-place",
+      "filed-by-span-and-subject"
+    ],
+    "note": "A9: no own P625; P276 is Q80985, Fez, a city whose point is in the africa lane, written as `fez-morocco`. A6: P361 is empty, so the filing is by span and subject — 1912 is inside `scramble-for-africa` and the treaty is where one European power took a Moroccan protectorate. A15(12): Q131569, treaty, carries the category `treaty`. Nobody has read this record."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q931982",
+  "wikipedia": {
+    "en": "Treaty of Fes",
+    "pt": "Tratado de Fez"
+  },
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q931982"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Fes\", revision 1361628067"
+    }
+  ],
+  "title": "Treaty of Fes",
+  "summary": "The English Wikipedia article \"Treaty of Fes\", at revision 1361628067, opens: \"The Treaty of Fes, officially the Treaty Concluded Between France and Morocco on 30 March 1912, for the Organization of the French Protectorate in the Sharifian Empire, was a treaty signed by Sultan Abd al-Hafid of Morocco under duress and French diplomat Eugène Regnault on 30 March 1912. It established the French protectorate in Morocco, and remained in effect until the Franco-Moroccan Joint Declaration of 2 March 1956.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q931982, whose P585 is 30 March 1912 at day precision, which is the day carried here.",
+  "when": {
+    "start": 1912,
+    "end": 1912,
+    "date": "1912-03-30"
+  },
+  "place": "fez-morocco",
+  "region": null,
+  "regionNote": null,
+  "parent": "scramble-for-africa",
+  "category": "treaty",
+  "actors": []
+}

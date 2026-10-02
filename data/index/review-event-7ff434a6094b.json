@@ -4910,6 +4910,39 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 2,
+      "id": "agadir-crisis",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "a15-days",
+          "a15-country-refused",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A15(4): the item's only date is P585 1911-11 (month); the lead states July 1911 and resolution on 4 November 1911, the range carried here. A15(6): the place would have been morocco-q1028, from the item's own P625 (Morocco's centroid) and then P276 and P17; refused because the item's first P571 is 1956, after the event ended. The lane is that same own point. A6: P361 is Q310802, not a record here, so the filing is by span and subject inside `scramble-for-africa`. Nobody has read this record.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Agadir Crisis"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -4925,7 +4958,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 6,
+      "degree": 7,
       "id": "algerian-war",
       "kind": "event",
       "origin": {
@@ -19590,6 +19623,39 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "other",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "bizerte-crisis",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "decolonisation-of-africa",
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "a9-place",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A9: no own P625; P276 is Q189546, Bizerte, a city whose point is in the africa lane, written as `bizerte`. A6: P361 is empty, and the article's infobox gives `part_of = the decolonisation of Africa and the spillover of the Algerian War`; the filing is `decolonisation-of-africa`, whose span holds 1961, not `algerian-war`, which the article calls what this spilled over from and whose place is French Algeria — that link is an edge. A15(12): Q180684 carries `other`. Nobody has read this.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bizerte crisis"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -24730,7 +24796,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 5,
+      "degree": 6,
       "id": "entente-cordiale",
       "kind": "event",
       "origin": {
@@ -26319,6 +26385,39 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "First Matabele War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 2,
+      "id": "first-moroccan-crisis",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "a9-place",
+          "a15-days",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A15(4): the item dates this P580 1905-03-31 to P582 1906-05 (month); the cited article's first sentence states \"between March 31, 1905, and April 7, 1906\", which is carried here. A9: no own P625; P276 is Q126148, Tangier, a city whose point is in the africa lane, written as `tangier`. A6: P361 is empty, so the filing is by span and subject inside `scramble-for-africa`, whose navbox the article carries. Q5791104 has no category in the class table. Nobody has read this record.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Moroccan Crisis"
     },
     {
       "authors": [
@@ -46185,6 +46284,39 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "treaty-of-fes",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "a9-place",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A9: no own P625; P276 is Q80985, Fez, a city whose point is in the africa lane, written as `fez-morocco`. A6: P361 is empty, so the filing is by span and subject — 1912 is inside `scramble-for-africa` and the treaty is where one European power took a Moroccan protectorate. A15(12): Q131569, treaty, carries the category `treaty`. Nobody has read this record.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Fes"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -48894,7 +49026,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 21,
+      "degree": 23,
       "id": "world-war-i",
       "kind": "event",
       "origin": {

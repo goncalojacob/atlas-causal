@@ -24754,6 +24754,7 @@ M42 started 2026-10-01T21:18:58Z by scheduled
 M42 started 2026-10-01T23:30:14Z by scheduled
 M42 started 2026-10-02T02:07:00Z by scheduled
 M42 started 2026-10-02T05:07:34Z by scheduled
+M42 started 2026-10-02T08:07:42Z by scheduled
 
 **M42 batch 87 — the inverse vein measured, and three umbrellas off it, 1 October.**
 The fire that claimed at 23:30Z merged `origin/m0`, then answered the first of the
@@ -25128,3 +25129,58 @@ Africa **245** and Asia **255** against A10's 303, so A15(1)'s pause holds.
 
 M42b started 2026-10-02T04:36:39Z by scheduled
 M42b started 2026-10-02T09:37:29Z by scheduled
+
+**M42 batches 90 and 91 — the Moroccan question and the Bizerte crisis, 2 October.**
+The 08:07Z fire claimed, merged `origin/m0` (clean, and the merged index was
+already byte-identical to a fresh build), and found today's
+`## Curation 2026-10-02` section already in the pool file, so STEP 3 made it an
+import fire; all six A14 passes and all thirteen A15 passes already have their
+sections and were skipped. **Deviation 1547** is the network finding and the most
+reusable thing in it: Wikimedia is rate-limiting this sandbox's address to **one
+request a minute** during an active WDQS outage, and that limit covers `api.php`
+on both projects, `Special:EntityData` and the REST summary endpoint — but
+**`Special:Export/<title>` (wikitext *and* revision id),
+`wikidata.org/w/rest.php/wikibase/v1/entities/items/<Q>` (the whole item) and
+`query.wikidata.org/sparql` answered 200 on every attempt.** A fire that finds
+`api.php` refusing is not a fire with no network; the fallbacks belong in
+`tools/import/wikidata.mjs` and that is a line for the owner.
+**Batch 90** took the one gap inside `scramble-for-africa`'s span:
+`first-moroccan-crisis`, `agadir-crisis` and `treaty-of-fes`, all three filed
+under it by A6's span and subject — their own articles carry the
+`{{Scramble for Africa}}` navbox — with places `tangier` and `fez-morocco` from
+`P276`, and `agadir-crisis` left placeless because A15(6) refuses
+`morocco-q1028` (the item's first `P571` is 1956, after the event ended). Four
+edges, **three of them crossing an umbrella** and reaching `world-war-i` and
+`entente-cordiale`, which were already in the largest component. A15(5) refused
+two edges at the point of writing and with the first of them a whole record:
+`battle-of-omdurman` to `fashoda-incident`, where both articles state only
+sequence and the causation in the sentence runs the other way, so Omdurman was
+left as a candidate rather than imported edgeless.
+**Batch 91** asked the same question of the other African umbrella and found the
+window nearly closed: a SPARQL sweep of 1954–1976 African events at 14 sitelinks
+or more returns **13 items and the atlas holds 9**. `bizerte-crisis` (Q879267)
+was the one that fitted, and its own infobox names `decolonisation of Africa` as
+its umbrella, so the filing is the source's. One edge,
+`algerian-war--bizerte-crisis--precondition-of`; not a parent, because the
+article calls the crisis the spillover of that war and the two have different
+places.
+**The counts: 1,453 → 1,457 active, main level at 234 throughout, 1,223 → 1,228
+active edges, and the largest connected component 786 → 789 → 790 — the first
+time it has moved in four fires.** Components unchanged at 440 and events with no
+edge unchanged at 341, because every new record joined the existing component
+instead of forming its own. Edges crossing an umbrella 615 → 618. Per lane,
+Africa 246 → 250 active and Asia 255, so Africa still trails. Validator **0
+errors, 637 warnings** — the same 637 the fire started with — and locally
+**1,941 pure tests and 313 browser tests, all passing, 0 skipped**.
+**What this fire leaves as the one blocker worth the owner's attention:** every
+remaining unheld African event of real weight — Mau Mau, the Mahdist War, the
+Ethiopian Revolution, the Mozambican Civil War, the Uganda–Tanzania War, the
+Tigray War, the First Libyan Civil War and nine more — falls **before 1885 or
+after 1976**, so none fits either of Africa's two umbrellas and none can be
+imported without raising the main count. The Mozambican Civil War's own `P361`
+is the Cold War, and there is no Cold War record in `data/events/`. A6 would
+allow that umbrella; the previous stands list the period-umbrella question as the
+owner's, and a worldwide 1947–1991 umbrella would re-file a large part of the
+corpus in one move, so this fire did not create it. Four chains with held far
+ends are waiting behind that one decision, and the pool file's stand names them.
+Deviation 1547; `origin/m42b` stood at 1540 when batch 89's fire read it.

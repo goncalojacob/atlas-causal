@@ -1493,3 +1493,38 @@ is no umbrella to file it under and the import wrote none. It pays for its own
 main slot by taking `myanmar-civil-war` off the resting picture — the child's own
 `P361`, 2021 inside 1947-to-ongoing — so batch 88's main count is level at 231
 and A6 is satisfied without this record being filed anywhere.
+
+## `agadir-crisis`, filed under `scramble-for-africa` with neither an actor nor a place — 2 October, batch 90
+
+The same clause as `myanmar-conflict` above, reached from the other direction:
+this record **is** filed, and it names neither an actor nor a place, so what put
+it inside its umbrella has to be argued here rather than read off a field.
+
+**Why there is no place.** A9's chain offers three steps and they all land on the
+same item. The Agadir Crisis's own `P625` is `(-6, 32)`, which is Morocco's
+centroid and not a point in Agadir; `P276` is `Q1028`, Morocco; `P17` is `Q1028`
+again. A15(6)'s gate refuses `Q1028` because the item's first `P571` is 1956 and
+the crisis ended in 1911, and the distance test has nothing to measure against
+because the only record on this event's chain is `scramble-for-africa`, which is
+itself placeless. So `place: null`, and the refusal is on the record's own note.
+The lane is `africa`, derived from that same own point — the gate governs the
+place and not the lane, which is the distinction the `myanmar-conflict` section
+above sets out and this record repeats for Africa.
+
+**Why there are no actors.** `P710` is absent from `Q164771` altogether, and a
+batch does not write `actors` — Germany, France and Britain are what a reviewer
+adds on `review.html`, with the role each played, which is the argument a person
+owes.
+
+**What puts it inside `scramble-for-africa`, then.** Three things, all read off
+the source rather than supplied here. The span: the crisis ran July to 4 November
+1911 and the umbrella runs 1885 to 1914. The subject: the article carries the
+`{{Scramble for Africa}}` navbox, which is the partition of Africa saying this
+belongs to it, and the crisis is an argument between two European powers about
+which of them holds a African territory — it is the Scramble's own subject matter
+and not a European dispute that happened to touch Africa. And the company:
+`fashoda-incident`, `anglo-zanzibar-war`, `italo-turkish-war` and `herero-wars`
+are already filed there on the same reading, and the Agadir Crisis sits between
+them. Its sibling `first-moroccan-crisis` and the `treaty-of-fes` that closed the
+question are filed under the same umbrella and both carry a place, so this is the
+only one of batch 90's three that needs this paragraph.
