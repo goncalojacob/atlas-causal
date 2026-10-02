@@ -1078,13 +1078,13 @@
     "grounds": "index/grounds-e607c80903f4.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
     "review": "index/review-759b1308b971.json",
-    "search": "index/search-bf139570f222.json",
+    "search": "index/search-3b73d083161a.json",
     "sources": "index/sources-1766e6b2011b.json",
     "territories": "index/territories-0540860e38ba.json"
   },
   "historyShards": [
     {
-      "file": "index/history-event-1400-1499-0723193bbf99.json",
+      "file": "index/history-event-1400-1499-f93fabc8538c.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "event",
