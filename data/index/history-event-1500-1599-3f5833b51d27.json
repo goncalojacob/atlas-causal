@@ -74,6 +74,15 @@
         }
       ]
     },
+    "battle-of-alcacer-quibir": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-algiers-1541": {
       "from": "git",
       "versions": [
@@ -98,6 +107,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-azemmour": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -332,6 +350,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-mamora-1515": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -721,6 +748,24 @@
         }
       ]
     },
+    "battle-of-tednest": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-the-alcaides": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-the-citadel-of-vicenza": {
       "from": "git",
       "versions": [
@@ -792,6 +837,15 @@
       ]
     },
     "battle-of-wadi-al-laban": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "blockade-of-the-tetuan-river": {
       "from": "git",
       "versions": [
         {
@@ -952,6 +1006,15 @@
       ]
     },
     "expedition-to-touat-1557": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "fall-of-agadir": {
       "from": "git",
       "versions": [
         {
@@ -1245,6 +1308,24 @@
         }
       ]
     },
+    "protectorate-of-doukkala": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "raid-of-marrakesh-1515": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "sack-of-brescia": {
       "from": "git",
       "versions": [
@@ -1260,6 +1341,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-agadir-1533": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -1456,6 +1546,15 @@
             "review"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "siege-of-mazagan-1562": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

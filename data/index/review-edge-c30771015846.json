@@ -10790,6 +10790,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "from": "capture-of-fez-1576",
+      "id": "capture-of-fez-1576--battle-of-alcacer-quibir--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-83"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-alcacer-quibir",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-30",
       "from": "capture-of-fort-bute",
       "id": "capture-of-fort-bute--battle-of-baton-rouge-1779--precondition-of",
@@ -11876,6 +11905,35 @@
       "revised": null,
       "status": "active",
       "to": "angolan-war-of-independence",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "from": "conquest-of-asilah",
+      "id": "conquest-of-asilah--portuguese-conquest-of-tangier--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-83"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "portuguese-conquest-of-tangier",
       "type": "enabled"
     },
     {

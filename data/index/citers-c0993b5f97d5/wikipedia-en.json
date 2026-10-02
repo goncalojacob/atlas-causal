@@ -3830,6 +3830,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-fez-1576--battle-of-alcacer-quibir--precondition-of",
+      "kind": "edge",
+      "locator": "\"Capture of Fez (1576)\", revision 1370608603, § Aftermath"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-fort-bute--battle-of-baton-rouge-1779--precondition-of",
       "kind": "edge",
       "locator": "\"Battle of Baton Rouge (1779)\", revision 1370433595"
@@ -4085,6 +4091,12 @@
       "id": "congo-crisis--angolan-war-of-independence--enabled",
       "kind": "edge",
       "locator": "\"Congo Crisis\", revision 1373847824, \"International importance\""
+    },
+    {
+      "dissent": false,
+      "id": "conquest-of-asilah--portuguese-conquest-of-tangier--enabled",
+      "kind": "edge",
+      "locator": "\"Portuguese conquest of Tangier\", revision 1370704790, § The Conquest"
     },
     {
       "dissent": false,
@@ -10706,6 +10718,12 @@
     },
     {
       "dissent": false,
+      "id": "anfa-expedition-1468",
+      "kind": "event",
+      "locator": "\"Anfa expedition (1468)\", revision 1370428439"
+    },
+    {
+      "dissent": false,
       "id": "anglo-french-war-1627-1629",
       "kind": "event",
       "locator": "\"Anglo-French War (1627–1629)\", revision 1374314585"
@@ -11042,6 +11060,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-alcacer-quibir",
+      "kind": "event",
+      "locator": "\"Battle of Alcácer Quibir\", revision 1376737559"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-alegria-de-pio",
       "kind": "event",
       "locator": "\"Battle of Alegría de Pío\", revision 1370431604"
@@ -11087,6 +11111,12 @@
       "id": "battle-of-ayacucho",
       "kind": "event",
       "locator": "\"Battle of Ayacucho\", revision 1375770122"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-azemmour",
+      "kind": "event",
+      "locator": "\"Battle of Azemmour\", revision 1370432810"
     },
     {
       "dissent": false,
@@ -12044,6 +12074,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mamora-1515",
+      "kind": "event",
+      "locator": "\"Battle of Mamora (1515)\", revision 1370448750"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mamora-1696",
+      "kind": "event",
+      "locator": "\"Battle of Mamora (1696)\", revision 1370268917"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mannar-1658",
       "kind": "event",
       "locator": "\"Battle of Mannar (1658)\", revision 1376684125"
@@ -12782,6 +12824,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tangier-1437",
+      "kind": "event",
+      "locator": "\"Battle of Tangier (1437)\", revision 1370590511"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tannenberg",
       "kind": "event",
       "locator": "\"Battle of Tannenberg\", revision 1373883764"
@@ -12812,9 +12860,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tednest",
+      "kind": "event",
+      "locator": "\"Battle of Tednest\", revision 1370590742"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-thann-1638",
       "kind": "event",
       "locator": "\"Battle of Thann (1638)\", revision 1370788434"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-alcaides",
+      "kind": "event",
+      "locator": "\"Battle of the Alcaides\", revision 1370277531"
     },
     {
       "dissent": false,
@@ -13370,6 +13430,12 @@
     },
     {
       "dissent": false,
+      "id": "blockade-of-the-tetuan-river",
+      "kind": "event",
+      "locator": "\"Blockade of the Tetuan River\", revision 1370604710"
+    },
+    {
+      "dissent": false,
       "id": "blockade-of-zanzibar",
       "kind": "event",
       "locator": "\"Blockade of Zanzibar\", revision 1371442681"
@@ -13676,6 +13742,12 @@
     },
     {
       "dissent": false,
+      "id": "chaouia-expedition",
+      "kind": "event",
+      "locator": "\"Chaouia expedition\", revision 1370610775"
+    },
+    {
+      "dissent": false,
       "id": "chaplain-medic-massacre",
       "kind": "event",
       "locator": "\"Chaplain–Medic massacre\", revision 1363525691"
@@ -13781,6 +13853,12 @@
       "id": "congo-crisis",
       "kind": "event",
       "locator": "\"Congo Crisis\", revision 1373847824"
+    },
+    {
+      "dissent": false,
+      "id": "conquest-of-asilah",
+      "kind": "event",
+      "locator": "\"Conquest of Asilah\", revision 1370612114"
     },
     {
       "dissent": false,
@@ -14279,6 +14357,12 @@
       "id": "falklands-war",
       "kind": "event",
       "locator": "\"Falklands War\", revision 1375590484"
+    },
+    {
+      "dissent": false,
+      "id": "fall-of-agadir",
+      "kind": "event",
+      "locator": "\"Fall of Agadir\", revision 1370617677"
     },
     {
       "dissent": false,
@@ -15518,6 +15602,12 @@
     },
     {
       "dissent": false,
+      "id": "mazagan-ambush",
+      "kind": "event",
+      "locator": "\"Mazagan Ambush\", revision 1370627951"
+    },
+    {
+      "dissent": false,
       "id": "merger-treaty",
       "kind": "event",
       "locator": "\"Merger Treaty\", revision 1340086782"
@@ -15563,6 +15653,12 @@
       "id": "montreux-convention",
       "kind": "event",
       "locator": "\"Montreux Convention Regarding the Regime of the Straits\", revision 1358705200"
+    },
+    {
+      "dissent": false,
+      "id": "moroccan-portuguese-conflicts",
+      "kind": "event",
+      "locator": "\"Moroccan–Portuguese conflicts\", revision 1370628730"
     },
     {
       "dissent": false,
@@ -16100,9 +16196,27 @@
     },
     {
       "dissent": false,
+      "id": "portuguese-conquest-of-ceuta",
+      "kind": "event",
+      "locator": "\"Portuguese conquest of Ceuta\", revision 1376216346"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-conquest-of-ksar-es-seghir",
+      "kind": "event",
+      "locator": "\"Portuguese conquest of Ksar es-Seghir\", revision 1375892596"
+    },
+    {
+      "dissent": false,
       "id": "portuguese-conquest-of-maricay",
       "kind": "event",
       "locator": "\"Portuguese Conquest of Maricay\", revision 1370704725"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-conquest-of-tangier",
+      "kind": "event",
+      "locator": "\"Portuguese conquest of Tangier\", revision 1370704790"
     },
     {
       "dissent": false,
@@ -16160,9 +16274,21 @@
     },
     {
       "dissent": false,
+      "id": "protectorate-of-doukkala",
+      "kind": "event",
+      "locator": "\"Protectorate of Doukkala\", revision 1362051640"
+    },
+    {
+      "dissent": false,
       "id": "pueblo-revolt",
       "kind": "event",
       "locator": "\"Pueblo Revolt\", revision 1373524502"
+    },
+    {
+      "dissent": false,
+      "id": "raid-of-marrakesh-1515",
+      "kind": "event",
+      "locator": "\"Raid of Marrakesh (1515)\", revision 1370705532"
     },
     {
       "dissent": false,
@@ -16700,6 +16826,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-agadir-1533",
+      "kind": "event",
+      "locator": "\"Siege of Agadir (1533)\", revision 1370738512"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-anzele",
       "kind": "event",
       "locator": "\"Siege of Anzele\", revision 1370738927"
@@ -16787,6 +16919,12 @@
       "id": "siege-of-campar",
       "kind": "event",
       "locator": "\"Siege of Campar\", revision 1370740012"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-ceuta-1419",
+      "kind": "event",
+      "locator": "\"Siege of Ceuta (1419)\", revision 1370740121"
     },
     {
       "dissent": false,
@@ -16889,6 +17027,12 @@
       "id": "siege-of-genoa-1522",
       "kind": "event",
       "locator": "\"Siege of Genoa (1522)\", revision 1370741464"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-graciosa-1489",
+      "kind": "event",
+      "locator": "\"Siege of Graciosa (1489)\", revision 1370741574"
     },
     {
       "dissent": false,
@@ -17003,6 +17147,18 @@
       "id": "siege-of-marseille-1524",
       "kind": "event",
       "locator": "\"Siege of Marseille (1524)\", revision 1370743308"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mazagan-1562",
+      "kind": "event",
+      "locator": "\"Siege of Mazagan (1562)\", revision 1370743371"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mazagan-1769",
+      "kind": "event",
+      "locator": "\"Siege of Mazagan (1769)\", revision 1376737660"
     },
     {
       "dissent": false,
@@ -17207,6 +17363,12 @@
       "id": "siege-of-stralsund-1628",
       "kind": "event",
       "locator": "\"Siege of Stralsund (1628)\", revision 1371910129"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-tangier-1463-1464",
+      "kind": "event",
+      "locator": "\"Siege of Tangier (1463–1464)\", revision 1370745656"
     },
     {
       "dissent": false,
@@ -17591,6 +17753,12 @@
       "id": "tambov-rebellion",
       "kind": "event",
       "locator": "\"Tambov Rebellion\", revision 1370749600: \"The Tambov Rebellion of 1920–1922 was one of the largest and best-organized peasant rebellions\""
+    },
+    {
+      "dissent": false,
+      "id": "targa-expedition-1490",
+      "kind": "event",
+      "locator": "\"Targa expedition (1490)\", revision 1370749696"
     },
     {
       "dissent": false,

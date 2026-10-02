@@ -134,6 +134,15 @@
         }
       ]
     },
+    "agadir": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "agnadello": {
       "from": "git",
       "versions": [
@@ -468,6 +477,15 @@
       ]
     },
     "arzew": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "asilah": {
       "from": "git",
       "versions": [
         {
@@ -1671,6 +1689,15 @@
         }
       ]
     },
+    "casablanca": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "casaloldo": {
       "from": "git",
       "versions": [
@@ -1811,6 +1838,15 @@
         }
       ]
     },
+    "ceuta-under-muslim-rule": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "chai": {
       "from": "git",
       "versions": [
@@ -1840,6 +1876,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "chaouia-morocco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -2874,6 +2919,15 @@
         }
       ]
     },
+    "el-jadida": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "elmina": {
       "from": "git",
       "versions": [
@@ -3693,6 +3747,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "graciosa-fortress": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -5087,6 +5150,24 @@
         }
       ]
     },
+    "ksar-el-kebir": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "ksar-es-seghir": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "kursk": {
       "from": "git",
       "versions": [
@@ -5178,6 +5259,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "la-mamora": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -6089,6 +6179,15 @@
         }
       ]
     },
+    "marrakesh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "marseille": {
       "from": "git",
       "versions": [
@@ -6104,6 +6203,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "martil-valley": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -6160,6 +6268,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "mazagan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -7968,6 +8085,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "portuguese-ceuta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

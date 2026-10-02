@@ -2,6 +2,15 @@
   "from": 1400,
   "kind": "edge",
   "records": {
+    "conquest-of-asilah--portuguese-conquest-of-tangier--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "indigenous-depopulation-of-the-greater-antilles--the-atlantic-slave-trade-to-the-caribbean--caused": {
       "from": "git",
       "versions": [

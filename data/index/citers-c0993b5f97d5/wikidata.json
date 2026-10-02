@@ -2648,6 +2648,12 @@
     },
     {
       "dissent": false,
+      "id": "anfa-expedition-1468",
+      "kind": "event",
+      "locator": "Q116687226"
+    },
+    {
+      "dissent": false,
       "id": "anglo-french-war-1627-1629",
       "kind": "event",
       "locator": "Q4065200"
@@ -3050,6 +3056,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-alcacer-quibir",
+      "kind": "event",
+      "locator": "Q1121532"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-alegria-de-pio",
       "kind": "event",
       "locator": "Q5778565"
@@ -3095,6 +3107,12 @@
       "id": "battle-of-ayacucho",
       "kind": "event",
       "locator": "Q934157"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-azemmour",
+      "kind": "event",
+      "locator": "Q2887914"
     },
     {
       "dissent": false,
@@ -4058,6 +4076,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mamora-1515",
+      "kind": "event",
+      "locator": "Q109312761"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mamora-1696",
+      "kind": "event",
+      "locator": "Q124881779"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mannar-1658",
       "kind": "event",
       "locator": "Q130478490"
@@ -4790,6 +4820,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tangier-1437",
+      "kind": "event",
+      "locator": "Q4872500"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tannenberg",
       "kind": "event",
       "locator": "Q153858"
@@ -4820,9 +4856,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tednest",
+      "kind": "event",
+      "locator": "Q116345741"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-thann-1638",
       "kind": "event",
       "locator": "Q9173637"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-alcaides",
+      "kind": "event",
+      "locator": "Q125398640"
     },
     {
       "dissent": false,
@@ -5372,6 +5420,12 @@
     },
     {
       "dissent": false,
+      "id": "blockade-of-the-tetuan-river",
+      "kind": "event",
+      "locator": "Q135416375"
+    },
+    {
+      "dissent": false,
       "id": "blockade-of-zanzibar",
       "kind": "event",
       "locator": "Q134376352"
@@ -5684,6 +5738,12 @@
     },
     {
       "dissent": false,
+      "id": "chaouia-expedition",
+      "kind": "event",
+      "locator": "Q116687091"
+    },
+    {
+      "dissent": false,
       "id": "chaplain-medic-massacre",
       "kind": "event",
       "locator": "Q5073209"
@@ -5789,6 +5849,12 @@
       "id": "congo-crisis",
       "kind": "event",
       "locator": "Q1773926"
+    },
+    {
+      "dissent": false,
+      "id": "conquest-of-asilah",
+      "kind": "event",
+      "locator": "Q5162432"
     },
     {
       "dissent": false,
@@ -6281,6 +6347,12 @@
       "id": "falklands-war",
       "kind": "event",
       "locator": "Q48249"
+    },
+    {
+      "dissent": false,
+      "id": "fall-of-agadir",
+      "kind": "event",
+      "locator": "Q5432140"
     },
     {
       "dissent": false,
@@ -7574,6 +7646,12 @@
     },
     {
       "dissent": false,
+      "id": "mazagan-ambush",
+      "kind": "event",
+      "locator": "Q120798736"
+    },
+    {
+      "dissent": false,
       "id": "merger-treaty",
       "kind": "event",
       "locator": "Q622766"
@@ -7625,6 +7703,12 @@
       "id": "montreux-convention",
       "kind": "event",
       "locator": "Q869500"
+    },
+    {
+      "dissent": false,
+      "id": "moroccan-portuguese-conflicts",
+      "kind": "event",
+      "locator": "Q340075"
     },
     {
       "dissent": false,
@@ -8174,9 +8258,27 @@
     },
     {
       "dissent": false,
+      "id": "portuguese-conquest-of-ceuta",
+      "kind": "event",
+      "locator": "Q2888296"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-conquest-of-ksar-es-seghir",
+      "kind": "event",
+      "locator": "Q116687288"
+    },
+    {
+      "dissent": false,
       "id": "portuguese-conquest-of-maricay",
       "kind": "event",
       "locator": "Q141304393"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-conquest-of-tangier",
+      "kind": "event",
+      "locator": "Q124474956"
     },
     {
       "dissent": false,
@@ -8228,9 +8330,21 @@
     },
     {
       "dissent": false,
+      "id": "protectorate-of-doukkala",
+      "kind": "event",
+      "locator": "Q109312776"
+    },
+    {
+      "dissent": false,
       "id": "pueblo-revolt",
       "kind": "event",
       "locator": "Q1547791"
+    },
+    {
+      "dissent": false,
+      "id": "raid-of-marrakesh-1515",
+      "kind": "event",
+      "locator": "Q116313968"
     },
     {
       "dissent": false,
@@ -8822,6 +8936,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-agadir-1533",
+      "kind": "event",
+      "locator": "Q126727785"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-anzele",
       "kind": "event",
       "locator": "Q138606175"
@@ -8909,6 +9029,12 @@
       "id": "siege-of-campar",
       "kind": "event",
       "locator": "Q130520296"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-ceuta-1419",
+      "kind": "event",
+      "locator": "Q7509914"
     },
     {
       "dissent": false,
@@ -9011,6 +9137,12 @@
       "id": "siege-of-genoa-1522",
       "kind": "event",
       "locator": "Q9291683"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-graciosa-1489",
+      "kind": "event",
+      "locator": "Q124639433"
     },
     {
       "dissent": false,
@@ -9125,6 +9257,18 @@
       "id": "siege-of-marseille-1524",
       "kind": "event",
       "locator": "Q3485951"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mazagan-1562",
+      "kind": "event",
+      "locator": "Q96387538"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mazagan-1769",
+      "kind": "event",
+      "locator": "Q116769248"
     },
     {
       "dissent": false,
@@ -9329,6 +9473,12 @@
       "id": "siege-of-stralsund-1628",
       "kind": "event",
       "locator": "Q2612839"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-tangier-1463-1464",
+      "kind": "event",
+      "locator": "Q121282974"
     },
     {
       "dissent": false,
@@ -9701,6 +9851,12 @@
       "id": "tambov-rebellion",
       "kind": "event",
       "locator": "Q811250"
+    },
+    {
+      "dissent": false,
+      "id": "targa-expedition-1490",
+      "kind": "event",
+      "locator": "Q116763820"
     },
     {
       "dissent": false,
