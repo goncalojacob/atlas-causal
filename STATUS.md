@@ -25394,3 +25394,45 @@ centres, so a point on top of a long diagonal edge read as far from everything,
 and it measured before the picture stopped moving. Now it waits for the count of
 marks and lines to hold still and measures to the ink. The check was red once for
 that and nothing was skipped or disabled.
+
+**M42b batch 87 — the Imjin War, and asia past A10's 303, 2 October.** The 16:37Z fire claimed
+(the 12:37Z claim was four hours old and `origin/m42b` two and a half hours unpushed, so neither
+limb of the protocol's claim rule held), merged `origin/m42` — fourteen commits, conflicting only
+in `STATUS.md`, `sources.html`, the title cache and 259 index files, resolved as the brief says —
+and ran **one import batch**.
+
+**The batch was chosen off a measurement that corrected the last one's.** Batch 86's sweep had
+reported 11 unheld asia candidates and 123 rows it could find no lane for; read through the
+import's own A9 chain rather than a crude first-`P276`, the 518 unheld pre-1800 rows are
+**americas 241, europe 204, no lane 67, asia 4, africa 2**. So the 123 were not hidden asian work
+— they were hidden **americas** work, which is now this partition's largest measured queue and
+the next fire's first move after the europe records the pause has been holding.
+
+**Batch 87** took `Q576338` *Japanese invasions of Korea* (1592–1598), the two campaigns under it
+and every battle and siege the three of them name through `P361` with an English article:
+**38 active events for +1 main**, which is the cheapest ratio either lane has measured. Every
+child was pre-checked against its parent's own span by year, so the filing refused nothing and the
+import's second pass wrote 18 of them. One item refused — `Q4871325` *Battle of Jeonju*, no `P31`
+at all — and **every `P17` country candidate refused** under A15(6), the two Koreas' 1948
+inceptions against a sixteenth-century war, which leaves 13 records placeless for a person.
+`battle-of-hansan-island` was the one the import left main: its item has a `P580` and no `P582`,
+so the open interval made rule 24 refuse the item's own `P361`, and **A7 closed it to 1592 from
+the cited article's own first sentence** — leaving the day as the item's 8 July against the
+article's 15 August, two calendars this run does not choose between.
+
+**One edge**: `battle-of-chilcheollyang --precondition-of--> battle-of-myeongnyang`, from the far
+end's own lead at revision 1370450929 — *"with only 13 ships remaining from Admiral Wŏn Kyun's
+disastrous defeat at the Battle of Chilcheollyang"* — `precondition-of` because what the sentence
+states is the force Yi had and not what brought the battle about. **It crosses an umbrella: 622 →
+623.** Eleven candidates were refused under **A14** (a battle's article naming its own war, and
+the war's article naming its own battles) and one under **A15(5)**'s chronology class
+(*"After the Battle of Happo…"*, where the cause stated is the reports and not the battle).
+**A5's other half could not be honoured**: before this batch the atlas held nothing in Korea,
+Japan or Ming China, so no cited sentence could reach a held record and the cluster is a component
+of two beside a largest component unchanged at 795. The stand names what closes that — the
+Portuguese records that touch Japan, which are asia before 1800 and so this lane's.
+
+**Active 1,561 → 1,599; main 238 → 239; asia 283 → 321 and africa 320, both past A10's 303, so
+A15(1)'s europe pause is lifted in full.** Europe is **556**, exactly what the fire found it at.
+`validate --index` 0 errors at every commit and at this head; the suite is green after two
+one-space JSON files were re-dumped at two (deviations 1563 and 1564).

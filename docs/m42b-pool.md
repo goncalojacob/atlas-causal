@@ -21907,138 +21907,275 @@ that it is a floor and not a verdict.
 **Africa 319, asia 281, A10's threshold 303. Asia is 22 short** and the sweep above says where the
 next 11 come from before anything else has to be found.
 
-## Where the run stands, for the fire that picks it up
+## Batch 87 — the Imjin War, and the asia lane past A10's threshold
 
-*2 October, the 12:36Z fire. **Three batches, 40 active events, two umbrellas, three edges — and
-africa is past A10's 303, so half of A15(1)'s europe pause is lifted.** Asia is 22 short, the
-other half rests entirely on it, and batch 86 leaves a measured queue of **534** unheld pre-1800
-candidates for the first time.*
+**Asia was the lane that trailed in this partition and the one A15(1)'s europe pause rests on:
+283 active against A10's 303, with only 14 of those before 1800.** The 12:36Z stand's move 1 said
+to re-run batch 86's `P361`-children sweep and work the 123 rows it could find no lane for. This
+fire ran the sweep again, read the lanes with the import's own A9 chain rather than the crude
+`P276` reading, and found the asia column exhausted: **4 rows, two of them already open questions
+and one a bad coordinate.** So it asked the cheap query a different way — *which pre-1800 item in
+the asia box has the most unheld children with an English article* — and the answer was one
+umbrella worth 38 records.
 
-### The numbers
+### The three queries
 
-| | at the fire's head | after the merge of `origin/m42` | after 84 | after 85 | after 86 |
-| --- | --- | --- | --- | --- | --- |
-| active events | 1,514 | 1,518 | 1,524 | 1,542 | **1,558** |
-| main | 235 | 236 | 238 | 238 | **238** |
-| largest connected component | 790 | 792 | 792 | 792 | **792** |
-| components | — | 493 | 498 | 515 | **530** |
-| events with no edge | — | 391 | 394 | 410 | **424** |
-| **edges crossing an umbrella** | 619 | 619 | 620 | 620 | **621** |
-| edges inside one umbrella | 615 | 617 | 617 | 618 | **618** |
-| active edges | 1,234 | 1,236 | 1,237 | 1,238 | **1,239** |
+| | rows | what it said |
+| --- | --- | --- |
+| batch 86's sweep, re-run over 605 held pre-1800 events with a `wikidata` | 1,272 (1,172 distinct children) | **518** unheld and pre-1800, down from 534: batch 86 took 16 of them |
+| the same rows' lanes, read through A9's chain (`P625`, then `P276`, `P131`, `P17`) and `createRegionDeriver` | 518 | americas **241**, europe **204**, none **67**, asia **4**, africa **2** |
+| pre-1800 items in the asia box, grouped by how many unheld English-article children each has | 26 umbrellas | `Q122846639` *First Japanese Invasion of Korea* at **17**, and `Q576338` *Japanese invasions of Korea* above it |
+
+**The second row is the correction to batch 86's table and the reason it matters.** Batch 86 read
+the lane from the first `P276` with a point and reported asia 11, africa 7 and 123 with no lane;
+read through the chain the import actually uses, those 123 resolve almost entirely into **americas
+and europe**, and asia's column falls from 11 to 4. The crude reading had not been hiding asian
+work — it had been hiding **241 americas rows**, which is this partition's largest measured queue
+and the thing to spend a fire on now that asia is clear.
+
+### What was imported
+
+`Q576338` *Japanese invasions of Korea* (1592–1598, English article *Imjin War*), the two
+campaigns under it, and every one of the 36 battles and sieges the three of them name through
+`P361` with an English article. **Every child was pre-checked against its parent's own span by
+year before being put to the import**, which is why the filing refused nothing.
+
+| | |
+| --- | --- |
+| items put to the import | 39 |
+| events created | **38, +1 main** |
+| places created | **10**, every one with a lane derived from its own point |
+| leads cached | 46 |
+| refused | **1** — `Q4871325` *Battle of Jeonju*: no `P31`, so nothing says what kind of thing it is. The same reason as batch 86's `Q20639061` |
+| A15(6) country refusals | **every country candidate the chain reached**: the run's log names the Republic of Korea's 1948 inception and the DPRK's 1948 against events of 1592 to 1598, and a second candidate that names two countries and so names no one country. Not one `P17` survived, which is the amendment working exactly as written on a sixteenth-century war |
+| placeless (A9's chain ran out) | **13** — each has its own point and no name a tool may read, which is a place for a person to write |
+| filed on the second pass (deviation 1331) | 18 |
+
+| umbrella | records under it |
+| --- | --- |
+| `imjin-war` (main) | `toyotomi-hideyoshi-s-1st-korean-campaign`, `toyotomi-hideyoshi-s-2nd-korean-campaign`, `battle-of-busan`, `battle-of-chilcheollyang`, `siege-of-ulsan`, `battle-of-noryang` |
+| `toyotomi-hideyoshi-s-1st-korean-campaign` | **28** records, 1592–1593 |
+| `toyotomi-hideyoshi-s-2nd-korean-campaign` | `siege-of-namwon`, `battle-of-jiksan`, `battle-of-myeongnyang` |
+
+**The +1 main is the umbrella and nothing else.** `Q576338`'s own `P361` names `Q491271`, which
+the atlas does not hold, so the war is main; the 37 records under it cost nothing. One main for 37
+events is the cheapest ratio either lane has measured, and it is the whole of why this batch was
+chosen over the four asia rows the sweep offered.
+
+**One record the import left main, and A7 brought back.** `battle-of-hansan-island`'s item carries
+a `P580` and no `P582`, so the import wrote `end-unstated` — and an open interval is contained by
+no umbrella, so rule 24 refused the `P361` the item itself asserts. The cited article, at revision
+1376900415, opens *"The Battle of Hansan Island and the following engagement at Angolpo took place
+on 15 August 1592"*, which states one day; so the end is 1592, the interval closes, and the item's
+own filing stands. **The day is left as the item's own 8 July**: that and the article's 15 August
+are one day read in two calendars, this run does not choose between them, and the validator's
+`span-vs-lead` warning is left standing for whoever does.
+
+**The thirteen filed children that name neither an actor nor a place**, which M67's correspondence
+test asks to be argued here rather than left silent. Every one is a battle or a siege whose item
+gives a bare coordinate and no named settlement A9's chain can read, so the place is a person's to
+write; the filing is the item's own `P361` and the span check passed:
+`battle-of-chungju`, `battle-of-dadaejin`, `battle-of-okpo`, `battle-of-pyongyang-1592`,
+`siege-of-dongnae`, `siege-of-jinju-1592`, `siege-of-pyongyang-1592` and `battle-of-haengju`,
+`siege-of-jinju-1593`, `siege-of-pyongyang-1593` under the first campaign; `siege-of-namwon` under
+the second; `siege-of-ulsan` and `battle-of-noryang` under the war itself.
+
+### One edge, and what the chronology class refused
+
+`battle-of-chilcheollyang --precondition-of--> battle-of-myeongnyang`, cited to *"Battle of
+Myeongnyang"*, revision 1370450929, from the near end's own lead: *"With only 13 ships remaining
+from Admiral Wŏn Kyun's disastrous defeat at the **Battle of Chilcheollyang**, Admiral Yi held the
+strait as a 'last stand' battle against the Japanese navy, who were sailing to support their land
+army's advance towards the Joseon capital of Hanyang."* `precondition-of` and not `caused`: what
+the sentence states is the force Yi had to fight with, and the same sentence names what did bring
+the battle about — the Japanese fleet's sailing, which is not an event the atlas holds.
+**It crosses an umbrella**: Chilcheollyang is filed under the war and Myeongnyang under the second
+campaign. The crossing count goes 622 → **623**.
+
+**`statesACause` returns false for that sentence**, which is batch 86's finding a second time and
+in the same direction: the marker list has no entry for *"remaining from"*. A sweep that used it as
+a gate would have dropped this edge. It is a floor for A15(5)'s refusal test and never a verdict.
+
+| refused | how many | why |
+| --- | --- | --- |
+| **A14, parent to its own child** | **11** | seven are a battle's own article naming the war it is part of — `battle-of-chilcheollyang`, `battle-of-okpo`, `battle-of-sacheon-1592`, `hamgyong-campaign`, `siege-of-jinju-1592`, `siege-of-jinju-1593` and `toyotomi-hideyoshi-s-1st-korean-campaign`, all of them on `imjin-war`, which is each one's own parent or grandparent. Four more are the *Imjin War* article's own hits, read the other way round, on `siege-of-dongnae`, `siege-of-pyongyang-1592`, `siege-of-namwon` and `battle-of-myeongnyang`, every one of them filed under it. Until the owner decides C8 none of the eleven is an edge |
+| **A15(5), the chronology class** | **1** | `battle-of-jeokjinpo` on `battle-of-happo`: *"**After** the Battle of Happo, further reports of an additional 13 Japanese ships prevented Yi Sun-sin and his fleet from resting long on the morning of 8 May."* It opens on *After*, and the cause it does state is the reports and not the battle |
+
+**A5's other half could not be honoured and this is why.** A5 asks every batch to write edges to
+what already exists as well as to itself. **Before this batch the atlas held nothing at all in
+Korea, Japan or Ming China** — a scan of every active event dated 1500–1650 for *Japan*, *Korea*,
+*Ming*, *Macau* or *Nanban* in its title or summary returned one record, and that one was
+`battle-of-cempoala`, matching on the word *China* in a Mexican context. So there was no held
+record a cited sentence could reach, and the batch's component is its own: the largest component
+is unchanged at **795** and the Imjin cluster is a component of two. **The 241-row americas queue
+is where A5 gets paid back**, because every one of those rows is a child of something the atlas
+already holds.
+
+### What the article extracts cost and returned
+
+Four full extracts were read through `api.php` (the leads are what the import caches; a cause is
+usually stated below the lead). **`Toyotomi Hideyoshi's 2nd Korean Campaign`, `Battle of
+Chilcheollyang` and `Siege of Jinju (1593)` could not be read at all**: `HTTP 429` at 66 seconds
+between calls and again at 150, which is tighter than the 12:36Z stand's measurement of the same
+limit. The three that were read named only their own umbrella or their own outcome. **`extracts`
+answers with one page per request when `exintro` is off**, whatever `titles` holds, so a batch
+that wants N extracts pays N requests — worth knowing before planning a fire around them.
+
+### The numbers after batch 87
+
+| | at the fire's head | after the merge of `origin/m42` | after 87 |
+| --- | --- | --- | --- |
+| active events | 1,558 | 1,561 | **1,599** |
+| main | 238 | 238 | **239** |
+| largest connected component | 792 | 795 | **795** |
+| components | 530 | 530 | **567** |
+| events with no edge | 424 | 424 | **460** |
+| **edges crossing an umbrella** | 621 | 622 | **623** |
+| edges inside one umbrella | 618 | 621 | **621** |
+| active edges | 1,239 | 1,243 | **1,244** |
 
 | century | europe | africa | asia | americas | all |
 | --- | --- | --- | --- | --- | --- |
 | 15th c. | 4 / 2 | 12 / 1 | — | 7 / 5 | 23 / 8 |
-| 16th c. | 45 / 2 | 48 / 3 | 28 / 3 | 51 / 4 | 172 / 12 |
+| 16th c. | 45 / 2 | 48 / 3 | **66 / 4** | 51 / 4 | 210 / 13 |
 | 17th c. | 109 / 3 | 28 / 2 | 26 / 0 | 71 / 6 | 234 / 11 |
 | 18th c. | 62 / 3 | 27 / 0 | 22 / 0 | 85 / 2 | 196 / 5 |
 | 19th c. | 39 / 9 | 29 / 1 | 9 / 6 | 61 / 8 | 138 / 24 |
-| 20th c. | 245 / 60 | 98 / 24 | 166 / 37 | 91 / 30 | 600 / 151 |
+| 20th c. | 245 / 60 | 99 / 24 | 168 / 37 | 91 / 30 | 603 / 151 |
 | 21st c. | 52 / 7 | 77 / 7 | 30 / 12 | 36 / 1 | 195 / 27 |
-| **all** | **556 / 86** | **319 / 38** | **281 / 58** | **402 / 56** | **1558 / 238** |
+| **all** | **556 / 86** | **320 / 38** | **321 / 59** | **402 / 56** | **1599 / 239** |
 
-**Africa 319, asia 281, A10's threshold 303.** Europe is 556, exactly what the fire found it at,
-and nothing of Europe before 1900 was written — though batch 86 nearly did, and the override that
-stopped it is in that batch's note.
+**Africa 320, asia 321, A10's threshold 303. Both lanes are past it**, and europe is **556** —
+exactly what this fire found it at, with nothing of europe written. The 16th century asia column
+goes 28 → 66 and is now the second-largest cell in that lane.
+
+## Where the run stands, for the fire that picks it up
+
+*2 October, the 16:37Z fire. **One batch, 38 active events, one umbrella, one edge — and asia is
+past A10's 303, so A15(1)'s europe pause is lifted in full.** Africa 320, asia 321. The fire also
+corrected batch 86's lane table and found the partition's largest measured queue: **241 unheld
+pre-1800 americas rows**, every one of them a child of something the atlas already holds.*
+
+### The numbers
+
+| | at the fire's head | after the merge of `origin/m42` | after 87 |
+| --- | --- | --- | --- |
+| active events | 1,558 | 1,561 | **1,599** |
+| main | 238 | 238 | **239** |
+| largest connected component | 792 | 795 | **795** |
+| components | 530 | 530 | **567** |
+| events with no edge | 424 | 424 | **460** |
+| **edges crossing an umbrella** | 621 | 622 | **623** |
+| edges inside one umbrella | 618 | 621 | **621** |
+| active edges | 1,239 | 1,243 | **1,244** |
+
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | 12 / 1 | — | 7 / 5 | 23 / 8 |
+| 16th c. | 45 / 2 | 48 / 3 | 66 / 4 | 51 / 4 | 210 / 13 |
+| 17th c. | 109 / 3 | 28 / 2 | 26 / 0 | 71 / 6 | 234 / 11 |
+| 18th c. | 62 / 3 | 27 / 0 | 22 / 0 | 85 / 2 | 196 / 5 |
+| 19th c. | 39 / 9 | 29 / 1 | 9 / 6 | 61 / 8 | 138 / 24 |
+| 20th c. | 245 / 60 | 99 / 24 | 168 / 37 | 91 / 30 | 603 / 151 |
+| 21st c. | 52 / 7 | 77 / 7 | 30 / 12 | 36 / 1 | 195 / 27 |
+| **all** | **556 / 86** | **320 / 38** | **321 / 59** | **402 / 56** | **1599 / 239** |
+
+**Europe is 556, exactly what the fire found it at.** Nothing of europe was written.
 
 ### The next fire's moves, in order
 
-1. **Asia is 22 short and batch 86 measured where the next 11 come from.** Its sweep — every
-   held pre-1800 event asked for its `P361` children in one `POST` — left **534** unheld
-   candidates, of which **11 asia and 7 africa** by a crude reading of `P276` and **123 with no
-   lane that reading can find**, which the import's own A9 chain would place better. Re-run that
-   one query (it is in `docs/m42b-pool.md` → "Batch 86") and work the 123: that is where the rest
-   of asia's 22 is, and it is cheaper than finding new umbrellas. **The americas column is 204
-   and wholly inside this partition** — the first measured queue the americas side has ever had,
-   and the thing to spend a fire on once asia is clear.
-2. **The umbrella that buys the asia leftovers.** `Q1187249` *Ottoman–Portuguese confrontations*
-   (1538–1718, an English article and its own dates) is **one main that buys three records at +0
-   main each**: `Q118946422` *Capture of Muscat* (1581, asia) and `Q898763` *Ottoman–Portuguese
-   conflicts of 1586–1589* (africa, by the Swahili coast its `P276` names), which is itself an
-   umbrella and whose one child batch 86's sweep found — `Q128812160` *Battle of Mombasa* (1589,
-   africa). `Q1187249` carries **no location claim at all**, so it needs a seeded lane as
-   `Q762191` did; its article names the same Indian Ocean, Persian Gulf and Red Sea. It will not
-   retroactively file the two umbrellas the atlas already holds under it: the import is additive
-   and never changes a value, so `ottoman-portuguese-conflicts-1538-1560` and
-   `barbary-portuguese-conflicts` stay main whatever happens here.
-3. **Batch 85's and 86's sweeps are the two cheapest queries in either pool file, and they are
-   the same query at two scales.** Asking one held umbrella for its children returned 25 rows for
-   one call; asking all 589 held pre-1800 events at once returned 1,172 for one call. Neither
-   costs a main, because every row is already inside something the atlas holds. A records fire
-   that starts anywhere else is paying more than it needs to.
-4. **`Q19610920` *Siege of Jeddah* (1517) and `Q7509975` *Siege of Diu* (1531)** are two asia
-   records that cost a main each under rule 24, because no held umbrella's span contains them.
-   `Q1187249` does not either (it starts 1538). They are worth taking once asia's count matters
-   more than the main count, and the note should say which it is choosing.
-5. **Move 3 of the 09:36Z stand is still blocked and is still the best value in the partition.**
-   The Iberian Union and the 1580 succession crisis are europe-lane records of 1580, and
-   A15(1)'s pause asks for africa **and** asia at 303. One fire's worth of asia lifts it.
-6. **Deviation 1560 is a hole in A15(5) and no tool closes it.** A causal marker anywhere in a
-   two-sentence window makes the quote pass, including a marker about a third thing. Two of this
-   fire's five candidate quotes failed that way. Until the window narrows, a fire must read which
-   clause the marker governs — and the honest answer was *no edge* four times out of five.
-7. **Deviation 1559: cut the article at `See also` before counting names.** Four of the eight
-   held events the Ottoman umbrella article "named" were titles in its See-also list, and three
-   more sweeps in this fire hit the same thing. The cut belongs in the caller, not in
-   `chronology.mjs`.
-8. **The network is back but rate-limited, and the limit moves.** Deviation 1547's one-request-a-
-   minute was not in force at 12:40Z — `Special:EntityData` and WDQS both answered in under a
-   second — but `api.php` returned `HTTP 429` with `retry-after: 21` on the first body fetch and
-   tightened to *"You are making too many requests to the API"* after the 30-call import. **The
-   import's own pacing gets through; a hand-rolled loop needs 65 seconds between calls.** WDQS
-   itself was healthy all fire.
-9. **Still open, unchanged**: C8; deviations 1323, 1345, 1346's remaining ocean islands (Madeira
-   is settled, by the `praia` precedent and a measurement), 1348's lane guard, 1353, 1358, 1361,
-   1362, 1365, 1366, 1377, 1383, 1386, question 11 (the Nine Years' War, `Q152218`), question 12,
-   `Q718893`, `Q5037062`, `Q4677270`, `Q4677390`, the nine atlas umbrellas with no
-   `wikidata`, the Gulf Coast campaign umbrella (`Q5617470`), batch 48's Chilean four, the
-   Almagrista eight and their missing decree, batch 52's three 16th-century refusals, `Q1226252`
-   *tied island*, `arauco-war`'s interval, `Q3051491` *Capture of Valdivia*, the place pass on
-   records that already exist (M42's), `capture-of-luanda`'s `wikipedia.en` redirect, `Q2915203`
-   *Ethiopian–Adal War*, the Italian Wars' nine children
-   to each other, the 22 Europe-lane children of `ottoman-habsburg-wars`, batch 64's refiling
-   question, `kandyan-commerce-raiding-against-portugal-1612-1613`'s place, `Q10369402`, 
-   `Q138011120`, `Q2713453`, `Q4677387`, `Q4677277`, `Q106959443` *Maghrebi War*, `Q86667216`
-   *Spanish–Algerian conflicts*, and batch 82's remaining 36 Mediterranean candidates.
-   **Newly open**: `Q132175198` and `Q135153487`, the two Barbary children A15(1) refuses for
-   deriving the europe lane — they become importable the day asia reaches 303.
-10. **Two old faults bit this fire and both are already written down, which is the point.**
-   **Deviation 1538's warning paid for itself**: `node tools/validate.mjs --index | tail -3` in a
-   `&&` chain exits 0 whatever the validator says, and this fire ran it that way three times and
-   read "0 errors" three times from a run that had **3**. Read with its own exit status, rule 16
-   was failing on `manifest.json` and two `history-edge-1500-1599` shards — which is
-   **deviation 1264's order**: the batch-85 index was built before the commit carrying the Jarte
-   edge existed, so the history shard that edge belongs in was written from a history that did
-   not yet hold it. The same fault is in this fire's merge commit, where the index was rebuilt to
-   check the merge and committed with it. Both were fixed by one rebuild-and-commit-alone, and
-   `validate --index` exits **0** at this head. **The next fire must run the validator as its own
-   command and read `$?`** — never into a pipe, and never as the last link of a `&&` chain.
-11. **`origin/m42` is handing Europe-lane work to this lane and this lane cannot take it.** Its
-   batch 94 note says Yalta *"derives Europe and is handed to M42b in the stand"* and its
-   refusal names *"Operation Overlord, which is Europe's and so M42b's"*. Both are 20th-century
-   Europe, which **A15(1) does not pause** — the pause is on Europe *before 1900* — so these are
-   takeable, and they are the first Europe-lane work this lane has been offered that the pause
-   does not touch. Worth a batch of its own once asia is clear, and worth saying in a reply on
-   `origin/m42`'s own pool file if the lanes ever exchange notes.
-
-12. **Deviation 1561 is hidden, not fixed, and the next fire should expect it back.**
-   `tests/graph-labels-browser.test.mjs` → *"a node with room round it is named in full"* went
-   red after batch 85 and **green again after batch 86**, with no code change between the two
-   heads: the test picks its subject from the corpus, and the index's id order decides which node
-   that is. At this fire's final head the suite is **313 of 313** here and on the runner. When
-   some future batch makes that long-named node the subject again the test will fail again, and
-   **the answer is not to pin the subject** — it is the zoom anchor, measured in the deviation.
-13. **Deviation numbers: 1561 is the highest taken; 1562 is the first free.** This fire used
-   **1558** (an item whose locations are two oceans and a continent takes its lane from an
-   ocean), **1559** (the sweep reads a See-also list as a sentence), **1560** (a two-sentence
-   window passes `statesACause` on a marker in a different clause) and **1561** (records in one
-   century re-arrange another century's picture through the index's id order, and the node that
-   then wins a browser test exposes a zoom anchor fault). **Read deviation 1484 before
-   taking the next one, and run its three greps over `origin/m42`'s `docs/m42-pool.md` and
-   `STATUS.md` as well as this branch's files** — that is this fire's amendment to 1484, and it
-   is what caught `origin/m42` already holding 1557. **Batch 86 took no new number**: its two
-   findings are deviation 1553's class (Cape Spartel, the second strait fixed by an override) and
-   the mirror of 1560 (`allowed` is not in `CAUSAL_MARKERS`, so `statesACause` says false of a
-   sentence that plainly states one — the marker list is a floor for A15(5)'s refusal test and
-   never a gate an edge must pass).
+1. **A15(1)'s europe pause is lifted and nothing has been taken under it yet.** Africa 320 and
+   asia 321 are both past A10's 303, which is the condition the amendment names, so **europe
+   before 1900 is open to this lane for the first time**. The 09:36Z stand's move 3 has been
+   waiting on exactly this: **the Iberian Union and the 1580 succession crisis**, two europe-lane
+   records of 1580 that sit at the end of this atlas's own first slice (1415–1580) and that
+   nothing else in the corpus reaches. Also newly open: `Q132175198` and `Q135153487`, the two
+   Barbary children batch 86 refused only for deriving europe. **Take them before anything else**
+   — they are the cheapest records in either pool file now, and they were cheap three fires ago.
+2. **The americas queue is 241 and measured, and it is where A5 gets paid.** This fire's
+   correction to batch 86's table is the useful half of it: read through the import's own A9 chain
+   rather than a crude first-`P276`, the 518 unheld pre-1800 sweep rows are **americas 241,
+   europe 204, no lane 67, asia 4, africa 2** — so batch 86's "123 with no lane" were not hidden
+   asian work, they were hidden americas work. **Every one of the 241 is already a `P361` child of
+   a held event**, so a batch of them costs no main at all and, unlike the Imjin cluster, lands
+   inside the component rather than beside it. The query is in "Batch 87" above; re-run it, derive
+   with `createRegionDeriver` over `readRegionPolygons`, and work the americas column by century.
+   **The americas is also the half of this partition the brief orders explicitly**: South and
+   Central America before North America until they hold as many active events as North America,
+   and nothing in these files has measured that split yet. A fire that spends one query on it
+   would be the first.
+3. **The Imjin cluster is 38 events and a component of two, and that is this batch's one real
+   debt.** A5 asks for edges to what exists; before this batch the atlas held nothing in Korea,
+   Japan or Ming China, so there was nothing a cited sentence could reach. **What closes it is not
+   more Korean records but the Portuguese ones that touch them**: the Nanban trade, the arquebus
+   at Nagashino, the Macau settlement of 1557, the 1543 landfall at Tanegashima. Those are asia
+   before 1800 and so this lane's, each has an English article, and each would give the cluster a
+   cited route into the Portuguese corpus. **That is the first thing to do for the component**,
+   and it is worth more than another 38 events beside it.
+4. **Three asia umbrellas the grouped query found and this fire did not take**, each one main for
+   several records: `Q20443986`'s sibling queue is spent, but `Q18378977` *Campaigns of Nader
+   Shah* (1720, 5 children), `Q139845` *Deccan wars* (1681, 4), `Q233601` *Second Carnatic War*
+   (1749, 4), `Q233663` *Second Anglo-Mysore War* (1780, 4) and `Q617350` *Third Anglo-Mysore War*
+   (1790, 6) are the five best, and **they fall in asia's two thinnest pre-1800 centuries — the
+   17th at 26 and the 18th at 22**. `Q138542399` *Omani–Portuguese conflicts* (1650, 3 children)
+   is the one of them that touches this atlas's own subject.
+5. **`Q1187249` *Ottoman–Portuguese confrontations* (1538–1718) is still untaken** and the 12:36Z
+   stand's arithmetic for it still holds: one main buys `Q118946422` *Capture of Muscat* (1581,
+   asia), `Q898763` *Ottoman–Portuguese conflicts of 1586–1589* (africa) and `Q128812160` *Battle
+   of Mombasa* (1589, africa). It carries no location claim, so it needs a seeded lane as `Q762191`
+   did. Worth a batch on its own now that it is not asia's only route.
+6. **`extracts` costs one request per article, and the rate limit is tighter than the 12:36Z
+   stand measured.** `prop=extracts` with `exintro` off answers with one page whatever `titles`
+   holds — the other nine come back with a warning and no text. And three of this fire's seven
+   extract requests returned `HTTP 429` at **66 seconds** between calls, one again at **150**;
+   WDQS and `Special:EntityData` were healthy throughout, and the import's own pacing got 39 items
+   and 46 leads through without a single refusal. **Plan a fire around the import and WDQS, never
+   around `api.php`.**
+7. **Deviation 1563: a record written by hand in this repository is two-space JSON, and
+   `tests/bundle.test.mjs` is what says so.** Both files this fire wrote outside the import — the
+   Hansan interval fix and the one edge — went in at one-space indent, because the two generated
+   files the fire had just merged (`tools/import/cache/titles.json`, and the seeds) are one-space
+   and the habit carried. *"An unedited save of a record in data/ is byte identical"* failed on
+   each in turn. **The test is the only thing that catches it** and it catches it two suites deep
+   in a 1,941-test run; a fire that hand-writes a record should re-dump it at `indent=2` before
+   running anything.
+8. **Deviation 1564: the seeds and the title cache are one-space JSON and a reformat of either is
+   a 6,000-line diff.** Appending 39 items with `json.dumps(indent=1)` re-sorted and re-spaced the
+   whole seeds file; appending three titles the same way churned 1,028 lines of
+   `tools/import/cache/titles.json`. **Both were resolved by editing the text rather than the
+   parsed object** — a regex insertion into the `"items"` block for the seeds, and an
+   order-preserving append for the cache. A merge of `origin/m42` that unions either file must do
+   the same or the diff hides what changed.
+9. **Deviation 1538's warning held this fire, and the validator was run as its own command every
+   time.** `node tools/validate.mjs --index` was never put in a pipe or at the end of a `&&`
+   chain, and `$?` was read on its own line. It read **0** at every commit and reads 0 at this
+   head. The 12:36Z stand's instruction worked; keep it.
+10. **Still open, unchanged**: C8; deviations 1323, 1345, 1346's remaining ocean islands, 1348's
+   lane guard, 1353, 1358, 1361, 1362, 1365, 1366, 1377, 1383, 1386, 1559 (cut the article at
+   `See also` in the caller), 1560 (the two-sentence window passes `statesACause` on a marker in
+   another clause), 1561 (the browser label test whose subject the index's id order picks),
+   question 11 (`Q152218`), question 12, `Q718893`, `Q5037062` *Capture of Trincomalee* and
+   `Q4677390` *Action of 8 September 1796* — the last two are the only asia rows the sweep still
+   offers and both cost a main — `Q4677270`, the nine atlas umbrellas with no `wikidata`, the Gulf
+   Coast campaign umbrella (`Q5617470`), batch 48's Chilean four, the Almagrista eight and their
+   missing decree, batch 52's three 16th-century refusals, `Q1226252`, `arauco-war`'s interval,
+   `Q3051491`, the place pass on records that already exist (M42's), `capture-of-luanda`'s
+   `wikipedia.en` redirect, `Q2915203`, the Italian Wars' nine children to each other, the 22
+   europe-lane children of `ottoman-habsburg-wars` — **now takeable, since the pause is lifted** —
+   batch 64's refiling question, `kandyan-commerce-raiding-against-portugal-1612-1613`'s place,
+   `Q10369402`, `Q138011120`, `Q2713453`, `Q4677387`, `Q4677277`, `Q106959443`, `Q86667216`, and
+   batch 82's remaining 36 Mediterranean candidates. **Newly open**: `Q4871325` *Battle of Jeonju*,
+   refused for carrying no `P31` at all, which is batch 86's `Q20639061` a second time; the 13
+   placeless Imjin records, each needing a place a person writes; and
+   `battle-of-hansan-island`'s two calendars, which this fire left for a reviewer rather than
+   choosing between them.
+11. **`origin/m42` is still handing 20th-century europe work to this lane** — Yalta and Operation
+   Overlord, named in its batch 94 note — and the pause never touched those. Now that it is lifted
+   for europe before 1900 as well, **there is no europe-lane work this branch has to refuse any
+   more**, which is a different shape of partition from the one every stand before this assumed.
+12. **Deviation numbers: 1564 is the highest taken; 1565 is the first free.** This fire took
+   **1563** (a hand-written record at one-space indent fails the byte-identical save test) and
+   **1564** (reformatting a one-space generated file turns an append into a six-thousand-line
+   diff). **Read deviation 1484 before taking the next one, and run its three greps over
+   `origin/m42`'s `docs/m42-pool.md` and `STATUS.md` as well as this branch's files** — 1562 was
+   taken by `origin/m42` and renumbered once already, which is what those greps are for.
