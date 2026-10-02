@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-the-lucala",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361",
+      "date"
+    ],
+    "note": "The cited article contradicts itself about the year and the record keeps the item's. \"First Battle of the Lucala\" at revision 1370619097 has `date = 13 September 1585` in its infobox, which is also P585 on Q138641767 and what \"Angolan Wars\" says; its first sentence says \"September 13, 1586\". A7 widens from a cited article; it does not choose between two years one article gives. A person must read Delgado, \"Historia de Angola\" I, pp. 324-325, which both sentences cite."
+  },
+  "wikidata": "Q138641767",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "First Battle of the Lucala"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q138641767"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of the Lucala\", revision 1370619097"
+    }
+  ],
+  "title": "First Battle of the Lucala",
+  "summary": "The English Wikipedia article \"First Battle of the Lucala\", at revision 1370619097, opens: \"The First Battle of the Lucala was a military action of the Angolan Wars between the Portuguese Empire and an army commanded personally by the king of Ndongo. It took place on September 13, 1586, and was a Portuguese victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q138641767, imported by tools/import/wikidata.mjs. The item's own description reads \"1585 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1585,
+    "end": 1585,
+    "date": "1585-09-13"
+  },
+  "place": "lucala-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "angolan-wars"
+}

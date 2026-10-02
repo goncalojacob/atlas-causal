@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "battle-of-mbwila--kongo-civil-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-74"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kongo Civil War\", revision 1376270418"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mbidizi River\", revision 1370449386"
+    }
+  ],
+  "from": "battle-of-mbwila",
+  "to": "kongo-civil-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "Three articles say the same thing in their own words, and this is the clearest of the two edges this batch writes. “Kongo Civil War”, at revision 1376270418, § Battle of Mbwila: “King António I and many of the Kinlaza nobility were killed in the battle; the royal crown and sceptre were sent to Portugal as trophies. The boy heir to the Kongo throne was captured and taken to Luanda along with the head of António. … Robbed of their king, heir and symbols of leadership, the kingdom quickly descended into civil war as Kinlaza and Kimpanzu partisans vied for the throne.” The second author, “Battle of Mbidizi River” at revision 1370449386, says it independently in its § Pre-battle situation: “The engagement resulted in a crushing Portuguese victory ending in the death of the Mwenekongo António I and most of the kingdom’s nobility. Afterwards, Kongo erupted in a brutal civil war between the House of Kinlaza, which had ruled under the dead king, and the House of Kimpanzu.” “Battle of Kitombo” at revision 1370267185 carries the same two sentences almost verbatim. `caused` and not `precondition-of`: what the articles name as the cause is the battle itself — the king dead, the heir taken, the regalia gone — and not a policy the battle made room for. `probable`: rule 22 keeps an edge carried by Wikipedia records below `consensus`.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

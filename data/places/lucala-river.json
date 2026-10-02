@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "lucala-river",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3011855",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Lucala River",
+    "pt": "Rio Lucala"
+  },
+  "sources": [],
+  "names": [
+    "Lucala River",
+    "Rio Lucala"
+  ],
+  "where": {
+    "lon": 14.23333333,
+    "lat": -9.63333333,
+    "precision": "region",
+    "label": "Lucala River"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

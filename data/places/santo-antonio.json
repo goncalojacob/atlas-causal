@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "santo-antonio",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q973656",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Santo António",
+    "pt": "Santo António (São Tomé e Príncipe)"
+  },
+  "sources": [],
+  "names": [
+    "Santo António",
+    "Santo António (São Tomé e Príncipe)"
+  ],
+  "where": {
+    "lon": 7.417777777777777,
+    "lat": 1.6366666666666667,
+    "precision": "city",
+    "label": "Santo António"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mahdia",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-01",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q466054",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-01"
+  },
+  "wikipedia": {
+    "en": "Mahdia",
+    "pt": "Mádia"
+  },
+  "sources": [],
+  "names": [
+    "Mahdia",
+    "Mádia"
+  ],
+  "where": {
+    "lon": 11.062222222222,
+    "lat": 35.504722222222,
+    "precision": "city",
+    "label": "Mahdia"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

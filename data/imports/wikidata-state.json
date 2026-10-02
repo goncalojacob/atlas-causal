@@ -1992,6 +1992,12 @@
         "Q4871945",
         "Q134376352",
         "Q7097291",
+        "Q5037032",
+        "Q117350122",
+        "Q131686861",
+        "Q137801200",
+        "Q130198485",
+        "Q138002239",
         "Q3720660",
         "Q796498",
         "Q138772633",
@@ -1999,7 +2005,18 @@
         "Q4783165",
         "Q852088",
         "Q47015896",
-        "Q151622"
+        "Q151622",
+        "Q132776772",
+        "Q138606175",
+        "Q130493316",
+        "Q138632220",
+        "Q138641767",
+        "Q1752752",
+        "Q6429210",
+        "Q4871456",
+        "Q4871702",
+        "Q4872479",
+        "Q109058273"
       ]
     }
   },
@@ -2219,6 +2236,10 @@
     "Q138772633": {
       "on": "2026-10-01",
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q6429210": {
+      "on": "2026-10-02",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
     }
   }
 }

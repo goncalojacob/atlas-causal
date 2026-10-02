@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "kongo-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "umbrella-written-from-article"
+    ],
+    "note": "Written by hand, not imported: Q6429210 dates itself 1600-1700 at century precision and tools/import/wikidata.mjs refuses that outright. A6 lets a run write a period umbrella from its own Wikipedia article; the span 1665-1709 is the first sentence of the revision cited here, which the record quotes. Everything else - the item, the sitelink count, the class Q8465 behind the category - is read off the item. Nobody has read this record."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q6429210",
+  "wikipedia": {
+    "en": "Kongo Civil War"
+  },
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6429210"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kongo Civil War\", revision 1376270418"
+    }
+  ],
+  "title": "Kongo Civil War",
+  "summary": "The English Wikipedia article \"Kongo Civil War\", at revision 1376270418, opens: \"The Kongo Civil War (1665–1709) was a war of succession between rival houses of the Kingdom of Kongo. The war was waged throughout the late 17th and early 18th centuries, between the House of Kinlaza and House of Kimpanzu. Numerous other factions entered the conflict, claiming descent from one or both parties, such as the Água Rosada of Kibangu and the da Silva of Soyo. By the end of the war, Kongo's vaunted capital had been destroyed and many Bakongo were sold into the Trans-Atlantic Slave Trade.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6429210, whose own P580 and P582 are 1600 and 1700 at century precision — a span this atlas cannot put on a timeline, which is why tools/import/wikidata.mjs refused the item (\"no date the atlas can use\") and this record was written from the article instead, under A6. The years here are the article's own, from the sentence quoted above.",
+  "when": {
+    "start": 1665,
+    "end": 1709
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by this run: the record points at no place, and the item's only P17 is the Kingdom of Kongo (Q796583), whose ground is in the africa lane.",
+  "category": "war",
+  "actors": []
+}
