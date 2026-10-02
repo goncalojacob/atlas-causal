@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bizerte-crisis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "a9-place",
+      "filed-by-span-and-subject"
+    ],
+    "note": "A9: no own P625; P276 is Q189546, Bizerte, a city whose point is in the africa lane, written as `bizerte`. A6: P361 is empty, and the article's infobox gives `part_of = the decolonisation of Africa and the spillover of the Algerian War`; the filing is `decolonisation-of-africa`, whose span holds 1961, not `algerian-war`, which the article calls what this spilled over from and whose place is French Algeria — that link is an edge. A15(12): Q180684 carries `other`. Nobody has read this."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q879267",
+  "wikipedia": {
+    "en": "Bizerte crisis",
+    "pt": "Crise de Bizerta"
+  },
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q879267"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bizerte crisis\", revision 1370604378"
+    }
+  ],
+  "title": "Bizerte crisis",
+  "summary": "The English Wikipedia article \"Bizerte crisis\", at revision 1370604378, opens: \"The Bizerte crisis occurred in July 1961 when Tunisia imposed a blockade on the French naval base at Bizerte, Tunisia, hoping to force its evacuation. The crisis culminated in a three-day battle between French and Tunisian forces that left 630 Tunisians and 24 French dead.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q879267, whose P580 is 19 July 1961 and P582 23 July 1961, both at day precision, which is the span carried here and the one the article's own infobox states as “19–23 July 1961”.",
+  "when": {
+    "start": 1961,
+    "end": 1961,
+    "date": "1961-07-19",
+    "endDate": "1961-07-23"
+  },
+  "place": "bizerte",
+  "region": null,
+  "regionNote": null,
+  "parent": "decolonisation-of-africa",
+  "category": "other",
+  "actors": []
+}

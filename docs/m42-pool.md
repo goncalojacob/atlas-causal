@@ -23959,3 +23959,88 @@ the same item, and 0 that should be on disk and are not.**
 **Validator: 0 errors, 637 warnings — the same 637 as before the batch.** The
 three events and two places add no warning of any kind.
 
+
+## Batch 91 — the Bizerte crisis, the one unheld event inside the other African umbrella, 2 October
+
+*The same 08:07Z fire, after batch 90 was pushed green. Same question asked of
+the other African umbrella: which events inside `decolonisation-of-africa`'s
+1954/56-to-1976 span does the atlas not hold?*
+
+**The query, and what it says about Africa's coverage.** One SPARQL request
+(the rate limit above allows one a minute): fourteen event classes, `P17` in the
+55 African sovereign states, 14 sitelinks or more, `YEAR(COALESCE(P580, P585))`
+between 1954 and 1976. It returns **13 distinct items, and the atlas already
+holds 9 of them.** The four it does not are `Q1993848` the South African Border
+War (1966–1990), `Q18164062` the Gombe Chimpanzee War, `Q879267` the Bizerte
+crisis and `Q152060` the Cabinda Conflict (1975 and open-ended).
+
+That 9-of-13 is worth saying plainly, because it is the opposite of what the
+batch-88 and batch-89 stands found one level down: **at the umbrella and
+near-umbrella level, in this window, Africa is nearly complete.** What is thin
+is the level below, and what the last three fires established is that the level
+below does not argue. The 13 is also a measurement of the *query* and not only
+of the atlas: an event of this era whose `P17` is a colonial polity rather than
+a modern state — French Algeria, Portuguese Angola, Rhodesia — is invisible to
+it, which is why this returns 13 where the forward `P361` walk returned 346.
+**A line for the owner:** the next African query should go through `P17` on
+historical polities as well as modern states, which needs a list of them this
+fire did not build.
+
+**Of the four, one could be imported with an edge.** `Q1993848` the South African
+Border War runs 1966 to 1990 and fits neither African umbrella's span, so it
+would be a new main event and A6 refuses that; `Q18164062` is a war between
+chimpanzee communities at Gombe and is not an event of this atlas's kind;
+`Q152060` starts inside the span and has no end, so filing it inside a closed
+umbrella would be rule 24's warning. **`bizerte-crisis` (Q879267, 21 sitelinks)
+is the one that fits**, and it fits unusually well: its own article's infobox
+reads `part_of = the decolonisation of Africa and the spillover of the Algerian
+War`, so the umbrella is named by the source rather than argued by this fire.
+Its place is `bizerte` (Q189546), written from `P276` under A9 at `city`
+precision; its category is `other`, from `Q180684` in the class table; its span
+is `P580` 19 July 1961 to `P582` 23 July 1961, both at day precision, which is
+what the infobox states too, so A15(4) had nothing to correct.
+
+**One edge, and why it is not a parent.**
+`algerian-war--bizerte-crisis--precondition-of`, cited at "Bizerte crisis"
+revision 1370604378, § Background: *"After Tunisia gained independence from
+France in 1956, France remained in control of the city and its naval base, a
+strategic port on the Mediterranean, which played an important part in French
+operations during the Algerian War. France had promised to negotiate the future
+of the base, but had so far refused to remove it."* The war is what the article
+says made the base worth keeping, and the base is what the blockade was about.
+`precondition-of` and not `caused`, because Tunisia's decision to blockade is
+its own.
+
+The infobox's second half tempts a filing under `algerian-war` as well, which
+A8 would ask for if it fitted. **It does not**: what the article names is *the
+spillover of* the Algerian War, the crisis happened in Tunisia, and
+`algerian-war`'s own place is `french-algeria`, so m67's subject test — the
+child's place is the umbrella's, or they share an actor — refuses it. The
+relation is real and it is an edge. Because `algerian-war`'s own parent is
+`decolonisation-of-africa` too, **this edge shares a parent with its far end and
+does not cross an umbrella**, which is why A15(11)'s count is unmoved by a batch
+that moved the component.
+
+### Counts after batch 91
+
+| | before | after |
+| --- | --- | --- |
+| active events | 1,456 | **1,457** |
+| **main events** | **234** | **234** |
+| active edges | 1,227 | **1,228** |
+| **largest component** | **789** | **790** |
+| components | 440 | 440 |
+| active events with no edge | 341 | **341** |
+| edges crossing an umbrella (A15(11)) | 618 | **618** |
+
+**Per lane (A10).** Africa 250 active / 35 main, Asia 255/57, Americas 396/56,
+Europe 556/86. Africa still trails Asia, by five now.
+
+**A15(1), candidates left unconnected: 3** — `Q1993848`, `Q18164062` and
+`Q152060`, each for the reason above. **A15(2):** two more leads cached
+(`Q879267` in `en` and `pt`) and one more row in the title table;
+`cache-evidence.mjs` reports **3,043 citations, 2,965 on disk at the revision
+cited, 78 unholdable beside a more-cited revision of the same item, 0 that
+should be on disk and are not.** **Validator: 0 errors, 637 warnings**, still
+the same 637.
+
