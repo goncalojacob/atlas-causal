@@ -24970,3 +24970,119 @@ not**, over all 3,071 `wikipedia-en` citations.
 **Both edges are inside one umbrella and neither crosses one**: every end of
 both is a child of `world-war-ii`, so A15(11)'s crossing count is unchanged at
 619 while the inside-one count rises from 615 to 617.
+
+## Where the run stands after batches 96 and 97, for the fire that picks it up
+
+**Read the stand after batch 92 as well** — its §1 (choose the candidate by its
+far end) and §2 (why one lane and not the other) still decide what a fire can do
+— **and §1b of the stand after 93 to 95, which is what this fire spent itself
+on.** That paragraph said `world-war-ii` is a worldwide umbrella and so an
+African event of that war files at +0 main without waiting on the Cold War
+umbrella the owner has to decide. It was right, and this fire turned it into
+**three African records in three batches**: `cairo-conference` (95),
+`north-african-campaign` (96), `casablanca-conference` (97). **Africa has gone
+from trailing Asia by nine to trailing by six in five batches**, and every one of
+those batches was +0 main.
+
+**1. The vein is wide open and the next fire should keep taking it.** The
+North African campaign is now a record, and it is an umbrella: its `P527` is
+`Q625798` the Western Desert campaign, and its own lead names **Operation
+Torch** (`Q194132`), the **Tunisia campaign** (`Q852365`) and, three paragraphs
+in, the **Second Battle of El Alamein** (`Q153376`). The **East African
+campaign** is `Q1052120`. All five ids were resolved through
+`query.wikidata.org/sparql` on the articles' own `schema:about` and **none of
+them is held** — checked against `data/events/` by `wikidata` field, and
+`origin/m42b` holds none of them either. Every one is in the africa lane and
+every one files inside `world-war-ii`, or inside `north-african-campaign` now
+that it exists, at **+0 main**. That is a lane's worth of work that needs no
+decision from anybody.
+
+**2. But they cannot be edged to their own parent, and that is now the binding
+constraint on this vein.** A14's standing rule — until the owner decides the
+22 September C8, a batch writes no edge from a parent to its own child — means
+El Alamein, Torch and the Tunisian campaign may not be joined to
+`north-african-campaign`, which is the one obvious edge each of them has. They
+can be edged to **each other**, and the campaign's own article states the
+sequence plainly, so a batch that takes two or three of them at once has edges
+to write; a batch that takes one of them alone may not. **Take them in pairs.**
+
+**3. The cluster this fire made is not in the largest component, and the note
+says so rather than rounding it up.** `allied-invasion-of-sicily` had degree 0
+— no edge at all since it was imported — so batch 96's edge into it made a
+component of two and batch 97's made it three. **The largest component is 795
+before and after**, and the edgeless count fell 341 → 340. This satisfies
+A15(1)'s standard, which is *connect to what exists*, and it does not satisfy
+the thing worth wanting. **Three candidates would join the three to the 795, and
+all three are blocked on the same missing edge type:**
+
+- `allied-invasion-of-sicily --> eastern-front`, which the Sicily lead states
+  outright (*"one-fifth of the German army being diverted from the Eastern
+  Front"*);
+- `north-african-campaign --> eastern-front`, which the campaign's § Operation
+  Torch states (*"it provided some degree of relief for the Red Army on the
+  Eastern Front"*);
+- `casablanca-conference --> eastern-front`, the second-front argument in
+  § Strategy.
+
+**4. The missing edge type is now the most expensive open question in this
+lane, and it has been met four times in two fires.** Batch 94's
+`tehran-conference --> eastern-front`, batch 95's
+`cairo-conference --> second-sino-japanese-war`, and batches 96 and 97 above.
+The shape is always the same: **an article states that one event changed how a
+war already running was fought**, and none of the five types says that.
+`caused` and `enabled` both assert the later war was brought about; `reacted-to`
+reverses it; `precondition-of` reads backwards; `inspired` is about ideas. It is
+not a mistake a fire can fix — a sixth type is a change to a closed vocabulary
+and so not a records lane's to make — and the cost is now measurable: **four
+refused edges, three of which would have joined this fire's whole cluster to the
+largest component.** The alternative that costs nothing is §1's, and it is what
+the next fire should do: import the operations, and link those.
+
+**5. A15(6)'s gate has now been walked round by hand twice, and the rule it is
+missing is one sentence.** `eastern-front` carries `place-refused` because the
+chain's answer for a front from the Vistula to the Volga was a point in Central
+Europe; `north-african-campaign` carries it because the chain's answer for a
+campaign from Morocco to the Nile delta was Cairo. In both cases the item's
+`P276` holds **more than one located territory** and the chain simply takes the
+first. A15(6) already refuses a `P17` naming more than one country; **the same
+sentence applied to `P276` would have refused both automatically**, and it is a
+one-clause change in `countryGateApplies`. A records lane does not write tool
+code, so it is written here.
+
+**6. `P2348` should be in the filing pass, behind `P361`.** `casablanca-
+conference` carries no `P361` at all, so A6's filing was by span and subject —
+but the item's **`P2348`, the time period it belongs to, is `Q362`**, which is
+`world-war-ii`'s own item. That is a stated filing in everything but the
+property name, and the import never looks at it. Behind `P361` and ahead of
+span-and-subject is where it belongs.
+
+**7. Deviation 1563 — `docs/m53-polities.md` carries the §4.1 figures paragraph
+four times, and two of the four are stale.** `tools/m53-retake.mjs --write`
+moves the **table row** and nothing else; the paragraph beside it, which states
+both figures where the start rule and the overlap rule disagree, is hand-written
+and `tests/m53.test.mjs` reads **the first occurrence only**. Lines 298 to 301
+are four copies of that paragraph: two now read 409 and 410, and two still read
+400 and 401, which was the count at some earlier size. They are almost certainly
+a merge of the two records branches keeping both sides of a paragraph each had
+edited, which is what the landing routine is told to do with `STATUS.md`. **This
+fire updated the two current copies and deliberately did not delete the stale
+two**, because they may carry the other lane's own sentences and deleting
+another branch's text is not a records lane's call. Somebody should read the
+four and keep one.
+
+**8. The network, unchanged.** `Special:Export`, `Special:EntityData`,
+`wbgetentities` and `query.wikidata.org/sparql` all answered, on a retry loop of
+up to thirty tries at seven seconds. **Eleven documents** were read over the two
+batches — two SPARQL queries resolving six article titles to items, four items,
+and five article exports — and every one arrived first try. The SPARQL endpoint
+remains the only way to turn a title into an item without guessing, and the
+batch-93-to-95 stand's lesson stands: **never write an item id that was not read
+from the item.**
+
+**9. Deviation numbers: take the next above 1563, and read `origin/m42b` again
+before you take one.** Both branches stood at 1562 when this fire read them; it
+took 1563 and nothing else.
+
+**10. Still open, unchanged, and still the owner's.** Everything in the
+batch-90-and-91 stand's §6 and in the batch-93-to-95 stand's §5, plus §2, §4,
+§5 and §6 above, and the `docs/m42-pool.md` §3 table still stopped at batch 17.

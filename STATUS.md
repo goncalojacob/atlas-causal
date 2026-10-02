@@ -25205,3 +25205,44 @@ centres, so a point on top of a long diagonal edge read as far from everything,
 and it measured before the picture stopped moving. Now it waits for the count of
 marks and lines to hold still and measures to the ink. The check was red once for
 that and nothing was skipped or disabled.
+
+**M42 batches 96 and 97 — the North African campaign and the conference that
+decided Sicily, 2 October.** The fire that claimed at 16:08Z took the vein the
+previous stand put first and named *"the most valuable thing in this file"*:
+`world-war-ii` is a worldwide umbrella, so an African event of that war files at
+**+0 main** without the Cold War umbrella four stands have been waiting on.
+**Batch 96:** `north-african-campaign` (Q218678, 50 sitelinks), 10 June 1940 to
+16 May 1943, **no place** — the item has no `P625` and a `P276` of five
+territories, and a campaign fought from Morocco to the Nile delta is not Cairo,
+which is the judgement `eastern-front` already carries — lane **africa** from
+that first located point, filed by span and subject because its `P361`
+(`Q696817`, the Mediterranean and Middle East Theatre) is not a record here.
+One edge, `enabled` to `allied-invasion-of-sicily`, on the article **that record
+already cites at the revision it already cites**: *"With the conclusion of the
+North Africa campaign in May 1943 … decided to attack Axis forces in Europe via
+Italy."* That record had **degree 0**, so the edgeless count fell 341 → 340.
+**Batch 97:** `casablanca-conference` (Q502093, 42 sitelinks) and the place
+`casablanca` (Q7903) written from the third step of A9's chain, with `caused` to
+`allied-invasion-of-sicily` on the lead's *"Of all the decisions made, the most
+important was the Allied invasion of Sicily."* Over the fire: **1,462 → 1,464
+active, main 234 throughout, 1,234 → 1,236 edges, largest component 795
+unchanged**, components 440, events with no edge 341 → 340, edges crossing an
+umbrella 619 and inside one 615 → 617. **Africa 251 → 253**, Asia 259 — the
+trailing lane has closed from nine behind to six in five batches, and all five
+were +0 main. Validator **0 errors, 637 warnings** throughout; locally **1,941
+pure and 313 browser tests, all passing, 0 skipped**. **Deviation 1563:**
+`docs/m53-polities.md` carries its §4.1 figures paragraph **four times**, two
+now reading 409 and 410 and two still reading 400 and 401 from an earlier size;
+`tools/m53-retake.mjs --write` moves only the table row and the paragraph is
+hand-written, and `tests/m53.test.mjs` reads the first copy. This fire updated
+the two current copies and **did not delete the stale two**, because they are
+very likely the other records branch's side of a merge and deleting another
+lane's text is not this one's call. **Three lines for the owner, all in the
+stand.** A sixth edge type: four times in two fires an article has stated that
+one event changed how a war **already running** was fought, and none of the five
+types says it — three of those four would have joined this fire's whole cluster
+to the largest component. A15(6)'s gate should refuse a `P276` naming more than
+one located territory exactly as it refuses a `P17` naming more than one
+country; it has now been walked round by hand twice. And `P2348` — the time
+period an item belongs to — should sit in the filing pass behind `P361`:
+Casablanca's is `Q362` outright.
