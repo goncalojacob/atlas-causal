@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "oujda",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q193802",
+  "sitelinks": {
+    "count": 69,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Oujda",
+    "pt": "Ujda"
+  },
+  "sources": [],
+  "names": [
+    "Oujda",
+    "Ujda"
+  ],
+  "where": {
+    "lon": -1.9113888888889,
+    "lat": 34.686666666667,
+    "precision": "city",
+    "label": "Oujda"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

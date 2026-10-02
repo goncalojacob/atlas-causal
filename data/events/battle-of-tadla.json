@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-tadla",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3636630",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Tadla",
+    "pt": "Batalha de Tédula"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3636630"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tadla\", revision 1370275084"
+    }
+  ],
+  "title": "Battle of Tadla",
+  "summary": "The English Wikipedia article \"Battle of Tadla\", at revision 1370275084, opens: \"The Battle of Tadla occurred in September 1554 in Tadla, Morocco, between Ali Abu Hassun, last ruler of the Wattasid dynasty, and Mohammed ash-Sheikh, ruler of the Saadis.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3636630, imported by tools/import/wikidata.mjs. The item's own description reads \"1554 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1554,
+    "end": 1554,
+    "date": "1554-09"
+  },
+  "place": "tadla",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "conflicts-between-the-regency-of-algiers-and-morocco"
+}

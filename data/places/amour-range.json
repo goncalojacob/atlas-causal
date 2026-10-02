@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "amour-range",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q15179857",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Amour Range"
+  },
+  "sources": [],
+  "names": [
+    "Amour Range"
+  ],
+  "where": {
+    "lon": 2.06666667,
+    "lat": 34.05,
+    "precision": "region",
+    "label": "Amour Range"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

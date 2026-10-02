@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "battle-of-djidioua",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "article-is-redirect",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q124202132",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Djidioua"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q124202132"
+    }
+  ],
+  "title": "Battle of Djidioua",
+  "summary": "Wikidata item Q124202132, imported by tools/import/wikidata.mjs. The item's own description reads \"battle between Deylik of Algiers and the Sultanate of Morocco\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1694,
+    "end": 1694
+  },
+  "place": "djidioua",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "conflicts-between-the-regency-of-algiers-and-morocco"
+}

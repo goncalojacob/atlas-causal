@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-taza-1553",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q112659341",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Taza (1553)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q112659341"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Taza (1553)\", revision 1370590714"
+    }
+  ],
+  "title": "Battle of Taza (1553)",
+  "summary": "The English Wikipedia article \"Battle of Taza (1553)\", at revision 1370590714, opens: \"The Battle of Taza occurred in December 1553, it was a battle between the Regency of Algiers and the Saadi Sultanate. Salah Reis left 1,500 men in charge of the victorious operation against the Moroccan camp near Taza, which was protected by a Moroccan army composed of 30,000 cavalry, 10,000 infantry and 20 cannons.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q112659341, imported by tools/import/wikidata.mjs. The item's own description reads \"1553 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1553,
+    "end": 1553,
+    "date": "1553-12"
+  },
+  "place": "taza",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "conflicts-between-the-regency-of-algiers-and-morocco"
+}

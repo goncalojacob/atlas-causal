@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "campaign-of-tlemcen-1557",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q86684978",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Campaign of Tlemcen (1557)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q86684978"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Campaign of Tlemcen (1557)\", revision 1370607753"
+    }
+  ],
+  "title": "Campaign of Tlemcen (1557)",
+  "summary": "The English Wikipedia article \"Campaign of Tlemcen (1557)\", at revision 1370607753, opens: \"The Campaign of Tlemcen or Tlemcen campaign was a military operation led by the Saadians of Mohammed ash-Sheikh against Tlemcen in 1557, then under the domination of the Regency of Algiers, a vassal state of the Ottoman Empire. Mohammed ash-Sheikh, who wanted to conquer Algeria, occupied the city but failed to seize the Mechouar Palace, which was defended by a garrison of 500 men under the command of Caïd Saffa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q86684978, imported by tools/import/wikidata.mjs. The item's own description reads \"1557 military campaign against Tlemcen\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1557,
+    "end": 1557
+  },
+  "place": "tlemcen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "conflicts-between-the-regency-of-algiers-and-morocco"
+}
