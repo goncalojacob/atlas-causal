@@ -22904,3 +22904,95 @@ them with an article, a classifiable class and `net` ≤ 0, and **none of those
 `node tools/cache-evidence.mjs --fill`: **2,992** `wikipedia-en` citations on
 active records, **2,914** on disk at the revision cited, **0 that should be on
 disk and are not.** Seven leads were written by the import as it read them.
+
+## Where the run stands after batch 88, for the fire that picks it up
+
+*Same fire, 1 October, claimed 23:30Z, two batches. **This stand supersedes the
+one after batch 87**; everything in that one marked "unchanged" is unchanged
+again and is not repeated here. Read that stand's four numbered reads before
+taking a batch from the vein — they all still hold.*
+
+**The one thing this stand is for: the inverse vein works and it cannot write
+an edge, and those are both now measured rather than argued.**
+
+- **It works.** Two batches, eight rows read, **seven records written** and one
+  refused at the place step, over **eleven import calls** — against the last
+  vein's seven records in a thousand articles. No article has to be read to
+  judge a row.
+- **It cannot write an edge.** Seven umbrella articles, **1,884 sentences**, 70
+  sentences naming a held non-kin record, **zero edges**. An umbrella's article
+  is a survey: it names dozens of held records because it ranges over decades
+  and argues about almost none of them, because arguing is what the children's
+  articles do. **Do not take a batch from this vein expecting the largest
+  connected component to move. It has not moved from 784 all fire.**
+- **So the next fire that wants the component to move should take deviation
+  1515's `done`-cursor vein** — 167 ticked items never written, 53 importable,
+  and the only remaining vein whose rows are *events*. It is question 4 of the
+  batch-86 stand and it is still unmeasured.
+
+**Africa is exhausted in this vein.** 164 rows are untouched, 71 of them
+clearing every gate, and **none of those 71 has a child in the africa lane.**
+A10 puts Africa first and this vein has nothing more for it. **The fire that
+wants Africa needs a different question**, and neither of the two remaining
+unmeasured ones (`P710` participants; the `done`-cursor vein) is known to
+favour it. That is the open problem this fire hands on.
+
+**Three things a fire taking this vein should know that batch 88 learned.**
+
+1. **A pair of umbrellas that shares its only main child is +1 on the main
+   count and A6 refuses it.** `Q321780` and `Q29242` — the Abkhazia conflict
+   and the Georgian–Ossetian conflict — are both `P361` parents of
+   `russo-georgian-war`, neither inside the other. Taking one is arbitrary;
+   taking both breaks A6. **Left for a person** and written down rather than
+   guessed at.
+2. **An item whose span disagrees with its own description is not importable
+   until somebody reads the article.** `Q3241199`, the Israeli–Lebanese
+   conflict: `P580` 2000, description *"desde 1948"*, three held children
+   straddling the gap. A filing made on a span the fire doubts is worse than no
+   record.
+3. **A15(6)'s first refusal reads an open interval's start as its end.**
+   `myanmar-conflict` is 1947 with no end and the gate refused Myanmar `Q836`
+   because its 1948 inception is *"after the event ended (1947)"*. Right by luck
+   here; it would refuse a 1947-to-present conflict from a state founded in 1948
+   for all 78 years the state existed. **Not corrected** — the gate runs in both
+   lanes and that is not a batch's business — and worth a person's eye.
+
+**The fire's third homonym class, and it is a fourth kind.** The batch-87 stand
+recorded one held record against an unheld twin (the 1973 Paris Peace Accords
+against the 1991 ones). Batch 88 met it again: the atlas's `arab-revolt` is
+`Q239060`, the **Great Arab Revolt of 1916–18**, and two sentences of the
+Israeli–Palestinian conflict article mean the **1936–39 Arab revolt in
+Palestine**. Deviation 1480's guard decides between two *held* homonyms by the
+subject's years and cannot see this case at all, because only one candidate
+exists and there is nothing to choose between. **Three instances in one fire,
+all caught by reading and none by the screen.** A screen rebuilt for a future
+vein should treat a name whose years are far from the subject's as suspect even
+when it is the only candidate.
+
+**Deviation numbers: take the next above 1527.** `m42b` was at 1377 on
+1 October.
+
+### Counts after batch 88
+
+- active events **1,429** (was 1,422 at the fire's start); **main 231** — **down
+  one across the fire and level across batch 88**, which is what A6 asks; filed
+  **1,198**.
+- per lane, active / main: Europe **556/86** and Americas **393/56**, both
+  untouched all fire; **Asia 249/57** (was 244/59), **Africa 231/32** (was
+  229/31). Africa is **72 short** of A10's 303 and Asia **54 short**.
+- active edges **1,214** — **unchanged all fire, no edge written in either
+  batch**, and both notes say why under A5.
+- components **423** (was 416: seven new records, every one of them edgeless);
+  **largest connected component 784 — unchanged all fire.**
+- **edges crossing an umbrella (A15(11)): 610** (was 607), inside one **604**
+  (was 607) — **with no edge written at all.** Three movements, one down and
+  two up, every one of them a filing. Deviation 1526.
+- active events with no edge at all: **327** (was 320).
+- validator **0 errors, 623 warnings** (was 615; the eight are `degree-zero` on
+  the seven new records and one more), and `--index` clean.
+- **the whole check green at the batch-87 head**: 1,940 of 1,940 pure, **313 of
+  313 browser**, nothing skipped, run the way M63 runs them; and the branch's
+  `validate` run on `127f775c` **completed success**.
+- A15(2)'s recache: **2,992** `wikipedia-en` citations on active records,
+  **2,914** on disk at the revision cited, **0 that should be on disk and are
+  not.**
