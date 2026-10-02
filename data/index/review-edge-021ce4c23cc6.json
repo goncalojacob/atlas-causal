@@ -18228,6 +18228,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "from": "invasion-of-georgia-1742",
+      "id": "invasion-of-georgia-1742--battle-of-bloody-marsh--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-80"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-bloody-marsh",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "from": "invasion-of-minorca-1781",
       "id": "invasion-of-minorca-1781--treaty-of-paris-1783--precondition-of",
@@ -27147,6 +27176,64 @@
       "status": "active",
       "to": "action-of-12-17-january-1640",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "from": "siege-of-st-augustine-1740",
+      "id": "siege-of-st-augustine-1740--battle-of-bloody-mose--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-80"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-bloody-mose",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "from": "siege-of-st-augustine-1740",
+      "id": "siege-of-st-augustine-1740--invasion-of-georgia-1742--enabled",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42b-batch-80"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "invasion-of-georgia-1742",
+      "type": "enabled"
     },
     {
       "authors": [

@@ -5510,6 +5510,18 @@
     },
     {
       "dissent": false,
+      "id": "invasion-of-georgia-1742--battle-of-bloody-marsh--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Bloody Marsh\", revision 1374312081, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-georgia-1742--battle-of-bloody-marsh--reacted-to",
+      "kind": "edge",
+      "locator": "\"Invasion of Georgia (1742)\", revision 1370623973"
+    },
+    {
+      "dissent": false,
       "id": "invasion-of-minorca-1781--treaty-of-paris-1783--precondition-of",
       "kind": "edge",
       "locator": "\"Invasion of Minorca (1781)\", revision 1370624056"
@@ -7685,6 +7697,30 @@
       "id": "siege-of-salvador-1638--action-of-12-17-january-1640--precondition-of",
       "kind": "edge",
       "locator": "\"Siege of Salvador (1638)\", revision 1370744949"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-st-augustine-1740--battle-of-bloody-mose--reacted-to",
+      "kind": "edge",
+      "locator": "\"Battle of Bloody Mose\", revision 1377232939, § Battle"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-st-augustine-1740--battle-of-bloody-mose--reacted-to",
+      "kind": "edge",
+      "locator": "\"Siege of St. Augustine (1740)\", revision 1374319127, § Siege"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-st-augustine-1740--invasion-of-georgia-1742--enabled",
+      "kind": "edge",
+      "locator": "\"Invasion of Georgia (1742)\", revision 1370623973, § Background"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-st-augustine-1740--invasion-of-georgia-1742--enabled",
+      "kind": "edge",
+      "locator": "\"Siege of St. Augustine (1740)\", revision 1374319127, § Siege"
     },
     {
       "dissent": false,
@@ -10808,6 +10844,12 @@
     },
     {
       "dissent": false,
+      "id": "attacks-on-fuerteventura-in-1740",
+      "kind": "event",
+      "locator": "\"Attacks on Fuerteventura in 1740\", revision 1370105483"
+    },
+    {
+      "dissent": false,
       "id": "august-1915-portuguese-presidential-election",
       "kind": "event",
       "locator": "\"August 1915 Portuguese presidential election\", revision 1273396087"
@@ -11051,6 +11093,18 @@
       "id": "battle-of-bloody-brook",
       "kind": "event",
       "locator": "\"Battle of Bloody Brook\", revision 1374876685"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bloody-marsh",
+      "kind": "event",
+      "locator": "\"Battle of Bloody Marsh\", revision 1374312081"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bloody-mose",
+      "kind": "event",
+      "locator": "\"Battle of Bloody Mose\", revision 1377232939"
     },
     {
       "dissent": false,
@@ -14780,6 +14834,12 @@
     },
     {
       "dissent": false,
+      "id": "invasion-of-georgia-1742",
+      "kind": "event",
+      "locator": "\"Invasion of Georgia (1742)\", revision 1370623973"
+    },
+    {
+      "dissent": false,
       "id": "invasion-of-jersey-1779",
       "kind": "event",
       "locator": "\"Invasion of Jersey (1779)\", revision 1370624028"
@@ -16943,6 +17003,12 @@
       "id": "siege-of-springfield",
       "kind": "event",
       "locator": "\"Siege of Springfield\", revision 1370745413"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-st-augustine-1740",
+      "kind": "event",
+      "locator": "\"Siege of St. Augustine (1740)\", revision 1374319127"
     },
     {
       "dissent": false,

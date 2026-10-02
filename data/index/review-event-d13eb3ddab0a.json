@@ -6371,6 +6371,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "attacks-on-fuerteventura-in-1740",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-jenkins-ear",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Attacks on Fuerteventura in 1740"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -7816,6 +7848,73 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Bloody Brook"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "battle-of-bloody-marsh",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-jenkins-ear",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Bloody Marsh"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "battle-of-bloody-mose",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-jenkins-ear",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361",
+          "a9-place"
+        ],
+        "note": "The place is fort-mose, written by hand from the item's own P625: the import refused it for want of a name, and the region override it wrote for a placeless event is gone now that the place carries the lane.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Bloody Mose"
     },
     {
       "authors": [
@@ -29305,6 +29404,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "degree": 2,
+      "id": "invasion-of-georgia-1742",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-jenkins-ear",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Invasion of Georgia (1742)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "invasion-of-jersey-1779",
       "kind": "event",
@@ -42282,6 +42413,39 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "degree": 2,
+      "id": "siege-of-st-augustine-1740",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-jenkins-ear",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of St. Augustine (1740)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "siege-of-stralsund-1628",
@@ -49375,6 +49539,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "attacks-on-fuerteventura-in-1740",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "avalon-peninsula-campaign",

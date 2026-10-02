@@ -157,6 +157,15 @@
         }
       ]
     },
+    "attacks-on-fuerteventura-in-1740": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "bali-strait-incident": {
       "from": "git",
       "versions": [
@@ -199,6 +208,24 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-bloody-marsh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-bloody-mose": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -1355,6 +1382,15 @@
         }
       ]
     },
+    "invasion-of-georgia-1742": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "invasion-of-jersey-1779": {
       "from": "git",
       "versions": [
@@ -1755,6 +1791,15 @@
             "regionNote"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-st-augustine-1740": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

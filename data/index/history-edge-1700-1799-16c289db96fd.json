@@ -791,6 +791,15 @@
         }
       ]
     },
+    "invasion-of-georgia-1742--battle-of-bloody-marsh--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "invasion-of-minorca-1781--treaty-of-paris-1783--precondition-of": {
       "from": "git",
       "versions": [
@@ -1007,6 +1016,24 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-st-augustine-1740--battle-of-bloody-mose--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "siege-of-st-augustine-1740--invasion-of-georgia-1742--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

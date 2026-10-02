@@ -6699,6 +6699,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "fort-mose",
+      "kind": "place",
+      "names": [
+        "Fort Mose",
+        "Fort Mosé",
+        "Gracia Real de Santa Teresa de Mose"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "place-written-by-hand"
+        ],
+        "note": "Written by hand because the import could not: Q7510020 carries its own P625 and names no located item a tool can read a name off. The point is that P625 unchanged; the name is the one the battle's own article gives the site.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
@@ -6938,6 +6967,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "fuerteventura",
+      "kind": "place",
+      "names": [
+        "Fuerteventura"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -19880,6 +19936,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "st-augustine-florida",
+      "kind": "place",
+      "names": [
+        "St. Augustine",
+        "Saint Augustine",
+        "St. Augustine, Florida"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "st-george-s-caye",
@@ -19898,6 +19983,35 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 2,
+      "id": "st-simons-georgia",
+      "kind": "place",
+      "names": [
+        "St. Simons",
+        "St. Simons, Georgia",
+        "St. Simons (Geórgia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

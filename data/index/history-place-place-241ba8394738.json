@@ -3232,6 +3232,15 @@
         }
       ]
     },
+    "fort-mose": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "fort-victoria-ambon": {
       "from": "git",
       "versions": [
@@ -3353,6 +3362,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "fuerteventura": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -9632,6 +9650,15 @@
         }
       ]
     },
+    "st-augustine-florida": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "st-george-s-caye": {
       "from": "git",
       "versions": [
@@ -9644,6 +9671,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "st-simons-georgia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

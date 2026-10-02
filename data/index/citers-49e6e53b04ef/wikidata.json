@@ -2876,6 +2876,12 @@
     },
     {
       "dissent": false,
+      "id": "attacks-on-fuerteventura-in-1740",
+      "kind": "event",
+      "locator": "Q22936135"
+    },
+    {
+      "dissent": false,
       "id": "august-1915-portuguese-presidential-election",
       "kind": "event",
       "locator": "Q97516196"
@@ -3137,6 +3143,18 @@
       "id": "battle-of-bloody-brook",
       "kind": "event",
       "locator": "Q885253"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bloody-marsh",
+      "kind": "event",
+      "locator": "Q2888163"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bloody-mose",
+      "kind": "event",
+      "locator": "Q7510020"
     },
     {
       "dissent": false,
@@ -6848,6 +6866,12 @@
     },
     {
       "dissent": false,
+      "id": "invasion-of-georgia-1742",
+      "kind": "event",
+      "locator": "Q6059634"
+    },
+    {
+      "dissent": false,
       "id": "invasion-of-jersey-1779",
       "kind": "event",
       "locator": "Q5484470"
@@ -9137,6 +9161,12 @@
       "id": "siege-of-springfield",
       "kind": "event",
       "locator": "Q4818005"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-st-augustine-1740",
+      "kind": "event",
+      "locator": "Q3486020"
     },
     {
       "dissent": false,
