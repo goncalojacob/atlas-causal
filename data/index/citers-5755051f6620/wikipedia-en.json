@@ -11168,6 +11168,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-casa-forte",
+      "kind": "event",
+      "locator": "\"Battle of Casa Forte\", revision 1376724831"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-casaloldo",
       "kind": "event",
       "locator": "\"Battle of Casaloldo\", revision 1370436439"
@@ -12620,6 +12626,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-talandongo",
+      "kind": "event",
+      "locator": "\"Battle of Talandongo\", revision 1370590437"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-talavera",
       "kind": "event",
       "locator": "\"Battle of Talavera\", revision 1370880065"
@@ -13880,6 +13892,24 @@
     },
     {
       "dissent": false,
+      "id": "dutch-conquest-of-malabar",
+      "kind": "event",
+      "locator": "\"Dutch conquest of Malabar\", revision 1370616001"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-invasions-of-brazil",
+      "kind": "event",
+      "locator": "\"Dutch invasions of Brazil\", revision 1370616045"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-occupation-of-tiruchendur",
+      "kind": "event",
+      "locator": "\"Dutch occupation of Tiruchendur\", revision 1370616054"
+    },
+    {
+      "dissent": false,
       "id": "dutch-portuguese-war",
       "kind": "event",
       "locator": "\"Dutch–Portuguese War\", revision 1374150566"
@@ -14921,6 +14951,12 @@
       "id": "japanese-invasion-of-sakhalin",
       "kind": "event",
       "locator": "\"Japanese invasion of Sakhalin\", revision 1371432298"
+    },
+    {
+      "dissent": false,
+      "id": "jaragua-massacre",
+      "kind": "event",
+      "locator": "\"Jaragua massacre\", revision 1365112001"
     },
     {
       "dissent": false,

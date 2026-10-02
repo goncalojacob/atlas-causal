@@ -170,6 +170,15 @@
         }
       ]
     },
+    "battle-of-casa-forte": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-chedabucto": {
       "from": "git",
       "versions": [
@@ -320,6 +329,16 @@
         {
           "first": true,
           "on": "2026-10-01"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-10-01"
         }
       ]
     },
@@ -354,6 +373,15 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-10-02"
         }
       ]
@@ -662,6 +690,15 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-10-02"
         }
       ]
@@ -1141,6 +1178,16 @@
         {
           "first": true,
           "on": "2026-10-01"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-10-01"
         }
       ]
     },
@@ -1177,6 +1224,33 @@
             "parent"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "dutch-conquest-of-malabar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "dutch-invasions-of-brazil": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "dutch-occupation-of-tiruchendur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

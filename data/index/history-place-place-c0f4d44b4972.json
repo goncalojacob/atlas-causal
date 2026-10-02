@@ -1002,6 +1002,15 @@
         }
       ]
     },
+    "black-rocks-at-pungo-andongo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "bloody-ridge": {
       "from": "git",
       "versions": [
@@ -1532,6 +1541,15 @@
             "summary"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "cambambe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -2201,6 +2219,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "cuanza-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -3548,6 +3575,15 @@
         }
       ]
     },
+    "goa-q1171": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "gonaives": {
       "from": "git",
       "versions": [
@@ -4371,6 +4407,15 @@
         }
       ]
     },
+    "jambi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "jammu-and-kashmir-q2571484": {
       "from": "git",
       "versions": [
@@ -4847,6 +4892,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "koneswaram-temple": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -5801,6 +5855,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "malabar-coast": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -6897,6 +6960,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "northeast-region-brazil": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -10054,6 +10126,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "tiruchendur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
