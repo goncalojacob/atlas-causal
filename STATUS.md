@@ -23986,6 +23986,46 @@ for it; re-fetching that lane, rather than writing its argument for it, is the
 rule. The records are sound and `validate --index` is clean at **0 errors, 598
 warnings**.
 
+**M42b batch 73 — the Angolan Wars, and africa's two trailing cells, 2 October.**
+The fire that claimed at 01:48Z merged `origin/m42` (264 conflicting paths, 259 of
+them `data/index/` renames the drop-and-rebuild resolves) and then answered the
+batch-72 stand's move 2 with one query instead of a vein: `?i wdt:P361 ?u` over the
+**45 pre-1800 umbrellas** this atlas holds with a `wikidata` id returned **392
+distinct items, 234 open, 141 of them with an English article**. None of it reached
+africa before 1800, so the batch asked the same question of an umbrella the atlas
+does **not** hold — `Q132776772` **Angolan Wars**, 1579-1683 — and found nine
+children, one of them already here. Six records: the umbrella and five children, all
+filed from the item's own `P361`. **Africa's 16th century goes from eleven to sixteen
+and its 17th from nine to ten**, the two lowest cells in this partition; africa
+stands at **239** against A10's 303 and asia at **253**, so A15(1)'s pause on Europe
+before 1900 holds. **The main count went 232 to 233**, which is A6's own trade said
+plainly: one main bought five placed records in the cells that trail. Two new places
+at `summary: null`; three events placeless, one of them because A15(6) refused Angola
+as the umbrella's place — *"the country's inception (1975) is after the event ended
+(1683)"*. A7 read the Cuanza campaign's end from the infobox of the revision it
+already cites, which is what let rule 24 file it; the Lucala's two years are a
+contradiction **inside one article** and the record keeps the item's with the `date`
+flag, which is **deviation 1531**. Three edges, each passing `verdictFor()` at the
+point of writing and none from a parent to its own child: the chronology class
+refused **nothing** this batch, and `recapture-of-angola -> battle-of-mbwila` crosses
+an umbrella, so **A15(11) goes 611 to 612 and the largest component 784 to 785** —
+the second fire running that both moved. `Q104212151` *series of wars* gained
+`category: war` in the class table under A15(12). **Deviation 1528**: four of the
+eleven Dutch-Portuguese War candidates the last stand listed are **redirects to
+records this atlas already holds**, which settles that stand's open question about
+`Q10369402` — it is `siege-of-salvador-1638`; the vein is four candidates, not
+eleven. **Deviation 1529**: the import refuses a `P580`/`P582` at century precision
+outright, so `Q6429210` *Kongo Civil War* (the item says 1600-1700, the article
+1665-1709) has to be **written from its article under A6**, which is the next fire's
+best move — four records in africa's 17th and 18th for one main, with both its edges
+already found and quoted in `docs/m42b-pool.md`. **Deviation 1530**: `api.php`
+rate-limits this sandbox for the rest of a fire once an import and
+`cache-evidence --fill` have run, with the import's own user-agent and after four
+backoffs; `query.wikidata.org` and `index.php?...&action=raw` kept answering, so a
+fire that means to hand-write a record must read its revision and lead **before** the
+cache fill. `validate --index` clean at **0 errors, 630 warnings**; A15(2) reports **0
+revisions that should be on disk and are not**.
+
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
