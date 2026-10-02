@@ -23014,7 +23014,7 @@ when it is the only candidate.
 after 02:00Z: A11(a) over every active event, A13's relations pass over the 64
 events that arrived after the last pass, and nothing imported. All six A14 and
 all thirteen A15 sections were already in this file, so no pass was owed before
-it. **The network was refused this fire** (deviation 1529), so the three passes
+it. **The network was refused this fire** (deviation 1535), so the three passes
 that read Wikidata could not run and the two that read only what is on disk did.
 **One span widened, one edge written, and a rule that had been reporting a
 contradiction where there was a gap.***
@@ -23037,7 +23037,7 @@ Per lane, active / main, **every one of them unchanged across the fire**, which
 is what a fire that imports nothing should report: Europe **556/86**, Americas
 **393/56**, Asia **249/57**, Africa **231/32**.
 
-### Deviation 1529 — the network is refused this fire, and it is this environment's refusal and not a rate limit
+### Deviation 1535 — the network is refused this fire, and it is this environment's refusal and not a rate limit
 
 Deviation 1502 said the import's own User-Agent clears a 429 on the first try,
 and it may still be true; nothing here reached far enough to find out. **Both
@@ -23102,7 +23102,7 @@ The four actors are `energias-de-portugal`, `kingdom-of-navarre`,
 6 `span-vs-lead-sentence`, 22 `span-vs-lead-dates`. Every one was read against
 the article the record cites, at the revision it cites, off the cache.
 
-**Deviation 1528 — A15(4)'s two mirrors and the third shape that had none.**
+**Deviation 1534 — A15(4)'s two mirrors and the third shape that had none.**
 `datesInLead` reads three range shapes, and two of them in both date orders:
 `27–28 May 1905` has `November 6–7, 1985`. The third — `from 8 March to 26 May
 1977`, the only one that crosses a month — had no month-first mirror, so
@@ -23286,7 +23286,7 @@ events already joined: components 423 before and after, largest 784 before and
 after. A15(11) went **610 → 611** and `inside one umbrella` stayed at 604, so the
 edge crosses an umbrella, which is the measurement A5 asks for.
 
-### Deviation 1530 — the lead cache is keyed by item *and* language, and a script that forgets the language reads Portuguese
+### Deviation 1536 — the lead cache is keyed by item *and* language, and a script that forgets the language reads Portuguese
 
 Worth a number because it nearly cost this fire its A7 pass and because it is
 invisible when it is wrong. `tools/import/cache/wikipedia/` holds **2,013
@@ -23321,7 +23321,7 @@ the same item are A15(2)'s own accepted state and unchanged.
 
 Both green on the final tree, run the way the check runs them since M63:
 **2,254 tests, nothing skipped — 1,941 pure and 313 browser.**
-`tests/a15-dates.test.mjs` gains the eighth test of its file, deviation 1528's,
+`tests/a15-dates.test.mjs` gains the eighth test of its file, deviation 1534's,
 and it is the one test this fire added. **It was written before the record it
 judges** (711, 717): it failed on `battle-of-rancagua`'s own sentence, verbatim
 from the cache, before the pattern went in, and one of its own assertions was
@@ -23333,7 +23333,7 @@ mirror existed, so the mirror adds a reading and takes none away.
 
 **What is open, in the order a fire should weigh it:**
 
-- **The network is the whole question for the next fire.** Deviation 1529.
+- **The network is the whole question for the next fire.** Deviation 1535.
   Three of A11(a)'s six clauses, A13's body half, and every import vein need it.
   If it is refused again, the disk-only work this fire found is largely spent:
   the summary pass is blocked by A15(8) rather than by the network, A7 has one
@@ -23366,5 +23366,19 @@ mirror existed, so the mirror adds a reading and takes none away.
   faults; deviation 1511's 182 `naturalearth.mjs --places` matches; the three
   `myanmar-conflict`-shaped gate questions of the batch-88 stand; and C8, whose
   clearest single line is still `gulf-of-tonkin-incident`.
-- **Deviation numbers: take the next above 1530.** This fire wrote 1528, 1529
-  and 1530.
+- **Deviation numbers: take the next above 1536, and read the next bullet before
+  you do.** This fire wrote 1534, 1535 and 1536.
+- **The two lanes collided on deviation numbers and this fire is the one that
+  moved.** This fire first wrote its three as 1528, 1529 and 1530, continuing
+  from the 1527 that was the last on `m42` — and `m42b` had written **1528
+  through 1533** fourteen minutes earlier, which no stand on this branch could
+  have known: every batch stand here since 1522 says *"`m42b` was at 1377 on
+  1 October"*, and it has not been true for some time. `m42b` pushed first, so
+  this fire renumbered its own to **1534, 1535 and 1536** rather than leave the
+  landing six numbers that mean two things each. **A line for the owner, because
+  neither lane can fix it alone:** the deviation counter is one sequence written
+  by two runs with no lock and no shared file, and a stand's note of where the
+  other lane stood is stale within hours. The cheap fix is a lane offset — odd
+  numbers here, even there, or a block each — and it is the owner's call, not a
+  fire's. Until then, **read `origin/m42b`'s own numbers before taking one**,
+  the way A11(b) already says to read its `data/events/` ids before a batch.

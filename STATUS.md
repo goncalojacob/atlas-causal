@@ -24579,7 +24579,7 @@ nothing skipped, and the branch's `validate` run on `127f775c` completed success
 did not need it.** The fire that claimed at 02:07Z was the first after 02:00Z, so
 A11(a) over every active event and A13's relations pass, and nothing imported.
 All six A14 and all thirteen A15 sections were already on the branch.
-**Deviation 1529: both routes to the network were refused before a request left
+**Deviation 1535: both routes to the network were refused before a request left
 the sandbox** — a script of this fire's own and the repository's own
 `createFetcher`, which is the sanctioned path — so the three A11(a) clauses that
 read Wikidata (the place, the `P710` participant, the `P361` umbrella) could not
@@ -24597,7 +24597,7 @@ mountain's description, `milk-bar-cafe-bombing` a lawyer's biography. The five
 summaries under two sentences are the same Portugal records as on 30 September
 and 1 October and a second sentence written here would be A4's forbidden claim.
 **A7: one widening, and a rule that had been reporting a contradiction where
-there was a gap.** **Deviation 1528** — `datesInLead` reads two of its three
+there was a gap.** **Deviation 1534** — `datesInLead` reads two of its three
 range shapes in both date orders and the third, the only one crossing a month,
 had no month-first mirror, so *"on October 1, 1814, to October 2, 1814"* matched
 the one-day pattern on its opening clause and reported `battle-of-rancagua` as
@@ -24643,7 +24643,7 @@ whose *"is marked by"* is where historians draw a period's boundary, and whose
 the marker sits in a subordinate clause whose subject is neither end.** The
 contradiction screen's one quote, on `angolan-war-of-independence --caused-->
 operation-savannah-angola`, agrees with the held edge.
-**Deviation 1530 — the lead cache is keyed by item *and* language, and a script
+**Deviation 1536 — the lead cache is keyed by item *and* language, and a script
 that forgets the language reads Portuguese.** 2,013 English leads sit beside
 1,219 Portuguese ones as `<item>.en.json` and `<item>.pt.json`; this fire's first
 measurement script keyed on the item alone, `.pt` sorts after `.en`, and the
@@ -24661,14 +24661,24 @@ the **largest connected component 784** unchanged, because both ends of the one
 edge already carried edges and already stood in the same component — `events with
 no edge` is **327** before and after. **A15(11): edges crossing an umbrella
 610 → 611**, inside one **604** unchanged, so the edge crosses one. Validator
-**0 errors, 622 warnings** (was 623, the one deviation 1528 took away), and
+**0 errors, 622 warnings** (was 623, the one deviation 1534 took away), and
 `--index` clean. A15(2)'s recache, as the last step: **2,994** `wikipedia-en`
 citations on active records, **2,916** on disk at the revision cited, **0 that
 should be on disk and are not** — the two citations this fire added are both at
 revisions the cache already held, which is why a pass that could not fetch had
 nothing to fetch. Both suites green on the final tree, run the way the check runs
 them since M63: **2,254 tests, nothing skipped — 1,941 pure and 313 browser**.
-The one test added is deviation 1528's and it was written before the record it
+The one test added is deviation 1534's and it was written before the record it
 judges (711, 717): it failed on `battle-of-rancagua`'s own sentence, verbatim
-from the cache, before the pattern went in. **Deviations 1528, 1529 and 1530;
-take the next above 1530.**
+from the cache, before the pattern went in.
+**Deviations 1534, 1535 and 1536 — and the three were written as 1528, 1529 and
+1530 first.** 1527 was the last on this branch, and `m42b` had taken **1528
+through 1533** fourteen minutes before this fire's push, which no stand here
+could have known: every batch stand on `m42` since 1522 says *"`m42b` was at 1377
+on 1 October"*. `m42b` pushed first, so this fire moved. **A line for the owner,
+because neither lane can fix it alone:** one deviation sequence is being written
+by two runs with no lock and no shared file, and each lane's note of where the
+other stood goes stale within hours. A lane offset — a block each, or odd and
+even — would end it; until then a fire should read `origin/m42b`'s own numbers
+before taking one, as A11(b) already says to read its `data/events/` ids.
+**Take the next above 1536.**
