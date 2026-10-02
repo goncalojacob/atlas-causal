@@ -25435,7 +25435,8 @@ Portuguese records that touch Japan, which are asia before 1800 and so this lane
 **Active 1,561 → 1,599; main 238 → 239; asia 283 → 321 and africa 320, both past A10's 303, so
 A15(1)'s europe pause is lifted in full.** Europe is **556**, exactly what the fire found it at.
 `validate --index` 0 errors at every commit and at this head; the suite is green after two
-one-space JSON files were re-dumped at two (deviations 1563 and 1564).
+one-space JSON files were re-dumped at two (deviations 1565 and 1566, renumbered from 1563 and
+1564, which `origin/m42` already held).
 
 **M42b batch 88 — South America and the Caribbean, and the first edge of the fire that grew the
 component, 2 October.** With asia and africa both past 303 the lane that trails inside this
@@ -25445,7 +25446,7 @@ unheld pre-1800 americas rows, **17 lie south of 25° north**, every one already
 held umbrella and every one checked against its span first. **11 events, 7 places, +0 main.**
 
 Five of the seventeen did not become records, and **four of them for a reason no stand had
-identified before (deviation 1565)**: `wikidata-state.json`'s `done` list is never cleared, so an
+identified before (deviation 1567)**: `wikidata-state.json`'s `done` list is never cleared, so an
 item processed once is skipped for ever — including an item whose record was afterwards removed.
 `Q113627918` *West Indies Campaign (1793–1798)* is importable today by every rule the tool has and
 was imported once before A15(8) existed, with the wrong article's lead quoted inside it (deviation
@@ -25499,7 +25500,7 @@ A14 as well, because both battles are that invasion's children. **What the sente
 effect is the withdrawal, and the atlas holds no record of it**; that is a record to write, not an
 edge to force.
 
-**Deviation 1566**, found in the fifth: `chickasaw-wars`'s lead says the wars ended *"in 1763
+**Deviation 1568**, found in the fifth: `chickasaw-wars`'s lead says the wars ended *"in 1763
 according to terms of the Treaty of Paris"*, and `namesHeldEvents` returned `treaty-of-paris-1783`.
 Deviation 1481's widening strips the disambiguator and tries the bare name; deviation 1480's year
 guard then has nothing to choose between, because the atlas holds one Treaty of Paris and not two.

@@ -22230,9 +22230,9 @@ of the eighteen; none of the five could be written.
 | `action-of-17-july-1628`, `king-george-s-war`, `siege-of-louisbourg-1745`, `battle-of-gully-hole-creek` on their own umbrellas | **A14**, parent or ancestor to its own child, four times |
 | `battle-of-bloody-marsh` ↔ `battle-of-gully-hole-creek` | both leads say only that the other *"took place on the island the same day"*. Co-occurrence is not causation and no type says "the same day" |
 | `invasion-of-georgia-1742` → `battle-of-gully-hole-creek` | the strongest quote of the batch — *"defeated the Spaniards at the Battle of Bloody Marsh and the Battle of Gully Hole Creek, **forcing them to withdraw**"*, and `statesACause` returns **true** — but both battles are children of that invasion, so it is A14 again. **What the sentence actually names as the effect is the withdrawal, and the atlas holds no record of it.** That is a record worth writing, not an edge worth forcing |
-| `chickasaw-wars` → `treaty-of-paris-1783` | **deviation 1566**, below |
+| `chickasaw-wars` → `treaty-of-paris-1783` | **deviation 1568**, below |
 
-**Deviation 1566: a bare name matched the only homonym the atlas holds, and it is the wrong one by
+**Deviation 1568: a bare name matched the only homonym the atlas holds, and it is the wrong one by
 twenty years.** `chickasaw-wars`'s lead says *"The wars came to an end only with the French cession
 of New France to the British in **1763** according to terms of the Treaty of Paris."* That is the
 Treaty of Paris of **1763**, which this atlas does not hold. `namesHeldEvents` matched
@@ -22392,7 +22392,7 @@ umbrella's.*
    fire may clear a `done` entry for an item that has no record is a question for the owner**, and
    it is worth putting to them: it is four records now and it will be more.
 4. **Two edge defects this fire found are both in the caller and both cheap to close.**
-   **Deviation 1566** is the sharper one: a bare name matched the only homonym the atlas holds and
+   **Deviation 1568** is the sharper one: a bare name matched the only homonym the atlas holds and
    it was wrong by twenty years. `chickasaw-wars`'s lead says the wars ended *"in **1763** according
    to terms of the Treaty of Paris"*, and `namesHeldEvents` returned `treaty-of-paris-1783` — because
    deviation 1481's widening strips the disambiguator and 1480's year guard has nothing to choose
@@ -22435,7 +22435,7 @@ umbrella's.*
    the import's own paced fetches took 52 items and 57 leads without one refusal. **Plan a fire
    around the import and WDQS and treat an extract as a bonus, never as a step a batch depends
    on.** Both of this fire's edges came out of leads the import had already cached.
-9. **Deviation 1563: a record written by hand in this repository is two-space JSON, and
+9. **Deviation 1565: a record written by hand in this repository is two-space JSON, and
    `tests/bundle.test.mjs` is what says so.** Both files this fire wrote outside the import — the
    Hansan interval fix and the one edge — went in at one-space indent, because the two generated
    files the fire had just merged (`tools/import/cache/titles.json`, and the seeds) are one-space
@@ -22443,7 +22443,7 @@ umbrella's.*
    each in turn. **The test is the only thing that catches it** and it catches it two suites deep
    in a 1,941-test run; a fire that hand-writes a record should re-dump it at `indent=2` before
    running anything.
-10. **Deviation 1564: the seeds and the title cache are one-space JSON and a reformat of either is
+10. **Deviation 1566: the seeds and the title cache are one-space JSON and a reformat of either is
    a 6,000-line diff.** Appending 39 items with `json.dumps(indent=1)` re-sorted and re-spaced the
    whole seeds file; appending three titles the same way churned 1,028 lines of
    `tools/import/cache/titles.json`. **Both were resolved by editing the text rather than the
@@ -22484,11 +22484,19 @@ umbrella's.*
    Overlord, named in its batch 94 note — and the pause never touched those. Now that it is lifted
    for europe before 1900 as well, **there is no europe-lane work this branch has to refuse any
    more**, which is a different shape of partition from the one every stand before this assumed.
-14. **Deviation numbers: 1566 is the highest taken; 1567 is the first free.** This fire took
-   **1563** (a hand-written record at one-space indent fails the byte-identical save test),
-   **1564** (reformatting a one-space generated file turns an append into a six-thousand-line
-   diff), **1565** (the import's `done` list outlives the record it was set for, so an item whose
-   record was removed is never written again and the seeds cannot say otherwise) and **1566** (a
-   bare name matches the only homonym the atlas holds, whatever year the quote states). **Read deviation 1484 before taking the next one, and run its three greps over
+14. **Deviation numbers: 1568 is the highest taken; 1569 is the first free — and this fire had to
+   renumber all four of its own, which is deviation 1484's grep paying for itself at the wrong end
+   of the run.** It took **1565** (a hand-written record at one-space indent fails the
+   byte-identical save test), **1566** (reformatting a one-space generated file turns an append into
+   a six-thousand-line diff), **1567** (the import's `done` list outlives the record it was set for,
+   so an item whose record was removed is never written again and the seeds cannot say otherwise)
+   and **1568** (a bare name matches the only homonym the atlas holds, whatever year the quote
+   states). **They were first written as 1563 to 1566, and `origin/m42` already held 1563 and
+   1564** — its §4.1 figures paragraph and its A8 "every umbrella that fits" finding. The clash was
+   caught by running 1484's three greps **over `origin/m42` as well as this branch**, which the
+   12:36Z stand had told this fire to do and which this fire ran at the end of its work instead of
+   the start. **Run them before taking a number, not after writing it up**: the four commit
+   messages of this fire's record and doc commits still carry the superseded numbers, because
+   rewriting pushed history to fix a number is worse than a note saying so, and this is the note. **Read deviation 1484 before taking the next one, and run its three greps over
    `origin/m42`'s `docs/m42-pool.md` and `STATUS.md` as well as this branch's files** — 1562 was
    taken by `origin/m42` and renumbered once already, which is what those greps are for.
