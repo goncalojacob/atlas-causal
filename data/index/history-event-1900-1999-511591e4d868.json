@@ -8647,6 +8647,15 @@
         }
       ]
     },
+    "cairo-conference": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "cambodian-civil-war": {
       "from": "git",
       "versions": [
@@ -20379,7 +20388,7 @@
       ]
     },
     "tehran-conference": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

@@ -3746,6 +3746,18 @@
     },
     {
       "dissent": false,
+      "id": "cairo-conference--potsdam-declaration--precondition-of",
+      "kind": "edge",
+      "locator": "\"Cairo Conference\", revision 1369040877"
+    },
+    {
+      "dissent": false,
+      "id": "cairo-conference--potsdam-declaration--precondition-of",
+      "kind": "edge",
+      "locator": "\"Cairo Conference\", revision 1369040877: \"using the Cairo Declaration as the basis for unconditional surrender\""
+    },
+    {
+      "dissent": false,
       "id": "cambodian-genocide--cambodian-vietnamese-war--caused",
       "kind": "edge",
       "locator": "\"Cambodian genocide\", revision 1377684919, § Vietnamese"
@@ -13439,6 +13451,12 @@
       "id": "bundner-wirren",
       "kind": "event",
       "locator": "\"Bündner Wirren\", revision 1370607362"
+    },
+    {
+      "dissent": false,
+      "id": "cairo-conference",
+      "kind": "event",
+      "locator": "\"Cairo Conference\", revision 1369040877"
     },
     {
       "dissent": false,

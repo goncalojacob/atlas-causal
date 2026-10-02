@@ -10512,6 +10512,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "from": "cairo-conference",
+      "id": "cairo-conference--potsdam-declaration--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-95"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "potsdam-declaration",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude"
         }
       ],

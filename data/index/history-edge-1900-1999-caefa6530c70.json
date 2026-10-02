@@ -1819,6 +1819,15 @@
         }
       ]
     },
+    "cairo-conference--potsdam-declaration--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "cambodian-genocide--cambodian-vietnamese-war--caused": {
       "from": "git",
       "versions": [
@@ -6079,7 +6088,7 @@
       ]
     },
     "tehran-conference--soviet-invasion-of-manchuria--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

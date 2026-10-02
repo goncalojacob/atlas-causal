@@ -20291,6 +20291,39 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": null,
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "cairo-conference",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "a9-place",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A9: no `P625` and no `P276`; the item's `P131` is `Q85`, held here as `cairo`, so the chain stops there and `P17` `Q79` is never reached. A15(4): `P580`/`P582` are 1943-11-22 and 1943-11-26 and the first sentence says the same. A6: no `P361`, so filed by span and subject under `world-war-ii`. No category: `P31` is `Q625994` alone, carried in the class table with no category on purpose. A11(a): the twelve `P710` are people, none of them actors here; the two parties are the first sentence's.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Cairo Conference"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
@@ -36182,7 +36215,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 3,
+      "degree": 4,
       "id": "potsdam-declaration",
       "kind": "event",
       "origin": {
