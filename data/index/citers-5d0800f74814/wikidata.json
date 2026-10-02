@@ -4364,6 +4364,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-porto-praya",
+      "kind": "event",
+      "locator": "Q2732287"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-prague-1648",
       "kind": "event",
       "locator": "Q3494380"

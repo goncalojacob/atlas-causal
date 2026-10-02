@@ -16451,6 +16451,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "praia",
+      "kind": "place",
+      "names": [
+        "Praia"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "place-written-by-hand"
+        ],
+        "note": "Written by hand because no lane polygon reaches Cape Verde: data/geo/regions.json is Natural Earth 110m land and the archipelago is some 570 km off the coast, so the import refused the place for want of a lane rather than for want of a point. The point is Q3751's own P625; the lane is the override CLAUDE.md keeps for somewhere no polygon reaches, and it says africa because that is where the archipelago is.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],

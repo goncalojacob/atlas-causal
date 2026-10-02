@@ -682,6 +682,15 @@
         }
       ]
     },
+    "battle-of-porto-praya": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-princeton": {
       "from": "git",
       "versions": [

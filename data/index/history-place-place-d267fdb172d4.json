@@ -7951,6 +7951,15 @@
         }
       ]
     },
+    "praia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "princeton-battlefield": {
       "from": "git",
       "versions": [

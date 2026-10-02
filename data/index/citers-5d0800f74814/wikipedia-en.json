@@ -12314,6 +12314,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-porto-praya",
+      "kind": "event",
+      "locator": "\"Battle of Porto Praya\", revision 1370586512"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-prague-1648",
       "kind": "event",
       "locator": "\"Battle of Prague (1648)\", revision 1370586580"
