@@ -22,13 +22,14 @@
     "flags": [
       "imported-facts",
       "summary-from-lead",
+      "a9-place",
       "filed-from-p361"
     ]
   },
   "wikidata": "Q4871118",
   "sitelinks": {
     "count": 5,
-    "on": "2026-10-01"
+    "on": "2026-10-02"
   },
   "wikipedia": {
     "en": "Battle of Goa (1638)",
@@ -50,9 +51,9 @@
     "start": 1638,
     "end": 1639
   },
-  "place": null,
-  "region": "asia",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "place": "goa-q1171",
+  "region": null,
+  "regionNote": null,
   "category": "war",
   "actors": [],
   "parent": "dutch-portuguese-war"

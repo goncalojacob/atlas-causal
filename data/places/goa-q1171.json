@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "goa-q1171",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1171",
+  "sitelinks": {
+    "count": 137,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Goa",
+    "pt": "Goa"
+  },
+  "sources": [],
+  "names": [
+    "Goa"
+  ],
+  "where": {
+    "lon": 74.04333333333334,
+    "lat": 15.401944444444444,
+    "precision": "region",
+    "label": "Goa"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

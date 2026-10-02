@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dutch-conquest-of-malabar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q122452193",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Dutch conquest of Malabar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q122452193"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch conquest of Malabar\", revision 1370616001"
+    }
+  ],
+  "title": "Dutch conquest of Malabar",
+  "summary": "The English Wikipedia article \"Dutch conquest of Malabar\", at revision 1370616001, opens: \"The Conquest of Malabar (1658–1663) encompassed a series of military campaigns led by Rijckloff van Goens with the objective of acquiring Portuguese-controlled territories along the Malabar Coast. The Dutch pursued these campaigns with determination, ultimately achieving success in their endeavor. As a result, the Dutch secured control over various regions along the Malabar Coast, marking a significant shift in the regional geopolitical landscape\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q122452193, imported by tools/import/wikidata.mjs. The item's own description reads \"1658–1663 conquest\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1658,
+    "end": 1663
+  },
+  "place": "malabar-coast",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}
