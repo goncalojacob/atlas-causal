@@ -21222,6 +21222,26 @@ fire.
 | latest | `siege-of-mazagan-1769`, the loss the umbrella's article says ended the conflicts |
 | placeless, lane written by the import | 6, every one of them A15(6) refusing `Q1028` for a pre-1956 event |
 
+### The six records that name neither an actor nor a place (M67 A1)
+
+Six of the 25 carry no `actors` and no `place`, and M67 A1 asks a run to say why each of them is
+filed where it is rather than leave the filing unargued. **All six take their `parent` from their
+own item's `P361`, which names `Q340075` and nothing else** — the flag is `filed-from-p361`, so
+the filing is the item's own statement and not a judgement of span and subject — and all six are
+placeless for the one reason A15(6) gives: the item's only `P17` is the present-day Kingdom of
+Morocco, whose inception is 1956, and the import refuses a country that did not exist when the
+event ended. The actor lists are empty because the import writes no actor, and under M67 A1 an
+event with no actor is not a defect.
+
+| record | when | why it is inside the umbrella |
+| --- | --- | --- |
+| `targa-expedition-1490` | 1490 | `P361` names `Q340075`; a Portuguese expedition against Targa on the Moroccan coast |
+| `battle-of-azemmour` | 1513-09-07 | `P361` names `Q340075`; the Portuguese attack on Azemmour |
+| `battle-of-tednest` | 1514 | `P361` names `Q340075`; fought between the Portuguese of Safi and a Wattasid force |
+| `battle-of-mamora-1515` | 1515-06 | `P361` names `Q340075`; the Portuguese fleet's defeat at the Mamora estuary |
+| `protectorate-of-doukkala` | 1516-05 | `P361` names `Q340075`; the Portuguese protectorate over the Doukkala region |
+| `siege-of-agadir-1533` | 1533-04 | `P361` names `Q340075`; the Saadian siege of Portuguese Agadir |
+
 ### Two edges, one of them across an umbrella
 
 1. `conquest-of-asilah --enabled--> portuguese-conquest-of-tangier`, four days apart in August
