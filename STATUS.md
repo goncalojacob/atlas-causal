@@ -24699,6 +24699,85 @@ M42 started 2026-10-02T12:16:46Z by scheduled
 M42 started 2026-10-02T16:08:24Z by scheduled
 M42 started 2026-10-02T19:07:21Z by scheduled
 
+**M42 batch 99 — the Western Desert campaign, and the vein below it closed, 2 October.**
+The fire that claimed at 19:07Z found `## Curation 2026-10-02` already in the pool
+file and so was an **import fire**; every A14 and A15 pass already has its section
+and none was re-run. It took the one row of batch 98's vein it could connect and
+left four, and the reason it left them is the correction this fire's note is mostly
+about: **the stand after 98 said El Alamein and the Western Desert campaign were a
+pair with an edge between them, and `Q153376`'s own `P361` is `Q625798`** — so
+their one edge is a parent's to its own child, which A14's C8 rule forbids. The same
+holds for the three `P527` the new record now has. **Everything below
+`north-african-campaign` is unreachable by any edge a batch may write.**
+
+**Two records and one edge.** `western-desert-campaign`, `Q625798`, 27 sitelinks,
+11 June 1940 to 4 February 1943, filed under `north-african-campaign` alone (its own
+`P361`, and `world-war-ii` is reachable through it — deviation 1564's rule), place
+**`western-desert`**, which is the second record: `Q14314106`, 23 sitelinks,
+`(28.4167, 26.5833)`, `region`. One class added to the table, `Q8514` desert, at
+`region`, read from the item itself; **without it A9's chain would have fallen
+through to `P17` and replaced a desert with a country.** The edge is
+`western-desert-campaign--tunisian-campaign--caused`, `probable`, on the campaign's
+own § Analysis — and it is the edge batch 98's own explanation asked for by name,
+the eastern half of the pincer the Torch edge is the western half of.
+
+**A15(5) earned its place twice in one edge.** The obvious quote was the lead's, and
+`verdictFor` refused it: *"the quote names a third event the atlas holds as the
+cause"*, `reattribute: operation-torch` — the edge from Torch already exists, so the
+lead's sentence would have written one argument twice. The § Analysis sentence names
+no third held event and returns `write: true`.
+
+**What was left, and by what.** Four candidates to C8 (El Alamein `Q153376`, the
+Italian invasion of Egypt `Q698421`, Gazala `Q327035`, Alam el Halfa `Q541997` — all
+children of records this atlas holds); one to the absence of a stated cause (the East
+African campaign `Q1052120`, whose article and the Second Italo-Ethiopian War's were
+both read at a revision and neither states that the one brought about the other —
+**a date is not a claim and this fire did not write one**); and three more meetings
+of the missing sixth edge type, all the same shape, *an article states that one event
+changed how a war already running was fought*. **C8 has now cost this vein nine edges
+and the missing type seven**, and `greco-italian-war` and `second-italo-ethiopian-war`
+are both in the 795, so at least five of those sixteen would have reached it.
+
+**The counts.** Active events 1,466 → **1,467**; **main 234 → 234**; active edges
+1,237 → **1,238**; largest component **795 before and after**; components 441 → 441;
+events with no edge 340 → 340; **edges crossing an umbrella (A15(11)) 619 → 619** —
+the new edge is *inside* `north-african-campaign`, both ends being its children, which
+is why that number does not move. Place records 799 → 800. Per lane (A10): **Africa
+255/35 → 256/35**, Asia 259/57, Americas 396/56, Europe 556/86 — **Africa now trails
+Asia by three**, where six batches ago it trailed by nine. `node tools/validate.mjs
+--index`: **0 errors, 637 warnings**, the same warning count as before the batch.
+`node tools/cache-evidence.mjs`: **0 revisions that should be on disk and are not**,
+over all 3,080 citations (A15(2), the last step of the batch).
+
+**`docs/m53-polities.md` §4.1 retaken**, with `tools/m53-retake.mjs --write`: the new
+record names two actors alive in 1940, so the start-rule figure is **412 of 1,467**
+and the overlap figure 413. The two current copies of the figures paragraph were
+updated and **the two stale ones were again left alone**, for deviation 1563's reason.
+
+**Deviation 1569 — `review.note` is 500 characters and this lane's note has reached
+it.** Rule 1 refused both of this batch's records on `/review/note` before anything
+else: 810 characters on the event and 535 on the place, against the schema's
+`maxLength: 500`. The shape is not padding — one clause per pass (A6/A8, A9, A15(4),
+A15(7), A15(12), A11(a)) — and batch 98's records sit at 472, so the ceiling was two
+passes away and nothing said so. The note was cut twice and **the Kingdom of Italy
+refusal came out of it**, which belongs on the record and not only in a pool file.
+
+### The check, on this fire's heads
+
+Locally on `79930ee98`: **1,941 pure tests, 1,941 passing, 0 failing, 0 skipped**,
+and **313 browser tests, 313 passing, 0 failing, 0 skipped**, both exit 0. One real
+failure was met before the index was rebuilt and fixed rather than assumed away: run
+on the record head reported `docs/m53-polities.md §4.1 says 411 counted by the start
+rule` against a measured 412, which is the retake above; the other eleven were rule
+16 on the stale index and went with `tools/build-index.mjs`.
+
+**Run 2468 on `79930ee98` was still in its Tests step when this was written** — its
+`Validate records` step concluded `success` at 19:39:25Z and the two index steps had
+not run. Runs 2466 and 2467, on the record head and the index head, were **cancelled
+by the push that superseded them** and not red. The local figures above are on the
+same head the run is on, so a red Tests step would be news rather than a repeat;
+whoever reads this next should look at the run before trusting the line above it.
+
 **M42 batch 87 — the inverse vein measured, and three umbrellas off it, 1 October.**
 The fire that claimed at 23:30Z merged `origin/m0`, then answered the first of the
 four candidate next questions the batch-86 stand left and had never been asked:
