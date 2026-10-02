@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "first-sino-japanese-war--russian-invasion-of-manchuria--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "a13-relations-pass"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russian invasion of Manchuria\", revision 1370729162"
+    }
+  ],
+  "from": "first-sino-japanese-war",
+  "to": "russian-invasion-of-manchuria",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The invasion’s own article names the war’s outcome as what moved Russia to act: \"The Russian invasion of Manchuria or Chinese expedition occurred in the aftermath of the First Sino-Japanese War (1894–1895) when concerns regarding Qing China’s defeat by the Empire of Japan, and Japan’s brief occupation of Liaodong, caused the Russian Empire to speed up their long held designs for imperial expansion across Eurasia.\" The type is `reacted-to` and not `caused` because the sentence says the designs were long held and what the war’s outcome did was make Russia act on them now: the invasion answered the war rather than being brought into being by it. The sentence opens on \"in the aftermath of\" without opening *with* it, so A15(5)’s chronology class does not reach it — the cause is stated in the same sentence, after the clause that gives the order.",
+  "dispute": null
+}
