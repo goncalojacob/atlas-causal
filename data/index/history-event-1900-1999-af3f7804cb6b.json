@@ -19875,7 +19875,7 @@
       ]
     },
     "soviet-invasion-of-manchuria": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -20375,6 +20375,15 @@
             "when"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "tehran-conference": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

@@ -5957,7 +5957,7 @@
       ]
     },
     "soviet-invasion-of-manchuria--korean-war--precondition-of": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -5966,7 +5966,7 @@
       ]
     },
     "soviet-invasion-of-manchuria--surrender-of-japan--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6075,6 +6075,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "tehran-conference--soviet-invasion-of-manchuria--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

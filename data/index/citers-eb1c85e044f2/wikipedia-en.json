@@ -8168,6 +8168,24 @@
     },
     {
       "dissent": false,
+      "id": "tehran-conference--soviet-invasion-of-manchuria--precondition-of",
+      "kind": "edge",
+      "locator": "\"Soviet invasion of Manchuria\", revision 1376133899, § Summary: \"determined by the timing of the agreements at Tehran and Yalta\""
+    },
+    {
+      "dissent": false,
+      "id": "tehran-conference--soviet-invasion-of-manchuria--precondition-of",
+      "kind": "edge",
+      "locator": "\"Tehran Conference\", revision 1374026870"
+    },
+    {
+      "dissent": false,
+      "id": "tehran-conference--soviet-invasion-of-manchuria--precondition-of",
+      "kind": "edge",
+      "locator": "\"Tehran Conference\", revision 1374026870: \"Stalin agreed to enter the war against Japan once Germany was defeated\""
+    },
+    {
+      "dissent": false,
       "id": "tet-offensive--my-lai-massacre--precondition-of",
       "kind": "edge",
       "locator": "\"My Lai massacre\", revision 1376209267, § Background"
@@ -17471,6 +17489,12 @@
       "id": "tambov-rebellion",
       "kind": "event",
       "locator": "\"Tambov Rebellion\", revision 1370749600: \"The Tambov Rebellion of 1920–1922 was one of the largest and best-organized peasant rebellions\""
+    },
+    {
+      "dissent": false,
+      "id": "tehran-conference",
+      "kind": "event",
+      "locator": "\"Tehran Conference\", revision 1374026870"
     },
     {
       "dissent": false,
