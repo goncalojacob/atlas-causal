@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-bahrain",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q55633151",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Bahrain",
+    "pt": "Cerco do Barém"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q55633151"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Bahrain\", revision 1376466141"
+    }
+  ],
+  "title": "Siege of Bahrain",
+  "summary": "The English Wikipedia article \"Siege of Bahrain\", at revision 1376466141, opens: \"The siege of Bahrain of 1559 occurred when forces of the Ottoman Empire, commanded by the governor of the Lahsa eyalet Mustafa Pasha, attempted to seize Bahrain, and thus wrest control of the island and its famed pearl trade from the Portuguese Empire. The siege was unsuccessful, and the Portuguese defeated the Turks when reinforcements were dispatched by sea from the fortress of Hormuz.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q55633151, imported by tools/import/wikidata.mjs. The item's own description reads \"1559 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1559,
+    "end": 1559,
+    "date": "1559-07",
+    "endDate": "1559-11"
+  },
+  "place": "qal-at-al-bahrain",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-portuguese-conflicts-1538-1560"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "suez",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q134514",
+  "sitelinks": {
+    "count": 80,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Suez",
+    "pt": "Suez"
+  },
+  "sources": [],
+  "names": [
+    "Suez"
+  ],
+  "where": {
+    "lon": 32.533333333333,
+    "lat": 29.966666666667,
+    "precision": "city",
+    "label": "Suez"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

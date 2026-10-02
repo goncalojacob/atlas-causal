@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jeddah",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q374365",
+  "sitelinks": {
+    "count": 142,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Jeddah",
+    "pt": "Gidá"
+  },
+  "sources": [],
+  "names": [
+    "Jeddah",
+    "Jidá",
+    "Gidá"
+  ],
+  "where": {
+    "lon": 39.16111111111111,
+    "lat": 21.529166666666665,
+    "precision": "city",
+    "label": "Jeddah"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

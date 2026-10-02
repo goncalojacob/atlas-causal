@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-diu-1538",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3394749",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Diu (1538)",
+    "pt": "Cerco de Diu"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3394749"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Diu (1538)\", revision 1374556346"
+    }
+  ],
+  "title": "Siege of Diu (1538)",
+  "summary": "The English Wikipedia article \"Siege of Diu (1538)\", at revision 1374556346, opens: \"The siege of Diu occurred when an army of the Sultanate of Gujarat under Khadjar Safar, aided by forces of the Ottoman Empire, attempted to capture the city of Diu in 1538, then held by the Portuguese. The siege was part of the Ottoman-Portuguese war. The Portuguese successfully resisted the four-month long siege.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3394749, imported by tools/import/wikidata.mjs. The item's own description reads \"1538 Portuguese victory against Gujarat in India\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1538,
+    "end": 1538,
+    "date": "1538-08",
+    "endDate": "1538-11"
+  },
+  "place": "diu-india",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-portuguese-conflicts-1538-1560"
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "lake-tana",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q116685",
+  "sitelinks": {
+    "count": 75,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Lake Tana",
+    "pt": "Lago Tana"
+  },
+  "sources": [],
+  "names": [
+    "Lake Tana",
+    "Lago Tana"
+  ],
+  "where": {
+    "lon": 37.25,
+    "lat": 12,
+    "precision": "region",
+    "label": "Lake Tana"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "aden-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3049873",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Aden Revolt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3049873"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Aden Revolt\", revision 1370426945"
+    }
+  ],
+  "title": "Aden Revolt",
+  "summary": "The English Wikipedia article \"Aden Revolt\", at revision 1370426945, opens: \"The Aden revolt of 1548 was a rebellion against Ottoman rule in Yemen, that was suppressed after Ottoman forces under Piri Reis arrived on 26 February 1548.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3049873, imported by tools/import/wikidata.mjs. The item's own description reads \"1548 Ottoman capture of Aden\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1548,
+    "end": 1548,
+    "date": "1548-02-26"
+  },
+  "place": "aden-q131694",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-portuguese-conflicts-1538-1560"
+}

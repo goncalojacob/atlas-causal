@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-wayna-daga",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q957263",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Wayna Daga",
+    "pt": "Batalha de Wayna Daga"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q957263"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wayna Daga\", revision 1370593467"
+    }
+  ],
+  "title": "Battle of Wayna Daga",
+  "summary": "The English Wikipedia article \"Battle of Wayna Daga\", at revision 1370593467, opens: \"The Battle of Wayna Daga was a large-scale battle between the Ethiopian forces and the Portuguese Empire and the forces of the Adal Sultanate and the Ottoman Empire in the east of Lake Tana in Ethiopia on 21 February 1543. The available sources give different dates for the battle. Led by the Emperor Galawdewos, the combined army of Ethiopian and Portuguese troops defeated the Adal-Ottoman army led by Imam Ahmad ibn Ibrahim al-Ghazi. Imam Ahmad was killed in the battle and his followers were utterly routed\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q957263, imported by tools/import/wikidata.mjs. The item's own description reads \"1543 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1543,
+    "end": 1543,
+    "date": "1543-02-21"
+  },
+  "place": "lake-tana",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-portuguese-conflicts-1538-1560"
+}
