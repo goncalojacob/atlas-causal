@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "demerara",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1185346",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Demerara"
+  },
+  "sources": [],
+  "names": [
+    "Demerara"
+  ],
+  "where": {
+    "lon": -58.1701,
+    "lat": 6.8121,
+    "precision": "region",
+    "label": "Demerara"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

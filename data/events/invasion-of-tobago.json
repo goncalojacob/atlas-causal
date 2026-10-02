@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "invasion-of-tobago",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q536360",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Invasion of Tobago"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q536360"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of Tobago\", revision 1374476457"
+    }
+  ],
+  "title": "Invasion of Tobago",
+  "summary": "The English Wikipedia article \"Invasion of Tobago\", at revision 1374476457, opens: \"The French invaded the British-held island of Tobago in 1781 during the Anglo-French War. On 24 May 1781, the fleet of Comte de Grasse landed troops on the island under the command of General Marquis de Bouillé. By 2 June 1781, they had successfully gained control of the island.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q536360, imported by tools/import/wikidata.mjs. The item's own description reads \"1781 French invasion of the British-held island of Tobago\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781,
+    "date": "1781-05-24",
+    "endDate": "1781-06-02"
+  },
+  "place": "tobago",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-french-war-1778-1783"
+}

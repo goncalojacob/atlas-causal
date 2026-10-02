@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "san-juan-puerto-rico",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q41211",
+  "sitelinks": {
+    "count": 103,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "San Juan, Puerto Rico",
+    "pt": "San Juan (Porto Rico)"
+  },
+  "sources": [],
+  "names": [
+    "San Juan",
+    "San Juan, Puerto Rico",
+    "San Juan (Porto Rico)"
+  ],
+  "where": {
+    "lon": -66.11666666666666,
+    "lat": 18.46527777777778,
+    "precision": "city",
+    "label": "San Juan, Puerto Rico"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

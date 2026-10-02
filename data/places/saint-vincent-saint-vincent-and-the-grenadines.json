@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "saint-vincent-saint-vincent-and-the-grenadines",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q379656",
+  "sitelinks": {
+    "count": 48,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Saint Vincent (Saint Vincent and the Grenadines)",
+    "pt": "Ilha de São Vicente (São Vicente e Granadinas)"
+  },
+  "sources": [],
+  "names": [
+    "Saint Vincent",
+    "São Vicente",
+    "Saint Vincent (Saint Vincent and the Grenadines)",
+    "Ilha de São Vicente (São Vicente e Granadinas)"
+  ],
+  "where": {
+    "lon": -61.2,
+    "lat": 13.25,
+    "precision": "region",
+    "label": "Saint Vincent (Saint Vincent and the Grenadines)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

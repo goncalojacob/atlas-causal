@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-san-juan-1797",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q656046",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of San Juan (1797)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q656046"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of San Juan (1797)\", revision 1370588347"
+    }
+  ],
+  "title": "Battle of San Juan (1797)",
+  "summary": "The English Wikipedia article \"Battle of San Juan (1797)\", at revision 1370588347, opens: \"The Battle of San Juan occurred within an ill-fated British operation in 1797 targeting the Spanish colonial port city of San Juan in Puerto Rico during the 1796–1808 Anglo-Spanish War. The operation was carried out facing the historic town of Miramar. The battle was actually a series of successive Spanish attacks on the British siege positions; these Spanish countermeasures broke the British force and the siege of San Juan by it.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q656046, imported by tools/import/wikidata.mjs. The item's own description reads \"1797 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1797,
+    "end": 1797,
+    "date": "1797-05-02"
+  },
+  "place": "san-juan-puerto-rico",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

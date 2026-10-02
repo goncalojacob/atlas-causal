@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "san-juan-river-nicaragua",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1161204",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "San Juan River (Nicaragua)",
+    "pt": "Rio São João (Nicarágua)"
+  },
+  "sources": [],
+  "names": [
+    "Río San Juan",
+    "Rio San Juan (Nicarágua)",
+    "San Juan River (Nicaragua)",
+    "Rio São João (Nicarágua)"
+  ],
+  "where": {
+    "lon": -84.21083,
+    "lat": 10.80056,
+    "precision": "region",
+    "label": "San Juan River (Nicaragua)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
