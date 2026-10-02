@@ -23753,8 +23753,24 @@ it on reading articles, which is the only thing that writes an edge.
   either §3's table is retired in writing, or a fire backfills 72 rows from
   `tools/m42-pool.mjs --at <rev>`, which the tool can actually do. Neither is a
   records-lane decision.
-- **Deviation numbers: take the next above 1545.** This fire wrote 1541, 1542,
-  1543, 1544 and 1545. **`origin/m42b` stood at 1540** when this fire read it, which is why
+- **Deviation 1546 — a branch cannot see a stale prerendered page, and this
+  fire pushed one for twenty minutes.** `tools/build-index.mjs` writes
+  `data/index/`, `sources.html` and `narratives.html` in one run. Batch 89's
+  index commit staged `data/index/` and `tools/import/cache/` and **missed
+  `sources.html`**, whose three citation counts the batch had moved (5,951 →
+  5,955 in all; `wikipedia-en` 3,036 → 3,039, `wikidata` 1,723 → 1,724 — which
+  is exactly the batch's four citations and is how the diff was identified).
+  `node tools/validate.mjs --index` reported **0 errors** throughout, because
+  its page check is **main-only**, as `CLAUDE.md`'s own command list says. So
+  the branch was green, the local suites were green, the check was green, and
+  the head carried a page that does not match a fresh build — which is the one
+  thing the landing routine's `validate --index` on `m0` would have stopped on.
+  Caught by a `git status` and fixed in a commit of its own. **A line for the
+  owner:** either the page check runs on every branch, or a batch's index commit
+  is `git add -A data/index sources.html narratives.html entry` and never
+  `data/index/` alone. A records lane cannot decide which, and the second half
+  is the cheaper half.
+- **Deviation numbers: take the next above 1546.** This fire wrote 1541 to 1546. **`origin/m42b` stood at 1540** when this fire read it, which is why
   this fire started at 1541 and not at 1537. The collision rule of the previous
   stand holds and is unchanged: read `origin/m42b`'s own numbers before taking
   one, because no stand here can know them. The lane-offset fix is still the

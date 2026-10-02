@@ -25009,4 +25009,18 @@ correction; the class is not. **A forward `P361` walk must test a candidate
 against every record of any status, not against the active ones.** Corrected
 counts: **Africa 346, Asia 1,211.** Not a code change — neither vein lives in a
 committed tool — but the next fire that writes one owes it this gate.
-Deviations 1541, 1542, 1543, 1544, 1545; `origin/m42b` stood at 1540.
+**Deviation 1546, found by a `git status` after everything was green.**
+`tools/build-index.mjs` writes `data/index/`, `sources.html` and
+`narratives.html` in one run; batch 89's index commit staged the index and the
+lead cache and **missed `sources.html`**, whose counts the batch had moved by
+exactly its own four citations (5,951 → 5,955; `wikipedia-en` 3,036 → 3,039,
+`wikidata` 1,723 → 1,724). `validate --index` said **0 errors** the whole time
+because **its page check is main-only**, so the branch, the 1,941 local tests and
+the check were all green over a head whose prerendered page did not match a fresh
+build — the one thing the landing routine's `validate --index` on `m0` would have
+stopped on. Fixed in a commit of its own. **A line for the owner:** either that
+page check runs on every branch, or a batch's index commit is
+`git add -A data/index sources.html narratives.html entry` and never
+`data/index/` alone; the second is the cheaper half and a records lane should not
+pick between them alone.
+Deviations 1541 to 1546; `origin/m42b` stood at 1540.
