@@ -24024,7 +24024,14 @@ rate-limits this sandbox for the rest of a fire once an import and
 backoffs; `query.wikidata.org` and `index.php?...&action=raw` kept answering, so a
 fire that means to hand-write a record must read its revision and lead **before** the
 cache fill. `validate --index` clean at **0 errors, 630 warnings**; A15(2) reports **0
-revisions that should be on disk and are not**.
+revisions that should be on disk and are not**. **Deviation 1532**, the one thing
+this fire got wrong: the three edges were written with Python's `json.dump`, whose
+`ensure_ascii` default escapes every accented letter, and `validate` passes that
+while `tests/bundle.test.mjs`'s *"an unedited save of a record in data/ is byte
+identical"* does not. The same slip had escaped 132 strings in
+`data/imports/wikidata-seeds.json`, which no test covers. A seventh commit rewrote
+all of them literally; the index rebuilt byte-identical. **Run the pure suite before
+the final push, not only the validator.**
 
 ## Milestones landed
 M6 started 2026-09-03T17:06:55Z by scheduled

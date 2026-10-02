@@ -20012,18 +20012,31 @@ eleven redirect to records already here (deviation 1528).*
    import, and nobody has swept the 3,000-odd cached leads for a cited sentence joining a
    pair already on disk. This batch found one such edge by accident
    (`capture-of-luanda → recapture-of-angola`) and it was already written.
-7. **Deviation 1531 is a new refusal and worth remembering**: an article can contradict
+7. **Write a record with `ensure_ascii=False` or the byte-identity test fails**
+   (deviation 1532). All three of batch 73's edges were written with Python's
+   `json.dump`, whose default escapes every accented letter and every curly quote as
+   `\uXXXX`. `validate --index` is clean on that — the parsed record is identical — but
+   `tests/bundle.test.mjs`'s *"an unedited save of a record in data/ is byte identical"*
+   is not, and it named all three. The same slip had escaped **132 strings** in
+   `data/imports/wikidata-seeds.json`, which no test covers at all, and would have sat
+   there. A fire that edits a record from Python must pass
+   `json.dumps(d, indent=2, ensure_ascii=False)` and a trailing newline; `titles.json` is
+   `indent=1`. **And run the pure suite before the final push**, not only the validator:
+   this is the second thing in two fires that `validate` passes and `node --test` does
+   not.
+
+8. **Deviation 1531 is a new refusal and worth remembering**: an article can contradict
    itself about a year. A7 widens from a cited article; it does not choose between two
    years one article gives. Keep the item's, add the `date` flag, write the
    contradiction out.
-8. **Read deviation 1484 before you write a deviation number.** The register is further
+9. **Read deviation 1484 before you write a deviation number.** The register is further
    along than the last stand said: **1527 was the highest taken** and this fire used
-   **1528, 1529, 1530, 1531**. Three greps, all three zero: `[Dd]eviations\? <n>` over
+   **1528, 1529, 1530, 1531, 1532**. Three greps, all three zero: `[Dd]eviations\? <n>` over
    both pool files and `STATUS.md`, `^<n>\. \*\*` with the bold over `STATUS.md`,
    `^\*\*Deviation <n>` over both pool files.
-9. **Beside the import, `curl` must carry the import's own user-agent** (deviation 1482),
+10. **Beside the import, `curl` must carry the import's own user-agent** (deviation 1482),
    and now deviation 1530 says that is not enough once `api.php` has been spent.
-10. **Still open, unchanged**: C8; the cheapest standing item is still deviations 1393
+11. **Still open, unchanged**: C8; the cheapest standing item is still deviations 1393
    and the class-table five — `Q12443800` *state of India* at `precision: region` for
    `battle-of-goa-1638`, `Q44539` *temple* for `conquest-of-koneswaram-temple`, `Q93352`
    *coast* for `kandyan-commerce-raiding-against-portugal-1612-1613`, and `Q5098` plus
@@ -20062,3 +20075,12 @@ key by key from the two stages: **7 of M42's entries were new here**.*
 that should be on disk and are not**, 2,934 of 3,012 citations on disk at the revision
 cited and 78 unholdable beside a more-cited revision of the same item. The title table
 went from 1,545 entries (after the merge union) to **1,551**.*
+
+*A seventh commit fixed what `validate` could not see: the three edges had been written
+with Python's `json.dump` and carried `\uXXXX` for every accented letter, which
+`tests/bundle.test.mjs` fails on and the validator does not (deviation 1532). The index
+rebuilt after it byte-identical, so no index commit followed.*
+
+*The suite at this fire's head, run the way the check runs it: **1,940 pure tests** —
+1,939 passed and the one failure was deviation 1532's, which the fix cleared — and the
+**40 browser suites** one at a time. Nothing skipped in either.*
