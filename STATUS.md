@@ -25474,3 +25474,47 @@ between calls, while WDQS and the import answered everything; both edges came ou
 cached. The stand also measures europe's own queue for the first time: `Q164432` *Eighty Years'
 War* has **145 unheld children inside its span**, one main for up to 145 europe-lane records, and
 it is the first of the three bridges earlier stands asked for by name.
+
+**M42b batch 89 — North America before 1750, and the brief's ordering clause measured at last,
+2 October.** The brief asks for South and Central America before North America *until they hold as
+many active events as North America*, and neither pool file had ever measured that. Read by the
+latitude of each event's place, with 25° N as the Rio Grande the brief names: **South and Central
+America and the Caribbean 260, North America 77**, and 76 americas events with no place that
+carries a point, so unsplittable. **The condition has been satisfied for some time**, which means
+the 224 North American rows of batch 87's queue are open by the brief's own terms — batch 88's note
+had guessed they would be open only by exhaustion, and that guess was wrong.
+
+**Batch 89** took the 19 of those rows dated before 1750, because the americas' thinnest pre-1800
+cells are its 16th and 17th centuries and because what sits in that range is a run of wars with
+their own historiography rather than minor naval actions. **18 events, 7 places, +0 main**, thirteen
+of them under `american-indian-wars`, which had been nearly empty. `Q140468184` (the Coree War) was
+refused for having no date at all, and all three `P17` candidates were refused under A15(6) — the
+United States' 1776 inception against events ending 1645 and 1663, Canada's 1867 against 1745.
+
+**No edge, and A5 asks why.** Five candidate quotes, none writable: four are A14 (a battle's lead
+naming its own war), one is co-occurrence (*"took place on the island the same day"*), and the
+strongest — `invasion-of-georgia-1742`'s *"defeated the Spaniards at the Battle of Bloody Marsh and
+the Battle of Gully Hole Creek, **forcing them to withdraw**"*, which `statesACause` passes — is
+A14 as well, because both battles are that invasion's children. **What the sentence names as the
+effect is the withdrawal, and the atlas holds no record of it**; that is a record to write, not an
+edge to force.
+
+**Deviation 1566**, found in the fifth: `chickasaw-wars`'s lead says the wars ended *"in 1763
+according to terms of the Treaty of Paris"*, and `namesHeldEvents` returned `treaty-of-paris-1783`.
+Deviation 1481's widening strips the disambiguator and tries the bare name; deviation 1480's year
+guard then has nothing to choose between, because the atlas holds one Treaty of Paris and not two.
+**The quote states its own year and the match ignores it** — an edge written off it would have said
+a treaty of 1783 ended a war in 1763. The fix is a few lines in the caller; until then, read the
+year in the quote.
+
+One refiling: `siege-of-louisbourg-1745` arrived under the War of the Austrian Succession, which is
+what its item says, and its cited article says the siege was fought in the war *"known as King
+George's War in the British colonies"* — created in this same batch, 1744–1748, containing 1745. So
+the nearer umbrella is the parent and the wider one is dropped as redundant, which is
+`filedUnder`'s own rule applied by hand: **the import's second filing pass only revisits records
+that came out with no parent**, so a fire that creates a theatre umbrella alongside its battles
+should expect this.
+
+**Active 1,610 → 1,628; main 239 → 239; americas 413 → 431**, its 18th century now 105 and its
+17th 79. Europe **556** across all three batches of this fire. `validate --index` 0 errors at every
+commit and at this head; 1,941 pure tests and 313 browser tests pass, 0 skipped.
