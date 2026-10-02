@@ -19955,12 +19955,27 @@ eleven redirect to records already here (deviation 1528).*
    reads *"In 1670, the Portuguese were routed at the Battle of Kitombo … Encouraged by
    such setbacks, the King of Ndongo, Dom João Hari (Ngola Hari), took the opportunity to
    revolt against Portuguese suzerainty"*.
-2. **`api.php` is the scarce host, so spend it first.** Deviation 1530: one import run
-   plus one `cache-evidence --fill` ends it for the fire. `query.wikidata.org` and
-   `index.php?…&action=raw` were unaffected and answered every call. Order a fire's work
-   accordingly: SPARQL and `action=raw` reading are free, `api.php` reads are not, and
-   the cache fill goes last for a reason (A15(2)) — so anything needing a revision id
+2. **`api.php` is the scarce host, so spend it first — and `rest.php` is the way round it
+   for a revision id.** Deviation 1530: one import run plus one `cache-evidence --fill`
+   ends `api.php` for the fire. `query.wikidata.org` and `index.php?…&action=raw` were
+   unaffected and answered every call, and so was
+   **`https://en.wikipedia.org/w/rest.php/v1/page/<Title>/bare`**, which returns
+   `latest.id` and nothing else — the one thing `action=raw` cannot give. Asked at this
+   head while `api.php` was returning 429 to everything, it answered at once:
+   **`Kongo Civil War` is at revision `1376270418`** (2026-09-23T03:32:09Z), which is the
+   revision the `action=raw` text quoted in this document was read at. So a fire can
+   write a record and its citation with `rest.php` and `action=raw` alone; what it
+   **cannot** do without `api.php` is cache the lead, and a record whose lead is not on
+   disk fails A15(2) and shows as `uncached` in `cache-evidence`. Order a fire's work
+   accordingly: SPARQL, `action=raw` and `rest.php` are free, `api.php` reads are not,
+   and the cache fill goes last for a reason (A15(2)) — so anything needing `api.php`
    comes before it.
+
+   *This is why the umbrella was not written at this head even though its span, class,
+   lane, lead and revision were all in hand: the three children could not be imported
+   with it (the import reads their leads through `api.php`), and a bare umbrella with no
+   children is the one main A6 asks a batch not to spend. The next fire spends it with
+   the children behind it.*
 3. **The query that found this batch is the method now, and it has 141 rows left.** One
    `VALUES ?u { … } ?i wdt:P361 ?u` over every held umbrella with a `wikidata` id,
    diffed against the ids on disk. The open veins, with Europe's excluded by A15(1):
