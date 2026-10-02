@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "invasion-of-georgia-1742--battle-of-bloody-marsh--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-80"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of Georgia (1742)\", revision 1370623973"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bloody Marsh\", revision 1374312081, § Background"
+    }
+  ],
+  "from": "invasion-of-georgia-1742",
+  "to": "battle-of-bloody-marsh",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The battle is what the colony did about the landing, and the campaign's own article says it in one sentence: “Local British forces under the command of the Governor James Oglethorpe rallied and defeated the Spaniards at the Battle of Bloody Marsh and the Battle of Gully Hole Creek, forcing them to withdraw.” The second author, “Battle of Bloody Marsh” at revision 1374312081, puts the order the same way round — “The battles took place after a Spanish invasion of the island” — and says what the answer was worth: “The battle blunted the Spanish advance and ultimately proved decisive.” `reacted-to`, which in this atlas runs forward in time from the thing answered to the answer. `probable`, rule 22. The article dates the battle 18 July 1742 “(new style)” and the record keeps the item's 7 July, which is the same day in the other style; nothing here chooses between them.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

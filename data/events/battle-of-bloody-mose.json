@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-bloody-mose",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361",
+      "a9-place"
+    ],
+    "note": "The place is fort-mose, written by hand from the item's own P625: the import refused it for want of a name, and the region override it wrote for a placeless event is gone now that the place carries the lane."
+  },
+  "wikidata": "Q7510020",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Bloody Mose"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510020"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bloody Mose\", revision 1377232939"
+    }
+  ],
+  "title": "Battle of Bloody Mose",
+  "summary": "The English Wikipedia article \"Battle of Bloody Mose\", at revision 1377232939, opens: \"The Battle of Bloody Mose was fought on 14 June 1740 at Fort Mose in Spanish Florida during the War of Jenkins' Ear. A Spanish column of 300 regular troops under Captain Antonio Salgado supported by Black militia under Captain Francisco Menéndez and Spanish-allied Seminole warriors attacked Fort Mose, which was defended by 170 British colonial troops from the Province of Georgia and British-allied Indians under Colonel John Palmer.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510020, imported by tools/import/wikidata.mjs. The item's own description reads \"26 June 1740 action of the War of Jenkins' Ear\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1740,
+    "end": 1740,
+    "date": "1740-06-26"
+  },
+  "place": "fort-mose",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-jenkins-ear"
+}

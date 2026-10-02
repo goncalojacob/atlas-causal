@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "invasion-of-georgia-1742",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q6059634",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Invasion of Georgia (1742)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6059634"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of Georgia (1742)\", revision 1370623973"
+    }
+  ],
+  "title": "Invasion of Georgia (1742)",
+  "summary": "The English Wikipedia article \"Invasion of Georgia (1742)\", at revision 1370623973, opens: \"In the 1742 Invasion of Georgia, Spanish forces based in Florida attempted to seize and occupy disputed territory held by the British colony of Georgia. The campaign was part of a larger conflict which became known as the War of Jenkins' Ear. Local British forces under the command of the Governor James Oglethorpe rallied and defeated the Spaniards at the Battle of Bloody Marsh and the Battle of Gully Hole Creek, forcing them to withdraw. Britain's ownership of Georgia was formally recognized by Spain in the subsequent Treaty of Madrid.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6059634, imported by tools/import/wikidata.mjs. The item's own description reads \"Campaign during the War of Jenkins' Ear\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1742,
+    "end": 1742,
+    "date": "1742-07"
+  },
+  "place": "st-simons-georgia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-jenkins-ear"
+}
