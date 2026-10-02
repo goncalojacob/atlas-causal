@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "dutch-invasions-of-brazil",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q19019163",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Dutch invasions of Brazil",
+    "pt": "Invasões holandesas no Brasil"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q19019163"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch invasions of Brazil\", revision 1370616045"
+    }
+  ],
+  "title": "Dutch invasions of Brazil",
+  "summary": "The English Wikipedia article \"Dutch invasions of Brazil\", at revision 1370616045, opens: \"The Dutch invasions in Brazil were a series of military campaigns carried out by the Dutch West India Company (WIC) during the 17th century. Considered the biggest political-military conflict in the colony, the invasions were centered on the control of sugar and slave supply sources. Although they were concentrated in Northeastern Brazil, they were not just a regional episode. There were two interconnected, albeit distant, fronts: Brazil and Africa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q19019163, imported by tools/import/wikidata.mjs. The item's own description reads \"Dutch occupation of Brazil in the 17th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1624,
+    "end": 1654
+  },
+  "place": "northeast-region-brazil",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}

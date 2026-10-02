@@ -1832,7 +1832,16 @@
     "Q4871456",
     "Q4871702",
     "Q4872479",
-    "Q109058273"
+    "Q109058273",
+    "Q4871118",
+    "Q125166578",
+    "Q16250240",
+    "Q130485022",
+    "Q18500027",
+    "Q6159472",
+    "Q122452193",
+    "Q25830845",
+    "Q19019163"
   ],
   "lanes": {
     "Q10303008": "americas",
@@ -5793,6 +5802,12 @@
       "label": "truck bombing",
       "note": "Added in M42 batch 44 from the class Q114926903, the October 2022 Mogadishu bombings, names. The label and the description — \"terrorist attack carried out through the explosion of a vehicle\" — are read from the item itself over the network. No category: none of the twelve of data/categories.json names an attack of this kind — `war` is organised armed force between polities and `disaster` is harm nobody chose — and every comparable record already here (the 2017 Mogadishu bombings, the Bogota car bombing, the Lisbon bomb attacks) carries none, so none is guessed."
     },
+    "Q27535996": {
+      "kind": "place",
+      "precision": "region",
+      "label": "region of Nigeria",
+      "note": "Added in M42 batch 89, for Q3509092 Northern Region, which is the P276 of the 1966 anti-Igbo pogrom and the ground the pogroms happened on. The label and the gloss are read from the class item itself over the network: Wikidata's own description is 'former administrative territorial entity of Nigeria, between 1960 and 1967', which is an area and not a point, so it takes the region precision and the map draws it wide and faint."
+    },
     "Q27865981": {
       "kind": "event",
       "category": "law",
@@ -6151,6 +6166,66 @@
       "precision": "region",
       "label": "island group",
       "note": "Added in M42b batch 40 for Q211508, the Wanshan Qundao, which is where the Macau Incident of 1799 was fought. The label and the description — “collection of islands, excluding neighbouring water; use archipelago (Q33837) for a group of islands including the water between them” — are read off the class item over the network rather than guessed (deviation 1266). `region` because a group of islands is an area and not a point on the ground."
+    },
+    "Q12443800": {
+      "kind": "place",
+      "precision": "region",
+      "label": "state of India",
+      "note": "Added in M42b batch 75 to place a record this lane already holds. The class is read off the item that carries the located thing, never guessed, and the precision follows the row already in this table for the same kind of ground: Q35657 *U.S. state* and Q15063586 *state of Malaysia* are both `region`. Carried by the location of `battle-of-goa-1638`."
+    },
+    "Q44539": {
+      "kind": "place",
+      "precision": "point",
+      "label": "temple",
+      "note": "Added in M42b batch 75 to place a record this lane already holds. The class is read off the item that carries the located thing, never guessed, and the precision follows the row already in this table for the same kind of ground: Q23413 *castle*, Q16560 *palace* and Q1785071 *fort* are all `point`; a temple is one building on one spot. Carried by the location of `conquest-of-koneswaram-temple`."
+    },
+    "Q93352": {
+      "kind": "place",
+      "precision": "region",
+      "label": "coast",
+      "note": "Added in M42b batch 75 to place a record this lane already holds. The class is read off the item that carries the located thing, never guessed, and the precision follows the row already in this table for the same kind of ground: Q34763 *peninsula* and Q93267 *isthmus* are `region`; a coast is a stretch of ground and not a point on it. Carried by the location of `kandyan-commerce-raiding-against-portugal-1612-1613`."
+    },
+    "Q5098": {
+      "kind": "place",
+      "precision": "region",
+      "label": "province of Indonesia",
+      "note": "Added in M42b batch 75 to place a record this lane already holds. The class is read off the item that carries the located thing, never guessed, and the precision follows the row already in this table for the same kind of ground: Q1153408 *province of Chile*, Q115291 *province of Cuba* and Q162620 *province of Spain* are all `region`. Carried by the location of `battle-of-jambi`."
+    },
+    "Q12479773": {
+      "kind": "place",
+      "precision": "region",
+      "label": "first-level administrative country subdivision in Indonesia",
+      "note": "Added in M42b batch 75 to place a record this lane already holds. The class is read off the item that carries the located thing, never guessed, and the precision follows the row already in this table for the same kind of ground: the same ground as Q5098, which the same item also carries; both rows are needed because the import refuses an item no class of which is in this table. Carried by the location of `battle-of-jambi`."
+    },
+    "Q47521": {
+      "kind": "place",
+      "precision": "region",
+      "label": "stream",
+      "note": "Added in M42b batch 75 to place a record this lane already holds. The class is read off the item that carries the located thing, never guessed, and the precision follows the row already in this table for the same kind of ground: Q4022 *river* is `region`, and a stream is the same kind of ground said smaller. Carried by the location of `cuanza-river-campaign`, batch 73."
+    },
+    "Q631305": {
+      "kind": "place",
+      "precision": "point",
+      "label": "rock formation",
+      "note": "Added in M42b batch 75 to place a record this lane already holds. The class is read off the item that carries the located thing, never guessed, and the precision follows the row already in this table for the same kind of ground: Q839954 *archaeological site* is `point`; a named rock is one place on the ground with a coordinate of its own. Carried by Q7260173 *Pedras Negras de Pungo Andongo*, the location of `battle-of-pungo-andongo`, batch 74."
+    },
+    "Q378508": {
+      "kind": "place",
+      "precision": "city",
+      "label": "second-level administrative subdivision of Angola",
+      "note": "Added in M42b batch 76 to place `battle-of-talandongo`, whose P276 is Q1003771 *Cambambe* and whose only class this is. The precision follows the rows this table already has for the same kind of ground - Q2989398 *commune of Algeria*, Q41067667 *municipality of Tunisia* and Q2555896 *municipality of Colombia* are all `city`."
+    },
+    "Q188686": {
+      "kind": "event",
+      "category": "war",
+      "label": "military occupation",
+      "note": "Added in M42b batch 77 for Q25830845 *Dutch occupation of Tiruchendur*, the one candidate of the Dutch-Portuguese War vein deviation 1528 left live for want of a row here. The category follows the rows this table already has for ground taken by force - Q1361229 *conquest*, Q467011 *invasion* and Q188055 *siege* are all `war`."
+    },
+    "Q753113": {
+      "kind": "place",
+      "precision": "region",
+      "label": "official subdivision of Brazil into subregions",
+      "note": "Added in M42b batch 77 to place `dutch-invasions-of-brazil`, whose P276 is Q1136194 *Northeast Region* and whose only class this is. The precision follows Q82794 *region*, Q36784 *region of France* and Q743074 *region of Mali*, all `region` here."
     }
   },
   "reconcile": true

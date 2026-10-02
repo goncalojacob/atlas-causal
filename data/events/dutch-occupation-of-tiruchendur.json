@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dutch-occupation-of-tiruchendur",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q25830845",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Dutch occupation of Tiruchendur"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q25830845"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch occupation of Tiruchendur\", revision 1370616054"
+    }
+  ],
+  "title": "Dutch occupation of Tiruchendur",
+  "summary": "The English Wikipedia article \"Dutch occupation of Tiruchendur\", at revision 1370616054, opens: \"The Murugan temple at Tiruchendur was occupied by the Dutch East India Company between the years 1646 to 1648, during the course of their war with the Portuguese. The local people tried during these 2 years to try and free their temple, with several futile attempts. The Dutch finally vacated the temple on orders from the Naik ruler. However, while vacating the temple, they hacked away and removed the idol of the main deity of the temple, and took it back to Galle, Dutch Ceylon. While taking the idols they were not able to cross the sea due to bad behaviour of sea so they dropped them in sea and left.Later as per instructions he got in his dream, the statues are recovered by Vadamalaiappan Pillai. As a evidence even now there is an area in Palayamkottai called MuruganKurichi(meaning place where Lord Murugan gave the information) and the new idols to be kept in Tiruchendur were left in Palayamkottai Sivan temple is still there.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q25830845, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1646,
+    "end": 1648
+  },
+  "place": "tiruchendur",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}
