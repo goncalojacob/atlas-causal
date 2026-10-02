@@ -23265,7 +23265,15 @@ Gamal Abdel Nasser becoming the president of Egypt in 1956."* Two things are
 wrong with it and either is enough. *"Is marked by"* is a statement about where
 historians draw the period's opening boundary, not about what brought the period
 about — which is what an umbrella's article says instead of an argument, and
-`arab-cold-war` is one of batch 88's umbrellas. And **the causal marker that got
+`arab-cold-war` is one of the four batch 88 imported off the inverse vein as a
+`P361` parent. **It is not gated, and it should not be:** deviation 1500's screen
+keys on the `m42-umbrella` **flag** and `arab-cold-war` carries none. Measured
+here so the next fire that rebuilds the screen does not take the gate for a
+wider thing than it is: **21 active events carry an `*-umbrella` flag and 163 are
+the parent of at least one active event**, so 144 parents are outside the gate —
+correctly, because a battle inside a war is a parent and an edge onto a war is
+exactly what this atlas is for. Ten of the 144 arrived on 1 and 2 October. So the
+refusal here rests on the sentence and not on the record's kind. And **the causal marker that got
 the sentence through the screen governs a third thing**: what *led to* something
 is Nasser's presidency, which this atlas does not hold as an event, so the
 marker is not about either end of the candidate edge at all. **A refusal class
