@@ -3146,6 +3146,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-angolpo",
+      "kind": "event",
+      "locator": "Q96102654"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-annual",
       "kind": "event",
       "locator": "Q1138460"
@@ -3296,9 +3302,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-busan",
+      "kind": "event",
+      "locator": "Q624525"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bussaco",
       "kind": "event",
       "locator": "Q389349"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-byeokjegwan",
+      "kind": "event",
+      "locator": "Q484029"
     },
     {
       "dissent": false,
@@ -3428,6 +3446,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cheongju",
+      "kind": "event",
+      "locator": "Q4870736"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chilcheollyang",
+      "kind": "event",
+      "locator": "Q483088"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chimbo",
       "kind": "event",
       "locator": "Q10858436"
@@ -3443,6 +3473,12 @@
       "id": "battle-of-chotusitz",
       "kind": "event",
       "locator": "Q688504"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chungju",
+      "kind": "event",
+      "locator": "Q486979"
     },
     {
       "dissent": false,
@@ -3509,6 +3545,24 @@
       "id": "battle-of-dachau",
       "kind": "event",
       "locator": "Q17326069"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-dadaejin",
+      "kind": "event",
+      "locator": "Q1047445"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-danghangpo",
+      "kind": "event",
+      "locator": "Q626283"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-dangpo-1592",
+      "kind": "event",
+      "locator": "Q626291"
     },
     {
       "dissent": false,
@@ -3746,9 +3800,27 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-haengju",
+      "kind": "event",
+      "locator": "Q279611"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-hamburger-hill",
       "kind": "event",
       "locator": "Q247395"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-hansan-island",
+      "kind": "event",
+      "locator": "Q487332"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-happo",
+      "kind": "event",
+      "locator": "Q4871190"
     },
     {
       "dissent": false,
@@ -3818,6 +3890,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ichi",
+      "kind": "event",
+      "locator": "Q12612946"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ifoghas",
       "kind": "event",
       "locator": "Q5923961"
@@ -3833,6 +3911,12 @@
       "id": "battle-of-imenas",
       "kind": "event",
       "locator": "Q6619913"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-imjin-river-1592",
+      "kind": "event",
+      "locator": "Q4871272"
     },
     {
       "dissent": false,
@@ -3881,6 +3965,18 @@
       "id": "battle-of-jean-rabel",
       "kind": "event",
       "locator": "Q4871314"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-jeokjinpo",
+      "kind": "event",
+      "locator": "Q626280"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-jiksan",
+      "kind": "event",
+      "locator": "Q4871338"
     },
     {
       "dissent": false,
@@ -4364,6 +4460,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-myeongnyang",
+      "kind": "event",
+      "locator": "Q385677"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-nam-river",
       "kind": "event",
       "locator": "Q2890901"
@@ -4412,9 +4514,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-noryang",
+      "kind": "event",
+      "locator": "Q484271"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-novara-1513",
       "kind": "event",
       "locator": "Q661940"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-okpo",
+      "kind": "event",
+      "locator": "Q484256"
     },
     {
       "dissent": false,
@@ -4616,6 +4730,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-pyongyang-1592",
+      "kind": "event",
+      "locator": "Q21060235"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-quebec-1690",
       "kind": "event",
       "locator": "Q1708064"
@@ -4718,6 +4838,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sacheon-1592",
+      "kind": "event",
+      "locator": "Q482970"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sadras",
       "kind": "event",
       "locator": "Q2601126"
@@ -4781,6 +4907,12 @@
       "id": "battle-of-sangarara",
       "kind": "event",
       "locator": "Q4872293"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sangju-1592",
+      "kind": "event",
+      "locator": "Q497034"
     },
     {
       "dissent": false,
@@ -5471,6 +5603,18 @@
       "id": "battle-of-yaguajay",
       "kind": "event",
       "locator": "Q3636666"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-yonan",
+      "kind": "event",
+      "locator": "Q16177270"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-yongin",
+      "kind": "event",
+      "locator": "Q16190986"
     },
     {
       "dissent": false,
@@ -7058,6 +7202,12 @@
     },
     {
       "dissent": false,
+      "id": "hamgyong-campaign",
+      "kind": "event",
+      "locator": "Q5644543"
+    },
+    {
+      "dissent": false,
       "id": "hat-nipah-and-same-massacres",
       "kind": "event",
       "locator": null
@@ -7145,6 +7295,12 @@
       "id": "ilinden-preobrazhenie-uprising",
       "kind": "event",
       "locator": "Q1145682"
+    },
+    {
+      "dissent": false,
+      "id": "imjin-war",
+      "kind": "event",
+      "locator": "Q576338"
     },
     {
       "dissent": false,
@@ -8546,6 +8702,12 @@
     },
     {
       "dissent": false,
+      "id": "pukkwan-campaign",
+      "kind": "event",
+      "locator": "Q12599044"
+    },
+    {
+      "dissent": false,
       "id": "raid-of-marrakesh-1515",
       "kind": "event",
       "locator": "Q116313968"
@@ -9242,6 +9404,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-busanjin",
+      "kind": "event",
+      "locator": "Q497046"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-cadiz",
       "kind": "event",
       "locator": "Q2633683"
@@ -9326,6 +9494,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-dongnae",
+      "kind": "event",
+      "locator": "Q497348"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-dorsten",
       "kind": "event",
       "locator": "Q815131"
@@ -9407,6 +9581,18 @@
       "id": "siege-of-jaffa",
       "kind": "event",
       "locator": "Q3178783"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-jinju-1592",
+      "kind": "event",
+      "locator": "Q14631695"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-jinju-1593",
+      "kind": "event",
+      "locator": "Q484733"
     },
     {
       "dissent": false,
@@ -9554,6 +9740,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-namwon",
+      "kind": "event",
+      "locator": "Q625131"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-naples-1528",
       "kind": "event",
       "locator": "Q16529030"
@@ -9662,6 +9854,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-pyongyang-1592",
+      "kind": "event",
+      "locator": "Q3420016"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pyongyang-1593",
+      "kind": "event",
+      "locator": "Q14475856"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-qatif-1551",
       "kind": "event",
       "locator": "Q115517267"
@@ -9758,9 +9962,21 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-ulsan",
+      "kind": "event",
+      "locator": "Q490935"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-wolgast-1630",
       "kind": "event",
       "locator": "Q133571169"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-yeongwon",
+      "kind": "event",
+      "locator": "Q7510523"
     },
     {
       "dissent": false,
@@ -10247,6 +10463,18 @@
       "id": "torstenson-war",
       "kind": "event",
       "locator": "Q1419229"
+    },
+    {
+      "dissent": false,
+      "id": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "kind": "event",
+      "locator": "Q122846639"
+    },
+    {
+      "dissent": false,
+      "id": "toyotomi-hideyoshi-s-2nd-korean-campaign",
+      "kind": "event",
+      "locator": "Q20443986"
     },
     {
       "dissent": false,

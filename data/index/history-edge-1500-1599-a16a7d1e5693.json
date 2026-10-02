@@ -110,6 +110,15 @@
         }
       ]
     },
+    "battle-of-chilcheollyang--battle-of-myeongnyang--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-cusco--battle-of-maraycalla--precondition-of": {
       "from": "git",
       "versions": [

@@ -2480,6 +2480,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chilcheollyang--battle-of-myeongnyang--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Myeongnyang\", revision 1370450929, § lead"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cowpens--battle-of-guilford-court-house--caused",
       "kind": "edge",
       "locator": "\"Battle of Cowpens\", revision 1376280446"
@@ -11252,6 +11258,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-angolpo",
+      "kind": "event",
+      "locator": "\"Battle of Angolpo\", revision 1370432065"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-annual",
       "kind": "event",
       "locator": "\"Battle of Annual\", revision 1370483005"
@@ -11402,9 +11414,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-busan",
+      "kind": "event",
+      "locator": "\"Battle of Busan\", revision 1370435634"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-bussaco",
       "kind": "event",
       "locator": "\"Battle of Bussaco\", revision 1370785527"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-byeokjegwan",
+      "kind": "event",
+      "locator": "\"Battle of Byeokjegwan\", revision 1370435685"
     },
     {
       "dissent": false,
@@ -11528,6 +11552,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cheongju",
+      "kind": "event",
+      "locator": "\"Battle of Cheongju\", revision 1370108986"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chilcheollyang",
+      "kind": "event",
+      "locator": "\"Battle of Chilcheollyang\", revision 1370437042"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chosin-reservoir",
       "kind": "event",
       "locator": "\"Battle of Chosin Reservoir\", revision 1370109047"
@@ -11537,6 +11573,12 @@
       "id": "battle-of-chotusitz",
       "kind": "event",
       "locator": "\"Battle of Chotusitz\", revision 1370437178"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chungju",
+      "kind": "event",
+      "locator": "\"Battle of Chungju\", revision 1375451805"
     },
     {
       "dissent": false,
@@ -11603,6 +11645,24 @@
       "id": "battle-of-dachau",
       "kind": "event",
       "locator": "\"Battle of Dachau\", revision 1375566514"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-dadaejin",
+      "kind": "event",
+      "locator": "\"Battle of Dadaejin\", revision 1370109498"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-danghangpo",
+      "kind": "event",
+      "locator": "\"Battle of Danghangpo\", revision 1370438295"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-dangpo-1592",
+      "kind": "event",
+      "locator": "\"Battle of Dangpo (1592)\", revision 1370109546"
     },
     {
       "dissent": false,
@@ -11834,9 +11894,27 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-haengju",
+      "kind": "event",
+      "locator": "\"Battle of Haengju\", revision 1370265139"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-hamburger-hill",
       "kind": "event",
       "locator": "\"Battle of Hamburger Hill\", revision 1370406170"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-hansan-island",
+      "kind": "event",
+      "locator": "\"Battle of Hansan Island\", revision 1376900415"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-happo",
+      "kind": "event",
+      "locator": "\"Battle of Happo\", revision 1370442586"
     },
     {
       "dissent": false,
@@ -11912,6 +11990,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ichi",
+      "kind": "event",
+      "locator": "\"Battle of Ichi\", revision 1370443534"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ifoghas",
       "kind": "event",
       "locator": "\"Battle of Ifoghas\", revision 1370443583"
@@ -11927,6 +12011,12 @@
       "id": "battle-of-imenas",
       "kind": "event",
       "locator": "\"Battle of Imenas\", revision 1370265996"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-imjin-river-1592",
+      "kind": "event",
+      "locator": "\"Battle of Imjin River (1592)\", revision 1371653482"
     },
     {
       "dissent": false,
@@ -11975,6 +12065,18 @@
       "id": "battle-of-jean-rabel",
       "kind": "event",
       "locator": "\"Battle of Jean-Rabel\", revision 1370444142"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-jeokjinpo",
+      "kind": "event",
+      "locator": "\"Battle of Jeokjinpo\", revision 1370444178"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-jiksan",
+      "kind": "event",
+      "locator": "\"Battle of Jiksan\", revision 1370266384"
     },
     {
       "dissent": false,
@@ -12446,6 +12548,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-myeongnyang",
+      "kind": "event",
+      "locator": "\"Battle of Myeongnyang\", revision 1370450929"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-nam-river",
       "kind": "event",
       "locator": "\"Battle of Nam River\", revision 1376271535"
@@ -12494,9 +12602,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-noryang",
+      "kind": "event",
+      "locator": "\"Battle of Noryang\", revision 1370270922"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-novara-1513",
       "kind": "event",
       "locator": "\"Battle of Novara (1513)\", revision 1370270949"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-okpo",
+      "kind": "event",
+      "locator": "\"Battle of Okpo\", revision 1370271150"
     },
     {
       "dissent": false,
@@ -12704,6 +12824,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-pyongyang-1592",
+      "kind": "event",
+      "locator": "\"Battle of Pyongyang (1592)\", revision 1370586834"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-quebec-1690",
       "kind": "event",
       "locator": "\"Battle of Quebec (1690)\", revision 1370586919"
@@ -12812,6 +12938,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sacheon-1592",
+      "kind": "event",
+      "locator": "\"Battle of Sacheon (1592)\", revision 1371749113"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sadras",
       "kind": "event",
       "locator": "\"Battle of Sadras\", revision 1370587942"
@@ -12875,6 +13007,12 @@
       "id": "battle-of-sangarara",
       "kind": "event",
       "locator": "\"Battle of Sangarará\", revision 1375224690"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sangju-1592",
+      "kind": "event",
+      "locator": "\"Battle of Sangju (1592)\", revision 1370588488"
     },
     {
       "dissent": false,
@@ -13577,6 +13715,18 @@
       "id": "battle-of-yaguajay",
       "kind": "event",
       "locator": "\"Battle of Yaguajay\", revision 1371154538"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-yonan",
+      "kind": "event",
+      "locator": "\"Battle of Yonan\", revision 1370277241"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-yongin",
+      "kind": "event",
+      "locator": "\"Battle of Yongin\", revision 1370595876"
     },
     {
       "dissent": false,
@@ -15146,6 +15296,12 @@
     },
     {
       "dissent": false,
+      "id": "hamgyong-campaign",
+      "kind": "event",
+      "locator": "\"Hamgyong campaign\", revision 1370622464"
+    },
+    {
+      "dissent": false,
       "id": "havana-presidential-palace-attack-1957",
       "kind": "event",
       "locator": "\"Havana Presidential Palace attack (1957)\", revision 1361104549"
@@ -15233,6 +15389,12 @@
       "id": "ilinden-preobrazhenie-uprising",
       "kind": "event",
       "locator": "\"Ilinden–Preobrazhenie Uprising\", revision 1370623367"
+    },
+    {
+      "dissent": false,
+      "id": "imjin-war",
+      "kind": "event",
+      "locator": "\"Imjin War\", revision 1377975613"
     },
     {
       "dissent": false,
@@ -16580,6 +16742,12 @@
     },
     {
       "dissent": false,
+      "id": "pukkwan-campaign",
+      "kind": "event",
+      "locator": "\"Pukkwan campaign\", revision 1370705182"
+    },
+    {
+      "dissent": false,
       "id": "raid-of-marrakesh-1515",
       "kind": "event",
       "locator": "\"Raid of Marrakesh (1515)\", revision 1370705532"
@@ -17222,6 +17390,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-busanjin",
+      "kind": "event",
+      "locator": "\"Siege of Busanjin\", revision 1376909397"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-cadiz",
       "kind": "event",
       "locator": "\"Siege of Cádiz\", revision 1370740530"
@@ -17306,6 +17480,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-dongnae",
+      "kind": "event",
+      "locator": "\"Siege of Dongnae\", revision 1370740786"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-dorsten",
       "kind": "event",
       "locator": "\"Siege of Dorsten\", revision 1370740810"
@@ -17381,6 +17561,18 @@
       "id": "siege-of-jaffa",
       "kind": "event",
       "locator": "\"Siege of Jaffa\", revision 1371106198"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-jinju-1592",
+      "kind": "event",
+      "locator": "\"Siege of Jinju (1592)\", revision 1370742157"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-jinju-1593",
+      "kind": "event",
+      "locator": "\"Siege of Jinju (1593)\", revision 1376645524"
     },
     {
       "dissent": false,
@@ -17528,6 +17720,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-namwon",
+      "kind": "event",
+      "locator": "\"Siege of Namwon\", revision 1370743867"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-naples-1528",
       "kind": "event",
       "locator": "\"Siege of Naples (1528)\", revision 1370743875"
@@ -17636,6 +17834,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-pyongyang-1592",
+      "kind": "event",
+      "locator": "\"Siege of Pyongyang (1592)\", revision 1375175893"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pyongyang-1593",
+      "kind": "event",
+      "locator": "\"Siege of Pyongyang (1593)\", revision 1370744614"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-qatif-1551",
       "kind": "event",
       "locator": "\"Siege of Qatif (1551)\", revision 1370744652"
@@ -17732,9 +17942,21 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-ulsan",
+      "kind": "event",
+      "locator": "\"Siege of Ulsan\", revision 1370746161"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-wolgast-1630",
       "kind": "event",
       "locator": "\"Siege of Wolgast (1630)\", revision 1370746457"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-yeongwon",
+      "kind": "event",
+      "locator": "\"Siege of Yeongwon\", revision 1370746486"
     },
     {
       "dissent": false,
@@ -18437,6 +18659,12 @@
       "id": "torstenson-war",
       "kind": "event",
       "locator": "\"Torstenson War\", revision 1373913755"
+    },
+    {
+      "dissent": false,
+      "id": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "kind": "event",
+      "locator": "\"Imjin War\", revision 1377975613"
     },
     {
       "dissent": false,

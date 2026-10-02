@@ -128,6 +128,15 @@
         }
       ]
     },
+    "battle-of-angolpo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-azemmour": {
       "from": "git",
       "versions": [
@@ -152,6 +161,24 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-busan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-byeokjegwan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -217,6 +244,33 @@
         }
       ]
     },
+    "battle-of-cheongju": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-chilcheollyang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-chungju": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-chupas": {
       "from": "git",
       "versions": [
@@ -250,6 +304,33 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-dadaejin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-danghangpo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-dangpo-1592": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -302,6 +383,51 @@
         }
       ]
     },
+    "battle-of-haengju": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-hansan-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-happo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-ichi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-imjin-river-1592": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-inaquito": {
       "from": "git",
       "versions": [
@@ -321,6 +447,24 @@
       ]
     },
     "battle-of-jarte": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-jeokjinpo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-jiksan": {
       "from": "git",
       "versions": [
         {
@@ -495,6 +639,15 @@
         }
       ]
     },
+    "battle-of-myeongnyang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-noain": {
       "from": "git",
       "versions": [
@@ -544,12 +697,30 @@
         }
       ]
     },
+    "battle-of-noryang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-novara-1513": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-okpo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -715,6 +886,15 @@
         }
       ]
     },
+    "battle-of-pyongyang-1592": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-quiapo": {
       "from": "git",
       "versions": [
@@ -751,12 +931,30 @@
         }
       ]
     },
+    "battle-of-sacheon-1592": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "battle-of-saint-mathieu": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-sangju-1592": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -972,6 +1170,24 @@
       ]
     },
     "battle-of-wofla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-yonan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-yongin": {
       "from": "git",
       "versions": [
         {
@@ -1223,6 +1439,15 @@
         }
       ]
     },
+    "hamgyong-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "hereditary-captaincies-of-brazil-1534": {
       "from": "git",
       "versions": [
@@ -1241,6 +1466,15 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "imjin-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -1488,6 +1722,15 @@
         }
       ]
     },
+    "pukkwan-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "raid-of-marrakesh-1515": {
       "from": "git",
       "versions": [
@@ -1543,6 +1786,15 @@
       ]
     },
     "siege-of-bahrain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "siege-of-busanjin": {
       "from": "git",
       "versions": [
         {
@@ -1638,6 +1890,15 @@
         }
       ]
     },
+    "siege-of-dongnae": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "siege-of-florence-1529-1530": {
       "from": "git",
       "versions": [
@@ -1713,6 +1974,24 @@
         }
       ]
     },
+    "siege-of-jinju-1592": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "siege-of-jinju-1593": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "siege-of-johor-1587": {
       "from": "git",
       "versions": [
@@ -1774,6 +2053,15 @@
         }
       ]
     },
+    "siege-of-namwon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "siege-of-naples-1528": {
       "from": "git",
       "versions": [
@@ -1808,6 +2096,24 @@
         }
       ]
     },
+    "siege-of-pyongyang-1592": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "siege-of-pyongyang-1593": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "siege-of-qatif-1551": {
       "from": "git",
       "versions": [
@@ -1823,6 +2129,24 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "siege-of-ulsan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "siege-of-yeongwon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -2029,6 +2353,24 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "toyotomi-hideyoshi-s-1st-korean-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "toyotomi-hideyoshi-s-2nd-korean-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

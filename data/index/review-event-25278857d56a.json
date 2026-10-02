@@ -7837,6 +7837,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-angolpo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Angolpo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -8677,6 +8709,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "battle-of-busan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "imjin-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Busan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "id": "battle-of-bussaco",
       "kind": "event",
@@ -8694,6 +8758,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Bussaco"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-byeokjegwan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Byeokjegwan"
     },
     {
       "authors": [
@@ -9375,6 +9471,71 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-cheongju",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Cheongju"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "battle-of-chilcheollyang",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "imjin-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Chilcheollyang"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-09-25",
@@ -9462,6 +9623,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Chotusitz"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-chungju",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Chungju"
     },
     {
       "authors": [
@@ -9809,6 +10001,101 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Dachau"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-dadaejin",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Dadaejin"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-danghangpo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Danghangpo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-dangpo-1592",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Dangpo (1592)"
     },
     {
       "authors": [
@@ -11077,6 +11364,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-haengju",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Haengju"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -11107,6 +11425,71 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Hamburger Hill"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-hansan-island",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "note": "A7: the item has a P580 and no P582, so the import wrote an open end and rule 24 refused the P361 the item itself asserts. The cited article, revision 1376900415, opens \"took place on 15 August 1592\", which states one day, so the end is 1592. The day stays the item's own 8 July: that and the article's 15 August are one day in two calendars and this run does not choose, so the span-vs-lead warning stands. Closed, the item's P361 files it under the 1st Korean campaign.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Hansan Island"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-happo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Happo"
     },
     {
       "authors": [
@@ -11488,6 +11871,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-ichi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ichi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -11595,6 +12010,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Imenas"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-imjin-river-1592",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Imjin River (1592)"
     },
     {
       "authors": [
@@ -11869,6 +12315,70 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Jean-Rabel"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-jeokjinpo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Jeokjinpo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-jiksan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-2nd-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Jiksan"
     },
     {
       "authors": [
@@ -14529,6 +15039,39 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "battle-of-myeongnyang",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-2nd-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Myeongnyang"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -14800,6 +15343,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "battle-of-noryang",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "imjin-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Noryang"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 4,
       "id": "battle-of-novara-1513",
@@ -14820,6 +15394,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Novara (1513)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-okpo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Okpo"
     },
     {
       "authors": [
@@ -15911,6 +16516,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "battle-of-pyongyang-1592",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Pyongyang (1592)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "battle-of-quebec-1690",
@@ -16458,6 +17094,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "battle-of-sacheon-1592",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Sacheon (1592)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
       "degree": 2,
       "id": "battle-of-sadras",
@@ -16797,6 +17465,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Sangarará"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-sangju-1592",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Sangju (1592)"
     },
     {
       "authors": [
@@ -20615,6 +21315,70 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Yaguajay"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-yonan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Yonan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "battle-of-yongin",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Yongin"
     },
     {
       "authors": [
@@ -30172,6 +30936,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "hamgyong-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Hamgyong campaign"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -30778,6 +31574,35 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Second stabilisation agreement with the IMF"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "imjin-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Imjin War"
     },
     {
       "authors": [
@@ -38910,6 +39735,38 @@
         "wikipedia-en"
       ],
       "created": "2026-10-02",
+      "id": "pukkwan-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Pukkwan campaign"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
       "id": "raid-of-marrakesh-1515",
       "kind": "event",
       "origin": {
@@ -42782,6 +43639,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "siege-of-busanjin",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Busanjin"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 2,
       "id": "siege-of-cadiz",
@@ -43214,6 +44103,37 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Diu (1546)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "siege-of-dongnae",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Dongnae"
     },
     {
       "authors": [
@@ -43668,6 +44588,68 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Jaffa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "siege-of-jinju-1592",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Jinju (1592)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "siege-of-jinju-1593",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Jinju (1593)"
     },
     {
       "authors": [
@@ -44462,6 +45444,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "siege-of-namwon",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-2nd-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Namwon"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "siege-of-naples-1528",
@@ -45042,6 +46055,68 @@
         "wikipedia-en"
       ],
       "created": "2026-10-02",
+      "id": "siege-of-pyongyang-1592",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Pyongyang (1592)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "siege-of-pyongyang-1593",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Pyongyang (1593)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
       "id": "siege-of-qatif-1551",
       "kind": "event",
       "origin": {
@@ -45564,6 +46639,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "id": "siege-of-ulsan",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "imjin-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Ulsan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "siege-of-wolgast-1630",
       "kind": "event",
@@ -45582,6 +46688,38 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Wolgast (1630)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "siege-of-yeongwon",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Yeongwon"
     },
     {
       "authors": [
@@ -48986,6 +50124,68 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "Torstenson War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "id": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "imjin-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Toyotomi Hideyoshi's 1st Korean Campaign"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata"
+      ],
+      "created": "2026-10-02",
+      "id": "toyotomi-hideyoshi-s-2nd-korean-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "imjin-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "article-is-redirect",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Toyotomi Hideyoshi's 2nd Korean Campaign"
     },
     {
       "authors": [
@@ -52750,6 +53950,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-angolpo",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-ap-bac",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -52810,7 +54016,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-busan",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-bussaco",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-byeokjegwan",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -52870,6 +54088,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-cheongju",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-chimbo",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -52883,6 +54107,12 @@
     },
     {
       "id": "battle-of-chotusitz",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-chungju",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -52913,6 +54143,24 @@
     },
     {
       "id": "battle-of-dachau",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-dadaejin",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-danghangpo",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-dangpo-1592",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -53056,7 +54304,25 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-haengju",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-hamburger-hill",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-hansan-island",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-happo",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -53092,6 +54358,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-ichi",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-imjin-river-1592",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-jambi",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -53105,6 +54383,18 @@
     },
     {
       "id": "battle-of-jean-rabel",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-jeokjinpo",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-jiksan",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -53344,6 +54634,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-noryang",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-okpo",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-oued-zadidja",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -53398,6 +54700,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-pyongyang-1592",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-randeniwela",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -53422,6 +54730,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-sacheon-1592",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-sahay",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -53435,6 +54749,12 @@
     },
     {
       "id": "battle-of-saint-raphael",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-sangju-1592",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -53741,6 +55061,18 @@
     },
     {
       "id": "battle-of-yaguajay",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-yonan",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-yongin",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -54148,6 +55480,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "hamgyong-campaign",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "honduras-and-la-negra-farms-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -54161,6 +55499,12 @@
     },
     {
       "id": "iberian-blackout-2025",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "imjin-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -54502,6 +55846,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "pukkwan-campaign",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "raid-of-marrakesh-1515",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -54718,6 +56068,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-busanjin",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-campar",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -54761,6 +56117,12 @@
     },
     {
       "id": "siege-of-diu-1546",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-dongnae",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -54821,6 +56183,18 @@
     },
     {
       "id": "siege-of-jadotville",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-jinju-1592",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-jinju-1593",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -54916,6 +56290,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-namwon",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-oran-1693",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -54947,6 +56327,18 @@
     },
     {
       "id": "siege-of-prague-1744",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-pyongyang-1592",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-pyongyang-1593",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -55006,7 +56398,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-ulsan",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-wolgast-1630",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-yeongwon",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -55118,6 +56522,24 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
+    },
+    {
+      "id": "toyotomi-hideyoshi-s-1st-korean-campaign",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "toyotomi-hideyoshi-s-2nd-korean-campaign",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "toyotomi-hideyoshi-s-2nd-korean-campaign",
+      "kind": "event",
+      "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
+      "rule": "summary-imported"
     },
     {
       "id": "valladolid-debate",

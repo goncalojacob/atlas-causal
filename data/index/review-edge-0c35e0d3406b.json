@@ -5691,6 +5691,34 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "from": "battle-of-chilcheollyang",
+      "id": "battle-of-chilcheollyang--battle-of-myeongnyang--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-myeongnyang",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-30",
       "from": "battle-of-cowpens",
       "id": "battle-of-cowpens--battle-of-guilford-court-house--caused",

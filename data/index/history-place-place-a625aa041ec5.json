@@ -1525,6 +1525,15 @@
         }
       ]
     },
+    "busanjinseong": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "buton": {
       "from": "git",
       "versions": [
@@ -2009,6 +2018,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "cheongju": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -3679,6 +3697,15 @@
         }
       ]
     },
+    "geoje": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "georgia-q230": {
       "from": "git",
       "versions": [
@@ -4099,6 +4126,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "hansando": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -6973,6 +7009,15 @@
         }
       ]
     },
+    "myeongnyang-strait": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "nagapattinam": {
       "from": "git",
       "versions": [
@@ -8968,6 +9013,15 @@
         }
       ]
     },
+    "sacheon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "sahel": {
       "from": "git",
       "versions": [
@@ -9281,6 +9335,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "sangju": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
@@ -10710,6 +10773,15 @@
         }
       ]
     },
+    "tongyeong": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "tonisvorst": {
       "from": "git",
       "versions": [
@@ -11606,6 +11678,15 @@
         }
       ]
     },
+    "wonju": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "wright-patterson-air-force-base": {
       "from": "git",
       "versions": [
@@ -11729,6 +11810,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "yonan-county": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },
