@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "praia",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "place-written-by-hand"
+    ],
+    "note": "Written by hand because no lane polygon reaches Cape Verde: data/geo/regions.json is Natural Earth 110m land and the archipelago is some 570 km off the coast, so the import refused the place for want of a lane rather than for want of a point. The point is Q3751's own P625; the lane is the override CLAUDE.md keeps for somewhere no polygon reaches, and it says africa because that is where the archipelago is."
+  },
+  "wikidata": "Q3751",
+  "sitelinks": {
+    "count": 158,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Praia",
+    "pt": "Praia (Cabo Verde)"
+  },
+  "sources": [],
+  "names": [
+    "Praia"
+  ],
+  "where": {
+    "lon": -23.509155555556,
+    "lat": 14.917719444444,
+    "precision": "city",
+    "label": "Praia"
+  },
+  "region": "africa",
+  "regionNote": "No lane polygon reaches Cape Verde, which is 570 km off the African coast and outside the nearest-lane tolerance; the archipelago is in Africa and the lane says so here rather than the timeline drawing the event in none.",
+  "summary": null
+}

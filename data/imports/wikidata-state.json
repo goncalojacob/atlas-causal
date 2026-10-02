@@ -2040,7 +2040,8 @@
         "Q4677387",
         "Q2713453",
         "Q4677277",
-        "Q22936135"
+        "Q22936135",
+        "Q2732287"
       ]
     }
   },
@@ -2270,6 +2271,10 @@
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     },
     "Q2713453": {
+      "on": "2026-10-02",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q2732287": {
       "on": "2026-10-02",
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
