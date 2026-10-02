@@ -1640,6 +1640,15 @@
         }
       ]
     },
+    "siege-of-jacmel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "siege-of-jaffa": {
       "from": "git",
       "versions": [

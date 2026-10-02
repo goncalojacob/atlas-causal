@@ -3599,6 +3599,15 @@
         }
       ]
     },
+    "gonave-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "goose-green": {
       "from": "git",
       "versions": [
@@ -4386,6 +4395,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "jacmel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         }
       ]
     },

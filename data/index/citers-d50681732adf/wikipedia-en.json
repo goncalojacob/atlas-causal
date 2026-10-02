@@ -10478,6 +10478,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-1-january-1800",
+      "kind": "event",
+      "locator": "\"Action of 1 January 1800\", revision 1370425777"
+    },
+    {
+      "dissent": false,
       "id": "action-of-11-september-1778",
       "kind": "event",
       "locator": "\"Action of 11 September 1778\", revision 1373810731"
@@ -16649,6 +16655,12 @@
       "id": "siege-of-hammershus",
       "kind": "event",
       "locator": "\"Siege of Hammershus\", revision 1370741771"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-jacmel",
+      "kind": "event",
+      "locator": "\"Siege of Jacmel\", revision 1375560888"
     },
     {
       "dissent": false,
