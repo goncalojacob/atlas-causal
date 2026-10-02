@@ -23337,6 +23337,17 @@ wrong before it was right — a backwards range falls back to the single day its
 opening clause names, which is what the one-day pattern read there before the
 mirror existed, so the mirror adds a reading and takes none away.
 
+**The check is green on the head this fire closed with**: run **2359** of
+`validate.yml`, commit `21e956d2`, conclusion **`success`** — `Validate records`,
+`Tests` and every other step. Step 8, *"The index committed here is the one those
+records build"*, reads **`skipped`**, and that is its gate and not a hole: step 7
+asks whether the push touches `data/index/` and `21e956d2` is docs-only. **The
+index was still checked by this run**, through the suite — `tests/index.test.mjs`'s
+*"the repository data/ validates and its index is fresh"* is one of the 1,941 the
+`Tests` step ran, and it is the same `validate --index` this fire ran locally on
+the index commit. Runs 2357 and 2358 were cancelled by the next push, which is
+deviation 1258's chain and costs nothing.
+
 ### Where the run stands after the 2 October curation fire, for the fire that picks it up
 
 **What is open, in the order a fire should weigh it:**

@@ -24884,6 +24884,12 @@ by two runs with no lock and no shared file, and each lane's note of where the
 other stood goes stale within hours. A lane offset — a block each, or odd and
 even — would end it; until then a fire should read `origin/m42b`'s own numbers
 before taking one, as A11(b) already says to read its `data/events/` ids.
+**The check is green on this fire's final head**: run **2359** of `validate.yml`,
+commit `21e956d2`, conclusion **`success`**, every step. Step 8's index comparison
+reads `skipped` because that head is docs-only, which is step 7's gate; the index
+was checked all the same, by the `Tests` step running the suite's own
+*"the repository data/ validates and its index is fresh"*. Runs 2357 and 2358 were
+cancelled by the next push, deviation 1258's chain.
 **Take the next above 1536.**
 M42b started 2026-10-02T01:48:08Z by scheduled
 M42b started 2026-10-02T04:36:39Z by scheduled
