@@ -23,7 +23,8 @@
       "imported-facts",
       "summary-from-lead",
       "filed-from-p361"
-    ]
+    ],
+    "note": "A8 and deviation 1316: the item's P361 names only the War of the Austrian Succession, and the cited article, revision 1375096903, says the siege was fought \"during the War of the Austrian Succession, known as King George's War in the British colonies\". The atlas holds king-george-s-war, 1744-1748, which contains 1745 and is that war's North American theatre, so it is the nearer umbrella. The Austrian Succession is reached through it and dropped as redundant, which is filedUnder's own rule."
   },
   "wikidata": "Q1152894",
   "sitelinks": {
@@ -57,5 +58,5 @@
   "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
   "category": "war",
   "actors": [],
-  "parent": "war-of-the-austrian-succession"
+  "parent": "king-george-s-war"
 }
