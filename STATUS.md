@@ -25273,12 +25273,12 @@ paragraph to `docs/m62-umbrellas.md` or `docs/m67-umbrellas.md` **in the same
 commit as the record**, not only to the pool file; two of this fire's intermediate
 commits were red for exactly that.
 
-**M42b batches 84 and 85 — the Barbary conflicts, the Indian Ocean theatre, and africa past 303,
-2 October.** The 12:36Z fire claimed (the 09:36Z claim was three hours old and `origin/m42b`
+**M42b batches 84, 85 and 86 — the Barbary conflicts, the Indian Ocean theatre, and africa past
+303, 2 October.** The 12:36Z fire claimed (the 09:36Z claim was three hours old and `origin/m42b`
 two hours unpushed, so neither limb of the protocol's claim rule held), merged `origin/m42`
 — four commits, conflicting only in `STATUS.md`, `sources.html`, the title cache and 262
 index files, resolved as the brief says: both sides of `STATUS.md`, the union of the title
-cache, and `data/index/` dropped and rebuilt — and ran **two import batches**.
+cache, and `data/index/` dropped and rebuilt — and ran **three import batches**.
 
 **Batch 84** took `Q132132698` *Barbary–Portuguese conflicts* and four of the six children the
 previous stand named, plus a second umbrella the stand had not asked for: `Q762191`
@@ -25299,9 +25299,27 @@ refusals fired three times and all three were right (Saudi Arabia's 1727 incepti
 1551 event, India's 1947 against 1553, Ethiopia's 1995 against 1542). One edge,
 `battle-of-jarte --reacted-to--> battle-of-wofla`, inside one umbrella rather than across.
 
-**Africa is 313 against A10's 303 and asia is 271** — the africa side of A15(1)'s europe pause
-is lifted and the whole of the rest of it now rests on asia's 32. Main **238**, largest
-component **792**, crossing count **620**. Five candidate edges were refused and each refusal is
+**Batch 86** asked batch 85's cheap query of the whole atlas rather than of one umbrella: every
+one of the **589** held active events dated before 1800, in a single `POST` to WDQS (a `GET` is
+refused — the `VALUES` block is 7.6 KB and the answer is `HTTP 414`). **1,172 rows, 643 items the
+atlas does not hold, 534 of them dated before 1800** — by derived lane, americas **204**, europe
+**189**, asia **11**, africa **7**, and **123** with no lane a crude reading of `P276` can find,
+which the import's own A9 chain would place better. That table is the first measured queue of
+open pre-1800 work this lane has had, and the americas column is wholly inside its partition.
+Of the 18 asia and africa candidates, 17 were put to the import and **16 arrived, all filed,
++0 main**, each pre-checked against its parent's own span so rule 24 refused no filing. One item
+refused outright — `Q20639061` carries **no `P31`**, which is the reason it has sat open in these
+stands for fires. One edge, `aden-revolt --enabled--> capture-of-muscat-1552`, from the near end's
+own lead, and it crosses an umbrella. **And one record would have breached A15(1)**:
+`battle-of-cape-spartel` came out with `region: europe`, because at 110m resolution the europe
+polygon is 0.1102 degrees from Cape Spartel's point and the africa polygon 0.1658 — deviation
+1553's class and `ceuta-under-muslim-rule`'s precedent. Overridden to africa with both distances
+in the note; **europe is 556, exactly what the fire found it at**. A10's per-lane reporting rule
+is what showed it.
+
+**Africa is 319 against A10's 303 and asia is 281** — the africa side of A15(1)'s europe pause
+is lifted and the whole of the rest of it now rests on asia's 22. Main **238** throughout all three
+batches, largest component **792**, crossing count 619 → **621**, active 1,518 → **1,558**. Five candidate edges were refused and each refusal is
 argued in `docs/m42b-pool.md`: one straight A15(5), two where the only causal marker in the
 window governed a different clause, one that would have needed two articles' halves (the Bunker
 Hill case), and one plain chronology. The lead sweep over all eighteen cached leads named **no**
