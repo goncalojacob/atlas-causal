@@ -1653,6 +1653,15 @@
         }
       ]
     },
+    "casablanca": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "casaloldo": {
       "from": "git",
       "versions": [

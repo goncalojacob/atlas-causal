@@ -5534,6 +5534,12 @@
     },
     {
       "dissent": false,
+      "id": "casablanca-conference",
+      "kind": "event",
+      "locator": "Q502093"
+    },
+    {
+      "dissent": false,
       "id": "catatumbo-campaign",
       "kind": "event",
       "locator": "Q66474138"

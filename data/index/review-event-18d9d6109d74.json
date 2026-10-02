@@ -4940,7 +4940,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "allied-invasion-of-sicily",
       "kind": "event",
       "origin": {
@@ -21102,6 +21102,41 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "25 April"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "casablanca-conference",
+      "kind": "event",
+      "names": [
+        "Anfa Conference"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "a9-place",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A9: no `P625` and no `P276`; `P131` is `Q7903`, which this atlas did not hold, so `casablanca` was written from the item at `city` precision and `P17` `Q1028` was never reached. A15(7): that point derives africa. A15(4): `P580`/`P582` are 1943-01-14 and 1943-01-24 and the first sentence agrees. A6: no `P361`, so filed by span and subject under `world-war-ii`; `P2348` names that war outright. No category: `P31` is `Q625994`. A11(a): the four `P710` are people and none is an actor here.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Casablanca Conference"
     },
     {
       "authors": [

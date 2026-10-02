@@ -11432,6 +11432,35 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-02",
+      "from": "casablanca-conference",
+      "id": "casablanca-conference--allied-invasion-of-sicily--caused",
+      "kind": "edge",
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "m42-batch-97"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "allied-invasion-of-sicily",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "from": "chadian-intervention-in-northern-mali",
       "id": "chadian-intervention-in-northern-mali--battle-of-ifoghas--enabled",

@@ -3986,6 +3986,24 @@
     },
     {
       "dissent": false,
+      "id": "casablanca-conference--allied-invasion-of-sicily--caused",
+      "kind": "edge",
+      "locator": "\"Allied invasion of Sicily\", revision 1376074492"
+    },
+    {
+      "dissent": false,
+      "id": "casablanca-conference--allied-invasion-of-sicily--caused",
+      "kind": "edge",
+      "locator": "\"Casablanca Conference\", revision 1369040863"
+    },
+    {
+      "dissent": false,
+      "id": "casablanca-conference--allied-invasion-of-sicily--caused",
+      "kind": "edge",
+      "locator": "\"Casablanca Conference\", revision 1369040863: \"the most important was the Allied invasion of Sicily\""
+    },
+    {
+      "dissent": false,
       "id": "chadian-intervention-in-northern-mali--battle-of-ifoghas--enabled",
       "kind": "edge",
       "locator": "\"Battle of Ifoghas\", revision 1370443583, § Deployment of Franco-Chadian forces in the Kidal region"
@@ -13613,6 +13631,12 @@
       "id": "capture-of-york-factory",
       "kind": "event",
       "locator": "\"Capture of York Factory\", revision 1366221362"
+    },
+    {
+      "dissent": false,
+      "id": "casablanca-conference",
+      "kind": "event",
+      "locator": "\"Casablanca Conference\", revision 1369040863"
     },
     {
       "dissent": false,

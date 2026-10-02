@@ -3578,6 +3578,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "casablanca",
+      "kind": "place",
+      "names": [
+        "Casablanca",
+        "Anfa",
+        "Dar el-Beida"
+      ],
+      "origin": {
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "a9-place"
+        ],
+        "note": "Written for `casablanca-conference`, whose item reaches it at the third step of A9's chain: no `P625`, no `P276`, `P131` `Q7903`. The precision is the item's own class, `P31` `Q515`, which the class table carries at `city`. A15(3): a place carries no summary.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],

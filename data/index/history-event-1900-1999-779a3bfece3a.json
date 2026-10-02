@@ -8853,6 +8853,15 @@
         }
       ]
     },
+    "casablanca-conference": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "cavaco-absolute-majority-1987": {
       "from": "git",
       "versions": [
