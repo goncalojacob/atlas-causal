@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jaragua-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q6159472",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Jaragua massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6159472"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Jaragua massacre\", revision 1365112001"
+    }
+  ],
+  "title": "Jaragua massacre",
+  "summary": "The English Wikipedia article \"Jaragua massacre\", at revision 1365112001, opens: \"The Jaragua massacre of July 1503, was the killing of Indigenous people from the town of Xaragua on the island of Hispaniola. It was ordered by the Spanish governor of Santo Domingo, Nicolás de Ovando, during a Native celebration that was held in the village of Guava near present-day Léogane in the territory of Jaragua of the Cacica Anacaona.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6159472, imported by tools/import/wikidata.mjs. The item's own description reads \"Spanish entrap natives in Hispanolia in July 1503\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1503,
+    "end": 1503,
+    "date": "1503-07"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "indigenous-depopulation-of-the-greater-antilles"
+}

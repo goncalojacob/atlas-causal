@@ -1836,7 +1836,12 @@
     "Q4871118",
     "Q125166578",
     "Q16250240",
-    "Q130485022"
+    "Q130485022",
+    "Q18500027",
+    "Q6159472",
+    "Q122452193",
+    "Q25830845",
+    "Q19019163"
   ],
   "lanes": {
     "Q10303008": "americas",
@@ -6203,6 +6208,18 @@
       "precision": "city",
       "label": "second-level administrative subdivision of Angola",
       "note": "Added in M42b batch 76 to place `battle-of-talandongo`, whose P276 is Q1003771 *Cambambe* and whose only class this is. The precision follows the rows this table already has for the same kind of ground - Q2989398 *commune of Algeria*, Q41067667 *municipality of Tunisia* and Q2555896 *municipality of Colombia* are all `city`."
+    },
+    "Q188686": {
+      "kind": "event",
+      "category": "war",
+      "label": "military occupation",
+      "note": "Added in M42b batch 77 for Q25830845 *Dutch occupation of Tiruchendur*, the one candidate of the Dutch-Portuguese War vein deviation 1528 left live for want of a row here. The category follows the rows this table already has for ground taken by force - Q1361229 *conquest*, Q467011 *invasion* and Q188055 *siege* are all `war`."
+    },
+    "Q753113": {
+      "kind": "place",
+      "precision": "region",
+      "label": "official subdivision of Brazil into subregions",
+      "note": "Added in M42b batch 77 to place `dutch-invasions-of-brazil`, whose P276 is Q1136194 *Northeast Region* and whose only class this is. The precision follows Q82794 *region*, Q36784 *region of France* and Q743074 *region of Mali*, all `region` here."
     }
   },
   "reconcile": true
