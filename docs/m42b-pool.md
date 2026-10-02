@@ -21425,3 +21425,34 @@ The africa 15th century went from nothing to twelve and its 16th from 17 to 38.
    pinned it). Read
    deviation 1484 before taking the next one and run its three greps over **both** pool files and
    `STATUS.md`.
+
+### What this fire left on disk
+
+*Twelve commits: the claim; the merge of `origin/m42` (`origin/m0` was already an ancestor);
+batch 82's records, index and title table; batch 83's the same; the Ceuta lane override and its
+index; the summary punctuation fix and its index; the notes and the stand; the year in four files
+with the M67 A1 section; and `tests/m85.test.mjs`. Both batches ran **records → commit →
+`build-index.mjs` → index commit → `cache-evidence.mjs --fill`**, which is deviation 1540's order,
+and neither needed a second index commit.*
+
+*`validate --index` is clean at **0 errors, 694 warnings**. A15(2) reports **0 revisions that
+should be on disk and are not**, 3,028 of 3,106 citations on disk at the revision cited and 78
+unholdable beside a more-cited revision of the same item.*
+
+*The suite at this fire's head, run the way the check runs it and each pass **alone**: **1,941 pure
+tests, 1,941 passed, 0 failed, 0 skipped** and **313 browser tests across the 40 suites, 313
+passed, 0 failed, 0 skipped**.*
+
+***One thing about how the suite was run, because it cost this fire two false alarms.** The first
+browser pass was started while the pure pass was still running, and it came back **311 of 313**:
+`tests/graph-labels-browser.test.mjs` → *"a node with room round it is named in full"* and
+`tests/lens-browser.test.mjs` → *"reading a narrative draws the walk"* (*"map drew
+`wiriyamu-massacre-1972` off the screen"*). **Both suites pass alone**, 3 of 3 and 13 of 13, and so
+does the whole browser pass once nothing else is running. Deviation 1383's timing fault is what
+that is, and deviation 1386's deterministic pair — the two labels drawn over each other — is
+**green at this head**, for the first time since it was written. The rule the last fire wrote about
+`build-index.mjs` is wider than it says: **run one pass at a time, full stop.***
+
+*The branch's check is **green on this fire's head `3684e82d`** — run **2411**, conclusion success.
+Runs 2406, 2408, 2409 and 2410 on this fire's intermediate heads were **cancelled by the next
+push**, which is the workflow's own concurrency and not a failure.*
