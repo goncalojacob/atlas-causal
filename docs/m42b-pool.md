@@ -21456,3 +21456,141 @@ that is, and deviation 1386's deterministic pair — the two labels drawn over e
 *The branch's check is **green on this fire's head `3684e82d`** — run **2411**, conclusion success.
 Runs 2406, 2408, 2409 and 2410 on this fire's intermediate heads were **cancelled by the next
 push**, which is the workflow's own concurrency and not a failure.*
+
+## Batch 84 — the Barbary–Portuguese conflicts, and africa's 303rd active event
+
+**Move 1 of the 09:36Z stand, and the move that lifts A15(1)'s pause on the africa side.** The
+stand named `Q132132698` *Barbary–Portuguese conflicts* and six `P361` children before 1800, and
+said one umbrella and six children would do it. Four of the six are in this lane's partition and
+two are not, and the batch needed a second umbrella the stand had not asked for.
+
+### The two umbrellas
+
+| item | span | lane | why |
+| --- | --- | --- | --- |
+| `Q132132698` *Barbary–Portuguese conflicts* | `P580` 1617, `P582` 1819 | **africa, overridden by hand** | the third of batch 82's four umbrellas, taken outright by the import |
+| `Q762191` *Ottoman–Portuguese conflicts of 1538–1560* | `P580` 1538, `P582` 1557 → the title's 1560 | **asia, from the seeds table** | not in the stand: `Q116609273` is dated 1553 and rule 24 refuses it the Barbary umbrella, so the umbrella its own `P361` also names had to be held first |
+
+**+2 main, and A6's reason for both.** Each buys children: the Barbary umbrella takes three of
+this batch's four children, and the Ottoman one takes the fourth and **eighteen more in batch 85**
+— the whole Indian Ocean theatre, which is the asia vein the stand's move 2 was looking for. A3's
+teeth are met by the purchase, not waived.
+
+**Deviation 1557 — the lane of a conflict whose locations are two oceans and a continent.** The
+Barbary item has no `P625` and three `P276` values, in this order: `Q97` the Atlantic Ocean,
+`Q4918` the Mediterranean Sea, `Q27381` North Africa. `wikidata.mjs` takes the first of them a
+lane polygon reaches: the Atlantic's centroid at 0N 30W reaches none, the Mediterranean's at 38N
+17E is **inside the europe lane**, and North Africa's at 30.4N 9.7E — the only one of the three
+that names land, and the subject of the article's first sentence — is third and never read. The
+import wrote `region: europe` on a record about the Barbary coast. The seeds `lanes` table cannot
+fix it, because `seededLane` fires only where `lane.how === null` and an ocean centroid is not
+null; so the lane is overridden on the event, which is where `CLAUDE.md` puts the override for an
+event that belongs somewhere other than the point it was derived from. **The reusable part is the
+rule, not the record**: an item whose locations are oceans first and land last gets its lane from
+an ocean. Whether `pointOf` should prefer a location that is land is a `tools/import/wikidata.mjs`
+question and therefore `origin/m42`'s, as move 4 of the 09:36Z stand says of `aliases`.
+
+### What was imported
+
+| | |
+| --- | --- |
+| items put to the import | 6 — the umbrella, the second umbrella, and four of the six children |
+| events created | 6, **+2 main** (both umbrellas) and +4 filed |
+| places created | 1 — `penon-de-velez-de-la-gomera`, lane derived from its own point |
+| leads cached | 7 |
+| refused by this lane's partition | **2** — `Q132175198` *Sinking of the Nossa Senhora da Conceição* (`P276` Lisbon) and `Q135153487` *Action of 15 August 1799* (`P276` Barcelona). Both derive **europe**, and A15(1) pauses Europe before 1900 for this branch until africa **and** asia each hold 303. Africa clears it in this batch; asia is 42 short, so the pause holds and these two stay unimported |
+| `article-is-redirect` (A15(8)) | 1 — `action-of-26-may-1789`, whose sitelink lands on the umbrella's own article, so nothing of it is quoted and the span is the item's own |
+| placeless, lane from the seeds table | 1 — `sack-of-madeira` |
+| classes added to the table | 1 — `Q7539194` *slave raid*, which `Q111208948` carries. Wikidata's own description is *"military attack launched against a settlement with the intent of capturing and enslaving its residents"*, which is the `war` category as `data/categories.json` describes it |
+
+| record | when | lane | filed under |
+| --- | --- | --- | --- |
+| `barbary-portuguese-conflicts` | 1617–1819 | africa (override) | — (main) |
+| `ottoman-portuguese-conflicts-1538-1560` | 1538–1560 | asia (seeded) | — (main) |
+| `battle-of-the-bay-of-velez` | 1553-07-05 | africa, from its own place | `ottoman-portuguese-conflicts-1538-1560` |
+| `sack-of-madeira` | 1617-08 | africa (seeded) | `barbary-portuguese-conflicts` |
+| `action-of-26-may-1789` | 1789-05-26 | africa, from `algiers-q3561` | `barbary-portuguese-conflicts` |
+| `portuguese-expedition-to-tripoli` | 1799-05-11 | africa, from `tripoli` | `barbary-portuguese-conflicts` **and** `french-revolutionary-wars` |
+
+**Madeira is deviation 1346's class and the measure settles it.** No lane polygon reaches Madeira:
+the deriver's tolerance is 3 degrees and the island is **5.98 degrees from the africa polygon and
+7.96 from the europe one**. The atlas has already decided this case once — `praia`, in Cape Verde,
+is 5.69 from africa and carries `region: africa` as an override — so `Q111208948 → africa` in the
+seeds `lanes` table follows the atlas's own precedent and is a measurement rather than a guess.
+
+**The second filing on the Tripoli expedition, under A3/A6/A8.** Its item's `P361` names only the
+Barbary conflicts, but its article's own first sentence — *"a naval operation carried out by the
+Portuguese Navy against Ottoman Tripolitania **during the French Revolutionary Wars**"*, cached at
+revision 1370704835 — puts it inside an umbrella the atlas already holds. `french-revolutionary-wars`
+runs 1792 to 1802, contains 1799, and is not reachable from the Barbary umbrella, so deviation
+1316's reduction leaves both. `parent` is M79's list of two; the flag is `filed-by-hand` and the
+review note carries the sentence.
+
+### One edge, and one refusal
+
+**Written.** `battle-of-the-bay-of-velez --enabled--> battle-of-taza-1553`, cited to *"Battle of
+Taza (1553)"*, revision 1370590714, § Background: *"A fleet of 5 Portuguese caravels transporting
+him was intercepted and defeated by Salah Reis in the Battle of Velez. The Velez was captured by
+Salah Reis. Abou Hassan sought intervention against the Sharif in Fez, having been captured by
+Salah Reis and held in strict captivity in Algiers prior to offering his vassalage to Salah
+Reis."* The same article's § Battle has Salah Reis setting out in September and bringing *"the
+Wattasid sovereign with him"*. What the article states is what the sea battle **delivered** — the
+Wattasid claimant in Algerine hands — and not that it caused the campaign, so the type is
+`enabled`. `probable` under rule 22, and the article's plaintext carries no bibliography a second
+author could come from, which is M72's *where one exists* answered in the negative. **It crosses
+an umbrella**: `ottoman-portuguese-conflicts-1538-1560` to
+`conflicts-between-the-regency-of-algiers-and-morocco`.
+
+**Refused, A15(5).** The *Battle of Velez* article's own closing sentence — *"Despite this offer a
+new border incident occurred, and Salah Reis spent his winter preparing an expedition against
+Morocco, **after which** he defeated the Saadi ruler in the Battle of Taza"* — is the order of
+events and the thing it follows is the winter's preparation, not the battle. The edge is written
+from the far end's article, which states the mechanism, and not from this sentence. This is
+A15(5)'s own instruction working as written: the quote that names the cause wins over the quote
+that names the sequence.
+
+**Nothing from the two umbrella articles.** The chronology sweep read both whole, sentence by
+sentence and in two-sentence windows: the *Barbary–Portuguese conflicts* article names **no** held
+event in 14,318 characters — it is a catalogue of engagements with a section each and no chain
+between them — and the *Ottoman–Portuguese conflicts (1538–1560)* article names eight held events
+in sentences that state no cause, plus one sentence that is exactly the refusal class:
+*"**Following these events**, the Portuguese dispatched considerable reinforcements to Hormuz, and
+the following year defeated an Ottoman fleet at the Battle of the Strait of Hormuz."*
+
+**Deviation 1558 — the sweep reads a "See also" list as a sentence.** Four of those eight names
+(`conquest-of-tunis-1535` and the three sieges of Malacca) are in the article's `== See also ==`
+block, which `stripHeadings` strips the heading of and leaves the body of. A list of article
+titles is not prose and can state no cause, so nothing was written from it; but a sweep that
+counts it is measuring the wrong thing, and a future sweep should cut everything from `See also`
+onwards before it counts. `namesHeldEvents` is pure and shared with `origin/m42`, so the cut
+belongs in the caller, not in `chronology.mjs`.
+
+### The numbers after batch 84
+
+| | before | after 84 |
+| --- | --- | --- |
+| active events | 1,518 | **1,524** |
+| main | 236 | **238** |
+| largest connected component | 792 | **792** |
+| components | 493 | **498** |
+| events with no edge | 391 | **394** |
+| **edges crossing an umbrella** | 619 | **620** |
+| edges inside one umbrella | 617 | **617** |
+| active edges | 1,236 | **1,237** |
+
+| century | europe | africa | asia | americas | all |
+| --- | --- | --- | --- | --- | --- |
+| 15th c. | 4 / 2 | 12 / 1 | — | 7 / 5 | 23 / 8 |
+| 16th c. | 45 / 2 | 39 / 3 | 15 / 3 | 51 / 4 | 150 / 12 |
+| 17th c. | 109 / 3 | 26 / 2 | 22 / 0 | 71 / 6 | 228 / 11 |
+| 18th c. | 62 / 3 | 24 / 0 | 19 / 0 | 85 / 2 | 190 / 5 |
+| 19th c. | 39 / 9 | 29 / 1 | 9 / 6 | 61 / 8 | 138 / 24 |
+| 20th c. | 245 / 60 | 98 / 24 | 166 / 37 | 91 / 30 | 600 / 151 |
+| 21st c. | 52 / 7 | 77 / 7 | 30 / 12 | 36 / 1 | 195 / 27 |
+| **all** | **556 / 86** | **305 / 38** | **261 / 58** | **402 / 56** | **1524 / 238** |
+
+**Africa is 305 against A10's 303.** The africa side of A15(1)'s pause is lifted; the europe
+clause stays paused, because it asks for africa **and** asia and asia is 261. Move 3 of the 09:36Z
+stand — the Iberian Union and the 1580 succession crisis, which are europe-lane records of 1580 —
+is therefore **still blocked**, and that is the stand's own best-value move going unspent for one
+more fire.
