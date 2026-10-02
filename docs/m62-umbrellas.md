@@ -665,3 +665,11 @@ neither reached the resting picture.
 | `soviet-invasion-of-manchuria` | `world-war-ii` | By span and subject, because the item's own `P361` values are `Q220602`, the Soviet–Japanese War, and `Q5865416`, the history of Manchuria, and this atlas holds neither. 8 to 20 August 1945 is inside the umbrella's 1939-09-01 to 1945-09-02. The subject: the article's first sentence makes it the Soviet Union's invasion of the Empire of Japan's puppet states, and its § Summary gives the reason for its timing as the Allies' own agreements — *"the Soviet Union entered World War II's Pacific Theatre within three months of the end of the war in Europe"* — so it is an operation of that war by the parties to it and not a separate quarrel. Not filed under `second-sino-japanese-war`, which the article's categories name and no statement in it does, and not under `pacific-war`, which this atlas still does not hold — `Q184425` is still the candidate `docs/m42-pool.md` names, and the fire that imports it should re-read this filing with batch 92's two. |
 
 **Main is 234 before and 234 after.**
+
+## Batch 94 — the conference the invasion's own article names as its cause
+
+| record | parent | why |
+| --- | --- | --- |
+| `tehran-conference` | `world-war-ii` | By span and subject, because the item carries **no `P361` at all**. 28 November to 1 December 1943 is inside the umbrella's 1939-09-01 to 1945-09-02. The subject: the article's own first sentence makes it *"a strategy meeting of the Allies of World War II"*, and everything it settled — Overlord, the second front, the Soviet entry against Japan — is that war's conduct. `potsdam-conference`, the same shape of record, has been filed under the same umbrella since M62, and `yalta-conference`, the third of the Big Three conferences, is not here: its lane is Europe, so it is M42b's. |
+
+**Main is 234 before and 234 after.**

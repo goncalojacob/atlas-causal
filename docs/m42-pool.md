@@ -24462,25 +24462,130 @@ other is inside `world-war-ii`.
 `node tools/validate.mjs`: **0 errors, 637 warnings** — the same 637 the previous fire
 ended on, so this batch added none.
 
-## Where the run stands after batch 93, for the fire that picks it up
+## Batch 94 — the Tehran Conference, named as the invasion's cause by the invasion's own article, 2 October
+
+**The same method, one hop back.** Batch 93's import made the Soviet invasion of
+Manchuria a record; its article's § Summary says in so many words what put the
+invasion where it is in time — *"the timing of the invasion had been planned well
+in advance and was determined by the timing of the agreements at Tehran and
+Yalta, the long-term buildup of Soviet forces in the Far East since Tehran"*. Two
+conferences are named there. **One of them is this lane's and one is not**: the
+Tehran Conference is in Tehran, which derives the asia lane, and the Yalta
+Conference is in Crimea, which derives Europe and is therefore M42b's, as the
+batch-90 stand already handed over the Algeciras Conference for the same reason.
+
+**The record.** `tehran-conference`, `Q150974`, 71 sitelinks, 28 November to
+1 December 1943, place `tehran`, lane asia, filed under `world-war-ii` by span
+and subject; **no category**. The filing is argued in `docs/m62-umbrellas.md`.
+
+| what the passes asked | what the item and the article said |
+| --- | --- |
+| A9, the place | The item's first `P276` is `Q3616`, which this atlas has held as `tehran` since before this run, and the item's own `P625` is 0.03° from that record's point. The reuse holds on the item **and** on the point, which is the first candidate in nine batches where it did — deviations 1548 and 1557 are both about the case where it does not. |
+| A15(7), the lane | `(51.414, 35.699)` derives asia, and so does `tehran`'s own point. No `region` written. |
+| A15(4), the days | `P580` and `P582` are 1943-11-28 and 1943-12-01; the first sentence states *"from 28 November to 1 December 1943"*. They agree, so there is nothing to widen and no `date` note. |
+| A6 and A8, the filing | The item carries **no `P361`**, so the filing is by span and subject. One parent. |
+| A15(12), the category | **None, and deliberately.** `P31` is `Q625994`, which the class table already carries with no category and a note saying why — *"it is a conference and not a treaty"* — and `Q1072326`, which is **not in the table at all**. A15(12)'s rule is that an item whose class maps to nothing stays uncategorised and is counted, so it is: this is the batch's one uncategorised record, and `Q1072326` is a row for whoever next reads the table rather than a guess made here. Note that `potsdam-conference`, the same shape of record, carries `treaty` from its own `P31`; the two readings are the items' and not this file's. |
+| A11(a), the actors | `P710` is `Q145`, `Q30` and `Q15180` — `united-kingdom`, `united-states-of-america` and `soviet-union`, all three `negotiator`, which is exactly how `potsdam-conference` already reads the same three items. |
+| A15(2), the cache | The lead is on disk at `tools/import/cache/wikipedia/Q150974.en.json`, revision **1374026870**, and the title table has the article. `node tools/cache-evidence.mjs`: **0 revisions that should be on disk and are not**, over all 3,060 `wikipedia-en` citations on active records. |
+| A15(8), the redirect test | The item's English sitelink is *"Tehran Conference"* and `Special:Export` returned a page of that title whose wikitext is not a redirect. No flag. |
+
+**One edge.** `tehran-conference--soviet-invasion-of-manchuria--precondition-of`,
+`probable`, resting on both articles at once: the far one for the causal claim
+(§ Summary, quoted above) and the near one for what the agreement was — *"Stalin
+agreed to enter the war against Japan once Germany was defeated"*. `precondition-of`
+and not `caused`, because what the conference settled was the condition and the
+timing of an invasion nobody there ordered. **Three citations across two
+articles**, which is the first edge either lane has written this fire with more
+than one source behind it.
+
+**A15(5): two refusals, counted.**
+
+1. **`tehran-conference --> eastern-front`, refused, and the reason is the
+   vocabulary rather than the evidence.** The article's lead states a cause
+   plainly — *"the main outcome of the meeting was a British and American
+   commitment to opening a second front against Nazi Germany, thereby forcing it
+   to pull military assets away from the Eastern Front with the Soviets"* — and
+   `verdictFor` lets it through. But `eastern-front` is a record that began in
+   June 1941 and was still running: the claim is about **the course of an event
+   already under way**, and none of the five edge types says that without
+   overstating it. `caused` and `enabled` would both assert that a 1943
+   conference brought about a front that had been fighting for two years.
+   **The honest edge here is to Operation Overlord, which this atlas does not
+   hold** — named below.
+2. **`tehran-conference --> potsdam-conference`, refused.** *"The Big Three would
+   not meet again until 1945, when the Yalta Conference was held… and the Potsdam
+   Conference was held…"* is an order of events.
+
+### The counts, over both of this fire's batches
+
+| | before the fire | after 93 | after 94 |
+| --- | --- | --- | --- |
+| active events | 1,459 | 1,460 | **1,461** |
+| **main events** | **234** | **234** | **234** |
+| active edges | 1,230 | 1,232 | **1,233** |
+| largest component | 792 | 793 | **794** |
+| components | 440 | 440 | 440 |
+| active events with no edge | 341 | 341 | 341 |
+| **edges crossing an umbrella (A15(11))** | **618** | **619** | **619** |
+
+Batch 94's one edge runs between two children of `world-war-ii`, so it crosses no
+umbrella and the figure stands still; batch 93's edge to `korean-war` is the one
+that moved it. Per lane (A10): Africa 250/35 **unchanged over the whole fire**,
+Asia 257/57 → **259/57**, Americas 396/56, Europe 556/86.
+`node tools/validate.mjs`: **0 errors, 637 warnings** throughout.
+
+## Where the run stands after batches 93 and 94, for the fire that picks it up
 
 **Read the stand after batch 92 as well. Its §1 (choose the candidate by its far
 end), §2 (why Asia and not Africa) and §4 (the Cold War umbrella, the owner's
-call) are unchanged and still decide what the next fire can do.** Two things are
-new.
+call) are unchanged and still decide what the next fire can do.** This fire wrote
+two batches, 93 and 94, and the method is batch 92's own: **pick the candidate by
+its far end.** Batch 93's far end was the record batch 92's `disputed` edge
+pointed at and could not reach; batch 94's was batch 93.
 
-**1. The next two candidates are named, measured only by name, and they are
-conferences.** `Q7163` the Yalta Conference and `Q188672` the Tehran Conference —
-ids to be confirmed from the item, which this fire did not fetch. The reason to
-take them is in the batch note above: the article this fire imported states, in
-§ Summary, that the invasion's timing *"was determined by the timing of the
-agreements at Tehran and Yalta"*, which is a cause stated in an article the
-atlas now cites, with a held far end. Both fall inside `world-war-ii`'s span, so
-both file at +0 main; both are `treaty` or near it in the class table, which the
-fire should check rather than assume; and `potsdam-conference`, which the atlas
-already holds, is their obvious third. **A fire that takes them gets edges in
-both directions**: Yalta → this invasion, and the conferences to each other if
-the articles state it.
+**1. The Big Three conferences, correctly identified this time, and one of them
+is not this lane's.** An earlier draft of this stand guessed `Q7163` and
+`Q188672` for Yalta and Tehran and **both guesses were wrong** — `Q7163` is
+*politics* and `Q188672` is *bran*. The ids, resolved through
+`query.wikidata.org/sparql` on the articles' own `schema:about`, are
+**`Q150974` the Tehran Conference** and **`Q161227` the Yalta Conference**. Batch
+94 imported the first. **The second is M42b's**, because Yalta is in Crimea and
+A15(7)'s lane rule derives Europe from the point: a fire on that branch gets a
+record whose far end — `tehran-conference`, `potsdam-conference` and
+`soviet-invasion-of-manchuria` — is already here and in the largest component,
+and the Yalta article states the pledge in its own words (*"Stalin pledged that
+the Soviet Union would enter the Pacific War three months after the defeat of
+Germany"*, and *"Stalin agreed to enter the fight against the Empire of Japan 'in
+two or three months after Germany has surrendered'"*). **Taking it would be the
+first edge either lane has written from one branch's import into the other's.**
+The lesson for any stand: **never write an item id that was not read from the
+item.** One SPARQL request answers it.
+
+**1b. What the Tehran article asks for next, in this lane and not.** Three
+candidates, every one of them named in an article the atlas now cites:
+**Operation Overlord** (the honest target of the second-front claim batch 94
+refused for want of an edge type — but its lane is Europe, so M42b's), the
+**Cairo Conference** (Egypt, so **Africa and this lane's**, held 22–26 November
+1943, immediately before Tehran and named in its first sentence — the first
+African candidate in six batches that may fall inside an umbrella the atlas
+holds, since `world-war-ii`'s span covers it and `scramble-for-africa` does not;
+a fire should check the item rather than trust this sentence), and the
+**Anglo-Soviet invasion of Iran** (asia lane, 1941, inside `world-war-ii`'s
+span, named in Tehran's own first sentence). **The Cairo Conference is the one to
+read first**: if it files under `world-war-ii` at +0 main, it is an Africa-lane
+record that A6 allows, which is the thing the last four stands have said Africa
+does not have.
+
+**1c. `soviet-invasion-of-manchuria` carries no `names`, and that cost this fire
+an edge it could see.** The Yalta article names the invasion only as *Operation
+August Storm*, and the item gives three other names — *Operation August Storm*,
+*Manchurian Operation*, *Manchurian Strategic Offensive Operation*. The record
+carries none of them, because I8's names clause is the **import's** to write and
+batch 93 was a records batch, so `namesHeldEvents` could not see the invasion in
+the Yalta article at all; it was found by reading. **A curation fire's relations
+pass has the same blindness over the whole corpus**, and I8 is the remedy
+already decided: the next one should write the names, with `imported-names`, on
+every draft record whose item gives them.
 
 **2. A15(5)'s third-event guard has no exception for a parent, and that is one
 line for the owner.** `verdictFor` refused *"The invasion of Manchuria was a
@@ -24494,18 +24599,22 @@ through `parentsOf` — and it is a records lane writing tool code, so it is
 written here rather than done. Until then the workaround is this batch's: rest
 the edge on a sentence that states the same cause and names no umbrella.
 
-**3. The network, unchanged from batch 92's stand §1, with one measurement
+**3. The network, unchanged from batch 92's stand §1, with two measurements
 added.** `Special:Export` and the Wikibase REST entity endpoint both answered,
 each on a retry loop of up to thirty tries at seven seconds; the first call of
 this fire got a 429 carrying the same *"created during active wdqs outage"*
-message. Six documents were read this way — the item, the article's export and the
-four items its `P710` and `P361` name — and every one arrived. The REST
+message. Twelve documents were read this way over the two batches — the two items, the
+three article exports, the four items batch 93's `P710` and `P361` name, the two
+ids the wrong guesses cost, and one SPARQL query — and every one arrived. **The
+SPARQL endpoint answered on the first attempt**, which is worth knowing: it is
+the only one of the four paths that did, and it is the one that resolves a title
+to an item. The REST
 summary endpoint was not used at all: the lead was taken from the
 `Special:Export` wikitext, templates and refs stripped, which is what put the
 cache entry on disk at a revision the export itself names.
 
 **4. Deviation numbers: take the next above 1557.** This fire wrote **1557**
-only. **`origin/m42b` stood at 1556 when this fire read it**, which is why 1557
+only, over both batches. **`origin/m42b` stood at 1556 when this fire read it**, which is why 1557
 and not the 1549 the batch-92 stand's arithmetic would have given — read
 `origin/m42b`'s own numbers before taking one, as the previous stands say.
 

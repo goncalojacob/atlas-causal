@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tehran-conference",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "a9-place",
+      "filed-by-span-and-subject"
+    ],
+    "note": "A9: the item’s first `P276` is `Q3616`, held here as the place `tehran`; the item’s own `P625` is 0.03° from it, so the reuse holds either way. A15(4): `P580`/`P582` are 1943-11-28 and 1943-12-01 and the first sentence says the same. A6: no `P361` at all, so filed by span and subject under `world-war-ii`. No category: `P31` is `Q625994`, in the class table with no category on purpose, and `Q1072326`, not in the table and listed rather than guessed. A11(a): `P710` is `Q145`, `Q30`, `Q15180`."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q150974",
+  "wikipedia": {
+    "en": "Tehran Conference",
+    "pt": "Conferência de Teerã"
+  },
+  "sitelinks": {
+    "count": 71,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q150974"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tehran Conference\", revision 1374026870"
+    }
+  ],
+  "title": "Tehran Conference",
+  "summary": "The English Wikipedia article \"Tehran Conference\", at revision 1374026870, opens: \"The Tehran Conference (codenamed Eureka) was a strategy meeting of the Allies of World War II, held between Joseph Stalin, Franklin D. Roosevelt, and Winston Churchill from 28 November to 1 December 1943. It was the first of the Allied World War II conferences involving the “Big Three” (the Soviet Union, the United States, and the United Kingdom) and took place at the Soviet embassy in Tehran more than two years after the Anglo-Soviet invasion of Iran. The meeting occurred shortly after the Cairo Conference was held in Egypt for a discussion between the United States, the United Kingdom, and China from 22 to 26 November 1943.\" That is the article’s account and not yet this atlas’s; nobody has read this record, and review.html is where somebody does. Wikidata item Q150974, whose P580 and P582 are 28 November and 1 December 1943, the range the first sentence states.",
+  "when": {
+    "start": 1943,
+    "end": 1943,
+    "date": "1943-11-28",
+    "endDate": "1943-12-01"
+  },
+  "place": "tehran",
+  "region": null,
+  "regionNote": null,
+  "parent": "world-war-ii",
+  "category": null,
+  "actors": [
+    {
+      "actor": "united-kingdom",
+      "role": "negotiator"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "negotiator"
+    },
+    {
+      "actor": "soviet-union",
+      "role": "negotiator"
+    }
+  ]
+}
