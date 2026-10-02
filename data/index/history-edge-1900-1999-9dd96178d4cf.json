@@ -868,6 +868,15 @@
         }
       ]
     },
+    "algerian-war--bizerte-crisis--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "algerian-war--suez-crisis--precondition-of": {
       "from": "git",
       "versions": [

@@ -4835,7 +4835,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 6,
+      "degree": 7,
       "id": "algerian-war",
       "kind": "event",
       "origin": {
@@ -19365,6 +19365,39 @@
       "revised": "2026-09-21",
       "status": "active",
       "title": "Resolution of Banco Espírito Santo"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "category": "other",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-02",
+      "degree": 1,
+      "id": "bizerte-crisis",
+      "kind": "event",
+      "origin": {
+        "tool": "assistant"
+      },
+      "parent": "decolonisation-of-africa",
+      "review": {
+        "flags": [
+          "summary-from-lead",
+          "a9-place",
+          "filed-by-span-and-subject"
+        ],
+        "note": "A9: no own P625; P276 is Q189546, Bizerte, a city whose point is in the africa lane, written as `bizerte`. A6: P361 is empty, and the article's infobox gives `part_of = the decolonisation of Africa and the spillover of the Algerian War`; the filing is `decolonisation-of-africa`, whose span holds 1961, not `algerian-war`, which the article calls what this spilled over from and whose place is French Algeria — that link is an edge. A15(12): Q180684 carries `other`. Nobody has read this.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bizerte crisis"
     },
     {
       "authors": [

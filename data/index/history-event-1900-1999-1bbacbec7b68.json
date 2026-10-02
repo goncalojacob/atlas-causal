@@ -8119,6 +8119,15 @@
         }
       ]
     },
+    "bizerte-crisis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "black-monday": {
       "from": "git",
       "versions": [

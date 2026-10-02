@@ -5234,6 +5234,12 @@
     },
     {
       "dissent": false,
+      "id": "bizerte-crisis",
+      "kind": "event",
+      "locator": "Q879267"
+    },
+    {
+      "dissent": false,
       "id": "black-monday",
       "kind": "event",
       "locator": "Q868261"

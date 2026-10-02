@@ -1002,6 +1002,15 @@
         }
       ]
     },
+    "bizerte": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
     "black-rocks-at-pungo-andongo": {
       "from": "git",
       "versions": [

@@ -1814,6 +1814,12 @@
     },
     {
       "dissent": false,
+      "id": "algerian-war--bizerte-crisis--precondition-of",
+      "kind": "edge",
+      "locator": "\"Bizerte crisis\", revision 1370604378"
+    },
+    {
+      "dissent": false,
       "id": "algerian-war--suez-crisis--precondition-of",
       "kind": "edge",
       "locator": "\"Algerian War\", revision 1374452636, § After the Philippeville massacre"
@@ -13211,6 +13217,12 @@
       "id": "berlin-conference",
       "kind": "event",
       "locator": "\"Berlin Conference\", revision 1369494326"
+    },
+    {
+      "dissent": false,
+      "id": "bizerte-crisis",
+      "kind": "event",
+      "locator": "\"Bizerte crisis\", revision 1370604378"
     },
     {
       "dissent": false,
