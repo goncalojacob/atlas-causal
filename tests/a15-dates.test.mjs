@@ -95,3 +95,31 @@ test('the fifteenth record is the one the first sentence cannot settle', () => {
   const warsaw = firstSentence('The Warsaw Uprising, sometimes referred to as the August Uprising, or the Battle of Warsaw, was a major World War II operation by the Polish underground resistance to liberate Warsaw from German occupation. The uprising began on 1 August 1944.');
   assert.equal(datesInLead(warsaw), null);
 });
+
+// Deviation 1528. Two of A15(4)'s three shapes have a US-order mirror —
+// `27–28 May 1905` and `November 6–7, 1985` — and the third, the only one that
+// crosses a month, has none. So `on October 1, 1814, to October 2, 1814` fell
+// through to `ONE_DAY_US`, which matched its opening clause and read a two-day
+// battle as one day: `battle-of-rancagua` was reported as contradicting a lead
+// that in fact states the range the record was missing. This is not a fourth
+// guess but the mirror the other two already have.
+test('a range written month-first across two months is read as a range', () => {
+  // The sentence the deviation was found on, verbatim from the cached lead.
+  assert.deepEqual(datesInLead('The Battle of Rancagua, also known in Chile as the Disaster of Rancagua, occurred on October 1, 1814, to October 2, 1814, when the Spanish Army'),
+    { start: '1814-10-01', end: '1814-10-02', clause: 'on October 1, 1814, to October 2, 1814' });
+  // `from` reads the same way, with the year stated once or twice.
+  assert.deepEqual(datesInLead('fought from August 31 to September 19, 1950.'),
+    { start: '1950-08-31', end: '1950-09-19', clause: 'from August 31 to September 19, 1950' });
+  assert.deepEqual(datesInLead('ran from December 31, 1950, to January 7, 1951.'),
+    { start: '1950-12-31', end: '1951-01-07', clause: 'from December 31, 1950, to January 7, 1951' });
+  // And the record it was found on is a gap and not a contradiction, which is
+  // the whole of what the misreading got wrong.
+  const stated = datesInLead('occurred on October 1, 1814, to October 2, 1814, when');
+  assert.equal(datesOutsideLead(stated, { date: '1814-10-02' }), false);
+  assert.equal(narrowerThanLead(stated, { date: '1814-10-02' }), true);
+  // A range written backwards states no range. It falls back to the single day
+  // its opening clause names, which is what `ONE_DAY_US` read there before this
+  // shape existed: the mirror adds a reading and takes none away.
+  assert.deepEqual(datesInLead('on October 2, 1814, to October 1, 1814.'),
+    { start: '1814-10-02', end: '1814-10-02', clause: 'on October 2, 1814' });
+});

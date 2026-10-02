@@ -504,6 +504,11 @@ const said = (from, to) => (from === to ? `${from}` : `${from}–${to}`);
 // `from 8 March to 26 May 1977` — the last being the only one that crosses a
 // month. A single day is read too, because a record dated to a *range* beside
 // a sentence naming one day is the same disagreement the other way round.
+//
+// Each of the three is read in both date orders, which is not a fourth shape
+// but the mirror the first two already had: `from August 31 to September 19,
+// 1950` is `from 8 March to 26 May 1977` with the month first, and reading it
+// as one day is deviation 1528.
 const MONTHS = Object.freeze({
   january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
   july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
@@ -518,6 +523,13 @@ const DAYS_THEN_MONTH = new RegExp(`(?<!\\d)(\\d{1,2})\\s*${DASH}\\s*(\\d{1,2})\
 const MONTH_THEN_DAYS = new RegExp(`(${MONTH_NAMES})\\s+(\\d{1,2})\\s*${DASH}\\s*(\\d{1,2}),?\\s+(1\\d{3}|20\\d{2})(?!\\d)`, 'i');
 // `from 8 March to 26 May 1977`, and `from 1 August 1944 to 2 October 1944`.
 const FROM_DAY_TO_DAY = new RegExp(`\\bfrom\\s+(\\d{1,2})\\s+(${MONTH_NAMES})(?:\\s+(1\\d{3}|20\\d{2}))?\\s+(?:until|to)\\s+(\\d{1,2})\\s+(${MONTH_NAMES})\\s+(1\\d{3}|20\\d{2})(?!\\d)`, 'i');
+// The same shape month-first: `from August 31 to September 19, 1950`, and
+// `on October 1, 1814, to October 2, 1814`. Deviation 1528: the two shapes
+// above each have a US-order mirror and this one had none, so its opening
+// clause fell through to `ONE_DAY_US` and a two-day battle was read as one day.
+// `on` is admitted here because that is how the sentence it was found on opens;
+// the day-first crossing shape has not been seen with it in the corpus.
+const MONTH_TO_MONTH = new RegExp(`\\b(?:from|on)\\s+(${MONTH_NAMES})\\s+(\\d{1,2}),?\\s*(?:(1\\d{3}|20\\d{2}),?)?\\s*(?:until|to)\\s+(${MONTH_NAMES})\\s+(\\d{1,2}),?\\s*(1\\d{3}|20\\d{2})(?!\\d)`, 'i');
 // `on 2 May 1808` and `on November 6, 1985`: one day, stated as one.
 const ONE_DAY = new RegExp(`\\bon\\s+(\\d{1,2})\\s+(${MONTH_NAMES})\\s+(1\\d{3}|20\\d{2})(?!\\d)`, 'i');
 const ONE_DAY_US = new RegExp(`\\bon\\s+(${MONTH_NAMES})\\s+(\\d{1,2}),\\s*(1\\d{3}|20\\d{2})(?!\\d)`, 'i');
@@ -542,6 +554,20 @@ export function datesInLead(sentence) {
       const start = iso(year1, month1, Number(d1));
       const end = iso(year2, month2, Number(d2));
       if (start <= end) return { start, end, clause: crossing[0] };
+    }
+  }
+
+  const crossingUs = MONTH_TO_MONTH.exec(text);
+  if (crossingUs) {
+    const [, m1, d1, y1, m2, d2, y2] = crossingUs;
+    const month1 = monthOf(m1);
+    const month2 = monthOf(m2);
+    const year2 = Number(y2);
+    const year1 = y1 ? Number(y1) : year2;
+    if (realDay(Number(d1), month1) && realDay(Number(d2), month2)) {
+      const start = iso(year1, month1, Number(d1));
+      const end = iso(year2, month2, Number(d2));
+      if (start <= end) return { start, end, clause: crossingUs[0] };
     }
   }
 
