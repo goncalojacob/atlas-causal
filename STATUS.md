@@ -25272,3 +25272,46 @@ line for the owner. **A line for a records lane instead:** a filing owes its
 paragraph to `docs/m62-umbrellas.md` or `docs/m67-umbrellas.md` **in the same
 commit as the record**, not only to the pool file; two of this fire's intermediate
 commits were red for exactly that.
+
+**M42b batches 84 and 85 — the Barbary conflicts, the Indian Ocean theatre, and africa past 303,
+2 October.** The 12:36Z fire claimed (the 09:36Z claim was three hours old and `origin/m42b`
+two hours unpushed, so neither limb of the protocol's claim rule held), merged `origin/m42`
+— four commits, conflicting only in `STATUS.md`, `sources.html`, the title cache and 262
+index files, resolved as the brief says: both sides of `STATUS.md`, the union of the title
+cache, and `data/index/` dropped and rebuilt — and ran **two import batches**.
+
+**Batch 84** took `Q132132698` *Barbary–Portuguese conflicts* and four of the six children the
+previous stand named, plus a second umbrella the stand had not asked for: `Q762191`
+*Ottoman–Portuguese conflicts of 1538–1560*, needed because `Q116609273` is dated 1553 and rule
+24 refuses it the 1617–1819 umbrella. **+2 main, both umbrellas, and A6's reason is that each
+buys children** — the Ottoman one bought eighteen in the next batch. Two children were refused
+by this branch's own partition: `Q132175198` and `Q135153487` both derive the **europe** lane,
+which A15(1) pauses. One edge, `battle-of-the-bay-of-velez --enabled--> battle-of-taza-1553`,
+from the far end's own background section, and it crosses an umbrella.
+
+**Batch 85** pointed batch 82's `P361`-children sweep at an Asian umbrella for the first time —
+move 2 of three successive stands, which had nothing to point at until batch 84 created one —
+and got **25 rows for one SPARQL call**. Eighteen of them, every child inside `Q762191`'s own
+span, imported at **+0 main**: the sieges of Diu, the Aden revolt, Qatif, the Hormuz campaign,
+the Strait of Hormuz, the Gulf of Oman, Bahrain, Punnaikayal, Jeddah, Suakin, El Tor, Suez,
+Jarte, Wofla, Wayna Daga, Bab al-Mandab and Kamaran, with twelve places. A15(6)'s country
+refusals fired three times and all three were right (Saudi Arabia's 1727 inception against a
+1551 event, India's 1947 against 1553, Ethiopia's 1995 against 1542). One edge,
+`battle-of-jarte --reacted-to--> battle-of-wofla`, inside one umbrella rather than across.
+
+**Africa is 313 against A10's 303 and asia is 271** — the africa side of A15(1)'s europe pause
+is lifted and the whole of the rest of it now rests on asia's 32. Main **238**, largest
+component **792**, crossing count **620**. Five candidate edges were refused and each refusal is
+argued in `docs/m42b-pool.md`: one straight A15(5), two where the only causal marker in the
+window governed a different clause, one that would have needed two articles' halves (the Bunker
+Hill case), and one plain chronology. The lead sweep over all eighteen cached leads named **no**
+held event at all, which is the third fire in a row to measure that.
+
+**Three deviations and an amendment to a fourth.** **1558**: an item whose `P276` is two oceans
+and a continent takes its lane from an ocean, because the import reads the first location a lane
+polygon reaches and the Mediterranean's centroid is inside the europe lane. **1559**: the
+chronology sweep reads an article's `See also` list as a sentence. **1560**: a two-sentence
+window passes `statesACause` on a causal marker that belongs to neither end of the proposed edge,
+which is a hole in A15(5) that no tool closes. And **deviation 1484's three greps must run over
+`origin/m42`'s `docs/m42-pool.md` and `STATUS.md` as well as this branch's** — they do not, as
+written, and `origin/m42` already held 1557, which this fire had to renumber mid-flight.
