@@ -508,7 +508,7 @@ const said = (from, to) => (from === to ? `${from}` : `${from}–${to}`);
 // Each of the three is read in both date orders, which is not a fourth shape
 // but the mirror the first two already had: `from August 31 to September 19,
 // 1950` is `from 8 March to 26 May 1977` with the month first, and reading it
-// as one day is deviation 1528.
+// as one day is deviation 1534.
 const MONTHS = Object.freeze({
   january: 1, february: 2, march: 3, april: 4, may: 5, june: 6,
   july: 7, august: 8, september: 9, october: 10, november: 11, december: 12,
@@ -524,7 +524,7 @@ const MONTH_THEN_DAYS = new RegExp(`(${MONTH_NAMES})\\s+(\\d{1,2})\\s*${DASH}\\s
 // `from 8 March to 26 May 1977`, and `from 1 August 1944 to 2 October 1944`.
 const FROM_DAY_TO_DAY = new RegExp(`\\bfrom\\s+(\\d{1,2})\\s+(${MONTH_NAMES})(?:\\s+(1\\d{3}|20\\d{2}))?\\s+(?:until|to)\\s+(\\d{1,2})\\s+(${MONTH_NAMES})\\s+(1\\d{3}|20\\d{2})(?!\\d)`, 'i');
 // The same shape month-first: `from August 31 to September 19, 1950`, and
-// `on October 1, 1814, to October 2, 1814`. Deviation 1528: the two shapes
+// `on October 1, 1814, to October 2, 1814`. Deviation 1534: the two shapes
 // above each have a US-order mirror and this one had none, so its opening
 // clause fell through to `ONE_DAY_US` and a two-day battle was read as one day.
 // `on` is admitted here because that is how the sentence it was found on opens;

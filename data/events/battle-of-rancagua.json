@@ -25,7 +25,7 @@
       "summary-from-lead",
       "a15-days"
     ],
-    "note": "A15(4): the record was dated {\"start\":1814,\"end\":1814,\"date\":\"1814-10-02\"} and the first sentence of the cited article states \"on October 1, 1814, to October 2, 1814\", so the day bounds are 1814-10-01 to 1814-10-02. The years are unchanged. Deviation 1528: that clause is the month-first mirror of the crossing shape and datesInLead read only its opening day, so the range was reported as a contradiction instead of the gap it is."
+    "note": "A15(4): the record was dated {\"start\":1814,\"end\":1814,\"date\":\"1814-10-02\"} and the first sentence of the cited article states \"on October 1, 1814, to October 2, 1814\", so the day bounds are 1814-10-01 to 1814-10-02. The years are unchanged. Deviation 1534: that clause is the month-first mirror of the crossing shape and datesInLead read only its opening day, so the range was reported as a contradiction instead of the gap it is."
   },
   "wikidata": "Q1310755",
   "sitelinks": {

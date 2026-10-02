@@ -96,7 +96,7 @@ test('the fifteenth record is the one the first sentence cannot settle', () => {
   assert.equal(datesInLead(warsaw), null);
 });
 
-// Deviation 1528. Two of A15(4)'s three shapes have a US-order mirror —
+// Deviation 1534. Two of A15(4)'s three shapes have a US-order mirror —
 // `27–28 May 1905` and `November 6–7, 1985` — and the third, the only one that
 // crosses a month, has none. So `on October 1, 1814, to October 2, 1814` fell
 // through to `ONE_DAY_US`, which matched its opening clause and read a two-day
