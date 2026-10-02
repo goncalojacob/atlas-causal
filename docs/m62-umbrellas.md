@@ -681,3 +681,11 @@ neither reached the resting picture.
 | `cairo-conference` | `world-war-ii` | By span and subject; the item carries no `P361`. 22 to 26 November 1943 is inside the umbrella's 1939-09-01 to 1945-09-02. The subject: the article's first sentence calls it *"one of fourteen summit meetings during World War II"* and says it *"outlined the Allied position against the Empire of Japan during World War II"* — the same reading `potsdam-conference` and `tehran-conference` are filed under, and with less to judge than either, because the article names the war twice in one sentence. **Its lane is africa**, which makes it the first record this lane has filed in the trailing lane since batch 91: A6 forbids raising the main count and every other African gap of weight falls outside both African umbrellas, but this one falls inside a third umbrella the atlas has held since M62. |
 
 **Main is 234 before and 234 after.**
+
+## Batch 96 — the theatre itself, and the P361 the atlas does not hold
+
+| record | parent | why |
+| --- | --- | --- |
+| `north-african-campaign` | `world-war-ii` | The item **does** carry a `P361` and it is not an umbrella this atlas holds: `Q696817`, the Mediterranean and Middle East Theatre of World War II. A8 says a filing writes every umbrella that fits, and the only one here is `world-war-ii` — 10 June 1940 to 16 May 1943 is inside its 1939-09-01 to 1945-09-02, and the article's own first words are *"The North African campaign of World War II"*, which is the subject stated by the title. The two African umbrellas do not reach it: `scramble-for-africa` closes in 1914 and `decolonisation-of-africa` opens in 1954. **Its lane is africa**, the second African filing in two batches, and it is the first record in the trailing lane that is itself an umbrella — Operation Torch, the Western Desert campaign, El Alamein and the Tunisian campaign are all its `P527` or its lead's own list, and every one of them would file inside it at +0 main. |
+
+**Main is 234 before and 234 after.**

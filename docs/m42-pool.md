@@ -24798,3 +24798,107 @@ records can break, and there are probably more of them; a pass over the browser
 suite looking for that shape is the cheapest reliability work available, and it is
 test code, so it is a line for the owner rather than a thing either records lane
 should do on its own.
+
+## Batch 96 — the North African campaign, the umbrella the trailing lane was missing, 2 October
+
+**The vein batch 95's stand called the most valuable thing in the file, taken at
+its head.** That stand's §1b says it plainly: `world-war-ii` is a worldwide
+umbrella spanning 1939 to 1945, events inside it fall in every lane, and so an
+African event of that war files at +0 main without waiting on the Cold War
+umbrella the owner has to decide. Batch 95 proved it with a conference. This
+batch takes **the theatre itself** — the campaign the stand named first — which
+is worth more than another conference, because it is an umbrella in its own
+right: Operation Torch, the Western Desert campaign, the Second Battle of El
+Alamein and the Tunisian campaign are its `P527` and its lead's own list, and
+every one of them would file inside it, in the africa lane, at +0 main.
+
+**The record.** `north-african-campaign`, `Q218678`, 50 sitelinks, 10 June 1940
+to 16 May 1943, **no place**, lane **africa**, filed under `world-war-ii` by span
+and subject, category `war`. Argued in `docs/m62-umbrellas.md`.
+
+| what the passes asked | what the item and the article said |
+| --- | --- |
+| A9, A15(6), the place | **Refused, by judgement, and it is the second record in the atlas to carry `place-refused` for this reason.** The item has no `P625`. Its `P276` is **five territories** — `Q284568` Italian Libya, `Q124943` the Kingdom of Egypt, `Q218272` French Algeria, `Q2017684` the French protectorate of Tunisia, `Q907234` the French protectorate in Morocco — and the chain takes the first of them with a point of its own, which is the Kingdom of Egypt, whose point is Cairo. A campaign fought from Morocco to the Nile delta is not Cairo. This is exactly the shape `eastern-front` already carries: *"a front from the Vistula to the Volga is not its point"*, and there as here A15(6)'s written refusal is about `P17` and does not reach a `P276` of five. **A line for the owner**: the gate has now been walked round by hand twice, and the rule it is missing is one sentence — a `P276` of more than one located territory is no more this event's place than a `P17` of more than one country is. |
+| A15(7), the lane | That same first located point, `(31.217, 30.044)`, derives **africa**, and `region: "africa"` is written because there is no place to derive it from. Flag `a15-lane-from-point`. |
+| A15(4), the days | **They disagree, and the record says so rather than resolving it.** `P580`/`P582` are 1940-06-10 and 1943-05-16; the first sentence states *"from 11 June 1940 to 13 May 1943"*. The item's range contains the article's at both ends — a day earlier and three days later — so the item's is carried, the summary's last sentence states both, and the validator's `span-vs-lead-dates` warning stands on purpose. Flag `a15-days`. |
+| A6 and A8, the filing | **The first candidate in six batches whose `P361` exists and is not held here.** It is `Q696817`, the Mediterranean and Middle East Theatre of World War II — a theatre record this atlas has never written. So the filing is by span and subject, under the one umbrella that fits, and the flag is `filed-by-span-and-subject` rather than `filed-from-p361`. |
+| A15(12), the category | `P31` is `Q831663`, military campaign, which the class table has carried at **`war`** since M42 batch 18. Flag `a15-category-from-p31`. |
+| A11(a), the actors | The item's **35** `P710` are the richest participant list this lane has met, and **only two of them are actors here**: `Q408` Australia and `Q16` Canada. The other thirty-three match **place** records — `Q145`, `Q30`, `Q7318`, `Q129286`, `Q209065`, `Q218272`, `Q907234` and the rest — which is the import's own ambiguity and not a gap in the data. The three belligerent states written beside them are the lead's and the body's: `united-kingdom`, `nazi-germany`, `united-states-of-america`. **The Kingdom of Italy, the other principal, is refused**, and for the same reason batch 95 refused the Republic of China: this atlas's `italy` is the 1878–1885 record the CShapes import wrote, and naming it for 1940 would be a wrong claim rather than a partial list. The gap is real and the note says where it is. |
+| A15(2), the cache | On disk at `tools/import/cache/wikipedia/Q218678.en.json`, revision **1376649690**, taken from the `Special:Export` wikitext of that revision with templates and refs stripped; the title table has the article, not a redirect. |
+| A15(8), the redirect test | `Special:Export` returned a page titled *"North African campaign"*, which is the item's own English sitelink. No redirect, no flag. |
+| I8, the names | `names: ["North Africa campaign"]`, the item's own alias — **and it earns its place in the same batch**: the Sicily article spells it that way, without the *n*, and the edge below could not have been found without it. Batch 95's stand §1c asked for exactly this and this is the first record written with it in mind. |
+
+**One edge, and it joins a record that had none.**
+`north-african-campaign--allied-invasion-of-sicily--enabled`, `probable`, on the
+article the far end **already cites, at the revision it already cites**:
+*"With the conclusion of the North Africa campaign in May 1943, the victorious
+Allies had for the first time ejected the Axis powers from a theatre of war. Now
+at Italy's doorstep, the Allied powers—led by the United States and United
+Kingdom—decided to attack Axis forces in Europe via Italy, rather than Western
+Europe, due to the wavering Italian morale, control over Mediterranean sea lanes,
+and the vulnerability of German supply lines along the Italian Peninsula."*
+`enabled` and not `caused`, because the sentence gives the decision four reasons
+of its own and none of them is North Africa; what the campaign's end did was put
+the Allies where Sicily could be attacked from. `verdictFor` returns
+`write: true` — a cause stated, no third held event named inside the quote.
+**`allied-invasion-of-sicily` had degree 0**, so this is the first edge it has
+ever carried and the edgeless count falls from 341 to 340.
+
+**A15(5): two refusals, counted, and both of the shape the stand named.**
+
+1. **`allied-invasion-of-sicily --> eastern-front`, refused.** The Sicily lead:
+   *"Italy's collapse necessitated German troops replacing Italian forces in the
+   country … resulting in one-fifth of the German army being diverted from the
+   Eastern Front, a proportion that would remain until near the end of the war."*
+   A plain causal sentence that none of the five types can say: the Eastern Front
+   had been running for two years and what the invasion changed was how it was
+   fought. **This is the third instance in two fires** — batch 94's
+   `tehran-conference --> eastern-front`, batch 95's
+   `cairo-conference --> second-sino-japanese-war`, and now this one, which is
+   the same pair batch 94 refused reached from a different article.
+2. **`north-african-campaign --> eastern-front`, refused**, § Operation Torch:
+   *"it provided some degree of relief for the Red Army on the Eastern Front by
+   diverting Axis forces to the North African theatre."* Identical shape, and
+   this time the subject is the new record itself.
+
+**`battle-of-britain` is named in the article and no edge was written from it.**
+§ Italian invasion of Egypt: *"Mussolini ordered Marshal Graziani that, the
+moment German forces launched Operation Sea Lion to invade Great Britain, he was
+to attack. After German defeat in the Battle of Britain, the invasion never took
+place."* The sentence is about Sea Lion, which this atlas does not hold, and the
+only thing it says about Egypt is that Graziani attacked anyway — an order of
+events with the cause attached to a third thing. Refused under A15(5), and
+`namesHeldEvents` over the whole article body found exactly three held events:
+`world-war-ii` (the parent, barred by A14's C8 rule), `eastern-front` and
+`battle-of-britain`.
+
+### The counts
+
+| | before | after batch 96 |
+| --- | --- | --- |
+| active events | 1,462 | **1,463** |
+| **main events** | **234** | **234** |
+| active edges | 1,234 | **1,235** |
+| largest component | 795 | **795** |
+| components | 440 | 440 |
+| active events with no edge | 341 | **340** |
+| **edges crossing an umbrella (A15(11))** | **619** | **619** |
+
+Per lane (A10): **Africa 251/35 → 252/35**, Asia 259/57, Americas 396/56, Europe
+556/86. Africa trails Asia by seven.
+
+**The largest component did not move, and the note says why rather than hiding
+it.** `allied-invasion-of-sicily` was an island of one: the edge joins the new
+record to it and makes a component of two, which is a connection to *what exists*
+— A15(1)'s own standard for a batch that walks an umbrella's children — but not a
+connection to the 795. The two refusals above are why: both sentences that would
+have reached the big component say a running war was fought differently, and no
+edge type says that. **The component this pair sits in grows the moment either
+end gets an edge the vocabulary can carry**, and the stand below names the three
+candidates that would do it.
+
+The edge crosses no umbrella: both ends are children of `world-war-ii`, so the
+A15(11) count is unchanged at 619 while the inside-one count rises from 615 to
+616. `node tools/validate.mjs`: **0 errors, 637 warnings** — the new
+`span-vs-lead-dates` on this record is matched by a `degree-zero` leaving as
+Sicily stops being isolated.

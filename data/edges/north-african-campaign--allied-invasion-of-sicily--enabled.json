@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "north-african-campaign--allied-invasion-of-sicily--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-96"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Allied invasion of Sicily\", revision 1376074492"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Allied invasion of Sicily\", revision 1376074492: \"With the conclusion of the North Africa campaign in May 1943 … the Allied powers … decided to attack Axis forces in Europe via Italy\""
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"North African campaign\", revision 1376649690"
+    }
+  ],
+  "from": "north-african-campaign",
+  "to": "allied-invasion-of-sicily",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The quote is from the article the record at the far end already cites, at the revision it cites: “Allied invasion of Sicily”, revision 1376074492, § Background — “With the conclusion of the North Africa campaign in May 1943, the victorious Allies had for the first time ejected the Axis powers from a theatre of war. Now at Italy’s doorstep, the Allied powers—led by the United States and United Kingdom—decided to attack Axis forces in Europe via Italy, rather than Western Europe, due to the wavering Italian morale, control over Mediterranean sea lanes, and the vulnerability of German supply lines along the Italian Peninsula.” `enabled` and not `caused`: the sentence says the campaign’s end put the Allies where Sicily could be attacked from and left them free to attack it, and the decision to go by way of Italy is given its own four reasons, none of which is North Africa. `probable`, not `consensus`: A2 allows `consensus` only through a work Wikipedia cites, and rule 22 would refuse it on a Wikipedia citation anyway. A15(5): the quote states a cause rather than an order of events, and `verdictFor` names no third event this atlas holds inside it.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "north-african-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "place-refused",
+      "a15-lane-from-point",
+      "a15-days",
+      "a15-category-from-p31",
+      "participants-from-p710",
+      "filed-by-span-and-subject"
+    ],
+    "note": "A9, A15(6): no place. No `P625`; `P276` is five territories and the first with a point is the Kingdom of Egypt, whose point is Cairo — a campaign from Morocco to the Nile delta is not Cairo, the judgement `eastern-front` carries. A15(7): the lane is that point, africa. A15(4): `P580`/`P582` are 1940-06-10 and 1943-05-16 and contain the lead's own days. A6, A8: `P361` `Q696817` is not held, so filed by span and subject. A11(a): of 35 `P710` only two are actors here. The pool note has the rest."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q218678",
+  "wikipedia": {
+    "en": "North African campaign"
+  },
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q218678"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"North African campaign\", revision 1376649690"
+    }
+  ],
+  "title": "North African campaign",
+  "names": [
+    "North Africa campaign"
+  ],
+  "summary": "The English Wikipedia article \"North African campaign\", at revision 1376649690, opens: \"The North African campaign of World War II took place in North Africa from 11 June 1940 to 13 May 1943, fought between the Allies and the Axis powers. It included campaigns in the Libyan and Egyptian deserts (Western Desert campaign, Desert War), in Morocco and Algeria (Operation Torch), and in Tunisia (Tunisia campaign). The Allied war effort was dominated by the British Commonwealth and exiles from German-occupied Europe. The United States entered the war in December 1941 and began direct military assistance in North Africa on 11 May 1942.\" That is the article’s account and not yet this atlas’s; nobody has read this record, and review.html is where somebody does. Wikidata item Q218678, whose P580 and P582 are 10 June 1940 and 16 May 1943, a day earlier and three days later than the range the first sentence states.",
+  "when": {
+    "start": 1940,
+    "end": 1943,
+    "date": "1940-06-10",
+    "endDate": "1943-05-16"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": null,
+  "parent": "world-war-ii",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    },
+    {
+      "actor": "nazi-germany",
+      "role": "belligerent"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "belligerent"
+    },
+    {
+      "actor": "australia",
+      "role": "belligerent"
+    },
+    {
+      "actor": "canada",
+      "role": "belligerent"
+    }
+  ]
+}
