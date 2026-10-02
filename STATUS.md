@@ -24961,4 +24961,31 @@ re-derives them — this fire's derivation gives Europe 607 where the batch-88
 stand gives 556 on the same corpus plus one event, while the main counts agree
 exactly (Africa 32, Asia 57). A lane-count command, the way `tools/m53-retake.mjs`
 retakes its own row, is the fix, and whether a records lane may write one is the
-owner's call. Deviations 1541, 1542, 1543; `origin/m42b` stood at 1540.
+owner's call. **Two more measurements, both negative and both worth the fire.** The refusals
+above all say *the effect is not a record here*, which suggests a cluster of
+missing mid-level African events whose import would unlock the children's edges.
+This fire tested that: **165** of the 201 candidate articles read, every
+**unheld** event-shaped link target inside a causal sentence tallied, and the
+answer is **23 distinct targets, 22 of them appearing once**, scattered over four
+continents. **There is no hub**; these articles barely argue about any event,
+held or not, and with batch 88's reading of the umbrellas **both ends of this
+vein have now been read and neither argues.** And **deviation 1544**, which the
+screen found by accident and is worth more than the screen was: "Carnation
+Revolution" came back as *unheld*, because `carnation-revolution` is a **merged
+tombstone carrying the en title** and `carnation-revolution-1974`, the active
+record it was merged into, carries none. Over the corpus, **17 active events have
+no `wikipedia.en` while a merged tombstone naming them in `supersededBy` does** —
+eight of them Portuguese elections — and **154 active events carry no
+`wikipedia.en` at all**, 132 no `wikidata`. A merge moved the identity to the
+stone instead of the survivor. **Not fixed here, deliberately:** identity fields
+are the import's to write and never a run's by hand, so the 17 are a line for the
+owner and a pass for a curation fire with a network. It also means every screen in
+the pool file that matched on a held article title was reading a corpus 154
+records short, this fire's two included. **Two real test failures, both this
+fire's own and both caught by suites that already existed** (deviation 711's rule
+earning its keep): `tests/bundle.test.mjs` holds a record to its own
+byte-identical save and a one-element `parent` list is not the normal form, and
+`tests/m42-filing.test.mjs` holds every filing to a paragraph that names the
+record in backticks — the pool note named it only inside an edge id. Both fixed
+in a commit of their own and both suites green after.
+Deviations 1541, 1542, 1543, 1544; `origin/m42b` stood at 1540.

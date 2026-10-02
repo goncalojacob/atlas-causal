@@ -23630,6 +23630,39 @@ it on reading articles, which is the only thing that writes an edge.
   event" and it means nothing), and a candidate whose article argues about
   another event usually argues about one the atlas *does not hold*, which is the
   same wall from the other side.
+- **And the hypothesis behind the next obvious idea was tested and is false.**
+  The commonest refusal above is *the effect is not a record here*, which
+  suggests a cluster of missing mid-level African events whose import would
+  unlock the children's edges. So this fire read **165** of the 201 candidate
+  articles and tallied every **unheld** event-shaped link target appearing
+  inside a causal sentence. The answer is **23 distinct targets, 22 of them
+  appearing exactly once** (the only repeat is "Battle of Alexandria (1801)",
+  twice), and the list is scattered across four continents — Siege of Tsingtao,
+  the North African campaign, the 1941 Iraqi coup, Operation Compass, the
+  Bicesse Accords. **There is no hub.** These articles do not argue about events
+  the atlas is missing; they barely argue about events at all. A battle's
+  article is a narration with an order of battle, and the arguing is done in the
+  umbrella's article, which batch 88 measured and found to be a survey. **Both
+  ends of this vein have now been read and neither argues.** That is the lane's
+  central problem stated as a measurement rather than as a complaint, and the
+  next idea for Africa should not be another screen over these same articles.
+- **Deviation 1544, found by that screen and worth more than the screen was.**
+  The screen's held-set is built from the `wikipedia.en` of *active* events, and
+  "Carnation Revolution" came back as *unheld* — because `carnation-revolution`
+  is a **merged tombstone that carries the en title**, and
+  `carnation-revolution-1974`, the active record it was merged into, **carries
+  none**. Measured over the corpus: **17 active events have no `wikipedia.en`
+  while a merged tombstone whose `supersededBy` names them does**, eight of them
+  Portuguese elections (`1976-portuguese-legislative-election` →
+  `legislative-election-1976`, and so on). A merge moved the identity to the
+  stone instead of to the survivor. **154 active events carry no `wikipedia.en`
+  at all** and 132 carry no `wikidata`. **Not fixed here, deliberately**:
+  identity fields are the import's to write and never a run's by hand
+  (`tools/import/identity.mjs`), so the 17 are a line for the owner and a
+  candidate pass for a curation fire with a network — fill a gap, never change a
+  value, exactly as the rule already says. It also means **every screen in this
+  file that matched on a held article title has been reading a corpus 154
+  records short**, this fire's two included.
 - **The structured-causal vein is measured and closed. Do not measure it
   again** (its section above). 359 claims, 68 with both ends held, 53 already
   edges, 0 new. It remains useful only as a pointer at pairs worth reading.
@@ -23657,8 +23690,8 @@ it on reading articles, which is the only thing that writes an edge.
   measurable, already-targeted work anywhere in this file.
 - **A13's body half of the 2 October curation fire's own 64 records is still
   unread** and still wants a network.
-- **Deviation numbers: take the next above 1543.** This fire wrote 1541, 1542
-  and 1543. **`origin/m42b` stood at 1540** when this fire read it, which is why
+- **Deviation numbers: take the next above 1544.** This fire wrote 1541, 1542,
+  1543 and 1544. **`origin/m42b` stood at 1540** when this fire read it, which is why
   this fire started at 1541 and not at 1537. The collision rule of the previous
   stand holds and is unchanged: read `origin/m42b`'s own numbers before taking
   one, because no stand here can know them. The lane-offset fix is still the
