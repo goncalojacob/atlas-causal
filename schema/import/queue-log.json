@@ -78,16 +78,16 @@
               "additionalProperties": false,
               "properties": {
                 "edge": {
-                  "description": "Which of the item's edges, by index into its own `edges` list. Absent or null where the refusal is not about an edge — a parent that could not be filed is the one such case.",
+                  "description": "Which of the item's edges, by index into its own `edges` list. Absent or null where the refusal is not about an edge — a parent that could not be filed, or a record whose lead could not be read (`summary-missing`).",
                   "oneOf": [
                     { "type": "null" },
                     { "type": "integer", "minimum": 0 }
                   ]
                 },
                 "reason": {
-                  "description": "The code, from a closed list: `quote-not-found` (the revision's text does not carry the sentence), `chronology` (A15(5): the sentence states an order and no cause), `parent-to-child` (an edge between a record and one of its own umbrellas, A14), `type` (not one of the five), `endpoint-missing` (an end that is not an active event of this atlas), `confidence` (a `consensus` edge resting on Wikipedia alone, or on one source: rules 9 and 22), `parent` (an umbrella that is not an active event, or whose span does not contain the event's start: rule 24 and A6), `arrow-of-time` (a cause that starts after its effect: rule 4), `already-held` (the edge is already a record, and a writer never rewrites one).",
+                  "description": "The code, from a closed list: `quote-not-found` (the revision's text does not carry the sentence), `chronology` (A15(5): the sentence states an order and no cause), `parent-to-child` (an edge between a record and one of its own umbrellas, A14), `type` (not one of the five), `endpoint-missing` (an end that is not an active event of this atlas), `confidence` (a `consensus` edge resting on Wikipedia alone, or on one source: rules 9 and 22), `parent` (an umbrella that is not an active event, or whose span does not contain the event's start: rule 24 and A6), `arrow-of-time` (a cause that starts after its effect: rule 4), `already-held` (the edge is already a record, and a writer never rewrites one), `summary-missing` (the import could not read the lead and wrote its placeholder summary, so the record was taken back off disk: rules card 2).",
                   "type": "string",
-                  "enum": ["quote-not-found", "chronology", "parent-to-child", "type", "endpoint-missing", "confidence", "parent", "arrow-of-time", "already-held"]
+                  "enum": ["quote-not-found", "chronology", "parent-to-child", "type", "endpoint-missing", "confidence", "parent", "arrow-of-time", "already-held", "summary-missing"]
                 },
                 "detail": {
                   "description": "What the writer found, in one line, so the planner does not have to guess which of its own decisions was wrong.",

@@ -334,6 +334,18 @@ async function applyItem(item, {
     id: item.id, writer, fired, status, written, refusals, ...(note ? { note } : {}),
   });
   const subject = subjectOf(item);
+  // What an imported item wrote, taken back off disk: the event and the place
+  // the import created for it. Used where the item turns out not to earn the
+  // record after all.
+  let record = null;
+  const takeBack = async () => {
+    await rm(path.join(dataDir, 'events', `${record.id}.json`), { force: true });
+    if (written.place) await rm(path.join(dataDir, 'places', `${written.place}.json`), { force: true });
+    corpus.byId.delete(record.id);
+    corpus.records = corpus.records.filter((r) => r.id !== record.id && r.id !== written.place);
+    written.event = null;
+    written.place = null;
+  };
 
   // 1. Already here, on this branch or the other. Said as a skip rather than
   //    dropped before the run, so the planner learns it and stops re-queueing.
@@ -409,7 +421,7 @@ async function applyItem(item, {
   // 3. Import the item, one item and one batch. An `existing` item imports
   //    nothing: the record is already here and the writer may not touch its
   //    summary, its dates or its place.
-  let record = isImport(item) ? null : corpus.byId.get(item.existing);
+  record = isImport(item) ? null : corpus.byId.get(item.existing);
   if (isImport(item)) {
     const seedsFile = path.join(dataDir, SEEDS_FILE);
     const seeds = await readSeeds(dataDir);
@@ -438,6 +450,16 @@ async function applyItem(item, {
     record = await readJson(path.join(dataDir, 'events', `${made.id}.json`));
     corpus.byId.set(record.id, record);
     corpus.records.push(record);
+    // Review of 12 October, finding 2. `runImportMode` swallows a lead it could
+    // not fetch and writes the placeholder summary, which rules card 2 says a
+    // record never carries. A redirect is the one record with no quote on
+    // purpose; anything else with `summary: false` is taken back off disk.
+    const redirected = (report.redirected ?? []).some((r) => r.qid === item.qid);
+    if (made.summary === false && !redirected) {
+      await takeBack();
+      refusals.push({ edge: null, reason: 'summary-missing', detail: `the lead of ${item.qid} could not be read, so the record would carry the import's placeholder summary` });
+      return entry('refused', `${item.qid}: no lead, so the import wrote its placeholder summary; the record and its place are off disk again`);
+    }
   } else {
     written.event = record.id;
   }
@@ -496,12 +518,7 @@ async function applyItem(item, {
   // nothing. A record that earns no edge is not imported at all (rules card
   // 7), so what this item wrote is taken back off disk.
   if (written.edges.length === 0 && isImport(item)) {
-    await rm(path.join(dataDir, 'events', `${record.id}.json`), { force: true });
-    if (written.place) await rm(path.join(dataDir, 'places', `${written.place}.json`), { force: true });
-    corpus.byId.delete(record.id);
-    corpus.records = corpus.records.filter((r) => r.id !== record.id && r.id !== written.place);
-    written.event = null;
-    written.place = null;
+    await takeBack();
     return entry('refused', 'every edge fell at the last fence, so the record it would have earned is off disk again');
   }
   return entry(refusals.length ? 'partial' : 'written');

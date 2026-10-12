@@ -55,12 +55,17 @@ export const STATUSES = Object.freeze(['written', 'partial', 'refused', 'skipped
 //   `already-held`  rule 2, and CLAUDE.md's "an import never rewrites a
 //                   record whose review.status is reviewed": the edge is here
 //
+// and one more from the review of 12 October:
+//
+//   `summary-missing` rules card 2: the import could not read the lead and
+//                   wrote its placeholder summary, so the record is taken back
+//
 // Rule 5's cycle is **not** here and is left to the validator: a new record's
 // one new edge cannot close a loop, and an item that changes a record cannot
 // close one without the planner having asked for it in as many words.
 export const REFUSALS = Object.freeze([
   'quote-not-found', 'chronology', 'parent-to-child', 'type', 'endpoint-missing',
-  'confidence', 'parent', 'arrow-of-time', 'already-held',
+  'confidence', 'parent', 'arrow-of-time', 'already-held', 'summary-missing',
 ]);
 
 // Wikipedia is not scholarship (rule 22). The list is rules.js's own, repeated

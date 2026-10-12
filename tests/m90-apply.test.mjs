@@ -324,6 +324,40 @@ test('an item the atlas already holds is skipped, on this branch and on the othe
   await rm(bed.dir, { recursive: true, force: true });
 });
 
+test('an item whose lead could not be read is refused summary-missing, and nothing of it stays on disk', async () => {
+  const bed = await scratch();
+  // The stub with the campaign's lead taken away: the import swallows a lead
+  // it cannot fetch and writes the placeholder summary, which rules card 2
+  // says a record never carries.
+  const stub = path.join(bed.dir, 'stub');
+  await cp(STUB, stub, { recursive: true });
+  await rm(path.join(stub, 'summary', 'Fixture campaign Z.json'));
+  const before = {
+    events: (await readdir(path.join(bed.data, 'events'))).sort(),
+    places: (await readdir(path.join(bed.data, 'places'))).sort(),
+  };
+  await writeFile(bed.queue, `${JSON.stringify({ ...emptyQueue(), items: [item({ parents: ['fixture-event-g'] })] }, null, 2)}\n`, 'utf8');
+  const code = await main([
+    '--queue', bed.queue, '--writer', 'A', '--data', bed.data,
+    '--cache', bed.cache, '--fetcher', `stub:${stub}`,
+  ]);
+  assert.equal(code, EXIT.ok);
+  const log = await readJson(path.join(bed.data, 'imports', 'queue-log.json'));
+  const [entry] = log.entries;
+  assert.equal(entry.status, 'refused');
+  assert.deepEqual(entry.refusals.map((r) => r.reason), ['summary-missing']);
+  assert.match(entry.note, /placeholder/);
+  assert.equal(entry.written.event, null);
+  assert.equal(entry.written.place, null);
+  assert.deepEqual(entry.written.edges, []);
+  assert.deepEqual((await readdir(path.join(bed.data, 'events'))).sort(), before.events);
+  assert.deepEqual((await readdir(path.join(bed.data, 'places'))).sort(), before.places);
+  assert.ok(!(await readdir(path.join(bed.data, 'edges'))).some((name) => name.includes(EVENT)));
+  // The log it wrote is one the schema and the log's own checks accept.
+  assert.equal(await main(['--check', path.join(bed.data, 'imports', 'queue-log.json')]), EXIT.ok);
+  await rm(bed.dir, { recursive: true, force: true });
+});
+
 // --- the item that changes a record already here ---------------------------
 
 test('an item with no qid files a parent onto a record the atlas holds, keeping the ones it has', async () => {
