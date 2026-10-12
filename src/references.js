@@ -174,6 +174,29 @@ export const IMPORT_REFERENCES = Object.freeze({
   'import-places': Object.freeze([
     Object.freeze({ at: Object.freeze(['entries', VALUES, 'place']), to: 'place' }),
   ]),
+  // M90's queue. Every record id in it is a reference a writer will resolve
+  // against the corpus hours after the planner wrote it, so a rename between
+  // the two has to carry: an item whose parent or whose edge end was renamed
+  // would come back refused for a record that is there under another name.
+  // `edges/from` and `edges/to` may hold the item's own Wikidata id instead of
+  // a record id, which no rename ever matches — the two shapes cannot collide.
+  'import-queue': Object.freeze([
+    Object.freeze({ at: Object.freeze(['items', ITEM, 'existing']), to: 'event' }),
+    Object.freeze({ at: Object.freeze(['items', ITEM, 'parents', ITEM]), to: 'event' }),
+    Object.freeze({ at: Object.freeze(['items', ITEM, 'edges', ITEM, 'from']), to: 'event' }),
+    Object.freeze({ at: Object.freeze(['items', ITEM, 'edges', ITEM, 'to']), to: 'event' }),
+    Object.freeze({ at: Object.freeze(['items', ITEM, 'edges', ITEM, 'sources', ITEM, 'source']), to: 'source' }),
+  ]),
+  // And the log. What a writer wrote is named here by the ids it wrote, and a
+  // rename carries an edge's derived id with it, so these move too — the
+  // planner reads the log to know which items are done, and a reader of it
+  // months later should still find the records it names. The item ids
+  // themselves are nobody's record and no rename touches them.
+  'import-queue-log': Object.freeze([
+    Object.freeze({ at: Object.freeze(['entries', ITEM, 'written', 'event']), to: 'event' }),
+    Object.freeze({ at: Object.freeze(['entries', ITEM, 'written', 'place']), to: 'place' }),
+    Object.freeze({ at: Object.freeze(['entries', ITEM, 'written', 'edges', ITEM]), to: 'edge' }),
+  ]),
 });
 
 // ─── The walk ───────────────────────────────────────────────────────────────

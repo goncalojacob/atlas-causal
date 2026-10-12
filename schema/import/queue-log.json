@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "import/queue-log.json",
+  "title": "Import queue log",
+  "description": "What a writer did with the queue, on the writer's own branch. A writer never edits the queue: it appends here, and the planner reads both branches' logs to know what is done. An item whose id a log holds is finished, however it finished. Like the queue it is not a record, and tools/validate.mjs is the only thing that checks it. M90 §1.",
+  "type": "object",
+  "required": ["schema", "kind", "entries"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": 1 },
+    "kind": { "const": "import-queue-log" },
+    "entries": {
+      "description": "One entry per item the writer took, in the order it took them. Appended, never rewritten: a fire that refused an item is news the planner reads once and the record of it stays.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "writer", "fired", "status", "written", "refusals"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "description": "The queue item's id, which is what says the item is done.",
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9]+(-[a-z0-9]+)*-[0-9]{3}$",
+            "maxLength": 140
+          },
+          "writer": { "type": "string", "enum": ["A", "B"] },
+          "fired": {
+            "description": "When the fire that took the item ran, to the minute, in UTC.",
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}(:[0-9]{2})?Z$"
+          },
+          "status": {
+            "description": "`written`: the event and every edge. `partial`: the event and some of the edges, the rest in `refusals`. `refused`: nothing at all, because no edge could be verified and a record that earns no edge is not imported (rules card 7). `skipped`: the atlas, on either branch, holds the item already.",
+            "type": "string",
+            "enum": ["written", "partial", "refused", "skipped"]
+          },
+          "written": {
+            "description": "What reached disk. Empty of everything on a refusal or a skip.",
+            "type": "object",
+            "required": ["event", "edges"],
+            "additionalProperties": false,
+            "properties": {
+              "event": {
+                "oneOf": [
+                  { "type": "null" },
+                  { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 120 }
+                ]
+              },
+              "edges": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9]+(-[a-z0-9]+)*--[a-z0-9]+(-[a-z0-9]+)*--(caused|enabled|reacted-to|precondition-of|inspired)$",
+                  "maxLength": 260
+                }
+              },
+              "place": {
+                "description": "The place record the import created for this event, where it created one. A place it found already here is not written and is not named.",
+                "oneOf": [
+                  { "type": "null" },
+                  { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "maxLength": 120 }
+                ]
+              }
+            }
+          },
+          "refusals": {
+            "description": "What the writer would not write and why, by code. The planner reads these: `quote-not-found` comes back to it to be re-read, and the others are its own judgement to revise.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["reason", "detail"],
+              "additionalProperties": false,
+              "properties": {
+                "edge": {
+                  "description": "Which of the item's edges, by index into its own `edges` list. Absent or null where the refusal is not about an edge — a parent that could not be filed is the one such case.",
+                  "oneOf": [
+                    { "type": "null" },
+                    { "type": "integer", "minimum": 0 }
+                  ]
+                },
+                "reason": {
+                  "description": "The code, from a closed list: `quote-not-found` (the revision's text does not carry the sentence), `chronology` (A15(5): the sentence states an order and no cause), `parent-to-child` (an edge between a record and one of its own umbrellas, A14), `type` (not one of the five), `endpoint-missing` (an end that is not an active event of this atlas), `confidence` (a `consensus` edge resting on Wikipedia alone, or on one source: rules 9 and 22), `parent` (an umbrella that is not an active event, or whose span does not contain the event's start: rule 24 and A6).",
+                  "type": "string",
+                  "enum": ["quote-not-found", "chronology", "parent-to-child", "type", "endpoint-missing", "confidence", "parent"]
+                },
+                "detail": {
+                  "description": "What the writer found, in one line, so the planner does not have to guess which of its own decisions was wrong.",
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 600
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
