@@ -159,3 +159,39 @@ test('a lead that could not be read still rolls the record back, with no edge as
   assert.deepEqual((await readdir(path.join(bed.data, 'events'))).sort(), before);
   await rm(bed.dir, { recursive: true, force: true });
 });
+
+// --- change 3 --------------------------------------------------------------
+
+test('an item whose article title an active event already carries is skipped, even under no wikidata id or another', async () => {
+  const bed = await scratch();
+  // The title the stub item's enwiki sitelink carries, in another case, on a
+  // record with no `wikidata` id at all.
+  await plant(bed, 'fixture-held-campaign', { title: 'FIXTURE CAMPAIGN Z' });
+  // And the article on a record whose own title is something else, under
+  // another item (a merged or a superseded one): rule 21 writes a Wikipedia
+  // title only beside the Wikidata item it belongs to.
+  await plant(bed, 'fixture-held-siege', { title: 'A siege by another name', wikidata: 'Q9299999', wikipedia: { en: 'fixture siege z' } });
+  const before = (await readdir(path.join(bed.data, 'events'))).sort();
+  const { code, log } = await fire(bed, [
+    item(),
+    item({ id: '2026-10-13-africa-002', qid: SIEGE, title: 'Fixture siege Z' }),
+  ]);
+  assert.equal(code, EXIT.ok);
+  const [campaign, siege] = log.entries;
+  assert.equal(campaign.status, 'skipped');
+  assert.match(campaign.note, /"fixture-held-campaign"/);
+  assert.match(campaign.note, /Fixture campaign Z/);
+  assert.equal(siege.status, 'skipped');
+  assert.match(siege.note, /"fixture-held-siege"/);
+  for (const entry of [campaign, siege]) {
+    assert.deepEqual(entry.written, { event: null, edges: [], place: null });
+  }
+  assert.deepEqual((await readdir(path.join(bed.data, 'events'))).sort(), before, 'nothing was imported');
+  // A retracted record with that title is not the item: only an active one is.
+  const other = await scratch();
+  await plant(other, 'fixture-gone-campaign', { title: 'Fixture campaign Z', status: 'retracted' });
+  const again = await fire(other, [item()]);
+  assert.equal(again.log.entries[0].status, 'written');
+  await rm(bed.dir, { recursive: true, force: true });
+  await rm(other.dir, { recursive: true, force: true });
+});

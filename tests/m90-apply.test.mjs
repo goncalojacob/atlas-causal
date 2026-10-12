@@ -538,13 +538,16 @@ test('a refusal inside the import puts the seeds and the cursor back and says th
   const seedsBefore = await readFile(seedsFile, 'utf8');
   // The quotes verify, and the network goes away between the verification and
   // the import: the first write to the import files has happened by then.
+  // Since M91 the skip step reads the item once for its article title before
+  // anything is written, so the network goes away after that first read.
   const stub = stubFetcher(STUB);
+  let reads = 0;
   const fetcher = {
     get calls() { return stub.calls; },
     get budget() { return stub.budget; },
     get spent() { return stub.spent; },
     async get(url) {
-      if (url.includes('wbgetentities')) throw new TypeError('fetch failed');
+      if (url.includes('wbgetentities') && (reads += 1) > 1) throw new TypeError('fetch failed');
       return stub.get(url);
     },
   };

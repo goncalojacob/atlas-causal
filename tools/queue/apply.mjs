@@ -49,7 +49,7 @@ import { readSchemaFiles, readRecords, readRegions, readRegionPolygons } from '.
 import { createRegionDeriver } from '../../src/util/geo.js';
 import {
   HttpError, createFetcher, wikipediaApi, readSeeds, readState, writeState,
-  runImportMode, emptyState, SEEDS_FILE, STATE_FILE, LEAD_CACHE,
+  runImportMode, emptyState, entitiesUrl, articleTitles, SEEDS_FILE, STATE_FILE, LEAD_CACHE,
 } from '../import/wikidata.mjs';
 import {
   QUEUE_SCHEMA, LOG_SCHEMA, WRITERS, QUEUE_KIND, LOG_KIND,
@@ -322,6 +322,41 @@ export function parentVerdict(id, child, byId, { parentsFor = (x) => parentsOf(b
   return { ok: true, reason: null, detail: null };
 }
 
+// --- the duplicate by title ------------------------------------------------
+
+// M91 change 3. The skip by `wikidata` id cannot see an active event that
+// carries none — 132 of them on 13 October 2026, records written by hand or
+// before the import kept the id — so an item is also a duplicate of an active
+// event whose `title`, or whose `wikipedia.en`, is the item's English article
+// title, compared without case. A map from the folded title to the record.
+export const foldTitle = (title) => (typeof title === 'string' ? title.trim().replace(/_/g, ' ').toLowerCase() : '');
+
+export function titleIndex(records) {
+  const byTitle = new Map();
+  for (const r of records) {
+    if (r?.kind !== 'event' || r.status !== 'active') continue;
+    for (const title of [r.title, r.wikipedia?.en]) {
+      const key = foldTitle(title);
+      if (key !== '' && !byTitle.has(key)) byTitle.set(key, r.id);
+    }
+  }
+  return byTitle;
+}
+
+// The item's English article title, read off the item as the import will read
+// it (its `enwiki` sitelink), or null where it has none. One request, before
+// anything is written; a failure is the fire's and never this item's.
+export async function englishTitle(fetcher, qid) {
+  let body;
+  try {
+    body = await fetcher.get(entitiesUrl([qid]));
+  } catch (e) {
+    if (e?.name === 'NetworkRefused') throw e;
+    throw new NetworkRefused(`the item ${qid} could not be fetched: ${e?.message ?? e}`, { cause: e });
+  }
+  return articleTitles(body?.entities?.[qid] ?? null).en ?? null;
+}
+
 // --- the fire --------------------------------------------------------------
 
 // What the routine is told on the network exit, and why it is not "nothing was
@@ -398,6 +433,10 @@ async function applyItem(item, {
   if (isImport(item)) {
     const mine = byItem.get(item.qid);
     if (mine) return entry('skipped', `${item.qid} is already the event "${mine}"`);
+    // The same event under no id (M91 change 3), by its article's title.
+    const title = await englishTitle(fetcher, item.qid);
+    const same = title === null ? null : titleIndex(corpus.records).get(foldTitle(title));
+    if (same) return entry('skipped', `${item.qid}'s article "${title}" is already the title of the active event "${same}", which carries no wikidata id of its own`);
     if (held.has(item.qid)) return entry('skipped', `${item.qid} is held by the other branch`);
   } else if (held.has(item.existing)) {
     return entry('skipped', `"${item.existing}" is held by the other branch`);
