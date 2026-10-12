@@ -113,17 +113,17 @@ export function viewKey(title, rows, { open = false } = {}) {
 export const MAP_ROWS = Object.freeze([
   { shape: 'circle', classes: 'mark', label: 'one event' },
   { shape: 'circle', classes: 'mark lens-near', label: 'connected to the one you opened' },
-  { shape: 'circle', classes: 'mark', ring: true, label: 'opens into more' },
-  { shape: 'circle', classes: 'mark coarse', label: 'a region, not a point' },
-  { shape: 'circle', classes: 'mark cluster', count: '9', label: 'more than one here' },
+  { shape: 'circle', classes: 'mark', ring: true, label: 'has smaller events inside' },
+  { shape: 'circle', classes: 'mark coarse', label: 'somewhere in a region' },
+  { shape: 'circle', classes: 'mark cluster', count: '9', label: 'several events here' },
 ]);
 
 export const TIMELINE_ROWS = Object.freeze([
   { shape: 'rect', classes: 'bar', label: 'one event' },
   { shape: 'rect', classes: 'bar lens-near', label: 'connected to the one you opened' },
-  { shape: 'rect', classes: 'bar', ring: true, label: 'opens into more' },
+  { shape: 'rect', classes: 'bar', ring: true, label: 'has smaller events inside' },
   { shape: 'rect', classes: 'bar instant', narrow: true, label: 'one day' },
-  { shape: 'rect', classes: 'bar ongoing', label: 'no end in the record' },
+  { shape: 'rect', classes: 'bar ongoing', label: 'no end date' },
   // The two ends of the link the reader has opened (M87 §8). The map draws that
   // link as a line and needs no row for it; here there is no line to draw
   // between two rows, so what says it is the ink on the two bars — and a colour
