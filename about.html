@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About — Atlas causal</title>
+  <title>Atlas causal: About</title>
   <link rel="stylesheet" href="src/style.css">
 </head>
 <body class="page-body">
   <header class="bar">
     <h1><a href="index.html">Atlas causal</a></h1>
-    <p class="tagline">What this is, who makes it, and under what licence.</p>
+    <p class="tagline">What the atlas is, who makes it, and its licences.</p>
     <a class="bar-link" href="narratives.html">narratives</a>
     <a class="bar-link" href="sources.html">sources</a>
   </header>
@@ -19,86 +19,87 @@
       <h2>What this is</h2>
 
       <p>The history of the world since 1415 as a graph: every event linked to what caused it and
-      what it led to, with sources. A map, a timeline and a graph over the same records — events
-      as nodes, the places they happened at, the people, polities and institutions in them as
-      actors, the ground those actors held as territories, and causal links as edges. Each edge
-      carries a type, a confidence level and a written argument with its sources.</p>
+      what it led to, with sources. The atlas shows the same records as a map, a timeline and a
+      graph. Each event is a point in the graph. A place is where an event happened. Actors are
+      the people, states and institutions in an event, and territories are the land those actors
+      held. An edge is a link from a cause to a consequence. Each edge has a type, a confidence
+      level and a written argument with its sources.</p>
 
-      <p>Pick an event, follow its consequences, and see which <em>other</em> branches fed the
-      same endpoint — the antidote to reading one chain as the explanation.</p>
+      <p>Pick an event and follow its consequences. At any event you reach, the atlas also shows
+      the <em>other</em> branches that led to it. This keeps one chain from looking like the whole
+      explanation.</p>
 
-      <h2>Who makes it, and what has been read</h2>
+      <h2>Who makes it</h2>
 
-      <p>One person, with an assistant: most of the records here are drafted from Wikipedia and
-      Wikidata, and each of those credits on its card the article and the revision it was read
-      at. Every causal link carries a written argument and at least one source, and the card
-      says how sure the atlas is of it. A person is reading the drafts one at a time, and
-      adding <code>?review=1</code> to any address shows each record's review state on the page,
-      as the person reading them sees it.</p>
+      <p>One person makes the atlas, with an assistant. Most of the records are drafts taken from
+      Wikipedia and Wikidata. The card of each one names the article and the revision it was read
+      at. Every causal link has a written argument and at least one source, and its card says how
+      sure the atlas is of it. A person is reading the drafts one at a time. Add
+      <code>?review=1</code> to any address to see the review state of each record, as that person
+      sees it.</p>
 
-      <p>The territories and many of the polities are <strong>imports</strong>, not writing: they
-      are read off somebody else's dataset and carry that dataset's own licence and its own
-      caveats. An import never signs anything and never rewrites a record a person has signed.</p>
+      <p>The territories and many of the states are <strong>imports</strong>. They come from other
+      people's datasets and keep each dataset's licence and the limits its makers state. An import
+      never signs a record and never rewrites a record a person has signed.</p>
 
       <h2>How sure the atlas is</h2>
 
-      <p>Confidence is defined by evidence, so that it can be checked rather than felt. Where
-      historians disagree, the atlas says so and says who, instead of picking a side.</p>
+      <p>The confidence level of a link depends on its sources, so a reader can check it. Where
+      historians disagree, the atlas says so and names them. It does not pick a side.</p>
 
       <dl class="levels">
         <dt><span class="badge consensus">consensus</span></dt>
-        <dd>The link is accepted. It requires at least two cited sources by different authors —
-        a necessary condition, not a sufficient one: a reviewer still judges whether they really
-        agree.</dd>
+        <dd>Historians accept the link. It needs at least two cited sources by different authors.
+        Two sources are not enough on their own: a reviewer still judges whether they agree.</dd>
         <dt><span class="badge probable">probable</span></dt>
-        <dd>Supported by the sources cited, with no known dissent. Most edges live here, and that
-        is honest: it says the argument rests on the sources given and nobody has been found
-        arguing the other way.</dd>
+        <dd>The cited sources support the link, and the atlas knows of no historian who disagrees.
+        Most edges have this level.</dd>
         <dt><span class="badge disputed">disputed</span></dt>
-        <dd>Qualified historians disagree about the link itself — whether it exists, what type it
-        is, or how much it carries. The card names who disagrees.</dd>
+        <dd>Historians disagree about the link itself: whether it exists, what type it is, or how
+        much weight it carries. The card names who disagrees.</dd>
       </dl>
 
       <h2>Licences</h2>
 
-      <p>Four, because one cannot honestly cover code, prose and two imported datasets.</p>
+      <p>The atlas uses four licences. One licence cannot cover the code, the written records and
+      two imported datasets.</p>
 
       <ul>
-        <li><strong>The code</strong> is <a href="https://opensource.org/license/mit" rel="license noreferrer">MIT</a>.</li>
-        <li><strong>The records</strong> — everything a person wrote — are
+        <li><strong>The code</strong> is under <a href="https://opensource.org/license/mit" rel="license noreferrer">MIT</a>.</li>
+        <li><strong>The records</strong>, meaning everything a person wrote, are under
         <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noreferrer">CC BY-SA 4.0</a>.</li>
-        <li><strong>The coastlines</strong> derive from
+        <li><strong>The coastlines</strong> come from
         <a href="https://www.naturalearthdata.com/" rel="noreferrer">Natural Earth</a>, which is
         public domain and asks to be credited.</li>
-        <li><strong>The territories</strong> are under neither of those. From 1886 they are
+        <li><strong>The territories</strong> are under neither of those. From 1886 they are under
         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noreferrer">CC BY-NC-SA 4.0</a>,
         because <a href="https://icr.ethz.ch/data/cshapes/" rel="noreferrer">CShapes 2.0</a> is, and
-        that licence forbids commercial use; before 1886 they are
+        that licence forbids commercial use. Before 1886 they are under
         <a href="https://www.gnu.org/licenses/gpl-3.0.html" rel="license noreferrer">GPL-3.0</a>,
         because <a href="https://github.com/aourednik/historical-basemaps" rel="noreferrer">Historical Basemaps</a>
-        is. They are kept in their own directories, every file says which licence it carries, and
-        nothing is ever copied out of them into a record somebody wrote.</li>
+        is. They sit in their own directories, every file names its licence, and nothing from them
+        is ever copied into a record somebody wrote.</li>
       </ul>
 
-      <p>Relicensing stops being possible the moment a stranger's paragraph is merged, so the
-      licence is a decision taken once rather than a default to revisit. The full attributions are
-      in <code>data/LICENSE</code> and <code>data/geo/LICENSE</code>, and the bibliography is at
-      <a href="sources.html">sources.html</a>.</p>
+      <p>Once the atlas merges a paragraph by somebody else, it can no longer change its licence.
+      So the choice of licence is final. The full credits are in <code>data/LICENSE</code> and
+      <code>data/geo/LICENSE</code>. The list of sources is at <a href="sources.html">sources.html</a>.</p>
 
-      <h2>What is coming</h2>
+      <h2>Contributions</h2>
 
-      <p>Contributions are <strong>not open yet</strong>. The schema is still being tested against
-      the first period, and migrating a hundred contributors' records is far harder than migrating
-      your own — so the pipeline is built and tested before it is announced. When it opens, a form
-      will build a bundle, validate it in your browser against the records already here, and open
-      one issue; a person still reads the argument, the sources and the confidence before anything
-      is merged. No sources, no merge.</p>
+      <p>Contributions are <strong>not open yet</strong>. The maintainer is still testing the
+      record format on the first period. Moving a hundred contributors' records to a new format is
+      much harder than moving one person's own. So the maintainer will build and test the
+      contribution process before opening it. When it opens, a form will build a bundle of records, check it in your browser
+      against the records already here, and open one issue in the repository. A person will still
+      read the argument, the sources and the confidence before merging anything, and will merge
+      nothing without sources.</p>
 
-      <p class="footnote">How all of this is drawn — every symbol on the map, what the colours do
-      and do not mean, how a card is read, what the lanes are, why the territories stop where they
-      stop — is set out at length in <a href="essay.html">how the atlas is drawn</a>. The reasoning
-      behind the project is in <code>CONTEXT.md</code> in the repository; the structure is in
-      <code>ARCHITECTURE.md</code>; what is built so far is in <code>STATUS.md</code>.</p>
+      <p class="footnote"><a href="essay.html">How the atlas is drawn</a> explains the rest at
+      length: every symbol on the map, what the colours mean, how to read a card, what the lanes
+      are, and why the territories stop where they do. In the repository, <code>CONTEXT.md</code>
+      gives the reasons behind the project, <code>ARCHITECTURE.md</code> its structure, and
+      <code>STATUS.md</code> what is built so far.</p>
     </section>
   </main>
 </body>
