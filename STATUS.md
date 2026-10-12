@@ -25731,7 +25731,9 @@ branch — and still asserting the patterns reach `m42`, `m42b`, `m88`, `m1`, `m
 neither `m0` nor `main`. The first attempt matched the list with `[^\]]+`, which stops at the `]`
 inside `m[1-9]*` itself.
 
-Four suites, 37 tests, 0 skipped, no count pinned anywhere. `validate --index` 0 errors at every
-commit and at this head.
+Four suites, 45 tests, 0 skipped, no count pinned anywhere (37 at `M90 done`; eight more after
+the Fable review of 12 October, whose eight fixes are listed in `docs/history/pr-sections.md`,
+among them `summary-missing`, `parent-cycle` and `edge-cycle` as refusal codes). `validate
+--index` 0 errors at every commit and at this head.
 
 M90 done

@@ -4662,3 +4662,17 @@ found the soft-hyphen gap above.
 No count is pinned anywhere. `tests/m90-state.test.mjs` derives every
 expectation from the records handed in, and its live-corpus test asks `data/`
 for its own active count and for the validator's zero.
+
+### After review (12 October)
+
+The Fable review's eight findings, each its own commit with its test first.
+Four suites, 45 tests now, 0 skipped. Deviations **1570 to 1572**.
+
+1. **Network refusal.** Only a 404 or the API's `nosuchrevid`/`badrevids` on the revision fetch is `quote-not-found`; a `TypeError: fetch failed`, any other status, a `cause` or a spent budget is exit 3 — *"a revision fetch that fails with a plain TypeError: fetch failed / an HTTP 403 is the network exit"*, *"only a 404 or the API's own nosuchrevid says the revision is not there"*.
+2. **Placeholder summary.** A record the import wrote with the placeholder (no lead, not a redirect) is taken back off disk and logged `summary-missing` — *"an item whose lead could not be read is refused summary-missing, and nothing of it stays on disk"*.
+3. **Exit-3 honesty.** The message says the tree may hold earlier items and import-state changes and must be discarded, and the seeds file and the cursor are put back as they were before the item — *"a refusal inside the import puts the seeds and the cursor back and says the tree must be discarded"*.
+4. **Recache scope.** `cache-evidence.mjs --only <file>` (a JSON list of record ids) and `--data`/`--cache`; the writer passes the events and edges its fire wrote — *"the recache is scoped to the fire's own citations"*.
+5. **`--held` and `--max`.** Held items are logged `skipped` and take no `--max` slot; an `existing` item's record is checked against `--held` — *"held items are logged skipped and do not take a --max slot"*.
+6. **Deviation numbers.** 1433 is M89's, and 1434 and 1435 are M42's and 1436 M42b's in their pool files, so M90's three are 1570 to 1572, the first free run below the planner's 1600.
+7. **Cycles.** `parent-cycle` for a queued parent already inside the record, `edge-cycle` for the reverse of an active edge — *"an existing item may not file a parent that sits inside it, nor write the reverse of an active edge"*, and the two pure verdict tests.
+8. **`state.mjs`'s no-place row** is labelled *"active events whose place is not a string"*, and the header says it is not the pools' "no place with a point" — *"the print is under eighty lines, and says what it left out when it is not"*.
