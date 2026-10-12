@@ -295,15 +295,22 @@ equals the validator's. `M90 done` when all of it is green on `m90`'s head.
 > stay queued for the next fire. If `validate --index` fails inside it, stop
 > and say which record; do not fix a record by hand.
 >
-> STEP 2 — Commit the records first (`data/events`, `data/edges`,
-> `data/places`, `data/imports/` — the log, and the seeds and state files,
-> which also carry the qids of refused items; that is expected), then the
-> index (`data/index`), then the cache (`tools/import/cache/`), each its own
-> commit with a one-line message naming the item ids. Push `m42`. Wait for the check as before (the check is
-> honest since M63; if red, read the failure; `gh api .../logs` does not work
-> here, use the check-run annotations). Append one line to `STATUS.md`: `Writer
-> A <ISO instant>: <n> written, <m> partial, <k> refused, <j> skipped`; commit
-> and push.
+> STEP 2 — Four commits, in this order, and the order matters because the
+> index's history shards are built from the commits that touched each record
+> (rule 16; the first writer fire went red on exactly this): (1) the records,
+> `data/events`, `data/edges`, `data/places`, `data/imports/` (the log, and the
+> seeds and state files, which also carry the qids of refused items; that is
+> expected), one commit naming the item ids; (2) **then rebuild the index
+> (`node tools/build-index.mjs`) and `node tools/validate.mjs --index` must
+> print 0 errors**; commit `data/index` and `sources.html`; (3) the cache,
+> `tools/import/cache/`; (4) one line appended to `STATUS.md` under
+> `## Milestones landed`: `Writer A <ISO instant>: <n> written, <m> partial,
+> <k> refused, <j> skipped`. Push `m42`. **Do not wait for the check**: the
+> push's check runs on its own and the assistant reads it when landing; a
+> routine that waits for a check ends its session without the line it meant
+> to write. Stop after the push. The writers' log is
+> `data/imports/queue-log.json` on the branch; `schema/import/queue-log.json`
+> is its schema.
 >
 > You write no prose note, no pool section, no deviation; a refusal is a log
 > entry for the planner. If `apply.mjs` itself is broken (a stack trace, not

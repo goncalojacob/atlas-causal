@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "hezbollah-israel-conflict-2023-present",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-12",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q122974556",
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-10-12"
+  },
+  "wikipedia": {
+    "en": "Hezbollah–Israel conflict (2023–present)",
+    "pt": "Guerra Israel–Hezbollah (2023–2024)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q122974556"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hezbollah–Israel conflict (2023–present)\", revision 1368616555"
+    }
+  ],
+  "title": "Hezbollah–Israel conflict (2023–present)",
+  "summary": "The English Wikipedia article \"Hezbollah–Israel conflict (2023–present)\", at revision 1368616555, opens: \"An ongoing conflict between the Lebanese militant group Hezbollah and Israel began on 8 October 2023, when Hezbollah launched rockets and artillery at Israeli positions following Hamas's October 7 attacks on Israel. The conflict escalated into a prolonged exchange of bombardments, leading to extensive displacement in Israel and Lebanon. The conflict is part of the broader Middle Eastern crisis that began with Hamas's attack, with the short Israeli invasion of Lebanon in 2024 marking the largest escalation of the Hezbollah–Israel conflict since the 2006 Lebanon War. In Arabic, the conflict (2023–2024) is referred to as the \"Support War\" or the \"Gaza Support War.\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q122974556, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between Hezbollah and Israel since 2023 till 2024\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2023,
+    "end": null,
+    "date": "2023-10-08"
+  },
+  "place": "southern-lebanon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "middle-eastern-crisis-2023-present"
+}

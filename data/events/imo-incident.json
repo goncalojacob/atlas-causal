@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "imo-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-12",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q709191",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-12"
+  },
+  "wikipedia": {
+    "en": "Imo Incident"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q709191"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Imo Incident\", revision 1378536153"
+    }
+  ],
+  "title": "Imo Incident",
+  "summary": "The English Wikipedia article \"Imo Incident\", at revision 1378536153, opens: \"The Imo Incident, also sometimes known as the Imo Mutiny, Soldier's riot or Jingo-gunran in Japanese, was a violent uprising and riot in Seoul beginning in 1882, by soldiers of the Joseon Army who were later joined by disaffected members of the wider Korean population. The revolt broke out in part due to King Gojong's support for reform and modernization, as well as the employment of Japanese military advisors. Some sources credit rumors as the spark which ignited violence, where many Korean soldiers were worried by the prospect of incorporating Japanese officers in a new army structure. The trigger for the riot is largely attributed to a reaction about unpaid soldiers' wages, who found sand and bad rice in soldiers' rations. At the time, soldiers could be paid in rice.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q709191, imported by tools/import/wikidata.mjs. The item's own description reads \"mutiny of the Joseon military against the government of Joseon in Seoul in 1882\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1882,
+    "end": 1882,
+    "date": "1882-07-19"
+  },
+  "place": "hanseongbu",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

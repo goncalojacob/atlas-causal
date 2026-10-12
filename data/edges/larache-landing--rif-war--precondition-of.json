@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "larache-landing--rif-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-12",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Larache landing\", revision 1379388284"
+    }
+  ],
+  "from": "larache-landing",
+  "to": "rif-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article \"Larache landing\" (revision 1379388284) states: \"The Larache landing refers to the military action in 1911 that led to the occupation of the Moroccan city of Larache by the Spanish Marine Infantry, establishing a precedent for the military intervention in Morocco and the subsequent Rif War.\" The edge reads the last clause and nothing more: a precedent for an intervention is a precondition of the war that followed fifteen years later and not its cause. The item's Wikidata P361 names the Rif War, but a 1911 landing cannot be part of a war that begins in 1921, so no parent is filed (rule 24).",
+  "dispute": null
+}
