@@ -7,7 +7,8 @@
 // own child, the sixth type, the end that is not a record, the `consensus`
 // that rests on Wikipedia alone, the umbrella that will not hold the date, the
 // cause that starts after its effect, and the edge that is already here. And
-// the four statuses: written, partial, refused, skipped.
+// the four statuses: written, partial, refused, skipped. (Since M91, 13
+// October, an item whose every edge is refused is still written.)
 //
 // No network: `--fetcher stub:tests/fixtures/queue` answers off disk, so the
 // tool is run as the routine runs it, through `main()`, including the index
@@ -235,9 +236,11 @@ test('an item part of whose edges fail is partial, and every refusal is named by
   await rm(bed.dir, { recursive: true, force: true });
 });
 
-test('an item no edge of which survives is refused, and nothing is imported', async () => {
+test('an item no edge of which survives is written all the same, since M91', async () => {
   const bed = await scratch();
-  const before = await readdir(path.join(bed.data, 'events'));
+  // Until 13 October 2026 this item was refused and nothing imported (rules
+  // card 7's bar); the owner withdrew the bar, so the record is written and
+  // the refusal logged. tests/m91-apply.test.mjs has the rest.
   const { code, log } = await fire(bed, [item({
     id: '2026-10-13-africa-002',
     qid: SIEGE,
@@ -257,39 +260,30 @@ test('an item no edge of which survives is refused, and nothing is imported', as
   })]);
   assert.equal(code, EXIT.ok);
   const [entry] = log.entries;
-  assert.equal(entry.status, 'refused');
-  assert.equal(entry.written.event, null);
+  assert.equal(entry.status, 'written');
+  assert.ok(entry.written.event);
   assert.deepEqual(entry.written.edges, []);
   assert.deepEqual(entry.refusals.map((r) => r.reason), ['chronology']);
-  // The bar: a record that earns no edge is not imported at all.
-  assert.deepEqual((await readdir(path.join(bed.data, 'events'))).sort(), before.sort());
-  assert.ok(!existsSync(path.join(bed.data, 'imports', 'wikidata-state.json')),
-    'the import was never asked, so there is no cursor');
+  assert.ok(existsSync(path.join(bed.data, 'events', `${entry.written.event}.json`)));
   await rm(bed.dir, { recursive: true, force: true });
 });
 
-test('an item whose every edge falls at the last fence gives the record back', async () => {
+test('an item whose every edge falls at the last fence keeps its record, since M91', async () => {
   const bed = await scratch();
-  const before = {
-    events: (await readdir(path.join(bed.data, 'events'))).sort(),
-    places: (await readdir(path.join(bed.data, 'places'))).sort(),
-  };
   // The arrow of time and the edge already here can only be asked once the
-  // record exists, so this item is imported and then earns nothing: a record
-  // that earns no edge is not imported at all (rules card 7), and what it
-  // wrote comes back off disk.
+  // record exists. Until 13 October 2026 what the item wrote came back off
+  // disk; the record now stays, with its place and the refusal logged.
   const { code, log } = await fire(bed, [item({
     edges: [edge({ from: QID, to: 'fixture-event-a', type: 'caused', quote: FORCED, explanation: because(FORCED) })],
   })]);
   assert.equal(code, EXIT.ok);
   const [entry] = log.entries;
-  assert.equal(entry.status, 'refused');
+  assert.equal(entry.status, 'written');
   assert.deepEqual(entry.refusals.map((r) => r.reason), ['arrow-of-time']);
-  assert.equal(entry.written.event, null);
-  assert.equal(entry.written.place, null);
-  assert.match(entry.note, /off disk again/);
-  assert.deepEqual((await readdir(path.join(bed.data, 'events'))).sort(), before.events);
-  assert.deepEqual((await readdir(path.join(bed.data, 'places'))).sort(), before.places);
+  assert.equal(entry.written.event, EVENT);
+  assert.equal(entry.written.place, PLACE);
+  assert.ok(existsSync(path.join(bed.data, 'events', `${EVENT}.json`)));
+  assert.ok(existsSync(path.join(bed.data, 'places', `${PLACE}.json`)));
   await rm(bed.dir, { recursive: true, force: true });
 });
 

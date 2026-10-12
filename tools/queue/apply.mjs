@@ -9,10 +9,14 @@
 // The planner decides and this applies. A writer on a smaller model is safe
 // only if it has nothing to decide, so everything a rule can say is said here
 // and not in a prompt: the quote is checked against the revision it names, the
-// chronology refusal of A15(5) is applied to the sentence, A14's parent rule is
-// applied to the two ends, the five types are the five types, and an item that
-// earns no edge is not imported at all (rules card 7). What is left over for a
-// person is in `data/imports/queue-log.json`, by code.
+// chronology refusal of A15(5) is applied to the sentence, and the five types
+// are the five types. Since 13 October 2026 (M91) an item is imported whether
+// or not an edge stands — the owner withdrew rules card 7's bar: "Just add all
+// events that are relevant and connect them when you can" — so an item whose
+// every edge is refused, or that queued none, is written as the event alone,
+// filed under its surviving parents, with its refusals logged. Edges are still
+// written only where the sentence is verified. What is left over for a person
+// is in `data/imports/queue-log.json`, by code.
 //
 // **Which way the import is called.** `runImportMode` walks the cursor of
 // `data/imports/wikidata-state.json` — `nextBatch` takes `runs.import.pending`
@@ -374,8 +378,8 @@ async function applyItem(item, {
   });
   const subject = subjectOf(item);
   // What an imported item wrote, taken back off disk: the event and the place
-  // the import created for it. Used where the item turns out not to earn the
-  // record after all.
+  // the import created for it. Used where the lead could not be read and the
+  // record would carry the import's placeholder (`summary-missing`).
   let record = null;
   const takeBack = async () => {
     await rm(path.join(dataDir, 'events', `${record.id}.json`), { force: true });
@@ -451,10 +455,10 @@ async function applyItem(item, {
     }
     standing.push({ index: i, edge });
   }
-  // The bar, applied where it belongs: no edge, no record. An item that
-  // changes a record already here has its place already, so a filing on its
-  // own is work — but an item that asked for neither has asked for nothing.
-  if (isImport(item) && standing.length === 0) return entry('refused');
+  // No edge, no record, until 13 October 2026: the owner withdrew the bar
+  // (M91), so an import item goes on to the import whatever survived above.
+  // An item that changes a record already here and has neither a parent to
+  // file nor an edge left to write has nothing left to do.
   if (!isImport(item) && standing.length === 0 && (item.parents ?? []).length === 0) {
     return entry('refused', 'the item neither files a parent nor writes an edge');
   }
@@ -563,16 +567,10 @@ async function applyItem(item, {
     corpus.byId.set(built.id, built);
     corpus.records.push(built);
   }
-  // The bar again, and this time after the fact: the arrow of time and the
-  // edge already here can only be asked once the record exists, so an item
-  // whose every edge falls at this last fence has been imported and earns
-  // nothing. A record that earns no edge is not imported at all (rules card
-  // 7), so what this item wrote is taken back off disk.
-  if (written.edges.length === 0 && isImport(item)) {
-    await takeBack();
-    return entry('refused', 'every edge fell at the last fence, so the record it would have earned is off disk again');
-  }
-  return entry(refusals.length ? 'partial' : 'written');
+  // An item whose every edge fell, here or before the import, keeps its
+  // record since M91: `written`, with no edge and its refusals listed.
+  // `partial` keeps its meaning — the event and some of its edges.
+  return entry(refusals.length && written.edges.length ? 'partial' : 'written');
 }
 
 // The record ids a fire's citations are on: the event and the edges each entry
