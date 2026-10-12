@@ -53,7 +53,7 @@ test('"Edit this record" on a card opens the form on that record', { skip }, asy
     assert.ok(form.summaryLength > 40, 'the summary came with it');
     assert.match(form.place, /lisbon/, `the place picker opened on the record's place, not empty: ${form.place}`);
     assert.ok(form.cited.length > 0, 'and the sources it rests on');
-    assert.ok(form.cited.every((t) => t.includes(' · ')), `each citation names its source: ${form.cited.join(' | ')}`);
+    assert.ok(form.cited.every((t) => / \([^()]+\)$/.test(t)), `each citation names its source: ${form.cited.join(' | ')}`);
 
     // The bundle it would file is the record under its own id, which is what
     // the correction template accepts.
@@ -144,7 +144,7 @@ test('the picker answers a keystroke among 20 000 records in under 100 ms', { sk
       'degree:1 link',
     ]);
     assert.equal(measured.chosen, 'bench-event-00001', 'the arrow keys and Enter chose the second row');
-    assert.match(measured.under, /^Bench event 1 at Porto · bench-event-00001$/);
+    assert.match(measured.under, /^Bench event 1 at Porto \(bench-event-00001\)$/);
     assert.equal(measured.links, 2, 'and what it already connects to: one link in, one out');
 
     const [cold, ...warm] = measured.took;
@@ -218,17 +218,17 @@ test('a new place under an id the atlas already has is named as a replacement', 
       submit: document.querySelector(".submit button, button.submit, .actions button")?.disabled ?? null,
     };`);
     assert.equal(said.id, 'lisbon', 'the derived id is the one the atlas already has');
-    assert.match(said.lead, /This id already exists: filing this would replace/);
-    assert.ok(said.rows.some((t) => /\(lisbon\) — the same id/.test(t)), said.rows.join(' · '));
+    assert.match(said.lead, /This id already exists\. Filing this would replace/);
+    assert.ok(said.rows.some((t) => /\(lisbon\) has the same id/.test(t)), said.rows.join(' · '));
     assert.match(said.acknowledge, /I mean to replace/);
-    // Never "the bundle validates" while that is on screen.
-    assert.doesNotMatch(said.summary, /The bundle validates/);
-    assert.match(said.summary, /match ones the atlas already has/);
+    // Never "the bundle passes every check" while that is on screen.
+    assert.doesNotMatch(said.summary, /The bundle passes every check/);
+    assert.match(said.summary, /match records the atlas already has/);
 
     // Acknowledged, it reads as a correction of that record and the summary
     // comes back — the bundle really does validate, as a replacement.
     await page.eval(`document.querySelector("section.entry.place .acknowledge input").click(); return true;`);
-    await waitFor(page, 'return /validates/.test(document.querySelector(".report .summary").textContent);',
+    await waitFor(page, 'return /passes every check/.test(document.querySelector(".report .summary").textContent);',
       'the summary once the replacement is acknowledged');
   });
 });
