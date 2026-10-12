@@ -198,7 +198,7 @@ test('entry.html asks for the core and the centuries its lists span, and no more
     };`);
     assert.ok(head.h1.length > 0, 'the entry has a head');
     assert.notEqual(head.h1, 'carnation-revolution-1974', 'never the id where the name goes');
-    assert.ok(!head.tab.startsWith('carnation-revolution-1974'), `the tab is named ${head.tab}`);
+    assert.ok(!head.tab.includes('carnation-revolution-1974'), `the tab is named ${head.tab}`);
   });
 });
 

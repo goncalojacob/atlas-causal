@@ -107,8 +107,8 @@ function sourcesHtml(atlas, record, { order = [], citations = [] }, links = crea
   });
   if (rows.length === 0) {
     return `<section class="entry-sources"><h2>Sources</h2>
-      <p class="muted">This record cites nothing. A place is a geographic fact rather than an
-      argument, so it needs no source; anything else here without one is a gap.</p></section>`;
+      <p class="muted">This record cites nothing. A place is a geographic fact and needs no
+      source. Any other record without a source is missing one.</p></section>`;
   }
   return `<section class="entry-sources"><h2>Sources <span class="count">${rows.length}</span></h2>
     <ul class="citations">${rows.join('')}</ul></section>`;
@@ -122,7 +122,7 @@ function partOfHtml(atlas, links, id) {
   const items = walking.map((n) => `<li><a href="${esc(links.atlas('narrative', n.id))}">${esc(n.title)}</a>
     <span class="muted">${esc(n.summary)}</span></li>`);
   return `<section class="entry-narratives"><h2>Part of <span class="count">${walking.length}</span></h2>
-    <p class="hint">Accounts that walk through this record. Each is somebody's argument, signed and cited.</p>
+    <p class="hint">Narratives that pass through this record. Each one is a signed argument by one person, with sources.</p>
     <ul class="entry-list">${items.join('')}</ul></section>`;
 }
 
@@ -226,11 +226,11 @@ function bodyHtml(atlas, links, record) {
     return {
       html: `<section class="entry-body empty">
         <h2>The full entry</h2>
-        <p>Nobody has written the long entry for this record yet. What is above is the summary the
-        cards show — a sentence or two — and an entry is the extensive text under it: what happened,
-        what is argued about it, and what each claim rests on.</p>
-        <p class="hint">Entries are written by people, from any sources they can cite. If you want to
-        write this one, <a href="contribute.html">the contribution form</a> has a field for it, and
+        <p>Nobody has written the long entry for this record yet. The text above is the short
+        summary that the cards show. The long entry goes below it: what happened, what people
+        argue about it, and the source of each claim.</p>
+        <p class="hint">People write entries from any sources they can cite. To write this one, use
+        its field in <a href="contribute.html">the contribution form</a>.
         <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> says what the text may contain.</p>
       </section>`,
       order: [],
@@ -257,10 +257,10 @@ export function entryHtml(atlas, {
 } = {}) {
   const notices = (found?.via ?? []).map((v) => (v.reason === 'alias'
     ? `<p class="notice"><code>${esc(v.id)}</code> is a former id of this record.</p>`
-    : `<p class="notice"><code>${esc(v.id)}</code> was merged into this record.</p>`));
+    : `<p class="notice"><code>${esc(v.id)}</code> is now part of this record.</p>`));
   if (record.status !== 'active') {
-    notices.push(`<p class="notice status">This record is <strong>${esc(record.status)}</strong>. It is kept
-      so that links to it still resolve; what it says is no longer part of the atlas.</p>`);
+    notices.push(`<p class="notice status">This record is <strong>${esc(record.status)}</strong>. The atlas
+      keeps it so that links to it still work. What it says is no longer part of the atlas.</p>`);
   }
   // What the licence asks to be said about somebody else's material, beside
   // the material. An NC-licensed actor's summary used to be rendered on the
@@ -284,7 +284,7 @@ export function entryHtml(atlas, {
       <h1>${esc(displayName(record))}</h1>
       ${metaHtml(atlas, links, kind, record, topologyEntry)}
       ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
-      <p class="entry-back"><a href="${esc(links.atlas(kind, record.id))}">Open this on the map and the timeline →</a></p>
+      <p class="entry-back"><a href="${esc(links.atlas(kind, record.id))}">Open this on the map and the timeline</a></p>
       ${showingReview() ? `<p class="discuss"><a class="edit-record" href="${esc(links.edit(kind, record.id))}">Edit this record</a></p>` : ''}
       ${wikipediaHtml(record, languages)}
     </header>
@@ -305,14 +305,14 @@ export function entryHtml(atlas, {
 export function elsewhereHtml(kind, id, links = createLinks()) {
   return `<header class="entry-head"><p class="entry-kind">${esc(kind)}</p>
     <h1>Read inside the atlas</h1></header>
-    <section class="entry-body"><p>A full entry is written about an event, an actor or a place.
-    <code>${esc(id)}</code> is ${kind === 'edge' ? 'a link between events' : `a ${esc(kind)}`}, which is read
-    where it stands: <a href="${esc(links.atlas(kind, id))}">open it in the atlas</a>.</p></section>`;
+    <section class="entry-body"><p>Only events, actors and places have a full entry.
+    <code>${esc(id)}</code> is ${kind === 'edge' ? 'a link between events' : `a ${esc(kind)}`}.
+    <a href="${esc(links.atlas(kind, id))}">Open it in the atlas</a> to read it.</p></section>`;
 }
 
 export function notFoundHtml(id) {
   return `<header class="entry-head"><h1>Not found</h1></header>
     <section class="entry-body"><p>No record with id <code>${esc(id)}</code>.</p>
-    <p class="hint">Former ids keep working, so this is a link to something that never existed or a
-    typing mistake. <a href="index.html">The atlas</a> has a search box.</p></section>`;
+    <p class="hint">Old ids still work, so this link points to something that never existed, or
+    the address has a typing mistake. Try the search box in <a href="index.html">the atlas</a>.</p></section>`;
 }
