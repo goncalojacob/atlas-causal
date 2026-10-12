@@ -257,3 +257,18 @@ lands the three branches daily. M42, M42b and the landing fallback stay
 disabled. The owner named no budget; the assistant set the planner's queue at
 about fifty items a day and the writers to stop when the queue is empty, so
 the spend is bounded by the queue. The owner's open questions in §6 stand.
+
+13. From the planner's first day (12 October, `docs/plans/2026-10-12*.md`):
+    the honest yield of the bar is one to four percent of the sentences read,
+    and three rules decide most of what is refused. (a) C8 again: a war may
+    not carry an edge to its own opening engagement, nor an engagement to the
+    war it opened (Operation Searchlight "ultimately led to the Bangladesh
+    Liberation War" is queued with no parent so as not to be its own
+    parent's child). (b) The arrow of time compares the two ends' starts, so a
+    stated cause of a change *inside* an ongoing event (the fall of Kabul in
+    2021 and the insurgency in Khyber Pakhtunkhwa, 2004 onward) is refused;
+    nine refusals in one fire. May an edge point into an event that began
+    earlier, where the article states it? (c) Two Imjin War dates disagree by
+    calendar (`battle-of-chungju` 1592-04-28 against `battle-of-sangju-1592`
+    1592-06-03) and `operation-sutton` (1982-05-23) sits after
+    `battle-of-san-carlos` (from 1982-05-21): the records, not the rule.
