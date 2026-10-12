@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "cairo-conference--potsdam-declaration--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-95"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cairo Conference\", revision 1369040877"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cairo Conference\", revision 1369040877: \"using the Cairo Declaration as the basis for unconditional surrender\""
+    }
+  ],
+  "from": "cairo-conference",
+  "to": "potsdam-declaration",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "“Cairo Conference”, at revision 1369040877, § Influence: “In July 1945, the Potsdam Proclamation of China, Britain, and the United States made an ultimatum to Japan, also using the Cairo Declaration as the basis for unconditional surrender.” The same article’s lead says what the declaration was and where it came from: “The Cairo Declaration, issued after the conference, demanded Japan’s unconditional surrender, the return to China of all occupied lands, and the shaping of a new post-war East Asia.” The atlas holds the conference and not the declaration, so the edge runs from the conference that issued it — which is what the article’s own two sentences join — and `precondition-of` is the type that says the later ultimatum was built on the earlier one rather than caused by it. `probable`, not `consensus`: A2 allows `consensus` only through a work Wikipedia cites, and rule 22 would refuse it on a Wikipedia citation anyway. **If a later batch writes the Cairo Declaration as a record of its own, this edge should be re-pointed at it**; the pool note asks for that.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

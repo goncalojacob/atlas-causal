@@ -644,3 +644,65 @@ filed, from the items' own `P361`, and neither needed a word from the fire.
 | `battle-of-afabet` | `eritrean-war-of-independence` | The item's `P361` is `Q740289`, which this atlas holds as `eritrean-war-of-independence`. March 1988 is inside the umbrella's 1961 to 1991. Afabet was the EPLF's destruction of the Ethiopian Nadew Command, which is the war of independence's own decisive engagement; the record's article is about nothing else. |
 
 **Main is 229 before and 229 after**: both records arrived filed.
+
+## Batch 92 — two filings under `world-war-ii`, one from the item and one by span and subject
+
+Both of these are Asia-lane children of an umbrella this atlas has held since
+M62, and they are the two highest-sitelink events the atlas was missing.
+
+| record | parent | why |
+| --- | --- | --- |
+| `surrender-of-japan` | `world-war-ii` | The item's `P361` is `Q362`, which this atlas holds as `world-war-ii`, so the filing is the item's own and needed no judgement here. 15 August to 2 September 1945 is inside the umbrella's 1939-09-01 to 1945-09-02 — it is the day the umbrella's own `endDate` stands on. |
+| `atomic-bombings-of-hiroshima-and-nagasaki` | `world-war-ii` | By span and subject, because the item's `P361` is `Q590545`, air raids on Japan, which is not a record here. 6 to 9 August 1945 is inside the umbrella's span. The subject: the record's own lead places it *"during the final days of World War II"* and its § Background is the Allied preparation for the invasion of Japan; the bombings were an operation of that war by the parties to it, and nothing in the article makes them a separate quarrel. Not filed under `pacific-war`, which would be the narrower and better umbrella, because this atlas does not hold it — `Q184425` is named as a candidate left in `docs/m42-pool.md`'s batch 92 note, and a fire that imports it should re-read this filing. |
+
+**Main is 234 before and 234 after**: both records arrived or were filed, and
+neither reached the resting picture.
+
+## Batch 93 — the third side of batch 92's argument, filed under `world-war-ii`
+
+| record | parent | why |
+| --- | --- | --- |
+| `soviet-invasion-of-manchuria` | `world-war-ii` | By span and subject, because the item's own `P361` values are `Q220602`, the Soviet–Japanese War, and `Q5865416`, the history of Manchuria, and this atlas holds neither. 8 to 20 August 1945 is inside the umbrella's 1939-09-01 to 1945-09-02. The subject: the article's first sentence makes it the Soviet Union's invasion of the Empire of Japan's puppet states, and its § Summary gives the reason for its timing as the Allies' own agreements — *"the Soviet Union entered World War II's Pacific Theatre within three months of the end of the war in Europe"* — so it is an operation of that war by the parties to it and not a separate quarrel. Not filed under `second-sino-japanese-war`, which the article's categories name and no statement in it does, and not under `pacific-war`, which this atlas still does not hold — `Q184425` is still the candidate `docs/m42-pool.md` names, and the fire that imports it should re-read this filing with batch 92's two. |
+
+**Main is 234 before and 234 after.**
+
+## Batch 94 — the conference the invasion's own article names as its cause
+
+| record | parent | why |
+| --- | --- | --- |
+| `tehran-conference` | `world-war-ii` | By span and subject, because the item carries **no `P361` at all**. 28 November to 1 December 1943 is inside the umbrella's 1939-09-01 to 1945-09-02. The subject: the article's own first sentence makes it *"a strategy meeting of the Allies of World War II"*, and everything it settled — Overlord, the second front, the Soviet entry against Japan — is that war's conduct. `potsdam-conference`, the same shape of record, has been filed under the same umbrella since M62, and `yalta-conference`, the third of the Big Three conferences, is not here: its lane is Europe, so it is M42b's. |
+
+**Main is 234 before and 234 after.**
+
+## Batch 95 — the conference before Tehran, and the first Africa filing in six batches
+
+| record | parent | why |
+| --- | --- | --- |
+| `cairo-conference` | `world-war-ii` | By span and subject; the item carries no `P361`. 22 to 26 November 1943 is inside the umbrella's 1939-09-01 to 1945-09-02. The subject: the article's first sentence calls it *"one of fourteen summit meetings during World War II"* and says it *"outlined the Allied position against the Empire of Japan during World War II"* — the same reading `potsdam-conference` and `tehran-conference` are filed under, and with less to judge than either, because the article names the war twice in one sentence. **Its lane is africa**, which makes it the first record this lane has filed in the trailing lane since batch 91: A6 forbids raising the main count and every other African gap of weight falls outside both African umbrellas, but this one falls inside a third umbrella the atlas has held since M62. |
+
+**Main is 234 before and 234 after.**
+
+## Batch 96 — the theatre itself, and the P361 the atlas does not hold
+
+| record | parent | why |
+| --- | --- | --- |
+| `north-african-campaign` | `world-war-ii` | The item **does** carry a `P361` and it is not an umbrella this atlas holds: `Q696817`, the Mediterranean and Middle East Theatre of World War II. A8 says a filing writes every umbrella that fits, and the only one here is `world-war-ii` — 10 June 1940 to 16 May 1943 is inside its 1939-09-01 to 1945-09-02, and the article's own first words are *"The North African campaign of World War II"*, which is the subject stated by the title. The two African umbrellas do not reach it: `scramble-for-africa` closes in 1914 and `decolonisation-of-africa` opens in 1954. **Its lane is africa**, the second African filing in two batches, and it is the first record in the trailing lane that is itself an umbrella — Operation Torch, the Western Desert campaign, El Alamein and the Tunisian campaign are all its `P527` or its lead's own list, and every one of them would file inside it at +0 main. |
+
+**Main is 234 before and 234 after.**
+
+## Batch 97 — the conference that decided Sicily, and the fourth filing in the trailing lane
+
+| record | parent | why |
+| --- | --- | --- |
+| `casablanca-conference` | `world-war-ii` | By span and subject; the item carries no `P361`. 14 to 24 January 1943 is inside the umbrella's 1939-09-01 to 1945-09-02. The subject needs no reading at all: the item's `P2348` — the time period it belongs to — **is `Q362`, `world-war-ii`'s own item**, which is the closest thing to a stated filing any candidate in this lane has brought, and the first sentence says the conference was held *"to plan the Allied European strategy for the next phase of World War II"*. **Its lane is africa**, from the place record `casablanca` this batch wrote: the fourth African filing in three batches and the third inside this one umbrella, which is what §1b of the batch-95 stand predicted would happen once the lane stopped waiting on an umbrella of its own. |
+
+**Main is 234 before and 234 after.**
+
+## Batch 98 — the first two records filed inside an umbrella this lane wrote itself
+
+| record | parent | why |
+| --- | --- | --- |
+| `operation-torch` | `north-african-campaign` | The item's `P361` is `Q362`, `world-war-ii`'s own item, and 8–16 November 1942 is inside that umbrella's span — but it is also inside `north-african-campaign`'s 1940-06-10 to 1943-05-16, whose own lead names Torch as one of the three campaigns it included (*"in Morocco and Algeria (Operation Torch)"*), and **the campaign is itself filed under `world-war-ii`**. So the tighter umbrella is the only parent. **This batch first wrote both and the check refused it** — `tests/m42-filing.test.mjs`, *"no parent of an event is reachable through another of its parents"*, and its comment is the rule: *"A second parent earns its place by being somewhere the first does not reach."* A8's *every umbrella that fits* means every umbrella that **adds** something, which is what the owner's own example is — Angola's independence is under the Portuguese third republic **and** African decolonisation, and neither contains the other. Deviation 1564. |
+| `tunisian-campaign` | `north-african-campaign` | The same, and here the property says it outright: **`P361` is `Q218678`, the record batch 96 of this very fire wrote**. It is the first time either records lane has filed a record from a `P361` naming an umbrella the same fire created. 17 November 1942 to 13 May 1943 is inside its span. |
+
+**Main is 234 before and 234 after.**

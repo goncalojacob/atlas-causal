@@ -24694,6 +24694,89 @@ M42 started 2026-10-01T21:18:58Z by scheduled
 M42 started 2026-10-01T23:30:14Z by scheduled
 M42 started 2026-10-02T02:07:00Z by scheduled
 M42 started 2026-10-02T05:07:34Z by scheduled
+M42 started 2026-10-02T08:07:42Z by scheduled
+M42 started 2026-10-02T12:16:46Z by scheduled
+M42 started 2026-10-02T16:08:24Z by scheduled
+M42 started 2026-10-02T19:07:21Z by scheduled
+
+**M42 batch 99 — the Western Desert campaign, and the vein below it closed, 2 October.**
+The fire that claimed at 19:07Z found `## Curation 2026-10-02` already in the pool
+file and so was an **import fire**; every A14 and A15 pass already has its section
+and none was re-run. It took the one row of batch 98's vein it could connect and
+left four, and the reason it left them is the correction this fire's note is mostly
+about: **the stand after 98 said El Alamein and the Western Desert campaign were a
+pair with an edge between them, and `Q153376`'s own `P361` is `Q625798`** — so
+their one edge is a parent's to its own child, which A14's C8 rule forbids. The same
+holds for the three `P527` the new record now has. **Everything below
+`north-african-campaign` is unreachable by any edge a batch may write.**
+
+**Two records and one edge.** `western-desert-campaign`, `Q625798`, 27 sitelinks,
+11 June 1940 to 4 February 1943, filed under `north-african-campaign` alone (its own
+`P361`, and `world-war-ii` is reachable through it — deviation 1564's rule), place
+**`western-desert`**, which is the second record: `Q14314106`, 23 sitelinks,
+`(28.4167, 26.5833)`, `region`. One class added to the table, `Q8514` desert, at
+`region`, read from the item itself; **without it A9's chain would have fallen
+through to `P17` and replaced a desert with a country.** The edge is
+`western-desert-campaign--tunisian-campaign--caused`, `probable`, on the campaign's
+own § Analysis — and it is the edge batch 98's own explanation asked for by name,
+the eastern half of the pincer the Torch edge is the western half of.
+
+**A15(5) earned its place twice in one edge.** The obvious quote was the lead's, and
+`verdictFor` refused it: *"the quote names a third event the atlas holds as the
+cause"*, `reattribute: operation-torch` — the edge from Torch already exists, so the
+lead's sentence would have written one argument twice. The § Analysis sentence names
+no third held event and returns `write: true`.
+
+**What was left, and by what.** Four candidates to C8 (El Alamein `Q153376`, the
+Italian invasion of Egypt `Q698421`, Gazala `Q327035`, Alam el Halfa `Q541997` — all
+children of records this atlas holds); one to the absence of a stated cause (the East
+African campaign `Q1052120`, whose article and the Second Italo-Ethiopian War's were
+both read at a revision and neither states that the one brought about the other —
+**a date is not a claim and this fire did not write one**); and three more meetings
+of the missing sixth edge type, all the same shape, *an article states that one event
+changed how a war already running was fought*. **C8 has now cost this vein nine edges
+and the missing type seven**, and `greco-italian-war` and `second-italo-ethiopian-war`
+are both in the 795, so at least five of those sixteen would have reached it.
+
+**The counts.** Active events 1,466 → **1,467**; **main 234 → 234**; active edges
+1,237 → **1,238**; largest component **795 before and after**; components 441 → 441;
+events with no edge 340 → 340; **edges crossing an umbrella (A15(11)) 619 → 619** —
+the new edge is *inside* `north-african-campaign`, both ends being its children, which
+is why that number does not move. Place records 799 → 800. Per lane (A10): **Africa
+255/35 → 256/35**, Asia 259/57, Americas 396/56, Europe 556/86 — **Africa now trails
+Asia by three**, where six batches ago it trailed by nine. `node tools/validate.mjs
+--index`: **0 errors, 637 warnings**, the same warning count as before the batch.
+`node tools/cache-evidence.mjs`: **0 revisions that should be on disk and are not**,
+over all 3,080 citations (A15(2), the last step of the batch).
+
+**`docs/m53-polities.md` §4.1 retaken**, with `tools/m53-retake.mjs --write`: the new
+record names two actors alive in 1940, so the start-rule figure is **412 of 1,467**
+and the overlap figure 413. The two current copies of the figures paragraph were
+updated and **the two stale ones were again left alone**, for deviation 1563's reason.
+
+**Deviation 1569 — `review.note` is 500 characters and this lane's note has reached
+it.** Rule 1 refused both of this batch's records on `/review/note` before anything
+else: 810 characters on the event and 535 on the place, against the schema's
+`maxLength: 500`. The shape is not padding — one clause per pass (A6/A8, A9, A15(4),
+A15(7), A15(12), A11(a)) — and batch 98's records sit at 472, so the ceiling was two
+passes away and nothing said so. The note was cut twice and **the Kingdom of Italy
+refusal came out of it**, which belongs on the record and not only in a pool file.
+
+### The check, on this fire's heads
+
+Locally on `79930ee98`: **1,941 pure tests, 1,941 passing, 0 failing, 0 skipped**,
+and **313 browser tests, 313 passing, 0 failing, 0 skipped**, both exit 0. One real
+failure was met before the index was rebuilt and fixed rather than assumed away: run
+on the record head reported `docs/m53-polities.md §4.1 says 411 counted by the start
+rule` against a measured 412, which is the retake above; the other eleven were rule
+16 on the stale index and went with `tools/build-index.mjs`.
+
+**Run 2469 on `66d2fe649` concluded `success`** — the head this entry was written on,
+with the records, the index, the pool note and this account all on it. Runs 2466, 2467
+and 2468, on the record head, the index head and the pool-note head, were each
+**cancelled by the push that superseded them** and none of them was red: the one red
+thing this fire met was local, is § the check above, and was fixed before the first
+push.
 
 **M42 batch 87 — the inverse vein measured, and three umbrellas off it, 1 October.**
 The fire that claimed at 23:30Z merged `origin/m0`, then answered the first of the
@@ -25067,3 +25150,214 @@ both level, which is the measurement saying the atlas is gaining events faster t
 Africa **245** and Asia **255** against A10's 303, so A15(1)'s pause holds.
 
 M42b started 2026-10-02T04:36:39Z by scheduled
+
+**M42 batches 90 and 91 — the Moroccan question and the Bizerte crisis, 2 October.**
+The 08:07Z fire claimed, merged `origin/m0` (clean, and the merged index was
+already byte-identical to a fresh build), and found today's
+`## Curation 2026-10-02` section already in the pool file, so STEP 3 made it an
+import fire; all six A14 passes and all thirteen A15 passes already have their
+sections and were skipped. **Deviation 1547** is the network finding and the most
+reusable thing in it: Wikimedia is rate-limiting this sandbox's address to **one
+request a minute** during an active WDQS outage, and that limit covers `api.php`
+on both projects, `Special:EntityData` and the REST summary endpoint — but
+**`Special:Export/<title>` (wikitext *and* revision id),
+`wikidata.org/w/rest.php/wikibase/v1/entities/items/<Q>` (the whole item) and
+`query.wikidata.org/sparql` answered 200 on every attempt.** A fire that finds
+`api.php` refusing is not a fire with no network; the fallbacks belong in
+`tools/import/wikidata.mjs` and that is a line for the owner.
+**Batch 90** took the one gap inside `scramble-for-africa`'s span:
+`first-moroccan-crisis`, `agadir-crisis` and `treaty-of-fes`, all three filed
+under it by A6's span and subject — their own articles carry the
+`{{Scramble for Africa}}` navbox — with places `tangier` and `fez-morocco` from
+`P276`, and `agadir-crisis` left placeless because A15(6) refuses
+`morocco-q1028` (the item's first `P571` is 1956, after the event ended). Four
+edges, **three of them crossing an umbrella** and reaching `world-war-i` and
+`entente-cordiale`, which were already in the largest component. A15(5) refused
+two edges at the point of writing and with the first of them a whole record:
+`battle-of-omdurman` to `fashoda-incident`, where both articles state only
+sequence and the causation in the sentence runs the other way, so Omdurman was
+left as a candidate rather than imported edgeless.
+**Batch 91** asked the same question of the other African umbrella and found the
+window nearly closed: a SPARQL sweep of 1954–1976 African events at 14 sitelinks
+or more returns **13 items and the atlas holds 9**. `bizerte-crisis` (Q879267)
+was the one that fitted, and its own infobox names `decolonisation of Africa` as
+its umbrella, so the filing is the source's. One edge,
+`algerian-war--bizerte-crisis--precondition-of`; not a parent, because the
+article calls the crisis the spillover of that war and the two have different
+places.
+**The counts: 1,453 → 1,457 active, main level at 234 throughout, 1,223 → 1,228
+active edges, and the largest connected component 786 → 789 → 790 — the first
+time it has moved in four fires.** Components unchanged at 440 and events with no
+edge unchanged at 341, because every new record joined the existing component
+instead of forming its own. Edges crossing an umbrella 615 → 618. Per lane,
+Africa 246 → 250 active and Asia 255, so Africa still trails. Validator **0
+errors, 637 warnings** — the same 637 the fire started with — and locally
+**1,941 pure tests and 313 browser tests, all passing, 0 skipped**.
+**What this fire leaves as the one blocker worth the owner's attention:** every
+remaining unheld African event of real weight — Mau Mau, the Mahdist War, the
+Ethiopian Revolution, the Mozambican Civil War, the Uganda–Tanzania War, the
+Tigray War, the First Libyan Civil War and nine more — falls **before 1885 or
+after 1976**, so none fits either of Africa's two umbrellas and none can be
+imported without raising the main count. The Mozambican Civil War's own `P361`
+is the Cold War, and there is no Cold War record in `data/events/`. A6 would
+allow that umbrella; the previous stands list the period-umbrella question as the
+owner's, and a worldwide 1947–1991 umbrella would re-file a large part of the
+corpus in one move, so this fire did not create it. Four chains with held far
+ends are waiting behind that one decision, and the pool file's stand names them.
+Deviation 1547; `origin/m42b` stood at 1540 when batch 89's fire read it.
+
+**M42 batch 92 — the surrender of Japan, the atomic bombings, and the atlas's
+clearest disputed edge, 2 October.** The same 08:07Z fire, third batch. Asia and
+not Africa, said plainly in the note: both African umbrellas' windows are now read
+out and every remaining African gap of weight falls outside both, so A6 forbids
+importing any of them until the Cold War umbrella is decided. `surrender-of-japan`
+(Q6540361, 55 sitelinks) filed from its own `P361`, `Q362` = `world-war-ii`, place
+`tokyo-bay`; `atomic-bombings-of-hiroshima-and-nagasaki` (Q488, **102 sitelinks,
+the highest-sitelink gap in the atlas**) filed by span and subject, place
+`hiroshima` from the first of its two `P276` values. `Q4688003` added to the class
+table at `war`; `Q29431432`, dyad, refused as a class that says how many things an
+item groups rather than what kind of event it is.
+**The edge worth the owner's attention.**
+`atomic-bombings-of-hiroshima-and-nagasaki--surrender-of-japan--caused` is written
+**`disputed`**, because both cited articles say in so many words that this is the
+link historians argue about — the surrender article's lead: *"The role of the
+atomic bombings in Japan's unconditional surrender, and the ethics of the two
+attacks, is debated."* `dispute.text` names both sides out of the articles and out
+of the emperor's own two statements, the 14 August broadcast that names the bombs
+and the 17 August rescript that names the Soviet declaration of war instead. It is
+the first edge either lane has written where the sources themselves say the link is
+contested, which is what the project's hardest rule is for. The competing cause it
+names, the Soviet invasion of Manchuria, is not yet a record here, and the stand
+names it as the next batch.
+Refused: `potsdam-declaration` to the bombings, because the bombings article dates
+the bombing orders to 25 July, the day before the declaration.
+**Counts: 1,457 → 1,459 active, main level at 234, 1,228 → 1,230 active edges,
+largest component 790 → 792.** Over the whole fire: **1,453 → 1,459 active, main
+234 throughout, 1,223 → 1,230 edges, component 786 → 792, edges crossing an
+umbrella 615 → 618**, components unchanged at 440 and events with no edge unchanged
+at 341. Africa 246 → 250, Asia 255 → 257. Validator **0 errors, 637 warnings**
+throughout; locally **1,941 pure and 313 browser tests, all passing, 0 skipped**.
+**Deviation 1548:** A9's own-`P625` step can only *reuse* a place, and the reuse
+matches a folded name as well as a point — but an event item's names never fold to
+a place's, so an event standing on top of a held place walks past it and falls
+through to its country. `surrender-of-japan` would have been placed on the Empire
+of Japan's centroid; `tokyo-bay`, 0.06° away, was written by hand. The fix is a
+point-only reuse at that one step, which is a change to the import tool and so a
+line for the owner. **A line for a records lane instead:** a filing owes its
+paragraph to `docs/m62-umbrellas.md` or `docs/m67-umbrellas.md` **in the same
+commit as the record**, not only to the pool file; two of this fire's intermediate
+commits were red for exactly that.
+
+**M42 batches 93, 94 and 95 — one chain, three conferences back, and Africa moved,
+2 October.** The fire that claimed at 12:16Z took the candidate the previous stand
+named and then followed it backwards twice. **Batch 93:**
+`soviet-invasion-of-manchuria` (Q6165880), which batch 92's `disputed` edge named
+as the competing cause of the surrender of Japan and could not point at, with
+`caused` to `surrender-of-japan` and `precondition-of` to `korean-war`, the second
+crossing an umbrella. **Batch 94:** `tehran-conference` (Q150974), because the
+invasion's own article says its timing *"was determined by the timing of the
+agreements at Tehran and Yalta"* — Tehran derives asia and Yalta derives Europe,
+so the Yalta Conference (`Q161227`) is handed to M42b with its id resolved by
+SPARQL. **Batch 95:** `cairo-conference` (Q696894), found in Tehran's own first
+sentence, **lane africa** — the first record this lane has put in the trailing
+lane since batch 91, and the method that made it possible is one sentence:
+`world-war-ii` is a worldwide umbrella, so an African event of that war files at
++0 main without the Cold War umbrella the last four stands have been waiting on.
+Over the fire: **1,459 → 1,462 active, main 234 throughout, 1,230 → 1,234 edges,
+largest component 792 → 795, edges crossing an umbrella 618 → 619**, components
+unchanged at 440 and events with no edge unchanged at 341. **Africa 250 → 251**,
+Asia 257 → 259. Validator **0 errors, 637 warnings** throughout; locally **1,941
+pure and 313 browser tests, all passing, 0 skipped**. **Deviation 1557:** A9's
+own-`P625` reuse step met the shape of 1548 from the other side — the Soviet
+invasion of Manchuria's point `(125, 49)` is 4° from the held `manchuria`, a
+region-precision place that is the thing the event happened inside, and the reuse
+was made by hand through the item's own `P276` chain rather than by point or name.
+**Two lines for a records lane.** The index must be rebuilt **after** the records
+commit exists, not before: the history shards are built out of the repository's
+own commits, and three of this fire's index commits were stale for exactly that
+reason. And a record with no category carries **no `category` key**, not
+`"category": null`, which `tests/bundle.test.mjs` refuses.
+**Deviation 1562** (renumbered from 1558, which `origin/m42b` had taken while this
+fire was running): `tests/m83-browser.test.mjs`'s B8 was wrong about its own
+picture in two ways and this fire's three children of `world-war-ii` were enough
+to trip both — it measured the emptiest point of the graph to bounding-box
+centres, so a point on top of a long diagonal edge read as far from everything,
+and it measured before the picture stopped moving. Now it waits for the count of
+marks and lines to hold still and measures to the ink. The check was red once for
+that and nothing was skipped or disabled.
+
+**M42 batches 96 and 97 — the North African campaign and the conference that
+decided Sicily, 2 October.** The fire that claimed at 16:08Z took the vein the
+previous stand put first and named *"the most valuable thing in this file"*:
+`world-war-ii` is a worldwide umbrella, so an African event of that war files at
+**+0 main** without the Cold War umbrella four stands have been waiting on.
+**Batch 96:** `north-african-campaign` (Q218678, 50 sitelinks), 10 June 1940 to
+16 May 1943, **no place** — the item has no `P625` and a `P276` of five
+territories, and a campaign fought from Morocco to the Nile delta is not Cairo,
+which is the judgement `eastern-front` already carries — lane **africa** from
+that first located point, filed by span and subject because its `P361`
+(`Q696817`, the Mediterranean and Middle East Theatre) is not a record here.
+One edge, `enabled` to `allied-invasion-of-sicily`, on the article **that record
+already cites at the revision it already cites**: *"With the conclusion of the
+North Africa campaign in May 1943 … decided to attack Axis forces in Europe via
+Italy."* That record had **degree 0**, so the edgeless count fell 341 → 340.
+**Batch 97:** `casablanca-conference` (Q502093, 42 sitelinks) and the place
+`casablanca` (Q7903) written from the third step of A9's chain, with `caused` to
+`allied-invasion-of-sicily` on the lead's *"Of all the decisions made, the most
+important was the Allied invasion of Sicily."* Over the fire: **1,462 → 1,464
+active, main 234 throughout, 1,234 → 1,236 edges, largest component 795
+unchanged**, components 440, events with no edge 341 → 340, edges crossing an
+umbrella 619 and inside one 615 → 617. **Africa 251 → 253**, Asia 259 — the
+trailing lane has closed from nine behind to six in five batches, and all five
+were +0 main. Validator **0 errors, 637 warnings** throughout; locally **1,941
+pure and 313 browser tests, all passing, 0 skipped**. **Deviation 1563:**
+`docs/m53-polities.md` carries its §4.1 figures paragraph **four times**, two
+now reading 409 and 410 and two still reading 400 and 401 from an earlier size;
+`tools/m53-retake.mjs --write` moves only the table row and the paragraph is
+hand-written, and `tests/m53.test.mjs` reads the first copy. This fire updated
+the two current copies and **did not delete the stale two**, because they are
+very likely the other records branch's side of a merge and deleting another
+lane's text is not this one's call. **Three lines for the owner, all in the
+stand.** A sixth edge type: four times in two fires an article has stated that
+one event changed how a war **already running** was fought, and none of the five
+types says it — three of those four would have joined this fire's whole cluster
+to the largest component. A15(6)'s gate should refuse a `P276` naming more than
+one located territory exactly as it refuses a `P17` naming more than one
+country; it has now been walked round by hand twice. And `P2348` — the time
+period an item belongs to — should sit in the filing pass behind `P361`:
+Casablanca's is `Q362` outright.
+
+**M42 batch 98 and the filing the check refused, 2 October.** The same fire,
+continuing. **Batch 98:** `operation-torch` (Q194132, 51 sitelinks) and
+`tunisian-campaign` (Q852365, 35 sitelinks), the first two children of the
+umbrella batch 96 wrote, with the place `french-protectorate-of-tunisia`
+(Q2017684) and one class added to the import's table — `Q164142`, protectorate,
+as a `place` at `region` on Q133156's precedent, read from the item itself. The
+campaign's `P361` is `Q218678`, **the record this same fire wrote three hours
+earlier**, which is the first time either records lane has filed from a `P361`
+naming an umbrella the fire created. Its end is widened from 9 to 13 May 1943
+under A7, from the article at the revision cited, and its title is the article's
+and not the item's *"Tunisia campaign"*. One edge, `caused` from Torch to the
+campaign, on the campaign's own lead naming *"the success of Operation Torch"*
+as one of the two things that drove the Axis into Tunisia. **Deviation 1564:**
+the batch first filed both records under **both** `world-war-ii` and
+`north-african-campaign`, reading A8's *every umbrella that fits* literally, and
+pushed it; the branch check went red on `tests/m42-filing.test.mjs`'s *"no parent
+of an event is reachable through another of its parents"*, whose own comment is
+the answer — *"A second parent earns its place by being somewhere the first does
+not reach"*, which is exactly what the owner's Angola example is. Both now carry
+`north-african-campaign` alone. **The validator does not catch this and the test
+does**: `node tools/validate.mjs` read 0 errors on the parent list the check then
+refused, which is a line worth keeping for a lane that validates before it
+pushes. Over the whole fire, batches 96 to 98: **1,462 → 1,466 active, main 234
+throughout, 1,234 → 1,237 edges, largest component 795 unchanged, components 440
+→ 441, events with no edge 341 → 340, edges crossing an umbrella 619 and inside
+one 615 → 618, places 797 → 799. Africa 251 → 255, Asia 259** — the trailing lane
+has closed from nine behind to four in six batches, every one of them +0 main.
+Validator **0 errors, 637 warnings**; `cache-evidence` **0 revisions missing**;
+`docs/m53-polities.md` §4.1 retaken at **411 and 412 of 1,466**. **The check,
+green on this fire's head: run 2449 on `f1202f24e` concluded `success`**, after
+run 2447 on `b0d15798b` was red for deviation 1564 and run 2446 on `2e2e2603d`
+was green. Locally on the final head: **1,941 pure tests, 1,941 passing, 0
+failing, 0 skipped**, and **313 browser tests, 313 passing, 0 failing, 0
+skipped**.

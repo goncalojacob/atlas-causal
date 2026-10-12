@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "entente-cordiale--treaty-of-fes--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-90"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Fes\", revision 1361628067"
+    }
+  ],
+  "from": "entente-cordiale",
+  "to": "treaty-of-fes",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The treaty’s own article names the 1904 agreements as what had already given Morocco to France. “Treaty of Fes”, at revision 1361628067, § French concessions to competing powers: “Private agreements among the United Kingdom and France in 1904, collectively known as the Entente Cordiale, made without consulting the sultan, had divided the Maghreb into spheres of influence, with France given Morocco.” The section is the article’s account of how the French protectorate became available to be signed for, and it is the first thing in it. `precondition-of`: the Entente settled whose Morocco it would be and the treaty is where that was executed eight years later, which is not the same as the Entente causing the treaty. `probable` under rule 22.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

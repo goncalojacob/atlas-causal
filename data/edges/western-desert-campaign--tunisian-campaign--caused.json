@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "western-desert-campaign--tunisian-campaign--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-99"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Western Desert campaign\", revision 1377719249"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Western Desert campaign\", revision 1377719249: \"The Axis forces retreated through Libya into Tunisia and fought the Tunisian campaign\""
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tunisian campaign\", revision 1375742094"
+    }
+  ],
+  "from": "western-desert-campaign",
+  "to": "tunisian-campaign",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "“Western Desert campaign”, at revision 1377719249, § Analysis: “The Axis forces retreated through Libya into Tunisia and fought the Tunisian campaign, eventually to be trapped between the Anglo-American forces of the First Army to the west and the Eighth Army from the east.” This is the second edge `operation-torch--tunisian-campaign--caused` asked for by name: that edge’s own source, the Tunisian campaign’s lead, names two things that drove the Axis into Tunisia — “their defeat in the Western Desert and the success of Operation Torch” — and only one of them was a record this atlas held. The two edges are the two halves of the same pincer, east and west, and the article above states the eastern half in its own words. `caused` rather than `precondition-of`, to read beside its twin: the article does not say the Western Desert campaign made the Tunisian campaign possible, it says the Axis army the Tunisian campaign was fought against is the one the Western Desert campaign drove into Tunisia. A15(5): the quote opens with no chronological opener and names no third event this atlas holds, so `verdictFor` returns `write: true` — the lead’s version of the same sentence was refused, because it names Operation Torch and the edge from Torch is already written. `probable`, not `consensus`: A2 allows `consensus` only through a work Wikipedia cites, and rule 22 would refuse it on a Wikipedia citation anyway.",
+  "dispute": null
+}

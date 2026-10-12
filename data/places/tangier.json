@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "tangier",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q126148",
+  "wikipedia": {
+    "en": "Tangier",
+    "pt": "Tânger"
+  },
+  "sitelinks": {
+    "count": 125,
+    "on": "2026-10-02"
+  },
+  "sources": [],
+  "names": [
+    "Tangier",
+    "Tânger"
+  ],
+  "where": {
+    "lon": -5.8033522,
+    "lat": 35.7696302,
+    "precision": "city",
+    "label": "Tangier"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

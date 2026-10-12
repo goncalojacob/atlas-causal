@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "algerian-war--bizerte-crisis--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-91"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bizerte crisis\", revision 1370604378"
+    }
+  ],
+  "from": "algerian-war",
+  "to": "bizerte-crisis",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The war is what the article gives as the reason France still held the base the crisis was about. “Bizerte crisis”, at revision 1370604378, § Background: “After Tunisia gained independence from France in 1956, France remained in control of the city and its naval base, a strategic port on the Mediterranean, which played an important part in French operations during the Algerian War. France had promised to negotiate the future of the base, but had so far refused to remove it.” The article's own infobox files the crisis under “the decolonisation of Africa and the spillover of the Algerian War”, and its categories include “1961 in the Algerian War” and “Spillover of the Algerian War”. § Aftermath closes the circle, though as sequence and not as a claim: “The French finally handed Bizerte over on 15 October 1963, after the conclusion of the Algerian War.” `precondition-of` and not `caused`: what the article says the war did is make the base worth keeping, which is the condition the blockade answered, and Tunisia's decision to blockade is its own. `probable` under rule 22.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

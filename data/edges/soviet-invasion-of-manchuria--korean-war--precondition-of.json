@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "soviet-invasion-of-manchuria--korean-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-93"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Soviet invasion of Manchuria\", revision 1376133899"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Soviet invasion of Manchuria\", revision 1376133899, § Aftermath: \"would be a factor in the rise of the CCP and shape the political conflict of the Korean War\""
+    }
+  ],
+  "from": "soviet-invasion-of-manchuria",
+  "to": "korean-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "“Soviet invasion of Manchuria”, at revision 1376133899, § Aftermath, in two consecutive sentences: “The Soviet occupation of Manchuria, along with the northern portions of the Korean Peninsula, allowed for parts of those regions to be transferred by the Soviet Union into the control of local communists after the Soviet withdrawal in 1946… The control of these regions by communist governments backed by Soviet authorities would be a factor in the rise of the CCP and shape the political conflict of the Korean War.” The same article’s § Soviet plan says what the invasion itself was for in Korea: the 1st Far Eastern Front was “to prevent Japanese forces from escaping to Korea, and then invade the Korean Peninsula up to the 38th parallel, establishing in the process what later became North Korea”. `precondition-of` and not `caused`, because the article’s link runs through the occupation and the division the invasion established and it claims no more than that; `probable`, because “would be a factor in” is a cause stated and hedged.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

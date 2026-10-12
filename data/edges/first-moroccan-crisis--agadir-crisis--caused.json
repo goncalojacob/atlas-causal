@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "first-moroccan-crisis--agadir-crisis--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-90"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Moroccan Crisis\", revision 1370619540"
+    }
+  ],
+  "from": "first-moroccan-crisis",
+  "to": "agadir-crisis",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The first crisis is what the article gives as the reason the second one happened. “First Moroccan Crisis”, at revision 1370619540, § Consequence: “Kaiser Wilhelm II was angry at being humiliated and was determined not to back down again, which led to the German involvement in the Agadir Crisis (Second Moroccan Crisis).” That is a stated cause and not an order of events: the article names the disposition the first crisis left and says it is what led to the second. The far end’s own article agrees about the sequence — “Agadir Crisis”, § Background: “France’s pre-eminence in Morocco had been upheld by the 1906 Algeciras Conference, following the First Moroccan Crisis of 1905–06” — but states no cause there, so the citation is the first article and not that sentence. `probable` under rule 22.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

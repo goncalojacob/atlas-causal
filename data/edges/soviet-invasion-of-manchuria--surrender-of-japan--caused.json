@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "soviet-invasion-of-manchuria--surrender-of-japan--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-93"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Soviet invasion of Manchuria\", revision 1376133899"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Soviet invasion of Manchuria\", revision 1376133899, lead: \"often considered a major factor, alongside the atomic bombings, in the Japanese government’s decision to surrender\""
+    }
+  ],
+  "from": "soviet-invasion-of-manchuria",
+  "to": "surrender-of-japan",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "“Soviet invasion of Manchuria”, at revision 1376133899, lead: “The Soviet entry into the war against Japan and the defeat of the Kwantung Army are often considered a major factor, alongside the atomic bombings, in the Japanese government’s decision to surrender unconditionally by 15 August.” That is a cause stated and hedged, so `probable` and not `consensus`: the article says the link is widely held, not settled, and A2 allows `consensus` only through a work Wikipedia cites. The companion edge `atomic-bombings-of-hiroshima-and-nagasaki--surrender-of-japan--caused` is `disputed` and names this event in its own `dispute.text` as the competing cause; with this record the atlas holds both sides of that argument and a reader can walk it. The same article’s § Aftermath states the link again — “The invasion of Manchuria was a factor that contributed to the surrender of Japan and the end of World War II” — but A15(5) refuses that sentence as the locator because it names a third event this atlas holds, `world-war-ii`, which here is the parent and not the cause; the lead sentence carries the edge.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}
