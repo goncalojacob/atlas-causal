@@ -569,3 +569,31 @@ and `cold-war` are the quoted lead plus a paragraph the importer wrote about
 Portugal; that paragraph is cut to its first sentence, the quoted lead
 untouched. What waits for the owner is listed in the review's fix plan and
 in the standing orders' §6.
+
+**A16 (13 October). The parent-to-child rule removed.** The owner, on
+reading the planner's first day (*the clearest sentences it found were
+refused for being parent to child*): *"Ok let's remove the parent to child
+rule for now."* A14's standing rule that a batch writes no edge from a parent
+to its own child is withdrawn: where an article states it, a war may carry
+an edge to its own engagement and an engagement to its war, in either
+direction. The filing (`parent`) is unchanged, and so is every other refusal
+class. `tools/queue/queue.mjs` no longer asks `parentToChild` of a queued
+edge; `docs/m90-rules.md` card 11 says the same.
+
+**A17 (13 October). Importance first, and the bar withdrawn.** The owner:
+*"Right now the priority is to add most events of historical significance
+since around 1500, even if for now there is no parent or child for it. Just
+add all events that are relevant and connect them when you can. Start by
+adding the main and most important historical events and then progress to
+adding events that are not as important or that are children of the main
+events."* Three consequences. (1) §1's bar — a record earns its place by an
+edge — and A15(1)'s reading of it are withdrawn: an event of significance is
+imported whether or not an edge can be written today, and an edge is still
+written only where the article's sentence is verified (A5's standard, A15(5)).
+(2) The order of work is importance, read off Wikipedia's own vital-article
+levels and lists rather than judged by a model, with A10's lane balance as
+the tiebreak and about 1500 as the floor. (3) A6's clause that the main count
+must not rise yields to the main events the owner asked for first; the
+planner names in its note which records it made main. M91 is the tooling:
+a queue item may carry no edge, the writer imports it regardless, and the
+duplicate check reads titles as well as ids.

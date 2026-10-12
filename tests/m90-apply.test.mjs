@@ -200,9 +200,9 @@ test('an item part of whose edges fail is partial, and every refusal is named by
       edge({ from: 'fixture-event-deep-1900', type: 'enabled', quote: CHRONOLOGY, explanation: because(CHRONOLOGY) }), // 2 chronology, first half
       edge({ type: 'inspired', quote: THIRD, explanation: because(THIRD) }),                // 3 chronology, second half
       edge({ to: 'fixture-event-nowhere', from: QID, type: 'reacted-to' }),                 // 4 endpoint-missing
-      // The quote here names no third event, so the parent rule is what this
-      // edge falls at and not A15(5) ahead of it.
-      edge({ from: 'fixture-event-g', type: 'precondition-of', quote: FORCED, explanation: because(FORCED) }), // 5 parent-to-child
+      // An edge from the item's own umbrella: refused as parent-to-child until
+      // 13 October 2026, when the owner removed A14's rule; written since.
+      edge({ from: 'fixture-event-g', type: 'precondition-of', quote: FORCED, explanation: because(FORCED) }), // 5 written (parent to child)
       edge({ from: 'fixture-event-deep-1822', confidence: 'consensus', type: 'enabled' }),  // 6 confidence
       { ...edge({ from: 'fixture-event-deep-1755' }), type: 'led-to' },                     // 7 type
     ],
@@ -210,7 +210,7 @@ test('an item part of whose edges fail is partial, and every refusal is named by
   assert.equal(code, EXIT.ok);
   const [entry] = log.entries;
   assert.equal(entry.status, 'partial');
-  assert.deepEqual(entry.written.edges, [`fixture-event-deep-1969--${EVENT}--caused`]);
+  assert.deepEqual(entry.written.edges, [`fixture-event-deep-1969--${EVENT}--caused`, `fixture-event-g--${EVENT}--precondition-of`]);
   const by = new Map(entry.refusals.filter((r) => r.edge !== null).map((r) => [r.edge, r]));
   assert.equal(by.get(1).reason, 'quote-not-found');
   assert.match(by.get(1).detail, new RegExp(String(REVISION)));
@@ -218,7 +218,7 @@ test('an item part of whose edges fail is partial, and every refusal is named by
   assert.equal(by.get(3).reason, 'chronology');
   assert.match(by.get(3).detail, /fixture-event-deep-1900/, 'the second half names the third event');
   assert.equal(by.get(4).reason, 'endpoint-missing');
-  assert.equal(by.get(5).reason, 'parent-to-child');
+  assert.equal(by.has(5), false, 'the parent-to-child rule was removed by the owner on 13 October 2026');
   assert.equal(by.get(6).reason, 'confidence');
   assert.equal(by.get(7).reason, 'type');
   // And the umbrella that will not hold the date, which is not about an edge.
