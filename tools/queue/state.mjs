@@ -15,6 +15,12 @@
 //
 // Nothing here writes anything. `--json` is the same answer as an object, for
 // a script.
+//
+// "Active events with no place" (`noPlace`) counts the active events whose
+// `place` is not a string — no place record named at all. It is **not** the
+// pool files' "no place with a point" row, which also counted a place named
+// whose record has no point; the two are different numbers and a planner
+// comparing this with a pool file should not expect them to agree.
 
 import path from 'node:path';
 import { readFile, readdir } from 'node:fs/promises';
@@ -195,6 +201,7 @@ export async function state({
       noEdge: counts.noEdge,
       crossingAnUmbrella: counts.crossingAnUmbrella,
       insideOneUmbrella: counts.insideOneUmbrella,
+      // A `place` that is not a string, and not "no place with a point".
       noPlace: events.filter((e) => e.status === 'active' && typeof e.place !== 'string').length,
       errors: verdict.errors.length,
       warnings: verdict.warnings.length,
@@ -216,7 +223,7 @@ export function lines(out) {
   const c = out.corpus;
   const rows = [
     `active ${c.active} — main ${c.main}, filed ${c.filed}; active edges ${c.activeEdges}, between two active ${c.linksBetweenActive}`,
-    `components ${c.components}, largest ${c.largestComponent}; active events with no edge ${c.noEdge}, with no place ${c.noPlace}`,
+    `components ${c.components}, largest ${c.largestComponent}; active events with no edge ${c.noEdge}; active events whose place is not a string ${c.noPlace}`,
     `edges crossing an umbrella ${c.crossingAnUmbrella}, inside one ${c.insideOneUmbrella}`,
     `validator: ${c.errors} error(s), ${c.warnings} warning(s)`,
     '',

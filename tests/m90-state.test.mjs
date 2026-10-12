@@ -230,6 +230,9 @@ test('the print is under eighty lines, and says what it left out when it is not'
   assert.match(text, /queue: A \d+ waiting, B \d+ waiting/);
   assert.match(text, new RegExp(`umbrellas with fewer than ${THIN} children`));
   assert.match(text, /disputes still open: \d+/);
+  // The no-place row says what it counts: a `place` that is not a string, and
+  // not the pool files' "no place with a point" (review of 12 October, 8).
+  assert.match(text, new RegExp(`active events whose place is not a string ${out.corpus.noPlace}\\b`));
   // A longer answer is cut and says so rather than running past the rule.
   const long = trimmed(Array.from({ length: 200 }, (_, i) => `line ${i}`));
   assert.equal(long.length, MAX_LINES);
