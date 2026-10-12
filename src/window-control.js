@@ -74,7 +74,7 @@ const plural = (n) => (n === 1 ? 'event' : 'events');
 //
 // No escaping: it is written here, in the interface's own words, and nothing
 // in it came out of `data/`.
-export const MAIN_EVENT_HINT = 'A main event is one that is not part of any larger event. Open a war or a regime and what happened inside it appears.';
+export const MAIN_EVENT_HINT = 'A main event is an event that no larger event contains. Open a war or a regime to see the events inside it.';
 
 // And the one note beside it (M82, A5): how many of the events in the window
 // the map has no point for at all. It sat on the map as a permanent paragraph
@@ -114,8 +114,8 @@ export const WINDOW_CONTROL_HTML = `
       <button type="button" class="pin" title="Draw every event again, wherever the map is looking">show the world</button>
     </p>
     <p class="window-standing">
-      <span class="window-unplaced" title="An event with no place record has no point on the map. It is drawn on the timeline and in the graph, and it is in every count here."></span>
-      <span class="window-read" title="How many of the events in view a person has read and signed. Nothing here changes what is drawn: a draft is drawn exactly as a signed record is."></span>
+      <span class="window-unplaced" title="An event with no place record has no point on the map. The timeline and the graph still draw it, and every count here includes it."></span>
+      <span class="window-read" title="How many of the events in view a person has read and signed. The views draw a draft and a signed record the same way."></span>
     </p>`;
 
 export function createWindowControl(group, { atlas, state }) {

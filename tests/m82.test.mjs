@@ -76,7 +76,7 @@ test('A3: the first screen says what the atlas is, in one sentence, in plain wor
   assert.doesNotMatch(prose, /\bfocus(ing|es|ed)?\b/i, '"focus" likewise');
 
   // And what a main event is, said once where the word is used.
-  assert.match(MAIN_EVENT_HINT, /not part of any larger event/);
+  assert.equal(MAIN_EVENT_HINT, 'A main event is an event that no larger event contains. Open a war or a regime to see the events inside it.');
 });
 
 // 2 — A2. The review vocabulary is off the demo, behind one flag, and the
