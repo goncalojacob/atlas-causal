@@ -130,7 +130,7 @@ test('an event card renders head, summary and the collapsed sections with their 
       summary: document.querySelector(".panel .summary p").textContent.slice(0, 40),
     };`);
     assert.equal(head.chips.length, 6);
-    assert.match(head.role, /Armed Forces Movement — leader/);
+    assert.match(head.role, /Armed Forces Movement: leader/);
     assert.match(head.summary, /^Units led by the Armed Forces Movement/);
   });
 });

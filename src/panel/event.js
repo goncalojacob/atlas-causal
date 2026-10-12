@@ -42,8 +42,8 @@ export const ACTOR_TYPE_LABEL = Object.freeze({
 // confidence is one of the things the reader opened the card to read and a
 // sentence nobody hovers for is a sentence nobody reads.
 export const CONFIDENCE_HINT = Object.freeze({
-  consensus: 'accepted; at least two independent sources',
-  probable: 'supported by the cited sources, no known dissent',
+  consensus: 'accepted, with at least two independent sources',
+  probable: 'supported by the cited sources, with no known dissent',
   disputed: 'qualified historians disagree about this link',
 });
 
@@ -115,10 +115,10 @@ function generatedWalkHtml(ctx, state) {
   const provenance = walkProvenance(ctx.walk?.(), state.chain ?? []);
   if (!provenance) return '';
   const steps = provenance.steps.length;
-  return `<p class="notice generated">The <strong>atlas</strong> put this path together on ${esc(provenance.on)},
-    to answer “${esc(provenance.question)}” — you did not walk it.
-    Each of its ${esc(steps)} ${steps === 1 ? 'step' : 'steps'} is a link somebody wrote, with its confidence
-    and its dispute marks unchanged. Nothing on it was written by a machine.</p>`;
+  return `<p class="notice generated">The <strong>atlas</strong> put this path together on ${esc(provenance.on)}
+    to answer “${esc(provenance.question)}”. You did not walk it.
+    Each of its ${esc(steps)} ${steps === 1 ? 'step' : 'steps'} is a link a person wrote. The links keep their
+    confidence and dispute marks.</p>`;
 }
 
 // The actors of one event as chips in the head, with what each did in it.
@@ -135,7 +135,7 @@ function actorChipsHtml(ctx, event, highlighted) {
     // that says what this actor did *here*, and the chip has room for a name
     // and nothing else.
     const did = note ? `${role}, ${note}` : role;
-    return `<button type="button" class="chip${actor === highlighted ? ' highlighted' : ''}" data-action="actor" data-id="${esc(actor)}" title="${esc(`${record.name} — ${did} (${type})`)}">${esc(record.name)}<span class="role"> · ${esc(role)}</span></button>`;
+    return `<button type="button" class="chip${actor === highlighted ? ' highlighted' : ''}" data-action="actor" data-id="${esc(actor)}" title="${esc(`${record.name}: ${did} (${type})`)}">${esc(record.name)}<span class="role"> · ${esc(role)}</span></button>`;
   });
   return `<p class="chips" aria-label="Who is in it">${chips.join(' ')}</p>`;
 }
@@ -198,7 +198,7 @@ function branchesHtml(ctx, list, selectedId) {
   // One tier is not a grouping: it is the same list with a header nobody needs.
   if (tiers.length <= 1) return `<ul class="edges">${list.map(row).join('')}</ul>`;
   return tiers.map((tier, i) => `<details class="branch-tier" data-depth="${tier.depth}"${i === 0 ? ' open' : ''}>
-    <summary>${tier.depth === 1 ? 'Fed this event directly' : `${tier.depth} steps up`}
+    <summary>${tier.depth === 1 ? 'Led directly to this event' : `${tier.depth} steps back`}
       <span class="count">${tier.count}</span></summary>
     <ul class="edges">${tier.rows.map(row).join('')}</ul>
   </details>`).join('');
@@ -235,15 +235,15 @@ export function largeEventHtml(ctx, event) {
   const large = largeEvent(ctx.atlas, event);
   if (!large) return '';
   const onTheMap = large.scope === 'worldwide'
-    ? 'the map names it in its corner instead of washing the whole world, which would put a film over every coastline and mark'
+    ? 'The map names it in its corner. Shading the whole world would cover every coastline and mark.'
     : large.region
-      ? `the map washes ${esc(ctx.laneLabel(large.region))} rather than putting a dot in one city`
-      : 'it is in no lane, so the map has nothing to wash and it is on the timeline alone';
+      ? `The map shades the whole of ${esc(ctx.laneLabel(large.region))} and draws no dot.`
+      : 'It is in no lane, so the map does not draw it. Only the timeline shows it.';
   const why = large.reason === 'scope'
     ? `Its record says its reach is <strong>${esc(event.scope)}</strong>.`
     : 'The events inside it fall in more than one lane.';
-  return `<p class="large-event muted">A large event: a band across the whole timeline, and
-    ${onTheMap}. ${why}</p>`;
+  return `<p class="large-event muted">A large event. The timeline draws it as a band across its
+    whole width. ${onTheMap} ${why}</p>`;
 }
 
 // What focusing on this would leave, said once on the card of an event that
@@ -347,7 +347,7 @@ function partsHtml(ctx, event) {
     key: 'parts',
     label: 'Parts',
     count: rows.length,
-    hint: 'The events inside this one. Being part of something is a fact about how the atlas files it, not a link: it changes no consequence and no cause.',
+    hint: 'The events inside this one. Being part of an event is how the atlas files a record. It is not a link and changes no cause or consequence.',
     body: `<ul class="actor-rows">${rows.join('')}</ul>`,
   };
 }
@@ -425,14 +425,14 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
   const notices = [generatedWalkHtml(ctx, state)].filter(Boolean);
   notices.push(...found.via.map((v) => (v.reason === 'alias'
     ? `<p class="notice"><code>${esc(v.id)}</code> is a former id of this event.</p>`
-    : `<p class="notice"><code>${esc(v.id)}</code> was merged into this event.</p>`)));
-  if (event.status !== 'active') notices.push(`<p class="notice status">This event is <strong>${esc(event.status)}</strong>; it has no active links.</p>`);
+    : `<p class="notice">This event replaces <code>${esc(v.id)}</code>, an older record merged into it.</p>`)));
+  if (event.status !== 'active') notices.push(`<p class="notice status">This event is <strong>${esc(event.status)}</strong>. It has no active links.</p>`);
   // The link this page was opened with named a step that has been withdrawn
   // since; main.js cut the walk there. A path quietly shorter than the one
   // that was shared is a different argument, so the card says so.
   if (ctx.walkWasCut?.(state)) {
-    notices.push(`<p class="notice status">A step of the link you followed has been <strong>retracted</strong>.
-      The walk is drawn as far as that step, since what came after it followed from it.</p>`);
+    notices.push(`<p class="notice status">The atlas has <strong>retracted</strong> a step of the link you followed.
+      The atlas draws the path up to that step, because the steps after it followed from it.</p>`);
   }
   if (lastEdge && lastEdge.confidence === 'disputed') {
     notices.push(`<p class="notice disputed">You arrived here through a <strong>disputed</strong> link.
@@ -478,7 +478,7 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
     label: 'Causes',
     count: into.length,
     disputed: disputedIn(into),
-    hint: 'What led directly to this event. Walk one backwards to read its own causes.',
+    hint: 'What led directly to this event. Click one to read its own causes.',
     body: into.length ? edgeRowsHtml(into, { follow: false }) : '<p class="muted">No incoming links recorded.</p>',
   });
   const parts = partsHtml(ctx, event);
@@ -489,8 +489,8 @@ export function eventCardHtml(ctx, { event, found, state, remembered = null }) {
       label: 'Other branches',
       count: conv.length,
       disputed: disputedIn(conv),
-      hint: 'Ancestors of this event that are not on the path you walked. Arriving one way does not mean that way explains it.',
-      body: conv.length ? branchesHtml(ctx, conv, event.id) : '<p class="muted">Nothing else fed this event.</p>',
+      hint: 'Earlier events that led to this one but are not on the path you walked. The path you took is only one of the causes.',
+      body: conv.length ? branchesHtml(ctx, conv, event.id) : '<p class="muted">No other event led to this one.</p>',
     });
   }
   sections.push({
