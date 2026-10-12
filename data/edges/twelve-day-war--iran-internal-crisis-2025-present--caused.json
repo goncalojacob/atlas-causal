@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "twelve-day-war--iran-internal-crisis-2025-present--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-12",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Iran internal crisis (2025–present)\", revision 1378212209"
+    }
+  ],
+  "from": "twelve-day-war",
+  "to": "iran-internal-crisis-2025-present",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article \"Iran internal crisis (2025–present)\" (revision 1378212209) states: \"As a result of the Twelve-Day War, internal tension within the Islamic Republic worsened into what the National Council of Resistance of Iran calls a \"crisis of legitimacy\".\" The crisis the clause describes is what the article is about. The phrase \"crisis of legitimacy\" is the article's attribution to the National Council of Resistance of Iran and not this atlas's own words, which is one reason the confidence is `probable`.",
+  "dispute": null
+}

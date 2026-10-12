@@ -71,6 +71,48 @@
         "place": "luang-namtha"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-12-asia-006",
+      "writer": "A",
+      "fired": "2026-10-12T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "red-sea-crisis",
+        "edges": [
+          "gaza-war--red-sea-crisis--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-12-asia-007",
+      "writer": "A",
+      "fired": "2026-10-12T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "hezbollah-israel-conflict-2023-present",
+        "edges": [
+          "gaza-war--hezbollah-israel-conflict-2023-present--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-12-asia-008",
+      "writer": "A",
+      "fired": "2026-10-12T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "iran-internal-crisis-2025-present",
+        "edges": [
+          "twelve-day-war--iran-internal-crisis-2025-present--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

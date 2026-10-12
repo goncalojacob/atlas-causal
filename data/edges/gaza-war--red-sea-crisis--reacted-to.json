@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "gaza-war--red-sea-crisis--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-12",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Red Sea crisis\", revision 1378533380"
+    }
+  ],
+  "from": "gaza-war",
+  "to": "red-sea-crisis",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The article \"Red Sea crisis\" (revision 1378533380) states: \"The Houthis began launching missiles and armed drones at Israel in response to the Gaza war, and have seized or attacked dozens of merchant and naval vessels travelling through the Red Sea which they claimed are linked to Israel.\" The attacks on shipping that the same sentence describes are what the crisis is, so the edge runs from the war to the crisis, which is the direction this atlas writes `reacted-to` in.",
+  "dispute": null
+}
