@@ -5036,6 +5036,15 @@
         }
       ]
     },
+    "hezbollah-israel-conflict-2023-present": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
     "house-bomb-attack-in-neiva": {
       "from": "git",
       "versions": [
@@ -5149,6 +5158,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "iran-internal-crisis-2025-present": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
         }
       ]
     },
@@ -6297,6 +6315,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "red-sea-crisis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
         }
       ]
     },

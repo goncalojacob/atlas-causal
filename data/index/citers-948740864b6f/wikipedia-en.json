@@ -5294,6 +5294,18 @@
     },
     {
       "dissent": false,
+      "id": "gaza-war--hezbollah-israel-conflict-2023-present--caused",
+      "kind": "edge",
+      "locator": "\"Israeli–Lebanese conflict\", revision 1370624531"
+    },
+    {
+      "dissent": false,
+      "id": "gaza-war--red-sea-crisis--reacted-to",
+      "kind": "edge",
+      "locator": "\"Red Sea crisis\", revision 1378533380"
+    },
+    {
+      "dissent": false,
       "id": "gaza-war--twelve-day-war--precondition-of",
       "kind": "edge",
       "locator": "\"Gaza war\", revision 1372809003"
@@ -9371,6 +9383,12 @@
       "id": "turkish-war-of-independence--treaty-of-lausanne--caused",
       "kind": "edge",
       "locator": "\"Turkish War of Independence\", revision 1372145108"
+    },
+    {
+      "dissent": false,
+      "id": "twelve-day-war--iran-internal-crisis-2025-present--caused",
+      "kind": "edge",
+      "locator": "\"Iran internal crisis (2025–present)\", revision 1378212209"
     },
     {
       "dissent": false,
@@ -15578,6 +15596,12 @@
     },
     {
       "dissent": false,
+      "id": "hezbollah-israel-conflict-2023-present",
+      "kind": "event",
+      "locator": "\"Hezbollah–Israel conflict (2023–present)\", revision 1368616555"
+    },
+    {
+      "dissent": false,
       "id": "hitachi-maru-incident",
       "kind": "event",
       "locator": "\"Hitachi Maru Incident\", revision 1370622816"
@@ -15797,6 +15821,12 @@
       "id": "invasion-of-tobago",
       "kind": "event",
       "locator": "\"Invasion of Tobago\", revision 1374476457"
+    },
+    {
+      "dissent": false,
+      "id": "iran-internal-crisis-2025-present",
+      "kind": "event",
+      "locator": "\"Iran internal crisis (2025–present)\", revision 1378212209"
     },
     {
       "dissent": false,
@@ -17159,6 +17189,12 @@
       "id": "recapture-of-bahia",
       "kind": "event",
       "locator": "\"Recapture of Bahia\", revision 1373231929"
+    },
+    {
+      "dissent": false,
+      "id": "red-sea-crisis",
+      "kind": "event",
+      "locator": "\"Red Sea crisis\", revision 1378533380"
     },
     {
       "dissent": false,

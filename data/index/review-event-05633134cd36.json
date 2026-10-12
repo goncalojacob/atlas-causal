@@ -30522,7 +30522,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 4,
+      "degree": 6,
       "id": "gaza-war",
       "kind": "event",
       "origin": {
@@ -31870,6 +31870,39 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-12",
+      "degree": 1,
+      "id": "hezbollah-israel-conflict-2023-present",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "middle-eastern-crisis-2023-present",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Hezbollah–Israel conflict (2023–present)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -33140,6 +33173,37 @@
       "revised": null,
       "status": "active",
       "title": "Invasion of Tobago"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-12",
+      "degree": 1,
+      "id": "iran-internal-crisis-2025-present",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Iran internal crisis (2025–present)"
     },
     {
       "authors": [
@@ -41403,6 +41467,39 @@
       "revised": null,
       "status": "active",
       "title": "Recapture of Bahia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-12",
+      "degree": 1,
+      "id": "red-sea-crisis",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "middle-eastern-crisis-2023-present",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Red Sea crisis"
     },
     {
       "authors": [
@@ -52928,7 +53025,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "twelve-day-war",
       "kind": "event",
       "origin": {

@@ -7370,6 +7370,12 @@
     },
     {
       "dissent": false,
+      "id": "hezbollah-israel-conflict-2023-present",
+      "kind": "event",
+      "locator": "Q122974556"
+    },
+    {
+      "dissent": false,
       "id": "hitachi-maru-incident",
       "kind": "event",
       "locator": "Q11481675"
@@ -7571,6 +7577,12 @@
       "id": "invasion-of-tobago",
       "kind": "event",
       "locator": "Q536360"
+    },
+    {
+      "dissent": false,
+      "id": "iran-internal-crisis-2025-present",
+      "kind": "event",
+      "locator": "Q135450775"
     },
     {
       "dissent": false,
@@ -9011,6 +9023,12 @@
       "id": "recapture-of-bahia",
       "kind": "event",
       "locator": "Q3286392"
+    },
+    {
+      "dissent": false,
+      "id": "red-sea-crisis",
+      "kind": "event",
+      "locator": "Q123285238"
     },
     {
       "dissent": false,

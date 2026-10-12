@@ -935,6 +935,24 @@
         }
       ]
     },
+    "gaza-war--hezbollah-israel-conflict-2023-present--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
+    "gaza-war--red-sea-crisis--reacted-to": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
     "gaza-war--twelve-day-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -1667,6 +1685,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "twelve-day-war--iran-internal-crisis-2025-present--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
         }
       ]
     },

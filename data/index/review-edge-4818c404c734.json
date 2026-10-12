@@ -17126,6 +17126,66 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-12",
+      "from": "gaza-war",
+      "id": "gaza-war--hezbollah-israel-conflict-2023-present--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "hezbollah-israel-conflict-2023-present",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-12",
+      "from": "gaza-war",
+      "id": "gaza-war--red-sea-crisis--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "red-sea-crisis",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "gaza-war",
       "id": "gaza-war--twelve-day-war--precondition-of",
@@ -32698,6 +32758,36 @@
       "revised": null,
       "status": "active",
       "to": "treaty-of-lausanne",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-12",
+      "from": "twelve-day-war",
+      "id": "twelve-day-war--iran-internal-crisis-2025-present--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "iran-internal-crisis-2025-present",
       "type": "caused"
     },
     {
