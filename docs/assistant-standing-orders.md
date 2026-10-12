@@ -272,3 +272,13 @@ the spend is bounded by the queue. The owner's open questions in §6 stand.
     calendar (`battle-of-chungju` 1592-04-28 against `battle-of-sangju-1592`
     1592-06-03) and `operation-sutton` (1982-05-23) sits after
     `battle-of-san-carlos` (from 1982-05-21): the records, not the rule.
+
+## 8. 13 October: the parent-to-child rule removed
+
+The owner, told that the planner's first day refused its clearest sentences
+under A14 (question 13a): *"Ok let's remove the parent to child rule for
+now."* Applied the same hour: `tools/queue/queue.mjs` writes such edges,
+the test that pinned the refusal now asserts the write, rules card 11 and
+M42's amendment A16 record the decision, and the planner's prompt no longer
+applies the rule. Question 13b (the arrow of time into an ongoing event) and
+13c (two dates) stand.

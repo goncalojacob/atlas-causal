@@ -569,3 +569,13 @@ and `cold-war` are the quoted lead plus a paragraph the importer wrote about
 Portugal; that paragraph is cut to its first sentence, the quoted lead
 untouched. What waits for the owner is listed in the review's fix plan and
 in the standing orders' §6.
+
+**A16 (13 October). The parent-to-child rule removed.** The owner, on
+reading the planner's first day (*the clearest sentences it found were
+refused for being parent to child*): *"Ok let's remove the parent to child
+rule for now."* A14's standing rule that a batch writes no edge from a parent
+to its own child is withdrawn: where an article states it, a war may carry
+an edge to its own engagement and an engagement to its war, in either
+direction. The filing (`parent`) is unchanged, and so is every other refusal
+class. `tools/queue/queue.mjs` no longer asks `parentToChild` of a queued
+edge; `docs/m90-rules.md` card 11 says the same.

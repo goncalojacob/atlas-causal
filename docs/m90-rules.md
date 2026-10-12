@@ -53,8 +53,11 @@ this card is silent; nothing here loosens them. A routine reads this card and
     one thing came before another, states no cause and earns no edge. A
     sentence that names a third event the atlas holds as the cause gives the
     edge to that event or to nobody.
-11. **No edge from a parent to its own child** until the owner decides C8
-    (A14). The arrow of time is a validator error, not a judgement.
+11. **A parent may carry an edge to its own child, and a child to its
+    parent,** where the article states it: the owner removed A14's
+    parent-to-child rule on 13 October 2026 (*"Ok let's remove the parent
+    to child rule for now"*). The arrow of time is a validator error, not a
+    judgement.
 12. **Umbrellas (A6, A8).** A period historians name is an umbrella; the main
     count must not rise from what a fire finds it at; `parent` is a list and a
     filing writes every umbrella that fits, the nearest first. Edges that cross

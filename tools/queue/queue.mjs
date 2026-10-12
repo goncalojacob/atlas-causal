@@ -113,8 +113,10 @@ export function quoteFound(quote, text) {
 
 // --- the parent rule -------------------------------------------------------
 
-// A14, rules card 11: no edge from a record to one of its own umbrellas, in
-// either direction, until the owner decides C8. Read through the whole chain
+// A14's rule — no edge from a record to one of its own umbrellas, in either
+// direction — was removed by the owner on 13 October 2026 ("Ok let's remove
+// the parent to child rule for now"). The walk stays, for measurement and
+// for the day the rule returns. Read through the whole chain
 // of `part of` and not only the one hop: a battle inside a campaign inside a
 // war is inside the war, and an edge from the war to the battle is the same
 // objection one level further down.
@@ -145,7 +147,7 @@ export function parentToChild(from, to, parentsFor) {
 // the revision it names. Everything that needs no request is asked first, so a
 // fire does not spend a fetch on an edge it could never write — the type, the
 // two ends, and the confidence the citations can carry. Then the quote, which
-// is the one question only the revision can answer, and then A15(5) and A14
+// is the one question only the revision can answer, and then A15(5)
 // over the sentence the revision gave back.
 //
 // `text` is null where the fetch has not happened yet, which is how a caller
@@ -209,9 +211,10 @@ export function verdictForEdge(edge, {
     const named = said.reattribute.map((r) => r.id).join(', ');
     return refuse('chronology', named ? `${said.why}: ${named}` : `${said.why} (A15(5))`);
   }
-  if (parentToChild(edge.from, edge.to, parentsFor)) {
-    return refuse('parent-to-child', `"${edge.from}" and "${edge.to}" are an umbrella and something inside it (A14)`);
-  }
+  // 13 October 2026: the owner removed A14's parent-to-child rule. An umbrella
+  // may carry an edge to something inside it, and a part to its umbrella,
+  // where the article states it; `parentToChild(edge.from, edge.to,
+  // parentsFor)` is no longer asked here.
   return { ok: true, reason: null, detail: null };
 }
 
