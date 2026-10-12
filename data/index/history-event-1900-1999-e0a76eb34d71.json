@@ -11759,6 +11759,15 @@
         }
       ]
     },
+    "fontainebleau-agreements": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
     "fourth-geneva-convention": {
       "from": "git",
       "versions": [

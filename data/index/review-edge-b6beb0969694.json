@@ -16620,6 +16620,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-12",
+      "from": "fontainebleau-agreements",
+      "id": "fontainebleau-agreements--first-indochina-war--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "first-indochina-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "from": "fourth-battle-of-brega",
       "id": "fourth-battle-of-brega--battle-of-sirte-2011--precondition-of",
@@ -29643,6 +29673,36 @@
       "status": "active",
       "to": "operation-accountability",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-12",
+      "from": "taliban-insurgency",
+      "id": "taliban-insurgency--republican-insurgency-in-afghanistan--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "republican-insurgency-in-afghanistan",
+      "type": "caused"
     },
     {
       "authors": [
