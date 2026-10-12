@@ -293,7 +293,8 @@ test('the queue state is derived from the queue and the logs and nothing else', 
   // Every status and every refusal code has a counter, so a code that appears
   // for the first time is counted and not dropped.
   for (const writer of WRITERS) assert.deepEqual(Object.keys(state.byWriter[writer]).sort(), [...STATUSES].sort());
-  assert.deepEqual([...REFUSALS].sort(), ['chronology', 'confidence', 'endpoint-missing', 'parent', 'parent-to-child', 'quote-not-found', 'type']);
+  assert.deepEqual([...REFUSALS].sort(), ['already-held', 'arrow-of-time', 'chronology', 'confidence',
+    'endpoint-missing', 'parent', 'parent-to-child', 'quote-not-found', 'type']);
 });
 
 test('a writer takes its own items, in order, minus what is answered or held elsewhere', () => {

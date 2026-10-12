@@ -1,0 +1,74 @@
+{
+ "type": "item",
+ "id": "Q9200003",
+ "labels": {
+  "en": {
+   "language": "en",
+   "value": "Fixture siege Z"
+  }
+ },
+ "descriptions": {
+  "en": {
+   "language": "en",
+   "value": "an invented siege, used only to exercise the queue's refusals"
+  }
+ },
+ "aliases": {},
+ "claims": {
+  "P31": [
+   {
+    "mainsnak": {
+     "snaktype": "value",
+     "property": "P31",
+     "datavalue": {
+      "type": "wikibase-entityid",
+      "value": {
+       "entity-type": "item",
+       "id": "Q9200009"
+      }
+     }
+    },
+    "rank": "normal"
+   }
+  ],
+  "P585": [
+   {
+    "mainsnak": {
+     "snaktype": "value",
+     "property": "P585",
+     "datavalue": {
+      "type": "time",
+      "value": {
+       "time": "+1986-06-01T00:00:00Z",
+       "precision": 9,
+       "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+      }
+     }
+    },
+    "rank": "normal"
+   }
+  ],
+  "P276": [
+   {
+    "mainsnak": {
+     "snaktype": "value",
+     "property": "P276",
+     "datavalue": {
+      "type": "wikibase-entityid",
+      "value": {
+       "entity-type": "item",
+       "id": "Q9200002"
+      }
+     }
+    },
+    "rank": "normal"
+   }
+  ]
+ },
+ "sitelinks": {
+  "enwiki": {
+   "site": "enwiki",
+   "title": "Fixture siege Z"
+  }
+ }
+}

@@ -10,7 +10,8 @@
 // `tools/queue/state.mjs` counts it and `tools/validate.mjs` checks the two
 // files on disk through `checkQueue` and `checkQueueLog`.
 
-import { tidy, isChronologyOnly } from '../import/chronology.mjs';
+import { tidy, verdictFor } from '../import/chronology.mjs';
+import { astronomicalBounds } from '../../src/util/dates.js';
 import { parentsOf } from '../../src/parts.js';
 
 export const QUEUE_KIND = 'import-queue';
@@ -42,14 +43,24 @@ export const EDGE_TYPES = Object.freeze(['caused', 'enabled', 'reacted-to', 'pre
 export const STATUSES = Object.freeze(['written', 'partial', 'refused', 'skipped']);
 
 // The closed list of refusals, which is the whole of what a writer may say
-// about an item it would not write. Five are the brief's own; `confidence` and
-// `parent` are the two the rules make unavoidable and §2's list does not name
-// — rules 9 and 22 on a `consensus` edge, and rule 24 with A6's span on an
-// umbrella — and they are here rather than as a stack trace, because a writer
-// that cannot name why it refused is a writer the planner cannot read.
+// about an item it would not write. Five are the brief's own. The other four
+// are rules that are already code elsewhere in this repository, and a writer
+// that wrote the record anyway would hand the fire a hard stop from
+// `validate --index` and a person to read it — which is strictly worse than a
+// line in the log for the planner:
+//
+//   `confidence`    rules 9 and 22: a `consensus` edge on Wikipedia alone
+//   `parent`        rule 24 and A6's span: an umbrella that will not hold
+//   `arrow-of-time` rule 4: a cause that starts after its effect
+//   `already-held`  rule 2, and CLAUDE.md's "an import never rewrites a
+//                   record whose review.status is reviewed": the edge is here
+//
+// Rule 5's cycle is **not** here and is left to the validator: a new record's
+// one new edge cannot close a loop, and an item that changes a record cannot
+// close one without the planner having asked for it in as many words.
 export const REFUSALS = Object.freeze([
   'quote-not-found', 'chronology', 'parent-to-child', 'type', 'endpoint-missing',
-  'confidence', 'parent',
+  'confidence', 'parent', 'arrow-of-time', 'already-held',
 ]);
 
 // Wikipedia is not scholarship (rule 22). The list is rules.js's own, repeated
@@ -131,11 +142,20 @@ export function parentToChild(from, to, parentsFor) {
 //
 // `text` is null where the fetch has not happened yet, which is how a caller
 // asks only the questions that cost nothing.
+//
+// A15(5) is asked through `verdictFor` of tools/import/chronology.mjs, which
+// is both halves of rules card 10 and not only the opener: the refusal class,
+// and the sentence that states a cause and names a **third** event the atlas
+// holds as it, which belongs to that event or to nobody. `candidates` is the
+// active events with their names and spans; with none handed in, only the
+// first half is asked.
 export function verdictForEdge(edge, {
   subject = null,
   activeEvents = new Set(),
   parentsFor = () => [],
   sourceIds = new Set(),
+  candidates = [],
+  when = null,
   text = null,
 } = {}) {
   const refuse = (reason, detail) => ({ ok: false, reason, detail });
@@ -171,11 +191,53 @@ export function verdictForEdge(edge, {
   if (!quoteFound(edge.quote, text)) {
     return refuse('quote-not-found', `the quote is not in revision ${edge.revision} of "${edge.article}"`);
   }
-  if (isChronologyOnly(edge.quote)) {
-    return refuse('chronology', 'the sentence opens on the order of events and states no cause (A15(5))');
+  const said = verdictFor(edge.quote, { from: edge.from, to: edge.to, candidates });
+  if (!said.write) {
+    const named = said.reattribute.map((r) => r.id).join(', ');
+    return refuse('chronology', named ? `${said.why}: ${named}` : `${said.why} (A15(5))`);
   }
   if (parentToChild(edge.from, edge.to, parentsFor)) {
     return refuse('parent-to-child', `"${edge.from}" and "${edge.to}" are an umbrella and something inside it (A14)`);
+  }
+  return { ok: true, reason: null, detail: null };
+}
+
+// The two questions that can only be asked once the record exists, because
+// both need its id and its dates: is this edge already here, and does it run
+// forwards. `whenOf` is a function from a record id to its `when`, and `ids`
+// is every record id the atlas holds.
+//
+// The arrow is rule 4's own comparison, in its coarse half — a `from` whose
+// earliest start is after the `to`'s latest is the error rule 4 raises — plus
+// the day where both ends give one in the same single year. Rule 4's calendar
+// clause is not repeated: without it this is the stricter of the two, and
+// being stricter here refuses an edge and never writes a wrong one.
+export function writeVerdictFor(edge, { from, to, whenOf = () => null, ids = new Set() } = {}) {
+  const refuse = (reason, detail) => ({ ok: false, reason, detail });
+  const id = `${from}--${to}--${edge.type}`;
+  if (ids.has(id)) {
+    return refuse('already-held', `"${id}" is already a record: a writer never rewrites one`);
+  }
+  const start = (when) => {
+    if (!when || typeof when !== 'object') return null;
+    try {
+      return astronomicalBounds(when.start);
+    } catch {
+      return null;
+    }
+  };
+  const a = whenOf(from);
+  const b = whenOf(to);
+  const one = start(a);
+  const two = start(b);
+  if (one && two) {
+    if (one.min > two.max) {
+      return refuse('arrow-of-time', `"${from}" cannot start after "${to}" (rule 4)`);
+    }
+    const sameYear = one.min === one.max && two.min === two.max && one.min === two.min;
+    if (sameYear && a.date && b.date && a.date > b.date) {
+      return refuse('arrow-of-time', `"${from}" (${a.date}) is dated after "${to}" (${b.date}) in the same year (rule 4)`);
+    }
   }
   return { ok: true, reason: null, detail: null };
 }
@@ -305,8 +367,11 @@ export function checkQueueLog(file, log) {
       if (edges.length) say(`${at}/written/edges`, `a ${entry.status} item writes no edge`);
       if (written.place) say(`${at}/written/place`, `a ${entry.status} item writes no place`);
     }
-    if (entry?.status === 'refused' && !refusals.length) {
-      say(`${at}/refusals`, 'a refused item says why: no edge could be verified, and which');
+    // A refusal says why, one way or the other: a code against each edge it
+    // would not write, or — where the item never reached its edges, because
+    // the import itself wrote nothing — the note.
+    if (entry?.status === 'refused' && !refusals.length && !entry?.note) {
+      say(`${at}/refusals`, 'a refused item says why: a refusal against an edge, or a note');
     }
   });
   return problems;
@@ -345,13 +410,16 @@ export function queueState(queue, logs = []) {
 
 // `parentsOf` of src/parts.js is the one place `parent`'s three shapes are
 // read, and the one place anything here reads them: a lookup over the records
-// a tool has in hand, with the item's own queued parents standing for the
-// record that does not exist yet.
+// a tool has in hand, with the item's own queued parents standing beside them.
+// The two are a union and not a choice, because A14 is asked of both — of the
+// umbrellas the queue is about to write, which are on no record yet, and of
+// the ones an existing record already carries.
 export function parentsReader(byId, { subject = null, parents = [] } = {}) {
   return (id) => {
-    if (subject !== null && id === subject) return parents;
     const record = byId.get(id);
-    return record ? parentsOf(record) : [];
+    const own = record ? parentsOf(record) : [];
+    if (subject === null || id !== subject) return own;
+    return [...new Set([...own, ...parents])];
   };
 }
 

@@ -63,6 +63,12 @@
               }
             }
           },
+          "note": {
+            "description": "One line about the entry as a whole, where the status alone does not say enough: which record already carried the item on a skip, or why the import wrote no event at all. Not a refusal against an edge — those are below, by index and by code.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          },
           "refusals": {
             "description": "What the writer would not write and why, by code. The planner reads these: `quote-not-found` comes back to it to be re-read, and the others are its own judgement to revise.",
             "type": "array",
@@ -79,9 +85,9 @@
                   ]
                 },
                 "reason": {
-                  "description": "The code, from a closed list: `quote-not-found` (the revision's text does not carry the sentence), `chronology` (A15(5): the sentence states an order and no cause), `parent-to-child` (an edge between a record and one of its own umbrellas, A14), `type` (not one of the five), `endpoint-missing` (an end that is not an active event of this atlas), `confidence` (a `consensus` edge resting on Wikipedia alone, or on one source: rules 9 and 22), `parent` (an umbrella that is not an active event, or whose span does not contain the event's start: rule 24 and A6).",
+                  "description": "The code, from a closed list: `quote-not-found` (the revision's text does not carry the sentence), `chronology` (A15(5): the sentence states an order and no cause), `parent-to-child` (an edge between a record and one of its own umbrellas, A14), `type` (not one of the five), `endpoint-missing` (an end that is not an active event of this atlas), `confidence` (a `consensus` edge resting on Wikipedia alone, or on one source: rules 9 and 22), `parent` (an umbrella that is not an active event, or whose span does not contain the event's start: rule 24 and A6), `arrow-of-time` (a cause that starts after its effect: rule 4), `already-held` (the edge is already a record, and a writer never rewrites one).",
                   "type": "string",
-                  "enum": ["quote-not-found", "chronology", "parent-to-child", "type", "endpoint-missing", "confidence", "parent"]
+                  "enum": ["quote-not-found", "chronology", "parent-to-child", "type", "endpoint-missing", "confidence", "parent", "arrow-of-time", "already-held"]
                 },
                 "detail": {
                   "description": "What the writer found, in one line, so the planner does not have to guess which of its own decisions was wrong.",
