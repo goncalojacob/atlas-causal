@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "moulouya-river",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1146608",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Moulouya River",
+    "pt": "Rio Mulucha"
+  },
+  "sources": [],
+  "names": [
+    "Moulouya River",
+    "Rio Moulouya",
+    "Rio Mulucha"
+  ],
+  "where": {
+    "lon": -4.7668888888889,
+    "lat": 32.790694444444,
+    "precision": "region",
+    "label": "Moulouya River"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

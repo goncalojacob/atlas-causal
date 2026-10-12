@@ -25,7 +25,7 @@ import { stackTitle, stackBadge } from '../src/cluster.js';
 import { degreeLabel } from '../src/graph-filters.js';
 import { legendRows } from '../src/layer-control.js';
 import { WINDOW_CONTROL_HTML } from '../src/window-control.js';
-import { explainedLinks, linksSentence, introHtml } from '../src/intro.js';
+import { explainedLinks, linksSentence, introHtml, WHAT_IT_IS } from '../src/intro.js';
 import { esc } from '../src/util/esc.js';
 import { bordersNote } from '../src/map/layers/presences.js';
 import {
@@ -208,7 +208,14 @@ test('about.html is one screen, and the essay is kept whole beside it', async ()
   assert.match(essay, /href="about\.html"/, 'and the essay links back');
   // Nothing about history is written on either: the one-screen page says what
   // the repository already says of itself, in the words it already uses.
-  assert.ok(about.includes('The history of the world since 1492 as a graph'),
+  // Read off `WHAT_IT_IS` and not written out again: the sentence names the
+  // corpus's own earliest year (`tests/m82.test.mjs` asserts that), so a copy
+  // of it here is a count pinned in a test, which this file's own header
+  // forbids. It went stale the day the corpus gained an event before 1492
+  // (deviation 1556).
+  // Over the page with its line wrapping collapsed, because the sentence is
+  // long enough that about.html breaks it across three lines.
+  assert.ok(about.replace(/\s+/g, ' ').includes(WHAT_IT_IS),
     'the lead is the sentence the masthead and the intro card already carry');
 });
 

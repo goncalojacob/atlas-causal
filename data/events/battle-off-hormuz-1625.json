@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-off-hormuz-1625",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2567256",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle off Hormuz (1625)",
+    "pt": "Batalha naval do Golfo Pérsico"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2567256"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle off Hormuz (1625)\", revision 1371758666"
+    }
+  ],
+  "title": "Battle off Hormuz (1625)",
+  "summary": "The English Wikipedia article \"Battle off Hormuz (1625)\", at revision 1371758666, opens: \"The battle off Hormuz or the battle of the Persian Gulf on 11–12 February 1625 was \"perhaps the largest naval battle ever fought in the Persian Gulf\". It pitted a Portuguese force against a combined force of the Dutch East India Company (VOC) and English East India Company (EIC). Although the battle was a draw, the result was the loss of Portuguese influence in the Gulf.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2567256, imported by tools/import/wikidata.mjs. The item's own description reads \"1625 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1625,
+    "end": 1625,
+    "date": "1625-02-11",
+    "endDate": "1625-02-12"
+  },
+  "place": "strait-of-hormuz",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}

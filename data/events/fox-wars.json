@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "fox-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5477039",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Fox Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5477039"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fox Wars\", revision 1375822423"
+    }
+  ],
+  "title": "Fox Wars",
+  "summary": "The English Wikipedia article \"Fox Wars\", at revision 1375822423, opens: \"The Fox Wars were two conflicts between the French and the Meskwaki people who lived in the Great Lakes region from 1712 to 1733. These territories are known today as the states of Michigan and Wisconsin in the United States. The Wars exemplified colonial warfare in the transitional space of New France, occurring within the complex system of alliances and enmities with native peoples and colonial plans for expansion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5477039, imported by tools/import/wikidata.mjs. The item's own description reads \"Series of two conflicts between the Indigenous Meskwaki people and the French Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1712,
+    "end": 1733
+  },
+  "place": "great-lakes-region",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "djidioua",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3032949",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Djidioua",
+    "pt": "Djidioua"
+  },
+  "sources": [],
+  "names": [
+    "Djidioua"
+  ],
+  "where": {
+    "lon": 0.8306694,
+    "lat": 35.9293707,
+    "precision": "city",
+    "label": "Djidioua"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

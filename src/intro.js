@@ -165,10 +165,10 @@ export function heaviest(atlas, limit = HEAVIEST) {
 // `tests/m82.test.mjs` holds the two together: a page that said one thing and
 // a card that said another would be the fault this fixes, written twice.
 //
-// It claims nothing about history. "since 1492" is the corpus's own earliest
+// It claims nothing about history. "since 1415" is the corpus's own earliest
 // year — `atlas.extent.min`, asserted in the same test — and not a period
 // anybody here decided on.
-export const WHAT_IT_IS = 'The history of the world since 1492 as a graph: every event linked to what caused it and what it led to, with sources.';
+export const WHAT_IT_IS = 'The history of the world since 1415 as a graph: every event linked to what caused it and what it led to, with sources.';
 
 // How many of the atlas's links carry a written argument and at least one
 // source, and how many there are (M85, A14). The card asserted that *every*

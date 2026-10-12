@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-okpo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q484256",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Okpo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q484256"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Okpo\", revision 1370271150"
+    }
+  ],
+  "title": "Battle of Okpo",
+  "summary": "The English Wikipedia article \"Battle of Okpo\", at revision 1370271150, opens: \"The Battle of Okpo was a military engagement which took place during the Japanese invasions of Korea (1592–98), also known as the Imjin War. Korean commanders Yi Sun-sin and Wŏn Kyun's fleet destroyed a group of anchored Japanese transport ships. It was the first naval battle of the Imjin War, and the first victory of Admiral Yi against the Japanese naval fleet of Todo Takatora. A day later, after destroying an additional 18 Japanese transport vessels in nearby waters, Yi Sun-sin and Wŏn Kyun parted ways and returned to their home ports after receiving news of the fall of Hanseong. The Battle of Okpo caused anxiety and nervousness among the Japanese, because afterward Yi began to deploy his navy to attack Japanese supply and carrier vessels.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q484256, imported by tools/import/wikidata.mjs. The item's own description reads \"1592 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1592,
+    "end": 1592,
+    "date": "1592-05-08"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "toyotomi-hideyoshi-s-1st-korean-campaign"
+}

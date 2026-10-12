@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "graciosa-fortress",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5591646",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Graciosa fortress",
+    "pt": "Fortaleza da Graciosa"
+  },
+  "sources": [],
+  "names": [
+    "Graciosa Fortress",
+    "Fortaleza da Graciosa"
+  ],
+  "where": {
+    "lon": -6.07027778,
+    "lat": 35.16194444,
+    "precision": "point",
+    "label": "Graciosa fortress"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

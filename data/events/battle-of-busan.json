@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-busan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q624525",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Busan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q624525"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Busan\", revision 1370435634"
+    }
+  ],
+  "title": "Battle of Busan",
+  "summary": "The English Wikipedia article \"Battle of Busan\", at revision 1370435634, opens: \"The Battle of Busan, also called Battle of Pusanpo or Battle of Busan Bay, was a 1592 naval bombardment of anchored Japanese ships at Busan. Korean admiral Yi Sun-sin managed to destroy over 100 Japanese ships and retreated with minimal casualties. It was a naval engagement that took place on the 1st day, 9th month of 1592 during the first phase of the Japanese invasions of Korea. It was a Korean surprise attack on the fleet of Toyotomi Hideyoshi stationed at Busan, and its main objective was to recapture Busan, which would thoroughly cutoff the supply line of the Japanese army. In this battle, officer Chŏng Un and six soldiers died, the Japanese lost over 100 ships, and the Japanese military lost control of the seas around the Joseon.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q624525, imported by tools/import/wikidata.mjs. The item's own description reads \"1592 naval battle between Korea and Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1592,
+    "end": 1592,
+    "date": "1592-10-05"
+  },
+  "place": "joseon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "imjin-war"
+}

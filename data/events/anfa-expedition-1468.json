@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "anfa-expedition-1468",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q116687226",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Anfa expedition (1468)",
+    "pt": "Expedição a Anfa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q116687226"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anfa expedition (1468)\", revision 1370428439"
+    }
+  ],
+  "title": "Anfa expedition (1468)",
+  "summary": "The English Wikipedia article \"Anfa expedition (1468)\", at revision 1370428439, opens: \"The Anfa Expedition of 1468 took place when a Portuguese fleet commanded by Duke Fernando of Viseu razed the town of Anfa, then one of the most important cities in Morocco and a pirate haven.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q116687226, imported by tools/import/wikidata.mjs. The item's own description reads \"1468 military expedition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1468,
+    "end": 1468
+  },
+  "place": "casablanca",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "moroccan-portuguese-conflicts"
+}

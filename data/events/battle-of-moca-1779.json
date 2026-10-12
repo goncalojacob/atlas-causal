@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-moca-1779",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q138018817",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Moca (1779)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q138018817"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Moca (1779)\", revision 1370449998"
+    }
+  ],
+  "title": "Battle of Moca (1779)",
+  "summary": "The English Wikipedia article \"Battle of Moca (1779)\", at revision 1370449998, opens: \"The Battle of Moca (1779) was a naval action on 8 June 1779 between the Portuguese corvette Nossa Senhora das Angústias e Almas, commanded by João Manuel de Azevedo e Brito, and the British corvette Morning Star, commanded by Captain Owart, off the port of Mokha, Yemen, in the Red Sea. The Portuguese ship was escorting the French ambassador M. de S. Lubin to Suez and resisted British attempts to seize him.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q138018817, imported by tools/import/wikidata.mjs. The item's own description reads \"1779 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1779,
+    "end": 1779,
+    "date": "1779-06-08"
+  },
+  "place": "mokha",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

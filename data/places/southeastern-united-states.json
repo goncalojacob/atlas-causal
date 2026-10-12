@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "southeastern-united-states",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1139046",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Southeastern United States",
+    "pt": "Região Sudeste dos Estados Unidos"
+  },
+  "sources": [],
+  "names": [
+    "Southeastern United States",
+    "Região Sudeste dos Estados Unidos"
+  ],
+  "where": {
+    "lon": -85.3,
+    "lat": 35,
+    "precision": "region",
+    "label": "Southeastern United States"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

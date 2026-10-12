@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-pyongyang-1592",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q21060235",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Pyongyang (1592)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q21060235"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pyongyang (1592)\", revision 1370586834"
+    }
+  ],
+  "title": "Battle of Pyongyang (1592)",
+  "summary": "The English Wikipedia article \"Battle of Pyongyang (1592)\", at revision 1370586834, opens: \"The Battle of Pyongyang was a military engagement in 1592, as part of the 1592–1598 Japanese invasions of Korea. On 23 August 1592 a Ming force of 6,000 under Zu Chengxun and Shi Ru attacked Japanese-occupied Pyeongyang and was defeated.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q21060235, imported by tools/import/wikidata.mjs. The item's own description reads \"1592 battle in the Japanese invasion of Korea\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1592,
+    "end": 1592,
+    "date": "1592-08-23"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "toyotomi-hideyoshi-s-1st-korean-campaign"
+}

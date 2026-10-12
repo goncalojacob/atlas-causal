@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "casablanca-conference--allied-invasion-of-sicily--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42-batch-97"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Casablanca Conference\", revision 1369040863"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Casablanca Conference\", revision 1369040863: \"the most important was the Allied invasion of Sicily\""
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Allied invasion of Sicily\", revision 1376074492"
+    }
+  ],
+  "from": "casablanca-conference",
+  "to": "allied-invasion-of-sicily",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "“Casablanca Conference”, at revision 1369040863, lead: “Key decisions included a commitment to demand Axis powers’ unconditional surrender; plans for an invasion of Sicily and Italy before the main invasion of France… Of all the decisions made, the most important was the Allied invasion of Sicily, which Churchill pushed for in part to divert American attention from opening a second front in France in 1943.” The same article’s § Strategy gives the argument that carried it: Churchill and the British Chiefs of Staff “favored an Allied assault on the island of Sicily followed by an invasion of mainland Italy”, against Roosevelt’s cross-Channel invasion. `caused` rather than `precondition-of`: the article does not say the conference made the invasion possible, it says the invasion was the conference’s decision, and names the man who argued for it and what he argued against. `probable`, not `consensus`: A2 allows `consensus` only through a work Wikipedia cites, and rule 22 would refuse it on a Wikipedia citation anyway. A15(5): the quote states a cause, and `verdictFor` names no third event this atlas holds inside it.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-ichi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q12612946",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Ichi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12612946"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ichi\", revision 1370443534"
+    }
+  ],
+  "title": "Battle of Ichi",
+  "summary": "The English Wikipedia article \"Battle of Ichi\", at revision 1370443534, opens: \"The Battle of Ichi was fought on August 14, 1592, in Jeolla Province during the Japanese invasions of Korea. Kwŏn Yul and Hwang Jin's one-thousand-man army battled against the fifteen thousand strong army of Kobayakawa Takakage. The Koreans won this battle and stopped the Japanese army from advancing to Jeolla Province.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12612946, imported by tools/import/wikidata.mjs. The item's own description reads \"1592 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1592,
+    "end": 1592,
+    "date": "1592-08-14"
+  },
+  "place": "joseon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "toyotomi-hideyoshi-s-1st-korean-campaign"
+}

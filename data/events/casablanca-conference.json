@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "casablanca-conference",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "a9-place",
+      "filed-by-span-and-subject"
+    ],
+    "note": "A9: no `P625` and no `P276`; `P131` is `Q7903`, which this atlas did not hold, so `casablanca` was written from the item at `city` precision and `P17` `Q1028` was never reached. A15(7): that point derives africa. A15(4): `P580`/`P582` are 1943-01-14 and 1943-01-24 and the first sentence agrees. A6: no `P361`, so filed by span and subject under `world-war-ii`; `P2348` names that war outright. No category: `P31` is `Q625994`. A11(a): the four `P710` are people and none is an actor here."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q502093",
+  "wikipedia": {
+    "en": "Casablanca Conference"
+  },
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q502093"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Casablanca Conference\", revision 1369040863"
+    }
+  ],
+  "title": "Casablanca Conference",
+  "names": [
+    "Anfa Conference"
+  ],
+  "summary": "The English Wikipedia article \"Casablanca Conference\", at revision 1369040863, opens: \"The Casablanca Conference (codenamed SYMBOL) or Anfa Conference was held in Casablanca, French Morocco, from January 14 to 24, 1943, to plan the Allied European strategy for the next phase of World War II. The main discussions were between US President Franklin Roosevelt (with his military staff) and British Prime Minister Winston Churchill (with his staff). Stalin could not attend. Key decisions included a commitment to demand Axis powers' unconditional surrender; plans for an invasion of Sicily and Italy before the main invasion of France; an intensified strategic bombing campaign against Germany; and approval of a US Navy plan to advance on Japan through the central Pacific and the Philippines.\" That is the article’s account and not yet this atlas’s; nobody has read this record, and review.html is where somebody does. Wikidata item Q502093, whose P580 and P582 are 14 and 24 January 1943, the range the first sentence states.",
+  "when": {
+    "start": 1943,
+    "end": 1943,
+    "date": "1943-01-14",
+    "endDate": "1943-01-24"
+  },
+  "place": "casablanca",
+  "region": null,
+  "regionNote": null,
+  "parent": "world-war-ii",
+  "actors": [
+    {
+      "actor": "united-kingdom",
+      "role": "negotiator"
+    },
+    {
+      "actor": "united-states-of-america",
+      "role": "negotiator"
+    }
+  ]
+}

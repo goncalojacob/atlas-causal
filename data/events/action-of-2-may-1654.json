@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "action-of-2-may-1654",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "article-is-redirect",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4677341",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Action of 2 May 1654"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4677341"
+    }
+  ],
+  "title": "Action of 2 May 1654",
+  "summary": "Wikidata item Q4677341, imported by tools/import/wikidata.mjs. The item's own description reads \"1654 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1654,
+    "end": 1654,
+    "date": "1654-05-02"
+  },
+  "place": "colombo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "dutch-portuguese-war"
+}

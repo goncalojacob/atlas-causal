@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "hamgyong-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5644543",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Hamgyong campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5644543"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hamgyong campaign\", revision 1370622464"
+    }
+  ],
+  "title": "Hamgyong campaign",
+  "summary": "The English Wikipedia article \"Hamgyong campaign\", at revision 1370622464, opens: \"The Hamgyong campaign, also known as Katō Kiyomasa's northern campaign, was Kiyomasa's invasion of Hamgyeong Province, the northeastern region of Joseon during the Imjin War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5644543, imported by tools/import/wikidata.mjs. The item's own description reads \"1592 military campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1592,
+    "end": 1592,
+    "date": "1592-10"
+  },
+  "place": "joseon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "toyotomi-hideyoshi-s-1st-korean-campaign"
+}

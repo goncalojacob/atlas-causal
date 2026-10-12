@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "conquest-of-asilah--portuguese-conquest-of-tangier--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-83"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese conquest of Tangier\", revision 1370704790, § The Conquest"
+    }
+  ],
+  "from": "conquest-of-asilah",
+  "to": "portuguese-conquest-of-tangier",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The far end's own article gives the sack of Asilah four days earlier as the reason Tangier was empty when the Portuguese reached it. “Portuguese conquest of Tangier”, at revision 1370704790, § The Conquest: “The citizens of Tangier believed support from Muhammad al-Shaikh, the governor of Asilah, would come to assist in repelling the invading Portuguese army. However, involved in his ongoing conflict with the governor of Fez, al-Shaikh opted to sign a treaty with the Portuguese, allowing them to enter Tangier unopposed. Fearing the same fate as Asilah, where 2,000 residents were killed and more 5,000 sold into captivity, the civilians of Tangier fled the city.” That is a stated reason and not an order of events: the article says what the townspeople feared and names the event they feared a repetition of. `enabled` and not `caused`, because the article gives the king's order as what set the campaign going — “Shortly after the conquest of Asilah by the Portuguese, Afonso V ordered Dom João … to take Tangier”, which on its own is the chronology A15(5) refuses — and Asilah's example as what made the city fall without a fight. `probable` under rule 22.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

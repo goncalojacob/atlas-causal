@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "campaign-of-tlemcen-1557--battle-of-wadi-al-laban--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-82"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wadi al-Laban\", revision 1370276629, § Background and § Battle"
+    }
+  ],
+  "from": "campaign-of-tlemcen-1557",
+  "to": "battle-of-wadi-al-laban",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The far end's own article puts the Saadian occupation of Tlemcen at the start of the road that ended at Wadi al-Laban. “Battle of Wadi al-Laban”, at revision 1370276629, § Background: “Meanwhile, the Saadians had occupied Tlemcen in 1556 but failed to capture the Machouar palace while the Ottoman Algerians were busy besieging the Spaniards in Oran. After Mohammed al-Shaykh's death, Hasan Pasha marched west, forcing the Saadians to abandon Tlemcen.” And § Battle: “Led by Hasan Pasha, the Ottoman force pursued the retreating Saadian army into Morocco. An indecisive battle between the two sides took place in Wadi al-Laban to the north of Fez in early 1558.” The army the Ottomans pursued into Morocco is the army that had held Tlemcen, so the campaign is what put it on that road: `precondition-of` and not `caused`, because the article gives the sultan's assassination and Hasan Pasha's reappointment as what set the Ottoman march going and the occupation only as the thing it was marching against. The two articles date that occupation differently — 1556 here and 1557 in “Campaign of Tlemcen (1557)”, which is where the near end's year comes from — and both describe the same event by the same detail, the city taken and the Mechouar palace not. `probable` under rule 22.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

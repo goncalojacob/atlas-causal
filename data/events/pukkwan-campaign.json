@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "pukkwan-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q12599044",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Pukkwan campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12599044"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pukkwan campaign\", revision 1370705182"
+    }
+  ],
+  "title": "Pukkwan campaign",
+  "summary": "The English Wikipedia article \"Pukkwan campaign\", at revision 1370705182, opens: \"The Pukkwan campaign was a series of military engagement between Joseon and Japanese forces in Hamgyong Province from the 16th day, 9th month of 1592 to 28th day, 1st month of 1593. During this campaign, the \"Righteous army,\" a civilian militia led by Chŏng Munbu, executed local collaborators and successfully repelled the Japanese invasion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12599044, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in Hamgyeongdo (1592-1593)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1592,
+    "end": 1593,
+    "date": "1592-09-20",
+    "endDate": "1593-02-28"
+  },
+  "place": "joseon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "toyotomi-hideyoshi-s-1st-korean-campaign"
+}

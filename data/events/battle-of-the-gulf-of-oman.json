@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-gulf-of-oman",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872923",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of the Gulf of Oman",
+    "pt": "Batalha do Golfo de Omã"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872923"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Gulf of Oman\", revision 1370874327"
+    }
+  ],
+  "title": "Battle of the Gulf of Oman",
+  "summary": "The English Wikipedia article \"Battle of the Gulf of Oman\", at revision 1370874327, opens: \"The Battle of the Gulf of Oman was a naval battle between a large Portuguese armada under Dom Fernando de Meneses and the Ottoman Indian fleet under Seydi Ali Reis. The campaign was a catastrophic failure for the Ottomans who lost all of their ships. Seydi Ali Reis later wrote that the engagement was \"worse than any he had lived through under Barbarossa\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872923, imported by tools/import/wikidata.mjs. The item's own description reads \"1554 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1554,
+    "end": 1554,
+    "date": "1554-08-10",
+    "endDate": "1554-08-25"
+  },
+  "place": "gulf-of-oman",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-portuguese-conflicts-1538-1560"
+}

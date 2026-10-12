@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "conquest-of-asilah",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5162432",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Conquest of Asilah",
+    "pt": "Conquista de Arzila"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5162432"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conquest of Asilah\", revision 1370612114"
+    }
+  ],
+  "title": "Conquest of Asilah",
+  "summary": "The English Wikipedia article \"Conquest of Asilah\", at revision 1370612114, opens: \"The Portuguese conquest of Asilah was a campaign led by King Afonso V in modern Morocco from the Wattasids on 24 August 1471.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5162432, imported by tools/import/wikidata.mjs. The item's own description reads \"Moroccan-Portuguese conflict of 1471\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1471,
+    "end": 1471,
+    "date": "1471-08-24"
+  },
+  "place": "asilah",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "moroccan-portuguese-conflicts"
+}

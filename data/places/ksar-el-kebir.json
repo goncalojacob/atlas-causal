@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ksar-el-kebir",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q52603",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Ksar el-Kebir",
+    "pt": "Alcácer Quibir"
+  },
+  "sources": [],
+  "names": [
+    "Ksar el-Kebir",
+    "Alcácer-Quibir",
+    "Alcácer Quibir"
+  ],
+  "where": {
+    "lon": -5.8998397,
+    "lat": 34.9990773,
+    "precision": "city",
+    "label": "Ksar el-Kebir"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

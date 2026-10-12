@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "pequot-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1207617",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Pequot War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1207617"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pequot War\", revision 1377973687"
+    }
+  ],
+  "title": "Pequot War",
+  "summary": "The English Wikipedia article \"Pequot War\", at revision 1377973687, opens: \"The Pequot War was a conflict that took place in 1636 and ended in 1638 in New England, between the Pequot nation and a joint effort of the English colonists from the Massachusetts Bay, Plymouth, and Saybrook Thirteen colonies and their allies from the Narragansett and Mohegan nations. The war concluded with the decisive defeat of the Pequot. In an event called the Mystic massacre, English colonists of the Connecticut Colony and their allies set the village of Pequot Fort ablaze, blocked the exits, and shot anyone trying to escape. By the end of the war, about 700 Pequots had been killed or taken into captivity.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1207617, imported by tools/import/wikidata.mjs. The item's own description reads \"war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1636,
+    "end": 1638,
+    "date": "1636-07",
+    "endDate": "1638-09"
+  },
+  "place": "new-england",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

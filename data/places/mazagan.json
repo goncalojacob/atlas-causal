@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mazagan",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q555360",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "pt": "Mazagão (Marrocos)"
+  },
+  "sources": [],
+  "names": [
+    "Mazagan",
+    "Mazagão",
+    "Mazagão (Marrocos)"
+  ],
+  "where": {
+    "lon": -8.502475,
+    "lat": 33.25656111,
+    "precision": "point",
+    "label": "Mazagan"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

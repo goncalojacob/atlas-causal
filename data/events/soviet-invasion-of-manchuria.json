@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "soviet-invasion-of-manchuria",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "a9-place",
+      "a15-days",
+      "filed-by-span-and-subject"
+    ],
+    "note": "A15(4): P580 and P582 are 1945-08-09 and 1945-08-20; the first sentence states the invasion “began on 8 August 1945”, which is the start carried here, while § Summary says 9 August — a reviewer settles which. A9: the item’s P625 is (125, 49) and its P276, Q113344999, carries no point and is part of Q81126, so `manchuria` is reused rather than duplicated (deviation 1557). A6: P361 names Q220602 and Q5865416, neither held here, so the filing is by span and subject. A15(12): P31 Q467011 → `war`."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q6165880",
+  "wikipedia": {
+    "en": "Soviet invasion of Manchuria",
+    "pt": "Operação Tempestade de Agosto"
+  },
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6165880"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Soviet invasion of Manchuria\", revision 1376133899"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Soviet invasion of Manchuria\", revision 1376133899, first sentence: \"began on 8 August 1945\""
+    }
+  ],
+  "title": "Soviet invasion of Manchuria",
+  "summary": "The English Wikipedia article \"Soviet invasion of Manchuria\", at revision 1376133899, opens: \"The Soviet invasion of Manchuria, formally known as the Manchurian Strategic Offensive Operation or simply the Manchurian Operation (Russian: Маньчжурская операция), began on 8 August 1945 with the Soviet Union’s invasion of the Empire of Japan’s puppet states of Manchukuo and Mengjiang, in Japanese-occupied Manchuria and Inner Mongolia respectively. It was the largest campaign of the 1945 Soviet–Japanese War, which resumed hostilities between the Union of Soviet Socialist Republics and the Empire of Japan after almost six years of peace.\" That is the article’s account and not yet this atlas’s; nobody has read this record, and review.html is where somebody does. Wikidata item Q6165880, whose P580 and P582 are 9 and 20 August 1945; the start carried here is the 8 August the article’s own first sentence states.",
+  "when": {
+    "start": 1945,
+    "end": 1945,
+    "date": "1945-08-08",
+    "endDate": "1945-08-20"
+  },
+  "place": "manchuria",
+  "region": null,
+  "regionNote": null,
+  "parent": "world-war-ii",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "soviet-union",
+      "role": "invader",
+      "note": "The item’s own P710, Q15180."
+    },
+    {
+      "actor": "imperial-japan",
+      "role": "target",
+      "note": "The first sentence: the invasion was of “the Empire of Japan’s puppet states of Manchukuo and Mengjiang”."
+    }
+  ]
+}

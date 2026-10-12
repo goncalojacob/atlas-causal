@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "chowanoc-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q124518156",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Chowanoc War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q124518156"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chowanoc War\", revision 1371429474"
+    }
+  ],
+  "title": "Chowanoc War",
+  "summary": "The English Wikipedia article \"Chowanoc War\", at revision 1371429474, opens: \"The Chowanoc War from 1676 to 1677 was between the Albemarle County colony army, and the Chowanoc Native American tribe. For two years, the Chowanoc fought with the forces of Peter Jenkins, commander of the colony's army. In the summer of 1677, acting governor Thomas Miller organized a militia, and the Chowanoc were forcibly moved to modern-day Gates County. This war is seen as an extension of violence from Bacon's Rebellion in Virginia and a catalyst responsible for the opening of Culpepper's Rebellion in North Carolina. Due to multiple native groups involved and fought in the periphery of two major rebellions, the war is also known as the Chowan River War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q124518156, imported by tools/import/wikidata.mjs. The item's own description reads \"1675–1677 war in British America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1675,
+    "end": 1677
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

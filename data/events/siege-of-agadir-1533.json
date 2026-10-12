@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-agadir-1533",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q126727785",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Siege of Agadir (1533)",
+    "pt": "Cerco de Santa Cruz do Cabo de Gué (1533)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q126727785"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Agadir (1533)\", revision 1370738512"
+    }
+  ],
+  "title": "Siege of Agadir (1533)",
+  "summary": "The English Wikipedia article \"Siege of Agadir (1533)\", at revision 1370738512, opens: \"The siege of Agadir in 1533 was a military confrontation started by the troops of Mohammed al-Shaykh against the Portuguese fortress of Santa Cruz do Cabo da Gué. The Portuguese resisted the siege.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q126727785, imported by tools/import/wikidata.mjs. The item's own description reads \"1533 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1533,
+    "end": 1533,
+    "date": "1533-04",
+    "endDate": "1533-03"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "moroccan-portuguese-conflicts"
+}

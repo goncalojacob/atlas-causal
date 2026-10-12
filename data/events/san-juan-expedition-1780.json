@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "san-juan-expedition-1780",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7414580",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "San Juan Expedition (1780)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7414580"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"San Juan Expedition (1780)\", revision 1370730001"
+    }
+  ],
+  "title": "San Juan Expedition (1780)",
+  "summary": "The English Wikipedia article \"San Juan Expedition (1780)\", at revision 1370730001, opens: \"The San Juan Expedition took place between March and November 1780 during the American War of Independence when a British force under the command of John Polson and Captain Horatio Nelson landed in Mosquitia. Their aim was to sail up the San Juan River to capture the strategically crucial towns of Granada and León, located on the north-western shore of Lake Nicaragua.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7414580, imported by tools/import/wikidata.mjs. The item's own description reads \"expedition in the American War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1780,
+    "end": 1780
+  },
+  "place": "san-juan-river-nicaragua",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "spain-and-the-american-revolutionary-war"
+}

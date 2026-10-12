@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "tuscarora-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2038126",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Tuscarora War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2038126"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tuscarora War\", revision 1371426640"
+    }
+  ],
+  "title": "Tuscarora War",
+  "summary": "The English Wikipedia article \"Tuscarora War\", at revision 1371426640, opens: \"The Tuscarora War was fought in North Carolina from September 10, 1711, until February 11, 1715, between the Tuscarora people and their allies on one side and European American settlers, the Yamasee, and other allies on the other. This was considered the bloodiest colonial war in North Carolina. The Tuscarora signed a treaty with colonial officials in 1718 and settled on a reserved tract of land in Bertie County, North Carolina. The war incited further conflict on the part of the Tuscarora and led to changes in the slave trade of North and South Carolina.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2038126, imported by tools/import/wikidata.mjs. The item's own description reads \"military conflict between North Carolina and the Tuscarora from 1711 to 1715\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1711,
+    "end": 1715,
+    "date": "1711-09-10",
+    "endDate": "1715-02-11"
+  },
+  "place": "eastern-north-carolina",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

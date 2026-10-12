@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "fort-mose",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "place-written-by-hand"
+    ],
+    "note": "Written by hand because the import could not: Q7510020 carries its own P625 and names no located item a tool can read a name off. The point is that P625 unchanged; the name is the one the battle's own article gives the site."
+  },
+  "sources": [],
+  "names": [
+    "Fort Mose",
+    "Fort Mosé",
+    "Gracia Real de Santa Teresa de Mose"
+  ],
+  "where": {
+    "lon": -81.32527777777777,
+    "lat": 29.927777777777777,
+    "precision": "point",
+    "label": "Fort Mose, Florida"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

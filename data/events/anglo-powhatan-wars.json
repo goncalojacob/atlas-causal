@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "anglo-powhatan-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1342672",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Anglo-Powhatan Wars",
+    "pt": "Guerra Anglo-Powhatan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1342672"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Powhatan Wars\", revision 1376206768"
+    }
+  ],
+  "title": "Anglo-Powhatan Wars",
+  "summary": "The English Wikipedia article \"Anglo-Powhatan Wars\", at revision 1376206768, opens: \"The Anglo–Powhatan Wars were three wars fought between settlers of the Colony of Virginia and the Powhatan Confederacy of Tsenacommacah in the early 17th century. The first war started in 1609 and ended in a peace settlement in 1614. The second war lasted from 1622 to 1632. The third war lasted from 1644 until 1646 and ended when Opechancanough was captured and killed. That war resulted in a defined boundary between the Native Americans and colonial lands that could only be crossed for official business with a special pass. This situation lasted until 1677 and the Treaty of Middle Plantation which established Indian reservations following Bacon's Rebellion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1342672, imported by tools/import/wikidata.mjs. The item's own description reads \"series of three wars fought between English settlers of the Virginia Colony and the Powhatan alliance of Virgina Indians\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1609,
+    "end": 1646,
+    "date": "1609-05",
+    "endDate": "1646-10"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

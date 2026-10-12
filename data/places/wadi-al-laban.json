@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "wadi-al-laban",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "assistant"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "place-written-by-hand"
+    ],
+    "note": "Written by hand because the import had the point and no name it could read: Q4117011 carries its own P625 and names no settlement, no country with a point and no class the places table knows, so the event was left placeless with the africa lane. The name is the one its own article gives — “Battle of Wadi al-Laban”, revision 1370276629: “It took place north of Fes, at Wadi al-Laban, an affluent of the Sebou River, one day north of Fes.” The point is the event item's own and the lane is derived."
+  },
+  "sources": [],
+  "names": [
+    "Wadi al-Laban"
+  ],
+  "where": {
+    "lon": -4.9,
+    "lat": 34.3,
+    "precision": "point",
+    "label": "Wadi al-Laban"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-porto-praya",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2732287",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Porto Praya"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2732287"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Porto Praya\", revision 1370586512"
+    }
+  ],
+  "title": "Battle of Porto Praya",
+  "summary": "The English Wikipedia article \"Battle of Porto Praya\", at revision 1370586512, opens: \"The Battle of Porto Praya was fought on 16 April 1781 during the American Revolutionary War between a Royal Navy fleet under Commodore George Johnstone and a French Navy squadron under Pierre André de Suffren. Both the British and French were en route to the Dutch Cape Colony, the former to capture it and the latter to help defend it before proceeding to France's colonies in the Indian Ocean. The British had anchored at Porto Praya in neutral Portuguese-held Cape Verde to take on water, when the French squadron arrived and violated Portuguese neutrality by attacking them at anchor.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2732287, imported by tools/import/wikidata.mjs. The item's own description reads \"1781 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1781,
+    "end": 1781,
+    "date": "1781-04-16"
+  },
+  "place": "praia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-french-war-1778-1783"
+}

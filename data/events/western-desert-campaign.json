@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "western-desert-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361",
+      "a15-category-from-p31"
+    ],
+    "note": "A6, A8: `P361` is `Q218678`, held as `north-african-campaign`, the only parent — `world-war-ii` is reachable through it (deviation 1564). A9: the own-`P625` step reuses only and nothing stands at (28.95, 30.8333); `P276` `Q14314106` is written here as `western-desert`, so `P17` Q79 was never reached. A15(4): first sentence and title state no range, so `P580`/`P582` stand. A15(7): africa, from the item’s own point. A15(12): `P31` `Q831663` is `war`. No `P710`."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q625798",
+  "wikipedia": {
+    "en": "Western Desert campaign",
+    "pt": "Campanha do Deserto Ocidental"
+  },
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q625798"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Western Desert campaign\", revision 1377719249"
+    }
+  ],
+  "title": "Western Desert campaign",
+  "names": [
+    "Desert War"
+  ],
+  "summary": "The English Wikipedia article \"Western Desert campaign\", at revision 1377719249, opens: \"The Western Desert campaign took place in the deserts of Egypt and Libya and was the main theatre in the North African campaign of the Second World War. Military operations began in June 1940 with the Italian declaration of war and the Italian invasion of Egypt from Libya in September. Operation Compass, a five-day raid by the British in December 1940, was so successful that it led to the destruction of the Italian 10th Army over the following two months. Benito Mussolini sought help from Adolf Hitler, who sent a small German force to Tripoli under Directive 22. The Afrika Korps was formally under Italian command, as Italy was the main Axis power in the Mediterranean and North Africa.\" That is the article’s account and not yet this atlas’s; nobody has read this record, and review.html is where somebody does. Wikidata item Q625798, whose P580 and P582 are 11 June 1940 and 4 February 1943.",
+  "when": {
+    "start": 1940,
+    "end": 1943,
+    "date": "1940-06-11",
+    "endDate": "1943-02-04"
+  },
+  "place": "western-desert",
+  "region": null,
+  "regionNote": null,
+  "parent": "north-african-campaign",
+  "category": "war",
+  "actors": [
+    {
+      "actor": "united-kingdom",
+      "role": "belligerent"
+    },
+    {
+      "actor": "nazi-germany",
+      "role": "belligerent"
+    }
+  ]
+}

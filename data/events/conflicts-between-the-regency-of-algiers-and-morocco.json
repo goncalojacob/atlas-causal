@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "conflicts-between-the-regency-of-algiers-and-morocco",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q28493960",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Conflicts between the Regency of Algiers and Morocco"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q28493960"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conflicts between the Regency of Algiers and Morocco\", revision 1377675247"
+    }
+  ],
+  "title": "Conflicts between the Regency of Algiers and Morocco",
+  "summary": "The English Wikipedia article \"Conflicts between the Regency of Algiers and Morocco\", at revision 1377675247, opens: \"Conflicts between the Regency of Algiers and the Cherifian dynasties or Algerian-Sherifian conflicts opposed the Regency of Algiers and its allied local sultanates and tribal confederations, and on the other hand, the Sharifian \nSaadian and Alawite dynasties that had ruled Morocco since the 16th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q28493960, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1550,
+    "end": 1795
+  },
+  "place": "maghreb",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

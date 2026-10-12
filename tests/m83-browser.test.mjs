@@ -27,6 +27,13 @@ const PHONE = { width: 390, height: 844, deviceScaleFactor: 1, mobile: true };
 
 const ready = 'return Boolean(document.querySelector("#map svg.map"));';
 const NODES = "return document.querySelectorAll('#graph svg.graph circle.node[data-id]').length > 0;";
+// Whether the graph has stopped redrawing: the count of marks and lines, read
+// three polls running without changing (deviation 1562).
+const STILL = `
+  const now = document.querySelectorAll('#graph svg.graph circle.node[data-id], #graph svg.graph line.edge').length;
+  const held = window.__graphStill && window.__graphStill.n === now ? window.__graphStill.held + 1 : 0;
+  window.__graphStill = { n: now, held };
+  return held >= 3;`;
 const WAR = '?view=graph&selected=world-war-ii';
 
 // Every line the graph drew, with the ink the browser actually gave it and
@@ -433,16 +440,42 @@ test('B8: a click on the graph\'s empty ground puts the selection down', { skip 
     await seenIntro(page);
     await open(page, url(WAR), ready);
     await waitFor(page, NODES, 'the graph to draw its nodes');
+    // Deviation 1562: the first nodes are not the picture. The arrangement is
+    // drawn again as the attribute shards land, and the emptiest point of a
+    // picture that is still moving is empty only until the next frame — which
+    // is what made this test fail on the check and pass on a fast machine.
+    // Wait for the count of marks and lines to hold still for three polls.
+    await waitFor(page, STILL, "the graph's picture to hold still");
 
     // A point of the picture with no mark and no line anywhere near it: the
-    // corner furthest from anything the page drew.
+    // place furthest from anything the page drew. **Measured to the ink**, not
+    // to bounding-box centres (deviation 1562): a long diagonal line's box has
+    // its centre in the middle of the line and its ink across half the pane, so
+    // the old reading called a point on top of an edge empty. Distance to a
+    // circle is to its rim and to a line is to the segment.
     const empty = await page.eval(`
       const svg = document.querySelector('svg.graph');
       const pane = svg.getBoundingClientRect();
-      const things = [...svg.querySelectorAll('.layer-nodes circle, line.edge')]
-        .map((el) => el.getBoundingClientRect());
-      const far = (x, y) => Math.min(...things.map((b) =>
-        Math.hypot(x - (b.left + b.width / 2), y - (b.top + b.height / 2))));
+      const circles = [...svg.querySelectorAll('.layer-nodes circle')].map((el) => {
+        const box = el.getBoundingClientRect();
+        return { x: box.left + box.width / 2, y: box.top + box.height / 2, r: Math.max(box.width, box.height) / 2 };
+      });
+      const screen = svg.getScreenCTM();
+      const segments = [...svg.querySelectorAll('line.edge')].map((el) => {
+        const a = new DOMPoint(+el.getAttribute('x1'), +el.getAttribute('y1')).matrixTransform(screen);
+        const b = new DOMPoint(+el.getAttribute('x2'), +el.getAttribute('y2')).matrixTransform(screen);
+        return { x1: a.x, y1: a.y, x2: b.x, y2: b.y };
+      });
+      const toSegment = (x, y, s) => {
+        const dx = s.x2 - s.x1;
+        const dy = s.y2 - s.y1;
+        const length = (dx * dx + dy * dy) || 1;
+        const t = Math.max(0, Math.min(1, ((x - s.x1) * dx + (y - s.y1) * dy) / length));
+        return Math.hypot(x - (s.x1 + t * dx), y - (s.y1 + t * dy));
+      };
+      const far = (x, y) => Math.min(
+        ...circles.map((c) => Math.hypot(x - c.x, y - c.y) - c.r),
+        ...segments.map((s) => toSegment(x, y, s)));
       let best = null;
       for (let gx = 1; gx < 20; gx += 1) {
         for (let gy = 1; gy < 20; gy += 1) {

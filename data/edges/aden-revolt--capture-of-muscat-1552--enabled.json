@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "aden-revolt--capture-of-muscat-1552--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-86"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Muscat (1552)\", revision 1376303792"
+    }
+  ],
+  "from": "aden-revolt",
+  "to": "capture-of-muscat-1552",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The near end's own lead says what the recapture of Aden bought, and the northwestern Indian Ocean is where this capture happened. “Capture of Muscat (1552)”, at revision 1376303792: “These events followed the important Ottoman defeat in the third siege of Diu in 1546, which put a stop to their attempts in India, but also the successful capture of Aden in 1548, which allowed the Ottomans to resist the Portuguese in the northwestern part of the Indian Ocean.” `aden-revolt` is that 1548 capture — the revolt against Ottoman authority in Aden that Piri Reis put down, recovering the city. `enabled` and not `caused`: what the sentence states is a capacity the Ottomans gained and not a decision Aden forced. The same sentence names a second antecedent, the third siege of Diu, and states only what that defeat **stopped** rather than what it enabled here, so no edge is written from it. `probable` under rule 22; no bibliography in the article's plaintext from which a second author could be taken (M72).",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

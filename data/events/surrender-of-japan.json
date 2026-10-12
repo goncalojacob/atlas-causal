@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "surrender-of-japan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "summary-from-lead",
+      "a9-place",
+      "a15-days",
+      "filed-from-p361"
+    ],
+    "note": "A15(4): the item's only date is P585 1945-09-02 at day precision, and the lead states the surrender was “announced by Emperor Hirohito on 15 August and formally signed on 2 September 1945”, which is the range carried here. A9: the item's own P625 is (139.76, 35.3547), Tokyo Bay, and this atlas already holds `tokyo-bay` (Q141017) 0.06° away, so the place is reused rather than taken from P17 (Q188712) — deviation 1548. A6: filed from the item's own P361, Q362, which is `world-war-ii`."
+  },
+  "origin": {
+    "tool": "assistant"
+  },
+  "wikidata": "Q6540361",
+  "wikipedia": {
+    "en": "Surrender of Japan",
+    "pt": "Rendição do Japão"
+  },
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-10-02"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6540361"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Surrender of Japan\", revision 1372687290"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Surrender of Japan\", revision 1372687290, first sentence: \"announced by Emperor Hirohito on 15 August and formally signed on 2 September 1945\""
+    }
+  ],
+  "title": "Surrender of Japan",
+  "summary": "The English Wikipedia article \"Surrender of Japan\", at revision 1372687290, opens: \"The surrender of the Empire of Japan in World War II was announced by Emperor Hirohito on 15 August and formally signed on 2 September 1945, ending the war. By the end of July 1945, the Imperial Japanese Navy (IJN) was incapable of conducting major operations and an Allied invasion of Japan was imminent. Together with the United Kingdom and China, the United States called for the unconditional surrender of Japan in the Potsdam Declaration on 26 July 1945—the alternative being \"prompt and utter destruction\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6540361, whose only date is P585 2 September 1945 at day precision; the span carried here is the one the article's own first sentence states, 15 August to 2 September 1945.",
+  "when": {
+    "start": 1945,
+    "end": 1945,
+    "date": "1945-08-15",
+    "endDate": "1945-09-02"
+  },
+  "place": "tokyo-bay",
+  "region": null,
+  "regionNote": null,
+  "parent": "world-war-ii",
+  "category": "treaty",
+  "actors": []
+}

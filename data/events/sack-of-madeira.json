@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sack-of-madeira",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q111208948",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Sack of Madeira"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q111208948"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sack of Madeira\", revision 1340652442"
+    }
+  ],
+  "title": "Sack of Madeira",
+  "summary": "The English Wikipedia article \"Sack of Madeira\", at revision 1340652442, opens: \"The sack of Madeira occurred in 1617 when Algerian pirates known as Barbary Corsairs sacked the island of Madeira and took 1,200 inhabitants as slaves. The attack occurred during the height of slavery on the Barbary coast. Madeira was at that time a part of the Iberian Union headed by the Monarchy of Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q111208948, imported by tools/import/wikidata.mjs. The item's own description reads \"1617 slave raid\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1617,
+    "end": 1617,
+    "date": "1617-08"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "barbary-portuguese-conflicts"
+}
