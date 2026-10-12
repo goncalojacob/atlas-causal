@@ -56,7 +56,7 @@ export function lensCountText(atlas, state, foci) {
   return `${events}, and ${around} around ${own === 1 ? 'it' : 'them'}`;
 }
 
-export const LENS_COUNT_HINT = 'The events this focus names, and the ones drawn faintly around them: what they link to, and what they are part of.';
+export const LENS_COUNT_HINT = 'How many events this chip names, and how many faint events the views draw around them. The faint ones are the events they link to and the larger events they belong to.';
 
 export function createLensChips(container, { atlas, state }) {
   const badge = html('span', { class: 'lens-chips', hidden: 'hidden' });
@@ -129,7 +129,7 @@ export function createLensChips(container, { atlas, state }) {
       }).join('')}
       ${foci.length > 1 ? `<button type="button" class="link small lens-all" data-action="focus-all"
         aria-pressed="${s.focusAll ? 'true' : 'false'}"
-        title="Events that every focus keeps, rather than events any of them keeps">all of these</button>` : ''}
+        title="Show only the events that every chip keeps">all of these</button>` : ''}
       <button type="button" class="link small" data-action="clear-focus">${esc(BACK_LABEL)}</button>`;
     restore(was);
   }
