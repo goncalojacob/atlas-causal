@@ -211,7 +211,7 @@ test('opening an actor from an event, then Back, shows the event again', { skip 
 
     // The panel's own Back names what it returns to, and is history.back().
     const label = await page.eval('return document.querySelector(".panel .card-history .go-back").textContent.trim();');
-    assert.equal(label, '← 25 April');
+    assert.equal(label, 'Back to 25 April');
     await page.eval('document.querySelector(".panel .card-history .go-back").click(); return true;');
     // A wait with a name, not a bare hundred tries (M87 §5, review B8): a card
     // that never comes back said nothing at all before, and the assertion under
@@ -835,7 +835,7 @@ test('an office opens on a card that names the actor, the category and its holde
       'the trail on the holder\'s card');
     assert.equal(
       await page.eval('return document.querySelector(".panel .card-history .go-back").textContent.trim();'),
-      '← Prime Minister of Portugal',
+      'Back to Prime Minister of Portugal',
     );
 
     // And the card's own close control takes the office out of the URL

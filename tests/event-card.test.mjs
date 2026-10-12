@@ -27,7 +27,7 @@ function context(atlas) {
     lanes: () => [],
     startYear: (event) => bounds(event.when.start).min,
     eventLink: (event) => `<button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button>`,
-    entryLink: (kind, id) => `<p class="entry-link"><a href="entry.html?id=${esc(id)}">Read the full entry →</a></p>`,
+    entryLink: (kind, id) => `<p class="entry-link"><a href="entry.html?id=${esc(id)}">Read the full entry</a></p>`,
     discussLink: () => '<p class="discuss"><a href="#">Discuss this record</a></p>',
     wikipediaHtml: () => '<p class="wikipedia"><a href="#">Read more on Wikipedia</a></p>',
     historyHtml: () => '',

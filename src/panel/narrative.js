@@ -42,7 +42,7 @@ export function partOfHtml(ctx, id, { bare = false } = {}) {
     <button type="button" class="link" data-action="narrative" data-id="${esc(n.id)}">${esc(n.title)}</button>
     <span class="muted">${authorsLine(n)}</span>
   </li>`);
-  const inner = `<p class="hint">Narratives that walk through this record. A narrative is one person's account and changes nothing it walks.</p>
+  const inner = `<p class="hint">Narratives that pass through this record. A narrative is one person's account. It does not change the records it passes through.</p>
     <ul class="narrative-rows">${items.join('')}</ul>`;
   return bare ? inner : `<section class="part-of"><h2>Part of <span class="count">${list.length}</span></h2>${inner}</section>`;
 }
@@ -95,7 +95,7 @@ function stepRecordHtml(ctx, resolved) {
         <button type="button" class="link" data-action="actor" data-id="${esc(actor.id)}">${esc(actor.name ?? actor.id)}</button>
         <span class="when">${esc(formatInterval(actor.when))}</span>
       </p>
-      <p class="hint">An actor, not an event: this step is about who, not about what happened.</p>
+      <p class="hint">This step is about an actor: a person, state or body that took part in events.</p>
     </section>`;
   }
   if (resolved.kind === 'relation') {
@@ -106,7 +106,7 @@ function stepRecordHtml(ctx, resolved) {
       <p class="edge-head"><span class="arrow">${name(relation.from)} — ${esc(label)} → ${name(relation.to)}</span>
         <span class="when">${esc(formatInterval(relation.when))}</span></p>
       ${relation.note ? `<p class="muted">${esc(relation.note)}</p>` : ''}
-      <p class="hint">A link between actors, not between events.</p>
+      <p class="hint">A link between two actors.</p>
     </section>`;
   }
   if (resolved.kind === 'presence') {
@@ -118,7 +118,7 @@ function stepRecordHtml(ctx, resolved) {
         <span class="when">${esc(formatInterval(presence.when))}</span>
       </p>
       ${presence.capital ? `<p class="muted">${esc(presence.capital.label)}</p>` : ''}
-      <p class="hint">Ground held, not an event: what the map draws for this actor in those years.</p>
+      <p class="hint">The ground this actor held in those years, as the map draws it.</p>
     </section>`;
   }
   return `<section class="step-record"><p class="notice">This step names <code>${esc(resolved.ref)}</code>, which is not in the atlas.</p></section>`;
@@ -135,25 +135,25 @@ export function renderNarrativeCard(ctx, { container, narrative, state, mine }) 
   </li>`);
 
   container.innerHTML = `
-    <p class="notice narrative">Reading a narrative: the three views hold the walk, with what it touches dimmed around it, and follow the step.
+    <p class="notice narrative">You are reading a narrative. The map, the graph and the timeline show the walk, with the records it touches dimmed around it. They follow each step.
       <button type="button" class="link small" data-action="leave-narrative">${esc(BACK_LABEL)}</button></p>
     <header class="narrative-head">
       ${closeControlHtml()}
       <h2>${esc(narrative.title)}</h2>
       <p class="meta"><span class="muted">${authorsLine(narrative)}</span> · <span class="count">step ${index + 1} of ${total}</span>
         ${resolved?.event ? ctx.lensControl('event', resolved.event.id, { only: true }) : ''}</p>
-      <p class="entry-link"><a href="narratives.html">Every narrative, by the years it is about →</a></p>
+      <p class="entry-link"><a href="narratives.html">All narratives, by the years they cover</a></p>
       ${ctx.discussLink('narrative', narrative.id)}
       ${standingSlot()}
     </header>
     <section class="step-text" data-slot="step-text"><p class="muted">Loading…</p></section>
     ${resolved ? stepRecordHtml(ctx, resolved) : ''}
     <p class="actions">
-      <button type="button" data-action="narrative-step" data-step="${index - 1}" ${index === 0 ? 'disabled' : ''}>← Previous</button>
-      <button type="button" data-action="narrative-step" data-step="${index + 1}" ${index >= total - 1 ? 'disabled' : ''}>Next →</button>
+      <button type="button" data-action="narrative-step" data-step="${index - 1}" ${index === 0 ? 'disabled' : ''}>Previous</button>
+      <button type="button" data-action="narrative-step" data-step="${index + 1}" ${index >= total - 1 ? 'disabled' : ''}>Next</button>
     </p>
     <section class="narrative-walk"><h2>The walk</h2><ol class="steps">${walk.join('')}</ol></section>
-    <section class="summary"><h2>What it claims</h2><p>${esc(narrative.summary)}</p></section>
+    <section class="summary"><h2>Summary</h2><p>${esc(narrative.summary)}</p></section>
     <section class="sources" data-slot="narrative-sources"></section>
   `;
 

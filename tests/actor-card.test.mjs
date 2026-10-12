@@ -27,7 +27,7 @@ function context(atlas) {
     laneLabel: (region) => region ?? '',
     startYear: (event) => bounds(event.when.start).min,
     lensControl: (kind, id) => `<button type="button" class="link small lens-control" data-action="focus" data-focus="${kind}:${id}">show only these</button>`,
-    entryLink: (kind, id) => `<p class="entry-link"><a href="entry.html?id=${esc(id)}">Read the full entry →</a></p>`,
+    entryLink: (kind, id) => `<p class="entry-link"><a href="entry.html?id=${esc(id)}">Read the full entry</a></p>`,
     discussLink: (kind, id) => `<p class="discuss"><a href="${esc(discussUrl(kind, id))}" rel="noopener" target="_blank">Discuss this record</a></p>`,
     wikipediaHtml: (record) => {
       const article = articleFor(record, ['pt']);
