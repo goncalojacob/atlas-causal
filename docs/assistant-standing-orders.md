@@ -282,3 +282,19 @@ the test that pinned the refusal now asserts the write, rules card 11 and
 M42's amendment A16 record the decision, and the planner's prompt no longer
 applies the rule. Question 13b (the arrow of time into an ongoing event) and
 13c (two dates) stand.
+
+## 9. 13 October: importance first, the bar withdrawn
+
+The owner, the same evening: *"Right now the priority is to add most events
+of historical significance since around 1500, even if for now there is no
+parent or child for it. Just add all events that are relevant and connect
+them when you can. Start by adding the main and most important historical
+event and then progress to adding events that are not as important or that
+are children of the main events."* Applied as A17 (`docs/m42-brief.md`),
+rules card 7, 12 and 13, M91 (the queue may carry an item with no edge; the
+writer imports it; duplicates are caught by title too), and the planner's
+prompt: it ranks by Wikipedia's vital-article levels and lists, then by the
+children of held main events, lanes as the tiebreak. The owner also has
+cloud credits to spend (*"I also have cloud credit sessions that you are
+free to use"*): the planner fires four times a day and the writers take ten
+items a fire.
