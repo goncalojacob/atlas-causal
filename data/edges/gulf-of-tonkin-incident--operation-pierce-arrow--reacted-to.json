@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "gulf-of-tonkin-incident--operation-pierce-arrow--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-12",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Pierce Arrow\", revision 1370698570"
+    }
+  ],
+  "from": "gulf-of-tonkin-incident",
+  "to": "operation-pierce-arrow",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The article \"Operation Pierce Arrow\" (revision 1370698570) states: \"In response to the Gulf of Tonkin incident when the destroyers USS Maddox and USS Turner Joy of the United States Navy engaged North Vietnamese ships, sustaining light damage as they gathered electronic intelligence while in the international waters of the Gulf of Tonkin, U.S. President Lyndon B. Johnson ordered Operation \"Pierce Arrow\" which was conducted on 5 August 1964.\" The edge runs from the incident to the operation, which is the direction this atlas writes `reacted-to` in: the earlier event is `from` and the answer to it is `to`.",
+  "dispute": null
+}

@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "kind": "import-queue-log",
+  "entries": [
+    {
+      "id": "2026-10-12-africa-001",
+      "writer": "A",
+      "fired": "2026-10-12T16:24Z",
+      "status": "written",
+      "written": {
+        "event": "larache-landing",
+        "edges": [
+          "larache-landing--rif-war--precondition-of"
+        ],
+        "place": "larache"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-12-africa-002",
+      "writer": "A",
+      "fired": "2026-10-12T16:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ismailia-1952",
+        "edges": [
+          "battle-of-ismailia-1952--1952-egyptian-revolution--caused"
+        ],
+        "place": "ismailia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-12-asia-003",
+      "writer": "A",
+      "fired": "2026-10-12T16:24Z",
+      "status": "written",
+      "written": {
+        "event": "imo-incident",
+        "edges": [
+          "imo-incident--first-sino-japanese-war--precondition-of"
+        ],
+        "place": "hanseongbu"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-12-asia-004",
+      "writer": "A",
+      "fired": "2026-10-12T16:24Z",
+      "status": "written",
+      "written": {
+        "event": "operation-pierce-arrow",
+        "edges": [
+          "gulf-of-tonkin-incident--operation-pierce-arrow--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-12-asia-005",
+      "writer": "A",
+      "fired": "2026-10-12T16:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-luang-namtha",
+        "edges": [
+          "first-indochina-war--battle-of-luang-namtha--precondition-of"
+        ],
+        "place": "luang-namtha"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-12-asia-006",
+      "writer": "A",
+      "fired": "2026-10-12T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "red-sea-crisis",
+        "edges": [
+          "gaza-war--red-sea-crisis--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-12-asia-007",
+      "writer": "A",
+      "fired": "2026-10-12T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "hezbollah-israel-conflict-2023-present",
+        "edges": [
+          "gaza-war--hezbollah-israel-conflict-2023-present--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-12-asia-008",
+      "writer": "A",
+      "fired": "2026-10-12T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "iran-internal-crisis-2025-present",
+        "edges": [
+          "twelve-day-war--iran-internal-crisis-2025-present--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    }
+  ]
+}

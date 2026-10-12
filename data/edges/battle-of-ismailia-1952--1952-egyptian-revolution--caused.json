@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "battle-of-ismailia-1952--1952-egyptian-revolution--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-12",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ismailia (1952)\", revision 1370443871"
+    }
+  ],
+  "from": "battle-of-ismailia-1952",
+  "to": "1952-egyptian-revolution",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article \"Battle of Ismailia (1952)\" (revision 1370443871) states: \"56 Egyptian policemen were killed and 73 wounded, and when news of the engagement was publicized the next day it sparked the Cairo fire and eventually led to the 1952 Egyptian revolution.\" The edge reads that sentence: the clash is written as the cause and the revolution as what it eventually led to. The Cairo fire, which the sentence names as the step between them, is not a record this atlas holds.",
+  "dispute": null
+}

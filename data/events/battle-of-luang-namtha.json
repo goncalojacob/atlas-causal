@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-luang-namtha",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-12",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q18356970",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-12"
+  },
+  "wikipedia": {
+    "en": "Battle of Luang Namtha",
+    "pt": "Batalha de Luang Namtha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18356970"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Luang Namtha\", revision 1379293458"
+    }
+  ],
+  "title": "Battle of Luang Namtha",
+  "summary": "The English Wikipedia article \"Battle of Luang Namtha\", at revision 1379293458, opens: \"The Battle of Luang Namtha, fought between January 1962 and May 1963, was a series of clashes in the Laotian Civil War. It came about as a result of the turmoil following Laotian independence as a result of the First Indochina War with France. The Kingdom of Laos had foreign soldiers on its soil, and a political struggle in progress concerning those outside troops. Following a coup and counter-coup that left General Phoumi Nosavan in charge, the general decided on military action to settle the political issue of interlopers in Laos.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18356970, imported by tools/import/wikidata.mjs. The item's own description reads \"1962 battle of the Laotian Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1962,
+    "end": 1962,
+    "date": "1962-01",
+    "endDate": "1962-05"
+  },
+  "place": "luang-namtha",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "laotian-civil-war"
+}
