@@ -25710,7 +25710,7 @@ writes edges and may touch nothing else. And an edge may carry `sources` beside 
 which is the only way a `consensus` edge can exist at all, rules 9 and 22 refusing one that rests
 on Wikipedia alone. Said here rather than left to the planner to invent, as the brief asks.
 
-**Deviation 1433**, found writing the chronology test: `tidy()` in
+**Deviation 1570**, found writing the chronology test: `tidy()` in
 `tools/import/chronology.mjs` folds the dashes, the quotes and the whitespace but **not the soft
 hyphen**, which is a character in the text and nothing on the page. A sentence carrying one
 inside its own *"After"* was therefore not seen to open on chronology at all. Not a fault in the
@@ -25718,14 +25718,14 @@ module, whose job is the fold the matcher needs, but a trap for a caller: `verdi
 therefore asks A15(5) of `normaliseQuote(quote)` — the same fold the verbatim check just used,
 which keeps the case `namesHeldEvents` reads — and never of the characters typed.
 
-**Deviation 1434**: the brief calls a queue *"an array of items"*, and `data/imports/` cannot hold
+**Deviation 1571**: the brief calls a queue *"an array of items"*, and `data/imports/` cannot hold
 one. `readImportMaps` dispatches on the file's own `kind` rather than on its name — which is the
 directory's rule, written down in `tools/lib/read.mjs`, because the name is a contributor's choice
 — and a bare array has no kind to dispatch on and would be read as an import map and fail its
 schema. So `items` is the array and the envelope around it is the convention, and the same for the
 log's `entries`.
 
-**Deviation 1435**: `tests/workflows.test.mjs` read `validate.yml`'s push pattern as one quoted
+**Deviation 1572**: `tests/workflows.test.mjs` read `validate.yml`'s push pattern as one quoted
 string, and §5 makes it a list. Read as the list's meaning now — does any pattern in it match this
 branch — and still asserting the patterns reach `m42`, `m42b`, `m88`, `m1`, `m90` and `plan` and
 neither `m0` nor `main`. The first attempt matched the list with `[^\]]+`, which stops at the `]`
