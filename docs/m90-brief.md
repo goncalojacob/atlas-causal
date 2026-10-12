@@ -38,9 +38,13 @@ stands" in `docs/m42-pool.md` on `origin/m42` and `docs/m42b-pool.md` on
 
 ## 1. The queue: `schema/import/queue.json` and `data/imports/queue.json`
 
-A queue is a JSON file, an array of items, kept by the planner on the `plan`
-branch at `data/imports/queue.json`. Write the schema first, with a test that
-rejects each malformed shape below. An item:
+A queue is a JSON file kept by the planner on the `plan` branch at
+`data/imports/queue.json`. **As built (12 October):** the file is an envelope
+`{ "schema": 1, "kind": "import-queue", "items": [ ... ] }` and the log is
+`{ "schema": 1, "kind": "import-queue-log", "items": [ ... ] }`; an item may
+also be `{ "existing": "<event id>", ... }` with no `qid`, for a parent or an
+edge added to a record the atlas already holds. Write the schema first, with a
+test that rejects each malformed shape below. An item:
 
 ```json
 {
@@ -230,9 +234,14 @@ equals the validator's. `M90 done` when all of it is green on `m90`'s head.
 > (`data/index/search-*.json` or `data/events/` titles and `wikidata` ids).
 > Queue it only with that sentence verbatim, the revision, the type, and the
 > parents that fit. Apply the chronology refusal and the parent rule yourself;
-> the writer applies them again. **Queue about fifty items a day across the
-> lanes, never more than seventy,** so the writers' cost is bounded by the
-> queue. Write nothing you cannot quote.
+> the writer applies them again, and its reading of A15(5)'s second half is
+> mechanical: **the quoted sentence may name no event the atlas holds other
+> than the edge's two ends — not even the umbrella you are filing the item
+> under — or the writer refuses the edge as `chronology`.** Pick the sentence
+> that states the link and nothing else; a sentence that names three events
+> gives the edge to none. **Queue about fifty items a day across the lanes,
+> never more than seventy,** so the writers' cost is bounded by the queue.
+> Write nothing you cannot quote.
 >
 > STEP 3 — On Sundays, the curation pass of A11(a) and A13 over every active
 > event, as before, but reported in the day's note and applied through the
@@ -242,7 +251,8 @@ equals the validator's. `M90 done` when all of it is green on `m90`'s head.
 > assistant.
 >
 > STEP 4 — Validate the queue against `schema/import/queue.json` (`node
-> tools/queue/apply.mjs --check data/imports/queue.json`), write
+> tools/queue/apply.mjs --check data/imports/queue.json`, run from the
+> checkout: it reads `data/regions.json` and the records to resolve ids), write
 > `docs/plans/<today>.md` (at most 60 lines: counts before, what trailed,
 > what was queued per lane, what was refused and why, disputes, anything for
 > the assistant), commit, push `plan`. Deviations continue from 1600.
@@ -270,20 +280,26 @@ equals the validator's. `M90 done` when all of it is green on `m90`'s head.
 > `STATUS.md` and dropping and rebuilding `data/index/` on conflict. Apply the
 > claim rule of `docs/run-protocol.md` to any `Writer A started` line in
 > `STATUS.md`; append yours under `## Milestones landed`, commit alone, push.
-> Count the items for writer A whose ids are not in
-> `data/imports/queue-log.json`: **if none, stop and say "queue empty"**.
+> Run `node tools/queue/state.mjs --queue /tmp/queue.json --logs
+> data/imports/queue-log.json` and read writer A's waiting count: **if it is
+> zero, stop and say "queue empty"** (`apply.mjs` prints the same and exits 0
+> if you run it anyway).
 >
 > STEP 1 — Extract what the other branch holds: `git ls-tree -r --name-only
 > origin/m42b data/events | sed 's#.*/##; s#\.json$##' > /tmp/held.txt` and
 > the `wikidata` ids of those files appended. Run `node tools/queue/apply.mjs
-> --queue /tmp/queue.json --writer A --max 5 --held /tmp/held.txt`. If it
-> exits with the network-refused code, stop and say so. If `validate --index`
-> fails inside it, stop and say which record; do not fix a record by hand.
+> --queue /tmp/queue.json --writer A --max 5 --held /tmp/held.txt`. **If it
+> exits 3 with `network-refused:` on stderr, the network is refused inside the
+> sandbox: discard the working tree (`git checkout -- . && git clean -fd
+> data tools/import/cache`), commit nothing, and stop saying so**; the items
+> stay queued for the next fire. If `validate --index` fails inside it, stop
+> and say which record; do not fix a record by hand.
 >
 > STEP 2 — Commit the records first (`data/events`, `data/edges`,
-> `data/places`, `data/imports/`), then the index (`data/index`), then the
-> cache (`tools/import/cache/`), each its own commit with a one-line message
-> naming the item ids. Push `m42`. Wait for the check as before (the check is
+> `data/places`, `data/imports/` — the log, and the seeds and state files,
+> which also carry the qids of refused items; that is expected), then the
+> index (`data/index`), then the cache (`tools/import/cache/`), each its own
+> commit with a one-line message naming the item ids. Push `m42`. Wait for the check as before (the check is
 > honest since M63; if red, read the failure; `gh api .../logs` does not work
 > here, use the check-run annotations). Append one line to `STATUS.md`: `Writer
 > A <ISO instant>: <n> written, <m> partial, <k> refused, <j> skipped`; commit
