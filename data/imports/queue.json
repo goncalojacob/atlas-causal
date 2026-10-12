@@ -1,0 +1,191 @@
+{
+ "schema": 1,
+ "kind": "import-queue",
+ "generated": "2026-10-12",
+ "items": [
+  {
+   "id": "2026-10-12-africa-001",
+   "planned": "2026-10-12T17:40Z",
+   "lane": "africa",
+   "writer": "A",
+   "qid": "Q5804054",
+   "title": "Larache landing",
+   "parents": [],
+   "edges": [
+    {
+     "from": "Q5804054",
+     "to": "rif-war",
+     "type": "precondition-of",
+     "confidence": "probable",
+     "article": "Larache landing",
+     "revision": 1379388284,
+     "quote": "The Larache landing refers to the military action in 1911 that led to the occupation of the Moroccan city of Larache by the Spanish Marine Infantry, establishing a precedent for the military intervention in Morocco and the subsequent Rif War.",
+     "explanation": "The article \"Larache landing\" (revision 1379388284) states: \"The Larache landing refers to the military action in 1911 that led to the occupation of the Moroccan city of Larache by the Spanish Marine Infantry, establishing a precedent for the military intervention in Morocco and the subsequent Rif War.\" The edge reads the last clause and nothing more: a precedent for an intervention is a precondition of the war that followed fifteen years later and not its cause. The item's Wikidata P361 names the Rif War, but a 1911 landing cannot be part of a war that begins in 1921, so no parent is filed (rule 24)."
+    }
+   ],
+   "why": "Africa trails at 325 active events against the Americas' 431; the item is a P361 child of the held umbrella `rif-war`, and its own first sentence states the link."
+  },
+  {
+   "id": "2026-10-12-africa-002",
+   "planned": "2026-10-12T17:40Z",
+   "lane": "africa",
+   "writer": "A",
+   "qid": "Q12246335",
+   "title": "1952 Clash of Ismailia",
+   "parents": [],
+   "edges": [
+    {
+     "from": "Q12246335",
+     "to": "1952-egyptian-revolution",
+     "type": "caused",
+     "confidence": "probable",
+     "article": "Battle of Ismailia (1952)",
+     "revision": 1370443871,
+     "quote": "56 Egyptian policemen were killed and 73 wounded, and when news of the engagement was publicized the next day it sparked the Cairo fire and eventually led to the 1952 Egyptian revolution.",
+     "explanation": "The article \"Battle of Ismailia (1952)\" (revision 1370443871) states: \"56 Egyptian policemen were killed and 73 wounded, and when news of the engagement was publicized the next day it sparked the Cairo fire and eventually led to the 1952 Egyptian revolution.\" The edge reads that sentence: the clash is written as the cause and the revolution as what it eventually led to. The Cairo fire, which the sentence names as the step between them, is not a record this atlas holds."
+    }
+   ],
+   "why": "Africa trails at 325 active events; the item's own article names a held event as what the clash led to, in one sentence that states the cause and not only the order."
+  },
+  {
+   "id": "2026-10-12-asia-003",
+   "planned": "2026-10-12T17:40Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q709191",
+   "title": "Imo Incident",
+   "parents": [],
+   "edges": [
+    {
+     "from": "Q709191",
+     "to": "first-sino-japanese-war",
+     "type": "precondition-of",
+     "confidence": "probable",
+     "article": "Imo Incident",
+     "revision": 1378536153,
+     "quote": "This incident served as a crucial powderkeg that led to the First Sino-Japanese War in 1894.",
+     "explanation": "The article \"Imo Incident\" (revision 1378536153) states: \"This incident served as a crucial powderkeg that led to the First Sino-Japanese War in 1894.\" A powderkeg twelve years before the war is a precondition rather than its cause, which is the weaker of the two readings the sentence allows and the one the edge takes."
+    }
+   ],
+   "why": "Asia trails at 321 active events, the thinnest lane after Africa; the article states the link to a held event in one sentence and names no third event the atlas holds."
+  },
+  {
+   "id": "2026-10-12-asia-004",
+   "planned": "2026-10-12T17:40Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q2231356",
+   "title": "Operation Pierce Arrow",
+   "parents": [
+    "vietnam-war"
+   ],
+   "edges": [
+    {
+     "from": "gulf-of-tonkin-incident",
+     "to": "Q2231356",
+     "type": "reacted-to",
+     "confidence": "probable",
+     "article": "Operation Pierce Arrow",
+     "revision": 1370698570,
+     "quote": "In response to the Gulf of Tonkin incident when the destroyers USS Maddox and USS Turner Joy of the United States Navy engaged North Vietnamese ships, sustaining light damage as they gathered electronic intelligence while in the international waters of the Gulf of Tonkin, U.S. President Lyndon B. Johnson ordered Operation \"Pierce Arrow\" which was conducted on 5 August 1964.",
+     "explanation": "The article \"Operation Pierce Arrow\" (revision 1370698570) states: \"In response to the Gulf of Tonkin incident when the destroyers USS Maddox and USS Turner Joy of the United States Navy engaged North Vietnamese ships, sustaining light damage as they gathered electronic intelligence while in the international waters of the Gulf of Tonkin, U.S. President Lyndon B. Johnson ordered Operation \"Pierce Arrow\" which was conducted on 5 August 1964.\" The edge runs from the incident to the operation, which is the direction this atlas writes `reacted-to` in: the earlier event is `from` and the answer to it is `to`."
+    }
+   ],
+   "why": "Asia trails at 321 active events; the operation is a P361 child of the held umbrella `vietnam-war` and its own first sentence names the held incident it answered."
+  },
+  {
+   "id": "2026-10-12-asia-005",
+   "planned": "2026-10-12T17:40Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q18356970",
+   "title": "Battle of Luang Namtha",
+   "parents": [
+    "laotian-civil-war"
+   ],
+   "edges": [
+    {
+     "from": "first-indochina-war",
+     "to": "Q18356970",
+     "type": "precondition-of",
+     "confidence": "probable",
+     "article": "Battle of Luang Namtha",
+     "revision": 1379293458,
+     "quote": "It came about as a result of the turmoil following Laotian independence as a result of the First Indochina War with France.",
+     "explanation": "The article \"Battle of Luang Namtha\" (revision 1379293458) states: \"It came about as a result of the turmoil following Laotian independence as a result of the First Indochina War with France.\" The sentence names the war as the far end of that chain and the independence and the turmoil as the steps between, neither of which this atlas holds as a record; the edge therefore takes the weaker reading, `precondition-of`, and not `caused`."
+    }
+   ],
+   "why": "Asia trails at 321 active events; the item is a P361 child of the held umbrella `laotian-civil-war`, whose span contains 1962, and the edge runs to a war outside that umbrella's own chain."
+  },
+  {
+   "id": "2026-10-12-asia-006",
+   "planned": "2026-10-12T17:40Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q123285238",
+   "title": "Red Sea crisis",
+   "parents": [
+    "middle-eastern-crisis-2023-present"
+   ],
+   "edges": [
+    {
+     "from": "gaza-war",
+     "to": "Q123285238",
+     "type": "reacted-to",
+     "confidence": "probable",
+     "article": "Red Sea crisis",
+     "revision": 1378533380,
+     "quote": "The Houthis began launching missiles and armed drones at Israel in response to the Gaza war, and have seized or attacked dozens of merchant and naval vessels travelling through the Red Sea which they claimed are linked to Israel.",
+     "explanation": "The article \"Red Sea crisis\" (revision 1378533380) states: \"The Houthis began launching missiles and armed drones at Israel in response to the Gaza war, and have seized or attacked dozens of merchant and naval vessels travelling through the Red Sea which they claimed are linked to Israel.\" The attacks on shipping that the same sentence describes are what the crisis is, so the edge runs from the war to the crisis, which is the direction this atlas writes `reacted-to` in."
+    }
+   ],
+   "why": "Asia trails at 321 active events; the crisis is a P361 child of the held umbrella `middle-eastern-crisis-2023-present` and its own first sentence names the held war it answers."
+  },
+  {
+   "id": "2026-10-12-asia-007",
+   "planned": "2026-10-12T17:40Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q122974556",
+   "title": "Hezbollah–Israel conflict (2023–present)",
+   "parents": [
+    "middle-eastern-crisis-2023-present"
+   ],
+   "edges": [
+    {
+     "from": "gaza-war",
+     "to": "Q122974556",
+     "type": "caused",
+     "confidence": "probable",
+     "article": "Israeli–Lebanese conflict",
+     "revision": 1370624531,
+     "quote": "The Gaza war sparked a renewed Israel-Hezbollah conflict, beginning one day after the October 7 Hamas-led attack on Israel.",
+     "explanation": "The article \"Israeli–Lebanese conflict\" (revision 1370624531) states: \"The Gaza war sparked a renewed Israel-Hezbollah conflict, beginning one day after the October 7 Hamas-led attack on Israel.\" The renewed conflict the sentence names is this item, and the edge reads the verb the sentence uses: the war sparked it."
+    }
+   ],
+   "why": "Asia trails at 321 active events; the held umbrella `middle-eastern-crisis-2023-present` has only two children, and a held event is named as the cause in one sentence of another article."
+  },
+  {
+   "id": "2026-10-12-asia-008",
+   "planned": "2026-10-12T17:40Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q135450775",
+   "title": "Iran internal crisis (2025–present)",
+   "parents": [],
+   "edges": [
+    {
+     "from": "twelve-day-war",
+     "to": "Q135450775",
+     "type": "caused",
+     "confidence": "probable",
+     "article": "Iran internal crisis (2025–present)",
+     "revision": 1378212209,
+     "quote": "As a result of the Twelve-Day War, internal tension within the Islamic Republic worsened into what the National Council of Resistance of Iran calls a \"crisis of legitimacy\".",
+     "explanation": "The article \"Iran internal crisis (2025–present)\" (revision 1378212209) states: \"As a result of the Twelve-Day War, internal tension within the Islamic Republic worsened into what the National Council of Resistance of Iran calls a \"crisis of legitimacy\".\" The crisis the clause describes is what the article is about. The phrase \"crisis of legitimacy\" is the article's attribution to the National Council of Resistance of Iran and not this atlas's own words, which is one reason the confidence is `probable`."
+    }
+   ],
+   "why": "Asia trails at 321 active events; the item's own article names a held war as what its crisis resulted from, and the Twelve-Day War carries few consequences in the atlas so far."
+  }
+ ]
+}
