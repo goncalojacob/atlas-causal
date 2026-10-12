@@ -4603,9 +4603,10 @@ A15(2) — which needs the network, so a fire run against a stub does not preten
 to have done it. **Nothing is committed by the tool.** Committing is the
 routine's step, so a run that goes wrong leaves a working tree somebody can
 read rather than a history somebody has to undo. Four exits and the routine
-knows all four: 0, a hard stop at 1, usage at 2, and `network-refused` at 3 —
-which is reached before the first write, because the quotes are verified before
-the import.
+knows all four: 0, a hard stop at 1, usage at 2, and `network-refused` at 3.
+(After review: exit 3 can come after this fire's earlier items and this item's
+seeds and cursor were written, so the two import files are put back and the
+routine is told to commit nothing and discard the tree.)
 
 `--check <file>` is what the planner runs before it pushes: the file against
 its schema and against `checkQueue`.

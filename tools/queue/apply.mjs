@@ -44,7 +44,7 @@ import { readSchemaFiles, readRecords, readRegions, readRegionPolygons } from '.
 import { createRegionDeriver } from '../../src/util/geo.js';
 import {
   HttpError, createFetcher, wikipediaApi, readSeeds, readState, writeState,
-  runImportMode, emptyState, SEEDS_FILE, LEAD_CACHE,
+  runImportMode, emptyState, SEEDS_FILE, STATE_FILE, LEAD_CACHE,
 } from '../import/wikidata.mjs';
 import {
   QUEUE_SCHEMA, LOG_SCHEMA, WRITERS, QUEUE_KIND, LOG_KIND,
@@ -308,6 +308,33 @@ export function parentVerdict(id, child, byId) {
 
 // --- the fire --------------------------------------------------------------
 
+// What the routine is told on the network exit, and why it is not "nothing was
+// written": by the time an import step refuses, this fire may have written
+// earlier items, and this item's seeds and cursor.
+export const NETWORK_DISCARD = 'the working tree may hold this fire\'s earlier items and import-state changes; commit nothing, discard it';
+
+// The seeds file and the import cursor, kept as text (or as absent) before an
+// item touches them, so the network exit can put them back exactly.
+function importFilesKeeper(dataDir) {
+  const files = [SEEDS_FILE, STATE_FILE].map((f) => path.join(dataDir, ...f.split('/')));
+  let saved = null;
+  return {
+    async save() {
+      saved = [];
+      for (const file of files) saved.push([file, existsSync(file) ? await readFile(file, 'utf8') : null]);
+    },
+    forget() { saved = null; },
+    async restore() {
+      if (!saved) return;
+      for (const [file, text] of saved) {
+        if (text === null) await rm(file, { force: true });
+        else await writeFile(file, text, 'utf8');
+      }
+      saved = null;
+    },
+  };
+}
+
 const asText = (value) => `${JSON.stringify(value, null, 2)}\n`;
 
 async function readJson(file, fallback = null) {
@@ -326,7 +353,7 @@ function run(command, args, cwd = ROOT) {
 // One item, in the brief's own order, stopping at the first step that fails.
 // Returns the log entry and what it wrote.
 async function applyItem(item, {
-  dataDir, cacheDir, fetcher, writer, today, fired, held, corpus, deriveRegion,
+  dataDir, cacheDir, fetcher, writer, today, fired, held, corpus, deriveRegion, importFiles,
 }) {
   const refusals = [];
   const written = { event: null, edges: [], place: null };
@@ -424,6 +451,9 @@ async function applyItem(item, {
   record = isImport(item) ? null : corpus.byId.get(item.existing);
   if (isImport(item)) {
     const seedsFile = path.join(dataDir, SEEDS_FILE);
+    // The two import files as they were before this item, so a network exit
+    // inside the import can put them back (review of 12 October, finding 3).
+    await importFiles.save();
     const seeds = await readSeeds(dataDir);
     if (!seeds) throw new Error(`no ${SEEDS_FILE} under ${dataDir}: there is nothing to import with`);
     if (!(seeds.items ?? []).includes(item.qid)) {
@@ -561,20 +591,31 @@ export async function applyQueue({
   const deriveRegion = polygons ? createRegionDeriver(polygons) : null;
 
   const entries = [];
+  const importFiles = importFilesKeeper(dataDir);
   for (const item of items) {
     let entry;
     try {
       entry = await applyItem(item, {
-        dataDir, cacheDir, fetcher, writer, today, fired, held, corpus, deriveRegion,
+        dataDir, cacheDir, fetcher, writer, today, fired, held, corpus, deriveRegion, importFiles,
       });
     } catch (e) {
       if (isNetworkRefusal(e)) {
-        // Nothing of this item reached disk: the quotes are verified before
-        // the import, so a refusal here is a refusal before the first write.
-        return { exit: EXIT.network, problems: [`${NETWORK_REFUSED}: ${e.message}`], entries };
+        // Not "nothing reached disk". The quotes are verified before the
+        // import, but the earlier items of this fire are on disk, and a refusal
+        // inside the import comes after the seeds and the cursor were written
+        // for this one — and possibly after a record or a lead. The two import
+        // files are put back as they were before this item; everything else is
+        // for the routine to throw away, which is what the message tells it.
+        await importFiles.restore();
+        return {
+          exit: EXIT.network,
+          problems: [`${NETWORK_REFUSED}: ${NETWORK_DISCARD} (${e.message})`],
+          entries,
+        };
       }
       throw e;
     }
+    importFiles.forget();
     entries.push(entry);
     await mkdir(path.dirname(log), { recursive: true });
     await writeFile(log, asText({ ...logged, entries: [...(logged.entries ?? []), ...entries] }), 'utf8');

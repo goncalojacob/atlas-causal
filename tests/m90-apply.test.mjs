@@ -437,6 +437,35 @@ for (const [name, fail] of [
   });
 }
 
+test('a refusal inside the import puts the seeds and the cursor back and says the tree must be discarded', async () => {
+  const bed = await scratch();
+  const seedsFile = path.join(bed.data, 'imports', 'wikidata-seeds.json');
+  const stateFile = path.join(bed.data, 'imports', 'wikidata-state.json');
+  const seedsBefore = await readFile(seedsFile, 'utf8');
+  // The quotes verify, and the network goes away between the verification and
+  // the import: the first write to the import files has happened by then.
+  const stub = stubFetcher(STUB);
+  const fetcher = {
+    get calls() { return stub.calls; },
+    get budget() { return stub.budget; },
+    get spent() { return stub.spent; },
+    async get(url) {
+      if (url.includes('wbgetentities')) throw new TypeError('fetch failed');
+      return stub.get(url);
+    },
+  };
+  await writeFile(bed.queue, `${JSON.stringify({ ...emptyQueue(), items: [item()] }, null, 2)}\n`, 'utf8');
+  const result = await applyQueue({
+    dataDir: bed.data, queueFile: bed.queue, writer: 'A', cacheDir: bed.cache, fetcher, offline: true,
+  });
+  assert.equal(result.exit, EXIT.network);
+  assert.match(result.problems[0], new RegExp(`^${NETWORK_REFUSED}: the working tree may hold this fire's earlier items and import-state changes; commit nothing, discard it`));
+  assert.equal(await readFile(seedsFile, 'utf8'), seedsBefore, 'the seeds file is as it was before the item');
+  assert.ok(!existsSync(stateFile), 'the cursor the item set is gone again, as it was before');
+  assert.ok(!existsSync(path.join(bed.data, 'imports', 'queue-log.json')));
+  await rm(bed.dir, { recursive: true, force: true });
+});
+
 test('only a 404 or the API\'s own nosuchrevid says the revision is not there', () => {
   const api = (code) => Object.assign(new Error(`x: ${code}`), { apiCode: code });
   assert.equal(isMissingRevision(new HttpError(404, 'x')), true);
