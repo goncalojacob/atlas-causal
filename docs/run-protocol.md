@@ -230,3 +230,31 @@ process that will later resume work in case credits end").
 
 The standing orders the assistant works under for the week are in
 `docs/assistant-standing-orders.md`.
+
+## Amendment, 12 October 2026 — the planner, the writers, and the `plan` branch
+
+The owner paused the records routines on 2 October and resumed them on
+12 October with a change of strategy: *"could we have opus deciding which
+events to add and how to connect them, and sonnet to write the events?"*
+M90 (`docs/m90-brief.md`) builds what that needs. Three changes:
+
+1. **A fourth branch, `plan`.** One routine, the **planner** (Opus, once a
+   day), reads `docs/m90-rules.md` and `tools/queue/state.mjs`, chooses the
+   day's events and their parents and edges, each edge with the article's
+   sentence verbatim at a named revision, and pushes a queue
+   (`data/imports/queue.json`) and a short note (`docs/plans/<date>.md`) to
+   `plan` and nowhere else. It writes no record.
+2. **The lane branches `m42` and `m42b` are written by writers.** Two
+   routines on Sonnet, hourly, take queue items for their lanes (A: `africa`,
+   `asia`, `europe` on `m42`; B: `americas` on `m42b`) and apply them with
+   `tools/queue/apply.mjs`, which verifies every quote against the revision
+   and refuses what it cannot verify. A writer decides nothing, writes no
+   prose note and no deviation; its results are `data/imports/queue-log.json`
+   on its branch and one line in `STATUS.md` per fire. M42's and M42b's
+   routines stay disabled; their briefs stand behind the rules card.
+3. **Landing.** The assistant lands `m42`, `m42b` and `plan` into `m0` and
+   publishes daily, as before. The landing fallback routine stays disabled.
+   The claim rule applies to the writers (`Writer A started`, `Writer B
+   started`) and to the planner (`Planner started` in the day's note).
+
+Deviations: the planner numbers from 1600; M90 continues lane A's.

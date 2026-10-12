@@ -13,6 +13,16 @@
 // action API to its Wikidata item and its canonical title — the table that
 // makes one renamed article one group rather than two — and the leads
 // themselves, by `leadRecord`, exactly as `fetchLeads` writes them.
+//
+// `--only <file>` scopes the question to some records: the file is a JSON array
+// of record ids (events, edges, anything with `sources`), and only their
+// `wikipedia-en` citations are reported and filled. It is what
+// `tools/queue/apply.mjs` passes at the end of a writer fire — the ids of the
+// events and edges that fire wrote — so a fire refetches its own leads and not
+// every missing lead in the corpus (review of 12 October, finding 4). A scoped
+// `--fill` adds to the title table and never prunes it, since the rest of the
+// corpus's titles were not asked about. `--data <dir>` and `--cache <dir>` name
+// another corpus and lead cache than the repository's own.
 
 import path from 'node:path';
 import { readFile, writeFile } from 'node:fs/promises';
@@ -51,7 +61,7 @@ async function get(url, { tries = 5 } = {}) {
 // A title already in the table is not asked again; a title no active record
 // cites any more is dropped, so the file is the corpus's question and not an
 // accumulation.
-export async function fillTitles(cited, table, { fetchJson = get } = {}) {
+export async function fillTitles(cited, table, { fetchJson = get, prune = true } = {}) {
   const wanted = [...cited.keys()].sort();
   const need = wanted.filter((title) => !table.titles[title]);
   let requests = 0;
@@ -79,8 +89,10 @@ export async function fillTitles(cited, table, { fetchJson = get } = {}) {
       };
     }
   }
-  const keep = new Set(wanted);
-  for (const title of Object.keys(table.titles)) if (!keep.has(title)) delete table.titles[title];
+  if (prune) {
+    const keep = new Set(wanted);
+    for (const title of Object.keys(table.titles)) if (!keep.has(title)) delete table.titles[title];
+  }
   return { requests, asked: need.length };
 }
 
@@ -122,11 +134,16 @@ export async function fillLeads(missing, table, { today, cacheDir = CACHE_DIR, f
   return { written, refused, requests };
 }
 
-export async function report({ dataDir = path.join(ROOT, 'data'), cacheDir = CACHE_DIR, titlesFile = TITLES_FILE } = {}) {
+// `only`, where given, is a Set of record ids: the report is then over those
+// records' citations and nobody else's.
+export async function report({
+  dataDir = path.join(ROOT, 'data'), cacheDir = CACHE_DIR, titlesFile = TITLES_FILE, only = null,
+} = {}) {
   const [{ entries }, { leads }, table] = await Promise.all([
     readRecords(dataDir), readCachedLeads(cacheDir), readTitles(titlesFile),
   ]);
-  const records = entries.map((e) => ({ kind: e.kind, ...e.record }));
+  const records = entries.map((e) => ({ kind: e.kind, ...e.record }))
+    .filter((r) => only === null || only.has(r.id));
   const gaps = cacheGaps(records, leads, { titles: table.titles });
   const cited = citedArticles(records).byTitle;
   const unresolved = [...cited.keys()].filter((t) => !table.titles[t]);
@@ -134,19 +151,30 @@ export async function report({ dataDir = path.join(ROOT, 'data'), cacheDir = CAC
   return { gaps, table, cited, unresolved, nowhere, records };
 }
 
+// The value after a flag, or null.
+const valueOf = (argv, flag) => {
+  const i = argv.indexOf(flag);
+  return i >= 0 && i + 1 < argv.length ? argv[i + 1] : null;
+};
+
 async function main(argv) {
   const fill = argv.includes('--fill');
   const asJson = argv.includes('--json');
   const today = new Date().toISOString().slice(0, 10);
-  let state = await report();
+  const onlyFile = valueOf(argv, '--only');
+  const only = onlyFile ? new Set(JSON.parse(await readFile(path.resolve(onlyFile), 'utf8'))) : null;
+  const dataDir = valueOf(argv, '--data') ? path.resolve(valueOf(argv, '--data')) : path.join(ROOT, 'data');
+  const cacheDir = valueOf(argv, '--cache') ? path.resolve(valueOf(argv, '--cache')) : CACHE_DIR;
+  const ask = () => report({ dataDir, cacheDir, only });
+  let state = await ask();
   let titleRun = null;
   let leadRun = null;
   if (fill) {
-    titleRun = await fillTitles(state.cited, state.table);
+    titleRun = await fillTitles(state.cited, state.table, { prune: only === null });
     await writeFile(TITLES_FILE, `${JSON.stringify(state.table, null, 1)}\n`, 'utf8');
-    state = await report();
-    leadRun = await fillLeads(state.gaps.missing, state.table, { today });
-    state = await report();
+    state = await ask();
+    leadRun = await fillLeads(state.gaps.missing, state.table, { today, cacheDir });
+    state = await ask();
   }
   const { gaps, unresolved, nowhere } = state;
   const unholdableRefs = gaps.unholdable.reduce((n, u) => n + u.cites, 0);

@@ -239,3 +239,21 @@ The owner writes a feedback document after the current improvements land
    Winter War because it holds World War II and its parts — should the
    lens show only the events that name the actor (A10)? And which chain
    should the non-Portuguese "Start here" account tell (A4)?
+
+## 7. The planner and the writers (12 October 2026)
+
+The owner paused every cloud routine on 2 October at 19:52Z ("Pausa tudo o
+que esteja a correr na cloud imediatamente") and on 12 October resumed the
+records lane with a new shape: *"could we have opus deciding which events to
+add and how to connect them, and sonnet to write the events?"* The assistant
+landed the rest of 2 October's batches (PR #43, snapshot 16: 1,873 records,
+1,654 active) and wrote `docs/m90-brief.md`, `docs/m90-rules.md` and the
+12 October amendment of `docs/run-protocol.md`. M90 builds the queue schema,
+`tools/queue/apply.mjs` and `tools/queue/state.mjs` on branch `m90` (Opus
+builds; the assistant reviews on Fable and lands). When M90 lands, the
+assistant creates the planner (Opus, daily 03:10Z, branch `plan`) and the two
+writers (Sonnet, hourly, `m42` and `m42b`) from the brief's §7 and §8, and
+lands the three branches daily. M42, M42b and the landing fallback stay
+disabled. The owner named no budget; the assistant set the planner's queue at
+about fifty items a day and the writers to stop when the queue is empty, so
+the spend is bounded by the queue. The owner's open questions in §6 stand.

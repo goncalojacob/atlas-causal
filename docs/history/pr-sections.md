@@ -4478,3 +4478,201 @@ pictures, and no other picture `tools/screens.mjs` writes was taken.
 
 No new runtime dependency, no build step, no map library or tiles, no new hex
 value, token or type size. `docs/drafts/` ignored. Deviations **1429 to 1433**.
+
+## M90 — the planner and the writers
+
+Lane A, on the branch `m90`, over `docs/m90-brief.md` and the 12 October
+amendment of `docs/run-protocol.md`. The owner, 12 October: *"could we have
+opus deciding which events to add and how to connect them, and sonnet to write
+the events?"* — so the judgement moves to a **planner** that fires once a day
+and writes a queue, and the writing becomes a **writer** that applies the queue
+and decides nothing. A writer on a smaller model is safe only if it has nothing
+to decide, which is the whole design brief of this milestone: every rule that
+can be code is code. §1 to §6 are done. **No record was written** — nothing
+under `data/events`, `data/edges`, `data/places` or `data/actors` changed — and
+there is no display change of any kind.
+
+### The queue is a file somebody can argue with
+
+`schema/import/queue.json` and `schema/import/queue-log.json`, the fourth and
+fifth kinds of file `data/imports/` holds. `schema/import/` is a third
+directory under `schema/`, read by `readSchemaFiles` and listed in `TOOL_SIDE`:
+a queue is nobody's record, carries no provenance envelope and is never fetched
+by the browser, so it is not a version of the record schemas and does not sit
+beside them. The brief calls a queue *"an array of items"*; `items` is that
+array, inside the envelope the directory's own convention requires, because
+`tools/lib/read.mjs` dispatches on `kind` and a bare array has no kind to
+dispatch on.
+
+What the shape says: the id is `<date>-<lane>-<nnn>`, the lane is a slug, the
+writer is `A` or `B`, the qid is the source's own shape, a quote is at least
+forty characters and an explanation sixty, a revision is an integer, a `why` is
+at least twenty, the type is one of five and the confidence is `probable` or
+`consensus` and never `disputed` — a dispute is the planner's own note for the
+assistant and never a record a writer makes. What the shape cannot say is in
+`tools/queue/queue.mjs`, pure, and checked by `tools/validate.mjs` like
+everything else in that directory: an id that is twice in one file, an id whose
+lane is not the item's, a lane outside `data/regions.json`, a lane no writer
+takes, a writer that is not the one A10 gives that lane, an item that names
+neither a qid nor an existing record or both, an item with no edge at all —
+**the bar of rules card 7, enforced at the queue and not left to a fire's
+judgement** — an edge neither end of which is the item's own, and an
+explanation that does not carry its own quote.
+
+Two things the brief's §1 did not define and §7 needs, both said here rather
+than left to the planner to invent: an item may carry `existing` instead of
+`qid`, which is the Sunday pass's *"a parent or a place for an existing
+record"*, and an edge may carry `sources` beside the article, which is what
+lets a `consensus` edge exist at all — rules 9 and 22 refuse one that rests on
+Wikipedia alone. An `existing` item files parents and writes edges and may
+touch nothing else: no summary, no date, no place.
+
+`src/references.js` carries both kinds' reference rows, so renaming a record
+reaches a queue the writers have not applied yet. Without them an item whose
+parent or whose edge end was renamed between the planning and the firing would
+come back refused for a record that is there under another name.
+
+### The writer, and the nine things it will not write
+
+`tools/queue/apply.mjs`. It takes its own writer's items that no log has
+answered, at most `--max`, and for each, in the brief's order, stopping at the
+first step that fails and logging why.
+
+**Which way the import is called**, since the brief asks the question
+explicitly: `runImportMode` walks the cursor of `data/imports/wikidata-state.json`
+— `nextBatch` takes `runs.import.pending` where there is one — so the way to
+import exactly one item is to put that one item in `pending` and ask for a
+batch of one. Spawning `--import --batch 1` would have to set the same cursor
+and would import through a second process with a second budget; calling
+`runImportMode` in-process keeps one fetcher, one budget and one count of
+requests for the whole fire.
+
+**The quote is checked against the revision it names, and against no other.**
+The action API, `oldid`, `prop=text`, and the rendered HTML turned into prose by
+`plainText`: the reference markers go first of all, because an article writes
+*"the campaign,[2] which"* and a quote read in a browser has no `[2]` in it — a
+verbatim check against text that kept them would refuse every sentence with a
+citation in the middle. `prop=extracts` was not used: it answers for the page
+and not for the revision, and a citation names a revision because that text is
+what was read. Both sides of the comparison go through `normaliseQuote`, which
+is `tidy()` of `tools/import/chronology.mjs` — NFC, the six dashes onto the
+hyphen, the curly quotes onto the straight, every run of whitespace collapsed —
+plus the soft hyphen, which `tidy` does not take out and which is invisible on
+the page.
+
+Then the nine refusals. Five are the brief's own; the other four are rules that
+are already code elsewhere in this repository, and a writer that wrote the
+record anyway would hand the fire a hard stop from `validate --index` and a
+person to read it, which is strictly worse than a line in the log:
+
+| code | what it is, and whose rule |
+| --- | --- |
+| `type` | not one of the five (rules card 8). Asked first, because it costs no request |
+| `endpoint-missing` | an end that is not an active event of this atlas, or an edge neither end of which is the item's own |
+| `confidence` | `consensus` resting on Wikipedia alone, or on one source, or naming scholarship this atlas does not hold (rules 22 and 9) |
+| `quote-not-found` | the sentence is not in that revision, folded both ways; or the revision could not be read at all |
+| `chronology` | A15(5), **both halves**, through `verdictFor`: the opener with no cause stated, and the sentence that states a cause and names a third event the atlas holds as it. The detail names the third event |
+| `parent-to-child` | an edge between a record and one of its own umbrellas, either way round, read through the whole chain of `part of` (A14) |
+| `parent` | an umbrella that is not an active event, or whose span does not contain the event's start (rule 24 and A6). Not about an edge: the parent is dropped and the event stands |
+| `arrow-of-time` | a cause that starts after its effect, in rule 4's own coarse comparison plus the day where both ends give one in the same single year |
+| `already-held` | the edge is already a record. CLAUDE.md: an import never rewrites a record whose `review.status` is `reviewed`, and a writer never rewrites one at all |
+| `summary-missing` | added after review: the import could not read the lead and wrote its placeholder summary (rules card 2), so the record and its place are taken back off disk. Not about an edge |
+| `parent-cycle` | added after review: a queued parent that is already part of the record, up the whole chain (rule 24). Not about an edge |
+| `edge-cycle` | added after review: the reverse of an edge already active, a loop of two (rule 5) |
+
+Rule 5's cycle was deliberately left to the validator: a new record's one new
+edge cannot close a loop. (After review, the two cheap loops an `existing` item
+can close are refused here: `parent-cycle` and `edge-cycle`, in the table.)
+
+The last two can only be asked once the record exists, because both need its id
+and its dates, and the queue carries neither. So they are asked after the
+import and before any edge is written — and an item whose every edge falls at
+that last fence has what it wrote **taken back off disk**, event and place
+both, because a record that earns no edge is not imported at all.
+
+Where the queue names parents, each is checked and the survivors are written;
+an `existing` record's own umbrellas are kept and the queue's are added to
+them, because the Sunday pass is for a record that came out with none and a
+writer that decides nothing is not the thing to take a filing away. The edges
+carry the envelope of the curation fires' own —
+`data/edges/voyages-of-christopher-columbus--spanish-colonization-of-the-americas--enabled.json`
+— with `origin.run` `m90-writer-A` or `-B`, `review.flags` `["edge-drafted",
+"queued"]`, and the locator in M72's form, `"<title>", revision <n>`. The keys
+are written in the schema's own order through `tools/lib/order.mjs`, so a
+record this tool writes and one the form writes read the same way in a diff.
+
+After the last item: the index, then `validate --index`, then the recache of
+A15(2) — which needs the network, so a fire run against a stub does not pretend
+to have done it. **Nothing is committed by the tool.** Committing is the
+routine's step, so a run that goes wrong leaves a working tree somebody can
+read rather than a history somebody has to undo. Four exits and the routine
+knows all four: 0, a hard stop at 1, usage at 2, and `network-refused` at 3.
+(After review: exit 3 can come after this fire's earlier items and this item's
+seeds and cursor were written, so the two import files are put back and the
+routine is told to commit nothing and discard the tree.)
+
+`--check <file>` is what the planner runs before it pushes: the file against
+its schema and against `checkQueue`.
+
+### The state, in under eighty lines
+
+`tools/queue/state.mjs` is the pool files' successor, and the reason it exists
+is the arithmetic of the old arrangement: every M42 fire read a brief of 5,700
+words, a review of 13,000 and a pool file of 25,000 lines, and what it needed
+out of all that was a table of counts, a lane that trails and a list of
+umbrellas with too few children.
+
+It prints the corpus table — measured by `measure()` of `tools/m42-pool.mjs`,
+which is the same arithmetic the pool files carried, and by the validator
+itself for the errors and the warnings — then the A10 table per lane and per
+century, active against main, biggest lane first so the one that trails reads
+off the bottom; then the queue against both branches' logs, per writer and by
+refusal code; then the umbrellas with fewer than three children; then the last
+three plan notes' headings and the disputes they list. A dispute is **open**
+until the edge it names says `disputed`, which is a question the corpus answers
+and not one anybody has to remember. `--json` is the same answer as an object.
+Eighty lines is a rule and `trimmed()` enforces it, saying how much it took
+away.
+
+### The check, and what the tests are
+
+`validate.yml`'s push pattern becomes a list, `['m[1-9]*', 'plan']`: no pattern
+over `m` reaches the fourth branch, and a queue that does not validate is a
+queue the writers would be taking items out of all day. The 12 October
+amendment of `docs/run-protocol.md` was already on `origin/m0` and was not
+duplicated.
+
+Four suites, 37 tests, 0 skipped. `tests/m90-apply.test.mjs` runs the tool end
+to end through `main()` on a copy of the fixture corpus, index and validator
+included, with `--fetcher stub:tests/fixtures/queue` answering off disk:
+`<revision>.txt` is the article as the API answers it, `<qid>.json` the item,
+`summary/<title>.json` the lead the import caches, and a `refuse-network`
+sentinel answers the way a sandbox with no network answers — which is how the
+test that asserts the tool writes nothing exercises the same path a real
+refusal takes, rather than a flag of its own. The four statuses and all nine
+codes are asserted, and so is the rollback.
+
+`tests/m90-chronology.test.mjs` is the other half of A15(5)'s question: twenty
+sentences out of the two pool files, ten the curation fires refused as
+chronology with no claim in it and eleven they accepted and wrote an edge from,
+each with the vein it came from named beside it. Two of the accepted ones open
+on chronology and are kept, which is A15(5)'s own second sentence. Writing it
+found the soft-hyphen gap above.
+
+No count is pinned anywhere. `tests/m90-state.test.mjs` derives every
+expectation from the records handed in, and its live-corpus test asks `data/`
+for its own active count and for the validator's zero.
+
+### After review (12 October)
+
+The Fable review's eight findings, each its own commit with its test first.
+Four suites, 45 tests now, 0 skipped. Deviations **1570 to 1572**.
+
+1. **Network refusal.** Only a 404 or the API's `nosuchrevid`/`badrevids` on the revision fetch is `quote-not-found`; a `TypeError: fetch failed`, any other status, a `cause` or a spent budget is exit 3 — *"a revision fetch that fails with a plain TypeError: fetch failed / an HTTP 403 is the network exit"*, *"only a 404 or the API's own nosuchrevid says the revision is not there"*.
+2. **Placeholder summary.** A record the import wrote with the placeholder (no lead, not a redirect) is taken back off disk and logged `summary-missing` — *"an item whose lead could not be read is refused summary-missing, and nothing of it stays on disk"*.
+3. **Exit-3 honesty.** The message says the tree may hold earlier items and import-state changes and must be discarded, and the seeds file and the cursor are put back as they were before the item — *"a refusal inside the import puts the seeds and the cursor back and says the tree must be discarded"*.
+4. **Recache scope.** `cache-evidence.mjs --only <file>` (a JSON list of record ids) and `--data`/`--cache`; the writer passes the events and edges its fire wrote — *"the recache is scoped to the fire's own citations"*.
+5. **`--held` and `--max`.** Held items are logged `skipped` and take no `--max` slot; an `existing` item's record is checked against `--held` — *"held items are logged skipped and do not take a --max slot"*.
+6. **Deviation numbers.** 1433 is M89's, and 1434 and 1435 are M42's and 1436 M42b's in their pool files, so M90's three are 1570 to 1572, the first free run below the planner's 1600.
+7. **Cycles.** `parent-cycle` for a queued parent already inside the record, `edge-cycle` for the reverse of an active edge — *"an existing item may not file a parent that sits inside it, nor write the reverse of an active edge"*, and the two pure verdict tests.
+8. **`state.mjs`'s no-place row** is labelled *"active events whose place is not a string"*, and the header says it is not the pools' "no place with a point" — *"the print is under eighty lines, and says what it left out when it is not"*.

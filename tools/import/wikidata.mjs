@@ -300,7 +300,9 @@ export function createFetcher({
             error.code = 'maxlag';
             throw error;
           }
-          if (body?.error) throw new Error(`${url}: ${body.error.info ?? body.error.code}`);
+          // The API's own code goes with it, so a caller can tell an answer
+          // (`nosuchrevid`) from a failure without parsing the message.
+          if (body?.error) throw Object.assign(new Error(`${url}: ${body.error.info ?? body.error.code}`), { apiCode: body.error.code ?? null });
           return body;
         } catch (e) {
           if (attempt >= retries || !isRetryable(e)) throw e;

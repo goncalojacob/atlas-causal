@@ -110,7 +110,7 @@ test('the index is built on main, and checked on a pull request that carries one
   // a `/on:\s*\n\s*pull_request:/` cannot see past.
   assert.match(validate, /^on:$/m);
   assert.match(validate, /^\s{2}pull_request:$/m);
-  assert.match(validate, /^\s{2}push:\n\s{4}branches: \['(m\[[0-9-]+\]\*)'\]$/m);
+  assert.match(validate, /^\s{2}push:\n\s{4}branches: \[.+\]$/m);
   // `m*` matched `main` too, and ran this job on every merge beside deploy.yml.
   assert.doesNotMatch(validate, /branches: \['m\*'\]/);
   // **And `m[0-9]*` matched `m0`** (M88 §3, review B finding 3). Every landing
@@ -121,12 +121,22 @@ test('the index is built on main, and checked on a pull request that carries one
   // that is `m0`. Asserted as the pattern's own meaning rather than as its
   // text, so a differently written pattern that says the same thing passes and
   // one that says something else does not.
-  const [, pushed] = /^\s{2}push:\n\s{4}branches: \['([^']+)'\]$/m.exec(validate);
-  const matches = (branch) => new RegExp(`^${pushed.replace(/\*/g, '.*')}$`).test(branch);
-  assert.ok(!matches('m0'), `the push pattern ${pushed} still matches m0`);
-  assert.ok(!matches('main'), `the push pattern ${pushed} still matches main`);
-  for (const branch of ['m42', 'm42b', 'm88', 'm1']) {
-    assert.ok(matches(branch), `the push pattern ${pushed} does not match the lane branch ${branch}`);
+  //
+  // **A list since M90 §5**, because `plan` is the fourth branch and no
+  // pattern over `m` reaches it: the planner pushes a queue, a log and the
+  // day's note there and nothing else, and a red `plan` has to be visible
+  // because the writers take items out of that queue all day. Read as the
+  // list's own meaning — does any pattern in it match this branch — so a
+  // differently written list that says the same thing passes.
+  // The patterns themselves carry `]`, so the list is read to the end of the
+  // line rather than to the first bracket.
+  const [, list] = /^\s{2}push:\n\s{4}branches: \[(.+)\]$/m.exec(validate);
+  const pushed = [...list.matchAll(/'([^']+)'/g)].map((m) => m[1]);
+  const matches = (branch) => pushed.some((p) => new RegExp(`^${p.replace(/\*/g, '.*')}$`).test(branch));
+  assert.ok(!matches('m0'), `the push patterns ${pushed.join(', ')} still match m0`);
+  assert.ok(!matches('main'), `the push patterns ${pushed.join(', ')} still match main`);
+  for (const branch of ['m42', 'm42b', 'm88', 'm1', 'm90', 'plan']) {
+    assert.ok(matches(branch), `the push patterns ${pushed.join(', ')} do not match ${branch}`);
   }
   // Never built and never committed here: that is deploy.yml's, on main, so
   // two open pull requests cannot conflict on the index.
