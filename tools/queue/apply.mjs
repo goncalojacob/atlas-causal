@@ -384,6 +384,8 @@ async function applyItem(item, {
     const mine = byItem.get(item.qid);
     if (mine) return entry('skipped', `${item.qid} is already the event "${mine}"`);
     if (held.has(item.qid)) return entry('skipped', `${item.qid} is held by the other branch`);
+  } else if (held.has(item.existing)) {
+    return entry('skipped', `"${item.existing}" is held by the other branch`);
   } else if (!corpus.byId.has(item.existing)) {
     return entry('skipped', `"${item.existing}" is not a record this branch holds`);
   }
@@ -586,12 +588,18 @@ export async function applyQueue({
   const queue = await readJson(queueFile);
   if (queue === null) return { exit: EXIT.usage, problems: [`no queue at ${queueFile}`], entries: [] };
   const logged = (await readJson(log)) ?? emptyLog();
-  const items = itemsFor(queue, writer, { logs: [logged], max });
-  if (items.length === 0) return { exit: EXIT.ok, problems: [], entries: [], empty: true };
-
   const held = new Set(heldFile && existsSync(heldFile)
     ? (await readFile(heldFile, 'utf8')).split('\n').map((l) => l.trim()).filter(Boolean)
     : []);
+  // Review of 12 October, finding 5. `--max` counts the items this fire can
+  // write. An item the other branch holds is taken too, in the queue's order,
+  // so it is logged `skipped` and the planner stops re-queueing it — but it
+  // takes no slot, or five held items at the head of the queue would make a
+  // fire that writes nothing.
+  const writable = new Set(itemsFor(queue, writer, { logs: [logged], held: [...held], max }));
+  const items = itemsFor(queue, writer, { logs: [logged] })
+    .filter((item) => writable.has(item) || held.has(subjectOf(item)));
+  if (items.length === 0) return { exit: EXIT.ok, problems: [], entries: [], empty: true };
 
   const { entries: read, problems } = await readRecords(dataDir);
   if (problems.length) {

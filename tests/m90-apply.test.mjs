@@ -400,6 +400,31 @@ test('the recache is scoped to the fire\'s own citations', async () => {
   await rm(bed.dir, { recursive: true, force: true });
 });
 
+test('held items are logged skipped and do not take a --max slot', async () => {
+  const bed = await scratch();
+  const held = path.join(bed.dir, 'held.txt');
+  // Five the other branch holds, four by qid and one an existing record's id,
+  // all ahead of the one item this fire can write.
+  const theirs = [1, 2, 3, 4].map((n) => item({ id: `2026-10-13-africa-10${n}`, qid: `Q930000${n}` }));
+  const existing = Object.fromEntries(Object.entries(item({
+    id: '2026-10-13-africa-105', existing: 'fixture-event-t', parents: ['fixture-event-g'], edges: [],
+  })).filter(([k]) => k !== 'qid'));
+  await writeFile(held, `${theirs.map((t) => t.qid).join('\n')}\nfixture-event-t\n`, 'utf8');
+  const { code, log } = await fire(bed, [...theirs, existing, item()], ['--held', held, '--max', '5']);
+  assert.equal(code, EXIT.ok);
+  const by = new Map(log.entries.map((e) => [e.id, e]));
+  for (const t of [...theirs, existing]) {
+    assert.equal(by.get(t.id)?.status, 'skipped', t.id);
+    assert.match(by.get(t.id).note, /held by the other branch/);
+  }
+  assert.equal(by.get(item().id)?.status, 'written', 'the writable item behind five held ones is written');
+  assert.ok(existsSync(path.join(bed.data, 'events', `${EVENT}.json`)));
+  // The held existing record was not touched.
+  const event = await readJson(path.join(bed.data, 'events', 'fixture-event-t.json'));
+  assert.deepEqual(parentsOf(event), ['fixture-event-f']);
+  await rm(bed.dir, { recursive: true, force: true });
+});
+
 // --- the item that changes a record already here ---------------------------
 
 test('an item with no qid files a parent onto a record the atlas holds, keeping the ones it has', async () => {
