@@ -55,17 +55,20 @@ export const STATUSES = Object.freeze(['written', 'partial', 'refused', 'skipped
 //   `already-held`  rule 2, and CLAUDE.md's "an import never rewrites a
 //                   record whose review.status is reviewed": the edge is here
 //
-// and one more from the review of 12 October:
+// and three more from the review of 12 October:
 //
 //   `summary-missing` rules card 2: the import could not read the lead and
 //                   wrote its placeholder summary, so the record is taken back
+//   `parent-cycle`  rule 24: a queued parent already inside the record
+//   `edge-cycle`    rule 5, its cheapest case: the reverse of an active edge
 //
-// Rule 5's cycle is **not** here and is left to the validator: a new record's
-// one new edge cannot close a loop, and an item that changes a record cannot
-// close one without the planner having asked for it in as many words.
+// Rule 5's longer cycles are left to the validator: a new record's one new edge
+// cannot close a loop. An `existing` item's edge can, and the loop of two — the
+// reverse of an active edge — is refused here as `edge-cycle`.
 export const REFUSALS = Object.freeze([
   'quote-not-found', 'chronology', 'parent-to-child', 'type', 'endpoint-missing',
   'confidence', 'parent', 'arrow-of-time', 'already-held', 'summary-missing',
+  'parent-cycle', 'edge-cycle',
 ]);
 
 // Wikipedia is not scholarship (rule 22). The list is rules.js's own, repeated
@@ -222,11 +225,18 @@ export function verdictForEdge(edge, {
 // the day where both ends give one in the same single year. Rule 4's calendar
 // clause is not repeated: without it this is the stricter of the two, and
 // being stricter here refuses an edge and never writes a wrong one.
-export function writeVerdictFor(edge, { from, to, whenOf = () => null, ids = new Set() } = {}) {
+//
+// `reverse(from, to)` says whether an active edge already runs `to` → `from`;
+// the edge back the other way would be a loop of two, and is refused as
+// `edge-cycle` (review of 12 October, finding 7).
+export function writeVerdictFor(edge, { from, to, whenOf = () => null, ids = new Set(), reverse = () => false } = {}) {
   const refuse = (reason, detail) => ({ ok: false, reason, detail });
   const id = `${from}--${to}--${edge.type}`;
   if (ids.has(id)) {
     return refuse('already-held', `"${id}" is already a record: a writer never rewrites one`);
+  }
+  if (reverse(from, to)) {
+    return refuse('edge-cycle', `an active edge "${to}--${from}--…" already runs the other way: this one would close a loop (rule 5)`);
   }
   const start = (when) => {
     if (!when || typeof when !== 'object') return null;

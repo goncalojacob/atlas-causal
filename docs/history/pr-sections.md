@@ -4577,9 +4577,12 @@ person to read it, which is strictly worse than a line in the log:
 | `arrow-of-time` | a cause that starts after its effect, in rule 4's own coarse comparison plus the day where both ends give one in the same single year |
 | `already-held` | the edge is already a record. CLAUDE.md: an import never rewrites a record whose `review.status` is `reviewed`, and a writer never rewrites one at all |
 | `summary-missing` | added after review: the import could not read the lead and wrote its placeholder summary (rules card 2), so the record and its place are taken back off disk. Not about an edge |
+| `parent-cycle` | added after review: a queued parent that is already part of the record, up the whole chain (rule 24). Not about an edge |
+| `edge-cycle` | added after review: the reverse of an edge already active, a loop of two (rule 5) |
 
-Rule 5's cycle is deliberately **not** here and is left to the validator: a new
-record's one new edge cannot close a loop.
+Rule 5's cycle was deliberately left to the validator: a new record's one new
+edge cannot close a loop. (After review, the two cheap loops an `existing` item
+can close are refused here: `parent-cycle` and `edge-cycle`, in the table.)
 
 The last two can only be asked once the record exists, because both need its id
 and its dates, and the queue carries neither. So they are asked after the

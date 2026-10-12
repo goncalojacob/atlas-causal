@@ -49,7 +49,7 @@ import {
 } from '../import/wikidata.mjs';
 import {
   QUEUE_SCHEMA, LOG_SCHEMA, WRITERS, QUEUE_KIND, LOG_KIND,
-  emptyLog, itemsFor, locatorFor, subjectOf, isImport, verdictForEdge, writeVerdictFor,
+  emptyLog, ancestorsOf, itemsFor, locatorFor, subjectOf, isImport, verdictForEdge, writeVerdictFor,
   parentsReader, checkQueue, checkQueueLog, WIKIPEDIA_SOURCE,
 } from './queue.mjs';
 
@@ -294,17 +294,28 @@ export function spanOf(when) {
 // event of this atlas, and its span contains the child's start. A parent that
 // fails is dropped and said so; the event stands, because a filing is a
 // display fact and never the thing a record earns its place by.
-export function parentVerdict(id, child, byId) {
+//
+// And the loop (review of 12 October, finding 7): a parent that is already
+// inside the record — the record is among the parent's own umbrellas, read up
+// the whole chain — would close a cycle of part-of, which rule 24 refuses. Only
+// an `existing` item can meet it, since a new record is inside nothing, but the
+// question costs nothing to ask of both. `parentsFor` reads a record's
+// parents; by default the records in `byId`.
+export function parentVerdict(id, child, byId, { parentsFor = (x) => parentsOf(byId.get(x) ?? {}) } = {}) {
+  const refuse = (reason, detail) => ({ ok: false, reason, detail });
   const parent = byId.get(id);
-  if (!parent || parent.kind !== 'event') return { ok: false, detail: `"${id}" is not an event record` };
-  if (parent.status !== 'active') return { ok: false, detail: `"${id}" is a ${parent.status} event: an active event cannot be part of one (rule 24)` };
+  if (!parent || parent.kind !== 'event') return refuse('parent', `"${id}" is not an event record`);
+  if (parent.status !== 'active') return refuse('parent', `"${id}" is a ${parent.status} event: an active event cannot be part of one (rule 24)`);
+  if (child?.id && (id === child.id || ancestorsOf(id, parentsFor).has(child.id))) {
+    return refuse('parent-cycle', `"${id}" is already part of "${child.id}": filing one under the other closes a loop of part-of (rule 24)`);
+  }
   const whole = spanOf(parent.when);
   const part = spanOf(child.when);
-  if (!whole || !part) return { ok: false, detail: `"${id}" or the event itself is not dated` };
+  if (!whole || !part) return refuse('parent', `"${id}" or the event itself is not dated`);
   if (part.from < whole.from || part.from > whole.to) {
-    return { ok: false, detail: `"${id}" does not contain the event's start` };
+    return refuse('parent', `"${id}" does not contain the event's start`);
   }
-  return { ok: true, detail: null };
+  return { ok: true, reason: null, detail: null };
 }
 
 // --- the fire --------------------------------------------------------------
@@ -514,7 +525,7 @@ async function applyItem(item, {
       if (kept.includes(id)) continue;
       const verdict = parentVerdict(id, record, corpus.byId);
       if (verdict.ok) kept.push(id);
-      else refusals.push({ edge: null, reason: 'parent', detail: verdict.detail });
+      else refusals.push({ edge: null, reason: verdict.reason, detail: verdict.detail });
     }
     if (kept.length && JSON.stringify(parentsOf(record)) !== JSON.stringify(kept)) {
       record = inSchemaOrder({ ...record, parent: kept.length === 1 ? kept[0] : kept }, 'event');
@@ -529,11 +540,18 @@ async function applyItem(item, {
   //    whether the edge is already held, and whether it runs forwards.
   const ids = new Set(corpus.byId.keys());
   const whenOf = (id) => corpus.byId.get(id)?.when ?? null;
+  // The pairs active edges already join, so the reverse of one is refused as a
+  // loop of two (review of 12 October, finding 7). Longer loops stay the
+  // validator's (rule 5).
+  const joined = new Set(corpus.records
+    .filter((r) => r.kind === 'edge' && r.status === 'active')
+    .map((r) => `${r.from}\u0000${r.to}`));
+  const reverse = (from, to) => joined.has(`${to}\u0000${from}`);
   await mkdir(path.join(dataDir, 'edges'), { recursive: true });
   for (const { index, edge } of standing) {
     const from = edge.from === subject ? record.id : edge.from;
     const to = edge.to === subject ? record.id : edge.to;
-    const verdict = writeVerdictFor(edge, { from, to, whenOf, ids });
+    const verdict = writeVerdictFor(edge, { from, to, whenOf, ids, reverse });
     if (!verdict.ok) {
       refusals.push({ edge: index, reason: verdict.reason, detail: verdict.detail });
       continue;

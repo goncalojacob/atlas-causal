@@ -294,7 +294,7 @@ test('the queue state is derived from the queue and the logs and nothing else', 
   // for the first time is counted and not dropped.
   for (const writer of WRITERS) assert.deepEqual(Object.keys(state.byWriter[writer]).sort(), [...STATUSES].sort());
   assert.deepEqual([...REFUSALS].sort(), ['already-held', 'arrow-of-time', 'chronology', 'confidence',
-    'endpoint-missing', 'parent', 'parent-to-child', 'quote-not-found', 'summary-missing', 'type']);
+    'edge-cycle', 'endpoint-missing', 'parent', 'parent-cycle', 'parent-to-child', 'quote-not-found', 'summary-missing', 'type']);
 });
 
 test('a writer takes its own items, in order, minus what is answered or held elsewhere', () => {

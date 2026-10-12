@@ -425,6 +425,39 @@ test('held items are logged skipped and do not take a --max slot', async () => {
   await rm(bed.dir, { recursive: true, force: true });
 });
 
+test('an existing item may not file a parent that sits inside it, nor write the reverse of an active edge', async () => {
+  const bed = await scratch();
+  const { code, log } = await fire(bed, [
+    // fixture-event-t is already part of fixture-event-f: filing f under t
+    // would close a loop of part-of.
+    {
+      id: '2026-10-13-africa-030', planned: '2026-10-13T03:12Z', lane: 'africa', writer: 'A',
+      existing: 'fixture-event-f', parents: ['fixture-event-t'], edges: [],
+      why: 'Sunday pass: an umbrella for a record that came out with none.',
+    },
+    // fixture-event-deep-1900--fixture-event-deep-1969--enabled is active, so
+    // the edge back the other way would make a two-step loop.
+    {
+      id: '2026-10-13-africa-031', planned: '2026-10-13T03:12Z', lane: 'africa', writer: 'A',
+      existing: 'fixture-event-deep-1900', parents: [],
+      edges: [edge({ from: 'fixture-event-deep-1969', to: 'fixture-event-deep-1900' })],
+      why: 'Sunday pass: an edge for a record that has the article to carry it.',
+    },
+  ]);
+  assert.equal(code, EXIT.ok);
+  const by = new Map(log.entries.map((e) => [e.id, e]));
+  const filing = by.get('2026-10-13-africa-030');
+  assert.deepEqual(filing.refusals.map((r) => r.reason), ['parent-cycle']);
+  assert.match(filing.refusals[0].detail, /fixture-event-t/);
+  const f = await readJson(path.join(bed.data, 'events', 'fixture-event-f.json'));
+  assert.deepEqual(parentsOf(f), [], 'the loop was not written');
+  const back = by.get('2026-10-13-africa-031');
+  assert.deepEqual(back.refusals.map((r) => r.reason), ['edge-cycle']);
+  assert.match(back.refusals[0].detail, /fixture-event-deep-1900--fixture-event-deep-1969/);
+  assert.ok(!existsSync(path.join(bed.data, 'edges', 'fixture-event-deep-1969--fixture-event-deep-1900--caused.json')));
+  await rm(bed.dir, { recursive: true, force: true });
+});
+
 // --- the item that changes a record already here ---------------------------
 
 test('an item with no qid files a parent onto a record the atlas holds, keeping the ones it has', async () => {
@@ -637,6 +670,11 @@ test('the two verdicts a record must exist for: the arrow of time and the edge a
   assert.match(held.detail, /never rewrites one/);
   // With no dates on either side there is nothing to compare and nothing to say.
   assert.equal(writeVerdictFor(caused, { from: 'x', to: 'y' }).ok, true);
+  // The reverse of an active edge is a loop of two, whatever the dates say.
+  const active = new Set(['y>x']);
+  const reverse = (from, to) => active.has(`${to}>${from}`);
+  assert.equal(writeVerdictFor(caused, { from: 'x', to: 'y', reverse }).reason, 'edge-cycle');
+  assert.equal(writeVerdictFor(caused, { from: 'y', to: 'x', reverse }).ok, true);
 });
 
 test('a parent is an active event whose span holds the start, and nothing else', () => {
@@ -652,6 +690,10 @@ test('a parent is an active event whose span holds the start, and nothing else',
   assert.match(parentVerdict('short', child, byId).detail, /does not contain the event's start/);
   assert.match(parentVerdict('town', child, byId).detail, /is not an event record/);
   assert.match(parentVerdict('nobody', child, byId).detail, /is not an event record/);
+  // A parent that is already inside the record is a loop of part-of.
+  const inside = new Map([...byId, ['camp', { id: 'camp', kind: 'event', status: 'active', when: { start: 1980, end: 1990 }, parent: 'war' }]]);
+  const loop = parentVerdict('camp', { id: 'war', when: { start: 1985, end: 1986 } }, inside);
+  assert.equal(loop.reason, 'parent-cycle');
   // An open end reaches forward for ever, which is what lets one umbrella
   // hold a child nobody has dated the end of.
   assert.deepEqual(spanOf({ start: 1270, end: null }), { from: 1270, to: Infinity });
