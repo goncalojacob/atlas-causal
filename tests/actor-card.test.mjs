@@ -346,7 +346,7 @@ test('a territory’s card lists everything on its ground, and the band fades ra
   const narrow = band(1900, 2000);
   assert.equal(rows(narrow, 'ground').length, rows(whole, 'ground').length, 'no row was removed');
   assert.ok(rows(narrow, 'ground').some((cls) => cls.includes('faded')), 'and the rest are faded');
-  assert.match(hintOf(narrow, 'ground'), /inside the window; the rest are faded\./);
+  assert.match(hintOf(narrow, 'ground'), /inside the window\. The atlas fades the rest\./);
   assert.match(sectionOf(narrow, 'ground'), /portuguese-landfall-in-brazil-1500/,
     'a reader who narrows the band is shown the history, faded');
 });

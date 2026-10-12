@@ -441,7 +441,7 @@ test('a place’s faded rows follow the band without rebuilding the card', { ski
     };`);
     assert.equal(after.head, 'yes', 'the card was not rebuilt');
     assert.ok(after.faded > 0, `the rows outside the band are faded: ${after.faded}`);
-    assert.match(after.hint, /inside the window; the rest are faded\./);
+    assert.match(after.hint, /inside the window\. The atlas fades the rest\./);
   });
 });
 
@@ -493,7 +493,7 @@ test('a territory’s faded rows follow the band without rebuilding the card', {
     assert.equal(after.rows, before.rows, 'not one row was removed');
     assert.ok(after.faded > 0, `the rows outside the band are faded: ${after.faded}`);
     assert.ok(after.landfall, 'the history is shown, faded, and never taken away');
-    assert.match(after.hint, /inside the window; the rest are faded\./);
+    assert.match(after.hint, /inside the window\. The atlas fades the rest\./);
   });
 });
 
