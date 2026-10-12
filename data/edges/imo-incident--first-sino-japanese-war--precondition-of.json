@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "imo-incident--first-sino-japanese-war--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-12",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Imo Incident\", revision 1378536153"
+    }
+  ],
+  "from": "imo-incident",
+  "to": "first-sino-japanese-war",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article \"Imo Incident\" (revision 1378536153) states: \"This incident served as a crucial powderkeg that led to the First Sino-Japanese War in 1894.\" A powderkeg twelve years before the war is a precondition rather than its cause, which is the weaker of the two readings the sentence allows and the one the edge takes.",
+  "dispute": null
+}

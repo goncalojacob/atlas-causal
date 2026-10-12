@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "red-sea-crisis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-12",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q123285238",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-12"
+  },
+  "wikipedia": {
+    "en": "Red Sea crisis",
+    "pt": "Crise do Mar Vermelho"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q123285238"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Red Sea crisis\", revision 1378533380"
+    }
+  ],
+  "title": "Red Sea crisis",
+  "summary": "The English Wikipedia article \"Red Sea crisis\", at revision 1378533380, opens: \"The Red Sea crisis is an ongoing armed conflict and maritime crisis instigated by the Houthis, an armed group in Yemen fighting a civil war against the country's internationally recognized government. The Houthis began launching missiles and armed drones at Israel in response to the Gaza war, and have seized or attacked dozens of merchant and naval vessels travelling through the Red Sea which they claimed are linked to Israel. These actions provoked a military response from Israel, as well as the United States and the United Kingdom. The crisis is linked to the Middle Eastern crisis, the Iran–Israel proxy conflict, and the Yemeni crisis.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q123285238, imported by tools/import/wikidata.mjs. The item's own description reads \"main part of the Houthi involvement in the Israel–Hamas war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2023,
+    "end": null,
+    "date": "2023-10-19"
+  },
+  "place": "middle-east",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "middle-eastern-crisis-2023-present"
+}
