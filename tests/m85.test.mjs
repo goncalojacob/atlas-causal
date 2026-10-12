@@ -70,8 +70,8 @@ test('and the resting picture really does cross more than one century', () => {
 });
 
 test('a stack says how many events it hides, in the words its own title uses', () => {
-  assert.match(stackTitle('Carnation Revolution', 47), /— and 46 more events here$/);
-  assert.match(stackTitle('One thing', 2), /— and 1 more event here$/, 'and in the singular');
+  assert.equal(stackTitle('Carnation Revolution', 47), 'Carnation Revolution and 46 more events here');
+  assert.equal(stackTitle('One thing', 2), 'One thing and 1 more event here', 'and in the singular');
   // A stack the graph draws adds the years it covers; the words are the same.
   assert.match(stackTitle('A thing', 3, { span: '1910–1911' }), /2 more events here, 1910–1911$/);
 

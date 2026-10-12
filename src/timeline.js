@@ -594,7 +594,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
       // either way.
       const name = labelOf(atlas, item.event);
       const title = name === null ? LOADING_LABEL
-        : item.inside ? name : `${name} — outside the window`;
+        : item.inside ? name : `${name} (outside the window)`;
       const el = bars.take('rect', {
         x: item.x, y, width: item.width, height: height_, rx: BAR_ROUND, class: classes, 'data-id': item.id,
         ...barControl(lane.id, title),
