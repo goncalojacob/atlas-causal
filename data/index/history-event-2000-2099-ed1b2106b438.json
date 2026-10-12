@@ -6811,6 +6811,15 @@
         }
       ]
     },
+    "taliban-insurgency": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
     "telecoms-package": {
       "from": "git",
       "versions": [

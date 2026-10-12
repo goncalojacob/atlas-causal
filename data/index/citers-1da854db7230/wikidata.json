@@ -7064,6 +7064,12 @@
     },
     {
       "dissent": false,
+      "id": "fontainebleau-agreements",
+      "kind": "event",
+      "locator": "Q959093"
+    },
+    {
+      "dissent": false,
       "id": "fourth-battle-of-brega",
       "kind": "event",
       "locator": "Q2632974"
@@ -10553,6 +10559,12 @@
       "id": "tajikistani-civil-war",
       "kind": "event",
       "locator": "Q1122110, P31 Q8465"
+    },
+    {
+      "dissent": false,
+      "id": "taliban-insurgency",
+      "kind": "event",
+      "locator": "Q1752743"
     },
     {
       "dissent": false,

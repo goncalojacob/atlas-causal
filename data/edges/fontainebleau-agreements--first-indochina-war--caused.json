@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "fontainebleau-agreements--first-indochina-war--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-12",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fontainebleau Agreements\", revision 1312816323"
+    }
+  ],
+  "from": "fontainebleau-agreements",
+  "to": "first-indochina-war",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article \"Fontainebleau Agreements\" (revision 1312816323) states: \"Generally the tough stance of both sides led to the First Indochina War between them on December 19.\" The both sides are the two at Fontainebleau, in the conference's own article; the edge reads that sentence and nothing more.",
+  "dispute": null
+}

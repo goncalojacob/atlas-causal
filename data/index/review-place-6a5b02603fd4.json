@@ -399,7 +399,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "afghanistan-q889",
       "kind": "place",
       "names": [
@@ -7150,6 +7150,33 @@
       "names": [
         "Florence",
         "Florença"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-12",
+      "degree": 1,
+      "id": "fontainebleau",
+      "kind": "place",
+      "names": [
+        "Fontainebleau"
       ],
       "origin": {
         "tool": "wikidata"
