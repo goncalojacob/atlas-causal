@@ -4,188 +4,148 @@
  "generated": "2026-10-12",
  "items": [
   {
-   "id": "2026-10-12-africa-001",
-   "planned": "2026-10-12T17:40Z",
+   "id": "2026-10-12-africa-009",
+   "planned": "2026-10-12T22:00Z",
    "lane": "africa",
    "writer": "A",
-   "qid": "Q5804054",
-   "title": "Larache landing",
+   "existing": "decolonisation-of-africa",
+   "title": "Decolonisation of Africa",
    "parents": [],
    "edges": [
     {
-     "from": "Q5804054",
-     "to": "rif-war",
-     "type": "precondition-of",
+     "from": "world-war-ii",
+     "to": "decolonisation-of-africa",
+     "type": "caused",
      "confidence": "probable",
-     "article": "Larache landing",
-     "revision": 1379388284,
-     "quote": "The Larache landing refers to the military action in 1911 that led to the occupation of the Moroccan city of Larache by the Spanish Marine Infantry, establishing a precedent for the military intervention in Morocco and the subsequent Rif War.",
-     "explanation": "The article \"Larache landing\" (revision 1379388284) states: \"The Larache landing refers to the military action in 1911 that led to the occupation of the Moroccan city of Larache by the Spanish Marine Infantry, establishing a precedent for the military intervention in Morocco and the subsequent Rif War.\" The edge reads the last clause and nothing more: a precedent for an intervention is a precondition of the war that followed fifteen years later and not its cause. The item's Wikidata P361 names the Rif War, but a 1911 landing cannot be part of a war that begins in 1921, so no parent is filed (rule 24)."
+     "article": "Decolonisation of Africa",
+     "revision": 1379719162,
+     "quote": "Italy, a colonial power, lost its African empire, Italian East Africa, Italian Ethiopia, Italian Eritrea, Italian Somalia and Italian Libya, as a result of World War II.",
+     "explanation": "The article \"Decolonisation of Africa\" (revision 1379719162) states: \"Italy, a colonial power, lost its African empire, Italian East Africa, Italian Ethiopia, Italian Eritrea, Italian Somalia and Italian Libya, as a result of World War II.\" The loss it names is part of what this record is: the edge reads that sentence and nothing more, and the scope the sentence gives it is Italy's empire."
     }
    ],
-   "why": "Africa trails at 325 active events against the Americas' 431; the item is a P361 child of the held umbrella `rif-war`, and its own first sentence states the link."
+   "why": "Africa trails at 327 active against the Americas' 431; decolonisation-of-africa is a held umbrella with no edge at all, and its own article states the cause of the Italian empire's end."
   },
   {
-   "id": "2026-10-12-africa-002",
-   "planned": "2026-10-12T17:40Z",
+   "id": "2026-10-12-africa-010",
+   "planned": "2026-10-12T22:00Z",
    "lane": "africa",
    "writer": "A",
-   "qid": "Q12246335",
-   "title": "1952 Clash of Ismailia",
+   "existing": "scramble-for-africa",
+   "title": "Scramble for Africa",
    "parents": [],
    "edges": [
     {
-     "from": "Q12246335",
-     "to": "1952-egyptian-revolution",
+     "from": "independence-of-brazil-1822",
+     "to": "scramble-for-africa",
      "type": "caused",
      "confidence": "probable",
-     "article": "Battle of Ismailia (1952)",
-     "revision": 1370443871,
-     "quote": "56 Egyptian policemen were killed and 73 wounded, and when news of the engagement was publicized the next day it sparked the Cairo fire and eventually led to the 1952 Egyptian revolution.",
-     "explanation": "The article \"Battle of Ismailia (1952)\" (revision 1370443871) states: \"56 Egyptian policemen were killed and 73 wounded, and when news of the engagement was publicized the next day it sparked the Cairo fire and eventually led to the 1952 Egyptian revolution.\" The edge reads that sentence: the clash is written as the cause and the revolution as what it eventually led to. The Cairo fire, which the sentence names as the step between them, is not a record this atlas holds."
-    }
-   ],
-   "why": "Africa trails at 325 active events; the item's own article names a held event as what the clash led to, in one sentence that states the cause and not only the order."
-  },
-  {
-   "id": "2026-10-12-asia-003",
-   "planned": "2026-10-12T17:40Z",
-   "lane": "asia",
-   "writer": "A",
-   "qid": "Q709191",
-   "title": "Imo Incident",
-   "parents": [],
-   "edges": [
+     "article": "Scramble for Africa",
+     "revision": 1376647971,
+     "quote": "After the Independence of Brazil in 1822, Portugal sought to protect, develop and expand its remaining overseas territories in order to compensate for the loss of Brazilian trade and revenue and its international standing, leading to an aggressive expansion of its Angolan and Mozambican territories.",
+     "explanation": "The article \"Scramble for Africa\" (revision 1376647971) states: \"After the Independence of Brazil in 1822, Portugal sought to protect, develop and expand its remaining overseas territories in order to compensate for the loss of Brazilian trade and revenue and its international standing, leading to an aggressive expansion of its Angolan and Mozambican territories.\" The expansion it names is Portugal's share of the scramble, which is what this record holds; the edge reads that sentence and nothing more."
+    },
     {
-     "from": "Q709191",
-     "to": "first-sino-japanese-war",
+     "from": "scramble-for-africa",
+     "to": "world-war-i",
      "type": "precondition-of",
      "confidence": "probable",
-     "article": "Imo Incident",
-     "revision": 1378536153,
-     "quote": "This incident served as a crucial powderkeg that led to the First Sino-Japanese War in 1894.",
-     "explanation": "The article \"Imo Incident\" (revision 1378536153) states: \"This incident served as a crucial powderkeg that led to the First Sino-Japanese War in 1894.\" A powderkeg twelve years before the war is a precondition rather than its cause, which is the weaker of the two readings the sentence allows and the one the edge takes."
+     "article": "Scramble for Africa",
+     "revision": 1376647971,
+     "quote": "The tensions between the imperial powers led to a succession of crises, which exploded in August 1914, when previous rivalries and alliances created a domino situation that drew the major European nations into World War I.",
+     "explanation": "The article \"Scramble for Africa\" (revision 1376647971) states: \"The tensions between the imperial powers led to a succession of crises, which exploded in August 1914, when previous rivalries and alliances created a domino situation that drew the major European nations into World War I.\" The tensions are the scramble's own, in the scramble's own article; precondition-of and not caused, because the sentence makes the rivalry what the crises grew out of."
     }
    ],
-   "why": "Asia trails at 321 active events, the thinnest lane after Africa; the article states the link to a held event in one sentence and names no third event the atlas holds."
+   "why": "Africa trails, and scramble-for-africa is a held umbrella carrying no edge: its own article states both what drove Portugal into it and what the imperial rivalry led to."
   },
   {
-   "id": "2026-10-12-asia-004",
-   "planned": "2026-10-12T17:40Z",
+   "id": "2026-10-12-asia-011",
+   "planned": "2026-10-12T22:00Z",
    "lane": "asia",
    "writer": "A",
-   "qid": "Q2231356",
-   "title": "Operation Pierce Arrow",
-   "parents": [
-    "vietnam-war"
-   ],
-   "edges": [
-    {
-     "from": "gulf-of-tonkin-incident",
-     "to": "Q2231356",
-     "type": "reacted-to",
-     "confidence": "probable",
-     "article": "Operation Pierce Arrow",
-     "revision": 1370698570,
-     "quote": "In response to the Gulf of Tonkin incident when the destroyers USS Maddox and USS Turner Joy of the United States Navy engaged North Vietnamese ships, sustaining light damage as they gathered electronic intelligence while in the international waters of the Gulf of Tonkin, U.S. President Lyndon B. Johnson ordered Operation \"Pierce Arrow\" which was conducted on 5 August 1964.",
-     "explanation": "The article \"Operation Pierce Arrow\" (revision 1370698570) states: \"In response to the Gulf of Tonkin incident when the destroyers USS Maddox and USS Turner Joy of the United States Navy engaged North Vietnamese ships, sustaining light damage as they gathered electronic intelligence while in the international waters of the Gulf of Tonkin, U.S. President Lyndon B. Johnson ordered Operation \"Pierce Arrow\" which was conducted on 5 August 1964.\" The edge runs from the incident to the operation, which is the direction this atlas writes `reacted-to` in: the earlier event is `from` and the answer to it is `to`."
-    }
-   ],
-   "why": "Asia trails at 321 active events; the operation is a P361 child of the held umbrella `vietnam-war` and its own first sentence names the held incident it answered."
-  },
-  {
-   "id": "2026-10-12-asia-005",
-   "planned": "2026-10-12T17:40Z",
-   "lane": "asia",
-   "writer": "A",
-   "qid": "Q18356970",
-   "title": "Battle of Luang Namtha",
-   "parents": [
-    "laotian-civil-war"
-   ],
-   "edges": [
-    {
-     "from": "first-indochina-war",
-     "to": "Q18356970",
-     "type": "precondition-of",
-     "confidence": "probable",
-     "article": "Battle of Luang Namtha",
-     "revision": 1379293458,
-     "quote": "It came about as a result of the turmoil following Laotian independence as a result of the First Indochina War with France.",
-     "explanation": "The article \"Battle of Luang Namtha\" (revision 1379293458) states: \"It came about as a result of the turmoil following Laotian independence as a result of the First Indochina War with France.\" The sentence names the war as the far end of that chain and the independence and the turmoil as the steps between, neither of which this atlas holds as a record; the edge therefore takes the weaker reading, `precondition-of`, and not `caused`."
-    }
-   ],
-   "why": "Asia trails at 321 active events; the item is a P361 child of the held umbrella `laotian-civil-war`, whose span contains 1962, and the edge runs to a war outside that umbrella's own chain."
-  },
-  {
-   "id": "2026-10-12-asia-006",
-   "planned": "2026-10-12T17:40Z",
-   "lane": "asia",
-   "writer": "A",
-   "qid": "Q123285238",
-   "title": "Red Sea crisis",
-   "parents": [
-    "middle-eastern-crisis-2023-present"
-   ],
-   "edges": [
-    {
-     "from": "gaza-war",
-     "to": "Q123285238",
-     "type": "reacted-to",
-     "confidence": "probable",
-     "article": "Red Sea crisis",
-     "revision": 1378533380,
-     "quote": "The Houthis began launching missiles and armed drones at Israel in response to the Gaza war, and have seized or attacked dozens of merchant and naval vessels travelling through the Red Sea which they claimed are linked to Israel.",
-     "explanation": "The article \"Red Sea crisis\" (revision 1378533380) states: \"The Houthis began launching missiles and armed drones at Israel in response to the Gaza war, and have seized or attacked dozens of merchant and naval vessels travelling through the Red Sea which they claimed are linked to Israel.\" The attacks on shipping that the same sentence describes are what the crisis is, so the edge runs from the war to the crisis, which is the direction this atlas writes `reacted-to` in."
-    }
-   ],
-   "why": "Asia trails at 321 active events; the crisis is a P361 child of the held umbrella `middle-eastern-crisis-2023-present` and its own first sentence names the held war it answers."
-  },
-  {
-   "id": "2026-10-12-asia-007",
-   "planned": "2026-10-12T17:40Z",
-   "lane": "asia",
-   "writer": "A",
-   "qid": "Q122974556",
-   "title": "Hezbollah–Israel conflict (2023–present)",
-   "parents": [
-    "middle-eastern-crisis-2023-present"
-   ],
-   "edges": [
-    {
-     "from": "gaza-war",
-     "to": "Q122974556",
-     "type": "caused",
-     "confidence": "probable",
-     "article": "Israeli–Lebanese conflict",
-     "revision": 1370624531,
-     "quote": "The Gaza war sparked a renewed Israel-Hezbollah conflict, beginning one day after the October 7 Hamas-led attack on Israel.",
-     "explanation": "The article \"Israeli–Lebanese conflict\" (revision 1370624531) states: \"The Gaza war sparked a renewed Israel-Hezbollah conflict, beginning one day after the October 7 Hamas-led attack on Israel.\" The renewed conflict the sentence names is this item, and the edge reads the verb the sentence uses: the war sparked it."
-    }
-   ],
-   "why": "Asia trails at 321 active events; the held umbrella `middle-eastern-crisis-2023-present` has only two children, and a held event is named as the cause in one sentence of another article."
-  },
-  {
-   "id": "2026-10-12-asia-008",
-   "planned": "2026-10-12T17:40Z",
-   "lane": "asia",
-   "writer": "A",
-   "qid": "Q135450775",
-   "title": "Iran internal crisis (2025–present)",
+   "existing": "12-3-incident",
+   "title": "12-3 incident",
    "parents": [],
    "edges": [
     {
-     "from": "twelve-day-war",
-     "to": "Q135450775",
-     "type": "caused",
+     "from": "12-3-incident",
+     "to": "macau-handover-1999",
+     "type": "precondition-of",
      "confidence": "probable",
-     "article": "Iran internal crisis (2025–present)",
-     "revision": 1378212209,
-     "quote": "As a result of the Twelve-Day War, internal tension within the Islamic Republic worsened into what the National Council of Resistance of Iran calls a \"crisis of legitimacy\".",
-     "explanation": "The article \"Iran internal crisis (2025–present)\" (revision 1378212209) states: \"As a result of the Twelve-Day War, internal tension within the Islamic Republic worsened into what the National Council of Resistance of Iran calls a \"crisis of legitimacy\".\" The crisis the clause describes is what the article is about. The phrase \"crisis of legitimacy\" is the article's attribution to the National Council of Resistance of Iran and not this atlas's own words, which is one reason the confidence is `probable`."
+     "article": "12-3 incident",
+     "revision": 1377636747,
+     "quote": "Portuguese sovereignty over Macau severely diminished after the incident, leading to de facto Chinese suzerainty over the territory 33 years prior to the eventual handover of Macau.",
+     "explanation": "The article \"12-3 incident\" (revision 1377636747) states: \"Portuguese sovereignty over Macau severely diminished after the incident, leading to de facto Chinese suzerainty over the territory 33 years prior to the eventual handover of Macau.\" The sentence dates the end of effective Portuguese rule to the incident and the handover 33 years after it, which is a precondition and not a cause."
     }
    ],
-   "why": "Asia trails at 321 active events; the item's own article names a held war as what its crisis resulted from, and the Twelve-Day War carries few consequences in the atlas so far."
+   "why": "Asia trails at 327, and this is Portuguese history, which is the atlas's own subject: the incident's own article states that Portuguese sovereignty ended there, 33 years before the handover."
+  },
+  {
+   "id": "2026-10-12-asia-012",
+   "planned": "2026-10-12T22:00Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q959093",
+   "title": "Fontainebleau Agreements",
+   "parents": [],
+   "edges": [
+    {
+     "from": "Q959093",
+     "to": "first-indochina-war",
+     "type": "caused",
+     "confidence": "probable",
+     "article": "Fontainebleau Agreements",
+     "revision": 1312816323,
+     "quote": "Generally the tough stance of both sides led to the First Indochina War between them on December 19.",
+     "explanation": "The article \"Fontainebleau Agreements\" (revision 1312816323) states: \"Generally the tough stance of both sides led to the First Indochina War between them on December 19.\" The both sides are the two at Fontainebleau, in the conference's own article; the edge reads that sentence and nothing more."
+    }
+   ],
+   "why": "Asia trails, first-indochina-war is a held umbrella with fewer than three children, and the conference's own article states that the stance taken there led to the war. Filed under no umbrella: the talks preceded the war and are not part of it."
+  },
+  {
+   "id": "2026-10-12-asia-013",
+   "planned": "2026-10-12T22:00Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q2985554",
+   "title": "Operation Searchlight",
+   "parents": [],
+   "edges": [
+    {
+     "from": "Q2985554",
+     "to": "bangladesh-liberation-war",
+     "type": "caused",
+     "confidence": "probable",
+     "article": "Operation Searchlight",
+     "revision": 1374712761,
+     "quote": "The widespread violence resulting from Pakistan's Operation Searchlight ultimately led to the Bangladesh Liberation War, in which Mukti Bahini guerrillas fought to remove Pakistani forces from East Pakistan.",
+     "explanation": "The article \"Operation Searchlight\" (revision 1374712761) states: \"The widespread violence resulting from Pakistan's Operation Searchlight ultimately led to the Bangladesh Liberation War, in which Mukti Bahini guerrillas fought to remove Pakistani forces from East Pakistan.\" The operation's own article states the link; queued with no umbrella on purpose, because filing it under the war it led to would make the edge an edge from a parent to its own child (A14, C8 undecided)."
+    }
+   ],
+   "why": "Asia trails and bangladesh-liberation-war is a held umbrella with one child. The 12 October fire found this sentence and refused it under A14 because it filed the item under that war; with no parent the edge stands and the filing waits for C8."
+  },
+  {
+   "id": "2026-10-12-asia-014",
+   "planned": "2026-10-12T22:00Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q1752743",
+   "title": "Taliban insurgency",
+   "parents": [
+    "war-in-afghanistan-2001-2021"
+   ],
+   "edges": [
+    {
+     "from": "Q1752743",
+     "to": "republican-insurgency-in-afghanistan",
+     "type": "caused",
+     "confidence": "probable",
+     "article": "Taliban insurgency",
+     "revision": 1379529630,
+     "quote": "The end of the Taliban insurgency resulted in the beginning of a new insurgency against the restored Islamic Emirate of Afghanistan by the National Resistance Front and allied groups which fight under the banner of the Islamic Republic of Afghanistan.",
+     "explanation": "The article \"Taliban insurgency\" (revision 1379529630) states: \"The end of the Taliban insurgency resulted in the beginning of a new insurgency against the restored Islamic Emirate of Afghanistan by the National Resistance Front and allied groups which fight under the banner of the Islamic Republic of Afghanistan.\" The insurgency's own article states what its end began; the two are siblings under war-in-afghanistan-2001-2021 and afghan-conflict, so the edge is not one from a parent to its own child."
+    }
+   ],
+   "why": "Asia trails at 327, and war-in-afghanistan-2001-2021 is a held umbrella with one child (A6): this is a P361 child of it whose own article states a cause reaching outside the umbrella, which is what A15(5) leaves room for."
   }
  ]
 }
