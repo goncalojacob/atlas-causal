@@ -500,7 +500,7 @@ test('§8: choosing a category makes the control say what it kept', { skip }, as
     const resting = restingSet(atlas, defaultState());
     const drawn = atlas.activeEvents.filter((e) => resting.has(e.id));
     const wanted = categoryCountText(categoryCounts(drawn, [chosen]));
-    assert.equal(said.replace(/^\s*—\s*/, '').trim(), wanted);
+    assert.equal(said.replace(/^: /, '').trim(), wanted);
   }, { device: DESK });
 });
 
