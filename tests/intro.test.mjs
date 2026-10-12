@@ -90,7 +90,7 @@ test('a dataset with no narratives and no weights still opens on something', asy
     activeEvents: [], activeNarratives: [], edges: new Map(), actors: new Map(), sources: new Map(),
   });
   assert.match(bare, /How to read it/);
-  assert.doesNotMatch(bare, /What most of it hangs on/, 'nothing is offered that is not there');
+  assert.doesNotMatch(bare, /Events with the most consequences/, 'nothing is offered that is not there');
 });
 
 test('a link to a record is not a first visit', () => {
