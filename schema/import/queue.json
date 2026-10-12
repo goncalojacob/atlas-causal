@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "import/queue.json",
+  "title": "Import queue",
+  "description": "What the planner decided and the writers apply. A queue is the day's work: which items to import, which umbrellas to file each under, and which edge each one earns its place by, every edge carrying the article's own sentence at a named revision. It is not a record — no provenance envelope, no node of the graph, and the browser never reads it — so it lives beside the other files of data/imports/ and is checked by tools/validate.mjs only. The planner keeps it on branch `plan`; a writer never edits it, and reports to its own branch's queue-log.json instead. M90 §1. The brief calls a queue \"an array of items\": `items` is that array, and the envelope around it is the directory's own convention — tools/lib/read.mjs dispatches on `kind` rather than on a file name, and a bare array has no kind to dispatch on.",
+  "type": "object",
+  "required": ["schema", "kind", "items"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": 1 },
+    "kind": {
+      "description": "What kind of file this is, for tools/lib/read.mjs and tools/validate.mjs, which read data/imports/ by kind and not by name.",
+      "const": "import-queue"
+    },
+    "generated": {
+      "description": "The day the planner last wrote this file, as a plain date. Not a provenance envelope: a queue is somebody's plan for a day and not a record of anything.",
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "items": {
+      "description": "The items, in the order the planner chose them. A writer takes the first `--max` of them that are its own and not already in a log.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "planned", "lane", "writer", "title", "edges", "why"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "description": "Unique in the file, and of the form <date>-<lane>-<nnn>: the day it was planned, the lane it is for, and a serial within the day. A log holds the ids it has applied, so the id is what says an item is done; uniqueness is checked by tools/validate.mjs, the keyword subset having no uniqueItems.",
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9]+(-[a-z0-9]+)*-[0-9]{3}$",
+            "maxLength": 140
+          },
+          "planned": {
+            "description": "When the planner wrote the item, to the minute. A UTC instant and never a local time: the two writers fire on different clocks.",
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}(:[0-9]{2})?Z$"
+          },
+          "lane": {
+            "description": "Which lane the item belongs to: an id of data/regions.json, which tools/validate.mjs checks. The vocabulary is data and not code (CLAUDE.md), so the shape can only say it is a slug.",
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "maxLength": 120
+          },
+          "writer": {
+            "description": "Which writer takes the item: A for africa, asia and europe, B for americas (A10, A11(b)). Written out rather than derived at the point of use so that a queue says who is to do what, and checked against the lane by tools/validate.mjs.",
+            "type": "string",
+            "enum": ["A", "B"]
+          },
+          "qid": {
+            "description": "The Wikidata item to import, where the item is a record this atlas does not hold yet. Exactly one of `qid` and `existing` is present, which the shape cannot say and tools/validate.mjs does.",
+            "type": "string",
+            "pattern": "^Q[1-9][0-9]*$",
+            "maxLength": 20
+          },
+          "existing": {
+            "description": "The record this item is about, where the item changes a record the atlas already holds rather than importing a new one — a parent for a record that came out with none, or an edge from a sentence nobody had read (M90 §7, the planner's Sunday pass). Nothing is imported and no summary, date or place is touched: the writer files the parents and writes the edges, and that is all it may do.",
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "maxLength": 120
+          },
+          "title": {
+            "description": "What the planner read the item as called, so the queue is legible and a log line names something other than a number. The writer never writes it onto a record: the title of an imported record comes from the item (A12(5)).",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "parents": {
+            "description": "The umbrellas to file the record under, nearest first (A6, A8). Each is checked by the writer against rule 24 and against its span; one that fails is dropped with a refusal entry and the event stands.",
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+              "maxLength": 120
+            }
+          },
+          "edges": {
+            "description": "The edges the item earns its place by (rules card 7). An item with none is invalid — the bar is enforced here, at the queue, and not left to a fire's judgement — except on an `existing` item, which has its place already.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["from", "to", "type", "confidence", "article", "revision", "quote", "explanation"],
+              "additionalProperties": false,
+              "properties": {
+                "from": {
+                  "description": "A record id of this atlas, or the item's own qid standing for the record about to be written. One of the two ends must be the item's own: an item earns its place by its own edge and never by one between two records that are already here.",
+                  "type": "string",
+                  "pattern": "^([a-z0-9]+(-[a-z0-9]+)*|Q[1-9][0-9]*)$",
+                  "maxLength": 120
+                },
+                "to": {
+                  "description": "The other end, read the same way.",
+                  "type": "string",
+                  "pattern": "^([a-z0-9]+(-[a-z0-9]+)*|Q[1-9][0-9]*)$",
+                  "maxLength": 120
+                },
+                "type": {
+                  "description": "One of the five, and there is no sixth (rules card 8).",
+                  "type": "string",
+                  "enum": ["caused", "enabled", "reacted-to", "precondition-of", "inspired"]
+                },
+                "confidence": {
+                  "description": "`probable`, or `consensus` where the article hangs the sentence on scholarship it cites and the item names that scholarship in `sources`. Never `disputed`: a dispute is the planner's own note for the assistant and never a record a writer makes (M90 §3).",
+                  "type": "string",
+                  "enum": ["probable", "consensus"]
+                },
+                "article": {
+                  "description": "The English Wikipedia article the quote is from, by its title as the citation will name it.",
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 300
+                },
+                "revision": {
+                  "description": "The revision the planner read. The writer fetches that revision and no other, and writes no edge whose quote it cannot find in it.",
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "quote": {
+                  "description": "The article's own sentence, verbatim (rules card 9). Checked as a substring of the revision's text, both sides normalised for whitespace, quotation marks, dashes and soft hyphens.",
+                  "type": "string",
+                  "minLength": 40,
+                  "maxLength": 2000
+                },
+                "explanation": {
+                  "description": "The argument the edge is, in the planner's own words, with the quote in it. It is what the card shows and what a reviewer reads.",
+                  "type": "string",
+                  "minLength": 60,
+                  "maxLength": 4000
+                },
+                "sources": {
+                  "description": "Citations beside the article, where the edge needs them: a `consensus` edge may not rest on Wikipedia alone (rule 22) and needs two sources by different authors (rule 9), so the scholarship the article cites is named here, as source records this atlas already holds.",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["source"],
+                    "additionalProperties": false,
+                    "properties": {
+                      "source": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+                        "maxLength": 120
+                      },
+                      "locator": {
+                        "oneOf": [
+                          { "type": "null" },
+                          { "type": "string", "minLength": 1, "maxLength": 400 }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "why": {
+            "description": "Why this item and not another: the lane that trails, the umbrella with too few children, the sentence that was there. It is the planner's reasoning, kept with the item rather than only in the day's note, so a log entry can be read against it.",
+            "type": "string",
+            "minLength": 20,
+            "maxLength": 1000
+          }
+        }
+      }
+    }
+  }
+}

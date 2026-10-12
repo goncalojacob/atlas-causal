@@ -6,14 +6,21 @@
 // rather than the form.
 
 // Schemas of things the form never builds and the atlas never loads, checked
-// by tools/validate.mjs only. Four of them describe data/imports/ — how a
+// by tools/validate.mjs only. Six of them describe data/imports/ — how a
 // source's entities become actors, which items an import is pointed at, where
-// a cut-off run stopped, and which Natural Earth city a place record is — and
-// the fifth describes the Wikipedia leads cached under tools/import/cache/,
+// a cut-off run stopped, which Natural Earth city a place record is, and,
+// since M90, what the planner queued and what a writer did with it — and the
+// seventh describes the Wikipedia leads cached under tools/import/cache/,
 // which are not even in data/. None is a record and fetching any of them in
 // the browser would only make the page slower; data/imports/ is not in the
 // deploy artifact at all, so there is nothing there to validate.
+//
+// The two of M90 are under `import/` rather than `v1/`: a queue is nobody's
+// record and carries no provenance envelope, so it is not a version of the
+// record schemas and does not belong beside them.
 export const TOOL_SIDE = Object.freeze([
+  'import/queue-log.json',
+  'import/queue.json',
   'v1/import-map.json',
   'v1/import-places.json',
   'v1/import-seeds.json',

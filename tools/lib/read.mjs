@@ -57,9 +57,12 @@ async function mapBounded(items, fn, limit = READ_CONCURRENCY) {
 
 // { 'common/interval.json': {...}, 'v1/event.json': {...}, ... }, keys always
 // with forward slashes so $ref resolution is the same on every platform.
+// `import/` is the third directory since M90: the queue and its log are files
+// of data/imports/ and not records, so their schemas sit apart from the
+// record kinds the browser fetches (src/validate/schemas.js → TOOL_SIDE).
 export async function readSchemaFiles(schemaDir) {
   const files = {};
-  for (const sub of ['common', 'v1']) {
+  for (const sub of ['common', 'v1', 'import']) {
     const dir = path.join(schemaDir, sub);
     if (!existsSync(dir)) continue;
     for (const name of (await readdir(dir)).sort()) {

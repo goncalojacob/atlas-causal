@@ -25674,3 +25674,66 @@ should expect this.
 **Active 1,610 → 1,628; main 239 → 239; americas 413 → 431**, its 18th century now 105 and its
 17th 79. Europe **556** across all three batches of this fire. `validate --index` 0 errors at every
 commit and at this head; 1,941 pure tests and 313 browser tests pass, 0 skipped.
+
+M90 started 2026-10-12T13:12:00Z by scheduled
+
+**M90 — the planner and the writers, 12 October.** The owner resumed the records lane with a
+change of strategy — *"could we have opus deciding which events to add and how to connect them,
+and sonnet to write the events?"* — and this is the tooling that split needs. §1 to §6 are done
+on `m90`. **No record was written**: nothing under `data/events`, `data/edges`, `data/places` or
+`data/actors` changed, and there is no display change. `docs/history/pr-sections.md` carries the
+account.
+
+The queue is `schema/import/queue.json` and its log `schema/import/queue-log.json`, the fourth
+and fifth kinds of file `data/imports/` holds, with `tools/queue/queue.mjs` beside them for every
+rule a JSON Schema keyword cannot make. `schema/import/` is a third directory under `schema/`:
+a queue carries no provenance envelope and the browser never fetches it, so it is not a version
+of the record schemas. `tools/queue/apply.mjs` is the writer — it verifies every quote against
+the revision it names before importing anything, imports one item by setting the cursor to it and
+asking `runImportMode` for a batch of one, files the queue's umbrellas, writes the surviving
+edges, and finishes with the index, the validator and the recache. `tools/queue/state.mjs` is the
+pool files' successor in under eighty lines.
+
+**Nine refusal codes, not five.** The brief's §2 names `quote-not-found`, `chronology`,
+`parent-to-child`, `type` and `endpoint-missing`. Four more are rules that are already code in
+this repository, and a writer that wrote the record anyway would hand the fire a hard stop from
+`validate --index` and a person to read it: `confidence` (rules 9 and 22 on a `consensus` edge),
+`parent` (rule 24 and A6's span on an umbrella), `arrow-of-time` (rule 4) and `already-held`
+(rule 2, and CLAUDE.md's rule that an import never rewrites a record somebody has signed). The
+last two can only be asked once the record exists, so an item whose every edge falls at that
+fence has what it wrote taken back off disk — a record that earns no edge is not imported at all.
+Rule 5's cycle is left to the validator on purpose.
+
+**Two extensions to §1, both of which §7 needs.** An item may carry `existing` instead of `qid`,
+which is the Sunday pass's parent for a record that came out with none; it files parents and
+writes edges and may touch nothing else. And an edge may carry `sources` beside the article,
+which is the only way a `consensus` edge can exist at all, rules 9 and 22 refusing one that rests
+on Wikipedia alone. Said here rather than left to the planner to invent, as the brief asks.
+
+**Deviation 1570**, found writing the chronology test: `tidy()` in
+`tools/import/chronology.mjs` folds the dashes, the quotes and the whitespace but **not the soft
+hyphen**, which is a character in the text and nothing on the page. A sentence carrying one
+inside its own *"After"* was therefore not seen to open on chronology at all. Not a fault in the
+module, whose job is the fold the matcher needs, but a trap for a caller: `verdictForEdge`
+therefore asks A15(5) of `normaliseQuote(quote)` — the same fold the verbatim check just used,
+which keeps the case `namesHeldEvents` reads — and never of the characters typed.
+
+**Deviation 1571**: the brief calls a queue *"an array of items"*, and `data/imports/` cannot hold
+one. `readImportMaps` dispatches on the file's own `kind` rather than on its name — which is the
+directory's rule, written down in `tools/lib/read.mjs`, because the name is a contributor's choice
+— and a bare array has no kind to dispatch on and would be read as an import map and fail its
+schema. So `items` is the array and the envelope around it is the convention, and the same for the
+log's `entries`.
+
+**Deviation 1572**: `tests/workflows.test.mjs` read `validate.yml`'s push pattern as one quoted
+string, and §5 makes it a list. Read as the list's meaning now — does any pattern in it match this
+branch — and still asserting the patterns reach `m42`, `m42b`, `m88`, `m1`, `m90` and `plan` and
+neither `m0` nor `main`. The first attempt matched the list with `[^\]]+`, which stops at the `]`
+inside `m[1-9]*` itself.
+
+Four suites, 45 tests, 0 skipped, no count pinned anywhere (37 at `M90 done`; eight more after
+the Fable review of 12 October, whose eight fixes are listed in `docs/history/pr-sections.md`,
+among them `summary-missing`, `parent-cycle` and `edge-cycle` as refusal codes). `validate
+--index` 0 errors at every commit and at this head.
+
+M90 done

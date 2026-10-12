@@ -1,0 +1,54 @@
+{
+ "type": "item",
+ "id": "Q9200002",
+ "labels": {
+  "en": {
+   "language": "en",
+   "value": "Fixture place Z"
+  }
+ },
+ "descriptions": {
+  "en": {
+   "language": "en",
+   "value": "an invented town, used only to exercise the queue"
+  }
+ },
+ "aliases": {},
+ "claims": {
+  "P31": [
+   {
+    "mainsnak": {
+     "snaktype": "value",
+     "property": "P31",
+     "datavalue": {
+      "type": "wikibase-entityid",
+      "value": {
+       "entity-type": "item",
+       "id": "Q9200010"
+      }
+     }
+    },
+    "rank": "normal"
+   }
+  ],
+  "P625": [
+   {
+    "mainsnak": {
+     "snaktype": "value",
+     "property": "P625",
+     "datavalue": {
+      "type": "globecoordinate",
+      "value": {
+       "latitude": 30,
+       "longitude": -30,
+       "precision": 0.001,
+       "globe": "http://www.wikidata.org/entity/Q2"
+      }
+     }
+    },
+    "rank": "normal"
+   }
+  ]
+ },
+ "sitelinks": {}
+}

@@ -18,6 +18,7 @@ import { readSchemaFiles, readRecords, readRegions, readRegionPolygons, readRole
 import { buildIndex, readIndex, compareIndex, readSite, compareSite } from './build-index.mjs';
 import { buildPalette, readPalette, comparePalette, PALETTE_FILE } from './build-palette.mjs';
 import { leadSpanWarnings } from '../src/validate/rules.js';
+import { QUEUE_KIND, LOG_KIND, QUEUE_SCHEMA, LOG_SCHEMA, checkQueue, checkQueueLog } from './queue/queue.mjs';
 import { countDrafts } from '../src/review/queue.js';
 import { countCitations } from '../src/review/citations.js';
 
@@ -33,6 +34,8 @@ export const IMPORT_SCHEMAS = Object.freeze({
   'import-seeds': 'v1/import-seeds.json',
   'import-state': 'v1/import-state.json',
   'import-places': 'v1/import-places.json',
+  [QUEUE_KIND]: QUEUE_SCHEMA,
+  [LOG_KIND]: LOG_SCHEMA,
 });
 
 // Which of those kinds cites a **source record**. The three above do: their
@@ -422,7 +425,9 @@ export async function runValidation(dataDir = DEFAULT_DATA, { index = false, sit
       }
       const checks = kind === 'import-seeds' ? checkImportSeeds(file, map, { categories, regions })
         : kind === 'import-places' ? checkImportPlaces(file, map, { places: placeIds })
-          : kind === DEFAULT_IMPORT_KIND ? checkImportMap(file, map) : [];
+          : kind === QUEUE_KIND ? checkQueue(file, map, { regions })
+            : kind === LOG_KIND ? checkQueueLog(file, map)
+              : kind === DEFAULT_IMPORT_KIND ? checkImportMap(file, map) : [];
       for (const p of checks) {
         errors.push({ rule: kind, id: null, file, path: p.path, message: p.message });
       }
