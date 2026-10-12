@@ -117,15 +117,15 @@ export function createSearchBox(container, { atlas, state, fixtures = false, sha
     const html = result.groups.map((group) => {
       const rows = group.items.map((item) => {
         const when = item.when ? formatInterval(item.when) : '';
-        const also = item.variants?.length ? `<span class="muted">${esc(item.variants.slice(0, 2).join(' · '))}</span>` : '';
+        const also = item.variants?.length ? `<span class="muted">${esc(item.variants.slice(0, 2).join(' / '))}</span>` : '';
         const id = `search-option-${i}`;
         const out = outside(item);
         const row = `<li class="search-option${out ? ' outside-lens' : ''}" role="option" id="${id}" data-index="${i}" data-kind="${esc(item.kind)}" data-id="${esc(item.id)}" aria-selected="false">
           <span class="search-label">${esc(item.label)}</span>
           <span class="when">${esc(when)}</span>
           ${item.detail ? `<span class="muted">${esc(item.detail)}</span>` : ''}${also}
-          ${out ? '<span class="badge outside">outside the lens</span>' : ''}
-          ${ENTRY_KINDS.includes(item.kind) ? `<a class="search-entry" href="${esc(links.entry(item.kind, item.id))}" tabindex="-1" title="Read the full entry, on a page of its own">entry ↗</a>` : ''}
+          ${out ? '<span class="badge outside">hidden by the current filter</span>' : ''}
+          ${ENTRY_KINDS.includes(item.kind) ? `<a class="search-entry" href="${esc(links.entry(item.kind, item.id))}" tabindex="-1" title="Read the full entry on its own page">full entry</a>` : ''}
         </li>`;
         i += 1;
         return row;
