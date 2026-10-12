@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "operation-pierce-arrow",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-12",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2231356",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-12"
+  },
+  "wikipedia": {
+    "en": "Operation Pierce Arrow"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2231356"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Pierce Arrow\", revision 1370698570"
+    }
+  ],
+  "title": "Operation Pierce Arrow",
+  "summary": "The English Wikipedia article \"Operation Pierce Arrow\", at revision 1370698570, opens: \"Operation Pierce Arrow was a U.S. bombing campaign at the beginning of the Vietnam War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2231356, imported by tools/import/wikidata.mjs. The item's own description reads \"1964 U.S. aerial bombing campaign during the Vietnam War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1964,
+    "end": 1964,
+    "date": "1964-08-05"
+  },
+  "place": "north-vietnam",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "vietnam-war"
+}

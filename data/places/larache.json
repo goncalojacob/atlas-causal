@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "larache",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-12",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q606775",
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-12"
+  },
+  "wikipedia": {
+    "en": "Larache",
+    "pt": "Larache"
+  },
+  "sources": [],
+  "names": [
+    "Larache"
+  ],
+  "where": {
+    "lon": -6.1540287,
+    "lat": 35.1950923,
+    "precision": "city",
+    "label": "Larache"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

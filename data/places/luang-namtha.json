@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "luang-namtha",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-12",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q660793",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-12"
+  },
+  "wikipedia": {
+    "en": "Luang Namtha"
+  },
+  "sources": [],
+  "names": [
+    "Lūang Namthā"
+  ],
+  "where": {
+    "lon": 101.4,
+    "lat": 20.95,
+    "precision": "city",
+    "label": "Luang Namtha"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
