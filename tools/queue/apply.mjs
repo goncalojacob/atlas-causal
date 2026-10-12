@@ -643,9 +643,26 @@ export async function applyQueue({
   const queue = await readJson(queueFile);
   if (queue === null) return { exit: EXIT.usage, problems: [`no queue at ${queueFile}`], entries: [] };
   const logged = (await readJson(log)) ?? emptyLog();
-  const held = new Set(heldFile && existsSync(heldFile)
+  const listed = heldFile && existsSync(heldFile)
     ? (await readFile(heldFile, 'utf8')).split('\n').map((l) => l.trim()).filter(Boolean)
-    : []);
+    : [];
+
+  const { entries: read, problems } = await readRecords(dataDir);
+  if (problems.length) {
+    return { exit: EXIT.hardStop, problems: problems.map((p) => `${p.file}: ${p.message}`), entries: [] };
+  }
+  const records = read.map((e) => ({ ...e.record }));
+  const corpus = { records, byId: new Map(records.map((r) => [r.id, r])) };
+  // M91 change 6. The routine's `--held` list is every event id and qid on the
+  // other branch, and a record that came from m0 is on both: writer A's fire
+  // of 13 October, 23:20Z, logged three `existing` items "held by the other
+  // branch" for that reason. Held means held there **and not here** — the
+  // other lane's unlanded records. An `existing` record present here is this
+  // writer's to edit, and an import already here is a duplicate (step 1), not
+  // something the other branch holds.
+  const here = new Set(records.filter((r) => r.kind === 'event')
+    .flatMap((r) => [r.id, ...(typeof r.wikidata === 'string' ? [r.wikidata] : [])]));
+  const held = new Set(listed.filter((id) => !here.has(id)));
   // Review of 12 October, finding 5. `--max` counts the items this fire can
   // write. An item the other branch holds is taken too, in the queue's order,
   // so it is logged `skipped` and the planner stops re-queueing it — but it
@@ -656,12 +673,6 @@ export async function applyQueue({
     .filter((item) => writable.has(item) || held.has(subjectOf(item)));
   if (items.length === 0) return { exit: EXIT.ok, problems: [], entries: [], empty: true };
 
-  const { entries: read, problems } = await readRecords(dataDir);
-  if (problems.length) {
-    return { exit: EXIT.hardStop, problems: problems.map((p) => `${p.file}: ${p.message}`), entries: [] };
-  }
-  const records = read.map((e) => ({ ...e.record }));
-  const corpus = { records, byId: new Map(records.map((r) => [r.id, r])) };
   const polygons = await readRegionPolygons(dataDir);
   const deriveRegion = polygons ? createRegionDeriver(polygons) : null;
 

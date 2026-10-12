@@ -398,12 +398,14 @@ test('held items are logged skipped and do not take a --max slot', async () => {
   const bed = await scratch();
   const held = path.join(bed.dir, 'held.txt');
   // Five the other branch holds, four by qid and one an existing record's id,
-  // all ahead of the one item this fire can write.
+  // all ahead of the one item this fire can write. Since M91 (change 6) the
+  // existing record is one this branch does not hold: a record on both
+  // branches is this writer's to edit, and tests/m91-apply.test.mjs says so.
   const theirs = [1, 2, 3, 4].map((n) => item({ id: `2026-10-13-africa-10${n}`, qid: `Q930000${n}` }));
   const existing = Object.fromEntries(Object.entries(item({
-    id: '2026-10-13-africa-105', existing: 'fixture-event-t', parents: ['fixture-event-g'], edges: [],
+    id: '2026-10-13-africa-105', existing: 'fixture-event-elsewhere', parents: ['fixture-event-g'], edges: [],
   })).filter(([k]) => k !== 'qid'));
-  await writeFile(held, `${theirs.map((t) => t.qid).join('\n')}\nfixture-event-t\n`, 'utf8');
+  await writeFile(held, `${theirs.map((t) => t.qid).join('\n')}\nfixture-event-elsewhere\n`, 'utf8');
   const { code, log } = await fire(bed, [...theirs, existing, item()], ['--held', held, '--max', '5']);
   assert.equal(code, EXIT.ok);
   const by = new Map(log.entries.map((e) => [e.id, e]));
@@ -413,9 +415,7 @@ test('held items are logged skipped and do not take a --max slot', async () => {
   }
   assert.equal(by.get(item().id)?.status, 'written', 'the writable item behind five held ones is written');
   assert.ok(existsSync(path.join(bed.data, 'events', `${EVENT}.json`)));
-  // The held existing record was not touched.
-  const event = await readJson(path.join(bed.data, 'events', 'fixture-event-t.json'));
-  assert.deepEqual(parentsOf(event), ['fixture-event-f']);
+  assert.ok(!existsSync(path.join(bed.data, 'events', 'fixture-event-elsewhere.json')), 'nothing was written for it');
   await rm(bed.dir, { recursive: true, force: true });
 });
 

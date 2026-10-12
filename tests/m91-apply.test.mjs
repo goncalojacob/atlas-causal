@@ -195,3 +195,38 @@ test('an item whose article title an active event already carries is skipped, ev
   await rm(bed.dir, { recursive: true, force: true });
   await rm(other.dir, { recursive: true, force: true });
 });
+
+// --- change 6 --------------------------------------------------------------
+
+test('held by the other branch means held there and not here', async () => {
+  const bed = await scratch();
+  // The routine's --held list is every event id on the other branch, and a
+  // record that came from m0 is on both: writer A's fire of 13 October, 23:20Z,
+  // logged three `existing` items "held by the other branch" for that reason.
+  const held = path.join(bed.dir, 'held.txt');
+  await writeFile(held, `fixture-event-t\nfixture-event-elsewhere\n${QID}\n`, 'utf8');
+  await plant(bed, 'fixture-held-campaign', { title: 'Fixture campaign Z' });
+  const existing = (id, n) => ({
+    id: `2026-10-13-africa-04${n}`, planned: '2026-10-13T03:12Z', lane: 'africa', writer: 'A',
+    existing: id, parents: ['fixture-event-g'], edges: [],
+    why: 'Sunday pass: an umbrella for a record that came out with none.',
+  });
+  const { code, log } = await fire(bed, [
+    existing('fixture-event-t', 1),          // held there, and here too: this writer's
+    existing('fixture-event-elsewhere', 2),  // held there, and not here: the other lane's
+    item({ id: '2026-10-13-africa-043' }),   // held there by qid, here by title: a duplicate
+  ], ['--held', held]);
+  assert.equal(code, EXIT.ok);
+  const by = new Map(log.entries.map((e) => [e.id, e]));
+  const here = by.get('2026-10-13-africa-041');
+  assert.equal(here.status, 'written', 'a record this branch holds is this writer\'s to edit');
+  assert.deepEqual(parentsOf(await readJson(path.join(bed.data, 'events', 'fixture-event-t.json'))), ['fixture-event-f', 'fixture-event-g']);
+  const there = by.get('2026-10-13-africa-042');
+  assert.equal(there.status, 'skipped');
+  assert.match(there.note, /held by the other branch/);
+  const dup = by.get('2026-10-13-africa-043');
+  assert.equal(dup.status, 'skipped');
+  assert.match(dup.note, /"fixture-held-campaign"/);
+  assert.doesNotMatch(dup.note, /held by the other branch/);
+  await rm(bed.dir, { recursive: true, force: true });
+});
