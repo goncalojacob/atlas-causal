@@ -113,6 +113,92 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-12-africa-009",
+      "writer": "A",
+      "fired": "2026-10-12T23:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "\"decolonisation-of-africa\" is held by the other branch"
+    },
+    {
+      "id": "2026-10-12-africa-010",
+      "writer": "A",
+      "fired": "2026-10-12T23:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "\"scramble-for-africa\" is held by the other branch"
+    },
+    {
+      "id": "2026-10-12-asia-011",
+      "writer": "A",
+      "fired": "2026-10-12T23:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "\"12-3-incident\" is held by the other branch"
+    },
+    {
+      "id": "2026-10-12-asia-012",
+      "writer": "A",
+      "fired": "2026-10-12T23:23Z",
+      "status": "written",
+      "written": {
+        "event": "fontainebleau-agreements",
+        "edges": [
+          "fontainebleau-agreements--first-indochina-war--caused"
+        ],
+        "place": "fontainebleau"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-12-asia-013",
+      "writer": "A",
+      "fired": "2026-10-12T23:23Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": 0,
+          "reason": "arrow-of-time",
+          "detail": "\"operation-searchlight\" (1971-05-25) is dated after \"bangladesh-liberation-war\" (1971-03-26) in the same year (rule 4)"
+        }
+      ],
+      "note": "every edge fell at the last fence, so the record it would have earned is off disk again"
+    },
+    {
+      "id": "2026-10-12-asia-014",
+      "writer": "A",
+      "fired": "2026-10-12T23:23Z",
+      "status": "written",
+      "written": {
+        "event": "taliban-insurgency",
+        "edges": [
+          "taliban-insurgency--republican-insurgency-in-afghanistan--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
