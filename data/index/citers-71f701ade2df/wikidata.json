@@ -3968,6 +3968,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ismailia-1952",
+      "kind": "event",
+      "locator": "Q12246335"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jambi",
       "kind": "event",
       "locator": "Q130198485"
@@ -4235,6 +4241,12 @@
       "id": "battle-of-long-tan",
       "kind": "event",
       "locator": "Q259526"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-luang-namtha",
+      "kind": "event",
+      "locator": "Q18356970"
     },
     {
       "dissent": false,
@@ -7418,6 +7430,12 @@
     },
     {
       "dissent": false,
+      "id": "imo-incident",
+      "kind": "event",
+      "locator": "Q709191"
+    },
+    {
+      "dissent": false,
       "id": "inconfidencia-mineira",
       "kind": "event",
       "locator": "Q2558843"
@@ -7949,6 +7967,12 @@
       "id": "lapland-war",
       "kind": "event",
       "locator": "Q154940"
+    },
+    {
+      "dissent": false,
+      "id": "larache-landing",
+      "kind": "event",
+      "locator": "Q5804054"
     },
     {
       "dissent": false,
@@ -8489,6 +8513,12 @@
       "id": "operation-paraquet",
       "kind": "event",
       "locator": "Q3269922"
+    },
+    {
+      "dissent": false,
+      "id": "operation-pierce-arrow",
+      "kind": "event",
+      "locator": "Q2231356"
     },
     {
       "dissent": false,

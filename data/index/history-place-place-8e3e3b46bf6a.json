@@ -4187,6 +4187,15 @@
         }
       ]
     },
+    "hanseongbu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
     "havana": {
       "from": "git",
       "versions": [
@@ -4656,6 +4665,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "ismailia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
         }
       ]
     },
@@ -5644,6 +5662,15 @@
         }
       ]
     },
+    "larache": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
     "las-cabezas-de-san-juan": {
       "from": "git",
       "versions": [
@@ -5992,6 +6019,15 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "luang-namtha": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
         }
       ]
     },

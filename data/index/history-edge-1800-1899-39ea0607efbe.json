@@ -556,6 +556,15 @@
         }
       ]
     },
+    "imo-incident--first-sino-japanese-war--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
     "independence-of-brazil-1822--aberdeen-act-1845--precondition-of": {
       "from": "git",
       "versions": [

@@ -1522,6 +1522,15 @@
         }
       ]
     },
+    "imo-incident": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
     "independence-of-bolivia": {
       "from": "git",
       "versions": [

@@ -1386,6 +1386,15 @@
         }
       ]
     },
+    "battle-of-ismailia-1952--1952-egyptian-revolution--caused": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
     "battle-of-kapyong--battle-of-the-imjin-river--enabled": {
       "from": "git",
       "versions": [
@@ -3295,6 +3304,15 @@
         }
       ]
     },
+    "first-indochina-war--battle-of-luang-namtha--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
     "first-indochina-war--geneva-conference--caused": {
       "from": "git",
       "versions": [
@@ -3676,6 +3694,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "gulf-of-tonkin-incident--operation-pierce-arrow--reacted-to": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
         }
       ]
     },
@@ -4090,6 +4117,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "larache-landing--rif-war--precondition-of": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
         }
       ]
     },

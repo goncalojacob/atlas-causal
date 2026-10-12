@@ -882,7 +882,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 4,
+      "degree": 5,
       "id": "1952-egyptian-revolution",
       "kind": "event",
       "origin": {
@@ -12321,6 +12321,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-12",
+      "degree": 1,
+      "id": "battle-of-ismailia-1952",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ismailia (1952)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-02",
       "id": "battle-of-jambi",
       "kind": "event",
@@ -13819,6 +13850,39 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Long Tan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-12",
+      "degree": 1,
+      "id": "battle-of-luang-namtha",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "laotian-civil-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Luang Namtha"
     },
     {
       "authors": [
@@ -29489,7 +29553,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 5,
+      "degree": 6,
       "id": "first-indochina-war",
       "kind": "event",
       "origin": {
@@ -29774,7 +29838,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-15",
-      "degree": 5,
+      "degree": 6,
       "id": "first-sino-japanese-war",
       "kind": "event",
       "origin": {
@@ -31376,7 +31440,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "gulf-of-tonkin-incident",
       "kind": "event",
       "origin": {
@@ -32206,6 +32270,37 @@
       "revised": null,
       "status": "active",
       "title": "Imjin War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-12",
+      "degree": 1,
+      "id": "imo-incident",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Imo Incident"
     },
     {
       "authors": [
@@ -34968,6 +35063,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Lapland War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-12",
+      "degree": 1,
+      "id": "larache-landing",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Larache landing"
     },
     {
       "authors": [
@@ -38423,6 +38549,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-12",
+      "degree": 1,
+      "id": "operation-pierce-arrow",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "vietnam-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Operation Pierce Arrow"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -41688,7 +41846,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
-      "degree": 1,
+      "degree": 2,
       "id": "rif-war",
       "kind": "event",
       "origin": {

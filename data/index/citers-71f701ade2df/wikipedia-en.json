@@ -2684,6 +2684,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ismailia-1952--1952-egyptian-revolution--caused",
+      "kind": "edge",
+      "locator": "\"Battle of Ismailia (1952)\", revision 1370443871"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jarte--battle-of-wofla--reacted-to",
       "kind": "edge",
       "locator": "\"Ottoman–Portuguese conflicts (1538–1560)\", revision 1376305276"
@@ -5024,6 +5030,12 @@
     },
     {
       "dissent": false,
+      "id": "first-indochina-war--battle-of-luang-namtha--precondition-of",
+      "kind": "edge",
+      "locator": "\"Battle of Luang Namtha\", revision 1379293458"
+    },
+    {
+      "dissent": false,
       "id": "first-indochina-war--geneva-conference--caused",
       "kind": "edge",
       "locator": "\"1954 Geneva Conference\", revision 1369041532"
@@ -5444,6 +5456,12 @@
     },
     {
       "dissent": false,
+      "id": "gulf-of-tonkin-incident--operation-pierce-arrow--reacted-to",
+      "kind": "edge",
+      "locator": "\"Operation Pierce Arrow\", revision 1370698570"
+    },
+    {
+      "dissent": false,
       "id": "gulf-war--iraq-war--precondition-of",
       "kind": "edge",
       "locator": "\"Gulf War\", revision 1373369657"
@@ -5537,6 +5555,12 @@
       "id": "ilinden-preobrazhenie-uprising--young-turk-revolution-of-1908--precondition-of",
       "kind": "edge",
       "locator": "\"Young Turk Revolution\", revision 1372902192, § Situation in Ottoman Macedonia"
+    },
+    {
+      "dissent": false,
+      "id": "imo-incident--first-sino-japanese-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Imo Incident\", revision 1378536153"
     },
     {
       "dissent": false,
@@ -6023,6 +6047,12 @@
       "id": "lachine-massacre--schenectady-massacre--reacted-to",
       "kind": "edge",
       "locator": "\"Schenectady massacre\", revision 1370730424"
+    },
+    {
+      "dissent": false,
+      "id": "larache-landing--rif-war--precondition-of",
+      "kind": "edge",
+      "locator": "\"Larache landing\", revision 1379388284"
     },
     {
       "dissent": false,
@@ -12146,6 +12176,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ismailia-1952",
+      "kind": "event",
+      "locator": "\"Battle of Ismailia (1952)\", revision 1370443871"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jambi",
       "kind": "event",
       "locator": "\"Battle of Jambi\", revision 1374833022"
@@ -12407,6 +12443,12 @@
       "id": "battle-of-long-tan",
       "kind": "event",
       "locator": "\"Battle of Long Tan\", revision 1372094029"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-luang-namtha",
+      "kind": "event",
+      "locator": "\"Battle of Luang Namtha\", revision 1379293458"
     },
     {
       "dissent": false,
@@ -15590,6 +15632,12 @@
     },
     {
       "dissent": false,
+      "id": "imo-incident",
+      "kind": "event",
+      "locator": "\"Imo Incident\", revision 1378536153"
+    },
+    {
+      "dissent": false,
       "id": "inconfidencia-mineira",
       "kind": "event",
       "locator": "\"Inconfidência Mineira\", revision 1366234128"
@@ -16091,6 +16139,12 @@
       "id": "lapland-war",
       "kind": "event",
       "locator": "\"Lapland War\", revision 1370626600"
+    },
+    {
+      "dissent": false,
+      "id": "larache-landing",
+      "kind": "event",
+      "locator": "\"Larache landing\", revision 1379388284"
     },
     {
       "dissent": false,
@@ -16607,6 +16661,12 @@
       "id": "operation-paraquet",
       "kind": "event",
       "locator": "\"Operation Paraquet\", revision 1370694202"
+    },
+    {
+      "dissent": false,
+      "id": "operation-pierce-arrow",
+      "kind": "event",
+      "locator": "\"Operation Pierce Arrow\", revision 1370698570"
     },
     {
       "dissent": false,

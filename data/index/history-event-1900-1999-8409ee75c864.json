@@ -7105,6 +7105,15 @@
         }
       ]
     },
+    "battle-of-ismailia-1952": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
     "battle-of-jutland": {
       "from": "git",
       "versions": [
@@ -7304,6 +7313,15 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-luang-namtha": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
         }
       ]
     },
@@ -14349,6 +14367,15 @@
         }
       ]
     },
+    "larache-landing": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
     "las-palmas-massacre": {
       "from": "git",
       "versions": [
@@ -16447,6 +16474,15 @@
             "summary"
           ],
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-pierce-arrow": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
         }
       ]
     },

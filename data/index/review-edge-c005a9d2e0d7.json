@@ -6426,6 +6426,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-12",
+      "from": "battle-of-ismailia-1952",
+      "id": "battle-of-ismailia-1952--1952-egyptian-revolution--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "1952-egyptian-revolution",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-10-02",
       "from": "battle-of-jarte",
       "id": "battle-of-jarte--battle-of-wofla--reacted-to",
@@ -16104,6 +16134,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-12",
+      "from": "first-indochina-war",
+      "id": "first-indochina-war--battle-of-luang-namtha--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "battle-of-luang-namtha",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-15",
       "from": "first-indochina-war",
       "id": "first-indochina-war--geneva-conference--caused",
@@ -17955,6 +18015,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-12",
+      "from": "gulf-of-tonkin-incident",
+      "id": "gulf-of-tonkin-incident--operation-pierce-arrow--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "operation-pierce-arrow",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-05",
       "from": "gulf-war",
       "id": "gulf-war--iraq-war--precondition-of",
@@ -18363,6 +18453,36 @@
       "revised": null,
       "status": "active",
       "to": "eec-accession-1986",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-12",
+      "from": "imo-incident",
+      "id": "imo-incident--first-sino-japanese-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "first-sino-japanese-war",
       "type": "precondition-of"
     },
     {
@@ -19977,6 +20097,36 @@
       "status": "active",
       "to": "schenectady-massacre",
       "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-12",
+      "from": "larache-landing",
+      "id": "larache-landing--rif-war--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "rif-war",
+      "type": "precondition-of"
     },
     {
       "authors": [
