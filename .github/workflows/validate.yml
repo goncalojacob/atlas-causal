@@ -30,8 +30,17 @@ on:
   # runner per landing, several landings a day, for an answer already being
   # computed beside it. Every lane branch is `m1`, `m42`, `m42b`, `m88`; the
   # one that is not is `m0`, and its check is its pull request's.
+  #
+  # **And `plan`, since M90 §5.** The fourth branch carries no record and no
+  # code — a queue (`data/imports/queue.json`), the log of what the writers
+  # did with it, and the day's note under `docs/plans/` — and all three are
+  # checked here: the queue and the log by their schemas and by the rules a
+  # shape cannot make (`tools/validate.mjs`, through the kinds `import-queue`
+  # and `import-queue-log`), and the whole suite beside them. A red `plan` has
+  # to be visible, because a queue that does not validate is a queue the
+  # writers would be taking items out of all day.
   push:
-    branches: ['m[1-9]*']
+    branches: ['m[1-9]*', 'plan']
   pull_request:
   workflow_dispatch:
 

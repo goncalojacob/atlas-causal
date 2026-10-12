@@ -191,7 +191,12 @@ export function verdictForEdge(edge, {
   if (!quoteFound(edge.quote, text)) {
     return refuse('quote-not-found', `the quote is not in revision ${edge.revision} of "${edge.article}"`);
   }
-  const said = verdictFor(edge.quote, { from: edge.from, to: edge.to, candidates });
+  // A15(5) is asked of the **folded** quote and not of the characters typed: a
+  // soft hyphen inside "After" is invisible on the page and defeats the
+  // opener, and `normaliseQuote` is the fold the verbatim check above just
+  // used, so the two questions are asked of one sentence. It keeps the case,
+  // which `namesHeldEvents` reads (deviation 1464).
+  const said = verdictFor(normaliseQuote(edge.quote), { from: edge.from, to: edge.to, candidates });
   if (!said.write) {
     const named = said.reattribute.map((r) => r.id).join(', ');
     return refuse('chronology', named ? `${said.why}: ${named}` : `${said.why} (A15(5))`);
