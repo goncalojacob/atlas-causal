@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "siege-of-st-augustine-1740--battle-of-bloody-mose--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-80"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bloody Mose\", revision 1377232939, § Battle"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of St. Augustine (1740)\", revision 1374319127, § Siege"
+    }
+  ],
+  "from": "siege-of-st-augustine-1740",
+  "to": "battle-of-bloody-mose",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The sortie against Fort Mose was the Spanish answer to the siege, and the battle's own article says so in the governor's own deliberation: “While the main body of Oglethorpe's expeditionary force laid siege to St. Augustine, de Montiano considered his options. Knowing the strategic importance of Fort Mose and realising its vulnerabilities, de Montiano decided to undertake a counter-offensive against the British invaders.” The second author, “Siege of St. Augustine (1740)” at revision 1374319127, has the same event from the besieger's side — “a sortie by 300 Spanish and free blacks attacked Fort Mose held by 120 Highlander Rangers and 30 Indians” — and it is a sortie out of the besieged city, which is what `reacted-to` is for. `probable`, rule 22. The two articles date the battle eleven days apart, 14 and 26 June 1740, which is the old and the new style of one day and not a disagreement about what happened; the record keeps the item's own date and the validator's span warning stands rather than a date being chosen here.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

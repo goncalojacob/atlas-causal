@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "el-tor-egypt",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q867603",
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "El Tor, Egypt",
+    "pt": "Tor (Egito)"
+  },
+  "sources": [],
+  "names": [
+    "El-Tor",
+    "El Tor, Egypt",
+    "Tor (Egito)"
+  ],
+  "where": {
+    "lon": 33.616666666667,
+    "lat": 28.233333333333,
+    "precision": "city",
+    "label": "El Tor, Egypt"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

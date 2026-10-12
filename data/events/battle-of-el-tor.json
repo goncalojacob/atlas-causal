@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-el-tor",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q115518405",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of El Tor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q115518405"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of El Tor\", revision 1374080276"
+    }
+  ],
+  "title": "Battle of El Tor",
+  "summary": "The English Wikipedia article \"Battle of El Tor\", at revision 1374080276, opens: \"The Battle of El Tor was a military engagement that took place in 1541, between Portuguese forces under the command of the Governor of India Dom Estevão da Gama and those of the Ottoman Empire then in the city of El Tor, on the Sinai Peninsula. The Turks were driven from the city, but at the request of Christian monks from the Monastery of Saint Catherine the Portuguese spared the city from being plundered, and celebrated a mass and a knighting ceremony therein.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q115518405, imported by tools/import/wikidata.mjs. The item's own description reads \"Ottoman-Portuguese battle (1541)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1541,
+    "end": 1541
+  },
+  "place": "el-tor-egypt",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-portuguese-conflicts-1538-1560"
+}

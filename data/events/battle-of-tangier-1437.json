@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-tangier-1437",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872500",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Tangier (1437)",
+    "pt": "Desastre de Tânger"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872500"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tangier (1437)\", revision 1370590511"
+    }
+  ],
+  "title": "Battle of Tangier (1437)",
+  "summary": "The English Wikipedia article \"Battle of Tangier (1437)\", at revision 1370590511, opens: \"The Battle of Tangier, sometimes referred to as the siege of Tangiers, and by the Portuguese, as the disaster of Tangier, refers to the attempt by a Portuguese expeditionary force to seize the Moroccan citadel of Tangier and its defeat by the armies of the Marinid Sultanate in 1437.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872500, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in 1437\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1437,
+    "end": 1437,
+    "date": "1437-09-13",
+    "endDate": "1437-10-19"
+  },
+  "place": "tangier",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "moroccan-portuguese-conflicts"
+}

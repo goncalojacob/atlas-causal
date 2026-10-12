@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "chickasaw-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q495858",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Chickasaw Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q495858"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chickasaw Wars\", revision 1370611063"
+    }
+  ],
+  "title": "Chickasaw Wars",
+  "summary": "The English Wikipedia article \"Chickasaw Wars\", at revision 1370611063, opens: \"The Chickasaw Wars were fought in the first half of the 18th century between the Chickasaw allied with the British against the French and their allies the Choctaws, Quapaw, and Illinois Confederation. The Province of Louisiana extended from Illinois to New Orleans, and the French fought to secure their communications along the Mississippi River. The Chickasaw, dwelling in northern Mississippi and western Tennessee, lay across the French path. Much to the eventual advantage of the British and the later United States, the Chickasaw successfully held their ground. The wars came to an end only with the French cession of New France to the British in 1763 according to terms of the Treaty of Paris.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q495858, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1721,
+    "end": 1763
+  },
+  "place": "mississippi-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

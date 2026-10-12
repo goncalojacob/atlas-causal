@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-fez-1554",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q105162351",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Capture of Fez (1554)",
+    "pt": "Tomada de Fez (1554)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q105162351"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Fez (1554)\", revision 1376418565"
+    }
+  ],
+  "title": "Capture of Fez (1554)",
+  "summary": "The English Wikipedia article \"Capture of Fez (1554)\", at revision 1376418565, opens: \"The Conquest of Fez or Capture of Fez took place in 1554 between the Algerian forces of Salah Rais and the ruler of the Saadi Sultanate, Mohammed ash-Sheikh. The battle took place on 7 January at Qudyat-al-Mahali, a suburb near Fez and occurred after Salah Reis’ two previous victories against the Saadians, one at Taza and another at the Sebou river. One of the objectives of the expedition is to restore Ali Abu Hassun, a Wattassid pretender, to the throne.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q105162351, imported by tools/import/wikidata.mjs. The item's own description reads \"1554 battle in Africa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1554,
+    "end": 1554,
+    "date": "1554-01-07"
+  },
+  "place": "fez-morocco",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "conflicts-between-the-regency-of-algiers-and-morocco"
+}

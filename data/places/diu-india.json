@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "diu-india",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q631849",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Diu, India",
+    "pt": "Diu"
+  },
+  "sources": [],
+  "names": [
+    "Diu",
+    "Diu, India"
+  ],
+  "where": {
+    "lon": 70.984358333333,
+    "lat": 20.714997222222,
+    "precision": "city",
+    "label": "Diu, India"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

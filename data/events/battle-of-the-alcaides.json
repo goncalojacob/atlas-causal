@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-alcaides",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q125398640",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of the Alcaides",
+    "pt": "Batalha dos Alcaides"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q125398640"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Alcaides\", revision 1370277531"
+    }
+  ],
+  "title": "Battle of the Alcaides",
+  "summary": "The English Wikipedia article \"Battle of the Alcaides\", at revision 1370277531, opens: \"The Battle of the Alcaides, fought in April 14 1514, was a significant military engagement between the forces of the sultan of Fez and the Portuguese defenders, along with their local allies, near the town of Boulaouane. It was the only major pitched-battle fought by the Portuguese in Morocco before the catastrophic defeat at Alcácer-Quibir 64 years later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q125398640, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1514,
+    "end": 1514
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "moroccan-portuguese-conflicts"
+}

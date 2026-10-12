@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "king-george-s-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q517578",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "King George's War",
+    "pt": "Guerra do Rei Jorge"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q517578"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"King George's War\", revision 1377423479"
+    }
+  ],
+  "title": "King George's War",
+  "summary": "The English Wikipedia article \"King George's War\", at revision 1377423479, opens: \"King George's War (1744–1748) encompassed the military operations in North America that formed part of the War of the Austrian Succession (1740–1748). It was the third of the four French and Indian Wars. It took place primarily in the British provinces of New York, Massachusetts Bay, New Hampshire, and Nova Scotia. Its most significant action was an expedition organized by Massachusetts Governor William Shirley that besieged and ultimately captured the French fortress of Louisbourg, on Cape Breton Island in Nova Scotia, in 1745. In French, it is known as the Troisième Guerre Intercoloniale or Third Intercolonial War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q517578, imported by tools/import/wikidata.mjs. The item's own description reads \"North American theater of the War of the Austrian Succession\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1744,
+    "end": 1748
+  },
+  "place": "north-america",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-austrian-succession"
+}

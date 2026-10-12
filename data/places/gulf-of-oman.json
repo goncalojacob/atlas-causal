@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "gulf-of-oman",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q79948",
+  "sitelinks": {
+    "count": 101,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Gulf of Oman",
+    "pt": "Golfo de Omã"
+  },
+  "sources": [],
+  "names": [
+    "Gulf of Oman",
+    "Golfo de Omã"
+  ],
+  "where": {
+    "lon": 58,
+    "lat": 25,
+    "precision": "region",
+    "label": "Gulf of Oman"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

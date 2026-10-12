@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-danghangpo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q626283",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Danghangpo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q626283"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Danghangpo\", revision 1370438295"
+    }
+  ],
+  "title": "Battle of Danghangpo",
+  "summary": "The English Wikipedia article \"Battle of Danghangpo\", at revision 1370438295, opens: \"The Battle of Danghangpo was a naval engagement during the Japanese invasions of Korea (1592–98) that resulted in Korean victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q626283, imported by tools/import/wikidata.mjs. The item's own description reads \"1592 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1592,
+    "end": 1592,
+    "date": "1592-07-12"
+  },
+  "place": "joseon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "toyotomi-hideyoshi-s-1st-korean-campaign"
+}

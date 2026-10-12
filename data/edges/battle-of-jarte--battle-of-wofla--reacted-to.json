@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "battle-of-jarte--battle-of-wofla--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "m42b-batch-85"
+    ]
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman–Portuguese conflicts (1538–1560)\", revision 1376305276"
+    }
+  ],
+  "from": "battle-of-jarte",
+  "to": "battle-of-wofla",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "Wofla is what answered Jarte, and the umbrella's own article states the step between them. “Ottoman–Portuguese conflicts (1538–1560)”, at revision 1376305276, § Ethiopian campaign, 1541–1543: “The Portuguese were again victorious at the Battle of Jarte, killing almost all of the Turkish contingent. However, imam then requested aid from the Ottoman governor of Yemen in Aden, who sent 2,000 Arabian musketeers, 900 Turkish pikemen, 1,000 Turkish foot musketeers, some Shqiptar foot soldiers (with muskets) and Turkish horsemen. In the Battle of Wofla, Somali and Turkish forces defeated the Portuguese.” The article names the request as the imam's answer to the defeat and names the force it brought as the force that won the second battle; Wofla's own lead agrees about what decided it — “Reinforced with a superiority not only in numbers but in firearms, Imam Ahmad was victorious” — without naming Jarte, so the citation is the umbrella's article and not that lead. `reacted-to` and not `caused`: what the article states is that the second battle was fought on terms the first one provoked, which is what this atlas's `reacted-to` says when it runs forward in time. `probable` under rule 22; the article's plaintext carries no bibliography a second author could be taken from (M72). Both ends sit inside the same umbrella, so this edge does not cross one.",
+  "dispute": null,
+  "origin": {
+    "tool": "assistant"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-al-kawiya",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q138544936",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of al-Kawiya"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q138544936"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of al-Kawiya\", revision 1370597364"
+    }
+  ],
+  "title": "Battle of al-Kawiya",
+  "summary": "The English Wikipedia article \"Battle of al-Kawiya\", at revision 1370597364, opens: \"The Battle of al-Kawiya was a military conflict between the Alawi Sultanate and the Regency of Algiers in September, 1700. The Moroccans suffered a defeat and heavy casualties including a large number of commanders.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q138544936, imported by tools/import/wikidata.mjs. The item's own description reads \"1700 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1700,
+    "end": 1700,
+    "date": "1700-09"
+  },
+  "place": "chelif-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "conflicts-between-the-regency-of-algiers-and-morocco"
+}

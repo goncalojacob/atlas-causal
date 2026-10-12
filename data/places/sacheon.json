@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "sacheon",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q42100",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Sacheon"
+  },
+  "sources": [],
+  "names": [
+    "Sacheon"
+  ],
+  "where": {
+    "lon": 128.3575,
+    "lat": 35.234722222222,
+    "precision": "city",
+    "label": "Sacheon"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

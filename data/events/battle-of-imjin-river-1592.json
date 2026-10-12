@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-imjin-river-1592",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871272",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Battle of Imjin River (1592)",
+    "pt": "Batalha do Rio Imjin"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871272"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Imjin River (1592)\", revision 1371653482"
+    }
+  ],
+  "title": "Battle of Imjin River (1592)",
+  "summary": "The English Wikipedia article \"Battle of Imjin River (1592)\", at revision 1371653482, opens: \"The Battle of Imjin River was a battle during the 1592 Japanese invasion of Korea. Kim Myŏngwŏn's northern defense was defeated and the Japanese were able to cross over and invade northern Korea.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871272, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the 1592 Japanese invasion of Korea\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1592,
+    "end": 1592,
+    "date": "1592-07-07"
+  },
+  "place": "imjin-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "toyotomi-hideyoshi-s-1st-korean-campaign"
+}

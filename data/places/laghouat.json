@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "laghouat",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-02",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q402733",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-02"
+  },
+  "wikipedia": {
+    "en": "Laghouat",
+    "pt": "Laghouat"
+  },
+  "sources": [],
+  "names": [
+    "Laghouat"
+  ],
+  "where": {
+    "lon": 2.865,
+    "lat": 33.8,
+    "precision": "city",
+    "label": "Laghouat"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

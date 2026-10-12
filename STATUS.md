@@ -24072,6 +24072,66 @@ browser failure did not reproduce, here or on the runner, so this fire reads 313
 where the previous stand carried it as standing.
 
 ## Milestones landed
+
+**M42b batches 78 to 81 — eleven active events, three edges, and africa before 1800 given a
+method, 2 October.** The 07:36Z fire. Four batches off two sweeps, and the two things worth
+carrying forward are measurements rather than records.
+
+**The cache sweep is run and the answer is no.** Move 5 of the batch-72 stand had been unspent
+for three fires: nobody had swept the 3,000-odd cached Wikipedia leads for a sentence joining
+two events already on disk, and it costs no main, no import and no API call. Run — 2,037
+cached leads, 1,299 of them an active record's own item, 3,883 sentences through
+`tools/import/chronology.mjs` — it returns **24 rows and not one edge**. Ten are
+`covid-19-pandemic-in-<country>` saying it is *part of* the pandemic, which is a filing fact;
+four are a name matching something that is not an event; three name a held event as a yardstick
+(*"the largest refugee crisis since World War II"*); one is a homonym the span could not part;
+two are deviation 1539 exactly. **A lead says what a thing was, not what caused it**, and the
+sweep that would pay is the same one over article bodies — which is a fetch per record and is
+how batches 73, 74 and 80 got their edges.
+
+**Africa before 1800 has a vein, and it is the forward direction.** Batches 76 and 77 proved
+the `P361` lists of what the atlas holds are exhausted for that cell; the question nobody had
+asked is the other way round. Items of a class the seeds table knows, `P17` a country on the
+African continent, dated before 1800, with an English article: **115 candidates**, 11 in the
+15th century, 44 in the 16th, 39 in the 17th and 19 in the 18th — and a third of the class
+table was never asked, because the first of three chunks timed out at 504 three times. **Of the
+115, exactly one has a `P361` the atlas holds**, so the vein needs umbrellas: `Q430726` would
+hold nine of them, `Q118929718` eight, `Q133886090` seven. That is the next fire's first move
+and it costs one main per umbrella, which A6 allows a batch to do if it says why — and the why
+is that africa is 55 events short of the 303 that lifts A15(1)'s pause and cannot get there at
++0 main.
+
+**What landed.** Eleven active events, **+0 main, seventh batch running**: three placeless
+actions of the Dutch–Portuguese War in asia's 17th century (78); the siege of Jacmel and the
+action of 1 January 1800 in the Caribbean (79); the War of Jenkins' Ear's Florida and Georgia
+land war — `siege-of-st-augustine-1740`, `battle-of-bloody-mose`, `invasion-of-georgia-1742`,
+`battle-of-bloody-marsh` — and `attacks-on-fuerteventura-in-1740` in africa (80); and
+`battle-of-porto-praya` off Cape Verde (81). **Three edges**, all in batch 80 and all from two
+articles at the revisions the records cite, and all three inside one umbrella, so A15(11)'s
+crossing count is level at 615. Two places written by hand: `fort-mose`, because the item
+carries its own `P625` and names no located item a tool can read a name off, and **`praia`,
+because no lane polygon reaches Cape Verde** — `regions.json` is Natural Earth 110m land and
+the archipelago is 570 km offshore — which closes one of deviation 1346's ocean islands with
+the override CLAUDE.md keeps for exactly that.
+
+**Three refusals worth the space.** `Q10369402` *Second Battle of Salvador* imported cleanly and
+was dropped: it is the record this atlas already has as `siege-of-salvador-1638` under
+`Q932845`, and **Wikidata holds one event under two items** whose labels contradict each other
+(*First* with `P580` May 1638, *Second* with `P585` April 1638) — the import's held check is by
+item id and cannot see it, though the redirect it already flags would (deviation 1549).
+`Q4677387` and `Q4677277` were created and dropped as **europe-lane** records, which A15(1)
+pauses: they are children of an americas umbrella, which is how they got written at all, and
+**the inverse sweep's lane is the umbrella's and not the candidate's** (deviation 1548). And a
+fourth edge was read and refused on a homonym: *"formally ratified by Spain in the subsequent
+Treaty of Madrid"* is the Anglo-Spanish treaty of October 1750, and the Treaty of Madrid this
+atlas holds is the Spanish–Portuguese one of 13 January (deviation 1550).
+
+**Deviations 1547 to 1551**, and 1541 to 1546 are M42's. 1547: `statesACause` returned true on
+*"enforcing United Nations Security Council resolutions"* because `CAUSAL_MARKERS` holds
+`forcing` and matches it as a substring. 1551: a backtick in a `git commit -m` string is a
+command substitution, and batch 81's message lost the word it quoted.
+
+M42b started 2026-10-02T07:36:48Z by scheduled
 M6 started 2026-09-03T17:06:55Z by scheduled
 M6 done
 M7 started 2026-09-03T18:20:47Z by shepherd
@@ -25150,6 +25210,51 @@ both level, which is the measurement saying the atlas is gaining events faster t
 Africa **245** and Asia **255** against A10's 303, so A15(1)'s pause holds.
 
 M42b started 2026-10-02T04:36:39Z by scheduled
+**M42b batches 82 and 83 — africa before 1800, from nothing to three events short, 2 October.**
+Two batches, **48 active events, two umbrellas, three edges and the year 1415**. **Batch 82**
+read batch 81's four African umbrellas before taking any of them: `Q28493960` has an English
+article and its own dates and the import wrote it; `Q340075` has an article and **no date at
+all**; `Q132132698` has both and is still open; `Q86667216` has **no English article**, which
+A2 refuses. Then the sweep nobody had run — `?item wdt:P361 ?u` asked of those four directly —
+returned **64 candidates and the atlas held none of them**, where batch 81's blunter `P17` query
+had promised sixteen. The umbrella and **21 of its 22 children before 1800** are in, 13 places
+from the import and `wadi-al-laban` by hand; `Q106959443` *Maghrebi War* refused for want of a
+lane. One edge, `campaign-of-tlemcen-1557` → `battle-of-wadi-al-laban`, `precondition-of`.
+**A15(5) refused six sentences**, five of them deviation 1539's mistake again and one of them
+the third-event clause working exactly as written: the Siege of Oran (1700–1701) names the
+Battle of Chelif as its cause and the atlas does not hold that battle, so the edge is not
+written at all. **Batch 83** is the Moroccan–Portuguese conflicts, 1415 to 1769: the umbrella
+**written by hand under A6** because `Q340075` carries no `P580`, `P582` or `P585`, its span
+quoted from its own article at revision 1370628730, its place left empty because A15(6) refuses
+`Q1028` for a pre-1956 event — and **25 children imported under it, none refused, all +0 main**,
+with 14 places. **The atlas now begins where its own brief says it begins**: before this batch
+the earliest active event was 1492, the africa lane held nothing before 1800 and nothing in the
+15th century; `portuguese-conquest-of-ceuta` is 1415-08-21. Two edges, and the second of them is
+**this fire's one edge across an umbrella**: `capture-of-fez-1576` → `battle-of-alcacer-quibir`,
+`precondition-of`, which joins the fire's two veins by an argument. **Deviation 1552**: two
+`P585` values on one item make an inverted interval (`Q107354224`, start 1707 end 1703), caught
+by rule 15 and fixed from the article under A7. **Deviation 1553**: the lane deriver puts Ceuta
+in **europe**, because `data/geo/regions.json` is Natural Earth 110m and the nearest polygon to a
+point 14 km from Spain across the strait is Iberia; the override is written on both place records
+and every other strait deserves the same look. **Deviation 1554**: the chronology sweep reads a
+record's `title` and `aliases`, so an article naming a held event by another of its names is
+invisible to it — the crossing edge's own quote says *"the Battle of Ksar al-Kabir"* and was
+found by eye, not by the sweep. **Deviation 1555**: a hand-written summary must use the
+importer's own straight quotes or `src/summary.js` cannot split the source's account from the
+note; `tests/search.test.mjs` caught it.
+**Deviation 1556**: the year the atlas says it begins at is a measurement, and three tests
+disagreed about it. `tests/m82.test.mjs` and `tests/m89.test.mjs` derive it from
+`atlas.extent.min` and `tests/m85.test.mjs` pinned the literal *"since 1492"*, so the four files
+that say it — the masthead, the intro card, `about.html` and `essay.html` — now say 1415, and
+`tests/m85.test.mjs` reads `WHAT_IT_IS` instead of copying it, which that file's own header
+already required. **That is the one test file this lane has edited and STEP 1's merge rule will
+drop it**: the line belongs on `m0`.
+**The main count rose by exactly two, both of them umbrellas, and A6's reason is in both notes.**
+Largest component **790** and crossing count **619**. **Africa 300 and asia 258 against A10's
+303**, so A15(1)'s pause holds — and africa is now three events short of lifting it on its own,
+which the next fire should spend `Q132132698` on.
+
+M42b started 2026-10-02T09:37:29Z by scheduled
 
 **M42 batches 90 and 91 — the Moroccan question and the Bizerte crisis, 2 October.**
 The 08:07Z fire claimed, merged `origin/m0` (clean, and the merged index was
@@ -25206,6 +25311,7 @@ corpus in one move, so this fire did not create it. Four chains with held far
 ends are waiting behind that one decision, and the pool file's stand names them.
 Deviation 1547; `origin/m42b` stood at 1540 when batch 89's fire read it.
 
+M42b started 2026-10-02T12:37:07Z by scheduled
 **M42 batch 92 — the surrender of Japan, the atomic bombings, and the atlas's
 clearest disputed edge, 2 October.** The same 08:07Z fire, third batch. Asia and
 not Africa, said plainly in the note: both African umbrellas' windows are now read
@@ -25248,6 +25354,89 @@ paragraph to `docs/m62-umbrellas.md` or `docs/m67-umbrellas.md` **in the same
 commit as the record**, not only to the pool file; two of this fire's intermediate
 commits were red for exactly that.
 
+**M42b batches 84, 85 and 86 — the Barbary conflicts, the Indian Ocean theatre, and africa past
+303, 2 October.** The 12:36Z fire claimed (the 09:36Z claim was three hours old and `origin/m42b`
+two hours unpushed, so neither limb of the protocol's claim rule held), merged `origin/m42`
+— four commits, conflicting only in `STATUS.md`, `sources.html`, the title cache and 262
+index files, resolved as the brief says: both sides of `STATUS.md`, the union of the title
+cache, and `data/index/` dropped and rebuilt — and ran **three import batches**.
+
+**Batch 84** took `Q132132698` *Barbary–Portuguese conflicts* and four of the six children the
+previous stand named, plus a second umbrella the stand had not asked for: `Q762191`
+*Ottoman–Portuguese conflicts of 1538–1560*, needed because `Q116609273` is dated 1553 and rule
+24 refuses it the 1617–1819 umbrella. **+2 main, both umbrellas, and A6's reason is that each
+buys children** — the Ottoman one bought eighteen in the next batch. Two children were refused
+by this branch's own partition: `Q132175198` and `Q135153487` both derive the **europe** lane,
+which A15(1) pauses. One edge, `battle-of-the-bay-of-velez --enabled--> battle-of-taza-1553`,
+from the far end's own background section, and it crosses an umbrella.
+
+**Batch 85** pointed batch 82's `P361`-children sweep at an Asian umbrella for the first time —
+move 2 of three successive stands, which had nothing to point at until batch 84 created one —
+and got **25 rows for one SPARQL call**. Eighteen of them, every child inside `Q762191`'s own
+span, imported at **+0 main**: the sieges of Diu, the Aden revolt, Qatif, the Hormuz campaign,
+the Strait of Hormuz, the Gulf of Oman, Bahrain, Punnaikayal, Jeddah, Suakin, El Tor, Suez,
+Jarte, Wofla, Wayna Daga, Bab al-Mandab and Kamaran, with twelve places. A15(6)'s country
+refusals fired three times and all three were right (Saudi Arabia's 1727 inception against a
+1551 event, India's 1947 against 1553, Ethiopia's 1995 against 1542). One edge,
+`battle-of-jarte --reacted-to--> battle-of-wofla`, inside one umbrella rather than across.
+
+**Batch 86** asked batch 85's cheap query of the whole atlas rather than of one umbrella: every
+one of the **589** held active events dated before 1800, in a single `POST` to WDQS (a `GET` is
+refused — the `VALUES` block is 7.6 KB and the answer is `HTTP 414`). **1,172 rows, 643 items the
+atlas does not hold, 534 of them dated before 1800** — by derived lane, americas **204**, europe
+**189**, asia **11**, africa **7**, and **123** with no lane a crude reading of `P276` can find,
+which the import's own A9 chain would place better. That table is the first measured queue of
+open pre-1800 work this lane has had, and the americas column is wholly inside its partition.
+Of the 18 asia and africa candidates, 17 were put to the import and **16 arrived, all filed,
++0 main**, each pre-checked against its parent's own span so rule 24 refused no filing. One item
+refused outright — `Q20639061` carries **no `P31`**, which is the reason it has sat open in these
+stands for fires. One edge, `aden-revolt --enabled--> capture-of-muscat-1552`, from the near end's
+own lead, and it crosses an umbrella. **And one record would have breached A15(1)**:
+`battle-of-cape-spartel` came out with `region: europe`, because at 110m resolution the europe
+polygon is 0.1102 degrees from Cape Spartel's point and the africa polygon 0.1658 — deviation
+1553's class and `ceuta-under-muslim-rule`'s precedent. Overridden to africa with both distances
+in the note; **europe is 556, exactly what the fire found it at**. A10's per-lane reporting rule
+is what showed it.
+
+**Africa is 319 against A10's 303 and asia is 281** — the africa side of A15(1)'s europe pause
+is lifted and the whole of the rest of it now rests on asia's 22. Main **238** throughout all three
+batches, largest component **792**, crossing count 619 → **621**, active 1,518 → **1,558**. Five candidate edges were refused and each refusal is
+argued in `docs/m42b-pool.md`: one straight A15(5), two where the only causal marker in the
+window governed a different clause, one that would have needed two articles' halves (the Bunker
+Hill case), and one plain chronology. The lead sweep over all eighteen cached leads named **no**
+held event at all, which is the third fire in a row to measure that.
+
+**The check is green on this fire's head `419a9cbb`** — run 2432, conclusion success, with
+**1,941 pure tests and 313 browser tests, all passing and none skipped** on the runner. In this
+sandbox one browser test of the 313 is red, and **deviation 1561** is the measurement of why: the
+two batches added 24 records between 1538 and 1819, none of them inside the 1900–1999 window
+`tests/graph-labels-browser.test.mjs` drives, but a record in `data/index/` is a positional row
+over the file's own id table, so inserting ids re-breaks the ties that
+`graph-view/layout.js`'s barycentre pass and `map/labels.js`'s `placeLabels` resolve by id. A
+different node is therefore the longest one on screen, and **that node travels 758 px away from
+the pointer it is zoomed on** and leaves a 1280-wide viewport, where the node the test used to
+pick stays put. Two browser probes at the two heads are in `docs/m42b-pool.md`. This lane did not
+touch the anchor arithmetic — the brief forbids a display change, and the owner should see the
+measurement first. **Batch 86 then turned the same test green again, with no code change
+between the two heads**, which is the proof of the mechanism and the reason it is worth writing
+down: the fault is hidden, not fixed, and the node that leaves the viewport is still there for
+whichever future batch makes it the test's subject again. At this fire's final head the suite is
+**313 of 313 here and on the runner**, and run **2438** on `2f6dba74` is success.
+
+**Four deviations and an amendment to a fifth.** **1558**: an item whose `P276` is two oceans
+and a continent takes its lane from an ocean, because the import reads the first location a lane
+polygon reaches and the Mediterranean's centroid is inside the europe lane. **1559**: the
+chronology sweep reads an article's `See also` list as a sentence. **1560**: a two-sentence
+window passes `statesACause` on a causal marker that belongs to neither end of the proposed edge,
+which is a hole in A15(5) that no tool closes. **1561**: the finding above. And **deviation 1484's three greps must run over
+`origin/m42`'s `docs/m42-pool.md` and `STATUS.md` as well as this branch's** — they do not, as
+written, and `origin/m42` already held 1557, which this fire had to renumber mid-flight.
+**Deviation 1538 also paid for itself**: `validate --index | tail -3` in a `&&` chain exits 0
+whatever the validator says, and this fire read "0 errors" three times from a run that had three
+— rule 16 on the manifest and two `history-edge-1500-1599` shards, which is deviation 1264's
+order. Fixed by one rebuild committed alone; `validate --index` exits 0 at this head.
+
+M42b started 2026-10-02T16:37:14Z by scheduled
 **M42 batches 93, 94 and 95 — one chain, three conferences back, and Africa moved,
 2 October.** The fire that claimed at 12:16Z took the candidate the previous stand
 named and then followed it backwards twice. **Batch 93:**
@@ -25361,3 +25550,127 @@ run 2447 on `b0d15798b` was red for deviation 1564 and run 2446 on `2e2e2603d`
 was green. Locally on the final head: **1,941 pure tests, 1,941 passing, 0
 failing, 0 skipped**, and **313 browser tests, 313 passing, 0 failing, 0
 skipped**.
+**M42b batch 87 — the Imjin War, and asia past A10's 303, 2 October.** The 16:37Z fire claimed
+(the 12:37Z claim was four hours old and `origin/m42b` two and a half hours unpushed, so neither
+limb of the protocol's claim rule held), merged `origin/m42` — fourteen commits, conflicting only
+in `STATUS.md`, `sources.html`, the title cache and 259 index files, resolved as the brief says —
+and ran **one import batch**.
+
+**The batch was chosen off a measurement that corrected the last one's.** Batch 86's sweep had
+reported 11 unheld asia candidates and 123 rows it could find no lane for; read through the
+import's own A9 chain rather than a crude first-`P276`, the 518 unheld pre-1800 rows are
+**americas 241, europe 204, no lane 67, asia 4, africa 2**. So the 123 were not hidden asian work
+— they were hidden **americas** work, which is now this partition's largest measured queue and
+the next fire's first move after the europe records the pause has been holding.
+
+**Batch 87** took `Q576338` *Japanese invasions of Korea* (1592–1598), the two campaigns under it
+and every battle and siege the three of them name through `P361` with an English article:
+**38 active events for +1 main**, which is the cheapest ratio either lane has measured. Every
+child was pre-checked against its parent's own span by year, so the filing refused nothing and the
+import's second pass wrote 18 of them. One item refused — `Q4871325` *Battle of Jeonju*, no `P31`
+at all — and **every `P17` country candidate refused** under A15(6), the two Koreas' 1948
+inceptions against a sixteenth-century war, which leaves 13 records placeless for a person.
+`battle-of-hansan-island` was the one the import left main: its item has a `P580` and no `P582`,
+so the open interval made rule 24 refuse the item's own `P361`, and **A7 closed it to 1592 from
+the cited article's own first sentence** — leaving the day as the item's 8 July against the
+article's 15 August, two calendars this run does not choose between.
+
+**One edge**: `battle-of-chilcheollyang --precondition-of--> battle-of-myeongnyang`, from the far
+end's own lead at revision 1370450929 — *"with only 13 ships remaining from Admiral Wŏn Kyun's
+disastrous defeat at the Battle of Chilcheollyang"* — `precondition-of` because what the sentence
+states is the force Yi had and not what brought the battle about. **It crosses an umbrella: 622 →
+623.** Eleven candidates were refused under **A14** (a battle's article naming its own war, and
+the war's article naming its own battles) and one under **A15(5)**'s chronology class
+(*"After the Battle of Happo…"*, where the cause stated is the reports and not the battle).
+**A5's other half could not be honoured**: before this batch the atlas held nothing in Korea,
+Japan or Ming China, so no cited sentence could reach a held record and the cluster is a component
+of two beside a largest component unchanged at 795. The stand names what closes that — the
+Portuguese records that touch Japan, which are asia before 1800 and so this lane's.
+
+**Active 1,561 → 1,599; main 238 → 239; asia 283 → 321 and africa 320, both past A10's 303, so
+A15(1)'s europe pause is lifted in full.** Europe is **556**, exactly what the fire found it at.
+`validate --index` 0 errors at every commit and at this head; the suite is green after two
+one-space JSON files were re-dumped at two (deviations 1565 and 1566, renumbered from 1563 and
+1564, which `origin/m42` already held).
+
+**M42b batch 88 — South America and the Caribbean, and the first edge of the fire that grew the
+component, 2 October.** With asia and africa both past 303 the lane that trails inside this
+partition is the **americas**, 402 against europe's 556, and the brief asks for South and Central
+America before North America. So this batch was taken off batch 87's own measurement: of the 241
+unheld pre-1800 americas rows, **17 lie south of 25° north**, every one already a `P361` child of a
+held umbrella and every one checked against its span first. **11 events, 7 places, +0 main.**
+
+Five of the seventeen did not become records, and **four of them for a reason no stand had
+identified before (deviation 1567)**: `wikidata-state.json`'s `done` list is never cleared, so an
+item processed once is skipped for ever — including an item whose record was afterwards removed.
+`Q113627918` *West Indies Campaign (1793–1798)* is importable today by every rule the tool has and
+was imported once before A15(8) existed, with the wrong article's lead quoted inside it (deviation
+1347); the record went and the `done` entry stayed. `Q27230923`, `Q10369402` and `Q9172888` are the
+same shape, and all three have sat open in these stands for fires. **Adding them to the seeds does
+nothing, and whether a fire may clear a `done` entry for an item with no record is a question for
+the owner.** The fifth, `Q689128` *Haitian Revolution*, was excluded by hand: the atlas holds
+`haitian-revolution-1791-1804` with no `wikidata` id, so an import would have duplicated it and it
+is a `--reconcile` candidate instead.
+
+**One edge**: `capture-of-demerara-and-essequibo --precondition-of--> treaty-of-paris-1783`, from
+the near end's own lead at revision 1370608539 — *"The Treaty of Paris in 1783 restored these
+territories to the Dutch"* — which presupposes the capture without saying the expedition brought
+the treaty about. It crosses an umbrella, and **it is the only edge of this fire that grew the
+largest connected component, 795 → 796**. That is the difference between a batch of a new
+umbrella's children and a batch of a held umbrella's, in one number.
+
+Seven candidates were refused under **A14** and none under A15(5). A reverse scan — every held lead
+read for a mention of any of the eleven — returned nothing, which is A5's problem measured on a
+batch of minor naval actions: the war's article names them and nothing else does.
+
+**Active 1,599 → 1,610; main 239 → 239; americas 402 → 413**, its eighteenth century now 95 and
+the largest pre-1800 cell in the lane. Europe **556**, unmoved for the third fire running.
+`api.php` refused **11 of 16** single-article extract requests, at 66 and again at 150 seconds
+between calls, while WDQS and the import answered everything; both edges came out of leads the import had already
+cached. The stand also measures europe's own queue for the first time: `Q164432` *Eighty Years'
+War* has **145 unheld children inside its span**, one main for up to 145 europe-lane records, and
+it is the first of the three bridges earlier stands asked for by name.
+
+**M42b batch 89 — North America before 1750, and the brief's ordering clause measured at last,
+2 October.** The brief asks for South and Central America before North America *until they hold as
+many active events as North America*, and neither pool file had ever measured that. Read by the
+latitude of each event's place, with 25° N as the Rio Grande the brief names: **South and Central
+America and the Caribbean 260, North America 77**, and 76 americas events with no place that
+carries a point, so unsplittable. **The condition has been satisfied for some time**, which means
+the 224 North American rows of batch 87's queue are open by the brief's own terms — batch 88's note
+had guessed they would be open only by exhaustion, and that guess was wrong.
+
+**Batch 89** took the 19 of those rows dated before 1750, because the americas' thinnest pre-1800
+cells are its 16th and 17th centuries and because what sits in that range is a run of wars with
+their own historiography rather than minor naval actions. **18 events, 7 places, +0 main**, thirteen
+of them under `american-indian-wars`, which had been nearly empty. `Q140468184` (the Coree War) was
+refused for having no date at all, and all three `P17` candidates were refused under A15(6) — the
+United States' 1776 inception against events ending 1645 and 1663, Canada's 1867 against 1745.
+
+**No edge, and A5 asks why.** Five candidate quotes, none writable: four are A14 (a battle's lead
+naming its own war), one is co-occurrence (*"took place on the island the same day"*), and the
+strongest — `invasion-of-georgia-1742`'s *"defeated the Spaniards at the Battle of Bloody Marsh and
+the Battle of Gully Hole Creek, **forcing them to withdraw**"*, which `statesACause` passes — is
+A14 as well, because both battles are that invasion's children. **What the sentence names as the
+effect is the withdrawal, and the atlas holds no record of it**; that is a record to write, not an
+edge to force.
+
+**Deviation 1568**, found in the fifth: `chickasaw-wars`'s lead says the wars ended *"in 1763
+according to terms of the Treaty of Paris"*, and `namesHeldEvents` returned `treaty-of-paris-1783`.
+Deviation 1481's widening strips the disambiguator and tries the bare name; deviation 1480's year
+guard then has nothing to choose between, because the atlas holds one Treaty of Paris and not two.
+**The quote states its own year and the match ignores it** — an edge written off it would have said
+a treaty of 1783 ended a war in 1763. The fix is a few lines in the caller; until then, read the
+year in the quote.
+
+One refiling: `siege-of-louisbourg-1745` arrived under the War of the Austrian Succession, which is
+what its item says, and its cited article says the siege was fought in the war *"known as King
+George's War in the British colonies"* — created in this same batch, 1744–1748, containing 1745. So
+the nearer umbrella is the parent and the wider one is dropped as redundant, which is
+`filedUnder`'s own rule applied by hand: **the import's second filing pass only revisits records
+that came out with no parent**, so a fire that creates a theatre umbrella alongside its battles
+should expect this.
+
+**Active 1,610 → 1,628; main 239 → 239; americas 413 → 431**, its 18th century now 105 and its
+17th 79. Europe **556** across all three batches of this fire. `validate --index` 0 errors at every
+commit and at this head; 1,941 pure tests and 313 browser tests pass, 0 skipped.
