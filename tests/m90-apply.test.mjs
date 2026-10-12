@@ -24,8 +24,9 @@ import { parentsOf } from '../src/parts.js';
 import {
   main, applyQueue, EXIT, NETWORK_REFUSED, REFUSE_FILE, RUN, EDGE_FLAGS,
   plainText, parseUrl, stubFetcher, articleText, edgeRecord, spanOf, parentVerdict,
-  isNetworkRefusal, isMissingRevision,
+  isNetworkRefusal, isMissingRevision, fireCitations,
 } from '../tools/queue/apply.mjs';
+import { report as cacheReport } from '../tools/cache-evidence.mjs';
 import { HttpError, BudgetError } from '../tools/import/wikidata.mjs';
 import {
   emptyQueue, verdictForEdge, writeVerdictFor, normaliseQuote, quoteFound, locatorFor,
@@ -355,6 +356,47 @@ test('an item whose lead could not be read is refused summary-missing, and nothi
   assert.ok(!(await readdir(path.join(bed.data, 'edges'))).some((name) => name.includes(EVENT)));
   // The log it wrote is one the schema and the log's own checks accept.
   assert.equal(await main(['--check', path.join(bed.data, 'imports', 'queue-log.json')]), EXIT.ok);
+  await rm(bed.dir, { recursive: true, force: true });
+});
+
+test('the recache is scoped to the fire\'s own citations', async () => {
+  const bed = await scratch();
+  const run = async (items) => {
+    await writeFile(bed.queue, `${JSON.stringify({ ...emptyQueue(), items }, null, 2)}\n`, 'utf8');
+    return applyQueue({
+      dataDir: bed.data, queueFile: bed.queue, writer: 'A', cacheDir: bed.cache,
+      fetcher: stubFetcher(STUB), offline: true,
+    });
+  };
+  const SIEGE_CAUSED = 'The siege was caused by the Fixture event, 1969, which had emptied the garrison of its own cavalry.';
+  // Two fires: the campaign first, then the siege. The second fire's recache
+  // must ask about the siege's citations and not the campaign's.
+  const first = await run([item()]);
+  assert.equal(first.exit, EXIT.ok);
+  const second = await run([item({
+    id: '2026-10-13-africa-020', qid: SIEGE, title: 'Fixture siege Z',
+    edges: [edge({ to: SIEGE, article: 'Fixture siege Z', revision: SIEGE_REVISION, quote: SIEGE_CAUSED, explanation: because(SIEGE_CAUSED) })],
+  })]);
+  assert.equal(second.exit, EXIT.ok);
+  assert.equal(second.entries[0].status, 'written');
+  const ids = fireCitations(second.entries);
+  assert.deepEqual(ids.sort(), [second.entries[0].written.event, ...second.entries[0].written.edges].sort());
+
+  // What the fire's own records cite on Wikipedia, read off disk.
+  let own = 0;
+  for (const id of ids) {
+    const dir = id.includes('--') ? 'edges' : 'events';
+    const record = await readJson(path.join(bed.data, dir, `${id}.json`));
+    own += record.sources.filter((s) => s.source === 'wikipedia-en').length;
+  }
+  assert.ok(own > 0);
+  const scoped = await cacheReport({ dataDir: bed.data, cacheDir: bed.cache, only: new Set(ids) });
+  const whole = await cacheReport({ dataDir: bed.data, cacheDir: bed.cache });
+  assert.equal(scoped.gaps.references, own);
+  assert.ok(whole.gaps.references > own, 'the unscoped report reaches the first fire\'s citations too');
+  assert.deepEqual([...scoped.cited.keys()], ['Fixture siege Z']);
+  // And the fire itself asked the scoped question: offline, the report half.
+  assert.match(second.recache, new RegExp(`citations on active records: ${own}\\b`));
   await rm(bed.dir, { recursive: true, force: true });
 });
 

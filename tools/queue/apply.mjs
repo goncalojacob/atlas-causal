@@ -30,7 +30,8 @@
 // working tree somebody can read rather than a history somebody has to undo.
 
 import path from 'node:path';
-import { readFile, writeFile, mkdir, rm } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, mkdtemp, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
 import { existsSync } from 'node:fs';
 import { execFile } from 'node:child_process';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -554,6 +555,17 @@ async function applyItem(item, {
   return entry(refusals.length ? 'partial' : 'written');
 }
 
+// The record ids a fire's citations are on: the event and the edges each entry
+// wrote. What `cache-evidence.mjs --only` is handed at the end of the fire.
+export function fireCitations(entries) {
+  const ids = new Set();
+  for (const entry of entries ?? []) {
+    if (entry?.written?.event) ids.add(entry.written.event);
+    for (const id of entry?.written?.edges ?? []) ids.add(id);
+  }
+  return [...ids];
+}
+
 // The whole fire. Returns what it did and what it would have the process exit
 // with; it writes records, the log and the index, and commits nothing.
 export async function applyQueue({
@@ -634,11 +646,22 @@ export async function applyQueue({
   if (checked.code !== 0) {
     return { exit: EXIT.hardStop, problems: [`validate --index: ${checked.stdout.trim()}\n${checked.stderr.trim()}`], entries };
   }
-  // A15(2), the last step of every batch. It needs the network, so a fire run
-  // against a stub does not pretend to have done it.
-  const recache = offline
-    ? { code: 0, stdout: 'skipped: this fire has no network of its own', stderr: '' }
-    : await run(process.execPath, [path.join(ROOT, 'tools', 'cache-evidence.mjs'), '--fill']);
+  // A15(2), the last step of every batch, over this fire's own citations
+  // (review of 12 October, finding 4): `--only` names the events and edges the
+  // fire wrote. Filling needs the network, so a fire run against a stub asks
+  // the scoped report and does not pretend to have filled anything.
+  const ids = fireCitations(entries);
+  if (ids.length === 0) {
+    return { exit: EXIT.ok, problems: [], entries, recache: 'skipped: this fire wrote no record, so it cites nothing' };
+  }
+  const scratch = await mkdtemp(path.join(tmpdir(), 'atlas-recache-'));
+  const onlyFile = path.join(scratch, 'only.json');
+  await writeFile(onlyFile, asText(ids), 'utf8');
+  const recache = await run(process.execPath, [
+    path.join(ROOT, 'tools', 'cache-evidence.mjs'), ...(offline ? [] : ['--fill']),
+    '--only', onlyFile, '--data', dataDir, '--cache', cacheDir,
+  ]);
+  await rm(scratch, { recursive: true, force: true });
   return { exit: EXIT.ok, problems: [], entries, recache: recache.stdout.trim() };
 }
 
