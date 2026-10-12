@@ -22,9 +22,11 @@ import path from 'node:path';
 import { DRAFT_AUTHOR } from '../src/review/queue.js';
 import { parentsOf } from '../src/parts.js';
 import {
-  main, EXIT, NETWORK_REFUSED, REFUSE_FILE, RUN, EDGE_FLAGS,
+  main, applyQueue, EXIT, NETWORK_REFUSED, REFUSE_FILE, RUN, EDGE_FLAGS,
   plainText, parseUrl, stubFetcher, articleText, edgeRecord, spanOf, parentVerdict,
+  isNetworkRefusal, isMissingRevision,
 } from '../tools/queue/apply.mjs';
+import { HttpError, BudgetError } from '../tools/import/wikidata.mjs';
 import {
   emptyQueue, verdictForEdge, writeVerdictFor, normaliseQuote, quoteFound, locatorFor,
 } from '../tools/queue/queue.mjs';
@@ -361,6 +363,65 @@ test('when no request leaves the sandbox the tool writes nothing and exits with 
   assert.ok(!existsSync(path.join(bed.data, 'imports', 'wikidata-state.json')));
   await rm(bed.dir, { recursive: true, force: true });
   await rm(dead, { recursive: true, force: true });
+});
+
+// The stub, with the revision fetch answered the way a real failure answers
+// it. Node's own fetch rejects a request that never left with a plain
+// `TypeError: fetch failed`, whose `code` is undefined; a 403 is a refusal
+// too. Neither is the revision not being there, so neither may become
+// `quote-not-found` and a committed log.
+function failingRevisions(fail) {
+  const stub = stubFetcher(STUB);
+  return {
+    get calls() { return stub.calls; },
+    get budget() { return stub.budget; },
+    get spent() { return stub.spent; },
+    async get(url) {
+      if (new URL(url).searchParams.get('action') === 'parse') throw fail(url);
+      return stub.get(url);
+    },
+  };
+}
+
+for (const [name, fail] of [
+  ['a plain TypeError: fetch failed', () => new TypeError('fetch failed')],
+  ['an HTTP 403', (url) => new HttpError(403, url)],
+]) {
+  test(`a revision fetch that fails with ${name} is the network exit, not quote-not-found`, async () => {
+    const bed = await scratch();
+    await writeFile(bed.queue, `${JSON.stringify({ ...emptyQueue(), items: [item()] }, null, 2)}\n`, 'utf8');
+    const result = await applyQueue({
+      dataDir: bed.data, queueFile: bed.queue, writer: 'A', cacheDir: bed.cache,
+      fetcher: failingRevisions(fail), offline: true,
+    });
+    assert.equal(result.exit, EXIT.network);
+    assert.match(result.problems[0], new RegExp(`^${NETWORK_REFUSED}:`));
+    assert.deepEqual(result.entries, []);
+    assert.ok(!existsSync(path.join(bed.data, 'imports', 'queue-log.json')), 'no log entry, so nothing to commit');
+    assert.ok(!existsSync(path.join(bed.data, 'events', `${EVENT}.json`)));
+    await rm(bed.dir, { recursive: true, force: true });
+  });
+}
+
+test('only a 404 or the API\'s own nosuchrevid says the revision is not there', () => {
+  const api = (code) => Object.assign(new Error(`x: ${code}`), { apiCode: code });
+  assert.equal(isMissingRevision(new HttpError(404, 'x')), true);
+  assert.equal(isMissingRevision(api('nosuchrevid')), true);
+  assert.equal(isMissingRevision(api('badrevids')), true);
+  for (const e of [
+    new TypeError('fetch failed'),
+    Object.assign(new TypeError('fetch failed'), { cause: Object.assign(new Error('getaddrinfo'), { code: 'ENOTFOUND' }) }),
+    new HttpError(403, 'x'), new HttpError(429, 'x'), new HttpError(503, 'x'),
+    new BudgetError(10),
+    new Error('wrapped', { cause: new HttpError(404, 'x') }),
+  ]) {
+    assert.equal(isMissingRevision(e), false, `${e.name}: ${e.message}`);
+  }
+  assert.equal(isNetworkRefusal(new TypeError('fetch failed')), true);
+  assert.equal(isNetworkRefusal(new HttpError(403, 'x')), true);
+  assert.equal(isNetworkRefusal(new BudgetError(10)), true);
+  assert.equal(isNetworkRefusal(new Error('x', { cause: new Error('socket') })), true);
+  assert.equal(isNetworkRefusal(new HttpError(404, 'x')), false);
 });
 
 test('a queue with no item for this writer stops and says so', async () => {

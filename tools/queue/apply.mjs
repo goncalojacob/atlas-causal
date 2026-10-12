@@ -75,19 +75,54 @@ export const NETWORK_REFUSED = 'network-refused';
 export const REFUSE_FILE = 'refuse-network';
 
 export class NetworkRefused extends Error {
-  constructor(message) {
-    super(message);
+  constructor(message, options) {
+    super(message, options);
     this.name = 'NetworkRefused';
   }
 }
 
+// The revision named is not there: the API answered, and the answer is that it
+// has no such revision. This and nothing else becomes `quote-not-found`.
+export class MissingRevision extends Error {
+  constructor(message) {
+    super(message);
+    this.name = 'MissingRevision';
+  }
+}
+
+// The MediaWiki API's own words for "no such revision", answered with HTTP 200
+// and an error in the body; `createFetcher` carries the code as `apiCode`.
+export const MISSING_REVISION_CODES = Object.freeze(['nosuchrevid', 'badrevids']);
+
+// Review of 12 October, finding 1. Only two answers mean the revision is not
+// there: a 404 from the revision fetch, and the API's `nosuchrevid` or
+// `badrevids`. Everything else is not an answer about the revision at all. Node's
+// `fetch` rejects a request that never left with `TypeError: fetch failed`,
+// whose `code` is undefined (the code, where there is one, is on `cause`), so a
+// list of connection codes read off the error itself never matched, and a
+// sandbox with no egress turned every edge into `quote-not-found` and exited 0
+// with a log to commit. An error carrying a `cause` is a failure underneath,
+// never the answer.
+export function isMissingRevision(error) {
+  if (error?.name === 'MissingRevision') return true;
+  if (error?.cause !== undefined) return false;
+  if (error instanceof HttpError) return error.status === 404;
+  if (error instanceof TypeError || error?.name === 'BudgetError') return false;
+  return MISSING_REVISION_CODES.includes(error?.apiCode);
+}
+
 // What the tool stops on rather than refuses an item for: a failure that is
-// not an answer. An HTTP status is an answer — 404 for a revision means that
-// revision is not there, which is one item's problem — and a connection that
-// never opened is not.
+// not an answer — a refusal of its own, a spent budget, any HTTP status but the
+// missing revision's (403, a 429 after the retries, a 5xx), a `fetch failed`, or
+// anything with a `cause`. A plain TypeError from a bug in this file is a stack
+// trace and not a network refusal, which is why the revision fetch below wraps
+// whatever it gets in a `NetworkRefused` rather than relying on this list.
 export function isNetworkRefusal(error) {
+  if (isMissingRevision(error)) return false;
   if (error?.name === 'NetworkRefused' || error?.name === 'BudgetError') return true;
-  if (error instanceof HttpError) return false;
+  if (error instanceof HttpError) return true;
+  if (error?.cause !== undefined) return true;
+  if (error instanceof TypeError && /fetch failed/i.test(error.message)) return true;
   return ['ENOTFOUND', 'EAI_AGAIN', 'ECONNREFUSED', 'ECONNRESET', 'EHOSTUNREACH',
     'ENETUNREACH', 'ETIMEDOUT', 'UND_ERR_CONNECT_TIMEOUT', 'UND_ERR_SOCKET',
   ].includes(error?.code);
@@ -145,11 +180,11 @@ export async function articleText(fetcher, revision) {
   const parsed = body?.parse ?? {};
   const html = typeof parsed.text === 'string' ? parsed.text : parsed.text?.['*'];
   if (typeof html !== 'string' || html === '') {
-    throw new HttpError(404, `no text for revision ${revision}`);
+    throw new MissingRevision(`no text for revision ${revision}`);
   }
   const got = Number(parsed.revid);
   if (Number.isInteger(got) && got !== revision) {
-    throw new HttpError(409, `the API answered revision ${got} for oldid ${revision}`);
+    throw new MissingRevision(`the API answered revision ${got} for oldid ${revision}`);
   }
   return plainText(html);
 }
@@ -341,7 +376,13 @@ async function applyItem(item, {
       try {
         texts.set(edge.revision, await articleText(fetcher, edge.revision));
       } catch (e) {
-        if (isNetworkRefusal(e)) throw e;
+        // Only the answer "no such revision" is this item's problem. Anything
+        // else — a TypeError, any other status, a spent budget, an error with
+        // a cause — is the fire's, and stops it with nothing logged.
+        if (!isMissingRevision(e)) {
+          if (e?.name === 'NetworkRefused') throw e;
+          throw new NetworkRefused(`revision ${edge.revision} of "${edge.article}" could not be fetched: ${e?.message ?? e}`, { cause: e });
+        }
         texts.set(edge.revision, null);
       }
     }
