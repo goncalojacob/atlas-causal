@@ -3,56 +3,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Review — Atlas causal</title>
+  <title>Atlas causal: Review</title>
   <link rel="stylesheet" href="src/style.css">
 </head>
 <body class="page-body">
   <header class="bar">
     <h1><a href="index.html">Atlas causal</a></h1>
-    <p class="tagline">The review queue: every record nobody has read yet, whoever wrote it, until a person reads it and signs it.</p>
-    <span id="fixtures-badge" class="fixtures-badge" hidden title="tests/fixtures/data: invented records for testing the interface">synthetic fixtures — not history</span>
+    <p class="tagline">The review queue: every record that no person has read and signed yet, whoever wrote it.</p>
+    <span id="fixtures-badge" class="fixtures-badge" hidden title="tests/fixtures/data: invented records for testing the interface">invented test data</span>
   </header>
 
   <main class="page review-page">
     <p id="deployed-banner" class="notice deployed" hidden><strong>This is the published copy of a
-    maintainer's page.</strong> Nothing on the public site can write, so every save here becomes a
-    correction bundle on your clipboard and opens the correction issue — nothing is lost, and the
-    site gains no backend. To review records into the repository, clone it, run
+    maintainer's page.</strong> The public site cannot write files. So every save here puts a
+    correction bundle on your clipboard and opens the correction issue. Nothing is lost, and the
+    site needs no server of its own. To save reviews into the repository, clone it, run
     <code>node tools/serve.mjs</code> and open
     <code>http://localhost:8000/review.html</code>.</p>
 
     <section class="prose narrow">
-      <p><strong>This page is a maintainer's tool, not part of the atlas.</strong> It is not
-      linked from the map, and it exists to retire one thing: the dated exception in
-      <code>CLAUDE.md</code> that let an assistant draft records so the interface could be built
-      against real material. Every record nobody has read yet says so — <code>review.status</code> is
-      <code>draft</code> until somebody signs it — and the queue on the left is exactly that list,
-      whoever wrote the record: a contribution or an import that arrives unread is in it too. Reading one, correcting what is wrong and signing it puts your name
-      on it and the day you read it in <code>review.signedBy</code>.</p>
+      <p><strong>This page is a tool for maintainers.</strong> The map does not link to it. It
+      exists to end one rule: the dated exception in <code>CLAUDE.md</code> that let an assistant
+      draft records, so the interface could be built and tried on real material. A record that
+      nobody has read has <code>review.status</code> set to <code>draft</code> until somebody
+      signs it. The queue on the left lists exactly those records, whoever wrote them. A
+      contribution or an import that arrives unread is in it too. When you read a record, correct
+      what is wrong and sign it, the page adds your name to the record, and your name and the
+      date to <code>review.signedBy</code>.</p>
 
       <p><strong>Saving needs the local server.</strong> Run <code>node tools/serve.mjs</code> and
-      open this page from <code>http://localhost:8000/review.html</code>: a save is validated
-      against the whole atlas before anything touches disk, the record file is rewritten and
-      <code>data/index/</code> is rebuilt. Opened any other way — under
-      <code>python3 -m http.server</code>, or on the published site, neither of which can write —
-      every save becomes a correction bundle on your clipboard and opens the correction issue
-      instead. Nothing is lost either way, and the public site never gains a backend.</p>
+      open this page at <code>http://localhost:8000/review.html</code>. There, each save first
+      checks the record against the whole atlas. Then the server rewrites the record file and
+      rebuilds <code>data/index/</code>. Neither <code>python3 -m http.server</code> nor the
+      published site can write files. Opened any other way, the page puts each save on your
+      clipboard as a correction bundle and opens the correction issue. Nothing is lost either way,
+      and the public site needs no server of its own.</p>
 
-      <p><strong>The queue is one list, in four orders.</strong> <em>flags</em> puts what the
-      validator and the drafter asked to have looked at first, <em>degree</em> what most of the
-      atlas hangs on, <em>oldest</em> what has been waiting longest, <em>kind</em> the order the
-      contribution form offers. The chips under it narrow by kind, by flag and by which writer
-      made the record. Only the rows on screen exist: the list is as long as the queue and the
-      page holds a screenful of it.</p>
+      <p><strong>The queue is one list that you can sort four ways.</strong> <em>flags</em> puts
+      first the records that the validator or the drafter flagged for a look. <em>degree</em> puts
+      first the records with the most links to the rest of the atlas. <em>oldest</em> puts first
+      the records that have waited longest. <em>kind</em> follows the order of the contribution
+      form. The chips under the list filter it by kind, by flag and by the writer who made the
+      record. The list is as long as the queue, but the page only builds the rows on screen.</p>
 
-      <p><strong>Claim a record if somebody else might be reading it too.</strong> It puts your
-      name and the day on <code>review.claimedBy</code>, it shows in the list, and it expires
-      after a week. It is not a lock — nothing refuses a save because of it — and signing takes
-      it off. Beside the record: its history, out of the repository's own commits, and, once you
-      change anything, what you have changed since the draft.</p>
+      <p><strong>Claim a record if somebody else might be reading it too.</strong> A claim puts
+      your name and the date in <code>review.claimedBy</code>. The list shows it, and it expires
+      after a week. A claim does not stop anyone else from saving. Signing the record removes it.
+      Beside the record, the page shows its history from the repository's commits. Once you change
+      anything, it also shows what you changed since the draft.</p>
 
-      <p class="hint">Keys: <kbd>j</kbd> and <kbd>k</kbd> (or the arrows) walk the queue,
-      <kbd>ctrl</kbd>+<kbd>s</kbd> saves, <kbd>ctrl</kbd>+<kbd>enter</kbd> signs.</p>
+      <p class="hint">Keys: <kbd>j</kbd> and <kbd>k</kbd> (or the arrow keys) move through the
+      queue. <kbd>ctrl</kbd>+<kbd>s</kbd> saves. <kbd>ctrl</kbd>+<kbd>enter</kbd> signs.</p>
     </section>
 
     <div id="dashboard" class="dashboard-mount"></div>
