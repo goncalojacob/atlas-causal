@@ -313,13 +313,13 @@ test('a reviewer can set an event\'s category, and the diff says so', { skip }, 
       path.join(ROOT, 'data', 'events', '1908-portuguese-legislative-election.json'), 'utf8'));
     assert.equal(opened.category, 'election', 'the record the queue opens on');
     assert.equal(drawn.category, opened.category, 'the select shows the record\'s own category');
-    assert.equal(drawn.blank, '— not said —');
+    assert.equal(drawn.blank, '(not said)');
     // M32b-1: the role is a closed list, since a role outside
     // `data/roles.json` is rule 25 and the dashboard must not offer what the
     // validator would refuse. The note beside it is where free text went.
     const roles = JSON.parse(await readFile(path.join(ROOT, 'data', 'roles.json'), 'utf8'));
     assert.deepEqual(drawn.roleOptions, ['', ...roles.map((r) => r.id)]);
-    assert.equal(drawn.roleBlank, '— no role —');
+    assert.equal(drawn.roleBlank, '(no role)');
     assert.equal(drawn.roleTitle, roles[0].description, 'what the role covers, from data/');
     assert.equal(drawn.roleIsFreeText, false, 'a role cannot be typed here either');
     assert.ok(drawn.noteBox, 'the note beside the role');

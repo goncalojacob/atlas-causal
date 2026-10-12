@@ -394,7 +394,7 @@ test('the form writes an event\'s parent, reach, category and an actor\'s note',
     // adding one is an edit to that file (plan decision 13).
     const categories = JSON.parse(await readFile(path.join(ROOT, 'data', 'categories.json'), 'utf8'));
     assert.deepEqual(drawn.categories, ['', ...categories.map((c) => c.id)]);
-    assert.equal(drawn.categoryLabels[0], '— not said —');
+    assert.equal(drawn.categoryLabels[0], '(not said)');
     assert.equal(drawn.categoryLabels[1], categories[0].label);
 
     // M32b-1: the role is a closed list and no longer a suggestion, because a
@@ -420,7 +420,7 @@ test('the form writes an event\'s parent, reach, category and an actor\'s note',
     // Blank first, so an unfilled row is still unfilled and reports at
     // /actors/0/role rather than quietly taking the first role in the file.
     assert.deepEqual(row.options, ['', ...roles.map((r) => r.id)]);
-    assert.equal(row.optionLabels[0], '— no role —');
+    assert.equal(row.optionLabels[0], '(no role)');
     assert.equal(row.optionLabels[1], roles[0].label);
     assert.equal(row.titles[1], roles[0].description, 'what the role covers, from data/');
 
