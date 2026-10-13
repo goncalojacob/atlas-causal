@@ -36,6 +36,7 @@ export const IMPORT_SCHEMAS = Object.freeze({
   'import-places': 'v1/import-places.json',
   [QUEUE_KIND]: QUEUE_SCHEMA,
   [LOG_KIND]: LOG_SCHEMA,
+  'rewrite-cursor': 'import/rewrite-cursor.json',
 });
 
 // Which of those kinds cites a **source record**. The three above do: their
