@@ -128,6 +128,10 @@ test('an umbrella is not a claim: this pass wrote no edge on to one', async () =
   const ids = new Set(umbrellas.map((u) => u.id));
   for (const edge of edges) {
     if (edge.status !== 'active') continue;
+    // Since 13 October 2026 (A16, A17) an edge written from a verified sentence
+    // may run to an umbrella: the writer's tool flags such an edge `queued`.
+    // This test keeps its old meaning for every other edge.
+    if ((edge.review?.flags ?? []).includes('queued')) continue;
     for (const end of [edge.from, edge.to]) {
       assert.ok(!ids.has(end), `edge "${edge.id}" runs to the umbrella "${end}", which is a display fact and not an argument`);
     }

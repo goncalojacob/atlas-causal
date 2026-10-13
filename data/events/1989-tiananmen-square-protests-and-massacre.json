@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "1989-tiananmen-square-protests-and-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q99717",
+  "sitelinks": {
+    "count": 85,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "1989 Tiananmen Square protests and massacre",
+    "pt": "Massacre da Praça da Paz Celestial em 1989"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q99717"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1989 Tiananmen Square protests and massacre\", revision 1379982985"
+    }
+  ],
+  "title": "1989 Tiananmen Square protests and massacre",
+  "summary": "The English Wikipedia article \"1989 Tiananmen Square protests and massacre\", at revision 1379982985, opens: \"Protests led by students and workers, known in China as the June Fourth Incident, were held in Tiananmen Square in Beijing, China, from 15 April to 4 June 1989. After weeks of unsuccessful attempts between the demonstrators and the Chinese government to find a peaceful resolution, the Chinese government initiated martial law in late May and deployed troops to occupy the square on the night of 3 June in what is referred to as the Tiananmen Square massacre. The events are sometimes called the '89 Democracy Movement, the Tiananmen Square Incident, or the Tiananmen uprising. The Chinese government terms the events the political turmoil between the spring and summer of 1989.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q99717, imported by tools/import/wikidata.mjs. The item's own description reads \"Chinese pro-democracy movement and subsequent massacre\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1989,
+    "end": 1989,
+    "date": "1989-04-15",
+    "endDate": "1989-06-04"
+  },
+  "place": "tiananmen-square",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "cold-war"
+}

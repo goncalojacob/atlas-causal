@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "scramble-for-africa--world-war-i--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": "2026-10-13",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Scramble for Africa\", revision 1373841219"
+    }
+  ],
+  "from": "scramble-for-africa",
+  "to": "world-war-i",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article \"Scramble for Africa\" (revision 1373841219) states: \"The tensions between the imperial powers led to a succession of crises, which exploded in August 1914, when previous rivalries and alliances created a domino situation that drew the major European nations into World War I.\" The tensions are the scramble's own, in the scramble's own article; precondition-of and not caused, because the sentence makes the rivalry what the crises grew out of.",
+  "dispute": null
+}

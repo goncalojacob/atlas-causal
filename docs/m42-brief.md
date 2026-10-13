@@ -638,3 +638,5 @@ are children of the main events."* Three things follow.
 
 M91 is the tooling: a queue item may carry no edge, the writer imports it
 regardless, and the duplicate check reads titles as well as ids.
+
+Also under A17: an umbrella may receive an edge where an article states the link, written by the writer's tool from a verified sentence and flagged `queued`. The M42 filing pass's own test keeps its rule for every other edge.

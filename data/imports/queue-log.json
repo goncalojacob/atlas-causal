@@ -453,6 +453,18 @@
       "refusals": []
     },
     {
+      "id": "2026-10-13-americas-038",
+      "writer": "B",
+      "fired": "2026-10-13T03:43Z",
+      "status": "written",
+      "written": {
+        "event": "operation-condor",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
       "id": "2026-10-13-asia-013",
       "writer": "A",
       "fired": "2026-10-13T03:22Z",
@@ -571,6 +583,138 @@
         "event": "1976-tangshan-earthquake",
         "edges": [],
         "place": "tangshan"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-023",
+      "writer": "A",
+      "fired": "2026-10-13T04:23Z",
+      "status": "written",
+      "written": {
+        "event": "reform-and-opening-up",
+        "edges": [
+          "cultural-revolution--reform-and-opening-up--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-024",
+      "writer": "A",
+      "fired": "2026-10-13T04:23Z",
+      "status": "written",
+      "written": {
+        "event": "1989-tiananmen-square-protests-and-massacre",
+        "edges": [],
+        "place": "tiananmen-square"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-025",
+      "writer": "A",
+      "fired": "2026-10-13T04:23Z",
+      "status": "written",
+      "written": {
+        "event": "2004-indian-ocean-earthquake-and-tsunami",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-026",
+      "writer": "A",
+      "fired": "2026-10-13T04:23Z",
+      "status": "written",
+      "written": {
+        "event": "indian-rebellion-of-1857",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-027",
+      "writer": "A",
+      "fired": "2026-10-13T04:23Z",
+      "status": "written",
+      "written": {
+        "event": "1970-bhola-cyclone",
+        "edges": [
+          "1970-bhola-cyclone--bangladesh-liberation-war--enabled"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-028",
+      "writer": "A",
+      "fired": "2026-10-13T04:23Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q185729: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-13-europe-029",
+      "writer": "A",
+      "fired": "2026-10-13T04:23Z",
+      "status": "written",
+      "written": {
+        "event": "greek-war-of-independence",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-africa-039",
+      "writer": "A",
+      "fired": "2026-10-13T04:23Z",
+      "status": "written",
+      "written": {
+        "event": "decolonisation-of-africa",
+        "edges": [
+          "world-war-ii--decolonisation-of-africa--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-africa-040",
+      "writer": "A",
+      "fired": "2026-10-13T04:23Z",
+      "status": "written",
+      "written": {
+        "event": "scramble-for-africa",
+        "edges": [
+          "independence-of-brazil-1822--scramble-for-africa--caused",
+          "scramble-for-africa--world-war-i--precondition-of"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-041",
+      "writer": "A",
+      "fired": "2026-10-13T04:23Z",
+      "status": "written",
+      "written": {
+        "event": "12-3-incident",
+        "edges": [
+          "12-3-incident--macau-handover-1999--precondition-of"
+        ],
+        "place": null
       },
       "refusals": []
     }
