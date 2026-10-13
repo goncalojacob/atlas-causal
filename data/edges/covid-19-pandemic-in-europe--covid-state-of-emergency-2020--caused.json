@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -37,6 +37,6 @@
   "to": "covid-state-of-emergency-2020",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "Portugal confirmed its first cases on 2 March 2020, closed the schools on the 16th and had a state of emergency declared on the 18th — the first under the constitution of 1976 — with the epidemic in Spain a fortnight ahead of its own and Italy's hospitals already overwhelmed. The decision was taken on what was happening in Europe rather than on what had yet happened here: the Portuguese curve at the moment of the declaration was small, and the argument made for the measures was explicitly that Italy and Spain showed what the following fortnight would look like.",
+  "explanation": "Portugal confirmed its first cases on 2 March 2020 and closed the schools on the 16th. The president declared a state of emergency on the 18th, the first under the constitution of 1976. By then the epidemic in Spain was a fortnight ahead of Portugal's own and Italy's hospitals were already full. The government decided on what was happening in Europe rather than on what had happened in Portugal. The Portuguese count was small on the day of the declaration, and the argument for the measures was that Italy and Spain showed what the next fortnight would look like.",
   "dispute": null
 }

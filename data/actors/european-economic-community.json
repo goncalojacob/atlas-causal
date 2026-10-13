@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-29",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -63,7 +63,7 @@
     "CEE",
     "Common Market"
   ],
-  "summary": "The English Wikipedia article \"European Economic Community\", at revision 1368502841, opens: \"The European Economic Community (EEC) was a regional organisation created by the Treaty of Rome of 1957, aiming to foster economic integration among its member states. It was subsequently renamed the European Community (EC) upon becoming integrated into the first pillar of the newly formed European Union (EU) in 1993. In the popular language, the singular European Community was sometimes inaccurately used in the wider sense of the plural European Communities, in spite of the latter designation covering all the three constituent entities of the first pillar.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. A polity whose inception Wikidata states as 1958-01-01 on Q52847 and whose dissolution it states as 2009-12-01. Q52847 carries no area and no population, so neither is given here rather than a figure with no year against it (deviation 1412). The community founded by the Treaty of Rome in 1957, which Portugal applied to join in 1977 and entered in 1986. It became the European Union under the Maastricht Treaty in 1993.",
+  "summary": "The English Wikipedia article \"European Economic Community\", at revision 1368502841, opens: \"The European Economic Community (EEC) was a regional organisation created by the Treaty of Rome of 1957, aiming to foster economic integration among its member states. It was subsequently renamed the European Community (EC) upon becoming integrated into the first pillar of the newly formed European Union (EU) in 1993. In the popular language, the singular European Community was sometimes inaccurately used in the wider sense of the plural European Communities, in spite of the latter designation covering all the three constituent entities of the first pillar.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. A polity whose inception Wikidata states as 1958-01-01 on Q52847 and whose dissolution it states as 2009-12-01. Q52847 carries no area and no population, so this record gives neither rather than a figure with no year against it (deviation 1412). The community founded by the Treaty of Rome in 1957, which Portugal applied to join in 1977 and entered in 1986. It became the European Union under the Maastricht Treaty in 1993.",
   "when": {
     "start": 1957,
     "end": 1993

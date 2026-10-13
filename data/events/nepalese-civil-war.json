@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -25,7 +25,7 @@
   },
   "retraction": {
     "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 15 under brief §1: the record earns no honest edge. The English article, at revision 1375833499, has no background section at all: its § Overview begins with the United Left Front of January 1990 and runs through the Nepali Congress, the United National People's Movement, the Communist Party of Nepal (Unity Centre) and the United People's Front of Nepal, and its timeline is year by year from 1996. Every actor and every event in it is Nepali and none is a record here; the atlas's South Asian records are the partition of India, the Indo-Pakistani wars, Kargil and the Sino-Indian war, and the article mentions none of them. It waits on any Nepali or Himalayan neighbour."
+    "reason": "Retracted in M42 batch 15 under brief §1: the record earns no honest edge. The English article, at revision 1375833499, has no background section at all. Its § Overview begins with the United Left Front of January 1990 and runs through the Nepali Congress, the United National People's Movement, the Communist Party of Nepal (Unity Centre) and the United People's Front of Nepal, and its timeline is year by year from 1996. Every actor and every event in it is Nepali and none is a record here. The atlas's South Asian records are the partition of India, the Indo-Pakistani wars, Kargil and the Sino-Indian war, and the article mentions none of them. The record waits on any Nepali or Himalayan neighbour."
   },
   "wikidata": "Q2002975",
   "wikipedia": {
@@ -52,6 +52,6 @@
   },
   "place": null,
   "region": "asia",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
   "actors": []
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -25,7 +25,7 @@
   },
   "retraction": {
     "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 16 under brief §1: the record earns no honest edge, which is the surprise of the batch. The English article, at revision 1374738410, is two hundred and twenty-six kilobytes and its background section is titled \"Background of discontent with General National Congress\": it argues the war of 2014 out of the GNC elected in 2012, the failure of its parties to compromise, the political isolation law and the extension of its own mandate — and **it never argues a line back to the war of 2011**, which this atlas holds as `libyan-civil-war`. The only mention of the earlier war is a hatnote distinguishing the two articles, and a hatnote is not a claim. Writing the obvious edge would be this run's inference. It waits on a page that argues the second Libyan war out of the first."
+    "reason": "Retracted in M42 batch 16 under brief §1: the record earns no honest edge, which is the surprise of the batch. The English article, at revision 1374738410, runs to two hundred and twenty-six kilobytes and its background section is titled \"Background of discontent with General National Congress\". It argues the war of 2014 out of the GNC elected in 2012, the failure of its parties to compromise, the political isolation law and the extension of its own mandate. **It never argues a line back to the war of 2011**, which this atlas holds as `libyan-civil-war`. The only mention of the earlier war is a hatnote distinguishing the two articles, and a hatnote is not a claim. Writing the obvious edge would be this run's own inference. The record waits on a page that argues the second Libyan war out of the first."
   },
   "wikidata": "Q16911838",
   "wikipedia": {
@@ -52,6 +52,6 @@
   },
   "place": null,
   "region": "africa",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
   "actors": []
 }

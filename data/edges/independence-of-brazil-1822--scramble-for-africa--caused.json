@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "independence-of-brazil-1822--scramble-for-africa--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": "2026-10-13",
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Scramble for Africa\", revision 1373841219"
+    }
+  ],
+  "from": "independence-of-brazil-1822",
+  "to": "scramble-for-africa",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article \"Scramble for Africa\" (revision 1373841219) states: \"After the Independence of Brazil in 1822, Portugal sought to protect, develop and expand its remaining overseas territories in order to compensate for the loss of Brazilian trade and revenue and its international standing, leading to an aggressive expansion of its Angolan and Mozambican territories.\" The expansion it names is Portugal's share of the scramble, which is what this record holds; the edge reads that sentence and nothing more.",
+  "dispute": null
+}

@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -73,7 +73,7 @@
     {
       "actor": "japan",
       "role": "belligerent",
-      "note": "Q4311063 gives the Empire of Japan (Q188712) as a participant; russo-japanese-war and battle-of-port-arthur read the same item as `japan`"
+      "note": "Q4311063 gives the Empire of Japan (Q188712) as a participant. russo-japanese-war and battle-of-port-arthur read the same item as `japan`"
     }
   ]
 }

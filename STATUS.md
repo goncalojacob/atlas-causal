@@ -25820,10 +25820,25 @@ place, and says so on stdout. **No record was written** and there is no display 
 2,008 pass. `validate --index` shows 0 errors at every commit.
 
 M92 done
-Writer A started 2026-10-13T03:21:37Z by scheduled
-
-Writer A 2026-10-13T03:25:49Z: 10 written, 0 partial, 0 refused, 0 skipped
 
 Rewriter started 2026-10-13T02:52:00Z by scheduled
 
 Rewriter 2026-10-13T03:15:45Z: 2384 records rewritten, 34 left, 3638 of 4940 done
+
+Writer A started 2026-10-13T04:22:04Z by scheduled
+
+Writer A 2026-10-13T04:27:02Z: 9 written, 0 partial, 1 refused, 0 skipped
+Writer A started 2026-10-13T03:21:37Z by scheduled
+
+Writer A 2026-10-13T03:25:49Z: 10 written, 0 partial, 0 refused, 0 skipped
+
+Writer B started 2026-10-13T03:42:21Z by scheduled
+
+Writer B 2026-10-13T03:46:04Z: 1 written, 0 partial, 0 refused, 0 skipped
+
+Writer B started 2026-10-13T04:46:09Z by scheduled
+Rewriter started 2026-10-13T03:53:02Z by scheduled
+
+Rewriter 2026-10-13T04:12:58Z: 219 records rewritten, 131 left, 3685 of 4940 done
+
+Rewriter started 2026-10-13T04:52:49Z by scheduled

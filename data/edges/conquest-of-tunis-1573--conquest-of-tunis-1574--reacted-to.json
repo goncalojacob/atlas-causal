@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-01",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -38,6 +38,6 @@
   "to": "conquest-of-tunis-1574",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "The Ottoman fleet of 1574 came to take back what Spain had taken the year before. “Conquest of Tunis (1574)”, at revision 1370612776, opens: “The conquest of Tunis in 1574 marked the conquest of Tunis by the Ottoman Empire over the Spanish Empire, which had seized the place a year earlier.” Its § Background names the seizure answered: “in the aftermath of the 1571 Christian victory at the Battle of Lepanto, John of Austria re-conquered Tunis in October 1573.” The second author, “Conquest of Tunis (1573)” at revision 1370612771, § Consequences, reports the answer and the opening it used: “However, Occhiali would retake Tunis the following year due to the disbanding of the Spanish fleet.” The type is `reacted-to`, the retaking of a place lost; the second article’s “due to” names the disbanding of the Spanish fleet, which is an opportunity and not an event this atlas holds, so it is quoted for the fact of the retaking and not as the cause. `probable`, on the articles alone (rule 22).",
+  "explanation": "The Ottoman fleet of 1574 came to take back what Spain had taken the year before. “Conquest of Tunis (1574)”, at revision 1370612776, opens: “The conquest of Tunis in 1574 marked the conquest of Tunis by the Ottoman Empire over the Spanish Empire, which had seized the place a year earlier.” Its § Background names the seizure answered: “in the aftermath of the 1571 Christian victory at the Battle of Lepanto, John of Austria re-conquered Tunis in October 1573.” The second author, “Conquest of Tunis (1573)” at revision 1370612771, § Consequences, reports the answer and the opening it used: “However, Occhiali would retake Tunis the following year due to the disbanding of the Spanish fleet.” The type is `reacted-to`, the retaking of a place lost. The second article’s “due to” names the disbanding of the Spanish fleet, which is an opportunity and no event this atlas holds, so the passage is quoted for the fact of the retaking rather than for the cause. The confidence is `probable`, on the articles alone (rule 22).",
   "dispute": null
 }

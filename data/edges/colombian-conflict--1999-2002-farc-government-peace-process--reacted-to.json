@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "1999-2002-farc-government-peace-process",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "The process’s own first sentence says what it was answering: it \"was a failed peace process between the Government of President Andrés Pastrana Arango and the Revolutionary Armed Forces of Colombia (FARC) guerrilla group in an effort to bring to an end the ongoing Colombian armed conflict.\" A peace process is what a war is answered with, which is what `reacted-to` says in this vocabulary, and the atlas already holds the conflict it answers. This is the same reading, and the same direction, as the edge the atlas already carries between the conflict and the 2012–2016 negotiations; the two processes are seventeen years apart and the article calls this one failed, which is part of why the atlas holds both. `probable` and not `consensus`: rule 22 refuses `consensus` on a Wikipedia citation.",
+  "explanation": "The process’s own first sentence says what it was answering: it \"was a failed peace process between the Government of President Andrés Pastrana Arango and the Revolutionary Armed Forces of Colombia (FARC) guerrilla group in an effort to bring to an end the ongoing Colombian armed conflict.\" A peace process answers a war, which is what `reacted-to` says in this vocabulary, and the atlas already holds the conflict it answers. This reads the same way, and runs the same direction, as the edge the atlas already carries between the conflict and the 2012–2016 negotiations. The two processes are seventeen years apart and the article calls this one failed, which is part of why the atlas holds both. The confidence is `probable` because rule 22 refuses `consensus` on a Wikipedia citation.",
   "dispute": null
 }

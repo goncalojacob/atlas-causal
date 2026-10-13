@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-ifoghas",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The battle was fought by two columns and one of them was Chad's: \"France was also seeking the help of Chad's President Idriss Déby. He agreed to deploy his army in the Adrar of Ifoghas. On February 3, the first Chadian soldiers arrived in Kidal.\" The article's own account of the fighting has the valley \"caught between two armored columns, one French to the west and another Chadian to the east\". The Chadian article says it from its side: on 22 February \"the Chadian army launched a joint military operation with the support of French war jets on an Islamists base said to be of 'significant importance' ... hidden in the mountains of the Adrar des Ifoghas\". Probable: Wikipedia alone.",
+  "explanation": "The battle was fought by two columns and one of them was Chad's: \"France was also seeking the help of Chad's President Idriss Déby. He agreed to deploy his army in the Adrar of Ifoghas. On February 3, the first Chadian soldiers arrived in Kidal.\" The article's own account of the fighting has the valley \"caught between two armored columns, one French to the west and another Chadian to the east\". The Chadian article says the same from its own side. On 22 February \"the Chadian army launched a joint military operation with the support of French war jets on an Islamists base said to be of 'significant importance' ... hidden in the mountains of the Adrar des Ifoghas\". The confidence is `probable` because Wikipedia is the only source.",
   "dispute": null
 }

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "world-war-ii--decolonisation-of-africa--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Decolonisation of Africa\", revision 1379719162"
+    }
+  ],
+  "from": "world-war-ii",
+  "to": "decolonisation-of-africa",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article \"Decolonisation of Africa\" (revision 1379719162) states: \"Italy, a colonial power, lost its African empire, Italian East Africa, Italian Ethiopia, Italian Eritrea, Italian Somalia and Italian Libya, as a result of World War II.\" The loss it names is part of what this record is: the edge reads that sentence and nothing more, and the scope the sentence gives it is Italy's empire.",
+  "dispute": null
+}

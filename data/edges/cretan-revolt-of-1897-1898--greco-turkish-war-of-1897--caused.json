@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "greco-turkish-war-of-1897",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The war's own lead names the cause: \"Its immediate cause involved the status of the Ottoman province of Crete, whose Greek-majority population had long desired union with Greece.\" The revolt is where that status was contested: its article has Greek volunteers and a Greek expeditionary force on the island from February 1897, and then, under \"Ottoman intervention\", \"On April 17, 1897, the Ottoman Empire officially declared war on Greece.\" So the insurrection on Crete is what the declaration of war answered, and the two articles state the halves of that between them. It is `probable` and not `consensus` because neither article writes the sentence in one piece — the join is made here — and because rule 22 will not let two Wikipedia citations carry `consensus` anyway. The edge does not say the revolt decided the war: the fighting was in Thessaly and the revolt outlived it by a year, which is also why the revolt is not filed as part of it.",
+  "explanation": "The war's own lead names the cause: \"Its immediate cause involved the status of the Ottoman province of Crete, whose Greek-majority population had long desired union with Greece.\" The revolt is where that status came under contest. Its article has Greek volunteers and a Greek expeditionary force on the island from February 1897, and then, under \"Ottoman intervention\", \"On April 17, 1897, the Ottoman Empire officially declared war on Greece.\" So the insurrection on Crete is what the declaration of war answered, and the two articles state the halves of that between them. The confidence is `probable` because neither article writes the sentence in one piece, so this edge makes the join, and because rule 22 will not let two Wikipedia citations carry `consensus`. The edge does not say the revolt decided the war. The fighting was in Thessaly and the revolt outlived it by a year, which is also why the atlas does not file the revolt as part of the war.",
   "dispute": null
 }

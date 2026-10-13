@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant",
     "run": "m57"
@@ -38,6 +38,6 @@
   "to": "petrobras-1953",
   "type": "inspired",
   "confidence": "probable",
-  "explanation": "The second state company follows the first, and the argument for it was the argument the first had won: a strategic industry Brazil could not finance privately should be held by the state. CSN was created by Vargas’s decree and owned by the state for fifty years; Petrobras was created by a law Vargas sanctioned, against a draft statute of 1948 that would have opened oil to private capital at a time when world production was dominated by the Seven Sisters. `inspired` and not `caused`: what carried Law 2,004 was the campaign in the streets, and the precedent is what it had to point at.",
+  "explanation": "The second state company follows the first, and the argument for it was the argument the first had won. An industry Brazil could not finance with private money should belong to the state. Vargas created CSN by decree and the state owned it for fifty years. Vargas sanctioned the law that created Petrobras, against a draft statute of 1948 that would have opened oil to private capital at a time when the Seven Sisters held most of world production. The type is `inspired` because the campaign in the streets is what carried Law 2,004, and the precedent is what that campaign had to point at.",
   "dispute": null
 }
