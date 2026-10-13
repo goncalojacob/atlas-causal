@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "camp-dubois",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2935211",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Camp Dubois"
+  },
+  "sources": [],
+  "names": [
+    "Camp Dubois"
+  ],
+  "where": {
+    "lon": -90.10125,
+    "lat": 38.80272222222222,
+    "precision": "city",
+    "label": "Camp Dubois"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
