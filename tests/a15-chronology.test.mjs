@@ -182,6 +182,10 @@ test('how far apart two spans are, and zero for spans that touch', () => {
   assert.equal(yearsApart({ start: 1973, end: null }, { start: 1973, end: null }), 0);
   assert.equal(yearsApart(null, { start: 1900, end: 1900 }), null);
   assert.equal(yearsApart({ start: null }, { start: 1900 }), null);
+  // M92: a ranged bound is read from its earliest start to its latest end.
+  assert.equal(yearsApart({ start: { min: 1500, max: 1599 }, end: { min: 1800, max: 1899 } }, { start: 1620, end: 1620 }), 0);
+  assert.equal(yearsApart({ start: { min: 1500, max: 1599 }, end: null }, { start: 1620, end: 1620 }), 21);
+  assert.equal(yearsApart({ start: 1400, end: 1400 }, { start: { min: 1500, max: 1599 }, end: null }), 100);
 });
 
 test('the same bare name naming two held events keeps the one the years fit', () => {

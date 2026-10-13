@@ -184,9 +184,12 @@ export function undisambiguated(name) {
 // for. Distance and not overlap, so two homonyms that both miss the subject's
 // span are still ranked rather than both dropped.
 export function yearsApart(a, b) {
+  // M92: a ranged bound is read from its earliest start to its latest end.
+  const low = (b) => (Number.isInteger(b) ? b : Number.isInteger(b?.min) ? b.min : null);
+  const high = (b) => (Number.isInteger(b) ? b : Number.isInteger(b?.max) ? b.max : null);
   const span = (w) => {
-    const start = Number.isInteger(w?.start) ? w.start : null;
-    const end = Number.isInteger(w?.end) ? w.end : start;
+    const start = low(w?.start);
+    const end = high(w?.end) ?? high(w?.start);
     return start === null ? null : { start, end: end ?? start };
   };
   const one = span(a);
