@@ -4076,6 +4076,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-13",
+      "degree": 1,
+      "id": "central-asia",
+      "kind": "place",
+      "names": [
+        "Central Asia",
+        "Ásia Central"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -6656,7 +6684,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "empire-of-japan",
       "kind": "place",
       "names": [
@@ -17197,7 +17225,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "people-s-republic-of-china",
       "kind": "place",
       "names": [
@@ -18552,7 +18580,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "qing-dynasty",
       "kind": "place",
       "names": [
@@ -22745,6 +22773,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-13",
+      "degree": 1,
+      "id": "tangshan",
+      "kind": "place",
+      "names": [
+        "Tangshan"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [

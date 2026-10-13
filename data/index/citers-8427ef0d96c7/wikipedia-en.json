@@ -5432,6 +5432,12 @@
     },
     {
       "dissent": false,
+      "id": "great-leap-forward--cultural-revolution--caused",
+      "kind": "edge",
+      "locator": "\"Great Leap Forward\", revision 1379962036"
+    },
+    {
+      "dissent": false,
       "id": "great-siege-of-gibraltar--action-of-16-march-1782--precondition-of",
       "kind": "edge",
       "locator": "\"Action of 16 March 1782\", revision 1370425998"
@@ -10196,6 +10202,12 @@
     },
     {
       "dissent": false,
+      "id": "1931-china-floods",
+      "kind": "event",
+      "locator": "\"1931 China floods\", revision 1379366125"
+    },
+    {
+      "dissent": false,
       "id": "1938-yellow-river-flood",
       "kind": "event",
       "locator": "\"1938 Yellow River flood\", revision 1364493860"
@@ -10355,6 +10367,12 @@
       "id": "1976-portuguese-local-elections",
       "kind": "event",
       "locator": "\"1976 Portuguese local elections\", revision 1368844806"
+    },
+    {
+      "dissent": false,
+      "id": "1976-tangshan-earthquake",
+      "kind": "event",
+      "locator": "\"1976 Tangshan earthquake\", revision 1377714953"
     },
     {
       "dissent": false,
@@ -15308,6 +15326,12 @@
     },
     {
       "dissent": false,
+      "id": "first-opium-war",
+      "kind": "event",
+      "locator": "\"First Opium War\", revision 1379278395"
+    },
+    {
+      "dissent": false,
       "id": "first-portuguese-republic-1910-1926",
       "kind": "event",
       "locator": "\"First Portuguese Republic\", revision 1370244290"
@@ -15557,6 +15581,18 @@
       "id": "great-depression",
       "kind": "event",
       "locator": "\"Great Depression\", revision 1371653684: \"a severe global economic downturn from 1929 to 1939\""
+    },
+    {
+      "dissent": false,
+      "id": "great-game",
+      "kind": "event",
+      "locator": "\"Great Game\", revision 1379870317"
+    },
+    {
+      "dissent": false,
+      "id": "great-leap-forward",
+      "kind": "event",
+      "locator": "\"Great Leap Forward\", revision 1379962036"
     },
     {
       "dissent": false,
@@ -16442,6 +16478,12 @@
     },
     {
       "dissent": false,
+      "id": "meiji-restoration",
+      "kind": "event",
+      "locator": "\"Meiji Restoration\", revision 1377201892"
+    },
+    {
+      "dissent": false,
       "id": "merger-treaty",
       "kind": "event",
       "locator": "\"Merger Treaty\", revision 1340086782"
@@ -16559,6 +16601,12 @@
       "id": "myanmar-conflict",
       "kind": "event",
       "locator": "\"Myanmar conflict\", revision 1376655457"
+    },
+    {
+      "dissent": false,
+      "id": "nanjing-massacre",
+      "kind": "event",
+      "locator": "\"Nanjing Massacre\", revision 1378219981"
     },
     {
       "dissent": false,
@@ -16997,6 +17045,12 @@
       "id": "pequot-war",
       "kind": "event",
       "locator": "\"Pequot War\", revision 1377973687"
+    },
+    {
+      "dissent": false,
+      "id": "persian-constitutional-revolution",
+      "kind": "event",
+      "locator": "\"Persian Constitutional Revolution\", revision 1378517283"
     },
     {
       "dissent": false,
@@ -17687,6 +17741,12 @@
       "id": "second-mobutu-coup-detat",
       "kind": "event",
       "locator": "\"Second Mobutu coup d'état\", revision 1371883429"
+    },
+    {
+      "dissent": false,
+      "id": "second-opium-war",
+      "kind": "event",
+      "locator": "\"Second Opium War\", revision 1379876059"
     },
     {
       "dissent": false,
@@ -18797,6 +18857,12 @@
       "id": "taif-agreement",
       "kind": "event",
       "locator": "\"Taif Agreement\", revision 1369818876"
+    },
+    {
+      "dissent": false,
+      "id": "taiping-rebellion",
+      "kind": "event",
+      "locator": "\"Taiping Rebellion\", revision 1379793931"
     },
     {
       "dissent": false,

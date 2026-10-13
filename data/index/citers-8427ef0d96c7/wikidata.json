@@ -1844,6 +1844,12 @@
     },
     {
       "dissent": false,
+      "id": "1931-china-floods",
+      "kind": "event",
+      "locator": "Q1150973"
+    },
+    {
+      "dissent": false,
       "id": "1938-yellow-river-flood",
       "kind": "event",
       "locator": "Q129151"
@@ -2003,6 +2009,12 @@
       "id": "1976-portuguese-local-elections",
       "kind": "event",
       "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "1976-tangshan-earthquake",
+      "kind": "event",
+      "locator": "Q462195"
     },
     {
       "dissent": false,
@@ -7058,6 +7070,12 @@
     },
     {
       "dissent": false,
+      "id": "first-opium-war",
+      "kind": "event",
+      "locator": "Q191282"
+    },
+    {
+      "dissent": false,
       "id": "first-portuguese-republic-1910-1926",
       "kind": "event",
       "locator": "Q167360"
@@ -7307,6 +7325,18 @@
       "id": "great-depression",
       "kind": "event",
       "locator": "Q8698"
+    },
+    {
+      "dissent": false,
+      "id": "great-game",
+      "kind": "event",
+      "locator": "Q216702"
+    },
+    {
+      "dissent": false,
+      "id": "great-leap-forward",
+      "kind": "event",
+      "locator": "Q58715"
     },
     {
       "dissent": false,
@@ -8240,6 +8270,12 @@
     },
     {
       "dissent": false,
+      "id": "meiji-restoration",
+      "kind": "event",
+      "locator": "Q8707"
+    },
+    {
+      "dissent": false,
       "id": "merger-treaty",
       "kind": "event",
       "locator": "Q622766"
@@ -8387,6 +8423,12 @@
       "id": "myanmar-conflict",
       "kind": "event",
       "locator": "Q852088"
+    },
+    {
+      "dissent": false,
+      "id": "nanjing-massacre",
+      "kind": "event",
+      "locator": "Q192055"
     },
     {
       "dissent": false,
@@ -8825,6 +8867,12 @@
       "id": "pequot-war",
       "kind": "event",
       "locator": "Q1207617"
+    },
+    {
+      "dissent": false,
+      "id": "persian-constitutional-revolution",
+      "kind": "event",
+      "locator": "Q4818171"
     },
     {
       "dissent": false,
@@ -9527,6 +9575,12 @@
       "id": "second-mobutu-coup-detat",
       "kind": "event",
       "locator": "Q125549056"
+    },
+    {
+      "dissent": false,
+      "id": "second-opium-war",
+      "kind": "event",
+      "locator": "Q418151"
     },
     {
       "dissent": false,
@@ -10643,6 +10697,12 @@
       "id": "taif-agreement",
       "kind": "event",
       "locator": "Q321936"
+    },
+    {
+      "dissent": false,
+      "id": "taiping-rebellion",
+      "kind": "event",
+      "locator": "Q192408"
     },
     {
       "dissent": false,

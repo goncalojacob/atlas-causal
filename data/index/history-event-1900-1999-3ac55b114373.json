@@ -1150,6 +1150,15 @@
         }
       ]
     },
+    "1931-china-floods": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "1934-portuguese-legislative-election": {
       "from": "git",
       "versions": [
@@ -3101,6 +3110,15 @@
             "category"
           ],
           "on": "2026-09-06"
+        }
+      ]
+    },
+    "1976-tangshan-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
         }
       ]
     },
@@ -13304,6 +13322,15 @@
         }
       ]
     },
+    "great-leap-forward": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "greco-italian-war": {
       "from": "git",
       "versions": [
@@ -16903,6 +16930,15 @@
         }
       ]
     },
+    "nanjing-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "national-syndicalists-banned-1934": {
       "from": "git",
       "versions": [
@@ -17882,6 +17918,15 @@
             "sources"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "persian-constitutional-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
         }
       ]
     },

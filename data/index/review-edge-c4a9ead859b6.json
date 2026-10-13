@@ -17775,6 +17775,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-13",
+      "from": "great-leap-forward",
+      "id": "great-leap-forward--cultural-revolution--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "cultural-revolution",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
       "from": "great-siege-of-gibraltar",
       "id": "great-siege-of-gibraltar--action-of-16-march-1782--precondition-of",

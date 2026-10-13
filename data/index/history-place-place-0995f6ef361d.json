@@ -1880,6 +1880,15 @@
         }
       ]
     },
+    "central-asia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "central-europe": {
       "from": "git",
       "versions": [
@@ -10737,6 +10746,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "tangshan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
         }
       ]
     },
