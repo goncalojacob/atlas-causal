@@ -25787,3 +25787,5 @@ M91 done
 W1 done
 
 Rewriter started 2026-10-13T00:52:17Z by scheduled
+
+Rewriter 2026-10-13T01:19:48Z: 367 records rewritten, 33 left, 839 of 4940 done
