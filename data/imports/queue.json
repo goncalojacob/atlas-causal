@@ -331,18 +331,6 @@
       "why": "Asia trails. A level 4 vital article, the deadliest tropical cyclone recorded, and its own article states what the response to it allowed. Its one class, tropical cyclone, has no row in the class table yet."
     },
     {
-      "id": "2026-10-13-asia-028",
-      "planned": "2026-10-13T01:50Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q185729",
-      "title": "War on terror",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-4",
-      "why": "A level 4 vital article, and the umbrella the September 11 attacks and the war in Afghanistan both belong under. Lane asia for routing, since the item has no point and its theatres are Afghanistan and Iraq."
-    },
-    {
       "id": "2026-10-13-europe-029",
       "planned": "2026-10-13T01:50Z",
       "lane": "europe",
@@ -601,6 +589,18 @@
       "edges": [],
       "rank": "vital-3",
       "why": "vital-3, europe. Re-queued by the assistant after M92: the import now reads a century-precision date as a span of years, and the seeds file names the lane. The first item was refused on the date."
+    },
+    {
+      "id": "2026-10-13-asia-045",
+      "planned": "2026-10-13T04:30Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q185729",
+      "title": "War on terror",
+      "parents": [],
+      "edges": [],
+      "rank": "vital-4",
+      "why": "vital-4, asia. Re-queued by the assistant: the writer refused the first item for having no lane, and the seeds file now names one."
     }
   ]
 }
