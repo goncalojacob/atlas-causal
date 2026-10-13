@@ -386,3 +386,30 @@ that reviews and coordination always use Fable. Reviews and builds run on
 Opus; the writers and other mechanical routines run on Sonnet. The
 supervising session of 12 and 13 October ran on Fable; a new one starts on
 Opus.
+
+## 11. 13 October, 07:00Z: everything paused
+
+The owner wrote "Anyway let's pause now" at about 06:58Z on 13 October. The
+assistant disabled the four routines at 06:58Z: the planner
+(`trig_01KAvDPWvURj8JFPnC8ngr4b`), writer A (`trig_01J2ampc4sLf7fCv7W8Jn6ky`),
+writer B (`trig_01Hvmac6PMfQqk6nF99R1Paf`) and the rewriter
+(`trig_01C6p8bsqexSaHLdD7k1T7my`). The supervision loop stopped. Nothing fires
+until the owner says so.
+
+State at the pause. The site is `main` e2d0b59b, snapshot 23: 1,926 event
+records, 1,281 edges, 937 places. `m0` is 6ede3cb75 before this section.
+Unlanded work on the lanes: writer A's 06:27Z fire on `m42` (8 events:
+Indian independence movement, Magellan expedition, Counter-Reformation,
+Livonian War, French Wars of Religion, Eighty Years' War, English Civil War,
+Peace of Westphalia); the rewriter's 06:16Z fire on `w3` (97 edges and 31
+events rewritten, 4,054 of 4,962 done); the planner's notes and queue on
+`plan` (44 items on the queue, 24 of them still waiting for writer A). Two
+runs were in flight when the routines went off and could not be cancelled:
+writer B's claim at 06:42Z on `m42b` and the rewriter's claim at 06:53Z on
+`w3`. Each may push one more fire.
+
+To resume: land `m42`, `m42b`, `w3` and `plan` into `m0` with `land.sh`,
+publish a snapshot, re-enable the four routines with `RemoteTrigger update
+{"enabled": true}`, and read the newest `docs/plans/` note for its
+`## Classes`, `## Lanes` and `## Main` headings. Questions 13 and 14 in
+section 6 are still open.
