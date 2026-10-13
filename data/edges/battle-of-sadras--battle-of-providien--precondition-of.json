@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "battle-of-providien",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The two articles number themselves in one series. Sadras “was the first of five largely indecisive naval battles fought between a British fleet (under Vice-Admiral Sir Edward Hughes) and a French fleet (under Admiral Pierre Suffren) off the east coast of India during the Anglo-French War”; Providien “was the second in a series of naval battles fought between” the same two fleets and the same two admirals. An ordered series named as one by both of its members is a claim about the campaign, not a date order: `precondition-of`, and `probable` because Wikipedia states the sequence and no mechanism between these two.",
+  "explanation": "The two articles number themselves in one series. Sadras “was the first of five largely indecisive naval battles fought between a British fleet (under Vice-Admiral Sir Edward Hughes) and a French fleet (under Admiral Pierre Suffren) off the east coast of India during the Anglo-French War”. Providien “was the second in a series of naval battles fought between” the same two fleets and the same two admirals. An ordered series named as one by both of its members is a claim about the campaign, and more than an order of dates. So the type is `precondition-of`, and the confidence is `probable`, because Wikipedia states the sequence and no mechanism between these two.",
   "dispute": null
 }

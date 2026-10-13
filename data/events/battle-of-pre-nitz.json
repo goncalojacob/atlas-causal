@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": "2026-09-29",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -53,7 +53,7 @@
   },
   "place": "prisecnice",
   "region": "europe",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane, working it out from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
   "parent": "thirty-years-war",
   "category": "war",
   "actors": []

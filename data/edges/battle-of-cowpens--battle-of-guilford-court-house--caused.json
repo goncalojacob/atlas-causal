@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-30",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -38,6 +38,6 @@
   "to": "battle-of-guilford-court-house",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The Cowpens article, at revision 1376280446, ends its account with the consequence in one clause: “Morgan evaded Cornwallis and joined American General Nathanael Greene’s army near Greensboro, North Carolina, in early February, resulting in the Battle of Guilford Court House.” The Guilford article, at revision 1376260995, opens its background on the same fact from the British side — “On 18 January 1781 Lord Cornwallis learned he had lost one-quarter of his army at the Battle of Cowpens. Yet he was still determined to pursue General Nathanael Greene into North Carolina and destroy Greene’s army” — so the pursuit that brought on the March battle is the one the loss of the light troops set going. `caused` and not `enabled`, because “resulting in” is what the article says. `probable`, on the two articles alone (rule 22).",
+  "explanation": "The Cowpens article, at revision 1376280446, ends its account with the consequence in one clause: “Morgan evaded Cornwallis and joined American General Nathanael Greene’s army near Greensboro, North Carolina, in early February, resulting in the Battle of Guilford Court House.” The Guilford article, at revision 1376260995, opens its background on the same fact from the British side. It reads: “On 18 January 1781 Lord Cornwallis learned he had lost one-quarter of his army at the Battle of Cowpens. Yet he was still determined to pursue General Nathanael Greene into North Carolina and destroy Greene’s army”. The pursuit that brought on the March battle is the one the loss of the light troops set going. The type is `caused`, because “resulting in” is what the article says. `probable`, on the two articles alone (rule 22).",
   "dispute": null
 }
