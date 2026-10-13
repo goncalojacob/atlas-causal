@@ -296,7 +296,7 @@ test('?open= opens the record the pull request names, not the first in the queue
       title: document.querySelector(".editor .field-title input").value,
       current: document.querySelector(".queue-item.current .queue-id")?.textContent ?? null,
     };`), {
-      id: `event · ${wanted}`,
+      id: `event: ${wanted}`,
       title: '1911 Constituent Assembly election',
       current: wanted,
     });
@@ -310,7 +310,7 @@ test('?open= opens the record the pull request names, not the first in the queue
     // the shape a pull request body is written in. It was not parsed at all,
     // so the address opened the queue's first record with nothing said.
     await open(page, url(`review.html?open=event/${wanted}`), 'return document.querySelectorAll(".editor").length > 0;');
-    assert.equal(await page.eval('return document.querySelector(".record-id").textContent;'), `event · ${wanted}`);
+    assert.equal(await page.eval('return document.querySelector(".record-id").textContent;'), `event: ${wanted}`);
     assert.equal(await page.eval('return document.querySelector(".save-note")?.textContent ?? "";'), '');
     // The kind has to be the record's own: the right id under the wrong kind
     // is an address that names nothing, and says so.
@@ -359,7 +359,7 @@ test('the form builds a tenure and its office picker answers, and review.html op
       category: document.querySelector('.editor .field-category select').value,
       current: document.querySelector('.queue-item.current .queue-id')?.textContent ?? null,
     };`), {
-      id: 'office · monarch-of-portugal',
+      id: 'office: monarch-of-portugal',
       title: 'Monarch of Portugal',
       category: 'head-of-state',
       current: 'monarch-of-portugal',

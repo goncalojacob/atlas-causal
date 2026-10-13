@@ -197,7 +197,7 @@ test('a second record of one kind and century costs no second history request', 
         rows[${row}].click();
         return id;`);
       if (id === null) break;
-      await waitFor(page, `return (document.querySelector(".record-id") || {}).textContent === "event · ${id}"
+      await waitFor(page, `return (document.querySelector(".record-id") || {}).textContent === "event: ${id}"
         && /version/.test((document.querySelector(".record-history summary") || {}).textContent || "");`, `the history of ${id}`);
       opened.push({ id, files: await page.eval(`return [...new Set(${asked}.map((e) => e.name))];`) });
     }
@@ -254,7 +254,7 @@ test('an edge is reviewed with both of its ends beside it', { skip }, async () =
     // would find the kind that was showing before the chip was clicked.
     await waitFor(page, 'return (document.querySelector(".queue-item .queue-id") || {}).textContent?.includes("--") === true;', 'the edge rows');
     await page.eval('document.querySelector(".queue-item").click(); return true;');
-    await waitFor(page, 'return (document.querySelector(".record-id") || {}).textContent?.startsWith("edge ·") === true;', 'an edge open');
+    await waitFor(page, 'return (document.querySelector(".record-id") || {}).textContent?.startsWith("edge:") === true;', 'an edge open');
     await waitFor(page, 'return document.querySelectorAll(".context-end h4").length === 2;', 'both ends');
     const ends = await page.eval(`return [...document.querySelectorAll(".context-end")].map((box) => ({
       side: box.querySelector(".context-side").textContent,
