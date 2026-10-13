@@ -1760,6 +1760,12 @@
     },
     {
       "dissent": false,
+      "id": "1556-shaanxi-earthquake",
+      "kind": "event",
+      "locator": "Q191293"
+    },
+    {
+      "dissent": false,
       "id": "1893-franco-siamese-crisis",
       "kind": "event",
       "locator": "Q1359846"
@@ -2735,6 +2741,12 @@
       "id": "anglo-zanzibar-war",
       "kind": "event",
       "locator": "Q170850"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-zulu-war",
+      "kind": "event",
+      "locator": "Q228911"
     },
     {
       "dissent": false,
@@ -6242,6 +6254,12 @@
     },
     {
       "dissent": false,
+      "id": "cold-war",
+      "kind": "event",
+      "locator": "Q8683"
+    },
+    {
+      "dissent": false,
       "id": "colombian-conflict",
       "kind": "event",
       "locator": "Q169072"
@@ -6665,6 +6683,12 @@
       "id": "edict-of-restitution",
       "kind": "event",
       "locator": "Q703097"
+    },
+    {
+      "dissent": false,
+      "id": "edo-period",
+      "kind": "event",
+      "locator": "Q184963"
     },
     {
       "dissent": false,
@@ -7235,6 +7259,12 @@
       "id": "good-friday-agreement",
       "kind": "event",
       "locator": "Q208958, P31 Q625298"
+    },
+    {
+      "dissent": false,
+      "id": "great-bengal-famine-of-1770",
+      "kind": "event",
+      "locator": "Q2477522"
     },
     {
       "dissent": false,
@@ -9296,6 +9326,12 @@
     },
     {
       "dissent": false,
+      "id": "scientific-revolution",
+      "kind": "event",
+      "locator": "Q214078"
+    },
+    {
+      "dissent": false,
       "id": "scramble-for-africa",
       "kind": "event",
       "locator": "Q179848"
@@ -10259,6 +10295,12 @@
       "id": "sinking-of-ara-general-belgrano",
       "kind": "event",
       "locator": "Q3284956"
+    },
+    {
+      "dissent": false,
+      "id": "sino-burmese-war",
+      "kind": "event",
+      "locator": "Q3237019"
     },
     {
       "dissent": false,

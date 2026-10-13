@@ -10100,6 +10100,12 @@
     },
     {
       "dissent": false,
+      "id": "1556-shaanxi-earthquake",
+      "kind": "event",
+      "locator": "\"1556 Shaanxi earthquake\", revision 1370898423"
+    },
+    {
+      "dissent": false,
       "id": "1893-franco-siamese-crisis",
       "kind": "event",
       "locator": "\"1893 Franco-Siamese crisis\", revision 1374343940"
@@ -11039,6 +11045,12 @@
       "id": "anglo-zanzibar-war",
       "kind": "event",
       "locator": "\"Anglo-Zanzibar War\", revision 1374406907"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-zulu-war",
+      "kind": "event",
+      "locator": "\"Anglo-Zulu War\", revision 1375710834"
     },
     {
       "dissent": false,
@@ -14474,6 +14486,12 @@
     },
     {
       "dissent": false,
+      "id": "cold-war",
+      "kind": "event",
+      "locator": "\"Cold War\", revision 1379050893"
+    },
+    {
+      "dissent": false,
       "id": "colombian-conflict",
       "kind": "event",
       "locator": "\"Colombian conflict\", revision 1376040409"
@@ -14915,6 +14933,12 @@
       "id": "edict-of-restitution",
       "kind": "event",
       "locator": "\"Edict of Restitution\", revision 1285679503"
+    },
+    {
+      "dissent": false,
+      "id": "edo-period",
+      "kind": "event",
+      "locator": "\"Edo period\", revision 1378867668"
     },
     {
       "dissent": false,
@@ -15467,6 +15491,12 @@
       "id": "governorate-general-of-brazil-1549",
       "kind": "event",
       "locator": "\"Colonial Brazil\", revision 1371077435"
+    },
+    {
+      "dissent": false,
+      "id": "great-bengal-famine-of-1770",
+      "kind": "event",
+      "locator": "\"Great Bengal famine of 1770\", revision 1368931241"
     },
     {
       "dissent": false,
@@ -17456,6 +17486,12 @@
     },
     {
       "dissent": false,
+      "id": "scientific-revolution",
+      "kind": "event",
+      "locator": "\"Scientific Revolution\", revision 1379780483"
+    },
+    {
+      "dissent": false,
       "id": "scramble-for-africa",
       "kind": "event",
       "locator": "\"Scramble for Africa\", revision 1373841219"
@@ -18377,6 +18413,12 @@
       "id": "sinking-of-ara-general-belgrano",
       "kind": "event",
       "locator": "\"Sinking of ARA General Belgrano\", revision 1370747049"
+    },
+    {
+      "dissent": false,
+      "id": "sino-burmese-war",
+      "kind": "event",
+      "locator": "\"Sino-Burmese War\", revision 1378638379"
     },
     {
       "dissent": false,

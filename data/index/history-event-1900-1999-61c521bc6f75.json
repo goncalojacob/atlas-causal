@@ -9797,6 +9797,15 @@
         }
       ]
     },
+    "cold-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "colombian-conflict": {
       "from": "git",
       "versions": [

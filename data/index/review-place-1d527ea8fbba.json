@@ -2152,6 +2152,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-13",
+      "degree": 1,
+      "id": "bengal-q80338",
+      "kind": "place",
+      "names": [
+        "Bengal",
+        "Bengala"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-23",
       "degree": 2,
       "id": "benghazi",
@@ -6835,7 +6863,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "europe",
       "kind": "place",
       "names": [
@@ -9797,6 +9825,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-13",
+      "degree": 1,
+      "id": "inwa",
+      "kind": "place",
+      "names": [
+        "Inwa",
+        "Ava",
+        "Ava (Birmânia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10360,7 +10417,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -12259,6 +12316,34 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q4871541, the battle of Las Tres Acequias, read on 2026-09-30: A9's first step as A12 (2) corrects it, and the ground itself — near San Bernardo, south of Santiago — has no item of its own this pass could reach. `precision` is `point` because the item is a battle and the point it carries is the battlefield's, not a settlement's.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-13",
+      "degree": 1,
+      "id": "latin-america",
+      "kind": "place",
+      "names": [
+        "Latin America",
+        "América Latina"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,

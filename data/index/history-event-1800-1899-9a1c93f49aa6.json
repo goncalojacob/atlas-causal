@@ -391,6 +391,15 @@
         }
       ]
     },
+    "anglo-zulu-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "argentine-war-of-independence": {
       "from": "git",
       "versions": [

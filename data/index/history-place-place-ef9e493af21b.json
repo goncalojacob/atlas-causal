@@ -933,6 +933,15 @@
         }
       ]
     },
+    "bengal-q80338": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "benghazi": {
       "from": "git",
       "versions": [
@@ -4608,6 +4617,15 @@
         }
       ]
     },
+    "inwa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "ipatiev-house": {
       "from": "git",
       "versions": [
@@ -5725,6 +5743,15 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "latin-america": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
         }
       ]
     },

@@ -1555,6 +1555,15 @@
         }
       ]
     },
+    "great-bengal-famine-of-1770": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "great-peace-of-montreal": {
       "from": "git",
       "versions": [
@@ -2212,6 +2221,15 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "sino-burmese-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
         }
       ]
     },
