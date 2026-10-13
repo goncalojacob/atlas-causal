@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "war-on-terror",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q185729",
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "War on terror",
+    "pt": "Guerra ao Terror"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q185729"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War on terror\", revision 1379084421"
+    }
+  ],
+  "title": "War on terror",
+  "summary": "The English Wikipedia article \"War on terror\", at revision 1379084421, opens: \"The war on terror, officially the Global War on Terrorism (GWOT), is a global military campaign initiated by the United States in response to the September 11 attacks in 2001. A global conflict spanning multiple wars, some researchers and political scientists have argued that it replaced the Cold War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q185729, imported by tools/import/wikidata.mjs. The item's own description reads \"military campaign started after September 11 attacks\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2001,
+    "end": null,
+    "date": "2001-09-11"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

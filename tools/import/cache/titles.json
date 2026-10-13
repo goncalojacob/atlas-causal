@@ -10662,6 +10662,30 @@
    "qid": "Q1205521",
    "redirect": false,
    "missing": false
+  },
+  "Age of Discovery": {
+   "canonical": "Age of Discovery",
+   "qid": "Q133641",
+   "redirect": false,
+   "missing": false
+  },
+  "Age of Enlightenment": {
+   "canonical": "Age of Enlightenment",
+   "qid": "Q12539",
+   "redirect": false,
+   "missing": false
+  },
+  "Reformation": {
+   "canonical": "Reformation",
+   "qid": "Q12562",
+   "redirect": false,
+   "missing": false
+  },
+  "War on terror": {
+   "canonical": "War on terror",
+   "qid": "Q185729",
+   "redirect": false,
+   "missing": false
   }
  }
 }

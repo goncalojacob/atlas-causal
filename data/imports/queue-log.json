@@ -717,6 +717,54 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-042",
+      "writer": "A",
+      "fired": "2026-10-13T05:23Z",
+      "status": "written",
+      "written": {
+        "event": "age-of-discovery",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-043",
+      "writer": "A",
+      "fired": "2026-10-13T05:23Z",
+      "status": "written",
+      "written": {
+        "event": "reformation",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-044",
+      "writer": "A",
+      "fired": "2026-10-13T05:23Z",
+      "status": "written",
+      "written": {
+        "event": "age-of-enlightenment",
+        "edges": [],
+        "place": "western-europe"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-045",
+      "writer": "A",
+      "fired": "2026-10-13T05:23Z",
+      "status": "written",
+      "written": {
+        "event": "war-on-terror",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
