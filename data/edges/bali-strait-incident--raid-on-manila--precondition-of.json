@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "raid-on-manila",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The Manila article gives the raid its reason and names the incident as what put the question: \"In January 1797 the convoy had been attacked by the French squadron in the East Indies, comprising six frigates commanded by Contre-amiral Pierre César Charles de Sercey. In the ensuing Bali Strait Incident the commander deceived Sercey into believing that the unescorted convoy contained disguised ships of the line and the French admiral retreated, only learning of his error on his return to Île de France. There was considerable concern in India that Sercey might try again in 1798, or that the Spanish, who maintained a powerful squadron at Cavite, might make an attempt of their own.\" That concern is what sent Rainier's escorted convoy to China and put Cooke at Macau, from where he \"decided to investigate the state of readiness of Spanish forces in Manila himself\". Precondition-of and not caused: the article gives Cooke's own curiosity and the rumoured treasure ship as the immediate reasons for the raid, and the incident as the standing danger the escort answered.",
+  "explanation": "The Manila article gives the raid its reason and names the incident as what put the question: \"In January 1797 the convoy had been attacked by the French squadron in the East Indies, comprising six frigates commanded by Contre-amiral Pierre César Charles de Sercey. In the ensuing Bali Strait Incident the commander deceived Sercey into believing that the unescorted convoy contained disguised ships of the line and the French admiral retreated, only learning of his error on his return to Île de France. There was considerable concern in India that Sercey might try again in 1798, or that the Spanish, who maintained a powerful squadron at Cavite, might make an attempt of their own.\" That concern is what sent Rainier's escorted convoy to China and put Cooke at Macau, from where he \"decided to investigate the state of readiness of Spanish forces in Manila himself\". The type is precondition-of rather than caused. The article gives Cooke's own curiosity and the rumoured treasure ship as the immediate reasons for the raid, and the incident as the standing danger the escort answered.",
   "dispute": null
 }

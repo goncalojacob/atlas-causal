@@ -229,13 +229,21 @@ test('an item is read down to the fields the import uses and no others', async (
   assert.equal(item.sitelinks, 3);
 });
 
-test('a date is read at its own precision and a coarse one is dropped', () => {
+test('a date is read at its own precision and a millennium is dropped', () => {
   assert.deepEqual(parseTime({ time: '+1974-04-25T00:00:00Z', precision: 11 }), { year: 1974, date: '1974-04-25' });
   assert.deepEqual(parseTime({ time: '+1974-04-00T00:00:00Z', precision: 10 }), { year: 1974, date: '1974-04' });
   assert.deepEqual(parseTime({ time: '+1974-00-00T00:00:00Z', precision: 9 }), { year: 1974, date: null });
   assert.deepEqual(parseTime({ time: '-0044-03-15T00:00:00Z', precision: 11 }), { year: -44, date: '-0044-03-15' });
-  // A century is not a year and the atlas has no interval for it.
-  assert.equal(parseTime({ time: '+1900-00-00T00:00:00Z', precision: 7 }), null);
+  // M92: a decade and a century are read as a range of years and carry no
+  // date. Wikidata gives a century as its first year, so "+1500" at
+  // precision 7 is 1500 to 1599.
+  assert.deepEqual(parseTime({ time: '+1500-00-00T00:00:00Z', precision: 7 }), { year: 1500, date: null, range: { min: 1500, max: 1599 } });
+  assert.deepEqual(parseTime({ time: '+1960-00-00T00:00:00Z', precision: 8 }), { year: 1960, date: null, range: { min: 1960, max: 1969 } });
+  // A BCE century counts without a year zero: "-0500" is 500 to 401 BCE.
+  assert.deepEqual(parseTime({ time: '-0500-00-00T00:00:00Z', precision: 7 }), { year: -500, date: null, range: { min: -500, max: -401 } });
+  assert.deepEqual(parseTime({ time: '-0050-00-00T00:00:00Z', precision: 7 }), { year: -50, date: null, range: { min: -50, max: 50 } });
+  // A millennium is still too coarse for the atlas.
+  assert.equal(parseTime({ time: '+1000-00-00T00:00:00Z', precision: 6 }), null);
   assert.equal(parseTime({ time: '+0000-00-00T00:00:00Z', precision: 9 }), null, 'there is no year zero');
   assert.equal(parseTime(undefined), null);
 });
@@ -288,6 +296,76 @@ test('an interval comes from the properties that belong to the kind', async () =
   assert.deepEqual(intervalFor('actor', (await read('Q9000006')).times), { start: 1822, end: null });
   // No usable date at all is a refusal, never a made-up year.
   assert.equal(intervalFor('event', (await read('Q9000007')).times), null);
+});
+
+// M92. The writer refused the Age of Discovery and the Age of Enlightenment
+// because their dates are centuries. A century or a decade is now a range of
+// years on the interval, which common/interval.json already allows.
+const timesOf = (values) => {
+  const parsed = (list = []) => list.map(parseTime).filter(Boolean);
+  return {
+    start: parsed(values.start), end: parsed(values.end), pointInTime: parsed(values.pointInTime),
+    inception: [], dissolved: [], born: parsed(values.born), died: parsed(values.died),
+  };
+};
+const at = (time, precision) => ({ time: `${time}-00-00T00:00:00Z`, precision });
+
+test('a century or a decade is a range of years on the interval (M92)', () => {
+  // Q133641, the Age of Discovery: P580 "+1500" and P582 "+1800", both centuries.
+  const discovery = intervalFor('event', timesOf({ start: [at('+1500', 7)], end: [at('+1800', 7)] }));
+  assert.deepEqual(discovery, { start: { min: 1500, max: 1599 }, end: { min: 1800, max: 1899 } });
+  assert.equal('date' in discovery, false, 'a century writes no date');
+  assert.equal('endDate' in discovery, false);
+  // A decade pair.
+  assert.deepEqual(intervalFor('event', timesOf({ start: [at('+1960', 8)], end: [at('+1970', 8)] })),
+    { start: { min: 1960, max: 1969 }, end: { min: 1970, max: 1979 } });
+  // A year pair is what it was.
+  assert.deepEqual(intervalFor('event', timesOf({ start: [at('+1500', 9)], end: [at('+1800', 9)] })),
+    { start: 1500, end: 1800 });
+  // A point in time that is a century is the whole interval, as a year is.
+  assert.deepEqual(intervalFor('event', timesOf({ pointInTime: [at('+1700', 7)] })),
+    { start: { min: 1700, max: 1799 }, end: { min: 1700, max: 1799 } });
+  // An actor reads a century the same way.
+  assert.deepEqual(intervalFor('actor', timesOf({ born: [at('+1500', 7)] })), { start: { min: 1500, max: 1599 }, end: null });
+});
+
+test('a ranged bound keeps the stated-span rule and the end-unstated flag (M92)', () => {
+  // A stated span beats a point in time when the span is a century.
+  const both = timesOf({ start: [at('+1700', 7)], end: [at('+1800', 7)], pointInTime: [at('+1750', 9)] });
+  assert.deepEqual(intervalFor('event', both), { start: { min: 1700, max: 1799 }, end: { min: 1800, max: 1899 } });
+  // A century start with no end is the end-unstated case.
+  const open = timesOf({ start: [at('+1700', 7)] });
+  assert.deepEqual(intervalFor('event', open), { start: { min: 1700, max: 1799 }, end: null });
+  assert.equal(endUnstated('event', open), true);
+  assert.equal(endUnstated('event', both), false);
+  // A mixed pair: a year end inside the start's century narrows the start,
+  // so the interval never ends before it begins (rule 15).
+  assert.deepEqual(intervalFor('event', timesOf({ start: [at('+1500', 7)], end: [at('+1550', 9)] })),
+    { start: { min: 1500, max: 1550 }, end: 1550 });
+  assert.deepEqual(intervalFor('event', timesOf({ start: [{ time: '+1550-03-01T00:00:00Z', precision: 11 }], end: [at('+1500', 7)] })),
+    { start: 1550, end: { min: 1550, max: 1599 }, date: '1550-03-01' });
+});
+
+test('a ranged interval passes the interval schema (M92)', async () => {
+  const v = createValidator(await schemas());
+  const when = intervalFor('event', timesOf({ start: [at('+1500', 7)], end: [at('+1800', 7)] }));
+  assert.deepEqual(v.validate('common/interval.json', when), []);
+});
+
+test('a ranged interval matches a record by its earliest year (M92)', () => {
+  const read = { times: timesOf({ start: [at('+1500', 7)], end: [at('+1800', 7)] }) };
+  assert.equal(datesMatch({ when: { start: 1500, end: 1800 } }, read, 'event'), true);
+  assert.equal(datesMatch({ when: { start: 1600, end: 1800 } }, read, 'event'), false);
+});
+
+test('the ambiguous page shows a ranged candidate by its years (M92)', () => {
+  const page = ambiguousMarkdown([{
+    id: 'ages', kind: 'event', term: 'Age of Discovery',
+    considered: [{ qid: 'Q133641', label: 'Age of Discovery', description: null, classes: [], why: 'two items',
+      when: { start: { min: 1500, max: 1599 }, end: { min: 1800, max: 1899 } } }],
+  }], { generated: '2026-10-13' });
+  assert.match(page, /1500–1599 – 1800–1899/);
+  assert.doesNotMatch(page, /no date/);
 });
 
 // Deviation 1015: Q49101, the Suez Crisis, carries P580 29 October 1956, P582

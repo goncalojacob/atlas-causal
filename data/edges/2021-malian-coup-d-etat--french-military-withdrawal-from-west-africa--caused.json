@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "french-military-withdrawal-from-west-africa",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The article names both ends in one sentence and states the relation: \"As a result of the 2021 Malian coup d'état, French President Emmanuel Macron announced the end of the operation and his intentions to remove troops incrementally.\" The operation is Operation Barkhane, which the same paragraph has just called \"less successful than its predecessor\"; the withdrawal this record is about is the withdrawal of it. Probable: Wikipedia alone.",
+  "explanation": "The article names both ends in one sentence and states the relation: \"As a result of the 2021 Malian coup d'état, French President Emmanuel Macron announced the end of the operation and his intentions to remove troops incrementally.\" The operation is Operation Barkhane, which the same paragraph has just called \"less successful than its predecessor\". This record is about its withdrawal. The confidence is `probable` because the only source is Wikipedia.",
   "dispute": null
 }

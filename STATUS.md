@@ -25738,6 +25738,9 @@ among them `summary-missing`, `parent-cycle` and `edge-cycle` as refusal codes).
 
 M90 done
 
+Writer B started 2026-10-12T17:42:21Z
+Writer B started 2026-10-12T19:42:28Z
+
 Writer A started 2026-10-12T16:22:36Z by scheduled
 
 Writer A started 2026-10-12T18:22:40Z by scheduled
@@ -25746,11 +25749,21 @@ Writer A 2026-10-12T18:26:05Z: 3 written, 0 partial, 0 refused, 0 skipped
 
 Writer A started 2026-10-12T19:22:41Z by scheduled
 
+Writer B started 2026-10-12T21:42:35Z
+Writer B started 2026-10-12T23:42:08Z
+
 Writer A started 2026-10-12T21:22:13Z by scheduled
 
 Writer A started 2026-10-12T23:22:10Z by scheduled
 
 Writer A 2026-10-12T23:26:38Z: 2 written, 0 partial, 1 refused, 3 skipped
+
+Writer A started 2026-10-13T00:22:26Z by scheduled
+
+Rewriter started 2026-10-12T23:51:58Z by scheduled
+
+Rewriter 2026-10-13T00:31:13Z: 383 records rewritten, 56 left, 439 of 4940 done
+
 M91 started 2026-10-12T23:40:00Z by the assistant (branch m91)
 
 **M91 — every event of significance, edge or no edge, 13 October.** The owner: *"Right now the
@@ -25780,3 +25793,30 @@ with the rule, each said in the account. The pure suite: 1,998 tests, 1,998 pass
 
 M91 done
 W1 done
+
+Rewriter started 2026-10-13T00:52:17Z by scheduled
+
+Rewriter 2026-10-13T01:19:48Z: 367 records rewritten, 33 left, 839 of 4940 done
+
+Rewriter started 2026-10-13T01:52:14Z by scheduled
+
+Rewriter 2026-10-13T02:10:23Z: 351 records rewritten, 49 left, 1239 of 4940 done
+Writer A started 2026-10-13T02:21:51Z by scheduled
+
+Writer A 2026-10-13T02:27:46Z: 7 written, 0 partial, 3 refused, 0 skipped
+Writer B started 2026-10-13T02:42:36Z by scheduled
+
+Writer B 2026-10-13T02:47:00Z: 9 written, 1 partial, 0 refused, 0 skipped
+M92 started 2026-10-13T02:00:00Z by the assistant (branch m92)
+
+**M92: an event dated to a century or a decade, 13 October.** The writer refused the Age of
+Discovery and the Age of Enlightenment because Wikidata dates them to a century. The import now
+reads a century as a range of a hundred years and a decade as a range of ten, with no `date`. The
+Age of Discovery reads 1500 to 1599 for its start and 1800 to 1899 for its end. The writer reads
+a range by its earliest year for the arrow of time and for the parent's span. The writer also
+appends a section to `docs/m67-umbrellas.md` for each event it imports with no actor and no
+place, and says so on stdout. **No record was written** and there is no display change.
+`docs/history/pr-sections.md` carries the account. Ten new tests. The pure suite: 2,008 tests,
+2,008 pass. `validate --index` shows 0 errors at every commit.
+
+M92 done

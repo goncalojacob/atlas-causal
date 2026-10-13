@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -37,6 +37,6 @@
   "to": "noite-sangrenta-1921",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The men killed on the night of 19 October were the government and its friends, and this election is what made them the government. The Republican Liberals had assembled themselves to take the chamber from the Democrats and had succeeded in July; the column that went through Lisbon in October was made of the Democrats' own constituency in the armed forces and the arsenals, acting against a ministry it took to be restoring the men of the monarchy. The edge is `precondition-of` and not `caused`: what the election produced was the target, and what produced the killing was the politics of the barracks.",
+  "explanation": "The men killed on the night of 19 October were the government and its friends, and this election is what made them the government. The Republican Liberals had set themselves to take the chamber from the Democrats, and in July they succeeded. The column that went through Lisbon in October came from the Democrats' own following in the armed forces and the arsenals, acting against a ministry it took to be bringing back the men of the monarchy. The edge is `precondition-of`, which says the election supplied something the killing needed without causing it. The election produced the target. The politics of the barracks produced the killing.",
   "dispute": null
 }

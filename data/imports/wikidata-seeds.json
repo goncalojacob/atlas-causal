@@ -2023,7 +2023,16 @@
     "Q135450775",
     "Q959093",
     "Q2985554",
-    "Q1752743"
+    "Q1752743",
+    "Q133641",
+    "Q12562",
+    "Q214078",
+    "Q12539",
+    "Q228911",
+    "Q191293",
+    "Q184963",
+    "Q3237019",
+    "Q2477522"
   ],
   "queries": [
     {
@@ -6146,6 +6155,51 @@
       "kind": "event",
       "label": "pogrom",
       "note": "Added 12 October by the assistant, from the class Q2020716 (the 1948 anti-Jewish riots in Oujda and Jerada) names; the planner’s 2112Z note (deviation 1615) found the item’s own article stating its link verbatim and the class table refusing it. Wikidata glosses Q177716 “violent riot aimed at the massacre or persecution of an ethnic or religious group”; riot (Q124757) and massacre (Q3199915) are already event classes, so this is the same kind and not a new rule."
+    },
+    "Q6428674": {
+      "kind": "event",
+      "label": "era",
+      "note": "Added 13 October by the assistant, from the planner’s 0115Z note: the vital-article ranking queued an item of this class and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “span of time marked by people, events, geological periods, etc.”. Carried by Scientific Revolution."
+    },
+    "Q2198855": {
+      "kind": "event",
+      "label": "cultural movement",
+      "note": "Added 13 October by the assistant, from the planner’s 0115Z note: the vital-article ranking queued an item of this class and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “period and movement in cultural history”. Carried by Age of Enlightenment."
+    },
+    "Q126288065": {
+      "kind": "event",
+      "label": "schism from the Catholic Church",
+      "note": "Added 13 October by the assistant, from the planner’s 0115Z note: the vital-article ranking queued an item of this class and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “no description on the item”. Carried by Reformation."
+    },
+    "Q168247": {
+      "kind": "event",
+      "label": "famine",
+      "note": "Added 13 October by the assistant, from the planner’s 0115Z note: the vital-article ranking queued an item of this class and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “widespread scarcity of food followed by regional malnutrition, starvation, epidemic, and increased mortality”. Carried by Great Bengal famine of 1770."
+    },
+    "Q4176199": {
+      "kind": "event",
+      "label": "cold war",
+      "note": "Added 13 October by the assistant, from the planner’s 0115Z note: the vital-article ranking queued an item of this class and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “conflict not involving direct military action between the major actors”. Carried by Great Game."
+    },
+    "Q900406": {
+      "kind": "event",
+      "label": "reform",
+      "note": "Added 13 October by the assistant, from the planner’s 0115Z note: the vital-article ranking queued an item of this class and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “major overhaul of a system considered wrong, corrupt, inadequate, insufficient, unsatisfactory or immoral”. Carried by Meiji Restoration."
+    },
+    "Q6056746": {
+      "kind": "event",
+      "label": "campaign",
+      "note": "Added 13 October by the assistant, from the planner’s 0115Z note: the vital-article ranking queued an item of this class and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “series of operations undertaken to achieve a defined goal”. Carried by Great Leap Forward."
+    },
+    "Q8092": {
+      "kind": "event",
+      "label": "tropical cyclone",
+      "note": "Added 13 October by the assistant, from the planner’s 0115Z note: the vital-article ranking queued an item of this class and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “rapidly rotating storm system that forms in the tropics”. Carried by 1970 Bhola cyclone."
+    },
+    "Q3454786": {
+      "kind": "event",
+      "label": "economic reform",
+      "note": "Added 13 October by the assistant, from the planner’s 0115Z note: the vital-article ranking queued an item of this class and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “reform of public economic policies or regulations”. Carried by Reform and opening up."
     }
   },
   "lanes": {
@@ -6440,7 +6494,13 @@
     "Q109058273": "africa",
     "Q111208948": "africa",
     "Q762191": "asia",
-    "Q835180": "africa"
+    "Q835180": "africa",
+    "Q133641": "europe",
+    "Q12562": "europe",
+    "Q214078": "europe",
+    "Q12539": "europe",
+    "Q8683": "europe",
+    "Q184716": "americas"
   },
   "reconcile": true,
   "schema": 1,

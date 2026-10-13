@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "operation-serval",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The article states the cause in one sentence: \"However, the jihadist offensive in southern Mali provoked France's entry into the war. On January 11, the French army launched Operation Serval.\" Konna is that offensive — the same article calls the battle \"among the first French engagements in their intervention in the Mali War\". Probable: Wikipedia alone.",
+  "explanation": "The article states the cause in one sentence: \"However, the jihadist offensive in southern Mali provoked France's entry into the war. On January 11, the French army launched Operation Serval.\" Konna is that offensive, and the same article calls the battle \"among the first French engagements in their intervention in the Mali War\". Probable: Wikipedia alone.",
   "dispute": null
 }

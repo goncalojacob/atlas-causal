@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -30,9 +30,9 @@
   "to": "un-admission-1955",
   "type": "enabled",
   "confidence": "disputed",
-  "explanation": "Membership of the Atlantic alliance placed Portugal firmly in the Western camp and is argued to have secured Western sponsorship of its admission to the United Nations.",
+  "explanation": "Membership of the Atlantic alliance placed Portugal in the Western camp, and it is argued to have won Western sponsorship for its admission to the United Nations.",
   "dispute": {
-    "text": "Admission in 1955 came in a package of sixteen states negotiated between the blocs after years of Soviet vetoes; on that reading the timing owes more to the general thaw than to Portugal's alliance membership, which had not prevented the vetoes.",
+    "text": "Admission in 1955 came in a package of sixteen states negotiated between the blocs after years of Soviet vetoes. On that reading the timing owes more to the thaw between the blocs than to Portugal's alliance membership, which had not prevented the vetoes.",
     "sources": [
       {
         "source": "costa-pinto-2003-contemporary-portugal",

@@ -13,13 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-24",
+  "revised": "2026-10-13",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
     "on": "2026-09-24",
-    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. Both parts are in the atlas and both are wired — first-balkan-war into second-balkan-war and each of them into Sarajevo — so a series record joining them would say what the two already say, and C8 suspends an edge from a series to its own parts anyway. Retracted as redundant, which was its class in M44b too and is not the Portuguese rule. Under A6 it is the umbrella the two wars would be filed under, which needs a filing pass and not an edge."
+    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, which is wider than the Portuguese core M44b judged this against. Both parts are in the atlas and both carry edges, first-balkan-war into second-balkan-war and each of them into Sarajevo. So a series record joining them would say what the two already say, and C8 suspends an edge from a series to its own parts anyway. It is retracted as redundant, which was its class in M44b too and is a wider rule than the Portuguese one. Under A6 it is the umbrella the two wars would be filed under, which needs a filing pass rather than an edge."
   },
   "review": {
     "flags": [
@@ -52,6 +52,6 @@
   },
   "place": null,
   "region": "europe",
-  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane, from the lane named for this item in data/imports/wikidata-seeds.json. The event points at no place record, so the timeline has nothing else to go on.",
   "actors": []
 }

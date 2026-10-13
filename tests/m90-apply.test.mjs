@@ -117,6 +117,85 @@ async function fire(bed, items, over = []) {
   return { code, log: existsSync(log) ? await readJson(log) : null };
 }
 
+// M92 change 2. Under A17 a writer imports an event that names no umbrella, no
+// actor and no place, and tests/m67.test.mjs wants every such event named in
+// docs/m67-umbrellas.md. The writer appends a section for each one. The
+// document sits beside the data directory, so a scratch fire writes its own.
+const SKIRMISH = 'Q9200004';
+async function bareBed() {
+  const bed = await scratch();
+  const seedsFile = path.join(bed.data, 'imports', 'wikidata-seeds.json');
+  const seeds = await readJson(seedsFile);
+  // The skirmish has no point and no location, so the seeds file names its lane.
+  await writeFile(seedsFile, `${JSON.stringify({ ...seeds, lanes: { [SKIRMISH]: 'fixture-lane-1' } }, null, 2)}\n`, 'utf8');
+  return { ...bed, doc: path.join(bed.dir, 'docs', 'm67-umbrellas.md') };
+}
+const skirmish = (over = {}) => item({ id: '2026-10-13-africa-020', qid: SKIRMISH, title: 'Fixture skirmish Z', rank: 'vital-4', edges: [], ...over });
+
+test('a bare import is named in the umbrella document (M92)', async () => {
+  const bed = await bareBed();
+  await mkdir(path.dirname(bed.doc), { recursive: true });
+  await writeFile(bed.doc, '# Umbrellas\n\nWhat came before.\n', 'utf8');
+  const lines = [];
+  const original = console.log;
+  console.log = (...args) => { lines.push(args.join(' ')); };
+  let code;
+  try {
+    ({ code } = await fire(bed, [skirmish()]));
+  } finally {
+    console.log = original;
+  }
+  assert.equal(code, EXIT.ok);
+  const record = await readJson(path.join(bed.data, 'events', 'fixture-skirmish-z.json'));
+  assert.equal(parentsOf(record).length, 0);
+  assert.deepEqual(record.actors ?? [], []);
+  assert.notEqual(typeof record.place, 'string');
+  const doc = await readFile(bed.doc, 'utf8');
+  assert.ok(doc.startsWith('# Umbrellas\n\nWhat came before.\n'), 'the section is appended, and nothing above it moves');
+  assert.match(doc, /^## Writer A, \d{4}-\d{2}-\d{2}: `fixture-skirmish-z`, bare$/m);
+  assert.match(doc, /2026-10-13-africa-020/);
+  assert.match(doc, /vital-4/);
+  assert.doesNotMatch(doc.slice(doc.indexOf('## Writer A')), /—|;/, 'plain words: no em dash and no semicolon');
+  assert.ok(lines.some((l) => l.includes('docs/m67-umbrellas.md')), 'stdout says the document changed');
+  // A second fire on the same event writes no second section.
+  await rm(path.join(bed.data, 'imports', 'queue-log.json'));
+  await fire(bed, [skirmish({ id: '2026-10-13-africa-021' })]);
+  assert.equal((await readFile(bed.doc, 'utf8')).match(/`fixture-skirmish-z`/g).length, 1);
+  await rm(bed.dir, { recursive: true, force: true });
+});
+
+test('a filed import with neither an actor nor a place is argued in the umbrella document (M92)', async () => {
+  const bed = await bareBed();
+  // fixture-event-g runs from 1270 with no end, so it holds the 1986 skirmish.
+  const filed = await fire(bed, [skirmish({ parents: ['fixture-event-g'] })]);
+  assert.equal(filed.code, EXIT.ok);
+  assert.equal(filed.log.entries[0].status, 'written');
+  const doc = await readFile(bed.doc, 'utf8');
+  assert.match(doc, /^## Writer A, \d{4}-\d{2}-\d{2}: `fixture-skirmish-z`, filed under `fixture-event-g` with neither an actor nor a place$/m);
+  assert.match(doc, /2026-10-13-africa-020/);
+  assert.match(doc, /span and its subject put it inside the umbrella/);
+  assert.doesNotMatch(doc, /, bare$/m, 'a filed event is not called bare');
+  assert.doesNotMatch(doc, /—|;/, 'plain words: no em dash and no semicolon');
+  await rm(bed.dir, { recursive: true, force: true });
+});
+
+test('an import that stands at a place leaves the umbrella document alone (M92)', async () => {
+  const bed = await bareBed();
+  // The siege stands at a place, with no parent and no actor.
+  const placed = await fire(bed, [item({ id: '2026-10-13-africa-022', qid: SIEGE, title: 'Fixture siege Z', edges: [] })]);
+  assert.equal(placed.code, EXIT.ok);
+  assert.ok(placed.log.entries[0].written.place);
+  // And the same with a parent.
+  const both = await bareBed();
+  const filed = await fire(both, [item({ id: '2026-10-13-africa-023', qid: SIEGE, title: 'Fixture siege Z', edges: [], parents: ['fixture-event-g'] })]);
+  assert.equal(filed.code, EXIT.ok);
+  assert.ok(filed.log.entries[0].written.place);
+  assert.equal(existsSync(bed.doc), false, 'nothing to name, so no section and no file');
+  assert.equal(existsSync(both.doc), false);
+  await rm(bed.dir, { recursive: true, force: true });
+  await rm(both.dir, { recursive: true, force: true });
+});
+
 // --- the written case ------------------------------------------------------
 
 test('an item whose edges verify is imported, filed, and written with its edges', async () => {
@@ -695,6 +774,43 @@ test('a parent is an active event whose span holds the start, and nothing else',
   // hold a child nobody has dated the end of.
   assert.deepEqual(spanOf({ start: 1270, end: null }), { from: 1270, to: Infinity });
   assert.equal(spanOf(null), null);
+});
+
+// M92. A century-dated event has a { min, max } start. The writer reads the
+// min as the start, for the arrow of time and for the parent's span.
+test('the arrow of time reads a ranged start by its min (M92)', () => {
+  const when = {
+    discovery: { start: { min: 1500, max: 1599 }, end: { min: 1800, max: 1899 } },
+    voyage: { start: 1550, end: 1550 },
+    earlier: { start: 1492, end: 1492 },
+    enlightenment: { start: { min: 1700, max: 1799 }, end: { min: 1820, max: 1919 } },
+  };
+  const whenOf = (id) => when[id] ?? null;
+  const caused = { type: 'caused' };
+  // 1550 is after 1500, the earliest the Age of Discovery can start: refused,
+  // although 1550 is inside the century the range names.
+  const late = writeVerdictFor(caused, { from: 'voyage', to: 'discovery', whenOf });
+  assert.equal(late.reason, 'arrow-of-time');
+  assert.match(late.detail, /cannot start after/);
+  // 1492 is before 1500, so it may cause it.
+  assert.equal(writeVerdictFor(caused, { from: 'earlier', to: 'discovery', whenOf }).ok, true);
+  // A ranged cause before a year it leads to is fine, and two ranges compare by their mins.
+  assert.equal(writeVerdictFor(caused, { from: 'discovery', to: 'voyage', whenOf }).ok, true);
+  assert.equal(writeVerdictFor(caused, { from: 'discovery', to: 'enlightenment', whenOf }).ok, true);
+  assert.equal(writeVerdictFor(caused, { from: 'enlightenment', to: 'discovery', whenOf }).reason, 'arrow-of-time');
+});
+
+test('a parent\'s span is checked against a ranged start by its min (M92)', () => {
+  const byId = new Map([
+    ['discovery', { id: 'discovery', kind: 'event', status: 'active', when: { start: { min: 1500, max: 1599 }, end: { min: 1800, max: 1899 } } }],
+    ['later', { id: 'later', kind: 'event', status: 'active', when: { start: 1520, end: 1700 } }],
+  ]);
+  // A year inside the range is inside the span.
+  assert.equal(parentVerdict('discovery', { when: { start: 1550, end: 1551 } }, byId).ok, true);
+  // A ranged child starts at its min: 1500 is before 1520.
+  assert.match(parentVerdict('later', { when: { start: { min: 1500, max: 1599 }, end: null } }, byId).detail, /does not contain the event's start/);
+  assert.equal(parentVerdict('discovery', { when: { start: { min: 1600, max: 1609 }, end: null } }, byId).ok, true);
+  assert.deepEqual(spanOf({ start: { min: 1500, max: 1599 }, end: { min: 1800, max: 1899 } }), { from: 1500, to: 1899 });
 });
 
 test('an edge record is built once, and the locator is M72\'s own form', () => {

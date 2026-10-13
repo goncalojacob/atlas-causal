@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mexican-american-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q6683",
+  "sitelinks": {
+    "count": 75,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Mexican–American War",
+    "pt": "Guerra Mexicano-Americana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6683"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mexican–American War\", revision 1379967616"
+    }
+  ],
+  "title": "Mexican–American War",
+  "summary": "The English Wikipedia article \"Mexican–American War\", at revision 1379967616, opens: \"The Mexican–American War, also known in the United States as the Mexican War and in Mexico as the United States intervention in Mexico, was an invasion of Mexico by the United States. It followed the 1845 American annexation of Texas, which Mexico still considered its territory because it refused to recognize the Treaties of Velasco, signed by President Antonio López de Santa Anna after he was captured by the Texian Army during the 1836 Texas Revolution. The Republic of Texas was de facto an independent country, but most of its Anglo-American citizens who had moved from the United States to Texas after 1822 wanted to be annexed by the United States.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6683, imported by tools/import/wikidata.mjs. The item's own description reads \"military conflict between the United States of America and Mexico from 1846 to 1848\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1846,
+    "end": 1848,
+    "date": "1846-04-24",
+    "endDate": "1848-02-02"
+  },
+  "place": "mexico-q96",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

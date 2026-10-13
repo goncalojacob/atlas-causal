@@ -29,7 +29,9 @@
 // through a second process with a second budget; calling it here keeps one
 // fetcher, one budget and one count of requests for the whole fire.
 //
-// **Nothing is committed.** The tool writes records, the index and the log;
+// **Nothing is committed.** The tool writes records, the index, the log and,
+// for an event that names neither an actor nor a place, a section at the end
+// of docs/m67-umbrellas.md (M92);
 // the commits are the routine's step, so that a run that goes wrong leaves a
 // working tree somebody can read rather than a history somebody has to undo.
 
@@ -281,6 +283,9 @@ export function edgeRecord(edge, { from, to, writer, created }) {
 // The same arithmetic rule 24's warning uses, and `importSpan`'s in the
 // Wikidata import: a bound in historians' numbering turned into the pair of
 // astronomical years it covers, with an open end reaching forward for ever.
+// A { min, max } start, a decade or a century (M92), is read at its min, so
+// the parent check in `parentVerdict` asks whether the earliest year the
+// child may start is inside the parent's span.
 export function spanOf(when) {
   if (!when || typeof when !== 'object') return null;
   try {
@@ -612,6 +617,50 @@ async function applyItem(item, {
   return entry(refusals.length && written.edges.length ? 'partial' : 'written');
 }
 
+// --- the event that names nothing ------------------------------------------
+
+// M92 change 2. Under A17 a writer imports an event that names no actor and
+// no place. tests/m67.test.mjs asks that docs/m67-umbrellas.md name every such
+// event: one with no umbrella is "bare", and one filed under an umbrella needs
+// a sentence on why it sits there. So the writer appends a short section for
+// each one. The document sits beside the data directory: `data/` gives
+// `docs/` in this repository, and a scratch fire writes its own copy.
+export const UMBRELLAS_DOC = path.join('docs', 'm67-umbrellas.md');
+export const umbrellasDocFor = (dataDir) => path.join(path.dirname(path.resolve(dataDir)), UMBRELLAS_DOC);
+
+// 'bare' with no umbrella, 'filed' under one or more, or null where the record
+// names an actor or a place. The same reading as tests/m67.test.mjs.
+export function namesNothing(record) {
+  if (record?.kind !== 'event' || record.status !== 'active') return null;
+  if ((record.actors ?? []).length > 0 || typeof record.place === 'string') return null;
+  return parentsOf(record).length === 0 ? 'bare' : 'filed';
+}
+
+export function unnamedSection({ writer, today, record, itemId, rank = null }) {
+  const ranked = typeof rank === 'string' && rank !== '' ? `, rank \`${rank}\`` : ', with no rank';
+  const parents = parentsOf(record).map((id) => `\`${id}\``).join(' and ');
+  if (parents === '') {
+    return `## Writer ${writer}, ${today}: \`${record.id}\`, bare\n\n`
+      + `Writer ${writer} imported it from the planner's queue as item \`${itemId}\`${ranked}. `
+      + 'It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, '
+      + 'and the planner connects it when it can.\n';
+  }
+  return `## Writer ${writer}, ${today}: \`${record.id}\`, filed under ${parents} with neither an actor nor a place\n\n`
+    + `Writer ${writer} filed it there because the planner's queue asked for it in item \`${itemId}\`${ranked}. `
+    + 'Its span and its subject put it inside the umbrella.\n';
+}
+
+// Appends the section unless the document already names the event. Returns
+// whether it wrote.
+export async function noteUnnamed(doc, section, eventId) {
+  const before = existsSync(doc) ? await readFile(doc, 'utf8') : null;
+  if (before !== null && before.includes(`\`${eventId}\``)) return false;
+  await mkdir(path.dirname(doc), { recursive: true });
+  const head = before === null || before === '' ? '' : `${before.replace(/\n*$/, '')}\n\n`;
+  await writeFile(doc, `${head}${section}`, 'utf8');
+  return true;
+}
+
 // The record ids a fire's citations are on: the event and the edges each entry
 // wrote. What `cache-evidence.mjs --only` is handed at the end of the fire.
 export function fireCitations(entries) {
@@ -638,6 +687,7 @@ export async function applyQueue({
   cacheDir = path.join(ROOT, LEAD_CACHE),
   offline = false,
   finish = true,
+  umbrellasDoc = umbrellasDocFor(dataDir),
 } = {}) {
   const log = logFile ?? path.join(dataDir, DEFAULT_LOG);
   const queue = await readJson(queueFile);
@@ -678,6 +728,8 @@ export async function applyQueue({
 
   const entries = [];
   const importFiles = importFilesKeeper(dataDir);
+  // The events this fire named in the umbrella document (M92 change 2).
+  const noted = [];
   for (const item of items) {
     let entry;
     try {
@@ -697,28 +749,35 @@ export async function applyQueue({
           exit: EXIT.network,
           problems: [`${NETWORK_REFUSED}: ${NETWORK_DISCARD} (${e.message})`],
           entries,
+          noted,
         };
       }
       throw e;
     }
     importFiles.forget();
     entries.push(entry);
+    const made = entry.written.event ? corpus.byId.get(entry.written.event) : null;
+    const shape = entry.status === 'written' || entry.status === 'partial' ? namesNothing(made) : null;
+    if (shape) {
+      const section = unnamedSection({ writer, today, record: made, itemId: item.id, rank: item.rank ?? null });
+      if (await noteUnnamed(umbrellasDoc, section, made.id)) noted.push({ id: made.id, shape });
+    }
     await mkdir(path.dirname(log), { recursive: true });
     await writeFile(log, asText({ ...logged, entries: [...(logged.entries ?? []), ...entries] }), 'utf8');
   }
 
-  if (!finish) return { exit: EXIT.ok, problems: [], entries };
+  if (!finish) return { exit: EXIT.ok, problems: [], entries, noted };
 
   // 6. The index, then the validator, then the recache (rules card 14, 15).
   //    An error from the validator is a hard stop: the records are on disk for
   //    somebody to read and nothing is committed.
   const built = await run(process.execPath, [path.join(ROOT, 'tools', 'build-index.mjs'), '--data', dataDir]);
   if (built.code !== 0) {
-    return { exit: EXIT.hardStop, problems: [`build-index: ${built.stderr.trim() || built.stdout.trim()}`], entries };
+    return { exit: EXIT.hardStop, problems: [`build-index: ${built.stderr.trim() || built.stdout.trim()}`], entries, noted };
   }
   const checked = await run(process.execPath, [path.join(ROOT, 'tools', 'validate.mjs'), '--data', dataDir, '--index']);
   if (checked.code !== 0) {
-    return { exit: EXIT.hardStop, problems: [`validate --index: ${checked.stdout.trim()}\n${checked.stderr.trim()}`], entries };
+    return { exit: EXIT.hardStop, problems: [`validate --index: ${checked.stdout.trim()}\n${checked.stderr.trim()}`], entries, noted };
   }
   // A15(2), the last step of every batch, over this fire's own citations
   // (review of 12 October, finding 4): `--only` names the events and edges the
@@ -726,7 +785,7 @@ export async function applyQueue({
   // the scoped report and does not pretend to have filled anything.
   const ids = fireCitations(entries);
   if (ids.length === 0) {
-    return { exit: EXIT.ok, problems: [], entries, recache: 'skipped: this fire wrote no record, so it cites nothing' };
+    return { exit: EXIT.ok, problems: [], entries, noted, recache: 'skipped: this fire wrote no record, so it cites nothing' };
   }
   const scratch = await mkdtemp(path.join(tmpdir(), 'atlas-recache-'));
   const onlyFile = path.join(scratch, 'only.json');
@@ -736,7 +795,7 @@ export async function applyQueue({
     '--only', onlyFile, '--data', dataDir, '--cache', cacheDir,
   ]);
   await rm(scratch, { recursive: true, force: true });
-  return { exit: EXIT.ok, problems: [], entries, recache: recache.stdout.trim() };
+  return { exit: EXIT.ok, problems: [], entries, noted, recache: recache.stdout.trim() };
 }
 
 // --- --check ---------------------------------------------------------------
@@ -843,6 +902,11 @@ export async function main(argv) {
         + `${entry.written.event ? ` event ${entry.written.event}` : ''}`
         + `${entry.written.edges.length ? ` edges ${entry.written.edges.join(', ')}` : ''}`);
       for (const r of entry.refusals) console.log(`  ! ${r.reason}${r.edge === null ? '' : ` (edge ${r.edge})`}: ${r.detail}`);
+    }
+    if (result.noted?.length) {
+      // The writers commit `data/`, and this file sits outside it.
+      const list = result.noted.map((n) => `${n.id} ${n.shape}`).join(', ');
+      console.log(`${UMBRELLAS_DOC} changed: ${result.noted.length} event(s) with neither an actor nor a place named (${list}). Commit it with the records.`);
     }
     if (result.recache) console.log(`recache: ${result.recache.split('\n')[0]}`);
     for (const problem of result.problems) console.error(problem);

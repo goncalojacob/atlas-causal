@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -25,7 +25,7 @@
   },
   "retraction": {
     "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 16 under brief §1: the record earns no honest edge. The English article, at revision 1308579780, traces the charter to a 1979 Organisation of African Unity assembly decision and to the drafting committee that followed, and describes what it obliges; the OAU is not a record here and no event this atlas holds is named. It waits on a record of African decolonisation or of the OAU itself, and it is the seventh instrument this milestone has retracted on arrival."
+    "reason": "Retracted in M42 batch 16 under brief §1: the record earns no honest edge. The English article, at revision 1308579780, traces the charter to a 1979 Organisation of African Unity assembly decision and to the drafting committee that followed, and it describes what the charter obliges. The OAU is not a record here and no event this atlas holds is named. It waits on a record of African decolonisation or of the OAU itself, and it is the seventh instrument this milestone has retracted on arrival."
   },
   "wikidata": "Q385961",
   "wikipedia": {
@@ -51,7 +51,7 @@
   },
   "place": null,
   "region": "africa",
-  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane, from the lane named for this item in data/imports/wikidata-seeds.json. The event points at no place record, so the timeline has nothing else to go on.",
   "category": "treaty",
   "actors": []
 }

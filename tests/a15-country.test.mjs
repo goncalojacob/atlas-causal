@@ -49,6 +49,19 @@ test('a country that did not exist yet is not the place', () => {
     countryRefusal({ when: { start: 1960, end: null }, country: { point: PARIS, inception: 1958 } }),
     null,
   );
+  // M92: a century-dated event is refused only when no year of its range
+  // could fit the country. Its earliest start and its latest end are used.
+  const ages = { start: { min: 1500, max: 1599 }, end: { min: 1800, max: 1899 } };
+  assert.match(
+    countryRefusal({ when: ages, country: { point: PARIS, dissolution: 1450 } }),
+    /dissolved \(1450\) before the event began \(1500\)/,
+  );
+  assert.equal(countryRefusal({ when: ages, country: { point: PARIS, dissolution: 1550 } }), null);
+  assert.match(
+    countryRefusal({ when: ages, country: { point: PARIS, inception: 1946 } }),
+    /inception \(1946\) is after the event ended \(1899\)/,
+  );
+  assert.equal(countryRefusal({ when: ages, country: { point: PARIS, inception: 1850 } }), null);
 });
 
 test('an item naming several countries names no one country', () => {

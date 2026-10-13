@@ -197,6 +197,12 @@ export const IMPORT_REFERENCES = Object.freeze({
     Object.freeze({ at: Object.freeze(['entries', ITEM, 'written', 'place']), to: 'place' }),
     Object.freeze({ at: Object.freeze(['entries', ITEM, 'written', 'edges', ITEM]), to: 'edge' }),
   ]),
+  // The rewriter's cursor. Its rows are empty for the same reason
+  // `import-state`'s cursor has none: the record ids in it are the keys of
+  // `done` and `left`, which this table cannot address, and they are a place
+  // in a walk rather than a claim about a record. A stale key costs one text
+  // read again on a later run.
+  'rewrite-cursor': Object.freeze([]),
 });
 
 // ─── The walk ───────────────────────────────────────────────────────────────

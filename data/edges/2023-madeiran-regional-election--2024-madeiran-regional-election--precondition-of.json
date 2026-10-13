@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -37,6 +37,6 @@
   "to": "2024-madeiran-regional-election",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The snap election of May 2024 was caused by a corruption investigation and a resignation, not by the ballot of September 2023. What the 2023 ballot fixed was when it could happen: the constitution forbids the president from dissolving a legislative assembly within six months of its election, so between Albuquerque's resignation on 5 February and the dissolution on 27 March nothing could be done, and a region governed by a resigned cabinet waited seven weeks for a clock to run out. The edge argues that constraint, which is why it is `precondition-of`.",
+  "explanation": "A corruption investigation and a resignation caused the snap election of May 2024. The ballot of September 2023 fixed when it could happen. The constitution forbids the president from dissolving a legislative assembly within six months of its election, so nothing could be done between Albuquerque's resignation on 5 February and the dissolution on 27 March. A region governed by a resigned cabinet waited seven weeks for a clock to run out. The edge argues that limit, which is why it is `precondition-of`.",
   "dispute": null
 }

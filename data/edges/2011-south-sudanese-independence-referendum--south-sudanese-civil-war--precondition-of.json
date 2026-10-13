@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "south-sudanese-civil-war",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The English article on the civil war says the Comprehensive Peace Agreement of 2005 created a Southern Sudan Autonomous Region run by the SPLM with a promise of a referendum on independence in 2011, and that **during the six years of autonomy the desire for independence kept the in-fighting within the SPLM in check**; in the referendum 98 per cent voted for independence and South Sudan became a state on 9 July 2011. The war broke out in December 2013 between the SPLM and the SPLM-IO. The article names what the referendum removed and does not call it the cause, which is why this is a precondition.",
+  "explanation": "The English article on the civil war says the Comprehensive Peace Agreement of 2005 created a Southern Sudan Autonomous Region run by the SPLM, with a promise of a referendum on independence in 2011. It says that **during the six years of autonomy the desire for independence kept the in-fighting within the SPLM in check**. In the referendum 98 per cent voted for independence, and South Sudan became a state on 9 July 2011. The war broke out in December 2013 between the SPLM and the SPLM-IO. The article names what the referendum removed and does not call it the cause, which is why this edge is a precondition.",
   "dispute": null
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "siege-of-zaragoza-1809",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The siege article opens its background on the defeat: \"Further defeats – especially the surrender of Divisional-general Pierre Dupont de l'Étang at the Battle of Bailén – forced King Joseph Bonaparte to withdraw behind the Ebro river, abandoning most of Spain except a small corner in the north-east and a small area around Barcelona.\" The second siege is the counter-offensive Napoleon then led in person — \"Napoleon's plan was to attack in strength towards Burgos in between the armies of Blake and Castaños\" — so Bailén is what the campaign this siege belongs to was answering. Probable: Wikipedia alone.",
+  "explanation": "The siege article opens its background on the defeat: \"Further defeats – especially the surrender of Divisional-general Pierre Dupont de l'Étang at the Battle of Bailén – forced King Joseph Bonaparte to withdraw behind the Ebro river, abandoning most of Spain except a small corner in the north-east and a small area around Barcelona.\" The second siege belongs to the counter-offensive Napoleon then led in person. \"Napoleon's plan was to attack in strength towards Burgos in between the armies of Blake and Castaños\". Bailén is what that campaign was answering. The confidence is probable, on Wikipedia alone.",
   "dispute": null
 }

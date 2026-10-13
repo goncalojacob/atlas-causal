@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "great-bengal-famine-of-1770",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2477522",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Great Bengal famine of 1770",
+    "pt": "Fome de 1770 em Bengala"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2477522"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Bengal famine of 1770\", revision 1368931241"
+    }
+  ],
+  "title": "Great Bengal famine of 1770",
+  "summary": "The English Wikipedia article \"Great Bengal famine of 1770\", at revision 1368931241, opens: \"The Great Bengal famine of 1770 struck Bengal and Bihar between 1769 and 1770 and affected some 30 million people, which was about one third of the current population of the area. It occurred during a period of dual governance in Bengal. This existed after the East India Company had been granted the diwani, or the right to collect revenue, in Bengal by the Mughal emperor in Delhi, but before it had wrested the nizamat, or control of civil administration, which continued to lie with the Mughal governor, the Nawab of Bengal, Najmuddin Ali Khan (Nazm-ud-Daula) (1765–72).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2477522, imported by tools/import/wikidata.mjs. The item's own description reads \"famine affecting lower regions of India in 1770\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1770,
+    "end": 1773
+  },
+  "place": "bengal-q80338",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

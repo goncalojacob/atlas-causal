@@ -199,6 +199,258 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-001",
+      "writer": "A",
+      "fired": "2026-10-13T02:24Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q133641: no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    {
+      "id": "2026-10-13-europe-002",
+      "writer": "A",
+      "fired": "2026-10-13T02:24Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q12562: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-13-europe-003",
+      "writer": "A",
+      "fired": "2026-10-13T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "scientific-revolution",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-004",
+      "writer": "A",
+      "fired": "2026-10-13T02:24Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q12539: no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    {
+      "id": "2026-10-13-europe-005",
+      "writer": "A",
+      "fired": "2026-10-13T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "cold-war",
+        "edges": [],
+        "place": "latin-america"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-africa-008",
+      "writer": "A",
+      "fired": "2026-10-13T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-zulu-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-009",
+      "writer": "A",
+      "fired": "2026-10-13T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "1556-shaanxi-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-010",
+      "writer": "A",
+      "fired": "2026-10-13T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "edo-period",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-011",
+      "writer": "A",
+      "fired": "2026-10-13T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "sino-burmese-war",
+        "edges": [],
+        "place": "inwa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-012",
+      "writer": "A",
+      "fired": "2026-10-13T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "great-bengal-famine-of-1770",
+        "edges": [],
+        "place": "bengal-q80338"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-006",
+      "writer": "B",
+      "fired": "2026-10-13T02:43Z",
+      "status": "written",
+      "written": {
+        "event": "european-colonization-of-the-americas",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-007",
+      "writer": "B",
+      "fired": "2026-10-13T02:43Z",
+      "status": "written",
+      "written": {
+        "event": "american-revolution",
+        "edges": [],
+        "place": "thirteen-colonies"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-030",
+      "writer": "B",
+      "fired": "2026-10-13T02:43Z",
+      "status": "written",
+      "written": {
+        "event": "french-and-indian-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-031",
+      "writer": "B",
+      "fired": "2026-10-13T02:43Z",
+      "status": "written",
+      "written": {
+        "event": "attack-on-pearl-harbor",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-032",
+      "writer": "B",
+      "fired": "2026-10-13T02:43Z",
+      "status": "written",
+      "written": {
+        "event": "mexican-american-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-033",
+      "writer": "B",
+      "fired": "2026-10-13T02:43Z",
+      "status": "written",
+      "written": {
+        "event": "american-civil-war",
+        "edges": [],
+        "place": "southern-united-states"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-034",
+      "writer": "B",
+      "fired": "2026-10-13T02:43Z",
+      "status": "written",
+      "written": {
+        "event": "cuban-missile-crisis",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-035",
+      "writer": "B",
+      "fired": "2026-10-13T02:43Z",
+      "status": "partial",
+      "written": {
+        "event": "september-11-attacks",
+        "edges": [
+          "september-11-attacks--war-in-afghanistan-2001-2021--caused",
+          "september-11-attacks--iraq-war--caused"
+        ],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "parent",
+          "detail": "\"war-on-terror\" is not an event record"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-13-americas-036",
+      "writer": "B",
+      "fired": "2026-10-13T02:43Z",
+      "status": "written",
+      "written": {
+        "event": "paraguayan-war",
+        "edges": [],
+        "place": "southern-cone"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-037",
+      "writer": "B",
+      "fired": "2026-10-13T02:43Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-pacific",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
