@@ -4812,3 +4812,64 @@ buttons and on the edge card head, stayed: they are layout, not sentences.
 The `README.md` still says the first part is Portuguese expansion and that no
 language model wrote any record. Those are facts the rewrite kept, and the
 owner may want to correct them.
+
+## M92: an event dated to a century or a decade
+
+Lane A, on the branch `m92` cut from `origin/m0`. The owner wants the most
+important events first (amendment A17). On 13 October the writer refused the
+Age of Discovery (`Q133641`) and the Age of Enlightenment (`Q12539`). Wikidata
+dates both to a century, and the import read any date coarser than a year as
+no date at all. The log said "no date the atlas can use".
+
+### The import reads a range of years
+
+`parseTime` in `tools/import/wikidata.mjs` now reads a decade (precision 8) as
+the year and the nine years after it, and a century (precision 7) as the year
+and the ninety-nine years after it. Wikidata gives a century as its first
+year, so "+1500" at precision 7 is 1500 to 1599. The import keeps that
+reading. A BCE century counts without a year zero, so "-0500" is 500 to 401
+BCE. A millennium is still dropped. A range writes no `date`.
+
+`intervalFor` writes the range as `{ min, max }`, which
+`schema/common/interval.json` already allows. The Age of Discovery now reads
+`{ start: { min: 1500, max: 1599 }, end: { min: 1800, max: 1899 } }`. A stated
+span still beats a point in time, and a start with no end still carries the
+`end-unstated` flag. Where one end is a range and the other a year inside it,
+the import narrows the range so the event never ends before it begins. Rule 15
+would refuse that record otherwise. Years, months and days read as before.
+
+Four other readers of `when.start` in the import now take a range.
+`datesMatch` compares the earliest year. `countryRefusal` and `yearsApart` use
+the earliest start and the latest end, so a country is refused only when no
+year of the range fits it. The page of ambiguous matches prints the range.
+`--dates` still leaves a range out, because a century does not settle the year
+a polity began.
+
+### The writer reads a range by its earliest year
+
+`writeVerdictFor` in `tools/queue/queue.mjs` now compares the earliest start
+at both ends. An edge from 1550 into a century that starts in 1500 is refused,
+because the century may begin before its cause. Rule 4 compares against the
+latest year of the range, so the writer is stricter here, and a stricter
+writer only ever refuses an edge. `spanOf` in `tools/queue/apply.mjs` already
+read a range at its earliest year, so `parentVerdict` asks whether that year
+sits inside the parent's span. A comment and a test now say so.
+
+### The writer names an event with no actor and no place
+
+`tests/m67.test.mjs` asks that `docs/m67-umbrellas.md` name every active event
+with no actor and no place. Under A17 the writers import such events on
+purpose, so the test failed on writer A's head. `tools/queue/apply.mjs` now
+appends a section to that document for each one. An event with no umbrella
+gets a section headed "bare". An event filed under an umbrella gets a section
+that names the umbrella. The tool prints on stdout that the document changed,
+so the writers commit it with the records. A fire against a scratch data
+directory writes its own copy beside it.
+
+Ten new tests: five in `tests/import-wikidata.test.mjs`, five in
+`tests/m90-apply.test.mjs`. One existing assertion changed with the rule: a
+century in `parseTime` was null and is now a range.
+`tests/a15-country.test.mjs` and `tests/a15-chronology.test.mjs` gained ranged
+cases. A new
+fixture item, `Q9200004`, imports with no actor and no place. The pure suite:
+2,008 tests, 2,008 pass. `validate --index` shows 0 errors at every commit.

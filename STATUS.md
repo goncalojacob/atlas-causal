@@ -25789,3 +25789,17 @@ W1 done
 Rewriter started 2026-10-13T00:52:17Z by scheduled
 
 Rewriter 2026-10-13T01:19:48Z: 367 records rewritten, 33 left, 839 of 4940 done
+
+M92 started 2026-10-13T02:00:00Z by the assistant (branch m92)
+
+**M92: an event dated to a century or a decade, 13 October.** The writer refused the Age of
+Discovery and the Age of Enlightenment because Wikidata dates them to a century. The import now
+reads a century as a range of a hundred years and a decade as a range of ten, with no `date`. The
+Age of Discovery reads 1500 to 1599 for its start and 1800 to 1899 for its end. The writer reads
+a range by its earliest year for the arrow of time and for the parent's span. The writer also
+appends a section to `docs/m67-umbrellas.md` for each event it imports with no actor and no
+place, and says so on stdout. **No record was written** and there is no display change.
+`docs/history/pr-sections.md` carries the account. Ten new tests. The pure suite: 2,008 tests,
+2,008 pass. `validate --index` shows 0 errors at every commit.
+
+M92 done
