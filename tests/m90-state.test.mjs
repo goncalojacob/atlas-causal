@@ -113,9 +113,10 @@ test('the lane table counts each active event once, in the lane the timeline dra
     { lane: 'asia', century: 1800, main: true },
     { lane: null, century: null, main: true },
   ]), [
-    { lane: 'africa', active: 2, main: 1, centuries: [{ century: 1900, active: 2, main: 1 }] },
-    { lane: 'asia', active: 1, main: 1, centuries: [{ century: 1800, active: 1, main: 1 }] },
-    { lane: 'none', active: 1, main: 1, centuries: [] },
+    // `noEdge` since M91: these rows say nothing of edges, so none is counted.
+    { lane: 'africa', active: 2, main: 1, noEdge: 0, centuries: [{ century: 1900, active: 2, main: 1 }] },
+    { lane: 'asia', active: 1, main: 1, noEdge: 0, centuries: [{ century: 1800, active: 1, main: 1 }] },
+    { lane: 'none', active: 1, main: 1, noEdge: 0, centuries: [] },
   ]);
 });
 

@@ -4676,3 +4676,86 @@ Four suites, 45 tests now, 0 skipped. Deviations **1570 to 1572**.
 6. **Deviation numbers.** 1433 is M89's, and 1434 and 1435 are M42's and 1436 M42b's in their pool files, so M90's three are 1570 to 1572, the first free run below the planner's 1600.
 7. **Cycles.** `parent-cycle` for a queued parent already inside the record, `edge-cycle` for the reverse of an active edge — *"an existing item may not file a parent that sits inside it, nor write the reverse of an active edge"*, and the two pure verdict tests.
 8. **`state.mjs`'s no-place row** is labelled *"active events whose place is not a string"*, and the header says it is not the pools' "no place with a point" — *"the print is under eighty lines, and says what it left out when it is not"*.
+
+## M91 — every event of significance, edge or no edge
+
+Lane A, on the branch `m91` cut from `origin/m0`. The owner, 13 October 2026:
+*"Right now the priority is to add most events of historical significance
+since around 1500, even if for now there is no parent or child for it. Just
+add all events that are relevant and connect them when you can. Start by
+adding the main and most important historical events and then progress to
+adding events that are not as important or that are children of the main
+events."* Until now an item entered the atlas only with a verified edge (M90
+brief §1, *"An item with no edge is invalid"*; §2 step 2, *"If no edge
+survives, the item is refused and nothing is imported"*). That bar is
+withdrawn: an event of significance is imported whether or not an edge can be
+written today, and edges are still written only where the article's sentence
+is verified. **No record was written** and there is no display change.
+
+### The queue: an item may carry no edge
+
+`schema/import/queue.json`: `edges` may be empty, and `checkQueue` no longer
+says *"an item with no edge does not earn its place"*. An edge that is there
+is held to everything it was held to before — the quote, the revision, the
+type, the explanation carrying the quote, one end the item's own — and an
+`existing` item that asks for neither a parent nor an edge still asks for
+nothing. A new optional field, `rank` (one to forty characters: `vital-3`,
+`vital-4`, `vital-5`, `list`, `child-of:<id>`), is the planner's own word for
+why an item ranks where it does, since the order is now the main events first
+and their children after. `why` stays required. The log's `written` may now
+carry no edge and list the refusals of the edges it queued; `partial` keeps
+its meaning (the event and some edges); `refused` means only `summary-missing`
+or an import that wrote no record. `checkQueueLog` follows: a `written` entry
+with a refusal is an error only where it also wrote edges.
+
+### The writer imports regardless of edges
+
+`tools/queue/apply.mjs` goes on to the import whatever survived the
+verification, and no longer takes a record back off disk when every edge
+falls at the last fence (the arrow of time, the edge already held). The item
+is filed under its surviving parents and logged `written`, `written.edges:
+[]`, with its refusals. Everything else that keeps a wrong record out is as it
+was: `skipped` by Wikidata id, `summary-missing` with its rollback, the
+network exit 3, `validate --index` as a hard stop.
+
+### The duplicate by title
+
+132 active events carry no `wikidata` id, and the skip by id cannot see them.
+Step 1 now also reads the item's English article title — its `enwiki`
+sitelink, one request before anything is written, a failure being the fire's
+exit 3 and never the item's — and skips the item where an active event's
+`title`, or its `wikipedia.en`, is that title without case; the log's note
+names the record. Writing the test found that rule 21 writes `wikipedia.en`
+only beside a `wikidata` id, so the second half of the check catches the same
+article under another item (a merged or a superseded one), and the first half
+is the one the 132 need.
+
+### Held means held there and not here
+
+Writer A's fire of 12 October, 23:20Z logged three `existing` items
+(`decolonisation-of-africa`, `scramble-for-africa`, `12-3-incident`)
+*"held by the other branch"*: the routine's `--held` list is every event id
+on the other branch, and a record that came from `m0` is on both. `applyQueue`
+now reads the records before it chooses the items and takes as held only the
+ids and qids **not** present in this branch's own `data/events` — the other
+lane's unlanded records. An `existing` record present here is this writer's
+to edit; an import present here is a duplicate (the step above), not held.
+
+### The state
+
+`tools/queue/state.mjs` adds three things the planner now needs: the active
+events with no edge per lane (beside the total, from the same adjacency
+`measure` counts it from), the waiting items by `rank` (`unranked` for an
+item with none), and the active events whose start is before the owner's floor
+of 1500 — the atlas keeps what it has, and the planner is told how many.
+
+### The tests
+
+Three new suites, twelve tests; six M90 tests changed with the rule.
+
+- `tests/m91-queue.test.mjs` — *"an import item with no edge is valid: the bar of rules card 7 is withdrawn at the queue"*, *"an edge, when an item carries one, is held to everything it was held to before"*, *"rank is optional, a string of one to forty characters, and why stays required"*, *"a log entry written with no edge is well formed, with or without the refusals it met"*.
+- `tests/m91-apply.test.mjs` — *"an item with no edge is imported: written, with its record and its place, and no edge"*, *"an item every edge of which fails is still written, with the refusals logged"* (one refused before the import, one at the last fence), *"a lead that could not be read still rolls the record back, with no edge as with one"*, *"an item whose article title an active event already carries is skipped, even under no wikidata id or another"*, *"held by the other branch means held there and not here"*.
+- `tests/m91-state.test.mjs` — the per-lane split adds up to the total; the counts by rank are derived from the queue minus the log; the count before 1500 is derived from the fixture's records.
+- Changed in M90's suites: the *"no edge does not earn its place"* assertion inverted; *"an item no edge of which survives is refused"* and *"every edge falls at the last fence gives the record back"* inverted and renamed (*"… is written all the same, since M91"*, *"… keeps its record, since M91"*); the held test's `existing` record is now one this branch does not hold; the import-refusal test lets the item's first read through, since the skip step now reads it once before the import; the lane table's expected rows carry `noEdge`.
+
+No count is pinned. `validate --index` 0 errors at every commit.

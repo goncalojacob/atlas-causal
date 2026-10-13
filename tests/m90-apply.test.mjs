@@ -7,7 +7,8 @@
 // own child, the sixth type, the end that is not a record, the `consensus`
 // that rests on Wikipedia alone, the umbrella that will not hold the date, the
 // cause that starts after its effect, and the edge that is already here. And
-// the four statuses: written, partial, refused, skipped.
+// the four statuses: written, partial, refused, skipped. (Since M91, 13
+// October, an item whose every edge is refused is still written.)
 //
 // No network: `--fetcher stub:tests/fixtures/queue` answers off disk, so the
 // tool is run as the routine runs it, through `main()`, including the index
@@ -235,9 +236,11 @@ test('an item part of whose edges fail is partial, and every refusal is named by
   await rm(bed.dir, { recursive: true, force: true });
 });
 
-test('an item no edge of which survives is refused, and nothing is imported', async () => {
+test('an item no edge of which survives is written all the same, since M91', async () => {
   const bed = await scratch();
-  const before = await readdir(path.join(bed.data, 'events'));
+  // Until 13 October 2026 this item was refused and nothing imported (rules
+  // card 7's bar); the owner withdrew the bar, so the record is written and
+  // the refusal logged. tests/m91-apply.test.mjs has the rest.
   const { code, log } = await fire(bed, [item({
     id: '2026-10-13-africa-002',
     qid: SIEGE,
@@ -257,39 +260,30 @@ test('an item no edge of which survives is refused, and nothing is imported', as
   })]);
   assert.equal(code, EXIT.ok);
   const [entry] = log.entries;
-  assert.equal(entry.status, 'refused');
-  assert.equal(entry.written.event, null);
+  assert.equal(entry.status, 'written');
+  assert.ok(entry.written.event);
   assert.deepEqual(entry.written.edges, []);
   assert.deepEqual(entry.refusals.map((r) => r.reason), ['chronology']);
-  // The bar: a record that earns no edge is not imported at all.
-  assert.deepEqual((await readdir(path.join(bed.data, 'events'))).sort(), before.sort());
-  assert.ok(!existsSync(path.join(bed.data, 'imports', 'wikidata-state.json')),
-    'the import was never asked, so there is no cursor');
+  assert.ok(existsSync(path.join(bed.data, 'events', `${entry.written.event}.json`)));
   await rm(bed.dir, { recursive: true, force: true });
 });
 
-test('an item whose every edge falls at the last fence gives the record back', async () => {
+test('an item whose every edge falls at the last fence keeps its record, since M91', async () => {
   const bed = await scratch();
-  const before = {
-    events: (await readdir(path.join(bed.data, 'events'))).sort(),
-    places: (await readdir(path.join(bed.data, 'places'))).sort(),
-  };
   // The arrow of time and the edge already here can only be asked once the
-  // record exists, so this item is imported and then earns nothing: a record
-  // that earns no edge is not imported at all (rules card 7), and what it
-  // wrote comes back off disk.
+  // record exists. Until 13 October 2026 what the item wrote came back off
+  // disk; the record now stays, with its place and the refusal logged.
   const { code, log } = await fire(bed, [item({
     edges: [edge({ from: QID, to: 'fixture-event-a', type: 'caused', quote: FORCED, explanation: because(FORCED) })],
   })]);
   assert.equal(code, EXIT.ok);
   const [entry] = log.entries;
-  assert.equal(entry.status, 'refused');
+  assert.equal(entry.status, 'written');
   assert.deepEqual(entry.refusals.map((r) => r.reason), ['arrow-of-time']);
-  assert.equal(entry.written.event, null);
-  assert.equal(entry.written.place, null);
-  assert.match(entry.note, /off disk again/);
-  assert.deepEqual((await readdir(path.join(bed.data, 'events'))).sort(), before.events);
-  assert.deepEqual((await readdir(path.join(bed.data, 'places'))).sort(), before.places);
+  assert.equal(entry.written.event, EVENT);
+  assert.equal(entry.written.place, PLACE);
+  assert.ok(existsSync(path.join(bed.data, 'events', `${EVENT}.json`)));
+  assert.ok(existsSync(path.join(bed.data, 'places', `${PLACE}.json`)));
   await rm(bed.dir, { recursive: true, force: true });
 });
 
@@ -404,12 +398,14 @@ test('held items are logged skipped and do not take a --max slot', async () => {
   const bed = await scratch();
   const held = path.join(bed.dir, 'held.txt');
   // Five the other branch holds, four by qid and one an existing record's id,
-  // all ahead of the one item this fire can write.
+  // all ahead of the one item this fire can write. Since M91 (change 6) the
+  // existing record is one this branch does not hold: a record on both
+  // branches is this writer's to edit, and tests/m91-apply.test.mjs says so.
   const theirs = [1, 2, 3, 4].map((n) => item({ id: `2026-10-13-africa-10${n}`, qid: `Q930000${n}` }));
   const existing = Object.fromEntries(Object.entries(item({
-    id: '2026-10-13-africa-105', existing: 'fixture-event-t', parents: ['fixture-event-g'], edges: [],
+    id: '2026-10-13-africa-105', existing: 'fixture-event-elsewhere', parents: ['fixture-event-g'], edges: [],
   })).filter(([k]) => k !== 'qid'));
-  await writeFile(held, `${theirs.map((t) => t.qid).join('\n')}\nfixture-event-t\n`, 'utf8');
+  await writeFile(held, `${theirs.map((t) => t.qid).join('\n')}\nfixture-event-elsewhere\n`, 'utf8');
   const { code, log } = await fire(bed, [...theirs, existing, item()], ['--held', held, '--max', '5']);
   assert.equal(code, EXIT.ok);
   const by = new Map(log.entries.map((e) => [e.id, e]));
@@ -419,9 +415,7 @@ test('held items are logged skipped and do not take a --max slot', async () => {
   }
   assert.equal(by.get(item().id)?.status, 'written', 'the writable item behind five held ones is written');
   assert.ok(existsSync(path.join(bed.data, 'events', `${EVENT}.json`)));
-  // The held existing record was not touched.
-  const event = await readJson(path.join(bed.data, 'events', 'fixture-event-t.json'));
-  assert.deepEqual(parentsOf(event), ['fixture-event-f']);
+  assert.ok(!existsSync(path.join(bed.data, 'events', 'fixture-event-elsewhere.json')), 'nothing was written for it');
   await rm(bed.dir, { recursive: true, force: true });
 });
 
@@ -544,13 +538,16 @@ test('a refusal inside the import puts the seeds and the cursor back and says th
   const seedsBefore = await readFile(seedsFile, 'utf8');
   // The quotes verify, and the network goes away between the verification and
   // the import: the first write to the import files has happened by then.
+  // Since M91 the skip step reads the item once for its article title before
+  // anything is written, so the network goes away after that first read.
   const stub = stubFetcher(STUB);
+  let reads = 0;
   const fetcher = {
     get calls() { return stub.calls; },
     get budget() { return stub.budget; },
     get spent() { return stub.spent; },
     async get(url) {
-      if (url.includes('wbgetentities')) throw new TypeError('fetch failed');
+      if (url.includes('wbgetentities') && (reads += 1) > 1) throw new TypeError('fetch failed');
       return stub.get(url);
     },
   };
