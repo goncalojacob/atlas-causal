@@ -110,9 +110,8 @@ in this order, stopping the item at the first step that fails and logging why:
    plain text of the lead and body), normalise whitespace, quotation marks,
    dashes and soft hyphens on both sides, and require the quote as a verbatim
    substring. Then apply the chronology refusal (rules card 10) to the quote
-   as a regular expression over its opening words, the parent rule (card 11)
-   against the item's `parents` and the record's existing parents, and the
-   five-type check. An edge that fails is a refusal with its code
+   as a regular expression over its opening words, and the five-type check
+   (the parent rule of card 11 was removed by the owner on 13 October 2026). An edge that fails is a refusal with its code
    (`quote-not-found`, `chronology`, `parent-to-child`, `type`,
    `endpoint-missing` when `to`/`from` is not an active record). **If no edge
    survives, the item is `refused` and nothing is imported.**

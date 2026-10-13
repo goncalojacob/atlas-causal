@@ -3401,6 +3401,15 @@
         }
       ]
     },
+    "fontainebleau-agreements--first-indochina-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
     "french-conquest-of-morocco--rif-war--reacted-to": {
       "from": "git",
       "versions": [

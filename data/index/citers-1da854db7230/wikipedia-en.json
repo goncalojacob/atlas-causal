@@ -5144,6 +5144,12 @@
     },
     {
       "dissent": false,
+      "id": "fontainebleau-agreements--first-indochina-war--caused",
+      "kind": "edge",
+      "locator": "\"Fontainebleau Agreements\", revision 1312816323"
+    },
+    {
+      "dissent": false,
       "id": "fourth-battle-of-brega--battle-of-sirte-2011--precondition-of",
       "kind": "edge",
       "locator": "\"Fourth Battle of Brega\", revision 1370619930, § Rebel advance on Sirte"
@@ -8357,6 +8363,12 @@
       "id": "taif-agreement--operation-accountability--precondition-of",
       "kind": "edge",
       "locator": "\"Operation Accountability\", revision 1370630524, § Historical background"
+    },
+    {
+      "dissent": false,
+      "id": "taliban-insurgency--republican-insurgency-in-afghanistan--caused",
+      "kind": "edge",
+      "locator": "\"Taliban insurgency\", revision 1379529630"
     },
     {
       "dissent": false,
@@ -15296,6 +15308,12 @@
     },
     {
       "dissent": false,
+      "id": "fontainebleau-agreements",
+      "kind": "event",
+      "locator": "\"Fontainebleau Agreements\", revision 1312816323"
+    },
+    {
+      "dissent": false,
       "id": "fourth-battle-of-brega",
       "kind": "event",
       "locator": "\"Fourth Battle of Brega\", revision 1370619930"
@@ -18677,6 +18695,12 @@
       "id": "tajikistani-civil-war",
       "kind": "event",
       "locator": "\"Tajikistani Civil War\", revision 1370749545"
+    },
+    {
+      "dissent": false,
+      "id": "taliban-insurgency",
+      "kind": "event",
+      "locator": "\"Taliban insurgency\", revision 1379529630"
     },
     {
       "dissent": false,

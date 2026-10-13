@@ -3385,6 +3385,15 @@
         }
       ]
     },
+    "fontainebleau": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
     "fontibon": {
       "from": "git",
       "versions": [

@@ -474,3 +474,5 @@ connected graph nearly every node descends from the oldest one. Do not
 - When a historical fact is involved and you are not sure, say so instead of
   filling it in. A wrong date that looks confident is worse than a gap.
 - Small commits, one logical change each, messages in English.
+
+**Writing rules (13 October 2026).** Every sentence written in this repository, by a person or a routine, follows `docs/writing-rules.md`: plain words, one idea per sentence, no em dashes, semicolons, arrows or slogans, no passive voice without its actor, no jargon where a plain phrase exists. Quoted sources stay as written.

@@ -257,3 +257,44 @@ lands the three branches daily. M42, M42b and the landing fallback stay
 disabled. The owner named no budget; the assistant set the planner's queue at
 about fifty items a day and the writers to stop when the queue is empty, so
 the spend is bounded by the queue. The owner's open questions in §6 stand.
+
+13. From the planner's first day (12 October, `docs/plans/2026-10-12*.md`):
+    the honest yield of the bar is one to four percent of the sentences read,
+    and three rules decide most of what is refused. (a) C8 again: a war may
+    not carry an edge to its own opening engagement, nor an engagement to the
+    war it opened (Operation Searchlight "ultimately led to the Bangladesh
+    Liberation War" is queued with no parent so as not to be its own
+    parent's child). (b) The arrow of time compares the two ends' starts, so a
+    stated cause of a change *inside* an ongoing event (the fall of Kabul in
+    2021 and the insurgency in Khyber Pakhtunkhwa, 2004 onward) is refused;
+    nine refusals in one fire. May an edge point into an event that began
+    earlier, where the article states it? (c) Two Imjin War dates disagree by
+    calendar (`battle-of-chungju` 1592-04-28 against `battle-of-sangju-1592`
+    1592-06-03) and `operation-sutton` (1982-05-23) sits after
+    `battle-of-san-carlos` (from 1982-05-21): the records, not the rule.
+
+## 8. 13 October: the parent-to-child rule removed
+
+The owner, told that the planner's first day refused its clearest sentences
+under A14 (question 13a): *"Ok let's remove the parent to child rule for
+now."* Applied the same hour: `tools/queue/queue.mjs` writes such edges,
+the test that pinned the refusal now asserts the write, rules card 11 and
+M42's amendment A16 record the decision, and the planner's prompt no longer
+applies the rule. Question 13b (the arrow of time into an ongoing event) and
+13c (two dates) stand.
+
+## 9. 13 October: importance first, the bar withdrawn
+
+The owner, the same evening: *"Right now the priority is to add most events
+of historical significance since around 1500, even if for now there is no
+parent or child for it. Just add all events that are relevant and connect
+them when you can. Start by adding the main and most important historical
+event and then progress to adding events that are not as important or that
+are children of the main events."* Applied as A17 (`docs/m42-brief.md`),
+rules card 7, 12 and 13, M91 (the queue may carry an item with no edge; the
+writer imports it; duplicates are caught by title too), and the planner's
+prompt: it ranks by Wikipedia's vital-article levels and lists, then by the
+children of held main events, lanes as the tiebreak. The owner also has
+cloud credits to spend (*"I also have cloud credit sessions that you are
+free to use"*): the planner fires four times a day and the writers take ten
+items a fire.
