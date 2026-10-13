@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "conquest-of-paraiba",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The Conquest of Paraíba article, § Details, opens the account of the expedition with the conquest that preceded it: \"After conquering Recife, Lichthart decided to set sail for Paraíba. In December, Lichthart led an expedition towards Paraíba with a fleet comprising 21 ships and 11 yachts\". The Dutch hold on Recife is what this atlas carries as `dutch-brazil-1630-1654`, whose own summary dates it from 1630 with \"the West India Company’s headquarters and the capital Mauritsstad at Recife\"; the fleet that took Paraíba sailed from there and was the colony’s. `precondition-of` and not `caused`: the article states what the expedition set out from and not that holding Recife made the conquest follow. Probable: Wikipedia alone, at two revisions.",
+  "explanation": "The Conquest of Paraíba article, § Details, opens the account of the expedition with the conquest that came before it: \"After conquering Recife, Lichthart decided to set sail for Paraíba. In December, Lichthart led an expedition towards Paraíba with a fleet comprising 21 ships and 11 yachts\". This atlas carries the Dutch hold on Recife as `dutch-brazil-1630-1654`, whose own summary dates it from 1630 with \"the West India Company’s headquarters and the capital Mauritsstad at Recife\". The fleet that took Paraíba sailed from there and was the colony’s. The type is `precondition-of`, because the article states what the expedition set out from without saying that holding Recife made the conquest follow. The confidence is `probable`, because Wikipedia is the only source, at two revisions.",
   "dispute": null
 }

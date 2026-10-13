@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "second-battle-of-quang-tri",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The second battle is the first one's undoing and the first article says so: \"While the North Vietnamese tried to consolidate their rule over the liberated zones, South Vietnamese General Ngô Quang Trưởng was drawing up a plan to retake the province. The stage was set for the Second Battle of Quảng Trị which would last from 28 June to 16 September 1972, where the ARVN would retake their positions.\" The second article states what there was to retake: the battle ended \"when the South Vietnamese army (ARVN) defeated the North Vietnamese army (PAVN), leading to the ARVN recapturing Quảng Trị Province south of the Thạch Hãn River\". Precondition-of and not caused: the fall of the province is what the counteroffensive was fought to reverse, and the article names the plan and the planner rather than a chain of cause. Probable, and the weaker of this batch's four: the first article's Aftermath section carries Wikipedia's own \"unsourced section\" tag, so the sentence that argues the edge rests on the encyclopedia alone and on no citation of its own.",
+  "explanation": "The second battle undid the first, and the first article says so: \"While the North Vietnamese tried to consolidate their rule over the liberated zones, South Vietnamese General Ngô Quang Trưởng was drawing up a plan to retake the province. The stage was set for the Second Battle of Quảng Trị which would last from 28 June to 16 September 1972, where the ARVN would retake their positions.\" The second article states what there was to retake. The battle ended \"when the South Vietnamese army (ARVN) defeated the North Vietnamese army (PAVN), leading to the ARVN recapturing Quảng Trị Province south of the Thạch Hãn River\". The type is `precondition-of`. The fall of the province is what the counteroffensive was fought to reverse, and the article names the plan and the planner in place of a chain of cause. The confidence is `probable`, and this is the weaker of this batch's four. The first article's Aftermath section carries Wikipedia's own \"unsourced section\" tag, so the sentence that argues the edge rests on the encyclopedia alone and on no citation of its own.",
   "dispute": null
 }

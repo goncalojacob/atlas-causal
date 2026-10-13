@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "ogaden-war",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The article treats the Ogaden war as an episode of the civil-war years — its account of it is a subsection of § War — and states the sequence: \"the early 1970s saw the Somali liberation movement for the Ogaden region continue to gain momentum\", and \"by June 1977, the Western Somali Liberation Front (WSLF) had been successful in forcing the Ethiopian army out of much of the Ogaden and into the major urban strongholds of Jigjiga, Dire Dawa and Harar. President of Somalia Siad Barre decided to intensify the war by involving the Somali army as he believed it would allow the WSLF to press home their growing victories… **On 13 July 1977, the Ogaden War was triggered when the Somali Democratic Republic invaded the Ogaden region in order to assist the WSLF.**\" `enabled` and not `caused`: what the article says the civil war supplied is an Ethiopian army already losing ground, and it credits the invasion to Barre's decision.",
+  "explanation": "The article treats the Ogaden war as an episode of the civil-war years. Its account of that war is a subsection of § War. It states the sequence: \"the early 1970s saw the Somali liberation movement for the Ogaden region continue to gain momentum\", and \"by June 1977, the Western Somali Liberation Front (WSLF) had been successful in forcing the Ethiopian army out of much of the Ogaden and into the major urban strongholds of Jigjiga, Dire Dawa and Harar. President of Somalia Siad Barre decided to intensify the war by involving the Somali army as he believed it would allow the WSLF to press home their growing victories… **On 13 July 1977, the Ogaden War was triggered when the Somali Democratic Republic invaded the Ogaden region in order to assist the WSLF.**\" The type is `enabled`. What the article says the civil war supplied is an Ethiopian army already losing ground, and it credits the invasion to Barre's decision.",
   "dispute": null
 }
