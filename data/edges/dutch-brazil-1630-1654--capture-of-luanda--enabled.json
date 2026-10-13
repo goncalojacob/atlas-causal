@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-30",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,6 +34,6 @@
   "to": "capture-of-luanda",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The expedition that took Luanda was Dutch Brazil’s, not the Republic’s: “In 1641 Johan Maurits sent an expedition under Admiral Cornelis Jol from Recife in Dutch Brazil to seize the Angolan capital of Luanda.” The governor, the fleet and the port of departure are all the Brazilian colony’s, and the same article says why that colony wanted Angola: it “couldn’t survive without the slaves from Angola”. `enabled` rather than `caused`, because the colony furnished the means and the command and not the decision; `probable`, because the only source the atlas can open here is the article itself (rule 22).",
+  "explanation": "Dutch Brazil sent the expedition that took Luanda: “In 1641 Johan Maurits sent an expedition under Admiral Cornelis Jol from Recife in Dutch Brazil to seize the Angolan capital of Luanda.” The governor, the fleet and the port of departure are all the Brazilian colony’s. The same article says why that colony wanted Angola. It “couldn’t survive without the slaves from Angola”. The type is `enabled`, because the colony supplied the means and the command without supplying the decision. The confidence is `probable`, because the article itself is the only source the atlas can open here (rule 22).",
   "dispute": null
 }

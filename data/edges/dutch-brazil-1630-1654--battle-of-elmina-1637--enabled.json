@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-elmina-1637",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The ships that took Elmina were taken off Brazil, which the article states as the first thing it says about the attack: “In 1637, the Dutch West India Company detached nine ships from the forces attacking the Portuguese in Brazil to send them against the Portuguese in Fort Elmina.” That is the company's Brazilian war paying for its African one — nine ships and 1,300 men out of a fleet already in the South Atlantic — so `enabled` and not `caused`: the article gives the Brazil campaign as what made the expedition possible and says nothing about what made the company want the fort. Probable: Wikipedia alone.",
+  "explanation": "The ships that took Elmina came off Brazil. The article opens its account of the attack with that: “In 1637, the Dutch West India Company detached nine ships from the forces attacking the Portuguese in Brazil to send them against the Portuguese in Fort Elmina.” The company's Brazilian war paid for its African one, nine ships and 1,300 men out of a fleet already in the South Atlantic. The type is `enabled`, because the article gives the Brazil campaign as what made the expedition possible and says nothing about what made the company want the fort. The confidence is `probable`, because Wikipedia is the only source.",
   "dispute": null
 }

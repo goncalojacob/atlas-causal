@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "battle-of-colhuacatonco",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The assault was launched because the siege was going nowhere. The Battle of Colhuacatonco article's lead: \"The battle was fought as a result of the Spanish soldiers growing dissatisfied with the lack of progress done during the siege thus far, as the Spanish-Tlaxcalan forces had failed to take any important amount of territory since the beginning of June. Captain Hernán Cortés of the Spanish decided to launch a massive assault onto the city to take the market of Tlatelolco.\" The Fall of Tenochtitlan article is this atlas's record of that siege, which it dates from 26 May to 13 August 1521. `caused`: the article says \"as a result of\" and names nothing else. It also says what this edge does not: \"the battle did not stop the city from falling to the Spanish Empire in August of the same year\", so nothing here runs the other way. Probable: Wikipedia alone, at two revisions.",
+  "explanation": "Cortés launched the assault because the siege was going nowhere. The Battle of Colhuacatonco article's lead: \"The battle was fought as a result of the Spanish soldiers growing dissatisfied with the lack of progress done during the siege thus far, as the Spanish-Tlaxcalan forces had failed to take any important amount of territory since the beginning of June. Captain Hernán Cortés of the Spanish decided to launch a massive assault onto the city to take the market of Tlatelolco.\" The Fall of Tenochtitlan article is this atlas's record of that siege, which it dates from 26 May to 13 August 1521. The type is `caused`, because the article says \"as a result of\" and names nothing else. The article also says what this edge does not say: \"the battle did not stop the city from falling to the Spanish Empire in August of the same year\". Nothing here runs the other way. The confidence is `probable`, because Wikipedia is the only source, at two revisions.",
   "dispute": null
 }

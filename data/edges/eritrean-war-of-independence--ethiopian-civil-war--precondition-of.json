@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "ethiopian-civil-war",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The civil war's own article says the Eritrean war was already being fought when it began: **\"groups like the Eritrean Peoples Liberation Front (EPLF) and the Western Somali Liberation Front (WSLF) had already been fighting against the Ethiopian Empire in the northern Eritrean War of Independence and southern Ogaden insurgency\"**, and the Derg \"used large scale counterinsurgency military campaigns and the Qey Shibir (Red Terror) to repress the rebels\". The Eritrean war's article files itself under the civil war in turn — its infobox reads \"part of Opposition to Haile Selassie, **the Ethiopian Civil War**, the Cold War, the Sino-Soviet split, the conflicts in the Horn of Africa, and the Revolutions of 1989\" — but it begins in 1961 and the civil war in 1974, so it is a precondition of it and not a part of it, and no `parent` was written.",
+  "explanation": "The civil war's own article says the Eritrean war was already being fought when it began: **\"groups like the Eritrean Peoples Liberation Front (EPLF) and the Western Somali Liberation Front (WSLF) had already been fighting against the Ethiopian Empire in the northern Eritrean War of Independence and southern Ogaden insurgency\"**. The Derg \"used large scale counterinsurgency military campaigns and the Qey Shibir (Red Terror) to repress the rebels\". The Eritrean war's article files itself under the civil war in turn. Its infobox reads \"part of Opposition to Haile Selassie, **the Ethiopian Civil War**, the Cold War, the Sino-Soviet split, the conflicts in the Horn of Africa, and the Revolutions of 1989\". The Eritrean war begins in 1961 and the civil war in 1974, so the atlas makes the Eritrean war a precondition of the civil war and writes no `parent`.",
   "dispute": null
 }

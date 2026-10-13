@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -38,5 +38,5 @@
   "to": "schengen-in-force-1995",
   "type": "precondition-of",
   "confidence": "consensus",
-  "explanation": "Schengen was an agreement among member states of the European Communities, made outside the Community treaties but not outside the Community: only members were party to it, and Portugal had been one for five years when it signed in 1991. The precondition is institutional rather than causal — accession did not make Portugal want an open border with Spain, and Lisbon and Madrid had their own reasons for wanting one — but without accession there would have been nothing for Portugal to sign. That much is not in dispute, which is why it is marked consensus. The question this link does not answer is why the two Iberian states joined the first wave instead of waiting to see how it worked."
+  "explanation": "Schengen was an agreement among member states of the European Communities. The states made it outside the Community treaties, and only members were party to it. Portugal had been a member for five years when it signed in 1991. The precondition is institutional. Accession did not make Portugal want an open border with Spain, and Lisbon and Madrid had their own reasons for wanting one. Without accession there would have been nothing for Portugal to sign. Nobody disputes that much, which is why the confidence is `consensus`. The link does not answer why the two Iberian states joined the first wave, when they could have waited to see how it worked."
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": "2026-10-13",
   "origin": {
     "tool": "wikidata"
   },
@@ -47,10 +47,10 @@
   },
   "place": null,
   "region": "africa",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
   "actors": [],
   "retraction": {
     "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 18 under brief §1: the record earns no honest edge, and it is the batch's one refusal. It was imported to unlock soweto-uprising, whose own retraction reason asks for \"any South African record of the apartheid period\" — and it is one, but the article does not argue the link. The English article of the uprising, at revision 1369412868, gives its cause as the Afrikaans Medium Decree of 1974 and names Sharpeville once only, in a paragraph describing a 1999 BBC broadcast, which is a gloss and not a claim. The English article of the massacre, at revision 1375931445, argues forward to UN Security Council Resolution 134, to South Africa's departure from the Commonwealth in 1961, to the banning of the PAC and the ANC and to the founding of Poqo and Umkhonto we Sizwe — none of them a record here — and not to 1976. \"Internal resistance to apartheid\", at revision 1373723428, puts the two in one sequence without relating them, which is the class of claim §4 of docs/m42-connections.md refuses. It waits on a South African record between 1960 and 1976 that some article argues from the massacre to, or on the banning of the ANC and the PAC."
+    "reason": "Retracted in M42 batch 18 under brief §1: the record earns no honest edge, and it is the batch's one refusal. The import brought it in to unlock soweto-uprising, whose own retraction reason asks for \"any South African record of the apartheid period\". This record is one, and the article still does not argue the link. The English article of the uprising, at revision 1369412868, gives its cause as the Afrikaans Medium Decree of 1974. It names Sharpeville once only, in a paragraph describing a 1999 BBC broadcast. That paragraph is a gloss and makes no claim. The English article of the massacre, at revision 1375931445, argues forward to UN Security Council Resolution 134, to South Africa's departure from the Commonwealth in 1961, to the banning of the PAC and the ANC and to the founding of Poqo and Umkhonto we Sizwe. The atlas holds none of those four, and the article argues nothing forward to 1976. \"Internal resistance to apartheid\", at revision 1373723428, puts the two in one sequence without relating them. Section 4 of docs/m42-connections.md refuses that class of claim. It waits on a South African record between 1960 and 1976 that some article argues from the massacre to, or on the banning of the ANC and the PAC."
   }
 }

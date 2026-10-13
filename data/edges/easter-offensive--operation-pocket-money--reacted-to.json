@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "operation-pocket-money",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "Read in this direction the edge says the mining campaign was the answer to the offensive, which is what the article states as the campaign's purpose: \"Its purpose was to halt or slow the transportation of supplies and materials for the Nguyen Hue Offensive (known in the West as the Easter Offensive), an invasion of the Republic of Vietnam (South Vietnam), by forces of the People's Army of Vietnam (PAVN), that had been launched on 30 March.\" The Background section dates the decision to the offensive's progress: \"The U.S. was unwilling to suffer the humiliation of accelerating withdrawal as Quảng Trị Province began to collapse before the North Vietnamese Easter offensive. On 4 May, Joint Chiefs of Staff chairman Thomas Hinman Moorer ordered Chief of Naval Operations Elmo Zumwalt to plan a naval mining mission under the code name of Pocket Money.\" Mining Haiphong had been considered for years and rejected; what the article says changed was the offensive. Probable: Wikipedia alone (rule 22).",
+  "explanation": "The edge says the mining campaign answered the offensive, which is what the article gives as the campaign's purpose: \"Its purpose was to halt or slow the transportation of supplies and materials for the Nguyen Hue Offensive (known in the West as the Easter Offensive), an invasion of the Republic of Vietnam (South Vietnam), by forces of the People's Army of Vietnam (PAVN), that had been launched on 30 March.\" The Background section dates the decision to the offensive's progress: \"The U.S. was unwilling to suffer the humiliation of accelerating withdrawal as Quảng Trị Province began to collapse before the North Vietnamese Easter offensive. On 4 May, Joint Chiefs of Staff chairman Thomas Hinman Moorer ordered Chief of Naval Operations Elmo Zumwalt to plan a naval mining mission under the code name of Pocket Money.\" The United States had considered mining Haiphong for years and had turned it down. What the article says changed was the offensive. The confidence is `probable`, because Wikipedia is the only source (rule 22).",
   "dispute": null
 }

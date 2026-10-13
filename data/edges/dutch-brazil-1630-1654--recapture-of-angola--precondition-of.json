@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,6 +34,6 @@
   "to": "recapture-of-angola",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The later record’s own cited article opens its account with the expedition Dutch Brazil sent: “In 1641 Johan Maurits sent an expedition under Admiral Cornelis Jol from Recife in Dutch Brazil to seize the Angolan capital of Luanda. The Dutch were able to easily capture Luanda in August as the Portuguese forces were occupied inland in a campaign against the Kingdom of Kongo. The two countries fought to a stalemate over Angola, until in 1648 the governor of Rio de Janeiro and Angola, Salvador de Sá, … besieged them and regained it for Portugal exactly seven years after its loss.” `precondition-of` and not `caused`: the colony at Recife did not produce the Portuguese reconquest, which was Portugal’s own act seven years later; it put the Dutch garrison in Luanda that the reconquest was a reconquest of. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "explanation": "The later record’s own cited article opens its account with the expedition Dutch Brazil sent: “In 1641 Johan Maurits sent an expedition under Admiral Cornelis Jol from Recife in Dutch Brazil to seize the Angolan capital of Luanda. The Dutch were able to easily capture Luanda in August as the Portuguese forces were occupied inland in a campaign against the Kingdom of Kongo. The two countries fought to a stalemate over Angola, until in 1648 the governor of Rio de Janeiro and Angola, Salvador de Sá, … besieged them and regained it for Portugal exactly seven years after its loss.” The type is `precondition-of`. The colony at Recife did not produce the Portuguese reconquest, which was Portugal’s own act seven years later. What it did was put the Dutch garrison in Luanda that the reconquest took back. The confidence is `probable`, because the encyclopaedia article itself is the only source the atlas can open here (rule 22).",
   "dispute": null
 }
