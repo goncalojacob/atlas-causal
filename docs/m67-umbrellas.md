@@ -1537,3 +1537,15 @@ The writer imported `1556-shaanxi-earthquake` from the planner's queue under the
 ## Writer, 13 October 2026: `attack-on-pearl-harbor`, filed under `world-war-ii` with neither an actor nor a place
 
 The writer imported `attack-on-pearl-harbor` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `world-war-ii` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella. The planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `anglo-zulu-war`, bare
+
+The writer imported `anglo-zulu-war` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `european-colonization-of-the-americas`, bare
+
+The writer imported `european-colonization-of-the-americas` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `war-of-the-pacific`, bare
+
+The writer imported `war-of-the-pacific` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
