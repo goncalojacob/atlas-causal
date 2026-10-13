@@ -377,3 +377,12 @@ the writers take ten items a fire.
     no Wikidata id (the Industrial Revolution, the Haitian Revolution, the
     Spanish-American War), so every fire reads them as absent until a
     curation pass writes the id on the record.
+
+## 10. 13 October: Opus and Sonnet are enough
+
+The owner, asked whether Fable was in use: *"Are you using fable anywhere?
+Opus and sonnet should be enough."* This replaces the 22 September line
+that reviews and coordination always use Fable. Reviews and builds run on
+Opus; the writers and other mechanical routines run on Sonnet. The
+supervising session of 12 and 13 October ran on Fable; a new one starts on
+Opus.
