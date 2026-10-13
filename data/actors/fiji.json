@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -51,7 +51,7 @@
   "names": [
     "Fiji"
   ],
-  "summary": "Approximately 18,274 km² and about 926,276 people (2018), from Wikidata's Q712 (P2046, P1082). The English Wikipedia article \"Fiji\", at revision 1375795144, opens: \"Fiji, officially the Republic of Fiji, is an archipelagic country in Melanesia, part of Oceania in the South Pacific Ocean. It lies about 1,100 nautical miles north-northeast of New Zealand. Fiji consists of an archipelago of more than 330 islands—of which about 110 are permanently inhabited—and more than 500 islets, amounting to a total land area of about 18,300 square kilometres (7,100 sq mi).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 950 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1970 to where the dataset stops, in 2019. Its last capital in the dataset is Suva. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1970-10-10. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 18,274 km² and about 926,276 people (2018), from Wikidata's Q712 (P2046, P1082). The English Wikipedia article \"Fiji\", at revision 1375795144, opens: \"Fiji, officially the Republic of Fiji, is an archipelagic country in Melanesia, part of Oceania in the South Pacific Ocean. It lies about 1,100 nautical miles north-northeast of New Zealand. Fiji consists of an archipelago of more than 330 islands—of which about 110 are permanently inhabited—and more than 500 islets, amounting to a total land area of about 18,300 square kilometres (7,100 sq mi).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 950 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1970 to where the dataset stops, in 2019. Its last capital in the dataset is Suva. The code is mapped onto more than one actor (data/imports/cshapes-actors.json). This record holds the periods from 1970-10-10. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1970,
     "end": null

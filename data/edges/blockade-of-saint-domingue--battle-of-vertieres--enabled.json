@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "battle-of-vertieres",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The blockade article says what it did to the French position: \"In the north of the country, the French forces were isolated in the two large ports of Cap-Français and Môle-Saint-Nicolas and a few smaller settlements, all supplied by a French naval force based primarily at Cap-Français\", and later that \"by the end of the month, the garrison was starving\". The Vertières article describes Rochambeau \"at bay\" at Cap-Français with 5,000 troops. Enabled and not caused: the sea blockade left the last French army fixed and unsupplied where the battle was fought, and neither article says it won the battle. Probable: Wikipedia alone.",
+  "explanation": "The blockade article says what it did to the French position: \"In the north of the country, the French forces were isolated in the two large ports of Cap-Français and Môle-Saint-Nicolas and a few smaller settlements, all supplied by a French naval force based primarily at Cap-Français\", and later that \"by the end of the month, the garrison was starving\". The Vertières article describes Rochambeau \"at bay\" at Cap-Français with 5,000 troops. The type is `enabled`. The sea blockade left the last French army fixed and unsupplied where the battle was fought, and neither article says the blockade won the battle. Probable, on Wikipedia alone.",
   "dispute": null
 }

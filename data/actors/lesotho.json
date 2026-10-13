@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -51,7 +51,7 @@
   "names": [
     "Lesotho"
   ],
-  "summary": "Approximately 30,355 km² and about 2 million people (2016), from Wikidata's Q1013 (P2046, P1082). The English Wikipedia article \"Lesotho\", at revision 1375770613, opens: \"Lesotho, officially the Kingdom of Lesotho, is a landlocked country in Southern Africa. Surrounded by South Africa, it is the largest of the three sovereign enclaves. Lesotho is located in the Maloti Mountains, with the highest peak in southern Africa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 570 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1966 to where the dataset stops, in 2019. Its last capital in the dataset is Maseru. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1966-10-04. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 30,355 km² and about 2 million people (2016), from Wikidata's Q1013 (P2046, P1082). The English Wikipedia article \"Lesotho\", at revision 1375770613, opens: \"Lesotho, officially the Kingdom of Lesotho, is a landlocked country in Southern Africa. Surrounded by South Africa, it is the largest of the three sovereign enclaves. Lesotho is located in the Maloti Mountains, with the highest peak in southern Africa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 570 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1966 to where the dataset stops, in 2019. Its last capital in the dataset is Maseru. The code is mapped onto more than one actor (data/imports/cshapes-actors.json). This record holds the periods from 1966-10-04. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1966,
     "end": null

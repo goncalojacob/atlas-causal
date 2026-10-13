@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-02",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "treaty-of-paris-1783",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The near end's own article closes its lead with \"The Treaty of Paris in 1783 restored these territories to the Dutch\". The restoration is a clause about these two colonies and it presupposes their capture: there is nothing to restore unless they were taken. `precondition-of` and not `caused` because the treaty was brought about by the war and not by this expedition, and the sentence claims no more than that the treaty undid what the expedition did. `probable`, on one article's lead at one revision.",
+  "explanation": "The near end's own article closes its lead with \"The Treaty of Paris in 1783 restored these territories to the Dutch\". The restoration is a clause about these two colonies and it presupposes their capture: there is nothing to restore unless they were taken. The type is `precondition-of`, because the war brought the treaty about and this expedition did not, and the sentence claims no more than that the treaty undid what the expedition did. `probable`, on one article's lead at one revision.",
   "dispute": null
 }

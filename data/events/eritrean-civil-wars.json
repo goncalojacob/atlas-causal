@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-29",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -31,7 +31,7 @@
   },
   "retraction": {
     "on": "2026-09-29",
-    "reason": "A15(8): the item’s English sitelink \"Eritrean Civil Wars\" redirects to \"Eritrean War of Independence\" (Q607257), a different item this atlas already holds as its own record, and that article names the Eritrean Civil Wars only in its See also list - no section is about them. So there is no article and no section to read a span from, the quoted summary was the War of Independence’s lead and not this record’s, and the record carries no edge to anything. Retracted under §1: a record that cannot earn an edge is retracted with its reason."
+    "reason": "Review A15 (8) found that the item’s English sitelink \"Eritrean Civil Wars\" redirects to \"Eritrean War of Independence\" (Q607257), a different item this atlas already holds as its own record, and that article names the Eritrean Civil Wars only in its See also list, and no section is about them. So there is no article and no section to read a span from, the quoted summary was the War of Independence’s lead and not this record’s, and the record carries no edge to anything. Section 1 of the brief says that a record which cannot earn an edge is retracted with its reason, and that is what this is."
   },
   "wikidata": "Q2139988",
   "wikipedia": {
@@ -61,7 +61,7 @@
   },
   "place": "eritrea-q986",
   "region": "africa",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane, derived from its own point. This event points at no place record, so the timeline has nothing else to go on.",
   "parent": "eritrean-war-of-independence",
   "actors": []
 }

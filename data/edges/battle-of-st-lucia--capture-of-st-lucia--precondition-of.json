@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "capture-of-st-lucia",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The naval action is what kept the island's garrison from being relieved: \"During the Battle of St. Lucia, the British fleet defeated a French fleet sent to reinforce the island... Realising that another British fleet would soon arrive with reinforcements, the French garrison surrendered.\" Precondition-of: the surrender follows from the reinforcement having been stopped, which is what the battle did.",
+  "explanation": "The naval action is what kept the island's garrison from being relieved: \"During the Battle of St. Lucia, the British fleet defeated a French fleet sent to reinforce the island... Realising that another British fleet would soon arrive with reinforcements, the French garrison surrendered.\" The type is `precondition-of`. The battle stopped the reinforcement, and the surrender follows from that.",
   "dispute": null
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-grenada",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The sea battle was fought over what the landing had just done: \"A British fleet led by Admiral John Byron had sailed in an attempt to relieve Grenada, which French forces under Charles Henri Hector, Count of Estaing had just captured.\" Precondition-of: without the capture there is nothing for Byron to sail to relieve.",
+  "explanation": "The sea battle was fought over what the landing had just done: \"A British fleet led by Admiral John Byron had sailed in an attempt to relieve Grenada, which French forces under Charles Henri Hector, Count of Estaing had just captured.\" The type is `precondition-of`. Without the capture there is nothing for Byron to sail to relieve.",
   "dispute": null
 }

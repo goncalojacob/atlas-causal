@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "world-war-i",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The English article says the convention \"would eventually form a component of the Triple Entente\", that the treaty furthered the Anglo-Russian interest in outflanking the German Empire, and that \"for Britain and Russia, the agreement was important in establishing a diplomatic alignment that endured until the First World War\". The alignment and not the war is what the article claims the convention made, which is why this is a precondition and nothing stronger.",
+  "explanation": "The English article says the convention \"would eventually form a component of the Triple Entente\", that the treaty furthered the Anglo-Russian interest in outflanking the German Empire, and that \"for Britain and Russia, the agreement was important in establishing a diplomatic alignment that endured until the First World War\". The article claims the convention made the alignment, and does not claim it made the war. That is why the type is `precondition-of` and nothing stronger.",
   "dispute": null
 }

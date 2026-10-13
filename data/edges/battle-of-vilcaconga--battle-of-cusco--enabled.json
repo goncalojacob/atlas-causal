@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-cusco",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The Vilcaconga article makes the link itself and in one sentence: \"Vilcaconga ensured that the Spanish would not be stopped on their way to the Incan capital, Cuzco. It was captured in the Battle of Cuzco and Pizarro entered the city in triumph on November 15, 1533.\" The same section says the combined force of de Soto and Almagro \"managed to rout Quizquiz's forces and press further towards Cuzco\". `enabled` and not `caused`: the article says the road to Cuzco was held open, not that Vilcaconga brought the capture about. Probable: Wikipedia alone at one revision — the only work the article cites, a chapter by John F. Guilmartin with no page and no identifier, cannot be written as a source record under rule 13.",
+  "explanation": "The Vilcaconga article makes the link itself and in one sentence: \"Vilcaconga ensured that the Spanish would not be stopped on their way to the Incan capital, Cuzco. It was captured in the Battle of Cuzco and Pizarro entered the city in triumph on November 15, 1533.\" The same section says the combined force of de Soto and Almagro \"managed to rout Quizquiz's forces and press further towards Cuzco\". The type is `enabled`. The article says the road to Cuzco was held open. It does not say that Vilcaconga brought the capture about. Probable, on Wikipedia alone at one revision. The only work the article cites is a chapter by John F. Guilmartin with no page and no identifier, which rule 13 does not let anyone write as a source record.",
   "dispute": null
 }
