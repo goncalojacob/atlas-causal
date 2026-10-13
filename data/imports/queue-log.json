@@ -962,6 +962,126 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-064",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "great-turkish-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-065",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-vienna",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-066",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "great-northern-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-067",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-spanish-succession",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-068",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "1755-lisbon-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-069",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "seven-years-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-070",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "congress-of-vienna",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-071",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "july-revolution",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-072",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "revolutions-of-1848",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-073",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "crimean-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
