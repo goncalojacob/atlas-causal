@@ -251,9 +251,9 @@ test('the bibliography counts the works apart from the base maps', () => {
   const citations = (list) => list.reduce((n, source) => n + (source.citationCount ?? 0), 0);
   assert.equal(citations(maps) + citations(works), citations(sources));
   for (const list of [maps, works]) {
-    assert.ok(html.includes(`${list.length} source${list.length === 1 ? '' : 's'},`),
+    assert.ok(html.includes(`${list.length} source${list.length === 1 ? '' : 's'}.`),
       'each heading carries its own count');
-    assert.ok(html.includes(`carrying ${citations(list)} citation`),
+    assert.ok(html.includes(`, ${citations(list)} time${citations(list) === 1 ? '' : 's'} in all.`),
       'and its own share of the citations');
   }
   // Which sources are base maps is asked of `origin.tool` — the two territory
