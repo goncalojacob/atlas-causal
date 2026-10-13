@@ -25822,3 +25822,5 @@ place, and says so on stdout. **No record was written** and there is no display 
 M92 done
 
 Writer B started 2026-10-13T03:42:21Z by scheduled
+
+Writer B 2026-10-13T03:46:04Z: 1 written, 0 partial, 0 refused, 0 skipped
