@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anglo-zulu-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q228911",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Anglo-Zulu War",
+    "pt": "Guerra Anglo-Zulu"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q228911"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Zulu War\", revision 1375710834"
+    }
+  ],
+  "title": "Anglo-Zulu War",
+  "summary": "The English Wikipedia article \"Anglo-Zulu War\", at revision 1375710834, opens: \"The Anglo-Zulu War, or simply the Zulu War, was fought in present-day South Africa from January to early July 1879 between forces of the British Empire and the Zulu Kingdom. Two famous battles of the war were the Zulu victory at Isandlwana and the British defence at Rorke's Drift.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q228911, imported by tools/import/wikidata.mjs. The item's own description reads \"war between the British Empire and the Zulu Kingdom fought in the Zulu lands in South Africa in 1879\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879,
+    "date": "1879-01-11",
+    "endDate": "1879-07-04"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
