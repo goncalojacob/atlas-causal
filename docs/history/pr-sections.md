@@ -4676,3 +4676,57 @@ Four suites, 45 tests now, 0 skipped. Deviations **1570 to 1572**.
 6. **Deviation numbers.** 1433 is M89's, and 1434 and 1435 are M42's and 1436 M42b's in their pool files, so M90's three are 1570 to 1572, the first free run below the planner's 1600.
 7. **Cycles.** `parent-cycle` for a queued parent already inside the record, `edge-cycle` for the reverse of an active edge — *"an existing item may not file a parent that sits inside it, nor write the reverse of an active edge"*, and the two pure verdict tests.
 8. **`state.mjs`'s no-place row** is labelled *"active events whose place is not a string"*, and the header says it is not the pools' "no place with a point" — *"the print is under eighty lines, and says what it left out when it is not"*.
+
+## W1: the site's own prose, made plain
+
+The owner asked on 13 October for plain text without AI slop. W1 rewrote the
+prose a reader sees, following `docs/writing-rules.md`. It covers the root
+pages, `README.md`, and the strings in `src/` that a reader or contributor
+reads. Records under `data/`, quoted source text, code comments, ids, field
+names and class names did not change. Every fact and number stayed. Tests
+that pinned a changed sentence now pin the new sentence exactly.
+
+One example per page:
+
+- `about.html`. Before: "Confidence is defined by evidence, so that it can
+  be checked rather than felt." After: "The confidence level of a link
+  depends on its sources, so a reader can check it."
+- `index.html`. Before: the badge "synthetic fixtures — not history". After:
+  "invented test data".
+- `contribute.html`. Before: "No sources, no submit." After: "Every record
+  needs a source."
+- `review.html`. Before: "This page is a maintainer's tool, not part of the
+  atlas." After: "This page is a tool for maintainers. The map does not link
+  to it."
+- `entry.html` and `src/entry/`. Before: "Open this on the map and the
+  timeline →". After: "Open this on the map and the timeline".
+- `sources.html` and `src/sources/bibliography.js`. Before: "3 sources, 2 of
+  them cited, carrying 13 citations between them." After: "3 sources. The
+  records cite 2 of them, 13 times in all."
+- `narratives.html` and `src/narratives/list.js`. Before: "an account that
+  crosses two listed under both". After: "A narrative that crosses two
+  centuries appears under both."
+- `essay.html`. Before: "Pick an event, follow its consequences forward, and
+  — this is the part the format exists for — see which other branches fed
+  the endpoint you arrived at". After: "You pick an event and follow its
+  consequences forward. The atlas then shows which other branches also led
+  to the event you reached."
+- `README.md`. Before: "No dependencies, no build step, nothing to install
+  but Node for the tools." After: "There are no dependencies and no build
+  step. The tools need Node, and nothing else needs installing."
+- The cards and the intro (`src/intro.js`, `src/panel/`). Before: "Click an
+  event — a mark on the map, a bar on the timeline, a dot on the graph."
+  After: "Click an event. It is a mark on the map, a bar on the timeline or a
+  dot on the graph."
+- The views and controls (`src/window-band.js` and the rest). Before: one
+  sentence for four gestures. After: one sentence per gesture.
+- The writer pages and the validator (`src/contribute/`, `src/review/`,
+  `src/validate/`). Before: "a tenure is held by a person, not by a <type>".
+  After: "a person holds a tenure, and this one names a <type>".
+
+Page titles now read "Atlas causal: About" and so on, without the em dash.
+Middle dots that separate fields on a meta line, and the arrow glyphs on
+buttons and on the edge card head, stayed: they are layout, not sentences.
+The `README.md` still says the first part is Portuguese expansion and that no
+language model wrote any record. Those are facts the rewrite kept, and the
+owner may want to correct them.
