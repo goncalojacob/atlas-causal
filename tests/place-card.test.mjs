@@ -19,7 +19,7 @@ const context = (atlas) => ({
   laneLabel: (region) => region ?? '',
   startYear: (event) => bounds(event.when.start).min,
   lensControl: (kind, id) => `<button type="button" class="link small lens-control" data-action="focus" data-focus="${kind}:${id}">show only these</button>`,
-  entryLink: (kind, id) => `<p class="entry-link"><a href="entry.html?id=${esc(id)}">Read the full entry →</a></p>`,
+  entryLink: (kind, id) => `<p class="entry-link"><a href="entry.html?id=${esc(id)}">Read the full entry</a></p>`,
   discussLink: () => '<p class="discuss"><a href="#">Discuss this record</a></p>',
   wikipediaHtml: () => '',
 });
@@ -41,7 +41,7 @@ test('the place card is sections with counts, opening on what happened there', (
   // A place is a geographic fact and is exempt from "every node cites a
   // source" (M9), so a zero here is the record being right, not missing.
   assert.equal(count(html, 'sources'), String(atlas.citationCount('place', 'lisbon')));
-  assert.match(html, /A place is a geographic fact and need cite nothing\./);
+  assert.match(html, /A place is a fact of geography and does not need a source\./);
 });
 
 test('a place reached from a source card opens its sources', () => {

@@ -25779,3 +25779,4 @@ with the rule, each said in the account. The pure suite: 1,998 tests, 1,998 pass
 `validate --index` 0 errors at every commit.
 
 M91 done
+W1 done

@@ -188,7 +188,7 @@ export function createMap(container, { atlas, state, onCluster = null }) {
   const territoriesNote = document.createElement('p');
   territoriesNote.className = 'map-note';
   territoriesNote.hidden = true;
-  territoriesNote.textContent = 'The territories could not be loaded; the borders drawn are the last that arrived.';
+  territoriesNote.textContent = 'The territories failed to load. The map shows the last borders that arrived.';
   const presences = createPresencesLayer(presencesGroup, projection, {
     atlas,
     onSelect: (id) => state.set({ actor: id, selected: null, chain: [] }),

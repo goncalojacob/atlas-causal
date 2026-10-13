@@ -72,7 +72,7 @@ export function entryPage(template, { kind, record, markup }) {
 
   const titleTag = /<title>[^<]*<\/title>/;
   if (!titleTag.test(html)) throw new Error('entry.html: no <title> to name the record in');
-  html = html.replace(titleTag, `<title>${esc(title)} — Atlas causal</title>`);
+  html = html.replace(titleTag, `<title>Atlas causal: ${esc(title)}</title>`);
 
   const head = '<!--prerender:head-->';
   if (!html.includes(head)) throw new Error(`entry.html: no ${head} to put the base and the canonical link in`);

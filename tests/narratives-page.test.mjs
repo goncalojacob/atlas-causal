@@ -100,7 +100,7 @@ test('the fixture narrative crosses two centuries and is listed under both', asy
   // The card opens the account at its first step, which is what the page is
   // for; step 0 is step one, as the URL has counted since M12.
   assert.match(markup, /index\.html\?narrative=fixture-narrative-one&amp;step=0/);
-  assert.match(markup, /an account that crosses two listed under both/);
+  assert.match(markup, /A narrative that crosses two centuries appears under both\./);
 });
 
 // Each narrative in `data/` is listed, with its narrator and its years. This
@@ -190,8 +190,8 @@ test('order, escaping and the empty case', () => {
   assert.match(nasty, /&lt;script&gt;/);
   assert.match(nasty, /a &amp; b/);
 
-  assert.match(narrativesHtml([], records), /No narrative has been written yet/);
-  assert.match(narrativesHtml([gone], records), /No narrative has been written yet/);
+  assert.match(narrativesHtml([], records), /Nobody has written a narrative yet/);
+  assert.match(narrativesHtml([gone], records), /Nobody has written a narrative yet/);
   // An unsigned account says so rather than showing an empty line — to a
   // maintainer. The published page carries the atlas's own byline whatever the
   // record says (M82, A2).

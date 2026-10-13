@@ -163,7 +163,7 @@ test('rule 26: a tenure is held by a person, at an office', async () => {
   // A party does not hold a presidency.
   r = await run((fx) => fx.records.push(tenure('synthetic-tenure', { person: 'fixture-polity-three' })));
   assert.equal(rulesHit(r, 26).length, 1, messages(r));
-  assert.match(rulesHit(r, 26)[0].message, /held by a person, not by a polity/);
+  assert.match(rulesHit(r, 26)[0].message, /a person holds a tenure, and this one names a polity/);
   assert.equal(rulesHit(r, 26)[0].path, '/person');
 
   r = await run((fx) => fx.records.push(tenure('synthetic-tenure', { person: 'nobody' })));

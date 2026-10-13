@@ -15,11 +15,11 @@ import { esc } from '../util/esc.js';
 import { renderBody } from '../markdown.js';
 
 const REFUSAL = Object.freeze({
-  html: 'HTML is not markup here and is shown as the characters you typed',
-  image: 'images are not part of the subset',
-  'link-target': 'a link goes to a record by id or to an http(s) address, and nothing else',
+  html: 'HTML does not work here. The page shows it as the characters you typed',
+  image: 'an entry cannot hold images',
+  'link-target': 'a link must go to a record id or to an http(s) address',
   'record-id': 'a record link needs an id: lowercase words joined by hyphens',
-  'heading-level': 'headings are ## and ###; the page owns the title above them',
+  'heading-level': 'headings are ## and ###. The page already has the title',
 });
 
 // text: what is in the textarea. cited: the ids of the sources the record
@@ -35,12 +35,12 @@ export function previewNotes(text, { cited = null, known = null } = {}) {
   for (const note of rendered.notes) say(REFUSAL[note.reason] ?? `refused: ${note.reason}`);
   if (cited) {
     for (const { source } of rendered.citations) {
-      if (!cited.has(source)) say(`"${source}" is cited in the entry but is not among this record's sources`);
+      if (!cited.has(source)) say(`the entry cites "${source}", but this record's sources do not include it`);
     }
   }
   if (known) {
     for (const { kind, id } of rendered.links) {
-      if (!known(kind, id)) say(`"${id}" is linked as ${kind === 'event' || kind === 'actor' ? 'an' : 'a'} ${kind} and there is no such record`);
+      if (!known(kind, id)) say(`the entry links to "${id}" as ${kind === 'event' || kind === 'actor' ? 'an' : 'a'} ${kind}, and there is no such record`);
     }
   }
   return { html: rendered.html, headings: rendered.headings, order: rendered.order, notes };
@@ -55,7 +55,7 @@ export function previewHtml(text, options = {}) {
   }
   const { html, headings, notes } = previewNotes(text, options);
   const contents = headings.length >= 2
-    ? `<p class="hint">Sections: ${headings.map((h) => esc(h.text)).join(' · ')}</p>`
+    ? `<p class="hint">Sections: ${headings.map((h) => esc(h.text)).join(', ')}</p>`
     : '';
   const complaints = notes.length
     ? `<ul class="preview-notes">${notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul>`

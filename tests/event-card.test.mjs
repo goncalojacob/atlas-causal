@@ -27,7 +27,7 @@ function context(atlas) {
     lanes: () => [],
     startYear: (event) => bounds(event.when.start).min,
     eventLink: (event) => `<button type="button" class="link" data-action="select" data-id="${esc(event.id)}">${esc(event.title)}</button>`,
-    entryLink: (kind, id) => `<p class="entry-link"><a href="entry.html?id=${esc(id)}">Read the full entry →</a></p>`,
+    entryLink: (kind, id) => `<p class="entry-link"><a href="entry.html?id=${esc(id)}">Read the full entry</a></p>`,
     discussLink: () => '<p class="discuss"><a href="#">Discuss this record</a></p>',
     wikipediaHtml: () => '<p class="wikipedia"><a href="#">Read more on Wikipedia</a></p>',
     historyHtml: () => '',
@@ -73,7 +73,7 @@ test('the head carries the actors as chips, with the role in the title attribute
     'armed-forces-movement', 'otelo-saraiva-de-carvalho', 'marcelo-caetano',
     'estado-novo', 'antonio-de-spinola', 'third-portuguese-republic',
   ]);
-  assert.match(html, /title="Armed Forces Movement — leader \(institution\)"/);
+  assert.match(html, /title="Armed Forces Movement: leader \(institution\)"/);
   assert.match(html, /<span class="role"> · leader<\/span>/);
   // The head is the head: the title, one line of meta, the chips, and the
   // quiet links out. Nothing that used to be a section of its own is left
@@ -184,12 +184,12 @@ test('the disputed notice opens the section that holds the argument', () => {
 test('a walk cut short by a retracted step says so on the card', () => {
   const carnation = atlas.events.get('carnation-revolution-1974');
   const quiet = eventCardHtml(context(atlas), { event: carnation, found, state: state() });
-  assert.equal(/has been <strong>retracted<\/strong>/.test(quiet), false, 'nothing to say by default');
+  assert.equal(/has <strong>retracted<\/strong> a step/.test(quiet), false, 'nothing to say by default');
 
   const cut = eventCardHtml({ ...context(atlas), walkWasCut: () => true },
     { event: carnation, found, state: state() });
-  assert.match(cut, /<p class="notice status">A step of the link you followed has been <strong>retracted<\/strong>\./);
-  assert.match(cut, /drawn as far as that step/);
+  assert.match(cut, /<p class="notice status">The atlas has <strong>retracted<\/strong> a step of the link you followed\./);
+  assert.match(cut, /The atlas draws the path up to that step, because the steps after it followed from it\./);
 });
 
 test('nothing a record carries reaches the card unescaped', () => {
@@ -239,8 +239,8 @@ test('a walk the atlas assembled says so on the card, once, at the top', async (
   const line = notices[0][1].replace(/\s+/g, ' ');
   assert.match(line, /The <strong>atlas<\/strong> put this path together on 2026-09-08/);
   assert.match(line, /Why Fixture event T\?/, 'what question it answers');
-  assert.match(line, /you did not walk it/);
-  assert.match(line, /3 steps is a link somebody wrote, with its confidence and its dispute marks unchanged/);
+  assert.match(line, /You did not walk it\./);
+  assert.match(line, /3 steps is a link a person wrote\. The links keep their confidence and dispute marks\./);
   // Above the head, so that everything under it is read in that frame, and
   // the breadcrumb of the path itself is still the first thing on the card.
   assert.ok(html.indexOf('notice generated') < html.indexOf('<header class="event-head">'));
@@ -259,7 +259,7 @@ test('each step of a generated walk keeps its own confidence and dispute marks',
     state: state({ selected: 'fixture-event-t', chain: [...walk.steps] }),
   });
   assert.match(html, /notice generated/);
-  assert.match(html, /1 step is a link somebody wrote/, 'one step, not "1 steps"');
+  assert.match(html, /1 step is a link a person wrote/, 'one step, not "1 steps"');
   assert.match(html, /<nav class="breadcrumb"[\s\S]*?<span class="badge disputed"/);
   assert.match(html, /You arrived here through a <strong>disputed<\/strong> link/);
 });

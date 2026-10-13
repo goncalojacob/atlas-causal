@@ -26,7 +26,7 @@ import { formatInterval, formatYear } from '../util/dates.js';
 import { centuryCounts, WHEEL_FACTOR } from '../util/window.js';
 import { renderKey, shardsArrived } from '../render-key.js';
 import { labelOf, LOADING_LABEL } from '../attributes.js';
-import { EDGE_TYPE_IDS, EDGE_TYPE_LABEL } from '../vocab.js';
+import { EDGE_TYPE_IDS, EDGE_TYPE_READING } from '../vocab.js';
 import { CONFIDENCE_ORDER, CONFIDENCE_CLASS, bundleClass } from '../confidence.js';
 import { walkOrSelect } from '../chain.js';
 import { horizonBand } from '../horizon.js';
@@ -174,7 +174,7 @@ function classes(...list) {
 // goes.
 function edgeName(atlas, edge) {
   const named = (id) => labelOf(atlas, atlas.events.get(id)) ?? LOADING_LABEL;
-  return `${named(edge.from)} — ${EDGE_TYPE_LABEL[edge.type] ?? edge.type} → ${named(edge.to)}`;
+  return `${named(edge.from)} ${EDGE_TYPE_READING[edge.type] ?? edge.type} ${named(edge.to)}`;
 }
 
 // How far a point is from a segment, in whatever units both are written in.
@@ -1225,7 +1225,7 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       // century, and until then it is a node with no name (attributes.js).
       const name = labelOf(atlas, node.event);
       const title = name === null ? LOADING_LABEL
-        : `${name} — ${formatInterval(node.event.when)}`;
+        : `${name} (${formatInterval(node.event.when)})`;
       // The stack's own point and not the node's. They were the same number
       // until M81 — a stack of one is drawn on its only member — and they are
       // not any more: `stackLayout` returns the picture's coordinates, with

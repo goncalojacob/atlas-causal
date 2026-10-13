@@ -250,13 +250,13 @@ test('the hint says how much of the list is ranked, and only claims that much', 
   const state = { ...defaultState(), selected: REVOLUTION, horizon: 2011 };
   const short = horizonHtml(ctx, { event: atlas.events.get(REVOLUTION), state });
   assert.ok(horizonResults(atlas, state).length < RANKED, 'the atlas answers in fewer rows than the window');
-  assert.match(short, /Ordered\s+best-supported first/);
-  assert.doesNotMatch(short, /the first \d+ are ordered/i, 'with nothing unranked, nothing is said about it');
+  assert.match(short, /They are ranked best-supported first\./);
+  assert.doesNotMatch(short, /the first \d+ are ranked/i, 'with nothing unranked, nothing is said about it');
 
   // Nothing in the atlas is longer than the window today, so what the longer
   // sentence would say is asserted on the template itself rather than on a
   // synthetic answer the card would have to be lied to about.
   const source = await readFile(path.join(ROOT, 'src', 'panel', 'horizon.js'), 'utf8');
-  assert.match(source, /The first \$\{RANKED\} are ordered/, 'the card names the number when there is a rest');
-  assert.match(source, /the rest in the order they were found/);
+  assert.match(source, /The first \$\{RANKED\} are ranked/, 'the card names the number when there is a rest');
+  assert.match(source, /The rest follow in the order the atlas found them\./);
 });
