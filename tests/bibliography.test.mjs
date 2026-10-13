@@ -34,7 +34,7 @@ test('the bibliography lists every source in the repository index, with its coun
   const cites = (list) => list.reduce((n, source) => n + source.citationCount, 0);
   for (const list of [works, maps]) {
     if (list.length === 0) continue;
-    assert.match(html, new RegExp(`carrying ${cites(list)} citations`));
+    assert.match(html, new RegExp(`, ${cites(list)} times in all\\.`));
   }
   assert.equal(cites(works) + cites(maps), sources.reduce((n, s) => n + s.citationCount, 0));
   assert.ok(html.includes(WORKS_HEADING) && html.includes(BASE_MAP_HEADING));
@@ -49,13 +49,13 @@ test('the list is ordered by creator and says what is not cited', () => {
   assert.ok(html.indexOf('?source=maxwell') < html.indexOf('?source=telo'));
   // No `origin` on any of the three, so none is a base map and the works are
   // the whole list.
-  assert.match(html, /3 sources,\s+2 of them cited/);
+  assert.match(html, /3 sources\.\s+The records cite 2 of them/);
   assert.match(html, />0 citations</);
   assert.match(html, />1 citation</, 'one citation is not "1 citations"');
 });
 
 test('an empty bibliography says so rather than drawing an empty list', () => {
-  assert.match(bibliographyHtml([]), /no source record has been written yet/);
+  assert.match(bibliographyHtml([]), /Nobody has written a source record yet/);
 });
 
 test('nothing from a source record reaches the page unescaped', () => {
