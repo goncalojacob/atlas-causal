@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "cultural-revolution--reform-and-opening-up--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Reform and opening up\", revision 1373006392"
+    }
+  ],
+  "from": "cultural-revolution",
+  "to": "reform-and-opening-up",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article \"Reform and opening up\" (revision 1373006392) states: \"A longer-run result was that there were not nearly as many well-entrenched interest groups as in the Soviet Union and the Eastern Bloc, so when Deng Xiaoping and the other pragmatists took power, few interest groups remained whose lobbying could undermine Deng's market-oriented reforms, because the Cultural Revolution had destroyed the narrowly entrenched interests with a stake in the status quo.\" The sentence gives the Cultural Revolution as what left these reforms without organised opposition, so the edge runs from the Cultural Revolution and the type is enabled.",
+  "dispute": null
+}
