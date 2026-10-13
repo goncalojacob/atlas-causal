@@ -413,3 +413,22 @@ publish a snapshot, re-enable the four routines with `RemoteTrigger update
 {"enabled": true}`, and read the newest `docs/plans/` note for its
 `## Classes`, `## Lanes` and `## Main` headings. Questions 13 and 14 in
 section 6 are still open.
+
+## 12. 14 October: which model does what
+
+The owner, about 00:15 Lisbon on 14 October: "You are an Opus and you will
+be coordinating all the work. However, for the writing of new events, you
+can use Sonnet and Haiku agents to do the work. Specially Haiku to write
+the events, maybe Sonnet to analyze and figure out which events are to be
+included." And then: "Basically make sure you don't use Fable and use Opus
+only you to coordinate the work." This replaces section 10.
+
+- The assistant's own session runs on Opus. Nothing else does.
+- The planner and the rewriter run on Sonnet. Review subagents run on
+  Sonnet.
+- Writers A and B run on Haiku.
+- No routine or subagent runs on Fable.
+
+The owner also said "You can work tonight until 7am". The routines were
+re-enabled at 23:20Z on 13 October. At 06:00Z on 14 October the assistant
+disables them again.
