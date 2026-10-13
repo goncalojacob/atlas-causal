@@ -1592,3 +1592,571 @@ The writer imported `sinhalese-portuguese-conflicts` from the planner's queue un
 ## Writer, 13 October 2026: `war-of-the-pacific`, bare
 
 The writer imported `war-of-the-pacific` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `2013-colombian-clashes`, filed under `colombian-conflict` with neither an actor nor a place
+
+The writer imported `2013-colombian-clashes` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `colombian-conflict` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `abushiri-revolt`, filed under `scramble-for-africa` with neither an actor nor a place
+
+The writer imported `abushiri-revolt` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `scramble-for-africa` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `action-of-12-december-1779`, filed under `spain-and-the-american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `action-of-12-december-1779` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `spain-and-the-american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `action-of-15-february-1783`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `action-of-15-february-1783` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `action-of-18-february-1639`, filed under `thirty-years-war` with neither an actor nor a place
+
+The writer imported `action-of-18-february-1639` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `thirty-years-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `action-of-18-october-1782`, filed under `anglo-french-war-1778-1783` with neither an actor nor a place
+
+The writer imported `action-of-18-october-1782` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `anglo-french-war-1778-1783` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `action-of-31-july-1793`, filed under `french-revolutionary-wars` with neither an actor nor a place
+
+The writer imported `action-of-31-july-1793` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `french-revolutionary-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `action-of-6-september-1782`, filed under `spain-and-the-american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `action-of-6-september-1782` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `spain-and-the-american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `action-of-8-january-1780`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `action-of-8-january-1780` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `anglo-french-war-1627-1629`, filed under `thirty-years-war` with neither an actor nor a place
+
+The writer imported `anglo-french-war-1627-1629` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `thirty-years-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `anglo-powhatan-wars`, filed under `american-indian-wars` with neither an actor nor a place
+
+The writer imported `anglo-powhatan-wars` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-indian-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `arauco-war`, filed under `spanish-colonization-of-the-americas` with neither an actor nor a place
+
+The writer imported `arauco-war` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `spanish-colonization-of-the-americas` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `assault-on-greifenhagen`, filed under `thirty-years-war` with neither an actor nor a place
+
+The writer imported `assault-on-greifenhagen` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `thirty-years-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `attack-on-bintan-1521`, filed under `malay-portuguese-conflicts` with neither an actor nor a place
+
+The writer imported `attack-on-bintan-1521` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `malay-portuguese-conflicts` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `attack-on-pearl-harbor`, filed under `world-war-ii` with neither an actor nor a place
+
+The writer imported `attack-on-pearl-harbor` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `world-war-ii` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `austrian-civil-war`, filed under `interwar-period` with neither an actor nor a place
+
+The writer imported `austrian-civil-war` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `interwar-period` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `batalla-de-la-florida`, filed under `argentine-war-of-independence` with neither an actor nor a place
+
+The writer imported `batalla-de-la-florida` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `argentine-war-of-independence` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-andalien`, filed under `arauco-war` with neither an actor nor a place
+
+The writer imported `battle-of-andalien` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `arauco-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-angol`, filed under `arauco-war` with neither an actor nor a place
+
+The writer imported `battle-of-angol` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `arauco-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-anguilla`, filed under `war-of-the-austrian-succession` with neither an actor nor a place
+
+The writer imported `battle-of-anguilla` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `war-of-the-austrian-succession` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-azemmour`, filed under `moroccan-portuguese-conflicts` with neither an actor nor a place
+
+The writer imported `battle-of-azemmour` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `moroccan-portuguese-conflicts` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-bunker-hill`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `battle-of-bunker-hill` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-cape-spartel`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `battle-of-cape-spartel` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-casa-forte`, filed under `insurrection-of-pernambuco` with neither an actor nor a place
+
+The writer imported `battle-of-casa-forte` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `insurrection-of-pernambuco` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-catirai`, filed under `arauco-war` with neither an actor nor a place
+
+The writer imported `battle-of-catirai` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `arauco-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-chungju`, filed under `toyotomi-hideyoshi-s-1st-korean-campaign` with neither an actor nor a place
+
+The writer imported `battle-of-chungju` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `toyotomi-hideyoshi-s-1st-korean-campaign` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-curalaba`, filed under `arauco-war` with neither an actor nor a place
+
+The writer imported `battle-of-curalaba` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `arauco-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-dadaejin`, filed under `toyotomi-hideyoshi-s-1st-korean-campaign` with neither an actor nor a place
+
+The writer imported `battle-of-dadaejin` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `toyotomi-hideyoshi-s-1st-korean-campaign` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-fort-royal`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `battle-of-fort-royal` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-gannoruwa`, filed under `sinhalese-portuguese-conflicts` with neither an actor nor a place
+
+The writer imported `battle-of-gannoruwa` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `sinhalese-portuguese-conflicts` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-grand-turk`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `battle-of-grand-turk` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-grenada`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `battle-of-grenada` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-guadeloupe-1779`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `battle-of-guadeloupe-1779` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-haengju`, filed under `toyotomi-hideyoshi-s-1st-korean-campaign` with neither an actor nor a place
+
+The writer imported `battle-of-haengju` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `toyotomi-hideyoshi-s-1st-korean-campaign` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-ibarra-1812`, filed under `spanish-american-wars-of-independence` with neither an actor nor a place
+
+The writer imported `battle-of-ibarra-1812` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `spanish-american-wars-of-independence` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-jarte`, filed under `ottoman-portuguese-conflicts-1538-1560` with neither an actor nor a place
+
+The writer imported `battle-of-jarte` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `ottoman-portuguese-conflicts-1538-1560` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-kitombo`, filed under `kongo-civil-war` with neither an actor nor a place
+
+The writer imported `battle-of-kitombo` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `kongo-civil-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-kombi`, filed under `dutch-portuguese-war` with neither an actor nor a place
+
+The writer imported `battle-of-kombi` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `dutch-portuguese-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-lagunillas`, filed under `arauco-war` with neither an actor nor a place
+
+The writer imported `battle-of-lagunillas` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `arauco-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-mamora-1515`, filed under `moroccan-portuguese-conflicts` with neither an actor nor a place
+
+The writer imported `battle-of-mamora-1515` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `moroccan-portuguese-conflicts` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-marihuenu`, filed under `arauco-war` with neither an actor nor a place
+
+The writer imported `battle-of-marihuenu` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `arauco-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-martorell-1641`, filed under `thirty-years-war` with neither an actor nor a place
+
+The writer imported `battle-of-martorell-1641` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `thirty-years-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-mbidizi-river`, filed under `kongo-civil-war` with neither an actor nor a place
+
+The writer imported `battle-of-mbidizi-river` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `kongo-civil-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-mborore`, filed under `portuguese-restoration-war` with neither an actor nor a place
+
+The writer imported `battle-of-mborore` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `portuguese-restoration-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-mbwila`, filed under `angolan-wars` with neither an actor nor a place
+
+The writer imported `battle-of-mbwila` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `angolan-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-millarapue`, filed under `arauco-war` with neither an actor nor a place
+
+The writer imported `battle-of-millarapue` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `arauco-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-negapatam-1782`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `battle-of-negapatam-1782` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-noryang`, filed under `imjin-war` with neither an actor nor a place
+
+The writer imported `battle-of-noryang` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `imjin-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-okpo`, filed under `toyotomi-hideyoshi-s-1st-korean-campaign` with neither an actor nor a place
+
+The writer imported `battle-of-okpo` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `toyotomi-hideyoshi-s-1st-korean-campaign` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-paardeberg`, filed under `second-boer-war` with neither an actor nor a place
+
+The writer imported `battle-of-paardeberg` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `second-boer-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-paphos`, filed under `ottoman-habsburg-wars` with neither an actor nor a place
+
+The writer imported `battle-of-paphos` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `ottoman-habsburg-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-penco`, filed under `arauco-war` with neither an actor nor a place
+
+The writer imported `battle-of-penco` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `arauco-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-punnaikayal`, filed under `ottoman-portuguese-conflicts-1538-1560` with neither an actor nor a place
+
+The writer imported `battle-of-punnaikayal` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `ottoman-portuguese-conflicts-1538-1560` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-pyongyang-1592`, filed under `toyotomi-hideyoshi-s-1st-korean-campaign` with neither an actor nor a place
+
+The writer imported `battle-of-pyongyang-1592` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `toyotomi-hideyoshi-s-1st-korean-campaign` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-quiapo`, filed under `arauco-war` with neither an actor nor a place
+
+The writer imported `battle-of-quiapo` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `arauco-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-quilacura`, filed under `arauco-war` with neither an actor nor a place
+
+The writer imported `battle-of-quilacura` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `arauco-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-randeniwela`, filed under `sinhalese-portuguese-conflicts` with neither an actor nor a place
+
+The writer imported `battle-of-randeniwela` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `sinhalese-portuguese-conflicts` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-sadras`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `battle-of-sadras` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-saint-kitts`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `battle-of-saint-kitts` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-st-kitts-1629`, filed under `thirty-years-war` with neither an actor nor a place
+
+The writer imported `battle-of-st-kitts-1629` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `thirty-years-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-st-lucia`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `battle-of-st-lucia` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-swally`, filed under `dutch-portuguese-war` with neither an actor nor a place
+
+The writer imported `battle-of-swally` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `dutch-portuguese-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-tednest`, filed under `moroccan-portuguese-conflicts` with neither an actor nor a place
+
+The writer imported `battle-of-tednest` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `moroccan-portuguese-conflicts` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-the-alcaides`, filed under `moroccan-portuguese-conflicts` with neither an actor nor a place
+
+The writer imported `battle-of-the-alcaides` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `moroccan-portuguese-conflicts` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-the-black-river`, filed under `spain-and-the-american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `battle-of-the-black-river` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `spain-and-the-american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-the-chesapeake`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `battle-of-the-chesapeake` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-the-saintes`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `battle-of-the-saintes` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-tucapel`, filed under `arauco-war` with neither an actor nor a place
+
+The writer imported `battle-of-tucapel` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `arauco-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-tumusla`, filed under `bolivian-war-of-independence` with neither an actor nor a place
+
+The writer imported `battle-of-tumusla` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `bolivian-war-of-independence` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-vanersborg`, filed under `torstenson-war` with neither an actor nor a place
+
+The writer imported `battle-of-vanersborg` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `torstenson-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-of-wofla`, filed under `ottoman-portuguese-conflicts-1538-1560` with neither an actor nor a place
+
+The writer imported `battle-of-wofla` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `ottoman-portuguese-conflicts-1538-1560` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battle-off-barbados`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `battle-off-barbados` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `battles-of-lexington-and-concord`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `battles-of-lexington-and-concord` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `british-intervention-in-spanish-american-independence`, filed under `spanish-american-wars-of-independence` with neither an actor nor a place
+
+The writer imported `british-intervention-in-spanish-american-independence` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `spanish-american-wars-of-independence` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `capture-of-fort-bute`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `capture-of-fort-bute` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `capture-of-grenada-1779`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `capture-of-grenada-1779` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `capture-of-muscat-1552`, filed under `ottoman-campaign-against-hormuz` with neither an actor nor a place
+
+The writer imported `capture-of-muscat-1552` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `ottoman-campaign-against-hormuz` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `capture-of-st-lucia`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `capture-of-st-lucia` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `capture-of-the-rif-1792`, filed under `conflicts-between-the-regency-of-algiers-and-morocco` with neither an actor nor a place
+
+The writer imported `capture-of-the-rif-1792` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `conflicts-between-the-regency-of-algiers-and-morocco` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `chowanoc-war`, filed under `american-indian-wars` with neither an actor nor a place
+
+The writer imported `chowanoc-war` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-indian-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `civil-constitution-of-the-clergy`, filed under `french-revolution` with neither an actor nor a place
+
+The writer imported `civil-constitution-of-the-clergy` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `french-revolution` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `covid-19-pandemic-in-canada`, filed under `covid-19-pandemic-in-north-america` with neither an actor nor a place
+
+The writer imported `covid-19-pandemic-in-canada` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `covid-19-pandemic-in-north-america` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `covid-19-pandemic-in-guyana`, filed under `covid-19-pandemic-in-south-america` with neither an actor nor a place
+
+The writer imported `covid-19-pandemic-in-guyana` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `covid-19-pandemic-in-south-america` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `esopus-wars`, filed under `american-indian-wars` with neither an actor nor a place
+
+The writer imported `esopus-wars` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-indian-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `execution-of-the-romanov-family`, filed under `russian-civil-war` with neither an actor nor a place
+
+The writer imported `execution-of-the-romanov-family` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `russian-civil-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `expedition-to-touat-1557`, filed under `conflicts-between-the-regency-of-algiers-and-morocco` with neither an actor nor a place
+
+The writer imported `expedition-to-touat-1557` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `conflicts-between-the-regency-of-algiers-and-morocco` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `fall-of-maximilien-robespierre`, filed under `french-revolution` with neither an actor nor a place
+
+The writer imported `fall-of-maximilien-robespierre` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `french-revolution` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `flight-to-varennes`, filed under `french-revolution` with neither an actor nor a place
+
+The writer imported `flight-to-varennes` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `french-revolution` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `french-revolution`, filed under `atlantic-revolutions` with neither an actor nor a place
+
+The writer imported `french-revolution` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `atlantic-revolutions` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `insurrection-of-31-may-2-june-1793`, filed under `french-revolution` with neither an actor nor a place
+
+The writer imported `insurrection-of-31-may-2-june-1793` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `french-revolution` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `insurrection-of-pernambuco`, filed under `dutch-portuguese-war` with neither an actor nor a place
+
+The writer imported `insurrection-of-pernambuco` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `dutch-portuguese-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `invasion-of-dominica-1778`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `invasion-of-dominica-1778` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `invasion-of-jersey-1779`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `invasion-of-jersey-1779` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `italian-war-of-1494-1495`, filed under `italian-wars` with neither an actor nor a place
+
+The writer imported `italian-war-of-1494-1495` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `italian-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `italian-war-of-1521-1526`, filed under `italian-wars` with neither an actor nor a place
+
+The writer imported `italian-war-of-1521-1526` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `italian-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `italian-war-of-1542-1546`, filed under `italian-wars` with neither an actor nor a place
+
+The writer imported `italian-war-of-1542-1546` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `italian-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `italian-war-of-1551-1559`, filed under `italian-wars` with neither an actor nor a place
+
+The writer imported `italian-war-of-1551-1559` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `italian-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `italian-wars-of-1499-1504`, filed under `italian-wars` with neither an actor nor a place
+
+The writer imported `italian-wars-of-1499-1504` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `italian-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `jaragua-massacre`, filed under `indigenous-depopulation-of-the-greater-antilles` with neither an actor nor a place
+
+The writer imported `jaragua-massacre` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `indigenous-depopulation-of-the-greater-antilles` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `kandyan-commerce-raiding-against-portugal-1612-1613`, filed under `sinhalese-portuguese-conflicts` with neither an actor nor a place
+
+The writer imported `kandyan-commerce-raiding-against-portugal-1612-1613` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `sinhalese-portuguese-conflicts` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `kieft-s-war`, filed under `american-indian-wars` with neither an actor nor a place
+
+The writer imported `kieft-s-war` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-indian-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `massacre-at-matanzas-inlet`, filed under `spanish-assault-on-french-florida` with neither an actor nor a place
+
+The writer imported `massacre-at-matanzas-inlet` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `spanish-assault-on-french-florida` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `may-1958-crisis-in-france`, filed under `algerian-war` with neither an actor nor a place
+
+The writer imported `may-1958-crisis-in-france` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `algerian-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `naval-battle-of-tarragona`, filed under `thirty-years-war` with neither an actor nor a place
+
+The writer imported `naval-battle-of-tarragona` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `thirty-years-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `neapolitan-revolt-of-1647`, filed under `thirty-years-war` with neither an actor nor a place
+
+The writer imported `neapolitan-revolt-of-1647` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `thirty-years-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `operation-commando`, filed under `korean-war` with neither an actor nor a place
+
+The writer imported `operation-commando` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `korean-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `operation-northern-shield`, filed under `arab-israeli-conflict` with neither an actor nor a place
+
+The writer imported `operation-northern-shield` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `arab-israeli-conflict` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `oran-expedition-1707`, filed under `conflicts-between-the-regency-of-algiers-and-morocco` with neither an actor nor a place
+
+The writer imported `oran-expedition-1707` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `conflicts-between-the-regency-of-algiers-and-morocco` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `population-exchange-between-greece-and-turkey`, filed under `interwar-period` with neither an actor nor a place
+
+The writer imported `population-exchange-between-greece-and-turkey` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `interwar-period` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `protectorate-of-doukkala`, filed under `moroccan-portuguese-conflicts` with neither an actor nor a place
+
+The writer imported `protectorate-of-doukkala` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `moroccan-portuguese-conflicts` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `raid-on-oyster-river`, filed under `king-william-s-war` with neither an actor nor a place
+
+The writer imported `raid-on-oyster-river` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `king-william-s-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `rebellion-of-tupac-amaru-ii`, filed under `spanish-colonization-of-the-americas` with neither an actor nor a place
+
+The writer imported `rebellion-of-tupac-amaru-ii` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `spanish-colonization-of-the-americas` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `russo-swedish-war-1741-1743`, filed under `war-of-the-austrian-succession` with neither an actor nor a place
+
+The writer imported `russo-swedish-war-1741-1743` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `war-of-the-austrian-succession` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `rwandan-revolution`, filed under `decolonisation-of-africa` with neither an actor nor a place
+
+The writer imported `rwandan-revolution` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `decolonisation-of-africa` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `sack-of-madeira`, filed under `barbary-portuguese-conflicts` with neither an actor nor a place
+
+The writer imported `sack-of-madeira` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `barbary-portuguese-conflicts` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-agadir-1533`, filed under `moroccan-portuguese-conflicts` with neither an actor nor a place
+
+The writer imported `siege-of-agadir-1533` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `moroccan-portuguese-conflicts` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-brimstone-hill`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+The writer imported `siege-of-brimstone-hill` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `american-revolutionary-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-campar`, filed under `malay-portuguese-conflicts` with neither an actor nor a place
+
+The writer imported `siege-of-campar` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `malay-portuguese-conflicts` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-dongnae`, filed under `toyotomi-hideyoshi-s-1st-korean-campaign` with neither an actor nor a place
+
+The writer imported `siege-of-dongnae` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `toyotomi-hideyoshi-s-1st-korean-campaign` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-jinju-1592`, filed under `toyotomi-hideyoshi-s-1st-korean-campaign` with neither an actor nor a place
+
+The writer imported `siege-of-jinju-1592` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `toyotomi-hideyoshi-s-1st-korean-campaign` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-jinju-1593`, filed under `toyotomi-hideyoshi-s-1st-korean-campaign` with neither an actor nor a place
+
+The writer imported `siege-of-jinju-1593` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `toyotomi-hideyoshi-s-1st-korean-campaign` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-laholm-castle`, filed under `torstenson-war` with neither an actor nor a place
+
+The writer imported `siege-of-laholm-castle` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `torstenson-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-landskrona-citadel`, filed under `torstenson-war` with neither an actor nor a place
+
+The writer imported `siege-of-landskrona-citadel` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `torstenson-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-louisbourg-1745`, filed under `king-george-s-war` with neither an actor nor a place
+
+The writer imported `siege-of-louisbourg-1745` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `king-george-s-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-namwon`, filed under `toyotomi-hideyoshi-s-2nd-korean-campaign` with neither an actor nor a place
+
+The writer imported `siege-of-namwon` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `toyotomi-hideyoshi-s-2nd-korean-campaign` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-philippsburg-1644`, filed under `thirty-years-war` with neither an actor nor a place
+
+The writer imported `siege-of-philippsburg-1644` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `thirty-years-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-pyongyang-1592`, filed under `toyotomi-hideyoshi-s-1st-korean-campaign` with neither an actor nor a place
+
+The writer imported `siege-of-pyongyang-1592` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `toyotomi-hideyoshi-s-1st-korean-campaign` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-pyongyang-1593`, filed under `toyotomi-hideyoshi-s-1st-korean-campaign` with neither an actor nor a place
+
+The writer imported `siege-of-pyongyang-1593` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `toyotomi-hideyoshi-s-1st-korean-campaign` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-qatif-1551`, filed under `ottoman-portuguese-conflicts-1538-1560` with neither an actor nor a place
+
+The writer imported `siege-of-qatif-1551` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `ottoman-portuguese-conflicts-1538-1560` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-ulsan`, filed under `imjin-war` with neither an actor nor a place
+
+The writer imported `siege-of-ulsan` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `imjin-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `siege-of-wolgast-1630`, filed under `thirty-years-war` with neither an actor nor a place
+
+The writer imported `siege-of-wolgast-1630` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `thirty-years-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `slovak-hungarian-war`, filed under `interwar-period` with neither an actor nor a place
+
+The writer imported `slovak-hungarian-war` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `interwar-period` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `spanish-conquest-of-iberian-navarre`, filed under `italian-wars` with neither an actor nor a place
+
+The writer imported `spanish-conquest-of-iberian-navarre` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `italian-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `spanish-conquest-of-the-kingdom-of-q-umarkaj`, filed under `spanish-conquest-of-guatemala` with neither an actor nor a place
+
+The writer imported `spanish-conquest-of-the-kingdom-of-q-umarkaj` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `spanish-conquest-of-guatemala` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `spanish-revolution`, filed under `spanish-civil-war` with neither an actor nor a place
+
+The writer imported `spanish-revolution` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `spanish-civil-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `taif-agreement`, filed under `lebanese-civil-war` with neither an actor nor a place
+
+The writer imported `taif-agreement` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `lebanese-civil-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `targa-expedition-1490`, filed under `moroccan-portuguese-conflicts` with neither an actor nor a place
+
+The writer imported `targa-expedition-1490` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `moroccan-portuguese-conflicts` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `ten-years-war-franche-comte`, filed under `thirty-years-war` with neither an actor nor a place
+
+The writer imported `ten-years-war-franche-comte` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `thirty-years-war` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `treaty-of-tartu`, filed under `interwar-period` with neither an actor nor a place
+
+The writer imported `treaty-of-tartu` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `interwar-period` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `war-of-the-fourth-coalition`, filed under `napoleonic-wars` with neither an actor nor a place
+
+The writer imported `war-of-the-fourth-coalition` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `napoleonic-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `war-of-the-league-of-cognac`, filed under `italian-wars` with neither an actor nor a place
+
+The writer imported `war-of-the-league-of-cognac` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `italian-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
+
+## Writer, 13 October 2026: `war-of-the-seventh-coalition`, filed under `napoleonic-wars` with neither an actor nor a place
+
+The writer imported `war-of-the-seventh-coalition` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `napoleonic-wars` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella; the planner adds a place or an actor when a source gives one.
