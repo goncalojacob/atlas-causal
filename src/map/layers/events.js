@@ -145,8 +145,8 @@ export function createEventsLayer(group, projection, {
     const name = nameOf(event);
     if (name === null) return LOADING_LABEL;
     const label = categoryLabel(event.category ?? null);
-    const said = label ? `${name} — ${label}` : name;
-    return faded ? `${said} — outside the window` : said;
+    const notes = [label, faded ? 'outside the window' : null].filter(Boolean);
+    return notes.length ? `${name} (${notes.join(', ')})` : name;
   };
 
   // What the last render drew, so a click on a cluster can be answered with

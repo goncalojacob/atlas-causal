@@ -265,7 +265,7 @@ export function createPicker({
     'aria-expanded': 'false',
     'aria-autocomplete': 'list',
     'aria-label': label,
-    placeholder: `type a name — ${emptyLabel}`,
+    placeholder: `type a name (${emptyLabel})`,
   });
   if (domId) input.id = domId;
   const list = html('ul', { class: 'picker-results', role: 'listbox', hidden: 'hidden', 'aria-label': `${label} matches` });
@@ -298,8 +298,8 @@ export function createPicker({
     const known = index.find(name, current);
     chosenEl.classList.toggle('unknown', known === null);
     chosenEl.textContent = known === null
-      ? `${current} — not an active record`
-      : `${known.label} · ${current}`;
+      ? `${current} is not an active record`
+      : `${known.label} (${current})`;
     const links = known ? index.linksOf(known.kind, current) : [];
     if (!links.length) return;
     linksEl.hidden = false;

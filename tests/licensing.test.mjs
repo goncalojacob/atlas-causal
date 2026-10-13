@@ -104,7 +104,7 @@ test('a card says whose material it is, and only where that is not this atlas', 
   const html = attributionHtml({ license: 'CC-BY-NC-SA-4.0' });
   assert.match(html, /class="notice licence"/);
   assert.match(html, /CShapes 2\.0/);
-  assert.match(html, /not under the licence of the rest of this atlas/);
+  assert.match(html, /which differs from the licence of the rest of this atlas\./);
   assert.match(html, /href="https:\/\/creativecommons\.org\/licenses\/by-nc-sa\/4\.0\/"/);
   assert.match(html, /href="https:\/\/doi\.org\/10\.1177\/00220027211013563"/);
 });

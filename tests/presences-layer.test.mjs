@@ -29,14 +29,14 @@ const nameOf = (id) => ({ 'fixture-polity-three': 'Fixture Polity Three', 'fixtu
 
 test('a presence says who, how long, and whose', () => {
   const own = { actor: 'fixture-polity-three', dependencyOf: null, dependencyKind: null, when: { start: 1100, end: null }, confidence: 'consensus' };
-  assert.equal(presenceTitle(own, { nameOf }), 'Fixture Polity Three · 1100 – ongoing');
+  assert.equal(presenceTitle(own, { nameOf }), 'Fixture Polity Three, 1100 – ongoing');
   const colony = { actor: 'fixture-polity-four', dependencyOf: 'fixture-polity-three', dependencyKind: 'colony', when: { start: 1120, end: 1199 }, confidence: 'probable' };
-  assert.equal(presenceTitle(colony, { nameOf }), 'Fixture Polity Four — colony of Fixture Polity Three · 1120 – 1199');
+  assert.equal(presenceTitle(colony, { nameOf }), 'Fixture Polity Four, colony of Fixture Polity Three, 1120 – 1199');
   // Danzig's case: held as a mandate by something that is not a state here.
   const mandate = { ...colony, dependencyOf: null, dependencyKind: 'mandate', confidence: 'disputed' };
-  assert.match(presenceTitle(mandate, { nameOf }), /mandate of an administration that is not a state on this map · 1120 – 1199 · disputed$/);
+  assert.match(presenceTitle(mandate, { nameOf }), /mandate of an administration that is not a state on this map, 1120 – 1199, disputed$/);
   // An actor the topology has lost still names itself rather than nothing.
-  assert.match(presenceTitle({ ...own, actor: 'gone' }, { nameOf }), /^gone /);
+  assert.match(presenceTitle({ ...own, actor: 'gone' }, { nameOf }), /^gone, /);
 });
 
 test('classes separate its own ground from somebody\'s, and mark the selection', () => {

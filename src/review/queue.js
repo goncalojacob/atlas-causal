@@ -297,7 +297,7 @@ export function toolCounts(queue) {
 //           the order a reviewer working through one kind wants.
 export const SORT_KEYS = Object.freeze(['flags', 'degree', 'age', 'kind']);
 export const SORT_LABELS = Object.freeze({
-  flags: 'flags', degree: 'degree', age: 'oldest', kind: 'kind',
+  flags: 'flags', degree: 'links', age: 'oldest', kind: 'kind',
 });
 
 const byId = (a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0);

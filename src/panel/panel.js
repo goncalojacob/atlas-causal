@@ -434,7 +434,7 @@ export function createPanel(container, {
     const href = article ? safeUrl(article.href) : null;
     if (!href) return '';
     return `<p class="wikipedia"><a href="${esc(href)}" rel="noopener" target="_blank">Read more on Wikipedia</a>
-      <span class="muted">${esc(article.title)} · ${esc(article.lang)}</span></p>`;
+      <span class="muted">${esc(article.title)} (${esc(article.lang)})</span></p>`;
   }
 
   // The way out of the card and onto a page of its own — **and only where
@@ -467,7 +467,7 @@ export function createPanel(container, {
     if (!slot) return;
     if (!hasEntry(record)) { slot.remove(); return; }
     slot.removeAttribute('data-slot');
-    slot.innerHTML = `<a href="${esc(links.entry(kind, record.id))}">Read the full entry →</a>`;
+    slot.innerHTML = `<a href="${esc(links.entry(kind, record.id))}">Read the full entry</a>`;
   }
 
   // On every card, and on the cards of every kind: a record here is an
@@ -534,8 +534,8 @@ export function createPanel(container, {
     const forward = openingLabel(trail.forward);
     if (!back && !forward) return '';
     return `<p class="card-history">
-      ${back ? `<button type="button" class="link small go-back" data-action="history-back">← ${esc(back)}</button>` : ''}
-      ${forward ? `<button type="button" class="link small go-forward" data-action="history-forward">${esc(forward)} →</button>` : ''}
+      ${back ? `<button type="button" class="link small go-back" data-action="history-back">Back to ${esc(back)}</button>` : ''}
+      ${forward ? `<button type="button" class="link small go-forward" data-action="history-forward">Forward to ${esc(forward)}</button>` : ''}
     </p>`;
   }
 
@@ -574,8 +574,8 @@ export function createPanel(container, {
         <p>To see the interface working on a synthetic graph, open <a href="?fixtures=1">?fixtures=1</a>.</p></section>`;
     }
     return `<section class="intro"><h2>Pick an event</h2>
-      <p>Click a mark on the map or a bar on the timeline. Then follow its consequences; the panel will show which other branches fed the same endpoint.</p>
-      <p class="muted">${n} events, ${[...atlas.edges.values()].filter((e) => e.status === 'active').length} links, ${atlas.actors.size} actors, ${atlas.sources.size} sources.${fixtures ? ' Synthetic fixtures: nothing here is history.' : ''}</p></section>`;
+      <p>Click a mark on the map or a bar on the timeline. Then follow its consequences. The panel shows the other events that led to the same result.</p>
+      <p class="muted">${n} events, ${[...atlas.edges.values()].filter((e) => e.status === 'active').length} links, ${atlas.actors.size} actors, ${atlas.sources.size} sources.${fixtures ? ' These are invented test records. None of them is history.' : ''}</p></section>`;
   }
 
   function notFound(kind, id) {

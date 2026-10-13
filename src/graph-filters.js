@@ -61,7 +61,7 @@ export const degreeLabel = (n) => DEGREE_LABEL[n] ?? `Show events with at least 
 // Disabled rather than hidden, so the reader who used it at rest can see it is
 // still there and why; and in a reader's own words, without "lens", which is
 // this atlas's word for the thing and not theirs.
-export const DEGREE_OFF = 'Off while an event is open: what is drawn is that event and its parts';
+export const DEGREE_OFF = 'Off while an event is open. The graph then shows that event and its parts.';
 
 // **And it says it to everybody** (M88 §11, the third review, finding B11).
 // The sentence above was a `title` and a class on the group, which is a

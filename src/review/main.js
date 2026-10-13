@@ -312,7 +312,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
   // clipboard can refuse, and then this box is the only copy there is.
   const bundleBox = html('details', { class: 'bundle-preview', hidden: 'hidden' });
   const bundleText = html('pre', { class: 'preview' });
-  bundleBox.append(html('summary', {}, 'The bundle, as it would be filed'), bundleText);
+  bundleBox.append(html('summary', {}, 'The bundle to file'), bundleText);
 
   const reviewer = readReviewer();
   const nameInput = html('input', { type: 'text', id: 'reviewer-name', autocomplete: 'name' });
@@ -369,7 +369,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
     const open = editor ? unverified(editor.current()) : [];
     citationWarning.hidden = open.length === 0;
     const one = open.length === 1;
-    citationWarning.textContent = open.length === 0 ? '' : `${open.length} citation${one ? '' : 's'} on this record ${one ? 'has' : 'have'} not been checked against the source: ${open.join(', ')}. Signing is allowed; the count stays in the validator.`;
+    citationWarning.textContent = open.length === 0 ? '' : `Nobody has checked ${open.length} citation${one ? '' : 's'} on this record against the source: ${open.join(', ')}. You can still sign. The validator keeps counting ${one ? 'it' : 'them'}.`;
   }
 
   function editorIsValid() {
@@ -387,7 +387,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
       shards.set(kind, { records: (shard.records ?? []).filter(inQueue), warnings: shard.warnings ?? [] });
     } catch (error) {
       shards.delete(kind);
-      countEl.textContent = `The ${kind} queue could not be fetched: ${error.message}`;
+      countEl.textContent = `Could not load the ${kind} queue: ${error.message}`;
       return;
     }
     rebuild();
@@ -419,7 +419,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
     const byKind = [...counts].filter(([, n]) => n > 0).map(([kind, n]) => `${n} ${kind}`);
     progressEl.textContent = remaining === 0
       ? `Nothing left: all ${total} records carry a person's name.`
-      : `${remaining} of ${total} records still unreviewed — ${byKind.join(', ')}.`;
+      : `${remaining} of ${total} records still need a review: ${byKind.join(', ')}.`;
   }
 
   function chip(label, active, onPick, { title = null } = {}) {
@@ -450,7 +450,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
         for (const kind of counts.keys()) load(kind);
         paintQueue();
       },
-      { title: loaded ? null : 'fetches every kind’s digests' },
+      { title: loaded ? null : 'Loads the queue for every kind of record' },
     ));
     for (const [kind, count] of counts) {
       if (!count) continue;
@@ -496,8 +496,8 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
     list.setRows(rows, { keepScroll: true });
     const missing = [...counts.keys()].filter((kind) => !shards.has(kind));
     countEl.textContent = rows.length === 0 && missing.length
-      ? `Nothing fetched yet — choose a kind.`
-      : `${rows.length} shown${missing.length ? `, of the ${[...counts].filter(([k]) => shards.has(k)).map(([k]) => k).join(', ') || 'nothing'} fetched so far` : ''}.`;
+      ? `Nothing loaded yet. Choose a kind.`
+      : `${rows.length} shown${missing.length ? `, of the ${[...counts].filter(([k]) => shards.has(k)).map(([k]) => k).join(', ') || 'nothing'} loaded so far` : ''}.`;
     list.setEmpty(rows.length ? null : html('p', { class: 'hint' }, queue.length ? 'Nothing matches these filters.' : 'The queue is empty.'));
   }
 
@@ -524,10 +524,10 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
     list.repaint();
     headEl.append(
       html('h2', {}, item.label),
-      html('p', { class: 'record-id' }, `${item.kind} · ${item.id}`),
+      html('p', { class: 'record-id' }, `${item.kind}: ${item.id}`),
     );
     if (item.note) headEl.appendChild(html('p', { class: 'review-note' }, item.note));
-    if (item.flags.length) headEl.appendChild(html('p', { class: 'record-flags' }, item.flags.join(' · ')));
+    if (item.flags.length) headEl.appendChild(html('p', { class: 'record-flags' }, item.flags.join(', ')));
 
     let record;
     try {
@@ -575,7 +575,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
     const ends = record.kind === 'edge'
       ? [['from', record.from, 'event'], ['to', record.to, 'event']]
       : [['from', record.from, 'actor'], ['to', record.to, 'actor']];
-    contextEl.appendChild(html('h3', { class: 'context-head' }, `${record.type} — the two ends`));
+    contextEl.appendChild(html('h3', { class: 'context-head' }, `The two ends of this ${record.type} link`));
     const list_ = html('div', { class: 'context-ends' });
     contextEl.appendChild(list_);
     for (const [side, id, kind] of ends) {
@@ -588,7 +588,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
         end = await getJson(`${dataRoot}${kind}s/${encodeURIComponent(id)}.json`);
       } catch {
         if (!current()) return;
-        box.appendChild(html('p', { class: 'hint' }, 'this record could not be fetched'));
+        box.appendChild(html('p', { class: 'hint' }, 'Could not load this record.'));
         continue;
       }
       if (!current()) return;
@@ -618,7 +618,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
     const versions = history.versions ?? [];
     summaryEl.textContent = `History — ${versions.length} version${versions.length === 1 ? '' : 's'}`;
     if (history.from !== 'git') {
-      historyEl.appendChild(html('p', { class: 'hint' }, 'Built from the record’s own dates: the index was made where the repository’s history could not be read, so what changed at each revision is not known.'));
+      historyEl.appendChild(html('p', { class: 'hint' }, 'This history comes from the record’s own dates. The build could not read the repository’s history, so it does not know what changed at each revision.'));
     }
     const ul = html('ul', { class: 'history-list' });
     // Newest first: what happened last is what a reviewer is deciding about.
@@ -676,16 +676,16 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
     if (held) {
       const left = claimDaysLeft(held, today());
       claimEl.appendChild(html('p', { class: 'claim-held' },
-        `${mine ? 'You are' : `${held.name} is`} reading this — claimed ${held.on}, ${left} day${left === 1 ? '' : 's'} left.`));
+        `${mine ? 'You are' : `${held.name} is`} reading this. Claimed ${held.on}, ${left} day${left === 1 ? '' : 's'} left.`));
     }
     const button = html('button', { type: 'button', class: 'link' }, held ? 'Release' : 'Claim');
     button.disabled = Boolean(held && !mine);
-    if (held && !mine) button.title = 'the claim is somebody else’s; it expires on its own';
+    if (held && !mine) button.title = 'Someone else holds this claim. It expires by itself.';
     button.addEventListener('click', async () => {
       if (!drafted) return;
       const claiming = reviewer();
       if (!held && !claiming.name) {
-        noteEl.textContent = 'A claim says who is reading it: put your name in the box below first.';
+        noteEl.textContent = 'A claim names who is reading. Put your name in the box below first.';
         return;
       }
       const next = held ? releaseClaim(drafted) : claimRecord(drafted, claiming, { today: today() });
@@ -752,8 +752,8 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
         return;
       }
       noteEl.textContent = state === 'failed'
-        ? `${mine.replace('The index is rebuilding…', '')}The index could not be rebuilt: ${status.index.message}`
-        : mine.replace('The index is rebuilding…', 'The index has been rebuilt.');
+        ? `${mine.replace('The index is rebuilding…', '')}Could not rebuild the index: ${status.index.message}`
+        : mine.replace('The index is rebuilding…', 'The index is rebuilt.');
     };
     window.setTimeout(poll, 250);
   }
@@ -772,7 +772,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
       noteEl.textContent = `Nothing was written. ${outcome.message}`;
     } else {
       noteEl.textContent = [
-        outcome.copied ? 'No write endpoint here, so the bundle is on your clipboard.' : 'No write endpoint here, and the clipboard refused: copy the bundle from the box.',
+        outcome.copied ? 'This server cannot save records, so the bundle is on your clipboard.' : 'This server cannot save records, and the clipboard refused. Copy the bundle from the box.',
         outcome.prefilled ? 'The correction issue opened with it filled in.' : 'Paste it into the correction issue that just opened.',
       ].join(' ');
     }
@@ -819,7 +819,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
     }
     const plan = retractionPlan(record, citers ? { ...topology, citers } : topology);
     if (plan.blockers.length) {
-      noteEl.textContent = `This cannot be retracted while ${plan.blockers.map((b) => `${b.id} ${b.why}`).join(', ')}. Correct those records first.`;
+      noteEl.textContent = `You cannot retract this while ${plan.blockers.map((b) => `${b.id} ${b.why}`).join(', ')}. Correct those records first.`;
       return;
     }
     const carried = plan.retract.map((r) => `${r.kind} ${r.id}`);
@@ -830,9 +830,9 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
     // Why, in the reviewer's own words. A retraction is an argument for
     // withdrawing a record and it stays on the record for good (rule 27), so
     // it is asked for before anything is written and a blank one stops here.
-    const reason = String(window.prompt(`Why is ${record.id} being retracted? This stays on the record.`) ?? '').trim();
+    const reason = String(window.prompt(`Why are you retracting ${record.id}? The reason stays on the record.`) ?? '').trim();
     if (!reason) {
-      noteEl.textContent = 'A retraction says why. Nothing was retracted.';
+      noteEl.textContent = 'A retraction needs a reason. Nothing was retracted.';
       return;
     }
     // The cascade is fetched whole: the topology carries a projection, and a
@@ -959,7 +959,7 @@ function render({ topology, summary, shardOf, historyOf, schemas, citersOf }) {
     // After opening, because opening a record clears this line: an address
     // that names nothing is said out loud rather than silently ignored, and
     // what was opened instead is the queue's own first record.
-    if (wanted && !askedFor) noteEl.textContent = `Nothing here has the id ${wanted}; the queue's first record is open instead.`;
+    if (wanted && !askedFor) noteEl.textContent = `Nothing here has the id ${wanted}. The first record in the queue is open instead.`;
     else progressEl.classList.add('good');
   });
 

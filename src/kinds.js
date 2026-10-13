@@ -73,7 +73,7 @@ const KIND_ENTRIES = {
     dir: 'edges',
     schema: 'v1/edge.json',
     label: 'Edge',
-    hint: 'One causal link, with the argument for it. The id is derived: from, to and type.',
+    hint: 'One causal link between two events, with the argument for it. The atlas builds the id from the two events and the type.',
     licenses: ['CC-BY-SA-4.0'],
     identity: false,
     body: false,
@@ -98,7 +98,7 @@ const KIND_ENTRIES = {
     dir: 'sources',
     schema: 'v1/source.json',
     label: 'Source',
-    hint: 'A bibliography entry, cited by reference. Fifty records citing the same book cite one file.',
+    hint: 'A book, article or other work in the bibliography. Records cite it by its id, so fifty records that cite the same book point at one file.',
     licenses: ['CC-BY-SA-4.0'],
     identity: false,
     body: false,
@@ -124,7 +124,7 @@ const KIND_ENTRIES = {
     dir: 'actors',
     schema: 'v1/actor.json',
     label: 'Actor',
-    hint: 'A person, polity, institution or people. Actors are reached through their events, never listed on their own.',
+    hint: 'A person, polity, institution or people. The atlas reaches actors through their events and does not list them on their own.',
     // An actor may carry an import's licence only when an import created it:
     // see IMPORT_LICENCE_ORIGINS in src/origin.js. Two of them now — CShapes'
     // territories are CC BY-NC-SA and Historical Basemaps' are GPL-3.0.
@@ -174,7 +174,7 @@ const KIND_ENTRIES = {
     dir: 'places',
     schema: 'v1/place.json',
     label: 'Place',
-    hint: 'Somewhere events happen, with its own coordinates. A place is a geographic fact, so it needs no source — the events that point at it still do.',
+    hint: 'Somewhere events happen, with its own coordinates. A place is a fact of geography and needs no source. The events that point at it still need sources.',
     licenses: ['CC-BY-SA-4.0'],
     identity: true,
     body: true,
@@ -195,7 +195,7 @@ const KIND_ENTRIES = {
     dir: 'relations',
     schema: 'v1/relation.json',
     label: 'Relation',
-    hint: 'A dated link between two actors — a regime of a state, a member of a party, who led a body. The id is derived: from, to and type.',
+    hint: 'A dated link between two actors, such as a regime of a state, a member of a party or who led a body. The atlas builds the id from the two actors and the type.',
     // A relation is written by a person about two actors — except the
     // successions the CShapes split table states, which the import derives
     // from a dataset this project does not own (I8, owner question 4). The
@@ -225,7 +225,7 @@ const KIND_ENTRIES = {
     dir: 'offices',
     schema: 'v1/office.json',
     label: 'Office',
-    hint: 'A post that is held one person after another — a crown, a presidency, a party leadership. It belongs to an actor; who held it and for how long is a tenure.',
+    hint: 'A post that one person holds after another, such as a crown, a presidency or a party leadership. It belongs to an actor. Each turn at the post, with who held it and for how long, is a tenure.',
     // Written by a person about an actor's own arrangements, like a relation:
     // nothing imports one, so there is no NC hole here.
     licenses: ['CC-BY-SA-4.0'],
@@ -252,7 +252,7 @@ const KIND_ENTRIES = {
     dir: 'tenures',
     schema: 'v1/tenure.json',
     label: 'Tenure',
-    hint: 'One person\'s turn at one office, with the years and the sources for them. Two tenures of one office may overlap: a regency is not a mistake and a year is the finest bound this model has.',
+    hint: 'One person\'s turn at one office, with the years and the sources for them. Two tenures of one office may overlap. A regency can cause this, and the atlas records only years.',
     licenses: ['CC-BY-SA-4.0'],
     identity: false,
     body: false,
@@ -275,7 +275,7 @@ const KIND_ENTRIES = {
     dir: 'narratives',
     schema: 'v1/narrative.json',
     label: 'Narrative',
-    hint: 'A signed walk through records that are already here: your account of them, in order, changing none of them. Where yours and somebody else\'s disagree, both stand.',
+    hint: 'Your signed account of records already in the atlas, step by step, in order. It does not change the records. Where your account and another disagree, the atlas keeps both.',
     // A narrative is prose about records that are already here, and it is
     // signed: the same licence as everything else somebody wrote.
     licenses: ['CC-BY-SA-4.0'],

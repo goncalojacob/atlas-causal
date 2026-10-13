@@ -50,7 +50,7 @@ const WIKIDATA_FIELD = Object.freeze({
   path: '/wikidata',
   identity: true,
   derive: wikidataFrom,
-  hint: 'optional: paste the item\'s Wikidata URL and the Q-number is taken from it. An identifier, never a source — the argument stays in the record',
+  hint: 'Optional. Paste the item\'s Wikidata URL and the form takes the Q-number from it. The Q-number names the item. It does not replace a source.',
 });
 
 // The long form, on the three kinds that have an entry page. It is the one
@@ -62,7 +62,7 @@ const BODY_FIELD = Object.freeze({
   input: 'textarea',
   path: '/body',
   body: true,
-  hint: 'optional, and the long form of this record: paragraphs, ## and ### headings, *emphasis*, - lists, > quotations, [text](event:some-id) into the atlas, [text](https://…) out of it, and [^source-id p. 12] for a work this record already cites. No HTML, no images',
+  hint: 'Optional. The long form of this record. You can write paragraphs, ## and ### headings, *emphasis*, - lists, > quotations, [text](event:some-id) for a link inside the atlas, [text](https://…) for a link outside it, and [^source-id p. 12] for a work this record already cites. HTML and images are not allowed.',
 });
 
 // Field descriptors. `path` is the JSON pointer the validator reports for
@@ -73,110 +73,110 @@ const BODY_FIELD = Object.freeze({
 const DESCRIPTORS = Object.freeze({
   event: Object.freeze([
     { key: 'title', label: 'Title', input: 'text', path: '/title', required: true },
-    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'lowercase words joined by hyphens; it becomes the file name and the permanent URL' },
-    { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', required: true, hint: 'written by you, in your own words' },
-    { key: 'start', label: 'Start year', input: 'text', path: '/when/start', required: true, hint: 'an integer year, negative for BCE, no year 0; a range as 1400..1450' },
-    { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'blank means the same year as the start; write "ongoing" for an interval with no end' },
-    { key: 'date', label: 'Exact date', input: 'text', path: '/when/date', hint: 'display only, exactly as the source gives it: YYYY-MM-DD or YYYY-MM' },
-    { key: 'calendar', label: 'Calendar', input: 'select', options: ['', 'julian', 'gregorian'], path: '/when/calendar', hint: 'of the exact date; Julian before 1582, Gregorian after, unless the source says otherwise' },
-    { key: 'endDate', label: 'Exact end date', input: 'text', path: '/when/endDate', hint: 'only for something that ran between two known days, in the same shape and calendar as the exact date' },
-    { key: 'place', label: 'Place', input: 'select', optionsFrom: 'places', path: '/place', hint: 'a place record, chosen by name; add one below if it is not there yet. Leave it empty for a long process with no honest point' },
-    { key: 'region', label: 'Timeline lane', input: 'select', optionsFrom: 'regions', path: '/region', hint: 'derived from the place; set it only when the derivation would be wrong, and always when there is no place' },
-    { key: 'parent', label: 'Part of', input: 'select', optionsFrom: 'events', path: '/parent', hint: 'optional: the larger event this one is inside — a battle inside a war, a decree inside a revolution. A display fact and never an argument: what caused what is an edge' },
-    { key: 'scope', label: 'Reach', input: 'select', options: ['', ...EVENT_SCOPES], path: '/scope', hint: 'leave it blank for an ordinary event. A claim about how wide the event was, not a way to make it look important: regional or worldwide is drawn as the ground smaller events stand on' },
-    { key: 'category', label: 'Category', input: 'select', optionsFrom: 'categories', path: '/category', hint: 'what kind of thing this was, from the atlas\'s closed list' },
+    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'Lowercase words joined by hyphens. It becomes the file name and the permanent URL.' },
+    { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', required: true, hint: 'Write it in your own words.' },
+    { key: 'start', label: 'Start year', input: 'text', path: '/when/start', required: true, hint: 'A whole year. Use a negative number for BCE. There is no year 0. Write a range as 1400..1450.' },
+    { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'Leave it blank if it is the same year as the start. Write "ongoing" if it has not ended.' },
+    { key: 'date', label: 'Exact date', input: 'text', path: '/when/date', hint: 'For display only. Write it as the source gives it: YYYY-MM-DD or YYYY-MM.' },
+    { key: 'calendar', label: 'Calendar', input: 'select', options: ['', 'julian', 'gregorian'], path: '/when/calendar', hint: 'The calendar of the exact date. Julian before 1582 and Gregorian after, unless the source says otherwise.' },
+    { key: 'endDate', label: 'Exact end date', input: 'text', path: '/when/endDate', hint: 'Only for an event that ran between two known days. Use the same format and calendar as the exact date.' },
+    { key: 'place', label: 'Place', input: 'select', optionsFrom: 'places', path: '/place', hint: 'Choose a place record by name. If it is missing, add one below. Leave it empty for a long process that has no single place.' },
+    { key: 'region', label: 'Timeline lane', input: 'select', optionsFrom: 'regions', path: '/region', hint: 'The atlas takes the lane from the place. Set it yourself when that lane would be wrong, and always when there is no place.' },
+    { key: 'parent', label: 'Part of', input: 'select', optionsFrom: 'events', path: '/parent', hint: 'Optional. The larger event this one is part of, such as a battle in a war or a decree in a revolution. It changes only how the atlas shows the event. To say what caused what, add an edge.' },
+    { key: 'scope', label: 'Reach', input: 'select', options: ['', ...EVENT_SCOPES], path: '/scope', hint: 'Leave it blank for an ordinary event. Choose regional or worldwide only for how far the event reached. The atlas draws such an event behind the smaller events inside it.' },
+    { key: 'category', label: 'Category', input: 'select', optionsFrom: 'categories', path: '/category', hint: 'What kind of event this was, from the atlas\'s fixed list.' },
     BODY_FIELD,
     WIKIDATA_FIELD,
   ]),
   place: Object.freeze([
-    { key: 'names', label: 'Names', input: 'text', path: '/names', required: true, hint: 'the display name first, then variants and other-language forms, separated by semicolons: Lisbon; Lisboa' },
-    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'lowercase words joined by hyphens; it becomes the file name and the permanent URL' },
-    { key: 'lon', label: 'Longitude', input: 'text', path: '/where/lon', required: true, hint: 'WGS84, east positive' },
-    { key: 'lat', label: 'Latitude', input: 'text', path: '/where/lat', required: true, hint: 'WGS84, north positive' },
+    { key: 'names', label: 'Names', input: 'text', path: '/names', required: true, hint: 'The name to show first, then other spellings and names in other languages, separated by semicolons: Lisbon; Lisboa.' },
+    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'Lowercase words joined by hyphens. It becomes the file name and the permanent URL.' },
+    { key: 'lon', label: 'Longitude', input: 'text', path: '/where/lon', required: true, hint: 'In degrees (WGS84). East is positive.' },
+    { key: 'lat', label: 'Latitude', input: 'text', path: '/where/lat', required: true, hint: 'In degrees (WGS84). North is positive.' },
     { key: 'precision', label: 'Precision', input: 'select', options: PRECISION, path: '/where/precision' },
-    { key: 'region', label: 'Timeline lane', input: 'select', optionsFrom: 'regions', path: '/region', hint: 'derived from the coordinates; set it only when the derivation would be wrong' },
-    { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', hint: 'optional, and written by you when it is there' },
+    { key: 'region', label: 'Timeline lane', input: 'select', optionsFrom: 'regions', path: '/region', hint: 'The atlas takes the lane from the coordinates. Set it yourself only when that lane would be wrong.' },
+    { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', hint: 'Optional. Write it in your own words.' },
     BODY_FIELD,
     WIKIDATA_FIELD,
   ]),
   edge: Object.freeze([
     { key: 'from', label: 'From', input: 'select', optionsFrom: 'events', path: '/from', required: true },
     { key: 'to', label: 'To', input: 'select', optionsFrom: 'events', path: '/to', required: true },
-    { key: 'type', label: 'Type', input: 'select', options: ['', ...EDGE_TYPES], path: '/type', required: true, hint: 'the right one of five, not the nearest one' },
-    { key: 'confidence', label: 'Confidence', input: 'select', options: ['', ...CONFIDENCE], path: '/confidence', required: true, hint: 'defined by evidence, not by how strongly you feel: consensus needs two sources by different authors' },
-    { key: 'explanation', label: 'Explanation', input: 'textarea', path: '/explanation', required: true, hint: 'the argument for the link, written by you: why this, and not coincidence' },
-    { key: 'disputeText', label: 'The dispute', input: 'textarea', path: '/dispute/text', when: (v) => v.confidence === 'disputed', hint: 'who disagrees about this link, and why; the reader sees the disagreement rather than a side' },
+    { key: 'type', label: 'Type', input: 'select', options: ['', ...EDGE_TYPES], path: '/type', required: true, hint: 'Choose the one of the five that fits. A near fit is not enough.' },
+    { key: 'confidence', label: 'Confidence', input: 'select', options: ['', ...CONFIDENCE], path: '/confidence', required: true, hint: 'Set it by the evidence. Consensus needs two sources by different authors.' },
+    { key: 'explanation', label: 'Explanation', input: 'textarea', path: '/explanation', required: true, hint: 'Your argument for the link. Say why one event led to the other and why it is not a coincidence.' },
+    { key: 'disputeText', label: 'The dispute', input: 'textarea', path: '/dispute/text', when: (v) => v.confidence === 'disputed', hint: 'Who disagrees about this link, and why. The reader sees the disagreement and the atlas takes no side.' },
   ]),
   actor: Object.freeze([
-    { key: 'names', label: 'Names', input: 'text', path: '/names', required: true, hint: 'the display name first, then variants, former names and acronyms, separated by semicolons' },
-    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'lowercase words joined by hyphens; it becomes the file name and the permanent URL' },
-    { key: 'actorType', label: 'Type', input: 'select', options: ['', ...ACTOR_TYPES], path: '/actorType', required: true, hint: 'a person, a polity, an institution, or a people' },
-    { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', required: true, hint: 'written by you, in your own words' },
-    { key: 'start', label: 'Start year', input: 'text', path: '/when/start', required: true, hint: 'birth for a person, founding for the rest; a range as 1400..1450' },
-    { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'death or dissolution; write "ongoing" for someone still alive or a body still standing' },
-    { key: 'label', label: 'Seat or birthplace', input: 'text', path: '/where/label', hint: 'optional: leave the three place fields blank rather than invent a point' },
-    { key: 'lon', label: 'Longitude', input: 'text', path: '/where/lon', hint: 'WGS84, east positive' },
-    { key: 'lat', label: 'Latitude', input: 'text', path: '/where/lat', hint: 'WGS84, north positive' },
+    { key: 'names', label: 'Names', input: 'text', path: '/names', required: true, hint: 'The name to show first, then other spellings, former names and acronyms, separated by semicolons.' },
+    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'Lowercase words joined by hyphens. It becomes the file name and the permanent URL.' },
+    { key: 'actorType', label: 'Type', input: 'select', options: ['', ...ACTOR_TYPES], path: '/actorType', required: true, hint: 'A person, a polity, an institution or a people.' },
+    { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', required: true, hint: 'Write it in your own words.' },
+    { key: 'start', label: 'Start year', input: 'text', path: '/when/start', required: true, hint: 'The year of birth for a person, or of founding for anything else. Write a range as 1400..1450.' },
+    { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'The year of death, or the year it ended. Write "ongoing" for a person still alive or a body that still exists.' },
+    { key: 'label', label: 'Seat or birthplace', input: 'text', path: '/where/label', hint: 'Optional. Leave the three place fields blank if you would have to guess.' },
+    { key: 'lon', label: 'Longitude', input: 'text', path: '/where/lon', hint: 'In degrees (WGS84). East is positive.' },
+    { key: 'lat', label: 'Latitude', input: 'text', path: '/where/lat', hint: 'In degrees (WGS84). North is positive.' },
     { key: 'precision', label: 'Precision', input: 'select', options: PRECISION, path: '/where/precision' },
     BODY_FIELD,
     WIKIDATA_FIELD,
   ]),
   relation: Object.freeze([
-    { key: 'from', label: 'From', input: 'select', optionsFrom: 'actors', path: '/from', required: true, hint: 'the regime, the body, the person: the end the type is written from' },
+    { key: 'from', label: 'From', input: 'select', optionsFrom: 'actors', path: '/from', required: true, hint: 'The actor the type is said of: the regime, the body or the person.' },
     { key: 'to', label: 'To', input: 'select', optionsFrom: 'actors', path: '/to', required: true },
-    { key: 'type', label: 'Type', input: 'select', options: ['', ...RELATION_TYPES], path: '/type', required: true, hint: 'regime-of a state, succeeded by, member-of a body, part-of a body, allied-with it. Who led a body is an office and a tenure, not a relation' },
-    { key: 'start', label: 'Start year', input: 'text', path: '/when/start', required: true, hint: 'the year the relation began; a range as 1400..1450' },
-    { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'blank means the same year as the start; write "ongoing" for one that still holds' },
-    { key: 'date', label: 'Exact date', input: 'text', path: '/when/date', hint: 'display only, for a relation that began on a known day: YYYY-MM-DD or YYYY-MM' },
-    { key: 'note', label: 'Note', input: 'text', path: '/note', hint: 'optional, short, and written by you: what the type and the dates cannot say' },
+    { key: 'type', label: 'Type', input: 'select', options: ['', ...RELATION_TYPES], path: '/type', required: true, hint: 'One of regime-of a state, succeeded by, member-of a body, part-of a body or allied-with. To record who led a body, add an office and a tenure.' },
+    { key: 'start', label: 'Start year', input: 'text', path: '/when/start', required: true, hint: 'The year the relation began. Write a range as 1400..1450.' },
+    { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'Leave it blank if it is the same year as the start. Write "ongoing" if the relation still holds.' },
+    { key: 'date', label: 'Exact date', input: 'text', path: '/when/date', hint: 'For display only, when the relation began on a known day: YYYY-MM-DD or YYYY-MM.' },
+    { key: 'note', label: 'Note', input: 'text', path: '/note', hint: 'Optional and short, in your own words. Say what the type and the dates cannot.' },
   ]),
   office: Object.freeze([
-    { key: 'title', label: 'Title', input: 'text', path: '/title', required: true, hint: 'what the post is called, as its own actor calls it: King of Portugal, Prime Minister, Secretary-General' },
-    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'lowercase words joined by hyphens; it becomes the file name and the permanent URL' },
-    { key: 'of', label: 'Of', input: 'select', optionsFrom: 'actors', path: '/of', required: true, hint: 'the actor whose office this is: the state, the party, the body' },
-    { key: 'category', label: 'Category', input: 'select', options: ['', ...OFFICE_CATEGORIES], path: '/category', required: true, hint: 'what kind of post it is; it also decides which kind of actor may stand at "Of"' },
-    { key: 'start', label: 'Start year', input: 'text', path: '/when/start', hint: 'the year the office itself was created; leave both years blank rather than guess one' },
-    { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'blank means the same year as the start; write "ongoing" for a post that still exists' },
-    { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', hint: 'optional, and written by you when it is there' },
+    { key: 'title', label: 'Title', input: 'text', path: '/title', required: true, hint: 'The name of the post as its own state or body uses it: King of Portugal, Prime Minister, Secretary-General.' },
+    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'Lowercase words joined by hyphens. It becomes the file name and the permanent URL.' },
+    { key: 'of', label: 'Of', input: 'select', optionsFrom: 'actors', path: '/of', required: true, hint: 'The state, party or body the office belongs to.' },
+    { key: 'category', label: 'Category', input: 'select', options: ['', ...OFFICE_CATEGORIES], path: '/category', required: true, hint: 'What kind of post it is. It also decides which kind of actor you can choose under "Of".' },
+    { key: 'start', label: 'Start year', input: 'text', path: '/when/start', hint: 'The year the office was created. Leave both years blank if you would have to guess.' },
+    { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'Leave it blank if it is the same year as the start. Write "ongoing" for a post that still exists.' },
+    { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', hint: 'Optional. Write it in your own words.' },
     WIKIDATA_FIELD,
   ]),
   tenure: Object.freeze([
-    { key: 'person', label: 'Person', input: 'select', optionsFrom: 'actors', path: '/person', required: true, hint: 'who held it; an actor of type person' },
-    { key: 'office', label: 'Office', input: 'select', optionsFrom: 'offices', path: '/office', required: true, hint: 'the post they held; add one above if it is not there yet' },
-    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'lowercase words joined by hyphens, and one person may hold one office more than once: soares-prime-minister-1976' },
-    { key: 'start', label: 'Start year', input: 'text', path: '/when/start', required: true, hint: 'the year they took it; a range as 1400..1450' },
-    { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'blank means the same year as the start; write "ongoing" for somebody still in post' },
-    { key: 'startedBy', label: 'Started by', input: 'select', optionsFrom: 'events', path: '/startedBy', hint: 'optional: the election, the coup or the succession that began it' },
-    { key: 'note', label: 'Note', input: 'text', path: '/note', hint: 'optional, short, and written by you: what the office, the person and the dates cannot say' },
+    { key: 'person', label: 'Person', input: 'select', optionsFrom: 'actors', path: '/person', required: true, hint: 'Who held the office. Choose an actor of type person.' },
+    { key: 'office', label: 'Office', input: 'select', optionsFrom: 'offices', path: '/office', required: true, hint: 'The post they held. If it is missing, add it above.' },
+    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'Lowercase words joined by hyphens. One person can hold one office more than once, so add the year: soares-prime-minister-1976.' },
+    { key: 'start', label: 'Start year', input: 'text', path: '/when/start', required: true, hint: 'The year they took office. Write a range as 1400..1450.' },
+    { key: 'end', label: 'End year', input: 'text', path: '/when/end', hint: 'Leave it blank if it is the same year as the start. Write "ongoing" for someone still in office.' },
+    { key: 'startedBy', label: 'Started by', input: 'select', optionsFrom: 'events', path: '/startedBy', hint: 'Optional. The election, coup or succession that began the tenure.' },
+    { key: 'note', label: 'Note', input: 'text', path: '/note', hint: 'Optional and short, in your own words. Say what the office, the person and the dates cannot.' },
   ]),
   narrative: Object.freeze([
     { key: 'title', label: 'Title', input: 'text', path: '/title', required: true },
-    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'lowercase words joined by hyphens; it becomes the file name and the permanent URL' },
-    { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', required: true, hint: 'what your account claims, in your own words — enough for a reader choosing between two accounts of the same period' },
-    { key: 'windowFrom', label: 'Opens in', input: 'text', path: '/window/from', hint: 'optional: the year the atlas opens on when the narrative is opened' },
-    { key: 'windowTo', label: 'Closes in', input: 'text', path: '/window/to', hint: 'optional; leave both blank to open on whatever the reader was looking at' },
+    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'Lowercase words joined by hyphens. It becomes the file name and the permanent URL.' },
+    { key: 'summary', label: 'Summary', input: 'textarea', path: '/summary', required: true, hint: 'What your account claims, in your own words. Write enough for a reader to choose between two accounts of the same period.' },
+    { key: 'windowFrom', label: 'Opens in', input: 'text', path: '/window/from', hint: 'Optional. The first year the atlas shows when a reader opens the narrative.' },
+    { key: 'windowTo', label: 'Closes in', input: 'text', path: '/window/to', hint: 'Optional. The last year the atlas shows. Leave both years blank to keep the years the reader was already looking at.' },
   ]),
   source: Object.freeze([
-    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'author, year, keyword: russell-2000-henry' },
+    { key: 'id', label: 'Id', input: 'text', path: '/id', required: true, hint: 'Author, year and a keyword: russell-2000-henry.' },
     { key: 'type', label: 'Type', input: 'select', options: SOURCE_TYPES, path: '/type', required: true },
-    { key: 'creators', label: 'Authors of the work', input: 'text', path: '/creators', required: true, hint: 'as printed, separated by semicolons' },
+    { key: 'creators', label: 'Authors of the work', input: 'text', path: '/creators', required: true, hint: 'As printed, separated by semicolons.' },
     { key: 'title', label: 'Title', input: 'text', path: '/title', required: true },
     { key: 'year', label: 'Year', input: 'text', path: '/year' },
     // The containing work. Five fields and one rule: leave the title empty
     // and no container is written at all, which is what every source record
     // written before these fields existed looks like.
-    { key: 'containerTitle', label: 'In', input: 'text', path: '/container/title', hint: 'the journal, the edited volume, the series or the site this work is inside; leave empty for a work that stands alone' },
-    { key: 'containerKind', label: 'And it is a', input: 'select', options: ['', ...CONTAINER_KINDS], path: '/container/kind', hint: 'required once you have named one: a chapter in an edited volume and an article in a journal are not cited alike' },
-    { key: 'volume', label: 'Volume', input: 'text', path: '/container/volume', hint: 'of the containing work; also the number in a series' },
+    { key: 'containerTitle', label: 'In', input: 'text', path: '/container/title', hint: 'The journal, edited volume, series or website that contains this work. Leave it empty for a work that stands alone.' },
+    { key: 'containerKind', label: 'And it is a', input: 'select', options: ['', ...CONTAINER_KINDS], path: '/container/kind', hint: 'Required once you fill in "In". A chapter in an edited volume and an article in a journal are cited differently.' },
+    { key: 'volume', label: 'Volume', input: 'text', path: '/container/volume', hint: 'The volume of the work named under "In", or the number in a series.' },
     { key: 'issue', label: 'Issue', input: 'text', path: '/container/issue' },
-    { key: 'pages', label: 'Pages', input: 'text', path: '/container/pages', hint: 'as printed: 45-67' },
+    { key: 'pages', label: 'Pages', input: 'text', path: '/container/pages', hint: 'As printed: 45-67.' },
     { key: 'publisher', label: 'Publisher', input: 'text', path: '/publisher' },
-    { key: 'isbn', label: 'ISBN', input: 'text', path: '/isbn', hint: '10 or 13 digits, no hyphens' },
+    { key: 'isbn', label: 'ISBN', input: 'text', path: '/isbn', hint: '10 or 13 digits, without hyphens.' },
     { key: 'doi', label: 'DOI', input: 'text', path: '/doi', hint: '10.xxxx/…' },
-    { key: 'url', label: 'URL', input: 'text', path: '/url', hint: 'http(s); for a web source, preferably an archive URL' },
-    { key: 'accessed', label: 'Accessed', input: 'text', path: '/accessed', hint: 'YYYY-MM-DD; required for a web source' },
-    { key: 'repository', label: 'Repository', input: 'text', path: '/repository', hint: 'for a primary source: the archive holding the document' },
-    { key: 'reference', label: 'Reference', input: 'text', path: '/reference', hint: 'for a primary source: the shelfmark' },
+    { key: 'url', label: 'URL', input: 'text', path: '/url', hint: 'An http or https address. For a web source, use an archived copy if you can.' },
+    { key: 'accessed', label: 'Accessed', input: 'text', path: '/accessed', hint: 'YYYY-MM-DD. Required for a web source.' },
+    { key: 'repository', label: 'Repository', input: 'text', path: '/repository', hint: 'For a primary source, the archive that holds the document.' },
+    { key: 'reference', label: 'Reference', input: 'text', path: '/reference', hint: 'For a primary source, the archive\'s catalogue number (shelfmark).' },
   ]),
 });
 
@@ -192,8 +192,8 @@ const DESCRIPTORS = Object.freeze({
 // `data/categories.json` has no categories to choose, which is exactly what
 // makes the check absent on the CLI too (M30a, A8).
 const VOCABULARIES = Object.freeze({
-  regions: { key: 'regions', blank: '— derived from the place —' },
-  categories: { key: 'categoriesAllowed', blank: '— not said —' },
+  regions: { key: 'regions', blank: '(from the place)' },
+  categories: { key: 'categoriesAllowed', blank: '(not said)' },
 });
 
 export function isVocabulary(name) {
@@ -227,7 +227,7 @@ export function roleChoices(topology) {
   const rows = topology?.rolesAllowed ?? [];
   if (rows.length === 0) return [];
   return [
-    { value: '', label: '— no role —', title: '' },
+    { value: '', label: '(no role)', title: '' },
     ...rows.map((row) => (typeof row === 'string'
       ? { value: row, label: row, title: '' }
       : { value: row.id, label: row.label ?? row.id, title: row.description ?? '' })),
@@ -243,7 +243,7 @@ export function roleChoices(topology) {
 export function roleOptionsFor(choices, value) {
   if (choices.length === 0 || typeof value !== 'string' || value === '') return choices;
   if (choices.some((choice) => choice.value === value)) return choices;
-  return [...choices, { value, label: `${value} — not in data/roles.json`, title: 'Written before the list closed, or by hand. Rule 25 refuses it on an active event.' }];
+  return [...choices, { value, label: `${value} (not in data/roles.json)`, title: 'Someone wrote this role by hand or before the list closed. Rule 25 refuses it on an active event.' }];
 }
 
 // The form's fields for each kind, in the order the registry names them.
@@ -283,7 +283,7 @@ export const FIELDS = fieldsFromRegistry();
 function unknownKind(kind) {
   const known = CONTRIBUTED_KINDS;
   const list = `${known.slice(0, -1).join(', ')} or ${known[known.length - 1]}`;
-  return `kind must be ${list}, not ${JSON.stringify(kind)}`;
+  return `kind must be ${list}, and ${JSON.stringify(kind)} is none of them`;
 }
 
 // Which citation lists a kind carries, which actor lists, which step lists:
@@ -1140,13 +1140,13 @@ export function findDuplicates(subject, candidates, { limit = 5, threshold = 0.3
 // picks the schema by `kind` and reports the real path, which is what the
 // form needs to put the message next to the input.
 export function checkBundleShape(bundle) {
-  if (!isObject(bundle)) return [{ path: '', message: 'a bundle is a JSON object' }];
+  if (!isObject(bundle)) return [{ path: '', message: 'a bundle must be a JSON object' }];
   const problems = [];
-  if (bundle.schema !== 1) problems.push({ path: '/schema', message: 'a bundle declares "schema": 1' });
+  if (bundle.schema !== 1) problems.push({ path: '/schema', message: 'a bundle must declare "schema": 1' });
   if (!Array.isArray(bundle.records)) {
     problems.push({ path: '/records', message: 'records must be an array of records' });
   } else if (bundle.records.length === 0) {
-    problems.push({ path: '/records', message: 'a bundle contains at least one record' });
+    problems.push({ path: '/records', message: 'a bundle must contain at least one record' });
   }
   for (const key of Object.keys(bundle)) {
     if (key !== 'schema' && key !== 'records') problems.push({ path: `/${key}`, message: `unknown property "${key}"` });

@@ -118,8 +118,8 @@ test('the card says the atlas assembled the path, and each step keeps its marks'
     };`);
     assert.match(shown.line, /^The atlas put this path together on 2026-09-08/);
     assert.match(shown.line, /Why Fixture event T\?/);
-    assert.match(shown.line, /you did not walk it/);
-    assert.match(shown.line, /1 step is a link somebody wrote, with its confidence and its dispute marks unchanged/);
+    assert.match(shown.line, /You did not walk it\./);
+    assert.match(shown.line, /1 step is a link a person wrote\. The links keep their confidence and dispute marks\./);
     // The step is a record and is drawn as one: the dispute is marked in the
     // breadcrumb and warned about on arrival, exactly as on a walked path.
     assert.deepEqual(shown.badges, ['disputed']);

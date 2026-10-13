@@ -143,8 +143,8 @@ function cardHtml({ narrative, period }) {
 export function narrativesHtml(narratives, records = {}) {
   const active = (narratives ?? []).filter((n) => n.status === 'active');
   if (active.length === 0) {
-    return `<p class="muted">No narrative has been written yet. A narrative is a signed walk through
-      records that are already here; several may cross the same period and disagree, and the reader
+    return `<p class="muted">Nobody has written a narrative yet. A narrative is a signed walk through
+      records already in the atlas. Several may cover the same period and disagree, and the reader
       compares them.</p>`;
   }
   const groups = groupByCentury(narratives, records);
@@ -154,7 +154,7 @@ export function narrativesHtml(narratives, records = {}) {
     <ol class="narrative-cards">${group.cards.map(cardHtml).join('')}</ol>
   </section>`);
   return `<p class="bib-summary">${active.length} narrative${active.length === 1 ? '' : 's'},
-    arranged by the centuries they cross${listed > active.length ? ', an account that crosses two listed under both' : ''}.
-    Each title opens the account at its first step.</p>
+    grouped by the centuries they cross.${listed > active.length ? ' A narrative that crosses two centuries appears under both.' : ''}
+    Each title opens the narrative at its first step.</p>
     ${sections.join('')}`;
 }

@@ -116,7 +116,7 @@ export function createForm(container, {
   const nameField = html('div', { class: 'field' });
   nameField.appendChild(html('label', { for: 'contributor-name' }, 'Your name *'));
   nameField.appendChild(authorInput);
-  nameField.appendChild(html('p', { class: 'hint' }, 'Attribution under CC BY-SA 4.0. Your GitHub account is added by the review Action from the issue you open, not from this field.'));
+  nameField.appendChild(html('p', { class: 'hint' }, 'The atlas credits you by this name under CC BY-SA 4.0. The review Action adds your GitHub account from the issue you open.'));
   nameField.appendChild(authorError);
   aboutYou.appendChild(nameField);
 
@@ -136,7 +136,7 @@ export function createForm(container, {
 
   root.appendChild(reportEl);
   const details = html('details', { class: 'bundle-preview' });
-  details.appendChild(html('summary', {}, 'The bundle, as it will be filed'));
+  details.appendChild(html('summary', {}, 'The bundle you will file'));
   details.appendChild(previewEl);
   root.appendChild(details);
 
@@ -191,7 +191,7 @@ export function createForm(container, {
       value,
       label,
       id: domId,
-      emptyLabel: name === 'places' ? 'no place: timeline only' : 'nothing chosen yet',
+      emptyLabel: name === 'places' ? 'no place, shown on the timeline only' : 'nothing chosen yet',
       local: () => bundleRows(name),
       onChange,
     });
@@ -339,7 +339,7 @@ export function createForm(container, {
     const add = html('button', { type: 'button', class: 'link small' }, 'add');
     head.appendChild(add);
     wrap.appendChild(head);
-    wrap.appendChild(html('p', { class: 'hint' }, 'The actors of this event and what each did in it — not everyone alive at the time. The role comes from the atlas\'s list; the note beside it is yours.'));
+    wrap.appendChild(html('p', { class: 'hint' }, 'The actors who took part in this event and what each did in it. Choose the role from the atlas\'s list. The note beside it is yours to write.'));
     // A closed list and no longer a datalist: a role outside `data/roles.json`
     // is rule 25 since M32b-1, so what cannot be chosen here is exactly what
     // the validator would refuse. A dataset with no vocabulary is checked
@@ -421,7 +421,7 @@ export function createForm(container, {
     const add = html('button', { type: 'button', class: 'link small' }, 'add');
     head.appendChild(add);
     wrap.appendChild(head);
-    wrap.appendChild(html('p', { class: 'hint' }, 'At least two, in the order they are read — ↑ and ↓ move a step, and so does Alt with an arrow from anywhere in the row. The text is yours; the record it points at is the atlas\'s and is not changed by walking it.'));
+    wrap.appendChild(html('p', { class: 'hint' }, 'At least two steps, in reading order. The ↑ and ↓ buttons move a step. Alt with an arrow key does the same from anywhere in the row. You write the text. The narrative does not change the record a step points at.'));
     const rows = html('ul', { class: 'citation-rows' });
     wrap.appendChild(rows);
     const error = html('p', { class: 'field-error', hidden: 'hidden' });
@@ -490,7 +490,7 @@ export function createForm(container, {
           refresh();
         },
       });
-      const locator = html('input', { type: 'text', placeholder: 'locator: ch. 2, p. 41', 'aria-label': 'Locator' });
+      const locator = html('input', { type: 'text', placeholder: 'page or chapter: ch. 2, p. 41', 'aria-label': 'Page or chapter' });
       locator.value = citation.locator ?? '';
       locator.addEventListener('input', () => {
         citation.locator = locator.value;
@@ -556,13 +556,13 @@ export function createForm(container, {
     const replaced = hits.find((hit) => hit.replaces);
     const certain = hits.some((hit) => hit.certain);
     entry.similarEl.appendChild(html('p', {}, replaced
-      ? `This id already exists: filing this would replace “${replaced.label || replaced.id}”. That is what a correction is; a new ${entry.kind} needs an id of its own.`
+      ? `This id already exists. Filing this would replace “${replaced.label || replaced.id}”. That is right for a correction. A new ${entry.kind} needs an id of its own.`
       : certain
-        ? 'A record already in the atlas carries one of the identifiers on this one. An identifier names an item, and two records for one item is the one mistake nothing downstream can undo:'
-        : `${KIND_LABEL[entry.kind]} records with a similar name already exist. Adding a second record for the same thing is the one mistake nothing downstream can undo:`));
+        ? 'A record already in the atlas has one of the identifiers on this one. An identifier names one item. Two records for the same item is a mistake nothing later can undo:'
+        : `${KIND_LABEL[entry.kind]} records with a similar name already exist. A second record for the same thing is a mistake nothing later can undo:`));
     const ul = html('ul', {});
     for (const hit of hits) {
-      ul.appendChild(html('li', {}, `${hit.label || hit.id} (${hit.id}) — ${hit.why}${hit.matched && hit.matched !== hit.label ? `: “${hit.matched}”` : ''}`));
+      ul.appendChild(html('li', {}, `${hit.label || hit.id} (${hit.id}) has ${hit.why}${hit.matched && hit.matched !== hit.label ? `: “${hit.matched}”` : ''}`));
     }
     entry.similarEl.appendChild(ul);
     const label = html('label', { class: 'acknowledge' });
@@ -573,8 +573,8 @@ export function createForm(container, {
       refresh();
     });
     label.append(box, document.createTextNode(replaced
-      ? ` I mean to replace “${replaced.label || replaced.id}”: this is a correction of it.`
-      : ` I looked: this is a different ${entry.kind} from the ones above.`));
+      ? ` I mean to replace “${replaced.label || replaced.id}”. This is a correction.`
+      : ` I checked. This is a different ${entry.kind} from the ones above.`));
     entry.similarEl.appendChild(label);
     return entry.acknowledged;
   }
@@ -633,9 +633,9 @@ export function createForm(container, {
     if (!summaryEl) return;
     summaryEl.className = lastCount === 0 && acknowledged ? 'summary good' : 'summary bad';
     summaryEl.textContent = entries.length === 0 ? 'Add a source, then the event it supports.'
-      : lastCount > 0 ? `${lastCount} problem${lastCount === 1 ? '' : 's'} to fix before this can be filed.`
-        : acknowledged ? 'The bundle validates against the records already in the atlas.'
-          : 'The records above match ones the atlas already has. Look at them before this can be filed.';
+      : lastCount > 0 ? `Fix ${lastCount} problem${lastCount === 1 ? '' : 's'} before you file this.`
+        : acknowledged ? 'The bundle passes every check against the records already in the atlas.'
+          : 'The records above match records the atlas already has. Look at them before you file this.';
   }
 
   function runDuplicates() {
@@ -668,7 +668,7 @@ export function createForm(container, {
     const ready = lastResult.ok && acknowledged;
     submitButton.disabled = !ready;
     submitNote.textContent = ready
-      ? 'The bundle is copied to your clipboard and the issue opens with it filled in. A person reads it before anything is merged.'
+      ? 'The button copies the bundle to your clipboard and opens the issue with the bundle filled in. A person reads it before anything is merged.'
       : !acknowledged && count === 0 ? 'Confirm the near-matches above first.' : '';
     return ready;
   }
@@ -771,10 +771,10 @@ export function createForm(container, {
     if (!ready) return;
     const outcome = await submitBundle(bundle, { template });
     submitNote.textContent = [
-      outcome.copied ? 'Copied to your clipboard.' : 'Could not reach the clipboard — copy the bundle from the box above.',
+      outcome.copied ? 'Copied to your clipboard.' : 'Could not reach the clipboard. Copy the bundle from the box above.',
       outcome.prefilled
-        ? 'The issue opened with the bundle filled in; tick the licence box and file it.'
-        : `The bundle is ${outcome.bytes} encoded bytes, too long for a URL: paste it into the issue that just opened.`,
+        ? 'The issue opened with the bundle filled in. Tick the licence box and file it.'
+        : `The bundle is ${outcome.bytes} bytes once encoded, which is too long for a URL. Paste it into the issue that just opened.`,
     ].join(' ');
   }
 

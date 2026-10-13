@@ -531,18 +531,18 @@ test('the vocabularies the form offers come off the topology, and absent means n
   assert.ok(isVocabulary('regions') && isVocabulary('categories'));
   assert.equal(isVocabulary('events'), false, 'a corpus is a picker, not a select');
   assert.deepEqual(vocabularyChoices('categories', topology), [
-    { value: '', label: '— not said —' },
+    { value: '', label: '(not said)' },
     { value: 'war', label: 'War' },
     { value: 'treaty', label: 'treaty' },
   ]);
   // A role carries its description as the option's title: it is the only
   // place a writer is told what one covers.
   assert.deepEqual(roleChoices(topology), [
-    { value: '', label: '— no role —', title: '' },
+    { value: '', label: '(no role)', title: '' },
     { value: 'leader', label: 'Leader', title: 'Led it.' },
     { value: 'signatory', label: 'signatory', title: '' },
   ]);
-  assert.deepEqual(vocabularyChoices('categories', {}), [{ value: '', label: '— not said —' }]);
+  assert.deepEqual(vocabularyChoices('categories', {}), [{ value: '', label: '(not said)' }]);
   // Absent is an empty list and not a list of one blank: where there is no
   // vocabulary the pages leave the box free text, because the validator is
   // checking the role against nothing (A8).

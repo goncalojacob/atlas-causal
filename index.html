@@ -41,7 +41,7 @@
            part of the world. Filled by src/window-control.js, for the reason
            the layer switches and the graph filters are — one file decides what
            a control writes into the URL. -->
-      <div class="window-control" id="window-control" role="group" aria-label="The window of time"></div>
+      <div class="window-control" id="window-control" role="group" aria-label="Time window"></div>
       <!-- Only on a phone, where the lens chips and the three layer
            switches will not fit beside the search: one button in front of
            both. The stylesheet shows it and hides them; nothing moves in the
@@ -74,8 +74,8 @@
            control writes into the URL. -->
       <div class="graph-filters" id="graph-filters" role="group" aria-label="What the graph draws"></div>
     </div>
-    <nav class="masthead-links" aria-label="Elsewhere">
-      <span id="fixtures-badge" class="fixtures-badge" hidden title="tests/fixtures/data: invented records for testing the interface">synthetic fixtures — not history</span>
+    <nav class="masthead-links" aria-label="Other pages">
+      <span id="fixtures-badge" class="fixtures-badge" hidden title="tests/fixtures/data: invented records for testing the interface">invented test data</span>
       <a class="bar-link" href="narratives.html">narratives</a>
       <!-- The composer (M71). A button and nothing else until it is pressed:
            src/compose/composer.js is imported the first time somebody opens
@@ -83,7 +83,7 @@
            element (src/main.js). -->
       <button type="button" id="compose-button" class="bar-link compose-button"
               aria-controls="composer" aria-expanded="false"
-              title="Write a narrative: pick events by clicking them, say why each step follows">write</button>
+              title="Write a narrative. Click events to add them as steps, and say why each step follows.">write</button>
       <a class="bar-link" href="sources.html">sources</a>
       <a class="bar-link" href="about.html">about</a>
       <!-- Brings the introduction back. Small, last, and never in the way:
@@ -109,7 +109,7 @@
          other one used to be under the map, for a timeline strip that is not
          there any more (M60). -->
     <div id="split-panel" class="split split-panel" role="separator" tabindex="0"
-         aria-orientation="vertical" aria-label="Resize the panel — arrow keys, Home to restore"></div>
+         aria-orientation="vertical" aria-label="Resize the panel with the arrow keys. Home restores its size."></div>
     <!-- On a desktop this wrapper is `display: contents` and the panel is the
          grid item it always was; on a phone it becomes the sheet that comes
          up from the bottom edge, and the grip above the panel is what pushes

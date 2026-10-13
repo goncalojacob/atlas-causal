@@ -75,7 +75,7 @@
             }
           },
           "edges": {
-            "description": "The edges the item earns its place by (rules card 7). An item with none is invalid — the bar is enforced here, at the queue, and not left to a fire's judgement — except on an `existing` item, which has its place already.",
+            "description": "The edges the planner could verify for the item, each with the article's own sentence. Until 13 October 2026 an import item with none was invalid (rules card 7); the owner withdrew that bar (M91): an event of significance is imported whether or not an edge can be written today, so the list may be empty, and an edge that is here is held to every rule below.",
             "type": "array",
             "items": {
               "type": "object",
@@ -151,6 +151,12 @@
                 }
               }
             }
+          },
+          "rank": {
+            "description": "Why the item ranks where it does in the planner's order (M91): the main events first, then the lesser and the children of the main ones — e.g. `vital-3`, `vital-4`, `vital-5`, `list`, `child-of:<id>`. A label the planner writes and tools/queue/state.mjs counts; nothing applies it.",
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40
           },
           "why": {
             "description": "Why this item and not another: the lane that trails, the umbrella with too few children, the sentence that was there. It is the planner's reasoning, kept with the item rather than only in the day's note, so a log entry can be read against it.",
