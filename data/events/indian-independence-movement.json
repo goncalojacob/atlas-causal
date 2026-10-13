@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "indian-independence-movement",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q12444025",
+  "sitelinks": {
+    "count": 64,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Indian independence movement",
+    "pt": "Movimento de independência da Índia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12444025"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Indian independence movement\", revision 1378118226"
+    }
+  ],
+  "title": "Indian independence movement",
+  "summary": "The English Wikipedia article \"Indian independence movement\", at revision 1378118226, opens: \"The Indian independence movement was a series of political efforts from the mid-1880s to 1947 that took place in the Indian subcontinent with the aim of ending British colonial rule.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12444025, imported by tools/import/wikidata.mjs. The item's own description reads \"Indian national movement seeking to end British rule (1857–1947)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1947,
+    "endDate": "1947-08-15"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

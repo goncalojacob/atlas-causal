@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "magellan-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1225170",
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Magellan expedition",
+    "pt": "Expedição de Magalhães"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1225170"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Magellan expedition\", revision 1379240498"
+    }
+  ],
+  "title": "Magellan expedition",
+  "summary": "The English Wikipedia article \"Magellan expedition\", at revision 1379240498, opens: \"The Magellan expedition, sometimes termed the Magellan–Elcano expedition, was a 16th-century Spanish expedition planned and initially led by Portuguese explorer Ferdinand Magellan and completed by the Spanish navigator Juan Sebastián Elcano which resulted in the first circumnavigation of the Earth. Its purpose was to secure a maritime trade route with the Moluccas, or Spice Islands, in present-day Indonesia. The expedition departed Spain in 1519 and returned there in 1522 under the command of Elcano, who continued the voyage after Magellan's death in the Philippines. One of the most significant voyages in the Age of Discovery, the nearly three-year expedition totaled 60,440 km (37,560 mi) and was the first to sail around the earth. It also marked the first crossing of the Pacific by a European expedition, revealing the vast scale of that ocean, and proved that ships could sail around the world on a western sea route.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1225170, imported by tools/import/wikidata.mjs. The item's own description reads \"16th-century Spanish maritime expedition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1519,
+    "end": 1522,
+    "date": "1519-08-10",
+    "endDate": "1522-09-08"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
