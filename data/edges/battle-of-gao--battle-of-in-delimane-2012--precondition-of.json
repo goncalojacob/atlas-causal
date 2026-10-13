@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-in-delimane-2012",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The same sentence that opens the article names the lost city as what the fighting at Idelimane was an attempt to recover: \"On November 16, MNLA forces launched an offensive to retake the city of Gao, but they came up against the Islamists forces of MUJAO and AQIM between Ansongo and Gao... the same day MUJAO attack elements of the MNLA in the village of Idelimane 80 kilometers from Ménaka, the last bastion of the MNLA.\" Precondition and not cause: Gao's loss is what the offensive was answering, and the article claims no more than that. Probable: Wikipedia alone.",
+  "explanation": "The same sentence that opens the article names the lost city as what the fighting at Idelimane was an attempt to recover: \"On November 16, MNLA forces launched an offensive to retake the city of Gao, but they came up against the Islamists forces of MUJAO and AQIM between Ansongo and Gao... the same day MUJAO attack elements of the MNLA in the village of Idelimane 80 kilometers from Ménaka, the last bastion of the MNLA.\" Precondition-of: Gao's loss is what the offensive was answering, and the article claims no more than that. Probable: Wikipedia alone.",
   "dispute": null
 }

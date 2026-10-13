@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-30",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,6 +34,6 @@
   "to": "battle-of-chupas",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Chupas’s own article gives Las Salinas as the reason its loser raised an army: “Desperate not to face the same fate as his father after the battle of Las Salinas, Diego de Almagro II gathered an army of supporters.” Almagro the elder was captured at Las Salinas and executed in July 1538; the son’s fear of the same end is what the article says put the Almagrist force at Huamanga in 1542. `precondition-of` and not `caused`: four years and the assassination of Francisco Pizarro stand between them, and the article turns Chupas itself on Vaca de Castro’s governorship. `probable`, because the only source the atlas can open here is the article (rule 22).",
+  "explanation": "Chupas’s own article gives Las Salinas as the reason its loser raised an army: “Desperate not to face the same fate as his father after the battle of Las Salinas, Diego de Almagro II gathered an army of supporters.” Almagro the elder was captured at Las Salinas and executed in July 1538. The son’s fear of the same end is what the article says put the Almagrist force at Huamanga in 1542. `precondition-of`: four years and the assassination of Francisco Pizarro stand between them, and the article turns Chupas itself on Vaca de Castro’s governorship. `probable`, because the only source the atlas can open here is the article (rule 22).",
   "dispute": null
 }

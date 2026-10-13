@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -51,7 +51,7 @@
   "names": [
     "Chad"
   ],
-  "summary": "Approximately 1,284,000 km² and about 19.3 million people (2023), from Wikidata's Q657 (P2046, P1082). The English Wikipedia article \"Chad\", at revision 1374402674, opens: \"Chad, officially the Republic of Chad, is a landlocked country in Central Africa. It is bordered by Libya to the north, Sudan to the east, the Central African Republic to the south, Cameroon to the southwest, Nigeria to the southwest, and Niger to the west. Chad has a population of 20 million, of which 1.6 million live in the capital and largest city of N'Djamena.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 483 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1960 to where the dataset stops, in 2019. Its last capital in the dataset is N'Djamena. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1960-08-11. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 1,284,000 km² and about 19.3 million people (2023), from Wikidata's Q657 (P2046, P1082). The English Wikipedia article \"Chad\", at revision 1374402674, opens: \"Chad, officially the Republic of Chad, is a landlocked country in Central Africa. It is bordered by Libya to the north, Sudan to the east, the Central African Republic to the south, Cameroon to the southwest, Nigeria to the southwest, and Niger to the west. Chad has a population of 20 million, of which 1.6 million live in the capital and largest city of N'Djamena.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 483 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1960 to where the dataset stops, in 2019. Its last capital in the dataset is N'Djamena. The code is mapped onto more than one actor (data/imports/cshapes-actors.json). This record holds the periods from 1960-08-11. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1960,
     "end": null

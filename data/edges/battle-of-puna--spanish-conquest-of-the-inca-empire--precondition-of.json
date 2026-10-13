@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "spanish-conquest-of-the-inca-empire",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The Puná article opens by placing the battle where the conquest begins: it was \"a peripheral engagement of Francisco Pizarro's conquest of Peru\", and \"The battle marked the beginning of Pizarro's third and final expedition prior to the fall of the Inca Empire.\" The article's last paragraph has the Spaniards sail from Puná \"bound for more fruitful conquests on the Peruvian mainland\". `precondition-of`: the expedition that became the conquest starts here, which is a condition of it and not its cause. Probable, and with a second author: Prescott, at pp. 142-143 in the edition the article cites.",
+  "explanation": "The Puná article opens by placing the battle where the conquest begins: it was \"a peripheral engagement of Francisco Pizarro's conquest of Peru\", and \"The battle marked the beginning of Pizarro's third and final expedition prior to the fall of the Inca Empire.\" The article's last paragraph has the Spaniards sail from Puná \"bound for more fruitful conquests on the Peruvian mainland\". `precondition-of`: the expedition that became the conquest starts here, which is a condition of the conquest. The article does not make it the cause. Probable, and with a second author: Prescott, at pp. 142-143 in the edition the article cites.",
   "dispute": null
 }

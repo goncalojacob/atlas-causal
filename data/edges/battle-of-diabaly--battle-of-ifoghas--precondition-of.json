@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-ifoghas",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The other half of the same sentence: \"After being defeated in January in the Battle of Konna and the Battle of Diabaly, the jihadists abandoned Timbuktu and retreated into the Adrar Tigharghar ... The French started quickly a pursuit\". Two defeats are named and each is written as its own edge, because the article gives them equal weight and neither alone is what it says. Probable: Wikipedia alone.",
+  "explanation": "The other half of the same sentence: \"After being defeated in January in the Battle of Konna and the Battle of Diabaly, the jihadists abandoned Timbuktu and retreated into the Adrar Tigharghar ... The French started quickly a pursuit\". The article names two defeats. Each is an edge of its own here, because the article gives them equal weight and neither alone is what it says. Probable: Wikipedia alone.",
   "dispute": null
 }

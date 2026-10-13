@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-fort-albany-1693",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The 1693 article says what there was to recapture and how it came to be French: \"The fort, captured by a French expedition in 1686 and held by them in a battle the next year, was briefly defended by five Frenchmen, who then abandoned the fort and its stockpile of furs to a four-ship English fleet commanded by James Knight.\" The battle in which the French held it is the one this atlas records as `battle-of-fort-albany`, whose own article at revision 1366220638 opens \"The 1688 Battle of Fort Albany was one of the Anglo-French conflicts on Hudson Bay\" and describes the same fight over the same garrison. **The two articles disagree about its year** — the 1693 one says the year after 1686 and the other says 1688 — and the item's own P580 is September 1688, which is what this record carries; nothing was changed to make them agree. The recapture presupposes the holding either way, which is what this edge says. Neither sentence is footnoted to any work Wikipedia names, so Wikipedia is the only author and the confidence stays probable.",
+  "explanation": "The 1693 article says what there was to recapture and how it came to be French: \"The fort, captured by a French expedition in 1686 and held by them in a battle the next year, was briefly defended by five Frenchmen, who then abandoned the fort and its stockpile of furs to a four-ship English fleet commanded by James Knight.\" The battle in which the French held it is the one this atlas records as `battle-of-fort-albany`, whose own article at revision 1366220638 opens \"The 1688 Battle of Fort Albany was one of the Anglo-French conflicts on Hudson Bay\" and describes the same fight over the same garrison. **The two articles disagree about its year.** The 1693 one says the year after 1686 and the other says 1688. The item's own P580 is September 1688, which is what this record carries. Nobody changed either record to make them agree. The recapture presupposes the holding either way, which is what this edge says. Neither sentence is footnoted to any work Wikipedia names, so Wikipedia is the only author and the confidence stays probable.",
   "dispute": null
 }

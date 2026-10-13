@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-the-yellow-sea",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The Yellow Sea's own article dates the blockade to the night attack and names it: \"The Imperial Russian Navy's First Pacific Squadron (Admiral Wilgelm Vitgeft) had been trapped in Lüshunkou (Port Arthur) since the Imperial Japanese Navy blockade began on 8 February 1904 with the Battle of Port Arthur.\" `precondition-of` and not `caused`: the attack of 8 February put the squadron under blockade, and the blockade is the position the sortie of 10 August was an attempt to break — a position and not a motive. Probable: Wikipedia alone.",
+  "explanation": "The Yellow Sea's own article dates the blockade to the night attack and names it: \"The Imperial Russian Navy's First Pacific Squadron (Admiral Wilgelm Vitgeft) had been trapped in Lüshunkou (Port Arthur) since the Imperial Japanese Navy blockade began on 8 February 1904 with the Battle of Port Arthur.\" `precondition-of`: the attack of 8 February put the squadron under blockade. The blockade is the position the sortie of 10 August was an attempt to break, and that is a position rather than a motive. Probable: Wikipedia alone.",
   "dispute": null
 }
