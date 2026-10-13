@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,6 @@
   "to": "aberdeen-act-1845",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Independence turned an obligation between Britain and Portugal into one between Britain and Brazil, and it did so on British terms: recognition was the thing Brazil needed and the convention of 1826 on the abolition of the trade is what it cost. The Act of 1845 is legislation against a state that exists, over a convention that state signed, and neither the state nor the convention exists without 1822.",
+  "explanation": "Independence turned an obligation between Britain and Portugal into one between Britain and Brazil, and it did so on British terms. Recognition was the thing Brazil needed, and the convention of 1826 on the abolition of the trade is what it cost. The Act of 1845 is legislation against a state that exists, over a convention that state signed, and neither the state nor the convention exists without 1822.",
   "dispute": null
 }

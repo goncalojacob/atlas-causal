@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "operation-paraquet",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "Paraquet is defined by what it undid: its lead calls it \"the British military operation to recapture the island of South Georgia from Argentine military control in April 1982\". The control it recaptured is the other article's subject — on 3 April 1982 \"Argentine Navy forces seized control of the east coast of South Georgia after overpowering a small group of Royal Marines at Grytviken\". One seizure, one recapture, three weeks apart on the same island. Neither article writes the causal sentence whole, so the join is made here and the confidence is `probable`.",
+  "explanation": "Paraquet is defined by what it undid. Its lead calls it \"the British military operation to recapture the island of South Georgia from Argentine military control in April 1982\". The control it recaptured is the other article's subject. On 3 April 1982 \"Argentine Navy forces seized control of the east coast of South Georgia after overpowering a small group of Royal Marines at Grytviken\". One seizure, one recapture, three weeks apart on the same island. Neither article writes the causal sentence whole, so this edge makes the join and the confidence is `probable`.",
   "dispute": null
 }

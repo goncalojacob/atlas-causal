@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "action-of-16-march-1782",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The Spanish frigate was off Cape Spartel because of the siege, which the article states as the reason she was there at all: the Santa Catalina “was part of a squadron keeping lookout for any relief convoys heading into Gibraltar, which was then under siege.” A blockade is why two frigates met in the Strait, so `precondition-of`; the siege did not cause this particular action and the article claims no more than the station. Probable: Wikipedia alone.",
+  "explanation": "The article gives the siege as the reason the Spanish frigate was off Cape Spartel at all. The Santa Catalina “was part of a squadron keeping lookout for any relief convoys heading into Gibraltar, which was then under siege.” A blockade is why two frigates met in the Strait, so the type is `precondition-of`. The siege did not cause this particular action, and the article claims no more than the station. The confidence is probable, because Wikipedia is the only source.",
   "dispute": null
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "1948-arab-israeli-war",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The English article places the declaration \"at the end of the civil war phase and beginning of the Arab-Israeli War of the 1948 Palestine war\", and says the state it declared \"would come into effect on termination of the British Mandate at midnight that day\" - the hour the armies of the neighbouring Arab states crossed into the territory. Wikidata states the link in the same direction, giving the declaration as the war's cause (Q49092, P828). The type is the one both sources assert; the confidence is probable because the sources are Wikipedia and Wikidata and neither is a historian's argument about how much of the invasion the declaration accounts for.",
+  "explanation": "The English article places the declaration \"at the end of the civil war phase and beginning of the Arab-Israeli War of the 1948 Palestine war\", and says the state it declared \"would come into effect on termination of the British Mandate at midnight that day\". That is the hour the armies of the neighbouring Arab states crossed into the territory. Wikidata states the link in the same direction, giving the declaration as the war's cause (Q49092, P828). The type is the one both sources assert. The confidence is probable, because the sources are Wikipedia and Wikidata, and neither is a historian's argument about how much of the invasion the declaration accounts for.",
   "dispute": null
 }

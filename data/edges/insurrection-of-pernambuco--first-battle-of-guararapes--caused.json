@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -38,6 +38,6 @@
   "to": "first-battle-of-guararapes",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "Both articles state it, from either end. The insurrection’s own: “The movement involved groups led by André Vidal de Negreiros, João Fernandes Vieira, Henrique Dias and Filipe Camarão, in the famous Battles of Guararapes, fought between 1648 and 1649 and crucial to the expulsion of the Dutch from Brazil in 1654.” The battle’s own, at the revision this atlas already cites for it: “The First Battle of Guararapes took place during the Insurrection of Pernambuco, between Dutch and Portuguese forces in Pernambuco, in a dispute for the dominion of that part of the Portuguese colony of Brazil.” The insurrection is not this record’s parent here — the atlas files both Guararapes under `dutch-brazil-1630-1654` — so A14’s hold on a parent’s edge to its own child does not reach it. `probable` rather than `consensus`, because the only sources the atlas can open here are the two encyclopaedia articles themselves (rule 22).",
+  "explanation": "Both articles state it, from either end. The insurrection’s own: “The movement involved groups led by André Vidal de Negreiros, João Fernandes Vieira, Henrique Dias and Filipe Camarão, in the famous Battles of Guararapes, fought between 1648 and 1649 and crucial to the expulsion of the Dutch from Brazil in 1654.” The battle’s own, at the revision this atlas already cites for it: “The First Battle of Guararapes took place during the Insurrection of Pernambuco, between Dutch and Portuguese forces in Pernambuco, in a dispute for the dominion of that part of the Portuguese colony of Brazil.” The insurrection is not this record’s parent here, because the atlas files both Guararapes under `dutch-brazil-1630-1654`. A14’s hold on a parent’s edge to its own child therefore does not reach it. The confidence is `probable` rather than `consensus`, because the only sources the atlas can open here are the two encyclopaedia articles themselves (rule 22).",
   "dispute": null
 }

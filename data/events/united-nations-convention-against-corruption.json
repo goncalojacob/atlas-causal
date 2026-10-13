@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -25,7 +25,7 @@
   },
   "retraction": {
     "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 16 under brief §1: the record earns no honest edge. The English article, at revision 1348358226, is forty kilobytes on the convention's chapters, its review mechanism and its states parties, and argues it out of the General Assembly resolution that convened its negotiation; no event this atlas holds appears in it. The eighth instrument retracted on arrival for §7.4's reason."
+    "reason": "Retracted in M42 batch 16 under brief §1: the record earns no honest edge. The English article, at revision 1348358226, is forty kilobytes on the convention's chapters, its review mechanism and its states parties, and argues it out of the General Assembly resolution that convened its negotiation. No event this atlas holds appears in it. It is the eighth instrument retracted on arrival for §7.4's reason."
   },
   "wikidata": "Q547979",
   "wikipedia": {
@@ -51,6 +51,6 @@
   },
   "place": null,
   "region": "americas",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
   "actors": []
 }

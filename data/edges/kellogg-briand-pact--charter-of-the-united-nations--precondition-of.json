@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -38,6 +38,6 @@
   "to": "charter-of-the-united-nations",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The pact of 1928 is where the renunciation of war as an instrument of policy was first written into a general treaty, and it is the text the Charter of 1945 rewrote with an enforcement machinery behind it. Between the two stands the use the pact was put to at Nuremberg, where the charge of crimes against peace rested on the argument that aggressive war had already been unlawful since 1928. The claim is about the lineage of the prohibition and is narrow: the pact had no sanction, failed at every test between 1931 and 1939, and is a precondition of the Charter rather than a cause of it.",
+  "explanation": "The pact of 1928 is the first general treaty in which states gave up war as an instrument of policy, and it is the text the Charter of 1945 rewrote with a means of enforcement behind it. Between the two stands the use the pact was put to at Nuremberg, where the charge of crimes against peace rested on the argument that aggressive war had already been unlawful since 1928. The claim is narrow and it is about where the prohibition came from. The pact carried no penalty and failed at every test between 1931 and 1939, so it is a precondition of the Charter rather than a cause of it.",
   "dispute": null
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -25,7 +25,7 @@
   },
   "retraction": {
     "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 13 under brief §1: the record earns no honest edge. The English article, at revision 1337178480, relates the pandemic to exactly one event this atlas holds, and does so the wrong way about: \"in 1913, there was a cholera outbreak in forces of the Romanian Army which were taking part in military operations of the Second Balkan War in Bulgarian areas\", which says that an outbreak inside the war was part of the pandemic and not that either caused the other — and rule 4 would in any case refuse an edge from 1913 into a record that starts in 1899. Everything else in the article is the pandemic's own route: the Haridwar Kumbh Mela, Punjab, Afghanistan, Persia, southern Russia and the steamship Moltke into New York. It waits on a record of the 1913 Romanian Army cholera outbreak, or on a person arguing what the pandemic changed."
+    "reason": "Retracted in M42 batch 13 under brief §1: the record earns no honest edge. The English article, at revision 1337178480, relates the pandemic to exactly one event this atlas holds, and it does so the wrong way about. It reads \"in 1913, there was a cholera outbreak in forces of the Romanian Army which were taking part in military operations of the Second Balkan War in Bulgarian areas\", which says that an outbreak inside the war was part of the pandemic. It says nothing about either one causing the other. Rule 4 would in any case refuse an edge from 1913 into a record that starts in 1899. Everything else in the article is the pandemic's own route: the Haridwar Kumbh Mela, Punjab, Afghanistan, Persia, southern Russia and the steamship Moltke into New York. It waits on a record of the 1913 Romanian Army cholera outbreak, or on a person arguing what the pandemic changed."
   },
   "wikidata": "Q7533201",
   "wikipedia": {
@@ -50,7 +50,7 @@
   },
   "place": null,
   "region": "asia",
-  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane, named for this item in data/imports/wikidata-seeds.json. The event points at no place record, so the timeline has nothing else to go on.",
   "category": "disaster",
   "actors": []
 }

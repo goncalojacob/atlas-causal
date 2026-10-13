@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-12",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -35,6 +35,6 @@
   "to": "first-sino-japanese-war",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The article \"Imo Incident\" (revision 1378536153) states: \"This incident served as a crucial powderkeg that led to the First Sino-Japanese War in 1894.\" A powderkeg twelve years before the war is a precondition rather than its cause, which is the weaker of the two readings the sentence allows and the one the edge takes.",
+  "explanation": "The article \"Imo Incident\" (revision 1378536153) states: \"This incident served as a crucial powderkeg that led to the First Sino-Japanese War in 1894.\" A powderkeg twelve years before the war is a precondition rather than a cause. That is the weaker of the two readings the sentence allows, and the edge takes it.",
   "dispute": null
 }

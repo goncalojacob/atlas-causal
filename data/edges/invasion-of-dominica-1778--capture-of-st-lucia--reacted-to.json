@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "capture-of-st-lucia",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "St Lucia's article says in its own words what the British expedition was an answer to: \"Britain's actions followed the capture of the British-controlled island of Dominica by French forces in a surprise invasion in September 1778.\" Reacted-to and not caused: the article puts the one after the other and calls it a following, without claiming the loss of Dominica compelled the choice of St Lucia.",
+  "explanation": "St Lucia's article says in its own words what the British expedition was an answer to: \"Britain's actions followed the capture of the British-controlled island of Dominica by French forces in a surprise invasion in September 1778.\" The type is reacted-to. The article puts the one after the other and calls it a following, and it does not claim that the loss of Dominica forced the choice of St Lucia.",
   "dispute": null
 }

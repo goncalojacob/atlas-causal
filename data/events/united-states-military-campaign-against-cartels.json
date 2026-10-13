@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-29",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,7 +34,7 @@
   },
   "retraction": {
     "on": "2026-09-29",
-    "reason": "A15(8): the item’s English sitelink \"2025 U.S. military campaign against cartels\" redirects to \"United States military buildup in the Caribbean during Operation Southern Spear\" (Q136335092), a different item, and that article never uses this item’s name in any heading - the campaign and the buildup are two Wikidata items with one article between them. The quoted summary was the buildup’s lead. No section names this item, so there is no span to read, and the record carries no edge. Retracted under §1, with Q136335092 named here as the item a later import should use."
+    "reason": "A15(8): the item’s English sitelink \"2025 U.S. military campaign against cartels\" redirects to \"United States military buildup in the Caribbean during Operation Southern Spear\" (Q136335092), which is a different item, and that article never uses this item’s name in any heading. The campaign and the buildup are two Wikidata items with one article between them. The quoted summary was the buildup’s lead. No section names this item, so there is no span to read, and the record carries no edge. Retracted under §1, with Q136335092 named here as the item a later import should use."
   },
   "wikidata": "Q136090852",
   "wikipedia": {

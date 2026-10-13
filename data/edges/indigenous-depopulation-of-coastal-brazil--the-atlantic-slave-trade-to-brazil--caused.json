@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,6 @@
   "to": "the-atlantic-slave-trade-to-brazil",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The colonists began with enslaved indigenous labour — the brazilwood was cut by it, São Vicente prospered on it, and the bandeirante expeditions were raids for it — and they moved to enslaved Africans. The sources give both halves: that the shift happened, and that the population being drawn on was collapsing at the same time. The claim is about the shift and not about the whole traffic: what the collapse caused was the turn to an Atlantic supply, and the scale that supply reached was the sugar economy’s doing.",
+  "explanation": "The colonists began with enslaved indigenous labour. It cut the brazilwood, São Vicente prospered on it, and the bandeirante expeditions were raids for it. The colonists then moved to enslaved Africans. The sources give both halves of that. The shift happened, and the population being drawn on was collapsing at the same time. The claim is about the shift. The collapse caused the turn to an Atlantic supply, and the scale that supply reached was the sugar economy’s doing.",
   "dispute": null
 }

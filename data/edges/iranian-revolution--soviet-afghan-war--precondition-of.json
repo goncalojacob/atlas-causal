@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,6 +34,6 @@
   "to": "soviet-afghan-war",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The article lists the revolution among the reasons offered for the Soviet decision to deploy, and marks the list as speculative, which is why this is probable. The article reads: \"The reasons for this complete turnabout are not entirely clear, and several speculative arguments include: the grave internal situation and inability for the Afghan government to retain power much longer; the effects of the Iranian Revolution that brought an Islamic theocracy into power, leading to fears that religious fanaticism would spread through Afghanistan and into Soviet Muslim Central Asian republics; Taraki's murder and replacement by Amin, who the Soviet leadership believed had secret contacts within the American embassy in Kabul and \"was capable of reaching an agreement with the United States\"; however, allegations of Amin colluding with the Americans have been widely discredited\"",
+  "explanation": "The article lists the revolution among the reasons offered for the Soviet decision to deploy, and calls the list speculative. That is why the confidence is probable. The article reads: \"The reasons for this complete turnabout are not entirely clear, and several speculative arguments include: the grave internal situation and inability for the Afghan government to retain power much longer; the effects of the Iranian Revolution that brought an Islamic theocracy into power, leading to fears that religious fanaticism would spread through Afghanistan and into Soviet Muslim Central Asian republics; Taraki's murder and replacement by Amin, who the Soviet leadership believed had secret contacts within the American embassy in Kabul and \"was capable of reaching an agreement with the United States\"; however, allegations of Amin colluding with the Americans have been widely discredited\"",
   "dispute": null
 }

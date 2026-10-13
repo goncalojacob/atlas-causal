@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,6 @@
   "to": "the-atlantic-slave-trade-to-brazil",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The captaincies failed as an administration and succeeded as a land settlement: they put the coast into private hands in very large pieces, granted with everything on them, and it was on two of those pieces that the first engenhos were built after 1542. A plantation is a unit of property before it is a unit of production, and the traffic that later supplied it had somewhere to deliver to because of how the land had been cut up. The type is the weak one: the grants did not bring the trade about, they are what it arrived into.",
+  "explanation": "The captaincies failed as an administration and succeeded as a land settlement. They put the coast into private hands in very large pieces, granted with everything on them, and the first engenhos were built on two of those pieces after 1542. A plantation is a unit of property before it is a unit of production, and the traffic that later supplied it had somewhere to deliver to because of how the land had been cut up. The type is the weak one, because the grants did not bring the trade about. They are what it arrived into.",
   "dispute": null
 }

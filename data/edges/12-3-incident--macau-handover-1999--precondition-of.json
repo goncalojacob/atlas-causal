@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-13",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -35,6 +35,6 @@
   "to": "macau-handover-1999",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The article \"12-3 incident\" (revision 1377636747) states: \"Portuguese sovereignty over Macau severely diminished after the incident, leading to de facto Chinese suzerainty over the territory 33 years prior to the eventual handover of Macau.\" The sentence dates the end of effective Portuguese rule to the incident and the handover 33 years after it, which is a precondition and not a cause.",
+  "explanation": "The article \"12-3 incident\" (revision 1377636747) states: \"Portuguese sovereignty over Macau severely diminished after the incident, leading to de facto Chinese suzerainty over the territory 33 years prior to the eventual handover of Macau.\" The sentence dates the end of effective Portuguese rule to the incident, and the handover 33 years later. The type is precondition-of, because the sentence gives an order of events and states no cause.",
   "dispute": null
 }
