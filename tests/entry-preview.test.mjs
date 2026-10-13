@@ -14,7 +14,7 @@ test('an empty entry previews as an invitation, not an error', () => {
 
 test('the preview renders the subset and lists the sections', () => {
   const html = previewHtml('## One\n\ntext\n\n## Two\n\n- a list item');
-  assert.match(html, /Sections: One · Two/);
+  assert.match(html, /Sections: One, Two/);
   assert.match(html, /<h2 id="entry-one">One<\/h2>/);
   assert.match(html, /<ul><li>a list item<\/li><\/ul>/);
   // One heading is not a table of contents and is not offered as one.
@@ -28,14 +28,14 @@ test('record links are text in a preview, and the note says whether they resolve
   assert.doesNotMatch(html, /<a /);
   assert.match(html, /See this and that\./);
   // The quotation marks are escaped, as everything in a note is.
-  assert.match(html, /&quot;no-such-event&quot; is linked as an event and there is no such record/);
+  assert.match(html, /the entry links to &quot;no-such-event&quot; as an event, and there is no such record/);
   assert.doesNotMatch(html, /a-real-event&quot; is linked/);
 });
 
 test('a citation mark is checked against the citation rows as they stand', () => {
   const cited = new Set(['book-a']);
   const html = previewHtml('One[^book-a] and two[^book-b].', { cited });
-  assert.match(html, /&quot;book-b&quot; is cited in the entry but is not among this record&#39;s sources/);
+  assert.match(html, /the entry cites &quot;book-b&quot;, but this record&#39;s sources do not include it/);
   assert.doesNotMatch(html, /&quot;book-a&quot; is cited/);
   assert.match(html, /class="cite-mark unresolved"/);
   // With no citation list given nothing is checked: that is the caller
@@ -45,8 +45,8 @@ test('a citation mark is checked against the citation rows as they stand', () =>
 
 test('every refusal is explained in words rather than left silent', () => {
   const cases = [
-    ['<script>alert(1)</script>', /HTML is not markup here/],
-    ['![a](https://example.org/p.png)', /images are not part of the subset/],
+    ['<script>alert(1)</script>', /HTML does not work here/],
+    ['![a](https://example.org/p.png)', /an entry cannot hold images/],
     ['[x](javascript:alert)', /an http\(s\) address/],
     ['[x](event:../../secret)', /lowercase words joined by hyphens/],
     ['# A title', /headings are ## and ###/],
@@ -64,7 +64,7 @@ test('every refusal is explained in words rather than left silent', () => {
 
 test('nothing in a note reaches the markup unescaped', () => {
   const html = previewHtml('x[^a] y', { cited: new Set() });
-  assert.match(html, /&quot;a&quot; is cited in the entry/);
+  assert.match(html, /the entry cites &quot;a&quot;/);
   const attack = previewHtml('[x](event:a)', { known: () => false });
   assert.doesNotMatch(attack, /<script/);
 });

@@ -21,9 +21,9 @@
 import { formatYear, isValidYear, toAstronomical } from '../util/dates.js';
 import { shorten } from './labels.js';
 
-// O ponto médio que separa os nomes numa linha só. Uma entrada datada já traz
+// A barra que separa os nomes numa linha só. Uma entrada datada já traz
 // uma vírgula lá dentro e vírgulas a separar vírgulas não se lêem (desvio 655).
-export const TITLE_SEPARATOR = ' · ';
+export const TITLE_SEPARATOR = ' / ';
 
 // As entradas que são mesmo entradas. `data/` é entrada não fidedigna aqui como
 // em todo o lado: uma lista que não é lista, uma entrada sem nome ou com um ano

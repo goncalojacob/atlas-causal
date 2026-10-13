@@ -23,7 +23,7 @@ test('opening the atlas with nothing selected shows the introduction', { skip },
     // It quotes the atlas rather than describing it: the counts are the
     // atlas's own, and every way in names a record.
     const text = await page.eval('return document.querySelector(".intro-card").textContent.replace(/\\s+/g, " ");');
-    assert.match(text, /\d+ events · \d+ links/);
+    assert.match(text, /\d+ events, \d+ links/);
     assert.match(text, /How to read it/);
     const ways = await page.eval(`return [...document.querySelectorAll('.intro-card [data-intro="event"], .intro-card [data-intro="narrative"]')]
       .map((el) => [el.dataset.intro, el.dataset.id]);`);

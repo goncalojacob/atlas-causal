@@ -1058,7 +1058,7 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
           }
         }
       } else if (hasDispute) {
-        error(8, r, '/dispute', `an edge with a dispute block must be marked disputed, not ${r.confidence}`);
+        error(8, r, '/dispute', `an edge with a dispute block must be marked disputed, and this one is ${r.confidence}`);
       }
       if (r.confidence === 'consensus') {
         const cited = (r.sources ?? []).map((c) => lookup(c.source, 'source')).filter(Boolean);
@@ -1100,7 +1100,7 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
       // minItems is outside the schema subset, so the non-empty name list
       // is checked here (STATUS.md, deviation 22).
       const names = Array.isArray(r.names) ? r.names.filter((n) => typeof n === 'string' && n.trim() !== '') : [];
-      if (names.length === 0) error(14, r, '/names', 'an actor has at least one name; the first is the display name');
+      if (names.length === 0) error(14, r, '/names', 'an actor needs at least one name. The first is the name the atlas shows');
       names.forEach((name, i) => {
         if (names.indexOf(name) !== i) error(14, r, `/names/${i}`, `name "${name}" repeated`);
       });
@@ -1114,7 +1114,7 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     // record's. `regionNote` says why *this* record overrides it, so it
     // stands or falls with the override (health review A, finding 23a).
     if (typeof r.regionNote === 'string' && typeof r.region !== 'string') {
-      error(10, r, '/regionNote', 'a note about the lane belongs beside a lane this record sets; the derived one needs no note');
+      error(10, r, '/regionNote', 'a lane note goes only beside a lane this record sets. A lane taken from the place needs no note');
     }
     // An event has no coordinates of its own: it names a place and the place
     // holds the point. Nothing else is asked of an event here. A placeless
@@ -1339,13 +1339,13 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     const optional = r.kind === 'event';
     if (r.kind !== 'place' && !(optional && r.names !== undefined)) continue;
     const names = Array.isArray(r.names) ? r.names.filter((n) => typeof n === 'string' && n.trim() !== '') : [];
-    if (names.length === 0 && !optional) error(18, r, '/names', 'a place has at least one name; the first is the display name');
+    if (names.length === 0 && !optional) error(18, r, '/names', 'a place needs at least one name. The first is the name the atlas shows');
     if (names.length === 0 && optional) error(18, r, '/names', 'an event with no other names carries no list, rather than an empty one');
     names.forEach((name, i) => {
       if (names.indexOf(name) !== i) error(18, r, `/names/${i}`, `name "${name}" repeated`);
     });
     if (optional && names.some((n) => n === r.title)) {
-      error(18, r, '/names', 'the title is already the display name; this list is what else the event is called');
+      error(18, r, '/names', 'the title is already the display name. This list holds the other names of the event');
     }
   }
 
@@ -1377,7 +1377,7 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
       error(19, r, '/from', `a ${from.actorType} cannot be the "${r.type}" end of this relation: ${ends.from.join(' or ')} only`);
     }
     if (to && !ends.to.includes(to.actorType)) {
-      error(19, r, '/to', `a "${r.type}" relation points at ${ends.to.join(' or ')}, not at a ${to.actorType}`);
+      error(19, r, '/to', `a "${r.type}" relation points at ${ends.to.join(' or ')}, and this one points at a ${to.actorType}`);
     }
     // A succession is between two of a kind: a colony is succeeded by the
     // state that followed it, never by the ministry that administered it.
@@ -1543,7 +1543,7 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     };
     climb(r, [r.id]);
     if (cycle) {
-      error(24, r, '/parent', `an event cannot be part of itself: ${cycle.join(' → ')}`);
+      error(24, r, '/parent', `an event cannot be part of itself: ${cycle.join(', part of ')}`);
     }
   }
 
@@ -1587,7 +1587,7 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
         if (role !== '' && !rolesAllowed.has(role) && !unknown.includes(role)) unknown.push(role);
       }
       if (unknown.length) {
-        error(25, r, '/actors', `${unknown.length === 1 ? 'a role' : 'roles'} outside data/roles.json: ${unknown.map((role) => `"${role}"`).join(', ')}. Adding a role is an edit to that file; the phrase this one is goes in the note beside it`);
+        error(25, r, '/actors', `${unknown.length === 1 ? 'a role' : 'roles'} outside data/roles.json: ${unknown.map((role) => `"${role}"`).join(', ')}. To add a role, edit that file. Otherwise put this phrase in the note beside the role`);
       }
     }
   }
@@ -1613,7 +1613,7 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
       } else {
         const allowed = OFFICE_ENDPOINTS[r.category];
         if (allowed && !allowed.includes(of.actorType)) {
-          error(26, r, '/of', `a "${r.category}" office belongs to ${allowed.join(' or ')}, not to a ${of.actorType}`);
+          error(26, r, '/of', `a "${r.category}" office belongs to ${allowed.join(' or ')}, and this one belongs to a ${of.actorType}`);
         }
       }
       continue;
@@ -1621,7 +1621,7 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     if (r.kind !== 'tenure') continue;
     const person = lookup(r.person, 'actor');
     if (!person) error(26, r, '/person', `"${r.person}" is not an actor record`);
-    else if (person.actorType !== 'person') error(26, r, '/person', `a tenure is held by a person, not by a ${person.actorType}`);
+    else if (person.actorType !== 'person') error(26, r, '/person', `a person holds a tenure, and this one names a ${person.actorType}`);
     const office = lookup(r.office, 'office');
     if (!office) {
       error(26, r, '/office', `"${r.office}" is not an office record`);
@@ -1667,7 +1667,7 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
     if (r.kind !== 'narrative') continue;
     const steps = Array.isArray(r.steps) ? r.steps : [];
     if (steps.length < MIN_NARRATIVE_STEPS) {
-      error(20, r, '/steps', `a narrative walks at least ${MIN_NARRATIVE_STEPS} records; this one has ${steps.length}`);
+      error(20, r, '/steps', `a narrative needs at least ${MIN_NARRATIVE_STEPS} steps, and this one has ${steps.length}`);
     }
     if (!nonTrivial(r.summary)) {
       error(20, r, '/summary', `summary must say what the narrative claims (at least ${MIN_TEXT_LENGTH} characters)`);
@@ -1780,7 +1780,7 @@ export function checkRules(records, topology = {}, { universe: prebuilt = null }
       error(27, r, '/retraction', 'a retracted record says when it was withdrawn and why');
     }
     if (!retracted && r.retraction !== undefined) {
-      error(27, r, '/retraction', `only a retracted record carries a retraction; this one is ${r.status}`);
+      error(27, r, '/retraction', `only a retracted record can carry a retraction, and this one is ${r.status}`);
     }
 
     // 28. `reviewed` is a claim that a person read this record, and a claim

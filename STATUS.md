@@ -25751,3 +25751,32 @@ Writer A started 2026-10-12T21:22:13Z by scheduled
 Writer A started 2026-10-12T23:22:10Z by scheduled
 
 Writer A 2026-10-12T23:26:38Z: 2 written, 0 partial, 1 refused, 3 skipped
+M91 started 2026-10-12T23:40:00Z by the assistant (branch m91)
+
+**M91 — every event of significance, edge or no edge, 13 October.** The owner: *"Right now the
+priority is to add most events of historical significance since around 1500, even if for now
+there is no parent or child for it. Just add all events that are relevant and connect them when
+you can."* Until now an item entered the atlas only with a verified edge (M90 brief §1 and §2);
+that bar is withdrawn, and edges are still written only where the article's sentence is
+verified. **No record was written** and there is no display change. `docs/history/pr-sections.md`
+carries the account and `docs/m90-brief.md` §1 and §2 a dated paragraph each.
+
+The queue's `edges` may be empty, and an item may carry an optional `rank` (one to forty
+characters: `vital-3`, `list`, `child-of:<id>`, …) that `state.mjs` counts; `why` stays required.
+`tools/queue/apply.mjs` imports an item whose queued edges all fail, or that queued none, files it
+under its surviving parents and logs it `written` with `written.edges: []` and its refusals;
+`partial` keeps its meaning and `refused` is now only `summary-missing` or an import that wrote
+no record. The skip step also skips an item whose English article title (its `enwiki` sitelink,
+one request before anything is written) is an active event's `title` or `wikipedia.en`, without
+case — the 132 active events with no `wikidata` id are no longer invisible to it. And `--held`
+means held on the other branch **and not on this one**: writer A's fire of 12 October, 23:20Z had logged three
+`existing` items on records from `m0` as *"held by the other branch"*. `state.mjs` adds the
+events with no edge per lane, the waiting items by rank, and the active events that start before
+1500.
+
+No deviation. Three new suites, twelve tests (`tests/m91-*.test.mjs`); six M90 tests changed
+with the rule, each said in the account. The pure suite: 1,998 tests, 1,998 pass, 0 skipped.
+`validate --index` 0 errors at every commit.
+
+M91 done
+W1 done

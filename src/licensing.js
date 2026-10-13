@@ -160,7 +160,7 @@ export function attributionHtml(record) {
     const href = safeUrl(url);
     return href ? `<a href="${esc(href)}" rel="license noopener" target="_blank">${esc(text)}</a>` : esc(text);
   };
-  const dataset = notice.source ? ` — ${link(notice.source, 'the dataset')}` : '';
-  return `<p class="notice licence">This record is derived from ${esc(notice.attribution)} and is licensed
-    ${link(notice.url, notice.name)}, not under the licence of the rest of this atlas${dataset}.</p>`;
+  const dataset = notice.source ? ` See ${link(notice.source, 'the dataset')}.` : '';
+  return `<p class="notice licence">This record comes from ${esc(notice.attribution.replace(' — ', ' by '))}. Its licence is
+    ${link(notice.url, notice.name)}, which differs from the licence of the rest of this atlas.${dataset}</p>`;
 }

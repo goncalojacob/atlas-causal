@@ -9,10 +9,14 @@
 // The planner decides and this applies. A writer on a smaller model is safe
 // only if it has nothing to decide, so everything a rule can say is said here
 // and not in a prompt: the quote is checked against the revision it names, the
-// chronology refusal of A15(5) is applied to the sentence, A14's parent rule is
-// applied to the two ends, the five types are the five types, and an item that
-// earns no edge is not imported at all (rules card 7). What is left over for a
-// person is in `data/imports/queue-log.json`, by code.
+// chronology refusal of A15(5) is applied to the sentence, and the five types
+// are the five types. Since 13 October 2026 (M91) an item is imported whether
+// or not an edge stands — the owner withdrew rules card 7's bar: "Just add all
+// events that are relevant and connect them when you can" — so an item whose
+// every edge is refused, or that queued none, is written as the event alone,
+// filed under its surviving parents, with its refusals logged. Edges are still
+// written only where the sentence is verified. What is left over for a person
+// is in `data/imports/queue-log.json`, by code.
 //
 // **Which way the import is called.** `runImportMode` walks the cursor of
 // `data/imports/wikidata-state.json` — `nextBatch` takes `runs.import.pending`
@@ -45,7 +49,7 @@ import { readSchemaFiles, readRecords, readRegions, readRegionPolygons } from '.
 import { createRegionDeriver } from '../../src/util/geo.js';
 import {
   HttpError, createFetcher, wikipediaApi, readSeeds, readState, writeState,
-  runImportMode, emptyState, SEEDS_FILE, STATE_FILE, LEAD_CACHE,
+  runImportMode, emptyState, entitiesUrl, articleTitles, SEEDS_FILE, STATE_FILE, LEAD_CACHE,
 } from '../import/wikidata.mjs';
 import {
   QUEUE_SCHEMA, LOG_SCHEMA, WRITERS, QUEUE_KIND, LOG_KIND,
@@ -318,6 +322,41 @@ export function parentVerdict(id, child, byId, { parentsFor = (x) => parentsOf(b
   return { ok: true, reason: null, detail: null };
 }
 
+// --- the duplicate by title ------------------------------------------------
+
+// M91 change 3. The skip by `wikidata` id cannot see an active event that
+// carries none — 132 of them on 13 October 2026, records written by hand or
+// before the import kept the id — so an item is also a duplicate of an active
+// event whose `title`, or whose `wikipedia.en`, is the item's English article
+// title, compared without case. A map from the folded title to the record.
+export const foldTitle = (title) => (typeof title === 'string' ? title.trim().replace(/_/g, ' ').toLowerCase() : '');
+
+export function titleIndex(records) {
+  const byTitle = new Map();
+  for (const r of records) {
+    if (r?.kind !== 'event' || r.status !== 'active') continue;
+    for (const title of [r.title, r.wikipedia?.en]) {
+      const key = foldTitle(title);
+      if (key !== '' && !byTitle.has(key)) byTitle.set(key, r.id);
+    }
+  }
+  return byTitle;
+}
+
+// The item's English article title, read off the item as the import will read
+// it (its `enwiki` sitelink), or null where it has none. One request, before
+// anything is written; a failure is the fire's and never this item's.
+export async function englishTitle(fetcher, qid) {
+  let body;
+  try {
+    body = await fetcher.get(entitiesUrl([qid]));
+  } catch (e) {
+    if (e?.name === 'NetworkRefused') throw e;
+    throw new NetworkRefused(`the item ${qid} could not be fetched: ${e?.message ?? e}`, { cause: e });
+  }
+  return articleTitles(body?.entities?.[qid] ?? null).en ?? null;
+}
+
 // --- the fire --------------------------------------------------------------
 
 // What the routine is told on the network exit, and why it is not "nothing was
@@ -374,8 +413,8 @@ async function applyItem(item, {
   });
   const subject = subjectOf(item);
   // What an imported item wrote, taken back off disk: the event and the place
-  // the import created for it. Used where the item turns out not to earn the
-  // record after all.
+  // the import created for it. Used where the lead could not be read and the
+  // record would carry the import's placeholder (`summary-missing`).
   let record = null;
   const takeBack = async () => {
     await rm(path.join(dataDir, 'events', `${record.id}.json`), { force: true });
@@ -394,6 +433,10 @@ async function applyItem(item, {
   if (isImport(item)) {
     const mine = byItem.get(item.qid);
     if (mine) return entry('skipped', `${item.qid} is already the event "${mine}"`);
+    // The same event under no id (M91 change 3), by its article's title.
+    const title = await englishTitle(fetcher, item.qid);
+    const same = title === null ? null : titleIndex(corpus.records).get(foldTitle(title));
+    if (same) return entry('skipped', `${item.qid}'s article "${title}" is already the title of the active event "${same}", which carries no wikidata id of its own`);
     if (held.has(item.qid)) return entry('skipped', `${item.qid} is held by the other branch`);
   } else if (held.has(item.existing)) {
     return entry('skipped', `"${item.existing}" is held by the other branch`);
@@ -451,10 +494,10 @@ async function applyItem(item, {
     }
     standing.push({ index: i, edge });
   }
-  // The bar, applied where it belongs: no edge, no record. An item that
-  // changes a record already here has its place already, so a filing on its
-  // own is work — but an item that asked for neither has asked for nothing.
-  if (isImport(item) && standing.length === 0) return entry('refused');
+  // No edge, no record, until 13 October 2026: the owner withdrew the bar
+  // (M91), so an import item goes on to the import whatever survived above.
+  // An item that changes a record already here and has neither a parent to
+  // file nor an edge left to write has nothing left to do.
   if (!isImport(item) && standing.length === 0 && (item.parents ?? []).length === 0) {
     return entry('refused', 'the item neither files a parent nor writes an edge');
   }
@@ -563,16 +606,10 @@ async function applyItem(item, {
     corpus.byId.set(built.id, built);
     corpus.records.push(built);
   }
-  // The bar again, and this time after the fact: the arrow of time and the
-  // edge already here can only be asked once the record exists, so an item
-  // whose every edge falls at this last fence has been imported and earns
-  // nothing. A record that earns no edge is not imported at all (rules card
-  // 7), so what this item wrote is taken back off disk.
-  if (written.edges.length === 0 && isImport(item)) {
-    await takeBack();
-    return entry('refused', 'every edge fell at the last fence, so the record it would have earned is off disk again');
-  }
-  return entry(refusals.length ? 'partial' : 'written');
+  // An item whose every edge fell, here or before the import, keeps its
+  // record since M91: `written`, with no edge and its refusals listed.
+  // `partial` keeps its meaning — the event and some of its edges.
+  return entry(refusals.length && written.edges.length ? 'partial' : 'written');
 }
 
 // The record ids a fire's citations are on: the event and the edges each entry
@@ -606,9 +643,26 @@ export async function applyQueue({
   const queue = await readJson(queueFile);
   if (queue === null) return { exit: EXIT.usage, problems: [`no queue at ${queueFile}`], entries: [] };
   const logged = (await readJson(log)) ?? emptyLog();
-  const held = new Set(heldFile && existsSync(heldFile)
+  const listed = heldFile && existsSync(heldFile)
     ? (await readFile(heldFile, 'utf8')).split('\n').map((l) => l.trim()).filter(Boolean)
-    : []);
+    : [];
+
+  const { entries: read, problems } = await readRecords(dataDir);
+  if (problems.length) {
+    return { exit: EXIT.hardStop, problems: problems.map((p) => `${p.file}: ${p.message}`), entries: [] };
+  }
+  const records = read.map((e) => ({ ...e.record }));
+  const corpus = { records, byId: new Map(records.map((r) => [r.id, r])) };
+  // M91 change 6. The routine's `--held` list is every event id and qid on the
+  // other branch, and a record that came from m0 is on both: writer A's fire
+  // of 12 October, 23:20Z, logged three `existing` items "held by the other
+  // branch" for that reason. Held means held there **and not here** — the
+  // other lane's unlanded records. An `existing` record present here is this
+  // writer's to edit, and an import already here is a duplicate (step 1), not
+  // something the other branch holds.
+  const here = new Set(records.filter((r) => r.kind === 'event')
+    .flatMap((r) => [r.id, ...(typeof r.wikidata === 'string' ? [r.wikidata] : [])]));
+  const held = new Set(listed.filter((id) => !here.has(id)));
   // Review of 12 October, finding 5. `--max` counts the items this fire can
   // write. An item the other branch holds is taken too, in the queue's order,
   // so it is logged `skipped` and the planner stops re-queueing it — but it
@@ -619,12 +673,6 @@ export async function applyQueue({
     .filter((item) => writable.has(item) || held.has(subjectOf(item)));
   if (items.length === 0) return { exit: EXIT.ok, problems: [], entries: [], empty: true };
 
-  const { entries: read, problems } = await readRecords(dataDir);
-  if (problems.length) {
-    return { exit: EXIT.hardStop, problems: problems.map((p) => `${p.file}: ${p.message}`), entries: [] };
-  }
-  const records = read.map((e) => ({ ...e.record }));
-  const corpus = { records, byId: new Map(records.map((r) => [r.id, r])) };
   const polygons = await readRegionPolygons(dataDir);
   const deriveRegion = polygons ? createRegionDeriver(polygons) : null;
 

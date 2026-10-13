@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Narratives — Atlas causal</title>
+  <title>Atlas causal: Narratives</title>
   <link rel="stylesheet" href="src/style.css">
 </head>
 <body class="page-body">
   <header class="bar">
     <h1><a href="index.html">Atlas causal</a></h1>
-    <p class="tagline">Signed walks through the graph, arranged by the years they are about.</p>
-    <span id="fixtures-badge" class="fixtures-badge" hidden title="tests/fixtures/data: invented records for testing the interface">synthetic fixtures — not history</span>
+    <p class="tagline">Signed walks through the graph, grouped by the years they cover.</p>
+    <span id="fixtures-badge" class="fixtures-badge" hidden title="tests/fixtures/data: invented records for testing the interface">invented test data</span>
     <a class="bar-link" href="sources.html">sources</a>
     <a class="bar-link" href="about.html">about</a>
   </header>
@@ -19,27 +19,27 @@
     <section class="prose">
       <h2>Narratives</h2>
 
-      <p>A narrative is one person's account of records that are already in the atlas: an ordered
-      walk from one event or link to the next, with a paragraph at each step saying why that step
-      follows. It is signed, and it changes nothing it walks — the events, the links, the dates and
-      the confidences are the records' own, and an account that disagrees with another account
-      does not alter a single one of them.</p>
+      <p>A narrative is one person's account of records already in the atlas. It walks in order
+      from one event or link to the next, with a paragraph at each step that says why the step
+      follows. The author signs it. A narrative changes nothing it walks through. The events,
+      links, dates and confidence levels stay as the records have them, even when two narratives
+      disagree.</p>
 
-      <p>They are arranged here by the centuries they cross, so that two accounts of the same
-      years sit side by side and can be read against each other. That is what narratives are for:
-      where two disagree about what mattered, both stand, and the reader compares. An account that
-      runs across a century boundary is listed under both.</p>
+      <p>This page groups narratives by the centuries they cross, so two accounts of the same
+      years sit side by side. That is the purpose of narratives. Where two disagree about what
+      mattered, both stay, and the reader compares them. A narrative that crosses from one century
+      into the next appears under both.</p>
 
-      <p>A title opens the account inside the atlas at its first step. From there the map, the
-      graph and the timeline follow the walk, and leaving it puts the atlas back where it was.</p>
+      <p>Click a title to open the narrative in the atlas at its first step. The map, the graph and
+      the timeline then follow the walk. Leaving the narrative puts the atlas back where it was.</p>
 
       <!-- The list between the two marks is written by tools/build-index.mjs, from the same
       narrativesHtml() the script runs, and committed like data/index/. Do not edit it by hand:
       `node tools/validate.mjs --index` compares it with a fresh build. -->
       <div id="narratives" data-prerendered="1"><!--prerendered-->
 <p class="bib-summary">2 narratives,
-    arranged by the centuries they cross, an account that crosses two listed under both.
-    Each title opens the account at its first step.</p>
+    grouped by the centuries they cross. A narrative that crosses two centuries appears under both.
+    Each title opens the narrative at its first step.</p>
     <section class="narrative-period">
     <h2>The 16th century <span class="count">1</span></h2>
     <ol class="narrative-cards"><li class="narrative-card">
@@ -117,9 +117,8 @@
   </section>
 <!--/prerendered--></div>
 
-      <p class="footnote">This list is generated from the records every time the page is opened,
-      and a narrative's period is the years of the records it actually walks rather than anything
-      typed beside it. The records are
+      <p class="footnote">The atlas builds this list from the records. The period of a narrative
+      comes from the years of the records it walks through. Nobody types it in. The records are under
       <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noreferrer">CC BY-SA 4.0</a>.</p>
     </section>
   </main>

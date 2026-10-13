@@ -10,10 +10,10 @@ from a source, which stays as the source wrote it.
 
 ## Words
 
-1. Use the plain word. Predict, not anticipate. Growth, not expansion.
-   Improve, not optimize. Consultants, not FTEs. If a more ordinary word
-   carries the same meaning, use it. A term being standard in a field is no
-   defence.
+1. Use the plain word. Write "predict" for "anticipate", "growth" for
+   "expansion", "improve" for "optimize" and "consultants" for "FTEs". If a
+   more ordinary word carries the same meaning, use it. That a term is
+   standard in a field is no defence.
 2. Name a specific thing. A reader outside the field must be able to say
    what a noun phrase refers to. "Service quality", "the network", "capacity",
    "momentum" and "alignment" name nothing. "Larger tanks and more frequent
@@ -24,16 +24,16 @@ from a source, which stays as the source wrote it.
 4. No slogans, no promotion, no triads of abstractions ("faster, smarter and
    more intuitive"). Describe the thing as it is.
 5. No jargon from the project's own history where a plain phrase exists.
-   Write "the rule that an event needs an edge", not "the bar". Write the
-   milestone's subject, not only its number.
+   Write "the rule that an event needs an edge" in place of "the bar". Name
+   the milestone's subject beside its number.
 
 ## Sentences
 
 6. Short sentences, one idea each. If a sentence can be shorter without
    losing a fact, shorten it. Figures and necessary technical detail are not
    padding.
-7. Active voice with the actor named. "The writer imports the item", not
-   "the item is imported".
+7. Active voice with the actor named. Write "the writer imports the item"
+   in place of "the item is imported".
 8. No "X, not Y" and no "not X but Y" contrasts. Say what it is.
 9. Say a thing once. Two words in one sentence carrying the same idea are
    one too many ("cumulative total", "historical past").

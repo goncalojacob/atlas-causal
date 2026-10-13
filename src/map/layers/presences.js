@@ -83,7 +83,7 @@ export function presenceTitle(presence, { nameOf }) {
     ? `${DEPENDENCY_LABEL[presence.dependencyKind]} ${presence.dependencyOf ? nameOf(presence.dependencyOf) ?? presence.dependencyOf : 'an administration that is not a state on this map'}`
     : null;
   const when = formatInterval(presence.when);
-  return `${who}${held ? ` — ${held}` : ''} · ${when}${presence.confidence === 'disputed' ? ' · disputed' : ''}`;
+  return `${who}${held ? `, ${held}` : ''}, ${when}${presence.confidence === 'disputed' ? ', disputed' : ''}`;
 }
 
 // Which year's borders the map is drawing, said in one line, or null where

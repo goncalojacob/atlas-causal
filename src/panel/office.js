@@ -88,8 +88,8 @@ export function officeCardHtml(ctx, office, { state = null, remembered = null } 
     </header>
     <section class="summary" data-slot="office-summary"></section>
     ${sections.map((s) => sectionHtml({ ...s, open: s.key === open })).join('')}
-    <p class="muted office-cites">An office says that the post exists and nothing more, so it cites nothing.
-      Each turn at it is a tenure, and the tenure is what carries the sources.</p>
+    <p class="muted office-cites">An office record says only that the post exists, so it cites nothing.
+      Each turn at the post is a tenure, and the tenures carry the sources.</p>
   </section>`;
 }
 
@@ -224,7 +224,7 @@ function stripHtml(ctx, actor, office) {
   for (const cluster of laid.clusters) {
     const { bar } = cluster.representative;
     const box = `x="${bar.x.toFixed(2)}" y="${BAR_Y}" width="${bar.width.toFixed(2)}" height="${BAR_HEIGHT}"`;
-    const label = `${holderName(atlas, bar.tenure)} · ${formatInterval(bar.tenure.when)}`;
+    const label = `${holderName(atlas, bar.tenure)} (${formatInterval(bar.tenure.when)})`;
     if (cluster.count === 1) {
       // Clicking a bar opens the holder: a tenure has no card of its own.
       rects.push(`<rect class="tenure-bar" ${box} data-action="actor" data-id="${esc(bar.tenure.person)}"
@@ -233,7 +233,7 @@ function stripHtml(ctx, actor, office) {
     }
     rects.push(`<rect class="tenure-bar merged" ${box} data-action="tenure-cluster"
       data-office="${esc(office.id)}" data-cluster="${esc(cluster.key)}"
-      data-tenure="${esc(bar.tenure.id)}"><title>${esc(`${cluster.count} turns here, ${label} the longest`)}</title></rect>`);
+      data-tenure="${esc(bar.tenure.id)}"><title>${esc(`${cluster.count} turns here. The longest is ${label}.`)}</title></rect>`);
     counts.push(`<span class="tenure-count" style="left:${(((bar.x + bar.width) / STRIP_UNITS) * 100).toFixed(2)}%">+${cluster.count}</span>`);
   }
   const from = formatYear(fromAstronomical(laid.scale.min));
@@ -267,7 +267,7 @@ export function officeStripsSection(ctx, actor) {
     key: OFFICES_SECTION,
     label: 'Offices',
     count: offices.length,
-    hint: 'Posts that belong to this actor, and who held each one. A bar opens the person; the post\'s name opens its own card.',
+    hint: 'Posts that belong to this actor, and who held each one. Click a bar to open the person. Click the name of a post to open its card.',
     body: `<ul class="office-rows">${rows.join('')}</ul>`,
   };
 }

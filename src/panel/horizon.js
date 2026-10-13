@@ -54,13 +54,12 @@ export function horizonHtml(ctx, { event, state }) {
         <input type="number" id="horizon-year" data-horizon step="1" ${bounds} value="${esc(year)}">
         ${chosen ? '<button type="button" class="link small" data-action="clear-horizon">back to the window’s end</button>' : ''}
       </p>
-      <p class="hint">Everything this event leads to, however far away, that had begun by then.
-        ${results.length > RANKED ? `The first ${RANKED} are ordered` : 'Ordered'} best-supported first:
-        a path of consensus links before a path of the same length
-        through a dispute, and a chain of causes before a chain of inspirations${results.length > RANKED
-    ? ', and the rest in the order they were found' : ''}. Choosing one
-        walks the shortest path to it, which is the same path this list was ranked
-        by${chosen ? ', and the whole set is lit on the map, the graph and the timeline' : ''}.</p>
+      <p class="hint">Every event this one leads to, however many steps away, that had begun by then.
+        ${results.length > RANKED ? `The first ${RANKED} are ranked` : 'They are ranked'} best-supported first.
+        A path of consensus links comes before a path of the same length through a dispute.
+        A chain of causes comes before a chain of inspirations.${results.length > RANKED
+    ? ' The rest follow in the order the atlas found them.' : ''} Choosing one walks the shortest
+        path to it, the same path the ranking used.${chosen ? ' The map, the graph and the timeline light up the whole set.' : ''}</p>
       ${results.length
     ? `<ul class="actor-rows">${shown.map((r) => rowHtml(ctx, r)).join('')}</ul>
         ${hidden > 0 ? `<p class="muted">and ${hidden} more, further out.</p>` : ''}`
