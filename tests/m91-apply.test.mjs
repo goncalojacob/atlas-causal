@@ -7,7 +7,7 @@
 // is everything that keeps a duplicate or a placeholder out: the skip by
 // Wikidata id, now also by title; `summary-missing`; the network exit; the
 // validator as a hard stop. And "held by the other branch" means held there
-// and not here (change 6, writer A's fire of 13 October, 23:20Z).
+// and not here (change 6, writer A's fire of 12 October, 23:20Z).
 //
 // No network: the stub answers off disk, as in tests/m90-apply.test.mjs.
 
@@ -201,7 +201,7 @@ test('an item whose article title an active event already carries is skipped, ev
 test('held by the other branch means held there and not here', async () => {
   const bed = await scratch();
   // The routine's --held list is every event id on the other branch, and a
-  // record that came from m0 is on both: writer A's fire of 13 October, 23:20Z,
+  // record that came from m0 is on both: writer A's fire of 12 October, 23:20Z,
   // logged three `existing` items "held by the other branch" for that reason.
   const held = path.join(bed.dir, 'held.txt');
   await writeFile(held, `fixture-event-t\nfixture-event-elsewhere\n${QID}\n`, 'utf8');

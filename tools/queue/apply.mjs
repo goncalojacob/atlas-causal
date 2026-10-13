@@ -655,7 +655,7 @@ export async function applyQueue({
   const corpus = { records, byId: new Map(records.map((r) => [r.id, r])) };
   // M91 change 6. The routine's `--held` list is every event id and qid on the
   // other branch, and a record that came from m0 is on both: writer A's fire
-  // of 13 October, 23:20Z, logged three `existing` items "held by the other
+  // of 12 October, 23:20Z, logged three `existing` items "held by the other
   // branch" for that reason. Held means held there **and not here** — the
   // other lane's unlanded records. An `existing` record present here is this
   // writer's to edit, and an import already here is a duplicate (step 1), not
