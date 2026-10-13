@@ -811,6 +811,13 @@
         {
           "first": true,
           "on": "2026-10-13"
+        },
+        {
+          "fields": [
+            "explanation",
+            "sources"
+          ],
+          "on": "2026-10-13"
         }
       ]
     },
@@ -1023,6 +1030,13 @@
             "explanation",
             "origin",
             "review",
+            "sources"
+          ],
+          "on": "2026-10-13"
+        },
+        {
+          "fields": [
+            "explanation",
             "sources"
           ],
           "on": "2026-10-13"
