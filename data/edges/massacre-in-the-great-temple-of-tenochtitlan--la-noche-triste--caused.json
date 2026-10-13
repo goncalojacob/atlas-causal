@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "la-noche-triste",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "Both articles make the massacre the reason the city rose, and the rising is what the Spanish fled. The Fall of Tenochtitlan article, § Aztec revolt: \"The massacre had the result of resolutely turning all the Aztecs against the Spanish and completely undermining Moctezuma's authority.\" The massacre's own article closes its lead with the consequence: \"When Cortés and his men returned, the Mexica drove the Spaniards out of the city on the so-called the Sad Night (La Noche Triste), losing most of their men in battle or as prisoners who were then sacrificed.\" The La Noche Triste article states the intervening step — \"In retaliation, the Aztecs laid siege to the Spanish compound\" — which is the siege the flight broke out of. `caused` rather than `precondition-of`: the articles use causal language for it and name no other reason for the revolt. Probable: Wikipedia alone, at two revisions.",
+  "explanation": "Both articles make the massacre the reason the city rose, and the rising is what the Spanish fled. The Fall of Tenochtitlan article, § Aztec revolt, reads \"The massacre had the result of resolutely turning all the Aztecs against the Spanish and completely undermining Moctezuma's authority.\" The massacre's own article closes its lead on the consequence: \"When Cortés and his men returned, the Mexica drove the Spaniards out of the city on the so-called the Sad Night (La Noche Triste), losing most of their men in battle or as prisoners who were then sacrificed.\" The La Noche Triste article gives the step between, \"In retaliation, the Aztecs laid siege to the Spanish compound\", and that is the siege the flight broke out of. The type is `caused`, because the articles use causal language and name no other reason for the revolt. The confidence is probable, on Wikipedia alone at two revisions.",
   "dispute": null
 }

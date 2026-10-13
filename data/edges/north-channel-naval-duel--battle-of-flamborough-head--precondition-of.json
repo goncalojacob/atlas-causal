@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-flamborough-head",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The Ranger's action is where the campaign Flamborough Head ends began: \"it was the first American naval success within Atlantic waters... The action was one of a series of actions by Jones that brought the war to British waters.\" Flamborough Head, off Yorkshire fifteen months later, is the last and most celebrated of that series, and the same officer commands both. Precondition-of and not caused: the article makes the one a member of a series, not the cause of another action in it.",
+  "explanation": "The Ranger's action is where the campaign that ended at Flamborough Head began: \"it was the first American naval success within Atlantic waters... The action was one of a series of actions by Jones that brought the war to British waters.\" Flamborough Head, off Yorkshire fifteen months later, is the last and best known of that series, and the same officer commands both. The type is `precondition-of`, because the article makes the one a member of a series and does not make it the cause of another action in it.",
   "dispute": null
 }

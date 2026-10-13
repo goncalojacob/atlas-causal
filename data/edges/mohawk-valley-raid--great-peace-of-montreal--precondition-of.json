@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "great-peace-of-montreal",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The article states the consequence in its own words: \"The Mohawk were seriously weakened as a military force within the Iroquois league, and the raid's effects contributed to the 1701 peace negotiated between the Iroquois, French, and many other tribes.\" Precondition-of and not caused: the article says the raid contributed to the peace, not that it brought it about, and nine years and several other actions stand between them. Wikipedia is the only author named, so probable.",
+  "explanation": "The article states the consequence: \"The Mohawk were seriously weakened as a military force within the Iroquois league, and the raid's effects contributed to the 1701 peace negotiated between the Iroquois, French, and many other tribes.\" The type is `precondition-of`. The article says the raid contributed to the peace and does not say it brought the peace about, and nine years and several other actions stand between them. Wikipedia is the only author named, so the confidence is probable.",
   "dispute": null
 }

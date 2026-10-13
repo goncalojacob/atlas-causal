@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "2020-malian-coup-d-etat",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The coup’s article gives the protests behind it and what the protesters were angry about: “Protests in Mali had been ongoing since 5 June, with protesters calling for the resignation of President Ibrahim Boubacar Keïta. Protesters were displeased with the government’s management of the ongoing insurgency, alleged government corruption, the ongoing COVID-19 pandemic, and a floundering economy.” The insurgency is the war this edge runs from; it is **one of four** grievances the article names, which is exactly why this is `probable` and why no edge is written from the other three.",
+  "explanation": "The coup's article gives the protests behind it and what the protesters were angry about: “Protests in Mali had been ongoing since 5 June, with protesters calling for the resignation of President Ibrahim Boubacar Keïta. Protesters were displeased with the government’s management of the ongoing insurgency, alleged government corruption, the ongoing COVID-19 pandemic, and a floundering economy.” The insurgency is the war this edge runs from. It is one of four complaints the article names, so the confidence is `probable`. The atlas writes no edge from the other three.",
   "dispute": null
 }

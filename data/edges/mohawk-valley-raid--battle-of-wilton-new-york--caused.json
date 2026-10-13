@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-wilton-new-york",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The raid article describes the battle as what the raid ran into on its way home: \"The raiders, burdened with their prisoners, were followed by a rapidly deployed English-Iroquois force led by Major Pieter Schuyler. The two forces engaged in skirmishing a few days after the raid. Because of the pursuit, the raiders were forced to release most of their prisoners.\" The two records are two ends of one winter: the raid on the three castles, and the running fight of the retreat. Wikipedia is the only author named, so probable.",
+  "explanation": "The raid article describes the battle as what the raid ran into on its way home: \"The raiders, burdened with their prisoners, were followed by a rapidly deployed English-Iroquois force led by Major Pieter Schuyler. The two forces engaged in skirmishing a few days after the raid. Because of the pursuit, the raiders were forced to release most of their prisoners.\" The two records are the two ends of one winter, the raid on the three castles and the running fight of the retreat. Wikipedia is the only author named, so the confidence is probable.",
   "dispute": null
 }

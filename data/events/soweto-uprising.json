@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -25,7 +25,7 @@
   },
   "retraction": {
     "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 15 under brief §1: the record earns no honest edge. The English article, at revision 1369412868, files the uprising under \"the internal resistance to apartheid\" and argues it out of the Bantu Education policy and the Afrikaans-medium decree, forward to international condemnation of the apartheid government and to the Transkei bantustan of October 1976. This atlas holds no South African record between the Second Boer War of 1899 and nothing at all afterwards, and the article names neither the Boer war nor the Angolan and Mozambican independences of 1975, which are the records here a reader might expect it to reach. It waits on any South African record of the apartheid period."
+    "reason": "Retracted in M42 batch 15 under brief §1: the record earns no honest edge. The English article, at revision 1369412868, files the uprising under \"the internal resistance to apartheid\" and argues it out of the Bantu Education policy and the Afrikaans-medium decree, forward to the condemnation of the apartheid government by other states and to the Transkei bantustan of October 1976. The only South African record this atlas holds is the Second Boer War of 1899, and it holds nothing after that. The article names neither that war nor the Angolan and Mozambican independences of 1975, which are the records here a reader might expect it to reach. It waits on any South African record of the apartheid period."
   },
   "wikidata": "Q153081",
   "wikipedia": {
@@ -51,6 +51,6 @@
   },
   "place": null,
   "region": "africa",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
   "actors": []
 }

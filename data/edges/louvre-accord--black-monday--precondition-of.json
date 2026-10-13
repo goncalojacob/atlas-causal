@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "black-monday",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The English article on the crash gives the accord as one of its two standing explanations: \"A second explanation for the crash lies in a crisis of confidence in the dollar created by uncertainties regarding the viability of the Louvre Accord\", and, earlier, \"leading industrial countries had signed the Louvre Accord, hoping that monetary policy coordination would stabilize international money markets, but doubts about the viability of the accord created a crisis of confidence.\" It is a second explanation and not the only one, which is why this is probable and not consensus.",
+  "explanation": "The English article on the crash gives the accord as one of two standing explanations: \"A second explanation for the crash lies in a crisis of confidence in the dollar created by uncertainties regarding the viability of the Louvre Accord\". Earlier it reads \"leading industrial countries had signed the Louvre Accord, hoping that monetary policy coordination would stabilize international money markets, but doubts about the viability of the accord created a crisis of confidence.\" The article offers a second explanation beside this one, so the confidence is probable.",
   "dispute": null
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-the-lake-of-two-mountains",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "The article opens on the connection: \"The battle occurred in response to the Lachine massacre of August 1689. In October, Governor General of New France, the Marquis de Denonville dispatched a scouting party of 28 coureur des bois … to search for Haudenosaunee warriors that posed a threat to residents on the Island of Montreal.\" The scouting party is what the massacre produced; the skirmish is what the party found. Wikipedia is the only author named, so probable.",
+  "explanation": "The article opens on the connection: \"The battle occurred in response to the Lachine massacre of August 1689. In October, Governor General of New France, the Marquis de Denonville dispatched a scouting party of 28 coureur des bois … to search for Haudenosaunee warriors that posed a threat to residents on the Island of Montreal.\" The massacre produced the scouting party. The skirmish is what the party found. Wikipedia is the only author named, so the confidence is probable.",
   "dispute": null
 }

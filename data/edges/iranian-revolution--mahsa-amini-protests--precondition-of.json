@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -38,6 +38,6 @@
   "to": "mahsa-amini-protests",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The protests of September 2022 were against the republic the revolution founded and against one of its founding acts in particular. Compulsory hijab was imposed in the first years after 1979 and the morality patrol that enforced it is an organ of that state; a woman died in its custody and the slogan that followed named the system, not the patrol. The claim is that the object of the protest is the order of 1979. It is not a claim that the revolution caused the protest, which needed forty years of its own.",
+  "explanation": "The protests of September 2022 were against the republic the revolution founded, and against one of its founding acts in particular. The state imposed compulsory hijab in the first years after 1979, and the morality patrol that enforced it is an organ of that state. A woman died in its custody, and the slogan that followed named the whole system rather than the patrol. The claim is that the object of the protest is the order of 1979. The protest itself needed forty years of its own.",
   "dispute": null
 }

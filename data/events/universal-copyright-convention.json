@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "wikidata"
   },
@@ -45,11 +45,11 @@
   },
   "place": null,
   "region": "europe",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
   "category": "treaty",
   "actors": [],
   "retraction": {
     "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 11 under brief §1: the record earns no honest edge. The English article, at revision 1346111431, defines the convention against the Berne Convention and under the auspices of UNESCO; this atlas holds neither, and no copyright or intellectual-property record of any kind. The nearest thing here is the Geneva Act of the Lisbon Agreement on appellations of origin, which the article does not mention and which is a different instrument about a different right."
+    "reason": "Retracted in M42 batch 11 under brief §1: the record earns no honest edge. The English article, at revision 1346111431, defines the convention against the Berne Convention and under the auspices of UNESCO. This atlas holds neither, and it holds no record about copyright or any related right. The nearest thing here is the Geneva Act of the Lisbon Agreement on appellations of origin, which the article does not mention and which is a different instrument about a different right."
   }
 }

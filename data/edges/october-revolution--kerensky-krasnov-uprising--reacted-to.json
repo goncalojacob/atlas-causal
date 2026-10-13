@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "kerensky-krasnov-uprising",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "The uprising’s article is one sentence and it is the whole argument: it “was an attempt by Alexander Kerensky to crush the October Revolution and regain power after the Bolsheviks overthrew his government in Petrograd”, between 8 and 13 November 1917 [O.S. 26 and 31 October]. The record carries the Julian dates the item gives and says so in `when.calendar`, which is what keeps this edge on the right side of the arrow of time.",
+  "explanation": "The uprising's article is one sentence and it is the whole argument. It “was an attempt by Alexander Kerensky to crush the October Revolution and regain power after the Bolsheviks overthrew his government in Petrograd”, between 8 and 13 November 1917 [O.S. 26 and 31 October]. The record carries the Julian dates the item gives and says so in `when.calendar`, which keeps the cause before the effect.",
   "dispute": null
 }

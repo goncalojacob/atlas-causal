@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "herero-and-nama-genocide",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The article's lead runs the sequence without a gap: \"Herero chief Samuel Maharero launched a surprise uprising on 12 January 1904\"; \"after reinforcements arrived from Germany, the Herero were surrounded and routed at the Battle of Waterberg in August\"; \"during the following months, they fled into the Omaheke Desert where a majority died from thirst, starvation, or small-scale German massacres\"; and \"German commander Lothar von Trotha ordered the execution of all Herero men\". The extermination is what the colonial power did to win the war it was already fighting, which is causation and not a condition: `caused`. The edge is written from the war and not from `battle-of-waterberg`, which the article names as the turn — rule 4 refuses that one, because the battle is dated 11 August 1904 and the genocide opens in the same year at its start. Probable.",
+  "explanation": "The article's lead runs the sequence without a gap. \"Herero chief Samuel Maharero launched a surprise uprising on 12 January 1904\". Then, \"after reinforcements arrived from Germany, the Herero were surrounded and routed at the Battle of Waterberg in August\". Then, \"during the following months, they fled into the Omaheke Desert where a majority died from thirst, starvation, or small-scale German massacres\". And \"German commander Lothar von Trotha ordered the execution of all Herero men\". The extermination is what the colonial power did to win the war it was already fighting, so the type is `caused`. The edge is written from the war rather than from `battle-of-waterberg`, which the article names as the turn. Rule 4 refuses that one, because the battle is dated 11 August 1904 and the genocide opens at the start of the same year. The confidence is probable.",
   "dispute": null
 }

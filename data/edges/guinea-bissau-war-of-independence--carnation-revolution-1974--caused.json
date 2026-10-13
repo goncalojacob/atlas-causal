@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "carnation-revolution-1974",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The article states it in its own words: \"the war in Guinea-Bissau has been viewed as a factor which contributed to the coup and revolution: its status as 'the most intense, destructive, and materially pointless' of the three Portuguese wars in Africa rendered it an embarrassment\" to the regime; and the lead says the war \"created significant internal political turmoil in Portugal\" and is \"commonly referred to as 'Portugal's Vietnam'\". A factor contributing to the coup is causation and not a precondition, so `caused` is written, matching the type the atlas already carries on `guinea-war-begins-1963`, which is this war's first day. Probable: the article attributes the reading to others (\"has been viewed as\"), and names no single historian for it.",
+  "explanation": "The article states it in its own words: \"the war in Guinea-Bissau has been viewed as a factor which contributed to the coup and revolution: its status as 'the most intense, destructive, and materially pointless' of the three Portuguese wars in Africa rendered it an embarrassment\" to the regime. The lead says the war \"created significant internal political turmoil in Portugal\" and is \"commonly referred to as 'Portugal's Vietnam'\". A factor that contributed to the coup is a cause, so the type is `caused`. That matches the type the atlas already carries on `guinea-war-begins-1963`, which is this war's first day. The confidence is probable, because the article attributes the reading to others (\"has been viewed as\") and names no historian for it.",
   "dispute": null
 }

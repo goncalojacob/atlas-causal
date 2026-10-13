@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,6 @@
   "to": "the-cuban-sugar-boom",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The cited account is direct: after the end of slavery in Saint-Domingue at the turn of the nineteenth century, with the Haitian Revolution, Cuba became the most substantial sugar plantation colony in the Caribbean, outperforming the British islands. The richest producer in the world stopped producing and the market went to the island next to it. The revolution’s second effect on Cuba runs the other way and is in the same sources: the white upper class was so afraid of following Haiti that it supported Spanish rule intensely, which is part of why Cuba was still a slave colony of Spain when its neighbours had been republics for two generations.",
+  "explanation": "The cited account is direct. After slavery ended in Saint-Domingue at the turn of the nineteenth century, with the Haitian Revolution, Cuba became the largest sugar plantation colony in the Caribbean, ahead of the British islands. The richest producer in the world stopped producing, and the market went to the island next to it. The revolution’s second effect on Cuba runs the other way and is in the same sources. The white upper class was so afraid of following Haiti that it backed Spanish rule, which is part of why Cuba was still a slave colony of Spain when its neighbours had been republics for two generations.",
   "dispute": null
 }

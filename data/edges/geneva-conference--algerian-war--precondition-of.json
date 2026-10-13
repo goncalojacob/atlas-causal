@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -38,6 +38,6 @@
   "to": "algerian-war",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Three months separate the accords of 20 July 1954 from the risings of 1 November, and the connection between them is not a coincidence but it is not a simple cause either. Two things carried over. The first is the army: the officers who had lost Indochina went to Algeria with a doctrine of revolutionary war worked out against the Viet Minh and a determination that this would not be lost as well, which is the doctrine Portuguese officers later studied for Angola. The second is the demonstration, for the Algerians, that a colonial power could be beaten in the field. The claim is about the transfer of the doctrine and the example, and it is marked probable because the rising had been planned before Geneva.",
+  "explanation": "Three months separate the accords of 20 July 1954 from the risings of 1 November. Two things carried over. The first is the army. The officers who had lost Indochina went to Algeria with a doctrine of revolutionary war worked out against the Viet Minh, and with a determination not to lose a second time. Portuguese officers later studied that doctrine for Angola. The second is the demonstration, for the Algerians, that a colonial power could be beaten in the field. The claim is about the transfer of the doctrine and the example. The confidence is probable, because the rising had been planned before Geneva.",
   "dispute": null
 }

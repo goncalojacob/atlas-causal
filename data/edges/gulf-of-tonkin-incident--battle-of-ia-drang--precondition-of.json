@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "battle-of-ia-drang",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Each article states one half in its own voice. The incident's lead has a naval confrontation \"which led to the United States engaging more directly in the Vietnam War\"; Ia Drang's has \"the first major battle between the United States Army and the People's Army of Vietnam (PAVN)\", fifteen months later. `precondition-of` and not `caused`: what the confrontation of August 1964 made possible was American ground forces in Vietnam at all, and nothing in either article sends the Seventh Fleet to the Chu Pong massif. That the second is an instance of the first article's \"engaging more directly\" is the join this edge makes and is why it is `probable` rather than `consensus`. The 4 August attack the escalation was argued from is one the incident's own lead says \"did not happen\", which the record carries and this edge does not need.",
+  "explanation": "Each article states one half in its own voice. The incident's lead has a naval confrontation \"which led to the United States engaging more directly in the Vietnam War\". Ia Drang's lead has \"the first major battle between the United States Army and the People's Army of Vietnam (PAVN)\", fifteen months later. The type is `precondition-of`. What the confrontation of August 1964 made possible was American ground forces in Vietnam at all, and nothing in either article sends the Seventh Fleet to the Chu Pong massif. This edge joins the two by reading the battle as an instance of the first article's \"engaging more directly\", which is why the confidence is `probable` rather than `consensus`. The escalation was argued from the attack of 4 August, which the incident's own lead says \"did not happen\". The record carries that and this edge does not need it.",
   "dispute": null
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-30",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,6 +34,6 @@
   "to": "battle-off-ulsan",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The later record’s own cited article gives the raiding as the reason the squadron that fought it was in the Sea of Japan at all. The incident is the fourth of six sorties the section lists — \"The fourth raid from 12 to 19 June sank several transports in the Tsushima Strait in what was called the \"Hitachi Maru Incident\"\" — and the section closes on what they produced: \"As a result of these operations, the Japanese were forced to assign the IJN 2nd Fleet under the command of Vice Admiral Kamimura Hikonojō with considerable resources in an attempt to locate and destroy the Russian squadron.\" Kamimura’s fleet is the one that caught the cruisers off Ulsan. `precondition-of` and not `caused`: the article credits the assignment to all six raids, and of those this atlas holds only this one, so nothing stronger than \"one of the operations that put the 2nd Fleet there\" is claimed. The sortie itself was ordered to help Vitgeft break out of Port Arthur, which the atlas already reads through the Battle of the Yellow Sea; this is the other side of the meeting. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "explanation": "The later record’s own cited article gives the raiding as the reason the squadron that fought it was in the Sea of Japan at all. The incident is the fourth of six sorties the section lists: \"The fourth raid from 12 to 19 June sank several transports in the Tsushima Strait in what was called the \"Hitachi Maru Incident\"\". The section closes on what the sorties produced: \"As a result of these operations, the Japanese were forced to assign the IJN 2nd Fleet under the command of Vice Admiral Kamimura Hikonojō with considerable resources in an attempt to locate and destroy the Russian squadron.\" Kamimura’s fleet is the one that caught the cruisers off Ulsan. The type is `precondition-of`. The article credits the assignment to all six raids, and the atlas holds only this one of them, so the edge claims nothing stronger than \"one of the operations that put the 2nd Fleet there\". The sortie itself was ordered to help Vitgeft break out of Port Arthur, which the atlas already reads through the Battle of the Yellow Sea. This is the other side of the meeting. The confidence is `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
   "dispute": null
 }

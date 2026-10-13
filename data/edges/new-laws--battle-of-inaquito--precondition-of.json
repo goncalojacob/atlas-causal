@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-30",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,6 +34,6 @@
   "to": "battle-of-inaquito",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Iñaquito’s article gives the New Laws as what raised both armies: “The said viceroy arrived with the strong intention of enforcing the recently enacted New Laws that abolished the encomienda prohibited the personal labor of the indigenous people. The encomenderos (the masters) protested and organized a rebellion, choosing Gonzalo Pizarro as leader”. The viceroy who fell at Iñaquito was sent to enforce them and the man who killed him was chosen to resist them, which is the same account the atlas already holds for Jaquijahuana two years later. `precondition-of` and not `caused`: the laws set the quarrel, not the battle. `probable`, because the only source the atlas can open here is the article (rule 22).",
+  "explanation": "Iñaquito's article gives the New Laws as what raised both armies: “The said viceroy arrived with the strong intention of enforcing the recently enacted New Laws that abolished the encomienda prohibited the personal labor of the indigenous people. The encomenderos (the masters) protested and organized a rebellion, choosing Gonzalo Pizarro as leader”. The crown sent the viceroy who fell at Iñaquito to enforce the laws, and the encomenderos chose the man who killed him to resist them. The atlas already holds the same account for Jaquijahuana two years later. The type is `precondition-of`, because the laws set the quarrel and not the battle. The confidence is `probable`, because the article is the only source the atlas can open here (rule 22).",
   "dispute": null
 }

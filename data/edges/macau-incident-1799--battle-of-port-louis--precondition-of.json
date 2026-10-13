@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "battle-of-port-louis",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The Port Louis article states the consequence of the Macau failure in its own words: \"This combined force then attacked an East India Company convoy gathering in the Pearl River in January 1799, but in the ensuing Macau Incident they were driven off by the Royal Navy escort squadron. Dispirited, Sercey returned westwards to Île de France, narrowly avoiding an unequal battle with a large British squadron blockading the port. On arrival he discovered that Preneuse and Brûle-Gueule were the only ships remaining of his original command, the others having returned to France or been lost in battle.\" That return is what brought Preneuse back under the blockade of Port Louis, and it is what \"In September 1799 Sercey dispersed his remaining ships\" follows from. Precondition-of and not caused: being driven off at Macau did not order the December cruise, it put the last frigate back where the blockade was.",
+  "explanation": "The Port Louis article states the consequence of the Macau failure: \"This combined force then attacked an East India Company convoy gathering in the Pearl River in January 1799, but in the ensuing Macau Incident they were driven off by the Royal Navy escort squadron. Dispirited, Sercey returned westwards to Île de France, narrowly avoiding an unequal battle with a large British squadron blockading the port. On arrival he discovered that Preneuse and Brûle-Gueule were the only ships remaining of his original command, the others having returned to France or been lost in battle.\" That return brought Preneuse back under the blockade of Port Louis, and \"In September 1799 Sercey dispersed his remaining ships\" follows from it. The type is `precondition-of`. Being driven off at Macau did not order the December cruise. It put the last frigate back where the blockade was.",
   "dispute": null
 }
