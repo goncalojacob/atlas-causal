@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-12",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -35,6 +35,6 @@
   "to": "rif-war",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The article \"Larache landing\" (revision 1379388284) states: \"The Larache landing refers to the military action in 1911 that led to the occupation of the Moroccan city of Larache by the Spanish Marine Infantry, establishing a precedent for the military intervention in Morocco and the subsequent Rif War.\" The edge reads the last clause and nothing more: a precedent for an intervention is a precondition of the war that followed fifteen years later and not its cause. The item's Wikidata P361 names the Rif War, but a 1911 landing cannot be part of a war that begins in 1921, so no parent is filed (rule 24).",
+  "explanation": "The article \"Larache landing\" (revision 1379388284) states: \"The Larache landing refers to the military action in 1911 that led to the occupation of the Moroccan city of Larache by the Spanish Marine Infantry, establishing a precedent for the military intervention in Morocco and the subsequent Rif War.\" The edge reads the last clause and nothing more. A precedent for an intervention is a condition of the war that followed fifteen years later. The item's Wikidata P361 names the Rif War, and a 1911 landing cannot be part of a war that begins in 1921, so the record files no parent (rule 24).",
   "dispute": null
 }

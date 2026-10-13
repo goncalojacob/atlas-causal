@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-13",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -35,6 +35,6 @@
   "to": "new-deal",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "The article \"New Deal\" (revision 1379744402) opens: \"The New Deal refers to a series of economic, social, and political reforms in response to the Great Depression in the United States under the first and second administrations of President Franklin D. Roosevelt.\" The edge reads that one sentence and nothing more. The reforms answered the depression, so the depression is the end the edge runs from.",
+  "explanation": "The article \"New Deal\" (revision 1379744402) opens: \"The New Deal refers to a series of economic, social, and political reforms in response to the Great Depression in the United States under the first and second administrations of President Franklin D. Roosevelt.\" The edge reads that one sentence and nothing more. The reforms answered the depression, so the edge starts at the depression.",
   "dispute": null
 }

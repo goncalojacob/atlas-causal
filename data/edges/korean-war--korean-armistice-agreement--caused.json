@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "korean-armistice-agreement",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The English article opens by saying the armistice \"brought about a cessation of hostilities of the Korean War\", signed on 27 July 1953 by the United Nations Command, the Korean People's Army and the Chinese People's Volunteer Army, and designed to ensure a complete cessation of hostilities \"until a final peaceful settlement is achieved\". This is the atlas's existing shape for a war and the instrument that ends it, as `spanish-american-war-1898 --caused--> treaty-of-paris-1898` already is.",
+  "explanation": "The English article opens by saying the armistice \"brought about a cessation of hostilities of the Korean War\". The United Nations Command, the Korean People's Army and the Chinese People's Volunteer Army signed it on 27 July 1953 to ensure a complete cessation of hostilities \"until a final peaceful settlement is achieved\". The atlas already runs this kind of edge from a war to the instrument that ends it, as `spanish-american-war-1898--treaty-of-paris-1898--caused` does.",
   "dispute": null
 }

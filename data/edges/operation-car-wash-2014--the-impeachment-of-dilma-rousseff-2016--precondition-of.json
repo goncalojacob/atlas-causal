@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant",
     "run": "m57"
@@ -38,6 +38,6 @@
   "to": "the-impeachment-of-dilma-rousseff-2016",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The petition accused the president of criminal responsibility for failing to act on the scandal at Petrobras that Car Wash had uncovered, and for failing to distance herself from those under investigation; she had chaired the Petrobras board during the period investigated. The Petrobras charges were finally left out of the trial, on the prosecutor-general’s argument that a sitting president could not be investigated for acts before election — which is why this is `precondition-of` and not `caused`: the inquiry set the terms of the crisis without supplying the article she was tried under.",
+  "explanation": "The petition accused the president of criminal responsibility for failing to act on the scandal at Petrobras that Car Wash had uncovered, and for failing to distance herself from those under investigation. She had chaired the Petrobras board during the period investigated. The trial finally left the Petrobras charges out, on the prosecutor-general's argument that nobody could investigate a sitting president for acts before election. So the type is `precondition-of`. The inquiry set the terms of the crisis without supplying the article she was tried under.",
   "dispute": null
 }

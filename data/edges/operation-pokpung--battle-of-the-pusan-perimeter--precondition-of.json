@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-the-pusan-perimeter",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The same lead says where the invasion ended: heavy losses \"were inflicted on the DPRK's II Corps by the ROK's 6th Infantry Division, stalling the DPRK's advance in the east, ceasing the blitzkrieg at the Battle of the Pusan Perimeter.\" The perimeter battle is the invasion's advance being stopped, so the invasion is what there was to stop. Precondition-of and not caused: the article states that the operation ran into the perimeter, not that it ordered the perimeter defence. Probable: Wikipedia alone.",
+  "explanation": "The same lead says where the invasion ended. Heavy losses \"were inflicted on the DPRK's II Corps by the ROK's 6th Infantry Division, stalling the DPRK's advance in the east, ceasing the blitzkrieg at the Battle of the Pusan Perimeter.\" The perimeter battle is the invasion's advance being stopped, so the invasion is what there was to stop. The type is `precondition-of`, because the article says the operation ran into the perimeter and does not say it ordered the perimeter defence. The confidence is probable, on Wikipedia alone.",
   "dispute": null
 }

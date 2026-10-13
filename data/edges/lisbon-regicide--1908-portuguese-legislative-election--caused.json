@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -37,6 +37,6 @@
   "to": "1908-portuguese-legislative-election",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "João Franco’s government fell within days of the killing, and with it the rule by decree that had suspended parliament since May 1907. The election of 5 April 1908 was the instrument by which the new king’s ministers returned the country to constitutional forms. Without the regicide there is no reason to think the country would have been consulted at all: Franco had dissolved the Chamber precisely in order not to consult it.",
+  "explanation": "João Franco's government fell within days of the killing, and with it the rule by decree that had suspended parliament since May 1907. The new king's ministers used the election of 5 April 1908 to return the country to constitutional forms. Without the regicide the country would probably not have been consulted at all. Franco had dissolved the Chamber in order to avoid consulting it.",
   "dispute": null
 }
