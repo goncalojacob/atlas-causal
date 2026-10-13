@@ -174,7 +174,7 @@
       ]
     },
     "import": {
-      "updated": "2026-10-12",
+      "updated": "2026-10-13",
       "pending": [],
       "done": [
         "Q64",
@@ -857,7 +857,6 @@
         "Q184183",
         "Q211674",
         "Q134949",
-        "Q8683",
         "Q12199",
         "Q182814",
         "Q83085",
@@ -2211,7 +2210,17 @@
         "Q135450775",
         "Q959093",
         "Q2985554",
-        "Q1752743"
+        "Q1752743",
+        "Q133641",
+        "Q12562",
+        "Q214078",
+        "Q12539",
+        "Q8683",
+        "Q228911",
+        "Q191293",
+        "Q184963",
+        "Q3237019",
+        "Q2477522"
       ]
     }
   },
@@ -2462,6 +2471,18 @@
     },
     "Q140468184": {
       "on": "2026-10-02",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q133641": {
+      "on": "2026-10-13",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q12562": {
+      "on": "2026-10-13",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q12539": {
+      "on": "2026-10-13",
       "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
     }
   }

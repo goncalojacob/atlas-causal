@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "cold-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q8683",
+  "sitelinks": {
+    "count": 184,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Cold War",
+    "pt": "Guerra Fria"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8683"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cold War\", revision 1379050893"
+    }
+  ],
+  "title": "Cold War",
+  "summary": "The English Wikipedia article \"Cold War\", at revision 1379050893, opens: \"The Cold War was a period of international geopolitical rivalry between the United States (US) and the Soviet Union (USSR) and their respective allies, the capitalist Western Bloc and communist Eastern Bloc. It began in the aftermath of the Second World War and ended with the dissolution of the Soviet Union in 1991. The term cold war is used because there was no direct fighting between the two superpowers, though each supported opposing sides in regional conflicts known as proxy wars. In addition to the struggle for ideological and economic influence and an arms race in both conventional and nuclear weapons, the Cold War was expressed through technological rivalries such as the Space Race, espionage, propaganda campaigns, embargoes, and sports diplomacy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q8683, imported by tools/import/wikidata.mjs. The item's own description reads \"1947–1991 tension between the Soviet Union and the United States and their respective allies\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1945,
+    "end": 1991,
+    "endDate": "1991-12-25"
+  },
+  "place": "latin-america",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}
