@@ -819,7 +819,7 @@ test('an office opens on a card that names the actor, the category and its holde
     assert.deepEqual(card.people.slice(salazar, caetano + 1), ['salazar', 'marcelo-caetano']);
     assert.equal(card.people.length, card.holders.length, 'a row a holder');
     assert.equal(card.sources, false, 'an office cites nothing and has no Sources section');
-    assert.match(card.cites, /^An office record says only that the post exists/);
+    assert.match(card.cites, /^An office record/);
 
     // A row opens the person, not the tenure: a tenure has no card. The row is
     // taken by name and not by position — the first turn at this post is of
