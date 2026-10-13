@@ -11901,6 +11901,15 @@
         }
       ]
     },
+    "western-europe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "white-plains-new-york": {
       "from": "git",
       "versions": [

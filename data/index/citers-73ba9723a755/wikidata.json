@@ -2672,6 +2672,18 @@
     },
     {
       "dissent": false,
+      "id": "age-of-discovery",
+      "kind": "event",
+      "locator": "Q133641"
+    },
+    {
+      "dissent": false,
+      "id": "age-of-enlightenment",
+      "kind": "event",
+      "locator": "Q12539"
+    },
+    {
+      "dissent": false,
       "id": "algerian-war",
       "kind": "event",
       "locator": "Q200790"
@@ -9206,6 +9218,12 @@
     },
     {
       "dissent": false,
+      "id": "reformation",
+      "kind": "event",
+      "locator": "Q12562"
+    },
+    {
+      "dissent": false,
       "id": "reign-of-terror",
       "kind": "event",
       "locator": "Q193547"
@@ -11483,6 +11501,12 @@
       "id": "war-of-the-third-coalition",
       "kind": "event",
       "locator": "Q249232"
+    },
+    {
+      "dissent": false,
+      "id": "war-on-terror",
+      "kind": "event",
+      "locator": "Q185729"
     },
     {
       "dissent": false,

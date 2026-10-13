@@ -11042,6 +11042,18 @@
     },
     {
       "dissent": false,
+      "id": "age-of-discovery",
+      "kind": "event",
+      "locator": "\"Age of Discovery\", revision 1379863062"
+    },
+    {
+      "dissent": false,
+      "id": "age-of-enlightenment",
+      "kind": "event",
+      "locator": "\"Age of Enlightenment\", revision 1379866058"
+    },
+    {
+      "dissent": false,
       "id": "algerian-war",
       "kind": "event",
       "locator": "\"Algerian War\", revision 1373081356"
@@ -17438,6 +17450,12 @@
     },
     {
       "dissent": false,
+      "id": "reformation",
+      "kind": "event",
+      "locator": "\"Reformation\", revision 1379628507"
+    },
+    {
+      "dissent": false,
       "id": "reign-of-terror",
       "kind": "event",
       "locator": "\"Reign of Terror\", revision 1375254240"
@@ -19769,6 +19787,12 @@
       "id": "war-of-the-third-coalition",
       "kind": "event",
       "locator": "\"War of the Third Coalition\", revision 1370750237"
+    },
+    {
+      "dissent": false,
+      "id": "war-on-terror",
+      "kind": "event",
+      "locator": "\"War on terror\", revision 1379084421"
     },
     {
       "dissent": false,

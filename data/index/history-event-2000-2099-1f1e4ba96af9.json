@@ -8244,6 +8244,15 @@
         }
       ]
     },
+    "war-on-terror": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "western-african-ebola-virus-epidemic": {
       "from": "git",
       "versions": [
