@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-fort-royal",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "Fort Royal's article names the war it belongs to rather than the American one: \"a naval battle fought off Fort Royal, Martinique in the West Indies during the Anglo-French War on 29 April 1781, between fleets of the British Royal Navy and the French Navy.\" Enabled: the Anglo-French war is what put two fleets off Martinique.",
+  "explanation": "Fort Royal's article names the war it belongs to rather than the American one: \"a naval battle fought off Fort Royal, Martinique in the West Indies during the Anglo-French War on 29 April 1781, between fleets of the British Royal Navy and the French Navy.\" The type is enabled, because the Anglo-French war is what put two fleets off Martinique.",
   "dispute": null
 }

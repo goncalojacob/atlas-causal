@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-30",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -38,6 +38,6 @@
   "to": "battle-of-cowpens",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "Cowpens was fought the way it was because of what the militia had done at Camden, and both articles state that as a cause and not as a sequence. The Camden article, at revision 1376333498, says what followed from the defeat: “Following the battle, Morgan revised the southern army’s use of militia and won a decisive victory at the Battle of Cowpens on January 17, 1781.” The Cowpens article, at revision 1376280446, names the failure being answered and the answer: “the Battle of Camden had ended in disaster when the militia, which comprised half of the American force, broke and ran as soon as the fighting started, leaving the American flank exposed. To eliminate that possibility, he defied convention by placing his army between the Broad and Pacolet rivers.” “To eliminate that possibility” is why this is `reacted-to` rather than chronology: the same article’s “Coming in the wake of the American defeat at Camden, Cowpens was a surprising victory” states only an order of events and is refused under A15 (5). Read in the atlas’s direction, `A reacted-to B` says B answered A. `probable`, on the two articles alone (rule 22).",
+  "explanation": "Cowpens was fought the way it was because of what the militia had done at Camden, and both articles state that as a cause rather than as an order of events. The Camden article, at revision 1376333498, says what followed from the defeat: “Following the battle, Morgan revised the southern army’s use of militia and won a decisive victory at the Battle of Cowpens on January 17, 1781.” The Cowpens article, at revision 1376280446, names the failure being answered and the answer: “the Battle of Camden had ended in disaster when the militia, which comprised half of the American force, broke and ran as soon as the fighting started, leaving the American flank exposed. To eliminate that possibility, he defied convention by placing his army between the Broad and Pacolet rivers.” “To eliminate that possibility” is why the type is `reacted-to`. The same article’s “Coming in the wake of the American defeat at Camden, Cowpens was a surprising victory” states only an order of events and is refused under A15 (5). Read in the atlas’s direction, `A reacted-to B` says B answered A. The confidence is `probable`, on the two articles alone (rule 22).",
   "dispute": null
 }

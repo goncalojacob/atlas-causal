@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "second-italo-ethiopian-war",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "Read in this direction the edge says that the second war answered the first war's defeat. Adwa's own article, in § Significance, carries two historians saying so: Tripodi, that \"some of the roots of the rise of Fascism in Italy went back to this defeat and to the perceived need to 'avenge' the defeat\"; Levine, that Adwa \"became a national trauma which demagogic leaders strove to avenge. It also played no little part in motivating Italy's revanchist adventure in 1935\" — and Mussolini's own words on taking Addis Ababa in May 1936, \"Adua è vendicata\". The Second War's article agrees from the other side, calling Adwa, taken on 6 October 1935, \"a symbolic place for the Italian army as it was the site of their defeat\". `reacted-to` and not `caused`: what the articles argue is a motive forty years later, not a chain of events, and this atlas already holds the war-to-war link as `first-italo-ethiopian-war --precondition-of--> second-italo-ethiopian-war`. `probable` because both sources are Wikipedia (rule 22).",
+  "explanation": "Read in this direction the edge says that the second war answered the first war's defeat. Adwa's own article, in § Significance, carries two historians saying so. Tripodi writes that \"some of the roots of the rise of Fascism in Italy went back to this defeat and to the perceived need to 'avenge' the defeat\". Levine writes that Adwa \"became a national trauma which demagogic leaders strove to avenge. It also played no little part in motivating Italy's revanchist adventure in 1935\". The same section carries Mussolini's own words on taking Addis Ababa in May 1936, \"Adua è vendicata\". The Second War's article agrees from the other side, calling Adwa, taken on 6 October 1935, \"a symbolic place for the Italian army as it was the site of their defeat\". The type is `reacted-to` rather than `caused`. What the articles argue is a motive forty years later and not a chain of events, and this atlas already holds the war-to-war link, `precondition-of` from `first-italo-ethiopian-war` to `second-italo-ethiopian-war`. The confidence is `probable`, because both sources are Wikipedia (rule 22).",
   "dispute": null
 }

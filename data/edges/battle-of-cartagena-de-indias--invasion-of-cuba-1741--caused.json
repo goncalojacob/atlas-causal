@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "invasion-of-cuba-1741",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The Cuba article makes the defeat at Cartagena the reason for the invasion, in one sentence: \"Vernon had made an unsuccessful attempt to capture Cartagena in 1741, and after his repulse he directed the fragments of his sickly and dispirited followers against the island of Cuba.\" The same section says the force was the same force: \"The land forces consisted of the remnants of the troops from Cartagena, some 3,000 British and American troops\". `caused`: the article does not merely date one after the other, it says the repulse is what sent Vernon to Cuba and what the army he landed was made of. Probable, and with a second author: the sentence is cited there to Pares, War and Trade in the West Indies, pp. 91-92.",
+  "explanation": "The Cuba article makes the defeat at Cartagena the reason for the invasion, in one sentence: \"Vernon had made an unsuccessful attempt to capture Cartagena in 1741, and after his repulse he directed the fragments of his sickly and dispirited followers against the island of Cuba.\" The same section says the force was the same force: \"The land forces consisted of the remnants of the troops from Cartagena, some 3,000 British and American troops\". The type is `caused`. The article does more than date one after the other. It says the repulse is what sent Vernon to Cuba, and what the army he landed was made of. The confidence is probable, with a second author. Wikipedia cites the sentence there to Pares, War and Trade in the West Indies, pp. 91-92.",
   "dispute": null
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-02",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -31,7 +31,7 @@
   "to": "world-war-i",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Same claim, made of the second crisis and with the mechanism named. “Agadir Crisis”, at revision 1376783721, § Aftermath: “British backing of France during the crisis reinforced the Entente between the two countries (and with Russia as well), increasing Anglo-German estrangement, deepening the divisions which would culminate in the First World War.” The same section quotes Raymond James Sontag, 1933, on what the crisis left behind: “Tensions between France and Germany and between Germany and England have been increased; the armaments race received new impetus; the conviction that an early war was inevitable spread through the governing class of Europe.” `precondition-of`, for the reason the sister edge carries: the divisions are what the article says culminated in the war. `probable` under rule 22.",
+  "explanation": "The second crisis carries the same claim, with the mechanism named. “Agadir Crisis”, at revision 1376783721, § Aftermath: “British backing of France during the crisis reinforced the Entente between the two countries (and with Russia as well), increasing Anglo-German estrangement, deepening the divisions which would culminate in the First World War.” The same section quotes Raymond James Sontag, 1933, on what the crisis left behind: “Tensions between France and Germany and between Germany and England have been increased; the armaments race received new impetus; the conviction that an early war was inevitable spread through the governing class of Europe.” The type is `precondition-of`, for the reason the sister edge carries: the article says the divisions culminated in the war. The confidence is `probable` under rule 22.",
   "dispute": null,
   "origin": {
     "tool": "assistant"

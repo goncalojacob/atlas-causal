@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "battle-of-port-louis",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The February article closes on exactly this link: \"In the Indian Ocean theatre the loss of Prudente was compounded a few weeks later by the capture of Forte at the action of 28 February 1799, which left Sercey with a shortage of available warships. At the action of 11 December 1799 his last frigate, Preneuse, was intercepted and destroyed off Île de France.\" The Port Louis article says the same from its own side — \"the squadron dispersed in 1798 and by the summer of 1799 Preneuse was the only significant French warship remaining in the region\" — and it is that solitude, not any order given in February, that put one frigate against a blockading ship of the line. Precondition-of: a stated reduction in force, not a cause of the December action.",
+  "explanation": "The February article closes on exactly this link: \"In the Indian Ocean theatre the loss of Prudente was compounded a few weeks later by the capture of Forte at the action of 28 February 1799, which left Sercey with a shortage of available warships. At the action of 11 December 1799 his last frigate, Preneuse, was intercepted and destroyed off Île de France.\" The Port Louis article says the same from its own side: \"the squadron dispersed in 1798 and by the summer of 1799 Preneuse was the only significant French warship remaining in the region\". That solitude is what put one frigate against a blockading ship of the line, and no order given in February did it. The type is `precondition-of`, because what the articles state is a reduction in force. Neither of them argues a cause of the December action.",
   "dispute": null
 }

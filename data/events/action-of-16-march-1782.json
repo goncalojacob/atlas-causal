@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "wikidata"
   },
@@ -54,7 +54,7 @@
   },
   "place": "strait-of-gibraltar",
   "region": "africa",
-  "regionNote": "A15 (7): the lane is the event's own point, 5.97W 35.87N, “off Cape Spartel, Morocco” in the article's words. Its place is the Strait of Gibraltar, whose point is 20 km north and derives `europe`; a strait between two continents cannot answer which lane an action in it is in.",
+  "regionNote": "A15 (7): the lane is the event's own point, 5.97W 35.87N, “off Cape Spartel, Morocco” in the article's words. Its place is the Strait of Gibraltar, whose point is 20 km north and gives `europe`. A strait between two continents cannot answer which lane an action in it is in.",
   "category": "war",
   "actors": [],
   "parent": "american-revolutionary-war"

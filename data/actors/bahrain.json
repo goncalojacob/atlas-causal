@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -51,7 +51,7 @@
   "names": [
     "Bahrain"
   ],
-  "summary": "Approximately 787 km² and about 1.6 million people (2023), from Wikidata's Q398 (P2046, P1082). The English Wikipedia article \"Bahrain\", at revision 1376052088, opens: \"Bahrain, officially the Kingdom of Bahrain, is an island country in the eastern part of Arabian Peninsula in West Asia. Situated near the western shore of the Persian Gulf, the country comprises a small archipelago of 33 natural islands and an additional 50 artificial islands, centered on Bahrain Island, which makes up around 80 percent of the country's landmass. Bahrain is situated between Qatar and the northeastern coast of Saudi Arabia, to which it is connected by the King Fahd Causeway.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 692 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1971 to where the dataset stops, in 2019. Its last capital in the dataset is Manama. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 787 km² and about 1.6 million people (2023), from Wikidata's Q398 (P2046, P1082). The English Wikipedia article \"Bahrain\", at revision 1376052088, opens: \"Bahrain, officially the Kingdom of Bahrain, is an island country in the eastern part of Arabian Peninsula in West Asia. Situated near the western shore of the Persian Gulf, the country comprises a small archipelago of 33 natural islands and an additional 50 artificial islands, centered on Bahrain Island, which makes up around 80 percent of the country's landmass. Bahrain is situated between Qatar and the northeastern coast of Saudi Arabia, to which it is connected by the King Fahd Causeway.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 692 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1971 to where the dataset stops, in 2019. Its last capital in the dataset is Manama. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1971,
     "end": null
