@@ -25738,6 +25738,9 @@ among them `summary-missing`, `parent-cycle` and `edge-cycle` as refusal codes).
 
 M90 done
 
+Writer B started 2026-10-12T17:42:21Z
+Writer B started 2026-10-12T19:42:28Z
+
 Writer A started 2026-10-12T16:22:36Z by scheduled
 
 Writer A started 2026-10-12T18:22:40Z by scheduled
@@ -25745,6 +25748,9 @@ Writer A started 2026-10-12T18:22:40Z by scheduled
 Writer A 2026-10-12T18:26:05Z: 3 written, 0 partial, 0 refused, 0 skipped
 
 Writer A started 2026-10-12T19:22:41Z by scheduled
+
+Writer B started 2026-10-12T21:42:35Z
+Writer B started 2026-10-12T23:42:08Z
 
 Writer A started 2026-10-12T21:22:13Z by scheduled
 
@@ -25798,3 +25804,6 @@ Rewriter 2026-10-13T02:10:23Z: 351 records rewritten, 49 left, 1239 of 4940 done
 Writer A started 2026-10-13T02:21:51Z by scheduled
 
 Writer A 2026-10-13T02:27:46Z: 7 written, 0 partial, 3 refused, 0 skipped
+Writer B started 2026-10-13T02:42:36Z by scheduled
+
+Writer B 2026-10-13T02:47:00Z: 9 written, 1 partial, 0 refused, 0 skipped

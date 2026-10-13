@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "southern-united-states",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q49042",
+  "sitelinks": {
+    "count": 61,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Southern United States",
+    "pt": "Região Sul (Estados Unidos)"
+  },
+  "sources": [],
+  "names": [
+    "Southern United States",
+    "Região Sul",
+    "Região Sul (Estados Unidos)"
+  ],
+  "where": {
+    "lon": -89.5,
+    "lat": 33.9,
+    "precision": "region",
+    "label": "Southern United States"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "war-of-the-pacific",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q152004",
+  "sitelinks": {
+    "count": 65,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "War of the Pacific",
+    "pt": "Guerra do Pacífico (1879–1884)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q152004"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Pacific\", revision 1379026750"
+    }
+  ],
+  "title": "War of the Pacific",
+  "summary": "The English Wikipedia article \"War of the Pacific\", at revision 1379026750, opens: \"The War of the Pacific, also known by multiple other names, was a war between Chile and a Bolivian–Peruvian alliance from 1879 to 1884. Fought over Chilean claims on coastal Bolivian territory in the Atacama Desert, the war ended with victory for Chile, which gained a significant amount of resource-rich territory from Peru and Bolivia. The war demonstrated Chile's military-technological superiority over its opponents at the time.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q152004, imported by tools/import/wikidata.mjs. The item's own description reads \"war between Chile and a Bolivian–Peruvian alliance\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1884,
+    "date": "1879-04-05",
+    "endDate": "1884-04-04"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

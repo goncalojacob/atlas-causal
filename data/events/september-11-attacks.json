@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "september-11-attacks",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q10806",
+  "sitelinks": {
+    "count": 151,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "September 11 attacks",
+    "pt": "Ataques de 11 de setembro de 2001"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10806"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"September 11 attacks\", revision 1379360542"
+    }
+  ],
+  "title": "September 11 attacks",
+  "summary": "The English Wikipedia article \"September 11 attacks\", at revision 1379360542, opens: \"The September 11 attacks, colloquially known as 9/11, were a coordinated series of suicide attacks perpetrated by the Islamic terrorist organization al-Qaeda against the United States in 2001. A total of 19 hijackers commandeered four commercial passenger airliners. The first two planes were flown into each of the Twin Towers at the World Trade Center in New York City, while the third plane crashed into the Pentagon, the headquarters of the United States Department of Defense, in Arlington County, Virginia. The fourth plane crashed in a rural field in Pennsylvania during a passenger revolt.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10806, imported by tools/import/wikidata.mjs. The item's own description reads \"2001 attacks in the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2001,
+    "end": 2001,
+    "date": "2001-09-11"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "death",
+  "actors": []
+}
