@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -33,6 +33,6 @@
   "to": "covid-19-pandemic-in-europe",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The European epidemic is the same epidemic: the first confirmed cases on the continent, in France on 24 January 2020, were travellers from Wuhan, and the northern Italian cluster of February is what turned importation into transmission across the continent. The atlas keeps the two as separate events because the Portuguese chain runs through the European one and not through the Chinese one — what closed Portugal in March 2020 was an epidemic already inside Europe and inside Spain.",
+  "explanation": "The European epidemic is the same epidemic. The first confirmed cases on the continent, in France on 24 January 2020, were travellers from Wuhan, and the northern Italian cluster of February is what turned arrivals into transmission across the continent. The atlas keeps the two as separate events because the Portuguese chain runs through the European one. What closed Portugal in March 2020 was an epidemic already inside Europe and inside Spain.",
   "dispute": null
 }

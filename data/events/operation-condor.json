@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "operation-condor",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q156017",
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Operation Condor",
+    "pt": "Operação Condor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q156017"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Operation Condor\", revision 1379847021"
+    }
+  ],
+  "title": "Operation Condor",
+  "summary": "The English Wikipedia article \"Operation Condor\", at revision 1379847021, opens: \"Operation Condor was a campaign of political repression by the right-wing dictatorships of the Southern Cone of South America, involving intelligence operations, coups, and assassinations of left-wing sympathizers in South America. Operation Condor formally existed from 1975 to 1983. Condor was formally created in November 1975, when Chilean dictator Augusto Pinochet's spy chief, Manuel Contreras, invited 50 intelligence officers from Argentina, Brazil, Bolivia, Chile, Paraguay, and Uruguay to the Army War Academy in Santiago, Chile. The operation was backed by the United States, which financed the covert operations. France is alleged to have collaborated but has denied involvement. The operation ended with the fall of the Argentine junta in 1983.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q156017, imported by tools/import/wikidata.mjs. The item's own description reads \"series of anti-communist, anti-dissent campaigns in South America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1975,
+    "end": 1989,
+    "date": "1975-11-25"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

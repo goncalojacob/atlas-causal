@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -37,6 +37,6 @@
   "to": "1911-portuguese-presidential-election",
   "type": "enabled",
   "confidence": "consensus",
-  "explanation": "The constitution created the presidency and laid down how it was to be filled: by the Congress of the Republic meeting in Lisbon, not by the electorate. The election of 24 August 1911 was held three days after promulgation and under those articles; there was no such office to fill before them.",
+  "explanation": "The constitution created the presidency and said who would fill it. The Congress of the Republic, meeting in Lisbon, would elect the president, and the voters would not. The election of 24 August 1911 came three days after promulgation and followed those articles. Before them there was no such office to fill.",
   "dispute": null
 }
