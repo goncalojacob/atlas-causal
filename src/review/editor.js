@@ -86,10 +86,10 @@ export function identityBlock(record) {
     list.appendChild(row);
   }
   if (count !== null) {
-    list.appendChild(html('li', { class: 'muted' }, `${count} language edition${count === 1 ? '' : 's'} have an article`));
+    list.appendChild(html('li', { class: 'muted' }, `Wikipedia has an article in ${count} language${count === 1 ? '' : 's'}`));
   }
   wrap.appendChild(list);
-  wrap.appendChild(html('p', { class: 'hint' }, 'Read-only: written by the Wikidata import, and corrected there rather than here.'));
+  wrap.appendChild(html('p', { class: 'hint' }, 'Read-only. The Wikidata import wrote these fields, so correct them on Wikidata.'));
   return wrap;
 }
 
@@ -153,7 +153,7 @@ export function createEditor({
       value,
       label,
       id: domId,
-      emptyLabel: name === 'places' ? 'no place: timeline only' : 'nothing chosen yet',
+      emptyLabel: name === 'places' ? 'no place, shown on the timeline only' : 'nothing chosen yet',
       onChange: chose,
     });
     drawn.push(picker);
@@ -343,14 +343,14 @@ export function createEditor({
       placeholder: 'role: leader, signatory, deposed',
       extraKey: 'note', extraPlaceholder: 'note: what the role cannot say',
       choices: roleChoices(topology),
-      hint: 'The actors of this event and what each did in it — not everyone alive at the time. The role comes from the atlas\'s list; the note beside it is the reviewer\'s own.',
+      hint: 'The actors who took part in this event and what each did in it. Choose the role from the atlas\'s list. The note beside it is the reviewer\'s own.',
     }));
   }
   for (const list of STEP_LISTS[kind]) {
     root.appendChild(renderList(list, {
       optionsName: 'records', refKey: 'ref', textKey: 'text', label: `${list.label} *`,
       placeholder: 'why this step follows', ordered: true,
-      hint: 'At least two, in the order they are read — ↑ and ↓ move a step, and so does Alt with an arrow from anywhere in the row. The records walked are not changed by walking them.',
+      hint: 'At least two steps, in reading order. The ↑ and ↓ buttons move a step. Alt with an arrow key does the same from anywhere in the row. The narrative does not change the records it walks through.',
     }));
   }
   for (const list of CITATION_LISTS[kind]) {
@@ -385,8 +385,8 @@ export function createEditor({
     verifyBox.hidden = rows.length === 0;
     const open = rows.filter((row) => row.verified === null).length;
     verifyNote.textContent = open === 0
-      ? 'Every source this record names has been opened and checked.'
-      : `${open} of ${rows.length} not opened yet. Sign warns about them; it does not stop you.`;
+      ? 'Every source this record names has a tick: someone opened it and checked it.'
+      : `${open} of ${rows.length} not opened yet. Sign warns you about them but still lets you sign.`;
     for (const row of rows) {
       const item = html('li', { class: `verify-row${row.verified ? ' done' : ''}` });
       const box = html('input', { type: 'checkbox', id: uid(`verify-${row.source}`) });
