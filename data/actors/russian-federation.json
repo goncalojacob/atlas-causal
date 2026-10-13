@@ -19,7 +19,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -53,7 +53,7 @@
   "names": [
     "Russia"
   ],
-  "summary": "Approximately 17,075,400 km² and about 146.1 million people (2025), from Wikidata's Q159 (P2046, P1082). The English Wikipedia article \"Russia\", at revision 1375974488, opens: \"Russia, or the Russian Federation, is a country in Eastern Europe and North Asia. It is the largest country in the world, spanning eleven time zones and sharing land borders with fourteen countries. With a population of over 140 million, Russia is the most populous country in Europe and the ninth-most populous in the world.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 365 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives entity 365 twenty-four periods of territorial validity under one label, \"Russia (Soviet Union)\", which covers three polities; M52 gave the first three to `russian-empire` and the next nineteen to `soviet-union`, and this record holds the last two, from 1991-12-21. Its last capital in the dataset is Moscow. It begins on that day because that is where CShapes’ own first post-Soviet period begins, and not because any source here says a state was founded then: what this record’s inception is stays an open question, and docs/m52-russia.md says what a person has to decide.",
+  "summary": "Approximately 17,075,400 km² and about 146.1 million people (2025), from Wikidata's Q159 (P2046, P1082). The English Wikipedia article \"Russia\", at revision 1375974488, opens: \"Russia, or the Russian Federation, is a country in Eastern Europe and North Asia. It is the largest country in the world, spanning eleven time zones and sharing land borders with fourteen countries. With a population of over 140 million, Russia is the most populous country in Europe and the ninth-most populous in the world.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 365 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives entity 365 twenty-four periods of territorial validity under one label, \"Russia (Soviet Union)\", which covers three polities. M52 gave the first three to `russian-empire` and the next nineteen to `soviet-union`, and this record holds the last two, from 1991-12-21. Its last capital in the dataset is Moscow. It begins on that day because that is where CShapes’ own first post-Soviet period begins, and not because any source here says a state was founded then. What this record’s inception is stays an open question, and docs/m52-russia.md says what a person has to decide.",
   "when": {
     "start": 1991,
     "end": null

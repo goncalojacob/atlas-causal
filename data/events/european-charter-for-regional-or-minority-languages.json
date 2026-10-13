@@ -13,13 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-24",
+  "revised": "2026-10-13",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
     "on": "2026-09-24",
-    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. The atlas holds no record of Mirandese, of the law that recognised it, or of any act under the Council of Europe except membership, and the world corpus has added no minority-language record either. Under the new bar it still reaches nothing."
+    "reason": "Read again on 24 September under review A14 (6), against the bar that replaced M44b’s. A record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, and no longer the Portuguese core M44b judged this against. The atlas holds no record of Mirandese, of the law that recognised it, or of any act under the Council of Europe except membership, and the world corpus has added no minority-language record either. Under the new bar it still reaches nothing."
   },
   "review": {
     "flags": [
@@ -51,7 +51,7 @@
   },
   "place": null,
   "region": "europe",
-  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane, named for this item in data/imports/wikidata-seeds.json. This event points at no place record, so the timeline has nothing else to go on.",
   "category": "treaty",
   "actors": []
 }

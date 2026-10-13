@@ -463,6 +463,128 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-013",
+      "writer": "A",
+      "fired": "2026-10-13T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "great-game",
+        "edges": [],
+        "place": "central-asia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-014",
+      "writer": "A",
+      "fired": "2026-10-13T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "persian-constitutional-revolution",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-015",
+      "writer": "A",
+      "fired": "2026-10-13T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "first-opium-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-016",
+      "writer": "A",
+      "fired": "2026-10-13T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "taiping-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-017",
+      "writer": "A",
+      "fired": "2026-10-13T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "second-opium-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-018",
+      "writer": "A",
+      "fired": "2026-10-13T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "meiji-restoration",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-019",
+      "writer": "A",
+      "fired": "2026-10-13T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "1931-china-floods",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-020",
+      "writer": "A",
+      "fired": "2026-10-13T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "nanjing-massacre",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-021",
+      "writer": "A",
+      "fired": "2026-10-13T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "great-leap-forward",
+        "edges": [
+          "great-leap-forward--cultural-revolution--caused"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-022",
+      "writer": "A",
+      "fired": "2026-10-13T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "1976-tangshan-earthquake",
+        "edges": [],
+        "place": "tangshan"
+      },
+      "refusals": []
     }
   ]
 }

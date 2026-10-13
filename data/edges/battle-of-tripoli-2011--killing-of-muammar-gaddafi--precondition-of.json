@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "killing-of-muammar-gaddafi",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The killing's article opens its account of what happened with the fall of the capital: \"After the fall of Tripoli to forces of the opposition NTC in August 2011, Gaddafi and his family escaped the Libyan capital... In fact, Gaddafi had fled in a small convoy to Sirte on the day Tripoli fell\", and it was at Sirte, two months later, that he was caught and killed. The Tripoli article says the same thing from its own end: the battle was the National Transitional Council \"attempting to overthrow Gaddafi and take control of the capital\". `precondition-of` and not `caused`: losing the capital is what put him in the town where he died, and the article argues no more than that. `probable` because both citations are Wikipedia (rule 22).",
+  "explanation": "The killing's article opens its account of what happened with the fall of the capital: \"After the fall of Tripoli to forces of the opposition NTC in August 2011, Gaddafi and his family escaped the Libyan capital... In fact, Gaddafi had fled in a small convoy to Sirte on the day Tripoli fell\", and it was at Sirte, two months later, that he was caught and killed. The Tripoli article says the same thing from its own end: the battle was the National Transitional Council \"attempting to overthrow Gaddafi and take control of the capital\". The type is `precondition-of`. Losing the capital put him in the town where he died, and the article argues no more than that. `probable` because both citations are Wikipedia (rule 22).",
   "dispute": null
 }

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "tangshan",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q58422",
+  "sitelinks": {
+    "count": 66,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Tangshan",
+    "pt": "Tangshan"
+  },
+  "sources": [],
+  "names": [
+    "Tangshan"
+  ],
+  "where": {
+    "lon": 118.17388888888888,
+    "lat": 39.629444444444445,
+    "precision": "city",
+    "label": "Tangshan"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-30",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -38,6 +38,6 @@
   "to": "siege-of-boston",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "The siege was the answer to the day of 19 April. The Lexington article, at revision 1376384213, states what the militias did with the retreat rather than merely when: “The militias then blockaded the narrow land accesses to Charlestown and Boston, starting the siege of Boston.” The Boston article, at revision 1377282932, gives the response in its own words — “All of the New England colonies raised militias in response to this alarm and sent them to Boston” — and that “in response to” is why this is `reacted-to` and not chronology: the same article’s other sentence, “The siege began on April 19 after the Revolutionary War’s first battles at Lexington and Concord”, states only an order of events and is refused under A15 (5). Read in the atlas’s direction, `A reacted-to B` says B answered A, so the battles stand at the `from` end and the siege at the `to`. `probable`, on the two articles alone (rule 22).",
+  "explanation": "The siege was the answer to the day of 19 April. The Lexington article, at revision 1376384213, states what the militias did with the retreat rather than merely when: “The militias then blockaded the narrow land accesses to Charlestown and Boston, starting the siege of Boston.” The Boston article, at revision 1377282932, gives the response in its own words, “All of the New England colonies raised militias in response to this alarm and sent them to Boston”. That “in response to” is why the type is `reacted-to`. The same article’s other sentence, “The siege began on April 19 after the Revolutionary War’s first battles at Lexington and Concord”, states only an order of events, and review A15 (5) refuses it. Read in the atlas's direction, `A reacted-to B` says B answered A, so the battles stand at the `from` end and the siege at the `to`. `probable`, on the two articles alone (rule 22).",
   "dispute": null
 }

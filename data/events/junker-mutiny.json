@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-23",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -53,7 +53,7 @@
   },
   "place": "saint-petersburg",
   "region": "europe",
-  "regionNote": "Lane corrected in M42 batch 26: the import derived asia from the item’s country point, but the item’s own description says Petrograd and the parent record is in the europe lane. Only the lane was touched; no date was changed.",
+  "regionNote": "Batch 26 of M42 corrected this lane. The import derived asia from the item’s country point, and the item’s own description says Petrograd while the parent record is in the europe lane. That run touched only the lane and changed no date.",
   "parent": "october-revolution",
   "category": "revolution",
   "actors": []

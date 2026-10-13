@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "taiping-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q192408",
+  "sitelinks": {
+    "count": 66,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Taiping Rebellion",
+    "pt": "Rebelião Taiping"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q192408"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Taiping Rebellion\", revision 1379793931"
+    }
+  ],
+  "title": "Taiping Rebellion",
+  "summary": "The English Wikipedia article \"Taiping Rebellion\", at revision 1379793931, opens: \"The Taiping Rebellion (1850–1864) was a civil war in late imperial China fought between the ruling Qing dynasty and the rebelling Taiping Heavenly Kingdom. It was the deadliest civil war in history and the second-deadliest conflict in history overall. Estimates of the war's death toll range from 20–30 million, around 5–10% of the total Chinese population at the time, to 73–100 million, around 25% of the population. The Rebellion is widely considered to be the most important event in 19th-century Chinese history, and although the kingdom was defeated, the victory came at a great cost to the Qing dynasty's economy and political stability.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q192408, imported by tools/import/wikidata.mjs. The item's own description reads \"Qing Dynasty era rebellion (1851–1864)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1851,
+    "end": 1864,
+    "date": "1851-01-11",
+    "endDate": "1864-08"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

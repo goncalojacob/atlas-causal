@@ -1553,3 +1553,23 @@ The writer imported `war-of-the-pacific` from the planner's queue under the owne
 ## Writer B, 2026-10-13: `operation-condor`, bare
 
 Writer B imported it from the planner's queue as item `2026-10-13-americas-038`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-13: `persian-constitutional-revolution`, filed under `constitutionalization-attempts-in-iran` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-13-asia-014`, rank `vital-4`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-13: `first-opium-war`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-13-asia-015`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-13: `taiping-rebellion`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-13-asia-016`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-13: `1931-china-floods`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-13-asia-019`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-13: `nanjing-massacre`, filed under `second-sino-japanese-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-13-asia-020`, rank `vital-4`. Its span and its subject put it inside the umbrella.

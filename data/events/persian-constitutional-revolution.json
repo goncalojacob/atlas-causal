@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "persian-constitutional-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4818171",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Persian Constitutional Revolution"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4818171"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Persian Constitutional Revolution\", revision 1378517283"
+    }
+  ],
+  "title": "Persian Constitutional Revolution",
+  "summary": "The English Wikipedia article \"Persian Constitutional Revolution\", at revision 1378517283, opens: \"The Persian Constitutional Revolution, also known as the Constitutional Revolution of Iran, took place between 1905 and 1911 during the Qajar era. The revolution led to the establishment of a parliament in Iran (Persia), and has been called an \"epoch-making episode in the modern history of Persia\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4818171, imported by tools/import/wikidata.mjs. The item's own description reads \"a Revolution during the Constitutionalization attempts in Iran in 1906\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1905,
+    "end": 1911
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "constitutionalization-attempts-in-iran"
+}

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "siege-of-cusco-1781",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The same two sentences, on the same reading and with the same limit. The article names the capture among the first phase's key victories — **\"such as the capture of Ayaviri, the Battle of Pillpinto, and especially the Battle of Sangarará, which consolidated rebel control over the Cusco region\"** — and gives the march on Cusco as the move to hold the advantages gained: **\"Seeking to maintain the advantages gained at Quiquijana, Sangarará, and Lampa, he decided to anticipate the enemy and go on the offensive.\"** **Ayaviri is not among the three that second sentence names either.** Ayaviri's own article says what the town was taken for — \"part of Túpac Amaru II's plan to expand in the Lake Titicaca and possibly unite with the rebels in Charcas\" (revision 1370608267) — which is a plan and points south rather than at Cusco, and is quoted here rather than made into an edge of its own. `enabled` at `probable`, for the same reason as Pillpinto.",
+  "explanation": "This edge rests on the same two sentences as the Pillpinto edge, read the same way and with the same limit. The article names the capture among the first phase's victories, **\"such as the capture of Ayaviri, the Battle of Pillpinto, and especially the Battle of Sangarará, which consolidated rebel control over the Cusco region\"**. It gives the march on Cusco as the move to hold the advantages gained: **\"Seeking to maintain the advantages gained at Quiquijana, Sangarará, and Lampa, he decided to anticipate the enemy and go on the offensive.\"** **Ayaviri is not among the three that second sentence names either.** Ayaviri's own article says what the town was taken for, \"part of Túpac Amaru II's plan to expand in the Lake Titicaca and possibly unite with the rebels in Charcas\" (revision 1370608267). That plan points south rather than at Cusco, and it is quoted here rather than made into an edge of its own. The type is `enabled` at `probable`, for the same reason as Pillpinto.",
   "dispute": null
 }
