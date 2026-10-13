@@ -13,13 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-24",
+  "revised": "2026-10-13",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
     "on": "2026-09-24",
-    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. The treaty of 1967 still has one available neighbour here, the Charter, on the ground that it was negotiated in a United Nations committee, and that edge would be indistinguishable from the same edge on any other multilateral treaty. The world corpus has added no space record for it to reach. It stays retracted under the new bar."
+    "reason": "Re-read on 24 September under A14(6) against the rule that replaced M44b's. A record earns its place by carrying at least one honest edge to anything already in the atlas, and nobody writes an edge in order to keep a record. The corpus is now 859 active events across all five lanes, where M44b judged this one against the Portuguese core alone. The treaty of 1967 still has one neighbour available here, the Charter, on the ground that a United Nations committee negotiated it, and that edge would look the same drawn on any other multilateral treaty. The world corpus has added no space record for it to reach. It stays retracted under the new rule."
   },
   "review": {
     "flags": [
@@ -51,6 +51,6 @@
   },
   "place": null,
   "region": "europe",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
   "actors": []
 }

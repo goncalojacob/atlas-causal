@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": "2026-09-25",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -56,7 +56,7 @@
   },
   "place": "northern-america-and-mexico",
   "region": "americas",
-  "regionNote": "Lane written by the run over the import's: the import derived `europe` from P17 Q80702, the Spanish Empire, whose point is Madrid. The war was fought in Mexico, so the lane is where the event belongs.",
+  "regionNote": "This run wrote the lane over the import's. The import derived `europe` from P17 Q80702, the Spanish Empire, whose point is Madrid. The two sides fought in Mexico, so the lane follows the ground.",
   "parent": "spanish-american-wars-of-independence",
   "category": "war",
   "actors": []

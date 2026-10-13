@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "1919-portuguese-presidential-election",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The English article on the election says it in one sentence: \"Following Portugal's 1911 constitution, the Congress of the Republic must elect the president in Lisbon instead of the Portuguese people.\" The constitution is what put the choice in Congress rather than in an electorate, which is the fact this edge carries and the only one — who won, and why, is the record's own.",
+  "explanation": "The English article on the election says it in one sentence: \"Following Portugal's 1911 constitution, the Congress of the Republic must elect the president in Lisbon instead of the Portuguese people.\" The constitution is what put the choice in Congress rather than in an electorate. That is the one fact this edge carries. Who won, and why, belongs to the record itself.",
   "dispute": null
 }

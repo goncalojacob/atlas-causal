@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "covid-19-pandemic-in-chile",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The Chilean article says where the first cases came from: \"The virus was confirmed to have reached Chile on 3 March 2020. Initial cases had been imported from Southeast Asia and Europe, and expanded into a large number of untraceable infections.\" Caused, and partly: the article names Europe as one of two sources and this atlas holds only the European one. Probable: Wikipedia alone, and the article divides the origin between two continents.",
+  "explanation": "The Chilean article says where the first cases came from: \"The virus was confirmed to have reached Chile on 3 March 2020. Initial cases had been imported from Southeast Asia and Europe, and expanded into a large number of untraceable infections.\" The type is `caused`, and it covers part of the arrival. The article names Europe as one of two sources and this atlas holds only the European one. The confidence is `probable` because Wikipedia is the only source, and because the article divides the origin between two continents.",
   "dispute": null
 }

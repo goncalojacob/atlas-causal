@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant",
     "run": "m57"
@@ -38,6 +38,6 @@
   "to": "the-rubber-battle-1942",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Both sit inside the same agreement. The steelworks was created after the Washington Accords between the Brazilian and American governments, and it is under the Washington Accords that Brazil undertook to raise Amazon latex production from eighteen thousand to forty-five thousand tons a year. The accords are the instrument in which what Brazil supplied and what Brazil received were written on the same page, and the steel side of it came first.",
+  "explanation": "Both sit inside the same agreement. The steelworks came after the Washington Accords between the Brazilian and American governments, and under those accords Brazil undertook to raise Amazon latex production from eighteen thousand to forty-five thousand tons a year. The accords put what Brazil supplied and what Brazil received on the same page, and the steel side came first.",
   "dispute": null
 }

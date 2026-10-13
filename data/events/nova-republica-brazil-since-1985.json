@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -56,7 +56,7 @@
   },
   "place": null,
   "region": "americas",
-  "regionNote": "A republic has no single point on the map, so the lane is given rather than derived: Brazil’s.",
+  "regionNote": "A republic has no single point on the map, so this run gave the lane rather than deriving it. The lane is Brazil's.",
   "actors": [
     {
       "actor": "brazil",

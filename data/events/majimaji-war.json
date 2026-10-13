@@ -13,13 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-24",
+  "revised": "2026-10-13",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
     "on": "2026-09-24",
-    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. Africa is in the atlas now, 139 active events, and the rising’s own article, at revision 1370627418, opens its § Causes with \"After the Scramble for Africa among the major European powers in the 1880s, Germany reinforced its hold on several formal African colonies.\" That sentence names the scramble and not this rising, which is the chronology class this fire dropped nine A13 edges for, and scramble-for-africa is an umbrella, which batch 31a’s rule keeps off both ends of an edge. What it wants is to be filed under that umbrella — 1905 to 1907 is inside 1885 to 1914 — which is a filing and not an edge, and so not a reinstatement this pass may make."
+    "reason": "Re-read on 24 September under A14(6) against the rule that replaced M44b's. A record earns its place by carrying at least one honest edge to anything already in the atlas, and nobody writes an edge in order to keep a record. The corpus is now 859 active events across all five lanes, where M44b judged this one against the Portuguese core alone. Africa is in the atlas now, with 139 active events. The rising's own article, at revision 1370627418, opens its § Causes with \"After the Scramble for Africa among the major European powers in the 1880s, Germany reinforced its hold on several formal African colonies.\" That sentence names the scramble rather than this rising, which is the chronology class this fire dropped nine A13 edges for. scramble-for-africa is an umbrella, a record other records are filed under, and batch 31a's rule keeps an umbrella off both ends of an edge. What this record wants is a place under that umbrella, since 1905 to 1907 falls inside 1885 to 1914. That is a filing and not an edge, so this pass cannot reinstate the record on it."
   },
   "review": {
     "flags": [
@@ -52,6 +52,6 @@
   },
   "place": null,
   "region": "africa",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
   "actors": []
 }

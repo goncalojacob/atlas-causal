@@ -13,13 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-24",
+  "revised": "2026-10-13",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
     "on": "2026-09-24",
-    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. The second reason M44b gave stands and is not the Portuguese rule: what the item describes is twenty-two years of policy under several headings, not an event, and a record dated 1930 that runs to 1952 cannot take an edge that means anything at either end. The atlas now holds molotov-ribbentrop-pact and the Soviet records around it, so the neighbours exist; what does not exist is a record of a datable thing to wire them to. It would have to be divided before it could be reinstated, the way the Holocaust was divided this same day."
+    "reason": "Re-read on 24 September under A14(6) against the rule that replaced M44b's. A record earns its place by carrying at least one honest edge to anything already in the atlas, and nobody writes an edge in order to keep a record. The corpus is now 859 active events across all five lanes, where M44b judged this one against the Portuguese core alone. The second reason M44b gave stands, and it is not the Portuguese rule. The item describes twenty-two years of policy under several headings rather than an event, and a record dated 1930 that runs to 1952 cannot take an edge that means anything at either end. The atlas now holds molotov-ribbentrop-pact and the Soviet records around it, so the neighbours exist. What is missing is a record of a datable thing to wire them to. Somebody would have to divide this record before reinstating it, the way this same day divided the Holocaust."
   },
   "review": {
     "flags": [
@@ -50,6 +50,6 @@
   },
   "place": null,
   "region": "europe",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
   "actors": []
 }
