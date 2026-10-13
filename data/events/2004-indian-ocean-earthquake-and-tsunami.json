@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "2004-indian-ocean-earthquake-and-tsunami",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q130754",
+  "sitelinks": {
+    "count": 83,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "2004 Indian Ocean earthquake and tsunami",
+    "pt": "Sismo e tsunâmi do oceano Índico de 2004"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q130754"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2004 Indian Ocean earthquake and tsunami\", revision 1377590205"
+    }
+  ],
+  "title": "2004 Indian Ocean earthquake and tsunami",
+  "summary": "The English Wikipedia article \"2004 Indian Ocean earthquake and tsunami\", at revision 1377590205, opens: \"On 26 December 2004, at 07:58:53 local time (UTC+7), a Mw 9.2–9.3 earthquake struck with its epicenter off the west coast of Aceh, in northern Sumatra, Indonesia. The undersea megathrust earthquake, known in the scientific community as the Sumatra–Andaman earthquake, was caused by a rupture along the fault boundary between the Burma plate and the Indian plate, and reached a maximum Mercalli intensity of IX in some areas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q130754, imported by tools/import/wikidata.mjs. The item's own description reads \"megathrust underwater earthquake and subsequent tsunami in the Indian Ocean\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2004,
+    "end": 2004,
+    "date": "2004-12-26"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "indian-rebellion-of-1857",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q129864",
+  "sitelinks": {
+    "count": 80,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Indian Rebellion of 1857",
+    "pt": "Rebelião Indiana de 1857"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q129864"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Indian Rebellion of 1857\", revision 1377649380"
+    }
+  ],
+  "title": "Indian Rebellion of 1857",
+  "summary": "The English Wikipedia article \"Indian Rebellion of 1857\", at revision 1377649380, opens: \"The Indian Rebellion of 1857 was a major uprising in India in 1857–58 against the rule of the British East India Company, which functioned as a sovereign power, including military forces, on behalf of the British Crown. The rebellion began on 10 May 1857 as a mutiny of sepoys of the company's garrison in Meerut, a town 40 miles (64 km) northeast of Delhi. It then erupted into other mutinies and civilian rebellions, chiefly in the upper Gangetic plain and central India, though incidents of revolt also occurred farther north and east. The rebellion posed a military threat to British power in that region, and was contained only with the rebels' defeat in Gwalior on 20 June 1858. On 1 November 1858, the British granted amnesty to all rebels not involved in murder, though they did not declare the hostilities to have formally ended until 8 July 1859.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q129864, imported by tools/import/wikidata.mjs. The item's own description reads \"1857–58 uprising against British Company rule\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1857,
+    "end": 1858,
+    "date": "1857-05-10",
+    "endDate": "1858-06-20"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

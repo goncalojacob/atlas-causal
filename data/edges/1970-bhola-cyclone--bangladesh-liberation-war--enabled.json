@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "1970-bhola-cyclone--bangladesh-liberation-war--enabled",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1970 Bhola cyclone\", revision 1378967090"
+    }
+  ],
+  "from": "1970-bhola-cyclone",
+  "to": "bangladesh-liberation-war",
+  "type": "enabled",
+  "confidence": "probable",
+  "explanation": "The article \"1970 Bhola cyclone\" (revision 1378967090) states: \"The poor and discriminatory response from the West Pakistan government led to the increasingly widespread disillusionment from the East Pakistani people, allowing the opposition Awami League to gain a landslide victory in the province during the election that took place a month later as well as the Bangladesh Liberation War seven months later.\" The response the sentence names is the response to this cyclone, in the cyclone's own article. The type is enabled and not caused, because the sentence says the disillusionment allowed the war.",
+  "dispute": null
+}

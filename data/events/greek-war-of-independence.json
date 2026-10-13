@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "greek-war-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q182062",
+  "sitelinks": {
+    "count": 72,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Greek War of Independence",
+    "pt": "Guerra de independência da Grécia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q182062"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Greek War of Independence\", revision 1379883159"
+    }
+  ],
+  "title": "Greek War of Independence",
+  "summary": "The English Wikipedia article \"Greek War of Independence\", at revision 1379883159, opens: \"The Greek War of Independence, also known as the Greek Revolution or the Greek Revolution of 1821, was a successful war of independence fought by Greek revolutionaries against the Ottoman Empire from 1821 to 1829. In 1826, the Greeks were assisted by the British Empire, the Kingdom of France, and the Russian Empire, while the Ottomans were aided by their vassals, especially by the Eyalet of Egypt. The war led to the formation of modern Greece, which in subsequent years would be expanded to its current size. The revolution is commemorated by Greeks in Greece and the Greek diaspora on 25 March, as Independence Day.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q182062, imported by tools/import/wikidata.mjs. The item's own description reads \"Greek rebellion against the Ottoman Empire (1821–1829)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1829
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
