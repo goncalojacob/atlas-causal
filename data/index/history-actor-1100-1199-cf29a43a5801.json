@@ -1,0 +1,30 @@
+{
+  "from": 1100,
+  "kind": "actor",
+  "records": {
+    "kingdom-of-navarre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "kingdom-of-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1199
+}

@@ -1,0 +1,5559 @@
+{
+  "from": 1600,
+  "kind": "actor",
+  "records": {
+    "agwarmin": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "alawa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "alyawarre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "amangu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "amarak": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "andegerebenha": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "andyamathanha": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "anggamudi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "anguthimri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "anmatyerre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "antakarinja": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "arabana": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "arrernte": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "austrian-empire": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ava": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "awabakal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "awngthim": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "awsa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "badimaya": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "badtjala": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bakanh": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ballardong": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bandjigali": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "banggarla": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "banjima": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "baraba-baraba": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "baradha": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bardi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "barindji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "barkindji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "barna": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "barranbinya": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "barundji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "barunggam": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bayali": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "belize-before-1981": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bhutan-before-1948": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bibbulman": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bidjara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bidwell": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bigambul": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bilinara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "binbinga": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bindjali": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "biri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "biripi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "birria": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "boonwurrung": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "brandenburg-prussia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "brunei-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "buandig": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "budjari": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bukurnidja": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bularnu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bundjalung": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "burarra": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "captaincy-general-of-cuba": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "cayenne": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ceylon": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ceylon-dutch": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dadi-dadi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dainggatti": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dangbon": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "danggali": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "darkinung": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "darumbal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "delagoa-bay": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dharawala": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dharug": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dhirari": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dieri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dja-dja-wurrung": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "djabuganjdji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "djabwurung": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "djargurdwurung": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "djirbalngan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "doolboong-miriwoong": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dutch-brazil": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dutch-east-indies-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dutch-formosa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dutch-republic": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dyungungoo-gubbi-gubbi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "eora": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "essequibo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "finnmark": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "fivizzano": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "florida": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "franche-comte": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gabalbara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gadubanud": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gagudju": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gamberre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gananggalinda": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ganggalida": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gangulu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "garawa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "garingbal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gayiri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "geawegal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "giraiwurung": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "giya": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gooniyandi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "goreng": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gros-ventre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gugu-badhun": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gulidjan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gumbainggir": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gunbalang": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gunditjmara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gundungurra": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gungabula": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gunggari": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gungurugoni": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gunibidji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gunindiri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gunu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gunwinggu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gureng-gureng": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gurindji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "guringai": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "guugu-yimidhirr": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "guwa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "guwinmal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "hong-kong": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "iningai": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "iwaidja": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "jabirrjabirr": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "jaburrara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "jaitmatang": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "jaminjung": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "jardwadjali": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "jaru": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "jawoyn": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "jingili": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "jiwarli": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "jukun": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "jurruru": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kaantju": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kadjerong": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kalaako-malpa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kalaamaya": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kalkadoon": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kamilaroi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kandy": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kaniyang": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "karajarri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "karangpurru": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "karangura": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "karenggapa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kariyarra": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "karuwali": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kaurna-pangkarra": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kaytej": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kija": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kokatha": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "koknar": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "koko-bera": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kokomini": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kokowarra": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "konbudj": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kooma": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kukatj": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kukatja": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kuku-yalanji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kullilla": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kundjey-mi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kungarakany": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kunja": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kunjen": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kureinji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kurnai": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kurrama": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kurtjar": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kuthant": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kuuku-ya-u": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kuuku-yani": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kuungkari": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kuwarra": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kuwema": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kuyani": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kwini": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "lamalama": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "lan-na": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "laotian-states": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "larrakia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "latje-latje": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "limilngan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "lombardy": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "lucca": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "luritja": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "luthigh": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "madi-madi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "maiawali": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "malak-malak": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "malaya": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "malkana": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "malyangaba": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "manchu-empire": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mandandanji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mandjindja": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mangala": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mangarayi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "maranunggu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mardu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "margany": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "marramaninjsji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "marringarr": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "marrithiyel": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "martuthunira": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "massa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "massachusetts-bay": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "maung": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "maya": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mayi-kulan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mayi-kutuna": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mayi-thakurti": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mayi-yapi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mbabaram": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mbara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mbeiwum": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mbukarla": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "meru": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "middag-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "minang": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mingin": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mirning": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mithaka": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "miwa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "miyan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "modena": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mpalitjanh": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mudburra": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "murrinh-patha": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "muruwari": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mutumui": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nakako": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nakara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nana": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "narangga": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nari-nari": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nawu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "new-amsterdam": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "new-france": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngaanyatjarra": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngadjuri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngalakan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngalawangka": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngalea": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngaliwuru": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngalkbun": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngambri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngamini": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngan-gikurunggurr": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngan-giwumirri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngandi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngandji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nganyaywana": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngarabal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngargad": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngarigo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngarinman": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngarinyin": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngarla": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngarluma": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngarrindjeri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngarti": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngatatjara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngatjumay": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngawun": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngombur": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nguburinji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngumbarl": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngunawal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nguri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngurraiillam": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nhanta": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nhuwala": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nimanburu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nukunu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nungali": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nunggubuyu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nyaki-nyaki": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nyamal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nyanganyatjara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nyangumarda": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nyawaygi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nyikina": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nyul-nyul": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "palyku": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "parma": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "payungu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "peramangk": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "pinikura": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "pinjarup": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "pintupi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "pirlatapa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "pitjantjatjara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "pitta-pitta": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "polish-lithuanian-commonwealth": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "pontremoli": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "portuguese-brazil": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "portuguese-east-africa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "portuguese-guinea": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "post-ming-warlords": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "punuba": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "purduna": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "rembarnga": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "rozwi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "saint-domingue": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sardinia-piedmont": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "south-carolina": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "surinam-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "takalak": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "taungurung": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "teppathiggi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "thaayorre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "thalanyji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tharawal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tharrgari": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "thiin": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "thul-garrie-waja-bindal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tjalkanti": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tjerratj": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tjungundji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tjupany": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tokugawa-shogunate": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "turrbal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tuscany": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "umbindhamu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "umida": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "umpila": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "unggarangi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "unggumi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "uutaalnganu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "viceroyalty-of-peru": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "virginia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "waanyi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wadi-wadi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wadigali": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wadjigu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wagiman": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wailwan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wajuk": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "waka-waka": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wakabunga": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wakaya": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "walangama": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "walmatjarri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wambaya": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wandjiwalgu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wangan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wangkamana": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wangkangurru": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wangkathaa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wangkumara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wardaman": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wardandi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wargamaygan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "warlmanpa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "warlpiri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "warluwarra": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "warray": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "warriyangga": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "warumungu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "warwa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wathaurong": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "watjarri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "waveroo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wawula": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wemba-wemba": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wergaia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wiilman": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wik": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wiljali": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "winda-winda": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wiradjuri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wirangu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wongaibon": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wonnarua": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "woolna": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "worimi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "worla": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "worora": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wudjari": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wulgurukaba": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wuli-wuli": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wunambul": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wuningangk": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wunumara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wurundjeri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wuthathi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yadhaigana": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yagalingu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yalarrnga": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yambina": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yanda": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yandruwandha": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yanga": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yangga": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yangman": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yankuntjatjara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yanyuwa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yarluyandi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yawarawarka": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yawuru": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yidinjdji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yiiji": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yilba": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yiman": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yindjibarndi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yinggarda": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yinhawangka": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yinwum": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yir-yoront": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yirandali": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yitha-yitha": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yolngu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yorta-yorta": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yuat": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yugambeh": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yuggera": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yuin": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yulparitja": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yupangathi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yuru": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yuwi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1699
+}

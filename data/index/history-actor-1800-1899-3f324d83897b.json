@@ -1,0 +1,4067 @@
+{
+  "from": 1800,
+  "kind": "actor",
+  "records": {
+    "afghanistan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "afonso-costa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "alaska": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "algeria-fr": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "algeria-under-france": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "american-samoa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "americo-tomas": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "angola-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "angola-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "angola-under-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "annam": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "antonio-jose-de-almeida": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "antonio-maria-da-silva": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "arabia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "argentina": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ato-trading-confederacy": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "austria-hungary": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bahamas-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bahawalpur": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "banco-de-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "banco-espirito-santo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        }
+      ]
+    },
+    "barbados-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "barbados-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "barotse": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "basutoland": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "batavian-republic": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "belgium": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "belize-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "benin-under-france": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bernardino-machado": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "bhutan-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bokhara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bokhara-khanate": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bolivia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "borgu-states": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bosnia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bosnia-herzegovina-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "botswana-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "brazil": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "british-bechuanaland": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "british-east-india-company": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "british-india": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "british-raj": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "british-somaliland-somaliland-republic": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "brunei-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "buganda": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bulgaria": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bundelkhand": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bunyoro": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "burundi-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "calabar": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "cambodia-kampuchea-under-france": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "canada": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "canto-e-castro": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "cape-colony": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "cape-verde-under-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "carbonaria": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "carlos-i": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "chile": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "china": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "circars": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "colombia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "congo-democratic-republic-of-zaire-under-belgium": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "congo-under-france": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "cortes-of-cadiz": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "costa-rica": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "cote-d-ivoire-under-france": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "cotonou": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "craveiro-lopes": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "cuba": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "cuba-under-spain": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dendi-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "denmark": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dias-ferreira": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "djibouti-under-france": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "domingos-oliveira": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dominican-republic": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dutch-east-indies": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-03"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dutch-guiana": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "east-timor-under-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ecuador": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "el-salvador": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "electoral-hesse": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "empire-of-brazil": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-17"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "equatorial-guinea-under-spain": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "eritrea-under-italy-sardinia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ethiopia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "fante": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "federated-malay-states": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ferreira-do-amaral": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "fiji-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "fiji-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "france": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "french-guiana": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "french-guyana": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "french-indochina": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "french-west-africa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "fulani-empire": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "futa-jalon": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "futa-toro": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gabon-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gabon-under-france": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gambia-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gambia-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "german-empire": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "german-solomon-islands": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "german-togoland": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "germany": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ghana-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gold-coast-gb": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gomes-da-costa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "grand-duchy-of-hesse": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "greece": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "greenland": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "griqualand-west": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "guadeloupe": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "guatemala": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "guiana": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "guinea-bissau-under-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "guinea-under-france": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "guyana-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "haiti": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "harer-egypt": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "hawaii": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "helvetic-republic": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "henrique-galvao": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "herzegovina": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "hintze-ribeiro": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "honduras": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ibadan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "iceland-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "iceland-under-denmark": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "imbangala": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "imerina": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "imperial-japan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "italian-somaliland": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "italy": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "italy-sardinia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ivens-ferraz": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "ivory-coast": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "jamaica-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "japan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "jawaharlal-nehru": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "joao-crisostomo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "joao-franco": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "jose-luciano-de-castro": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "jose-vicente-de-freitas": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "kamerun": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kanara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kazembe": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kenya-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "khiva": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kingdom-of-brazil": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kingdom-of-hawaii": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "korea": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kuba": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kuril-islands": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "lagos": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "laos-under-france": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "lesotho-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "liberia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "luis-filipe": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "luis-i": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "luxembourg": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "m-ori": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "madagascar-malagasy": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "malawi-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "maldives-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "malta-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "malta-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "manuel-de-arriaga": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "manuel-ii": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mapuche": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "martinique": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mauritius-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mbailundu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mendes-cabecadas": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mexico": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mirambo-unyanyembe-ukimbu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "montenegro": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "morocco": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mozambique-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mozambique-under-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mysore-indian-princely-state": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "namibia-under-south-africa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nassau": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "natal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ndebele": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nepal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "netherlands": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "netherlands-indies": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "new-caledonia-and-dependencies": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "new-guinea-german-new-guinea-kaiser-wilhelmsland": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "new-south-wales": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "new-south-wales-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "new-south-wales-uk": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "new-zealand-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "newfoundland": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nguni": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ngwato": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nicaragua": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "niue": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nizam-s-dominions": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nkore": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "northern-nigeria": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "northern-territory-uk": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "norton-de-matos": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "oil-rivers-protectorate": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "oman": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "opobo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "orange-free-state": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "oscar-carmona": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "ovimbundu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "pahang": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "paiva-couceiro": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        }
+      ]
+    },
+    "palatinate": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "papua": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "paraguay": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "partido-republicano-portugues": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "perak": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "peru": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "philippines-under-united-states-of-america": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "pimenta-de-castro": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "puerto-rico": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "qatar-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "queensland": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "queensland-uk": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "rabih-az-zubayr": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "rajputs": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "regenerator-party": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "republic-of-krakow": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "reunion": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "romania": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "rumania": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "rwanda-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sabah-north-borneo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "saint-kitts-and-nevis": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "salazar": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "samoa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "san-marino": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sarawak": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "schleswig": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "selangore": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "senegal-fr": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "senegal-under-france": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "serbia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "serpa-pimentel": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "shona": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "siam": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sidonio-pais": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sierra-leone-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sierra-leone-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sikhs": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sikkim-indian-princely-state": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sindh": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sokoto-caliphate": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "solomon-islands-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "somalia-before-1886": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "south-australia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "south-australia-uk": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "southern-nigeria": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "spain": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "spanish-guinea": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "spanish-west-africa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sri-lanka-ceylon-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "straits-settlements": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sudan-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sultanate-of-damagaram": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sultanate-of-utetera": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sultanate-of-zanzibar": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sultinate-of-zanzibar": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "surinam-under-netherlands": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "swabia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "swaziland": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "swaziland-eswatini-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sweden": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sweden-norway": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "switzerland": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "taiwan-under-japan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tanzania-tanganyika-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tasmania": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "teixeira-de-sousa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "teixeira-gomes": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "teke": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "teofilo-braga": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "thailand": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tonga": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "transvaal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "trinidad-and-tobago-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "trucial-oman": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tukular-caliphate": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tunisia-under-france": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "turan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "uganda-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "unfederated-malay-states": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "united-arab-emirates-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "united-kingdom-of-great-britain-and-ireland": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "united-provinces-of-the-rio-de-la-plata": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "united-states": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "united-states-of-america": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "united-states-virgin-islands": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "uruguay": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "venezuela": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "victoria": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "victoria-uk": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "vietnam-annam-cochin-china-tonkin": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wadai-empire": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wallis-and-futuna-islands": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wassoulou-empire": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "western-australia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "western-australia-uk": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wetzlar": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yaka": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "yeke": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "zanzibar-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "zimbabwe-rhodesia-under-united-kingdom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "zululand": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1899
+}

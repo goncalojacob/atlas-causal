@@ -1,0 +1,9400 @@
+{
+  "from": 1900,
+  "kind": "event",
+  "records": {
+    "12-3-incident": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "1900-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1901-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1904-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1905-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1907-romanian-peasants-revolt": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1908-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1910-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1911-portuguese-constituent-national-assembly-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1911-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1913-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1915-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1918-portuguese-general-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1918-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1919-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1919-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1920-georgian-coup-attempt": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1921-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1922-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1923-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1925-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1925-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1926-horta-earthquake": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1928-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1931-china-floods": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1934-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1935-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1938-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1938-yellow-river-flood": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1940-1944-insurgency-in-chechnya": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1942-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1942-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1945-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1948-arab-israeli-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1948-czechoslovak-coup-d-etat": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1948-palestine-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1949-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1949-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1951-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1952-egyptian-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1952-guinean-territorial-assembly-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1953-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1956-cuartel-domingo-goicuria-assault": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1957-1958-influenza-pandemic": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1957-guinean-territorial-assembly-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1957-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1958-lebanon-crisis": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1958-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1961-guinean-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1961-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1963-guinean-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1963-south-vietnamese-coup": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1964-brazilian-coup-detat": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "1964-rosais-earthquake": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1965-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1965-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1966-anti-igbo-pogrom": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "1966-nigerian-coup-d-etat": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "1967-portugal-floods": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1969-portugal-earthquake": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1969-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1970-bhola-cyclone": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1972-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1973-angolan-legislative-assembly-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1973-chilean-coup-d-etat": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1973-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1974-guinean-general-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1975-portuguese-constituent-assembly-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1975-sao-tomean-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1975-spring-offensive": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "1976-argentine-coup-d-etat": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1976-azorean-regional-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1976-madeira-regional-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "1976-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1976-portuguese-local-elections": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1976-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1976-tangshan-earthquake": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1977-mozambican-general-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1979-herat-uprising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1979-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1979-portuguese-local-elections": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1980-azores-islands-earthquake": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1980-azores-regional-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1980-dominican-embassy-siege-in-bogota": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1980-madeira-regional-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1980-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1980-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1982-british-army-gazelle-friendly-fire-incident": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "1982-lebanon-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1982-portuguese-local-elections": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1983-beirut-barracks-bombings": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "1983-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1983-turkish-embassy-attack-in-lisbon": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1984-azores-regional-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1984-madeira-regional-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1985-brazilian-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "1985-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1985-portuguese-local-elections": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1986-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1987-european-parliament-election-in-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1987-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1988-azores-regional-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1988-madeira-regional-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1989-european-parliament-election-in-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1989-portuguese-local-elections": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1989-tiananmen-square-protests-and-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1991-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1991-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1991-soviet-coup-d-etat-attempt": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1992-azores-regional-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1992-madeira-regional-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1993-portuguese-local-elections": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1993-russian-constitutional-crisis": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1994-european-parliament-election-in-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1994-genocide-against-tutsi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "1995-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1996-azorean-regional-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1996-madeiran-regional-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1996-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1997-portuguese-local-elections": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1998-azores-islands-earthquake": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1998-portuguese-abortion-referendum": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "1999-2002-farc-government-peace-process": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "1999-european-parliament-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1999-european-parliament-election-in-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1999-macanese-chief-executive-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "1999-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "20-july-plot": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "25-november-1975": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "31-march-incident": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "aarhus-convention": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "afghan-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "afghan-civil-war-q12302518": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "afghan-civil-war-q1980081": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "afghan-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "african-charter-on-human-and-peoples-rights": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "agadir-crisis": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "agreement-concerning-the-international-carriage-of-dangerous-goods-by-road": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "algerian-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "algiers-putsch-of-1961": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "alhucemas-landing": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "allied-invasion-of-sicily": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "almograve-environmental-disaster": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "alvor-agreement-1975": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "amsterdam-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "anglo-iraqi-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "anglo-irish-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "angola-independence-1975": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "angola-war-begins-1961": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-20"
+        }
+      ]
+    },
+    "angolan-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "angolan-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "anschluss": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "anti-comintern-pact": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "april-1906-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "arab-cold-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "arab-israeli-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "arab-revolt": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "argentine-surrender-in-the-falklands-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "armenian-genocide": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "armistice-of-22-june-1940": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "armistice-of-mudros": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "arusha-accords": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "assassination-attempt-on-fernando-da-costa-rolo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "assassination-attempt-on-john-paul-ii-1982": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "assassination-of-archduke-franz-ferdinand": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "assassination-of-erkut-akbay": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "assassination-of-john-f-kennedy": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "assassination-of-jose-ferreira-da-rocha-by-the-prp-br": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "assassination-of-jose-oscar-de-vasconcelos": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "assassination-of-patrice-lumumba": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "assassination-of-rogerio-canha-e-sa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "assault-on-banco-totta-e-acores-on-avenida-da-republica-in-lisbon-on-may-21-1976": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "assault-on-sintra-s-finance-department-by-the-prp-br-on-25-02-1980": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "assault-on-tabaqueira-by-the-prp-br-on-january-31-1980": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "assault-on-the-grupo-8-cash-van-in-lisbon-carried-out-by-the-fp-25-which-yielded-108-thousand-contos-on-february-7-1984": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "assault-on-the-santa-maria-steamship": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "atomic-bombings-of-hiroshima-and-nagasaki": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "attack-on-pearl-harbor": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "attack-on-the-moncada-barracks": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "august-1906-portuguese-legislative-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "august-1915-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "austrian-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "austrian-state-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "azores-agreement-1943": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "bala-hissar-uprising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "balkan-wars": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "baltic-entente": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bambatha-rebellion": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bangladesh-liberation-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "basel-convention": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "basmachi-movement": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "batepa-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-afabet": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-alegria-de-pio": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-algiers-1956-1957": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-annual": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-ap-bac": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-bab-el-oued": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-bloody-ridge": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-britain": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-caporetto": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-chemulpo-bay": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-chosin-reservoir": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-dien-bien-phu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-dunkirk": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-goose-green": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-greece": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-guisa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-hamburger-hill": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-heartbreak-ridge": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-hsimucheng": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-hue": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-ia-drang": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-inchon": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-ismailia-1952": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
+    "battle-of-jutland": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-kapyong": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-karameh": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-khe-sanh": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-korea-strait": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-korsakov": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-kursk": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-la-plata-1957": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-liaoyang": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-long-tan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-luang-namtha": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
+    "battle-of-mogadishu-1993": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-motien-pass": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-mount-harriet": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-mount-longdon": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-mount-tumbledown": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-mukden": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-musa-dagh": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-nam-river": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-nanking": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-nanshan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-onjong": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-osan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-paardeberg": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-port-arthur": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-san-carlos": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-sandepu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-santa-clara": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-seal-cove": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-shaho": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-shanghai": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-spion-kop": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-taejon": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-tannenberg": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-tashihchiao": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-te-li-ssu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-ch-ongch-on-river": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-imjin-river": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-the-lys-1918": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-punchbowl": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-the-pusan-perimeter": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-tugela-heights": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-the-yalu-river-1904": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-the-yellow-sea": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-tsushima": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-two-sisters": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-unsan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-vaal-krantz": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-verdun": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-waterberg": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-of-wireless-ridge": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-wuhan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-xuzhou": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-yaguajay": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "battle-off-ulsan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battles-of-khalkhin-gol": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "beer-hall-putsch": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "belovezh-accords": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bizerte-crisis": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "black-monday": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "black-september": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bluff-cove-air-attacks": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "bomb-attack-by-the-revolutionary-brigades-on-the-quartel-mestre-general-building-in-lisbon-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bomb-attack-by-the-revolutionary-brigades-on-the-recruitment-and-mobilization-district-n-1-drm-1": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bomb-attack-on-the-army-mechanographic-services-in-lisbon-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bombing-of-sakiet-sidi-youssef": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "botelho-moniz-coup-attempt-1961": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "brazilian-military-dictatorship-1964-1985": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "breakup-of-yugoslavia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bretton-woods-system": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "british-expedition-to-tibet": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "british-russian-convention": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "budapest-memorandum": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "bulgarian-declaration-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "cabral-assassinated-1973": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "caetano-succeeds-salazar-1968": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "cairo-conference": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "cambodian-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "cambodian-genocide": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "cambodian-vietnamese-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "camp-david-accords": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "carlos-manuel-de-cespedes-barracks-attack-1953": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "carnation-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "carnation-revolution-1974": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "casablanca-conference": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "cavaco-absolute-majority-1987": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "chaco-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "challe-plan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "chaplain-medic-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "charter-of-the-united-nations": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "chiado-fire": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "chilembwe-uprising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "chinese-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "chinese-spring-offensive": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "cienfuegos-uprising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "civil-rights-movement": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "closure-of-the-suez-canal-1956-1957": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "cold-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "colombian-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "colombian-conflict-between-1974-1990": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "companhia-siderurgica-nacional-1941": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "congo-crisis": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "constituent-assembly-election-1975": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "constitution-1911": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "constitution-1933": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "constitution-1976": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "constitutional-revision-1959": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "constitutional-revision-1982": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "constitutionalization-attempts-in-iran": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "continuation-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "convention-on-the-elimination-of-all-forms-of-discrimination-against-women": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "convention-on-the-rights-of-the-child": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "convention-relating-to-the-status-of-refugees": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "corynthia-expedition": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "coup-28-may-1926": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "coup-attempt-11-march-1975": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "cplp-founding-1996": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "croat-bosniak-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "croatian-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "cuban-missile-crisis": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "cuban-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-16"
+        }
+      ]
+    },
+    "cultural-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "damour-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "dayton-agreement": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "declaration-by-united-nations": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "decolonisation-of-africa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "delgado-assassinated-1965": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "delgado-candidacy-1958": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "deportation-of-the-crimean-tatars": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dissolution-of-the-lumumba-government": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "dissolution-of-the-soviet-union": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ditadura-nacional-1926-1933": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "dust-bowl": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "eanes-elected-1976": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "earth-summit": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "east-timor-invasion-1975": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "easter-offensive": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "easter-rising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "eastern-front": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "edp-created-1976": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "eec-accession-1986": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "eec-application-1977": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "efta-accession-1960": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "egypt-israel-peace-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "entente-cordiale": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "equality-statute-between-brazil-and-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "eritrean-civil-wars": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "eritrean-ethiopian-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "eritrean-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "estado-novo-1933-1974": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "estonian-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ethiopian-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "euro-adoption-1999": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "european-charter-for-regional-or-minority-languages": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "european-convention-on-human-rights": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "evian-accords": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "execution-of-the-romanov-family": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "expo-98": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "exposicao-mundo-portugues-1940": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "falklands-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "fall-of-saigon": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "february-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "finnish-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "first-balkan-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "first-battle-of-el-djorf": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "first-battle-of-quang-tri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "first-battle-of-seoul": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "first-congo-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "first-indochina-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "first-liberian-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "first-moroccan-crisis": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "first-portuguese-republic-1910-1926": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "first-shaba-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "first-sudanese-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "first-vienna-award": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "foibe-massacres": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "fontainebleau-agreements": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
+    "fourth-geneva-convention": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "franco-thai-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "french-conquest-of-morocco": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "geneva-act-of-the-lisbon-agreement-on-appellations-of-origin-and-geographical-indications": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "geneva-conference": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "genocide-convention": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "georgian-ossetian-conflict-1918-1920": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "georgian-uprising-on-texel": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "german-polish-declaration-of-non-aggression": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "german-revolution-of-1918-1919": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "german-soviet-treaty-of-friendship-cooperation-and-demarcation": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "germany-declares-war-1916": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-20"
+        }
+      ]
+    },
+    "goa-annexed-1961": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "good-friday-agreement": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "great-depression": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "great-leap-forward": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "greco-italian-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "greek-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "guinea-bissau-declares-independence-1973": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "guinea-bissau-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "guinea-war-begins-1963": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-20"
+        }
+      ]
+    },
+    "guinean-constitutional-referendum-1958": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "gulf-of-tonkin-incident": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "gulf-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "haitian-embassy-in-cuba-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "hat-nipah-and-same-massacres": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "havana-presidential-palace-attack-1957": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "hay-bunau-varilla-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "herero-and-nama-genocide": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "herero-wars": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "hitachi-maru-incident": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "holodomor": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "honduras-and-la-negra-farms-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "hong-kong-flu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "humboldt-7-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "hungarian-revolution-of-1956": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "iberian-pact": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "ifni-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ilinden-preobrazhenie-uprising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "imf-agreement-1978": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "imf-agreement-1983": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "independence-of-morocco": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "india-pakistan-war-of-1971": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "indo-pakistani-war-of-1947-1948": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "indo-pakistani-war-of-1965": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "indochina-wars": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "indonesian-national-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "insurgency-in-kosovo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "intermediate-range-nuclear-forces-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "international-convention-on-the-elimination-of-all-forms-of-racial-discrimination": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "international-covenant-on-civil-and-political-rights": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        }
+      ]
+    },
+    "interwar-period": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "invasion-of-south-georgia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "iran-iraq-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "iranian-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "irish-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "israeli-declaration-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "israeli-palestinian-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "italo-turkish-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ituri-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "japan-korea-treaty-of-1907": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "japan-korea-treaty-of-1910": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "japanese-instrument-of-surrender": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "japanese-invasion-of-french-indochina": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "japanese-invasion-of-sakhalin": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "junker-mutiny": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kaocen-revolt": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kapp-putsch": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "karantina-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "kargil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kashmir-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "katyn-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "kellogg-briand-pact": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kerensky-krasnov-uprising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "korean-armistice-agreement": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "korean-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "kosovo-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kronstadt-rebellion": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "kwilu-rebellion": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "la-violencia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "laotian-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "lapland-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "larache-landing": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
+    "las-palmas-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "lateran-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "law-of-separation-1911": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "lebanese-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "legiao-portuguesa-founded-1936": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "legislative-election-1976": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "lisbon-protocol": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "lisbon-recognition-convention": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "lisbon-regicide": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "locarno-treaties": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "louvre-accord": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "maastricht-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "macau-handover-1999": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "majimaji-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "malayan-emergency": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "manhattan-project": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "march-on-rome": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "marco-polo-bridge-incident": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "massacre-of-arabs-during-the-zanzibar-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "massacres-of-poles-in-volhynia-and-eastern-galicia": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "may-1915-portuguese-presidential-election": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "may-1958-crisis-in-france": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "may-coup": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "merger-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mexican-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "milk-bar-cafe-bombing": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "molotov-ribbentrop-pact": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "monarchy-of-the-north-1919": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "mondonedo-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "montevideo-convention": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "montreal-protocol": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "montreux-convention": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "moscow-peace-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "moscow-uprising-of-1905": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mount-kent-skirmish": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "mountain-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "mozambican-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "mozambique-war-begins-1964": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-20"
+        }
+      ]
+    },
+    "mueda-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "munich-agreement": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "murder-of-delfim-de-almeida-fernandes-by-the-prp-br": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "murder-of-diamantino-monteiro-pereira": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "murder-of-jorge-augusto-de-carvalho-porto-judiciary-police-officer": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "murder-of-jose-manuel-placido": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "my-lai-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "myanmar-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nanjing-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "national-syndicalists-banned-1934": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "nationalisations-1975": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "nato-founding-1949": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-20"
+        }
+      ]
+    },
+    "nepalese-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "new-deal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "nigerian-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "noite-sangrenta-1921": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "north-african-campaign": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "nova-republica-brazil-since-1985": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "october-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "odz-insurrection": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ogaden-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "operation-accountability": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "operation-algeciras": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-badr-1973": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-black-buck": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-brother-sam-1964": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "operation-commando": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "operation-condor": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "operation-gothic-serpent": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "operation-grapes-of-wrath": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "operation-green-sea": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "operation-keyhole": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-linebacker-ii": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "operation-minden": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "operation-musketeer-1956": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-paraquet": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-pierce-arrow": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-12"
+        }
+      ]
+    },
+    "operation-pocket-money": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "operation-pokpung": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "operation-reinhard": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "operation-rosary": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-savannah-angola": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "operation-sutton": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "operation-torch": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "operation-turquoise": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "operation-verano": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "ottawa-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "outer-space-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "palace-of-justice-siege": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "palestro-ambush": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "paris-peace-accords": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "paris-peace-conference": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "paris-peace-treaties": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "partial-nuclear-test-ban-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "partition-of-india": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "peace-of-riga": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "persian-constitutional-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "petrobras-1953": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "philippeville-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "pimenta-de-castro-government-1915": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "platt-amendment-1901": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "polish-soviet-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "polish-ukrainian-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "population-exchange-between-greece-and-turkey": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "population-transfer-in-the-soviet-union": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "porajmos": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "portugal-backs-franco-1936": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "portugal-e-o-futuro-1974": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "portuguese-colonial-war-1961-1974": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "portuguese-constitutional-referendum-1933": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "portuguese-language-orthographic-agreement-of-1945": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "portuguese-language-orthographic-agreement-of-1990": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "portuguese-regionalisation-referendum-1998": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "potemkin-mutiny": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "potsdam-conference": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "potsdam-declaration": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "profit-remittance-law-1962": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "q11077889": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "q1454657": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "q2115000": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "q55499125": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "q55499135": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "q5941661": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "q5942951": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "raid-on-pebble-island": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "raid-on-yingkou": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "railway-protection-movement": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "ramsar-convention": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "reform-and-opening-up": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "republic-proclaimed-1910": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-06"
+        }
+      ]
+    },
+    "revolt-14-may-1915": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "revolt-of-czechoslovak-legion": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "revolution-in-the-kingdom-of-poland": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "revolutions-of-1989": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "rhodesian-bush-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "rif-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "robbery-of-banco-borges-irmao-in-monte-dos-burgos-porto-november-4-1977": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "robbery-of-banco-de-angola-in-damaia-on-21-october-1975": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "robbery-of-banco-fonsecas-burnay-in-povoa-de-santo-adriao-on-october-13-1981": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "robbery-of-banco-nacional-ultramarino-in-malveira-on-6-october-1980": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "robbery-of-banco-pinto-e-sottomayor-in-albufeira-on-17-august-1976": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "robbery-of-banco-pinto-e-sottomayor-of-lisbon-in-soure": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "robbery-of-banco-totta-and-azores-in-mira-de-aire-on-october-15-1975": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "robbery-of-banco-totta-e-acores-in-seia-on-february-1-1977": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "robbery-of-the-totta-acores-bank-in-malveira-on-6-october-1980": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "romanian-revolution-1989": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "rome-statute-of-the-international-criminal-court": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "russian-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "russian-invasion-of-manchuria": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "russian-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "russian-revolution-of-1905": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "russo-japanese-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "rwandan-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "rwandan-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sabra-and-shatila-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "salazar-finance-minister-1928": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "salazar-president-of-council-1932": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "santa-maria-hijacking-1961": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "santiago-de-cuba-uprising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "saur-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sayfo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "schengen-agreement": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "schengen-in-force-1995": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "second-balkan-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "second-battle-of-quang-tri": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "second-battle-of-seoul": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "second-chechen-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "second-congo-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "second-guangzhou-uprising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "second-italo-ethiopian-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "second-liberian-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "second-mobutu-coup-detat": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "second-sino-japanese-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "second-sudanese-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "setif-and-guelma-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "sevastopol-uprising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "shaba-ii": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sharpeville-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "siamese-revolution-of-1932": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sidonio-pais-assassinated-1918": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "sidonio-pais-coup-1917": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "siege-of-jadotville": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "siege-of-mitu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "siege-of-port-arthur": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "sierra-leone-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "simba-rebellion": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "single-european-act": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sinking-of-ara-general-belgrano": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "sino-indian-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sino-soviet-border-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sino-vietnamese-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "six-day-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "skirmish-at-many-branch-point": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "skirmish-at-top-malo-house": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "slovak-hungarian-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "slovak-national-uprising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "soares-elected-president-1986": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "somali-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "south-lebanon-conflict": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "soviet-afghan-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "soviet-invasion-of-manchuria": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "soviet-invasion-of-poland": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "soviet-japanese-border-conflicts": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "soweto-uprising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "spanish-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "spanish-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "spinola-resigns-1974": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "srebrenica-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "sri-lankan-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "suez-crisis": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "surrender-of-japan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "svalbard-treaty": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "sveaborg-rebellion": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "taif-agreement": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tajikistani-civil-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tambov-rebellion": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "tehran-conference": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "tet-offensive": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "the-1930-revolution-and-the-vargas-era": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "the-1988-brazilian-constitution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "the-base-reforms-rally-1964": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "the-brazilian-debt-crisis-1982": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "the-brazilian-miracle-1968-1973": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "the-end-of-the-amazon-rubber-monopoly": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "the-extermination-of-the-jews-1941-1945": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "the-holocaust": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "the-holocaust-in-romania": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "the-persecution-of-the-jews-1933-1941": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "the-rubber-battle-1942": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "the-troubles": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "third-battle-of-kharkov": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "third-battle-of-seoul": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "third-battle-of-ypres": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "third-indochina-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "third-portuguese-republic-since-1974": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "transnistria-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "treaty-of-accession-1985": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-21"
+        }
+      ]
+    },
+    "treaty-of-brest-litovsk": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "treaty-of-bucharest": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "treaty-of-fes": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "treaty-of-friendship-and-cooperation-between-spain-and-portugal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "treaty-of-lausanne": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "treaty-of-lhasa": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "treaty-of-london": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "treaty-of-london-q584617": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "treaty-of-neuilly-sur-seine": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "treaty-of-paris": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "treaty-of-peace-with-italy": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "treaty-of-petropolis": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "treaty-of-portsmouth": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "treaty-of-rapallo": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "treaty-of-rome": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "treaty-of-san-francisco": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "treaty-of-sevres": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "treaty-of-tartu": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "treaty-of-trianon": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "treaty-of-versailles": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "treaty-on-the-final-settlement-with-respect-to-germany": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "treaty-on-the-non-proliferation-of-nuclear-weapons": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "tripartite-pact": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "tunisian-campaign": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "turkish-war-of-independence": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "un-admission-1955": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "unified-task-force": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "united-nations-convention-on-the-law-of-the-sea": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "united-nations-operation-in-somalia-ii": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "universal-copyright-convention": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "universities-of-lisbon-and-porto-1911": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "urfa-resistance": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "us-air-bases-in-the-brazilian-northeast-1942": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-18"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "velvet-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "vienna-convention-for-the-protection-of-the-ozone-layer": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "vienna-convention-on-diplomatic-relations": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "vienna-convention-on-the-law-of-treaties": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "vietnam-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "wadai-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wall-street-crash-of-1929": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "war-in-bosnia-and-herzegovina": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "war-of-attrition": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "war-of-the-camps": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "war-over-water": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "warsaw-ghetto-uprising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "warsaw-uprising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "western-desert-campaign": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "white-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "winter-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wiriyamu-massacre": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-04"
+        }
+      ]
+    },
+    "wiriyamu-massacre-1972": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-02"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-18"
+        }
+      ]
+    },
+    "world-war-i": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "world-war-ii": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "world-war-ii-in-albania": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "wuchang-uprising": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "xinhai-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "yom-kippur-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "young-turk-revolution-of-1908": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-05"
+        },
+        {
+          "fields": [],
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "yugoslav-wars": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-15"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "zaian-war": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "zanzibar-revolution": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-21"
+        },
+        {
+          "fields": [],
+          "on": "2026-10-13"
+        }
+      ]
+    }
+  },
+  "schema": 1,
+  "to": 1999
+}
