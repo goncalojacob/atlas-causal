@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "new-deal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q186356",
+  "sitelinks": {
+    "count": 63,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "New Deal",
+    "pt": "New Deal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q186356"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"New Deal\", revision 1379744402"
+    }
+  ],
+  "title": "New Deal",
+  "summary": "The English Wikipedia article \"New Deal\", at revision 1379744402, opens: \"The New Deal refers to a series of economic, social, and political reforms in response to the Great Depression in the United States under the first and second administrations of President Franklin D. Roosevelt. Following a demand-side economic theory, Roosevelt sought to utilize the authority of the federal government to increase spending and introduce programs to spur growth and combat issues specific to the depression, such as unemployment, labor relations, financial reform, and social welfare.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q186356, imported by tools/import/wikidata.mjs. The item's own description reads \"economic programs of U.S. president Franklin D. Roosevelt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1933,
+    "end": 1939
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "great-depression--new-deal--reacted-to",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"New Deal\", revision 1379744402"
+    }
+  ],
+  "from": "great-depression",
+  "to": "new-deal",
+  "type": "reacted-to",
+  "confidence": "probable",
+  "explanation": "The article \"New Deal\" (revision 1379744402) opens: \"The New Deal refers to a series of economic, social, and political reforms in response to the Great Depression in the United States under the first and second administrations of President Franklin D. Roosevelt.\" The edge reads that one sentence and nothing more. The reforms answered the depression, so the depression is the end the edge runs from.",
+  "dispute": null
+}
