@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-20",
+  "revised": "2026-10-13",
   "origin": {
     "tool": "cshapes"
   },
@@ -34,7 +34,7 @@
   "names": [
     "Vietnam, Democratic Republic of"
   ],
-  "summary": "Entity 816 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1954 to where the dataset stops, in 2019. Its last capital in the dataset is Hanoi. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Entity 816 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1954 to where the dataset stops, in 2019. Its last capital in the dataset is Hanoi. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1954,
     "end": null

@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -51,7 +51,7 @@
   "names": [
     "Korea, People's Republic of"
   ],
-  "summary": "Approximately 120,540 km² and about 26.4 million people (2023), from Wikidata's Q423 (P2046, P1082). The English Wikipedia article \"North Korea\", at revision 1376113094, opens: \"North Korea, officially the Democratic People's Republic of Korea (DPRK), is a country in East Asia. It constitutes the northern half of the Korean Peninsula and borders China and Russia to the north at the Yalu (Amnok) and Tumen rivers, and South Korea to the south at the Korean Demilitarized Zone (DMZ). The country's western border is formed by the Yellow Sea, while its eastern border is defined by the Sea of Japan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 731 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1945 to where the dataset stops, in 2019. Its last capital in the dataset is Pyongyang. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 120,540 km² and about 26.4 million people (2023), from Wikidata's Q423 (P2046, P1082). The English Wikipedia article \"North Korea\", at revision 1376113094, opens: \"North Korea, officially the Democratic People's Republic of Korea (DPRK), is a country in East Asia. It constitutes the northern half of the Korean Peninsula and borders China and Russia to the north at the Yalu (Amnok) and Tumen rivers, and South Korea to the south at the Korean Demilitarized Zone (DMZ). The country's western border is formed by the Yellow Sea, while its eastern border is defined by the Sea of Japan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 731 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1945 to where the dataset stops, in 2019. Its last capital in the dataset is Pyongyang. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1945,
     "end": null

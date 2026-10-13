@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "wikidata"
   },
@@ -58,7 +58,7 @@
     {
       "actor": "kingdom-of-portugal",
       "role": "signatory",
-      "note": "Wikidata Q580765 names it a participant (P710 Q45670); the treaty fixed borders between Spain and Portugal. The other signatory, Q3399982, is not a record here."
+      "note": "Wikidata Q580765 names it a participant (P710 Q45670). The treaty fixed borders between Spain and Portugal. The other signatory, Q3399982, is not a record here."
     }
   ],
   "parent": "spanish-colonization-of-the-americas"

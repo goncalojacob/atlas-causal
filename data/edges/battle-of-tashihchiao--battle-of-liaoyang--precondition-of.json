@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-liaoyang",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Tashihchiao's first section argues the edge itself: the town \"was of strategic importance in the Russo-Japanese War, as it was a railroad junction between the main line on the Russian South Manchurian Railway and a spur which led to the old treaty port of Yingkou (Newchwang). Control of both was essential for further advances by Japanese forces towards Liaoyang and Mukden.\" `precondition-of` is exactly \"essential for\", and no more than that. Probable: Wikipedia alone.",
+  "explanation": "Tashihchiao's first section argues the edge itself. The town \"was of strategic importance in the Russo-Japanese War, as it was a railroad junction between the main line on the Russian South Manchurian Railway and a spur which led to the old treaty port of Yingkou (Newchwang). Control of both was essential for further advances by Japanese forces towards Liaoyang and Mukden.\" The type `precondition-of` is exactly \"essential for\", and no more than that. Probable, on Wikipedia alone.",
   "dispute": null
 }

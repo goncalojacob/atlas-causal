@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -51,7 +51,7 @@
   "names": [
     "New Caledonia and Dependencies"
   ],
-  "summary": "Approximately 18,576 km² and about 278,500 people (2017), from Wikidata's Q33788 (P2046, P1082). The English Wikipedia article \"New Caledonia\", at revision 1375065275, opens: \"New Caledonia is a French territory consisting of a group of islands in the southwest Pacific Ocean, 220 km (140 mi) southwest of Vanuatu and 1,210 km (750 mi) east of Australia. Located 16,100 km (10,000 mi) from Metropolitan France, it forms a sui generis collectivity of the French Republic, having a unique legal status enshrined in a dedicated chapter of the French Constitution.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 930 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Nouméa. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 18,576 km² and about 278,500 people (2017), from Wikidata's Q33788 (P2046, P1082). The English Wikipedia article \"New Caledonia\", at revision 1375065275, opens: \"New Caledonia is a French territory consisting of a group of islands in the southwest Pacific Ocean, 220 km (140 mi) southwest of Vanuatu and 1,210 km (750 mi) east of Australia. Located 16,100 km (10,000 mi) from Metropolitan France, it forms a sui generis collectivity of the French Republic, having a unique legal status enshrined in a dedicated chapter of the French Constitution.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 930 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Nouméa. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-01",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft"
   },
@@ -31,6 +31,6 @@
   "to": "cambodian-vietnamese-war",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The genocide's own article states the cause in its § Vietnamese, where the campaign against the Vietnamese crosses the border: \"Additionally, the Khmer Rouge conducted many cross-border raids into Vietnam, where they slaughtered an estimated 30,000 Vietnamese civilians. Most notably, during the Ba Chúc massacre in April 1978, the Khmer Rouge military crossed the border and entered the village, slaughtering 3,157 Vietnamese civilians. This caused an urgent response from the Vietnamese government, precipitating the Cambodian–Vietnamese War in which the Khmer Rouge was ultimately defeated.\" The Indochina wars' own article says the same thing from the other end: \"The Cambodian–Vietnamese War began when Vietnam invaded Cambodia and deposed the genocidal Khmer Rouge regime.\" `caused` and not `precondition-of` because the article uses the word: the killing caused the response, and the response was the war. `probable` and not `consensus` under rule 22 and A2 — both witnesses are Wikipedia records.",
+  "explanation": "The genocide's own article states the cause in its § Vietnamese, where the campaign against the Vietnamese crosses the border: \"Additionally, the Khmer Rouge conducted many cross-border raids into Vietnam, where they slaughtered an estimated 30,000 Vietnamese civilians. Most notably, during the Ba Chúc massacre in April 1978, the Khmer Rouge military crossed the border and entered the village, slaughtering 3,157 Vietnamese civilians. This caused an urgent response from the Vietnamese government, precipitating the Cambodian–Vietnamese War in which the Khmer Rouge was ultimately defeated.\" The Indochina wars' own article says the same thing from the other end: \"The Cambodian–Vietnamese War began when Vietnam invaded Cambodia and deposed the genocidal Khmer Rouge regime.\" The type is `caused`, because the article uses that word. The killing caused the response, and the response was the war. The confidence stays `probable` under rule 22 and review A2, because both witnesses are Wikipedia records.",
   "dispute": null
 }
