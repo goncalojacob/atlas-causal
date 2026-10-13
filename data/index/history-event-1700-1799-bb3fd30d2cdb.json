@@ -11,6 +11,15 @@
         }
       ]
     },
+    "1755-lisbon-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "action-of-11-september-1778": {
       "from": "git",
       "versions": [
@@ -1723,6 +1732,15 @@
         }
       ]
     },
+    "great-northern-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "great-peace-of-montreal": {
       "from": "git",
       "versions": [
@@ -2153,6 +2171,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "seven-years-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
         }
       ]
     },
@@ -2680,6 +2707,15 @@
           "fields": [
             "regionNote"
           ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "war-of-the-spanish-succession": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-10-13"
         }
       ]

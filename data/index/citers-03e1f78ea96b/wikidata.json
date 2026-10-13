@@ -1766,6 +1766,12 @@
     },
     {
       "dissent": false,
+      "id": "1755-lisbon-earthquake",
+      "kind": "event",
+      "locator": "Q191055"
+    },
+    {
+      "dissent": false,
       "id": "1893-franco-siamese-crisis",
       "kind": "event",
       "locator": "Q1359846"
@@ -5594,6 +5600,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-vienna",
+      "kind": "event",
+      "locator": "Q200855"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-vilcaconga",
       "kind": "event",
       "locator": "Q3636661"
@@ -6374,6 +6386,12 @@
     },
     {
       "dissent": false,
+      "id": "congress-of-vienna",
+      "kind": "event",
+      "locator": "Q46362"
+    },
+    {
+      "dissent": false,
       "id": "conquest-of-asilah",
       "kind": "event",
       "locator": "Q5162432"
@@ -6563,6 +6581,12 @@
       "id": "cretan-revolt-of-1897-1898",
       "kind": "event",
       "locator": "Q930925"
+    },
+    {
+      "dissent": false,
+      "id": "crimean-war",
+      "kind": "event",
+      "locator": "Q254106"
     },
     {
       "dissent": false,
@@ -7406,6 +7430,12 @@
     },
     {
       "dissent": false,
+      "id": "great-northern-war",
+      "kind": "event",
+      "locator": "Q151616"
+    },
+    {
+      "dissent": false,
       "id": "great-peace-of-montreal",
       "kind": "event",
       "locator": "Q326028"
@@ -7421,6 +7451,12 @@
       "id": "great-swamp-fight",
       "kind": "event",
       "locator": "Q5600061"
+    },
+    {
+      "dissent": false,
+      "id": "great-turkish-war",
+      "kind": "event",
+      "locator": "Q74623"
     },
     {
       "dissent": false,
@@ -7955,6 +7991,12 @@
       "id": "jaragua-massacre",
       "kind": "event",
       "locator": "Q6159472"
+    },
+    {
+      "dissent": false,
+      "id": "july-revolution",
+      "kind": "event",
+      "locator": "Q214028"
     },
     {
       "dissent": false,
@@ -9362,6 +9404,12 @@
     },
     {
       "dissent": false,
+      "id": "revolutions-of-1848",
+      "kind": "event",
+      "locator": "Q3588"
+    },
+    {
+      "dissent": false,
       "id": "revolutions-of-1989",
       "kind": "event",
       "locator": "Q382861"
@@ -9791,6 +9839,12 @@
       "id": "sevastopol-uprising",
       "kind": "event",
       "locator": "Q4411939"
+    },
+    {
+      "dissent": false,
+      "id": "seven-years-war",
+      "kind": "event",
+      "locator": "Q33143"
     },
     {
       "dissent": false,
@@ -11573,6 +11627,12 @@
       "id": "war-of-the-south",
       "kind": "event",
       "locator": "Q4122570"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-spanish-succession",
+      "kind": "event",
+      "locator": "Q150701"
     },
     {
       "dissent": false,

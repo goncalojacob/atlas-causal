@@ -10166,6 +10166,12 @@
     },
     {
       "dissent": false,
+      "id": "1755-lisbon-earthquake",
+      "kind": "event",
+      "locator": "\"1755 Lisbon earthquake\", revision 1378145316"
+    },
+    {
+      "dissent": false,
       "id": "1893-franco-siamese-crisis",
       "kind": "event",
       "locator": "\"1893 Franco-Siamese crisis\", revision 1374343940"
@@ -13904,6 +13910,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-vienna",
+      "kind": "event",
+      "locator": "\"Battle of Vienna\", revision 1379748814"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-vilcaconga",
       "kind": "event",
       "locator": "\"Battle of Vilcaconga\", revision 1370592503"
@@ -14672,6 +14684,12 @@
     },
     {
       "dissent": false,
+      "id": "congress-of-vienna",
+      "kind": "event",
+      "locator": "\"Congress of Vienna\", revision 1379567132"
+    },
+    {
+      "dissent": false,
       "id": "conquest-of-asilah",
       "kind": "event",
       "locator": "\"Conquest of Asilah\", revision 1370612114"
@@ -14861,6 +14879,12 @@
       "id": "cretan-revolt-of-1897-1898",
       "kind": "event",
       "locator": "\"Cretan Revolt (1897–1898)\", revision 1370613860"
+    },
+    {
+      "dissent": false,
+      "id": "crimean-war",
+      "kind": "event",
+      "locator": "\"Crimean War\", revision 1379651110"
     },
     {
       "dissent": false,
@@ -15704,6 +15728,12 @@
     },
     {
       "dissent": false,
+      "id": "great-northern-war",
+      "kind": "event",
+      "locator": "\"Great Northern War\", revision 1379314713"
+    },
+    {
+      "dissent": false,
       "id": "great-peace-of-montreal",
       "kind": "event",
       "locator": "\"Great Peace of Montreal\", revision 1375713139"
@@ -15719,6 +15749,12 @@
       "id": "great-swamp-fight",
       "kind": "event",
       "locator": "\"Great Swamp Fight\", revision 1374695067"
+    },
+    {
+      "dissent": false,
+      "id": "great-turkish-war",
+      "kind": "event",
+      "locator": "\"Great Turkish War\", revision 1377330442"
     },
     {
       "dissent": false,
@@ -16247,6 +16283,12 @@
       "id": "jaragua-massacre",
       "kind": "event",
       "locator": "\"Jaragua massacre\", revision 1365112001"
+    },
+    {
+      "dissent": false,
+      "id": "july-revolution",
+      "kind": "event",
+      "locator": "\"July Revolution\", revision 1379395873"
     },
     {
       "dissent": false,
@@ -17594,6 +17636,12 @@
     },
     {
       "dissent": false,
+      "id": "revolutions-of-1848",
+      "kind": "event",
+      "locator": "\"Revolutions of 1848\", revision 1379173550"
+    },
+    {
+      "dissent": false,
       "id": "revolutions-of-1989",
       "kind": "event",
       "locator": "\"Revolutions of 1989\", revision 1375849372"
@@ -17981,6 +18029,12 @@
       "id": "setif-and-guelma-massacre",
       "kind": "event",
       "locator": "\"Sétif and Guelma massacre\", revision 1373304371"
+    },
+    {
+      "dissent": false,
+      "id": "seven-years-war",
+      "kind": "event",
+      "locator": "\"Seven Years' War\", revision 1380112554"
     },
     {
       "dissent": false,
@@ -19865,6 +19919,12 @@
       "id": "war-of-the-south",
       "kind": "event",
       "locator": "\"War of the South\", revision 1375173408"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-spanish-succession",
+      "kind": "event",
+      "locator": "\"War of the Spanish Succession\", revision 1379217023"
     },
     {
       "dissent": false,

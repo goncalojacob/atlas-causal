@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "great-northern-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q151616",
+  "sitelinks": {
+    "count": 76,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Great Northern War",
+    "pt": "Grande Guerra do Norte"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q151616"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Northern War\", revision 1379314713"
+    }
+  ],
+  "title": "Great Northern War",
+  "summary": "The English Wikipedia article \"Great Northern War\", at revision 1379314713, opens: \"In the Great Northern War (1700–1721), a coalition led by Russia successfully contested the supremacy of Sweden in Northern, Central and Eastern Europe. The initial leaders of the anti-Swedish alliance were Peter I of Russia, Frederick IV of Denmark–Norway and Augustus II the Strong of Saxony-Poland-Lithuania. Frederick IV and Augustus II were defeated by Sweden, under Charles XII, and forced out of the alliance in 1700 and 1706, respectively, but rejoined it in 1709 after the defeat of Charles XII at the Battle of Poltava. George I of Great Britain and the Electorate of Hanover joined the coalition in 1714 for Hanover and in 1717 for Britain, and Frederick William I of Brandenburg-Prussia joined it in 1715.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q151616, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between anti-Swedish coalition Led by Russia and Swedish empires in 1700–1721\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1700,
+    "end": 1721,
+    "date": "1700-02-22",
+    "endDate": "1721-09-10"
+  },
+  "place": "eastern-europe",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

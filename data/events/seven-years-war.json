@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "seven-years-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q33143",
+  "sitelinks": {
+    "count": 95,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Seven Years' War",
+    "pt": "Guerra dos Sete Anos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q33143"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Seven Years' War\", revision 1380112554"
+    }
+  ],
+  "title": "Seven Years' War",
+  "summary": "The English Wikipedia article \"Seven Years' War\", at revision 1380112554, opens: \"The Seven Years' War, 1756 to 1763, was a global war fought by numerous great powers, primarily in Europe, with significant subsidiary campaigns in North America and the Indian subcontinent. The primary warring states were Great Britain and Prussia fighting against France and Austria, with other countries joining these coalitions: Portugal, Spain, Sweden, and Russia, plus Saxony and many other minor states of the Holy Roman Empire. Related conflicts include the Third Silesian War, French and Indian War, Third Carnatic War, Anglo-Spanish War (1762–1763), and Spanish–Portuguese War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q33143, imported by tools/import/wikidata.mjs. The item's own description reads \"global war among European powers (1756–1763)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1756,
+    "end": 1763,
+    "date": "1756-05-17",
+    "endDate": "1763-02-15"
+  },
+  "place": "europe",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

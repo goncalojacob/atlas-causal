@@ -1616,3 +1616,11 @@ Writer A imported it from the planner's queue as item `2026-10-13-europe-062`, r
 ## Writer A, 2026-10-13: `peace-of-westphalia`, bare
 
 Writer A imported it from the planner's queue as item `2026-10-13-europe-063`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-13: `great-turkish-war`, filed under `ottoman-habsburg-wars` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-13-europe-064`, rank `vital-4`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-13: `battle-of-vienna`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-13-europe-065`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
