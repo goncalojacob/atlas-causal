@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-02",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -31,7 +31,7 @@
   "to": "1966-anti-igbo-pogrom",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The pogrom's own article names the January coup as what it stood on. “1966 anti-Igbo pogrom”, at revision 1376650990, § Background: “The events took place in the context of military coups d'etat and in the prelude to the Nigerian Civil War. The immediate precursor to the massacres was the January 1966 Nigerian coup d'etat. Most of the politicians and senior army officers killed in the coup d'etat were northerners because Northerners were the majority in Nigeria's government”; and later, in the same section: “The failure of the Ironsi regime to punish the army mutineers responsible for the January 1966 coup further exacerbated the situation.” `precondition-of` and nothing stronger: the article calls the coup the immediate precursor and gives the grievance it left behind, but the proximate causes it names are the unitary decree of 24 May 1966 and the regime's failure to prosecute, neither of which this atlas holds as an event. `probable` under rule 22, the only citation being a Wikipedia record.",
+  "explanation": "The pogrom's own article names the January coup as what it stood on. “1966 anti-Igbo pogrom”, at revision 1376650990, § Background: “The events took place in the context of military coups d'etat and in the prelude to the Nigerian Civil War. The immediate precursor to the massacres was the January 1966 Nigerian coup d'etat. Most of the politicians and senior army officers killed in the coup d'etat were northerners because Northerners were the majority in Nigeria's government” And later in the same section: “The failure of the Ironsi regime to punish the army mutineers responsible for the January 1966 coup further exacerbated the situation.” The edge is `precondition-of` and nothing stronger. The article calls the coup the immediate precursor and gives the grievance it left behind. The nearest causes it names are the unitary decree of 24 May 1966 and the regime's failure to prosecute, and the atlas holds neither as an event. The confidence is `probable` under rule 22, the only citation being a Wikipedia record.",
   "dispute": null,
   "origin": {
     "tool": "assistant"

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -25,7 +25,7 @@
   },
   "retraction": {
     "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 16 under brief §1: the record earns no honest edge. The English article, at revision 1363643181, is an account of what the 1957 agreement classifies and how its annexes are revised; it argues the treaty out of nothing at all and names no event. It is a technical instrument of the UN Economic Commission for Europe, and a treaty that decided nothing this corpus holds has nothing here to be joined to — the reason §7.4 first named about environmental conventions and which applies unchanged to a road-haulage one."
+    "reason": "Retracted in M42 batch 16 under brief §1: the record earns no honest edge. The English article, at revision 1363643181, is an account of what the 1957 agreement classifies and how its annexes are revised. It argues the treaty out of nothing at all and names no event. The agreement is a technical instrument of the UN Economic Commission for Europe, and a treaty that decided nothing this corpus holds has nothing here to be joined to. That is the reason §7.4 first named about environmental conventions, and it applies unchanged to a road-haulage one."
   },
   "wikidata": "Q900482",
   "wikipedia": {
@@ -50,7 +50,7 @@
   },
   "place": null,
   "region": "europe",
-  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane, from the lane named for this item in data/imports/wikidata-seeds.json. The event points at no place record, so the timeline has nothing else to go on.",
   "category": "treaty",
   "actors": []
 }

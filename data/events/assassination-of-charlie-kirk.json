@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -25,7 +25,7 @@
   },
   "retraction": {
     "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 15 under brief §1: the record earns no honest edge, and it is eleven days old. The English article, at revision 1375772690, is an account of a killing on 10 September 2025 and of the reaction to it, and it names no event this atlas holds; the atlas's most recent American records are the Iraq war and the financial crisis, and nothing connects. A record this recent is also one whose article is being rewritten hourly, so a revision cited today is not the article a reader will open. The sweep's set 4 ranks by sitelinks and a story in the news accumulates them fast, which is how a row eleven days old came to be among the best remaining; that is worth knowing about the rule rather than working around."
+    "reason": "Retracted in M42 batch 15 under brief §1: the record earns no honest edge, and it is eleven days old. The English article, at revision 1375772690, is an account of a killing on 10 September 2025 and of the reaction to it, and it names no event this atlas holds. The atlas's most recent American records are the Iraq war and the financial crisis, and nothing connects. A record this recent is also one whose article is being rewritten hourly, so a revision cited today is not the article a reader will open. The sweep's set 4 ranks by sitelinks, and a story in the news accumulates them fast. That is how a row eleven days old came to be among the best remaining, and it is worth knowing about the rule rather than working around."
   },
   "wikidata": "Q136210698",
   "wikipedia": {
@@ -51,7 +51,7 @@
   },
   "place": null,
   "region": "americas",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane, working it out from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
   "category": "death",
   "actors": []
 }

@@ -25751,6 +25751,11 @@ Writer A started 2026-10-12T21:22:13Z by scheduled
 Writer A started 2026-10-12T23:22:10Z by scheduled
 
 Writer A 2026-10-12T23:26:38Z: 2 written, 0 partial, 1 refused, 3 skipped
+
+Rewriter started 2026-10-12T23:51:58Z by scheduled
+
+Rewriter 2026-10-13T00:31:13Z: 383 records rewritten, 56 left, 439 of 4940 done
+
 M91 started 2026-10-12T23:40:00Z by the assistant (branch m91)
 
 **M91 — every event of significance, edge or no edge, 13 October.** The owner: *"Right now the
@@ -25780,3 +25785,7 @@ with the rule, each said in the account. The pure suite: 1,998 tests, 1,998 pass
 
 M91 done
 W1 done
+
+Rewriter started 2026-10-13T00:52:17Z by scheduled
+
+Rewriter 2026-10-13T01:19:48Z: 367 records rewritten, 33 left, 839 of 4940 done

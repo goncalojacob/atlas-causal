@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "battle-of-port-louis",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Both articles state the same mechanism from their own side: the squadron that was sent to the Indian Ocean in 1796 came apart after its two failures, which is why by 1799 one frigate was left to be caught. The Port Louis article: \"Sercey deployed his squadron to the Dutch East Indies, but suffered frustration at the action of 9 September 1796 and the Bali Strait Incident of January 1797 and subsequently returned to the base at Port Louis. There the squadron began to fracture, with a succession of ships sent back to France or detached on independent missions.\" The Bali Strait article, from the other end: \"Sercey retired with his frigates to Île de France, where he learned to his horror of the opportunity he had missed in the Bali Strait. His squadron required extensive repairs, but the Colonial Committee on Île de France remained rebellious over attempts to abolish slavery and denied his ships men and food supplies. Eventually Sercey was forced to disband his squadron, sending four frigates back to France.\" Precondition-of: the dispersal is what left Preneuse alone, and neither article says the incident compelled the December 1799 cruise.",
+  "explanation": "Both articles state the same mechanism from their own side. The squadron sent to the Indian Ocean in 1796 came apart after its two failures, which is why by 1799 one frigate was left to be caught. The Port Louis article: \"Sercey deployed his squadron to the Dutch East Indies, but suffered frustration at the action of 9 September 1796 and the Bali Strait Incident of January 1797 and subsequently returned to the base at Port Louis. There the squadron began to fracture, with a succession of ships sent back to France or detached on independent missions.\" The Bali Strait article, from the other end: \"Sercey retired with his frigates to Île de France, where he learned to his horror of the opportunity he had missed in the Bali Strait. His squadron required extensive repairs, but the Colonial Committee on Île de France remained rebellious over attempts to abolish slavery and denied his ships men and food supplies. Eventually Sercey was forced to disband his squadron, sending four frigates back to France.\" The type is precondition-of. The dispersal is what left Preneuse alone, and neither article says the incident compelled the December 1799 cruise.",
   "dispute": null
 }

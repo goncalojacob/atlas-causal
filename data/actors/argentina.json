@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -51,7 +51,7 @@
   "names": [
     "Argentina"
   ],
-  "summary": "Approximately 2,780,400 km² and about 47.3 million people (2022), from Wikidata's Q414 (P2046, P1082). The English Wikipedia article \"Argentina\", at revision 1375817612, opens: \"Argentina, officially the Argentine Republic, is a country in the far south of South America. It covers an area of 2,780,085 km2 (1,073,397 mi2), making it the second-largest country in South America after Brazil, the fourth-largest country in the Americas, and the eighth-largest country in the world. Argentina shares the bulk of the Southern Cone with Chile to the west, and is also bordered by Bolivia and Paraguay to the north, Brazil to the northeast, Uruguay and the South Atlantic Ocean to the east, and the Drake Passage to the south.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 160 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Buenos Aires. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 2,780,400 km² and about 47.3 million people (2022), from Wikidata's Q414 (P2046, P1082). The English Wikipedia article \"Argentina\", at revision 1375817612, opens: \"Argentina, officially the Argentine Republic, is a country in the far south of South America. It covers an area of 2,780,085 km2 (1,073,397 mi2), making it the second-largest country in South America after Brazil, the fourth-largest country in the Americas, and the eighth-largest country in the world. Argentina shares the bulk of the Southern Cone with Chile to the west, and is also bordered by Bolivia and Paraguay to the north, Brazil to the northeast, Uruguay and the South Atlantic Ocean to the east, and the Drake Passage to the south.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 160 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Buenos Aires. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

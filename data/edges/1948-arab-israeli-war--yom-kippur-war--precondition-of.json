@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -38,6 +38,6 @@
   "to": "yom-kippur-war",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "This edge states its own gap. The wars of 1948, 1956, 1967 and 1973 are rounds of one conflict, and the atlas holds only the first and the last: the territory Egypt and Syria attacked to recover in October 1973 was taken in 1967, not in 1948, so the chain runs through two records that are not here. What survives the gap is the conflict itself, which 1948 began and which no settlement had ended, and the armistice lines of 1949 that every later round was fought over. Until 1956 and 1967 are records here this edge should be read as a placeholder for three, and it is marked probable for that reason as much as any other.",
+  "explanation": "This edge states its own gap. The wars of 1948, 1956, 1967 and 1973 are rounds of one conflict, and the atlas holds only the first and the last. The territory Egypt and Syria attacked to recover in October 1973 was taken in 1967, so the chain runs through two records that are not here. The conflict itself crosses the gap. 1948 began it and no settlement had ended it. So do the armistice lines of 1949, which every later round was fought over. Until 1956 and 1967 are records here, read this edge as a placeholder for three. That is one reason it is marked `probable`.",
   "dispute": null
 }

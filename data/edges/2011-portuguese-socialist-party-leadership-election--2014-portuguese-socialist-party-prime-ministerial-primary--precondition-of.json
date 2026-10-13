@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -33,6 +33,6 @@
   "to": "2014-portuguese-socialist-party-prime-ministerial-primary",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The primary of 2014 was a challenge to a sitting leader, and this is the ballot that made him one. Seguro had been elected in 2011 without a contest of this kind and had never been the party's candidate for prime minister; the open primary was the instrument found to settle both questions at once, and it could only have been aimed at the incumbency this election created. The edge is `precondition-of` rather than `caused`: what 2011 produced was the position that was challenged, not the challenge.",
+  "explanation": "The primary of 2014 was a challenge to a sitting leader, and this is the ballot that made him one. Seguro had been elected in 2011 without a contest of this kind and had never been the party's candidate for prime minister. The open primary was the instrument found to settle both questions at once, and it could only have been aimed at the standing this election gave him. The edge is `precondition-of` rather than `caused`. What 2011 produced is the position the primary challenged.",
   "dispute": null
 }

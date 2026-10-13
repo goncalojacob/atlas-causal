@@ -13,13 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-24",
+  "revised": "2026-10-13",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
     "on": "2026-09-24",
-    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. Thailand is in the atlas now — siamese-revolution-of-1932 — and that is the only Thai record here. Seventy-four years separate them and no article states a link between them. Under the new bar this record still reaches nothing, and what would change that is the Thai political crisis of 2005 to 2014, which the atlas does not hold."
+    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, which is wider than the Portuguese core M44b judged this against. Thailand is in the atlas now, as siamese-revolution-of-1932, and that is the only Thai record here. Seventy-four years separate them and no article states a link between them. Under the new bar this record still reaches nothing. What would change that is the Thai political crisis of 2005 to 2014, which the atlas does not hold."
   },
   "review": {
     "flags": [
@@ -51,7 +51,7 @@
   },
   "place": null,
   "region": "asia",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane, working it out from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
   "category": "revolution",
   "actors": []
 }

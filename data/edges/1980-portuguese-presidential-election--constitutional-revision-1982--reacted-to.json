@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -37,6 +37,6 @@
   "to": "constitutional-revision-1982",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "The revision of 1982 did two things at once: it abolished the Council of the Revolution, which everyone civilian wanted gone, and it trimmed the powers of a president the Assembly's majority had just failed to unseat. Eanes had been the Armed Forces Movement's man and had been re-elected in December 1980 against the alliance's own candidate, with four more years to run and the power to dismiss governments. Reading the revision only as the end of military tutelage misses the second half of it; this edge is the second half, and it is `reacted-to` rather than `caused` because the constitutional programme predates the election it was sharpened by.",
+  "explanation": "The revision of 1982 did two things at once. It abolished the Council of the Revolution, which every civilian side wanted gone, and it cut the powers of a president the Assembly's majority had just failed to unseat. Eanes had been the Armed Forces Movement's man, and in December 1980 the voters re-elected him against the alliance's own candidate, with four more years to run and the power to dismiss governments. Read the revision only as the end of military oversight and you miss the second half of it. This edge is the second half. It is `reacted-to` rather than `caused` because the constitutional programme came before the election that sharpened it.",
   "dispute": null
 }

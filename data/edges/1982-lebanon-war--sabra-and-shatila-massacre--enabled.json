@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "sabra-and-shatila-massacre",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The massacre’s own lead has the killing done “by the Lebanese Forces, one of the main Christian militias in Lebanon, with the support of the Israel Defense Forces (IDF)”, and its § Massacre has the militiamen assembling “at Beirut International Airport, then occupied by Israel” and moving on the camps “in IDF-supplied jeeps, some bearing weapons provided by Israel, following Israeli guidance on how to enter it”. `enabled` and not `caused`: the invasion is what put the IDF around those camps and the militia inside them; whose hands did the killing is what the record says and not what this edge claims.",
+  "explanation": "The massacre’s own lead has the killing done “by the Lebanese Forces, one of the main Christian militias in Lebanon, with the support of the Israel Defense Forces (IDF)”, and its § Massacre has the militiamen assembling “at Beirut International Airport, then occupied by Israel” and moving on the camps “in IDF-supplied jeeps, some bearing weapons provided by Israel, following Israeli guidance on how to enter it”. The edge is `enabled`, which says the invasion made the massacre possible without causing it. The invasion put the IDF around those camps and the militia inside them. Whose hands did the killing is what the record says, and this edge does not claim it.",
   "dispute": null
 }

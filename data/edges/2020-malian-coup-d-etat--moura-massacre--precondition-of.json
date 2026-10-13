@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "moura-massacre",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The massacre's own § Background is a chain of three sentences from the coup to the force that carried the massacre out: France \"announced after the 2020 Malian coup d'état their intention to gradually reduce the number of French forces and withdraw them from the country. Mali has since looked for other ways to acquire foreign help, and has received help from Wagner Group, a Russian private military company.\" The lead names Wagner, with the Malian army, as who carried the massacre out. Precondition and not cause: the article argues why those troops were in Mali, not why they killed. Probable: Wikipedia alone.",
+  "explanation": "The § Background of the massacre's own article runs from the coup to the force that did the killing: France \"announced after the 2020 Malian coup d'état their intention to gradually reduce the number of French forces and withdraw them from the country. Mali has since looked for other ways to acquire foreign help, and has received help from Wagner Group, a Russian private military company.\" The lead names Wagner, with the Malian army, as who carried the massacre out. The edge is `precondition-of`, which says the coup supplied something the massacre needed without causing it. The article argues why those troops were in Mali and says nothing about why they killed. The confidence is `probable` because the only source is Wikipedia.",
   "dispute": null
 }

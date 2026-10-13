@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-02",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -44,6 +44,6 @@
     "label": "Praia"
   },
   "region": "africa",
-  "regionNote": "No lane polygon reaches Cape Verde, which is 570 km off the African coast and outside the nearest-lane tolerance; the archipelago is in Africa and the lane says so here rather than the timeline drawing the event in none.",
+  "regionNote": "No lane polygon reaches Cape Verde, which is 570 km off the African coast and outside the nearest-lane tolerance. The archipelago is in Africa, and the lane says so here rather than letting the timeline draw the event in none.",
   "summary": null
 }
