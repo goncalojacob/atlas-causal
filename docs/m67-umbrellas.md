@@ -1537,3 +1537,23 @@ The writer imported `1556-shaanxi-earthquake` from the planner's queue under the
 ## Writer, 13 October 2026: `attack-on-pearl-harbor`, filed under `world-war-ii` with neither an actor nor a place
 
 The writer imported `attack-on-pearl-harbor` from the planner's queue under the owner's priority of 13 October (A17) and filed it under `world-war-ii` as the queue said. The item names no actor the atlas holds and no place the import could use. The span and the subject put it inside the umbrella. The planner adds a place or an actor when a source gives one.
+
+## Writer A, 2026-10-13: `persian-constitutional-revolution`, filed under `constitutionalization-attempts-in-iran` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-13-asia-014`, rank `vital-4`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-13: `first-opium-war`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-13-asia-015`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-13: `taiping-rebellion`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-13-asia-016`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-13: `1931-china-floods`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-13-asia-019`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-13: `nanjing-massacre`, filed under `second-sino-japanese-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-13-asia-020`, rank `vital-4`. Its span and its subject put it inside the umbrella.

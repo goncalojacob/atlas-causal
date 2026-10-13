@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "great-leap-forward",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q58715",
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Great Leap Forward",
+    "pt": "Grande Salto Adiante"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q58715"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Leap Forward\", revision 1379962036"
+    }
+  ],
+  "title": "Great Leap Forward",
+  "summary": "The English Wikipedia article \"Great Leap Forward\", at revision 1379962036, opens: \"The Great Leap Forward was an industrialization campaign within China from 1958 to 1962, initiated by Mao Zedong, chairman of the Chinese Communist Party, whose goal was to transform the country from an agrarian society to an industrialized society through the formation of people's communes. The Great Leap Forward led to between 15 and 55 million deaths in mainland China during the 1959–1961 Great Chinese Famine it caused, making it the largest or second-largest famine in human history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q58715, imported by tools/import/wikidata.mjs. The item's own description reads \"1958–1962 Chinese socioeconomic campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1958,
+    "end": 1962,
+    "date": "1958-02"
+  },
+  "place": "people-s-republic-of-china",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

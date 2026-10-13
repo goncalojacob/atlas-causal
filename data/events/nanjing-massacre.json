@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nanjing-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q192055",
+  "wikipedia": {
+    "en": "Nanjing Massacre",
+    "pt": "Massacre de Nanquim"
+  },
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-10-13"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q192055"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nanjing Massacre\", revision 1378219981"
+    }
+  ],
+  "title": "Nanjing Massacre",
+  "summary": "The English Wikipedia article \"Nanjing Massacre\", at revision 1378219981, opens: \"The Nanjing Massacre or the Rape of Nanjing was the mass rape and murder, between December 1937 and March 1938, of Chinese civilians, noncombatants, and prisoners of war by the Imperial Japanese Army in Nanjing, the capital of the Republic of China. It took place immediately after the Battle of Nanjing and retreat of the National Revolutionary Army during the Second Sino-Japanese War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q192055, imported by tools/import/wikidata.mjs. The item's own description reads \"1937 mass murder by the Japanese army\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1937,
+    "end": 1938,
+    "date": "1937-12-13",
+    "endDate": "1938-02-02"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "second-sino-japanese-war",
+  "actors": []
+}
