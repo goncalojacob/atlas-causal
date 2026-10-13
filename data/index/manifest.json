@@ -19,43 +19,43 @@
       "to": 1399
     },
     {
-      "file": "index/attributes-1400-1499-f4ee6380da7c.json",
+      "file": "index/attributes-1400-1499-bcc0680c3bf4.json",
       "from": 1400,
       "key": "1400-1499",
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-b3adb173b194.json",
+      "file": "index/attributes-1500-1599-c8615e79a295.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
     },
     {
-      "file": "index/attributes-1600-1699-2996f87a7dfd.json",
+      "file": "index/attributes-1600-1699-df2f1093ee0a.json",
       "from": 1600,
       "key": "1600-1699",
       "to": 1699
     },
     {
-      "file": "index/attributes-1700-1799-d4c3d6229863.json",
+      "file": "index/attributes-1700-1799-2ff1cfaa568c.json",
       "from": 1700,
       "key": "1700-1799",
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-177b97092344.json",
+      "file": "index/attributes-1800-1899-009ab7b4d2f6.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-2015c8699882.json",
+      "file": "index/attributes-1900-1999-3512a434a081.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
     },
     {
-      "file": "index/attributes-2000-2099-884709711deb.json",
+      "file": "index/attributes-2000-2099-60be79e8ee07.json",
       "from": 2000,
       "key": "2000-2099",
       "to": 2099
@@ -1037,37 +1037,37 @@
   },
   "explanationShards": [
     {
-      "file": "index/explanations-1400-1499-686ac5c63d90.json",
+      "file": "index/explanations-1400-1499-c0d6e0d5271b.json",
       "from": 1400,
       "to": 1499
     },
     {
-      "file": "index/explanations-1500-1599-0c61197be1e3.json",
+      "file": "index/explanations-1500-1599-ace3e0b7772b.json",
       "from": 1500,
       "to": 1599
     },
     {
-      "file": "index/explanations-1600-1699-27a77ec75eef.json",
+      "file": "index/explanations-1600-1699-3b725b0b678d.json",
       "from": 1600,
       "to": 1699
     },
     {
-      "file": "index/explanations-1700-1799-8967cf94d281.json",
+      "file": "index/explanations-1700-1799-cbae45c73245.json",
       "from": 1700,
       "to": 1799
     },
     {
-      "file": "index/explanations-1800-1899-b066465b7b8a.json",
+      "file": "index/explanations-1800-1899-c968b6745086.json",
       "from": 1800,
       "to": 1899
     },
     {
-      "file": "index/explanations-1900-1999-2289babb4482.json",
+      "file": "index/explanations-1900-1999-3899fefa94d7.json",
       "from": 1900,
       "to": 1999
     },
     {
-      "file": "index/explanations-2000-2099-3916de9b266d.json",
+      "file": "index/explanations-2000-2099-7a874fa430c5.json",
       "from": 2000,
       "to": 2099
     }
@@ -1077,105 +1077,105 @@
     "core": "index/core-ecbdf6bc5614.json",
     "grounds": "index/grounds-9f8968913fe0.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-1a5048b2625a.json",
+    "review": "index/review-96e27223ccac.json",
     "search": "index/search-88643ada8d4b.json",
     "sources": "index/sources-81498b2200fc.json",
     "territories": "index/territories-8b193e5048dd.json"
   },
   "historyShards": [
     {
-      "file": "index/history-event-1400-1499-8cedb76dfdcc.json",
+      "file": "index/history-event-1400-1499-228385a43295.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "event",
       "to": 1499
     },
     {
-      "file": "index/history-event-1500-1599-98e28d11bb4b.json",
+      "file": "index/history-event-1500-1599-8612f6092ca5.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "event",
       "to": 1599
     },
     {
-      "file": "index/history-event-1600-1699-431a748bd3ac.json",
+      "file": "index/history-event-1600-1699-a4430e34acaf.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "event",
       "to": 1699
     },
     {
-      "file": "index/history-event-1700-1799-189893c112d7.json",
+      "file": "index/history-event-1700-1799-6870d9141b88.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "event",
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-df7de7627130.json",
+      "file": "index/history-event-1800-1899-fd12f8f22fbb.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-d05163821b54.json",
+      "file": "index/history-event-1900-1999-947a84f73d01.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
       "to": 1999
     },
     {
-      "file": "index/history-event-2000-2099-c48748c9f0ea.json",
+      "file": "index/history-event-2000-2099-f4b53e6709da.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "event",
       "to": 2099
     },
     {
-      "file": "index/history-edge-1400-1499-cea92f68e79d.json",
+      "file": "index/history-edge-1400-1499-b71764a1669a.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "edge",
       "to": 1499
     },
     {
-      "file": "index/history-edge-1500-1599-9bd95ba3e3a8.json",
+      "file": "index/history-edge-1500-1599-2eb6a715b5e4.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "edge",
       "to": 1599
     },
     {
-      "file": "index/history-edge-1600-1699-26b55affe362.json",
+      "file": "index/history-edge-1600-1699-43e59a192bb8.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "edge",
       "to": 1699
     },
     {
-      "file": "index/history-edge-1700-1799-c46634a37819.json",
+      "file": "index/history-edge-1700-1799-7d18e8c00d9c.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "edge",
       "to": 1799
     },
     {
-      "file": "index/history-edge-1800-1899-2e27bdc1199d.json",
+      "file": "index/history-edge-1800-1899-4d07cbcde460.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "edge",
       "to": 1899
     },
     {
-      "file": "index/history-edge-1900-1999-05e3cfa2abee.json",
+      "file": "index/history-edge-1900-1999-fe2ea3024836.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "edge",
       "to": 1999
     },
     {
-      "file": "index/history-edge-2000-2099-bad6a4c0b427.json",
+      "file": "index/history-edge-2000-2099-c09b8aa40fdd.json",
       "from": 2000,
       "key": "2000-2099",
       "kind": "edge",
