@@ -135,7 +135,11 @@ test('a disputed link\'s card has the dispute as a section of its own, and a set
 
 test('choosing a link narrows nothing: the picture is the same with it and without', () => {
   for (const which of [atlas, fixtures]) {
-    const edge = [...which.edges.values()].find((e) => e.status === 'active');
+    // A reader chooses a line that is drawn, so the edge under test is one
+    // whose two ends are in the resting picture (since 13 October the corpus
+    // holds edges from events that are not drawn at rest).
+    const rest = workingSet(which, state()).shown;
+    const edge = [...which.edges.values()].find((e) => e.status === 'active' && rest.has(e.from) && rest.has(e.to));
     // At rest, and inside a lens of one on an event, which is what a reader
     // most often has open when they reach for a line.
     for (const base of [state(), state({ selected: edge.from })]) {
