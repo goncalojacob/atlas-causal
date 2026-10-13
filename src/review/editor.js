@@ -89,7 +89,7 @@ export function identityBlock(record) {
     list.appendChild(html('li', { class: 'muted' }, `Wikipedia has an article in ${count} language${count === 1 ? '' : 's'}`));
   }
   wrap.appendChild(list);
-  wrap.appendChild(html('p', { class: 'hint' }, 'Read-only. The Wikidata import wrote these fields, so correct them on Wikidata.'));
+  wrap.appendChild(html('p', { class: 'hint' }, 'Read-only. The Wikidata import wrote these fields, so correct them in the import.'));
   return wrap;
 }
 

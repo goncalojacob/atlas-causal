@@ -124,7 +124,7 @@ export function createSearchBox(container, { atlas, state, fixtures = false, sha
           <span class="search-label">${esc(item.label)}</span>
           <span class="when">${esc(when)}</span>
           ${item.detail ? `<span class="muted">${esc(item.detail)}</span>` : ''}${also}
-          ${out ? '<span class="badge outside">hidden by the current filter</span>' : ''}
+          ${out ? '<span class="badge outside">outside the lens</span>' : ''}
           ${ENTRY_KINDS.includes(item.kind) ? `<a class="search-entry" href="${esc(links.entry(item.kind, item.id))}" tabindex="-1" title="Read the full entry on its own page">full entry</a>` : ''}
         </li>`;
         i += 1;
