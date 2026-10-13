@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "attack-on-pearl-harbor",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q52418",
+  "wikipedia": {
+    "en": "Attack on Pearl Harbor",
+    "pt": "Ataque a Pearl Harbor"
+  },
+  "sitelinks": {
+    "count": 85,
+    "on": "2026-10-13"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q52418"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Attack on Pearl Harbor\", revision 1379958593"
+    }
+  ],
+  "title": "Attack on Pearl Harbor",
+  "summary": "The English Wikipedia article \"Attack on Pearl Harbor\", at revision 1379958593, opens: \"The Empire of Japan launched a surprise military attack on the US Pacific Fleet at its naval base at Pearl Harbor in Oahu, Hawaii, on December 7, 1941. At the time, the US was a neutral country in World War II. The air raid on Pearl Harbor, which was launched from aircraft carriers, prompted the US to declare war on Japan the next day. The Japanese military leadership referred to the attack as the Hawaii Operation and Operation AI, and as Operation Z during its planning.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q52418, imported by tools/import/wikidata.mjs. The item's own description reads \"1941 Japanese surprise attack on the U.S\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1941,
+    "end": 1941,
+    "date": "1941-12-07"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "world-war-ii",
+  "category": "war",
+  "actors": []
+}

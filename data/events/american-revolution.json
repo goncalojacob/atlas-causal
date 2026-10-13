@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "american-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q192769",
+  "wikipedia": {
+    "en": "American Revolution",
+    "pt": "Revolução Americana"
+  },
+  "sitelinks": {
+    "count": 83,
+    "on": "2026-10-13"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q192769"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"American Revolution\", revision 1378206757"
+    }
+  ],
+  "title": "American Revolution",
+  "summary": "The English Wikipedia article \"American Revolution\", at revision 1378206757, opens: \"The American Revolution (1765–1789) was a political movement in the Thirteen Colonies of Great Britain. It began as a rebellion and turned into a revolution eventually creating the sovereign United States, which was the outcome of the associated American Revolutionary War (1775–1783). The Second Continental Congress, as the provisional government, established the Continental Army and appointed George Washington as its commander-in-chief in 1775. The following year, the Congress passed the Lee Resolution on July 2nd and unanimously adopted the Declaration of Independence on July 4th. Throughout most of the war, the outcome appeared uncertain, but a 1781 victory by Washington and the Continental Army in the Siege of Yorktown led King George III and the Fox–North coalition in government to negotiate the cessation of colonial rule and the acknowledgment of American sovereignty, which was formalized in the Treaty of Paris, signed on September 3, 1783. The Constitution took effect in 1789 and the Bill of Rights was ratified in 1791.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q192769, imported by tools/import/wikidata.mjs. The item's own description reads \"revolution establishing the United States of America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1783
+  },
+  "place": "thirteen-colonies",
+  "region": null,
+  "regionNote": null,
+  "parent": "atlantic-revolutions",
+  "actors": []
+}
