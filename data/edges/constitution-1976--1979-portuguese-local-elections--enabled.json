@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -37,6 +37,6 @@
   "to": "1979-portuguese-local-elections",
   "type": "enabled",
   "confidence": "consensus",
-  "explanation": "The clause that created elected local government in 1976 is what this ballot exercises, and the atlas wires it separately from the first exercise of that clause because the second time is when the thing became an institution rather than an act of foundation. The mandates run four years and the calendar is the constitution's, not the government's: 1979 falls a fortnight after a legislative election it had nothing to do with, and no local election since has been called by anybody.",
+  "explanation": "This ballot uses the clause that created elected local government in 1976. The atlas draws it separately from the first use of that clause because the second time is when the thing became an institution. The mandates run four years, so the constitution sets the calendar and no government does. The ballot of 1979 falls a fortnight after a legislative election it had nothing to do with, and since then nobody has called a local election.",
   "dispute": null
 }

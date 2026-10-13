@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": "2026-10-13",
   "origin": {
     "tool": "wikidata"
   },
@@ -48,11 +48,11 @@
   },
   "place": null,
   "region": "europe",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
   "category": "revolution",
   "actors": [],
   "retraction": {
     "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 8 under brief §1: the record earns no honest edge. What the English article, at revision 1375001338, says the coup did — extinguish the Obrenović dynasty, pass the throne to the Karađorđević, and turn Serbia away from Austria-Hungary towards Russia and France — reaches no record this atlas holds; its Legacy section is a television series and a novel. It waits on a record of Serbia between 1903 and 1912, or on a page that argues a line from it to the Balkan wars or to Sarajevo."
+    "reason": "Retracted in M42 batch 8 under brief §1: the record earns no honest edge. The English article, at revision 1375001338, says the coup extinguished the Obrenović dynasty, passed the throne to the Karađorđević, and turned Serbia away from Austria-Hungary towards Russia and France. None of that reaches a record this atlas holds, and the article's Legacy section is a television series and a novel. The record waits on a record of Serbia between 1903 and 1912, or on a page that argues a line from the coup to the Balkan wars or to Sarajevo."
   }
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-02",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -39,7 +39,7 @@
   "to": "allied-invasion-of-sicily",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "“Casablanca Conference”, at revision 1369040863, lead: “Key decisions included a commitment to demand Axis powers’ unconditional surrender; plans for an invasion of Sicily and Italy before the main invasion of France… Of all the decisions made, the most important was the Allied invasion of Sicily, which Churchill pushed for in part to divert American attention from opening a second front in France in 1943.” The same article’s § Strategy gives the argument that carried it: Churchill and the British Chiefs of Staff “favored an Allied assault on the island of Sicily followed by an invasion of mainland Italy”, against Roosevelt’s cross-Channel invasion. `caused` rather than `precondition-of`: the article does not say the conference made the invasion possible, it says the invasion was the conference’s decision, and names the man who argued for it and what he argued against. `probable`, not `consensus`: A2 allows `consensus` only through a work Wikipedia cites, and rule 22 would refuse it on a Wikipedia citation anyway. A15(5): the quote states a cause, and `verdictFor` names no third event this atlas holds inside it.",
+  "explanation": "“Casablanca Conference”, at revision 1369040863, lead: “Key decisions included a commitment to demand Axis powers’ unconditional surrender; plans for an invasion of Sicily and Italy before the main invasion of France… Of all the decisions made, the most important was the Allied invasion of Sicily, which Churchill pushed for in part to divert American attention from opening a second front in France in 1943.” The same article’s § Strategy gives the argument that carried it. Churchill and the British Chiefs of Staff “favored an Allied assault on the island of Sicily followed by an invasion of mainland Italy”, against Roosevelt’s cross-Channel invasion. The type is `caused` because the article makes the invasion the conference’s own decision, and names the man who argued for it and what he argued against. The article does not say the conference made the invasion possible. The confidence is `probable` because A2 allows `consensus` only through a work Wikipedia cites, and rule 22 refuses it on a Wikipedia citation. On A15(5), the quote states a cause, and `verdictFor` names no third event this atlas holds inside it.",
   "dispute": null,
   "origin": {
     "tool": "assistant"

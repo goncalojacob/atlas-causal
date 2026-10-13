@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": "2026-10-01",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -64,7 +64,7 @@
   },
   "place": null,
   "region": "asia",
-  "regionNote": "Lane written by the Wikidata import (from Q801, the country the item names): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane from Q801, the country the item names. The event points at no place record, so the timeline has nothing else to go on.",
   "parent": "arab-israeli-conflict",
   "category": "war",
   "actors": []
