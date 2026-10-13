@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "soviet-invasion-of-poland",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The invasion’s own lead names the pact as what stood behind it: “The Soviet invasion of Poland was indirectly indicated in the ‘secret protocol’ of the Molotov–Ribbentrop Pact signed on 23 August 1939, which divided Poland into ‘spheres of influence’ of the two powers.” `enabled` and not `caused`: the protocol assigned the eastern half of Poland to the Soviet Union and so made the march in of 17 September possible without a German war, which is what an agreement between the two powers could do and what it could not do is order it.",
+  "explanation": "The invasion's lead names the pact as what stood behind it: “The Soviet invasion of Poland was indirectly indicated in the ‘secret protocol’ of the Molotov–Ribbentrop Pact signed on 23 August 1939, which divided Poland into ‘spheres of influence’ of the two powers.” The type is `enabled`. The protocol assigned the eastern half of Poland to the Soviet Union and so let the Red Army march in on 17 September without risking a war with Germany. An agreement between the two powers could do that much. It could not order the invasion.",
   "dispute": null
 }

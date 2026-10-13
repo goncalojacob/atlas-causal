@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "simba-rebellion",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "This is the one edge of the batch the article states as plain causation and in that word: of the Kwilu risings of January and February 1964 it says that \"As violence increased and attacks became more frequent, it sparked similar uprisings throughout the country, triggering the Simba rebellion.\" The Simba article agrees that the two are one movement without claiming the order — the Simba rising \"was contemporaneous with the Kwilu rebellion led by fellow Lumumbist Pierre Mulele in central Congo\" — and it is the Kwilu article that says which came first and what it did. Caused, because \"triggering\" is what the source says and nothing weaker would be honest to it. Probable: Wikipedia alone (rule 22).",
+  "explanation": "The Kwilu article states plain causation. Of the risings of January and February 1964 it says that \"As violence increased and attacks became more frequent, it sparked similar uprisings throughout the country, triggering the Simba rebellion.\" The Simba article treats the two as one movement and does not say which came first. It says the Simba rising \"was contemporaneous with the Kwilu rebellion led by fellow Lumumbist Pierre Mulele in central Congo\". The Kwilu article is the one that gives the order and says what the earlier rising did. The type is `caused` because the source says \"triggering\". The confidence is probable, because Wikipedia is the only source here (rule 22).",
   "dispute": null
 }

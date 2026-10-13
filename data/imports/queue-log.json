@@ -840,6 +840,128 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-046",
+      "writer": "A",
+      "fired": "2026-10-13T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "indian-independence-movement",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-047",
+      "writer": "A",
+      "fired": "2026-10-13T06:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q213394 is already the event \"sri-lankan-civil-war\""
+    },
+    {
+      "id": "2026-10-13-asia-048",
+      "writer": "A",
+      "fired": "2026-10-13T06:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q178810 is already the event \"syrian-civil-war\""
+    },
+    {
+      "id": "2026-10-13-europe-055",
+      "writer": "A",
+      "fired": "2026-10-13T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "magellan-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-056",
+      "writer": "A",
+      "fired": "2026-10-13T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "counter-reformation",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-057",
+      "writer": "A",
+      "fired": "2026-10-13T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "livonian-war",
+        "edges": [],
+        "place": "northern-europe"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-058",
+      "writer": "A",
+      "fired": "2026-10-13T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "french-wars-of-religion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-059",
+      "writer": "A",
+      "fired": "2026-10-13T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "eighty-years-war",
+        "edges": [],
+        "place": "low-countries"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-062",
+      "writer": "A",
+      "fired": "2026-10-13T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "english-civil-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-063",
+      "writer": "A",
+      "fired": "2026-10-13T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "peace-of-westphalia",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

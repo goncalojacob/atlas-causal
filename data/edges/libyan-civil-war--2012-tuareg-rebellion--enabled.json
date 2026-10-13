@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "2012-tuareg-rebellion",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The rebellion’s article says where its fighters and their weapons came from: “The MNLA was formed by former insurgents and a significant number of heavily armed Tuaregs who fought in the Libyan Civil War.” `enabled`, because the Tuareg claim on Azawad is older — the same sentence calls the rising “part of a series of insurgencies by traditionally nomadic Tuaregs which date back at least to 1916” — and what Libya supplied was the men and the arms.",
+  "explanation": "The rebellion's article says where its fighters and their weapons came from: “The MNLA was formed by former insurgents and a significant number of heavily armed Tuaregs who fought in the Libyan Civil War.” The type is `enabled`, because the Tuareg claim on Azawad is older. The same article calls the rising “part of a series of insurgencies by traditionally nomadic Tuaregs which date back at least to 1916”. Libya supplied the men and the arms.",
   "dispute": null
 }

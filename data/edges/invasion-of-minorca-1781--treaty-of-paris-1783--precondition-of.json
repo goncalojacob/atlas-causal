@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "treaty-of-paris-1783",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Minorca's article carries the whole argument: \"an important step in the achievement of Spain's aims in its alliance with France against Britain during the American Revolutionary War. The ultimate result was the devolution of the island to Spain in the Treaty of Paris in 1783.\" Precondition-of: the island had to be taken before it could be ceded.",
+  "explanation": "Minorca's article carries the whole argument: \"an important step in the achievement of Spain's aims in its alliance with France against Britain during the American Revolutionary War. The ultimate result was the devolution of the island to Spain in the Treaty of Paris in 1783.\" The type is precondition-of, because the island had to be taken before it could be ceded.",
   "dispute": null
 }

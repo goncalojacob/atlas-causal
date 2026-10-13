@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,6 +34,6 @@
   "to": "damour-massacre",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "The later record's own cited article says it in its lead, in one sentence: \"The attack was retaliation for the Karantina massacre by the Phalangists.\" Two days separate them — 18 January 1976 and 20 January — and the article's § Background opens on the earlier one, \"In the Karantina massacre on 18 January 1976, Kataeb Regulatory Forces killed 1,000 to 1,500 people.\" `reacted-to` and not `caused`: what the article states is the answer one side gave, not a mechanism by which the first attack produced the second. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "explanation": "The later record's own cited article says it in its lead, in one sentence: \"The attack was retaliation for the Karantina massacre by the Phalangists.\" Two days separate them, 18 January 1976 and 20 January, and the article's § Background opens on the earlier one: \"In the Karantina massacre on 18 January 1976, Kataeb Regulatory Forces killed 1,000 to 1,500 people.\" The type is `reacted-to`. What the article states is the answer one side gave, and it names no mechanism by which the first attack produced the second. The confidence is `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
   "dispute": null
 }

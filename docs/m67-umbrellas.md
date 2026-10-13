@@ -1596,3 +1596,23 @@ Writer A imported it from the planner's queue as item `2026-10-13-asia-045`, ran
 ## Writer B, 2026-10-13: `dust-bowl`, bare
 
 Writer B imported it from the planner's queue as item `2026-10-13-americas-051`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-13: `indian-independence-movement`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-13-asia-046`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-13: `magellan-expedition`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-13-europe-055`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-13: `french-wars-of-religion`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-13-europe-058`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-13: `english-civil-war`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-13-europe-062`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-13: `peace-of-westphalia`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-13-europe-063`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.

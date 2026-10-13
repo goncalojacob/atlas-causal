@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": "2026-09-21",
+  "revised": "2026-10-13",
   "origin": {
     "tool": "wikidata"
   },
@@ -48,10 +48,10 @@
   },
   "place": null,
   "region": "europe",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
   "actors": [],
   "retraction": {
     "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 8 under brief §1: the record the pages argue from is one this atlas holds and cannot be joined to. The English article, at revision 1373958443, puts the war's political background in the last years of the Soviet Union, and the record that stands in that place here is the dissolution of the Soviet Union, which the atlas dates 26 December 1991 — after this war's start of 2 November 1990, so rule 4 refuses the edge. No imported date was widened to make it fit, which is deviation 989's rule. It waits on a record of perestroika or of the Moldovan independence of 1991."
+    "reason": "Retracted in M42 batch 8 under brief §1: the record the pages argue from is one this atlas holds and cannot be joined to. The English article, at revision 1373958443, puts the war's political background in the last years of the Soviet Union. The record that stands in that place here is the dissolution of the Soviet Union, which the atlas dates 26 December 1991. That is after this war's start of 2 November 1990, so rule 4 refuses the edge. Nobody widened an imported date to make it fit, which is deviation 989's rule. It waits on a record of perestroika or of the Moldovan independence of 1991."
   }
 }

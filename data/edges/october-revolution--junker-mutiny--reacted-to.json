@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "junker-mutiny",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "The mutiny’s article is one sentence and it is the whole argument: “The Junker mutiny was a Russian counterrevolutionary mutiny of military school cadets in Petrograd against the Bolsheviks in October 1917.” A rising against the men who had taken power days before is the plainest case `reacted-to` exists for, and the edge is written in this atlas’s direction for that type — the thing reacted to first, the reaction second, as rule 4 requires. The atlas dates the revolution 25–26 October in the Old Style the record carries and the mutiny 11 November in the New, which is eleven days apart on one calendar and two on the other; neither date was changed here.",
+  "explanation": "The mutiny's article is one sentence and it is the whole argument: “The Junker mutiny was a Russian counterrevolutionary mutiny of military school cadets in Petrograd against the Bolsheviks in October 1917.” A rising against the men who had taken power days before is the plainest case `reacted-to` exists for. The edge runs in this atlas's direction for that type, the thing reacted to first and the reaction second, as rule 4 requires. The atlas dates the revolution 25 and 26 October in the Old Style the record carries, and the mutiny 11 November in the New Style. That is eleven days apart on one calendar and two on the other. This run changed neither date.",
   "dispute": null
 }

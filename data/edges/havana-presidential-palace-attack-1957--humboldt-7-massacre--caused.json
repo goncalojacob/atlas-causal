@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "humboldt-7-massacre",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The massacre’s lead identifies its four dead by the earlier attack: the men killed by Havana police on 20 April 1957 “had taken part in the Havana Presidential Palace attack and the seizure of the Radio Reloj station”. The palace attack of 13 March was, in its own lead, a failed attempt on Batista’s life by the Directorio Revolucionario 13 de Marzo, and the four killed were of that group. `caused` is the type the article’s own identification supports — the killings were of the attack’s surviving participants, five weeks after it — and the confidence is `probable` rather than `consensus`: the lead states who the dead were, not that the police acted in answer to the attack, and rule 22 refuses `consensus` on a Wikipedia citation.",
+  "explanation": "The massacre’s lead identifies its four dead by the earlier attack: the men killed by Havana police on 20 April 1957 “had taken part in the Havana Presidential Palace attack and the seizure of the Radio Reloj station”. The palace attack of 13 March was, in its own lead, a failed attempt on Batista’s life by the Directorio Revolucionario 13 de Marzo, and the four killed were of that group. The article’s own identification supports the type `caused`, because the dead were the attack’s surviving participants and the killings came five weeks after it. The confidence is `probable` rather than `consensus`. The lead states who the dead were and stops short of saying that the police acted in answer to the attack, and rule 22 refuses `consensus` on a Wikipedia citation.",
   "dispute": null
 }

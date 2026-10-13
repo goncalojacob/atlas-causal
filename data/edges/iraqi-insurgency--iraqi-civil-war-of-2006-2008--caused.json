@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "iraqi-civil-war-of-2006-2008",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The civil war’s article names the insurgency as the thing that became it, and the day it did: “In February 2006, the insurgency against the coalition and government escalated into a sectarian civil war after the bombing of Al-Askari Shrine, considered a holy site in Twelver Shi’ism.” One conflict escalating into another is what `caused` is for here. The confidence is `probable` and not `consensus` because the only citation is an encyclopedia article, which is rule 22.",
+  "explanation": "The civil war’s article names the insurgency as the thing that became it, and the day it did: “In February 2006, the insurgency against the coalition and government escalated into a sectarian civil war after the bombing of Al-Askari Shrine, considered a holy site in Twelver Shi’ism.” One conflict growing into another is what `caused` is for here. The confidence is `probable` rather than `consensus`, because the only citation is an encyclopedia article, under rule 22.",
   "dispute": null
 }

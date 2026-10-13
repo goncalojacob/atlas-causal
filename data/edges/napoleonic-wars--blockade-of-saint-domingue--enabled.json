@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "blockade-of-saint-domingue",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The blockade's own lead calls it \"a naval campaign fought during the first months of the Napoleonic Wars in which a series of British Royal Navy squadrons blockaded the French-held ports of Cap-Français and Môle-Saint-Nicolas\", and its background dates the opening to the war: \"In the summer of 1803, when war broke out between the United Kingdom and the French Consulate\", and \"On 18 June 1803 two squadrons were sent to enact a blockade of the principal northern ports in French hands.\" Enabled and not caused: the renewed war is what let British squadrons attack French ports, not why those ports were worth attacking. Probable: Wikipedia alone.",
+  "explanation": "The blockade's lead calls it \"a naval campaign fought during the first months of the Napoleonic Wars in which a series of British Royal Navy squadrons blockaded the French-held ports of Cap-Français and Môle-Saint-Nicolas\". Its background dates the opening to the war, \"In the summer of 1803, when war broke out between the United Kingdom and the French Consulate\", and \"On 18 June 1803 two squadrons were sent to enact a blockade of the principal northern ports in French hands.\" The type is `enabled`. The renewed war let British squadrons attack French ports. It does not explain why those ports were worth attacking. The confidence is probable, on Wikipedia alone.",
   "dispute": null
 }

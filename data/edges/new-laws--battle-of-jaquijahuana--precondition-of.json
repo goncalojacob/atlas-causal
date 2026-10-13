@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-30",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,6 +34,6 @@
   "to": "battle-of-jaquijahuana",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The article states the New Laws as what put Gonzalo Pizarro’s army together: “De la Gasca landed in Peru in 1547, winning supporters to his initially inferior forces by promising amnesty to those having committed treason to the crown, and proclaimed he would not enforce the New Laws, whose dispositions demanding better conditions for native laborers had led many powerful encomenderos to join Pizarro’s cause.” The same article has Charles V send Blasco Núñez Vela to Peru “to ensure the accomplishment of the New Laws enacted in 1542”. So the two sides that met at Jaquijahuana are the two sides of the New Laws, and de la Gasca won by suspending them. `precondition-of` and not `caused`: the battle is the end of a revolt the article dates from 1544, four years on, and the laws are its standing cause rather than its occasion. `probable`, because the only source the atlas can open here is the article (rule 22).",
+  "explanation": "The article states the New Laws as what put Gonzalo Pizarro's army together: “De la Gasca landed in Peru in 1547, winning supporters to his initially inferior forces by promising amnesty to those having committed treason to the crown, and proclaimed he would not enforce the New Laws, whose dispositions demanding better conditions for native laborers had led many powerful encomenderos to join Pizarro’s cause.” The same article has Charles V send Blasco Núñez Vela to Peru “to ensure the accomplishment of the New Laws enacted in 1542”. The two sides that met at Jaquijahuana are the two sides of the New Laws, and de la Gasca won by suspending them. The type is `precondition-of`, because the battle ends a revolt the article dates from 1544, four years after the laws. The laws are the standing cause of that revolt and not its occasion. The confidence is `probable`, because the article is the only source the atlas can open here (rule 22).",
   "dispute": null
 }

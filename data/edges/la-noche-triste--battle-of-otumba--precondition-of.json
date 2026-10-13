@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "battle-of-otumba",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Otumba was fought by the army that had just got out of the city, on the road it got out along. The Battle of Otumba article's § Background: \"Cortés then started a retreat to Tlaxcala, during which his force was harassed by Aztec skirmishers, and the Aztec leadership resolved to eliminate them as they withdrew\", and its § Battle opens \"After being beleaguered on the causeway leading out of the city, the surviving Spanish forces arrived at the plain of Otumba.\" The Fall of Tenochtitlan article says the same: \"Before reaching Tlaxcala, the scanty Spanish forces arrived at the plain of Otumba Valley (Otompan), where they were met by a vast Aztec army intent on their destruction. The Aztecs intended to cut short the Spanish retreat from Tenochtitlan and annihilate them.\" `precondition-of`: the flight is what put the two armies on that plain, and no article says the flight caused the battle to be fought. Probable: Wikipedia alone, at two revisions.",
+  "explanation": "Otumba was fought by the army that had just got out of the city, on the road it left along. The Battle of Otumba article's § Background reads \"Cortés then started a retreat to Tlaxcala, during which his force was harassed by Aztec skirmishers, and the Aztec leadership resolved to eliminate them as they withdrew\". Its § Battle opens \"After being beleaguered on the causeway leading out of the city, the surviving Spanish forces arrived at the plain of Otumba.\" The Fall of Tenochtitlan article says the same. It reads \"Before reaching Tlaxcala, the scanty Spanish forces arrived at the plain of Otumba Valley (Otompan), where they were met by a vast Aztec army intent on their destruction. The Aztecs intended to cut short the Spanish retreat from Tenochtitlan and annihilate them.\" The type is `precondition-of`, because the flight put the two armies on that plain and no article says the flight caused the battle. The confidence is probable, on Wikipedia alone at two revisions.",
   "dispute": null
 }

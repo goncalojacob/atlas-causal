@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -38,6 +38,6 @@
   "to": "bretton-woods-system",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Bretton Woods was designed against the 1930s and against nothing else. The fixed but adjustable parities, the fund that would lend a country in deficit rather than leave it to devalue, and the prohibition on the competitive devaluation and the bilateral clearing that had broken world trade after 1931 are all answers to what the delegates had lived through. The claim is that the depression set the problem the conference was convened to solve; it is not a claim about which of the two plans on the table, the American or the British, the answer was taken from.",
+  "explanation": "Bretton Woods was designed against the 1930s. The fixed but adjustable parities, the fund that would lend a country in deficit rather than leave it to devalue, and the ban on the competitive devaluation and the bilateral clearing that had broken world trade after 1931 are all answers to what the delegates had lived through. The claim is that the Depression set the problem the conference met to solve. It says nothing about which of the two plans on the table, the American or the British, the answer came from.",
   "dispute": null
 }

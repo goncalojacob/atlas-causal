@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,6 @@
   "to": "dutch-brazil-1630-1654",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "What the West India Company took in 1630 was not an empty coast. It was a royal colony with a capital, a government, a church and a working sugar economy — the thing the captaincies had failed to produce and the crown had installed in 1549. A colony is worth conquering when somebody else has already built it, and the Company took the built part: at its height it held almost half of the settled European area of Brazil, with its headquarters at Recife.",
+  "explanation": "What the West India Company took in 1630 was a royal colony with a capital, a government, a church and a working sugar economy. The captaincies had failed to produce that, and the crown installed it in 1549. A colony is worth conquering when somebody else has already built it, and the Company took the built part. At its height it held almost half of the settled European area of Brazil, with its headquarters at Recife.",
   "dispute": null
 }

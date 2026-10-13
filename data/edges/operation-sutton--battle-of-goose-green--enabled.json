@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "battle-of-goose-green",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "Goose Green's lead explains the objective by where the British had come ashore: the Argentine force held \"a well-defended position within striking distance of San Carlos Water, where the British task force had positioned themselves after their amphibious landing.\" That landing is Operation Sutton. The article states the position and the reach between them and stops short of saying the landing made the battle inevitable, so this is `enabled` and `probable`: the beachhead is what put a British brigade within a day's march of the isthmus.",
+  "explanation": "The lead of Goose Green explains the objective by where the British had come ashore. The Argentine force held \"a well-defended position within striking distance of San Carlos Water, where the British task force had positioned themselves after their amphibious landing.\" That landing is Operation Sutton. The article states the position and the distance between them and stops short of saying the landing made the battle unavoidable, so the type is `enabled` and the confidence is `probable`. The beachhead put a British brigade within a day's march of the isthmus.",
   "dispute": null
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "falklands-war",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The invasion's own lead states it in one sentence: \"The invasion served as a catalyst for the subsequent Falklands War.\" The word the article chooses is catalyst and not cause, which is why this is `probable` and not `consensus`; rule 22 would refuse `consensus` on a Wikipedia citation in any case. The edge is written beside the filing and not instead of it: the invasion is also part of the war, and in this atlas `parent` is a display fact that never enters the adjacency, so saying that the landing of 2 April set off what followed is an argument the graph has to carry on its own.",
+  "explanation": "The invasion's lead states it in one sentence: \"The invasion served as a catalyst for the subsequent Falklands War.\" The article chooses the word catalyst, so the confidence is `probable`. Rule 22 would refuse `consensus` on a Wikipedia citation in any case. The edge stands beside the filing. The invasion is also part of the war, and in this atlas `parent` is a display fact that never enters the adjacency, so the graph has to carry on its own the claim that the landing of 2 April set off what followed.",
   "dispute": null
 }

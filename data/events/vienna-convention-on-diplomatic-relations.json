@@ -13,13 +13,13 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": "2026-09-24",
+  "revised": "2026-10-13",
   "origin": {
     "tool": "wikidata"
   },
   "retraction": {
     "on": "2026-09-24",
-    "reason": "Re-read on 24 September under A14(6) against the bar that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is 859 active events across all five lanes, not the Portuguese core M44b judged this against. The convention of 1961 codified immunities that were customary law long before the United Nations existed, and the single edge this atlas could carry for it — that the International Law Commission drafted it and the General Assembly adopted it — is true of a dozen records and argues nothing. The world corpus has added no event it decided. It stays retracted under the new bar."
+    "reason": "Re-read on 24 September under A14(6), against the rule that replaced M44b’s: a record earns its place by carrying at least one honest edge to anything already in the atlas, and nothing is written in order to keep one. The corpus is now 859 active events across all five lanes, and no longer the Portuguese core M44b judged this against. The convention of 1961 codified immunities that were customary law long before the United Nations existed. The single edge this atlas could carry for it is that the International Law Commission drafted it and the General Assembly adopted it, which is true of a dozen records and argues nothing. The world corpus has added no event it decided. It stays retracted under the new rule."
   },
   "review": {
     "flags": [
@@ -51,6 +51,6 @@
   },
   "place": null,
   "region": "europe",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane from the event's own point. The event points at no place record, so the timeline has nothing else to go on.",
   "actors": []
 }
