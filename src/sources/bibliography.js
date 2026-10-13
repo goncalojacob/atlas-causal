@@ -62,8 +62,8 @@ function groupHtml(heading, list, note) {
   const citations = list.reduce((n, s) => n + (s.citationCount ?? 0), 0);
   return `<section class="bib-group">
     <h3>${esc(heading)}</h3>
-    <p class="bib-summary">${list.length} source${list.length === 1 ? '' : 's'},
-    ${cited} of them cited, carrying ${citations} citation${citations === 1 ? '' : 's'} between them.
+    <p class="bib-summary">${list.length} source${list.length === 1 ? '' : 's'}.
+    The records cite ${cited} of them, ${citations} time${citations === 1 ? '' : 's'} in all.
     ${esc(note)}</p>
     <ol class="bib-list">${list.map(entryHtml).join('')}</ol>
   </section>`;
@@ -72,11 +72,11 @@ function groupHtml(heading, list, note) {
 export function bibliographyHtml(sources) {
   const list = [...sources].sort(compareSources);
   if (list.length === 0) {
-    return '<p class="muted">The bibliography is empty: no source record has been written yet.</p>';
+    return '<p class="muted">The bibliography is empty. Nobody has written a source record yet.</p>';
   }
   const maps = list.filter(isBaseMapSource);
   const works = list.filter((source) => !isBaseMapSource(source));
-  return groupHtml(WORKS_HEADING, works, 'Each title opens what rests on it.')
+  return groupHtml(WORKS_HEADING, works, 'Each title opens the records that cite it.')
     + groupHtml(BASE_MAP_HEADING, maps,
-      'One citation per territory drawn, which is why the counts are what they are.');
+      'Each territory on the map cites its dataset once, so these counts are high.');
 }

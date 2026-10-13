@@ -155,7 +155,7 @@ export function groundEventsSection(ctx, actor, state) {
     count: events.length,
     hint: inside === events.length
       ? 'Everything that happened inside this outline, whoever held it at the time. All of them are inside the window.'
-      : `Everything that happened inside this outline, whoever held it at the time. ${inside} of them ${inside === 1 ? 'is' : 'are'} inside the window; the rest are faded.`,
+      : `Everything that happened inside this outline, whoever held it at the time. ${inside} of them ${inside === 1 ? 'is' : 'are'} inside the window. The atlas fades the rest.`,
     body: `<ul class="actor-rows">${rows.join('')}</ul>`,
   };
 }
@@ -201,7 +201,7 @@ function relationsHtml(ctx, actor) {
   }
   return {
     count: standing.length,
-    hint: 'Links between actors, not between events: who a body belonged to, who led it, what came after it.',
+    hint: 'These link actors to each other: who a body belonged to, who led it and what came after it.',
     body: `<div class="relations">${sections.join('')}</div>`,
   };
 }
@@ -255,14 +255,14 @@ function successionHtml(ctx, actor) {
           <span class="count">${events.length} event${events.length === 1 ? '' : 's'}</span></h3>
         ${events.length
     ? `<ul class="actor-rows">${rows.join('')}</ul>`
-    : '<p class="muted">No event records that one either.</p>'}`;
+    : '<p class="muted">No event names that actor either.</p>'}`;
     });
     return parts.join('');
   });
 
   return {
     count: total,
-    hint: 'The same ground under another name. These events are filed under the actor that held it at the time, not under this one.',
+    hint: 'The same ground under another name. The atlas files these events under the actor that held the ground at the time.',
     body: `<div class="succession">${sections.join('')}</div>`,
   };
 }
@@ -275,9 +275,9 @@ function successionHtml(ctx, actor) {
 // and must not be pointed at as one.
 function noEvents(ground, succession) {
   if (ground && ground.count !== null) {
-    return 'No event here names this actor, and what the pictures hold is what happened on its ground — see <em>What happened on this ground</em>.';
+    return 'No event here names this actor. The map, the graph and the timeline show what happened on its ground. See <em>What happened on this ground</em>.';
   }
-  return `No event here names this actor, so the pictures are not narrowed to it${succession ? ' — see <em>Before and after</em>' : ''}.`;
+  return `No event here names this actor, so the map, the graph and the timeline do not narrow to it.${succession ? ' See <em>Before and after</em>.' : ''}`;
 }
 
 // Exported for the tests: there is no DOM in node --test, and the card is
@@ -353,7 +353,7 @@ export function actorCardHtml(ctx, actor, { state = null, remembered = null } = 
         · <span class="when">${esc(formatInterval(actor.when))}</span>
         ${ctx.lensControl('actor', actor.id)}
       </p>
-      ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
+      ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(', ')}</p>` : ''}
       ${standingSlot()}
       <div class="head-links">${ctx.entryLink('actor', actor.id)}${ctx.wikipediaHtml(actor)}${ctx.discussLink('actor', actor.id)}</div>
     </header>

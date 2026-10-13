@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant",
     "run": "m57"
@@ -38,6 +38,6 @@
   "to": "the-1988-brazilian-constitution",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The constitution was made in the light of the transition to democracy, written from scratch over two years and promulgated on 5 October 1988 — which is to say by the congress and the presidency the election of January 1985 produced, after Neves died and Sarney took office. The New Republic the text founds is named after that handover.",
+  "explanation": "The constitution was written from scratch over two years, in the light of the transition to democracy, and promulgated on 5 October 1988. The congress and the presidency that the election of January 1985 produced wrote it, after Neves died and Sarney took office. The New Republic the text founds is named after that handover.",
   "dispute": null
 }

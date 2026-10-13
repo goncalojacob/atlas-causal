@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -51,7 +51,7 @@
   "names": [
     "Albania"
   ],
-  "summary": "Approximately 28,748 km² and about 2.8 million people (2023), from Wikidata's Q222 (P2046, P1082). The English Wikipedia article \"Albania\", at revision 1376017568, opens: \"Albania, officially the Republic of Albania, is a country in Southeast Europe. It is located in the Balkans, on the Adriatic and Ionian Seas within the Mediterranean Sea, and shares land borders with Montenegro to the northwest, Kosovo to the northeast, North Macedonia to the east and Greece to the south. With an area of 28,748 km2 (11,100 sq mi), it has a varied range of climatic, geological, hydrological and morphological conditions.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 339 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1913 to where the dataset stops, in 2019. Its last capital in the dataset is Tirane. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 28,748 km² and about 2.8 million people (2023), from Wikidata's Q222 (P2046, P1082). The English Wikipedia article \"Albania\", at revision 1376017568, opens: \"Albania, officially the Republic of Albania, is a country in Southeast Europe. It is located in the Balkans, on the Adriatic and Ionian Seas within the Mediterranean Sea, and shares land borders with Montenegro to the northwest, Kosovo to the northeast, North Macedonia to the east and Greece to the south. With an area of 28,748 km2 (11,100 sq mi), it has a varied range of climatic, geological, hydrological and morphological conditions.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 339 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1913 to where the dataset stops, in 2019. Its last capital in the dataset is Tirane. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1913,
     "end": null

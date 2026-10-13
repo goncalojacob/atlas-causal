@@ -197,7 +197,7 @@ test('a second record of one kind and century costs no second history request', 
         rows[${row}].click();
         return id;`);
       if (id === null) break;
-      await waitFor(page, `return (document.querySelector(".record-id") || {}).textContent === "event · ${id}"
+      await waitFor(page, `return (document.querySelector(".record-id") || {}).textContent === "event: ${id}"
         && /version/.test((document.querySelector(".record-history summary") || {}).textContent || "");`, `the history of ${id}`);
       opened.push({ id, files: await page.eval(`return [...new Set(${asked}.map((e) => e.name))];`) });
     }
@@ -254,7 +254,7 @@ test('an edge is reviewed with both of its ends beside it', { skip }, async () =
     // would find the kind that was showing before the chip was clicked.
     await waitFor(page, 'return (document.querySelector(".queue-item .queue-id") || {}).textContent?.includes("--") === true;', 'the edge rows');
     await page.eval('document.querySelector(".queue-item").click(); return true;');
-    await waitFor(page, 'return (document.querySelector(".record-id") || {}).textContent?.startsWith("edge ·") === true;', 'an edge open');
+    await waitFor(page, 'return (document.querySelector(".record-id") || {}).textContent?.startsWith("edge:") === true;', 'an edge open');
     await waitFor(page, 'return document.querySelectorAll(".context-end h4").length === 2;', 'both ends');
     const ends = await page.eval(`return [...document.querySelectorAll(".context-end")].map((box) => ({
       side: box.querySelector(".context-side").textContent,
@@ -313,13 +313,13 @@ test('a reviewer can set an event\'s category, and the diff says so', { skip }, 
       path.join(ROOT, 'data', 'events', '1908-portuguese-legislative-election.json'), 'utf8'));
     assert.equal(opened.category, 'election', 'the record the queue opens on');
     assert.equal(drawn.category, opened.category, 'the select shows the record\'s own category');
-    assert.equal(drawn.blank, '— not said —');
+    assert.equal(drawn.blank, '(not said)');
     // M32b-1: the role is a closed list, since a role outside
     // `data/roles.json` is rule 25 and the dashboard must not offer what the
     // validator would refuse. The note beside it is where free text went.
     const roles = JSON.parse(await readFile(path.join(ROOT, 'data', 'roles.json'), 'utf8'));
     assert.deepEqual(drawn.roleOptions, ['', ...roles.map((r) => r.id)]);
-    assert.equal(drawn.roleBlank, '— no role —');
+    assert.equal(drawn.roleBlank, '(no role)');
     assert.equal(drawn.roleTitle, roles[0].description, 'what the role covers, from data/');
     assert.equal(drawn.roleIsFreeText, false, 'a role cannot be typed here either');
     assert.ok(drawn.noteBox, 'the note beside the role');

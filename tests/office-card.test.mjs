@@ -61,7 +61,7 @@ test('the card closes on its own control and says why it cites nothing', () => {
   // M84 (close.js).
   assert.match(html, /data-action="close-card"/);
   assert.doesNotMatch(html, /data-section="sources"/, 'an office has no Sources section');
-  assert.match(html, /An office says that the post exists and nothing more/);
+  assert.match(html, /An office record says only that the post exists, so it cites nothing\./);
 });
 
 test('an office with no interval is drawn with no dates at all', () => {

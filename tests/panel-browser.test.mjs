@@ -130,7 +130,7 @@ test('an event card renders head, summary and the collapsed sections with their 
       summary: document.querySelector(".panel .summary p").textContent.slice(0, 40),
     };`);
     assert.equal(head.chips.length, 6);
-    assert.match(head.role, /Armed Forces Movement — leader/);
+    assert.match(head.role, /Armed Forces Movement: leader/);
     assert.match(head.summary, /^Units led by the Armed Forces Movement/);
   });
 });
@@ -211,7 +211,7 @@ test('opening an actor from an event, then Back, shows the event again', { skip 
 
     // The panel's own Back names what it returns to, and is history.back().
     const label = await page.eval('return document.querySelector(".panel .card-history .go-back").textContent.trim();');
-    assert.equal(label, '← 25 April');
+    assert.equal(label, 'Back to 25 April');
     await page.eval('document.querySelector(".panel .card-history .go-back").click(); return true;');
     // A wait with a name, not a bare hundred tries (M87 §5, review B8): a card
     // that never comes back said nothing at all before, and the assertion under
@@ -258,8 +258,8 @@ test('a link whose walk names a retracted step is cut, and the card says so', { 
       'the URL describes the walk that is drawn, not the one that was sent',
     );
     const notice = await page.eval('return document.querySelector(".panel .notice.status")?.textContent.replace(/\\s+/g, " ").trim() ?? null;');
-    assert.match(notice, /A step of the link you followed has been retracted\./);
-    assert.match(notice, /drawn as far as that step/);
+    assert.match(notice, /The atlas has retracted a step of the link you followed\./);
+    assert.match(notice, /draws the path up to that step/);
     // Cut, so there is no walk left and no breadcrumb over the card.
     assert.equal(await page.eval('return document.querySelectorAll(".panel .breadcrumb").length;'), 0);
   });
@@ -441,7 +441,7 @@ test('a place’s faded rows follow the band without rebuilding the card', { ski
     };`);
     assert.equal(after.head, 'yes', 'the card was not rebuilt');
     assert.ok(after.faded > 0, `the rows outside the band are faded: ${after.faded}`);
-    assert.match(after.hint, /inside the window; the rest are faded\./);
+    assert.match(after.hint, /inside the window\. The atlas fades the rest\./);
   });
 });
 
@@ -493,7 +493,7 @@ test('a territory’s faded rows follow the band without rebuilding the card', {
     assert.equal(after.rows, before.rows, 'not one row was removed');
     assert.ok(after.faded > 0, `the rows outside the band are faded: ${after.faded}`);
     assert.ok(after.landfall, 'the history is shown, faded, and never taken away');
-    assert.match(after.hint, /inside the window; the rest are faded\./);
+    assert.match(after.hint, /inside the window\. The atlas fades the rest\./);
   });
 });
 
@@ -819,7 +819,7 @@ test('an office opens on a card that names the actor, the category and its holde
     assert.deepEqual(card.people.slice(salazar, caetano + 1), ['salazar', 'marcelo-caetano']);
     assert.equal(card.people.length, card.holders.length, 'a row a holder');
     assert.equal(card.sources, false, 'an office cites nothing and has no Sources section');
-    assert.match(card.cites, /^An office says that/);
+    assert.match(card.cites, /^An office record/);
 
     // A row opens the person, not the tenure: a tenure has no card. The row is
     // taken by name and not by position — the first turn at this post is of
@@ -835,7 +835,7 @@ test('an office opens on a card that names the actor, the category and its holde
       'the trail on the holder\'s card');
     assert.equal(
       await page.eval('return document.querySelector(".panel .card-history .go-back").textContent.trim();'),
-      '← Prime Minister of Portugal',
+      'Back to Prime Minister of Portugal',
     );
 
     // And the card's own close control takes the office out of the URL

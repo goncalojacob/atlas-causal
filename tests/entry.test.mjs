@@ -110,7 +110,7 @@ test('an actor entry lists relations and appearances; a place entry lists what h
 test('an entry page says whose material a relation it draws is', async () => {
   const succession = atlas.relations.get('fixture-polity-four--fixture-polity-three--succeeded');
   const own = succession.license;
-  assert.doesNotMatch(await page('fixture-polity-three', 'actor'), /not under the licence of the rest of this atlas/);
+  assert.doesNotMatch(await page('fixture-polity-three', 'actor'), /which differs from the licence of the rest of this atlas/);
   try {
     // The shape the import writes: NC material, on a CC BY-SA actor's page.
     succession.license = 'CC-BY-NC-SA-4.0';

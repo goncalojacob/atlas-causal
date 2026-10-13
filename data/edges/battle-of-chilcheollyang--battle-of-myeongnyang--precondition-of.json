@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-02",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-myeongnyang",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The far end's own article says Yi Sun-sin held the strait \"with only 13 ships remaining from Admiral Wŏn Kyun's disastrous defeat at the Battle of Chilcheollyang\". The sentence does not say the earlier defeat brought the later battle about — the Japanese fleet sailing to support the advance on Hanyang is what did that — but it states what the Joseon navy had to fight it with, which is the condition the engagement was fought under and the whole of why it is remembered as a last stand. `precondition-of` and not `caused` for exactly that reason, and `probable` because one article's lead is the only thing cited here.",
+  "explanation": "The far end's own article says Yi Sun-sin held the strait \"with only 13 ships remaining from Admiral Wŏn Kyun's disastrous defeat at the Battle of Chilcheollyang\". The sentence does not say the earlier defeat brought the later battle about. What did that was the Japanese fleet sailing to support the advance on Hanyang. The sentence states what the Joseon navy had to fight it with, which is the condition the engagement was fought under and the whole of why it is remembered as a last stand. The type is `precondition-of` rather than `caused` for exactly that reason, and the confidence is `probable` because one article's lead is the only thing cited here.",
   "dispute": null
 }

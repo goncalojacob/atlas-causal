@@ -314,6 +314,6 @@ test('the composer says where the issue goes and what is needed to send it', { s
     assert.match(said, /GitHub account/);
     assert.match(said, /accepted/);
     assert.match(said, /pull request/);
-    assert.match(said, /Nothing is sent from this page/i);
+    assert.match(said, /This page sends nothing/i);
   });
 });

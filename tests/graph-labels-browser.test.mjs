@@ -90,7 +90,7 @@ const LONGEST = `
   let best = null;
   for (const mark of svg.querySelectorAll('circle.node[data-id]')) {
     const title = mark.querySelector('title');
-    const name = (title ? title.textContent : '').split(' — ')[0];
+    const name = (title ? title.textContent : '').replace(/ \\([^()]*\\)$/, '');
     const r = mark.getBoundingClientRect();
     if (!name || r.width === 0) continue;
     if (!best || name.length > best.name.length) {

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-30",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -38,6 +38,6 @@
   "to": "battles-of-saratoga",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "Bennington is in this atlas because of what it took away from Burgoyne rather than what it decided on the day. The Bennington article, at revision 1375222856, states the consequence and names the record this edge runs to: “it reduced Burgoyne’s army in size by almost 1,000 men, led his Native American allies to largely abandon him, and deprived him of much-needed supplies, such as mounts for his cavalry regiments, draft animals and provisions, all factors that contributed to Burgoyne’s eventual defeat at Saratoga.” The type is `enabled` and not `caused` because “factors that contributed to” is what the article claims and no more: the detachment Stark destroyed had been sent out to forage, and its loss is a condition of the September and October defeat rather than the thing that produced it. The Saratoga article, at revision 1377478794, is the second reading, putting Burgoyne’s surrender at the second of the two battles. `probable`, on the two articles alone (rule 22).",
+  "explanation": "Bennington is in this atlas because of what it took away from Burgoyne rather than what it decided on the day. The Bennington article, at revision 1375222856, states the consequence and names the record this edge runs to: “it reduced Burgoyne’s army in size by almost 1,000 men, led his Native American allies to largely abandon him, and deprived him of much-needed supplies, such as mounts for his cavalry regiments, draft animals and provisions, all factors that contributed to Burgoyne’s eventual defeat at Saratoga.” The type is `enabled` rather than `caused`, because “factors that contributed to” is what the article claims and no more. The detachment Stark destroyed had been sent out to forage, and its loss is a condition of the September and October defeat rather than the thing that produced it. The Saratoga article, at revision 1377478794, is the second reading, putting Burgoyne’s surrender at the second of the two battles. The confidence is `probable`, on the two articles alone (rule 22).",
   "dispute": null
 }

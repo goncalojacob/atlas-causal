@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "spain-and-the-american-revolutionary-war",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "Spain came in through France and the article says so in its first sentence: \"Spain, through its alliance with France and as part of the Anglo-French War (1778-1783) with Britain, played an important role in the independence of the United States. Spain declared war on Britain as an ally of France, itself an ally of the American colonies.\" Enabled and not caused: the alliance is the route in, and the article does not claim France obliged Spain to declare.",
+  "explanation": "Spain came in through France and the article says so in its first sentence: \"Spain, through its alliance with France and as part of the Anglo-French War (1778-1783) with Britain, played an important role in the independence of the United States. Spain declared war on Britain as an ally of France, itself an ally of the American colonies.\" The type is enabled rather than caused. The alliance is the route in, and the article does not claim France obliged Spain to declare.",
   "dispute": null
 }

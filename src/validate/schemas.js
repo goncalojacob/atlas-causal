@@ -6,21 +6,24 @@
 // rather than the form.
 
 // Schemas of things the form never builds and the atlas never loads, checked
-// by tools/validate.mjs only. Six of them describe data/imports/ — how a
-// source's entities become actors, which items an import is pointed at, where
-// a cut-off run stopped, which Natural Earth city a place record is, and,
-// since M90, what the planner queued and what a writer did with it — and the
-// seventh describes the Wikipedia leads cached under tools/import/cache/,
-// which are not even in data/. None is a record and fetching any of them in
-// the browser would only make the page slower; data/imports/ is not in the
-// deploy artifact at all, so there is nothing there to validate.
+// by tools/validate.mjs only. Seven of them describe data/imports/. They say
+// how a source's entities become actors, which items an import is pointed at,
+// where a cut-off run stopped, which Natural Earth city a place record is,
+// what the planner queued and what a writer did with it (M90), and which
+// records the rewriter has been through. The eighth describes the Wikipedia
+// leads cached under tools/import/cache/, which are not even in data/. None
+// is a record, and fetching any of them in the browser would only make the
+// page slower. data/imports/ is not in the deploy artifact at all, so there
+// is nothing there to validate.
 //
-// The two of M90 are under `import/` rather than `v1/`: a queue is nobody's
-// record and carries no provenance envelope, so it is not a version of the
-// record schemas and does not belong beside them.
+// The two of M90 and the rewrite cursor are under `import/` rather than
+// `v1/`. A queue and a cursor are nobody's record and carry no provenance
+// envelope, so they are not a version of the record schemas and do not
+// belong beside them.
 export const TOOL_SIDE = Object.freeze([
   'import/queue-log.json',
   'import/queue.json',
+  'import/rewrite-cursor.json',
   'v1/import-map.json',
   'v1/import-places.json',
   'v1/import-seeds.json',

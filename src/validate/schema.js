@@ -125,7 +125,7 @@ function checkSchema(node, file, pointer, files, errors, patterns = null) {
     const here = `${pointer}/${key}`;
     if (ANNOTATION.has(key)) continue;
     if (!VALIDATION.has(key)) {
-      schemaError(errors, file, here, `unknown keyword "${key}" — the validator implements only: ${VALIDATION_KEYWORDS.join(', ')}`);
+      schemaError(errors, file, here, `unknown keyword "${key}". The validator implements only these: ${VALIDATION_KEYWORDS.join(', ')}`);
       continue;
     }
     switch (key) {

@@ -197,7 +197,7 @@ test('the validator reads an older schema and refuses a newer one', async () => 
 
   fx.byId['fixture-event-a'].schema = SCHEMA_VERSION + 1;
   let r = await run();
-  assert.match(r.errors.find((e) => e.path === '/schema').message, /knows up to/);
+  assert.match(r.errors.find((e) => e.path === '/schema').message, /knows versions up to/);
 
   fx.byId['fixture-event-a'].schema = 0;
   r = await run();

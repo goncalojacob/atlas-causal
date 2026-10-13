@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-24",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -36,6 +36,6 @@
     "label": "Grytviken"
   },
   "region": "americas",
-  "regionNote": "Lane set by hand in M42b batch 2: rule 10 reaches no lane polygon within 3 degrees of this point. South Georgia and the South Sandwich Islands lie below every region outline the atlas draws, and the Falklands — one war with them here — are in the americas lane.",
+  "regionNote": "The lane was set by hand in M42b batch 2, because rule 10 reaches no lane polygon within 3 degrees of this point. South Georgia and the South Sandwich Islands lie below every region outline the atlas draws. The Falklands, which carry one war here, are in the americas lane.",
   "summary": null
 }

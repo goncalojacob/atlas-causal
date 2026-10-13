@@ -114,8 +114,8 @@ test('a prerendered entry is the whole entry, under a base, canonical to entry.h
     assert.match(html, /<link rel="stylesheet" href="src\/style\.css">/);
     assert.match(html, /<script type="module" src="src\/entry\/main\.js"><\/script>/);
     // The record's own name in the tab, not "Entry".
-    assert.doesNotMatch(html, /<title>Entry — Atlas causal<\/title>/);
-    assert.match(html, /<title>.+ — Atlas causal<\/title>/);
+    assert.doesNotMatch(html, /<title>Atlas causal: Entry<\/title>/);
+    assert.match(html, /<title>Atlas causal: .+<\/title>/);
     // The entry itself, rendered: the long text, the sources, the way back.
     assert.match(html, /<section class="entry-body">/);
     assert.match(html, /class="entry-sources"/);

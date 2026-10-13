@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "macau-incident-1799",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The later article names the earlier one as the first of two attempts on the same thing by the same force: “the allied squadron attempting to disrupt a valuable British merchant convoy due to sail from Qing Dynasty China. This was the second such attempt in three years; at the Bali Strait Incident of 1797 a French frigate squadron had declined to engage six East Indiamen on their way to China.” Its background says why there was a second: “Sercey's force had subsequently broken up as it proved too expensive to maintain as a cohesive force … Sercey decided to augment his forces by uniting them with the allied Spanish squadron at Manila.” Two attempts by one admiral's squadron on one annual convoy is a campaign and not a date order, which is the footing batch 38's series edges stood on. What the article does **not** say is that the first attempt produced the second, and this edge does not say it either: `precondition-of`, because the 1797 failure is what left the China Fleet still sailing and Sercey still hunting it, and the decision to try again with Spanish help was taken for the reasons the background gives. Probable: Wikipedia alone.",
+  "explanation": "The later article names the earlier one as the first of two attempts on the same thing by the same force: “the allied squadron attempting to disrupt a valuable British merchant convoy due to sail from Qing Dynasty China. This was the second such attempt in three years; at the Bali Strait Incident of 1797 a French frigate squadron had declined to engage six East Indiamen on their way to China.” Its background says why there was a second: “Sercey's force had subsequently broken up as it proved too expensive to maintain as a cohesive force … Sercey decided to augment his forces by uniting them with the allied Spanish squadron at Manila.” Two attempts by one admiral's squadron on one annual convoy make a campaign rather than an order of dates, which is the footing the series edges of batch 38 stood on. The article does **not** say that the first attempt produced the second, and this edge does not say it either. The type is `precondition-of`, because the 1797 failure is what left the China Fleet still sailing and Sercey still hunting it, and he decided to try again with Spanish help for the reasons the background gives. The confidence is probable, on Wikipedia alone.",
   "dispute": null
 }

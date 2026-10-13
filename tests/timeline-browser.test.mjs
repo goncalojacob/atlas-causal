@@ -61,7 +61,7 @@ const BARS_NAMED = `
   const drawn = new Set([...svg.querySelectorAll('text.bar-label')].map((l) => l.textContent));
   return bars.every((b) => {
     const t = b.querySelector('title');
-    const name = t ? t.textContent.split(' \\u2014 ')[0] : null;
+    const name = t ? t.textContent.replace(/ \\([^()]*\\)$/, '') : null;
     return !name || drawn.has(name);
   });`;
 

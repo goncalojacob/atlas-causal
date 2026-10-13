@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-02",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -30,7 +30,7 @@
   "to": "troika-bailout-2011",
   "type": "precondition-of",
   "confidence": "disputed",
-  "explanation": "On one account the euro is the mechanism of the crisis: interest rates far below what Portugal had known drew in a decade of capital that went into non-tradable sectors, productivity stalled, and when the flow stopped the country had neither the growth to service the debt nor a currency to devalue.",
+  "explanation": "On one account the euro is what produced the crisis. Interest rates far below what Portugal had known drew in a decade of capital, and it went into parts of the economy that do not export. Productivity stalled. When the flow stopped the country had neither the growth to service the debt nor a currency to devalue.",
   "dispute": {
     "text": "Others put the weight on choices rather than the currency: fiscal policy through the 2000s, the cost of the bank rescues, and the loss of market confidence in 2010 and 2011 in a general European panic. On that reading a country outside the euro with the same accounts would have arrived somewhere similar by a different road.",
     "sources": [

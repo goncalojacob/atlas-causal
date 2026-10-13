@@ -78,7 +78,7 @@ try {
   if (missing) {
     mount.appendChild(Object.assign(document.createElement('p'), {
       className: 'field-error',
-      textContent: `${missing} could not be read; the form below is empty.`,
+      textContent: `The form could not read ${missing}, so it is empty.`,
     }));
   }
 
@@ -165,7 +165,7 @@ try {
 } catch (error) {
   mount.innerHTML = `<p class="field-error"><code>${esc(error.message)}</code></p>
     <p>The form needs the atlas index. Serve the repository root (<code>python3 -m http.server 8000</code>)
-    and make sure <code>data/index/</code> exists (<code>node tools/build-index.mjs</code>).
-    With no records yet, <a href="contribute.html?fixtures=1">?fixtures=1</a> loads the synthetic set.</p>`;
+    and check that <code>data/index/</code> exists (<code>node tools/build-index.mjs</code>).
+    If there are no records yet, <a href="contribute.html?fixtures=1">?fixtures=1</a> loads the test records.</p>`;
   throw error;
 }

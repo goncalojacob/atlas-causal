@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "soviet-afghan-war",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The same article carries the road from the one to the other without a gap: “the Soviets did increase their military assistance in the following months … Despite this, the situation of the Afghan armed forces continued to deteriorate, with mutinies occurring in Jalalabad, Asmar, Ghazni, Nahrin, and in August 1979, the Bala Hissar uprising on a fortress in Kabul. Though these were all put down, the weakness of the military contributed significantly to the spread of the insurgency. On December 24, 1979, under Leonid Brezhnev, the Soviet Union deployed the 40th Army, commencing the start of the Soviet–Afghan War.” Herat is the first and the largest of those mutinies and the one the Soviets were asked for help with and refused. `precondition-of` and not `caused`: the article makes the army’s weakness the thing that spread the insurgency, not this rising by itself.",
+  "explanation": "The same article carries the road from the one to the other without a gap: “the Soviets did increase their military assistance in the following months … Despite this, the situation of the Afghan armed forces continued to deteriorate, with mutinies occurring in Jalalabad, Asmar, Ghazni, Nahrin, and in August 1979, the Bala Hissar uprising on a fortress in Kabul. Though these were all put down, the weakness of the military contributed significantly to the spread of the insurgency. On December 24, 1979, under Leonid Brezhnev, the Soviet Union deployed the 40th Army, commencing the start of the Soviet–Afghan War.” Herat is the first and the largest of those mutinies, and the one the Soviets were asked to help with and refused. The edge is `precondition-of`, which says the rising supplied something the war needed without causing it. The article makes the weakness of the army what spread the insurgency, and not this rising on its own.",
   "dispute": null
 }

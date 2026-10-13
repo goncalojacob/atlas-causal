@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "lebanese-civil-war",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The Palestinian refugee population in Lebanon is what the war of 1948 put there, and it is the standing term in every account of how the civil war began: by 1975 it numbered more than 300,000, and the PLO had made of southern Lebanon an unofficial state within a state, which the English article says then played an important role in the civil war. This is a precondition and not a cause. The confessional settlement of 1943, the Cairo agreement of 1969 and the arrival of the PLO leadership from Jordan after 1970 are each part of the same account, and none of them is a record here; what is claimed is that without the population the 1948 war displaced there is no Lebanese civil war of the shape that happened.",
+  "explanation": "The war of 1948 put the Palestinian refugee population in Lebanon, and every account of how the civil war began starts there. By 1975 it numbered more than 300,000, and the PLO had made southern Lebanon an unofficial state within a state, which the English article says then played an important role in the civil war. The edge is `precondition-of`, which says the war supplied something the civil war needed without causing it. The confessional settlement of 1943, the Cairo agreement of 1969 and the arrival of the PLO leadership from Jordan after 1970 each belong to the same account, and none of them is a record here. The claim is that without the population the 1948 war displaced, the Lebanese civil war would not have taken the shape it did.",
   "dispute": null
 }

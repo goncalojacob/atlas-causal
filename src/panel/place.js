@@ -63,9 +63,9 @@ export function placeEventsSection(ctx, place, state) {
     label: 'What happened here',
     count: events.length,
     hint: events.length
-      ? (inside === events.length ? 'All of them are inside the window.' : `${inside} of them ${inside === 1 ? 'is' : 'are'} inside the window; the rest are faded.`)
+      ? (inside === events.length ? 'All of them are inside the window.' : `${inside} of them ${inside === 1 ? 'is' : 'are'} inside the window. The atlas fades the rest.`)
       : '',
-    body: events.length ? `<ul class="actor-rows">${rows.join('')}</ul>` : '<p class="muted">No event happens here yet.</p>',
+    body: events.length ? `<ul class="actor-rows">${rows.join('')}</ul>` : '<p class="muted">No event in the atlas happens here yet.</p>',
   };
 }
 
@@ -111,7 +111,7 @@ export function placeCardHtml(ctx, place, state, { remembered = null } = {}) {
   const sections = [placeEventsSection(ctx, place, state)];
   if (actors.length) {
     sections.push({
-      key: 'actors', label: 'Who turns up here', count: actors.length, body: `<ul class="actor-rows">${actors.join('')}</ul>`,
+      key: 'actors', label: 'Who appears here', count: actors.length, body: `<ul class="actor-rows">${actors.join('')}</ul>`,
     });
   }
   sections.push({
@@ -121,13 +121,13 @@ export function placeCardHtml(ctx, place, state, { remembered = null } = {}) {
     // A place is a geographic fact and is exempt from "every node cites a
     // source" (M9), so most of these are empty and say so rather than
     // waiting on a fetch that will bring nothing.
-    body: '<div data-slot="place-sources"><p class="muted">A place is a geographic fact and need cite nothing.</p></div>',
+    body: '<div data-slot="place-sources"><p class="muted">A place is a fact of geography and does not need a source.</p></div>',
   });
   const open = openSection(sections.map((s) => s.key), { source: state.source, remembered });
 
   return `
     ${place.status !== 'active' ? `<p class="notice status">This place is <strong>${esc(place.status)}</strong>.</p>` : ''}
-    ${events.length === 0 ? '<p class="notice no-events">No event here happens in this place, so the pictures are not narrowed to it.</p>' : ''}
+    ${events.length === 0 ? '<p class="notice no-events">No event in the atlas happens in this place, so the map, the graph and the timeline do not narrow to it.</p>' : ''}
     <header class="place-head">
       ${closeControlHtml()}
       ${ctx.historyHtml()}
@@ -138,7 +138,7 @@ export function placeCardHtml(ctx, place, state, { remembered = null } = {}) {
         · <span class="lane">${esc(ctx.laneLabel(place.region))}</span>
         ${ctx.lensControl('place', place.id)}
       </p>
-      ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(' · ')}</p>` : ''}
+      ${variants.length ? `<p class="also-known muted">also: ${variants.map((n) => esc(n)).join(', ')}</p>` : ''}
       <div data-slot="place-names"></div>
       ${standingSlot()}
       <div class="head-links">${ctx.entryLink('place', place.id)}${ctx.wikipediaHtml(place)}${ctx.discussLink('place', place.id)}</div>

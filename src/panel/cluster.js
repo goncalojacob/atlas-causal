@@ -55,10 +55,10 @@ export function clusterHtml(ctx, cluster) {
     ? 'The timeline draws these as one bar at this width. Narrow the window and they separate.'
     : onGraph
       ? cluster.coincident
-        ? 'These sit at the same point of the arrangement, so no zoom the graph allows separates them. Choose one here.'
+        ? 'These sit at the same point on the graph, so no zoom separates them. Choose one here.'
         : 'The graph draws these as one node at this zoom. Zoom in and they separate.'
       : cluster.coincident
-        ? 'These records share the same coordinates, so no amount of zooming separates them. The map spreads them in a ring instead.'
+        ? 'These records share the same coordinates, so zooming does not separate them. The map spreads them in a ring.'
         : 'The map draws these as one mark at this zoom. Zoom in and they separate.';
   const rows = members.map((event) => `<li class="actor-row">
     <span class="when">${esc(formatYear(ctx.startYear(event)))}</span>

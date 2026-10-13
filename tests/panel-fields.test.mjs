@@ -152,8 +152,8 @@ test('a parent says in one line what opening it shows', () => {
 test('a large event says on its card how it is drawn, and why', () => {
   const parent = eventCardHtml(ctx, { event: atlas.events.get('fixture-event-f'), found: { via: [] }, state });
   const line = parent.match(/<p class="large-event muted">([\s\S]*?)<\/p>/)?.[1] ?? '';
-  assert.match(line, /A large event: a band across the whole timeline/);
-  assert.match(line, /the map washes Fixture lane 3/);
+  assert.match(line, /A large event\. The timeline draws it as a band across its\s+whole width\./);
+  assert.match(line, /The map shades the whole of Fixture lane 3 and draws no dot\./);
   assert.match(line, /Its record says its reach is <strong>regional<\/strong>/);
 
   // An ordinary event says nothing of the kind: it has a mark like everything

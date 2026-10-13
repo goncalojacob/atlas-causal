@@ -64,7 +64,7 @@ export function edgeCardHtml(ctx, { edge, state, remembered = null }) {
 
   const notices = [];
   if (edge.status !== 'active') {
-    notices.push(`<p class="notice status">This link is <strong>${esc(edge.status)}</strong>; it is in no picture and no path runs through it.</p>`);
+    notices.push(`<p class="notice status">This link is <strong>${esc(edge.status)}</strong>. No view draws it and no path runs through it.</p>`);
   }
 
   const sections = [];
@@ -84,7 +84,7 @@ export function edgeCardHtml(ctx, { edge, state, remembered = null }) {
       label: 'The dispute',
       count: null,
       disputed: 1,
-      hint: 'Qualified historians disagree about this link. Who, and why, with the dissenting citations.',
+      hint: 'Qualified historians disagree about this link. Here is who disagrees and why, with the sources they cite.',
       body: '<div data-slot="edge-dispute"><p class="muted">Loading…</p></div>',
     });
   }

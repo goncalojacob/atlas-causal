@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -33,6 +33,6 @@
   "to": "montenegro-government-2024",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The government of April 2024 is a Democratic Alliance government, and the alliance with the CDS was Montenegro's own reconstruction of a formula last used in 1980. He could make it because this ballot had given him the party two years earlier, with a mandate that included going back to a coalition his predecessor had refused. The edge is `precondition-of`: what put him in the prime minister's office was the election of March 2024, and what put him at the head of the list that won it was this.",
+  "explanation": "The government of April 2024 is a Democratic Alliance government, and the alliance with the CDS was Montenegro's own rebuilding of a formula last used in 1980. He could make it because this ballot had given him the party two years earlier, with a mandate that included going back to a coalition his predecessor had refused. The edge is `precondition-of`. The election of March 2024 put him in the prime minister's office, and this ballot put him at the head of the list that won it.",
   "dispute": null
 }

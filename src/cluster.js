@@ -313,7 +313,7 @@ export function spreadPositions(count, { radius = SPREAD_RADIUS, gap = SPREAD_GA
 // "…, 1910–1911" after it where the stack covers more than one year.
 export function stackTitle(name, count, { span = null } = {}) {
   const hidden = Math.max(0, count - 1);
-  const head = `${name} — and ${hidden} more event${hidden === 1 ? '' : 's'} here`;
+  const head = `${name} and ${hidden} more event${hidden === 1 ? '' : 's'} here`;
   return span ? `${head}, ${span}` : head;
 }
 

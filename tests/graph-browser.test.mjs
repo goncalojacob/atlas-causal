@@ -109,7 +109,7 @@ const badges = (graph) => [...graph.matchAll(/class="cluster-count[^"]*"[^>]*>(\
 // them.
 // Off the `<title>` alone, because a stack carries the same sentence twice —
 // once as its accessible name and once as the tooltip.
-const hidden = (graph) => [...graph.matchAll(/<title>[^<]*— and (\d+) more event/g)].map((m) => Number(m[1]));
+const hidden = (graph) => [...graph.matchAll(/<title>[^<]* and (\d+) more event/g)].map((m) => Number(m[1]));
 
 // **Nothing is folded out of sight twice over any more.** There were two
 // levels of detail until M70: the semantic fold put a part inside its parent

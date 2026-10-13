@@ -29,7 +29,7 @@ export function creditHtml(credit) {
   const title = credit.article ? credit.article : credit.wikidata;
   if (!href) return `<p class="summary-credit muted">${esc(words)}</p>`;
   return `<p class="summary-credit muted"><a href="${esc(href)}" rel="noopener" target="_blank"
-    title="${esc(title ?? '')}">${esc(words)} →</a></p>`;
+    title="${esc(title ?? '')}">${esc(words)}</a></p>`;
 }
 
 // The whole slot. `extra` is whatever the card already put under its summary —

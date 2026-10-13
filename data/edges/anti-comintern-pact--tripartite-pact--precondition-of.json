@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "tripartite-pact",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The English article on the pact of 1940 puts the two in one series: the Tripartite Pact was, \"together with the Anti-Comintern Pact and the Pact of Steel, one of a number of agreements between Germany, Japan, Italy, and other countries of the Axis powers governing their relationship\", and \"Germany and Japan technically became allies with the signing of Anti-Comintern Pact of 1936\". The claim is that the alliance of 1940 was built on the alignment of 1936, which is what the article says, and not that the earlier pact caused the later one.",
+  "explanation": "The English article on the pact of 1940 puts the two in one series. The Tripartite Pact was, \"together with the Anti-Comintern Pact and the Pact of Steel, one of a number of agreements between Germany, Japan, Italy, and other countries of the Axis powers governing their relationship\", and \"Germany and Japan technically became allies with the signing of Anti-Comintern Pact of 1936\". The claim is that the alliance of 1940 was built on the alignment of 1936, which is what the article says. The earlier pact did not cause the later one.",
   "dispute": null
 }
