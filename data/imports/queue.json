@@ -4,30 +4,6 @@
   "generated": "2026-10-13",
   "items": [
     {
-      "id": "2026-10-13-europe-001",
-      "planned": "2026-10-13T01:50Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q133641",
-      "title": "Age of Discovery",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-3",
-      "why": "Wikipedia ranks it a level 3 vital article and the atlas does not hold it, though it is the period the atlas is first of all about. The item has no point, so it needs a lane in the seeds table; europe is where the voyages were fitted out."
-    },
-    {
-      "id": "2026-10-13-europe-002",
-      "planned": "2026-10-13T01:50Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q12562",
-      "title": "Reformation",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-3",
-      "why": "A level 3 vital article the atlas does not hold. Its classes are in no row of the class table yet, so it is queued for the writer fire that follows the assistant adding them."
-    },
-    {
       "id": "2026-10-13-europe-003",
       "planned": "2026-10-13T01:50Z",
       "lane": "europe",
@@ -38,18 +14,6 @@
       "edges": [],
       "rank": "vital-3",
       "why": "A level 3 vital article the atlas does not hold. Its one class, era, has no row in the class table yet."
-    },
-    {
-      "id": "2026-10-13-europe-004",
-      "planned": "2026-10-13T01:50Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q12539",
-      "title": "Age of Enlightenment",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-3",
-      "why": "A level 3 vital article the atlas does not hold. Its one class, cultural movement, has no row in the class table yet."
     },
     {
       "id": "2026-10-13-europe-005",
@@ -601,6 +565,42 @@
       ],
       "rank": "list",
       "why": "Skipped on 12 October for the same reason as the two items above. The edge was never written, so it comes back under a new id."
+    },
+    {
+      "id": "2026-10-13-europe-042",
+      "planned": "2026-10-13T03:23Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q133641",
+      "title": "Age of Discovery",
+      "parents": [],
+      "edges": [],
+      "rank": "vital-3",
+      "why": "vital-3, europe. Re-queued by the assistant after M92: the import now reads a century-precision date as a span of years, and the seeds file names the lane. The first item was refused on the date."
+    },
+    {
+      "id": "2026-10-13-europe-043",
+      "planned": "2026-10-13T03:23Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q12562",
+      "title": "Reformation",
+      "parents": [],
+      "edges": [],
+      "rank": "vital-3",
+      "why": "vital-3, europe. Re-queued by the assistant after M92: the import now reads a century-precision date as a span of years, and the seeds file names the lane. The first item was refused on the lane."
+    },
+    {
+      "id": "2026-10-13-europe-044",
+      "planned": "2026-10-13T03:23Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q12539",
+      "title": "Age of Enlightenment",
+      "parents": [],
+      "edges": [],
+      "rank": "vital-3",
+      "why": "vital-3, europe. Re-queued by the assistant after M92: the import now reads a century-precision date as a span of years, and the seeds file names the lane. The first item was refused on the date."
     }
   ]
 }
