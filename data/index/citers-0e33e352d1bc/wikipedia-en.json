@@ -14738,6 +14738,12 @@
     },
     {
       "dissent": false,
+      "id": "counter-reformation",
+      "kind": "event",
+      "locator": "\"Counter-Reformation\", revision 1375213182"
+    },
+    {
+      "dissent": false,
       "id": "coup-of-18-brumaire",
       "kind": "event",
       "locator": "\"Coup of 18 Brumaire\", revision 1368421302"
@@ -15092,9 +15098,21 @@
     },
     {
       "dissent": false,
+      "id": "eighty-years-war",
+      "kind": "event",
+      "locator": "\"Eighty Years' War\", revision 1373935412"
+    },
+    {
+      "dissent": false,
       "id": "empire-of-brazil-1822-1889",
       "kind": "event",
       "locator": "\"Empire of Brazil\", revision 1374829984"
+    },
+    {
+      "dissent": false,
+      "id": "english-civil-war",
+      "kind": "event",
+      "locator": "\"English Civil War\", revision 1378642637"
     },
     {
       "dissent": false,
@@ -15566,6 +15584,12 @@
     },
     {
       "dissent": false,
+      "id": "french-wars-of-religion",
+      "kind": "event",
+      "locator": "\"French Wars of Religion\", revision 1375764414"
+    },
+    {
+      "dissent": false,
       "id": "full-scale-russo-ukrainian-war",
       "kind": "event",
       "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
@@ -15899,6 +15923,12 @@
       "id": "india-pakistan-war-of-1971",
       "kind": "event",
       "locator": "\"India–Pakistan war of 1971\", revision 1371969450"
+    },
+    {
+      "dissent": false,
+      "id": "indian-independence-movement",
+      "kind": "event",
+      "locator": "\"Indian independence movement\", revision 1378118226"
     },
     {
       "dissent": false,
@@ -16448,6 +16478,12 @@
     },
     {
       "dissent": false,
+      "id": "livonian-war",
+      "kind": "event",
+      "locator": "\"Livonian War\", revision 1376268115"
+    },
+    {
+      "dissent": false,
       "id": "locarno-treaties",
       "kind": "event",
       "locator": "\"Locarno Treaties\", revision 1376158350"
@@ -16487,6 +16523,12 @@
       "id": "macau-incident-1799",
       "kind": "event",
       "locator": "\"Macau Incident (1799)\", revision 1370627318"
+    },
+    {
+      "dissent": false,
+      "id": "magellan-expedition",
+      "kind": "event",
+      "locator": "\"Magellan expedition\", revision 1379240498"
     },
     {
       "dissent": false,
@@ -17147,6 +17189,12 @@
       "id": "peace-of-riga",
       "kind": "event",
       "locator": "\"Treaty of Riga\", revision 1368931640"
+    },
+    {
+      "dissent": false,
+      "id": "peace-of-westphalia",
+      "kind": "event",
+      "locator": "\"Peace of Westphalia\", revision 1379627002"
     },
     {
       "dissent": false,

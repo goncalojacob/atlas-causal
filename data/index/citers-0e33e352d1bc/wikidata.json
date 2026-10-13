@@ -6440,6 +6440,12 @@
     },
     {
       "dissent": false,
+      "id": "counter-reformation",
+      "kind": "event",
+      "locator": "Q128168"
+    },
+    {
+      "dissent": false,
       "id": "coup-of-18-brumaire",
       "kind": "event",
       "locator": "Q620965"
@@ -6782,9 +6788,21 @@
     },
     {
       "dissent": false,
+      "id": "eighty-years-war",
+      "kind": "event",
+      "locator": "Q164432"
+    },
+    {
+      "dissent": false,
       "id": "empire-of-brazil-1822-1889",
       "kind": "event",
       "locator": "Q217230"
+    },
+    {
+      "dissent": false,
+      "id": "english-civil-war",
+      "kind": "event",
+      "locator": "Q80330"
     },
     {
       "dissent": false,
@@ -7262,6 +7280,12 @@
     },
     {
       "dissent": false,
+      "id": "french-wars-of-religion",
+      "kind": "event",
+      "locator": "Q673175"
+    },
+    {
+      "dissent": false,
       "id": "full-scale-russo-ukrainian-war",
       "kind": "event",
       "locator": "Q110999040"
@@ -7607,6 +7631,12 @@
       "id": "india-pakistan-war-of-1971",
       "kind": "event",
       "locator": "Q1922071"
+    },
+    {
+      "dissent": false,
+      "id": "indian-independence-movement",
+      "kind": "event",
+      "locator": "Q12444025"
     },
     {
       "dissent": false,
@@ -8198,6 +8228,12 @@
     },
     {
       "dissent": false,
+      "id": "livonian-war",
+      "kind": "event",
+      "locator": "Q246863"
+    },
+    {
+      "dissent": false,
       "id": "locarno-treaties",
       "kind": "event",
       "locator": "Q152925"
@@ -8231,6 +8267,12 @@
       "id": "macau-incident-1799",
       "kind": "event",
       "locator": "Q20870400"
+    },
+    {
+      "dissent": false,
+      "id": "magellan-expedition",
+      "kind": "event",
+      "locator": "Q1225170"
     },
     {
       "dissent": false,
@@ -8927,6 +8969,12 @@
       "id": "peace-of-riga",
       "kind": "event",
       "locator": "Q1076469, P31 Q625298"
+    },
+    {
+      "dissent": false,
+      "id": "peace-of-westphalia",
+      "kind": "event",
+      "locator": "Q150995"
     },
     {
       "dissent": false,

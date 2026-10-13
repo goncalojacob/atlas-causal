@@ -1805,6 +1805,15 @@
         }
       ]
     },
+    "indian-independence-movement": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "insurrection-of-10-august-1792": {
       "from": "git",
       "versions": [

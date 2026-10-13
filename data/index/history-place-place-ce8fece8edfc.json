@@ -6069,6 +6069,15 @@
         }
       ]
     },
+    "low-countries": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "luanda": {
       "from": "git",
       "versions": [
@@ -7596,6 +7605,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "northern-europe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
         }
       ]
     },

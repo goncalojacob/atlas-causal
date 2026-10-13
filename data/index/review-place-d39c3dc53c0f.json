@@ -12898,6 +12898,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-13",
+      "degree": 1,
+      "id": "low-countries",
+      "kind": "place",
+      "names": [
+        "Low Countries",
+        "Países Baixos",
+        "Países Baixos (região)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -16105,6 +16134,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-13",
+      "degree": 1,
+      "id": "northern-europe",
+      "kind": "place",
+      "names": [
+        "Northern Europe",
+        "Europa Setentrional"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -25284,7 +25341,7 @@
         }
       ],
       "created": "2026-10-13",
-      "degree": 1,
+      "degree": 2,
       "id": "western-europe",
       "kind": "place",
       "names": [
