@@ -8528,6 +8528,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-condor",
+      "kind": "event",
+      "locator": "Q156017"
+    },
+    {
+      "dissent": false,
       "id": "operation-gothic-serpent",
       "kind": "event",
       "locator": "Q3428977"

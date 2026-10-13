@@ -17345,6 +17345,15 @@
         }
       ]
     },
+    "operation-condor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "operation-gothic-serpent": {
       "from": "git",
       "versions": [

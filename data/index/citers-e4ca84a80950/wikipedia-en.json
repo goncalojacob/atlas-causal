@@ -16712,6 +16712,12 @@
     },
     {
       "dissent": false,
+      "id": "operation-condor",
+      "kind": "event",
+      "locator": "\"Operation Condor\", revision 1379847021"
+    },
+    {
+      "dissent": false,
       "id": "operation-gothic-serpent",
       "kind": "event",
       "locator": "\"Operation Gothic Serpent\", revision 1375741255"
