@@ -1890,6 +1890,15 @@
         }
       ]
     },
+    "lewis-and-clark-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "los-andes-vs-prueba": {
       "from": "git",
       "versions": [

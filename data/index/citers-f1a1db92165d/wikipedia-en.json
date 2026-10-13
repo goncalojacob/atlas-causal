@@ -5438,6 +5438,12 @@
     },
     {
       "dissent": false,
+      "id": "great-depression--new-deal--reacted-to",
+      "kind": "edge",
+      "locator": "\"New Deal\", revision 1379744402"
+    },
+    {
+      "dissent": false,
       "id": "great-depression--salazar-president-of-council-1932--enabled",
       "kind": "edge",
       "locator": "\"Great Depression\", revision 1371653684"
@@ -14582,6 +14588,12 @@
     },
     {
       "dissent": false,
+      "id": "civil-rights-movement",
+      "kind": "event",
+      "locator": "\"Civil rights movement\", revision 1378280882"
+    },
+    {
+      "dissent": false,
       "id": "closure-of-the-suez-canal-1956-1957",
       "kind": "event",
       "locator": "\"Closure of the Suez Canal (1956–1957)\", revision 1357662864"
@@ -14975,6 +14987,12 @@
       "id": "dummer-s-war",
       "kind": "event",
       "locator": "\"Dummer's War\", revision 1375086224"
+    },
+    {
+      "dissent": false,
+      "id": "dust-bowl",
+      "kind": "event",
+      "locator": "\"Dust Bowl\", revision 1379727480"
     },
     {
       "dissent": false,
@@ -16400,6 +16418,12 @@
     },
     {
       "dissent": false,
+      "id": "lewis-and-clark-expedition",
+      "kind": "event",
+      "locator": "\"Lewis and Clark Expedition\", revision 1375186446"
+    },
+    {
+      "dissent": false,
       "id": "libyan-civil-war",
       "kind": "event",
       "locator": "\"Libyan civil war (2011)\", revision 1374512354"
@@ -16475,6 +16499,12 @@
       "id": "mali-war",
       "kind": "event",
       "locator": "\"Mali War\", revision 1376141121"
+    },
+    {
+      "dissent": false,
+      "id": "manhattan-project",
+      "kind": "event",
+      "locator": "\"Manhattan Project\", revision 1376923826"
     },
     {
       "dissent": false,
@@ -16703,6 +16733,12 @@
       "id": "neapolitan-revolt-of-1647",
       "kind": "event",
       "locator": "\"Neapolitan Revolt of 1647\", revision 1370629471"
+    },
+    {
+      "dissent": false,
+      "id": "new-deal",
+      "kind": "event",
+      "locator": "\"New Deal\", revision 1379744402"
     },
     {
       "dissent": false,

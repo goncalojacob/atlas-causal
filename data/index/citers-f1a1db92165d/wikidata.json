@@ -6296,6 +6296,12 @@
     },
     {
       "dissent": false,
+      "id": "civil-rights-movement",
+      "kind": "event",
+      "locator": "Q48537"
+    },
+    {
+      "dissent": false,
       "id": "closure-of-the-suez-canal-1956-1957",
       "kind": "event",
       "locator": "Q113946324"
@@ -6671,6 +6677,12 @@
       "id": "dummer-s-war",
       "kind": "event",
       "locator": "Q1265114"
+    },
+    {
+      "dissent": false,
+      "id": "dust-bowl",
+      "kind": "event",
+      "locator": "Q726501"
     },
     {
       "dissent": false,
@@ -8150,6 +8162,12 @@
     },
     {
       "dissent": false,
+      "id": "lewis-and-clark-expedition",
+      "kind": "event",
+      "locator": "Q505802"
+    },
+    {
+      "dissent": false,
       "id": "libyan-civil-war",
       "kind": "event",
       "locator": "Q81545"
@@ -8231,6 +8249,12 @@
       "id": "mali-war",
       "kind": "event",
       "locator": "Q2946372, P31 Q8465"
+    },
+    {
+      "dissent": false,
+      "id": "manhattan-project",
+      "kind": "event",
+      "locator": "Q127050"
     },
     {
       "dissent": false,
@@ -8489,6 +8513,12 @@
       "id": "neapolitan-revolt-of-1647",
       "kind": "event",
       "locator": "Q125727539"
+    },
+    {
+      "dissent": false,
+      "id": "new-deal",
+      "kind": "event",
+      "locator": "Q186356"
     },
     {
       "dissent": false,

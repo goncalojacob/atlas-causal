@@ -17804,6 +17804,36 @@
         }
       ],
       "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "from": "great-depression",
+      "id": "great-depression--new-deal--reacted-to",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "new-deal",
+      "type": "reacted-to"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
         "rosas-1994-estado-novo",
         "meneses-2009-salazar",
         "wikipedia-en"

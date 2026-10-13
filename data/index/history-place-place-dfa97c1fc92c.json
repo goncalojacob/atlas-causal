@@ -1667,6 +1667,15 @@
         }
       ]
     },
+    "camp-dubois": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "campo-de-castanares": {
       "from": "git",
       "versions": [
@@ -7674,6 +7683,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "oak-ridge-tennessee": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
         }
       ]
     },
