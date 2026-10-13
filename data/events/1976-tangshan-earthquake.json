@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "1976-tangshan-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q462195",
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "1976 Tangshan earthquake",
+    "pt": "Sismo de Tangshan de 1976"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q462195"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1976 Tangshan earthquake\", revision 1377714953"
+    }
+  ],
+  "title": "1976 Tangshan earthquake",
+  "summary": "The English Wikipedia article \"1976 Tangshan earthquake\", at revision 1377714953, opens: \"The 1976 Tangshan earthquake occurred at 19:42:55 UTC on 27 July. The maximum intensity of the Mw 7.6 earthquake around Tangshan, Hebei, China, was XI (Extreme) on the Mercalli scale. In minutes, 85 percent of the buildings in Tangshan collapsed or were rendered unusable, all services failed, and most of the highway and railway bridges collapsed or were seriously damaged. The official count stated 242,469 deaths, while historians accepted at least 300,000 died, making it the deadliest earthquake in recorded history and one of the worst disasters in China by death toll.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q462195, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake that occurred in 1976 Tangshan, Hebei, China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1976,
+    "end": 1976,
+    "date": "1976-07-28"
+  },
+  "place": "tangshan",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "central-asia",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q27275",
+  "sitelinks": {
+    "count": 158,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Central Asia",
+    "pt": "Ásia Central"
+  },
+  "sources": [],
+  "names": [
+    "Central Asia",
+    "Ásia Central"
+  ],
+  "where": {
+    "lon": 63.9,
+    "lat": 45.3,
+    "precision": "region",
+    "label": "Central Asia"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
