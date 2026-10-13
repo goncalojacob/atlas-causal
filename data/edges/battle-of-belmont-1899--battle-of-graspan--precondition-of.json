@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-30",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,6 +34,6 @@
   "to": "battle-of-graspan",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The earlier record’s own cited article puts the two battles in one movement and says what carried the first into the second: “Before the British came to use their bayonets, the Boers retreated by pony and re-formed in another entrenched position at Graspan, where the pattern was repeated with the British suffering another 197 casualties.” `precondition-of` and not `caused`: the retreat from Belmont put the Boer force in the position Graspan was fought over two days later, which is a position the second battle needed and not a mechanism that produced it. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "explanation": "The earlier record’s own cited article puts the two battles in one movement and says what carried the first into the second: “Before the British came to use their bayonets, the Boers retreated by pony and re-formed in another entrenched position at Graspan, where the pattern was repeated with the British suffering another 197 casualties.” The type is `precondition-of` rather than `caused`. The retreat from Belmont put the Boer force in the position Graspan was fought over two days later. That is a position the second battle needed, and not a mechanism that produced it. The confidence is `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
   "dispute": null
 }

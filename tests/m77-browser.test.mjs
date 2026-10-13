@@ -33,7 +33,7 @@ const GRAPH = `
   const svg = document.querySelector('svg.graph');
   const nameOf = (mark) => {
     const t = mark.querySelector('title');
-    return (t ? t.textContent : '').split(' \\u2014 ')[0];
+    return (t ? t.textContent : '').replace(/ \\([^()]*\\)$/, '');
   };
   const shown = (el) => {
     const cs = getComputedStyle(el);
@@ -69,7 +69,7 @@ const WALK_NAMED = `
   const drawn = new Set([...svg.querySelectorAll('text.node-label')].map((l) => l.textContent));
   return walk.every((m) => {
     const t = m.querySelector('title');
-    const name = (t ? t.textContent : '').split(' \\u2014 ')[0];
+    const name = (t ? t.textContent : '').replace(/ \\([^()]*\\)$/, '');
     return Boolean(name) && drawn.has(name);
   });`;
 
@@ -177,7 +177,7 @@ const TIMELINE = `
   const drawn = new Set(labels.map((l) => l.textContent));
   const nameOf = (bar) => {
     const t = bar.querySelector('title');
-    return t ? t.textContent.split(' \\u2014 ')[0] : null;
+    return t ? t.textContent.replace(/ \\([^()]*\\)$/, '') : null;
   };
   return {
     bars: bars.map((b) => b.getAttribute('data-id')),
@@ -203,7 +203,7 @@ const barsNamed = (also = 'true') => `
   const drawn = new Set([...svg.querySelectorAll('text.bar-label')].map((l) => l.textContent));
   return bars.every((b) => {
     const t = b.querySelector('title');
-    const name = t ? t.textContent.split(' \\u2014 ')[0] : null;
+    const name = t ? t.textContent.replace(/ \\([^()]*\\)$/, '') : null;
     return !name || drawn.has(name);
   });`;
 

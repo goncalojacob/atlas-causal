@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "fontainebleau",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-12",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q182872",
+  "sitelinks": {
+    "count": 69,
+    "on": "2026-10-12"
+  },
+  "wikipedia": {
+    "en": "Fontainebleau",
+    "pt": "Fontainebleau"
+  },
+  "sources": [],
+  "names": [
+    "Fontainebleau"
+  ],
+  "where": {
+    "lon": 2.7016666666667,
+    "lat": 48.408888888889,
+    "precision": "city",
+    "label": "Fontainebleau"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -51,7 +51,7 @@
   "names": [
     "Armenia"
   ],
-  "summary": "Approximately 29,743 km² and about 2.9 million people (2017), from Wikidata's Q399 (P2046, P1082). The English Wikipedia article \"Armenia\", at revision 1373096863, opens: \"Armenia, officially the Republic of Armenia, is a landlocked country in the Armenian highlands of West Asia. It is a part of the Caucasus region and is bordered by Turkey to the west, Georgia to the north, Azerbaijan to the east, and Iran and the Azerbaijani exclave of Nakhchivan to the south. Yerevan is the capital, largest city and financial center.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 371 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1991 to where the dataset stops, in 2019. Its last capital in the dataset is Yerevan. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 29,743 km² and about 2.9 million people (2017), from Wikidata's Q399 (P2046, P1082). The English Wikipedia article \"Armenia\", at revision 1373096863, opens: \"Armenia, officially the Republic of Armenia, is a landlocked country in the Armenian highlands of West Asia. It is a part of the Caucasus region and is bordered by Turkey to the west, Georgia to the north, Azerbaijan to the east, and Iran and the Azerbaijani exclave of Nakhchivan to the south. Yerevan is the capital, largest city and financial center.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 371 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1991 to where the dataset stops, in 2019. Its last capital in the dataset is Yerevan. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1991,
     "end": null

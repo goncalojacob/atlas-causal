@@ -5,8 +5,8 @@
 // that can be checked here is a rule a writer on a smaller model does not have
 // to know. The malformed shapes below are the brief's own list, one assertion
 // each; `checkQueue` holds the rest — the id that is not unique, the lane that
-// is not a lane, the writer that does not take it, the item with no edge, the
-// edge that is not the item's own.
+// is not a lane, the writer that does not take it, the edge that is not the
+// item's own. (The item with no edge is valid since M91, 13 October.)
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
@@ -151,8 +151,10 @@ test('checkQueue says what the shape cannot', () => {
   assert.match(check([item({ lane: 'oceania', id: '2026-10-13-oceania-003', writer: 'A' })]).join('\n'), /no writer takes the lane "oceania"/);
   // The wrong writer for the lane.
   assert.match(check([item({ writer: 'B' })]).join('\n'), /is writer A's, not B's/);
-  // The bar: an item with no edge does not earn its place.
-  assert.match(check([item({ edges: [] })]).join('\n'), /does not earn its place/);
+  // The bar was withdrawn on 13 October 2026 (M91): an import item with no
+  // edge is imported and connected when somebody can. Inverted from "an item
+  // with no edge does not earn its place"; tests/m91-queue.test.mjs has the rest.
+  assert.deepEqual(check([item({ edges: [] })]), []);
   // An edge between two records already here says nothing about this item.
   assert.match(check([item({ edges: [edge({ from: 'operation-torch' })] })]).join('\n'), /neither end is the item's own qid/);
   assert.match(check([item({ edges: [edge({ from: 'Q1234567', to: 'Q1234567' })] })]).join('\n'), /from a record to itself/);

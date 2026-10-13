@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": "2026-09-29",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -53,7 +53,7 @@
   },
   "place": null,
   "region": "europe",
-  "regionNote": "Lane kept by A15(6): it was derived from france-q142, the country this event was placed at, and that place is refused while the lane it gave is right.",
+  "regionNote": "A15(6) keeps this lane. It came from france-q142, the country this event was placed at. That place is refused, and the lane it gave is right.",
   "parent": "thirty-years-war",
   "category": "war",
   "actors": []

@@ -83,7 +83,7 @@ export function validate(records, topology, schemas, { universe = null, validato
     // by a version of the atlas this one does not know, and there is nothing
     // honest to do with it but say so.
     if (!Number.isInteger(record.schema) || record.schema < 1 || record.schema > SCHEMA_VERSION) {
-      errors.push({ level: 'error', rule: 1, id: label, kind: record.kind ?? null, path: '/schema', message: `unsupported schema version ${JSON.stringify(record.schema)}; this validator knows up to ${SCHEMA_VERSION}` });
+      errors.push({ level: 'error', rule: 1, id: label, kind: record.kind ?? null, path: '/schema', message: `unsupported schema version ${JSON.stringify(record.schema)}. This validator knows versions up to ${SCHEMA_VERSION}` });
       return;
     }
     if (!KINDS.includes(record.kind)) {

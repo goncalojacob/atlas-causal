@@ -889,8 +889,8 @@ test('a categorised mark keeps its circle and gains a symbol, and one with no ca
 
     // And the accessible name says what the symbol says, for a reader who
     // cannot see it.
-    assert.match(seen.war.mark.label, / — War$/);
-    assert.doesNotMatch(seen.none.mark.label, / — /);
+    assert.match(seen.war.mark.label, / \(War\)$/);
+    assert.doesNotMatch(seen.none.mark.label, / \([^()]*\)$/);
   });
 });
 

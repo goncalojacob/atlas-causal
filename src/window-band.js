@@ -39,7 +39,7 @@ import { barBox } from './lanes.js';
 export const HANDLE_WIDTH = 9;
 
 // One sentence, said on both bands, because the gestures are the same on both.
-const BAND_TITLE = 'The window of time. Drag it or the ground to slide, drag an end to widen, the wheel to narrow, double-click a year to snap to its decade.';
+const BAND_TITLE = 'The window of time. Drag the band or the ground around it to move it. Drag an end to widen it. Turn the wheel to narrow it. Double-click a year to set the window to its decade.';
 
 // --- the pure halves --------------------------------------------------------
 
@@ -203,7 +203,7 @@ export function bandHandles(into, labels, { from, to }, {
       'aria-valuemax': String(fromAstronomical(extent.max)),
       'aria-valuenow': String(fromAstronomical(year)),
       'aria-valuetext': formatYear(fromAstronomical(year)),
-    }, { title: `${kind === 'from' ? 'Start' : 'End'} of the window — ${formatYear(fromAstronomical(year))}` });
+    }, { title: `${kind === 'from' ? 'Start' : 'End'} of the window, ${formatYear(fromAstronomical(year))}` });
     if (single && kind === 'from') continue;
     const at = single
       ? { x: width === null ? x : Math.min(Math.max(x, YEAR_INK / 2), width - YEAR_INK / 2), anchor: 'middle' }

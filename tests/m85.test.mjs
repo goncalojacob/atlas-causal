@@ -70,8 +70,8 @@ test('and the resting picture really does cross more than one century', () => {
 });
 
 test('a stack says how many events it hides, in the words its own title uses', () => {
-  assert.match(stackTitle('Carnation Revolution', 47), /— and 46 more events here$/);
-  assert.match(stackTitle('One thing', 2), /— and 1 more event here$/, 'and in the singular');
+  assert.equal(stackTitle('Carnation Revolution', 47), 'Carnation Revolution and 46 more events here');
+  assert.equal(stackTitle('One thing', 2), 'One thing and 1 more event here', 'and in the singular');
   // A stack the graph draws adds the years it covers; the words are the same.
   assert.match(stackTitle('A thing', 3, { span: '1910–1911' }), /2 more events here, 1910–1911$/);
 
@@ -251,9 +251,9 @@ test('the bibliography counts the works apart from the base maps', () => {
   const citations = (list) => list.reduce((n, source) => n + (source.citationCount ?? 0), 0);
   assert.equal(citations(maps) + citations(works), citations(sources));
   for (const list of [maps, works]) {
-    assert.ok(html.includes(`${list.length} source${list.length === 1 ? '' : 's'},`),
+    assert.ok(html.includes(`${list.length} source${list.length === 1 ? '' : 's'}.`),
       'each heading carries its own count');
-    assert.ok(html.includes(`carrying ${citations(list)} citation`),
+    assert.ok(html.includes(`, ${citations(list)} time${citations(list) === 1 ? '' : 's'} in all.`),
       'and its own share of the citations');
   }
   // Which sources are base maps is asked of `origin.tool` — the two territory

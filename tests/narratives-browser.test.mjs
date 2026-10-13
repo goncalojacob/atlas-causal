@@ -128,6 +128,6 @@ test('the synthetic set puts one account under both centuries it crosses', { ski
     assert.equal(seen.badge, false, 'the synthetic set says so');
     assert.deepEqual(seen.periods, ['The 12th century', 'The 13th century']);
     assert.deepEqual(seen.titles, ['A synthetic walk from A to T', 'A synthetic walk from A to T']);
-    assert.match(seen.note, /1 narrative, arranged by the centuries they cross, an account that crosses two listed under both\./);
+    assert.match(seen.note, /1 narrative, grouped by the centuries they cross\. A narrative that crosses two centuries appears under both\./);
   });
 });

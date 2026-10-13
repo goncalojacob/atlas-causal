@@ -25,7 +25,7 @@ const languages = Array.isArray(navigator?.languages) ? [...navigator.languages]
 // The tab's name is the record's, which is what a reader with eleven tabs
 // open is reading them by.
 function setTitle(text) {
-  document.title = text ? `${text} — Atlas causal` : 'Entry — Atlas causal';
+  document.title = text ? `Atlas causal: ${text}` : 'Atlas causal: Entry';
 }
 
 // A prerendered page — entry/<id>.html, written by tools/build-index.mjs from
@@ -37,9 +37,9 @@ function setTitle(text) {
 if (slot.dataset.prerendered === '1') {
   // Nothing: the build wrote this page.
 } else if (id === '') {
-  slot.innerHTML = `<header class="entry-head"><h1>No record asked for</h1></header>
-    <section class="entry-body"><p>This page shows one record's full entry, and the address says which:
-    <code>entry.html?id=…</code>. <a href="index.html">The atlas</a> links here from every card.</p></section>`;
+  slot.innerHTML = `<header class="entry-head"><h1>No record chosen</h1></header>
+    <section class="entry-body"><p>This page shows the full entry of one record. The address names
+    the record: <code>entry.html?id=…</code>. Every card in <a href="index.html">the atlas</a> links here.</p></section>`;
 } else {
   try {
     const atlas = await loadAtlas({

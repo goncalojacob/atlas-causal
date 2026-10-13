@@ -38,6 +38,21 @@ stands" in `docs/m42-pool.md` on `origin/m42` and `docs/m42b-pool.md` on
 
 ## 1. The queue: `schema/import/queue.json` and `data/imports/queue.json`
 
+**13 October: the bar is withdrawn (M91).** The owner, 13 October 2026:
+*"Right now the priority is to add most events of historical significance
+since around 1500, even if for now there is no parent or child for it. Just
+add all events that are relevant and connect them when you can."* So the
+sentence below that says an item with no edge is invalid no longer holds:
+`edges` may be an empty array on an import item, and an edge that is there is
+held to every rule it was held to before (quote, revision, type, explanation,
+one end the item's own). An item may carry an optional `rank`, one to forty
+characters (`vital-3`, `vital-4`, `vital-5`, `list`, `child-of:<id>`), saying
+why it ranks where it does — the main events first, then the lesser ones and
+the children of the main ones — and `state.mjs` counts the waiting items by
+it. `why` stays required. In the log, `written` may now carry no edge and the
+refusals of the edges it queued; `refused` means only `summary-missing` or an
+import that wrote no record.
+
 A queue is a JSON file kept by the planner on the `plan` branch at
 `data/imports/queue.json`. **As built (12 October):** the file is an envelope
 `{ "schema": 1, "kind": "import-queue", "items": [ ... ] }` and the log is
@@ -92,6 +107,22 @@ either branch). Schema and test for the log too. The planner reads both
 branches' logs; a queue item whose id appears in a log is done.
 
 ## 2. The writer's tool: `tools/queue/apply.mjs`
+
+**13 October: what the tool does now (M91).** An item is imported whether or
+not an edge stands: one whose queued edges are all refused, before the import
+or at the last fence, or that queued none, is written as the event alone,
+filed under its surviving parents, and logged `written` with `written.edges:
+[]` and its refusals listed — step 2's *"If no edge survives, the item is
+refused and nothing is imported"* and step 5's taking back no longer apply.
+Edges are still written only where the sentence is verified. Step 1 skips by
+title as well as by id: an active event whose `title`, or whose
+`wikipedia.en`, is the item's English article title (its `enwiki` sitelink,
+one request before anything is written), compared without case, is the item
+already, logged `skipped` with the record named. And `--held` means held on
+the other branch **and not on this one**: an `existing` record present here is
+this writer's to edit, and an import present here is a duplicate, not held.
+`summary-missing`, the network exit 3 and `validate --index` as a hard stop
+are as they were.
 
 ```
 node tools/queue/apply.mjs --queue <file> --writer A|B [--max 5] [--data data]

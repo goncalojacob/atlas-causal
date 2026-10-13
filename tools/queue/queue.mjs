@@ -4,8 +4,8 @@
 // the writing became a writer that applies it. A writer on a smaller model is
 // safe only if it has nothing to decide, so every rule that can be code is
 // code — and this is where the ones that are not a JSON Schema keyword live:
-// which writer takes which lane, that an item earns its place by its own edge,
-// that a queue id is unique, which refusal a candidate edge earns. Pure: no
+// which writer takes which lane, that an edge is the item's own (and, since
+// M91, that an item need carry none), that a queue id is unique, which refusal a candidate edge earns. Pure: no
 // filesystem, no network, no clock. `tools/queue/apply.mjs` applies it,
 // `tools/queue/state.mjs` counts it and `tools/validate.mjs` checks the two
 // files on disk through `checkQueue` and `checkQueueLog`.
@@ -332,11 +332,11 @@ export function checkQueue(file, queue, { regions = null } = {}) {
     if (both) say(at, 'an item imports an item or changes a record, never both: drop one of qid and existing');
     else if (subject === null) say(at, 'an item names neither a qid to import nor an existing record to change');
     const edges = Array.isArray(item?.edges) ? item.edges : [];
-    // Rules card 7, enforced at the queue. An `existing` item has its place
-    // already, so a parent on its own is work a writer may do.
-    if (edges.length === 0 && isImport(item)) {
-      say(`${at}/edges`, 'an item with no edge does not earn its place (rules card 7)');
-    }
+    // Rules card 7's bar was enforced here until 13 October 2026, when the
+    // owner withdrew it (M91): "Just add all events that are relevant and
+    // connect them when you can." An import item may carry no edge. An
+    // `existing` item that asks for neither a parent nor an edge still asks
+    // for nothing.
     if (edges.length === 0 && !isImport(item) && (item?.parents ?? []).length === 0) {
       say(`${at}/edges`, 'an item that neither files a parent nor writes an edge asks for nothing');
     }
@@ -378,7 +378,10 @@ export function checkQueueLog(file, log) {
     // The four statuses are not labels: each says exactly what reached disk,
     // and a log that disagrees with itself is a log the planner cannot read.
     if (entry?.status === 'written') {
-      if (refusals.length) say(`${at}/status`, 'an entry with a refusal is partial or refused, never written');
+      // Since M91 an event is written whether or not an edge stands, so a
+      // `written` entry with no edge may list the refusals it met. One that
+      // wrote edges and met a refusal is `partial`, as before.
+      if (refusals.length && edges.length) say(`${at}/status`, 'an entry with a refusal is partial or refused, never written');
       if (!written.event && !edges.length) say(`${at}/written`, 'nothing was written, so the status is not written');
     }
     if (entry?.status === 'partial') {
@@ -406,12 +409,20 @@ export function checkQueueLog(file, log) {
 // writer, what the logs answered, and the refusal codes' counts. Derived from
 // the two files and nothing else, so `state.mjs` prints it and the tests ask
 // the same question of a fixture.
+// The key an item with no `rank` is counted under (M91).
+export const UNRANKED = 'unranked';
+
 export function queueState(queue, logs = []) {
   const done = appliedIds(logs);
   const queued = { A: 0, B: 0 };
+  // M91: the items still waiting, by the planner's own `rank` — how far down
+  // from the main events towards their children the queue has reached.
+  const byRank = {};
   for (const item of queue?.items ?? []) {
     if (done.has(item?.id)) continue;
     if (item?.writer === 'A' || item?.writer === 'B') queued[item.writer] += 1;
+    const rank = typeof item?.rank === 'string' && item.rank !== '' ? item.rank : UNRANKED;
+    byRank[rank] = (byRank[rank] ?? 0) + 1;
   }
   const byWriter = { A: {}, B: {} };
   const refusals = {};
@@ -426,7 +437,7 @@ export function queueState(queue, logs = []) {
       }
     }
   }
-  return { queued, byWriter, refusals, applied: done.size };
+  return { queued, byWriter, refusals, byRank, applied: done.size };
 }
 
 // --- the parents of a record, for the rules above --------------------------

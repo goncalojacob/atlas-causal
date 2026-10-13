@@ -143,7 +143,7 @@ export function createCategoryControl(group, { atlas, state }) {
     const { kept, uncategorised } = categoryCounts(bandEvents(atlas, s),
       categories.filter((one) => on.has(one.id)));
     const text = categoryCountText({ kept, uncategorised });
-    counted.textContent = text ? ` — ${text}` : '';
+    counted.textContent = text ? `: ${text}` : '';
   };
 
   const render = (s) => {

@@ -30,7 +30,7 @@
             "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}(:[0-9]{2})?Z$"
           },
           "status": {
-            "description": "`written`: the event and every edge. `partial`: the event and some of the edges, the rest in `refusals`. `refused`: nothing at all, because no edge could be verified and a record that earns no edge is not imported (rules card 7). `skipped`: the atlas, on either branch, holds the item already.",
+            "description": "`written`: the event and every edge it could keep — since 13 October 2026 (M91) an event is imported whether or not an edge stands, so `written` with no edge is the event alone, with the refusals of the edges it queued listed. `partial`: the event and some of the edges, the rest in `refusals`. `refused`: nothing at all, because the lead could not be read (`summary-missing`) or the import wrote no record. `skipped`: the atlas, on either branch, holds the item already, by its Wikidata id or by its article's title.",
             "type": "string",
             "enum": ["written", "partial", "refused", "skipped"]
           },

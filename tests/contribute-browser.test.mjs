@@ -53,7 +53,7 @@ test('"Edit this record" on a card opens the form on that record', { skip }, asy
     assert.ok(form.summaryLength > 40, 'the summary came with it');
     assert.match(form.place, /lisbon/, `the place picker opened on the record's place, not empty: ${form.place}`);
     assert.ok(form.cited.length > 0, 'and the sources it rests on');
-    assert.ok(form.cited.every((t) => t.includes(' · ')), `each citation names its source: ${form.cited.join(' | ')}`);
+    assert.ok(form.cited.every((t) => / \([^()]+\)$/.test(t)), `each citation names its source: ${form.cited.join(' | ')}`);
 
     // The bundle it would file is the record under its own id, which is what
     // the correction template accepts.
@@ -144,7 +144,7 @@ test('the picker answers a keystroke among 20 000 records in under 100 ms', { sk
       'degree:1 link',
     ]);
     assert.equal(measured.chosen, 'bench-event-00001', 'the arrow keys and Enter chose the second row');
-    assert.match(measured.under, /^Bench event 1 at Porto · bench-event-00001$/);
+    assert.match(measured.under, /^Bench event 1 at Porto \(bench-event-00001\)$/);
     assert.equal(measured.links, 2, 'and what it already connects to: one link in, one out');
 
     const [cold, ...warm] = measured.took;
@@ -218,17 +218,17 @@ test('a new place under an id the atlas already has is named as a replacement', 
       submit: document.querySelector(".submit button, button.submit, .actions button")?.disabled ?? null,
     };`);
     assert.equal(said.id, 'lisbon', 'the derived id is the one the atlas already has');
-    assert.match(said.lead, /This id already exists: filing this would replace/);
-    assert.ok(said.rows.some((t) => /\(lisbon\) — the same id/.test(t)), said.rows.join(' · '));
+    assert.match(said.lead, /This id already exists\. Filing this would replace/);
+    assert.ok(said.rows.some((t) => /\(lisbon\) has the same id/.test(t)), said.rows.join(' · '));
     assert.match(said.acknowledge, /I mean to replace/);
-    // Never "the bundle validates" while that is on screen.
-    assert.doesNotMatch(said.summary, /The bundle validates/);
-    assert.match(said.summary, /match ones the atlas already has/);
+    // Never "the bundle passes every check" while that is on screen.
+    assert.doesNotMatch(said.summary, /The bundle passes every check/);
+    assert.match(said.summary, /match records the atlas already has/);
 
     // Acknowledged, it reads as a correction of that record and the summary
     // comes back — the bundle really does validate, as a replacement.
     await page.eval(`document.querySelector("section.entry.place .acknowledge input").click(); return true;`);
-    await waitFor(page, 'return /validates/.test(document.querySelector(".report .summary").textContent);',
+    await waitFor(page, 'return /passes every check/.test(document.querySelector(".report .summary").textContent);',
       'the summary once the replacement is acknowledged');
   });
 });
@@ -261,7 +261,7 @@ test('Claim reads the name typed after the record was opened', { skip }, async (
     const claim = '[...document.querySelectorAll("button")].find((b) => b.textContent === "Claim")';
     await waitFor(page, `return Boolean(${claim});`, 'the Claim button');
     await page.eval(`${claim}.click(); return true;`);
-    await waitFor(page, 'return /put your name in the box/.test(document.querySelector(".save-note")?.textContent ?? "");',
+    await waitFor(page, 'return /Put your name in the box below first/.test(document.querySelector(".save-note")?.textContent ?? "");',
       'the note asking for a name');
 
     // Typed now, with the record already open, and pressed again.
@@ -296,7 +296,7 @@ test('?open= opens the record the pull request names, not the first in the queue
       title: document.querySelector(".editor .field-title input").value,
       current: document.querySelector(".queue-item.current .queue-id")?.textContent ?? null,
     };`), {
-      id: `event · ${wanted}`,
+      id: `event: ${wanted}`,
       title: '1911 Constituent Assembly election',
       current: wanted,
     });
@@ -310,7 +310,7 @@ test('?open= opens the record the pull request names, not the first in the queue
     // the shape a pull request body is written in. It was not parsed at all,
     // so the address opened the queue's first record with nothing said.
     await open(page, url(`review.html?open=event/${wanted}`), 'return document.querySelectorAll(".editor").length > 0;');
-    assert.equal(await page.eval('return document.querySelector(".record-id").textContent;'), `event · ${wanted}`);
+    assert.equal(await page.eval('return document.querySelector(".record-id").textContent;'), `event: ${wanted}`);
     assert.equal(await page.eval('return document.querySelector(".save-note")?.textContent ?? "";'), '');
     // The kind has to be the record's own: the right id under the wrong kind
     // is an address that names nothing, and says so.
@@ -359,7 +359,7 @@ test('the form builds a tenure and its office picker answers, and review.html op
       category: document.querySelector('.editor .field-category select').value,
       current: document.querySelector('.queue-item.current .queue-id')?.textContent ?? null,
     };`), {
-      id: 'office · monarch-of-portugal',
+      id: 'office: monarch-of-portugal',
       title: 'Monarch of Portugal',
       category: 'head-of-state',
       current: 'monarch-of-portugal',
@@ -394,7 +394,7 @@ test('the form writes an event\'s parent, reach, category and an actor\'s note',
     // adding one is an edit to that file (plan decision 13).
     const categories = JSON.parse(await readFile(path.join(ROOT, 'data', 'categories.json'), 'utf8'));
     assert.deepEqual(drawn.categories, ['', ...categories.map((c) => c.id)]);
-    assert.equal(drawn.categoryLabels[0], '— not said —');
+    assert.equal(drawn.categoryLabels[0], '(not said)');
     assert.equal(drawn.categoryLabels[1], categories[0].label);
 
     // M32b-1: the role is a closed list and no longer a suggestion, because a
@@ -420,7 +420,7 @@ test('the form writes an event\'s parent, reach, category and an actor\'s note',
     // Blank first, so an unfilled row is still unfilled and reports at
     // /actors/0/role rather than quietly taking the first role in the file.
     assert.deepEqual(row.options, ['', ...roles.map((r) => r.id)]);
-    assert.equal(row.optionLabels[0], '— no role —');
+    assert.equal(row.optionLabels[0], '(no role)');
     assert.equal(row.optionLabels[1], roles[0].label);
     assert.equal(row.titles[1], roles[0].description, 'what the role covers, from data/');
 

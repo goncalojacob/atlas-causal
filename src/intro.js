@@ -234,20 +234,21 @@ export function introHtml(atlas) {
     <button type="button" class="intro-close" data-intro="close" aria-label="Close">×</button>
     <h2 id="intro-title">Atlas causal</h2>
     <p class="intro-lead">${esc(WHAT_IT_IS)}</p>
-    <p class="muted">${esc(atlas.activeEvents.length)} events · ${esc(links)} links ·
-      ${esc(atlas.actors.size)} actors · ${esc(atlas.sources.size)} sources.
+    <p class="muted">${esc(atlas.activeEvents.length)} events, ${esc(links)} links,
+      ${esc(atlas.actors.size)} actors and ${esc(atlas.sources.size)} sources.
       ${esc(linksSentence(counted))}</p>
 
     ${first ? `<section class="intro-start">
       <h3>Start here</h3>
       <p><button type="button" class="intro-go" data-intro="narrative" data-id="${esc(first.id)}">${esc(nameOf(first))}</button>
-        ${named(first) ? `<span class="muted">${esc(bylineOf(first))} · ${esc((first.steps ?? []).length)} steps</span>` : ''}</p>
-      <p class="hint">A short account that takes you through the events in order, one at a time. The
-        map, the graph and the timeline follow it as you read; it changes nothing it goes through.</p>
+        ${named(first) ? `<span class="muted">${esc(bylineOf(first))}, ${esc((first.steps ?? []).length)} steps</span>` : ''}</p>
+      <p class="hint">A narrative is a short account that takes you through events in order, one at a
+        time. The map, the graph and the timeline follow it as you read. It does not change the
+        records it goes through.</p>
     </section>` : ''}
 
     ${narratives.length > 1 ? `<section class="intro-narratives">
-      <h3>Accounts to read <span class="count">${esc(narratives.length)}</span></h3>
+      <h3>Narratives <span class="count">${esc(narratives.length)}</span></h3>
       <ul>${narratives.map((n) => `<li>
         <button type="button" class="link" data-intro="narrative" data-id="${esc(n.id)}">${esc(nameOf(n))}</button>
         ${named(n) ? `<span class="muted">${esc(bylineOf(n))}</span>` : ''}
@@ -255,9 +256,9 @@ export function introHtml(atlas) {
     </section>` : ''}
 
     ${events.length ? `<section class="intro-heaviest">
-      <h3>What most of it hangs on</h3>
-      <p class="hint">The events with the most of the atlas downstream of them. Opening one is as good a
-        place to start as any.</p>
+      <h3>Events with the most consequences</h3>
+      <p class="hint">More of the atlas follows from these events than from any others. Open one to
+        start.</p>
       <ul>${events.map((e) => `<li>
         <button type="button" class="link" data-intro="event" data-id="${esc(e.id)}">${esc(nameOf(e))}</button>
         <span class="when">${esc(formatInterval(e.when))}</span>
@@ -267,23 +268,23 @@ export function introHtml(atlas) {
     <section class="intro-walkthrough">
       <h3>How to read it</h3>
       <ol>
-        <li>Click an event — a mark on the map, a bar on the timeline, a dot on the graph. A card
-          opens on it with its dates, who was in it and where it happened.</li>
+        <li>Click an event. It is a mark on the map, a bar on the timeline or a dot on the graph. A
+          card opens with its dates, who took part and where it happened.</li>
         <li>The card lists <strong>what this event led to</strong>. Click one of those to go forward a
-          step. The trail you have followed is drawn in red on all three pictures.</li>
-        <li>The card also lists <strong>what led to this event</strong>, including the causes you did
-          not arrive through: getting here one way does not mean that way explains it.</li>
-        <li>Every link between two events says <em>why</em>, in a paragraph somebody wrote, with the
-          books and articles it rests on. Where historians disagree, the link is marked
-          <em>disputed</em> and says who disagrees.</li>
+          step. The map, the graph and the timeline draw the path you have followed in red.</li>
+        <li>The card also lists <strong>what led to this event</strong>. The list includes the
+          causes you did not come through. The path you took is only one of the causes.</li>
+        <li>A link joins two events. Every link has a paragraph, written by a person, that says
+          <em>why</em>, and names the books and articles it rests on. Where historians disagree, the
+          atlas marks the link <em>disputed</em> and names who disagrees.</li>
       </ol>
-      <p class="hint">The atlas opens on the events that are not part of any larger one. Open a war, a
-        regime or a revolution and what happened inside it appears.</p>
+      <p class="hint">At first the atlas shows only the events that are not part of a larger one. Open
+        a war, a regime or a revolution to see the events inside it.</p>
     </section>
 
     <p class="intro-actions">
-      <button type="button" data-intro="close">Start exploring</button>
-      <a href="about.html">What this is, and what it is not →</a>
+      <button type="button" data-intro="close">Close</button>
+      <a href="about.html">About the atlas</a>
     </p>
   </div>`;
 }

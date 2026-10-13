@@ -54,13 +54,13 @@ import {
 // What the page says about where the issue goes. Said on the page and not in
 // a tooltip, because a reader about to publish under their own name is owed
 // the whole of what is about to happen.
-const NEXT = 'Submitting opens a new issue on GitHub, in this browser and under your own account — '
-  + 'so a GitHub account is needed. Nothing is sent from this page: the issue is yours to read '
-  + 'before you post it. A maintainer then reads it and labels it “accepted”, which opens a pull '
-  + 'request carrying your narrative; a person reviews that before anything is merged.';
+const NEXT = 'Submitting opens a new issue on GitHub in this browser. You need a GitHub account, '
+  + 'and the issue goes out under your name. This page sends nothing. You read the issue before you '
+  + 'post it. A maintainer then reads it and labels it “accepted”. That label opens a pull request '
+  + 'with your narrative. A person reviews the pull request before anyone merges it.';
 
-const PICK = 'Click an event on the map, the graph or the lanes and it becomes the next step. '
-  + 'A step is always an event the atlas already has.';
+const PICK = 'Click an event on the map, the graph or the timeline to add it as the next step. '
+  + 'Every step is an event already in the atlas.';
 
 const today = () => new Date().toISOString().slice(0, 10);
 
@@ -92,18 +92,18 @@ export function createComposer(layout, {
 
   const head = html('div', { class: 'composer-head' });
   head.append(html('h2', {}, 'Write a narrative'));
-  const close = html('button', { type: 'button', class: 'link small composer-close', title: 'Close the composer; the draft is kept' }, 'close');
+  const close = html('button', { type: 'button', class: 'link small composer-close', title: 'Close the composer. Your draft stays.' }, 'close');
   head.append(close);
   root.append(head);
   root.append(html('p', { class: 'hint' }, PICK));
 
   const stepsHead = html('div', { class: 'citations-head' });
-  stepsHead.append(html('h3', { class: 'composer-steps-label' }, 'The walk'));
+  stepsHead.append(html('h3', { class: 'composer-steps-label' }, 'Steps'));
   const spanText = html('span', { class: 'composer-window' });
   stepsHead.append(spanText);
   root.append(stepsHead);
   const list = html('ol', { class: 'composer-steps' });
-  const noSteps = html('p', { class: 'hint composer-empty' }, 'No steps yet — click an event and it becomes the first.');
+  const noSteps = html('p', { class: 'hint composer-empty' }, 'No steps yet. Click an event to make it the first step.');
   root.append(list, noSteps);
 
   const field = (label, control, hint = null) => {
@@ -117,18 +117,18 @@ export function createComposer(layout, {
   };
 
   const titleInput = html('input', { type: 'text', maxlength: '200', placeholder: 'How the colonial war ended the regime' });
-  field('Title', titleInput, 'It becomes the narrative’s id, and the title of the issue.');
-  const summaryInput = html('textarea', { rows: '4', maxlength: '2000', placeholder: 'What this narrative claims, in a paragraph.' });
-  field('Summary', summaryInput, 'Enough for a reader choosing between two accounts of the same period.');
-  const authorInput = html('input', { type: 'text', maxlength: '120', placeholder: 'the name this should be attributed to' });
-  field('Your name', authorInput, 'Attribution. Your GitHub handle is taken from the issue you open, not from here.');
+  field('Title', titleInput, 'The title becomes the narrative’s id and the title of the issue.');
+  const summaryInput = html('textarea', { rows: '4', maxlength: '2000', placeholder: 'One paragraph on what this narrative claims.' });
+  field('Summary', summaryInput, 'Write enough for a reader to choose between two accounts of the same period.');
+  const authorInput = html('input', { type: 'text', maxlength: '120', placeholder: 'the name to credit' });
+  field('Your name', authorInput, 'The narrative credits this name. Your GitHub handle comes from the issue you open.');
 
   const citeWrap = html('div', { class: 'field' });
   citeWrap.append(html('span', { class: 'citations-label' }, 'Sources'));
   const citeRows = html('ul', { class: 'citation-rows' });
   const addCite = html('button', { type: 'button', class: 'link small' }, '+ cite a source');
   citeWrap.append(citeRows, addCite);
-  citeWrap.append(html('p', { class: 'hint' }, 'A narrative cites what it rests on beyond the records it walks — at least one (rule 6).'));
+  citeWrap.append(html('p', { class: 'hint' }, 'Cite at least one source for what the narrative says beyond the records it walks (rule 6).'));
   root.append(citeWrap);
 
   const report = html('div', { class: 'report' });
@@ -188,7 +188,7 @@ export function createComposer(layout, {
       up.addEventListener('click', () => { draft = moveStep(draft, at, -1); changed(); });
       down.addEventListener('click', () => { draft = moveStep(draft, at, 1); changed(); });
       move.append(up, down);
-      const drop = html('button', { type: 'button', class: 'link small composer-remove', title: 'take this step out of the walk' }, 'remove');
+      const drop = html('button', { type: 'button', class: 'link small composer-remove', title: 'remove this step' }, 'remove');
       drop.addEventListener('click', () => { draft = removeStep(draft, at); changed(); });
       row.append(move, drop);
 
@@ -241,7 +241,7 @@ export function createComposer(layout, {
     draft.citations.forEach((citation, at) => {
       const row = html('li', { class: 'citation-row' });
       const select = html('select', { 'aria-label': `Source ${at + 1}` });
-      select.append(html('option', { value: '' }, '— choose a source —'));
+      select.append(html('option', { value: '' }, 'choose a source'));
       for (const source of bibliography) {
         const option = html('option', { value: source.id }, citationText(source));
         if (source.id === citation.source) option.selected = true;
@@ -280,7 +280,7 @@ export function createComposer(layout, {
   function update() {
     const span = windowOf(draft, reader.years);
     spanText.textContent = span ? `${span.from} to ${span.to}` : 'no years yet';
-    spanText.title = 'The window is the span of the steps. It is computed, not typed.';
+    spanText.title = 'The window runs from the earliest step to the latest. The composer works it out from the steps.';
 
     current = composeRecord(draft, { years: reader.years, today: today() });
     if (!schemas) {
@@ -294,8 +294,8 @@ export function createComposer(layout, {
     submit.disabled = !checked.ok;
     verdict.classList.toggle('bad', !checked.ok);
     verdict.textContent = checked.ok
-      ? 'This is a record the validator accepts.'
-      : `${checked.errors.length === 1 ? '1 thing' : `${checked.errors.length} things`} to put right before this can be submitted.`;
+      ? 'The validator accepts this record.'
+      : `${checked.errors.length === 1 ? '1 thing' : `${checked.errors.length} things`} to fix before you can submit.`;
     problems.innerHTML = '';
     for (const error of checked.errors) {
       problems.append(html('li', {}, `rule ${error.rule}${error.path ? ` at ${error.path}` : ''}: ${error.message}`));
@@ -335,8 +335,8 @@ export function createComposer(layout, {
     fill();
     changed();
     note.textContent = target.prefilled
-      ? 'The issue is open in another tab, prefilled. Post it there when you are happy with it.'
-      : 'The walk was too long to put in the address, so it is on your clipboard: paste it into the issue that just opened.';
+      ? 'The issue is open in another tab, already filled in. Post it there when you are ready.'
+      : 'The narrative was too long for the address, so the composer copied it to your clipboard. Paste it into the issue that just opened.';
   });
 
   discard.addEventListener('click', () => {
