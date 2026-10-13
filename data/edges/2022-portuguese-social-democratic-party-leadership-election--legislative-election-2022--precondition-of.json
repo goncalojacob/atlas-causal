@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -33,6 +33,6 @@
   "to": "legislative-election-2022",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The ballot of 27 November was brought forward by a week for a reason: the president had dissolved the Assembly on 5 November and the party needed a candidate for prime minister before the campaign. That is what this election chose — not only a leader for the next two years but the name at the head of the largest opposition list on 30 January. The edge is `precondition-of` because the legislative election was already called when this one was held: what the party settled was who would fight it, not that it would happen.",
+  "explanation": "The ballot of 27 November was brought forward by a week for a reason. The president had dissolved the Assembly on 5 November, and the party needed a candidate for prime minister before the campaign. This election chose a leader for the next two years and the name at the head of the largest opposition list on 30 January. The edge is `precondition-of` because the legislative election was already called when this one was held. The party settled who would fight it, and not whether it would happen.",
   "dispute": null
 }

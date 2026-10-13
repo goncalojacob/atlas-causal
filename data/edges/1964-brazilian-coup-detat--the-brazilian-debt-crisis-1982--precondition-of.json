@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant",
     "run": "m57"
@@ -38,6 +38,6 @@
   "to": "the-brazilian-debt-crisis-1982",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The debt was contracted by the governments the coup installed, for the industrialisation and infrastructure they had chosen, and on terms they accepted: between 1975 and 1982 Latin American debt to commercial banks grew at a cumulative 20.4 per cent a year, much of it in short-term loans without safeguards. The crisis is the bill for a policy, and the policy had one author.",
+  "explanation": "The governments the coup installed contracted the debt, for the industrialisation and infrastructure they had chosen, and on terms they accepted. Between 1975 and 1982 Latin American debt to commercial banks grew at a cumulative 20.4 per cent a year, much of it in short-term loans without safeguards. The crisis is the bill for a policy, and the policy had one author.",
   "dispute": null
 }

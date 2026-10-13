@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "mountain-war",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The Chouf fighting’s own Background begins with the invasion: “In the wake of the June 1982 Israeli invasion of Lebanon, the main Maronite Christian ally of Israel, the Lebanese Forces (LF) militia … sought to expand its area of influence in Lebanon. The LF tried to take advantage of Israel Defense Forces (IDF) advances to begin deploying troops in areas where they had not been present before … With the tacit backing of the IDF, Lebanese Forces’ units … moved into the Christian-populated areas of the western Chouf … However, this brought them into confrontation with the local Druze community, who viewed the LF as intruders on their territory.” `enabled`: the invasion is what put the Lebanese Forces on ground they had not held, and the confrontation there is this war.",
+  "explanation": "The Background section of the Chouf fighting's own article begins with the invasion: “In the wake of the June 1982 Israeli invasion of Lebanon, the main Maronite Christian ally of Israel, the Lebanese Forces (LF) militia … sought to expand its area of influence in Lebanon. The LF tried to take advantage of Israel Defense Forces (IDF) advances to begin deploying troops in areas where they had not been present before … With the tacit backing of the IDF, Lebanese Forces’ units … moved into the Christian-populated areas of the western Chouf … However, this brought them into confrontation with the local Druze community, who viewed the LF as intruders on their territory.” The edge is `enabled`. The invasion put the Lebanese Forces on ground they had not held, and the confrontation there is this war.",
   "dispute": null
 }

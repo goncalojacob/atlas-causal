@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "2021-malian-coup-d-etat",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The second coup was made by the man the first one put in place, and the article says so: “Assimi Goïta, the head of the junta that led the 2020 Malian coup d’état, announced that N’daw and Ouane were stripped of their powers and that new elections would be held in 2022. It is the country’s third coup d’état in ten years, following the 2012 and 2020 military takeovers, with the latter having happened only nine months earlier.” The transitional government the 2020 coup created is what the 2021 coup deposed, so the first is a precondition of the second; the article does not say the first brought the second about, and the type is written to that.",
+  "explanation": "The man the first coup put in place made the second, and the article says so: “Assimi Goïta, the head of the junta that led the 2020 Malian coup d’état, announced that N’daw and Ouane were stripped of their powers and that new elections would be held in 2022. It is the country’s third coup d’état in ten years, following the 2012 and 2020 military takeovers, with the latter having happened only nine months earlier.” The transitional government the 2020 coup created is what the 2021 coup deposed, so the first is a precondition of the second. The article does not say the first brought the second about, and the type is written to that.",
   "dispute": null
 }

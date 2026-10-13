@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -37,6 +37,6 @@
   "to": "troika-bailout-2011",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The request of April 2011 was made by a government that had resigned, to a parliament that had refused its fourth austerity package, in a market that had stopped lending to it. The election of 2009 is where the arithmetic comes from: a Socialist government forty-nine seats short of a majority, dependent on opponents who had every reason to withhold the votes and then to force an election. The edge is `precondition-of` rather than `caused` because the debt, the deficit and the sovereign crisis in the euro area would have been there whatever the Assembly looked like — what this election settled was that there would be no majority to meet them with.",
+  "explanation": "A government that had resigned made the request of April 2011, to a parliament that had refused its fourth austerity package, in a market that had stopped lending to it. The election of 2009 is where the arithmetic comes from: a Socialist government forty-nine seats short of a majority, dependent on opponents who had every reason to withhold the votes and then to force an election. The edge is `precondition-of` rather than `caused` because the debt, the deficit and the sovereign crisis in the euro area would have been there whatever the Assembly looked like. This election settled that there would be no majority to meet them with.",
   "dispute": null
 }
