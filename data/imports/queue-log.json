@@ -717,6 +717,129 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-042",
+      "writer": "A",
+      "fired": "2026-10-13T05:23Z",
+      "status": "written",
+      "written": {
+        "event": "age-of-discovery",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-043",
+      "writer": "A",
+      "fired": "2026-10-13T05:23Z",
+      "status": "written",
+      "written": {
+        "event": "reformation",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-044",
+      "writer": "A",
+      "fired": "2026-10-13T05:23Z",
+      "status": "written",
+      "written": {
+        "event": "age-of-enlightenment",
+        "edges": [],
+        "place": "western-europe"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-045",
+      "writer": "A",
+      "fired": "2026-10-13T05:23Z",
+      "status": "written",
+      "written": {
+        "event": "war-on-terror",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-049",
+      "writer": "B",
+      "fired": "2026-10-13T05:43Z",
+      "status": "written",
+      "written": {
+        "event": "lewis-and-clark-expedition",
+        "edges": [],
+        "place": "camp-dubois"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-050",
+      "writer": "B",
+      "fired": "2026-10-13T05:43Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q214426 is already the event \"mexican-revolution\""
+    },
+    {
+      "id": "2026-10-13-americas-051",
+      "writer": "B",
+      "fired": "2026-10-13T05:43Z",
+      "status": "written",
+      "written": {
+        "event": "dust-bowl",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-052",
+      "writer": "B",
+      "fired": "2026-10-13T05:43Z",
+      "status": "written",
+      "written": {
+        "event": "new-deal",
+        "edges": [
+          "great-depression--new-deal--reacted-to"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-053",
+      "writer": "B",
+      "fired": "2026-10-13T05:43Z",
+      "status": "written",
+      "written": {
+        "event": "manhattan-project",
+        "edges": [],
+        "place": "oak-ridge-tennessee"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-054",
+      "writer": "B",
+      "fired": "2026-10-13T05:43Z",
+      "status": "written",
+      "written": {
+        "event": "civil-rights-movement",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

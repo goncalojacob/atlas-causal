@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "oak-ridge-tennessee",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q48809",
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Oak Ridge, Tennessee",
+    "pt": "Oak Ridge (Tennessee)"
+  },
+  "sources": [],
+  "names": [
+    "Oak Ridge",
+    "Oak Ridge, Tennessee",
+    "Oak Ridge (Tennessee)"
+  ],
+  "where": {
+    "lon": -84.2625,
+    "lat": 36.013333333333,
+    "precision": "city",
+    "label": "Oak Ridge, Tennessee"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
