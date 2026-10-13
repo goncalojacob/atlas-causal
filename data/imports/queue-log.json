@@ -453,6 +453,18 @@
       "refusals": []
     },
     {
+      "id": "2026-10-13-americas-038",
+      "writer": "B",
+      "fired": "2026-10-13T03:43Z",
+      "status": "written",
+      "written": {
+        "event": "operation-condor",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
       "id": "2026-10-13-asia-013",
       "writer": "A",
       "fired": "2026-10-13T03:22Z",
