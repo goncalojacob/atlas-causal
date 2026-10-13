@@ -261,7 +261,7 @@ test('Claim reads the name typed after the record was opened', { skip }, async (
     const claim = '[...document.querySelectorAll("button")].find((b) => b.textContent === "Claim")';
     await waitFor(page, `return Boolean(${claim});`, 'the Claim button');
     await page.eval(`${claim}.click(); return true;`);
-    await waitFor(page, 'return /put your name in the box/.test(document.querySelector(".save-note")?.textContent ?? "");',
+    await waitFor(page, 'return /Put your name in the box below first/.test(document.querySelector(".save-note")?.textContent ?? "");',
       'the note asking for a name');
 
     // Typed now, with the record already open, and pressed again.
