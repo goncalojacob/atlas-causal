@@ -1528,3 +1528,67 @@ are already filed there on the same reading, and the Agadir Crisis sits between
 them. Its sibling `first-moroccan-crisis` and the `treaty-of-fes` that closed the
 question are filed under the same umbrella and both carry a place, so this is the
 only one of batch 90's three that needs this paragraph.
+
+## Writer, 13 October 2026: `1556-shaanxi-earthquake`, bare
+
+The writer imported `1556-shaanxi-earthquake` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `1957-1958-influenza-pandemic`, bare
+
+The writer imported `1957-1958-influenza-pandemic` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `anglo-zulu-war`, bare
+
+The writer imported `anglo-zulu-war` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `angolan-wars`, bare
+
+The writer imported `angolan-wars` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `atlantic-revolutions`, bare
+
+The writer imported `atlantic-revolutions` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `barbary-portuguese-conflicts`, bare
+
+The writer imported `barbary-portuguese-conflicts` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `black-monday`, bare
+
+The writer imported `black-monday` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `dutch-portuguese-war`, bare
+
+The writer imported `dutch-portuguese-war` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `european-colonization-of-the-americas`, bare
+
+The writer imported `european-colonization-of-the-americas` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `franco-russian-alliance`, bare
+
+The writer imported `franco-russian-alliance` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `hong-kong-flu`, bare
+
+The writer imported `hong-kong-flu` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `kongo-civil-war`, bare
+
+The writer imported `kongo-civil-war` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `moroccan-portuguese-conflicts`, bare
+
+The writer imported `moroccan-portuguese-conflicts` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `ottoman-portuguese-conflicts-1538-1560`, bare
+
+The writer imported `ottoman-portuguese-conflicts-1538-1560` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `sinhalese-portuguese-conflicts`, bare
+
+The writer imported `sinhalese-portuguese-conflicts` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer, 13 October 2026: `war-of-the-pacific`, bare
+
+The writer imported `war-of-the-pacific` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
