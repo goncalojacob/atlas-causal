@@ -6217,6 +6217,66 @@
       "kind": "event",
       "label": "economic reform",
       "note": "Added 13 October by the assistant, from the planner’s 0115Z note: the vital-article ranking queued an item of this class and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “reform of public economic policies or regulations”. Carried by Reform and opening up."
+    },
+    "Q3318733": {
+      "kind": "event",
+      "label": "independentism",
+      "note": "Added 13 October by the assistant, from the planner’s 0518Z note: a vital-article item of this class was queued and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “political ideology supported to the idea of independence of a certain part of a certain polity”. Carried by Indian independence movement. One event row among an item’s classes is enough (deviation 1628), so the sibling classes the note lists are left without a row."
+    },
+    "Q366301": {
+      "kind": "event",
+      "label": "research expedition",
+      "note": "Added 13 October by the assistant, from the planner’s 0518Z note: a vital-article item of this class was queued and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “journey undertaken by a scientist or an artist for the purpose of undertaking field work”. Carried by Lewis and Clark Expedition. One event row among an item’s classes is enough (deviation 1628), so the sibling classes the note lists are left without a row."
+    },
+    "Q3193890": {
+      "kind": "event",
+      "label": "environmental disaster",
+      "note": "Added 13 October by the assistant, from the planner’s 0518Z note: a vital-article item of this class was queued and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “disaster to the natural environment due to human activity with widespread or long-lasting consequences”. Carried by Dust Bowl. One event row among an item’s classes is enough (deviation 1628), so the sibling classes the note lists are left without a row."
+    },
+    "Q15725976": {
+      "kind": "event",
+      "label": "nuclear disaster",
+      "note": "Added 13 October by the assistant, from the planner’s 0518Z note: a vital-article item of this class was queued and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “catastrophic nuclear accident”. Carried by Chernobyl disaster. One event row among an item’s classes is enough (deviation 1628), so the sibling classes the note lists are left without a row."
+    },
+    "Q546113": {
+      "kind": "event",
+      "label": "public policy",
+      "note": "Added 13 October by the assistant, from the planner’s 0518Z note: a vital-article item of this class was queued and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “principled guide to action taken by the administrative executive branches of the state”. Carried by New Deal. One event row among an item’s classes is enough (deviation 1628), so the sibling classes the note lists are left without a row."
+    },
+    "Q27665152": {
+      "kind": "event",
+      "label": "military project",
+      "note": "Added 13 October by the assistant, from the planner’s 0518Z note: a vital-article item of this class was queued and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “type of project”. Carried by Manhattan Project. One event row among an item’s classes is enough (deviation 1628), so the sibling classes the note lists are left without a row."
+    },
+    "Q13406660": {
+      "kind": "event",
+      "label": "civil rights movement",
+      "note": "Added 13 October by the assistant, from the planner’s 0518Z note: a vital-article item of this class was queued and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “one of worldwide social and political movements in the 20th century”. Carried by civil rights movement. One event row among an item’s classes is enough (deviation 1628), so the sibling classes the note lists are left without a row."
+    },
+    "Q7311342": {
+      "kind": "event",
+      "label": "religious controversy",
+      "note": "Added 13 October by the assistant, from the planner’s 0518Z note: a vital-article item of this class was queued and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “disagreement related to religion”. Carried by Counter-Reformation. One event row among an item’s classes is enough (deviation 1628), so the sibling classes the note lists are left without a row."
+    },
+    "Q11827304": {
+      "kind": "event",
+      "label": "historical process",
+      "note": "Added 13 October by the assistant, from the planner’s 0518Z note: a vital-article item of this class was queued and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “continuous sequence of interconnected events that transform aspects of human society over time”. Carried by unification of Germany. One event row among an item’s classes is enough (deviation 1628), so the sibling classes the note lists are left without a row."
+    },
+    "Q1072326": {
+      "kind": "event",
+      "label": "summit",
+      "note": "Added 13 October by the assistant, from the planner’s 0518Z note: a vital-article item of this class was queued and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “meeting of heads of state or government”. Carried by Congress of Berlin, Yalta Conference. One event row among an item’s classes is enough (deviation 1628), so the sibling classes the note lists are left without a row."
+    },
+    "Q1262732": {
+      "kind": "event",
+      "label": "purge",
+      "note": "Added 13 October by the assistant, from the planner’s 0518Z note: a vital-article item of this class was queued and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “forceful removal of people considered undesirable”. Carried by Great Purge. One event row among an item’s classes is enough (deviation 1628), so the sibling classes the note lists are left without a row."
+    },
+    "Q934744": {
+      "kind": "event",
+      "label": "political scandal",
+      "note": "Added 13 October by the assistant, from the planner’s 0518Z note: a vital-article item of this class was queued and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “action or event regarded as morally or legally wrong and causing general public outrage”. Carried by Dreyfus affair. One event row among an item’s classes is enough (deviation 1628), so the sibling classes the note lists are left without a row."
     }
   },
   "lanes": {
@@ -6518,7 +6578,12 @@
     "Q12539": "europe",
     "Q8683": "europe",
     "Q184716": "americas",
-    "Q185729": "asia"
+    "Q185729": "asia",
+    "Q152006": "europe",
+    "Q217200": "europe",
+    "Q304121": "europe",
+    "Q178275": "europe",
+    "Q896666": "americas"
   },
   "reconcile": true,
   "schema": 1,
