@@ -1,11 +1,531 @@
 {
  "schema": 1,
  "kind": "import-queue",
- "generated": "2026-10-12",
+ "generated": "2026-10-13",
  "items": [
   {
-   "id": "2026-10-12-africa-009",
-   "planned": "2026-10-12T22:00Z",
+   "id": "2026-10-13-europe-001",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "europe",
+   "writer": "A",
+   "qid": "Q133641",
+   "title": "Age of Discovery",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-3",
+   "why": "Wikipedia ranks it a level 3 vital article and the atlas does not hold it, though it is the period the atlas is first of all about. The item has no point, so it needs a lane in the seeds table; europe is where the voyages were fitted out."
+  },
+  {
+   "id": "2026-10-13-europe-002",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "europe",
+   "writer": "A",
+   "qid": "Q12562",
+   "title": "Reformation",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-3",
+   "why": "A level 3 vital article the atlas does not hold. Its classes are in no row of the class table yet, so it is queued for the writer fire that follows the assistant adding them."
+  },
+  {
+   "id": "2026-10-13-europe-003",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "europe",
+   "writer": "A",
+   "qid": "Q214078",
+   "title": "Scientific Revolution",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-3",
+   "why": "A level 3 vital article the atlas does not hold. Its one class, era, has no row in the class table yet."
+  },
+  {
+   "id": "2026-10-13-europe-004",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "europe",
+   "writer": "A",
+   "qid": "Q12539",
+   "title": "Age of Enlightenment",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-3",
+   "why": "A level 3 vital article the atlas does not hold. Its one class, cultural movement, has no row in the class table yet."
+  },
+  {
+   "id": "2026-10-13-europe-005",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "europe",
+   "writer": "A",
+   "qid": "Q8683",
+   "title": "Cold War",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-3",
+   "why": "A level 3 vital article and the largest gap in the corpus: the atlas holds dozens of events inside the Cold War and not the Cold War. Lane europe for routing, because the item has no point and its first located value is Latin America, which is not where the confrontation was centred."
+  },
+  {
+   "id": "2026-10-13-americas-006",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "americas",
+   "writer": "B",
+   "qid": "Q184716",
+   "title": "European colonization of the Americas",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-3",
+   "why": "A level 3 vital article the atlas does not hold, and the frame around the Spanish and Portuguese records it already has. Americas, which trails Europe at 431 active against 557."
+  },
+  {
+   "id": "2026-10-13-americas-007",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "americas",
+   "writer": "B",
+   "qid": "Q192769",
+   "title": "American Revolution",
+   "parents": [
+    "atlantic-revolutions"
+   ],
+   "edges": [],
+   "rank": "vital-3",
+   "why": "A level 3 vital article. The atlas holds the American Revolutionary War (Q40949) and not the revolution (Q192769), which is the wider event and a separate item and article. Filed under atlantic-revolutions, which spans 1765 to 1849."
+  },
+  {
+   "id": "2026-10-13-africa-008",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "africa",
+   "writer": "A",
+   "qid": "Q228911",
+   "title": "Anglo-Zulu War",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Africa has the fewest active events of the four lanes, 327, and this is the only level 4 vital article in the lane the atlas does not hold."
+  },
+  {
+   "id": "2026-10-13-asia-009",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q191293",
+   "title": "1556 Shaanxi earthquake",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails at 328 active. The deadliest earthquake on record and a level 4 vital article."
+  },
+  {
+   "id": "2026-10-13-asia-010",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q184963",
+   "title": "Edo period",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article and a period umbrella of 265 years that the atlas has nothing for."
+  },
+  {
+   "id": "2026-10-13-asia-011",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q3237019",
+   "title": "Sino-Burmese War",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article and one of the Qing wars the atlas holds none of."
+  },
+  {
+   "id": "2026-10-13-asia-012",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q2477522",
+   "title": "Great Bengal famine of 1770",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article. Its one class, famine, has no row in the class table yet."
+  },
+  {
+   "id": "2026-10-13-asia-013",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q216702",
+   "title": "Great Game",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article. Its one class, cold war, has no row in the class table yet."
+  },
+  {
+   "id": "2026-10-13-asia-014",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q4818171",
+   "title": "Persian Constitutional Revolution",
+   "parents": [
+    "constitutionalization-attempts-in-iran"
+   ],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article, and Wikidata files it under constitutionalization-attempts-in-iran, which the atlas holds with the same years."
+  },
+  {
+   "id": "2026-10-13-asia-015",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q191282",
+   "title": "First Opium War",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article and the opening of the century the atlas holds the end of."
+  },
+  {
+   "id": "2026-10-13-asia-016",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q192408",
+   "title": "Taiping Rebellion",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article and one of the deadliest wars in history."
+  },
+  {
+   "id": "2026-10-13-asia-017",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q418151",
+   "title": "Second Opium War",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article and the second of the two wars the atlas holds neither of."
+  },
+  {
+   "id": "2026-10-13-asia-018",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q8707",
+   "title": "Meiji Restoration",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article and the hinge of modern Japan. Its one class, reform, has no row in the class table yet."
+  },
+  {
+   "id": "2026-10-13-asia-019",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q1150973",
+   "title": "1931 China floods",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article and among the deadliest floods recorded."
+  },
+  {
+   "id": "2026-10-13-asia-020",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q192055",
+   "title": "Nanjing Massacre",
+   "parents": [
+    "second-sino-japanese-war"
+   ],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article. Filed under second-sino-japanese-war, whose years hold it; Wikidata gives battle-of-nanking, which ends on 13 December 1937 while the massacre runs to February 1938, so rule 24 would refuse it."
+  },
+  {
+   "id": "2026-10-13-asia-021",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q58715",
+   "title": "Great Leap Forward",
+   "parents": [],
+   "edges": [
+    {
+     "from": "Q58715",
+     "to": "cultural-revolution",
+     "type": "caused",
+     "confidence": "probable",
+     "article": "Great Leap Forward",
+     "revision": 1379962036,
+     "quote": "The effects on the upper levels of government in response to the disaster were complex, with Mao purging the Minister of National Defense Peng Dehuai in 1959, the temporary promotion of Lin Biao, Liu Shaoqi, and Deng Xiaoping, and Mao losing some power and prestige following the Great Leap Forward, during the Seven Thousand Cadres Conference in 1962, which led him to launch the Cultural Revolution in 1966.",
+     "explanation": "The article \"Great Leap Forward\" (revision 1379962036) states: \"The effects on the upper levels of government in response to the disaster were complex, with Mao purging the Minister of National Defense Peng Dehuai in 1959, the temporary promotion of Lin Biao, Liu Shaoqi, and Deng Xiaoping, and Mao losing some power and prestige following the Great Leap Forward, during the Seven Thousand Cadres Conference in 1962, which led him to launch the Cultural Revolution in 1966.\" What the sentence says led Mao to launch the Cultural Revolution is the power and prestige he lost following the Great Leap Forward, which is this record's own consequence."
+    }
+   ],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article, and its own article states what the loss of prestige after it led Mao to launch. Its one class, campaign, has no row in the class table yet."
+  },
+  {
+   "id": "2026-10-13-asia-022",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q462195",
+   "title": "1976 Tangshan earthquake",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article and one of the deadliest earthquakes of the twentieth century."
+  },
+  {
+   "id": "2026-10-13-asia-023",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q1205521",
+   "title": "Reform and opening up",
+   "parents": [],
+   "edges": [
+    {
+     "from": "cultural-revolution",
+     "to": "Q1205521",
+     "type": "enabled",
+     "confidence": "probable",
+     "article": "Reform and opening up",
+     "revision": 1373006392,
+     "quote": "A longer-run result was that there were not nearly as many well-entrenched interest groups as in the Soviet Union and the Eastern Bloc, so when Deng Xiaoping and the other pragmatists took power, few interest groups remained whose lobbying could undermine Deng's market-oriented reforms, because the Cultural Revolution had destroyed the narrowly entrenched interests with a stake in the status quo.",
+     "explanation": "The article \"Reform and opening up\" (revision 1373006392) states: \"A longer-run result was that there were not nearly as many well-entrenched interest groups as in the Soviet Union and the Eastern Bloc, so when Deng Xiaoping and the other pragmatists took power, few interest groups remained whose lobbying could undermine Deng's market-oriented reforms, because the Cultural Revolution had destroyed the narrowly entrenched interests with a stake in the status quo.\" The sentence gives the Cultural Revolution as what left these reforms without organised opposition, so the edge runs from the Cultural Revolution and the type is enabled."
+    }
+   ],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article, and its own article names what left these reforms without organised opposition. Its classes have no row in the class table yet."
+  },
+  {
+   "id": "2026-10-13-asia-024",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q99717",
+   "title": "1989 Tiananmen Square protests and massacre",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article. No parent: Wikidata does not file it under the Revolutions of 1989 and the planner will not assert that reading."
+  },
+  {
+   "id": "2026-10-13-asia-025",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q130754",
+   "title": "2004 Indian Ocean earthquake and tsunami",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article and the deadliest tsunami recorded."
+  },
+  {
+   "id": "2026-10-13-asia-026",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q129864",
+   "title": "Indian Rebellion of 1857",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article and the end of Company rule in India."
+  },
+  {
+   "id": "2026-10-13-asia-027",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q245551",
+   "title": "1970 Bhola cyclone",
+   "parents": [],
+   "edges": [
+    {
+     "from": "Q245551",
+     "to": "bangladesh-liberation-war",
+     "type": "enabled",
+     "confidence": "probable",
+     "article": "1970 Bhola cyclone",
+     "revision": 1378967090,
+     "quote": "The poor and discriminatory response from the West Pakistan government led to the increasingly widespread disillusionment from the East Pakistani people, allowing the opposition Awami League to gain a landslide victory in the province during the election that took place a month later as well as the Bangladesh Liberation War seven months later.",
+     "explanation": "The article \"1970 Bhola cyclone\" (revision 1378967090) states: \"The poor and discriminatory response from the West Pakistan government led to the increasingly widespread disillusionment from the East Pakistani people, allowing the opposition Awami League to gain a landslide victory in the province during the election that took place a month later as well as the Bangladesh Liberation War seven months later.\" The response the sentence names is the response to this cyclone, in the cyclone's own article. The type is enabled and not caused, because the sentence says the disillusionment allowed the war."
+    }
+   ],
+   "rank": "vital-4",
+   "why": "Asia trails. A level 4 vital article, the deadliest tropical cyclone recorded, and its own article states what the response to it allowed. Its one class, tropical cyclone, has no row in the class table yet."
+  },
+  {
+   "id": "2026-10-13-asia-028",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "asia",
+   "writer": "A",
+   "qid": "Q185729",
+   "title": "War on terror",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "A level 4 vital article, and the umbrella the September 11 attacks and the war in Afghanistan both belong under. Lane asia for routing, since the item has no point and its theatres are Afghanistan and Iraq."
+  },
+  {
+   "id": "2026-10-13-europe-029",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "europe",
+   "writer": "A",
+   "qid": "Q182062",
+   "title": "Greek War of Independence",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "A level 4 vital article the atlas does not hold. Lane europe for routing: the deriver reads the item through its Ottoman Empire location and answers asia, which is not where Greece is."
+  },
+  {
+   "id": "2026-10-13-americas-030",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "americas",
+   "writer": "B",
+   "qid": "Q154697",
+   "title": "French and Indian War",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Americas, 431 active against Europe's 557. A level 4 vital article and the North American theatre of a war the atlas holds nothing of."
+  },
+  {
+   "id": "2026-10-13-americas-031",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "americas",
+   "writer": "B",
+   "qid": "Q52418",
+   "title": "Attack on Pearl Harbor",
+   "parents": [
+    "world-war-ii"
+   ],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Americas trails Europe. A level 4 vital article, filed under world-war-ii, whose years hold it."
+  },
+  {
+   "id": "2026-10-13-americas-032",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "americas",
+   "writer": "B",
+   "qid": "Q6683",
+   "title": "Mexican–American War",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Americas trails Europe. A level 4 vital article and the war that moved a third of Mexico."
+  },
+  {
+   "id": "2026-10-13-americas-033",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "americas",
+   "writer": "B",
+   "qid": "Q8676",
+   "title": "American Civil War",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Americas trails Europe. A level 4 vital article and the largest gap in the lane."
+  },
+  {
+   "id": "2026-10-13-americas-034",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "americas",
+   "writer": "B",
+   "qid": "Q128160",
+   "title": "Cuban Missile Crisis",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Americas trails Europe. A level 4 vital article. No parent: the Cold War is queued in this same fire and the writer cannot file under a record that is not there yet."
+  },
+  {
+   "id": "2026-10-13-americas-035",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "americas",
+   "writer": "B",
+   "qid": "Q10806",
+   "title": "September 11 attacks",
+   "parents": [
+    "war-on-terror"
+   ],
+   "edges": [
+    {
+     "from": "Q10806",
+     "to": "war-in-afghanistan-2001-2021",
+     "type": "caused",
+     "confidence": "probable",
+     "article": "September 11 attacks",
+     "revision": 1379360542,
+     "quote": "The September 11 attacks also led to the U.S. wars in Afghanistan and Iraq, as well as additional homeland security spending, totaling at least US$5 trillion.",
+     "explanation": "The article \"September 11 attacks\" (revision 1379360542) states: \"The September 11 attacks also led to the U.S. wars in Afghanistan and Iraq, as well as additional homeland security spending, totaling at least US$5 trillion.\" The attacks are this record's own subject and the war in Afghanistan is one of the two wars the sentence names as what they led to."
+    },
+    {
+     "from": "Q10806",
+     "to": "iraq-war",
+     "type": "caused",
+     "confidence": "probable",
+     "article": "September 11 attacks",
+     "revision": 1379360542,
+     "quote": "The September 11 attacks also led to the U.S. wars in Afghanistan and Iraq, as well as additional homeland security spending, totaling at least US$5 trillion.",
+     "explanation": "The article \"September 11 attacks\" (revision 1379360542) states: \"The September 11 attacks also led to the U.S. wars in Afghanistan and Iraq, as well as additional homeland security spending, totaling at least US$5 trillion.\" The attacks are this record's own subject and the war in Iraq is the second of the two wars the sentence names as what they led to."
+    }
+   ],
+   "rank": "vital-4",
+   "why": "Americas trails Europe. A level 4 vital article, and its own article states the two wars it led to, both of which the atlas holds. The parent war-on-terror is queued in this same fire, so the writer will drop it if it writes this item first."
+  },
+  {
+   "id": "2026-10-13-americas-036",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "americas",
+   "writer": "B",
+   "qid": "Q58947",
+   "title": "Paraguayan War",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Americas trails Europe. A level 4 vital article and the deadliest interstate war in South American history."
+  },
+  {
+   "id": "2026-10-13-americas-037",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "americas",
+   "writer": "B",
+   "qid": "Q152004",
+   "title": "War of the Pacific",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Americas trails Europe. A level 4 vital article and the war that took Bolivia's coast."
+  },
+  {
+   "id": "2026-10-13-americas-038",
+   "planned": "2026-10-13T01:50Z",
+   "lane": "americas",
+   "writer": "B",
+   "qid": "Q156017",
+   "title": "Operation Condor",
+   "parents": [],
+   "edges": [],
+   "rank": "vital-4",
+   "why": "Americas trails Europe. A level 4 vital article and the frame around the Southern Cone records the atlas holds."
+  },
+  {
+   "id": "2026-10-13-africa-039",
+   "planned": "2026-10-13T01:50Z",
    "lane": "africa",
    "writer": "A",
    "existing": "decolonisation-of-africa",
@@ -23,11 +543,12 @@
      "explanation": "The article \"Decolonisation of Africa\" (revision 1379719162) states: \"Italy, a colonial power, lost its African empire, Italian East Africa, Italian Ethiopia, Italian Eritrea, Italian Somalia and Italian Libya, as a result of World War II.\" The loss it names is part of what this record is: the edge reads that sentence and nothing more, and the scope the sentence gives it is Italy's empire."
     }
    ],
-   "why": "Africa trails at 327 active against the Americas' 431; decolonisation-of-africa is a held umbrella with no edge at all, and its own article states the cause of the Italian empire's end."
+   "rank": "list",
+   "why": "Writer A logged this item skipped on 12 October, because the old reading of --held counted a record on m0 as held by the other branch. M91 change 6 fixed that and the edge was never written, so it comes back under a new id."
   },
   {
-   "id": "2026-10-12-africa-010",
-   "planned": "2026-10-12T22:00Z",
+   "id": "2026-10-13-africa-040",
+   "planned": "2026-10-13T01:50Z",
    "lane": "africa",
    "writer": "A",
    "existing": "scramble-for-africa",
@@ -55,11 +576,12 @@
      "explanation": "The article \"Scramble for Africa\" (revision 1376647971) states: \"The tensions between the imperial powers led to a succession of crises, which exploded in August 1914, when previous rivalries and alliances created a domino situation that drew the major European nations into World War I.\" The tensions are the scramble's own, in the scramble's own article; precondition-of and not caused, because the sentence makes the rivalry what the crises grew out of."
     }
    ],
-   "why": "Africa trails, and scramble-for-africa is a held umbrella carrying no edge: its own article states both what drove Portugal into it and what the imperial rivalry led to."
+   "rank": "list",
+   "why": "Skipped on 12 October for the same reason as the item above. Two edges, neither of them written, so it comes back under a new id."
   },
   {
-   "id": "2026-10-12-asia-011",
-   "planned": "2026-10-12T22:00Z",
+   "id": "2026-10-13-asia-041",
+   "planned": "2026-10-13T01:50Z",
    "lane": "asia",
    "writer": "A",
    "existing": "12-3-incident",
@@ -77,75 +599,8 @@
      "explanation": "The article \"12-3 incident\" (revision 1377636747) states: \"Portuguese sovereignty over Macau severely diminished after the incident, leading to de facto Chinese suzerainty over the territory 33 years prior to the eventual handover of Macau.\" The sentence dates the end of effective Portuguese rule to the incident and the handover 33 years after it, which is a precondition and not a cause."
     }
    ],
-   "why": "Asia trails at 327, and this is Portuguese history, which is the atlas's own subject: the incident's own article states that Portuguese sovereignty ended there, 33 years before the handover."
-  },
-  {
-   "id": "2026-10-12-asia-012",
-   "planned": "2026-10-12T22:00Z",
-   "lane": "asia",
-   "writer": "A",
-   "qid": "Q959093",
-   "title": "Fontainebleau Agreements",
-   "parents": [],
-   "edges": [
-    {
-     "from": "Q959093",
-     "to": "first-indochina-war",
-     "type": "caused",
-     "confidence": "probable",
-     "article": "Fontainebleau Agreements",
-     "revision": 1312816323,
-     "quote": "Generally the tough stance of both sides led to the First Indochina War between them on December 19.",
-     "explanation": "The article \"Fontainebleau Agreements\" (revision 1312816323) states: \"Generally the tough stance of both sides led to the First Indochina War between them on December 19.\" The both sides are the two at Fontainebleau, in the conference's own article; the edge reads that sentence and nothing more."
-    }
-   ],
-   "why": "Asia trails, first-indochina-war is a held umbrella with fewer than three children, and the conference's own article states that the stance taken there led to the war. Filed under no umbrella: the talks preceded the war and are not part of it."
-  },
-  {
-   "id": "2026-10-12-asia-013",
-   "planned": "2026-10-12T22:00Z",
-   "lane": "asia",
-   "writer": "A",
-   "qid": "Q2985554",
-   "title": "Operation Searchlight",
-   "parents": [],
-   "edges": [
-    {
-     "from": "Q2985554",
-     "to": "bangladesh-liberation-war",
-     "type": "caused",
-     "confidence": "probable",
-     "article": "Operation Searchlight",
-     "revision": 1374712761,
-     "quote": "The widespread violence resulting from Pakistan's Operation Searchlight ultimately led to the Bangladesh Liberation War, in which Mukti Bahini guerrillas fought to remove Pakistani forces from East Pakistan.",
-     "explanation": "The article \"Operation Searchlight\" (revision 1374712761) states: \"The widespread violence resulting from Pakistan's Operation Searchlight ultimately led to the Bangladesh Liberation War, in which Mukti Bahini guerrillas fought to remove Pakistani forces from East Pakistan.\" The operation's own article states the link; queued with no umbrella on purpose, because filing it under the war it led to would make the edge an edge from a parent to its own child (A14, C8 undecided)."
-    }
-   ],
-   "why": "Asia trails and bangladesh-liberation-war is a held umbrella with one child. The 12 October fire found this sentence and refused it under A14 because it filed the item under that war; with no parent the edge stands and the filing waits for C8."
-  },
-  {
-   "id": "2026-10-12-asia-014",
-   "planned": "2026-10-12T22:00Z",
-   "lane": "asia",
-   "writer": "A",
-   "qid": "Q1752743",
-   "title": "Taliban insurgency",
-   "parents": [
-    "war-in-afghanistan-2001-2021"
-   ],
-   "edges": [
-    {
-     "from": "Q1752743",
-     "to": "republican-insurgency-in-afghanistan",
-     "type": "caused",
-     "confidence": "probable",
-     "article": "Taliban insurgency",
-     "revision": 1379529630,
-     "quote": "The end of the Taliban insurgency resulted in the beginning of a new insurgency against the restored Islamic Emirate of Afghanistan by the National Resistance Front and allied groups which fight under the banner of the Islamic Republic of Afghanistan.",
-     "explanation": "The article \"Taliban insurgency\" (revision 1379529630) states: \"The end of the Taliban insurgency resulted in the beginning of a new insurgency against the restored Islamic Emirate of Afghanistan by the National Resistance Front and allied groups which fight under the banner of the Islamic Republic of Afghanistan.\" The insurgency's own article states what its end began; the two are siblings under war-in-afghanistan-2001-2021 and afghan-conflict, so the edge is not one from a parent to its own child."
-    }
-   ],
-   "why": "Asia trails at 327, and war-in-afghanistan-2001-2021 is a held umbrella with one child (A6): this is a P361 child of it whose own article states a cause reaching outside the umbrella, which is what A15(5) leaves room for."
+   "rank": "list",
+   "why": "Skipped on 12 October for the same reason as the two items above. The edge was never written, so it comes back under a new id."
   }
  ]
 }
