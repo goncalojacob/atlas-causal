@@ -270,12 +270,12 @@ function renderInline(children, ctx) {
       }
       case 'cite': {
         const at = ctx.order.indexOf(token.source);
-        const title = token.locator ? `${token.source} · ${token.locator}` : token.source;
+        const title = token.locator ? `${token.source}, ${token.locator}` : token.source;
         // A mark naming a source the record does not cite is shown as the
         // characters that were typed and marked: rule 23 is the error, and
         // silently dropping it would hide the mistake from whoever wrote it.
         if (!ctx.cites(token.source)) {
-          return `<span class="cite-mark unresolved" title="${esc(title)} — not cited by this record">[^${esc(token.source)}${token.locator ? ` ${esc(token.locator)}` : ''}]</span>`;
+          return `<span class="cite-mark unresolved" title="${esc(title)}: this record does not cite it">[^${esc(token.source)}${token.locator ? ` ${esc(token.locator)}` : ''}]</span>`;
         }
         return `<a class="cite-mark" href="#entry-cite-${esc(token.source)}" title="${esc(title)}"><sup>[${at + 1}${token.locator ? `, ${esc(token.locator)}` : ''}]</sup></a>`;
       }
