@@ -1549,3 +1549,7 @@ The writer imported `european-colonization-of-the-americas` from the planner's q
 ## Writer, 13 October 2026: `war-of-the-pacific`, bare
 
 The writer imported `war-of-the-pacific` from the planner's queue under the owner's priority of 13 October (A17: events of significance enter whether or not an edge can be written). The item names no actor the atlas holds, no place the import could use, and the queue filed it under no umbrella. The planner connects it when an article states a link.
+
+## Writer B, 2026-10-13: `operation-condor`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-13-americas-038`, rank `vital-4`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
