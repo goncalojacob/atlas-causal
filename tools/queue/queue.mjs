@@ -409,12 +409,20 @@ export function checkQueueLog(file, log) {
 // writer, what the logs answered, and the refusal codes' counts. Derived from
 // the two files and nothing else, so `state.mjs` prints it and the tests ask
 // the same question of a fixture.
+// The key an item with no `rank` is counted under (M91).
+export const UNRANKED = 'unranked';
+
 export function queueState(queue, logs = []) {
   const done = appliedIds(logs);
   const queued = { A: 0, B: 0 };
+  // M91: the items still waiting, by the planner's own `rank` — how far down
+  // from the main events towards their children the queue has reached.
+  const byRank = {};
   for (const item of queue?.items ?? []) {
     if (done.has(item?.id)) continue;
     if (item?.writer === 'A' || item?.writer === 'B') queued[item.writer] += 1;
+    const rank = typeof item?.rank === 'string' && item.rank !== '' ? item.rank : UNRANKED;
+    byRank[rank] = (byRank[rank] ?? 0) + 1;
   }
   const byWriter = { A: {}, B: {} };
   const refusals = {};
@@ -429,7 +437,7 @@ export function queueState(queue, logs = []) {
       }
     }
   }
-  return { queued, byWriter, refusals, applied: done.size };
+  return { queued, byWriter, refusals, byRank, applied: done.size };
 }
 
 // --- the parents of a record, for the rules above --------------------------

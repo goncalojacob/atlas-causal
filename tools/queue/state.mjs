@@ -34,7 +34,7 @@ import { parentsOf } from '../../src/parts.js';
 import {
   readSchemaFiles, readRecords, readRegions, readRegionPolygons, readRoles, readCategories,
 } from '../lib/read.mjs';
-import { measure } from '../m42-pool.mjs';
+import { measure, components } from '../m42-pool.mjs';
 import { emptyLog, emptyQueue, queueState, itemsFor, WRITERS, STATUSES, REFUSALS } from './queue.mjs';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -48,19 +48,29 @@ export const DEFAULT_QUEUE = path.join('imports', 'queue.json');
 // this tool cannot drift apart.
 export const THIN = 3;
 
+// The owner's floor, 13 October 2026: "add most events of historical
+// significance since around 1500". The atlas keeps what it holds from before;
+// the planner is told how many there are (M91).
+export const FLOOR = 1500;
+
 // --- the derivations ------------------------------------------------------
 
 // Which lane and which century each active event is in, counted twice: over
 // all of them and over the main ones. The lane is the topology's — an event's
 // own `region`, or the one its place derives — so this is the same lane the
 // timeline draws it in and not a second reading of the same records.
+//
+// Since M91 each lane also counts its active events with no edge (`edge` false
+// on the row): an event is imported whether or not an edge can be written, so
+// where the unconnected ones sit is what the planner connects next.
 export function laneTable(events) {
   const lanes = new Map();
-  const add = (lane, century, main) => {
-    if (!lanes.has(lane)) lanes.set(lane, { lane, active: 0, main: 0, centuries: new Map() });
+  const add = (lane, century, main, edge) => {
+    if (!lanes.has(lane)) lanes.set(lane, { lane, active: 0, main: 0, noEdge: 0, centuries: new Map() });
     const row = lanes.get(lane);
     row.active += 1;
     if (main) row.main += 1;
+    if (edge === false) row.noEdge += 1;
     if (century !== null) {
       if (!row.centuries.has(century)) row.centuries.set(century, { active: 0, main: 0 });
       const cell = row.centuries.get(century);
@@ -68,7 +78,7 @@ export function laneTable(events) {
       if (main) cell.main += 1;
     }
   };
-  for (const event of events) add(event.lane ?? 'none', event.century, event.main);
+  for (const event of events) add(event.lane ?? 'none', event.century, event.main, event.edge);
   return [...lanes.values()]
     .map((row) => ({
       ...row,
@@ -158,20 +168,26 @@ export async function state({
   const events = records.filter((r) => r.kind === 'event');
   const edges = records.filter((r) => r.kind === 'edge');
   const counts = measure(events, edges);
+  const { adj } = components(events, edges);
 
   const byId = new Map(events.map((e) => [e.id, e]));
   const activeIds = new Set(events.filter((e) => e.status === 'active').map((e) => e.id));
   const laneOf = new Map(topology.events.map((e) => [e.id, e.region ?? null]));
+  let beforeFloor = 0;
   const rows = events.filter((e) => e.status === 'active').map((e) => {
     let century = null;
     try {
-      century = centuryOf(astronomicalBounds(e.when.start).min);
+      const start = astronomicalBounds(e.when.start).min;
+      century = centuryOf(start);
+      if (start < FLOOR) beforeFloor += 1;
     } catch { century = null; }
     return {
       id: e.id,
       lane: laneOf.get(e.id) ?? null,
       century,
       main: !parentsOf(e).some((id) => activeIds.has(id) && byId.get(id)?.status === 'active'),
+      // The same adjacency `measure` counts `noEdge` from.
+      edge: (adj.get(e.id)?.size ?? 0) > 0,
     };
   });
 
@@ -203,6 +219,8 @@ export async function state({
       insideOneUmbrella: counts.insideOneUmbrella,
       // A `place` that is not a string, and not "no place with a point".
       noPlace: events.filter((e) => e.status === 'active' && typeof e.place !== 'string').length,
+      // M91: active events whose start is before the owner's floor of 1500.
+      beforeFloor,
       errors: verdict.errors.length,
       warnings: verdict.warnings.length,
     },
@@ -225,12 +243,13 @@ export function lines(out) {
     `active ${c.active} — main ${c.main}, filed ${c.filed}; active edges ${c.activeEdges}, between two active ${c.linksBetweenActive}`,
     `components ${c.components}, largest ${c.largestComponent}; active events with no edge ${c.noEdge}; active events whose place is not a string ${c.noPlace}`,
     `edges crossing an umbrella ${c.crossingAnUmbrella}, inside one ${c.insideOneUmbrella}`,
+    `active events starting before ${FLOOR} ${c.beforeFloor}`,
     `validator: ${c.errors} error(s), ${c.warnings} warning(s)`,
     '',
-    'per lane (A10): active / main, then by century',
+    'per lane (A10): active / main, no edge, then by century',
   ];
   for (const lane of out.lanes) {
-    rows.push(`  ${pad(lane.lane, 10)} ${lane.active} / ${lane.main}`);
+    rows.push(`  ${pad(lane.lane, 10)} ${lane.active} / ${lane.main}, no edge ${lane.noEdge}`);
     if (lane.centuries.length) {
       rows.push(`    ${lane.centuries.map((cell) => `${cell.century}s ${cell.active}/${cell.main}`).join('  ')}`);
     }
@@ -241,6 +260,10 @@ export function lines(out) {
     rows.push(`  ${writer}: ${STATUSES.map((s) => `${s} ${out.queue.byWriter[writer][s]}`).join(', ')}`);
   }
   const refused = REFUSALS.filter((code) => out.queue.refusals[code]);
+  const ranks = Object.entries(out.queue.byRank ?? {}).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  rows.push(ranks.length
+    ? `  queued by rank: ${ranks.map(([rank, n]) => `${rank} ${n}`).join(', ')}`
+    : '  queued by rank: none');
   rows.push(refused.length
     ? `  refusals: ${refused.map((code) => `${code} ${out.queue.refusals[code]}`).join(', ')}`
     : '  refusals: none');
