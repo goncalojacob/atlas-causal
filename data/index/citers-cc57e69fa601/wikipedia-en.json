@@ -7538,6 +7538,18 @@
     },
     {
       "dissent": false,
+      "id": "september-11-attacks--iraq-war--caused",
+      "kind": "edge",
+      "locator": "\"September 11 attacks\", revision 1379360542"
+    },
+    {
+      "dissent": false,
+      "id": "september-11-attacks--war-in-afghanistan-2001-2021--caused",
+      "kind": "edge",
+      "locator": "\"September 11 attacks\", revision 1379360542"
+    },
+    {
+      "dissent": false,
       "id": "setif-and-guelma-massacre--algerian-war--precondition-of",
       "kind": "edge",
       "locator": "\"Sétif and Guelma massacre\", revision 1373304371, lead"
@@ -10976,9 +10988,21 @@
     },
     {
       "dissent": false,
+      "id": "american-civil-war",
+      "kind": "event",
+      "locator": "\"American Civil War\", revision 1379354095"
+    },
+    {
+      "dissent": false,
       "id": "american-indian-wars",
       "kind": "event",
       "locator": "\"American Indian Wars\", revision 1376049816"
+    },
+    {
+      "dissent": false,
+      "id": "american-revolution",
+      "kind": "event",
+      "locator": "\"American Revolution\", revision 1378206757"
     },
     {
       "dissent": false,
@@ -11207,6 +11231,12 @@
       "id": "attack-on-monastir",
       "kind": "event",
       "locator": "\"Attack on Monastir\", revision 1370429514"
+    },
+    {
+      "dissent": false,
+      "id": "attack-on-pearl-harbor",
+      "kind": "event",
+      "locator": "\"Attack on Pearl Harbor\", revision 1379958593"
     },
     {
       "dissent": false,
@@ -14744,6 +14774,12 @@
     },
     {
       "dissent": false,
+      "id": "cuban-missile-crisis",
+      "kind": "event",
+      "locator": "\"Cuban Missile Crisis\", revision 1373637342"
+    },
+    {
+      "dissent": false,
       "id": "cuban-revolution",
       "kind": "event",
       "locator": "\"Cuban Revolution\", revision 1373305240, infobox: \"26 July 1953 – 1 January 1959\""
@@ -14993,6 +15029,12 @@
       "id": "euromaidan",
       "kind": "event",
       "locator": "\"Euromaidan\", revision 1372581234"
+    },
+    {
+      "dissent": false,
+      "id": "european-colonization-of-the-americas",
+      "kind": "event",
+      "locator": "\"European colonization of the Americas\", revision 1378300694"
     },
     {
       "dissent": false,
@@ -15347,6 +15389,12 @@
       "id": "franco-thai-war",
       "kind": "event",
       "locator": "\"Franco-Thai War\", revision 1376212860"
+    },
+    {
+      "dissent": false,
+      "id": "french-and-indian-war",
+      "kind": "event",
+      "locator": "\"French and Indian War\", revision 1376981238"
     },
     {
       "dissent": false,
@@ -16370,6 +16418,12 @@
     },
     {
       "dissent": false,
+      "id": "mexican-american-war",
+      "kind": "event",
+      "locator": "\"Mexican–American War\", revision 1379967616"
+    },
+    {
+      "dissent": false,
       "id": "mexican-war-of-independence",
       "kind": "event",
       "locator": "\"Mexican War of Independence\", revision 1371682352"
@@ -16847,6 +16901,12 @@
       "id": "paraguay-campaign",
       "kind": "event",
       "locator": "\"Paraguay campaign\", revision 1374608769"
+    },
+    {
+      "dissent": false,
+      "id": "paraguayan-war",
+      "kind": "event",
+      "locator": "\"Paraguayan War\", revision 1378705342"
     },
     {
       "dissent": false,
@@ -17627,6 +17687,12 @@
       "id": "second-sudanese-civil-war",
       "kind": "event",
       "locator": "\"Second Sudanese Civil War\", revision 1375675485"
+    },
+    {
+      "dissent": false,
+      "id": "september-11-attacks",
+      "kind": "event",
+      "locator": "\"September 11 attacks\", revision 1379360542"
     },
     {
       "dissent": false,
@@ -19493,6 +19559,12 @@
       "id": "war-of-the-mantuan-succession",
       "kind": "event",
       "locator": "\"War of the Mantuan Succession\", revision 1374838991"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-pacific",
+      "kind": "event",
+      "locator": "\"War of the Pacific\", revision 1379026750"
     },
     {
       "dissent": false,

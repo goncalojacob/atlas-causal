@@ -1762,6 +1762,24 @@
         }
       ]
     },
+    "september-11-attacks--iraq-war--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "september-11-attacks--war-in-afghanistan-2001-2021--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "siege-of-tessalit--tinsalane-ambush--precondition-of": {
       "from": "git",
       "versions": [
@@ -1772,7 +1790,7 @@
       ]
     },
     "taliban-insurgency--republican-insurgency-in-afghanistan--caused": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

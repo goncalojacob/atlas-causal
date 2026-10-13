@@ -2666,9 +2666,21 @@
     },
     {
       "dissent": false,
+      "id": "american-civil-war",
+      "kind": "event",
+      "locator": "Q8676"
+    },
+    {
+      "dissent": false,
       "id": "american-indian-wars",
       "kind": "event",
       "locator": "Q849680"
+    },
+    {
+      "dissent": false,
+      "id": "american-revolution",
+      "kind": "event",
+      "locator": "Q192769"
     },
     {
       "dissent": false,
@@ -2939,6 +2951,12 @@
       "id": "attack-on-monastir",
       "kind": "event",
       "locator": "Q131765078"
+    },
+    {
+      "dissent": false,
+      "id": "attack-on-pearl-harbor",
+      "kind": "event",
+      "locator": "Q52418"
     },
     {
       "dissent": false,
@@ -6506,6 +6524,12 @@
     },
     {
       "dissent": false,
+      "id": "cuban-missile-crisis",
+      "kind": "event",
+      "locator": "Q128160"
+    },
+    {
+      "dissent": false,
       "id": "cuban-revolution",
       "kind": "event",
       "locator": "Q11264"
@@ -6755,6 +6779,12 @@
       "id": "euromaidan",
       "kind": "event",
       "locator": "Q15224558, P31 Q45382"
+    },
+    {
+      "dissent": false,
+      "id": "european-colonization-of-the-americas",
+      "kind": "event",
+      "locator": "Q184716"
     },
     {
       "dissent": false,
@@ -7103,6 +7133,12 @@
       "id": "franco-thai-war",
       "kind": "event",
       "locator": "Q780845"
+    },
+    {
+      "dissent": false,
+      "id": "french-and-indian-war",
+      "kind": "event",
+      "locator": "Q154697"
     },
     {
       "dissent": false,
@@ -8180,6 +8216,12 @@
     },
     {
       "dissent": false,
+      "id": "mexican-american-war",
+      "kind": "event",
+      "locator": "Q6683"
+    },
+    {
+      "dissent": false,
       "id": "mexican-war-of-independence",
       "kind": "event",
       "locator": "Q68750"
@@ -8663,6 +8705,12 @@
       "id": "paraguay-campaign",
       "kind": "event",
       "locator": "Q7134668"
+    },
+    {
+      "dissent": false,
+      "id": "paraguayan-war",
+      "kind": "event",
+      "locator": "Q58947"
     },
     {
       "dissent": false,
@@ -9491,6 +9539,12 @@
       "id": "second-sudanese-civil-war",
       "kind": "event",
       "locator": "Q842380, P31 Q8465"
+    },
+    {
+      "dissent": false,
+      "id": "september-11-attacks",
+      "kind": "event",
+      "locator": "Q10806"
     },
     {
       "dissent": false,
@@ -11255,6 +11309,12 @@
       "id": "war-of-the-mantuan-succession",
       "kind": "event",
       "locator": "Q1527665"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-pacific",
+      "kind": "event",
+      "locator": "Q152004"
     },
     {
       "dissent": false,

@@ -6776,6 +6776,15 @@
         }
       ]
     },
+    "attack-on-pearl-harbor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "attack-on-the-moncada-barracks": {
       "from": "git",
       "versions": [
@@ -10601,6 +10610,15 @@
         }
       ]
     },
+    "cuban-missile-crisis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "cuban-revolution": {
       "from": "git",
       "versions": [
@@ -12402,7 +12420,7 @@
       ]
     },
     "fontainebleau-agreements": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

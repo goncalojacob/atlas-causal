@@ -193,6 +193,15 @@
         }
       ]
     },
+    "american-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "american-revolutionary-war": {
       "from": "git",
       "versions": [
@@ -1507,6 +1516,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "french-and-indian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
         }
       ]
     },

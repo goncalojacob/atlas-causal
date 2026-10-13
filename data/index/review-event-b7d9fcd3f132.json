@@ -5342,6 +5342,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-13",
+      "id": "american-civil-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "American Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "american-indian-wars",
       "kind": "event",
@@ -5361,6 +5391,36 @@
       "revised": null,
       "status": "active",
       "title": "American Indian Wars"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "id": "american-revolution",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "atlantic-revolutions",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "American Revolution"
     },
     {
       "authors": [
@@ -6712,6 +6772,36 @@
       "revised": null,
       "status": "active",
       "title": "Attack on Monastir"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "id": "attack-on-pearl-harbor",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "world-war-ii",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Attack on Pearl Harbor"
     },
     {
       "authors": [
@@ -26694,6 +26784,36 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "other",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "id": "cuban-missile-crisis",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Cuban Missile Crisis"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -28321,6 +28441,35 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Euromaidan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "id": "european-colonization-of-the-americas",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "European colonization of the Americas"
     },
     {
       "authors": [
@@ -30258,6 +30407,35 @@
       "revised": "2026-09-23",
       "status": "active",
       "title": "Franco-Thai War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "id": "french-and-indian-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "French and Indian War"
     },
     {
       "authors": [
@@ -33325,7 +33503,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "iraq-war",
       "kind": "event",
       "origin": {
@@ -36465,6 +36643,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-13",
+      "id": "mexican-american-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mexican–American War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 2,
       "id": "mexican-war-of-independence",
@@ -39371,6 +39578,36 @@
       "revised": null,
       "status": "active",
       "title": "Paraguay campaign"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "id": "paraguayan-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Paraguayan War"
     },
     {
       "authors": [
@@ -44067,6 +44304,37 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Second Sudanese Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "death",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "degree": 2,
+      "id": "september-11-attacks",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "September 11 attacks"
     },
     {
       "authors": [
@@ -53637,7 +53905,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "war-in-afghanistan-2001-2021",
       "kind": "event",
       "origin": {
@@ -54098,6 +54366,35 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "War of the Mantuan Succession"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "id": "war-of-the-pacific",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "War of the Pacific"
     },
     {
       "authors": [
@@ -55233,7 +55530,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "american-civil-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "american-indian-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "american-revolution",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -55330,6 +55639,12 @@
     },
     {
       "id": "attack-on-monastir",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "attack-on-pearl-harbor",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -56853,6 +57168,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "cuban-missile-crisis",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "decolonisation-of-africa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -56902,6 +57223,12 @@
     },
     {
       "id": "esopus-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "european-colonization-of-the-americas",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -56968,6 +57295,12 @@
     },
     {
       "id": "fox-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "french-and-indian-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -57177,6 +57510,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "mexican-american-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "middle-eastern-crisis-2023-present",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -57322,6 +57661,12 @@
     },
     {
       "id": "paraguay-campaign",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "paraguayan-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -58138,6 +58483,12 @@
     },
     {
       "id": "war-of-the-league-of-cambrai",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "war-of-the-pacific",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

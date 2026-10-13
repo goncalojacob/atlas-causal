@@ -47,6 +47,15 @@
         }
       ]
     },
+    "european-colonization-of-the-americas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "indigenous-depopulation-of-the-greater-antilles": {
       "from": "git",
       "versions": [

@@ -7103,6 +7103,15 @@
         }
       ]
     },
+    "september-11-attacks": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "siege-of-tessalit": {
       "from": "git",
       "versions": [
@@ -7247,7 +7256,7 @@
       ]
     },
     "taliban-insurgency": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

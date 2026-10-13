@@ -26508,6 +26508,66 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-13",
+      "from": "september-11-attacks",
+      "id": "september-11-attacks--iraq-war--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "iraq-war",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "from": "september-11-attacks",
+      "id": "september-11-attacks--war-in-afghanistan-2001-2021--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "war-in-afghanistan-2001-2021",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
       "from": "setif-and-guelma-massacre",
       "id": "setif-and-guelma-massacre--algerian-war--precondition-of",

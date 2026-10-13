@@ -5171,7 +5171,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "cuba-q14905932",
       "kind": "place",
       "names": [
@@ -14065,7 +14065,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 3,
       "id": "mexico-q96",
       "kind": "place",
       "names": [
@@ -15729,7 +15729,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 6,
+      "degree": 7,
       "id": "north-america",
       "kind": "place",
       "names": [
@@ -21637,6 +21637,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-13",
+      "degree": 1,
+      "id": "southern-cone",
+      "kind": "place",
+      "names": [
+        "Southern Cone",
+        "Cone Sul"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -21651,6 +21679,35 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-13",
+      "degree": 1,
+      "id": "southern-united-states",
+      "kind": "place",
+      "names": [
+        "Southern United States",
+        "Região Sul",
+        "Região Sul (Estados Unidos)"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -23058,6 +23115,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-13",
+      "degree": 1,
+      "id": "thirteen-colonies",
+      "kind": "place",
+      "names": [
+        "Thirteen Colonies",
+        "Treze Colônias"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "thule-island",
@@ -23956,7 +24041,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "united-states-q30",
       "kind": "place",
       "names": [

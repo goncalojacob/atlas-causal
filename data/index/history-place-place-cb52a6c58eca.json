@@ -3398,7 +3398,7 @@
       ]
     },
     "fontainebleau": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -10261,6 +10261,15 @@
         }
       ]
     },
+    "southern-cone": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "southern-lebanon": {
       "from": "git",
       "versions": [
@@ -10273,6 +10282,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "southern-united-states": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
         }
       ]
     },
@@ -10892,6 +10910,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "thirteen-colonies": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
         }
       ]
     },
