@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-01",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -38,6 +38,6 @@
   "to": "siege-of-tripoli-1551",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "The Ottoman punitive expedition of 1551 answered the loss of Mahdia the year before, and the article for the siege states it twice. “Siege of Tripoli (1551)”, at revision 1370746050, opens: “The attack, which was led by Sinan Pasha and Dragut, appears to have been launched in retaliation for the capture of Mahdia by the Spanish and Hospitallers the previous year.” Its § Background says the same thing as a consequence rather than a motive, and cites a work for it: “In September 1550, the town of Mahdia in modern Tunisia – which Ottoman corsair Dragut had been using as a base – was captured by a Spanish-led expedition with Hospitaller support. This led the Ottoman sultanate to send a punitive expedition against Hospitaller Malta and Tripoli in 1551, with the capture of the latter being the primary objective.” The second author, “Capture of Mahdia (1550)” at revision 1375739652, gives the operation its own span, June to September 1550, which puts it before the expedition it provoked. `reacted-to`, running forward in time from the capture to the campaign that answered it. `probable`: the lead itself hedges with “appears to have been launched”, and rule 22 keeps an edge carried by Wikipedia records below `consensus`.",
+  "explanation": "The Ottoman punitive expedition of 1551 answered the loss of Mahdia the year before, and the article for the siege states it twice. “Siege of Tripoli (1551)”, at revision 1370746050, opens: “The attack, which was led by Sinan Pasha and Dragut, appears to have been launched in retaliation for the capture of Mahdia by the Spanish and Hospitallers the previous year.” Its § Background says the same thing as a consequence rather than a motive, and cites a work for it: “In September 1550, the town of Mahdia in modern Tunisia – which Ottoman corsair Dragut had been using as a base – was captured by a Spanish-led expedition with Hospitaller support. This led the Ottoman sultanate to send a punitive expedition against Hospitaller Malta and Tripoli in 1551, with the capture of the latter being the primary objective.” The second author, “Capture of Mahdia (1550)” at revision 1375739652, gives the operation its own span, June to September 1550, which puts it before the expedition it provoked. The type is `reacted-to`, running forward in time from the capture to the campaign that answered it. The confidence is `probable`, because the lead itself hedges with “appears to have been launched”, and rule 22 keeps an edge carried by Wikipedia records below `consensus`.",
   "dispute": null
 }

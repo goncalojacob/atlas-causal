@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-17",
-  "revised": "2026-09-24",
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant",
     "run": "m53"
@@ -48,7 +48,7 @@
   "names": [
     "Saint-Domingue"
   ],
-  "summary": "Approximately 21,550 km², from Wikidata's Q861551 (P2046). The English Wikipedia article \"Saint-Domingue\", at revision 1375182685, opens: \"Saint-Domingue was a French colony in the western portion of the Caribbean island of Hispaniola, in the area of modern-day Haiti, from 1659 to 1803. The name derives from the Spanish main city on the island, Santo Domingo, which came to refer specifically to the Spanish-held Captaincy General of Santo Domingo, now the Dominican Republic. The borders between the two were fluid and changed over time until they were finally solidified in the Dominican War of Independence in 1844.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. A polity whose inception Wikidata states as 1626 on Q861551 and whose dissolution it states as 1804-01-01. Both years here are those two values and nothing else. It is the French colony in the western third of Hispaniola, and it is written because two events of the Caribbean chain are about it and neither could name anybody: the atlas has `hispaniola-spain` and `santo-domingo-spain` for the Spanish side and nothing at all for the French one, and `haiti` begins in 1886, where CShapes begins. It holds no territory; the island’s outlines in both imports belong to the records already there.",
+  "summary": "Approximately 21,550 km², from Wikidata's Q861551 (P2046). The English Wikipedia article \"Saint-Domingue\", at revision 1375182685, opens: \"Saint-Domingue was a French colony in the western portion of the Caribbean island of Hispaniola, in the area of modern-day Haiti, from 1659 to 1803. The name derives from the Spanish main city on the island, Santo Domingo, which came to refer specifically to the Spanish-held Captaincy General of Santo Domingo, now the Dominican Republic. The borders between the two were fluid and changed over time until they were finally solidified in the Dominican War of Independence in 1844.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. A polity whose inception Wikidata states as 1626 on Q861551 and whose dissolution it states as 1804-01-01. Both years here are those two values and nothing else. It is the French colony in the western third of Hispaniola, and it is written because two events of the Caribbean chain are about it and neither could name anybody: the atlas has `hispaniola-spain` and `santo-domingo-spain` for the Spanish side and nothing at all for the French one, and `haiti` begins in 1886, where CShapes begins. It holds no territory. The island’s outlines in both imports belong to the records already there.",
   "when": {
     "start": 1626,
     "end": 1804

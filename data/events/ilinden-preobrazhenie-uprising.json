@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": "2026-09-29",
+  "revised": "2026-10-13",
   "review": {
     "flags": [
       "imported-facts",
@@ -59,6 +59,6 @@
   },
   "place": "monastir-vilayet",
   "region": "europe",
-  "regionNote": "Lane corrected by A15(7) from the item’s own located points: two of the three vilayets it names, Monastir and Salonica, fall in the europe lane, and the third (Adrianople) falls in asia only because the lane polygons cut Turkey at its own coast. The import had asia from the Ottoman point.",
+  "regionNote": "Review A15 (7) corrected this lane from the item’s own located points. Two of the three vilayets it names, Monastir and Salonica, fall in the europe lane. The third, Adrianople, falls in asia only because the lane polygons cut Turkey at its own coast. The import had asia from the Ottoman point.",
   "actors": []
 }

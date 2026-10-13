@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -25,7 +25,7 @@
   },
   "retraction": {
     "on": "2026-09-21",
-    "reason": "Retracted in M42 batch 15 under brief §1: the record earns no honest edge. The English article, at revision 1372930206, traces the convention to a General Assembly resolution of December 1960 \"following incidents of antisemitism in several parts of the world\" and to an Economic and Social Council draft on racial prejudice; the only record this atlas holds that it names is `charter-of-the-united-nations`, and it names it as the instrument such hatred violates rather than as anything the convention answered. That is a legal citation and not a consequence. It waits on a record of the 1960 resolution, or on the decolonisation of Africa that the drafting years turn on."
+    "reason": "Retracted in M42 batch 15 under brief §1: the record earns no honest edge. The English article, at revision 1372930206, traces the convention to a General Assembly resolution of December 1960 \"following incidents of antisemitism in several parts of the world\" and to an Economic and Social Council draft on racial prejudice. The only record this atlas holds that it names is `charter-of-the-united-nations`, and it names it as the instrument such hatred violates rather than as anything the convention answered. That is a legal citation and not a consequence. It waits on a record of the 1960 resolution, or on the decolonisation of Africa that the drafting years turn on."
   },
   "wikidata": "Q743306",
   "wikipedia": {
@@ -51,6 +51,6 @@
   },
   "place": null,
   "region": "americas",
-  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane, named for this item in data/imports/wikidata-seeds.json. This event points at no place record, so the timeline has nothing else to go on.",
   "actors": []
 }

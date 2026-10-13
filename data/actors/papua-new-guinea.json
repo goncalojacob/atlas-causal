@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -51,7 +51,7 @@
   "names": [
     "Papua New Guinea"
   ],
-  "summary": "Approximately 462,840 km² and about 8.9 million people (2020), from Wikidata's Q691 (P2046, P1082). The English Wikipedia article \"Papua New Guinea\", at revision 1375324621, opens: \"Papua New Guinea (PNG), officially the Independent State of Papua New Guinea, is an island country in Oceania that comprises the eastern half of the island of New Guinea and offshore islands in Melanesia, a region of the southwestern Pacific Ocean north of Australia. It has a land border with Indonesia to the west and maritime borders with Australia to the south and the Solomon Islands to the east. Its capital is Port Moresby.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 910 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1975 to where the dataset stops, in 2019. Its last capital in the dataset is Port Moresby. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1975-09-16. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 462,840 km² and about 8.9 million people (2020), from Wikidata's Q691 (P2046, P1082). The English Wikipedia article \"Papua New Guinea\", at revision 1375324621, opens: \"Papua New Guinea (PNG), officially the Independent State of Papua New Guinea, is an island country in Oceania that comprises the eastern half of the island of New Guinea and offshore islands in Melanesia, a region of the southwestern Pacific Ocean north of Australia. It has a land border with Indonesia to the west and maritime borders with Australia to the south and the Solomon Islands to the east. Its capital is Port Moresby.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 910 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1975 to where the dataset stops, in 2019. Its last capital in the dataset is Port Moresby. The code is mapped onto more than one actor (data/imports/cshapes-actors.json). This record holds the periods from 1975-09-16. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1975,
     "end": null

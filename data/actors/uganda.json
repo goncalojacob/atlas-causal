@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -51,7 +51,7 @@
   "names": [
     "Uganda"
   ],
-  "summary": "Approximately 241,038 km² and about 47.1 million people (2021), from Wikidata's Q1036 (P2046, P1082). The English Wikipedia article \"Uganda\", at revision 1376149599, opens: \"Uganda, officially the Republic of Uganda, is a landlocked country in East Africa. It is bordered to the east by Kenya, to the north by South Sudan, to the west by the Democratic Republic of the Congo, to the south-west by Rwanda, and to the south by Tanzania. The southern part includes a substantial portion of Lake Victoria, shared with Kenya and Tanzania.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 500 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1962 to where the dataset stops, in 2019. Its last capital in the dataset is Kampala. The code is mapped onto more than one actor (data/imports/cshapes-actors.json); this record holds the periods from 1962-10-09. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 241,038 km² and about 47.1 million people (2021), from Wikidata's Q1036 (P2046, P1082). The English Wikipedia article \"Uganda\", at revision 1376149599, opens: \"Uganda, officially the Republic of Uganda, is a landlocked country in East Africa. It is bordered to the east by Kenya, to the north by South Sudan, to the west by the Democratic Republic of the Congo, to the south-west by Rwanda, and to the south by Tanzania. The southern part includes a substantial portion of Lake Victoria, shared with Kenya and Tanzania.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 500 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1962 to where the dataset stops, in 2019. Its last capital in the dataset is Kampala. The code is mapped onto more than one actor (data/imports/cshapes-actors.json). This record holds the periods from 1962-10-09. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1962,
     "end": null

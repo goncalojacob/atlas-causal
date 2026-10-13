@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "battle-of-cuddalore-1783",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The last of the five Sadras counts — “the first of five largely indecisive naval battles” between Hughes and Suffren — and the Cuddalore article says it closed them: it “took place right before the Treaty of Paris that ended the American Revolutionary War”, and “Peace had already been agreed upon in Europe, but that news had yet to reach India, making this the final battle of the war.” **What the Cuddalore article gives as its own cause is not Trincomalee** but Hyder Ali's death — “Following the December 1782 death of French ally Hyder Ali, the ruler of Mysore and previous controller of Cuddalore, British commanders at Madras decided to attempt the recapture of Cuddalore” — so this edge carries the series and nothing more, which is what `precondition-of` and `probable` say. The atlas holds no record for Hyder Ali's death; when it does, that is the edge into this battle.",
+  "explanation": "Cuddalore is the last of the five the Sadras article counts, Sadras being “the first of five largely indecisive naval battles” between Hughes and Suffren. The Cuddalore article says it closed them. It “took place right before the Treaty of Paris that ended the American Revolutionary War”, and “Peace had already been agreed upon in Europe, but that news had yet to reach India, making this the final battle of the war.” **The Cuddalore article gives its own cause as Hyder Ali's death. It does not give Trincomalee.** It says, “Following the December 1782 death of French ally Hyder Ali, the ruler of Mysore and previous controller of Cuddalore, British commanders at Madras decided to attempt the recapture of Cuddalore”. So this edge carries the series and nothing more, which is what `precondition-of` and `probable` say. The atlas holds no record for Hyder Ali's death. When it does, that is the edge into this battle.",
   "dispute": null
 }

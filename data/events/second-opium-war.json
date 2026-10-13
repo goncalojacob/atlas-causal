@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "second-opium-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q418151",
+  "sitelinks": {
+    "count": 66,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Second Opium War",
+    "pt": "Segunda Guerra do Ópio"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q418151"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Opium War\", revision 1379876059"
+    }
+  ],
+  "title": "Second Opium War",
+  "summary": "The English Wikipedia article \"Second Opium War\", at revision 1379876059, opens: \"The Second Opium War, also known as the Second Anglo-Chinese War or Arrow War, was fought between the United Kingdom and France against the Qing dynasty of China between 1856 and 1860. It was the second major conflict in the Opium Wars, which were fought over the right to import opium to China, and resulted in a second defeat for the Qing and the forced legalisation of the opium trade. It caused many Chinese officials to believe that conflicts with the Western powers were no longer traditional wars, but part of a looming national crisis.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q418151, imported by tools/import/wikidata.mjs. The item's own description reads \"1856–1860 war between British–French forces and China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1856,
+    "end": 1860
+  },
+  "place": "qing-dynasty",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

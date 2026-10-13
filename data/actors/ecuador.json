@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -55,7 +55,7 @@
   "names": [
     "Ecuador"
   ],
-  "summary": "Approximately 257,204 km² and about 16.9 million people (2022), from Wikidata's Q736 (P2046, P1082). The English Wikipedia article \"Ecuador\", at revision 1375822764, opens: \"Ecuador, officially the Republic of Ecuador, is a country in northwestern South America, bordered by Colombia on the north, Peru on the east and south, and the Pacific Ocean on the west. It also includes the Galápagos Province which contains the Galápagos Islands in the Pacific, about 1,000 kilometers west of the mainland. The country's capital is Quito, and the largest city is Guayaquil.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 130 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Quito. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 257,204 km² and about 16.9 million people (2022), from Wikidata's Q736 (P2046, P1082). The English Wikipedia article \"Ecuador\", at revision 1375822764, opens: \"Ecuador, officially the Republic of Ecuador, is a country in northwestern South America, bordered by Colombia on the north, Peru on the east and south, and the Pacific Ocean on the west. It also includes the Galápagos Province which contains the Galápagos Islands in the Pacific, about 1,000 kilometers west of the mainland. The country's capital is Quito, and the largest city is Guayaquil.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 130 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 2 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Quito. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

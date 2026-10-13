@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-30",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -38,6 +38,6 @@
   "to": "battle-of-baton-rouge-1779",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "A15 (5) put this edge here. The quote that would have run from Spain's entry to Baton Rouge — “first the attack and capture of Fort Bute at Manchac, and then forcing the surrender of Baton Rouge, Natchez and Mobile in 1779 and 1780”, “Spain and the American Revolutionary War” at revision 1373209544 — names Fort Bute as what came first, so under A15 (5) the edge is written from Fort Bute or not at all. The Baton Rouge article, at revision 1370433595, states the connection rather than the order: “The six who escaped capture made their way to Baton Rouge to notify the British troops there of the fort's capture”, and the same section explains why Baton Rouge was the real battle — “Dickson had decided weeks earlier that Fort Bute, built in 1766 and in ruins, was not defensible, and had placed most of his troops at Baton Rouge”. `precondition-of` and not `caused`: taking the ruined post opened the river road and warned the garrison, it did not decide the siege. `probable`, on the two articles alone (rule 22).",
+  "explanation": "Review A15 (5) put this edge here. The quote that would have run from Spain's entry to Baton Rouge is “first the attack and capture of Fort Bute at Manchac, and then forcing the surrender of Baton Rouge, Natchez and Mobile in 1779 and 1780”, in “Spain and the American Revolutionary War” at revision 1373209544. It names Fort Bute as what came first, so under A15 (5) the edge is written from Fort Bute or left unwritten. The Baton Rouge article, at revision 1370433595, states the connection rather than the order: “The six who escaped capture made their way to Baton Rouge to notify the British troops there of the fort's capture”, and the same section explains why Baton Rouge was the real battle, saying “Dickson had decided weeks earlier that Fort Bute, built in 1766 and in ruins, was not defensible, and had placed most of his troops at Baton Rouge”. The type is `precondition-of`. Taking the ruined post opened the river road and warned the garrison, and it did not decide the siege. `probable`, on the two articles alone (rule 22).",
   "dispute": null
 }
