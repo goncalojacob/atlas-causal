@@ -117,6 +117,85 @@ async function fire(bed, items, over = []) {
   return { code, log: existsSync(log) ? await readJson(log) : null };
 }
 
+// M92 change 2. Under A17 a writer imports an event that names no umbrella, no
+// actor and no place, and tests/m67.test.mjs wants every such event named in
+// docs/m67-umbrellas.md. The writer appends a section for each one. The
+// document sits beside the data directory, so a scratch fire writes its own.
+const SKIRMISH = 'Q9200004';
+async function bareBed() {
+  const bed = await scratch();
+  const seedsFile = path.join(bed.data, 'imports', 'wikidata-seeds.json');
+  const seeds = await readJson(seedsFile);
+  // The skirmish has no point and no location, so the seeds file names its lane.
+  await writeFile(seedsFile, `${JSON.stringify({ ...seeds, lanes: { [SKIRMISH]: 'fixture-lane-1' } }, null, 2)}\n`, 'utf8');
+  return { ...bed, doc: path.join(bed.dir, 'docs', 'm67-umbrellas.md') };
+}
+const skirmish = (over = {}) => item({ id: '2026-10-13-africa-020', qid: SKIRMISH, title: 'Fixture skirmish Z', rank: 'vital-4', edges: [], ...over });
+
+test('a bare import is named in the umbrella document (M92)', async () => {
+  const bed = await bareBed();
+  await mkdir(path.dirname(bed.doc), { recursive: true });
+  await writeFile(bed.doc, '# Umbrellas\n\nWhat came before.\n', 'utf8');
+  const lines = [];
+  const original = console.log;
+  console.log = (...args) => { lines.push(args.join(' ')); };
+  let code;
+  try {
+    ({ code } = await fire(bed, [skirmish()]));
+  } finally {
+    console.log = original;
+  }
+  assert.equal(code, EXIT.ok);
+  const record = await readJson(path.join(bed.data, 'events', 'fixture-skirmish-z.json'));
+  assert.equal(parentsOf(record).length, 0);
+  assert.deepEqual(record.actors ?? [], []);
+  assert.notEqual(typeof record.place, 'string');
+  const doc = await readFile(bed.doc, 'utf8');
+  assert.ok(doc.startsWith('# Umbrellas\n\nWhat came before.\n'), 'the section is appended, and nothing above it moves');
+  assert.match(doc, /^## Writer A, \d{4}-\d{2}-\d{2}: `fixture-skirmish-z`, bare$/m);
+  assert.match(doc, /2026-10-13-africa-020/);
+  assert.match(doc, /vital-4/);
+  assert.doesNotMatch(doc.slice(doc.indexOf('## Writer A')), /—|;/, 'plain words: no em dash and no semicolon');
+  assert.ok(lines.some((l) => l.includes('docs/m67-umbrellas.md')), 'stdout says the document changed');
+  // A second fire on the same event writes no second section.
+  await rm(path.join(bed.data, 'imports', 'queue-log.json'));
+  await fire(bed, [skirmish({ id: '2026-10-13-africa-021' })]);
+  assert.equal((await readFile(bed.doc, 'utf8')).match(/`fixture-skirmish-z`/g).length, 1);
+  await rm(bed.dir, { recursive: true, force: true });
+});
+
+test('a filed import with neither an actor nor a place is argued in the umbrella document (M92)', async () => {
+  const bed = await bareBed();
+  // fixture-event-g runs from 1270 with no end, so it holds the 1986 skirmish.
+  const filed = await fire(bed, [skirmish({ parents: ['fixture-event-g'] })]);
+  assert.equal(filed.code, EXIT.ok);
+  assert.equal(filed.log.entries[0].status, 'written');
+  const doc = await readFile(bed.doc, 'utf8');
+  assert.match(doc, /^## Writer A, \d{4}-\d{2}-\d{2}: `fixture-skirmish-z`, filed under `fixture-event-g` with neither an actor nor a place$/m);
+  assert.match(doc, /2026-10-13-africa-020/);
+  assert.match(doc, /span and its subject put it inside the umbrella/);
+  assert.doesNotMatch(doc, /, bare$/m, 'a filed event is not called bare');
+  assert.doesNotMatch(doc, /—|;/, 'plain words: no em dash and no semicolon');
+  await rm(bed.dir, { recursive: true, force: true });
+});
+
+test('an import that stands at a place leaves the umbrella document alone (M92)', async () => {
+  const bed = await bareBed();
+  // The siege stands at a place, with no parent and no actor.
+  const placed = await fire(bed, [item({ id: '2026-10-13-africa-022', qid: SIEGE, title: 'Fixture siege Z', edges: [] })]);
+  assert.equal(placed.code, EXIT.ok);
+  assert.ok(placed.log.entries[0].written.place);
+  // And the same with a parent.
+  const both = await bareBed();
+  const filed = await fire(both, [item({ id: '2026-10-13-africa-023', qid: SIEGE, title: 'Fixture siege Z', edges: [], parents: ['fixture-event-g'] })]);
+  assert.equal(filed.code, EXIT.ok);
+  assert.ok(filed.log.entries[0].written.place);
+  assert.equal(existsSync(bed.doc), false, 'nothing to name, so no section and no file');
+  assert.equal(existsSync(both.doc), false);
+  await rm(bed.dir, { recursive: true, force: true });
+  await rm(both.dir, { recursive: true, force: true });
+});
+
 // --- the written case ------------------------------------------------------
 
 test('an item whose edges verify is imported, filed, and written with its edges', async () => {
