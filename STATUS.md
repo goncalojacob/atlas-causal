@@ -25795,3 +25795,5 @@ Rewriter started 2026-10-13T01:52:14Z by scheduled
 Rewriter 2026-10-13T02:10:23Z: 351 records rewritten, 49 left, 1239 of 4940 done
 
 Rewriter started 2026-10-13T02:52:00Z by scheduled
+
+Rewriter 2026-10-13T03:15:45Z: 2384 records rewritten, 34 left, 3638 of 4940 done
