@@ -25856,3 +25856,4 @@ Rewriter started 2026-10-13T05:52:50Z by scheduled
 Writer A started 2026-10-13T06:22:23Z by scheduled
 
 Writer A 2026-10-13T06:27:48Z: 8 written, 0 partial, 0 refused, 2 skipped
+Writer B started 2026-10-13T06:42:10Z by scheduled
