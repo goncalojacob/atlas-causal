@@ -11,6 +11,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-13",
+      "from": "12-3-incident",
+      "id": "12-3-incident--macau-handover-1999--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "macau-handover-1999",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "1893-franco-siamese-crisis",
       "id": "1893-franco-siamese-crisis--entente-cordiale--precondition-of",
@@ -1070,6 +1100,36 @@
       "status": "active",
       "to": "carnation-revolution-1974",
       "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "from": "1970-bhola-cyclone",
+      "id": "1970-bhola-cyclone--bangladesh-liberation-war--enabled",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "bangladesh-liberation-war",
+      "type": "enabled"
     },
     {
       "authors": [
@@ -13748,6 +13808,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-13",
+      "from": "cultural-revolution",
+      "id": "cultural-revolution--reform-and-opening-up--enabled",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "reform-and-opening-up",
+      "type": "enabled"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "cultural-revolution",
       "id": "cultural-revolution--sino-soviet-border-conflict--precondition-of",
@@ -18660,6 +18750,36 @@
       "revised": null,
       "status": "active",
       "to": "empire-of-brazil-1822-1889",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "from": "independence-of-brazil-1822",
+      "id": "independence-of-brazil-1822--scramble-for-africa--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "scramble-for-africa",
       "type": "caused"
     },
     {
@@ -25901,6 +26021,36 @@
       "revised": null,
       "status": "active",
       "to": "schengen-in-force-1995",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "from": "scramble-for-africa",
+      "id": "scramble-for-africa--world-war-i--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "world-war-i",
       "type": "precondition-of"
     },
     {
@@ -34820,6 +34970,36 @@
       "revised": null,
       "status": "active",
       "to": "declaration-by-united-nations",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "from": "world-war-ii",
+      "id": "world-war-ii--decolonisation-of-africa--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "decolonisation-of-africa",
       "type": "caused"
     },
     {

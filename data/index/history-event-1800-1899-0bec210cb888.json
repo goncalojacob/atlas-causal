@@ -1728,6 +1728,15 @@
         }
       ]
     },
+    "greek-war-of-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "heligoland-zanzibar-treaty": {
       "from": "git",
       "versions": [
@@ -1792,6 +1801,15 @@
           "fields": [
             "actors"
           ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "indian-rebellion-of-1857": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-10-13"
         }
       ]

@@ -1316,6 +1316,12 @@
     },
     {
       "dissent": false,
+      "id": "12-3-incident--macau-handover-1999--precondition-of",
+      "kind": "edge",
+      "locator": "\"12-3 incident\", revision 1377636747"
+    },
+    {
+      "dissent": false,
       "id": "1893-franco-siamese-crisis--entente-cordiale--precondition-of",
       "kind": "edge",
       "locator": "\"1893 Franco-Siamese crisis\", revision 1374343940, § Consequences"
@@ -1487,6 +1493,12 @@
       "id": "1966-nigerian-coup-d-etat--nigerian-civil-war--caused",
       "kind": "edge",
       "locator": "\"Nigerian Civil War\", revision 1374012434, lead"
+    },
+    {
+      "dissent": false,
+      "id": "1970-bhola-cyclone--bangladesh-liberation-war--enabled",
+      "kind": "edge",
+      "locator": "\"1970 Bhola cyclone\", revision 1378967090"
     },
     {
       "dissent": false,
@@ -4436,6 +4448,12 @@
     },
     {
       "dissent": false,
+      "id": "cultural-revolution--reform-and-opening-up--enabled",
+      "kind": "edge",
+      "locator": "\"Reform and opening up\", revision 1373006392"
+    },
+    {
+      "dissent": false,
       "id": "cultural-revolution--sino-soviet-border-conflict--precondition-of",
       "kind": "edge",
       "locator": "\"Sino-Soviet border conflict\", revision 1372863432, § lead"
@@ -5603,6 +5621,12 @@
       "id": "independence-of-brazil-1822--empire-of-brazil-1822-1889--caused",
       "kind": "edge",
       "locator": "\"Empire of Brazil\", revision 1374829984, § lead"
+    },
+    {
+      "dissent": false,
+      "id": "independence-of-brazil-1822--scramble-for-africa--caused",
+      "kind": "edge",
+      "locator": "\"Scramble for Africa\", revision 1376647971"
     },
     {
       "dissent": false,
@@ -7385,6 +7409,12 @@
       "id": "schengen-agreement--schengen-in-force-1995--precondition-of",
       "kind": "edge",
       "locator": "\"Schengen Agreement\", revision 1370029483"
+    },
+    {
+      "dissent": false,
+      "id": "scramble-for-africa--world-war-i--precondition-of",
+      "kind": "edge",
+      "locator": "\"Scramble for Africa\", revision 1376647971"
     },
     {
       "dissent": false,
@@ -9884,6 +9914,12 @@
     },
     {
       "dissent": false,
+      "id": "world-war-ii--decolonisation-of-africa--caused",
+      "kind": "edge",
+      "locator": "\"Decolonisation of Africa\", revision 1379719162"
+    },
+    {
+      "dissent": false,
       "id": "world-war-ii--deportation-of-the-crimean-tatars--precondition-of",
       "kind": "edge",
       "locator": "\"Deportation of the Crimean Tatars\", revision 1375533569, § lead"
@@ -10322,6 +10358,12 @@
     },
     {
       "dissent": false,
+      "id": "1970-bhola-cyclone",
+      "kind": "event",
+      "locator": "\"1970 Bhola cyclone\", revision 1378967090"
+    },
+    {
+      "dissent": false,
       "id": "1972-portuguese-presidential-election",
       "kind": "event",
       "locator": "\"1972 Portuguese presidential election\", revision 1305366739"
@@ -10466,6 +10508,12 @@
     },
     {
       "dissent": false,
+      "id": "1989-tiananmen-square-protests-and-massacre",
+      "kind": "event",
+      "locator": "\"1989 Tiananmen Square protests and massacre\", revision 1379982985"
+    },
+    {
+      "dissent": false,
       "id": "1991-portuguese-legislative-election",
       "kind": "event",
       "locator": "\"1991 Portuguese legislative election\", revision 1372483511"
@@ -10547,6 +10595,12 @@
       "id": "2003-invasion-of-iraq",
       "kind": "event",
       "locator": "\"2003 invasion of Iraq\", revision 1372133822"
+    },
+    {
+      "dissent": false,
+      "id": "2004-indian-ocean-earthquake-and-tsunami",
+      "kind": "event",
+      "locator": "\"2004 Indian Ocean earthquake and tsunami\", revision 1377590205"
     },
     {
       "dissent": false,
@@ -15632,6 +15686,12 @@
     },
     {
       "dissent": false,
+      "id": "greek-war-of-independence",
+      "kind": "event",
+      "locator": "\"Greek War of Independence\", revision 1379883159"
+    },
+    {
+      "dissent": false,
       "id": "guarani-war",
       "kind": "event",
       "locator": "\"Guaraní War\", revision 1370622079"
@@ -15809,6 +15869,12 @@
       "id": "india-pakistan-war-of-1971",
       "kind": "event",
       "locator": "\"India–Pakistan war of 1971\", revision 1371969450"
+    },
+    {
+      "dissent": false,
+      "id": "indian-rebellion-of-1857",
+      "kind": "event",
+      "locator": "\"Indian Rebellion of 1857\", revision 1377649380"
     },
     {
       "dissent": false,
@@ -17357,6 +17423,12 @@
       "id": "red-sea-crisis",
       "kind": "event",
       "locator": "\"Red Sea crisis\", revision 1378533380"
+    },
+    {
+      "dissent": false,
+      "id": "reform-and-opening-up",
+      "kind": "event",
+      "locator": "\"Reform and opening up\", revision 1373006392"
     },
     {
       "dissent": false,

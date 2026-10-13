@@ -2527,6 +2527,15 @@
         }
       ]
     },
+    "1970-bhola-cyclone": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "1972-portuguese-presidential-election": {
       "from": "git",
       "versions": [
@@ -4184,6 +4193,15 @@
           "fields": [
             "retraction"
           ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1989-tiananmen-square-protests-and-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-10-13"
         }
       ]
@@ -19216,6 +19234,15 @@
             "sitelinks"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "reform-and-opening-up": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
         }
       ]
     },

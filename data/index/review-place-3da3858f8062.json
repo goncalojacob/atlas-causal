@@ -6376,7 +6376,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "east-pakistan",
       "kind": "place",
       "names": [
@@ -16612,7 +16612,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -17225,7 +17225,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "people-s-republic-of-china",
       "kind": "place",
       "names": [
@@ -23301,6 +23301,34 @@
         "status": "draft"
       },
       "revised": "2026-10-13",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-13",
+      "degree": 1,
+      "id": "tiananmen-square",
+      "kind": "place",
+      "names": [
+        "Tiananmen Square",
+        "Praça da Paz Celestial"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

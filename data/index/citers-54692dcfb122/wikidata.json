@@ -1952,6 +1952,12 @@
     },
     {
       "dissent": false,
+      "id": "1970-bhola-cyclone",
+      "kind": "event",
+      "locator": "Q245551"
+    },
+    {
+      "dissent": false,
       "id": "1972-portuguese-presidential-election",
       "kind": "event",
       "locator": null
@@ -2096,6 +2102,12 @@
     },
     {
       "dissent": false,
+      "id": "1989-tiananmen-square-protests-and-massacre",
+      "kind": "event",
+      "locator": "Q99717"
+    },
+    {
+      "dissent": false,
       "id": "1991-portuguese-legislative-election",
       "kind": "event",
       "locator": null
@@ -2183,6 +2195,12 @@
       "id": "2003-invasion-of-iraq",
       "kind": "event",
       "locator": "Q107802"
+    },
+    {
+      "dissent": false,
+      "id": "2004-indian-ocean-earthquake-and-tsunami",
+      "kind": "event",
+      "locator": "Q130754"
     },
     {
       "dissent": false,
@@ -7382,6 +7400,12 @@
     },
     {
       "dissent": false,
+      "id": "greek-war-of-independence",
+      "kind": "event",
+      "locator": "Q182062"
+    },
+    {
+      "dissent": false,
       "id": "guarani-war",
       "kind": "event",
       "locator": "Q2427419"
@@ -7559,6 +7583,12 @@
       "id": "india-pakistan-war-of-1971",
       "kind": "event",
       "locator": "Q1922071"
+    },
+    {
+      "dissent": false,
+      "id": "indian-rebellion-of-1857",
+      "kind": "event",
+      "locator": "Q129864"
     },
     {
       "dissent": false,
@@ -9161,6 +9191,12 @@
       "id": "red-sea-crisis",
       "kind": "event",
       "locator": "Q123285238"
+    },
+    {
+      "dissent": false,
+      "id": "reform-and-opening-up",
+      "kind": "event",
+      "locator": "Q1205521"
     },
     {
       "dissent": false,

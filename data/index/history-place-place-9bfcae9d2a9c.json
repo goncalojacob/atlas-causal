@@ -10989,6 +10989,15 @@
         }
       ]
     },
+    "tiananmen-square": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "tibet-q17252": {
       "from": "git",
       "versions": [

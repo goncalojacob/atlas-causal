@@ -346,6 +346,15 @@
         }
       ]
     },
+    "2004-indian-ocean-earthquake-and-tsunami": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "2004-madeiran-regional-election": {
       "from": "git",
       "versions": [

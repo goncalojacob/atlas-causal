@@ -2,6 +2,15 @@
   "from": 1900,
   "kind": "edge",
   "records": {
+    "12-3-incident--macau-handover-1999--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "1908-portuguese-legislative-election--republic-proclaimed-1910--precondition-of": {
       "from": "git",
       "versions": [
@@ -629,6 +638,15 @@
           "fields": [
             "explanation"
           ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "1970-bhola-cyclone--bangladesh-liberation-war--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-10-13"
         }
       ]
@@ -3599,6 +3617,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "cultural-revolution--reform-and-opening-up--enabled": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
         }
       ]
     },
@@ -8284,6 +8311,15 @@
         {
           "first": true,
           "on": "2026-09-21"
+        }
+      ]
+    },
+    "world-war-ii--decolonisation-of-africa--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
         }
       ]
     },

@@ -775,6 +775,15 @@
         }
       ]
     },
+    "independence-of-brazil-1822--scramble-for-africa--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "jameson-raid--second-boer-war--precondition-of": {
       "from": "git",
       "versions": [
@@ -961,6 +970,32 @@
         {
           "first": true,
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "scramble-for-africa--world-war-i--precondition-of": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        },
+        {
+          "fields": [
+            "explanation",
+            "sources"
+          ],
+          "on": "2026-09-30"
+        },
+        {
+          "fields": [
+            "created",
+            "explanation",
+            "origin",
+            "review",
+            "sources"
+          ],
+          "on": "2026-10-13"
         }
       ]
     },

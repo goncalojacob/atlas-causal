@@ -14,7 +14,7 @@
         "wikipedia-en"
       ],
       "created": "2026-10-01",
-      "degree": 1,
+      "degree": 2,
       "id": "12-3-incident",
       "kind": "event",
       "origin": {
@@ -1325,6 +1325,35 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "degree": 1,
+      "id": "1970-bhola-cyclone",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1970 Bhola cyclone"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -2215,6 +2244,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "id": "1989-tiananmen-square-protests-and-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "cold-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1989 Tiananmen Square protests and massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -2730,6 +2790,35 @@
       "revised": null,
       "status": "active",
       "title": "2003 invasion of Iraq"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "id": "2004-indian-ocean-earthquake-and-tsunami",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "2004 Indian Ocean earthquake and tsunami"
     },
     {
       "authors": [
@@ -7346,7 +7435,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 2,
+      "degree": 3,
       "id": "bangladesh-liberation-war",
       "kind": "event",
       "origin": {
@@ -27041,7 +27130,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-05",
-      "degree": 3,
+      "degree": 4,
       "id": "cultural-revolution",
       "kind": "event",
       "origin": {
@@ -27215,6 +27304,7 @@
         "wikidata"
       ],
       "created": "2026-09-22",
+      "degree": 1,
       "id": "decolonisation-of-africa",
       "kind": "event",
       "origin": {
@@ -31779,6 +31869,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-13",
+      "id": "greek-war-of-independence",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Greek War of Independence"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 1,
       "id": "guarani-war",
@@ -32878,7 +32997,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-16",
-      "degree": 4,
+      "degree": 5,
       "id": "independence-of-brazil-1822",
       "kind": "event",
       "names": [
@@ -32964,6 +33083,35 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "India–Pakistan war of 1971"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-13",
+      "id": "indian-rebellion-of-1857",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Indian Rebellion of 1857"
     },
     {
       "authors": [
@@ -36309,7 +36457,7 @@
         "costa-pinto-2003-contemporary-portugal"
       ],
       "created": "2026-09-02",
-      "degree": 2,
+      "degree": 3,
       "id": "macau-handover-1999",
       "kind": "event",
       "origin": {
@@ -42160,6 +42308,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-13",
+      "degree": 1,
+      "id": "reform-and-opening-up",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Reform and opening up"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "reign-of-terror",
       "kind": "event",
@@ -43692,6 +43871,7 @@
         "wikipedia-en"
       ],
       "created": "2026-09-21",
+      "degree": 2,
       "id": "scramble-for-africa",
       "kind": "event",
       "origin": {
@@ -55359,7 +55539,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 23,
+      "degree": 24,
       "id": "world-war-i",
       "kind": "event",
       "origin": {
@@ -55398,7 +55578,7 @@
         "wikidata"
       ],
       "created": "2026-09-05",
-      "degree": 30,
+      "degree": 31,
       "id": "world-war-ii",
       "kind": "event",
       "origin": {
@@ -55878,6 +56058,18 @@
     },
     {
       "id": "1982-british-army-gazelle-friendly-fire-incident",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1989-tiananmen-square-protests-and-massacre",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "2004-indian-ocean-earthquake-and-tsunami",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -57701,12 +57893,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "decolonisation-of-africa",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "decolonisation-of-asia",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -57869,6 +58055,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "greek-war-of-independence",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "haitian-embassy-in-cuba-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -57915,6 +58107,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "indian-rebellion-of-1857",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "indo-pakistani-war-of-1947-1948",
@@ -58452,12 +58650,6 @@
     },
     {
       "id": "scientific-revolution",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "scramble-for-africa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
