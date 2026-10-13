@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "hong-kong-flu",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The link here is the virus itself, which the English article states as a fact of descent rather than as a resemblance between two pandemics: the 1968 virus \"was descended from H2N2 (which caused the Asian flu pandemic in 1957–1958) through antigenic shift, a genetic process in which genes from multiple subtypes are reassorted to form a new virus.\" Nothing is claimed about the handling of one pandemic changing the handling of the other.",
+  "explanation": "The link here is the virus itself. The English article states a line of descent between the two viruses. The 1968 virus \"was descended from H2N2 (which caused the Asian flu pandemic in 1957–1958) through antigenic shift, a genetic process in which genes from multiple subtypes are reassorted to form a new virus.\" The edge claims nothing about the handling of one pandemic changing the handling of the other.",
   "dispute": null
 }

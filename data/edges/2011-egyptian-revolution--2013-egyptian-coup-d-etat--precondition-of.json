@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "2013-egyptian-coup-d-etat",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The English article on the coup writes its background as the two years between: Mubarak resigned in February 2011 after eighteen days of mass demonstrations, the caretaker government approved an election law in July, a parliament was elected between December 2011 and January 2012, and Morsi won the presidential election of June 2012 to become the first democratically elected president of Egypt — the president the coup of 3 July 2013 removed.",
+  "explanation": "The English article on the coup writes its background as the two years between. Mubarak resigned in February 2011 after eighteen days of mass demonstrations. The caretaker government approved an election law in July, and a parliament was elected between December 2011 and January 2012. Morsi won the presidential election of June 2012 to become the first democratically elected president of Egypt. He is the president the coup of 3 July 2013 removed.",
   "dispute": null
 }

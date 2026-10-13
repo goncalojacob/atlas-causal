@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -44,6 +44,6 @@
     "label": "Port Louis"
   },
   "region": "africa",
-  "regionNote": "Mauritius falls outside every lane polygon of data/geo/regions.json, so the lane is written here as the override the model provides for somewhere no polygon reaches.",
+  "regionNote": "Mauritius falls outside every lane polygon of data/geo/regions.json. The lane is written here, as the override the model provides for somewhere no polygon reaches.",
   "summary": null
 }

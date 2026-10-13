@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "spanish-conquest-of-the-inca-empire",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The Punta Quemada article claims the link in its lead: \"Though it marked the end of Francisco Pizarro's first tentative expedition along the Pacific coast, the battle also represented a crucial step to Spain's discovery and conquest of the Peru.\" `precondition-of` and not `caused`: a crucial step towards a conquest begun seven years later is a condition of it, and the article argues nothing stronger. Probable, and with a second author: Prescott's History of the Conquest of Peru is the work the article rests on throughout, at pp. 96-102 for this battle.",
+  "explanation": "The Punta Quemada article claims the link in its lead: \"Though it marked the end of Francisco Pizarro's first tentative expedition along the Pacific coast, the battle also represented a crucial step to Spain's discovery and conquest of the Peru.\" `precondition-of`: a crucial step towards a conquest begun seven years later is a condition of it, and the article argues nothing stronger. Probable, and with a second author: Prescott's History of the Conquest of Peru is the work the article rests on throughout, at pp. 96-102 for this battle.",
   "dispute": null
 }

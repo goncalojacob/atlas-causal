@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "operation-northern-shield",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The operation's own background makes the earlier war the reason a search that had already failed was taken up again and this time believed: \"The Israel Defense Forces (IDF) started searching for Hezbollah tunnels into Israel in 2013 after residents of northern Israel reported hearing sounds of digging, but failed to find anything. After the 2014 Gaza War, which saw numerous tunnels dug by Hamas from the Gaza Strip into Israel being uncovered and being utilized in several attacks, the IDF renewed its search for Hezbollah tunnels in northern Israel, and this time found indications that such tunnels existed.\" The article carries the mechanism through the method as well — the laboratory formed to investigate the northern tunnels was \"based on a similar laboratory investigating Hamas tunnels in southern Israel\" — so what the war supplied was not only a prompt but the technique. Probable: Wikipedia alone.",
+  "explanation": "The operation's own background makes the earlier war the reason a search that had already failed was taken up again and believed this time: \"The Israel Defense Forces (IDF) started searching for Hezbollah tunnels into Israel in 2013 after residents of northern Israel reported hearing sounds of digging, but failed to find anything. After the 2014 Gaza War, which saw numerous tunnels dug by Hamas from the Gaza Strip into Israel being uncovered and being utilized in several attacks, the IDF renewed its search for Hezbollah tunnels in northern Israel, and this time found indications that such tunnels existed.\" The article carries the link through the method as well. The laboratory formed to investigate the northern tunnels was \"based on a similar laboratory investigating Hamas tunnels in southern Israel\". The war supplied the prompt and the technique. The confidence is `probable` because the only source is Wikipedia.",
   "dispute": null
 }

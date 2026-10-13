@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -59,7 +59,7 @@
   },
   "place": "brazil-q155",
   "region": "americas",
-  "regionNote": "A regime has no single point on the map, so the lane is given rather than derived: Brazil’s.",
+  "regionNote": "A regime has no single point on the map, so no point can give the lane. The record carries the Brazil lane instead.",
   "actors": [
     {
       "actor": "brazil",

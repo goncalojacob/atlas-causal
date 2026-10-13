@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "siege-of-badajoz-1812",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Albuera was fought to cover the allied siege of Badajoz of 1811, and the article says that siege was then given up: \"Although he failed to lift the siege of Badajoz, Soult's campaign had managed to temporarily relieve it\", and \"On 20 June the combined French force, over 60,000 strong, lifted the siege.\" The town was taken only at the third attempt, which is the siege this edge points at — the Badajoz article calls itself \"the third siege of Badajoz\". Probable: Wikipedia alone.",
+  "explanation": "Albuera was fought to cover the allied siege of Badajoz of 1811, and the article says that siege was then given up: \"Although he failed to lift the siege of Badajoz, Soult's campaign had managed to temporarily relieve it\", and \"On 20 June the combined French force, over 60,000 strong, lifted the siege.\" The town was taken only at the third attempt, and that third attempt is the siege this edge points at. The Badajoz article calls itself \"the third siege of Badajoz\". The confidence is probable, on Wikipedia alone.",
   "dispute": null
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "kidal-offensive",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The offensive's own lead makes the junta one of its two parties and dates that junta to the coup: \"The offensive was part of a renewed conflict between the Malian junta that took power in 2021 and former Tuareg rebel groups that had signed the Algiers Agreement in 2015.\" § Background works the same ground: the CSP-PSD formed in April 2021, \"just a month later\" Goïta's coup took power, and \"Goita and the CSP-PSD got off to a rocky start\". Precondition and not cause: the article says the coup made the two parties what they were, not that it ordered the convoy north. Probable: Wikipedia alone.",
+  "explanation": "The offensive's own lead makes the junta one of its two parties and dates that junta to the coup: \"The offensive was part of a renewed conflict between the Malian junta that took power in 2021 and former Tuareg rebel groups that had signed the Algiers Agreement in 2015.\" § Background works the same ground. The CSP-PSD formed in April 2021, \"just a month later\" Goïta's coup took power, and \"Goita and the CSP-PSD got off to a rocky start\". The edge is `precondition-of`, which says the coup supplied something the offensive needed without causing it. The article says the coup made the two parties what they were, and does not say it ordered the convoy north. The confidence is `probable` because the only source is Wikipedia.",
   "dispute": null
 }

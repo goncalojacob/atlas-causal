@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -51,7 +51,7 @@
   "names": [
     "Chile"
   ],
-  "summary": "Approximately 756,102 km² and about 19.5 million people (2021), from Wikidata's Q298 (P2046, P1082). The English Wikipedia article \"Chile\", at revision 1376102671, opens: \"Chile, officially the Republic of Chile, is a country in the Southern Cone of southwestern South America. It is the southernmost country in the world and the closest to Antarctica, extending along a narrow strip of land between the Andes Mountains and the Pacific Ocean. According to the 2024 census, Chile had an enumerated population of 18.5 million.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 155 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Santiago. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 756,102 km² and about 19.5 million people (2021), from Wikidata's Q298 (P2046, P1082). The English Wikipedia article \"Chile\", at revision 1376102671, opens: \"Chile, officially the Republic of Chile, is a country in the Southern Cone of southwestern South America. It is the southernmost country in the world and the closest to Antarctica, extending along a narrow strip of land between the Andes Mountains and the Pacific Ocean. According to the 2024 census, Chile had an enumerated population of 18.5 million.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 155 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 3 periods of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Santiago. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

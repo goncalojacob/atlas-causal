@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-23",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "iraqi-insurgency",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The article, of what the invasion left behind: \"More serious for the post-war state of Iraq was the looting of cached weaponry and ordnance which fueled the subsequent insurgency. As many as 250,000 tons of explosives were unaccounted for by October 2004.\" `enabled` and not `caused`: what the article puts on the invasion is the means — the unguarded depots — and not the motive. The same article makes the same kind of claim about the force level, which \"proved to be short-sighted ... due to the requirement for a much larger force to combat the irregular Iraqi forces in the Iraqi insurgency\". Probable: Wikipedia alone.",
+  "explanation": "The article, on what the invasion left behind: \"More serious for the post-war state of Iraq was the looting of cached weaponry and ordnance which fueled the subsequent insurgency. As many as 250,000 tons of explosives were unaccounted for by October 2004.\" The edge is `enabled`, which says the invasion made the insurgency possible without causing it. The article puts the means on the invasion, the unguarded depots, and says nothing about the motive. It makes the same kind of claim about the force level, which \"proved to be short-sighted ... due to the requirement for a much larger force to combat the irregular Iraqi forces in the Iraqi insurgency\". The confidence is `probable` because the only source is Wikipedia.",
   "dispute": null
 }

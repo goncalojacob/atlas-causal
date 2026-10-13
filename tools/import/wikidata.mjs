@@ -49,7 +49,7 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createRegionDeriver, haversineKm } from '../../src/util/geo.js';
-import { astronomicalBounds } from '../../src/util/dates.js';
+import { astronomicalBounds, toAstronomical, fromAstronomical } from '../../src/util/dates.js';
 import { PROVENANCE_SENTENCES } from '../../src/summary.js';
 import { handWritten, isReviewed, REVIEW_STATUS } from '../../src/origin.js';
 import { IMPORT_KINDS } from '../../src/kinds.js';
@@ -324,16 +324,28 @@ export function claimIds(entity, property) {
 }
 
 // Wikidata times are "+1974-04-25T00:00:00Z" with a precision: 11 is a day,
-// 10 a month, 9 a year, and anything coarser is a century or worse, which
-// this atlas has no interval for and drops rather than rounding.
+// 10 a month, 9 a year, 8 a decade and 7 a century. A millennium or coarser
+// has no place on the timeline and is dropped rather than rounded.
+//
+// M92. A decade or a century is a range of years and carries no date. The
+// range is the year the time string carries and the nine or ninety-nine years
+// after it. Wikidata normalises a century to its first year, so "+1500" at
+// precision 7 is the century 1500 to 1599, and that reading is kept here
+// rather than second-guessed. The years are counted without a year zero, so
+// "-0500" at precision 7 is 500 to 401 BCE.
+const RANGE_YEARS = Object.freeze({ 7: 99, 8: 9 });
+
 export function parseTime(value) {
   const time = value?.time;
   const precision = value?.precision;
-  if (typeof time !== 'string' || !Number.isInteger(precision) || precision < 9) return null;
+  if (typeof time !== 'string' || !Number.isInteger(precision) || precision < 7) return null;
   const m = /^([+-])(\d{4,16})-(\d{2})-(\d{2})T/.exec(time);
   if (!m) return null;
   const year = Number(m[2]) * (m[1] === '-' ? -1 : 1);
   if (!Number.isInteger(year) || year === 0) return null;
+  if (precision in RANGE_YEARS) {
+    return { year, date: null, range: { min: year, max: fromAstronomical(toAstronomical(year) + RANGE_YEARS[precision]) } };
+  }
   const yyyy = `${m[1] === '-' ? '-' : ''}${m[2].replace(/^0+(?=\d{4})/, '')}`;
   if (precision === 9) return { year, date: null };
   if (precision === 10) return { year, date: `${yyyy}-${m[3]}` };
@@ -356,7 +368,9 @@ export function datedClaims(entity, property) {
   return statements(entity, property).map((s) => {
     const value = s.mainsnak.datavalue?.value;
     const parsed = parseTime(value);
-    if (!parsed) return null;
+    // A decade or a century is a range (M92), and a range does not settle
+    // which year a polity began or ended, so --dates still leaves it out.
+    if (!parsed || parsed.range) return null;
     const precision = value.precision;
     return { ...parsed, precision, precisionLabel: PRECISION_NAMES[precision] ?? `precision ${precision}` };
   }).filter(Boolean);
@@ -512,10 +526,31 @@ function pickTimes(kind, times) {
   return { from: point, to: point };
 }
 
+// A parsed time as an interval bound: the year, or the { min, max } range a
+// decade or a century reads as (M92).
+const boundOf = (t) => (t.range ? { ...t.range } : t.year);
+const lowOf = (b) => (Number.isInteger(b) ? b : b.min);
+const highOf = (b) => (Number.isInteger(b) ? b : b.max);
+const tidy = (b) => (b.min === b.max ? b.min : b);
+
 export function intervalFor(kind, times) {
   const pick = pickTimes(kind, times);
   if (!pick.from) return null;
-  const when = { start: pick.from.year, end: pick.to ? pick.to.year : null };
+  const when = { start: boundOf(pick.from), end: pick.to ? boundOf(pick.to) : null };
+  // M92. A range at one end and a year inside it at the other would make an
+  // interval rule 15 refuses, because its end can fall before its start. An
+  // event cannot end before it begins, so the range is narrowed to the years
+  // both ends allow: a start no later than the latest end, an end no earlier
+  // than the earliest start. Where nothing is left the interval is returned as
+  // it stands, as a year pair that runs backwards always was.
+  if (when.end !== null && (!Number.isInteger(when.start) || !Number.isInteger(when.end))) {
+    const start = { min: lowOf(when.start), max: Math.min(highOf(when.start), highOf(when.end)) };
+    const end = { min: Math.max(lowOf(when.end), lowOf(when.start)), max: highOf(when.end) };
+    if (start.min <= start.max && end.min <= end.max) {
+      when.start = tidy(start);
+      when.end = tidy(end);
+    }
+  }
   // An actor's span is years and nothing finer. The exact date is not left
   // off because the schema forbids it — common/interval.json allows `date` on
   // any interval — but because an actor record has nowhere to keep it: the
@@ -884,8 +919,12 @@ export const COUNTRY_DISTANCE_KM = 1000;
 
 export function countryRefusal({ when, country, countryCount = 1, chainPoints = [] } = {}) {
   if (!country) return 'the item names no country with a point';
-  const start = Number.isInteger(when?.start) ? when.start : null;
-  const end = Number.isInteger(when?.end) ? when.end : start;
+  // M92: a ranged bound is read at its widest, the earliest start and the
+  // latest end, so a century-dated event is refused only when no year of it
+  // could fit the country.
+  const start = Number.isInteger(when?.start) ? when.start : Number.isInteger(when?.start?.min) ? when.start.min : null;
+  const latestStart = Number.isInteger(when?.start?.max) ? when.start.max : start;
+  const end = Number.isInteger(when?.end) ? when.end : Number.isInteger(when?.end?.max) ? when.end.max : latestStart;
   if (start !== null && Number.isInteger(country.inception) && end !== null && country.inception > end) {
     return `the country's inception (${country.inception}) is after the event ended (${end})`;
   }
@@ -1210,7 +1249,9 @@ export function datesMatch(record, read, kind, tolerance = DATE_TOLERANCE) {
   if (mine === null) return true;
   const when = intervalFor(kind, read.times);
   if (!when) return false;
-  return Math.abs(when.start - mine) <= tolerance;
+  // M92: a ranged start is compared by its earliest year, as `startYear` reads
+  // the record's own.
+  return Math.abs(startYear(when) - mine) <= tolerance;
 }
 
 // → { certain, candidates, why }. `candidates` is what survived; certain
@@ -1607,8 +1648,10 @@ export async function eventPlace(read, {
         when,
         country: gateCandidate?.point ? {
           point: gateCandidate.point,
-          inception: claimTimes(gateEntity, PROPERTIES.inception)[0]?.year ?? null,
-          dissolution: claimTimes(gateEntity, PROPERTIES.dissolved)[0]?.year ?? null,
+          // M92: a country dated to a decade or a century is read at its
+          // widest, so the gate refuses only what no year of the range allows.
+          inception: (([t]) => t?.range?.min ?? t?.year ?? null)(claimTimes(gateEntity, PROPERTIES.inception)),
+          dissolution: (([t]) => t?.range?.max ?? t?.year ?? null)(claimTimes(gateEntity, PROPERTIES.dissolved)),
         } : null,
         // Refusal 2 is about `P17`'s alphabetical accident — the chain taking
         // the first of nine — so it is counted over the property that named
@@ -2083,7 +2126,15 @@ export function considered(reads, rejected = [], { kind = null, shown = AMBIGUOU
 }
 
 const years = (when) => {
-  if (!when || !Number.isInteger(when.start)) return 'no date';
+  if (!when) return 'no date';
+  if (!Number.isInteger(when.start) || (when.end !== null && when.end !== undefined && !Number.isInteger(when.end))) {
+    // M92: a decade or a century, written as its range of years.
+    const bound = (b) => (Number.isInteger(b) ? `${b}` : Number.isInteger(b?.min) && Number.isInteger(b?.max) ? `${b.min}–${b.max}` : null);
+    const start = bound(when.start);
+    if (start === null) return 'no date';
+    if (when.end === null || when.end === undefined) return `${start} –`;
+    return `${start} – ${bound(when.end) ?? '?'}`;
+  }
   if (when.end === null || when.end === undefined) return `${when.start}–`;
   return when.start === when.end ? `${when.start}` : `${when.start}–${when.end}`;
 };

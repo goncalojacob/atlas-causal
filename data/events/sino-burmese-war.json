@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "sino-burmese-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3237019",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Sino-Burmese War",
+    "pt": "Guerra sino-birmanesa (1765–1769)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3237019"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sino-Burmese War\", revision 1378638379"
+    }
+  ],
+  "title": "Sino-Burmese War",
+  "summary": "The English Wikipedia article \"Sino-Burmese War\", at revision 1378638379, opens: \"The Sino-Burmese War, also known as the Qing invasions of Burma or the Myanmar campaign of the Qing dynasty, was a war fought between the Qing dynasty of China and the Konbaung dynasty of Burma (Myanmar). The Qing under the Qianlong Emperor launched four invasions of Burma between 1765 and 1769, which were considered one of his Ten Great Campaigns. Nonetheless, the war, which claimed the lives of over 70,000 Qing soldiers and four commanders, is sometimes described as \"the most disastrous frontier war that the Qing dynasty had ever waged\", and one that \"assured Burmese independence\". Burma's successful defense laid the foundation for the present-day boundary between the two countries.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3237019, imported by tools/import/wikidata.mjs. The item's own description reads \"1765 Qing-Konbaung conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1765,
+    "end": 1769,
+    "date": "1765-12",
+    "endDate": "1769-12-22"
+  },
+  "place": "inwa",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

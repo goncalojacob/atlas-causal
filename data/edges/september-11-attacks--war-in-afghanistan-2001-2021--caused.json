@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "september-11-attacks--war-in-afghanistan-2001-2021--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"September 11 attacks\", revision 1379360542"
+    }
+  ],
+  "from": "september-11-attacks",
+  "to": "war-in-afghanistan-2001-2021",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article \"September 11 attacks\" (revision 1379360542) states: \"The September 11 attacks also led to the U.S. wars in Afghanistan and Iraq, as well as additional homeland security spending, totaling at least US$5 trillion.\" The attacks are this record's own subject and the war in Afghanistan is one of the two wars the sentence names as what they led to.",
+  "dispute": null
+}

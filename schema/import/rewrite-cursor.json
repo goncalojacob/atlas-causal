@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "import/rewrite-cursor.json",
+  "title": "Rewrite cursor",
+  "description": "Which records the rewriter has already been through. The rewriter reads every record's own prose and writes it again in plainer words, a batch at a time, over many runs. A run is cut off without warning, so the only place that survives it is the repository, and the cursor is committed with each batch. It is not a record and asserts nothing about the world. It says what has been read and nothing about whether a person has signed it, which is `review.status` on the record itself. Written by the rewriter, never by hand.",
+  "type": "object",
+  "required": ["schema", "kind", "done", "left"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": 1 },
+    "kind": { "const": "rewrite-cursor" },
+    "done": {
+      "description": "Each record the rewriter has rewritten, and the day it did. Keyed by record id.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+      }
+    },
+    "left": {
+      "description": "Each record the rewriter read and left as it was, and one line saying why. A text that cannot be made plainer without losing a fact stays as it is, and this is where the rewriter says so, so that the next run does not read it again.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 400
+      }
+    }
+  }
+}

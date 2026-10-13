@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "second-battle-of-colenso",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "The other half of the same sentence: Buller changed his plan \"on hearing that Gatacre and Methuen had been defeated at the battles of Stormberg and Magersfontein\". Magersfontein was fought on 11 December 1899 and Colenso on the 15th, and the Magersfontein article's own lead says what Methuen was doing when he was stopped — \"advancing north along the railway line from the Cape to relieve the siege of Kimberley\". Two defeats, one decision, and this atlas holds both defeats, so both are written rather than one standing for the pair. `probable` (rule 22).",
+  "explanation": "The other half of the same sentence: Buller changed his plan \"on hearing that Gatacre and Methuen had been defeated at the battles of Stormberg and Magersfontein\". Magersfontein was fought on 11 December 1899 and Colenso on the 15th, and the Magersfontein article's own lead says what Methuen was doing when he was stopped: \"advancing north along the railway line from the Cape to relieve the siege of Kimberley\". Two defeats, one decision, and this atlas holds both defeats, so each is an edge of its own here. `probable` (rule 22).",
   "dispute": null
 }

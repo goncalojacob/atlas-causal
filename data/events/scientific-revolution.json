@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "scientific-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q214078",
+  "sitelinks": {
+    "count": 74,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Scientific Revolution",
+    "pt": "Revolução Científica"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q214078"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Scientific Revolution\", revision 1379780483"
+    }
+  ],
+  "title": "Scientific Revolution",
+  "summary": "The English Wikipedia article \"Scientific Revolution\", at revision 1379780483, opens: \"The Scientific Revolution of the 16th and 17th centuries in Europe was an irreversible break with the natural philosophy that had preceded it, fundamentally changing how the natural world was investigated and understood. The New Science that emerged departed from previous Greek conceptions and traditions, was more mechanistic in its worldview and more integrated with mathematics, and was focused on the acquisition and interpretation of new evidence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q214078, imported by tools/import/wikidata.mjs. The item's own description reads \"events that marked the emergence of modern science in the early modern period\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1543,
+    "end": 1687
+  },
+  "place": "europe",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -223,9 +223,10 @@ export function verdictForEdge(edge, {
 // forwards. `whenOf` is a function from a record id to its `when`, and `ids`
 // is every record id the atlas holds.
 //
-// The arrow is rule 4's own comparison, in its coarse half — a `from` whose
-// earliest start is after the `to`'s latest is the error rule 4 raises — plus
-// the day where both ends give one in the same single year. Rule 4's calendar
+// The arrow is rule 4's comparison read on the earliest start at both ends,
+// plus the day where both ends give one in the same single year. Rule 4's
+// coarse half compares the `from`'s earliest start with the `to`'s latest.
+// The two agree wherever both starts are years (M92). Rule 4's calendar
 // clause is not repeated: without it this is the stricter of the two, and
 // being stricter here refuses an edge and never writes a wrong one.
 //
@@ -254,7 +255,11 @@ export function writeVerdictFor(edge, { from, to, whenOf = () => null, ids = new
   const one = start(a);
   const two = start(b);
   if (one && two) {
-    if (one.min > two.max) {
+    // M92. A decade or a century is a { min, max } start, and the min is read
+    // as the start at both ends: an edge into a range that may begin before
+    // its cause is refused. This is stricter than rule 4's coarse half, which
+    // compares against the max, and stricter only ever refuses an edge.
+    if (one.min > two.min) {
       return refuse('arrow-of-time', `"${from}" cannot start after "${to}" (rule 4)`);
     }
     const sameYear = one.min === one.max && two.min === two.max && one.min === two.min;

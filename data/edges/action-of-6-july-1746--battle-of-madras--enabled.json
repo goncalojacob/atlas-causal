@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "battle-of-madras",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "Both articles state the same mechanism and neither of them states it as a sequence of dates. The Madras article's background: “After fighting an inconclusive battle the two fleets withdrew to repair, with the British retreating to Ceylon and the French using their base at Pondicherry. Wary of fighting another major naval battle – the British commander, Edward Peyton, chose to stay away from the Coramandel coast and withdrew to the safety of Bengal, leaving the British settlements on the Coramandel badly exposed to the French. The French Governor of Pondicherry Dupleix authorised an attack on Madras.” The action's own article says the other half: “La Bourdonnais acquired additional guns at Pondicherry, and when the fleets met again in August 1746, Peyton refused battle and retreated to Bengal. La Bourdonnais then proceeded to lead the successful French attack on Madras in September.” An indecisive engagement that sent one fleet to Bengal and left the other repairing and rearming at Pondicherry is what left Madras open from the sea; `enabled` rather than `caused`, because the decision to attack was Dupleix's and the article says so in the same paragraph. Probable: Wikipedia alone.",
+  "explanation": "Both articles state the same mechanism, and neither states it as a sequence of dates. The Madras article's background: “After fighting an inconclusive battle the two fleets withdrew to repair, with the British retreating to Ceylon and the French using their base at Pondicherry. Wary of fighting another major naval battle – the British commander, Edward Peyton, chose to stay away from the Coramandel coast and withdrew to the safety of Bengal, leaving the British settlements on the Coramandel badly exposed to the French. The French Governor of Pondicherry Dupleix authorised an attack on Madras.” The action's own article says the other half: “La Bourdonnais acquired additional guns at Pondicherry, and when the fleets met again in August 1746, Peyton refused battle and retreated to Bengal. La Bourdonnais then proceeded to lead the successful French attack on Madras in September.” An indecisive engagement sent one fleet to Bengal and left the other repairing and rearming at Pondicherry, and that is what left Madras open from the sea. The type is `enabled` rather than `caused`, because the decision to attack was Dupleix's and the article says so in the same paragraph. The confidence is probable, on Wikipedia alone.",
   "dispute": null
 }

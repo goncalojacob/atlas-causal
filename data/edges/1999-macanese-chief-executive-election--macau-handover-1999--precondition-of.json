@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -33,6 +33,6 @@
   "to": "macau-handover-1999",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The transfer of 20 December 1999 handed the territory to a government, not to a vacancy, and that government had to exist before midnight. The joint declaration of 1987 provided for a Chief Executive chosen locally by a committee, and the choice of 15 May is what filled the post: from that day the region had a designated head, an administration in formation and a legal continuity to hand over into. The edge is `precondition-of` rather than `caused` because the handover's date and terms were fixed twelve years earlier and nothing about this ballot could have changed either.",
+  "explanation": "The transfer of 20 December 1999 handed the territory to a government, and that government had to exist before midnight. The joint declaration of 1987 provided for a Chief Executive chosen locally by a committee, and the choice of 15 May filled the post. From that day the region had a designated head, an administration being formed and a legal continuity to hand over into. The edge is `precondition-of` rather than `caused` because the handover's date and terms were fixed twelve years earlier, and nothing about this ballot could have changed either.",
   "dispute": null
 }
