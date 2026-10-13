@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "french-wars-of-religion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q673175",
+  "sitelinks": {
+    "count": 56,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "French Wars of Religion",
+    "pt": "Guerras religiosas na França"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q673175"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French Wars of Religion\", revision 1375764414"
+    }
+  ],
+  "title": "French Wars of Religion",
+  "summary": "The English Wikipedia article \"French Wars of Religion\", at revision 1375764414, opens: \"The French Wars of Religion were a series of civil wars between French Catholics and Protestants from 1562 to 1598. Between two and four million people died from violence, famine or disease directly caused by the conflict, and it severely damaged the power of the French monarchy. The fighting ended with a compromise in 1598, when Henry of Navarre, who converted to Catholicism in 1593, was proclaimed King Henry IV of France and issued the Edict of Nantes, which granted substantial rights and freedoms to the Huguenots. However, Catholics continued to disapprove of Protestants and of Henry, and his assassination in 1610 triggered a fresh round of Huguenot rebellions in the 1620s.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q673175, imported by tools/import/wikidata.mjs. The item's own description reads \"religious and military conflicts between Protestants and Catholics in France from 1562 to 1598\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1562,
+    "end": 1598,
+    "date": "1562-04-02",
+    "endDate": "1598-04-30"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
