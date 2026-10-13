@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-08",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -37,5 +37,5 @@
   "to": "crisis-portugal",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "This is the argument Ricardo Reis makes about the Portuguese slump: that the capital which flowed in after the escudo was fixed and the euro adopted went disproportionately into non-tradable sectors, that productivity did not follow it, and that the debt built in those years is what made the country unable to refinance itself when lending stopped in 2010. The atlas already draws the same line from the euro to the bailout of 2011; drawn here it says the same thing one step earlier, at the crisis rather than at the rescue. Probable, not consensus: the weight the euro decade carries against the recession of 2008 is a live argument among economists, and this record was drafted without reading either side at length."
+  "explanation": "This is the argument Ricardo Reis makes about the Portuguese slump. The capital that flowed in after Portugal fixed the escudo and adopted the euro went out of proportion into sectors that do not export. Productivity did not follow it. The debt built in those years is what left the country unable to refinance itself when lending stopped in 2010. The atlas already draws the same line from the euro to the bailout of 2011. Drawn here it says the same thing one step earlier, at the crisis instead of the rescue. The confidence is `probable`. How much weight the euro decade carries against the recession of 2008 is a live argument among economists, and this record's drafter did not read either side at length."
 }

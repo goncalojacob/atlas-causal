@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-04",
-  "revised": null,
+  "revised": "2026-10-13",
   "origin": {
     "tool": "assistant"
   },
@@ -33,6 +33,6 @@
   "to": "hat-nipah-and-same-massacres",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The landing at Dili on 7 December 1975 opened a war in the interior that lasted a quarter of a century, and these killings are dated to its fifth and sixth weeks, in towns south of the capital along the line the occupation was pushing inland. The edge argues the circumstance and not the hand: without the invasion there is no war in the interior of Timor in January 1976, and the atlas does not yet hold enough about Hat Nipah and Same to say more than that. It is the weakest link this run wrote, and it is written as `enabled` rather than `caused` for that reason.",
+  "explanation": "The landing at Dili on 7 December 1975 opened a war in the interior that lasted a quarter of a century. These killings are dated to its fifth and sixth weeks, in towns south of the capital along the line the occupation was pushing inland. The edge argues the circumstance and leaves the hand open. Without the invasion there is no war in the interior of Timor in January 1976, and the atlas does not yet hold enough about Hat Nipah and Same to say more than that. It is the weakest link this run wrote, and the type is `enabled` for that reason.",
   "dispute": null
 }

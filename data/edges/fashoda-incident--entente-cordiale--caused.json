@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-01",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft"
   },
@@ -31,6 +31,6 @@
   "to": "entente-cordiale",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "Two articles at two revisions, saying the same thing at two strengths. The article of the partition states it as a cause: \"The Fashoda Incident ultimately led to the signature of the Entente Cordiale of 1904, which guaranteed peace between the two.\" The incident's own article attributes the reading to the historians rather than asserting it: \"The Fashoda Incident was the last serious colonial dispute between Britain and France, and its classic diplomatic solution is considered by most historians to be the precursor of the Entente Cordiale of 1904.\" `probable` rather than `consensus`, because both witnesses are Wikipedia records and neither is the work either of them rests on.",
+  "explanation": "Two articles at two revisions say the same thing at two strengths. The article of the partition states it as a cause: \"The Fashoda Incident ultimately led to the signature of the Entente Cordiale of 1904, which guaranteed peace between the two.\" The incident's own article gives the reading to the historians instead of asserting it: \"The Fashoda Incident was the last serious colonial dispute between Britain and France, and its classic diplomatic solution is considered by most historians to be the precursor of the Entente Cordiale of 1904.\" The confidence is `probable`, because both witnesses are Wikipedia records and neither is the work either of them rests on.",
   "dispute": null
 }

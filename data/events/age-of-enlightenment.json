@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "age-of-enlightenment",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q12539",
+  "sitelinks": {
+    "count": 142,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Age of Enlightenment",
+    "pt": "Iluminismo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q12539"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Age of Enlightenment\", revision 1379866058"
+    }
+  ],
+  "title": "Age of Enlightenment",
+  "summary": "The English Wikipedia article \"Age of Enlightenment\", at revision 1379866058, opens: \"The Age of Enlightenment, also known as the Age of Reason or simply the Enlightenment, was a period of intellectual and cultural flourishing in Europe and Western civilization, emerging in the late 17th century in Western Europe. It reached its peak in the 18th century as its ideas spread more widely across Europe and into the European colonies in the Americas and Oceania. Characterized by an emphasis on reason, empirical evidence, and the scientific method, the Enlightenment promoted ideals of individual liberty, religious tolerance, progress, and natural rights. Its thinkers advocated for constitutional government, the separation of church and state, and the application of rational principles to social and political reform.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q12539, imported by tools/import/wikidata.mjs. The item's own description reads \"period of European history and cultural movement of the 17th and 18th centuries\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1700,
+      "max": 1799
+    },
+    "end": {
+      "min": 1820,
+      "max": 1919
+    }
+  },
+  "place": "western-europe",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

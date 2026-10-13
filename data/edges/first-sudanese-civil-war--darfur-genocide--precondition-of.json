@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "darfur-genocide",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The genocide’s own article, on where the marginalisation came from: “After Sudan gained independence from the United Kingdom in 1956, various conflicts broke out across the country, including the First Sudanese Civil War between the Arab-dominated northern government and the predominantly Black and Christian populations in the south. The 11-year conflict displaced more than a million people … These conflicts, combined with limited state investment in western regions such as Darfur, increased the feelings of marginalization within some local communities.” The article gives environmental change the first place among the causes and this the second; the edge takes the second and claims no more than the article does for it, which is why the type is `precondition-of`.",
+  "explanation": "The genocide’s own article, on where the marginalisation came from: “After Sudan gained independence from the United Kingdom in 1956, various conflicts broke out across the country, including the First Sudanese Civil War between the Arab-dominated northern government and the predominantly Black and Christian populations in the south. The 11-year conflict displaced more than a million people … These conflicts, combined with limited state investment in western regions such as Darfur, increased the feelings of marginalization within some local communities.” The article gives environmental change the first place among the causes and this the second. The edge takes the second and claims no more than the article does for it, which is why the type is `precondition-of`.",
   "dispute": null
 }

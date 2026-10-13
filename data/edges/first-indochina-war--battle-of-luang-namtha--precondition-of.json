@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-12",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -35,6 +35,6 @@
   "to": "battle-of-luang-namtha",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The article \"Battle of Luang Namtha\" (revision 1379293458) states: \"It came about as a result of the turmoil following Laotian independence as a result of the First Indochina War with France.\" The sentence names the war as the far end of that chain and the independence and the turmoil as the steps between, neither of which this atlas holds as a record; the edge therefore takes the weaker reading, `precondition-of`, and not `caused`.",
+  "explanation": "The article \"Battle of Luang Namtha\" (revision 1379293458) states: \"It came about as a result of the turmoil following Laotian independence as a result of the First Indochina War with France.\" The sentence names the war as the far end of that chain, and the independence and the turmoil as the steps between. This atlas holds neither step as a record, so the edge takes the weaker reading, `precondition-of`.",
   "dispute": null
 }

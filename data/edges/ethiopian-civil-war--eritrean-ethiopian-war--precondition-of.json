@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "eritrean-ethiopian-war",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The same sentence carries the other half: the civil war \"also began on 12 September 1974… Both conflicts lasted until 1991 when the EPRDF – a coalition of rebel groups led by the TPLF – overthrew the Derg government, and installed a transitional government in the Ethiopian capital Addis Ababa. **During the civil war, the groups fighting the Derg** \" were allies, and the governments of 1998 on both sides of the border are the two that won it. The edge is `precondition-of` and claims no motive: the article gives the war's own cause as the border and Badme, not as anything the civil war decided.",
+  "explanation": "The same sentence carries the other half. The civil war \"also began on 12 September 1974… Both conflicts lasted until 1991 when the EPRDF – a coalition of rebel groups led by the TPLF – overthrew the Derg government, and installed a transitional government in the Ethiopian capital Addis Ababa. **During the civil war, the groups fighting the Derg** \" were allies. The governments of 1998 on both sides of the border are the two that won the civil war. The type is `precondition-of`, and the edge claims no motive. The article gives the later war's own cause as the border and Badme, and it gives nothing the civil war decided.",
   "dispute": null
 }

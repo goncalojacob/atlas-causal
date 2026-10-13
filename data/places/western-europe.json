@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "western-europe",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q27496",
+  "sitelinks": {
+    "count": 144,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Western Europe",
+    "pt": "Europa Ocidental"
+  },
+  "sources": [],
+  "names": [
+    "Western Europe",
+    "Europa Ocidental"
+  ],
+  "where": {
+    "lon": 2.536919,
+    "lat": 47.409273,
+    "precision": "region",
+    "label": "Western Europe"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

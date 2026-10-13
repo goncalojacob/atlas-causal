@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "2024-lebanon-electronic-device-attacks",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The attacks belong to a front the Gaza war opened, and the article says so at both ends: the background has \"Shortly after the onset of the Gaza war in October 2023, Hezbollah joined the conflict, citing solidarity with Palestinians. This quickly escalated into regular cross-border military exchanges between Hezbollah and Israel, impacting northern Israel, southern Lebanon and the Golan Heights\", and the lead calls the explosions \"Hezbollah's biggest security breach since the start of the Israel–Hezbollah conflict in October 2023\". Probable: Wikipedia alone.",
+  "explanation": "The attacks belong to a front the Gaza war opened, and the article says so at both ends. The background has \"Shortly after the onset of the Gaza war in October 2023, Hezbollah joined the conflict, citing solidarity with Palestinians. This quickly escalated into regular cross-border military exchanges between Hezbollah and Israel, impacting northern Israel, southern Lebanon and the Golan Heights\". The lead calls the explosions \"Hezbollah's biggest security breach since the start of the Israel–Hezbollah conflict in October 2023\". The confidence is `probable`, because Wikipedia is the only source.",
   "dispute": null
 }

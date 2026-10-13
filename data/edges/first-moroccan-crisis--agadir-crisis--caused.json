@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-02",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -31,7 +31,7 @@
   "to": "agadir-crisis",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The first crisis is what the article gives as the reason the second one happened. “First Moroccan Crisis”, at revision 1370619540, § Consequence: “Kaiser Wilhelm II was angry at being humiliated and was determined not to back down again, which led to the German involvement in the Agadir Crisis (Second Moroccan Crisis).” That is a stated cause and not an order of events: the article names the disposition the first crisis left and says it is what led to the second. The far end’s own article agrees about the sequence — “Agadir Crisis”, § Background: “France’s pre-eminence in Morocco had been upheld by the 1906 Algeciras Conference, following the First Moroccan Crisis of 1905–06” — but states no cause there, so the citation is the first article and not that sentence. `probable` under rule 22.",
+  "explanation": "The first crisis is what the article gives as the reason the second one happened. “First Moroccan Crisis”, at revision 1370619540, § Consequence: “Kaiser Wilhelm II was angry at being humiliated and was determined not to back down again, which led to the German involvement in the Agadir Crisis (Second Moroccan Crisis).” That is a stated cause. The article names the disposition the first crisis left and says it is what led to the second. The far end’s own article agrees about the sequence. “Agadir Crisis”, § Background, reads: “France’s pre-eminence in Morocco had been upheld by the 1906 Algeciras Conference, following the First Moroccan Crisis of 1905–06”. It states no cause there, so the citation is the first article and not that sentence. The confidence is `probable` under rule 22.",
   "dispute": null,
   "origin": {
     "tool": "assistant"

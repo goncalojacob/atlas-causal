@@ -364,3 +364,16 @@ are children of the main events."* The assistant applied it in four places:
 The owner also has cloud credits to spend (*"I also have cloud credit
 sessions that you are free to use"*). The planner fires four times a day and
 the writers take ten items a fire.
+
+14. From the planner's fires of 13 October (`docs/plans/2026-10-13-*.md`),
+    three decisions that are yours. (a) The import's class table marks
+    Q718893, "theatre of war", as a place, so the Pacific War and the other
+    theatres and fronts of the two world wars cannot enter as events, though
+    the atlas already holds the Eastern Front as one. May a theatre of war
+    be an event? (b) The labels for spans of time (the early modern period,
+    the modern era, the late modern period, contemporary history) are not
+    events on the planner's reading and stay out. Do you want them as
+    umbrellas? (c) Three vital articles are held under their own titles with
+    no Wikidata id (the Industrial Revolution, the Haitian Revolution, the
+    Spanish-American War), so every fire reads them as absent until a
+    curation pass writes the id on the record.

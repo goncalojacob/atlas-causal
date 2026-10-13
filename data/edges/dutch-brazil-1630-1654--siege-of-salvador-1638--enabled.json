@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -41,6 +41,6 @@
   "to": "siege-of-salvador-1638",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The siege article names the colony as the thing that mounted it: \"The governor of the Dutch colony in Brazil, John Maurice, Prince of Nassau-Siegen, commanding the army of the Dutch West India Company, with vastly superior forces and a supporting fleet under Johan van der Mast, put the city of Salvador under siege.\" The 1640 action's article calls the same event \"John Maurits of Nassau's attack over Bahia\". `enabled`: the colony and its army are what made a march on Salvador possible from Pernambuco, and neither article says the colony's existence obliged it. Probable: Wikipedia alone, at two revisions.",
+  "explanation": "The siege article names the colony as what mounted the siege: \"The governor of the Dutch colony in Brazil, John Maurice, Prince of Nassau-Siegen, commanding the army of the Dutch West India Company, with vastly superior forces and a supporting fleet under Johan van der Mast, put the city of Salvador under siege.\" The 1640 action's article calls the same event \"John Maurits of Nassau's attack over Bahia\". The type is `enabled`. The colony and its army made a march on Salvador possible from Pernambuco, and neither article says the colony's existence obliged it. The confidence is `probable`, because Wikipedia is the only source, at two revisions.",
   "dispute": null
 }
