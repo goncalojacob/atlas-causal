@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "meiji-restoration",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q8707",
+  "sitelinks": {
+    "count": 113,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Meiji Restoration",
+    "pt": "Restauração Meiji"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8707"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Meiji Restoration\", revision 1377201892"
+    }
+  ],
+  "title": "Meiji Restoration",
+  "summary": "The English Wikipedia article \"Meiji Restoration\", at revision 1377201892, opens: \"The Meiji Restoration , referred to at the time as the Honorable Restoration , was a political event that restored imperial rule to Japan in 1868 under Emperor Meiji and led to the Westernisation of Japan. Although there were ruling emperors before the Meiji Restoration, the events restored practical power to, and consolidated the political system under, the Emperor of Japan. The Restoration led to enormous changes in Japan's political and social structure and spanned both the late Edo period and the beginning of the Meiji era, during which time Japan rapidly industrialised and adopted Western ideas, production methods and technology.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q8707, imported by tools/import/wikidata.mjs. The item's own description reads \"reform restoring the imperial rule in Japan in the last third of the 19th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1889,
+    "endDate": "1889-02-11"
+  },
+  "place": "empire-of-japan",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

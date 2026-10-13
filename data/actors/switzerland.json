@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -51,7 +51,7 @@
   "names": [
     "Switzerland"
   ],
-  "summary": "Approximately 41,291 km² and about 9.1 million people (2025), from Wikidata's Q39 (P2046, P1082). The English Wikipedia article \"Switzerland\", at revision 1376088977, opens: \"Switzerland, officially the Swiss Confederation, is a landlocked country located at the intersection of Central, Western, and Southern Europe. It is bordered by Germany to the north, France to the west, Austria and Liechtenstein to the east, and Italy to the south. Switzerland is geographically divided among the Swiss Alps, the Swiss Plateau, and the Jura Mountains; the Alps cover most of the country's territory, whereas the majority of its 9 million people are concentrated on the plateau, which hosts many of the largest cities and economic centres, including Zurich, Geneva, Basel, Bern, Lausanne, Winterthur, and Lucerne.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 225 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Bern. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 41,291 km² and about 9.1 million people (2025), from Wikidata's Q39 (P2046, P1082). The English Wikipedia article \"Switzerland\", at revision 1376088977, opens: \"Switzerland, officially the Swiss Confederation, is a landlocked country located at the intersection of Central, Western, and Southern Europe. It is bordered by Germany to the north, France to the west, Austria and Liechtenstein to the east, and Italy to the south. Switzerland is geographically divided among the Swiss Alps, the Swiss Plateau, and the Jura Mountains; the Alps cover most of the country's territory, whereas the majority of its 9 million people are concentrated on the plateau, which hosts many of the largest cities and economic centres, including Zurich, Geneva, Basel, Bern, Lausanne, Winterthur, and Lucerne.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 225 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1886 to where the dataset stops, in 2019. Its last capital in the dataset is Bern. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1886,
     "end": null

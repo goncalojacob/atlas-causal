@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-tashihchiao",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Not a sequence but the same two armies: Tashihchiao's § Preparations by the Russians says the force that met the Japanese there was \"the 1st Siberian Army Corps under Lieutenant General Georg von Stackelberg (consisting of surviving forces from the disaster at Telissu, which had retreated north towards Liaoyang, but which had received new orders diverting them to Kaiping, which they occupied on 20 June 1904)\", and § Preparations by the Japanese says \"After the victory at the Battle of Telissu, General Oku rested for four days for re-supply\". Probable: Wikipedia alone.",
+  "explanation": "The two battles share the same two armies. Tashihchiao's § Preparations by the Russians says the force that met the Japanese there was \"the 1st Siberian Army Corps under Lieutenant General Georg von Stackelberg (consisting of surviving forces from the disaster at Telissu, which had retreated north towards Liaoyang, but which had received new orders diverting them to Kaiping, which they occupied on 20 June 1904)\", and § Preparations by the Japanese says \"After the victory at the Battle of Telissu, General Oku rested for four days for re-supply\". Probable, on Wikipedia alone.",
   "dispute": null
 }

@@ -13,7 +13,7 @@
   ],
   "license": "GPL-3.0-only",
   "created": "2026-09-16",
-  "revised": "2026-09-17",
+  "revised": "2026-10-13",
   "origin": {
     "tool": "basemaps"
   },
@@ -44,7 +44,7 @@
     "Kingdom of Prussia",
     "Prussia"
   ],
-  "summary": "A polity Historical Basemaps draws in the snapshots for 1530, 1600, 1650, 1700, 1715, 1783, 1800 and 1815 under the name \"Prussia\". That dataset is a set of world border snapshots from antiquity to the twentieth century; it is its authors’ work in progress and asks to be checked against other sources before use, and the span those snapshots cover — 1530 to 1877 — was this record’s interval until M55. It is now the Kingdom of Prussia’s own: Wikidata states P571 1701-01-18 and P576 1918-11-09 on Q27306, and neither of the old numbers was a claim about a polity beginning or ending. The snapshots before 1701 are `brandenburg-prussia`’s, and the one that begins in 1700 is cut at the kingdom’s inception. The kingdom outlives the German Empire’s founding by forty-seven years and ends on the same day as it, which is why no succession runs between them.",
+  "summary": "A polity Historical Basemaps draws in the snapshots for 1530, 1600, 1650, 1700, 1715, 1783, 1800 and 1815 under the name \"Prussia\". That dataset is a set of world border snapshots from antiquity to the twentieth century. It is its authors’ work in progress, and it asks to be checked against other sources before use. The span those snapshots cover is 1530 to 1877, which was this record’s interval until M55. It is now the Kingdom of Prussia’s own: Wikidata states P571 1701-01-18 and P576 1918-11-09 on Q27306, and neither of the old numbers was a claim about a polity beginning or ending. The snapshots before 1701 are `brandenburg-prussia`’s, and the one that begins in 1700 is cut at the kingdom’s inception. The kingdom outlives the German Empire’s founding by forty-seven years and ends on the same day as it, which is why no succession runs between them.",
   "when": {
     "start": 1701,
     "end": 1918

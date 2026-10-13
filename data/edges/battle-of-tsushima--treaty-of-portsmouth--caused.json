@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "treaty-of-portsmouth",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The battle’s own article puts the treaty on the other side of it: “The loss of almost every heavy warship of the Baltic Fleet forced Russia to sue for peace, and the Treaty of Portsmouth was signed in September 1905.” `caused`: the fleet Russia had sent round the world was destroyed in two days and there was nothing left to continue the naval war with, which is the article’s own reading of why the peace was asked for three months later.",
+  "explanation": "The battle’s own article puts the treaty on the other side of it: “The loss of almost every heavy warship of the Baltic Fleet forced Russia to sue for peace, and the Treaty of Portsmouth was signed in September 1905.” The type is `caused`. The fleet Russia had sent round the world was destroyed in two days and there was nothing left to continue the naval war with, which is the article’s own reading of why the peace was asked for three months later.",
   "dispute": null
 }

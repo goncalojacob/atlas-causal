@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-NC-SA-4.0",
   "created": "2026-09-02",
-  "revised": "2026-09-22",
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -51,7 +51,7 @@
   "names": [
     "Kuwait"
   ],
-  "summary": "Approximately 17,818 km² and about 4.5 million people (2020), from Wikidata's Q817 (P2046, P1082). The English Wikipedia article \"Kuwait\", at revision 1375859880, opens: \"Kuwait, officially the State of Kuwait, is a country in West Asia. With a coastline of approximately 500 km (311 mi), it is situated at the head of the Persian Gulf in the northeastern edge of the Arabian Peninsula, bordering Iraq to the north and Saudi Arabia to the south. Kuwait is geographically the second closest Gulf country to mainland Iran after Iraq.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 690 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1961 to where the dataset stops, in 2019. Its last capital in the dataset is Kuwait. This record was written by the import from those fields and asserts nothing the dataset does not.",
+  "summary": "Approximately 17,818 km² and about 4.5 million people (2020), from Wikidata's Q817 (P2046, P1082). The English Wikipedia article \"Kuwait\", at revision 1375859880, opens: \"Kuwait, officially the State of Kuwait, is a country in West Asia. With a coastline of approximately 500 km (311 mi), it is situated at the head of the Persian Gulf in the northeastern edge of the Arabian Peninsula, bordering Iraq to the north and Saudi Arabia to the south. Kuwait is geographically the second closest Gulf country to mainland Iran after Iraq.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Entity 690 in the Gleditsch–Ward state list, as mapped by CShapes 2.0, a dataset of the borders and capitals of states and dependencies between 1886 and 2019. The dataset gives it 1 period of territorial validity, from 1961 to where the dataset stops, in 2019. Its last capital in the dataset is Kuwait. The import wrote this record from those fields, and it asserts nothing the dataset does not.",
   "when": {
     "start": 1961,
     "end": null

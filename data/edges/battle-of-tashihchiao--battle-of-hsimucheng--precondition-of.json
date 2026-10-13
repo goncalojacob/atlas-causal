@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-hsimucheng",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The Hsimucheng article opens its prelude on the earlier battle and on why the Russians were where they were: \"Following its defeat at the Battle of Tashihchiao, the 2nd Siberian Corps under General Zasulich retreated to the village of Hsimungcheng. General Zasulich had a total of 33 battalions and 80 artillery pieces, but was in an exposed position in mountainous terrain.\" The sentence opens on \"Following\", which is A14 (4)'s refusal word, and then makes a claim the refusal class does not cover: it names the unit, the defeat and the retreat that put it on that ground. Probable: Wikipedia alone.",
+  "explanation": "The Hsimucheng article opens its prelude on the earlier battle and on why the Russians were where they were: \"Following its defeat at the Battle of Tashihchiao, the 2nd Siberian Corps under General Zasulich retreated to the village of Hsimungcheng. General Zasulich had a total of 33 battalions and 80 artillery pieces, but was in an exposed position in mountainous terrain.\" The sentence opens on \"Following\", the word review A14 (4) refuses an edge for on its own. It then makes a claim that refusal does not cover. It names the unit, the defeat and the retreat that put it on that ground. Probable, on Wikipedia alone.",
   "dispute": null
 }

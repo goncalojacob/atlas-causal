@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-01",
-  "revised": null,
+  "revised": "2026-10-13",
   "review": {
     "status": "draft",
     "flags": [
@@ -38,6 +38,6 @@
   "to": "battle-of-salta",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "Salta's own article states what the earlier victory gave Belgrano to fight with: \"Belgrano had taken advantage of the victory at Tucumán to reinforce his army. In four months he improved the discipline of his troops, improved training and recruited sufficient men so as to duplicate their numbers. The artillery abandoned by Tristán in the previous battle helped Belgrano to fill his lack of equipment.\" Tucumán's own article counts the same materiel from the other side — \"The materiel abandoned by the Spaniards —13 cannons, 358 muskets, 39 wagons, 70 ammunition boxes and 87 tents— would serve the Army of the North in the subsequent campaign\" — and names the march it paid for: \"Belgrano would gain Juan Antonio Álvarez de Arenales, with whom he would start on 12 January the march towards Salta, where the royalists had entrenched.\" `enabled` and not `caused`: what the two articles state is that the men and the guns Tucumán left behind are what went north, not that the first battle made the second one necessary.",
+  "explanation": "Salta's own article states what the earlier victory gave Belgrano to fight with: \"Belgrano had taken advantage of the victory at Tucumán to reinforce his army. In four months he improved the discipline of his troops, improved training and recruited sufficient men so as to duplicate their numbers. The artillery abandoned by Tristán in the previous battle helped Belgrano to fill his lack of equipment.\" Tucumán's own article counts the same materiel from the other side, saying that \"The materiel abandoned by the Spaniards —13 cannons, 358 muskets, 39 wagons, 70 ammunition boxes and 87 tents— would serve the Army of the North in the subsequent campaign\". It names the march it paid for: \"Belgrano would gain Juan Antonio Álvarez de Arenales, with whom he would start on 12 January the march towards Salta, where the royalists had entrenched.\" The type is `enabled`. The two articles state that the men and the guns Tucumán left behind are what went north. Neither states that the first battle made the second one necessary.",
   "dispute": null
 }

@@ -17,7 +17,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": "2026-09-23",
+  "revised": "2026-10-13",
   "origin": {
     "tool": "wikidata"
   },
@@ -49,7 +49,7 @@
   },
   "place": "cuba-q14905932",
   "region": "americas",
-  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "regionNote": "The Wikidata import wrote this lane, derived from its own point. This event points at no place record, so the timeline has nothing else to go on.",
   "actors": [],
   "parent": "cuban-revolution"
 }
