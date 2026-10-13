@@ -281,6 +281,9 @@ export function edgeRecord(edge, { from, to, writer, created }) {
 // The same arithmetic rule 24's warning uses, and `importSpan`'s in the
 // Wikidata import: a bound in historians' numbering turned into the pair of
 // astronomical years it covers, with an open end reaching forward for ever.
+// A { min, max } start, a decade or a century (M92), is read at its min, so
+// the parent check in `parentVerdict` asks whether the earliest year the
+// child may start is inside the parent's span.
 export function spanOf(when) {
   if (!when || typeof when !== 'object') return null;
   try {

@@ -697,6 +697,43 @@ test('a parent is an active event whose span holds the start, and nothing else',
   assert.equal(spanOf(null), null);
 });
 
+// M92. A century-dated event has a { min, max } start. The writer reads the
+// min as the start, for the arrow of time and for the parent's span.
+test('the arrow of time reads a ranged start by its min (M92)', () => {
+  const when = {
+    discovery: { start: { min: 1500, max: 1599 }, end: { min: 1800, max: 1899 } },
+    voyage: { start: 1550, end: 1550 },
+    earlier: { start: 1492, end: 1492 },
+    enlightenment: { start: { min: 1700, max: 1799 }, end: { min: 1820, max: 1919 } },
+  };
+  const whenOf = (id) => when[id] ?? null;
+  const caused = { type: 'caused' };
+  // 1550 is after 1500, the earliest the Age of Discovery can start: refused,
+  // although 1550 is inside the century the range names.
+  const late = writeVerdictFor(caused, { from: 'voyage', to: 'discovery', whenOf });
+  assert.equal(late.reason, 'arrow-of-time');
+  assert.match(late.detail, /cannot start after/);
+  // 1492 is before 1500, so it may cause it.
+  assert.equal(writeVerdictFor(caused, { from: 'earlier', to: 'discovery', whenOf }).ok, true);
+  // A ranged cause before a year it leads to is fine, and two ranges compare by their mins.
+  assert.equal(writeVerdictFor(caused, { from: 'discovery', to: 'voyage', whenOf }).ok, true);
+  assert.equal(writeVerdictFor(caused, { from: 'discovery', to: 'enlightenment', whenOf }).ok, true);
+  assert.equal(writeVerdictFor(caused, { from: 'enlightenment', to: 'discovery', whenOf }).reason, 'arrow-of-time');
+});
+
+test('a parent\'s span is checked against a ranged start by its min (M92)', () => {
+  const byId = new Map([
+    ['discovery', { id: 'discovery', kind: 'event', status: 'active', when: { start: { min: 1500, max: 1599 }, end: { min: 1800, max: 1899 } } }],
+    ['later', { id: 'later', kind: 'event', status: 'active', when: { start: 1520, end: 1700 } }],
+  ]);
+  // A year inside the range is inside the span.
+  assert.equal(parentVerdict('discovery', { when: { start: 1550, end: 1551 } }, byId).ok, true);
+  // A ranged child starts at its min: 1500 is before 1520.
+  assert.match(parentVerdict('later', { when: { start: { min: 1500, max: 1599 }, end: null } }, byId).detail, /does not contain the event's start/);
+  assert.equal(parentVerdict('discovery', { when: { start: { min: 1600, max: 1609 }, end: null } }, byId).ok, true);
+  assert.deepEqual(spanOf({ start: { min: 1500, max: 1599 }, end: { min: 1800, max: 1899 } }), { from: 1500, to: 1899 });
+});
+
 test('an edge record is built once, and the locator is M72\'s own form', () => {
   const built = edgeRecord(edge({ sources: [{ source: 'fixture-source-1', locator: 'p. 12' }] }), {
     from: 'one', to: 'two', writer: 'B', created: '2026-10-13',
