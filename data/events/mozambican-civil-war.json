@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mozambican-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q657661",
+  "wikipedia": {
+    "en": "Mozambican Civil War",
+    "pt": "Guerra Civil Moçambicana"
+  },
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-14"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q657661"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mozambican Civil War\", revision 1378759830"
+    }
+  ],
+  "title": "Mozambican Civil War",
+  "summary": "The English Wikipedia article \"Mozambican Civil War\", at revision 1378759830, opens: \"The Mozambican Civil War was a civil war fought in Mozambique from 1977 to 1992 due to a combination of local strife and the polarizing effects of Cold War politics. The fighting was between Mozambique's ruling Marxist Front for the Liberation of Mozambique (FRELIMO), the anti-communist insurgent forces of the Mozambican National Resistance (RENAMO), and a number of smaller factions such as the PRM, UNAMO, COREMO, UNIPOMO, and FUMO.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q657661, imported by tools/import/wikidata.mjs. The item's own description reads \"1977–1992 civil war in Mozambique\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1977,
+    "end": 1992,
+    "date": "1977-05-30",
+    "endDate": "1992-10-04"
+  },
+  "place": "mozambique-q1029",
+  "region": null,
+  "regionNote": null,
+  "parent": "cold-war",
+  "category": "war",
+  "actors": []
+}

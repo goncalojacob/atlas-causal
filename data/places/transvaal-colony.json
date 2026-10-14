@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "transvaal-colony",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1187978",
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Transvaal Colony"
+  },
+  "sources": [],
+  "names": [
+    "Transvaal Colony"
+  ],
+  "where": {
+    "lon": 30,
+    "lat": -25,
+    "precision": "region",
+    "label": "Transvaal Colony"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anglo-egyptian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q616939",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Anglo-Egyptian War",
+    "pt": "Guerra anglo-egípcia de 1882"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q616939"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Egyptian War\", revision 1379563388"
+    }
+  ],
+  "title": "Anglo-Egyptian War",
+  "summary": "The English Wikipedia article \"Anglo-Egyptian War\", at revision 1379563388, opens: \"The British conquest of Egypt, also known as the 2nd Anglo-Egyptian War, occurred in 1882 between mostly Egyptian and Sudanese forces under Ahmed ‘Urabi and the United Kingdom.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q616939, imported by tools/import/wikidata.mjs. The item's own description reads \"1882 armed conflict in Egypt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1882,
+    "end": 1882,
+    "date": "1882-07",
+    "endDate": "1882-09"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

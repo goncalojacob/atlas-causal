@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mahdist-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q31944",
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Mahdist War",
+    "pt": "Guerra Madista"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q31944"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mahdist War\", revision 1378686790"
+    }
+  ],
+  "title": "Mahdist War",
+  "summary": "The English Wikipedia article \"Mahdist War\", at revision 1378686790, opens: \"The Mahdist War was fought between the Mahdist Sudanese, led by Muhammad Ahmad bin Abdullah, who had proclaimed himself the \"Mahdi\" of Islam, and the forces of the Khedivate of Egypt, initially, and later the forces of Britain. After four years, the Mahdist rebels overthrew the Ottoman-Egyptian administration with the fall of Khartoum and gained control over Sudan. The Mahdist State launched several unsuccessful invasions of their neighbours, expanding the scale of the conflict to also include the Italian Empire, the Congo Free State and the Ethiopian Empire. They also faced significant internal rebellion, and a major famine.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q31944, imported by tools/import/wikidata.mjs. The item's own description reads \"British colonial war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1881,
+    "end": 1899
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
