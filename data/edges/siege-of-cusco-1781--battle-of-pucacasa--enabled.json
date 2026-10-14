@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "battle-of-pucacasa",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The siege's article says what the failed siege left behind: **\"Following the rebel retreat, momentum of the rebels slowed down and royalists in Cusco celebrated\"**, and **\"The final, larger and professional group of reinforcements of Lima arrived in Cusco on 24 February 1781, with a count of over 20,000.\"** The rebellion's article takes it from there — **\"The royalists took the offensive, now having an advantage in armament and cavalry\"** — and Pucacasa is where that offensive first met the main rebel army: its own article calls it **\"the first major engagement between the Spanish reinforcements from Lima and Túpac Amaru's main army\"** (revision 1370586703). `enabled` and not `caused`: the reinforcements had been sent for before the siege ended and the article does not make the siege's failure the reason for the march, only the state of the war the march set out into. Walker is the work the article itself cites for the march on Tinta and the ruse that ended at Pucacasa; it is cited here and not read, which is why the confidence stays `probable`.",
+  "explanation": "The siege's article says what the failed siege left behind: **\"Following the rebel retreat, momentum of the rebels slowed down and royalists in Cusco celebrated\"**, and **\"The final, larger and professional group of reinforcements of Lima arrived in Cusco on 24 February 1781, with a count of over 20,000.\"** The rebellion's article takes it from there. **\"The royalists took the offensive, now having an advantage in armament and cavalry\"**. Pucacasa is where that offensive first met the main rebel army: its own article calls it **\"the first major engagement between the Spanish reinforcements from Lima and Túpac Amaru's main army\"** (revision 1370586703). This is `enabled`. The reinforcements had been sent for before the siege ended. The article gives the state of the war the march set out into as the reason for the march. Walker is the work the article itself cites for the march on Tinta and the ruse that ended at Pucacasa; it is cited here and not read, which is why the confidence stays `probable`.",
   "dispute": null
 }

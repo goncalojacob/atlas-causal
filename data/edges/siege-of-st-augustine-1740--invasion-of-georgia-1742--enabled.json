@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-02",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -35,7 +35,7 @@
   "to": "invasion-of-georgia-1742",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The invasion's own article makes the failure of the 1740 siege the opening the Spanish governor had been waiting for: “The British governor of Georgia, James Oglethorpe, organized a small force and launched a British invasion of Florida in 1740, hoping to preempt a Spanish invasion of Georgia. The British besieged St. Augustine but were forced to withdraw. The stage was then set for the Spanish commander Manuel de Montiano to launch his long-awaited attack on Georgia.” The second author, “Siege of St. Augustine (1740)” at revision 1374319127, gives the withdrawal its weight from the other end: “Oglethorpe gave up the siege and returned to Georgia; abandoning his artillery during his withdrawal.” `enabled` and not `caused`: the article's own reading is that the attack was already long awaited and what the failed siege did was set the stage for it, which is an opening and not a cause. `probable`, rule 22.",
+  "explanation": "The invasion's own article makes the failure of the 1740 siege the opening the Spanish governor had been waiting for: “The British governor of Georgia, James Oglethorpe, organized a small force and launched a British invasion of Florida in 1740, hoping to preempt a Spanish invasion of Georgia. The British besieged St. Augustine but were forced to withdraw. The stage was then set for the Spanish commander Manuel de Montiano to launch his long-awaited attack on Georgia.” The second author, “Siege of St. Augustine (1740)” at revision 1374319127, gives the withdrawal its weight from the other end: “Oglethorpe gave up the siege and returned to Georgia; abandoning his artillery during his withdrawal.” The article's own reading is that the attack was already long awaited. The failed siege set the stage for it. That is why the edge is `enabled`. `probable`, rule 22.",
   "dispute": null,
   "origin": {
     "tool": "assistant"

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant"
   },
@@ -38,6 +38,6 @@
   "to": "tripartite-pact",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Japan signed in Berlin in September 1940 because it had been at war in China for three years and could not finish it. The war had brought the American embargoes and the aid to Chongqing, it had made the resources of South-East Asia look like the way out, and an alliance that might deter the United States from intervening was worth having for both reasons. The claim is about the Japanese motive for the pact and not about the German or Italian ones, which were different.",
+  "explanation": "Japan signed in Berlin in September 1940 because it had been at war in China for three years and could not finish it. That war had brought American embargoes and aid to Chongqing. It had made the resources of South-East Asia look like a way out. An alliance that might deter the United States from intervening was worth having for both reasons. The claim describes the Japanese motive for the pact. The German and Italian motives were different and are not part of this claim.",
   "dispute": null
 }

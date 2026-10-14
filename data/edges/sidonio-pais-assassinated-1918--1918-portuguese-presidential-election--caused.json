@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "1918-portuguese-presidential-election",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The English article says the election was held two days after the assassination of President Sidónio Pais on 14 December 1918, that quorum was not reached at the first ballot so it was repeated with the necessary members present, and that João do Canto e Castro was elected as the new President succeeding the late Sidónio Pais. The vacancy is what the article gives as the occasion; what followed from it politically is not this edge.",
+  "explanation": "The English article says the election was held two days after the assassination of President Sidónio Pais on 14 December 1918. It says quorum was not reached at the first ballot, so the ballot was repeated with the necessary members present, and that João do Canto e Castro was elected as the new President, succeeding the late Sidónio Pais. The vacancy is what the article gives as the occasion for the election. What followed from the election politically is not part of this edge.",
   "dispute": null
 }

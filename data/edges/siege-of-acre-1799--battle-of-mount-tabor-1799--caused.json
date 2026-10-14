@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "battle-of-mount-tabor-1799",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "Mount Tabor's own lead states the chain without a gap: \"Upon hearing that an Ottoman army had been sent from Damascus to Acre for the purpose of forcing the French to raise the siege, Bonaparte sent out detachments to track it down. Kléber led his division of 2,000 men and decided to engage the Ottoman army near Mount Tabor.\" The siege is why the army from Damascus was on the road and why Bonaparte sent men after it; caused rather than enabled, because the article gives the relief of Acre as the purpose of the march the battle intercepted. Probable and not consensus: this is Wikipedia's account of the campaign, not a work it cites for the point (A2).",
+  "explanation": "Mount Tabor's own lead states the chain without a gap: \"Upon hearing that an Ottoman army had been sent from Damascus to Acre for the purpose of forcing the French to raise the siege, Bonaparte sent out detachments to track it down. Kléber led his division of 2,000 men and decided to engage the Ottoman army near Mount Tabor.\" The siege is why the army from Damascus was on the road, and why Bonaparte sent men after it. This edge is typed caused, because the article gives the relief of Acre as the purpose of the march the battle intercepted. The confidence is probable: this is Wikipedia's own telling of the campaign, and the article does not cite another source for the point (A2).",
   "dispute": null
 }
