@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant",
     "run": "m57"
@@ -38,6 +38,6 @@
   "to": "the-impeachment-of-dilma-rousseff-2016",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The charges were laid under article 85, items V and VI, of the constitution of 1988, and the procedure — acceptance by the president of the Chamber, a vote of the Chamber, suspension, trial in the Senate — is the one that text lays down. The instrument that removed a president in 2016 is the one written to replace a regime that had removed them by other means.",
+  "explanation": "The charges were laid under article 85, items V and VI, of the constitution of 1988, and the procedure, acceptance by the president of the Chamber, a vote of the Chamber, suspension, trial in the Senate, is the one that text lays down. The instrument that removed a president in 2016 is the one written to replace a regime that had removed them by other means.",
   "dispute": null
 }

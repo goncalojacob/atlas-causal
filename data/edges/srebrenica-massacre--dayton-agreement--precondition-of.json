@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "dayton-agreement",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The English article on the war puts the massacre on the road to the settlement: **\"after the Srebrenica and Markale massacres, NATO intervened in 1995 with Operation Deliberate Force, targeting the positions of the Army of the Republika Srpska, which proved key in ending the war\"**, and after the ceasefires of 14 September and 5 October \"peace negotiations were held in Dayton, Ohio, and the war ended when the Dayton Accords were initialed on 21 November 1995\". The massacre is one of two the article names as what brought NATO in, not the whole of it, which is why this is a precondition.",
+  "explanation": "The English article on the war puts the massacre on the road to the settlement: **\"after the Srebrenica and Markale massacres, NATO intervened in 1995 with Operation Deliberate Force, targeting the positions of the Army of the Republika Srpska, which proved key in ending the war\"**, and after the ceasefires of 14 September and 5 October \"peace negotiations were held in Dayton, Ohio, and the war ended when the Dayton Accords were initialed on 21 November 1995\". The massacre is one of two the article names as what brought NATO in. It is not the whole of it, which is why this is a precondition.",
   "dispute": null
 }
