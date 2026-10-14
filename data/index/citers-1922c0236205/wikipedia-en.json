@@ -11366,6 +11366,12 @@
     },
     {
       "dissent": false,
+      "id": "atrocities-in-the-congo-free-state",
+      "kind": "event",
+      "locator": "\"Atrocities in the Congo Free State\", revision 1376485199"
+    },
+    {
+      "dissent": false,
       "id": "attack-on-bintan-1521",
       "kind": "event",
       "locator": "\"Attack on Bintan (1521)\", revision 1372970515"
@@ -15494,6 +15500,12 @@
     },
     {
       "dissent": false,
+      "id": "first-battle-of-panipat",
+      "kind": "event",
+      "locator": "\"First Battle of Panipat\", revision 1370618857"
+    },
+    {
+      "dissent": false,
       "id": "first-battle-of-quang-tri",
       "kind": "event",
       "locator": "\"First Battle of Quảng Trị\", revision 1375790239"
@@ -15551,6 +15563,12 @@
       "id": "first-indochina-war",
       "kind": "event",
       "locator": "\"First Indochina War\", revision 1373236226"
+    },
+    {
+      "dissent": false,
+      "id": "first-intifada",
+      "kind": "event",
+      "locator": "\"First Intifada\", revision 1378812902"
     },
     {
       "dissent": false,
@@ -15779,6 +15797,12 @@
       "id": "full-scale-russo-ukrainian-war",
       "kind": "event",
       "locator": "\"Russo-Ukrainian war (2022–present)\", revision 1373153668"
+    },
+    {
+      "dissent": false,
+      "id": "gallipoli-campaign",
+      "kind": "event",
+      "locator": "\"Gallipoli campaign\", revision 1379733603"
     },
     {
       "dissent": false,
@@ -16460,6 +16484,12 @@
     },
     {
       "dissent": false,
+      "id": "japanese-invasion-of-manchuria",
+      "kind": "event",
+      "locator": "\"Japanese invasion of Manchuria\", revision 1377456144"
+    },
+    {
+      "dissent": false,
       "id": "japanese-invasion-of-sakhalin",
       "kind": "event",
       "locator": "\"Japanese invasion of Sakhalin\", revision 1371432298"
@@ -16706,6 +16736,12 @@
     },
     {
       "dissent": false,
+      "id": "libyan-crisis",
+      "kind": "event",
+      "locator": "\"Libyan crisis\", revision 1378352207"
+    },
+    {
+      "dissent": false,
       "id": "lisbon-regicide",
       "kind": "event",
       "locator": "\"Lisbon Regicide\", revision 1366493733"
@@ -16721,6 +16757,12 @@
       "id": "locarno-treaties",
       "kind": "event",
       "locator": "\"Locarno Treaties\", revision 1376158350"
+    },
+    {
+      "dissent": false,
+      "id": "long-march",
+      "kind": "event",
+      "locator": "\"Long March\", revision 1377236140"
     },
     {
       "dissent": false,
@@ -16994,6 +17036,12 @@
     },
     {
       "dissent": false,
+      "id": "mukden-incident",
+      "kind": "event",
+      "locator": "\"Mukden incident\", revision 1379600986"
+    },
+    {
+      "dissent": false,
       "id": "munich-agreement",
       "kind": "event",
       "locator": "\"Munich Agreement\", revision 1372429724"
@@ -17021,6 +17069,12 @@
       "id": "nader-shah-s-invasion-of-india",
       "kind": "event",
       "locator": "\"Nader Shah's invasion of India\", revision 1379473633"
+    },
+    {
+      "dissent": false,
+      "id": "nakba",
+      "kind": "event",
+      "locator": "\"Nakba\", revision 1375157174"
     },
     {
       "dissent": false,
@@ -18107,6 +18161,12 @@
       "id": "scramble-for-africa",
       "kind": "event",
       "locator": "\"Scramble for Africa\", revision 1373841219"
+    },
+    {
+      "dissent": false,
+      "id": "second-anglo-sikh-war",
+      "kind": "event",
+      "locator": "\"Second Anglo-Sikh War\", revision 1379635288"
     },
     {
       "dissent": false,

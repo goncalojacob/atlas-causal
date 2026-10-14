@@ -6281,6 +6281,15 @@
         }
       ]
     },
+    "libyan-crisis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "lula-returns-to-the-presidency-2023": {
       "from": "git",
       "versions": [

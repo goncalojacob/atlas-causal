@@ -442,6 +442,15 @@
         }
       ]
     },
+    "atrocities-in-the-congo-free-state": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "banana-wars": {
       "from": "git",
       "versions": [
@@ -2424,6 +2433,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "second-anglo-sikh-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },

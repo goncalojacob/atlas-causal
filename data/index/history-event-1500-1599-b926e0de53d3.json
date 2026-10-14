@@ -1721,6 +1721,15 @@
         }
       ]
     },
+    "first-battle-of-panipat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "first-battle-of-the-lucala": {
       "from": "git",
       "versions": [

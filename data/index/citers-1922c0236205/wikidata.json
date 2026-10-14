@@ -3026,6 +3026,12 @@
     },
     {
       "dissent": false,
+      "id": "atrocities-in-the-congo-free-state",
+      "kind": "event",
+      "locator": "Q1781531"
+    },
+    {
+      "dissent": false,
       "id": "attack-on-bintan-1521",
       "kind": "event",
       "locator": "Q118900813"
@@ -7190,6 +7196,12 @@
     },
     {
       "dissent": false,
+      "id": "first-battle-of-panipat",
+      "kind": "event",
+      "locator": "Q605321"
+    },
+    {
+      "dissent": false,
       "id": "first-battle-of-quang-tri",
       "kind": "event",
       "locator": "Q2237223"
@@ -7253,6 +7265,12 @@
       "id": "first-indochina-war",
       "kind": "event",
       "locator": "Q748780, P31 Q198"
+    },
+    {
+      "dissent": false,
+      "id": "first-intifada",
+      "kind": "event",
+      "locator": "Q49105"
     },
     {
       "dissent": false,
@@ -7475,6 +7493,12 @@
       "id": "full-scale-russo-ukrainian-war",
       "kind": "event",
       "locator": "Q110999040, P31 Q198 / Q645883 / Q2001676 / Q467011 / Q11422542 / Q474138"
+    },
+    {
+      "dissent": false,
+      "id": "gallipoli-campaign",
+      "kind": "event",
+      "locator": "Q164983"
     },
     {
       "dissent": false,
@@ -8162,6 +8186,12 @@
     },
     {
       "dissent": false,
+      "id": "japanese-invasion-of-manchuria",
+      "kind": "event",
+      "locator": "Q1551794"
+    },
+    {
+      "dissent": false,
       "id": "japanese-invasion-of-sakhalin",
       "kind": "event",
       "locator": "Q4538445"
@@ -8450,6 +8480,12 @@
     },
     {
       "dissent": false,
+      "id": "libyan-crisis",
+      "kind": "event",
+      "locator": "Q18702324"
+    },
+    {
+      "dissent": false,
       "id": "lisbon-regicide",
       "kind": "event",
       "locator": "Q2665185"
@@ -8465,6 +8501,12 @@
       "id": "locarno-treaties",
       "kind": "event",
       "locator": "Q152925"
+    },
+    {
+      "dissent": false,
+      "id": "long-march",
+      "kind": "event",
+      "locator": "Q46333"
     },
     {
       "dissent": false,
@@ -8756,6 +8798,12 @@
     },
     {
       "dissent": false,
+      "id": "mukden-incident",
+      "kind": "event",
+      "locator": "Q242099"
+    },
+    {
+      "dissent": false,
       "id": "munich-agreement",
       "kind": "event",
       "locator": "Q154255"
@@ -8795,6 +8843,12 @@
       "id": "nader-shah-s-invasion-of-india",
       "kind": "event",
       "locator": "Q6957844"
+    },
+    {
+      "dissent": false,
+      "id": "nakba",
+      "kind": "event",
+      "locator": "Q3266633"
     },
     {
       "dissent": false,
@@ -9881,6 +9935,12 @@
       "id": "scramble-for-africa",
       "kind": "event",
       "locator": "Q179848"
+    },
+    {
+      "dissent": false,
+      "id": "second-anglo-sikh-war",
+      "kind": "event",
+      "locator": "Q243590"
     },
     {
       "dissent": false,

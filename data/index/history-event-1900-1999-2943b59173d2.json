@@ -12838,6 +12838,15 @@
         }
       ]
     },
+    "first-intifada": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "first-liberian-civil-war": {
       "from": "git",
       "versions": [
@@ -13174,6 +13183,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "gallipoli-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },
@@ -15293,6 +15311,15 @@
         }
       ]
     },
+    "japanese-invasion-of-manchuria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "japanese-invasion-of-sakhalin": {
       "from": "git",
       "versions": [
@@ -16476,6 +16503,15 @@
         }
       ]
     },
+    "long-march": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "louvre-accord": {
       "from": "git",
       "versions": [
@@ -17519,6 +17555,15 @@
         }
       ]
     },
+    "mukden-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "munich-agreement": {
       "from": "git",
       "versions": [
@@ -17765,6 +17810,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "nakba": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },

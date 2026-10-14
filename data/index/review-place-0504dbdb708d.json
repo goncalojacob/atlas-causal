@@ -7947,6 +7947,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-14",
+      "degree": 1,
+      "id": "gallipoli",
+      "kind": "place",
+      "names": [
+        "Gallipoli",
+        "Galípoli"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 5,
       "id": "gao",
@@ -10030,6 +10058,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-14",
+      "degree": 1,
+      "id": "inner-manchuria",
+      "kind": "place",
+      "names": [
+        "Inner Manchuria"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -12950,7 +13005,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "libya-q1016",
       "kind": "place",
       "names": [
@@ -17248,6 +17303,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-14",
+      "degree": 1,
+      "id": "panipat",
+      "kind": "place",
+      "names": [
+        "Panipat",
+        "Panipate"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -18901,6 +18984,34 @@
           "a9-place"
         ],
         "note": "Written from Q15269226, the Punchbowl, by A9's second step (P276) and not its first — the one place in this batch where both steps give the same point to three decimals, so the second loses nothing and gains the item, its name and its id for a later record to reuse (deviation 1445). `point` from the battlefield class Q4895508, which is the word A12 (2) itself uses; the item's other class, Q813672 basin, is left undecided rather than guessed at.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-14",
+      "degree": 1,
+      "id": "punjab-q169132",
+      "kind": "place",
+      "names": [
+        "Punjab",
+        "Panjabe"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -21291,7 +21402,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 3,
       "id": "shenyang",
       "kind": "place",
       "names": [
@@ -25628,6 +25739,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-14",
+      "degree": 1,
+      "id": "west-bank-q36678",
+      "kind": "place",
+      "names": [
+        "West Bank",
+        "Cisjordânia"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [

@@ -7122,6 +7122,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "atrocities-in-the-congo-free-state",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Atrocities in the Congo Free State"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -30617,6 +30645,36 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "first-battle-of-panipat",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Battle of Panipat"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -30955,6 +31013,38 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "First Indochina War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "first-intifada",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "israeli-palestinian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Intifada"
     },
     {
       "authors": [
@@ -32082,6 +32172,36 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "full-scale Russo-Ukrainian war"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "gallipoli-campaign",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Gallipoli campaign"
     },
     {
       "authors": [
@@ -36033,6 +36153,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-14",
+      "id": "japanese-invasion-of-manchuria",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Japanese invasion of Manchuria"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "japanese-invasion-of-sakhalin",
@@ -37645,6 +37795,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "libyan-crisis",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Libyan crisis"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -37743,6 +37924,35 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Locarno Treaties"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "long-march",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Long March"
     },
     {
       "authors": [
@@ -39415,6 +39625,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "mukden-incident",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "japanese-invasion-of-manchuria",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mukden incident"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -39582,6 +39823,35 @@
       "revised": null,
       "status": "active",
       "title": "Nader Shah's invasion of India"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "nakba",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "israeli-palestinian-conflict",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Nakba"
     },
     {
       "authors": [
@@ -45904,6 +46174,36 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Scramble for Africa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "second-anglo-sikh-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Anglo-Sikh War"
     },
     {
       "authors": [
@@ -58721,6 +59021,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "atrocities-in-the-congo-free-state",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "attack-on-cerro-montezuma",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -60515,6 +60821,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "first-battle-of-panipat",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "first-battle-of-zawiya",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -60528,6 +60840,12 @@
     },
     {
       "id": "first-carnatic-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "first-intifada",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -60588,6 +60906,12 @@
     },
     {
       "id": "french-wars-of-religion",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "gallipoli-campaign",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -60767,6 +61091,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "japanese-invasion-of-manchuria",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "jaragua-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -60845,7 +61175,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "libyan-crisis",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "livonian-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "long-march",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -60971,6 +61313,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "mukden-incident",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "myanmar-conflict",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -60978,6 +61326,12 @@
     },
     {
       "id": "nader-shah-s-invasion-of-india",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "nakba",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -61386,6 +61740,12 @@
     },
     {
       "id": "scientific-revolution",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "second-anglo-sikh-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

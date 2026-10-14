@@ -3740,6 +3740,15 @@
         }
       ]
     },
+    "gallipoli": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "gao": {
       "from": "git",
       "versions": [
@@ -4686,6 +4695,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "inner-manchuria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },
@@ -8054,6 +8072,15 @@
         }
       ]
     },
+    "panipat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "panjshir-province": {
       "from": "git",
       "versions": [
@@ -8865,6 +8892,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "punjab-q169132": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },
@@ -12026,6 +12062,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "west-bank-q36678": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },
