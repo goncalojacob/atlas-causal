@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "gallipoli-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q164983",
+  "sitelinks": {
+    "count": 73,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Gallipoli campaign",
+    "pt": "Campanha de Galípoli"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q164983"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gallipoli campaign\", revision 1379733603"
+    }
+  ],
+  "title": "Gallipoli campaign",
+  "summary": "The English Wikipedia article \"Gallipoli campaign\", at revision 1379733603, opens: \"The Gallipoli campaign, the Dardanelles campaign, the Defence of Gallipoli or the Battle of Gallipoli was a military campaign in the First World War on the Gallipoli Peninsula from 19 February 1915 to 9 January 1916. The Allied powers unsuccessfully attempted to make the Ottoman Empire, one of the Central Powers, capitulate by taking control of the Turkish straits. They intended to expose the Ottoman capital at Constantinople to bombardment by Allied warships and cut it off from the Asian part of the empire. An Ottoman Empire defeat could have led to unfettered Western control of the Suez Canal and the opening of the Bosphorus and Dardanelles straits to Allied supplies headed for the Black Sea and warm-water ports in Russia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q164983, imported by tools/import/wikidata.mjs. The item's own description reads \"1915–1916 military campaign during World War I\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1915,
+    "end": 1916,
+    "date": "1915-04-25",
+    "endDate": "1916-01-09"
+  },
+  "place": "gallipoli",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

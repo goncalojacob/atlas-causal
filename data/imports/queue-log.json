@@ -1803,6 +1803,138 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-14-africa-011",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "libyan-crisis",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-africa-012",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "atrocities-in-the-congo-free-state",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-asia-013",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-panipat",
+        "edges": [],
+        "place": "panipat"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-asia-014",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "gallipoli-campaign",
+        "edges": [],
+        "place": "gallipoli"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-asia-015",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "long-march",
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "parent",
+          "detail": "\"chinese-civil-war\" does not contain the event's start"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-asia-016",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "japanese-invasion-of-manchuria",
+        "edges": [],
+        "place": "inner-manchuria"
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "parent",
+          "detail": "\"second-sino-japanese-war\" does not contain the event's start"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-asia-017",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "mukden-incident",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-asia-018",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "nakba",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-asia-019",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "first-intifada",
+        "edges": [],
+        "place": "west-bank-q36678"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-asia-020",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "second-anglo-sikh-war",
+        "edges": [],
+        "place": "punjab-q169132"
+      },
+      "refusals": []
     }
   ]
 }

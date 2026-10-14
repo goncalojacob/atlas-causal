@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "first-intifada",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q49105",
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "First Intifada",
+    "pt": "Primeira Intifada"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q49105"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Intifada\", revision 1378812902"
+    }
+  ],
+  "title": "First Intifada",
+  "summary": "The English Wikipedia article \"First Intifada\", at revision 1378812902, opens: \"The First Intifada, also known as the First Palestinian Intifada, was a sustained uprising involving violent and non-violent protests, acts of civil disobedience, riots, and terrorist attacks carried out by Palestinian civilians and militants in the Israeli-occupied Palestinian territories and Israel. It was motivated by collective Palestinian frustration over Israel's military occupation of the West Bank and the Gaza Strip as it approached a twenty-year mark, having begun in the wake of the 1967 Arab–Israeli War. The uprising lasted from December 1987 until the Madrid Conference of 1991, though some date its conclusion to 1993, the year the Oslo Accords were signed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q49105, imported by tools/import/wikidata.mjs. The item's own description reads \"1987–1993 Palestinian uprising against Israeli occupation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1987,
+    "end": 1993,
+    "date": "1987-12-08",
+    "endDate": "1993-09-13"
+  },
+  "place": "west-bank-q36678",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "israeli-palestinian-conflict"
+}
