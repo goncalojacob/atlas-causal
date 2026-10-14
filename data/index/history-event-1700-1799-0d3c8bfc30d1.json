@@ -2016,7 +2016,7 @@
       ]
     },
     "oman-zanzibar-war": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2040,7 +2040,7 @@
       ]
     },
     "partitions-of-poland": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
