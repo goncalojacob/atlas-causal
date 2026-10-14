@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "salvadoran-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1783607",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Salvadoran Civil War",
+    "pt": "Guerra Civil de El Salvador"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1783607"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Salvadoran Civil War\", revision 1379380515"
+    }
+  ],
+  "title": "Salvadoran Civil War",
+  "summary": "The English Wikipedia article \"Salvadoran Civil War\", at revision 1379380515, opens: \"The Salvadoran Civil War was a twelve-year civil war in El Salvador that was fought between the government of El Salvador that was backed by the United States, against the Farabundo Martí National Liberation Front (FMLN), a coalition of left-wing guerrilla groups that was backed by Cuba under Fidel Castro and the Soviet Union. A coup on 15 October 1979 followed by government killings of anti-coup protesters is widely seen as the start of the civil war. The war did not formally end until after the collapse of the Soviet Union, when, on 16 January 1992 the Chapultepec Peace Accords were signed in Mexico City.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1783607, imported by tools/import/wikidata.mjs. The item's own description reads \"13 year 1979-1992 civil war in El Salvador\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1979,
+    "end": 1992,
+    "date": "1979-10-15",
+    "endDate": "1992-01-16"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

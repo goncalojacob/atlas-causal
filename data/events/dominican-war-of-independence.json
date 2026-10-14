@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dominican-war-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3439047",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Dominican War of Independence",
+    "pt": "Guerra de Independência da República Dominicana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3439047"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dominican War of Independence\", revision 1379811245"
+    }
+  ],
+  "title": "Dominican War of Independence",
+  "summary": "The English Wikipedia article \"Dominican War of Independence\", at revision 1379811245, opens: \"The Dominican War of Independence was a war of independence that began when the Dominican Republic declared independence from the Republic of Haiti on February 27, 1844 and ended on January 24, 1856. Before the war, the island of Hispaniola had been united for 22 years when the newly independent nation, previously known as the Captaincy General of Santo Domingo, was unified with the Republic of Haiti in 1822. The criollo class within the country overthrew the Spanish crown in 1821 before unifying with Haiti a year later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3439047, imported by tools/import/wikidata.mjs. The item's own description reads \"1843–1849 war between the Dominican Republic and Haiti\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1844,
+    "end": 1856
+  },
+  "place": "hispaniola",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

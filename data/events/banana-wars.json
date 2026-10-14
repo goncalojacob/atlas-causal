@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "banana-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q768496",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Banana Wars",
+    "pt": "Guerras das Bananas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q768496"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Banana Wars\", revision 1373741358"
+    }
+  ],
+  "title": "Banana Wars",
+  "summary": "The English Wikipedia article \"Banana Wars\", at revision 1373741358, opens: \"The Banana Wars were a series of conflicts that consisted of military occupation, police action, and intervention by the United States in Central America and the Caribbean between the end of the Spanish–American War in 1898 and the inception of the Good Neighbor policy in 1934. The military interventions were primarily carried out by the United States Marine Corps, which developed a manual, the Small Wars Manual (1921), based on their experiences. On occasion, the United States Navy provided gunfire support, and the United States Army also deployed troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q768496, imported by tools/import/wikidata.mjs. The item's own description reads \"Actions involving the United States in Central America and the Caribbean\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1934
+  },
+  "place": "central-america",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

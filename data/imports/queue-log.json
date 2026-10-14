@@ -1509,6 +1509,78 @@
         "place": "chaldoran"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-14-americas-027",
+      "writer": "B",
+      "fired": "2026-10-14T03:42Z",
+      "status": "written",
+      "written": {
+        "event": "banana-wars",
+        "edges": [],
+        "place": "central-america"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-americas-028",
+      "writer": "B",
+      "fired": "2026-10-14T03:42Z",
+      "status": "written",
+      "written": {
+        "event": "dominican-war-of-independence",
+        "edges": [],
+        "place": "hispaniola"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-americas-029",
+      "writer": "B",
+      "fired": "2026-10-14T03:42Z",
+      "status": "written",
+      "written": {
+        "event": "guatemalan-civil-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-americas-030",
+      "writer": "B",
+      "fired": "2026-10-14T03:42Z",
+      "status": "written",
+      "written": {
+        "event": "salvadoran-civil-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-americas-031",
+      "writer": "B",
+      "fired": "2026-10-14T03:42Z",
+      "status": "written",
+      "written": {
+        "event": "football-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-americas-032",
+      "writer": "B",
+      "fired": "2026-10-14T03:42Z",
+      "status": "written",
+      "written": {
+        "event": "united-states-invasion-of-panama",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
