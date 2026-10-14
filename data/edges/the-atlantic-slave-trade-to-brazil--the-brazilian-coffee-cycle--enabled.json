@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": "2026-09-21",
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant",
     "run": "m57"
@@ -39,6 +39,6 @@
   "to": "the-brazilian-coffee-cycle",
   "type": "enabled",
   "confidence": "consensus",
-  "explanation": "The commodity changed and the institution did not. The early coffee industry was dependent on slaves: a million and a half enslaved people were imported in the first half of the nineteenth century to work the plantations, and when the foreign traffic was outlawed in 1850 the planters turned to European immigrants because the supply had stopped, not because the demand had. `enabled` and not `caused`: what called coffee into being was demand in Europe and North America, and the traffic is what made it possible to answer at that speed and that price.",
+  "explanation": "The commodity changed and the institution did not. The early coffee industry was dependent on slaves: a million and a half enslaved people were imported in the first half of the nineteenth century to work the plantations. When the foreign traffic was outlawed in 1850, the planters turned to European immigrants because the supply had stopped. The demand had not. `enabled` and not `caused`: what called coffee into being was demand in Europe and North America, and the traffic is what made it possible to answer at that speed and that price.",
   "dispute": null
 }

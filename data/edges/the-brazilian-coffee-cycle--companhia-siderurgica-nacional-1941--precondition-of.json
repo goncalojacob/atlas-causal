@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant",
     "run": "m57"
@@ -38,6 +38,6 @@
   "to": "companhia-siderurgica-nacional-1941",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The steelworks stands where the coffee was. Colonel Macedo Soares, who chaired the commission studying where to put a large mill, argued for the Paraíba valley, which had fallen into decadence with the decline of coffee in Rio de Janeiro state, and had the support of Amaral Peixoto, then interventor there. The claim is narrow and is meant to be: not that coffee produced steel, but that the ground the first industrial plant was set on had been cleared by the end of the crop that came before it.",
+  "explanation": "The steelworks stands where the coffee was. Colonel Macedo Soares, who chaired the commission studying where to put a large mill, argued for the Paraíba valley, which had fallen into decadence with the decline of coffee in Rio de Janeiro state, and had the support of Amaral Peixoto, then interventor there. The claim is narrow and is meant to be: the ground the first industrial plant was set on had been cleared by the end of the crop that came before it. The claim does not say that coffee produced steel.",
   "dispute": null
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-30",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,6 +34,6 @@
   "to": "spanish-conquest-of-honduras",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The article makes the Mexican campaign the position Honduras was invaded from: “The conquest of Central America that followed was effectively an extension of the campaign that overthrew the Aztec Empire; Cortés himself took an active part in the conquest of Honduras in 1524-1525.” The same section says where the expeditions came from — “These expeditions were launched southwards from Mexico and Guatemala, and northwards from Panama and Nicaragua” — and that “In 1523, Hernán Cortés organised two expeditions towards Central America from Mexico”. `precondition-of` and not `caused`: the article gives the conquest of Honduras its own occasion, Gil González Dávila’s arrival in March 1524 and the jurisdictional quarrel between rival Spanish colonies, and what the Aztec campaign supplied was the men, the base and the licence. `probable`, because the only source the atlas can open here is the article (rule 22).",
+  "explanation": "The article makes the Mexican campaign the position Honduras was invaded from: “The conquest of Central America that followed was effectively an extension of the campaign that overthrew the Aztec Empire; Cortés himself took an active part in the conquest of Honduras in 1524-1525.” The same section says where the expeditions came from: “These expeditions were launched southwards from Mexico and Guatemala, and northwards from Panama and Nicaragua”, and that “In 1523, Hernán Cortés organised two expeditions towards Central America from Mexico”. `precondition-of` and not `caused`: the article gives the conquest of Honduras its own occasion, Gil González Dávila’s arrival in March 1524 and the jurisdictional quarrel between rival Spanish colonies, and what the Aztec campaign supplied was the men, the base and the licence. `probable`, because the only source the atlas can open here is the article (rule 22).",
   "dispute": null
 }

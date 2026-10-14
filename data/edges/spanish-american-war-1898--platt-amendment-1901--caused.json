@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,6 @@
   "to": "platt-amendment-1901",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The Amendment exists to answer a question the war created: on what terms do the American troops in Cuba leave. It sets seven conditions for their withdrawal and an eighth requiring Cuba to sign a treaty accepting the other seven, and the Treaty of Paris had already set Cuba up as an independent state in 1902 that was a protectorate in practice. The occupation had been the McKinley administration’s answer, in 1899, to the appearance of a revolutionary government on the island; the Amendment is how it ended without ending.",
+  "explanation": "The Amendment exists to answer a question the war created: on what terms do the American troops in Cuba leave. It sets seven conditions for their withdrawal and an eighth requiring Cuba to sign a treaty accepting the other seven, and the Treaty of Paris had already set Cuba up as an independent state in 1902 that was a protectorate in practice. The occupation had been the McKinley administration’s answer, in 1899, to the appearance of a revolutionary government on the island. The Amendment is how it ended without ending.",
   "dispute": null
 }
