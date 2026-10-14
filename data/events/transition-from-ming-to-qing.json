@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "transition-from-ming-to-qing",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3427966",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Transition from Ming to Qing",
+    "pt": "Transição de Ming para Qing"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3427966"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Transition from Ming to Qing\", revision 1379283440"
+    }
+  ],
+  "title": "Transition from Ming to Qing",
+  "summary": "The English Wikipedia article \"Transition from Ming to Qing\", at revision 1379283440, opens: \"The transition from Ming to Qing, also known as the Manchu conquest of China or Ming–Qing transition, was a decades-long period of conflict between the Qing dynasty, established by the Manchu Aisin Gioro clan in Manchuria, and the Ming dynasty in China proper and later in South China. Various other regional or temporary powers were also involved in this conflict, such as the short-lived Shun dynasty. In 1618, Nurhaci, the leader of the Aisin Gioro clan, commissioned a document titled the Seven Grievances, in which he listed complaints against the Ming before launching a rebellion. Many of the grievances concerned conflicts with the Yehe, a major Manchu clan, and the Ming's favoritism toward the Yehe at the expense of other Manchu clans. Nurhaci's demand that the Ming pay tribute to address the Seven Grievances was effectively a declaration of war, as the Ming were unwilling to pay money to a former vassal. Shortly thereafter, Nurhaci began to rebel against the Ming in Liaoning, a region in southern Manchuria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3427966, imported by tools/import/wikidata.mjs. The item's own description reads \"transition between two major dynasties in Chinese history between 1618 and 1683\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1616,
+    "end": 1683
+  },
+  "place": "china-q29520",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

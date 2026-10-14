@@ -1740,6 +1740,15 @@
         }
       ]
     },
+    "carnatic-region": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "cartagena-de-indias": {
       "from": "git",
       "versions": [
@@ -4638,6 +4647,15 @@
         }
       ]
     },
+    "indian-subcontinent": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "indonesia-q252": {
       "from": "git",
       "versions": [
@@ -7256,6 +7274,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "mysore-q10086": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },

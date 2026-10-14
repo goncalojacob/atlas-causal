@@ -14546,6 +14546,12 @@
     },
     {
       "dissent": false,
+      "id": "carnatic-wars",
+      "kind": "event",
+      "locator": "\"Carnatic wars\", revision 1370610220"
+    },
+    {
+      "dissent": false,
       "id": "casablanca-conference",
       "kind": "event",
       "locator": "\"Casablanca Conference\", revision 1369040863"
@@ -15020,6 +15026,12 @@
     },
     {
       "dissent": false,
+      "id": "deccan-wars",
+      "kind": "event",
+      "locator": "\"Deccan wars\", revision 1370615029"
+    },
+    {
+      "dissent": false,
       "id": "declaration-by-united-nations",
       "kind": "event",
       "locator": "\"Declaration by United Nations\", revision 1376063232"
@@ -15404,6 +15416,12 @@
     },
     {
       "dissent": false,
+      "id": "first-anglo-mysore-war",
+      "kind": "event",
+      "locator": "\"First Anglo-Mysore War\", revision 1370618327"
+    },
+    {
+      "dissent": false,
       "id": "first-balkan-war",
       "kind": "event",
       "locator": "\"First Balkan War\", revision 1373171791"
@@ -15599,6 +15617,12 @@
       "id": "fontainebleau-agreements",
       "kind": "event",
       "locator": "\"Fontainebleau Agreements\", revision 1312816323"
+    },
+    {
+      "dissent": false,
+      "id": "fourth-anglo-mysore-war",
+      "kind": "event",
+      "locator": "\"Fourth Anglo-Mysore War\", revision 1378387492"
     },
     {
       "dissent": false,
@@ -16907,6 +16931,12 @@
       "id": "myanmar-conflict",
       "kind": "event",
       "locator": "\"Myanmar conflict\", revision 1376655457"
+    },
+    {
+      "dissent": false,
+      "id": "nader-shah-s-invasion-of-india",
+      "kind": "event",
+      "locator": "\"Nader Shah's invasion of India\", revision 1379473633"
     },
     {
       "dissent": false,
@@ -19634,6 +19664,12 @@
     },
     {
       "dissent": false,
+      "id": "transition-from-ming-to-qing",
+      "kind": "event",
+      "locator": "\"Transition from Ming to Qing\", revision 1379283440"
+    },
+    {
+      "dissent": false,
       "id": "treaty-establishing-a-constitution-for-europe",
       "kind": "event",
       "locator": "\"Treaty establishing a Constitution for Europe\", revision 1365470273"
@@ -20141,6 +20177,12 @@
       "id": "wheeler-s-surprise",
       "kind": "event",
       "locator": "\"Wheeler's Surprise\", revision 1370750767"
+    },
+    {
+      "dissent": false,
+      "id": "white-lotus-rebellion",
+      "kind": "event",
+      "locator": "\"White Lotus Rebellion\", revision 1379684328"
     },
     {
       "dissent": false,

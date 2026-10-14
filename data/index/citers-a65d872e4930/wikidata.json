@@ -6242,6 +6242,12 @@
     },
     {
       "dissent": false,
+      "id": "carnatic-wars",
+      "kind": "event",
+      "locator": "Q976827"
+    },
+    {
+      "dissent": false,
       "id": "casablanca-conference",
       "kind": "event",
       "locator": "Q502093"
@@ -6710,6 +6716,12 @@
     },
     {
       "dissent": false,
+      "id": "deccan-wars",
+      "kind": "event",
+      "locator": "Q139845"
+    },
+    {
+      "dissent": false,
       "id": "declaration-by-united-nations",
       "kind": "event",
       "locator": "Q176930"
@@ -7100,6 +7112,12 @@
     },
     {
       "dissent": false,
+      "id": "first-anglo-mysore-war",
+      "kind": "event",
+      "locator": "Q617070"
+    },
+    {
+      "dissent": false,
       "id": "first-balkan-war",
       "kind": "event",
       "locator": "Q177918"
@@ -7289,6 +7307,12 @@
       "id": "fontainebleau-agreements",
       "kind": "event",
       "locator": "Q959093"
+    },
+    {
+      "dissent": false,
+      "id": "fourth-anglo-mysore-war",
+      "kind": "event",
+      "locator": "Q617782"
     },
     {
       "dissent": false,
@@ -8681,6 +8705,12 @@
       "id": "myanmar-conflict",
       "kind": "event",
       "locator": "Q852088"
+    },
+    {
+      "dissent": false,
+      "id": "nader-shah-s-invasion-of-india",
+      "kind": "event",
+      "locator": "Q6957844"
     },
     {
       "dissent": false,
@@ -11222,6 +11252,12 @@
     },
     {
       "dissent": false,
+      "id": "transition-from-ming-to-qing",
+      "kind": "event",
+      "locator": "Q3427966"
+    },
+    {
+      "dissent": false,
       "id": "treaty-establishing-a-constitution-for-europe",
       "kind": "event",
       "locator": "Q189066"
@@ -11843,6 +11879,12 @@
       "id": "wheeler-s-surprise",
       "kind": "event",
       "locator": "Q7992172"
+    },
+    {
+      "dissent": false,
+      "id": "white-lotus-rebellion",
+      "kind": "event",
+      "locator": "Q997220"
     },
     {
       "dissent": false,
