@@ -5228,6 +5228,15 @@
         }
       ]
     },
+    "kenya-colony": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "khalkhyn-river": {
       "from": "git",
       "versions": [
@@ -11302,6 +11311,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "transvaal-colony": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },

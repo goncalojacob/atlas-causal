@@ -1808,6 +1808,12 @@
     },
     {
       "dissent": false,
+      "id": "1919-egyptian-revolution",
+      "kind": "event",
+      "locator": "Q1993171"
+    },
+    {
+      "dissent": false,
       "id": "1919-portuguese-presidential-election",
       "kind": "event",
       "locator": "Q21872497"
@@ -2696,6 +2702,12 @@
     },
     {
       "dissent": false,
+      "id": "algerian-civil-war",
+      "kind": "event",
+      "locator": "Q142529"
+    },
+    {
+      "dissent": false,
       "id": "algerian-war",
       "kind": "event",
       "locator": "Q200790"
@@ -2768,9 +2780,21 @@
     },
     {
       "dissent": false,
+      "id": "anglo-ashanti-wars",
+      "kind": "event",
+      "locator": "Q722051"
+    },
+    {
+      "dissent": false,
       "id": "anglo-dutch-wars",
       "kind": "event",
       "locator": "Q755170"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-egyptian-war",
+      "kind": "event",
+      "locator": "Q616939"
     },
     {
       "dissent": false,
@@ -5948,6 +5972,12 @@
     },
     {
       "dissent": false,
+      "id": "boko-haram-insurgency",
+      "kind": "event",
+      "locator": "Q1569328"
+    },
+    {
+      "dissent": false,
       "id": "bolivian-war-of-independence",
       "kind": "event",
       "locator": "Q68475"
@@ -7184,6 +7214,12 @@
     },
     {
       "dissent": false,
+      "id": "first-boer-war",
+      "kind": "event",
+      "locator": "Q329203"
+    },
+    {
+      "dissent": false,
       "id": "first-carnatic-war",
       "kind": "event",
       "locator": "Q1362162"
@@ -7379,6 +7415,12 @@
       "id": "french-and-indian-war",
       "kind": "event",
       "locator": "Q154697"
+    },
+    {
+      "dissent": false,
+      "id": "french-conquest-of-algeria",
+      "kind": "event",
+      "locator": "Q2629782"
     },
     {
       "dissent": false,
@@ -8474,6 +8516,12 @@
     },
     {
       "dissent": false,
+      "id": "mahdist-war",
+      "kind": "event",
+      "locator": "Q31944"
+    },
+    {
+      "dissent": false,
       "id": "mahsa-amini-protests",
       "kind": "event",
       "locator": "Q114065797"
@@ -8555,6 +8603,12 @@
       "id": "massacres-of-poles-in-volhynia-and-eastern-galicia",
       "kind": "event",
       "locator": "Q695020, P31 Q750215"
+    },
+    {
+      "dissent": false,
+      "id": "mau-mau-rebellion",
+      "kind": "event",
+      "locator": "Q476855"
     },
     {
       "dissent": false,
@@ -8681,6 +8735,12 @@
       "id": "moura-massacre",
       "kind": "event",
       "locator": "Q111480185"
+    },
+    {
+      "dissent": false,
+      "id": "mozambican-civil-war",
+      "kind": "event",
+      "locator": "Q657661"
     },
     {
       "dissent": false,

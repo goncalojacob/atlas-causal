@@ -4230,6 +4230,15 @@
         }
       ]
     },
+    "boko-haram-insurgency": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "bombing-in-zona-rosa-of-bogota-of-2003": {
       "from": "git",
       "versions": [

@@ -571,6 +571,15 @@
         }
       ]
     },
+    "1919-egyptian-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "1919-portuguese-legislative-election": {
       "from": "git",
       "versions": [
@@ -5493,6 +5502,15 @@
             "retraction"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "algerian-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },
@@ -16801,6 +16819,15 @@
         }
       ]
     },
+    "mau-mau-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "may-1915-portuguese-presidential-election": {
       "from": "git",
       "versions": [
@@ -17356,6 +17383,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "mozambican-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },

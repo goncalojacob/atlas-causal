@@ -10214,6 +10214,12 @@
     },
     {
       "dissent": false,
+      "id": "1919-egyptian-revolution",
+      "kind": "event",
+      "locator": "\"1919 Egyptian revolution\", revision 1376929730"
+    },
+    {
+      "dissent": false,
       "id": "1919-portuguese-presidential-election",
       "kind": "event",
       "locator": "\"1919 Portuguese presidential election\", revision 1273401624"
@@ -11078,6 +11084,12 @@
     },
     {
       "dissent": false,
+      "id": "algerian-civil-war",
+      "kind": "event",
+      "locator": "\"Algerian Civil War\", revision 1379888410"
+    },
+    {
+      "dissent": false,
       "id": "algerian-war",
       "kind": "event",
       "locator": "\"Algerian War\", revision 1373081356"
@@ -11144,9 +11156,21 @@
     },
     {
       "dissent": false,
+      "id": "anglo-ashanti-wars",
+      "kind": "event",
+      "locator": "\"Anglo-Ashanti wars\", revision 1378679254"
+    },
+    {
+      "dissent": false,
       "id": "anglo-dutch-wars",
       "kind": "event",
       "locator": "\"Anglo-Dutch wars\", revision 1376392375"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-egyptian-war",
+      "kind": "event",
+      "locator": "\"Anglo-Egyptian War\", revision 1379563388"
     },
     {
       "dissent": false,
@@ -14258,6 +14282,12 @@
     },
     {
       "dissent": false,
+      "id": "boko-haram-insurgency",
+      "kind": "event",
+      "locator": "\"Boko Haram insurgency\", revision 1378328949"
+    },
+    {
+      "dissent": false,
       "id": "bolivian-war-of-independence",
       "kind": "event",
       "locator": "\"Bolivian War of Independence\", revision 1372904906"
@@ -15488,6 +15518,12 @@
     },
     {
       "dissent": false,
+      "id": "first-boer-war",
+      "kind": "event",
+      "locator": "\"First Boer War\", revision 1379911011"
+    },
+    {
+      "dissent": false,
       "id": "first-carnatic-war",
       "kind": "event",
       "locator": "\"First Carnatic War\", revision 1370619242"
@@ -15689,6 +15725,12 @@
       "id": "french-and-indian-war",
       "kind": "event",
       "locator": "\"French and Indian War\", revision 1376981238"
+    },
+    {
+      "dissent": false,
+      "id": "french-conquest-of-algeria",
+      "kind": "event",
+      "locator": "\"French conquest of Algeria\", revision 1379356514"
     },
     {
       "dissent": false,
@@ -16736,6 +16778,12 @@
     },
     {
       "dissent": false,
+      "id": "mahdist-war",
+      "kind": "event",
+      "locator": "\"Mahdist War\", revision 1378686790"
+    },
+    {
+      "dissent": false,
       "id": "mahsa-amini-protests",
       "kind": "event",
       "locator": "\"Mahsa Amini protests\", revision 1375202189"
@@ -16811,6 +16859,12 @@
       "id": "massacres-of-poles-in-volhynia-and-eastern-galicia",
       "kind": "event",
       "locator": "\"Massacres of Poles in Volhynia and Eastern Galicia\", revision 1372344283: \"against the Polish minority in Volhynia, Eastern Galicia, parts of Polesia, and the Lublin region from 1943 to 1945\""
+    },
+    {
+      "dissent": false,
+      "id": "mau-mau-rebellion",
+      "kind": "event",
+      "locator": "\"Mau Mau rebellion\", revision 1379848238"
     },
     {
       "dissent": false,
@@ -16925,6 +16979,12 @@
       "id": "moura-massacre",
       "kind": "event",
       "locator": "\"Moura massacre\", revision 1370628775"
+    },
+    {
+      "dissent": false,
+      "id": "mozambican-civil-war",
+      "kind": "event",
+      "locator": "\"Mozambican Civil War\", revision 1378759830"
     },
     {
       "dissent": false,

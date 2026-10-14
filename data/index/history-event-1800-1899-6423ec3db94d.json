@@ -345,6 +345,24 @@
         }
       ]
     },
+    "anglo-ashanti-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
+    "anglo-egyptian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "anglo-zanzibar-war": {
       "from": "git",
       "versions": [
@@ -1502,6 +1520,15 @@
         }
       ]
     },
+    "first-boer-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "first-franco-dahomean-war": {
       "from": "git",
       "versions": [
@@ -1741,6 +1768,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "french-conquest-of-algeria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },
@@ -1998,6 +2034,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "mahdist-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },
