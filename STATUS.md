@@ -25899,3 +25899,5 @@ Rewriter started 2026-10-14T02:52:40Z by scheduled
 Rewriter 2026-10-14T03:09:50Z: 51 records rewritten, 49 left, 4928 of 4980 done
 
 Rewriter started 2026-10-14T03:53:47Z by scheduled
+
+Rewriter 2026-10-14T04:08:53Z: 33 records rewritten, 1938 left, 6899 of 6899 done. This fire opened on a merge from `m0`, which brought in M42's new events and places and the other writers' own work since the last rewrite. After the merge, every edge, event, actor and place in the corpus has a done or left entry. Left is mostly bookkeeping. 976 events and 934 places carry none of regionNote, actors note or retraction reason, so there is no text to rewrite. The 52 open edges all had an explanation. 33 needed rewriting and 19 were already plain. No actor or place summary was open. The corpus has no rewrite work left until new records land.
