@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "volgograd",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q914",
+  "sitelinks": {
+    "count": 140,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Volgograd",
+    "pt": "Volgogrado"
+  },
+  "sources": [],
+  "names": [
+    "Volgograd",
+    "Volgogrado"
+  ],
+  "where": {
+    "lon": 44.514722222222225,
+    "lat": 48.70861111111111,
+    "precision": "city",
+    "label": "Volgograd"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
