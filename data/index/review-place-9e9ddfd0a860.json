@@ -3822,6 +3822,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-14",
+      "degree": 1,
+      "id": "carnatic-region",
+      "kind": "place",
+      "names": [
+        "Carnatic region"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -4579,7 +4606,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "china-q29520",
       "kind": "place",
       "names": [
@@ -9890,6 +9917,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-14",
+      "degree": 2,
+      "id": "indian-subcontinent",
+      "kind": "place",
+      "names": [
+        "Indian subcontinent",
+        "Subcontinente indiano"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -15486,6 +15541,34 @@
       "kind": "place",
       "names": [
         "Myeongnyang Strait"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-14",
+      "degree": 1,
+      "id": "mysore-q10086",
+      "kind": "place",
+      "names": [
+        "Mysore",
+        "Maiçor"
       ],
       "origin": {
         "tool": "wikidata"
