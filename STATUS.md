@@ -25917,3 +25917,5 @@ Writer A 2026-10-14T05:22:17Z: 10 written, 0 partial, 0 refused, 0 skipped
 Rewriter started 2026-10-14T04:52:18Z by scheduled
 
 Rewriter 2026-10-14T05:05:00Z: 0 records rewritten, 30 left, 6929 of 6929 done. This fire opened on the merge from m0 (the same one the claim landed on) and found 23 new events and 7 new places with no cursor entry: the M42 import and the queue writers' own work since the last rewrite. 11 of the events carry the Wikidata import's own lane note, already judged plain by earlier fires, and the other 12 events and all 7 places carry no regionNote, actors note or retraction reason to rewrite. All 30 went to left. No edge, event, actor or place prose needed a rewrite this fire.
+
+Rewriter started 2026-10-14T05:53:31Z by scheduled
