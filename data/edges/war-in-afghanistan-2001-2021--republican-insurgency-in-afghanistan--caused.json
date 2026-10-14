@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "republican-insurgency-in-afghanistan",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The insurgency’s article dates it to the end of the war: “The conflict started immediately following the fall of Kabul in August 2021, and the insurgency represents the continuation of the decades-long Afghan conflict”, waged “by armed factions loyal to the defunct Islamic Republic of Afghanistan against the Taliban-led Islamic Emirate”. The fall of Kabul on 15 August 2021 is where this atlas ends `war-in-afghanistan-2001-2021`; both records are filed inside `afghan-conflict`, which the same sentence names.",
+  "explanation": "The insurgency’s article dates it to the end of the war: “The conflict started immediately following the fall of Kabul in August 2021, and the insurgency represents the continuation of the decades-long Afghan conflict”, waged “by armed factions loyal to the defunct Islamic Republic of Afghanistan against the Taliban-led Islamic Emirate”. The fall of Kabul on 15 August 2021 is where this atlas ends `war-in-afghanistan-2001-2021`. Both records are filed inside `afghan-conflict`, which the same sentence names.",
   "dispute": null
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "chilembwe-uprising",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The uprising’s article lists what the rebels were answering and puts the war among it: they “were motivated by grievances against the British colonial system, which included forced labour, racial discrimination and new demands imposed on the African population following the outbreak of World War I.” The war is one grievance of three the article names and not the whole of the case, so the type is `precondition-of` and the confidence `probable`. **The record is also filed inside the war**, which says when it happened; this says what the war contributed to it.",
+  "explanation": "The uprising’s article lists what the rebels were answering and puts the war among it: they “were motivated by grievances against the British colonial system, which included forced labour, racial discrimination and new demands imposed on the African population following the outbreak of World War I.” The war is one grievance of three the article names and not the whole of the case, so the type is `precondition-of` and the confidence `probable`. **The record is also filed inside the war**, which says when it happened. This edge says what the war contributed to it.",
   "dispute": null
 }
