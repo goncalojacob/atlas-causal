@@ -8452,6 +8452,15 @@
         }
       ]
     },
+    "battle-of-stalingrad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "battle-of-taejon": {
       "from": "git",
       "versions": [
@@ -25434,6 +25443,15 @@
             "summary"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "yalta-conference": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },

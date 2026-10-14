@@ -1223,6 +1223,15 @@
         }
       ]
     },
+    "congress-of-berlin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "congress-of-vienna": {
       "from": "git",
       "versions": [
@@ -1661,6 +1670,15 @@
         }
       ]
     },
+    "franco-prussian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "franco-russian-alliance": {
       "from": "git",
       "versions": [
@@ -1699,6 +1717,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "great-famine-ireland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },
@@ -2255,6 +2282,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "russo-turkish-war-1877-1878": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },
@@ -2979,6 +3015,24 @@
             "title"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "unification-of-germany": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
+    "unification-of-italy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },

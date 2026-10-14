@@ -1661,7 +1661,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "balkans",
       "kind": "place",
       "names": [
@@ -2295,7 +2295,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 6,
+      "degree": 7,
       "id": "berlin",
       "kind": "place",
       "names": [
@@ -10019,6 +10019,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-14",
+      "degree": 1,
+      "id": "ireland-q22890",
+      "kind": "place",
+      "names": [
+        "Ireland",
+        "Irlanda",
+        "Irlanda (ilha)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -12742,6 +12771,34 @@
       "review": {
         "flags": [
           "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-14",
+      "degree": 1,
+      "id": "livadia-palace",
+      "kind": "place",
+      "names": [
+        "Livadia Palace",
+        "Palácio de Livadia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
         ],
         "status": "draft"
       },
@@ -24951,6 +25008,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-14",
+      "degree": 1,
+      "id": "volgograd",
+      "kind": "place",
+      "names": [
+        "Volgograd",
+        "Volgogrado"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

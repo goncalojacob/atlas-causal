@@ -4196,6 +4196,12 @@
     },
     {
       "dissent": false,
+      "id": "congress-of-berlin--assassination-of-archduke-franz-ferdinand--precondition-of",
+      "kind": "edge",
+      "locator": "\"Congress of Berlin\", revision 1374102617"
+    },
+    {
+      "dissent": false,
       "id": "conquest-of-asilah--portuguese-conquest-of-tangier--enabled",
       "kind": "edge",
       "locator": "\"Portuguese conquest of Tangier\", revision 1370704790, § The Conquest"
@@ -13442,6 +13448,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-stalingrad",
+      "kind": "event",
+      "locator": "\"Battle of Stalingrad\", revision 1379747042"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-stormberg",
       "kind": "event",
       "locator": "\"Battle of Stormberg\", revision 1370589985"
@@ -14684,6 +14696,12 @@
     },
     {
       "dissent": false,
+      "id": "congress-of-berlin",
+      "kind": "event",
+      "locator": "\"Congress of Berlin\", revision 1374102617"
+    },
+    {
+      "dissent": false,
       "id": "congress-of-vienna",
       "kind": "event",
       "locator": "\"Congress of Vienna\", revision 1379567132"
@@ -15554,6 +15572,12 @@
     },
     {
       "dissent": false,
+      "id": "franco-prussian-war",
+      "kind": "event",
+      "locator": "\"Franco-Prussian War\", revision 1379901903"
+    },
+    {
+      "dissent": false,
       "id": "franco-russian-alliance",
       "kind": "event",
       "locator": "\"Franco-Russian Alliance\", revision 1375457134, first sentence: \"was an alliance formed by the agreements of 1891–94; it lasted until 1917\""
@@ -15713,6 +15737,12 @@
       "id": "great-depression",
       "kind": "event",
       "locator": "\"Great Depression\", revision 1371653684: \"a severe global economic downturn from 1929 to 1939\""
+    },
+    {
+      "dissent": false,
+      "id": "great-famine-ireland",
+      "kind": "event",
+      "locator": "\"Great Famine (Ireland)\", revision 1379041433"
     },
     {
       "dissent": false,
@@ -17732,6 +17762,12 @@
     },
     {
       "dissent": false,
+      "id": "russo-turkish-war-1877-1878",
+      "kind": "event",
+      "locator": "\"Russo-Turkish War (1877–1878)\", revision 1380113821"
+    },
+    {
+      "dissent": false,
       "id": "russo-ukrainian-war",
       "kind": "event",
       "locator": "\"Russo-Ukrainian war\", revision 1372896482"
@@ -19724,6 +19760,18 @@
     },
     {
       "dissent": false,
+      "id": "unification-of-germany",
+      "kind": "event",
+      "locator": "\"Unification of Germany\", revision 1375330501"
+    },
+    {
+      "dissent": false,
+      "id": "unification-of-italy",
+      "kind": "event",
+      "locator": "\"Unification of Italy\", revision 1380074364"
+    },
+    {
+      "dissent": false,
       "id": "unified-task-force",
       "kind": "event",
       "locator": "\"Unified Task Force\", revision 1375002456"
@@ -20015,6 +20063,12 @@
       "id": "xinhai-revolution",
       "kind": "event",
       "locator": "\"1911 Revolution\", revision 1375425258"
+    },
+    {
+      "dissent": false,
+      "id": "yalta-conference",
+      "kind": "event",
+      "locator": "\"Yalta Conference\", revision 1374354305"
     },
     {
       "dissent": false,

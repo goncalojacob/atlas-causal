@@ -5144,6 +5144,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-stalingrad",
+      "kind": "event",
+      "locator": "Q38789"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-stormberg",
       "kind": "event",
       "locator": "Q431849"
@@ -6386,6 +6392,12 @@
     },
     {
       "dissent": false,
+      "id": "congress-of-berlin",
+      "kind": "event",
+      "locator": "Q151423"
+    },
+    {
+      "dissent": false,
       "id": "congress-of-vienna",
       "kind": "event",
       "locator": "Q46362"
@@ -7250,6 +7262,12 @@
     },
     {
       "dissent": false,
+      "id": "franco-prussian-war",
+      "kind": "event",
+      "locator": "Q46083"
+    },
+    {
+      "dissent": false,
       "id": "franco-russian-alliance",
       "kind": "event",
       "locator": "Q243799"
@@ -7415,6 +7433,12 @@
       "id": "great-depression",
       "kind": "event",
       "locator": "Q8698"
+    },
+    {
+      "dissent": false,
+      "id": "great-famine-ireland",
+      "kind": "event",
+      "locator": "Q188371"
     },
     {
       "dissent": false,
@@ -9500,6 +9524,12 @@
     },
     {
       "dissent": false,
+      "id": "russo-turkish-war-1877-1878",
+      "kind": "event",
+      "locator": "Q174205"
+    },
+    {
+      "dissent": false,
       "id": "russo-ukrainian-war",
       "kind": "event",
       "locator": "Q15860072"
@@ -11420,6 +11450,18 @@
     },
     {
       "dissent": false,
+      "id": "unification-of-germany",
+      "kind": "event",
+      "locator": "Q154705"
+    },
+    {
+      "dissent": false,
+      "id": "unification-of-italy",
+      "kind": "event",
+      "locator": "Q51122"
+    },
+    {
+      "dissent": false,
       "id": "unified-task-force",
       "kind": "event",
       "locator": "Q460844"
@@ -11723,6 +11765,12 @@
       "id": "xinhai-revolution",
       "kind": "event",
       "locator": "Q190517"
+    },
+    {
+      "dissent": false,
+      "id": "yalta-conference",
+      "kind": "event",
+      "locator": "Q161227"
     },
     {
       "dissent": false,

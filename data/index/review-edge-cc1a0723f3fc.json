@@ -12237,6 +12237,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-14",
+      "from": "congress-of-berlin",
+      "id": "congress-of-berlin--assassination-of-archduke-franz-ferdinand--precondition-of",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-A",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "assassination-of-archduke-franz-ferdinand",
+      "type": "precondition-of"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-10-02",
       "from": "conquest-of-asilah",
       "id": "conquest-of-asilah--portuguese-conquest-of-tangier--enabled",
