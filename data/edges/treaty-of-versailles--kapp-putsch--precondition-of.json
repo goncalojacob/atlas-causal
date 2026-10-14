@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "kapp-putsch",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The English article puts the putsch’s trigger in the treaty: \"Under the terms of the Treaty of Versailles, which came into effect on 10 January 1920, Germany was required to reduce its land forces to a maximum of 100,000 men, who were to be only professional soldiers, not conscripts. The initial deadline was set for 31 March 1920... Freikorps units were expected to be disbanded.\" It is the order to disband the Marine Brigade under that ceiling that Lüttwitz refused, and the refusal is the putsch. The treaty did not call for a coup; it made the demand the coup was a refusal of.",
+  "explanation": "The English article puts the putsch’s trigger in the treaty: \"Under the terms of the Treaty of Versailles, which came into effect on 10 January 1920, Germany was required to reduce its land forces to a maximum of 100,000 men, who were to be only professional soldiers, not conscripts. The initial deadline was set for 31 March 1920... Freikorps units were expected to be disbanded.\" It is the order to disband the Marine Brigade under that ceiling that Lüttwitz refused, and the refusal is the putsch. The treaty did not call for a coup. It made the demand the coup was a refusal of.",
   "dispute": null
 }

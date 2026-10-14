@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,6 +34,6 @@
   "to": "carnation-revolution-1974",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The war's article names the massacre among what brought the regime in Lisbon down: \"Combined with the news of the Wiriyamu Massacre and that of renewed FRELIMO onslaughts through 1973 and early 1974, the worsening situation in Mozambique later contributed to the downfall of the Portuguese government in 1974.\" The atlas already holds mozambican-war-of-independence --caused--> carnation-revolution-1974 for the war as a whole; the sentence names the massacre separately and \"contributed to\" is a precondition and not a cause. It is the edge that joins the Portuguese chain to the record the Mozambican war already carries.",
+  "explanation": "The war's article names the massacre among what brought the regime in Lisbon down: \"Combined with the news of the Wiriyamu Massacre and that of renewed FRELIMO onslaughts through 1973 and early 1974, the worsening situation in Mozambique later contributed to the downfall of the Portuguese government in 1974.\" The atlas already holds mozambican-war-of-independence --caused--> carnation-revolution-1974 for the war as a whole. The sentence names the massacre separately, and \"contributed to\" is a precondition and not a cause. It is the edge that joins the Portuguese chain to the record the Mozambican war already carries.",
   "dispute": null
 }

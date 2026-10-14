@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "2011-bahraini-uprising",
   "type": "inspired",
   "confidence": "probable",
-  "explanation": "The uprising’s own article names where it came from in its second sentence: “The protests were inspired by the unrest of the 2011 Arab Spring and protests in Tunisia and Egypt and escalated to daily clashes after the Bahraini government repressed the revolt with the support of the Gulf Cooperation Council’s Peninsula Shield Force.” Tunisia is the first of the two it names, and the Arab Spring’s own lead — quoted on the three edges batch 22 wrote — says the wave began there. The type is `inspired` and not `caused` for the same reason as those three: an example spreading is not a Tunisian event bringing about a Bahraini one, and no article this batch read says it was.",
+  "explanation": "The uprising’s own article names where it came from in its second sentence: “The protests were inspired by the unrest of the 2011 Arab Spring and protests in Tunisia and Egypt and escalated to daily clashes after the Bahraini government repressed the revolt with the support of the Gulf Cooperation Council’s Peninsula Shield Force.” Tunisia is the first of the two it names, and the Arab Spring’s own lead, quoted on the three edges batch 22 wrote, says the wave began there. The type is `inspired` and not `caused` for the same reason as those three: an example spreading is not a Tunisian event bringing about a Bahraini one, and no article this batch read says it was.",
   "dispute": null
 }

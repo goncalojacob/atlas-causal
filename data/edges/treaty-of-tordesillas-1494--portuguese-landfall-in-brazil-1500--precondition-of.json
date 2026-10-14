@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,6 @@
   "to": "portuguese-landfall-in-brazil-1500",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Cabral did not sail to find Brazil and the treaty did not send him; what the treaty did was decide in advance what a landfall there would mean. Taking possession in the name of Manuel I was an act with a legal addressee — Castile — and it worked because the coast lay east of the meridian agreed six years earlier. The claim here is narrow and is the weakest of the five types on purpose: the line did not cause the voyage, it is what made the voyage a claim.",
+  "explanation": "Cabral did not sail to find Brazil and the treaty did not send him. What the treaty did was decide in advance what a landfall there would mean. Taking possession in the name of Manuel I was an act with a legal addressee, Castile, and it worked because the coast lay east of the meridian agreed six years earlier. The claim here is narrow and is the weakest of the five types on purpose: the line did not cause the voyage, it is what made the voyage a claim.",
   "dispute": null
 }

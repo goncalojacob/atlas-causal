@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "libyan-civil-war",
   "type": "inspired",
   "confidence": "probable",
-  "explanation": "The war's own article says what set it off and what that answered: “The war was ignited by protests in Benghazi beginning on 15 February 2011 inspired by the Arab Spring, which led to clashes with security forces and armed protesters.” It credits the wave rather than any one country, and the Arab Spring's article says where the wave came from and that Libya was one of the five it reached: “It began in Tunisia in response to the death of Mohamed Bouazizi by self-immolation. From Tunisia, the protests initially spread to five other countries: Libya, Egypt, Yemen, Syria and Bahrain.” The link is therefore to the origin of the wave and is `inspired`; a `caused` edge would claim more than either article does.",
+  "explanation": "The war's own article says what set it off and what that answered: “The war was ignited by protests in Benghazi beginning on 15 February 2011 inspired by the Arab Spring, which led to clashes with security forces and armed protesters.” It credits the wave rather than any one country, and the Arab Spring's article says where the wave came from and that Libya was one of the five it reached: “It began in Tunisia in response to the death of Mohamed Bouazizi by self-immolation. From Tunisia, the protests initially spread to five other countries: Libya, Egypt, Yemen, Syria and Bahrain.” The link is therefore to the origin of the wave and is `inspired`. A `caused` edge would claim more than either article does.",
   "dispute": null
 }
