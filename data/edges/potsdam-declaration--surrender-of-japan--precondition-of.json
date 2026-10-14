@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-02",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -31,7 +31,7 @@
   "to": "surrender-of-japan",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The declaration is the document the surrender was an acceptance of, which the article says twice. “Surrender of Japan”, at revision 1372687290, lead: “Together with the United Kingdom and China, the United States called for the unconditional surrender of Japan in the Potsdam Declaration on 26 July 1945—the alternative being ‘prompt and utter destruction’”; and, four paragraphs later, “Emperor Hirohito subsequently ordered the Supreme Council for the Direction of the War to accept the terms the Allies had set down in the Potsdam Declaration.” § Potsdam Declaration gives the terms themselves, item by item. `precondition-of` and not `caused`: what the declaration supplied was the terms there was a surrender *on*, and the article's own § Japanese reaction has the Japanese government rejecting it on 28 July, so it did not of itself produce the surrender six weeks later. `probable` under rule 22.",
+  "explanation": "The declaration is the document the surrender was an acceptance of, which the article says twice. “Surrender of Japan”, at revision 1372687290, lead: “Together with the United Kingdom and China, the United States called for the unconditional surrender of Japan in the Potsdam Declaration on 26 July 1945—the alternative being ‘prompt and utter destruction’”. Four paragraphs later it says: “Emperor Hirohito subsequently ordered the Supreme Council for the Direction of the War to accept the terms the Allies had set down in the Potsdam Declaration.” § Potsdam Declaration gives the terms themselves, item by item. The type is `precondition-of`. What the declaration supplied was the terms there was a surrender *on*, and the article's own § Japanese reaction has the Japanese government rejecting it on 28 July, so it did not of itself produce the surrender six weeks later. `probable` under rule 22.",
   "dispute": null,
   "origin": {
     "tool": "assistant"

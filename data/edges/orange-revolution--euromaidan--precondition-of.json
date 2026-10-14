@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant"
   },
@@ -37,6 +37,6 @@
   "to": "euromaidan",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Euromaidan is the same square, over the same question of which way the country faces, against the same politician. What 2004 established was the repertoire — the permanent occupation of Independence Square as the way a Ukrainian government is challenged — and what it failed to establish is the reason the repertoire was needed again: the constitutional and anti-corruption settlement of 2005 did not hold, and Yanukovych returned to the presidency by election in 2010. The claim is about the precedent and the unfinished business, not that 2004 caused 2013, whose trigger was the association agreement and Russian pressure against it.",
+  "explanation": "Euromaidan is the same square, over the same question of which way the country faces, against the same politician. What 2004 established was the repertoire: the permanent occupation of Independence Square as the way a Ukrainian government is challenged. What it failed to establish is the reason the repertoire was needed again. The constitutional and anti-corruption settlement of 2005 did not hold, and Yanukovych returned to the presidency by election in 2010. The claim is about the precedent and the unfinished business. It does not say 2004 caused 2013, whose trigger was the association agreement and Russian pressure against it.",
   "dispute": null
 }

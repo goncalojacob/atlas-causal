@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "siege-of-el-arish",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The El Arish article opens its Background with the connection in one clause of its own: \"Napoleon had recently subdued a revolt against the French occupation in Egypt, and with his borders secure, continued his offensive against the Ottoman Empire.\" Enabled and not caused: putting down the rising in Cairo did not make the march into Syria necessary, it made it possible — the article's \"with his borders secure\" is the whole of the mechanism it claims, and the offensive it describes was already Bonaparte's intention.",
+  "explanation": "The El Arish article opens its Background with the connection in one clause of its own: \"Napoleon had recently subdued a revolt against the French occupation in Egypt, and with his borders secure, continued his offensive against the Ottoman Empire.\" The type is `enabled`. Putting down the rising in Cairo did not make the march into Syria necessary. It made the march possible. The article's \"with his borders secure\" is the whole of the mechanism it claims, and the offensive it describes was already Bonaparte's intention.",
   "dispute": null
 }
