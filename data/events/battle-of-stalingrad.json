@@ -56,9 +56,7 @@
   "place": "volgograd",
   "region": null,
   "regionNote": null,
-  "parent": [
-    "eastern-front"
-  ],
+  "parent": "eastern-front",
   "category": "war",
   "actors": []
 }
