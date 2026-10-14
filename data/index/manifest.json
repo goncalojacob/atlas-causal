@@ -1074,10 +1074,10 @@
   ],
   "files": {
     "citers": "index/citers-6e109b7a3b34",
-    "core": "index/core-354f69edd2d7.json",
+    "core": "index/core-ba0d30fc5d02.json",
     "grounds": "index/grounds-173df7cf4e18.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-e5bb10dad46b.json",
+    "review": "index/review-e2f200455e15.json",
     "search": "index/search-45a52b822b52.json",
     "sources": "index/sources-0080ea3ba870.json",
     "territories": "index/territories-fb0abd1601e6.json"
@@ -1119,7 +1119,7 @@
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-6f87dc06adbc.json",
+      "file": "index/history-event-1900-1999-dcc7fe4d8684.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",

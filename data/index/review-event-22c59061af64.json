@@ -39296,7 +39296,6 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "cold-war",
       "review": {
         "flags": [
           "imported-facts",
@@ -60964,12 +60963,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "mozambican-civil-war",
-      "kind": "event",
-      "message": "the event is part of \"cold-war\" and is not dated inside it",
-      "rule": "child-outside-parent"
     },
     {
       "id": "mozambican-civil-war",
