@@ -10646,6 +10646,12 @@
     },
     {
       "dissent": false,
+      "id": "2008-financial-crisis",
+      "kind": "event",
+      "locator": "\"2008 financial crisis\", revision 1378376598"
+    },
+    {
+      "dissent": false,
       "id": "2008-kosovo-declaration-of-independence",
       "kind": "event",
       "locator": "\"2008 Kosovo declaration of independence\", revision 1368774231"
@@ -15944,6 +15950,12 @@
     },
     {
       "dissent": false,
+      "id": "inca-civil-war",
+      "kind": "event",
+      "locator": "\"Inca Civil War\", revision 1376090005"
+    },
+    {
+      "dissent": false,
       "id": "inconfidencia-mineira",
       "kind": "event",
       "locator": "\"Inconfidência Mineira\", revision 1366234128"
@@ -16529,6 +16541,12 @@
       "id": "locarno-treaties",
       "kind": "event",
       "locator": "\"Locarno Treaties\", revision 1376158350"
+    },
+    {
+      "dissent": false,
+      "id": "lord-dunmore-s-war",
+      "kind": "event",
+      "locator": "\"Lord Dunmore's War\", revision 1373960668"
     },
     {
       "dissent": false,

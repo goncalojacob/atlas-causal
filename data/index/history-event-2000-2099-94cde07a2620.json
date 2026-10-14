@@ -806,6 +806,15 @@
         }
       ]
     },
+    "2008-financial-crisis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "2008-kosovo-declaration-of-independence": {
       "from": "git",
       "versions": [
@@ -7336,6 +7345,12 @@
       "versions": [
         {
           "first": true,
+          "on": "2026-10-13"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
           "on": "2026-10-13"
         }
       ]
