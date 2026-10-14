@@ -706,3 +706,11 @@ neither reached the resting picture.
 | `tunisian-campaign` | `north-african-campaign` | The same, and here the property says it outright: **`P361` is `Q218678`, the record batch 96 of this very fire wrote**. It is the first time either records lane has filed a record from a `P361` naming an umbrella the same fire created. 17 November 1942 to 13 May 1943 is inside its span. |
 
 **Main is 234 before and 234 after.**
+
+## Writer A, 14 October 2026 — the Battle of the Atlantic
+
+| record | parent | why |
+| --- | --- | --- |
+| `battle-of-the-atlantic` | `world-war-ii` | By span and subject. 3 September 1939 to 8 May 1945 is inside the umbrella's 1939-09-01 to 1945-09-02. The record's own quoted lead calls it *"the longest continuous military campaign in World War II"*. No narrower umbrella the atlas holds contains it, so `world-war-ii` is its only parent. |
+
+**Main is unchanged.**
