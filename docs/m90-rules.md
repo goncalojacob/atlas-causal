@@ -85,6 +85,9 @@ does not read the pool files.
     contains it. The Battle of Stalingrad goes under the Eastern Front
     alone, since the Eastern Front is inside World War II already. Two
     tests refuse the longer list (14 October 2026).
+    A child's dates must lie inside its parent's. The Guatemalan Civil War
+    (1965 to 1996) cannot go under the Cold War, which ends in 1991. Check
+    both spans before you queue a parent (14 October 2026).
 
 ## Where the work goes
 
