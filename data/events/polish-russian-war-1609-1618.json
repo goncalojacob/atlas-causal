@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "polish-russian-war-1609-1618",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1044829",
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Polish–Russian War (1609–1618)",
+    "pt": "Guerra polaco-moscovita (1605–1618)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1044829"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Polish–Russian War (1609–1618)\", revision 1372018256"
+    }
+  ],
+  "title": "Polish–Russian War (1609–1618)",
+  "summary": "The English Wikipedia article \"Polish–Russian War (1609–1618)\", at revision 1372018256, opens: \"The Polish–Russian War was a conflict fought between the Polish–Lithuanian Commonwealth and the Tsardom of Russia from 1609 to 1618.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1044829, imported by tools/import/wikidata.mjs. The item's own description reads \"1605–1618 sequence of military conflicts and eastward invasions\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1609,
+    "end": 1618
+  },
+  "place": "eastern-europe",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -25,31 +25,31 @@
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-ee6c7fd342b6.json",
+      "file": "index/attributes-1500-1599-904ae8f3ab2a.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
     },
     {
-      "file": "index/attributes-1600-1699-2eca917f961c.json",
+      "file": "index/attributes-1600-1699-5e0299cdeaa8.json",
       "from": 1600,
       "key": "1600-1699",
       "to": 1699
     },
     {
-      "file": "index/attributes-1700-1799-5bc9ec32818f.json",
+      "file": "index/attributes-1700-1799-256c993217ac.json",
       "from": 1700,
       "key": "1700-1799",
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-00f24d8ebd9d.json",
+      "file": "index/attributes-1800-1899-2ca5dde7dd70.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-191d255a8c4a.json",
+      "file": "index/attributes-1900-1999-e090dbbc956e.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
@@ -67,7 +67,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-c931cf916f00.json",
+      "file": "index/attributes-place-12ba97eb38aa.json",
       "from": null,
       "key": "place",
       "to": null
@@ -936,7 +936,7 @@
       "id": "election"
     },
     {
-      "count": 7,
+      "count": 8,
       "id": "founding"
     },
     {
@@ -956,7 +956,7 @@
       "id": "treaty"
     },
     {
-      "count": 1087,
+      "count": 1096,
       "id": "war"
     }
   ],
@@ -1025,10 +1025,10 @@
   "counts": {
     "actors": 2699,
     "edges": 1282,
-    "events": 1955,
+    "events": 1973,
     "narratives": 2,
     "offices": 11,
-    "places": 942,
+    "places": 945,
     "presences": 6691,
     "regions": 5,
     "relations": 138,
@@ -1073,14 +1073,14 @@
     }
   ],
   "files": {
-    "citers": "index/citers-2bf6ce5410ed",
-    "core": "index/core-2eeb92f9d7ed.json",
-    "grounds": "index/grounds-1e3b593a8b7a.json",
+    "citers": "index/citers-c0360b7e1157",
+    "core": "index/core-0f4f4ab6f0aa.json",
+    "grounds": "index/grounds-27cc01a387a0.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-fb3273b91410.json",
-    "search": "index/search-62d7769cdf27.json",
-    "sources": "index/sources-20711e9ea326.json",
-    "territories": "index/territories-70739dcf8d72.json"
+    "review": "index/review-2eef14b951e3.json",
+    "search": "index/search-868332f909fd.json",
+    "sources": "index/sources-466ffa1f11dd.json",
+    "territories": "index/territories-d7a26751858b.json"
   },
   "historyShards": [
     {
@@ -1091,35 +1091,35 @@
       "to": 1499
     },
     {
-      "file": "index/history-event-1500-1599-e4872ff9f1d8.json",
+      "file": "index/history-event-1500-1599-066c9bbc2ff7.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "event",
       "to": 1599
     },
     {
-      "file": "index/history-event-1600-1699-dfc2045ffe7e.json",
+      "file": "index/history-event-1600-1699-2a4c2d5f934f.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "event",
       "to": 1699
     },
     {
-      "file": "index/history-event-1700-1799-9debd7e10802.json",
+      "file": "index/history-event-1700-1799-11382215509d.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "event",
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-de63c2084bfc.json",
+      "file": "index/history-event-1800-1899-65bcce6567e3.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-1e035bb9dc96.json",
+      "file": "index/history-event-1900-1999-a5146fd96e37.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
@@ -1245,7 +1245,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-f4d5a5a2c273.json",
+      "file": "index/history-place-place-f66ea6db23e1.json",
       "from": null,
       "key": "place",
       "kind": "place",

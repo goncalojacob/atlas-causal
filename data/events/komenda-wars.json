@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "komenda-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6428297",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Komenda Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6428297"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Komenda Wars\", revision 1370625992"
+    }
+  ],
+  "title": "Komenda Wars",
+  "summary": "The English Wikipedia article \"Komenda Wars\", at revision 1370625992, opens: \"The Komenda Wars were a series of wars from 1694 until 1700 largely between the Dutch West India Company and the English Royal African Company in the Eguafo Kingdom in the present day state of Ghana, over trade rights. The Dutch were trying to keep the English out of the region to maintain a trade monopoly, while the English were attempting to re-establish a fort in the city of Komenda. The fighting included forces of the Dutch West India Company, the Royal African Company, the Eguafo Kingdom, a prince of the kingdom attempting to rise to the throne, the forces of a powerful merchant named John Cabess, other Akan tribes and kingdoms like Twifo and Denkyira. There were four separate periods of warfare, including a civil war in the Eguafo Kingdom, and the wars ended with the English placing Takyi Kuma into power in Eguafo. Because of the rapidly shifting alliances between European and African powers, historian John Thornton has found that \"there is no finer example of [the] complicated combination of European rivalry merging with African rivalry than the Komenda Wars.\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6428297, imported by tools/import/wikidata.mjs. The item's own description reads \"wars involving Britain, the Netherlands and Eguafo along the Gold Coast\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1694,
+    "end": 1700
+  },
+  "place": "fort-komenda",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
