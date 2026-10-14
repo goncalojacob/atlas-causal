@@ -1968,6 +1968,15 @@
         }
       ]
     },
+    "chaldoran": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "champ-de-mars": {
       "from": "git",
       "versions": [
@@ -3493,6 +3502,15 @@
         }
       ]
     },
+    "fort-komenda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "fort-liberte": {
       "from": "git",
       "versions": [
@@ -4719,6 +4737,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "irish-sea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },

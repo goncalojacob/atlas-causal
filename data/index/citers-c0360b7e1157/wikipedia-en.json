@@ -11852,6 +11852,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chaldiran",
+      "kind": "event",
+      "locator": "\"Battle of Chaldiran\", revision 1370108848"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chedabucto",
       "kind": "event",
       "locator": "\"Battle of Chedabucto\", revision 1375090331"
@@ -12005,6 +12011,12 @@
       "id": "battle-of-dien-bien-phu",
       "kind": "event",
       "locator": "\"Battle of Dien Bien Phu\", revision 1372169112"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-diu",
+      "kind": "event",
+      "locator": "\"Battle of Diu\", revision 1370109772"
     },
     {
       "dissent": false,
@@ -13601,6 +13613,12 @@
       "id": "battle-of-the-assunpink-creek",
       "kind": "event",
       "locator": "\"Battle of the Assunpink Creek\", revision 1371410210"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-atlantic",
+      "kind": "event",
+      "locator": "\"Battle of the Atlantic\", revision 1373416561"
     },
     {
       "dissent": false,
@@ -15236,6 +15254,12 @@
     },
     {
       "dissent": false,
+      "id": "ethiopian-adal-war",
+      "kind": "event",
+      "locator": "\"Ethiopian–Adal War\", revision 1379970492"
+    },
+    {
+      "dissent": false,
       "id": "ethiopian-civil-war",
       "kind": "event",
       "locator": "\"Ethiopian Civil War\", revision 1375950588"
@@ -16466,6 +16490,12 @@
     },
     {
       "dissent": false,
+      "id": "komenda-wars",
+      "kind": "event",
+      "locator": "\"Komenda Wars\", revision 1370625992"
+    },
+    {
+      "dissent": false,
       "id": "kongo-civil-war",
       "kind": "event",
       "locator": "\"Kongo Civil War\", revision 1376270418"
@@ -16649,6 +16679,12 @@
       "id": "magellan-expedition",
       "kind": "event",
       "locator": "\"Magellan expedition\", revision 1379240498"
+    },
+    {
+      "dissent": false,
+      "id": "maghrebi-war-1699-1702",
+      "kind": "event",
+      "locator": "\"Maghrebi war (1699–1702)\", revision 1378807508"
     },
     {
       "dissent": false,
@@ -16985,6 +17021,12 @@
       "id": "ogossagou-massacre",
       "kind": "event",
       "locator": "\"Ogossagou massacre\", revision 1354535837"
+    },
+    {
+      "dissent": false,
+      "id": "oman-zanzibar-war",
+      "kind": "event",
+      "locator": "\"Oman–Zanzibar war\", revision 1379781468"
     },
     {
       "dissent": false,
@@ -17501,6 +17543,12 @@
       "id": "potsdam-declaration",
       "kind": "event",
       "locator": "\"Potsdam Declaration\", revision 1371052620"
+    },
+    {
+      "dissent": false,
+      "id": "prague-spring",
+      "kind": "event",
+      "locator": "\"Prague Spring\", revision 1379051175"
     },
     {
       "dissent": false,
@@ -19121,6 +19169,12 @@
       "id": "spanish-constitution-of-1812",
       "kind": "event",
       "locator": "\"Spanish Constitution of 1812\", revision 1370968394"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-flu",
+      "kind": "event",
+      "locator": "\"Spanish flu\", revision 1379623881"
     },
     {
       "dissent": false,

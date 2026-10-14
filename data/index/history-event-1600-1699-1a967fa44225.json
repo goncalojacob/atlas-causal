@@ -1839,6 +1839,15 @@
         }
       ]
     },
+    "komenda-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "kongo-civil-war": {
       "from": "git",
       "versions": [
@@ -1866,6 +1875,15 @@
             "parent"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "maghrebi-war-1699-1702": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },

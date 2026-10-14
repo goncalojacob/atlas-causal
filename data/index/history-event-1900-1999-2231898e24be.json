@@ -8531,6 +8531,15 @@
         }
       ]
     },
+    "battle-of-the-atlantic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "battle-of-the-ch-ongch-on-river": {
       "from": "git",
       "versions": [
@@ -19474,6 +19483,15 @@
         }
       ]
     },
+    "prague-spring": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "profit-remittance-law-1962": {
       "from": "git",
       "versions": [
@@ -22399,6 +22417,15 @@
             "sources"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "spanish-flu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },

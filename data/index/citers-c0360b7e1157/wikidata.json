@@ -3542,6 +3542,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chaldiran",
+      "kind": "event",
+      "locator": "Q745110"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chedabucto",
       "kind": "event",
       "locator": "Q4870722"
@@ -3701,6 +3707,12 @@
       "id": "battle-of-dien-bien-phu",
       "kind": "event",
       "locator": "Q604897"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-diu",
+      "kind": "event",
+      "locator": "Q1628477"
     },
     {
       "dissent": false,
@@ -5297,6 +5309,12 @@
       "id": "battle-of-the-assunpink-creek",
       "kind": "event",
       "locator": "Q233417"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-atlantic",
+      "kind": "event",
+      "locator": "Q157627"
     },
     {
       "dissent": false,
@@ -6920,6 +6938,12 @@
     },
     {
       "dissent": false,
+      "id": "ethiopian-adal-war",
+      "kind": "event",
+      "locator": "Q2915203"
+    },
+    {
+      "dissent": false,
       "id": "ethiopian-civil-war",
       "kind": "event",
       "locator": "Q257724"
@@ -8180,6 +8204,12 @@
     },
     {
       "dissent": false,
+      "id": "komenda-wars",
+      "kind": "event",
+      "locator": "Q6428297"
+    },
+    {
+      "dissent": false,
       "id": "kongo-civil-war",
       "kind": "event",
       "locator": "Q6429210"
@@ -8387,6 +8417,12 @@
       "id": "magellan-expedition",
       "kind": "event",
       "locator": "Q1225170"
+    },
+    {
+      "dissent": false,
+      "id": "maghrebi-war-1699-1702",
+      "kind": "event",
+      "locator": "Q106959443"
     },
     {
       "dissent": false,
@@ -8765,6 +8801,12 @@
       "id": "ogossagou-massacre",
       "kind": "event",
       "locator": "Q62389968"
+    },
+    {
+      "dissent": false,
+      "id": "oman-zanzibar-war",
+      "kind": "event",
+      "locator": "Q16935425"
     },
     {
       "dissent": false,
@@ -9269,6 +9311,12 @@
       "id": "potsdam-declaration",
       "kind": "event",
       "locator": "Q163244"
+    },
+    {
+      "dissent": false,
+      "id": "prague-spring",
+      "kind": "event",
+      "locator": "Q162401"
     },
     {
       "dissent": false,
@@ -10925,6 +10973,12 @@
       "id": "spanish-constitution-of-1812",
       "kind": "event",
       "locator": "Q1421412"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-flu",
+      "kind": "event",
+      "locator": "Q178275"
     },
     {
       "dissent": false,
