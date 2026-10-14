@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "siege-of-fuenterrabia-1523-1524",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The Fuenterrabía article gives the occupation as the reason there was anything to retake: \"The siege of Fuenterrabía took place in 1523-24 by a Spanish army, after a Franco-Navarrese army had taken it in 1521 in a new incursion to reconquer the Kingdom of Navarre, which had been occupied since 1512 by troops from the unified Crown of Castile and Crown of Aragon.\" The conquest of 1512 is the record this atlas already holds, and the siege is not filed under it — its own P361 names the Italian War of 1521–1526 — so this is an argument between two records and not a restatement of the filing. The sentence is not footnoted to any work Wikipedia names, so the confidence stays probable.",
+  "explanation": "The Fuenterrabía article gives the occupation as the reason there was anything to retake: \"The siege of Fuenterrabía took place in 1523-24 by a Spanish army, after a Franco-Navarrese army had taken it in 1521 in a new incursion to reconquer the Kingdom of Navarre, which had been occupied since 1512 by troops from the unified Crown of Castile and Crown of Aragon.\" The conquest of 1512 is the record this atlas already holds. The siege is not filed under it: its own P361 names the Italian War of 1521–1526, so this is an argument between two records rather than a restatement of the filing. The sentence is not footnoted to any work Wikipedia names, so the confidence stays probable.",
   "dispute": null
 }

@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant",
     "run": "m57"
@@ -38,6 +38,6 @@
   "to": "1985-brazilian-presidential-election",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "What the regime had to show for twenty-one years by 1983 was an inflation of 239 per cent, and the Diretas Já movement grew alongside it — the first protest at Abreu e Lima on 31 March 1983, then Goiânia, then Pacaembu. The direct election was refused and the electoral college met anyway under no coercion, which is what a regime does when it has lost the argument rather than the vote.",
+  "explanation": "What the regime had to show for twenty-one years by 1983 was an inflation of 239 per cent, and the Diretas Já movement grew alongside it: the first protest at Abreu e Lima on 31 March 1983, then Goiânia, then Pacaembu. The direct election was refused and the electoral college met anyway under no coercion, which is what a regime does when it has lost the argument rather than the vote.",
   "dispute": null
 }

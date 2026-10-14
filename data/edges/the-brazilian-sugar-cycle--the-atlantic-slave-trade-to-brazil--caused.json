@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,6 @@
   "to": "the-atlantic-slave-trade-to-brazil",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The colonists began with enslaved indigenous labour and moved to enslaved Africans, and the sources are direct about why: sugar was the colony’s principal export until the early eighteenth century and slave labour was what drove its growth. This is the strongest type in the chain and it is meant strongly. The demand did not merely permit the traffic; the size, the direction and the timing of the traffic are the sugar economy’s, and when the export cycle changed — to mines after 1690, to coffee after 1830 — the traffic changed with it.",
+  "explanation": "The colonists began with enslaved indigenous labour and moved to enslaved Africans, and the sources are direct about why: sugar was the colony’s principal export until the early eighteenth century and slave labour was what drove its growth. This is the strongest type in the chain and it is meant strongly. The demand did not merely permit the traffic. The size, the direction and the timing of the traffic are the sugar economy’s, and when the export cycle changed, to mines after 1690, to coffee after 1830, the traffic changed with it.",
   "dispute": null
 }

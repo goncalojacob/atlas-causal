@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,6 @@
   "to": "royal-african-company",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "A separate claim from the one above and worth keeping separate. That edge says the islands created the demand; this one says the traffic already existed, in Dutch and Portuguese hands — Dutch traders were supplying Barbados with its enslaved labour as well as its equipment and its credit — and that a monopoly company granted by the crown was how England moved to carry its own. A monopoly is a claim on an existing trade, not the invention of one.",
+  "explanation": "A separate claim from the one above and worth keeping separate. That edge says the islands created the demand. This one says the traffic already existed, in Dutch and Portuguese hands: Dutch traders were supplying Barbados with its enslaved labour as well as its equipment and its credit, and a monopoly company granted by the crown was how England moved to carry its own. A monopoly is a claim on an existing trade. It is not the invention of one.",
   "dispute": null
 }

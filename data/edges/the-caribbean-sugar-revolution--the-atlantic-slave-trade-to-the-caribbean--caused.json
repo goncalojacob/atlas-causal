@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,6 @@
   "to": "the-atlantic-slave-trade-to-the-caribbean",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "Sugar was a cash crop with economies of scale, grown most efficiently on large estates with many workers, and the sources say the plantations made extensive use of enslaved people for that reason. The proportions move together: three quarters of the islands European before 1650, three enslaved Africans to every planter after the cane. The causal claim is the strong one and is about magnitude — the traffic to the Caribbean existed before the sugar revolution and became the largest forced migration in history because of it.",
+  "explanation": "Sugar was a cash crop with economies of scale, grown most efficiently on large estates with many workers, and the sources say the plantations depended on large numbers of enslaved people for that reason. The proportions move together: three quarters of the islands European before 1650, three enslaved Africans to every planter after the cane. The causal claim is the strong one and is about magnitude: the traffic to the Caribbean existed before the sugar revolution and became the largest forced migration in history because of it.",
   "dispute": null
 }

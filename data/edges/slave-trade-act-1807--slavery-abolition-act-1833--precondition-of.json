@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,6 @@
   "to": "slavery-abolition-act-1833",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The Act of 1807 outlawed the trade and not the institution, and many of its supporters expected the one to finish the other; it did not. What followed instead was a twenty-six-year apparatus — the Slave Trade Felony Act of 1811 making the overseas traffic a felony, the West Africa Squadron sent to suppress it, the Anti-Slavery Society founded in 1823, the Colonial Office rejecting colonial slave legislation as it arrived in London. 1833 is where that apparatus finally reached the thing itself. `precondition-of`: the first act made the second thinkable and did not make it happen.",
+  "explanation": "The Act of 1807 outlawed the trade and not the institution, and many of its supporters expected the one to finish the other. It did not. What followed instead was a twenty-six-year apparatus: the Slave Trade Felony Act of 1811 made the overseas traffic a felony, the West Africa Squadron was sent to suppress it, the Anti-Slavery Society was founded in 1823, and the Colonial Office rejected colonial slave legislation as it arrived in London. 1833 is where that apparatus finally reached the thing itself. `precondition-of`: the first act made the second thinkable and did not make it happen.",
   "dispute": null
 }
