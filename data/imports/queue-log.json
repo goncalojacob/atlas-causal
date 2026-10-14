@@ -1082,6 +1082,67 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-095",
+      "writer": "B",
+      "fired": "2026-10-14T00:42Z",
+      "status": "written",
+      "written": {
+        "event": "2008-financial-crisis",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-112",
+      "writer": "B",
+      "fired": "2026-10-14T00:42Z",
+      "status": "written",
+      "written": {
+        "event": "lord-dunmore-s-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-113",
+      "writer": "B",
+      "fired": "2026-10-14T00:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4122685: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-13-americas-114",
+      "writer": "B",
+      "fired": "2026-10-14T00:42Z",
+      "status": "written",
+      "written": {
+        "event": "inca-civil-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-115",
+      "writer": "B",
+      "fired": "2026-10-14T00:42Z",
+      "status": "written",
+      "written": {
+        "event": "september-11-attacks",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
