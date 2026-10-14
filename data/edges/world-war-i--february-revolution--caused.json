@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-15",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant"
   },
@@ -39,6 +39,6 @@
   "to": "february-revolution",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The revolution was made of the war's costs and out of its materials. Two and a half years of it had put some fifteen million men through the Russian army and killed or maimed a large part of them; the railways that fed the front stopped feeding Petrograd, and the bread queues of February 1917 were a transport failure before they were anything else. What turned a strike into a revolution was the garrison — reservists and recruits held in the capital for the war and not yet sent to it — refusing to fire and then joining the crowd, which is a specifically wartime fact about who was standing in Petrograd that week. The autocracy's last defenders had also been spent on the war: Nicholas II had taken personal command in 1915 and so owned every defeat after it, and the Duma politicians who took power in March had spent two years arguing that the government was losing the war. This is `caused` and not `precondition-of` because the claim is about February 1917 and not about whether Russia would ever have had a revolution: the grievances were older than the war, and the argument here is that the war supplied the timing, the hunger and the armed men.",
+  "explanation": "The revolution was made of the war's costs and out of its materials. Two and a half years of it had put some fifteen million men through the Russian army and killed or maimed a large part of them. The railways that fed the front stopped feeding Petrograd, and the bread queues of February 1917 were a transport failure before they were anything else. What turned a strike into a revolution was the garrison: reservists and recruits held in the capital for the war and not yet sent to it. They refused to fire and then joined the crowd, a specifically wartime fact about who was standing in Petrograd that week. The autocracy's last defenders had also been spent on the war. Nicholas II had taken personal command in 1915 and so owned every defeat after it, and the Duma politicians who took power in March had spent two years arguing that the government was losing the war. This is `caused` and not `precondition-of` because the claim is about February 1917, not about whether Russia would ever have had a revolution. The grievances were older than the war. The argument here is that the war supplied the timing, the hunger and the armed men.",
   "dispute": null
 }
