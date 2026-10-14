@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "anglo-ashanti-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q722051",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Anglo-Ashanti wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q722051"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Ashanti wars\", revision 1378679254"
+    }
+  ],
+  "title": "Anglo-Ashanti wars",
+  "summary": "The English Wikipedia article \"Anglo-Ashanti wars\", at revision 1378679254, opens: \"The Anglo-Ashanti wars were a series of five conflicts that took place between 1824 and 1900 between the Ashanti Empire—in the Akan interior of the Gold Coast—and the British Empire and its African allies. Despite initial Ashanti victories, the British ultimately prevailed in the conflicts, resulting in the complete annexation of the Ashanti Empire by 1900.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q722051, imported by tools/import/wikidata.mjs. The item's own description reads \"series of wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1823,
+    "end": 1900
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "boko-haram-insurgency",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1569328",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Boko Haram insurgency",
+    "pt": "Insurgência do Boko Haram"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1569328"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Boko Haram insurgency\", revision 1378328949"
+    }
+  ],
+  "title": "Boko Haram insurgency",
+  "summary": "The English Wikipedia article \"Boko Haram insurgency\", at revision 1378328949, opens: \"The Boko Haram insurgency began in July 2009, when the militant Islamist and jihadist rebel group Boko Haram started an armed rebellion against the government of Nigeria. Boko Haram targets both Muslims and Christians. Attacks are often directed at individuals perceived as supporting the Nigerian government or Islamic State after the split between them, including civil servants, local defense groups, Muslim leaders who oppose the group and other rebels like al-Qaeda and Islamic State. Most attacks are not based on the religion of the victims.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1569328, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict started in Nigeria and spread over Cameroon and neighboring regions\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2009,
+    "end": null,
+    "date": "2009-07-26"
+  },
+  "place": "nigeria-q1033",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

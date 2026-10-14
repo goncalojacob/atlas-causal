@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1919-egyptian-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1993171",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "1919 Egyptian revolution",
+    "pt": "Revolução Egípcia de 1919"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1993171"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1919 Egyptian revolution\", revision 1376929730"
+    }
+  ],
+  "title": "1919 Egyptian revolution",
+  "summary": "The English Wikipedia article \"1919 Egyptian revolution\", at revision 1376929730, opens: \"The 1919 Egyptian revolution was a nation-wide revolution in the Sultanate of Egypt against British occupation that lasted from November 1918 to July 1919. Occurring right after the end of World War I, the revolution served as the culmination of successive decades of opposition by Egyptian nationalists to occupation, and was directly sparked by the British-ordered exile of Wafd Party leader Saad Zaghloul and several other party members.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1993171, imported by tools/import/wikidata.mjs. The item's own description reads \"1919 revolution in Egypt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1919,
+    "end": 1919
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
