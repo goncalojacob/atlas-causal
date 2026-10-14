@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-03",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant"
   },
@@ -30,6 +30,6 @@
   "to": "october-fires-2017",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The failures the Independent Technical Commission found in June — the alert, the closing of the roads, the emergency communications network — had not been repaired by 15 October, and the second wave met the same system with the same gaps. This is a claim about what was not done in the four months between them, not that one fire lit the other.",
+  "explanation": "The Independent Technical Commission found failures in June: the alert, the closing of the roads, the emergency communications network. None of these had been repaired by 15 October, and the second wave met the same system with the same gaps. This is a claim about what was not done in the four months between them. It does not say one fire lit the other.",
   "dispute": null
 }

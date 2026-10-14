@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,6 @@
   "to": "cuban-revolution",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "Three statements, each from its own source, and the edge is what they amount to together. The Amendment gave the United States the absolute right to involve itself in Cuban affairs and leases for naval stations, written word for word into the Cuban constitution. What followed its acceptance was a reciprocity tariff giving Cuban sugar preference in the American market, and American investment on a scale that concentrated a fifth of all Cuban land into the largest mills — the cited account puts the further impoverishment of the rural masses, the constant fear of eviction, the cheap imported labour and the wages held down beside it. And in the decades after 1898 and the formal independence of 20 May 1902, Cuba went through revolts, coups, an American military occupation and an intervention in 1906, in a republic whose politics the same account calls a route to private wealth. The edge does not say the Amendment produced Batista. It says the republic the revolution overthrew was constituted with another state’s right of entry inside it and its land inside another state’s market.",
+  "explanation": "Three statements, each from its own source, and the edge is what they amount to together. The Amendment gave the United States the absolute right to involve itself in Cuban affairs and leases for naval stations, written word for word into the Cuban constitution. What followed its acceptance was a reciprocity tariff giving Cuban sugar preference in the American market, and American investment on a scale that concentrated a fifth of all Cuban land into the largest mills. The cited account puts beside that the further impoverishment of the rural masses, the constant fear of eviction, the cheap imported labour and the wages held down. And in the decades after 1898 and the formal independence of 20 May 1902, Cuba went through revolts, coups, an American military occupation and an intervention in 1906, in a republic whose politics the same account calls a route to private wealth. The edge does not say the Amendment produced Batista. It says the republic the revolution overthrew was constituted with another state’s right of entry inside it and its land inside another state’s market.",
   "dispute": null
 }

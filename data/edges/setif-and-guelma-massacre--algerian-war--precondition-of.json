@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,6 +34,6 @@
   "to": "algerian-war",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The record’s own cited article says it in the lead: \"The massacre marked a turning point in Franco-Algerian relations, ultimately leading to the Algerian War of Independence from 1954 to 1962.\" Nine years separate the two, so the link is a precondition and not a cause: the article says the massacre turned the relation, not that it started the war. `probable`, because the only source is Wikipedia (A2).",
+  "explanation": "The record’s own cited article says it in the lead: \"The massacre marked a turning point in Franco-Algerian relations, ultimately leading to the Algerian War of Independence from 1954 to 1962.\" Nine years separate the two events, so this edge is a precondition. The article says the massacre turned the relation. It does not say the massacre started the war. `probable`, because the only source is Wikipedia (A2).",
   "dispute": null
 }

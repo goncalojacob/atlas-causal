@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-25",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "killing-of-muammar-gaddafi",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The lead makes the killing the offensive's own end: the operation was conducted \"in an effort to surround Muammar Gaddafi's hometown of Sirte, which was held by pro-Gaddafi forces\", and \"The offensive ended on 20 October, with the capture and execution of Muammar Gaddafi and his son Mutassim Gaddafi, along with former defense minister Abu-Bakr Yunis Jabr. The Gaddafi loyalists in the area were finally defeated when NTC fighters captured Sirte.\" The article says the offensive ended in the killing, not that it caused it, which is why this is a precondition and not a cause. Probable: Wikipedia alone.",
+  "explanation": "The lead makes the killing the offensive's own end: the operation was conducted \"in an effort to surround Muammar Gaddafi's hometown of Sirte, which was held by pro-Gaddafi forces\", and \"The offensive ended on 20 October, with the capture and execution of Muammar Gaddafi and his son Mutassim Gaddafi, along with former defense minister Abu-Bakr Yunis Jabr. The Gaddafi loyalists in the area were finally defeated when NTC fighters captured Sirte.\" The article says the offensive ended in the killing. It does not say the offensive caused the killing, so this edge is a precondition. Probable: Wikipedia alone.",
   "dispute": null
 }

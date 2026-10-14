@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "siege-of-cusco-1781",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The article gives the march on Cusco as a move the rising made out of its own position, and gives the reason in one sentence: **\"Seeking to maintain the advantages gained at Quiquijana, Sangarará, and Lampa, he decided to anticipate the enemy and go on the offensive.\"** The sentence before it says what he was anticipating — **\"Túpac Amaru had received news of an impending attack on Tinta, which was why he quickly returned to Tungasuca\"** — and the one after it that \"the rebel leader began preparations for the great expedition against Cusco\", the army departing on 20 December with some five thousand armed men. This is an edge from an umbrella to one of its own parts, written because `parent` is a display fact that never enters the adjacency: the three months of rising that put an army outside Cusco are the argument, and without this edge the graph could not walk it. `enabled` and not `caused`: the article gives the decision to Túpac Amaru and a warning about Tinta, not to the rising as such. Walker is the work the article itself cites through this stretch; it is cited and not read, which is why the confidence stays `probable`.",
+  "explanation": "The article gives the march on Cusco as a move the rising made out of its own position, and gives the reason in one sentence: **\"Seeking to maintain the advantages gained at Quiquijana, Sangarará, and Lampa, he decided to anticipate the enemy and go on the offensive.\"** The sentence before it says what he was anticipating: **\"Túpac Amaru had received news of an impending attack on Tinta, which was why he quickly returned to Tungasuca\"**. The one after it says that \"the rebel leader began preparations for the great expedition against Cusco\", the army departing on 20 December with some five thousand armed men. This is an edge from an umbrella to one of its own parts, written because `parent` is a display fact that never enters the adjacency: the three months of rising that put an army outside Cusco are the argument, and without this edge the graph could not walk it. The type is `enabled`. The article gives the decision to Túpac Amaru and a warning about Tinta, rather than to the rising as such. Walker is the work the article itself cites through this stretch. It is cited rather than read, which is why the confidence stays `probable`.",
   "dispute": null
 }

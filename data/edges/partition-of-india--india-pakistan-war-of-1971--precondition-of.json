@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,6 +34,6 @@
   "to": "india-pakistan-war-of-1971",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The article's § Background traces the war to the partition in so many words: \"The political tensions in East Pakistan had its origin in the creation of Pakistan as a result of the partition of India by the United Kingdom in 1947; the popular language movement in 1950; mass riots in East Bengal in 1964; and the mass protests in 1969.\" The partition is named as the origin of the tensions the war came out of, with three later stages between, so the type is precondition-of and not caused. The atlas already reads the partition into the 1947–48 war and the Kashmir conflict; this is the third war the same article traces to it.",
+  "explanation": "The article's § Background traces the war to the partition in so many words: \"The political tensions in East Pakistan had its origin in the creation of Pakistan as a result of the partition of India by the United Kingdom in 1947; the popular language movement in 1950; mass riots in East Bengal in 1964; and the mass protests in 1969.\" The partition is named as the origin of the tensions the war came out of, with three later stages between. That makes the type precondition-of. The atlas already reads the partition into the 1947–48 war and the Kashmir conflict. This is the third war the same article traces to it.",
   "dispute": null
 }

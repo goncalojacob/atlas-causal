@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-05",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant"
   },
@@ -37,6 +37,6 @@
   "to": "treaty-of-versailles",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The shape of the German treaty follows from how the conference was run rather than from anything agreed in advance. Because Germany was excluded from the negotiation and handed the text, the terms had no German signature of consent behind them and could be called a Diktat from the first day; because the Four could not agree a reparations figure, they wrote a liability clause and left the sum to a commission, which is the arrangement that kept the question open for a decade; and because Wilson traded points to keep the League in the treaty, the League arrived attached to terms that the United States Senate then refused. The conference did not merely produce the treaty: it produced the treaty's particular defects.",
+  "explanation": "The shape of the German treaty follows from how the conference was run rather than from anything agreed in advance. Germany was excluded from the negotiation and handed the text, so the terms had no German signature of consent behind them and could be called a Diktat from the first day. The Four could not agree a reparations figure, so they wrote a liability clause and left the sum to a commission, which is the arrangement that kept the question open for a decade. Wilson traded points to keep the League in the treaty, so the League arrived attached to terms that the United States Senate then refused. The conference did not merely produce the treaty: it produced the treaty's particular defects.",
   "dispute": null
 }
