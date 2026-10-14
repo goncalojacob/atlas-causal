@@ -81,6 +81,10 @@ does not read the pool files.
     reader should meet when nothing is selected. The planner's note says which
     events it made main and why. The writer counts the edges that cross an
     umbrella beside the size of the largest component (A15(11)).
+    A filing never lists an umbrella together with an umbrella that
+    contains it. The Battle of Stalingrad goes under the Eastern Front
+    alone, since the Eastern Front is inside World War II already. Two
+    tests refuse the longer list (14 October 2026).
 
 ## Where the work goes
 
