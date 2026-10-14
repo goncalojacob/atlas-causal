@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "carnatic-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q976827",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Carnatic wars",
+    "pt": "Guerras Carnáticas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q976827"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Carnatic wars\", revision 1370610220"
+    }
+  ],
+  "title": "Carnatic wars",
+  "summary": "The English Wikipedia article \"Carnatic wars\", at revision 1370610220, opens: \"The Carnatic wars were a series of military conflicts in the middle of the 18th century in India's coastal Carnatic region, a dependency of Hyderabad State, India. The first Carnatic wars were fought between 1740 and 1748.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q976827, imported by tools/import/wikidata.mjs. The item's own description reads \"18th-century wars between the French and the British\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1746,
+    "end": 1763
+  },
+  "place": "carnatic-region",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

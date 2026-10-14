@@ -1509,6 +1509,90 @@
         "place": "chaldoran"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-105",
+      "writer": "A",
+      "fired": "2026-10-14T03:23Z",
+      "status": "written",
+      "written": {
+        "event": "first-anglo-mysore-war",
+        "edges": [],
+        "place": "mysore-q10086"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-106",
+      "writer": "A",
+      "fired": "2026-10-14T03:23Z",
+      "status": "written",
+      "written": {
+        "event": "fourth-anglo-mysore-war",
+        "edges": [],
+        "place": "indian-subcontinent"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-107",
+      "writer": "A",
+      "fired": "2026-10-14T03:23Z",
+      "status": "written",
+      "written": {
+        "event": "white-lotus-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-108",
+      "writer": "A",
+      "fired": "2026-10-14T03:23Z",
+      "status": "written",
+      "written": {
+        "event": "carnatic-wars",
+        "edges": [],
+        "place": "carnatic-region"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-109",
+      "writer": "A",
+      "fired": "2026-10-14T03:23Z",
+      "status": "written",
+      "written": {
+        "event": "deccan-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-110",
+      "writer": "A",
+      "fired": "2026-10-14T03:23Z",
+      "status": "written",
+      "written": {
+        "event": "transition-from-ming-to-qing",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-111",
+      "writer": "A",
+      "fired": "2026-10-14T03:23Z",
+      "status": "written",
+      "written": {
+        "event": "nader-shah-s-invasion-of-india",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

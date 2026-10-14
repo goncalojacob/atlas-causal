@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "white-lotus-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q997220",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "White Lotus Rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q997220"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"White Lotus Rebellion\", revision 1379684328"
+    }
+  ],
+  "title": "White Lotus Rebellion",
+  "summary": "The English Wikipedia article \"White Lotus Rebellion\", at revision 1379684328, opens: \"The White Lotus Rebellion was a rebellion initiated by followers of the White Lotus movement during the Qing dynasty of China. Motivated by millenarian Buddhists who promised the immediate return of the Buddha, it erupted out of social and economic discontent in the impoverished provinces of Hubei, Shaanxi, and Sichuan. The rebellion began in 1794, when large groups of rebels claiming White Lotus affiliations rose up within the mountainous region that separated Sichuan province from Hubei and Shaanxi provinces. A smaller precursor to the main rebellion broke out in 1774, under the leadership of the martial-arts and herbal-healing expert Wang Lun in Shandong province of northern China.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q997220, imported by tools/import/wikidata.mjs. The item's own description reads \"1794–1804 rebellion in China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1794,
+    "end": 1804
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
