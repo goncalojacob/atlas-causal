@@ -6331,6 +6331,12 @@
       "kind": "event",
       "category": "war",
       "label": "war of succession"
+    },
+    "Q50844387": {
+      "kind": "event",
+      "category": "founding",
+      "label": "reunion",
+      "note": "Added 14 October 2026 from the 0312Z plan note, so that German reunification (Q56039) can enter. Wikidata describes the class as \"merger of two groups that had previously separated\". The category is founding, as for independence (Q37055): a state coming into existence. The sibling class Q1140229, political union, was not added, since it also names states and not only events."
     }
   },
   "lanes": {
@@ -6641,7 +6647,9 @@
     "Q106959443": "africa",
     "Q139845": "asia",
     "Q2632175": "americas",
-    "Q157627": "europe"
+    "Q157627": "europe",
+    "Q4122685": "americas",
+    "Q3458428": "africa"
   },
   "reconcile": true,
   "schema": 1,
