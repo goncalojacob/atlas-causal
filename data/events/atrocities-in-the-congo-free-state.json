@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "atrocities-in-the-congo-free-state",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1781531",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Atrocities in the Congo Free State",
+    "pt": "Atrocidades no Estado Livre do Congo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1781531"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Atrocities in the Congo Free State\", revision 1376485199"
+    }
+  ],
+  "title": "Atrocities in the Congo Free State",
+  "summary": "The English Wikipedia article \"Atrocities in the Congo Free State\", at revision 1376485199, opens: \"From 1885 to 1908, many atrocities were committed in the Congo Free State under the absolute rule of King Leopold II of Belgium. These atrocities were particularly associated with the labour policies, enforced by colonial administrators, used to collect natural rubber for export. Combined with epidemic disease, famine, mass population displacement, and falling birth rates caused by these disruptions, the atrocities contributed to a sharp decline in the Congolese population. These atrocities have sometimes been described as a genocide, though this characterization is disputed. Modern estimates of the magnitude of the population decline ranges from 1.2 million to 10 million people.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1781531, imported by tools/import/wikidata.mjs. The item's own description reads \"atrocities perpetrated in the Congo Free State (today the Democratic Republic of the Congo) which, at the time, was a colony under the personal rule of King Leopold II of Belgium\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1908
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

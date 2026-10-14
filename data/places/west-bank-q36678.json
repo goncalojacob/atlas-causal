@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "west-bank-q36678",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q36678",
+  "sitelinks": {
+    "count": 121,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "West Bank",
+    "pt": "Cisjordânia"
+  },
+  "sources": [],
+  "names": [
+    "West Bank",
+    "Cisjordânia"
+  ],
+  "where": {
+    "lon": 35.35,
+    "lat": 32,
+    "precision": "region",
+    "label": "West Bank"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "libyan-crisis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q18702324",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Libyan crisis",
+    "pt": "Crise Líbia (2011–presente)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18702324"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Libyan crisis\", revision 1378352207"
+    }
+  ],
+  "title": "Libyan crisis",
+  "summary": "The English Wikipedia article \"Libyan crisis\", at revision 1378352207, opens: \"The Libyan crisis is the current humanitarian crisis and political-military instability occurring in Libya, beginning with the Arab Spring protests of 2011, which led to two civil wars, foreign military intervention, and the ousting and killing of Muammar Gaddafi. The first civil war's aftermath and proliferation of armed groups led to violence and instability across the country, which erupted into renewed civil war in 2014. The second war lasted until 23 October 2020, when all parties agreed to a permanent ceasefire and negotiations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18702324, imported by tools/import/wikidata.mjs. The item's own description reads \"conflicts in Libya from 2011 onwards\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2011,
+    "end": null,
+    "date": "2011-02-15"
+  },
+  "place": "libya-q1016",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

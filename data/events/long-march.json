@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "long-march",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q46333",
+  "sitelinks": {
+    "count": 60,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Long March",
+    "pt": "Grande Marcha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q46333"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Long March\", revision 1377236140"
+    }
+  ],
+  "title": "Long March",
+  "summary": "The English Wikipedia article \"Long March\", at revision 1377236140, opens: \"The Long March was a military retreat by the Chinese Communist Party (CCP) and Chinese Red Army from advancing Kuomintang (KMT) National Revolutionary Army during the Chinese Civil War, occurring between October 1934 and October 1935. About 100,000 troops retreated from the Jiangxi Soviet and other bases to a new headquarters in Yan'an, Shaanxi, travelling approximately 10,000 kilometres. About 8,000 troops ultimately survived the Long March.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q46333, imported by tools/import/wikidata.mjs. The item's own description reads \"1934–1935 military campaign undertaken by the Chinese Red Army\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1934,
+    "end": 1935,
+    "date": "1934-10-16",
+    "endDate": "1935-10-19"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
