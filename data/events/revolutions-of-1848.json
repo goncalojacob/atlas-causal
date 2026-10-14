@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "revolutions-of-1848",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3588",
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Revolutions of 1848",
+    "pt": "Revoluções de 1848"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3588"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolutions of 1848\", revision 1379173550"
+    }
+  ],
+  "title": "Revolutions of 1848",
+  "summary": "The English Wikipedia article \"Revolutions of 1848\", at revision 1379173550, opens: \"The revolutions of 1848, also known as the springtime of the peoples, were a series of revolutions throughout Europe that spanned almost two years, between January 1848 and October 1849. They remain the most widespread revolutionary wave in European history to date.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3588, imported by tools/import/wikidata.mjs. The item's own description reads \"series of political upheavals throughout Europe in 1848–49\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1849,
+    "date": "1848-01-12",
+    "endDate": "1849-10-04"
+  },
+  "place": "europe",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

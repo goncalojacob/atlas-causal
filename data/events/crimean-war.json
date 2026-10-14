@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "crimean-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q254106",
+  "sitelinks": {
+    "count": 92,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "Crimean War",
+    "pt": "Guerra da Crimeia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q254106"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Crimean War\", revision 1379651110"
+    }
+  ],
+  "title": "Crimean War",
+  "summary": "The English Wikipedia article \"Crimean War\", at revision 1379651110, opens: \"The Crimean War was fought between Russia and an alliance of the Ottoman Empire, France, the United Kingdom, and Sardinia from October 1853 to February 1856. Geopolitical causes of the war included the Eastern question, the expansion of Russia in the preceding Russo-Turkish wars, and the British and French preference to preserve the Ottoman Empire to maintain the balance of power in the Concert of Europe.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q254106, imported by tools/import/wikidata.mjs. The item's own description reads \"military conflict fought between October 1853 – March 1856\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1853,
+    "end": 1856,
+    "date": "1853-10",
+    "endDate": "1856-02"
+  },
+  "place": "crimea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

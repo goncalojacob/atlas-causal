@@ -4,244 +4,6 @@
   "generated": "2026-10-13",
   "items": [
     {
-      "id": "2026-10-13-europe-042",
-      "planned": "2026-10-13T03:23Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q133641",
-      "title": "Age of Discovery",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-3",
-      "why": "vital-3, europe. Re-queued by the assistant after M92: the import now reads a century-precision date as a span of years, and the seeds file names the lane. The first item was refused on the date."
-    },
-    {
-      "id": "2026-10-13-europe-043",
-      "planned": "2026-10-13T03:23Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q12562",
-      "title": "Reformation",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-3",
-      "why": "vital-3, europe. Re-queued by the assistant after M92: the import now reads a century-precision date as a span of years, and the seeds file names the lane. The first item was refused on the lane."
-    },
-    {
-      "id": "2026-10-13-europe-044",
-      "planned": "2026-10-13T03:23Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q12539",
-      "title": "Age of Enlightenment",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-3",
-      "why": "vital-3, europe. Re-queued by the assistant after M92: the import now reads a century-precision date as a span of years, and the seeds file names the lane. The first item was refused on the date."
-    },
-    {
-      "id": "2026-10-13-asia-045",
-      "planned": "2026-10-13T04:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q185729",
-      "title": "War on terror",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-4",
-      "why": "vital-4, asia. Re-queued by the assistant: the writer refused the first item for having no lane, and the seeds file now names one."
-    },
-    {
-      "id": "2026-10-13-asia-046",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q12444025",
-      "title": "Indian independence movement",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Asia has 348 active events against Europe's 558, so Asia comes first inside the rank."
-    },
-    {
-      "id": "2026-10-13-asia-047",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q213394",
-      "title": "Sri Lankan civil war",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Asia trails Europe and the Americas, so it comes first inside the rank."
-    },
-    {
-      "id": "2026-10-13-asia-048",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q178810",
-      "title": "Syrian civil war",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Asia trails. Wikidata files it under the Arab Spring with P361, and the atlas holds that record.",
-      "parents": [
-        "arab-spring"
-      ]
-    },
-    {
-      "id": "2026-10-13-americas-049",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q505802",
-      "title": "Lewis and Clark Expedition",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. The Americas lane is writer B's and had six items in the last fire."
-    },
-    {
-      "id": "2026-10-13-americas-050",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q214426",
-      "title": "Mexican Revolution",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. The Americas hold the Mexican-American War and the war of independence and not this."
-    },
-    {
-      "id": "2026-10-13-americas-051",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q726501",
-      "title": "Dust Bowl",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. The Americas lane, where the 1900s carry 92 active events."
-    },
-    {
-      "id": "2026-10-13-americas-052",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q186356",
-      "title": "New Deal",
-      "edges": [
-        {
-          "from": "great-depression",
-          "to": "Q186356",
-          "type": "reacted-to",
-          "confidence": "probable",
-          "article": "New Deal",
-          "revision": 1379744402,
-          "quote": "The New Deal refers to a series of economic, social, and political reforms in response to the Great Depression in the United States under the first and second administrations of President Franklin D. Roosevelt.",
-          "explanation": "The article \"New Deal\" (revision 1379744402) opens: \"The New Deal refers to a series of economic, social, and political reforms in response to the Great Depression in the United States under the first and second administrations of President Franklin D. Roosevelt.\" The edge reads that one sentence and nothing more. The reforms answered the depression, so the depression is the end the edge runs from."
-        }
-      ],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. The Americas lane, and its own article states the link to the Great Depression, which the atlas holds."
-    },
-    {
-      "id": "2026-10-13-americas-053",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q127050",
-      "title": "Manhattan Project",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. The Americas lane, where the atlas holds the bombings and not the project behind them."
-    },
-    {
-      "id": "2026-10-13-americas-054",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q48537",
-      "title": "Civil rights movement",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. The Americas lane, and the atlas holds nothing of the movement."
-    },
-    {
-      "id": "2026-10-13-europe-055",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q1225170",
-      "title": "Magellan expedition",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1500s carry 46 active events, the thinnest century of the lane after the 1400s."
-    },
-    {
-      "id": "2026-10-13-europe-056",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q128168",
-      "title": "Counter-Reformation",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1500s are thin, and the atlas holds no record of the Catholic answer to the Reformation."
-    },
-    {
-      "id": "2026-10-13-europe-057",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q246863",
-      "title": "Livonian War",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1500s are thin and the Baltic is absent from them."
-    },
-    {
-      "id": "2026-10-13-europe-058",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q673175",
-      "title": "French Wars of Religion",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1500s are thin and the atlas holds none of the French religious wars."
-    },
-    {
-      "id": "2026-10-13-europe-059",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q164432",
-      "title": "Eighty Years' War",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1500s are thin, and the atlas holds the Dutch-Portuguese War and not the revolt behind it."
-    },
-    {
-      "id": "2026-10-13-europe-062",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q80330",
-      "title": "English Civil War",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe in the 1600s holds nothing of the English wars."
-    },
-    {
-      "id": "2026-10-13-europe-063",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q150995",
-      "title": "Peace of Westphalia",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. The atlas holds the Thirty Years War and not the settlement that ended it."
-    },
-    {
       "id": "2026-10-13-europe-064",
       "planned": "2026-10-13T05:18Z",
       "lane": "europe",
@@ -525,6 +287,316 @@
       "edges": [],
       "rank": "vital-4",
       "why": "Level 4 History names it and the atlas does not hold it. Europe's 1800s carry 39 active events, the thinnest century of the lane."
+    },
+    {
+      "id": "2026-10-13-europe-088",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "europe",
+      "writer": "A",
+      "title": "Dutch Golden Age",
+      "edges": [],
+      "why": "Level 4 History names the Dutch Golden Age and the atlas does not hold it. Held back from the second fire to keep that fire inside forty items, and queued first this time.",
+      "qid": "Q661566",
+      "rank": "vital-4"
+    },
+    {
+      "id": "2026-10-13-europe-089",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "europe",
+      "writer": "A",
+      "title": "Polish–Russian War (1609–1618)",
+      "edges": [],
+      "why": "Level 4 History names the Polish–Russian War of 1609 to 1618. Held back from the second fire for the same reason as the Dutch Golden Age, and queued second this time.",
+      "qid": "Q1044829",
+      "rank": "vital-4"
+    },
+    {
+      "id": "2026-10-13-europe-090",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "europe",
+      "writer": "A",
+      "title": "Anglo-Dutch wars",
+      "edges": [],
+      "why": "Level 4 History names the Anglo-Dutch wars and the atlas does not hold them.",
+      "qid": "Q755170",
+      "rank": "vital-4"
+    },
+    {
+      "id": "2026-10-13-europe-091",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "europe",
+      "writer": "A",
+      "title": "Partitions of Poland",
+      "edges": [],
+      "why": "Level 4 History names the partitions of Poland. The seeds file now carries a lane for it, added after the second fire flagged the gap.",
+      "qid": "Q152006",
+      "rank": "vital-4"
+    },
+    {
+      "id": "2026-10-13-europe-092",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "europe",
+      "writer": "A",
+      "title": "Second Industrial Revolution",
+      "edges": [],
+      "why": "Level 4 History names the Second Industrial Revolution. The seeds file now carries a lane for it.",
+      "qid": "Q217200",
+      "rank": "vital-4"
+    },
+    {
+      "id": "2026-10-13-europe-093",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "europe",
+      "writer": "A",
+      "title": "New Imperialism",
+      "edges": [],
+      "why": "Level 4 History names New Imperialism. The seeds file now carries a lane for it.",
+      "qid": "Q304121",
+      "rank": "vital-4"
+    },
+    {
+      "id": "2026-10-13-europe-094",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "europe",
+      "writer": "A",
+      "title": "Spanish flu",
+      "edges": [],
+      "why": "Level 4 History names the 1918 to 1920 flu pandemic under the title Spanish flu. The seeds file now carries a lane for it.",
+      "qid": "Q178275",
+      "rank": "vital-4"
+    },
+    {
+      "id": "2026-10-13-americas-095",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "americas",
+      "writer": "B",
+      "title": "2008 financial crisis",
+      "edges": [],
+      "why": "Level 4 History names the 2007 to 2008 financial crisis. The seeds file now carries a lane for it, in the Americas, where the pool still has room.",
+      "qid": "Q896666",
+      "rank": "vital-4"
+    },
+    {
+      "id": "2026-10-13-europe-096",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "europe",
+      "writer": "A",
+      "title": "Battle of the Atlantic",
+      "edges": [],
+      "why": "Level 4 History names the Battle of the Atlantic and the atlas does not hold it. Its located claims name the Atlantic Ocean and several coasts rather than one point, so the writer may need a lane named for it if the point it resolves to reads as no lane.",
+      "qid": "Q157627",
+      "rank": "vital-4"
+    },
+    {
+      "id": "2026-10-13-europe-097",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "europe",
+      "writer": "A",
+      "title": "Prague Spring",
+      "edges": [],
+      "why": "Level 4 History names the Prague Spring and the atlas does not hold it.",
+      "qid": "Q162401",
+      "rank": "vital-4"
+    },
+    {
+      "id": "2026-10-13-africa-098",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "africa",
+      "writer": "A",
+      "title": "Ethiopian–Adal War",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names the Ethiopian–Adal War, which the atlas does not hold. Africa trails every other lane (328 active against europe's 568), so it comes first within this rank.",
+      "qid": "Q2915203",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-africa-099",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "africa",
+      "writer": "A",
+      "title": "Komenda Wars",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names the Komenda Wars, fought at Fort Komenda on the Gold Coast. Africa trails and comes first within this rank.",
+      "qid": "Q6428297",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-africa-100",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "africa",
+      "writer": "A",
+      "title": "Oman–Zanzibar war",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names the Oman–Zanzibar war, fought in the Zanzibar Archipelago. Africa trails and comes first within this rank.",
+      "qid": "Q16935425",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-africa-101",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "africa",
+      "writer": "A",
+      "title": "Revolutions of Tunis",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names the Revolutions of Tunis. Africa trails and comes first within this rank.",
+      "qid": "Q3458428",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-africa-102",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "africa",
+      "writer": "A",
+      "title": "Maghrebi war (1699–1702)",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names the Maghrebi war of 1699 to 1702. Africa trails and comes first within this rank. The item carries no point and no located P276 or P131, so it needs a lane named for it in the seeds file before the writer can take it.",
+      "qid": "Q106959443",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-asia-103",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "asia",
+      "writer": "A",
+      "title": "Battle of Diu",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names the Battle of Diu, fought off Daman and Diu. Asia trails every lane but Africa (350 active against europe's 568), so it comes second within this rank.",
+      "qid": "Q1628477",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-asia-104",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "asia",
+      "writer": "A",
+      "title": "Battle of Chaldiran",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names the Battle of Chaldiran, fought in Safavid Iran. Asia trails and comes second within this rank.",
+      "qid": "Q745110",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-asia-105",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "asia",
+      "writer": "A",
+      "title": "First Anglo-Mysore War",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names the First Anglo-Mysore War. Asia trails and comes second within this rank.",
+      "qid": "Q617070",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-asia-106",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "asia",
+      "writer": "A",
+      "title": "Fourth Anglo-Mysore War",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names the Fourth Anglo-Mysore War. Asia trails and comes second within this rank.",
+      "qid": "Q617782",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-asia-107",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "asia",
+      "writer": "A",
+      "title": "White Lotus Rebellion",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names the White Lotus Rebellion, against Qing China. Asia trails and comes second within this rank.",
+      "qid": "Q997220",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-asia-108",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "asia",
+      "writer": "A",
+      "title": "Carnatic wars",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names the Carnatic wars, fought in the Carnatic region of India. Asia trails and comes second within this rank.",
+      "qid": "Q976827",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-asia-109",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "asia",
+      "writer": "A",
+      "title": "Deccan wars",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names the Mughal–Maratha Wars under the title Deccan wars. Asia trails and comes second within this rank. The item carries no point and no located P276, P131 or P17, so it needs a lane named for it in the seeds file before the writer can take it.",
+      "qid": "Q139845",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-asia-110",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "asia",
+      "writer": "A",
+      "title": "Transition from Ming to Qing",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names the Qing conquest of the Ming under the title Transition from Ming to Qing. Asia trails and comes second within this rank.",
+      "qid": "Q3427966",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-asia-111",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "asia",
+      "writer": "A",
+      "title": "Nader Shah's invasion of India",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names Nader Shah's invasion of India. Asia trails and comes second within this rank.",
+      "qid": "Q6957844",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-americas-112",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "americas",
+      "writer": "B",
+      "title": "Lord Dunmore's War",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names Lord Dunmore's War. The Americas lane is third in the order, after Africa and Asia. The item carries no point and no located P276, P131 or P17, so it needs a lane named for it in the seeds file before the writer can take it.",
+      "qid": "Q2632175",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-americas-113",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "americas",
+      "writer": "B",
+      "title": "Cherokee–American wars",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names the Cherokee–American wars. The Americas lane is third in the order, after Africa and Asia.",
+      "qid": "Q4122685",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-americas-114",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "americas",
+      "writer": "B",
+      "title": "Inca Civil War",
+      "edges": [],
+      "why": "List of wars: 1500–1799 names the Inca Civil War, which precedes the Spanish conquest of the Inca Empire the atlas already holds. Its own class, war of succession, has no row in the seeds file, so the writer refuses it until one exists.",
+      "qid": "Q1763918",
+      "rank": "list"
+    },
+    {
+      "id": "2026-10-13-americas-115",
+      "planned": "2026-10-13T23:52Z",
+      "lane": "americas",
+      "writer": "B",
+      "title": "September 11 attacks — filing the war on terror as parent",
+      "edges": [],
+      "why": "Writer B refused this filing on 13 October because the war on terror was not an event record yet. This fire wrote it (asia-045), so the parent now exists and the filing can go through.",
+      "existing": "september-11-attacks",
+      "parents": [
+        "war-on-terror"
+      ]
     }
   ]
 }

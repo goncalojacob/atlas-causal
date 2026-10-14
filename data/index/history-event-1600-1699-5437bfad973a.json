@@ -1241,6 +1241,15 @@
         }
       ]
     },
+    "battle-of-vienna": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
     "battle-of-villabuona": {
       "from": "git",
       "versions": [
@@ -1713,6 +1722,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "great-turkish-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
         }
       ]
     },

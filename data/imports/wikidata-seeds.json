@@ -2062,7 +2062,17 @@
     "Q673175",
     "Q164432",
     "Q80330",
-    "Q150995"
+    "Q150995",
+    "Q74623",
+    "Q200855",
+    "Q151616",
+    "Q150701",
+    "Q191055",
+    "Q33143",
+    "Q46362",
+    "Q214028",
+    "Q3588",
+    "Q254106"
   ],
   "queries": [
     {
@@ -6290,6 +6300,11 @@
       "kind": "event",
       "label": "political scandal",
       "note": "Added 13 October by the assistant, from the planner’s 0518Z note: a vital-article item of this class was queued and the table had no row for it. The label and the description are read off the class item. Wikidata glosses it “action or event regarded as morally or legally wrong and causing general public outrage”. Carried by Dreyfus affair. One event row among an item’s classes is enough (deviation 1628), so the sibling classes the note lists are left without a row."
+    },
+    "Q1348385": {
+      "kind": "event",
+      "category": "war",
+      "label": "war of succession"
     }
   },
   "lanes": {
@@ -6596,7 +6611,11 @@
     "Q217200": "europe",
     "Q304121": "europe",
     "Q178275": "europe",
-    "Q896666": "americas"
+    "Q896666": "americas",
+    "Q106959443": "africa",
+    "Q139845": "asia",
+    "Q2632175": "americas",
+    "Q157627": "europe"
   },
   "reconcile": true,
   "schema": 1,

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1755-lisbon-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q191055",
+  "sitelinks": {
+    "count": 59,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "1755 Lisbon earthquake",
+    "pt": "Sismo de Lisboa de 1755"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q191055"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1755 Lisbon earthquake\", revision 1378145316"
+    }
+  ],
+  "title": "1755 Lisbon earthquake",
+  "summary": "The English Wikipedia article \"1755 Lisbon earthquake\", at revision 1378145316, opens: \"The 1755 Lisbon earthquake, also known as the Great Lisbon earthquake, occurred in the Iberian Peninsula and Northwest Africa area on the morning of Saturday, 1 November, 1755 ; it took place at approximately 09:40 local time. In combination with subsequent fires and a tsunami, the earthquake almost completely destroyed Lisbon and adjoining areas. Seismologists estimate the Lisbon earthquake had a magnitude of 7.7 or greater on the moment magnitude scale, with its epicenter in the Atlantic Ocean about 200 km west-southwest of Cape St. Vincent, a cape in the Algarve region, and about 290 km southwest of Lisbon.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q191055, imported by tools/import/wikidata.mjs. The item's own description reads \"earthquake in 1755\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1755,
+    "end": 1755,
+    "date": "1755-11-01"
+  },
+  "place": "lisbon",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}
