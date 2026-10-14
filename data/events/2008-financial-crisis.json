@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "2008-financial-crisis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q896666",
+  "sitelinks": {
+    "count": 75,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "2008 financial crisis",
+    "pt": "Crise financeira de 2007–2008"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q896666"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"2008 financial crisis\", revision 1378376598"
+    }
+  ],
+  "title": "2008 financial crisis",
+  "summary": "The English Wikipedia article \"2008 financial crisis\", at revision 1378376598, opens: \"A major worldwide financial crisis centered in the United States took place in 2008. The immediate cause of the crisis was the collapse of the 2000s U.S. housing bubble, which involved excessive speculation in property values by both homeowners and financial institutions, exacerbated by predatory lending and by deficiencies in regulation. The first phase was the subprime mortgage crisis, which began in early 2007 as mortgage-backed securities (MBS) tied to U.S. real estate, and a vast web of derivatives linked to those MBS, collapsed in value. A liquidity crisis spread to global institutions by mid-2007 and climaxed with the bankruptcy of Lehman Brothers in September 2008, which triggered a stock market crash and bank runs in several countries. The crisis exacerbated the Great Recession, a global recession that began in late 2007, and contributed to major crises in Iceland and the eurozone.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q896666, imported by tools/import/wikidata.mjs. The item's own description reads \"global financial crisis triggered by bursting of the United States housing bubble and the devaluation of housing-related securities\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 2008,
+    "end": null
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
