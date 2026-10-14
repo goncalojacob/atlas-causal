@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "football-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q223085",
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Football War",
+    "pt": "Guerra do Futebol"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q223085"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Football War\", revision 1374008477"
+    }
+  ],
+  "title": "Football War",
+  "summary": "The English Wikipedia article \"Football War\", at revision 1374008477, opens: \"The Football War, also known as the Soccer War or the 100 Hour War, was a brief military conflict fought between El Salvador and Honduras in 1969. Existing tensions between the two countries coincided with rioting during a 1970 FIFA World Cup qualifier, hence its nickname. The war began on 14 July 1969 when the Salvadoran military launched an attack against Honduras. The Organization of American States (OAS) negotiated a cease-fire on the night of 18 July. Salvadoran troops were withdrawn in early August.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q223085, imported by tools/import/wikidata.mjs. The item's own description reads \"brief war between El Salvador and Honduras in 1969\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1969,
+    "end": 1969,
+    "date": "1969-07-14",
+    "endDate": "1969-07-18"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

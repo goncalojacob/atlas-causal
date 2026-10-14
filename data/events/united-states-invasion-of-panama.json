@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "united-states-invasion-of-panama",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q459282",
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "United States invasion of Panama",
+    "pt": "Invasão do Panamá pelos Estados Unidos em 1989"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q459282"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"United States invasion of Panama\", revision 1378846455"
+    }
+  ],
+  "title": "United States invasion of Panama",
+  "summary": "The English Wikipedia article \"United States invasion of Panama\", at revision 1378846455, opens: \"The United States invasion of Panama began in mid-December 1989 during the presidency of George H. W. Bush. The purpose of the invasion was to depose the de facto ruler of Panama, General Manuel Noriega, who was wanted by U.S. authorities for racketeering and drug trafficking. The operation, codenamed Operation Just Cause, concluded in late January 1990 with the surrender of Noriega. The Panama Defense Forces (PDF) were dissolved, and president-elect Guillermo Endara was sworn into office.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q459282, imported by tools/import/wikidata.mjs. The item's own description reads \"1989 military action in Panama\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1989,
+    "end": 1990,
+    "date": "1989-12-20",
+    "endDate": "1990-01-31"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "cold-war"
+}

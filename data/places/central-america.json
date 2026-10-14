@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "central-america",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q27611",
+  "sitelinks": {
+    "count": 171,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Central America",
+    "pt": "América Central"
+  },
+  "sources": [],
+  "names": [
+    "Central America",
+    "América Central"
+  ],
+  "where": {
+    "lon": -86,
+    "lat": 12,
+    "precision": "region",
+    "label": "Central America"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
