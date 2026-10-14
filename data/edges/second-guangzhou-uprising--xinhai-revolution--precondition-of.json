@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "xinhai-revolution",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The revolution’s own article says what it was made of: “The revolution was the culmination of a decade of agitation, revolts, and uprisings.” The Second Guangzhou Uprising — Huang Xing’s failed rising at Canton in April 1911, six months before Wuchang — is one of those revolts, and Wikidata’s item says so too. **Neither article names this uprising as a cause of the revolution**, and the edge is written at the strength that supports: `precondition-of`, `probable`, and not `caused`.",
+  "explanation": "The revolution’s own article says what it was made of: “The revolution was the culmination of a decade of agitation, revolts, and uprisings.” The Second Guangzhou Uprising, Huang Xing’s failed rising at Canton in April 1911, six months before Wuchang, is one of those revolts, and Wikidata’s item says so too. **Neither article names this uprising as a cause of the revolution**, and the edge is written at the strength that supports: `precondition-of`, `probable`, and not `caused`.",
   "dispute": null
 }

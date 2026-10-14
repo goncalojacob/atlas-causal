@@ -962,6 +962,311 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-064",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "great-turkish-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-065",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-vienna",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-066",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "great-northern-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-067",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-spanish-succession",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-068",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "1755-lisbon-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-069",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "seven-years-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-070",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "congress-of-vienna",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-071",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "july-revolution",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-072",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "revolutions-of-1848",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-073",
+      "writer": "A",
+      "fired": "2026-10-13T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "crimean-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-074",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "unification-of-italy",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-075",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "unification-of-germany",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-076",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "franco-prussian-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-077",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "great-famine-ireland",
+        "edges": [],
+        "place": "ireland-q22890"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-078",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "russo-turkish-war-1877-1878",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-079",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "congress-of-berlin",
+        "edges": [
+          "congress-of-berlin--assassination-of-archduke-franz-ferdinand--precondition-of"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-080",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q8729 is already the event \"russian-revolution\""
+    },
+    {
+      "id": "2026-10-13-europe-081",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-stalingrad",
+        "edges": [],
+        "place": "volgograd"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-082",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "yalta-conference",
+        "edges": [],
+        "place": "livadia-palace"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-083",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q165725 is already the event \"balkan-wars\""
+    },
+    {
+      "id": "2026-10-13-americas-095",
+      "writer": "B",
+      "fired": "2026-10-14T00:42Z",
+      "status": "written",
+      "written": {
+        "event": "2008-financial-crisis",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-112",
+      "writer": "B",
+      "fired": "2026-10-14T00:42Z",
+      "status": "written",
+      "written": {
+        "event": "lord-dunmore-s-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-113",
+      "writer": "B",
+      "fired": "2026-10-14T00:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4122685: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-13-americas-114",
+      "writer": "B",
+      "fired": "2026-10-14T00:42Z",
+      "status": "written",
+      "written": {
+        "event": "inca-civil-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-americas-115",
+      "writer": "B",
+      "fired": "2026-10-14T00:42Z",
+      "status": "written",
+      "written": {
+        "event": "september-11-attacks",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

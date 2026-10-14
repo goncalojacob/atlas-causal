@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "war-of-the-spanish-succession",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-13",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q150701",
+  "sitelinks": {
+    "count": 78,
+    "on": "2026-10-13"
+  },
+  "wikipedia": {
+    "en": "War of the Spanish Succession",
+    "pt": "Guerra da Sucessão Espanhola"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q150701"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Spanish Succession\", revision 1379217023"
+    }
+  ],
+  "title": "War of the Spanish Succession",
+  "summary": "The English Wikipedia article \"War of the Spanish Succession\", at revision 1379217023, opens: \"The War of the Spanish Succession, 1701 to 1714, was a European great power conflict. The death of Charles II of Spain in November 1700 without children led to a succession crisis between Philip of Anjou, whose claim was supported by his grandfather, Louis XIV of France, and Archduke Charles of Austria, backed by the Grand Alliance. Related conflicts include the Great Northern War and Queen Anne's War in North America.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q150701, imported by tools/import/wikidata.mjs. The item's own description reads \"major European conflict (1700–1714) after the death of Charles II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1701,
+    "end": 1714,
+    "date": "1701-03",
+    "endDate": "1714-09-07"
+  },
+  "place": "europe",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

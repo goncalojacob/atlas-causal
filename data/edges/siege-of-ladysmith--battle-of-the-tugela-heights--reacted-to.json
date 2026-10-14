@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-29",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,6 +34,6 @@
   "to": "battle-of-the-tugela-heights",
   "type": "reacted-to",
   "confidence": "probable",
-  "explanation": "The later record’s own cited article says it in its lead: \"General Sir Redvers Buller’s British army forced Louis Botha’s Boer army to lift the Siege of Ladysmith.\" Its § Background says what the battle was the fourth of: \"Buller’s army had made three earlier attempts to raise the Boer siege of Ladysmith... On 12 February, Buller ordered a fourth attempt to relieve Ladysmith.\" `reacted-to`, the same reading as the third attempt at Vaal Krantz a week earlier: the siege is what this battle was fought to end, not something that produced it. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
+  "explanation": "The later record’s own cited article says it in its lead: \"General Sir Redvers Buller’s British army forced Louis Botha’s Boer army to lift the Siege of Ladysmith.\" Its § Background says what the battle was the fourth of: \"Buller’s army had made three earlier attempts to raise the Boer siege of Ladysmith... On 12 February, Buller ordered a fourth attempt to relieve Ladysmith.\" `reacted-to`, the same reading as the third attempt at Vaal Krantz a week earlier: the siege is what this battle was fought to end. `probable` rather than `consensus`, because the only source the atlas can open here is the encyclopaedia article itself (rule 22).",
   "dispute": null
 }

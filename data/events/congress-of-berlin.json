@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "congress-of-berlin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q151423",
+  "sitelinks": {
+    "count": 59,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Congress of Berlin",
+    "pt": "Congresso de Berlim (1878)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q151423"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Congress of Berlin\", revision 1374102617"
+    }
+  ],
+  "title": "Congress of Berlin",
+  "summary": "The English Wikipedia article \"Congress of Berlin\", at revision 1374102617, opens: \"At the Congress of Berlin, the major European powers revised the territorial and political terms imposed by the Russian Empire on the Ottoman Empire by the Treaty of San Stefano, which had ended the Russo-Turkish War of 1877–1878. The Congress was the result of escalating tensions, particularly British opposition to Russian hegemony over the Ottoman Empire in the Balkans through the creation of a Russian-aligned 'Greater Bulgaria'. To secure the European balance of power in favour of its splendid isolation achieved after the Crimean War, Britain stationed the Mediterranean Fleet near Constantinople to enforce British demands. To avoid war, Otto von Bismarck, Chancellor of the newly formed German Empire, was asked to mediate a solution that would restore the Ottoman Empire's position as a counterbalance to Russian influence in the Mediterranean and the Balkans, in line with the principles of the 1856 Treaty of Paris.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q151423, imported by tools/import/wikidata.mjs. The item's own description reads \"meeting of representatives of the major European powers in 1878\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1878,
+    "end": 1878,
+    "date": "1878-06-13",
+    "endDate": "1878-07-13"
+  },
+  "place": "berlin",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

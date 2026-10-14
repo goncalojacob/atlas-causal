@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "battle-of-vertieres",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The siege article says where the garrison went: \"the defending French garrison under Jean-Pierre Marie Lavalette du Verdier evacuated the city and retreated to Cap-Français.\" The Vertières article says what was left a fortnight later: \"The only places controlled by the French forces were Môle St. Nicolas, held by Noailles, and Cap-Français, where, with 5,000 troops, French General Rochambeau was at bay.\" Precondition and not cause: two articles say the fall of the capital concentrated the French where the last battle was fought; neither says it decided it. Probable: Wikipedia alone.",
+  "explanation": "The siege article says where the garrison went: \"the defending French garrison under Jean-Pierre Marie Lavalette du Verdier evacuated the city and retreated to Cap-Français.\" The Vertières article says what was left a fortnight later: \"The only places controlled by the French forces were Môle St. Nicolas, held by Noailles, and Cap-Français, where, with 5,000 troops, French General Rochambeau was at bay.\" The two articles say the fall of the capital concentrated the French where the last battle was fought. Neither article says it decided the battle. That is why the edge is a precondition. Probable: Wikipedia alone.",
   "dispute": null
 }

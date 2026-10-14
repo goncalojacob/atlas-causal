@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lord-dunmore-s-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2632175",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Lord Dunmore's War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2632175"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lord Dunmore's War\", revision 1373960668"
+    }
+  ],
+  "title": "Lord Dunmore's War",
+  "summary": "The English Wikipedia article \"Lord Dunmore's War\", at revision 1373960668, opens: \"Lord Dunmore's War, also known as Dunmore's War, was a brief conflict in the fall of 1774 between the British Colony of Virginia and the Shawnee and Mingo in the trans-Appalachia region of the colony south of the Ohio River. The war lasted from May to October 1774. The governor of Virginia during the conflict was John Murray, 4th Earl of Dunmore, who in May 1774, asked the House of Burgesses to declare a state of war with the Shawnee and Mingo and call out the Virginia militia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2632175, imported by tools/import/wikidata.mjs. The item's own description reads \"1774 war between Virginian colonist and Native Americans\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1774,
+    "end": 1774,
+    "date": "1774-05",
+    "endDate": "1774-10"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

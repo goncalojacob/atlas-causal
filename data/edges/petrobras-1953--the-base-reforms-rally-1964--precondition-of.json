@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-18",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant",
     "run": "m57"
@@ -38,6 +38,6 @@
   "to": "the-base-reforms-rally-1964",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "One of the three decrees Goulart announced from the platform at the Central do Brasil expropriated the remaining private refineries in favour of Petrobras. The company created in 1953 is what that decree expanded and what it expanded into; without the monopoly of 1953 there is nothing for the refineries to be expropriated in favour of.",
+  "explanation": "One of the three decrees Goulart announced from the platform at the Central do Brasil expropriated the remaining private refineries in favour of Petrobras. The company created in 1953 is what that decree expanded and what it expanded into. Without the monopoly of 1953, there is nothing for the refineries to be expropriated in favour of.",
   "dispute": null
 }

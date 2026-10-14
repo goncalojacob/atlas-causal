@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-24",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -41,6 +41,6 @@
   "to": "action-of-12-17-january-1640",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The 1640 action's § Background has the failed siege in it and then the expedition: the reinforcements landed in 1635 \"greatly contributed to the defeat of John Maurits of Nassau's attack over Bahia\", and \"Another expedition was planned… to retake the Dutch base of Pernambuco\", whose command the Count of Torre took and which sailed with 41 ships and 5,000 soldiers into the action of January 1640. The siege article is the other end: the defenders \"managed to resist the Dutch attacks until they gave up taking the city and withdrew\". `precondition-of`: holding Bahia in 1638 is the position the 1640 fleet sailed from, and the article stops short of saying the defence brought the expedition about — it says the expedition was planned on Hoces's arrival, before the siege. That gap is why the type is not `caused`. Probable: Wikipedia alone, at two revisions.",
+  "explanation": "The 1640 action's § Background has the failed siege in it and then the expedition: the reinforcements landed in 1635 \"greatly contributed to the defeat of John Maurits of Nassau's attack over Bahia\", and \"Another expedition was planned… to retake the Dutch base of Pernambuco\", whose command the Count of Torre took and which sailed with 41 ships and 5,000 soldiers into the action of January 1640. The siege article is the other end: the defenders \"managed to resist the Dutch attacks until they gave up taking the city and withdrew\". Holding Bahia in 1638 is the position the 1640 fleet sailed from. The article stops short of saying the defence brought the expedition about. It says the expedition was planned on Hoces's arrival, before the siege. That gap is why the edge is `precondition-of`. Probable: Wikipedia alone, at two revisions.",
   "dispute": null
 }
