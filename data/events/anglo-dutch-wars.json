@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "anglo-dutch-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q755170",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Anglo-Dutch wars",
+    "pt": "Guerras Anglo-Holandesas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q755170"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Dutch wars\", revision 1376392375"
+    }
+  ],
+  "title": "Anglo-Dutch wars",
+  "summary": "The English Wikipedia article \"Anglo-Dutch wars\", at revision 1376392375, opens: \"The Anglo–Dutch wars were a series of four conflicts fought between the Dutch Republic and the states of England and Great Britain between 1652 and 1784. The first three wars occurred in the second half of the 17th century due to Anglo-Dutch tensions over trade and colonial expansion, while the fourth conflict was fought more than a century later. Almost all the battles were naval engagements.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q755170, imported by tools/import/wikidata.mjs. The item's own description reads \"series of wars during the 17th and 18 century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1652,
+    "end": 1784
+  },
+  "place": "north-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

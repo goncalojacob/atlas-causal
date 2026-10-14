@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "second-industrial-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q217200",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Second Industrial Revolution",
+    "pt": "Segunda Revolução Industrial"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q217200"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Industrial Revolution\", revision 1379318168"
+    }
+  ],
+  "title": "Second Industrial Revolution",
+  "summary": "The English Wikipedia article \"Second Industrial Revolution\", at revision 1379318168, opens: \"The Second Industrial Revolution, also known as the Technological Revolution, was a phase of rapid scientific discovery, standardization, mass production and industrialization from the late 19th century into the early 20th century. The First Industrial Revolution, which ended in the middle of the 19th century, was punctuated by a slowdown in important inventions before the Second Industrial Revolution started in 1870. Though a number of its events can be traced to earlier innovations in manufacturing, such as the establishment of a machine tool industry, the development of methods for manufacturing interchangeable parts, as well as the invention of the Bessemer process and open hearth furnace to produce steel, later developments heralded the Second Industrial Revolution, which is generally dated between 1870 and 1914 when World War I commenced.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q217200, imported by tools/import/wikidata.mjs. The item's own description reads \"phase of rapid industrialization in the final third of the 19th century and the beginning of the 20th\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1860,
+      "max": 1869
+    },
+    "end": {
+      "min": 1890,
+      "max": 1899
+    }
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
