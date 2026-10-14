@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "dreyfus-affair",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q173457",
+  "sitelinks": {
+    "count": 63,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Dreyfus affair",
+    "pt": "Caso Dreyfus"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q173457"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dreyfus affair\", revision 1373847260"
+    }
+  ],
+  "title": "Dreyfus affair",
+  "summary": "The English Wikipedia article \"Dreyfus affair\", at revision 1373847260, opens: \"The Dreyfus affair was a political scandal that divided the Third French Republic from 1894 until its resolution in 1906. The scandal began in December 1894 when Captain Alfred Dreyfus, a 35-year-old Alsatian French artillery officer of Jewish descent, was wrongfully convicted of treason for communicating French military secrets to the German Embassy in Paris. He was sentenced to life imprisonment and sent overseas to the penal colony on Devil's Island in French Guiana, where he spent the following five years imprisoned in very harsh conditions.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q173457, imported by tools/import/wikidata.mjs. The item's own description reads \"1894–1906 political scandal in France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1894,
+    "end": 1906
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

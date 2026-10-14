@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "maghrebi-war-1699-1702",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q106959443",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Maghrebi war (1699–1702)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q106959443"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Maghrebi war (1699–1702)\", revision 1378807508"
+    }
+  ],
+  "title": "Maghrebi war (1699–1702)",
+  "summary": "The English Wikipedia article \"Maghrebi war (1699–1702)\", at revision 1378807508, opens: \"The Maghrebi war (1699–1702) was a conflict involving a Tunisian, Tripolitanian, and Moroccan coalition, and the Regency of Algiers. It was an important milestone in the further weakening of the already fragile Ottoman grip over the Maghreb, as both sides utterly ignored the Ottoman sultan's pleas to sign a peace treaty. This war also led to the renewal of the Muradid infighting, which would later lead to the establishment of the Beylik of Tunis, and the Husainid dynasty in 1705.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q106959443, imported by tools/import/wikidata.mjs. The item's own description reads \"Military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1699,
+    "end": 1702
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "conflicts-between-the-regency-of-algiers-and-morocco"
+}

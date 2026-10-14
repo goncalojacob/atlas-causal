@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "partitions-of-poland",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q152006",
+  "sitelinks": {
+    "count": 64,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Partitions of Poland",
+    "pt": "Partilhas da Polônia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q152006"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Partitions of Poland\", revision 1375837337"
+    }
+  ],
+  "title": "Partitions of Poland",
+  "summary": "The English Wikipedia article \"Partitions of Poland\", at revision 1375837337, opens: \"The Partitions of Poland were three partitions of the Polish–Lithuanian Commonwealth that took place between 1772 and 1795, toward the end of the 18th century. The partitions ended the existence of the state, resulting in the elimination of sovereign Poland and Lithuania for 123 years. The partitions were conducted by the Habsburg monarchy, the Kingdom of Prussia, and the Russian Empire, which divided up the commonwealth's lands among themselves progressively in the process of territorial seizures and annexations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q152006, imported by tools/import/wikidata.mjs. The item's own description reads \"forced partition of the Polish–Lithuanian Commonwealth\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1772,
+    "end": 1772
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "founding",
+  "actors": []
+}
