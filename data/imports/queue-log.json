@@ -1082,6 +1082,130 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-074",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "unification-of-italy",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-075",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "unification-of-germany",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-076",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "franco-prussian-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-077",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "great-famine-ireland",
+        "edges": [],
+        "place": "ireland-q22890"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-078",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "russo-turkish-war-1877-1878",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-079",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "congress-of-berlin",
+        "edges": [
+          "congress-of-berlin--assassination-of-archduke-franz-ferdinand--precondition-of"
+        ],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-080",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q8729 is already the event \"russian-revolution\""
+    },
+    {
+      "id": "2026-10-13-europe-081",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-stalingrad",
+        "edges": [],
+        "place": "volgograd"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-082",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "yalta-conference",
+        "edges": [],
+        "place": "livadia-palace"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-083",
+      "writer": "A",
+      "fired": "2026-10-14T00:22Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q165725 is already the event \"balkan-wars\""
     }
   ]
 }

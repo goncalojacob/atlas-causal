@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "congress-of-berlin--assassination-of-archduke-franz-ferdinand--precondition-of",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-A"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Congress of Berlin\", revision 1374102617"
+    }
+  ],
+  "from": "congress-of-berlin",
+  "to": "assassination-of-archduke-franz-ferdinand",
+  "type": "precondition-of",
+  "confidence": "probable",
+  "explanation": "The article \"Congress of Berlin\" (revision 1374102617) writes of the territory the Congress awarded Austria-Hungary: \"Although Austria-Hungary gained substantial territory, this angered the South Slavs and led to decades of tensions in Bosnia and Herzegovina, culminating in the assassination of Archduke Franz Ferdinand.\" The sentence names the award as what angered the South Slavs, and the assassination as what those tensions came to. The edge reads it as a precondition and not as a cause, because the article puts decades between the two.",
+  "dispute": null
+}
