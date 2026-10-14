@@ -5861,6 +5861,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-14",
+      "id": "anglo-dutch-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Anglo-Dutch wars"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "anglo-french-war-1627-1629",
       "kind": "event",
@@ -24998,6 +25027,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "chernobyl-disaster",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Chernobyl disaster"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -27944,6 +28001,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "dreyfus-affair",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Dreyfus affair"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -28061,6 +28146,35 @@
       "revised": null,
       "status": "active",
       "title": "Dutch conquest of Malabar"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "dutch-golden-age",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Dutch Golden Age"
     },
     {
       "authors": [
@@ -32208,6 +32322,34 @@
       "revised": null,
       "status": "active",
       "title": "Great Peace of Montreal"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "great-purge",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Great Purge"
     },
     {
       "authors": [
@@ -39014,6 +39156,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "new-imperialism",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "New Imperialism"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "law",
       "cites": [
         "wikidata",
@@ -41143,6 +41313,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "founding",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "partitions-of-poland",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Partitions of Poland"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "treaty",
       "cites": [
         "wikidata",
@@ -41656,6 +41855,37 @@
       "revised": "2026-09-17",
       "status": "active",
       "title": "The Platt Amendment"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "polish-russian-war-1609-1618",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "span-from-title",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Polish–Russian War (1609–1618)"
     },
     {
       "authors": [
@@ -45470,6 +45700,34 @@
       "revised": null,
       "status": "active",
       "title": "Second Gulf of Sidra offensive"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-14",
+      "id": "second-industrial-revolution",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Industrial Revolution"
     },
     {
       "authors": [
@@ -57426,6 +57684,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "anglo-dutch-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "anglo-french-war-1627-1629",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -58908,6 +59172,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "chernobyl-disaster",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "chickasaw-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -59094,6 +59364,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "dreyfus-affair",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "dummer-s-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -59107,6 +59383,12 @@
     },
     {
       "id": "dutch-conquest-of-malabar",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "dutch-golden-age",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -59281,6 +59563,12 @@
     },
     {
       "id": "great-northern-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "great-purge",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -59634,6 +59922,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "new-imperialism",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "northeast-coast-campaign-1676",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -59730,6 +60024,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "partitions-of-poland",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "peace-of-westphalia",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -59749,6 +60049,12 @@
     },
     {
       "id": "persian-constitutional-revolution",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "polish-russian-war-1609-1618",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -59971,6 +60277,12 @@
     },
     {
       "id": "scientific-revolution",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "second-industrial-revolution",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

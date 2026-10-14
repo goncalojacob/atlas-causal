@@ -2768,6 +2768,12 @@
     },
     {
       "dissent": false,
+      "id": "anglo-dutch-wars",
+      "kind": "event",
+      "locator": "Q755170"
+    },
+    {
+      "dissent": false,
       "id": "anglo-french-war-1627-1629",
       "kind": "event",
       "locator": "Q4065200"
@@ -6266,6 +6272,12 @@
     },
     {
       "dissent": false,
+      "id": "chernobyl-disaster",
+      "kind": "event",
+      "locator": "Q486"
+    },
+    {
+      "dissent": false,
       "id": "chickasaw-wars",
       "kind": "event",
       "locator": "Q495858"
@@ -6734,6 +6746,12 @@
     },
     {
       "dissent": false,
+      "id": "dreyfus-affair",
+      "kind": "event",
+      "locator": "Q173457"
+    },
+    {
+      "dissent": false,
       "id": "dummer-s-war",
       "kind": "event",
       "locator": "Q1265114"
@@ -6749,6 +6767,12 @@
       "id": "dutch-conquest-of-malabar",
       "kind": "event",
       "locator": "Q122452193"
+    },
+    {
+      "dissent": false,
+      "id": "dutch-golden-age",
+      "kind": "event",
+      "locator": "Q661566"
     },
     {
       "dissent": false,
@@ -7469,6 +7493,12 @@
       "id": "great-peace-of-montreal",
       "kind": "event",
       "locator": "Q326028"
+    },
+    {
+      "dissent": false,
+      "id": "great-purge",
+      "kind": "event",
+      "locator": "Q187650"
     },
     {
       "dissent": false,
@@ -8660,6 +8690,12 @@
     },
     {
       "dissent": false,
+      "id": "new-imperialism",
+      "kind": "event",
+      "locator": "Q304121"
+    },
+    {
+      "dissent": false,
       "id": "new-laws",
       "kind": "event",
       "locator": "Q1121487"
@@ -9032,6 +9068,12 @@
     },
     {
       "dissent": false,
+      "id": "partitions-of-poland",
+      "kind": "event",
+      "locator": "Q152006"
+    },
+    {
+      "dissent": false,
       "id": "peace-of-prague-1635",
       "kind": "event",
       "locator": "Q1455240"
@@ -9113,6 +9155,12 @@
       "id": "philippine-revolution",
       "kind": "event",
       "locator": "Q422082"
+    },
+    {
+      "dissent": false,
+      "id": "polish-russian-war-1609-1618",
+      "kind": "event",
+      "locator": "Q1044829"
     },
     {
       "dissent": false,
@@ -9773,6 +9821,12 @@
       "id": "second-gulf-of-sidra-offensive",
       "kind": "event",
       "locator": "Q3477174"
+    },
+    {
+      "dissent": false,
+      "id": "second-industrial-revolution",
+      "kind": "event",
+      "locator": "Q217200"
     },
     {
       "dissent": false,

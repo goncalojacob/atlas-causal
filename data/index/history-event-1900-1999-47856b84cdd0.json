@@ -9971,6 +9971,15 @@
         }
       ]
     },
+    "chernobyl-disaster": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "chiado-fire": {
       "from": "git",
       "versions": [
@@ -13663,6 +13672,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "great-purge": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },

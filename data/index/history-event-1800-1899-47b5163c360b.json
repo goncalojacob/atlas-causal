@@ -1391,6 +1391,15 @@
         }
       ]
     },
+    "dreyfus-affair": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "ecuadorian-war-of-independence": {
       "from": "git",
       "versions": [
@@ -2017,6 +2026,15 @@
         }
       ]
     },
+    "new-imperialism": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
     "panic-of-1893": {
       "from": "git",
       "versions": [
@@ -2449,6 +2467,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "second-industrial-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
         }
       ]
     },
