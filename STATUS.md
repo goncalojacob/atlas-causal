@@ -25908,3 +25908,4 @@ Writer B 2026-10-14T03:45:20Z: 6 written, 0 partial, 0 refused, 0 skipped
 Rewriter 2026-10-14T03:09:50Z: 51 records rewritten, 49 left, 4928 of 4980 done
 
 Rewriter started 2026-10-14T03:53:47Z by scheduled
+Writer A 2026-10-14T04:25:21Z: 10 written, 0 partial, 0 refused, 0 skipped
