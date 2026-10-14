@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "dutch-golden-age",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q661566",
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Dutch Golden Age",
+    "pt": "Século de Ouro dos Países Baixos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q661566"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch Golden Age\", revision 1369700015"
+    }
+  ],
+  "title": "Dutch Golden Age",
+  "summary": "The English Wikipedia article \"Dutch Golden Age\", at revision 1369700015, opens: \"The Dutch Golden Age was a period in the history of the Netherlands which roughly lasted from 1588, when the Dutch Republic was established, to 1672, when the Rampjaar occurred.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q661566, imported by tools/import/wikidata.mjs. The item's own description reads \"historical period of the Netherlands, roughly spanning the 17th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1575,
+    "end": 1675
+  },
+  "place": "low-countries",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

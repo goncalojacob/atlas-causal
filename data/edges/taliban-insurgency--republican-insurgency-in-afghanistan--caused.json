@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-12",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -35,6 +35,6 @@
   "to": "republican-insurgency-in-afghanistan",
   "type": "caused",
   "confidence": "probable",
-  "explanation": "The article \"Taliban insurgency\" (revision 1379529630) states: \"The end of the Taliban insurgency resulted in the beginning of a new insurgency against the restored Islamic Emirate of Afghanistan by the National Resistance Front and allied groups which fight under the banner of the Islamic Republic of Afghanistan.\" The insurgency's own article states what its end began; the two are siblings under war-in-afghanistan-2001-2021 and afghan-conflict, so the edge is not one from a parent to its own child.",
+  "explanation": "The article \"Taliban insurgency\" (revision 1379529630) states: \"The end of the Taliban insurgency resulted in the beginning of a new insurgency against the restored Islamic Emirate of Afghanistan by the National Resistance Front and allied groups which fight under the banner of the Islamic Republic of Afghanistan.\" The insurgency's own article states what its end began. The two are siblings under war-in-afghanistan-2001-2021 and afghan-conflict, so the edge is not one from a parent to its own child.",
   "dispute": null
 }

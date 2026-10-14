@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,6 @@
   "to": "1964-brazilian-coup-detat",
   "type": "precondition-of",
   "confidence": "probable",
-  "explanation": "The republic the coup overthrew was Vargas’s residue. The Fourth Republic began in 1946 with his ousting; all three of its major parties came out of him — the PTB carrying his labour legacy, the PSD grown from his political machine, the UDN from the opposition to him — and the opposition between national-statists and liberal-conservatives that the sources say organised the whole period is the argument about his settlement. The crises that preceded 1964, in 1954, 1955 and 1961, are the same two blocs failing to remove each other. `precondition-of` and not `caused`: 1930 did not require 1964, and the thirty-four years between them contain their own decisions.",
+  "explanation": "The republic the coup overthrew was Vargas’s residue. The Fourth Republic began in 1946 with his ousting. All three of its major parties came out of him: the PTB carried his labour legacy, the PSD grew from his political machine, and the UDN came from the opposition to him. The opposition between national-statists and liberal-conservatives that the sources say organised the whole period is the argument about his settlement. The crises that preceded 1964, in 1954, 1955 and 1961, are the same two blocs failing to remove each other. `precondition-of` and not `caused`: 1930 did not require 1964, and the thirty-four years between them contain their own decisions.",
   "dispute": null
 }

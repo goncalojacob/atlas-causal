@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-chaldiran",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q745110",
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Battle of Chaldiran",
+    "pt": "Batalha de Chaldirã"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q745110"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chaldiran\", revision 1370108848"
+    }
+  ],
+  "title": "Battle of Chaldiran",
+  "summary": "The English Wikipedia article \"Battle of Chaldiran\", at revision 1370108848, opens: \"The Battle of Chaldiran took place on 23 August 1514 and ended with a decisive victory for the Ottoman Empire over the Safavid Empire. As a result, the Ottomans annexed Eastern Anatolia and Upper Mesopotamia from Safavid Iran. It marked the first Ottoman expansion into Eastern Anatolia, and the halt of the Safavid expansion to the west. The Battle of Chaldiran was just the beginning of 41 years of destructive war between the Safavids and Ottomans, which only ended in 1555 with the Peace of Amasya. Though the Safavids eventually reconquered Mesopotamia and Eastern Anatolia during the reign of Abbas the Great, they would be permanently ceded to the Ottomans by the 1639 Treaty of Zuhab.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q745110, imported by tools/import/wikidata.mjs. The item's own description reads \"1514 battle during the Ottoman–Persian Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1514,
+    "end": 1514,
+    "date": "1514-08-23"
+  },
+  "place": "chaldoran",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

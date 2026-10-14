@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-16",
-  "revised": null,
+  "revised": "2026-10-14",
   "origin": {
     "tool": "assistant",
     "run": "m50"
@@ -38,6 +38,6 @@
   "to": "the-brazilian-gold-cycle",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "Gold was found in Minas Gerais in the 1690s by men who had walked there, and what turned a find into a cycle was that half a million enslaved Africans could be brought to the region to work it — against some four hundred thousand Portuguese. The traffic was already running and already organised when the strikes happened, which is why the type is `enabled` rather than `caused`: it did not put the gold in the ground or send anyone to look for it, but a mining economy on that scale was not available to a colony that had to recruit its miners.",
+  "explanation": "Gold was found in Minas Gerais in the 1690s by men who had walked there, and what turned a find into a cycle was that half a million enslaved Africans could be brought to the region to work it, against some four hundred thousand Portuguese. The traffic was already running and already organised when the strikes happened, which is why the type is `enabled` rather than `caused`. It did not put the gold in the ground or send anyone to look for it. A mining economy on that scale was not available to a colony that had to recruit its miners.",
   "dispute": null
 }

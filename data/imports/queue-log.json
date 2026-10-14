@@ -1267,6 +1267,248 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-084",
+      "writer": "A",
+      "fired": "2026-10-14T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "great-purge",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-085",
+      "writer": "A",
+      "fired": "2026-10-14T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "chernobyl-disaster",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-086",
+      "writer": "A",
+      "fired": "2026-10-14T01:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q56039: none of its classes (Q1140229, Q50844387) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-13-europe-087",
+      "writer": "A",
+      "fired": "2026-10-14T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "dreyfus-affair",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-088",
+      "writer": "A",
+      "fired": "2026-10-14T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "dutch-golden-age",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-089",
+      "writer": "A",
+      "fired": "2026-10-14T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "polish-russian-war-1609-1618",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-090",
+      "writer": "A",
+      "fired": "2026-10-14T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-dutch-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-091",
+      "writer": "A",
+      "fired": "2026-10-14T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "partitions-of-poland",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-092",
+      "writer": "A",
+      "fired": "2026-10-14T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "second-industrial-revolution",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-093",
+      "writer": "A",
+      "fired": "2026-10-14T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "new-imperialism",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-094",
+      "writer": "A",
+      "fired": "2026-10-14T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "spanish-flu",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-096",
+      "writer": "A",
+      "fired": "2026-10-14T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-atlantic",
+        "edges": [],
+        "place": "irish-sea"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-europe-097",
+      "writer": "A",
+      "fired": "2026-10-14T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "prague-spring",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-africa-098",
+      "writer": "A",
+      "fired": "2026-10-14T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "ethiopian-adal-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-africa-099",
+      "writer": "A",
+      "fired": "2026-10-14T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "komenda-wars",
+        "edges": [],
+        "place": "fort-komenda"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-africa-100",
+      "writer": "A",
+      "fired": "2026-10-14T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "oman-zanzibar-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-africa-101",
+      "writer": "A",
+      "fired": "2026-10-14T02:24Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3458428: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-13-africa-102",
+      "writer": "A",
+      "fired": "2026-10-14T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "maghrebi-war-1699-1702",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-103",
+      "writer": "A",
+      "fired": "2026-10-14T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-diu",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-104",
+      "writer": "A",
+      "fired": "2026-10-14T02:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chaldiran",
+        "edges": [],
+        "place": "chaldoran"
+      },
+      "refusals": []
     }
   ]
 }
