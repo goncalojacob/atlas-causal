@@ -2381,6 +2381,78 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-035",
+      "writer": "A",
+      "fired": "2026-10-15T21:22Z",
+      "status": "written",
+      "written": {
+        "event": "nine-years-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-036",
+      "writer": "A",
+      "fired": "2026-10-15T21:22Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-first-coalition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-037",
+      "writer": "A",
+      "fired": "2026-10-15T21:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-alcacovas",
+        "edges": [],
+        "place": "alcacovas"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-038",
+      "writer": "A",
+      "fired": "2026-10-15T21:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-zaragoza",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-039",
+      "writer": "A",
+      "fired": "2026-10-15T21:22Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-castilian-succession",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-040",
+      "writer": "A",
+      "fired": "2026-10-15T21:22Z",
+      "status": "written",
+      "written": {
+        "event": "revolutions-of-tunis",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

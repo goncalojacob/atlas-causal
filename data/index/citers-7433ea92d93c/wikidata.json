@@ -9050,6 +9050,12 @@
     },
     {
       "dissent": false,
+      "id": "nine-years-war",
+      "kind": "event",
+      "locator": "Q152218"
+    },
+    {
+      "dissent": false,
       "id": "north-african-campaign",
       "kind": "event",
       "locator": "Q218678"
@@ -9863,6 +9869,12 @@
       "id": "revolutions-of-1989",
       "kind": "event",
       "locator": "Q382861"
+    },
+    {
+      "dissent": false,
+      "id": "revolutions-of-tunis",
+      "kind": "event",
+      "locator": "Q3458428"
     },
     {
       "dissent": false,
@@ -11618,6 +11630,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-alcacovas",
+      "kind": "event",
+      "locator": "Q593355"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-bassein-1534",
       "kind": "event",
       "locator": "Q4887044"
@@ -11867,6 +11885,12 @@
       "id": "treaty-of-windsor",
       "kind": "event",
       "locator": "Q2518953"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-zaragoza",
+      "kind": "event",
+      "locator": "Q1147471"
     },
     {
       "dissent": false,
@@ -12146,9 +12170,21 @@
     },
     {
       "dissent": false,
+      "id": "war-of-the-castilian-succession",
+      "kind": "event",
+      "locator": "Q282135"
+    },
+    {
+      "dissent": false,
       "id": "war-of-the-fifth-coalition",
       "kind": "event",
       "locator": "Q684324"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-first-coalition",
+      "kind": "event",
+      "locator": "Q18817"
     },
     {
       "dissent": false,

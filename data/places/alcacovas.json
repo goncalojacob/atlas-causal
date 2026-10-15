@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "alcacovas",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q422014",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "pt": "Alcáçovas"
+  },
+  "sources": [],
+  "names": [
+    "Alcáçovas"
+  ],
+  "where": {
+    "lon": -8.15701,
+    "lat": 38.39527,
+    "precision": "city",
+    "label": "Alcáçovas"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

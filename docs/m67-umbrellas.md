@@ -1802,3 +1802,11 @@ Writer A imported it from the planner's queue as item `2026-10-15-europe-033`, r
 ## Writer A, 2026-10-15: `hundred-days`, filed under `napoleonic-wars` with neither an actor nor a place
 
 Writer A filed it there because the planner's queue asked for it in item `2026-10-15-europe-034`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-15: `war-of-the-castilian-succession`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-15-europe-039`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-15: `revolutions-of-tunis`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-15-africa-040`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
