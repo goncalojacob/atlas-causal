@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "british-expedition-to-abyssinia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q743652",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "British expedition to Abyssinia",
+    "pt": "Expedição britânica à Abissínia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q743652"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"British expedition to Abyssinia\", revision 1377469891"
+    }
+  ],
+  "title": "British expedition to Abyssinia",
+  "summary": "The English Wikipedia article \"British expedition to Abyssinia\", at revision 1377469891, opens: \"The British expedition to Abyssinia was a rescue mission and punitive expedition carried out in 1868 by the armed forces of the British Empire against the Ethiopian Empire. Emperor Tewodros II of Ethiopia, then often referred to by the anglicized name Theodore, imprisoned several missionaries and two representatives of the British government in an attempt to force the British government to comply with his requests for military assistance. The punitive expedition launched by the British in response required the transportation of a sizeable military force hundreds of kilometres across mountainous terrain lacking any road system. The formidable obstacles to the action were overcome by the commander of the expedition, General Robert Napier, who captured the Ethiopian capital, and rescued all the hostages.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q743652, imported by tools/import/wikidata.mjs. The item's own description reads \"punitive expedition by the British to Abyssinia 1867-1868\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1867,
+    "end": 1868
+  },
+  "place": "ethiopian-empire",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

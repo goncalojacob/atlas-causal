@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "st-bartholomew-s-day-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q163891",
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "St. Bartholomew's Day massacre",
+    "pt": "Massacre da noite de São Bartolomeu"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q163891"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"St. Bartholomew's Day massacre\", revision 1376363315"
+    }
+  ],
+  "title": "St. Bartholomew's Day massacre",
+  "summary": "The English Wikipedia article \"St. Bartholomew's Day massacre\", at revision 1376363315, opens: \"The Saint Bartholomew's Day massacre in 1572 was a targeted group of assassinations and a wave of Catholic mob violence directed against the Huguenots during the French Wars of Religion. Traditionally believed to have been instigated by Queen Catherine de' Medici, the mother of King Charles IX, the massacre started a few days after the marriage on 18 August of the king's sister Margaret to the Protestant King Henry III of Navarre. Many of the wealthiest and most prominent Huguenots had gathered in largely Catholic Paris to attend the wedding.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q163891, imported by tools/import/wikidata.mjs. The item's own description reads \"massacre of the Huguenots (French Calvinist Protestants) by the French government, 1572\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1572,
+    "end": 1572,
+    "date": "1572-08-23",
+    "endDate": "1572-10-05"
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "french-wars-of-religion"
+}

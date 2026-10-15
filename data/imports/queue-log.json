@@ -1935,6 +1935,126 @@
         "place": "punjab-q169132"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-14-europe-035",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "glorious-revolution",
+        "edges": [],
+        "place": "british-isles"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-europe-037",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "st-bartholomew-s-day-massacre",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-001",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "first-barbary-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-002",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "second-barbary-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-003",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "hispano-moroccan-war-1859-1860",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-004",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "french-conquest-of-tunisia",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-005",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "franco-moroccan-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-006",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "british-expedition-to-abyssinia",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-007",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "congo-arab-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-008",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "second-madagascar-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
