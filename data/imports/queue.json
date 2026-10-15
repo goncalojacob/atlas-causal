@@ -1,501 +1,7 @@
 {
   "schema": 1,
   "kind": "import-queue",
-  "generated": "2026-10-14",
   "items": [
-    {
-      "id": "2026-10-13-asia-105",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "asia",
-      "writer": "A",
-      "title": "First Anglo-Mysore War",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names the First Anglo-Mysore War. Asia trails and comes second within this rank.",
-      "qid": "Q617070",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-13-asia-106",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "asia",
-      "writer": "A",
-      "title": "Fourth Anglo-Mysore War",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names the Fourth Anglo-Mysore War. Asia trails and comes second within this rank.",
-      "qid": "Q617782",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-13-asia-107",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "asia",
-      "writer": "A",
-      "title": "White Lotus Rebellion",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names the White Lotus Rebellion, against Qing China. Asia trails and comes second within this rank.",
-      "qid": "Q997220",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-13-asia-108",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "asia",
-      "writer": "A",
-      "title": "Carnatic wars",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names the Carnatic wars, fought in the Carnatic region of India. Asia trails and comes second within this rank.",
-      "qid": "Q976827",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-13-asia-109",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "asia",
-      "writer": "A",
-      "title": "Deccan wars",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names the Mughal–Maratha Wars under the title Deccan wars. Asia trails and comes second within this rank. The item carries no point and no located P276, P131 or P17, so it needs a lane named for it in the seeds file before the writer can take it.",
-      "qid": "Q139845",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-13-asia-110",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "asia",
-      "writer": "A",
-      "title": "Transition from Ming to Qing",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names the Qing conquest of the Ming under the title Transition from Ming to Qing. Asia trails and comes second within this rank.",
-      "qid": "Q3427966",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-13-asia-111",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "asia",
-      "writer": "A",
-      "title": "Nader Shah's invasion of India",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names Nader Shah's invasion of India. Asia trails and comes second within this rank.",
-      "qid": "Q6957844",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-14-africa-001",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q31944",
-      "title": "Mahdist War",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1881 to 1899 war in Sudan against British and Egyptian rule, part of the Scramble for Africa the atlas already holds. Africa is the lane that trails.",
-      "parents": [
-        "scramble-for-africa"
-      ]
-    },
-    {
-      "id": "2026-10-14-africa-002",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q329203",
-      "title": "First Boer War",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1880 to 1881 war between Britain and the Transvaal Boers. Its own article names it part of Q1676845, the Boer Wars series, but that record was merged into second-boer-war in M44b and the merge note says the held record covers only the second war. No living record stands for the series, so this stays unfiled."
-    },
-    {
-      "id": "2026-10-14-africa-003",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q476855",
-      "title": "Mau Mau rebellion",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1952 to 1960 uprising against British rule in Kenya, part of the decolonisation of Africa the atlas already holds.",
-      "parents": [
-        "decolonisation-of-africa"
-      ]
-    },
-    {
-      "id": "2026-10-14-africa-004",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q142529",
-      "title": "Algerian Civil War",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1992 to 2002 civil war between the Algerian state and Islamist rebels. Africa is the lane that trails."
-    },
-    {
-      "id": "2026-10-14-africa-005",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q722051",
-      "title": "Anglo-Ashanti wars",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The nineteenth-century wars between Britain and the Ashanti Empire, part of the Scramble for Africa.",
-      "parents": [
-        "scramble-for-africa"
-      ]
-    },
-    {
-      "id": "2026-10-14-africa-006",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q2629782",
-      "title": "French conquest of Algeria",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1830 to 1904 French conquest. Africa is the lane that trails."
-    },
-    {
-      "id": "2026-10-14-africa-007",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1993171",
-      "title": "1919 Egyptian revolution",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1919 uprising against British rule in Egypt. Africa is the lane that trails."
-    },
-    {
-      "id": "2026-10-14-africa-008",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q616939",
-      "title": "Anglo-Egyptian War",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1882 war that led to British occupation of Egypt. Africa is the lane that trails."
-    },
-    {
-      "id": "2026-10-14-africa-009",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q657661",
-      "title": "Mozambican Civil War",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1977 to 1992 civil war in Mozambique, part of the Cold War the atlas already holds.",
-      "parents": [
-        "cold-war"
-      ]
-    },
-    {
-      "id": "2026-10-14-africa-010",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1569328",
-      "title": "Boko Haram insurgency",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The insurgency in Nigeria and neighbouring states since 2009. Africa is the lane that trails."
-    },
-    {
-      "id": "2026-10-14-africa-011",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q18702324",
-      "title": "Libyan crisis",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The conflicts in Libya since 2011. Africa is the lane that trails."
-    },
-    {
-      "id": "2026-10-14-africa-012",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1781531",
-      "title": "Atrocities in the Congo Free State",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The atrocities under Leopold II's personal rule of the Congo Free State, 1885 to 1908. Africa is the lane that trails."
-    },
-    {
-      "id": "2026-10-14-asia-013",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q605321",
-      "title": "First Battle of Panipat",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1526 battle that founded the Mughal Empire in India. Asia is the lane that trails after Africa."
-    },
-    {
-      "id": "2026-10-14-asia-014",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q164983",
-      "title": "Gallipoli campaign",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1915 to 1916 Allied campaign against the Ottoman Empire. Asia is the lane that trails after Africa."
-    },
-    {
-      "id": "2026-10-14-asia-015",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q46333",
-      "title": "Long March",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1934 to 1935 retreat of the Chinese Communist forces, part of the Chinese Civil War the atlas already holds.",
-      "parents": [
-        "chinese-civil-war"
-      ]
-    },
-    {
-      "id": "2026-10-14-asia-016",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1551794",
-      "title": "Japanese invasion of Manchuria",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1931 to 1932 invasion that established Manchukuo, which the item's own claims file under the Second Sino-Japanese War the atlas already holds.",
-      "parents": [
-        "second-sino-japanese-war"
-      ]
-    },
-    {
-      "id": "2026-10-14-asia-017",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q242099",
-      "title": "Mukden incident",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1931 staged attack Japan used as a pretext for the invasion of Manchuria, queued in the same fire. The planner leaves the filing and the edge off rather than guess the id the import will give that record; a later fire can connect them once it exists."
-    },
-    {
-      "id": "2026-10-14-asia-018",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q3266633",
-      "title": "Nakba",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1948 displacement of Palestinians, part of the Israeli-Palestinian conflict the atlas already holds.",
-      "parents": [
-        "israeli-palestinian-conflict"
-      ]
-    },
-    {
-      "id": "2026-10-14-asia-019",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q49105",
-      "title": "First Intifada",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1987 to 1993 Palestinian uprising, part of the Israeli-Palestinian conflict the atlas already holds.",
-      "parents": [
-        "israeli-palestinian-conflict"
-      ]
-    },
-    {
-      "id": "2026-10-14-asia-020",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q243590",
-      "title": "Second Anglo-Sikh War",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1848 to 1849 war that ended the Sikh Empire. Asia is the lane that trails after Africa."
-    },
-    {
-      "id": "2026-10-14-asia-021",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q19686631",
-      "title": "Yemeni civil war (2014–present)",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The civil war in Yemen since 2014. Asia is the lane that trails after Africa."
-    },
-    {
-      "id": "2026-10-14-asia-022",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q17507684",
-      "title": "War against the Islamic State",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The war against the Islamic State since 2014. Its own claims also name the Syrian Civil War, which this atlas retracted in M40b, so the filing goes to the Iraqi insurgency the atlas already holds instead.",
-      "parents": [
-        "iraqi-insurgency"
-      ]
-    },
-    {
-      "id": "2026-10-14-asia-023",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q122976243",
-      "title": "October 7 attacks",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 2023 attacks on Israel, which the item's own claims file under the Gaza War the atlas already holds.",
-      "parents": [
-        "gaza-war"
-      ]
-    },
-    {
-      "id": "2026-10-14-asia-024",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1073476",
-      "title": "Northern Expedition",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1926 to 1928 Kuomintang military campaign that unified most of China under the Nationalist government. Asia is the lane that trails after Africa."
-    },
-    {
-      "id": "2026-10-14-asia-025",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q274365",
-      "title": "8888 Uprising",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1988 pro-democracy uprising in Myanmar. Asia is the lane that trails after Africa."
-    },
-    {
-      "id": "2026-10-14-asia-026",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q28136551",
-      "title": "Rohingya genocide",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The persecution of the Rohingya in Myanmar since 2016. Asia is the lane that trails after Africa."
-    },
-    {
-      "id": "2026-10-14-americas-027",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q768496",
-      "title": "Banana Wars",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The United States military interventions in Central America and the Caribbean, 1898 to 1934. The Americas lane comes after Africa and Asia."
-    },
-    {
-      "id": "2026-10-14-americas-028",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3439047",
-      "title": "Dominican War of Independence",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1844 to 1856 war that secured the Dominican Republic's independence from Haiti. The Americas lane comes after Africa and Asia."
-    },
-    {
-      "id": "2026-10-14-americas-029",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1282732",
-      "title": "Guatemalan Civil War",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1960 to 1996 civil war in Guatemala, part of the Cold War the atlas already holds.",
-      "parents": [
-        "cold-war"
-      ]
-    },
-    {
-      "id": "2026-10-14-americas-030",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1783607",
-      "title": "Salvadoran Civil War",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1979 to 1992 civil war in El Salvador. The Americas lane comes after Africa and Asia."
-    },
-    {
-      "id": "2026-10-14-americas-031",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q223085",
-      "title": "Football War",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The brief 1969 war between Honduras and El Salvador. The Americas lane comes after Africa and Asia."
-    },
-    {
-      "id": "2026-10-14-americas-032",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q459282",
-      "title": "United States invasion of Panama",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1989 to 1990 invasion that removed Manuel Noriega, part of the Cold War the atlas already holds.",
-      "parents": [
-        "cold-war"
-      ]
-    },
-    {
-      "id": "2026-10-14-europe-033",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q15920546",
-      "title": "2014 Russian annexation of Crimea",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 2014 annexation, part of the Russo-Ukrainian war the atlas already holds.",
-      "parents": [
-        "russo-ukrainian-war"
-      ]
-    },
-    {
-      "id": "2026-10-14-europe-034",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q69163529",
-      "title": "Fall of the Berlin Wall",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1989 fall of the Wall, part of the Revolutions of 1989 the atlas already holds.",
-      "parents": [
-        "revolutions-of-1989"
-      ]
-    },
     {
       "id": "2026-10-14-europe-035",
       "planned": "2026-10-14T03:28Z",
@@ -506,20 +12,6 @@
       "edges": [],
       "rank": "vital-5",
       "why": "Vital article, level 5. The 1688 to 1689 overthrow of James II of England. Europe is the lane that trails least, but the vital-5 pool still offers it."
-    },
-    {
-      "id": "2026-10-14-europe-036",
-      "planned": "2026-10-14T03:28Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q175653",
-      "title": "Siege of Sarajevo",
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Vital article, level 5. The 1992 to 1996 siege, part of the War in Bosnia and Herzegovina the atlas already holds.",
-      "parents": [
-        "war-in-bosnia-and-herzegovina"
-      ]
     },
     {
       "id": "2026-10-14-europe-037",
@@ -533,6 +25,472 @@
       "why": "Vital article, level 5. The 1572 massacre of Huguenots, part of the French Wars of Religion the atlas already holds.",
       "parents": [
         "french-wars-of-religion"
+      ]
+    },
+    {
+      "id": "2026-10-15-africa-001",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q468293",
+      "title": "First Barbary War",
+      "edges": [],
+      "rank": "list",
+      "why": "List of wars: 1500-1799. The 1801 to 1805 war between the United States and Tripoli. Africa trails every other lane."
+    },
+    {
+      "id": "2026-10-15-africa-002",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q233505",
+      "title": "Second Barbary War",
+      "edges": [],
+      "rank": "list",
+      "why": "List of wars: 1800-1899. The 1815 war between the United States and Algiers. Africa trails every other lane."
+    },
+    {
+      "id": "2026-10-15-africa-003",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1540737",
+      "title": "Hispano-Moroccan War (1859-60)",
+      "edges": [],
+      "rank": "list",
+      "why": "List of wars: 1800-1899. The 1859 to 1860 war between Spain and Morocco. Africa trails every other lane."
+    },
+    {
+      "id": "2026-10-15-africa-004",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q385820",
+      "title": "French occupation of Tunisia",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1881 French conquest of Tunisia. Its own dates start before the Scramble for Africa's 1885, so it stands without a parent. Africa trails every other lane."
+    },
+    {
+      "id": "2026-10-15-africa-005",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q3062439",
+      "title": "Franco-Moroccan War",
+      "edges": [],
+      "rank": "list",
+      "why": "List of wars: 1800-1899. The 1844 war between France and Morocco. Africa trails every other lane."
+    },
+    {
+      "id": "2026-10-15-africa-006",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q743652",
+      "title": "British Expedition to Abyssinia",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1867 to 1868 British campaign against Emperor Tewodros II of Ethiopia. Africa trails every other lane."
+    },
+    {
+      "id": "2026-10-15-africa-007",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2935437",
+      "title": "Congo-Arab War",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1892 war between the Congo Free State and Arab-Swahili traders. Its 1892 span sits inside the Scramble for Africa (1885 to 1914). Africa trails every other lane.",
+      "parents": [
+        "scramble-for-africa"
+      ]
+    },
+    {
+      "id": "2026-10-15-africa-008",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q4127978",
+      "title": "Second Madagascar expedition",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1894 to 1895 French conquest of Madagascar. Its span sits inside the Scramble for Africa (1885 to 1914). Africa trails every other lane.",
+      "parents": [
+        "scramble-for-africa"
+      ]
+    },
+    {
+      "id": "2026-10-15-africa-009",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q942561",
+      "title": "First Madagascar expedition",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1883 to 1885 French campaign against Madagascar. It starts in 1883, before the Scramble for Africa's 1885, so it stands without a parent. Africa trails every other lane."
+    },
+    {
+      "id": "2026-10-15-africa-010",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q28162775",
+      "title": "Turco-Egyptian conquest of Sudan (1820-1824)",
+      "edges": [],
+      "rank": "list",
+      "why": "Egypt's 1820 to 1824 conquest of Sudan under Muhammad Ali. Africa trails every other lane."
+    },
+    {
+      "id": "2026-10-15-africa-011",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q9294875",
+      "title": "Ndwandwe-Zulu War",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1817 to 1819 war between the Ndwandwe and the rising Zulu Kingdom. Africa trails every other lane."
+    },
+    {
+      "id": "2026-10-15-asia-012",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q309184",
+      "title": "Boshin War",
+      "edges": [],
+      "rank": "list",
+      "why": "Vital article, level 5 candidate by sitelink count. The 1868 to 1869 civil war that ended the Tokugawa shogunate. Asia trails after Africa."
+    },
+    {
+      "id": "2026-10-15-asia-013",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q989092",
+      "title": "First Anglo-Afghan War",
+      "edges": [],
+      "rank": "list",
+      "why": "List of wars: 1800-1899. The 1839 to 1842 war between Britain and Afghanistan. Asia trails after Africa."
+    },
+    {
+      "id": "2026-10-15-asia-014",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q233507",
+      "title": "Second Anglo-Afghan War",
+      "edges": [],
+      "rank": "list",
+      "why": "List of wars: 1800-1899. The 1878 to 1880 war between Britain and Afghanistan. Asia trails after Africa."
+    },
+    {
+      "id": "2026-10-15-asia-015",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q234188",
+      "title": "Battle of Sekigahara",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1600 battle that decided control of Japan before the Tokugawa shogunate. Asia trails after Africa."
+    },
+    {
+      "id": "2026-10-15-asia-016",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q696217",
+      "title": "Shimabara Rebellion",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1637 to 1638 rebellion of Japanese Christians and peasants against the Tokugawa shogunate. Asia trails after Africa."
+    },
+    {
+      "id": "2026-10-15-asia-017",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q706183",
+      "title": "Sino-French War",
+      "edges": [],
+      "rank": "list",
+      "why": "List of wars: 1800-1899. The 1884 to 1885 war between France and Qing China over Vietnam. Asia trails after Africa."
+    },
+    {
+      "id": "2026-10-15-asia-018",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q582584",
+      "title": "First Anglo-Sikh War",
+      "edges": [],
+      "rank": "list",
+      "why": "List of wars: 1800-1899. The 1845 to 1846 war between Britain and the Sikh Empire. Asia trails after Africa."
+    },
+    {
+      "id": "2026-10-15-asia-019",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q475780",
+      "title": "Siege of Osaka",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1614 to 1615 siege that ended the Toyotomi clan and secured the Tokugawa shogunate. Asia trails after Africa."
+    },
+    {
+      "id": "2026-10-15-asia-020",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q29122",
+      "title": "First Anglo-Burmese War",
+      "edges": [],
+      "rank": "list",
+      "why": "List of wars: 1800-1899. The 1824 to 1826 war between Britain and the Konbaung dynasty of Burma. Asia trails after Africa."
+    },
+    {
+      "id": "2026-10-15-asia-021",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1362209",
+      "title": "First Anglo-Maratha War",
+      "edges": [],
+      "rank": "list",
+      "why": "List of wars: 1500-1799. The 1775 to 1782 war between the British East India Company and the Maratha Empire. Asia trails after Africa."
+    },
+    {
+      "id": "2026-10-15-asia-022",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q703942",
+      "title": "Japanese invasion of Taiwan (1874)",
+      "edges": [],
+      "rank": "list",
+      "why": "List of wars: 1800-1899. Japan's 1874 punitive expedition to Taiwan. Asia trails after Africa."
+    },
+    {
+      "id": "2026-10-15-asia-023",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2045508",
+      "title": "Java War",
+      "edges": [],
+      "rank": "list",
+      "why": "List of wars: 1800-1899. The 1825 to 1830 war between the Dutch and Prince Diponegoro in Java. Asia trails after Africa."
+    },
+    {
+      "id": "2026-10-15-asia-024",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4887044",
+      "title": "Treaty of Bassein (1534)",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1534 treaty between the Sultanate of Gujarat and Portugal that ceded Bassein and Bombay. Asia trails after Africa."
+    },
+    {
+      "id": "2026-10-15-americas-025",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q26013",
+      "title": "War of 1812",
+      "edges": [],
+      "rank": "list",
+      "why": "Vital article, level 5 candidate by sitelink count. The 1812 to 1815 war between the United States and Britain."
+    },
+    {
+      "id": "2026-10-15-americas-026",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q856168",
+      "title": "Pastry War",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1838 to 1839 French intervention in Mexico over unpaid debts."
+    },
+    {
+      "id": "2026-10-15-americas-027",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q952881",
+      "title": "Second French intervention in Mexico",
+      "edges": [],
+      "rank": "list",
+      "why": "List of wars: 1800-1899. France's 1861 to 1867 intervention in Mexico, which installed Maximilian I."
+    },
+    {
+      "id": "2026-10-15-americas-028",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2091916",
+      "title": "Reform War",
+      "edges": [],
+      "rank": "list",
+      "why": "Mexico's 1857 to 1861 civil war between liberals and conservatives."
+    },
+    {
+      "id": "2026-10-15-americas-029",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q742813",
+      "title": "Chincha Islands War",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1864 to 1866 war between Spain and an alliance of Peru and Chile over the Chincha Islands."
+    },
+    {
+      "id": "2026-10-15-americas-030",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1348983",
+      "title": "Conquest of the Desert",
+      "edges": [],
+      "rank": "list",
+      "why": "Argentina's 1884 campaign against the indigenous peoples of Patagonia."
+    },
+    {
+      "id": "2026-10-15-europe-031",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q133132",
+      "title": "Paris Commune",
+      "edges": [],
+      "rank": "list",
+      "why": "Vital article, level 5 candidate by sitelink count. The 1871 Parisian government that followed the Franco-Prussian War. Its own dates start after that war's own end, so it stands without a parent."
+    },
+    {
+      "id": "2026-10-15-europe-032",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q153650",
+      "title": "Austro-Prussian War",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1866 war between Prussia and Austria that settled supremacy over the German states."
+    },
+    {
+      "id": "2026-10-15-europe-033",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q178510",
+      "title": "Battle of Mohács",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1526 battle in which the Ottomans defeated the Kingdom of Hungary."
+    },
+    {
+      "id": "2026-10-15-europe-034",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q199955",
+      "title": "Hundred Days",
+      "edges": [],
+      "rank": "list",
+      "why": "Napoleon's 1815 return from exile to his final defeat at Waterloo. Its span sits inside the Napoleonic Wars (1803 to 1815).",
+      "parents": [
+        "napoleonic-wars"
+      ]
+    },
+    {
+      "id": "2026-10-15-europe-035",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q152218",
+      "title": "Nine Years' War",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1688 to 1697 war between France and the Grand Alliance."
+    },
+    {
+      "id": "2026-10-15-europe-036",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q18817",
+      "title": "War of the First Coalition",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1792 to 1797 war against Revolutionary France. Its span sits inside the French Revolutionary Wars (1792 to 1802).",
+      "parents": [
+        "french-revolutionary-wars"
+      ]
+    },
+    {
+      "id": "2026-10-15-europe-037",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q593355",
+      "title": "Treaty of Alcáçovas",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1479 treaty that ended the War of the Castilian Succession and divided Atlantic claims between Castile and Portugal, the model for the Treaty of Tordesillas."
+    },
+    {
+      "id": "2026-10-15-europe-038",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1147471",
+      "title": "Treaty of Zaragoza",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1529 treaty that settled the Moluccas dispute between Castile and Portugal and fixed the antimeridian to the Treaty of Tordesillas' line."
+    },
+    {
+      "id": "2026-10-15-europe-039",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q282135",
+      "title": "War of the Castilian Succession",
+      "edges": [],
+      "rank": "list",
+      "why": "The 1475 to 1479 war between Castile and Portugal that the Treaty of Alcáçovas ended."
+    },
+    {
+      "id": "2026-10-15-africa-040",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q3458428",
+      "title": "Revolutions of Tunis",
+      "edges": [],
+      "rank": "list",
+      "why": "Re-queued: the lane row for Q3458428 was added to the seeds file on 14 October, so the item the writer refused for a missing lane now enters. The 1675 to 1705 uprisings against Ottoman Tunis. Africa trails every other lane."
+    },
+    {
+      "id": "2026-10-15-americas-041",
+      "planned": "2026-10-15T17:45Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4122685",
+      "title": "Cherokee-American wars",
+      "edges": [],
+      "rank": "list",
+      "why": "Re-queued: the lane row for Q4122685 was added to the seeds file on 14 October, so the item the writer refused for a missing lane now enters. The 1776 to 1794 wars between the Cherokee and American settlers. Its span sits inside the American Indian Wars (1609 to 1924).",
+      "parents": [
+        "american-indian-wars"
       ]
     }
   ]
