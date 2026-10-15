@@ -1211,6 +1211,15 @@
         }
       ]
     },
+    "british-expedition-to-abyssinia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "british-intervention-in-spanish-american-independence": {
       "from": "git",
       "versions": [
@@ -1256,6 +1265,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "congo-arab-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
@@ -1529,6 +1547,15 @@
         }
       ]
     },
+    "first-barbary-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "first-boer-war": {
       "from": "git",
       "versions": [
@@ -1733,6 +1760,15 @@
         }
       ]
     },
+    "franco-moroccan-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "franco-prussian-war": {
       "from": "git",
       "versions": [
@@ -1786,6 +1822,24 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "french-conquest-of-tunisia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "created",
+            "parent",
+            "review",
+            "sitelinks"
+          ],
+          "on": "2026-10-15"
         }
       ]
     },
@@ -1886,6 +1940,15 @@
             "summary"
           ],
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "hispano-moroccan-war-1859-1860": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
@@ -2445,6 +2508,15 @@
         }
       ]
     },
+    "second-barbary-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "second-battle-of-colenso": {
       "from": "git",
       "versions": [
@@ -2563,6 +2635,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "second-madagascar-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },

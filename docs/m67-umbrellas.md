@@ -1734,3 +1734,31 @@ Writer A imported it from the planner's queue as item `2026-10-14-asia-015`, ran
 ## Writer A, 2026-10-14: `nakba`, filed under `israeli-palestinian-conflict` with neither an actor nor a place
 
 Writer A filed it there because the planner's queue asked for it in item `2026-10-14-asia-018`, rank `vital-5`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-15: `first-barbary-war`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-15-africa-001`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-15: `second-barbary-war`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-15-africa-002`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-15: `hispano-moroccan-war-1859-1860`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-15-africa-003`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-15: `french-conquest-of-tunisia`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-15-africa-004`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-15: `franco-moroccan-war`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-15-africa-005`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-15: `congo-arab-war`, filed under `scramble-for-africa` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-15-africa-007`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-15: `second-madagascar-expedition`, filed under `scramble-for-africa` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-15-africa-008`, rank `list`. Its span and its subject put it inside the umbrella.

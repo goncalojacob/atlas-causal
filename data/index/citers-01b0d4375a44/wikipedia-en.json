@@ -14342,6 +14342,12 @@
     },
     {
       "dissent": false,
+      "id": "british-expedition-to-abyssinia",
+      "kind": "event",
+      "locator": "\"British expedition to Abyssinia\", revision 1377469891"
+    },
+    {
+      "dissent": false,
       "id": "british-expedition-to-tibet",
       "kind": "event",
       "locator": "\"British expedition to Tibet\", revision 1370606386"
@@ -14771,6 +14777,12 @@
       "id": "conflicts-between-the-regency-of-algiers-and-morocco",
       "kind": "event",
       "locator": "\"Conflicts between the Regency of Algiers and Morocco\", revision 1377675247"
+    },
+    {
+      "dissent": false,
+      "id": "congo-arab-war",
+      "kind": "event",
+      "locator": "\"Congo Arab war\", revision 1376607333"
     },
     {
       "dissent": false,
@@ -15476,6 +15488,12 @@
     },
     {
       "dissent": false,
+      "id": "first-barbary-war",
+      "kind": "event",
+      "locator": "\"First Barbary War\", revision 1379618629"
+    },
+    {
+      "dissent": false,
       "id": "first-battle-of-benghazi",
       "kind": "event",
       "locator": "\"First Battle of Benghazi\", revision 1370618456"
@@ -15722,6 +15740,12 @@
     },
     {
       "dissent": false,
+      "id": "franco-moroccan-war",
+      "kind": "event",
+      "locator": "\"Franco-Moroccan War\", revision 1370620127"
+    },
+    {
+      "dissent": false,
       "id": "franco-prussian-war",
       "kind": "event",
       "locator": "\"Franco-Prussian War\", revision 1379901903"
@@ -15755,6 +15779,12 @@
       "id": "french-conquest-of-morocco",
       "kind": "event",
       "locator": "\"French conquest of Morocco\", revision 1374837625"
+    },
+    {
+      "dissent": false,
+      "id": "french-conquest-of-tunisia",
+      "kind": "event",
+      "locator": "\"French conquest of Tunisia\", revision 1370620382"
     },
     {
       "dissent": false,
@@ -15869,6 +15899,12 @@
       "id": "german-soviet-treaty-of-friendship-cooperation-and-demarcation",
       "kind": "event",
       "locator": "\"German–Soviet Boundary and Friendship Treaty\", revision 1375965836"
+    },
+    {
+      "dissent": false,
+      "id": "glorious-revolution",
+      "kind": "event",
+      "locator": "\"Glorious Revolution\", revision 1377775481"
     },
     {
       "dissent": false,
@@ -16085,6 +16121,12 @@
       "id": "hezbollah-israel-conflict-2023-present",
       "kind": "event",
       "locator": "\"Hezbollah–Israel conflict (2023–present)\", revision 1368616555"
+    },
+    {
+      "dissent": false,
+      "id": "hispano-moroccan-war-1859-1860",
+      "kind": "event",
+      "locator": "\"Hispano-Moroccan War (1859–1860)\", revision 1370622785"
     },
     {
       "dissent": false,
@@ -18176,6 +18218,12 @@
     },
     {
       "dissent": false,
+      "id": "second-barbary-war",
+      "kind": "event",
+      "locator": "\"Second Barbary War\", revision 1372915408"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-benghazi",
       "kind": "event",
       "locator": "\"Second Battle of Benghazi\", revision 1370735938"
@@ -18293,6 +18341,12 @@
       "id": "second-liberian-civil-war",
       "kind": "event",
       "locator": "\"Second Liberian Civil War\", revision 1373880319"
+    },
+    {
+      "dissent": false,
+      "id": "second-madagascar-expedition",
+      "kind": "event",
+      "locator": "\"Second Madagascar expedition\", revision 1370737123"
     },
     {
       "dissent": false,
@@ -19367,6 +19421,12 @@
       "id": "srebrenica-massacre",
       "kind": "event",
       "locator": "\"Srebrenica massacre\", revision 1374222609"
+    },
+    {
+      "dissent": false,
+      "id": "st-bartholomew-s-day-massacre",
+      "kind": "event",
+      "locator": "\"St. Bartholomew's Day massacre\", revision 1376363315"
     },
     {
       "dissent": false,
