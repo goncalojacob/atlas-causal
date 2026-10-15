@@ -25929,3 +25929,4 @@ Writer B 2026-10-15T18:45:44Z: 7 written, 0 partial, 0 refused, 0 skipped
 Writer A started 2026-10-15T19:22:13Z by scheduled
 Writer A 2026-10-15T19:22:13Z: 10 written, 0 partial, 0 refused, 0 skipped
 Writer A started 2026-10-15T06:15:23Z by scheduled
+Writer A 2026-10-15T06:15:23Z: 10 written, 0 partial, 2 refused, 0 skipped
