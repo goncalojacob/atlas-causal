@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "congo-arab-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2935437",
+  "wikipedia": {
+    "en": "Congo Arab war"
+  },
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-15"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2935437"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Congo Arab war\", revision 1376607333"
+    }
+  ],
+  "title": "Congo Arab war",
+  "summary": "The English Wikipedia article \"Congo Arab war\", at revision 1376607333, opens: \"The Congo Arab war was a colonial war between the Congo Free State and Arab-Swahili warlords associated with the Indian Ocean slave trade in the eastern regions of the Congo Basin between 1892 and 1894.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2935437, imported by tools/import/wikidata.mjs. The item's own description reads \"1892–1894 war between the Congo Free state and the Arabo-Swahilis\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1892,
+    "end": 1892,
+    "date": "1892-04"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "scramble-for-africa",
+  "actors": []
+}

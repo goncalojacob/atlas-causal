@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "second-madagascar-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4127978",
+  "wikipedia": {
+    "en": "Second Madagascar expedition"
+  },
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-15"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4127978"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Madagascar expedition\", revision 1370737123"
+    }
+  ],
+  "title": "Second Madagascar expedition",
+  "summary": "The English Wikipedia article \"Second Madagascar expedition\", at revision 1370737123, opens: \"The Second Madagascar expedition was a French military intervention which took place in 1894–1895, sealing the conquest of the Merina Kingdom on the island of Madagascar by France. It was the last phase of the Franco-Hova War and followed the First Madagascar expedition of 1883–1885.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4127978, imported by tools/import/wikidata.mjs. The item's own description reads \"French military intervention which took place in 1894-1895, sealing the conquest of the Merina Kingdom on the island of Madagascar by France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1894,
+    "end": 1895,
+    "date": "1894-12",
+    "endDate": "1895-09"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "scramble-for-africa",
+  "category": "war",
+  "actors": []
+}
