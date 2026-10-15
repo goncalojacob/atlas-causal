@@ -2162,15 +2162,21 @@
     "Q153650",
     "Q178510",
     "Q199955",
-    "Q689128",
-    "Q2656995",
-    "Q377542",
-    "Q179077",
-    "Q5851623",
-    "Q2508152",
-    "Q5255169",
-    "Q2590269",
-    "Q3775537"
+    "Q152218",
+    "Q18817",
+    "Q593355",
+    "Q1147471",
+    "Q282135",
+    "Q134355735",
+    "Q121047056",
+    "Q4553413",
+    "Q1402902",
+    "Q126708875",
+    "Q136483840",
+    "Q1450547",
+    "Q3320778",
+    "Q1106847",
+    "Q2357384"
   ],
   "queries": [
     {
@@ -6409,6 +6415,12 @@
       "category": "founding",
       "label": "reunion",
       "note": "Added 14 October 2026 from the 0312Z plan note, so that German reunification (Q56039) can enter. Wikidata describes the class as \"merger of two groups that had previously separated\". The category is founding, as for independence (Q37055): a state coming into existence. The sibling class Q1140229, political union, was not added, since it also names states and not only events."
+    },
+    "Q188689": {
+      "kind": "event",
+      "category": "other",
+      "label": "ultimatum",
+      "note": "Added 15 October 2026 from the 2112Z plan note, so that the 1890 British Ultimatum can enter."
     }
   },
   "lanes": {
@@ -6721,7 +6733,8 @@
     "Q2632175": "americas",
     "Q157627": "europe",
     "Q4122685": "americas",
-    "Q3458428": "africa"
+    "Q3458428": "africa",
+    "Q2045508": "asia"
   },
   "reconcile": true,
   "schema": 1,

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tripolitanian-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4553413",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Tripolitanian civil war"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4553413"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tripolitanian civil war\", revision 1370751447"
+    }
+  ],
+  "title": "Tripolitanian civil war",
+  "summary": "The English Wikipedia article \"Tripolitanian civil war\", at revision 1370751447, opens: \"The Tripolitanian civil war was a conflict from 1790 to 1795 which occurred in Tripolitania – inside what is today the country of Libya. It involved a war of succession between leading members of the Karamanli dynasty, an intervention by Ottoman officer Ali Burghul who claimed to be acting on the sultan's orders and controlled Tripoli for 17 months, and an intervention by the bey of Tunis Hammuda ibn Ali to restore the Karamanlis to power.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4553413, imported by tools/import/wikidata.mjs. The item's own description reads \"brief conflict during the Ottoman period in Libya's history\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1790,
+    "end": 1795,
+    "date": "1790-07",
+    "endDate": "1795-01-20"
+  },
+  "place": "ottoman-tripolitania",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

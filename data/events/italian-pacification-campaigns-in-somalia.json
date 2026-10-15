@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "italian-pacification-campaigns-in-somalia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q126708875",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Italian pacification campaigns in Somalia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q126708875"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Italian pacification campaigns in Somalia\", revision 1376990984"
+    }
+  ],
+  "title": "Italian pacification campaigns in Somalia",
+  "summary": "The English Wikipedia article \"Italian pacification campaigns in Somalia\", at revision 1376990984, opens: \"The Italian pacification campaigns in Somalia were a series of military conflicts between the Kingdom of Italy and various Somali Sultanates and clans, from 1900 until around 1927. After the end of the Dervish war, the fascist Italian government under Benito Mussolini, ordered the conquest and occupation of the entirety of Somalia by force through the Royal Corps of Colonial Troops. This led to armed resistance and rebellions across the country.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q126708875, imported by tools/import/wikidata.mjs. The item's own description reads \"early 20th-century military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1890,
+      "max": 1899
+    },
+    "end": 1927
+  },
+  "place": "italian-somaliland-q319984",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

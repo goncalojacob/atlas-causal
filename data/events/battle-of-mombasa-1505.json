@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-mombasa-1505",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q121047056",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Battle of Mombasa (1505)",
+    "pt": "Batalha de Mombaça (1505)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q121047056"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mombasa (1505)\", revision 1370450216"
+    }
+  ],
+  "title": "Battle of Mombasa (1505)",
+  "summary": "The English Wikipedia article \"Battle of Mombasa (1505)\", at revision 1370450216, opens: \"The Battle of Mombasa in 1505 was a military engagement between Portuguese forces under the command of the first Viceroy of India Dom Francisco de Almeida and the Sultanate of Mombasa. The Portuguese staged a landing and sacked the city on the occasion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q121047056, imported by tools/import/wikidata.mjs. The item's own description reads \"military confrontation that took place in 1505\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1505,
+    "end": 1505,
+    "date": "1505-08-15"
+  },
+  "place": "mombasa",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

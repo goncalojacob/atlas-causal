@@ -2277,7 +2277,6 @@
         "Q2915203",
         "Q6428297",
         "Q16935425",
-        "Q3458428",
         "Q106959443",
         "Q1628477",
         "Q745110",
@@ -2345,15 +2344,22 @@
         "Q153650",
         "Q178510",
         "Q199955",
-        "Q689128",
-        "Q2656995",
-        "Q377542",
-        "Q179077",
-        "Q5851623",
-        "Q2508152",
-        "Q5255169",
-        "Q2590269",
-        "Q3775537"
+        "Q152218",
+        "Q18817",
+        "Q593355",
+        "Q1147471",
+        "Q282135",
+        "Q3458428",
+        "Q134355735",
+        "Q121047056",
+        "Q4553413",
+        "Q1402902",
+        "Q126708875",
+        "Q136483840",
+        "Q1450547",
+        "Q3320778",
+        "Q1106847",
+        "Q2357384"
       ]
     }
   },
@@ -2641,18 +2647,6 @@
     "Q133132": {
       "on": "2026-10-15",
       "why": "its classes disagree: Q1323212 → event, Q43229 → actor"
-    },
-    "Q377542": {
-      "on": "2026-10-15",
-      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
-    },
-    "Q5255169": {
-      "on": "2026-10-15",
-      "why": "none of its classes (Q1155622) is in data/imports/wikidata-seeds.json → classes"
-    },
-    "Q3775537": {
-      "on": "2026-10-15",
-      "why": "none of its classes (Q108856008) is in data/imports/wikidata-seeds.json → classes"
     }
   }
 }
