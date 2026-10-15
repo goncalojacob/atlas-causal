@@ -6110,6 +6110,12 @@
     },
     {
       "dissent": false,
+      "id": "cabanagem",
+      "kind": "event",
+      "locator": "Q2590269"
+    },
+    {
+      "dissent": false,
       "id": "cairo-conference",
       "kind": "event",
       "locator": "Q696894"
@@ -7532,6 +7538,12 @@
     },
     {
       "dissent": false,
+      "id": "fredonian-rebellion",
+      "kind": "event",
+      "locator": "Q2508152"
+    },
+    {
+      "dissent": false,
       "id": "french-and-indian-war",
       "kind": "event",
       "locator": "Q154697"
@@ -7847,6 +7859,12 @@
       "id": "haitian-embassy-in-cuba-massacre",
       "kind": "event",
       "locator": "Q133827414"
+    },
+    {
+      "dissent": false,
+      "id": "haitian-revolution",
+      "kind": "event",
+      "locator": "Q689128"
     },
     {
       "dissent": false,
@@ -9068,6 +9086,12 @@
     },
     {
       "dissent": false,
+      "id": "northwest-indian-war",
+      "kind": "event",
+      "locator": "Q2656995"
+    },
+    {
+      "dissent": false,
       "id": "nova-republica-brazil-since-1985",
       "kind": "event",
       "locator": "Q2920526"
@@ -9524,6 +9548,12 @@
     },
     {
       "dissent": false,
+      "id": "pontiac-s-war",
+      "kind": "event",
+      "locator": "Q179077"
+    },
+    {
+      "dissent": false,
       "id": "population-exchange-between-greece-and-turkey",
       "kind": "event",
       "locator": "Q131017"
@@ -9839,6 +9869,12 @@
       "id": "revolt-of-the-comuneros-new-granada",
       "kind": "event",
       "locator": "Q2095753"
+    },
+    {
+      "dissent": false,
+      "id": "revolt-of-the-comuneros-paraguay",
+      "kind": "event",
+      "locator": "Q5851623"
     },
     {
       "dissent": false,

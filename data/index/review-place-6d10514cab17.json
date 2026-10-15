@@ -2792,7 +2792,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "brazil-q155",
       "kind": "place",
       "names": [
@@ -8598,7 +8598,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 2,
+      "degree": 3,
       "id": "great-lakes-region",
       "kind": "place",
       "names": [
@@ -15840,6 +15840,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-15",
+      "degree": 1,
+      "id": "nacogdoches-texas",
+      "kind": "place",
+      "names": [
+        "Nacogdoches",
+        "Nacogdoches, Texas"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
       "degree": 1,
       "id": "nagapattinam",
@@ -20284,7 +20312,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 3,
+      "degree": 4,
       "id": "saint-domingue-q861551",
       "kind": "place",
       "names": [

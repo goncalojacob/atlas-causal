@@ -1262,6 +1262,15 @@
         }
       ]
     },
+    "cabanagem": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "chilean-war-of-independence": {
       "from": "git",
       "versions": [
@@ -1894,6 +1903,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "fredonian-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },

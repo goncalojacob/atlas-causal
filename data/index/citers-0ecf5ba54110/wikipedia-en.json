@@ -14420,6 +14420,12 @@
     },
     {
       "dissent": false,
+      "id": "cabanagem",
+      "kind": "event",
+      "locator": "\"Cabanagem\", revision 1370607396"
+    },
+    {
+      "dissent": false,
       "id": "cairo-conference",
       "kind": "event",
       "locator": "\"Cairo Conference\", revision 1369040877"
@@ -15842,6 +15848,12 @@
     },
     {
       "dissent": false,
+      "id": "fredonian-rebellion",
+      "kind": "event",
+      "locator": "\"Fredonian Rebellion\", revision 1379568748"
+    },
+    {
+      "dissent": false,
       "id": "french-and-indian-war",
       "kind": "event",
       "locator": "\"French and Indian War\", revision 1376981238"
@@ -16133,6 +16145,12 @@
       "id": "hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict",
       "kind": "event",
       "locator": "\"Hague Convention for the Protection of Cultural Property in the Event of Armed Conflict\", revision 1374191348"
+    },
+    {
+      "dissent": false,
+      "id": "haitian-revolution",
+      "kind": "event",
+      "locator": "\"Haitian Revolution\", revision 1375172946"
     },
     {
       "dissent": false,
@@ -17294,6 +17312,12 @@
     },
     {
       "dissent": false,
+      "id": "northwest-indian-war",
+      "kind": "event",
+      "locator": "\"Northwest Indian War\", revision 1376512129"
+    },
+    {
+      "dissent": false,
       "id": "nova-republica-brazil-since-1985",
       "kind": "event",
       "locator": "\"History of Brazil (1985–present)\", revision 1371710443"
@@ -17768,6 +17792,12 @@
     },
     {
       "dissent": false,
+      "id": "pontiac-s-war",
+      "kind": "event",
+      "locator": "\"Pontiac's War\", revision 1378831083"
+    },
+    {
+      "dissent": false,
       "id": "population-exchange-between-greece-and-turkey",
       "kind": "event",
       "locator": "\"Population exchange between Greece and Turkey\", revision 1372041572"
@@ -18077,6 +18107,12 @@
       "id": "revolt-of-the-comuneros-new-granada",
       "kind": "event",
       "locator": "\"Revolt of the Comuneros (New Granada)\", revision 1369393858"
+    },
+    {
+      "dissent": false,
+      "id": "revolt-of-the-comuneros-paraguay",
+      "kind": "event",
+      "locator": "\"Revolt of the Comuneros (Paraguay)\", revision 1318704210"
     },
     {
       "dissent": false,

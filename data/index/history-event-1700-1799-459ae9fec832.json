@@ -1820,6 +1820,15 @@
         }
       ]
     },
+    "haitian-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "haitian-revolution-1791-1804": {
       "from": "git",
       "versions": [
@@ -2069,6 +2078,15 @@
         }
       ]
     },
+    "northwest-indian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "oman-zanzibar-war": {
       "from": "git",
       "versions": [
@@ -2099,6 +2117,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "pontiac-s-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
@@ -2190,6 +2217,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "revolt-of-the-comuneros-paraguay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
