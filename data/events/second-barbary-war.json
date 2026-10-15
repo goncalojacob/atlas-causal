@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "second-barbary-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q233505",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Second Barbary War",
+    "pt": "Segunda Guerra Berberesca"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q233505"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Barbary War\", revision 1372915408"
+    }
+  ],
+  "title": "Second Barbary War",
+  "summary": "The English Wikipedia article \"Second Barbary War\", at revision 1372915408, opens: \"The Second Barbary War, also known as the U.S.–Algerian War and the Algerine War, was a brief military conflict between the United States and the North African state of Algiers in 1815.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q233505, imported by tools/import/wikidata.mjs. The item's own description reads \"1815 war between Algiers and the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-06-17",
+    "endDate": "1815-06-19"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

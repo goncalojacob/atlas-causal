@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "british-isles",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q38272",
+  "sitelinks": {
+    "count": 103,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "British Isles",
+    "pt": "Ilhas Britânicas"
+  },
+  "sources": [],
+  "names": [
+    "British Isles",
+    "Ilhas Britânicas"
+  ],
+  "where": {
+    "lon": -4,
+    "lat": 54,
+    "precision": "region",
+    "label": "British Isles"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

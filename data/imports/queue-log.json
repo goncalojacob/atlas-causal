@@ -1935,6 +1935,210 @@
         "place": "punjab-q169132"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-14-europe-035",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "glorious-revolution",
+        "edges": [],
+        "place": "british-isles"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-europe-037",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "st-bartholomew-s-day-massacre",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-001",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "first-barbary-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-002",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "second-barbary-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-003",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "hispano-moroccan-war-1859-1860",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-004",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "french-conquest-of-tunisia",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-005",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "franco-moroccan-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-006",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "british-expedition-to-abyssinia",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-007",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "congo-arab-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-008",
+      "writer": "A",
+      "fired": "2026-10-15T18:23Z",
+      "status": "written",
+      "written": {
+        "event": "second-madagascar-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-025",
+      "writer": "B",
+      "fired": "2026-10-15T18:42Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-1812",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-026",
+      "writer": "B",
+      "fired": "2026-10-15T18:42Z",
+      "status": "written",
+      "written": {
+        "event": "pastry-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-027",
+      "writer": "B",
+      "fired": "2026-10-15T18:42Z",
+      "status": "written",
+      "written": {
+        "event": "second-french-intervention-in-mexico",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-028",
+      "writer": "B",
+      "fired": "2026-10-15T18:42Z",
+      "status": "written",
+      "written": {
+        "event": "reform-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-029",
+      "writer": "B",
+      "fired": "2026-10-15T18:42Z",
+      "status": "written",
+      "written": {
+        "event": "chincha-islands-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-030",
+      "writer": "B",
+      "fired": "2026-10-15T18:42Z",
+      "status": "written",
+      "written": {
+        "event": "conquest-of-the-desert",
+        "edges": [],
+        "place": "patagonia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-041",
+      "writer": "B",
+      "fired": "2026-10-15T18:42Z",
+      "status": "written",
+      "written": {
+        "event": "cherokee-american-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
