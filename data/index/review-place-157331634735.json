@@ -598,6 +598,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-15",
+      "degree": 1,
+      "id": "alcacovas",
+      "kind": "place",
+      "names": [
+        "Alcáçovas"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "alegria-de-pio",
@@ -7056,7 +7083,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 9,
+      "degree": 10,
       "id": "europe",
       "kind": "place",
       "names": [
@@ -26061,7 +26088,7 @@
         }
       ],
       "created": "2026-10-13",
-      "degree": 2,
+      "degree": 3,
       "id": "western-europe",
       "kind": "place",
       "names": [
@@ -26871,7 +26898,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 2,
       "id": "zaragoza",
       "kind": "place",
       "names": [

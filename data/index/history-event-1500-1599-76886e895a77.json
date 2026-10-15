@@ -3007,6 +3007,15 @@
         }
       ]
     },
+    "treaty-of-zaragoza": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "valladolid-debate": {
       "from": "git",
       "versions": [
