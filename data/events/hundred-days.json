@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "hundred-days",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q199955",
+  "sitelinks": {
+    "count": 63,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Hundred Days",
+    "pt": "Governo dos Cem Dias"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q199955"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hundred Days\", revision 1380028515"
+    }
+  ],
+  "title": "Hundred Days",
+  "summary": "The English Wikipedia article \"Hundred Days\", at revision 1380028515, opens: \"The Hundred Days, commonly referred to as The War Of The Seventh Coalition or Napoleon’s Hundred days marked the period between Napoleon's return from ten months of exile on the island of Elba to Paris on 20 March 1815 and the second restoration of King Louis XVIII on 8 July 1815. This period saw the War of the Seventh Coalition, a commonly-used name for the Hundred Days, which includes the Waterloo campaign and the Neapolitan War as well as several other minor campaigns. The phrase les Cent Jours was first used by the prefect of Paris, Gaspard, count of Chabrol, in his speech welcoming the king back to Paris on 8 July.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q199955, imported by tools/import/wikidata.mjs. The item's own description reads \"1815 conflict during the Napoleonic Wars and the hundred-day rule of Napoleon Bonaparte\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-03-20",
+    "endDate": "1815-07-08"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "napoleonic-wars"
+}

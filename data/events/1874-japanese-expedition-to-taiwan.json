@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "1874-japanese-expedition-to-taiwan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q703942",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "1874 Japanese expedition to Taiwan",
+    "pt": "Invasão japonesa de Taiwan (1874)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q703942"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1874 Japanese expedition to Taiwan\", revision 1379584469"
+    }
+  ],
+  "title": "1874 Japanese expedition to Taiwan",
+  "summary": "The English Wikipedia article \"1874 Japanese expedition to Taiwan\", at revision 1379584469, opens: \"The Japanese expedition to Taiwan, referred to in Japan as the Taiwan Expedition  and in Taiwan and mainland China as the Mudan Incident, was a punitive expedition launched by the Japanese ostensibly in retaliation for the murder of 54 Ryukyuan sailors by Paiwan indigenous peoples near the southwestern tip of Taiwan in December 1871. In May 1874, the Imperial Japanese Army and Imperial Japanese Navy attacked the indigenous Taiwanese peoples in southern Taiwan and retreated in December after the Qing dynasty agreed to pay an indemnity of 500,000 taels, with Japan conceding that China had sovereignty over Taiwan. Some ambiguous wording in the agreed terms were later argued by Japan to be confirmation of Chinese renunciation of suzerainty over the Ryukyu Islands, paving the way for de facto Japanese incorporation of the Ryukyu in 1879.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q703942, imported by tools/import/wikidata.mjs. The item's own description reads \"punitive expedition to Formosa (Taiwan), first foreign military campaign after the Meiji Ishin (Meiji Restoration)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1874,
+    "end": 1874,
+    "date": "1874-05"
+  },
+  "place": "hengchun-peninsula",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
