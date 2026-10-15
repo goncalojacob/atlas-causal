@@ -1475,6 +1475,15 @@
         }
       ]
     },
+    "cherokee-american-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "chickasaw-wars": {
       "from": "git",
       "versions": [

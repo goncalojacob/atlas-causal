@@ -14654,6 +14654,12 @@
     },
     {
       "dissent": false,
+      "id": "cherokee-american-wars",
+      "kind": "event",
+      "locator": "\"Cherokee–American wars\", revision 1375454380"
+    },
+    {
+      "dissent": false,
       "id": "chickasaw-wars",
       "kind": "event",
       "locator": "\"Chickasaw Wars\", revision 1370611063"
@@ -14669,6 +14675,12 @@
       "id": "chilembwe-uprising",
       "kind": "event",
       "locator": "\"Chilembwe uprising\", revision 1375916516"
+    },
+    {
+      "dissent": false,
+      "id": "chincha-islands-war",
+      "kind": "event",
+      "locator": "\"Chincha Islands War\", revision 1370935431"
     },
     {
       "dissent": false,
@@ -14819,6 +14831,12 @@
       "id": "conquest-of-paraiba",
       "kind": "event",
       "locator": "\"Conquest of Paraíba\", revision 1370612312"
+    },
+    {
+      "dissent": false,
+      "id": "conquest-of-the-desert",
+      "kind": "event",
+      "locator": "\"Conquest of the Desert\", revision 1377078179"
     },
     {
       "dissent": false,
@@ -17564,6 +17582,12 @@
     },
     {
       "dissent": false,
+      "id": "pastry-war",
+      "kind": "event",
+      "locator": "\"Pastry War\", revision 1377329824"
+    },
+    {
+      "dissent": false,
       "id": "peace-of-prague-1635",
       "kind": "event",
       "locator": "\"Peace of Prague (1635)\", revision 1361393894"
@@ -17927,6 +17951,12 @@
       "id": "reform-and-opening-up",
       "kind": "event",
       "locator": "\"Reform and opening up\", revision 1373006392"
+    },
+    {
+      "dissent": false,
+      "id": "reform-war",
+      "kind": "event",
+      "locator": "\"Reform War\", revision 1370706632"
     },
     {
       "dissent": false,
@@ -18305,6 +18335,12 @@
       "id": "second-franco-dahomean-war",
       "kind": "event",
       "locator": "\"Second Franco-Dahomean War\", revision 1370736974"
+    },
+    {
+      "dissent": false,
+      "id": "second-french-intervention-in-mexico",
+      "kind": "event",
+      "locator": "\"Second French intervention in Mexico\", revision 1379242847"
     },
     {
       "dissent": false,
@@ -20273,6 +20309,12 @@
       "id": "war-in-somalia",
       "kind": "event",
       "locator": "\"War in Somalia (2006–2009)\", revision 1375639759"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-1812",
+      "kind": "event",
+      "locator": "\"War of 1812\", revision 1379706723"
     },
     {
       "dissent": false,

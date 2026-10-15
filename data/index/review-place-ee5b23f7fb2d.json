@@ -14595,7 +14595,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 3,
+      "degree": 5,
       "id": "mexico-q96",
       "kind": "place",
       "names": [
@@ -16287,7 +16287,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 7,
+      "degree": 8,
       "id": "north-america",
       "kind": "place",
       "names": [
@@ -17539,6 +17539,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-15",
+      "degree": 1,
+      "id": "patagonia",
+      "kind": "place",
+      "names": [
+        "Patagonia"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -21968,7 +21995,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 2,
       "id": "south-america",
       "kind": "place",
       "names": [

@@ -6350,6 +6350,12 @@
     },
     {
       "dissent": false,
+      "id": "cherokee-american-wars",
+      "kind": "event",
+      "locator": "Q4122685"
+    },
+    {
+      "dissent": false,
       "id": "chickasaw-wars",
       "kind": "event",
       "locator": "Q495858"
@@ -6365,6 +6371,12 @@
       "id": "chilembwe-uprising",
       "kind": "event",
       "locator": "Q16056284"
+    },
+    {
+      "dissent": false,
+      "id": "chincha-islands-war",
+      "kind": "event",
+      "locator": "Q742813"
     },
     {
       "dissent": false,
@@ -6515,6 +6527,12 @@
       "id": "conquest-of-paraiba",
       "kind": "event",
       "locator": "Q121494180"
+    },
+    {
+      "dissent": false,
+      "id": "conquest-of-the-desert",
+      "kind": "event",
+      "locator": "Q1348983"
     },
     {
       "dissent": false,
@@ -9326,6 +9344,12 @@
     },
     {
       "dissent": false,
+      "id": "pastry-war",
+      "kind": "event",
+      "locator": "Q856168"
+    },
+    {
+      "dissent": false,
       "id": "peace-of-prague-1635",
       "kind": "event",
       "locator": "Q1455240"
@@ -9683,6 +9707,12 @@
       "id": "reform-and-opening-up",
       "kind": "event",
       "locator": "Q1205521"
+    },
+    {
+      "dissent": false,
+      "id": "reform-war",
+      "kind": "event",
+      "locator": "Q2091916"
     },
     {
       "dissent": false,
@@ -10085,6 +10115,12 @@
       "id": "second-franco-dahomean-war",
       "kind": "event",
       "locator": "Q2090475"
+    },
+    {
+      "dissent": false,
+      "id": "second-french-intervention-in-mexico",
+      "kind": "event",
+      "locator": "Q952881"
     },
     {
       "dissent": false,
@@ -11963,6 +11999,12 @@
       "id": "war-in-somalia",
       "kind": "event",
       "locator": "Q1072042"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-1812",
+      "kind": "event",
+      "locator": "Q26013"
     },
     {
       "dissent": false,

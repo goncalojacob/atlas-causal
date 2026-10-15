@@ -2055,6 +2055,90 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-025",
+      "writer": "B",
+      "fired": "2026-10-15T18:42Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-1812",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-026",
+      "writer": "B",
+      "fired": "2026-10-15T18:42Z",
+      "status": "written",
+      "written": {
+        "event": "pastry-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-027",
+      "writer": "B",
+      "fired": "2026-10-15T18:42Z",
+      "status": "written",
+      "written": {
+        "event": "second-french-intervention-in-mexico",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-028",
+      "writer": "B",
+      "fired": "2026-10-15T18:42Z",
+      "status": "written",
+      "written": {
+        "event": "reform-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-029",
+      "writer": "B",
+      "fired": "2026-10-15T18:42Z",
+      "status": "written",
+      "written": {
+        "event": "chincha-islands-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-030",
+      "writer": "B",
+      "fired": "2026-10-15T18:42Z",
+      "status": "written",
+      "written": {
+        "event": "conquest-of-the-desert",
+        "edges": [],
+        "place": "patagonia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-041",
+      "writer": "B",
+      "fired": "2026-10-15T18:42Z",
+      "status": "written",
+      "written": {
+        "event": "cherokee-american-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

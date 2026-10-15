@@ -1762,3 +1762,11 @@ Writer A filed it there because the planner's queue asked for it in item `2026-1
 ## Writer A, 2026-10-15: `second-madagascar-expedition`, filed under `scramble-for-africa` with neither an actor nor a place
 
 Writer A filed it there because the planner's queue asked for it in item `2026-10-15-africa-008`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-15: `pastry-war`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-15-americas-026`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-15: `cherokee-american-wars`, filed under `american-indian-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-15-americas-041`, rank `list`. Its span and its subject put it inside the umbrella.

@@ -1250,6 +1250,15 @@
         }
       ]
     },
+    "chincha-islands-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "colombian-war-of-independence": {
       "from": "git",
       "versions": [
@@ -1292,6 +1301,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "conquest-of-the-desert": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
@@ -2244,6 +2262,15 @@
         }
       ]
     },
+    "pastry-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "peninsular-war": {
       "from": "git",
       "versions": [
@@ -2432,6 +2459,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "reform-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
@@ -2626,6 +2662,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "second-french-intervention-in-mexico": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
@@ -3258,6 +3303,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "war-of-1812": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
