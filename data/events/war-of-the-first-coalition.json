@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "war-of-the-first-coalition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q18817",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "War of the First Coalition",
+    "pt": "Primeira Coligação"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18817"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the First Coalition\", revision 1375968107"
+    }
+  ],
+  "title": "War of the First Coalition",
+  "summary": "The English Wikipedia article \"War of the First Coalition\", at revision 1375968107, opens: \"The War of the First Coalition was a set of wars between a coalition of several European powers and France fought from 1792 to 1797. The coalition was only loosely allied and fought without much coordination; each power wanted to annex a different part of France should they defeat the French, something that never occurred.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18817, imported by tools/import/wikidata.mjs. The item's own description reads \"1792–1797 set of battles between the French revolutionaries and the neighbouring monarchies\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1792,
+    "end": 1797,
+    "date": "1792-04-20",
+    "endDate": "1797-10-18"
+  },
+  "place": "western-europe",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}
