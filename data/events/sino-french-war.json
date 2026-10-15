@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sino-french-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q706183",
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Sino-French War",
+    "pt": "Guerra Sino-Francesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q706183"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sino-French War\", revision 1379426765"
+    }
+  ],
+  "title": "Sino-French War",
+  "summary": "The English Wikipedia article \"Sino-French War\", at revision 1379426765, opens: \"The Sino-French or Franco-Chinese War, also known as the Tonkin War, was a limited conflict fought from August 1884 to April 1885 between the French Third Republic and the Qing dynasty for the suzerainty of Vietnam. There was no declaration of war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q706183, imported by tools/import/wikidata.mjs. The item's own description reads \"limited conflict (1881–1885) between France and China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1884,
+    "end": 1885,
+    "date": "1884-08",
+    "endDate": "1885-04"
+  },
+  "place": "china-q29520",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
