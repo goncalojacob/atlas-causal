@@ -25921,3 +25921,5 @@ Rewriter 2026-10-14T05:05:00Z: 0 records rewritten, 30 left, 6929 of 6929 done. 
 Rewriter started 2026-10-14T05:53:31Z by scheduled
 
 Rewriter 2026-10-14T05:55:51Z: 0 records rewritten, 15 left, 6944 of 6944 done. This fire opened on a merge from m0 that brought in 5 new places (Gallipoli, Inner Manchuria, Panipat, Punjab, the West Bank) and 10 new events naming them, all from the Wikidata import, with no cursor entry. 3 of the events carry the import's own lane note, already judged plain by earlier fires. The other 7 events and all 5 places carry no regionNote, actors note, retraction reason or place note to rewrite. All 15 went to left. No edge, event, actor or place prose needed a rewrite this fire.
+
+Writer A started 2026-10-15T18:22:12Z by scheduled
