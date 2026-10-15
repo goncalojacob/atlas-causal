@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "dzungaria",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q284027",
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Dzungaria",
+    "pt": "Zungária"
+  },
+  "sources": [],
+  "names": [
+    "Dzungaria",
+    "Zungária"
+  ],
+  "where": {
+    "lon": 85,
+    "lat": 45,
+    "precision": "region",
+    "label": "Dzungaria"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

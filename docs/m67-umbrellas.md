@@ -1822,3 +1822,15 @@ Writer A filed it there because the planner's queue asked for it in item `2026-1
 ## Writer A, 2026-10-15: `1890-british-ultimatum`, bare
 
 Writer A imported it from the planner's queue as item `2026-10-15-africa-049`, rank `list`, and filed it under `scramble-for-africa`, which Wikidata's `P361` names. The assistant withdrew that filing the same night. The record's lane is europe, from its own point, and it names no actor or place the umbrella names, so it was not the umbrella's own and a test refused it. It now names no actor, no place and no umbrella, and the planner connects it when it can.
+
+## Writer A, 2026-10-15: `capture-of-muscat-1507`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-15-asia-053`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-15: `siamese-revolution-of-1688`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-15-asia-055`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-15: `burmese-siamese-war-1759-1760`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-15-asia-057`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.

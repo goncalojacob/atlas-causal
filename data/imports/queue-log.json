@@ -2573,6 +2573,127 @@
         "place": "old-goa"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-052",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-aden-1513",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-053",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-muscat-1507",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-054",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1848807: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-15-asia-055",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "siamese-revolution-of-1688",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-056",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "hong-kyongnae-s-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-057",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "burmese-siamese-war-1759-1760",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-058",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-persian-war-1505-1517",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-059",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "third-anglo-mysore-war",
+        "edges": [],
+        "place": "south-india"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-060",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "dzungar-qing-wars",
+        "edges": [],
+        "place": "dzungaria"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-061",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "sino-nepalese-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
