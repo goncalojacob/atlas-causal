@@ -1375,6 +1375,15 @@
         }
       ]
     },
+    "british-isles": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "british-raj-q129286": {
       "from": "git",
       "versions": [

@@ -23584,6 +23584,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-15",
+      "id": "british-expedition-to-abyssinia",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "British expedition to Abyssinia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -26058,6 +26086,35 @@
       "revised": null,
       "status": "active",
       "title": "Conflicts between the Regency of Algiers and Morocco"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-15",
+      "id": "congo-arab-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Congo Arab war"
     },
     {
       "authors": [
@@ -30518,6 +30575,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-15",
+      "id": "first-barbary-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Barbary War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 1,
       "id": "first-battle-of-benghazi",
@@ -31761,6 +31847,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-15",
+      "id": "franco-moroccan-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Franco-Moroccan War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-14",
       "id": "franco-prussian-war",
       "kind": "event",
@@ -31940,6 +32055,35 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "French conquest of Morocco"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-15",
+      "id": "french-conquest-of-tunisia",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "French conquest of Tunisia"
     },
     {
       "authors": [
@@ -32620,6 +32764,36 @@
       "revised": "2026-09-20",
       "status": "active",
       "title": "Germany declares war on Portugal"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-15",
+      "id": "glorious-revolution",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Glorious Revolution"
     },
     {
       "authors": [
@@ -33897,6 +34071,35 @@
       "revised": null,
       "status": "active",
       "title": "Hezbollah–Israel conflict (2023–present)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-15",
+      "id": "hispano-moroccan-war-1859-1860",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Hispano-Moroccan War (1859–1860)"
     },
     {
       "authors": [
@@ -46258,6 +46461,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-15",
+      "id": "second-barbary-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Barbary War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 4,
       "id": "second-battle-of-benghazi",
@@ -46961,6 +47193,36 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Second Liberian Civil War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-15",
+      "id": "second-madagascar-expedition",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Madagascar expedition"
     },
     {
       "authors": [
@@ -52884,6 +53146,36 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Srebrenica massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-15",
+      "id": "st-bartholomew-s-day-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-wars-of-religion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "St. Bartholomew's Day massacre"
     },
     {
       "authors": [
@@ -60377,6 +60669,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "british-expedition-to-abyssinia",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "bundner-wirren",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -60558,6 +60856,12 @@
     },
     {
       "id": "conflicts-between-the-regency-of-algiers-and-morocco",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "congo-arab-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -60815,6 +61119,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "first-barbary-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "first-battle-of-el-djorf",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -60881,6 +61191,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "franco-moroccan-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "franco-prussian-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -60899,6 +61215,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "french-conquest-of-tunisia",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "french-revolutionary-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -60912,6 +61234,12 @@
     },
     {
       "id": "gallipoli-campaign",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "glorious-revolution",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -60984,6 +61312,12 @@
     },
     {
       "id": "hamgyong-campaign",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "hispano-moroccan-war-1859-1860",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -61751,7 +62085,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "second-barbary-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "second-industrial-revolution",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "second-madagascar-expedition",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -62268,6 +62614,12 @@
     },
     {
       "id": "spanish-flu",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "st-bartholomew-s-day-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
