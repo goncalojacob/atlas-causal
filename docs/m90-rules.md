@@ -88,6 +88,10 @@ does not read the pool files.
     A child's dates must lie inside its parent's. The Guatemalan Civil War
     (1965 to 1996) cannot go under the Cold War, which ends in 1991. Check
     both spans before you queue a parent (14 October 2026).
+    A child must also be the umbrella's own: in the umbrella's lane, or
+    naming an actor or a place the umbrella names. The 1890 British
+    Ultimatum (lane europe) cannot go under the Scramble for Africa (lane
+    africa) though Wikidata's `P361` says so (15 October 2026).
 
 ## Where the work goes
 
