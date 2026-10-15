@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "reform-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2091916",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Reform War",
+    "pt": "Guerra da Reforma"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2091916"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Reform War\", revision 1370706632"
+    }
+  ],
+  "title": "Reform War",
+  "summary": "The English Wikipedia article \"Reform War\", at revision 1370706632, opens: \"The Reform War or War of Reform, also known as the Three Years' War and the Mexican Civil War, was a complex civil conflict in Mexico that was fought between Mexican liberals and conservatives with regional variations over the promulgation of the Constitution of 1857. It has been called the \"worst civil war to hit Mexico between the War of Independence of 1810–21 and the Revolution of 1910–20.\" Following the liberals' overthrow of the dictatorship of the conservative Antonio López de Santa Anna, the liberals passed a series of laws that codified their political program that were incorporated into the new constitution. It aimed to limit the political power of the executive branch, as well as the political, economic, and cultural power of the Catholic Church. Specific measures were the expropriation of church property, the separation of church and state, reduction of the power of the Mexican Army by the elimination of its special privileges, the strengthening of the secular state through public educations, and measures to develop the nation economically.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2091916, imported by tools/import/wikidata.mjs. The item's own description reads \"1858–1861 internal conflict in Mexico\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1857,
+    "end": 1861
+  },
+  "place": "mexico-q96",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "second-french-intervention-in-mexico",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q952881",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Second French intervention in Mexico",
+    "pt": "Segunda intervenção francesa no México"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q952881"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second French intervention in Mexico\", revision 1379242847"
+    }
+  ],
+  "title": "Second French intervention in Mexico",
+  "summary": "The English Wikipedia article \"Second French intervention in Mexico\", at revision 1379242847, opens: \"The second French intervention in Mexico, also known as the Second Franco-Mexican War (1861–1867), was a military invasion of the Republic of Mexico by the French Empire of Napoleon III, purportedly to force the collection of Mexican debts in conjunction with Great Britain and Spain. Mexican conservatives supported the invasion, since they had been defeated by the liberal government of Benito Juárez in a three-year civil war. Defeated on the battlefield, conservatives sought the aid of France to effect regime change and establish a monarchy in Mexico, a plan that meshed with Napoleon III's plans to re-establish the presence of the French Empire in the Americas. Although the French invasion displaced Juárez's Republican government from the Mexican capital and the monarchy of Archduke Maximilian was established, the Second Mexican Empire collapsed within a few years. Material aid from the United States, whose four-year civil war ended in 1865, invigorated the Republican fight against the regime of Maximilian, and the 1866 decision of Napoleon III to withdraw military support for Maximilian's regime accelerated the monarchy's collapse.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q952881, imported by tools/import/wikidata.mjs. The item's own description reads \"invasion of Mexico, launched in late 1861, by the Second French Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1867,
+    "date": "1861-12-08",
+    "endDate": "1867-06-21"
+  },
+  "place": "mexico-q96",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
