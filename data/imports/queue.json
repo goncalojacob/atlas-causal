@@ -1,480 +1,8 @@
 {
   "schema": 1,
   "kind": "import-queue",
-  "generated": "2026-10-13",
+  "generated": "2026-10-14",
   "items": [
-    {
-      "id": "2026-10-13-europe-064",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q74623",
-      "title": "Great Turkish War",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Wikidata files it under the Ottoman-Habsburg wars with P361, and the atlas holds that umbrella, which has few children.",
-      "parents": [
-        "ottoman-habsburg-wars"
-      ]
-    },
-    {
-      "id": "2026-10-13-europe-065",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q200855",
-      "title": "Battle of Vienna",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe in the 1600s holds no battle of the Ottoman advance on Vienna."
-    },
-    {
-      "id": "2026-10-13-europe-066",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q151616",
-      "title": "Great Northern War",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1700s carry 62 active events against the 1600s' 109."
-    },
-    {
-      "id": "2026-10-13-europe-067",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q150701",
-      "title": "War of the Spanish Succession",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1700s are thinner than the 1600s and this war opens them."
-    },
-    {
-      "id": "2026-10-13-europe-068",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q191055",
-      "title": "1755 Lisbon earthquake",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1700s are thin, and an atlas of Portuguese expansion holding no Lisbon earthquake is a gap a reader would notice."
-    },
-    {
-      "id": "2026-10-13-europe-069",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q33143",
-      "title": "Seven Years' War",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1700s are thin, and the atlas holds the French and Indian War and not the war around it."
-    },
-    {
-      "id": "2026-10-13-europe-070",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q46362",
-      "title": "Congress of Vienna",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1800s carry 39 active events, the thinnest century of the lane."
-    },
-    {
-      "id": "2026-10-13-europe-071",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q214028",
-      "title": "July Revolution",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1800s are the thinnest century of the lane."
-    },
-    {
-      "id": "2026-10-13-europe-072",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q3588",
-      "title": "Revolutions of 1848",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1800s are thin, and this is the frame a reader needs for the year."
-    },
-    {
-      "id": "2026-10-13-europe-073",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q254106",
-      "title": "Crimean War",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1800s are thin and the atlas holds no Crimean War."
-    },
-    {
-      "id": "2026-10-13-europe-074",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q51122",
-      "title": "Unification of Italy",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1800s are thin and the atlas holds the Italian wars of 1494 to 1559 and nothing of 1861."
-    },
-    {
-      "id": "2026-10-13-europe-075",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q154705",
-      "title": "Unification of Germany",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1800s are thin and the atlas holds no German unification."
-    },
-    {
-      "id": "2026-10-13-europe-076",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q46083",
-      "title": "Franco-Prussian War",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1800s are thin. Wikidata files it under the unification of Germany, which this same fire queues, so the filing waits for a later item."
-    },
-    {
-      "id": "2026-10-13-europe-077",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q188371",
-      "title": "Great Famine (Ireland)",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1800s are thin and the atlas holds one famine, the Bengal famine of 1770."
-    },
-    {
-      "id": "2026-10-13-europe-078",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q174205",
-      "title": "Russo-Turkish War (1877–1878)",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1800s are thin, and the Congress of Berlin queued beside it revised the treaty that ended this war."
-    },
-    {
-      "id": "2026-10-13-europe-079",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q151423",
-      "title": "Congress of Berlin",
-      "edges": [
-        {
-          "from": "Q151423",
-          "to": "assassination-of-archduke-franz-ferdinand",
-          "type": "precondition-of",
-          "confidence": "probable",
-          "article": "Congress of Berlin",
-          "revision": 1374102617,
-          "quote": "Although Austria-Hungary gained substantial territory, this angered the South Slavs and led to decades of tensions in Bosnia and Herzegovina, culminating in the assassination of Archduke Franz Ferdinand.",
-          "explanation": "The article \"Congress of Berlin\" (revision 1374102617) writes of the territory the Congress awarded Austria-Hungary: \"Although Austria-Hungary gained substantial territory, this angered the South Slavs and led to decades of tensions in Bosnia and Herzegovina, culminating in the assassination of Archduke Franz Ferdinand.\" The sentence names the award as what angered the South Slavs, and the assassination as what those tensions came to. The edge reads it as a precondition and not as a cause, because the article puts decades between the two."
-        }
-      ],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1800s are thin, and its own article states the link to the assassination of Archduke Franz Ferdinand, which the atlas holds."
-    },
-    {
-      "id": "2026-10-13-europe-080",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q8729",
-      "title": "Russian Revolution",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. The atlas holds the February and October revolutions and the civil war, and not the frame over them."
-    },
-    {
-      "id": "2026-10-13-europe-081",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q38789",
-      "title": "Battle of Stalingrad",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Wikidata files it under the Eastern Front with P361, and the atlas holds that record and the war over it.",
-      "parents": [
-        "eastern-front",
-        "world-war-ii"
-      ]
-    },
-    {
-      "id": "2026-10-13-europe-082",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q161227",
-      "title": "Yalta Conference",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. It is an Allied conference of the Second World War, which the atlas holds as an umbrella.",
-      "parents": [
-        "world-war-ii"
-      ]
-    },
-    {
-      "id": "2026-10-13-europe-083",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q165725",
-      "title": "Balkan Wars",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. The atlas holds the first and the second Balkan War and not the pair, so a reader meets two wars with no frame."
-    },
-    {
-      "id": "2026-10-13-europe-084",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q187650",
-      "title": "Great Purge",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe in the 1900s, and the atlas holds the deportation of the Crimean Tatars and nothing of the purge before it."
-    },
-    {
-      "id": "2026-10-13-europe-085",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q486",
-      "title": "Chernobyl disaster",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe in the 1900s, and the atlas holds no nuclear accident."
-    },
-    {
-      "id": "2026-10-13-europe-086",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q56039",
-      "title": "German reunification",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe in the 1900s, and the atlas holds the treaty on the final settlement with respect to Germany and not the reunification it settled."
-    },
-    {
-      "id": "2026-10-13-europe-087",
-      "planned": "2026-10-13T05:18Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q173457",
-      "title": "Dreyfus affair",
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Level 4 History names it and the atlas does not hold it. Europe's 1800s carry 39 active events, the thinnest century of the lane."
-    },
-    {
-      "id": "2026-10-13-europe-088",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "title": "Dutch Golden Age",
-      "edges": [],
-      "why": "Level 4 History names the Dutch Golden Age and the atlas does not hold it. Held back from the second fire to keep that fire inside forty items, and queued first this time.",
-      "qid": "Q661566",
-      "rank": "vital-4"
-    },
-    {
-      "id": "2026-10-13-europe-089",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "title": "Polish–Russian War (1609–1618)",
-      "edges": [],
-      "why": "Level 4 History names the Polish–Russian War of 1609 to 1618. Held back from the second fire for the same reason as the Dutch Golden Age, and queued second this time.",
-      "qid": "Q1044829",
-      "rank": "vital-4"
-    },
-    {
-      "id": "2026-10-13-europe-090",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "title": "Anglo-Dutch wars",
-      "edges": [],
-      "why": "Level 4 History names the Anglo-Dutch wars and the atlas does not hold them.",
-      "qid": "Q755170",
-      "rank": "vital-4"
-    },
-    {
-      "id": "2026-10-13-europe-091",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "title": "Partitions of Poland",
-      "edges": [],
-      "why": "Level 4 History names the partitions of Poland. The seeds file now carries a lane for it, added after the second fire flagged the gap.",
-      "qid": "Q152006",
-      "rank": "vital-4"
-    },
-    {
-      "id": "2026-10-13-europe-092",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "title": "Second Industrial Revolution",
-      "edges": [],
-      "why": "Level 4 History names the Second Industrial Revolution. The seeds file now carries a lane for it.",
-      "qid": "Q217200",
-      "rank": "vital-4"
-    },
-    {
-      "id": "2026-10-13-europe-093",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "title": "New Imperialism",
-      "edges": [],
-      "why": "Level 4 History names New Imperialism. The seeds file now carries a lane for it.",
-      "qid": "Q304121",
-      "rank": "vital-4"
-    },
-    {
-      "id": "2026-10-13-europe-094",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "title": "Spanish flu",
-      "edges": [],
-      "why": "Level 4 History names the 1918 to 1920 flu pandemic under the title Spanish flu. The seeds file now carries a lane for it.",
-      "qid": "Q178275",
-      "rank": "vital-4"
-    },
-    {
-      "id": "2026-10-13-americas-095",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "americas",
-      "writer": "B",
-      "title": "2008 financial crisis",
-      "edges": [],
-      "why": "Level 4 History names the 2007 to 2008 financial crisis. The seeds file now carries a lane for it, in the Americas, where the pool still has room.",
-      "qid": "Q896666",
-      "rank": "vital-4"
-    },
-    {
-      "id": "2026-10-13-europe-096",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "title": "Battle of the Atlantic",
-      "edges": [],
-      "why": "Level 4 History names the Battle of the Atlantic and the atlas does not hold it. Its located claims name the Atlantic Ocean and several coasts rather than one point, so the writer may need a lane named for it if the point it resolves to reads as no lane.",
-      "qid": "Q157627",
-      "rank": "vital-4"
-    },
-    {
-      "id": "2026-10-13-europe-097",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "europe",
-      "writer": "A",
-      "title": "Prague Spring",
-      "edges": [],
-      "why": "Level 4 History names the Prague Spring and the atlas does not hold it.",
-      "qid": "Q162401",
-      "rank": "vital-4"
-    },
-    {
-      "id": "2026-10-13-africa-098",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "africa",
-      "writer": "A",
-      "title": "Ethiopian–Adal War",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names the Ethiopian–Adal War, which the atlas does not hold. Africa trails every other lane (328 active against europe's 568), so it comes first within this rank.",
-      "qid": "Q2915203",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-13-africa-099",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "africa",
-      "writer": "A",
-      "title": "Komenda Wars",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names the Komenda Wars, fought at Fort Komenda on the Gold Coast. Africa trails and comes first within this rank.",
-      "qid": "Q6428297",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-13-africa-100",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "africa",
-      "writer": "A",
-      "title": "Oman–Zanzibar war",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names the Oman–Zanzibar war, fought in the Zanzibar Archipelago. Africa trails and comes first within this rank.",
-      "qid": "Q16935425",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-13-africa-101",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "africa",
-      "writer": "A",
-      "title": "Revolutions of Tunis",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names the Revolutions of Tunis. Africa trails and comes first within this rank.",
-      "qid": "Q3458428",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-13-africa-102",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "africa",
-      "writer": "A",
-      "title": "Maghrebi war (1699–1702)",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names the Maghrebi war of 1699 to 1702. Africa trails and comes first within this rank. The item carries no point and no located P276 or P131, so it needs a lane named for it in the seeds file before the writer can take it.",
-      "qid": "Q106959443",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-13-asia-103",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "asia",
-      "writer": "A",
-      "title": "Battle of Diu",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names the Battle of Diu, fought off Daman and Diu. Asia trails every lane but Africa (350 active against europe's 568), so it comes second within this rank.",
-      "qid": "Q1628477",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-13-asia-104",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "asia",
-      "writer": "A",
-      "title": "Battle of Chaldiran",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names the Battle of Chaldiran, fought in Safavid Iran. Asia trails and comes second within this rank.",
-      "qid": "Q745110",
-      "rank": "list"
-    },
     {
       "id": "2026-10-13-asia-105",
       "planned": "2026-10-13T23:52Z",
@@ -553,49 +81,458 @@
       "rank": "list"
     },
     {
-      "id": "2026-10-13-americas-112",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "americas",
-      "writer": "B",
-      "title": "Lord Dunmore's War",
+      "id": "2026-10-14-africa-001",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q31944",
+      "title": "Mahdist War",
       "edges": [],
-      "why": "List of wars: 1500–1799 names Lord Dunmore's War. The Americas lane is third in the order, after Africa and Asia. The item carries no point and no located P276, P131 or P17, so it needs a lane named for it in the seeds file before the writer can take it.",
-      "qid": "Q2632175",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-13-americas-113",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "americas",
-      "writer": "B",
-      "title": "Cherokee–American wars",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names the Cherokee–American wars. The Americas lane is third in the order, after Africa and Asia.",
-      "qid": "Q4122685",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-13-americas-114",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "americas",
-      "writer": "B",
-      "title": "Inca Civil War",
-      "edges": [],
-      "why": "List of wars: 1500–1799 names the Inca Civil War, which precedes the Spanish conquest of the Inca Empire the atlas already holds. Its own class, war of succession, has no row in the seeds file, so the writer refuses it until one exists.",
-      "qid": "Q1763918",
-      "rank": "list"
-    },
-    {
-      "id": "2026-10-13-americas-115",
-      "planned": "2026-10-13T23:52Z",
-      "lane": "americas",
-      "writer": "B",
-      "title": "September 11 attacks — filing the war on terror as parent",
-      "edges": [],
-      "why": "Writer B refused this filing on 13 October because the war on terror was not an event record yet. This fire wrote it (asia-045), so the parent now exists and the filing can go through.",
-      "existing": "september-11-attacks",
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1881 to 1899 war in Sudan against British and Egyptian rule, part of the Scramble for Africa the atlas already holds. Africa is the lane that trails.",
       "parents": [
-        "war-on-terror"
+        "scramble-for-africa"
+      ]
+    },
+    {
+      "id": "2026-10-14-africa-002",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q329203",
+      "title": "First Boer War",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1880 to 1881 war between Britain and the Transvaal Boers. Its own article names it part of Q1676845, the Boer Wars series, but that record was merged into second-boer-war in M44b and the merge note says the held record covers only the second war. No living record stands for the series, so this stays unfiled."
+    },
+    {
+      "id": "2026-10-14-africa-003",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q476855",
+      "title": "Mau Mau rebellion",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1952 to 1960 uprising against British rule in Kenya, part of the decolonisation of Africa the atlas already holds.",
+      "parents": [
+        "decolonisation-of-africa"
+      ]
+    },
+    {
+      "id": "2026-10-14-africa-004",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q142529",
+      "title": "Algerian Civil War",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1992 to 2002 civil war between the Algerian state and Islamist rebels. Africa is the lane that trails."
+    },
+    {
+      "id": "2026-10-14-africa-005",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q722051",
+      "title": "Anglo-Ashanti wars",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The nineteenth-century wars between Britain and the Ashanti Empire, part of the Scramble for Africa.",
+      "parents": [
+        "scramble-for-africa"
+      ]
+    },
+    {
+      "id": "2026-10-14-africa-006",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2629782",
+      "title": "French conquest of Algeria",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1830 to 1904 French conquest. Africa is the lane that trails."
+    },
+    {
+      "id": "2026-10-14-africa-007",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1993171",
+      "title": "1919 Egyptian revolution",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1919 uprising against British rule in Egypt. Africa is the lane that trails."
+    },
+    {
+      "id": "2026-10-14-africa-008",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q616939",
+      "title": "Anglo-Egyptian War",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1882 war that led to British occupation of Egypt. Africa is the lane that trails."
+    },
+    {
+      "id": "2026-10-14-africa-009",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q657661",
+      "title": "Mozambican Civil War",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1977 to 1992 civil war in Mozambique, part of the Cold War the atlas already holds.",
+      "parents": [
+        "cold-war"
+      ]
+    },
+    {
+      "id": "2026-10-14-africa-010",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1569328",
+      "title": "Boko Haram insurgency",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The insurgency in Nigeria and neighbouring states since 2009. Africa is the lane that trails."
+    },
+    {
+      "id": "2026-10-14-africa-011",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q18702324",
+      "title": "Libyan crisis",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The conflicts in Libya since 2011. Africa is the lane that trails."
+    },
+    {
+      "id": "2026-10-14-africa-012",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1781531",
+      "title": "Atrocities in the Congo Free State",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The atrocities under Leopold II's personal rule of the Congo Free State, 1885 to 1908. Africa is the lane that trails."
+    },
+    {
+      "id": "2026-10-14-asia-013",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q605321",
+      "title": "First Battle of Panipat",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1526 battle that founded the Mughal Empire in India. Asia is the lane that trails after Africa."
+    },
+    {
+      "id": "2026-10-14-asia-014",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q164983",
+      "title": "Gallipoli campaign",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1915 to 1916 Allied campaign against the Ottoman Empire. Asia is the lane that trails after Africa."
+    },
+    {
+      "id": "2026-10-14-asia-015",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q46333",
+      "title": "Long March",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1934 to 1935 retreat of the Chinese Communist forces, part of the Chinese Civil War the atlas already holds.",
+      "parents": [
+        "chinese-civil-war"
+      ]
+    },
+    {
+      "id": "2026-10-14-asia-016",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1551794",
+      "title": "Japanese invasion of Manchuria",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1931 to 1932 invasion that established Manchukuo, which the item's own claims file under the Second Sino-Japanese War the atlas already holds.",
+      "parents": [
+        "second-sino-japanese-war"
+      ]
+    },
+    {
+      "id": "2026-10-14-asia-017",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q242099",
+      "title": "Mukden incident",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1931 staged attack Japan used as a pretext for the invasion of Manchuria, queued in the same fire. The planner leaves the filing and the edge off rather than guess the id the import will give that record; a later fire can connect them once it exists."
+    },
+    {
+      "id": "2026-10-14-asia-018",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q3266633",
+      "title": "Nakba",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1948 displacement of Palestinians, part of the Israeli-Palestinian conflict the atlas already holds.",
+      "parents": [
+        "israeli-palestinian-conflict"
+      ]
+    },
+    {
+      "id": "2026-10-14-asia-019",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q49105",
+      "title": "First Intifada",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1987 to 1993 Palestinian uprising, part of the Israeli-Palestinian conflict the atlas already holds.",
+      "parents": [
+        "israeli-palestinian-conflict"
+      ]
+    },
+    {
+      "id": "2026-10-14-asia-020",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q243590",
+      "title": "Second Anglo-Sikh War",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1848 to 1849 war that ended the Sikh Empire. Asia is the lane that trails after Africa."
+    },
+    {
+      "id": "2026-10-14-asia-021",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q19686631",
+      "title": "Yemeni civil war (2014–present)",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The civil war in Yemen since 2014. Asia is the lane that trails after Africa."
+    },
+    {
+      "id": "2026-10-14-asia-022",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q17507684",
+      "title": "War against the Islamic State",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The war against the Islamic State since 2014. Its own claims also name the Syrian Civil War, which this atlas retracted in M40b, so the filing goes to the Iraqi insurgency the atlas already holds instead.",
+      "parents": [
+        "iraqi-insurgency"
+      ]
+    },
+    {
+      "id": "2026-10-14-asia-023",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q122976243",
+      "title": "October 7 attacks",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 2023 attacks on Israel, which the item's own claims file under the Gaza War the atlas already holds.",
+      "parents": [
+        "gaza-war"
+      ]
+    },
+    {
+      "id": "2026-10-14-asia-024",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1073476",
+      "title": "Northern Expedition",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1926 to 1928 Kuomintang military campaign that unified most of China under the Nationalist government. Asia is the lane that trails after Africa."
+    },
+    {
+      "id": "2026-10-14-asia-025",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q274365",
+      "title": "8888 Uprising",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1988 pro-democracy uprising in Myanmar. Asia is the lane that trails after Africa."
+    },
+    {
+      "id": "2026-10-14-asia-026",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q28136551",
+      "title": "Rohingya genocide",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The persecution of the Rohingya in Myanmar since 2016. Asia is the lane that trails after Africa."
+    },
+    {
+      "id": "2026-10-14-americas-027",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q768496",
+      "title": "Banana Wars",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The United States military interventions in Central America and the Caribbean, 1898 to 1934. The Americas lane comes after Africa and Asia."
+    },
+    {
+      "id": "2026-10-14-americas-028",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q3439047",
+      "title": "Dominican War of Independence",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1844 to 1856 war that secured the Dominican Republic's independence from Haiti. The Americas lane comes after Africa and Asia."
+    },
+    {
+      "id": "2026-10-14-americas-029",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1282732",
+      "title": "Guatemalan Civil War",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1960 to 1996 civil war in Guatemala, part of the Cold War the atlas already holds.",
+      "parents": [
+        "cold-war"
+      ]
+    },
+    {
+      "id": "2026-10-14-americas-030",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1783607",
+      "title": "Salvadoran Civil War",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1979 to 1992 civil war in El Salvador. The Americas lane comes after Africa and Asia."
+    },
+    {
+      "id": "2026-10-14-americas-031",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q223085",
+      "title": "Football War",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The brief 1969 war between Honduras and El Salvador. The Americas lane comes after Africa and Asia."
+    },
+    {
+      "id": "2026-10-14-americas-032",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q459282",
+      "title": "United States invasion of Panama",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1989 to 1990 invasion that removed Manuel Noriega, part of the Cold War the atlas already holds.",
+      "parents": [
+        "cold-war"
+      ]
+    },
+    {
+      "id": "2026-10-14-europe-033",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q15920546",
+      "title": "2014 Russian annexation of Crimea",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 2014 annexation, part of the Russo-Ukrainian war the atlas already holds.",
+      "parents": [
+        "russo-ukrainian-war"
+      ]
+    },
+    {
+      "id": "2026-10-14-europe-034",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q69163529",
+      "title": "Fall of the Berlin Wall",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1989 fall of the Wall, part of the Revolutions of 1989 the atlas already holds.",
+      "parents": [
+        "revolutions-of-1989"
+      ]
+    },
+    {
+      "id": "2026-10-14-europe-035",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q189508",
+      "title": "Glorious Revolution",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1688 to 1689 overthrow of James II of England. Europe is the lane that trails least, but the vital-5 pool still offers it."
+    },
+    {
+      "id": "2026-10-14-europe-036",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q175653",
+      "title": "Siege of Sarajevo",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1992 to 1996 siege, part of the War in Bosnia and Herzegovina the atlas already holds.",
+      "parents": [
+        "war-in-bosnia-and-herzegovina"
+      ]
+    },
+    {
+      "id": "2026-10-14-europe-037",
+      "planned": "2026-10-14T03:28Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q163891",
+      "title": "St. Bartholomew's Day massacre",
+      "edges": [],
+      "rank": "vital-5",
+      "why": "Vital article, level 5. The 1572 massacre of Huguenots, part of the French Wars of Religion the atlas already holds.",
+      "parents": [
+        "french-wars-of-religion"
       ]
     }
   ]

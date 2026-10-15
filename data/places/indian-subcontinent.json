@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "indian-subcontinent",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q60140",
+  "sitelinks": {
+    "count": 112,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Indian subcontinent",
+    "pt": "Subcontinente indiano"
+  },
+  "sources": [],
+  "names": [
+    "Indian subcontinent",
+    "Subcontinente indiano"
+  ],
+  "where": {
+    "lon": 76.97021,
+    "lat": 22.20775,
+    "precision": "region",
+    "label": "Indian subcontinent"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

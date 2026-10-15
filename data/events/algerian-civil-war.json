@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "algerian-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q142529",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Algerian Civil War",
+    "pt": "Guerra Civil da Argélia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q142529"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Algerian Civil War\", revision 1379888410"
+    }
+  ],
+  "title": "Algerian Civil War",
+  "summary": "The English Wikipedia article \"Algerian Civil War\", at revision 1379888410, opens: \"The Algerian Civil War, known in Algeria as the Black Decade, was a civil war fought between the Algerian government and various Islamist rebel groups from 11 January 1992 to 8 February 2002. The war began slowly; it initially appeared that the government had succeeded in crushing the Islamist movement, but armed groups emerged to declare violent jihad, and by 1994 violence reached such a level that it appeared the government might not be able to withstand it. By 1996–97 it had become clear that the Islamist resistance had lost its popular support, although fighting continued for several years after this.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q142529, imported by tools/import/wikidata.mjs. The item's own description reads \"1992–2002 civil war in Algeria between the army and Islamic rebels\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1992,
+    "end": 2002,
+    "date": "1992-01-11",
+    "endDate": "2002-02-08"
+  },
+  "place": "algeria-q262",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

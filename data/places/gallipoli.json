@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "gallipoli",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q192860",
+  "sitelinks": {
+    "count": 62,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Gallipoli",
+    "pt": "Galípoli"
+  },
+  "sources": [],
+  "names": [
+    "Gallipoli",
+    "Galípoli"
+  ],
+  "where": {
+    "lon": 26.45,
+    "lat": 40.35,
+    "precision": "region",
+    "label": "Gallipoli"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

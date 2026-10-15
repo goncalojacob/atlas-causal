@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nader-shah-s-invasion-of-india",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q6957844",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Nader Shah's invasion of India",
+    "pt": "Invasões de Nader Xá ao Império Mogol"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6957844"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nader Shah's invasion of India\", revision 1379473633"
+    }
+  ],
+  "title": "Nader Shah's invasion of India",
+  "summary": "The English Wikipedia article \"Nader Shah's invasion of India\", at revision 1379473633, opens: \"In May 1738, Nader Shah of Iran, the founder of the Afsharid dynasty, invaded Northern India, eventually sacking Delhi in March 1739. His army easily defeated the crumbling Mughals at the Battle of Karnal and then occupied the Mughal capital.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6957844, imported by tools/import/wikidata.mjs. The item's own description reads \"Persian invasion of Mughal Empire (1738-1740)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1738,
+    "end": 1740,
+    "date": "1738-05-10"
+  },
+  "place": "indian-subcontinent",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

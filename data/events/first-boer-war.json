@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "first-boer-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q329203",
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "First Boer War",
+    "pt": "Primeira Guerra dos Bôeres"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q329203"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Boer War\", revision 1379911011"
+    }
+  ],
+  "title": "First Boer War",
+  "summary": "The English Wikipedia article \"First Boer War\", at revision 1379911011, opens: \"The First Boer War, also known as the Transvaal War, was fought from 16 December 1880 until 23 March 1881 between the United Kingdom and Boers of the Transvaal. The war resulted in a Boer victory and eventual independence of the South African Republic. The war is also known as the First Anglo–Boer War, the Transvaal War or the Transvaal Rebellion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q329203, imported by tools/import/wikidata.mjs. The item's own description reads \"military conflict in South Africa (1880–1881)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1880,
+    "end": 1881,
+    "date": "1880-12-20",
+    "endDate": "1881-03-23"
+  },
+  "place": "transvaal-colony",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1509,6 +1509,432 @@
         "place": "chaldoran"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-105",
+      "writer": "A",
+      "fired": "2026-10-14T03:23Z",
+      "status": "written",
+      "written": {
+        "event": "first-anglo-mysore-war",
+        "edges": [],
+        "place": "mysore-q10086"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-106",
+      "writer": "A",
+      "fired": "2026-10-14T03:23Z",
+      "status": "written",
+      "written": {
+        "event": "fourth-anglo-mysore-war",
+        "edges": [],
+        "place": "indian-subcontinent"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-107",
+      "writer": "A",
+      "fired": "2026-10-14T03:23Z",
+      "status": "written",
+      "written": {
+        "event": "white-lotus-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-108",
+      "writer": "A",
+      "fired": "2026-10-14T03:23Z",
+      "status": "written",
+      "written": {
+        "event": "carnatic-wars",
+        "edges": [],
+        "place": "carnatic-region"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-109",
+      "writer": "A",
+      "fired": "2026-10-14T03:23Z",
+      "status": "written",
+      "written": {
+        "event": "deccan-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-110",
+      "writer": "A",
+      "fired": "2026-10-14T03:23Z",
+      "status": "written",
+      "written": {
+        "event": "transition-from-ming-to-qing",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-13-asia-111",
+      "writer": "A",
+      "fired": "2026-10-14T03:23Z",
+      "status": "written",
+      "written": {
+        "event": "nader-shah-s-invasion-of-india",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-americas-027",
+      "writer": "B",
+      "fired": "2026-10-14T03:42Z",
+      "status": "written",
+      "written": {
+        "event": "banana-wars",
+        "edges": [],
+        "place": "central-america"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-americas-028",
+      "writer": "B",
+      "fired": "2026-10-14T03:42Z",
+      "status": "written",
+      "written": {
+        "event": "dominican-war-of-independence",
+        "edges": [],
+        "place": "hispaniola"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-americas-029",
+      "writer": "B",
+      "fired": "2026-10-14T03:42Z",
+      "status": "written",
+      "written": {
+        "event": "guatemalan-civil-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-americas-030",
+      "writer": "B",
+      "fired": "2026-10-14T03:42Z",
+      "status": "written",
+      "written": {
+        "event": "salvadoran-civil-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-americas-031",
+      "writer": "B",
+      "fired": "2026-10-14T03:42Z",
+      "status": "written",
+      "written": {
+        "event": "football-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-americas-032",
+      "writer": "B",
+      "fired": "2026-10-14T03:42Z",
+      "status": "written",
+      "written": {
+        "event": "united-states-invasion-of-panama",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-africa-001",
+      "writer": "A",
+      "fired": "2026-10-14T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "mahdist-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "parent",
+          "detail": "\"scramble-for-africa\" does not contain the event's start"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-africa-002",
+      "writer": "A",
+      "fired": "2026-10-14T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "first-boer-war",
+        "edges": [],
+        "place": "transvaal-colony"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-africa-003",
+      "writer": "A",
+      "fired": "2026-10-14T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "mau-mau-rebellion",
+        "edges": [],
+        "place": "kenya-colony"
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "parent",
+          "detail": "\"decolonisation-of-africa\" does not contain the event's start"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-africa-004",
+      "writer": "A",
+      "fired": "2026-10-14T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "algerian-civil-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-africa-005",
+      "writer": "A",
+      "fired": "2026-10-14T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-ashanti-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "parent",
+          "detail": "\"scramble-for-africa\" does not contain the event's start"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-africa-006",
+      "writer": "A",
+      "fired": "2026-10-14T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "french-conquest-of-algeria",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-africa-007",
+      "writer": "A",
+      "fired": "2026-10-14T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "1919-egyptian-revolution",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-africa-008",
+      "writer": "A",
+      "fired": "2026-10-14T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-egyptian-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-africa-009",
+      "writer": "A",
+      "fired": "2026-10-14T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "mozambican-civil-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-africa-010",
+      "writer": "A",
+      "fired": "2026-10-14T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "boko-haram-insurgency",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-africa-011",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "libyan-crisis",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-africa-012",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "atrocities-in-the-congo-free-state",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-asia-013",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-panipat",
+        "edges": [],
+        "place": "panipat"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-asia-014",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "gallipoli-campaign",
+        "edges": [],
+        "place": "gallipoli"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-asia-015",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "long-march",
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "parent",
+          "detail": "\"chinese-civil-war\" does not contain the event's start"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-asia-016",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "japanese-invasion-of-manchuria",
+        "edges": [],
+        "place": "inner-manchuria"
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "parent",
+          "detail": "\"second-sino-japanese-war\" does not contain the event's start"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-14-asia-017",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "mukden-incident",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-asia-018",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "nakba",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-asia-019",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "first-intifada",
+        "edges": [],
+        "place": "west-bank-q36678"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-14-asia-020",
+      "writer": "A",
+      "fired": "2026-10-14T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "second-anglo-sikh-war",
+        "edges": [],
+        "place": "punjab-q169132"
+      },
+      "refusals": []
     }
   ]
 }

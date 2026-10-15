@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "deccan-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-14",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q139845",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-14"
+  },
+  "wikipedia": {
+    "en": "Deccan wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q139845"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Deccan wars\", revision 1370615029"
+    }
+  ],
+  "title": "Deccan wars",
+  "summary": "The English Wikipedia article \"Deccan wars\", at revision 1370615029, opens: \"The Deccan wars, also known as Mughal–Maratha wars, were a series of military conflicts between the Mughals and the Marathas after the death of Maratha Chhatrapati Shivaji in 1680 until the death of Mughal Emperor Aurangzeb in 1707. Shivaji was a central figure in what has been called \"the Maratha insurgency\" against the Mughal state. Both he and his son, Sambhaji, alternated between rebellion against the Mughal state and service to the Mughal sovereign in an official capacity. It was common practice in late 17th-century India for members of a ruling family of a small principality to both collaborate with and rebel against the Mughals.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q139845, imported by tools/import/wikidata.mjs. The item's own description reads \"wars between the Maratha Empire and the Mughal Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1681,
+    "end": 1707,
+    "date": "1681-09",
+    "endDate": "1707-05"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (named for this item in data/imports/wikidata-seeds.json): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

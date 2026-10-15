@@ -432,3 +432,57 @@ only you to coordinate the work." This replaces section 10.
 The owner also said "You can work tonight until 7am". The routines were
 re-enabled at 23:20Z on 13 October. At 06:00Z on 14 October the assistant
 disables them again.
+
+## 13. 14 October, 06:00Z: the night's close
+
+The owner said "You can work tonight until 7am". The assistant disabled the
+four routines at 06:00Z on 14 October: the planner
+(`trig_01KAvDPWvURj8JFPnC8ngr4b`), writer A (`trig_01J2ampc4sLf7fCv7W8Jn6ky`),
+writer B (`trig_01Hvmac6PMfQqk6nF99R1Paf`) and the rewriter
+(`trig_01C6p8bsqexSaHLdD7k1T7my`). Nothing fires until the owner says so.
+
+**What the night did.** The planner ran on Sonnet, the writers on Haiku and
+the rewriter on Sonnet, as section 12 says. Snapshots 24, 25 and 26 are
+live. The site, at snapshot 26, holds 1,973 event records. `m0` holds 2,006,
+and they reach the site with snapshot 27. The plain-prose rewrite of every record is complete.
+
+**Why snapshot 27 is not live.** Pull request #55 fails one browser test,
+`tests/m87-browser.test.mjs` §9, on every run. In the graph view on a phone,
+the open event's name is not drawn when its title is too wide for the pane.
+The graph writes a name whole or not at all (`src/graph-view/labels.js`,
+`placeOne`), and "Transition from Ming to Qing" does not fit. The records
+are right. The display has had this gap since M88. The new event only
+exposed it, because the test opens the first mark the graph draws. The
+assistant did not change the display at night. It needs a brief: the open
+event's own name should always be drawn, on a second line or with the pane
+framed to fit it. The test now waits thirty seconds and names the event it
+opened, so its failure message says which event.
+
+**Writer fixes the assistant made by hand.**
+- Haiku built the index in a shallow clone. The writer prompts now unshallow
+  every time and check before the build.
+- Haiku typed times instead of reading the clock. The prompts now take every
+  time from `date`.
+- The Battle of Stalingrad was filed under the Eastern Front and World War
+  II together. The Guatemalan and Mozambican civil wars were filed under the
+  Cold War, which ends in 1991, though both run past it. The rules card
+  (card 12) now forbids both mistakes. The planner reads it at its next
+  fire.
+- The Battle of the Atlantic needed a row in `docs/m62-umbrellas.md`. The
+  import tool writes rows in `docs/m67-umbrellas.md` but not there.
+
+**To resume.** Fix the graph label gap first, so pull request #55 can merge.
+Then land `m42`, `m42b`, `w3` and `plan` with `land.sh` and re-enable the
+routines. Before each landing, run the fast suite on the lane branch. The
+browser test `tests/m87-browser.test.mjs` §9 flaked twice tonight before
+the real cause was found. A failure that repeats on a rerun is real.
+
+## 14. 15 October: big events from 1415 to 1900
+
+The owner, about 18:20 Lisbon on 15 October: "Podes continuar até às 8am de
+amanhã" (you can go on until 8am tomorrow), then "Foca-te em adicionar
+vários eventos grandes de 1415 a 1900" (focus on adding several big events
+from 1415 to 1900). The planner's window is now 1415 to 1900, big events
+first (rules card 13). The run ends at 07:00Z on 16 October. Section 12's
+model rule still holds: Opus coordinates, Sonnet plans and rewrites, Haiku
+writes.

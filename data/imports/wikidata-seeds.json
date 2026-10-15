@@ -2098,7 +2098,34 @@
     "Q16935425",
     "Q3458428",
     "Q1628477",
-    "Q745110"
+    "Q745110",
+    "Q617070",
+    "Q617782",
+    "Q997220",
+    "Q976827",
+    "Q139845",
+    "Q3427966",
+    "Q6957844",
+    "Q31944",
+    "Q329203",
+    "Q476855",
+    "Q142529",
+    "Q722051",
+    "Q2629782",
+    "Q1993171",
+    "Q616939",
+    "Q657661",
+    "Q1569328",
+    "Q18702324",
+    "Q1781531",
+    "Q605321",
+    "Q164983",
+    "Q46333",
+    "Q1551794",
+    "Q242099",
+    "Q3266633",
+    "Q49105",
+    "Q243590"
   ],
   "queries": [
     {
@@ -6331,6 +6358,12 @@
       "kind": "event",
       "category": "war",
       "label": "war of succession"
+    },
+    "Q50844387": {
+      "kind": "event",
+      "category": "founding",
+      "label": "reunion",
+      "note": "Added 14 October 2026 from the 0312Z plan note, so that German reunification (Q56039) can enter. Wikidata describes the class as \"merger of two groups that had previously separated\". The category is founding, as for independence (Q37055): a state coming into existence. The sibling class Q1140229, political union, was not added, since it also names states and not only events."
     }
   },
   "lanes": {
@@ -6641,7 +6674,9 @@
     "Q106959443": "africa",
     "Q139845": "asia",
     "Q2632175": "americas",
-    "Q157627": "europe"
+    "Q157627": "europe",
+    "Q4122685": "americas",
+    "Q3458428": "africa"
   },
   "reconcile": true,
   "schema": 1,

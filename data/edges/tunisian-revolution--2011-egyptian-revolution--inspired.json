@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-21",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -37,6 +37,6 @@
   "to": "2011-egyptian-revolution",
   "type": "inspired",
   "confidence": "probable",
-  "explanation": "The Arab Spring's own article gives the direction of travel and names Egypt among the five: “It began in Tunisia in response to the death of Mohamed Bouazizi by self-immolation. From Tunisia, the protests initially spread to five other countries: Libya, Egypt, Yemen, Syria and Bahrain.” Egypt's article dates its revolution to 25 January 2011, eleven days after Ben Ali left Tunisia, and its lead gives the occasion as National Police Day and the grievance as police brutality — it does not name Tunisia. So what is asserted here is the spread the first article states and not a cause inside Egypt: the type is `inspired` and not `caused`, and the confidence is `probable` because both citations are the same encyclopedia.",
+  "explanation": "The Arab Spring's own article gives the direction of travel and names Egypt among the five: “It began in Tunisia in response to the death of Mohamed Bouazizi by self-immolation. From Tunisia, the protests initially spread to five other countries: Libya, Egypt, Yemen, Syria and Bahrain.” Egypt's article dates its revolution to 25 January 2011, eleven days after Ben Ali left Tunisia, and its lead gives the occasion as National Police Day and the grievance as police brutality. It does not name Tunisia. So what is asserted here is the spread the first article states and not a cause inside Egypt: the type is `inspired` and not `caused`, and the confidence is `probable` because both citations are the same encyclopedia.",
   "dispute": null
 }

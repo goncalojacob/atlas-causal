@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-10-01",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -34,6 +34,6 @@
   "to": "baltic-entente",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The Entente’s own article puts the war between the idea and the thing: \"Thanks to the victory of Entente in World War I and the relative international weakening of both Germany and Russia, it became possible for the Baltic states to turn theoretical ideas into practice and to establish themselves politically in the international arena.\" \"It became possible\" is what `enabled` is for: the war did not bring the Baltic Entente about — sixteen years and three independences stand between them — it removed the two powers whose weight had made it impossible.",
+  "explanation": "The Entente’s own article puts the war between the idea and the thing: \"Thanks to the victory of Entente in World War I and the relative international weakening of both Germany and Russia, it became possible for the Baltic states to turn theoretical ideas into practice and to establish themselves politically in the international arena.\" \"It became possible\" is what `enabled` is for: the war did not bring the Baltic Entente about. Sixteen years and three independences stand between them. The war removed the two powers whose weight had made it impossible.",
   "dispute": null
 }

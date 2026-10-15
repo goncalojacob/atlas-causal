@@ -49,7 +49,7 @@ import { LABEL_SIZE } from './label-fit.js';
 // about the screen, not an ink, and nothing in the stylesheet reads it.
 const LABEL_MIN_PIXELS = 8;
 import {
-  naming, placeLabels, placeOne, labelBoxAt, movedAway, LENS_ROWS_AWAY,
+  naming, placeLabels, placeOne, placeSelected, labelBoxAt, movedAway, LENS_ROWS_AWAY,
 } from './labels.js';
 import { exportButton } from '../share.js';
 import { PHONE } from '../view-key.js';
@@ -1297,6 +1297,28 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
   //
   // The order is unchanged too: heaviest first at rest, so a picture that
   // cannot hold every name holds the names that carry the most of the atlas.
+  // One line of a label, drawn, with the leader back to its mark when the
+  // line it landed on is not the mark's own. Shared by the placed labels
+  // below and by the open event's own, which may be more than one line of
+  // this (placeSelected, labels.js).
+  function drawLabelLine(node, text, rect, k, size, selected) {
+    if (movedAway(node, rect, k, size)) {
+      labelsGroup.appendChild(svg('line', {
+        x1: node.x + (rect.right ? 1 : -1) * (MAX_RADIUS / k),
+        y1: node.y,
+        x2: rect.x - (rect.right ? 1 : -1) * (1 / k),
+        y2: rect.y,
+        class: 'label-leader',
+      }));
+    }
+    labelsGroup.appendChild(textNode(text, {
+      x: rect.x, y: rect.y + (size * 0.35) / k,
+      class: classes('node-label', selected ? 'selected' : ''),
+      'text-anchor': rect.right ? 'start' : 'end',
+      'font-size': size / k,
+    }));
+  }
+
   function drawLabels(s, k, box, working) {
     labelsGroup.replaceChildren();
     const onScreen = stacked.nodes.filter((n) => n.x >= box.x0 && n.x <= box.x1 && n.y >= box.y0 && n.y <= box.y1);
@@ -1335,28 +1357,32 @@ export function createGraphView(container, { atlas, state, onCluster = null }) {
       size,
     });
     named = new Set(placed.map((p) => p.node.key));
+    // A label that had to be written on another line is tied back to its
+    // mark by a hairline. It is what buys the room: 22 of a 28-step walk sit
+    // on one line of the layout with the whole field free above and below,
+    // and a name on a line of its own with a leader under it is legible
+    // where a name cut to six letters is not. Nothing at all when the label
+    // is where it has always been, which is every label at rest.
     for (const { node, text, rect } of placed) {
-      // A label that had to be written on another line is tied back to its
-      // mark by a hairline. It is what buys the room: 22 of a 28-step walk sit
-      // on one line of the layout with the whole field free above and below,
-      // and a name on a line of its own with a leader under it is legible
-      // where a name cut to six letters is not. Nothing at all when the label
-      // is where it has always been, which is every label at rest.
-      if (movedAway(node, rect, k, size)) {
-        labelsGroup.appendChild(svg('line', {
-          x1: node.x + (rect.right ? 1 : -1) * (MAX_RADIUS / k),
-          y1: node.y,
-          x2: rect.x - (rect.right ? 1 : -1) * (1 / k),
-          y2: rect.y,
-          class: 'label-leader',
-        }));
+      drawLabelLine(node, text, rect, k, size, node.representative.id === s.selected);
+    }
+    // The open event is the one mark `placeLabels` may leave unnamed and
+    // never should: a name wider than the pane never fits on one line, no
+    // matter which line it tries, and the reader has this one open (M93,
+    // §9). So where the ordinary placing dropped it, its name is broken at
+    // spaces onto as many lines as the pane holds, at the same floor size,
+    // inside the pane, and never cut.
+    const selectedId = s.selected;
+    const selectedDrawn = selectedId && placed.some((p) => p.node.representative.id === selectedId);
+    if (selectedId && !selectedDrawn) {
+      const open = candidates.find((c) => c.node.representative.id === selectedId);
+      if (open) {
+        const lines = placeSelected(open.name, open.node, {
+          k, gap: LABEL_GAP, view: box, size,
+        });
+        named.add(open.node.key);
+        for (const { text, rect } of lines) drawLabelLine(open.node, text, rect, k, size, true);
       }
-      labelsGroup.appendChild(textNode(text, {
-        x: rect.x, y: rect.y + (size * 0.35) / k,
-        class: classes('node-label', node.representative.id === s.selected ? 'selected' : ''),
-        'text-anchor': rect.right ? 'start' : 'end',
-        'font-size': size / k,
-      }));
     }
   }
 

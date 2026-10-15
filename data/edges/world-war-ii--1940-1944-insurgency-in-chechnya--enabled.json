@@ -13,7 +13,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "created": "2026-09-22",
-  "revised": null,
+  "revised": "2026-10-14",
   "review": {
     "status": "draft",
     "flags": [
@@ -33,6 +33,6 @@
   "to": "1940-1944-insurgency-in-chechnya",
   "type": "enabled",
   "confidence": "probable",
-  "explanation": "The revolt is older than the German advance and the article says so in the same breath as what the advance did to it: it began “in early 1940 under Hasan Israilov”, “peaked in 1942 during the German invasion of North Caucasus and ended in the beginning of 1944 with the wholesale concentration and deportation of the Vainakh peoples”. `enabled` and not `caused`: the war did not start the rising, it gave it its opening and then its end.",
+  "explanation": "The revolt is older than the German advance. The article states this alongside what the advance did to it: it began “in early 1940 under Hasan Israilov,” “peaked in 1942 during the German invasion of North Caucasus and ended in the beginning of 1944 with the wholesale concentration and deportation of the Vainakh peoples”. `enabled` and not `caused`. The war did not start the rising. It gave the rising its opening and then its end.",
   "dispute": null
 }

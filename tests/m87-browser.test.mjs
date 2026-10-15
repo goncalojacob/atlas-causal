@@ -292,8 +292,12 @@ test('§9: on a phone the graph fills the pane and every name it draws is legibl
     assert.ok(id, 'there is a mark to open');
     await open(page, url(`?view=graph&selected=${id}`), 'return document.querySelectorAll("#graph circle.node").length > 0;');
     await settledShards(page);
+    // Thirty seconds and the event's id in the message: on a loaded CI runner
+    // this wait ran out at ten seconds on 14 October while the same commit
+    // passed in 1.4 s locally, and the failure did not say which mark it had
+    // opened.
     await waitFor(page, "return document.querySelectorAll('#graph text.node-label').length > 0;",
-      'the open event to be named');
+      `the open event (${id}) to be named`, { tries: 600 });
     const opened = await page.eval(GRAPH_LABEL_SIZES);
     assert.deepEqual(opened.filter((l) => l.px < 8 - 0.01).map((l) => l.text), [],
       'and nothing under the floor with a record open either');

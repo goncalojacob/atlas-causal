@@ -25885,13 +25885,39 @@ Rewriter started 2026-10-14T00:53:05Z by scheduled
 
 Rewriter 2026-10-14T01:06:08Z: 69 records rewritten, 31 left, 4291 of 4974 done
 
+Writer B started 2026-10-14T02:41:52Z by scheduled
+
 Writer A started 2026-10-14T01:22:01Z by scheduled
 Writer A 2026-10-14T01:24:40Z: 9 written, 0 partial, 1 refused, 0 skipped
 
 Writer A started 2026-10-14T12:15:00Z by scheduled
 Writer A 2026-10-14T12:18:30Z: 9 written, 0 partial, 1 refused, 0 skipped
+
 Rewriter started 2026-10-14T01:52:10Z by scheduled
 
 Rewriter 2026-10-14T02:07:38Z: 68 records rewritten, 37 left, 4359 of 4980 done
 
 Rewriter started 2026-10-14T02:52:40Z by scheduled
+Writer A started 2026-10-14T03:22:27Z by scheduled
+Writer A 2026-10-14T03:22:27Z: 7 written, 0 partial, 0 refused, 0 skipped
+
+Writer B started 2026-10-14T03:42:31Z by scheduled
+
+Writer B 2026-10-14T03:45:20Z: 6 written, 0 partial, 0 refused, 0 skipped
+
+Rewriter 2026-10-14T03:09:50Z: 51 records rewritten, 49 left, 4928 of 4980 done
+
+Rewriter started 2026-10-14T03:53:47Z by scheduled
+Writer A 2026-10-14T04:25:21Z: 10 written, 0 partial, 0 refused, 0 skipped
+
+Rewriter 2026-10-14T04:08:53Z: 33 records rewritten, 1938 left, 6899 of 6899 done. This fire opened on a merge from `m0`, which brought in M42's new events and places and the other writers' own work since the last rewrite. After the merge, every edge, event, actor and place in the corpus has a done or left entry. Left is mostly bookkeeping. 976 events and 934 places carry none of regionNote, actors note or retraction reason, so there is no text to rewrite. The 52 open edges all had an explanation. 33 needed rewriting and 19 were already plain. No actor or place summary was open. The corpus has no rewrite work left until new records land.
+Writer A started 2026-10-14T05:22:17Z by scheduled
+Writer A 2026-10-14T05:22:17Z: 10 written, 0 partial, 0 refused, 0 skipped
+
+Rewriter started 2026-10-14T04:52:18Z by scheduled
+
+Rewriter 2026-10-14T05:05:00Z: 0 records rewritten, 30 left, 6929 of 6929 done. This fire opened on the merge from m0 (the same one the claim landed on) and found 23 new events and 7 new places with no cursor entry: the M42 import and the queue writers' own work since the last rewrite. 11 of the events carry the Wikidata import's own lane note, already judged plain by earlier fires, and the other 12 events and all 7 places carry no regionNote, actors note or retraction reason to rewrite. All 30 went to left. No edge, event, actor or place prose needed a rewrite this fire.
+
+Rewriter started 2026-10-14T05:53:31Z by scheduled
+
+Rewriter 2026-10-14T05:55:51Z: 0 records rewritten, 15 left, 6944 of 6944 done. This fire opened on a merge from m0 that brought in 5 new places (Gallipoli, Inner Manchuria, Panipat, Punjab, the West Bank) and 10 new events naming them, all from the Wikidata import, with no cursor entry. 3 of the events carry the import's own lane note, already judged plain by earlier fires. The other 7 events and all 5 places carry no regionNote, actors note, retraction reason or place note to rewrite. All 15 went to left. No edge, event, actor or place prose needed a rewrite this fire.
