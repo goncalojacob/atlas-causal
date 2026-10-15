@@ -10184,6 +10184,12 @@
     },
     {
       "dissent": false,
+      "id": "1890-british-ultimatum",
+      "kind": "event",
+      "locator": "\"1890 British Ultimatum\", revision 1379500887"
+    },
+    {
+      "dissent": false,
       "id": "1893-franco-siamese-crisis",
       "kind": "event",
       "locator": "\"1893 Franco-Siamese crisis\", revision 1374343940"
@@ -12884,6 +12890,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mombasa-1505",
+      "kind": "event",
+      "locator": "\"Battle of Mombasa (1505)\", revision 1370450216"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-monastir-1540",
       "kind": "event",
       "locator": "\"Battle of Monastir (1540)\", revision 1370269649"
@@ -15158,6 +15170,12 @@
     },
     {
       "dissent": false,
+      "id": "dervish-war",
+      "kind": "event",
+      "locator": "\"Dervish War\", revision 1380464956"
+    },
+    {
+      "dissent": false,
       "id": "dissolution-of-the-lumumba-government",
       "kind": "event",
       "locator": "\"Dissolution of the Lumumba Government\", revision 1371883556"
@@ -16526,6 +16544,12 @@
     },
     {
       "dissent": false,
+      "id": "italian-pacification-campaigns-in-somalia",
+      "kind": "event",
+      "locator": "\"Italian pacification campaigns in Somalia\", revision 1376990984"
+    },
+    {
+      "dissent": false,
       "id": "italian-war-of-1494-1495",
       "kind": "event",
       "locator": "\"Italian War of 1494–1495\", revision 1372866209"
@@ -16973,6 +16997,12 @@
       "id": "mali-war",
       "kind": "event",
       "locator": "\"Mali War\", revision 1376141121"
+    },
+    {
+      "dissent": false,
+      "id": "mandingo-wars",
+      "kind": "event",
+      "locator": "\"Mandingo Wars\", revision 1373046567"
     },
     {
       "dissent": false,
@@ -17804,6 +17834,18 @@
     },
     {
       "dissent": false,
+      "id": "portuguese-conquest-of-goa",
+      "kind": "event",
+      "locator": "\"Portuguese conquest of Goa\", revision 1379862472"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-conquest-of-hormuz",
+      "kind": "event",
+      "locator": "\"Portuguese conquest of Hormuz\", revision 1376303418"
+    },
+    {
+      "dissent": false,
       "id": "portuguese-conquest-of-ksar-es-seghir",
       "kind": "event",
       "locator": "\"Portuguese conquest of Ksar es-Seghir\", revision 1375892596"
@@ -17819,6 +17861,12 @@
       "id": "portuguese-conquest-of-tangier",
       "kind": "event",
       "locator": "\"Portuguese conquest of Tangier\", revision 1370704790"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-conquest-of-the-east-african-coast",
+      "kind": "event",
+      "locator": "\"Portuguese conquest of the East African coast\", revision 1374739266"
     },
     {
       "dissent": false,
@@ -17909,6 +17957,12 @@
       "id": "queen-anne-s-war",
       "kind": "event",
       "locator": "\"Queen Anne's War\", revision 1375172739"
+    },
+    {
+      "dissent": false,
+      "id": "rabih-war",
+      "kind": "event",
+      "locator": "\"Rabih War\", revision 1370705455"
     },
     {
       "dissent": false,
@@ -20255,6 +20309,12 @@
       "id": "tripoli-clashes-mid-october-2011",
       "kind": "event",
       "locator": "\"Tripoli clashes (mid-October 2011)\", revision 1374518538"
+    },
+    {
+      "dissent": false,
+      "id": "tripolitanian-civil-war",
+      "kind": "event",
+      "locator": "\"Tripolitanian civil war\", revision 1370751447"
     },
     {
       "dissent": false,

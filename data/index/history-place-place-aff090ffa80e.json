@@ -4920,6 +4920,15 @@
         }
       ]
     },
+    "italian-somaliland-q319984": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "italy-q38": {
       "from": "git",
       "versions": [
@@ -7042,6 +7051,15 @@
         }
       ]
     },
+    "mombasa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "mona-passage": {
       "from": "git",
       "versions": [
@@ -7929,6 +7947,15 @@
         }
       ]
     },
+    "old-goa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "ollantaytambo": {
       "from": "git",
       "versions": [
@@ -8023,6 +8050,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "ottoman-tripolitania": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
@@ -12128,6 +12164,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "west-africa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },

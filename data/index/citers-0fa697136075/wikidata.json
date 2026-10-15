@@ -1778,6 +1778,12 @@
     },
     {
       "dissent": false,
+      "id": "1890-british-ultimatum",
+      "kind": "event",
+      "locator": "Q3320778"
+    },
+    {
+      "dissent": false,
       "id": "1893-franco-siamese-crisis",
       "kind": "event",
       "locator": "Q1359846"
@@ -4592,6 +4598,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mombasa-1505",
+      "kind": "event",
+      "locator": "Q121047056"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-monastir-1540",
       "kind": "event",
       "locator": "Q135623349"
@@ -6848,6 +6860,12 @@
     },
     {
       "dissent": false,
+      "id": "dervish-war",
+      "kind": "event",
+      "locator": "Q1402902"
+    },
+    {
+      "dissent": false,
       "id": "dissolution-of-the-lumumba-government",
       "kind": "event",
       "locator": "Q60775580"
@@ -8222,6 +8240,12 @@
     },
     {
       "dissent": false,
+      "id": "italian-pacification-campaigns-in-somalia",
+      "kind": "event",
+      "locator": "Q126708875"
+    },
+    {
+      "dissent": false,
       "id": "italian-war-of-1494-1495",
       "kind": "event",
       "locator": "Q1355145"
@@ -8717,6 +8741,12 @@
       "id": "mali-war",
       "kind": "event",
       "locator": "Q2946372, P31 Q8465"
+    },
+    {
+      "dissent": false,
+      "id": "mandingo-wars",
+      "kind": "event",
+      "locator": "Q1450547"
     },
     {
       "dissent": false,
@@ -9566,6 +9596,18 @@
     },
     {
       "dissent": false,
+      "id": "portuguese-conquest-of-goa",
+      "kind": "event",
+      "locator": "Q2357384"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-conquest-of-hormuz",
+      "kind": "event",
+      "locator": "Q1106847"
+    },
+    {
+      "dissent": false,
       "id": "portuguese-conquest-of-ksar-es-seghir",
       "kind": "event",
       "locator": "Q116687288"
@@ -9581,6 +9623,12 @@
       "id": "portuguese-conquest-of-tangier",
       "kind": "event",
       "locator": "Q124474956"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-conquest-of-the-east-african-coast",
+      "kind": "event",
+      "locator": "Q134355735"
     },
     {
       "dissent": false,
@@ -9665,6 +9713,12 @@
       "id": "queen-anne-s-war",
       "kind": "event",
       "locator": "Q869045"
+    },
+    {
+      "dissent": false,
+      "id": "rabih-war",
+      "kind": "event",
+      "locator": "Q136483840"
     },
     {
       "dissent": false,
@@ -11933,6 +11987,12 @@
       "id": "tripoli-clashes-mid-october-2011",
       "kind": "event",
       "locator": "Q7843682"
+    },
+    {
+      "dissent": false,
+      "id": "tripolitanian-civil-war",
+      "kind": "event",
+      "locator": "Q4553413"
     },
     {
       "dissent": false,

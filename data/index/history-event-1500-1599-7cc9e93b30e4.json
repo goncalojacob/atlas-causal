@@ -789,6 +789,15 @@
         }
       ]
     },
+    "battle-of-mombasa-1505": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "battle-of-monastir-1540": {
       "from": "git",
       "versions": [
@@ -2118,6 +2127,33 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "portuguese-conquest-of-goa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
+    "portuguese-conquest-of-hormuz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
+    "portuguese-conquest-of-the-east-african-coast": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },

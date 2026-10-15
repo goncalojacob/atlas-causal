@@ -6540,7 +6540,7 @@
         }
       ],
       "created": "2026-10-01",
-      "degree": 1,
+      "degree": 2,
       "id": "east-africa",
       "kind": "place",
       "names": [
@@ -9659,7 +9659,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 2,
       "id": "hormuz-island",
       "kind": "place",
       "names": [
@@ -10615,6 +10615,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-15",
+      "degree": 1,
+      "id": "italian-somaliland-q319984",
+      "kind": "place",
+      "names": [
+        "Italian Somaliland",
+        "Somália Italiana"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -15132,6 +15160,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-15",
+      "degree": 1,
+      "id": "mombasa",
+      "kind": "place",
+      "names": [
+        "Mombasa",
+        "Mombaça"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "mona-passage",
@@ -17026,6 +17082,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-15",
+      "degree": 1,
+      "id": "old-goa",
+      "kind": "place",
+      "names": [
+        "Old Goa",
+        "Velha Goa"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "ollantaytambo",
@@ -17235,6 +17319,35 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-15",
+      "degree": 1,
+      "id": "ottoman-tripolitania",
+      "kind": "place",
+      "names": [
+        "Tripolitania vilayet",
+        "Líbia otomana",
+        "Ottoman Tripolitania"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -25965,6 +26078,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-15",
+      "degree": 1,
+      "id": "west-africa",
+      "kind": "place",
+      "names": [
+        "West Africa",
+        "África Ocidental"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

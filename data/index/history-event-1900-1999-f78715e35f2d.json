@@ -11392,6 +11392,15 @@
         }
       ]
     },
+    "dervish-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "dissolution-of-the-lumumba-government": {
       "from": "git",
       "versions": [

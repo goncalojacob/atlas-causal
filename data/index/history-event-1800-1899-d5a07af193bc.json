@@ -11,6 +11,15 @@
         }
       ]
     },
+    "1890-british-ultimatum": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "1890-portuguese-legislative-election": {
       "from": "git",
       "versions": [
@@ -2108,6 +2117,15 @@
         }
       ]
     },
+    "italian-pacification-campaigns-in-somalia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "jameson-raid": {
       "from": "git",
       "versions": [
@@ -2205,6 +2223,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "mandingo-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
@@ -2540,6 +2567,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "rabih-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
