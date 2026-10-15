@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-alcacovas",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q593355",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Treaty of Alcáçovas",
+    "pt": "Tratado das Alcáçovas-Toledo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q593355"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Alcáçovas\", revision 1362673672"
+    }
+  ],
+  "title": "Treaty of Alcáçovas",
+  "summary": "The English Wikipedia article \"Treaty of Alcáçovas\", at revision 1362673672, opens: \"The Treaty of Alcáçovas was signed on 4 September 1479 between the Catholic Monarchs of Castile and Aragon on one side and Afonso V and his son, Prince John of Portugal, on the other side.\nIt put an end to the War of the Castilian Succession, which ended with a victory of the Castilians on land and a Portuguese victory on the sea. The four peace treaties signed at Alcáçovas reflected that outcome: Isabella was recognized as Queen of Castile while Portugal reached hegemony in the Atlantic Ocean.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q593355, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1479,
+    "end": 1479,
+    "date": "1479-09-04"
+  },
+  "place": "alcacovas",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

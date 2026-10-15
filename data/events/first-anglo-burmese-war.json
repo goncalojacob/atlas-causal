@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-anglo-burmese-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q29122",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "First Anglo-Burmese War",
+    "pt": "Primeira Guerra Anglo-Birmanesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q29122"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Anglo-Burmese War\", revision 1378905885"
+    }
+  ],
+  "title": "First Anglo-Burmese War",
+  "summary": "The English Wikipedia article \"First Anglo-Burmese War\", at revision 1378905885, opens: \"The First Anglo-Burmese War, also known as the First Burma War in English language accounts and First English Invasion War in Burmese language accounts, was the first of three wars fought between the British and Burmese empires in the 19th century. The war, which began primarily over the control of what is now Northeastern India, ended in a costly but decisive British victory, giving the British total control of Assam, Cachar, Manipur and Jaintia as well as Arakan Province and Tenasserim. The Burmese submitted to a British demand to pay an indemnity of one million pounds sterling, and signed a commercial treaty.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q29122, imported by tools/import/wikidata.mjs. The item's own description reads \"first (5 March 1824 – 24 February 1826) of three wars fought between the British and Burmese Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1824,
+    "end": 1826,
+    "date": "1824-03-05",
+    "endDate": "1826-02-24"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

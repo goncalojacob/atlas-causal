@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "boshin-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q309184",
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Boshin War",
+    "pt": "Guerra Boshin"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q309184"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Boshin War\", revision 1370494597"
+    }
+  ],
+  "title": "Boshin War",
+  "summary": "The English Wikipedia article \"Boshin War\", at revision 1370494597, opens: \"The Boshin War , sometimes known as the Japanese Revolution or Japanese Civil War, was a civil war in Japan fought from 1868 to 1869 between forces of the ruling Tokugawa shogunate and a coalition seeking to seize political power in the name of the Imperial Court.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q309184, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war in Japan, fought from 1868 to 1869\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1869,
+    "date": "1868-01-27",
+    "endDate": "1869-06-27"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

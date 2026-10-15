@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "hengchun-peninsula",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q11072822",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Hengchun Peninsula"
+  },
+  "sources": [],
+  "names": [
+    "Hengchun Peninsula"
+  ],
+  "where": {
+    "lon": 120.82116666666667,
+    "lat": 22.07263888888889,
+    "precision": "region",
+    "label": "Hengchun Peninsula"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

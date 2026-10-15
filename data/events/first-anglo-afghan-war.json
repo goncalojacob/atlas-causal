@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "first-anglo-afghan-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q989092",
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "First Anglo-Afghan War",
+    "pt": "Primeira Guerra Anglo-Afegã"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q989092"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Anglo-Afghan War\", revision 1379314639"
+    }
+  ],
+  "title": "First Anglo-Afghan War",
+  "summary": "The English Wikipedia article \"First Anglo-Afghan War\", at revision 1379314639, opens: \"The First Anglo-Afghan War was fought between the Durranis backed by the British Empire and the Sikh Empire, and the Barakzais of Kabul and Kandahar, alongside their regional allies, from 1838 to 1842. The British intervened in a succession dispute stemming from the Durrani succession struggle and backed former king Shuja Shah Durrani, whom they restored to the throne after occupying Kabul in August 1839. It was one of the first major conflicts during the Great Game, the 19th century competition for power and influence in Central Asia between Britain and Russia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q989092, imported by tools/import/wikidata.mjs. The item's own description reads \"1838–1842 war between the British Empire and the Emirate of Afghanistan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1839,
+    "end": 1842,
+    "date": "1839-03",
+    "endDate": "1842-10"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "great-game"
+}
