@@ -3941,6 +3941,15 @@
         }
       ]
     },
+    "gifu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "goa-q1171": {
       "from": "git",
       "versions": [
@@ -10066,6 +10075,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "shimabara-peninsula": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },

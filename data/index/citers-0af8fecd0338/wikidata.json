@@ -5144,6 +5144,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sekigahara",
+      "kind": "event",
+      "locator": "Q234188"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-shaho",
       "kind": "event",
       "locator": "Q920679"
@@ -5999,6 +6005,12 @@
       "id": "bombing-of-sakiet-sidi-youssef",
       "kind": "event",
       "locator": "Q2909612"
+    },
+    {
+      "dissent": false,
+      "id": "boshin-war",
+      "kind": "event",
+      "locator": "Q309184"
     },
     {
       "dissent": false,
@@ -7190,9 +7202,21 @@
     },
     {
       "dissent": false,
+      "id": "first-anglo-afghan-war",
+      "kind": "event",
+      "locator": "Q989092"
+    },
+    {
+      "dissent": false,
       "id": "first-anglo-mysore-war",
       "kind": "event",
       "locator": "Q617070"
+    },
+    {
+      "dissent": false,
+      "id": "first-anglo-sikh-war",
+      "kind": "event",
+      "locator": "Q582584"
     },
     {
       "dissent": false,
@@ -7325,6 +7349,12 @@
       "id": "first-liberian-civil-war",
       "kind": "event",
       "locator": "Q1477500, P31 Q8465"
+    },
+    {
+      "dissent": false,
+      "id": "first-madagascar-expedition",
+      "kind": "event",
+      "locator": "Q942561"
     },
     {
       "dissent": false,
@@ -8942,6 +8972,12 @@
     },
     {
       "dissent": false,
+      "id": "ndwandwe-zulu-war",
+      "kind": "event",
+      "locator": "Q9294875"
+    },
+    {
+      "dissent": false,
       "id": "neapolitan-revolt-of-1647",
       "kind": "event",
       "locator": "Q125727539"
@@ -10010,6 +10046,12 @@
     },
     {
       "dissent": false,
+      "id": "second-anglo-afghan-war",
+      "kind": "event",
+      "locator": "Q233507"
+    },
+    {
+      "dissent": false,
       "id": "second-anglo-sikh-war",
       "kind": "event",
       "locator": "Q243590"
@@ -10271,6 +10313,12 @@
       "id": "shaba-ii",
       "kind": "event",
       "locator": "Q2745406"
+    },
+    {
+      "dissent": false,
+      "id": "shimabara-rebellion",
+      "kind": "event",
+      "locator": "Q696217"
     },
     {
       "dissent": false,
@@ -11021,6 +11069,12 @@
       "id": "sino-burmese-war",
       "kind": "event",
       "locator": "Q3237019"
+    },
+    {
+      "dissent": false,
+      "id": "sino-french-war",
+      "kind": "event",
+      "locator": "Q706183"
     },
     {
       "dissent": false,
@@ -11825,6 +11879,12 @@
       "id": "tunisian-revolution",
       "kind": "event",
       "locator": "Q46959"
+    },
+    {
+      "dissent": false,
+      "id": "turco-egyptian-conquest-of-sudan-1820-1824",
+      "kind": "event",
+      "locator": "Q28162775"
     },
     {
       "dissent": false,
