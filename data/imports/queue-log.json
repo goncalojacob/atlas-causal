@@ -2259,6 +2259,128 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-019",
+      "writer": "A",
+      "fired": "2026-10-15T20:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-osaka",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-020",
+      "writer": "A",
+      "fired": "2026-10-15T20:22Z",
+      "status": "written",
+      "written": {
+        "event": "first-anglo-burmese-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-021",
+      "writer": "A",
+      "fired": "2026-10-15T20:22Z",
+      "status": "written",
+      "written": {
+        "event": "first-anglo-maratha-war",
+        "edges": [],
+        "place": "pune"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-022",
+      "writer": "A",
+      "fired": "2026-10-15T20:22Z",
+      "status": "written",
+      "written": {
+        "event": "1874-japanese-expedition-to-taiwan",
+        "edges": [],
+        "place": "hengchun-peninsula"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-023",
+      "writer": "A",
+      "fired": "2026-10-15T20:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2045508: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-15-asia-024",
+      "writer": "A",
+      "fired": "2026-10-15T20:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-bassein-1534",
+        "edges": [],
+        "place": "pathein"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-031",
+      "writer": "A",
+      "fired": "2026-10-15T20:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q133132: its classes disagree: Q1323212 → event, Q43229 → actor"
+    },
+    {
+      "id": "2026-10-15-europe-032",
+      "writer": "A",
+      "fired": "2026-10-15T20:22Z",
+      "status": "written",
+      "written": {
+        "event": "austro-prussian-war",
+        "edges": [],
+        "place": "bohemia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-033",
+      "writer": "A",
+      "fired": "2026-10-15T20:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mohacs",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-034",
+      "writer": "A",
+      "fired": "2026-10-15T20:22Z",
+      "status": "written",
+      "written": {
+        "event": "hundred-days",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

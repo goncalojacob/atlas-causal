@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "first-anglo-maratha-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1362209",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "First Anglo-Maratha War",
+    "pt": "Primeira Guerra Anglo-Marata"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1362209"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Anglo-Maratha War\", revision 1377412032"
+    }
+  ],
+  "title": "First Anglo-Maratha War",
+  "summary": "The English Wikipedia article \"First Anglo-Maratha War\", at revision 1377412032, opens: \"The First Anglo-Maratha War (1775–1782) was the first conflict fought between the British East India Company and Maratha Empire in India. The war, fought in between Surat and Poona, began with the 1775 Treaty of Surat after the East India Company agreed to support the recently-deposed Raghunathrao's claim as Peshwa of the Maratha Empire. Several years of intermittent and largely inconclusive campaigning followed, in which the East India Company failed to decisively defeat the highly mobile Marathas. The war ended in 1782 following the Treaty of Salbai. As per the treaty, both sides returned each other's captured territory, and the British withdrew their support for Raghunathrao. The British and Marathas would not fight against each other again until the Second Anglo-Maratha War 20 years later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1362209, imported by tools/import/wikidata.mjs. The item's own description reads \"war between the British East India Company and the Maratha Empire, 1775-1782\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1782
+  },
+  "place": "pune",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

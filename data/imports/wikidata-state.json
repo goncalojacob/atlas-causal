@@ -2334,7 +2334,17 @@
         "Q234188",
         "Q696217",
         "Q706183",
-        "Q582584"
+        "Q582584",
+        "Q475780",
+        "Q29122",
+        "Q1362209",
+        "Q703942",
+        "Q2045508",
+        "Q4887044",
+        "Q133132",
+        "Q153650",
+        "Q178510",
+        "Q199955"
       ]
     }
   },
@@ -2614,6 +2624,14 @@
     "Q3458428": {
       "on": "2026-10-14",
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q2045508": {
+      "on": "2026-10-15",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q133132": {
+      "on": "2026-10-15",
+      "why": "its classes disagree: Q1323212 → event, Q43229 → actor"
     }
   }
 }

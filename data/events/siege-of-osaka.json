@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-osaka",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q475780",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Siege of Osaka",
+    "pt": "Cerco de Osaka"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q475780"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Osaka\", revision 1378683811"
+    }
+  ],
+  "title": "Siege of Osaka",
+  "summary": "The English Wikipedia article \"Siege of Osaka\", at revision 1378683811, opens: \"The siege of Osaka  was a series of battles undertaken by the Japanese Tokugawa shogunate against the Toyotomi clan, ending in that clan's destruction. Divided into two stages, the winter campaign and the summer campaign, it lasted from 1614 to 1615. The siege put an end to the last major armed opposition to the establishment of the Tokugawa shogunate. The end of the conflict is sometimes called the Genna Armistice , because the era name was changed from Keichō to Genna immediately following the siege.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q475780, imported by tools/import/wikidata.mjs. The item's own description reads \"1614-1615 series of battles undertaken by the Tokugawa shogunate against the Toyotomi clan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1614,
+    "end": 1615,
+    "date": "1614-11-08",
+    "endDate": "1615-06"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
