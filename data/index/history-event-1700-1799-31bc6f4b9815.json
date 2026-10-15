@@ -1319,6 +1319,15 @@
         }
       ]
     },
+    "burmese-siamese-war-1759-1760": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "capture-of-alexandria-1798": {
       "from": "git",
       "versions": [
@@ -2594,6 +2603,15 @@
         }
       ]
     },
+    "sino-nepalese-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "spain-and-the-american-revolutionary-war": {
       "from": "git",
       "versions": [
@@ -2675,6 +2693,15 @@
             "parent"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "third-anglo-mysore-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },

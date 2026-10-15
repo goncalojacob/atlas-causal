@@ -3027,6 +3027,15 @@
         }
       ]
     },
+    "dzungaria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "east-africa": {
       "from": "git",
       "versions": [
@@ -10480,6 +10489,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "south-india": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },

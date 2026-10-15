@@ -259,7 +259,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 2,
       "id": "aden-q131694",
       "kind": "place",
       "names": [
@@ -818,7 +818,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "anatolia",
       "kind": "place",
       "names": [
@@ -6539,6 +6539,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-15",
+      "degree": 1,
+      "id": "dzungaria",
+      "kind": "place",
+      "names": [
+        "Dzungaria",
+        "Zungária"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-01",
       "degree": 2,
       "id": "east-africa",
@@ -11143,7 +11171,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 14,
+      "degree": 15,
       "id": "joseon",
       "kind": "place",
       "names": [
@@ -22410,6 +22438,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-15",
+      "degree": 1,
+      "id": "south-india",
+      "kind": "place",
+      "names": [
+        "South India",
+        "Índia do Sul"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "south-kingstown-rhode-island",
@@ -24229,7 +24285,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "tibet-q17252",
       "kind": "place",
       "names": [
