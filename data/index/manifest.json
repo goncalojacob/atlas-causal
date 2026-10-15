@@ -37,13 +37,13 @@
       "to": 1699
     },
     {
-      "file": "index/attributes-1700-1799-6d7555876f60.json",
+      "file": "index/attributes-1700-1799-213bf49c81a7.json",
       "from": 1700,
       "key": "1700-1799",
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-c509cfb27cd4.json",
+      "file": "index/attributes-1800-1899-e46e91bc2718.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
@@ -1025,7 +1025,7 @@
   "counts": {
     "actors": 2699,
     "edges": 1282,
-    "events": 2063,
+    "events": 2062,
     "narratives": 2,
     "offices": 11,
     "places": 972,
@@ -1073,14 +1073,14 @@
     }
   ],
   "files": {
-    "citers": "index/citers-7f434f64352a",
-    "core": "index/core-4f37c237d3b5.json",
+    "citers": "index/citers-f7cf6be51b29",
+    "core": "index/core-2f3d1e5308d9.json",
     "grounds": "index/grounds-f07c613683b4.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-23a61d61b3d9.json",
-    "search": "index/search-f49743c6f98c.json",
-    "sources": "index/sources-ced9541e015e.json",
-    "territories": "index/territories-bd6d855e2b9c.json"
+    "review": "index/review-debee1826b55.json",
+    "search": "index/search-78a977b43a27.json",
+    "sources": "index/sources-15fdf59a8d1e.json",
+    "territories": "index/territories-a947ab6c28ec.json"
   },
   "historyShards": [
     {
@@ -1105,7 +1105,7 @@
       "to": 1699
     },
     {
-      "file": "index/history-event-1700-1799-a9d21ba437dc.json",
+      "file": "index/history-event-1700-1799-b330eebac825.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "event",

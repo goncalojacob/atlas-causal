@@ -34278,36 +34278,6 @@
       "authors": [
         {
           "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
-      "created": "2026-10-15",
-      "id": "haitian-revolution",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "parent": "atlantic-revolutions",
-      "review": {
-        "flags": [
-          "imported-facts",
-          "summary-from-lead",
-          "filed-from-p361"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "Haitian Revolution"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -62806,12 +62776,6 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
-    },
-    {
-      "id": "haitian-revolution",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
     },
     {
       "id": "hamgyong-campaign",

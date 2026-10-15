@@ -1820,15 +1820,6 @@
         }
       ]
     },
-    "haitian-revolution": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-15"
-        }
-      ]
-    },
     "haitian-revolution-1791-1804": {
       "from": "git",
       "versions": [
