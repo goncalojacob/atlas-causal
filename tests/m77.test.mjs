@@ -10,7 +10,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  placeOne, placeLabels, naming, lineHeight, movedAway, LENS_ROWS_AWAY,
+  placeOne, placeLabels, placeSelected, wrapName, naming, lineHeight, movedAway, LENS_ROWS_AWAY,
 } from '../src/graph-view/labels.js';
 import { boxWidth, SLICE, halfLine } from '../src/graph-view/label-fit.js';
 import { packRows, barBox } from '../src/lanes.js';
@@ -116,6 +116,75 @@ test('a line of text is taller than the text in it', () => {
   for (const k of [0.5, 1, 2, 8]) {
     assert.ok(lineHeight(k) > halfLine(k) * 2, `two labels on neighbouring lines are clear at k=${k}`);
   }
+});
+
+// --- the open event is always named (M93, §9) ------------------------------
+//
+// "Transition from Ming to Qing" on a phone: wider than the room on both
+// sides of its mark, so `placeOne` tried every line and found none, and the
+// mark the reader had open was the one mark on screen with no name at all.
+// `placeSelected` is the one place that name is still written, broken at a
+// space onto another line rather than left off.
+
+test('wrapName breaks only at spaces, and never drops a word', () => {
+  const lines = wrapName('Transition from Ming to Qing', boxWidth(12, 1), { k: 1 });
+  assert.ok(lines.length > 1, 'one line was not enough');
+  assert.equal(lines.join(' '), 'Transition from Ming to Qing', 'every word, in order, none cut');
+  for (const line of lines) {
+    assert.ok(!line.includes('…'), `${line} is not an ellipsis`);
+  }
+});
+
+test('wrapName never splits a single word, however wide', () => {
+  const word = 'Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch';
+  assert.deepEqual(wrapName(word, boxWidth(6, 1), { k: 1 }), [word]);
+});
+
+test('a name that already fits is not wrapped', () => {
+  assert.deepEqual(wrapName('Lisbon', boxWidth(30, 1), { k: 1 }), ['Lisbon']);
+});
+
+test('placeSelected writes the whole name, each line inside the pane', () => {
+  // A mark near the right edge of a narrow pane, with a name far wider than
+  // the room beside it on either side.
+  const view = { x0: 0, y0: 0, x1: 200, y1: 300 };
+  const node = { x: 160, y: 150, key: 'qing', representative: { id: 'transition-from-ming-to-qing' } };
+  const name = 'Transition from Ming to Qing';
+  const lines = placeSelected(name, node, { k: 1, gap: 9, view });
+  assert.ok(lines.length > 1, 'one line did not fit, so there is more than one');
+  assert.equal(lines.map((l) => l.text).join(' '), name, 'the whole name, in order');
+  for (const { text, rect } of lines) {
+    assert.ok(rect.x0 >= view.x0 && rect.x1 <= view.x1, `${text} is inside the pane sideways`);
+    assert.ok(rect.y0 >= view.y0 && rect.y1 <= view.y1, `${text} is inside the pane up and down`);
+  }
+  // Lines read top to bottom in the order the words were given.
+  for (let i = 1; i < lines.length; i += 1) {
+    assert.ok(lines[i].rect.y > lines[i - 1].rect.y, 'each line is below the one before it');
+  }
+});
+
+test('placeSelected never shrinks the floor size, only adds lines', () => {
+  const view = { x0: 0, y0: 0, x1: 120, y1: 300 };
+  const node = { x: 60, y: 150, key: 'qing', representative: { id: 'e' } };
+  const size = 15;
+  const lines = placeSelected('Transition from Ming to Qing', node, {
+    k: 1, gap: 9, view, size,
+  });
+  for (const { rect } of lines) {
+    // The box's own height comes straight from `size`: a smaller box here
+    // would mean a smaller font was drawn, which is the one thing this is
+    // not allowed to do.
+    assert.ok(Math.abs((rect.y1 - rect.y0) - halfLine(1, size) * 2) < 1e-9);
+  }
+});
+
+test('a name short enough to fit is placed on one line by placeSelected too', () => {
+  const view = { x0: 0, y0: 0, x1: 600, y1: 400 };
+  const node = { x: 300, y: 200, key: 'n', representative: { id: 'n' } };
+  const lines = placeSelected('Lisbon', node, { k: 1, gap: 9, view });
+  assert.equal(lines.length, 1);
+  assert.equal(lines[0].text, 'Lisbon');
+  assert.equal(lines[0].rect.y, node.y, 'on the mark\'s own line, same as a one-line label always was');
 });
 
 // --- which marks are named -------------------------------------------------

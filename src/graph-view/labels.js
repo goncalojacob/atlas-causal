@@ -156,6 +156,65 @@ export function placeLabels(candidates, {
   return out;
 }
 
+// The open event's own name, broken at spaces onto as many lines as it takes.
+//
+// `placeOne` tries another line when a name does not fit, and every line is
+// the same width, so a name wider than the room on both sides never fits no
+// matter how many lines it tries. That is the right answer for every mark
+// but one: the event the reader has open is the one name this file must
+// never leave unwritten (M93, §9 — "Transition from Ming to Qing" on a
+// phone). So the rule stays whole or not at all for every other mark, and
+// for the open event alone, whole may run over more than one line.
+//
+// A line never splits a word: `wrapName` only breaks at the spaces already
+// in the name, so a broken name still reads as words and not as letters cut
+// with no ellipsis to say so. A single word wider than `maxWidth` is still
+// its own line, because this file does not cut a name, and a long word with
+// nowhere to break is read whole or not written, never halfway.
+export function wrapName(name, maxWidth, { k, size = LABEL_SIZE } = {}) {
+  const words = name.split(' ').filter((word) => word.length > 0);
+  const lines = [];
+  let line = '';
+  for (const word of words) {
+    const next = line ? `${line} ${word}` : word;
+    if (line && boxWidth(next.length, k, size) > maxWidth) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = next;
+    }
+  }
+  if (line) lines.push(line);
+  return lines;
+}
+
+// Where the open event's name goes: on whichever side of the mark has more
+// room to the pane's own edge, because this is the one label that cannot be
+// skipped and so does not compete for room with any other one. Wrapped to
+// that room, and centred on the mark's own line unless the block would then
+// run past the top or the bottom of the pane, in which case it is pulled
+// inside instead. `size` is never made smaller here: this only adds lines,
+// it never shrinks the floor every other label is already held to.
+export function placeSelected(name, node, {
+  k, gap, view, size = LABEL_SIZE,
+} = {}) {
+  const roomRight = view.x1 - textStart(node, true, k, gap);
+  const roomLeft = textStart(node, false, k, gap) - view.x0;
+  const right = roomRight >= roomLeft;
+  const maxWidth = Math.max(right ? roomRight : roomLeft, boxWidth(1, k, size));
+  const lines = wrapName(name, maxWidth, { k, size });
+  const step = lineHeight(k, size);
+  const half = halfLine(k, size);
+  let top = node.y - ((lines.length - 1) / 2) * step;
+  const minTop = view.y0 + half;
+  const maxTop = view.y1 - half - (lines.length - 1) * step;
+  if (maxTop >= minTop) top = Math.min(Math.max(top, minTop), maxTop);
+  return lines.map((text, i) => {
+    const y = top + i * step;
+    return { text, right, rect: labelBoxAt(node, text, right, { k, gap, dy: y - node.y, size }) };
+  });
+}
+
 // Which marks are offered a name, and in what order.
 //
 // `focus` is the lens's own set of event ids, or null at rest. `order` is the
