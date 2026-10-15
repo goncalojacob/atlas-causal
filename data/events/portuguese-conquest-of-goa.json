@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "portuguese-conquest-of-goa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2357384",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Portuguese conquest of Goa",
+    "pt": "Conquista portuguesa de Goa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2357384"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese conquest of Goa\", revision 1379862472"
+    }
+  ],
+  "title": "Portuguese conquest of Goa",
+  "summary": "The English Wikipedia article \"Portuguese conquest of Goa\", at revision 1379862472, opens: \"The Portuguese conquest of Goa occurred when the governor Afonso de Albuquerque captured the city in 1510 from the Sultanate of Bijapur. Old Goa became the capital of Portuguese India, which included territories such as Fort Manuel of Cochin, Bom Bahia, Damaon, and Chaul. It was not among the places Albuquerque was supposed to conquer. He did so after he was offered the support and guidance of Timoji and his troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2357384, imported by tools/import/wikidata.mjs. The item's own description reads \"1510 capture of the Indian city of Goa by the Portuguese Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1510,
+    "end": 1510,
+    "date": "1510-11-25"
+  },
+  "place": "old-goa",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
