@@ -780,6 +780,15 @@
         }
       ]
     },
+    "battle-of-mohacs": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "battle-of-monastir-1540": {
       "from": "git",
       "versions": [
@@ -2986,6 +2995,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "treaty-of-bassein-1534": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },

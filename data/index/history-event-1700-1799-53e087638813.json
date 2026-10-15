@@ -1609,6 +1609,15 @@
         }
       ]
     },
+    "first-anglo-maratha-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "first-anglo-mysore-war": {
       "from": "git",
       "versions": [

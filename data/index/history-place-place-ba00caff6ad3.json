@@ -1148,6 +1148,15 @@
         }
       ]
     },
+    "bohemia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "bolivar-department": {
       "from": "git",
       "versions": [
@@ -4343,6 +4352,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "hengchun-peninsula": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
@@ -8202,6 +8220,15 @@
         }
       ]
     },
+    "pathein": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "pavia": {
       "from": "git",
       "versions": [
@@ -8919,6 +8946,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "pune": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },

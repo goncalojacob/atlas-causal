@@ -2681,6 +2681,15 @@
         }
       ]
     },
+    "siege-of-osaka": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "siege-of-pemaquid-1689": {
       "from": "git",
       "versions": [

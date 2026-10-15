@@ -1772,6 +1772,12 @@
     },
     {
       "dissent": false,
+      "id": "1874-japanese-expedition-to-taiwan",
+      "kind": "event",
+      "locator": "Q703942"
+    },
+    {
+      "dissent": false,
       "id": "1893-franco-siamese-crisis",
       "kind": "event",
       "locator": "Q1359846"
@@ -3101,6 +3107,12 @@
       "id": "austrian-state-treaty",
       "kind": "event",
       "locator": "Q306535"
+    },
+    {
+      "dissent": false,
+      "id": "austro-prussian-war",
+      "kind": "event",
+      "locator": "Q153650"
     },
     {
       "dissent": false,
@@ -4565,6 +4577,12 @@
       "id": "battle-of-mogadishu-1993",
       "kind": "event",
       "locator": "Q52226"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mohacs",
+      "kind": "event",
+      "locator": "Q178510"
     },
     {
       "dissent": false,
@@ -7208,6 +7226,18 @@
     },
     {
       "dissent": false,
+      "id": "first-anglo-burmese-war",
+      "kind": "event",
+      "locator": "Q29122"
+    },
+    {
+      "dissent": false,
+      "id": "first-anglo-maratha-war",
+      "kind": "event",
+      "locator": "Q1362209"
+    },
+    {
+      "dissent": false,
       "id": "first-anglo-mysore-war",
       "kind": "event",
       "locator": "Q617070"
@@ -7901,6 +7931,12 @@
       "id": "humboldt-7-massacre",
       "kind": "event",
       "locator": "Q6005145"
+    },
+    {
+      "dissent": false,
+      "id": "hundred-days",
+      "kind": "event",
+      "locator": "Q199955"
     },
     {
       "dissent": false,
@@ -10808,6 +10844,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-osaka",
+      "kind": "event",
+      "locator": "Q475780"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-padua",
       "kind": "event",
       "locator": "Q2284174"
@@ -11573,6 +11615,12 @@
       "id": "treaty-of-addis-ababa",
       "kind": "event",
       "locator": "Q2399119"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-bassein-1534",
+      "kind": "event",
+      "locator": "Q4887044"
     },
     {
       "dissent": false,

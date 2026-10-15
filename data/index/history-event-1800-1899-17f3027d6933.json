@@ -2,6 +2,15 @@
   "from": 1800,
   "kind": "event",
   "records": {
+    "1874-japanese-expedition-to-taiwan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "1890-portuguese-legislative-election": {
       "from": "git",
       "versions": [
@@ -448,6 +457,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "austro-prussian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
@@ -1583,6 +1601,15 @@
         }
       ]
     },
+    "first-anglo-burmese-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "first-anglo-sikh-war": {
       "from": "git",
       "versions": [
@@ -1998,6 +2025,15 @@
       ]
     },
     "hispano-moroccan-war-1859-1860": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
+    "hundred-days": {
       "from": "git",
       "versions": [
         {

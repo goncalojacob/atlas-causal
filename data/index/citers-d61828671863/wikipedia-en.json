@@ -10178,6 +10178,12 @@
     },
     {
       "dissent": false,
+      "id": "1874-japanese-expedition-to-taiwan",
+      "kind": "event",
+      "locator": "\"1874 Japanese expedition to Taiwan\", revision 1379584469"
+    },
+    {
+      "dissent": false,
       "id": "1893-franco-siamese-crisis",
       "kind": "event",
       "locator": "\"1893 Franco-Siamese crisis\", revision 1374343940"
@@ -11429,6 +11435,12 @@
       "id": "austrian-state-treaty",
       "kind": "event",
       "locator": "\"Austrian State Treaty\", revision 1374482051"
+    },
+    {
+      "dissent": false,
+      "id": "austro-prussian-war",
+      "kind": "event",
+      "locator": "\"Austro-Prussian War\", revision 1377702207"
     },
     {
       "dissent": false,
@@ -12857,6 +12869,12 @@
       "id": "battle-of-mogadishu-1993",
       "kind": "event",
       "locator": "\"Battle of Mogadishu (1993)\", revision 1376073635"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mohacs",
+      "kind": "event",
+      "locator": "\"Battle of Mohács\", revision 1374663967"
     },
     {
       "dissent": false,
@@ -15512,6 +15530,18 @@
     },
     {
       "dissent": false,
+      "id": "first-anglo-burmese-war",
+      "kind": "event",
+      "locator": "\"First Anglo-Burmese War\", revision 1378905885"
+    },
+    {
+      "dissent": false,
+      "id": "first-anglo-maratha-war",
+      "kind": "event",
+      "locator": "\"First Anglo-Maratha War\", revision 1377412032"
+    },
+    {
+      "dissent": false,
       "id": "first-anglo-mysore-war",
       "kind": "event",
       "locator": "\"First Anglo-Mysore War\", revision 1370618327"
@@ -16205,6 +16235,12 @@
       "id": "humboldt-7-massacre",
       "kind": "event",
       "locator": "\"Humboldt 7 massacre\", revision 1361104810"
+    },
+    {
+      "dissent": false,
+      "id": "hundred-days",
+      "kind": "event",
+      "locator": "\"Hundred Days\", revision 1380028515"
     },
     {
       "dissent": false,
@@ -18992,6 +19028,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-osaka",
+      "kind": "event",
+      "locator": "\"Siege of Osaka\", revision 1378683811"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-padua",
       "kind": "event",
       "locator": "\"Siege of Padua\", revision 1370744265"
@@ -19985,6 +20027,12 @@
       "id": "treaty-of-addis-ababa",
       "kind": "event",
       "locator": "\"Treaty of Addis Ababa\", revision 1358464481"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-bassein-1534",
+      "kind": "event",
+      "locator": "\"Treaty of Bassein (1534)\", revision 1312441920"
     },
     {
       "dissent": false,
