@@ -2139,6 +2139,126 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-009",
+      "writer": "A",
+      "fired": "2026-10-15T19:23Z",
+      "status": "written",
+      "written": {
+        "event": "first-madagascar-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-010",
+      "writer": "A",
+      "fired": "2026-10-15T19:23Z",
+      "status": "written",
+      "written": {
+        "event": "turco-egyptian-conquest-of-sudan-1820-1824",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-011",
+      "writer": "A",
+      "fired": "2026-10-15T19:23Z",
+      "status": "written",
+      "written": {
+        "event": "ndwandwe-zulu-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-012",
+      "writer": "A",
+      "fired": "2026-10-15T19:23Z",
+      "status": "written",
+      "written": {
+        "event": "boshin-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-013",
+      "writer": "A",
+      "fired": "2026-10-15T19:23Z",
+      "status": "written",
+      "written": {
+        "event": "first-anglo-afghan-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-014",
+      "writer": "A",
+      "fired": "2026-10-15T19:23Z",
+      "status": "written",
+      "written": {
+        "event": "second-anglo-afghan-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-015",
+      "writer": "A",
+      "fired": "2026-10-15T19:23Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sekigahara",
+        "edges": [],
+        "place": "gifu"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-016",
+      "writer": "A",
+      "fired": "2026-10-15T19:23Z",
+      "status": "written",
+      "written": {
+        "event": "shimabara-rebellion",
+        "edges": [],
+        "place": "shimabara-peninsula"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-017",
+      "writer": "A",
+      "fired": "2026-10-15T19:23Z",
+      "status": "written",
+      "written": {
+        "event": "sino-french-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-018",
+      "writer": "A",
+      "fired": "2026-10-15T19:23Z",
+      "status": "written",
+      "written": {
+        "event": "first-anglo-sikh-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

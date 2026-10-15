@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-sekigahara",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q234188",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Battle of Sekigahara",
+    "pt": "Batalha de Sekigahara"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q234188"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sekigahara\", revision 1380043536"
+    }
+  ],
+  "title": "Battle of Sekigahara",
+  "summary": "The English Wikipedia article \"Battle of Sekigahara\", at revision 1380043536, opens: \"The Battle of Sekigahara was an important battle in Japan which occurred on October 21, 1600 in what is now Gifu Prefecture, Japan, at the end of the Sengoku period.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q234188, imported by tools/import/wikidata.mjs. The item's own description reads \"1600 battle preceding Tokugawa shogunate in Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1600,
+    "end": 1600,
+    "date": "1600-10-21"
+  },
+  "place": "gifu",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

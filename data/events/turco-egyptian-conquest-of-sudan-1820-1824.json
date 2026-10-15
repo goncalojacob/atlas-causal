@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "turco-egyptian-conquest-of-sudan-1820-1824",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q28162775",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Turco-Egyptian conquest of Sudan (1820–1824)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q28162775"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Turco-Egyptian conquest of Sudan (1820–1824)\", revision 1373139446"
+    }
+  ],
+  "title": "Turco-Egyptian conquest of Sudan (1820–1824)",
+  "summary": "The English Wikipedia article \"Turco-Egyptian conquest of Sudan (1820–1824)\", at revision 1373139446, opens: \"The Turco-Egyptian conquest of Sudan was a major military and technical feat. Fewer than 10,000 men set off from Egypt, but, with some local assistance, they were able to penetrate 1,500 km up the Nile River to the frontiers of Ethiopia, giving Egypt an empire as large as Western Europe.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q28162775, imported by tools/import/wikidata.mjs. The item's own description reads \"1820–1824 conquest\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1820,
+    "end": 1824,
+    "date": "1820-07"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

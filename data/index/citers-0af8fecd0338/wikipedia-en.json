@@ -13448,6 +13448,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sekigahara",
+      "kind": "event",
+      "locator": "\"Battle of Sekigahara\", revision 1380043536"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-shaho",
       "kind": "event",
       "locator": "\"Battle of Shaho\", revision 1370589119"
@@ -14309,6 +14315,12 @@
       "id": "bombing-of-sakiet-sidi-youssef",
       "kind": "event",
       "locator": "\"Bombing of Sakiet Sidi Youssef\", revision 1375558078"
+    },
+    {
+      "dissent": false,
+      "id": "boshin-war",
+      "kind": "event",
+      "locator": "\"Boshin War\", revision 1370494597"
     },
     {
       "dissent": false,
@@ -15494,9 +15506,21 @@
     },
     {
       "dissent": false,
+      "id": "first-anglo-afghan-war",
+      "kind": "event",
+      "locator": "\"First Anglo-Afghan War\", revision 1379314639"
+    },
+    {
+      "dissent": false,
       "id": "first-anglo-mysore-war",
       "kind": "event",
       "locator": "\"First Anglo-Mysore War\", revision 1370618327"
+    },
+    {
+      "dissent": false,
+      "id": "first-anglo-sikh-war",
+      "kind": "event",
+      "locator": "\"First Anglo-Sikh War\", revision 1370705905"
     },
     {
       "dissent": false,
@@ -15623,6 +15647,12 @@
       "id": "first-liberian-civil-war",
       "kind": "event",
       "locator": "\"First Liberian Civil War\", revision 1374428613"
+    },
+    {
+      "dissent": false,
+      "id": "first-madagascar-expedition",
+      "kind": "event",
+      "locator": "\"First Madagascar expedition\", revision 1370619424"
     },
     {
       "dissent": false,
@@ -17168,6 +17198,12 @@
     },
     {
       "dissent": false,
+      "id": "ndwandwe-zulu-war",
+      "kind": "event",
+      "locator": "\"Ndwandwe–Zulu War\", revision 1370629469"
+    },
+    {
+      "dissent": false,
       "id": "neapolitan-revolt-of-1647",
       "kind": "event",
       "locator": "\"Neapolitan Revolt of 1647\", revision 1370629471"
@@ -18236,6 +18272,12 @@
     },
     {
       "dissent": false,
+      "id": "second-anglo-afghan-war",
+      "kind": "event",
+      "locator": "\"Second Anglo-Afghan War\", revision 1378561136"
+    },
+    {
+      "dissent": false,
       "id": "second-anglo-sikh-war",
       "kind": "event",
       "locator": "\"Second Anglo-Sikh War\", revision 1379635288"
@@ -18467,6 +18509,12 @@
       "id": "shaba-ii",
       "kind": "event",
       "locator": "\"Shaba II\", revision 1370737989"
+    },
+    {
+      "dissent": false,
+      "id": "shimabara-rebellion",
+      "kind": "event",
+      "locator": "\"Shimabara Rebellion\", revision 1373667124"
     },
     {
       "dissent": false,
@@ -19205,6 +19253,12 @@
       "id": "sino-burmese-war",
       "kind": "event",
       "locator": "\"Sino-Burmese War\", revision 1378638379"
+    },
+    {
+      "dissent": false,
+      "id": "sino-french-war",
+      "kind": "event",
+      "locator": "\"Sino-French War\", revision 1379426765"
     },
     {
       "dissent": false,
@@ -20147,6 +20201,12 @@
       "id": "tunisian-revolution",
       "kind": "event",
       "locator": "\"Tunisian revolution\", revision 1371335462"
+    },
+    {
+      "dissent": false,
+      "id": "turco-egyptian-conquest-of-sudan-1820-1824",
+      "kind": "event",
+      "locator": "\"Turco-Egyptian conquest of Sudan (1820–1824)\", revision 1373139446"
     },
     {
       "dissent": false,

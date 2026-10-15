@@ -399,7 +399,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 6,
+      "degree": 7,
       "id": "afghanistan-q889",
       "kind": "place",
       "names": [
@@ -4662,7 +4662,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "china-q29520",
       "kind": "place",
       "names": [
@@ -8367,6 +8367,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-15",
+      "degree": 1,
+      "id": "gifu",
+      "kind": "place",
+      "names": [
+        "Gifu",
+        "Gifu (cidade)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -19052,7 +19080,7 @@
         }
       ],
       "created": "2026-10-14",
-      "degree": 1,
+      "degree": 2,
       "id": "punjab-q169132",
       "kind": "place",
       "names": [
@@ -21475,6 +21503,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-15",
+      "degree": 1,
+      "id": "shimabara-peninsula",
+      "kind": "place",
+      "names": [
+        "Shimabara Peninsula",
+        "Península de Shimabara"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

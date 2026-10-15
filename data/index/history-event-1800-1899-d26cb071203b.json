@@ -1165,6 +1165,15 @@
         }
       ]
     },
+    "boshin-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "boxer-rebellion": {
       "from": "git",
       "versions": [
@@ -1565,6 +1574,24 @@
         }
       ]
     },
+    "first-anglo-afghan-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
+    "first-anglo-sikh-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "first-barbary-war": {
       "from": "git",
       "versions": [
@@ -1671,6 +1698,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "first-madagascar-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
@@ -2185,6 +2221,15 @@
         }
       ]
     },
+    "ndwandwe-zulu-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "new-imperialism": {
       "from": "git",
       "versions": [
@@ -2535,6 +2580,15 @@
         }
       ]
     },
+    "second-anglo-afghan-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
     "second-anglo-sikh-war": {
       "from": "git",
       "versions": [
@@ -2828,6 +2882,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "sino-french-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
@@ -3255,6 +3318,15 @@
             "title"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "turco-egyptian-conquest-of-sudan-1820-1824": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
         }
       ]
     },
