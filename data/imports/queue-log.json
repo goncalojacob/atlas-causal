@@ -2453,6 +2453,126 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-042",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "portuguese-conquest-of-the-east-african-coast",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-043",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mombasa-1505",
+        "edges": [],
+        "place": "mombasa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-044",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "tripolitanian-civil-war",
+        "edges": [],
+        "place": "ottoman-tripolitania"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-045",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "dervish-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-046",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "italian-pacification-campaigns-in-somalia",
+        "edges": [],
+        "place": "italian-somaliland-q319984"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-047",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "rabih-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-048",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "mandingo-wars",
+        "edges": [],
+        "place": "west-africa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-049",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "1890-british-ultimatum",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-050",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "portuguese-conquest-of-hormuz",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-051",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "portuguese-conquest-of-goa",
+        "edges": [],
+        "place": "old-goa"
+      },
+      "refusals": []
     }
   ]
 }

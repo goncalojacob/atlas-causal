@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "italian-somaliland-q319984",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q319984",
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Italian Somaliland",
+    "pt": "Somália Italiana"
+  },
+  "sources": [],
+  "names": [
+    "Italian Somaliland",
+    "Somália Italiana"
+  ],
+  "where": {
+    "lon": 45.7989,
+    "lat": 2.29889,
+    "precision": "region",
+    "label": "Italian Somaliland"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
