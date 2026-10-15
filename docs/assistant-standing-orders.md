@@ -476,3 +476,13 @@ Then land `m42`, `m42b`, `w3` and `plan` with `land.sh` and re-enable the
 routines. Before each landing, run the fast suite on the lane branch. The
 browser test `tests/m87-browser.test.mjs` §9 flaked twice tonight before
 the real cause was found. A failure that repeats on a rerun is real.
+
+## 14. 15 October: big events from 1415 to 1900
+
+The owner, about 18:20 Lisbon on 15 October: "Podes continuar até às 8am de
+amanhã" (you can go on until 8am tomorrow), then "Foca-te em adicionar
+vários eventos grandes de 1415 a 1900" (focus on adding several big events
+from 1415 to 1900). The planner's window is now 1415 to 1900, big events
+first (rules card 13). The run ends at 07:00Z on 16 October. Section 12's
+model rule still holds: Opus coordinates, Sonnet plans and rewrites, Haiku
+writes.

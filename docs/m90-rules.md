@@ -104,6 +104,13 @@ does not read the pool files.
 
     Within a rank, the lanes with the fewest records come first: Africa and
     Asia, then the Americas, then Europe. The earliest year is about 1500.
+    **Since 15 October 2026 the window is 1415 to 1900.** The owner: *"Foca-te
+    em adicionar vários eventos grandes de 1415 a 1900"* (focus on adding
+    several big events from 1415 to 1900). An event that starts before 1415
+    or after 1900 waits. Within the window, big events come first: the
+    vital-article lists, then the lists of wars for 1500 to 1799 and 1800 to
+    1899, the revolutions and the treaties of those centuries. Events from
+    1415 to 1499 are welcome now, Ceuta and the Portuguese voyages among them.
     Writer A takes `africa`, `asia` and `europe` on branch `m42`. Writer B
     takes `americas` on branch `m42b`. A writer never imports what the other
     branch holds.
