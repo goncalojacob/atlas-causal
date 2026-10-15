@@ -1819,6 +1819,6 @@ Writer A imported it from the planner's queue as item `2026-10-15-africa-045`, r
 
 Writer A filed it there because the planner's queue asked for it in item `2026-10-15-africa-047`, rank `list`. Its span and its subject put it inside the umbrella.
 
-## Writer A, 2026-10-15: `1890-british-ultimatum`, filed under `scramble-for-africa` with neither an actor nor a place
+## Writer A, 2026-10-15: `1890-british-ultimatum`, bare
 
-Writer A filed it there because the planner's queue asked for it in item `2026-10-15-africa-049`, rank `list`. Its span and its subject put it inside the umbrella.
+Writer A imported it from the planner's queue as item `2026-10-15-africa-049`, rank `list`, and filed it under `scramble-for-africa`, which Wikidata's `P361` names. The assistant withdrew that filing the same night. The record's lane is europe, from its own point, and it names no actor or place the umbrella names, so it was not the umbrella's own and a test refused it. It now names no actor, no place and no umbrella, and the planner connects it when it can.
