@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "siege-of-aden-1513",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q55885827",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Siege of Aden (1513)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q55885827"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Aden (1513)\", revision 1371667737"
+    }
+  ],
+  "title": "Siege of Aden (1513)",
+  "summary": "The English Wikipedia article \"Siege of Aden (1513)\", at revision 1371667737, opens: \"The siege of Aden occurred when the Portuguese Governor of India, Afonso de Albuquerque, launched an unsuccessful expedition to capture Aden on 26 March 1513.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q55885827, imported by tools/import/wikidata.mjs. The item's own description reads \"1513 Portuguese siege on the Arab Peninsula\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1513,
+    "end": 1513,
+    "date": "1513-03-26"
+  },
+  "place": "aden-q131694",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

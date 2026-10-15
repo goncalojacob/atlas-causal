@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "sino-nepalese-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2270170",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Sino-Nepalese War",
+    "pt": "Guerra Sino-Nepalesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2270170"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sino-Nepalese War\", revision 1379584753"
+    }
+  ],
+  "title": "Sino-Nepalese War",
+  "summary": "The English Wikipedia article \"Sino-Nepalese War\", at revision 1379584753, opens: \"The Sino-Nepalese War, also known as the Sino-Gorkha War and in Chinese as the campaign of Gorkha, was a war fought between the Qing dynasty of China and the Kingdom of Nepal in the late 18th century following an invasion of Tibet by the Nepalese Gorkhas. It was initially fought between Gorkhas and Tibetan armies in 1788 over a trade dispute related to a long-standing problem of low-quality coins manufactured by Nepal for Tibet. The Nepalese Army under Bahadur Shah plundered Tibet, which was a Qing protectorate, and Tibetans signed the Treaty of Kerung paying annual tribute to Nepal.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2270170, imported by tools/import/wikidata.mjs. The item's own description reads \"invasion of Tibet by Nepalese Army and Chinese military intervention\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1788,
+    "end": 1789
+  },
+  "place": "tibet-q17252",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
