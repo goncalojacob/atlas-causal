@@ -1332,6 +1332,15 @@
         }
       ]
     },
+    "borneo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "bosnia-and-herzegovina": {
       "from": "git",
       "versions": [
@@ -5680,6 +5689,15 @@
         }
       ]
     },
+    "kamianets-podilskyi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "kandahar": {
       "from": "git",
       "versions": [
@@ -5810,6 +5828,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "kazan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -7526,7 +7553,7 @@
       ]
     },
     "mesopotamia": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

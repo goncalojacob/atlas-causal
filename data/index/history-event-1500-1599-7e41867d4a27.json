@@ -1604,6 +1604,24 @@
         }
       ]
     },
+    "castilian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "celali-rebellions": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "chios-expedition-1599": {
       "from": "git",
       "versions": [
@@ -2257,7 +2275,7 @@
       ]
     },
     "ottoman-safavid-war-1532-1555": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2745,6 +2763,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "siege-of-kazan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

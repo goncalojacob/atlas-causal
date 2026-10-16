@@ -15314,6 +15314,12 @@
     },
     {
       "dissent": false,
+      "id": "cambodian-dutch-war",
+      "kind": "event",
+      "locator": "\"Cambodian–Dutch War\", revision 1380173970"
+    },
+    {
+      "dissent": false,
       "id": "cambodian-genocide",
       "kind": "event",
       "locator": "\"Cambodian genocide\", revision 1377684919"
@@ -15536,6 +15542,12 @@
     },
     {
       "dissent": false,
+      "id": "castilian-war",
+      "kind": "event",
+      "locator": "\"Castilian War\", revision 1379337168"
+    },
+    {
+      "dissent": false,
       "id": "catatumbo-campaign",
       "kind": "event",
       "locator": "\"Catatumbo campaign\", revision 1370610401"
@@ -15545,6 +15557,12 @@
       "id": "cayuse-war",
       "kind": "event",
       "locator": "\"Cayuse War\", revision 1370610454"
+    },
+    {
+      "dissent": false,
+      "id": "celali-rebellions",
+      "kind": "event",
+      "locator": "\"Celali rebellions\", revision 1378756967"
     },
     {
       "dissent": false,
@@ -17570,6 +17588,12 @@
     },
     {
       "dissent": false,
+      "id": "invasion-of-ryukyu",
+      "kind": "event",
+      "locator": "\"Invasion of Ryukyu\", revision 1370624098"
+    },
+    {
+      "dissent": false,
       "id": "invasion-of-south-georgia",
       "kind": "event",
       "locator": "\"Invasion of South Georgia\", revision 1375909832"
@@ -18896,6 +18920,12 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-safavid-war-1623-1639",
+      "kind": "event",
+      "locator": "\"Ottoman–Safavid War (1623–1639)\", revision 1379898446"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-venetian-war-1537-1540",
       "kind": "event",
       "locator": "\"Ottoman–Venetian War (1537–1540)\", revision 1373751106"
@@ -19106,6 +19136,12 @@
     },
     {
       "dissent": false,
+      "id": "polish-ottoman-war-1633-1634",
+      "kind": "event",
+      "locator": "\"Polish–Ottoman War (1633–1634)\", revision 1380605068"
+    },
+    {
+      "dissent": false,
       "id": "polish-ottoman-war-1683-1699",
       "kind": "event",
       "locator": "\"Polish–Ottoman War (1683–1699)\", revision 1371450433"
@@ -19301,6 +19337,12 @@
       "id": "pukkwan-campaign",
       "kind": "event",
       "locator": "\"Pukkwan campaign\", revision 1370705182"
+    },
+    {
+      "dissent": false,
+      "id": "qing-invasion-of-joseon",
+      "kind": "event",
+      "locator": "\"Qing invasion of Joseon\", revision 1370705362"
     },
     {
       "dissent": false,
@@ -20495,6 +20537,12 @@
       "id": "siege-of-julich-1621-1622",
       "kind": "event",
       "locator": "\"Siege of Jülich (1621–1622)\", revision 1370742177"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kazan",
+      "kind": "event",
+      "locator": "\"Siege of Kazan\", revision 1370742397"
     },
     {
       "dissent": false,

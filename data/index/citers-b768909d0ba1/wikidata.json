@@ -7004,6 +7004,12 @@
     },
     {
       "dissent": false,
+      "id": "cambodian-dutch-war",
+      "kind": "event",
+      "locator": "Q17048924"
+    },
+    {
+      "dissent": false,
       "id": "cambodian-genocide",
       "kind": "event",
       "locator": "Q2885072"
@@ -7226,6 +7232,12 @@
     },
     {
       "dissent": false,
+      "id": "castilian-war",
+      "kind": "event",
+      "locator": "Q31880"
+    },
+    {
+      "dissent": false,
       "id": "catatumbo-campaign",
       "kind": "event",
       "locator": "Q66474138"
@@ -7235,6 +7247,12 @@
       "id": "cayuse-war",
       "kind": "event",
       "locator": "Q1052060"
+    },
+    {
+      "dissent": false,
+      "id": "celali-rebellions",
+      "kind": "event",
+      "locator": "Q1052771"
     },
     {
       "dissent": false,
@@ -9248,6 +9266,12 @@
     },
     {
       "dissent": false,
+      "id": "invasion-of-ryukyu",
+      "kind": "event",
+      "locator": "Q1140134"
+    },
+    {
+      "dissent": false,
       "id": "invasion-of-south-georgia",
       "kind": "event",
       "locator": "Q4345906"
@@ -10652,6 +10676,12 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-safavid-war-1623-1639",
+      "kind": "event",
+      "locator": "Q163476"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-venetian-war-1537-1540",
       "kind": "event",
       "locator": "Q3119136"
@@ -10862,6 +10892,12 @@
     },
     {
       "dissent": false,
+      "id": "polish-ottoman-war-1633-1634",
+      "kind": "event",
+      "locator": "Q74302"
+    },
+    {
+      "dissent": false,
       "id": "polish-ottoman-war-1683-1699",
       "kind": "event",
       "locator": "Q1132994"
@@ -11057,6 +11093,12 @@
       "id": "pukkwan-campaign",
       "kind": "event",
       "locator": "Q12599044"
+    },
+    {
+      "dissent": false,
+      "id": "qing-invasion-of-joseon",
+      "kind": "event",
+      "locator": "Q487757"
     },
     {
       "dissent": false,
@@ -12323,6 +12365,12 @@
       "id": "siege-of-julich-1621-1622",
       "kind": "event",
       "locator": "Q17122425"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-kazan",
+      "kind": "event",
+      "locator": "Q2670327"
     },
     {
       "dissent": false,
