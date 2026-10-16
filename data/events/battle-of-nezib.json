@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-nezib",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2640981",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Nezib"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2640981"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nezib\", revision 1375637254"
+    }
+  ],
+  "title": "Battle of Nezib",
+  "summary": "The English Wikipedia article \"Battle of Nezib\", at revision 1375637254, opens: \"The Battle of Nezib was fought on 24 June 1839 between the forces of the quasi-autonomous province of Ottoman Egypt and those of the Ottoman Empire. The Egyptians were led by Ibrahim Pasha, with Soliman Pasha al-Faransawi commanding the right flank of the Egyptian army. The Ottomans were led by Hafiz Mehmed Pasha, with Helmuth von Moltke the Elder playing an advisory role in command of the Ottoman artillery. The battle ended in an Egyptian victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2640981, imported by tools/import/wikidata.mjs. The item's own description reads \"battle between Egypt and the Ottoman Empire (1839)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1839,
+    "end": 1839,
+    "date": "1839-06-24"
+  },
+  "place": "nizip",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "egyptian-ottoman-war-1839-1841"
+}

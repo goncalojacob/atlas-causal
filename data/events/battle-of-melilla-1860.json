@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-melilla-1860",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q111207497",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Melilla (1860)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q111207497"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Melilla (1860)\", revision 1374680475"
+    }
+  ],
+  "title": "Battle of Melilla (1860)",
+  "summary": "The English Wikipedia article \"Battle of Melilla (1860)\", at revision 1374680475, opens: \"The battle of Melilla took place in February 1860, during the Spanish-Moroccan War, when the Spanish garrison of Melilla suffered a fiasco caused by Riffian fighters outside the city.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q111207497, imported by tools/import/wikidata.mjs. The item's own description reads \"1860 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1860,
+    "end": 1860,
+    "date": "1860-02-09"
+  },
+  "place": "melilla",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "hispano-moroccan-war-1859-1860"
+}

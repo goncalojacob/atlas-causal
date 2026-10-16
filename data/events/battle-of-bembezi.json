@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-bembezi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q30715543",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Bembezi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q30715543"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bembezi\", revision 1370662490"
+    }
+  ],
+  "title": "Battle of Bembezi",
+  "summary": "The English Wikipedia article \"Battle of Bembezi\", at revision 1370662490, opens: \"The Battle of Bembezi was an engagement of the First Matabele War, between the British South Africa Company and the Ndebele kingdom of Mthwakazi.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q30715543, imported by tools/import/wikidata.mjs. The item's own description reads \"1893 battle of the First Matabele War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1893,
+    "end": 1893,
+    "date": "1893-11-01"
+  },
+  "place": "bembezi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-matabele-war"
+}

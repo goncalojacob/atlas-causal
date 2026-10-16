@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-rustenburg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q15693966",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Siege of Rustenburg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15693966"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Rustenburg\", revision 1370744863"
+    }
+  ],
+  "title": "Siege of Rustenburg",
+  "summary": "The English Wikipedia article \"Siege of Rustenburg\", at revision 1370744863, opens: \"The siege of Rustenburg was a siege that took place between 1880 and 1881 during the First Boer War. Boer forces of the South African Republic carried out the siege on Rustenburg, a British-controlled city inside of the Transvaal Colony, and captured it after three months.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15693966, imported by tools/import/wikidata.mjs. The item's own description reads \"1880 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1880,
+    "end": 1881,
+    "date": "1880-12-27",
+    "endDate": "1881-03-30"
+  },
+  "place": "rustenburg",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-boer-war"
+}

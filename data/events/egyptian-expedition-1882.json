@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "egyptian-expedition-1882",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5348404",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Egyptian Expedition (1882)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5348404"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Egyptian Expedition (1882)\", revision 1370616628"
+    }
+  ],
+  "title": "Egyptian Expedition (1882)",
+  "summary": "The English Wikipedia article \"Egyptian Expedition (1882)\", at revision 1370616628, opens: \"The Egyptian Expedition was a military expedition dispatched by the United States to Egypt during the 1882 Anglo-Egyptian War to protect American citizens and property. Responding to the possibility of war between Britain and Egypt, three United States Navy warships from the European Squadron under the command of Rear-Admiral James W. Nicholson were ordered to sail to Alexandria in mid-1882. Their goal was to observe any possible conflict offshore and intervene if necessary.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5348404, imported by tools/import/wikidata.mjs. The item's own description reads \"American military expedition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1882,
+    "end": 1882,
+    "date": "1882-06",
+    "endDate": "1882-07"
+  },
+  "place": "alexandria",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-egyptian-war"
+}
