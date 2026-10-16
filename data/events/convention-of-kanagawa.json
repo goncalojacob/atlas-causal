@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "convention-of-kanagawa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q771451",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Convention of Kanagawa",
+    "pt": "Tratado de Kanagawa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q771451"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Convention of Kanagawa\", revision 1351937081"
+    }
+  ],
+  "title": "Convention of Kanagawa",
+  "summary": "The English Wikipedia article \"Convention of Kanagawa\", at revision 1351937081, opens: \"The Convention of Kanagawa, also known as the Kanagawa Treaty  or the Japan–US Treaty of Peace and Amity , was a treaty signed between the United States and the Tokugawa Shogunate on March 31, 1854. Signed under threat of force, it effectively meant the end of Japan's 220-year-old policy of national seclusion by opening the ports of Shimoda and Hakodate to American vessels. It also ensured the safety of American castaways and established the position of an American consul in Japan. The treaty precipitated the signing of similar treaties establishing diplomatic relations with other Western powers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q771451, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-03-31"
+  },
+  "place": "yokohama",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

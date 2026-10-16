@@ -1873,3 +1873,11 @@ Writer A filed it there because the planner's queue asked for it in item `2026-1
 ## Writer A, 2026-10-16: `panjdeh-incident`, filed under `great-game` with neither an actor nor a place
 
 Writer A filed it there because the planner's queue asked for it in item `2026-10-16-asia-027`, rank `child-of:great-game`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `treaty-of-salbai`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-16-asia-037`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-16: `treaty-of-amity-and-commerce-united-states-japan`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-16-asia-039`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.

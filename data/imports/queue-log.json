@@ -3337,6 +3337,128 @@
         "place": "herat"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-030",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-allahabad",
+        "edges": [],
+        "place": "alahabad-pakistan"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-031",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-amritsar-1846",
+        "edges": [],
+        "place": "amritsar"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-032",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q17035527: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-asia-033",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "convention-of-kanagawa",
+        "edges": [],
+        "place": "yokohama"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-034",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "convention-of-peking",
+        "edges": [],
+        "place": "beijing"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-035",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2003866: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-asia-036",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-adrianople-1829",
+        "edges": [],
+        "place": "edirne"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-037",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-salbai",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-038",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-japanese-friendship-treaty",
+        "edges": [],
+        "place": "nagasaki"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-039",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-amity-and-commerce-united-states-japan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
