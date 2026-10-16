@@ -2811,6 +2811,20 @@
       },
       "refusals": [],
       "note": "Q3775537: none of its classes (Q108856008) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-16-americas-040",
+      "writer": "B",
+      "fired": "2026-10-16T00:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-greenville",
+        "edges": [
+          "northwest-indian-war--treaty-of-greenville--caused"
+        ],
+        "place": "greenville-indiana"
+      },
+      "refusals": []
     }
   ]
 }
