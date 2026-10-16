@@ -41535,7 +41535,6 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "war-of-the-first-coalition",
       "review": {
         "flags": [
           "imported-facts",
@@ -71497,12 +71496,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "italian-campaigns-of-the-french-revolutionary-wars",
-      "kind": "event",
-      "message": "the event is part of \"war-of-the-first-coalition\" and is not dated inside it",
-      "rule": "child-outside-parent"
     },
     {
       "id": "italian-campaigns-of-the-french-revolutionary-wars",
