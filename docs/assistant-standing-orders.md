@@ -543,3 +543,20 @@ links later". So:
   The queue tool's lane check allows that since branch `m94`.
 - Each writer fire takes up to forty items.
 - Links come later, in a separate pass the owner will start.
+
+## 17. 16 October, evening: the planner back, faster
+
+At about 10:00Z the owner wrote "Pause the planner and let the writers
+finish their thing". The writers drained the last queue and were then
+disabled. At about 17:20Z the owner wrote "continue until 8am". The
+assistant read that as a restart of the whole pipeline with the faster
+settings of section 16, until 07:00Z on 17 October.
+
+- The planner queues 100 to 150 events a fire, every two hours, with no
+  edges, and hands them out by turn.
+- Writers A and B take up to forty a fire each, in any lane.
+- A writer whose queue is empty stops before it merges `m0`. That fixes
+  the broken `m42b` of the morning of 16 October.
+- A second Spanish–American War record was removed on 16 October. A scan
+  of every active event for titles that differ only by a leading "The" or
+  a bracket found no other true duplicate.
