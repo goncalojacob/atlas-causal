@@ -867,6 +867,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "ambur-q584854",
+      "kind": "place",
+      "names": [
+        "Ambur"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 1,
       "id": "amour-range",
@@ -2403,6 +2430,35 @@
       "names": [
         "Bengal",
         "Bengala"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "bengaluru",
+      "kind": "place",
+      "names": [
+        "Bengaluru",
+        "Bangalore",
+        "Bangalor"
       ],
       "origin": {
         "tool": "wikidata"
@@ -9339,6 +9395,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "great-plains",
+      "kind": "place",
+      "names": [
+        "Great Plains",
+        "Grandes Planícies"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10462,7 +10546,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 2,
+      "degree": 3,
       "id": "hormuz-island",
       "kind": "place",
       "names": [
@@ -12167,7 +12251,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "kabul",
       "kind": "place",
       "names": [
@@ -12253,7 +12337,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "kanpur",
       "kind": "place",
       "names": [
@@ -14335,7 +14419,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 66,
+      "degree": 67,
       "id": "lisbon",
       "kind": "place",
       "names": [
@@ -15338,7 +15422,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 2,
       "id": "malabar-coast",
       "kind": "place",
       "names": [
@@ -15775,6 +15859,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "maryland",
+      "kind": "place",
+      "names": [
+        "Maryland"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -16199,7 +16310,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "middle-east",
       "kind": "place",
       "names": [
@@ -16209,6 +16320,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "midwestern-united-states",
+      "kind": "place",
+      "names": [
+        "Midwestern United States",
+        "Região Centro-Oeste dos Estados Unidos"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -19523,6 +19662,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "pearl-river",
+      "kind": "place",
+      "names": [
+        "Pearl River",
+        "Rio das Pérolas"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "pebble-island",
@@ -19894,7 +20061,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 6,
       "id": "philippines-q928",
       "kind": "place",
       "names": [
@@ -22030,7 +22197,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "russian-empire-q34266",
       "kind": "place",
       "names": [
@@ -23585,7 +23752,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 2,
       "id": "shanghai",
       "kind": "place",
       "names": [
@@ -23855,6 +24022,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "sig-river",
+      "kind": "place",
+      "names": [
+        "Mekerra river",
+        "Sig River"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -25258,7 +25453,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 2,
+      "degree": 3,
       "id": "suakin",
       "kind": "place",
       "names": [
@@ -26033,6 +26228,33 @@
       "names": [
         "Tétouan",
         "Tetuão"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "texas",
+      "kind": "place",
+      "names": [
+        "Texas"
       ],
       "origin": {
         "tool": "wikidata"
@@ -28962,6 +29184,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "yangon",
+      "kind": "place",
+      "names": [
+        "Yangon",
+        "Rangum"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

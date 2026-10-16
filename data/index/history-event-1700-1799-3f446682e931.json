@@ -1253,6 +1253,15 @@
         }
       ]
     },
+    "battle-of-tirurangadi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-trenton": {
       "from": "git",
       "versions": [
@@ -1334,6 +1343,15 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "braddock-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -2363,6 +2381,24 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "siege-of-ambur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-bangalore": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

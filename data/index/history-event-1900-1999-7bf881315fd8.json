@@ -7621,6 +7621,15 @@
         }
       ]
     },
+    "battle-of-elands-river-1900": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-goose-green": {
       "from": "git",
       "versions": [
@@ -21789,6 +21798,15 @@
             "parent"
           ],
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "siege-of-beitang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

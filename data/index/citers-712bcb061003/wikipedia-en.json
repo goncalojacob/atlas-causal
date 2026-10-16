@@ -10184,9 +10184,21 @@
     },
     {
       "dissent": false,
+      "id": "1863-1875-cholera-pandemic",
+      "kind": "event",
+      "locator": "\"1863–1875 cholera pandemic\", revision 1375707398"
+    },
+    {
+      "dissent": false,
       "id": "1874-japanese-expedition-to-taiwan",
       "kind": "event",
       "locator": "\"1874 Japanese expedition to Taiwan\", revision 1379584469"
+    },
+    {
+      "dissent": false,
+      "id": "1889-1890-pandemic",
+      "kind": "event",
+      "locator": "\"1889–1890 pandemic\", revision 1362689201"
     },
     {
       "dissent": false,
@@ -11438,6 +11450,12 @@
     },
     {
       "dissent": false,
+      "id": "attack-on-selarong",
+      "kind": "event",
+      "locator": "\"Attack on Selarong\", revision 1370429555"
+    },
+    {
+      "dissent": false,
       "id": "attack-on-the-moncada-barracks",
       "kind": "event",
       "locator": "\"Attack on the Moncada Barracks\", revision 1370861034"
@@ -11924,6 +11942,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-calumpit",
+      "kind": "event",
+      "locator": "\"Battle of Calumpit\", revision 1370435935"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-camden",
       "kind": "event",
       "locator": "\"Battle of Camden\", revision 1376333498"
@@ -12275,6 +12299,12 @@
       "id": "battle-of-el-tor",
       "kind": "event",
       "locator": "\"Battle of El Tor\", revision 1374080276"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-elands-river-1900",
+      "kind": "event",
+      "locator": "\"Battle of Elands River (1900)\", revision 1374222323"
     },
     {
       "dissent": false,
@@ -13340,6 +13370,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-muddy-flat",
+      "kind": "event",
+      "locator": "\"Battle of Muddy Flat\", revision 1370450722"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mudki",
       "kind": "event",
       "locator": "\"Battle of Mudki\", revision 1370450730"
@@ -13424,6 +13460,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ningyuan",
+      "kind": "event",
+      "locator": "\"Battle of Ningyuan\", revision 1370451771"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-noain",
       "kind": "event",
       "locator": "\"Battle of Noáin\", revision 1375299067"
@@ -13469,6 +13511,12 @@
       "id": "battle-of-ollantaytambo",
       "kind": "event",
       "locator": "\"Battle of Ollantaytambo\", revision 1376074803"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-olongapo",
+      "kind": "event",
+      "locator": "\"Battle of Olongapo\", revision 1380529346"
     },
     {
       "dissent": false,
@@ -13754,6 +13802,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rangoon-1852",
+      "kind": "event",
+      "locator": "\"Battle of Rangoon (1852)\", revision 1370272714"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ras-lanuf",
       "kind": "event",
       "locator": "\"Battle of Ras Lanuf\", revision 1372942414"
@@ -13922,6 +13976,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sanhe",
+      "kind": "event",
+      "locator": "\"Battle of Sanhe\", revision 1370588503"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-santa-clara",
       "kind": "event",
       "locator": "\"Battle of Santa Clara\", revision 1370588555"
@@ -14015,6 +14075,12 @@
       "id": "battle-of-sierra-bullones",
       "kind": "event",
       "locator": "\"Battle of Sierra Bullones\", revision 1370589345"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sig",
+      "kind": "event",
+      "locator": "\"Battle of Sig\", revision 1370274369"
     },
     {
       "dissent": false,
@@ -14264,6 +14330,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-barrier-forts",
+      "kind": "event",
+      "locator": "\"Battle of the Barrier Forts\", revision 1373598880"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-bay-of-velez",
       "kind": "event",
       "locator": "\"Battle of the Bay of Velez\", revision 1375535408"
@@ -14273,6 +14345,12 @@
       "id": "battle-of-the-black-river",
       "kind": "event",
       "locator": "\"Battle of the Black River\", revision 1370598348"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-bogue",
+      "kind": "event",
+      "locator": "\"Battle of the Bogue\", revision 1370598373"
     },
     {
       "dissent": false,
@@ -14465,6 +14543,12 @@
       "id": "battle-of-tirad-pass",
       "kind": "event",
       "locator": "\"Battle of Tirad Pass\", revision 1379490107"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tirurangadi",
+      "kind": "event",
+      "locator": "\"Battle of Tirurangadi\", revision 1374141516"
     },
     {
       "dissent": false,
@@ -15047,6 +15131,12 @@
       "id": "boyaca-necklace-bomb-incident",
       "kind": "event",
       "locator": "\"Boyacá necklace bomb incident\", revision 1353297969"
+    },
+    {
+      "dissent": false,
+      "id": "braddock-expedition",
+      "kind": "event",
+      "locator": "\"Braddock Expedition\", revision 1380530055"
     },
     {
       "dissent": false,
@@ -16184,6 +16274,12 @@
     },
     {
       "dissent": false,
+      "id": "euphrates-tigris-expedition",
+      "kind": "event",
+      "locator": "\"Euphrates-Tigris Expedition\", revision 1380377208"
+    },
+    {
+      "dissent": false,
       "id": "euromaidan",
       "kind": "event",
       "locator": "\"Euromaidan\", revision 1372581234"
@@ -16229,6 +16325,12 @@
       "id": "execution-of-the-romanov-family",
       "kind": "event",
       "locator": "\"Murder of the Romanov family\", revision 1374973698, first sentence: \"16–17 July 1918\""
+    },
+    {
+      "dissent": false,
+      "id": "expedition-of-the-col-des-beni-aicha",
+      "kind": "event",
+      "locator": "\"Expedition of the Col des Beni Aïcha\", revision 1371416086"
     },
     {
       "dissent": false,
@@ -18230,6 +18332,12 @@
     },
     {
       "dissent": false,
+      "id": "north-west-rebellion",
+      "kind": "event",
+      "locator": "\"North-West Rebellion\", revision 1379632083"
+    },
+    {
+      "dissent": false,
       "id": "northeast-coast-campaign-1676",
       "kind": "event",
       "locator": "\"Northeast Coast campaign (1676)\", revision 1375172615"
@@ -18680,6 +18788,12 @@
     },
     {
       "dissent": false,
+      "id": "pescadores-campaign-1895",
+      "kind": "event",
+      "locator": "\"Pescadores campaign (1895)\", revision 1370704080"
+    },
+    {
+      "dissent": false,
       "id": "petrobras-1953",
       "kind": "event",
       "locator": "\"Petrobras\", revision 1372204096"
@@ -18815,6 +18929,12 @@
       "id": "portuguese-expedition-to-tripoli",
       "kind": "event",
       "locator": "\"Portuguese expedition to Tripoli\", revision 1370704835"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-intervention-in-hormuz-1514-1515",
+      "kind": "event",
+      "locator": "\"Portuguese intervention in Hormuz (1514–1515)\", revision 1370704845"
     },
     {
       "dissent": false,
@@ -19388,6 +19508,18 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-caloocan",
+      "kind": "event",
+      "locator": "\"Second Battle of Caloocan\", revision 1370735989"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-cawnpore",
+      "kind": "event",
+      "locator": "\"Second Battle of Cawnpore\", revision 1370736006"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-colenso",
       "kind": "event",
       "locator": "\"Second Battle of Colenso\", revision 1370736054"
@@ -19640,6 +19772,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-ambur",
+      "kind": "event",
+      "locator": "\"Siege of Ambur\", revision 1370738789"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-anzele",
       "kind": "event",
       "locator": "\"Siege of Anzele\", revision 1370738927"
@@ -19676,9 +19814,21 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-bangalore",
+      "kind": "event",
+      "locator": "\"Siege of Bangalore\", revision 1376718865"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-bautzen-1620",
       "kind": "event",
       "locator": "\"Siege of Bautzen (1620)\", revision 1370739355"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-beitang",
+      "kind": "event",
+      "locator": "\"Siege of Beitang\", revision 1375891905"
     },
     {
       "dissent": false,
@@ -20354,6 +20504,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-the-sherpur-cantonment",
+      "kind": "event",
+      "locator": "\"Siege of the Sherpur Cantonment\", revision 1376920342"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-tourane",
       "kind": "event",
       "locator": "\"Siege of Tourane\", revision 1370745941"
@@ -20444,6 +20600,12 @@
     },
     {
       "dissent": false,
+      "id": "sinking-of-the-nossa-senhora-da-conceicao",
+      "kind": "event",
+      "locator": "\"Sinking of the Nossa Senhora da Conceição\", revision 1370747127"
+    },
+    {
+      "dissent": false,
       "id": "sino-burmese-war",
       "kind": "event",
       "locator": "\"Sino-Burmese War\", revision 1378638379"
@@ -20477,6 +20639,12 @@
       "id": "sino-vietnamese-war",
       "kind": "event",
       "locator": "\"Sino-Vietnamese War\", revision 1375848359"
+    },
+    {
+      "dissent": false,
+      "id": "sioux-wars",
+      "kind": "event",
+      "locator": "\"Sioux Wars\", revision 1370747238"
     },
     {
       "dissent": false,
@@ -20738,6 +20906,12 @@
     },
     {
       "dissent": false,
+      "id": "suakin-expedition",
+      "kind": "event",
+      "locator": "\"Suakin Expedition\", revision 1366263771"
+    },
+    {
+      "dissent": false,
       "id": "sudbury-fight",
       "kind": "event",
       "locator": "\"Sudbury Fight\", revision 1370748868"
@@ -20828,6 +21002,12 @@
     },
     {
       "dissent": false,
+      "id": "tecumseh-s-war",
+      "kind": "event",
+      "locator": "\"Tecumseh's War\", revision 1379552269"
+    },
+    {
+      "dissent": false,
       "id": "tehran-conference",
       "kind": "event",
       "locator": "\"Tehran Conference\", revision 1374026870"
@@ -20849,6 +21029,12 @@
       "id": "tet-offensive",
       "kind": "event",
       "locator": "\"Tet Offensive\", revision 1376040932"
+    },
+    {
+      "dissent": false,
+      "id": "texas-indian-wars",
+      "kind": "event",
+      "locator": "\"Texas–Indian wars\", revision 1377659372"
     },
     {
       "dissent": false,
@@ -21905,6 +22091,12 @@
       "id": "xinhai-revolution",
       "kind": "event",
       "locator": "\"1911 Revolution\", revision 1375425258"
+    },
+    {
+      "dissent": false,
+      "id": "yakima-war",
+      "kind": "event",
+      "locator": "\"Yakima War\", revision 1370751162"
     },
     {
       "dissent": false,

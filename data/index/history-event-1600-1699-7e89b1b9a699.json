@@ -840,6 +840,15 @@
         }
       ]
     },
+    "battle-of-ningyuan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-nordlingen-1634": {
       "from": "git",
       "versions": [
@@ -2946,6 +2955,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "sinking-of-the-nossa-senhora-da-conceicao": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

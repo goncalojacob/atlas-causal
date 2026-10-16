@@ -320,6 +320,15 @@
         }
       ]
     },
+    "ambur-q584854": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "amour-range": {
       "from": "git",
       "versions": [
@@ -1020,6 +1029,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "bengaluru": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -4281,6 +4299,15 @@
         }
       ]
     },
+    "great-plains": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "greece-q41": {
       "from": "git",
       "versions": [
@@ -7157,6 +7184,15 @@
         }
       ]
     },
+    "maryland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "matabeleland": {
       "from": "git",
       "versions": [
@@ -7360,6 +7396,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "midwestern-united-states": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -8820,6 +8865,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "pearl-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -10868,6 +10922,15 @@
         }
       ]
     },
+    "sig-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "silesia": {
       "from": "git",
       "versions": [
@@ -11835,6 +11898,15 @@
       ]
     },
     "tetouan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "texas": {
       "from": "git",
       "versions": [
         {
@@ -13193,6 +13265,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "yangon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

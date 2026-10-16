@@ -1734,6 +1734,15 @@
         }
       ]
     },
+    "euphrates-tigris-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "expedition-to-touat-1557": {
       "from": "git",
       "versions": [
@@ -2208,6 +2217,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "portuguese-intervention-in-hormuz-1514-1515": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

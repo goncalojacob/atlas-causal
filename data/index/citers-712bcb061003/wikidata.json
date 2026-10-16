@@ -1772,9 +1772,21 @@
     },
     {
       "dissent": false,
+      "id": "1863-1875-cholera-pandemic",
+      "kind": "event",
+      "locator": "Q5476234"
+    },
+    {
+      "dissent": false,
       "id": "1874-japanese-expedition-to-taiwan",
       "kind": "event",
       "locator": "Q703942"
+    },
+    {
+      "dissent": false,
+      "id": "1889-1890-pandemic",
+      "kind": "event",
+      "locator": "Q10658304"
     },
     {
       "dissent": false,
@@ -3098,6 +3110,12 @@
     },
     {
       "dissent": false,
+      "id": "attack-on-selarong",
+      "kind": "event",
+      "locator": "Q133287944"
+    },
+    {
+      "dissent": false,
       "id": "attack-on-the-moncada-barracks",
       "kind": "event",
       "locator": "Q11211553"
@@ -3602,6 +3620,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-calumpit",
+      "kind": "event",
+      "locator": "Q4870618"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-camden",
       "kind": "event",
       "locator": "Q1539513"
@@ -3971,6 +3995,12 @@
       "id": "battle-of-el-tor",
       "kind": "event",
       "locator": "Q115518405"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-elands-river-1900",
+      "kind": "event",
+      "locator": "Q4870959"
     },
     {
       "dissent": false,
@@ -5042,6 +5072,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-muddy-flat",
+      "kind": "event",
+      "locator": "Q31821016"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mudki",
       "kind": "event",
       "locator": "Q910528"
@@ -5126,6 +5162,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ningyuan",
+      "kind": "event",
+      "locator": "Q1047602"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-noain",
       "kind": "event",
       "locator": "Q2889540"
@@ -5171,6 +5213,12 @@
       "id": "battle-of-ollantaytambo",
       "kind": "event",
       "locator": "Q2338569"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-olongapo",
+      "kind": "event",
+      "locator": "Q4871941"
     },
     {
       "dissent": false,
@@ -5444,6 +5492,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rangoon-1852",
+      "kind": "event",
+      "locator": "Q135189327"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ras-lanuf",
       "kind": "event",
       "locator": "Q1089511"
@@ -5612,6 +5666,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sanhe",
+      "kind": "event",
+      "locator": "Q6141115"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-santa-clara",
       "kind": "event",
       "locator": "Q2153101"
@@ -5705,6 +5765,12 @@
       "id": "battle-of-sierra-bullones",
       "kind": "event",
       "locator": "Q11908785"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sig",
+      "kind": "event",
+      "locator": "Q2889985"
     },
     {
       "dissent": false,
@@ -5954,6 +6020,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-barrier-forts",
+      "kind": "event",
+      "locator": "Q4872985"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-bay-of-velez",
       "kind": "event",
       "locator": "Q116609273"
@@ -5963,6 +6035,12 @@
       "id": "battle-of-the-black-river",
       "kind": "event",
       "locator": "Q4872851"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-bogue",
+      "kind": "event",
+      "locator": "Q4872861"
     },
     {
       "dissent": false,
@@ -6149,6 +6227,12 @@
       "id": "battle-of-tirad-pass",
       "kind": "event",
       "locator": "Q3490568"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tirurangadi",
+      "kind": "event",
+      "locator": "Q4870613"
     },
     {
       "dissent": false,
@@ -6731,6 +6815,12 @@
       "id": "boyaca-necklace-bomb-incident",
       "kind": "event",
       "locator": "Q139505717"
+    },
+    {
+      "dissent": false,
+      "id": "braddock-expedition",
+      "kind": "event",
+      "locator": "Q3177722"
     },
     {
       "dissent": false,
@@ -7868,6 +7958,12 @@
     },
     {
       "dissent": false,
+      "id": "euphrates-tigris-expedition",
+      "kind": "event",
+      "locator": "Q85970616"
+    },
+    {
+      "dissent": false,
       "id": "euromaidan",
       "kind": "event",
       "locator": "Q15224558"
@@ -7913,6 +8009,12 @@
       "id": "execution-of-the-romanov-family",
       "kind": "event",
       "locator": "Q1356047"
+    },
+    {
+      "dissent": false,
+      "id": "expedition-of-the-col-des-beni-aicha",
+      "kind": "event",
+      "locator": "Q27734332"
     },
     {
       "dissent": false,
@@ -10004,6 +10106,12 @@
     },
     {
       "dissent": false,
+      "id": "north-west-rebellion",
+      "kind": "event",
+      "locator": "Q1506788"
+    },
+    {
+      "dissent": false,
       "id": "northeast-coast-campaign-1676",
       "kind": "event",
       "locator": "Q18354826"
@@ -10454,6 +10562,12 @@
     },
     {
       "dissent": false,
+      "id": "pescadores-campaign-1895",
+      "kind": "event",
+      "locator": "Q2583202"
+    },
+    {
+      "dissent": false,
       "id": "philippeville-massacre",
       "kind": "event",
       "locator": "Q6889422"
@@ -10577,6 +10691,12 @@
       "id": "portuguese-expedition-to-tripoli",
       "kind": "event",
       "locator": "Q138022960"
+    },
+    {
+      "dissent": false,
+      "id": "portuguese-intervention-in-hormuz-1514-1515",
+      "kind": "event",
+      "locator": "Q131913878"
     },
     {
       "dissent": false,
@@ -11168,6 +11288,18 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-caloocan",
+      "kind": "event",
+      "locator": "Q7443076"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-cawnpore",
+      "kind": "event",
+      "locator": "Q4212577"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-colenso",
       "kind": "event",
       "locator": "Q868249"
@@ -11462,6 +11594,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-ambur",
+      "kind": "event",
+      "locator": "Q7509809"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-anzele",
       "kind": "event",
       "locator": "Q138606175"
@@ -11498,9 +11636,21 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-bangalore",
+      "kind": "event",
+      "locator": "Q7509848"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-bautzen-1620",
       "kind": "event",
       "locator": "Q136351768"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-beitang",
+      "kind": "event",
+      "locator": "Q112286219"
     },
     {
       "dissent": false,
@@ -12182,6 +12332,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-the-sherpur-cantonment",
+      "kind": "event",
+      "locator": "Q969018"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-tourane",
       "kind": "event",
       "locator": "Q5361929"
@@ -12272,6 +12428,12 @@
     },
     {
       "dissent": false,
+      "id": "sinking-of-the-nossa-senhora-da-conceicao",
+      "kind": "event",
+      "locator": "Q132175198"
+    },
+    {
+      "dissent": false,
       "id": "sino-burmese-war",
       "kind": "event",
       "locator": "Q3237019"
@@ -12305,6 +12467,12 @@
       "id": "sino-vietnamese-war",
       "kind": "event",
       "locator": "Q623171"
+    },
+    {
+      "dissent": false,
+      "id": "sioux-wars",
+      "kind": "event",
+      "locator": "Q3778746"
     },
     {
       "dissent": false,
@@ -12548,6 +12716,12 @@
     },
     {
       "dissent": false,
+      "id": "suakin-expedition",
+      "kind": "event",
+      "locator": "Q7630458"
+    },
+    {
+      "dissent": false,
       "id": "sudbury-fight",
       "kind": "event",
       "locator": "Q4818009"
@@ -12632,6 +12806,12 @@
     },
     {
       "dissent": false,
+      "id": "tecumseh-s-war",
+      "kind": "event",
+      "locator": "Q325314"
+    },
+    {
+      "dissent": false,
       "id": "tehran-conference",
       "kind": "event",
       "locator": "Q150974"
@@ -12653,6 +12833,12 @@
       "id": "tet-offensive",
       "kind": "event",
       "locator": "Q82542"
+    },
+    {
+      "dissent": false,
+      "id": "texas-indian-wars",
+      "kind": "event",
+      "locator": "Q474891"
     },
     {
       "dissent": false,
@@ -13625,6 +13811,12 @@
       "id": "xinhai-revolution",
       "kind": "event",
       "locator": "Q190517"
+    },
+    {
+      "dissent": false,
+      "id": "yakima-war",
+      "kind": "event",
+      "locator": "Q3119015"
     },
     {
       "dissent": false,

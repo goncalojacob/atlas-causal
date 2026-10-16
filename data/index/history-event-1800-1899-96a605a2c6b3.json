@@ -2,12 +2,30 @@
   "from": 1800,
   "kind": "event",
   "records": {
+    "1863-1875-cholera-pandemic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "1874-japanese-expedition-to-taiwan": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "1889-1890-pandemic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -511,6 +529,15 @@
         }
       ]
     },
+    "attack-on-selarong": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "austro-prussian-war": {
       "from": "git",
       "versions": [
@@ -763,6 +790,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-calumpit": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -1401,6 +1437,15 @@
         }
       ]
     },
+    "battle-of-muddy-flat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-mudki": {
       "from": "git",
       "versions": [
@@ -1438,6 +1483,15 @@
       ]
     },
     "battle-of-nezib": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-olongapo": {
       "from": "git",
       "versions": [
         {
@@ -1523,6 +1577,15 @@
         }
       ]
     },
+    "battle-of-rangoon-1852": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-ravine-a-couleuvres": {
       "from": "git",
       "versions": [
@@ -1577,6 +1640,15 @@
         }
       ]
     },
+    "battle-of-sanhe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-schuinshoogte": {
       "from": "git",
       "versions": [
@@ -1623,6 +1695,15 @@
       ]
     },
     "battle-of-sierra-bullones": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-sig": {
       "from": "git",
       "versions": [
         {
@@ -1755,6 +1836,24 @@
       ]
     },
     "battle-of-tetouan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-the-barrier-forts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-the-bogue": {
       "from": "git",
       "versions": [
         {
@@ -2633,6 +2732,15 @@
         }
       ]
     },
+    "expedition-of-the-col-des-beni-aicha": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "fashoda-incident": {
       "from": "git",
       "versions": [
@@ -3469,6 +3577,15 @@
         }
       ]
     },
+    "north-west-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "oriental-crisis-of-1840": {
       "from": "git",
       "versions": [
@@ -3602,6 +3719,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "pescadores-campaign-1895": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -3901,6 +4027,24 @@
       ]
     },
     "second-battle-of-agordat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "second-battle-of-caloocan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "second-battle-of-cawnpore": {
       "from": "git",
       "versions": [
         {
@@ -4301,6 +4445,15 @@
         }
       ]
     },
+    "siege-of-the-sherpur-cantonment": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "siege-of-tourane": {
       "from": "git",
       "versions": [
@@ -4325,6 +4478,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "sioux-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -4510,6 +4672,15 @@
         }
       ]
     },
+    "suakin-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "taiping-rebellion": {
       "from": "git",
       "versions": [
@@ -4522,6 +4693,24 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "tecumseh-s-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "texas-indian-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -5015,6 +5204,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "yakima-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     }
