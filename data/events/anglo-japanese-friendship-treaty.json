@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anglo-japanese-friendship-treaty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1342523",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Anglo-Japanese Friendship Treaty",
+    "pt": "Tratado de amizade anglo-japonês"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1342523"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Japanese Friendship Treaty\", revision 1316160821"
+    }
+  ],
+  "title": "Anglo-Japanese Friendship Treaty",
+  "summary": "The English Wikipedia article \"Anglo-Japanese Friendship Treaty\", at revision 1316160821, opens: \"The Anglo-Japanese Friendship Treaty  was the first treaty between the United Kingdom and Japan, then under the administration of the Tokugawa shogunate. Signed on October 14, 1854, it paralleled the Convention of Kanagawa, a similar agreement between Japan and the United States six months earlier which effectively ended Japan's 220-year-old policy of national seclusion (sakoku). As a result of the treaty, the ports of Nagasaki and Hakodate were opened to British vessels, and Britain was granted most favored nation status with other western powers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1342523, imported by tools/import/wikidata.mjs. The item's own description reads \"first treaty between the UK and Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": 1854,
+    "date": "1854-10-14"
+  },
+  "place": "nagasaki",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

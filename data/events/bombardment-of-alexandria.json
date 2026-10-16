@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "bombardment-of-alexandria",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2670249",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Bombardment of Alexandria",
+    "pt": "Bombardeamento de Alexandria (1882)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2670249"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bombardment of Alexandria\", revision 1370604959"
+    }
+  ],
+  "title": "Bombardment of Alexandria",
+  "summary": "The English Wikipedia article \"Bombardment of Alexandria\", at revision 1370604959, opens: \"The Bombardment of Alexandria in Egypt by the British Mediterranean Fleet took place on 11–13 July 1882. Admiral Beauchamp Seymour was in command of a fleet of fifteen Royal Navy ironclad ships which had previously sailed to the harbor of Alexandria to support the khedive Tewfik Pasha amid Ahmed 'Urabi's nationalist uprising against his administration and its close ties to British and French financiers. He was joined in the show of force by a French flotilla as well. The move provided some security to the khedive, who withdrew his court to the now-protected port, but strengthened 'Urabi's nationalists within the army and throughout the remainder of Egypt.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2670249, imported by tools/import/wikidata.mjs. The item's own description reads \"1882 battle of the Anglo-Egyptian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1882,
+    "end": 1882,
+    "date": "1882-07-11",
+    "endDate": "1882-07-13"
+  },
+  "place": "alexandria",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-egyptian-war"
+}

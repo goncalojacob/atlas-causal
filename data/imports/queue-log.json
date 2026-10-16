@@ -3209,6 +3209,376 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-020",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-shimbra-kure",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-021",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-coatit",
+        "edges": [],
+        "place": "quatit-eritrea"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-022",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-mekelle",
+        "edges": [],
+        "place": "mekelle"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-023",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q111699632: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-africa-024",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "bombardment-of-alexandria",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-025",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-isly",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-026",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q20379760 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q20379760: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-16-asia-027",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "panjdeh-incident",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-028",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "tobacco-protest",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-029",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "first-herat-war",
+        "edges": [],
+        "place": "herat"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-030",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-allahabad",
+        "edges": [],
+        "place": "alahabad-pakistan"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-031",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-amritsar-1846",
+        "edges": [],
+        "place": "amritsar"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-032",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q17035527: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-asia-033",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "convention-of-kanagawa",
+        "edges": [],
+        "place": "yokohama"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-034",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "convention-of-peking",
+        "edges": [],
+        "place": "beijing"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-035",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2003866: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-asia-036",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-adrianople-1829",
+        "edges": [],
+        "place": "edirne"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-037",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-salbai",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-038",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-japanese-friendship-treaty",
+        "edges": [],
+        "place": "nagasaki"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-039",
+      "writer": "A",
+      "fired": "2026-10-16T04:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-amity-and-commerce-united-states-japan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-041",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tamai",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-042",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ginnis",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-043",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "first-and-second-battles-of-el-teb",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-044",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-agordat",
+        "edges": [],
+        "place": "agordat"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-045",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-agordat",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-046",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kassala",
+        "edges": [],
+        "place": "kassala"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-047",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-suakin",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-048",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-aba",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-049",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-talana-hill",
+        "edges": [],
+        "place": "dundee-kwazulu-natal"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-050",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-elandslaagte",
+        "edges": [],
+        "place": "elandslaagte"
+      },
+      "refusals": []
     }
   ]
 }

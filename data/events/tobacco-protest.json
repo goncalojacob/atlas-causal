@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "tobacco-protest",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2302690",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Tobacco Protest"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2302690"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tobacco Protest\", revision 1361415065"
+    }
+  ],
+  "title": "Tobacco Protest",
+  "summary": "The English Wikipedia article \"Tobacco Protest\", at revision 1361415065, opens: \"The Persian Tobacco Protest was a Twelver Shia Muslim revolt in Qajar Iran against an 1890 tobacco concession granted by Naser al-Din Shah Qajar to the British Empire, granting control over growth, sale, and export of tobacco to an Englishman, Major G. F. Talbot. The protest was held by merchants in major cities such as Tehran, Shiraz, Mashhad, and Isfahan in solidarity with the clerical establishment. It climaxed in a widely obeyed December 1891 fatwa against tobacco use issued by Grand Ayatollah Mirza Shirazi.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2302690, imported by tools/import/wikidata.mjs. The item's own description reads \"Muslim revolt in Iran against an 1890 tobacco concession granted to Great Britain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1890,
+    "end": 1892
+  },
+  "place": "tehran",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "great-game"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "convention-of-peking",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q604938",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Convention of Peking",
+    "pt": "Convenção de Pequim"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q604938"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Convention of Peking\", revision 1377776929"
+    }
+  ],
+  "title": "Convention of Peking",
+  "summary": "The English Wikipedia article \"Convention of Peking\", at revision 1377776929, opens: \"The Convention of Peking or First Convention of Peking is an agreement comprising three distinct unequal treaties concluded between the Qing dynasty of China and Great Britain, France, and the Russian Empire in 1860.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q604938, imported by tools/import/wikidata.mjs. The item's own description reads \"Set of three treaties involving territorial changes\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1860,
+    "end": 1860,
+    "date": "1860-10-18"
+  },
+  "place": "beijing",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
