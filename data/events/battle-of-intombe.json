@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-intombe",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q640194",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Intombe"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q640194"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Intombe\", revision 1370443760"
+    }
+  ],
+  "title": "Battle of Intombe",
+  "summary": "The English Wikipedia article \"Battle of Intombe\", at revision 1370443760, opens: \"The Battle of Intombe was an action fought on 12 March 1879, between Zulu troops loyal to Mbilini waMswati and British soldiers and African civilian conductors, drivers and voorloopers (scouts) defending a convoy of wagons on the road from Derby to Lüneburg. The convoy straggled badly along the road due to the rains and bogged on both sides of the Intombe river, which had risen and was in spate due to the rains. Most of the wagons were laagered, somewhat haphazardly, close to the river on the Derby side with a small party and two wagons on the Lüneburg side.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q640194, imported by tools/import/wikidata.mjs. The item's own description reads \"1879 small action of the Anglo-Zulu War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879,
+    "date": "1879-03-12"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-zulu-war"
+}
