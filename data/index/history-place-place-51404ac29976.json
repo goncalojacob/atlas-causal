@@ -161,6 +161,15 @@
         }
       ]
     },
+    "agordat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "ajdabiya": {
       "from": "git",
       "versions": [
@@ -3048,6 +3057,15 @@
         }
       ]
     },
+    "dundee-kwazulu-natal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "dunkirk": {
       "from": "git",
       "versions": [
@@ -3210,6 +3228,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "elandslaagte": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -5342,6 +5369,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "kassala": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

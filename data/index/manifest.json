@@ -43,7 +43,7 @@
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-886d3f883047.json",
+      "file": "index/attributes-1800-1899-8c6c4e2a2b12.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
@@ -67,7 +67,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-3876432f601b.json",
+      "file": "index/attributes-place-b6c9b7bf572e.json",
       "from": null,
       "key": "place",
       "to": null
@@ -956,7 +956,7 @@
       "id": "treaty"
     },
     {
-      "count": 1200,
+      "count": 1210,
       "id": "war"
     }
   ],
@@ -1025,10 +1025,10 @@
   "counts": {
     "actors": 2699,
     "edges": 1283,
-    "events": 2112,
+    "events": 2122,
     "narratives": 2,
     "offices": 11,
-    "places": 993,
+    "places": 997,
     "presences": 6691,
     "regions": 5,
     "relations": 138,
@@ -1073,14 +1073,14 @@
     }
   ],
   "files": {
-    "citers": "index/citers-0049f0de230b",
-    "core": "index/core-7ae29a1c8b4c.json",
-    "grounds": "index/grounds-acd1a60b7b91.json",
+    "citers": "index/citers-44c61bf289a1",
+    "core": "index/core-996843263161.json",
+    "grounds": "index/grounds-b52b8367ad54.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-052a2513582c.json",
-    "search": "index/search-dda2f9a38e22.json",
-    "sources": "index/sources-4d035af58ddc.json",
-    "territories": "index/territories-889573ac215d.json"
+    "review": "index/review-2ff703a9eb6e.json",
+    "search": "index/search-ade0d568eea4.json",
+    "sources": "index/sources-727869290e2c.json",
+    "territories": "index/territories-d8e76be60966.json"
   },
   "historyShards": [
     {
@@ -1112,7 +1112,7 @@
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-4e21520551b5.json",
+      "file": "index/history-event-1800-1899-2c6bcaf73c17.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
@@ -1245,7 +1245,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-fa9ad0258f22.json",
+      "file": "index/history-place-place-51404ac29976.json",
       "from": null,
       "key": "place",
       "kind": "place",
