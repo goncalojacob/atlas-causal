@@ -2544,7 +2544,10 @@
         "Q7263697",
         "Q448015",
         "Q92056662",
-        "Q96359661"
+        "Q96359661",
+        "Q2646216",
+        "Q668811",
+        "Q4940602"
       ]
     }
   },
@@ -2964,6 +2967,18 @@
     "Q96359661": {
       "on": "2026-10-16",
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q2646216": {
+      "on": "2026-10-16",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q668811": {
+      "on": "2026-10-16",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q4940602": {
+      "on": "2026-10-16",
+      "why": "none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
     }
   }
 }
