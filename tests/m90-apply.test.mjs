@@ -677,7 +677,11 @@ test('--check holds a queue to its schema and to the rules a schema cannot make'
   const bed = await scratch();
   await writeFile(bed.queue, `${JSON.stringify({ ...emptyQueue(), items: [item()] }, null, 2)}\n`, 'utf8');
   assert.equal(await main(['--check', bed.queue]), EXIT.ok);
+  // Since 16 October either writer takes any lane, so writer B on this
+  // item's lane passes. A lane the atlas does not write still stops.
   await writeFile(bed.queue, `${JSON.stringify({ ...emptyQueue(), items: [item({ writer: 'B' })] }, null, 2)}\n`, 'utf8');
+  assert.equal(await main(['--check', bed.queue]), EXIT.ok);
+  await writeFile(bed.queue, `${JSON.stringify({ ...emptyQueue(), items: [item({ lane: 'oceania' })] }, null, 2)}\n`, 'utf8');
   assert.equal(await main(['--check', bed.queue]), EXIT.hardStop);
   await writeFile(bed.queue, `${JSON.stringify({ ...emptyQueue(), items: [item({ why: 'short' })] }, null, 2)}\n`, 'utf8');
   assert.equal(await main(['--check', bed.queue]), EXIT.hardStop);
