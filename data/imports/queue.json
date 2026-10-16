@@ -4,526 +4,1556 @@
   "generated": "2026-10-16",
   "items": [
     {
-      "id": "2026-10-16-africa-051",
-      "planned": "2026-10-16T03:25:59Z",
+      "id": "2026-10-16-africa-070",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q845845",
-      "title": "Battle of Kraaipan",
+      "qid": "Q2063236",
+      "title": "Battle of Majuba Hill",
       "parents": [
-        "second-boer-war"
+        "first-boer-war"
       ],
       "edges": [],
-      "rank": "child-of:second-boer-war",
-      "why": "Africa trails every other lane. Battle of Kraaipan is a P361 child of the held Second Boer War and its own span lies inside it."
+      "rank": "child-of:first-boer-war",
+      "why": "Africa trails every other lane. Battle of Majuba Hill is a P361 child of the held First Boer War and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-052",
-      "planned": "2026-10-16T03:25:59Z",
+      "id": "2026-10-16-africa-071",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q949635",
-      "title": "Battle of Kambula",
+      "qid": "Q356920",
+      "title": "War of the Golden Stool",
       "parents": [
-        "anglo-zulu-war"
+        "anglo-ashanti-wars"
       ],
       "edges": [],
-      "rank": "child-of:anglo-zulu-war",
-      "why": "Africa trails every other lane. Battle of Kambula is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
+      "rank": "child-of:anglo-ashanti-wars",
+      "why": "Africa trails every other lane. War of the Golden Stool is a P361 child of the held Anglo-Ashanti wars and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-053",
-      "planned": "2026-10-16T03:25:59Z",
+      "id": "2026-10-16-africa-072",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q1670862",
-      "title": "Battle of Hlobane",
+      "qid": "Q4872623",
+      "title": "Battle of T\u00e9touan",
       "parents": [
-        "anglo-zulu-war"
+        "hispano-moroccan-war-1859-1860"
       ],
       "edges": [],
-      "rank": "child-of:anglo-zulu-war",
-      "why": "Africa trails every other lane. Battle of Hlobane is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
+      "rank": "child-of:hispano-moroccan-war-1859-1860",
+      "why": "Africa trails every other lane. Battle of T\u00e9touan is a P361 child of the held Hispano-Moroccan War (1859\u20131860) and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-054",
-      "planned": "2026-10-16T03:25:59Z",
+      "id": "2026-10-16-africa-073",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q2888632",
-      "title": "Battle of Gingindlovu",
+      "qid": "Q2547952",
+      "title": "Battle of Bronkhorstspruit",
       "parents": [
-        "anglo-zulu-war"
+        "first-boer-war"
       ],
       "edges": [],
-      "rank": "child-of:anglo-zulu-war",
-      "why": "Africa trails every other lane. Battle of Gingindlovu is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
+      "rank": "child-of:first-boer-war",
+      "why": "Africa trails every other lane. Battle of Bronkhorstspruit is a P361 child of the held First Boer War and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-055",
-      "planned": "2026-10-16T03:25:59Z",
+      "id": "2026-10-16-africa-074",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q3485825",
-      "title": "Siege of Eshowe",
+      "qid": "Q741129",
+      "title": "Battle of Laing's Nek",
       "parents": [
-        "anglo-zulu-war"
+        "first-boer-war"
       ],
       "edges": [],
-      "rank": "child-of:anglo-zulu-war",
-      "why": "Africa trails every other lane. Siege of Eshowe is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
+      "rank": "child-of:first-boer-war",
+      "why": "Africa trails every other lane. Battle of Laing's Nek is a P361 child of the held First Boer War and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-056",
-      "planned": "2026-10-16T03:25:59Z",
+      "id": "2026-10-16-africa-075",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q2889955",
-      "title": "Battle of Senafé",
+      "qid": "Q1286274",
+      "title": "Battle of Schuinshoogte",
       "parents": [
-        "first-italo-ethiopian-war"
+        "first-boer-war"
       ],
       "edges": [],
-      "rank": "child-of:first-italo-ethiopian-war",
-      "why": "Africa trails every other lane. Battle of Senafé is a P361 child of the held First Italo-Ethiopian War and its own span lies inside it."
+      "rank": "child-of:first-boer-war",
+      "why": "Africa trails every other lane. Battle of Schuinshoogte is a P361 child of the held First Boer War and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-057",
-      "planned": "2026-10-16T03:25:59Z",
+      "id": "2026-10-16-africa-076",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q783183",
-      "title": "Action of 1 August 1801",
+      "qid": "Q2276912",
+      "title": "Shangani Patrol",
       "parents": [
-        "first-barbary-war"
+        "first-matabele-war"
       ],
       "edges": [],
-      "rank": "child-of:first-barbary-war",
-      "why": "Africa trails every other lane. Action of 1 August 1801 is a P361 child of the held First Barbary War and its own span lies inside it."
+      "rank": "child-of:first-matabele-war",
+      "why": "Africa trails every other lane. Shangani Patrol is a P361 child of the held First Matabele War and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-058",
-      "planned": "2026-10-16T03:25:59Z",
+      "id": "2026-10-16-africa-077",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q2889297",
-      "title": "Battle of Mazagran",
+      "qid": "Q2890359",
+      "title": "Battle of Wad Ras",
       "parents": [
-        "french-conquest-of-algeria"
+        "hispano-moroccan-war-1859-1860"
       ],
       "edges": [],
-      "rank": "child-of:french-conquest-of-algeria",
-      "why": "Africa trails every other lane. Battle of Mazagran is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+      "rank": "child-of:hispano-moroccan-war-1859-1860",
+      "why": "Africa trails every other lane. Battle of Wad Ras is a P361 child of the held Hispano-Moroccan War (1859\u20131860) and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-059",
-      "planned": "2026-10-16T03:25:59Z",
+      "id": "2026-10-16-africa-078",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q2890049",
-      "title": "Battle of Staouéli",
+      "qid": "Q947667",
+      "title": "Battle of Magdala",
       "parents": [
-        "french-conquest-of-algeria"
+        "british-expedition-to-abyssinia"
       ],
       "edges": [],
-      "rank": "child-of:french-conquest-of-algeria",
-      "why": "Africa trails every other lane. Battle of Staouéli is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+      "rank": "child-of:british-expedition-to-abyssinia",
+      "why": "Africa trails every other lane. Battle of Magdala is a P361 child of the held British expedition to Abyssinia and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-060",
-      "planned": "2026-10-16T03:25:59Z",
+      "id": "2026-10-16-africa-079",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q3403872",
-      "title": "Battle of the Smala",
+      "qid": "Q2888254",
+      "title": "Battle of Castillejos",
       "parents": [
-        "french-conquest-of-algeria"
+        "hispano-moroccan-war-1859-1860"
       ],
       "edges": [],
-      "rank": "child-of:french-conquest-of-algeria",
-      "why": "Africa trails every other lane. Battle of the Smala is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+      "rank": "child-of:hispano-moroccan-war-1859-1860",
+      "why": "Africa trails every other lane. Battle of Castillejos is a P361 child of the held Hispano-Moroccan War (1859\u20131860) and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-061",
-      "planned": "2026-10-16T03:25:59Z",
+      "id": "2026-10-16-africa-080",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q621362",
-      "title": "Battle of Macta",
+      "qid": "Q4871366",
+      "title": "Battle of Kafr El Dawwar",
       "parents": [
-        "french-conquest-of-algeria"
+        "anglo-egyptian-war"
       ],
       "edges": [],
-      "rank": "child-of:french-conquest-of-algeria",
-      "why": "Africa trails every other lane. Battle of Macta is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+      "rank": "child-of:anglo-egyptian-war",
+      "why": "Africa trails every other lane. Battle of Kafr El Dawwar is a P361 child of the held Anglo-Egyptian War and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-062",
-      "planned": "2026-10-16T03:25:59Z",
+      "id": "2026-10-16-africa-081",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q3485860",
-      "title": "Battle of Constantine",
+      "qid": "Q4940515",
+      "title": "Bombardment of Tangier",
       "parents": [
-        "french-conquest-of-algeria"
+        "franco-moroccan-war"
       ],
       "edges": [],
-      "rank": "child-of:french-conquest-of-algeria",
-      "why": "Africa trails every other lane. Battle of Constantine is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+      "rank": "child-of:franco-moroccan-war",
+      "why": "Africa trails every other lane. Bombardment of Tangier is a P361 child of the held Franco-Moroccan War and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-063",
-      "planned": "2026-10-16T03:25:59Z",
+      "id": "2026-10-16-africa-082",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q2890573",
-      "title": "Battle of Sikkak",
+      "qid": "Q2887936",
+      "title": "Battle of Elandsfontein",
       "parents": [
-        "french-conquest-of-algeria"
+        "first-boer-war"
       ],
       "edges": [],
-      "rank": "child-of:french-conquest-of-algeria",
-      "why": "Africa trails every other lane. Battle of Sikkak is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+      "rank": "child-of:first-boer-war",
+      "why": "Africa trails every other lane. Battle of Elandsfontein is a P361 child of the held First Boer War and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-064",
-      "planned": "2026-10-16T03:25:59Z",
+      "id": "2026-10-16-africa-083",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q2887867",
-      "title": "Battle of Antukyah",
+      "qid": "Q4940505",
+      "title": "Bombardment of Mogador",
       "parents": [
-        "ethiopian-adal-war"
+        "franco-moroccan-war"
       ],
       "edges": [],
-      "rank": "child-of:ethiopian-adal-war",
-      "why": "Africa trails every other lane. Battle of Antukyah is a P361 child of the held Ethiopian-Adal War and its own span lies inside it."
+      "rank": "child-of:franco-moroccan-war",
+      "why": "Africa trails every other lane. Bombardment of Mogador is a P361 child of the held Franco-Moroccan War and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-europe-001",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "europe",
+      "id": "2026-10-16-africa-084",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
       "writer": "A",
-      "qid": "Q478301",
-      "title": "Hussite Wars",
-      "parents": [],
-      "edges": [],
-      "why": "Vital articles level 4 names this religious war with no record yet. It runs from 1419 to 1434, inside the window.",
-      "rank": "vital-4"
-    },
-    {
-      "id": "2026-10-16-europe-002",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q127751",
-      "title": "Wars of the Roses",
-      "parents": [],
-      "edges": [],
-      "why": "Vital articles level 4 names this English civil war with no record yet. It runs from 1455 to 1487, inside the window.",
-      "rank": "vital-4"
-    },
-    {
-      "id": "2026-10-16-europe-003",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q133132",
-      "title": "Paris Commune",
-      "parents": [],
-      "edges": [],
-      "why": "Vital articles level 4 names this Paris uprising of 1871 with no record yet. Its dates fall after the Franco-Prussian War the atlas already holds ends (28 January 1871), so no parent is filed.",
-      "rank": "vital-4"
-    },
-    {
-      "id": "2026-10-16-americas-001",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q12583",
-      "title": "Spanish–American War",
-      "parents": [],
-      "edges": [],
-      "why": "Vital articles level 4 names this 1898 war between Spain and the United States with no record yet, inside the window.",
-      "rank": "vital-4"
-    },
-    {
-      "id": "2026-10-16-asia-040",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q160077",
-      "title": "Fall of Constantinople",
-      "parents": [],
-      "edges": [],
-      "why": "Vital articles level 4 names the 1453 capture of Constantinople with no record yet. Its point sits on the Asian side of the Bosphorus by the atlas's own lane derivation.",
-      "rank": "vital-4"
-    },
-    {
-      "id": "2026-10-16-asia-041",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2584439",
-      "title": "Egyptian–Ottoman War (1831–1833)",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this war with no record yet. It was fought in Ottoman Syria, which the atlas's lane derivation places in asia rather than africa."
-    },
-    {
-      "id": "2026-10-16-asia-042",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2600326",
-      "title": "Egyptian–Ottoman War (1839–1841)",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this war with no record yet. It was fought in the Levant, which the atlas's lane derivation places in asia rather than africa."
-    },
-    {
-      "id": "2026-10-16-asia-043",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q277450",
-      "title": "Aceh War",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this Dutch war in Sumatra with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-asia-044",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q195378",
-      "title": "Anglo-Nepalese War",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this war between Nepal and the East India Company with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-asia-045",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q918132",
-      "title": "Invasion of Java (1811)",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this British amphibious operation with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-asia-046",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2045508",
-      "title": "Java War",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this 1825 to 1830 Dutch colonial war with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-asia-047",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q965649",
-      "title": "Nian Rebellion",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this 1851 to 1868 rebellion in northern China with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-asia-048",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1230569",
-      "title": "Panthay Rebellion",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this 1856 to 1873 revolt against the Qing dynasty in Yunnan with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-asia-049",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q6140819",
-      "title": "Qing reconquest of Xinjiang",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this 1876 to 1878 campaign with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-asia-050",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q714820",
-      "title": "Satsuma Rebellion",
+      "qid": "Q5348404",
+      "title": "Egyptian Expedition (1882)",
       "parents": [
-        "meiji-restoration"
+        "anglo-egyptian-war"
       ],
       "edges": [],
-      "why": "List of wars 1800-1899 names this 1877 revolt of Japanese samurai with no record yet. Its single year falls inside the Meiji Restoration record the atlas already holds (1868 to 1889), so that is filed as its parent."
+      "rank": "child-of:anglo-egyptian-war",
+      "why": "Africa trails every other lane. Egyptian Expedition (1882) is a P361 child of the held Anglo-Egyptian War and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-asia-051",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q233500",
-      "title": "Second Anglo-Burmese War",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this 1852 war between Britain and Burma with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-asia-052",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q233642",
-      "title": "Second Anglo-Maratha War",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this 1803 to 1805 war with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-asia-053",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q617210",
-      "title": "Third Anglo-Maratha War",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this 1817 to 1818 war with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-asia-054",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1926145",
-      "title": "Vellore Mutiny",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this 1806 revolt against the East India Company with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-asia-055",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2935371",
-      "title": "Cochinchina campaign",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this 1858 to 1862 French campaign in Vietnam with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-asia-056",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q7524776",
-      "title": "Dogra–Tibetan war",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this 1841 to 1842 war with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-asia-057",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q889879",
-      "title": "Dungan Revolt (1862–1877)",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this revolt in Xinjiang and northwest China with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-asia-058",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q27963620",
-      "title": "Nepal–Sikh war",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this 1809 conflict with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-asia-059",
-      "planned": "2026-10-16T06:36Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q286655",
-      "title": "Tonkin campaign",
-      "parents": [],
-      "edges": [],
-      "why": "List of wars 1800-1899 names this 1883 to 1886 French campaign in Vietnam with no record yet; asia trails europe and americas."
-    },
-    {
-      "id": "2026-10-16-africa-065",
-      "planned": "2026-10-16T06:36Z",
+      "id": "2026-10-16-africa-085",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q16707899",
-      "title": "Jihad of Usman dan Fodio",
+      "qid": "Q722047",
+      "title": "Ashanti\u2013Fante War",
       "parents": [],
       "edges": [],
-      "why": "List of wars 1800-1899 names this 1804 to 1808 jihad that founded the Sokoto Caliphate with no record yet; africa trails europe and americas."
+      "rank": "list",
+      "why": "Africa trails every other lane. Ashanti\u2013Fante War is a Wikidata P361 child of a held umbrella, but its span starts before that record's, so it files with no parent."
     },
     {
-      "id": "2026-10-16-africa-066",
-      "planned": "2026-10-16T06:36Z",
+      "id": "2026-10-16-africa-086",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q1392699",
-      "title": "Battle of Blood River",
-      "parents": [],
+      "qid": "Q11908785",
+      "title": "Battle of Sierra Bullones",
+      "parents": [
+        "hispano-moroccan-war-1859-1860"
+      ],
       "edges": [],
-      "why": "List of wars 1800-1899 names this 1838 battle of the Great Trek with no record yet; africa trails europe and americas."
+      "rank": "child-of:hispano-moroccan-war-1859-1860",
+      "why": "Africa trails every other lane. Battle of Sierra Bullones is a P361 child of the held Hispano-Moroccan War (1859\u20131860) and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-067",
-      "planned": "2026-10-16T06:36Z",
+      "id": "2026-10-16-africa-087",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q5010928",
-      "title": "Slachter's Nek Rebellion",
-      "parents": [],
+      "qid": "Q30742449",
+      "title": "Battle of Chelif",
+      "parents": [
+        "maghrebi-war-1699-1702"
+      ],
       "edges": [],
-      "why": "List of wars 1800-1899 names this 1815 Boer uprising east of Cape Colony with no record yet; africa trails europe and americas."
+      "rank": "child-of:maghrebi-war-1699-1702",
+      "why": "Africa trails every other lane. Battle of Chelif is a P361 child of the held Maghrebi war (1699\u20131702) and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-068",
-      "planned": "2026-10-16T06:36Z",
+      "id": "2026-10-16-africa-088",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q582594",
-      "title": "Xhosa Wars",
-      "parents": [],
+      "qid": "Q111207497",
+      "title": "Battle of Melilla (1860)",
+      "parents": [
+        "hispano-moroccan-war-1859-1860"
+      ],
       "edges": [],
-      "why": "List of wars 1800-1899 names this series of frontier wars, 1779 to 1879, with no record yet; africa trails europe and americas."
+      "rank": "child-of:hispano-moroccan-war-1859-1860",
+      "why": "Africa trails every other lane. Battle of Melilla (1860) is a P361 child of the held Hispano-Moroccan War (1859\u20131860) and its own span lies inside it."
     },
     {
-      "id": "2026-10-16-africa-069",
-      "planned": "2026-10-16T06:36Z",
+      "id": "2026-10-16-africa-089",
+      "planned": "2026-10-16T17:46:41Z",
       "lane": "africa",
       "writer": "A",
-      "qid": "Q42417460",
-      "title": "Karonga War",
-      "parents": [],
+      "qid": "Q2888668",
+      "title": "Battle of Gqokli Hill",
+      "parents": [
+        "ndwandwe-zulu-war"
+      ],
       "edges": [],
-      "why": "List of wars 1800-1899 names this 1887 to 1889 conflict in east-central Africa with no record yet; africa trails europe and americas."
+      "rank": "child-of:ndwandwe-zulu-war",
+      "why": "Africa trails every other lane. Battle of Gqokli Hill is a P361 child of the held Ndwandwe\u2013Zulu War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-090",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2890572",
+      "title": "Battle of the Shangani",
+      "parents": [
+        "first-matabele-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-matabele-war",
+      "why": "Africa trails every other lane. Battle of the Shangani is a P361 child of the held First Matabele War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-091",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q4872567",
+      "title": "Battle of Togbao",
+      "parents": [
+        "rabih-war"
+      ],
+      "edges": [],
+      "rank": "child-of:rabih-war",
+      "why": "Africa trails every other lane. Battle of Togbao is a P361 child of the held Rabih War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-092",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q15693966",
+      "title": "Siege of Rustenburg",
+      "parents": [
+        "first-boer-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-boer-war",
+      "why": "Africa trails every other lane. Siege of Rustenburg is a P361 child of the held First Boer War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-093",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q20612501",
+      "title": "Eighth Xhosa War",
+      "parents": [
+        "xhosa-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:xhosa-wars",
+      "why": "Africa trails every other lane. Eighth Xhosa War is a P361 child of the held Xhosa Wars and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-094",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q30715543",
+      "title": "Battle of Bembezi",
+      "parents": [
+        "first-matabele-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-matabele-war",
+      "why": "Africa trails every other lane. Battle of Bembezi is a P361 child of the held First Matabele War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-095",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q104830263",
+      "title": "Battle of the Col des Beni A\u00efcha",
+      "parents": [
+        "mokrani-revolt"
+      ],
+      "edges": [],
+      "rank": "child-of:mokrani-revolt",
+      "why": "Africa trails every other lane. Battle of the Col des Beni A\u00efcha is a P361 child of the held Mokrani Revolt and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-096",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q106645667",
+      "title": "Battle of Atchoukpa",
+      "parents": [
+        "first-franco-dahomean-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-franco-dahomean-war",
+      "why": "Africa trails every other lane. Battle of Atchoukpa is a P361 child of the held First Franco-Dahomean War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-097",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q109259621",
+      "title": "Mascara campaign (1699\u20131701)",
+      "parents": [
+        "maghrebi-war-1699-1702"
+      ],
+      "edges": [],
+      "rank": "child-of:maghrebi-war-1699-1702",
+      "why": "Africa trails every other lane. Mascara campaign (1699\u20131701) is a P361 child of the held Maghrebi war (1699\u20131702) and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-098",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q4871948",
+      "title": "Battle of Ordashu",
+      "parents": [
+        "anglo-ashanti-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-ashanti-wars",
+      "why": "Africa trails every other lane. Battle of Ordashu is a P361 child of the held Anglo-Ashanti wars and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-099",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q27627688",
+      "title": "Second Battle of Accra",
+      "parents": [
+        "anglo-ashanti-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-ashanti-wars",
+      "why": "Africa trails every other lane. Second Battle of Accra is a P361 child of the held Anglo-Ashanti wars and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-100",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q131455853",
+      "title": "First Mandingo War",
+      "parents": [
+        "mandingo-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:mandingo-wars",
+      "why": "Africa trails every other lane. First Mandingo War is a P361 child of the held Mandingo Wars and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-101",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q139375315",
+      "title": "Second Mandingo War",
+      "parents": [
+        "mandingo-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:mandingo-wars",
+      "why": "Africa trails every other lane. Second Mandingo War is a P361 child of the held Mandingo Wars and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-102",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q139406732",
+      "title": "Third Mandingo War",
+      "parents": [
+        "mandingo-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:mandingo-wars",
+      "why": "Africa trails every other lane. Third Mandingo War is a P361 child of the held Mandingo Wars and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-103",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q16211729",
+      "title": "Siege of Marabastad",
+      "parents": [
+        "first-boer-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-boer-war",
+      "why": "Africa trails every other lane. Siege of Marabastad is a P361 child of the held First Boer War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-104",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q16900168",
+      "title": "Siege of Lydenburg",
+      "parents": [
+        "first-boer-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-boer-war",
+      "why": "Africa trails every other lane. Siege of Lydenburg is a P361 child of the held First Boer War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-105",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2421665",
+      "title": "Battle of Rooihuiskraal",
+      "parents": [
+        "first-boer-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-boer-war",
+      "why": "Africa trails every other lane. Battle of Rooihuiskraal is a P361 child of the held First Boer War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-106",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q137441986",
+      "title": "Battle of Wadi Bou Sefiha",
+      "parents": [
+        "hispano-moroccan-war-1859-1860"
+      ],
+      "edges": [],
+      "rank": "child-of:hispano-moroccan-war-1859-1860",
+      "why": "Africa trails every other lane. Battle of Wadi Bou Sefiha is a P361 child of the held Hispano-Moroccan War (1859\u20131860) and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-060",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q238440",
+      "title": "Battle of Navarino",
+      "parents": [
+        "greek-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:greek-war-of-independence",
+      "why": "Asia trails every other lane. Battle of Navarino is a P361 child of the held Greek War of Independence and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-061",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1193959",
+      "title": "Battle of Toba\u2013Fushimi",
+      "parents": [
+        "boshin-war"
+      ],
+      "edges": [],
+      "rank": "child-of:boshin-war",
+      "why": "Asia trails every other lane. Battle of Toba\u2013Fushimi is a P361 child of the held Boshin War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-062",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q548625",
+      "title": "Battle of Maiwand",
+      "parents": [
+        "second-anglo-afghan-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-anglo-afghan-war",
+      "why": "Asia trails every other lane. Battle of Maiwand is a P361 child of the held Second Anglo-Afghan War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-063",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q588648",
+      "title": "Battle of Canton (1857)",
+      "parents": [
+        "second-opium-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-opium-war",
+      "why": "Asia trails every other lane. Battle of Canton (1857) is a P361 child of the held Second Opium War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-064",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q715562",
+      "title": "Battle of Ueno",
+      "parents": [
+        "boshin-war"
+      ],
+      "edges": [],
+      "rank": "child-of:boshin-war",
+      "why": "Asia trails every other lane. Battle of Ueno is a P361 child of the held Boshin War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-065",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2570192",
+      "title": "Battle of Alamana",
+      "parents": [
+        "greek-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:greek-war-of-independence",
+      "why": "Asia trails every other lane. Battle of Alamana is a P361 child of the held Greek War of Independence and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-066",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2661754",
+      "title": "Wallachian uprising of 1821",
+      "parents": [
+        "greek-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:greek-war-of-independence",
+      "why": "Asia trails every other lane. Wallachian uprising of 1821 is a P361 child of the held Greek War of Independence and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-067",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2672355",
+      "title": "Destruction of Psara",
+      "parents": [
+        "greek-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "child-of:greek-war-of-independence",
+      "why": "Asia trails every other lane. Destruction of Psara is a P361 child of the held Greek War of Independence and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-068",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q716562",
+      "title": "Battle of Hakodate",
+      "parents": [
+        "boshin-war"
+      ],
+      "edges": [],
+      "rank": "child-of:boshin-war",
+      "why": "Asia trails every other lane. Battle of Hakodate is a P361 child of the held Boshin War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-069",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1343239",
+      "title": "Battle of Awa",
+      "parents": [
+        "boshin-war"
+      ],
+      "edges": [],
+      "rank": "child-of:boshin-war",
+      "why": "Asia trails every other lane. Battle of Awa is a P361 child of the held Boshin War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-070",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q815204",
+      "title": "Siege of Seringapatam (1799)",
+      "parents": [
+        "fourth-anglo-mysore-war"
+      ],
+      "edges": [],
+      "rank": "child-of:fourth-anglo-mysore-war",
+      "why": "Asia trails every other lane. Siege of Seringapatam (1799) is a P361 child of the held Fourth Anglo-Mysore War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-071",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q701890",
+      "title": "Battle of Pungdo",
+      "parents": [
+        "first-sino-japanese-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-sino-japanese-war",
+      "why": "Asia trails every other lane. Battle of Pungdo is a P361 child of the held First Sino-Japanese War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-072",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1208996",
+      "title": "Battle of L\u00fcshunkou",
+      "parents": [
+        "first-sino-japanese-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-sino-japanese-war",
+      "why": "Asia trails every other lane. Battle of L\u00fcshunkou is a P361 child of the held First Sino-Japanese War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-073",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q778699",
+      "title": "Siege of Baler",
+      "parents": [
+        "philippine-revolution"
+      ],
+      "edges": [],
+      "rank": "child-of:philippine-revolution",
+      "why": "Asia trails every other lane. Siege of Baler is a P361 child of the held Philippine Revolution and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-074",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1540820",
+      "title": "Battle of Aliwal",
+      "parents": [
+        "first-anglo-sikh-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-anglo-sikh-war",
+      "why": "Asia trails every other lane. Battle of Aliwal is a P361 child of the held First Anglo-Sikh War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-075",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2640981",
+      "title": "Battle of Nezib",
+      "parents": [
+        "egyptian-ottoman-war-1839-1841"
+      ],
+      "edges": [],
+      "rank": "child-of:egyptian-ottoman-war-1839-1841",
+      "why": "Asia trails every other lane. Battle of Nezib is a P361 child of the held Egyptian\u2013Ottoman War (1839\u20131841) and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-076",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2981297",
+      "title": "Battle of Konya",
+      "parents": [
+        "egyptian-ottoman-war-1831-1833"
+      ],
+      "edges": [],
+      "rank": "child-of:egyptian-ottoman-war-1831-1833",
+      "why": "Asia trails every other lane. Battle of Konya is a P361 child of the held Egyptian\u2013Ottoman War (1831\u20131833) and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-077",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q705072",
+      "title": "Battle of Seonghwan",
+      "parents": [
+        "first-sino-japanese-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-sino-japanese-war",
+      "why": "Asia trails every other lane. Battle of Seonghwan is a P361 child of the held First Sino-Japanese War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-078",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1185335",
+      "title": "Battle of Weihaiwei",
+      "parents": [
+        "first-sino-japanese-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-sino-japanese-war",
+      "why": "Asia trails every other lane. Battle of Weihaiwei is a P361 child of the held First Sino-Japanese War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-079",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1512810",
+      "title": "Jintian Uprising",
+      "parents": [
+        "taiping-rebellion"
+      ],
+      "edges": [],
+      "rank": "child-of:taiping-rebellion",
+      "why": "Asia trails every other lane. Jintian Uprising is a P361 child of the held Taiping Rebellion and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-080",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q910528",
+      "title": "Battle of Mudki",
+      "parents": [
+        "first-anglo-sikh-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-anglo-sikh-war",
+      "why": "Asia trails every other lane. Battle of Mudki is a P361 child of the held First Anglo-Sikh War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-081",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1573825",
+      "title": "Battle of Sobraon",
+      "parents": [
+        "first-anglo-sikh-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-anglo-sikh-war",
+      "why": "Asia trails every other lane. Battle of Sobraon is a P361 child of the held First Anglo-Sikh War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-082",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2663279",
+      "title": "Battle of Palikao",
+      "parents": [
+        "second-opium-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-opium-war",
+      "why": "Asia trails every other lane. Battle of Palikao is a P361 child of the held Second Opium War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-083",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q3630511",
+      "title": "Battle of Koregaon",
+      "parents": [
+        "third-anglo-maratha-war"
+      ],
+      "edges": [],
+      "rank": "child-of:third-anglo-maratha-war",
+      "why": "Asia trails every other lane. Battle of Koregaon is a P361 child of the held Third Anglo-Maratha War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-084",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2562509",
+      "title": "Battle of Fuzhou",
+      "parents": [
+        "sino-french-war"
+      ],
+      "edges": [],
+      "rank": "child-of:sino-french-war",
+      "why": "Asia trails every other lane. Battle of Fuzhou is a P361 child of the held Sino-French War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-085",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q815165",
+      "title": "Siege of Lucknow",
+      "parents": [
+        "indian-rebellion-of-1857"
+      ],
+      "edges": [],
+      "rank": "child-of:indian-rebellion-of-1857",
+      "why": "Asia trails every other lane. Siege of Lucknow is a P361 child of the held Indian Rebellion of 1857 and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-086",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2343263",
+      "title": "Siege of Delhi (1857)",
+      "parents": [
+        "indian-rebellion-of-1857"
+      ],
+      "edges": [],
+      "rank": "child-of:indian-rebellion-of-1857",
+      "why": "Asia trails every other lane. Siege of Delhi (1857) is a P361 child of the held Indian Rebellion of 1857 and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-087",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q700883",
+      "title": "Treaty of Tianjin (1885)",
+      "parents": [
+        "sino-french-war"
+      ],
+      "edges": [],
+      "rank": "child-of:sino-french-war",
+      "why": "Asia trails every other lane. Treaty of Tianjin (1885) is a P361 child of the held Sino-French War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-088",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q627881",
+      "title": "Siege of Cawnpore",
+      "parents": [
+        "indian-rebellion-of-1857"
+      ],
+      "edges": [],
+      "rank": "child-of:indian-rebellion-of-1857",
+      "why": "Asia trails every other lane. Siege of Cawnpore is a P361 child of the held Indian Rebellion of 1857 and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-089",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4087313",
+      "title": "Battle of Peking (1900)",
+      "parents": [
+        "boxer-rebellion"
+      ],
+      "edges": [],
+      "rank": "child-of:boxer-rebellion",
+      "why": "Asia trails every other lane. Battle of Peking (1900) is a P361 child of the held Boxer Rebellion and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-090",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4337436",
+      "title": "Siege of the International Legations",
+      "parents": [
+        "boxer-rebellion"
+      ],
+      "edges": [],
+      "rank": "child-of:boxer-rebellion",
+      "why": "Asia trails every other lane. Siege of the International Legations is a P361 child of the held Boxer Rebellion and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-091",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q746860",
+      "title": "Battle of Manila (1899)",
+      "parents": [
+        "philippine-american-war"
+      ],
+      "edges": [],
+      "rank": "child-of:philippine-american-war",
+      "why": "Asia trails every other lane. Battle of Manila (1899) is a P361 child of the held Philippine\u2013American War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-092",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q3490568",
+      "title": "Battle of Tirad Pass",
+      "parents": [
+        "philippine-american-war"
+      ],
+      "edges": [],
+      "rank": "child-of:philippine-american-war",
+      "why": "Asia trails every other lane. Battle of Tirad Pass is a P361 child of the held Philippine\u2013American War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-093",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q6569289",
+      "title": "\u015eahkulu rebellion",
+      "parents": [
+        "ottoman-persian-war-1505-1517"
+      ],
+      "edges": [],
+      "rank": "child-of:ottoman-persian-war-1505-1517",
+      "why": "Asia trails every other lane. \u015eahkulu rebellion is a P361 child of the held Ottoman\u2013Persian War (1505\u20131517) and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-094",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4087406",
+      "title": "Battle of Agra",
+      "parents": [
+        "indian-rebellion-of-1857"
+      ],
+      "edges": [],
+      "rank": "child-of:indian-rebellion-of-1857",
+      "why": "Asia trails every other lane. Battle of Agra is a P361 child of the held Indian Rebellion of 1857 and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-095",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4870727",
+      "title": "Battle of Chillianwala",
+      "parents": [
+        "second-anglo-sikh-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-anglo-sikh-war",
+      "why": "Asia trails every other lane. Battle of Chillianwala is a P361 child of the held Second Anglo-Sikh War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-096",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4871164",
+      "title": "Battle of Gujrat",
+      "parents": [
+        "second-anglo-sikh-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-anglo-sikh-war",
+      "why": "Asia trails every other lane. Battle of Gujrat is a P361 child of the held Second Anglo-Sikh War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-097",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q325127",
+      "title": "Oriental Crisis of 1840",
+      "parents": [
+        "egyptian-ottoman-war-1839-1841"
+      ],
+      "edges": [],
+      "rank": "child-of:egyptian-ottoman-war-1839-1841",
+      "why": "Asia trails every other lane. Oriental Crisis of 1840 is a P361 child of the held Egyptian\u2013Ottoman War (1839\u20131841) and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-098",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q908888",
+      "title": "Battle of Gandamak",
+      "parents": [
+        "first-anglo-afghan-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-anglo-afghan-war",
+      "why": "Asia trails every other lane. Battle of Gandamak is a P361 child of the held First Anglo-Afghan War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-099",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4087324",
+      "title": "Battle of Tientsin",
+      "parents": [
+        "boxer-rebellion"
+      ],
+      "edges": [],
+      "rank": "child-of:boxer-rebellion",
+      "why": "Asia trails every other lane. Battle of Tientsin is a P361 child of the held Boxer Rebellion and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-100",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q7784779",
+      "title": "Third Battle of Nanjing",
+      "parents": [
+        "taiping-rebellion"
+      ],
+      "edges": [],
+      "rank": "child-of:taiping-rebellion",
+      "why": "Asia trails every other lane. Third Battle of Nanjing is a P361 child of the held Taiping Rebellion and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-101",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q116222",
+      "title": "Battle of Ferozeshah",
+      "parents": [
+        "first-anglo-sikh-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-anglo-sikh-war",
+      "why": "Asia trails every other lane. Battle of Ferozeshah is a P361 child of the held First Anglo-Sikh War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-102",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1061404",
+      "title": "Battle of Taku Forts (1859)",
+      "parents": [
+        "second-opium-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-opium-war",
+      "why": "Asia trails every other lane. Battle of Taku Forts (1859) is a P361 child of the held Second Opium War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-103",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2984898",
+      "title": "Battle of Shipu",
+      "parents": [
+        "sino-french-war"
+      ],
+      "edges": [],
+      "rank": "child-of:sino-french-war",
+      "why": "Asia trails every other lane. Battle of Shipu is a P361 child of the held Sino-French War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-104",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2890708",
+      "title": "Battle of the Taku Forts (1900)",
+      "parents": [
+        "boxer-rebellion"
+      ],
+      "edges": [],
+      "rank": "child-of:boxer-rebellion",
+      "why": "Asia trails every other lane. Battle of the Taku Forts (1900) is a P361 child of the held Boxer Rebellion and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-105",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q370307",
+      "title": "Battle of Kandahar (1880)",
+      "parents": [
+        "second-anglo-afghan-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-anglo-afghan-war",
+      "why": "Asia trails every other lane. Battle of Kandahar (1880) is a P361 child of the held Second Anglo-Afghan War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-106",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4087474",
+      "title": "Battle of Woosung",
+      "parents": [
+        "first-opium-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-opium-war",
+      "why": "Asia trails every other lane. Battle of Woosung is a P361 child of the held First Opium War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-107",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4141584",
+      "title": "B\u1eafc Ninh campaign",
+      "parents": [
+        "tonkin-campaign"
+      ],
+      "edges": [],
+      "rank": "child-of:tonkin-campaign",
+      "why": "Asia trails every other lane. B\u1eafc Ninh campaign is a P361 child of the held Tonkin campaign and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-108",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4870632",
+      "title": "Battle of Canton (March 1841)",
+      "parents": [
+        "first-opium-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-opium-war",
+      "why": "Asia trails every other lane. Battle of Canton (March 1841) is a P361 child of the held First Opium War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-109",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4870635",
+      "title": "Battle of Canton (May 1841)",
+      "parents": [
+        "first-opium-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-opium-war",
+      "why": "Asia trails every other lane. Battle of Canton (May 1841) is a P361 child of the held First Opium War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-110",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4870728",
+      "title": "Battle of Chinhai",
+      "parents": [
+        "first-opium-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-opium-war",
+      "why": "Asia trails every other lane. Battle of Chinhai is a P361 child of the held First Opium War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-111",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4872549",
+      "title": "Battle of Thu\u1eadn An",
+      "parents": [
+        "tonkin-campaign"
+      ],
+      "edges": [],
+      "rank": "child-of:tonkin-campaign",
+      "why": "Asia trails every other lane. Battle of Thu\u1eadn An is a P361 child of the held Tonkin campaign and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-112",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q6711767",
+      "title": "L\u1ea1ng S\u01a1n campaign",
+      "parents": [
+        "tonkin-campaign"
+      ],
+      "edges": [],
+      "rank": "child-of:tonkin-campaign",
+      "why": "Asia trails every other lane. L\u1ea1ng S\u01a1n campaign is a P361 child of the held Tonkin campaign and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-113",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4087331",
+      "title": "Battle of Taku Forts (1858)",
+      "parents": [
+        "second-opium-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-opium-war",
+      "why": "Asia trails every other lane. Battle of Taku Forts (1858) is a P361 child of the held Second Opium War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-114",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1010245",
+      "title": "Battle of Ghazni",
+      "parents": [
+        "first-anglo-afghan-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-anglo-afghan-war",
+      "why": "Asia trails every other lane. Battle of Ghazni is a P361 child of the held First Anglo-Afghan War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-115",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4871238",
+      "title": "Battle of H\u00f2a M\u1ed9c",
+      "parents": [
+        "sino-french-war"
+      ],
+      "edges": [],
+      "rank": "child-of:sino-french-war",
+      "why": "Asia trails every other lane. Battle of H\u00f2a M\u1ed9c is a P361 child of the held Sino-French War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-116",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q21275805",
+      "title": "Chinese expedition to Tibet (1720)",
+      "parents": [
+        "dzungar-qing-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:dzungar-qing-wars",
+      "why": "Asia trails every other lane. Chinese expedition to Tibet (1720) is a P361 child of the held Dzungar\u2013Qing Wars and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-117",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1761867",
+      "title": "Battle of Ramnagar",
+      "parents": [
+        "second-anglo-sikh-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-anglo-sikh-war",
+      "why": "Asia trails every other lane. Battle of Ramnagar is a P361 child of the held Second Anglo-Sikh War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-118",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2237297",
+      "title": "Battle of Ali Masjid",
+      "parents": [
+        "second-anglo-afghan-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-anglo-afghan-war",
+      "why": "Asia trails every other lane. Battle of Ali Masjid is a P361 child of the held Second Anglo-Afghan War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-119",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4870828",
+      "title": "Battle of C\u1ea7u Gi\u1ea5y (1883)",
+      "parents": [
+        "tonkin-campaign"
+      ],
+      "edges": [],
+      "rank": "child-of:tonkin-campaign",
+      "why": "Asia trails every other lane. Battle of C\u1ea7u Gi\u1ea5y (1883) is a P361 child of the held Tonkin campaign and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-120",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4872006",
+      "title": "Battle of Peiwar Kotal",
+      "parents": [
+        "second-anglo-afghan-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-anglo-afghan-war",
+      "why": "Asia trails every other lane. Battle of Peiwar Kotal is a P361 child of the held Second Anglo-Afghan War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-121",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4871419",
+      "title": "Battle of Khadki",
+      "parents": [
+        "third-anglo-maratha-war"
+      ],
+      "edges": [],
+      "rank": "child-of:third-anglo-maratha-war",
+      "why": "Asia trails every other lane. Battle of Khadki is a P361 child of the held Third Anglo-Maratha War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-122",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q233601",
+      "title": "Second Carnatic War",
+      "parents": [
+        "carnatic-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:carnatic-wars",
+      "why": "Asia trails every other lane. Second Carnatic War is a P361 child of the held Carnatic wars and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-123",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q815136",
+      "title": "Battle of Jalalabad (1842)",
+      "parents": [
+        "first-anglo-afghan-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-anglo-afghan-war",
+      "why": "Asia trails every other lane. Battle of Jalalabad (1842) is a P361 child of the held First Anglo-Afghan War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-124",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q3892142",
+      "title": "Battle of K\u1ef3 H\u00f2a",
+      "parents": [
+        "cochinchina-campaign"
+      ],
+      "edges": [],
+      "rank": "child-of:cochinchina-campaign",
+      "why": "Asia trails every other lane. Battle of K\u1ef3 H\u00f2a is a P361 child of the held Cochinchina campaign and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-125",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4087470",
+      "title": "Battle of Ulan Butung",
+      "parents": [
+        "dzungar-qing-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:dzungar-qing-wars",
+      "why": "Asia trails every other lane. Battle of Ulan Butung is a P361 child of the held Dzungar\u2013Qing Wars and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-126",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q5361929",
+      "title": "Siege of Tourane",
+      "parents": [
+        "cochinchina-campaign"
+      ],
+      "edges": [],
+      "rank": "child-of:cochinchina-campaign",
+      "why": "Asia trails every other lane. Siege of Tourane is a P361 child of the held Cochinchina campaign and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-127",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q7510120",
+      "title": "Siege of Jinji",
+      "parents": [
+        "deccan-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:deccan-wars",
+      "why": "Asia trails every other lane. Siege of Jinji is a P361 child of the held Deccan wars and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-128",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q835616",
+      "title": "Tianjing Incident",
+      "parents": [
+        "taiping-rebellion"
+      ],
+      "edges": [],
+      "rank": "child-of:taiping-rebellion",
+      "why": "Asia trails every other lane. Tianjing Incident is a P361 child of the held Taiping Rebellion and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-129",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4871853",
+      "title": "Battle of Nalapani",
+      "parents": [
+        "anglo-nepalese-war"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-nepalese-war",
+      "why": "Asia trails every other lane. Battle of Nalapani is a P361 child of the held Anglo-Nepalese War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-130",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4871859",
+      "title": "Battle of Nanjing (1853)",
+      "parents": [
+        "taiping-rebellion"
+      ],
+      "edges": [],
+      "rank": "child-of:taiping-rebellion",
+      "why": "Asia trails every other lane. Battle of Nanjing (1853) is a P361 child of the held Taiping Rebellion and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-131",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q3874305",
+      "title": "Battle of Jao Modo",
+      "parents": [
+        "dzungar-qing-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:dzungar-qing-wars",
+      "why": "Asia trails every other lane. Battle of Jao Modo is a P361 child of the held Dzungar\u2013Qing Wars and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-132",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4502462",
+      "title": "Battle of the Salween River",
+      "parents": [
+        "dzungar-qing-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:dzungar-qing-wars",
+      "why": "Asia trails every other lane. Battle of the Salween River is a P361 child of the held Dzungar\u2013Qing Wars and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-133",
+      "planned": "2026-10-16T17:46:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4871360",
+      "title": "Kabul Expedition (1842)",
+      "parents": [
+        "first-anglo-afghan-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-anglo-afghan-war",
+      "why": "Asia trails every other lane. Kabul Expedition (1842) is a P361 child of the held First Anglo-Afghan War and its own span lies inside it."
     }
   ]
 }
