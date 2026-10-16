@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "lang-son-city",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q33383",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Lạng Sơn (city)",
+    "pt": "Lang Son (cidade)"
+  },
+  "sources": [],
+  "names": [
+    "Lạng Sơn",
+    "Lạng Sơn (city)",
+    "Lang Son (cidade)"
+  ],
+  "where": {
+    "lon": 106.75777777778,
+    "lat": 21.847777777778,
+    "precision": "city",
+    "label": "Lạng Sơn (city)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

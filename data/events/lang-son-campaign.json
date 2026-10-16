@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "lang-son-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q6711767",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Lạng Sơn campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6711767"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lạng Sơn campaign\", revision 1377313524"
+    }
+  ],
+  "title": "Lạng Sơn campaign",
+  "summary": "The English Wikipedia article \"Lạng Sơn campaign\", at revision 1377313524, opens: \"The Lạng Sơn campaign was a major French offensive in Tonkin during the Sino-French War. The Tonkin Expeditionary Corps, under the command of General Louis Brière de l'Isle, defeated the Chinese Guangxi Army and captured the strategically important town of Lạng Sơn in a ten-day campaign mounted under formidable logistical constraints.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6711767, imported by tools/import/wikidata.mjs. The item's own description reads \"1885 French offensive in Sino-French War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-02-03",
+    "endDate": "1885-02-13"
+  },
+  "place": "lang-son-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "tonkin-campaign"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-woosung",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4087474",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Woosung"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4087474"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Woosung\", revision 1370594511"
+    }
+  ],
+  "title": "Battle of Woosung",
+  "summary": "The English Wikipedia article \"Battle of Woosung\", at revision 1370594511, opens: \"The Battle of Wusong (Woosung) (Chinese: 吳淞戰役) was fought between British and Chinese forces at the entrance of the Wusong River (present-day Huangpu River), Jiangsu province, China, on 16 June 1842, during the First Opium War. The British capture of the towns of Woosung (now Wusong) and Baoshan opened the way to Shanghai, which was captured with little resistance on 19 June.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4087474, imported by tools/import/wikidata.mjs. The item's own description reads \"First Opium War battle near Shanghai (1842)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1842,
+    "end": 1842,
+    "date": "1842-06-16"
+  },
+  "place": "huangpu-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-opium-war"
+}

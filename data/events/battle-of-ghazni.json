@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-ghazni",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1010245",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Ghazni"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1010245"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ghazni\", revision 1370441533"
+    }
+  ],
+  "title": "Battle of Ghazni",
+  "summary": "The English Wikipedia article \"Battle of Ghazni\", at revision 1370441533, opens: \"The Battle of Ghazni took place in the city of Ghazni in central Afghanistan on Tuesday, 23 July 1839, during the First Anglo-Afghan War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1010245, imported by tools/import/wikidata.mjs. The item's own description reads \"1839 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1839,
+    "end": 1839,
+    "date": "1839-07-23"
+  },
+  "place": "ghazni",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-anglo-afghan-war"
+}
