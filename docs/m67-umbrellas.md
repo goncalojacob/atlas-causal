@@ -2103,3 +2103,94 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-16: `tianjing-incident`, filed under `taiping-rebellion` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-128`, rank `child-of:taiping-rebellion`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `battle-of-elands-river-1900`, filed under `second-boer-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-africa-107`, rank `child-of:second-boer-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `expedition-of-the-col-des-beni-aicha`, filed under `french-conquest-of-algeria` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-africa-111`, rank `child-of:french-conquest-of-algeria`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `1863-1875-cholera-pandemic`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-16-asia-140`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-16: `pescadores-campaign-1895`, filed under `first-sino-japanese-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-144`, rank `child-of:first-sino-japanese-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `battle-of-the-bogue`, filed under `first-opium-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-146`, rank `child-of:first-opium-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `battle-of-ningyuan`, filed under `transition-from-ming-to-qing` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-148`, rank `child-of:transition-from-ming-to-qing`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `battle-of-sanhe`, filed under `taiping-rebellion` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-156`, rank `child-of:taiping-rebellion`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `siege-of-beitang`, filed under `boxer-rebellion` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-176`, rank `child-of:boxer-rebellion`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `attack-on-selarong`, filed under `java-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-186`, rank `child-of:java-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `north-west-rebellion`, filed under `american-indian-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-americas-005`, rank `child-of:american-indian-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `yakima-war`, filed under `american-indian-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-americas-011`, rank `child-of:american-indian-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `battle-of-halai`, filed under `scramble-for-africa` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-114`, rank `child-of:scramble-for-africa`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `french-blockade-of-algiers`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-16-africa-118`, rank `child-of:french-conquest-of-algeria`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-16: `1881-1896-cholera-pandemic`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-16-asia-141`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-16: `son-tay-campaign`, filed under `tonkin-campaign` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-asia-149`, rank `child-of:tonkin-campaign`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `battle-of-song-jin`, filed under `transition-from-ming-to-qing` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-asia-159`, rank `child-of:transition-from-ming-to-qing`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `siege-of-bijapur`, filed under `deccan-wars` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-asia-161`, rank `child-of:deccan-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `battle-of-the-bogue-1856`, filed under `second-opium-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-asia-171`, rank `child-of:second-opium-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `battle-of-escape-creek`, filed under `second-opium-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-asia-183`, rank `child-of:second-opium-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `sasradilaga-rebellion`, filed under `java-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-asia-187`, rank `child-of:java-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `cayuse-war`, filed under `american-indian-wars` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-americas-012`, rank `child-of:american-indian-wars`. Its span and its subject put it inside the umbrella.
+## Writer B, 2026-10-16: `puget-sound-war`, filed under `american-indian-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-americas-025`, rank `child-of:american-indian-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `hungarian-campaign-of-1527-1528`, filed under `ottoman-habsburg-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-europe-017`, rank `child-of:ottoman-habsburg-wars`. Its span and its subject put it inside the umbrella.

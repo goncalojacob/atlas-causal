@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-bogue",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872861",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of the Bogue"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872861"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Bogue\", revision 1370598373"
+    }
+  ],
+  "title": "Battle of the Bogue",
+  "summary": "The English Wikipedia article \"Battle of the Bogue\", at revision 1370598373, opens: \"The Battle of the Bogue was fought between British and Chinese forces in the Pearl River Delta, Guangdong province, China, on 23–26 February 1841 during the First Opium War. The British launched an amphibious attack at the Humen strait (Bogue), capturing the forts on the islands of Anunghoy and North Wangtong. This allowed the fleet to proceed further up the Pearl River towards the city of Canton (Guangzhou), which they captured the following month.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872861, imported by tools/import/wikidata.mjs. The item's own description reads \"1841 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1841,
+    "end": 1841,
+    "date": "1841-02-23",
+    "endDate": "1841-02-26"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "first-opium-war"
+}

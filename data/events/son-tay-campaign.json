@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "son-tay-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7667673",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Sơn Tây campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7667673"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sơn Tây campaign\", revision 1370749426"
+    }
+  ],
+  "title": "Sơn Tây campaign",
+  "summary": "The English Wikipedia article \"Sơn Tây campaign\", at revision 1370749426, opens: \"The Sơn Tây campaign was a campaign fought by the French to capture the strategically important city of Sơn Tây in Tonkin from Liu Yongfu's Black Flag Army and allied contingents of Vietnamese and Chinese troops. The campaign was one of several clashes between the Tonkin Expeditionary Corps and the Black Flag Army during the Tonkin campaign (1883–1886), and took place during the period of undeclared hostilities that preceded the Sino-French War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7667673, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Tonkin campaign in Vietnam (1883–1886)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1883,
+    "end": 1883,
+    "date": "1883-12-11",
+    "endDate": "1883-12-17"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "tonkin-campaign"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-santa-cruz-1899",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872301",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Santa Cruz (1899)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872301"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Santa Cruz (1899)\", revision 1378171245"
+    }
+  ],
+  "title": "Battle of Santa Cruz (1899)",
+  "summary": "The English Wikipedia article \"Battle of Santa Cruz (1899)\", at revision 1378171245, opens: \"This Battle of Santa Cruz was fought in the early stages of the Philippine–American War during General Henry W. Lawton's Laguna de Bay campaign.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872301, imported by tools/import/wikidata.mjs. The item's own description reads \"during the Philippine–American War at Santa Cruz, Laguna, Philippines\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-04-09",
+    "endDate": "1899-04-10"
+  },
+  "place": "philippines-q928",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-american-war"
+}

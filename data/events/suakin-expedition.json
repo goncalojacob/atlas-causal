@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "suakin-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7630458",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Suakin Expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7630458"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Suakin Expedition\", revision 1366263771"
+    }
+  ],
+  "title": "Suakin Expedition",
+  "summary": "The English Wikipedia article \"Suakin Expedition\", at revision 1366263771, opens: \"The Suakin Expedition was either of two British-Indian military expeditions, led by Major-General Sir Gerald Graham, to Suakin in Sudan, with the intention of destroying the power of the Sudanese military commander Osman Digna and his troops during the Mahdist War. The first expedition took place in February 1884 and the second in March 1885.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7630458, imported by tools/import/wikidata.mjs. The item's own description reads \"1884 British military expedition as part of the Mahdist War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1884,
+    "end": 1885,
+    "date": "1884-02",
+    "endDate": "1885-03"
+  },
+  "place": "suakin",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mahdist-war"
+}

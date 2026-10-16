@@ -2341,7 +2341,30 @@
     "Q5361929",
     "Q835616",
     "Q4871859",
-    "Q4502462"
+    "Q4502462",
+    "Q4872549",
+    "Q2321496",
+    "Q4256410",
+    "Q2888679",
+    "Q3778744",
+    "Q6192082",
+    "Q2117576",
+    "Q1151913",
+    "Q606621",
+    "Q6542740",
+    "Q920766",
+    "Q1936002",
+    "Q2080325",
+    "Q1049956",
+    "Q324438",
+    "Q3778623",
+    "Q7263697",
+    "Q448015",
+    "Q92056662",
+    "Q96359661",
+    "Q2646216",
+    "Q668811",
+    "Q4940602"
   ],
   "queries": [
     {
@@ -6598,6 +6621,36 @@
       "category": "war",
       "label": "naval bombing of a city",
       "note": "Added 16 October 2026 from the 0012Z plan note, for the Bombardment of Alexandria."
+    },
+    "Q1155622": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "slave rebellion",
+      "note": "Added 16 October 2026 from the 2012Z plan note. Wikidata: \"armed uprising by slaves\"."
+    },
+    "Q108856008": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "slave rebellions in the United States",
+      "note": "Added 16 October 2026 from the 2012Z plan note. Wikidata: \"armed uprisings by enslaved Black peoples in the United States\"."
+    },
+    "Q10931495": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "shizoku rebellion",
+      "note": "Added 16 October 2026 from the 2012Z plan note. Wikidata: \"rebellion of the Shizoku against the Meiji government (1874–1877)\"."
+    },
+    "Q3817498": {
+      "kind": "event",
+      "category": "war",
+      "label": "last stand",
+      "note": "Added 16 October 2026 from the 2012Z plan note. Wikidata: \"situation in which a military unit holds against overwhelming odds\"."
+    },
+    "Q111953439": {
+      "kind": "event",
+      "category": "revolution",
+      "label": "princely rebellion",
+      "note": "Added 17 October 2026 from the 2212Z plan note, for the Prince of Ning and Prince of Anhua rebellions."
     }
   },
   "lanes": {

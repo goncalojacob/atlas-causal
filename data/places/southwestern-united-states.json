@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "southwestern-united-states",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q858847",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Southwestern United States",
+    "pt": "Região Sudoeste dos Estados Unidos"
+  },
+  "sources": [],
+  "names": [
+    "Southwestern United States",
+    "Região Sudoeste dos Estados Unidos"
+  ],
+  "where": {
+    "lon": -111.2,
+    "lat": 37,
+    "precision": "region",
+    "label": "Southwestern United States"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

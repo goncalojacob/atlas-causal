@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-fort-william-henry",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2080325",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Siege of Fort William Henry",
+    "pt": "Batalha do Fort William Henry"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2080325"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fort William Henry\", revision 1375425158"
+    }
+  ],
+  "title": "Siege of Fort William Henry",
+  "summary": "The English Wikipedia article \"Siege of Fort William Henry\", at revision 1375425158, opens: \"The siege of Fort William Henry was conducted by a French and Indian force led by Louis-Joseph de Montcalm against the British-held Fort William Henry. This fort, located at the southern end of Lake George, on the frontier between the British Province of New York and the French Province of Canada, was garrisoned by a poorly supported force of British regulars and provincial militia led by Lieutenant Colonel George Monro.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2080325, imported by tools/import/wikidata.mjs. The item's own description reads \"1757 siege in the Seven Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1757,
+    "date": "1757-08-03",
+    "endDate": "1757-08-09"
+  },
+  "place": "lake-george-town-new-york",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

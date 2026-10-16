@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-bangalore",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7509848",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Siege of Bangalore"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7509848"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Bangalore\", revision 1376718865"
+    }
+  ],
+  "title": "Siege of Bangalore",
+  "summary": "The English Wikipedia article \"Siege of Bangalore\", at revision 1376718865, opens: \"The Siege of Bangalore was a siege of the town and fortifications of Bangalore during the Third Anglo-Mysore War by forces of the British East India Company, led by Charles, Earl Cornwallis against a Mysorean garrison, while Tipu Sultan, Mysore's ruler, harried the camps and positions of the besiegers. Arriving before the town on 5 February 1791, Cornwallis captured the town by assault on 7 February, and after six weeks of siege, stormed the fortress on 21 March.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7509848, imported by tools/import/wikidata.mjs. The item's own description reads \"1791 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1791,
+    "end": 1791,
+    "date": "1791-02-05",
+    "endDate": "1791-03-21"
+  },
+  "place": "bengaluru",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "third-anglo-mysore-war"
+}

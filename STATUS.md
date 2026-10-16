@@ -24083,6 +24083,12 @@ Writer B 2026-10-16T18:51:39Z: 39 written, 0 partial, 1 refused, 0 skipped
 Writer A started 2026-10-16T19:22:01Z by scheduled
 Writer A 2026-10-16T19:25:59Z: 15 written, 0 partial, 1 refused, 0 skipped
 
+Writer A started 2026-10-16T20:22:43Z by scheduled
+Writer A 2026-10-16T20:25:21Z: 0 written, 0 partial, 1 refused, 15 skipped
+
+Writer A started 2026-10-16T21:22:14Z by scheduled
+Writer A 2026-10-16T21:36:37Z: 37 written, 0 partial, 3 refused, 0 skipped
+
 Writer B started 2026-10-13T23:41:58Z by scheduled
 Writer B started 2026-10-16T06:42:30Z by scheduled
 
@@ -25998,3 +26004,12 @@ Writer A 2026-10-16T18:27:27Z: 38 written, 0 partial, 2 refused, 0 skipped
 
 Writer B started 2026-10-16T19:42:15Z by scheduled
 Writer B 2026-10-16T19:47:45Z: 14 written, 0 partial, 1 refused, 0 skipped
+
+Writer B started 2026-10-16T20:41:50Z by scheduled
+Writer B 2026-10-16T20:47:52Z: 26 written, 0 partial, 7 refused, 1 skipped
+
+Writer B started 2026-10-16T21:42:36Z by scheduled
+
+Writer B 2026-10-16T21:47:17Z: 14 written, 0 partial, 5 refused, 0 skipped
+Writer A started 2026-10-16T22:22:43Z by scheduled
+Writer A 2026-10-16T22:24:41Z: 0 written, 0 partial, 3 refused, 37 skipped

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "medea-expedition-1830",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q21009228",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Médéa expedition (1830)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q21009228"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Médéa expedition (1830)\", revision 1370629128"
+    }
+  ],
+  "title": "Médéa expedition (1830)",
+  "summary": "The English Wikipedia article \"Médéa expedition (1830)\", at revision 1370629128, opens: \"The first Médéa expedition, also known as the Atlas expedition of 1830, was a military expedition conducted by the Kingdom of France against the remnants of the Deylik of Algiers, the Beylik of Titteri and the local resistance led by Mohamed ben Zaamoum. It began on 17 November 1830 and ended eight in early December.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q21009228, imported by tools/import/wikidata.mjs. The item's own description reads \"military Expedition of Kingdom of France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1830,
+    "end": 1830,
+    "date": "1830-11-17",
+    "endDate": "1830-12"
+  },
+  "place": "blida",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-conquest-of-algeria"
+}

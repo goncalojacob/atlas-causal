@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-jhansi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16034303",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Siege of Jhansi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16034303"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Jhansi\", revision 1373946407"
+    }
+  ],
+  "title": "Siege of Jhansi",
+  "summary": "The English Wikipedia article \"Siege of Jhansi\", at revision 1373946407, opens: \"The Siege of Jhansi was a military siege during the Indian rebellion of 1857 set on the city of Jhansi, Uttar Pradesh by British forces of the East India Company between 24 March and 5 April 1858. British defeated the combined forces of the Principality of Jhansi and anti-British mutineers defending the city, successfully continuing in their Central Indian campaign.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16034303, imported by tools/import/wikidata.mjs. The item's own description reads \"1858 siege of the Indian Rebellion of 1857\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1858,
+    "date": "1858-03-23",
+    "endDate": "1858-04-02"
+  },
+  "place": "jhansi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "indian-rebellion-of-1857"
+}

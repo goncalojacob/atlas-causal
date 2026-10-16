@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "1889-1890-pandemic",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q10658304",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "1889–1890 pandemic",
+    "pt": "Pandemia de gripe de 1889–1890"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q10658304"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1889–1890 pandemic\", revision 1362689201"
+    }
+  ],
+  "title": "1889–1890 pandemic",
+  "summary": "The English Wikipedia article \"1889–1890 pandemic\", at revision 1362689201, opens: \"The 1889–1890 pandemic, often referred to as the \"Asiatic flu\" or \"Russian flu\", was a worldwide respiratory viral pandemic. It was the last great pandemic of the 19th century, and is among the deadliest pandemics in history. The pandemic killed about 1 million people out of a world population of about 1.5 billion. The most reported effects of the pandemic took place from October 1889 to December 1890, with recurrences in March to June 1891, November 1891 to June 1892, the northern winter of 1893–1894, and early 1895.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q10658304, imported by tools/import/wikidata.mjs. The item's own description reads \"worldwide pandemic beginning in 1889\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1889,
+    "end": 1890,
+    "date": "1889-05"
+  },
+  "place": "russian-empire-q34266",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

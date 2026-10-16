@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-ningyuan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1047602",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Ningyuan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1047602"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ningyuan\", revision 1370451771"
+    }
+  ],
+  "title": "Battle of Ningyuan",
+  "summary": "The English Wikipedia article \"Battle of Ningyuan\", at revision 1370451771, opens: \"The Battle of Ningyuan took place between the Ming dynasty and the Later Jin dynasty in 1626. The Later Jin had been waging war on the Ming for several years, and their leader Nurhaci had deemed Ningyuan to be a suitable target for his attack, in part due to advice from a Ming defector, Li Yongfang. Later Jin failed to take the city and Nurhaci was wounded in the assault, dying eight months later. The Ming emerged victorious, marking a temporary resurgence of the Ming army after an eight-year-long series of defeats.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1047602, imported by tools/import/wikidata.mjs. The item's own description reads \"1626 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1626,
+    "end": 1626,
+    "date": "1626-02-02",
+    "endDate": "1626-02-10"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "transition-from-ming-to-qing"
+}

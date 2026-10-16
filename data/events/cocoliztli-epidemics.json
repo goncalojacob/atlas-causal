@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "cocoliztli-epidemics",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q63472138",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Cocoliztli epidemics"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q63472138"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cocoliztli epidemics\", revision 1378786408"
+    }
+  ],
+  "title": "Cocoliztli epidemics",
+  "summary": "The English Wikipedia article \"Cocoliztli epidemics\", at revision 1378786408, opens: \"The Cocoliztli Epidemic or the Great Pestilence was an outbreak of a mysterious illness characterized by high fevers and bleeding which caused 5–15 million deaths in the North American territory of New Spain during the 16th century. The Aztec people called it cocoliztli, Nahuatl for pestilence. It ravaged the Mexican highlands in epidemic proportions, resulting in the demographic collapse of some Indigenous populations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q63472138, imported by tools/import/wikidata.mjs. The item's own description reads \"16th century epidemics in New Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1545,
+    "end": 1631
+  },
+  "place": "central-america",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "braddock-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3177722",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Braddock Expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3177722"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Braddock Expedition\", revision 1380530055"
+    }
+  ],
+  "title": "Braddock Expedition",
+  "summary": "The English Wikipedia article \"Braddock Expedition\", at revision 1380530055, opens: \"The Braddock Expedition, also known as Braddock's Campaign or Braddock's Defeat, was a British military expedition which attempted to capture Fort Duquesne from the French in 1755 during the French and Indian War. The expedition, named after its commander General Edward Braddock, was defeated at the Battle of the Monongahela on July 9 and forced to retreat; Braddock was killed in action along with more than 500 of his troops. It ultimately proved to be a major setback for the British in the early stages of the war; the historian John Mack Faragher claimed the expedition was one of the most disastrous defeats suffered by British forces during the 18th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3177722, imported by tools/import/wikidata.mjs. The item's own description reads \"1755 military expedition during French and Indian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1755,
+    "end": 1755,
+    "date": "1755-05",
+    "endDate": "1755-07"
+  },
+  "place": "maryland",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-and-indian-war"
+}

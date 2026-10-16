@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "capture-of-chusan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5036997",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Capture of Chusan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5036997"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Chusan\", revision 1370608474"
+    }
+  ],
+  "title": "Capture of Chusan",
+  "summary": "The English Wikipedia article \"Capture of Chusan\", at revision 1370608474, opens: \"The First Capture of Chusan by British forces in China occurred on 5–6 July 1840 during the First Opium War. The British captured Chusan (Zhoushan), the largest island of an archipelago of that name.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5036997, imported by tools/import/wikidata.mjs. The item's own description reads \"1840 battle between China and Britain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1840,
+    "end": 1840,
+    "date": "1840-07-05",
+    "endDate": "1840-07-06"
+  },
+  "place": "zhoushan-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-opium-war"
+}

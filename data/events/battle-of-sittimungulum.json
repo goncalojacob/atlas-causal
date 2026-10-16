@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-sittimungulum",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872387",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Sittimungulum"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872387"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sittimungulum\", revision 1370589472"
+    }
+  ],
+  "title": "Battle of Sittimungulum",
+  "summary": "The English Wikipedia article \"Battle of Sittimungulum\", at revision 1370589472, opens: \"The Battle of Sittimungulum was a series of battles and skirmishes fought between 13 and 15 September 1790, during the Third Anglo-Mysore War, in and near the town now known as Sathyamangalam in the southern part of the Sultanate of Mysore. Forces of Mysore's ruler Tipu Sultan very nearly overwhelmed a British East India Company force under the command of Captain John Floyd.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872387, imported by tools/import/wikidata.mjs. The item's own description reads \"1790 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1790,
+    "end": 1790,
+    "date": "1790-09-13",
+    "endDate": "1790-09-15"
+  },
+  "place": "sathyamangalam",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "third-anglo-mysore-war"
+}
