@@ -12056,6 +12056,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-derna-1805",
+      "kind": "event",
+      "locator": "\"Battle of Derna (1805)\", revision 1379954325"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dessau-bridge",
       "kind": "event",
       "locator": "\"Battle of Dessau Bridge\", revision 1370109657"
@@ -12437,6 +12443,12 @@
       "id": "battle-of-inchon",
       "kind": "event",
       "locator": "\"Battle of Inchon\", revision 1370266029"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-intombe",
+      "kind": "event",
+      "locator": "\"Battle of Intombe\", revision 1370443760"
     },
     {
       "dissent": false,
@@ -13535,6 +13547,12 @@
       "id": "battle-of-shubra-khit",
       "kind": "event",
       "locator": "\"Battle of Shubra Khit\", revision 1371091764"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sidi-brahim",
+      "kind": "event",
+      "locator": "\"Battle of Sidi Brahim\", revision 1375600709"
     },
     {
       "dissent": false,
@@ -16520,6 +16538,12 @@
     },
     {
       "dissent": false,
+      "id": "invasion-of-algiers-1830",
+      "kind": "event",
+      "locator": "\"Invasion of Algiers (1830)\", revision 1370623904"
+    },
+    {
+      "dissent": false,
       "id": "invasion-of-cuba-1741",
       "kind": "event",
       "locator": "\"Invasion of Cuba (1741)\", revision 1370623950"
@@ -17231,6 +17255,12 @@
       "id": "mohawk-valley-raid",
       "kind": "event",
       "locator": "\"Mohawk Valley raid\", revision 1370719124"
+    },
+    {
+      "dissent": false,
+      "id": "mokrani-revolt",
+      "kind": "event",
+      "locator": "\"Mokrani Revolt\", revision 1380123864"
     },
     {
       "dissent": false,
@@ -18608,6 +18638,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-tripoli-harbor",
+      "kind": "event",
+      "locator": "\"Second Battle of Tripoli Harbor\", revision 1373494580"
+    },
+    {
+      "dissent": false,
       "id": "second-boer-war",
       "kind": "event",
       "locator": "\"Second Boer War\", revision 1372994797"
@@ -18923,6 +18959,12 @@
       "id": "siege-of-concepcion",
       "kind": "event",
       "locator": "\"Siege of Concepción\", revision 1370740335"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-constantine",
+      "kind": "event",
+      "locator": "\"Siege of Constantine\", revision 1370740343"
     },
     {
       "dissent": false,

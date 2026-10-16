@@ -710,7 +710,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "algiers-q3561",
       "kind": "place",
       "names": [
@@ -5164,6 +5164,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "constantine-algeria",
+      "kind": "place",
+      "names": [
+        "Constantine",
+        "Constantina",
+        "Constantine, Algeria",
+        "Constantina (Argélia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "corbie",
@@ -5966,6 +5996,34 @@
         "Pasco",
         "Department of Pasco",
         "Pasco (região)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "derna-libya",
+      "kind": "place",
+      "names": [
+        "Derna",
+        "Derna, Libya"
       ],
       "origin": {
         "tool": "wikidata"
@@ -7812,7 +7870,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "french-algeria",
       "kind": "place",
       "names": [
@@ -22092,6 +22150,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "sidi-brahim",
+      "kind": "place",
+      "names": [
+        "gambetta",
+        "Sidi Brahim"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -25037,7 +25123,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "tripoli",
       "kind": "place",
       "names": [
