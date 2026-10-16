@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-suakin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872453",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Suakin"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872453"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Suakin\", revision 1370590030"
+    }
+  ],
+  "title": "Battle of Suakin",
+  "summary": "The English Wikipedia article \"Battle of Suakin\", at revision 1370590030, opens: \"The Battle of Suakin, occurred on 20 December 1888 during the Mahdist War, when General Francis Grenfell defeated a Mahdist, force near Suakin, a chief port of Sudan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872453, imported by tools/import/wikidata.mjs. The item's own description reads \"1888 battle of the Mahdist War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1888,
+    "end": 1888,
+    "date": "1888-12-20"
+  },
+  "place": "suakin",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mahdist-war"
+}

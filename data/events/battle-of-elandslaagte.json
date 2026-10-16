@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-elandslaagte",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q263950",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Elandslaagte"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q263950"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Elandslaagte\", revision 1370439891"
+    }
+  ],
+  "title": "Battle of Elandslaagte",
+  "summary": "The English Wikipedia article \"Battle of Elandslaagte\", at revision 1370439891, opens: \"The Battle of Elandslaagte took place during the Second Boer War, and was one of the few decisive victories won by the British during the conflict. At the time, the Boers were invading Natal, and had occupied the railway station at Elandslaagte. To dispel the Boers from their position, the British Army led a two-pronged assault in the hills which the Boers occupied, forcing them to retreat. However, the British force retreated afterwards due to fear of another Boer force, throwing away their advantage.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q263950, imported by tools/import/wikidata.mjs. The item's own description reads \"1899 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-10-21"
+  },
+  "place": "elandslaagte",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-boer-war"
+}

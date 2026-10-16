@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-agordat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3921576",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "First Battle of Agordat"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3921576"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Agordat\", revision 1376368437"
+    }
+  ],
+  "title": "First Battle of Agordat",
+  "summary": "The English Wikipedia article \"First Battle of Agordat\", at revision 1376368437, opens: \"The First Battle of Agordat, which took place on 27 June 1890 was the first battle between Italy and the Mahdist State.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3921576, imported by tools/import/wikidata.mjs. The item's own description reads \"1890 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1890,
+    "end": 1890,
+    "date": "1890-06-27"
+  },
+  "place": "agordat",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mahdist-war"
+}

@@ -1881,3 +1881,19 @@ Writer A imported it from the planner's queue as item `2026-10-16-asia-037`, ran
 ## Writer A, 2026-10-16: `treaty-of-amity-and-commerce-united-states-japan`, bare
 
 Writer A imported it from the planner's queue as item `2026-10-16-asia-039`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-16: `battle-of-tamai`, filed under `mahdist-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-041`, rank `child-of:mahdist-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `battle-of-ginnis`, filed under `mahdist-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-042`, rank `child-of:mahdist-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `first-and-second-battles-of-el-teb`, filed under `mahdist-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-043`, rank `child-of:mahdist-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `battle-of-aba`, filed under `mahdist-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-048`, rank `child-of:mahdist-war`. Its span and its subject put it inside the umbrella.
