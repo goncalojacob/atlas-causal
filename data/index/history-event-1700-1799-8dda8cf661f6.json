@@ -2769,6 +2769,15 @@
         }
       ]
     },
+    "treaty-of-greenville": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "treaty-of-madrid-13-january-1750": {
       "from": "git",
       "versions": [

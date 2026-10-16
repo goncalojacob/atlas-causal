@@ -11822,6 +11822,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-greenville",
+      "kind": "event",
+      "locator": "Q767317"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-lausanne",
       "kind": "event",
       "locator": "Q193258"

@@ -1343,6 +1343,15 @@
         }
       ]
     },
+    "northwest-indian-war--treaty-of-greenville--caused": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "rebellion-of-tupac-amaru-ii--siege-of-cusco-1781--enabled": {
       "from": "git",
       "versions": [

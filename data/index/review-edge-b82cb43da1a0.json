@@ -22256,6 +22256,36 @@
       "cites": [
         "wikipedia-en"
       ],
+      "created": "2026-10-16",
+      "from": "northwest-indian-war",
+      "id": "northwest-indian-war--treaty-of-greenville--caused",
+      "kind": "edge",
+      "origin": {
+        "run": "m90-writer-B",
+        "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "edge-drafted",
+          "queued"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "to": "treaty-of-greenville",
+      "type": "caused"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Claude (assistant draft, unreviewed)"
+        }
+      ],
+      "cites": [
+        "wikipedia-en"
+      ],
       "created": "2026-09-21",
       "from": "october-revolution",
       "id": "october-revolution--execution-of-the-romanov-family--precondition-of",

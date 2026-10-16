@@ -6488,6 +6488,12 @@
     },
     {
       "dissent": false,
+      "id": "northwest-indian-war--treaty-of-greenville--caused",
+      "kind": "edge",
+      "locator": "\"Treaty of Greenville\", revision 1375606163"
+    },
+    {
+      "dissent": false,
       "id": "october-revolution--execution-of-the-romanov-family--precondition-of",
       "kind": "edge",
       "locator": "\"Murder of the Romanov family\", revision 1374973698, § lead"
@@ -20219,6 +20225,12 @@
       "id": "treaty-of-fussen",
       "kind": "event",
       "locator": "\"Treaty of Füssen\", revision 1332417337"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-greenville",
+      "kind": "event",
+      "locator": "\"Treaty of Greenville\", revision 1375606163"
     },
     {
       "dissent": false,
