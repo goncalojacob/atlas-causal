@@ -11216,6 +11216,12 @@
     },
     {
       "dissent": false,
+      "id": "anglo-japanese-friendship-treaty",
+      "kind": "event",
+      "locator": "\"Anglo-Japanese Friendship Treaty\", revision 1316160821"
+    },
+    {
+      "dissent": false,
       "id": "anglo-powhatan-wars",
       "kind": "event",
       "locator": "\"Anglo-Powhatan Wars\", revision 1376206768"
@@ -15023,6 +15029,18 @@
       "id": "continuation-war",
       "kind": "event",
       "locator": "\"Continuation War\", revision 1376075240"
+    },
+    {
+      "dissent": false,
+      "id": "convention-of-kanagawa",
+      "kind": "event",
+      "locator": "\"Convention of Kanagawa\", revision 1351937081"
+    },
+    {
+      "dissent": false,
+      "id": "convention-of-peking",
+      "kind": "event",
+      "locator": "\"Convention of Peking\", revision 1377776929"
     },
     {
       "dissent": false,
@@ -20366,9 +20384,33 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-adrianople-1829",
+      "kind": "event",
+      "locator": "\"Treaty of Adrianople (1829)\", revision 1353215566"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-alcacovas",
       "kind": "event",
       "locator": "\"Treaty of Alcáçovas\", revision 1362673672"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-allahabad",
+      "kind": "event",
+      "locator": "\"Treaty of Allahabad\", revision 1368931189"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-amity-and-commerce-united-states-japan",
+      "kind": "event",
+      "locator": "\"Treaty of Amity and Commerce (United States–Japan)\", revision 1371935103"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-amritsar-1846",
+      "kind": "event",
+      "locator": "\"Treaty of Amritsar (1846)\", revision 1340761720"
     },
     {
       "dissent": false,
@@ -20507,6 +20549,12 @@
       "id": "treaty-of-rome",
       "kind": "event",
       "locator": "\"Treaty of Rome\", revision 1311520265"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-salbai",
+      "kind": "event",
+      "locator": "\"Treaty of Salbai\", revision 1375500475"
     },
     {
       "dissent": false,

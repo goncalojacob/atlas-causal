@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "alahabad-pakistan",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q56304924",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Alahabad, Pakistan"
+  },
+  "sources": [],
+  "names": [
+    "Alahabad, Pakistan"
+  ],
+  "where": {
+    "lon": 74.058394,
+    "lat": 30.876556,
+    "precision": "city",
+    "label": "Alahabad, Pakistan"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

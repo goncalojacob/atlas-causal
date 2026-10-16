@@ -2840,6 +2840,12 @@
     },
     {
       "dissent": false,
+      "id": "anglo-japanese-friendship-treaty",
+      "kind": "event",
+      "locator": "Q1342523"
+    },
+    {
+      "dissent": false,
       "id": "anglo-powhatan-wars",
       "kind": "event",
       "locator": "Q1342672"
@@ -6713,6 +6719,18 @@
       "id": "continuation-war",
       "kind": "event",
       "locator": "Q122100"
+    },
+    {
+      "dissent": false,
+      "id": "convention-of-kanagawa",
+      "kind": "event",
+      "locator": "Q771451"
+    },
+    {
+      "dissent": false,
+      "id": "convention-of-peking",
+      "kind": "event",
+      "locator": "Q604938"
     },
     {
       "dissent": false,
@@ -11948,9 +11966,33 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-adrianople-1829",
+      "kind": "event",
+      "locator": "Q137847"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-alcacovas",
       "kind": "event",
       "locator": "Q593355"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-allahabad",
+      "kind": "event",
+      "locator": "Q4062556"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-amity-and-commerce-united-states-japan",
+      "kind": "event",
+      "locator": "Q1194699"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-amritsar-1846",
+      "kind": "event",
+      "locator": "Q3305294"
     },
     {
       "dissent": false,
@@ -12143,6 +12185,12 @@
       "id": "treaty-of-rome",
       "kind": "event",
       "locator": "Q167457, P31 Q11122"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-salbai",
+      "kind": "event",
+      "locator": "Q2985337"
     },
     {
       "dissent": false,

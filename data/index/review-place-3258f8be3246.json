@@ -564,6 +564,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "alahabad-pakistan",
+      "kind": "place",
+      "names": [
+        "Alahabad, Pakistan"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -765,6 +792,33 @@
       "kind": "place",
       "names": [
         "Amour Range"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "amritsar",
+      "kind": "place",
+      "names": [
+        "Amritsar"
       ],
       "origin": {
         "tool": "wikidata"
@@ -2091,6 +2145,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "beijing",
+      "kind": "place",
+      "names": [
+        "Beijing",
+        "Pequim"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -6779,6 +6861,33 @@
           "a9-place"
         ],
         "note": "Written by A9's place pass on 2026-09-24: P17 of an event's item names Q736, whose P625 is this point. Precision `country`: the class table calls the item an actor, because it answers what kind of RECORD an item becomes and a sovereign state becomes one; A9 asks where an event happened, and A12 (2) names `country` for that.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "edirne",
+      "kind": "place",
+      "names": [
+        "Edirne"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -16187,6 +16296,33 @@
       "names": [
         "Nagapattinam",
         "Negapatão"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "nagasaki",
+      "kind": "place",
+      "names": [
+        "Nagasaki"
       ],
       "origin": {
         "tool": "wikidata"
@@ -27228,6 +27364,33 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q75150, Yingkou, reached by A9's second step from Q4311063's P276 because the raid item carries no P625 of its own. precision city from Q75150's own class Q1549591, big city.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "yokohama",
+      "kind": "place",
+      "names": [
+        "Yokohama"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
