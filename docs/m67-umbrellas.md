@@ -1865,3 +1865,11 @@ Writer A filed it there because the planner's queue asked for it in item `2026-1
 ## Writer A, 2026-10-16: `battle-of-intombe`, filed under `anglo-zulu-war` with neither an actor nor a place
 
 Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-010`, rank `child-of:anglo-zulu-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `battle-of-isly`, filed under `franco-moroccan-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-025`, rank `child-of:franco-moroccan-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `panjdeh-incident`, filed under `great-game` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-asia-027`, rank `child-of:great-game`. Its span and its subject put it inside the umbrella.

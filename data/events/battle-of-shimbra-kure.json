@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-shimbra-kure",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889965",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Shimbra Kure",
+    "pt": "Batalha de Shimbra Kure"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889965"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Shimbra Kure\", revision 1373825639"
+    }
+  ],
+  "title": "Battle of Shimbra Kure",
+  "summary": "The English Wikipedia article \"Battle of Shimbra Kure\", at revision 1373825639, opens: \"The Battle of Shimbra Kure was fought on 9 March 1529 between the forces of Adal led by Imam Ahmad ibn Ibrahim al-Ghazi, and the Abyssinian army, under Dawit II. It was the first major battle of the Ethiopian–Adal War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889965, imported by tools/import/wikidata.mjs. The item's own description reads \"1529 battle between the Ethiopian Empire and Adal Sultanate\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1529,
+    "end": 1529,
+    "date": "1529-03-09"
+  },
+  "place": "ethiopian-empire",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ethiopian-adal-war"
+}

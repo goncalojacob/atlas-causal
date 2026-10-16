@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "panjdeh-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2993585",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Panjdeh incident",
+    "pt": "Incidente de Panjdeh"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2993585"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Panjdeh incident\", revision 1380332821"
+    }
+  ],
+  "title": "Panjdeh incident",
+  "summary": "The English Wikipedia article \"Panjdeh incident\", at revision 1380332821, opens: \"The Panjdeh incident was an armed engagement between the Emirate of Afghanistan and the Russian Empire in 1885 that led to a diplomatic crisis between the United Kingdom and the Russian Empire regarding the Russian expansion south-eastwards towards the Emirate of Afghanistan and the British Raj (India). After nearly completing the Russian conquest of Central Asia, the Russians captured an Afghan border fort, threatening British interests in the area. Seeing this as a threat to their rule in India, Britain prepared for war but both sides backed down and the matter was settled diplomatically, with the Russians and Afghans exchanging territories. The incident halted further Russian expansion in Asia, except for the Pamir Mountains, and resulted in the definition of the north-western border of Afghanistan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2993585, imported by tools/import/wikidata.mjs. The item's own description reads \"1885 battle between Russian Empire and Emirate of Afghanistan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-02",
+    "endDate": "1885-03-30"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "great-game"
+}
