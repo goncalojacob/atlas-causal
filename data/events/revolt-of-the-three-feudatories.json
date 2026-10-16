@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "revolt-of-the-three-feudatories",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q112501",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Revolt of the Three Feudatories",
+    "pt": "Revolta dos Três Feudatórios"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q112501"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolt of the Three Feudatories\", revision 1370706968"
+    }
+  ],
+  "title": "Revolt of the Three Feudatories",
+  "summary": "The English Wikipedia article \"Revolt of the Three Feudatories\", at revision 1370706968, opens: \"The Revolt of the Three Feudatories, also known as the Rebellion of Wu Sangui, was a rebellion lasting from 1673 to 1681 in the early Qing dynasty of China, during the reign of the Kangxi Emperor. The revolt was led by Wu Sangui, Shang Zhixin, and Geng Jingzhong, the three ethnic Han lords of Yunnan, Guangdong, and Fujian provinces whose hereditary titles were given to them for defecting to and helping the Qing dynasty conquer China proper, who rebelled after the Qing central government started abolishing their fiefs. The feudatories were supported by Zheng Jing's Kingdom of Tungning on the island of Taiwan, which sent forces to invade Mainland China. Additionally, minor Han military figures, such as Wang Fuchen, and the Chahar Mongols, also revolted against Qing rule.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q112501, imported by tools/import/wikidata.mjs. The item's own description reads \"rebellion in China lasting from 1673 to 1681\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1673,
+    "end": 1681
+  },
+  "place": "yangtze",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "transition-from-ming-to-qing"
+}

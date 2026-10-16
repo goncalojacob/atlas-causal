@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "cayuse-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1052060",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Cayuse War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1052060"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cayuse War\", revision 1370610454"
+    }
+  ],
+  "title": "Cayuse War",
+  "summary": "The English Wikipedia article \"Cayuse War\", at revision 1370610454, opens: \"The Cayuse War (1847–1855) was an armed conflict between the Cayuse people of the Northwestern United States and settlers, backed by the U.S. government. The conflict was triggered by the Whitman massacre of 1847, where the Cayuse attacked a missionary outpost in response to a deadly measles epidemic that they believed was caused by Marcus Whitman. Over the next few years, the Provisional Government of Oregon and later the United States Army battled the Native Americans east of the Cascades. This was the first of several wars between the Native Americans and American settlers in that region that would lead to the negotiations between the United States and Native Americans of the Columbia Plateau, creating several Indian reservations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1052060, imported by tools/import/wikidata.mjs. The item's own description reads \"war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1847,
+    "end": 1855
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

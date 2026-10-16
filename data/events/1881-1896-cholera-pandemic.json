@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1881-1896-cholera-pandemic",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5447588",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "1881–1896 cholera pandemic"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5447588"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1881–1896 cholera pandemic\", revision 1374215598"
+    }
+  ],
+  "title": "1881–1896 cholera pandemic",
+  "summary": "The English Wikipedia article \"1881–1896 cholera pandemic\", at revision 1374215598, opens: \"The fifth cholera pandemic (1881–1896) was the fifth major international outbreak of cholera in the 19th century.\nThe endemic origin of the pandemic, as with those of its predecessors, was in the Ganges Delta in West Bengal. While the Vibrio cholerae bacteria had not been able to spread to western Europe until the 19th century, faster and improved modes of modern transportation, such as steamships and railways, reduced the duration of the journey considerably and facilitated the transmission of cholera and other infectious diseases. During the fourth 1863–1875 cholera pandemic, the third International Sanitary Conference convened in 1866 in Constantinople had identified religious pilgrimages to be \"the most powerful of all causes\" of cholera and again Hindu and Muslim pilgrimages were an important factor in the spread of the disease.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5447588, imported by tools/import/wikidata.mjs. The item's own description reads \"fifth major international outbreak of cholera in the 19th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1881,
+    "end": 1896
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

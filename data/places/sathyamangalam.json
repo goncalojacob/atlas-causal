@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "sathyamangalam",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q242563",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Sathyamangalam"
+  },
+  "sources": [],
+  "names": [
+    "Sathyamangalam"
+  ],
+  "where": {
+    "lon": 77.25,
+    "lat": 11.5167,
+    "precision": "city",
+    "label": "Sathyamangalam"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

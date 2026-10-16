@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "multan-q185453",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q185453",
+  "sitelinks": {
+    "count": 76,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Multan",
+    "pt": "Multã"
+  },
+  "sources": [],
+  "names": [
+    "Multan",
+    "Multã"
+  ],
+  "where": {
+    "lon": 71.47111111111111,
+    "lat": 30.197777777777777,
+    "precision": "city",
+    "label": "Multan"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
