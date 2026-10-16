@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ghazni",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q173731",
+  "sitelinks": {
+    "count": 76,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Ghazni",
+    "pt": "Gásni"
+  },
+  "sources": [],
+  "names": [
+    "Ghazni",
+    "Gázni",
+    "Gásni"
+  ],
+  "where": {
+    "lon": 68.423333333333,
+    "lat": 33.549166666667,
+    "precision": "city",
+    "label": "Ghazni"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

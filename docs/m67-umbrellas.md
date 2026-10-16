@@ -2084,3 +2084,22 @@ Writer A filed it there because the planner's queue asked for it in item `2026-1
 ## Writer A, 2026-10-16: `battle-of-jao-modo`, filed under `dzungar-qing-wars` with neither an actor nor a place
 
 Writer A filed it there because the planner's queue asked for it in item `2026-10-16-asia-131`, rank `child-of:dzungar-qing-wars`. Its span and its subject put it inside the umbrella.
+## Writer B, 2026-10-16: `battle-of-the-taku-forts-1900`, filed under `boxer-rebellion` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-104`, rank `child-of:boxer-rebellion`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `battle-of-ali-masjid`, filed under `second-anglo-afghan-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-118`, rank `child-of:second-anglo-afghan-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `battle-of-peiwar-kotal`, filed under `second-anglo-afghan-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-120`, rank `child-of:second-anglo-afghan-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `battle-of-ky-hoa`, filed under `cochinchina-campaign` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-124`, rank `child-of:cochinchina-campaign`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `tianjing-incident`, filed under `taiping-rebellion` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-128`, rank `child-of:taiping-rebellion`. Its span and its subject put it inside the umbrella.

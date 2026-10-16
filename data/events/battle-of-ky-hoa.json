@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-ky-hoa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3892142",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Kỳ Hòa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3892142"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kỳ Hòa\", revision 1370446709"
+    }
+  ],
+  "title": "Battle of Kỳ Hòa",
+  "summary": "The English Wikipedia article \"Battle of Kỳ Hòa\", at revision 1370446709, opens: \"The Battle of Kỳ Hòa on 24 and 25 February 1861 was an important French victory in the Cochinchina campaign (1858–62). This campaign, fought between the French and the Spanish on the one side and the Vietnamese on the other, began as a limited punitive expedition and ended as a French war of conquest. The war concluded with the establishment of the French colony of Cochinchina, a development that inaugurated nearly a century of French colonial dominance in Vietnam.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3892142, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-02"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "cochinchina-campaign"
+}
