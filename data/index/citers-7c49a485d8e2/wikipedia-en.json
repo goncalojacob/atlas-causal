@@ -10946,6 +10946,12 @@
     },
     {
       "dissent": false,
+      "id": "action-of-1-august-1801",
+      "kind": "event",
+      "locator": "\"Action of 1 August 1801\", revision 1370425773"
+    },
+    {
+      "dissent": false,
       "id": "action-of-1-january-1800",
       "kind": "event",
       "locator": "\"Action of 1 January 1800\", revision 1370425777"
@@ -12260,6 +12266,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gingindlovu",
+      "kind": "event",
+      "locator": "\"Battle of Gingindlovu\", revision 1370441634"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ginnis",
       "kind": "event",
       "locator": "\"Battle of Ginnis\", revision 1370441639"
@@ -12383,6 +12395,12 @@
       "id": "battle-of-herbsthausen",
       "kind": "event",
       "locator": "\"Battle of Herbsthausen\", revision 1370442917"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-hlobane",
+      "kind": "event",
+      "locator": "\"Battle of Hlobane\", revision 1379912338"
     },
     {
       "dissent": false,
@@ -12572,6 +12590,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kambula",
+      "kind": "event",
+      "locator": "\"Battle of Kambula\", revision 1379911823"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kapyong",
       "kind": "event",
       "locator": "\"Battle of Kapyong\", revision 1376150205"
@@ -12647,6 +12671,12 @@
       "id": "battle-of-korsakov",
       "kind": "event",
       "locator": "\"Battle of Korsakov\", revision 1370446023"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kraaipan",
+      "kind": "event",
+      "locator": "\"Battle of Kraaipan\", revision 1370446169"
     },
     {
       "dissent": false,
@@ -12893,6 +12923,12 @@
       "id": "battle-of-mataquito",
       "kind": "event",
       "locator": "\"Battle of Mataquito\", revision 1376467018"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mazagran",
+      "kind": "event",
+      "locator": "\"Battle of Mazagran\", revision 1370269229"
     },
     {
       "dissent": false,
@@ -13652,6 +13688,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-staoueli",
+      "kind": "event",
+      "locator": "\"Battle of Staouéli\", revision 1375734990"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-stormberg",
       "kind": "event",
       "locator": "\"Battle of Stormberg\", revision 1370589985"
@@ -13925,6 +13967,12 @@
       "id": "battle-of-the-sesia-1524",
       "kind": "event",
       "locator": "\"Battle of the Sesia (1524)\", revision 1370602200"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-smala",
+      "kind": "event",
+      "locator": "\"Battle of the Smala\", revision 1370602346"
     },
     {
       "dissent": false,
@@ -19157,6 +19205,12 @@
       "id": "siege-of-el-arish",
       "kind": "event",
       "locator": "\"Siege of El Arish\", revision 1372136661"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-eshowe",
+      "kind": "event",
+      "locator": "\"Siege of Eshowe\", revision 1370741060"
     },
     {
       "dissent": false,

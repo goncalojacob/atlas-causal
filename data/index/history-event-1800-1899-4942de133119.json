@@ -351,6 +351,15 @@
         }
       ]
     },
+    "action-of-1-august-1801": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "action-of-1-january-1800": {
       "from": "git",
       "versions": [
@@ -756,6 +765,15 @@
         }
       ]
     },
+    "battle-of-gingindlovu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-ginnis": {
       "from": "git",
       "versions": [
@@ -792,6 +810,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-hlobane": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -855,7 +882,25 @@
         }
       ]
     },
+    "battle-of-kambula": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-kassala": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-kraaipan": {
       "from": "git",
       "versions": [
         {
@@ -921,6 +966,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-mazagran": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -1046,6 +1100,15 @@
         }
       ]
     },
+    "battle-of-staoueli": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-stormberg": {
       "from": "git",
       "versions": [
@@ -1130,6 +1193,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-the-smala": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -3204,6 +3276,15 @@
       ]
     },
     "siege-of-constantine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-eshowe": {
       "from": "git",
       "versions": [
         {
