@@ -119,6 +119,13 @@ does not read the pool files.
     and anything in brackets. The atlas held the Haitian Revolution as "The
     Haitian Revolution", with no Wikidata id, and a second record was
     written on 15 October before the assistant removed it.
+    **Since 16 October the planner does not look for links.** The owner:
+    *"let's unlock the planner for now and look for the links later"*. The
+    planner queues each event with `"edges": []` and reads no article for a
+    causal sentence. It still checks the class, the dates, the lane, the
+    filing and that the atlas does not hold the event. A later pass looks
+    for the links. The planner hands items to the writers by turn, A then B,
+    in any lane, and queues about a hundred a fire.
     Writer A takes `africa`, `asia` and `europe` on branch `m42`. Writer B
     takes `americas` on branch `m42b`. A writer never imports what the other
     branch holds.

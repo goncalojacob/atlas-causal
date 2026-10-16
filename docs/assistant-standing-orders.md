@@ -528,3 +528,18 @@ lessons.
 
 **To resume.** Open a snapshot for the ten records on `m0`. Re-enable the planner and the two writers.
 The window and the model rule (sections 12 and 14) still hold.
+
+## 16. 16 October: faster imports, links later
+
+The owner asked why events came in slowly. The night of 15 October wrote
+about ten an hour. The planner set the pace: it read every article for a
+causal sentence, though nearly every item ended with no edge. Writer B also
+sat idle, since it took only the Americas. The owner then wrote: "You can
+implement all of those, let's unlock the planner for now and look for the
+links later". So:
+- The planner queues events without edges and reads no article for links
+  (rules card 13). It aims for about a hundred items a fire.
+- The planner hands out items by turn, so both writers work in any lane.
+  The queue tool's lane check allows that since branch `m94`.
+- Each writer fire takes up to forty items.
+- Links come later, in a separate pass the owner will start.
