@@ -3700,6 +3700,18 @@
         "place": "zmalet-el-emir-abdelkader"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-001",
+      "writer": "B",
+      "fired": "2026-10-16T06:42Z",
+      "status": "written",
+      "written": {
+        "event": "spanish-american-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

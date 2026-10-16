@@ -24074,10 +24074,12 @@ where the previous stand carried it as standing.
 ## Milestones landed
 
 Writer B started 2026-10-15T23:42:00Z by scheduled
+Writer B started 2026-10-16T06:42:30Z by scheduled
 
 Writer B 2026-10-15T23:42:00Z: 0 written, 0 partial, 3 refused, 7 skipped
 
 Writer B started 2026-10-13T23:41:58Z by scheduled
+Writer B started 2026-10-16T06:42:30Z by scheduled
 
 **M42b batches 78 to 81 — eleven active events, three edges, and africa before 1800 given a
 method, 2 October.** The 07:36Z fire. Four batches off two sweeps, and the two things worth
@@ -25745,7 +25747,9 @@ among them `summary-missing`, `parent-cycle` and `edge-cycle` as refusal codes).
 M90 done
 
 Writer B started 2026-10-12T17:42:21Z
+Writer B started 2026-10-16T06:42:30Z by scheduled
 Writer B started 2026-10-12T19:42:28Z
+Writer B started 2026-10-16T06:42:30Z by scheduled
 
 Writer A started 2026-10-12T16:22:36Z by scheduled
 
@@ -25756,7 +25760,9 @@ Writer A 2026-10-12T18:26:05Z: 3 written, 0 partial, 0 refused, 0 skipped
 Writer A started 2026-10-12T19:22:41Z by scheduled
 
 Writer B started 2026-10-12T21:42:35Z
+Writer B started 2026-10-16T06:42:30Z by scheduled
 Writer B started 2026-10-12T23:42:08Z
+Writer B started 2026-10-16T06:42:30Z by scheduled
 
 Writer A started 2026-10-12T21:22:13Z by scheduled
 
@@ -25811,6 +25817,7 @@ Writer A started 2026-10-13T02:21:51Z by scheduled
 
 Writer A 2026-10-13T02:27:46Z: 7 written, 0 partial, 3 refused, 0 skipped
 Writer B started 2026-10-13T02:42:36Z by scheduled
+Writer B started 2026-10-16T06:42:30Z by scheduled
 
 Writer B 2026-10-13T02:47:00Z: 9 written, 1 partial, 0 refused, 0 skipped
 M92 started 2026-10-13T02:00:00Z by the assistant (branch m92)
@@ -25839,10 +25846,12 @@ Writer A started 2026-10-13T03:21:37Z by scheduled
 Writer A 2026-10-13T03:25:49Z: 10 written, 0 partial, 0 refused, 0 skipped
 
 Writer B started 2026-10-13T03:42:21Z by scheduled
+Writer B started 2026-10-16T06:42:30Z by scheduled
 
 Writer B 2026-10-13T03:46:04Z: 1 written, 0 partial, 0 refused, 0 skipped
 
 Writer B started 2026-10-13T04:46:09Z by scheduled
+Writer B started 2026-10-16T06:42:30Z by scheduled
 Rewriter started 2026-10-13T03:53:02Z by scheduled
 
 Rewriter 2026-10-13T04:12:58Z: 219 records rewritten, 131 left, 3685 of 4940 done
@@ -25853,6 +25862,7 @@ Writer A started 2026-10-13T05:22:03Z by scheduled
 
 Writer A 2026-10-13T05:26:49Z: 4 written, 0 partial, 0 refused, 0 skipped
 Writer B started 2026-10-13T05:42:55Z by scheduled
+Writer B started 2026-10-16T06:42:30Z by scheduled
 
 Writer B 2026-10-13T05:46:50Z: 5 written, 0 partial, 0 refused, 1 skipped
 Rewriter 2026-10-13T05:12:15Z: 241 records rewritten, 11 left, 3926 of 4940 done
@@ -25863,6 +25873,7 @@ Writer A started 2026-10-13T06:22:23Z by scheduled
 
 Writer A 2026-10-13T06:27:48Z: 8 written, 0 partial, 0 refused, 2 skipped
 Writer B started 2026-10-13T06:42:10Z by scheduled
+Writer B started 2026-10-16T06:42:30Z by scheduled
 Rewriter 2026-10-13T06:16:19Z: 128 records rewritten, 44 left, 4054 of 4962 done
 
 Rewriter started 2026-10-13T06:53:24Z by scheduled
@@ -25878,6 +25889,7 @@ Writer A 2026-10-14T00:25:41Z: 8 written, 0 partial, 0 refused, 2 skipped
 
 
 Writer B started 2026-10-14T00:41:58Z by scheduled
+Writer B started 2026-10-16T06:42:30Z by scheduled
 
 Writer B 2026-10-14T00:42:58Z: 4 written, 0 partial, 1 refused, 0 skipped
 
@@ -25890,6 +25902,7 @@ Rewriter started 2026-10-14T00:53:05Z by scheduled
 Rewriter 2026-10-14T01:06:08Z: 69 records rewritten, 31 left, 4291 of 4974 done
 
 Writer B started 2026-10-14T02:41:52Z by scheduled
+Writer B started 2026-10-16T06:42:30Z by scheduled
 
 Writer A started 2026-10-14T01:22:01Z by scheduled
 Writer A 2026-10-14T01:24:40Z: 9 written, 0 partial, 1 refused, 0 skipped
@@ -25906,6 +25919,7 @@ Writer A started 2026-10-14T03:22:27Z by scheduled
 Writer A 2026-10-14T03:22:27Z: 7 written, 0 partial, 0 refused, 0 skipped
 
 Writer B started 2026-10-14T03:42:31Z by scheduled
+Writer B started 2026-10-16T06:42:30Z by scheduled
 
 Writer B 2026-10-14T03:45:20Z: 6 written, 0 partial, 0 refused, 0 skipped
 
@@ -25947,6 +25961,7 @@ Writer A started 2026-10-16T00:22:15Z by scheduled
 
 Writer A 2026-10-16T00:22:15Z: 9 written, 0 partial, 1 refused, 0 skipped
 Writer B started 2026-10-16T00:41:41Z by scheduled
+Writer B started 2026-10-16T06:42:30Z by scheduled
 Writer B 2026-10-16T00:41:41Z: 1 written, 0 partial, 0 refused, 0 skipped
 
 Writer A started 2026-10-16T01:21:52Z by scheduled
@@ -25961,9 +25976,12 @@ Writer A 2026-10-16T03:24:42Z: 8 written, 0 partial, 2 refused, 0 skipped
 
 Writer A started 2026-10-16T04:21:43Z by scheduled
 Writer A 2026-10-16T04:21:43Z: 8 written, 0 partial, 2 refused, 0 skipped
+Writer B started 2026-10-16T05:42:15Z by scheduled
+Writer B started 2026-10-16T06:42:30Z by scheduled
 
 Writer A started 2026-10-16T05:22:18Z by scheduled
 Writer A 2026-10-16T05:26:03Z: 10 written, 0 partial, 0 refused, 0 skipped
 
 Writer A started 2026-10-16T06:23:12Z by scheduled
 Writer A 2026-10-16T06:25:42Z: 9 written, 0 partial, 1 refused, 0 skipped
+Writer B 2026-10-16T06:44:27Z: 1 written, 0 partial, 0 refused, 0 skipped
