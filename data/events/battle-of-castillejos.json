@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-castillejos",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888254",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Castillejos",
+    "pt": "Batalha dos Castillejos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888254"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Castillejos\", revision 1370436542"
+    }
+  ],
+  "title": "Battle of Castillejos",
+  "summary": "The English Wikipedia article \"Battle of Castillejos\", at revision 1370436542, opens: \"The Battle of Castillejos was fought on New Year's Day, 1860, between the Spanish Army of Africa under Leopoldo O'Donnell and the Moroccan Army under Mawlay Abbas in Fnideq (Castillejos) as the Spanish army attempted to capture the cities of Tétouan and Tangier. The Spanish were victorious.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888254, imported by tools/import/wikidata.mjs. The item's own description reads \"1860 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1860,
+    "end": 1860,
+    "date": "1860-01-01"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "hispano-moroccan-war-1859-1860"
+}

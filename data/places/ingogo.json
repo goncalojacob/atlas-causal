@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ingogo",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2778759",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Ingogo"
+  },
+  "sources": [],
+  "names": [
+    "Ingogo"
+  ],
+  "where": {
+    "lon": 29.912,
+    "lat": -27.578,
+    "precision": "city",
+    "label": "Ingogo"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

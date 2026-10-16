@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-ueno",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q715562",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Ueno",
+    "pt": "Batalha de Ueno"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q715562"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ueno\", revision 1370275970"
+    }
+  ],
+  "title": "Battle of Ueno",
+  "summary": "The English Wikipedia article \"Battle of Ueno\", at revision 1370275970, opens: \"The Battle of Ueno  was a battle of the Boshin War, which occurred on 4 July 1868, between the troops of the Shōgitai under Shibusawa Seiichirō and Amano Hachirō, and Imperial \"Kangun\" troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q715562, imported by tools/import/wikidata.mjs. The item's own description reads \"1868 battle of the Boshin War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1868,
+    "date": "1868-07-04"
+  },
+  "place": "ueno",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "boshin-war"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-weihaiwei",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1185335",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Weihaiwei"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1185335"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Weihaiwei\", revision 1373563917"
+    }
+  ],
+  "title": "Battle of Weihaiwei",
+  "summary": "The English Wikipedia article \"Battle of Weihaiwei\", at revision 1373563917, opens: \"The Battle of Weihaiwei (Japanese: Ikaiei-no-tatakai  took place between 20 January and 12 February 1895, during the First Sino-Japanese War in Weihai, Shandong Province, China, between the forces of Japan and Qing China. In early January 1895, the Japanese landed forces in eastern Shandong, positioning them behind the Chinese naval base at Weihaiwei.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1185335, imported by tools/import/wikidata.mjs. The item's own description reads \"1895 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1895,
+    "end": 1895,
+    "date": "1895-01-20",
+    "endDate": "1895-02-12"
+  },
+  "place": "weihai",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-sino-japanese-war"
+}

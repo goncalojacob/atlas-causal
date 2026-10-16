@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "wallachian-uprising-of-1821",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2661754",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Wallachian uprising of 1821"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2661754"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Wallachian uprising of 1821\", revision 1370749496"
+    }
+  ],
+  "title": "Wallachian uprising of 1821",
+  "summary": "The English Wikipedia article \"Wallachian uprising of 1821\", at revision 1370749496, opens: \"The uprising of 1821 was a social and political rebellion in Wallachia, which was at the time a tributary state of the Ottoman Empire. It originated as a movement against the Phanariote administration, with backing from the more conservative boyars, but mutated into an attempted removal of the boyar class. Though not directed against Ottoman rule, the revolt espoused an early version of Romanian nationalism, and is described by historians as the first major event of a national awakening. The revolutionary force was centered on a group of Pandur irregulars, whose leader was Tudor Vladimirescu. The center of the uprising was the Wallachian subregion of Oltenia, where Vladimirescu established his \"Assembly of the People\" in February.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2661754, imported by tools/import/wikidata.mjs. The item's own description reads \"social and political rebellion in Wallachia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821
+  },
+  "place": "wallachia",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

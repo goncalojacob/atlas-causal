@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-maiwand",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q548625",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Maiwand",
+    "pt": "Batalha de Maiwand"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q548625"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Maiwand\", revision 1380439939"
+    }
+  ],
+  "title": "Battle of Maiwand",
+  "summary": "The English Wikipedia article \"Battle of Maiwand\", at revision 1380439939, opens: \"The Battle of Maiwand was fought on 27 July 1880 during the Second Anglo-Afghan War. Fought near the village of Maiwand in Kandahar Province, the battle resulted in an Afghan army of 25,000 regulars and irregulars under Mohammad Ayub Khan defeating a force of 2,476 British and Indian troops under Brigadier-general George Burrows. The Afghans suffered between 2,500 and 3,000 men killed and wounded while Burrows' force suffered possibly as high as 1,200 killed. Though the battle proved to be a major setback for the British, they would go on to decisively defeat Ayub Khan at the Battle of Kandahar on 1 September.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q548625, imported by tools/import/wikidata.mjs. The item's own description reads \"1880 battle of the Second Anglo-Afghan War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1880,
+    "end": 1880,
+    "date": "1880-07-27"
+  },
+  "place": "maiwand",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-anglo-afghan-war"
+}

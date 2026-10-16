@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-tirad-pass",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3490568",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Tirad Pass",
+    "pt": "Batalha do passo de Tirad"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3490568"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tirad Pass\", revision 1379490107"
+    }
+  ],
+  "title": "Battle of Tirad Pass",
+  "summary": "The English Wikipedia article \"Battle of Tirad Pass\", at revision 1379490107, opens: \"The Battle of Tirad Pass, sometimes referred to as the Philippine Thermopylae, took place during the Philippine–American War on December 2, 1899, in northern Luzon in the Philippines. A 60-man Filipino rear guard commanded by Brigadier General Gregorio del Pilar succumbed to more than 500 Americans, mostly of the 33rd Volunteer Infantry Regiment under Major Peyton C. March, while delaying the American advance to ensure that President Emilio Aguinaldo and his troops escaped.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3490568, imported by tools/import/wikidata.mjs. The item's own description reads \"1899 battle of the Philippine–American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-12-02"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-american-war"
+}

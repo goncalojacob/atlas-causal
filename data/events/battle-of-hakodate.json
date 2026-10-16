@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-hakodate",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q716562",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Hakodate",
+    "pt": "Batalha de Hakodate"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q716562"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Hakodate\", revision 1370265167"
+    }
+  ],
+  "title": "Battle of Hakodate",
+  "summary": "The English Wikipedia article \"Battle of Hakodate\", at revision 1370265167, opens: \"The Battle of Hakodate  was fought in Japan from December 4, 1868, to June 27, 1869, between the remnants of the Tokugawa shogunate army, consolidated into the armed forces of the rebel Ezo Republic, and the armies of the newly formed Imperial government. It was the last stage of the Boshin War, and occurred around Hakodate in the northern Japanese island of Hokkaidō. In Japanese, it is also known as the Battle of Goryōkaku .\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q716562, imported by tools/import/wikidata.mjs. The item's own description reads \"last stage of the Boshin War, occurring around Hakodate in the northern Japanese island of Hokkaidō\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1869,
+    "date": "1868-12-04",
+    "endDate": "1869-06-27"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "boshin-war"
+}

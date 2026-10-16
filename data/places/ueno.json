@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "ueno",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q576781",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Ueno",
+    "pt": "Ueno (Tóquio)"
+  },
+  "sources": [],
+  "names": [
+    "Ueno",
+    "Ueno (Tóquio)"
+  ],
+  "where": {
+    "lon": 139.7763888888889,
+    "lat": 35.71333333333333,
+    "precision": "region",
+    "label": "Ueno"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

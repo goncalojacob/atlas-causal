@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-fuzhou",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2562509",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Fuzhou"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2562509"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fuzhou\", revision 1370441165"
+    }
+  ],
+  "title": "Battle of Fuzhou",
+  "summary": "The English Wikipedia article \"Battle of Fuzhou\", at revision 1370441165, opens: \"The Battle of Fuzhou, or Battle of Foochow, also known as the Battle of the Pagoda Anchorage, was the opening engagement of the 16-month Sino-French War. The battle was fought on 23 August 1884 off the Pagoda Anchorage in Mawei (馬尾) harbour, 15 kilometres (9.3 mi) to the southeast of the city of Fuzhou (Foochow). During the battle Admiral Amédée Courbet's Far East Squadron virtually destroyed the Fujian Fleet, one of the Qing dynasty's four regional fleets.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2562509, imported by tools/import/wikidata.mjs. The item's own description reads \"1884 battle between China and France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1884,
+    "end": 1884,
+    "date": "1884-08-23",
+    "endDate": "1884-08-26"
+  },
+  "place": "fuzhou",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "sino-french-war"
+}

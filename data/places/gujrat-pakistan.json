@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "gujrat-pakistan",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q929062",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Gujrat, Pakistan",
+    "pt": "Gujrat"
+  },
+  "sources": [],
+  "names": [
+    "Gujrat",
+    "Gujrat, Pakistan"
+  ],
+  "where": {
+    "lon": 74.078888888889,
+    "lat": 32.573611111111,
+    "precision": "city",
+    "label": "Gujrat, Pakistan"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
