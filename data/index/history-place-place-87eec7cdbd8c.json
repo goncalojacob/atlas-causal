@@ -512,6 +512,15 @@
         }
       ]
     },
+    "arrah": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "arras": {
       "from": "git",
       "versions": [
@@ -765,6 +774,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "bangkok": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -1188,6 +1206,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "blida": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -1733,6 +1760,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "california": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -2445,6 +2481,15 @@
         }
       ]
     },
+    "colorado": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "conakry": {
       "from": "git",
       "versions": [
@@ -2919,6 +2964,15 @@
         }
       ]
     },
+    "dharwad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "diabaly": {
       "from": "git",
       "versions": [
@@ -3312,7 +3366,25 @@
         }
       ]
     },
+    "el-mechouar-palace": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "el-obeid": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "el-rahmaniya": {
       "from": "git",
       "versions": [
         {
@@ -3965,6 +4037,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "fushun": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -4946,6 +5027,15 @@
         }
       ]
     },
+    "illinois-q1204": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "imbaba": {
       "from": "git",
       "versions": [
@@ -5392,6 +5482,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "jhansi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -5877,6 +5976,15 @@
       ]
     },
     "konya": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "koppal": {
       "from": "git",
       "versions": [
         {
@@ -7835,6 +7943,15 @@
         }
       ]
     },
+    "multan-q185453": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "mumbai": {
       "from": "git",
       "versions": [
@@ -8572,6 +8689,15 @@
       ]
     },
     "oranie": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "oregon": {
       "from": "git",
       "versions": [
         {
@@ -9633,6 +9759,15 @@
         }
       ]
     },
+    "pyay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "pylos": {
       "from": "git",
       "versions": [
@@ -10657,6 +10792,15 @@
       ]
     },
     "sarh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "sathyamangalam": {
       "from": "git",
       "versions": [
         {
@@ -12758,6 +12902,15 @@
         }
       ]
     },
+    "visayas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "vitoria-de-santo-antao": {
       "from": "git",
       "versions": [
@@ -13277,6 +13430,15 @@
         }
       ]
     },
+    "yangtze": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "yellow-sea": {
       "from": "git",
       "versions": [
@@ -13475,6 +13637,15 @@
       ]
     },
     "zhenhai-ningbo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "zhoushan-island": {
       "from": "git",
       "versions": [
         {

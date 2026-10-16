@@ -21605,6 +21605,15 @@
         }
       ]
     },
+    "seymour-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "shaba-ii": {
       "from": "git",
       "versions": [
@@ -21802,6 +21811,15 @@
       ]
     },
     "siege-of-beitang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-catubig": {
       "from": "git",
       "versions": [
         {

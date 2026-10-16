@@ -1062,12 +1062,30 @@
         }
       ]
     },
+    "battle-of-sarhu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-sekigahara": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "battle-of-song-jin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -2358,6 +2376,15 @@
         }
       ]
     },
+    "revolt-of-the-three-feudatories": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "revolutions-of-tunis": {
       "from": "git",
       "versions": [
@@ -2530,6 +2557,15 @@
         }
       ]
     },
+    "siege-of-bangkok": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "siege-of-bautzen-1620": {
       "from": "git",
       "versions": [
@@ -2545,6 +2581,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-bijapur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

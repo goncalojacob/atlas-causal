@@ -1784,6 +1784,12 @@
     },
     {
       "dissent": false,
+      "id": "1881-1896-cholera-pandemic",
+      "kind": "event",
+      "locator": "Q5447588"
+    },
+    {
+      "dissent": false,
       "id": "1889-1890-pandemic",
       "kind": "event",
       "locator": "Q10658304"
@@ -4028,6 +4034,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-escape-creek",
+      "kind": "event",
+      "locator": "Q18920214"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-falmouth-1690",
       "kind": "event",
       "locator": "Q4871051"
@@ -4253,6 +4265,12 @@
       "id": "battle-of-hakodate",
       "kind": "event",
       "locator": "Q716562"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-halai",
+      "kind": "event",
+      "locator": "Q18164954"
     },
     {
       "dissent": false,
@@ -5384,6 +5402,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-prome",
+      "kind": "event",
+      "locator": "Q4872109"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-providien",
       "kind": "event",
       "locator": "Q2601189"
@@ -5678,6 +5702,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-santa-cruz-1899",
+      "kind": "event",
+      "locator": "Q4872301"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-santiago-de-cuba-1748",
       "kind": "event",
       "locator": "Q4872306"
@@ -5687,6 +5717,12 @@
       "id": "battle-of-sao-salvador",
       "kind": "event",
       "locator": "Q4872479"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sarhu",
+      "kind": "event",
+      "locator": "Q488547"
     },
     {
       "dissent": false,
@@ -5786,9 +5822,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sittimungulum",
+      "kind": "event",
+      "locator": "Q4872387"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sobraon",
       "kind": "event",
       "locator": "Q1573825"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-song-jin",
+      "kind": "event",
+      "locator": "Q4872413"
     },
     {
       "dissent": false,
@@ -6044,6 +6092,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-bogue-1856",
+      "kind": "event",
+      "locator": "Q4872860"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-ch-ongch-on-river",
       "kind": "event",
       "locator": "Q493313"
@@ -6185,6 +6239,12 @@
       "id": "battle-of-the-tugela-heights",
       "kind": "event",
       "locator": "Q4873033"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-visayas-1899",
+      "kind": "event",
+      "locator": "Q22092209"
     },
     {
       "dissent": false,
@@ -6704,6 +6764,12 @@
     },
     {
       "dissent": false,
+      "id": "black-hawk-war",
+      "kind": "event",
+      "locator": "Q879980"
+    },
+    {
+      "dissent": false,
       "id": "black-monday",
       "kind": "event",
       "locator": "Q868261"
@@ -6986,6 +7052,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-chusan",
+      "kind": "event",
+      "locator": "Q5036997"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-demerara-and-essequibo",
       "kind": "event",
       "locator": "Q5037004"
@@ -7025,6 +7097,12 @@
       "id": "capture-of-luanda",
       "kind": "event",
       "locator": "Q5037028"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-lucknow",
+      "kind": "event",
+      "locator": "Q4342054"
     },
     {
       "dissent": false,
@@ -7133,6 +7211,12 @@
       "id": "catatumbo-campaign",
       "kind": "event",
       "locator": "Q66474138"
+    },
+    {
+      "dissent": false,
+      "id": "cayuse-war",
+      "kind": "event",
+      "locator": "Q1052060"
     },
     {
       "dissent": false,
@@ -7280,6 +7364,12 @@
     },
     {
       "dissent": false,
+      "id": "cocoliztli-epidemics",
+      "kind": "event",
+      "locator": "Q63472138"
+    },
+    {
+      "dissent": false,
       "id": "cold-war",
       "kind": "event",
       "locator": "Q8683"
@@ -7319,6 +7409,12 @@
       "id": "colombian-war-of-independence",
       "kind": "event",
       "locator": "Q3063789"
+    },
+    {
+      "dissent": false,
+      "id": "colorado-war",
+      "kind": "event",
+      "locator": "Q2602070"
     },
     {
       "dissent": false,
@@ -8180,6 +8276,12 @@
     },
     {
       "dissent": false,
+      "id": "first-battle-of-blida",
+      "kind": "event",
+      "locator": "Q3062378"
+    },
+    {
+      "dissent": false,
       "id": "first-battle-of-brega",
       "kind": "event",
       "locator": "Q989081"
@@ -8471,6 +8573,12 @@
       "id": "french-and-indian-war",
       "kind": "event",
       "locator": "Q154697"
+    },
+    {
+      "dissent": false,
+      "id": "french-blockade-of-algiers",
+      "kind": "event",
+      "locator": "Q137571917"
     },
     {
       "dissent": false,
@@ -9818,6 +9926,12 @@
     },
     {
       "dissent": false,
+      "id": "medea-expedition-1830",
+      "kind": "event",
+      "locator": "Q21009228"
+    },
+    {
+      "dissent": false,
       "id": "meiji-restoration",
       "kind": "event",
       "locator": "Q8707"
@@ -9851,6 +9965,12 @@
       "id": "milk-bar-cafe-bombing",
       "kind": "event",
       "locator": "Q76832368"
+    },
+    {
+      "dissent": false,
+      "id": "modoc-war",
+      "kind": "event",
+      "locator": "Q2635052"
     },
     {
       "dissent": false,
@@ -10082,6 +10202,12 @@
     },
     {
       "dissent": false,
+      "id": "nez-perce-war",
+      "kind": "event",
+      "locator": "Q1456086"
+    },
+    {
+      "dissent": false,
       "id": "nigerian-civil-war",
       "kind": "event",
       "locator": "Q829875"
@@ -10115,6 +10241,12 @@
       "id": "northeast-coast-campaign-1676",
       "kind": "event",
       "locator": "Q18354826"
+    },
+    {
+      "dissent": false,
+      "id": "northern-expedition-taiping-rebellion",
+      "kind": "event",
+      "locator": "Q6140803"
     },
     {
       "dissent": false,
@@ -10982,6 +11114,12 @@
     },
     {
       "dissent": false,
+      "id": "revolt-of-the-three-feudatories",
+      "kind": "event",
+      "locator": "Q112501"
+    },
+    {
+      "dissent": false,
       "id": "revolution-in-the-kingdom-of-poland",
       "kind": "event",
       "locator": "Q7318712"
@@ -11189,6 +11327,12 @@
       "id": "santiago-de-cuba-uprising",
       "kind": "event",
       "locator": "Q5974095"
+    },
+    {
+      "dissent": false,
+      "id": "sasradilaga-rebellion",
+      "kind": "event",
+      "locator": "Q133296999"
     },
     {
       "dissent": false,
@@ -11540,6 +11684,12 @@
     },
     {
       "dissent": false,
+      "id": "seymour-expedition",
+      "kind": "event",
+      "locator": "Q7459167"
+    },
+    {
+      "dissent": false,
       "id": "shaba-ii",
       "kind": "event",
       "locator": "Q2745406"
@@ -11594,6 +11744,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-akka-1832",
+      "kind": "event",
+      "locator": "Q125759097"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-ambur",
       "kind": "event",
       "locator": "Q7509809"
@@ -11603,6 +11759,12 @@
       "id": "siege-of-anzele",
       "kind": "event",
       "locator": "Q138606175"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-arrah",
+      "kind": "event",
+      "locator": "Q26910860"
     },
     {
       "dissent": false,
@@ -11642,6 +11804,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-bangkok",
+      "kind": "event",
+      "locator": "Q7509852"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-bautzen-1620",
       "kind": "event",
       "locator": "Q136351768"
@@ -11663,6 +11831,12 @@
       "id": "siege-of-bergen-op-zoom-1747",
       "kind": "event",
       "locator": "Q1835856"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-bijapur",
+      "kind": "event",
+      "locator": "Q7509876"
     },
     {
       "dissent": false,
@@ -11717,6 +11891,12 @@
       "id": "siege-of-campar",
       "kind": "event",
       "locator": "Q130520296"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-catubig",
+      "kind": "event",
+      "locator": "Q7509911"
     },
     {
       "dissent": false,
@@ -11780,6 +11960,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-darwar",
+      "kind": "event",
+      "locator": "Q7509967"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-delhi-1857",
       "kind": "event",
       "locator": "Q2343263"
@@ -11837,6 +12023,12 @@
       "id": "siege-of-el-arish",
       "kind": "event",
       "locator": "Q3485822"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-el-rahmaniya",
+      "kind": "event",
+      "locator": "Q126325733"
     },
     {
       "dissent": false,
@@ -11906,6 +12098,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-jhansi",
+      "kind": "event",
+      "locator": "Q16034303"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-jinji",
       "kind": "event",
       "locator": "Q7510120"
@@ -11945,6 +12143,12 @@
       "id": "siege-of-kimberley",
       "kind": "event",
       "locator": "Q3485913"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-koppal",
+      "kind": "event",
+      "locator": "Q4337390"
     },
     {
       "dissent": false,
@@ -12095,6 +12299,12 @@
       "id": "siege-of-mozambique-1608",
       "kind": "event",
       "locator": "Q122227094"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-multan-1848-1849",
+      "kind": "event",
+      "locator": "Q7510255"
     },
     {
       "dissent": false,
@@ -12332,6 +12542,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-the-mechouar-of-tlemcen",
+      "kind": "event",
+      "locator": "Q140301345"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-the-sherpur-cantonment",
       "kind": "event",
       "locator": "Q969018"
@@ -12539,6 +12755,12 @@
       "id": "somali-civil-war-2009-present",
       "kind": "event",
       "locator": "Q1052332"
+    },
+    {
+      "dissent": false,
+      "id": "son-tay-campaign",
+      "kind": "event",
+      "locator": "Q7667673"
     },
     {
       "dissent": false,

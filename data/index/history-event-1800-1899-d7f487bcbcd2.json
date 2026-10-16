@@ -20,6 +20,15 @@
         }
       ]
     },
+    "1881-1896-cholera-pandemic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "1889-1890-pandemic": {
       "from": "git",
       "versions": [
@@ -990,6 +999,15 @@
         }
       ]
     },
+    "battle-of-escape-creek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-ferozeshah": {
       "from": "git",
       "versions": [
@@ -1093,6 +1111,15 @@
       ]
     },
     "battle-of-hakodate": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-halai": {
       "from": "git",
       "versions": [
         {
@@ -1536,6 +1563,15 @@
         }
       ]
     },
+    "battle-of-prome": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-pungdo": {
       "from": "git",
       "versions": [
@@ -1641,6 +1677,15 @@
       ]
     },
     "battle-of-sanhe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-santa-cruz-1899": {
       "from": "git",
       "versions": [
         {
@@ -1862,6 +1907,15 @@
         }
       ]
     },
+    "battle-of-the-bogue-1856": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-the-col-des-beni-aicha": {
       "from": "git",
       "versions": [
@@ -1890,6 +1944,15 @@
       ]
     },
     "battle-of-the-smala": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-the-visayas-1899": {
       "from": "git",
       "versions": [
         {
@@ -2134,6 +2197,15 @@
         }
       ]
     },
+    "black-hawk-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "blockade-of-saint-domingue": {
       "from": "git",
       "versions": [
@@ -2321,6 +2393,33 @@
         }
       ]
     },
+    "capture-of-chusan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "capture-of-lucknow": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "cayuse-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "chilean-war-of-independence": {
       "from": "git",
       "versions": [
@@ -2369,6 +2468,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "colorado-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -2804,6 +2912,15 @@
         }
       ]
     },
+    "first-battle-of-blida": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "first-boer-war": {
       "from": "git",
       "versions": [
@@ -3097,6 +3214,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "french-blockade-of-algiers": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -3492,6 +3618,15 @@
         }
       ]
     },
+    "medea-expedition-1830": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "meiji-restoration": {
       "from": "git",
       "versions": [
@@ -3529,6 +3664,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "modoc-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -3577,7 +3721,25 @@
         }
       ]
     },
+    "nez-perce-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "north-west-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "northern-expedition-taiping-rebellion": {
       "from": "git",
       "versions": [
         {
@@ -3957,6 +4119,15 @@
         }
       ]
     },
+    "sasradilaga-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "scramble-for-africa": {
       "from": "git",
       "versions": [
@@ -4265,6 +4436,24 @@
         }
       ]
     },
+    "siege-of-akka-1832": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-arrah": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "siege-of-badajoz-1812": {
       "from": "git",
       "versions": [
@@ -4334,7 +4523,25 @@
         }
       ]
     },
+    "siege-of-el-rahmaniya": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "siege-of-eshowe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-jhansi": {
       "from": "git",
       "versions": [
         {
@@ -4427,6 +4634,15 @@
         }
       ]
     },
+    "siege-of-multan-1848-1849": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "siege-of-port-au-prince-1803": {
       "from": "git",
       "versions": [
@@ -4437,6 +4653,15 @@
       ]
     },
     "siege-of-rustenburg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-the-mechouar-of-tlemcen": {
       "from": "git",
       "versions": [
         {
@@ -4554,6 +4779,15 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "son-tay-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
