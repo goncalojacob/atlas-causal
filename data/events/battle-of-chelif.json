@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-chelif",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q30742449",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Chelif"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q30742449"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chelif\", revision 1370108966"
+    }
+  ],
+  "title": "Battle of Chelif",
+  "summary": "The English Wikipedia article \"Battle of Chelif\", at revision 1370108966, opens: \"The Battle of Chelif or Battle of Djidouia took place on 28 April 1701 on the banks of the Chelif River. It was fought between the armies of the Alaouite Sultan Ismail Ibn Sharif and those of the Regency of Algiers commanded by the Bey of Mascara, Mustapha Bouchelaghem. It took place in the context of an attempt by the Alaouites to conquer the west of the Regency of Algiers, coordinated with an offensive by Tunis on the east of the Regency of Algiers in 1700 and 1701.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q30742449, imported by tools/import/wikidata.mjs. The item's own description reads \"1701 battle between Algiers and Morocco\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1701,
+    "end": 1701,
+    "date": "1701-04-28"
+  },
+  "place": "djidioua",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "maghrebi-war-1699-1702"
+}

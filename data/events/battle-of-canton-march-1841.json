@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-canton-march-1841",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870632",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Canton (March 1841)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870632"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Canton (March 1841)\", revision 1370436108"
+    }
+  ],
+  "title": "Battle of Canton (March 1841)",
+  "summary": "The English Wikipedia article \"Battle of Canton (March 1841)\", at revision 1370436108, opens: \"The First Battle of Canton was fought between British and Chinese forces in Canton, Guangdong Province, China, on 18 March 1841 during the First Opium War. The capture led to the hoisting of the Union Jack on the British factory in Canton and the resumption of trade between the British and the Chinese.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870632, imported by tools/import/wikidata.mjs. The item's own description reads \"March 1841 fought in the First Opium War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1841,
+    "end": 1841,
+    "date": "1841-03-18"
+  },
+  "place": "guangzhou",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-opium-war"
+}

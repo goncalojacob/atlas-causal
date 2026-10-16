@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-elandsfontein",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2887936",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Elandsfontein"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2887936"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Elandsfontein\", revision 1370110052"
+    }
+  ],
+  "title": "Battle of Elandsfontein",
+  "summary": "The English Wikipedia article \"Battle of Elandsfontein\", at revision 1370110052, opens: \"The Battle of Elandsfontein on 11 January 1881 was a military engagement during the First Boer War which took place at Elandsfontein ridge just west of Pretoria. During the war horses proved to be the main means of transport across the South African plains. Because of this, much effort was put in grass mowers by the British for the production of hay. It was during one such expedition to collect the necessary horse fodder on 11 January 1881 in a valley near Elandsfontein, that the British were spotted and attacked by a party of Boers. This resulted in the Boers capturing the mowing machine, a wagon and some mules while the British escaped the encounter. With the belief that their attackers had originated from a laager at Elandsfontein, an escorted expedition force was sent to the laager's believed location on 16 January 1881 to either assert dominance in the area or to destroy the camp outright.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2887936, imported by tools/import/wikidata.mjs. The item's own description reads \"1881 military action during the first Anglo-Boer War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1881,
+    "end": 1881,
+    "date": "1881-01-16"
+  },
+  "place": "pretoria",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-boer-war"
+}

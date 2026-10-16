@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sahkulu-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q6569289",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Şahkulu rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6569289"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Şahkulu rebellion\", revision 1373732093"
+    }
+  ],
+  "title": "Şahkulu rebellion",
+  "summary": "The English Wikipedia article \"Şahkulu rebellion\", at revision 1373732093, opens: \"The Şahkulu rebellion was a widespread pro-Shia and pro-Safavid uprising in Anatolia, directed against the Ottoman Empire, in 1511. It began among the Turkmen tribes of the Taurus Mountains, before spreading to a wide variety of disgruntled groups. It is named after the leader of the rebels, Şahkulu. His death in battle also meant the end of the uprising.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6569289, imported by tools/import/wikidata.mjs. The item's own description reads \"1511 uprising against the Ottomans\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1511,
+    "end": 1511,
+    "date": "1511-04-09",
+    "endDate": "1511-07-02"
+  },
+  "place": "anatolia",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "ottoman-persian-war-1505-1517"
+}

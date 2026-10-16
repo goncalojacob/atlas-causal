@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-delhi-1857",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2343263",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Siege of Delhi (1857)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2343263"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Delhi (1857)\", revision 1380233517"
+    }
+  ],
+  "title": "Siege of Delhi (1857)",
+  "summary": "The English Wikipedia article \"Siege of Delhi (1857)\", at revision 1380233517, opens: \"The siege of Delhi was a decisive conflict of the Indian Rebellion of 1857. The rebellion against the authority of the East India Company was widespread through much of Northern India, but was essentially sparked by the mass uprising by the sepoys of the Bengal Army, which the company had itself raised in its Bengal Presidency. Seeking a symbol around which to rally, the first sepoys to rebel sought to reinstate the power of the Mughal Empire, which had ruled much of the Indian subcontinent in the previous centuries. Lacking overall direction, many who subsequently rebelled also flocked to Delhi.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2343263, imported by tools/import/wikidata.mjs. The item's own description reads \"one of the decisive conflicts of the Indian rebellion of 1857\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1857,
+    "end": 1857,
+    "date": "1857-06-08",
+    "endDate": "1857-09-21"
+  },
+  "place": "delhi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "indian-rebellion-of-1857"
+}

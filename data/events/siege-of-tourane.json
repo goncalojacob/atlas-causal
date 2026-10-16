@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-tourane",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5361929",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Siege of Tourane"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5361929"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Tourane\", revision 1370745941"
+    }
+  ],
+  "title": "Siege of Tourane",
+  "summary": "The English Wikipedia article \"Siege of Tourane\", at revision 1370745941, opens: \"The siege of Tourane was a Vietnamese victory during the Cochinchina campaign, a punitive campaign against the Vietnamese launched by France and Spain in 1858. A joint Franco-Spanish expedition under the command of Admiral Charles Rigault de Genouilly captured Tourane in September 1858, but was then besieged in the city by the Vietnamese and forced eventually to evacuate it in March 1860.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5361929, imported by tools/import/wikidata.mjs. The item's own description reads \"1858 siege at the start of the French conquest of Vietnam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1860,
+    "date": "1858-09-01",
+    "endDate": "1860-03-22"
+  },
+  "place": "da-nang",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "cochinchina-campaign"
+}

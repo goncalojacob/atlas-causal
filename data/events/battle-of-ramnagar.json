@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-ramnagar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1761867",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Ramnagar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1761867"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ramnagar\", revision 1375772196"
+    }
+  ],
+  "title": "Battle of Ramnagar",
+  "summary": "The English Wikipedia article \"Battle of Ramnagar\", at revision 1375772196, opens: \"The Battle of Ramnagar was fought on 22 November 1848 between the forces of the British Empire and the Sikh Empire during the Second Anglo-Sikh War. The British were led by Sir Hugh Gough, while the Sikhs were led by Raja Sher Singh Attariwalla. The Sikhs repelled an attempted British surprise attack.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1761867, imported by tools/import/wikidata.mjs. The item's own description reads \"1848 battle of the Second Anglo-Sikh War in northwestern India\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-11-22"
+  },
+  "place": "rasool-nagar",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-anglo-sikh-war"
+}

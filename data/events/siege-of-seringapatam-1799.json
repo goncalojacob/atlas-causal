@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-seringapatam-1799",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q815204",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Siege of Seringapatam (1799)",
+    "pt": "Batalha de Seringapatam"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q815204"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Seringapatam (1799)\", revision 1376680546"
+    }
+  ],
+  "title": "Siege of Seringapatam (1799)",
+  "summary": "The English Wikipedia article \"Siege of Seringapatam (1799)\", at revision 1376680546, opens: \"The siege of Seringapatam was the final confrontation of the Fourth Anglo-Mysore War between the British East India Company and the Kingdom of Mysore led by Tipu Sultan who ruled after the death of his father. The British, with the allied Nizam Ali Khan, 2nd Nizam of Hyderabad and Maratha Empire, achieved a decisive victory after breaching the walls of the fortress at Seringapatam and storming the citadel.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q815204, imported by tools/import/wikidata.mjs. The item's own description reads \"1799 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1799,
+    "end": 1799,
+    "date": "1799-04-05",
+    "endDate": "1799-05-04"
+  },
+  "place": "srirangapatna",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "fourth-anglo-mysore-war"
+}
