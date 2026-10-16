@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-col-des-beni-aicha",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q104830263",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of the Col des Beni Aïcha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q104830263"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Col des Beni Aïcha\", revision 1370277714"
+    }
+  ],
+  "title": "Battle of the Col des Beni Aïcha",
+  "summary": "The English Wikipedia article \"Battle of the Col des Beni Aïcha\", at revision 1370277714, opens: \"The Battle of the Col des Beni Aïcha or Battle of Thenia, which broke out on 19 April 1871, was a battle of the Mokrani Revolt between the Algerian rebels, and the France, which was the colonial power in the region since 1830.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q104830263, imported by tools/import/wikidata.mjs. The item's own description reads \"1871 battle against French troops\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1871,
+    "end": 1871,
+    "date": "1871-04-19",
+    "endDate": "1871-05-08"
+  },
+  "place": "thenia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mokrani-revolt"
+}

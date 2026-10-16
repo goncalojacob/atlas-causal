@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-navarino",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q238440",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Navarino",
+    "pt": "Batalha de Navarino"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q238440"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Navarino\", revision 1370270611"
+    }
+  ],
+  "title": "Battle of Navarino",
+  "summary": "The English Wikipedia article \"Battle of Navarino\", at revision 1370270611, opens: \"The Battle of Navarino was a naval battle fought on 20 October 1827, during the Greek War of Independence (1821–1829), in Navarino Bay, on the west coast of the Peloponnese peninsula, in the Ionian Sea. Allied forces from Britain, France, and Russia decisively defeated Ottoman and Egyptian forces which were trying to suppress the Greeks, thereby making Greek independence much more likely. An Ottoman armada which, in addition to Imperial warships, included squadrons from the eyalets of Egypt and Regency of Algiers and Tunis, was destroyed by an Allied force of British, French and Russian warships. It was the last major naval battle in history to be fought entirely with sailing ships, although most ships fought at anchor. The Allies' victory was achieved through superior firepower and gunnery.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q238440, imported by tools/import/wikidata.mjs. The item's own description reads \"1827 naval battle during the Greek War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1827,
+    "end": 1827,
+    "date": "1827-10-20"
+  },
+  "place": "pylos",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

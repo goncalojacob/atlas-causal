@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-togbao",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872567",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Togbao"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872567"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Togbao\", revision 1371606159"
+    }
+  ],
+  "title": "Battle of Togbao",
+  "summary": "The English Wikipedia article \"Battle of Togbao\", at revision 1371606159, opens: \"The battle of Togbao was a military confrontation between a French force led by Henri Bretonnet and the forces of the warlord Rabih az-Zubayr, who occupied the Kanem–Bornu Empire. France was supported by a Bagirmian force, led by Gaourang II. The battle was the first engagement of the Rabih War (1899–1901). Rabih defeated the French–Bagirmian force, which increased French determination over the course of the rest of the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872567, imported by tools/import/wikidata.mjs. The item's own description reads \"1899 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-07-17"
+  },
+  "place": "sarh",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "rabih-war"
+}

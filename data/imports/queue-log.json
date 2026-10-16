@@ -4103,6 +4103,283 @@
       },
       "refusals": [],
       "note": "Q42417460: no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    {
+      "id": "2026-10-16-africa-071",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-golden-stool",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-073",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-bronkhorstspruit",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-075",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-schuinshoogte",
+        "edges": [],
+        "place": "ingogo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-077",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-wad-ras",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-079",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-castillejos",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-081",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "bombardment-of-tangier",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-083",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "bombardment-of-mogador",
+        "edges": [],
+        "place": "essaouira"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-085",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q722047: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-africa-087",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chelif",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-089",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gqokli-hill",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-091",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-togbao",
+        "edges": [],
+        "place": "sarh"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-093",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "eighth-xhosa-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-095",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-col-des-beni-aicha",
+        "edges": [],
+        "place": "thenia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-097",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "mascara-campaign-1699-1701",
+        "edges": [],
+        "place": "oranie"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-099",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-accra",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-101",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "second-mandingo-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-103",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-marabastad",
+        "edges": [],
+        "place": "marabastad-pretoria"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-105",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-rooihuiskraal",
+        "edges": [],
+        "place": "centurion-south-africa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-060",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-navarino",
+        "edges": [],
+        "place": "pylos"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-062",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-maiwand",
+        "edges": [],
+        "place": "maiwand"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-064",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ueno",
+        "edges": [],
+        "place": "ueno"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-066",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "wallachian-uprising-of-1821",
+        "edges": [],
+        "place": "wallachia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-068",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hakodate",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
