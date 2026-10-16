@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "anglo-nepalese-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q195378",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Anglo-Nepalese War",
+    "pt": "Guerra Anglo-Nepalesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q195378"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Nepalese War\", revision 1378681847"
+    }
+  ],
+  "title": "Anglo-Nepalese War",
+  "summary": "The English Wikipedia article \"Anglo-Nepalese War\", at revision 1378681847, opens: \"The Anglo-Nepalese War, also known as the Anglo-Gorkha War, was a major military conflict fought between the Kingdom of Nepal and the East India Company (EIC). The war was the culmination of decades of geopolitical friction as two expanding powers clashed along an ill-defined 1,500-kilometer frontier. While Nepal had aggressively expanded its empire from the Teesta River in the east to the Sutlej River in the west, the EIC was simultaneously extending its dominion across the Indian subcontinent. The initial conflicts were driven by competition over the fertile Tarai lowlands and trans-Himalayan trade routes into Tibet. The final crisis emerged in May 1814 CE, when a small Nepalese force attacked EIC police outposts in the disputed Butwal region, killing 18 EIC officials. Citing this attack as a casus belli, Lord Hastings, the Governor-General of India, formally declared war on the Kingdom of Nepal on 1 November 1814 CE.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q195378, imported by tools/import/wikidata.mjs. The item's own description reads \"1814-1816 war between Nepal and the UK\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1816
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

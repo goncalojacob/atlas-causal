@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-blood-river",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1392699",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Blood River"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1392699"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Blood River\", revision 1370434619"
+    }
+  ],
+  "title": "Battle of Blood River",
+  "summary": "The English Wikipedia article \"Battle of Blood River\", at revision 1370434619, opens: \"The Battle of Blood River, or Voortrekker–Zulu War, was fought on the bank of the Ncome River, in what is today KwaZulu-Natal, South Africa between 464 Voortrekkers (\"Pioneers\"), led by Andries Pretorius, and an estimated 25,000 to 30,000 Zulu. Estimations of casualties amounted to over 3,000 of King Dingane's soldiers dead, including two Zulu princes competing with Prince Mpande for the Zulu throne. Three Voortrekker commando members were lightly wounded, including Pretorius.The year 1838 was the most difficult period for the Voortrekkers from when they left the Cape Colony, till the end of the Great Trek. They faced many difficulties and much bloodshed before they found freedom and a safe homeland in their Republic of Natalia. This was only achieved after defeating the Zulu Kingdom, at the Battle of Blood River, which took place on Sunday 16 December 1838. This battle would not have taken place if the Zulu King had honoured the agreement that he had made with the Voortrekkers to live together peacefully. The Zulu king knew that they outnumbered the Voortrekkers and decided to overthrow them and that led to the Battle of Blood River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1392699, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Great Trek, fought on the bank of the Ncome river in South Africa in 1838\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1838,
+    "end": 1838,
+    "date": "1838-12-16"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

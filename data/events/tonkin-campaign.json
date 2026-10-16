@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "tonkin-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q286655",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Tonkin campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q286655"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tonkin campaign\", revision 1377511705"
+    }
+  ],
+  "title": "Tonkin campaign",
+  "summary": "The English Wikipedia article \"Tonkin campaign\", at revision 1377511705, opens: \"The Tonkin campaign was an armed conflict fought between June 1883 and April 1886 by the French against, variously, the Vietnamese, Liu Yongfu's Black Flag Army and the Chinese Guangxi and Yunnan armies to occupy Tonkin and entrench a French protectorate there. The campaign, complicated in August 1884 by the outbreak of the Sino-French War and in July 1885 by the Cần Vương nationalist uprising in Annam, which required the diversion of large numbers of French troops, was conducted by the Tonkin Expeditionary Corps, supported by the gunboats of the Tonkin Flotilla. The campaign officially ended in April 1886, when the expeditionary corps was reduced in size to a division of occupation, but Tonkin was not effectively pacified until 1896.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q286655, imported by tools/import/wikidata.mjs. The item's own description reads \"1883 military campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1883,
+    "end": 1886
+  },
+  "place": "tonkin",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

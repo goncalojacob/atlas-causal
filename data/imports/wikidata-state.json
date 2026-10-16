@@ -2338,9 +2338,7 @@
         "Q29122",
         "Q1362209",
         "Q703942",
-        "Q2045508",
         "Q4887044",
-        "Q133132",
         "Q153650",
         "Q178510",
         "Q199955",
@@ -2439,7 +2437,39 @@
         "Q783183",
         "Q2889297",
         "Q2890049",
-        "Q3403872"
+        "Q3403872",
+        "Q621362",
+        "Q3485860",
+        "Q2890573",
+        "Q2887867",
+        "Q478301",
+        "Q127751",
+        "Q133132",
+        "Q160077",
+        "Q2584439",
+        "Q2600326",
+        "Q277450",
+        "Q195378",
+        "Q918132",
+        "Q2045508",
+        "Q965649",
+        "Q1230569",
+        "Q6140819",
+        "Q714820",
+        "Q233500",
+        "Q233642",
+        "Q617210",
+        "Q1926145",
+        "Q2935371",
+        "Q7524776",
+        "Q889879",
+        "Q27963620",
+        "Q286655",
+        "Q16707899",
+        "Q1392699",
+        "Q5010928",
+        "Q582594",
+        "Q42417460"
       ]
     }
   },
@@ -2771,6 +2801,30 @@
     "Q2889955": {
       "on": "2026-10-16",
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q965649": {
+      "on": "2026-10-16",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q714820": {
+      "on": "2026-10-16",
+      "why": "none of its classes (Q10931495) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q233642": {
+      "on": "2026-10-16",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q1926145": {
+      "on": "2026-10-16",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q16707899": {
+      "on": "2026-10-16",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q42417460": {
+      "on": "2026-10-16",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
     }
   }
 }
