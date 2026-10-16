@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "revolt-of-the-comuneros-paraguay",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5851623",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Revolt of the Comuneros (Paraguay)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5851623"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolt of the Comuneros (Paraguay)\", revision 1318704210"
+    }
+  ],
+  "title": "Revolt of the Comuneros (Paraguay)",
+  "summary": "The English Wikipedia article \"Revolt of the Comuneros (Paraguay)\", at revision 1318704210, opens: \"The Revolt of the Comuneros was a series of uprisings by settlers in Paraguay in the Viceroyalty of Peru against the Spanish authorities from 1721 to 1725 and 1730–1735. The underlying cause of the unrest was strong anti-Jesuit feelings among the Paraguayans and dislike for any governor seen as favoring the Jesuits. In the resumption of the revolt in 1730, economic issues came to fore as well. The rebel organization split in its second phase, as the rural poor and the urban elite each formed their own factions with similar grievances against the Jesuits, but incompatible politics. Paraguay had an unusually strong tradition of self-rule; the colonists did not have a tradition of strict obedience to everything the Spanish Crown's governor decreed. This independence helped push the revolt forward.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5851623, imported by tools/import/wikidata.mjs. The item's own description reads \"series of uprisings by settlers in Paraguay (1721-1735)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1721,
+    "end": 1735
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

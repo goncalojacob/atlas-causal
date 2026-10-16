@@ -2694,6 +2694,123 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-062",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q689128 is already the event \"haitian-revolution\""
+    },
+    {
+      "id": "2026-10-15-americas-063",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2656995 is already the event \"northwest-indian-war\""
+    },
+    {
+      "id": "2026-10-15-americas-064",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q377542: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-15-americas-065",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q179077 is already the event \"pontiac-s-war\""
+    },
+    {
+      "id": "2026-10-15-americas-066",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5851623 is already the event \"revolt-of-the-comuneros-paraguay\""
+    },
+    {
+      "id": "2026-10-15-americas-067",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2508152 is already the event \"fredonian-rebellion\""
+    },
+    {
+      "id": "2026-10-15-americas-068",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5255169: none of its classes (Q1155622) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-15-americas-069",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2590269 is already the event \"cabanagem\""
+    },
+    {
+      "id": "2026-10-15-americas-070",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3775537: none of its classes (Q108856008) is in data/imports/wikidata-seeds.json → classes"
     }
   ]
 }
