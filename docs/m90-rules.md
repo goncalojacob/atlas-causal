@@ -126,6 +126,10 @@ does not read the pool files.
     filing and that the atlas does not hold the event. A later pass looks
     for the links. The planner hands items to the writers by turn, A then B,
     in any lane, and queues about a hundred a fire.
+    The 1732Z fire of 16 October still wrote every item for writer A. So,
+    as the last step before `--check`, the planner runs this exact command
+    from the checkout, which hands the items out by turn:
+    `node -e 'const f=require("fs"),p="data/imports/queue.json",q=JSON.parse(f.readFileSync(p));q.items.forEach((t,i)=>t.writer=i%2?"B":"A");f.writeFileSync(p,JSON.stringify(q,null,2)+"\\n")'`
     Writer A takes `africa`, `asia` and `europe` on branch `m42`. Writer B
     takes `americas` on branch `m42b`. A writer never imports what the other
     branch holds.
