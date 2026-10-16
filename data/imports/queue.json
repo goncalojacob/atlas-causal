@@ -1,395 +1,8 @@
 {
   "schema": 1,
   "kind": "import-queue",
+  "generated": "2026-10-16",
   "items": [
-    {
-      "id": "2026-10-15-europe-035",
-      "planned": "2026-10-15T17:45Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q152218",
-      "title": "Nine Years' War",
-      "edges": [],
-      "rank": "list",
-      "why": "The 1688 to 1697 war between France and the Grand Alliance."
-    },
-    {
-      "id": "2026-10-15-europe-036",
-      "planned": "2026-10-15T17:45Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q18817",
-      "title": "War of the First Coalition",
-      "edges": [],
-      "rank": "list",
-      "why": "The 1792 to 1797 war against Revolutionary France. Its span sits inside the French Revolutionary Wars (1792 to 1802).",
-      "parents": [
-        "french-revolutionary-wars"
-      ]
-    },
-    {
-      "id": "2026-10-15-europe-037",
-      "planned": "2026-10-15T17:45Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q593355",
-      "title": "Treaty of Alcáçovas",
-      "edges": [],
-      "rank": "list",
-      "why": "The 1479 treaty that ended the War of the Castilian Succession and divided Atlantic claims between Castile and Portugal, the model for the Treaty of Tordesillas."
-    },
-    {
-      "id": "2026-10-15-europe-038",
-      "planned": "2026-10-15T17:45Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q1147471",
-      "title": "Treaty of Zaragoza",
-      "edges": [],
-      "rank": "list",
-      "why": "The 1529 treaty that settled the Moluccas dispute between Castile and Portugal and fixed the antimeridian to the Treaty of Tordesillas' line."
-    },
-    {
-      "id": "2026-10-15-europe-039",
-      "planned": "2026-10-15T17:45Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q282135",
-      "title": "War of the Castilian Succession",
-      "edges": [],
-      "rank": "list",
-      "why": "The 1475 to 1479 war between Castile and Portugal that the Treaty of Alcáçovas ended."
-    },
-    {
-      "id": "2026-10-15-africa-040",
-      "planned": "2026-10-15T17:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q3458428",
-      "title": "Revolutions of Tunis",
-      "edges": [],
-      "rank": "list",
-      "why": "Re-queued: the lane row for Q3458428 was added to the seeds file on 14 October, so the item the writer refused for a missing lane now enters. The 1675 to 1705 uprisings against Ottoman Tunis. Africa trails every other lane."
-    },
-    {
-      "id": "2026-10-15-africa-042",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q134355735",
-      "title": "Portuguese conquest of the East African coast",
-      "edges": [],
-      "rank": "list",
-      "why": "Africa trails every other lane. The 1500-1509 campaign that took Kilwa, Mombasa and Sofala for Portugal, part of the Indian Ocean monopoly the atlas already holds pieces of."
-    },
-    {
-      "id": "2026-10-15-africa-043",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q121047056",
-      "title": "Battle of Mombasa (1505)",
-      "edges": [],
-      "rank": "list",
-      "why": "Africa trails. Francisco de Almeida's sack of Mombasa, a named action inside the East African coast campaign above."
-    },
-    {
-      "id": "2026-10-15-africa-044",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q4553413",
-      "title": "Tripolitanian civil war",
-      "edges": [],
-      "rank": "list",
-      "why": "Africa trails. The 1793-1795 civil war in Ottoman Tripolitania, from the list of wars 1500-1799."
-    },
-    {
-      "id": "2026-10-15-africa-045",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1402902",
-      "title": "Dervish War",
-      "edges": [],
-      "rank": "list",
-      "why": "Africa trails. The Somali Dervish movement's war against Britain, Italy and Ethiopia, starting 1900, a P361 child of the Scramble for Africa the atlas already holds."
-    },
-    {
-      "id": "2026-10-15-africa-046",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q126708875",
-      "title": "Italian Somali Wars",
-      "edges": [],
-      "rank": "list",
-      "why": "Africa trails. Italy's 1890-1927 pacification campaigns in Somalia, a P361 child of the Scramble for Africa."
-    },
-    {
-      "id": "2026-10-15-africa-047",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q136483840",
-      "title": "Rabih War",
-      "edges": [],
-      "rank": "list",
-      "why": "Africa trails. Rabih az-Zubayr's 1899-1901 war against France in the Lake Chad basin, a P361 child of the Scramble for Africa."
-    },
-    {
-      "id": "2026-10-15-africa-048",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1450547",
-      "title": "Mandingo Wars",
-      "edges": [],
-      "rank": "list",
-      "why": "Africa trails. Samori Ture's 1882-1898 wars against French expansion in West Africa, a P361 child of the Scramble for Africa."
-    },
-    {
-      "id": "2026-10-15-africa-049",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q3320778",
-      "title": "1890 British Ultimatum",
-      "edges": [],
-      "rank": "list",
-      "why": "Africa trails. Britain's ultimatum over Portugal's claim to the Mozambique-Angola corridor, a turning point the atlas's own Scramble for Africa holds no record of yet."
-    },
-    {
-      "id": "2026-10-15-asia-050",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1106847",
-      "title": "Portuguese conquest of Hormuz",
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails after Africa. The 1507 campaign that made Hormuz a Portuguese vassal state, closing the Persian Gulf to rivals."
-    },
-    {
-      "id": "2026-10-15-asia-051",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2357384",
-      "title": "Portuguese conquest of Goa",
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails. Albuquerque's 1510 conquest that made Goa the capital of the Estado da India, central to the atlas's own period."
-    },
-    {
-      "id": "2026-10-15-asia-052",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q55885827",
-      "title": "Siege of Aden (1513)",
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails. Albuquerque's failed assault on Aden, the gateway Portugal never took."
-    },
-    {
-      "id": "2026-10-15-asia-053",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q129918147",
-      "title": "Capture of Muscat (1507)",
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails. The first Portuguese capture of Muscat, part of the same 1507 Gulf campaign as the Hormuz conquest."
-    },
-    {
-      "id": "2026-10-15-asia-054",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1848807",
-      "title": "Lam Sơn uprising",
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails. Le Loi's 1418-1427 uprising that ended Ming occupation of Vietnam and founded the Le dynasty."
-    },
-    {
-      "id": "2026-10-15-asia-055",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q7506756",
-      "title": "Siamese revolution of 1688",
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails. The 1688 revolt that ended French influence at the Siamese court and closed Ayutthaya to Europeans for a century."
-    },
-    {
-      "id": "2026-10-15-asia-056",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4920015",
-      "title": "Hong Kyŏngnae's Rebellion",
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails. The 1811-1812 peasant rebellion against the Joseon court in Korea."
-    },
-    {
-      "id": "2026-10-15-asia-057",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1632880",
-      "title": "Burmese–Siamese War (1759–1760)",
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails, from the list of wars 1500-1799. Alaungpaya's invasion of Siam, the first of the Burmese-Siamese wars."
-    },
-    {
-      "id": "2026-10-15-asia-058",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q134937344",
-      "title": "Ottoman–Persian War (1505–1517)",
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails. The opening war between the Ottomans and the Safavids, contemporary with Portugal's own Gulf campaigns."
-    },
-    {
-      "id": "2026-10-15-asia-059",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q617350",
-      "title": "Third Anglo-Mysore War",
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails, from the list of wars 1800-1899 (started 1790). The war that broke Mysore's power under Tipu Sultan."
-    },
-    {
-      "id": "2026-10-15-asia-060",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q6808293",
-      "title": "Dzungar–Qing Wars",
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails, from the list of wars 1500-1799. The seventy-year conflict that ended the last steppe empire to challenge China."
-    },
-    {
-      "id": "2026-10-15-asia-061",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2270170",
-      "title": "Sino-Nepalese War",
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails, from the list of wars 1500-1799. The 1788-1789 Qing intervention in Nepal."
-    },
-    {
-      "id": "2026-10-15-americas-062",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q689128",
-      "title": "Haitian Revolution",
-      "edges": [],
-      "rank": "list",
-      "why": "Americas, from the list of revolutions and rebellions. The only slave revolt that founded a state, 1791-1804."
-    },
-    {
-      "id": "2026-10-15-americas-063",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2656995",
-      "title": "Northwest Indian War",
-      "edges": [],
-      "rank": "list",
-      "why": "Americas, from the list of wars 1500-1799. The 1785-1795 war over the Northwest Territory, ended by the Treaty of Greenville."
-    },
-    {
-      "id": "2026-10-15-americas-064",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q377542",
-      "title": "Whiskey Rebellion",
-      "edges": [],
-      "rank": "list",
-      "why": "Americas, from the list of revolutions and rebellions. The 1791-1794 tax revolt that tested the new federal government's authority."
-    },
-    {
-      "id": "2026-10-15-americas-065",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q179077",
-      "title": "Pontiac's War",
-      "edges": [],
-      "rank": "list",
-      "why": "Americas, from the list of wars 1500-1799. The 1763-1766 Native American uprising against British rule in the Great Lakes."
-    },
-    {
-      "id": "2026-10-15-americas-066",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5851623",
-      "title": "Revolt of the Comuneros (Paraguay)",
-      "edges": [],
-      "rank": "list",
-      "why": "Americas, from the list of revolutions and rebellions. The 1721-1735 revolt of Paraguayan settlers against the Jesuit missions and colonial governors."
-    },
-    {
-      "id": "2026-10-15-americas-067",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2508152",
-      "title": "Fredonian Rebellion",
-      "edges": [],
-      "rank": "list",
-      "why": "Americas, from the list of revolutions and rebellions. The 1826-1827 attempt by Anglo settlers to break part of Texas from Mexico."
-    },
-    {
-      "id": "2026-10-15-americas-068",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5255169",
-      "title": "Demerara rebellion of 1823",
-      "edges": [],
-      "rank": "list",
-      "why": "Americas, from the list of revolutions and rebellions. One of the largest slave uprisings in the British Caribbean, which hastened abolition."
-    },
-    {
-      "id": "2026-10-15-americas-069",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2590269",
-      "title": "Cabanagem",
-      "edges": [],
-      "rank": "list",
-      "why": "Americas, from the list of revolutions and rebellions. The 1835-1840 popular revolt in Grão-Pará against the Brazilian imperial government."
-    },
-    {
-      "id": "2026-10-15-americas-070",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3775537",
-      "title": "New York Conspiracy of 1741",
-      "edges": [],
-      "rank": "list",
-      "why": "Americas, from the list of revolutions and rebellions. The alleged slave and poor-white conspiracy that ended in the colony's largest mass execution."
-    },
     {
       "id": "2026-10-15-europe-071",
       "planned": "2026-10-15T21:33Z",
@@ -510,7 +123,557 @@
       "edges": [],
       "rank": "list",
       "why": "Europe, from the list of wars 1500-1799. Charles Edward Stuart's attempt to restore the Stuarts, ended at Culloden."
+    },
+    {
+      "id": "2026-10-16-africa-001",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q815159",
+      "title": "Siege of Khartoum",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane; Siege of Khartoum is a P361 child of the held Mahdist War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-002",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1288821",
+      "title": "Battle of Abu Klea",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane; Battle of Abu Klea is a P361 child of the held Mahdist War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-003",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1137302",
+      "title": "Battle of Omdurman",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane; Battle of Omdurman is a P361 child of the held Mahdist War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-004",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q478597",
+      "title": "Battle of Shaykan",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane; Battle of Shaykan is a P361 child of the held Mahdist War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-005",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1276340",
+      "title": "Battle of Atbara",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane; Battle of Atbara is a P361 child of the held Mahdist War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-006",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1252684",
+      "title": "Battle of Toski",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane; Battle of Toski is a P361 child of the held Mahdist War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-007",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q747589",
+      "title": "Battle of Isandlwana",
+      "parents": [
+        "anglo-zulu-war"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-zulu-war",
+      "why": "Africa trails every other lane; Battle of Isandlwana is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-008",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1123353",
+      "title": "Battle of Rorke's Drift",
+      "parents": [
+        "anglo-zulu-war"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-zulu-war",
+      "why": "Africa trails every other lane; Battle of Rorke's Drift is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-009",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2166177",
+      "title": "Battle of Ulundi",
+      "parents": [
+        "anglo-zulu-war"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-zulu-war",
+      "why": "Africa trails every other lane; Battle of Ulundi is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-010",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q640194",
+      "title": "Battle of Intombe",
+      "parents": [
+        "anglo-zulu-war"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-zulu-war",
+      "why": "Africa trails every other lane; Battle of Intombe is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-011",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q131926873",
+      "title": "First Anglo–Ashanti War",
+      "parents": [
+        "anglo-ashanti-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-ashanti-wars",
+      "why": "Africa trails every other lane; First Anglo–Ashanti War is a P361 child of the held Anglo-Ashanti Wars and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-012",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q132156616",
+      "title": "Second Anglo–Ashanti War",
+      "parents": [
+        "anglo-ashanti-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-ashanti-wars",
+      "why": "Africa trails every other lane; Second Anglo–Ashanti War is a P361 child of the held Anglo-Ashanti Wars and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-013",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q134488493",
+      "title": "Third Anglo–Asante War",
+      "parents": [
+        "anglo-ashanti-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-ashanti-wars",
+      "why": "Africa trails every other lane; Third Anglo–Asante War is a P361 child of the held Anglo-Ashanti Wars and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-014",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q3317226",
+      "title": "Invasion of Algiers (1830)",
+      "parents": [
+        "french-conquest-of-algeria"
+      ],
+      "edges": [],
+      "rank": "child-of:french-conquest-of-algeria",
+      "why": "Africa trails every other lane; Invasion of Algiers (1830) is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-015",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q636772",
+      "title": "Siege of Constantine",
+      "parents": [
+        "french-conquest-of-algeria"
+      ],
+      "edges": [],
+      "rank": "child-of:french-conquest-of-algeria",
+      "why": "Africa trails every other lane; Siege of Constantine is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-016",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2889977",
+      "title": "Battle of Sidi Brahim",
+      "parents": [
+        "french-conquest-of-algeria"
+      ],
+      "edges": [],
+      "rank": "child-of:french-conquest-of-algeria",
+      "why": "Africa trails every other lane; Battle of Sidi Brahim is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-017",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q3458306",
+      "title": "Mokrani Revolt",
+      "parents": [
+        "french-conquest-of-algeria"
+      ],
+      "edges": [],
+      "rank": "child-of:french-conquest-of-algeria",
+      "why": "Africa trails every other lane; Mokrani Revolt is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-018",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2888407",
+      "title": "Battle of Derna (1805)",
+      "parents": [
+        "first-barbary-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-barbary-war",
+      "why": "Africa trails every other lane; Battle of Derna (1805) is a P361 child of the held First Barbary War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-019",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q6135223",
+      "title": "Second Battle of Tripoli Harbor",
+      "parents": [
+        "first-barbary-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-barbary-war",
+      "why": "Africa trails every other lane; Second Battle of Tripoli Harbor is a P361 child of the held First Barbary War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-020",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2889965",
+      "title": "Battle of Shimbra Kure",
+      "parents": [
+        "ethiopian-adal-war"
+      ],
+      "edges": [],
+      "rank": "child-of:ethiopian-adal-war",
+      "why": "Africa trails every other lane; Battle of Shimbra Kure is a P361 child of the held Ethiopian–Adal War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-021",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2888324",
+      "title": "Battle of Coatit",
+      "parents": [
+        "first-italo-ethiopian-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-italo-ethiopian-war",
+      "why": "Africa trails every other lane; Battle of Coatit is a P361 child of the held First Italo-Ethiopian War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-022",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2237609",
+      "title": "Siege of Mekelle",
+      "parents": [
+        "first-italo-ethiopian-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-italo-ethiopian-war",
+      "why": "Africa trails every other lane; Siege of Mekelle is a P361 child of the held First Italo-Ethiopian War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-023",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q111699632",
+      "title": "Black Week",
+      "parents": [
+        "second-boer-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-boer-war",
+      "why": "Africa trails every other lane; Black Week is a P361 child of the held Second Boer War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-024",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2670249",
+      "title": "Bombardment of Alexandria",
+      "parents": [
+        "anglo-egyptian-war"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-egyptian-war",
+      "why": "Africa trails every other lane; Bombardment of Alexandria is a P361 child of the held Anglo-Egyptian War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-025",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q348998",
+      "title": "Battle of Isly",
+      "parents": [
+        "franco-moroccan-war"
+      ],
+      "edges": [],
+      "rank": "child-of:franco-moroccan-war",
+      "why": "Africa trails every other lane; Battle of Isly is a P361 child of the held Franco-Moroccan War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-026",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q20379760",
+      "title": "Capture of Merv",
+      "parents": [
+        "great-game"
+      ],
+      "edges": [],
+      "rank": "child-of:great-game",
+      "why": "Asia trails after Africa; Capture of Merv is a P361 child of the held Great Game and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-027",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2993585",
+      "title": "Panjdeh incident",
+      "parents": [
+        "great-game"
+      ],
+      "edges": [],
+      "rank": "child-of:great-game",
+      "why": "Asia trails after Africa; Panjdeh incident is a P361 child of the held Great Game and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-028",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2302690",
+      "title": "Tobacco Protest",
+      "parents": [
+        "great-game"
+      ],
+      "edges": [],
+      "rank": "child-of:great-game",
+      "why": "Asia trails after Africa; Tobacco Protest is a P361 child of the held Great Game and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-029",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q7510082",
+      "title": "First Herat War",
+      "parents": [
+        "great-game"
+      ],
+      "edges": [],
+      "rank": "child-of:great-game",
+      "why": "Asia trails after Africa; First Herat War is a P361 child of the held Great Game and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-asia-030",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4062556",
+      "title": "Treaty of Allahabad",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
+    },
+    {
+      "id": "2026-10-16-asia-031",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q3305294",
+      "title": "Treaty of Amritsar (1846)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
+    },
+    {
+      "id": "2026-10-16-asia-032",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q17035527",
+      "title": "Treaty of Amritsar (1809)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
+    },
+    {
+      "id": "2026-10-16-asia-033",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q771451",
+      "title": "Convention of Kanagawa",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
+    },
+    {
+      "id": "2026-10-16-asia-034",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q604938",
+      "title": "Convention of Peking",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
+    },
+    {
+      "id": "2026-10-16-asia-035",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2003866",
+      "title": "Treaty of Sugauli",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
+    },
+    {
+      "id": "2026-10-16-asia-036",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q137847",
+      "title": "Treaty of Adrianople (1829)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
+    },
+    {
+      "id": "2026-10-16-asia-037",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2985337",
+      "title": "Treaty of Salbai",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
+    },
+    {
+      "id": "2026-10-16-asia-038",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1342523",
+      "title": "Anglo-Japanese Friendship Treaty",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
+    },
+    {
+      "id": "2026-10-16-asia-039",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1194699",
+      "title": "Treaty of Amity and Commerce (United States–Japan)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
+    },
+    {
+      "id": "2026-10-16-americas-040",
+      "planned": "2026-10-16T00:32:45Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q767317",
+      "title": "Treaty of Greenville",
+      "parents": [
+        "northwest-indian-war"
+      ],
+      "edges": [
+        {
+          "from": "northwest-indian-war",
+          "to": "Q767317",
+          "type": "caused",
+          "confidence": "probable",
+          "article": "Treaty of Greenville",
+          "revision": 1375606163,
+          "quote": "It ended the Northwest Indian War of 1785–1795 in the Ohio Country of the old Northwest Territory (1787–1803), and limited Indian country to remaining lands of northwestern Ohio, and began the practice of annual payments of goods, supplies and food, following the land concessions.",
+          "explanation": "The article \"Treaty of Greenville\" (revision 1375606163) says: \"It ended the Northwest Indian War of 1785–1795 in the Ohio Country of the old Northwest Territory (1787–1803), and limited Indian country to remaining lands of northwestern Ohio, and began the practice of annual payments of goods, supplies and food, following the land concessions.\" The edge reads the war as what the treaty closed."
+        }
+      ],
+      "rank": "list",
+      "why": "Read off the List of treaties page: the treaty that ended the held Northwest Indian War, with the article's own sentence for the edge."
     }
-  ],
-  "generated": "2026-10-15"
+  ]
 }
