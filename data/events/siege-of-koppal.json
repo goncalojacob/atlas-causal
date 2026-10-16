@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-koppal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4337390",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Siege of Koppal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4337390"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Koppal\", revision 1370742586"
+    }
+  ],
+  "title": "Siege of Koppal",
+  "summary": "The English Wikipedia article \"Siege of Koppal\", at revision 1370742586, opens: \"The Siege of Koppal was conducted during the Third Anglo-Mysore War by forces of the Nizam of Hyderabad under the command of Mahabat Jung, assisted by a contingent of British East India Company forces. The siege was poorly conducted, and the garrison surrendered principally because Bangalore had fallen in February 1791. The Siege of Koppal was conducted during the Third Anglo-Mysore War by forces of the Nizam of Hyderabad under the command of Mahabat Jung, assisted by a contingent of British East India Company forces. The siege was poorly conducted, and the garrison surrendered principally because Bangalore had fallen in February 1791.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4337390, imported by tools/import/wikidata.mjs. The item's own description reads \"1791 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1790,
+    "end": 1791,
+    "date": "1790-10-28",
+    "endDate": "1791-04-07"
+  },
+  "place": "koppal",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "third-anglo-mysore-war"
+}

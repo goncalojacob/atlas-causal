@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "arrah",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q588587",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Arrah",
+    "pt": "Arrah"
+  },
+  "sources": [],
+  "names": [
+    "Arrah"
+  ],
+  "where": {
+    "lon": 84.671111111111,
+    "lat": 25.563055555556,
+    "precision": "city",
+    "label": "Arrah"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

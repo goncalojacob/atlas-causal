@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-arrah",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q26910860",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Siege of Arrah",
+    "pt": "Cerco de Arrah"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q26910860"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Arrah\", revision 1379508478"
+    }
+  ],
+  "title": "Siege of Arrah",
+  "summary": "The English Wikipedia article \"Siege of Arrah\", at revision 1379508478, opens: \"The siege of Arrah took place during the Indian Mutiny. It was the eight-day defence of a fortified outbuilding, occupied by a combination of 18 civilians and 50 members of the Bengal Military Police Battalion, against 2,500 to 3,000 mutinying Bengal Native Infantry sepoys from three regiments and an estimated 8,000 men from irregular forces commanded by Kunwar Singh, the local zamindar or chieftain who controlled the Jagdishpur estate.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q26910860, imported by tools/import/wikidata.mjs. The item's own description reads \"This was the eight-day defence of a fortified outbuilding during the Indian Rebellion of 1857.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1857,
+    "end": 1857,
+    "date": "1857-07-27",
+    "endDate": "1857-08-03"
+  },
+  "place": "arrah",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "indian-rebellion-of-1857"
+}

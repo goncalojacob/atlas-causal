@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "black-hawk-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q879980",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Black Hawk War",
+    "pt": "Guerra de Black Hawk"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q879980"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Black Hawk War\", revision 1376056616"
+    }
+  ],
+  "title": "Black Hawk War",
+  "summary": "The English Wikipedia article \"Black Hawk War\", at revision 1376056616, opens: \"The Black Hawk War was a conflict between the United States and Native Americans led by Black Hawk, a Sauk leader. The war erupted after Black Hawk and a group of Sauks, Meskwakis (Fox), and Kickapoos, known as the \"British Band\", crossed the Mississippi River, to the U.S. state of Illinois, from Iowa Indian Territory in April 1832. Black Hawk's motives were ambiguous, but he was apparently hoping to reclaim land that was taken over by the United States in the disputed 1804 Treaty of St. Louis.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q879980, imported by tools/import/wikidata.mjs. The item's own description reads \"1832 conflict between the United States and Native Americans\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1832,
+    "end": 1832,
+    "date": "1832-05",
+    "endDate": "1832-08"
+  },
+  "place": "illinois-q1204",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

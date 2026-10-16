@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "northern-expedition-taiping-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q6140803",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Northern Expedition (Taiping Rebellion)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6140803"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Northern Expedition (Taiping Rebellion)\", revision 1379010068"
+    }
+  ],
+  "title": "Northern Expedition (Taiping Rebellion)",
+  "summary": "The English Wikipedia article \"Northern Expedition (Taiping Rebellion)\", at revision 1379010068, opens: \"The Northern Expedition was a failed campaign by the Taiping Heavenly Kingdom against the Qing dynasty during the Taiping Rebellion. Its purpose was to capture Beijing and then complete an encirclement of northern and western China. Launched in May 1853, the Northern Expedition would travel from Jiangsu to Zhili before being destroyed in early 1855.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6140803, imported by tools/import/wikidata.mjs. The item's own description reads \"1853-1855 military campaign of the Taiping Heavenly Kingdom\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1853,
+    "end": 1855
+  },
+  "place": "qing-dynasty",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "taiping-rebellion"
+}

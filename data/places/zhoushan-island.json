@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "zhoushan-island",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1774076",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Zhoushan Island"
+  },
+  "sources": [],
+  "names": [
+    "Zhoushan Island"
+  ],
+  "where": {
+    "lon": 122.13805555556,
+    "lat": 30.057777777778,
+    "precision": "region",
+    "label": "Zhoushan Island"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

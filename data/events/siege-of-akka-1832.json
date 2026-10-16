@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-akka-1832",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q125759097",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Siege of Akka (1832)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q125759097"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Akka (1832)\", revision 1377967164"
+    }
+  ],
+  "title": "Siege of Akka (1832)",
+  "summary": "The English Wikipedia article \"Siege of Akka (1832)\", at revision 1377967164, opens: \"The siege of Akka took place between 26 or 29 November 1831 and 27 May 1832 as part of the First Egyptian–Ottoman War in the eponymous Syrian town of Akka,—the capital of Sidon Eyalet,—also known as Acre, 125 km (78 mi) northwest of Jerusalem, which was then under Ottoman rule. Ibrahim Pasha's Ottoman Egyptian troops successfully besieged and stormed the troops of Abdullah Pasha.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q125759097, imported by tools/import/wikidata.mjs. The item's own description reads \"siege during the first Egyptian–Ottoman war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1832,
+    "end": 1832,
+    "endDate": "1832-05-27"
+  },
+  "place": "acre-israel",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "egyptian-ottoman-war-1831-1833"
+}

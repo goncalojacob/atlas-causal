@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "french-blockade-of-algiers",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q137571917",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "French blockade of Algiers"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q137571917"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French blockade of Algiers\", revision 1376945731"
+    }
+  ],
+  "title": "French blockade of Algiers",
+  "summary": "The English Wikipedia article \"French blockade of Algiers\", at revision 1376945731, opens: \"The French blockade of Algiers was a three-year-long naval blockade imposed by France on the Regency of Algiers. It was imposed on 16 June 1827 as a result of the fly-whisk incident. Intended to cut off the Regency's commercial relations and restrict its navy and corsairs' operations, the French failed to achieve either objective. Throughout the blockade, France planned its ultimate invasion of Algiers in June 1830.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q137571917, imported by tools/import/wikidata.mjs. The item's own description reads \"1827–1830 naval blockade\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1827,
+    "end": 1830,
+    "date": "1827-06-16",
+    "endDate": "1830-06-14"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

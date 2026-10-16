@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sasradilaga-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q133296999",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Sasradilaga rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q133296999"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sasradilaga rebellion\", revision 1370730263"
+    }
+  ],
+  "title": "Sasradilaga rebellion",
+  "summary": "The English Wikipedia article \"Sasradilaga rebellion\", at revision 1370730263, opens: \"The Sasradilaga rebellion was a military campaign of the Java War conducted by Yogyakarta noble Raden Aria Sasradilaga against Dutch forces. Sasradilaga, who had previously fought alongside Dutch forces, turned to join his brother-in-law Prince Diponegoro in revolt, attacking the Dutch in the Rembang region starting in November 1827. The Dutch were caught off-guard, before managing to gather forces for a counterattack which pushed Sasradilaga into a guerilla war. Sasradilaga was defeated in February 1828 after he lost his base at Rajekwesi, and his rebellion was considered over by March.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q133296999, imported by tools/import/wikidata.mjs. The item's own description reads \"1827–1828 rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1827,
+    "end": 1828,
+    "date": "1827-11-28",
+    "endDate": "1828-03-07"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "java-war"
+}
