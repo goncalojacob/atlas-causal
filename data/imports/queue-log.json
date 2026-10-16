@@ -7075,6 +7075,102 @@
         "place": "cyprus-island"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-193",
+      "writer": "A",
+      "fired": "2026-10-16T23:24Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-safavid-war-1532-1555",
+        "edges": [],
+        "place": "mesopotamia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-195",
+      "writer": "A",
+      "fired": "2026-10-16T23:24Z",
+      "status": "written",
+      "written": {
+        "event": "qing-invasion-of-joseon",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-197",
+      "writer": "A",
+      "fired": "2026-10-16T23:24Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-safavid-war-1623-1639",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-199",
+      "writer": "A",
+      "fired": "2026-10-16T23:24Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-kazan",
+        "edges": [],
+        "place": "kazan"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-201",
+      "writer": "A",
+      "fired": "2026-10-16T23:24Z",
+      "status": "written",
+      "written": {
+        "event": "polish-ottoman-war-1633-1634",
+        "edges": [],
+        "place": "kamianets-podilskyi"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-203",
+      "writer": "A",
+      "fired": "2026-10-16T23:24Z",
+      "status": "written",
+      "written": {
+        "event": "invasion-of-ryukyu",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-205",
+      "writer": "A",
+      "fired": "2026-10-16T23:24Z",
+      "status": "written",
+      "written": {
+        "event": "celali-rebellions",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-207",
+      "writer": "A",
+      "fired": "2026-10-16T23:24Z",
+      "status": "written",
+      "written": {
+        "event": "castilian-war",
+        "edges": [],
+        "place": "borneo"
+      },
+      "refusals": []
     }
   ]
 }
