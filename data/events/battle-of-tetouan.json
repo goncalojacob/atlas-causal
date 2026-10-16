@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-tetouan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872623",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Tétouan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872623"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tétouan\", revision 1370275936"
+    }
+  ],
+  "title": "Battle of Tétouan",
+  "summary": "The English Wikipedia article \"Battle of Tétouan\", at revision 1370275936, opens: \"The Battle of Tétouan was fought from 4 to 6 February 1860, near Tétouan, Morocco, between a Spanish Army sent to North Africa and the tribal levies which at the time made up the Moroccan Army. The battle was part of the Hispano–Moroccan War of 1859–1860.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872623, imported by tools/import/wikidata.mjs. The item's own description reads \"1860 battle in Morocco\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1860,
+    "end": 1860,
+    "date": "1860-02-04"
+  },
+  "place": "tetouan",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "hispano-moroccan-war-1859-1860"
+}

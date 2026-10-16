@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-majuba-hill",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2063236",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Majuba Hill"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2063236"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Majuba Hill\", revision 1379907369"
+    }
+  ],
+  "title": "Battle of Majuba Hill",
+  "summary": "The English Wikipedia article \"Battle of Majuba Hill\", at revision 1379907369, opens: \"The Battle of Majuba Hill on 27 February 1881 was the final and decisive battle of the First Boer War that was a resounding victory for the Boers. The British Major General Sir George Pomeroy Colley occupied the summit of the hill on the night of 26–27 February 1881. Colley's motive for occupying Majuba Hill, near Volksrust, now in South Africa, may have been anxiety that the Boers would soon occupy it themselves, since he had witnessed their trenches being dug in the direction of the hill.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2063236, imported by tools/import/wikidata.mjs. The item's own description reads \"1881 final battle of the First Boer War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1881,
+    "end": 1881,
+    "date": "1881-02-27"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "first-boer-war"
+}

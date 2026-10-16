@@ -1957,3 +1957,23 @@ Writer A imported it from the planner's queue as item `2026-10-16-africa-066`, w
 ## Writer A, 2026-10-16: `slachter-s-nek-rebellion`, bare
 
 Writer A imported it from the planner's queue as item `2026-10-16-africa-067`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-16: `battle-of-majuba-hill`, filed under `first-boer-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-070`, rank `child-of:first-boer-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `battle-of-laing-s-nek`, filed under `first-boer-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-074`, rank `child-of:first-boer-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `battle-of-kafr-el-dawwar`, filed under `anglo-egyptian-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-080`, rank `child-of:anglo-egyptian-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `battle-of-sierra-bullones`, filed under `hispano-moroccan-war-1859-1860` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-086`, rank `child-of:hispano-moroccan-war-1859-1860`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `battle-of-atchoukpa`, filed under `first-franco-dahomean-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-096`, rank `child-of:first-franco-dahomean-war`. Its span and its subject put it inside the umbrella.

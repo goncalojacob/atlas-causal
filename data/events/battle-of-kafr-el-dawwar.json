@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-kafr-el-dawwar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871366",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Kafr El Dawwar",
+    "pt": "Batalha de Kafr el Dauwar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871366"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kafr El Dawwar\", revision 1370444486"
+    }
+  ],
+  "title": "Battle of Kafr El Dawwar",
+  "summary": "The English Wikipedia article \"Battle of Kafr El Dawwar\", at revision 1370444486, opens: \"The Battle of Kafr El Dawwar was a conflict during the Anglo-Egyptian War near Kafr El Dawwar, Egypt. The battle took place between an Egyptian army, headed by Ahmed ‘Urabi, and British forces headed by Sir Archibald Alison. As a result, the British abandoned any hope they may have had of reaching Cairo from the north, and shifted their base of operations to Ismailia instead.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871366, imported by tools/import/wikidata.mjs. The item's own description reads \"1882 battle between Egyptian and British forces\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1882,
+    "end": 1882,
+    "date": "1882-08-05"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-egyptian-war"
+}
