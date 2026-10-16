@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1510-influenza-pandemic",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q92056662",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "1510 influenza pandemic"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q92056662"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1510 influenza pandemic\", revision 1376473201"
+    }
+  ],
+  "title": "1510 influenza pandemic",
+  "summary": "The English Wikipedia article \"1510 influenza pandemic\", at revision 1376473201, opens: \"In 1510, an acute respiratory disease emerged in Asia before spreading through North Africa and Europe during the first chronicled, inter-regional flu pandemic generally recognized by medical historians and epidemiologists. Influenza-like illnesses had been documented in Europe since at least Charlemagne, with 1357's outbreak the first to be called influenza, but the 1510 flu pandemic is the first to be pathologically described following communication advances brought about by the printing press. Flu became more widely referred to as coqueluche and coccolucio in France and Sicily during this pandemic, variations of which became the most popular names for flu in early modern Europe. The pandemic caused significant disruption in government, church, and society with near-universal infection and a mortality rate of around 1%.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q92056662, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1510,
+    "end": 1510,
+    "date": "1510-06",
+    "endDate": "1510-10"
+  },
+  "place": "asia",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

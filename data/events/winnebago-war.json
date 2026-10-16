@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "winnebago-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4256410",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Winnebago War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4256410"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Winnebago War\", revision 1376054263"
+    }
+  ],
+  "title": "Winnebago War",
+  "summary": "The English Wikipedia article \"Winnebago War\", at revision 1376054263, opens: \"The Winnebago War, also known as the Winnebago Uprising, was a brief conflict that took place in 1827 in the Upper Mississippi River region of the United States, primarily in what is now the state of Wisconsin. Not quite a war, the hostilities were limited to a few attacks on American civilians by a portion of the Winnebago or Ho-Chunk Native American tribe. The Ho-Chunks were reacting to a wave of lead miners trespassing on their lands, and to false rumors that the United States had sent two Ho-Chunk prisoners to a rival tribe for execution.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4256410, imported by tools/import/wikidata.mjs. The item's own description reads \"1827 conflict in United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1827,
+    "end": 1827,
+    "date": "1827-06-27",
+    "endDate": "1827-09-22"
+  },
+  "place": "illinois-q1204",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

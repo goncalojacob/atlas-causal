@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "navajo-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3778744",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Navajo Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3778744"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Navajo Wars\", revision 1370629330"
+    }
+  ],
+  "title": "Navajo Wars",
+  "summary": "The English Wikipedia article \"Navajo Wars\", at revision 1370629330, opens: \"The term Navajo Wars covers at least three distinct periods of conflict in the American West: the Navajo against the Spanish ; the Navajo against the Mexican government ; and the Navajo (Diné) against the United States. These conflicts ranged from small-scale raiding to large expeditions mounted by governments into territory controlled by the Navajo. The Navajo Wars also encompass the widespread raiding that took place throughout the period; the Navajo raided other tribes and nearby settlements, who in return raided into Navajo territory, creating a cycle of raiding that perpetuated the conflict.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3778744, imported by tools/import/wikidata.mjs. The item's own description reads \"series of conflicts between the Navajo people and colonists, ranging from the late 16th century through 1848\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1500,
+      "max": 1509
+    },
+    "end": 1866
+  },
+  "place": "southwestern-united-states",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
