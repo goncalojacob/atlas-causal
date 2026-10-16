@@ -5247,6 +5247,214 @@
         "place": "nagqu"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-103",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2984898 is already the event \"battle-of-shipu\""
+    },
+    {
+      "id": "2026-10-16-asia-105",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q370307 is already the event \"battle-of-kandahar-1880\""
+    },
+    {
+      "id": "2026-10-16-asia-107",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4141584 is already the event \"bac-ninh-campaign\""
+    },
+    {
+      "id": "2026-10-16-asia-109",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4870635 is already the event \"battle-of-canton-may-1841\""
+    },
+    {
+      "id": "2026-10-16-asia-111",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4872549: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-asia-113",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4087331 is already the event \"battle-of-taku-forts-1858\""
+    },
+    {
+      "id": "2026-10-16-asia-115",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4871238 is already the event \"battle-of-hoa-moc\""
+    },
+    {
+      "id": "2026-10-16-asia-117",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1761867 is already the event \"battle-of-ramnagar\""
+    },
+    {
+      "id": "2026-10-16-asia-119",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4870828 is already the event \"battle-of-cau-giay-1883\""
+    },
+    {
+      "id": "2026-10-16-asia-121",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4871419 is already the event \"battle-of-khadki\""
+    },
+    {
+      "id": "2026-10-16-asia-123",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q815136 is already the event \"battle-of-jalalabad-1842\""
+    },
+    {
+      "id": "2026-10-16-asia-125",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4087470 is already the event \"battle-of-ulan-butung\""
+    },
+    {
+      "id": "2026-10-16-asia-127",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7510120 is already the event \"siege-of-jinji\""
+    },
+    {
+      "id": "2026-10-16-asia-129",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4871853 is already the event \"battle-of-nalapani\""
+    },
+    {
+      "id": "2026-10-16-asia-131",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3874305 is already the event \"battle-of-jao-modo\""
+    },
+    {
+      "id": "2026-10-16-asia-133",
+      "writer": "A",
+      "fired": "2026-10-16T20:23Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4871360 is already the event \"kabul-expedition-1842\""
     }
   ]
 }
