@@ -1,0 +1,36 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "antonio-costa",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "legislative-election-2015--geringonca-2015--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "troika-programme-ends-2014--legislative-election-2015--precondition-of",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "legislative-election-2015",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "antonio-costa--partido-socialista--member-of",
+      "kind": "relation",
+      "locator": null
+    }
+  ],
+  "id": "cne-legislative-2015",
+  "schema": 1
+}
