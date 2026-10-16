@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-allahabad",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4062556",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Treaty of Allahabad",
+    "pt": "Tratado de Allahabad"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4062556"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Allahabad\", revision 1368931189"
+    }
+  ],
+  "title": "Treaty of Allahabad",
+  "summary": "The English Wikipedia article \"Treaty of Allahabad\", at revision 1368931189, opens: \"The Treaty of Allahabad was signed on 16 August 1765, between the Mughal Emperor Shah Alam II, son of the late Emperor Alamgir II, and Robert Clive, of the East India Company, in the aftermath of the Battle of Buxar of 22 October 1764. The treaty was handwritten by I'tisam-ud-Din, a Bengali Muslim scribe and diplomat to the Mughal Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4062556, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty between the Mughal Emperor Shah Alam II and East India company\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1765,
+    "end": 1765,
+    "date": "1765-08-12"
+  },
+  "place": "alahabad-pakistan",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

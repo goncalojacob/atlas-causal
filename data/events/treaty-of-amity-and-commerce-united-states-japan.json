@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-amity-and-commerce-united-states-japan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1194699",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Treaty of Amity and Commerce (United States–Japan)",
+    "pt": "Tratado Harris"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1194699"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Amity and Commerce (United States–Japan)\", revision 1371935103"
+    }
+  ],
+  "title": "Treaty of Amity and Commerce (United States–Japan)",
+  "summary": "The English Wikipedia article \"Treaty of Amity and Commerce (United States–Japan)\", at revision 1371935103, opens: \"The Treaty of Amity and Commerce between Japan and the United States , also called the Harris Treaty was a treaty signed between the United States and Tokugawa Shogunate, which opened the ports of Kanagawa and four other Japanese cities to trade and granted extraterritoriality to foreigners, among a number of trading stipulations. It was signed on the deck of the USS Powhatan in Edo Bay on July 29, 1858.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1194699, imported by tools/import/wikidata.mjs. The item's own description reads \"Treaty between the United States and Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1858,
+    "date": "1858-07-29"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}
