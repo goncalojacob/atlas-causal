@@ -4,244 +4,6 @@
   "generated": "2026-10-16",
   "items": [
     {
-      "id": "2026-10-16-asia-103",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2984898",
-      "title": "Battle of Shipu",
-      "parents": [
-        "sino-french-war"
-      ],
-      "edges": [],
-      "rank": "child-of:sino-french-war",
-      "why": "Asia trails every other lane. Battle of Shipu is a P361 child of the held Sino-French War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-105",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q370307",
-      "title": "Battle of Kandahar (1880)",
-      "parents": [
-        "second-anglo-afghan-war"
-      ],
-      "edges": [],
-      "rank": "child-of:second-anglo-afghan-war",
-      "why": "Asia trails every other lane. Battle of Kandahar (1880) is a P361 child of the held Second Anglo-Afghan War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-107",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4141584",
-      "title": "Bắc Ninh campaign",
-      "parents": [
-        "tonkin-campaign"
-      ],
-      "edges": [],
-      "rank": "child-of:tonkin-campaign",
-      "why": "Asia trails every other lane. Bắc Ninh campaign is a P361 child of the held Tonkin campaign and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-109",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4870635",
-      "title": "Battle of Canton (May 1841)",
-      "parents": [
-        "first-opium-war"
-      ],
-      "edges": [],
-      "rank": "child-of:first-opium-war",
-      "why": "Asia trails every other lane. Battle of Canton (May 1841) is a P361 child of the held First Opium War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-111",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4872549",
-      "title": "Battle of Thuận An",
-      "parents": [
-        "tonkin-campaign"
-      ],
-      "edges": [],
-      "rank": "child-of:tonkin-campaign",
-      "why": "Asia trails every other lane. Battle of Thuận An is a P361 child of the held Tonkin campaign and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-113",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4087331",
-      "title": "Battle of Taku Forts (1858)",
-      "parents": [
-        "second-opium-war"
-      ],
-      "edges": [],
-      "rank": "child-of:second-opium-war",
-      "why": "Asia trails every other lane. Battle of Taku Forts (1858) is a P361 child of the held Second Opium War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-115",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4871238",
-      "title": "Battle of Hòa Mộc",
-      "parents": [
-        "sino-french-war"
-      ],
-      "edges": [],
-      "rank": "child-of:sino-french-war",
-      "why": "Asia trails every other lane. Battle of Hòa Mộc is a P361 child of the held Sino-French War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-117",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1761867",
-      "title": "Battle of Ramnagar",
-      "parents": [
-        "second-anglo-sikh-war"
-      ],
-      "edges": [],
-      "rank": "child-of:second-anglo-sikh-war",
-      "why": "Asia trails every other lane. Battle of Ramnagar is a P361 child of the held Second Anglo-Sikh War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-119",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4870828",
-      "title": "Battle of Cầu Giấy (1883)",
-      "parents": [
-        "tonkin-campaign"
-      ],
-      "edges": [],
-      "rank": "child-of:tonkin-campaign",
-      "why": "Asia trails every other lane. Battle of Cầu Giấy (1883) is a P361 child of the held Tonkin campaign and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-121",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4871419",
-      "title": "Battle of Khadki",
-      "parents": [
-        "third-anglo-maratha-war"
-      ],
-      "edges": [],
-      "rank": "child-of:third-anglo-maratha-war",
-      "why": "Asia trails every other lane. Battle of Khadki is a P361 child of the held Third Anglo-Maratha War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-123",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q815136",
-      "title": "Battle of Jalalabad (1842)",
-      "parents": [
-        "first-anglo-afghan-war"
-      ],
-      "edges": [],
-      "rank": "child-of:first-anglo-afghan-war",
-      "why": "Asia trails every other lane. Battle of Jalalabad (1842) is a P361 child of the held First Anglo-Afghan War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-125",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4087470",
-      "title": "Battle of Ulan Butung",
-      "parents": [
-        "dzungar-qing-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:dzungar-qing-wars",
-      "why": "Asia trails every other lane. Battle of Ulan Butung is a P361 child of the held Dzungar–Qing Wars and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-127",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q7510120",
-      "title": "Siege of Jinji",
-      "parents": [
-        "deccan-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:deccan-wars",
-      "why": "Asia trails every other lane. Siege of Jinji is a P361 child of the held Deccan wars and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-129",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4871853",
-      "title": "Battle of Nalapani",
-      "parents": [
-        "anglo-nepalese-war"
-      ],
-      "edges": [],
-      "rank": "child-of:anglo-nepalese-war",
-      "why": "Asia trails every other lane. Battle of Nalapani is a P361 child of the held Anglo-Nepalese War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-131",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q3874305",
-      "title": "Battle of Jao Modo",
-      "parents": [
-        "dzungar-qing-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:dzungar-qing-wars",
-      "why": "Asia trails every other lane. Battle of Jao Modo is a P361 child of the held Dzungar–Qing Wars and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-133",
-      "planned": "2026-10-16T17:46:41Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4871360",
-      "title": "Kabul Expedition (1842)",
-      "parents": [
-        "first-anglo-afghan-war"
-      ],
-      "edges": [],
-      "rank": "child-of:first-anglo-afghan-war",
-      "why": "Asia trails every other lane. Kabul Expedition (1842) is a P361 child of the held First Anglo-Afghan War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-107",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q4870959",
-      "title": "Battle of Elands River (1900)",
-      "parents": [
-        "second-boer-war"
-      ],
-      "edges": [],
-      "rank": "child-of:second-boer-war",
-      "why": "A P361 child of Second Boer War, already held. Wikidata sitelink count 6."
-    },
-    {
       "id": "2026-10-16-africa-108",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "africa",
@@ -256,40 +18,12 @@
       "why": "A P361 child of French invasion of Egypt and Syria, already held. Wikidata sitelink count 5."
     },
     {
-      "id": "2026-10-16-africa-109",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q132175198",
-      "title": "Sinking of the Nossa Senhora da Conceição",
-      "parents": [
-        "barbary-portuguese-conflicts"
-      ],
-      "edges": [],
-      "rank": "child-of:barbary-portuguese-conflicts",
-      "why": "A P361 child of Barbary–Portuguese conflicts, already held. Wikidata sitelink count 4."
-    },
-    {
       "id": "2026-10-16-africa-110",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3062378",
       "title": "First Battle of Blida",
-      "parents": [
-        "french-conquest-of-algeria"
-      ],
-      "edges": [],
-      "rank": "child-of:french-conquest-of-algeria",
-      "why": "A P361 child of French conquest of Algeria, already held. Wikidata sitelink count 4."
-    },
-    {
-      "id": "2026-10-16-africa-111",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q27734332",
-      "title": "Expedition of the Col des Beni Aïcha",
       "parents": [
         "french-conquest-of-algeria"
       ],
@@ -312,24 +46,10 @@
       "why": "A P361 child of French conquest of Algeria, already held. Wikidata sitelink count 3."
     },
     {
-      "id": "2026-10-16-africa-113",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q2889985",
-      "title": "Battle of Sig",
-      "parents": [
-        "french-conquest-of-algeria"
-      ],
-      "edges": [],
-      "rank": "child-of:french-conquest-of-algeria",
-      "why": "A P361 child of French conquest of Algeria, already held. Wikidata sitelink count 3."
-    },
-    {
       "id": "2026-10-16-africa-114",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q18164954",
       "title": "Battle of Halai",
       "parents": [
@@ -338,20 +58,6 @@
       "edges": [],
       "rank": "child-of:scramble-for-africa",
       "why": "A P361 child of Scramble for Africa, already held. Wikidata sitelink count 3."
-    },
-    {
-      "id": "2026-10-16-africa-115",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q111699632",
-      "title": "Black Week",
-      "parents": [
-        "second-boer-war"
-      ],
-      "edges": [],
-      "rank": "child-of:second-boer-war",
-      "why": "A P361 child of Second Boer War, already held. Wikidata sitelink count 3."
     },
     {
       "id": "2026-10-16-africa-116",
@@ -368,40 +74,15 @@
       "why": "A P361 child of French conquest of Algeria, already held. Wikidata sitelink count 2."
     },
     {
-      "id": "2026-10-16-africa-117",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q7630458",
-      "title": "Suakin Expedition",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "A P361 child of Mahdist War, already held. Wikidata sitelink count 2."
-    },
-    {
       "id": "2026-10-16-africa-118",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q137571917",
       "title": "French blockade of Algiers",
       "edges": [],
       "rank": "child-of:french-conquest-of-algeria",
       "why": "A P361 child of French conquest of Algeria, already held. Wikidata sitelink count 1."
-    },
-    {
-      "id": "2026-10-16-asia-134",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q10658304",
-      "title": "1889–1890 pandemic",
-      "edges": [],
-      "rank": "list",
-      "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 28."
     },
     {
       "id": "2026-10-16-asia-135",
@@ -418,34 +99,12 @@
       "why": "A P361 child of Transition from Ming to Qing, already held. Wikidata sitelink count 23."
     },
     {
-      "id": "2026-10-16-asia-136",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q1259178",
-      "title": "Third plague pandemic",
-      "edges": [],
-      "rank": "list",
-      "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 21."
-    },
-    {
       "id": "2026-10-16-asia-137",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2646216",
       "title": "1817–1824 cholera pandemic",
-      "edges": [],
-      "rank": "list",
-      "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 20."
-    },
-    {
-      "id": "2026-10-16-asia-138",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2646343",
-      "title": "1826–1837 cholera pandemic",
       "edges": [],
       "rank": "list",
       "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 20."
@@ -462,34 +121,12 @@
       "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 20."
     },
     {
-      "id": "2026-10-16-asia-140",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q5476234",
-      "title": "1863–1875 cholera pandemic",
-      "edges": [],
-      "rank": "list",
-      "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 20."
-    },
-    {
       "id": "2026-10-16-asia-141",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5447588",
       "title": "1881–1896 cholera pandemic",
-      "edges": [],
-      "rank": "list",
-      "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 20."
-    },
-    {
-      "id": "2026-10-16-asia-142",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q7533201",
-      "title": "1899–1923 cholera pandemic",
       "edges": [],
       "rank": "list",
       "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 20."
@@ -509,24 +146,10 @@
       "why": "A P361 child of Transition from Ming to Qing, already held. Wikidata sitelink count 13."
     },
     {
-      "id": "2026-10-16-asia-144",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2583202",
-      "title": "Pescadores campaign (1895)",
-      "parents": [
-        "first-sino-japanese-war"
-      ],
-      "edges": [],
-      "rank": "child-of:first-sino-japanese-war",
-      "why": "A P361 child of First Sino-Japanese War, already held. Wikidata sitelink count 12."
-    },
-    {
       "id": "2026-10-16-asia-145",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7459167",
       "title": "Seymour Expedition",
       "parents": [
@@ -535,20 +158,6 @@
       "edges": [],
       "rank": "child-of:boxer-rebellion",
       "why": "A P361 child of Boxer Rebellion, already held. Wikidata sitelink count 8."
-    },
-    {
-      "id": "2026-10-16-asia-146",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4872861",
-      "title": "Battle of the Bogue",
-      "parents": [
-        "first-opium-war"
-      ],
-      "edges": [],
-      "rank": "child-of:first-opium-war",
-      "why": "A P361 child of First Opium War, already held. Wikidata sitelink count 7."
     },
     {
       "id": "2026-10-16-asia-147",
@@ -565,24 +174,10 @@
       "why": "A P361 child of First Opium War, already held. Wikidata sitelink count 7."
     },
     {
-      "id": "2026-10-16-asia-148",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q1047602",
-      "title": "Battle of Ningyuan",
-      "parents": [
-        "transition-from-ming-to-qing"
-      ],
-      "edges": [],
-      "rank": "child-of:transition-from-ming-to-qing",
-      "why": "A P361 child of Transition from Ming to Qing, already held. Wikidata sitelink count 7."
-    },
-    {
       "id": "2026-10-16-asia-149",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7667673",
       "title": "Sơn Tây campaign",
       "parents": [
@@ -591,20 +186,6 @@
       "edges": [],
       "rank": "child-of:tonkin-campaign",
       "why": "A P361 child of Tonkin campaign, already held. Wikidata sitelink count 7."
-    },
-    {
-      "id": "2026-10-16-asia-150",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q969018",
-      "title": "Siege of the Sherpur Cantonment",
-      "parents": [
-        "second-anglo-afghan-war"
-      ],
-      "edges": [],
-      "rank": "child-of:second-anglo-afghan-war",
-      "why": "A P361 child of Second Anglo-Afghan War, already held. Wikidata sitelink count 6."
     },
     {
       "id": "2026-10-16-asia-151",
@@ -621,21 +202,10 @@
       "why": "A P361 child of Taiping Rebellion, already held. Wikidata sitelink count 6."
     },
     {
-      "id": "2026-10-16-asia-152",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q104892373",
-      "title": "Great Plague in the late Ming dynasty",
-      "edges": [],
-      "rank": "list",
-      "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 6."
-    },
-    {
       "id": "2026-10-16-asia-153",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7509852",
       "title": "Siege of Bangkok",
       "parents": [
@@ -644,20 +214,6 @@
       "edges": [],
       "rank": "child-of:siamese-revolution-of-1688",
       "why": "A P361 child of Siamese revolution of 1688, already held. Wikidata sitelink count 5."
-    },
-    {
-      "id": "2026-10-16-asia-154",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4212577",
-      "title": "Second Battle of Cawnpore",
-      "parents": [
-        "indian-rebellion-of-1857"
-      ],
-      "edges": [],
-      "rank": "child-of:indian-rebellion-of-1857",
-      "why": "A P361 child of Indian Rebellion of 1857, already held. Wikidata sitelink count 5."
     },
     {
       "id": "2026-10-16-asia-155",
@@ -674,24 +230,10 @@
       "why": "A P361 child of Indian Rebellion of 1857, already held. Wikidata sitelink count 5."
     },
     {
-      "id": "2026-10-16-asia-156",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q6141115",
-      "title": "Battle of Sanhe",
-      "parents": [
-        "taiping-rebellion"
-      ],
-      "edges": [],
-      "rank": "child-of:taiping-rebellion",
-      "why": "A P361 child of Taiping Rebellion, already held. Wikidata sitelink count 5."
-    },
-    {
       "id": "2026-10-16-asia-157",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7510255",
       "title": "Siege of Multan (1848–1849)",
       "parents": [
@@ -700,20 +242,6 @@
       "edges": [],
       "rank": "child-of:second-anglo-sikh-war",
       "why": "A P361 child of Second Anglo-Sikh War, already held. Wikidata sitelink count 5."
-    },
-    {
-      "id": "2026-10-16-asia-158",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4872985",
-      "title": "Battle of the Barrier Forts",
-      "parents": [
-        "second-opium-war"
-      ],
-      "edges": [],
-      "rank": "child-of:second-opium-war",
-      "why": "A P361 child of Second Opium War, already held. Wikidata sitelink count 5."
     },
     {
       "id": "2026-10-16-asia-159",
@@ -730,21 +258,10 @@
       "why": "A P361 child of Transition from Ming to Qing, already held. Wikidata sitelink count 5."
     },
     {
-      "id": "2026-10-16-asia-160",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q10843835",
-      "title": "1894 Hong Kong plague",
-      "edges": [],
-      "rank": "list",
-      "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 5."
-    },
-    {
       "id": "2026-10-16-asia-161",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7509876",
       "title": "Siege of Bijapur",
       "parents": [
@@ -753,20 +270,6 @@
       "edges": [],
       "rank": "child-of:deccan-wars",
       "why": "A P361 child of Deccan wars, already held. Wikidata sitelink count 4."
-    },
-    {
-      "id": "2026-10-16-asia-162",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q85970616",
-      "title": "Euphrates-Tigris Expedition",
-      "parents": [
-        "ottoman-persian-war-1505-1517"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-persian-war-1505-1517",
-      "why": "A P361 child of Ottoman–Persian War (1505–1517), already held. Wikidata sitelink count 4."
     },
     {
       "id": "2026-10-16-asia-163",
@@ -783,43 +286,15 @@
       "why": "A P361 child of Indian Rebellion of 1857, already held. Wikidata sitelink count 4."
     },
     {
-      "id": "2026-10-16-asia-164",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q31821016",
-      "title": "Battle of Muddy Flat",
-      "parents": [
-        "taiping-rebellion"
-      ],
-      "edges": [],
-      "rank": "child-of:taiping-rebellion",
-      "why": "A P361 child of Taiping Rebellion, already held. Wikidata sitelink count 4."
-    },
-    {
       "id": "2026-10-16-asia-165",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4940602",
       "title": "Bombay plague epidemic",
       "edges": [],
       "rank": "list",
       "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 4."
-    },
-    {
-      "id": "2026-10-16-asia-166",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4872458",
-      "title": "Battle of Sultanpet Tope",
-      "parents": [
-        "fourth-anglo-mysore-war"
-      ],
-      "edges": [],
-      "rank": "child-of:fourth-anglo-mysore-war",
-      "why": "A P361 child of Fourth Anglo-Mysore War, already held. Wikidata sitelink count 3."
     },
     {
       "id": "2026-10-16-asia-167",
@@ -836,24 +311,10 @@
       "why": "A P361 child of Philippine–American War, already held. Wikidata sitelink count 3."
     },
     {
-      "id": "2026-10-16-asia-168",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4870618",
-      "title": "Battle of Calumpit",
-      "parents": [
-        "philippine-american-war"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-american-war",
-      "why": "A P361 child of Philippine–American War, already held. Wikidata sitelink count 3."
-    },
-    {
       "id": "2026-10-16-asia-169",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4342054",
       "title": "Capture of Lucknow",
       "parents": [
@@ -862,20 +323,6 @@
       "edges": [],
       "rank": "child-of:indian-rebellion-of-1857",
       "why": "A P361 child of Indian Rebellion of 1857, already held. Wikidata sitelink count 3."
-    },
-    {
-      "id": "2026-10-16-asia-170",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4870613",
-      "title": "Battle of Tirurangadi",
-      "parents": [
-        "third-anglo-mysore-war"
-      ],
-      "edges": [],
-      "rank": "child-of:third-anglo-mysore-war",
-      "why": "A P361 child of Third Anglo-Mysore War, already held. Wikidata sitelink count 3."
     },
     {
       "id": "2026-10-16-asia-171",
@@ -892,37 +339,12 @@
       "why": "A P361 child of Second Opium War, already held. Wikidata sitelink count 3."
     },
     {
-      "id": "2026-10-16-asia-172",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q131913878",
-      "title": "Portuguese intervention in Hormuz (1514–1515)",
-      "edges": [],
-      "rank": "child-of:portuguese-conquest-of-hormuz",
-      "why": "A P361 child of Portuguese conquest of Hormuz, already held. Wikidata sitelink count 3."
-    },
-    {
       "id": "2026-10-16-asia-173",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872301",
       "title": "Battle of Santa Cruz (1899)",
-      "parents": [
-        "philippine-american-war"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-american-war",
-      "why": "A P361 child of Philippine–American War, already held. Wikidata sitelink count 2."
-    },
-    {
-      "id": "2026-10-16-asia-174",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q7443076",
-      "title": "Second Battle of Caloocan",
       "parents": [
         "philippine-american-war"
       ],
@@ -945,24 +367,10 @@
       "why": "A P361 child of Philippine–American War, already held. Wikidata sitelink count 2."
     },
     {
-      "id": "2026-10-16-asia-176",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q112286219",
-      "title": "Siege of Beitang",
-      "parents": [
-        "boxer-rebellion"
-      ],
-      "edges": [],
-      "rank": "child-of:boxer-rebellion",
-      "why": "A P361 child of Boxer Rebellion, already held. Wikidata sitelink count 2."
-    },
-    {
       "id": "2026-10-16-asia-177",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872109",
       "title": "Battle of Prome",
       "parents": [
@@ -971,20 +379,6 @@
       "edges": [],
       "rank": "child-of:first-anglo-burmese-war",
       "why": "A P361 child of First Anglo-Burmese War, already held. Wikidata sitelink count 2."
-    },
-    {
-      "id": "2026-10-16-asia-178",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q7509809",
-      "title": "Siege of Ambur",
-      "parents": [
-        "first-anglo-mysore-war"
-      ],
-      "edges": [],
-      "rank": "child-of:first-anglo-mysore-war",
-      "why": "A P361 child of First Anglo-Mysore War, already held. Wikidata sitelink count 2."
     },
     {
       "id": "2026-10-16-asia-179",
@@ -1001,40 +395,15 @@
       "why": "A P361 child of Third Anglo-Mysore War, already held. Wikidata sitelink count 2."
     },
     {
-      "id": "2026-10-16-asia-180",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q135189327",
-      "title": "Battle of Rangoon (1852)",
-      "parents": [
-        "second-anglo-burmese-war"
-      ],
-      "edges": [],
-      "rank": "child-of:second-anglo-burmese-war",
-      "why": "A P361 child of Second Anglo-Burmese War, already held. Wikidata sitelink count 2."
-    },
-    {
       "id": "2026-10-16-asia-181",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4872387",
       "title": "Battle of Sittimungulum",
       "parents": [
         "third-anglo-mysore-war"
       ],
-      "edges": [],
-      "rank": "child-of:third-anglo-mysore-war",
-      "why": "A P361 child of Third Anglo-Mysore War, already held. Wikidata sitelink count 2."
-    },
-    {
-      "id": "2026-10-16-asia-182",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4872960",
-      "title": "Battle of Nedumkotta",
       "edges": [],
       "rank": "child-of:third-anglo-mysore-war",
       "why": "A P361 child of Third Anglo-Mysore War, already held. Wikidata sitelink count 2."
@@ -1054,24 +423,10 @@
       "why": "A P361 child of Second Opium War, already held. Wikidata sitelink count 2."
     },
     {
-      "id": "2026-10-16-asia-184",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q7509848",
-      "title": "Siege of Bangalore",
-      "parents": [
-        "third-anglo-mysore-war"
-      ],
-      "edges": [],
-      "rank": "child-of:third-anglo-mysore-war",
-      "why": "A P361 child of Third Anglo-Mysore War, already held. Wikidata sitelink count 2."
-    },
-    {
       "id": "2026-10-16-asia-185",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q7509967",
       "title": "Siege of Darwar",
       "parents": [
@@ -1080,20 +435,6 @@
       "edges": [],
       "rank": "child-of:third-anglo-mysore-war",
       "why": "A P361 child of Third Anglo-Mysore War, already held. Wikidata sitelink count 2."
-    },
-    {
-      "id": "2026-10-16-asia-186",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q133287944",
-      "title": "Attack on Selarong",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "A P361 child of Java War, already held. Wikidata sitelink count 2."
     },
     {
       "id": "2026-10-16-asia-187",
@@ -1110,24 +451,10 @@
       "why": "A P361 child of Java War, already held. Wikidata sitelink count 2."
     },
     {
-      "id": "2026-10-16-asia-188",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4871941",
-      "title": "Battle of Olongapo",
-      "parents": [
-        "philippine-american-war"
-      ],
-      "edges": [],
-      "rank": "child-of:philippine-american-war",
-      "why": "A P361 child of Philippine–American War, already held. Wikidata sitelink count 1."
-    },
-    {
       "id": "2026-10-16-asia-189",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q125759097",
       "title": "Siege of Akka (1832)",
       "parents": [
@@ -1136,20 +463,6 @@
       "edges": [],
       "rank": "child-of:egyptian-ottoman-war-1831-1833",
       "why": "A P361 child of Egyptian–Ottoman War (1831–1833), already held. Wikidata sitelink count 1."
-    },
-    {
-      "id": "2026-10-16-americas-001",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q900693",
-      "title": "Seminole Wars",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:american-indian-wars",
-      "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 28."
     },
     {
       "id": "2026-10-16-americas-002",
@@ -1166,43 +479,15 @@
       "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 26."
     },
     {
-      "id": "2026-10-16-americas-003",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q325314",
-      "title": "Tecumseh's War",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:american-indian-wars",
-      "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 16."
-    },
-    {
       "id": "2026-10-16-americas-004",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q63472138",
       "title": "Cocoliztli epidemics",
       "edges": [],
       "rank": "list",
       "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 15."
-    },
-    {
-      "id": "2026-10-16-americas-005",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1506788",
-      "title": "North-West Rebellion",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:american-indian-wars",
-      "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 14."
     },
     {
       "id": "2026-10-16-americas-006",
@@ -1219,40 +504,12 @@
       "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 12."
     },
     {
-      "id": "2026-10-16-americas-007",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3177722",
-      "title": "Braddock Expedition",
-      "parents": [
-        "french-and-indian-war"
-      ],
-      "edges": [],
-      "rank": "child-of:french-and-indian-war",
-      "why": "A P361 child of French and Indian War, already held. Wikidata sitelink count 11."
-    },
-    {
       "id": "2026-10-16-americas-008",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q2635052",
       "title": "Modoc War",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:american-indian-wars",
-      "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 10."
-    },
-    {
-      "id": "2026-10-16-americas-009",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q474891",
-      "title": "Texas–Indian wars",
       "parents": [
         "american-indian-wars"
       ],
@@ -1275,24 +532,10 @@
       "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 9."
     },
     {
-      "id": "2026-10-16-americas-011",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3119015",
-      "title": "Yakima War",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:american-indian-wars",
-      "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 9."
-    },
-    {
       "id": "2026-10-16-americas-012",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q1052060",
       "title": "Cayuse War",
       "parents": [
@@ -1301,20 +544,6 @@
       "edges": [],
       "rank": "child-of:american-indian-wars",
       "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 9."
-    },
-    {
-      "id": "2026-10-16-americas-013",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3778746",
-      "title": "Sioux Wars",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:american-indian-wars",
-      "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 8."
     },
     {
       "id": "2026-10-16-americas-014",
@@ -1331,43 +560,15 @@
       "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 8."
     },
     {
-      "id": "2026-10-16-americas-015",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2321496",
-      "title": "Bannock War",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:american-indian-wars",
-      "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 8."
-    },
-    {
       "id": "2026-10-16-americas-016",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q8049168",
       "title": "Yaqui Wars",
       "edges": [],
       "rank": "child-of:american-indian-wars",
       "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 7."
-    },
-    {
-      "id": "2026-10-16-americas-017",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4256410",
-      "title": "Winnebago War",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:american-indian-wars",
-      "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 6."
     },
     {
       "id": "2026-10-16-americas-018",
@@ -1384,40 +585,15 @@
       "why": "A P361 child of Northwest Indian War, already held. Wikidata sitelink count 5."
     },
     {
-      "id": "2026-10-16-americas-019",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2888679",
-      "title": "Battle of Grand Pré",
-      "parents": [
-        "king-george-s-war"
-      ],
-      "edges": [],
-      "rank": "child-of:king-george-s-war",
-      "why": "A P361 child of King George's War, already held. Wikidata sitelink count 5."
-    },
-    {
       "id": "2026-10-16-americas-020",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4087333",
       "title": "Battle of Beecher Island",
       "parents": [
         "american-indian-wars"
       ],
-      "edges": [],
-      "rank": "child-of:american-indian-wars",
-      "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 5."
-    },
-    {
-      "id": "2026-10-16-americas-021",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3778744",
-      "title": "Navajo Wars",
       "edges": [],
       "rank": "child-of:american-indian-wars",
       "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 5."
@@ -1437,24 +613,10 @@
       "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 5."
     },
     {
-      "id": "2026-10-16-americas-023",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q6192082",
-      "title": "Jicarilla War",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:american-indian-wars",
-      "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 5."
-    },
-    {
       "id": "2026-10-16-americas-024",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q3062441",
       "title": "Duc d'Anville expedition",
       "parents": [
@@ -1463,20 +625,6 @@
       "edges": [],
       "rank": "child-of:king-george-s-war",
       "why": "A P361 child of King George's War, already held. Wikidata sitelink count 4."
-    },
-    {
-      "id": "2026-10-16-americas-025",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2117576",
-      "title": "Puget Sound War",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:american-indian-wars",
-      "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 4."
     },
     {
       "id": "2026-10-16-americas-026",
@@ -1493,46 +641,10 @@
       "why": "A P361 child of American Indian Wars, already held. Wikidata sitelink count 4."
     },
     {
-      "id": "2026-10-16-europe-001",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q58732",
-      "title": "Great Siege of Malta",
-      "parents": [
-        "ottoman-habsburg-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-habsburg-wars",
-      "why": "A P361 child of Ottoman–Habsburg wars, already held. Wikidata sitelink count 55."
-    },
-    {
-      "id": "2026-10-16-europe-002",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q154981",
-      "title": "Second Schleswig War",
-      "edges": [],
-      "rank": "child-of:unification-of-germany",
-      "why": "A P361 child of Unification of Germany, already held. Wikidata sitelink count 51."
-    },
-    {
-      "id": "2026-10-16-europe-003",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q917048",
-      "title": "Great Plague of London",
-      "edges": [],
-      "rank": "list",
-      "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 40."
-    },
-    {
       "id": "2026-10-16-europe-004",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q916495",
       "title": "Second Anglo-Dutch War",
       "parents": [
@@ -1541,20 +653,6 @@
       "edges": [],
       "rank": "child-of:anglo-dutch-wars",
       "why": "A P361 child of Anglo-Dutch wars, already held. Wikidata sitelink count 38."
-    },
-    {
-      "id": "2026-10-16-europe-005",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q1151913",
-      "title": "First Anglo-Dutch War",
-      "parents": [
-        "anglo-dutch-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:anglo-dutch-wars",
-      "why": "A P361 child of Anglo-Dutch wars, already held. Wikidata sitelink count 36."
     },
     {
       "id": "2026-10-16-europe-006",
@@ -1571,24 +669,10 @@
       "why": "A P361 child of Ottoman–Habsburg wars, already held. Wikidata sitelink count 36."
     },
     {
-      "id": "2026-10-16-europe-007",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q606621",
-      "title": "Siege of Szigetvár",
-      "parents": [
-        "ottoman-habsburg-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-habsburg-wars",
-      "why": "A P361 child of Ottoman–Habsburg wars, already held. Wikidata sitelink count 34."
-    },
-    {
       "id": "2026-10-16-europe-008",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q815228",
       "title": "Siege of Toulon (1793)",
       "parents": [
@@ -1597,20 +681,6 @@
       "edges": [],
       "rank": "child-of:war-of-the-first-coalition",
       "why": "A P361 child of War of the First Coalition, already held. Wikidata sitelink count 33."
-    },
-    {
-      "id": "2026-10-16-europe-009",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q6542740",
-      "title": "Austro-Turkish War (1788–1791)",
-      "parents": [
-        "ottoman-habsburg-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-habsburg-wars",
-      "why": "A P361 child of Ottoman–Habsburg wars, already held. Wikidata sitelink count 33."
     },
     {
       "id": "2026-10-16-europe-010",
@@ -1627,21 +697,10 @@
       "why": "A P361 child of Anglo-Dutch wars, already held. Wikidata sitelink count 32."
     },
     {
-      "id": "2026-10-16-europe-011",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q920766",
-      "title": "Sweating sickness",
-      "edges": [],
-      "rank": "list",
-      "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 31."
-    },
-    {
       "id": "2026-10-16-europe-012",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q576292",
       "title": "Fourth Anglo-Dutch War",
       "parents": [
@@ -1650,17 +709,6 @@
       "edges": [],
       "rank": "child-of:anglo-dutch-wars",
       "why": "A P361 child of Anglo-Dutch wars, already held. Wikidata sitelink count 25."
-    },
-    {
-      "id": "2026-10-16-europe-013",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q1936002",
-      "title": "Great Plague of Marseille",
-      "edges": [],
-      "rank": "list",
-      "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 25."
     },
     {
       "id": "2026-10-16-europe-014",
@@ -1677,24 +725,10 @@
       "why": "A P361 child of Great Turkish War, already held. Wikidata sitelink count 23."
     },
     {
-      "id": "2026-10-16-europe-015",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q2080325",
-      "title": "Siege of Fort William Henry",
-      "parents": [
-        "seven-years-war"
-      ],
-      "edges": [],
-      "rank": "child-of:seven-years-war",
-      "why": "A P361 child of Seven Years' War, already held. Wikidata sitelink count 22."
-    },
-    {
       "id": "2026-10-16-europe-016",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q707364",
       "title": "Count's Feud",
       "parents": [
@@ -1703,20 +737,6 @@
       "edges": [],
       "rank": "child-of:reformation",
       "why": "A P361 child of Reformation, already held. Wikidata sitelink count 19."
-    },
-    {
-      "id": "2026-10-16-europe-017",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q1049956",
-      "title": "Hungarian campaign of 1527–1528",
-      "parents": [
-        "ottoman-habsburg-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-habsburg-wars",
-      "why": "A P361 child of Ottoman–Habsburg wars, already held. Wikidata sitelink count 18."
     },
     {
       "id": "2026-10-16-europe-018",
@@ -1730,24 +750,10 @@
       "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 18."
     },
     {
-      "id": "2026-10-16-europe-019",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q324438",
-      "title": "War of the Pyrenees",
-      "parents": [
-        "war-of-the-first-coalition"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-the-first-coalition",
-      "why": "A P361 child of War of the First Coalition, already held. Wikidata sitelink count 16."
-    },
-    {
       "id": "2026-10-16-europe-020",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q539707",
       "title": "Siege of Pirna",
       "parents": [
@@ -1756,20 +762,6 @@
       "edges": [],
       "rank": "child-of:seven-years-war",
       "why": "A P361 child of Seven Years' War, already held. Wikidata sitelink count 16."
-    },
-    {
-      "id": "2026-10-16-europe-021",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q3778623",
-      "title": "War of the Three Henrys",
-      "parents": [
-        "french-wars-of-religion"
-      ],
-      "edges": [],
-      "rank": "child-of:french-wars-of-religion",
-      "why": "A P361 child of French Wars of Religion, already held. Wikidata sitelink count 16."
     },
     {
       "id": "2026-10-16-europe-022",
@@ -1786,24 +778,10 @@
       "why": "A P361 child of Great Turkish War, already held. Wikidata sitelink count 16."
     },
     {
-      "id": "2026-10-16-europe-023",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q7263697",
-      "title": "Italian campaigns of the French Revolutionary Wars",
-      "parents": [
-        "war-of-the-first-coalition"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-the-first-coalition",
-      "why": "A P361 child of War of the First Coalition, already held. Wikidata sitelink count 15."
-    },
-    {
       "id": "2026-10-16-europe-024",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q694911",
       "title": "Battle of Párkány",
       "parents": [
@@ -1812,17 +790,6 @@
       "edges": [],
       "rank": "child-of:great-turkish-war",
       "why": "A P361 child of Great Turkish War, already held. Wikidata sitelink count 15."
-    },
-    {
-      "id": "2026-10-16-europe-025",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q448015",
-      "title": "Great Plague of Vienna",
-      "edges": [],
-      "rank": "list",
-      "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 13."
     },
     {
       "id": "2026-10-16-europe-026",
@@ -1836,37 +803,15 @@
       "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 10."
     },
     {
-      "id": "2026-10-16-europe-027",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q92056662",
-      "title": "1510 influenza pandemic",
-      "edges": [],
-      "rank": "list",
-      "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 9."
-    },
-    {
       "id": "2026-10-16-europe-028",
       "planned": "2026-10-16T20:30:20Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q5599759",
       "title": "Great Plague of 1738",
       "edges": [],
       "rank": "list",
       "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 9."
-    },
-    {
-      "id": "2026-10-16-europe-029",
-      "planned": "2026-10-16T20:30:20Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q96359661",
-      "title": "1557 influenza pandemic",
-      "edges": [],
-      "rank": "list",
-      "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 8."
     },
     {
       "id": "2026-10-16-europe-030",
@@ -1878,6 +823,1402 @@
       "edges": [],
       "rank": "list",
       "why": "From the List of epidemics and pandemics, read by death toll. Wikidata sitelink count 6."
+    },
+    {
+      "id": "2026-10-16-americas-027",
+      "planned": "2026-10-16T22:25:17Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q5255169",
+      "title": "Demerara rebellion of 1823",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Refused 15 October for a class (Q1155622, slave rebellion) absent from wikidata-seeds.json. The class entered the file from the 2012Z note of 16 October, so the item returns."
+    },
+    {
+      "id": "2026-10-16-americas-028",
+      "planned": "2026-10-16T22:25:17Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q3775537",
+      "title": "New York Conspiracy of 1741",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Refused 15 October for a class (Q108856008, slave rebellions in the United States) absent from wikidata-seeds.json. The class entered the file from the 2012Z note of 16 October, so the item returns."
+    },
+    {
+      "id": "2026-10-16-asia-190",
+      "planned": "2026-10-16T22:25:17Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q714820",
+      "title": "Satsuma Rebellion",
+      "parents": [
+        "meiji-restoration"
+      ],
+      "edges": [],
+      "rank": "child-of:meiji-restoration",
+      "why": "Refused 16 October for a class (Q10931495, shizoku rebellion) absent from wikidata-seeds.json. The class entered the file from the 2012Z note of 16 October, so the item returns. Its span (29 January to 24 September 1877) falls inside the held Meiji Restoration (1868 to 1889), as the 0616Z note first found. Wikidata sitelink count 32."
+    },
+    {
+      "id": "2026-10-16-africa-119",
+      "planned": "2026-10-16T22:25:17Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2276912",
+      "title": "Shangani Patrol",
+      "parents": [
+        "first-matabele-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-matabele-war",
+      "why": "Refused 16 October for a class (Q3817498, last stand) absent from wikidata-seeds.json. The class entered the file from the 2012Z note of 16 October, so the item returns. Its span (3 December 1893) falls inside the held First Matabele War (October 1893 to January 1894), one of the umbrellas with fewer than three children."
+    },
+    {
+      "id": "2026-10-16-europe-031",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q207576",
+      "title": "Siege of Vienna (1529)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 48."
+    },
+    {
+      "id": "2026-10-16-europe-032",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q641479",
+      "title": "Khmelnytsky Uprising",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 42."
+    },
+    {
+      "id": "2026-10-16-europe-033",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q168556",
+      "title": "Schmalkaldic War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 40."
+    },
+    {
+      "id": "2026-10-16-europe-034",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q158677",
+      "title": "Northern Seven Years' War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 37."
+    },
+    {
+      "id": "2026-10-16-europe-035",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q25857",
+      "title": "War of Devolution",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 37."
+    },
+    {
+      "id": "2026-10-16-europe-036",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q767935",
+      "title": "Siege of Rhodes (1522)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 36."
+    },
+    {
+      "id": "2026-10-16-europe-037",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q699602",
+      "title": "Cretan War (1645–1669)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 36."
+    },
+    {
+      "id": "2026-10-16-europe-038",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1151913",
+      "title": "First Anglo-Dutch War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 36."
+    },
+    {
+      "id": "2026-10-16-europe-039",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q631795",
+      "title": "Kalmar War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 34."
+    },
+    {
+      "id": "2026-10-16-europe-040",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q166001",
+      "title": "Scanian War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 34."
+    },
+    {
+      "id": "2026-10-16-europe-041",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q221941",
+      "title": "War of the Quadruple Alliance",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 33."
+    },
+    {
+      "id": "2026-10-16-europe-042",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q595545",
+      "title": "Rákóczi's War of Independence",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 33."
+    },
+    {
+      "id": "2026-10-16-europe-043",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1054482",
+      "title": "Three Hundred and Thirty Five Years' War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 33."
+    },
+    {
+      "id": "2026-10-16-europe-044",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q617333",
+      "title": "Franco-Spanish War (1635–1659)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 31."
+    },
+    {
+      "id": "2026-10-16-europe-045",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q688308",
+      "title": "Swedish War of Liberation",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 30."
+    },
+    {
+      "id": "2026-10-16-europe-046",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1962709",
+      "title": "Ingrian War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 29."
+    },
+    {
+      "id": "2026-10-16-europe-047",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q74298",
+      "title": "Polish–Ottoman War (1672–1676)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 27."
+    },
+    {
+      "id": "2026-10-16-europe-048",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2320981",
+      "title": "Williamite War in Ireland",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 27."
+    },
+    {
+      "id": "2026-10-16-europe-049",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1348955",
+      "title": "Reapers' War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 26."
+    },
+    {
+      "id": "2026-10-16-europe-050",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q598774",
+      "title": "Polish–Swedish War (1600–1611)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 25."
+    },
+    {
+      "id": "2026-10-16-europe-051",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q691882",
+      "title": "Münster rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 25."
+    },
+    {
+      "id": "2026-10-16-europe-052",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1233121",
+      "title": "Pilgrimage of Grace",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 24."
+    },
+    {
+      "id": "2026-10-16-europe-053",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q258679",
+      "title": "Austro-Turkish War (1663–1664)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 24."
+    },
+    {
+      "id": "2026-10-16-europe-054",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q277392",
+      "title": "Polish–Ottoman War (1620–1621)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 24."
+    },
+    {
+      "id": "2026-10-16-europe-055",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1860257",
+      "title": "Cromwellian conquest of Ireland",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 24."
+    },
+    {
+      "id": "2026-10-16-europe-056",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1940446",
+      "title": "Monmouth Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 22."
+    },
+    {
+      "id": "2026-10-16-europe-057",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3142505",
+      "title": "First English Civil War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 21."
+    },
+    {
+      "id": "2026-10-16-europe-058",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q569485",
+      "title": "Knights' War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 19. Its class (Q467033) is not yet in wikidata-seeds.json."
+    },
+    {
+      "id": "2026-10-16-europe-059",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q677693",
+      "title": "War of the Succession of Landshut",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 19."
+    },
+    {
+      "id": "2026-10-16-europe-060",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3119136",
+      "title": "Ottoman–Venetian War (1537–1540)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 19."
+    },
+    {
+      "id": "2026-10-16-europe-061",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q632313",
+      "title": "Dano-Swedish War (1657–1658)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 19."
+    },
+    {
+      "id": "2026-10-16-europe-062",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1132994",
+      "title": "Polish–Ottoman War (1683–1699)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 19."
+    },
+    {
+      "id": "2026-10-16-europe-063",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q233594",
+      "title": "Second War of Kappel",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 18."
+    },
+    {
+      "id": "2026-10-16-europe-064",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1049956",
+      "title": "Hungarian campaign of 1527–1528",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 18."
+    },
+    {
+      "id": "2026-10-16-europe-065",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1465514",
+      "title": "Wyatt's rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 17."
+    },
+    {
+      "id": "2026-10-16-asia-191",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q961430",
+      "title": "Ottoman–Venetian War (1570–1573)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 33."
+    },
+    {
+      "id": "2026-10-16-asia-192",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q1418582",
+      "title": "Russo-Persian War (1722–1723)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 32."
+    },
+    {
+      "id": "2026-10-16-asia-193",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q700841",
+      "title": "Ottoman–Safavid War (1532–1555)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 29."
+    },
+    {
+      "id": "2026-10-16-asia-194",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q169598",
+      "title": "Honnō-ji Incident",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 25. Its class (Q2166722) is not yet in wikidata-seeds.json."
+    },
+    {
+      "id": "2026-10-16-asia-195",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q487757",
+      "title": "Qing invasion of Joseon",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 22."
+    },
+    {
+      "id": "2026-10-16-asia-196",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q697621",
+      "title": "Siege of Fort Zeelandia",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 22."
+    },
+    {
+      "id": "2026-10-16-asia-197",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q163476",
+      "title": "Ottoman–Safavid War (1623–1639)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 21."
+    },
+    {
+      "id": "2026-10-16-asia-198",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q701644",
+      "title": "Ottoman–Safavid War (1578–1590)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 20."
+    },
+    {
+      "id": "2026-10-16-asia-199",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2670327",
+      "title": "Siege of Kazan",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 18."
+    },
+    {
+      "id": "2026-10-16-asia-200",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q490348",
+      "title": "Later Jin invasion of Joseon",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 17."
+    },
+    {
+      "id": "2026-10-16-asia-201",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q74302",
+      "title": "Polish–Ottoman War (1633–1634)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 16."
+    },
+    {
+      "id": "2026-10-16-asia-202",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q16693088",
+      "title": "Russo-Persian War (1651–1653)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 16."
+    },
+    {
+      "id": "2026-10-16-asia-203",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1140134",
+      "title": "Invasion of Ryukyu",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 15."
+    },
+    {
+      "id": "2026-10-16-asia-204",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q7170193",
+      "title": "Persian–Uzbek wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 13."
+    },
+    {
+      "id": "2026-10-16-asia-205",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1052771",
+      "title": "Celali rebellions",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 13."
+    },
+    {
+      "id": "2026-10-16-asia-206",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q3263276",
+      "title": "Bruneian Civil War of 1660",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 13."
+    },
+    {
+      "id": "2026-10-16-asia-207",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q31880",
+      "title": "Castilian War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 12."
+    },
+    {
+      "id": "2026-10-16-asia-208",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q15436846",
+      "title": "Tenshō Iga War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 12."
+    },
+    {
+      "id": "2026-10-16-asia-209",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q17048924",
+      "title": "Cambodian–Dutch War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 12."
+    },
+    {
+      "id": "2026-10-16-asia-210",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q26709211",
+      "title": "Karposh's rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 12."
+    },
+    {
+      "id": "2026-10-16-asia-211",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1096375",
+      "title": "Shakushain's revolt",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 11."
+    },
+    {
+      "id": "2026-10-16-asia-212",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q859815",
+      "title": "Ishiyama Hongan-ji War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 10. Its class (Q947533) is not yet in wikidata-seeds.json."
+    },
+    {
+      "id": "2026-10-16-asia-213",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1373706",
+      "title": "Siamese–Cambodian War (1591–1594)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 9."
+    },
+    {
+      "id": "2026-10-16-asia-214",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q7849268",
+      "title": "Trịnh–Nguyễn War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 9."
+    },
+    {
+      "id": "2026-10-16-asia-215",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q18204735",
+      "title": "Dzungar conquest of Altishahr",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 9."
+    },
+    {
+      "id": "2026-10-16-asia-216",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q28136838",
+      "title": "Trunajaya rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 9."
+    },
+    {
+      "id": "2026-10-16-asia-217",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1361199",
+      "title": "Conquest of the Khanate of Sibir",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 8."
+    },
+    {
+      "id": "2026-10-16-asia-218",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q1754778",
+      "title": "Portuguese conquest of the Jaffna kingdom",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 8."
+    },
+    {
+      "id": "2026-10-16-asia-219",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q6165289",
+      "title": "Guo Huaiyi rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 8."
+    },
+    {
+      "id": "2026-10-16-asia-220",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q11457612",
+      "title": "Prince of Ning rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 7. Its class (Q111953439) is not yet in wikidata-seeds.json."
+    },
+    {
+      "id": "2026-10-16-asia-221",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2362089",
+      "title": "First Javanese War of Succession",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 7."
+    },
+    {
+      "id": "2026-10-16-asia-222",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q3407896",
+      "title": "Second Javanese War of Succession",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 7."
+    },
+    {
+      "id": "2026-10-16-asia-223",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q22947383",
+      "title": "Naqib al-Ashraf revolt",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 7."
+    },
+    {
+      "id": "2026-10-16-asia-224",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q15665692",
+      "title": "Prince of Anhua rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 6. Its class (Q111953439) is not yet in wikidata-seeds.json."
+    },
+    {
+      "id": "2026-10-16-asia-225",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q23419106",
+      "title": "Jiajing wokou raids",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 6."
+    },
+    {
+      "id": "2026-10-16-asia-226",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q27627985",
+      "title": "Cambodian–Spanish War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 6."
+    },
+    {
+      "id": "2026-10-16-asia-227",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q43954977",
+      "title": "Dutch conquest of the Banda Islands",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 6."
+    },
+    {
+      "id": "2026-10-16-asia-228",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q6383559",
+      "title": "Keian Uprising",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 6."
+    },
+    {
+      "id": "2026-10-16-asia-229",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q55627998",
+      "title": "Ottoman invasion of western Georgia (1703)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 6."
+    },
+    {
+      "id": "2026-10-16-asia-230",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q4552486",
+      "title": "1717 Omani invasion of Bahrain",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 5."
+    },
+    {
+      "id": "2026-10-16-asia-231",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q7828916",
+      "title": "Toungoo–Hanthawaddy War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 4."
+    },
+    {
+      "id": "2026-10-16-asia-232",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q27958733",
+      "title": "War of the League of the Indies",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 4."
+    },
+    {
+      "id": "2026-10-16-asia-233",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2887920",
+      "title": "Battle of Ain Dara",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 4."
+    },
+    {
+      "id": "2026-10-16-asia-234",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q27958661",
+      "title": "Mataram conquest of Surabaya",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 4."
+    },
+    {
+      "id": "2026-10-16-asia-235",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4818516",
+      "title": "Attingal Outbreak",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 3."
+    },
+    {
+      "id": "2026-10-16-asia-236",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q4870848",
+      "title": "Battle of Dartsedo",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 3."
+    },
+    {
+      "id": "2026-10-16-asia-237",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q5309423",
+      "title": "Druze power struggle (1658–1667)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 2."
+    },
+    {
+      "id": "2026-10-16-asia-238",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q124550898",
+      "title": "Dano-Mughal War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 2."
+    },
+    {
+      "id": "2026-10-16-asia-239",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q7833286",
+      "title": "Trần Cao rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 1."
+    },
+    {
+      "id": "2026-10-16-asia-240",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q135643326",
+      "title": "Arghun–Langah War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 1."
+    },
+    {
+      "id": "2026-10-16-asia-241",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q18353636",
+      "title": "Toungoo–Mrauk-U War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 1."
+    },
+    {
+      "id": "2026-10-16-asia-242",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q18394797",
+      "title": "Toungoo–Ava War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 1."
+    },
+    {
+      "id": "2026-10-16-asia-243",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q111913780",
+      "title": "Azov War (1501–1502)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 1."
+    },
+    {
+      "id": "2026-10-16-asia-244",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q111940658",
+      "title": "Bakhchisarai War (1525)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 1."
+    },
+    {
+      "id": "2026-10-16-asia-245",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q126946513",
+      "title": "Crimean-Circassian War (1569)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 1."
+    },
+    {
+      "id": "2026-10-16-asia-246",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q130711778",
+      "title": "Mataram–Blambangan wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 1."
+    },
+    {
+      "id": "2026-10-16-americas-029",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1353951",
+      "title": "France Antarctique",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 21."
+    },
+    {
+      "id": "2026-10-16-americas-030",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q975837",
+      "title": "Spanish conquest of Yucatán",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 15."
+    },
+    {
+      "id": "2026-10-16-americas-031",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1440788",
+      "title": "Equinoctial France",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 14."
+    },
+    {
+      "id": "2026-10-16-americas-032",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q3458313",
+      "title": "New York Slave Revolt of 1712",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 13."
+    },
+    {
+      "id": "2026-10-16-americas-033",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q936533",
+      "title": "Chichimeca War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 11."
+    },
+    {
+      "id": "2026-10-16-americas-034",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q528758",
+      "title": "Mixtón War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 11."
+    },
+    {
+      "id": "2026-10-16-americas-035",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q3052957",
+      "title": "War of the Emboabas",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 10."
+    },
+    {
+      "id": "2026-10-16-americas-036",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q3118949",
+      "title": "Acadian Civil War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 7."
+    },
+    {
+      "id": "2026-10-16-americas-037",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q3778744",
+      "title": "Navajo Wars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 5."
+    },
+    {
+      "id": "2026-10-16-americas-038",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4867844",
+      "title": "War of the Vicuñas and Basques",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 4. Its class (Q2672648) is not yet in wikidata-seeds.json."
+    },
+    {
+      "id": "2026-10-16-americas-039",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q7676213",
+      "title": "Spanish–Taíno War of San Juan–Borikén",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 3."
+    },
+    {
+      "id": "2026-10-16-americas-040",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q548395",
+      "title": "Iguape War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 3."
+    },
+    {
+      "id": "2026-10-16-americas-041",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q3297408",
+      "title": "Arena Massacre",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 3."
+    },
+    {
+      "id": "2026-10-16-americas-042",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q16960172",
+      "title": "Acaxee Rebellion",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 2."
+    },
+    {
+      "id": "2026-10-16-americas-043",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q7701256",
+      "title": "Tepehuán Revolt",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 2."
+    },
+    {
+      "id": "2026-10-16-africa-120",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q369291",
+      "title": "Anglo-Spanish War (1654–1660)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 23."
+    },
+    {
+      "id": "2026-10-16-africa-121",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q71630263",
+      "title": "Algiers expedition (1516)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 7."
+    },
+    {
+      "id": "2026-10-16-africa-122",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q5073613",
+      "title": "Char Bouba war",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 7."
+    },
+    {
+      "id": "2026-10-16-africa-123",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q4552433",
+      "title": "1711 Karamanli coup",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 5."
+    },
+    {
+      "id": "2026-10-16-africa-124",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q28495617",
+      "title": "Tuggurt Expedition (1552)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 2."
+    },
+    {
+      "id": "2026-10-16-africa-125",
+      "planned": "2026-10-16T22:41:10Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q124749527",
+      "title": "Dano-Dutch colonial conflict on the Gold Coast",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "From List of wars: 1500-1799, read by start year within 1415-1900 and filtered to what the atlas does not hold. Wikidata sitelink count 2."
     }
   ]
 }
