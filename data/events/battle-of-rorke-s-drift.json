@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-rorke-s-drift",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1123353",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Rorke's Drift",
+    "pt": "Batalha de Rorke's Drift"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1123353"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Rorke's Drift\", revision 1380182426"
+    }
+  ],
+  "title": "Battle of Rorke's Drift",
+  "summary": "The English Wikipedia article \"Battle of Rorke's Drift\", at revision 1380182426, opens: \"The Battle of Rorke's Drift, also known as the Defence of Rorke's Drift, was an engagement in the Anglo-Zulu War. The successful British defence of the Swedish mission station and British supply depot at Rorke's Drift, it was carried out by a vastly outnumbered British force under the command of Lieutenants John Chard of the Royal Engineers and Gonville Bromhead of the 24th Regiment of Foot. It holds the record for the largest number of Victoria Crosses awarded for a single battle. After a large contingent of Zulu warriors broke off from the main force during the final hours of the British defeat at the day-long Battle of Isandlwana on 22 January 1879, they travelled ten kilometres to attack Rorke's Drift later that day, with fighting continuing into the following day.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1123353, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in the Anglo-Zulu War, specifically the defence of the mission station of Rorke's Drift\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879,
+    "date": "1879-01-22",
+    "endDate": "1879-01-23"
+  },
+  "place": "rorke-s-drift",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-zulu-war"
+}

@@ -539,6 +539,15 @@
         }
       ]
     },
+    "battle-of-abu-klea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-adwa": {
       "from": "git",
       "versions": [
@@ -756,6 +765,15 @@
         }
       ]
     },
+    "battle-of-isandlwana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-junin": {
       "from": "git",
       "versions": [
@@ -852,6 +870,15 @@
         }
       ]
     },
+    "battle-of-omdurman": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-rancagua": {
       "from": "git",
       "versions": [
@@ -893,6 +920,15 @@
         }
       ]
     },
+    "battle-of-rorke-s-drift": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-salamanca": {
       "from": "git",
       "versions": [
@@ -908,6 +944,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-shaykan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -1001,6 +1046,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-ulundi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -2930,6 +2984,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-khartoum": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

@@ -3141,6 +3141,15 @@
         }
       ]
     },
+    "el-obeid": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "el-tor-egypt": {
       "from": "git",
       "versions": [
@@ -5354,6 +5363,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "khartoum": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -8013,6 +8031,15 @@
         }
       ]
     },
+    "omdurman": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "omoa": {
       "from": "git",
       "versions": [
@@ -9425,6 +9452,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "rorke-s-drift": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -11713,6 +11749,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "ulundi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

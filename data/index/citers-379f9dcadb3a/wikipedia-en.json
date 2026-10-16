@@ -11540,6 +11540,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-abu-klea",
+      "kind": "event",
+      "locator": "\"Battle of Abu Klea\", revision 1375012830"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-abukir-1799",
       "kind": "event",
       "locator": "\"Battle of Abukir (1799)\", revision 1373172066"
@@ -12434,6 +12440,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-isandlwana",
+      "kind": "event",
+      "locator": "\"Battle of Isandlwana\", revision 1379905900"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ismailia-1952",
       "kind": "event",
       "locator": "\"Battle of Ismailia (1952)\", revision 1370443871"
@@ -13058,6 +13070,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-omdurman",
+      "kind": "event",
+      "locator": "\"Battle of Omdurman\", revision 1379393370"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-onjong",
       "kind": "event",
       "locator": "\"Battle of Onjong\", revision 1377425566"
@@ -13358,6 +13376,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rorke-s-drift",
+      "kind": "event",
+      "locator": "\"Battle of Rorke's Drift\", revision 1380182426"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sablat",
       "kind": "event",
       "locator": "\"Battle of Sablat\", revision 1374171210"
@@ -13499,6 +13523,12 @@
       "id": "battle-of-shanghai",
       "kind": "event",
       "locator": "\"Battle of Shanghai\", revision 1372115505"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-shaykan",
+      "kind": "event",
+      "locator": "\"Battle of Shaykan\", revision 1370589187"
     },
     {
       "dissent": false,
@@ -13967,6 +13997,12 @@
       "id": "battle-of-ugentana-1536",
       "kind": "event",
       "locator": "\"Battle of Ugentana (1536)\", revision 1373045056"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ulundi",
+      "kind": "event",
+      "locator": "\"Battle of Ulundi\", revision 1379912756"
     },
     {
       "dissent": false,
@@ -16670,6 +16706,12 @@
     },
     {
       "dissent": false,
+      "id": "jacobite-rising-of-1745",
+      "kind": "event",
+      "locator": "\"Jacobite rising of 1745\", revision 1374180838"
+    },
+    {
+      "dissent": false,
       "id": "jameson-raid",
       "kind": "event",
       "locator": "\"Jameson Raid\", revision 1370624782"
@@ -19037,6 +19079,12 @@
       "id": "siege-of-julich-1621-1622",
       "kind": "event",
       "locator": "\"Siege of Jülich (1621–1622)\", revision 1370742177"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-khartoum",
+      "kind": "event",
+      "locator": "\"Siege of Khartoum\", revision 1379636555"
     },
     {
       "dissent": false,
