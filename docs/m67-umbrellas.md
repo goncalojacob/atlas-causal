@@ -1853,3 +1853,15 @@ Writer A imported it from the planner's queue as item `2026-10-15-europe-072`, r
 ## Writer A, 2026-10-16: `revolt-of-the-comuneros`, bare
 
 Writer A imported it from the planner's queue as item `2026-10-15-europe-075`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-16: `jacobite-rising-of-1745`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-15-europe-081`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-16: `battle-of-isandlwana`, filed under `anglo-zulu-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-007`, rank `child-of:anglo-zulu-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `battle-of-intombe`, filed under `anglo-zulu-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-010`, rank `child-of:anglo-zulu-war`. Its span and its subject put it inside the umbrella.

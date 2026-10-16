@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "jacobite-rising-of-1745",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1049945",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Jacobite rising of 1745",
+    "pt": "Revolta jacobita de 1745"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1049945"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Jacobite rising of 1745\", revision 1374180838"
+    }
+  ],
+  "title": "Jacobite rising of 1745",
+  "summary": "The English Wikipedia article \"Jacobite rising of 1745\", at revision 1374180838, opens: \"The Jacobite rising of 1745 was an attempt to regain the British throne for the exiled House of Stuart. The last in a series of Jacobite risings that began in March 1689, it proved to be the end of Jacobitism as a major factor in British politics.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1049945, imported by tools/import/wikidata.mjs. The item's own description reads \"attempt by Charles Edward Stuart to regain the British throne for the exiled House of Stuart\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1745,
+    "end": 1746
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

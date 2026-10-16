@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-isandlwana",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q747589",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Isandlwana",
+    "pt": "Batalha de Isandhlwana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q747589"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Isandlwana\", revision 1379905900"
+    }
+  ],
+  "title": "Battle of Isandlwana",
+  "summary": "The English Wikipedia article \"Battle of Isandlwana\", at revision 1379905900, opens: \"The Battle of Isandlwana on 22 January 1879 was the second major encounter in the Anglo-Zulu War between the British Empire and the Zulu Kingdom – the Battle of Nyezane having been fought and won earlier on the same day by Colonel Pearson's Coastal Column. Eleven days after the British invaded the Zulu Kingdom in Southern Africa, a Zulu force of some 20,000 warriors attacked a portion of the British main column consisting of approximately 1,800 British, colonial and native troops with approximately 350 civilians. The Zulus were equipped mainly with the traditional assegai iron spears and cow-hide shields, but also had a number of muskets and antiquated rifles.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q747589, imported by tools/import/wikidata.mjs. The item's own description reads \"1879 first major encounter in the Anglo–Zulu War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879,
+    "date": "1879-01-22"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-zulu-war"
+}

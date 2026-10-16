@@ -2946,6 +2946,269 @@
         "place": "greenville-indiana"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-081",
+      "writer": "A",
+      "fired": "2026-10-16T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "jacobite-rising-of-1745",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-001",
+      "writer": "A",
+      "fired": "2026-10-16T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-khartoum",
+        "edges": [],
+        "place": "khartoum"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-002",
+      "writer": "A",
+      "fired": "2026-10-16T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-abu-klea",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-003",
+      "writer": "A",
+      "fired": "2026-10-16T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-omdurman",
+        "edges": [],
+        "place": "omdurman"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-004",
+      "writer": "A",
+      "fired": "2026-10-16T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-shaykan",
+        "edges": [],
+        "place": "el-obeid"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-005",
+      "writer": "A",
+      "fired": "2026-10-16T01:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1276340: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-africa-006",
+      "writer": "A",
+      "fired": "2026-10-16T01:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1252684: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-africa-007",
+      "writer": "A",
+      "fired": "2026-10-16T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-isandlwana",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-008",
+      "writer": "A",
+      "fired": "2026-10-16T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-rorke-s-drift",
+        "edges": [],
+        "place": "rorke-s-drift"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-009",
+      "writer": "A",
+      "fired": "2026-10-16T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ulundi",
+        "edges": [],
+        "place": "ulundi"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-010",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-intombe",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-011",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q131926873 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q131926873: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-16-africa-012",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q132156616 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q132156616: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-16-africa-013",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q134488493 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q134488493: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-16-africa-014",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "invasion-of-algiers-1830",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-015",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-constantine",
+        "edges": [],
+        "place": "constantine-algeria"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-016",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sidi-brahim",
+        "edges": [],
+        "place": "sidi-brahim"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-017",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "mokrani-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-018",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-derna-1805",
+        "edges": [],
+        "place": "derna-libya"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-019",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-tripoli-harbor",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
