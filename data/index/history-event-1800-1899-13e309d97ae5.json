@@ -635,6 +635,15 @@
         }
       ]
     },
+    "battle-of-ali-masjid": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-aliwal": {
       "from": "git",
       "versions": [
@@ -766,6 +775,15 @@
         }
       ]
     },
+    "battle-of-canton-march-1841": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-carabobo-1814": {
       "from": "git",
       "versions": [
@@ -817,6 +835,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-chinhai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -919,6 +946,15 @@
       ]
     },
     "battle-of-gandamak": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-ghazni": {
       "from": "git",
       "versions": [
         {
@@ -1125,6 +1161,15 @@
         }
       ]
     },
+    "battle-of-ky-hoa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-ladysmith": {
       "from": "git",
       "versions": [
@@ -1302,6 +1347,15 @@
         }
       ]
     },
+    "battle-of-nanjing-1853": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-navarino": {
       "from": "git",
       "versions": [
@@ -1339,6 +1393,15 @@
       ]
     },
     "battle-of-palikao": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-peiwar-kotal": {
       "from": "git",
       "versions": [
         {
@@ -1787,6 +1850,15 @@
       ]
     },
     "battle-of-weihaiwei": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-woosung": {
       "from": "git",
       "versions": [
         {
@@ -3132,6 +3204,15 @@
         }
       ]
     },
+    "lang-son-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "lei-aurea-1888": {
       "from": "git",
       "versions": [
@@ -4112,6 +4193,15 @@
         }
       ]
     },
+    "siege-of-tourane": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "siege-of-zaragoza-1809": {
       "from": "git",
       "versions": [
@@ -4436,6 +4526,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "tianjing-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

@@ -3344,6 +3344,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ali-masjid",
+      "kind": "event",
+      "locator": "Q2237297"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-aliwal",
       "kind": "event",
       "locator": "Q1540820"
@@ -3608,6 +3614,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-canton-march-1841",
+      "kind": "event",
+      "locator": "Q4870632"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cap-francais-1793",
       "kind": "event",
       "locator": "Q2890742"
@@ -3749,6 +3761,12 @@
       "id": "battle-of-chimbo",
       "kind": "event",
       "locator": "Q10858436"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chinhai",
+      "kind": "event",
+      "locator": "Q4870728"
     },
     {
       "dissent": false,
@@ -4067,6 +4085,12 @@
       "id": "battle-of-gavinana",
       "kind": "event",
       "locator": "Q633362"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ghazni",
+      "kind": "event",
+      "locator": "Q1010245"
     },
     {
       "dissent": false,
@@ -4538,6 +4562,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ky-hoa",
+      "kind": "event",
+      "locator": "Q3892142"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-la-bombarde",
       "kind": "event",
       "locator": "Q2382626"
@@ -5000,6 +5030,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-nanjing-1853",
+      "kind": "event",
+      "locator": "Q4871859"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-nanking",
       "kind": "event",
       "locator": "Q701180"
@@ -5147,6 +5183,12 @@
       "id": "battle-of-pavia",
       "kind": "event",
       "locator": "Q63468"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-peiwar-kotal",
+      "kind": "event",
+      "locator": "Q4872006"
     },
     {
       "dissent": false,
@@ -5948,6 +5990,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-salween-river",
+      "kind": "event",
+      "locator": "Q4502462"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-sesia-1524",
       "kind": "event",
       "locator": "Q642320"
@@ -5975,6 +6023,12 @@
       "id": "battle-of-the-strait-of-hormuz-1553",
       "kind": "event",
       "locator": "Q55605053"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-taku-forts-1900",
+      "kind": "event",
+      "locator": "Q2890708"
     },
     {
       "dissent": false,
@@ -6365,6 +6419,12 @@
       "id": "battle-of-wolgast",
       "kind": "event",
       "locator": "Q653561"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-woosung",
+      "kind": "event",
+      "locator": "Q4087474"
     },
     {
       "dissent": false,
@@ -6989,6 +7049,12 @@
       "id": "chinese-civil-war",
       "kind": "event",
       "locator": "Q179975, P31 Q8465"
+    },
+    {
+      "dissent": false,
+      "id": "chinese-expedition-to-tibet-1720",
+      "kind": "event",
+      "locator": "Q21275805"
     },
     {
       "dissent": false,
@@ -9281,6 +9347,12 @@
       "id": "laghouat-rebellion-1727",
       "kind": "event",
       "locator": "Q123577564"
+    },
+    {
+      "dissent": false,
+      "id": "lang-son-campaign",
+      "kind": "event",
+      "locator": "Q6711767"
     },
     {
       "dissent": false,
@@ -12020,6 +12092,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-tourane",
+      "kind": "event",
+      "locator": "Q5361929"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-tournai-1745",
       "kind": "event",
       "locator": "Q16677044"
@@ -12593,6 +12671,12 @@
       "id": "thousand-days-war",
       "kind": "event",
       "locator": "Q43378, P31 Q8465"
+    },
+    {
+      "dissent": false,
+      "id": "tianjing-incident",
+      "kind": "event",
+      "locator": "Q835616"
     },
     {
       "dissent": false,

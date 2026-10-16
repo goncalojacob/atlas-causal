@@ -2656,6 +2656,15 @@
         }
       ]
     },
+    "da-nang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "dachau-bavaria": {
       "from": "git",
       "versions": [
@@ -4127,6 +4136,15 @@
         }
       ]
     },
+    "ghazni": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "ghent": {
       "from": "git",
       "versions": [
@@ -4757,6 +4775,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "huangpu-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -6157,6 +6184,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "lang-son-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -7818,6 +7854,15 @@
       ]
     },
     "nagasaki": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "nagqu": {
       "from": "git",
       "versions": [
         {
@@ -13309,6 +13354,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "zhenhai-ningbo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

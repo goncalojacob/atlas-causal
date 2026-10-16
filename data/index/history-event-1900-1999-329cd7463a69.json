@@ -8681,6 +8681,15 @@
         }
       ]
     },
+    "battle-of-the-taku-forts-1900": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-the-tugela-heights": {
       "from": "git",
       "versions": [

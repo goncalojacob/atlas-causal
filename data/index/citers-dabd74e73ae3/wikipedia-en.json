@@ -11666,6 +11666,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ali-masjid",
+      "kind": "event",
+      "locator": "\"Battle of Ali Masjid\", revision 1370431667"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-aliwal",
       "kind": "event",
       "locator": "\"Battle of Aliwal\", revision 1370106362"
@@ -11930,6 +11936,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-canton-march-1841",
+      "kind": "event",
+      "locator": "\"Battle of Canton (March 1841)\", revision 1370436108"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cap-francais-1793",
       "kind": "event",
       "locator": "\"Battle of Cap-Français (1793)\", revision 1370108549"
@@ -12059,6 +12071,12 @@
       "id": "battle-of-chillianwala",
       "kind": "event",
       "locator": "\"Battle of Chillianwala\", revision 1380269718"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chinhai",
+      "kind": "event",
+      "locator": "\"Battle of Chinhai\", revision 1370437075"
     },
     {
       "dissent": false,
@@ -12377,6 +12395,12 @@
       "id": "battle-of-gavinana",
       "kind": "event",
       "locator": "\"Battle of Gavinana\", revision 1370381453"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ghazni",
+      "kind": "event",
+      "locator": "\"Battle of Ghazni\", revision 1370441533"
     },
     {
       "dissent": false,
@@ -12842,6 +12866,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ky-hoa",
+      "kind": "event",
+      "locator": "\"Battle of Kỳ Hòa\", revision 1370446709"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-la-bombarde",
       "kind": "event",
       "locator": "\"Battle of La Bombarde\", revision 1370446722"
@@ -13298,6 +13328,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-nanjing-1853",
+      "kind": "event",
+      "locator": "\"Battle of Nanjing (1853)\", revision 1370451284"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-nanking",
       "kind": "event",
       "locator": "\"Battle of Nanking\", revision 1375700539"
@@ -13445,6 +13481,12 @@
       "id": "battle-of-pavia",
       "kind": "event",
       "locator": "\"Battle of Pavia\", revision 1370271639"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-peiwar-kotal",
+      "kind": "event",
+      "locator": "\"Battle of Peiwar Kotal\", revision 1370452996"
     },
     {
       "dissent": false,
@@ -14264,6 +14306,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-salween-river",
+      "kind": "event",
+      "locator": "\"Battle of the Salween River\", revision 1370602095"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-sesia-1524",
       "kind": "event",
       "locator": "\"Battle of the Sesia (1524)\", revision 1370602200"
@@ -14291,6 +14339,12 @@
       "id": "battle-of-the-strait-of-hormuz-1553",
       "kind": "event",
       "locator": "\"Battle of the Strait of Hormuz (1553)\", revision 1370602416"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-taku-forts-1900",
+      "kind": "event",
+      "locator": "\"Battle of the Taku Forts (1900)\", revision 1372428441"
     },
     {
       "dissent": false,
@@ -14687,6 +14741,12 @@
       "id": "battle-of-wolgast",
       "kind": "event",
       "locator": "\"Battle of Wolgast\", revision 1370276997"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-woosung",
+      "kind": "event",
+      "locator": "\"Battle of Woosung\", revision 1370594511"
     },
     {
       "dissent": false,
@@ -15293,6 +15353,12 @@
       "id": "chinese-civil-war",
       "kind": "event",
       "locator": "\"Chinese Civil War\", revision 1372330605"
+    },
+    {
+      "dissent": false,
+      "id": "chinese-expedition-to-tibet-1720",
+      "kind": "event",
+      "locator": "\"Chinese expedition to Tibet (1720)\", revision 1370611233"
     },
     {
       "dissent": false,
@@ -17555,6 +17621,12 @@
       "id": "laghouat-expedition-1708-1713",
       "kind": "event",
       "locator": "\"Laghouat Expedition (1708–1713)\", revision 1370626439"
+    },
+    {
+      "dissent": false,
+      "id": "lang-son-campaign",
+      "kind": "event",
+      "locator": "\"Lạng Sơn campaign\", revision 1377313524"
     },
     {
       "dissent": false,
@@ -20192,6 +20264,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-tourane",
+      "kind": "event",
+      "locator": "\"Siege of Tourane\", revision 1370745941"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-tournai-1745",
       "kind": "event",
       "locator": "\"Siege of Tournai (1745)\", revision 1370745959"
@@ -20981,6 +21059,12 @@
       "id": "thousand-days-war",
       "kind": "event",
       "locator": "\"Thousand Days' War\", revision 1370750751"
+    },
+    {
+      "dissent": false,
+      "id": "tianjing-incident",
+      "kind": "event",
+      "locator": "\"Tianjing Incident\", revision 1370750788"
     },
     {
       "dissent": false,

@@ -1244,6 +1244,15 @@
         }
       ]
     },
+    "battle-of-the-salween-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-trenton": {
       "from": "git",
       "versions": [
@@ -1508,6 +1517,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "chinese-expedition-to-tibet-1720": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

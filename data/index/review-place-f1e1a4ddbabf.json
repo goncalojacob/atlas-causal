@@ -5889,6 +5889,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "da-nang",
+      "kind": "place",
+      "names": [
+        "Da Nang"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "dachau-bavaria",
@@ -8985,6 +9012,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "ghazni",
+      "kind": "place",
+      "names": [
+        "Ghazni",
+        "Gázni",
+        "Gásni"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "ghent",
@@ -9458,7 +9514,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "guangzhou",
       "kind": "place",
       "names": [
@@ -10421,6 +10477,34 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q2409166, the Battle of Hsimucheng, read on 2026-09-25 — A9's first step as A12 (2) corrects it. The item carries no P276 to fall back on, and the article calls the ground a hamlet in today's Ximu Town, 20 km south-east of Haicheng.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "huangpu-river",
+      "kind": "place",
+      "names": [
+        "Huangpu River",
+        "Rio Huangpu"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -13638,6 +13722,35 @@
           "a9-place"
         ],
         "note": "Written by A9's place pass on 2026-09-24: P276 of an event's item names Q686971, whose P625 is this point. Precision `country`: the class table calls the item an actor, because it answers what kind of RECORD an item becomes and a sovereign state becomes one; A9 asks where an event happened, and A12 (2) names `country` for that.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "lang-son-city",
+      "kind": "place",
+      "names": [
+        "Lạng Sơn",
+        "Lạng Sơn (city)",
+        "Lang Son (cidade)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -17247,6 +17360,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "nagqu",
+      "kind": "place",
+      "names": [
+        "Nagqu"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -17332,7 +17472,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "nanjing",
       "kind": "place",
       "names": [
@@ -26110,7 +26250,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "tibet-q17252",
       "kind": "place",
       "names": [
@@ -29132,6 +29272,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "zhenhai-ningbo",
+      "kind": "place",
+      "names": [
+        "Zhenhai District",
+        "Zhenhai, Ningbo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
