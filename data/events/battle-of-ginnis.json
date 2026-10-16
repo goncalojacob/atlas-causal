@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-ginnis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888625",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Ginnis"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888625"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ginnis\", revision 1370441639"
+    }
+  ],
+  "title": "Battle of Ginnis",
+  "summary": "The English Wikipedia article \"Battle of Ginnis\", at revision 1370441639, opens: \"The Battle of Ginnis was a minor battle of the Mahdist War that was fought on December 30, 1885, between soldiers of the Anglo-Egyptian Army and warriors of the Mahdist State. The battle was caused by the Mahdist blockade of the Ginnis-Kosha Fort, which British commanders hoped to relieve.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888625, imported by tools/import/wikidata.mjs. The item's own description reads \"1885 battle of the Mahdist War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-12-30"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "mahdist-war"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-kassala",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3636373",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Kassala"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3636373"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kassala\", revision 1370444899"
+    }
+  ],
+  "title": "Battle of Kassala",
+  "summary": "The English Wikipedia article \"Battle of Kassala\", at revision 1370444899, opens: \"The Battle of Kassala was fought on July 17, 1894, between Italian colonial troops and Mahdist Sudanese forces.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3636373, imported by tools/import/wikidata.mjs. The item's own description reads \"1894 military engagement\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1894,
+    "end": 1894,
+    "date": "1894-07-17"
+  },
+  "place": "kassala",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mahdist-war"
+}
