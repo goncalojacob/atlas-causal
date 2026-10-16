@@ -4433,6 +4433,15 @@
         }
       ]
     },
+    "herat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "herat-province": {
       "from": "git",
       "versions": [
@@ -6850,6 +6859,15 @@
         }
       ]
     },
+    "mekelle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "melegnano": {
       "from": "git",
       "versions": [
@@ -9141,6 +9159,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "quatit-eritrea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

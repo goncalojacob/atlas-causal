@@ -1198,6 +1198,15 @@
         }
       ]
     },
+    "battle-of-shimbra-kure": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-st-quentin": {
       "from": "git",
       "versions": [
