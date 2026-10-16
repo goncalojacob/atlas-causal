@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-omdurman",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1137302",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Omdurman",
+    "pt": "Batalha de Ondurmã"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1137302"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Omdurman\", revision 1379393370"
+    }
+  ],
+  "title": "Battle of Omdurman",
+  "summary": "The English Wikipedia article \"Battle of Omdurman\", at revision 1379393370, opens: \"The Battle of Omdurman, also known as the Battle of Karary, was fought during the Anglo-Egyptian conquest of Sudan between a British–Egyptian expeditionary force commanded by British Commander-in-Chief (sirdar) major general Horatio Herbert Kitchener and a Sudanese army of the Mahdist State, led by Abdallahi ibn Muhammad, the successor to the self-proclaimed Mahdi, Muhammad Ahmad. The battle took place on 2 September 1898, at Kerreri, 11 kilometres (6.8 mi) north of Omdurman.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1137302, imported by tools/import/wikidata.mjs. The item's own description reads \"battle between the Mahdists and Anglo-Sudanse in 1898.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-09-02"
+  },
+  "place": "omdurman",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mahdist-war"
+}

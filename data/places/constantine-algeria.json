@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "constantine-algeria",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q187346",
+  "sitelinks": {
+    "count": 84,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Constantine, Algeria",
+    "pt": "Constantina (Argélia)"
+  },
+  "sources": [],
+  "names": [
+    "Constantine",
+    "Constantina",
+    "Constantine, Algeria",
+    "Constantina (Argélia)"
+  ],
+  "where": {
+    "lon": 6.6147222222222,
+    "lat": 36.365,
+    "precision": "city",
+    "label": "Constantine, Algeria"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

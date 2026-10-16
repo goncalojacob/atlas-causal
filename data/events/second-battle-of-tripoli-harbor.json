@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-tripoli-harbor",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q6135223",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Second Battle of Tripoli Harbor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6135223"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Tripoli Harbor\", revision 1373494580"
+    }
+  ],
+  "title": "Second Battle of Tripoli Harbor",
+  "summary": "The English Wikipedia article \"Second Battle of Tripoli Harbor\", at revision 1373494580, opens: \"The Second Battle of Tripoli Harbor was a naval action that occurred during the American naval blockade, which took place in Tripoli Harbor between August and September 1804. The battle was part of the First Barbary War between forces of the United States and the forces of the Eyalet of Tripolitania.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6135223, imported by tools/import/wikidata.mjs. The item's own description reads \"1804 naval battle, part of First Barbary War (October 1803 – September 1804)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1804,
+    "end": 1804,
+    "date": "1804-08-03",
+    "endDate": "1804-09-10"
+  },
+  "place": "tripoli",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-barbary-war"
+}

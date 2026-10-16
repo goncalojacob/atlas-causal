@@ -2186,7 +2186,37 @@
     "Q134937344",
     "Q617350",
     "Q6808293",
-    "Q2270170"
+    "Q2270170",
+    "Q944941",
+    "Q524189",
+    "Q430726",
+    "Q646322",
+    "Q151663",
+    "Q37467350",
+    "Q154031",
+    "Q157548",
+    "Q8628",
+    "Q2309409",
+    "Q1049945",
+    "Q815159",
+    "Q1288821",
+    "Q1137302",
+    "Q478597",
+    "Q1276340",
+    "Q1252684",
+    "Q747589",
+    "Q1123353",
+    "Q2166177",
+    "Q640194",
+    "Q131926873",
+    "Q132156616",
+    "Q134488493",
+    "Q3317226",
+    "Q636772",
+    "Q2889977",
+    "Q3458306",
+    "Q2888407",
+    "Q6135223"
   ],
   "queries": [
     {
@@ -6431,6 +6461,18 @@
       "category": "other",
       "label": "ultimatum",
       "note": "Added 15 October 2026 from the 2112Z plan note, so that the 1890 British Ultimatum can enter."
+    },
+    "Q42750320": {
+      "kind": "event",
+      "category": "war",
+      "label": "border incident",
+      "note": "Added 16 October 2026 from the 0012Z plan note, for the Panjdeh incident. Wikidata: \"armed incident localized to near a border\"."
+    },
+    "Q27653727": {
+      "kind": "event",
+      "category": "war",
+      "label": "naval bombing of a city",
+      "note": "Added 16 October 2026 from the 0012Z plan note, for the Bombardment of Alexandria."
     }
   },
   "lanes": {
