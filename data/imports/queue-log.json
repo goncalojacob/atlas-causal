@@ -2932,6 +2932,20 @@
         "place": "peloponnese"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-040",
+      "writer": "B",
+      "fired": "2026-10-16T00:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-greenville",
+        "edges": [
+          "northwest-indian-war--treaty-of-greenville--caused"
+        ],
+        "place": "greenville-indiana"
+      },
+      "refusals": []
     }
   ]
 }

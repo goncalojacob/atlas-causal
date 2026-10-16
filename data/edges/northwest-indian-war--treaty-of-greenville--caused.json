@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "northwest-indian-war--treaty-of-greenville--caused",
+  "kind": "edge",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Claude (assistant draft, unreviewed)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "edge-drafted",
+      "queued"
+    ]
+  },
+  "origin": {
+    "tool": "assistant",
+    "run": "m90-writer-B"
+  },
+  "sources": [
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Greenville\", revision 1375606163"
+    }
+  ],
+  "from": "northwest-indian-war",
+  "to": "treaty-of-greenville",
+  "type": "caused",
+  "confidence": "probable",
+  "explanation": "The article \"Treaty of Greenville\" (revision 1375606163) says: \"It ended the Northwest Indian War of 1785–1795 in the Ohio Country of the old Northwest Territory (1787–1803), and limited Indian country to remaining lands of northwestern Ohio, and began the practice of annual payments of goods, supplies and food, following the land concessions.\" The edge reads the war as what the treaty closed.",
+  "dispute": null
+}

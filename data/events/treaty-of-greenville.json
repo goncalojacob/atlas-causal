@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-greenville",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q767317",
+  "wikipedia": {
+    "en": "Treaty of Greenville",
+    "pt": "Tratado de Greenville"
+  },
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-16"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q767317"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Greenville\", revision 1375606163"
+    }
+  ],
+  "title": "Treaty of Greenville",
+  "summary": "The English Wikipedia article \"Treaty of Greenville\", at revision 1375606163, opens: \"The Treaty of Greenville, also known to Americans as the Treaty with the Wyandots, etc., but formally titled A treaty of peace between the United States of America, and the tribes of Indians called the Wyandots, Delawares, Shawanees, Ottawas, Chippewas, Pattawatimas, Miamis, Eel Rivers, Weas, Kickapoos, Piankeshaws, and Kaskaskias was a 1795 treaty between the United States and indigenous nations of the Northwest Territory, including the Wyandot and Delaware peoples, that redefined the boundary between indigenous peoples' lands and territory for United States community settlement.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q767317, imported by tools/import/wikidata.mjs. The item's own description reads \"1795 treaty ending the Northwest Indian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1795,
+    "end": 1795
+  },
+  "place": "greenville-indiana",
+  "region": null,
+  "regionNote": null,
+  "parent": "northwest-indian-war",
+  "category": "treaty",
+  "actors": []
+}
