@@ -3302,6 +3302,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-alamana",
+      "kind": "event",
+      "locator": "Q2570192"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-albuera",
       "kind": "event",
       "locator": "Q689471"
@@ -3374,6 +3380,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-atchoukpa",
+      "kind": "event",
+      "locator": "Q106645667"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-awa",
+      "kind": "event",
+      "locator": "Q1343239"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ayacucho",
       "kind": "event",
       "locator": "Q934157"
@@ -3425,6 +3443,12 @@
       "id": "battle-of-belmont-1899",
       "kind": "event",
       "locator": "Q369859"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bembezi",
+      "kind": "event",
+      "locator": "Q30715543"
     },
     {
       "dissent": false,
@@ -3557,6 +3581,12 @@
       "id": "battle-of-cancha-rayada-1818",
       "kind": "event",
       "locator": "Q333088"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-canton-1857",
+      "kind": "event",
+      "locator": "Q588648"
     },
     {
       "dissent": false,
@@ -3869,6 +3899,12 @@
       "id": "battle-of-el-tor",
       "kind": "event",
       "locator": "Q115518405"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-elandsfontein",
+      "kind": "event",
+      "locator": "Q2887936"
     },
     {
       "dissent": false,
@@ -4304,6 +4340,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kafr-el-dawwar",
+      "kind": "event",
+      "locator": "Q4871366"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kallo",
       "kind": "event",
       "locator": "Q2888890"
@@ -4394,6 +4436,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-koregaon",
+      "kind": "event",
+      "locator": "Q3630511"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-korsakov",
       "kind": "event",
       "locator": "Q4871480"
@@ -4451,6 +4499,12 @@
       "id": "battle-of-lagunillas",
       "kind": "event",
       "locator": "Q3636492"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-laing-s-nek",
+      "kind": "event",
+      "locator": "Q741129"
     },
     {
       "dissent": false,
@@ -4568,6 +4622,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-magdala",
+      "kind": "event",
+      "locator": "Q947667"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-magersfontein",
       "kind": "event",
       "locator": "Q1388058"
@@ -4577,6 +4637,12 @@
       "id": "battle-of-maipu",
       "kind": "event",
       "locator": "Q1073849"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-majuba-hill",
+      "kind": "event",
+      "locator": "Q2063236"
     },
     {
       "dissent": false,
@@ -4595,6 +4661,12 @@
       "id": "battle-of-mamora-1696",
       "kind": "event",
       "locator": "Q124881779"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-manila-1899",
+      "kind": "event",
+      "locator": "Q746860"
     },
     {
       "dissent": false,
@@ -4679,6 +4751,12 @@
       "id": "battle-of-mbwila",
       "kind": "event",
       "locator": "Q1752752"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-melilla-1860",
+      "kind": "event",
+      "locator": "Q111207497"
     },
     {
       "dissent": false,
@@ -4850,6 +4928,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-nezib",
+      "kind": "event",
+      "locator": "Q2640981"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-noain",
       "kind": "event",
       "locator": "Q2889540"
@@ -4910,6 +4994,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ordashu",
+      "kind": "event",
+      "locator": "Q4871948"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-osan",
       "kind": "event",
       "locator": "Q484494"
@@ -4949,6 +5039,12 @@
       "id": "battle-of-pavia",
       "kind": "event",
       "locator": "Q63468"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-peking-1900",
+      "kind": "event",
+      "locator": "Q4087313"
     },
     {
       "dissent": false,
@@ -5069,6 +5165,12 @@
       "id": "battle-of-puna",
       "kind": "event",
       "locator": "Q3636591"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-pungdo",
+      "kind": "event",
+      "locator": "Q701890"
     },
     {
       "dissent": false,
@@ -5330,6 +5432,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-seonghwan",
+      "kind": "event",
+      "locator": "Q705072"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-shaho",
       "kind": "event",
       "locator": "Q920679"
@@ -5366,6 +5474,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sierra-bullones",
+      "kind": "event",
+      "locator": "Q11908785"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sikkak",
       "kind": "event",
       "locator": "Q2890573"
@@ -5375,6 +5489,12 @@
       "id": "battle-of-sirte-2011",
       "kind": "event",
       "locator": "Q2361214"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sobraon",
+      "kind": "event",
+      "locator": "Q1573825"
     },
     {
       "dissent": false,
@@ -5558,6 +5678,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tetouan",
+      "kind": "event",
+      "locator": "Q4872623"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-thann-1638",
       "kind": "event",
       "locator": "Q9173637"
@@ -5696,6 +5822,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-shangani",
+      "kind": "event",
+      "locator": "Q2890572"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-smala",
       "kind": "event",
       "locator": "Q3403872"
@@ -5753,6 +5885,12 @@
       "id": "battle-of-tlemcen-1696",
       "kind": "event",
       "locator": "Q138543055"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-toba-fushimi",
+      "kind": "event",
+      "locator": "Q1193959"
     },
     {
       "dissent": false,
@@ -5963,6 +6101,12 @@
       "id": "battle-of-wadi-al-laban",
       "kind": "event",
       "locator": "Q4117011"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-wadi-bou-sefiha",
+      "kind": "event",
+      "locator": "Q137441986"
     },
     {
       "dissent": false,
@@ -7124,6 +7268,12 @@
     },
     {
       "dissent": false,
+      "id": "destruction-of-psara",
+      "kind": "event",
+      "locator": "Q2672355"
+    },
+    {
+      "dissent": false,
       "id": "dissolution-of-the-lumumba-government",
       "kind": "event",
       "locator": "Q60775580"
@@ -7283,6 +7433,12 @@
       "id": "egypt-israel-peace-treaty",
       "kind": "event",
       "locator": "Q1129412"
+    },
+    {
+      "dissent": false,
+      "id": "egyptian-expedition-1882",
+      "kind": "event",
+      "locator": "Q5348404"
     },
     {
       "dissent": false,
@@ -7715,6 +7871,12 @@
       "id": "first-madagascar-expedition",
       "kind": "event",
       "locator": "Q942561"
+    },
+    {
+      "dissent": false,
+      "id": "first-mandingo-war",
+      "kind": "event",
+      "locator": "Q131455853"
     },
     {
       "dissent": false,
@@ -8723,6 +8885,12 @@
       "id": "java-war",
       "kind": "event",
       "locator": "Q2045508"
+    },
+    {
+      "dissent": false,
+      "id": "jintian-uprising",
+      "kind": "event",
+      "locator": "Q1512810"
     },
     {
       "dissent": false,
@@ -10952,6 +11120,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-baler",
+      "kind": "event",
+      "locator": "Q778699"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-bautzen-1620",
       "kind": "event",
       "locator": "Q136351768"
@@ -11276,6 +11450,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-lucknow",
+      "kind": "event",
+      "locator": "Q815165"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-lydenburg",
+      "kind": "event",
+      "locator": "Q16900168"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-maastricht-1748",
       "kind": "event",
       "locator": "Q289609"
@@ -11513,6 +11699,12 @@
       "id": "siege-of-rheinfelden-1633",
       "kind": "event",
       "locator": "Q7510342"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-rustenburg",
+      "kind": "event",
+      "locator": "Q15693966"
     },
     {
       "dissent": false,
@@ -12113,6 +12305,12 @@
       "id": "third-indochina-war",
       "kind": "event",
       "locator": "Q796498"
+    },
+    {
+      "dissent": false,
+      "id": "third-mandingo-war",
+      "kind": "event",
+      "locator": "Q139406732"
     },
     {
       "dissent": false,

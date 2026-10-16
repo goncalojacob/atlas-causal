@@ -11624,6 +11624,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-alamana",
+      "kind": "event",
+      "locator": "\"Battle of Alamana\", revision 1370431401"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-albuera",
       "kind": "event",
       "locator": "\"Battle of Albuera\", revision 1373550746"
@@ -11696,6 +11702,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-atchoukpa",
+      "kind": "event",
+      "locator": "\"Battle of Atchoukpa\", revision 1370432672"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-awa",
+      "kind": "event",
+      "locator": "\"Battle of Awa\", revision 1370432774"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ayacucho",
       "kind": "event",
       "locator": "\"Battle of Ayacucho\", revision 1375770122"
@@ -11741,6 +11759,12 @@
       "id": "battle-of-belmont-1899",
       "kind": "event",
       "locator": "\"Battle of Belmont (1899)\", revision 1370433957"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bembezi",
+      "kind": "event",
+      "locator": "\"Battle of Bembezi\", revision 1370662490"
     },
     {
       "dissent": false,
@@ -11879,6 +11903,12 @@
       "id": "battle-of-cancha-rayada-1818",
       "kind": "event",
       "locator": "\"Battle of Cancha Rayada (1818)\", revision 1370436071"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-canton-1857",
+      "kind": "event",
+      "locator": "\"Battle of Canton (1857)\", revision 1370436104"
     },
     {
       "dissent": false,
@@ -12173,6 +12203,12 @@
       "id": "battle-of-el-tor",
       "kind": "event",
       "locator": "\"Battle of El Tor\", revision 1374080276"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-elandsfontein",
+      "kind": "event",
+      "locator": "\"Battle of Elandsfontein\", revision 1370110052"
     },
     {
       "dissent": false,
@@ -12614,6 +12650,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kafr-el-dawwar",
+      "kind": "event",
+      "locator": "\"Battle of Kafr El Dawwar\", revision 1370444486"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kallo",
       "kind": "event",
       "locator": "\"Battle of Kallo\", revision 1370444595"
@@ -12698,6 +12740,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-koregaon",
+      "kind": "event",
+      "locator": "\"Battle of Koregaon\", revision 1371286844"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-korsakov",
       "kind": "event",
       "locator": "\"Battle of Korsakov\", revision 1370446023"
@@ -12755,6 +12803,12 @@
       "id": "battle-of-lagunillas",
       "kind": "event",
       "locator": "\"Battle of Lagunillas\", revision 1370446946"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-laing-s-nek",
+      "kind": "event",
+      "locator": "\"Battle of Laing's Nek\", revision 1379907629"
     },
     {
       "dissent": false,
@@ -12872,6 +12926,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-magdala",
+      "kind": "event",
+      "locator": "\"Battle of Magdala\", revision 1380382750"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-magersfontein",
       "kind": "event",
       "locator": "\"Battle of Magersfontein\", revision 1370268748"
@@ -12881,6 +12941,12 @@
       "id": "battle-of-maipu",
       "kind": "event",
       "locator": "\"Battle of Maipú\", revision 1370268820"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-majuba-hill",
+      "kind": "event",
+      "locator": "\"Battle of Majuba Hill\", revision 1379907369"
     },
     {
       "dissent": false,
@@ -12899,6 +12965,12 @@
       "id": "battle-of-mamora-1696",
       "kind": "event",
       "locator": "\"Battle of Mamora (1696)\", revision 1370268917"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-manila-1899",
+      "kind": "event",
+      "locator": "\"Battle of Manila (1899)\", revision 1379188682"
     },
     {
       "dissent": false,
@@ -12983,6 +13055,12 @@
       "id": "battle-of-mbwila",
       "kind": "event",
       "locator": "\"Battle of Mbwila\", revision 1370449389"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-melilla-1860",
+      "kind": "event",
+      "locator": "\"Battle of Melilla (1860)\", revision 1374680475"
     },
     {
       "dissent": false,
@@ -13148,6 +13226,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-nezib",
+      "kind": "event",
+      "locator": "\"Battle of Nezib\", revision 1375637254"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-noain",
       "kind": "event",
       "locator": "\"Battle of Noáin\", revision 1375299067"
@@ -13208,6 +13292,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ordashu",
+      "kind": "event",
+      "locator": "\"Battle of Ordashu\", revision 1370271257"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-osan",
       "kind": "event",
       "locator": "\"Battle of Osan\", revision 1375327001"
@@ -13247,6 +13337,12 @@
       "id": "battle-of-pavia",
       "kind": "event",
       "locator": "\"Battle of Pavia\", revision 1370271639"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-peking-1900",
+      "kind": "event",
+      "locator": "\"Battle of Peking (1900)\", revision 1378926939"
     },
     {
       "dissent": false,
@@ -13373,6 +13469,12 @@
       "id": "battle-of-puna",
       "kind": "event",
       "locator": "\"Battle of Puná\", revision 1370586803"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-pungdo",
+      "kind": "event",
+      "locator": "\"Battle of Pungdo\", revision 1372980733"
     },
     {
       "dissent": false,
@@ -13640,6 +13742,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-seonghwan",
+      "kind": "event",
+      "locator": "\"Battle of Seonghwan\", revision 1370274095"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-shaho",
       "kind": "event",
       "locator": "\"Battle of Shaho\", revision 1370589119"
@@ -13676,6 +13784,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sierra-bullones",
+      "kind": "event",
+      "locator": "\"Battle of Sierra Bullones\", revision 1370589345"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sikkak",
       "kind": "event",
       "locator": "\"Battle of Sikkak\", revision 1370589378"
@@ -13685,6 +13799,12 @@
       "id": "battle-of-sirte-2011",
       "kind": "event",
       "locator": "\"Battle of Sirte (2011)\", revision 1374518213"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sobraon",
+      "kind": "event",
+      "locator": "\"Battle of Sobraon\", revision 1378592214"
     },
     {
       "dissent": false,
@@ -13868,6 +13988,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tetouan",
+      "kind": "event",
+      "locator": "\"Battle of Tétouan\", revision 1370275936"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-thann-1638",
       "kind": "event",
       "locator": "\"Battle of Thann (1638)\", revision 1370788434"
@@ -14012,6 +14138,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-shangani",
+      "kind": "event",
+      "locator": "\"Battle of the Shangani\", revision 1370663052"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-smala",
       "kind": "event",
       "locator": "\"Battle of the Smala\", revision 1370602346"
@@ -14069,6 +14201,12 @@
       "id": "battle-of-tlemcen-1696",
       "kind": "event",
       "locator": "\"Battle of Tlemcen (1696)\", revision 1370591144"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-toba-fushimi",
+      "kind": "event",
+      "locator": "\"Battle of Toba–Fushimi\", revision 1370591158"
     },
     {
       "dissent": false,
@@ -14285,6 +14423,12 @@
       "id": "battle-of-wadi-al-laban",
       "kind": "event",
       "locator": "\"Battle of Wadi al-Laban\", revision 1370276629"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-wadi-bou-sefiha",
+      "kind": "event",
+      "locator": "\"Battle of Wadi Bou Sefiha\", revision 1372721041"
     },
     {
       "dissent": false,
@@ -15440,6 +15584,12 @@
     },
     {
       "dissent": false,
+      "id": "destruction-of-psara",
+      "kind": "event",
+      "locator": "\"Destruction of Psara\", revision 1366246742"
+    },
+    {
+      "dissent": false,
       "id": "dissolution-of-the-lumumba-government",
       "kind": "event",
       "locator": "\"Dissolution of the Lumumba Government\", revision 1371883556"
@@ -15605,6 +15755,12 @@
       "id": "egypt-israel-peace-treaty",
       "kind": "event",
       "locator": "\"Egypt–Israel peace treaty\", revision 1368884596"
+    },
+    {
+      "dissent": false,
+      "id": "egyptian-expedition-1882",
+      "kind": "event",
+      "locator": "\"Egyptian Expedition (1882)\", revision 1370616628"
     },
     {
       "dissent": false,
@@ -17027,6 +17183,12 @@
       "id": "java-war",
       "kind": "event",
       "locator": "\"Java War\", revision 1380025125"
+    },
+    {
+      "dissent": false,
+      "id": "jintian-uprising",
+      "kind": "event",
+      "locator": "\"Jintian Uprising\", revision 1370625036"
     },
     {
       "dissent": false,
@@ -19148,6 +19310,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-baler",
+      "kind": "event",
+      "locator": "\"Siege of Baler\", revision 1380531411"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-bautzen-1620",
       "kind": "event",
       "locator": "\"Siege of Bautzen (1620)\", revision 1370739355"
@@ -19466,6 +19634,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-lucknow",
+      "kind": "event",
+      "locator": "\"Siege of Lucknow\", revision 1370743048"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-lydenburg",
+      "kind": "event",
+      "locator": "\"Siege of Lydenburg\", revision 1370743072"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-maastricht-1748",
       "kind": "event",
       "locator": "\"Siege of Maastricht (1748)\", revision 1370743120"
@@ -19703,6 +19883,12 @@
       "id": "siege-of-rheinfelden-1633",
       "kind": "event",
       "locator": "\"Siege of Rheinfelden (1633)\", revision 1370744769"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-rustenburg",
+      "kind": "event",
+      "locator": "\"Siege of Rustenburg\", revision 1370744863"
     },
     {
       "dissent": false,

@@ -8341,6 +8341,15 @@
         }
       ]
     },
+    "battle-of-peking-1900": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-port-arthur": {
       "from": "git",
       "versions": [
