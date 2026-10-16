@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "dungan-revolt-1862-1877",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q889879",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Dungan Revolt (1862–1877)",
+    "pt": "Revolta Dungan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q889879"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dungan Revolt (1862–1877)\", revision 1379545905"
+    }
+  ],
+  "title": "Dungan Revolt (1862–1877)",
+  "summary": "The English Wikipedia article \"Dungan Revolt (1862–1877)\", at revision 1379545905, opens: \"The Dungan Revolt (1862–1877), also known as the Tongzhi Hui Revolt, was a war fought in 19th-century western China, mostly during the reign of the Tongzhi Emperor of the Qing dynasty. The term sometimes includes the Panthay Rebellion in Yunnan, which occurred during the same period. However, this article refers specifically to two waves of uprising by various Chinese Muslims, mostly Hui people, in Shaanxi, Gansu and Ningxia provinces in the first wave, and then in Xinjiang in the second wave, between 1862 and 1877. The uprising was eventually suppressed by Qing forces led by Zuo Zongtang.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q889879, imported by tools/import/wikidata.mjs. The item's own description reads \"Muslim minority revolt against Qing dynasty China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1877
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

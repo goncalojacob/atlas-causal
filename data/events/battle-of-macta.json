@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-macta",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q621362",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Macta"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q621362"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Macta\", revision 1370491897"
+    }
+  ],
+  "title": "Battle of Macta",
+  "summary": "The English Wikipedia article \"Battle of Macta\", at revision 1370491897, opens: \"The Battle of Macta was fought on 28 June 1835 between French colonial forces led by General Camille Alphonse Trézel and the forces of Emir ʿAbd al-Qādir, leader of the Emirate of Mascara. It was a major defeat for the French in the early years of the conquest of Algeria, and it marked the first large-scale military success of ʿAbd al-Qādir’s resistance.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q621362, imported by tools/import/wikidata.mjs. The item's own description reads \"1835 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1835,
+    "date": "1835-06-28"
+  },
+  "place": "macta",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-conquest-of-algeria"
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "lower-myanmar",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1937196",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Lower Myanmar",
+    "pt": "Baixa Birmânia"
+  },
+  "sources": [],
+  "names": [
+    "Lower Burma",
+    "Baixa Birmânia",
+    "Lower Myanmar"
+  ],
+  "where": {
+    "lon": 95.81,
+    "lat": 17.73,
+    "precision": "region",
+    "label": "Lower Myanmar"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

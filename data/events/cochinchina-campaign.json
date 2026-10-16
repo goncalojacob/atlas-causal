@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cochinchina-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2935371",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Cochinchina campaign",
+    "pt": "Guerra da Cochinchina"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2935371"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cochinchina campaign\", revision 1370611754"
+    }
+  ],
+  "title": "Cochinchina campaign",
+  "summary": "The English Wikipedia article \"Cochinchina campaign\", at revision 1370611754, opens: \"The Cochinchina campaign was a series of military operations between 1858 and 1862, launched by a joint naval expedition force on behalf of the French Empire and the Kingdom of Spain against the Nguyễn period Vietnamese state. It was the opening conflict of the French conquest of Vietnam.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2935371, imported by tools/import/wikidata.mjs. The item's own description reads \"1858–1862 military campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1862,
+    "date": "1858-09-01",
+    "endDate": "1862-06-05"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
