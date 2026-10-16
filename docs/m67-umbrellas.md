@@ -1897,3 +1897,15 @@ Writer A filed it there because the planner's queue asked for it in item `2026-1
 ## Writer A, 2026-10-16: `battle-of-aba`, filed under `mahdist-war` with neither an actor nor a place
 
 Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-048`, rank `child-of:mahdist-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `battle-of-kraaipan`, filed under `second-boer-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-051`, rank `child-of:second-boer-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `battle-of-gingindlovu`, filed under `anglo-zulu-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-054`, rank `child-of:anglo-zulu-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `action-of-1-august-1801`, filed under `first-barbary-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-057`, rank `child-of:first-barbary-war`. Its span and its subject put it inside the umbrella.

@@ -3579,6 +3579,127 @@
         "place": "elandslaagte"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-051",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kraaipan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-052",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kambula",
+        "edges": [],
+        "place": "kambula"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-053",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hlobane",
+        "edges": [],
+        "place": "hlobane"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-054",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gingindlovu",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-055",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-eshowe",
+        "edges": [],
+        "place": "eshowe"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-056",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2889955: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-africa-057",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "action-of-1-august-1801",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-058",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mazagran",
+        "edges": [],
+        "place": "mazagran-algeria"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-059",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-staoueli",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-060",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-smala",
+        "edges": [],
+        "place": "zmalet-el-emir-abdelkader"
+      },
+      "refusals": []
     }
   ]
 }

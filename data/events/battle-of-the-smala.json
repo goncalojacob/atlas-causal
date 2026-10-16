@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-smala",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3403872",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of the Smala"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3403872"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Smala\", revision 1370602346"
+    }
+  ],
+  "title": "Battle of the Smala",
+  "summary": "The English Wikipedia article \"Battle of the Smala\", at revision 1370602346, opens: \"The Battle of the Smala took place on 16 May 1843, when the French, led by Henri d'Orléans, Duke of Aumale, raided the personal encampment of Algerian resistance leader Emir Abdelkader al-Jazairi while al-Qadir was absent on a raiding expedition. The 500 French cavalrymen surprised the camp defenders, who fired a single volley before scattering. More than 3000 of al-Qadir's followers out of a camp population of 30,000 were captured, as were many of his possessions, including his war chest and a library valued at £5000. Three days later, another 2500 followers were captured.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3403872, imported by tools/import/wikidata.mjs. The item's own description reads \"1843 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1843,
+    "end": 1843,
+    "date": "1843-05-16"
+  },
+  "place": "zmalet-el-emir-abdelkader",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-conquest-of-algeria"
+}
