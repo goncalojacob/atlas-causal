@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "portuguese-conquest-of-hormuz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1106847",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Portuguese conquest of Hormuz",
+    "pt": "Conquista de Ormuz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1106847"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese conquest of Hormuz\", revision 1376303418"
+    }
+  ],
+  "title": "Portuguese conquest of Hormuz",
+  "summary": "The English Wikipedia article \"Portuguese conquest of Hormuz\", at revision 1376303418, opens: \"The Portuguese conquest of Hormuz occurred in the early 16th century when Afonso de Albuquerque conquered the Kingdom of Hormuz and established fort Nossa Senhora da Conceição on the Island of Hormuz. Although an attempt in 1507 failed, the Portuguese succeeded in taking over Hormuz in 1515.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1106847, imported by tools/import/wikidata.mjs. The item's own description reads \"1507 Portuguese Afonso de Albuquerque attacking Hormuz Island\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1507,
+    "end": 1507
+  },
+  "place": "hormuz-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

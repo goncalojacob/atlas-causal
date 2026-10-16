@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mandingo-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1450547",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Mandingo Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1450547"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mandingo Wars\", revision 1373046567"
+    }
+  ],
+  "title": "Mandingo Wars",
+  "summary": "The English Wikipedia article \"Mandingo Wars\", at revision 1373046567, opens: \"The Mandingo Wars were a series of conflicts from 1882 to 1898 between France and the Wassoulou Empire of the Mandingo people led by Samori Ture. Comparatively, the French faced serious resistance by the Mandinka, as they were able to make use of firearms and tactics that impeded French expansion in the area. The French were ultimately triumphant and established dominance over Mali, Guinea and the Ivory Coast.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1450547, imported by tools/import/wikidata.mjs. The item's own description reads \"1883–1898 series of wars between France and the Mandingo people of West Africa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1882,
+    "end": 1898
+  },
+  "place": "west-africa",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

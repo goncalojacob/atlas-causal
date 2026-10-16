@@ -24073,6 +24073,10 @@ where the previous stand carried it as standing.
 
 ## Milestones landed
 
+Writer B started 2026-10-15T23:42:00Z by scheduled
+
+Writer B 2026-10-15T23:42:00Z: 0 written, 0 partial, 3 refused, 7 skipped
+
 Writer B started 2026-10-13T23:41:58Z by scheduled
 
 **M42b batches 78 to 81 — eleven active events, three edges, and africa before 1800 given a
@@ -25932,3 +25936,9 @@ Writer A started 2026-10-15T06:15:23Z by scheduled
 Writer A 2026-10-15T06:15:23Z: 10 written, 0 partial, 2 refused, 0 skipped
 Writer A started 2026-10-15T21:21:54Z by scheduled
 Writer A 2026-10-15T21:21:54Z: 6 written, 0 partial, 0 refused, 0 skipped
+
+Writer A started 2026-10-15T22:22:10Z by scheduled
+Writer A 2026-10-15T22:22:10Z: 10 written, 0 partial, 0 refused, 0 skipped
+
+Writer A started 2026-10-15T23:21:41Z by scheduled
+Writer A 2026-10-15T23:21:41Z: 9 written, 0 partial, 1 refused, 0 skipped

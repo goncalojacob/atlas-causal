@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "cabanagem",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2590269",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Cabanagem",
+    "pt": "Cabanagem"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2590269"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cabanagem\", revision 1370607396"
+    }
+  ],
+  "title": "Cabanagem",
+  "summary": "The English Wikipedia article \"Cabanagem\", at revision 1370607396, opens: \"The Cabanagem was a popular revolution and pro-separatist movement that occurred in the then province of Grão-Pará, Empire of Brazil.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2590269, imported by tools/import/wikidata.mjs. The item's own description reads \"1835-1840 popular revolution and pro-separatist movement that occurred in the then-state of Grão-Pará, Empire of Brazil\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1835
+  },
+  "place": "brazil-q155",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

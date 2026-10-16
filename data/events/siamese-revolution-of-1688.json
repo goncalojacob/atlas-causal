@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "siamese-revolution-of-1688",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7506756",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Siamese revolution of 1688"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7506756"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siamese revolution of 1688\", revision 1380195946"
+    }
+  ],
+  "title": "Siamese revolution of 1688",
+  "summary": "The English Wikipedia article \"Siamese revolution of 1688\", at revision 1380195946, opens: \"The Siamese revolution of 1688 was a major popular uprising in the Siamese Ayutthaya Kingdom which led to the overthrow of the pro-French Siamese king Narai. Phetracha, previously one of Narai's trusted military advisors, took advantage of the elderly Narai's illness, and killed Narai's Christian heir, along with a number of missionaries and Narai's influential foreign minister, the Greek adventurer Constantine Phaulkon. Phetracha then married Narai's daughter, took the throne, and pursued a policy of ousting French influence and military forces from Siam. One of the most prominent battles was 1688's Siege of Bangkok, when tens of thousands of Siamese forces spent four months besieging a French fortress within the city. As a consequence of the revolution, Siam severed significant ties with the Western world, with the exception of the Dutch East India Company, until the 19th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7506756, imported by tools/import/wikidata.mjs. The item's own description reads \"1688 anti-French uprising in the Ayutthaya Kingdom; new dynasty established\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1688,
+    "end": 1688
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

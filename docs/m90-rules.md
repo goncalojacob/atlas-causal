@@ -88,6 +88,10 @@ does not read the pool files.
     A child's dates must lie inside its parent's. The Guatemalan Civil War
     (1965 to 1996) cannot go under the Cold War, which ends in 1991. Check
     both spans before you queue a parent (14 October 2026).
+    A child must also be the umbrella's own: in the umbrella's lane, or
+    naming an actor or a place the umbrella names. The 1890 British
+    Ultimatum (lane europe) cannot go under the Scramble for Africa (lane
+    africa) though Wikidata's `P361` says so (15 October 2026).
 
 ## Where the work goes
 
@@ -111,6 +115,10 @@ does not read the pool files.
     vital-article lists, then the lists of wars for 1500 to 1799 and 1800 to
     1899, the revolutions and the treaties of those centuries. Events from
     1415 to 1499 are welcome now, Ceuta and the Portuguese voyages among them.
+    When you match a candidate against held titles, ignore a leading "The"
+    and anything in brackets. The atlas held the Haitian Revolution as "The
+    Haitian Revolution", with no Wikidata id, and a second record was
+    written on 15 October before the assistant removed it.
     Writer A takes `africa`, `asia` and `europe` on branch `m42`. Writer B
     takes `americas` on branch `m42b`. A writer never imports what the other
     branch holds.

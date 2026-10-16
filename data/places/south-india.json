@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "south-india",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q542146",
+  "sitelinks": {
+    "count": 59,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "South India",
+    "pt": "Índia do Sul"
+  },
+  "sources": [],
+  "names": [
+    "South India",
+    "Índia do Sul"
+  ],
+  "where": {
+    "lon": 77,
+    "lat": 13,
+    "precision": "region",
+    "label": "South India"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

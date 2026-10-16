@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "burmese-siamese-war-1759-1760",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-15",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1632880",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-15"
+  },
+  "wikipedia": {
+    "en": "Burmese–Siamese War (1759–1760)",
+    "pt": "Guerra birmano-siamesa (1759–1760)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1632880"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Burmese–Siamese War (1759–1760)\", revision 1370607013"
+    }
+  ],
+  "title": "Burmese–Siamese War (1759–1760)",
+  "summary": "The English Wikipedia article \"Burmese–Siamese War (1759–1760)\", at revision 1370607013, opens: \"The Burmese–Siamese War (1759–1760) or Alaungpaya's War was the military conflict between the Konbaung dynasty of Burma (Myanmar) and the Ban Phlu Luang Dynasty of the Ayutthaya Kingdom of Siam, in which the Burmese forces under King Alaungpaya of the Konbaung dynasty invaded Siam. After about a century of relative hiatus of Burmese–Siamese conflicts, this war reignited the new round of military conflicts between Burma and Siam that would last for about a century to come.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1632880, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between the Konbuang dynasty of Burma and the Thai kingdom of Ayutthaya\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1759,
+    "end": 1760,
+    "date": "1759-12",
+    "endDate": "1760-05"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

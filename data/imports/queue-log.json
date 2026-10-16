@@ -2453,6 +2453,364 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-042",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "portuguese-conquest-of-the-east-african-coast",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-043",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mombasa-1505",
+        "edges": [],
+        "place": "mombasa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-044",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "tripolitanian-civil-war",
+        "edges": [],
+        "place": "ottoman-tripolitania"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-045",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "dervish-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-046",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "italian-pacification-campaigns-in-somalia",
+        "edges": [],
+        "place": "italian-somaliland-q319984"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-047",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "rabih-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-048",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "mandingo-wars",
+        "edges": [],
+        "place": "west-africa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-africa-049",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "1890-british-ultimatum",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-050",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "portuguese-conquest-of-hormuz",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-051",
+      "writer": "A",
+      "fired": "2026-10-15T22:22Z",
+      "status": "written",
+      "written": {
+        "event": "portuguese-conquest-of-goa",
+        "edges": [],
+        "place": "old-goa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-052",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-aden-1513",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-053",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-muscat-1507",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-054",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1848807: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-15-asia-055",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "siamese-revolution-of-1688",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-056",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "hong-kyongnae-s-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-057",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "burmese-siamese-war-1759-1760",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-058",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-persian-war-1505-1517",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-059",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "third-anglo-mysore-war",
+        "edges": [],
+        "place": "south-india"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-060",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "dzungar-qing-wars",
+        "edges": [],
+        "place": "dzungaria"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-asia-061",
+      "writer": "A",
+      "fired": "2026-10-15T23:22Z",
+      "status": "written",
+      "written": {
+        "event": "sino-nepalese-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-americas-062",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q689128 is already the event \"haitian-revolution\""
+    },
+    {
+      "id": "2026-10-15-americas-063",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2656995 is already the event \"northwest-indian-war\""
+    },
+    {
+      "id": "2026-10-15-americas-064",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q377542: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-15-americas-065",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q179077 is already the event \"pontiac-s-war\""
+    },
+    {
+      "id": "2026-10-15-americas-066",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5851623 is already the event \"revolt-of-the-comuneros-paraguay\""
+    },
+    {
+      "id": "2026-10-15-americas-067",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2508152 is already the event \"fredonian-rebellion\""
+    },
+    {
+      "id": "2026-10-15-americas-068",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5255169: none of its classes (Q1155622) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-15-americas-069",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2590269 is already the event \"cabanagem\""
+    },
+    {
+      "id": "2026-10-15-americas-070",
+      "writer": "B",
+      "fired": "2026-10-15T23:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3775537: none of its classes (Q108856008) is in data/imports/wikidata-seeds.json → classes"
     }
   ]
 }
