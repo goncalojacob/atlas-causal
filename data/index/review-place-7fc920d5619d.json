@@ -926,7 +926,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "anatolia",
       "kind": "place",
       "names": [
@@ -4888,6 +4888,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "chillianwala",
+      "kind": "place",
+      "names": [
+        "Chillianwala"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -25536,6 +25563,33 @@
       "names": [
         "Tiananmen Square",
         "Praça da Paz Celestial"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "tianjin",
+      "kind": "place",
+      "names": [
+        "Tianjin"
       ],
       "origin": {
         "tool": "wikidata"

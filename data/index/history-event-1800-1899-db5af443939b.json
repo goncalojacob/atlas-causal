@@ -766,6 +766,15 @@
         }
       ]
     },
+    "battle-of-chillianwala": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-chimbo": {
       "from": "git",
       "versions": [
@@ -847,6 +856,15 @@
       ]
     },
     "battle-of-elandslaagte": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-ferozeshah": {
       "from": "git",
       "versions": [
         {
@@ -1000,7 +1018,7 @@
       ]
     },
     "battle-of-koregaon": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1114,7 +1132,7 @@
       ]
     },
     "battle-of-manila-1899": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1168,7 +1186,7 @@
       ]
     },
     "battle-of-nezib": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1272,7 +1290,7 @@
       ]
     },
     "battle-of-seonghwan": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -1317,7 +1335,7 @@
       ]
     },
     "battle-of-sobraon": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -2854,7 +2872,7 @@
       ]
     },
     "jintian-uprising": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3016,6 +3034,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "oriental-crisis-of-1840": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -3654,7 +3681,7 @@
       ]
     },
     "siege-of-baler": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -3732,7 +3759,7 @@
       ]
     },
     "siege-of-lucknow": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,

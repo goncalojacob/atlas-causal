@@ -2307,6 +2307,15 @@
         }
       ]
     },
+    "sahkulu-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "scientific-revolution": {
       "from": "git",
       "versions": [

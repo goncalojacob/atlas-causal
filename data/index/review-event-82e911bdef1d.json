@@ -10798,6 +10798,38 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-16",
+      "id": "battle-of-chillianwala",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-anglo-sikh-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Chillianwala"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-09-25",
@@ -12000,6 +12032,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Fehmarn (1644)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-16",
+      "id": "battle-of-ferozeshah",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-anglo-sikh-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Ferozeshah"
     },
     {
       "authors": [
@@ -22526,6 +22589,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of the Yellow Sea"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-16",
+      "id": "battle-of-tientsin",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "boxer-rebellion",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Tientsin"
     },
     {
       "authors": [
@@ -45612,6 +45707,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-16",
+      "id": "oriental-crisis-of-1840",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "egyptian-ottoman-war-1839-1841",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Oriental Crisis of 1840"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -49830,6 +49955,36 @@
       "revised": null,
       "status": "active",
       "title": "Sack of Rome (1527)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-16",
+      "id": "sahkulu-rebellion",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-persian-war-1505-1517",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Şahkulu rebellion"
     },
     {
       "authors": [
@@ -64917,6 +65072,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-chillianwala",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-chimbo",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -65080,6 +65241,12 @@
     },
     {
       "id": "battle-of-fehmarn-1644",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-ferozeshah",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -66040,6 +66207,12 @@
     },
     {
       "id": "battle-of-the-strait-of-hormuz-1553",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-tientsin",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -67725,6 +67898,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "oriental-crisis-of-1840",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "ottoman-campaign-against-hormuz",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -68092,6 +68271,12 @@
     },
     {
       "id": "sack-of-rome-1527",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "sahkulu-rebellion",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

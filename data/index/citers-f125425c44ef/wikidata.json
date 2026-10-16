@@ -3710,6 +3710,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chillianwala",
+      "kind": "event",
+      "locator": "Q4870727"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chimbo",
       "kind": "event",
       "locator": "Q10858436"
@@ -3935,6 +3941,12 @@
       "id": "battle-of-fehmarn-1644",
       "kind": "event",
       "locator": "Q392121"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ferozeshah",
+      "kind": "event",
+      "locator": "Q116222"
     },
     {
       "dissent": false,
@@ -5861,6 +5873,12 @@
       "id": "battle-of-the-yellow-sea",
       "kind": "event",
       "locator": "Q702377"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tientsin",
+      "kind": "event",
+      "locator": "Q4087324"
     },
     {
       "dissent": false,
@@ -9914,6 +9932,12 @@
     },
     {
       "dissent": false,
+      "id": "oriental-crisis-of-1840",
+      "kind": "event",
+      "locator": "Q325127"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-campaign-against-hormuz",
       "kind": "event",
       "locator": "Q2935422"
@@ -10685,6 +10709,12 @@
       "id": "sack-of-rome-1527",
       "kind": "event",
       "locator": "Q465627"
+    },
+    {
+      "dissent": false,
+      "id": "sahkulu-rebellion",
+      "kind": "event",
+      "locator": "Q6569289"
     },
     {
       "dissent": false,

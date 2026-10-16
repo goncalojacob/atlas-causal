@@ -12026,6 +12026,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-chillianwala",
+      "kind": "event",
+      "locator": "\"Battle of Chillianwala\", revision 1380269718"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chosin-reservoir",
       "kind": "event",
       "locator": "\"Battle of Chosin Reservoir\", revision 1370109047"
@@ -12239,6 +12245,12 @@
       "id": "battle-of-fehmarn-1644",
       "kind": "event",
       "locator": "\"Battle of Fehmarn (1644)\", revision 1370440658"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ferozeshah",
+      "kind": "event",
+      "locator": "\"Battle of Ferozeshah\", revision 1370110248"
     },
     {
       "dissent": false,
@@ -14177,6 +14189,12 @@
       "id": "battle-of-the-yellow-sea",
       "kind": "event",
       "locator": "\"Battle of the Yellow Sea\", revision 1375165941"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tientsin",
+      "kind": "event",
+      "locator": "\"Battle of Tientsin\", revision 1370591066"
     },
     {
       "dissent": false,
@@ -18158,6 +18176,12 @@
     },
     {
       "dissent": false,
+      "id": "oriental-crisis-of-1840",
+      "kind": "event",
+      "locator": "\"Oriental Crisis of 1840\", revision 1370701240"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-campaign-against-hormuz",
       "kind": "event",
       "locator": "\"Ottoman campaign against Hormuz\", revision 1376300939"
@@ -18911,6 +18935,12 @@
       "id": "sack-of-rome-1527",
       "kind": "event",
       "locator": "\"Sack of Rome (1527)\", revision 1372345219"
+    },
+    {
+      "dissent": false,
+      "id": "sahkulu-rebellion",
+      "kind": "event",
+      "locator": "\"Şahkulu rebellion\", revision 1373732093"
     },
     {
       "dissent": false,

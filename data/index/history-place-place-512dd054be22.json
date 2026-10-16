@@ -2223,6 +2223,15 @@
         }
       ]
     },
+    "chillianwala": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "china-q29520": {
       "from": "git",
       "versions": [
@@ -5745,7 +5754,7 @@
       ]
     },
     "koregaon": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -6524,7 +6533,7 @@
       ]
     },
     "lucknow": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -7941,7 +7950,7 @@
       ]
     },
     "nizip": {
-      "from": "revised",
+      "from": "git",
       "versions": [
         {
           "first": true,
@@ -11715,6 +11724,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "tianjin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
