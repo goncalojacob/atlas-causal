@@ -43,7 +43,7 @@
             "maxLength": 120
           },
           "writer": {
-            "description": "Which writer takes the item: A for africa, asia and europe, B for americas (A10, A11(b)). Written out rather than derived at the point of use so that a queue says who is to do what, and checked against the lane by tools/validate.mjs.",
+            "description": "Which writer takes the item: A or B. Since 16 October 2026, at the owner's request, the planner assigns writers by turn and either writer may take any lane. Written out rather than derived at the point of use so that a queue says who is to do what. tools/validate.mjs checks the lane against the atlas's own list of lanes, not against the writer.",
             "type": "string",
             "enum": ["A", "B"]
           },

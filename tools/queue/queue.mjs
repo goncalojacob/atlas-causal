@@ -4,11 +4,12 @@
 // the writing became a writer that applies it. A writer on a smaller model is
 // safe only if it has nothing to decide, so every rule that can be code is
 // code — and this is where the ones that are not a JSON Schema keyword live:
-// which writer takes which lane, that an edge is the item's own (and, since
-// M91, that an item need carry none), that a queue id is unique, which refusal a candidate edge earns. Pure: no
-// filesystem, no network, no clock. `tools/queue/apply.mjs` applies it,
-// `tools/queue/state.mjs` counts it and `tools/validate.mjs` checks the two
-// files on disk through `checkQueue` and `checkQueueLog`.
+// that a lane is one this atlas writes to, that an edge is the item's own
+// (and, since M91, that an item need carry none), that a queue id is unique,
+// which refusal a candidate edge earns. Pure: no filesystem, no network, no
+// clock. `tools/queue/apply.mjs` applies it, `tools/queue/state.mjs` counts
+// it and `tools/validate.mjs` checks the two files on disk through
+// `checkQueue` and `checkQueueLog`.
 
 import { tidy, verdictFor } from '../import/chronology.mjs';
 import { astronomicalBounds } from '../../src/util/dates.js';
@@ -19,21 +20,14 @@ export const LOG_KIND = 'import-queue-log';
 export const QUEUE_SCHEMA = 'import/queue.json';
 export const LOG_SCHEMA = 'import/queue-log.json';
 
-// A10, A11(b): the partition, written down once. Writer A takes the three
-// lanes that trail or are paused behind them, writer B takes the Americas, and
-// a writer never imports what the other branch holds. A lane nobody has been
-// given is not a lane a queue may name: it would be queued for a writer that
-// does not fire.
+// A10, A11(b) are withdrawn as of 16 October 2026, at the owner's request:
+// the planner now hands out items by turn, so either writer may take an item
+// in any lane. A writer never imports what the other branch holds (that
+// check stays in `tools/queue/apply.mjs`). `LANES` is the closed list the
+// atlas writes to today. A lane outside it is not a lane a queue may name:
+// it would be queued for a region nothing will ever apply.
 export const WRITERS = Object.freeze(['A', 'B']);
-export const WRITER_LANES = Object.freeze({
-  A: Object.freeze(['africa', 'asia', 'europe']),
-  B: Object.freeze(['americas']),
-});
-
-export function writerFor(lane) {
-  for (const writer of WRITERS) if (WRITER_LANES[writer].includes(lane)) return writer;
-  return null;
-}
+export const LANES = Object.freeze(['africa', 'asia', 'europe', 'americas']);
 
 export const ITEM_ID = /^([0-9]{4}-[0-9]{2}-[0-9]{2})-([a-z0-9]+(?:-[a-z0-9]+)*)-([0-9]{3})$/;
 export const RECORD_ID = /^[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -324,13 +318,12 @@ export function checkQueue(file, queue, { regions = null } = {}) {
     if (lanes && typeof item?.lane === 'string' && !lanes.has(item.lane)) {
       say(`${at}/lane`, `"${item.lane}" is not a lane in data/regions.json`);
     }
-    // The partition is not a preference: an item queued for the writer that
-    // does not take its lane is an item nothing will ever apply.
-    const expected = typeof item?.lane === 'string' ? writerFor(item.lane) : null;
-    if (expected === null && typeof item?.lane === 'string' && lanes?.has(item.lane)) {
-      say(`${at}/lane`, `no writer takes the lane "${item.lane}" (A10: A takes ${WRITER_LANES.A.join(', ')}, B takes ${WRITER_LANES.B.join(', ')})`);
-    } else if (expected !== null && item?.writer !== expected) {
-      say(`${at}/writer`, `the lane "${item.lane}" is writer ${expected}'s, not ${item?.writer}'s`);
+    // Since 16 October 2026 the planner assigns writers by turn and a lane no
+    // longer picks the writer: either writer may take an item in any lane the
+    // atlas writes to. The lane still has to be one of those, so this check
+    // stays. The match against the writer that used to follow it is gone.
+    if (typeof item?.lane === 'string' && lanes?.has(item.lane) && !LANES.includes(item.lane)) {
+      say(`${at}/lane`, `"${item.lane}" is not a lane this atlas writes: ${LANES.join(', ')}`);
     }
     const subject = subjectOf(item);
     const both = typeof item?.qid === 'string' && typeof item?.existing === 'string';
