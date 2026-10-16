@@ -2009,6 +2009,15 @@
         }
       ]
     },
+    "jacobite-rising-of-1745": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "king-george-s-war": {
       "from": "git",
       "versions": [

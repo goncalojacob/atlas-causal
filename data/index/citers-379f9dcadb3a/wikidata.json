@@ -3218,6 +3218,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-abu-klea",
+      "kind": "event",
+      "locator": "Q1288821"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-abukir-1799",
       "kind": "event",
       "locator": "Q778800"
@@ -4124,6 +4130,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-isandlwana",
+      "kind": "event",
+      "locator": "Q747589"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ismailia-1952",
       "kind": "event",
       "locator": "Q12246335"
@@ -4760,6 +4772,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-omdurman",
+      "kind": "event",
+      "locator": "Q1137302"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-onjong",
       "kind": "event",
       "locator": "Q4871945"
@@ -5048,6 +5066,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rorke-s-drift",
+      "kind": "event",
+      "locator": "Q1123353"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sablat",
       "kind": "event",
       "locator": "Q513007"
@@ -5189,6 +5213,12 @@
       "id": "battle-of-shanghai",
       "kind": "event",
       "locator": "Q254599"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-shaykan",
+      "kind": "event",
+      "locator": "Q478597"
     },
     {
       "dissent": false,
@@ -5645,6 +5675,12 @@
       "id": "battle-of-ugentana-1536",
       "kind": "event",
       "locator": "Q116214216"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ulundi",
+      "kind": "event",
+      "locator": "Q2166177"
     },
     {
       "dissent": false,
@@ -8360,6 +8396,12 @@
     },
     {
       "dissent": false,
+      "id": "jacobite-rising-of-1745",
+      "kind": "event",
+      "locator": "Q1049945"
+    },
+    {
+      "dissent": false,
       "id": "jameson-raid",
       "kind": "event",
       "locator": "Q916340"
@@ -10847,6 +10889,12 @@
       "id": "siege-of-julich-1621-1622",
       "kind": "event",
       "locator": "Q17122425"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-khartoum",
+      "kind": "event",
+      "locator": "Q815159"
     },
     {
       "dissent": false,
