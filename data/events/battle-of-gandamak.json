@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-gandamak",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q908888",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Gandamak"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q908888"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gandamak\", revision 1376918846"
+    }
+  ],
+  "title": "Battle of Gandamak",
+  "summary": "The English Wikipedia article \"Battle of Gandamak\", at revision 1376918846, opens: \"The Battle of Gandamak on 13 January 1842 was a defeat of British forces by Afghan tribesmen in the 1842 retreat from Kabul of General Elphinstone's army, during which the last survivors of the force—twenty officers and forty-five British soldiers of the 44th East Essex Regiment—were killed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q908888, imported by tools/import/wikidata.mjs. The item's own description reads \"1842 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1842,
+    "end": 1842,
+    "date": "1842-01-06",
+    "endDate": "1842-01-13"
+  },
+  "place": "afghanistan-q889",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-anglo-afghan-war"
+}

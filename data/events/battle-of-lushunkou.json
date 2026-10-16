@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-lushunkou",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1208996",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Lüshunkou",
+    "pt": "Batalha de Lüshunkou"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1208996"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lüshunkou\", revision 1370268653"
+    }
+  ],
+  "title": "Battle of Lüshunkou",
+  "summary": "The English Wikipedia article \"Battle of Lüshunkou\", at revision 1370268653, opens: \"The Battle of Lüshunkou was a land battle of the First Sino-Japanese War. It took place on 21 November 1894, in Lüshunkou, Manchuria between the forces of the Empire of Japan and the Qing dynasty. It is sometimes referred to archaically in western sources as the Battle of Port Arthur.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1208996, imported by tools/import/wikidata.mjs. The item's own description reads \"1894 battle of the First Sino-Japanese War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1894,
+    "end": 1894,
+    "date": "1894-11-21"
+  },
+  "place": "lushunkou",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-sino-japanese-war"
+}

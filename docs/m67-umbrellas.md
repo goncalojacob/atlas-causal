@@ -1989,3 +1989,23 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-16: `battle-of-hakodate`, filed under `boshin-war` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-068`, rank `child-of:boshin-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `battle-of-aliwal`, filed under `first-anglo-sikh-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-074`, rank `child-of:first-anglo-sikh-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `battle-of-palikao`, filed under `second-opium-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-082`, rank `child-of:second-opium-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `siege-of-the-international-legations`, filed under `boxer-rebellion` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-090`, rank `child-of:boxer-rebellion`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `battle-of-tirad-pass`, filed under `philippine-american-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-092`, rank `child-of:philippine-american-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `battle-of-taku-forts-1859`, filed under `second-opium-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-asia-102`, rank `child-of:second-opium-war`. Its span and its subject put it inside the umbrella.

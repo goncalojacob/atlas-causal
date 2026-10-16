@@ -4380,6 +4380,210 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-070",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-seringapatam-1799",
+        "edges": [],
+        "place": "srirangapatna"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-072",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lushunkou",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-074",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-aliwal",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-076",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-konya",
+        "edges": [],
+        "place": "konya"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-078",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-weihaiwei",
+        "edges": [],
+        "place": "weihai"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-080",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mudki",
+        "edges": [],
+        "place": "moodkee"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-082",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-palikao",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-084",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fuzhou",
+        "edges": [],
+        "place": "fuzhou"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-086",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-delhi-1857",
+        "edges": [],
+        "place": "delhi"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-088",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-cawnpore",
+        "edges": [],
+        "place": "kanpur"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-090",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-the-international-legations",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-092",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tirad-pass",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-094",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-agra",
+        "edges": [],
+        "place": "agra"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-096",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gujrat",
+        "edges": [],
+        "place": "gujrat-pakistan"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-098",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gandamak",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-100",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "third-battle-of-nanjing",
+        "edges": [],
+        "place": "nanjing"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-102",
+      "writer": "B",
+      "fired": "2026-10-16T18:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-taku-forts-1859",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
