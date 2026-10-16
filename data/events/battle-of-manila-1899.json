@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-manila-1899",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q746860",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Manila (1899)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q746860"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Manila (1899)\", revision 1379188682"
+    }
+  ],
+  "title": "Battle of Manila (1899)",
+  "summary": "The English Wikipedia article \"Battle of Manila (1899)\", at revision 1379188682, opens: \"The Battle of Manila, the first and largest battle of the Philippine–American War, was fought on February 4–5, 1899, between 19,000 American and 15,000 Filipino soldiers. Armed conflict erupted when American troops, tasked with preventing the Filipino encampment from moving closer, fired on a nearby group. Philippine President Emilio Aguinaldo attempted to broker a ceasefire, but American General Elwell Stephen Otis rejected it, and fighting escalated the next day. It ended in an American victory, although minor skirmishes continued for several days afterward.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q746860, imported by tools/import/wikidata.mjs. The item's own description reads \"1899 battle during the Philippine–American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-02-04",
+    "endDate": "1899-02-05"
+  },
+  "place": "manila",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-american-war"
+}

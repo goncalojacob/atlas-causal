@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-peking-1900",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4087313",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Peking (1900)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4087313"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Peking (1900)\", revision 1378926939"
+    }
+  ],
+  "title": "Battle of Peking (1900)",
+  "summary": "The English Wikipedia article \"Battle of Peking (1900)\", at revision 1378926939, opens: \"The Battle of Peking, or historically the Relief of Peking, was the battle fought on 14–15 August 1900 in Beijing, in which the Eight-Nation Alliance relieved the siege of the Peking Legation Quarter during the Boxer Rebellion. From 20 June 1900, Boxers and Imperial Chinese Army troops had besieged foreign diplomats, citizens and soldiers within the legations of Austria-Hungary, Belgium, Britain, France, Italy, The German Empire, Japan, Netherlands, The Russian Empire, Spain and the United States.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4087313, imported by tools/import/wikidata.mjs. The item's own description reads \"1900 battle of the Boxer Rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-08-14",
+    "endDate": "1900-08-15"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "boxer-rebellion"
+}
