@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "bannock-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2321496",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Bannock War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2321496"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bannock War\", revision 1380091170"
+    }
+  ],
+  "title": "Bannock War",
+  "summary": "The English Wikipedia article \"Bannock War\", at revision 1380091170, opens: \"The Bannock War of 1878 was an armed conflict between the U.S. military and Bannock and Paiute warriors in Idaho and northeastern Oregon from June to August 1878. The Bannock totaled about 600 to 800 in 1870 because of other Shoshone peoples being included with Bannock numbers. They were led by Chief Buffalo Horn, who was killed in action on June 8, 1878. After his death, Chief Egan led the Bannocks. He and some of his warriors were killed in July by a Umatilla party that entered his camp in subterfuge.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2321496, imported by tools/import/wikidata.mjs. The item's own description reads \"1878 armed conflict between Bannock and Paiute warriors\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1878,
+    "end": 1878,
+    "date": "1878-06",
+    "endDate": "1878-09"
+  },
+  "place": "idaho",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

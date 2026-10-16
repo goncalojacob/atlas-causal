@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "great-plague-of-marseille",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1936002",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Great Plague of Marseille",
+    "pt": "Grande Peste de Marselha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1936002"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Plague of Marseille\", revision 1365027875"
+    }
+  ],
+  "title": "Great Plague of Marseille",
+  "summary": "The English Wikipedia article \"Great Plague of Marseille\", at revision 1365027875, opens: \"The Great Plague of Marseille, also known as the Plague of Provence, was the last major outbreak of bubonic plague in Western Europe. Arriving in Marseille, France, in 1720, the disease killed over 100,000 people: 50,000 in the city during the next two years, out of a total population of 90,000 and another 50,000 to the north in surrounding provinces and towns.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1936002, imported by tools/import/wikidata.mjs. The item's own description reads \"Last major outbreak in western Europe.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1720,
+    "end": 1722,
+    "date": "1720-05-25",
+    "endDate": "1722-08"
+  },
+  "place": "marseille",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

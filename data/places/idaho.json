@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "idaho",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1221",
+  "sitelinks": {
+    "count": 199,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Idaho",
+    "pt": "Idaho"
+  },
+  "sources": [],
+  "names": [
+    "Idaho"
+  ],
+  "where": {
+    "lon": -114,
+    "lat": 45,
+    "precision": "region",
+    "label": "Idaho"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

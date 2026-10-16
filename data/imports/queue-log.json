@@ -5943,6 +5943,239 @@
         "place": "great-plains"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-015",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "written",
+      "written": {
+        "event": "bannock-war",
+        "edges": [],
+        "place": "idaho"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-017",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "written",
+      "written": {
+        "event": "winnebago-war",
+        "edges": [],
+        "place": "illinois-q1204"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-019",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-grand-pre",
+        "edges": [],
+        "place": "grand-pre-nova-scotia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-021",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "written",
+      "written": {
+        "event": "navajo-wars",
+        "edges": [],
+        "place": "southwestern-united-states"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-023",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "written",
+      "written": {
+        "event": "jicarilla-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-025",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "written",
+      "written": {
+        "event": "puget-sound-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-005",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "written",
+      "written": {
+        "event": "first-anglo-dutch-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-007",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-szigetvar",
+        "edges": [],
+        "place": "szigetvar"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-009",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6542740: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-europe-011",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q920766: none of its classes (Q12136, Q18123741) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-16-europe-013",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "written",
+      "written": {
+        "event": "great-plague-of-marseille",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-015",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-fort-william-henry",
+        "edges": [],
+        "place": "lake-george-town-new-york"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-017",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "written",
+      "written": {
+        "event": "hungarian-campaign-of-1527-1528",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-019",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-pyrenees",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-021",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3778623: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-europe-023",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "written",
+      "written": {
+        "event": "italian-campaigns-of-the-french-revolutionary-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-025",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q448015: none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-16-europe-027",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "written",
+      "written": {
+        "event": "1510-influenza-pandemic",
+        "edges": [],
+        "place": "asia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-029",
+      "writer": "B",
+      "fired": "2026-10-16T21:43Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q96359661: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   ]
 }

@@ -2187,3 +2187,10 @@ Writer A filed it there because the planner's queue asked for it in item `2026-1
 ## Writer A, 2026-10-16: `cayuse-war`, filed under `american-indian-wars` with neither an actor nor a place
 
 Writer A filed it there because the planner's queue asked for it in item `2026-10-16-americas-012`, rank `child-of:american-indian-wars`. Its span and its subject put it inside the umbrella.
+## Writer B, 2026-10-16: `puget-sound-war`, filed under `american-indian-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-americas-025`, rank `child-of:american-indian-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-16: `hungarian-campaign-of-1527-1528`, filed under `ottoman-habsburg-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-16-europe-017`, rank `child-of:ottoman-habsburg-wars`. Its span and its subject put it inside the umbrella.

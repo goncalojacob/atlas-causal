@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hungarian-campaign-of-1527-1528",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1049956",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Hungarian campaign of 1527–1528",
+    "pt": "Campanha húngara de 1527–1528"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1049956"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hungarian campaign of 1527–1528\", revision 1370623083"
+    }
+  ],
+  "title": "Hungarian campaign of 1527–1528",
+  "summary": "The English Wikipedia article \"Hungarian campaign of 1527–1528\", at revision 1370623083, opens: \"The Hungarian Civil War or campaign of 1527–1528 was launched by Ferdinand I, Archduke of Austria and King of Hungary and Bohemia and his Hungarian followers against the Ottoman Turks. Following the Battle of Mohács, the Ottomans were forced to withdraw as events elsewhere in their now massive Empire required the Sultan's attention. Seizing upon their absence, Ferdinand I attempted to enforce his claim as King of Hungary. In 1527 he drove back the Ottoman vassal John Zápolya and captured Buda, Győr, Komárom, Esztergom, and Székesfehérvár by 1528. Meanwhile, the Ottoman Sultan, Suleiman the Magnificent, took no action at this stage despite the pleas of his vassal.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1049956, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Ottoman–Habsburg wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1527,
+    "end": 1528
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-habsburg-wars"
+}

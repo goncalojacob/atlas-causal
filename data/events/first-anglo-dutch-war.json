@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-anglo-dutch-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1151913",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "First Anglo-Dutch War",
+    "pt": "Primeira Guerra Anglo-Holandesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1151913"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Anglo-Dutch War\", revision 1375831063"
+    }
+  ],
+  "title": "First Anglo-Dutch War",
+  "summary": "The English Wikipedia article \"First Anglo-Dutch War\", at revision 1375831063, opens: \"The First Anglo-Dutch War, or First Dutch War, was a naval conflict between the Commonwealth of England and the Dutch Republic. Largely caused by disputes over trade, it began with English attacks on Dutch merchant shipping, but expanded to vast fleet actions. Despite a series of victories in 1652 and 1653, the Commonwealth was unable to blockade Dutch trade, although English privateers inflicted serious losses on Dutch merchant shipping.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1151913, imported by tools/import/wikidata.mjs. The item's own description reads \"war between England and Netherlands (1652-1654)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1652,
+    "end": 1654
+  },
+  "place": "english-channel",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-dutch-wars"
+}

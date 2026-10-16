@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "grand-pre-nova-scotia",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1100749",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Grand-Pré, Nova Scotia",
+    "pt": "Grand-Pré (Nova Escócia)"
+  },
+  "sources": [],
+  "names": [
+    "Grand-Pré",
+    "Grand-Pré (Nova Escócia)",
+    "Grand-Pré, Nova Scotia"
+  ],
+  "where": {
+    "lon": -64.309167,
+    "lat": 45.108889,
+    "precision": "city",
+    "label": "Grand-Pré, Nova Scotia"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
