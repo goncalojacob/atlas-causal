@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "kabul-expedition-1842",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871360",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Kabul Expedition (1842)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871360"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kabul Expedition (1842)\", revision 1380371277"
+    }
+  ],
+  "title": "Kabul Expedition (1842)",
+  "summary": "The English Wikipedia article \"Kabul Expedition (1842)\", at revision 1380371277, opens: \"The Kabul Expedition was a punitive campaign undertaken by the British against the Afghans following the disastrous retreat from Kabul. Two British and East India Company armies forced through the Khyber Pass and advanced on the Afghan capital from Kandahar and Jalalabad to avenge the complete annihilation of the British-Indian military-civilian column in January 1842.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871360, imported by tools/import/wikidata.mjs. The item's own description reads \"1842 punitive campaign undertaken by the British following the disastrous retreat from Kabul\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1842,
+    "end": 1842,
+    "date": "1842-08",
+    "endDate": "1842-10"
+  },
+  "place": "kabul",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-anglo-afghan-war"
+}

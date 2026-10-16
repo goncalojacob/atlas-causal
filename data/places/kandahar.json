@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "kandahar",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q45604",
+  "sitelinks": {
+    "count": 96,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Kandahar",
+    "pt": "Candaar"
+  },
+  "sources": [],
+  "names": [
+    "Kandahar",
+    "Candaar"
+  ],
+  "where": {
+    "lon": 65.71588,
+    "lat": 31.62068,
+    "precision": "city",
+    "label": "Kandahar"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

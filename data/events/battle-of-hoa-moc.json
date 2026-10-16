@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-hoa-moc",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871238",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Hòa Mộc"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871238"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Hòa Mộc\", revision 1370265902"
+    }
+  ],
+  "title": "Battle of Hòa Mộc",
+  "summary": "The English Wikipedia article \"Battle of Hòa Mộc\", at revision 1370265902, opens: \"The Battle of Hòa Mộc was the most fiercely fought action of the Sino-French War. At heavy cost, Colonel Giovanninelli's 1st Brigade of the Tonkin Expeditionary Corps defeated forces of the Black Flag and Yunnan Armies blocking the way to the besieged French post of Tuyên Quang.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871238, imported by tools/import/wikidata.mjs. The item's own description reads \"1885 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-03-02"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "sino-french-war"
+}

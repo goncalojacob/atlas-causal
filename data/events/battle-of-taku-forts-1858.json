@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-taku-forts-1858",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4087331",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Taku Forts (1858)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4087331"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Taku Forts (1858)\", revision 1370590408"
+    }
+  ],
+  "title": "Battle of Taku Forts (1858)",
+  "summary": "The English Wikipedia article \"Battle of Taku Forts (1858)\", at revision 1370590408, opens: \"The First Battle of Taku Forts was the first attack of the Anglo-French alliance against the Taku Forts along the Hai River in Tianjin, China, on 20 May 1858, during the Second Opium War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4087331, imported by tools/import/wikidata.mjs. The item's own description reads \"1858 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1858,
+    "date": "1858-05-20"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "second-opium-war"
+}

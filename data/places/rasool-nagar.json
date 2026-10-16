@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "rasool-nagar",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7295155",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Rasool Nagar"
+  },
+  "sources": [],
+  "names": [
+    "Rasool Nagar"
+  ],
+  "where": {
+    "lon": 74.9,
+    "lat": 32.18,
+    "precision": "city",
+    "label": "Rasool Nagar"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-cau-giay-1883",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870828",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Cầu Giấy (1883)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870828"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cầu Giấy (1883)\", revision 1370438104"
+    }
+  ],
+  "title": "Battle of Cầu Giấy (1883)",
+  "summary": "The English Wikipedia article \"Battle of Cầu Giấy (1883)\", at revision 1370438104, opens: \"The Battle of Cầu Giấy or Paper Bridge, fought on 19 May 1883, was one of the numerous clashes during the Tonkin Campaign (1883–86) between the French and the Black Flags. A small French force under the command of capitaine de vaisseau Henri Rivière attacked a strong Black Flag defensive position near the village of Cầu Giấy a few miles to the west of Hanoi, known to the French as Paper Bridge. After initial successes, the French were eventually enveloped on both wings, and were only with difficulty able to regroup and fall back to Hanoi. Rivière and several other senior officers were killed in the action.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870828, imported by tools/import/wikidata.mjs. The item's own description reads \"1883 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1883,
+    "end": 1883,
+    "date": "1883-05-19"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "tonkin-campaign"
+}
