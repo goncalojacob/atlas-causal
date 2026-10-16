@@ -3597,15 +3597,6 @@
         }
       ]
     },
-    "spanish-american-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
     "spanish-american-war-1898": {
       "from": "git",
       "versions": [
