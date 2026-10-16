@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "khmelnytsky-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q641479",
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Khmelnytsky Uprising",
+    "pt": "Revolta de Khmelnitski"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q641479"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Khmelnytsky Uprising\", revision 1379808140"
+    }
+  ],
+  "title": "Khmelnytsky Uprising",
+  "summary": "The English Wikipedia article \"Khmelnytsky Uprising\", at revision 1379808140, opens: \"The Khmelnytsky Uprising, also known as the Cossack–Polish War, Khmelnytsky insurrection, Cossack Revolution, or, in Ukraine, as the National Liberation War, was a successful Cossack rebellion with elements of a religious war that took place between 1648 and 1657 in the eastern territories of the Polish–Lithuanian Commonwealth. Originating in Dnieper Ukraine, the uprising resulted in a Cossack victory and led to the creation of the Cossack Hetmanate. Under the command of Cossack Hetman Bohdan Khmelnytsky, the Zaporozhian Cossacks, supported by the rebelling Ruthenian peasantry and initially allied with the Crimean Khanate, fought against the Commonwealth's forces. The war was accompanied by mass atrocities committed by Cossacks against prisoners of war and the civilian population, especially Poles, Jews, Roman Catholic and Ruthenian Uniate clergy, as well as reprisals by the Polish szlachta and army, especially Jeremi Wiśniowiecki's troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q641479, imported by tools/import/wikidata.mjs. The item's own description reads \"Cossack rebellion within the Polish-Lithuanian Commonwealth in 1648–1657\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1648,
+    "end": 1657
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
