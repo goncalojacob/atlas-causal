@@ -351,6 +351,15 @@
         }
       ]
     },
+    "aceh-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "action-of-1-august-1801": {
       "from": "git",
       "versions": [
@@ -397,6 +406,15 @@
       ]
     },
     "anglo-japanese-friendship-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "anglo-nepalese-war": {
       "from": "git",
       "versions": [
         {
@@ -632,6 +650,15 @@
         }
       ]
     },
+    "battle-of-blood-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-buceo": {
       "from": "git",
       "versions": [
@@ -704,6 +731,15 @@
       ]
     },
     "battle-of-coatit": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-constantine": {
       "from": "git",
       "versions": [
         {
@@ -945,6 +981,15 @@
         }
       ]
     },
+    "battle-of-macta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-magersfontein": {
       "from": "git",
       "versions": [
@@ -1092,6 +1137,15 @@
       ]
     },
     "battle-of-sidi-brahim": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-sikkak": {
       "from": "git",
       "versions": [
         {
@@ -1562,6 +1616,15 @@
         }
       ]
     },
+    "cochinchina-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "colombian-war-of-independence": {
       "from": "git",
       "versions": [
@@ -1736,6 +1799,15 @@
         }
       ]
     },
+    "dogra-tibetan-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "dominican-war-of-independence": {
       "from": "git",
       "versions": [
@@ -1802,6 +1874,15 @@
         }
       ]
     },
+    "dungan-revolt-1862-1877": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "ecuadorian-war-of-independence": {
       "from": "git",
       "versions": [
@@ -1825,6 +1906,24 @@
             "when"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "egyptian-ottoman-war-1831-1833": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "egyptian-ottoman-war-1839-1841": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -2456,6 +2555,15 @@
         }
       ]
     },
+    "invasion-of-java-1811": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "italian-pacification-campaigns-in-somalia": {
       "from": "git",
       "versions": [
@@ -2499,6 +2607,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "java-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -2641,6 +2758,15 @@
         }
       ]
     },
+    "nepal-sikh-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "new-imperialism": {
       "from": "git",
       "versions": [
@@ -2695,6 +2821,15 @@
       ]
     },
     "panjdeh-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "panthay-rebellion": {
       "from": "git",
       "versions": [
         {
@@ -2927,6 +3062,15 @@
         }
       ]
     },
+    "qing-reconquest-of-xinjiang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "rabih-war": {
       "from": "git",
       "versions": [
@@ -3015,6 +3159,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "second-anglo-burmese-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -3393,6 +3546,15 @@
         }
       ]
     },
+    "slachter-s-nek-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "slave-trade-act-1807": {
       "from": "git",
       "versions": [
@@ -3613,6 +3775,15 @@
         }
       ]
     },
+    "third-anglo-maratha-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "thousand-days-war": {
       "from": "git",
       "versions": [
@@ -3660,6 +3831,15 @@
       ]
     },
     "tobacco-protest": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "tonkin-campaign": {
       "from": "git",
       "versions": [
         {

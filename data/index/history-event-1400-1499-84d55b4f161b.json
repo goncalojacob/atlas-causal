@@ -62,6 +62,24 @@
         }
       ]
     },
+    "fall-of-constantinople": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "hussite-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "indigenous-depopulation-of-the-greater-antilles": {
       "from": "git",
       "versions": [
@@ -376,6 +394,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "wars-of-the-roses": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     }

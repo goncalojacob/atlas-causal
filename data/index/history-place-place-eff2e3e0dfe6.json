@@ -2416,6 +2416,15 @@
         }
       ]
     },
+    "constantinople": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "corbie": {
       "from": "git",
       "versions": [
@@ -5182,6 +5191,15 @@
         }
       ]
     },
+    "java": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "jean-rabel": {
       "from": "git",
       "versions": [
@@ -6402,6 +6420,15 @@
         }
       ]
     },
+    "lower-myanmar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "luanda": {
       "from": "git",
       "versions": [
@@ -6608,6 +6635,15 @@
         }
       ]
     },
+    "macta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "madrid": {
       "from": "git",
       "versions": [
@@ -6638,6 +6674,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "maharashtra": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -11175,6 +11220,15 @@
         }
       ]
     },
+    "sumatra": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "sunda-strait": {
       "from": "git",
       "versions": [
@@ -11677,6 +11731,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "tonkin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

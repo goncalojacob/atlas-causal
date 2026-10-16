@@ -10940,6 +10940,12 @@
     },
     {
       "dissent": false,
+      "id": "aceh-war",
+      "kind": "event",
+      "locator": "\"Aceh War\", revision 1371860816"
+    },
+    {
+      "dissent": false,
       "id": "action-at-tamanana-9-september-1645",
       "kind": "event",
       "locator": "\"Insurrection of Pernambuco\", revision 1370623843, § The war"
@@ -11225,6 +11231,12 @@
       "id": "anglo-japanese-friendship-treaty",
       "kind": "event",
       "locator": "\"Anglo-Japanese Friendship Treaty\", revision 1316160821"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-nepalese-war",
+      "kind": "event",
+      "locator": "\"Anglo-Nepalese War\", revision 1378681847"
     },
     {
       "dissent": false,
@@ -11672,6 +11684,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-antukyah",
+      "kind": "event",
+      "locator": "\"Battle of Antukyah\", revision 1370106857"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ap-bac",
       "kind": "event",
       "locator": "\"Battle of Ap Bac\", revision 1370432225"
@@ -11741,6 +11759,12 @@
       "id": "battle-of-bin-jawad",
       "kind": "event",
       "locator": "\"Battle of Bin Jawad\", revision 1375769079"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-blood-river",
+      "kind": "event",
+      "locator": "\"Battle of Blood River\", revision 1370434619"
     },
     {
       "dissent": false,
@@ -12011,6 +12035,12 @@
       "id": "battle-of-colhuacatonco",
       "kind": "event",
       "locator": "\"Battle of Colhuacatonco\", revision 1370437482"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-constantine",
+      "kind": "event",
+      "locator": "\"Battle of Constantine\", revision 1380455244"
     },
     {
       "dissent": false,
@@ -12830,6 +12860,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-macta",
+      "kind": "event",
+      "locator": "\"Battle of Macta\", revision 1370491897"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-madras",
       "kind": "event",
       "locator": "\"Battle of Madras\", revision 1370448492"
@@ -13637,6 +13673,12 @@
       "id": "battle-of-sidi-brahim",
       "kind": "event",
       "locator": "\"Battle of Sidi Brahim\", revision 1375600709"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sikkak",
+      "kind": "event",
+      "locator": "\"Battle of Sikkak\", revision 1370589378"
     },
     {
       "dissent": false,
@@ -14978,6 +15020,12 @@
     },
     {
       "dissent": false,
+      "id": "cochinchina-campaign",
+      "kind": "event",
+      "locator": "\"Cochinchina campaign\", revision 1370611754"
+    },
+    {
+      "dissent": false,
       "id": "cold-war",
       "kind": "event",
       "locator": "\"Cold War\", revision 1379050893"
@@ -15410,6 +15458,12 @@
     },
     {
       "dissent": false,
+      "id": "dogra-tibetan-war",
+      "kind": "event",
+      "locator": "\"Dogra–Tibetan war\", revision 1379364891"
+    },
+    {
+      "dissent": false,
       "id": "dominican-war-of-independence",
       "kind": "event",
       "locator": "\"Dominican War of Independence\", revision 1379811245"
@@ -15443,6 +15497,12 @@
       "id": "dummer-s-war",
       "kind": "event",
       "locator": "\"Dummer's War\", revision 1375086224"
+    },
+    {
+      "dissent": false,
+      "id": "dungan-revolt-1862-1877",
+      "kind": "event",
+      "locator": "\"Dungan Revolt (1862–1877)\", revision 1379545905"
     },
     {
       "dissent": false,
@@ -15545,6 +15605,18 @@
       "id": "egypt-israel-peace-treaty",
       "kind": "event",
       "locator": "\"Egypt–Israel peace treaty\", revision 1368884596"
+    },
+    {
+      "dissent": false,
+      "id": "egyptian-ottoman-war-1831-1833",
+      "kind": "event",
+      "locator": "\"Egyptian–Ottoman War (1831–1833)\", revision 1379023146"
+    },
+    {
+      "dissent": false,
+      "id": "egyptian-ottoman-war-1839-1841",
+      "kind": "event",
+      "locator": "\"Egyptian–Ottoman War (1839–1841)\", revision 1379458367"
     },
     {
       "dissent": false,
@@ -15689,6 +15761,12 @@
       "id": "fall-of-agadir",
       "kind": "event",
       "locator": "\"Fall of Agadir\", revision 1370617677"
+    },
+    {
+      "dissent": false,
+      "id": "fall-of-constantinople",
+      "kind": "event",
+      "locator": "\"Fall of Constantinople\", revision 1380471388"
     },
     {
       "dissent": false,
@@ -16526,6 +16604,12 @@
     },
     {
       "dissent": false,
+      "id": "hussite-wars",
+      "kind": "event",
+      "locator": "\"Hussite Wars\", revision 1380410254"
+    },
+    {
+      "dissent": false,
       "id": "iberian-pact",
       "kind": "event",
       "locator": "\"Iberian Pact\", revision 1368371149"
@@ -16709,6 +16793,12 @@
       "id": "invasion-of-georgia-1742",
       "kind": "event",
       "locator": "\"Invasion of Georgia (1742)\", revision 1370623973"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-java-1811",
+      "kind": "event",
+      "locator": "\"Invasion of Java (1811)\", revision 1370624024"
     },
     {
       "dissent": false,
@@ -16931,6 +17021,12 @@
       "id": "jaragua-massacre",
       "kind": "event",
       "locator": "\"Jaragua massacre\", revision 1365112001"
+    },
+    {
+      "dissent": false,
+      "id": "java-war",
+      "kind": "event",
+      "locator": "\"Java War\", revision 1380025125"
     },
     {
       "dissent": false,
@@ -17570,6 +17666,12 @@
     },
     {
       "dissent": false,
+      "id": "nepal-sikh-war",
+      "kind": "event",
+      "locator": "\"Nepal–Sikh war\", revision 1380249172"
+    },
+    {
+      "dissent": false,
       "id": "new-deal",
       "kind": "event",
       "locator": "\"New Deal\", revision 1379744402"
@@ -17954,6 +18056,12 @@
     },
     {
       "dissent": false,
+      "id": "panthay-rebellion",
+      "kind": "event",
+      "locator": "\"Panthay Rebellion\", revision 1372647246"
+    },
+    {
+      "dissent": false,
       "id": "paraguay-campaign",
       "kind": "event",
       "locator": "\"Paraguay campaign\", revision 1374608769"
@@ -18269,6 +18377,12 @@
       "id": "pukkwan-campaign",
       "kind": "event",
       "locator": "\"Pukkwan campaign\", revision 1370705182"
+    },
+    {
+      "dissent": false,
+      "id": "qing-reconquest-of-xinjiang",
+      "kind": "event",
+      "locator": "\"Qing reconquest of Xinjiang\", revision 1370705363"
     },
     {
       "dissent": false,
@@ -18707,6 +18821,12 @@
       "id": "second-anglo-afghan-war",
       "kind": "event",
       "locator": "\"Second Anglo-Afghan War\", revision 1378561136"
+    },
+    {
+      "dissent": false,
+      "id": "second-anglo-burmese-war",
+      "kind": "event",
+      "locator": "\"Second Anglo-Burmese War\", revision 1370787401"
     },
     {
       "dissent": false,
@@ -19796,6 +19916,12 @@
     },
     {
       "dissent": false,
+      "id": "slachter-s-nek-rebellion",
+      "kind": "event",
+      "locator": "\"Slachter's Nek Rebellion\", revision 1370747569"
+    },
+    {
+      "dissent": false,
       "id": "slave-trade-act-1807",
       "kind": "event",
       "locator": "\"Slave Trade Act 1807\", revision 1373209565"
@@ -20366,6 +20492,12 @@
     },
     {
       "dissent": false,
+      "id": "third-anglo-maratha-war",
+      "kind": "event",
+      "locator": "\"Third Anglo-Maratha War\", revision 1370750299"
+    },
+    {
+      "dissent": false,
       "id": "third-anglo-mysore-war",
       "kind": "event",
       "locator": "\"Third Anglo-Mysore War\", revision 1370750303"
@@ -20447,6 +20579,12 @@
       "id": "tobacco-protest",
       "kind": "event",
       "locator": "\"Tobacco Protest\", revision 1361415065"
+    },
+    {
+      "dissent": false,
+      "id": "tonkin-campaign",
+      "kind": "event",
+      "locator": "\"Tonkin campaign\", revision 1377511705"
     },
     {
       "dissent": false,
@@ -21074,6 +21212,12 @@
     },
     {
       "dissent": false,
+      "id": "wars-of-the-roses",
+      "kind": "event",
+      "locator": "\"Wars of the Roses\", revision 1375993311"
+    },
+    {
+      "dissent": false,
       "id": "warsaw-ghetto-uprising",
       "kind": "event",
       "locator": "\"Warsaw Ghetto Uprising\", revision 1373044103"
@@ -21143,6 +21287,12 @@
       "id": "wuchang-uprising",
       "kind": "event",
       "locator": "\"Wuchang Uprising\", revision 1371641231"
+    },
+    {
+      "dissent": false,
+      "id": "xhosa-wars",
+      "kind": "event",
+      "locator": "\"Xhosa Wars\", revision 1370751094"
     },
     {
       "dissent": false,

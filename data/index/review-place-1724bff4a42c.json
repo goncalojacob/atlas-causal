@@ -4382,7 +4382,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 5,
+      "degree": 6,
       "id": "central-europe",
       "kind": "place",
       "names": [
@@ -5274,7 +5274,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "constantine-algeria",
       "kind": "place",
       "names": [
@@ -5282,6 +5282,34 @@
         "Constantina",
         "Constantine, Algeria",
         "Constantina (Argélia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "constantinople",
+      "kind": "place",
+      "names": [
+        "Constantinople",
+        "Constantinopla"
       ],
       "origin": {
         "tool": "wikidata"
@@ -11390,6 +11418,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "java",
+      "kind": "place",
+      "names": [
+        "Java"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "jean-rabel",
@@ -13557,7 +13612,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "levant",
       "kind": "place",
       "names": [
@@ -13908,6 +13963,35 @@
         "Low Countries",
         "Países Baixos",
         "Países Baixos (região)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "lower-myanmar",
+      "kind": "place",
+      "names": [
+        "Lower Burma",
+        "Baixa Birmânia",
+        "Lower Myanmar"
       ],
       "origin": {
         "tool": "wikidata"
@@ -14282,6 +14366,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "macta",
+      "kind": "place",
+      "names": [
+        "Macta"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -14347,6 +14458,34 @@
       "names": [
         "Maghreb",
         "Magrebe"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "maharashtra",
+      "kind": "place",
+      "names": [
+        "Maharashtra",
+        "Maarastra"
       ],
       "origin": {
         "tool": "wikidata"
@@ -20111,7 +20250,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "qing-dynasty",
       "kind": "place",
       "names": [
@@ -23396,7 +23535,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 2,
       "id": "southern-africa",
       "kind": "place",
       "names": [
@@ -24170,6 +24309,33 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q2890073, Battle of Suipacha, read on 2026-09-24; Suipacha itself has no item this pass could reach. The record carries no `wikidata` key for that reason: a place claiming to be the battle would be a worse record than one claiming nothing.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "sumatra",
+      "kind": "place",
+      "names": [
+        "Sumatra"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -25009,7 +25175,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "tibet-q17252",
       "kind": "place",
       "names": [
@@ -25366,6 +25532,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "tonkin",
+      "kind": "place",
+      "names": [
+        "Tonkin",
+        "Tonquim"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

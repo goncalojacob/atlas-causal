@@ -2516,6 +2516,12 @@
     },
     {
       "dissent": false,
+      "id": "aceh-war",
+      "kind": "event",
+      "locator": "Q277450"
+    },
+    {
+      "dissent": false,
       "id": "action-at-tamanana-9-september-1645",
       "kind": "event",
       "locator": "Q121365322"
@@ -2849,6 +2855,12 @@
       "id": "anglo-japanese-friendship-treaty",
       "kind": "event",
       "locator": "Q1342523"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-nepalese-war",
+      "kind": "event",
+      "locator": "Q195378"
     },
     {
       "dissent": false,
@@ -3350,6 +3362,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-antukyah",
+      "kind": "event",
+      "locator": "Q2887867"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ap-bac",
       "kind": "event",
       "locator": "Q280468"
@@ -3425,6 +3443,12 @@
       "id": "battle-of-bin-jawad",
       "kind": "event",
       "locator": "Q588059"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-blood-river",
+      "kind": "event",
+      "locator": "Q1392699"
     },
     {
       "dissent": false,
@@ -3701,6 +3725,12 @@
       "id": "battle-of-colhuacatonco",
       "kind": "event",
       "locator": "Q112811996"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-constantine",
+      "kind": "event",
+      "locator": "Q3485860"
     },
     {
       "dissent": false,
@@ -4526,6 +4556,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-macta",
+      "kind": "event",
+      "locator": "Q621362"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-madras",
       "kind": "event",
       "locator": "Q3063400"
@@ -5327,6 +5363,12 @@
       "id": "battle-of-sidi-brahim",
       "kind": "event",
       "locator": "Q2889977"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sikkak",
+      "kind": "event",
+      "locator": "Q2890573"
     },
     {
       "dissent": false,
@@ -6674,6 +6716,12 @@
     },
     {
       "dissent": false,
+      "id": "cochinchina-campaign",
+      "kind": "event",
+      "locator": "Q2935371"
+    },
+    {
+      "dissent": false,
       "id": "cold-war",
       "kind": "event",
       "locator": "Q8683"
@@ -7094,6 +7142,12 @@
     },
     {
       "dissent": false,
+      "id": "dogra-tibetan-war",
+      "kind": "event",
+      "locator": "Q7524776"
+    },
+    {
+      "dissent": false,
       "id": "dominican-war-of-independence",
       "kind": "event",
       "locator": "Q3439047"
@@ -7121,6 +7175,12 @@
       "id": "dummer-s-war",
       "kind": "event",
       "locator": "Q1265114"
+    },
+    {
+      "dissent": false,
+      "id": "dungan-revolt-1862-1877",
+      "kind": "event",
+      "locator": "Q889879"
     },
     {
       "dissent": false,
@@ -7223,6 +7283,18 @@
       "id": "egypt-israel-peace-treaty",
       "kind": "event",
       "locator": "Q1129412"
+    },
+    {
+      "dissent": false,
+      "id": "egyptian-ottoman-war-1831-1833",
+      "kind": "event",
+      "locator": "Q2584439"
+    },
+    {
+      "dissent": false,
+      "id": "egyptian-ottoman-war-1839-1841",
+      "kind": "event",
+      "locator": "Q2600326"
     },
     {
       "dissent": false,
@@ -7373,6 +7445,12 @@
       "id": "fall-of-agadir",
       "kind": "event",
       "locator": "Q5432140"
+    },
+    {
+      "dissent": false,
+      "id": "fall-of-constantinople",
+      "kind": "event",
+      "locator": "Q160077"
     },
     {
       "dissent": false,
@@ -8216,6 +8294,12 @@
     },
     {
       "dissent": false,
+      "id": "hussite-wars",
+      "kind": "event",
+      "locator": "Q478301"
+    },
+    {
+      "dissent": false,
       "id": "iberian-pact",
       "kind": "event",
       "locator": "Q884821"
@@ -8381,6 +8465,12 @@
       "id": "invasion-of-georgia-1742",
       "kind": "event",
       "locator": "Q6059634"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-java-1811",
+      "kind": "event",
+      "locator": "Q918132"
     },
     {
       "dissent": false,
@@ -8627,6 +8717,12 @@
       "id": "jaragua-massacre",
       "kind": "event",
       "locator": "Q6159472"
+    },
+    {
+      "dissent": false,
+      "id": "java-war",
+      "kind": "event",
+      "locator": "Q2045508"
     },
     {
       "dissent": false,
@@ -9338,6 +9434,12 @@
     },
     {
       "dissent": false,
+      "id": "nepal-sikh-war",
+      "kind": "event",
+      "locator": "Q27963620"
+    },
+    {
+      "dissent": false,
       "id": "new-deal",
       "kind": "event",
       "locator": "Q186356"
@@ -9698,6 +9800,12 @@
     },
     {
       "dissent": false,
+      "id": "panthay-rebellion",
+      "kind": "event",
+      "locator": "Q1230569"
+    },
+    {
+      "dissent": false,
       "id": "paraguay-campaign",
       "kind": "event",
       "locator": "Q7134668"
@@ -10019,6 +10127,12 @@
       "id": "pukkwan-campaign",
       "kind": "event",
       "locator": "Q12599044"
+    },
+    {
+      "dissent": false,
+      "id": "qing-reconquest-of-xinjiang",
+      "kind": "event",
+      "locator": "Q6140819"
     },
     {
       "dissent": false,
@@ -10475,6 +10589,12 @@
       "id": "second-anglo-afghan-war",
       "kind": "event",
       "locator": "Q233507"
+    },
+    {
+      "dissent": false,
+      "id": "second-anglo-burmese-war",
+      "kind": "event",
+      "locator": "Q233500"
     },
     {
       "dissent": false,
@@ -11606,6 +11726,12 @@
     },
     {
       "dissent": false,
+      "id": "slachter-s-nek-rebellion",
+      "kind": "event",
+      "locator": "Q5010928"
+    },
+    {
+      "dissent": false,
       "id": "slovak-hungarian-war",
       "kind": "event",
       "locator": "Q177109"
@@ -11948,6 +12074,12 @@
     },
     {
       "dissent": false,
+      "id": "third-anglo-maratha-war",
+      "kind": "event",
+      "locator": "Q617210"
+    },
+    {
+      "dissent": false,
       "id": "third-anglo-mysore-war",
       "kind": "event",
       "locator": "Q617350"
@@ -12041,6 +12173,12 @@
       "id": "tobacco-protest",
       "kind": "event",
       "locator": "Q2302690"
+    },
+    {
+      "dissent": false,
+      "id": "tonkin-campaign",
+      "kind": "event",
+      "locator": "Q286655"
     },
     {
       "dissent": false,
@@ -12770,6 +12908,12 @@
     },
     {
       "dissent": false,
+      "id": "wars-of-the-roses",
+      "kind": "event",
+      "locator": "Q127751"
+    },
+    {
+      "dissent": false,
       "id": "warsaw-ghetto-uprising",
       "kind": "event",
       "locator": "Q160161"
@@ -12839,6 +12983,12 @@
       "id": "wuchang-uprising",
       "kind": "event",
       "locator": "Q339291"
+    },
+    {
+      "dissent": false,
+      "id": "xhosa-wars",
+      "kind": "event",
+      "locator": "Q582594"
     },
     {
       "dissent": false,
