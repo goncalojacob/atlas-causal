@@ -7038,6 +7038,43 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-062",
+      "writer": "A",
+      "fired": "2026-10-16T23:24Z",
+      "status": "written",
+      "written": {
+        "event": "polish-ottoman-war-1683-1699",
+        "edges": [],
+        "place": "podolia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-064",
+      "writer": "A",
+      "fired": "2026-10-16T23:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1049956 is already the event \"hungarian-campaign-of-1527-1528\""
+    },
+    {
+      "id": "2026-10-16-asia-191",
+      "writer": "A",
+      "fired": "2026-10-16T23:24Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-venetian-war-1570-1573",
+        "edges": [],
+        "place": "cyprus-island"
+      },
+      "refusals": []
     }
   ]
 }
