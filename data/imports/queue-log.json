@@ -3209,6 +3209,134 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-020",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-shimbra-kure",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-021",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-coatit",
+        "edges": [],
+        "place": "quatit-eritrea"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-022",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-mekelle",
+        "edges": [],
+        "place": "mekelle"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-023",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q111699632: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-africa-024",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "bombardment-of-alexandria",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-025",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-isly",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-026",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q20379760 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q20379760: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-16-asia-027",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "panjdeh-incident",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-028",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "tobacco-protest",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-029",
+      "writer": "A",
+      "fired": "2026-10-16T03:21Z",
+      "status": "written",
+      "written": {
+        "event": "first-herat-war",
+        "edges": [],
+        "place": "herat"
+      },
+      "refusals": []
     }
   ]
 }

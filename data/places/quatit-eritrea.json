@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "quatit-eritrea",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q22082405",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Quatit, Eritrea"
+  },
+  "sources": [],
+  "names": [
+    "Quatit",
+    "Quatit, Eritrea"
+  ],
+  "where": {
+    "lon": 39.220555555555556,
+    "lat": 14.813888888888888,
+    "precision": "city",
+    "label": "Quatit, Eritrea"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

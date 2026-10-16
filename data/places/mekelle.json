@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mekelle",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q332319",
+  "sitelinks": {
+    "count": 64,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Mekelle",
+    "pt": "Mek'ele"
+  },
+  "sources": [],
+  "names": [
+    "Mekele",
+    "Mek'ele",
+    "Mekelle"
+  ],
+  "where": {
+    "lon": 39.47694444444444,
+    "lat": 13.496944444444445,
+    "precision": "city",
+    "label": "Mekelle"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
