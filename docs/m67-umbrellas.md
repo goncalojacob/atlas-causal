@@ -1861,3 +1861,7 @@ Writer A imported it from the planner's queue as item `2026-10-15-europe-081`, r
 ## Writer A, 2026-10-16: `battle-of-isandlwana`, filed under `anglo-zulu-war` with neither an actor nor a place
 
 Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-007`, rank `child-of:anglo-zulu-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-16: `battle-of-intombe`, filed under `anglo-zulu-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-16-africa-010`, rank `child-of:anglo-zulu-war`. Its span and its subject put it inside the umbrella.

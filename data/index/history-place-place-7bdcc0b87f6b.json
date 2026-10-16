@@ -2371,6 +2371,15 @@
         }
       ]
     },
+    "constantine-algeria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "corbie": {
       "from": "git",
       "versions": [
@@ -2748,6 +2757,15 @@
             "summary"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "derna-libya": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -10276,6 +10294,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "sidi-brahim": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

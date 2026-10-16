@@ -3068,6 +3068,147 @@
         "place": "ulundi"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-010",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-intombe",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-011",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q131926873 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q131926873: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-16-africa-012",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q132156616 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q132156616: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-16-africa-013",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q134488493 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q134488493: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-16-africa-014",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "invasion-of-algiers-1830",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-015",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-constantine",
+        "edges": [],
+        "place": "constantine-algeria"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-016",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sidi-brahim",
+        "edges": [],
+        "place": "sidi-brahim"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-017",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "mokrani-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-018",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-derna-1805",
+        "edges": [],
+        "place": "derna-libya"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-019",
+      "writer": "A",
+      "fired": "2026-10-16T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-tripoli-harbor",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

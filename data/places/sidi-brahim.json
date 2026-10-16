@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "sidi-brahim",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1650068",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Sidi Brahim",
+    "pt": "Sidi Brahim"
+  },
+  "sources": [],
+  "names": [
+    "gambetta",
+    "Sidi Brahim"
+  ],
+  "where": {
+    "lon": -0.5675,
+    "lat": 35.260556,
+    "precision": "city",
+    "label": "Sidi Brahim"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

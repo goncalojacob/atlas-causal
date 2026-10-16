@@ -694,6 +694,15 @@
         }
       ]
     },
+    "battle-of-derna-1805": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-domokos": {
       "from": "git",
       "versions": [
@@ -762,6 +771,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-intombe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -948,6 +966,15 @@
       ]
     },
     "battle-of-shaykan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-sidi-brahim": {
       "from": "git",
       "versions": [
         {
@@ -2204,6 +2231,15 @@
         }
       ]
     },
+    "invasion-of-algiers-1830": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "italian-pacification-campaigns-in-somalia": {
       "from": "git",
       "versions": [
@@ -2359,6 +2395,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "mokrani-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -2799,6 +2844,15 @@
         }
       ]
     },
+    "second-battle-of-tripoli-harbor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "second-boer-war": {
       "from": "git",
       "versions": [
@@ -2984,6 +3038,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-constantine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

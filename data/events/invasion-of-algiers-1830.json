@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "invasion-of-algiers-1830",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3317226",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Invasion of Algiers (1830)",
+    "pt": "Invasão francesa de Argel"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3317226"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of Algiers (1830)\", revision 1370623904"
+    }
+  ],
+  "title": "Invasion of Algiers (1830)",
+  "summary": "The English Wikipedia article \"Invasion of Algiers (1830)\", at revision 1370623904, opens: \"The invasion of Algiers was a large-scale military operation by which the Kingdom of France, ruled by King Charles X, invaded and conquered the Regency of Algiers. A diplomatic incident in 1827, the so-called 'Fan Affair', served as a pretext to initiate a blockade against the port of Algiers. After three years of standstill and a more severe incident in which a French ship carrying an ambassador to the dey with a proposal for negotiations was fired upon, the French determined that more forceful action was required. Charles X also sought to divert attention from turbulent French domestic affairs which culminated with his deposition during the later stages of the invasion in the July Revolution.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3317226, imported by tools/import/wikidata.mjs. The item's own description reads \"1830 French military campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1830,
+    "end": 1830,
+    "date": "1830-06-14",
+    "endDate": "1830-07-07"
+  },
+  "place": "algiers-q3561",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-conquest-of-algeria"
+}

@@ -3746,6 +3746,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-derna-1805",
+      "kind": "event",
+      "locator": "Q2888407"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dessau-bridge",
       "kind": "event",
       "locator": "Q677121"
@@ -4127,6 +4133,12 @@
       "id": "battle-of-inchon",
       "kind": "event",
       "locator": "Q483039"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-intombe",
+      "kind": "event",
+      "locator": "Q640194"
     },
     {
       "dissent": false,
@@ -5225,6 +5237,12 @@
       "id": "battle-of-shubra-khit",
       "kind": "event",
       "locator": "Q2888305"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sidi-brahim",
+      "kind": "event",
+      "locator": "Q2889977"
     },
     {
       "dissent": false,
@@ -8192,6 +8210,12 @@
     },
     {
       "dissent": false,
+      "id": "invasion-of-algiers-1830",
+      "kind": "event",
+      "locator": "Q3317226"
+    },
+    {
+      "dissent": false,
       "id": "invasion-of-cuba-1741",
       "kind": "event",
       "locator": "Q4872309"
@@ -8969,6 +8993,12 @@
       "id": "mohawk-valley-raid",
       "kind": "event",
       "locator": "Q6893841"
+    },
+    {
+      "dissent": false,
+      "id": "mokrani-revolt",
+      "kind": "event",
+      "locator": "Q3458306"
     },
     {
       "dissent": false,
@@ -10376,6 +10406,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-tripoli-harbor",
+      "kind": "event",
+      "locator": "Q6135223"
+    },
+    {
+      "dissent": false,
       "id": "second-boer-war",
       "kind": "event",
       "locator": "Q215112"
@@ -10727,6 +10763,12 @@
       "id": "siege-of-concepcion",
       "kind": "event",
       "locator": "Q432297"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-constantine",
+      "kind": "event",
+      "locator": "Q636772"
     },
     {
       "dissent": false,
