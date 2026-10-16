@@ -3459,6 +3459,126 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-041",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tamai",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-042",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ginnis",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-043",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "first-and-second-battles-of-el-teb",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-044",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-agordat",
+        "edges": [],
+        "place": "agordat"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-045",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-agordat",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-046",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kassala",
+        "edges": [],
+        "place": "kassala"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-047",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-suakin",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-048",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-aba",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-049",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-talana-hill",
+        "edges": [],
+        "place": "dundee-kwazulu-natal"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-050",
+      "writer": "A",
+      "fired": "2026-10-16T05:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-elandslaagte",
+        "edges": [],
+        "place": "elandslaagte"
+      },
+      "refusals": []
     }
   ]
 }

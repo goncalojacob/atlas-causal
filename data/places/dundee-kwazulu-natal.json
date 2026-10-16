@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "dundee-kwazulu-natal",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1265538",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Dundee, KwaZulu-Natal"
+  },
+  "sources": [],
+  "names": [
+    "Dundee",
+    "Dundee, KwaZulu-Natal"
+  ],
+  "where": {
+    "lon": 30.233611111111,
+    "lat": -28.166666666667,
+    "precision": "city",
+    "label": "Dundee, KwaZulu-Natal"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

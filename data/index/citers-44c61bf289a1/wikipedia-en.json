@@ -11534,6 +11534,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-aba",
+      "kind": "event",
+      "locator": "\"Battle of Aba\", revision 1370105802"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-abancay",
       "kind": "event",
       "locator": "\"Battle of Abancay\", revision 1370430763"
@@ -12134,6 +12140,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-elandslaagte",
+      "kind": "event",
+      "locator": "\"Battle of Elandslaagte\", revision 1370439891"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-elmina-1625",
       "kind": "event",
       "locator": "\"Battle of Elmina (1625)\", revision 1375871907"
@@ -12245,6 +12257,12 @@
       "id": "battle-of-gibraltar-1621",
       "kind": "event",
       "locator": "\"Battle of Gibraltar (1621)\", revision 1373705907"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ginnis",
+      "kind": "event",
+      "locator": "\"Battle of Ginnis\", revision 1370441639"
     },
     {
       "dissent": false,
@@ -12563,6 +12581,12 @@
       "id": "battle-of-karameh",
       "kind": "event",
       "locator": "\"Battle of Karameh\", revision 1374545421"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kassala",
+      "kind": "event",
+      "locator": "\"Battle of Kassala\", revision 1370444899"
     },
     {
       "dissent": false,
@@ -13640,6 +13664,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-suakin",
+      "kind": "event",
+      "locator": "\"Battle of Suakin\", revision 1370590030"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-suakin-1541",
       "kind": "event",
       "locator": "\"Battle of Suakin (1541)\", revision 1373265699"
@@ -13688,6 +13718,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-talana-hill",
+      "kind": "event",
+      "locator": "\"Battle of Talana Hill\", revision 1376456521"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-talandongo",
       "kind": "event",
       "locator": "\"Battle of Talandongo\", revision 1370590437"
@@ -13697,6 +13733,12 @@
       "id": "battle-of-talavera",
       "kind": "event",
       "locator": "\"Battle of Talavera\", revision 1370880065"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tamai",
+      "kind": "event",
+      "locator": "\"Battle of Tamai\", revision 1370590470"
     },
     {
       "dissent": false,
@@ -15674,6 +15716,12 @@
     },
     {
       "dissent": false,
+      "id": "first-and-second-battles-of-el-teb",
+      "kind": "event",
+      "locator": "\"First and second battles of El Teb\", revision 1370619695"
+    },
+    {
+      "dissent": false,
       "id": "first-anglo-afghan-war",
       "kind": "event",
       "locator": "\"First Anglo-Afghan War\", revision 1379314639"
@@ -15713,6 +15761,12 @@
       "id": "first-barbary-war",
       "kind": "event",
       "locator": "\"First Barbary War\", revision 1379618629"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-agordat",
+      "kind": "event",
+      "locator": "\"First Battle of Agordat\", revision 1376368437"
     },
     {
       "dissent": false,
@@ -18623,6 +18677,12 @@
       "id": "second-barbary-war",
       "kind": "event",
       "locator": "\"Second Barbary War\", revision 1372915408"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-agordat",
+      "kind": "event",
+      "locator": "\"Second Battle of Agordat\", revision 1370735850"
     },
     {
       "dissent": false,

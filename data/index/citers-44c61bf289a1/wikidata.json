@@ -3212,6 +3212,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-aba",
+      "kind": "event",
+      "locator": "Q18161416"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-abancay",
       "kind": "event",
       "locator": "Q283288"
@@ -3830,6 +3836,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-elandslaagte",
+      "kind": "event",
+      "locator": "Q263950"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-elmina-1625",
       "kind": "event",
       "locator": "Q1140266"
@@ -3935,6 +3947,12 @@
       "id": "battle-of-gibraltar-1621",
       "kind": "event",
       "locator": "Q2890865"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ginnis",
+      "kind": "event",
+      "locator": "Q2888625"
     },
     {
       "dissent": false,
@@ -4259,6 +4277,12 @@
       "id": "battle-of-karameh",
       "kind": "event",
       "locator": "Q1930278"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-kassala",
+      "kind": "event",
+      "locator": "Q3636373"
     },
     {
       "dissent": false,
@@ -5330,6 +5354,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-suakin",
+      "kind": "event",
+      "locator": "Q4872453"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-suakin-1541",
       "kind": "event",
       "locator": "Q115517775"
@@ -5378,6 +5408,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-talana-hill",
+      "kind": "event",
+      "locator": "Q247871"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-talandongo",
       "kind": "event",
       "locator": "Q130485022"
@@ -5387,6 +5423,12 @@
       "id": "battle-of-talavera",
       "kind": "event",
       "locator": "Q169023"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-tamai",
+      "kind": "event",
+      "locator": "Q604356"
     },
     {
       "dissent": false,
@@ -7364,6 +7406,12 @@
     },
     {
       "dissent": false,
+      "id": "first-and-second-battles-of-el-teb",
+      "kind": "event",
+      "locator": "Q1164679"
+    },
+    {
+      "dissent": false,
       "id": "first-anglo-afghan-war",
       "kind": "event",
       "locator": "Q989092"
@@ -7403,6 +7451,12 @@
       "id": "first-barbary-war",
       "kind": "event",
       "locator": "Q468293"
+    },
+    {
+      "dissent": false,
+      "id": "first-battle-of-agordat",
+      "kind": "event",
+      "locator": "Q3921576"
     },
     {
       "dissent": false,
@@ -10391,6 +10445,12 @@
       "id": "second-barbary-war",
       "kind": "event",
       "locator": "Q233505"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-agordat",
+      "kind": "event",
+      "locator": "Q665983"
     },
     {
       "dissent": false,
