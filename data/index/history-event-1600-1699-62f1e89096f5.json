@@ -551,6 +551,15 @@
         }
       ]
     },
+    "battle-of-jao-modo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-juterbog": {
       "from": "git",
       "versions": [
@@ -1232,6 +1241,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-ulan-butung": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -2603,6 +2621,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-jinji": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
