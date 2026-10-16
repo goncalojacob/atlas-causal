@@ -8357,6 +8357,15 @@
         }
       ]
     },
+    "peloponnese": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "penon-de-velez-de-la-gomera": {
       "from": "git",
       "versions": [
