@@ -4,393 +4,6 @@
   "generated": "2026-10-16",
   "items": [
     {
-      "id": "2026-10-15-europe-071",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q944941",
-      "title": "Irish Rebellion of 1798",
-      "edges": [],
-      "rank": "list",
-      "why": "Europe, from the list of revolutions and rebellions. The United Irishmen's rising against British rule, the largest of its century in Ireland."
-    },
-    {
-      "id": "2026-10-15-europe-072",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q524189",
-      "title": "Cologne War",
-      "edges": [],
-      "rank": "list",
-      "why": "Europe, from the list of wars 1500-1799. The 1583-1588 war over the Archbishopric of Cologne, an early confessional war of the Holy Roman Empire."
-    },
-    {
-      "id": "2026-10-15-europe-073",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q430726",
-      "title": "Anglo-Spanish War (1585–1604)",
-      "edges": [],
-      "rank": "list",
-      "why": "Europe, from the list of wars 1500-1799. The war that included the Spanish Armada and set England and Spain against each other for two decades."
-    },
-    {
-      "id": "2026-10-15-europe-074",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q646322",
-      "title": "Franco-Dutch War",
-      "edges": [],
-      "rank": "list",
-      "why": "Europe, from the list of wars 1500-1799. Louis XIV's 1672-1678 war against the Dutch Republic, which drew in most of western Europe."
-    },
-    {
-      "id": "2026-10-15-europe-075",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q151663",
-      "title": "Revolt of the Comuneros",
-      "edges": [],
-      "rank": "list",
-      "why": "Europe, from the list of revolutions and rebellions. The 1520-1522 revolt of Castilian towns against the young Charles I."
-    },
-    {
-      "id": "2026-10-15-europe-076",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q37467350",
-      "title": "Third Silesian War",
-      "edges": [],
-      "rank": "list",
-      "why": "Europe, from the list of wars 1500-1799. The Prussian-Austrian war of 1756-1763 fought alongside the wider Seven Years' War."
-    },
-    {
-      "id": "2026-10-15-europe-077",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q154031",
-      "title": "German Peasants' War",
-      "edges": [],
-      "rank": "list",
-      "why": "Europe, from the list of revolutions and rebellions. The largest popular uprising in Europe before 1789, 1524-1525."
-    },
-    {
-      "id": "2026-10-15-europe-078",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q157548",
-      "title": "War of the Bavarian Succession",
-      "edges": [],
-      "rank": "list",
-      "why": "Europe, from the list of wars 1500-1799. The 1778-1779 war between Prussia and Austria over the Bavarian succession."
-    },
-    {
-      "id": "2026-10-15-europe-079",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q8628",
-      "title": "War in the Vendée",
-      "edges": [],
-      "rank": "list",
-      "why": "Europe, from the list of wars 1500-1799. The 1793-1796 counter-revolutionary rising against the French Republic."
-    },
-    {
-      "id": "2026-10-15-europe-080",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q2309409",
-      "title": "Morean War",
-      "edges": [],
-      "rank": "list",
-      "why": "Europe, from the list of wars 1500-1799. The 1684-1699 Ottoman-Venetian war that briefly won Venice the Peloponnese."
-    },
-    {
-      "id": "2026-10-15-europe-081",
-      "planned": "2026-10-15T21:33Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q1049945",
-      "title": "Jacobite rising of 1745",
-      "edges": [],
-      "rank": "list",
-      "why": "Europe, from the list of wars 1500-1799. Charles Edward Stuart's attempt to restore the Stuarts, ended at Culloden."
-    },
-    {
-      "id": "2026-10-16-africa-001",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q815159",
-      "title": "Siege of Khartoum",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane; Siege of Khartoum is a P361 child of the held Mahdist War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-002",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1288821",
-      "title": "Battle of Abu Klea",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane; Battle of Abu Klea is a P361 child of the held Mahdist War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-003",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1137302",
-      "title": "Battle of Omdurman",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane; Battle of Omdurman is a P361 child of the held Mahdist War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-004",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q478597",
-      "title": "Battle of Shaykan",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane; Battle of Shaykan is a P361 child of the held Mahdist War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-005",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1276340",
-      "title": "Battle of Atbara",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane; Battle of Atbara is a P361 child of the held Mahdist War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-006",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1252684",
-      "title": "Battle of Toski",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane; Battle of Toski is a P361 child of the held Mahdist War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-007",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q747589",
-      "title": "Battle of Isandlwana",
-      "parents": [
-        "anglo-zulu-war"
-      ],
-      "edges": [],
-      "rank": "child-of:anglo-zulu-war",
-      "why": "Africa trails every other lane; Battle of Isandlwana is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-008",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1123353",
-      "title": "Battle of Rorke's Drift",
-      "parents": [
-        "anglo-zulu-war"
-      ],
-      "edges": [],
-      "rank": "child-of:anglo-zulu-war",
-      "why": "Africa trails every other lane; Battle of Rorke's Drift is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-009",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q2166177",
-      "title": "Battle of Ulundi",
-      "parents": [
-        "anglo-zulu-war"
-      ],
-      "edges": [],
-      "rank": "child-of:anglo-zulu-war",
-      "why": "Africa trails every other lane; Battle of Ulundi is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-010",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q640194",
-      "title": "Battle of Intombe",
-      "parents": [
-        "anglo-zulu-war"
-      ],
-      "edges": [],
-      "rank": "child-of:anglo-zulu-war",
-      "why": "Africa trails every other lane; Battle of Intombe is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-011",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q131926873",
-      "title": "First Anglo–Ashanti War",
-      "parents": [
-        "anglo-ashanti-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:anglo-ashanti-wars",
-      "why": "Africa trails every other lane; First Anglo–Ashanti War is a P361 child of the held Anglo-Ashanti Wars and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-012",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q132156616",
-      "title": "Second Anglo–Ashanti War",
-      "parents": [
-        "anglo-ashanti-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:anglo-ashanti-wars",
-      "why": "Africa trails every other lane; Second Anglo–Ashanti War is a P361 child of the held Anglo-Ashanti Wars and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-013",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q134488493",
-      "title": "Third Anglo–Asante War",
-      "parents": [
-        "anglo-ashanti-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:anglo-ashanti-wars",
-      "why": "Africa trails every other lane; Third Anglo–Asante War is a P361 child of the held Anglo-Ashanti Wars and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-014",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q3317226",
-      "title": "Invasion of Algiers (1830)",
-      "parents": [
-        "french-conquest-of-algeria"
-      ],
-      "edges": [],
-      "rank": "child-of:french-conquest-of-algeria",
-      "why": "Africa trails every other lane; Invasion of Algiers (1830) is a P361 child of the held French conquest of Algeria and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-015",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q636772",
-      "title": "Siege of Constantine",
-      "parents": [
-        "french-conquest-of-algeria"
-      ],
-      "edges": [],
-      "rank": "child-of:french-conquest-of-algeria",
-      "why": "Africa trails every other lane; Siege of Constantine is a P361 child of the held French conquest of Algeria and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-016",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q2889977",
-      "title": "Battle of Sidi Brahim",
-      "parents": [
-        "french-conquest-of-algeria"
-      ],
-      "edges": [],
-      "rank": "child-of:french-conquest-of-algeria",
-      "why": "Africa trails every other lane; Battle of Sidi Brahim is a P361 child of the held French conquest of Algeria and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-017",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q3458306",
-      "title": "Mokrani Revolt",
-      "parents": [
-        "french-conquest-of-algeria"
-      ],
-      "edges": [],
-      "rank": "child-of:french-conquest-of-algeria",
-      "why": "Africa trails every other lane; Mokrani Revolt is a P361 child of the held French conquest of Algeria and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-018",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q2888407",
-      "title": "Battle of Derna (1805)",
-      "parents": [
-        "first-barbary-war"
-      ],
-      "edges": [],
-      "rank": "child-of:first-barbary-war",
-      "why": "Africa trails every other lane; Battle of Derna (1805) is a P361 child of the held First Barbary War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-019",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q6135223",
-      "title": "Second Battle of Tripoli Harbor",
-      "parents": [
-        "first-barbary-war"
-      ],
-      "edges": [],
-      "rank": "child-of:first-barbary-war",
-      "why": "Africa trails every other lane; Second Battle of Tripoli Harbor is a P361 child of the held First Barbary War and its own span lies inside it."
-    },
-    {
       "id": "2026-10-16-africa-020",
       "planned": "2026-10-16T00:32:45Z",
       "lane": "africa",
@@ -402,7 +15,7 @@
       ],
       "edges": [],
       "rank": "child-of:ethiopian-adal-war",
-      "why": "Africa trails every other lane; Battle of Shimbra Kure is a P361 child of the held Ethiopian–Adal War and its own span lies inside it."
+      "why": "Africa trails every other lane; Battle of Shimbra Kure is a P361 child of the held Ethiopian\u2013Adal War and its own span lies inside it."
     },
     {
       "id": "2026-10-16-africa-021",
@@ -644,36 +257,347 @@
       "lane": "asia",
       "writer": "A",
       "qid": "Q1194699",
-      "title": "Treaty of Amity and Commerce (United States–Japan)",
+      "title": "Treaty of Amity and Commerce (United States\u2013Japan)",
       "parents": [],
       "edges": [],
       "rank": "list",
       "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
     },
     {
-      "id": "2026-10-16-americas-040",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q767317",
-      "title": "Treaty of Greenville",
+      "id": "2026-10-16-africa-041",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q604356",
+      "title": "Battle of Tamai",
       "parents": [
-        "northwest-indian-war"
+        "mahdist-war"
       ],
-      "edges": [
-        {
-          "from": "northwest-indian-war",
-          "to": "Q767317",
-          "type": "caused",
-          "confidence": "probable",
-          "article": "Treaty of Greenville",
-          "revision": 1375606163,
-          "quote": "It ended the Northwest Indian War of 1785–1795 in the Ohio Country of the old Northwest Territory (1787–1803), and limited Indian country to remaining lands of northwestern Ohio, and began the practice of annual payments of goods, supplies and food, following the land concessions.",
-          "explanation": "The article \"Treaty of Greenville\" (revision 1375606163) says: \"It ended the Northwest Indian War of 1785–1795 in the Ohio Country of the old Northwest Territory (1787–1803), and limited Indian country to remaining lands of northwestern Ohio, and began the practice of annual payments of goods, supplies and food, following the land concessions.\" The edge reads the war as what the treaty closed."
-        }
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane. Battle of Tamai is a P361 child of the held Mahdist War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-042",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2888625",
+      "title": "Battle of Ginnis",
+      "parents": [
+        "mahdist-war"
       ],
-      "rank": "list",
-      "why": "Read off the List of treaties page: the treaty that ended the held Northwest Indian War, with the article's own sentence for the edge."
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane. Battle of Ginnis is a P361 child of the held Mahdist War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-043",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1164679",
+      "title": "First and Second Battles of El Teb",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane. First and Second Battles of El Teb is a P361 child of the held Mahdist War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-044",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q3921576",
+      "title": "First Battle of Agordat",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane. First Battle of Agordat is a P361 child of the held Mahdist War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-045",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q665983",
+      "title": "Second Battle of Agordat",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane. Second Battle of Agordat is a P361 child of the held Mahdist War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-046",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q3636373",
+      "title": "Battle of Kassala",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane. Battle of Kassala is a P361 child of the held Mahdist War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-047",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q4872453",
+      "title": "Battle of Suakin",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane. Battle of Suakin is a P361 child of the held Mahdist War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-048",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q18161416",
+      "title": "Battle of Aba",
+      "parents": [
+        "mahdist-war"
+      ],
+      "edges": [],
+      "rank": "child-of:mahdist-war",
+      "why": "Africa trails every other lane. Battle of Aba is a P361 child of the held Mahdist War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-049",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q247871",
+      "title": "Battle of Talana Hill",
+      "parents": [
+        "second-boer-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-boer-war",
+      "why": "Africa trails every other lane. Battle of Talana Hill is a P361 child of the held Second Boer War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-050",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q263950",
+      "title": "Battle of Elandslaagte",
+      "parents": [
+        "second-boer-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-boer-war",
+      "why": "Africa trails every other lane. Battle of Elandslaagte is a P361 child of the held Second Boer War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-051",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q845845",
+      "title": "Battle of Kraaipan",
+      "parents": [
+        "second-boer-war"
+      ],
+      "edges": [],
+      "rank": "child-of:second-boer-war",
+      "why": "Africa trails every other lane. Battle of Kraaipan is a P361 child of the held Second Boer War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-052",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q949635",
+      "title": "Battle of Kambula",
+      "parents": [
+        "anglo-zulu-war"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-zulu-war",
+      "why": "Africa trails every other lane. Battle of Kambula is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-053",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1670862",
+      "title": "Battle of Hlobane",
+      "parents": [
+        "anglo-zulu-war"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-zulu-war",
+      "why": "Africa trails every other lane. Battle of Hlobane is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-054",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2888632",
+      "title": "Battle of Gingindlovu",
+      "parents": [
+        "anglo-zulu-war"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-zulu-war",
+      "why": "Africa trails every other lane. Battle of Gingindlovu is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-055",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q3485825",
+      "title": "Siege of Eshowe",
+      "parents": [
+        "anglo-zulu-war"
+      ],
+      "edges": [],
+      "rank": "child-of:anglo-zulu-war",
+      "why": "Africa trails every other lane. Siege of Eshowe is a P361 child of the held Anglo-Zulu War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-056",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2889955",
+      "title": "Battle of Senaf\u00e9",
+      "parents": [
+        "first-italo-ethiopian-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-italo-ethiopian-war",
+      "why": "Africa trails every other lane. Battle of Senaf\u00e9 is a P361 child of the held First Italo-Ethiopian War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-057",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q783183",
+      "title": "Action of 1 August 1801",
+      "parents": [
+        "first-barbary-war"
+      ],
+      "edges": [],
+      "rank": "child-of:first-barbary-war",
+      "why": "Africa trails every other lane. Action of 1 August 1801 is a P361 child of the held First Barbary War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-058",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2889297",
+      "title": "Battle of Mazagran",
+      "parents": [
+        "french-conquest-of-algeria"
+      ],
+      "edges": [],
+      "rank": "child-of:french-conquest-of-algeria",
+      "why": "Africa trails every other lane. Battle of Mazagran is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-059",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2890049",
+      "title": "Battle of Staou\u00e9li",
+      "parents": [
+        "french-conquest-of-algeria"
+      ],
+      "edges": [],
+      "rank": "child-of:french-conquest-of-algeria",
+      "why": "Africa trails every other lane. Battle of Staou\u00e9li is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-060",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q3403872",
+      "title": "Battle of the Smala",
+      "parents": [
+        "french-conquest-of-algeria"
+      ],
+      "edges": [],
+      "rank": "child-of:french-conquest-of-algeria",
+      "why": "Africa trails every other lane. Battle of the Smala is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-061",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q621362",
+      "title": "Battle of Macta",
+      "parents": [
+        "french-conquest-of-algeria"
+      ],
+      "edges": [],
+      "rank": "child-of:french-conquest-of-algeria",
+      "why": "Africa trails every other lane. Battle of Macta is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-062",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q3485860",
+      "title": "Battle of Constantine",
+      "parents": [
+        "french-conquest-of-algeria"
+      ],
+      "edges": [],
+      "rank": "child-of:french-conquest-of-algeria",
+      "why": "Africa trails every other lane. Battle of Constantine is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-063",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2890573",
+      "title": "Battle of Sikkak",
+      "parents": [
+        "french-conquest-of-algeria"
+      ],
+      "edges": [],
+      "rank": "child-of:french-conquest-of-algeria",
+      "why": "Africa trails every other lane. Battle of Sikkak is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-africa-064",
+      "planned": "2026-10-16T03:25:59Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q2887867",
+      "title": "Battle of Antukyah",
+      "parents": [
+        "ethiopian-adal-war"
+      ],
+      "edges": [],
+      "rank": "child-of:ethiopian-adal-war",
+      "why": "Africa trails every other lane. Battle of Antukyah is a P361 child of the held Ethiopian-Adal War and its own span lies inside it."
     }
   ]
 }
