@@ -11486,6 +11486,12 @@
     },
     {
       "dissent": false,
+      "id": "bac-ninh-campaign",
+      "kind": "event",
+      "locator": "\"Bắc Ninh campaign\", revision 1377313504"
+    },
+    {
+      "dissent": false,
       "id": "bala-hissar-uprising",
       "kind": "event",
       "locator": "\"Bala Hissar uprising\", revision 1370105632"
@@ -11930,6 +11936,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-canton-may-1841",
+      "kind": "event",
+      "locator": "\"Battle of Canton (May 1841)\", revision 1370436115"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-cap-francais-1793",
       "kind": "event",
       "locator": "\"Battle of Cap-Français (1793)\", revision 1370108549"
@@ -11999,6 +12011,12 @@
       "id": "battle-of-catirai",
       "kind": "event",
       "locator": "\"Battle of Catirai\", revision 1370436570"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-cau-giay-1883",
+      "kind": "event",
+      "locator": "\"Battle of Cầu Giấy (1883)\", revision 1370438104"
     },
     {
       "dissent": false,
@@ -12542,6 +12560,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-hoa-moc",
+      "kind": "event",
+      "locator": "\"Battle of Hòa Mộc\", revision 1370265902"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-hsimucheng",
       "kind": "event",
       "locator": "\"Battle of Hsimucheng\", revision 1370443278"
@@ -12656,6 +12680,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-jalalabad-1842",
+      "kind": "event",
+      "locator": "\"Battle of Jalalabad (1842)\", revision 1379779048"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-jambi",
       "kind": "event",
       "locator": "\"Battle of Jambi\", revision 1374833022"
@@ -12665,6 +12695,12 @@
       "id": "battle-of-jankau",
       "kind": "event",
       "locator": "\"Battle of Jankau\", revision 1370444085"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-jao-modo",
+      "kind": "event",
+      "locator": "\"Battle of Jao Modo\", revision 1370444089"
     },
     {
       "dissent": false,
@@ -12740,6 +12776,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kandahar-1880",
+      "kind": "event",
+      "locator": "\"Battle of Kandahar (1880)\", revision 1374446132"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kapyong",
       "kind": "event",
       "locator": "\"Battle of Kapyong\", revision 1376150205"
@@ -12767,6 +12809,12 @@
       "id": "battle-of-kempen",
       "kind": "event",
       "locator": "\"Battle of Kempen\", revision 1370445039"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-khadki",
+      "kind": "event",
+      "locator": "\"Battle of Khadki\", revision 1370266954"
     },
     {
       "dissent": false,
@@ -13292,6 +13340,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-nalapani",
+      "kind": "event",
+      "locator": "\"Battle of Nalapani\", revision 1379666095"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-nam-river",
       "kind": "event",
       "locator": "\"Battle of Nam River\", revision 1376271535"
@@ -13634,6 +13688,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ramnagar",
+      "kind": "event",
+      "locator": "\"Battle of Ramnagar\", revision 1375772196"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-rancagua",
       "kind": "event",
       "locator": "\"Battle of Rancagua\", revision 1371210959"
@@ -13892,6 +13952,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-shipu",
+      "kind": "event",
+      "locator": "\"Battle of Shipu\", revision 1370589258"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-shubra-khit",
       "kind": "event",
       "locator": "\"Battle of Shubra Khit\", revision 1371091764"
@@ -14039,6 +14105,12 @@
       "id": "battle-of-taejon",
       "kind": "event",
       "locator": "\"Battle of Taejon\", revision 1370312872"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-taku-forts-1858",
+      "kind": "event",
+      "locator": "\"Battle of Taku Forts (1858)\", revision 1370590408"
     },
     {
       "dissent": false,
@@ -14465,6 +14537,12 @@
       "id": "battle-of-ugentana-1536",
       "kind": "event",
       "locator": "\"Battle of Ugentana (1536)\", revision 1373045056"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ulan-butung",
+      "kind": "event",
+      "locator": "\"Battle of Ulan Butung\", revision 1370591954"
     },
     {
       "dissent": false,
@@ -17390,6 +17468,12 @@
     },
     {
       "dissent": false,
+      "id": "kabul-expedition-1842",
+      "kind": "event",
+      "locator": "\"Kabul Expedition (1842)\", revision 1380371277"
+    },
+    {
+      "dissent": false,
       "id": "kandyan-commerce-raiding-against-portugal-1612-1613",
       "kind": "event",
       "locator": "\"Kandyan commerce raiding against Portugal (1612–1613)\", revision 1372825928"
@@ -19769,6 +19853,12 @@
       "id": "siege-of-jaffa",
       "kind": "event",
       "locator": "\"Siege of Jaffa\", revision 1371106198"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-jinji",
+      "kind": "event",
+      "locator": "\"Siege of Jinji\", revision 1376054561"
     },
     {
       "dissent": false,

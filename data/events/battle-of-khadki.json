@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-khadki",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871419",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Khadki"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871419"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Khadki\", revision 1370266954"
+    }
+  ],
+  "title": "Battle of Khadki",
+  "summary": "The English Wikipedia article \"Battle of Khadki\", at revision 1370266954, opens: \"The Battle of Khadki, also known as or the Battle of Ganeshkhind and Battle of Kirkee, took place at modern day Khadki, India, on 5 November 1817 between the forces of the British East India Company and the Maratha Confederacy under the leadership of Appasaheb Bhonsle. The forces of the East India Company achieved a decisive victory, with Khadki later becoming a military cantonment under British rule.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871419, imported by tools/import/wikidata.mjs. The item's own description reads \"1817 Indian colonial conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1817,
+    "end": 1817,
+    "date": "1817-11-05"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "third-anglo-maratha-war"
+}

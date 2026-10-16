@@ -4166,6 +4166,15 @@
         }
       ]
     },
+    "gingee": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "goa-q1171": {
       "from": "git",
       "versions": [
@@ -5226,6 +5235,15 @@
         }
       ]
     },
+    "jalalabad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "jambi": {
       "from": "git",
       "versions": [
@@ -5447,6 +5465,15 @@
       ]
     },
     "kambula": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "kandahar": {
       "from": "git",
       "versions": [
         {
@@ -9654,6 +9681,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "rasool-nagar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

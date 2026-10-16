@@ -520,6 +520,15 @@
         }
       ]
     },
+    "bac-ninh-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "banana-wars": {
       "from": "git",
       "versions": [
@@ -766,6 +775,15 @@
         }
       ]
     },
+    "battle-of-canton-may-1841": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-carabobo-1814": {
       "from": "git",
       "versions": [
@@ -776,6 +794,15 @@
       ]
     },
     "battle-of-castillejos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-cau-giay-1883": {
       "from": "git",
       "versions": [
         {
@@ -1011,6 +1038,15 @@
         }
       ]
     },
+    "battle-of-hoa-moc": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-ibarra-1812": {
       "from": "git",
       "versions": [
@@ -1062,6 +1098,15 @@
         }
       ]
     },
+    "battle-of-jalalabad-1842": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-junin": {
       "from": "git",
       "versions": [
@@ -1089,7 +1134,25 @@
         }
       ]
     },
+    "battle-of-kandahar-1880": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-kassala": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-khadki": {
       "from": "git",
       "versions": [
         {
@@ -1302,6 +1365,15 @@
         }
       ]
     },
+    "battle-of-nalapani": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-navarino": {
       "from": "git",
       "versions": [
@@ -1348,6 +1420,15 @@
       ]
     },
     "battle-of-pungdo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-ramnagar": {
       "from": "git",
       "versions": [
         {
@@ -1460,6 +1541,15 @@
         }
       ]
     },
+    "battle-of-shipu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-sidi-brahim": {
       "from": "git",
       "versions": [
@@ -1544,6 +1634,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-taku-forts-1858": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -3129,6 +3228,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "kabul-expedition-1842": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

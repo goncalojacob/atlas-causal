@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-jinji",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510120",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Siege of Jinji"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510120"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Jinji\", revision 1376054561"
+    }
+  ],
+  "title": "Siege of Jinji",
+  "summary": "The English Wikipedia article \"Siege of Jinji\", at revision 1376054561, opens: \"The siege of Jinji (1690–1698) was a protracted conflict between the Mughal Empire and the Maratha kingdom, wherein the triple-hill fortress of Jinji was besieged by a large Mughal force in order to capture the embedded Maratha king Rajaram I. Led by Mughal general Zulfiqar Khan under the orders of Mughal emperor Aurangzeb, the siege was the focal point of the Mughal-Maratha wars during this decade; lasting almost eight years, it represented the lengthiest of any siege mounted in Mughal history. The strength of the hill-fort, constant disruption of Mughal supply lines by Maratha forces, and dissent within Mughal ranks contributed to the length of the siege. Though the fortress finally capitulated, Rajaram evaded capture, establishing himself instead at the hill-fort of Satara. The conquest of Jinji gave the Mughals control over the south-eastern Coromandel districts.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510120, imported by tools/import/wikidata.mjs. The item's own description reads \"1690–1698 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1690,
+    "end": 1698,
+    "date": "1690-09",
+    "endDate": "1698-01-08"
+  },
+  "place": "gingee",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "deccan-wars"
+}

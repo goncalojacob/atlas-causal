@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-ulan-butung",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4087470",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Ulan Butung"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4087470"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ulan Butung\", revision 1370591954"
+    }
+  ],
+  "title": "Battle of Ulan Butung",
+  "summary": "The English Wikipedia article \"Battle of Ulan Butung\", at revision 1370591954, opens: \"The Battle of Ulan Butung was fought on 3 September 1690 between the forces of the Qing dynasty and those of the Dzungar Khanate. When attacked by the superior Qing army, the Dzungars formed a camel wall to defend their camp and defeated Qing assaults on their right flank, but were driven back on the left. They were able to withdraw into the wooded hills behind their camp in good order. The Qing commander, Fuquan, reported it as a victory, but was discredited by political opponents.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4087470, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Dzungar–Qing War in 1690\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1690,
+    "end": 1690,
+    "date": "1690-09-03"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "dzungar-qing-wars"
+}
