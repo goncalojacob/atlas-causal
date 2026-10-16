@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "tecumseh-s-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q325314",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Tecumseh's War",
+    "pt": "Guerra de Tecumseh"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q325314"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tecumseh's War\", revision 1379552269"
+    }
+  ],
+  "title": "Tecumseh's War",
+  "summary": "The English Wikipedia article \"Tecumseh's War\", at revision 1379552269, opens: \"Tecumseh's War was a conflict between the United States and Tecumseh's confederacy, led by the Shawnee leader Tecumseh in the Indiana Territory. Although the war is often considered to have climaxed with William Henry Harrison's victory at the Battle of Tippecanoe in 1811, Tecumseh's War essentially continued into the War of 1812 and is frequently considered a part of that larger struggle. The war lasted for two more years, until 1813, when Tecumseh died fighting Harrison's Army of the Northwest at the Battle of Moraviantown in Upper Canada, near present-day Chatham, Ontario, and his confederacy disintegrated. Tecumseh's War is viewed by some academic historians as the final conflict of a longer-term military struggle for control of the Great Lakes region of North America, encompassing a number of wars over several generations, referred to as the Sixty Years' War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q325314, imported by tools/import/wikidata.mjs. The item's own description reads \"1810-13 conflict between the US and Tecumseh's Confederacy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1813,
+    "date": "1810-08",
+    "endDate": "1813-10-05"
+  },
+  "place": "midwestern-united-states",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

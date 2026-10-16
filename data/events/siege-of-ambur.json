@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-ambur",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7509809",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Siege of Ambur"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7509809"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Ambur\", revision 1370738789"
+    }
+  ],
+  "title": "Siege of Ambur",
+  "summary": "The English Wikipedia article \"Siege of Ambur\", at revision 1370738789, opens: \"The siege of Ambur was conducted by a combined force of Mysorean and Hyderabadi troops under the command of Hyder Ali against the town of Ambur in southern India during the First Anglo-Mysore War. The town was successfully defended by a garrison of local troops and a small force of British East India Company troops under the command of Captain Calvert.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7509809, imported by tools/import/wikidata.mjs. The item's own description reads \"1767 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1767,
+    "end": 1767,
+    "date": "1767-11-10",
+    "endDate": "1767-12-07"
+  },
+  "place": "ambur-q584854",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-anglo-mysore-war"
+}

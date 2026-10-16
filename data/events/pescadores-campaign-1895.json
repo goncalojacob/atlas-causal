@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "pescadores-campaign-1895",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2583202",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Pescadores campaign (1895)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2583202"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pescadores campaign (1895)\", revision 1370704080"
+    }
+  ],
+  "title": "Pescadores campaign (1895)",
+  "summary": "The English Wikipedia article \"Pescadores campaign (1895)\", at revision 1370704080, opens: \"The Pescadores campaign was the last military operation of the First Sino-Japanese War and an essential preliminary to the Japanese conquest of Taiwan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2583202, imported by tools/import/wikidata.mjs. The item's own description reads \"1895 campaign of the First Sino-Japanese War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1895,
+    "end": 1895,
+    "date": "1895-03-23",
+    "endDate": "1895-03-26"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "first-sino-japanese-war"
+}

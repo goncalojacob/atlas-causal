@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sig-river",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3304802",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Sig River"
+  },
+  "sources": [],
+  "names": [
+    "Mekerra river",
+    "Sig River"
+  ],
+  "where": {
+    "lon": -0.41638888888889,
+    "lat": 35.319166666667,
+    "precision": "region",
+    "label": "Sig River"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

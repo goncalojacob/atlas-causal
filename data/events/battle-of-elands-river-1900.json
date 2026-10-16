@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-elands-river-1900",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870959",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Elands River (1900)",
+    "pt": "Batalha do Rio Elands (1900)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870959"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Elands River (1900)\", revision 1374222323"
+    }
+  ],
+  "title": "Battle of Elands River (1900)",
+  "summary": "The English Wikipedia article \"Battle of Elands River (1900)\", at revision 1374222323, opens: \"The Battle of Elands River was an engagement of the Second Boer War that took place between 4 and 16 August 1900 in western Transvaal. The battle was fought at Brakfontein Drift near the Elands River between a force of 2,000 to 3,000 Boers and a garrison of 500 Australian, Rhodesian, Canadian and British soldiers, which was stationed there to protect a British supply dump that had been established on the route between Mafeking and Pretoria. The Boer force, which consisted of several commandos under the overall leadership of Koos de la Rey, was in desperate need of provisions after earlier fighting had cut it off from its support base. As a result, it was decided to attack the garrison in an effort to capture its supplies.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870959, imported by tools/import/wikidata.mjs. The item's own description reads \"1900 battle of the Second Boer War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-08-04",
+    "endDate": "1900-08-16"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "second-boer-war"
+}

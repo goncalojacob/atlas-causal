@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-the-sherpur-cantonment",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q969018",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Siege of the Sherpur Cantonment"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q969018"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of the Sherpur Cantonment\", revision 1376920342"
+    }
+  ],
+  "title": "Siege of the Sherpur Cantonment",
+  "summary": "The English Wikipedia article \"Siege of the Sherpur Cantonment\", at revision 1376920342, opens: \"The siege of the Sherpur Cantonment was a battle fought in December 1879, during the Second Anglo-Afghan War. British forces were besieged by Afghan troops, then repulsed an assault.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q969018, imported by tools/import/wikidata.mjs. The item's own description reads \"1879 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879,
+    "date": "1879-12-15",
+    "endDate": "1879-12-23"
+  },
+  "place": "kabul",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-anglo-afghan-war"
+}
