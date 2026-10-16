@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-isly",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q348998",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Isly",
+    "pt": "Batalha de Isly"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q348998"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Isly\", revision 1370266134"
+    }
+  ],
+  "title": "Battle of Isly",
+  "summary": "The English Wikipedia article \"Battle of Isly\", at revision 1370266134, opens: \"The Battle of Isly was fought on August 14, 1844, between France and Morocco, near the Isly River. French forces under Marshal Thomas Robert Bugeaud routed a much larger, but poorly organized, Moroccan force, mainly fighters from the tribes of Beni Snassen, but also from the Beni Angad and Beni Oukil; under Muhammad, son of the Sultan of Morocco, Abd al-Rahman. Bugeaud, attempting to complete the French conquest of Algeria, instigated the battle without a declaration of war in order to force negotiations concerning Moroccan support for the Algerian resistance leader Abd el-Kader to conclude on terms favorable to the French who demanded the Sultan of Morocco to withdraw support for Abd el-Kader.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q348998, imported by tools/import/wikidata.mjs. The item's own description reads \"1844 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1844,
+    "end": 1844,
+    "date": "1844-08-14"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "franco-moroccan-war"
+}

@@ -655,7 +655,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 2,
       "id": "alexandria",
       "kind": "place",
       "names": [
@@ -7167,7 +7167,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "ethiopian-empire",
       "kind": "place",
       "names": [
@@ -9512,6 +9512,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "herat",
+      "kind": "place",
+      "names": [
+        "Herat",
+        "Herate"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -14762,6 +14790,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "mekelle",
+      "kind": "place",
+      "names": [
+        "Mekele",
+        "Mek'ele",
+        "Mekelle"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -19756,6 +19813,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "quatit-eritrea",
+      "kind": "place",
+      "names": [
+        "Quatit",
+        "Quatit, Eritrea"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
       "degree": 1,
       "id": "quebec-city",
@@ -24210,7 +24295,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "tehran",
       "kind": "place",
       "names": [

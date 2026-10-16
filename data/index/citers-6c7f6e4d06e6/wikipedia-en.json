@@ -11978,6 +11978,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-coatit",
+      "kind": "event",
+      "locator": "\"Battle of Coatit\", revision 1376302437"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-colberger-heide",
       "kind": "event",
       "locator": "\"Battle of Colberger Heide\", revision 1375205815"
@@ -12455,6 +12461,12 @@
       "id": "battle-of-isandlwana",
       "kind": "event",
       "locator": "\"Battle of Isandlwana\", revision 1379905900"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-isly",
+      "kind": "event",
+      "locator": "\"Battle of Isly\", revision 1370266134"
     },
     {
       "dissent": false,
@@ -13544,6 +13556,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-shimbra-kure",
+      "kind": "event",
+      "locator": "\"Battle of Shimbra Kure\", revision 1373825639"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-shubra-khit",
       "kind": "event",
       "locator": "\"Battle of Shubra Khit\", revision 1371091764"
@@ -14393,6 +14411,12 @@
       "id": "bolivian-war-of-independence",
       "kind": "event",
       "locator": "\"Bolivian War of Independence\", revision 1372904906"
+    },
+    {
+      "dissent": false,
+      "id": "bombardment-of-alexandria",
+      "kind": "event",
+      "locator": "\"Bombardment of Alexandria\", revision 1370604959"
     },
     {
       "dissent": false,
@@ -15755,6 +15779,12 @@
       "id": "first-gulf-of-sidra-offensive",
       "kind": "event",
       "locator": "\"First Gulf of Sidra offensive\", revision 1374515970"
+    },
+    {
+      "dissent": false,
+      "id": "first-herat-war",
+      "kind": "event",
+      "locator": "\"First Herat War\", revision 1376435220"
     },
     {
       "dissent": false,
@@ -17798,6 +17828,12 @@
     },
     {
       "dissent": false,
+      "id": "panjdeh-incident",
+      "kind": "event",
+      "locator": "\"Panjdeh incident\", revision 1380332821"
+    },
+    {
+      "dissent": false,
       "id": "paraguay-campaign",
       "kind": "event",
       "locator": "\"Paraguay campaign\", revision 1374608769"
@@ -19226,6 +19262,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-mekelle",
+      "kind": "event",
+      "locator": "\"Siege of Mekelle\", revision 1370743421"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-memmingen",
       "kind": "event",
       "locator": "\"Siege of Memmingen\", revision 1375560473"
@@ -20261,6 +20303,12 @@
       "id": "tinsalane-ambush",
       "kind": "event",
       "locator": "\"Tinsalane ambush\", revision 1370751066"
+    },
+    {
+      "dissent": false,
+      "id": "tobacco-protest",
+      "kind": "event",
+      "locator": "\"Tobacco Protest\", revision 1361415065"
     },
     {
       "dissent": false,

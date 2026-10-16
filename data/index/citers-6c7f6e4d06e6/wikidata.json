@@ -3668,6 +3668,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-coatit",
+      "kind": "event",
+      "locator": "Q2888324"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-colberger-heide",
       "kind": "event",
       "locator": "Q423522"
@@ -4145,6 +4151,12 @@
       "id": "battle-of-isandlwana",
       "kind": "event",
       "locator": "Q747589"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-isly",
+      "kind": "event",
+      "locator": "Q348998"
     },
     {
       "dissent": false,
@@ -5234,6 +5246,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-shimbra-kure",
+      "kind": "event",
+      "locator": "Q2889965"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-shubra-khit",
       "kind": "event",
       "locator": "Q2888305"
@@ -6077,6 +6095,12 @@
       "id": "bolivian-war-of-independence",
       "kind": "event",
       "locator": "Q68475"
+    },
+    {
+      "dissent": false,
+      "id": "bombardment-of-alexandria",
+      "kind": "event",
+      "locator": "Q2670249"
     },
     {
       "dissent": false,
@@ -7445,6 +7469,12 @@
       "id": "first-gulf-of-sidra-offensive",
       "kind": "event",
       "locator": "Q846532"
+    },
+    {
+      "dissent": false,
+      "id": "first-herat-war",
+      "kind": "event",
+      "locator": "Q7510082"
     },
     {
       "dissent": false,
@@ -9542,6 +9572,12 @@
     },
     {
       "dissent": false,
+      "id": "panjdeh-incident",
+      "kind": "event",
+      "locator": "Q2993585"
+    },
+    {
+      "dissent": false,
       "id": "paraguay-campaign",
       "kind": "event",
       "locator": "Q7134668"
@@ -11036,6 +11072,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-mekelle",
+      "kind": "event",
+      "locator": "Q2237609"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-memmingen",
       "kind": "event",
       "locator": "Q140530510"
@@ -11855,6 +11897,12 @@
       "id": "tinsalane-ambush",
       "kind": "event",
       "locator": "Q15231259"
+    },
+    {
+      "dissent": false,
+      "id": "tobacco-protest",
+      "kind": "event",
+      "locator": "Q2302690"
     },
     {
       "dissent": false,

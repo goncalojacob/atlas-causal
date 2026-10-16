@@ -676,6 +676,15 @@
         }
       ]
     },
+    "battle-of-coatit": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-corunna": {
       "from": "git",
       "versions": [
@@ -784,6 +793,15 @@
       ]
     },
     "battle-of-isandlwana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-isly": {
       "from": "git",
       "versions": [
         {
@@ -1279,6 +1297,15 @@
         }
       ]
     },
+    "bombardment-of-alexandria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "boshin-war": {
       "from": "git",
       "versions": [
@@ -1769,6 +1796,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "first-herat-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -2478,6 +2514,15 @@
         }
       ]
     },
+    "panjdeh-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "paraguay-campaign": {
       "from": "git",
       "versions": [
@@ -3098,6 +3143,15 @@
         }
       ]
     },
+    "siege-of-mekelle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "siege-of-port-au-prince-1803": {
       "from": "git",
       "versions": [
@@ -3395,6 +3449,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "tobacco-protest": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
