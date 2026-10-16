@@ -3290,6 +3290,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-agra",
+      "kind": "event",
+      "locator": "Q4087406"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ajdabiya",
       "kind": "event",
       "locator": "Q506595"
@@ -3329,6 +3335,12 @@
       "id": "battle-of-algiers-1956-1957",
       "kind": "event",
       "locator": "Q1761043"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-aliwal",
+      "kind": "event",
+      "locator": "Q1540820"
     },
     {
       "dissent": false,
@@ -3506,6 +3518,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bronkhorstspruit",
+      "kind": "event",
+      "locator": "Q2547952"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-buceo",
       "kind": "event",
       "locator": "Q2890940"
@@ -3620,6 +3638,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-castillejos",
+      "kind": "event",
+      "locator": "Q2888254"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-catirai",
       "kind": "event",
       "locator": "Q3636379"
@@ -3653,6 +3677,12 @@
       "id": "battle-of-chedabucto",
       "kind": "event",
       "locator": "Q4870722"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chelif",
+      "kind": "event",
+      "locator": "Q30742449"
     },
     {
       "dissent": false,
@@ -3962,6 +3992,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fuzhou",
+      "kind": "event",
+      "locator": "Q2562509"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gandamak",
+      "kind": "event",
+      "locator": "Q908888"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gannoruwa",
       "kind": "event",
       "locator": "Q4871077"
@@ -4016,6 +4058,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gqokli-hill",
+      "kind": "event",
+      "locator": "Q2888668"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-grand-turk",
       "kind": "event",
       "locator": "Q4871134"
@@ -4064,6 +4112,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gujrat",
+      "kind": "event",
+      "locator": "Q4871164"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gully-hole-creek",
       "kind": "event",
       "locator": "Q4871162"
@@ -4073,6 +4127,12 @@
       "id": "battle-of-haengju",
       "kind": "event",
       "locator": "Q279611"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-hakodate",
+      "kind": "event",
+      "locator": "Q716562"
     },
     {
       "dissent": false,
@@ -4388,6 +4448,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-konya",
+      "kind": "event",
+      "locator": "Q2981297"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-korea-strait",
       "kind": "event",
       "locator": "Q289102"
@@ -4532,6 +4598,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-lushunkou",
+      "kind": "event",
+      "locator": "Q1208996"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-lutter",
       "kind": "event",
       "locator": "Q629302"
@@ -4577,6 +4649,12 @@
       "id": "battle-of-maipu",
       "kind": "event",
       "locator": "Q1073849"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-maiwand",
+      "kind": "event",
+      "locator": "Q548625"
     },
     {
       "dissent": false,
@@ -4796,6 +4874,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mudki",
+      "kind": "event",
+      "locator": "Q910528"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mukden",
       "kind": "event",
       "locator": "Q384091"
@@ -4835,6 +4919,12 @@
       "id": "battle-of-nanshan",
       "kind": "event",
       "locator": "Q2409298"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-navarino",
+      "kind": "event",
+      "locator": "Q238440"
     },
     {
       "dissent": false,
@@ -4931,6 +5021,12 @@
       "id": "battle-of-paardeberg",
       "kind": "event",
       "locator": "Q2237713"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-palikao",
+      "kind": "event",
+      "locator": "Q2663279"
     },
     {
       "dissent": false,
@@ -5192,6 +5288,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rooihuiskraal",
+      "kind": "event",
+      "locator": "Q2421665"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-rorke-s-drift",
       "kind": "event",
       "locator": "Q1123353"
@@ -5315,6 +5417,12 @@
       "id": "battle-of-saylla",
       "kind": "event",
       "locator": "Q140068655"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-schuinshoogte",
+      "kind": "event",
+      "locator": "Q1286274"
     },
     {
       "dissent": false,
@@ -5492,6 +5600,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-taku-forts-1859",
+      "kind": "event",
+      "locator": "Q1061404"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-talana-hill",
       "kind": "event",
       "locator": "Q247871"
@@ -5615,6 +5729,12 @@
       "id": "battle-of-the-citadel-of-vicenza",
       "kind": "event",
       "locator": "Q124249264"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-col-des-beni-aicha",
+      "kind": "event",
+      "locator": "Q104830263"
     },
     {
       "dissent": false,
@@ -5750,9 +5870,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tirad-pass",
+      "kind": "event",
+      "locator": "Q3490568"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tlemcen-1696",
       "kind": "event",
       "locator": "Q138543055"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-togbao",
+      "kind": "event",
+      "locator": "Q4872567"
     },
     {
       "dissent": false,
@@ -5837,6 +5969,12 @@
       "id": "battle-of-two-sisters",
       "kind": "event",
       "locator": "Q4872617"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ueno",
+      "kind": "event",
+      "locator": "Q715562"
     },
     {
       "dissent": false,
@@ -5960,6 +6098,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-wad-ras",
+      "kind": "event",
+      "locator": "Q2890359"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-wadi-al-laban",
       "kind": "event",
       "locator": "Q4117011"
@@ -5975,6 +6119,12 @@
       "id": "battle-of-wayna-daga",
       "kind": "event",
       "locator": "Q957263"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-weihaiwei",
+      "kind": "event",
+      "locator": "Q1185335"
     },
     {
       "dissent": false,
@@ -6239,6 +6389,18 @@
       "id": "bombardment-of-alexandria",
       "kind": "event",
       "locator": "Q2670249"
+    },
+    {
+      "dissent": false,
+      "id": "bombardment-of-mogador",
+      "kind": "event",
+      "locator": "Q4940505"
+    },
+    {
+      "dissent": false,
+      "id": "bombardment-of-tangier",
+      "kind": "event",
+      "locator": "Q4940515"
     },
     {
       "dissent": false,
@@ -7295,6 +7457,12 @@
       "id": "egyptian-ottoman-war-1839-1841",
       "kind": "event",
       "locator": "Q2600326"
+    },
+    {
+      "dissent": false,
+      "id": "eighth-xhosa-war",
+      "kind": "event",
+      "locator": "Q20612501"
     },
     {
       "dissent": false,
@@ -9146,6 +9314,12 @@
     },
     {
       "dissent": false,
+      "id": "mascara-campaign-1699-1701",
+      "kind": "event",
+      "locator": "Q109259621"
+    },
+    {
+      "dissent": false,
       "id": "massacre-at-matanzas-inlet",
       "kind": "event",
       "locator": "Q106611332"
@@ -10616,6 +10790,12 @@
     },
     {
       "dissent": false,
+      "id": "second-battle-of-accra",
+      "kind": "event",
+      "locator": "Q27627688"
+    },
+    {
+      "dissent": false,
       "id": "second-battle-of-agordat",
       "kind": "event",
       "locator": "Q665983"
@@ -10769,6 +10949,12 @@
       "id": "second-madagascar-expedition",
       "kind": "event",
       "locator": "Q4127978"
+    },
+    {
+      "dissent": false,
+      "id": "second-mandingo-war",
+      "kind": "event",
+      "locator": "Q139375315"
     },
     {
       "dissent": false,
@@ -11024,6 +11210,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-cawnpore",
+      "kind": "event",
+      "locator": "Q627881"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-ceuta-1419",
       "kind": "event",
       "locator": "Q7509914"
@@ -11075,6 +11267,12 @@
       "id": "siege-of-cusco-1781",
       "kind": "event",
       "locator": "Q11794853"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-delhi-1857",
+      "kind": "event",
+      "locator": "Q2343263"
     },
     {
       "dissent": false,
@@ -11303,6 +11501,12 @@
       "id": "siege-of-malacca-1640-1641",
       "kind": "event",
       "locator": "Q4337398"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-marabastad",
+      "kind": "event",
+      "locator": "Q16211729"
     },
     {
       "dissent": false,
@@ -11546,6 +11750,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-seringapatam-1799",
+      "kind": "event",
+      "locator": "Q815204"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-snogh-j",
       "kind": "event",
       "locator": "Q139856172"
@@ -11579,6 +11789,12 @@
       "id": "siege-of-tessalit",
       "kind": "event",
       "locator": "Q4474075"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-the-international-legations",
+      "kind": "event",
+      "locator": "Q4337436"
     },
     {
       "dissent": false,
@@ -12095,6 +12311,12 @@
       "id": "third-battle-of-kharkov",
       "kind": "event",
       "locator": "Q157873"
+    },
+    {
+      "dissent": false,
+      "id": "third-battle-of-nanjing",
+      "kind": "event",
+      "locator": "Q7784779"
     },
     {
       "dissent": false,
@@ -12716,6 +12938,12 @@
     },
     {
       "dissent": false,
+      "id": "wallachian-uprising-of-1821",
+      "kind": "event",
+      "locator": "Q2661754"
+    },
+    {
+      "dissent": false,
       "id": "war-in-afghanistan-2001-2021",
       "kind": "event",
       "locator": "Q182865"
@@ -12833,6 +13061,12 @@
       "id": "war-of-the-fourth-coalition",
       "kind": "event",
       "locator": "Q605977"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-golden-stool",
+      "kind": "event",
+      "locator": "Q356920"
     },
     {
       "dissent": false,

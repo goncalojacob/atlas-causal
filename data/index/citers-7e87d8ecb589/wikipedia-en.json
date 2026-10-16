@@ -11612,6 +11612,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-agra",
+      "kind": "event",
+      "locator": "\"Battle of Agra\", revision 1370431091"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ajdabiya",
       "kind": "event",
       "locator": "\"Battle of Ajdabiya\", revision 1374514977"
@@ -11651,6 +11657,12 @@
       "id": "battle-of-algiers-1956-1957",
       "kind": "event",
       "locator": "\"Battle of Algiers (1956–1957)\", revision 1374865618"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-aliwal",
+      "kind": "event",
+      "locator": "\"Battle of Aliwal\", revision 1370106362"
     },
     {
       "dissent": false,
@@ -11822,6 +11834,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-bronkhorstspruit",
+      "kind": "event",
+      "locator": "\"Battle of Bronkhorstspruit\", revision 1370435277"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-buceo",
       "kind": "event",
       "locator": "\"Battle of Buceo\", revision 1366243583"
@@ -11942,6 +11960,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-castillejos",
+      "kind": "event",
+      "locator": "\"Battle of Castillejos\", revision 1370436542"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-catirai",
       "kind": "event",
       "locator": "\"Battle of Catirai\", revision 1370436570"
@@ -11969,6 +11993,12 @@
       "id": "battle-of-chedabucto",
       "kind": "event",
       "locator": "\"Battle of Chedabucto\", revision 1375090331"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chelif",
+      "kind": "event",
+      "locator": "\"Battle of Chelif\", revision 1370108966"
     },
     {
       "dissent": false,
@@ -12266,6 +12296,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fuzhou",
+      "kind": "event",
+      "locator": "\"Battle of Fuzhou\", revision 1370441165"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gandamak",
+      "kind": "event",
+      "locator": "\"Battle of Gandamak\", revision 1376918846"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gannoruwa",
       "kind": "event",
       "locator": "\"Battle of Gannoruwa\", revision 1371454057"
@@ -12326,6 +12368,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gqokli-hill",
+      "kind": "event",
+      "locator": "\"Battle of Gqokli Hill\", revision 1370441903"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-grand-turk",
       "kind": "event",
       "locator": "\"Battle of Grand Turk\", revision 1370441951"
@@ -12368,6 +12416,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gujrat",
+      "kind": "event",
+      "locator": "\"Battle of Gujrat\", revision 1370442290"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gully-hole-creek",
       "kind": "event",
       "locator": "\"Battle of Gully Hole Creek\", revision 1370442298"
@@ -12377,6 +12431,12 @@
       "id": "battle-of-haengju",
       "kind": "event",
       "locator": "\"Battle of Haengju\", revision 1370265139"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-hakodate",
+      "kind": "event",
+      "locator": "\"Battle of Hakodate\", revision 1370265167"
     },
     {
       "dissent": false,
@@ -12692,6 +12752,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-konya",
+      "kind": "event",
+      "locator": "\"Battle of Konya\", revision 1379024034"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-korea-strait",
       "kind": "event",
       "locator": "\"Battle of Korea Strait\", revision 1376104466"
@@ -12836,6 +12902,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-lushunkou",
+      "kind": "event",
+      "locator": "\"Battle of Lüshunkou\", revision 1370268653"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-lutter",
       "kind": "event",
       "locator": "\"Battle of Lutter\", revision 1370448305"
@@ -12881,6 +12953,12 @@
       "id": "battle-of-maipu",
       "kind": "event",
       "locator": "\"Battle of Maipú\", revision 1370268820"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-maiwand",
+      "kind": "event",
+      "locator": "\"Battle of Maiwand\", revision 1380439939"
     },
     {
       "dissent": false,
@@ -13094,6 +13172,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mudki",
+      "kind": "event",
+      "locator": "\"Battle of Mudki\", revision 1370450730"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mukden",
       "kind": "event",
       "locator": "\"Battle of Mukden\", revision 1375786749"
@@ -13133,6 +13217,12 @@
       "id": "battle-of-nanshan",
       "kind": "event",
       "locator": "\"Battle of Nanshan\", revision 1370451314"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-navarino",
+      "kind": "event",
+      "locator": "\"Battle of Navarino\", revision 1370270611"
     },
     {
       "dissent": false,
@@ -13229,6 +13319,12 @@
       "id": "battle-of-paardeberg",
       "kind": "event",
       "locator": "\"Battle of Paardeberg\", revision 1370271388"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-palikao",
+      "kind": "event",
+      "locator": "\"Battle of Palikao\", revision 1370452686"
     },
     {
       "dissent": false,
@@ -13502,6 +13598,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-rooihuiskraal",
+      "kind": "event",
+      "locator": "\"Battle of Rooihuiskraal\", revision 1372187469"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-rorke-s-drift",
       "kind": "event",
       "locator": "\"Battle of Rorke's Drift\", revision 1380182426"
@@ -13625,6 +13727,12 @@
       "id": "battle-of-saylla",
       "kind": "event",
       "locator": "\"Battle of Saylla\", revision 1370588789"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-schuinshoogte",
+      "kind": "event",
+      "locator": "\"Battle of Schuinshoogte\", revision 1379907996"
     },
     {
       "dissent": false,
@@ -13802,6 +13910,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-taku-forts-1859",
+      "kind": "event",
+      "locator": "\"Battle of Taku Forts (1859)\", revision 1370590412"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-talana-hill",
       "kind": "event",
       "locator": "\"Battle of Talana Hill\", revision 1376456521"
@@ -13925,6 +14039,12 @@
       "id": "battle-of-the-citadel-of-vicenza",
       "kind": "event",
       "locator": "\"Battle of the citadel of Vicenza\", revision 1370602838"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-col-des-beni-aicha",
+      "kind": "event",
+      "locator": "\"Battle of the Col des Beni Aïcha\", revision 1370277714"
     },
     {
       "dissent": false,
@@ -14066,9 +14186,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tirad-pass",
+      "kind": "event",
+      "locator": "\"Battle of Tirad Pass\", revision 1379490107"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tlemcen-1696",
       "kind": "event",
       "locator": "\"Battle of Tlemcen (1696)\", revision 1370591144"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-togbao",
+      "kind": "event",
+      "locator": "\"Battle of Togbao\", revision 1371606159"
     },
     {
       "dissent": false,
@@ -14159,6 +14291,12 @@
       "id": "battle-of-two-sisters",
       "kind": "event",
       "locator": "\"Battle of Two Sisters\", revision 1372847051"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ueno",
+      "kind": "event",
+      "locator": "\"Battle of Ueno\", revision 1370275970"
     },
     {
       "dissent": false,
@@ -14282,6 +14420,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-wad-ras",
+      "kind": "event",
+      "locator": "\"Battle of Wad Ras\", revision 1370846102"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-wadi-al-laban",
       "kind": "event",
       "locator": "\"Battle of Wadi al-Laban\", revision 1370276629"
@@ -14297,6 +14441,12 @@
       "id": "battle-of-wayna-daga",
       "kind": "event",
       "locator": "\"Battle of Wayna Daga\", revision 1370593467"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-weihaiwei",
+      "kind": "event",
+      "locator": "\"Battle of Weihaiwei\", revision 1373563917"
     },
     {
       "dissent": false,
@@ -14555,6 +14705,18 @@
       "id": "bombardment-of-alexandria",
       "kind": "event",
       "locator": "\"Bombardment of Alexandria\", revision 1370604959"
+    },
+    {
+      "dissent": false,
+      "id": "bombardment-of-mogador",
+      "kind": "event",
+      "locator": "\"Bombardment of Mogador\", revision 1374542846"
+    },
+    {
+      "dissent": false,
+      "id": "bombardment-of-tangier",
+      "kind": "event",
+      "locator": "\"Bombardment of Tangier\", revision 1374542886"
     },
     {
       "dissent": false,
@@ -15617,6 +15779,12 @@
       "id": "egyptian-ottoman-war-1839-1841",
       "kind": "event",
       "locator": "\"Egyptian–Ottoman War (1839–1841)\", revision 1379458367"
+    },
+    {
+      "dissent": false,
+      "id": "eighth-xhosa-war",
+      "kind": "event",
+      "locator": "\"Eighth Xhosa War\", revision 1370616740"
     },
     {
       "dissent": false,
@@ -17405,6 +17573,12 @@
       "id": "marco-polo-bridge-incident",
       "kind": "event",
       "locator": "\"Marco Polo Bridge incident\", revision 1370745067"
+    },
+    {
+      "dissent": false,
+      "id": "mascara-campaign-1699-1701",
+      "kind": "event",
+      "locator": "\"Mascara campaign (1699–1701)\", revision 1370627787"
     },
     {
       "dissent": false,
@@ -19220,6 +19394,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-cawnpore",
+      "kind": "event",
+      "locator": "\"Siege of Cawnpore\", revision 1379696109"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-ceuta-1419",
       "kind": "event",
       "locator": "\"Siege of Ceuta (1419)\", revision 1370740121"
@@ -19271,6 +19451,12 @@
       "id": "siege-of-cusco-1781",
       "kind": "event",
       "locator": "\"Siege of Cusco (1781)\", revision 1370740510"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-delhi-1857",
+      "kind": "event",
+      "locator": "\"Siege of Delhi (1857)\", revision 1380233517"
     },
     {
       "dissent": false,
@@ -19493,6 +19679,12 @@
       "id": "siege-of-malacca-1640-1641",
       "kind": "event",
       "locator": "\"Siege of Malacca (1640–1641)\", revision 1370743206"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-marabastad",
+      "kind": "event",
+      "locator": "\"Siege of Marabastad\", revision 1370743266"
     },
     {
       "dissent": false,
@@ -19736,6 +19928,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-seringapatam-1799",
+      "kind": "event",
+      "locator": "\"Siege of Seringapatam (1799)\", revision 1376680546"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-snogh-j",
       "kind": "event",
       "locator": "\"Siege of Snoghøj\", revision 1370745372"
@@ -19769,6 +19967,12 @@
       "id": "siege-of-tessalit",
       "kind": "event",
       "locator": "\"Siege of Tessalit\", revision 1370745744"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-the-international-legations",
+      "kind": "event",
+      "locator": "\"Siege of the International Legations\", revision 1377025043"
     },
     {
       "dissent": false,
@@ -20516,6 +20720,12 @@
     },
     {
       "dissent": false,
+      "id": "third-battle-of-nanjing",
+      "kind": "event",
+      "locator": "\"Third Battle of Nanjing\", revision 1370750374"
+    },
+    {
+      "dissent": false,
       "id": "third-battle-of-seoul",
       "kind": "event",
       "locator": "\"Third Battle of Seoul\", revision 1370750418"
@@ -21050,6 +21260,12 @@
     },
     {
       "dissent": false,
+      "id": "wallachian-uprising-of-1821",
+      "kind": "event",
+      "locator": "\"Wallachian uprising of 1821\", revision 1370749496"
+    },
+    {
+      "dissent": false,
       "id": "war-in-afghanistan-2001-2021",
       "kind": "event",
       "locator": "\"War in Afghanistan (2001–2021)\", revision 1376150504"
@@ -21143,6 +21359,12 @@
       "id": "war-of-the-fourth-coalition",
       "kind": "event",
       "locator": "\"War of the Fourth Coalition\", revision 1372944372"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-golden-stool",
+      "kind": "event",
+      "locator": "\"War of the Golden Stool\", revision 1377091714"
     },
     {
       "dissent": false,

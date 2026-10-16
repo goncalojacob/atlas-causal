@@ -170,6 +170,15 @@
         }
       ]
     },
+    "agra": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "ajdabiya": {
       "from": "git",
       "versions": [
@@ -2010,6 +2019,15 @@
         }
       ]
     },
+    "centurion-south-africa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "ceuta-under-muslim-rule": {
       "from": "git",
       "versions": [
@@ -2656,6 +2674,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "delhi": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -3342,6 +3369,15 @@
         }
       ]
     },
+    "essaouira": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "estonia-q191": {
       "from": "git",
       "versions": [
@@ -3884,6 +3920,15 @@
         }
       ]
     },
+    "fuzhou": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "gallipoli": {
       "from": "git",
       "versions": [
@@ -4340,6 +4385,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "gujrat-pakistan": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -4887,6 +4941,15 @@
         }
       ]
     },
+    "ingogo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "inner-manchuria": {
       "from": "git",
       "versions": [
@@ -5356,6 +5419,15 @@
         }
       ]
     },
+    "kanpur": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "karameh": {
       "from": "git",
       "versions": [
@@ -5684,6 +5756,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "konya": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -6758,6 +6839,15 @@
         }
       ]
     },
+    "maiwand": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "malabar-coast": {
       "from": "git",
       "versions": [
@@ -6848,6 +6938,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "marabastad-pretoria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -7379,6 +7478,15 @@
         }
       ]
     },
+    "moodkee": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "mormugao": {
       "from": "git",
       "versions": [
@@ -7676,6 +7784,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "nanjing": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -8253,6 +8370,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "oranie": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -9282,6 +9408,15 @@
         }
       ]
     },
+    "pylos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "pyrenees": {
       "from": "git",
       "versions": [
@@ -10278,6 +10413,15 @@
         }
       ]
     },
+    "sarh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "saylla-district": {
       "from": "git",
       "versions": [
@@ -11002,6 +11146,15 @@
         }
       ]
     },
+    "srirangapatna": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "st-augustine-florida": {
       "from": "git",
       "versions": [
@@ -11537,6 +11690,15 @@
         }
       ]
     },
+    "thenia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "thionville": {
       "from": "git",
       "versions": [
@@ -11956,6 +12118,15 @@
         }
       ]
     },
+    "ueno": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "ukraine-east": {
       "from": "git",
       "versions": [
@@ -12365,6 +12536,15 @@
         }
       ]
     },
+    "wallachia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "wanshan-archipelago": {
       "from": "git",
       "versions": [
@@ -12458,6 +12638,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "weihai": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

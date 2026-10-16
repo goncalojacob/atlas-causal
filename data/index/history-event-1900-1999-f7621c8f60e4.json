@@ -21792,6 +21792,15 @@
         }
       ]
     },
+    "siege-of-the-international-legations": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "sierra-leone-civil-war": {
       "from": "git",
       "versions": [
@@ -25100,6 +25109,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "war-of-the-golden-stool": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

@@ -608,12 +608,30 @@
         }
       ]
     },
+    "battle-of-agra": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-albuera": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-aliwal": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -651,6 +669,15 @@
       ]
     },
     "battle-of-blood-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-bronkhorstspruit": {
       "from": "git",
       "versions": [
         {
@@ -700,6 +727,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-castillejos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -801,6 +837,24 @@
         }
       ]
     },
+    "battle-of-fuzhou": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-gandamak": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-gingindlovu": {
       "from": "git",
       "versions": [
@@ -811,6 +865,15 @@
       ]
     },
     "battle-of-ginnis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-gqokli-hill": {
       "from": "git",
       "versions": [
         {
@@ -846,6 +909,24 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-gujrat": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-hakodate": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -936,6 +1017,15 @@
         }
       ]
     },
+    "battle-of-konya": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-kraaipan": {
       "from": "git",
       "versions": [
@@ -981,6 +1071,15 @@
         }
       ]
     },
+    "battle-of-lushunkou": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-macta": {
       "from": "git",
       "versions": [
@@ -1011,6 +1110,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-maiwand": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -1050,8 +1158,35 @@
         }
       ]
     },
+    "battle-of-mudki": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-navarino": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-omdurman": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-palikao": {
+      "from": "revised",
       "versions": [
         {
           "first": true,
@@ -1100,6 +1235,15 @@
         }
       ]
     },
+    "battle-of-rooihuiskraal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-rorke-s-drift": {
       "from": "git",
       "versions": [
@@ -1124,6 +1268,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-schuinshoogte": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -1205,6 +1358,15 @@
         }
       ]
     },
+    "battle-of-taku-forts-1859": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-talana-hill": {
       "from": "git",
       "versions": [
@@ -1241,6 +1403,15 @@
         }
       ]
     },
+    "battle-of-the-col-des-beni-aicha": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "battle-of-the-pyrenees": {
       "from": "git",
       "versions": [
@@ -1251,6 +1422,24 @@
       ]
     },
     "battle-of-the-smala": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-tirad-pass": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-togbao": {
       "from": "git",
       "versions": [
         {
@@ -1289,6 +1478,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-ueno": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -1351,6 +1549,24 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-wad-ras": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-weihaiwei": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -1496,6 +1712,24 @@
       ]
     },
     "bombardment-of-alexandria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "bombardment-of-mogador": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "bombardment-of-tangier": {
       "from": "git",
       "versions": [
         {
@@ -1919,6 +2153,15 @@
       ]
     },
     "egyptian-ottoman-war-1839-1841": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "eighth-xhosa-war": {
       "from": "git",
       "versions": [
         {
@@ -3189,6 +3432,15 @@
         }
       ]
     },
+    "second-battle-of-accra": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "second-battle-of-agordat": {
       "from": "git",
       "versions": [
@@ -3346,6 +3598,15 @@
         }
       ]
     },
+    "second-mandingo-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "second-matabele-war": {
       "from": "git",
       "versions": [
@@ -3419,6 +3680,15 @@
         }
       ]
     },
+    "siege-of-cawnpore": {
+      "from": "revised",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "siege-of-ciudad-rodrigo-1812": {
       "from": "git",
       "versions": [
@@ -3430,6 +3700,15 @@
     },
     "siege-of-constantine": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-delhi-1857": {
+      "from": "revised",
       "versions": [
         {
           "first": true,
@@ -3491,6 +3770,15 @@
             "authors"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "siege-of-marabastad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -3768,6 +4056,15 @@
     },
     "third-anglo-maratha-war": {
       "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "third-battle-of-nanjing": {
+      "from": "revised",
       "versions": [
         {
           "first": true,
@@ -4074,6 +4371,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "wallachian-uprising-of-1821": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
