@@ -6506,6 +6506,12 @@
     },
     {
       "dissent": false,
+      "id": "cologne-war",
+      "kind": "event",
+      "locator": "Q524189"
+    },
+    {
+      "dissent": false,
       "id": "colombian-conflict",
       "kind": "event",
       "locator": "Q169072"
@@ -7550,6 +7556,12 @@
     },
     {
       "dissent": false,
+      "id": "franco-dutch-war",
+      "kind": "event",
+      "locator": "Q646322"
+    },
+    {
+      "dissent": false,
       "id": "franco-moroccan-war",
       "kind": "event",
       "locator": "Q3062439"
@@ -7703,6 +7715,12 @@
       "id": "georgian-uprising-on-texel",
       "kind": "event",
       "locator": "Q161391"
+    },
+    {
+      "dissent": false,
+      "id": "german-peasants-war",
+      "kind": "event",
+      "locator": "Q154031"
     },
     {
       "dissent": false,
@@ -8249,6 +8267,12 @@
       "id": "irish-civil-war",
       "kind": "event",
       "locator": "Q748042, P31 Q8465"
+    },
+    {
+      "dissent": false,
+      "id": "irish-rebellion-of-1798",
+      "kind": "event",
+      "locator": "Q944941"
     },
     {
       "dissent": false,
@@ -8927,6 +8951,12 @@
       "id": "montreux-convention",
       "kind": "event",
       "locator": "Q869500"
+    },
+    {
+      "dissent": false,
+      "id": "morean-war",
+      "kind": "event",
+      "locator": "Q2309409"
     },
     {
       "dissent": false,
@@ -9947,6 +9977,12 @@
       "id": "revolt-of-czechoslovak-legion",
       "kind": "event",
       "locator": "Q118514, P31 Q645883"
+    },
+    {
+      "dissent": false,
+      "id": "revolt-of-the-comuneros",
+      "kind": "event",
+      "locator": "Q151663"
     },
     {
       "dissent": false,
@@ -11690,6 +11726,12 @@
     },
     {
       "dissent": false,
+      "id": "third-silesian-war",
+      "kind": "event",
+      "locator": "Q37467350"
+    },
+    {
+      "dissent": false,
       "id": "thirty-years-war",
       "kind": "event",
       "locator": "Q2487"
@@ -12278,6 +12320,12 @@
     },
     {
       "dissent": false,
+      "id": "war-in-the-vendee",
+      "kind": "event",
+      "locator": "Q8628"
+    },
+    {
+      "dissent": false,
       "id": "war-of-1812",
       "kind": "event",
       "locator": "Q26013"
@@ -12299,6 +12347,12 @@
       "id": "war-of-the-austrian-succession",
       "kind": "event",
       "locator": "Q32929"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-bavarian-succession",
+      "kind": "event",
+      "locator": "Q157548"
     },
     {
       "dissent": false,

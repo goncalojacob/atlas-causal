@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "franco-dutch-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q646322",
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Franco-Dutch War",
+    "pt": "Guerra Franco-Holandesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q646322"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Franco-Dutch War\", revision 1371232778"
+    }
+  ],
+  "title": "Franco-Dutch War",
+  "summary": "The English Wikipedia article \"Franco-Dutch War\", at revision 1371232778, opens: \"The Franco-Dutch War, 1672 to 1678, was primarily fought by France and the Dutch Republic, with both sides backed at different times by a variety of allies. Related conflicts include the Third Anglo-Dutch War of 1672 to 1674 and the Scanian War of 1675 to 1679.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q646322, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between the Dutch Republic and France and their allies (1672-1678)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1672,
+    "end": 1678,
+    "date": "1672-04-06",
+    "endDate": "1678-09-17"
+  },
+  "place": "western-europe",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

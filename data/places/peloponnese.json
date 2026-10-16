@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "peloponnese",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q78967",
+  "sitelinks": {
+    "count": 89,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Peloponnese",
+    "pt": "Peloponeso"
+  },
+  "sources": [],
+  "names": [
+    "Peloponnese",
+    "Peloponeso"
+  ],
+  "where": {
+    "lon": 22.3,
+    "lat": 37.4,
+    "precision": "region",
+    "label": "Peloponnese"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1586,6 +1586,15 @@
         }
       ]
     },
+    "cologne-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "conflicts-between-the-regency-of-algiers-and-morocco": {
       "from": "git",
       "versions": [
@@ -1778,6 +1787,15 @@
             "regionNote"
           ],
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "german-peasants-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -2241,6 +2259,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "revolt-of-the-comuneros": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

@@ -1841,3 +1841,15 @@ Writer A imported it from the planner's queue as item `2026-10-15-asia-055`, ran
 ## Writer A, 2026-10-15: `burmese-siamese-war-1759-1760`, bare
 
 Writer A imported it from the planner's queue as item `2026-10-15-asia-057`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-16: `irish-rebellion-of-1798`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-15-europe-071`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-16: `cologne-war`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-15-europe-072`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-16: `revolt-of-the-comuneros`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-15-europe-075`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.

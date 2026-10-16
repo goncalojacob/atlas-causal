@@ -14804,6 +14804,12 @@
     },
     {
       "dissent": false,
+      "id": "cologne-war",
+      "kind": "event",
+      "locator": "\"Cologne War\", revision 1374675504"
+    },
+    {
+      "dissent": false,
       "id": "colombian-conflict",
       "kind": "event",
       "locator": "\"Colombian conflict\", revision 1376040409"
@@ -15860,6 +15866,12 @@
     },
     {
       "dissent": false,
+      "id": "franco-dutch-war",
+      "kind": "event",
+      "locator": "\"Franco-Dutch War\", revision 1371232778"
+    },
+    {
+      "dissent": false,
       "id": "franco-moroccan-war",
       "kind": "event",
       "locator": "\"Franco-Moroccan War\", revision 1370620127"
@@ -16001,6 +16013,12 @@
       "id": "georgian-uprising-on-texel",
       "kind": "event",
       "locator": "\"Georgian uprising on Texel\", revision 1375503259"
+    },
+    {
+      "dissent": false,
+      "id": "german-peasants-war",
+      "kind": "event",
+      "locator": "\"German Peasants' War\", revision 1373391219"
     },
     {
       "dissent": false,
@@ -16553,6 +16571,12 @@
       "id": "irish-civil-war",
       "kind": "event",
       "locator": "\"Irish Civil War\", revision 1374338052"
+    },
+    {
+      "dissent": false,
+      "id": "irish-rebellion-of-1798",
+      "kind": "event",
+      "locator": "\"Irish Rebellion of 1798\", revision 1378734048"
     },
     {
       "dissent": false,
@@ -17177,6 +17201,12 @@
       "id": "montreux-convention",
       "kind": "event",
       "locator": "\"Montreux Convention Regarding the Regime of the Straits\", revision 1358705200"
+    },
+    {
+      "dissent": false,
+      "id": "morean-war",
+      "kind": "event",
+      "locator": "\"Morean War\", revision 1378704294"
     },
     {
       "dissent": false,
@@ -18185,6 +18215,12 @@
       "id": "revolt-of-czechoslovak-legion",
       "kind": "event",
       "locator": "\"Revolt of the Czechoslovak Legion\", revision 1370706945, first sentence: \"beginning in May 1918 and persisting through evacuation of the Legion from Siberia to Europe in 1920\""
+    },
+    {
+      "dissent": false,
+      "id": "revolt-of-the-comuneros",
+      "kind": "event",
+      "locator": "\"Revolt of the Comuneros\", revision 1373631495"
     },
     {
       "dissent": false,
@@ -20102,6 +20138,12 @@
     },
     {
       "dissent": false,
+      "id": "third-silesian-war",
+      "kind": "event",
+      "locator": "\"Third Silesian War\", revision 1378209984"
+    },
+    {
+      "dissent": false,
       "id": "thirty-years-war",
       "kind": "event",
       "locator": "\"Thirty Years' War\", revision 1376022805"
@@ -20588,6 +20630,12 @@
     },
     {
       "dissent": false,
+      "id": "war-in-the-vendee",
+      "kind": "event",
+      "locator": "\"War in the Vendée\", revision 1378379356"
+    },
+    {
+      "dissent": false,
       "id": "war-of-1812",
       "kind": "event",
       "locator": "\"War of 1812\", revision 1379706723"
@@ -20609,6 +20657,12 @@
       "id": "war-of-the-austrian-succession",
       "kind": "event",
       "locator": "\"War of the Austrian Succession\", revision 1375907167"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-bavarian-succession",
+      "kind": "event",
+      "locator": "\"War of the Bavarian Succession\", revision 1371468535"
     },
     {
       "dissent": false,
