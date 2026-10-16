@@ -4404,6 +4404,187 @@
         "place": "asan"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-073",
+      "writer": "A",
+      "fired": "2026-10-16T18:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-baler",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-075",
+      "writer": "A",
+      "fired": "2026-10-16T18:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nezib",
+        "edges": [],
+        "place": "nizip"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-077",
+      "writer": "A",
+      "fired": "2026-10-16T18:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-seonghwan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-079",
+      "writer": "A",
+      "fired": "2026-10-16T18:22Z",
+      "status": "written",
+      "written": {
+        "event": "jintian-uprising",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-081",
+      "writer": "A",
+      "fired": "2026-10-16T18:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sobraon",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-083",
+      "writer": "A",
+      "fired": "2026-10-16T18:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-koregaon",
+        "edges": [],
+        "place": "koregaon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-085",
+      "writer": "A",
+      "fired": "2026-10-16T18:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-lucknow",
+        "edges": [],
+        "place": "lucknow"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-087",
+      "writer": "A",
+      "fired": "2026-10-16T18:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q700883: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-asia-089",
+      "writer": "A",
+      "fired": "2026-10-16T18:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-peking-1900",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-091",
+      "writer": "A",
+      "fired": "2026-10-16T18:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-manila-1899",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-093",
+      "writer": "A",
+      "fired": "2026-10-16T18:22Z",
+      "status": "written",
+      "written": {
+        "event": "sahkulu-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-095",
+      "writer": "A",
+      "fired": "2026-10-16T18:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chillianwala",
+        "edges": [],
+        "place": "chillianwala"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-097",
+      "writer": "A",
+      "fired": "2026-10-16T18:22Z",
+      "status": "written",
+      "written": {
+        "event": "oriental-crisis-of-1840",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-099",
+      "writer": "A",
+      "fired": "2026-10-16T18:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tientsin",
+        "edges": [],
+        "place": "tianjin"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-101",
+      "writer": "A",
+      "fired": "2026-10-16T18:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ferozeshah",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
