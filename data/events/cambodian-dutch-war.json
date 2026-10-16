@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "cambodian-dutch-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q17048924",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Cambodian–Dutch War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17048924"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cambodian–Dutch War\", revision 1380173970"
+    }
+  ],
+  "title": "Cambodian–Dutch War",
+  "summary": "The English Wikipedia article \"Cambodian–Dutch War\", at revision 1380173970, opens: \"The Cambodian–Dutch War from 1642–1644 was a conflict sparked by a coup which brought a new Cambodian King to the throne who converted to Islam with the help of Malay traders resident in the country. The new King initiated a massacre of Dutch East India Company employees and subsequently defeated the Dutch forces sent to extract retribution from the Cambodians.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17048924, imported by tools/import/wikidata.mjs. The item's own description reads \"1643–1644 War Between the Dutch and Cambodia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1643,
+    "end": 1644
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
