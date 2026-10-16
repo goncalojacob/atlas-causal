@@ -2811,6 +2811,127 @@
       },
       "refusals": [],
       "note": "Q3775537: none of its classes (Q108856008) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-15-europe-071",
+      "writer": "A",
+      "fired": "2026-10-16T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "irish-rebellion-of-1798",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-072",
+      "writer": "A",
+      "fired": "2026-10-16T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "cologne-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-073",
+      "writer": "A",
+      "fired": "2026-10-16T00:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q430726: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-15-europe-074",
+      "writer": "A",
+      "fired": "2026-10-16T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "franco-dutch-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-075",
+      "writer": "A",
+      "fired": "2026-10-16T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "revolt-of-the-comuneros",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-076",
+      "writer": "A",
+      "fired": "2026-10-16T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "third-silesian-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-077",
+      "writer": "A",
+      "fired": "2026-10-16T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "german-peasants-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-078",
+      "writer": "A",
+      "fired": "2026-10-16T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-bavarian-succession",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-079",
+      "writer": "A",
+      "fired": "2026-10-16T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "war-in-the-vendee",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-15-europe-080",
+      "writer": "A",
+      "fired": "2026-10-16T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "morean-war",
+        "edges": [],
+        "place": "peloponnese"
+      },
+      "refusals": []
     }
   ]
 }
