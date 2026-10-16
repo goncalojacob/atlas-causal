@@ -1,0 +1,36 @@
+{
+  "citations": [
+    {
+      "dissent": false,
+      "id": "salazar",
+      "kind": "actor",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "coup-28-may-1926--salazar-finance-minister-1928--enabled",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "salazar-finance-minister-1928--salazar-president-of-council-1932--caused",
+      "kind": "edge",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "salazar-finance-minister-1928",
+      "kind": "event",
+      "locator": null
+    },
+    {
+      "dissent": false,
+      "id": "salazar-prime-minister-1932",
+      "kind": "tenure",
+      "locator": null
+    }
+  ],
+  "id": "rosas-2012-salazar-e-o-poder",
+  "schema": 1
+}
