@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "slachter-s-nek-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5010928",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Slachter's Nek Rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5010928"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Slachter's Nek Rebellion\", revision 1370747569"
+    }
+  ],
+  "title": "Slachter's Nek Rebellion",
+  "summary": "The English Wikipedia article \"Slachter's Nek Rebellion\", at revision 1370747569, opens: \"The Slachter's Nek Rebellion was an uprising against the British colonial government by Boers in 1815 on the eastern border of the Cape Colony.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5010928, imported by tools/import/wikidata.mjs. The item's own description reads \"1815 Boer uprising east of Cape Colony\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

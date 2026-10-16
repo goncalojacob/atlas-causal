@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "panthay-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1230569",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Panthay Rebellion",
+    "pt": "Revolta dos Panthay"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1230569"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Panthay Rebellion\", revision 1372647246"
+    }
+  ],
+  "title": "Panthay Rebellion",
+  "summary": "The English Wikipedia article \"Panthay Rebellion\", at revision 1372647246, opens: \"The Panthay Rebellion (1856–1873), also known as the Du Wenxiu Rebellion, was a rebellion of the Muslim Hui people and other ethnic groups against the Manchu-led Qing dynasty in southwestern Yunnan Province, as part of a wave of Hui-led multi-ethnic unrest.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1230569, imported by tools/import/wikidata.mjs. The item's own description reads \"Muslim minority revolt against the Qing dynasty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1856,
+    "end": 1873
+  },
+  "place": "qing-dynasty",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

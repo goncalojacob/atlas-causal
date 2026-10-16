@@ -4,406 +4,6 @@
   "generated": "2026-10-16",
   "items": [
     {
-      "id": "2026-10-16-africa-020",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q2889965",
-      "title": "Battle of Shimbra Kure",
-      "parents": [
-        "ethiopian-adal-war"
-      ],
-      "edges": [],
-      "rank": "child-of:ethiopian-adal-war",
-      "why": "Africa trails every other lane; Battle of Shimbra Kure is a P361 child of the held Ethiopian\u2013Adal War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-021",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q2888324",
-      "title": "Battle of Coatit",
-      "parents": [
-        "first-italo-ethiopian-war"
-      ],
-      "edges": [],
-      "rank": "child-of:first-italo-ethiopian-war",
-      "why": "Africa trails every other lane; Battle of Coatit is a P361 child of the held First Italo-Ethiopian War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-022",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q2237609",
-      "title": "Siege of Mekelle",
-      "parents": [
-        "first-italo-ethiopian-war"
-      ],
-      "edges": [],
-      "rank": "child-of:first-italo-ethiopian-war",
-      "why": "Africa trails every other lane; Siege of Mekelle is a P361 child of the held First Italo-Ethiopian War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-023",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q111699632",
-      "title": "Black Week",
-      "parents": [
-        "second-boer-war"
-      ],
-      "edges": [],
-      "rank": "child-of:second-boer-war",
-      "why": "Africa trails every other lane; Black Week is a P361 child of the held Second Boer War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-024",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q2670249",
-      "title": "Bombardment of Alexandria",
-      "parents": [
-        "anglo-egyptian-war"
-      ],
-      "edges": [],
-      "rank": "child-of:anglo-egyptian-war",
-      "why": "Africa trails every other lane; Bombardment of Alexandria is a P361 child of the held Anglo-Egyptian War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-025",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q348998",
-      "title": "Battle of Isly",
-      "parents": [
-        "franco-moroccan-war"
-      ],
-      "edges": [],
-      "rank": "child-of:franco-moroccan-war",
-      "why": "Africa trails every other lane; Battle of Isly is a P361 child of the held Franco-Moroccan War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-026",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q20379760",
-      "title": "Capture of Merv",
-      "parents": [
-        "great-game"
-      ],
-      "edges": [],
-      "rank": "child-of:great-game",
-      "why": "Asia trails after Africa; Capture of Merv is a P361 child of the held Great Game and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-027",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2993585",
-      "title": "Panjdeh incident",
-      "parents": [
-        "great-game"
-      ],
-      "edges": [],
-      "rank": "child-of:great-game",
-      "why": "Asia trails after Africa; Panjdeh incident is a P361 child of the held Great Game and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-028",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2302690",
-      "title": "Tobacco Protest",
-      "parents": [
-        "great-game"
-      ],
-      "edges": [],
-      "rank": "child-of:great-game",
-      "why": "Asia trails after Africa; Tobacco Protest is a P361 child of the held Great Game and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-029",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q7510082",
-      "title": "First Herat War",
-      "parents": [
-        "great-game"
-      ],
-      "edges": [],
-      "rank": "child-of:great-game",
-      "why": "Asia trails after Africa; First Herat War is a P361 child of the held Great Game and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-asia-030",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4062556",
-      "title": "Treaty of Allahabad",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
-    },
-    {
-      "id": "2026-10-16-asia-031",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q3305294",
-      "title": "Treaty of Amritsar (1846)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
-    },
-    {
-      "id": "2026-10-16-asia-032",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q17035527",
-      "title": "Treaty of Amritsar (1809)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
-    },
-    {
-      "id": "2026-10-16-asia-033",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q771451",
-      "title": "Convention of Kanagawa",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
-    },
-    {
-      "id": "2026-10-16-asia-034",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q604938",
-      "title": "Convention of Peking",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
-    },
-    {
-      "id": "2026-10-16-asia-035",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2003866",
-      "title": "Treaty of Sugauli",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
-    },
-    {
-      "id": "2026-10-16-asia-036",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q137847",
-      "title": "Treaty of Adrianople (1829)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
-    },
-    {
-      "id": "2026-10-16-asia-037",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2985337",
-      "title": "Treaty of Salbai",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
-    },
-    {
-      "id": "2026-10-16-asia-038",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1342523",
-      "title": "Anglo-Japanese Friendship Treaty",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
-    },
-    {
-      "id": "2026-10-16-asia-039",
-      "planned": "2026-10-16T00:32:45Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1194699",
-      "title": "Treaty of Amity and Commerce (United States\u2013Japan)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Asia trails after Africa; read off the List of treaties page, a major treaty the atlas does not hold with no umbrella to file it under yet."
-    },
-    {
-      "id": "2026-10-16-africa-041",
-      "planned": "2026-10-16T03:25:59Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q604356",
-      "title": "Battle of Tamai",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane. Battle of Tamai is a P361 child of the held Mahdist War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-042",
-      "planned": "2026-10-16T03:25:59Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q2888625",
-      "title": "Battle of Ginnis",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane. Battle of Ginnis is a P361 child of the held Mahdist War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-043",
-      "planned": "2026-10-16T03:25:59Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1164679",
-      "title": "First and Second Battles of El Teb",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane. First and Second Battles of El Teb is a P361 child of the held Mahdist War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-044",
-      "planned": "2026-10-16T03:25:59Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q3921576",
-      "title": "First Battle of Agordat",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane. First Battle of Agordat is a P361 child of the held Mahdist War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-045",
-      "planned": "2026-10-16T03:25:59Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q665983",
-      "title": "Second Battle of Agordat",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane. Second Battle of Agordat is a P361 child of the held Mahdist War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-046",
-      "planned": "2026-10-16T03:25:59Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q3636373",
-      "title": "Battle of Kassala",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane. Battle of Kassala is a P361 child of the held Mahdist War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-047",
-      "planned": "2026-10-16T03:25:59Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q4872453",
-      "title": "Battle of Suakin",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane. Battle of Suakin is a P361 child of the held Mahdist War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-048",
-      "planned": "2026-10-16T03:25:59Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q18161416",
-      "title": "Battle of Aba",
-      "parents": [
-        "mahdist-war"
-      ],
-      "edges": [],
-      "rank": "child-of:mahdist-war",
-      "why": "Africa trails every other lane. Battle of Aba is a P361 child of the held Mahdist War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-049",
-      "planned": "2026-10-16T03:25:59Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q247871",
-      "title": "Battle of Talana Hill",
-      "parents": [
-        "second-boer-war"
-      ],
-      "edges": [],
-      "rank": "child-of:second-boer-war",
-      "why": "Africa trails every other lane. Battle of Talana Hill is a P361 child of the held Second Boer War and its own span lies inside it."
-    },
-    {
-      "id": "2026-10-16-africa-050",
-      "planned": "2026-10-16T03:25:59Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q263950",
-      "title": "Battle of Elandslaagte",
-      "parents": [
-        "second-boer-war"
-      ],
-      "edges": [],
-      "rank": "child-of:second-boer-war",
-      "why": "Africa trails every other lane. Battle of Elandslaagte is a P361 child of the held Second Boer War and its own span lies inside it."
-    },
-    {
       "id": "2026-10-16-africa-051",
       "planned": "2026-10-16T03:25:59Z",
       "lane": "africa",
@@ -479,13 +79,13 @@
       "lane": "africa",
       "writer": "A",
       "qid": "Q2889955",
-      "title": "Battle of Senaf\u00e9",
+      "title": "Battle of Senafé",
       "parents": [
         "first-italo-ethiopian-war"
       ],
       "edges": [],
       "rank": "child-of:first-italo-ethiopian-war",
-      "why": "Africa trails every other lane. Battle of Senaf\u00e9 is a P361 child of the held First Italo-Ethiopian War and its own span lies inside it."
+      "why": "Africa trails every other lane. Battle of Senafé is a P361 child of the held First Italo-Ethiopian War and its own span lies inside it."
     },
     {
       "id": "2026-10-16-africa-057",
@@ -521,13 +121,13 @@
       "lane": "africa",
       "writer": "A",
       "qid": "Q2890049",
-      "title": "Battle of Staou\u00e9li",
+      "title": "Battle of Staouéli",
       "parents": [
         "french-conquest-of-algeria"
       ],
       "edges": [],
       "rank": "child-of:french-conquest-of-algeria",
-      "why": "Africa trails every other lane. Battle of Staou\u00e9li is a P361 child of the held French conquest of Algeria and its own span lies inside it."
+      "why": "Africa trails every other lane. Battle of Staouéli is a P361 child of the held French conquest of Algeria and its own span lies inside it."
     },
     {
       "id": "2026-10-16-africa-060",
@@ -598,6 +198,332 @@
       "edges": [],
       "rank": "child-of:ethiopian-adal-war",
       "why": "Africa trails every other lane. Battle of Antukyah is a P361 child of the held Ethiopian-Adal War and its own span lies inside it."
+    },
+    {
+      "id": "2026-10-16-europe-001",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q478301",
+      "title": "Hussite Wars",
+      "parents": [],
+      "edges": [],
+      "why": "Vital articles level 4 names this religious war with no record yet. It runs from 1419 to 1434, inside the window.",
+      "rank": "vital-4"
+    },
+    {
+      "id": "2026-10-16-europe-002",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q127751",
+      "title": "Wars of the Roses",
+      "parents": [],
+      "edges": [],
+      "why": "Vital articles level 4 names this English civil war with no record yet. It runs from 1455 to 1487, inside the window.",
+      "rank": "vital-4"
+    },
+    {
+      "id": "2026-10-16-europe-003",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q133132",
+      "title": "Paris Commune",
+      "parents": [],
+      "edges": [],
+      "why": "Vital articles level 4 names this Paris uprising of 1871 with no record yet. Its dates fall after the Franco-Prussian War the atlas already holds ends (28 January 1871), so no parent is filed.",
+      "rank": "vital-4"
+    },
+    {
+      "id": "2026-10-16-americas-001",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q12583",
+      "title": "Spanish–American War",
+      "parents": [],
+      "edges": [],
+      "why": "Vital articles level 4 names this 1898 war between Spain and the United States with no record yet, inside the window.",
+      "rank": "vital-4"
+    },
+    {
+      "id": "2026-10-16-asia-040",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q160077",
+      "title": "Fall of Constantinople",
+      "parents": [],
+      "edges": [],
+      "why": "Vital articles level 4 names the 1453 capture of Constantinople with no record yet. Its point sits on the Asian side of the Bosphorus by the atlas's own lane derivation.",
+      "rank": "vital-4"
+    },
+    {
+      "id": "2026-10-16-asia-041",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2584439",
+      "title": "Egyptian–Ottoman War (1831–1833)",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this war with no record yet. It was fought in Ottoman Syria, which the atlas's lane derivation places in asia rather than africa."
+    },
+    {
+      "id": "2026-10-16-asia-042",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2600326",
+      "title": "Egyptian–Ottoman War (1839–1841)",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this war with no record yet. It was fought in the Levant, which the atlas's lane derivation places in asia rather than africa."
+    },
+    {
+      "id": "2026-10-16-asia-043",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q277450",
+      "title": "Aceh War",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this Dutch war in Sumatra with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-asia-044",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q195378",
+      "title": "Anglo-Nepalese War",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this war between Nepal and the East India Company with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-asia-045",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q918132",
+      "title": "Invasion of Java (1811)",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this British amphibious operation with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-asia-046",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2045508",
+      "title": "Java War",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1825 to 1830 Dutch colonial war with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-asia-047",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q965649",
+      "title": "Nian Rebellion",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1851 to 1868 rebellion in northern China with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-asia-048",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1230569",
+      "title": "Panthay Rebellion",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1856 to 1873 revolt against the Qing dynasty in Yunnan with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-asia-049",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q6140819",
+      "title": "Qing reconquest of Xinjiang",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1876 to 1878 campaign with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-asia-050",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q714820",
+      "title": "Satsuma Rebellion",
+      "parents": [
+        "meiji-restoration"
+      ],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1877 revolt of Japanese samurai with no record yet. Its single year falls inside the Meiji Restoration record the atlas already holds (1868 to 1889), so that is filed as its parent."
+    },
+    {
+      "id": "2026-10-16-asia-051",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q233500",
+      "title": "Second Anglo-Burmese War",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1852 war between Britain and Burma with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-asia-052",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q233642",
+      "title": "Second Anglo-Maratha War",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1803 to 1805 war with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-asia-053",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q617210",
+      "title": "Third Anglo-Maratha War",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1817 to 1818 war with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-asia-054",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1926145",
+      "title": "Vellore Mutiny",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1806 revolt against the East India Company with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-asia-055",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2935371",
+      "title": "Cochinchina campaign",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1858 to 1862 French campaign in Vietnam with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-asia-056",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q7524776",
+      "title": "Dogra–Tibetan war",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1841 to 1842 war with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-asia-057",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q889879",
+      "title": "Dungan Revolt (1862–1877)",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this revolt in Xinjiang and northwest China with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-asia-058",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q27963620",
+      "title": "Nepal–Sikh war",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1809 conflict with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-asia-059",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q286655",
+      "title": "Tonkin campaign",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1883 to 1886 French campaign in Vietnam with no record yet; asia trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-africa-065",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q16707899",
+      "title": "Jihad of Usman dan Fodio",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1804 to 1808 jihad that founded the Sokoto Caliphate with no record yet; africa trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-africa-066",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1392699",
+      "title": "Battle of Blood River",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1838 battle of the Great Trek with no record yet; africa trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-africa-067",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q5010928",
+      "title": "Slachter's Nek Rebellion",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1815 Boer uprising east of Cape Colony with no record yet; africa trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-africa-068",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q582594",
+      "title": "Xhosa Wars",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this series of frontier wars, 1779 to 1879, with no record yet; africa trails europe and americas."
+    },
+    {
+      "id": "2026-10-16-africa-069",
+      "planned": "2026-10-16T06:36Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q42417460",
+      "title": "Karonga War",
+      "parents": [],
+      "edges": [],
+      "why": "List of wars 1800-1899 names this 1887 to 1889 conflict in east-central Africa with no record yet; africa trails europe and americas."
     }
   ]
 }

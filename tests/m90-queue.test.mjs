@@ -5,8 +5,10 @@
 // that can be checked here is a rule a writer on a smaller model does not have
 // to know. The malformed shapes below are the brief's own list, one assertion
 // each; `checkQueue` holds the rest — the id that is not unique, the lane that
-// is not a lane, the writer that does not take it, the edge that is not the
-// item's own. (The item with no edge is valid since M91, 13 October.)
+// is not a lane, the edge that is not the item's own. (The item with no edge
+// is valid since M91, 13 October. Since 16 October 2026 a lane no longer
+// picks the writer: the planner assigns writers by turn, and either writer
+// may take any lane.)
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
@@ -14,7 +16,7 @@ import { createValidator } from '../src/validate/schema.js';
 import { WIKIPEDIA_SOURCES as RULES_WIKIPEDIA_SOURCES } from '../src/validate/rules.js';
 import {
   QUEUE_KIND, LOG_KIND, QUEUE_SCHEMA, LOG_SCHEMA,
-  WRITERS, WRITER_LANES, writerFor, REFUSALS, STATUSES, EDGE_TYPES,
+  WRITERS, LANES, REFUSALS, STATUSES, EDGE_TYPES,
   WIKIPEDIA_SOURCES, locatorFor, subjectOf, isImport,
   checkQueue, checkQueueLog, queueState, appliedIds, itemsFor,
   emptyQueue, emptyLog, ITEM_ID,
@@ -147,10 +149,11 @@ test('checkQueue says what the shape cannot', () => {
   assert.match(check([item({ lane: 'asia', id: '2026-10-13-africa-003', writer: 'A' })]).join('\n'), /names the lane "africa"/);
   // A lane outside data/regions.json.
   assert.match(check([item({ lane: 'atlantis', id: '2026-10-13-atlantis-003' })]).join('\n'), /not a lane in data\/regions.json/);
-  // A lane no writer takes.
-  assert.match(check([item({ lane: 'oceania', id: '2026-10-13-oceania-003', writer: 'A' })]).join('\n'), /no writer takes the lane "oceania"/);
-  // The wrong writer for the lane.
-  assert.match(check([item({ writer: 'B' })]).join('\n'), /is writer A's, not B's/);
+  // A lane in data/regions.json that the atlas does not yet write to.
+  assert.match(check([item({ lane: 'oceania', id: '2026-10-13-oceania-003', writer: 'A' })]).join('\n'), /not a lane this atlas writes/);
+  // Since 16 October 2026 the planner assigns writers by turn: an item for
+  // writer B in a lane that used to be writer A's passes the check.
+  assert.deepEqual(check([item({ lane: 'europe', id: '2026-10-13-europe-003', writer: 'B' })]), []);
   // The bar was withdrawn on 13 October 2026 (M91): an import item with no
   // edge is imported and connected when somebody can. Inverted from "an item
   // with no edge does not earn its place"; tests/m91-queue.test.mjs has the rest.
@@ -199,22 +202,26 @@ test('an item that changes a record it already holds needs no qid and may need n
   );
 });
 
-test('the writer mapping is the partition of A10 and A11(b)', () => {
+test('since 16 October 2026 either writer may take any lane the atlas writes to', () => {
   assert.deepEqual(WRITERS, ['A', 'B']);
-  assert.equal(writerFor('africa'), 'A');
-  assert.equal(writerFor('asia'), 'A');
-  assert.equal(writerFor('europe'), 'A');
-  assert.equal(writerFor('americas'), 'B');
-  // Oceania is in data/regions.json and in neither writer's list: no routine
-  // takes it, and the queue says so rather than queueing for nobody.
-  assert.equal(writerFor('oceania'), null);
-  assert.equal(writerFor('atlantis'), null);
-  // No lane belongs to both, and every lane either writer claims is a lane of
-  // data/regions.json — derived from the fixture list, never pinned.
-  const lanes = new Set(REGIONS.map((r) => r.id));
-  const claimed = [...WRITER_LANES.A, ...WRITER_LANES.B];
-  assert.equal(new Set(claimed).size, claimed.length, 'no lane is claimed twice');
-  for (const lane of claimed) assert.ok(lanes.has(lane), `${lane} is a lane of data/regions.json`);
+  assert.deepEqual([...LANES], ['africa', 'asia', 'europe', 'americas']);
+  // Every lane in LANES is a lane of data/regions.json, and oceania — a lane
+  // of data/regions.json the atlas does not write to — is not in LANES.
+  const regionLanes = new Set(REGIONS.map((r) => r.id));
+  for (const lane of LANES) assert.ok(regionLanes.has(lane), `${lane} is a lane of data/regions.json`);
+  assert.ok(!LANES.includes('oceania'));
+  // Each writer may take an item in each of the four lanes: no lane refuses
+  // either writer any more (A10, A11(b) withdrawn).
+  for (const writer of WRITERS) {
+    for (const lane of LANES) {
+      const id = `2026-10-13-${lane}-003`;
+      assert.deepEqual(
+        checkQueue('imports/queue.json', queue([item({ lane, id, writer })]), { regions: REGIONS }),
+        [],
+        `writer ${writer} may take lane ${lane}`,
+      );
+    }
+  }
 });
 
 test('the five types and the two Wikipedia sources are the ones the rest of the atlas knows', () => {

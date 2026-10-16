@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "aceh-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q277450",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Aceh War",
+    "pt": "Guerra de Achém"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q277450"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Aceh War\", revision 1371860816"
+    }
+  ],
+  "title": "Aceh War",
+  "summary": "The English Wikipedia article \"Aceh War\", at revision 1371860816, opens: \"The Aceh War, was an armed military conflict between the Sultanate of Aceh and the Kingdom of the Netherlands which was triggered by discussions between representatives of Aceh and the United States in Singapore during early 1873. The war was part of a series of conflicts in the late 19th century that consolidated Dutch rule over modern-day Indonesia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q277450, imported by tools/import/wikidata.mjs. The item's own description reads \"1873–1904 war resulting in Dutch annexation of Aceh\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1873,
+    "end": 1904
+  },
+  "place": "sumatra",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

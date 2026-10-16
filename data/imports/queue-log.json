@@ -3579,6 +3579,530 @@
         "place": "elandslaagte"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-051",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kraaipan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-052",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kambula",
+        "edges": [],
+        "place": "kambula"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-053",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hlobane",
+        "edges": [],
+        "place": "hlobane"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-054",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gingindlovu",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-055",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-eshowe",
+        "edges": [],
+        "place": "eshowe"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-056",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2889955: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-africa-057",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "action-of-1-august-1801",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-058",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mazagran",
+        "edges": [],
+        "place": "mazagran-algeria"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-059",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-staoueli",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-060",
+      "writer": "A",
+      "fired": "2026-10-16T06:24Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-smala",
+        "edges": [],
+        "place": "zmalet-el-emir-abdelkader"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-001",
+      "writer": "B",
+      "fired": "2026-10-16T06:42Z",
+      "status": "written",
+      "written": {
+        "event": "spanish-american-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-061",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-macta",
+        "edges": [],
+        "place": "macta"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-062",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-constantine",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-063",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sikkak",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-064",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-antukyah",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-001",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "hussite-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-002",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "wars-of-the-roses",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-003",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q133132: its classes disagree: Q1323212 → event, Q43229 → actor"
+    },
+    {
+      "id": "2026-10-16-asia-040",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "fall-of-constantinople",
+        "edges": [],
+        "place": "constantinople"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-041",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "egyptian-ottoman-war-1831-1833",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-042",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "egyptian-ottoman-war-1839-1841",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-043",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "aceh-war",
+        "edges": [],
+        "place": "sumatra"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-044",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-nepalese-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-045",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "invasion-of-java-1811",
+        "edges": [],
+        "place": "java"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-046",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "java-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-047",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q965649: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-asia-048",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "panthay-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-049",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "qing-reconquest-of-xinjiang",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-050",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q714820: none of its classes (Q10931495) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-16-asia-051",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "second-anglo-burmese-war",
+        "edges": [],
+        "place": "lower-myanmar"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-052",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q233642: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-asia-053",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "third-anglo-maratha-war",
+        "edges": [],
+        "place": "maharashtra"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-054",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1926145: no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    {
+      "id": "2026-10-16-asia-055",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "cochinchina-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-056",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "dogra-tibetan-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-057",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "dungan-revolt-1862-1877",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-058",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "nepal-sikh-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-059",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "tonkin-campaign",
+        "edges": [],
+        "place": "tonkin"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-065",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q16707899: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-africa-066",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-blood-river",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-067",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "slachter-s-nek-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-068",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "written",
+      "written": {
+        "event": "xhosa-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-069",
+      "writer": "A",
+      "fired": "2026-10-16T10:01Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q42417460: no date the atlas can use: an event with no year has nowhere on the timeline"
     }
   ]
 }

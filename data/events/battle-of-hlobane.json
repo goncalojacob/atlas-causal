@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-hlobane",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1670862",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Hlobane"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1670862"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Hlobane\", revision 1379912338"
+    }
+  ],
+  "title": "Battle of Hlobane",
+  "summary": "The English Wikipedia article \"Battle of Hlobane\", at revision 1379912338, opens: \"The Battle of Hlobane took place at Hlobane, near the modern town of Vryheid in KwaZulu-Natal, South Africa during the Anglo-Zulu War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1670862, imported by tools/import/wikidata.mjs. The item's own description reads \"1879 battle of the Anglo-Zulu War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879,
+    "date": "1879-03-28"
+  },
+  "place": "hlobane",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-zulu-war"
+}

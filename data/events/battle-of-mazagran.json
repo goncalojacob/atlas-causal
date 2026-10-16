@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-mazagran",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889297",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Battle of Mazagran"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889297"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mazagran\", revision 1370269229"
+    }
+  ],
+  "title": "Battle of Mazagran",
+  "summary": "The English Wikipedia article \"Battle of Mazagran\", at revision 1370269229, opens: \"The Battle of Mazagran was a combat between Arab and Berber forces against French troops during the French conquest of Algeria. The small French contingent, holed up in a fortification at Mazagran, near the port city of Mostaganem, withstood several days of assault by `Abd al-Qādir 's troops. Unaware that the French defenders were running short of gunpowder, Abd al-Qādir's troops withdrew after several days of ineffectual activity.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889297, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in February 1840\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1840,
+    "end": 1840,
+    "date": "1840-02"
+  },
+  "place": "mazagran-algeria",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-conquest-of-algeria"
+}

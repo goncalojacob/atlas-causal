@@ -486,3 +486,60 @@ from 1415 to 1900). The planner's window is now 1415 to 1900, big events
 first (rules card 13). The run ends at 07:00Z on 16 October. Section 12's
 model rule still holds: Opus coordinates, Sonnet plans and rewrites, Haiku
 writes.
+
+## 15. 16 October, 07:00Z: the close of the second night
+
+The assistant disabled the planner, writer A and writer B at 07:00Z on 16
+October, as the owner asked ("Podes continuar até às 8am de amanhã"). The
+rewriter has been off since 14 October, because its work is complete.
+
+**What the night did.** The planner (Sonnet) worked the window 1415 to 1900
+every three hours. Writer A and writer B (Haiku) wrote the queue. The
+graph label fix (branch `m93`, built by a Sonnet agent) let snapshot 27
+publish. Snapshots 27 to 32 went out. The site holds 2,122 event records,
+and `m0` holds 2,132: the last ten wait for the next snapshot. The new events are mostly wars, battles and
+treaties: the Portuguese in the Indian Ocean, Japan's unification and
+opening, the British wars in India and Afghanistan, the Mahdist, Zulu and
+Ethiopian wars, and the European wars from the Peasants' War to the
+Vendée.
+
+**What waits for the owner.**
+- **`m42b` broke and healed itself.** About 05:00Z writer B's own merges of
+  `m0` had deleted index files, and eight tests failed. The assistant's
+  reset was refused by the permission check as a destructive git action.
+  Writer B's 06:40Z fire merged `m0` again and rebuilt the index, and the
+  branch passed and landed. Watch for it: a writer with an empty queue
+  still merges `m0` every hour, and Haiku resolves those merges badly.
+- **Three Anglo-Ashanti War items** keep failing because their Wikipedia
+  lead is missing (the planner's 0312Z note). Their articles may
+  redirect, or the cache fetch may be broken.
+- **Haiku sometimes writes a wrong time** in its status lines, though the
+  prompt says to read `date`. The claim rule still works, because it reads
+  whether a summary line follows a claim.
+- **The Paris Commune** stays out: Wikidata calls it both an event and an
+  actor, and that choice is the owner's.
+
+**Fixes by hand during the night.** The 1890 British Ultimatum lost its
+Scramble for Africa filing, because its lane is europe. A second Haitian
+Revolution record was removed, since the atlas holds it as
+`haitian-revolution-1791-1804`. Fifteen title-table entries that writer
+B's merge had dropped were restored. Rules cards 12 and 13 now carry both
+lessons.
+
+**To resume.** Open a snapshot for the ten records on `m0`. Re-enable the planner and the two writers.
+The window and the model rule (sections 12 and 14) still hold.
+
+## 16. 16 October: faster imports, links later
+
+The owner asked why events came in slowly. The night of 15 October wrote
+about ten an hour. The planner set the pace: it read every article for a
+causal sentence, though nearly every item ended with no edge. Writer B also
+sat idle, since it took only the Americas. The owner then wrote: "You can
+implement all of those, let's unlock the planner for now and look for the
+links later". So:
+- The planner queues events without edges and reads no article for links
+  (rules card 13). It aims for about a hundred items a fire.
+- The planner hands out items by turn, so both writers work in any lane.
+  The queue tool's lane check allows that since branch `m94`.
+- Each writer fire takes up to forty items.
+- Links come later, in a separate pass the owner will start.

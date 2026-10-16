@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "second-anglo-burmese-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q233500",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Second Anglo-Burmese War",
+    "pt": "Segunda Guerra Anglo-Birmanesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q233500"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Anglo-Burmese War\", revision 1370787401"
+    }
+  ],
+  "title": "Second Anglo-Burmese War",
+  "summary": "The English Wikipedia article \"Second Anglo-Burmese War\", at revision 1370787401, opens: \"The Second Anglo-Burmese War or the Second Burma War was the second of the three wars fought between the Burmese Empire and British Empire during the 19th century. The war resulted in a British victory with more Burmese territory being annexed to British India.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q233500, imported by tools/import/wikidata.mjs. The item's own description reads \"war between imperial Britain and Burma in the 19th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1852,
+    "end": 1852,
+    "date": "1852-04-05",
+    "endDate": "1852-12-20"
+  },
+  "place": "lower-myanmar",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

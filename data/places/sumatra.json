@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sumatra",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3492",
+  "sitelinks": {
+    "count": 140,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Sumatra",
+    "pt": "Sumatra"
+  },
+  "sources": [],
+  "names": [
+    "Sumatra"
+  ],
+  "where": {
+    "lon": 101.270830555556,
+    "lat": -0.298888888888889,
+    "precision": "region",
+    "label": "Sumatra"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

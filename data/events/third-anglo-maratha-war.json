@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "third-anglo-maratha-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q617210",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Third Anglo-Maratha War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q617210"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Third Anglo-Maratha War\", revision 1370750299"
+    }
+  ],
+  "title": "Third Anglo-Maratha War",
+  "summary": "The English Wikipedia article \"Third Anglo-Maratha War\", at revision 1370750299, opens: \"The Third Anglo-Maratha War (1817–1819) was the final and decisive conflict between the British East India Company and the Maratha Empire. The war left the Company in control of most of India. It began with an invasion of Maratha territory by East India Company troops, and although the British were outnumbered, the Maratha army was decimated. The troops were led by Governor General Hastings, supported by a force under General Thomas Hislop. Operations began against the Pindaris, a band of local mercenaries and Marathas from central India.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q617210, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between the British East India Company and the Maratha Empire (1817–1819)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1817,
+    "end": 1818,
+    "date": "1817-11",
+    "endDate": "1818-02"
+  },
+  "place": "maharashtra",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
