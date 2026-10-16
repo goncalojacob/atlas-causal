@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "expedition-of-the-col-des-beni-aicha",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q27734332",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Expedition of the Col des Beni Aïcha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q27734332"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Expedition of the Col des Beni Aïcha\", revision 1371416086"
+    }
+  ],
+  "title": "Expedition of the Col des Beni Aïcha",
+  "summary": "The English Wikipedia article \"Expedition of the Col des Beni Aïcha\", at revision 1371416086, opens: \"The Expedition of the Col des Beni Aïcha, or the Expedition of Thénia, or simply Beni Aïcha Expedition, was an expedition in May 1837, during the French conquest of Algeria. This event pitted the troupes coloniales under Colonel Maximilien Joseph Schauenburg against the troops of Beni Aïcha of the Igawawen.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q27734332, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1837,
+    "end": 1837,
+    "date": "1837-05-17",
+    "endDate": "1837-05-19"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "french-conquest-of-algeria"
+}

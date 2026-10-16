@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ambur-q584854",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q584854",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Ambur"
+  },
+  "sources": [],
+  "names": [
+    "Ambur"
+  ],
+  "where": {
+    "lon": 78.7,
+    "lat": 12.78,
+    "precision": "city",
+    "label": "Ambur"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

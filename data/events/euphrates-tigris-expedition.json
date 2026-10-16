@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "euphrates-tigris-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q85970616",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Euphrates-Tigris Expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q85970616"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Euphrates-Tigris Expedition\", revision 1380377208"
+    }
+  ],
+  "title": "Euphrates-Tigris Expedition",
+  "summary": "The English Wikipedia article \"Euphrates-Tigris Expedition\", at revision 1380377208, opens: \"The Euphrates-Tigris Expedition was a military expedition conducted by the Ottoman Army against the Safavids and the Mamluks. It resulted in a victory for the Ottoman Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q85970616, imported by tools/import/wikidata.mjs. The item's own description reads \"1514–1516 military campaign during the Ottoman–Persian Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1515,
+    "end": 1517
+  },
+  "place": "middle-east",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-persian-war-1505-1517"
+}

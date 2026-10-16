@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "portuguese-intervention-in-hormuz-1514-1515",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q131913878",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Portuguese intervention in Hormuz (1514–1515)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q131913878"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese intervention in Hormuz (1514–1515)\", revision 1370704845"
+    }
+  ],
+  "title": "Portuguese intervention in Hormuz (1514–1515)",
+  "summary": "The English Wikipedia article \"Portuguese intervention in Hormuz (1514–1515)\", at revision 1370704845, opens: \"The Portuguese intervention in Hormuz (1514–1515) took place amidst a power struggle within the Kingdom of Hormuz. After the poisoning of King Saif-ud-Din in 1512, Hormuz was divided between Turan Shah and Rais Ahmad, who held control with the support of Ismail I of Persia. The Portuguese, led by Afonso de Albuquerque, intervened, eventually assassinating Rais Ahmad and establishing Portuguese control over Hormuz.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q131913878, imported by tools/import/wikidata.mjs. The item's own description reads \"1514–1515 military intervention\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1514,
+    "end": 1515
+  },
+  "place": "hormuz-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

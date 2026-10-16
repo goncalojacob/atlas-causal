@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-caloocan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7443076",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Second Battle of Caloocan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7443076"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Caloocan\", revision 1370735989"
+    }
+  ],
+  "title": "Second Battle of Caloocan",
+  "summary": "The English Wikipedia article \"Second Battle of Caloocan\", at revision 1370735989, opens: \"The Second Battle of Caloocan, alternately called the Second Battle of Manila, was fought from February 22 to 24, 1899, in Caloocan during the Philippine–American War. The battle featured a Filipino counterattack aimed at gaining Manila from the Americans. This counterattack failed to regain Manila mainly because of lack of coordination among Filipino units and lack of artillery support.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7443076, imported by tools/import/wikidata.mjs. The item's own description reads \"1899 battle between Philippine forces and the US\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1899,
+    "date": "1899-02-22",
+    "endDate": "1899-02-24"
+  },
+  "place": "philippines-q928",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "philippine-american-war"
+}

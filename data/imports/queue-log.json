@@ -5455,6 +5455,494 @@
       },
       "refusals": [],
       "note": "Q4871360 is already the event \"kabul-expedition-1842\""
+    },
+    {
+      "id": "2026-10-16-africa-107",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-elands-river-1900",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-109",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "sinking-of-the-nossa-senhora-da-conceicao",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-111",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "expedition-of-the-col-des-beni-aicha",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-113",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sig",
+        "edges": [],
+        "place": "sig-river"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-115",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q111699632: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-africa-117",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "suakin-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-134",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "1889-1890-pandemic",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-136",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1259178: none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-16-asia-138",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2646343: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-asia-140",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "1863-1875-cholera-pandemic",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-142",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7533201 is already the event \"sixth-cholera-pandemic\""
+    },
+    {
+      "id": "2026-10-16-asia-144",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "pescadores-campaign-1895",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-146",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-bogue",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-148",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ningyuan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-150",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-the-sherpur-cantonment",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-152",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q104892373: none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-16-asia-154",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-cawnpore",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-156",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sanhe",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-158",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-barrier-forts",
+        "edges": [],
+        "place": "pearl-river"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-160",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q10843835: none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-16-asia-162",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "euphrates-tigris-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-164",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-muddy-flat",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-166",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4872458: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-asia-168",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-calumpit",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-170",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tirurangadi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-172",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "portuguese-intervention-in-hormuz-1514-1515",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-174",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "second-battle-of-caloocan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-176",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-beitang",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-178",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-ambur",
+        "edges": [],
+        "place": "ambur-q584854"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-180",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-rangoon-1852",
+        "edges": [],
+        "place": "yangon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-182",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4872960: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-asia-184",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-bangalore",
+        "edges": [],
+        "place": "bengaluru"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-186",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "attack-on-selarong",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-188",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-olongapo",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-003",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "tecumseh-s-war",
+        "edges": [],
+        "place": "midwestern-united-states"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-005",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "north-west-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-007",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "braddock-expedition",
+        "edges": [],
+        "place": "maryland"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-009",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "texas-indian-wars",
+        "edges": [],
+        "place": "texas"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-011",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "yakima-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-013",
+      "writer": "B",
+      "fired": "2026-10-16T20:42Z",
+      "status": "written",
+      "written": {
+        "event": "sioux-wars",
+        "edges": [],
+        "place": "great-plains"
+      },
+      "refusals": []
     }
   ]
 }

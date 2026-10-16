@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "north-west-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1506788",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "North-West Rebellion",
+    "pt": "Rebelião de Saskatchewan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1506788"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"North-West Rebellion\", revision 1379632083"
+    }
+  ],
+  "title": "North-West Rebellion",
+  "summary": "The English Wikipedia article \"North-West Rebellion\", at revision 1379632083, opens: \"The North-West Rebellion was an armed rebellion of Métis under Louis Riel and an associated uprising of Cree and Assiniboine mostly in the District of Saskatchewan, against the Canadian government. Important events included the Frog Lake incident, and the capture of Batoche.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1506788, imported by tools/import/wikidata.mjs. The item's own description reads \"1885 resistance by the Métis and Cree peoples against Canada\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-03-26",
+    "endDate": "1885-06-03"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "american-indian-wars"
+}
