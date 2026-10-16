@@ -1760,6 +1760,12 @@
     },
     {
       "dissent": false,
+      "id": "1510-influenza-pandemic",
+      "kind": "event",
+      "locator": "Q92056662"
+    },
+    {
+      "dissent": false,
       "id": "1556-shaanxi-earthquake",
       "kind": "event",
       "locator": "Q191293"
@@ -3218,6 +3224,12 @@
     },
     {
       "dissent": false,
+      "id": "bannock-war",
+      "kind": "event",
+      "locator": "Q2321496"
+    },
+    {
+      "dissent": false,
       "id": "barbary-portuguese-conflicts",
       "kind": "event",
       "locator": "Q132132698"
@@ -4181,6 +4193,12 @@
       "id": "battle-of-gqokli-hill",
       "kind": "event",
       "locator": "Q2888668"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-grand-pre",
+      "kind": "event",
+      "locator": "Q2888679"
     },
     {
       "dissent": false,
@@ -8138,6 +8156,12 @@
     },
     {
       "dissent": false,
+      "id": "first-anglo-dutch-war",
+      "kind": "event",
+      "locator": "Q1151913"
+    },
+    {
+      "dissent": false,
       "id": "first-anglo-maratha-war",
       "kind": "event",
       "locator": "Q1362209"
@@ -8684,6 +8708,12 @@
     },
     {
       "dissent": false,
+      "id": "great-plague-of-marseille",
+      "kind": "event",
+      "locator": "Q1936002"
+    },
+    {
+      "dissent": false,
       "id": "great-purge",
       "kind": "event",
       "locator": "Q187650"
@@ -8885,6 +8915,12 @@
       "id": "hundred-days",
       "kind": "event",
       "locator": "Q199955"
+    },
+    {
+      "dissent": false,
+      "id": "hungarian-campaign-of-1527-1528",
+      "kind": "event",
+      "locator": "Q1049956"
     },
     {
       "dissent": false,
@@ -9194,6 +9230,12 @@
     },
     {
       "dissent": false,
+      "id": "italian-campaigns-of-the-french-revolutionary-wars",
+      "kind": "event",
+      "locator": "Q7263697"
+    },
+    {
+      "dissent": false,
       "id": "italian-pacification-campaigns-in-somalia",
       "kind": "event",
       "locator": "Q126708875"
@@ -9317,6 +9359,12 @@
       "id": "java-war",
       "kind": "event",
       "locator": "Q2045508"
+    },
+    {
+      "dissent": false,
+      "id": "jicarilla-war",
+      "kind": "event",
+      "locator": "Q6192082"
     },
     {
       "dissent": false,
@@ -10019,6 +10067,12 @@
       "id": "napoleonic-wars",
       "kind": "event",
       "locator": "Q78994"
+    },
+    {
+      "dissent": false,
+      "id": "navajo-wars",
+      "kind": "event",
+      "locator": "Q3778744"
     },
     {
       "dissent": false,
@@ -10763,6 +10817,12 @@
       "id": "pueblo-revolt",
       "kind": "event",
       "locator": "Q1547791"
+    },
+    {
+      "dissent": false,
+      "id": "puget-sound-war",
+      "kind": "event",
+      "locator": "Q2117576"
     },
     {
       "dissent": false,
@@ -11858,6 +11918,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-fort-william-henry",
+      "kind": "event",
+      "locator": "Q2080325"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-fuenterrabia-1523-1524",
       "kind": "event",
       "locator": "Q1541712"
@@ -12311,6 +12377,12 @@
       "id": "siege-of-stralsund-1628",
       "kind": "event",
       "locator": "Q2612839"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-szigetvar",
+      "kind": "event",
+      "locator": "Q606621"
     },
     {
       "dissent": false,
@@ -13682,6 +13754,12 @@
     },
     {
       "dissent": false,
+      "id": "war-of-the-pyrenees",
+      "kind": "event",
+      "locator": "Q324438"
+    },
+    {
+      "dissent": false,
       "id": "war-of-the-seventh-coalition",
       "kind": "event",
       "locator": "Q2724511"
@@ -13763,6 +13841,12 @@
       "id": "white-revolution",
       "kind": "event",
       "locator": "Q1068139"
+    },
+    {
+      "dissent": false,
+      "id": "winnebago-war",
+      "kind": "event",
+      "locator": "Q4256410"
     },
     {
       "dissent": false,

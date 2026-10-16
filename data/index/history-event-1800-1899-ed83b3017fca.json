@@ -565,6 +565,15 @@
         }
       ]
     },
+    "bannock-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "baring-crisis": {
       "from": "git",
       "versions": [
@@ -3393,6 +3402,15 @@
         }
       ]
     },
+    "jicarilla-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "jintian-uprising": {
       "from": "git",
       "versions": [
@@ -3887,6 +3905,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "puget-sound-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -5204,6 +5231,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "winnebago-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

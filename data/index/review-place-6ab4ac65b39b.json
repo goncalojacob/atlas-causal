@@ -1462,6 +1462,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "asia",
+      "kind": "place",
+      "names": [
+        "Asia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 1,
       "id": "asilah",
@@ -7515,7 +7542,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 3,
+      "degree": 4,
       "id": "english-channel",
       "kind": "place",
       "names": [
@@ -9339,6 +9366,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "grand-pre-nova-scotia",
+      "kind": "place",
+      "names": [
+        "Grand-Pré",
+        "Grand-Pré (Nova Escócia)",
+        "Grand-Pré, Nova Scotia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10766,6 +10822,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "idaho",
+      "kind": "place",
+      "names": [
+        "Idaho"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "idelimane",
@@ -10867,6 +10950,33 @@
           "a9-place"
         ],
         "note": "Place read from the item's own P276 under A9 as A12 corrects it, and written by hand because the import reuses a place record and never creates one. The point and the name are the locality item's own; `region` and not `city` because what the item names is a bay, an archipelago or an island and not a point on the ground.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "illinois-q1204",
+      "kind": "place",
+      "names": [
+        "Illinois"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -13791,6 +13901,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "lake-george-town-new-york",
+      "kind": "place",
+      "names": [
+        "Lake George",
+        "Lake George (town), New York"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 1,
       "id": "lake-tana",
@@ -15781,7 +15919,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 2,
       "id": "marseille",
       "kind": "place",
       "names": [
@@ -18482,7 +18620,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 3,
       "id": "northern-italy",
       "kind": "place",
       "names": [
@@ -21296,7 +21434,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 2,
       "id": "pyrenees",
       "kind": "place",
       "names": [
@@ -24885,6 +25023,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "southwestern-united-states",
+      "kind": "place",
+      "names": [
+        "Southwestern United States",
+        "Região Sudoeste dos Estados Unidos"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -25685,6 +25851,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-16",
+      "degree": 1,
+      "id": "szigetvar",
+      "kind": "place",
+      "names": [
+        "Szigetvár"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -27561,7 +27754,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "united-states-q30",
       "kind": "place",
       "names": [

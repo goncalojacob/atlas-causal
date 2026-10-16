@@ -575,6 +575,15 @@
         }
       ]
     },
+    "asia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "asilah": {
       "from": "git",
       "versions": [
@@ -4269,6 +4278,15 @@
         }
       ]
     },
+    "grand-pre-nova-scotia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "grand-trianon": {
       "from": "git",
       "versions": [
@@ -4898,6 +4916,15 @@
         }
       ]
     },
+    "idaho": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "idelimane": {
       "from": "git",
       "versions": [
@@ -4943,6 +4970,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "illinois-q1204": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -6184,6 +6220,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "lake-george-town-new-york": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },
@@ -11320,6 +11365,15 @@
         }
       ]
     },
+    "southwestern-united-states": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
     "soviet-union-q15180": {
       "from": "git",
       "versions": [
@@ -11679,6 +11733,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "szigetvar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
         }
       ]
     },

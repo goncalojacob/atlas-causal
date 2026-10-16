@@ -102,6 +102,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-16",
+      "id": "1510-influenza-pandemic",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1510 influenza pandemic"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "disaster",
       "cites": [
         "wikidata",
@@ -8118,6 +8147,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-16",
+      "id": "bannock-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bannock War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-02",
       "id": "barbary-portuguese-conflicts",
       "kind": "event",
@@ -13297,6 +13358,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Gqokli Hill"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-16",
+      "id": "battle-of-grand-pre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "king-george-s-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Grand Pré"
     },
     {
       "authors": [
@@ -35511,6 +35604,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-16",
+      "id": "first-anglo-dutch-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "anglo-dutch-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Anglo-Dutch War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-15",
       "id": "first-anglo-maratha-war",
       "kind": "event",
@@ -38433,6 +38557,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-16",
+      "id": "great-plague-of-marseille",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Great Plague of Marseille"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -39613,6 +39766,37 @@
       "revised": null,
       "status": "active",
       "title": "Hundred Days"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-16",
+      "id": "hungarian-campaign-of-1527-1528",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-habsburg-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Hungarian campaign of 1527–1528"
     },
     {
       "authors": [
@@ -41345,6 +41529,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-16",
+      "id": "italian-campaigns-of-the-french-revolutionary-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-first-coalition",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Italian campaigns of the French Revolutionary Wars"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-15",
       "id": "italian-pacification-campaigns-in-somalia",
       "kind": "event",
@@ -41981,6 +42195,38 @@
       "revised": null,
       "status": "active",
       "title": "Java War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-16",
+      "id": "jicarilla-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Jicarilla War"
     },
     {
       "authors": [
@@ -45969,6 +46215,36 @@
       "revised": "2026-09-20",
       "status": "active",
       "title": "Portugal signs the North Atlantic Treaty"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-16",
+      "id": "navajo-wars",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Navajo Wars"
     },
     {
       "authors": [
@@ -50220,6 +50496,37 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Pueblo Revolt"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-16",
+      "id": "puget-sound-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Puget Sound War"
     },
     {
       "authors": [
@@ -56134,6 +56441,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-16",
+      "id": "siege-of-fort-william-henry",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "seven-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Fort William Henry"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "siege-of-fuenterrabia-1523-1524",
@@ -58569,6 +58908,38 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Stralsund (1628)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-16",
+      "id": "siege-of-szigetvar",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-habsburg-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Szigetvár"
     },
     {
       "authors": [
@@ -66357,6 +66728,37 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-16",
+      "id": "war-of-the-pyrenees",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-first-coalition",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "War of the Pyrenees"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-09-24",
@@ -66801,6 +67203,38 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "White Revolution"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-16",
+      "id": "winnebago-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "american-indian-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Winnebago War"
     },
     {
       "authors": [
@@ -67483,6 +67917,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1510-influenza-pandemic",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1556-shaanxi-earthquake",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -67988,6 +68428,12 @@
     },
     {
       "id": "banana-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "bannock-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -68564,6 +69010,12 @@
     },
     {
       "id": "battle-of-gqokli-hill",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-grand-pre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -70633,6 +71085,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "first-anglo-dutch-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "first-anglo-maratha-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -70849,6 +71307,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "great-plague-of-marseille",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "great-purge",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -70922,6 +71386,12 @@
     },
     {
       "id": "hundred-days",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "hungarian-campaign-of-1527-1528",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -71029,6 +71499,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "italian-campaigns-of-the-french-revolutionary-wars",
+      "kind": "event",
+      "message": "the event is part of \"war-of-the-first-coalition\" and is not dated inside it",
+      "rule": "child-outside-parent"
+    },
+    {
+      "id": "italian-campaigns-of-the-french-revolutionary-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "italian-pacification-campaigns-in-somalia",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -71066,6 +71548,12 @@
     },
     {
       "id": "java-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "jicarilla-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -71348,6 +71836,12 @@
     },
     {
       "id": "nanjing-massacre",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "navajo-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -71672,6 +72166,12 @@
     },
     {
       "id": "pueblo-revolt",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "puget-sound-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -72223,6 +72723,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-fort-william-henry",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-genoa-1522",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -72518,6 +73024,12 @@
     },
     {
       "id": "siege-of-springfield",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-szigetvar",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -72985,6 +73497,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "war-of-the-pyrenees",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "war-of-the-seventh-coalition",
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
@@ -73010,6 +73528,12 @@
     },
     {
       "id": "white-lotus-rebellion",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "winnebago-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
