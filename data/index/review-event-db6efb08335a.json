@@ -52423,7 +52423,6 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "philippine-revolution",
       "review": {
         "flags": [
           "imported-facts",
@@ -68442,12 +68441,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "siege-of-baler",
-      "kind": "event",
-      "message": "the event is part of \"philippine-revolution\" and is not dated inside it",
-      "rule": "child-outside-parent"
     },
     {
       "id": "siege-of-baler",
