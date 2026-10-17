@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-malakand",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q64879",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Malakand",
+    "pt": "Cerco de Malakand"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q64879"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Malakand\", revision 1370743214"
+    }
+  ],
+  "title": "Siege of Malakand",
+  "summary": "The English Wikipedia article \"Siege of Malakand\", at revision 1370743214, opens: \"The siege of Malakand was the 26 July – 2 August 1897 siege of the British garrison in the Malakand region of colonial British India's North West Frontier Province. The British faced a force of Pashtun tribesmen whose tribal lands had been bisected by the Durand Line, the 1,519 mile (2,445 km) border between Afghanistan and British India drawn up at the end of the Anglo-Afghan wars to help hold back what the British feared to be the Russian Empire's spread of influence towards the Indian subcontinent.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q64879, imported by tools/import/wikidata.mjs. The item's own description reads \"1897 siege of a British garrison by Afghan tribesmen\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1897,
+    "end": 1897,
+    "date": "1897-07-26",
+    "endDate": "1897-08-02"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

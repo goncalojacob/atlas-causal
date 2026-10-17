@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "santhal-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q185263",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Santhal rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q185263"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Santhal rebellion\", revision 1376679986"
+    }
+  ],
+  "title": "Santhal rebellion",
+  "summary": "The English Wikipedia article \"Santhal rebellion\", at revision 1376679986, opens: \"The Santhal Rebellion, also known as the Santhal Hool, was a rebellion in present-day Jharkhand against the East India Company (EIC) and zamindari system by the Santals. It started on 30 June 1855, and on 10 November 1855, martial law was proclaimed by the East India Company which lasted until 3 January 1856, when martial law was suspended and the rebellion was eventually suppressed by the presidency armies.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q185263, imported by tools/import/wikidata.mjs. The item's own description reads \"rebellion in present-day Jharkhand, Eastern India\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1855,
+    "end": 1855,
+    "date": "1855-06-30",
+    "endDate": "1855-11-10"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

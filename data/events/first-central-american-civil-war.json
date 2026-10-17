@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-central-american-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q17633452",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "First Central American Civil War",
+    "pt": "Guerra Civil Centro-Americana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17633452"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Central American Civil War\", revision 1371049652"
+    }
+  ],
+  "title": "First Central American Civil War",
+  "summary": "The English Wikipedia article \"First Central American Civil War\", at revision 1371049652, opens: \"The First Central American Civil War, also known as the Federal War of 1826–1829, was a civil political and military conflict within the Federal Republic of Central America which lasted from 1826 until 1829. The civil war was fought between liberals led by General Francisco Morazán and conservatives led by General Manuel José Arce, the president of Central America and a former liberal.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17633452, imported by tools/import/wikidata.mjs. The item's own description reads \"Central American military conflict from 1826 to 1829\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1826,
+    "end": 1829,
+    "date": "1826-09-06",
+    "endDate": "1829-06-25"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

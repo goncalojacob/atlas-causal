@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "chumash-revolt-of-1824",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5116140",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Chumash revolt of 1824"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5116140"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chumash revolt of 1824\", revision 1370611451"
+    }
+  ],
+  "title": "Chumash revolt of 1824",
+  "summary": "The English Wikipedia article \"Chumash revolt of 1824\", at revision 1370611451, opens: \"The Chumash revolt of 1824 was an uprising of the Chumash against the Spanish and Mexican presence in their ancestral lands. The rebellion began in three of the California Missions in Alta California: Mission Santa Inés, Mission Santa Barbara, and Mission La Purisima, and spread to the surrounding villages. All three missions are located in present-day Santa Barbara County, California. The Chumash revolt was the largest organized resistance movement to occur during the Spanish and Mexican periods in California.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5116140, imported by tools/import/wikidata.mjs. The item's own description reads \"revolt of indigenous Chumash and Yokut people in Alta California in 1824\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1824,
+    "end": 1824,
+    "date": "1824-02-21",
+    "endDate": "1824-06"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

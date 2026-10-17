@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "lunenburg-campaign-1758",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16212881",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Lunenburg campaign (1758)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16212881"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lunenburg campaign (1758)\", revision 1370627192"
+    }
+  ],
+  "title": "Lunenburg campaign (1758)",
+  "summary": "The English Wikipedia article \"Lunenburg campaign (1758)\", at revision 1370627192, opens: \"The Lunenburg campaign was executed by the Mi'kmaq militia and Acadian militia against the Foreign Protestants who the British had settled on the Lunenburg Peninsula during the French and Indian War. The British deployed Joseph Gorham and his Rangers along with Captain Rudolf Faesch and regular troops of the 60th Regiment of Foot to defend Lunenburg. The campaign was so successful, by November 1758, the members of the House of Assembly for Lunenburg stated \"they received no benefit from His Majesty's Troops or Rangers\" and required more protection.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16212881, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1758,
+    "end": 1758,
+    "date": "1758-03",
+    "endDate": "1758-12"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "french-and-indian-war"
+}

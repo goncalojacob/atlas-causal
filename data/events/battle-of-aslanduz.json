@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-aslanduz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2887908",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Aslanduz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2887908"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Aslanduz\", revision 1370107089"
+    }
+  ],
+  "title": "Battle of Aslanduz",
+  "summary": "The English Wikipedia article \"Battle of Aslanduz\", at revision 1370107089, opens: \"The Battle of Aslanduz took place on 31 October and 1 November 1812 between the Russian Empire and Qajar Iran during the Russo-Persian War (1804-1813). Russian Imperial army, smaller in number, defeated the Persian troops and captured the spoils.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2887908, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-10-31",
+    "endDate": "1812-11-01"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
