@@ -518,6 +518,13 @@ export function createTimeline(container, { atlas, state, createScale = createTi
   // `placeLabels` gives on the map and on the graph, and the same one twice.
   let labelFits = () => true;
 
+  // The titles that won the other side of their bar, by id, with the bar's
+  // start they were worked out for. Past the cap the bars share rows and the
+  // side `labelPlacement` prefers is often under a neighbour, while the side
+  // it did not choose is clear. On a 390 px phone with 2,569 events that left
+  // no title at all.
+  const otherSide = new Map();
+
   // **Every bar carries its title** (M77), and past the cap every bar that has
   // room for one. No `+N` and nothing packed away behind a count: a bar with no
   // room for its name still has the name under the pointer.
@@ -530,7 +537,9 @@ export function createTimeline(container, { atlas, state, createScale = createTi
     // cut by it. A name written on the other side of its own bar is still
     // beside the thing it names, which a name half off the page is not.
     const room = labelRoom(name);
-    const at = labelPlacement(item.x, item.width, room, width);
+    const at = otherSide.get(item.id)?.x === item.x
+      ? otherSide.get(item.id).at
+      : labelPlacement(item.x, item.width, room, width);
     // **And never written past the pane's edge** (M88 §9). `labelPlacement`
     // moves a title to the other side of its bar where that side has the room
     // and, where neither does, leaves it on the right — which is M86 §4's own
@@ -929,6 +938,7 @@ export function createTimeline(container, { atlas, state, createScale = createTi
       const x0 = at.anchor === 'end' ? at.x - room : at.x;
       const middle = top + barHeight() / 2;
       wanted.push({
+        bar, room,
         id: event.id,
         text: name,
         x: x0,
@@ -947,11 +957,31 @@ export function createTimeline(container, { atlas, state, createScale = createTi
         },
       });
     }
-    const named = new Set(placeLabels(wanted, {
+    const place = (list, taken) => placeLabels(list, {
       view: { x0: 0, y0: 0, x1: width, y1: height },
       limits: BAR_LABEL_LIMITS,
-      occupied,
-    }).map((label) => label.id));
+      occupied: taken,
+    });
+    const first = place(wanted, occupied);
+    const named = new Set(first.map((label) => label.id));
+    // The titles that found no room on their preferred side try the other one,
+    // in the same order, around the titles already written.
+    otherSide.clear();
+    const retry = [];
+    for (const candidate of wanted) {
+      if (named.has(candidate.id)) continue;
+      const { bar, room } = candidate;
+      const at = candidate.box.x0 === bar.x + bar.width + BAR_LABEL_GAP
+        ? { x: bar.x - BAR_LABEL_GAP, anchor: 'end' }
+        : { x: bar.x + bar.width + BAR_LABEL_GAP, anchor: 'start' };
+      const x0 = at.anchor === 'end' ? at.x - room : at.x;
+      retry.push({ ...candidate, x: x0, box: { ...candidate.box, x0, x1: x0 + room }, at });
+    }
+    for (const label of place(retry, [...occupied, ...first.map((l) => l.box)])) {
+      const candidate = retry.find((c) => c.id === label.id);
+      otherSide.set(label.id, { x: candidate.bar.x, at: candidate.at });
+      named.add(label.id);
+    }
     labelFits = (row, at, room, id) => named.has(id);
     // The strip first, under everything: one path per row, on the floor of
     // the lane the events belong to, or of the first row when there are no
