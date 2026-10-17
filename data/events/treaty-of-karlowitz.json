@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "treaty-of-karlowitz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q192303",
+  "sitelinks": {
+    "count": 51,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Treaty of Karlowitz",
+    "pt": "Tratado de Karlowitz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q192303"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Karlowitz\", revision 1379034998"
+    }
+  ],
+  "title": "Treaty of Karlowitz",
+  "summary": "The English Wikipedia article \"Treaty of Karlowitz\", at revision 1379034998, opens: \"The Treaty of Karlowitz, concluding the Great Turkish War of 1683–1699, in which the Ottoman Empire was defeated by the Holy League at the Battle of Zenta, was signed in Karlowitz, in the Military Frontier of the Habsburg Monarchy, on 26 January 1699. Also known as \"The Austrian treaty that saved Europe\", it marks the end of Ottoman control in much of Central Europe, with their first major territorial losses in Europe, beginning the reversal of almost three centuries of expansion (1299–1683). The treaty established the Habsburg monarchy as the dominant power of the region.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q192303, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1699,
+    "end": 1699,
+    "date": "1699-01-26"
+  },
+  "place": "sremski-karlovci",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": [],
+  "parent": "great-turkish-war"
+}

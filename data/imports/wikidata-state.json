@@ -1914,7 +1914,6 @@
         "Q20870437",
         "Q368457",
         "Q4677350",
-        "Q655480",
         "Q113627918",
         "Q3010371",
         "Q3636310",
@@ -2441,7 +2440,6 @@
         "Q2887867",
         "Q478301",
         "Q127751",
-        "Q133132",
         "Q160077",
         "Q2584439",
         "Q2600326",
@@ -2771,7 +2769,47 @@
         "Q19024",
         "Q309029",
         "Q214148",
-        "Q205422"
+        "Q205422",
+        "Q1025404",
+        "Q616109",
+        "Q745979",
+        "Q727854",
+        "Q823433",
+        "Q655480",
+        "Q1990219",
+        "Q39392",
+        "Q220497",
+        "Q897786",
+        "Q1052780",
+        "Q681416",
+        "Q1187072",
+        "Q1851858",
+        "Q133132",
+        "Q134114",
+        "Q151005",
+        "Q154674",
+        "Q152486",
+        "Q473716",
+        "Q223933",
+        "Q622774",
+        "Q154577",
+        "Q192303",
+        "Q473670",
+        "Q743046",
+        "Q279250",
+        "Q2887837",
+        "Q121335444",
+        "Q5037043",
+        "Q5037069",
+        "Q31070845",
+        "Q4871633",
+        "Q111915806",
+        "Q125496718",
+        "Q4871650",
+        "Q111938762",
+        "Q28458443",
+        "Q133235924",
+        "Q133286997"
       ]
     }
   },
@@ -3347,6 +3385,62 @@
     "Q3536741": {
       "on": "2026-10-17",
       "why": "none of its classes (Q3824506) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q3536929": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q8094772": {
+      "on": "2026-10-17",
+      "why": "none of its classes (Q7692360) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q3591483": {
+      "on": "2026-10-17",
+      "why": "none of its classes (Q7692360) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q2620022": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q4373383": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q3591486": {
+      "on": "2026-10-17",
+      "why": "none of its classes (Q7692360, Q3541302, Q106797758, Q17992244) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q3530500": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q703454": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q638530": {
+      "on": "2026-10-17",
+      "why": "none of its classes (Q3119121) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q727854": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q39392": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q681416": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q743046": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q28458443": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   }
 }

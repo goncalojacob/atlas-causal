@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "italo-ethiopian-war-of-1887-1889",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3778598",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Italo-Ethiopian War of 1887–1889"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3778598"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Italo-Ethiopian War of 1887–1889\", revision 1370624669"
+    }
+  ],
+  "title": "Italo-Ethiopian War of 1887–1889",
+  "summary": "The English Wikipedia article \"Italo-Ethiopian War of 1887–1889\", at revision 1370624669, opens: \"The Italo-Ethiopian War of 1887–1889 was an undeclared war between the Kingdom of Italy and the Ethiopian Empire occurring during the Italian colonization of Eritrea, then a province of the Ethiopian Empire under the name of Mereb Melash. The conflict ended with the treaty of Wuchale, which delimited the border between Ethiopia and Italian Eritrea. The treaty also contained clauses whose different interpretations led to another Italo-Ethiopian War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3778598, imported by tools/import/wikidata.mjs. The item's own description reads \"military conflict between the Kingdom of Italy and the Ethiopian Empire between 1887-1889\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1887,
+    "end": 1889
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "safavid-invasions-of-basra",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q125496718",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Safavid invasions of Basra"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q125496718"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Safavid invasions of Basra\", revision 1378917348"
+    }
+  ],
+  "title": "Safavid invasions of Basra",
+  "summary": "The English Wikipedia article \"Safavid invasions of Basra\", at revision 1378917348, opens: \"The Safavid invasions of Basra were a series of military campaigns undertaken by the Safavid Empire between 1624 and 1629, during their campaign in Ottoman Iraq, in an attempt to capture the city of Basra. Despite two attempts, the Safavids were unable to capture the city. Upon learning of the death of Shah Abbas I, the Safavids retreated, bringing the campaigns to an end.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q125496718, imported by tools/import/wikidata.mjs. The item's own description reads \"1624–1629 invasions\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1624,
+    "end": 1629
+  },
+  "place": "basra",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-safavid-war-1623-1639"
+}

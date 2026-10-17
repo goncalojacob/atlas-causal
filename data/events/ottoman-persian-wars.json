@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ottoman-persian-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4203073",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Ottoman–Persian Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4203073"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman–Persian Wars\", revision 1380571264"
+    }
+  ],
+  "title": "Ottoman–Persian Wars",
+  "summary": "The English Wikipedia article \"Ottoman–Persian Wars\", at revision 1380571264, opens: \"The Ottoman–Persian Wars also called the Ottoman–Iranian Wars were a series of wars between the Ottoman Empire and the Safavid, Afsharid, Zand, and Qajar states of Iran (Persia) through the 16th–19th centuries. The Ottomans consolidated their control of what is today Turkey in the 15th century, and gradually came into conflict with the emerging neighboring Iranian state, led by Ismail I of the Safavid dynasty. The two states were arch rivals, and were also divided by religious grounds, the Ottomans being staunchly Sunni and the Safavids being Shia. A series of military conflicts ensued for centuries during which the two empires competed for control over eastern Anatolia, the Caucasus, and Ottoman Iraq.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4203073, imported by tools/import/wikidata.mjs. The item's own description reads \"series of wars through the 16th to 19th centuries\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1514,
+    "end": 1823
+  },
+  "place": "middle-east",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

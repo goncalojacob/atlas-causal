@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "belgian-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q223933",
+  "sitelinks": {
+    "count": 54,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Belgian Revolution",
+    "pt": "Revolução Belga"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q223933"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Belgian Revolution\", revision 1376536273"
+    }
+  ],
+  "title": "Belgian Revolution",
+  "summary": "The English Wikipedia article \"Belgian Revolution\", at revision 1376536273, opens: \"The Belgian Revolution was a conflict which led to the secession of the southern provinces from the United Kingdom of the Netherlands and the establishment of an independent Kingdom of Belgium.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q223933, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict which led to the secession of the southern provinces from the United Kingdom of the Netherlands and the establishment of an independent Kingdom of Belgium\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1830,
+    "end": 1831,
+    "date": "1830-08-25",
+    "endDate": "1831-07-21"
+  },
+  "place": "southern-netherlands",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

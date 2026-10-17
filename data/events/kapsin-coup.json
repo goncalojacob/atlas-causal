@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kapsin-coup",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q488282",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Kapsin Coup"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q488282"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kapsin Coup\", revision 1377577366"
+    }
+  ],
+  "title": "Kapsin Coup",
+  "summary": "The English Wikipedia article \"Kapsin Coup\", at revision 1377577366, opens: \"The Kapsin Coup, also known as the Kapsin Revolution, was a failed three-day coup d'état that occurred in Korea during 1884. Korean reformers in the Enlightenment Party sought to initiate rapid changes within the country, including eliminating social distinctions by abolishing the legal privileges of the yangban class. The coup d'état attempt, with Japanese support, began on December 4, 1884, with seizure of the royal palace Changdeokgung in Seoul and the killing of several members of the pro-Chinese conservative faction. However, the coup was eventually suppressed by a Chinese garrison stationed in the country. Thwarted by the Chinese actions, some of the pro-Japanese faction leaders found exile in Japan. The event led to informal Chinese domination of Korea from 1885 to 1894. Within the Joseon court, Chinese influence grew particularly under the Resident-General Yuan Shikai.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q488282, imported by tools/import/wikidata.mjs. The item's own description reads \"1884 coup d'état attempt in Joseon Korea\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1884,
+    "end": 1884,
+    "date": "1884-12-04",
+    "endDate": "1884-12-07"
+  },
+  "place": "joseon",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "french-revolution-of-1848",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q622774",
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "French Revolution of 1848",
+    "pt": "Revolução francesa de 1848"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q622774"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French Revolution of 1848\", revision 1380426436"
+    }
+  ],
+  "title": "French Revolution of 1848",
+  "summary": "The English Wikipedia article \"French Revolution of 1848\", at revision 1380426436, opens: \"The French Revolution of 1848, also known as the February Revolution, was a period of civil unrest in France, in February 1848, that led to the collapse of the July Monarchy and the foundation of the French Second Republic. It sparked the wave of revolutions of 1848.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q622774, imported by tools/import/wikidata.mjs. The item's own description reads \"one of a wave of revolutions in 1848 in Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-02-22",
+    "endDate": "1848-12-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

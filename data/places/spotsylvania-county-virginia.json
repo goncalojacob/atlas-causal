@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "spotsylvania-county-virginia",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q506202",
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Spotsylvania County, Virginia",
+    "pt": "Condado de Spotsylvania"
+  },
+  "sources": [],
+  "names": [
+    "Spotsylvania County",
+    "condado de Spotsylvania",
+    "Spotsylvania County, Virginia"
+  ],
+  "where": {
+    "lon": -77.65,
+    "lat": 38.18,
+    "precision": "city",
+    "label": "Spotsylvania County, Virginia"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

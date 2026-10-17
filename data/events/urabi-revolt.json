@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "urabi-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2143253",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Urabi revolt",
+    "pt": "Revolta de Urabi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2143253"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Urabi revolt\", revision 1373818817"
+    }
+  ],
+  "title": "Urabi revolt",
+  "summary": "The English Wikipedia article \"Urabi revolt\", at revision 1373818817, opens: \"The ʻUrabi revolt, also known as the ʻUrabi Revolution, was a nationalist uprising in the Khedivate of Egypt from 1879 to 1882. It was led by and named for Colonel Ahmed Urabi and sought to depose the khedive, Tewfik Pasha, and end British and French influence over the country.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2143253, imported by tools/import/wikidata.mjs. The item's own description reads \"nationalist uprising in Egypt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1882
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

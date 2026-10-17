@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dakota-war-of-1862",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1851858",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Dakota War of 1862"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1851858"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dakota War of 1862\", revision 1379259522"
+    }
+  ],
+  "title": "Dakota War of 1862",
+  "summary": "The English Wikipedia article \"Dakota War of 1862\", at revision 1379259522, opens: \"The Dakota War of 1862, also known as the U.S.-Dakota War of 1862, the Sioux Uprising, the Dakota Uprising, the Sioux Outbreak of 1862, the Dakota Conflict, or Little Crow's War, was an armed conflict between the United States and several eastern bands of Dakota collectively known as the Santee Sioux. It began on August 18, 1862, when the Dakota, who were facing starvation and displacement, attacked the Lower Sioux Agency and white settlements along the Minnesota River valley in southwest Minnesota. The war lasted for five weeks and resulted in the deaths of hundreds of settlers and the displacement of thousands more. In the aftermath, the Dakota people were exiled from their homelands, forcibly sent to reservations in the Dakotas and Nebraska, and the State of Minnesota confiscated and sold all their remaining land in the state. Thirty-eight Dakota men were subsequently hanged for crimes committed during the conflict in the largest mass execution in US history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1851858, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 armed conflict between the United States and eastern Dakota people\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-08-17",
+    "endDate": "1862-12-26"
+  },
+  "place": "minnesota",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": [
+    "sioux-wars",
+    "american-civil-war"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "istanbul",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q406",
+  "sitelinks": {
+    "count": 235,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Istanbul",
+    "pt": "Istambul"
+  },
+  "sources": [],
+  "names": [
+    "Istanbul",
+    "Istambul"
+  ],
+  "where": {
+    "lon": 28.960277777778,
+    "lat": 41.01,
+    "precision": "city",
+    "label": "Istanbul"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
