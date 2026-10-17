@@ -57226,7 +57226,6 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "great-turkish-war",
       "review": {
         "flags": [
           "imported-facts",
@@ -80994,12 +80993,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "russo-turkish-war-1686-1700",
-      "kind": "event",
-      "message": "the event is part of \"great-turkish-war\" and is not dated inside it",
-      "rule": "child-outside-parent"
     },
     {
       "id": "russo-turkish-war-1686-1700",

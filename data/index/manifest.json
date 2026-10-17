@@ -1074,10 +1074,10 @@
   ],
   "files": {
     "citers": "index/citers-d4a3a2df9fce",
-    "core": "index/core-ea9e2c4aad72.json",
+    "core": "index/core-731c6015ae73.json",
     "grounds": "index/grounds-a4c73697aac3.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-b03b4b1da96d.json",
+    "review": "index/review-73894f31410c.json",
     "search": "index/search-89f12b2eccbd.json",
     "sources": "index/sources-b831658bd760.json",
     "territories": "index/territories-377ead434026.json"
@@ -1098,7 +1098,7 @@
       "to": 1599
     },
     {
-      "file": "index/history-event-1600-1699-eef3f487567b.json",
+      "file": "index/history-event-1600-1699-52efec515e58.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "event",
