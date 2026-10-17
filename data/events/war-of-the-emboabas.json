@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "war-of-the-emboabas",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3052957",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "War of the Emboabas",
+    "pt": "Guerra dos Emboabas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3052957"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Emboabas\", revision 1370750001"
+    }
+  ],
+  "title": "War of the Emboabas",
+  "summary": "The English Wikipedia article \"War of the Emboabas\", at revision 1370750001, opens: \"The War of the Emboabas was an internal conflict in colonial Brazil fought between 1707 and 1709 over control of newly discovered gold fields in the interior of the Captaincy of São Vicente. It opposed, on one side, paulista bandeirantes—who had pioneered the exploration of the region and claimed priority or even exclusivity in exploiting the deposits—and, on the other, a heterogeneous group of outsiders from other Brazilian captaincies and from Portugal, pejoratively called emboabas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3052957, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict in colonial-era Brazil\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1707,
+    "end": 1707
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

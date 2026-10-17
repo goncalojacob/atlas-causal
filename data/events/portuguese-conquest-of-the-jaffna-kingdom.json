@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "portuguese-conquest-of-the-jaffna-kingdom",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1754778",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Portuguese conquest of the Jaffna kingdom",
+    "pt": "Conquista portuguesa do Reino de Jafanapatão"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1754778"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese conquest of the Jaffna kingdom\", revision 1371162746"
+    }
+  ],
+  "title": "Portuguese conquest of the Jaffna kingdom",
+  "summary": "The English Wikipedia article \"Portuguese conquest of the Jaffna kingdom\", at revision 1371162746, opens: \"The Portuguese conquest of the Jaffna kingdom occurred after Portuguese traders arrived at the rival Kotte kingdom in the southwest of modern Sri Lanka in 1505. Many kings of Jaffna, such as Cankili I, initially confronted the Portuguese in their attempts at converting the locals to Roman Catholicism, but eventually made peace with them.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1754778, imported by tools/import/wikidata.mjs. The item's own description reads \"Portuguese conquest of the Jaffna kingdom in Sri Lanka (1560-1621)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1560,
+    "end": 1621
+  },
+  "place": "nallur-jaffna",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

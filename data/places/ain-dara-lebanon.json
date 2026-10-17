@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ain-dara-lebanon",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2828131",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Ain Dara, Lebanon"
+  },
+  "sources": [],
+  "names": [
+    "Ain Dara",
+    "Ain Dara, Lebanon"
+  ],
+  "where": {
+    "lon": 35.716667,
+    "lat": 33.783333,
+    "precision": "city",
+    "label": "Ain Dara, Lebanon"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

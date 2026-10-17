@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "franco-spanish-war-1635-1659",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q617333",
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Franco-Spanish War (1635–1659)",
+    "pt": "Guerra Franco-Espanhola (1635-1659)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q617333"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Franco-Spanish War (1635–1659)\", revision 1377785411"
+    }
+  ],
+  "title": "Franco-Spanish War (1635–1659)",
+  "summary": "The English Wikipedia article \"Franco-Spanish War (1635–1659)\", at revision 1377785411, opens: \"The Franco-Spanish War, from May 1635 to November 1659, was fought between France and Spain, each supported by various allies at different points. It consists of two distinct phases, the first from May 1635 to October 1648, which is considered a related conflict of the Thirty Years' War, the second continued until the Treaty of the Pyrenees in 1659.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q617333, imported by tools/import/wikidata.mjs. The item's own description reads \"1635–1659 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1635,
+    "end": 1659,
+    "date": "1635-05-19",
+    "endDate": "1659-11-07"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

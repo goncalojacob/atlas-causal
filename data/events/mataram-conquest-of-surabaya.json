@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mataram-conquest-of-surabaya",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q27958661",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Mataram conquest of Surabaya"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q27958661"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mataram conquest of Surabaya\", revision 1370627824"
+    }
+  ],
+  "title": "Mataram conquest of Surabaya",
+  "summary": "The English Wikipedia article \"Mataram conquest of Surabaya\", at revision 1370627824, opens: \"The Mataram conquest of Surabaya or Mataram–Surabayan War was a military campaign by the Sultanate of Mataram in the early 17th century that resulted in the capture of the Duchy of Surabaya and its allies in eastern Java, in modern-day Indonesia. Prior to this conquest, Mataram and Surabaya were rivals for power in central and eastern Java. The campaign began in 1614 when Mataram, under the leadership of Sultan Agung, attacked Surabaya's allies, including Wirasaba. Surabaya and its allies launched a counterattack but were defeated near Pajang in 1616. Over the next few years, Mataram gradually conquered members of the Surabayan alliance, and by 1620, the city of Surabaya itself was under siege, holding out until it surrendered in 1625. With this conquest, Mataram unified most of central and eastern Java under its control, and cemented its position as the dominant power in Java. Surabaya and other conquered areas would remain in Mataram's hands until it was ceded to the Dutch East India Company in 1743.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q27958661, imported by tools/import/wikidata.mjs. The item's own description reads \"military campaign in Java\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1614,
+    "end": 1625
+  },
+  "place": "java",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

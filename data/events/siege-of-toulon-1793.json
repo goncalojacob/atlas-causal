@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-toulon-1793",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q815228",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Toulon (1793)",
+    "pt": "Cerco de Toulon (1793)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q815228"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Toulon (1793)\", revision 1380566154"
+    }
+  ],
+  "title": "Siege of Toulon (1793)",
+  "summary": "The English Wikipedia article \"Siege of Toulon (1793)\", at revision 1380566154, opens: \"The siege of Toulon took place during the War of the First Coalition. Following the insurrection of 31 May – 2 June 1793, a Federalist revolt against the French First Republic broke out in the city of Toulon, France. The Federalists were soon supplanted by more numerous French Royalists, aided by the First Coalition, which sent forces to help them hold the city. An Anglo-Spanish fleet arrived on 28 August transporting 13,000 British, Spanish, Neapolitan and Sardinian troops. As Toulon was strategically vital, being a major naval port which was then host to a third of the French Navy's ships of the line, the French Republican government quickly moved to recapture the city.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q815228, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 siege during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-08-29",
+    "endDate": "1793-12-19"
+  },
+  "place": "toulon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-first-coalition"
+}

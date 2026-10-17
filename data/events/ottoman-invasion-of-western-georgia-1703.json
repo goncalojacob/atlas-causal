@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ottoman-invasion-of-western-georgia-1703",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q55627998",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Ottoman invasion of western Georgia (1703)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q55627998"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman invasion of western Georgia (1703)\", revision 1373216541"
+    }
+  ],
+  "title": "Ottoman invasion of western Georgia (1703)",
+  "summary": "The English Wikipedia article \"Ottoman invasion of western Georgia (1703)\", at revision 1373216541, opens: \"The 1703 Ottoman invasion of western Georgia was a military expedition undertaken by the Ottoman Empire against the tributary states in western Georgia—Imereti, Guria, and Mingrelia. This considerable military deployment, ostensibly to settle a power struggle in Imereti in favor of the sultan's candidate, portended a change in Ottoman policy in the fluid frontier region in the Caucasus and aimed at consolidating the imperial authority among the restive Georgian subjects. The costly war contributed to the fall of Sultan Mustafa II, having incited a mutiny of the disaffected troops at Constantinople. The new Ottoman government curtailed the campaign and effected withdrawal from much of western Georgia's interior. The Turks held the Black Sea coastline and several fortresses close to the littoral.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q55627998, imported by tools/import/wikidata.mjs. The item's own description reads \"1703 military expedition by the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1703,
+    "end": 1703
+  },
+  "place": "georgia-q230",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

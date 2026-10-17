@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "long-turkish-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q690361",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Long Turkish War",
+    "pt": "Guerra Longa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q690361"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Long Turkish War\", revision 1378916876"
+    }
+  ],
+  "title": "Long Turkish War",
+  "summary": "The English Wikipedia article \"Long Turkish War\", at revision 1378916876, opens: \"The Long Turkish War, or Thirteen Years' War, was an indecisive land war between the Holy Roman Empire and the Ottoman Empire, primarily over the principalities of Wallachia, Transylvania, and Moldavia. It was waged from 1593 to 1606, but in Europe, especially in Hungary, it is called the Fifteen Years' War, reckoning from the 1591–1592 Turkish campaign that captured Bihać in the Kingdom of Croatia. In Turkey, it is called the Ottoman–Austrian War of 1593–1606.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q690361, imported by tools/import/wikidata.mjs. The item's own description reads \"border conflict between the Habsburg Monarchy and the Ottoman Empire over Balkan territories\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1593,
+    "end": 1606,
+    "date": "1593-07-29",
+    "endDate": "1606-11-11"
+  },
+  "place": "balkans",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-habsburg-wars"
+}

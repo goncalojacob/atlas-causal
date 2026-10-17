@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "arizona",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q816",
+  "sitelinks": {
+    "count": 213,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Arizona",
+    "pt": "Arizona"
+  },
+  "sources": [],
+  "names": [
+    "Arizona"
+  ],
+  "where": {
+    "lon": -111.65694444444445,
+    "lat": 34.28666666666667,
+    "precision": "region",
+    "label": "Arizona"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

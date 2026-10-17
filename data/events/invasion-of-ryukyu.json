@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "invasion-of-ryukyu",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1140134",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Invasion of Ryukyu"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1140134"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of Ryukyu\", revision 1370624098"
+    }
+  ],
+  "title": "Invasion of Ryukyu",
+  "summary": "The English Wikipedia article \"Invasion of Ryukyu\", at revision 1370624098, opens: \"The invasion of Ryukyu  by forces of the Japanese feudal domain of Satsuma took place from March to May of 1609, and marked the beginning of the Ryukyu Kingdom's status as a vassal state under the Satsuma domain. Former Satsuma territories that had been invaded by the Ryukyu Kingdom, such as the Amami Islands, were reintegrated into the Satsuma domain. The invasion force was met with stiff resistance from the Ryukyuan military on all but one island during the campaign. Ryukyu would remain a vassal state under Satsuma, alongside its already long-established tributary relationship with China, until it was formally annexed by Japan in 1879 as the Okinawa Prefecture.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1140134, imported by tools/import/wikidata.mjs. The item's own description reads \"invasion of the Ryukyu Kingdom by the Satsuma Domain, resulting in the former’s being reduced to a vassal state of the latter\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1609,
+    "end": 1609,
+    "date": "1609-03-07",
+    "endDate": "1609-04-05"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (from Q17, the country the item names): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

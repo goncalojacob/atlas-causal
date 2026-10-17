@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "prince-of-anhua-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q15665692",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Prince of Anhua rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15665692"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Prince of Anhua rebellion\", revision 1370705068"
+    }
+  ],
+  "title": "Prince of Anhua rebellion",
+  "summary": "The English Wikipedia article \"Prince of Anhua rebellion\", at revision 1370705068, opens: \"The Prince of Anhua rebellion, or the Prince of Anhua's uprising, was a rebellion in China led by Zhu Zhifan, the Prince of Anhua, against the reigning Zhengde Emperor of the Ming dynasty. The rebellion took place in Ningxia, one of the nine military regions along the Mongolian frontier. In 1510, Liu Jin, a court eunuch who held significant power in the government thanks to the trust and support of the Zhengde Emperor, sent officials to Ningxia to enforce tax increases on military households and punish tax debtors, provoking anger and discontent among the local population. Taking advantage of the situation, Zhu Zhifan launched the rebellion on 12 May, declaring it a campaign against Liu Jin. The rebels seized control of the city of Ningxia and eliminated the leading local generals and officials, but the rebellion did not spread beyond the city’s immediate surroundings. In response to the rebellion, pro-government commanders in the region began gathering troops, while the government in Beijing appointed experienced military leaders familiar with local conditions—the general Shen Ying and the official Yang Yiqing—to organize the suppression of the uprising. As reinforcement for the local forces, the government also dispatched more than thirty thousand soldiers from the Beijing garrison against the rebels under the command of the eunuch Zhang Yong.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15665692, imported by tools/import/wikidata.mjs. The item's own description reads \"1510 rebellion in China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1510,
+    "end": 1510,
+    "date": "1510-05-12",
+    "endDate": "1510-05-30"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

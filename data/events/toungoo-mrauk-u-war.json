@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "toungoo-mrauk-u-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q18353636",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Toungoo–Mrauk-U War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18353636"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Toungoo–Mrauk-U War\", revision 1378489793"
+    }
+  ],
+  "title": "Toungoo–Mrauk-U War",
+  "summary": "The English Wikipedia article \"Toungoo–Mrauk-U War\", at revision 1378489793, opens: \"The Toungoo–Mrauk-U War was a military conflict that took place in Arakan from 1545 to 1547 between the Toungoo Dynasty and the Kingdom of Mrauk U. The western kingdom successfully fended off the Toungoo invasions, and kept its independence. The war had a deterrence effect: Mrauk U would not see another Toungoo invasion until 1580.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18353636, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1545,
+    "end": 1547,
+    "date": "1545-10-12",
+    "endDate": "1547-01-30"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "monmouth-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1940446",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Monmouth Rebellion",
+    "pt": "Rebelião de Monmouth"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1940446"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Monmouth Rebellion\", revision 1380559361"
+    }
+  ],
+  "title": "Monmouth Rebellion",
+  "summary": "The English Wikipedia article \"Monmouth Rebellion\", at revision 1380559361, opens: \"The Monmouth Rebellion in June 1685 was an attempt to depose James II, who in February had succeeded his brother Charles II as king of England, Scotland and Ireland. Dissident Protestants led by James Scott, 1st Duke of Monmouth, eldest illegitimate son of Charles II, opposed James largely due to his Catholicism.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1940446, imported by tools/import/wikidata.mjs. The item's own description reads \"1685 English rebellion against James II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1685,
+    "end": 1685,
+    "date": "1685-06",
+    "endDate": "1685-07"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
