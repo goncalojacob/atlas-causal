@@ -1,972 +1,7 @@
 {
   "schema": 1,
   "kind": "import-queue",
-  "generated": "2026-10-17",
   "items": [
-    {
-      "id": "2026-10-17-africa-036",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q808027",
-      "title": "Treaty of Bardo",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 17 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-africa-037",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q2707120",
-      "title": "Treaty of Wuchale",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 17 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-africa-038",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q2143253",
-      "title": "Urabi revolt",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of revolutions and rebellions names it with 16 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-africa-039",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q16707899",
-      "title": "Sokoto Revolution",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 15 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-africa-040",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1456685",
-      "title": "Treaty of Tripoli",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 15 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-africa-041",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q2638505",
-      "title": "Franco-Hova Wars",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 13 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-africa-042",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q3778598",
-      "title": "Italo-Ethiopian War of 1887–1889",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 12 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-africa-043",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q3560710",
-      "title": "Treaty of Simulambuco",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 11 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-africa-044",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q7837248",
-      "title": "Treaty of Tangiers",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 10 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-africa-045",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q767980",
-      "title": "Treaty of Butre",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 8 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-africa-046",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q3536929",
-      "title": "Treaty of Tafna",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 7 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-africa-047",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q3536721",
-      "title": "Treaty with Tunis",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 6 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-africa-048",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q7837034",
-      "title": "Treaty of Desmichels",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 5 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-051",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q269655",
-      "title": "Treaty of Shimonoseki",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 59 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-052",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q203233",
-      "title": "Battle of Plassey",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 58 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-053",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q194113",
-      "title": "Treaty of San Stefano",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 57 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-054",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q238262",
-      "title": "Treaty of Nanjing",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 53 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-055",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q926447",
-      "title": "Treaty of Gulistan",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 50 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-056",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q875512",
-      "title": "Treaty of Turkmenchay",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 49 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-057",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q1420115",
-      "title": "Russo-Persian War of 1826–28",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 40 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-058",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q8094772",
-      "title": "1883 eruption of Krakatoa",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 32 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-059",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2119319",
-      "title": "Peace of Amasya",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 29 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-060",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2060524",
-      "title": "Treaty of Zuhab",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 29 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-061",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q497189",
-      "title": "Treaty of Shimoda",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 29 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-062",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4203073",
-      "title": "Ottoman–Persian Wars",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 28 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-063",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4338038",
-      "title": "Ottoman–Mamluk War of 1516–17",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 27 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-064",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q3591483",
-      "title": "1815 eruption of Mount Tambora",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 24 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-065",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q383067",
-      "title": "Battle of Saragarhi",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 24 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-066",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q612577",
-      "title": "Treaty of Tientsin",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 24 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-067",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2003866",
-      "title": "Sugauli Treaty",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 23 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-068",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2572351",
-      "title": "treaty of Saigon",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 23 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-069",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q259430",
-      "title": "Treaty of Gandamak",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 23 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-070",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q25591101",
-      "title": "Russian colonisation of Central Asia",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 22 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-071",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2646343",
-      "title": "second cholera pandemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of epidemics and pandemics names it with 22 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-072",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2470144",
-      "title": "Treaty of Constantinople",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 20 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-073",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2639320",
-      "title": "Treaty of Yandabo",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 20 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-074",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2646216",
-      "title": "first cholera pandemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of epidemics and pandemics names it with 20 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-075",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q3534685",
-      "title": "Great Famine of 1876–1878",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of natural disasters by death toll names it with 20 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-076",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1142904",
-      "title": "1887 Yellow River flood",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 19 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-077",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q3555069",
-      "title": "Cyprus Convention",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 19 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-078",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q488282",
-      "title": "Gapsin Coup",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 18 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-079",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2657887",
-      "title": "Treaty of Balta Liman",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 17 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-080",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4520158",
-      "title": "Battle of Shanhai Pass",
-      "parents": [
-        "transition-from-ming-to-qing"
-      ],
-      "edges": [],
-      "rank": "child-of:transition-from-ming-to-qing",
-      "why": "The atlas holds its parent transition-from-ming-to-qing. Wikipedia:Vital articles/Level 5/History names it with 16 sitelinks."
-    },
-    {
-      "id": "2026-10-17-asia-081",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q1326406",
-      "title": "Treaty of Wanghia",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 16 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-082",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q668811",
-      "title": "third cholera pandemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of epidemics and pandemics names it with 16 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-083",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q745728",
-      "title": "Bowring Treaty",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 15 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-084",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4462644",
-      "title": "Zunghar genocide",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 14 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-085",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q1044456",
-      "title": "Ten Great Campaigns",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 14 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-086",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2620022",
-      "title": "Treaty of Nasuh Pasha",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 14 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-087",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q7836956",
-      "title": "Treaty of Ahmet Pasha",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 14 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-088",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2718318",
-      "title": "Treaty of the Dardanelles",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 14 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-089",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2356821",
-      "title": "Treaty of Serav",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 13 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-090",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1016779",
-      "title": "Burney Treaty",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 13 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-091",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q1339722",
-      "title": "Convention of Kutahya",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 13 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-092",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4373383",
-      "title": "Mamluk–Portuguese conflicts",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 12 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-093",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q1964224",
-      "title": "Treaty of Rasht",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 12 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-094",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1848807",
-      "title": "Lam Sơn uprising",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of revolutions and rebellions names it with 11 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-095",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q1967582",
-      "title": "Pangkor Treaty of 1874",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 11 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-096",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q3591486",
-      "title": "1792 eruption of Mount Unzen",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of natural disasters by death toll names it with 11 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-097",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4379152",
-      "title": "Amur Annexation",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 10 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-098",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q7836974",
-      "title": "Treaty of Aynalıkavak",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 10 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-099",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q7837107",
-      "title": "Treaty of Kerden",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 10 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-100",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1658558",
-      "title": "Treaty of Kulja",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 10 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-101",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q88772394",
-      "title": "1772–1773 Persian Plague",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of epidemics and pandemics names it with 10 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-102",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q6407091",
-      "title": "Laotian Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of revolutions and rebellions names it with 9 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-103",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2377085",
-      "title": "Anglo-Japanese Treaty of Amity and Commerce",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 9 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-104",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q3530500",
-      "title": "Deccan Famine of 1630–1632",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of natural disasters by death toll names it with 9 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-105",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2135001",
-      "title": "East Timorese rebellions (1860–1912)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of revolutions and rebellions names it with 8 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-106",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q703454",
-      "title": "Treaty of Gyehae",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 8 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-107",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q3538392",
-      "title": "Kandyan Convention",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 8 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-108",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2978493",
-      "title": "Treaty of Giyanti",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 8 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-109",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q3536741",
-      "title": "Treaty of Amity and Commerce between France and Japan",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 8 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-asia-110",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q5208625",
-      "title": "Dagohoy rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of revolutions and rebellions names it with 7 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-031",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q19024",
-      "title": "Boston Tea Party",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 73 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-032",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q33132",
-      "title": "Battle of Gettysburg",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "The atlas holds its parent american-civil-war. Wikipedia:Vital articles/Level 5/History names it with 58 sitelinks."
-    },
-    {
-      "id": "2026-10-17-americas-033",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q309029",
-      "title": "Alaska Purchase",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 58 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-034",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q638530",
-      "title": "Texas Revolution",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 52 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-035",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q214148",
-      "title": "Haymarket affair",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 51 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-036",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q108413",
-      "title": "Wounded Knee Massacre",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 50 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-037",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q205422",
-      "title": "Battle of the Little Bighorn",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 49 sitelinks, the trailing lanes first."
-    },
     {
       "id": "2026-10-17-americas-038",
       "planned": "2026-10-17T03:58:43Z",
@@ -980,40 +15,16 @@
       "why": "Wikipedia:Vital articles/Level 5/History names it with 46 sitelinks, the trailing lanes first."
     },
     {
-      "id": "2026-10-17-americas-039",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1025404",
-      "title": "assassination of Abraham Lincoln",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 45 sitelinks, the trailing lanes first."
-    },
-    {
       "id": "2026-10-17-americas-040",
       "planned": "2026-10-17T03:58:43Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q838980",
       "title": "May Revolution",
       "parents": [],
       "edges": [],
       "rank": "vital-5",
       "why": "Wikipedia:Vital articles/Level 5/History names it with 44 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-041",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q616109",
-      "title": "Treaty of Guadalupe Hidalgo",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 43 sitelinks, the trailing lanes first."
     },
     {
       "id": "2026-10-17-americas-042",
@@ -1030,42 +41,16 @@
       "why": "The atlas holds its parent american-civil-war. Wikipedia:Vital articles/Level 5/History names it with 41 sitelinks."
     },
     {
-      "id": "2026-10-17-americas-043",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q745979",
-      "title": "Battle of Chancellorsville",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "The atlas holds its parent american-civil-war. List of revolutions and rebellions names it with 38 sitelinks."
-    },
-    {
       "id": "2026-10-17-americas-044",
       "planned": "2026-10-17T03:58:43Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q1753636",
       "title": "Gilded Age",
       "parents": [],
       "edges": [],
       "rank": "vital-5",
       "why": "Wikipedia:Vital articles/Level 5/History names it with 37 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-045",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q727854",
-      "title": "Missouri Compromise",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 34 sitelinks, the trailing lanes first."
     },
     {
       "id": "2026-10-17-americas-046",
@@ -1080,42 +65,16 @@
       "why": "Wikipedia:Vital articles/Level 5/History names it with 34 sitelinks, the trailing lanes first."
     },
     {
-      "id": "2026-10-17-americas-047",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q823433",
-      "title": "Oregon Treaty",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 34 sitelinks, the trailing lanes first."
-    },
-    {
       "id": "2026-10-17-americas-048",
       "planned": "2026-10-17T03:58:43Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q351722",
       "title": "Adams–Onís Treaty",
       "parents": [],
       "edges": [],
       "rank": "vital-5",
       "why": "Wikipedia:Vital articles/Level 5/History names it with 33 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-049",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q655480",
-      "title": "Quasi-War",
-      "parents": [
-        "french-revolutionary-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:french-revolutionary-wars",
-      "why": "The atlas holds its parent french-revolutionary-wars. Wikipedia:Vital articles/Level 5/History names it with 32 sitelinks."
     },
     {
       "id": "2026-10-17-americas-050",
@@ -1130,22 +89,10 @@
       "why": "Wikipedia:Vital articles/Level 5/History names it with 31 sitelinks, the trailing lanes first."
     },
     {
-      "id": "2026-10-17-americas-051",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1990219",
-      "title": "French colonization of the Americas",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 28 sitelinks, the trailing lanes first."
-    },
-    {
       "id": "2026-10-17-americas-052",
       "planned": "2026-10-17T03:58:43Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q868481",
       "title": "Battle of Hampton Roads",
       "parents": [
@@ -1154,18 +101,6 @@
       "edges": [],
       "rank": "child-of:american-civil-war",
       "why": "The atlas holds its parent american-civil-war. Wikipedia:Vital articles/Level 5/History names it with 28 sitelinks."
-    },
-    {
-      "id": "2026-10-17-americas-053",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q39392",
-      "title": "Compromise of 1850",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 28 sitelinks, the trailing lanes first."
     },
     {
       "id": "2026-10-17-americas-054",
@@ -1182,42 +117,16 @@
       "why": "The atlas holds its parent american-indian-wars. List of revolutions and rebellions names it with 28 sitelinks."
     },
     {
-      "id": "2026-10-17-americas-055",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q220497",
-      "title": "New York City draft riots",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of revolutions and rebellions names it with 28 sitelinks, the trailing lanes first."
-    },
-    {
       "id": "2026-10-17-americas-056",
       "planned": "2026-10-17T03:58:43Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q331377",
       "title": "Bleeding Kansas",
       "parents": [],
       "edges": [],
       "rank": "vital-5",
       "why": "Wikipedia:Vital articles/Level 5/History names it with 27 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-057",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q897786",
-      "title": "Burning of Washington",
-      "parents": [
-        "war-of-1812"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-1812",
-      "why": "The atlas holds its parent war-of-1812. Wikipedia:Vital articles/Level 5/History names it with 27 sitelinks."
     },
     {
       "id": "2026-10-17-americas-058",
@@ -1234,42 +143,16 @@
       "why": "The atlas holds its parent american-civil-war. Wikipedia:Vital articles/Level 5/History names it with 27 sitelinks."
     },
     {
-      "id": "2026-10-17-americas-059",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1052780",
-      "title": "Sherman's March to the Sea",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "The atlas holds its parent american-civil-war. Wikipedia:Vital articles/Level 5/History names it with 27 sitelinks."
-    },
-    {
       "id": "2026-10-17-americas-060",
       "planned": "2026-10-17T03:58:43Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q288251",
       "title": "Cisplatine War",
       "parents": [],
       "edges": [],
       "rank": "vital-5",
       "why": "Wikipedia:Vital articles/Level 5/History names it with 26 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-061",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q681416",
-      "title": "French and Indian Wars",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 25 sitelinks, the trailing lanes first."
     },
     {
       "id": "2026-10-17-americas-062",
@@ -1284,43 +167,16 @@
       "why": "Wikipedia:Vital articles/Level 5/History names it with 25 sitelinks, the trailing lanes first."
     },
     {
-      "id": "2026-10-17-americas-063",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1187072",
-      "title": "Texas annexation",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 24 sitelinks, the trailing lanes first."
-    },
-    {
       "id": "2026-10-17-americas-064",
       "planned": "2026-10-17T03:58:43Z",
       "lane": "americas",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q209297",
       "title": "Farroupilha Revolution",
       "parents": [],
       "edges": [],
       "rank": "list",
       "why": "List of revolutions and rebellions names it with 23 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-065",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1851858",
-      "title": "Dakota War of 1862",
-      "parents": [
-        "sioux-wars",
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:sioux-wars",
-      "why": "The atlas holds its parent sioux-wars. List of revolutions and rebellions names it with 23 sitelinks."
     },
     {
       "id": "2026-10-17-europe-021",
@@ -1335,42 +191,16 @@
       "why": "Wikipedia:Vital articles/Level 5/History names it with 95 sitelinks, the trailing lanes first."
     },
     {
-      "id": "2026-10-17-europe-022",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q133132",
-      "title": "Paris Commune",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-4",
-      "why": "Wikipedia:Vital articles/Level 4/History names it with 88 sitelinks, the trailing lanes first."
-    },
-    {
       "id": "2026-10-17-europe-023",
       "planned": "2026-10-17T03:58:43Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q171416",
       "title": "Battle of Trafalgar",
       "parents": [],
       "edges": [],
       "rank": "vital-5",
       "why": "Wikipedia:Vital articles/Level 5/History names it with 78 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-europe-024",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q134114",
-      "title": "Battle of Austerlitz",
-      "parents": [
-        "war-of-the-third-coalition"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-the-third-coalition",
-      "why": "The atlas holds its parent war-of-the-third-coalition. Wikipedia:Vital articles/Level 5/History names it with 75 sitelinks."
     },
     {
       "id": "2026-10-17-europe-025",
@@ -1387,22 +217,10 @@
       "why": "The atlas holds its parent ottoman-venetian-war-1570-1573. Wikipedia:Vital articles/Level 5/History names it with 72 sitelinks."
     },
     {
-      "id": "2026-10-17-europe-026",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q151005",
-      "title": "Battle of Leipzig",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 65 sitelinks, the trailing lanes first."
-    },
-    {
       "id": "2026-10-17-europe-027",
       "planned": "2026-10-17T03:58:43Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q184320",
       "title": "Battle of Borodino",
       "parents": [
@@ -1411,20 +229,6 @@
       "edges": [],
       "rank": "child-of:french-invasion-of-russia",
       "why": "The atlas holds its parent french-invasion-of-russia. Wikipedia:Vital articles/Level 5/History names it with 64 sitelinks."
-    },
-    {
-      "id": "2026-10-17-europe-028",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q154674",
-      "title": "Peace of Utrecht",
-      "parents": [
-        "war-of-the-spanish-succession"
-      ],
-      "edges": [],
-      "rank": "child-of:war-of-the-spanish-succession",
-      "why": "The atlas holds its parent war-of-the-spanish-succession. Wikipedia:Vital articles/Level 5/History names it with 64 sitelinks."
     },
     {
       "id": "2026-10-17-europe-029",
@@ -1439,44 +243,16 @@
       "why": "Wikipedia:Vital articles/Level 5/History names it with 62 sitelinks, the trailing lanes first."
     },
     {
-      "id": "2026-10-17-europe-030",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q152486",
-      "title": "Battle of Poltava",
-      "parents": [
-        "great-northern-war"
-      ],
-      "edges": [],
-      "rank": "child-of:great-northern-war",
-      "why": "The atlas holds its parent great-northern-war. Wikipedia:Vital articles/Level 5/History names it with 62 sitelinks."
-    },
-    {
       "id": "2026-10-17-europe-031",
       "planned": "2026-10-17T03:58:43Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q217398",
       "title": "Berne Convention for the Protection of Literary and Artistic Works",
       "parents": [],
       "edges": [],
       "rank": "list",
       "why": "List of treaties names it with 60 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-europe-032",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q473716",
-      "title": "Hungarian Revolution of 1848",
-      "parents": [
-        "revolutions-of-1848"
-      ],
-      "edges": [],
-      "rank": "child-of:revolutions-of-1848",
-      "why": "The atlas holds its parent revolutions-of-1848. Wikipedia:Vital articles/Level 5/History names it with 58 sitelinks."
     },
     {
       "id": "2026-10-17-europe-033",
@@ -1491,22 +267,10 @@
       "why": "Wikipedia:Vital articles/Level 5/History names it with 56 sitelinks, the trailing lanes first."
     },
     {
-      "id": "2026-10-17-europe-034",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q223933",
-      "title": "Belgian Revolution",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 55 sitelinks, the trailing lanes first."
-    },
-    {
       "id": "2026-10-17-europe-035",
       "planned": "2026-10-17T03:58:43Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q58732",
       "title": "Siege of Malta",
       "parents": [
@@ -1515,18 +279,6 @@
       "edges": [],
       "rank": "child-of:ottoman-habsburg-wars",
       "why": "The atlas holds its parent ottoman-habsburg-wars. Wikipedia:Vital articles/Level 5/History names it with 55 sitelinks."
-    },
-    {
-      "id": "2026-10-17-europe-036",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q622774",
-      "title": "French Revolution of 1848",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 55 sitelinks, the trailing lanes first."
     },
     {
       "id": "2026-10-17-europe-037",
@@ -1541,42 +293,16 @@
       "why": "List of treaties names it with 54 sitelinks, the trailing lanes first."
     },
     {
-      "id": "2026-10-17-europe-038",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q154577",
-      "title": "Peace of Augsburg",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 53 sitelinks, the trailing lanes first."
-    },
-    {
       "id": "2026-10-17-europe-039",
       "planned": "2026-10-17T03:58:43Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q382116",
       "title": "Caucasian War",
       "parents": [],
       "edges": [],
       "rank": "vital-5",
       "why": "Wikipedia:Vital articles/Level 5/History names it with 52 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-europe-040",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q192303",
-      "title": "treaty of Karlowitz",
-      "parents": [
-        "great-turkish-war"
-      ],
-      "edges": [],
-      "rank": "child-of:great-turkish-war",
-      "why": "The atlas holds its parent great-turkish-war. List of treaties names it with 52 sitelinks."
     },
     {
       "id": "2026-10-17-europe-041",
@@ -1591,40 +317,16 @@
       "why": "Wikipedia:Vital articles/Level 5/History names it with 51 sitelinks, the trailing lanes first."
     },
     {
-      "id": "2026-10-17-europe-042",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q473670",
-      "title": "January Uprising",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of revolutions and rebellions names it with 51 sitelinks, the trailing lanes first."
-    },
-    {
       "id": "2026-10-17-europe-043",
       "planned": "2026-10-17T03:58:43Z",
       "lane": "europe",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q206752",
       "title": "Treaty of Campo Formio",
       "parents": [],
       "edges": [],
       "rank": "list",
       "why": "List of treaties names it with 51 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-europe-044",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q743046",
-      "title": "Russo-Turkish Wars",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 50 sitelinks, the trailing lanes first."
     },
     {
       "id": "2026-10-17-europe-045",
@@ -1639,24 +341,10 @@
       "why": "List of revolutions and rebellions names it with 50 sitelinks, the trailing lanes first."
     },
     {
-      "id": "2026-10-17-africa-049",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q279250",
-      "title": "Battle of Baçente",
-      "parents": [
-        "ethiopian-adal-war"
-      ],
-      "edges": [],
-      "rank": "child-of:ethiopian-adal-war",
-      "why": "P361/P527 child of a thin umbrella in window, 6 sitelinks. Files under ethiopian-adal-war."
-    },
-    {
       "id": "2026-10-17-africa-050",
       "planned": "2026-10-17T04:22Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q726829",
       "title": "Battle of Sahart",
       "parents": [
@@ -1665,20 +353,6 @@
       "edges": [],
       "rank": "child-of:ethiopian-adal-war",
       "why": "P361/P527 child of a thin umbrella in window, 6 sitelinks. Files under ethiopian-adal-war."
-    },
-    {
-      "id": "2026-10-17-africa-051",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q2887837",
-      "title": "Battle of Amba Sel",
-      "parents": [
-        "ethiopian-adal-war"
-      ],
-      "edges": [],
-      "rank": "child-of:ethiopian-adal-war",
-      "why": "P361/P527 child of a thin umbrella in window, 3 sitelinks. Files under ethiopian-adal-war."
     },
     {
       "id": "2026-10-17-africa-052",
@@ -1695,24 +369,10 @@
       "why": "P361/P527 child of a thin umbrella in window, 3 sitelinks. Files under ethiopian-adal-war."
     },
     {
-      "id": "2026-10-17-africa-053",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q121335444",
-      "title": "Battle of Massawa (1541)",
-      "parents": [
-        "ethiopian-adal-war"
-      ],
-      "edges": [],
-      "rank": "child-of:ethiopian-adal-war",
-      "why": "P361/P527 child of a thin umbrella in window, 1 sitelinks. Files under ethiopian-adal-war."
-    },
-    {
       "id": "2026-10-17-africa-054",
       "planned": "2026-10-17T04:22Z",
       "lane": "africa",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q141539388",
       "title": "Battle of Badeqe",
       "parents": [
@@ -1721,20 +381,6 @@
       "edges": [],
       "rank": "child-of:ethiopian-adal-war",
       "why": "P361/P527 child of a thin umbrella in window, 1 sitelinks. Files under ethiopian-adal-war."
-    },
-    {
-      "id": "2026-10-17-asia-111",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q5037043",
-      "title": "Capture of Mỹ Tho",
-      "parents": [
-        "cochinchina-campaign"
-      ],
-      "edges": [],
-      "rank": "child-of:cochinchina-campaign",
-      "why": "P361/P527 child of a thin umbrella in window, 6 sitelinks. Files under cochinchina-campaign."
     },
     {
       "id": "2026-10-17-asia-112",
@@ -1751,24 +397,10 @@
       "why": "P361/P527 child of a thin umbrella in window, 5 sitelinks. Files under cochinchina-campaign."
     },
     {
-      "id": "2026-10-17-asia-113",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q5037069",
-      "title": "Capture of Vĩnh Long",
-      "parents": [
-        "cochinchina-campaign"
-      ],
-      "edges": [],
-      "rank": "child-of:cochinchina-campaign",
-      "why": "P361/P527 child of a thin umbrella in window, 5 sitelinks. Files under cochinchina-campaign."
-    },
-    {
       "id": "2026-10-17-asia-114",
       "planned": "2026-10-17T04:22Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q118928943",
       "title": "Capture of Tabriz (1514)",
       "parents": [
@@ -1777,20 +409,6 @@
       "edges": [],
       "rank": "child-of:ottoman-persian-war-1505-1517",
       "why": "P361/P527 child of a thin umbrella in window, 5 sitelinks. Files under ottoman-persian-war-1505-1517."
-    },
-    {
-      "id": "2026-10-17-asia-115",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q31070845",
-      "title": "Siege of Erivan (1635)",
-      "parents": [
-        "ottoman-safavid-war-1623-1639"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-safavid-war-1623-1639",
-      "why": "P361/P527 child of a thin umbrella in window, 4 sitelinks. Files under ottoman-safavid-war-1623-1639."
     },
     {
       "id": "2026-10-17-asia-116",
@@ -1807,24 +425,10 @@
       "why": "P361/P527 child of a thin umbrella in window, 4 sitelinks. Files under ottoman-safavid-war-1623-1639."
     },
     {
-      "id": "2026-10-17-asia-117",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4871633",
-      "title": "Battle of Mahidpur",
-      "parents": [
-        "third-anglo-maratha-war"
-      ],
-      "edges": [],
-      "rank": "child-of:third-anglo-maratha-war",
-      "why": "P361/P527 child of a thin umbrella in window, 4 sitelinks. Files under third-anglo-maratha-war."
-    },
-    {
       "id": "2026-10-17-asia-118",
       "planned": "2026-10-17T04:22Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4940509",
       "title": "Bombardment of Qui Nhơn",
       "parents": [
@@ -1833,20 +437,6 @@
       "edges": [],
       "rank": "child-of:cochinchina-campaign",
       "why": "P361/P527 child of a thin umbrella in window, 4 sitelinks. Files under cochinchina-campaign."
-    },
-    {
-      "id": "2026-10-17-asia-119",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q111915806",
-      "title": "Trabzon Expedition (1505)",
-      "parents": [
-        "ottoman-persian-war-1505-1517"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-persian-war-1505-1517",
-      "why": "P361/P527 child of a thin umbrella in window, 4 sitelinks. Files under ottoman-persian-war-1505-1517."
     },
     {
       "id": "2026-10-17-asia-120",
@@ -1863,24 +453,10 @@
       "why": "P361/P527 child of a thin umbrella in window, 4 sitelinks. Files under ottoman-persian-war-1505-1517."
     },
     {
-      "id": "2026-10-17-asia-121",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q125496718",
-      "title": "Safavid invasions of Basra",
-      "parents": [
-        "ottoman-safavid-war-1623-1639"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-safavid-war-1623-1639",
-      "why": "P361/P527 child of a thin umbrella in window, 3 sitelinks. Files under ottoman-safavid-war-1623-1639."
-    },
-    {
       "id": "2026-10-17-asia-122",
       "planned": "2026-10-17T04:22Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q4871304",
       "title": "Battle of Jaithak",
       "parents": [
@@ -1889,20 +465,6 @@
       "edges": [],
       "rank": "child-of:anglo-nepalese-war",
       "why": "P361/P527 child of a thin umbrella in window, 3 sitelinks. Files under anglo-nepalese-war."
-    },
-    {
-      "id": "2026-10-17-asia-123",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4871650",
-      "title": "Battle of Mallavelly",
-      "parents": [
-        "fourth-anglo-mysore-war"
-      ],
-      "edges": [],
-      "rank": "child-of:fourth-anglo-mysore-war",
-      "why": "P361/P527 child of a thin umbrella in window, 3 sitelinks. Files under fourth-anglo-mysore-war."
     },
     {
       "id": "2026-10-17-asia-124",
@@ -1919,24 +481,10 @@
       "why": "P361/P527 child of a thin umbrella in window, 3 sitelinks. Files under fourth-anglo-mysore-war."
     },
     {
-      "id": "2026-10-17-asia-125",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q111938762",
-      "title": "Trabzon Expedition (1510)",
-      "parents": [
-        "ottoman-persian-war-1505-1517"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-persian-war-1505-1517",
-      "why": "P361/P527 child of a thin umbrella in window, 3 sitelinks. Files under ottoman-persian-war-1505-1517."
-    },
-    {
       "id": "2026-10-17-asia-126",
       "planned": "2026-10-17T04:22Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q18750184",
       "title": "Battle of Ramu",
       "parents": [
@@ -1945,20 +493,6 @@
       "edges": [],
       "rank": "child-of:first-anglo-burmese-war",
       "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under first-anglo-burmese-war."
-    },
-    {
-      "id": "2026-10-17-asia-127",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q28458443",
-      "title": "Battle of Wai",
-      "parents": [
-        "deccan-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:deccan-wars",
-      "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under deccan-wars."
     },
     {
       "id": "2026-10-17-asia-128",
@@ -1975,40 +509,12 @@
       "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under deccan-wars."
     },
     {
-      "id": "2026-10-17-asia-129",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q133235924",
-      "title": "Siege of Erivan (1636)",
-      "parents": [
-        "ottoman-safavid-war-1623-1639"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-safavid-war-1623-1639",
-      "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under ottoman-safavid-war-1623-1639."
-    },
-    {
       "id": "2026-10-17-asia-130",
       "planned": "2026-10-17T04:22Z",
       "lane": "asia",
-      "writer": "A",
+      "writer": "B",
       "qid": "Q112665913",
       "title": "Storming of Pleret",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under java-war."
-    },
-    {
-      "id": "2026-10-17-asia-131",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q133286997",
-      "title": "Battle of Fort Vredeburg",
       "parents": [
         "java-war"
       ],
@@ -3465,6 +1971,2012 @@
       "edges": [],
       "rank": "child-of:voyages-of-christopher-columbus",
       "why": "P361/P527 child of a thin umbrella in window, 9 sitelinks. Wikidata classes it as marine navigation (Q3337280), not in the class table, but the title is plainly a voyage. Files under voyages-of-christopher-columbus."
+    },
+    {
+      "id": "2026-10-17-africa-055",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1915417",
+      "title": "Battle of Santa Cruz de Tenerife",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Wikidata names War of the Spanish Succession as its P361 parent, but the event sits in a different lane, so it stands alone. 9 sitelinks."
+    },
+    {
+      "id": "2026-10-17-asia-149",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q16825552",
+      "title": "Capture of East India Company ship Nautilus",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Wikidata names War of 1812 as its P361 parent, but the event sits in a different lane, so it stands alone. 1 sitelinks."
+    },
+    {
+      "id": "2026-10-17-asia-150",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q115839558",
+      "title": "Battle of the Malacca Strait",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Wikidata names War of the Spanish Succession as its P361 parent, but the event sits in a different lane, so it stands alone. 2 sitelinks."
+    },
+    {
+      "id": "2026-10-17-asia-151",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q28458443",
+      "title": "Battle of Wai",
+      "parents": [
+        "deccan-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:deccan-wars",
+      "why": "The atlas holds its parent deccan-wars. A P361/P527 query over the atlas's thin umbrellas names it with 2 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-107",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q41894",
+      "title": "Battle of New Orleans",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 35 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-108",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q430053",
+      "title": "Great Sioux War of 1876",
+      "parents": [
+        "sioux-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:sioux-wars",
+      "why": "The atlas holds its parent sioux-wars. A P361/P527 query over the atlas's thin umbrellas names it with 21 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-109",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q200682",
+      "title": "Battle of Queenston Heights",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 18 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-110",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q645288",
+      "title": "Battle of the Thames",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 18 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-111",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q990715",
+      "title": "Battle of Lake Erie",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 18 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-112",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1186260",
+      "title": "Creek War",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 18 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-113",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1850527",
+      "title": "Battle of Baltimore",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 17 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-114",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2060306",
+      "title": "Red Cloud's War",
+      "parents": [
+        "sioux-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:sioux-wars",
+      "why": "The atlas holds its parent sioux-wars. A P361/P527 query over the atlas's thin umbrellas names it with 15 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-115",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2237111",
+      "title": "Battle of Plattsburgh",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 14 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-116",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1543656",
+      "title": "Grattan massacre",
+      "parents": [
+        "sioux-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:sioux-wars",
+      "why": "The atlas holds its parent sioux-wars. A P361/P527 query over the atlas's thin umbrellas names it with 13 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-117",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q365640",
+      "title": "Battle of Beaver Dams",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 11 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-118",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1432141",
+      "title": "Battle of Bladensburg",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 11 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-119",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1793109",
+      "title": "Battle of Chippawa",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 11 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-120",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q820269",
+      "title": "Battle of Rio de Janeiro",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Wikidata names War of the Spanish Succession as its P361 parent, but the event sits in a different lane, so it stands alone. 11 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-121",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q364322",
+      "title": "Battle of Lundy's Lane",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 10 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-122",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1752783",
+      "title": "Battle of the Chateauguay",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 10 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-123",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q586801",
+      "title": "Battle of Frenchtown",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 9 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-124",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2888469",
+      "title": "Siege of Detroit",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 9 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-125",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2666730",
+      "title": "Action of August 1702",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Wikidata names War of the Spanish Succession as its P361 parent, but the event sits in a different lane, so it stands alone. 9 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-126",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q742287",
+      "title": "Battle of Killdeer Mountain",
+      "parents": [
+        "sioux-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:sioux-wars",
+      "why": "The atlas holds its parent sioux-wars. A P361/P527 query over the atlas's thin umbrellas names it with 9 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-127",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q7959512",
+      "title": "Wager's Action",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Wikidata names War of the Spanish Succession as its P361 parent, but the event sits in a different lane, so it stands alone. 9 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-128",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q177470",
+      "title": "Battle of Stoney Creek",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 8 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-129",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q388689",
+      "title": "Battle of York",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 8 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-130",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1416369",
+      "title": "Battle of Crysler's Farm",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 8 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-131",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q7283755",
+      "title": "Raid on Nassau",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Wikidata names War of the Spanish Succession as its P361 parent, but the event sits in a different lane, so it stands alone. 8 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-132",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1167754",
+      "title": "Battle of Whitestone Hill",
+      "parents": [
+        "sioux-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:sioux-wars",
+      "why": "The atlas holds its parent sioux-wars. A P361/P527 query over the atlas's thin umbrellas names it with 7 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-133",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2237324",
+      "title": "Battle of Ash Hollow",
+      "parents": [
+        "sioux-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:sioux-wars",
+      "why": "The atlas holds its parent sioux-wars. A P361/P527 query over the atlas's thin umbrellas names it with 7 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-134",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q7510061",
+      "title": "Siege of Guadeloupe",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Wikidata names War of the Spanish Succession as its P361 parent, but the event sits in a different lane, so it stands alone. 7 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-135",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4870485",
+      "title": "Battle of Big Mound",
+      "parents": [
+        "sioux-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:sioux-wars",
+      "why": "The atlas holds its parent sioux-wars. A P361/P527 query over the atlas's thin umbrellas names it with 6 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-136",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4872445",
+      "title": "Battle of Stony Lake",
+      "parents": [
+        "sioux-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:sioux-wars",
+      "why": "The atlas holds its parent sioux-wars. A P361/P527 query over the atlas's thin umbrellas names it with 6 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-137",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q12717499",
+      "title": "Siege of Colonia del Sacramento",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Wikidata names War of the Spanish Succession as its P361 parent, but the event sits in a different lane, so it stands alone. 6 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-138",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q3062425",
+      "title": "Yellowstone Expedition of 1873",
+      "parents": [
+        "sioux-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:sioux-wars",
+      "why": "The atlas holds its parent sioux-wars. A P361/P527 query over the atlas's thin umbrellas names it with 6 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-139",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q5557072",
+      "title": "Ghost Dance War",
+      "parents": [
+        "sioux-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:sioux-wars",
+      "why": "The atlas holds its parent sioux-wars. A P361/P527 query over the atlas's thin umbrellas names it with 6 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-140",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2888523",
+      "title": "Battle of Fort Dearborn",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 5 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-141",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2890908",
+      "title": "Battle of Lake Borgne",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 5 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-142",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4872834",
+      "title": "Battle of the Badlands",
+      "parents": [
+        "sioux-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:sioux-wars",
+      "why": "The atlas holds its parent sioux-wars. A P361/P527 query over the atlas's thin umbrellas names it with 5 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-143",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4872188",
+      "title": "Battle of Rio de Janeiro",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Wikidata names War of the Spanish Succession as its P361 parent, but the event sits in a different lane, so it stands alone. 5 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-144",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q7235995",
+      "title": "Powder River Expedition",
+      "parents": [
+        "sioux-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:sioux-wars",
+      "why": "The atlas holds its parent sioux-wars. A P361/P527 query over the atlas's thin umbrellas names it with 5 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-145",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q662506",
+      "title": "Black Hills Expedition",
+      "parents": [
+        "sioux-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:sioux-wars",
+      "why": "The atlas holds its parent sioux-wars. A P361/P527 query over the atlas's thin umbrellas names it with 5 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-146",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1390639",
+      "title": "Battle of Frenchman's Creek",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 4 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-147",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2890481",
+      "title": "Battle of Mackinac Island",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 4 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-148",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2984975",
+      "title": "Capture of USS Chesapeake",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 4 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-149",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q3636438",
+      "title": "Battle of Fort George",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 4 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-150",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4870612",
+      "title": "Battle of Calebee Creek",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 4 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-151",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q7510011",
+      "title": "Siege of Fort Harrison",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 4 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-152",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q7510014",
+      "title": "Siege of Fort Meigs",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 4 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-153",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q7868544",
+      "title": "USS Constitution vs HMS Guerriere",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 4 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-154",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q29075778",
+      "title": "Battle of Autossee",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 4 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-155",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4870853",
+      "title": "Battle of Dead Buffalo Lake",
+      "parents": [
+        "sioux-wars"
+      ],
+      "edges": [],
+      "rank": "child-of:sioux-wars",
+      "why": "The atlas holds its parent sioux-wars. A P361/P527 query over the atlas's thin umbrellas names it with 4 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-156",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q5037078",
+      "title": "Capture of the San Joaquin",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Wikidata names War of the Spanish Succession as its P361 parent, but the event sits in a different lane, so it stands alone. 4 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-157",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4872014",
+      "title": "Battle of Pensacola",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 4 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-158",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q233356",
+      "title": "Battle of Lacolle Mills",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-159",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1361990",
+      "title": "Battle of Lacolle Mills",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-160",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2888007",
+      "title": "Battle of Ogdensburg",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-161",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2888338",
+      "title": "Battle of Cook's Mills",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-162",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2890483",
+      "title": "Siege of Fort Mackinac",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-163",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4870569",
+      "title": "Battle of Brownstown",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-164",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4871049",
+      "title": "Battle of Fort Oswego",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-165",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4871058",
+      "title": "Battle of Fort Stephenson",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-166",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4871632",
+      "title": "Battle of Maguaga",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-167",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q4872429",
+      "title": "Battle of St. Michaels",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-168",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q7510006",
+      "title": "Siege of Fort Erie",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-169",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q15178350",
+      "title": "Siege of Fort Wayne",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-170",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q4872954",
+      "title": "Battle of the Mississinewa",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-171",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q5452533",
+      "title": "First Battle of Sacket's Harbor",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-172",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q111973379",
+      "title": "Patriot War",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-americas-173",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q16934279",
+      "title": "Nuku Hiva Campaign",
+      "parents": [
+        "war-of-1812"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-1812",
+      "why": "The atlas holds its parent war-of-1812. A P361/P527 query over the atlas's thin umbrellas names it with 3 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-092",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3699",
+      "title": "Revolutions of 1848 in the German states",
+      "parents": [
+        "revolutions-of-1848"
+      ],
+      "edges": [],
+      "rank": "child-of:revolutions-of-1848",
+      "why": "The atlas holds its parent revolutions-of-1848. A P361/P527 query over the atlas's thin umbrellas names it with 49 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-093",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q155726",
+      "title": "Battle of Narva",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 42 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-094",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q154635",
+      "title": "Battle of Blenheim",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 41 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-095",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q681712",
+      "title": "Battle of Gangut",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 34 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-096",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q595545",
+      "title": "Rákóczi’s War of Independence",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 33 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-097",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q316897",
+      "title": "Battle of Malplaquet",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 31 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-098",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q166015",
+      "title": "Battle of Lesnaya",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 30 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-099",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q161325",
+      "title": "Battle of Ramillies",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 26 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-100",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q316139",
+      "title": "Battle of Oudenarde",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 26 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-101",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q320394",
+      "title": "Battle of Almansa",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 26 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-102",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q311759",
+      "title": "Battle of Vigo Bay",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 24 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-103",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q41320",
+      "title": "Battle of Denain",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 23 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-104",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q696945",
+      "title": "Battle of Schellenberg",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 22 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-105",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q552296",
+      "title": "Battle of Carpi",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 20 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-106",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q688978",
+      "title": "Battle of Cremona",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 20 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-107",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q694073",
+      "title": "Capture of Gibraltar",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 20 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-108",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q390286",
+      "title": "Battle of Villaviciosa",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 19 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-109",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q552574",
+      "title": "Battle of Cassano",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 19 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-110",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q636007",
+      "title": "Battle of Chiari",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 19 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-111",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q694502",
+      "title": "Battle of Málaga",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 19 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-112",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q552351",
+      "title": "Battle of Friedlingen",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 18 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-113",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q700316",
+      "title": "Battle of Luzzara",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 18 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-114",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q694054",
+      "title": "Siege of Narva",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 18 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-115",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q699665",
+      "title": "Battle of Dürenstein",
+      "parents": [
+        "war-of-the-third-coalition"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-third-coalition",
+      "why": "The atlas holds its parent war-of-the-third-coalition. A P361/P527 query over the atlas's thin umbrellas names it with 18 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-116",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2578587",
+      "title": "Greater Wrath",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 17 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-117",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q552225",
+      "title": "Battle of Cádiz",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 17 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-118",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q682729",
+      "title": "First Battle of Höchstädt",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 17 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-119",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q694492",
+      "title": "Siege of Lille",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 17 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-120",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q663359",
+      "title": "Battle of Holowczyn",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 17 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-121",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q770116",
+      "title": "Ulm Campaign",
+      "parents": [
+        "war-of-the-third-coalition"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-third-coalition",
+      "why": "The atlas holds its parent war-of-the-third-coalition. A P361/P527 query over the atlas's thin umbrellas names it with 17 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-122",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1195263",
+      "title": "Battle of Ekeren",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 16 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-123",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q704762",
+      "title": "Battle of Klissow",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 16 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-124",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q638601",
+      "title": "Skirmish at Bender",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 16 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-125",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q698166",
+      "title": "Battle of Calcinato",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 15 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-126",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q708866",
+      "title": "Battle of Gadebusch",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 15 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-127",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q826133",
+      "title": "Crossing of the Düna",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 15 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-128",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q948810",
+      "title": "Battle of Schöngrabern",
+      "parents": [
+        "war-of-the-third-coalition"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-third-coalition",
+      "why": "The atlas holds its parent war-of-the-third-coalition. A P361/P527 query over the atlas's thin umbrellas names it with 15 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-129",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q338370",
+      "title": "Battle of Grengam",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 15 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-130",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q481236",
+      "title": "Carolean Death March",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 15 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-131",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1328499",
+      "title": "Battle of Brihuega",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 14 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-132",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q705409",
+      "title": "Battle of Helsingborg",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 14 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-133",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q657502",
+      "title": "Battle of Elchingen",
+      "parents": [
+        "war-of-the-third-coalition"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-third-coalition",
+      "why": "The atlas holds its parent war-of-the-third-coalition. A P361/P527 query over the atlas's thin umbrellas names it with 14 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-134",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1148483",
+      "title": "Battle of Elixheim",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 13 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-135",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q694122",
+      "title": "Battle of Napue",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 13 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-136",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q626762",
+      "title": "Battle of Pułtusk",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 13 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-137",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q701808",
+      "title": "Battle of Castiglione",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 13 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-138",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1844815",
+      "title": "Battle of Dynekilen",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 12 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-139",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q771598",
+      "title": "Battle of Haslach-Jungingen",
+      "parents": [
+        "war-of-the-third-coalition"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-third-coalition",
+      "why": "The atlas holds its parent war-of-the-third-coalition. A P361/P527 query over the atlas's thin umbrellas names it with 12 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-140",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q857434",
+      "title": "Battle of Caldiero",
+      "parents": [
+        "war-of-the-third-coalition"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-third-coalition",
+      "why": "The atlas holds its parent war-of-the-third-coalition. A P361/P527 query over the atlas's thin umbrellas names it with 12 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-141",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q857860",
+      "title": "Battle of Campo Tenese",
+      "parents": [
+        "war-of-the-third-coalition"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-third-coalition",
+      "why": "The atlas holds its parent war-of-the-third-coalition. A P361/P527 query over the atlas's thin umbrellas names it with 12 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-142",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q169602",
+      "title": "Battle of Jakobstadt",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 12 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-143",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q620947",
+      "title": "Battle of Hummelshof",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 12 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-144",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q633067",
+      "title": "Siege of Nöteborg",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 12 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-145",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3488959",
+      "title": "Swedish invasion of Russia",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 12 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-146",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2671292",
+      "title": "surrender at Perevolochna",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 11 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-147",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q552277",
+      "title": "Siege of Kehl",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 11 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-148",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q571861",
+      "title": "Battle of Speyerbach",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 11 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-149",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q694883",
+      "title": "Battle of Erastfer",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 11 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-150",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q588075",
+      "title": "Battle of Maida",
+      "parents": [
+        "war-of-the-third-coalition"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-third-coalition",
+      "why": "The atlas holds its parent war-of-the-third-coalition. A P361/P527 query over the atlas's thin umbrellas names it with 11 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-151",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q697034",
+      "title": "Battle of Amstetten",
+      "parents": [
+        "war-of-the-third-coalition"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-third-coalition",
+      "why": "The atlas holds its parent war-of-the-third-coalition. A P361/P527 query over the atlas's thin umbrellas names it with 11 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-152",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1960626",
+      "title": "Battle of Wertingen",
+      "parents": [
+        "war-of-the-third-coalition"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-third-coalition",
+      "why": "The atlas holds its parent war-of-the-third-coalition. A P361/P527 query over the atlas's thin umbrellas names it with 11 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-153",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q464517",
+      "title": "Siege of Tönning",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 11 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-154",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q554447",
+      "title": "Battle of Kalisz",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 11 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-155",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q729861",
+      "title": "Napoleon's planned invasion of the United Kingdom",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "Wikidata names War of the Third Coalition as its P361 parent, but its dates fall outside that war's span, so it stands alone. 11 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-156",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3321690",
+      "title": "Young Ireland rebellion",
+      "parents": [
+        "revolutions-of-1848"
+      ],
+      "edges": [],
+      "rank": "child-of:revolutions-of-1848",
+      "why": "The atlas holds its parent revolutions-of-1848. A P361/P527 query over the atlas's thin umbrellas names it with 10 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-157",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1075264",
+      "title": "Siege of Bouchain",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 10 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-158",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1898572",
+      "title": "Battle of Wijnendale",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 10 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-159",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q649567",
+      "title": "Battle of Punitz",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 10 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-160",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q815200",
+      "title": "Siege of Riga",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 10 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-161",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4110445",
+      "title": "Sack of Baturyn",
+      "parents": [
+        "great-northern-war"
+      ],
+      "edges": [],
+      "rank": "child-of:great-northern-war",
+      "why": "The atlas holds its parent great-northern-war. A P361/P527 query over the atlas's thin umbrellas names it with 10 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-162",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2890859",
+      "title": "Battle at The Lizard",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 10 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-163",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q3133556",
+      "title": "Capture of Minorca",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 10 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-164",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q3485974",
+      "title": "Siege of Nice",
+      "parents": [
+        "war-of-the-spanish-succession"
+      ],
+      "edges": [],
+      "rank": "child-of:war-of-the-spanish-succession",
+      "why": "The atlas holds its parent war-of-the-spanish-succession. A P361/P527 query over the atlas's thin umbrellas names it with 10 sitelinks."
+    },
+    {
+      "id": "2026-10-17-europe-165",
+      "planned": "2026-10-17T06:23:34Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q315395",
+      "title": "May Uprising in Dresden",
+      "parents": [
+        "revolutions-of-1848"
+      ],
+      "edges": [],
+      "rank": "child-of:revolutions-of-1848",
+      "why": "The atlas holds its parent revolutions-of-1848. A P361/P527 query over the atlas's thin umbrellas names it with 10 sitelinks."
     }
   ]
 }
