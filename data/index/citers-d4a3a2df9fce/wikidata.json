@@ -2954,6 +2954,12 @@
     },
     {
       "dissent": false,
+      "id": "anglo-spanish-war-1796-1808",
+      "kind": "event",
+      "locator": "Q4065191"
+    },
+    {
+      "dissent": false,
       "id": "anglo-zanzibar-war",
       "kind": "event",
       "locator": "Q170850"
@@ -3005,6 +3011,12 @@
       "id": "anti-comintern-pact",
       "kind": "event",
       "locator": "Q152195, P31 Q131569"
+    },
+    {
+      "dissent": false,
+      "id": "aponte-conspiracy",
+      "kind": "event",
+      "locator": "Q5784367"
     },
     {
       "dissent": false,
@@ -4256,6 +4268,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fort-frontenac",
+      "kind": "event",
+      "locator": "Q2888548"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fort-niagara",
+      "kind": "event",
+      "locator": "Q2888557"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-fort-royal",
       "kind": "event",
       "locator": "Q1780931"
@@ -5324,6 +5348,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mulayda",
+      "kind": "event",
+      "locator": "Q654722"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mulleriyawa",
       "kind": "event",
       "locator": "Q4871824"
@@ -5897,6 +5927,12 @@
       "id": "battle-of-san-juan-1797",
       "kind": "event",
       "locator": "Q656046"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-san-mateo-1814",
+      "kind": "event",
+      "locator": "Q5722924"
     },
     {
       "dissent": false,
@@ -8378,6 +8414,12 @@
     },
     {
       "dissent": false,
+      "id": "eight-trigrams-uprising-of-1813",
+      "kind": "event",
+      "locator": "Q263716"
+    },
+    {
+      "dissent": false,
       "id": "eighth-xhosa-war",
       "kind": "event",
       "locator": "Q20612501"
@@ -8648,6 +8690,12 @@
     },
     {
       "dissent": false,
+      "id": "finnish-war",
+      "kind": "event",
+      "locator": "Q736268"
+    },
+    {
+      "dissent": false,
       "id": "first-and-second-battles-of-el-teb",
       "kind": "event",
       "locator": "Q1164679"
@@ -8885,6 +8933,12 @@
       "id": "first-portuguese-republic-1910-1926",
       "kind": "event",
       "locator": "Q167360"
+    },
+    {
+      "dissent": false,
+      "id": "first-serbian-uprising",
+      "kind": "event",
+      "locator": "Q368689"
     },
     {
       "dissent": false,
@@ -9908,6 +9962,12 @@
     },
     {
       "dissent": false,
+      "id": "jahriyya-revolt",
+      "kind": "event",
+      "locator": "Q15909493"
+    },
+    {
+      "dissent": false,
       "id": "jameson-raid",
       "kind": "event",
       "locator": "Q916340"
@@ -10172,6 +10232,12 @@
     },
     {
       "dissent": false,
+      "id": "kosciuszko-uprising",
+      "kind": "event",
+      "locator": "Q849176"
+    },
+    {
+      "dissent": false,
       "id": "kosovo-war",
       "kind": "event",
       "locator": "Q190029"
@@ -10358,6 +10424,12 @@
     },
     {
       "dissent": false,
+      "id": "louisiana-rebellion-of-1768",
+      "kind": "event",
+      "locator": "Q172313"
+    },
+    {
+      "dissent": false,
       "id": "louvre-accord",
       "kind": "event",
       "locator": "Q471261"
@@ -10457,6 +10529,12 @@
       "id": "march-on-rome",
       "kind": "event",
       "locator": "Q468823"
+    },
+    {
+      "dissent": false,
+      "id": "march-revolution-venezuela",
+      "kind": "event",
+      "locator": "Q5484545"
     },
     {
       "dissent": false,
@@ -10907,6 +10985,12 @@
       "id": "northeast-coast-campaign-1676",
       "kind": "event",
       "locator": "Q18354826"
+    },
+    {
+      "dissent": false,
+      "id": "northeast-coast-campaign-1745",
+      "kind": "event",
+      "locator": "Q7057853"
     },
     {
       "dissent": false,
@@ -12056,6 +12140,12 @@
     },
     {
       "dissent": false,
+      "id": "russo-turkish-war-1686-1700",
+      "kind": "event",
+      "locator": "Q829104"
+    },
+    {
+      "dissent": false,
       "id": "russo-turkish-war-1877-1878",
       "kind": "event",
       "locator": "Q174205"
@@ -12131,6 +12221,12 @@
       "id": "saint-domingue-expedition",
       "kind": "event",
       "locator": "Q3062411"
+    },
+    {
+      "dissent": false,
+      "id": "salaverry-santa-cruz-war",
+      "kind": "event",
+      "locator": "Q5887865"
     },
     {
       "dissent": false,
@@ -12464,6 +12560,12 @@
     },
     {
       "dissent": false,
+      "id": "second-schleswig-war",
+      "kind": "event",
+      "locator": "Q154981"
+    },
+    {
+      "dissent": false,
       "id": "second-siege-of-callao",
       "kind": "event",
       "locator": "Q6123901"
@@ -12653,6 +12755,12 @@
       "id": "siege-of-annapolis-royal-1744",
       "kind": "event",
       "locator": "Q7509818"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-annapolis-royal-1745",
+      "kind": "event",
+      "locator": "Q11284205"
     },
     {
       "dissent": false,
@@ -12956,6 +13064,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-dunlap-s-station",
+      "kind": "event",
+      "locator": "Q7509987"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-eger-1647",
       "kind": "event",
       "locator": "Q140779225"
@@ -12986,9 +13100,21 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-fort-detroit",
+      "kind": "event",
+      "locator": "Q3485885"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-fort-julien",
       "kind": "event",
       "locator": "Q22936434"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-fort-massachusetts",
+      "kind": "event",
+      "locator": "Q3485886"
     },
     {
       "dissent": false,
@@ -13184,6 +13310,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-louisbourg-1758",
+      "kind": "event",
+      "locator": "Q3050672"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-lucknow",
       "kind": "event",
       "locator": "Q815165"
@@ -13199,6 +13331,12 @@
       "id": "siege-of-maastricht-1748",
       "kind": "event",
       "locator": "Q289609"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-madras",
+      "kind": "event",
+      "locator": "Q7510220"
     },
     {
       "dissent": false,
@@ -13241,6 +13379,12 @@
       "id": "siege-of-marseille-1524",
       "kind": "event",
       "locator": "Q3485951"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-masulipatam",
+      "kind": "event",
+      "locator": "Q3485950"
     },
     {
       "dissent": false,

@@ -6763,6 +6763,35 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "anglo-spanish-war-1796-1808",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Anglo-Spanish War (1796–1808)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -7049,6 +7078,35 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Anti-Comintern Pact"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "aponte-conspiracy",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Aponte conspiracy"
     },
     {
       "authors": [
@@ -13631,6 +13689,72 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-17",
+      "id": "battle-of-fort-frontenac",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "seven-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Fort Frontenac"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "battle-of-fort-niagara",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": [
+        "seven-years-war",
+        "french-and-indian-war"
+      ],
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Fort Niagara"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "battle-of-fort-royal",
@@ -19439,6 +19563,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-17",
+      "id": "battle-of-mulayda",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Mulayda"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-01",
       "id": "battle-of-mulleriyawa",
       "kind": "event",
@@ -22523,6 +22676,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of San Juan (1797)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "battle-of-san-mateo-1814",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "venezuelan-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of San Mateo (1814)"
     },
     {
       "authors": [
@@ -36563,6 +36748,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "eight-trigrams-uprising-of-1813",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Eight Trigrams uprising of 1813"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -38057,6 +38271,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-17",
+      "id": "finnish-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "napoleonic-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Finnish War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "first-and-second-battles-of-el-teb",
       "kind": "event",
@@ -39283,6 +39528,34 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "The First Portuguese Republic"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "first-serbian-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Serbian Uprising"
     },
     {
       "authors": [
@@ -44920,6 +45193,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "jahriyya-revolt",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Jahriyya revolt"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -46204,6 +46505,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "kosciuszko-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Kościuszko Uprising"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -47363,6 +47692,34 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "louisiana-rebellion-of-1768",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Louisiana Rebellion of 1768"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -47964,6 +48321,34 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "March on Rome"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "march-revolution-venezuela",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "March Revolution (Venezuela)"
     },
     {
       "authors": [
@@ -50452,6 +50837,38 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Northeast Coast campaign (1676)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "northeast-coast-campaign-1745",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "king-george-s-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Northeast Coast campaign (1745)"
     },
     {
       "authors": [
@@ -56803,6 +57220,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-17",
+      "id": "russo-turkish-war-1686-1700",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "great-turkish-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Russo-Turkish War (1686–1700)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-14",
       "id": "russo-turkish-war-1877-1878",
       "kind": "event",
@@ -57177,6 +57624,36 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Saint-Domingue expedition"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "salaverry-santa-cruz-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Salaverry-Santa Cruz War"
     },
     {
       "authors": [
@@ -59038,6 +59515,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-17",
+      "id": "second-schleswig-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Schleswig War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "second-siege-of-callao",
       "kind": "event",
@@ -60006,6 +60513,38 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Annapolis Royal (1744)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "siege-of-annapolis-royal-1745",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "king-george-s-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Annapolis Royal (1745)"
     },
     {
       "authors": [
@@ -61604,6 +62143,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-17",
+      "id": "siege-of-dunlap-s-station",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "northwest-indian-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Dunlap's Station"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "siege-of-eger-1647",
       "kind": "event",
@@ -61767,6 +62338,38 @@
         "wikipedia-en"
       ],
       "created": "2026-10-17",
+      "id": "siege-of-fort-detroit",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "seven-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Fort Detroit"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
       "id": "siege-of-fort-julien",
       "kind": "event",
       "origin": {
@@ -61785,6 +62388,38 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Fort Julien"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "siege-of-fort-massachusetts",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "king-george-s-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Fort Massachusetts"
     },
     {
       "authors": [
@@ -62814,6 +63449,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-17",
+      "id": "siege-of-louisbourg-1758",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-and-indian-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Louisbourg (1758)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "siege-of-lucknow",
       "kind": "event",
@@ -62896,6 +63562,37 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Maastricht (1748)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "siege-of-madras",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "seven-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Madras"
     },
     {
       "authors": [
@@ -63124,6 +63821,38 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Siege of Marseille (1524)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "siege-of-masulipatam",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "seven-years-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Masulipatam"
     },
     {
       "authors": [
@@ -75305,6 +76034,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "anglo-spanish-war-1796-1808",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "anglo-zulu-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -75312,6 +76047,12 @@
     },
     {
       "id": "angolan-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "aponte-conspiracy",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -76049,6 +76790,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-fort-frontenac",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-fort-niagara",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-frankfurt-an-der-oder",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -76715,6 +77468,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-mulayda",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-mulleriyawa",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -76986,6 +77745,12 @@
     },
     {
       "id": "battle-of-san-juan-1797",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-san-mateo-1814",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -78425,6 +79190,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "eight-trigrams-uprising-of-1813",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "eighth-xhosa-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -78528,6 +79299,12 @@
     },
     {
       "id": "filibuster-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "finnish-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -78666,6 +79443,12 @@
     },
     {
       "id": "first-opium-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "first-serbian-uprising",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -79091,6 +79874,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "jahriyya-revolt",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "japanese-invasion-of-manchuria",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -79199,6 +79988,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "kosciuszko-uprising",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "laghouat-expedition-1708-1713",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -79283,6 +80078,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "louisiana-rebellion-of-1768",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "lunenburg-campaign-1758",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -79320,6 +80121,12 @@
     },
     {
       "id": "manhattan-project",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "march-revolution-venezuela",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -79590,6 +80397,12 @@
     },
     {
       "id": "northeast-coast-campaign-1676",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "northeast-coast-campaign-1745",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -80183,6 +80996,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "russo-turkish-war-1686-1700",
+      "kind": "event",
+      "message": "the event is part of \"great-turkish-war\" and is not dated inside it",
+      "rule": "child-outside-parent"
+    },
+    {
+      "id": "russo-turkish-war-1686-1700",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "russo-turkish-war-1877-1878",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -80214,6 +81039,12 @@
     },
     {
       "id": "sahkulu-rebellion",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "salaverry-santa-cruz-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -80375,6 +81206,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "second-schleswig-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "second-siege-of-callao",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -80508,6 +81345,12 @@
     },
     {
       "id": "siege-of-annapolis-royal-1744",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-annapolis-royal-1745",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -80735,6 +81578,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-dunlap-s-station",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-eger-1647",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -80753,7 +81602,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-fort-detroit",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-fort-julien",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-fort-massachusetts",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -80927,6 +81788,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-louisbourg-1758",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-lucknow",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -80934,6 +81801,12 @@
     },
     {
       "id": "siege-of-lydenburg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-madras",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -80958,6 +81831,12 @@
     },
     {
       "id": "siege-of-marseille-1524",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "siege-of-masulipatam",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

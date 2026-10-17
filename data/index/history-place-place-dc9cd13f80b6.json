@@ -1271,6 +1271,15 @@
         }
       ]
     },
+    "berwick-maine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "bia-owieza-forest": {
       "from": "git",
       "versions": [
@@ -3402,6 +3411,15 @@
         }
       ]
     },
+    "duchy-of-schleswig": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "duman-ri": {
       "from": "git",
       "versions": [
@@ -3447,6 +3465,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "dunlap-ohio": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -4006,6 +4033,15 @@
         }
       ]
     },
+    "forbidden-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "forest-of-compiegne": {
       "from": "git",
       "versions": [
@@ -4090,6 +4126,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "fort-pontchartrain-du-detroit": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -6323,6 +6368,15 @@
         }
       ]
     },
+    "kingston-ontario": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "kirkuk": {
       "from": "git",
       "versions": [
@@ -7406,6 +7460,15 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "machilipatnam": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -8823,6 +8886,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "north-adams-massachusetts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -11146,6 +11218,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "san-mateo-aragua": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
