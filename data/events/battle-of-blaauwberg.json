@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-blaauwberg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2786767",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Blaauwberg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2786767"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Blaauwberg\", revision 1370434518"
+    }
+  ],
+  "title": "Battle of Blaauwberg",
+  "summary": "The English Wikipedia article \"Battle of Blaauwberg\", at revision 1370434518, opens: \"The Battle of Blaauwberg was a successful British amphibious operation during the War of the Third Coalition which lasted from 8–18 January 1806 and resulted in the capture of the Dutch Cape Colony. After defeating their Batavian opponents, the British signed a treaty under the Treaty Tree in Woodstock, Cape Town which established Britain's control over the Cape Colony. The colony later became a permanent part of the British Empire following the Congress of Vienna that marked the end of the Napoleonic Wars in 1814. Due to establishing permanent British rule over the Cape Colony, the battle would have many ramifications for southern Africa during the nineteenth and twentieth centuries. A bi-centennial commemoration of the battle was held in January 2006.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2786767, imported by tools/import/wikidata.mjs. The item's own description reads \"battle fought in 1806\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1806,
+    "end": 1806,
+    "date": "1806-01-08",
+    "endDate": "1806-01-18"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "napoleonic-wars"
+}

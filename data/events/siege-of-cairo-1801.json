@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-cairo-1801",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q24962366",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Cairo (1801)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q24962366"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Cairo (1801)\", revision 1371087718"
+    }
+  ],
+  "title": "Siege of Cairo (1801)",
+  "summary": "The English Wikipedia article \"Siege of Cairo (1801)\", at revision 1371087718, opens: \"The siege of Cairo, also known as the Cairo campaign, took place during the French invasion of Egypt and Syria. An Anglo-Ottoman army laid siege to French-held Cairo and captured it in the penultimate action of the invasion. British commander John Hely-Hutchinson advanced to Cairo, where he arrived after a few skirmishes in mid June. Joined by a sizeable Ottoman force Hutchinson invested Cairo and on 27 June the surrounded 13,000-strong French garrison under General Augustin Daniel Belliard, out-manned and out-gunned then surrendered. The remaining French troops in Egypt under Jacques-François Menou disheartened by this failure, retired to Alexandria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q24962366, imported by tools/import/wikidata.mjs. The item's own description reads \"1801 siege during the French Campaign in Egypt and Syria\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1801,
+    "end": 1801,
+    "date": "1801-05",
+    "endDate": "1801-06"
+  },
+  "place": "cairo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

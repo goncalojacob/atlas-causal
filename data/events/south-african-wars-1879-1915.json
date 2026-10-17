@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "south-african-wars-1879-1915",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7565812",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "South African Wars (1879–1915)",
+    "pt": "Guerras sul-africanas (1879–1915)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7565812"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"South African Wars (1879–1915)\", revision 1376241564"
+    }
+  ],
+  "title": "South African Wars (1879–1915)",
+  "summary": "The English Wikipedia article \"South African Wars (1879–1915)\", at revision 1376241564, opens: \"The South African Wars, including but also known as the Confederation Wars, were a series of wars that occurred in the southern portion of the African continent between 1879 and 1915. Ethnic, political, and social tensions between European colonial powers and indigenous Africans led to increasing hostilities, culminating in a series of wars and revolts, which had lasting repercussions on the entire region. A key factor behind the growth of these tensions was the pursuit of commerce and resources, both by countries and individuals, especially following the discoveries of gold in the region in 1862 and diamonds in 1867.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7565812, imported by tools/import/wikidata.mjs. The item's own description reads \"series of colonial wars fought across what is nowadays South Africa from 1879 to 1915\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1915
+  },
+  "place": "south-africa-q258",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

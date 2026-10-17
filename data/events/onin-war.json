@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "onin-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q385676",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Ōnin War",
+    "pt": "Guerra de Ōnin"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q385676"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ōnin War\", revision 1375533899"
+    }
+  ],
+  "title": "Ōnin War",
+  "summary": "The English Wikipedia article \"Ōnin War\", at revision 1375533899, opens: \"The Ōnin War , also known as the Upheaval of Ōnin and Ōnin-Bunmei war, was a civil war that lasted from 1467 to 1477, during the Muromachi period in Japan. Ōnin refers to the Japanese era during which the war started; the war ended during the Bunmei era. A dispute between a high official, Hosokawa Katsumoto, and a regional lord, Yamana Sōzen, escalated into a nationwide civil war involving the Ashikaga shogunate and a number of daimyō  in many regions of Japan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q385676, imported by tools/import/wikidata.mjs. The item's own description reads \"15th-century civil war in Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1467,
+    "end": 1477
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

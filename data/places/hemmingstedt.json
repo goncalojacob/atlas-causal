@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hemmingstedt",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q522133",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Hemmingstedt",
+    "pt": "Hemmingstedt"
+  },
+  "sources": [],
+  "names": [
+    "Hemmingstedt"
+  ],
+  "where": {
+    "lon": 9.066666666666666,
+    "lat": 54.15,
+    "precision": "city",
+    "label": "Hemmingstedt"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

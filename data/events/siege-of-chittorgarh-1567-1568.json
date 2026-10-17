@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-chittorgarh-1567-1568",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q16931406",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Chittorgarh (1567–1568)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16931406"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Chittorgarh (1567–1568)\", revision 1370740246"
+    }
+  ],
+  "title": "Siege of Chittorgarh (1567–1568)",
+  "summary": "The English Wikipedia article \"Siege of Chittorgarh (1567–1568)\", at revision 1370740246, opens: \"The siege of Chittorgarh was the military expedition of the Mughal Empire under Akbar against the Kingdom of Mewar that commenced in 1567 during which the Mughals successfully captured the fort of Chittorgarh after a hard-pressed siege which lasted for several months.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16931406, imported by tools/import/wikidata.mjs. The item's own description reads \"siege by the Mughal forces of Akbar of the Mewari Rajput fort of Chittorgarh.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1567,
+    "end": 1568,
+    "date": "1567-10-21",
+    "endDate": "1568-02-23"
+  },
+  "place": "chittor-fort",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

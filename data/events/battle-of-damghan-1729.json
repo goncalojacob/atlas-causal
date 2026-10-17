@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-damghan-1729",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2888384",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Damghan (1729)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888384"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Damghan (1729)\", revision 1380230144"
+    }
+  ],
+  "title": "Battle of Damghan (1729)",
+  "summary": "The English Wikipedia article \"Battle of Damghan (1729)\", at revision 1380230144, opens: \"The Battle of Damghan or Battle of Mehmandoost was fought on 29 September to 5 October 1729, near the city of Damghan. It resulted in an overwhelming victory for Nader and the Safavid cause he had taken up. Although it by itself did not end Ashraf's rule in Iran, it was a significant triumph which led to further successes in the following engagements of the campaign to restore Tahmasp II to the throne. The battle was followed by another one in Murcheh-Khort, a village near Isfahan. Nader's forces were victorious in both battles, which led him to remove the Ghilzai Afghan dynasty from their short stay on the Persian throne. The Hotakis were forced back to their territory in what is now southern Afghanistan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888384, imported by tools/import/wikidata.mjs. The item's own description reads \"battle near the city of Damghan, Iran\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1729,
+    "end": 1729,
+    "date": "1729-09-29",
+    "endDate": "1729-10-05"
+  },
+  "place": "mehmandust-semnan",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

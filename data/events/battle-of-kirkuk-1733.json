@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-kirkuk-1733",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q18162675",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Kirkuk (1733)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18162675"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kirkuk (1733)\", revision 1370445492"
+    }
+  ],
+  "title": "Battle of Kirkuk (1733)",
+  "summary": "The English Wikipedia article \"Battle of Kirkuk (1733)\", at revision 1370445492, opens: \"The Battle of Kirkuk, also known as the Battle of Agh-Darband or Battle of Leylan, was the last battle in Nader Shah's Mesopotamian campaign where he avenged his earlier defeat at the hands of the Ottoman general Topal Osman Pasha, in which Nader achieved suitable revenge after defeating and killing him at the battle of Kirkuk. The battle was another in the chain of seemingly unpredictable triumphs and tragedies for both sides as the war swung wildly from the favour of one side to the other. Although the battle ended in a crushing victory for the Persians, they had to be withdrawn from the area due to a growing rebellion in the south of Persia led by Mohammad Khan Baluch. This rebellion in effect robbed Nader of the strategic benefits of his great victory which would have included the capture of Baghdad, if he had the chance to resume his campaign.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18162675, imported by tools/import/wikidata.mjs. The item's own description reads \"last battle in Nader Shah's Mesopotamian campaign (1733)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1733,
+    "end": 1733,
+    "date": "1733-10-24",
+    "endDate": "1733-10-26"
+  },
+  "place": "kirkuk",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
