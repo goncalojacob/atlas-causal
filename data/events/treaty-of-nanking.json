@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-nanking",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q238262",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Treaty of Nanking",
+    "pt": "Tratado de Nanquim"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q238262"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Nanking\", revision 1364848326"
+    }
+  ],
+  "title": "Treaty of Nanking",
+  "summary": "The English Wikipedia article \"Treaty of Nanking\", at revision 1364848326, opens: \"The Treaty of Nanjing was the peace treaty which ended the First Opium War (1839–1842) between Great Britain and the Qing dynasty of China on 29 August 1842. It was the second of what the Chinese later termed the unequal treaties, after the rejected 1841 Convention of Chuenpi, signed by British Superintendent of trade in China, Charles Elliot, and Qing Imperial Commissioner, Qishan, which the treaty was largely based on.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q238262, imported by tools/import/wikidata.mjs. The item's own description reads \"1842 treaty between Qing China and Britain which ceded Hong Kong and ended the First Opium War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1842,
+    "end": 1842,
+    "date": "1842-08-29"
+  },
+  "place": "nanjing",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

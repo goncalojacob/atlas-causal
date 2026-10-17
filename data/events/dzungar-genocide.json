@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "dzungar-genocide",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4462644",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Dzungar genocide",
+    "pt": "Genocídio zungar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4462644"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dzungar genocide\", revision 1379785897"
+    }
+  ],
+  "title": "Dzungar genocide",
+  "summary": "The English Wikipedia article \"Dzungar genocide\", at revision 1379785897, opens: \"The Dzungar genocide was the mass extermination of the Dzungar people, a confederation of Oirat Mongol tribes, by the Qing dynasty. The Qianlong Emperor ordered the genocide after the rebellion in 1755 by Dzungar leader Amursana against Qing rule, after the dynasty first conquered the Dzungar Khanate with Amursana's support. The genocide was perpetrated by Manchu, Han, and Khalkha Mongol troops of the Qing army, supported by Turkic oasis dwellers of Altishahr, now known as Uyghurs, who rebelled against Dzungar rule.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4462644, imported by tools/import/wikidata.mjs. The item's own description reads \"mass extermination of the Mongol Dzungar people\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1755,
+    "end": 1758
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

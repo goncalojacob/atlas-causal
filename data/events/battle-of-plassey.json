@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-plassey",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q203233",
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Plassey",
+    "pt": "Batalha de Plassey"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q203233"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Plassey\", revision 1370586228"
+    }
+  ],
+  "title": "Battle of Plassey",
+  "summary": "The English Wikipedia article \"Battle of Plassey\", at revision 1370586228, opens: \"The Battle of Plassey was a decisive victory of the British East India Company, under the leadership of Robert Clive, over the Nawab of Bengal and his French allies on 23 June 1757. The victory was made possible by the betrayal of Mir Jafar, Nawab Siraj-ud-Daulah's commander in chief, as well as much of the Bengal Subah's armies being earlier committed against an Afghan invasion led by Ahmad Shah Durrani against the Mughal Empire. The battle helped the British East India Company take complete control of Bengal in 1773. Over the next hundred years, they continued to expand their control over vast territories in the rest of the Indian subcontinent and Burma.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q203233, imported by tools/import/wikidata.mjs. The item's own description reads \"1757 battle which established the British Raj in India\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1757,
+    "date": "1757-06-23"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
