@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "touggourt",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q852515",
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Touggourt",
+    "pt": "Tugurte"
+  },
+  "sources": [],
+  "names": [
+    "Touggourt",
+    "Tugurte"
+  ],
+  "where": {
+    "lon": 6.0666666666667,
+    "lat": 33.1,
+    "precision": "city",
+    "label": "Touggourt"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

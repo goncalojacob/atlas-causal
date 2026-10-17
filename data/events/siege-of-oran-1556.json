@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "siege-of-oran-1556",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7510284",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Oran (1556)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510284"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Oran (1556)\", revision 1370744182"
+    }
+  ],
+  "title": "Siege of Oran (1556)",
+  "summary": "The English Wikipedia article \"Siege of Oran (1556)\", at revision 1370744182, opens: \"The siege of Oran of 1556 occurred when Ottoman troops from Algiers besieged the Spanish garrison in Oran. The siege, by land and sea, was ultimately lifted without success. Although Algerian forces were able to win a couple of skirmishes against the Spanish army, it had to be lifted in August 1556 when the Ottoman fleet of 40 galleys was recalled for duty in the Eastern Mediterranean.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510284, imported by tools/import/wikidata.mjs. The item's own description reads \"1556 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1556,
+    "end": 1556,
+    "date": "1556-07",
+    "endDate": "1556-08"
+  },
+  "place": "oran",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

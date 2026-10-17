@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "char-bouba-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5073613",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Char Bouba war"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5073613"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Char Bouba war\", revision 1373517975"
+    }
+  ],
+  "title": "Char Bouba war",
+  "summary": "The English Wikipedia article \"Char Bouba war\", at revision 1373517975, opens: \"The Char Bouba or the Marabout War took place between 1673 and 1678 in what is today Mauritania and Senegal. It was fought between two coalitions: one of Muslim groups led by marabouts and another of secular traditional rulers and lax Muslims. The former was led by the Lamtuna Imam Nasr ad-Din and included Sanhadja tribes, the Torodbe of Futa Toro, and the Muslims of the Wolof kingdoms of Waalo, Cayor, and Jolof. The latter brought together the Arab Banu Maghfar tribes, the Denianke of Futa Toro and the traditional aristocracies of the Wolof states, supported by the French.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5073613, imported by tools/import/wikidata.mjs. The item's own description reads \"war in north-west Africa, 1644–1674\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1644,
+    "end": 1674
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

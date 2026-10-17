@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "isfahan",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q42053",
+  "sitelinks": {
+    "count": 125,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Isfahan",
+    "pt": "Isfahan"
+  },
+  "sources": [],
+  "names": [
+    "Isfahan"
+  ],
+  "where": {
+    "lon": 51.67472222222222,
+    "lat": 32.6525,
+    "precision": "city",
+    "label": "Isfahan"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

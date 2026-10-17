@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "new-york-slave-revolt-of-1712",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3458313",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "New York Slave Revolt of 1712"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3458313"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"New York Slave Revolt of 1712\", revision 1377593095"
+    }
+  ],
+  "title": "New York Slave Revolt of 1712",
+  "summary": "The English Wikipedia article \"New York Slave Revolt of 1712\", at revision 1377593095, opens: \"The New York Slave Revolt of 1712 was an uprising in New York City, in the Province of New York, of 23 black enslaved people. The population of New York consisted of a low 6,000–8,000 people in which 1,000 of them were slaves. They killed nine white people and injured another six before they were stopped. More than 70 black people were arrested and jailed. Of these, 27 were put on trial, and 21 convicted and executed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3458313, imported by tools/import/wikidata.mjs. The item's own description reads \"slave rebellion in New York City in 1712\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1712,
+    "end": 1712,
+    "date": "1712-04-06"
+  },
+  "place": "new-york",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

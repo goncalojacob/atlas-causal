@@ -8024,6 +8024,1610 @@
       },
       "refusals": [],
       "note": "Q975837: no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    {
+      "id": "2026-10-16-americas-020",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-beecher-island",
+        "edges": [],
+        "place": "beecher-island"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-004",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "second-anglo-dutch-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-012",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "fourth-anglo-dutch-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-020",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-pirna",
+        "edges": [],
+        "place": "pirna"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-028",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "great-plague-of-1738",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-033",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "schmalkaldic-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-037",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "cretan-war-1645-1669",
+        "edges": [],
+        "place": "dalmatia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-041",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-quadruple-alliance",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-045",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "swedish-war-of-liberation",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-049",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "reapers-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-053",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "austro-turkish-war-1663-1664",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-057",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3142505: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-europe-061",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "dano-swedish-war-1657-1658",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-065",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "wyatt-s-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-194",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "honno-ji-incident",
+        "edges": [],
+        "place": "kyoto"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-198",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-safavid-war-1578-1590",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-202",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "russo-persian-war-1651-1653",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-206",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "bruneian-civil-war-of-1660",
+        "edges": [],
+        "place": "sabah"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-042",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "acaxee-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-120",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-spanish-war-1654-1660",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-122",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "char-bouba-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-124",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "tuggurt-expedition-1552",
+        "edges": [],
+        "place": "touggourt"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-001",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "bombardment-of-algiers-1816",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-003",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "fall-of-tlemcen-1518",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-005",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-alexandria-1801",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-007",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "expedition-to-mostaganem-1558",
+        "edges": [],
+        "place": "mostaganem"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-009",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-oran-1556",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-011",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "menalamba-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-013",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-cairo-1517",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-015",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "sieges-of-oran-and-mers-el-kebir",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-017",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-bejaia-1555",
+        "edges": [],
+        "place": "bejaia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-019",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "spanish-assault-on-djerba-1510",
+        "edges": [],
+        "place": "djerba"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-021",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "bafut-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-023",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zaatcha",
+        "edges": [],
+        "place": "biskra"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-025",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-fort-julien",
+        "edges": [],
+        "place": "fort-julien"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-027",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "1465-fez-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-029",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q25578 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q25578: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-17-africa-031",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-laghouat",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-033",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "written",
+      "written": {
+        "event": "austrian-expedition-against-morocco-1829",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-035",
+      "writer": "B",
+      "fired": "2026-10-17T02:33Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q104879437: none of its classes (Q582956) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-16-americas-032",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "new-york-slave-revolt-of-1712",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-034",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "mixton-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-036",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "acadian-civil-war",
+        "edges": [],
+        "place": "new-france-q170604"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-038",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4867844: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-africa-002",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "basuto-gun-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-004",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-algiers-1516",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-006",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-blaauwberg",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-008",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gallabat",
+        "edges": [],
+        "place": "gallabat"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-010",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "alexandria-expedition-of-1807",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-012",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gura",
+        "edges": [],
+        "place": "gura-eritrea"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-014",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "spanish-conquest-of-tripoli",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-016",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "free-state-basotho-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-018",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-cairo-1801",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-020",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "bombardment-of-sale-1851",
+        "edges": [],
+        "place": "sale"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-022",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gundet",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-024",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-mombasa-1696-1698",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-026",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "south-african-wars-1879-1915",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-028",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "mejba-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-030",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-larache-1689",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-032",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q3316732 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q3316732: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-17-africa-034",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "spanish-expedition-to-tlemcen-1535",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-001",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "onin-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-003",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "third-anglo-burmese-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-005",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battles-of-kawanakajima",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-007",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "1895-japanese-invasion-of-taiwan",
+        "edges": [],
+        "place": "taiwan-island"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-009",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q569485 is already the event \"knights-war\""
+    },
+    {
+      "id": "2026-10-17-asia-011",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-geok-tepe",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-013",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q699902 is already the event \"siege-of-belgrade-1688\""
+    },
+    {
+      "id": "2026-10-17-asia-015",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-aizu",
+        "edges": [],
+        "place": "aizu"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-017",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-utsunomiya-castle",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-019",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-baghdad-1638",
+        "edges": [],
+        "place": "baghdad"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-021",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-mount-hiei",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-023",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-persian-war-1743-1746",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-025",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hemmingstedt",
+        "edges": [],
+        "place": "hemmingstedt"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-027",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-damghan-1729",
+        "edges": [],
+        "place": "mehmandust-semnan"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-029",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-belgrade-1690",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-031",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1926145: no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    {
+      "id": "2026-10-17-asia-033",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-chittorgarh-1567-1568",
+        "edges": [],
+        "place": "chittor-fort"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-035",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-manila-1762",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-037",
+      "writer": "A",
+      "fired": "2026-10-17T02:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kirkuk-1733",
+        "edges": [],
+        "place": "kirkuk"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-002",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q617772: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-asia-004",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "second-anglo-mysore-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-006",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q487757 is already the event \"qing-invasion-of-joseon\""
+    },
+    {
+      "id": "2026-10-17-asia-008",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-odawara-1590",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-010",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "bombardment-of-kagoshima",
+        "edges": [],
+        "place": "kagoshima"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-012",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-krtsanisi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-014",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1140134 is already the event \"invasion-of-ryukyu\""
+    },
+    {
+      "id": "2026-10-17-asia-016",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-malakand",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-018",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "santhal-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-020",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1052771 is already the event \"celali-rebellions\""
+    },
+    {
+      "id": "2026-10-17-asia-022",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-cannanore-1507",
+        "edges": [],
+        "place": "kannur"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-024",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "kenesary-s-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-026",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "mughal-safavid-war-1649-1653",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-028",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-isfahan",
+        "edges": [],
+        "place": "isfahan"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-030",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-spanish-war-1762-1763",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-032",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-fushimi-castle",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-034",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "unification-of-nepal",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-036",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-aslanduz",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-038",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "wahhabi-sack-of-karbala",
+        "edges": [],
+        "place": "karbala"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-040",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "afaqi-khoja-revolts",
+        "edges": [],
+        "place": "kashgar"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-042",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "second-turkish-siege-of-vienna",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-044",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-pondicherry-1760",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-046",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ngoc-hoi-ong-a",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-048",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "c-nar-incident",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-050",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chinsurah",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-002",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sitka",
+        "edges": [],
+        "place": "sitka-alaska"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-004",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "stono-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-006",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "spanish-portuguese-war-1776-1777",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-008",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "fries-s-rebellion",
+        "edges": [],
+        "place": "pennsylvania"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-010",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "filibuster-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-012",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "first-central-american-civil-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-014",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "peruvian-bolivian-war-of-1828",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-016",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "revolution-of-the-reforms",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-018",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q3486005 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q3486005: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-17-americas-020",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-annapolis-royal-1744",
+        "edges": [],
+        "place": "annapolis-county"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-022",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "chumash-revolt-of-1824",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-024",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "iguape-war",
+        "edges": [],
+        "place": "captaincy-of-sao-vicente"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-026",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q3402207 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q3402207: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-17-americas-028",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q26248687: no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    {
+      "id": "2026-10-17-americas-030",
+      "writer": "B",
+      "fired": "2026-10-17T02:42Z",
+      "status": "written",
+      "written": {
+        "event": "lunenburg-campaign-1758",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-002",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-polish-succession",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-004",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-second-coalition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-006",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q641479 is already the event \"khmelnytsky-uprising\""
+    },
+    {
+      "id": "2026-10-17-europe-008",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "written",
+      "written": {
+        "event": "pugachev-s-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-010",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q767935 is already the event \"siege-of-rhodes-1522\""
+    },
+    {
+      "id": "2026-10-17-europe-012",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1962709 is already the event \"ingrian-war\""
+    },
+    {
+      "id": "2026-10-17-europe-014",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "written",
+      "written": {
+        "event": "polish-russian-war-of-1792",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-016",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q697654 is already the event \"siege-of-buda-1686\""
+    },
+    {
+      "id": "2026-10-17-europe-018",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-russian-war-1807-1812",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-020",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q896479: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   ]
 }

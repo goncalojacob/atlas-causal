@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "c-nar-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q8077838",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Çınar incident"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8077838"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Çınar incident\", revision 1366216392"
+    }
+  ],
+  "title": "Çınar incident",
+  "summary": "The English Wikipedia article \"Çınar incident\", at revision 1366216392, opens: \"Çınar incident is the name of a 17th-century rebellion in the Ottoman Empire. It is also sometimes known as \"The Event of the Wakwak\", named after a mythical tree on which human beings grew, as an analogy to the corpses hung from trees in the aftermath of the rebellion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q8077838, imported by tools/import/wikidata.mjs. The item's own description reads \"17th-century rebellion in the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1656,
+    "end": 1656,
+    "date": "1656-03-04",
+    "endDate": "1656-03-08"
+  },
+  "place": "constantinople",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

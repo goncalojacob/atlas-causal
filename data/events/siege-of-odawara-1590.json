@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-odawara-1590",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2622890",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Odawara (1590)",
+    "pt": "Cerco de Odawara (1590)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2622890"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Odawara (1590)\", revision 1370744143"
+    }
+  ],
+  "title": "Siege of Odawara (1590)",
+  "summary": "The English Wikipedia article \"Siege of Odawara (1590)\", at revision 1370744143, opens: \"The third Siege of Odawara  occurred in 1590, and was the primary action in Toyotomi Hideyoshi's campaign to eliminate the Hōjō clan as a threat to his power. The months leading up to it saw hasty but major improvements in the defense of the castle, as Hideyoshi's intentions became clear. Thus, despite the overwhelming force brought to bear by Hideyoshi, the siege saw little actual fighting.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2622890, imported by tools/import/wikidata.mjs. The item's own description reads \"1590\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1590,
+    "end": 1590,
+    "date": "1590-05",
+    "endDate": "1590-08-04"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

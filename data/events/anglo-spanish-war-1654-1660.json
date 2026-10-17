@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "anglo-spanish-war-1654-1660",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q369291",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Anglo-Spanish War (1654–1660)",
+    "pt": "Guerra Anglo-Espanhola (1654–1660)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q369291"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Spanish War (1654–1660)\", revision 1374860765"
+    }
+  ],
+  "title": "Anglo-Spanish War (1654–1660)",
+  "summary": "The English Wikipedia article \"Anglo-Spanish War (1654–1660)\", at revision 1374860765, opens: \"The Anglo-Spanish War of 1654–1660 was fought between the Commonwealth of England and Habsburg Spain. It was driven by the economic and religious rivalry between the two countries, with each side attacking the other's commercial and colonial interests in various ways, such as privateering and naval expeditions.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q369291, imported by tools/import/wikidata.mjs. The item's own description reads \"1654–1660 war between the English Protectorate under Oliver Cromwell and Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1654,
+    "end": 1660
+  },
+  "place": "cadiz",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

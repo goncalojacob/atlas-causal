@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "unification-of-nepal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7884900",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Unification of Nepal",
+    "pt": "Unificação do Nepal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7884900"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Unification of Nepal\", revision 1378436987"
+    }
+  ],
+  "title": "Unification of Nepal",
+  "summary": "The English Wikipedia article \"Unification of Nepal\", at revision 1378436987, opens: \"The Unification of Nepal was the historical process of military conquest, strategic diplomacy, and state-building through which the Hill Kingdom of Gorkha unified dozens of fragmented kingdoms into the sovereign state of modern Nepal. Initiated in 1743 CE by King Prithvi Narayan Shah upon his ascension to the Gorkha throne, the unification campaign spanned over seven decades, concluding after the Anglo-Nepalese War with the Treaty of Sugauli in 1816 CE, which established the nation's formal international boundaries.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7884900, imported by tools/import/wikidata.mjs. The item's own description reads \"Nepalese unification campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1744,
+    "end": 1816
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
