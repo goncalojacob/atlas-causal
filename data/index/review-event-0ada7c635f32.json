@@ -6710,6 +6710,37 @@
         "wikipedia-en"
       ],
       "created": "2026-10-17",
+      "id": "anglo-russian-war-1807-1812",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "napoleonic-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Anglo-Russian War (1807–1812)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
       "id": "anglo-spanish-war-1654-1660",
       "kind": "event",
       "origin": {
@@ -53646,6 +53677,35 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "polish-russian-war-of-1792",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Polish–Russian War of 1792"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -54757,6 +54817,36 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Pueblo Revolt"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "pugachev-s-rebellion",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Pugachev's Rebellion"
     },
     {
       "authors": [
@@ -73551,6 +73641,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-17",
+      "id": "war-of-the-polish-succession",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "War of the Polish Succession"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "war-of-the-pyrenees",
       "kind": "event",
@@ -73598,6 +73717,35 @@
       "revised": null,
       "status": "active",
       "title": "War of the Quadruple Alliance"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-17",
+      "id": "war-of-the-second-coalition",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "War of the Second Coalition"
     },
     {
       "authors": [
@@ -75288,6 +75436,12 @@
     },
     {
       "id": "anglo-powhatan-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "anglo-russian-war-1807-1812",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -79859,6 +80013,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "polish-russian-war-of-1792",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "polish-swedish-war-1600-1611",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -79974,6 +80134,12 @@
     },
     {
       "id": "pueblo-revolt",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "pugachev-s-rebellion",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -81821,6 +81987,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "war-of-the-polish-succession",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "war-of-the-pyrenees",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -81828,6 +82000,12 @@
     },
     {
       "id": "war-of-the-quadruple-alliance",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "war-of-the-second-coalition",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

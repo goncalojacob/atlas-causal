@@ -2437,3 +2437,11 @@ Writer B imported it from the planner's queue as item `2026-10-17-americas-022`,
 ## Writer B, 2026-10-17: `lunenburg-campaign-1758`, filed under `french-and-indian-war` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-17-americas-030`, rank `child-of:french-and-indian-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-17: `polish-russian-war-of-1792`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-17-europe-014`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-17: `anglo-russian-war-1807-1812`, filed under `napoleonic-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-europe-018`, rank `list`. Its span and its subject put it inside the umbrella.

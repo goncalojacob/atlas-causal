@@ -9503,6 +9503,131 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-002",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-polish-succession",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-004",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-second-coalition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-006",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q641479 is already the event \"khmelnytsky-uprising\""
+    },
+    {
+      "id": "2026-10-17-europe-008",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "written",
+      "written": {
+        "event": "pugachev-s-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-010",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q767935 is already the event \"siege-of-rhodes-1522\""
+    },
+    {
+      "id": "2026-10-17-europe-012",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1962709 is already the event \"ingrian-war\""
+    },
+    {
+      "id": "2026-10-17-europe-014",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "written",
+      "written": {
+        "event": "polish-russian-war-of-1792",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-016",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q697654 is already the event \"siege-of-buda-1686\""
+    },
+    {
+      "id": "2026-10-17-europe-018",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-russian-war-1807-1812",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-020",
+      "writer": "B",
+      "fired": "2026-10-17T03:43Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q896479: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   ]
 }
