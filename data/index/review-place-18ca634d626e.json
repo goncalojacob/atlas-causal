@@ -2734,7 +2734,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "beirut",
       "kind": "place",
       "names": [
@@ -3095,6 +3095,34 @@
       ],
       "created": "2026-10-17",
       "degree": 1,
+      "id": "bern",
+      "kind": "place",
+      "names": [
+        "Bern",
+        "Berna"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
       "id": "berwick-maine",
       "kind": "place",
       "names": [
@@ -3296,6 +3324,33 @@
       "kind": "place",
       "names": [
         "Blida"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "bloody-creek",
+      "kind": "place",
+      "names": [
+        "Bloody Creek"
       ],
       "origin": {
         "tool": "wikidata"
@@ -4261,6 +4316,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "buenos-aires",
+      "kind": "place",
+      "names": [
+        "Buenos Aires"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -4844,6 +4926,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "caracas",
+      "kind": "place",
+      "names": [
+        "Caracas"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5072,7 +5181,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "caucasus",
       "kind": "place",
       "names": [
@@ -8943,6 +9052,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "fatagar",
+      "kind": "place",
+      "names": [
+        "Fetegar",
+        "Fatagar"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -9309,7 +9446,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "fort-de-rocher",
       "kind": "place",
       "names": [
@@ -11280,6 +11417,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "gulf-of-st-lawrence",
+      "kind": "place",
+      "names": [
+        "Gulf of Saint Lawrence",
+        "Golfo de São Lourenço",
+        "Gulf of St. Lawrence"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -12083,7 +12249,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "hudson-bay",
       "kind": "place",
       "names": [
@@ -13698,6 +13864,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "jit-gadhi",
+      "kind": "place",
+      "names": [
+        "Jit Gadhi"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-01",
       "degree": 1,
       "id": "johor",
@@ -14099,6 +14292,33 @@
       "kind": "place",
       "names": [
         "Kanpur"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "kansas",
+      "kind": "place",
+      "names": [
+        "Kansas"
       ],
       "origin": {
         "tool": "wikidata"
@@ -21306,6 +21526,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "ohio",
+      "kind": "place",
+      "names": [
+        "Ohio"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-15",
       "degree": 1,
       "id": "old-goa",
@@ -22765,6 +23012,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "plered",
+      "kind": "place",
+      "names": [
+        "Plered"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "plzen",
@@ -24130,6 +24404,35 @@
           "a9-place"
         ],
         "note": "Place written by the run that imported the event, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record its P276 names was not here, so the event came out placeless. The point and the names are the item's own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "quy-nhon-city",
+      "kind": "place",
+      "names": [
+        "Quy Nhon",
+        "Qui Nhơn",
+        "Quy Nhơn (city)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -27661,6 +27964,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "south-region-brazil",
+      "kind": "place",
+      "names": [
+        "South Region",
+        "Região Sul do Brasil",
+        "South Region, Brazil"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -29843,7 +30175,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "tigray-region",
       "kind": "place",
       "names": [
@@ -30876,7 +31208,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 6,
+      "degree": 7,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -31788,7 +32120,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 8,
+      "degree": 9,
       "id": "washington",
       "kind": "place",
       "names": [

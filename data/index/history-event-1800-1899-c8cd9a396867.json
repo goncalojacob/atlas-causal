@@ -423,6 +423,24 @@
         }
       ]
     },
+    "adams-onis-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "admirable-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "alaska-purchase": {
       "from": "git",
       "versions": [
@@ -869,6 +887,15 @@
         }
       ]
     },
+    "battle-of-belen-pass": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-belmont-1899": {
       "from": "git",
       "versions": [
@@ -908,6 +935,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-borodino": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -1099,6 +1135,15 @@
         }
       ]
     },
+    "battle-of-cotagaita": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-crete-a-pierrot": {
       "from": "git",
       "versions": [
@@ -1203,6 +1248,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-gawok": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -1335,6 +1389,15 @@
         }
       ]
     },
+    "battle-of-hampton-roads": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-hlobane": {
       "from": "git",
       "versions": [
@@ -1404,12 +1467,30 @@
         }
       ]
     },
+    "battle-of-jaithak": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-jalalabad-1842": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-jit-gadhi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -1821,6 +1902,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-ramu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -2267,6 +2357,15 @@
         }
       ]
     },
+    "battle-of-trafalgar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-tucuman": {
       "from": "git",
       "versions": [
@@ -2494,12 +2593,30 @@
         }
       ]
     },
+    "berne-convention": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "black-hawk-war": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "bleeding-kansas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -2593,6 +2710,15 @@
         }
       ]
     },
+    "bombardment-of-beirut-1840": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "bombardment-of-kagoshima": {
       "from": "git",
       "versions": [
@@ -2608,6 +2734,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "bombardment-of-qui-nhon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -2814,6 +2949,15 @@
       ]
     },
     "chumash-revolt-of-1824": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "cisplatine-war": {
       "from": "git",
       "versions": [
         {
@@ -3748,6 +3892,15 @@
         }
       ]
     },
+    "gilded-age": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "great-famine-ireland": {
       "from": "git",
       "versions": [
@@ -4195,6 +4348,15 @@
       ]
     },
     "march-revolution-venezuela": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "may-revolution": {
       "from": "git",
       "versions": [
         {
@@ -4706,6 +4868,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "ragamuffin-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -5650,6 +5821,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "storming-of-pleret": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },

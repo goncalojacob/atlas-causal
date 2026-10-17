@@ -1280,6 +1280,15 @@
         }
       ]
     },
+    "bern": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "berwick-maine": {
       "from": "git",
       "versions": [
@@ -1368,6 +1377,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "bloody-creek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -1834,6 +1852,15 @@
         }
       ]
     },
+    "buenos-aires": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "bulgaria-q219": {
       "from": "git",
       "versions": [
@@ -2052,6 +2079,15 @@
       ]
     },
     "captaincy-of-sao-vicente": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "caracas": {
       "from": "git",
       "versions": [
         {
@@ -3927,6 +3963,15 @@
         }
       ]
     },
+    "fatagar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "federal-state-of-austria": {
       "from": "git",
       "versions": [
@@ -4970,6 +5015,15 @@
         }
       ]
     },
+    "gulf-of-st-lawrence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "gulf-of-tonkin": {
       "from": "git",
       "versions": [
@@ -5935,6 +5989,15 @@
         }
       ]
     },
+    "jit-gadhi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "johor": {
       "from": "git",
       "versions": [
@@ -6109,6 +6172,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "kansas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -9315,6 +9387,15 @@
         }
       ]
     },
+    "ohio": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "old-goa": {
       "from": "git",
       "versions": [
@@ -9937,6 +10018,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "plered": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -10572,6 +10662,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "quy-nhon-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -12193,6 +12292,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "south-region-brazil": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
