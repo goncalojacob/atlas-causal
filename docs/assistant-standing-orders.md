@@ -560,3 +560,50 @@ settings of section 16, until 07:00Z on 17 October.
 - A second Spanish–American War record was removed on 16 October. A scan
   of every active event for titles that differ only by a leading "The" or
   a bracket found no other true duplicate.
+
+## 18. 17 October, 07:00Z: the close of the faster night
+
+The assistant disabled the planner, writer A and writer B at 07:00Z on 17
+October, as the owner asked ("continue until 8am"). The night ran on the
+faster settings of section 16: the planner queues 100 to 150 events a fire
+with no links, and each writer takes forty a fire in any lane.
+
+**What the night did.** Snapshots 33 to 38 went out. The site went
+from 2,156 to 2,653 event records. Most new events are battles and
+wars of 1415 to 1900 in Africa and Asia, then Europe and the Americas, with
+epidemics, rebellions and treaties among them. The pace was about forty
+events an hour, four times the night of 15 October.
+
+**What the assistant fixed by hand.**
+- The planner's first fast fire wrote every item for writer A. The rules
+  card now carries the exact command that hands items out by turn.
+- The writers sometimes wrote a second batch after the index build, or
+  committed records after the cache. The assistant rebuilt the index or
+  filled the title table, and the check-in script now fills the title
+  table on its own.
+- Children dated outside their parent lost that filing: the Siege of
+  Baler, the Italian campaigns of 1792 to 1801 and the Russo-Turkish War of
+  1686 to 1700.
+- Writer B stopped twice on the Satsuma Rebellion (Q714820). Wikidata gives
+  it a start of 29 January 2005 and an end of 24 September 1877. The import
+  wrote the record anyway, the validator refused it, and writer B stopped
+  without pushing. Its claim then blocked the next fires. The item is out
+  of the queue.
+
+- At about 2,570 events three browser tests failed. Two counted the graph
+  before it had finished drawing, and now wait for it (branch `m95`). The
+  third was real: the phone timeline wrote no bar names at all. A title now
+  tries the other side of its bar before it is dropped (branch `m96`), but
+  a 390-px phone still shows only about four names at rest.
+
+**What waits for the owner.**
+- The phone timeline's names: a fuller fix would reserve title room for the
+  most important bars in `src/lanes.js` once the row cap binds.
+- Wikidata's start date for the Satsuma Rebellion needs correcting before
+  it can enter.
+- `tools/queue/apply.mjs` should refuse an item whose end comes before its
+  start, so one bad Wikidata date cannot stop a writer.
+- The links between events: section 16 left them for a later pass.
+
+**To resume.** Re-enable the planner and the two writers. Sections 12, 14
+and 16 still hold.
