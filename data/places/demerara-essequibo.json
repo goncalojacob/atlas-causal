@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "demerara-essequibo",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5255160",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Demerara-Essequibo"
+  },
+  "sources": [],
+  "names": [
+    "Demerara-Essequibo"
+  ],
+  "where": {
+    "lon": -58.1701,
+    "lat": 6.8121,
+    "precision": "region",
+    "label": "Demerara-Essequibo"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

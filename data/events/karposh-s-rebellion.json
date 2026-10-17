@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "karposh-s-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q26709211",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Karposh's rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q26709211"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Karposh's rebellion\", revision 1366220848"
+    }
+  ],
+  "title": "Karposh's rebellion",
+  "summary": "The English Wikipedia article \"Karposh's rebellion\", at revision 1366220848, opens: \"Karposh's rebellion or Karposh's uprising was a Christian anti-Ottoman uprising in the Central Balkans that took place in October 1689 during the Great Turkish War of 1683–1699. The nickname Karposh probably derives from the Paleo-Balkan term karpa 'tuff (rock), limestone'. The leader of the rebellion, was born in the Sanjak of Üsküp in the then Rumelia Eyalet of the Ottoman Empire, probably in the village of Vojnik, and named Petar. At a very young age, he escaped to Wallachia, where he worked as a miner. Later, Karposh moved to the Rhodope Mountains, where he settled in the Dospat valley, becoming a notorious hajduk. After the army of the Holy Roman Empire advanced into the Ottoman Balkans, Karposh moved to the area of Znepole, and began to organise anti-Ottoman resistance-detachments there.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q26709211, imported by tools/import/wikidata.mjs. The item's own description reads \"1689 rebellion in the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1689,
+    "end": 1689,
+    "date": "1689-10",
+    "endDate": "1689-12"
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

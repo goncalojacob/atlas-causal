@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "trunajaya-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q28136838",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Trunajaya rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q28136838"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Trunajaya rebellion\", revision 1370751472"
+    }
+  ],
+  "title": "Trunajaya rebellion",
+  "summary": "The English Wikipedia article \"Trunajaya rebellion\", at revision 1370751472, opens: \"The Trunajaya Rebellion or Trunajaya War was a conflict in the 1670s led by the Madurese prince Trunajaya and Makassarese fighters against the Mataram Sultanate and the Dutch East India Company (VOC) in Java.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q28136838, imported by tools/import/wikidata.mjs. The item's own description reads \"17th-century unsuccessful rebellion in Java\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1674,
+    "end": 1681
+  },
+  "place": "java",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "prince-of-ning-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q11457612",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Prince of Ning rebellion",
+    "pt": "Rebelião do Príncipe de Ning"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11457612"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Prince of Ning rebellion\", revision 1370705074"
+    }
+  ],
+  "title": "Prince of Ning rebellion",
+  "summary": "The English Wikipedia article \"Prince of Ning rebellion\", at revision 1370705074, opens: \"The Prince of Ning rebellion was a revolt during the Ming dynasty in China led by Zhu Chenhao, Prince of Ning, against the reigning Zhengde Emperor. It took place in northern Jiangxi and southwestern Nanzhili and lasted from 10 July to 20 August 1519. The rebellion was ultimately quelled when the government army, led by Wang Yangming, the grand coordinator of southern Jiangxi, captured the Prince of Ning. The Prince of Ning revolt was one of two princely rebellions during the Zhengde Emperor's reign; it was preceded by the Prince of Anhua rebellion in 1510.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11457612, imported by tools/import/wikidata.mjs. The item's own description reads \"16th-century attempted overthrow of the Ming emperor\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1519,
+    "end": 1519,
+    "date": "1519-07-10",
+    "endDate": "1519-08-20"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "three-hundred-and-thirty-five-years-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1054482",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Three Hundred and Thirty Five Years' War",
+    "pt": "Guerra dos Trezentos e Trinta e Cinco Anos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1054482"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Three Hundred and Thirty Five Years' War\", revision 1376550844"
+    }
+  ],
+  "title": "Three Hundred and Thirty Five Years' War",
+  "summary": "The English Wikipedia article \"Three Hundred and Thirty Five Years' War\", at revision 1376550844, opens: \"The Three Hundred and Thirty-Five Years' War was an alleged state of war between the Netherlands and the Isles of Scilly. It is said to have been extended by the lack of a peace treaty for 335 years without a single shot being fired, which would make it one of the world's longest wars, and a bloodless war. Despite the uncertain validity of the declaration of war, and thus uncertainty about whether or not a state of war ever actually existed, peace was finally declared in 1986, bringing an end to any hypothetical war that may have been legally considered to exist.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1054482, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1651,
+    "end": 1986,
+    "date": "1651-03-30",
+    "endDate": "1986-04-17"
+  },
+  "place": "isles-of-scilly",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

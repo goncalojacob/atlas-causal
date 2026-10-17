@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "galicia-eastern-europe",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q180086",
+  "sitelinks": {
+    "count": 67,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Galicia (Eastern Europe)",
+    "pt": "Galícia (Europa Central)"
+  },
+  "sources": [],
+  "names": [
+    "Galicia",
+    "Galicia (Eastern Europe)",
+    "Galícia (Europa Central)"
+  ],
+  "where": {
+    "lon": 24.01416666667,
+    "lat": 49.83,
+    "precision": "region",
+    "label": "Galicia (Eastern Europe)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
