@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "dagohoy-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5208625",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Dagohoy rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5208625"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dagohoy rebellion\", revision 1379426715"
+    }
+  ],
+  "title": "Dagohoy rebellion",
+  "summary": "The English Wikipedia article \"Dagohoy rebellion\", at revision 1379426715, opens: \"The Dagohoy rebellion, also known as the Dagohoy revolution and the Dagohoy revolt, is considered as the longest rebellion in Philippine history. Led by Francisco Dagohoy, or Francisco Sendrijas, the rebellion took place on the island of Bohol from 1744 to 1829, lasting for roughly 85 years.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5208625, imported by tools/import/wikidata.mjs. The item's own description reads \"1829 rebellion on Bohol, Philippines\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1744,
+    "end": 1829,
+    "date": "1744-01-24",
+    "endDate": "1829-08-31"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

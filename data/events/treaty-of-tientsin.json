@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-tientsin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q612577",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Treaty of Tientsin",
+    "pt": "Tratado de Tientsin"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q612577"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Tientsin\", revision 1358177367"
+    }
+  ],
+  "title": "Treaty of Tientsin",
+  "summary": "The English Wikipedia article \"Treaty of Tientsin\", at revision 1358177367, opens: \"The Treaty of Tientsin, also known as the Treaty of Tianjin, is a collective name for several unequal treaties signed at Tianjin in June 1858. The Qing dynasty, Russian Empire, Second French Empire, United Kingdom, and the United States were the parties involved. These treaties, counted by the Chinese among the unequal treaties, opened more Chinese ports to foreign trade, permitted foreign legations in the Chinese capital Beijing, allowed Christian missionary activity, and effectively legalized the import of opium. They ended the first phase of the Second Opium War, which had begun in 1856 and were ratified by the Emperor of China in the Convention of Peking in 1860, after the end of the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q612577, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1858,
+    "date": "1858-06"
+  },
+  "place": "tianjin",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

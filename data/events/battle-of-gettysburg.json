@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-gettysburg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q33132",
+  "sitelinks": {
+    "count": 57,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Gettysburg",
+    "pt": "Batalha de Gettysburg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q33132"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gettysburg\", revision 1380654585"
+    }
+  ],
+  "title": "Battle of Gettysburg",
+  "summary": "The English Wikipedia article \"Battle of Gettysburg\", at revision 1380654585, opens: \"The Battle of Gettysburg was fought in the American Civil War between the Union and Confederate armies in and around Gettysburg, Pennsylvania. The battle, won by the Union, is widely considered the Civil War's turning point, leading to an ultimate victory of the Union and the preservation of the nation. The Battle of Gettysburg was the bloodiest battle of both the Civil War and of any battle in American military history up to that time, claiming over 50,000 combined casualties. Union major general George Meade's Army of the Potomac defeated attacks by Confederate general Robert E. Lee's Army of Northern Virginia, halting Lee's invasion of the North and forcing his retreat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q33132, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-07-01",
+    "endDate": "1863-07-03"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

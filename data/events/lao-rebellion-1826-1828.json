@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "lao-rebellion-1826-1828",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q6407091",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Lao rebellion (1826–1828)",
+    "pt": "Rebelião Chao Anu"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6407091"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lao rebellion (1826–1828)\", revision 1380513813"
+    }
+  ],
+  "title": "Lao rebellion (1826–1828)",
+  "summary": "The English Wikipedia article \"Lao rebellion (1826–1828)\", at revision 1380513813, opens: \"The Lao Rebellion of 1826–1828 was an attempt by King Anouvong of the Kingdom of Vientiane to end the suzerainty of Siam and recreate the former kingdom of Lan Xang. In January 1827 the Lao armies of the kingdoms of Vientiane and Champasak moved south and west across the Khorat Plateau, advancing as far as Saraburi, just three days' march from the Siamese capital of Bangkok. The Siamese mounted a counterattack to the north and east, forcing the Lao forces to retreat and ultimately taking the capital of Vientiane. Anouvong failed in both his attempt to resist Siamese encroachment, and to check the further political fragmentation among the Lao. The kingdom of Vientiane was abolished, its population was forcibly moved to Siam, and its former territories fell under the direct control of Siamese provincial administration. The kingdoms of Champasak and Lan Na were drawn more closely into the Siamese administrative system. The kingdom of Luang Prabang was weakened but allowed the most regional autonomy. In its expansion into the Lao states, Siam overextended itself. The rebellion was a direct cause of the Siamese—Vietnamese wars in the 1830s and 1840s. The slave raids and forced population transfers conducted by Siam led to a demographic disparity between the areas that would ultimately become Thailand and Laos, and facilitated the \"civilizing mission\" of the French into Lao areas during the latter half of the nineteenth century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6407091, imported by tools/import/wikidata.mjs. The item's own description reads \"Anouvong's Rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1826,
+    "end": 1828
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
