@@ -10208,6 +10208,12 @@
     },
     {
       "dissent": false,
+      "id": "1772-1773-persian-plague",
+      "kind": "event",
+      "locator": "\"1772–1773 Persian Plague\", revision 1356708545"
+    },
+    {
+      "dissent": false,
       "id": "1863-1875-cholera-pandemic",
       "kind": "event",
       "locator": "\"1863–1875 cholera pandemic\", revision 1375707398"
@@ -11177,6 +11183,12 @@
       "id": "age-of-enlightenment",
       "kind": "event",
       "locator": "\"Age of Enlightenment\", revision 1379866058"
+    },
+    {
+      "dissent": false,
+      "id": "alaska-purchase",
+      "kind": "event",
+      "locator": "\"Alaska Purchase\", revision 1378538835"
     },
     {
       "dissent": false,
@@ -14288,6 +14300,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-saragarhi",
+      "kind": "event",
+      "locator": "\"Battle of Saragarhi\", revision 1376454299"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sarhu",
       "kind": "event",
       "locator": "\"Battle of Sarhū\", revision 1370273817"
@@ -14717,6 +14735,12 @@
       "id": "battle-of-the-lake-of-two-mountains",
       "kind": "event",
       "locator": "\"Battle of the Lake of Two Mountains\", revision 1370600653"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-little-bighorn",
+      "kind": "event",
+      "locator": "\"Battle of the Little Bighorn\", revision 1380124247"
     },
     {
       "dissent": false,
@@ -15485,6 +15509,18 @@
       "id": "boshin-war",
       "kind": "event",
       "locator": "\"Boshin War\", revision 1370494597"
+    },
+    {
+      "dissent": false,
+      "id": "boston-tea-party",
+      "kind": "event",
+      "locator": "\"Boston Tea Party\", revision 1380288187"
+    },
+    {
+      "dissent": false,
+      "id": "bowring-treaty",
+      "kind": "event",
+      "locator": "\"Bowring Treaty\", revision 1363118028"
     },
     {
       "dissent": false,
@@ -16430,6 +16466,12 @@
     },
     {
       "dissent": false,
+      "id": "cyprus-convention",
+      "kind": "event",
+      "locator": "\"Cyprus Convention\", revision 1359144286"
+    },
+    {
+      "dissent": false,
       "id": "damour-massacre",
       "kind": "event",
       "locator": "\"Damour massacre\", revision 1356232011"
@@ -17348,6 +17390,12 @@
     },
     {
       "dissent": false,
+      "id": "franco-hova-wars",
+      "kind": "event",
+      "locator": "\"Franco-Hova Wars\", revision 1371053924"
+    },
+    {
+      "dissent": false,
       "id": "franco-moroccan-war",
       "kind": "event",
       "locator": "\"Franco-Moroccan War\", revision 1370620127"
@@ -17588,6 +17636,12 @@
     },
     {
       "dissent": false,
+      "id": "great-famine-of-1876-1878",
+      "kind": "event",
+      "locator": "\"Great Famine of 1876–1878\", revision 1375751084"
+    },
+    {
+      "dissent": false,
       "id": "great-game",
       "kind": "event",
       "locator": "\"Great Game\", revision 1379870317"
@@ -17753,6 +17807,12 @@
       "id": "hay-bunau-varilla-treaty",
       "kind": "event",
       "locator": "\"Hay–Bunau-Varilla Treaty\", revision 1375195423"
+    },
+    {
+      "dissent": false,
+      "id": "haymarket-affair",
+      "kind": "event",
+      "locator": "\"Haymarket affair\", revision 1379590550"
     },
     {
       "dissent": false,
@@ -18353,6 +18413,12 @@
       "id": "kandyan-commerce-raiding-against-portugal-1612-1613",
       "kind": "event",
       "locator": "\"Kandyan commerce raiding against Portugal (1612–1613)\", revision 1372825928"
+    },
+    {
+      "dissent": false,
+      "id": "kandyan-convention",
+      "kind": "event",
+      "locator": "\"Kandyan Convention\", revision 1325105305"
     },
     {
       "dissent": false,
@@ -19520,6 +19586,12 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-mamluk-war-1516-1517",
+      "kind": "event",
+      "locator": "\"Ottoman–Mamluk War (1516–1517)\", revision 1379922376"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-persian-war-1505-1517",
       "kind": "event",
       "locator": "\"Ottoman–Persian War (1505–1517)\", revision 1380388442"
@@ -20369,6 +20441,12 @@
       "id": "russo-persian-war-1722-1723",
       "kind": "event",
       "locator": "\"Russo-Persian War (1722–1723)\", revision 1378917281"
+    },
+    {
+      "dissent": false,
+      "id": "russo-persian-war-1826-1828",
+      "kind": "event",
+      "locator": "\"Russo-Persian War (1826–1828)\", revision 1370729271"
     },
     {
       "dissent": false,
@@ -22976,6 +23054,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-balta-liman",
+      "kind": "event",
+      "locator": "\"Treaty of Balta Liman\", revision 1374235511"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-bassein-1534",
       "kind": "event",
       "locator": "\"Treaty of Bassein (1534)\", revision 1312441920"
@@ -22991,6 +23075,12 @@
       "id": "treaty-of-bucharest",
       "kind": "event",
       "locator": "\"Treaty of Bucharest (1913)\", revision 1359715572"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-butre",
+      "kind": "event",
+      "locator": "\"Treaty of Butre\", revision 1376183718"
     },
     {
       "dissent": false,
@@ -23012,9 +23102,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-gandamak",
+      "kind": "event",
+      "locator": "\"Treaty of Gandamak\", revision 1380441219"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-greenville",
       "kind": "event",
       "locator": "\"Treaty of Greenville\", revision 1375606163"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-kerden",
+      "kind": "event",
+      "locator": "\"Treaty of Kerden\", revision 1338320601"
     },
     {
       "dissent": false,
@@ -23108,6 +23210,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-resht",
+      "kind": "event",
+      "locator": "\"Treaty of Resht\", revision 1357092985"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-rome",
       "kind": "event",
       "locator": "\"Treaty of Rome\", revision 1311520265"
@@ -23126,9 +23234,27 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-san-stefano",
+      "kind": "event",
+      "locator": "\"Treaty of San Stefano\", revision 1375160728"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-sevres",
       "kind": "event",
       "locator": "\"Treaty of Sèvres\", revision 1369307123"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-shimoda",
+      "kind": "event",
+      "locator": "\"Treaty of Shimoda\", revision 1380617744"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-shimonoseki",
+      "kind": "event",
+      "locator": "\"Treaty of Shimonoseki\", revision 1371343803"
     },
     {
       "dissent": false,
@@ -23156,9 +23282,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-wanghia",
+      "kind": "event",
+      "locator": "\"Treaty of Wanghia\", revision 1347614243"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-windsor",
       "kind": "event",
       "locator": "\"Treaty of Windsor (1899)\", revision 1370935059"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-yandabo",
+      "kind": "event",
+      "locator": "\"Treaty of Yandabo\", revision 1349025534"
     },
     {
       "dissent": false,

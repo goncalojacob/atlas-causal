@@ -1,71 +1,62 @@
 {
-  "from": 1500,
+  "from": 1700,
   "kind": "event",
   "records": {
-    "1510-influenza-pandemic": {
+    "13-vendemiaire": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-16"
+          "on": "2026-09-22"
         }
       ]
     },
-    "1556-shaanxi-earthquake": {
+    "1711-karamanli-coup": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-13"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
+          "on": "2026-10-17"
         }
       ]
     },
-    "aden-revolt": {
+    "1717-omani-invasion-of-bahrain": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-02"
+          "on": "2026-10-17"
         }
       ]
     },
-    "age-of-discovery": {
+    "1755-lisbon-earthquake": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-13"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
         }
       ]
     },
-    "angolan-wars": {
+    "1772-1773-persian-plague": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
+          "on": "2026-10-17"
         }
       ]
     },
-    "arauco-war": {
+    "action-of-11-september-1778": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "action-of-12-december-1779": {
       "from": "git",
       "versions": [
         {
@@ -74,7 +65,51 @@
         },
         {
           "fields": [
-            "place",
+            "review"
+          ],
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "action-of-12-december-1782": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "action-of-15-february-1783": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "action-of-16-march-1782": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
             "region",
             "regionNote",
             "review"
@@ -89,12 +124,12 @@
         }
       ]
     },
-    "attack-on-bintan-1521": {
+    "action-of-18-october-1782": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-01"
+          "on": "2026-10-02"
         },
         {
           "fields": [
@@ -104,7 +139,7 @@
         }
       ]
     },
-    "attack-on-jeddah-1541": {
+    "action-of-26-may-1789": {
       "from": "git",
       "versions": [
         {
@@ -113,43 +148,40 @@
         }
       ]
     },
-    "attack-on-zuwarah": {
+    "action-of-27-june-1798": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-01"
+          "on": "2026-10-02"
         }
       ]
     },
-    "azov-war-1501-1502": {
+    "action-of-28-february-1799": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-17"
+          "on": "2026-10-02"
         }
       ]
     },
-    "bakhchisarai-war-1525": {
+    "action-of-31-july-1793": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "battle-of-abancay": {
-      "from": "git",
-      "versions": [
+          "on": "2026-09-29"
+        },
         {
-          "first": true,
-          "on": "2026-09-30"
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
         }
       ]
     },
-    "battle-of-acajutla": {
+    "action-of-6-july-1746": {
       "from": "git",
       "versions": [
         {
@@ -158,16 +190,142 @@
         }
       ]
     },
-    "battle-of-agnadello": {
+    "action-of-6-september-1782": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-09-24"
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
         }
       ]
     },
-    "battle-of-alcacer-quibir": {
+    "action-of-8-january-1780": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "action-of-9-february-1799-south-africa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "afaqi-khoja-revolts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "age-of-enlightenment": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "american-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "american-revolutionary-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "anglo-french-war-1778-1783": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "anglo-spanish-war-1762-1763": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "anglo-spanish-war-1796-1808": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "armada-of-1779": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "atlantic-revolutions": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "review",
+            "sources",
+            "summary",
+            "when"
+          ],
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "attacks-on-fuerteventura-in-1740": {
       "from": "git",
       "versions": [
         {
@@ -176,7 +334,25 @@
         }
       ]
     },
-    "battle-of-algiers-1541": {
+    "bali-strait-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-abukir-1799": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-adyar": {
       "from": "git",
       "versions": [
         {
@@ -185,37 +361,16 @@
         }
       ]
     },
-    "battle-of-andalien": {
+    "battle-of-ain-dara": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
+          "on": "2026-10-17"
         }
       ]
     },
-    "battle-of-angol": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-angolpo": {
+    "battle-of-al-kawiya": {
       "from": "git",
       "versions": [
         {
@@ -224,7 +379,123 @@
         }
       ]
     },
-    "battle-of-antukyah": {
+    "battle-of-anguilla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-baton-rouge-1779": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-bennington": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-bloody-marsh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-bloody-mose": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-bunker-hill": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-camden": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-cap-francais-1793": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-cape-spartel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-cartagena-de-indias": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-chelif": {
       "from": "git",
       "versions": [
         {
@@ -233,7 +504,837 @@
         }
       ]
     },
-    "battle-of-azemmour": {
+    "battle-of-chinsurah": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-chotusitz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "parent",
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-cowpens": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-croix-des-bouquets": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-cuddalore-1783": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-damghan-1729": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-dartsedo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-dettingen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-flamborough-head": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-fontenoy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-fort-charlotte": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-fort-frontenac": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-fort-niagara": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-fort-royal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-fort-washington": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-gonaives": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-grand-pre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-grand-turk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-grenada": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-guadeloupe-1779": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-guilford-court-house": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-gully-hole-creek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-harlem-heights": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-havana-1748": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-hennersdorf": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "parent",
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-ile-ronde": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-jean-rabel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-kirkuk-1733": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-krtsanisi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-la-bombarde": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-la-guaira": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-lauffeld": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-long-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-madras": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-manila-1762": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-martinique-1779": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "review"
+          ],
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-martinique-1780": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "review"
+          ],
+          "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-martinique-1794": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-melle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-moca-1779": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-mollwitz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "parent",
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-mount-tabor-1799": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-negapatam-1782": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-ngoc-hoi-ong-a": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-pfaffenhofen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-pillpinto": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-port-louis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-porto-bello-1739": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-porto-praya": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-princeton": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-providien": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-pucacasa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-puerto-cabello": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-rio-bueno-1759": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-roatan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-rocoux": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-sadras": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-sahay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-saint-kitts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-saint-louis-du-sud": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-saint-raphael": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-san-fernando-de-omoa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-san-juan-1797": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-sangarara": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-santiago-de-cuba-1748": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-sao-salvador": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-saylla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-shubra-khit": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-sittimungulum": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-soor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "parent",
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-st-lucia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-the-assunpink-creek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-the-black-river": {
       "from": "git",
       "versions": [
         {
@@ -248,16 +1349,22 @@
         }
       ]
     },
-    "battle-of-bab-al-mandab": {
+    "battle-of-the-chesapeake": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-02"
+          "on": "2026-09-30"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
         }
       ]
     },
-    "battle-of-bicocca": {
+    "battle-of-the-mona-passage": {
       "from": "git",
       "versions": [
         {
@@ -266,7 +1373,196 @@
         }
       ]
     },
-    "battle-of-busan": {
+    "battle-of-the-nile": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-the-pyramids": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-the-saintes": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-the-salween-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-tirurangadi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-trenton": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-trincomalee": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-ushant-1781": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-ushant-1782": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-white-plains": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-off-barbados": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battles-of-lexington-and-concord": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "battles-of-saratoga": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "boston-tea-party": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "braddock-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "burmese-siamese-war-1759-1760": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
+    "capture-of-alexandria-1798": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "capture-of-ayaviri": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "capture-of-cayo-cocina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "capture-of-demerara-and-essequibo": {
       "from": "git",
       "versions": [
         {
@@ -275,7 +1571,52 @@
         }
       ]
     },
-    "battle-of-byeokjegwan": {
+    "capture-of-fort-bute": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        },
+        {
+          "fields": [
+            "review"
+          ],
+          "on": "2026-09-30"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "capture-of-fort-dauphin-1794": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "capture-of-grenada-1779": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "capture-of-rio-hondo": {
       "from": "git",
       "versions": [
         {
@@ -284,19 +1625,272 @@
         }
       ]
     },
-    "battle-of-cajamarca": {
+    "capture-of-saint-vincent": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-09-23"
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "capture-of-sint-eustatius": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "capture-of-st-lucia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "capture-of-the-rif-1792": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "carnatic-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
+    "champ-de-mars-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "cherokee-american-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
+    "chickasaw-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "chinese-expedition-to-tibet-1720": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "choctaw-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "civil-constitution-of-the-clergy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
         },
         {
           "fields": [
             "review",
-            "sources",
-            "summary"
+            "when"
           ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "coup-of-18-brumaire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "coup-of-18-fructidor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "dummer-s-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "estates-general-of-1789": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "execution-of-louis-xvi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "fall-of-ghent": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "fall-of-maximilien-robespierre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "fete-de-la-federation": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "first-anglo-maratha-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
+    "first-anglo-mysore-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
+    "first-carnatic-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "first-javanese-war-of-succession": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "first-silesian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "first-treaty-of-san-ildefonso": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-23"
         },
         {
@@ -307,227 +1901,18 @@
         }
       ]
     },
-    "battle-of-capo-d-orso": {
+    "flight-to-varennes": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "battle-of-casaloldo": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-casicola": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-catirai": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
+          "on": "2026-09-22"
         },
         {
           "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-cempoala": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "battle-of-chaldiran": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-14"
-        }
-      ]
-    },
-    "battle-of-cheongju": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-chilcheollyang": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-chungju": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-chupas": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-colhuacatonco": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "battle-of-curalaba": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-cusco": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-dadaejin": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-danghangpo": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-dangpo-1592": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-diu": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-14"
-        }
-      ]
-    },
-    "battle-of-el-tor": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-flodden": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-gavinana": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "parent"
-          ],
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "place",
-            "region",
-            "regionNote",
-            "review"
-          ],
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
+            "review",
+            "sources",
+            "when"
           ],
           "on": "2026-09-29"
         },
@@ -539,40 +1924,7 @@
         }
       ]
     },
-    "battle-of-haengju": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-hansan-island": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-happo": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-hemmingstedt": {
+    "fourth-anglo-dutch-war": {
       "from": "git",
       "versions": [
         {
@@ -581,7 +1933,16 @@
         }
       ]
     },
-    "battle-of-ichi": {
+    "fourth-anglo-mysore-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
+    "fox-wars": {
       "from": "git",
       "versions": [
         {
@@ -590,99 +1951,48 @@
         }
       ]
     },
-    "battle-of-imjin-river-1592": {
+    "french-and-indian-war": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-inaquito": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-30"
-        }
-      ]
-    },
-    "battle-of-jaquijahuana": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-30"
-        }
-      ]
-    },
-    "battle-of-jarte": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
           "on": "2026-10-13"
         }
       ]
     },
-    "battle-of-jeokjinpo": {
+    "french-invasion-of-egypt-and-syria": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-02"
+          "on": "2026-09-29"
         }
       ]
     },
-    "battle-of-jiksan": {
+    "french-revolution": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-johor-1586": {
-      "from": "git",
-      "versions": [
+          "on": "2026-09-22"
+        },
         {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "battle-of-kamaran": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-la-motta-1513": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-lagunillas": {
-      "from": "git",
-      "versions": [
+        },
         {
-          "first": true,
-          "on": "2026-09-25"
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-09-29"
         },
         {
           "fields": [
@@ -692,22 +2002,422 @@
         }
       ]
     },
-    "battle-of-landriano": {
+    "french-revolutionary-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "fries-s-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "great-bengal-famine-of-1770": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "great-northern-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "great-northern-war-plague-outbreak": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "great-peace-of-montreal": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "great-plague-of-1738": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "great-plague-of-marseille": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "great-siege-of-gibraltar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "guarani-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "actors",
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "haitian-revolution-1791-1804": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
         },
         {
           "fields": [
             "parent"
           ],
+          "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "harmar-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "inconfidencia-mineira": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "indian-independence-movement": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-14"
+        }
+      ]
+    },
+    "insurrection-of-10-august-1792": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "insurrection-of-31-may-2-june-1793": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "invasion-of-cuba-1741": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "invasion-of-dominica-1778": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "invasion-of-georgia-1742": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "invasion-of-jersey-1779": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "invasion-of-minorca-1781": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-25"
         }
       ]
     },
-    "battle-of-las-salinas": {
+    "invasion-of-the-cape-colony": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "invasion-of-tobago": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "irish-rebellion-of-1798": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "italian-campaigns-of-the-french-revolutionary-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "jacobite-rising-of-1745": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "jahriyya-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "king-george-s-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "kosciuszko-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "laghouat-expedition-1708-1713": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "laghouat-rebellion-1727": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "lord-dunmore-s-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-14"
+        }
+      ]
+    },
+    "louisiana-rebellion-of-1768": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "lunenburg-campaign-1758": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "macau-incident-1799": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "nader-shah-s-invasion-of-india": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
+    "naqib-al-ashraf-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "new-york-and-new-jersey-campaign": {
       "from": "git",
       "versions": [
         {
@@ -716,116 +2426,43 @@
         }
       ]
     },
-    "battle-of-mabila": {
+    "new-york-conspiracy-of-1741": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "new-york-slave-revolt-of-1712": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "north-channel-naval-duel": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
         }
       ]
     },
-    "battle-of-malacca-1534": {
+    "northeast-coast-campaign-1745": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-01"
+          "on": "2026-10-17"
         }
       ]
     },
-    "battle-of-mamora-1515": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-maraycalla": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-marignano": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "battle-of-marihuenu": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-mataquito": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-millarapue": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-mohacs": {
+    "northwest-indian-war": {
       "from": "git",
       "versions": [
         {
@@ -834,7 +2471,67 @@
         }
       ]
     },
-    "battle-of-mombasa-1505": {
+    "oman-zanzibar-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
+    "oran-expedition-1707": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "ottoman-invasion-of-western-georgia-1703": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "ottoman-persian-war-1743-1746": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "partitions-of-poland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-14"
+        }
+      ]
+    },
+    "polish-russian-war-of-1792": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "pontiac-s-war": {
       "from": "git",
       "versions": [
         {
@@ -843,7 +2540,7 @@
         }
       ]
     },
-    "battle-of-monastir-1540": {
+    "portuguese-expedition-to-tripoli": {
       "from": "git",
       "versions": [
         {
@@ -852,25 +2549,16 @@
         }
       ]
     },
-    "battle-of-montemurlo": {
+    "pugachev-s-rebellion": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-09-25"
+          "on": "2026-10-17"
         }
       ]
     },
-    "battle-of-mulleriyawa": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "battle-of-myeongnyang": {
+    "queen-anne-s-war": {
       "from": "git",
       "versions": [
         {
@@ -879,21 +2567,21 @@
         }
       ]
     },
-    "battle-of-noain": {
+    "raid-on-manila": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-09-25"
-        },
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "rebellion-of-tupac-amaru-ii": {
+      "from": "git",
+      "versions": [
         {
-          "fields": [
-            "place",
-            "region",
-            "regionNote",
-            "review"
-          ],
-          "on": "2026-09-25"
+          "first": true,
+          "on": "2026-09-23"
         },
         {
           "fields": [
@@ -901,39 +2589,6 @@
             "review"
           ],
           "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "place",
-            "region",
-            "regionNote",
-            "review"
-          ],
-          "on": "2026-10-01"
-        },
-        {
-          "fields": [
-            "place",
-            "region",
-            "review"
-          ],
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "battle-of-noryang": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
         },
         {
           "fields": [
@@ -943,21 +2598,39 @@
         }
       ]
     },
-    "battle-of-novara-1513": {
+    "reign-of-terror": {
       "from": "git",
       "versions": [
         {
           "first": true,
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
           "on": "2026-09-24"
         }
       ]
     },
-    "battle-of-okpo": {
+    "revolt-of-cairo": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-02"
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "revolt-of-the-comuneros-new-granada": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
         },
         {
           "fields": [
@@ -967,25 +2640,56 @@
         }
       ]
     },
-    "battle-of-ollantaytambo": {
+    "revolt-of-the-comuneros-paraguay": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-09-24"
+          "on": "2026-10-15"
         }
       ]
     },
-    "battle-of-otumba": {
+    "russo-persian-war-1722-1723": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-09-23"
+          "on": "2026-10-17"
         }
       ]
     },
-    "battle-of-oued-zadidja": {
+    "russo-swedish-war-1741-1743": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "place",
+            "region",
+            "regionNote",
+            "review"
+          ],
+          "on": "2026-09-29"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "san-juan-expedition-1780": {
       "from": "git",
       "versions": [
         {
@@ -994,7 +2698,34 @@
         }
       ]
     },
-    "battle-of-pampeluna": {
+    "second-anglo-mysore-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "second-javanese-war-of-succession": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "second-siege-of-el-arish": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "second-silesian-war": {
       "from": "git",
       "versions": [
         {
@@ -1003,63 +2734,288 @@
         },
         {
           "fields": [
-            "place",
             "region",
-            "regionNote",
-            "review"
+            "regionNote"
           ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "september-massacres": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "seven-years-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "siege-of-acre-1799": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "siege-of-ambur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-annapolis-royal-1744": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "siege-of-annapolis-royal-1745": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "siege-of-bangalore": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-bergen-op-zoom-1747": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-25"
         },
         {
           "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "place",
             "region",
-            "regionNote",
-            "review"
+            "regionNote"
           ],
-          "on": "2026-10-01"
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-boston": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "siege-of-brieg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         },
         {
           "fields": [
-            "place",
             "region",
-            "review"
+            "regionNote"
           ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-brimstone-hill": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
+        }
+      ]
+    },
+    "siege-of-brussels": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-cuddalore-1748": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-10-01"
         }
       ]
     },
-    "battle-of-pavia": {
+    "siege-of-cusco-1781": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-09-23"
+          "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-darwar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-dunlap-s-station": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "siege-of-el-arish": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "siege-of-fort-detroit": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "siege-of-fort-massachusetts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "siege-of-fort-william-henry": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-isfahan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "siege-of-jacmel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "siege-of-jaffa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "siege-of-koppal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-louisbourg-1745": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
         },
         {
           "fields": [
             "parent",
             "review"
           ],
-          "on": "2026-10-01"
+          "on": "2026-10-02"
+        },
+        {
+          "fields": [
+            "regionNote"
+          ],
+          "on": "2026-10-13"
         }
       ]
     },
-    "battle-of-penco": {
+    "siege-of-louisbourg-1758": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "siege-of-maastricht-1748": {
       "from": "git",
       "versions": [
         {
@@ -1068,826 +3024,14 @@
         },
         {
           "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-peteroa": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-polesella": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-principe": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-puna": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-punnaikayal": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-punta-quemada": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-pyongyang-1592": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-quiapo": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-quilacura": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-ravenna-1512": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-reynoguelen-1536": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-sacheon-1592": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-saint-mathieu": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-sangju-1592": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-shimbra-kure": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "battle-of-st-quentin": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-22"
-        },
-        {
-          "fields": [
-            "review",
-            "sources",
-            "summary"
-          ],
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "review",
-            "title"
-          ],
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-suakin-1541": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-suez-1541": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-tacuzcalco": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-29"
-        }
-      ]
-    },
-    "battle-of-tadla": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-talandongo": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-taza-1553": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-tednest": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-the-alcaides": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-the-bay-of-velez": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-the-citadel-of-vicenza": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-the-gulf-of-oman": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-the-sesia-1524": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        }
-      ]
-    },
-    "battle-of-the-spurs": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "battle-of-the-strait-of-hormuz-1553": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-tucapel": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-ugentana": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "battle-of-ugentana-1536": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "battle-of-vilcaconga": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-wadi-al-laban": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-wayna-daga": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-wofla": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "battle-of-yonan": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battle-of-yongin": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "battles-of-kawanakajima": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "blockade-of-the-tetuan-river": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "cambodian-spanish-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "campaign-of-tlemcen-1551": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "campaign-of-tlemcen-1557": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "capture-of-algiers-1516": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "capture-of-bejaia-1555": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "capture-of-cairo-1517": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "capture-of-fez-1554": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "capture-of-fez-1576": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "capture-of-mahdia-1550": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "capture-of-malacca-1511": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "capture-of-muscat-1507": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-15"
-        }
-      ]
-    },
-    "capture-of-muscat-1552": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "capture-of-penon-of-algiers-1529": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "capture-of-tunis-1569": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "castilian-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "celali-rebellions": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "chichimeca-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "chios-expedition-1599": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "cocoliztli-epidemics": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "cologne-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "conflicts-between-the-regency-of-algiers-and-morocco": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "conquest-of-the-khanate-of-sibir": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "conquest-of-tunis-1534": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "conquest-of-tunis-1535": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "conquest-of-tunis-1573": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "conquest-of-tunis-1574": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "count-s-feud": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "counter-reformation": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "crimean-circassian-war-1569": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "cuanza-river-campaign": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "place",
             "region",
-            "regionNote",
-            "review"
-          ],
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "dutch-golden-age": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-14"
-        }
-      ]
-    },
-    "dutch-portuguese-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "review",
-            "when"
-          ],
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
             "regionNote"
           ],
-          "on": "2026-10-13"
+          "on": "2026-09-25"
         }
       ]
     },
-    "eighty-years-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "ethiopian-adal-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-14"
-        }
-      ]
-    },
-    "euphrates-tigris-expedition": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "expedition-to-mostaganem-1558": {
+    "siege-of-madras": {
       "from": "git",
       "versions": [
         {
@@ -1896,48 +3040,7 @@
         }
       ]
     },
-    "expedition-to-touat-1557": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "fall-of-agadir": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "fall-of-tenochtitlan": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "review",
-            "sources",
-            "summary"
-          ],
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "fall-of-tlemcen-1518": {
+    "siege-of-masulipatam": {
       "from": "git",
       "versions": [
         {
@@ -1946,16 +3049,7 @@
         }
       ]
     },
-    "first-battle-of-panipat": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-14"
-        }
-      ]
-    },
-    "first-battle-of-the-lucala": {
+    "siege-of-mazagan-1769": {
       "from": "git",
       "versions": [
         {
@@ -1964,1315 +3058,23 @@
         }
       ]
     },
-    "french-wars-of-religion": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-13"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-14"
-        }
-      ]
-    },
-    "german-peasants-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "governorate-general-of-brazil-1549": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        },
-        {
-          "fields": [
-            "region"
-          ],
-          "on": "2026-09-16"
-        },
-        {
-          "fields": [
-            "actors"
-          ],
-          "on": "2026-09-17"
-        }
-      ]
-    },
-    "hamgyong-campaign": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "hereditary-captaincies-of-brazil-1534": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        },
-        {
-          "fields": [
-            "region"
-          ],
-          "on": "2026-09-16"
-        },
-        {
-          "fields": [
-            "actors"
-          ],
-          "on": "2026-09-17"
-        }
-      ]
-    },
-    "honno-ji-incident": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "hungarian-campaign-of-1527-1528": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "iguape-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "imjin-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "inca-civil-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-14"
-        }
-      ]
-    },
-    "indigenous-depopulation-of-coastal-brazil": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        },
-        {
-          "fields": [
-            "region"
-          ],
-          "on": "2026-09-16"
-        },
-        {
-          "fields": [
-            "actors"
-          ],
-          "on": "2026-09-17"
-        }
-      ]
-    },
-    "ishiyama-hongan-ji-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "italian-campaign-of-1524-1525": {
+    "siege-of-namur-1746": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-25"
-        }
-      ]
-    },
-    "italian-war-of-1521-1526": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-22"
         },
         {
           "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "review",
-            "sources",
-            "summary"
-          ],
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "italian-war-of-1536-1538": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-22"
-        },
-        {
-          "fields": [
-            "review",
-            "sources",
-            "summary"
-          ],
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "italian-war-of-1542-1546": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "place",
             "region",
-            "regionNote",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
             "regionNote"
           ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "italian-war-of-1551-1559": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-22"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "review",
-            "sources",
-            "summary"
-          ],
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "jaragua-massacre": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "knights-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "la-noche-triste": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "livonian-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "long-turkish-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "magellan-expedition": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-13"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-14"
-        }
-      ]
-    },
-    "malay-portuguese-conflicts": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "massacre-at-matanzas-inlet": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "massacre-in-the-great-temple-of-tenochtitlan": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "mixton-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "munster-rebellion": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "navajo-wars": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "new-laws": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "review",
-            "sources",
-            "summary"
-          ],
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "northern-seven-years-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "ottoman-campaign-against-hormuz": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "ottoman-habsburg-wars": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "ottoman-persian-war-1505-1517": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-15"
-        }
-      ]
-    },
-    "ottoman-portuguese-conflicts-1538-1560": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "ottoman-safavid-war-1532-1555": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "ottoman-safavid-war-1578-1590": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "ottoman-venetian-war-1537-1540": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "ottoman-venetian-war-1570-1573": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "persian-uzbek-wars": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "pilgrimage-of-grace": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "portuguese-conquest-of-goa": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-15"
-        }
-      ]
-    },
-    "portuguese-conquest-of-hormuz": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-15"
-        }
-      ]
-    },
-    "portuguese-conquest-of-the-east-african-coast": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-15"
-        }
-      ]
-    },
-    "portuguese-conquest-of-the-jaffna-kingdom": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "portuguese-intervention-in-hormuz-1514-1515": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "portuguese-landfall-in-brazil-1500": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        },
-        {
-          "fields": [
-            "region"
-          ],
-          "on": "2026-09-16"
-        },
-        {
-          "fields": [
-            "actors"
-          ],
-          "on": "2026-09-17"
-        }
-      ]
-    },
-    "prince-of-anhua-rebellion": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "prince-of-ning-rebellion": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "protectorate-of-doukkala": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "pukkwan-campaign": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "raid-of-marrakesh-1515": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "reformation": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-13"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "revolt-of-the-comuneros": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "sack-of-brescia": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "sack-of-rome-1527": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "sahkulu-rebellion": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "schmalkaldic-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "scientific-revolution": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "second-war-of-kappel": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "siamese-cambodian-war-1591-1594": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "siege-of-aden-1513": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-15"
-        }
-      ]
-    },
-    "siege-of-agadir-1533": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-anzele": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "siege-of-asola-1516": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "siege-of-bahrain": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "siege-of-busanjin": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "siege-of-campar": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-cannanore-1507": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "siege-of-chittorgarh-1567-1568": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "siege-of-colombo-1587-1588": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "siege-of-concepcion": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-crema-1514": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "siege-of-cusco": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "review",
-            "sources",
-            "summary"
-          ],
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "actors"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-dijon": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "siege-of-diu-1538": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "siege-of-diu-1546": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "siege-of-dongnae": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-florence-1529-1530": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "place",
-            "region",
-            "regionNote",
-            "review"
-          ],
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-fuenterrabia-1523-1524": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "review",
-            "when"
-          ],
-          "on": "2026-09-29"
-        }
-      ]
-    },
-    "siege-of-genoa-1522": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "place",
-            "region",
-            "regionNote",
-            "review"
-          ],
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-hormuz-1552": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "siege-of-jinju-1592": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-jinju-1593": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-johor-1587": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "siege-of-kazan": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "siege-of-malacca-1551": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "siege-of-marseille-1524": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "place",
-            "region",
-            "regionNote",
-            "review"
-          ],
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-mazagan-1562": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "siege-of-mezieres": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
           "on": "2026-09-25"
         }
       ]
     },
-    "siege-of-mount-hiei": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "siege-of-namwon": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-naples-1528": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "place",
-            "region",
-            "regionNote",
-            "review"
-          ],
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-odawara-1590": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "siege-of-oran-1556": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "siege-of-padua": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-24"
-        }
-      ]
-    },
-    "siege-of-pyongyang-1592": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-pyongyang-1593": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-qatif-1551": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-rhodes-1522": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "siege-of-szigetvar": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-16"
-        }
-      ]
-    },
-    "siege-of-tripoli-1551": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "siege-of-ulsan": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "siege-of-vienna-1529": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "siege-of-yeongwon": {
+    "siege-of-oran-1700-1701": {
       "from": "git",
       "versions": [
         {
@@ -3281,186 +3083,441 @@
         }
       ]
     },
-    "sieges-of-oran-and-mers-el-kebir": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "sinhalese-portuguese-conflicts": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        },
-        {
-          "fields": [
-            "review"
-          ],
-          "on": "2026-10-01"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "sitawaka-campaign": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-01"
-        }
-      ]
-    },
-    "spanish-assault-on-djerba-1510": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "spanish-assault-on-french-florida": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "spanish-colonization-attempt-of-the-strait-of-magellan": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "spanish-conquest-of-el-salvador": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-25"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "spanish-conquest-of-guatemala": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "review",
-            "sources",
-            "summary"
-          ],
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
-        }
-      ]
-    },
-    "spanish-conquest-of-honduras": {
+    "siege-of-pensacola": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-30"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
         }
       ]
     },
-    "spanish-conquest-of-iberian-navarre": {
+    "siege-of-pirna": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "siege-of-pondicherry-1748": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "siege-of-pondicherry-1760": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "siege-of-pondicherry-1778": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "siege-of-pondicherry-1793": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "siege-of-port-au-prince-1793": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "siege-of-prague-1742": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
         },
         {
           "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
+            "region",
             "regionNote"
           ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-prague-1744": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-seringapatam-1799": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-st-augustine-1740": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "siege-of-toulon-1793": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "siege-of-tournai-1745": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-yorktown": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-30"
+        }
+      ]
+    },
+    "sino-burmese-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-10-13"
         }
       ]
     },
-    "spanish-conquest-of-the-aztec-empire": {
+    "sino-nepalese-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
+    "spain-and-the-american-revolutionary-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "spanish-portuguese-war-1776-1777": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "stono-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "storming-of-the-bastille": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "sunda-strait-campaign-of-january-1794": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-29"
+        }
+      ]
+    },
+    "tennis-court-oath": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-22"
+        }
+      ]
+    },
+    "the-british-industrial-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "the-cuban-sugar-boom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        },
+        {
+          "fields": [
+            "parent"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "third-anglo-mysore-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
+    "third-silesian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "transfer-of-the-colonial-capital-to-rio-de-janeiro-1763": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "region"
+          ],
+          "on": "2026-09-16"
+        },
+        {
+          "fields": [
+            "actors"
+          ],
+          "on": "2026-09-17"
+        }
+      ]
+    },
+    "treaty-of-allahabad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "treaty-of-fussen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
+            "region",
+            "regionNote"
+          ],
+          "on": "2026-09-25"
+        }
+      ]
+    },
+    "treaty-of-greenville": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "treaty-of-kerden": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-madrid-13-january-1750": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-23"
-        },
+        }
+      ]
+    },
+    "treaty-of-paris-1783": {
+      "from": "git",
+      "versions": [
         {
-          "fields": [
-            "review",
-            "sources",
-            "summary"
-          ],
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "treaty-of-resht": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-salbai": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "tripolitanian-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
+    "tuscarora-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-02"
+        }
+      ]
+    },
+    "unification-of-nepal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "united-states-declaration-of-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-09-23"
+        }
+      ]
+    },
+    "war-in-the-vendee": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "war-of-jenkins-ear": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-09-23"
         },
         {
@@ -3478,37 +3535,79 @@
         }
       ]
     },
-    "spanish-conquest-of-the-inca-empire": {
+    "war-of-the-austrian-succession": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "review",
-            "sources",
-            "summary"
-          ],
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
         }
       ]
     },
-    "spanish-conquest-of-the-kingdom-of-q-umarkaj": {
+    "war-of-the-bavarian-succession": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "war-of-the-emboabas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "war-of-the-first-coalition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-15"
+        }
+      ]
+    },
+    "war-of-the-polish-succession": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "war-of-the-pyrenees": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-16"
+        }
+      ]
+    },
+    "war-of-the-quadruple-alliance": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "war-of-the-second-coalition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "war-of-the-south": {
       "from": "git",
       "versions": [
         {
@@ -3517,296 +3616,65 @@
         },
         {
           "fields": [
+            "place",
+            "review"
+          ],
+          "on": "2026-09-25"
+        },
+        {
+          "fields": [
             "regionNote"
           ],
           "on": "2026-10-13"
         }
       ]
     },
-    "spanish-conquest-of-tripoli": {
+    "war-of-the-spanish-succession": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-17"
+          "on": "2026-10-13"
         }
       ]
     },
-    "spanish-expedition-to-tlemcen-1535": {
+    "white-lotus-rebellion": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-17"
+          "on": "2026-10-14"
         }
       ]
     },
-    "spanish-taino-war-of-san-juan-boriken": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "st-bartholomew-s-day-massacre": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-15"
-        }
-      ]
-    },
-    "swedish-war-of-liberation": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "tensho-iga-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "the-atlantic-slave-trade-to-brazil": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        },
-        {
-          "fields": [
-            "region"
-          ],
-          "on": "2026-09-16"
-        },
-        {
-          "fields": [
-            "actors"
-          ],
-          "on": "2026-09-17"
-        }
-      ]
-    },
-    "the-brazilian-sugar-cycle": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-16"
-        },
-        {
-          "fields": [
-            "region"
-          ],
-          "on": "2026-09-16"
-        },
-        {
-          "fields": [
-            "actors"
-          ],
-          "on": "2026-09-17"
-        }
-      ]
-    },
-    "toungoo-ava-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "toungoo-hanthawaddy-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "toungoo-mrauk-u-war": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "toyotomi-hideyoshi-s-1st-korean-campaign": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "toyotomi-hideyoshi-s-2nd-korean-campaign": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-02"
-        }
-      ]
-    },
-    "tran-cao-rebellion": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "treaty-of-bassein-1534": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-15"
-        }
-      ]
-    },
-    "treaty-of-zaragoza": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-15"
-        }
-      ]
-    },
-    "tuggurt-expedition-1552": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "valladolid-debate": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "review",
-            "sources",
-            "summary"
-          ],
-          "on": "2026-09-23"
-        }
-      ]
-    },
-    "war-of-the-league-of-cambrai": {
+    "women-s-march-on-versailles": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-22"
-        },
-        {
-          "fields": [
-            "place",
-            "region",
-            "regionNote"
-          ],
-          "on": "2026-09-22"
-        },
-        {
-          "fields": [
-            "place",
-            "review"
-          ],
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "review",
-            "sources",
-            "summary"
-          ],
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
         }
       ]
     },
-    "war-of-the-league-of-cognac": {
+    "xhosa-wars": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-09-23"
-        },
-        {
-          "fields": [
-            "place",
-            "region",
-            "regionNote",
-            "review"
-          ],
-          "on": "2026-09-29"
-        },
-        {
-          "fields": [
-            "regionNote"
-          ],
-          "on": "2026-10-13"
+          "on": "2026-10-16"
         }
       ]
     },
-    "war-of-the-league-of-the-indies": {
+    "yamasee-war": {
       "from": "git",
       "versions": [
         {
           "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "wyatt-s-rebellion": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
-        }
-      ]
-    },
-    "yaqui-wars": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-17"
+          "on": "2026-10-02"
         }
       ]
     }
   },
   "schema": 1,
-  "to": 1599
+  "to": 1799
 }

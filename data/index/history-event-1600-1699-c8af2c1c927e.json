@@ -3654,6 +3654,15 @@
         }
       ]
     },
+    "treaty-of-butre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "trinh-nguyen-war": {
       "from": "git",
       "versions": [
