@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-butre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q767980",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Treaty of Butre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q767980"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Butre\", revision 1376183718"
+    }
+  ],
+  "title": "Treaty of Butre",
+  "summary": "The English Wikipedia article \"Treaty of Butre\", at revision 1376183718, opens: \"The Treaty of Butre between the Netherlands and Ahanta was signed at Butre, Dutch Gold Coast on 27 August 1656. The treaty regulated the jurisdiction of the Netherlands and the Dutch West India Company over the town of Butre and the surrounding country of Upper Ahanta, creating a Dutch protectorate over the area, and permitting the establishment of Fort Batenstein. The treaty lasted until the Dutch departure from the Gold Coast in April 1872.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q767980, imported by tools/import/wikidata.mjs. The item's own description reads \"1656 treaty between the Netherlands and Ahanta\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1656,
+    "end": 1656,
+    "date": "1656-08-27"
+  },
+  "place": "butre-ghana",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

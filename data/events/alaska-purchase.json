@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "alaska-purchase",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q309029",
+  "sitelinks": {
+    "count": 54,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Alaska Purchase",
+    "pt": "Compra do Alasca"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q309029"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Alaska Purchase\", revision 1378538835"
+    }
+  ],
+  "title": "Alaska Purchase",
+  "summary": "The English Wikipedia article \"Alaska Purchase\", at revision 1378538835, opens: \"The Alaska Purchase in 1867 resulted in the transfer of Russian America to the United States for $7.2 million. On April 9 of that year, the United States Senate ratified a bilateral treaty that had been signed on March 30, and American sovereignty became legally effective across the territory on October 18.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q309029, imported by tools/import/wikidata.mjs. The item's own description reads \"1867 sale of Alaska to the USA by Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1867,
+    "end": 1867,
+    "date": "1867-03-30"
+  },
+  "place": "washington",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ottoman-mamluk-war-1516-1517",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4338038",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Ottoman–Mamluk War (1516–1517)",
+    "pt": "Guerra Otomano-Mameluca (1516–1517)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4338038"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman–Mamluk War (1516–1517)\", revision 1379922376"
+    }
+  ],
+  "title": "Ottoman–Mamluk War (1516–1517)",
+  "summary": "The English Wikipedia article \"Ottoman–Mamluk War (1516–1517)\", at revision 1379922376, opens: \"The Ottoman–Mamluk War of 1516–1517 was the second major conflict between the Egypt-based Mamluk Sultanate and the Ottoman Empire, which led to the Fall of the Mamluk Sultanate and the incorporation of the Levant, Egypt, and the Hejaz as provinces of the Ottoman Empire. The war transformed the Ottoman Empire from a realm at the margins of the Islamic world, mainly located in Anatolia and the Balkans, to a huge empire encompassing much of the traditional lands of Islam, including the cities of Mecca, Cairo, Damascus, and Aleppo. Despite this expansion, the seat of the empire's political power remained in Constantinople.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4338038, imported by tools/import/wikidata.mjs. The item's own description reads \"Imperial Ottoman conquest of Egypt and the Levant\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1516,
+    "end": 1517,
+    "endDate": "1517-01-22"
+  },
+  "place": "anatolia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

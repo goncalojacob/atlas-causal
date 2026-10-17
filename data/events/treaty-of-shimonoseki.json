@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-shimonoseki",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q269655",
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Treaty of Shimonoseki",
+    "pt": "Tratado de Shimonoseki"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q269655"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Shimonoseki\", revision 1371343803"
+    }
+  ],
+  "title": "Treaty of Shimonoseki",
+  "summary": "The English Wikipedia article \"Treaty of Shimonoseki\", at revision 1371343803, opens: \"The Treaty of Shimonoseki , also known as the Treaty of Maguan in China or the Treaty of Bakan  in Japan, was signed in Shimonoseki, Japan, on April 17, 1895, between the Empire of Japan and the Qing dynasty. The treaty ended the First Sino-Japanese War, in which the Japanese decisively defeated the Chinese land and naval forces. The treaty was signed at the Shunpanrō hotel by Count Itō Hirobumi and Viscount Mutsu Munemitsu for Japan and Li Hongzhang and his son Li Jingfang on behalf of China.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q269655, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty signed at the Shunpanrō hall, Shimonoseki, Japan on April 17, 1895, between the Empire of Japan and the Qing Empire, ending the First Sino-Japanese War.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1895,
+    "end": 1895,
+    "date": "1895-04-17"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

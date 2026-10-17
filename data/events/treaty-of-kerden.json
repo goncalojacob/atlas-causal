@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-kerden",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7837107",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Treaty of Kerden"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837107"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Kerden\", revision 1338320601"
+    }
+  ],
+  "title": "Treaty of Kerden",
+  "summary": "The English Wikipedia article \"Treaty of Kerden\", at revision 1338320601, opens: \"Treaty of Kerden was signed between the Ottoman Empire and Afsharid Iran on 4 September 1746. It concluded the Ottoman–Persian War (1743–1746).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837107, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty between the Ottoman Empire and Afsharid Iran\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1746,
+    "end": 1746,
+    "date": "1746-09-04"
+  },
+  "place": "kordan-alborz",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

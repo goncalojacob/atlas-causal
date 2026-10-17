@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-little-bighorn",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q205422",
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of the Little Bighorn",
+    "pt": "Batalha de Little Bighorn"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q205422"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Little Bighorn\", revision 1380124247"
+    }
+  ],
+  "title": "Battle of the Little Bighorn",
+  "summary": "The English Wikipedia article \"Battle of the Little Bighorn\", at revision 1380124247, opens: \"The 1876 Battle of the Little Bighorn, commonly referred to as Custer's Last Stand and known to the Lakota and other Plains Indians as the Battle of the Greasy Grass, was an armed engagement between combined forces of the Lakota Sioux, Northern Cheyenne, and Arapaho tribes and the 7th Cavalry Regiment of the United States Army. It took place on June 25–26, 1876, along the Little Bighorn River in the Crow Indian Reservation in southeastern Montana Territory. The battle, which resulted in the defeat of U.S. forces, was the most significant action of the Great Sioux War of 1876.‎\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q205422, imported by tools/import/wikidata.mjs. The item's own description reads \"June 1876 battle of the Great Sioux War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1876,
+    "date": "1876-06-25"
+  },
+  "place": "little-bighorn-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

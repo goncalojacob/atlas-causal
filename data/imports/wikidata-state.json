@@ -3254,10 +3254,6 @@
     "Q896479": {
       "on": "2026-10-17",
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
-    },
-    "Q65077587": {
-      "on": "2026-10-17",
-      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   }
 }
