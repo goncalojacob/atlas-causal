@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-leipzig",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q151005",
+  "sitelinks": {
+    "count": 63,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Leipzig",
+    "pt": "Batalha das Nações"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q151005"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Leipzig\", revision 1379028437"
+    }
+  ],
+  "title": "Battle of Leipzig",
+  "summary": "The English Wikipedia article \"Battle of Leipzig\", at revision 1379028437, opens: \"The Battle of Leipzig, also known as the Battle of the Nations, was fought from 16 to 19 October 1813 at Leipzig, Saxony. The Coalition armies of Austria, Prussia, Sweden, and Russia, led by Tsar Alexander I, Karl von Schwarzenberg, Gebhard von Blücher and Swedish Crown Prince Charles John, decisively defeated the Grande Armée of French Emperor Napoleon Bonaparte. Napoleon's army also contained Polish and Italian troops, as well as Germans from the Confederation of the Rhine. The battle was the culmination of the German campaign of 1813 and involved about 560,000 soldiers, 2,200 artillery pieces, the expenditure of 400,000 rounds of artillery ammunition, and 133,000 casualties. This made it the largest of the battles during the Napoleonic Wars and, arguably, the deciding battle of the wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q151005, imported by tools/import/wikidata.mjs. The item's own description reads \"major battle during the War of the Sixth Coalition against Napoleon (1813)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-10-16",
+    "endDate": "1813-10-19"
+  },
+  "place": "leipzig",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

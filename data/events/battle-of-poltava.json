@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-poltava",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q152486",
+  "sitelinks": {
+    "count": 60,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Poltava",
+    "pt": "Batalha de Poltava"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q152486"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Poltava\", revision 1377945403"
+    }
+  ],
+  "title": "Battle of Poltava",
+  "summary": "The English Wikipedia article \"Battle of Poltava\", at revision 1377945403, opens: \"The Battle of Poltava fought on 8 July 1709, was the decisive and largest battle of the Great Northern War. A Russian army under the command of Tsar Peter I defeated a Swedish army commanded by Carl Gustaf Rehnskiöld. The battle would lead to the Swedish Empire losing its status as a European great power and also marked the beginning of Russian supremacy in eastern Europe.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q152486, imported by tools/import/wikidata.mjs. The item's own description reads \"decisive battle in the Great Northern War between Tsardom Russia and the Swedish Empire in 1709\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1709,
+    "end": 1709,
+    "date": "1709-06-27"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

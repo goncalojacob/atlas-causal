@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-massawa-1541",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q121335444",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Massawa (1541)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q121335444"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Massawa (1541)\", revision 1370449267"
+    }
+  ],
+  "title": "Battle of Massawa (1541)",
+  "summary": "The English Wikipedia article \"Battle of Massawa (1541)\", at revision 1370449267, opens: \"The Battle of Massawa was an armed encounter between the Portuguese Empire and the Adal Sultanate near Massawa in April 1541. The Adalites ambushed and destroyed the Portuguese force with only two survivors returning to their ships.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q121335444, imported by tools/import/wikidata.mjs. The item's own description reads \"1541 battle during the Ethiopian-Adal war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1541,
+    "end": 1541,
+    "date": "1541-05"
+  },
+  "place": "massawa",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ethiopian-adal-war"
+}

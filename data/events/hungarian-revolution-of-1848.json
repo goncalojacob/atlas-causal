@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "hungarian-revolution-of-1848",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q473716",
+  "sitelinks": {
+    "count": 57,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Hungarian Revolution of 1848",
+    "pt": "Revolução húngara de 1848"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q473716"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hungarian Revolution of 1848\", revision 1370623076"
+    }
+  ],
+  "title": "Hungarian Revolution of 1848",
+  "summary": "The English Wikipedia article \"Hungarian Revolution of 1848\", at revision 1370623076, opens: \"The Hungarian Revolution of 1848, also known in Hungary as Hungarian Revolution and War of Independence of 1848–1849 was one of a number of European Revolutions of 1848 and was closely linked to other revolutions of 1848 in the Habsburg areas. Although the Hungarian War of Independence failed, it is one of the most significant events in Hungary's modern history, forming the cornerstone of modern Hungarian national identity—the anniversary of the Revolution's outbreak, 15 March, is one of Hungary's three national holidays.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q473716, imported by tools/import/wikidata.mjs. The item's own description reads \"European Revolution of 1848\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1849,
+    "date": "1848-03-15",
+    "endDate": "1849-10-04"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "revolutions-of-1848"
+}
