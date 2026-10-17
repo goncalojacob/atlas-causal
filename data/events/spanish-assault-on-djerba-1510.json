@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "spanish-assault-on-djerba-1510",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5936375",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Spanish assault on Djerba (1510)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5936375"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish assault on Djerba (1510)\", revision 1370748273"
+    }
+  ],
+  "title": "Spanish assault on Djerba (1510)",
+  "summary": "The English Wikipedia article \"Spanish assault on Djerba (1510)\", at revision 1370748273, opens: \"The Spanish assault on Djerba was a 1510 military expedition directed by Ferdinand II of Aragon against the Tunisian island of Djerba. It resulted in the death of several thousand soldiers and is often known as the Djerba Disaster.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5936375, imported by tools/import/wikidata.mjs. The item's own description reads \"1510 Spanish expedition in Tunisia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1510,
+    "end": 1510,
+    "date": "1510-07-29",
+    "endDate": "1510-09-03"
+  },
+  "place": "djerba",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "second-anglo-dutch-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q916495",
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Second Anglo-Dutch War",
+    "pt": "Segunda Guerra Anglo-Holandesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q916495"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Anglo-Dutch War\", revision 1370733738"
+    }
+  ],
+  "title": "Second Anglo-Dutch War",
+  "summary": "The English Wikipedia article \"Second Anglo-Dutch War\", at revision 1370733738, opens: \"The Second Anglo-Dutch War began on 4 March 1665 and concluded with the signing of the Treaty of Breda on 31 July 1667. It was the second in a series of naval wars fought between England and the Dutch Republic and it was driven largely by commercial rivalry, competition over maritime trade, and disputes over overseas colonies and trading posts.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q916495, imported by tools/import/wikidata.mjs. The item's own description reads \"second conflict between England and the Dutch Republic (1665-1667)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1665,
+    "end": 1667,
+    "date": "1665-03-04",
+    "endDate": "1667-07-31"
+  },
+  "place": "north-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-dutch-wars"
+}
