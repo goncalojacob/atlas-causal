@@ -414,6 +414,15 @@
         }
       ]
     },
+    "alaska-purchase": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "alexandria-expedition-of-1807": {
       "from": "git",
       "versions": [
@@ -1856,6 +1865,15 @@
         }
       ]
     },
+    "battle-of-saragarhi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-schuinshoogte": {
       "from": "git",
       "versions": [
@@ -2093,6 +2111,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-the-little-bighorn": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -2530,6 +2557,15 @@
         }
       ]
     },
+    "bowring-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "boxer-rebellion": {
       "from": "git",
       "versions": [
@@ -2843,6 +2879,15 @@
             "parent"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "cyprus-convention": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -3431,6 +3476,15 @@
         }
       ]
     },
+    "franco-hova-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "franco-moroccan-war": {
       "from": "git",
       "versions": [
@@ -3559,6 +3613,15 @@
         }
       ]
     },
+    "great-famine-of-1876-1878": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "great-game": {
       "from": "git",
       "versions": [
@@ -3621,6 +3684,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "haymarket-affair": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -3840,6 +3912,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "kandyan-convention": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -4454,6 +4535,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "russo-persian-war-1826-1828": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -5618,6 +5708,24 @@
         }
       ]
     },
+    "treaty-of-balta-liman": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-gandamak": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "treaty-of-paris-1898": {
       "from": "git",
       "versions": [
@@ -5671,6 +5779,42 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "treaty-of-san-stefano": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-shimoda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-shimonoseki": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-wanghia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -5733,6 +5877,15 @@
             "title"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "treaty-of-yandabo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },

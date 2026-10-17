@@ -1858,6 +1858,15 @@
         }
       ]
     },
+    "butre-ghana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "bysjon": {
       "from": "git",
       "versions": [
@@ -2457,6 +2466,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "chicago": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -6461,6 +6479,15 @@
         }
       ]
     },
+    "kordan-alborz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "korea-strait": {
       "from": "git",
       "versions": [
@@ -7106,6 +7133,15 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "little-bighorn-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -10503,6 +10539,15 @@
         }
       ]
     },
+    "rasht": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "rasool-nagar": {
       "from": "git",
       "versions": [
@@ -11617,6 +11662,15 @@
         }
       ]
     },
+    "shimoda-shizuoka": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "shubra-khit": {
       "from": "git",
       "versions": [
@@ -11928,6 +11982,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "south-caucasus": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -14138,6 +14201,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "yandabo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },

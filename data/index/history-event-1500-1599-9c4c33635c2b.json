@@ -2421,6 +2421,15 @@
         }
       ]
     },
+    "ottoman-mamluk-war-1516-1517": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "ottoman-persian-war-1505-1517": {
       "from": "git",
       "versions": [

@@ -1796,6 +1796,12 @@
     },
     {
       "dissent": false,
+      "id": "1772-1773-persian-plague",
+      "kind": "event",
+      "locator": "Q88772394"
+    },
+    {
+      "dissent": false,
       "id": "1863-1875-cholera-pandemic",
       "kind": "event",
       "locator": "Q5476234"
@@ -2789,6 +2795,12 @@
       "id": "age-of-enlightenment",
       "kind": "event",
       "locator": "Q12539"
+    },
+    {
+      "dissent": false,
+      "id": "alaska-purchase",
+      "kind": "event",
+      "locator": "Q309029"
     },
     {
       "dissent": false,
@@ -5990,6 +6002,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-saragarhi",
+      "kind": "event",
+      "locator": "Q383067"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sarhu",
       "kind": "event",
       "locator": "Q488547"
@@ -6419,6 +6437,12 @@
       "id": "battle-of-the-lake-of-two-mountains",
       "kind": "event",
       "locator": "Q16208754"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-little-bighorn",
+      "kind": "event",
+      "locator": "Q205422"
     },
     {
       "dissent": false,
@@ -7181,6 +7205,18 @@
       "id": "boshin-war",
       "kind": "event",
       "locator": "Q309184"
+    },
+    {
+      "dissent": false,
+      "id": "boston-tea-party",
+      "kind": "event",
+      "locator": "Q19024"
+    },
+    {
+      "dissent": false,
+      "id": "bowring-treaty",
+      "kind": "event",
+      "locator": "Q745728"
     },
     {
       "dissent": false,
@@ -8132,6 +8168,12 @@
     },
     {
       "dissent": false,
+      "id": "cyprus-convention",
+      "kind": "event",
+      "locator": "Q3555069"
+    },
+    {
+      "dissent": false,
       "id": "damour-massacre",
       "kind": "event",
       "locator": "Q1351462"
@@ -9056,6 +9098,12 @@
     },
     {
       "dissent": false,
+      "id": "franco-hova-wars",
+      "kind": "event",
+      "locator": "Q2638505"
+    },
+    {
+      "dissent": false,
       "id": "franco-moroccan-war",
       "kind": "event",
       "locator": "Q3062439"
@@ -9302,6 +9350,12 @@
     },
     {
       "dissent": false,
+      "id": "great-famine-of-1876-1878",
+      "kind": "event",
+      "locator": "Q3534685"
+    },
+    {
+      "dissent": false,
       "id": "great-game",
       "kind": "event",
       "locator": "Q216702"
@@ -9479,6 +9533,12 @@
       "id": "hay-bunau-varilla-treaty",
       "kind": "event",
       "locator": "Q676676"
+    },
+    {
+      "dissent": false,
+      "id": "haymarket-affair",
+      "kind": "event",
+      "locator": "Q214148"
     },
     {
       "dissent": false,
@@ -10073,6 +10133,12 @@
       "id": "kandyan-commerce-raiding-against-portugal-1612-1613",
       "kind": "event",
       "locator": "Q16250240"
+    },
+    {
+      "dissent": false,
+      "id": "kandyan-convention",
+      "kind": "event",
+      "locator": "Q3538392"
     },
     {
       "dissent": false,
@@ -11294,6 +11360,12 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-mamluk-war-1516-1517",
+      "kind": "event",
+      "locator": "Q4338038"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-persian-war-1505-1517",
       "kind": "event",
       "locator": "Q134937344"
@@ -12149,6 +12221,12 @@
       "id": "russo-persian-war-1722-1723",
       "kind": "event",
       "locator": "Q1418582"
+    },
+    {
+      "dissent": false,
+      "id": "russo-persian-war-1826-1828",
+      "kind": "event",
+      "locator": "Q1420115"
     },
     {
       "dissent": false,
@@ -14606,6 +14684,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-balta-liman",
+      "kind": "event",
+      "locator": "Q2657887"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-bassein-1534",
       "kind": "event",
       "locator": "Q4887044"
@@ -14636,6 +14720,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-butre",
+      "kind": "event",
+      "locator": "Q767980"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-fes",
       "kind": "event",
       "locator": "Q931982"
@@ -14654,9 +14744,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-gandamak",
+      "kind": "event",
+      "locator": "Q259430"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-greenville",
       "kind": "event",
       "locator": "Q767317"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-kerden",
+      "kind": "event",
+      "locator": "Q7837107"
     },
     {
       "dissent": false,
@@ -14786,6 +14888,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-resht",
+      "kind": "event",
+      "locator": "Q1964224"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-rome",
       "kind": "event",
       "locator": "Q167457"
@@ -14816,6 +14924,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-san-stefano",
+      "kind": "event",
+      "locator": "Q194113"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-sevres",
       "kind": "event",
       "locator": "Q182515"
@@ -14825,6 +14939,18 @@
       "id": "treaty-of-sevres",
       "kind": "event",
       "locator": "Q182515, P31 Q625298"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-shimoda",
+      "kind": "event",
+      "locator": "Q497189"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-shimonoseki",
+      "kind": "event",
+      "locator": "Q269655"
     },
     {
       "dissent": false,
@@ -14864,9 +14990,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-wanghia",
+      "kind": "event",
+      "locator": "Q1326406"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-windsor",
       "kind": "event",
       "locator": "Q2518953"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-yandabo",
+      "kind": "event",
+      "locator": "Q2639320"
     },
     {
       "dissent": false,
