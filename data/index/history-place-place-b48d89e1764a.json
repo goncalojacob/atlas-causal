@@ -347,6 +347,15 @@
         }
       ]
     },
+    "amiens": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "amour-range": {
       "from": "git",
       "versions": [
@@ -699,6 +708,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "azincourt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -1280,6 +1298,15 @@
         }
       ]
     },
+    "bern": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "berwick-maine": {
       "from": "git",
       "versions": [
@@ -1316,6 +1343,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "bien-hoa-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -1831,6 +1867,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "buenos-aires": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -3774,6 +3819,15 @@
         }
       ]
     },
+    "erzincan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "eshowe": {
       "from": "git",
       "versions": [
@@ -3927,6 +3981,15 @@
         }
       ]
     },
+    "fatagar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "federal-state-of-austria": {
       "from": "git",
       "versions": [
@@ -4042,6 +4105,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "florida-q812": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -6112,6 +6184,15 @@
         }
       ]
     },
+    "kansas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "karameh": {
       "from": "git",
       "versions": [
@@ -7375,6 +7456,15 @@
         {
           "first": true,
           "on": "2026-10-12"
+        }
+      ]
+    },
+    "lublin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -8699,6 +8789,15 @@
         }
       ]
     },
+    "nafpaktos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "nagapattinam": {
       "from": "git",
       "versions": [
@@ -9940,6 +10039,15 @@
         }
       ]
     },
+    "plered": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "plzen": {
       "from": "git",
       "versions": [
@@ -10572,6 +10680,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "quy-nhon-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -11637,6 +11754,15 @@
         }
       ]
     },
+    "seneca-falls-new-york": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "seoul": {
       "from": "git",
       "versions": [
@@ -12193,6 +12319,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "south-region-brazil": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -13781,6 +13916,15 @@
         }
       ]
     },
+    "vicksburg-mississippi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "vienna": {
       "from": "git",
       "versions": [
@@ -14015,6 +14159,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "waterloo-battlefield": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },

@@ -11132,6 +11132,12 @@
     },
     {
       "dissent": false,
+      "id": "adams-onis-treaty",
+      "kind": "event",
+      "locator": "\"Adams–Onís Treaty\", revision 1379141627"
+    },
+    {
+      "dissent": false,
       "id": "aden-revolt",
       "kind": "event",
       "locator": "\"Aden Revolt\", revision 1370426945"
@@ -11780,6 +11786,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-agincourt",
+      "kind": "event",
+      "locator": "\"Battle of Agincourt\", revision 1376309279"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-agnadello",
       "kind": "event",
       "locator": "\"Battle of Agnadello\", revision 1370431087"
@@ -11900,6 +11912,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-antietam",
+      "kind": "event",
+      "locator": "\"Battle of Antietam\", revision 1380654379"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-antukyah",
       "kind": "event",
       "locator": "\"Battle of Antukyah\", revision 1370106857"
@@ -11957,6 +11975,12 @@
       "id": "battle-of-bacente",
       "kind": "event",
       "locator": "\"Battle of Baçente\", revision 1370433688"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-badeqe",
+      "kind": "event",
+      "locator": "\"Battle of Badeqe\", revision 1379522728"
     },
     {
       "dissent": false,
@@ -12053,6 +12077,12 @@
       "id": "battle-of-bloody-ridge",
       "kind": "event",
       "locator": "\"Battle of Bloody Ridge\", revision 1370434649"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-borodino",
+      "kind": "event",
+      "locator": "\"Battle of Borodino\", revision 1379952654"
     },
     {
       "dissent": false,
@@ -12554,6 +12584,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-erzincan-1507",
+      "kind": "event",
+      "locator": "\"Battle of Erzincan (1507)\", revision 1379966432"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-escape-creek",
       "kind": "event",
       "locator": "\"Battle of Escape Creek\", revision 1370440326"
@@ -12854,6 +12890,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-hampton-roads",
+      "kind": "event",
+      "locator": "\"Battle of Hampton Roads\", revision 1380472818"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-hansan-island",
       "kind": "event",
       "locator": "\"Battle of Hansan Island\", revision 1376900415"
@@ -13025,6 +13067,12 @@
       "id": "battle-of-ismailia-1952",
       "kind": "event",
       "locator": "\"Battle of Ismailia (1952)\", revision 1370443871"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-jaithak",
+      "kind": "event",
+      "locator": "\"Battle of Jaithak\", revision 1370266236"
     },
     {
       "dissent": false,
@@ -13343,6 +13391,12 @@
       "id": "battle-of-lens",
       "kind": "event",
       "locator": "\"Battle of Lens\", revision 1374682897"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lepanto",
+      "kind": "event",
+      "locator": "\"Battle of Lepanto\", revision 1380626112"
     },
     {
       "dissent": false,
@@ -14156,6 +14210,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ramu",
+      "kind": "event",
+      "locator": "\"Battle of Ramu\", revision 1370587146"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-rancagua",
       "kind": "event",
       "locator": "\"Battle of Rancagua\", revision 1371210959"
@@ -14267,6 +14327,12 @@
       "id": "battle-of-sadras",
       "kind": "event",
       "locator": "\"Battle of Sadras\", revision 1370587942"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sahart",
+      "kind": "event",
+      "locator": "\"Battle of Sahart\", revision 1370587971"
     },
     {
       "dissent": false,
@@ -14447,6 +14513,12 @@
       "id": "battle-of-shaykan",
       "kind": "event",
       "locator": "\"Battle of Shaykan\", revision 1370589187"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-shiloh",
+      "kind": "event",
+      "locator": "\"Battle of Shiloh\", revision 1379069369"
     },
     {
       "dissent": false,
@@ -14816,6 +14888,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-hill-of-the-jews",
+      "kind": "event",
+      "locator": "\"Battle of the Hill of the Jews\", revision 1370600115"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-imjin-river",
       "kind": "event",
       "locator": "\"Battle of the Imjin River\", revision 1376480748"
@@ -15017,6 +15095,12 @@
       "id": "battle-of-tornavento",
       "kind": "event",
       "locator": "\"Battle of Tornavento\", revision 1373646333"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-trafalgar",
+      "kind": "event",
+      "locator": "\"Battle of Trafalgar\", revision 1377500939"
     },
     {
       "dissent": false,
@@ -15260,6 +15344,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-waterloo",
+      "kind": "event",
+      "locator": "\"Battle of Waterloo\", revision 1380652941"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-wayna-daga",
       "kind": "event",
       "locator": "\"Battle of Wayna Daga\", revision 1370593467"
@@ -15482,6 +15572,12 @@
     },
     {
       "dissent": false,
+      "id": "berne-convention",
+      "kind": "event",
+      "locator": "\"Berne Convention\", revision 1377892510"
+    },
+    {
+      "dissent": false,
       "id": "bizerte-crisis",
       "kind": "event",
       "locator": "\"Bizerte crisis\", revision 1370604378"
@@ -15503,6 +15599,12 @@
       "id": "black-september",
       "kind": "event",
       "locator": "\"Black September\", revision 1370604477"
+    },
+    {
+      "dissent": false,
+      "id": "bleeding-kansas",
+      "kind": "event",
+      "locator": "\"Bleeding Kansas\", revision 1378397573"
     },
     {
       "dissent": false,
@@ -15575,6 +15677,12 @@
       "id": "bombardment-of-mogador",
       "kind": "event",
       "locator": "\"Bombardment of Mogador\", revision 1374542846"
+    },
+    {
+      "dissent": false,
+      "id": "bombardment-of-qui-nhon",
+      "kind": "event",
+      "locator": "\"Bombardment of Qui Nhơn\", revision 1373597718"
     },
     {
       "dissent": false,
@@ -15842,6 +15950,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-bien-hoa",
+      "kind": "event",
+      "locator": "\"Capture of Biên Hòa\", revision 1370608360"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-cairo-1517",
       "kind": "event",
       "locator": "\"Capture of Cairo (1517)\", revision 1380383336"
@@ -15974,6 +16088,18 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-tabriz-1514",
+      "kind": "event",
+      "locator": "\"Capture of Tabriz (1514)\", revision 1375080591"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-tabriz-1635",
+      "kind": "event",
+      "locator": "\"Capture of Tabriz (1635)\", revision 1370609683"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-the-rif-1792",
       "kind": "event",
       "locator": "\"Capture of the Rif (1792)\", revision 1370610053"
@@ -16025,6 +16151,12 @@
       "id": "catatumbo-campaign",
       "kind": "event",
       "locator": "\"Catatumbo campaign\", revision 1370610401"
+    },
+    {
+      "dissent": false,
+      "id": "caucasian-war",
+      "kind": "event",
+      "locator": "\"Caucasian War\", revision 1377773180"
     },
     {
       "dissent": false,
@@ -16169,6 +16301,12 @@
       "id": "cienfuegos-uprising",
       "kind": "event",
       "locator": "\"Cienfuegos uprising\", revision 1369026587"
+    },
+    {
+      "dissent": false,
+      "id": "cisplatine-war",
+      "kind": "event",
+      "locator": "\"Cisplatine War\", revision 1378683533"
     },
     {
       "dissent": false,
@@ -17750,6 +17888,12 @@
     },
     {
       "dissent": false,
+      "id": "gilded-age",
+      "kind": "event",
+      "locator": "\"Gilded Age\", revision 1378879052"
+    },
+    {
+      "dissent": false,
       "id": "glorious-revolution",
       "kind": "event",
       "locator": "\"Glorious Revolution\", revision 1377775481"
@@ -17852,6 +17996,12 @@
     },
     {
       "dissent": false,
+      "id": "great-siege-of-malta",
+      "kind": "event",
+      "locator": "\"Great Siege of Malta\", revision 1378836993"
+    },
+    {
+      "dissent": false,
       "id": "great-swamp-fight",
       "kind": "event",
       "locator": "\"Great Swamp Fight\", revision 1374695067"
@@ -17921,6 +18071,12 @@
       "id": "gulf-war",
       "kind": "event",
       "locator": "\"Gulf War\", revision 1373369657"
+    },
+    {
+      "dissent": false,
+      "id": "gunpowder-plot",
+      "kind": "event",
+      "locator": "\"Gunpowder Plot\", revision 1374461124"
     },
     {
       "dissent": false,
@@ -19100,6 +19256,12 @@
     },
     {
       "dissent": false,
+      "id": "may-revolution",
+      "kind": "event",
+      "locator": "\"May Revolution\", revision 1379920070"
+    },
+    {
+      "dissent": false,
       "id": "mazagan-ambush",
       "kind": "event",
       "locator": "\"Mazagan Ambush\", revision 1370627951"
@@ -19487,6 +19649,12 @@
       "id": "nova-republica-brazil-since-1985",
       "kind": "event",
       "locator": "\"History of Brazil (1985–present)\", revision 1371710443"
+    },
+    {
+      "dissent": false,
+      "id": "november-uprising",
+      "kind": "event",
+      "locator": "\"November Uprising\", revision 1378564588"
     },
     {
       "dissent": false,
@@ -20330,6 +20498,12 @@
     },
     {
       "dissent": false,
+      "id": "ragamuffin-war",
+      "kind": "event",
+      "locator": "\"Ragamuffin War\", revision 1376343215"
+    },
+    {
+      "dissent": false,
       "id": "raid-of-marrakesh-1515",
       "kind": "event",
       "locator": "\"Raid of Marrakesh (1515)\", revision 1370705532"
@@ -20441,6 +20615,12 @@
       "id": "recapture-of-bahia",
       "kind": "event",
       "locator": "\"Recapture of Bahia\", revision 1373231929"
+    },
+    {
+      "dissent": false,
+      "id": "reconstruction-era",
+      "kind": "event",
+      "locator": "\"Reconstruction era\", revision 1380016369"
     },
     {
       "dissent": false,
@@ -21116,6 +21296,18 @@
     },
     {
       "dissent": false,
+      "id": "seminole-wars",
+      "kind": "event",
+      "locator": "\"Seminole Wars\", revision 1379033093"
+    },
+    {
+      "dissent": false,
+      "id": "seneca-falls-convention",
+      "kind": "event",
+      "locator": "\"Seneca Falls Convention\", revision 1370695282"
+    },
+    {
+      "dissent": false,
       "id": "september-11-attacks",
       "kind": "event",
       "locator": "\"September 11 attacks\", revision 1379360542"
@@ -21677,6 +21869,12 @@
       "id": "siege-of-jaffa",
       "kind": "event",
       "locator": "\"Siege of Jaffa\", revision 1371106198"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-janjira",
+      "kind": "event",
+      "locator": "\"Siege of Janjira\", revision 1373771078"
     },
     {
       "dissent": false,
@@ -22262,6 +22460,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-vicksburg",
+      "kind": "event",
+      "locator": "\"Siege of Vicksburg\", revision 1378179794"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-vienna-1529",
       "kind": "event",
       "locator": "\"Siege of Vienna (1529)\", revision 1380449785"
@@ -22673,6 +22877,12 @@
       "id": "stono-rebellion",
       "kind": "event",
       "locator": "\"Stono Rebellion\", revision 1373301992"
+    },
+    {
+      "dissent": false,
+      "id": "storming-of-pleret",
+      "kind": "event",
+      "locator": "\"Storming of Pleret\", revision 1375545848"
     },
     {
       "dissent": false,
@@ -23300,6 +23510,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-amiens",
+      "kind": "event",
+      "locator": "\"Treaty of Amiens\", revision 1369821972"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-amity-and-commerce-united-states-japan",
       "kind": "event",
       "locator": "\"Treaty of Amity and Commerce (United States–Japan)\", revision 1371935103"
@@ -23771,6 +23987,12 @@
       "id": "unified-task-force",
       "kind": "event",
       "locator": "\"Unified Task Force\", revision 1375002456"
+    },
+    {
+      "dissent": false,
+      "id": "union-of-lublin",
+      "kind": "event",
+      "locator": "\"Union of Lublin\", revision 1372306130"
     },
     {
       "dissent": false,

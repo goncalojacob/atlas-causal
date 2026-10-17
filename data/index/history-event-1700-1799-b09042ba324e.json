@@ -1709,6 +1709,15 @@
         }
       ]
     },
+    "caucasian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "champ-de-mars-massacre": {
       "from": "git",
       "versions": [

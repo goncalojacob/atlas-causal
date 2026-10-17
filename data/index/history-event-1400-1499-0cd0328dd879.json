@@ -20,6 +20,15 @@
         }
       ]
     },
+    "battle-of-agincourt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-tangier-1437": {
       "from": "git",
       "versions": [

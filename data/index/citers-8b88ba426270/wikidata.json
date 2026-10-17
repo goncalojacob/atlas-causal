@@ -2732,6 +2732,12 @@
     },
     {
       "dissent": false,
+      "id": "adams-onis-treaty",
+      "kind": "event",
+      "locator": "Q351722"
+    },
+    {
+      "dissent": false,
       "id": "aden-revolt",
       "kind": "event",
       "locator": "Q3049873"
@@ -3470,6 +3476,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-agincourt",
+      "kind": "event",
+      "locator": "Q188495"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-agnadello",
       "kind": "event",
       "locator": "Q1754732"
@@ -3590,6 +3602,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-antietam",
+      "kind": "event",
+      "locator": "Q719252"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-antukyah",
       "kind": "event",
       "locator": "Q2887867"
@@ -3653,6 +3671,12 @@
       "id": "battle-of-bacente",
       "kind": "event",
       "locator": "Q279250"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-badeqe",
+      "kind": "event",
+      "locator": "Q141539388"
     },
     {
       "dissent": false,
@@ -3749,6 +3773,12 @@
       "id": "battle-of-bloody-ridge",
       "kind": "event",
       "locator": "Q2035177"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-borodino",
+      "kind": "event",
+      "locator": "Q184320"
     },
     {
       "dissent": false,
@@ -4262,6 +4292,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-erzincan-1507",
+      "kind": "event",
+      "locator": "Q111940071"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-escape-creek",
       "kind": "event",
       "locator": "Q18920214"
@@ -4562,6 +4598,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-hampton-roads",
+      "kind": "event",
+      "locator": "Q868481"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-hansan-island",
       "kind": "event",
       "locator": "Q487332"
@@ -4727,6 +4769,12 @@
       "id": "battle-of-ismailia-1952",
       "kind": "event",
       "locator": "Q12246335"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-jaithak",
+      "kind": "event",
+      "locator": "Q4871304"
     },
     {
       "dissent": false,
@@ -5051,6 +5099,12 @@
       "id": "battle-of-lens",
       "kind": "event",
       "locator": "Q2164950"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lepanto",
+      "kind": "event",
+      "locator": "Q165425"
     },
     {
       "dissent": false,
@@ -5864,6 +5918,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ramu",
+      "kind": "event",
+      "locator": "Q18750184"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-rancagua",
       "kind": "event",
       "locator": "Q1310755"
@@ -5969,6 +6029,12 @@
       "id": "battle-of-sadras",
       "kind": "event",
       "locator": "Q2601126"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sahart",
+      "kind": "event",
+      "locator": "Q726829"
     },
     {
       "dissent": false,
@@ -6149,6 +6215,12 @@
       "id": "battle-of-shaykan",
       "kind": "event",
       "locator": "Q478597"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-shiloh",
+      "kind": "event",
+      "locator": "Q943277"
     },
     {
       "dissent": false,
@@ -6518,6 +6590,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-hill-of-the-jews",
+      "kind": "event",
+      "locator": "Q4872927"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-imjin-river",
       "kind": "event",
       "locator": "Q16170016"
@@ -6713,6 +6791,12 @@
       "id": "battle-of-tornavento",
       "kind": "event",
       "locator": "Q4245345"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-trafalgar",
+      "kind": "event",
+      "locator": "Q171416"
     },
     {
       "dissent": false,
@@ -6950,6 +7034,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-waterloo",
+      "kind": "event",
+      "locator": "Q48314"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-wayna-daga",
       "kind": "event",
       "locator": "Q957263"
@@ -7172,6 +7262,12 @@
     },
     {
       "dissent": false,
+      "id": "berne-convention",
+      "kind": "event",
+      "locator": "Q217398"
+    },
+    {
+      "dissent": false,
       "id": "bizerte-crisis",
       "kind": "event",
       "locator": "Q879267"
@@ -7199,6 +7295,12 @@
       "id": "black-september",
       "kind": "event",
       "locator": "Q154288, P31 Q8465"
+    },
+    {
+      "dissent": false,
+      "id": "bleeding-kansas",
+      "kind": "event",
+      "locator": "Q331377"
     },
     {
       "dissent": false,
@@ -7271,6 +7373,12 @@
       "id": "bombardment-of-mogador",
       "kind": "event",
       "locator": "Q4940505"
+    },
+    {
+      "dissent": false,
+      "id": "bombardment-of-qui-nhon",
+      "kind": "event",
+      "locator": "Q4940509"
     },
     {
       "dissent": false,
@@ -7538,6 +7646,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-bien-hoa",
+      "kind": "event",
+      "locator": "Q5036990"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-cairo-1517",
       "kind": "event",
       "locator": "Q5036992"
@@ -7670,6 +7784,18 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-tabriz-1514",
+      "kind": "event",
+      "locator": "Q118928943"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-tabriz-1635",
+      "kind": "event",
+      "locator": "Q125784315"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-the-rif-1792",
       "kind": "event",
       "locator": "Q107027848"
@@ -7727,6 +7853,12 @@
       "id": "catatumbo-campaign",
       "kind": "event",
       "locator": "Q66474138"
+    },
+    {
+      "dissent": false,
+      "id": "caucasian-war",
+      "kind": "event",
+      "locator": "Q382116"
     },
     {
       "dissent": false,
@@ -7877,6 +8009,12 @@
       "id": "cienfuegos-uprising",
       "kind": "event",
       "locator": "Q141016338"
+    },
+    {
+      "dissent": false,
+      "id": "cisplatine-war",
+      "kind": "event",
+      "locator": "Q288251"
     },
     {
       "dissent": false,
@@ -9470,6 +9608,12 @@
     },
     {
       "dissent": false,
+      "id": "gilded-age",
+      "kind": "event",
+      "locator": "Q1753636"
+    },
+    {
+      "dissent": false,
       "id": "glorious-revolution",
       "kind": "event",
       "locator": "Q189508"
@@ -9566,6 +9710,12 @@
     },
     {
       "dissent": false,
+      "id": "great-siege-of-malta",
+      "kind": "event",
+      "locator": "Q58732"
+    },
+    {
+      "dissent": false,
       "id": "great-swamp-fight",
       "kind": "event",
       "locator": "Q5600061"
@@ -9647,6 +9797,12 @@
       "id": "gulf-war",
       "kind": "event",
       "locator": "Q37643, P31 Q198"
+    },
+    {
+      "dissent": false,
+      "id": "gunpowder-plot",
+      "kind": "event",
+      "locator": "Q45810"
     },
     {
       "dissent": false,
@@ -10862,6 +11018,12 @@
     },
     {
       "dissent": false,
+      "id": "may-revolution",
+      "kind": "event",
+      "locator": "Q838980"
+    },
+    {
+      "dissent": false,
       "id": "mazagan-ambush",
       "kind": "event",
       "locator": "Q120798736"
@@ -11279,6 +11441,12 @@
       "id": "nova-republica-brazil-since-1985",
       "kind": "event",
       "locator": "Q2920526"
+    },
+    {
+      "dissent": false,
+      "id": "november-uprising",
+      "kind": "event",
+      "locator": "Q462964"
     },
     {
       "dissent": false,
@@ -12104,6 +12272,12 @@
     },
     {
       "dissent": false,
+      "id": "ragamuffin-war",
+      "kind": "event",
+      "locator": "Q209297"
+    },
+    {
+      "dissent": false,
       "id": "raid-of-marrakesh-1515",
       "kind": "event",
       "locator": "Q116313968"
@@ -12215,6 +12389,12 @@
       "id": "recapture-of-bahia",
       "kind": "event",
       "locator": "Q3286392"
+    },
+    {
+      "dissent": false,
+      "id": "reconstruction-era",
+      "kind": "event",
+      "locator": "Q623429"
     },
     {
       "dissent": false,
@@ -12950,6 +13130,18 @@
     },
     {
       "dissent": false,
+      "id": "seminole-wars",
+      "kind": "event",
+      "locator": "Q900693"
+    },
+    {
+      "dissent": false,
+      "id": "seneca-falls-convention",
+      "kind": "event",
+      "locator": "Q2736155"
+    },
+    {
+      "dissent": false,
       "id": "september-11-attacks",
       "kind": "event",
       "locator": "Q10806"
@@ -13538,6 +13730,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-janjira",
+      "kind": "event",
+      "locator": "Q125565013"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-jhansi",
       "kind": "event",
       "locator": "Q16034303"
@@ -14120,6 +14318,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-vicksburg",
+      "kind": "event",
+      "locator": "Q1066253"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-vienna-1529",
       "kind": "event",
       "locator": "Q207576"
@@ -14519,6 +14723,12 @@
       "id": "stono-rebellion",
       "kind": "event",
       "locator": "Q1536983"
+    },
+    {
+      "dissent": false,
+      "id": "storming-of-pleret",
+      "kind": "event",
+      "locator": "Q112665913"
     },
     {
       "dissent": false,
@@ -14933,6 +15143,12 @@
       "id": "treaty-of-allahabad",
       "kind": "event",
       "locator": "Q4062556"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-amiens",
+      "kind": "event",
+      "locator": "Q112183"
     },
     {
       "dissent": false,
@@ -15509,6 +15725,12 @@
       "id": "unified-task-force",
       "kind": "event",
       "locator": "Q460844"
+    },
+    {
+      "dissent": false,
+      "id": "union-of-lublin",
+      "kind": "event",
+      "locator": "Q963303"
     },
     {
       "dissent": false,

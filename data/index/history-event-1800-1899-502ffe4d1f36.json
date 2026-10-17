@@ -423,6 +423,15 @@
         }
       ]
     },
+    "adams-onis-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "alaska-purchase": {
       "from": "git",
       "versions": [
@@ -806,6 +815,15 @@
         }
       ]
     },
+    "battle-of-antietam": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-aslanduz": {
       "from": "git",
       "versions": [
@@ -908,6 +926,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-borodino": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -1335,6 +1362,15 @@
         }
       ]
     },
+    "battle-of-hampton-roads": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-hlobane": {
       "from": "git",
       "versions": [
@@ -1401,6 +1437,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-jaithak": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -1824,6 +1869,15 @@
         }
       ]
     },
+    "battle-of-ramu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-rancagua": {
       "from": "git",
       "versions": [
@@ -1970,6 +2024,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-shiloh": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -2267,6 +2330,15 @@
         }
       ]
     },
+    "battle-of-trafalgar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-tucuman": {
       "from": "git",
       "versions": [
@@ -2389,6 +2461,15 @@
         }
       ]
     },
+    "battle-of-waterloo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-weihaiwei": {
       "from": "git",
       "versions": [
@@ -2494,12 +2575,30 @@
         }
       ]
     },
+    "berne-convention": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "black-hawk-war": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "bleeding-kansas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -2608,6 +2707,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "bombardment-of-qui-nhon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -2744,6 +2852,15 @@
         }
       ]
     },
+    "capture-of-bien-hoa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "capture-of-chusan": {
       "from": "git",
       "versions": [
@@ -2814,6 +2931,15 @@
       ]
     },
     "chumash-revolt-of-1824": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "cisplatine-war": {
       "from": "git",
       "versions": [
         {
@@ -3748,6 +3874,15 @@
         }
       ]
     },
+    "gilded-age": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "great-famine-ireland": {
       "from": "git",
       "versions": [
@@ -4203,6 +4338,15 @@
         }
       ]
     },
+    "may-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "medea-expedition-1830": {
       "from": "git",
       "versions": [
@@ -4357,6 +4501,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "november-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -4706,6 +4859,24 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "ragamuffin-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "reconstruction-era": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -5138,6 +5309,24 @@
         }
       ]
     },
+    "seminole-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "seneca-falls-convention": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "shangani-patrol": {
       "from": "git",
       "versions": [
@@ -5453,6 +5642,15 @@
         }
       ]
     },
+    "siege-of-vicksburg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "siege-of-zaragoza-1809": {
       "from": "git",
       "versions": [
@@ -5650,6 +5848,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "storming-of-pleret": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -5921,6 +6128,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "treaty-of-amiens": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
