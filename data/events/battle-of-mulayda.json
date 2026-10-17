@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-mulayda",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q654722",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Mulayda",
+    "pt": "Batalha de Mulaida"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q654722"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mulayda\", revision 1380424955"
+    }
+  ],
+  "title": "Battle of Mulayda",
+  "summary": "The English Wikipedia article \"Battle of Mulayda\", at revision 1380424955, opens: \"The Battle of Mulayda was the last major battle during the period of the Second Saudi State which occurred on 21 January 1891 over issues regarding zakat and the arrest of the Rashidi leader. The Rashidis plotted to end the Saudi state and conquer both the Qassim region and Riyadh. Following the invasion, the Rashidis and their Arab ally clans successfully conquered the Second Saudi State, forcing the House of Saud, led by Abdul Rahman bin Faisal, and their allies to flee.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q654722, imported by tools/import/wikidata.mjs. The item's own description reads \"1891 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1891,
+    "end": 1891,
+    "date": "1891-01-24"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

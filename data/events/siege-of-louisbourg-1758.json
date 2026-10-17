@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-louisbourg-1758",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3050672",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Louisbourg (1758)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3050672"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Louisbourg (1758)\", revision 1375085927"
+    }
+  ],
+  "title": "Siege of Louisbourg (1758)",
+  "summary": "The English Wikipedia article \"Siege of Louisbourg (1758)\", at revision 1375085927, opens: \"The siege of Louisbourg was fought during the Seven Years' War on Cape Breton Island between an attacking British force and defending French and Mi'kmaq troops. The French attempted to send reinforcements by sea, but were not able to as the fleet was blockaded and defeated by the British. The battle ended French colonial dominance in Atlantic Canada and led to the subsequent British campaign to capture Quebec in 1759 and the remainder of New France the following year.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3050672, imported by tools/import/wikidata.mjs. The item's own description reads \"1758 battle of the French and Indian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1758,
+    "end": 1758,
+    "date": "1758-06-08",
+    "endDate": "1758-07-26"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "french-and-indian-war"
+}

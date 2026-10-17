@@ -2728,7 +2728,33 @@
         "Q548395",
         "Q3402207",
         "Q26248687",
-        "Q16212881"
+        "Q16212881",
+        "Q263716",
+        "Q654722",
+        "Q7510220",
+        "Q3485950",
+        "Q65077587",
+        "Q15909493",
+        "Q3050672",
+        "Q4065191",
+        "Q2888548",
+        "Q2888557",
+        "Q3485885",
+        "Q5887865",
+        "Q172313",
+        "Q5784367",
+        "Q3485886",
+        "Q7057853",
+        "Q11284205",
+        "Q5484545",
+        "Q3485997",
+        "Q5722924",
+        "Q7509987",
+        "Q154981",
+        "Q736268",
+        "Q849176",
+        "Q829104",
+        "Q368689"
       ]
     }
   },
@@ -3244,6 +3270,10 @@
     "Q26248687": {
       "on": "2026-10-17",
       "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q65077587": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   }
 }

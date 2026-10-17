@@ -9503,6 +9503,391 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-039",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "eight-trigrams-uprising-of-1813",
+        "edges": [],
+        "place": "forbidden-city"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-041",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mulayda",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-043",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-madras",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-045",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-masulipatam",
+        "edges": [],
+        "place": "machilipatnam"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-047",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q65077587: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-asia-049",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "jahriyya-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-001",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-louisbourg-1758",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-003",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-spanish-war-1796-1808",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-005",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fort-frontenac",
+        "edges": [],
+        "place": "kingston-ontario"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-007",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fort-niagara",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-009",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-fort-detroit",
+        "edges": [],
+        "place": "fort-pontchartrain-du-detroit"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-011",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "salaverry-santa-cruz-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-013",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "louisiana-rebellion-of-1768",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-015",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "aponte-conspiracy",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-017",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-fort-massachusetts",
+        "edges": [],
+        "place": "north-adams-massachusetts"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-019",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "northeast-coast-campaign-1745",
+        "edges": [],
+        "place": "berwick-maine"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-021",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-annapolis-royal-1745",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-023",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "march-revolution-venezuela",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-025",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q3485997 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q3485997: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-17-americas-027",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-san-mateo-1814",
+        "edges": [],
+        "place": "san-mateo-aragua"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-029",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-dunlap-s-station",
+        "edges": [],
+        "place": "dunlap-ohio"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-001",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "second-schleswig-war",
+        "edges": [],
+        "place": "duchy-of-schleswig"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-003",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "finnish-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-005",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "kosciuszko-uprising",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-007",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "russo-turkish-war-1686-1700",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-009",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "written",
+      "written": {
+        "event": "first-serbian-uprising",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-011",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q690361 is already the event \"long-turkish-war\""
+    },
+    {
+      "id": "2026-10-17-europe-013",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2320981 is already the event \"williamite-war-in-ireland\""
+    },
+    {
+      "id": "2026-10-17-europe-015",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1233121 is already the event \"pilgrimage-of-grace\""
+    },
+    {
+      "id": "2026-10-17-europe-017",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1940446 is already the event \"monmouth-rebellion\""
+    },
+    {
+      "id": "2026-10-17-europe-019",
+      "writer": "A",
+      "fired": "2026-10-17T03:22Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1132994 is already the event \"polish-ottoman-war-1683-1699\""
     }
   ]
 }
