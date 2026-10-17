@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ishiyama-hongan-ji-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q859815",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Ishiyama Hongan-ji War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q859815"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ishiyama Hongan-ji War\", revision 1375540016"
+    }
+  ],
+  "title": "Ishiyama Hongan-ji War",
+  "summary": "The English Wikipedia article \"Ishiyama Hongan-ji War\", at revision 1375540016, opens: \"The Ishiyama Hongan-ji War  was a ten-year military campaign that took place from 1570 to 1580 in Sengoku period Japan, carried out by lord Oda Nobunaga against a network of fortifications, temples, and communities belonging to the Ikkō-ikki, a powerful faction of Jōdo Shinshū Buddhist monks and peasants opposed to the rule of the samurai class.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q859815, imported by tools/import/wikidata.mjs. The item's own description reads \"1570 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1570,
+    "end": 1580,
+    "date": "1570-08",
+    "endDate": "1580-08"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

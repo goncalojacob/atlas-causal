@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-vienna-1529",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q207576",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Vienna (1529)",
+    "pt": "Primeiro Cerco Otomano a Viena"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q207576"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Vienna (1529)\", revision 1380449785"
+    }
+  ],
+  "title": "Siege of Vienna (1529)",
+  "summary": "The English Wikipedia article \"Siege of Vienna (1529)\", at revision 1380449785, opens: \"The 1529 siege of Vienna was the first attempt by the Ottoman Empire to capture the city of Vienna in the Archduchy of Austria, part of the Holy Roman Empire. Suleiman the Magnificent, sultan of the Ottomans, attacked the city with over 100,000 men, while the defenders, led by Niklas Graf Salm, numbered no more than 21,000. Nevertheless, Vienna was able to survive the siege. The siege ultimately lasted just over two weeks, from 27 September to 15 October 1529.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q207576, imported by tools/import/wikidata.mjs. The item's own description reads \"First attempt by the Ottoman Empire to capture the city of Vienna, Austria\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1529,
+    "end": 1529,
+    "date": "1529-09-27",
+    "endDate": "1529-10-15"
+  },
+  "place": "vienna",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

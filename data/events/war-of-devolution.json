@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "war-of-devolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q25857",
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "War of Devolution",
+    "pt": "Guerra de Devolução"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q25857"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of Devolution\", revision 1375086353"
+    }
+  ],
+  "title": "War of Devolution",
+  "summary": "The English Wikipedia article \"War of Devolution\", at revision 1375086353, opens: \"The War of Devolution took place from May 1667 to May 1668. In the course of the war, France occupied large parts of the Spanish Netherlands and Franche-Comté, both then provinces of the Holy Roman Empire ruled by Spain. Its name derives from an obscure law known as the Jus Devolutionis, used by Louis XIV to claim that these territories had \"devolved\" to him by right of marriage to Maria Theresa of Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q25857, imported by tools/import/wikidata.mjs. The item's own description reads \"war between France and Spain for the Spanish Netherlands (1667–1668)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1667,
+    "end": 1668,
+    "date": "1667-05-24",
+    "endDate": "1668-05-02"
+  },
+  "place": "franche-comte-q16394",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

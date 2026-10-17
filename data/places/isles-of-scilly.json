@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "isles-of-scilly",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q180209",
+  "sitelinks": {
+    "count": 71,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Isles of Scilly",
+    "pt": "Ilhas de Scilly"
+  },
+  "sources": [],
+  "names": [
+    "Isles of Scilly",
+    "Ilhas Scilly",
+    "Ilhas de Scilly"
+  ],
+  "where": {
+    "lon": -6.3,
+    "lat": 49.92,
+    "precision": "region",
+    "label": "Isles of Scilly"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

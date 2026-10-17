@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "munster",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2742",
+  "sitelinks": {
+    "count": 110,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Münster",
+    "pt": "Münster"
+  },
+  "sources": [],
+  "names": [
+    "Münster"
+  ],
+  "where": {
+    "lon": 7.6255555555556,
+    "lat": 51.9625,
+    "precision": "city",
+    "label": "Münster"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

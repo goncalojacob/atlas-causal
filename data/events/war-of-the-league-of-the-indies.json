@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "war-of-the-league-of-the-indies",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q27958733",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "War of the League of the Indies",
+    "pt": "Guerra Geral da Índia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q27958733"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the League of the Indies\", revision 1379561724"
+    }
+  ],
+  "title": "War of the League of the Indies",
+  "summary": "The English Wikipedia article \"War of the League of the Indies\", at revision 1379561724, opens: \"The War of the League of the Indies was a military conflict lasting from December 1570 to 1575, wherein a pan-Asian alliance attempted to overturn the Portuguese presence in the Indian Ocean. The pan-Asian alliance was formed primarily by the Sultanate of Bijapur, the Sultanate of Ahmadnagar, the Kingdom of Calicut, and the Sultanate of Aceh. It is referred to by the Portuguese historian António Pinto Pereira as \"the League of Kings of India\", \"the Confederated Kings\", or simply \"the League\". The alliance undertook a combined assault against some of the primary possessions of the Portuguese State of India: Malacca, Chaul, the Chale fort, and the capital of the maritime empire in Asia, Goa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q27958733, imported by tools/import/wikidata.mjs. The item's own description reads \"Indo-Portuguese war (1570-1575)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1570,
+    "end": 1575,
+    "date": "1570-12"
+  },
+  "place": "strait-of-malacca",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
