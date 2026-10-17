@@ -24090,6 +24090,7 @@ Writer A started 2026-10-16T21:22:14Z by scheduled
 Writer A 2026-10-16T21:36:37Z: 37 written, 0 partial, 3 refused, 0 skipped
 
 Writer A started 2026-10-17T05:22:39Z by scheduled
+Writer A 2026-10-17T05:29:05Z: 26 written, 0 partial, 11 refused, 3 skipped
 
 Writer B started 2026-10-13T23:41:58Z by scheduled
 Writer B started 2026-10-16T06:42:30Z by scheduled
