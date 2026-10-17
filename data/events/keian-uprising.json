@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "keian-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6383559",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Keian Uprising"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6383559"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Keian Uprising\", revision 1366215558"
+    }
+  ],
+  "title": "Keian Uprising",
+  "summary": "The English Wikipedia article \"Keian Uprising\", at revision 1366215558, opens: \"The Keian Uprising  was a failed coup d'état attempt carried out against the Tokugawa shogunate of Japan in 1651, by a number of rōnin. Though it failed, the event is historically significant as an indication of a wider problem of disgruntled rōnin throughout the country at the time. Masterminded by Yui Shōsetsu and Marubashi Chūya, the uprising is named after the Keian era in which it took place.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6383559, imported by tools/import/wikidata.mjs. The item's own description reads \"military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1651,
+    "end": 1651
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

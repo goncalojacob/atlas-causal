@@ -26024,3 +26024,7 @@ Writer A 2026-10-17T00:27:49Z: 23 written, 0 partial, 5 refused, 2 skipped
 
 Writer B started 2026-10-17T01:19:50Z by scheduled
 Writer B 2026-10-17T02:31:23Z: 0 written, 0 partial, 0 refused, 0 skipped. The assistant closes the 01:19Z claim: its run stopped on the Satsuma Rebellion's dates.
+
+Writer A started 2026-10-17T01:22:25Z by scheduled
+
+Writer A 2026-10-17T01:29:08Z: 34 written, 0 partial, 6 refused, 0 skipped

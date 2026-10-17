@@ -1258,7 +1258,6 @@
         "Q1229264",
         "Q1135591",
         "Q1127285",
-        "Q975837",
         "Q27230923",
         "Q13695",
         "Q205119",
@@ -2612,7 +2611,47 @@
         "Q7701256",
         "Q71630263",
         "Q4552433",
-        "Q124749527"
+        "Q124749527",
+        "Q8049168",
+        "Q3062441",
+        "Q815228",
+        "Q707364",
+        "Q694911",
+        "Q5255169",
+        "Q207576",
+        "Q25857",
+        "Q631795",
+        "Q1054482",
+        "Q74298",
+        "Q691882",
+        "Q1860257",
+        "Q677693",
+        "Q233594",
+        "Q1418582",
+        "Q697621",
+        "Q490348",
+        "Q7170193",
+        "Q15436846",
+        "Q26709211",
+        "Q859815",
+        "Q7849268",
+        "Q28136838",
+        "Q1754778",
+        "Q11457612",
+        "Q3407896",
+        "Q15665692",
+        "Q27627985",
+        "Q6383559",
+        "Q4552486",
+        "Q27958733",
+        "Q27958661",
+        "Q4870848",
+        "Q124550898",
+        "Q135643326",
+        "Q18394797",
+        "Q111940658",
+        "Q130711778",
+        "Q975837"
       ]
     }
   },
@@ -3084,6 +3123,30 @@
     "Q71630263": {
       "on": "2026-10-17",
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q3062441": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q631795": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q677693": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q135643326": {
+      "on": "2026-10-17",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    "Q130711778": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q975837": {
+      "on": "2026-10-17",
+      "why": "no date the atlas can use: an event with no year has nowhere on the timeline"
     }
   }
 }

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "cambodian-spanish-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q27627985",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Cambodian–Spanish War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q27627985"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cambodian–Spanish War\", revision 1376484548"
+    }
+  ],
+  "title": "Cambodian–Spanish War",
+  "summary": "The English Wikipedia article \"Cambodian–Spanish War\", at revision 1376484548, opens: \"The Cambodian–Spanish War (1593–1599) was an attempt to conquer Cambodia on behalf of King Satha I and Christianize Cambodia's population by the Spanish and Portuguese Empires. Along with the Spanish, Filipinos, Mexican recruits, Japanese mercenaries participated in the invasion of Cambodia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q27627985, imported by tools/import/wikidata.mjs. The item's own description reads \"Spanish led late-16th-century invasion of Cambodia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1593,
+    "end": 1597
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

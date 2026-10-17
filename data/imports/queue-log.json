@@ -7538,6 +7538,492 @@
         "place": "gold-coast-region"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-016",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "yaqui-wars",
+        "edges": [],
+        "place": "arizona"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-024",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3062441: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-europe-008",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-toulon-1793",
+        "edges": [],
+        "place": "toulon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-016",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "count-s-feud",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-024",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-parkany",
+        "edges": [],
+        "place": "sturovo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-027",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "demerara-rebellion-of-1823",
+        "edges": [],
+        "place": "demerara-essequibo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-031",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-vienna-1529",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-035",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-devolution",
+        "edges": [],
+        "place": "franche-comte-q16394"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-039",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q631795: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-europe-043",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "three-hundred-and-thirty-five-years-war",
+        "edges": [],
+        "place": "isles-of-scilly"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-047",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "polish-ottoman-war-1672-1676",
+        "edges": [],
+        "place": "galicia-eastern-europe"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-051",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "munster-rebellion",
+        "edges": [],
+        "place": "munster"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-055",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "cromwellian-conquest-of-ireland",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-europe-059",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q677693: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-europe-063",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "second-war-of-kappel",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-192",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "russo-persian-war-1722-1723",
+        "edges": [],
+        "place": "caucasus"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-196",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-fort-zeelandia",
+        "edges": [],
+        "place": "fort-zeelandia-taiwan"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-200",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "later-jin-invasion-of-joseon",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-204",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "persian-uzbek-wars",
+        "edges": [],
+        "place": "khorasan"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-208",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "tensho-iga-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-210",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "karposh-s-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-212",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "ishiyama-hongan-ji-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-214",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "trinh-nguyen-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-216",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "trunajaya-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-218",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "portuguese-conquest-of-the-jaffna-kingdom",
+        "edges": [],
+        "place": "nallur-jaffna"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-220",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "prince-of-ning-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-222",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "second-javanese-war-of-succession",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-224",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "prince-of-anhua-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-226",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "cambodian-spanish-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-228",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "keian-uprising",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-230",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "1717-omani-invasion-of-bahrain",
+        "edges": [],
+        "place": "bahrain-island"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-232",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-league-of-the-indies",
+        "edges": [],
+        "place": "strait-of-malacca"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-234",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "mataram-conquest-of-surabaya",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-236",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-dartsedo",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-238",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "dano-mughal-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-240",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q135643326: no date the atlas can use: an event with no year has nowhere on the timeline"
+    },
+    {
+      "id": "2026-10-16-asia-242",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "toungoo-ava-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-244",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "written",
+      "written": {
+        "event": "bakhchisarai-war-1525",
+        "edges": [],
+        "place": "bakhchysarai"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-246",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q130711778: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-americas-030",
+      "writer": "A",
+      "fired": "2026-10-17T01:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q975837: no date the atlas can use: an event with no year has nowhere on the timeline"
     }
   ]
 }

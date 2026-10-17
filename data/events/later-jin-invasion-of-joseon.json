@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "later-jin-invasion-of-joseon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q490348",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Later Jin invasion of Joseon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q490348"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Later Jin invasion of Joseon\", revision 1370626642"
+    }
+  ],
+  "title": "Later Jin invasion of Joseon",
+  "summary": "The English Wikipedia article \"Later Jin invasion of Joseon\", at revision 1370626642, opens: \"The Later Jin invasion of Joseon occurred in early 1627 when the Later Jin prince Amin led an invasion of the Joseon Kingdom. The war ended after three months, with the Later Jin establishing itself as sovereign tributary overlord over Joseon. However Joseon continued its relationship with the Ming and showed defiance in solidifying its tributary relationship with the Later Jin. It was followed by the Qing invasion of Joseon in 1636.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q490348, imported by tools/import/wikidata.mjs. The item's own description reads \"invasion of Joseon in 1627 by the Later Jin (Manchu), ending after 3 months with the Later Jin establishing itself as sovereign tributary overlord over Joseon\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1627,
+    "end": 1627,
+    "date": "1627-03-03"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
