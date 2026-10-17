@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "aponte-conspiracy",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5784367",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Aponte conspiracy",
+    "pt": "Conspiração de Aponte"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5784367"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Aponte conspiracy\", revision 1380426350"
+    }
+  ],
+  "title": "Aponte conspiracy",
+  "summary": "The English Wikipedia article \"Aponte conspiracy\", at revision 1380426350, opens: \"The Aponte conspiracy was a large-scale slave rebellion in Cuba that occurred in 1812. It is named after its alleged leader, José Antonio Aponte.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5784367, imported by tools/import/wikidata.mjs. The item's own description reads \"slave rebellion in Cuba\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "endDate": "1812-04"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

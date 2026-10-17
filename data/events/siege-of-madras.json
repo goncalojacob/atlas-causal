@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-madras",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510220",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Madras"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510220"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Madras\", revision 1370743136"
+    }
+  ],
+  "title": "Siege of Madras",
+  "summary": "The English Wikipedia article \"Siege of Madras\", at revision 1370743136, opens: \"Madras, held by the British, was besieged between December 1758 and February 1759 by French forces under the command of Comte de Lally during the Seven Years' War. The British garrison was able to hold out until it was relieved.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510220, imported by tools/import/wikidata.mjs. The item's own description reads \"1758 part of Seven Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1758,
+    "end": 1759,
+    "date": "1758-12",
+    "endDate": "1759-02"
+  },
+  "place": "chennai",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

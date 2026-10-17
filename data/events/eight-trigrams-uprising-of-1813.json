@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "eight-trigrams-uprising-of-1813",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q263716",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Eight Trigrams uprising of 1813"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q263716"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Eight Trigrams uprising of 1813\", revision 1374718576"
+    }
+  ],
+  "title": "Eight Trigrams uprising of 1813",
+  "summary": "The English Wikipedia article \"Eight Trigrams uprising of 1813\", at revision 1374718576, opens: \"The Eight Trigrams uprising of 1813 broke out in China under the Qing dynasty. The rebellion was started by some elements of the millenarian Tianli Sect (天理教) or Heavenly Principle Sect, which was a branch of the White Lotus Sect. Led by Lin Qing and Li Wencheng, the revolt occurred in the Zhili, Shandong, and Henan provinces of China.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q263716, imported by tools/import/wikidata.mjs. The item's own description reads \"political uprising in China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813
+  },
+  "place": "forbidden-city",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

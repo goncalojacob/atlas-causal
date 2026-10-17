@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-dunlap-s-station",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7509987",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Dunlap's Station"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7509987"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Dunlap's Station\", revision 1376208417"
+    }
+  ],
+  "title": "Siege of Dunlap's Station",
+  "summary": "The English Wikipedia article \"Siege of Dunlap's Station\", at revision 1376208417, opens: \"The siege of Dunlap's Station was a battle that took place on January 10–11, 1791, during the Northwest Indian War between the Northwestern Confederacy of American Indians and European American settlers in what became the southwestern region of the U.S. state of Ohio. This was one of the Indians' few unsuccessful attacks during this period. It was shortly after the Harmar campaign attacks and unprecedented defeat of U.S. Army forces.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7509987, imported by tools/import/wikidata.mjs. The item's own description reads \"1791 battle during during the Northwest Indian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1791,
+    "end": 1791,
+    "date": "1791-01-10",
+    "endDate": "1791-01-11"
+  },
+  "place": "dunlap-ohio",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "northwest-indian-war"
+}

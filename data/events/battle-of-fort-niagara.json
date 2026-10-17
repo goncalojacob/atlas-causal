@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "battle-of-fort-niagara",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888557",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Fort Niagara"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888557"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Niagara\", revision 1373540221"
+    }
+  ],
+  "title": "Battle of Fort Niagara",
+  "summary": "The English Wikipedia article \"Battle of Fort Niagara\", at revision 1373540221, opens: \"The Battle of Fort Niagara was a siege late in the French and Indian War, the North American theatre of the Seven Years' War. The British siege of Fort Niagara in July 1759 was part of a campaign to remove French control of the Great Lakes and Ohio Valley regions, making possible a western invasion of the French province of Canada in conjunction with General James Wolfe's invasion to the east.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888557, imported by tools/import/wikidata.mjs. The item's own description reads \"1759 siege late in the French and Indian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1759,
+    "end": 1759,
+    "date": "1759-07-06",
+    "endDate": "1759-07-26"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": [
+    "seven-years-war",
+    "french-and-indian-war"
+  ]
+}

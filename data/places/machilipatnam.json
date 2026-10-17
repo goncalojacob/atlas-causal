@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "machilipatnam",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q845662",
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Machilipatnam",
+    "pt": "Masulipatão"
+  },
+  "sources": [],
+  "names": [
+    "Machilipatnam",
+    "Masulipatão"
+  ],
+  "where": {
+    "lon": 81.133333333333,
+    "lat": 16.166666666667,
+    "precision": "city",
+    "label": "Machilipatnam"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
