@@ -10238,6 +10238,12 @@
     },
     {
       "dissent": false,
+      "id": "1895-japanese-invasion-of-taiwan",
+      "kind": "event",
+      "locator": "\"1895 Japanese invasion of Taiwan\", revision 1377981680"
+    },
+    {
+      "dissent": false,
       "id": "1908-portuguese-legislative-election",
       "kind": "event",
       "locator": "\"1908 Portuguese legislative election\", revision 1277160529"
@@ -10976,6 +10982,12 @@
     },
     {
       "dissent": false,
+      "id": "acadian-civil-war",
+      "kind": "event",
+      "locator": "\"Acadian Civil War\", revision 1377886854"
+    },
+    {
+      "dissent": false,
       "id": "aceh-war",
       "kind": "event",
       "locator": "\"Aceh War\", revision 1371860816"
@@ -11147,6 +11159,12 @@
       "id": "age-of-enlightenment",
       "kind": "event",
       "locator": "\"Age of Enlightenment\", revision 1379866058"
+    },
+    {
+      "dissent": false,
+      "id": "alexandria-expedition-of-1807",
+      "kind": "event",
+      "locator": "\"Alexandria expedition of 1807\", revision 1372782262"
     },
     {
       "dissent": false,
@@ -11600,6 +11618,12 @@
     },
     {
       "dissent": false,
+      "id": "basuto-gun-war",
+      "kind": "event",
+      "locator": "\"Basuto Gun War\", revision 1370430485"
+    },
+    {
+      "dissent": false,
       "id": "batepa-massacre",
       "kind": "event",
       "locator": "\"Batepá massacre\", revision 1366289250"
@@ -11681,6 +11705,12 @@
       "id": "battle-of-ain-dara",
       "kind": "event",
       "locator": "\"Battle of Ain Dara\", revision 1370431170"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-aizu",
+      "kind": "event",
+      "locator": "\"Battle of Aizu\", revision 1370431187"
     },
     {
       "dissent": false,
@@ -11867,6 +11897,12 @@
       "id": "battle-of-bin-jawad",
       "kind": "event",
       "locator": "\"Battle of Bin Jawad\", revision 1375769079"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-blaauwberg",
+      "kind": "event",
+      "locator": "\"Battle of Blaauwberg\", revision 1370434518"
     },
     {
       "dissent": false,
@@ -12266,6 +12302,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-damghan-1729",
+      "kind": "event",
+      "locator": "\"Battle of Damghan (1729)\", revision 1380230144"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-danghangpo",
       "kind": "event",
       "locator": "\"Battle of Danghangpo\", revision 1370438295"
@@ -12470,6 +12512,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gallabat",
+      "kind": "event",
+      "locator": "\"Battle of Gallabat\", revision 1370441225"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gandamak",
       "kind": "event",
       "locator": "\"Battle of Gandamak\", revision 1376918846"
@@ -12497,6 +12545,12 @@
       "id": "battle-of-gavinana",
       "kind": "event",
       "locator": "\"Battle of Gavinana\", revision 1370381453"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-geok-tepe",
+      "kind": "event",
+      "locator": "\"Battle of Geok Tepe\", revision 1377808049"
     },
     {
       "dissent": false,
@@ -12608,6 +12662,18 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gundet",
+      "kind": "event",
+      "locator": "\"Battle of Gundet\", revision 1370442317"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gura",
+      "kind": "event",
+      "locator": "\"Battle of Gura\", revision 1370442332"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-haengju",
       "kind": "event",
       "locator": "\"Battle of Haengju\", revision 1370265139"
@@ -12659,6 +12725,12 @@
       "id": "battle-of-heartbreak-ridge",
       "kind": "event",
       "locator": "\"Battle of Heartbreak Ridge\", revision 1376272103"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-hemmingstedt",
+      "kind": "event",
+      "locator": "\"Battle of Hemmingstedt\", revision 1375929854"
     },
     {
       "dissent": false,
@@ -12950,6 +13022,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kirkuk-1733",
+      "kind": "event",
+      "locator": "\"Battle of Kirkuk (1733)\", revision 1370445492"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kitombo",
       "kind": "event",
       "locator": "\"Battle of Kitombo\", revision 1370267185"
@@ -13229,6 +13307,12 @@
       "id": "battle-of-mamora-1696",
       "kind": "event",
       "locator": "\"Battle of Mamora (1696)\", revision 1370268917"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-manila-1762",
+      "kind": "event",
+      "locator": "\"Battle of Manila (1762)\", revision 1378886751"
     },
     {
       "dissent": false,
@@ -14822,6 +14906,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-utsunomiya-castle",
+      "kind": "event",
+      "locator": "\"Battle of Utsunomiya Castle\", revision 1370592058"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-vaal-krantz",
       "kind": "event",
       "locator": "\"Battle of Vaal Krantz\", revision 1370592068"
@@ -15080,6 +15170,12 @@
     },
     {
       "dissent": false,
+      "id": "battles-of-kawanakajima",
+      "kind": "event",
+      "locator": "\"Battles of Kawanakajima\", revision 1370603569"
+    },
+    {
+      "dissent": false,
       "id": "battles-of-khalkhin-gol",
       "kind": "event",
       "locator": "\"Battles of Khalkhin Gol\", revision 1371868221"
@@ -15215,6 +15311,12 @@
       "id": "bombardment-of-mogador",
       "kind": "event",
       "locator": "\"Bombardment of Mogador\", revision 1374542846"
+    },
+    {
+      "dissent": false,
+      "id": "bombardment-of-sale-1851",
+      "kind": "event",
+      "locator": "\"Bombardment of Salé (1851)\", revision 1374542810"
     },
     {
       "dissent": false,
@@ -15407,6 +15509,12 @@
       "id": "capture-of-alexandria-1798",
       "kind": "event",
       "locator": "\"Capture of Alexandria (1798)\", revision 1370608238"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-algiers-1516",
+      "kind": "event",
+      "locator": "\"Capture of Algiers (1516)\", revision 1370608241"
     },
     {
       "dissent": false,
@@ -17036,6 +17144,12 @@
     },
     {
       "dissent": false,
+      "id": "free-state-basotho-wars",
+      "kind": "event",
+      "locator": "\"Free State–Basotho Wars\", revision 1374719576"
+    },
+    {
+      "dissent": false,
       "id": "french-and-indian-war",
       "kind": "event",
       "locator": "\"French and Indian War\", revision 1376981238"
@@ -18452,6 +18566,12 @@
     },
     {
       "dissent": false,
+      "id": "mejba-revolt",
+      "kind": "event",
+      "locator": "\"Mejba Revolt\", revision 1375358439"
+    },
+    {
+      "dissent": false,
       "id": "merger-treaty",
       "kind": "event",
       "locator": "\"Merger Treaty\", revision 1340086782"
@@ -18479,6 +18599,12 @@
       "id": "milk-bar-cafe-bombing",
       "kind": "event",
       "locator": "\"Zohra Drif\", revision 1370227344, § Milk Bar Café bombing (1956)"
+    },
+    {
+      "dissent": false,
+      "id": "mixton-war",
+      "kind": "event",
+      "locator": "\"Mixtón War\", revision 1380208261"
     },
     {
       "dissent": false,
@@ -18716,6 +18842,12 @@
     },
     {
       "dissent": false,
+      "id": "new-york-slave-revolt-of-1712",
+      "kind": "event",
+      "locator": "\"New York Slave Revolt of 1712\", revision 1377593095"
+    },
+    {
+      "dissent": false,
       "id": "nez-perce-war",
       "kind": "event",
       "locator": "\"Nez Perce War\", revision 1379052287"
@@ -18809,6 +18941,12 @@
       "id": "oman-zanzibar-war",
       "kind": "event",
       "locator": "\"Oman–Zanzibar war\", revision 1379781468"
+    },
+    {
+      "dissent": false,
+      "id": "onin-war",
+      "kind": "event",
+      "locator": "\"Ōnin War\", revision 1375533899"
     },
     {
       "dissent": false,
@@ -19067,6 +19205,12 @@
       "id": "ottoman-persian-war-1505-1517",
       "kind": "event",
       "locator": "\"Ottoman–Persian War (1505–1517)\", revision 1380388442"
+    },
+    {
+      "dissent": false,
+      "id": "ottoman-persian-war-1743-1746",
+      "kind": "event",
+      "locator": "\"Ottoman–Persian War (1743–1746)\", revision 1375254761"
     },
     {
       "dissent": false,
@@ -20402,6 +20546,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-baghdad-1638",
+      "kind": "event",
+      "locator": "\"Siege of Baghdad (1638)\", revision 1378917458"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-bahrain",
       "kind": "event",
       "locator": "\"Siege of Bahrain\", revision 1376466141"
@@ -20441,6 +20591,12 @@
       "id": "siege-of-belgrade-1688",
       "kind": "event",
       "locator": "\"Siege of Belgrade (1688)\", revision 1375187508"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-belgrade-1690",
+      "kind": "event",
+      "locator": "\"Siege of Belgrade (1690)\", revision 1370739435"
     },
     {
       "dissent": false,
@@ -20516,6 +20672,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-cairo-1801",
+      "kind": "event",
+      "locator": "\"Siege of Cairo (1801)\", revision 1371087718"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-campar",
       "kind": "event",
       "locator": "\"Siege of Campar\", revision 1370740012"
@@ -20537,6 +20699,12 @@
       "id": "siege-of-ceuta-1419",
       "kind": "event",
       "locator": "\"Siege of Ceuta (1419)\", revision 1370740121"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-chittorgarh-1567-1568",
+      "kind": "event",
+      "locator": "\"Siege of Chittorgarh (1567–1568)\", revision 1370740246"
     },
     {
       "dissent": false,
@@ -20810,6 +20978,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-larache-1689",
+      "kind": "event",
+      "locator": "\"Siege of Larache (1689)\", revision 1376737589"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-lens",
       "kind": "event",
       "locator": "\"Siege of Lens\", revision 1370742876"
@@ -20927,6 +21101,18 @@
       "id": "siege-of-mitu",
       "kind": "event",
       "locator": "\"Siege of Mitú\", revision 1370743579"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mombasa-1696-1698",
+      "kind": "event",
+      "locator": "\"Siege of Mombasa (1696–1698)\", revision 1370743590"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-mount-hiei",
+      "kind": "event",
+      "locator": "\"Siege of Mount Hiei\", revision 1374222876"
     },
     {
       "dissent": false,
@@ -21434,6 +21620,12 @@
     },
     {
       "dissent": false,
+      "id": "south-african-wars-1879-1915",
+      "kind": "event",
+      "locator": "\"South African Wars (1879–1915)\", revision 1376241564"
+    },
+    {
+      "dissent": false,
       "id": "south-lebanon-conflict",
       "kind": "event",
       "locator": "\"South Lebanon conflict (1985–2000)\", revision 1370747846"
@@ -21578,9 +21770,21 @@
     },
     {
       "dissent": false,
+      "id": "spanish-conquest-of-tripoli",
+      "kind": "event",
+      "locator": "\"Spanish conquest of Tripoli\", revision 1370748348"
+    },
+    {
+      "dissent": false,
       "id": "spanish-constitution-of-1812",
       "kind": "event",
       "locator": "\"Spanish Constitution of 1812\", revision 1370968394"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-expedition-to-tlemcen-1535",
+      "kind": "event",
+      "locator": "\"Spanish expedition to Tlemcen (1535)\", revision 1370748400"
     },
     {
       "dissent": false,
@@ -21989,6 +22193,12 @@
       "id": "the-troubles",
       "kind": "event",
       "locator": "\"The Troubles\", revision 1376046499: \"about 30 years from the late 1960s to 1998 ... usually deemed to have ended with the Good Friday Agreement of 1998\""
+    },
+    {
+      "dissent": false,
+      "id": "third-anglo-burmese-war",
+      "kind": "event",
+      "locator": "\"Third Anglo-Burmese War\", revision 1370750284"
     },
     {
       "dissent": false,

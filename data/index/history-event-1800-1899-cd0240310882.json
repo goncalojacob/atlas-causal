@@ -203,6 +203,15 @@
         }
       ]
     },
+    "1895-japanese-invasion-of-taiwan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "1895-portuguese-legislative-election": {
       "from": "git",
       "versions": [
@@ -402,6 +411,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "alexandria-expedition-of-1807": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -614,6 +632,15 @@
         }
       ]
     },
+    "basuto-gun-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "batalla-de-la-florida": {
       "from": "git",
       "versions": [
@@ -668,6 +695,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-aizu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -764,6 +800,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-blaauwberg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -1035,12 +1080,30 @@
         }
       ]
     },
+    "battle-of-gallabat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-gandamak": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-geok-tepe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -1116,6 +1179,24 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-gundet": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-gura": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -2048,6 +2129,15 @@
         }
       ]
     },
+    "battle-of-utsunomiya-castle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-velestino": {
       "from": "git",
       "versions": [
@@ -2302,6 +2392,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "bombardment-of-sale-1851": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -3235,6 +3334,15 @@
         }
       ]
     },
+    "free-state-basotho-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "french-blockade-of-algiers": {
       "from": "git",
       "versions": [
@@ -3660,6 +3768,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "mejba-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -4541,6 +4658,15 @@
         }
       ]
     },
+    "siege-of-cairo-1801": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "siege-of-cawnpore": {
       "from": "git",
       "versions": [
@@ -4845,6 +4971,15 @@
         }
       ]
     },
+    "south-african-wars-1879-1915": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "spanish-american-war-1898": {
       "from": "git",
       "versions": [
@@ -5038,6 +5173,15 @@
         {
           "first": true,
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "third-anglo-burmese-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },

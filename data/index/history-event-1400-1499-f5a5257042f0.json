@@ -230,6 +230,15 @@
         }
       ]
     },
+    "onin-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "portuguese-conquest-of-ceuta": {
       "from": "git",
       "versions": [

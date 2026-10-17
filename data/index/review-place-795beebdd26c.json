@@ -566,6 +566,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "aizu",
+      "kind": "place",
+      "names": [
+        "Aizu"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-23",
       "degree": 1,
       "id": "ajdabiya",
@@ -819,7 +846,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 6,
+      "degree": 7,
       "id": "algiers-q3561",
       "kind": "place",
       "names": [
@@ -1902,6 +1929,34 @@
       ],
       "created": "2026-10-17",
       "degree": 1,
+      "id": "baghdad",
+      "kind": "place",
+      "names": [
+        "Baghdad",
+        "Bagdá"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
       "id": "bago-myanmar",
       "kind": "place",
       "names": [
@@ -2647,7 +2702,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "belgrade",
       "kind": "place",
       "names": [
@@ -4236,7 +4291,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 2,
+      "degree": 3,
       "id": "cairo",
       "kind": "place",
       "names": [
@@ -5566,6 +5621,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "chittor-fort",
+      "kind": "place",
+      "names": [
+        "Chittorgarh Fort",
+        "Chittor Fort"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -8326,7 +8409,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "ethiopian-empire",
       "kind": "place",
       "names": [
@@ -9425,6 +9508,33 @@
         "Galicia",
         "Galicia (Eastern Europe)",
         "Galícia (Europa Central)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "gallabat",
+      "kind": "place",
+      "names": [
+        "Gallabat"
       ],
       "origin": {
         "tool": "wikidata"
@@ -10693,6 +10803,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "gura-eritrea",
+      "kind": "place",
+      "names": [
+        "Gura",
+        "Gura, Eritrea"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10928,6 +11066,33 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q489561, the Battle of Heartbreak Ridge, read on 2026-09-25 — A9's first step. The hill mass has no item this pass could reach; the article calls it a \"7-mile (11 km) long hill mass\" 1,500 yards from Bloody Ridge, so the point stands for a ridge and not for a settlement.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "hemmingstedt",
+      "kind": "place",
+      "names": [
+        "Hemmingstedt"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -12779,7 +12944,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 8,
+      "degree": 12,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -13984,6 +14149,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "kirkuk",
+      "kind": "place",
+      "names": [
+        "Kirkuk",
+        "Quircuque"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -15079,7 +15272,7 @@
         }
       ],
       "created": "2026-10-12",
-      "degree": 1,
+      "degree": 2,
       "id": "larache",
       "kind": "place",
       "names": [
@@ -16704,7 +16897,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 2,
+      "degree": 3,
       "id": "manila",
       "kind": "place",
       "names": [
@@ -17129,6 +17322,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "mehmandust-semnan",
+      "kind": "place",
+      "names": [
+        "Mehmandust",
+        "Mehmandust, Semnan"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -17827,7 +18048,7 @@
         }
       ],
       "created": "2026-10-15",
-      "degree": 1,
+      "degree": 2,
       "id": "mombasa",
       "kind": "place",
       "names": [
@@ -19137,11 +19358,39 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "new-france-q170604",
+      "kind": "place",
+      "names": [
+        "New France",
+        "Nova França"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "created": "2026-09-03",
-      "degree": 6,
+      "degree": 7,
       "id": "new-york",
       "kind": "place",
       "names": [
@@ -24060,6 +24309,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "sale",
+      "kind": "place",
+      "names": [
+        "Salé"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "salle-du-jeu-de-paume",
@@ -25760,7 +26036,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "south-africa-q258",
       "kind": "place",
       "names": [
@@ -27256,6 +27532,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "taiwan-island",
+      "kind": "place",
+      "names": [
+        "Taiwan Island",
+        "Ilha Formosa",
+        "Taiwan (island)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -28312,7 +28617,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 3,
+      "degree": 4,
       "id": "tlemcen",
       "kind": "place",
       "names": [
@@ -28721,7 +29026,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "tripoli",
       "kind": "place",
       "names": [

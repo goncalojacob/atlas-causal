@@ -188,6 +188,15 @@
         }
       ]
     },
+    "aizu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "ajdabiya": {
       "from": "git",
       "versions": [
@@ -753,6 +762,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "baghdad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -2449,6 +2467,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "chittor-fort": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -4226,6 +4253,15 @@
         }
       ]
     },
+    "gallabat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "gallipoli": {
       "from": "git",
       "versions": [
@@ -4787,6 +4823,15 @@
         }
       ]
     },
+    "gura-eritrea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "gurupa": {
       "from": "git",
       "versions": [
@@ -4883,6 +4928,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "hemmingstedt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -6149,6 +6203,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "kirkuk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -7624,6 +7687,15 @@
         }
       ]
     },
+    "mehmandust-semnan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "mekelle": {
       "from": "git",
       "versions": [
@@ -8488,6 +8560,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "new-france-q170604": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -10777,6 +10858,15 @@
         }
       ]
     },
+    "sale": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "salle-du-jeu-de-paume": {
       "from": "git",
       "versions": [
@@ -12183,6 +12273,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "taiwan-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
