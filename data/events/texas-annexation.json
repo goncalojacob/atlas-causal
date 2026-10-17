@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "texas-annexation",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1187072",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Texas annexation",
+    "pt": "Anexação do Texas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1187072"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Texas annexation\", revision 1378893742"
+    }
+  ],
+  "title": "Texas annexation",
+  "summary": "The English Wikipedia article \"Texas annexation\", at revision 1378893742, opens: \"The Texas annexation was the incorporation of the Republic of Texas into the United States by joint resolution of Congress, culminating in its admission to the Union as the 28th state on December 29, 1845.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1187072, imported by tools/import/wikidata.mjs. The item's own description reads \"the incorporation of the Republic of Texas into the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1845,
+    "end": 1845,
+    "date": "1845-12-29"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "founding",
+  "actors": []
+}

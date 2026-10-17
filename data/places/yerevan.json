@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "yerevan",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1953",
+  "sitelinks": {
+    "count": 193,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Yerevan",
+    "pt": "Erevã"
+  },
+  "sources": [],
+  "names": [
+    "Yerevan",
+    "Erevã"
+  ],
+  "where": {
+    "lon": 44.514444444444,
+    "lat": 40.181388888889,
+    "precision": "city",
+    "label": "Yerevan"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

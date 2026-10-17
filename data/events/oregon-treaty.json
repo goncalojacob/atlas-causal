@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "oregon-treaty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q823433",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Oregon Treaty",
+    "pt": "Tratado do Oregon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q823433"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Oregon Treaty\", revision 1375247732"
+    }
+  ],
+  "title": "Oregon Treaty",
+  "summary": "The English Wikipedia article \"Oregon Treaty\", at revision 1375247732, opens: \"The Oregon Treaty between the United Kingdom and the United States was signed on June 15, 1846, in Washington, D.C. The treaty brought an end to the Oregon boundary dispute by settling competing American and British claims to the Oregon Country through partition. The area had been jointly occupied by both Britain and the U.S. since the Treaty of 1818.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q823433, imported by tools/import/wikidata.mjs. The item's own description reads \"1846 treaty between the United Kingdom and the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1846,
+    "end": 1846,
+    "date": "1846-06-15"
+  },
+  "place": "washington",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

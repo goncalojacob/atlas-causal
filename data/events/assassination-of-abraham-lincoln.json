@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "assassination-of-abraham-lincoln",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1025404",
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Assassination of Abraham Lincoln",
+    "pt": "Assassinato de Abraham Lincoln"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1025404"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Assassination of Abraham Lincoln\", revision 1380649442"
+    }
+  ],
+  "title": "Assassination of Abraham Lincoln",
+  "summary": "The English Wikipedia article \"Assassination of Abraham Lincoln\", at revision 1380649442, opens: \"On April 14, 1865, Abraham Lincoln, the 16th president of the United States, was shot in the head while attending a play at Ford's Theatre in Washington, D.C.. He died the following day, six weeks into his second term and a month before the conclusion of the American Civil War. Lincoln was watching the play Our American Cousin with his wife Mary Todd, Major Henry Rathbone, and Rathbone's fiancé Clara Harris when John Wilkes Booth, an actor and Confederate sympathizer, shot him from behind. Lincoln was taken to the Petersen House across the street, where he died the following morning.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1025404, imported by tools/import/wikidata.mjs. The item's own description reads \"1865 murder in Washington, D.C\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1865,
+    "end": 1865,
+    "date": "1865-04-15"
+  },
+  "place": "washington",
+  "region": null,
+  "regionNote": null,
+  "category": "death",
+  "actors": []
+}

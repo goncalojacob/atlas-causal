@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "new-york-city-draft-riots",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q220497",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "New York City draft riots",
+    "pt": "Distúrbios do recrutamento em Nova York"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q220497"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"New York City draft riots\", revision 1380062427"
+    }
+  ],
+  "title": "New York City draft riots",
+  "summary": "The English Wikipedia article \"New York City draft riots\", at revision 1380062427, opens: \"The New York City draft riots, sometimes referred to as the Manhattan draft riots and known at the time as Draft Week, were violent disturbances in Lower Manhattan, widely regarded as the culmination of working-class discontent with new laws passed by Congress that year to draft men to fight in the ongoing American Civil War. The protests turned into a race riot against African Americans by Irish American rioters. President Abraham Lincoln diverted several regiments of militia and volunteer troops after the Battle of Gettysburg to control the city. The official death toll was listed at either 119 or 120. One historian estimated a loss in killed and wounded of 1000, most of whom were of the mob, and a probable damage to private property of $1,500,000. According to another historian, 18 people are known to have been killed by the rioters, 11 of whom were Black.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q220497, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 civil unrest over American Civil War conscription\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-07"
+  },
+  "place": "new-york-state",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

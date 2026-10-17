@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sherman-s-march-to-the-sea",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1052780",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Sherman's March to the Sea",
+    "pt": "Marcha de Sherman até o Mar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1052780"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sherman's March to the Sea\", revision 1378752877"
+    }
+  ],
+  "title": "Sherman's March to the Sea",
+  "summary": "The English Wikipedia article \"Sherman's March to the Sea\", at revision 1378752877, opens: \"Sherman's March to the Sea, officially known as the Savannah campaign, or simply Sherman's March, was a military campaign of the American Civil War conducted through Georgia from November 15 until December 21, 1864, by United States Army major general William T. Sherman. It began on November 15 with Sherman's troops leaving Atlanta, recently taken by Union forces under Sherman, and ended with the capture of the port of Savannah on December 21. Emulating the chevauchée of medieval European warfare, his forces followed a \"scorched earth\" policy, destroying military targets as well as industry, infrastructure, and civilian property, disrupting the Confederacy's economy and transportation networks.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1052780, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 military campaign of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-11-15",
+    "endDate": "1864-12-21"
+  },
+  "place": "georgia-u-s-state",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

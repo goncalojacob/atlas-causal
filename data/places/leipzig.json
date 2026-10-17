@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "leipzig",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2079",
+  "sitelinks": {
+    "count": 147,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Leipzig",
+    "pt": "Leipzig"
+  },
+  "sources": [],
+  "names": [
+    "Leipzig"
+  ],
+  "where": {
+    "lon": 12.3747329,
+    "lat": 51.3406321,
+    "precision": "city",
+    "label": "Leipzig"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

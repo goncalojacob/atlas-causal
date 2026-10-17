@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "january-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q473670",
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "January Uprising",
+    "pt": "Revolta de Janeiro"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q473670"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"January Uprising\", revision 1379026475"
+    }
+  ],
+  "title": "January Uprising",
+  "summary": "The English Wikipedia article \"January Uprising\", at revision 1379026475, opens: \"The January Uprising was an insurrection against Russian imperial rule in the Congress Kingdom of Poland and adjacent lands of the former Polish–Lithuanian Commonwealth. Sparked by nationalist aspirations, political repressions, religious differences and opposition to conscription, it was organized by the clandestine Central National Committee and subsequently by the revolutionary Polish National Government. It began on 22 January 1863 and continued until the last insurgents were captured in 1864.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q473670, imported by tools/import/wikidata.mjs. The item's own description reads \"Polish national uprising against the Russian occupation of the former Polish-Lithuanian Commonwealth\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1864,
+    "date": "1863-01-22"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

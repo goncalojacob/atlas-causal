@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "burning-of-washington",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q897786",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Burning of Washington",
+    "pt": "Batalha de Washington"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q897786"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Burning of Washington\", revision 1379378162"
+    }
+  ],
+  "title": "Burning of Washington",
+  "summary": "The English Wikipedia article \"Burning of Washington\", at revision 1379378162, opens: \"The burning of Washington, also known as the capture of Washington, was a successful British amphibious attack conducted by Rear Admiral George Cockburn as part of the Chesapeake campaign planned by Admiral John Warren. It was the only time since the American Revolutionary War that a foreign power had captured and occupied a United States capital. Following the defeat of American forces at the Battle of Bladensburg on August 24, 1814, a British force led by Major-General Robert Ross marched on Washington, D.C. That evening, British soldiers and sailors set fire to multiple public buildings, including the presidential mansion, United States Capitol, and Washington Navy Yard.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q897786, imported by tools/import/wikidata.mjs. The item's own description reads \"British naval attack on the United States during the War of 1812\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-08-24"
+  },
+  "place": "washington",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

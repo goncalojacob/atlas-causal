@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-erivan-1635",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q31070845",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Erivan (1635)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q31070845"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Erivan (1635)\", revision 1371427363"
+    }
+  ],
+  "title": "Siege of Erivan (1635)",
+  "summary": "The English Wikipedia article \"Siege of Erivan (1635)\", at revision 1371427363, opens: \"The siege of Erivan was a military engagement of the Ottoman–Safavid War (1623–1639). During this siege, the Ottoman Empire occupied the city of Erivan\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q31070845, imported by tools/import/wikidata.mjs. The item's own description reads \"1635 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1635,
+    "end": 1635,
+    "date": "1635-07-28",
+    "endDate": "1635-08-08"
+  },
+  "place": "yerevan",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-safavid-war-1623-1639"
+}

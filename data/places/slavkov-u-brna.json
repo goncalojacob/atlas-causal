@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "slavkov-u-brna",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q193724",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Slavkov u Brna",
+    "pt": "Austerlitz"
+  },
+  "sources": [],
+  "names": [
+    "Slavkov u Brna",
+    "Austerlitz"
+  ],
+  "where": {
+    "lon": 16.876504369244,
+    "lat": 49.153275386094,
+    "precision": "city",
+    "label": "Slavkov u Brna"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
