@@ -1134,6 +1134,15 @@
         }
       ]
     },
+    "battle-of-shanhai-pass": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-song-jin": {
       "from": "git",
       "versions": [
@@ -3655,6 +3664,15 @@
       ]
     },
     "treaty-of-butre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-zuhab": {
       "from": "git",
       "versions": [
         {

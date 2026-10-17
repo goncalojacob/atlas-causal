@@ -4706,6 +4706,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "canakkale",
+      "kind": "place",
+      "names": [
+        "Çanakkale",
+        "Chanacale"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -5213,7 +5241,7 @@
         }
       ],
       "created": "2026-10-13",
-      "degree": 1,
+      "degree": 2,
       "id": "central-asia",
       "kind": "place",
       "names": [
@@ -11770,7 +11798,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "ho-chi-minh-city",
       "kind": "place",
       "names": [
@@ -12996,6 +13024,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-17",
+      "degree": 2,
+      "id": "istanbul",
+      "kind": "place",
+      "names": [
+        "Istanbul",
+        "Istambul"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "isthmus-of-chignecto",
@@ -13700,7 +13756,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 15,
+      "degree": 16,
       "id": "joseon",
       "kind": "place",
       "names": [
@@ -14323,6 +14379,34 @@
       "names": [
         "Kenya Colony",
         "Quênia britânico"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "kermanshah",
+      "kind": "place",
+      "names": [
+        "Kermanshah",
+        "Quermanxá"
       ],
       "origin": {
         "tool": "wikidata"
@@ -16066,6 +16150,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "le-bardo",
+      "kind": "place",
+      "names": [
+        "Le Bardo"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -18346,7 +18457,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 6,
+      "degree": 7,
       "id": "middle-east",
       "kind": "place",
       "names": [
@@ -19840,7 +19951,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 3,
       "id": "nanjing",
       "kind": "place",
       "names": [
@@ -21141,7 +21252,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 3,
+      "degree": 4,
       "id": "oran",
       "kind": "place",
       "names": [
@@ -26312,6 +26423,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "shanhaiguan-qinhuangdao",
+      "kind": "place",
+      "names": [
+        "Shanhaiguan District",
+        "Shanhaiguan, Qinhuangdao"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -28655,7 +28794,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 5,
+      "degree": 6,
       "id": "tangier",
       "kind": "place",
       "names": [
@@ -29340,7 +29479,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 3,
       "id": "tianjin",
       "kind": "place",
       "names": [
@@ -30034,7 +30173,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 6,
+      "degree": 7,
       "id": "tripoli",
       "kind": "place",
       "names": [
@@ -31898,6 +32037,33 @@
       "kind": "place",
       "names": [
         "Wonju"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "wounded-knee-creek",
+      "kind": "place",
+      "names": [
+        "Wounded Knee Creek"
       ],
       "origin": {
         "tool": "wikidata"

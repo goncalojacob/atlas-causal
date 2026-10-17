@@ -10232,6 +10232,12 @@
     },
     {
       "dissent": false,
+      "id": "1887-yellow-river-flood",
+      "kind": "event",
+      "locator": "\"1887 Yellow River flood\", revision 1379364844"
+    },
+    {
+      "dissent": false,
       "id": "1889-1890-pandemic",
       "kind": "event",
       "locator": "\"1889–1890 pandemic\", revision 1362689201"
@@ -12662,6 +12668,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gettysburg",
+      "kind": "event",
+      "locator": "\"Battle of Gettysburg\", revision 1380654585"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ghazni",
       "kind": "event",
       "locator": "\"Battle of Ghazni\", revision 1370441533"
@@ -13904,6 +13916,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-plassey",
+      "kind": "event",
+      "locator": "\"Battle of Plassey\", revision 1370586228"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-polesella",
       "kind": "event",
       "locator": "\"Battle of Polesella\", revision 1370586353"
@@ -14351,6 +14369,12 @@
       "id": "battle-of-shanghai",
       "kind": "event",
       "locator": "\"Battle of Shanghai\", revision 1372115505"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-shanhai-pass",
+      "kind": "event",
+      "locator": "\"Battle of Shanhai Pass\", revision 1370589169"
     },
     {
       "dissent": false,
@@ -15620,6 +15644,12 @@
     },
     {
       "dissent": false,
+      "id": "burney-treaty",
+      "kind": "event",
+      "locator": "\"Burney Treaty\", revision 1346978136"
+    },
+    {
+      "dissent": false,
       "id": "c-nar-incident",
       "kind": "event",
       "locator": "\"Çınar incident\", revision 1366216392"
@@ -16472,6 +16502,12 @@
     },
     {
       "dissent": false,
+      "id": "dagohoy-rebellion",
+      "kind": "event",
+      "locator": "\"Dagohoy rebellion\", revision 1379426715"
+    },
+    {
+      "dissent": false,
       "id": "damour-massacre",
       "kind": "event",
       "locator": "\"Damour massacre\", revision 1356232011"
@@ -16553,6 +16589,12 @@
       "id": "dervish-war",
       "kind": "event",
       "locator": "\"Dervish War\", revision 1380464956"
+    },
+    {
+      "dissent": false,
+      "id": "desmichels-treaty",
+      "kind": "event",
+      "locator": "\"Desmichels Treaty\", revision 1339665709"
     },
     {
       "dissent": false,
@@ -16685,6 +16727,12 @@
       "id": "dzungar-conquest-of-altishahr",
       "kind": "event",
       "locator": "\"Dzungar conquest of Altishahr\", revision 1379513246"
+    },
+    {
+      "dissent": false,
+      "id": "dzungar-genocide",
+      "kind": "event",
+      "locator": "\"Dzungar genocide\", revision 1379785897"
     },
     {
       "dissent": false,
@@ -18296,6 +18344,12 @@
     },
     {
       "dissent": false,
+      "id": "italo-ethiopian-war-of-1887-1889",
+      "kind": "event",
+      "locator": "\"Italo-Ethiopian War of 1887–1889\", revision 1370624669"
+    },
+    {
+      "dissent": false,
       "id": "italo-turkish-war",
       "kind": "event",
       "locator": "\"Italo-Turkish War\", revision 1370624672"
@@ -18431,6 +18485,12 @@
       "id": "kapp-putsch",
       "kind": "event",
       "locator": "\"Kapp Putsch\", revision 1373832870"
+    },
+    {
+      "dissent": false,
+      "id": "kapsin-coup",
+      "kind": "event",
+      "locator": "\"Kapsin Coup\", revision 1377577366"
     },
     {
       "dissent": false,
@@ -18623,6 +18683,12 @@
       "id": "lang-son-campaign",
       "kind": "event",
       "locator": "\"Lạng Sơn campaign\", revision 1377313524"
+    },
+    {
+      "dissent": false,
+      "id": "lao-rebellion-1826-1828",
+      "kind": "event",
+      "locator": "\"Lao rebellion (1826–1828)\", revision 1380513813"
     },
     {
       "dissent": false,
@@ -19604,6 +19670,12 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-persian-wars",
+      "kind": "event",
+      "locator": "\"Ottoman–Persian Wars\", revision 1380571264"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-portuguese-conflicts-1538-1560",
       "kind": "event",
       "locator": "\"Ottoman–Portuguese conflicts (1538–1560)\", revision 1376305276"
@@ -20405,6 +20477,12 @@
       "id": "russian-civil-war",
       "kind": "event",
       "locator": "\"Russian Civil War\", revision 1372728974"
+    },
+    {
+      "dissent": false,
+      "id": "russian-conquest-of-central-asia",
+      "kind": "event",
+      "locator": "\"Russian conquest of Central Asia\", revision 1379522071"
     },
     {
       "dissent": false,
@@ -23054,9 +23132,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-aynal-kavak",
+      "kind": "event",
+      "locator": "\"Treaty of Aynalıkavak\", revision 1327240348"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-balta-liman",
       "kind": "event",
       "locator": "\"Treaty of Balta Liman\", revision 1374235511"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-bardo",
+      "kind": "event",
+      "locator": "\"Treaty of Bardo\", revision 1356987229"
     },
     {
       "dissent": false,
@@ -23084,6 +23174,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-constantinople-1590",
+      "kind": "event",
+      "locator": "\"Treaty of Constantinople (1590)\", revision 1348806793"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-fes",
       "kind": "event",
       "locator": "\"Treaty of Fes\", revision 1361628067"
@@ -23108,6 +23204,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-giyanti",
+      "kind": "event",
+      "locator": "\"Treaty of Giyanti\", revision 1352679394"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-greenville",
       "kind": "event",
       "locator": "\"Treaty of Greenville\", revision 1375606163"
@@ -23117,6 +23219,12 @@
       "id": "treaty-of-kerden",
       "kind": "event",
       "locator": "\"Treaty of Kerden\", revision 1338320601"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-kulja",
+      "kind": "event",
+      "locator": "\"Treaty of Kulja\", revision 1375991502"
     },
     {
       "dissent": false,
@@ -23153,6 +23261,12 @@
       "id": "treaty-of-madrid-13-january-1750",
       "kind": "event",
       "locator": "\"Treaty of Madrid (13 January 1750)\", revision 1367898537"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-nanking",
+      "kind": "event",
+      "locator": "\"Treaty of Nanking\", revision 1364848326"
     },
     {
       "dissent": false,
@@ -23222,6 +23336,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-saigon-1862",
+      "kind": "event",
+      "locator": "\"Treaty of Saigon (1862)\", revision 1304320800"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-salbai",
       "kind": "event",
       "locator": "\"Treaty of Salbai\", revision 1375500475"
@@ -23258,9 +23378,27 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-tangier-1844",
+      "kind": "event",
+      "locator": "\"Treaty of Tangier (1844)\", revision 1379340199"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-tartu",
       "kind": "event",
       "locator": "\"Treaty of Tartu (Estonia–Russia)\", revision 1368812511"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-the-dardanelles",
+      "kind": "event",
+      "locator": "\"Treaty of the Dardanelles\", revision 1346116966"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-tientsin",
+      "kind": "event",
+      "locator": "\"Treaty of Tientsin\", revision 1358177367"
     },
     {
       "dissent": false,
@@ -23273,6 +23411,18 @@
       "id": "treaty-of-trianon",
       "kind": "event",
       "locator": "\"Treaty of Trianon\", revision 1372701139"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-tripoli",
+      "kind": "event",
+      "locator": "\"Treaty of Tripoli\", revision 1375053986"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-turkmenchay",
+      "kind": "event",
+      "locator": "\"Treaty of Turkmenchay\", revision 1375386257"
     },
     {
       "dissent": false,
@@ -23303,6 +23453,12 @@
       "id": "treaty-of-zaragoza",
       "kind": "event",
       "locator": "\"Treaty of Zaragoza\", revision 1380022410"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-zuhab",
+      "kind": "event",
+      "locator": "\"Treaty of Zuhab\", revision 1378868024"
     },
     {
       "dissent": false,
@@ -23441,6 +23597,12 @@
       "id": "united-states-invasion-of-panama",
       "kind": "event",
       "locator": "\"United States invasion of Panama\", revision 1378846455"
+    },
+    {
+      "dissent": false,
+      "id": "urabi-revolt",
+      "kind": "event",
+      "locator": "\"Urabi revolt\", revision 1373818817"
     },
     {
       "dissent": false,
@@ -23825,6 +23987,12 @@
       "id": "world-war-ii-in-albania",
       "kind": "event",
       "locator": "\"World War II in Albania\", revision 1376137340, first sentence: \"In Albania, World War II began with its invasion by Italy in April 1939.\""
+    },
+    {
+      "dissent": false,
+      "id": "wounded-knee-massacre",
+      "kind": "event",
+      "locator": "\"Wounded Knee Massacre\", revision 1380393977"
     },
     {
       "dissent": false,

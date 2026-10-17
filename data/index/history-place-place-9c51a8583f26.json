@@ -2009,6 +2009,15 @@
         }
       ]
     },
+    "canakkale": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "cancha-rayada": {
       "from": "git",
       "versions": [
@@ -5673,6 +5682,15 @@
         }
       ]
     },
+    "istanbul": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "isthmus-of-chignecto": {
       "from": "git",
       "versions": [
@@ -6224,6 +6242,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "kermanshah": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -6970,6 +6997,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "le-bardo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -11622,6 +11658,15 @@
         }
       ]
     },
+    "shanhaiguan-qinhuangdao": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "shatila-refugee-camp": {
       "from": "git",
       "versions": [
@@ -14115,6 +14160,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "wounded-knee-creek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },

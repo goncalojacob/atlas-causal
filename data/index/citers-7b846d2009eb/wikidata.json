@@ -1820,6 +1820,12 @@
     },
     {
       "dissent": false,
+      "id": "1887-yellow-river-flood",
+      "kind": "event",
+      "locator": "Q1142904"
+    },
+    {
+      "dissent": false,
       "id": "1889-1890-pandemic",
       "kind": "event",
       "locator": "Q10658304"
@@ -4364,6 +4370,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gettysburg",
+      "kind": "event",
+      "locator": "Q33132"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ghazni",
       "kind": "event",
       "locator": "Q1010245"
@@ -5618,6 +5630,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-plassey",
+      "kind": "event",
+      "locator": "Q203233"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-polesella",
       "kind": "event",
       "locator": "Q3636579"
@@ -6053,6 +6071,12 @@
       "id": "battle-of-shanghai",
       "kind": "event",
       "locator": "Q254599"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-shanhai-pass",
+      "kind": "event",
+      "locator": "Q4520158"
     },
     {
       "dissent": false,
@@ -7316,6 +7340,12 @@
     },
     {
       "dissent": false,
+      "id": "burney-treaty",
+      "kind": "event",
+      "locator": "Q1016779"
+    },
+    {
+      "dissent": false,
       "id": "c-nar-incident",
       "kind": "event",
       "locator": "Q8077838"
@@ -8174,6 +8204,12 @@
     },
     {
       "dissent": false,
+      "id": "dagohoy-rebellion",
+      "kind": "event",
+      "locator": "Q5208625"
+    },
+    {
+      "dissent": false,
       "id": "damour-massacre",
       "kind": "event",
       "locator": "Q1351462"
@@ -8255,6 +8291,12 @@
       "id": "dervish-war",
       "kind": "event",
       "locator": "Q1402902"
+    },
+    {
+      "dissent": false,
+      "id": "desmichels-treaty",
+      "kind": "event",
+      "locator": "Q7837034"
     },
     {
       "dissent": false,
@@ -8375,6 +8417,12 @@
       "id": "dzungar-conquest-of-altishahr",
       "kind": "event",
       "locator": "Q18204735"
+    },
+    {
+      "dissent": false,
+      "id": "dzungar-genocide",
+      "kind": "event",
+      "locator": "Q4462644"
     },
     {
       "dissent": false,
@@ -10010,6 +10058,12 @@
     },
     {
       "dissent": false,
+      "id": "italo-ethiopian-war-of-1887-1889",
+      "kind": "event",
+      "locator": "Q3778598"
+    },
+    {
+      "dissent": false,
       "id": "italo-turkish-war",
       "kind": "event",
       "locator": "Q203824"
@@ -10157,6 +10211,12 @@
       "id": "kapp-putsch",
       "kind": "event",
       "locator": "Q161141"
+    },
+    {
+      "dissent": false,
+      "id": "kapsin-coup",
+      "kind": "event",
+      "locator": "Q488282"
     },
     {
       "dissent": false,
@@ -10367,6 +10427,12 @@
       "id": "lang-son-campaign",
       "kind": "event",
       "locator": "Q6711767"
+    },
+    {
+      "dissent": false,
+      "id": "lao-rebellion-1826-1828",
+      "kind": "event",
+      "locator": "Q6407091"
     },
     {
       "dissent": false,
@@ -11378,6 +11444,12 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-persian-wars",
+      "kind": "event",
+      "locator": "Q4203073"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-portuguese-conflicts-1538-1560",
       "kind": "event",
       "locator": "Q762191"
@@ -12179,6 +12251,12 @@
       "id": "russian-civil-war",
       "kind": "event",
       "locator": "Q79911, P31 Q8465 / Q350604"
+    },
+    {
+      "dissent": false,
+      "id": "russian-conquest-of-central-asia",
+      "kind": "event",
+      "locator": "Q25591101"
     },
     {
       "dissent": false,
@@ -14684,9 +14762,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-aynal-kavak",
+      "kind": "event",
+      "locator": "Q7836974"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-balta-liman",
       "kind": "event",
       "locator": "Q2657887"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-bardo",
+      "kind": "event",
+      "locator": "Q808027"
     },
     {
       "dissent": false,
@@ -14726,6 +14816,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-constantinople-1590",
+      "kind": "event",
+      "locator": "Q2470144"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-fes",
       "kind": "event",
       "locator": "Q931982"
@@ -14750,6 +14846,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-giyanti",
+      "kind": "event",
+      "locator": "Q2978493"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-greenville",
       "kind": "event",
       "locator": "Q767317"
@@ -14759,6 +14861,12 @@
       "id": "treaty-of-kerden",
       "kind": "event",
       "locator": "Q7837107"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-kulja",
+      "kind": "event",
+      "locator": "Q1658558"
     },
     {
       "dissent": false,
@@ -14807,6 +14915,12 @@
       "id": "treaty-of-madrid-13-january-1750",
       "kind": "event",
       "locator": "Q1422396"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-nanking",
+      "kind": "event",
+      "locator": "Q238262"
     },
     {
       "dissent": false,
@@ -14906,6 +15020,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-saigon-1862",
+      "kind": "event",
+      "locator": "Q2572351"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-salbai",
       "kind": "event",
       "locator": "Q2985337"
@@ -14954,6 +15074,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-tangier-1844",
+      "kind": "event",
+      "locator": "Q7837248"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-tartu",
       "kind": "event",
       "locator": "Q1056439"
@@ -14966,6 +15092,18 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-the-dardanelles",
+      "kind": "event",
+      "locator": "Q2718318"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-tientsin",
+      "kind": "event",
+      "locator": "Q612577"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-trianon",
       "kind": "event",
       "locator": "Q181902"
@@ -14975,6 +15113,18 @@
       "id": "treaty-of-trianon",
       "kind": "event",
       "locator": "Q181902, P31 Q625298"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-tripoli",
+      "kind": "event",
+      "locator": "Q1456685"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-turkmenchay",
+      "kind": "event",
+      "locator": "Q875512"
     },
     {
       "dissent": false,
@@ -15011,6 +15161,12 @@
       "id": "treaty-of-zaragoza",
       "kind": "event",
       "locator": "Q1147471"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-zuhab",
+      "kind": "event",
+      "locator": "Q2060524"
     },
     {
       "dissent": false,
@@ -15173,6 +15329,12 @@
       "id": "united-states-invasion-of-panama",
       "kind": "event",
       "locator": "Q459282"
+    },
+    {
+      "dissent": false,
+      "id": "urabi-revolt",
+      "kind": "event",
+      "locator": "Q2143253"
     },
     {
       "dissent": false,
@@ -15569,6 +15731,12 @@
       "id": "world-war-ii-in-albania",
       "kind": "event",
       "locator": "Q74109"
+    },
+    {
+      "dissent": false,
+      "id": "wounded-knee-massacre",
+      "kind": "event",
+      "locator": "Q108413"
     },
     {
       "dissent": false,
