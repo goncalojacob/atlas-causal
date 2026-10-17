@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "rasht",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q178373",
+  "sitelinks": {
+    "count": 75,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Rasht",
+    "pt": "Resht"
+  },
+  "sources": [],
+  "names": [
+    "Rasht",
+    "Resht"
+  ],
+  "where": {
+    "lon": 49.58861111111111,
+    "lat": 37.27611111111111,
+    "precision": "city",
+    "label": "Rasht"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
