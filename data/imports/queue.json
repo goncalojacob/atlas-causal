@@ -150,20 +150,6 @@
       "why": "Refused 15 October for a class (Q1155622, slave rebellion) absent from wikidata-seeds.json. The class entered the file from the 2012Z note of 16 October, so the item returns."
     },
     {
-      "id": "2026-10-16-asia-190",
-      "planned": "2026-10-16T22:25:17Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q714820",
-      "title": "Satsuma Rebellion",
-      "parents": [
-        "meiji-restoration"
-      ],
-      "edges": [],
-      "rank": "child-of:meiji-restoration",
-      "why": "Refused 16 October for a class (Q10931495, shizoku rebellion) absent from wikidata-seeds.json. The class entered the file from the 2012Z note of 16 October, so the item returns. Its span (29 January to 24 September 1877) falls inside the held Meiji Restoration (1868 to 1889), as the 0616Z note first found. Wikidata sitelink count 32."
-    },
-    {
       "id": "2026-10-16-europe-031",
       "planned": "2026-10-16T22:41:10Z",
       "lane": "europe",
