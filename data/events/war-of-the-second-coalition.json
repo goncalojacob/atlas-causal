@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "war-of-the-second-coalition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q26749",
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "War of the Second Coalition",
+    "pt": "Segunda Coligação"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q26749"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Second Coalition\", revision 1379640362"
+    }
+  ],
+  "title": "War of the Second Coalition",
+  "summary": "The English Wikipedia article \"War of the Second Coalition\", at revision 1379640362, opens: \"The War of the Second Coalition (1798–1802) was the second war between revolutionary France and a coalition of European monarchies, led by Britain, Austria and Russia, and including the Ottoman Empire, Portugal, Naples and various German monarchies. Prussia did not join the coalition, while Spain supported France.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q26749, imported by tools/import/wikidata.mjs. The item's own description reads \"1798–1802 set of battles between the French Republic and the neighbouring monarchies\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1798,
+    "end": 1802,
+    "date": "1798-06-28",
+    "endDate": "1802-03-25"
+  },
+  "place": "italian-peninsula-q145694",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

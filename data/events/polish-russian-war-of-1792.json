@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "polish-russian-war-of-1792",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1352215",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Polish–Russian War of 1792",
+    "pt": "Guerra Polaco-Russa de 1792"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1352215"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Polish–Russian War of 1792\", revision 1371450866"
+    }
+  ],
+  "title": "Polish–Russian War of 1792",
+  "summary": "The English Wikipedia article \"Polish–Russian War of 1792\", at revision 1371450866, opens: \"The Polish–Russian War of 1792 was fought between the Polish–Lithuanian Commonwealth on one side, and the Targowica Confederation and the Russian Empire under Catherine the Great on the other.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1352215, imported by tools/import/wikidata.mjs. The item's own description reads \"war between the Commonwealth of Poland and the Russian Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1792,
+    "end": 1792,
+    "date": "1792-05-18",
+    "endDate": "1792-07-27"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
