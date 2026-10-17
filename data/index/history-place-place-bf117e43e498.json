@@ -179,6 +179,15 @@
         }
       ]
     },
+    "ain-dara-lebanon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "ajdabiya": {
       "from": "git",
       "versions": [
@@ -738,6 +747,15 @@
         }
       ]
     },
+    "bago-myanmar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "bahrain-q398": {
       "from": "git",
       "versions": [
@@ -762,6 +780,15 @@
         }
       ]
     },
+    "bajio": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "bali-strait": {
       "from": "git",
       "versions": [
@@ -783,6 +810,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "banda-islands": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -4346,6 +4382,15 @@
         }
       ]
     },
+    "gold-coast-region": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "gonaives": {
       "from": "git",
       "versions": [
@@ -5331,6 +5376,15 @@
         }
       ]
     },
+    "island-of-puerto-rico": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "ismailia": {
       "from": "git",
       "versions": [
@@ -5545,6 +5599,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "jerusalem": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -11137,6 +11200,15 @@
         }
       ]
     },
+    "siberia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "sicily-q1460": {
       "from": "git",
       "versions": [
@@ -12562,6 +12634,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "trinidad-q128323": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },

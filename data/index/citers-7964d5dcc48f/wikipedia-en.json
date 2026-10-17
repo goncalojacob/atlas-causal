@@ -10184,6 +10184,12 @@
     },
     {
       "dissent": false,
+      "id": "1711-karamanli-coup",
+      "kind": "event",
+      "locator": "\"1711 Karamanli coup\", revision 1366223253"
+    },
+    {
+      "dissent": false,
       "id": "1755-lisbon-earthquake",
       "kind": "event",
       "locator": "\"1755 Lisbon earthquake\", revision 1378145316"
@@ -11342,6 +11348,12 @@
     },
     {
       "dissent": false,
+      "id": "arena-massacre",
+      "kind": "event",
+      "locator": "\"Arena Massacre\", revision 1375038494"
+    },
+    {
+      "dissent": false,
       "id": "argentine-surrender-in-the-falklands-war",
       "kind": "event",
       "locator": "\"Argentine surrender in the Falklands War\", revision 1290880119"
@@ -11657,6 +11669,12 @@
       "id": "battle-of-agra",
       "kind": "event",
       "locator": "\"Battle of Agra\", revision 1370431091"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ain-dara",
+      "kind": "event",
+      "locator": "\"Battle of Ain Dara\", revision 1370431170"
     },
     {
       "dissent": false,
@@ -15614,6 +15632,12 @@
     },
     {
       "dissent": false,
+      "id": "chichimeca-war",
+      "kind": "event",
+      "locator": "\"Chichimeca War\", revision 1375081183"
+    },
+    {
+      "dissent": false,
       "id": "chickasaw-wars",
       "kind": "event",
       "locator": "\"Chickasaw Wars\", revision 1370611063"
@@ -15821,6 +15845,12 @@
       "id": "conquest-of-the-desert",
       "kind": "event",
       "locator": "\"Conquest of the Desert\", revision 1377078179"
+    },
+    {
+      "dissent": false,
+      "id": "conquest-of-the-khanate-of-sibir",
+      "kind": "event",
+      "locator": "\"Conquest of the Khanate of Sibir\", revision 1370612812"
     },
     {
       "dissent": false,
@@ -16076,6 +16106,12 @@
     },
     {
       "dissent": false,
+      "id": "dano-dutch-colonial-conflict-on-the-gold-coast",
+      "kind": "event",
+      "locator": "\"Dano-Dutch colonial conflict on the Gold Coast\", revision 1370614751"
+    },
+    {
+      "dissent": false,
       "id": "darfur-genocide",
       "kind": "event",
       "locator": "\"Darfur genocide (2003–2005)\", revision 1373825853"
@@ -16190,6 +16226,12 @@
     },
     {
       "dissent": false,
+      "id": "druze-power-struggle-1658-1667",
+      "kind": "event",
+      "locator": "\"Druze power struggle (1658–1667)\", revision 1370615878"
+    },
+    {
+      "dissent": false,
       "id": "dummer-s-war",
       "kind": "event",
       "locator": "\"Dummer's War\", revision 1375086224"
@@ -16220,6 +16262,12 @@
     },
     {
       "dissent": false,
+      "id": "dutch-conquest-of-the-banda-islands",
+      "kind": "event",
+      "locator": "\"Dutch conquest of the Banda Islands\", revision 1380039759"
+    },
+    {
+      "dissent": false,
       "id": "dutch-golden-age",
       "kind": "event",
       "locator": "\"Dutch Golden Age\", revision 1369700015"
@@ -16241,6 +16289,12 @@
       "id": "dutch-portuguese-war",
       "kind": "event",
       "locator": "\"Dutch–Portuguese War\", revision 1374150566"
+    },
+    {
+      "dissent": false,
+      "id": "dzungar-conquest-of-altishahr",
+      "kind": "event",
+      "locator": "\"Dzungar conquest of Altishahr\", revision 1379513246"
     },
     {
       "dissent": false,
@@ -16739,6 +16793,12 @@
       "id": "first-italo-ethiopian-war",
       "kind": "event",
       "locator": "\"First Italo-Ethiopian War\", revision 1370619360: \"was fought between Italy and Ethiopia from 1895 to 1896\""
+    },
+    {
+      "dissent": false,
+      "id": "first-javanese-war-of-succession",
+      "kind": "event",
+      "locator": "\"First Javanese War of Succession\", revision 1370619368"
     },
     {
       "dissent": false,
@@ -17816,6 +17876,12 @@
     },
     {
       "dissent": false,
+      "id": "jiajing-wokou-raids",
+      "kind": "event",
+      "locator": "\"Jiajing wokou raids\", revision 1376463549"
+    },
+    {
+      "dissent": false,
       "id": "jicarilla-war",
       "kind": "event",
       "locator": "\"Jicarilla War\", revision 1379351424"
@@ -18488,6 +18554,12 @@
     },
     {
       "dissent": false,
+      "id": "naqib-al-ashraf-revolt",
+      "kind": "event",
+      "locator": "\"Naqib al-Ashraf revolt\", revision 1370629248"
+    },
+    {
+      "dissent": false,
       "id": "navajo-wars",
       "kind": "event",
       "locator": "\"Navajo Wars\", revision 1370629330"
@@ -18899,6 +18971,12 @@
       "id": "ottoman-habsburg-wars",
       "kind": "event",
       "locator": "\"Ottoman–Habsburg wars\", revision 1377471430"
+    },
+    {
+      "dissent": false,
+      "id": "ottoman-invasion-of-western-georgia-1703",
+      "kind": "event",
+      "locator": "\"Ottoman invasion of western Georgia (1703)\", revision 1373216541"
     },
     {
       "dissent": false,
@@ -20090,6 +20168,12 @@
     },
     {
       "dissent": false,
+      "id": "shakushain-s-revolt",
+      "kind": "event",
+      "locator": "\"Shakushain's revolt\", revision 1370738033"
+    },
+    {
+      "dissent": false,
       "id": "shangani-patrol",
       "kind": "event",
       "locator": "\"Shangani Patrol\", revision 1370738060"
@@ -20099,6 +20183,12 @@
       "id": "shimabara-rebellion",
       "kind": "event",
       "locator": "\"Shimabara Rebellion\", revision 1373667124"
+    },
+    {
+      "dissent": false,
+      "id": "siamese-cambodian-war-1591-1594",
+      "kind": "event",
+      "locator": "\"Siamese–Cambodian War (1591–1594)\", revision 1380348787"
     },
     {
       "dissent": false,
@@ -21356,6 +21446,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-taino-war-of-san-juan-boriken",
+      "kind": "event",
+      "locator": "\"Spanish–Taíno War of San Juan–Borikén\", revision 1372603929"
+    },
+    {
+      "dissent": false,
       "id": "srebrenica-massacre",
       "kind": "event",
       "locator": "\"Srebrenica massacre\", revision 1374222609"
@@ -21497,6 +21593,12 @@
       "id": "tennis-court-oath",
       "kind": "event",
       "locator": "\"Tennis Court Oath\", revision 1373042533"
+    },
+    {
+      "dissent": false,
+      "id": "tepehuan-revolt",
+      "kind": "event",
+      "locator": "\"Tepehuán Revolt\", revision 1374475753"
     },
     {
       "dissent": false,
@@ -21854,9 +21956,27 @@
     },
     {
       "dissent": false,
+      "id": "toungoo-hanthawaddy-war",
+      "kind": "event",
+      "locator": "\"Toungoo–Hanthawaddy War\", revision 1373273877"
+    },
+    {
+      "dissent": false,
+      "id": "toungoo-mrauk-u-war",
+      "kind": "event",
+      "locator": "\"Toungoo–Mrauk-U War\", revision 1378489793"
+    },
+    {
+      "dissent": false,
       "id": "toyotomi-hideyoshi-s-1st-korean-campaign",
       "kind": "event",
       "locator": "\"Imjin War\", revision 1377975613"
+    },
+    {
+      "dissent": false,
+      "id": "tran-cao-rebellion",
+      "kind": "event",
+      "locator": "\"Trần Cao rebellion\", revision 1370751485"
     },
     {
       "dissent": false,
@@ -22403,6 +22523,12 @@
       "id": "war-of-the-castilian-succession",
       "kind": "event",
       "locator": "\"War of the Castilian Succession\", revision 1374319371"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-emboabas",
+      "kind": "event",
+      "locator": "\"War of the Emboabas\", revision 1370750001"
     },
     {
       "dissent": false,
