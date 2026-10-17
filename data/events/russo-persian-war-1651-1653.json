@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "russo-persian-war-1651-1653",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q16693088",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Russo-Persian War (1651–1653)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16693088"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Persian War (1651–1653)\", revision 1378917262"
+    }
+  ],
+  "title": "Russo-Persian War (1651–1653)",
+  "summary": "The English Wikipedia article \"Russo-Persian War (1651–1653)\", at revision 1378917262, opens: \"The Russo-Persian War of 1651–1653 was an armed conflict in the North Caucasus fought between the Safavid Empire and the Tsardom of Russia, associated with the Safavid plans to strengthen its position in the region and to exclude Russia. The main issue involved the expansion of a Russian garrison on the Koy Su River, as well as the construction of several new fortresses, in particular the one built on the Iranian side of the Terek River. The Safavid government then sent troops, and destroyed the fortress while expelling its Russian garrison. In 1653 Alexis of Russia and the Russian government, which thought about sending the Russian Zaporozhian Army, but did not want to disperse its forces, sent an embassy to Persia for a peaceful settlement of the conflict. Shah Abbas II agreed, stating that the conflict was initiated without his consent.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16693088, imported by tools/import/wikidata.mjs. The item's own description reads \"first conflict of the Russo-Persian Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1651,
+    "end": 1653
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

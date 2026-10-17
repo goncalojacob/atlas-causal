@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "stono-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1536983",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Stono Rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1536983"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Stono Rebellion\", revision 1373301992"
+    }
+  ],
+  "title": "Stono Rebellion",
+  "summary": "The English Wikipedia article \"Stono Rebellion\", at revision 1373301992, opens: \"The Stono Rebellion was a slave revolt that began on 9 September 1739, in the colony of South Carolina. It was the largest slave rebellion in the Southern Colonial era, with 25 colonists and 35 to 50 African slaves killed. The uprising's leaders were likely from the Central African Kingdom of Kongo, as they were Catholic and some spoke Portuguese.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1536983, imported by tools/import/wikidata.mjs. The item's own description reads \"slave rebellion in colony of South Carolina, 1739\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1739,
+    "end": 1739,
+    "date": "1739-09-09"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

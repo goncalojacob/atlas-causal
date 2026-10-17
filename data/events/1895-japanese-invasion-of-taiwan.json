@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "1895-japanese-invasion-of-taiwan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q717373",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "1895 Japanese invasion of Taiwan",
+    "pt": "Invasão japonesa de Taiwan (1895)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q717373"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1895 Japanese invasion of Taiwan\", revision 1377981680"
+    }
+  ],
+  "title": "1895 Japanese invasion of Taiwan",
+  "summary": "The English Wikipedia article \"1895 Japanese invasion of Taiwan\", at revision 1377981680, opens: \"The Japanese invasion of Taiwan, also known as Yiwei War in Chinese, was a conflict between the Empire of Japan and the armed forces of the short-lived Republic of Formosa following the Qing dynasty's cession of Taiwan to Japan in April 1895 at the end of the First Sino-Japanese War. The Japanese sought to take control of their new possession, while the Republican forces fought to resist Japanese occupation. The Japanese landed near Keelung on the northern coast of Taiwan on 29 May 1895, and in a five-month campaign swept southwards to Tainan. Although their advance was slowed by guerrilla activity, the Japanese defeated the Formosan forces whenever they attempted to make a stand. The Japanese victory at Baguashan on 27 August, the largest battle ever fought on Taiwanese soil, doomed the Formosan resistance to an early defeat. The fall of Tainan on 21 October ended organised resistance to Japanese occupation, and inaugurated five decades of Japanese rule in Taiwan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q717373, imported by tools/import/wikidata.mjs. The item's own description reads \"1895 invasion of Taiwan by Imperial Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1895,
+    "end": 1895,
+    "date": "1895-05-29",
+    "endDate": "1895-11-18"
+  },
+  "place": "taiwan-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

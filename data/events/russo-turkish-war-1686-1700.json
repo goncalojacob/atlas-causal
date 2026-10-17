@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "russo-turkish-war-1686-1700",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q829104",
+  "wikipedia": {
+    "en": "Russo-Turkish War (1686–1700)",
+    "pt": "Guerra Russo-Turca (1686–1700)"
+  },
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-10-17"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q829104"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Turkish War (1686–1700)\", revision 1380238405"
+    }
+  ],
+  "title": "Russo-Turkish War (1686–1700)",
+  "summary": "The English Wikipedia article \"Russo-Turkish War (1686–1700)\", at revision 1380238405, opens: \"The Russo-Turkish War of 1686–1700 was part of the joint European effort to confront the Ottoman Empire. The larger European conflict was known as the Great Turkish War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q829104, imported by tools/import/wikidata.mjs. The item's own description reads \"1686-1700 war between the European Powers and the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1686,
+    "end": 1700
+  },
+  "place": "crimea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

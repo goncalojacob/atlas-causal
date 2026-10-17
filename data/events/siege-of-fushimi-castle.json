@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-fushimi-castle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3275284",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Fushimi Castle",
+    "pt": "Cerco de Fushimi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3275284"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fushimi Castle\", revision 1370741341"
+    }
+  ],
+  "title": "Siege of Fushimi Castle",
+  "summary": "The English Wikipedia article \"Siege of Fushimi Castle\", at revision 1370741341, opens: \"The siege of Fushimi was a crucial battle in the series leading up to the decisive Battle of Sekigahara which ended Japan's Sengoku period. Fushimi Castle was defended by a force loyal to Tokugawa Ieyasu's Eastern army, led by Torii Mototada. Knowing of his inevitable defeat, Torii's sacrifice diverted Ishida Mitsunari's attention, and part of his Western army, away from his Nakasendō fortresses, which were attacked by Tokugawa during the siege of Fushimi. Ultimately, the castle fell, but served a crucial role in allowing for greater strategic victories by Tokugawa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3275284, imported by tools/import/wikidata.mjs. The item's own description reads \"1600 A crucial battle in the series leading up to the decisive battle of Sekigahara which ended Japan's Sengoku period\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1600,
+    "end": 1600,
+    "date": "1600-08-27",
+    "endDate": "1600-09-08"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

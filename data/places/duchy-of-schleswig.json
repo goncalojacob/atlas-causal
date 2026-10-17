@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "duchy-of-schleswig",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q26167",
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Duchy of Schleswig",
+    "pt": "Ducado de Eslésvico"
+  },
+  "sources": [],
+  "names": [
+    "Duchy of Schleswig",
+    "Ducado de Schleswig",
+    "Ducado de Eslésvico"
+  ],
+  "where": {
+    "lon": 9.25,
+    "lat": 55.166666666667,
+    "precision": "region",
+    "label": "Duchy of Schleswig"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

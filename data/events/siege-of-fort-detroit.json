@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-fort-detroit",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3485885",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Fort Detroit"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485885"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fort Detroit\", revision 1380028647"
+    }
+  ],
+  "title": "Siege of Fort Detroit",
+  "summary": "The English Wikipedia article \"Siege of Fort Detroit\", at revision 1380028647, opens: \"The siege of Fort Detroit was an ultimately unsuccessful attempt by North American Natives to capture Fort Detroit during Pontiac's War. The siege was led primarily by Pontiac, an Ottawa chief and military leader. This rebellion would be one of the catalysts that hastened the declaration of the Proclamation of 1763 which would eventually precipitate the events leading to the American Revolution.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485885, imported by tools/import/wikidata.mjs. The item's own description reads \"1763 siege during Pontiac's Rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1763,
+    "end": 1763,
+    "date": "1763-05-06",
+    "endDate": "1763-10-31"
+  },
+  "place": "fort-pontchartrain-du-detroit",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

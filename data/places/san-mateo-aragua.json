@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "san-mateo-aragua",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3471566",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "San Mateo, Aragua"
+  },
+  "sources": [],
+  "names": [
+    "San Mateo",
+    "San Mateo, Aragua"
+  ],
+  "where": {
+    "lon": -67.4225,
+    "lat": 10.213333333333,
+    "precision": "city",
+    "label": "San Mateo, Aragua"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

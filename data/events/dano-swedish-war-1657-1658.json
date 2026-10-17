@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "dano-swedish-war-1657-1658",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q632313",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Dano-Swedish War (1657–1658)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q632313"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dano-Swedish War (1657–1658)\", revision 1375927812"
+    }
+  ],
+  "title": "Dano-Swedish War (1657–1658)",
+  "summary": "The English Wikipedia article \"Dano-Swedish War (1657–1658)\", at revision 1375927812, opens: \"The Dano-Swedish War of 1657–1658, known in Denmark as the First Charles Gustav War in Norway as Krabbes Feud and in Sweden as Charles Gustav's First Danish War, was a conflict between Sweden and Denmark–Norway during the Northern War of 1655–1660. In 1657, Charles X Gustav of Sweden and his Swedish army were Fighting in the Poland. Frederick III of Denmark-Norway saw an opportunity to recover the territories it lost in 1645 and attacked Sweden. The outbreak of war with Denmark provided Charles Gustav with an excuse to withdraw from the Polish campaign and move against Denmark.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q632313, imported by tools/import/wikidata.mjs. The item's own description reads \"1657-8 part of the Second Northern War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1657,
+    "end": 1658
+  },
+  "place": "denmark-q35",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

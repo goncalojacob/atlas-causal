@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "wyatt-s-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1465514",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Wyatt's rebellion",
+    "pt": "Rebelião de Wyatt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1465514"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Wyatt's rebellion\", revision 1376306946"
+    }
+  ],
+  "title": "Wyatt's rebellion",
+  "summary": "The English Wikipedia article \"Wyatt's rebellion\", at revision 1376306946, opens: \"Wyatt's Rebellion was a limited and unsuccessful uprising in England in early 1554 led by four men, one of whom was Thomas Wyatt the Younger. It was given its name by the lawyer at Wyatt's arraignment, who stated for the record that \"this shall be ever called Wyatt's Rebellion\". The rebellion arose out of concern over Queen Mary I's determination to marry a foreigner, Philip II of Spain, and to return England to the Catholic Church and papal authority. The uprising failed, with consequences for the rebels that ranged from death to forgiveness.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1465514, imported by tools/import/wikidata.mjs. The item's own description reads \"popular uprising in England in 1554\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1554,
+    "end": 1554
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

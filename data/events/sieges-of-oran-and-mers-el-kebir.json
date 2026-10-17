@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sieges-of-oran-and-mers-el-kebir",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7510593",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Sieges of Oran and Mers El Kébir"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510593"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sieges of Oran and Mers El Kébir\", revision 1370746826"
+    }
+  ],
+  "title": "Sieges of Oran and Mers El Kébir",
+  "summary": "The English Wikipedia article \"Sieges of Oran and Mers El Kébir\", at revision 1370746826, opens: \"The sieges of Oran and Mers El Kébir of 1563 is a major attempt by the regency of Algiers to retake the cities of Mers el-Kébir and Oran from the Spanish.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510593, imported by tools/import/wikidata.mjs. The item's own description reads \"1563 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1563,
+    "end": 1563,
+    "date": "1563-04-03",
+    "endDate": "1563-06-06"
+  },
+  "place": "oran",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

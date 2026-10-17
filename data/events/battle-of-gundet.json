@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-gundet",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q26197053",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Gundet"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q26197053"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gundet\", revision 1370442317"
+    }
+  ],
+  "title": "Battle of Gundet",
+  "summary": "The English Wikipedia article \"Battle of Gundet\", at revision 1370442317, opens: \"The Battle of Gundet or Guda Gudi was fought from 14-16 November 1875 between the Ethiopian Empire and the Khedivate of Egypt in what is now Eritrea. It was the first major battle of the Ethiopian–Egyptian War and ended in the near annihilation of the Egyptian army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q26197053, imported by tools/import/wikidata.mjs. The item's own description reads \"1875 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1875,
+    "end": 1875,
+    "date": "1875-11-14",
+    "endDate": "1875-11-16"
+  },
+  "place": "ethiopian-empire",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

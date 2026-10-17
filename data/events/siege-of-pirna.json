@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-pirna",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q539707",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Pirna"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q539707"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Pirna\", revision 1370744464"
+    }
+  ],
+  "title": "Siege of Pirna",
+  "summary": "The English Wikipedia article \"Siege of Pirna\", at revision 1370744464, opens: \"The Siege of Pirna, sometimes referred to as the Investment of Pirna, took place from 10 September to 14 October 1756 as part of the Prussian invasion of Saxony during the Third Silesian War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q539707, imported by tools/import/wikidata.mjs. The item's own description reads \"1756 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1756,
+    "end": 1756,
+    "date": "1756-09-11",
+    "endDate": "1756-10-14"
+  },
+  "place": "pirna",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

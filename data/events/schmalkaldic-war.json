@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "schmalkaldic-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q168556",
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Schmalkaldic War",
+    "pt": "Guerra de Esmalcalda"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q168556"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Schmalkaldic War\", revision 1374728834"
+    }
+  ],
+  "title": "Schmalkaldic War",
+  "summary": "The English Wikipedia article \"Schmalkaldic War\", at revision 1374728834, opens: \"The Schmalkaldic War was fought within the territories of the Holy Roman Empire between the allied forces of Charles V, Holy Roman Emperor and Maurice, Duke of Saxony against the Lutheran Schmalkaldic League, with the forces directly loyal to Charles fighting under the command of Fernando Álvarez de Toledo, 3rd Duke of Alba.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q168556, imported by tools/import/wikidata.mjs. The item's own description reads \"16th-century conflict of the Protestant Reformation in the Holy Roman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1546,
+    "end": 1547,
+    "date": "1546-07-10",
+    "endDate": "1547-05-23"
+  },
+  "place": "holy-roman-empire-q12548",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

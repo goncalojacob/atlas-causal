@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-utsunomiya-castle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q715579",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Utsunomiya Castle",
+    "pt": "Batalha do Castelo de Utsunomiya"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q715579"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Utsunomiya Castle\", revision 1370592058"
+    }
+  ],
+  "title": "Battle of Utsunomiya Castle",
+  "summary": "The English Wikipedia article \"Battle of Utsunomiya Castle\", at revision 1370592058, opens: \"The Battle of Utsunomiya Castle  took place between pro-imperial and Tokugawa shogunate forces during the Boshin War in Japan in May 1868 at Utsunomiya Castle. It occurred as the troops of the Tokugawa shogunate were retreating north towards Nikkō and Aizu.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q715579, imported by tools/import/wikidata.mjs. The item's own description reads \"1868 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1868,
+    "date": "1868-05-10",
+    "endDate": "1868-05-14"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "boshin-war"
+}

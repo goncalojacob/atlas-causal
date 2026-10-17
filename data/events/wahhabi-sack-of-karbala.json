@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "wahhabi-sack-of-karbala",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7959771",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Wahhabi sack of Karbala"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7959771"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Wahhabi sack of Karbala\", revision 1377485086"
+    }
+  ],
+  "title": "Wahhabi sack of Karbala",
+  "summary": "The English Wikipedia article \"Wahhabi sack of Karbala\", at revision 1377485086, opens: \"The Wahhabi sack of Karbala occurred on 21 April 1802, under the rule of Abdulaziz bin Muhammad Al Saud, the second ruler of the Emirate of Diriyah, where approximately 12,000 Wahhabis from Najd attacked the Shia city of Karbala in Ottoman Iraq. The raid was conducted in retaliation against attacks on Hajj caravans by Iraqi tribes and coincided with the anniversary of Ghadir Khumm.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7959771, imported by tools/import/wikidata.mjs. The item's own description reads \"1802 sack of a city\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1802,
+    "end": 1802,
+    "date": "1802-04-21"
+  },
+  "place": "karbala",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

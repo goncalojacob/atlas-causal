@@ -24076,9 +24076,11 @@ where the previous stand carried it as standing.
 Writer B started 2026-10-15T23:42:00Z by scheduled
 Writer B started 2026-10-16T06:42:30Z by scheduled
 Writer B started 2026-10-16T18:42:44Z by scheduled
+Writer B started 2026-10-17T04:42:11Z by scheduled
 
 Writer B 2026-10-15T23:42:00Z: 0 written, 0 partial, 3 refused, 7 skipped
 Writer B 2026-10-16T18:51:39Z: 39 written, 0 partial, 1 refused, 0 skipped
+Writer B 2026-10-17T04:48:57Z: 23 written, 0 partial, 17 refused, 0 skipped
 
 Writer A started 2026-10-16T19:22:01Z by scheduled
 Writer A 2026-10-16T19:25:59Z: 15 written, 0 partial, 1 refused, 0 skipped
@@ -24088,6 +24090,8 @@ Writer A 2026-10-16T20:25:21Z: 0 written, 0 partial, 1 refused, 15 skipped
 
 Writer A started 2026-10-16T21:22:14Z by scheduled
 Writer A 2026-10-16T21:36:37Z: 37 written, 0 partial, 3 refused, 0 skipped
+
+Writer A started 2026-10-17T05:22:39Z by scheduled
 
 Writer B started 2026-10-13T23:41:58Z by scheduled
 Writer B started 2026-10-16T06:42:30Z by scheduled
@@ -26013,6 +26017,8 @@ Writer B started 2026-10-16T21:42:36Z by scheduled
 Writer B 2026-10-16T21:47:17Z: 14 written, 0 partial, 5 refused, 0 skipped
 Writer A started 2026-10-16T22:22:43Z by scheduled
 Writer A 2026-10-16T22:24:41Z: 0 written, 0 partial, 3 refused, 37 skipped
+Writer B started 2026-10-16T23:41:59Z by scheduled
+Writer B 2026-10-17T01:18:00Z: 0 written, 0 partial, 0 refused, 0 skipped. The assistant closes the 23:41Z claim, whose run ended without a push.
 
 Writer A started 2026-10-16T23:22:07Z by scheduled
 Writer A 2026-10-16T23:29:30Z: 33 written, 0 partial, 5 refused, 2 skipped
@@ -26020,6 +26026,25 @@ Writer A 2026-10-16T23:29:30Z: 33 written, 0 partial, 5 refused, 2 skipped
 Writer A started 2026-10-17T00:22:21Z by scheduled
 Writer A 2026-10-17T00:27:49Z: 23 written, 0 partial, 5 refused, 2 skipped
 
+Writer B started 2026-10-17T01:19:50Z by scheduled
+Writer B 2026-10-17T02:31:23Z: 0 written, 0 partial, 0 refused, 0 skipped. The assistant closes the 01:19Z claim: its run stopped on the Satsuma Rebellion's dates.
+
 Writer A started 2026-10-17T01:22:25Z by scheduled
 
 Writer A 2026-10-17T01:29:08Z: 34 written, 0 partial, 6 refused, 0 skipped
+
+Writer B started 2026-10-17T02:33:18Z by scheduled
+
+Writer B 2026-10-17T02:33:18Z: 37 written, 0 partial, 3 refused, 0 skipped
+Writer A started 2026-10-17T02:21:56Z by scheduled
+Writer A 2026-10-17T02:27:09Z: 35 written, 0 partial, 3 refused, 2 skipped
+Writer B started 2026-10-17T02:41:51Z by scheduled
+Writer B 2026-10-17T02:41:51Z: 33 written, 0 partial, 4 refused, 3 skipped
+Writer A started 2026-10-17T03:21:59Z by scheduled
+Writer A 2026-10-17T03:27:26Z: 25 written, 0 partial, 2 refused, 5 skipped
+Writer B started 2026-10-17T03:42:32Z by scheduled
+Writer B 2026-10-17T03:45:00Z: 5 written, 0 partial, 1 refused, 4 skipped
+
+Writer A started 2026-10-17T04:24:08Z by scheduled
+
+Writer A 2026-10-17T04:24:08Z: 26 written, 0 partial, 14 refused, 0 skipped

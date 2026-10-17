@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "capture-of-cairo-1517",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5036992",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Capture of Cairo (1517)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5036992"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Cairo (1517)\", revision 1380383336"
+    }
+  ],
+  "title": "Capture of Cairo (1517)",
+  "summary": "The English Wikipedia article \"Capture of Cairo (1517)\", at revision 1380383336, opens: \"The capture of Cairo was the final major engagement of the Ottoman Mamluk War of 1516-1517. The city of Cairo, the capital of the Mamluk Sultanate, was sacked and fell into the hands of the Ottoman forces led by Sultan Selim I during the 27-30 January 1517. Following Cairo's fall and the subsequent execution of the last Mamluk Sultan and member of the Abbasid dynasty: Tuman Bay II, the Mamluk Sultanate was absorbed into the expanding Ottoman Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5036992, imported by tools/import/wikidata.mjs. The item's own description reads \"1517 capture of the capital of the Mamluk Sultanate\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1517,
+    "end": 1517,
+    "date": "1517-01-27",
+    "endDate": "1517-01-30"
+  },
+  "place": "cairo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

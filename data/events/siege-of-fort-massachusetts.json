@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-fort-massachusetts",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3485886",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Fort Massachusetts"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485886"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fort Massachusetts\", revision 1374812152"
+    }
+  ],
+  "title": "Siege of Fort Massachusetts",
+  "summary": "The English Wikipedia article \"Siege of Fort Massachusetts\", at revision 1374812152, opens: \"The siege of Fort Massachusetts was a successful siege of Fort Massachusetts by a mixed force of more than 1,000 French and Native Americans from New France. The fort, garrisoned by a disease-weakened militia force from the Province of Massachusetts Bay, surrendered after its supplies of ammunition and gunpowder were depleted. Thirty prisoners were taken and transported back to Quebec, where about half of them died in captivity.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485886, imported by tools/import/wikidata.mjs. The item's own description reads \"1746 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1746,
+    "end": 1746,
+    "date": "1746-08-19",
+    "endDate": "1746-08-20"
+  },
+  "place": "north-adams-massachusetts",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "king-george-s-war"
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "acaxee-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q16960172",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Acaxee Rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16960172"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Acaxee Rebellion\", revision 1370425671"
+    }
+  ],
+  "title": "Acaxee Rebellion",
+  "summary": "The English Wikipedia article \"Acaxee Rebellion\", at revision 1370425671, opens: \"The Acaxee Rebellion was an insurrection against Spanish rule in Mexico by Acaxee Indians, in 1601. The Acaxee attempted to expel the Spanish from their lands, regain their independence, and retain their traditional culture which was threatened by forced labor and Jesuit missionaries imposed upon them by the Spanish. They killed about 50 Spaniards and shut down silver mining operations in their territory for two years. In 1603, a Spanish army with Indian allies defeated the Acaxee and captured and executed most of their leaders. Subsequent smallpox epidemics killed most of the surviving Acaxee.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16960172, imported by tools/import/wikidata.mjs. The item's own description reads \"military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1601,
+    "end": 1607
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

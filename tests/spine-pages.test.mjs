@@ -307,7 +307,7 @@ test('the atlas draws its three views out of the core', { skip }, async () => {
     // The graph is the third, out of the same atlas again, and it is the view
     // that would notice a missing edge first.
     await page.eval('return document.querySelector(\'[data-view="graph"]\').click();');
-    await waitFor(page, 'return document.querySelectorAll(".graph .node").length > 0;', 'nodes in the graph');
+    await waitFor(page, 'return document.querySelectorAll(".graph .node").length > 10;', 'more than ten nodes in the graph', { tries: 600 });
     const nodes = await page.eval('return document.querySelectorAll(".graph .node").length;');
     assert.ok(nodes > 10, `${nodes} nodes`);
   });

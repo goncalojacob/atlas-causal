@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-yandabo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2639320",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Treaty of Yandabo",
+    "pt": "Tratado de Yandabo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2639320"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Yandabo\", revision 1349025534"
+    }
+  ],
+  "title": "Treaty of Yandabo",
+  "summary": "The English Wikipedia article \"Treaty of Yandabo\", at revision 1349025534, opens: \"The Treaty of Yandabo was the peace treaty that ended the First Anglo-Burmese War. The treaty was signed on 24 February 1826, nearly two years after the war formally broke out on 5 March 1824, by General Sir Archibald Campbell on the British side, and the Governor of Legaing Maha Min Hla Kyaw Htin from the Burmese side, without any due permission and consent of the Ahom kingdom, Kachari kingdom or the other territories covered in the treaty. With the British army at Yandabo village, only 80 km (50 mi) from the capital Ava, the Burmese were forced to accept the British terms without discussion.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2639320, imported by tools/import/wikidata.mjs. The item's own description reads \"Treaty of Peace between the East India Company and His Majesty the King of Ava\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1826,
+    "end": 1826,
+    "date": "1826-02-24"
+  },
+  "place": "yandabo",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "north-adams-massachusetts",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q49185",
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "North Adams, Massachusetts",
+    "pt": "North Adams (Massachusetts)"
+  },
+  "sources": [],
+  "names": [
+    "North Adams",
+    "North Adams, Massachusetts",
+    "North Adams (Massachusetts)"
+  ],
+  "where": {
+    "lon": -73.109166666667,
+    "lat": 42.700833333333,
+    "precision": "city",
+    "label": "North Adams, Massachusetts"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "spanish-conquest-of-tripoli",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q16543736",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Spanish conquest of Tripoli"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16543736"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish conquest of Tripoli\", revision 1370748348"
+    }
+  ],
+  "title": "Spanish conquest of Tripoli",
+  "summary": "The English Wikipedia article \"Spanish conquest of Tripoli\", at revision 1370748348, opens: \"The Conquest of Tripoli was a maritime campaign led by Pedro Navarro which captured the city of Tripoli in North Africa in the name of the Crown of Aragon in 1510.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16543736, imported by tools/import/wikidata.mjs. The item's own description reads \"1510 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1510,
+    "end": 1510,
+    "date": "1510-07-22",
+    "endDate": "1510-07-25"
+  },
+  "place": "tripoli",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

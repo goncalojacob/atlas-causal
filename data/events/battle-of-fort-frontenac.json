@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-fort-frontenac",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888548",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Fort Frontenac"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888548"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Frontenac\", revision 1370440909"
+    }
+  ],
+  "title": "Battle of Fort Frontenac",
+  "summary": "The English Wikipedia article \"Battle of Fort Frontenac\", at revision 1370440909, opens: \"The Battle of Fort Frontenac took place on August 26–28, 1758 during the Seven Years' War between France and Great Britain. The location of the battle was Fort Frontenac, a French fort and trading post which is located at the site of present-day Kingston, Ontario, at the eastern end of Lake Ontario where it drains into the St. Lawrence River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888548, imported by tools/import/wikidata.mjs. The item's own description reads \"1758 battle of the French and Indian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1758,
+    "end": 1758,
+    "date": "1758-08-26",
+    "endDate": "1758-08-28"
+  },
+  "place": "kingston-ontario",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

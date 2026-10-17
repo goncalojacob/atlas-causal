@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "basuto-gun-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1348785",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Basuto Gun War",
+    "pt": "Guerra das Armas de Basuto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1348785"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Basuto Gun War\", revision 1370430485"
+    }
+  ],
+  "title": "Basuto Gun War",
+  "summary": "The English Wikipedia article \"Basuto Gun War\", at revision 1370430485, opens: \"The Basuto Gun War, also known as the Basutoland Rebellion, was a conflict between the Basuto and the British Cape Colony. It lasted from 13 September 1880 to 29 April 1881 and ended in a Basuto victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1348785, imported by tools/import/wikidata.mjs. The item's own description reads \"1880-1881 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1880,
+    "end": 1881
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

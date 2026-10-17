@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-annapolis-royal-1745",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q11284205",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Annapolis Royal (1745)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11284205"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Annapolis Royal (1745)\", revision 1375096718"
+    }
+  ],
+  "title": "Siege of Annapolis Royal (1745)",
+  "summary": "The English Wikipedia article \"Siege of Annapolis Royal (1745)\", at revision 1375096718, opens: \"The siege of Annapolis Royal in 1745 involved the third of four attempts by the French, along with their Acadian and native allies, to regain the capital of Nova Scotia/Acadia, Annapolis Royal, during King George's War. During the siege William Pote was taken prisoner and wrote one of the rare captivity narratives that exist from Nova Scotia and Acadia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11284205, imported by tools/import/wikidata.mjs. The item's own description reads \"third of four attempts by the French, along with their Acadian and native allies, to regain Annapolis Royal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1745,
+    "end": 1745,
+    "date": "1745-05-02",
+    "endDate": "1745-05-23"
+  },
+  "place": "annapolis-county",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "king-george-s-war"
+}

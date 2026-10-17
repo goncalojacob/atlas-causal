@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mixton-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q528758",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Mixtón War",
+    "pt": "Guerra do Mixtón"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q528758"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mixtón War\", revision 1380208261"
+    }
+  ],
+  "title": "Mixtón War",
+  "summary": "The English Wikipedia article \"Mixtón War\", at revision 1380208261, opens: \"The Mixtón War (1540–1542) was an uprising by Caxcan people aimed at pushing the Spanish conquistadors out of northwestern Mexico and bringing the area back under indigenous control. The war was named after Mixtón, a hill in Zacatecas which served as an Indigenous stronghold.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q528758, imported by tools/import/wikidata.mjs. The item's own description reads \"1540–1542 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1540,
+    "end": 1542
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

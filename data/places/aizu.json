@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "aizu",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1205071",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Aizu",
+    "pt": "Aizu"
+  },
+  "sources": [],
+  "names": [
+    "Aizu"
+  ],
+  "where": {
+    "lon": 139.93,
+    "lat": 37.4875,
+    "precision": "region",
+    "label": "Aizu"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

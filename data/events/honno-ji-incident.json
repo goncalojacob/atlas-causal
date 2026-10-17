@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "honno-ji-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q169598",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Honnō-ji Incident",
+    "pt": "Incidente de Honnō-ji"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q169598"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Honnō-ji Incident\", revision 1380152021"
+    }
+  ],
+  "title": "Honnō-ji Incident",
+  "summary": "The English Wikipedia article \"Honnō-ji Incident\", at revision 1380152021, opens: \"The Honnō-ji Incident  was the attempted assassination of Japanese daimyo Oda Nobunaga at Honnō-ji in Kyoto in 1582. Nobunaga was on the verge of unifying the country, but died by seppuku in the unexpected rebellion of his vassal Akechi Mitsuhide.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q169598, imported by tools/import/wikidata.mjs. The item's own description reads \"forced suicide of Oda Nobunaga at the hands of traitor Akechi Mitsuhide\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1582,
+    "end": 1582,
+    "date": "1582-06-21"
+  },
+  "place": "kyoto",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

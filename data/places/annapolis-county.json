@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "annapolis-county",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q564523",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Annapolis County",
+    "pt": "Condado de Annapolis"
+  },
+  "sources": [],
+  "names": [
+    "Annapolis County",
+    "Condado de Annapolis"
+  ],
+  "where": {
+    "lon": -65.16551,
+    "lat": 44.58345,
+    "precision": "region",
+    "label": "Annapolis County"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

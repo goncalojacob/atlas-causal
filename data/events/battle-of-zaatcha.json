@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-zaatcha",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2890426",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Zaatcha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890426"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Zaatcha\", revision 1379739782"
+    }
+  ],
+  "title": "Battle of Zaatcha",
+  "summary": "The English Wikipedia article \"Battle of Zaatcha\", at revision 1379739782, opens: \"The Siege of Zaatcha took place from 16 July to 26 November 1849 at Zaatcha, Algeria. It pitted French forces under General Émile Herbillon against Arab and Chaoui fighters led by Sheikh Ahmed Bou Ziane. The event, an important episode of the French conquest of Algeria, ended with the capture of the fortified village of Zaatcha by French forces.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890426, imported by tools/import/wikidata.mjs. The item's own description reads \"1849 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1849,
+    "end": 1849,
+    "date": "1849-07-16",
+    "endDate": "1849-11-26"
+  },
+  "place": "biskra",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
