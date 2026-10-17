@@ -1778,6 +1778,12 @@
     },
     {
       "dissent": false,
+      "id": "1717-omani-invasion-of-bahrain",
+      "kind": "event",
+      "locator": "Q4552486"
+    },
+    {
+      "dissent": false,
       "id": "1755-lisbon-earthquake",
       "kind": "event",
       "locator": "Q191055"
@@ -3206,6 +3212,12 @@
     },
     {
       "dissent": false,
+      "id": "bakhchisarai-war-1525",
+      "kind": "event",
+      "locator": "Q111940658"
+    },
+    {
+      "dissent": false,
       "id": "bala-hissar-uprising",
       "kind": "event",
       "locator": "Q5783195"
@@ -3965,6 +3977,12 @@
       "id": "battle-of-dangpo-1592",
       "kind": "event",
       "locator": "Q626291"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-dartsedo",
+      "kind": "event",
+      "locator": "Q4870848"
     },
     {
       "dissent": false,
@@ -5339,6 +5357,12 @@
       "id": "battle-of-paphos",
       "kind": "event",
       "locator": "Q118946728"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-parkany",
+      "kind": "event",
+      "locator": "Q694911"
     },
     {
       "dissent": false,
@@ -7040,6 +7064,12 @@
     },
     {
       "dissent": false,
+      "id": "cambodian-spanish-war",
+      "kind": "event",
+      "locator": "Q27627985"
+    },
+    {
+      "dissent": false,
       "id": "cambodian-vietnamese-war",
       "kind": "event",
       "locator": "Q635533"
@@ -7610,6 +7640,12 @@
     },
     {
       "dissent": false,
+      "id": "count-s-feud",
+      "kind": "event",
+      "locator": "Q707364"
+    },
+    {
+      "dissent": false,
       "id": "counter-reformation",
       "kind": "event",
       "locator": "Q128168"
@@ -7766,6 +7802,12 @@
     },
     {
       "dissent": false,
+      "id": "cromwellian-conquest-of-ireland",
+      "kind": "event",
+      "locator": "Q1860257"
+    },
+    {
+      "dissent": false,
       "id": "crossing-of-the-andes",
       "kind": "event",
       "locator": "Q968126"
@@ -7808,6 +7850,12 @@
     },
     {
       "dissent": false,
+      "id": "dano-mughal-war",
+      "kind": "event",
+      "locator": "Q124550898"
+    },
+    {
+      "dissent": false,
       "id": "darfur-genocide",
       "kind": "event",
       "locator": "Q42915906"
@@ -7847,6 +7895,12 @@
       "id": "decolonisation-of-asia",
       "kind": "event",
       "locator": "Q5249554"
+    },
+    {
+      "dissent": false,
+      "id": "demerara-rebellion-of-1823",
+      "kind": "event",
+      "locator": "Q5255169"
     },
     {
       "dissent": false,
@@ -9440,6 +9494,12 @@
     },
     {
       "dissent": false,
+      "id": "ishiyama-hongan-ji-war",
+      "kind": "event",
+      "locator": "Q859815"
+    },
+    {
+      "dissent": false,
       "id": "israeli-declaration-of-independence",
       "kind": "event",
       "locator": "Q223732"
@@ -9662,6 +9722,12 @@
     },
     {
       "dissent": false,
+      "id": "karposh-s-rebellion",
+      "kind": "event",
+      "locator": "Q26709211"
+    },
+    {
+      "dissent": false,
       "id": "kashmir-conflict",
       "kind": "event",
       "locator": "Q1413732"
@@ -9677,6 +9743,12 @@
       "id": "katyn-massacre",
       "kind": "event",
       "locator": "Q134301, P31 Q750215"
+    },
+    {
+      "dissent": false,
+      "id": "keian-uprising",
+      "kind": "event",
+      "locator": "Q6383559"
     },
     {
       "dissent": false,
@@ -9863,6 +9935,12 @@
       "id": "las-palmas-massacre",
       "kind": "event",
       "locator": "Q123149461"
+    },
+    {
+      "dissent": false,
+      "id": "later-jin-invasion-of-joseon",
+      "kind": "event",
+      "locator": "Q490348"
     },
     {
       "dissent": false,
@@ -10094,6 +10172,12 @@
     },
     {
       "dissent": false,
+      "id": "mataram-conquest-of-surabaya",
+      "kind": "event",
+      "locator": "Q27958661"
+    },
+    {
+      "dissent": false,
       "id": "mau-mau-rebellion",
       "kind": "event",
       "locator": "Q476855"
@@ -10289,6 +10373,12 @@
       "id": "munich-agreement",
       "kind": "event",
       "locator": "Q154255, P31 Q131569"
+    },
+    {
+      "dissent": false,
+      "id": "munster-rebellion",
+      "kind": "event",
+      "locator": "Q691882"
     },
     {
       "dissent": false,
@@ -10940,6 +11030,12 @@
     },
     {
       "dissent": false,
+      "id": "persian-uzbek-wars",
+      "kind": "event",
+      "locator": "Q7170193"
+    },
+    {
+      "dissent": false,
       "id": "peruvian-war-of-independence",
       "kind": "event",
       "locator": "Q68478"
@@ -10985,6 +11081,12 @@
       "id": "polish-ottoman-war-1633-1634",
       "kind": "event",
       "locator": "Q74302"
+    },
+    {
+      "dissent": false,
+      "id": "polish-ottoman-war-1672-1676",
+      "kind": "event",
+      "locator": "Q74298"
     },
     {
       "dissent": false,
@@ -11096,6 +11198,12 @@
     },
     {
       "dissent": false,
+      "id": "portuguese-conquest-of-the-jaffna-kingdom",
+      "kind": "event",
+      "locator": "Q1754778"
+    },
+    {
+      "dissent": false,
       "id": "portuguese-expedition-to-tripoli",
       "kind": "event",
       "locator": "Q138022960"
@@ -11153,6 +11261,18 @@
       "id": "prelude-to-the-russian-invasion-of-ukraine",
       "kind": "event",
       "locator": "Q110254389"
+    },
+    {
+      "dissent": false,
+      "id": "prince-of-anhua-rebellion",
+      "kind": "event",
+      "locator": "Q15665692"
+    },
+    {
+      "dissent": false,
+      "id": "prince-of-ning-rebellion",
+      "kind": "event",
+      "locator": "Q11457612"
     },
     {
       "dissent": false,
@@ -11522,6 +11642,12 @@
     },
     {
       "dissent": false,
+      "id": "russo-persian-war-1722-1723",
+      "kind": "event",
+      "locator": "Q1418582"
+    },
+    {
+      "dissent": false,
       "id": "russo-swedish-war-1741-1743",
       "kind": "event",
       "locator": "Q682482"
@@ -11864,6 +11990,12 @@
     },
     {
       "dissent": false,
+      "id": "second-javanese-war-of-succession",
+      "kind": "event",
+      "locator": "Q3407896"
+    },
+    {
+      "dissent": false,
       "id": "second-liberian-civil-war",
       "kind": "event",
       "locator": "Q1960733"
@@ -11951,6 +12083,12 @@
       "id": "second-sudanese-civil-war",
       "kind": "event",
       "locator": "Q842380, P31 Q8465"
+    },
+    {
+      "dissent": false,
+      "id": "second-war-of-kappel",
+      "kind": "event",
+      "locator": "Q233594"
     },
     {
       "dissent": false,
@@ -12383,6 +12521,12 @@
       "id": "siege-of-fort-william-henry",
       "kind": "event",
       "locator": "Q2080325"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-fort-zeelandia",
+      "kind": "event",
+      "locator": "Q697621"
     },
     {
       "dissent": false,
@@ -12908,6 +13052,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-toulon-1793",
+      "kind": "event",
+      "locator": "Q815228"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-tourane",
       "kind": "event",
       "locator": "Q5361929"
@@ -12935,6 +13085,12 @@
       "id": "siege-of-ulsan",
       "kind": "event",
       "locator": "Q490935"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-vienna-1529",
+      "kind": "event",
+      "locator": "Q207576"
     },
     {
       "dissent": false,
@@ -13412,6 +13568,12 @@
     },
     {
       "dissent": false,
+      "id": "tensho-iga-war",
+      "kind": "event",
+      "locator": "Q15436846"
+    },
+    {
+      "dissent": false,
       "id": "tepehuan-revolt",
       "kind": "event",
       "locator": "Q7701256"
@@ -13544,6 +13706,12 @@
     },
     {
       "dissent": false,
+      "id": "three-hundred-and-thirty-five-years-war",
+      "kind": "event",
+      "locator": "Q1054482"
+    },
+    {
+      "dissent": false,
       "id": "tianjing-incident",
       "kind": "event",
       "locator": "Q835616"
@@ -13583,6 +13751,12 @@
       "id": "torstenson-war",
       "kind": "event",
       "locator": "Q1419229"
+    },
+    {
+      "dissent": false,
+      "id": "toungoo-ava-war",
+      "kind": "event",
+      "locator": "Q18394797"
     },
     {
       "dissent": false,
@@ -13970,6 +14144,12 @@
     },
     {
       "dissent": false,
+      "id": "trinh-nguyen-war",
+      "kind": "event",
+      "locator": "Q7849268"
+    },
+    {
+      "dissent": false,
       "id": "tripartite-pact",
       "kind": "event",
       "locator": "Q153122"
@@ -13985,6 +14165,12 @@
       "id": "tripolitanian-civil-war",
       "kind": "event",
       "locator": "Q4553413"
+    },
+    {
+      "dissent": false,
+      "id": "trunajaya-rebellion",
+      "kind": "event",
+      "locator": "Q28136838"
     },
     {
       "dissent": false,
@@ -14216,6 +14402,12 @@
     },
     {
       "dissent": false,
+      "id": "war-of-devolution",
+      "kind": "event",
+      "locator": "Q25857"
+    },
+    {
+      "dissent": false,
       "id": "war-of-jenkins-ear",
       "kind": "event",
       "locator": "Q54434"
@@ -14291,6 +14483,12 @@
       "id": "war-of-the-league-of-cognac",
       "kind": "event",
       "locator": "Q1429256"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-league-of-the-indies",
+      "kind": "event",
+      "locator": "Q27958733"
     },
     {
       "dissent": false,
@@ -14471,6 +14669,12 @@
       "id": "yamasee-war",
       "kind": "event",
       "locator": "Q1520241"
+    },
+    {
+      "dissent": false,
+      "id": "yaqui-wars",
+      "kind": "event",
+      "locator": "Q8049168"
     },
     {
       "dissent": false,

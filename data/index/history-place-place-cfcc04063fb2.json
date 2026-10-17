@@ -521,6 +521,15 @@
         }
       ]
     },
+    "arizona": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "arrah": {
       "from": "git",
       "versions": [
@@ -756,6 +765,15 @@
         }
       ]
     },
+    "bahrain-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "bahrain-q398": {
       "from": "git",
       "versions": [
@@ -781,6 +799,15 @@
       ]
     },
     "bajio": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "bakhchysarai": {
       "from": "git",
       "versions": [
         {
@@ -2060,6 +2087,15 @@
         }
       ]
     },
+    "caucasus": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "cavite-city": {
       "from": "git",
       "versions": [
@@ -2881,6 +2917,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "demerara-essequibo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -3958,6 +4003,15 @@
         }
       ]
     },
+    "fort-zeelandia-taiwan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "france-q142": {
       "from": "git",
       "versions": [
@@ -3970,6 +4024,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "franche-comte-q16394": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -4151,6 +4214,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "galicia-eastern-europe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -5385,6 +5457,15 @@
         }
       ]
     },
+    "isles-of-scilly": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "ismailia": {
       "from": "git",
       "versions": [
@@ -5972,6 +6053,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "khorasan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -8138,6 +8228,15 @@
         }
       ]
     },
+    "munster": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "musa-dagh": {
       "from": "git",
       "versions": [
@@ -8228,6 +8327,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "nallur-jaffna": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -11909,6 +12017,15 @@
         }
       ]
     },
+    "strait-of-malacca": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "strait-of-sicily": {
       "from": "git",
       "versions": [
@@ -11931,6 +12048,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "sturovo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -12583,6 +12709,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "toulon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },

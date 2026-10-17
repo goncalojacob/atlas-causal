@@ -2645,6 +2645,15 @@
         }
       ]
     },
+    "demerara-rebellion-of-1823": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "destruction-of-psara": {
       "from": "git",
       "versions": [
