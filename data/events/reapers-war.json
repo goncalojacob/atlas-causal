@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "reapers-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1348955",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Reapers' War",
+    "pt": "Guerra dos Segadores"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1348955"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Reapers' War\", revision 1380300624"
+    }
+  ],
+  "title": "Reapers' War",
+  "summary": "The English Wikipedia article \"Reapers' War\", at revision 1380300624, opens: \"The Reapers' War, also known as the Catalan Revolt or Catalan Revolution, was a conflict that affected the Principality of Catalonia between 1640 and 1659, in the context of the Franco-Spanish War of 1635–1659. Incited by an unrest among the Catalan peasantry and institutions, as well as French diplomatic movements, the war resulted in the establishment of the short-lived Catalan Republic and the subsequent clash of Spanish and French armies on Catalan soil for over a decade.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1348955, imported by tools/import/wikidata.mjs. The item's own description reads \"rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1640,
+    "end": 1659,
+    "date": "1640-06-07",
+    "endDate": "1659-10-13"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "franco-spanish-war-1635-1659"
+}

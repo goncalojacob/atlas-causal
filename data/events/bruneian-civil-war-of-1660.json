@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "bruneian-civil-war-of-1660",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3263276",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Bruneian Civil War of 1660"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3263276"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bruneian Civil War of 1660\", revision 1375506212"
+    }
+  ],
+  "title": "Bruneian Civil War of 1660",
+  "summary": "The English Wikipedia article \"Bruneian Civil War of 1660\", at revision 1375506212, opens: \"The Bruneian Civil War was a civil war in the Bruneian Sultanate from 1661 to 1673 between Abdul Hakkul Mubin and Muhyiddin. During Sultan Muhammad Ali's reign, a dispute led to the killing of Pengiran Muda Alam by Pengiran Muda Bongsu. In retaliation, Abdul Hakkul Mubin killed Muhammad Ali and declared himself the fourteenth sultan. A civil war ensued, with Abdul Hakkul Mubin fleeing to Kinarut. Sultan Muhyiddin sought help from the Sultan of Sulu, promising the area of Kimanis as a reward. The dispute over eastern Sabah remains a legacy of this civil war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3263276, imported by tools/import/wikidata.mjs. The item's own description reads \"Civil war fought in Brunei from 1660 to 1673\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1660,
+    "end": 1673
+  },
+  "place": "sabah",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

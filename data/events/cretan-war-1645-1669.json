@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cretan-war-1645-1669",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q699602",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Cretan War (1645–1669)",
+    "pt": "Guerra de Creta (1645–1669)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q699602"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cretan War (1645–1669)\", revision 1379990319"
+    }
+  ],
+  "title": "Cretan War (1645–1669)",
+  "summary": "The English Wikipedia article \"Cretan War (1645–1669)\", at revision 1379990319, opens: \"The Cretan War, also known as the War of Candia or the fifth Ottoman–Venetian war, was a conflict between the Republic of Venice and her allies against the Ottoman Empire and the Barbary States largely fought over the island of Crete, Venice's largest and richest overseas possession. The war lasted from 1645 to 1669 and was fought in Crete, especially in the city of Candia, and in numerous naval engagements and raids around the Aegean Sea, with Dalmatia providing a secondary theater of operations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q699602, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between the Republic of Venice against the Ottoman Empire from 1645 to 1669\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1645,
+    "end": 1669,
+    "date": "1645-06-23"
+  },
+  "place": "dalmatia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

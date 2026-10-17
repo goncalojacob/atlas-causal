@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fourth-anglo-dutch-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q576292",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Fourth Anglo-Dutch War",
+    "pt": "Quarta Guerra Anglo-Holandesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q576292"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fourth Anglo-Dutch War\", revision 1378563047"
+    }
+  ],
+  "title": "Fourth Anglo-Dutch War",
+  "summary": "The English Wikipedia article \"Fourth Anglo-Dutch War\", at revision 1378563047, opens: \"The Fourth Anglo-Dutch War was a conflict between the Kingdom of Great Britain and the Dutch Republic. The war, contemporary with the American Revolutionary War (1775–1783), broke out over British and Dutch disagreements on the legality and conduct of Dutch trade with Britain's enemies in that war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q576292, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict (1780–1784) between the Kingdom of Great Britain and the Dutch Republic over British and Dutch disagreements on the legality and conduct of Dutch trade with the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1780,
+    "end": 1784
+  },
+  "place": "north-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-dutch-wars"
+}

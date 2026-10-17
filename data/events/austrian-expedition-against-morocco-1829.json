@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "austrian-expedition-against-morocco-1829",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q18604047",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Austrian expedition against Morocco (1829)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18604047"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Austrian expedition against Morocco (1829)\", revision 1379525557"
+    }
+  ],
+  "title": "Austrian expedition against Morocco (1829)",
+  "summary": "The English Wikipedia article \"Austrian expedition against Morocco (1829)\", at revision 1379525557, opens: \"The Austrian Expedition against Morocco of 1829 was a successful effort of the Austrian Navy to liberate an Austrian merchant ship and its crew that had been hijacked by Morocco.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18604047, imported by tools/import/wikidata.mjs. The item's own description reads \"1829 rescue of Austrian merchant vessel\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1829,
+    "end": 1830,
+    "date": "1829-06-03",
+    "endDate": "1830-03-19"
+  },
+  "place": "larache",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
