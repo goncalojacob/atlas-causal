@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ute-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7902616",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Ute Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7902616"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ute Wars\", revision 1379488063"
+    }
+  ],
+  "title": "Ute Wars",
+  "summary": "The English Wikipedia article \"Ute Wars\", at revision 1379488063, opens: \"The Ute Wars were a series of conflicts between the Ute people and the United States between 1849 and 1923.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7902616, imported by tools/import/wikidata.mjs. The item's own description reads \"series of conflicts between the US and the Ute people\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1849,
+    "end": 1923
+  },
+  "place": "colorado",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

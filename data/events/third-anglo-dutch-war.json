@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "third-anglo-dutch-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1342568",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Third Anglo-Dutch War",
+    "pt": "Terceira Guerra Anglo-Holandesa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1342568"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Third Anglo-Dutch War\", revision 1370750296"
+    }
+  ],
+  "title": "Third Anglo-Dutch War",
+  "summary": "The English Wikipedia article \"Third Anglo-Dutch War\", at revision 1370750296, opens: \"The Third Anglo-Dutch War, began on 27 March 1672, and concluded on 19 February 1674. A naval conflict between the Dutch Republic and England, in alliance with France, it is considered a related conflict of the wider 1672 to 1678 Franco-Dutch War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1342568, imported by tools/import/wikidata.mjs. The item's own description reads \"military conflict between the Kingdom of England and the Dutch Republic (1672-1674)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1672,
+    "end": 1674
+  },
+  "place": "north-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-dutch-wars"
+}

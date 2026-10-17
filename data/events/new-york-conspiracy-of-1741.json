@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "new-york-conspiracy-of-1741",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3775537",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "New York Conspiracy of 1741"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3775537"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"New York Conspiracy of 1741\", revision 1373415564"
+    }
+  ],
+  "title": "New York Conspiracy of 1741",
+  "summary": "The English Wikipedia article \"New York Conspiracy of 1741\", at revision 1373415564, opens: \"The Conspiracy of 1741, also known as the Slave Insurrection of 1741, was a purported plot by slaves and poor whites in the British colony of New York in 1741 to revolt and level New York City with a series of fires. Historians disagree as to whether such a plot existed and, if there was one, its scale. During the court cases, the prosecution kept changing the grounds of accusation, ending with linking the insurrection to a \"Popish\" plot by Spaniards and other Catholics.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3775537, imported by tools/import/wikidata.mjs. The item's own description reads \"purported slave rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1741,
+    "end": 1741
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

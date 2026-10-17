@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "qing-invasion-of-joseon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q487757",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Qing invasion of Joseon",
+    "pt": "Invasão Qing de Joseon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q487757"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Qing invasion of Joseon\", revision 1370705362"
+    }
+  ],
+  "title": "Qing invasion of Joseon",
+  "summary": "The English Wikipedia article \"Qing invasion of Joseon\", at revision 1370705362, opens: \"The Qing invasion of Joseon occurred in the winter of 1636 when the newly established Manchu-led Qing Empire invaded the Joseon Kingdom of what is now Korea, establishing the former's status as the hegemon in the Imperial Chinese tributary system and formally severing Joseon's relationship with the Han-led Ming dynasty. The invasion was preceded by the Later Jin invasion of Joseon in 1627.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q487757, imported by tools/import/wikidata.mjs. The item's own description reads \"invasion of Joseon by the Qing Empire in 1636, ending with Joseon defeat and Joseon cutting ties with the Ming\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1636,
+    "end": 1636,
+    "date": "1636-12-09"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
