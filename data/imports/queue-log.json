@@ -10013,6 +10013,503 @@
       },
       "refusals": [],
       "note": "Q1132994 is already the event \"polish-ottoman-war-1683-1699\""
+    },
+    {
+      "id": "2026-10-17-africa-037",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2707120: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-africa-039",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q16707899: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-africa-041",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "franco-hova-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-043",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3560710: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-africa-045",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-butre",
+        "edges": [],
+        "place": "butre-ghana"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-047",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3536721: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-asia-051",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-shimonoseki",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-053",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-san-stefano",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-055",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q926447: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-asia-057",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "russo-persian-war-1826-1828",
+        "edges": [],
+        "place": "south-caucasus"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-059",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2119319: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-asia-061",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-shimoda",
+        "edges": [],
+        "place": "shimoda-shizuoka"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-063",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-mamluk-war-1516-1517",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-065",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-saragarhi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-067",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2003866: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-asia-069",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-gandamak",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-071",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2646343: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-asia-073",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-yandabo",
+        "edges": [],
+        "place": "yandabo"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-075",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "great-famine-of-1876-1878",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-077",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "cyprus-convention",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-079",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-balta-liman",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-081",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-wanghia",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-083",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "bowring-treaty",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-085",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1044456: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-asia-087",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7836956: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-asia-089",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2356821: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-asia-091",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1339722: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-asia-093",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-resht",
+        "edges": [],
+        "place": "rasht"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-095",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1967582: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-asia-097",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4379152: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-asia-099",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-kerden",
+        "edges": [],
+        "place": "kordan-alborz"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-101",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "1772-1773-persian-plague",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-103",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2377085: none of its classes (Q3824506) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-17-asia-105",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2135001: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-asia-107",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "kandyan-convention",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-109",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3536741: none of its classes (Q3824506) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-17-americas-031",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "boston-tea-party",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-033",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "alaska-purchase",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-035",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "haymarket-affair",
+        "edges": [],
+        "place": "chicago"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-037",
+      "writer": "B",
+      "fired": "2026-10-17T04:42Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-little-bighorn",
+        "edges": [],
+        "place": "little-bighorn-river"
+      },
+      "refusals": []
     }
   ]
 }

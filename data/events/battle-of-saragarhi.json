@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-saragarhi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q383067",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Saragarhi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q383067"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Saragarhi\", revision 1376454299"
+    }
+  ],
+  "title": "Battle of Saragarhi",
+  "summary": "The English Wikipedia article \"Battle of Saragarhi\", at revision 1376454299, opens: \"The Battle of Saragarhi was a last-stand battle fought before the Tirah Campaign between the British Indian Empire and Afghan tribesmen. On 12 September 1897, an estimated 12,000–24,000 Orakzai and Afridi tribesmen were seen near Gogra, at Samana Suk, and around Saragarhi, cutting off Fort Gulistan from Fort Lockhart. The Afghans attacked the outpost of Saragarhi where thousands of them swarmed and surrounded the fort, preparing to assault it. Led by Havildar Ishar Singh, the 21 soldiers in the fort—all of whom were Sikhs—refused to surrender and were wiped out in a last stand. The post was recaptured two days later by another British Indian contingent.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q383067, imported by tools/import/wikidata.mjs. The item's own description reads \"1897 battle in British India\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1897,
+    "end": 1897,
+    "date": "1897-09-12"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "great-famine-of-1876-1878",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3534685",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Great Famine of 1876–1878"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3534685"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Famine of 1876–1878\", revision 1375751084"
+    }
+  ],
+  "title": "Great Famine of 1876–1878",
+  "summary": "The English Wikipedia article \"Great Famine of 1876–1878\", at revision 1375751084, opens: \"The Great Famine of 1876–1878 was a famine in India under British Crown rule. It began in 1876 after an intense drought resulted in crop failure in the Deccan Plateau. It affected north, south and Southwestern India—the British-administered presidencies of Madras, Punjab, Bombay, and the princely states of Mysore and Hyderabad—for a period of two years. In 1877, famine came to affect regions northward, including parts of the Central Provinces and the North-Western Provinces. The famine ultimately affected an area of 670,000 square kilometres (257,000 sq mi) and caused distress to a population totalling 58,500,000. The excess mortality in the famine has been estimated in the range of 5.6 million - 9.6 million human deaths, and a careful recent demographic estimate yielded 8.2 million deaths. The famine is also known as the Southern India famine of 1876–1878 and the Madras famine of 1877.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3534685, imported by tools/import/wikidata.mjs. The item's own description reads \"famine in India under Crown rule\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1878
+  },
+  "place": "british-raj-q129286",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}
