@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "sitka-alaska",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q79804",
+  "sitelinks": {
+    "count": 79,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Sitka, Alaska",
+    "pt": "Sitka"
+  },
+  "sources": [],
+  "names": [
+    "Sitka",
+    "Sitka, Alaska"
+  ],
+  "where": {
+    "lon": -135.33472222222,
+    "lat": 57.053333333333,
+    "precision": "city",
+    "label": "Sitka, Alaska"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

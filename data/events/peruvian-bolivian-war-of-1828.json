@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "peruvian-bolivian-war-of-1828",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5816677",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Peruvian–Bolivian War of 1828"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5816677"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peruvian–Bolivian War of 1828\", revision 1376658567"
+    }
+  ],
+  "title": "Peruvian–Bolivian War of 1828",
+  "summary": "The English Wikipedia article \"Peruvian–Bolivian War of 1828\", at revision 1376658567, opens: \"The Peruvian–Bolivian War of 1828, First Peruvian invasion of Bolivia or  First Peruvian intervention in Bolivia was an invasion of Bolivia by Peru headed by Agustín Gamarra in the form of a foreign intervention in an internal conflict in the Republic of Bolivia, being the first important war in the new country, just three years after becoming independent, and endangering its autonomy as a result of the occupation. Its objective was to force the departure of the troops of the Republic of Colombia from Bolivia, the resignation of Antonio José de Sucre, and the prevention of the opening of a southern front in the event of a war with Colombia. The intervention escalated tensions further, culminating in the Gran Colombia–Peru War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5816677, imported by tools/import/wikidata.mjs. The item's own description reads \"invasion of Bolivia by Peru\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1828,
+    "end": 1828,
+    "date": "1828-05-01",
+    "endDate": "1828-09-08"
+  },
+  "place": "bolivia-q750",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

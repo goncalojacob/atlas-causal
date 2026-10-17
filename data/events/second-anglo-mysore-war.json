@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "second-anglo-mysore-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q233663",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Second Anglo-Mysore War",
+    "pt": "Segunda Guerra Anglo-Maiçor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q233663"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Anglo-Mysore War\", revision 1370787410"
+    }
+  ],
+  "title": "Second Anglo-Mysore War",
+  "summary": "The English Wikipedia article \"Second Anglo-Mysore War\", at revision 1370787410, opens: \"The Second Anglo-Mysore War was a conflict between the Kingdom of Mysore and the British East India Company from 1780 to 1784. At the time, Mysore was a key French ally in India, and the conflict between Britain against the French and Dutch in the American Revolutionary War influenced Anglo-Mysorean hostilities in India. The great majority of soldiers on the company side were raised, trained, paid and commanded by the company, not the British government. However, the company's operations were also bolstered by Crown troops sent from Great Britain, and by troops from Hanover, which was also ruled by Great Britain's King George III.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q233663, imported by tools/import/wikidata.mjs. The item's own description reads \"war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1780,
+    "end": 1784
+  },
+  "place": "south-india",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-isfahan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5913740",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Siege of Isfahan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5913740"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Isfahan\", revision 1378917474"
+    }
+  ],
+  "title": "Siege of Isfahan",
+  "summary": "The English Wikipedia article \"Siege of Isfahan\", at revision 1378917474, opens: \"The siege of Isfahan was a six-month-long siege of Isfahan, the capital of the Safavid dynasty of Iran, by the Hotaki-led Afghan army. It lasted from March to October 1722 and resulted in the city's fall and the beginning of the end of the Safavid dynasty.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5913740, imported by tools/import/wikidata.mjs. The item's own description reads \"1722 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1722,
+    "end": 1722,
+    "date": "1722-03-08",
+    "endDate": "1722-10-23"
+  },
+  "place": "isfahan",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
