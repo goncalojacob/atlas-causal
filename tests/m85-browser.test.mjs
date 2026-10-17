@@ -58,7 +58,15 @@ const GRAPH_READY = 'return document.querySelectorAll("#graph circle.node").leng
 async function centuriesOn(page, url, view, ready, key) {
   await open(page, url(view), ready);
   await waitFor(page, ready, `${key} to draw`);
-  const drawn = await page.eval(DRAWN);
+  // The graph and the timeline draw a few centuries at a time. Read again
+  // until a second century is on the screen, and keep the last reading if
+  // none ever comes, so the assertion reports what was drawn.
+  let drawn;
+  for (let i = 0; i < 600; i += 1) {
+    drawn = await page.eval(DRAWN);
+    if (new Set(drawn[key].map(centuryOfId).filter((c) => c !== null)).size > 1) break;
+    await new Promise((resolve) => { setTimeout(resolve, 50); });
+  }
   const centuries = new Set(drawn[key].map(centuryOfId).filter((c) => c !== null));
   return { centuries, badges: drawn.badges };
 }
