@@ -1760,6 +1760,12 @@
     },
     {
       "dissent": false,
+      "id": "1465-fez-revolt",
+      "kind": "event",
+      "locator": "Q3411960"
+    },
+    {
+      "dissent": false,
       "id": "1510-influenza-pandemic",
       "kind": "event",
       "locator": "Q92056662"
@@ -2552,6 +2558,12 @@
     },
     {
       "dissent": false,
+      "id": "acaxee-rebellion",
+      "kind": "event",
+      "locator": "Q16960172"
+    },
+    {
+      "dissent": false,
       "id": "aceh-war",
       "kind": "event",
       "locator": "Q277450"
@@ -2906,6 +2918,12 @@
     },
     {
       "dissent": false,
+      "id": "anglo-spanish-war-1654-1660",
+      "kind": "event",
+      "locator": "Q369291"
+    },
+    {
+      "dissent": false,
       "id": "anglo-zanzibar-war",
       "kind": "event",
       "locator": "Q170850"
@@ -3182,6 +3200,12 @@
     },
     {
       "dissent": false,
+      "id": "austrian-expedition-against-morocco-1829",
+      "kind": "event",
+      "locator": "Q18604047"
+    },
+    {
+      "dissent": false,
       "id": "austrian-state-treaty",
       "kind": "event",
       "locator": "Q306535"
@@ -3191,6 +3215,12 @@
       "id": "austro-prussian-war",
       "kind": "event",
       "locator": "Q153650"
+    },
+    {
+      "dissent": false,
+      "id": "austro-turkish-war-1663-1664",
+      "kind": "event",
+      "locator": "Q258679"
     },
     {
       "dissent": false,
@@ -3209,6 +3239,12 @@
       "id": "bac-ninh-campaign",
       "kind": "event",
       "locator": "Q4141584"
+    },
+    {
+      "dissent": false,
+      "id": "bafut-wars",
+      "kind": "event",
+      "locator": "Q799801"
     },
     {
       "dissent": false,
@@ -3533,6 +3569,12 @@
       "id": "battle-of-baton-rouge-1779",
       "kind": "event",
       "locator": "Q2888231"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-beecher-island",
+      "kind": "event",
+      "locator": "Q4087333"
     },
     {
       "dissent": false,
@@ -6746,6 +6788,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-zaatcha",
+      "kind": "event",
+      "locator": "Q2890426"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-zusmarshausen",
       "kind": "event",
       "locator": "Q519818"
@@ -6908,6 +6956,12 @@
     },
     {
       "dissent": false,
+      "id": "bombardment-of-algiers-1816",
+      "kind": "event",
+      "locator": "Q891806"
+    },
+    {
+      "dissent": false,
       "id": "bombardment-of-mogador",
       "kind": "event",
       "locator": "Q4940505"
@@ -6995,6 +7049,12 @@
       "id": "british-russian-convention",
       "kind": "event",
       "locator": "Q2996241"
+    },
+    {
+      "dissent": false,
+      "id": "bruneian-civil-war-of-1660",
+      "kind": "event",
+      "locator": "Q3263276"
     },
     {
       "dissent": false,
@@ -7121,6 +7181,18 @@
       "id": "capture-of-bahia",
       "kind": "event",
       "locator": "Q3704801"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-bejaia-1555",
+      "kind": "event",
+      "locator": "Q5036991"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-cairo-1517",
+      "kind": "event",
+      "locator": "Q5036992"
     },
     {
       "dissent": false,
@@ -7337,6 +7409,12 @@
       "id": "chaplain-medic-massacre",
       "kind": "event",
       "locator": "Q5073209"
+    },
+    {
+      "dissent": false,
+      "id": "char-bouba-war",
+      "kind": "event",
+      "locator": "Q5073613"
     },
     {
       "dissent": false,
@@ -7772,6 +7850,12 @@
     },
     {
       "dissent": false,
+      "id": "cretan-war-1645-1669",
+      "kind": "event",
+      "locator": "Q699602"
+    },
+    {
+      "dissent": false,
       "id": "crimean-circassian-war-1569",
       "kind": "event",
       "locator": "Q126946513"
@@ -7853,6 +7937,12 @@
       "id": "dano-mughal-war",
       "kind": "event",
       "locator": "Q124550898"
+    },
+    {
+      "dissent": false,
+      "id": "dano-swedish-war-1657-1658",
+      "kind": "event",
+      "locator": "Q632313"
     },
     {
       "dissent": false,
@@ -8270,6 +8360,12 @@
     },
     {
       "dissent": false,
+      "id": "expedition-to-mostaganem-1558",
+      "kind": "event",
+      "locator": "Q5420962"
+    },
+    {
+      "dissent": false,
       "id": "expedition-to-touat-1557",
       "kind": "event",
       "locator": "Q138537202"
@@ -8321,6 +8417,12 @@
       "id": "fall-of-tenochtitlan",
       "kind": "event",
       "locator": "Q593267"
+    },
+    {
+      "dissent": false,
+      "id": "fall-of-tlemcen-1518",
+      "kind": "event",
+      "locator": "Q4090268"
     },
     {
       "dissent": false,
@@ -8672,6 +8774,12 @@
     },
     {
       "dissent": false,
+      "id": "fourth-anglo-dutch-war",
+      "kind": "event",
+      "locator": "Q576292"
+    },
+    {
+      "dissent": false,
       "id": "fourth-anglo-mysore-war",
       "kind": "event",
       "locator": "Q617782"
@@ -8972,6 +9080,12 @@
     },
     {
       "dissent": false,
+      "id": "great-plague-of-1738",
+      "kind": "event",
+      "locator": "Q5599759"
+    },
+    {
+      "dissent": false,
       "id": "great-plague-of-marseille",
       "kind": "event",
       "locator": "Q1936002"
@@ -9167,6 +9281,12 @@
       "id": "hong-kyongnae-s-rebellion",
       "kind": "event",
       "locator": "Q4920015"
+    },
+    {
+      "dissent": false,
+      "id": "honno-ji-incident",
+      "kind": "event",
+      "locator": "Q169598"
     },
     {
       "dissent": false,
@@ -10214,6 +10334,12 @@
     },
     {
       "dissent": false,
+      "id": "menalamba-rebellion",
+      "kind": "event",
+      "locator": "Q3305728"
+    },
+    {
+      "dissent": false,
       "id": "merger-treaty",
       "kind": "event",
       "locator": "Q622766"
@@ -10856,6 +10982,12 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-safavid-war-1578-1590",
+      "kind": "event",
+      "locator": "Q701644"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-safavid-war-1623-1639",
       "kind": "event",
       "locator": "Q163476"
@@ -11420,6 +11552,12 @@
     },
     {
       "dissent": false,
+      "id": "reapers-war",
+      "kind": "event",
+      "locator": "Q1348955"
+    },
+    {
+      "dissent": false,
       "id": "rebellion-of-tupac-amaru-ii",
       "kind": "event",
       "locator": "Q1806552"
@@ -11642,6 +11780,12 @@
     },
     {
       "dissent": false,
+      "id": "russo-persian-war-1651-1653",
+      "kind": "event",
+      "locator": "Q16693088"
+    },
+    {
+      "dissent": false,
       "id": "russo-persian-war-1722-1723",
       "kind": "event",
       "locator": "Q1418582"
@@ -11792,6 +11936,12 @@
     },
     {
       "dissent": false,
+      "id": "schmalkaldic-war",
+      "kind": "event",
+      "locator": "Q168556"
+    },
+    {
+      "dissent": false,
       "id": "scientific-revolution",
       "kind": "event",
       "locator": "Q214078"
@@ -11813,6 +11963,12 @@
       "id": "second-anglo-burmese-war",
       "kind": "event",
       "locator": "Q233500"
+    },
+    {
+      "dissent": false,
+      "id": "second-anglo-dutch-war",
+      "kind": "event",
+      "locator": "Q916495"
     },
     {
       "dissent": false,
@@ -12206,6 +12362,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-alexandria-1801",
+      "kind": "event",
+      "locator": "Q3485805"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-ambur",
       "kind": "event",
       "locator": "Q7509809"
@@ -12512,6 +12674,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-fort-julien",
+      "kind": "event",
+      "locator": "Q22936434"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-fort-nashwaak",
       "kind": "event",
       "locator": "Q4392917"
@@ -12641,6 +12809,12 @@
       "id": "siege-of-ladysmith",
       "kind": "event",
       "locator": "Q2543997"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-laghouat",
+      "kind": "event",
+      "locator": "Q16931833"
     },
     {
       "dissent": false,
@@ -12818,6 +12992,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-oran-1556",
+      "kind": "event",
+      "locator": "Q7510284"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-oran-1693",
       "kind": "event",
       "locator": "Q106773425"
@@ -12869,6 +13049,12 @@
       "id": "siege-of-pilsen",
       "kind": "event",
       "locator": "Q944855"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pirna",
+      "kind": "event",
+      "locator": "Q539707"
     },
     {
       "dissent": false,
@@ -13118,6 +13304,12 @@
     },
     {
       "dissent": false,
+      "id": "sieges-of-oran-and-mers-el-kebir",
+      "kind": "event",
+      "locator": "Q7510593"
+    },
+    {
+      "dissent": false,
       "id": "sierra-leone-civil-war",
       "kind": "event",
       "locator": "Q795269"
@@ -13328,6 +13520,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-assault-on-djerba-1510",
+      "kind": "event",
+      "locator": "Q5936375"
+    },
+    {
+      "dissent": false,
       "id": "spanish-assault-on-french-florida",
       "kind": "event",
       "locator": "Q16837786"
@@ -13493,6 +13691,12 @@
       "id": "sveaborg-rebellion",
       "kind": "event",
       "locator": "Q2446816"
+    },
+    {
+      "dissent": false,
+      "id": "swedish-war-of-liberation",
+      "kind": "event",
+      "locator": "Q688308"
     },
     {
       "dissent": false,
@@ -14174,6 +14378,12 @@
     },
     {
       "dissent": false,
+      "id": "tuggurt-expedition-1552",
+      "kind": "event",
+      "locator": "Q28495617"
+    },
+    {
+      "dissent": false,
       "id": "tulip-revolution",
       "kind": "event",
       "locator": "Q459162"
@@ -14510,6 +14720,12 @@
     },
     {
       "dissent": false,
+      "id": "war-of-the-quadruple-alliance",
+      "kind": "event",
+      "locator": "Q221941"
+    },
+    {
+      "dissent": false,
       "id": "war-of-the-seventh-coalition",
       "kind": "event",
       "locator": "Q2724511"
@@ -14639,6 +14855,12 @@
       "id": "wuchang-uprising",
       "kind": "event",
       "locator": "Q339291"
+    },
+    {
+      "dissent": false,
+      "id": "wyatt-s-rebellion",
+      "kind": "event",
+      "locator": "Q1465514"
     },
     {
       "dissent": false,

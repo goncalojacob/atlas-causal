@@ -764,7 +764,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 3,
+      "degree": 4,
       "id": "alexandria",
       "kind": "place",
       "names": [
@@ -819,7 +819,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 6,
+      "degree": 7,
       "id": "algiers-q3561",
       "kind": "place",
       "names": [
@@ -2099,7 +2099,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "balkans",
       "kind": "place",
       "names": [
@@ -2567,6 +2567,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "beecher-island",
+      "kind": "place",
+      "names": [
+        "Beecher Island"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "beijing",
@@ -2605,6 +2632,35 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "bejaia",
+      "kind": "place",
+      "names": [
+        "Béjaïa",
+        "Bugia",
+        "Bugia (Argélia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -3003,6 +3059,33 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "biskra",
+      "kind": "place",
+      "names": [
+        "Biskra"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -4209,7 +4292,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 2,
       "id": "cadiz",
       "kind": "place",
       "names": [
@@ -4236,7 +4319,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 2,
+      "degree": 3,
       "id": "cairo",
       "kind": "place",
       "names": [
@@ -6529,6 +6612,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "dalmatia",
+      "kind": "place",
+      "names": [
+        "Dalmatia",
+        "Dalmácia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
       "degree": 1,
       "id": "damour",
@@ -6808,7 +6919,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 5,
+      "degree": 6,
       "id": "denmark-q35",
       "kind": "place",
       "names": [
@@ -7179,6 +7290,33 @@
       "names": [
         "Diu",
         "Diu, India"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "djerba",
+      "kind": "place",
+      "names": [
+        "Djerba"
       ],
       "origin": {
         "tool": "wikidata"
@@ -8584,7 +8722,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 3,
+      "degree": 4,
       "id": "fez-morocco",
       "kind": "place",
       "names": [
@@ -8823,6 +8961,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "fort-julien",
+      "kind": "place",
+      "names": [
+        "Fort Julien",
+        "Forte Julien"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -11216,7 +11382,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 3,
+      "degree": 4,
       "id": "holy-roman-empire-q12548",
       "kind": "place",
       "names": [
@@ -11523,7 +11689,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "iberian-peninsula",
       "kind": "place",
       "names": [
@@ -14521,6 +14687,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "kyoto",
+      "kind": "place",
+      "names": [
+        "Kyoto",
+        "Quioto"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -14773,7 +14967,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 2,
+      "degree": 3,
       "id": "laghouat",
       "kind": "place",
       "names": [
@@ -15079,7 +15273,7 @@
         }
       ],
       "created": "2026-10-12",
-      "degree": 1,
+      "degree": 2,
       "id": "larache",
       "kind": "place",
       "names": [
@@ -17344,7 +17538,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 3,
       "id": "mesopotamia",
       "kind": "place",
       "names": [
@@ -18146,6 +18340,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "mostaganem",
+      "kind": "place",
+      "names": [
+        "Mostaganem"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -19505,7 +19726,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 6,
       "id": "north-sea",
       "kind": "place",
       "names": [
@@ -20136,7 +20357,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 3,
       "id": "oran",
       "kind": "place",
       "names": [
@@ -21333,6 +21554,33 @@
           "a9-place"
         ],
         "note": "Place written by the run that imported the event, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record its P276 names was not here, so the event came out placeless. The point and the names are the item's own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "pirna",
+      "kind": "place",
+      "names": [
+        "Pirna"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -23677,6 +23925,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "sabah",
+      "kind": "place",
+      "names": [
+        "Sabah",
+        "Sabá",
+        "Sabá (Malásia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 1,
       "id": "sacheon",
@@ -24809,7 +25086,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 3,
       "id": "scandinavia",
       "kind": "place",
       "names": [
@@ -28312,7 +28589,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 3,
+      "degree": 4,
       "id": "tlemcen",
       "kind": "place",
       "names": [
@@ -28518,6 +28795,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "touggourt",
+      "kind": "place",
+      "names": [
+        "Touggourt",
+        "Tugurte"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

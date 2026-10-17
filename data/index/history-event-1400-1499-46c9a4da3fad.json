@@ -2,6 +2,15 @@
   "from": 1400,
   "kind": "event",
   "records": {
+    "1465-fez-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "anfa-expedition-1468": {
       "from": "git",
       "versions": [

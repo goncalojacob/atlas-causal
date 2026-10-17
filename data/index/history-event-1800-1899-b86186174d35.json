@@ -547,6 +547,15 @@
         }
       ]
     },
+    "austrian-expedition-against-morocco-1829": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "austro-prussian-war": {
       "from": "git",
       "versions": [
@@ -562,6 +571,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "bafut-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -740,6 +758,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-beecher-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -2137,6 +2164,15 @@
         }
       ]
     },
+    "battle-of-zaatcha": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "benin-expedition-of-1897": {
       "from": "git",
       "versions": [
@@ -2293,6 +2329,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "bombardment-of-algiers-1816": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -3663,6 +3708,15 @@
         }
       ]
     },
+    "menalamba-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "mexican-american-war": {
       "from": "git",
       "versions": [
@@ -4499,6 +4553,15 @@
         }
       ]
     },
+    "siege-of-alexandria-1801": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "siege-of-arrah": {
       "from": "git",
       "versions": [
@@ -4595,6 +4658,15 @@
         }
       ]
     },
+    "siege-of-fort-julien": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "siege-of-jhansi": {
       "from": "git",
       "versions": [
@@ -4634,6 +4706,15 @@
             "authors"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "siege-of-laghouat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },

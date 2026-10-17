@@ -1807,6 +1807,15 @@
         }
       ]
     },
+    "fourth-anglo-dutch-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "fourth-anglo-mysore-war": {
       "from": "git",
       "versions": [
@@ -1918,6 +1927,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "great-plague-of-1738": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -2777,6 +2795,15 @@
         }
       ]
     },
+    "siege-of-pirna": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "siege-of-pondicherry-1748": {
       "from": "git",
       "versions": [
@@ -3199,6 +3226,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "war-of-the-quadruple-alliance": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
