@@ -725,6 +725,15 @@
         }
       ]
     },
+    "battle-of-aslanduz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-atchoukpa": {
       "from": "git",
       "versions": [
@@ -1802,6 +1811,15 @@
         }
       ]
     },
+    "battle-of-sitka": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "battle-of-sobraon": {
       "from": "git",
       "versions": [
@@ -2341,6 +2359,15 @@
         }
       ]
     },
+    "bombardment-of-kagoshima": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "bombardment-of-mogador": {
       "from": "git",
       "versions": [
@@ -2495,6 +2522,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "chumash-revolt-of-1824": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -2921,6 +2957,15 @@
         }
       ]
     },
+    "filibuster-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "first-and-second-battles-of-el-teb": {
       "from": "git",
       "versions": [
@@ -2990,6 +3035,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "first-central-american-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -3618,6 +3672,15 @@
         }
       ]
     },
+    "kenesary-s-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "lang-son-campaign": {
       "from": "git",
       "versions": [
@@ -3942,6 +4005,15 @@
         }
       ]
     },
+    "peruvian-bolivian-war-of-1828": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "peruvian-war-of-independence": {
       "from": "git",
       "versions": [
@@ -4178,6 +4250,15 @@
         }
       ]
     },
+    "revolution-of-the-reforms": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "revolutions-of-1848": {
       "from": "git",
       "versions": [
@@ -4215,6 +4296,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "santhal-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -4748,6 +4838,15 @@
             "authors"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "siege-of-malakand": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -5466,6 +5565,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "wahhabi-sack-of-karbala": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },

@@ -11114,6 +11114,12 @@
     },
     {
       "dissent": false,
+      "id": "afaqi-khoja-revolts",
+      "kind": "event",
+      "locator": "\"Afaqi Khoja revolts\", revision 1375957025"
+    },
+    {
+      "dissent": false,
       "id": "afghan-civil-war",
       "kind": "event",
       "locator": "\"Afghan Civil War (1989–1992)\", revision 1371765193"
@@ -11297,6 +11303,12 @@
       "id": "anglo-spanish-war-1654-1660",
       "kind": "event",
       "locator": "\"Anglo-Spanish War (1654–1660)\", revision 1374860765"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-spanish-war-1762-1763",
+      "kind": "event",
+      "locator": "\"Anglo-Spanish War (1762–1763)\", revision 1370428618"
     },
     {
       "dissent": false,
@@ -11822,6 +11834,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-aslanduz",
+      "kind": "event",
+      "locator": "\"Battle of Aslanduz\", revision 1370107089"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-atchoukpa",
       "kind": "event",
       "locator": "\"Battle of Atchoukpa\", revision 1370432672"
@@ -12203,6 +12221,12 @@
       "id": "battle-of-chinhai",
       "kind": "event",
       "locator": "\"Battle of Chinhai\", revision 1370437075"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chinsurah",
+      "kind": "event",
+      "locator": "\"Battle of Chinsurah\", revision 1370109011"
     },
     {
       "dissent": false,
@@ -13046,6 +13070,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-krtsanisi",
+      "kind": "event",
+      "locator": "\"Battle of Krtsanisi\", revision 1379001086"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kursk",
       "kind": "event",
       "locator": "\"Battle of Kursk\", revision 1373344662"
@@ -13565,6 +13595,12 @@
       "id": "battle-of-nezib",
       "kind": "event",
       "locator": "\"Battle of Nezib\", revision 1375637254"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ngoc-hoi-ong-a",
+      "kind": "event",
+      "locator": "\"Battle of Ngọc Hồi-Đống Đa\", revision 1374184991"
     },
     {
       "dissent": false,
@@ -14225,6 +14261,12 @@
       "id": "battle-of-sirte-2011",
       "kind": "event",
       "locator": "\"Battle of Sirte (2011)\", revision 1374518213"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-sitka",
+      "kind": "event",
+      "locator": "\"Battle of Sitka\", revision 1376767363"
     },
     {
       "dissent": false,
@@ -15266,6 +15308,12 @@
     },
     {
       "dissent": false,
+      "id": "bombardment-of-kagoshima",
+      "kind": "event",
+      "locator": "\"Bombardment of Kagoshima\", revision 1370605151"
+    },
+    {
+      "dissent": false,
       "id": "bombardment-of-mogador",
       "kind": "event",
       "locator": "\"Bombardment of Mogador\", revision 1374542846"
@@ -15389,6 +15437,12 @@
       "id": "burmese-siamese-war-1759-1760",
       "kind": "event",
       "locator": "\"Burmese–Siamese War (1759–1760)\", revision 1370607013"
+    },
+    {
+      "dissent": false,
+      "id": "c-nar-incident",
+      "kind": "event",
+      "locator": "\"Çınar incident\", revision 1366216392"
     },
     {
       "dissent": false,
@@ -15797,6 +15851,12 @@
       "id": "chowanoc-war",
       "kind": "event",
       "locator": "\"Chowanoc War\", revision 1371429474"
+    },
+    {
+      "dissent": false,
+      "id": "chumash-revolt-of-1824",
+      "kind": "event",
+      "locator": "\"Chumash revolt of 1824\", revision 1370611451"
     },
     {
       "dissent": false,
@@ -16754,6 +16814,12 @@
     },
     {
       "dissent": false,
+      "id": "filibuster-war",
+      "kind": "event",
+      "locator": "\"Filibuster War\", revision 1379761232"
+    },
+    {
+      "dissent": false,
       "id": "filips-van-zuylen-s-campaign-against-luanda",
       "kind": "event",
       "locator": "\"Filips van Zuylen's campaign against Luanda\", revision 1370618257"
@@ -16895,6 +16961,12 @@
       "id": "first-carnatic-war",
       "kind": "event",
       "locator": "\"First Carnatic War\", revision 1370619242"
+    },
+    {
+      "dissent": false,
+      "id": "first-central-american-civil-war",
+      "kind": "event",
+      "locator": "\"First Central American Civil War\", revision 1371049652"
     },
     {
       "dissent": false,
@@ -17207,6 +17279,12 @@
       "id": "french-wars-of-religion",
       "kind": "event",
       "locator": "\"French Wars of Religion\", revision 1375764414"
+    },
+    {
+      "dissent": false,
+      "id": "fries-s-rebellion",
+      "kind": "event",
+      "locator": "\"Fries's Rebellion\", revision 1366238472"
     },
     {
       "dissent": false,
@@ -17615,6 +17693,12 @@
       "id": "ifni-war",
       "kind": "event",
       "locator": "\"Ifni War\", revision 1370623332"
+    },
+    {
+      "dissent": false,
+      "id": "iguape-war",
+      "kind": "event",
+      "locator": "\"Iguape War\", revision 1370623338"
     },
     {
       "dissent": false,
@@ -18152,6 +18236,12 @@
     },
     {
       "dissent": false,
+      "id": "kenesary-s-rebellion",
+      "kind": "event",
+      "locator": "\"Kenesary's Rebellion\", revision 1373414388"
+    },
+    {
+      "dissent": false,
       "id": "kerensky-krasnov-uprising",
       "kind": "event",
       "locator": "\"Kerensky–Krasnov uprising\", revision 1370625643"
@@ -18407,6 +18497,12 @@
       "id": "lula-returns-to-the-presidency-2023",
       "kind": "event",
       "locator": "\"Brazil–China relations\", revision 1364321291"
+    },
+    {
+      "dissent": false,
+      "id": "lunenburg-campaign-1758",
+      "kind": "event",
+      "locator": "\"Lunenburg campaign (1758)\", revision 1370627192"
     },
     {
       "dissent": false,
@@ -18701,6 +18797,12 @@
       "id": "mozambican-war-of-independence",
       "kind": "event",
       "locator": "\"Mozambican War of Independence\", revision 1374663244"
+    },
+    {
+      "dissent": false,
+      "id": "mughal-safavid-war-1649-1653",
+      "kind": "event",
+      "locator": "\"Mughal–Safavid war (1649–1653)\", revision 1378917021"
     },
     {
       "dissent": false,
@@ -19376,6 +19478,12 @@
     },
     {
       "dissent": false,
+      "id": "peruvian-bolivian-war-of-1828",
+      "kind": "event",
+      "locator": "\"Peruvian–Bolivian War of 1828\", revision 1376658567"
+    },
+    {
+      "dissent": false,
       "id": "peruvian-war-of-independence",
       "kind": "event",
       "locator": "\"Peruvian War of Independence\", revision 1375180136, first sentence: \"was a series of military conflicts in Peru from 1809 to 1826\""
@@ -19904,6 +20012,12 @@
     },
     {
       "dissent": false,
+      "id": "revolution-of-the-reforms",
+      "kind": "event",
+      "locator": "\"Revolution of the Reforms\", revision 1370831522"
+    },
+    {
+      "dissent": false,
       "id": "revolutions-of-1848",
       "kind": "event",
       "locator": "\"Revolutions of 1848\", revision 1379173550"
@@ -20102,6 +20216,12 @@
     },
     {
       "dissent": false,
+      "id": "santhal-rebellion",
+      "kind": "event",
+      "locator": "\"Santhal rebellion\", revision 1376679986"
+    },
+    {
+      "dissent": false,
       "id": "santiago-de-cuba-uprising",
       "kind": "event",
       "locator": "\"Santiago de Cuba Uprising\", revision 1370730172"
@@ -20177,6 +20297,12 @@
       "id": "second-anglo-dutch-war",
       "kind": "event",
       "locator": "\"Second Anglo-Dutch War\", revision 1370733738"
+    },
+    {
+      "dissent": false,
+      "id": "second-anglo-mysore-war",
+      "kind": "event",
+      "locator": "\"Second Anglo-Mysore War\", revision 1370787410"
     },
     {
       "dissent": false,
@@ -20534,6 +20660,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-annapolis-royal-1744",
+      "kind": "event",
+      "locator": "\"Siege of Annapolis Royal (1744)\", revision 1375096631"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-anzele",
       "kind": "event",
       "locator": "\"Siege of Anzele\", revision 1370738927"
@@ -20681,6 +20813,12 @@
       "id": "siege-of-campar",
       "kind": "event",
       "locator": "\"Siege of Campar\", revision 1370740012"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-cannanore-1507",
+      "kind": "event",
+      "locator": "\"Siege of Cannanore (1507)\", revision 1370740021"
     },
     {
       "dissent": false,
@@ -20864,6 +21002,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-fushimi-castle",
+      "kind": "event",
+      "locator": "\"Siege of Fushimi Castle\", revision 1370741341"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-genoa-1522",
       "kind": "event",
       "locator": "\"Siege of Genoa (1522)\", revision 1370741464"
@@ -20879,6 +21023,12 @@
       "id": "siege-of-hammershus",
       "kind": "event",
       "locator": "\"Siege of Hammershus\", revision 1370741771"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-isfahan",
+      "kind": "event",
+      "locator": "\"Siege of Isfahan\", revision 1378917474"
     },
     {
       "dissent": false,
@@ -21050,6 +21200,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-malakand",
+      "kind": "event",
+      "locator": "\"Siege of Malakand\", revision 1370743214"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-marabastad",
       "kind": "event",
       "locator": "\"Siege of Marabastad\", revision 1370743266"
@@ -21146,6 +21302,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-odawara-1590",
+      "kind": "event",
+      "locator": "\"Siege of Odawara (1590)\", revision 1370744143"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-oran-1556",
       "kind": "event",
       "locator": "\"Siege of Oran (1556)\", revision 1370744182"
@@ -21215,6 +21377,12 @@
       "id": "siege-of-pondicherry-1748",
       "kind": "event",
       "locator": "\"Siege of Pondicherry (1748)\", revision 1370744503"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-pondicherry-1760",
+      "kind": "event",
+      "locator": "\"Siege of Pondicherry (1760)\", revision 1370744506"
     },
     {
       "dissent": false,
@@ -21788,6 +21956,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-portuguese-war-1776-1777",
+      "kind": "event",
+      "locator": "\"Spanish–Portuguese War (1776–1777)\", revision 1379066619"
+    },
+    {
+      "dissent": false,
       "id": "spanish-revolution",
       "kind": "event",
       "locator": "\"Spanish Revolution of 1936\", revision 1369913897"
@@ -21809,6 +21983,12 @@
       "id": "st-bartholomew-s-day-massacre",
       "kind": "event",
       "locator": "\"St. Bartholomew's Day massacre\", revision 1376363315"
+    },
+    {
+      "dissent": false,
+      "id": "stono-rebellion",
+      "kind": "event",
+      "locator": "\"Stono Rebellion\", revision 1373301992"
     },
     {
       "dissent": false,
@@ -22724,6 +22904,12 @@
     },
     {
       "dissent": false,
+      "id": "unification-of-nepal",
+      "kind": "event",
+      "locator": "\"Unification of Nepal\", revision 1378436987"
+    },
+    {
+      "dissent": false,
       "id": "unified-task-force",
       "kind": "event",
       "locator": "\"Unified Task Force\", revision 1375002456"
@@ -22823,6 +23009,12 @@
       "id": "wagner-group-rebellion",
       "kind": "event",
       "locator": "\"Wagner Group rebellion\", revision 1372812761"
+    },
+    {
+      "dissent": false,
+      "id": "wahhabi-sack-of-karbala",
+      "kind": "event",
+      "locator": "\"Wahhabi sack of Karbala\", revision 1377485086"
     },
     {
       "dissent": false,

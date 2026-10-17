@@ -425,6 +425,15 @@
         }
       ]
     },
+    "annapolis-county": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "annual": {
       "from": "git",
       "versions": [
@@ -1985,6 +1994,15 @@
             "names"
           ],
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "captaincy-of-sao-vicente": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -5493,6 +5511,15 @@
         }
       ]
     },
+    "isfahan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "island-of-mozambique": {
       "from": "git",
       "versions": [
@@ -5878,6 +5905,15 @@
         }
       ]
     },
+    "kagoshima": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "kambula": {
       "from": "git",
       "versions": [
@@ -5905,6 +5941,15 @@
         }
       ]
     },
+    "kannur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "kanpur": {
       "from": "git",
       "versions": [
@@ -5927,6 +5972,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "karbala": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -5957,6 +6011,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "kashgar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -9401,6 +9464,15 @@
         }
       ]
     },
+    "pennsylvania": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "penon-de-velez-de-la-gomera": {
       "from": "git",
       "versions": [
@@ -11522,6 +11594,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "sitka-alaska": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
