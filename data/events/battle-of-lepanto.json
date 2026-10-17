@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-lepanto",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q165425",
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Lepanto",
+    "pt": "Batalha de Lepanto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q165425"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lepanto\", revision 1380626112"
+    }
+  ],
+  "title": "Battle of Lepanto",
+  "summary": "The English Wikipedia article \"Battle of Lepanto\", at revision 1380626112, opens: \"The Battle of Lepanto was a naval engagement that took place on 7 October 1571 when a fleet of the Holy League, a coalition of Catholic states arranged by Pope Pius V and led by the navies of the Spanish Empire and the Republic of Venice, inflicted a major defeat on the fleet of the Ottoman Empire in the Gulf of Patras. The Ottoman forces were sailing westward from their naval station in Lepanto when they met the fleet of the Holy League which was sailing east from Messina, Sicily and used Kefalonia as its launching point.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q165425, imported by tools/import/wikidata.mjs. The item's own description reads \"1571 naval battle between the Holy League and the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1571,
+    "end": 1571,
+    "date": "1571-10-07"
+  },
+  "place": "nafpaktos",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-venetian-war-1570-1573"
+}

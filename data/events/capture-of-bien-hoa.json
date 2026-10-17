@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-bien-hoa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5036990",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Capture of Biên Hòa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5036990"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Biên Hòa\", revision 1370608360"
+    }
+  ],
+  "title": "Capture of Biên Hòa",
+  "summary": "The English Wikipedia article \"Capture of Biên Hòa\", at revision 1370608360, opens: \"The Capture of Biên Hòa on 16 December 1861 was an important allied victory in the Cochinchina campaign (1858–62). This campaign, fought between the French and the Spanish on the one side and the Vietnamese on the other, began as a limited punitive expedition and ended as a French war of conquest. The war concluded with the establishment of the French colony of Cochinchina, a development that inaugurated nearly a century of French colonial dominance in Vietnam.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5036990, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-12-16"
+  },
+  "place": "bien-hoa-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "cochinchina-campaign"
+}

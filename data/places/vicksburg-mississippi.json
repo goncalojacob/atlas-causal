@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "vicksburg-mississippi",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q493787",
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Vicksburg, Mississippi",
+    "pt": "Vicksburg (Mississippi)"
+  },
+  "sources": [],
+  "names": [
+    "Vicksburg",
+    "Vicksburg, Mississippi",
+    "Vicksburg (Mississippi)"
+  ],
+  "where": {
+    "lon": -90.8775,
+    "lat": 32.3525,
+    "precision": "city",
+    "label": "Vicksburg, Mississippi"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

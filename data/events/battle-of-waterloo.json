@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-waterloo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q48314",
+  "sitelinks": {
+    "count": 94,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Waterloo",
+    "pt": "Batalha de Waterloo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q48314"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Waterloo\", revision 1380652941"
+    }
+  ],
+  "title": "Battle of Waterloo",
+  "summary": "The English Wikipedia article \"Battle of Waterloo\", at revision 1380652941, opens: \"The Battle of Waterloo was fought on Sunday 18 June 1815, near Waterloo, being the last engagement with Napoleon I. The French Imperial Army under the command of Napoleon I was defeated by two armies of the Seventh Coalition. One was a British-led force with units from the United Kingdom, the Netherlands, Hanover, Brunswick, and Nassau, under the command of Field Marshal Arthur Wellesley, Duke of Wellington. The other comprised three corps of the Prussian army under Generalfeldmarschall Gebhard Leberecht von Blücher. The battle was known contemporaneously as the Battle of Mont Saint-Jean in France and La Belle Alliance in Prussia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q48314, imported by tools/import/wikidata.mjs. The item's own description reads \"1815 battle during the War of the Seventh Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-06-18"
+  },
+  "place": "waterloo-battlefield",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

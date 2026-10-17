@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "plered",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7204619",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Plered"
+  },
+  "sources": [],
+  "names": [
+    "Plered"
+  ],
+  "where": {
+    "lon": 110.411285,
+    "lat": -7.863471,
+    "precision": "point",
+    "label": "Plered"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

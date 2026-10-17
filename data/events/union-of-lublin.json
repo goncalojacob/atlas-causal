@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "union-of-lublin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q963303",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Union of Lublin",
+    "pt": "União de Lublin"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q963303"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Union of Lublin\", revision 1372306130"
+    }
+  ],
+  "title": "Union of Lublin",
+  "summary": "The English Wikipedia article \"Union of Lublin\", at revision 1372306130, opens: \"The Union of Lublin was signed on 1 July 1569 in Lublin, Poland, and created a single state, the Polish–Lithuanian Commonwealth, one of the largest countries in Europe at the time. It replaced the personal union of the Crown of the Kingdom of Poland and the Grand Duchy of Lithuania with a real union and an elective monarchy, as Sigismund II Augustus, the last of the Jagiellons, remained childless after three marriages. In addition, the autonomy of Royal Prussia was largely abandoned. The Duchy of Livonia, tied to Lithuania in real union since the Union of Grodno (1566), became a Polish–Lithuanian condominium.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q963303, imported by tools/import/wikidata.mjs. The item's own description reads \"1569 union of Poland and Lithuania\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1569,
+    "end": 1569,
+    "date": "1569-07-01"
+  },
+  "place": "lublin",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
