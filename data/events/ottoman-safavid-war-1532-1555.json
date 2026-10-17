@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ottoman-safavid-war-1532-1555",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q700841",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Ottoman–Safavid War (1532–1555)",
+    "pt": "Guerra Otomano-Safávida de 1532–1555"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q700841"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman–Safavid War (1532–1555)\", revision 1380541471"
+    }
+  ],
+  "title": "Ottoman–Safavid War (1532–1555)",
+  "summary": "The English Wikipedia article \"Ottoman–Safavid War (1532–1555)\", at revision 1380541471, opens: \"The Ottoman–Safavid War of 1532–1555 was one of the many military conflicts fought between the two arch rivals, the Ottoman Empire led by Suleiman the Magnificent, and the Safavid Empire led by Tahmasp I. Ottoman territorial gains were confirmed in the Peace of Amasya.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q700841, imported by tools/import/wikidata.mjs. The item's own description reads \"war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1532,
+    "end": 1555
+  },
+  "place": "mesopotamia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

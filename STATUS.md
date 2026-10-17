@@ -26015,3 +26015,9 @@ Writer A started 2026-10-16T22:22:43Z by scheduled
 Writer A 2026-10-16T22:24:41Z: 0 written, 0 partial, 3 refused, 37 skipped
 Writer B started 2026-10-16T23:41:59Z by scheduled
 Writer B 2026-10-17T01:18:00Z: 0 written, 0 partial, 0 refused, 0 skipped. The assistant closes the 23:41Z claim, whose run ended without a push.
+
+Writer A started 2026-10-16T23:22:07Z by scheduled
+Writer A 2026-10-16T23:29:30Z: 33 written, 0 partial, 5 refused, 2 skipped
+
+Writer A started 2026-10-17T00:22:21Z by scheduled
+Writer A 2026-10-17T00:27:49Z: 23 written, 0 partial, 5 refused, 2 skipped

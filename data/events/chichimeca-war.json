@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "chichimeca-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q936533",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Chichimeca War",
+    "pt": "Guerra dos Chichimecas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q936533"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chichimeca War\", revision 1375081183"
+    }
+  ],
+  "title": "Chichimeca War",
+  "summary": "The English Wikipedia article \"Chichimeca War\", at revision 1375081183, opens: \"The Chichimeca War (1550–1600) was a military conflict between the Spanish Empire and the Chichimeca Confederation established in the territories today known as the Central Mexican Plateau. The epicenter of the hostilities was the region now called the Bajío. The Chichimeca War is recorded as both the longest and most expensive military campaign confronting the Spanish Empire and indigenous people in Aridoamerica. The 50-year conflict was settled through several peace treaties with the Spaniards which led to the pacification and, ultimately, the integration of the native populations into the New Spain society.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q936533, imported by tools/import/wikidata.mjs. The item's own description reads \"16th-century war between the Spanish Empire and indigenous peoples of Mexico\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1550,
+    "end": 1590
+  },
+  "place": "bajio",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

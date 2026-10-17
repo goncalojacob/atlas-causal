@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "williamite-war-in-ireland",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2320981",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Williamite War in Ireland",
+    "pt": "Guerra Guilhermina na Irlanda"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2320981"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Williamite War in Ireland\", revision 1376650085"
+    }
+  ],
+  "title": "Williamite War in Ireland",
+  "summary": "The English Wikipedia article \"Williamite War in Ireland\", at revision 1376650085, opens: \"The Williamite War in Ireland took place from March 1689 to October 1691. Fought between Jacobite supporters of James II and those of his successor, William III, it resulted in a Williamite victory. It is generally viewed as a related conflict of the 1688 to 1697 Nine Years' War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2320981, imported by tools/import/wikidata.mjs. The item's own description reads \"1689–91 conflict between supporters of rival claimants to the British throne\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1689,
+    "end": 1691,
+    "date": "1689-03-12",
+    "endDate": "1691-10-03"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "nine-years-war"
+}

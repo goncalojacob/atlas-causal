@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "kazan",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-16",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q900",
+  "sitelinks": {
+    "count": 145,
+    "on": "2026-10-16"
+  },
+  "wikipedia": {
+    "en": "Kazan",
+    "pt": "Cazã"
+  },
+  "sources": [],
+  "names": [
+    "Kazan",
+    "Cazã"
+  ],
+  "where": {
+    "lon": 49.114444444444,
+    "lat": 55.790833333333,
+    "precision": "city",
+    "label": "Kazan"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

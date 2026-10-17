@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "conquest-of-the-khanate-of-sibir",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1361199",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Conquest of the Khanate of Sibir"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1361199"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Conquest of the Khanate of Sibir\", revision 1370612812"
+    }
+  ],
+  "title": "Conquest of the Khanate of Sibir",
+  "summary": "The English Wikipedia article \"Conquest of the Khanate of Sibir\", at revision 1370612812, opens: \"The Khanate of Sibir was a Muslim state located just east of the middle Ural Mountains. Its conquest by Yermak Timofeyevich in 1582 was the first event in the Russian conquest of Siberia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1361199, imported by tools/import/wikidata.mjs. The item's own description reads \"1582 first Russian conquest in Siberia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1581,
+    "end": 1585
+  },
+  "place": "siberia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
