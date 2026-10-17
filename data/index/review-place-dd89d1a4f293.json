@@ -1683,7 +1683,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 1,
+      "degree": 2,
       "id": "augsburg",
       "kind": "place",
       "names": [
@@ -2365,6 +2365,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "basra",
+      "kind": "place",
+      "names": [
+        "Basra",
+        "Baçorá"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -8745,7 +8773,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "ethiopian-empire",
       "kind": "place",
       "names": [
@@ -10216,6 +10244,35 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "georgia-u-s-state",
+      "kind": "place",
+      "names": [
+        "Georgia",
+        "Georgia (U.S. state)",
+        "Geórgia (Estados Unidos)"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -16115,6 +16172,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "leipzig",
+      "kind": "place",
+      "names": [
+        "Leipzig"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 2,
       "id": "lens-pas-de-calais",
@@ -17230,6 +17314,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "mahidpur",
+      "kind": "place",
+      "names": [
+        "Mahidpur"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -17867,6 +17978,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "massawa",
+      "kind": "place",
+      "names": [
+        "Massawa",
+        "Maçuá"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -18448,6 +18587,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "minnesota",
+      "kind": "place",
+      "names": [
+        "Minnesota"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -19532,6 +19698,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "my-tho-city",
+      "kind": "place",
+      "names": [
+        "Mỹ Tho",
+        "Mỹ Tho (city)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -20089,7 +20283,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "new-france-q170604",
       "kind": "place",
       "names": [
@@ -20143,7 +20337,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 1,
+      "degree": 2,
       "id": "new-york-state",
       "kind": "place",
       "names": [
@@ -21311,7 +21505,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 7,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -26812,6 +27006,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "slavkov-u-brna",
+      "kind": "place",
+      "names": [
+        "Slavkov u Brna",
+        "Austerlitz"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -27506,6 +27728,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "southern-netherlands",
+      "kind": "place",
+      "names": [
+        "Southern Netherlands",
+        "Países Baixos do Sul"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-13",
       "degree": 1,
       "id": "southern-united-states",
@@ -27678,6 +27928,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "spotsylvania-county-virginia",
+      "kind": "place",
+      "names": [
+        "Spotsylvania County",
+        "condado de Spotsylvania",
+        "Spotsylvania County, Virginia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "springfield-massachusetts",
@@ -27715,6 +27994,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 1,
+      "id": "sremski-karlovci",
+      "kind": "place",
+      "names": [
+        "Sremski Karlovci"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -31343,7 +31649,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 5,
+      "degree": 8,
       "id": "washington",
       "kind": "place",
       "names": [
@@ -32215,6 +32521,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 2,
+      "id": "yerevan",
+      "kind": "place",
+      "names": [
+        "Yerevan",
+        "Erevã"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [

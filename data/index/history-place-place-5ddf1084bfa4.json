@@ -935,6 +935,15 @@
         }
       ]
     },
+    "basra": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "bastille": {
       "from": "git",
       "versions": [
@@ -4520,6 +4529,15 @@
         }
       ]
     },
+    "georgia-u-s-state": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "german-east-africa-q153963": {
       "from": "git",
       "versions": [
@@ -6988,6 +7006,15 @@
         }
       ]
     },
+    "leipzig": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "lens-pas-de-calais": {
       "from": "git",
       "versions": [
@@ -7568,6 +7595,15 @@
         }
       ]
     },
+    "mahidpur": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "mahikeng": {
       "from": "git",
       "versions": [
@@ -7832,6 +7868,15 @@
         }
       ]
     },
+    "massawa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "matabeleland": {
       "from": "git",
       "versions": [
@@ -8093,6 +8138,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "minnesota": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -8555,6 +8609,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "my-tho-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -11846,6 +11909,15 @@
         }
       ]
     },
+    "slavkov-u-brna": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "slovak-republic": {
       "from": "git",
       "versions": [
@@ -12166,6 +12238,15 @@
         }
       ]
     },
+    "southern-netherlands": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "southern-united-states": {
       "from": "git",
       "versions": [
@@ -12232,6 +12313,15 @@
         }
       ]
     },
+    "spotsylvania-county-virginia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "springfield-massachusetts": {
       "from": "git",
       "versions": [
@@ -12259,6 +12349,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "sremski-karlovci": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -14259,6 +14358,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "yerevan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
