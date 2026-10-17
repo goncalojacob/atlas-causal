@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "berne-convention",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q217398",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Berne Convention",
+    "pt": "Convenção de Berna"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q217398"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Berne Convention\", revision 1377892510"
+    }
+  ],
+  "title": "Berne Convention",
+  "summary": "The English Wikipedia article \"Berne Convention\", at revision 1377892510, opens: \"The Berne Convention for the Protection of Literary and Artistic Works, usually known as the Berne Convention, was an international assembly held in 1886 in the Swiss city of Bern by ten European countries with the goal of agreeing on a set of legal principles for the protection of original work and intellectual property. They drafted and adopted a multi-party contract containing agreements for a uniform, border-crossing system that became known under the same name. Its rules have been updated many times since then. The treaty provides authors, musicians, poets, painters, and other creators with the means to control how their works are used, by whom, and on what terms. In some jurisdictions these types of rights are referred to as copyright; on the European continent they are generally referred to as authors' rights.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q217398, imported by tools/import/wikidata.mjs. The item's own description reads \"1880s international copyright treaty adopted by 160+ countries\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1886,
+    "end": 1886,
+    "date": "1886-09-09"
+  },
+  "place": "bern",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

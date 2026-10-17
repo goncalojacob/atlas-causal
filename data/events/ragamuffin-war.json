@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ragamuffin-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q209297",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Ragamuffin War",
+    "pt": "Guerra dos Farrapos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q209297"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ragamuffin War\", revision 1376343215"
+    }
+  ],
+  "title": "Ragamuffin War",
+  "summary": "The English Wikipedia article \"Ragamuffin War\", at revision 1376343215, opens: \"The Ragamuffin War, also known as the Ragamuffin Revolution or Heroic Decade, was a republican uprising that began in southern Brazil during the regency period, centered in the province of Rio Grande do Sul and, for a time, extending into Santa Catarina. It began on 20 September 1835, when rebel forces seized Porto Alegre, and soon turned into a wider confrontation between Brazil's imperial government and a coalition led by Bento Gonçalves and Antônio de Sousa Neto, who proclaimed the secession of the province and the creation of the Riograndense Republic following the rebel victory at the battle of Seival in 1836.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q209297, imported by tools/import/wikidata.mjs. The item's own description reads \"1835-1845 republicanism-revolt in southern Brazil\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1845,
+    "date": "1835-09-20",
+    "endDate": "1845-03-01"
+  },
+  "place": "south-region-brazil",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

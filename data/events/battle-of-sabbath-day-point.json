@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-sabbath-day-point",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872229",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Sabbath Day Point"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872229"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sabbath Day Point\", revision 1370273283"
+    }
+  ],
+  "title": "Battle of Sabbath Day Point",
+  "summary": "The English Wikipedia article \"Battle of Sabbath Day Point\", at revision 1370273283, opens: \"The Battle of Sabbath Day Point took place on 23 July 1757 just off the shore of Sabbath Day Point, Lake George, New York and ended in a French victory. The battle, pitched approximately 450 French and allied Indian forces under the leadership of Ensign de Corbiere of the Troupes de la Marine against 350 New Jersey Blues under the command of Colonel John Parker. Ensign de Corbiere, aware of Parker's plan, ambushed and surrounded Parker's forces as they approached the shore in bateaux. In the ensuing rout Parker lost approximately 250 men with nearly 160 men killed or drowned and the rest taken prisoner. The French reported only one man slightly wounded.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872229, imported by tools/import/wikidata.mjs. The item's own description reads \"1757 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1757,
+    "date": "1757-07-23"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "french-and-indian-war"
+}

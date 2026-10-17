@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bern",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q70",
+  "sitelinks": {
+    "count": 178,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Bern",
+    "pt": "Berna"
+  },
+  "sources": [],
+  "names": [
+    "Bern",
+    "Berna"
+  ],
+  "where": {
+    "lon": 7.44743,
+    "lat": 46.94798,
+    "precision": "city",
+    "label": "Bern"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

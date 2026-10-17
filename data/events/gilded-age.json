@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "gilded-age",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1753636",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Gilded Age",
+    "pt": "Gilded Age"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1753636"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gilded Age\", revision 1378879052"
+    }
+  ],
+  "title": "Gilded Age",
+  "summary": "The English Wikipedia article \"Gilded Age\", at revision 1378879052, opens: \"In United States history, the Gilded Age is the period from about the late 1870s to the late 1890s, which occurred between the Reconstruction era and the Progressive Era. It was named by 1920s historians after Mark Twain's 1873 novel The Gilded Age: A Tale of Today.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1753636, imported by tools/import/wikidata.mjs. The item's own description reads \"era in the history of the USA between the late 1860's and the 1890's\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1870,
+      "max": 1879
+    },
+    "end": 1900
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

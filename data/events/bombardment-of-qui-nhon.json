@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "bombardment-of-qui-nhon",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4940509",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Bombardment of Qui Nhơn"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4940509"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bombardment of Qui Nhơn\", revision 1373597718"
+    }
+  ],
+  "title": "Bombardment of Qui Nhơn",
+  "summary": "The English Wikipedia article \"Bombardment of Qui Nhơn\", at revision 1373597718, opens: \"The bombardment of Qui Nhơn in 1861 was an attack by a United States Navy warship upon a Vietnamese-held fort protecting Qui Nhơn on the south central coast of Vietnam. United States forces under James F. Schenck went to southern Vietnam to search for missing American citizens but were met with cannon fire upon arriving. In response to the attack the American warship bombarded the fort until it was reduced. The incident occurred during French and Spanish conquest of southern Vietnam.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4940509, imported by tools/import/wikidata.mjs. The item's own description reads \"1861 bombardment\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1861,
+    "end": 1861,
+    "date": "1861-07-31"
+  },
+  "place": "quy-nhon-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "cochinchina-campaign"
+}

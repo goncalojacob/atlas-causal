@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-bloody-creek-1757",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870504",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Bloody Creek (1757)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870504"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bloody Creek (1757)\", revision 1375089622"
+    }
+  ],
+  "title": "Battle of Bloody Creek (1757)",
+  "summary": "The English Wikipedia article \"Battle of Bloody Creek (1757)\", at revision 1375089622, opens: \"The Battle of Bloody Creek was fought on December 8, 1757, during the French and Indian War. An Acadian and Mi'kmaq militia defeated a detachment of British soldiers of the 43rd Regiment at Bloody Creek, which empties into the Annapolis River at present day Carleton Corner, Nova Scotia, Canada. The battle occurred at the same site as a battle in 1711 during Queen Anne's War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870504, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the French and Indian War in 1757\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1757,
+    "date": "1757-12-08"
+  },
+  "place": "bloody-creek",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-and-indian-war"
+}
