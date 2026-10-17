@@ -2441,6 +2441,15 @@
         }
       ]
     },
+    "polish-russian-war-of-1792": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "pontiac-s-war": {
       "from": "git",
       "versions": [
@@ -2456,6 +2465,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "pugachev-s-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
         }
       ]
     },
@@ -3391,6 +3409,15 @@
         }
       ]
     },
+    "war-of-the-polish-succession": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "war-of-the-pyrenees": {
       "from": "git",
       "versions": [
@@ -3401,6 +3428,15 @@
       ]
     },
     "war-of-the-quadruple-alliance": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
+    "war-of-the-second-coalition": {
       "from": "git",
       "versions": [
         {

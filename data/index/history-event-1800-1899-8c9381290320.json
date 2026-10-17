@@ -468,6 +468,15 @@
         }
       ]
     },
+    "anglo-russian-war-1807-1812": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-17"
+        }
+      ]
+    },
     "anglo-zanzibar-war": {
       "from": "git",
       "versions": [

@@ -2942,6 +2942,12 @@
     },
     {
       "dissent": false,
+      "id": "anglo-russian-war-1807-1812",
+      "kind": "event",
+      "locator": "Q2441248"
+    },
+    {
+      "dissent": false,
       "id": "anglo-spanish-war-1654-1660",
       "kind": "event",
       "locator": "Q369291"
@@ -11486,6 +11492,12 @@
     },
     {
       "dissent": false,
+      "id": "polish-russian-war-of-1792",
+      "kind": "event",
+      "locator": "Q1352215"
+    },
+    {
+      "dissent": false,
       "id": "polish-soviet-war",
       "kind": "event",
       "locator": "Q186284"
@@ -11675,6 +11687,12 @@
       "id": "pueblo-revolt",
       "kind": "event",
       "locator": "Q1547791"
+    },
+    {
+      "dissent": false,
+      "id": "pugachev-s-rebellion",
+      "kind": "event",
+      "locator": "Q154100"
     },
     {
       "dissent": false,
@@ -15122,6 +15140,12 @@
     },
     {
       "dissent": false,
+      "id": "war-of-the-polish-succession",
+      "kind": "event",
+      "locator": "Q212658"
+    },
+    {
+      "dissent": false,
       "id": "war-of-the-pyrenees",
       "kind": "event",
       "locator": "Q324438"
@@ -15131,6 +15155,12 @@
       "id": "war-of-the-quadruple-alliance",
       "kind": "event",
       "locator": "Q221941"
+    },
+    {
+      "dissent": false,
+      "id": "war-of-the-second-coalition",
+      "kind": "event",
+      "locator": "Q26749"
     },
     {
       "dissent": false,
