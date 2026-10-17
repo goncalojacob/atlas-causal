@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mehmandust-semnan",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6809534",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Mehmandust, Semnan"
+  },
+  "sources": [],
+  "names": [
+    "Mehmandust",
+    "Mehmandust, Semnan"
+  ],
+  "where": {
+    "lon": 54.5525,
+    "lat": 36.217777777777776,
+    "precision": "city",
+    "label": "Mehmandust, Semnan"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

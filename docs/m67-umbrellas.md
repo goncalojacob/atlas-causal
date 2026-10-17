@@ -2318,3 +2318,39 @@ Writer A imported it from the planner's queue as item `2026-10-16-asia-224`, ran
 ## Writer A, 2026-10-17: `cambodian-spanish-war`, bare
 
 Writer A imported it from the planner's queue as item `2026-10-16-asia-226`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-17: `mixton-war`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-16-americas-034`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-17: `basuto-gun-war`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-17-africa-002`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-17: `battle-of-blaauwberg`, filed under `napoleonic-wars` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-africa-006`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-17: `alexandria-expedition-of-1807`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-17-africa-010`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-17: `free-state-basotho-wars`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-17-africa-016`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-17: `mejba-revolt`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-17-africa-028`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-17: `third-anglo-burmese-war`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-17-asia-003`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-17: `battle-of-geok-tepe`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-17-asia-011`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-17: `ottoman-persian-war-1743-1746`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-17-asia-023`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
