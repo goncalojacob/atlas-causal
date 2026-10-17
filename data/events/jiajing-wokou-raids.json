@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jiajing-wokou-raids",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q23419106",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Jiajing wokou raids"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q23419106"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Jiajing wokou raids\", revision 1376463549"
+    }
+  ],
+  "title": "Jiajing wokou raids",
+  "summary": "The English Wikipedia article \"Jiajing wokou raids\", at revision 1376463549, opens: \"The Jiajing wokou raids caused extensive damage to the coast of China in the 16th century, during the reign of the Jiajing Emperor in the Ming dynasty. The term \"wokou\" originally referred to Japanese pirates who crossed the sea and raided Korea and China; however, by the mid-Ming, the wokou consisted of multinational crewmen that included the Japanese and the Portuguese, but a great majority of them were Chinese instead. Mid-Ming wokou activity began to pose a serious problem in the 1540s, reached its peak in 1555, and subsided by 1567, with the extent of the destruction spreading across the coastal regions of Jiangnan, Zhejiang, Fujian, and Guangdong.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q23419106, imported by tools/import/wikidata.mjs. The item's own description reads \"by Chinese-led international merchant-pirates (including the Japanese) on Ming dynasty China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1600,
+      "max": 1699
+    },
+    "end": {
+      "min": 1600,
+      "max": 1699
+    }
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

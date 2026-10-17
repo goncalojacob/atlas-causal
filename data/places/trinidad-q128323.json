@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "trinidad-q128323",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q128323",
+  "sitelinks": {
+    "count": 78,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Trinidad",
+    "pt": "Trindade (Trindade e Tobago)"
+  },
+  "sources": [],
+  "names": [
+    "Trinidad",
+    "Trindade",
+    "Trindade (Trindade e Tobago)"
+  ],
+  "where": {
+    "lon": -61.248611111111,
+    "lat": 10.460555555556,
+    "precision": "region",
+    "label": "Trinidad"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

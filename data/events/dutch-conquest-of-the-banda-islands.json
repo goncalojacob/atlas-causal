@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "dutch-conquest-of-the-banda-islands",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q43954977",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Dutch conquest of the Banda Islands"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q43954977"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch conquest of the Banda Islands\", revision 1380039759"
+    }
+  ],
+  "title": "Dutch conquest of the Banda Islands",
+  "summary": "The English Wikipedia article \"Dutch conquest of the Banda Islands\", at revision 1380039759, opens: \"The Dutch conquest of the Banda Islands, also referred to as the Banda genocide, was a process of military conquest from 1609 to 1621 by the Dutch East India Company of the Banda Islands. The Dutch, having enforced a monopoly on the highly lucrative nutmeg production from the islands, were impatient with Bandanese resistance to Dutch demands that the Bandanese sell only to them. Negotiations collapsed after Bandanese village elders deceived and murdered the Dutch representative Pieter Willemsz Verhoeff. Under the command of Jan Pieterszoon Coen, the Dutch resorted to a forcible conquest of the islands, which became severely depopulated as a result of Coen's massacres, forced deportations, and the resulting starvation and disease.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q43954977, imported by tools/import/wikidata.mjs. The item's own description reads \"Military campaign of the Dutch East India Company from 1609 to 1621\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1609,
+    "end": 1621
+  },
+  "place": "banda-islands",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

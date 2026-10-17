@@ -174,7 +174,7 @@
       ]
     },
     "import": {
-      "updated": "2026-10-16",
+      "updated": "2026-10-17",
       "pending": [],
       "done": [
         "Q64",
@@ -2584,7 +2584,35 @@
         "Q1140134",
         "Q1052771",
         "Q31880",
-        "Q17048924"
+        "Q17048924",
+        "Q1096375",
+        "Q1373706",
+        "Q18204735",
+        "Q1361199",
+        "Q6165289",
+        "Q2362089",
+        "Q22947383",
+        "Q23419106",
+        "Q43954977",
+        "Q55627998",
+        "Q7828916",
+        "Q2887920",
+        "Q4818516",
+        "Q5309423",
+        "Q7833286",
+        "Q18353636",
+        "Q111913780",
+        "Q126946513",
+        "Q1353951",
+        "Q1440788",
+        "Q936533",
+        "Q3052957",
+        "Q7676213",
+        "Q3297408",
+        "Q7701256",
+        "Q71630263",
+        "Q4552433",
+        "Q124749527"
       ]
     }
   },
@@ -3035,6 +3063,26 @@
     },
     "Q277392": {
       "on": "2026-10-16",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q6165289": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q4818516": {
+      "on": "2026-10-17",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q1353951": {
+      "on": "2026-10-17",
+      "why": "its classes disagree: Q13418847 → event, Q133156 → place"
+    },
+    "Q1440788": {
+      "on": "2026-10-17",
+      "why": "its classes disagree: Q815962 → event, Q133156 → place"
+    },
+    "Q71630263": {
+      "on": "2026-10-17",
       "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   }
