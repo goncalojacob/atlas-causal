@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "first-javanese-war-of-succession",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2362089",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "First Javanese War of Succession"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2362089"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Javanese War of Succession\", revision 1370619368"
+    }
+  ],
+  "title": "First Javanese War of Succession",
+  "summary": "The English Wikipedia article \"First Javanese War of Succession\", at revision 1370619368, opens: \"The First Javanese War of Succession was a struggle between Sultan Amangkurat III of Mataram and the Dutch East India Company who supported the claim of the Sultan's uncle, Pangeran Puger to the throne.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2362089, imported by tools/import/wikidata.mjs. The item's own description reads \"1704–08 Dutch colonial war in Mataram\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1704,
+    "end": 1708
+  },
+  "place": "java",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

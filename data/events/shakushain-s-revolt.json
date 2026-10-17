@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "shakushain-s-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1096375",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Shakushain's revolt",
+    "pt": "Revolta de Shakushain"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1096375"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Shakushain's revolt\", revision 1370738033"
+    }
+  ],
+  "title": "Shakushain's revolt",
+  "summary": "The English Wikipedia article \"Shakushain's revolt\", at revision 1370738033, opens: \"The revolt of Shakushain  was an Ainu rebellion against Japanese authority on Hokkaido between 1669 and 1672 in the Edo period. It was led by Ainu chieftain Shakushain against the Matsumae clan, who represented Japanese trading and governmental interests in the area of Hokkaido, then controlled by the Japanese.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1096375, imported by tools/import/wikidata.mjs. The item's own description reads \"1669–1672 Ainu revolt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1669,
+    "end": 1672,
+    "date": "1669-06-01"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

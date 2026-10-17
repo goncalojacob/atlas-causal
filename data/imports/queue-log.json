@@ -7171,6 +7171,373 @@
         "place": "borneo"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-209",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q17048924 is already the event \"cambodian-dutch-war\""
+    },
+    {
+      "id": "2026-10-16-asia-211",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "shakushain-s-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-213",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "siamese-cambodian-war-1591-1594",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-215",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "dzungar-conquest-of-altishahr",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-217",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "conquest-of-the-khanate-of-sibir",
+        "edges": [],
+        "place": "siberia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-219",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6165289: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-asia-221",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "first-javanese-war-of-succession",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-223",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "naqib-al-ashraf-revolt",
+        "edges": [],
+        "place": "jerusalem"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-225",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "jiajing-wokou-raids",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-227",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "dutch-conquest-of-the-banda-islands",
+        "edges": [],
+        "place": "banda-islands"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-229",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-invasion-of-western-georgia-1703",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-231",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "toungoo-hanthawaddy-war",
+        "edges": [],
+        "place": "bago-myanmar"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-233",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ain-dara",
+        "edges": [],
+        "place": "ain-dara-lebanon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-235",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4818516: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-asia-237",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "druze-power-struggle-1658-1667",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-239",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "tran-cao-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-241",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "toungoo-mrauk-u-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-243",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "azov-war-1501-1502",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-asia-245",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "crimean-circassian-war-1569",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-029",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1353951: its classes disagree: Q13418847 → event, Q133156 → place"
+    },
+    {
+      "id": "2026-10-16-americas-031",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1440788: its classes disagree: Q815962 → event, Q133156 → place"
+    },
+    {
+      "id": "2026-10-16-americas-033",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "chichimeca-war",
+        "edges": [],
+        "place": "bajio"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-035",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-emboabas",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-037",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3778744 is already the event \"navajo-wars\""
+    },
+    {
+      "id": "2026-10-16-americas-039",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "spanish-taino-war-of-san-juan-boriken",
+        "edges": [],
+        "place": "island-of-puerto-rico"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-041",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "arena-massacre",
+        "edges": [],
+        "place": "trinidad-q128323"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-americas-043",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "tepehuan-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-121",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q71630263: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-16-africa-123",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "1711-karamanli-coup",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-16-africa-125",
+      "writer": "A",
+      "fired": "2026-10-17T00:22Z",
+      "status": "written",
+      "written": {
+        "event": "dano-dutch-colonial-conflict-on-the-gold-coast",
+        "edges": [],
+        "place": "gold-coast-region"
+      },
+      "refusals": []
     }
   ]
 }
