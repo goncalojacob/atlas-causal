@@ -115,6 +115,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "abeokuta",
+      "kind": "place",
+      "names": [
+        "Abeokuta",
+        "Abeocutá"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -398,6 +426,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "aegean-sea",
+      "kind": "place",
+      "names": [
+        "Aegean Sea",
+        "Mar Egeu"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-01",
       "degree": 1,
       "id": "afabet",
@@ -658,6 +714,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "akure",
+      "kind": "place",
+      "names": [
+        "Akure",
+        "Acurê"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -1541,7 +1625,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "argentina-q414",
       "kind": "place",
       "names": [
@@ -1552,6 +1636,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "arica",
+      "kind": "place",
+      "names": [
+        "Arica"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -2845,6 +2956,34 @@
       ],
       "created": "2026-10-27",
       "degree": 1,
+      "id": "batticaloa",
+      "kind": "place",
+      "names": [
+        "Batticaloa",
+        "Baticaloa"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
       "id": "battle-of-chippawa-national-historic-site",
       "kind": "place",
       "names": [
@@ -3528,7 +3667,7 @@
         }
       ],
       "created": "2026-10-13",
-      "degree": 1,
+      "degree": 2,
       "id": "bengal-q80338",
       "kind": "place",
       "names": [
@@ -4338,7 +4477,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "borneo",
       "kind": "place",
       "names": [
@@ -7040,6 +7179,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "chilean-sea",
+      "kind": "place",
+      "names": [
+        "Chilean Sea",
+        "Mar Chileno"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -11401,6 +11568,33 @@
       "names": [
         "Fort Detroit",
         "Fort Pontchartrain du Détroit"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "fort-toulouse",
+      "kind": "place",
+      "names": [
+        "Fort Toulouse"
       ],
       "origin": {
         "tool": "wikidata"
@@ -15785,7 +15979,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 2,
       "id": "jambi",
       "kind": "place",
       "names": [
@@ -21814,7 +22008,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 6,
+      "degree": 7,
       "id": "mexico-q96",
       "kind": "place",
       "names": [
@@ -21980,7 +22174,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "minnesota",
       "kind": "place",
       "names": [
@@ -23664,6 +23858,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "naning",
+      "kind": "place",
+      "names": [
+        "Naning"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 3,
       "id": "nanjing",
@@ -24059,6 +24280,34 @@
         "Nova Iorque",
         "New York (state)",
         "Nova Iorque (estado)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "nias",
+      "kind": "place",
+      "names": [
+        "Nias Island",
+        "Nias"
       ],
       "origin": {
         "tool": "wikidata"
@@ -25358,7 +25607,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 10,
+      "degree": 11,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -26362,6 +26611,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "peshawar",
+      "kind": "place",
+      "names": [
+        "Peshawar",
+        "Pexauar"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -27284,7 +27561,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "portuguese-mozambique-q889394",
       "kind": "place",
       "names": [
@@ -28014,7 +28291,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 7,
+      "degree": 8,
       "id": "qing-dynasty",
       "kind": "place",
       "names": [
@@ -28767,7 +29044,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 13,
+      "degree": 15,
       "id": "rio-de-janeiro",
       "kind": "place",
       "names": [
@@ -29831,7 +30108,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 6,
+      "degree": 7,
       "id": "salvador",
       "kind": "place",
       "names": [
@@ -30235,6 +30512,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "sans-pareil",
+      "kind": "place",
+      "names": [
+        "Sans Pareil"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -33446,6 +33750,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "svaneti",
+      "kind": "place",
+      "names": [
+        "Svaneti",
+        "Suanécia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -34210,6 +34542,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "tharangambadi",
+      "kind": "place",
+      "names": [
+        "Tharangambadi"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -35243,7 +35602,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 7,
+      "degree": 8,
       "id": "tripoli",
       "kind": "place",
       "names": [
@@ -35695,7 +36054,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 22,
+      "degree": 24,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -36073,6 +36432,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "velasco-texas",
+      "kind": "place",
+      "names": [
+        "Velasco",
+        "Velasco, Texas"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -36746,7 +37133,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 9,
+      "degree": 10,
       "id": "washington",
       "kind": "place",
       "names": [

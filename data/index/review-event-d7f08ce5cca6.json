@@ -283,6 +283,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-27",
+      "id": "1718-tongwei-gansu-earthquake",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1718 Tongwei–Gansu earthquake"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-13",
       "id": "1755-lisbon-earthquake",
       "kind": "event",
@@ -394,6 +424,93 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "1835-1858-revolt-in-ottoman-tripolitania",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1835–1858 revolt in Ottoman Tripolitania"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "other",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "1838-mormon-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1838 Mormon War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "1839-coringa-cyclone",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1839 Coringa cyclone"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -444,6 +561,36 @@
       "revised": null,
       "status": "active",
       "title": "1863–1875 cholera pandemic"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "1868-arica-earthquake",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1868 Arica earthquake"
     },
     {
       "authors": [
@@ -6088,6 +6235,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-27",
+      "id": "aegean-sea-anti-piracy-operations-of-the-united-states",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Aegean Sea anti-piracy operations of the United States"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "afaqi-khoja-revolts",
       "kind": "event",
@@ -6398,6 +6575,36 @@
       "revised": null,
       "status": "active",
       "title": "Akizuki rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "akure-benin-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Akure–Benin War"
     },
     {
       "authors": [
@@ -7542,6 +7749,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "angoche-portuguese-conflicts-1847-1910",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Angoche–Portuguese conflicts (1847–1910)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -7821,6 +8057,35 @@
       "revised": null,
       "status": "active",
       "title": "Aponte conspiracy"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "apostate-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Apostate War"
     },
     {
       "authors": [
@@ -29303,6 +29568,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-27",
+      "id": "battle-of-shela",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Shela"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "battle-of-shiloh",
       "kind": "event",
@@ -35881,6 +36175,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-27",
+      "id": "bengal-mrauk-u-war-1512-1516",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "span-from-title",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bengal–Mrauk U War (1512–1516)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "id": "benin-expedition-of-1897",
       "kind": "event",
@@ -36792,6 +37116,35 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "bombardment-of-tripoli-1828",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bombardment of Tripoli (1828)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -37588,6 +37941,35 @@
       "revised": null,
       "status": "active",
       "title": "Bündner Wirren"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "burlingame-treaty",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Burlingame Treaty"
     },
     {
       "authors": [
@@ -39766,6 +40148,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-27",
+      "id": "cattle-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Cattle War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "caucasian-war",
       "kind": "event",
@@ -40257,6 +40669,36 @@
       "revised": null,
       "status": "active",
       "title": "Chickasaw Wars"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "chilean-civil-war-of-1891",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Chilean Civil War of 1891"
     },
     {
       "authors": [
@@ -44160,6 +44602,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-27",
+      "id": "dominican-restoration-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Dominican Restoration War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-14",
       "id": "dominican-war-of-independence",
       "kind": "event",
@@ -45264,6 +45735,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "egba-dahomey-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Egba-Dahomey War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "treaty",
       "cites": [
         "wikidata",
@@ -46214,6 +46715,34 @@
       "revised": null,
       "status": "active",
       "title": "Expedition to Mostaganem (1558)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "expedition-to-the-west-coast-of-borneo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Expedition to the West Coast of Borneo"
     },
     {
       "authors": [
@@ -48158,6 +48687,34 @@
       "revised": null,
       "status": "active",
       "title": "First Mandingo War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "first-maroon-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Maroon War"
     },
     {
       "authors": [
@@ -50513,6 +51070,35 @@
         "wikipedia-en"
       ],
       "created": "2026-10-27",
+      "id": "gran-colombia-peru-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Gran Colombia–Peru War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
       "id": "grattan-massacre",
       "kind": "event",
       "origin": {
@@ -50688,6 +51274,37 @@
       "revised": null,
       "status": "active",
       "title": "Great Game"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "great-hinckley-fire",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Great Hinckley Fire"
     },
     {
       "authors": [
@@ -54843,6 +55460,35 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "jambi-uprising",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Jambi uprising"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -56679,6 +57325,34 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-27",
+      "id": "langeberg-rebellion-1896-97",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Langeberg Rebellion (1896–97)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "lao-rebellion-1826-1828",
       "kind": "event",
@@ -57351,6 +58025,36 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "lincoln-county-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Lincoln County War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -57381,6 +58085,35 @@
       "revised": "2026-09-06",
       "status": "active",
       "title": "The Lisbon Regicide"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "list-of-indigenous-rebellions-in-mexico-and-central-america",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "List of Indigenous rebellions in Mexico and Central America"
     },
     {
       "authors": [
@@ -58042,6 +58775,36 @@
       "revised": null,
       "status": "active",
       "title": "Malayan Emergency"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "male-revolt",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Malê revolt"
     },
     {
       "authors": [
@@ -59025,6 +59788,62 @@
         "wikipedia-en"
       ],
       "created": "2026-10-27",
+      "id": "miao-rebellion-1735-1736",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Miao Rebellion (1735–1736)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "miao-rebellion-1795-1806",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Miao Rebellion (1795–1806)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
       "id": "miao-rebellion-1854-1873",
       "kind": "event",
       "origin": {
@@ -59227,6 +60046,36 @@
       "revised": null,
       "status": "active",
       "title": "Mohawk Valley raid"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "mohmand-campaign-of-1897-1898",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mohmand campaign of 1897–1898"
     },
     {
       "authors": [
@@ -59900,6 +60749,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-27",
+      "id": "mughal-conquest-of-bengal",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Mughal conquest of Bengal"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "mughal-safavid-war-1649-1653",
       "kind": "event",
@@ -60246,6 +61124,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "naning-war",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Naning War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "cites": [
         "wikidata",
         "wikipedia-en"
@@ -60356,6 +61264,35 @@
       "revised": null,
       "status": "active",
       "title": "Naqib al-Ashraf revolt"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "nat-turner-s-rebellion",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Nat Turner's Rebellion"
     },
     {
       "authors": [
@@ -60933,6 +61870,35 @@
       "revised": null,
       "status": "active",
       "title": "Nez Perce War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "nias-expedition",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Nias Expedition"
     },
     {
       "authors": [
@@ -63528,6 +64494,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "palembang-highlands-expeditions",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Palembang Highlands Expeditions"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -65619,6 +66613,35 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-27",
+      "id": "portuguese-conquest-of-the-banda-oriental",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Portuguese conquest of the Banda Oriental"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-15",
       "id": "portuguese-conquest-of-the-east-african-coast",
       "kind": "event",
@@ -66025,6 +67048,35 @@
       "revised": null,
       "status": "active",
       "title": "Prague Spring"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "preliminary-peace-convention-1828",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Preliminary Peace Convention (1828)"
     },
     {
       "authors": [
@@ -81647,6 +82699,35 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "svaneti-uprising-of-1875-1876",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Svaneti uprising of 1875–1876"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -84360,6 +85441,36 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "treaties-of-velasco",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaties of Velasco"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -84800,6 +85911,36 @@
         "wikipedia-en"
       ],
       "created": "2026-10-27",
+      "id": "treaty-of-batticaloa",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Batticaloa"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
       "id": "treaty-of-berlin-1878",
       "kind": "event",
       "origin": {
@@ -85058,6 +86199,37 @@
         "wikipedia-en"
       ],
       "created": "2026-10-27",
+      "id": "treaty-of-fort-jackson",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "end-unstated",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Fort Jackson"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
       "id": "treaty-of-fort-laramie-1851",
       "kind": "event",
       "origin": {
@@ -85204,6 +86376,35 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Gandamak"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "treaty-of-ghilajharighat",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Ghilajharighat"
     },
     {
       "authors": [
@@ -85880,6 +87081,36 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "treaty-of-new-echota",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of New Echota"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -85910,6 +87141,36 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Treaty of Nice"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "treaty-of-nonsuch",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Nonsuch"
     },
     {
       "authors": [
@@ -86279,6 +87540,35 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Resht"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "treaty-of-rio-de-janeiro-1825",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Rio de Janeiro (1825)"
     },
     {
       "authors": [
@@ -86852,6 +88142,35 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "treaty-of-traverse-des-sioux",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Traverse des Sioux"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -87277,6 +88596,36 @@
       "revised": null,
       "status": "active",
       "title": "Trịnh–Nguyễn War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "tripartite-convention",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Tripartite Convention"
     },
     {
       "authors": [
@@ -88127,6 +89476,36 @@
       "revised": "2026-09-18",
       "status": "active",
       "title": "The decree founding the universities of Lisbon and Porto"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "uprising-of-dervish-cara",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Uprising of Dervish Cara"
     },
     {
       "authors": [
@@ -89582,6 +90961,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-27",
+      "id": "war-of-the-oranges",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "war-of-the-second-coalition",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "War of the Oranges"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-13",
       "id": "war-of-the-pacific",
       "kind": "event",
@@ -90774,6 +92184,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "disaster",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-27",
+      "id": "yellow-fever-in-buenos-aires",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Yellow fever in Buenos Aires"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -91135,6 +92575,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1718-tongwei-gansu-earthquake",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1755-lisbon-earthquake",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -91159,6 +92605,24 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1835-1858-revolt-in-ottoman-tripolitania",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1838-mormon-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1839-coringa-cyclone",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1860-civil-conflict-in-mount-lebanon-and-damascus",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -91166,6 +92630,12 @@
     },
     {
       "id": "1863-1875-cholera-pandemic",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "1868-arica-earthquake",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -91513,6 +92983,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "aegean-sea-anti-piracy-operations-of-the-united-states",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "afaqi-khoja-revolts",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -91544,6 +93020,12 @@
     },
     {
       "id": "akizuki-rebellion",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "akure-benin-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -91699,6 +93181,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "angoche-portuguese-conflicts-1847-1910",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "angolan-wars",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -91718,6 +93206,12 @@
     },
     {
       "id": "aponte-conspiracy",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "apostate-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -94501,6 +95995,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-shela",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-shiloh",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -95329,6 +96829,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "bengal-mrauk-u-war-1512-1516",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "benin-expedition-of-1897",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -95449,6 +96955,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "bombardment-of-tripoli-1828",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "bombing-in-zona-rosa-of-bogota-of-2003",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -95522,6 +97034,12 @@
     },
     {
       "id": "bundner-wirren",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "burlingame-treaty",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -95791,6 +97309,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "cattle-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "caucasian-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -95846,6 +97370,12 @@
     },
     {
       "id": "chickasaw-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "chilean-civil-war-of-1891",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -96247,6 +97777,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "dominican-restoration-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "dominican-war-of-independence",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -96367,6 +97903,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "egba-dahomey-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "egyptian-expedition-1882",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -96440,6 +97982,12 @@
     },
     {
       "id": "expedition-to-mostaganem-1558",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "expedition-to-the-west-coast-of-borneo",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -96661,6 +98209,12 @@
       "rule": "summary-imported"
     },
     {
+      "id": "first-maroon-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "first-melillan-campaign",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -96871,6 +98425,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "gran-colombia-peru-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "grattan-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -96896,6 +98456,12 @@
     },
     {
       "id": "great-game",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "great-hinckley-fire",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -97273,6 +98839,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "jambi-uprising",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "january-uprising",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -97459,6 +99031,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "langeberg-rebellion-1896-97",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "lao-rebellion-1826-1828",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -97496,6 +99074,18 @@
     },
     {
       "id": "libyan-crisis",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "lincoln-county-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "list-of-indigenous-rebellions-in-mexico-and-central-america",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -97574,6 +99164,12 @@
     },
     {
       "id": "malay-portuguese-conflicts",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "male-revolt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -97693,6 +99289,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "miao-rebellion-1735-1736",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "miao-rebellion-1795-1806",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "miao-rebellion-1854-1873",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -97724,6 +99332,12 @@
     },
     {
       "id": "modoc-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "mohmand-campaign-of-1897-1898",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -97783,6 +99397,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "mughal-conquest-of-bengal",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "mughal-safavid-war-1649-1653",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -97831,6 +99451,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "naning-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "nanjing-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -97844,6 +99470,12 @@
     },
     {
       "id": "naqib-al-ashraf-revolt",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "nat-turner-s-rebellion",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -97922,6 +99554,12 @@
     },
     {
       "id": "nez-perce-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "nias-expedition",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -98167,6 +99805,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "palembang-highlands-expeditions",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "palestro-ambush",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -98401,6 +100045,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "portuguese-conquest-of-the-banda-oriental",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "portuguese-conquest-of-the-east-african-coast",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -98450,6 +100100,12 @@
     },
     {
       "id": "prague-spring",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "preliminary-peace-convention-1828",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -100399,6 +102055,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "svaneti-uprising-of-1875-1876",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "swedish-invasion-of-russia",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -100675,6 +102337,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaties-of-velasco",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-adrianople-1829",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -100741,6 +102409,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-batticaloa",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-berlin-1878",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -100771,6 +102445,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-fort-jackson",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-fort-laramie-1851",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -100784,6 +102464,12 @@
     },
     {
       "id": "treaty-of-gandamak",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-ghilajharighat",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -100867,6 +102553,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-new-echota",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-nonsuch",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-nystad",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -100886,6 +102584,12 @@
     },
     {
       "id": "treaty-of-resht",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-rio-de-janeiro-1825",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -100969,6 +102673,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "treaty-of-traverse-des-sioux",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "treaty-of-tripoli",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -101006,6 +102716,12 @@
     },
     {
       "id": "trinh-nguyen-war",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "tripartite-convention",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -101084,6 +102800,12 @@
     },
     {
       "id": "united-states-invasion-of-panama",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "uprising-of-dervish-cara",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -101233,6 +102955,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "war-of-the-oranges",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "war-of-the-pacific",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -101342,6 +103070,12 @@
     },
     {
       "id": "yaqui-wars",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "yellow-fever-in-buenos-aires",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
