@@ -703,6 +703,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "al-wajbah-fort",
+      "kind": "place",
+      "names": [
+        "Al Wajbah",
+        "Al Wajbah Fort"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "alahabad-pakistan",
@@ -1186,6 +1214,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "anjangaon",
+      "kind": "place",
+      "names": [
+        "Anjangaon"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -1845,6 +1900,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "assam-q1164",
+      "kind": "place",
+      "names": [
+        "Assam",
+        "Assão"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 2,
       "id": "augsburg",
@@ -2322,6 +2405,35 @@
       "names": [
         "Bakhchysarai",
         "Bajchisarai"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 2,
+      "id": "bali-island",
+      "kind": "place",
+      "names": [
+        "Bali Island",
+        "Bali",
+        "Bali (island)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -3999,6 +4111,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "blouberg-range",
+      "kind": "place",
+      "names": [
+        "Blouberg",
+        "Blouberg (range)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -4413,7 +4553,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "brazil-q155",
       "kind": "place",
       "names": [
@@ -4716,7 +4856,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "british-raj-q129286",
       "kind": "place",
       "names": [
@@ -6946,7 +7086,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "china-q29520",
       "kind": "place",
       "names": [
@@ -7561,7 +7701,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 5,
       "id": "constantinople",
       "kind": "place",
       "names": [
@@ -7606,6 +7746,35 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "cordoba-veracruz",
+      "kind": "place",
+      "names": [
+        "Córdoba",
+        "Córdoba, Veracruz",
+        "Córdoba (Veracruz)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -10156,7 +10325,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "empire-of-japan",
       "kind": "place",
       "names": [
@@ -12177,7 +12346,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "georgia-q230",
       "kind": "place",
       "names": [
@@ -12491,7 +12660,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "gold-coast-region",
       "kind": "place",
       "names": [
@@ -13558,6 +13727,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "hazarajat",
+      "kind": "place",
+      "names": [
+        "Hazaristan",
+        "Hazarajat"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "heartbreak-ridge",
@@ -14222,7 +14419,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 4,
       "id": "hue",
       "kind": "place",
       "names": [
@@ -15671,7 +15868,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 19,
+      "degree": 24,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -16341,7 +16538,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "kanmon-straits",
       "kind": "place",
       "names": [
@@ -17724,6 +17921,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "kousseri",
+      "kind": "place",
+      "names": [
+        "Kousséri"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -20673,12 +20897,69 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "mangaluru",
+      "kind": "place",
+      "names": [
+        "Mangaluru",
+        "Mangalore",
+        "Mangalor"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
-      "degree": 3,
+      "degree": 4,
       "id": "manila",
       "kind": "place",
       "names": [
         "Manila"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "manipur-princely-state",
+      "kind": "place",
+      "names": [
+        "Manipur State",
+        "Manipur (princely state)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -22797,6 +23078,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "muar-town",
+      "kind": "place",
+      "names": [
+        "Muar",
+        "Muar (town)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-01",
       "degree": 1,
       "id": "mulleriyawa",
@@ -23273,7 +23582,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "nallur-jaffna",
       "kind": "place",
       "names": [
@@ -25049,7 +25358,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 9,
+      "degree": 10,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -25276,7 +25585,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "palestine-q23792",
       "kind": "place",
       "names": [
@@ -25916,6 +26225,34 @@
       ],
       "created": "2026-10-27",
       "degree": 1,
+      "id": "perak-q188953",
+      "kind": "place",
+      "names": [
+        "Perak",
+        "Peraque"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
       "id": "pereiaslav",
       "kind": "place",
       "names": [
@@ -25970,7 +26307,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 3,
       "id": "persian-gulf",
       "kind": "place",
       "names": [
@@ -28345,7 +28682,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "rif",
       "kind": "place",
       "names": [
@@ -28799,7 +29136,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "russian-empire-q34266",
       "kind": "place",
       "names": [
@@ -28971,7 +29308,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "sabah",
       "kind": "place",
       "names": [
@@ -30243,6 +30580,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "sason",
+      "kind": "place",
+      "names": [
+        "Sason"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "sathyamangalam",
@@ -31081,6 +31445,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "sikkim",
+      "kind": "place",
+      "names": [
+        "Sikkim",
+        "Siquim"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 2,
       "id": "silesia",
@@ -31676,7 +32068,7 @@
         }
       ],
       "created": "2026-10-15",
-      "degree": 2,
+      "degree": 3,
       "id": "south-india",
       "kind": "place",
       "names": [
@@ -34103,7 +34495,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "tibet-q17252",
       "kind": "place",
       "names": [
@@ -34932,6 +35324,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "tuen-mun",
+      "kind": "place",
+      "names": [
+        "Tuen Mun"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "tuileries-palace",
@@ -35391,7 +35810,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 3,
+      "degree": 4,
       "id": "uruguay-q77",
       "kind": "place",
       "names": [
@@ -35576,6 +35995,35 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "van-turkey",
+      "kind": "place",
+      "names": [
+        "Van",
+        "Vã",
+        "Van, Turkey"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

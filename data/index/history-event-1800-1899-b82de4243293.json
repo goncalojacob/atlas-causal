@@ -2,6 +2,15 @@
   "from": 1800,
   "kind": "event",
   "records": {
+    "1812-1819-ottoman-plague-epidemic": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "1860-civil-conflict-in-mount-lebanon-and-damascus": {
       "from": "git",
       "versions": [
@@ -26,6 +35,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "1876-bengal-cyclone": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -218,6 +236,15 @@
             "retraction"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "1894-sasun-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -441,6 +468,15 @@
         }
       ]
     },
+    "adamawa-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "adams-onis-treaty": {
       "from": "git",
       "versions": [
@@ -459,12 +495,30 @@
         }
       ]
     },
+    "akizuki-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "alaska-purchase": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "albanian-revolt-of-1845": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -510,6 +564,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "anglo-manipur-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -727,6 +790,15 @@
         }
       ]
     },
+    "banjarmasin-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "bannock-war": {
       "from": "git",
       "versions": [
@@ -839,6 +911,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-al-wajbah": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -2693,6 +2774,15 @@
         }
       ]
     },
+    "battle-of-shimonoseki-straits": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "battle-of-shipu": {
       "from": "git",
       "versions": [
@@ -3074,6 +3164,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-tres-forcas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -3644,6 +3743,15 @@
         }
       ]
     },
+    "burmese-invasions-of-assam": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "burney-treaty": {
       "from": "git",
       "versions": [
@@ -3758,6 +3866,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "chichibu-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -4040,6 +4157,15 @@
         }
       ]
     },
+    "defense-of-van-1896": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "demerara-rebellion-of-1823": {
       "from": "git",
       "versions": [
@@ -4148,6 +4274,33 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "dutch-ahanta-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "dutch-intervention-in-bali-1849": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "dutch-intervention-in-northern-bali-1848": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -4397,6 +4550,15 @@
         }
       ]
     },
+    "first-choshu-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "first-franco-dahomean-war": {
       "from": "git",
       "versions": [
@@ -4565,6 +4727,15 @@
         }
       ]
     },
+    "first-melillan-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "first-opium-war": {
       "from": "git",
       "versions": [
@@ -4699,6 +4870,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "franco-trarzan-war-of-1825": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -4855,6 +5035,15 @@
         }
       ]
     },
+    "great-rebellion-of-1817-1818": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "great-sioux-war-of-1876": {
       "from": "git",
       "versions": [
@@ -4920,12 +5109,30 @@
         }
       ]
     },
+    "hagi-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "haymarket-affair": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "hazara-genocide": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -4943,6 +5150,15 @@
             "summary"
           ],
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "herzegovina-uprising-1852-1862": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -4988,6 +5204,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "hunza-nagar-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -5148,6 +5373,15 @@
         }
       ]
     },
+    "jementah-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "jicarilla-war": {
       "from": "git",
       "versions": [
@@ -5220,6 +5454,24 @@
         }
       ]
     },
+    "khivan-campaign-of-1839-1840": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "khivan-campaign-of-1873": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "lang-son-campaign": {
       "from": "git",
       "versions": [
@@ -5235,6 +5487,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "le-van-khoi-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -5301,6 +5562,15 @@
         }
       ]
     },
+    "malaboch-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "mandingo-wars": {
       "from": "git",
       "versions": [
@@ -5316,6 +5586,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "mat-salleh-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -5413,6 +5692,24 @@
         }
       ]
     },
+    "miao-rebellion-1854-1873": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "mito-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "modoc-war": {
       "from": "git",
       "versions": [
@@ -5473,6 +5770,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "nepal-tibet-war-1855-1856": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -5554,6 +5860,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "ottoman-coups-of-1807-1808": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -5697,12 +6012,39 @@
         }
       ]
     },
+    "peasant-s-revolt-in-palestine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "peninsular-war": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "perak-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "persian-gulf-campaign-of-1809": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -5885,6 +6227,15 @@
         }
       ]
     },
+    "platine-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "porfiriato": {
       "from": "git",
       "versions": [
@@ -5951,6 +6302,24 @@
         }
       ]
     },
+    "punti-hakka-clan-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "qatari-bahraini-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "qing-reconquest-of-xinjiang": {
       "from": "git",
       "versions": [
@@ -5975,6 +6344,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "rebellion-in-guria-1841": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -6011,6 +6389,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "red-turban-rebellion-1854-1856": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -6312,6 +6699,15 @@
         }
       ]
     },
+    "second-choshu-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "second-franco-dahomean-war": {
       "from": "git",
       "versions": [
@@ -6507,6 +6903,24 @@
       ]
     },
     "shinpuren-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "siamese-vietnamese-war-1833-1834": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "siamese-vietnamese-war-1840-1845": {
       "from": "git",
       "versions": [
         {
@@ -6872,6 +7286,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "sikkim-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -7292,6 +7715,15 @@
         }
       ]
     },
+    "tirah-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "tobacco-protest": {
       "from": "git",
       "versions": [
@@ -7427,6 +7859,15 @@
         }
       ]
     },
+    "treaty-of-cordoba": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "treaty-of-fort-laramie-1851": {
       "from": "git",
       "versions": [
@@ -7460,6 +7901,24 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-hue-1863": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "treaty-of-hue-1883": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -7600,6 +8059,15 @@
         }
       ]
     },
+    "treaty-of-surji-anjangaon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "treaty-of-tangier-1844": {
       "from": "git",
       "versions": [
@@ -7624,6 +8092,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-titalia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -7783,6 +8260,15 @@
       ]
     },
     "uruguayan-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "uruguayan-war": {
       "from": "git",
       "versions": [
         {
@@ -8016,6 +8502,15 @@
       ]
     },
     "young-ireland-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "zeitun-rebellion-1895-96": {
       "from": "git",
       "versions": [
         {

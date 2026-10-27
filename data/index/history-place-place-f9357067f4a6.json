@@ -246,6 +246,15 @@
         }
       ]
     },
+    "al-wajbah-fort": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "alahabad-pakistan": {
       "from": "git",
       "versions": [
@@ -449,6 +458,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "anjangaon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -701,6 +719,15 @@
         }
       ]
     },
+    "assam-q1164": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "augsburg": {
       "from": "git",
       "versions": [
@@ -903,6 +930,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "bali-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -1593,6 +1629,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "blouberg-range": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -3175,6 +3220,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "cordoba-veracruz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -5741,6 +5795,15 @@
         }
       ]
     },
+    "hazarajat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "heartbreak-ridge": {
       "from": "git",
       "versions": [
@@ -7412,6 +7475,15 @@
         }
       ]
     },
+    "kousseri": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "kronstadt": {
       "from": "git",
       "versions": [
@@ -8723,12 +8795,30 @@
         }
       ]
     },
+    "mangaluru": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "manila": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "manipur-princely-state": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -9614,6 +9704,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "muar-town": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -10940,6 +11039,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "perak-q188953": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -12879,6 +12987,15 @@
         }
       ]
     },
+    "sason": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "sathyamangalam": {
       "from": "git",
       "versions": [
@@ -13214,6 +13331,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "sikkim": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -14832,6 +14958,15 @@
         }
       ]
     },
+    "tuen-mun": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "tuileries-palace": {
       "from": "git",
       "versions": [
@@ -15135,6 +15270,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "van-turkey": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },

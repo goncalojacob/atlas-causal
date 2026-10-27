@@ -7996,6 +7996,15 @@
         }
       ]
     },
+    "battle-of-kousseri": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "battle-of-kursk": {
       "from": "git",
       "versions": [
