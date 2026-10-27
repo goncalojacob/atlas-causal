@@ -558,9 +558,19 @@ export async function open(page, url, ready = 'return document.querySelectorAll(
   // open here when it has painted. Bounded like everything else in this file,
   // and a page that never paints still reaches the test, which has its own
   // assertion about that and a better sentence for it.
-  for (let tries = 0; tries < 200; tries += 1) {
+  //
+  // Fifteen seconds rather than ten, and a nudge each second after the first:
+  // on the runner's newer Chrome three of four runs ended with `never reported
+  // a first contentful paint` on pages that were drawn, because a headless
+  // browser with nothing changing on screen can go on without presenting the
+  // frame the paint timing is recorded at. A screenshot asks for one. It
+  // changes nothing on the page, and a page that painted on its own never
+  // gets that far.
+  for (let tries = 0; tries < 300; tries += 1) {
     // eslint-disable-next-line no-await-in-loop
     if (await page.eval('return performance.getEntriesByType("paint").some((e) => e.name === "first-contentful-paint");')) break;
+    // eslint-disable-next-line no-await-in-loop
+    if (tries >= 20 && tries % 20 === 0) await page.send('Page.captureScreenshot', { format: 'jpeg', quality: 1 }).catch(() => {});
     // eslint-disable-next-line no-await-in-loop
     await new Promise((resolve) => { setTimeout(resolve, 50); });
   }
