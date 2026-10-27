@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "rouen",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q30974",
+  "sitelinks": {
+    "count": 143,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Rouen",
+    "pt": "Ruão"
+  },
+  "sources": [],
+  "names": [
+    "Rouen",
+    "Ruão"
+  ],
+  "where": {
+    "lon": 1.1025,
+    "lat": 49.443055555556,
+    "precision": "city",
+    "label": "Rouen"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

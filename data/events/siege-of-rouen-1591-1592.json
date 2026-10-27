@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-rouen-1591-1592",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510351",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Siege of Rouen (1591–1592)",
+    "pt": "Cerco de Rouen (1591-1592)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510351"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Rouen (1591–1592)\", revision 1371377045"
+    }
+  ],
+  "title": "Siege of Rouen (1591–1592)",
+  "summary": "The English Wikipedia article \"Siege of Rouen (1591–1592)\", at revision 1371377045, opens: \"The siege of Rouen was an unsuccessful attempt by Henry IV of France to capture Rouen, the historical capital city of Normandy. The battle took place as part of the French Wars of Religion, the Eighty Years' War, and the Anglo–Spanish War (1585–1604). Although he had claimed the throne in 1589, Henry, a Huguenot, was not recognized by many of his Catholic subjects. He was forced to fight against a Catholic League determined to resist his rule, and which was aided by Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510351, imported by tools/import/wikidata.mjs. The item's own description reads \"1591–1592 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1591,
+    "end": 1592,
+    "date": "1591-11-11",
+    "endDate": "1592-04-20"
+  },
+  "place": "rouen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-wars-of-religion"
+}

@@ -24072,6 +24072,7 @@ browser failure did not reproduce, here or on the runner, so this fire reads 313
 where the previous stand carried it as standing.
 
 ## Milestones landed
+Local writer 2026-10-27T14:44:58Z: 71 written ( (finished by hand) )
 
 Writer B started 2026-10-15T23:42:00Z by scheduled
 Writer B started 2026-10-16T06:42:30Z by scheduled
@@ -24079,6 +24080,8 @@ Writer B started 2026-10-16T18:42:44Z by scheduled
 Writer B started 2026-10-17T04:42:11Z by scheduled
 Writer B started 2026-10-17T05:41:53Z by scheduled
 
+Writer A started 2026-10-17T06:22:21Z by scheduled
+Writer A 2026-10-17T06:30:07Z: 36 written, 1 partial, 3 refused, 0 skipped
 Writer B 2026-10-15T23:42:00Z: 0 written, 0 partial, 3 refused, 7 skipped
 Writer B 2026-10-16T18:51:39Z: 39 written, 0 partial, 1 refused, 0 skipped
 Writer B 2026-10-17T04:48:57Z: 23 written, 0 partial, 17 refused, 0 skipped
@@ -26051,3 +26054,5 @@ Writer B 2026-10-17T03:45:00Z: 5 written, 0 partial, 1 refused, 4 skipped
 Writer A started 2026-10-17T04:24:08Z by scheduled
 
 Writer A 2026-10-17T04:24:08Z: 26 written, 0 partial, 14 refused, 0 skipped
+Writer B started 2026-10-17T06:42:01Z by scheduled
+Writer B 2026-10-17T06:48:41Z: 33 written, 0 partial, 6 refused, 1 skipped

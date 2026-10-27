@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "seneca-falls-convention",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2736155",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Seneca Falls Convention",
+    "pt": "Convenção de Seneca Falls"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2736155"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Seneca Falls Convention\", revision 1370695282"
+    }
+  ],
+  "title": "Seneca Falls Convention",
+  "summary": "The English Wikipedia article \"Seneca Falls Convention\", at revision 1370695282, opens: \"The Seneca Falls Convention was the first women's rights convention. Its organizers advertised it as \"a convention to discuss the social, civil, and religious condition and rights of woman\". Held in the Wesleyan Chapel of the town of Seneca Falls, New York, it spanned two days over July 19–20, 1848. Attracting widespread attention, it was soon followed by other women's rights conventions, including the Rochester Women's Rights Convention in Rochester, New York, two weeks later. In 1850 the first in a series of annual National Women's Rights Conventions met in Worcester, Massachusetts.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2736155, imported by tools/import/wikidata.mjs. The item's own description reads \"1848 women's rights convention in New York\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-07-19",
+    "endDate": "1848-07-20"
+  },
+  "place": "seneca-falls-new-york",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

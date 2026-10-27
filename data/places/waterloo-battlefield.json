@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "waterloo-battlefield",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q16507442",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-17"
+  },
+  "sources": [],
+  "names": [
+    "Waterloo Battlefield"
+  ],
+  "where": {
+    "lon": 4.406315801093463,
+    "lat": 50.67591267197881,
+    "precision": "point",
+    "label": "Waterloo Battlefield"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

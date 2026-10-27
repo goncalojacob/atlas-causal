@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bladensburg-maryland",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q174272",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Bladensburg, Maryland",
+    "pt": "Bladensburg"
+  },
+  "sources": [],
+  "names": [
+    "Bladensburg",
+    "Bladensburg, Maryland"
+  ],
+  "where": {
+    "lon": -76.93388888888889,
+    "lat": 38.939166666666665,
+    "precision": "city",
+    "label": "Bladensburg, Maryland"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "capture-of-east-india-company-ship-nautilus",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q16825552",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Capture of East India Company ship Nautilus"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16825552"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of East India Company ship Nautilus\", revision 1370608552"
+    }
+  ],
+  "title": "Capture of East India Company ship Nautilus",
+  "summary": "The English Wikipedia article \"Capture of East India Company ship Nautilus\", at revision 1370608552, opens: \"The capture of East India Company ship Nautilus was a single-ship action which took place on June 30, 1815 as part of the War of 1812. It occurred during the third voyage of United States Navy sloop-of-war USS Peacock under the command of Master Commandant Lewis Warrington. Though the conflict had ended six months earlier thanks to the Treaty of Ghent, a fact which Warrington knew about, he attacked the East India Company brig HCS Nautilus after its commander, Charles Boyce, refused to strike his colours. Peacock opened fire, inflicting several casualties on the crew of Nautilus and forcing her surrender, though Warrington released the brig after Boyce provided documents pertaining to the treaty. The action was the last military engagement of the conflict.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16825552, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-06-30"
+  },
+  "place": "sunda-strait",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

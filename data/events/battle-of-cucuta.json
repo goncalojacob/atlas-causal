@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cucuta",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888371",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Cúcuta"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888371"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cúcuta\", revision 1380359051"
+    }
+  ],
+  "title": "Battle of Cúcuta",
+  "summary": "The English Wikipedia article \"Battle of Cúcuta\", at revision 1380359051, opens: \"The Battle of Cúcuta was a military conflict in the Spanish American wars of independence fought on 28 February 1813 between the pro-independence forces led by Simón Bolívar and Spanish royalist troops under General Ramón Correa at the town of Cúcuta, in present-day Colombia, close to the border with Venezuela. Bolivar was victorious. The battle gained him much support and immediately preceded his march into Venezuela, later dubbed the Admirable Campaign.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888371, imported by tools/import/wikidata.mjs. The item's own description reads \"2025 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-02-28"
+  },
+  "place": "cucuta",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "venezuelan-war-of-independence"
+}

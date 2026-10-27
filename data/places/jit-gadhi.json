@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "jit-gadhi",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q109593804",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Jit Gadhi"
+  },
+  "sources": [],
+  "names": [
+    "Jit Gadhi"
+  ],
+  "where": {
+    "lon": 83.45955422881201,
+    "lat": 27.703441600641476,
+    "precision": "point",
+    "label": "Jit Gadhi"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

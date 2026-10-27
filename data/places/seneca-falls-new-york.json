@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "seneca-falls-new-york",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2270851",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Seneca Falls, New York"
+  },
+  "sources": [],
+  "names": [
+    "Seneca Falls",
+    "Seneca Falls, New York"
+  ],
+  "where": {
+    "lon": -76.79027777777777,
+    "lat": 42.91361111111111,
+    "precision": "city",
+    "label": "Seneca Falls, New York"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

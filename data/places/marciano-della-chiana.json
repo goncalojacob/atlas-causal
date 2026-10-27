@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "marciano-della-chiana",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q52085",
+  "sitelinks": {
+    "count": 54,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Marciano della Chiana",
+    "pt": "Marciano della Chiana"
+  },
+  "sources": [],
+  "names": [
+    "Marciano della Chiana"
+  ],
+  "where": {
+    "lon": 11.7875,
+    "lat": 43.305833333333,
+    "precision": "city",
+    "label": "Marciano della Chiana"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

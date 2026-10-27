@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-trafalgar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q171416",
+  "sitelinks": {
+    "count": 77,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Trafalgar",
+    "pt": "Batalha de Trafalgar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q171416"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Trafalgar\", revision 1377500939"
+    }
+  ],
+  "title": "Battle of Trafalgar",
+  "summary": "The English Wikipedia article \"Battle of Trafalgar\", at revision 1377500939, opens: \"The Battle of Trafalgar was a fleet action which took place on 21 October 1805 between the Royal Navy and a combined fleet of the French and Spanish navies during the War of the Third Coalition. As part of Napoleon's planned invasion of the United Kingdom, the French and Spanish navies planned to take control of the English Channel and provide the French invasion army with safe passage to Britain. The allied fleet, under the command of French Vice-admiral Pierre-Charles Villeneuve, sailed from the port of Cádiz in southern Spain on 18 October 1805. It encountered a British fleet under Vice-Admiral of the White Horatio Nelson, 1st Viscount Nelson in the Atlantic Ocean along the southwest coast of Spain off Cape Trafalgar.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q171416, imported by tools/import/wikidata.mjs. The item's own description reads \"1805 battle during the War of the Third Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1805,
+    "end": 1805,
+    "date": "1805-10-21"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "powder-river-country",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q266864",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Powder River Country"
+  },
+  "sources": [],
+  "names": [
+    "Powder River Country"
+  ],
+  "where": {
+    "lon": -105.5,
+    "lat": 44.5,
+    "precision": "region",
+    "label": "Powder River Country"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "reconstruction-era",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q623429",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Reconstruction era",
+    "pt": "Era da Reconstrução"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q623429"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Reconstruction era\", revision 1380016369"
+    }
+  ],
+  "title": "Reconstruction era",
+  "summary": "The English Wikipedia article \"Reconstruction era\", at revision 1380016369, opens: \"The Reconstruction era, often simply called Reconstruction, was a period in United States history that followed the American Civil War (1861–1865) and was dominated by the legal, social, and political challenges of the abolition of slavery and federal control over, and reintegration of, the former Confederate States into the United States. Three amendments were added to the United States Constitution to grant citizenship and equal civil rights to the newly freed slaves. To circumvent these, former Confederate states imposed poll taxes and literacy tests and sought to intimidate and control the Black population and discourage or prevent them from voting.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q623429, imported by tools/import/wikidata.mjs. The item's own description reads \"era after American Civil War (1865–1877)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1877,
+    "date": "1863-12-08",
+    "endDate": "1877-03-31"
+  },
+  "place": "southern-united-states",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

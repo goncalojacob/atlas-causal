@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-jaithak",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4871304",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Jaithak"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4871304"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Jaithak\", revision 1370266236"
+    }
+  ],
+  "title": "Battle of Jaithak",
+  "summary": "The English Wikipedia article \"Battle of Jaithak\", at revision 1370266236, opens: \"The Battle of Jaithak is the subsequent battle fought by the 53rd division of East India Company after the Battle of Nalapani against Nepalese forces. Nalapani had cost both sides dearly, but in Nahan and Jaithak further west, they were to suffer more. Kazi Amar Singh Thapa’s son, Ranajor Singh Thapa, was in command there. Nahan had been left undefended. Ranajor Singh had orders from his father to retire to a position north of the Nahan town, and to occupy the surrounding heights and the fort of Jaithak, situated at a point where two spurs of mountainous ridges meet, and the peak at the intersection rises to a height of 3,600 feet above the level of the plains. Major-General Martindell, who had assumed command of the forces of Major-General Robert Rollo Gillespie, who had been killed during the Nalapani Fort siege, took possession of Nahan on 24 December 1814 and immediately set about preparations for the attack on Ranajor Singh's positions.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4871304, imported by tools/import/wikidata.mjs. The item's own description reads \"1815 battle of the Anglo-Nepalese War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-09-25"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-nepalese-war"
+}

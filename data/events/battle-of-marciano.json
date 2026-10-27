@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-marciano",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2628768",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Marciano"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2628768"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Marciano\", revision 1382136351"
+    }
+  ],
+  "title": "Battle of Marciano",
+  "summary": "The English Wikipedia article \"Battle of Marciano\", at revision 1382136351, opens: \"The Battle of Marciano occurred in the countryside of Marciano della Chiana, near Arezzo, Tuscany, on August 2, 1554, during the Italian War of 1551. The battle pitted an army of the Duchy of Florence and the Empire of Charles V, commanded by Gian Giacomo Medici, and an army of the Republic of Siena and France, led by Piero Strozzi. The Imperial-Florentine army inflicted a crushing victory, marking the defeat of the Republic of Siena and leading to its absorption into the Duchy of Florence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2628768, imported by tools/import/wikidata.mjs. The item's own description reads \"1554 battle of the Italian War of 1551–1559\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1554,
+    "end": 1554,
+    "date": "1554-08-02"
+  },
+  "place": "marciano-della-chiana",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "italian-war-of-1551-1559"
+}

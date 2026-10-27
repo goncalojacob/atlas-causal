@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "neerwinden",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q991231",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Neerwinden"
+  },
+  "sources": [],
+  "names": [
+    "Neerwinden"
+  ],
+  "where": {
+    "lon": 5.0372,
+    "lat": 50.7656,
+    "precision": "city",
+    "label": "Neerwinden"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

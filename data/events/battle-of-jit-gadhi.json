@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-jit-gadhi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q109849716",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Jit Gadhi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q109849716"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Jit Gadhi\", revision 1370266408"
+    }
+  ],
+  "title": "Battle of Jit Gadhi",
+  "summary": "The English Wikipedia article \"Battle of Jit Gadhi\", at revision 1370266408, opens: \"The Battle of Jit Gadhi was fought in 1814 in Jit Gadhi, Lumbini Province between Nepal and the East India Company.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q109849716, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 battle between Nepal and the East India Company\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814
+  },
+  "place": "jit-gadhi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-nepalese-war"
+}

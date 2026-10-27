@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "seminole-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q900693",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Seminole Wars",
+    "pt": "Guerras Seminoles"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q900693"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Seminole Wars\", revision 1379033093"
+    }
+  ],
+  "title": "Seminole Wars",
+  "summary": "The English Wikipedia article \"Seminole Wars\", at revision 1379033093, opens: \"The Seminole Wars were a series of three military conflicts between the United States and the Seminoles that took place in Florida between about 1816 and 1858. The Seminole Tribe of Florida tend to view the conflict as one long war as opposed to three separate wars. This happened because even when the Seminole were not in direct conflict with the Army, they still faced violence and aggression from American settlers, local militias, lawmen, and slave catchers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q900693, imported by tools/import/wikidata.mjs. The item's own description reads \"19th-century wars between the United States Army and the Seminole people of Florida\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1816,
+    "end": 1858
+  },
+  "place": "florida-q812",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}
