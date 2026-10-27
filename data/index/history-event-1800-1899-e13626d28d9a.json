@@ -2,6 +2,15 @@
   "from": 1800,
   "kind": "event",
   "records": {
+    "1860-civil-conflict-in-mount-lebanon-and-damascus": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "1863-1875-cholera-pandemic": {
       "from": "git",
       "versions": [
@@ -405,6 +414,15 @@
         }
       ]
     },
+    "acre-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "action-of-1-august-1801": {
       "from": "git",
       "versions": [
@@ -513,6 +531,15 @@
         }
       ]
     },
+    "anglo-turkish-war-1807-1809": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "anglo-zanzibar-war": {
       "from": "git",
       "versions": [
@@ -583,12 +610,30 @@
         }
       ]
     },
+    "apache-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "aponte-conspiracy": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "argentine-civil-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -661,6 +706,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "bakumatsu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -2400,6 +2454,15 @@
         }
       ]
     },
+    "battle-of-pichincha": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "battle-of-plattsburgh": {
       "from": "git",
       "versions": [
@@ -2591,6 +2654,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-sedan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -3530,6 +3602,15 @@
         }
       ]
     },
+    "brazilian-war-of-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "british-expedition-to-abyssinia": {
       "from": "git",
       "versions": [
@@ -3551,6 +3632,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "british-invasions-of-the-river-plate": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -3653,6 +3743,15 @@
         }
       ]
     },
+    "caste-war-of-yucatan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "cayuse-war": {
       "from": "git",
       "versions": [
@@ -3692,6 +3791,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "circassian-genocide": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -4648,6 +4756,15 @@
         }
       ]
     },
+    "french-expedition-to-korea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "french-invasion-of-russia": {
       "from": "git",
       "versions": [
@@ -4663,6 +4780,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "ganghwa-island-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -4826,6 +4952,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "history-of-egypt-under-the-british": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -5139,6 +5274,15 @@
         }
       ]
     },
+    "little-war-cuba": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "los-andes-vs-prueba": {
       "from": "git",
       "versions": [
@@ -5184,12 +5328,30 @@
         }
       ]
     },
+    "may-uprising-in-dresden": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "medea-expedition-1830": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "meiji-era": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -5266,6 +5428,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "morant-bay-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -5359,6 +5530,15 @@
         }
       ]
     },
+    "occupation-of-araucania": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "oregon-treaty": {
       "from": "git",
       "versions": [
@@ -5374,6 +5554,33 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "ottoman-wahhabi-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "overthrow-of-the-hawaiian-kingdom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "padri-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -5473,6 +5680,15 @@
       ]
     },
     "patriot-war-florida": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "peace-of-pressburg-1805": {
       "from": "git",
       "versions": [
         {
@@ -5660,6 +5876,24 @@
         }
       ]
     },
+    "pig-war-1859": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "porfiriato": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "powder-river-expedition-1865": {
       "from": "git",
       "versions": [
@@ -5831,6 +6065,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "saga-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -6118,6 +6361,15 @@
         }
       ]
     },
+    "second-italian-war-of-independence": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "second-madagascar-expedition": {
       "from": "git",
       "versions": [
@@ -6191,6 +6443,15 @@
         }
       ]
     },
+    "second-seminole-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "second-siege-of-callao": {
       "from": "git",
       "versions": [
@@ -6233,6 +6494,24 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "shimonoseki-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "shinpuren-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -7022,6 +7301,15 @@
         }
       ]
     },
+    "toledo-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "tonkin-campaign": {
       "from": "git",
       "versions": [
@@ -7130,6 +7418,33 @@
         }
       ]
     },
+    "treaty-of-berlin-1878": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "treaty-of-fort-laramie-1851": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "treaty-of-frankfurt-1871": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "treaty-of-gandamak": {
       "from": "git",
       "versions": [
@@ -7145,6 +7460,24 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-hue-1884": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "treaty-of-kiel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -7237,6 +7570,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-schonbrunn": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -7422,12 +7764,39 @@
         }
       ]
     },
+    "united-states-expedition-to-korea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "urabi-revolt": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "uruguayan-civil-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "utah-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -7458,6 +7827,15 @@
         }
       ]
     },
+    "victorian-era": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "wahhabi-sack-of-karbala": {
       "from": "git",
       "versions": [
@@ -7482,6 +7860,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "war-of-canudos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },

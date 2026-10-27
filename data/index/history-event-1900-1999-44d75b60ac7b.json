@@ -12829,6 +12829,15 @@
         }
       ]
     },
+    "first-geneva-convention": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "first-indochina-war": {
       "from": "git",
       "versions": [

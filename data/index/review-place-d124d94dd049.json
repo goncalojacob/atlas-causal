@@ -35,6 +35,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "aachen",
+      "kind": "place",
+      "names": [
+        "Aachen"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-30",
       "degree": 1,
       "id": "abancay-river-ford",
@@ -1345,6 +1372,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "arabian-peninsula",
+      "kind": "place",
+      "names": [
+        "Arabian Peninsula",
+        "Arábia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -1431,7 +1486,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "argentina-q414",
       "kind": "place",
       "names": [
@@ -3532,7 +3587,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 7,
+      "degree": 8,
       "id": "berlin",
       "kind": "place",
       "names": [
@@ -4202,7 +4257,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 2,
+      "degree": 3,
       "id": "boston",
       "kind": "place",
       "names": [
@@ -4216,6 +4271,33 @@
           "imported-facts",
           "a9-place",
           "m42b-batch-54"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "bouchain",
+      "kind": "place",
+      "names": [
+        "Bouchain"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
         ],
         "status": "draft"
       },
@@ -4300,11 +4382,38 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "bratislava",
+      "kind": "place",
+      "names": [
+        "Bratislava"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "brazil-q155",
       "kind": "place",
       "names": [
@@ -4921,7 +5030,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "buenos-aires",
       "kind": "place",
       "names": [
@@ -4948,7 +5057,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "bulgaria-q219",
       "kind": "place",
       "names": [
@@ -5570,6 +5679,35 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "captaincy-general-of-cuba-q2039931",
+      "kind": "place",
+      "names": [
+        "Captaincy General of Cuba",
+        "Antilhas Espanholas",
+        "Capitania-Geral de Cuba"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -6752,7 +6890,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "chile-q298",
       "kind": "place",
       "names": [
@@ -8147,6 +8285,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "dardanelles",
+      "kind": "place",
+      "names": [
+        "Dardanelles",
+        "Dardanelos"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -9124,6 +9290,33 @@
       ],
       "created": "2026-10-27",
       "degree": 1,
+      "id": "dresden",
+      "kind": "place",
+      "names": [
+        "Dresden"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
       "id": "dreux",
       "kind": "place",
       "names": [
@@ -9627,7 +9820,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "egypt-q79",
       "kind": "place",
       "names": [
@@ -10254,7 +10447,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 10,
+      "degree": 11,
       "id": "europe",
       "kind": "place",
       "names": [
@@ -10646,7 +10839,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 2,
+      "degree": 3,
       "id": "florida-q812",
       "kind": "place",
       "names": [
@@ -10921,6 +11114,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "fort-laramie-wyoming",
+      "kind": "place",
+      "names": [
+        "Fort Laramie",
+        "Fort Laramie, Wyoming"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "fort-liberte",
@@ -11154,6 +11375,34 @@
       "names": [
         "Franche-Comté",
         "Franco-Condado"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "frankfurt",
+      "kind": "place",
+      "names": [
+        "Frankfurt",
+        "Frankfurt am Main"
       ],
       "origin": {
         "tool": "wikidata"
@@ -11700,6 +11949,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 3,
+      "id": "ganghwa-island",
+      "kind": "place",
+      "names": [
+        "Ganghwa Island",
+        "Ilha Ganghwa"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 5,
       "id": "gao",
@@ -11816,7 +12093,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "geneva-q71",
       "kind": "place",
       "names": [
@@ -13778,6 +14055,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "honolulu",
+      "kind": "place",
+      "names": [
+        "Honolulu"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 1,
       "id": "hooghly-river",
@@ -13918,7 +14222,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "hue",
       "kind": "place",
       "names": [
@@ -14389,7 +14693,7 @@
         }
       ],
       "created": "2026-10-14",
-      "degree": 3,
+      "degree": 4,
       "id": "indian-subcontinent",
       "kind": "place",
       "names": [
@@ -15367,7 +15671,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 15,
+      "degree": 19,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -16015,6 +16319,34 @@
       "names": [
         "Kandahar",
         "Candaar"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "kanmon-straits",
+      "kind": "place",
+      "names": [
+        "Kanmon Straits",
+        "Estreito de Kanmon"
       ],
       "origin": {
         "tool": "wikidata"
@@ -16766,6 +17098,34 @@
       ],
       "created": "2026-10-27",
       "degree": 1,
+      "id": "kiel",
+      "kind": "place",
+      "names": [
+        "Kiel",
+        "Quiel"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
       "id": "kielce",
       "kind": "place",
       "names": [
@@ -17449,6 +17809,62 @@
         "Ksar es-Seghir",
         "Alcácer Ceguer",
         "Alcácer-Ceguer"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "kumamoto",
+      "kind": "place",
+      "names": [
+        "Kumamoto",
+        "Kumamoto (cidade)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "kunashir",
+      "kind": "place",
+      "names": [
+        "Kunashir Island",
+        "Kunashir"
       ],
       "origin": {
         "tool": "wikidata"
@@ -21035,7 +21451,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "menorca",
       "kind": "place",
       "names": [
@@ -21117,7 +21533,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 5,
+      "degree": 6,
       "id": "mexico-q96",
       "kind": "place",
       "names": [
@@ -21959,6 +22375,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "morant-bay",
+      "kind": "place",
+      "names": [
+        "Morant Bay"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 1,
       "id": "mormugao",
@@ -22030,6 +22473,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "mosonmagyarovar",
+      "kind": "place",
+      "names": [
+        "Mosonmagyaróvár"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -22159,7 +22629,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "mount-lebanon",
       "kind": "place",
       "names": [
@@ -23096,6 +23566,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "nerchinsk",
+      "kind": "place",
+      "names": [
+        "Nerchinsk",
+        "Nertchinsk"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -24551,7 +25049,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 8,
+      "degree": 9,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -25418,6 +25916,34 @@
       ],
       "created": "2026-10-27",
       "degree": 1,
+      "id": "pereiaslav",
+      "kind": "place",
+      "names": [
+        "Pereiaslav",
+        "Pereiaslave"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
       "id": "perevolochna",
       "kind": "place",
       "names": [
@@ -25980,6 +26506,33 @@
       "kind": "place",
       "names": [
         "Pondicherry"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "poniec",
+      "kind": "place",
+      "names": [
+        "Poniec"
       ],
       "origin": {
         "tool": "wikidata"
@@ -26955,7 +27508,7 @@
         }
       ],
       "created": "2026-10-14",
-      "degree": 2,
+      "degree": 3,
       "id": "punjab-q169132",
       "kind": "place",
       "names": [
@@ -27283,6 +27836,33 @@
           "a9-place"
         ],
         "note": "Place written by the run that imported the event, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record its P276 names was not here, so the event came out placeless. The point and the names are the item's own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "quito",
+      "kind": "place",
+      "names": [
+        "Quito"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -28077,6 +28657,33 @@
       ],
       "created": "2026-10-27",
       "degree": 1,
+      "id": "roskilde",
+      "kind": "place",
+      "names": [
+        "Roskilde"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
       "id": "rouen",
       "kind": "place",
       "names": [
@@ -28192,7 +28799,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "russian-empire-q34266",
       "kind": "place",
       "names": [
@@ -29018,6 +29625,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "san-juan-islands",
+      "kind": "place",
+      "names": [
+        "San Juan Islands",
+        "Ilhas San Juan"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -31445,7 +32080,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "southwestern-united-states",
       "kind": "place",
       "names": [
@@ -32340,7 +32975,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "sumatra",
       "kind": "place",
       "names": [
@@ -34641,7 +35276,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 21,
+      "degree": 22,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -34756,7 +35391,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 3,
       "id": "uruguay-q77",
       "kind": "place",
       "names": [
@@ -34824,6 +35459,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "uusikaupunki",
+      "kind": "place",
+      "names": [
+        "Uusikaupunki"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -36816,6 +37478,34 @@
           "imported-facts",
           "a9-place",
           "m42b-batch-54"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "yucatan-peninsula",
+      "kind": "place",
+      "names": [
+        "Yucatan Peninsula",
+        "Península de Iucatã"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
         ],
         "status": "draft"
       },

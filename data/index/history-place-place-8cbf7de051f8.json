@@ -11,6 +11,15 @@
         }
       ]
     },
+    "aachen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "abancay-river-ford": {
       "from": "git",
       "versions": [
@@ -506,6 +515,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "arabian-peninsula": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -1707,6 +1725,15 @@
         }
       ]
     },
+    "bouchain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "braga": {
       "from": "git",
       "versions": [
@@ -1752,6 +1779,15 @@
         {
           "first": true,
           "on": "2026-09-18"
+        }
+      ]
+    },
+    "bratislava": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -2300,6 +2336,15 @@
             "names"
           ],
           "on": "2026-09-16"
+        }
+      ]
+    },
+    "captaincy-general-of-cuba-q2039931": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -3400,6 +3445,15 @@
         }
       ]
     },
+    "dardanelles": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "darfur-q46733": {
       "from": "git",
       "versions": [
@@ -3852,6 +3906,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "dresden": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -4645,6 +4708,15 @@
         }
       ]
     },
+    "fort-laramie-wyoming": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "fort-liberte": {
       "from": "git",
       "versions": [
@@ -4735,6 +4807,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "frankfurt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -4961,6 +5042,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "ganghwa-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -5841,6 +5931,15 @@
       ]
     },
     "honnecourt-sur-escaut": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "honolulu": {
       "from": "git",
       "versions": [
         {
@@ -6742,6 +6841,15 @@
         }
       ]
     },
+    "kanmon-straits": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "kannur": {
       "from": "git",
       "versions": [
@@ -7037,6 +7145,15 @@
         }
       ]
     },
+    "kiel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "kielce": {
       "from": "git",
       "versions": [
@@ -7325,6 +7442,24 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "kumamoto": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "kunashir": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -9296,6 +9431,15 @@
         }
       ]
     },
+    "morant-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "mormugao": {
       "from": "git",
       "versions": [
@@ -9332,6 +9476,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "mosonmagyarovar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -9778,6 +9931,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "nerchinsk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -10781,6 +10943,15 @@
         }
       ]
     },
+    "pereiaslav": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "perevolochna": {
       "from": "git",
       "versions": [
@@ -11018,6 +11189,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "poniec": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -11610,6 +11790,15 @@
         }
       ]
     },
+    "quito": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "quy-nhon-city": {
       "from": "git",
       "versions": [
@@ -11981,6 +12170,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "roskilde": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -12433,6 +12631,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "san-juan-islands": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -14882,6 +15089,15 @@
         }
       ]
     },
+    "uusikaupunki": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "valenciennes": {
       "from": "git",
       "versions": [
@@ -15768,6 +15984,15 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "yucatan-peninsula": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },

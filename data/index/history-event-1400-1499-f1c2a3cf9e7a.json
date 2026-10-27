@@ -284,6 +284,15 @@
         }
       ]
     },
+    "sengoku-period": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "siege-of-ceuta-1419": {
       "from": "git",
       "versions": [
