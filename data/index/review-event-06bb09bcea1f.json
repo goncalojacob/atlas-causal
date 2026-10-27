@@ -188,37 +188,6 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
-      "created": "2026-10-27",
-      "id": "1689-boston-revolt",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "parent": "glorious-revolution",
-      "review": {
-        "flags": [
-          "imported-facts",
-          "end-unstated",
-          "span-from-title",
-          "summary-from-lead"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "1689 Boston revolt"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
       "category": "revolution",
       "cites": [
         "wikidata",
@@ -8017,7 +7986,6 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "texas-indian-wars",
       "review": {
         "flags": [
           "imported-facts",
@@ -56537,7 +56505,6 @@
       "origin": {
         "tool": "wikidata"
       },
-      "parent": "russian-conquest-of-central-asia",
       "review": {
         "flags": [
           "imported-facts",
@@ -92551,18 +92518,6 @@
       "rule": "degree-zero"
     },
     {
-      "id": "1689-boston-revolt",
-      "kind": "event",
-      "message": "the event is part of \"glorious-revolution\" and is not dated inside it",
-      "rule": "child-outside-parent"
-    },
-    {
-      "id": "1689-boston-revolt",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
       "id": "1711-karamanli-coup",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -93191,12 +93146,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "apache-wars",
-      "kind": "event",
-      "message": "the event is part of \"texas-indian-wars\" and is not dated inside it",
-      "rule": "child-outside-parent"
     },
     {
       "id": "apache-wars",
@@ -98951,12 +98900,6 @@
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
-    },
-    {
-      "id": "khivan-campaign-of-1839-1840",
-      "kind": "event",
-      "message": "the event is part of \"russian-conquest-of-central-asia\" and is not dated inside it",
-      "rule": "child-outside-parent"
     },
     {
       "id": "khivan-campaign-of-1839-1840",

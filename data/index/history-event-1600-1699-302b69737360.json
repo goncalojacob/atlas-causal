@@ -2,15 +2,6 @@
   "from": 1600,
   "kind": "event",
   "records": {
-    "1689-boston-revolt": {
-      "from": "git",
-      "versions": [
-        {
-          "first": true,
-          "on": "2026-10-27"
-        }
-      ]
-    },
     "acadian-civil-war": {
       "from": "git",
       "versions": [
