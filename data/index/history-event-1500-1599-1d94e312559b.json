@@ -2517,6 +2517,15 @@
         }
       ]
     },
+    "nanban-trade": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "navajo-wars": {
       "from": "git",
       "versions": [
@@ -2835,6 +2844,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "russian-conquest-of-siberia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },

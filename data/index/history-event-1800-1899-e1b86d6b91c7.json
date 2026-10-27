@@ -833,6 +833,15 @@
         }
       ]
     },
+    "battle-of-amstetten": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "battle-of-antietam": {
       "from": "git",
       "versions": [
@@ -1046,6 +1055,15 @@
         }
       ]
     },
+    "battle-of-brownstown": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "battle-of-buceo": {
       "from": "git",
       "versions": [
@@ -1072,6 +1090,15 @@
         }
       ]
     },
+    "battle-of-caldiero-1805": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "battle-of-calebee-creek": {
       "from": "git",
       "versions": [
@@ -1087,6 +1114,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-campo-tenese": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -1243,6 +1279,15 @@
         }
       ]
     },
+    "battle-of-cook-s-mills": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "battle-of-corunna": {
       "from": "git",
       "versions": [
@@ -1332,6 +1377,15 @@
         }
       ]
     },
+    "battle-of-durenstein": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "battle-of-elandsfontein": {
       "from": "git",
       "versions": [
@@ -1347,6 +1401,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-elchingen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -1387,6 +1450,15 @@
       ]
     },
     "battle-of-fort-oswego-1814": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-fort-stephenson": {
       "from": "git",
       "versions": [
         {
@@ -1596,6 +1668,15 @@
         }
       ]
     },
+    "battle-of-haslach-jungingen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "battle-of-hims-1832": {
       "from": "git",
       "versions": [
@@ -1698,6 +1779,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-jena-auerstedt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -1828,6 +1918,15 @@
       ]
     },
     "battle-of-la-victoria-1814": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-lacolle-mills-1812": {
       "from": "git",
       "versions": [
         {
@@ -2028,6 +2127,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-maida": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -2468,6 +2576,15 @@
         }
       ]
     },
+    "battle-of-schongrabern": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "battle-of-schuinshoogte": {
       "from": "git",
       "versions": [
@@ -2568,6 +2685,15 @@
       ]
     },
     "battle-of-sopachuy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-st-michaels": {
       "from": "git",
       "versions": [
         {
@@ -3010,6 +3136,15 @@
         }
       ]
     },
+    "battle-of-wagram": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "battle-of-waterloo": {
       "from": "git",
       "versions": [
@@ -3025,6 +3160,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-wertingen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -3437,6 +3581,15 @@
         }
       ]
     },
+    "california-genocide": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "capture-of-bien-hoa": {
       "from": "git",
       "versions": [
@@ -3752,6 +3905,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "decembrist-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -4097,6 +4259,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "first-battle-of-sacket-s-harbor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -4860,6 +5031,15 @@
         }
       ]
     },
+    "john-brown-s-raid-on-harpers-ferry": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "july-revolution": {
       "from": "git",
       "versions": [
@@ -5086,6 +5266,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "napoleon-s-planned-invasion-of-the-united-kingdom": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -5501,6 +5690,15 @@
         }
       ]
     },
+    "progressive-era": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "pronunciamiento-of-riego": {
       "from": "git",
       "versions": [
@@ -5543,6 +5741,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "rebellions-of-1837-1838": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -6197,6 +6404,15 @@
         }
       ]
     },
+    "siege-of-fort-wayne": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "siege-of-jhansi": {
       "from": "git",
       "versions": [
@@ -6631,6 +6847,15 @@
         }
       ]
     },
+    "tanzimat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "tecumseh-s-war": {
       "from": "git",
       "versions": [
@@ -6830,6 +7055,15 @@
             "parent"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "treaties-of-tilsit": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -7149,6 +7383,15 @@
         }
       ]
     },
+    "ulm-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
     "unification-of-germany": {
       "from": "git",
       "versions": [
@@ -7239,6 +7482,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "war-of-the-confederation": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
         }
       ]
     },
@@ -7368,6 +7620,15 @@
       ]
     },
     "yellowstone-expedition-of-1873": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-27"
+        }
+      ]
+    },
+    "young-ireland-rebellion": {
       "from": "git",
       "versions": [
         {
