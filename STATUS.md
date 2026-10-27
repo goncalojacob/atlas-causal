@@ -24072,6 +24072,7 @@ browser failure did not reproduce, here or on the runner, so this fire reads 313
 where the previous stand carried it as standing.
 
 ## Milestones landed
+Local writer 2026-10-27T15:32:54Z: 78 written ( A:recache: wikipedia-en citations on active records: 39 B:recache: wikipedia-en citations on active records: 39 )
 Local writer 2026-10-27T14:44:58Z: 71 written ( (finished by hand) )
 
 Writer B started 2026-10-15T23:42:00Z by scheduled
