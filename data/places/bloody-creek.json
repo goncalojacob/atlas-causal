@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "bloody-creek",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q22984563",
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-10-17"
+  },
+  "sources": [],
+  "names": [
+    "Bloody Creek"
+  ],
+  "where": {
+    "lon": -65.309166666667,
+    "lat": 44.822222222222,
+    "precision": "point",
+    "label": "Bloody Creek"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

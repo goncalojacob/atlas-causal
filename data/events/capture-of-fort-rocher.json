@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-fort-rocher",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5037013",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Capture of Fort Rocher",
+    "pt": "Captura do Forte Rocher"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5037013"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Fort Rocher\", revision 1370608631"
+    }
+  ],
+  "title": "Capture of Fort Rocher",
+  "summary": "The English Wikipedia article \"Capture of Fort Rocher\", at revision 1370608631, opens: \"The Capture of Fort Rocher took place on 9 February 1654, during the Franco-Spanish War (1635–1659). Equipped with one siege battery, a Spanish expedition of 700 troops attacked the buccaneer stronghold of Tortuga, capturing the Fort de Rocher and 500 prisoners including 330 buccaneers and goods valued at approximately 160,000 pieces-of-eight. The Spanish burned the colony to the ground and slaughtered its inhabitants, leaving behind a fort manned by 150 soldiers. They possessed the island for about eighteen months, but on the approach of the expedition under Penn and Venables were ordered by the Conde de Peñalva, Governor of Santo Domingo, to demolish the fortifications, bury the artillery and other arms, and retire to his aid in Hispaniola.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5037013, imported by tools/import/wikidata.mjs. The item's own description reads \"1654 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1654,
+    "end": 1654,
+    "date": "1654-02-09"
+  },
+  "place": "fort-de-rocher",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-spanish-war-1635-1659"
+}

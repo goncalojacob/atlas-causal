@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "big-bottom-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q525565",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Big Bottom massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q525565"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Big Bottom massacre\", revision 1372522522"
+    }
+  ],
+  "title": "Big Bottom massacre",
+  "summary": "The English Wikipedia article \"Big Bottom massacre\", at revision 1372522522, opens: \"The Big Bottom massacre was a mass killing perpetrated by Lenape and Wyandot warriors against American settlers on January 2, 1791. The massacre occurred near present-day Stockport, Ohio. It is considered part of the Northwest Indian Wars, in which native Americans in the Ohio Country clashed with American settlers, seeking to expel them from their territory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q525565, imported by tools/import/wikidata.mjs. The item's own description reads \"battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1791,
+    "end": 1791,
+    "date": "1791-01-02"
+  },
+  "place": "ohio",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "northwest-indian-war"
+}
