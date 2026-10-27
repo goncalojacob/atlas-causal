@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "uruguayan-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2672972",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Uruguayan Civil War",
+    "pt": "Guerra Grande"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2672972"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Uruguayan Civil War\", revision 1381990364"
+    }
+  ],
+  "title": "Uruguayan Civil War",
+  "summary": "The English Wikipedia article \"Uruguayan Civil War\", at revision 1381990364, opens: \"The Uruguayan Civil War, also known in Spanish as the Guerra Grande, was a series of armed conflicts between the leaders of Uruguayan independence. While officially the war lasted from 1839 until 1851, it was a part of armed conflicts that started in 1832 and continued until the final military defeat of the Blancos faction in 1904.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2672972, imported by tools/import/wikidata.mjs. The item's own description reads \"1839-1851 civil war in Uruguay\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1839,
+    "end": 1851,
+    "date": "1839-03-10",
+    "endDate": "1851-10-08"
+  },
+  "place": "uruguay-q77",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

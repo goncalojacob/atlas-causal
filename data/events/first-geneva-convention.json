@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-geneva-convention",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q610272",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "First Geneva Convention",
+    "pt": "Primeira Convenção de Genebra"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q610272"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Geneva Convention\", revision 1377874548"
+    }
+  ],
+  "title": "First Geneva Convention",
+  "summary": "The English Wikipedia article \"First Geneva Convention\", at revision 1377874548, opens: \"The Geneva Convention (I) for the Amelioration of the Condition of the Wounded in Armies in the Field, more commonly referred to as the First Geneva Convention or Geneva Convention I and abbreviated as GCI, is the first of the four treaties of the 1949 Geneva Conventions. It defines \"the basis on which rest the rules of international law for the protection of the victims of armed conflicts.\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q610272, imported by tools/import/wikidata.mjs. The item's own description reads \"First Geneva Convention governing the sick and wounded members of armed forces, adopted in 1864\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1949,
+    "end": null,
+    "date": "1949-08-12"
+  },
+  "place": "geneva-q71",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

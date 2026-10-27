@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ottoman-wahhabi-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1809288",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Ottoman–Wahhabi war",
+    "pt": "Guerra Otomano-Uaabita"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1809288"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman–Wahhabi war\", revision 1381926358"
+    }
+  ],
+  "title": "Ottoman–Wahhabi war",
+  "summary": "The English Wikipedia article \"Ottoman–Wahhabi war\", at revision 1381926358, opens: \"The Ottoman–Wahhabi war, or Wahhabi war, was fought from early 1811 until 1818 between the Ottoman Empire, its vassal the Eyalet of Egypt, and the Wahhabis’ Emirate of Diriyah, resulting in the destruction of the latter.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1809288, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict of 1811-1818\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1811,
+    "end": 1818,
+    "date": "1811-08",
+    "endDate": "1818-08"
+  },
+  "place": "arabian-peninsula",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

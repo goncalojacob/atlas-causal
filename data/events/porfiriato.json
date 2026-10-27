@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "porfiriato",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2755467",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Porfiriato",
+    "pt": "Porfiriato"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2755467"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Porfiriato\", revision 1380004034"
+    }
+  ],
+  "title": "Porfiriato",
+  "summary": "The English Wikipedia article \"Porfiriato\", at revision 1380004034, opens: \"The Porfiriato or Porfirismo, coined by Mexican historian Daniel Cosío Villegas, is a term given to the period when General Porfirio Díaz ruled Mexico first as a president within a constitutional framework, and later, after 1884, under an authoritarian military dictatorship in the late 19th and early 20th centuries. Seizing power in a coup in 1876, Díaz pursued a policy of \"order and progress\", inviting foreign investment in Mexico and maintaining social and political order, by force if necessary. There were significant economic, technological, social, and cultural changes during this period.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2755467, imported by tools/import/wikidata.mjs. The item's own description reads \"period of Mexican history\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 2002,
+    "date": "1876-11-28",
+    "endDate": "2002-05-25"
+  },
+  "place": "mexico-q96",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

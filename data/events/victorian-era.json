@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "victorian-era",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q182688",
+  "sitelinks": {
+    "count": 68,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Victorian era",
+    "pt": "Era vitoriana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q182688"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Victorian era\", revision 1380479289"
+    }
+  ],
+  "title": "Victorian era",
+  "summary": "The English Wikipedia article \"Victorian era\", at revision 1380479289, opens: \"In the history of the United Kingdom and the British Empire, the Victorian era was the reign of Queen Victoria, from 20 June 1837 until her death on 22 January 1901, although slightly different definitions are sometimes used. The era followed the Georgian era and preceded the Edwardian era, and its later half overlaps with the first part of the Belle Époque era of continental Europe.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q182688, imported by tools/import/wikidata.mjs. The item's own description reads \"period of British history encompassing Queen Victoria's reign (1837–1901)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1837,
+    "end": 1901
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

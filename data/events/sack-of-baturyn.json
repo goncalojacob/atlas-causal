@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "sack-of-baturyn",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4110445",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Sack of Baturyn"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4110445"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sack of Baturyn\", revision 1378046302"
+    }
+  ],
+  "title": "Sack of Baturyn",
+  "summary": "The English Wikipedia article \"Sack of Baturyn\", at revision 1378046302, opens: \"The sack of Baturyn, or the Baturyn tragedy was the 1708 seizure of the city of Baturyn and its Fortress during the Great Northern War (1700–1721), by Russian troops under the command of Alexander Danilovich Menshikov. They captured and destroyed Baturyn on 2 November 1708 O.S.. The fortress of Baturyn was the capital of the Cossack Hetmanate at the time of Ivan Mazepa. According to various estimates, between 9,000 and 15,000 civilians and defenders of Baturyn were killed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4110445, imported by tools/import/wikidata.mjs. The item's own description reads \"1708 raid during the Russian-Swedish war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1708,
+    "end": 1708,
+    "date": "1708-11-01",
+    "endDate": "1708-11-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

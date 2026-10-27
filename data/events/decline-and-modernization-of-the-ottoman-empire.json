@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "decline-and-modernization-of-the-ottoman-empire",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3393556",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Decline and modernization of the Ottoman Empire",
+    "pt": "Declínio do Império Otomano"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3393556"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Decline and modernization of the Ottoman Empire\", revision 1381801692"
+    }
+  ],
+  "title": "Decline and modernization of the Ottoman Empire",
+  "summary": "The English Wikipedia article \"Decline and modernization of the Ottoman Empire\", at revision 1381801692, opens: \"In the 19th century, the Ottoman Empire faced threats on numerous frontiers from multiple industrialized European powers as well as from internal instabilities. Outsider influence, internal corruption and the rise of nationalism demanded the Empire to look within itself and modernize. Kickstarting a period of internal reforms to centralize and standardize governance, European style training regimens for the military, standardized law codes and reformed property laws were initiated to better collect taxes and control the resources within the borders. The period of these reforms is known as the Tanzimat, under the reign of the sultans Abdülmecid I and Abdülaziz, starting in 1839.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3393556, imported by tools/import/wikidata.mjs. The item's own description reads \"Ottoman Empire from 1789 to 1908\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1789,
+    "end": 1922
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

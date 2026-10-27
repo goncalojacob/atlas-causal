@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pereiaslav-agreement",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q525758",
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Pereiaslav Agreement",
+    "pt": "Tratado de Pereslávia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q525758"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pereiaslav Agreement\", revision 1379930513"
+    }
+  ],
+  "title": "Pereiaslav Agreement",
+  "summary": "The English Wikipedia article \"Pereiaslav Agreement\", at revision 1379930513, opens: \"The Pereiaslav Agreement or Pereyaslav Agreement was an official meeting that convened for a ceremonial pledge of allegiance by Zaporozhian Cossacks to Russian tsar Alexis in the town of Pereiaslav in central Ukraine, in January 1654. The ceremony took place concurrently with ongoing negotiations that started on the initiative of Hetman Bohdan Khmelnytsky to address the issue of the Cossack Hetmanate with the ongoing Khmelnytsky Uprising against the Polish–Lithuanian Commonwealth and which concluded the Treaty of Pereiaslav. The treaty itself was finalized in Moscow in April 1654.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q525758, imported by tools/import/wikidata.mjs. The item's own description reads \"1654 meeting with Cossacks and Tsar of Muscovy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1654,
+    "end": 1654
+  },
+  "place": "pereiaslav",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "argentine-civil-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2697981",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Argentine Civil Wars",
+    "pt": "Guerras Civis Argentinas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2697981"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Argentine Civil Wars\", revision 1381557343"
+    }
+  ],
+  "title": "Argentine Civil Wars",
+  "summary": "The English Wikipedia article \"Argentine Civil Wars\", at revision 1381557343, opens: \"The Argentine Civil Wars were a series of civil conflicts of varying intensity that took place from 1814 to 1853 in the territories of Argentina. Beginning concurrently with the Argentine War of Independence, the conflicts prevented the formation of a stable governing body until the signing of the Argentine Constitution of 1853, followed by low-frequency skirmishes that ended with the Federalization of Buenos Aires in 1880.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2697981, imported by tools/import/wikidata.mjs. The item's own description reads \"series of civil wars in Argentina between 1814 and 1880\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1880
+  },
+  "place": "argentina-q414",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
