@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "egba-dahomey-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q141306616",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Egba-Dahomey War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q141306616"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Egba-Dahomey War\", revision 1377984299"
+    }
+  ],
+  "title": "Egba-Dahomey War",
+  "summary": "The English Wikipedia article \"Egba-Dahomey War\", at revision 1377984299, opens: \"The Egba-Dahomey War, also known as the Abeokuta-Dahomey War was a series of mid 19th century military engagements between the Egba people of Yorubaland with their capital at Abeokuta and the Fon Kingdom of Dahomey with its capital at Abomey. It was part of the series of conflicts that characterized Yorubaland and the surrounding region following the fall of the Oyo Empire in 1836. During the course of the war, Dahomey launched two separate full-scale direct invasions of Abeokuta itself, both of which ended in failure and led to the weakening of Dahomey, its decline as a regional power, and its eventual colonization by the French.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q141306616, imported by tools/import/wikidata.mjs. The item's own description reads \"1844–1864 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1844,
+    "end": 1864
+  },
+  "place": "abeokuta",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

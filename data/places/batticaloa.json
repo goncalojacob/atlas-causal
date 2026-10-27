@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "batticaloa",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q810963",
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Batticaloa",
+    "pt": "Baticaloa"
+  },
+  "sources": [],
+  "names": [
+    "Batticaloa",
+    "Baticaloa"
+  ],
+  "where": {
+    "lon": 81.7,
+    "lat": 7.7166666666667,
+    "precision": "city",
+    "label": "Batticaloa"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

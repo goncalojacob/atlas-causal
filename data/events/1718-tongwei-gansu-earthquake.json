@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "1718-tongwei-gansu-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q97180975",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "1718 Tongwei–Gansu earthquake",
+    "pt": "Terremoto Tongwei-Gansu de 1718"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q97180975"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1718 Tongwei–Gansu earthquake\", revision 1366163614"
+    }
+  ],
+  "title": "1718 Tongwei–Gansu earthquake",
+  "summary": "The English Wikipedia article \"1718 Tongwei–Gansu earthquake\", at revision 1366163614, opens: \"An earthquake occurred on June 19, 1718, in Tongwei County, Gansu Province, Qing dynasty, present-day China. The estimated surface wave magnitude (Ms) 7.5 earthquake was designated a maximum Modified Mercalli intensity of X (Extreme), causing tremendous damage and killing 73,000 people.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q97180975, imported by tools/import/wikidata.mjs. The item's own description reads \"1718 Earthquake in China\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1718,
+    "end": 1718,
+    "date": "1718-06-19"
+  },
+  "place": "qing-dynasty",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

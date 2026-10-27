@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "palembang-highlands-expeditions",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7127104",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Palembang Highlands Expeditions"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7127104"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Palembang Highlands Expeditions\", revision 1365848909"
+    }
+  ],
+  "title": "Palembang Highlands Expeditions",
+  "summary": "The English Wikipedia article \"Palembang Highlands Expeditions\", at revision 1365848909, opens: \"The Palembang Bovenlanden Expeditions were punitive expeditions by the Royal Netherlands East Indies Army to Palembang in South Sumatra (1851–1859).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7127104, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1851,
+    "end": 1859
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "bengal-mrauk-u-war-1512-1516",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q29025861",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Bengal–Mrauk U War (1512–1516)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q29025861"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bengal–Mrauk U War (1512–1516)\", revision 1370604136"
+    }
+  ],
+  "title": "Bengal–Mrauk U War (1512–1516)",
+  "summary": "The English Wikipedia article \"Bengal–Mrauk U War (1512–1516)\", at revision 1370604136, opens: \"The Bengal–Mrauk U War (1512–1516) was a conflict in the 16th century between the Bengal Sultanate and the Kingdom of Mrauk U.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q29025861, imported by tools/import/wikidata.mjs. The item's own description reads \"16th century battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1512,
+    "end": 1516
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

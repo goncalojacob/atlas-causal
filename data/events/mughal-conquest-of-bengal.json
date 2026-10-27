@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mughal-conquest-of-bengal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q29025828",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Mughal conquest of Bengal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q29025828"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mughal conquest of Bengal\", revision 1381851735"
+    }
+  ],
+  "title": "Mughal conquest of Bengal",
+  "summary": "The English Wikipedia article \"Mughal conquest of Bengal\", at revision 1381851735, opens: \"The Mughal conquest of Bengal was a series of campaigns against the Sultanate of Bengal, then ruled by the Afghan Karrani dynasty, by the Mughal Empire from 1574 to 1666. The Mughals initially defeated the Sultanate of Bengal in the Battle of Raj Mahal in 1576, but the annexation of the region into their empire as the province of Bengal took in the subsequent periods.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q29025828, imported by tools/import/wikidata.mjs. The item's own description reads \"Military conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1572,
+    "end": 1572
+  },
+  "place": "bengal-q80338",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

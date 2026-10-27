@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "preliminary-peace-convention-1828",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q24202",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Preliminary Peace Convention (1828)",
+    "pt": "Tratado do Rio de Janeiro (1828)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q24202"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Preliminary Peace Convention (1828)\", revision 1365705390"
+    }
+  ],
+  "title": "Preliminary Peace Convention (1828)",
+  "summary": "The English Wikipedia article \"Preliminary Peace Convention (1828)\", at revision 1365705390, opens: \"The Preliminary Peace Convention was a bilateral treaty signed on 27 August 1828 between the Empire of Brazil and the United Provinces of the Río de la Plata, after British mediation, that put an end to the Cisplatine War and recognized the independence of Uruguay.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q24202, imported by tools/import/wikidata.mjs. The item's own description reads \"August 1828 treaty to recognize the independence of Uruguay\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1828,
+    "end": 1828,
+    "date": "1828-08-27"
+  },
+  "place": "rio-de-janeiro",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

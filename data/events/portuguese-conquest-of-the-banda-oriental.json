@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "portuguese-conquest-of-the-banda-oriental",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2356791",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Portuguese conquest of the Banda Oriental",
+    "pt": "Guerra contra Artigas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2356791"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Portuguese conquest of the Banda Oriental\", revision 1374606129"
+    }
+  ],
+  "title": "Portuguese conquest of the Banda Oriental",
+  "summary": "The English Wikipedia article \"Portuguese conquest of the Banda Oriental\", at revision 1374606129, opens: \"The Portuguese conquest of the Banda Oriental, known in the Spanish-speaking world as the Luso-Brazilian invasion and in the Portuguese-speaking world as the War against Artigas, was the armed-conflict that took place between 1816 and 1820 in the Banda Oriental, for control of what today comprises the whole of the Republic of Uruguay, the northern part of the Argentine Mesopotamia and southern Brazil. The four-year armed-conflict resulted in the annexation of the Banda Oriental into the United Kingdom of Portugal, Brazil and the Algarves as the Brazilian province of Cisplatina.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2356791, imported by tools/import/wikidata.mjs. The item's own description reads \"armed-conflict in the Banda Oriental\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1816,
+    "end": 1820,
+    "date": "1816-08-28",
+    "endDate": "1820-03-03"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

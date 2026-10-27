@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "chilean-civil-war-of-1891",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2704441",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Chilean Civil War of 1891",
+    "pt": "Guerra civil chilena de 1891"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2704441"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chilean Civil War of 1891\", revision 1370611079"
+    }
+  ],
+  "title": "Chilean Civil War of 1891",
+  "summary": "The English Wikipedia article \"Chilean Civil War of 1891\", at revision 1370611079, opens: \"The Chilean Civil War of 1891, or the Second Chilean Civil War or Revolution of 1891, was a civil war in Chile fought between forces supporting Congress and forces supporting the President, José Manuel Balmaceda, from 16 January 1891 to 18 September 1891. The war saw a confrontation between the Chilean Army and the Chilean Navy, siding with the president and the Congress, respectively. This conflict ended with the defeat of the Chilean Army and the presidential forces, and with President Balmaceda committing suicide as a consequence of the defeat. In Chilean historiography the war marks the end of the Liberal Republic and the beginning of the Parliamentary Era.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2704441, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between the Army (pro-President) and Navy (pro-Congress)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1891,
+    "end": 1891,
+    "date": "1891-01-16",
+    "endDate": "1891-09-18"
+  },
+  "place": "chilean-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
