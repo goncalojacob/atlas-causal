@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-shimonoseki-straits",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2889974",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Shimonoseki Straits",
+    "pt": "Batalha de Shimonoseki"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2889974"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Shimonoseki Straits\", revision 1373598186"
+    }
+  ],
+  "title": "Battle of Shimonoseki Straits",
+  "summary": "The English Wikipedia article \"Battle of Shimonoseki Straits\", at revision 1373598186, opens: \"The Battle of Shimonoseki Straits was a naval engagement fought on July 16, 1863, by the United States Navy warship USS Wyoming against the powerful daimyō Mōri Takachika of the Chōshū clan based in Shimonoseki.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2889974, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 naval engagement\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-07-16"
+  },
+  "place": "kanmon-straits",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "shimonoseki-campaign"
+}

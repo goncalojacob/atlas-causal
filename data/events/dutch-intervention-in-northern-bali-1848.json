@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dutch-intervention-in-northern-bali-1848",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2237434",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Dutch intervention in northern Bali (1848)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2237434"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dutch intervention in northern Bali (1848)\", revision 1370616033"
+    }
+  ],
+  "title": "Dutch intervention in northern Bali (1848)",
+  "summary": "The English Wikipedia article \"Dutch intervention in northern Bali (1848)\", at revision 1370616033, opens: \"The Dutch intervention in northern Bali was the second in a long series of six Dutch military interventions on Bali island, until total control was achieved with the Dutch intervention in Bali in 1908. The Dutch used as a pretext Balinese salvage claims over shipwrecks, which were customary to the Balinese, but unacceptable under International law.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2237434, imported by tools/import/wikidata.mjs. The item's own description reads \"1848 military expedition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-06-08",
+    "endDate": "1848-06-20"
+  },
+  "place": "bali-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

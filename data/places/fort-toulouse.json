@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "fort-toulouse",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3078095",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Fort Toulouse"
+  },
+  "sources": [],
+  "names": [
+    "Fort Toulouse"
+  ],
+  "where": {
+    "lon": -86.251569,
+    "lat": 32.506619,
+    "precision": "point",
+    "label": "Fort Toulouse"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "dresden",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1731",
+  "sitelinks": {
+    "count": 154,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Dresden",
+    "pt": "Dresden"
+  },
+  "sources": [],
+  "names": [
+    "Dresden"
+  ],
+  "where": {
+    "lon": 13.7381437,
+    "lat": 51.0493286,
+    "precision": "city",
+    "label": "Dresden"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

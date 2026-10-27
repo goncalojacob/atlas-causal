@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mysorean-invasion-of-malabar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q6948728",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Mysorean invasion of Malabar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6948728"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mysorean invasion of Malabar\", revision 1370629110"
+    }
+  ],
+  "title": "Mysorean invasion of Malabar",
+  "summary": "The English Wikipedia article \"Mysorean invasion of Malabar\", at revision 1370629110, opens: \"The Mysorean invasion of Malabar (1766–1792) was the military invasion of the Malabar region of Kerala, including the territories of the Zamorin of Calicut, by the then-de facto ruler of the Kingdom of Mysore, Hyder Ali. After the invasion, the Kingdom of Cochin to the south of Malabar became a tributary state of Mysore.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6948728, imported by tools/import/wikidata.mjs. The item's own description reads \"military invasion of northern Malabar by Hyder Ali\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1766,
+    "end": 1792
+  },
+  "place": "south-india",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

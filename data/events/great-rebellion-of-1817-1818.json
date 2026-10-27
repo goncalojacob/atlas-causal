@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "great-rebellion-of-1817-1818",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3534806",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Great Rebellion of 1817–1818"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3534806"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Rebellion of 1817–1818\", revision 1370621791"
+    }
+  ],
+  "title": "Great Rebellion of 1817–1818",
+  "summary": "The English Wikipedia article \"Great Rebellion of 1817–1818\", at revision 1370621791, opens: \"The Great Rebellion of 1817–1818, also known as the 1818 Uva-Wellassa Rebellion , was the third Kandyan War in the Uva and Wellassa provinces of the former Kingdom of Kandy, which is today the Uva province of Sri Lanka. The rebellion started against the British colonial government under Governor Robert Brownrigg, three years after the Kandyan Convention ceded the Kingdom of Kandy to the British Crown.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3534806, imported by tools/import/wikidata.mjs. The item's own description reads \"third Kandyan War with the British, in what is now Uva, Sri Lanka, then a province of the Kingdom of Kandy, against the British colonial government under Governor Robert Brownrigg\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1817,
+    "end": 1818
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "anglo-kandyan-wars"
+}

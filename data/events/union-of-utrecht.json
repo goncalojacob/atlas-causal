@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "union-of-utrecht",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q216165",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Union of Utrecht",
+    "pt": "União de Utreque"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q216165"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Union of Utrecht\", revision 1377725326"
+    }
+  ],
+  "title": "Union of Utrecht",
+  "summary": "The English Wikipedia article \"Union of Utrecht\", at revision 1377725326, opens: \"The Union of Utrecht was an alliance based on an agreement concluded on 23 January 1579 between a number of Dutch provinces and cities, to reach a joint commitment against the king, Philip II of Spain. By joining forces, they hoped to force him to stop his harsh administrative measures. In addition, some important political matters were regulated in areas such as defence, taxation and religion, which is why the treaty in question is also seen as a first version or precursor of a later constitution. The Union of Utrecht complemented the so-called General Union of 1576, established by the Pacification of Ghent, which is why it is also referred to as the Further Union.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q216165, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty signed in Utrecht, unifying the northern provinces of the Netherlands, until then under the control of Habsburg Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1579,
+    "end": null,
+    "date": "1579-01-23"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

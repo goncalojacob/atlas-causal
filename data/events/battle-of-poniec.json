@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-poniec",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q649567",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Poniec"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q649567"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Poniec\", revision 1377991174"
+    }
+  ],
+  "title": "Battle of Poniec",
+  "summary": "The English Wikipedia article \"Battle of Poniec\", at revision 1377991174, opens: \"The Battle of Poniec took place on 7 November 1704 (N.S.) at Poniec, in the Polish–Lithuanian Commonwealth, during the Great Northern War. With a force of cavalry and dragoons, Charles XII of Sweden successfully dislodged the Saxon Army under Johann Matthias von der Schulenburg from Poniec. To fend off the Swedish pursuit, Schulenburg formed a massive square formation at Moraczewo. Having failed to break it, Charles XII called off the attacks at the approach of night. This allowed Schulenburg to escape into neutral Silesia. With Greater Poland cleared of Saxon troops, the Swedes shattered their Cossack and Russian allies at Bełcz Wielki and Tillendorf.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q649567, imported by tools/import/wikidata.mjs. The item's own description reads \"1704 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1704,
+    "end": 1704,
+    "date": "1704-10-28"
+  },
+  "place": "poniec",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

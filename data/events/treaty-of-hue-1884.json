@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-hue-1884",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3536812",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Treaty of Huế (1884)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3536812"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Huế (1884)\", revision 1353882322"
+    }
+  ],
+  "title": "Treaty of Huế (1884)",
+  "summary": "The English Wikipedia article \"Treaty of Huế (1884)\", at revision 1353882322, opens: \"The Treaty of Huế or Protectorate Treaty was concluded on 6 June 1884 between France and Đại Nam. It restated the main tenets of the punitive Harmand Treaty of 25 August 1883, but softened some of the harsher provisions of this treaty. The treaty created the protectorates of Annam and Tonkin. It formed the basis of French colonial rule in Vietnam during the next seven decades and was negotiated by Jules Patenôtre, France's minister to China; it is often known as the Patenôtre Treaty. The treaty was signed on the Vietnamese side by Phạm Thận Duật and Tôn Thất Phan, representatives of the emperor Tự Đức’s court. The treaty marked the Nguyễn dynasty's second acceptance of French protectorate in central and northern Vietnam, but it was canceled when the Élysée Accords was signed on 8 March 1949.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3536812, imported by tools/import/wikidata.mjs. The item's own description reads \"1884 treaty establishing French colonial rule in Vietnam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1884,
+    "end": 1884,
+    "date": "1884-06-06"
+  },
+  "place": "hue",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

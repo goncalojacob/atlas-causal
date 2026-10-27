@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "le-van-khoi-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q6507837",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Lê Văn Khôi revolt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6507837"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lê Văn Khôi revolt\", revision 1370627266"
+    }
+  ],
+  "title": "Lê Văn Khôi revolt",
+  "summary": "The English Wikipedia article \"Lê Văn Khôi revolt\", at revision 1370627266, opens: \"The Lê Văn Khôi revolt was an important revolt in 19th-century Vietnam, in which southern Vietnamese, Vietnamese Catholics, French Catholic missionaries and Chinese settlers under the leadership of Lê Văn Khôi opposed the rule of Emperor Minh Mạng.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6507837, imported by tools/import/wikidata.mjs. The item's own description reads \"1833–1835 revolt in Vietnam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1833,
+    "end": 1835
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

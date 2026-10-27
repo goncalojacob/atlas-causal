@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "honolulu",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q18094",
+  "sitelinks": {
+    "count": 171,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Honolulu",
+    "pt": "Honolulu"
+  },
+  "sources": [],
+  "names": [
+    "Honolulu"
+  ],
+  "where": {
+    "lon": -157.85722222222222,
+    "lat": 21.30472222222222,
+    "precision": "city",
+    "label": "Honolulu"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

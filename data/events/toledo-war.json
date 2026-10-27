@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "toledo-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1369423",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Toledo War",
+    "pt": "Guerra de Toledo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1369423"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Toledo War\", revision 1375528913"
+    }
+  ],
+  "title": "Toledo War",
+  "summary": "The English Wikipedia article \"Toledo War\", at revision 1375528913, opens: \"The Toledo War (1835–1836), also known as the Michigan–Ohio War or Ohio–Michigan War, was a boundary dispute between the state of Ohio and the adjoining Michigan Territory over the Toledo Strip. Control of the Maumee River's mouth was seen by both parties as a valuable economic asset, due to the inland shipping opportunities that it offered and the good farmland to the west.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1369423, imported by tools/import/wikidata.mjs. The item's own description reads \"almost bloodless boundary dispute between the U.S. state of Ohio and the adjoining territory of Michigan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1836
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nat-turner-s-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q6967898",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Nat Turner's Rebellion",
+    "pt": "Rebelião de Nat Turner"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6967898"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nat Turner's Rebellion\", revision 1380024029"
+    }
+  ],
+  "title": "Nat Turner's Rebellion",
+  "summary": "The English Wikipedia article \"Nat Turner's Rebellion\", at revision 1380024029, opens: \"Nat Turner's Rebellion, historically known as the Southampton Insurrection, was a slave rebellion that took place in Southampton County, Virginia, United States, in August 1831. Led by Nat Turner, the rebels, made up of enslaved African Americans, killed an estimated 55 White people, making it the deadliest slave revolt in U.S. history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6967898, imported by tools/import/wikidata.mjs. The item's own description reads \"slave rebellion that took place in Southampton County, Virginia, during August 1831\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1831,
+    "end": 1831,
+    "date": "1831-08"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

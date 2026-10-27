@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "meiji-era",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3125096",
+  "sitelinks": {
+    "count": 65,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Meiji era",
+    "pt": "Era Meiji"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3125096"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Meiji era\", revision 1382073973"
+    }
+  ],
+  "title": "Meiji era",
+  "summary": "The English Wikipedia article \"Meiji era\", at revision 1382073973, opens: \"The Meiji era  was an era of Japanese history that extended from October 23, 1868, to July 30, 1912. The Meiji era dominated the first half of the Empire of Japan, when the Japanese people moved from being an isolated feudal society at risk of colonization by Western imperial powers to the new paradigm of a modern, industrialized nation state and emergent great power, influenced by Western scientific, technological, philosophical, political, legal, and aesthetic ideas. As a result of such wholesale adoption of radically different ideas, the changes to Japan were profound, and affected its social structure, culture, internal politics, economy, military, and foreign relations. The period corresponded to the reign of Emperor Meiji. It was preceded by the Keiō era and was succeeded by the Taishō era, upon the accession of Emperor Taishō following his father's death.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3125096, imported by tools/import/wikidata.mjs. The item's own description reads \"Japanese era from October 1868 to July 1912\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1912,
+    "date": "1868-10-23",
+    "endDate": "1912-07-30"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

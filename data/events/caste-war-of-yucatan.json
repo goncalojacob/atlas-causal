@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "caste-war-of-yucatan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q772814",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Caste War of Yucatán",
+    "pt": "Guerra das Castas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q772814"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Caste War of Yucatán\", revision 1370610317"
+    }
+  ],
+  "title": "Caste War of Yucatán",
+  "summary": "The English Wikipedia article \"Caste War of Yucatán\", at revision 1370610317, opens: \"The Caste War of Yucatán or ba'atabil kichkelem Yúum (1847–1915) began with the revolt of Indigenous Maya people of the Yucatán Peninsula against Hispanic populations, called Yucatecos. The latter had held political and economic control of the region after the Spanish conquest of Yucatán and subjugation of the Maya people in the late 16th century. It was one of the most successful modern Native American revolts. A lengthy war ensued between the Yucateco forces based in the northwest of the Yucatán and the independent Maya in the southeast.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q772814, imported by tools/import/wikidata.mjs. The item's own description reads \"1847-1901 armed conflicts on the Yucatán Peninsula in Mexico\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1847,
+    "end": 1901
+  },
+  "place": "yucatan-peninsula",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

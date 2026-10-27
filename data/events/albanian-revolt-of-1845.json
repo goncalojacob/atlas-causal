@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "albanian-revolt-of-1845",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q18712737",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Albanian revolt of 1845"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18712737"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Albanian revolt of 1845\", revision 1370104623"
+    }
+  ],
+  "title": "Albanian revolt of 1845",
+  "summary": "The English Wikipedia article \"Albanian revolt of 1845\", at revision 1370104623, opens: \"The Albanian revolt of 1845, known Revolt of 1845 between Albanians was one of the 19th-century uprisings in Ottoman Albania directed against the Ottoman Tanzimat reforms.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18712737, imported by tools/import/wikidata.mjs. The item's own description reads \"1845 revolt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1845,
+    "end": 1845,
+    "date": "1845-05",
+    "endDate": "1845-07-06"
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

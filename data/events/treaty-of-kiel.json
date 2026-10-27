@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-kiel",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q156556",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Treaty of Kiel",
+    "pt": "Tratado de Kiel"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q156556"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Kiel\", revision 1380995028"
+    }
+  ],
+  "title": "Treaty of Kiel",
+  "summary": "The English Wikipedia article \"Treaty of Kiel\", at revision 1380995028, opens: \"The Treaty of Kiel or Peace of Kiel was concluded between the United Kingdom of Great Britain and Ireland and the Kingdom of Sweden on one side and the Kingdoms of Denmark and Norway on the other side on 14 January 1814 in Kiel. It ended the hostilities between the parties in the ongoing Napoleonic Wars, where the United Kingdom and Sweden were part of the anti-French alliance while Denmark–Norway was allied to the French Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q156556, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 peace treaty between the UK plus Sweden, and Denmark–Norway\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-01-14"
+  },
+  "place": "kiel",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

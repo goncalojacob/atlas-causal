@@ -19,43 +19,43 @@
       "to": 1399
     },
     {
-      "file": "index/attributes-1400-1499-a35c9678a770.json",
+      "file": "index/attributes-1400-1499-bff6116a1f95.json",
       "from": 1400,
       "key": "1400-1499",
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-10001c32cabc.json",
+      "file": "index/attributes-1500-1599-ba8c08d1e64a.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
     },
     {
-      "file": "index/attributes-1600-1699-ceaf0181cb5c.json",
+      "file": "index/attributes-1600-1699-dc74e128c97a.json",
       "from": 1600,
       "key": "1600-1699",
       "to": 1699
     },
     {
-      "file": "index/attributes-1700-1799-ebbe5e6a75e5.json",
+      "file": "index/attributes-1700-1799-dc5b24c4d6d6.json",
       "from": 1700,
       "key": "1700-1799",
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-2055bcb4c0f7.json",
+      "file": "index/attributes-1800-1899-4a5b09a322a3.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-3a40e59ad2ac.json",
+      "file": "index/attributes-1900-1999-e560de593071.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
     },
     {
-      "file": "index/attributes-2000-2099-2f5d5e0f6181.json",
+      "file": "index/attributes-2000-2099-c6a35bf4dfa8.json",
       "from": 2000,
       "key": "2000-2099",
       "to": 2099
@@ -67,7 +67,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-c6672a5f4ffa.json",
+      "file": "index/attributes-place-60a1a7f66aab.json",
       "from": null,
       "key": "place",
       "to": null
@@ -928,7 +928,7 @@
       "id": "death"
     },
     {
-      "count": 34,
+      "count": 40,
       "id": "disaster"
     },
     {
@@ -944,19 +944,19 @@
       "id": "law"
     },
     {
-      "count": 20,
+      "count": 22,
       "id": "other"
     },
     {
-      "count": 70,
+      "count": 82,
       "id": "revolution"
     },
     {
-      "count": 145,
+      "count": 181,
       "id": "treaty"
     },
     {
-      "count": 1877,
+      "count": 1973,
       "id": "war"
     }
   ],
@@ -1025,10 +1025,10 @@
   "counts": {
     "actors": 2699,
     "edges": 1283,
-    "events": 2930,
+    "events": 3119,
     "narratives": 2,
     "offices": 11,
-    "places": 1334,
+    "places": 1389,
     "presences": 6691,
     "regions": 5,
     "relations": 138,
@@ -1073,53 +1073,53 @@
     }
   ],
   "files": {
-    "citers": "index/citers-f318763257b4",
-    "core": "index/core-eb0c2334f2a7.json",
-    "grounds": "index/grounds-fd3e642e4795.json",
+    "citers": "index/citers-cc4d62b7a427",
+    "core": "index/core-2cdd5ca644f5.json",
+    "grounds": "index/grounds-701becdaa6bc.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-93436ec7c451.json",
-    "search": "index/search-7ef3678c631e.json",
-    "sources": "index/sources-295fe3978057.json",
-    "territories": "index/territories-61294f4d018b.json"
+    "review": "index/review-eddd27ebe970.json",
+    "search": "index/search-8a6630a11cb2.json",
+    "sources": "index/sources-4b71ffccff22.json",
+    "territories": "index/territories-25b5e2fe21d6.json"
   },
   "historyShards": [
     {
-      "file": "index/history-event-1400-1499-0cd0328dd879.json",
+      "file": "index/history-event-1400-1499-f1c2a3cf9e7a.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "event",
       "to": 1499
     },
     {
-      "file": "index/history-event-1500-1599-1d94e312559b.json",
+      "file": "index/history-event-1500-1599-02a873ccb79c.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "event",
       "to": 1599
     },
     {
-      "file": "index/history-event-1600-1699-e68062a2ecf1.json",
+      "file": "index/history-event-1600-1699-302b69737360.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "event",
       "to": 1699
     },
     {
-      "file": "index/history-event-1700-1799-d316ce4b2d34.json",
+      "file": "index/history-event-1700-1799-c61645017596.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "event",
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-e1b86d6b91c7.json",
+      "file": "index/history-event-1800-1899-8c68e8dd11bb.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
       "to": 1899
     },
     {
-      "file": "index/history-event-1900-1999-cd09c9b94e7d.json",
+      "file": "index/history-event-1900-1999-9b51cd2739ae.json",
       "from": 1900,
       "key": "1900-1999",
       "kind": "event",
@@ -1245,7 +1245,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-ed62c88575ff.json",
+      "file": "index/history-place-place-1557ac9bef6d.json",
       "from": null,
       "key": "place",
       "kind": "place",

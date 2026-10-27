@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "langeberg-rebellion-1896-97",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q48815101",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Langeberg Rebellion (1896–97)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q48815101"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Langeberg Rebellion (1896–97)\", revision 1373440061"
+    }
+  ],
+  "title": "Langeberg Rebellion (1896–97)",
+  "summary": "The English Wikipedia article \"Langeberg Rebellion (1896–97)\", at revision 1373440061, opens: \"The Langeberg Rebellion of 1896–97, also known as Ntwa ya Bana ba Mokgothu in SeTswana, was a war of resistance waged by two Tswana groups: the Batlhaping and the Batlharo, against British settlers in all of Griqualand area of the Northern Cape. The Rebellion was triggered when the baTswana groups became suspicious about the intentions of the Cape Colonial government as they feared, justifiably, that they stood to lose land and were being marginalised in the growing market economy of the Cape. The Langeberg Rebellion consisted of a series of revolts between December 1896 and August 1897 against British land annexations in the Griqualand area. The Rebellion was led by chiefs Kgosi Luka Jantjie and Kgosi Galeshewe of the Batlhaping and chief Toto Makgolokwe of the Batlharo.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q48815101, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1897
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

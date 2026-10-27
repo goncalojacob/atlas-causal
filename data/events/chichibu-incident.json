@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "chichibu-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3078148",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Chichibu incident"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3078148"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chichibu incident\", revision 1366263460"
+    }
+  ],
+  "title": "Chichibu incident",
+  "summary": "The English Wikipedia article \"Chichibu incident\", at revision 1366263460, opens: \"The Chichibu incident , also known as Chichibu revolt, was a large-scale peasant revolt in November 1884 in Chichibu, Saitama, a short distance from Japan's capital. It lasted about two weeks.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3078148, imported by tools/import/wikidata.mjs. The item's own description reads \"large-scale peasant revolt in November 1884 in Chichibu, Saitama, a short distance from Japan's capital. It lasted about two weeks.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1884,
+    "end": 1884,
+    "date": "1884-10-31",
+    "endDate": "1884-11-09"
+  },
+  "place": "empire-of-japan",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

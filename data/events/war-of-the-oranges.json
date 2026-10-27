@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "war-of-the-oranges",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1190696",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "War of the Oranges",
+    "pt": "Guerra das Laranjas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1190696"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Oranges\", revision 1377704597"
+    }
+  ],
+  "title": "War of the Oranges",
+  "summary": "The English Wikipedia article \"War of the Oranges\", at revision 1377704597, opens: \"The War of the Oranges was a brief conflict in 1801 in which Spanish forces, instigated by the government of France, and ultimately supported by the French military, invaded Portugal. The war resulted in the Treaty of Badajoz, the loss of Portuguese territory, in particular losing Olivenza to Spain. Six years later, Napoleon would invade both Portugal and Spain in the Peninsular War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1190696, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1801,
+    "end": 1801,
+    "date": "1801-05-20",
+    "endDate": "1801-06-09"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

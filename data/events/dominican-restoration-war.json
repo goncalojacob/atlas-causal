@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dominican-restoration-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3815421",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Dominican Restoration War",
+    "pt": "Guerra da Restauração (República Dominicana)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3815421"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Dominican Restoration War\", revision 1381918951"
+    }
+  ],
+  "title": "Dominican Restoration War",
+  "summary": "The English Wikipedia article \"Dominican Restoration War\", at revision 1381918951, opens: \"The Dominican Restoration War or the Dominican War of Restoration, called War of Santo Domingo in Spain, was a guerrilla war between 1863 and 1865 in the Dominican Republic between Dominican nationalists and Spain, the latter of which had recolonized the country 17 years after its independence. It ended with the withdrawal of Spanish forces from the island.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3815421, imported by tools/import/wikidata.mjs. The item's own description reads \"1863–1865 war between the Dominican Republic and Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1865,
+    "date": "1863-08-16",
+    "endDate": "1865-07-15"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

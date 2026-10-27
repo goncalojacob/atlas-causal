@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "anglo-kandyan-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q6361719",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Anglo-Kandyan Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6361719"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Kandyan Wars\", revision 1381736862"
+    }
+  ],
+  "title": "Anglo-Kandyan Wars",
+  "summary": "The English Wikipedia article \"Anglo-Kandyan Wars\", at revision 1381736862, opens: \"The Anglo-Kandyan Wars refers generally to the period of warfare between the British forces and the Kingdom of Kandy, on the island of what is now Sri Lanka, between 1796 and 1818. More specifically it is used to describe the expeditionary campaigns of the British Army in the Kingdom of Kandy in 1803 and 1815.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6361719, imported by tools/import/wikidata.mjs. The item's own description reads \"British Army expeditionary campaigns\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1796,
+    "end": 1818
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

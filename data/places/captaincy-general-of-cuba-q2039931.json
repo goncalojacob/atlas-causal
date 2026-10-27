@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "captaincy-general-of-cuba-q2039931",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2039931",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Captaincy General of Cuba",
+    "pt": "Capitania-Geral de Cuba"
+  },
+  "sources": [],
+  "names": [
+    "Captaincy General of Cuba",
+    "Antilhas Espanholas",
+    "Capitania-Geral de Cuba"
+  ],
+  "where": {
+    "lon": -82.35,
+    "lat": 23.11666667,
+    "precision": "region",
+    "label": "Captaincy General of Cuba"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

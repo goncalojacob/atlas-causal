@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-cordoba",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q767450",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Treaty of Córdoba",
+    "pt": "Tratado de Córdoba"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q767450"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Córdoba\", revision 1361966330"
+    }
+  ],
+  "title": "Treaty of Córdoba",
+  "summary": "The English Wikipedia article \"Treaty of Córdoba\", at revision 1361966330, opens: \"The Treaty of Córdoba established Mexican independence from Spain at the conclusion of the Mexican War of Independence. It was signed on August 24, 1821 in Córdoba, Veracruz, Mexico. The signatories were the head of the Army of the Three Guarantees, Agustín de Iturbide, and, acting on behalf of the Spanish government, Jefe Político Superior Juan O'Donojú. The treaty has 17 articles, which developed the proposals of the Plan of Iguala. The Treaty is the first document in which Spanish and Mexican officials accept the liberty of what will become the First Mexican Empire, but it is not today recognized as the foundational moment, since these ideas are often attributed to the Grito de Dolores. The treaty was rejected by the Spanish government, publishing this determination in Madrid on February 13 and 14, 1822.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q767450, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty that established Mexican independence from Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-08-24"
+  },
+  "place": "cordoba-veracruz",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

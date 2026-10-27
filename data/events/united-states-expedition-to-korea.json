@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "united-states-expedition-to-korea",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q485415",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "United States expedition to Korea",
+    "pt": "Expedição dos Estados Unidos à Coreia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q485415"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"United States expedition to Korea\", revision 1370752431"
+    }
+  ],
+  "title": "United States expedition to Korea",
+  "summary": "The English Wikipedia article \"United States expedition to Korea\", at revision 1370752431, opens: \"The United States expedition to Korea, known in Korea as the Shinmiyangyo, or simply the Korean Expedition, was an American military action in Korea that took place predominantly on and around Ganghwa Island in 1871.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q485415, imported by tools/import/wikidata.mjs. The item's own description reads \"1871 American expedition to open up trade\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1871,
+    "end": 1871,
+    "date": "1871-07-03"
+  },
+  "place": "ganghwa-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
