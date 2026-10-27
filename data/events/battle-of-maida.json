@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-maida",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q588075",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Maida"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q588075"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Maida\", revision 1373233507"
+    }
+  ],
+  "title": "Battle of Maida",
+  "summary": "The English Wikipedia article \"Battle of Maida\", at revision 1373233507, opens: \"The Battle of Maida was fought on 4 July 1806 between the British and French armies outside Maida, Calabria during the Napoleonic Wars. John Stuart led a British expeditionary force of 5,236 troops to victory over a force of approximately 5,400 French troops under Jean Reynier, inflicting heavy losses while incurring light casualties. The battle demonstrated the effectiveness of the double-line formation employed by Stuart against the triple line used by Reynier; two ranks in linear formation allowed the British to stretch a longer line and deliver more powerful volleys.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q588075, imported by tools/import/wikidata.mjs. The item's own description reads \"1806 battle during the War of the Third Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1806,
+    "end": 1806,
+    "date": "1806-07-04"
+  },
+  "place": "maida-calabria",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-third-coalition"
+}

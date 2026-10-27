@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-pu-tusk-1703",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q626762",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Pułtusk (1703)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q626762"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pułtusk (1703)\", revision 1377989279"
+    }
+  ],
+  "title": "Battle of Pułtusk (1703)",
+  "summary": "The English Wikipedia article \"Battle of Pułtusk (1703)\", at revision 1377989279, opens: \"The Battle of Pułtusk took place on 1 May 1703 (N.S.) in Pułtusk during the Great Northern War. The Swedish army under the command of Charles XII defeated the Saxon army under Adam Heinrich von Steinau.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q626762, imported by tools/import/wikidata.mjs. The item's own description reads \"1703 battle of the Great Northern War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1703,
+    "end": 1703,
+    "date": "1703-05-01"
+  },
+  "place": "pu-tusk",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

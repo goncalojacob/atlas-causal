@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "wijnendale",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1753171",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Wijnendale",
+    "pt": "Wijnendale"
+  },
+  "sources": [],
+  "names": [
+    "Wijnendale"
+  ],
+  "where": {
+    "lon": 3.0661,
+    "lat": 51.0922,
+    "precision": "city",
+    "label": "Wijnendale"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-dynekilen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1844815",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Dynekilen",
+    "pt": "Batalha de Dynekilen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1844815"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dynekilen\", revision 1377269071"
+    }
+  ],
+  "title": "Battle of Dynekilen",
+  "summary": "The English Wikipedia article \"Battle of Dynekilen\", at revision 1377269071, opens: \"The naval Battle of Dynekilen took place on 8 July 1716 during the Great Northern War between a Dano-Norwegian fleet under Peter Tordenskjold and a Swedish fleet under Olof Strömstierna. The battle resulted in a Dano-Norwegian victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1844815, imported by tools/import/wikidata.mjs. The item's own description reads \"1716 battle of the Great Northern War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1716,
+    "end": 1716,
+    "date": "1716-07-08"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

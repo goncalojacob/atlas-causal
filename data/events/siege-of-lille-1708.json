@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-lille-1708",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q694492",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Siege of Lille (1708)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q694492"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Lille (1708)\", revision 1381746482"
+    }
+  ],
+  "title": "Siege of Lille (1708)",
+  "summary": "The English Wikipedia article \"Siege of Lille (1708)\", at revision 1381746482, opens: \"The siege of Lille was the main operation of the 1708 campaign season during the War of the Spanish Succession. Following their victory in the Battle of Oudenaarde, the Allies decided to besiege Lille, an important French city and perhaps the strongest fortress in Europe. After an obstinate defence of 120 days, the French garrison surrendered the city and citadel of Lille, commanded by Marshal Boufflers, to the forces of the Duke of Marlborough and Prince Eugene of Savoy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q694492, imported by tools/import/wikidata.mjs. The item's own description reads \"1708 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1708,
+    "end": 1708,
+    "date": "1708-08-12",
+    "endDate": "1708-12-10"
+  },
+  "place": "lille",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

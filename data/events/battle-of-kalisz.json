@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-kalisz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q554447",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Kalisz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q554447"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kalisz\", revision 1370734155"
+    }
+  ],
+  "title": "Battle of Kalisz",
+  "summary": "The English Wikipedia article \"Battle of Kalisz\", at revision 1370734155, opens: \"The Battle of Kalisz took place on 29 October 1706 in Kalisz, Polish–Lithuanian Commonwealth during the Great Northern War. The battle was fought between an anti-Swedish army of Russians, Saxons and Poles led by Augustus the Strong and Russian general Alexander Danilovich Menshikov, and a Swedish–Polish–Lithuanian army headed by colonel Arvid Axel Mardefelt, loyal to Stanisław Leszczyński. The battle, which occurred as peace had been concluded between Sweden and Saxony, marked Sweden's only major defeat in Poland during the war and temporarily secured a major part of Greater Poland for the coalition. However, they failed to exploit their success as Augustus returned to Saxony soon thereafter to abide by the peace treaty, while Charles XII sent a new corps of 8,000 Swedes into Greater Poland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q554447, imported by tools/import/wikidata.mjs. The item's own description reads \"1706 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1706,
+    "end": 1706,
+    "date": "1706-10-29"
+  },
+  "place": "kalisz",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

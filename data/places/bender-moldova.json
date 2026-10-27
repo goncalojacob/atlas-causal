@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "bender-moldova",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q192176",
+  "sitelinks": {
+    "count": 65,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Bender, Moldova",
+    "pt": "Bender (município)"
+  },
+  "sources": [],
+  "names": [
+    "Bender",
+    "Tighina",
+    "Bender, Moldova",
+    "Bender (município)"
+  ],
+  "where": {
+    "lon": 29.483333333333,
+    "lat": 46.833333333333,
+    "precision": "city",
+    "label": "Bender, Moldova"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

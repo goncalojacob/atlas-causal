@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-wijnendale",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1898572",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Wijnendale"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1898572"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wijnendale\", revision 1370593943"
+    }
+  ],
+  "title": "Battle of Wijnendale",
+  "summary": "The English Wikipedia article \"Battle of Wijnendale\", at revision 1370593943, opens: \"The Battle of Wijnendale took place during the War of the Spanish Succession fought on 28 September 1708 near Wijnendale, Flanders, between an allied force protecting a convoy carrying ammunition for the Siege of Lille (1708) and forces of Bourbon France and Spain. It ended in a victory for the allies, leading to the taking of Lille.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1898572, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in the war of the Spanish succession in 1708\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1708,
+    "end": 1708,
+    "date": "1708-09-28"
+  },
+  "place": "wijnendale",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

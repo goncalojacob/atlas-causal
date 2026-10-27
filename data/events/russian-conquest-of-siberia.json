@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "russian-conquest-of-siberia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q735349",
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Russian conquest of Siberia",
+    "pt": "Conquista russa da Sibéria"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q735349"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russian conquest of Siberia\", revision 1380703549"
+    }
+  ],
+  "title": "Russian conquest of Siberia",
+  "summary": "The English Wikipedia article \"Russian conquest of Siberia\", at revision 1380703549, opens: \"The Russian conquest of Siberia took place between 1581 and 1778, when the Khanate of Sibir became a loose political structure of vassalages that were being undermined by the activities of Russian explorers. Although outnumbered, the Russians pressured the various family-based tribes into changing their loyalties and establishing distant forts from which they conducted raids. It is traditionally considered that Yermak Timofeyevich's campaign against the Siberian Khanate began in 1581. The annexation of Siberia and the Far East to Russia was resisted by local residents and took place against the backdrop of fierce battles between the indigenous peoples of Siberia and the Russian Cossacks, who often committed atrocities against indigenous Siberians. The conquest of the region was a spontaneous event organized by a group of adventurers; it is one of the early European colonial campaigns.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q735349, imported by tools/import/wikidata.mjs. The item's own description reads \"process of incorporation Siberia and Northern Far East into Russia since 1550s untill 1700s\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1580,
+    "end": {
+      "min": 1700,
+      "max": 1799
+    },
+    "date": "1580-07"
+  },
+  "place": "siberia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

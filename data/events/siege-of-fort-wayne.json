@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-fort-wayne",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q15178350",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Siege of Fort Wayne"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15178350"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fort Wayne\", revision 1370741265"
+    }
+  ],
+  "title": "Siege of Fort Wayne",
+  "summary": "The English Wikipedia article \"Siege of Fort Wayne\", at revision 1370741265, opens: \"The siege of Fort Wayne took place from September 5–12, 1812, during the War of 1812. The stand-off occurred in the modern city of Fort Wayne, Indiana, between the U.S. military garrison at Fort Wayne and a combined force of Potawatomi and Miami forces. The conflict began when warriors under the Potawatomi chiefs Winamac and Five Medals killed two members of the U.S. garrison. Over the next several days, the Potawatomi burned the buildings and crops of the fort's adjacent village and launched assaults from outside the fort. Winamac withdrew on September 12 ahead of reinforcements led by Major General William Henry Harrison.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15178350, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the War of 1812\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-09-05",
+    "endDate": "1812-09-12"
+  },
+  "place": "fort-wayne-indiana",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-brihuega",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1328499",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Brihuega"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1328499"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Brihuega\", revision 1370435222"
+    }
+  ],
+  "title": "Battle of Brihuega",
+  "summary": "The English Wikipedia article \"Battle of Brihuega\", at revision 1370435222, opens: \"The Battle of Brihuega took place on 8 December 1710 in the War of the Spanish Succession, during the Allied retreat from Madrid to Barcelona. A British Army rearguard led by James Stanhope, 1st Earl Stanhope was cut off and trapped within the town of Brihuega before being overwhelmed by a Franco-Spanish army under the command of Louis Joseph, Duke of Vendôme. The battle, along with other events, brought an end to British participation in the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1328499, imported by tools/import/wikidata.mjs. The item's own description reads \"1710 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1710,
+    "end": 1710,
+    "date": "1710-12-08"
+  },
+  "place": "brihuega",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cook-s-mills",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888338",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Cook's Mills"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888338"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cook's Mills\", revision 1381868966"
+    }
+  ],
+  "title": "Battle of Cook's Mills",
+  "summary": "The English Wikipedia article \"Battle of Cook's Mills\", at revision 1381868966, opens: \"The Battle of Cook's Mills was the last engagement between U.S. and British armies in the Niagara, and the penultimate engagement on Canadian soil during the War of 1812. After a battle lasting less than an hour, American forces out-maneuvered the British column, and later destroyed all grain found in the mill.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888338, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in Ontario, Canada between American and British forces during the War of 1812\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-10-19"
+  },
+  "place": "battle-of-cook-s-mills-national-historic-site",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

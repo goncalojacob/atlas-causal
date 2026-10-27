@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "gadebusch",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q506665",
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Gadebusch",
+    "pt": "Gadebusch"
+  },
+  "sources": [],
+  "names": [
+    "Gadebusch"
+  ],
+  "where": {
+    "lon": 11.116666666667,
+    "lat": 53.7,
+    "precision": "city",
+    "label": "Gadebusch"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

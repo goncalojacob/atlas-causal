@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-st-michaels",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872429",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of St. Michaels"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872429"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of St. Michaels\", revision 1370274665"
+    }
+  ],
+  "title": "Battle of St. Michaels",
+  "summary": "The English Wikipedia article \"Battle of St. Michaels\", at revision 1370274665, opens: \"The First Battle of St. Michaels was an engagement contested on August 10, 1813, during the War of 1812. British soldiers attacked Maryland militia at St. Michaels, which is located on Eastern Shore of Maryland with access to the Chesapeake Bay. At the time, this small town was on the main shipping route to important cities such as Baltimore and Washington, D.C.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872429, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle of the War of 1812\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-08-10"
+  },
+  "place": "saint-michaels-maryland",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "perevolochna",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q992199",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Perevolochna"
+  },
+  "sources": [],
+  "names": [
+    "Perevolochna"
+  ],
+  "where": {
+    "lon": 24.84467021,
+    "lat": 50.23339231,
+    "precision": "city",
+    "label": "Perevolochna"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
