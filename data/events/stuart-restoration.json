@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "stuart-restoration",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q846848",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Stuart Restoration",
+    "pt": "Restauração (Inglaterra)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q846848"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Stuart Restoration\", revision 1378776360"
+    }
+  ],
+  "title": "Stuart Restoration",
+  "summary": "The English Wikipedia article \"Stuart Restoration\", at revision 1378776360, opens: \"The Stuart Restoration was the return in May 1660 of the Stuart monarchy to the kingdoms of England, Scotland, and Ireland, ending the Interregnum and the Commonwealth of England that had been established after the execution of Charles I in January 1649. The Commonwealth had been governed by the Lord Protector Oliver Cromwell and, briefly, his son Richard Cromwell, before political instability and the intervention of General George Monck led to the Declaration of Breda and the return of Charles II from exile. Charles landed at Dover on 25 May 1660 and entered London on 29 May, his thirtieth birthday. He was crowned at Westminster Abbey on 23 April 1661. The term \"Restoration\" is also used more broadly to describe the reign of Charles II (1660–1685), and sometimes that of his brother James II (1685–1688).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q846848, imported by tools/import/wikidata.mjs. The item's own description reads \"restoration of the monarchy in the British Isles\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1660,
+    "end": 1714
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

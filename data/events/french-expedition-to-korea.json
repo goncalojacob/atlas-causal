@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "french-expedition-to-korea",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q134142",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "French expedition to Korea",
+    "pt": "Expedição francesa à Coreia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q134142"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French expedition to Korea\", revision 1370620397"
+    }
+  ],
+  "title": "French expedition to Korea",
+  "summary": "The English Wikipedia article \"French expedition to Korea\", at revision 1370620397, opens: \"The French Intervention to Korea was an 1866 punitive expedition undertaken by the Second French Empire against Joseon Korea in retaliation for the execution of seven French Catholic missionaries. The encounter over Ganghwa Island lasted nearly six weeks. The result was an eventual French retreat, and a check on French influence in the region. The encounter also confirmed Korea in its isolationism for another decade, until Japan forced it to open up to trade in 1876 through the Treaty of Ganghwa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q134142, imported by tools/import/wikidata.mjs. The item's own description reads \"1866 military campaign\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1866,
+    "date": "1866-10",
+    "endDate": "1866-11"
+  },
+  "place": "ganghwa-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

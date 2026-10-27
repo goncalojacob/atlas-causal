@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "yellow-fever-in-buenos-aires",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q8051877",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Yellow fever in Buenos Aires",
+    "pt": "Febre amarela em Buenos Aires"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8051877"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Yellow fever in Buenos Aires\", revision 1360655500"
+    }
+  ],
+  "title": "Yellow fever in Buenos Aires",
+  "summary": "The English Wikipedia article \"Yellow fever in Buenos Aires\", at revision 1360655500, opens: \"The Yellow fever in Buenos Aires was a series of epidemics that took place in 1852, 1858, 1870 and 1871, the latter being a disaster that killed about 8% of Porteños: in a city where the daily death rate was less than 20, there were days that killed more than 500 people. The Yellow Fever would have come from Asunción, Paraguay, brought by Argentine soldiers returning from the war just fought in that country, having previously spread in the city of Corrientes. As its worst, Buenos Aires population was reduced to a third because of the exodus of those escaping the scourge.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q8051877, imported by tools/import/wikidata.mjs. The item's own description reads \"series of yellow fever epidemics in 1852, 1858, 1870, and 1871 in Argentina\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1852,
+    "end": 1871
+  },
+  "place": "argentina-q414",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

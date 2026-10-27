@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "lincoln-county-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1784900",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Lincoln County War",
+    "pt": "Guerra do Condado de Lincoln"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1784900"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lincoln County War\", revision 1381854329"
+    }
+  ],
+  "title": "Lincoln County War",
+  "summary": "The English Wikipedia article \"Lincoln County War\", at revision 1381854329, opens: \"The Lincoln County War was an Old West conflict between rival factions which began in 1878 in Lincoln County, New Mexico Territory, the predecessor of the state of New Mexico, and continued until 1881. The feud became famous because of the participation of William H. Bonney. Other notable participants included Sheriff William J. Brady, cattle rancher John Chisum, lawyer and businessmen Alexander McSween, James Dolan and Lawrence Murphy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1784900, imported by tools/import/wikidata.mjs. The item's own description reads \"1878–1881 conflict in the Old West of the US\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1878,
+    "end": 1878,
+    "date": "1878-02-18",
+    "endDate": "1878-07-19"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

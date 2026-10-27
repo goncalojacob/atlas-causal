@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "defense-of-van-1896",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5251450",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Defense of Van (1896)",
+    "pt": "Defesa de Vã (1896)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5251450"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Defense of Van (1896)\", revision 1370615240"
+    }
+  ],
+  "title": "Defense of Van (1896)",
+  "summary": "The English Wikipedia article \"Defense of Van (1896)\", at revision 1370615240, opens: \"The 1896 defense of Van or Van rebellion was an act of self-defense by the Armenian population in Van against the armed forces of the Ottoman Empire in June 1896, during the Hamidian massacres.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5251450, imported by tools/import/wikidata.mjs. The item's own description reads \"act of self-defense by the Armenian population of Van against the armed forces of the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1896,
+    "date": "1896-06-03",
+    "endDate": "1896-06-11"
+  },
+  "place": "van-turkey",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

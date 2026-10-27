@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "velasco-texas",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q838916",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Velasco, Texas"
+  },
+  "sources": [],
+  "names": [
+    "Velasco",
+    "Velasco, Texas"
+  ],
+  "where": {
+    "lon": -95.3606,
+    "lat": 28.9619,
+    "precision": "city",
+    "label": "Velasco, Texas"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

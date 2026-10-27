@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zeitun-rebellion-1895-96",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q8068635",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Zeitun rebellion (1895–96)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8068635"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Zeitun rebellion (1895–96)\", revision 1381101797"
+    }
+  ],
+  "title": "Zeitun rebellion (1895–96)",
+  "summary": "The English Wikipedia article \"Zeitun rebellion (1895–96)\", at revision 1381101797, opens: \"The Zeitun rebellion or Second Zeitun Resistance took place in the winter of 1895–1896, during the Hamidian massacres, when the Armenians of Zeitun, fearing the prospect of massacre, took up arms to defend themselves from Ottoman troops.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q8068635, imported by tools/import/wikidata.mjs. The item's own description reads \"Armenian rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1895,
+    "end": 1896,
+    "date": "1895-10-12",
+    "endDate": "1896-02-01"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

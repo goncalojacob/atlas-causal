@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "platine-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3042457",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Platine War",
+    "pt": "Guerra do Prata"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3042457"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Platine War\", revision 1381540168"
+    }
+  ],
+  "title": "Platine War",
+  "summary": "The English Wikipedia article \"Platine War\", at revision 1381540168, opens: \"The Platine War was fought between the Argentine Confederation and an alliance consisting of the Empire of Brazil, Uruguay, and the Argentine provinces of Entre Ríos and Corrientes, with the participation of the Republic of Paraguay as Brazil's co-belligerent and ally. The war was part of a decades-long dispute between Argentina and Brazil for influence over Uruguay and Paraguay, and hegemony over the Platine region. The conflict took place in Uruguay and northeastern Argentina, and on the Río de la Plata. Uruguay's internal troubles, including the longrunning Uruguayan Civil War, were heavily influential factors leading to the Platine War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3042457, imported by tools/import/wikidata.mjs. The item's own description reads \"1851-1852 war between Argentina and Brazil\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1851,
+    "end": 1852,
+    "date": "1851-08-18",
+    "endDate": "1852-02-03"
+  },
+  "place": "uruguay-q77",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "argentine-civil-wars"
+}

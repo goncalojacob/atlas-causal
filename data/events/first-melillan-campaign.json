@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-melillan-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1806916",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "First Melillan campaign",
+    "pt": "Guerra de Margallo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1806916"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Melillan campaign\", revision 1377024366"
+    }
+  ],
+  "title": "First Melillan campaign",
+  "summary": "The English Wikipedia article \"First Melillan campaign\", at revision 1377024366, opens: \"The first Melillan Campaign, also known as the Melilla War or the Margallo War in Spain, was a conflict between Spain and the Riffian tribes of northeastern Morocco, and later the Sultan of Morocco, that began in October 1893, was openly declared November 9, 1893, and was resolved by the Treaty of Fez in 1894.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1806916, imported by tools/import/wikidata.mjs. The item's own description reads \"1893-1894\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1893,
+    "end": 1894,
+    "date": "1893-10-03",
+    "endDate": "1894-04-25"
+  },
+  "place": "rif",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

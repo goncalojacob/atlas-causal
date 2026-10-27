@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-mangalore",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7837140",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Treaty of Mangalore",
+    "pt": "Tratado de Mangalor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837140"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Mangalore\", revision 1368931351"
+    }
+  ],
+  "title": "Treaty of Mangalore",
+  "summary": "The English Wikipedia article \"Treaty of Mangalore\", at revision 1368931351, opens: \"The Treaty of Mangalore was signed between Tipu Sultan and the British East India Company on 11 March 1784. It was signed in Mangaluru and brought an end to the Second Anglo-Mysore War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837140, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty between Tipu Sultan and the British East India Company\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1784,
+    "end": 1784
+  },
+  "place": "mangaluru",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

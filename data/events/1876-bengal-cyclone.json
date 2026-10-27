@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1876-bengal-cyclone",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5598680",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "1876 Bengal cyclone"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5598680"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1876 Bengal cyclone\", revision 1380320142"
+    }
+  ],
+  "title": "1876 Bengal cyclone",
+  "summary": "The English Wikipedia article \"1876 Bengal cyclone\", at revision 1380320142, opens: \"The Great Backerganj Cyclone of 1876 was one of the deadliest tropical cyclones in history. It hit the coast of Backerganj, Bengal Presidency, British India, killing about 200,000 people, half of whom were drowned by the storm surge, while the rest died from the subsequent famine.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5598680, imported by tools/import/wikidata.mjs. The item's own description reads \"North Indian Ocean cyclone that hit Bangladesh in 1876\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1876,
+    "date": "1876-10-29",
+    "endDate": "1876-11-01"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

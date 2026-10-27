@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mangaluru",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q127041",
+  "sitelinks": {
+    "count": 80,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Mangaluru",
+    "pt": "Mangalor"
+  },
+  "sources": [],
+  "names": [
+    "Mangaluru",
+    "Mangalore",
+    "Mangalor"
+  ],
+  "where": {
+    "lon": 74.8425,
+    "lat": 12.871666666666666,
+    "precision": "city",
+    "label": "Mangaluru"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

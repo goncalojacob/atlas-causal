@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "roskilde",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q26563",
+  "sitelinks": {
+    "count": 75,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Roskilde",
+    "pt": "Roskilde"
+  },
+  "sources": [],
+  "names": [
+    "Roskilde"
+  ],
+  "where": {
+    "lon": 12.080833333333,
+    "lat": 55.641666666667,
+    "precision": "city",
+    "label": "Roskilde"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

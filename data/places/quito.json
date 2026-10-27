@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "quito",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2900",
+  "sitelinks": {
+    "count": 157,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Quito",
+    "pt": "Quito"
+  },
+  "sources": [],
+  "names": [
+    "Quito"
+  ],
+  "where": {
+    "lon": -78.5125,
+    "lat": -0.22,
+    "precision": "city",
+    "label": "Quito"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

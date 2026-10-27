@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bakumatsu",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q804558",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Bakumatsu",
+    "pt": "Bakumatsu"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q804558"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bakumatsu\", revision 1369518456"
+    }
+  ],
+  "title": "Bakumatsu",
+  "summary": "The English Wikipedia article \"Bakumatsu\", at revision 1369518456, opens: \"Bakumatsu  were the final years of the Edo period when the Tokugawa shogunate ended. Between 1853 and 1867, under foreign diplomatic and military pressure, Japan ended its isolationist foreign policy known as sakoku and changed from a feudal Tokugawa shogunate to the modern empire of the Meiji government. The major ideological-political divide during this period was between the pro-imperial nationalists called ishin shishi and the shogunate forces, which included the elite shinsengumi swordsmen.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q804558, imported by tools/import/wikidata.mjs. The item's own description reads \"final years of the Edo period\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1853,
+    "end": 1868
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "edo-period"
+}

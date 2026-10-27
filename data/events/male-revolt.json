@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "male-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6745211",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Malê revolt",
+    "pt": "Revolta dos Malês"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6745211"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Malê revolt\", revision 1370627521"
+    }
+  ],
+  "title": "Malê revolt",
+  "summary": "The English Wikipedia article \"Malê revolt\", at revision 1370627521, opens: \"The Malê revolt was a Muslim slave rebellion that broke out during the regency period in the Empire of Brazil. On a Sunday during Ramadan in January 1835, in the city of Salvador, a group of enslaved African Muslims and freedmen, inspired by Muslim teachers, rose up against the government. Muslims were called malê in Bahia at the time, from Yoruba imale that designated a Yoruba Muslim.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6745211, imported by tools/import/wikidata.mjs. The item's own description reads \"slave revolt in Bahia/Brazil\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1835,
+    "date": "1835-01"
+  },
+  "place": "salvador",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

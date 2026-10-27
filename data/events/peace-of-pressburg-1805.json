@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "peace-of-pressburg-1805",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q154102",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Peace of Pressburg (1805)",
+    "pt": "Paz de Presburgo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q154102"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peace of Pressburg (1805)\", revision 1353710242"
+    }
+  ],
+  "title": "Peace of Pressburg (1805)",
+  "summary": "The English Wikipedia article \"Peace of Pressburg (1805)\", at revision 1353710242, opens: \"The Peace of Pressburg was signed in Pressburg on 26 December 1805 between French Emperor Napoleon Bonaparte and Holy Roman Emperor Francis II, as a consequence of the French victory over the Russians and Austrians at the Battle of Austerlitz. A truce was agreed on 4 December, and negotiations for the treaty began. The treaty was signed by Johann I Joseph, Prince of Liechtenstein, and the Hungarian Count Ignác Gyulay for the Austrian Empire and Charles Maurice de Talleyrand for France.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q154102, imported by tools/import/wikidata.mjs. The item's own description reads \"1805 peace treaty closing the war of the third coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1805,
+    "end": 1805
+  },
+  "place": "bratislava",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

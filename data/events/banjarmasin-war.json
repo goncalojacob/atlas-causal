@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "banjarmasin-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q368594",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Banjarmasin War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q368594"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Banjarmasin War\", revision 1380699460"
+    }
+  ],
+  "title": "Banjarmasin War",
+  "summary": "The English Wikipedia article \"Banjarmasin War\", at revision 1380699460, opens: \"The Banjarmasin War (1859–1863) was a war of succession in the Sultanate of Banjarmasin, as well as a colonial war for the restoration of Dutch authority in the eastern and southern section of Borneo.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q368594, imported by tools/import/wikidata.mjs. The item's own description reads \"war between the Dutch Empire and the pro-Antasari faction\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1859,
+    "end": 1863
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

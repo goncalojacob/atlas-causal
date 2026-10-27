@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1812-1819-ottoman-plague-epidemic",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q96359686",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "1812–1819 Ottoman plague epidemic"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q96359686"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1812–1819 Ottoman plague epidemic\", revision 1380446892"
+    }
+  ],
+  "title": "1812–1819 Ottoman plague epidemic",
+  "summary": "The English Wikipedia article \"1812–1819 Ottoman plague epidemic\", at revision 1380446892, opens: \"The 1812–1819 Ottoman plague epidemic was one of the last major epidemics of plague in the Ottoman Empire. This particular epidemic would cost the lives of at least 300,000 individuals. Plague epidemics occurred frequently in the Ottoman Empire between the 16th and 19th centuries.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q96359686, imported by tools/import/wikidata.mjs. The item's own description reads \"disease outbreak\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1819,
+    "date": "1812-07"
+  },
+  "place": "constantinople",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

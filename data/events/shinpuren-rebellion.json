@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "shinpuren-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2975371",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Shinpūren rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2975371"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Shinpūren rebellion\", revision 1370738242"
+    }
+  ],
+  "title": "Shinpūren rebellion",
+  "summary": "The English Wikipedia article \"Shinpūren rebellion\", at revision 1370738242, opens: \"The Shinpūren rebellion  was an uprising against the Meiji government of Japan that occurred in Kumamoto on 24 October 1876.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2975371, imported by tools/import/wikidata.mjs. The item's own description reads \"1876 Japanese uprising\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1876
+  },
+  "place": "kumamoto",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

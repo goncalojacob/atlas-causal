@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "kumamoto",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q199889",
+  "sitelinks": {
+    "count": 80,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Kumamoto",
+    "pt": "Kumamoto (cidade)"
+  },
+  "sources": [],
+  "names": [
+    "Kumamoto",
+    "Kumamoto (cidade)"
+  ],
+  "where": {
+    "lon": 130.7078611111111,
+    "lat": 32.803,
+    "precision": "city",
+    "label": "Kumamoto"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-fort-laramie-1851",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2241487",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Treaty of Fort Laramie (1851)",
+    "pt": "Tratado de Fort Laramie (1851)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2241487"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Fort Laramie (1851)\", revision 1368636466"
+    }
+  ],
+  "title": "Treaty of Fort Laramie (1851)",
+  "summary": "The English Wikipedia article \"Treaty of Fort Laramie (1851)\", at revision 1368636466, opens: \"The Fort Laramie Treaty of 1851 was signed on September 17, 1851 between United States treaty commissioners and representatives of the Cheyenne, Sioux, Arapaho, Crow, Assiniboine, Mandan, Hidatsa, and Arikara Nations. Also known as Horse Creek Treaty, the treaty set forth traditional territorial claims of the tribes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2241487, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty on territorial claims of Native Americans\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1851,
+    "end": 1851
+  },
+  "place": "fort-laramie-wyoming",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

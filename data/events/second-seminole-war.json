@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "second-seminole-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2976715",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Second Seminole War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2976715"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Seminole War\", revision 1376795215"
+    }
+  ],
+  "title": "Second Seminole War",
+  "summary": "The English Wikipedia article \"Second Seminole War\", at revision 1376795215, opens: \"The Second Seminole War, also known as the Florida War, was a conflict from 1835 to 1842 in Florida between the United States and groups of people collectively known as Seminoles, consisting of Creek and Black Seminoles as well as other allied tribes. It was part of a series of conflicts called the Seminole Wars. The Second Seminole War, often referred to as the Seminole War, is regarded as \"the longest and most costly of the Indian conflicts of the United States\". After the Treaty of Payne's Landing in 1832 that called for the Seminoles' removal from Florida, tensions rose until fierce hostilities occurred in Dade's massacre in 1835. This engagement officially started the war although there were a series of incidents leading up to the Dade battle. The Seminoles and the U.S. forces engaged in mostly small engagements for more than six years. By 1842, only a few hundred native people remained in Florida. Although no peace treaty was ever signed, the war was declared over on August 14, 1842, by Colonel William Jenkins Worth.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2976715, imported by tools/import/wikidata.mjs. The item's own description reads \"1835–1842 war in Florida\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1842,
+    "date": "1835-12-23",
+    "endDate": "1842-08-14"
+  },
+  "place": "florida-q812",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seminole-wars"
+}

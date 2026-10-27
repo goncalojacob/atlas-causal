@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-frankfurt-1871",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q158021",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Treaty of Frankfurt (1871)",
+    "pt": "Tratado de Frankfurt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q158021"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Frankfurt (1871)\", revision 1358350277"
+    }
+  ],
+  "title": "Treaty of Frankfurt (1871)",
+  "summary": "The English Wikipedia article \"Treaty of Frankfurt (1871)\", at revision 1358350277, opens: \"The Treaty of Frankfurt was a peace treaty signed in Frankfurt on 10 May 1871 by the German Empire and the French Third Republic, at the end of the Franco-Prussian War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q158021, imported by tools/import/wikidata.mjs. The item's own description reads \"1871 peace treaty ending the Franco-Prussian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1871,
+    "end": 1871,
+    "date": "1871-11-07"
+  },
+  "place": "frankfurt",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

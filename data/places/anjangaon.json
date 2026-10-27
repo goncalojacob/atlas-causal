@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "anjangaon",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q583982",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Anjangaon",
+    "pt": "Anjangaon"
+  },
+  "sources": [],
+  "names": [
+    "Anjangaon"
+  ],
+  "where": {
+    "lon": 77.3091,
+    "lat": 21.16516,
+    "precision": "city",
+    "label": "Anjangaon"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

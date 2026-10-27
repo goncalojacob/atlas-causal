@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "uprising-of-dervish-cara",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4709157",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Uprising of Dervish Cara"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4709157"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Uprising of Dervish Cara\", revision 1370752630"
+    }
+  ],
+  "title": "Uprising of Dervish Cara",
+  "summary": "The English Wikipedia article \"Uprising of Dervish Cara\", at revision 1370752630, opens: \"The Uprising of Dervish Cara was a 19th-century uprising in northern Ottoman Albania directed against the Ottoman Tanzimat reforms which started in 1839 and were gradually being put in action in the regions of Albania. Some historians include the actions in Dibër of the same time under the same historical name, though the events in Dibër were independent and headed by other leaders.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4709157, imported by tools/import/wikidata.mjs. The item's own description reads \"19th-century uprising in northern Ottoman Albania\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1843,
+    "end": 1844
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

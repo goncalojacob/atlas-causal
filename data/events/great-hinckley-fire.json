@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "great-hinckley-fire",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3427286",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Great Hinckley Fire",
+    "pt": "Grande Incêndio de Hinckley"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3427286"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Hinckley Fire\", revision 1382186871"
+    }
+  ],
+  "title": "Great Hinckley Fire",
+  "summary": "The English Wikipedia article \"Great Hinckley Fire\", at revision 1382186871, opens: \"The Great Hinckley Fire was a conflagration in the pine forests of the U.S. state of Minnesota that ignited on September 1, 1894, which burned an area of at least 200,000 acres, including the town of Hinckley. The official death count was 418; the actual number of fatalities was likely higher. Other sources put the death toll at 476.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3427286, imported by tools/import/wikidata.mjs. The item's own description reads \"1894 forest fire in Minnesota, U.S.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1894,
+    "end": null,
+    "date": "1894-09-01"
+  },
+  "place": "minnesota",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

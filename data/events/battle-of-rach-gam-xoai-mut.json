@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-rach-gam-xoai-mut",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1047091",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Rạch Gầm-Xoài Mút"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1047091"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Rạch Gầm-Xoài Mút\", revision 1379275053"
+    }
+  ],
+  "title": "Battle of Rạch Gầm-Xoài Mút",
+  "summary": "The English Wikipedia article \"Battle of Rạch Gầm-Xoài Mút\", at revision 1379275053, opens: \"The Battle of Rạch Gầm-Xoài Mút was fought between the Vietnamese Tây Sơn forces and an army of Siam in present-day Kim Sơn commune, Đồng Tháp province of Vietnam on 20 January 1785.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1047091, imported by tools/import/wikidata.mjs. The item's own description reads \"1785 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1785,
+    "end": 1785,
+    "date": "1785-01-20"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

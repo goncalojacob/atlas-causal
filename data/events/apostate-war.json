@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "apostate-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q135263667",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Apostate War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q135263667"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Apostate War\", revision 1376315636"
+    }
+  ],
+  "title": "Apostate War",
+  "summary": "The English Wikipedia article \"Apostate War\", at revision 1376315636, opens: \"The Apostate War also called the Bruneian-Sulu War was a conflict between the Sulu Sultanate and the Bruneian Empire. Brunei also fought Spain briefly as well\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q135263667, imported by tools/import/wikidata.mjs. The item's own description reads \"1769–1790 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1769,
+    "end": 1790
+  },
+  "place": "borneo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

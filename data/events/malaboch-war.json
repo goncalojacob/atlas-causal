@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "malaboch-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q17071356",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Malaboch War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17071356"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Malaboch War\", revision 1370627431"
+    }
+  ],
+  "title": "Malaboch War",
+  "summary": "The English Wikipedia article \"Malaboch War\", at revision 1370627431, opens: \"The Malaboch War (1894) was between Chief Malaboch of the Hananwa people and the South African Republic (ZAR) Government led by Commandant-General Piet Joubert. Malboch refused to pay taxes to the Transvaal after it was given back to the Boers in 1881 by the British, which resulted in a military drive against him by the South African Republic (ZAR).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17071356, imported by tools/import/wikidata.mjs. The item's own description reads \"brief African war between Boers and Bahananwa\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1894,
+    "end": 1894,
+    "date": "1894-04",
+    "endDate": "1894-07"
+  },
+  "place": "blouberg-range",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

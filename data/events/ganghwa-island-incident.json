@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "ganghwa-island-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q496905",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Ganghwa Island incident"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q496905"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ganghwa Island incident\", revision 1370620686"
+    }
+  ],
+  "title": "Ganghwa Island incident",
+  "summary": "The English Wikipedia article \"Ganghwa Island incident\", at revision 1370620686, opens: \"The Ganghwa Island incident or the Japanese Battle of Ganghwa was an armed clash between the Joseon dynasty of Korea and Japan which occurred in the vicinity of Ganghwa Island on September 20, 1875.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q496905, imported by tools/import/wikidata.mjs. The item's own description reads \"1875 battle between Japan and Korea due to the Japanese illicit entry to the Ganghwa Island of Korea to stipulate a commercial treaty under the pretext of land surveying\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1875,
+    "end": 1875,
+    "date": "1875-09-20"
+  },
+  "place": "ganghwa-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

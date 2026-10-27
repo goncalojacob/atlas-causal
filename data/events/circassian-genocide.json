@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "circassian-genocide",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2578778",
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Circassian genocide",
+    "pt": "Genocídio circassiano"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2578778"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Circassian genocide\", revision 1381876359"
+    }
+  ],
+  "title": "Circassian genocide",
+  "summary": "The English Wikipedia article \"Circassian genocide\", at revision 1381876359, opens: \"The Circassian genocide, or Tsitsekun, was the systematic mass killing, ethnic cleansing, and forced displacement of between 95% and 97% of the Circassian people during the final stages of the Russian invasion of Circassia in the 19th century. It resulted in the deaths of up to 1.5 million people and the destruction of Circassia, which was then annexed by the Russian Empire. Those planned for extermination were mainly the Circassians, who are predominantly Muslims, but other ethnic groups in the Caucasus were also affected, as part of the Caucasian War. The Imperial Russian Army also impaled their victims and tore open the bellies of pregnant women to intimidate the Circassians and devastate their morale. Many Russian generals, such as Grigory Zass, described the Circassians as a \"lowly race\" to justify and glorify their wholesale slaughter and their use as human test subjects in unethical scientific experiments. Russian soldiers were also permitted to rape Circassian women.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2578778, imported by tools/import/wikidata.mjs. The item's own description reads \"19th century genocide of Circassians by the Russian Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1800,
+      "max": 1809
+    },
+    "end": 1864
+  },
+  "place": "russian-empire-q34266",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

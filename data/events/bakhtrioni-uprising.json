@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "bakhtrioni-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4849424",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Bakhtrioni uprising"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4849424"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bakhtrioni uprising\", revision 1381856172"
+    }
+  ],
+  "title": "Bakhtrioni uprising",
+  "summary": "The English Wikipedia article \"Bakhtrioni uprising\", at revision 1381856172, opens: \"The Bakhtrioni uprising was a general revolt in the eastern Georgian Kingdom of Kakheti against the political domination of Safavid Persia, in 1659. Despite the fact that the Persians were able to suppress the uprising later, they were forced to abandon plans to settle Georgia with the Qizilbash.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4849424, imported by tools/import/wikidata.mjs. The item's own description reads \"1659 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1659,
+    "end": 1659,
+    "date": "1659-09"
+  },
+  "place": "georgia-q230",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

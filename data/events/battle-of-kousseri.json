@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-kousseri",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1164601",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Kousséri"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1164601"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kousséri\", revision 1370446124"
+    }
+  ],
+  "title": "Battle of Kousséri",
+  "summary": "The English Wikipedia article \"Battle of Kousséri\", at revision 1370446124, opens: \"The battle of Kousséri was a major engagement fought between France and the forces of the warlord Rabih az-Zubayr in the Rabih War. The conflict originated in French plans to occupy the Chari-Baguirmi region in modern-day Chad. In 1899–1900, the French organized three armed columns, one proceeding north from Congo, one east from Niger and another south from Algeria. The objective was to link all French possessions in Western Africa, and this was achieved on April 21, 1900, on the right bank of the Chari in what is now Chad opposite Kousséri, in what today is northern Cameroon.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1164601, imported by tools/import/wikidata.mjs. The item's own description reads \"1900 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-04-22"
+  },
+  "place": "kousseri",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

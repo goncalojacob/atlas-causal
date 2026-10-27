@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "sikkim",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1505",
+  "sitelinks": {
+    "count": 129,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Sikkim",
+    "pt": "Siquim"
+  },
+  "sources": [],
+  "names": [
+    "Sikkim",
+    "Siquim"
+  ],
+  "where": {
+    "lon": 88.5,
+    "lat": 27.55,
+    "precision": "region",
+    "label": "Sikkim"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
