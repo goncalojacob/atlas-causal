@@ -3103,9 +3103,9 @@ Writer A imported it from the planner's queue as item `2026-10-27-africa-010`, r
 
 Writer A imported it from the planner's queue as item `2026-10-27-asia-096`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
 
-## Writer B, 2026-10-27: `khivan-campaign-of-1839-1840`, filed under `russian-conquest-of-central-asia` with neither an actor nor a place
+## Writer B, 2026-10-27: `khivan-campaign-of-1839-1840`, bare
 
-Writer B filed it there because the planner's queue asked for it in item `2026-10-27-asia-027`, rank `list`. Its span and its subject put it inside the umbrella.
+Writer B imported it from the planner's queue as item `2026-10-27-asia-027`, rank `list`, filed under `russian-conquest-of-central-asia`. The assistant removed that filing the same day: the campaign runs from 1839 to 1840, and the atlas dates the umbrella to 1839 alone, so the child was not dated inside it. It names no actor the atlas holds and no place the import could use.
 
 ## Writer B, 2026-10-27: `siamese-vietnamese-war-1840-1845`, bare
 
