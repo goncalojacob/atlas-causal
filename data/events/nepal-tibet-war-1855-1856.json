@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nepal-tibet-war-1855-1856",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2001528",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Nepal–Tibet War (1855–1856)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2001528"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Nepal–Tibet War (1855–1856)\", revision 1376162858"
+    }
+  ],
+  "title": "Nepal–Tibet War (1855–1856)",
+  "summary": "The English Wikipedia article \"Nepal–Tibet War (1855–1856)\", at revision 1376162858, opens: \"The Nepal–Tibet War of 1855–1856 was fought in Tibet between the forces of the Tibetan government and the invading Nepalese army, resulting in huge loss of money and manpower for Nepal. In 1856 the war ended with the Treaty of Thapathali.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2001528, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in Tibet won by Kingdom of Nepal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1855,
+    "end": 1856,
+    "date": "1855-04",
+    "endDate": "1856-03"
+  },
+  "place": "tibet-q17252",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

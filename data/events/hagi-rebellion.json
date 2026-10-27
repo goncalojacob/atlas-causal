@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "hagi-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2090612",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Hagi Rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2090612"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hagi Rebellion\", revision 1370622353"
+    }
+  ],
+  "title": "Hagi Rebellion",
+  "summary": "The English Wikipedia article \"Hagi Rebellion\", at revision 1370622353, opens: \"The Hagi Rebellion  was an uprising against the Meiji government of Japan that occurred in Hagi from 28 October 1876 to 5 November 1876.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2090612, imported by tools/import/wikidata.mjs. The item's own description reads \"1876 failed Japanese revolt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1876,
+    "date": "1876-11-05"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

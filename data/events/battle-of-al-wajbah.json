@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-al-wajbah",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q20988318",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Al Wajbah"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20988318"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Al Wajbah\", revision 1370431287"
+    }
+  ],
+  "title": "Battle of Al Wajbah",
+  "summary": "The English Wikipedia article \"Battle of Al Wajbah\", at revision 1370431287, opens: \"The Battle of Al Wajbah took place in March 1893 in Qatar, a province of the Ottoman Empire's Najd sanjak at that time. The conflict was initiated after Ottoman officials imprisoned 16 Qatari tribal leaders and ordered a column of troops to march toward the Al Thani stronghold in the village of Al Wajbah in response to kaymakam Jassim Al Thani's refusal to submit to Ottoman authority.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20988318, imported by tools/import/wikidata.mjs. The item's own description reads \"1893 armed conflict in Qatar\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1893,
+    "end": 1893,
+    "date": "1893-03"
+  },
+  "place": "al-wajbah-fort",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

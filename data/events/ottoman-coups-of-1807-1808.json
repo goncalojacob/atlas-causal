@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ottoman-coups-of-1807-1808",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3197905",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Ottoman coups of 1807–1808",
+    "pt": "Revolta dos Yamakos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3197905"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman coups of 1807–1808\", revision 1370701367"
+    }
+  ],
+  "title": "Ottoman coups of 1807–1808",
+  "summary": "The English Wikipedia article \"Ottoman coups of 1807–1808\", at revision 1370701367, opens: \"The Ottoman palace coups of 1807–1808 refers to several coups and rebellions deposing or restoring to the throne three Ottoman sultans, that took place as a result of the attempted reforms of Selim III.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3197905, imported by tools/import/wikidata.mjs. The item's own description reads \"struggles over Janissary reform in the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1807,
+    "end": 1808
+  },
+  "place": "constantinople",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": [],
+  "parent": "decline-and-modernization-of-the-ottoman-empire"
+}

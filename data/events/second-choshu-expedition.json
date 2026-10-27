@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "second-choshu-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q711793",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Second Chōshū expedition",
+    "pt": "Segunda expedição Chōshū"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q711793"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Chōshū expedition\", revision 1370736913"
+    }
+  ],
+  "title": "Second Chōshū expedition",
+  "summary": "The English Wikipedia article \"Second Chōshū expedition\", at revision 1370736913, opens: \"The Second Chōshū expedition, also called the Summer War, was a punitive expedition led by the Tokugawa shogunate against the Chōshū Domain in 1866. It followed the First Chōshū expedition of 1864.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q711793, imported by tools/import/wikidata.mjs. The item's own description reads \"1866 Tokugawa shogunate defeat in Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": null,
+    "date": "1866-07-18"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

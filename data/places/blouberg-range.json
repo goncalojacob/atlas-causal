@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "blouberg-range",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3641101",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Blouberg (range)"
+  },
+  "sources": [],
+  "names": [
+    "Blouberg",
+    "Blouberg (range)"
+  ],
+  "where": {
+    "lon": 28.85,
+    "lat": -23.08333333,
+    "precision": "region",
+    "label": "Blouberg (range)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

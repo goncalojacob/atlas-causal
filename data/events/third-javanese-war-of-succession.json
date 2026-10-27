@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "third-javanese-war-of-succession",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2371369",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Third Javanese War of Succession"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2371369"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Third Javanese War of Succession\", revision 1371988534"
+    }
+  ],
+  "title": "Third Javanese War of Succession",
+  "summary": "The English Wikipedia article \"Third Javanese War of Succession\", at revision 1371988534, opens: \"The Third Javanese War of Succession was an armed conflict from 1749 to 1757 on the island of Java. It led to the partition of the Mataram Sultanate into two and later three nominally independent 'Princely States': Surakarta, Yogyakarta and Mangkunegara.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2371369, imported by tools/import/wikidata.mjs. The item's own description reads \"1749–1757 armed conflict in Java\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1749,
+    "end": 1757,
+    "date": "1749-12-15",
+    "endDate": "1757-02"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

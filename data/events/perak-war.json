@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "perak-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7166879",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Perak War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7166879"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Perak War\", revision 1370703947"
+    }
+  ],
+  "title": "Perak War",
+  "summary": "The English Wikipedia article \"Perak War\", at revision 1370703947, opens: \"The Perak War (1875–1877) took place between British and local forces in Perak, a state in northwestern Malaysia. The sultan of Lower Perak and other local chiefs attempted to end foreign influence in the region and remove the British administrator James W. W. Birch. Following the killing of Birch in 1875, British forces defeated the followers of Lela Pandak Lam.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7166879, imported by tools/import/wikidata.mjs. The item's own description reads \"19th century colonial war in Malaysia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1875,
+    "end": 1876
+  },
+  "place": "perak-q188953",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

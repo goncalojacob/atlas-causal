@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "peasant-s-revolt-in-palestine",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4554402",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Peasant's revolt in Palestine",
+    "pt": "Revolta dos camponeses na Palestina"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4554402"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peasant's revolt in Palestine\", revision 1380475587"
+    }
+  ],
+  "title": "Peasant's revolt in Palestine",
+  "summary": "The English Wikipedia article \"Peasant's revolt in Palestine\", at revision 1380475587, opens: \"The peasants' revolt in Palestine was a rebellion against Egyptian conscription and taxation policies in Palestine between May and August 1834. While rebel ranks consisted mostly of the local peasantry, urban notables and Bedouin tribes also formed an integral part of the revolt. This was a collective reaction to Egypt's gradual elimination of the unofficial rights and privileges previously enjoyed by the various classes of society in the Levant under Ottoman rule.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4554402, imported by tools/import/wikidata.mjs. The item's own description reads \"1834 rebellion in Palestine\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1834,
+    "end": 1834,
+    "date": "1834-05",
+    "endDate": "1834-08"
+  },
+  "place": "palestine-q23792",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

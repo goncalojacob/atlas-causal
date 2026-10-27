@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sikkim-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q16890896",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Sikkim expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16890896"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sikkim expedition\", revision 1370746898"
+    }
+  ],
+  "title": "Sikkim expedition",
+  "summary": "The English Wikipedia article \"Sikkim expedition\", at revision 1370746898, opens: \"The Sikkim expedition was an 1888 British military expedition to expel Tibetan forces from Sikkim. The roots of the conflict lay in British–Tibetan competition for suzerainty over Sikkim.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16890896, imported by tools/import/wikidata.mjs. The item's own description reads \"1888 British military expedition to expel Tibetan forces from Sikkim\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1888,
+    "end": 1888,
+    "date": "1888-03-15",
+    "endDate": "1888-09-27"
+  },
+  "place": "sikkim",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

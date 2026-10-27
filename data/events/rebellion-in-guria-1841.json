@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "rebellion-in-guria-1841",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4554590",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Rebellion in Guria (1841)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4554590"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Rebellion in Guria (1841)\", revision 1370706393"
+    }
+  ],
+  "title": "Rebellion in Guria (1841)",
+  "summary": "The English Wikipedia article \"Rebellion in Guria (1841)\", at revision 1370706393, opens: \"The Rebellion in Guria (1841) was a conflict in the former Georgian principality of Guria, at that time part of the Georgia-Imeretia Governorate of the Russian Empire, that took place as a reaction to the government's newly introduced duties and taxes for the Georgian peasants. The rebels, joined by several nobles, were initially successful in overrunning much of Guria, but they were finally defeated by the Imperial Russian Army and the allied Georgian nobility in September 1841.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4554590, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict in the former Georgian principality of Guria\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1841,
+    "end": 1841,
+    "date": "1841-05-22",
+    "endDate": "1841-09-13"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

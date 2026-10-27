@@ -16090,6 +16090,973 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-033",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3591486: none of its classes (Q7692360, Q3541302, Q106797758, Q17992244) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-asia-035",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "siamese-vietnamese-war-1833-1834",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-037",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "mito-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-039",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "chichibu-incident",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-041",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "zeitun-rebellion-1895-96",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-043",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "peasant-s-revolt-in-palestine",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-045",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "first-choshu-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-047",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2377085: none of its classes (Q3824506) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-asia-049",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-rach-gam-xoai-mut",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-051",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "hunza-nagar-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-004",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3536929: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-asia-054",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "qatari-bahraini-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-056",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "sikkim-expedition",
+        "edges": [],
+        "place": "sikkim"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-058",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-purandar-1665",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-005",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "dutch-ahanta-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-060",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "bakhtrioni-uprising",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-062",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "third-javanese-war-of-succession",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-064",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "rebellion-in-guria-1841",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-066",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "punti-hakka-clan-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-068",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-al-wajbah",
+        "edges": [],
+        "place": "al-wajbah-fort"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-070",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "tirah-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-072",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "1812-1819-ottoman-plague-epidemic",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-074",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "beylerbeyi-event",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-076",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-kandyan-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-078",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "burmese-invasions-of-assam",
+        "edges": [],
+        "place": "assam-q1164"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-080",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "dutch-intervention-in-northern-bali-1848",
+        "edges": [],
+        "place": "bali-island"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-082",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "red-turban-rebellion-1854-1856",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-084",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-mangalore",
+        "edges": [],
+        "place": "mangaluru"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-008",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "franco-trarzan-war-of-1825",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-085",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "mysorean-invasion-of-malabar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-087",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "miao-rebellion-1854-1873",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-089",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "perak-war",
+        "edges": [],
+        "place": "perak-q188953"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-091",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-surji-anjangaon",
+        "edges": [],
+        "place": "anjangaon"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-093",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "1786-kangding-luding-earthquake",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-010",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tres-forcas",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-012",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "malaboch-war",
+        "edges": [],
+        "place": "blouberg-range"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-096",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "bani-utbah-invasion-of-bahrain",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-098",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "albanian-revolt-of-1845",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-100",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "written",
+      "written": {
+        "event": "jementah-civil-war",
+        "edges": [],
+        "place": "muar-town"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-102",
+      "writer": "A",
+      "fired": "2026-10-27T16:27Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q11510437: none of its classes (Q3824506) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-asia-021",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "1894-sasun-rebellion",
+        "edges": [],
+        "place": "sason"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-027",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "platine-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-029",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "uruguayan-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-031",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-cordoba",
+        "edges": [],
+        "place": "cordoba-veracruz"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-022",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-hue-1883",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-034",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2060306 is already the event \"red-cloud-s-war\""
+    },
+    {
+      "id": "2026-10-27-africa-002",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kousseri",
+        "edges": [],
+        "place": "kousseri"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-025",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-coups-of-1807-1808",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-027",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "khivan-campaign-of-1839-1840",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-003",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "first-melillan-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-030",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "nepal-tibet-war-1855-1856",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-032",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1848807: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-asia-034",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tunmen",
+        "edges": [],
+        "place": "tuen-mun"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-036",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "siamese-vietnamese-war-1840-1845",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-038",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "second-choshu-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-040",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "defense-of-van-1896",
+        "edges": [],
+        "place": "van-turkey"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-042",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "british-occupation-of-manila",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-044",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "banjarmasin-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-046",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "khivan-campaign-of-1873",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-048",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "tibet-ladakh-mughal-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-050",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "hagi-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-052",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3536741: none of its classes (Q3824506) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-asia-053",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-shimonoseki-straits",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-055",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "akizuki-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-057",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-manipur-war",
+        "edges": [],
+        "place": "manipur-princely-state"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-059",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-titalia",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-006",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "adamawa-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-061",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "revolt-of-the-altishahr-khojas",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-063",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "great-rebellion-of-1817-1818",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-065",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "dutch-intervention-in-bali-1849",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-067",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "hazara-genocide",
+        "edges": [],
+        "place": "hazarajat"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-069",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "mat-salleh-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-071",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-hue-1863",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-073",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "1876-bengal-cyclone",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-075",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "portuguese-invasion-of-the-jaffna-kingdom-1591",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-077",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "persian-gulf-campaign-of-1809",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-079",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "le-van-khoi-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-081",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "herzegovina-uprising-1852-1862",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-083",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-bongaya",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-007",
+      "writer": "B",
+      "fired": "2026-10-27T16:44Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-ethiopian-war-1557-1589",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }
