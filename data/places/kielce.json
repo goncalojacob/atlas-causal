@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kielce",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q102317",
+  "sitelinks": {
+    "count": 83,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Kielce",
+    "pt": "Kielce"
+  },
+  "sources": [],
+  "names": [
+    "Kielce"
+  ],
+  "where": {
+    "lon": 20.631944444444,
+    "lat": 50.8725,
+    "precision": "city",
+    "label": "Kielce"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

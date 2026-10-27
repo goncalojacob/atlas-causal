@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-kliszow",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q704762",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Kliszów",
+    "pt": "Batalha de Klissow"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q704762"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kliszów\", revision 1377275430"
+    }
+  ],
+  "title": "Battle of Kliszów",
+  "summary": "The English Wikipedia article \"Battle of Kliszów\", at revision 1377275430, opens: \"The Battle of Kliszów took place on 19 July 1702, near the village of Kliszów in the Polish–Lithuanian Commonwealth during the Great Northern War. A Swedish army under the command of King Charles XII of Sweden defeated a Polish–Saxon army twice the size that was led by King Augustus II the Strong.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q704762, imported by tools/import/wikidata.mjs. The item's own description reads \"1702 battle in the Great Northern War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1702,
+    "end": 1702,
+    "date": "1702-07-19"
+  },
+  "place": "kielce",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

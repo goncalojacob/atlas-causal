@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-frenchtown",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q586801",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Frenchtown"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q586801"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Frenchtown\", revision 1380702892"
+    }
+  ],
+  "title": "Battle of Frenchtown",
+  "summary": "The English Wikipedia article \"Battle of Frenchtown\", at revision 1380702892, opens: \"The Battle of Frenchtown, also known as the Battle of the River Raisin and the River Raisin Massacre, refers to two consecutive engagements during the War of 1812. Fighting between American forces commanded by Brigadier General James Winchester and British and allied forces under Colonel Henry Procter took place on January 18 and 22, 1813, at Frenchtown, Michigan Territory on the River Raisin roughly 35 miles (56 km) southwest of Detroit.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q586801, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle of the War of 1812\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-01"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

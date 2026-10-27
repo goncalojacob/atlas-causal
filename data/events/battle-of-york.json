@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-york",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q388689",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of York"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q388689"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of York\", revision 1379529290"
+    }
+  ],
+  "title": "Battle of York",
+  "summary": "The English Wikipedia article \"Battle of York\", at revision 1379529290, opens: \"The Battle of York was a War of 1812 battle fought in York, Upper Canada on April 27, 1813. An American force, supported by a naval flotilla, landed on the western lakeshore and captured the provincial capital after defeating an outnumbered force of regulars, militia and Ojibwe natives under the command of Major General Roger Hale Sheaffe, the Lieutenant Governor of Upper Canada.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q388689, imported by tools/import/wikidata.mjs. The item's own description reads \"war of 1812 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-04-27"
+  },
+  "place": "toronto",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

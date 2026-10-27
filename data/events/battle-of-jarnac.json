@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-jarnac",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1042049",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Jarnac"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1042049"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Jarnac\", revision 1370444105"
+    }
+  ],
+  "title": "Battle of Jarnac",
+  "summary": "The English Wikipedia article \"Battle of Jarnac\", at revision 1370444105, opens: \"The Battle of Jarnac on 13 March 1569 was an encounter during the French Wars of Religion between the Catholic forces of Marshal Gaspard de Saulx, sieur de Tavannes and the Huguenots led by Louis I de Bourbon, prince de Condé. The two forces met outside Jarnac between the right bank of the Charente and the high road between Angoulême and Cognac. The Huguenots were routed and Condé was killed after his surrender and his body paraded on an ass in Jarnac.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1042049, imported by tools/import/wikidata.mjs. The item's own description reads \"1569 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1569,
+    "end": 1569,
+    "date": "1569-03-13"
+  },
+  "place": "jarnac",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-wars-of-religion"
+}

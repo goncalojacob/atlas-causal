@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-fort-meigs",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7510014",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Siege of Fort Meigs"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7510014"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fort Meigs\", revision 1380702765"
+    }
+  ],
+  "title": "Siege of Fort Meigs",
+  "summary": "The English Wikipedia article \"Siege of Fort Meigs\", at revision 1380702765, opens: \"The siege of Fort Meigs was a significant War of 1812 military engagement in northwestern Ohio during the spring of 1813. British regulars and militia led by Brigadier General Henry Procter, supported by Indigenous forces led by Tecumseh, attempted to capture the recently constructed fort in order to forestall Major General William Henry Harrison's campaign to retake Detroit and invade Upper Canada. An American attempt to relieve the fort on May 5 resulted in heavy casualties, however, Procter was unable to breech Harrison's defences and withdrew after a 11-day siege.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7510014, imported by tools/import/wikidata.mjs. The item's own description reads \"siege during the War of 1812\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-04-28",
+    "endDate": "1813-05-09"
+  },
+  "place": "fort-meigs",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

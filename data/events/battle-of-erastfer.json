@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-erastfer",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q694883",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Erastfer"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q694883"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Erastfer\", revision 1370440058"
+    }
+  ],
+  "title": "Battle of Erastfer",
+  "summary": "The English Wikipedia article \"Battle of Erastfer\", at revision 1370440058, opens: \"The Battle of Erastfer took place on 29 December 1701 (O.S.) / 30 December 1701 / 9 January / 1702 (N.S.) near Erastfer in eastern Swedish Livonia between a Russian force of around 13,000 regulars along with 6,000 irregulars led by general Boris Sheremetev and a Swedish force of about 3,470 men, under the command of Wolmar Anton von Schlippenbach. The Swedes were defeated, with a loss of 1,000 men killed and captured along with all their artillery pieces. The Russians sustained about 1,000 killed along with another 2,000 wounded.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q694883, imported by tools/import/wikidata.mjs. The item's own description reads \"1702 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1702,
+    "end": 1702,
+    "date": "1702-01-09"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

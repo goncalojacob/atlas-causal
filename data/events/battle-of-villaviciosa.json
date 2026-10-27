@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-villaviciosa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q390286",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Villaviciosa",
+    "pt": "Batalha de Villaviciosa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q390286"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Villaviciosa\", revision 1370592532"
+    }
+  ],
+  "title": "Battle of Villaviciosa",
+  "summary": "The English Wikipedia article \"Battle of Villaviciosa\", at revision 1370592532, opens: \"The Battle of Villaviciosa was a battle between a Franco-Spanish army led by Louis Joseph, Duke of Vendôme and Philip V of Spain and a Grand Alliance army commanded by Austrian General Guido Starhemberg. The battle took place during the War of the Spanish Succession, one day after a Vendôme's army overran a smaller British force under James Stanhope at Brihuega. Both Philip V of Spain and the Archduke Charles of Austria claimed victory, but the number of dead and wounded, the number of artillery and other weapons abandoned by the Allied army and the battle's strategic consequences for the war confirmed victory for Philip.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q390286, imported by tools/import/wikidata.mjs. The item's own description reads \"1710 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1710,
+    "end": 1710,
+    "date": "1710-12-10"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

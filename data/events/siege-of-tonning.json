@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-tonning",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q464517",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Siege of Tönning"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q464517"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Tönning\", revision 1379537876"
+    }
+  ],
+  "title": "Siege of Tönning",
+  "summary": "The English Wikipedia article \"Siege of Tönning\", at revision 1379537876, opens: \"During the Great Northern War, the fortress of Tönning in the territory of Holstein-Gottorp, an ally of the Swedish Empire, was besieged twice. Denmark–Norway was forced to lift the first siege in 1700, but a combined force of the anti-Swedish coalition successfully besieged and took Tönning in 1713–1714.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q464517, imported by tools/import/wikidata.mjs. The item's own description reads \"1700 military action\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1700,
+    "end": 1700,
+    "date": "1700-03-01",
+    "endDate": "1700-08"
+  },
+  "place": "tonning",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

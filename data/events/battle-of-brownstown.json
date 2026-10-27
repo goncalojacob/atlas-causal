@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-brownstown",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870569",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Brownstown"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870569"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Brownstown\", revision 1380994590"
+    }
+  ],
+  "title": "Battle of Brownstown",
+  "summary": "The English Wikipedia article \"Battle of Brownstown\", at revision 1380994590, opens: \"The Battle of Brownstown was an early skirmish in the War of 1812. Although the United States military outnumbered the forces of Tecumseh's Confederacy 8 to 1, they lost the engagement and suffered substantial losses while Tecumseh's forces were almost completely untouched.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870569, imported by tools/import/wikidata.mjs. The item's own description reads \"skirmish in the War of 1812\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-08-05"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

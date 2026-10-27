@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "luzzara",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q53690",
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Luzzara",
+    "pt": "Luzzara"
+  },
+  "sources": [],
+  "names": [
+    "Luzzara"
+  ],
+  "where": {
+    "lon": 10.683333333333,
+    "lat": 44.966666666667,
+    "precision": "city",
+    "label": "Luzzara"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-gangut",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q681712",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Gangut",
+    "pt": "Batalha de Gangut"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q681712"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gangut\", revision 1377869399"
+    }
+  ],
+  "title": "Battle of Gangut",
+  "summary": "The English Wikipedia article \"Battle of Gangut\", at revision 1377869399, opens: \"The Battle of Gangut took place on 27 JulyJul./ 7 August 1714Greg. during the Great Northern War (1700–1721), in the waters of Riilahti Bay, north of the Hanko Peninsula, near the site of the modern-day city of Hanko (Hangö), Finland, between the Swedish Navy and Imperial Russian Navy. It was the first important victory of the Russian fleet in its history. It is commemorated in Russia as one of the Days of Military Honour.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q681712, imported by tools/import/wikidata.mjs. The item's own description reads \"naval battle between the Swedish Navy and Imperial Russian Navy in the Great Northern War, the first important victory of the Russian fleet in its history\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1714,
+    "end": 1714,
+    "date": "1714-07-26"
+  },
+  "place": "hanko-peninsula",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

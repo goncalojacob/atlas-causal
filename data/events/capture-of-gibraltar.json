@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "capture-of-gibraltar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q694073",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Capture of Gibraltar",
+    "pt": "Captura de Gibraltar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q694073"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Gibraltar\", revision 1370608722"
+    }
+  ],
+  "title": "Capture of Gibraltar",
+  "summary": "The English Wikipedia article \"Capture of Gibraltar\", at revision 1370608722, opens: \"The capture of Gibraltar by Anglo-Dutch forces of the Grand Alliance occurred between 1 and 4 August 1704 during the War of the Spanish Succession. Since the beginning of the war the Alliance had been looking for a harbour in the Iberian Peninsula to control the Strait of Gibraltar and facilitate naval operations against the French fleet in the western Mediterranean Sea. An attempt to seize Cádiz had ended in failure in September 1702, but following the Alliance fleet's successful raid in Vigo Bay in October that year, the combined fleets of the \"Maritime Powers\", the Netherlands and England, had emerged as the dominant naval force in the region. This strength helped persuade King Peter II of Portugal to sever his alliance with France and Bourbon-controlled Spain, and ally himself with the Grand Alliance in 1703 as the Alliance fleets could campaign in the Mediterranean using access to the port of Lisbon and conduct operations in support of the Austrian Habsburg candidate to the Spanish throne, the Archduke Charles, known to his supporters as Charles III of Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q694073, imported by tools/import/wikidata.mjs. The item's own description reads \"1704 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1704,
+    "end": 1704,
+    "date": "1704-08-01",
+    "endDate": "1704-08-03"
+  },
+  "place": "gibraltar",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "young-ireland-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3321690",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Young Ireland rebellion",
+    "pt": "Revolta de Tipperary"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3321690"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Young Ireland rebellion\", revision 1374852167"
+    }
+  ],
+  "title": "Young Ireland rebellion",
+  "summary": "The English Wikipedia article \"Young Ireland rebellion\", at revision 1374852167, opens: \"The Young Irelander Rebellion was a failed Irish nationalist uprising led by the Young Ireland movement, part of the wider Revolutions of 1848 that affected most of Europe. It took place on 29 July 1848 at Farranrory, a small settlement about 4.3 km north-northeast of the village of Ballingarry, South Tipperary. After being chased by a force of Young Irelanders and their supporters, an Irish Constabulary unit took refuge in a house and held those inside as hostages. A several-hour gunfight followed, but the rebels fled after a large group of police reinforcements arrived.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3321690, imported by tools/import/wikidata.mjs. The item's own description reads \"1848 Irish nationalist uprising\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-07-29"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "revolutions-of-1848"
+}

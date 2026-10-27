@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "wertingen",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q502930",
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Wertingen",
+    "pt": "Wertingen"
+  },
+  "sources": [],
+  "names": [
+    "Wertingen"
+  ],
+  "where": {
+    "lon": 10.666666666667,
+    "lat": 48.533333333333,
+    "precision": "city",
+    "label": "Wertingen"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

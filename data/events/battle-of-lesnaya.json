@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-lesnaya",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q166015",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Lesnaya",
+    "pt": "Batalha de Lesnaya"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q166015"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lesnaya\", revision 1374674376"
+    }
+  ],
+  "title": "Battle of Lesnaya",
+  "summary": "The English Wikipedia article \"Battle of Lesnaya\", at revision 1374674376, opens: \"The Battle of Lesnaya was fought on 9 October 1708 during the Swedish invasion of Russia in the Great Northern War. Russia was the sole remaining enemy of Sweden following the dissolution of the anti-Swedish coalition in 1706. Peter I of Russia led a flying corps, supported by two additional divisions, to destroy a convoy under general Adam Ludwig Lewenhaupt that was heading for the Swedish main army in Ukraine with reinforcements and supplies. Peter caught up with the convoy at the village of Lesnaya (Lyasnaya) in the Polish–Lithuanian Commonwealth, present-day Belarus.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q166015, imported by tools/import/wikidata.mjs. The item's own description reads \"1708 battle of the Great Northern War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1708,
+    "end": 1708,
+    "date": "1708-09-28"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

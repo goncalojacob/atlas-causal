@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "battle-of-lundy-s-lane-national-historic-site",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q18572014",
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-10-27"
+  },
+  "sources": [],
+  "names": [
+    "Battle of Lundy's Lane National Historic Site"
+  ],
+  "where": {
+    "lon": -79.095767,
+    "lat": 43.089279,
+    "precision": "point",
+    "label": "Battle of Lundy's Lane National Historic Site"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-cadiz-1702",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q552225",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Cádiz (1702)",
+    "pt": "Batalha de Cádis (1702)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q552225"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cádiz (1702)\", revision 1374725741"
+    }
+  ],
+  "title": "Battle of Cádiz (1702)",
+  "summary": "The English Wikipedia article \"Battle of Cádiz (1702)\", at revision 1374725741, opens: \"The Battle of Cádiz was an attempt by English and Dutch forces to seize the southern Spanish port of Cádiz in 1702 during the War of the Spanish Succession. The Andalusian port of Cádiz served as the centre of Spanish trade with its American colonies. As such, the port's capture would not only help to sever Spain's links with her empire in the Americas, but it would also provide the Allies with a strategically important base from which the English and Dutch navies could control the western Mediterranean Sea.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q552225, imported by tools/import/wikidata.mjs. The item's own description reads \"1702 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1702,
+    "end": 1702,
+    "date": "1702-08-23",
+    "endDate": "1702-09-30"
+  },
+  "place": "cadiz",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

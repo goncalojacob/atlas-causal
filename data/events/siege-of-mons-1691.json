@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-mons-1691",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3485965",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Siege of Mons (1691)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485965"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Mons (1691)\", revision 1370743608"
+    }
+  ],
+  "title": "Siege of Mons (1691)",
+  "summary": "The English Wikipedia article \"Siege of Mons (1691)\", at revision 1370743608, opens: \"The siege of Mons, 15 March – 10 April 1691, was a major operation fought during the Nine Years' War, and was the main French objective for the 1691 campaign in the Spanish Netherlands. The city was besieged and captured before the normal commencement of the campaigning season with minimal losses. The outcome was not in doubt, but in a conflict dominated by siege warfare, neither the French army of King Louis XIV, nor the forces of the Grand Alliance under King William III, could bring about a decisive battle. After the siege the duc de Boufflers bombarded the neutral city of Liège, whilst the duc de Luxembourg captured Halle, and scored a minor victory against the Prince of Waldeck at the Battle of Leuze in September. Strategically, however, little had changed in the war, and both combatants returned to winter quarters at the end of the campaigning season.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485965, imported by tools/import/wikidata.mjs. The item's own description reads \"1691 battle of the Nine Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1691,
+    "end": 1691,
+    "date": "1691-03-15",
+    "endDate": "1691-04-10"
+  },
+  "place": "mons-belgium",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "nine-years-war"
+}

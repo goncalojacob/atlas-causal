@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ulm-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q770116",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Ulm campaign",
+    "pt": "Campanha de Ulm"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q770116"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ulm campaign\", revision 1370752254"
+    }
+  ],
+  "title": "Ulm campaign",
+  "summary": "The English Wikipedia article \"Ulm campaign\", at revision 1370752254, opens: \"The Ulm campaign was a series of French and Bavarian military maneuvers and battles to outflank and capture an Austrian army in 1805 during the War of the Third Coalition. It took place in the vicinity of and inside the Swabian city of Ulm. The French Grande Armée, led by Emperor Napoleon, had 210,000 troops organized into seven corps and hoped to knock out the Austrian army in the Danube before Russian reinforcements could arrive. Rapid marching let Napoleon conduct a large wheeling maneuver, which captured an Austrian army of 60,000 under Feldmarschall-Leutnant (FML) Karl Freiherr Mack von Leiberich on 20 October at Ulm. The campaign is by some military historians regarded as a strategic masterpiece and was influential in the development of the Schlieffen Plan in the late 19th century. Napoleon himself wrote:four months of marching about, months of fatigue and wretchedness, have proved to me that nothing is more hideous, more miserable, than war. And yet our sufferings in the Guard are not to be compared with those of the line.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q770116, imported by tools/import/wikidata.mjs. The item's own description reads \"1805 Campaign during the War of the Third Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1805,
+    "end": 1805,
+    "date": "1805-09-25",
+    "endDate": "1805-10-20"
+  },
+  "place": "central-europe",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-third-coalition"
+}

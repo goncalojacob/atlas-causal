@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-almansa",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q320394",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Almansa",
+    "pt": "Batalha de Almansa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q320394"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Almansa\", revision 1375054526"
+    }
+  ],
+  "title": "Battle of Almansa",
+  "summary": "The English Wikipedia article \"Battle of Almansa\", at revision 1375054526, opens: \"The Battle of Almansa took place on 25 April 1707, during the War of the Spanish Succession. It was fought between an army loyal to Philip V of Spain, Bourbon claimant to the Spanish throne, and one supporting his Habsburg rival, Archduke Charles of Austria. The result was a decisive Bourbon victory that reclaimed most of eastern Spain for Philip.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q320394, imported by tools/import/wikidata.mjs. The item's own description reads \"1707 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1707,
+    "end": 1707,
+    "date": "1707-04-25"
+  },
+  "place": "almansa",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}
