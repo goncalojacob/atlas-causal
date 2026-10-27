@@ -3,546 +3,12 @@
   "kind": "import-queue",
   "items": [
     {
-      "id": "2026-10-17-americas-038",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q623429",
-      "title": "Reconstruction Era",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 46 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-040",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q838980",
-      "title": "May Revolution",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 44 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-042",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q719252",
-      "title": "Battle of Antietam",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "The atlas holds its parent american-civil-war. Wikipedia:Vital articles/Level 5/History names it with 41 sitelinks."
-    },
-    {
-      "id": "2026-10-17-americas-044",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1753636",
-      "title": "Gilded Age",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 37 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-046",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2736155",
-      "title": "Seneca Falls Convention",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 34 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-048",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q351722",
-      "title": "Adams–Onís Treaty",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 33 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-050",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q943277",
-      "title": "Battle of Shiloh",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 31 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-052",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q868481",
-      "title": "Battle of Hampton Roads",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "The atlas holds its parent american-civil-war. Wikipedia:Vital articles/Level 5/History names it with 28 sitelinks."
-    },
-    {
-      "id": "2026-10-17-americas-054",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q900693",
-      "title": "Seminole Wars",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:american-indian-wars",
-      "why": "The atlas holds its parent american-indian-wars. List of revolutions and rebellions names it with 28 sitelinks."
-    },
-    {
-      "id": "2026-10-17-americas-056",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q331377",
-      "title": "Bleeding Kansas",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 27 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-058",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1066253",
-      "title": "Siege of Vicksburg",
-      "parents": [
-        "american-civil-war"
-      ],
-      "edges": [],
-      "rank": "child-of:american-civil-war",
-      "why": "The atlas holds its parent american-civil-war. Wikipedia:Vital articles/Level 5/History names it with 27 sitelinks."
-    },
-    {
-      "id": "2026-10-17-americas-060",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q288251",
-      "title": "Cisplatine War",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 26 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-062",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q377542",
-      "title": "Whiskey Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 25 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-americas-064",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q209297",
-      "title": "Farroupilha Revolution",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of revolutions and rebellions names it with 23 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-europe-021",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q48314",
-      "title": "Battle of Waterloo",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 95 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-europe-023",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q171416",
-      "title": "Battle of Trafalgar",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 78 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-europe-025",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q165425",
-      "title": "Battle of Lepanto",
-      "parents": [
-        "ottoman-venetian-war-1570-1573"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-venetian-war-1570-1573",
-      "why": "The atlas holds its parent ottoman-venetian-war-1570-1573. Wikipedia:Vital articles/Level 5/History names it with 72 sitelinks."
-    },
-    {
-      "id": "2026-10-17-europe-027",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q184320",
-      "title": "Battle of Borodino",
-      "parents": [
-        "french-invasion-of-russia"
-      ],
-      "edges": [],
-      "rank": "child-of:french-invasion-of-russia",
-      "why": "The atlas holds its parent french-invasion-of-russia. Wikipedia:Vital articles/Level 5/History names it with 64 sitelinks."
-    },
-    {
-      "id": "2026-10-17-europe-029",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q188495",
-      "title": "Battle of Agincourt",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 62 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-europe-031",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q217398",
-      "title": "Berne Convention for the Protection of Literary and Artistic Works",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 60 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-europe-033",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q45810",
-      "title": "Gunpowder Plot",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 56 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-europe-035",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q58732",
-      "title": "Siege of Malta",
-      "parents": [
-        "ottoman-habsburg-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-habsburg-wars",
-      "why": "The atlas holds its parent ottoman-habsburg-wars. Wikipedia:Vital articles/Level 5/History names it with 55 sitelinks."
-    },
-    {
-      "id": "2026-10-17-europe-037",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q112183",
-      "title": "Treaty of Amiens",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 54 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-europe-039",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q382116",
-      "title": "Caucasian War",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 52 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-europe-041",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q963303",
-      "title": "Union of Lublin",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Wikipedia:Vital articles/Level 5/History names it with 51 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-europe-043",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q206752",
-      "title": "Treaty of Campo Formio",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of treaties names it with 51 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-europe-045",
-      "planned": "2026-10-17T03:58:43Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q462964",
-      "title": "November Uprising",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "List of revolutions and rebellions names it with 50 sitelinks, the trailing lanes first."
-    },
-    {
-      "id": "2026-10-17-africa-050",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q726829",
-      "title": "Battle of Sahart",
-      "parents": [
-        "ethiopian-adal-war"
-      ],
-      "edges": [],
-      "rank": "child-of:ethiopian-adal-war",
-      "why": "P361/P527 child of a thin umbrella in window, 6 sitelinks. Files under ethiopian-adal-war."
-    },
-    {
-      "id": "2026-10-17-africa-052",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q4872927",
-      "title": "Battle of the Hill of the Jews",
-      "parents": [
-        "ethiopian-adal-war"
-      ],
-      "edges": [],
-      "rank": "child-of:ethiopian-adal-war",
-      "why": "P361/P527 child of a thin umbrella in window, 3 sitelinks. Files under ethiopian-adal-war."
-    },
-    {
-      "id": "2026-10-17-africa-054",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q141539388",
-      "title": "Battle of Badeqe",
-      "parents": [
-        "ethiopian-adal-war"
-      ],
-      "edges": [],
-      "rank": "child-of:ethiopian-adal-war",
-      "why": "P361/P527 child of a thin umbrella in window, 1 sitelinks. Files under ethiopian-adal-war."
-    },
-    {
-      "id": "2026-10-17-asia-112",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q5036990",
-      "title": "Capture of Biên Hòa",
-      "parents": [
-        "cochinchina-campaign"
-      ],
-      "edges": [],
-      "rank": "child-of:cochinchina-campaign",
-      "why": "P361/P527 child of a thin umbrella in window, 5 sitelinks. Files under cochinchina-campaign."
-    },
-    {
-      "id": "2026-10-17-asia-114",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q118928943",
-      "title": "Capture of Tabriz (1514)",
-      "parents": [
-        "ottoman-persian-war-1505-1517"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-persian-war-1505-1517",
-      "why": "P361/P527 child of a thin umbrella in window, 5 sitelinks. Files under ottoman-persian-war-1505-1517."
-    },
-    {
-      "id": "2026-10-17-asia-116",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q125784315",
-      "title": "Capture of Tabriz (1635)",
-      "parents": [
-        "ottoman-safavid-war-1623-1639"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-safavid-war-1623-1639",
-      "why": "P361/P527 child of a thin umbrella in window, 4 sitelinks. Files under ottoman-safavid-war-1623-1639."
-    },
-    {
-      "id": "2026-10-17-asia-118",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4940509",
-      "title": "Bombardment of Qui Nhơn",
-      "parents": [
-        "cochinchina-campaign"
-      ],
-      "edges": [],
-      "rank": "child-of:cochinchina-campaign",
-      "why": "P361/P527 child of a thin umbrella in window, 4 sitelinks. Files under cochinchina-campaign."
-    },
-    {
-      "id": "2026-10-17-asia-120",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q111940071",
-      "title": "Battle of Erzincan (1507)",
-      "parents": [
-        "ottoman-persian-war-1505-1517"
-      ],
-      "edges": [],
-      "rank": "child-of:ottoman-persian-war-1505-1517",
-      "why": "P361/P527 child of a thin umbrella in window, 4 sitelinks. Files under ottoman-persian-war-1505-1517."
-    },
-    {
-      "id": "2026-10-17-asia-122",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4871304",
-      "title": "Battle of Jaithak",
-      "parents": [
-        "anglo-nepalese-war"
-      ],
-      "edges": [],
-      "rank": "child-of:anglo-nepalese-war",
-      "why": "P361/P527 child of a thin umbrella in window, 3 sitelinks. Files under anglo-nepalese-war."
-    },
-    {
-      "id": "2026-10-17-asia-124",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4872458",
-      "title": "Battle of Sultanpet Tope",
-      "parents": [
-        "fourth-anglo-mysore-war"
-      ],
-      "edges": [],
-      "rank": "child-of:fourth-anglo-mysore-war",
-      "why": "P361/P527 child of a thin umbrella in window, 3 sitelinks. Files under fourth-anglo-mysore-war."
-    },
-    {
-      "id": "2026-10-17-asia-126",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q18750184",
-      "title": "Battle of Ramu",
-      "parents": [
-        "first-anglo-burmese-war"
-      ],
-      "edges": [],
-      "rank": "child-of:first-anglo-burmese-war",
-      "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under first-anglo-burmese-war."
-    },
-    {
-      "id": "2026-10-17-asia-128",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q125565013",
-      "title": "Siege of Janjira",
-      "parents": [
-        "deccan-wars"
-      ],
-      "edges": [],
-      "rank": "child-of:deccan-wars",
-      "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under deccan-wars."
-    },
-    {
-      "id": "2026-10-17-asia-130",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q112665913",
-      "title": "Storming of Pleret",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under java-war."
-    },
-    {
       "id": "2026-10-17-asia-132",
       "planned": "2026-10-17T04:22Z",
       "lane": "asia",
       "writer": "A",
       "qid": "Q133504213",
       "title": "Battle of Delanggu",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under java-war."
-    },
-    {
-      "id": "2026-10-17-asia-133",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q133521430",
-      "title": "Battle of Kejiwan",
       "parents": [
         "java-war"
       ],
@@ -565,40 +31,12 @@
       "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under java-war."
     },
     {
-      "id": "2026-10-17-asia-135",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q133539837",
-      "title": "Battle of Gawok",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under java-war."
-    },
-    {
       "id": "2026-10-17-asia-136",
       "planned": "2026-10-17T04:22Z",
       "lane": "asia",
       "writer": "A",
       "qid": "Q133696157",
       "title": "Battle of Nanggulon",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under java-war."
-    },
-    {
-      "id": "2026-10-17-asia-137",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q133696273",
-      "title": "Skirmish at Tegalreja",
       "parents": [
         "java-war"
       ],
@@ -621,20 +59,6 @@
       "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under java-war."
     },
     {
-      "id": "2026-10-17-asia-139",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q133802796",
-      "title": "Ambush at Mount Kelir",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under java-war."
-    },
-    {
       "id": "2026-10-17-asia-140",
       "planned": "2026-10-17T04:22Z",
       "lane": "asia",
@@ -647,20 +71,6 @@
       "edges": [],
       "rank": "child-of:egyptian-ottoman-war-1831-1833",
       "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under egyptian-ottoman-war-1831-1833."
-    },
-    {
-      "id": "2026-10-17-asia-141",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q114450530",
-      "title": "Bombardment of Beirut (1840)",
-      "parents": [
-        "egyptian-ottoman-war-1839-1841"
-      ],
-      "edges": [],
-      "rank": "child-of:egyptian-ottoman-war-1839-1841",
-      "why": "P361/P527 child of a thin umbrella in window, 2 sitelinks. Files under egyptian-ottoman-war-1839-1841."
     },
     {
       "id": "2026-10-17-asia-142",
@@ -677,20 +87,6 @@
       "why": "P361/P527 child of a thin umbrella in window, 1 sitelinks. Files under deccan-wars."
     },
     {
-      "id": "2026-10-17-asia-143",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q109849716",
-      "title": "Battle of Jit Gadhi",
-      "parents": [
-        "anglo-nepalese-war"
-      ],
-      "edges": [],
-      "rank": "child-of:anglo-nepalese-war",
-      "why": "P361/P527 child of a thin umbrella in window, 1 sitelinks. Files under anglo-nepalese-war."
-    },
-    {
       "id": "2026-10-17-asia-144",
       "planned": "2026-10-17T04:22Z",
       "lane": "asia",
@@ -705,40 +101,12 @@
       "why": "P361/P527 child of a thin umbrella in window, 1 sitelinks. Files under fourth-anglo-mysore-war."
     },
     {
-      "id": "2026-10-17-asia-145",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q133850436",
-      "title": "Battle of Siluk",
-      "parents": [
-        "java-war"
-      ],
-      "edges": [],
-      "rank": "child-of:java-war",
-      "why": "P361/P527 child of a thin umbrella in window, 1 sitelinks. Files under java-war."
-    },
-    {
       "id": "2026-10-17-asia-146",
       "planned": "2026-10-17T04:22Z",
       "lane": "asia",
       "writer": "A",
       "qid": "Q126936005",
       "title": "Battle of Beilan",
-      "parents": [
-        "egyptian-ottoman-war-1831-1833"
-      ],
-      "edges": [],
-      "rank": "child-of:egyptian-ottoman-war-1831-1833",
-      "why": "P361/P527 child of a thin umbrella in window, 1 sitelinks. Files under egyptian-ottoman-war-1831-1833."
-    },
-    {
-      "id": "2026-10-17-asia-147",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q127433549",
-      "title": "Battle of Belen Pass",
       "parents": [
         "egyptian-ottoman-war-1831-1833"
       ],
@@ -761,20 +129,6 @@
       "why": "P361/P527 child of a thin umbrella in window, 1 sitelinks. Files under egyptian-ottoman-war-1839-1841."
     },
     {
-      "id": "2026-10-17-americas-066",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q695485",
-      "title": "Battle of Jumonville Glen",
-      "parents": [
-        "french-and-indian-war"
-      ],
-      "edges": [],
-      "rank": "child-of:french-and-indian-war",
-      "why": "P361/P527 child of a thin umbrella in window, 17 sitelinks. Files under french-and-indian-war."
-    },
-    {
       "id": "2026-10-17-americas-067",
       "planned": "2026-10-17T04:22Z",
       "lane": "americas",
@@ -787,20 +141,6 @@
       "edges": [],
       "rank": "child-of:northwest-indian-war",
       "why": "P361/P527 child of a thin umbrella in window, 16 sitelinks. Files under northwest-indian-war."
-    },
-    {
-      "id": "2026-10-17-americas-068",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2449358",
-      "title": "Battle of Fort Necessity",
-      "parents": [
-        "french-and-indian-war"
-      ],
-      "edges": [],
-      "rank": "child-of:french-and-indian-war",
-      "why": "P361/P527 child of a thin umbrella in window, 14 sitelinks. Files under french-and-indian-war."
     },
     {
       "id": "2026-10-17-americas-069",
@@ -817,40 +157,12 @@
       "why": "P361/P527 child of a thin umbrella in window, 11 sitelinks. Files under northwest-indian-war."
     },
     {
-      "id": "2026-10-17-americas-070",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q8940",
-      "title": "Admirable Campaign",
-      "parents": [
-        "venezuelan-war-of-independence"
-      ],
-      "edges": [],
-      "rank": "child-of:venezuelan-war-of-independence",
-      "why": "P361/P527 child of a thin umbrella in window, 10 sitelinks. Files under venezuelan-war-of-independence."
-    },
-    {
       "id": "2026-10-17-americas-071",
       "planned": "2026-10-17T04:22Z",
       "lane": "americas",
       "writer": "A",
       "qid": "Q2663104",
       "title": "Raid on Cartagena de Indias (1697)",
-      "parents": [
-        "nine-years-war"
-      ],
-      "edges": [],
-      "rank": "child-of:nine-years-war",
-      "why": "P361/P527 child of a thin umbrella in window, 10 sitelinks. Files under nine-years-war."
-    },
-    {
-      "id": "2026-10-17-americas-072",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2890600",
-      "title": "Battle of Hudson's Bay",
       "parents": [
         "nine-years-war"
       ],
@@ -873,20 +185,6 @@
       "why": "P361/P527 child of a thin umbrella in window, 9 sitelinks. Files under bolivian-war-of-independence."
     },
     {
-      "id": "2026-10-17-americas-074",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2888557",
-      "title": "Battle of Fort Niagara",
-      "parents": [
-        "french-and-indian-war"
-      ],
-      "edges": [],
-      "rank": "child-of:french-and-indian-war",
-      "why": "P361/P527 child of a thin umbrella in window, 9 sitelinks. Files under french-and-indian-war."
-    },
-    {
       "id": "2026-10-17-americas-075",
       "planned": "2026-10-17T04:22Z",
       "lane": "americas",
@@ -899,20 +197,6 @@
       "edges": [],
       "rank": "child-of:venezuelan-war-of-independence",
       "why": "P361/P527 child of a thin umbrella in window, 8 sitelinks. Files under venezuelan-war-of-independence."
-    },
-    {
-      "id": "2026-10-17-americas-076",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q328447",
-      "title": "Battle of La Belle-Famille",
-      "parents": [
-        "french-and-indian-war"
-      ],
-      "edges": [],
-      "rank": "child-of:french-and-indian-war",
-      "why": "P361/P527 child of a thin umbrella in window, 7 sitelinks. Files under french-and-indian-war."
     },
     {
       "id": "2026-10-17-americas-077",
@@ -929,20 +213,6 @@
       "why": "P361/P527 child of a thin umbrella in window, 7 sitelinks. Files under voyages-of-christopher-columbus."
     },
     {
-      "id": "2026-10-17-americas-078",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4872229",
-      "title": "Battle of Sabbath Day Point",
-      "parents": [
-        "french-and-indian-war"
-      ],
-      "edges": [],
-      "rank": "child-of:french-and-indian-war",
-      "why": "P361/P527 child of a thin umbrella in window, 6 sitelinks. Files under french-and-indian-war."
-    },
-    {
       "id": "2026-10-17-americas-079",
       "planned": "2026-10-17T04:22Z",
       "lane": "americas",
@@ -955,20 +225,6 @@
       "edges": [],
       "rank": "child-of:venezuelan-war-of-independence",
       "why": "P361/P527 child of a thin umbrella in window, 5 sitelinks. Files under venezuelan-war-of-independence."
-    },
-    {
-      "id": "2026-10-17-americas-080",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4870797",
-      "title": "Battle of Cotagaita",
-      "parents": [
-        "bolivian-war-of-independence"
-      ],
-      "edges": [],
-      "rank": "child-of:bolivian-war-of-independence",
-      "why": "P361/P527 child of a thin umbrella in window, 5 sitelinks. Files under bolivian-war-of-independence."
     },
     {
       "id": "2026-10-17-americas-081",
@@ -985,20 +241,6 @@
       "why": "P361/P527 child of a thin umbrella in window, 5 sitelinks. Files under bolivian-war-of-independence."
     },
     {
-      "id": "2026-10-17-americas-082",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4677389",
-      "title": "Action of 8 June 1755",
-      "parents": [
-        "french-and-indian-war"
-      ],
-      "edges": [],
-      "rank": "child-of:french-and-indian-war",
-      "why": "P361/P527 child of a thin umbrella in window, 5 sitelinks. Files under french-and-indian-war."
-    },
-    {
       "id": "2026-10-17-americas-083",
       "planned": "2026-10-17T04:22Z",
       "lane": "americas",
@@ -1011,20 +253,6 @@
       "edges": [],
       "rank": "child-of:french-and-indian-war",
       "why": "P361/P527 child of a thin umbrella in window, 5 sitelinks. Files under french-and-indian-war."
-    },
-    {
-      "id": "2026-10-17-americas-084",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q525565",
-      "title": "Big Bottom massacre",
-      "parents": [
-        "northwest-indian-war"
-      ],
-      "edges": [],
-      "rank": "child-of:northwest-indian-war",
-      "why": "P361/P527 child of a thin umbrella in window, 5 sitelinks. Files under northwest-indian-war."
     },
     {
       "id": "2026-10-17-americas-085",
@@ -1041,20 +269,6 @@
       "why": "P361/P527 child of a thin umbrella in window, 4 sitelinks. Files under venezuelan-war-of-independence."
     },
     {
-      "id": "2026-10-17-americas-086",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4870504",
-      "title": "Battle of Bloody Creek (1757)",
-      "parents": [
-        "french-and-indian-war"
-      ],
-      "edges": [],
-      "rank": "child-of:french-and-indian-war",
-      "why": "P361/P527 child of a thin umbrella in window, 4 sitelinks. Files under french-and-indian-war."
-    },
-    {
       "id": "2026-10-17-americas-087",
       "planned": "2026-10-17T04:22Z",
       "lane": "americas",
@@ -1067,20 +281,6 @@
       "edges": [],
       "rank": "child-of:french-and-indian-war",
       "why": "P361/P527 child of a thin umbrella in window, 4 sitelinks. Files under french-and-indian-war."
-    },
-    {
-      "id": "2026-10-17-americas-088",
-      "planned": "2026-10-17T04:22Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5037013",
-      "title": "Capture of Fort Rocher",
-      "parents": [
-        "franco-spanish-war-1635-1659"
-      ],
-      "edges": [],
-      "rank": "child-of:franco-spanish-war-1635-1659",
-      "why": "P361/P527 child of a thin umbrella in window, 4 sitelinks. Files under franco-spanish-war-1635-1659."
     },
     {
       "id": "2026-10-17-americas-089",
