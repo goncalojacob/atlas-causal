@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ghost-dance-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5557072",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Ghost Dance War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5557072"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ghost Dance War\", revision 1379259584"
+    }
+  ],
+  "title": "Ghost Dance War",
+  "summary": "The English Wikipedia article \"Ghost Dance War\", at revision 1379259584, opens: \"The Ghost Dance War was the military reaction of the United States government against the spread of the Ghost Dance movement on Lakota Sioux reservations in 1890 and 1891. The United States Army designation for this conflict was Pine Ridge Campaign. White settlers called it the Messiah War. Lakota Sioux reservations were occupied by the US Army, causing fear, confusion, and resistance among the Lakota. It resulted in the Wounded Knee Massacre wherein the 7th Cavalry killed over 250 Lakota, primarily unarmed women, children, and elders, at Wounded Knee on December 29, 1890; as a recognition for surviving an ambush, the US government awarded the Medal of Honor to 20 US soldiers. The end of the Ghost Dance War is usually dated January 15, 1891, when Lakota Ghost-Dancing leader Kicking Bear decided to meet with US officials. However, the US government continued to use the threat of violence to suppress the Ghost Dance at the Pine Ridge, Rosebud, Cheyenne River, and Standing Rock reservations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5557072, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict between a group of the Sioux people and the US from 1890 until 1891\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1890,
+    "end": 1891,
+    "date": "1890-12-29",
+    "endDate": "1891-01-15"
+  },
+  "place": "south-dakota",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "sioux-wars"
+}

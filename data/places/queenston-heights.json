@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "queenston-heights",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7271089",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Queenston Heights"
+  },
+  "sources": [],
+  "names": [
+    "Queenston Heights National Historic Site of Canada",
+    "Queenston Heights"
+  ],
+  "where": {
+    "lon": -79.05277777777778,
+    "lat": 43.15833333333333,
+    "precision": "point",
+    "label": "Queenston Heights"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

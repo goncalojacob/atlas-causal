@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "black-hills-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q662506",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Black Hills Expedition"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q662506"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Black Hills Expedition\", revision 1381718878"
+    }
+  ],
+  "title": "Black Hills Expedition",
+  "summary": "The English Wikipedia article \"Black Hills Expedition\", at revision 1381718878, opens: \"The Black Hills Expedition was a United States Army expedition in 1874 led by Lieutenant Colonel George Armstrong Custer that set out on July 2, 1874, from Fort Abraham Lincoln, Dakota Territory, which is south of modern day Mandan, North Dakota, with orders to travel to the previously uncharted Black Hills of South Dakota. Its mission was to look for suitable locations for a fort, find a route to the southwest, and to investigate the possibility of gold mining. Custer and his unit, the 7th Cavalry, arrived in the Black Hills on July 22, 1874, with orders to return by August 30. The expedition set up a camp at the site of the future town of Custer; while Custer and the military units searched for a suitable location for a fort, civilians searched for gold, and it is disputed whether or not any substantial amount was found. Nonetheless, this prompted a mass gold rush which in turn antagonised the Sioux Indians who had been promised protection of their sacred land through Treaties made by the US government, and who were later to kill Custer at the Battle of the Little Big Horn in the Great Sioux War of 1876–1877 between themselves and the United States.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q662506, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1874,
+    "end": 1874,
+    "date": "1874-07-02",
+    "endDate": "1874-08-30"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "sioux-wars"
+}

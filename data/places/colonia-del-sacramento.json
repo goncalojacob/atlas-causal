@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "colonia-del-sacramento",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q56064",
+  "sitelinks": {
+    "count": 58,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Colonia del Sacramento",
+    "pt": "Colônia do Sacramento"
+  },
+  "sources": [],
+  "names": [
+    "Colonia del Sacramento",
+    "Colônia do Sacramento"
+  ],
+  "where": {
+    "lon": -57.84336944444444,
+    "lat": -34.46988611111111,
+    "precision": "city",
+    "label": "Colonia del Sacramento"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "santa-cruz-de-tenerife",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q14328",
+  "sitelinks": {
+    "count": 109,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Santa Cruz de Tenerife",
+    "pt": "Santa Cruz de Tenerife"
+  },
+  "sources": [],
+  "names": [
+    "Santa Cruz de Tenerife"
+  ],
+  "where": {
+    "lon": -16.25,
+    "lat": 28.466666666667,
+    "precision": "city",
+    "label": "Santa Cruz de Tenerife"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

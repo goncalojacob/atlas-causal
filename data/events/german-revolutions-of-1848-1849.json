@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "german-revolutions-of-1848-1849",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3699",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "German revolutions of 1848–1849",
+    "pt": "Revoluções de 1848 nos Estados alemães"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3699"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"German revolutions of 1848–1849\", revision 1381752888"
+    }
+  ],
+  "title": "German revolutions of 1848–1849",
+  "summary": "The English Wikipedia article \"German revolutions of 1848–1849\", at revision 1381752888, opens: \"The German revolutions of 1848–1849, the opening phase of which was also called the March Revolution, were initially part of the Revolutions of 1848 that broke out in many European countries. They were a series of loosely coordinated protests and rebellions in the states of the German Confederation, including the Austrian Empire. The revolutions, which stressed pan-Germanism, liberalism, and parliamentarianism, demonstrated popular discontent with the traditional, largely autocratic political structure of the 39 independent states of the Confederation that inherited the German territory of the former Holy Roman Empire after its dismantlement as a result of the Napoleonic Wars. This process began in the mid-1840s.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3699, imported by tools/import/wikidata.mjs. The item's own description reads \"German part of the Revolutions of 1848\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1849
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "revolutions-of-1848"
+}

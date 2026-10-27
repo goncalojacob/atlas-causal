@@ -2858,3 +2858,63 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-27: `huguenot-rebellions`, bare
 
 Writer B imported it from the planner's queue as item `2026-10-17-europe-082`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-27: `battle-of-torroella`, filed under `nine-years-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-europe-079`, rank `child-of:nine-years-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `reformation-in-denmark-norway-and-holstein`, filed under `reformation` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-europe-083`, rank `child-of:reformation`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `black-hills-expedition`, filed under `sioux-wars` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-americas-145`, rank `child-of:sioux-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `battle-of-fort-george`, filed under `war-of-1812` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-americas-149`, rank `child-of:war-of-1812`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `siege-of-guadeloupe`, filed under `war-of-the-spanish-succession` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-americas-134`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `battle-of-calebee-creek`, filed under `war-of-1812` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-americas-150`, rank `child-of:war-of-1812`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `battle-of-autossee`, filed under `war-of-1812` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-americas-154`, rank `child-of:war-of-1812`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `capture-of-the-galleon-san-joaquin`, filed under `war-of-the-spanish-succession` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-americas-156`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `battle-of-maguaga`, filed under `war-of-1812` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-americas-166`, rank `child-of:war-of-1812`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `german-revolutions-of-1848-1849`, filed under `revolutions-of-1848` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-europe-092`, rank `child-of:revolutions-of-1848`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `battle-of-lesnaya`, filed under `great-northern-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-europe-098`, rank `child-of:great-northern-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `battle-of-vigo-bay`, filed under `war-of-the-spanish-succession` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-europe-102`, rank `child-of:war-of-the-spanish-succession`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `battle-of-villaviciosa`, filed under `war-of-the-spanish-succession` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-europe-108`, rank `child-of:war-of-the-spanish-succession`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `siege-of-narva-1704`, filed under `great-northern-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-europe-114`, rank `child-of:great-northern-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `great-wrath`, filed under `great-northern-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-europe-116`, rank `child-of:great-northern-war`. Its span and its subject put it inside the umbrella.

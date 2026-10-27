@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-lundy-s-lane",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q364322",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Lundy's Lane"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q364322"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lundy's Lane\", revision 1380364730"
+    }
+  ],
+  "title": "Battle of Lundy's Lane",
+  "summary": "The English Wikipedia article \"Battle of Lundy's Lane\", at revision 1380364730, opens: \"The Battle of Lundy's Lane, also known as the Battle of Niagara or contemporarily as the Battle of Bridgewater, was fought on 25 July 1814, during the War of 1812, between an invading American army and a British and Canadian army near present-day Niagara Falls, Ontario. It was one of the bloodiest battles of the war, and one of the deadliest battles fought in Canada, with approximately 1,720 casualties including 258 killed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q364322, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 battle of the War of 1812\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-07-25"
+  },
+  "place": "battle-of-lundy-s-lane-national-historic-site",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

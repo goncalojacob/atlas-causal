@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-detroit",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888469",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Siege of Detroit"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888469"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Detroit\", revision 1380914337"
+    }
+  ],
+  "title": "Siege of Detroit",
+  "summary": "The English Wikipedia article \"Siege of Detroit\", at revision 1380914337, opens: \"The siege of Detroit, also known as the surrender of Detroit or the Battle of Fort Detroit, was an early engagement in the War of 1812. A British force under Major General Isaac Brock in cooperation with Indigenous warriors under Shawnee leader Tecumseh used bluff and deception to intimidate American Brigadier General William Hull into surrendering the fort and town of Detroit, the Michigan Territory, and his army which actually outnumbered the victorious British and Indigenous warriors.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888469, imported by tools/import/wikidata.mjs. The item's own description reads \"early engagement in the Anglo-American War of 1812\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-08-15",
+    "endDate": "1812-08-16"
+  },
+  "place": "detroit",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

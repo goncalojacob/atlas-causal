@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-walcourt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890372",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Walcourt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890372"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Walcourt\", revision 1373294218"
+    }
+  ],
+  "title": "Battle of Walcourt",
+  "summary": "The English Wikipedia article \"Battle of Walcourt\", at revision 1373294218, opens: \"The Battle of Walcourt was fought on 25 August 1689 during the Nine Years' War. The action took place near the ancient walled town of Walcourt near Charleroi in the Spanish Netherlands, and brought to a close a summer of uneventful marching, manoeuvring, and foraging. The battle was a success for the Grand Alliance – the only significant engagement in the theatre during the campaign of 1689.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890372, imported by tools/import/wikidata.mjs. The item's own description reads \"1689 battle of the Nine Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1689,
+    "end": 1689,
+    "date": "1689-08-25"
+  },
+  "place": "walcourt",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "nine-years-war"
+}

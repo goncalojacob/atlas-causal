@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-santa-cruz-de-tenerife-1706",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1915417",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Santa Cruz de Tenerife (1706)",
+    "pt": "Batalha de Santa Cruz de Tenerife (1706)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1915417"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Santa Cruz de Tenerife (1706)\", revision 1370588567"
+    }
+  ],
+  "title": "Battle of Santa Cruz de Tenerife (1706)",
+  "summary": "The English Wikipedia article \"Battle of Santa Cruz de Tenerife (1706)\", at revision 1370588567, opens: \"The Battle of Santa Cruz de Tenerife was a minor military action of the War of the Spanish Succession during which an English fleet of 13 ships under the command of Admiral John Jennings attempted unsuccessfully to seize the city of Santa Cruz de Tenerife. Jennings previously relied on the English triumphs in the Iberian Peninsula demanding recognition for the sovereignty of Charles II of England over the Canary Islands, but their offers were rejected.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1915417, imported by tools/import/wikidata.mjs. The item's own description reads \"1706 battle during the War of the Spanish Succession in the Canary Islands, Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1706,
+    "end": 1706,
+    "date": "1706-11-06"
+  },
+  "place": "santa-cruz-de-tenerife",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

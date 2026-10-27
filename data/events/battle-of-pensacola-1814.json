@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-pensacola-1814",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872014",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Pensacola (1814)",
+    "pt": "Batalha de Pensacola"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872014"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pensacola (1814)\", revision 1376883167"
+    }
+  ],
+  "title": "Battle of Pensacola (1814)",
+  "summary": "The English Wikipedia article \"Battle of Pensacola (1814)\", at revision 1376883167, opens: \"The Battle of Pensacola took place, following the Creek War, as part of the Gulf Coast operations during the War of 1812. General Andrew Jackson led his infantry against British and Spanish forces controlling the city of Pensacola in Spanish Florida. The Spanish forces surrendered the city to Jackson, and the outlying British contingent withdrew.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872014, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the War of 1812\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-11-07",
+    "endDate": "1814-11-09"
+  },
+  "place": "pensacola-florida",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}
