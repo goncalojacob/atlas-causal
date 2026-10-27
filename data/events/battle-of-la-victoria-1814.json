@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-la-victoria-1814",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5722611",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of La Victoria (1814)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5722611"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of La Victoria (1814)\", revision 1381859016"
+    }
+  ],
+  "title": "Battle of La Victoria (1814)",
+  "summary": "The English Wikipedia article \"Battle of La Victoria (1814)\", at revision 1381859016, opens: \"The battle of La Victoria took place during the Venezuelan War of Independence when Royalist forces under José Tomás Boves tried to take the city of La Victoria, held by General José Félix Ribas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5722611, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 battle epic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-02-12"
+  },
+  "place": "la-victoria-aragua",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "venezuelan-war-of-independence"
+}

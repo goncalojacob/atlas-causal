@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-thames",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q645288",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of the Thames",
+    "pt": "Batalha do Tâmisa (1813)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q645288"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Thames\", revision 1379701243"
+    }
+  ],
+  "title": "Battle of the Thames",
+  "summary": "The English Wikipedia article \"Battle of the Thames\", at revision 1379701243, opens: \"The Battle of the Thames, also known as the Battle of Moraviantown, was an American victory over British forces and Tecumseh's Confederacy during the War of 1812. The battle took place on October 5, 1813, in Upper Canada near what is now Thamesville, Ontario. The British lost control of the Western District of Upper Canada as a result of the battle. Tecumseh was killed, and his confederacy collapsed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q645288, imported by tools/import/wikidata.mjs. The item's own description reads \"American victory over Tecumseh's Confederacy and allied British Forces in Upper Canada\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-10-05"
+  },
+  "place": "chatham-kent",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

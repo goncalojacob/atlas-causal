@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-camaret",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2888238",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Camaret"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2888238"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Camaret\", revision 1379798596"
+    }
+  ],
+  "title": "Battle of Camaret",
+  "summary": "The English Wikipedia article \"Battle of Camaret\", at revision 1379798596, opens: \"The Battle of Camaret, also referred to as the Brest expedition, was a notable engagement of the Nine Years' War. Expecting Brest to be unguarded as the French fleet stationed there sailed south to face the Spanish, an amphibious operation at Camaret Bay was launched on 18 June 1694 by an approximately 10,000 Anglo-Dutch force in an attempt to take and occupy the city, which was one of the most important French naval bases. The French, however, were aware of the Anglo-Dutch plan, through espionage. There is a controversial theory that John Churchill leaked the plan to the French via a letter to the deposed James II of England, but the evidence as to this is inconclusive.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2888238, imported by tools/import/wikidata.mjs. The item's own description reads \"1694 battle of the Nine Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1694,
+    "end": 1694,
+    "date": "1694-06-18"
+  },
+  "place": "camaret-sur-mer",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "nine-years-war"
+}

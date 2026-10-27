@@ -2770,3 +2770,91 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-17: `battle-of-cotagaita`, filed under `bolivian-war-of-independence` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-17-americas-080`, rank `child-of:bolivian-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `battle-of-delanggu`, filed under `java-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-asia-132`, rank `child-of:java-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `battle-of-lengkong-1826`, filed under `java-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-asia-134`, rank `child-of:java-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `battle-of-nanggulon`, filed under `java-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-asia-136`, rank `child-of:java-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `battle-of-kroya`, filed under `java-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-asia-138`, rank `child-of:java-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `siege-of-panhala-1701`, filed under `deccan-wars` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-asia-142`, rank `child-of:deccan-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `battle-of-fallen-timbers`, filed under `northwest-indian-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-americas-067`, rank `child-of:northwest-indian-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `st-clair-s-defeat`, filed under `northwest-indian-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-americas-069`, rank `child-of:northwest-indian-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `fourth-voyage-of-columbus`, filed under `voyages-of-christopher-columbus` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-americas-077`, rank `child-of:voyages-of-christopher-columbus`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `battle-of-vilcapugio`, filed under `bolivian-war-of-independence` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-americas-081`, rank `child-of:bolivian-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `battle-on-snowshoes-1757`, filed under `french-and-indian-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-americas-083`, rank `child-of:french-and-indian-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `st-francis-raid`, filed under `french-and-indian-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-americas-087`, rank `child-of:french-and-indian-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `battle-of-los-horcones`, filed under `venezuelan-war-of-independence` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-americas-089`, rank `child-of:venezuelan-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `battle-of-pequereque`, filed under `bolivian-war-of-independence` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-americas-101`, rank `child-of:bolivian-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `battle-of-the-trough`, filed under `french-and-indian-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-americas-105`, rank `child-of:french-and-indian-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-27: `the-fronde`, filed under `franco-spanish-war-1635-1659` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-europe-047`, rank `child-of:franco-spanish-war-1635-1659`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `battle-on-snowshoes`, filed under `french-and-indian-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-americas-096`, rank `child-of:french-and-indian-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `battle-of-sopachuy`, filed under `bolivian-war-of-independence` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-americas-102`, rank `child-of:bolivian-war-of-independence`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `battle-of-beachy-head-1690`, filed under `nine-years-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-europe-054`, rank `child-of:nine-years-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `battle-of-staffarda`, filed under `nine-years-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-europe-062`, rank `child-of:nine-years-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `bombardment-of-brussels`, filed under `nine-years-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-europe-066`, rank `child-of:nine-years-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `battle-of-dogger-bank-1696`, filed under `nine-years-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-17-europe-078`, rank `child-of:nine-years-war`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-27: `huguenot-rebellions`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-17-europe-082`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "st-clair-s-defeat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q962450",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "St. Clair's defeat",
+    "pt": "Derrota de St. Clair"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q962450"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"St. Clair's defeat\", revision 1379988476"
+    }
+  ],
+  "title": "St. Clair's defeat",
+  "summary": "The English Wikipedia article \"St. Clair's defeat\", at revision 1379988476, opens: \"St. Clair's defeat, also known as the Battle of the Wabash, the Battle of Wabash River or the Battle of a Thousand Slain, was a battle fought on 4 November 1791 in the Northwest Territory of the United States. The U.S. Army faced the Northwestern Confederacy of Native Americans as part of the Northwest Indian War. It was \"the most decisive defeat in the history of the American military\" as well as the most substantial victory ever by Native American combatants against European-Americans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q962450, imported by tools/import/wikidata.mjs. The item's own description reads \"1791 battle of the Northwest Indian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1791,
+    "end": 1791,
+    "date": "1791-11-04"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "northwest-indian-war"
+}

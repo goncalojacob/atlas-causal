@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-cuneo-1691",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2256350",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Siege of Cuneo (1691)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2256350"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Cuneo (1691)\", revision 1370740505"
+    }
+  ],
+  "title": "Siege of Cuneo (1691)",
+  "summary": "The English Wikipedia article \"Siege of Cuneo (1691)\", at revision 1370740505, opens: \"The siege of Cuneo was fought on 28 June 1691 during the Nine Years' War in Piedmont-Savoy, modern-day northern Italy. The siege was part of French King Louis XIV’s campaign against Victor Amadeus, the Duke of Savoy, who had sided with the Grand Alliance the previous year. The siege was an attempt to gain a foothold on the Piedmont Plain, thus ensuring Marshal Catinat's army could winter east of the Alps. Yet due to the incompetence of the two French commanders – and a timely arrival of Imperial reinforcements – the siege proved a disaster, resulting in the loss of between 700 and 800 men. Although French forces had taken Nice in the west, and Montmélian in the north, Catinat's small, ill-equipped army was forced onto the defensive. Louis XIV subsequently offered Amadeus generous peace terms but the Duke, who had by now received substantial Imperial reinforcements from the Empire, considered himself strong enough to continue hostilities.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2256350, imported by tools/import/wikidata.mjs. The item's own description reads \"1691 battle of the Nine Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1691,
+    "end": 1691,
+    "date": "1691-06-11",
+    "endDate": "1691-06-28"
+  },
+  "place": "cuneo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "nine-years-war"
+}
