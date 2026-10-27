@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-borodino",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q184320",
+  "sitelinks": {
+    "count": 62,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Borodino",
+    "pt": "Batalha de Borodino"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q184320"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Borodino\", revision 1379952654"
+    }
+  ],
+  "title": "Battle of Borodino",
+  "summary": "The English Wikipedia article \"Battle of Borodino\", at revision 1379952654, opens: \"The Battle of Borodino or the Battle of the Moskva took place on the outskirts of Moscow near the village of Borodino on 7 September 1812, during Napoleon's invasion of Russia. The Grande Armée fought against the Imperial Russian Army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q184320, imported by tools/import/wikidata.mjs. The item's own description reads \"1812 battle during the French invasion of Russia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-09-07"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-russia"
+}

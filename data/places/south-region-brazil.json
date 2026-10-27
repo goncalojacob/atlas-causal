@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "south-region-brazil",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1060042",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "South Region, Brazil",
+    "pt": "Região Sul do Brasil"
+  },
+  "sources": [],
+  "names": [
+    "South Region",
+    "Região Sul do Brasil",
+    "South Region, Brazil"
+  ],
+  "where": {
+    "lon": -52.36666666666667,
+    "lat": -27.633333333333333,
+    "precision": "region",
+    "label": "South Region, Brazil"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

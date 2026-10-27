@@ -2651,3 +2651,63 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-17: `battle-of-fort-vredeburg`, filed under `java-war` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-17-asia-131`, rank `child-of:java-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-17: `battle-of-antietam`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-americas-042`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-17: `battle-of-shiloh`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-17-americas-050`, rank `vital-5`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-17: `battle-of-hampton-roads`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-americas-052`, rank `child-of:american-civil-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-17: `cisplatine-war`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-17-americas-060`, rank `vital-5`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-17: `battle-of-trafalgar`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-17-europe-023`, rank `vital-5`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-17: `battle-of-borodino`, filed under `french-invasion-of-russia` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-europe-027`, rank `child-of:french-invasion-of-russia`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-17: `gunpowder-plot`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-17-europe-033`, rank `vital-5`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-17: `great-siege-of-malta`, filed under `ottoman-habsburg-wars` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-europe-035`, rank `child-of:ottoman-habsburg-wars`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-17: `november-uprising`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-17-europe-045`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-17: `battle-of-the-hill-of-the-jews`, filed under `ethiopian-adal-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-africa-052`, rank `child-of:ethiopian-adal-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-17: `capture-of-tabriz-1514`, filed under `ottoman-persian-war-1505-1517` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-asia-114`, rank `child-of:ottoman-persian-war-1505-1517`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-17: `capture-of-tabriz-1635`, filed under `ottoman-safavid-war-1623-1639` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-asia-116`, rank `child-of:ottoman-safavid-war-1623-1639`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-17: `battle-of-jaithak`, filed under `anglo-nepalese-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-asia-122`, rank `child-of:anglo-nepalese-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-17: `battle-of-ramu`, filed under `first-anglo-burmese-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-asia-126`, rank `child-of:first-anglo-burmese-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-17: `siege-of-janjira`, filed under `deccan-wars` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-17-asia-128`, rank `child-of:deccan-wars`. Its span and its subject put it inside the umbrella.

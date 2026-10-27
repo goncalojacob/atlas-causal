@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "adams-onis-treaty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q351722",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Adams–Onís Treaty",
+    "pt": "Tratado de Adams-Onís"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q351722"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Adams–Onís Treaty\", revision 1379141627"
+    }
+  ],
+  "title": "Adams–Onís Treaty",
+  "summary": "The English Wikipedia article \"Adams–Onís Treaty\", at revision 1379141627, opens: \"The Adams–Onís Treaty was an agreement between Spain and the United States, signed February 22, 1819, by John Quincy Adams and Luis de Onís respectively. The United States acquired Florida while renouncing claims to Spanish Texas and establishing its first transcontinental boundary.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q351722, imported by tools/import/wikidata.mjs. The item's own description reads \"Treaty between the United States and Spain, ceding Florida to the U.S. (1819)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-02-22"
+  },
+  "place": "washington",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

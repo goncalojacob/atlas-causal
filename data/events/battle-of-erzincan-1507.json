@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-erzincan-1507",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-17",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q111940071",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-17"
+  },
+  "wikipedia": {
+    "en": "Battle of Erzincan (1507)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q111940071"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Erzincan (1507)\", revision 1379966432"
+    }
+  ],
+  "title": "Battle of Erzincan (1507)",
+  "summary": "The English Wikipedia article \"Battle of Erzincan (1507)\", at revision 1379966432, opens: \"The Battle of Erzincan was fought against the Safavids in 1507 led by Selim, who was then the governor of Trabzon.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q111940071, imported by tools/import/wikidata.mjs. The item's own description reads \"1507 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1507,
+    "end": 1507
+  },
+  "place": "erzincan",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-persian-war-1505-1517"
+}

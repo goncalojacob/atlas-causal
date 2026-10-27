@@ -11489,6 +11489,495 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-038",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "reconstruction-era",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-040",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "may-revolution",
+        "edges": [],
+        "place": "buenos-aires"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-042",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-antietam",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-044",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "gilded-age",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-046",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "seneca-falls-convention",
+        "edges": [],
+        "place": "seneca-falls-new-york"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-048",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "adams-onis-treaty",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-050",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-shiloh",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-052",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hampton-roads",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-054",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "seminole-wars",
+        "edges": [],
+        "place": "florida-q812"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-056",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "bleeding-kansas",
+        "edges": [],
+        "place": "kansas"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-058",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-vicksburg",
+        "edges": [],
+        "place": "vicksburg-mississippi"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-060",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "cisplatine-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-americas-062",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q377542: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-americas-064",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "ragamuffin-war",
+        "edges": [],
+        "place": "south-region-brazil"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-021",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-waterloo",
+        "edges": [],
+        "place": "waterloo-battlefield"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-023",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-trafalgar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-025",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lepanto",
+        "edges": [],
+        "place": "nafpaktos"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-027",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-borodino",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-029",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-agincourt",
+        "edges": [],
+        "place": "azincourt"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-031",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "berne-convention",
+        "edges": [],
+        "place": "bern"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-033",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "gunpowder-plot",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-035",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "great-siege-of-malta",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-037",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-amiens",
+        "edges": [],
+        "place": "amiens"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-039",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "caucasian-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-041",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "union-of-lublin",
+        "edges": [],
+        "place": "lublin"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-europe-043",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q206752: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-europe-045",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "november-uprising",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-050",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sahart",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-052",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-hill-of-the-jews",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-africa-054",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-badeqe",
+        "edges": [],
+        "place": "fatagar"
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "parent",
+          "detail": "\"ethiopian-adal-war\" does not contain the event's start"
+        }
+      ]
+    },
+    {
+      "id": "2026-10-17-asia-112",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-bien-hoa",
+        "edges": [],
+        "place": "bien-hoa-city"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-114",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-tabriz-1514",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-116",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-tabriz-1635",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-118",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "bombardment-of-qui-nhon",
+        "edges": [],
+        "place": "quy-nhon-city"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-120",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-erzincan-1507",
+        "edges": [],
+        "place": "erzincan"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-122",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-jaithak",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-124",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4872458: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-17-asia-126",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ramu",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-128",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-janjira",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-17-asia-130",
+      "writer": "A",
+      "fired": "2026-10-17T06:22Z",
+      "status": "written",
+      "written": {
+        "event": "storming-of-pleret",
+        "edges": [],
+        "place": "plered"
+      },
+      "refusals": []
     }
   ]
 }
