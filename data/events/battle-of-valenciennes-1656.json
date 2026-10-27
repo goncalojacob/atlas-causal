@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-valenciennes-1656",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q716922",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Valenciennes (1656)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q716922"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Valenciennes (1656)\", revision 1372289367"
+    }
+  ],
+  "title": "Battle of Valenciennes (1656)",
+  "summary": "The English Wikipedia article \"Battle of Valenciennes (1656)\", at revision 1372289367, opens: \"The Battle of Valenciennes was fought on 16 July 1656 between the Spanish troops commanded by John Joseph of Austria and the French troops under Henri de la Tour d'Auvergne, Vicomte de Turenne, in the outskirts of the city of Valenciennes in the Spanish Netherlands during the Franco-Spanish War. After a period of Spanish recovery following the Peace of Münster in 1648, France went again on the offensive in 1654, having succeeded in suppressing internal rebellions, and took several towns in the province of Hainaut over the course of two years. On early 1656, Turenne was instructed by the French court to continue the offensive. He intended at first to besiege Tournai, but realising that it had been strongly reinforced by the Army of Flanders under the newly appointed John Joseph of Austria, illegitimate son of Philip IV of Spain, he went instead to besiege Valenciennes, in the course of the Scheldt River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q716922, imported by tools/import/wikidata.mjs. The item's own description reads \"1656 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1656,
+    "end": 1656,
+    "date": "1656-05-18",
+    "endDate": "1656-07-16"
+  },
+  "place": "valenciennes",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-spanish-war-1635-1659"
+}

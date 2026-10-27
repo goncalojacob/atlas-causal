@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-marsaglia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1862475",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Marsaglia",
+    "pt": "Batalha de Marsaglia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1862475"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Marsaglia\", revision 1370449149"
+    }
+  ],
+  "title": "Battle of Marsaglia",
+  "summary": "The English Wikipedia article \"Battle of Marsaglia\", at revision 1370449149, opens: \"The Battle of Marsaglia or Orbassano was a battle in the Nine Years' War, fought in Italy on 4 October 1693, between the French army of Marshal Nicolas Catinat and the army of the Grand Alliance under Duke Victor Amadeus II of Savoy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1862475, imported by tools/import/wikidata.mjs. The item's own description reads \"1693 battle of the Nine Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1693,
+    "end": 1693,
+    "date": "1693-10-04"
+  },
+  "place": "piossasco",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "nine-years-war"
+}

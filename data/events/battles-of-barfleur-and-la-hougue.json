@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battles-of-barfleur-and-la-hougue",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2265686",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battles of Barfleur and La Hougue",
+    "pt": "Batalhas de Barfleur e La Hougue"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2265686"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battles of Barfleur and La Hougue\", revision 1371537181"
+    }
+  ],
+  "title": "Battles of Barfleur and La Hougue",
+  "summary": "The English Wikipedia article \"Battles of Barfleur and La Hougue\", at revision 1371537181, opens: \"The Battles of Barfleur and La Hougue took place during the Nine Years' War, between 19 May O.S. and 4 June O.S. 1692. The first was fought near Barfleur on 19 May O.S., with later actions occurring between 20 May O.S. and 4 June O.S. at Cherbourg and Saint-Vaast-la-Hougue in Normandy, France.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2265686, imported by tools/import/wikidata.mjs. The item's own description reads \"1692 battles of the Nine Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1692,
+    "end": 1692,
+    "date": "1692-05-29"
+  },
+  "place": "english-channel",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "nine-years-war"
+}

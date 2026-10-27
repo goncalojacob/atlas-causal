@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "orbetello",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q214849",
+  "sitelinks": {
+    "count": 61,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Orbetello",
+    "pt": "Orbetello"
+  },
+  "sources": [],
+  "names": [
+    "Orbetello"
+  ],
+  "where": {
+    "lon": 11.2125,
+    "lat": 42.439444444444,
+    "precision": "city",
+    "label": "Orbetello"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

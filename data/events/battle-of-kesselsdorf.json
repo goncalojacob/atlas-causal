@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-kesselsdorf",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q695325",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Kesselsdorf"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q695325"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kesselsdorf\", revision 1370445087"
+    }
+  ],
+  "title": "Battle of Kesselsdorf",
+  "summary": "The English Wikipedia article \"Battle of Kesselsdorf\", at revision 1370445087, opens: \"The Battle of Kesselsdorf was fought on 15 December 1745, between the Kingdom of Prussia and the combined forces of the Archduchy of Austria and the Electorate of Saxony during the part of the War of the Austrian Succession known as the Second Silesian War. The Prussians were led by Leopold I, Prince of Anhalt-Dessau, while the Austrians and Saxons were led by Field Marshal Rutowsky. The Prussians were victorious over the Royal Saxon Army and the Imperial Army of the Holy Roman Emperor.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q695325, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of Kingdom of Prussia and the combined forces of the Archduchy of Austria and the Electorate of Saxony; War of the Austrian Succession, Second Silesian War, 15 Dec 1745\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1745,
+    "end": 1745,
+    "date": "1745-12-15"
+  },
+  "place": "kesselsdorf",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-silesian-war"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "invasion-of-corsica-1553",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3394704",
+  "wikipedia": {
+    "en": "Invasion of Corsica (1553)"
+  },
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-27"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3394704"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Invasion of Corsica (1553)\", revision 1370623937"
+    }
+  ],
+  "title": "Invasion of Corsica (1553)",
+  "summary": "The English Wikipedia article \"Invasion of Corsica (1553)\", at revision 1370623937, opens: \"The Invasion of Corsica of 1553 occurred when French, Ottoman, and Corsican exile forces combined to capture the island of Corsica from the Republic of Genoa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3394704, imported by tools/import/wikidata.mjs. The item's own description reads \"1553 Franco-Ottoman invasion of Corsica\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1553,
+    "end": 1559
+  },
+  "place": "corsica-q14112",
+  "region": null,
+  "regionNote": null,
+  "parent": "italian-war-of-1551-1559",
+  "category": "war",
+  "actors": []
+}

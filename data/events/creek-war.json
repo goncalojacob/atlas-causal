@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "creek-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1186260",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Creek War",
+    "pt": "Guerra Creek"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1186260"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Creek War\", revision 1380172030"
+    }
+  ],
+  "title": "Creek War",
+  "summary": "The English Wikipedia article \"Creek War\", at revision 1380172030, opens: \"The Creek War was a regional conflict between opposing Native American factions, European powers, and the United States during the early 19th century. The Creek War began as a conflict within the tribes of the Muscogee, but the United States quickly became involved. British traders and Spanish colonial officials in Florida supplied the Red Sticks with weapons and equipment due to their shared interest in preventing the expansion of the United States into regions under their control.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1186260, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 regional war between opposing Creek factions, European empires, and the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1814,
+    "endDate": "1814-08"
+  },
+  "place": "southern-united-states",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}
