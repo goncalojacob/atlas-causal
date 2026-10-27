@@ -1516,7 +1516,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "arras",
       "kind": "place",
       "names": [
@@ -1632,6 +1632,33 @@
       "kind": "place",
       "names": [
         "Asan"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "ash-hollow-state-historical-park",
+      "kind": "place",
+      "names": [
+        "Ash Hollow State Historical Park"
       ],
       "origin": {
         "tool": "wikidata"
@@ -2293,6 +2320,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "baltimore",
+      "kind": "place",
+      "names": [
+        "Baltimore"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "banda-islands",
@@ -2455,6 +2509,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "barcelona",
+      "kind": "place",
+      "names": [
+        "Barcelona"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "bartolome-maso-cuba",
@@ -2555,6 +2636,168 @@
           "imported-facts",
           "a9-place",
           "m42b-batch-53"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "battle-of-chippawa-national-historic-site",
+      "kind": "place",
+      "names": [
+        "Battle of Chippawa National Historic Site"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "battle-of-crysler-s-farm-national-historic-site",
+      "kind": "place",
+      "names": [
+        "Battle of Crysler's Farm National Historic Site"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "battle-of-lacolle-national-historic-site",
+      "kind": "place",
+      "names": [
+        "Battle of Lacolle National Historic Site"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "battle-of-lundy-s-lane-national-historic-site",
+      "kind": "place",
+      "names": [
+        "Battle of Lundy's Lane National Historic Site"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "battle-of-stoney-creek-national-historic-site",
+      "kind": "place",
+      "names": [
+        "Battle of Stoney Creek National Historic Site"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "battle-of-the-chateauguay-national-historic-site",
+      "kind": "place",
+      "names": [
+        "Battle of the Châteauguay National Historic Site"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
         ],
         "status": "draft"
       },
@@ -3517,6 +3760,33 @@
       "kind": "place",
       "names": [
         "Blida"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "blindheim",
+      "kind": "place",
+      "names": [
+        "Blindheim"
       ],
       "origin": {
         "tool": "wikidata"
@@ -5288,7 +5558,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 3,
       "id": "cartagena-de-indias",
       "kind": "place",
       "names": [
@@ -6151,8 +6421,36 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
-      "created": "2026-10-17",
+      "created": "2026-10-27",
       "degree": 1,
+      "id": "chiari-lombardy",
+      "kind": "place",
+      "names": [
+        "Chiari",
+        "Chiari, Lombardy"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-17",
+      "degree": 2,
       "id": "chicago",
       "kind": "place",
       "names": [
@@ -6656,6 +6954,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "colonia-del-sacramento",
+      "kind": "place",
+      "names": [
+        "Colonia del Sacramento",
+        "Colônia do Sacramento"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 2,
       "id": "colonial-pemaquid-state-historic-site",
@@ -6978,6 +7304,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "cremona",
+      "kind": "place",
+      "names": [
+        "Cremona"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -7948,6 +8301,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "detroit",
+      "kind": "place",
+      "names": [
+        "Detroit"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "dharwad",
@@ -8292,6 +8672,33 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "donauworth",
+      "kind": "place",
+      "names": [
+        "Donauwörth"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -9856,7 +10263,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "florida-q812",
       "kind": "place",
       "names": [
@@ -10128,6 +10535,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "fort-meigs",
+      "kind": "place",
+      "names": [
+        "Fort Meigs"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -10332,7 +10766,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "freiburg-im-breisgau",
       "kind": "place",
       "names": [
@@ -10517,6 +10951,33 @@
           "a9-place"
         ],
         "note": "Written for `tunisian-campaign`, whose item reaches it at A9's second step: the chain's first step, the item's own `P625`, reuses and never writes, and `tunisia-q948` is 2.8° away and folds to no name this item gives. The precision is the item's own class, `P31` `Q164142`, protectorate, added to the class table in this batch at `region` on Q133156's precedent. A15(3): a place carries no summary.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "frenchman-s-creek",
+      "kind": "place",
+      "names": [
+        "Frenchman's Creek"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -14245,6 +14706,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "jalapa-indiana",
+      "kind": "place",
+      "names": [
+        "Jalapa",
+        "Jalapa, Indiana"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 1,
       "id": "jambi",
@@ -14375,6 +14864,33 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q2338093, the Battle of Jaquijahuana, read on 2026-09-30 — A9’s first step as A12 (2) corrects it. The item’s P276 is Saqsaywaman (Q828336), some 25 km east of the point the item itself gives, so the item’s own point is what this record carries.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "jarnac",
+      "kind": "place",
+      "names": [
+        "Jarnac"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -16602,6 +17118,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "la-rochelle",
+      "kind": "place",
+      "names": [
+        "La Rochelle"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "la-vega-dominican-republic",
@@ -16794,6 +17337,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "lake-erie",
+      "kind": "place",
+      "names": [
+        "Lake Erie",
+        "Lago Erie"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "lake-george-town-new-york",
@@ -16829,6 +17400,34 @@
       "names": [
         "Lake Maracaibo",
         "Lago de Maracaibo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "lake-ontario",
+      "kind": "place",
+      "names": [
+        "Lake Ontario",
+        "Lago Ontário"
       ],
       "origin": {
         "tool": "wikidata"
@@ -18309,6 +18908,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 2,
+      "id": "mackinac-island",
+      "kind": "place",
+      "names": [
+        "Mackinac Island"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "macta",
@@ -19145,6 +19771,34 @@
       "kind": "place",
       "names": [
         "Maryland"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "massachusetts-bay-q959127",
+      "kind": "place",
+      "names": [
+        "Massachusetts Bay",
+        "Baía de Massachusetts"
       ],
       "origin": {
         "tool": "wikidata"
@@ -20316,6 +20970,61 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "mons-belgium",
+      "kind": "place",
+      "names": [
+        "Mons",
+        "Mons, Belgium"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "montauban",
+      "kind": "place",
+      "names": [
+        "Montauban"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -20388,6 +21097,35 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "montijo-spain",
+      "kind": "place",
+      "names": [
+        "Montijo",
+        "Montijo, Spain",
+        "Montijo (Espanha)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -21682,6 +22420,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "new-providence",
+      "kind": "place",
+      "names": [
+        "New Providence",
+        "Nova Providência"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -22041,6 +22807,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 3,
+      "id": "north-dakota",
+      "kind": "place",
+      "names": [
+        "North Dakota",
+        "Dakota do Norte"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -22539,6 +23333,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "ogdensburg-new-york",
+      "kind": "place",
+      "names": [
+        "Ogdensburg",
+        "Ogdensburg, New York",
+        "Ogdensburg (Nova Iorque)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -22576,6 +23399,34 @@
       "kind": "place",
       "names": [
         "Ohio"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "old-fort-erie",
+      "kind": "place",
+      "names": [
+        "Fort Erie",
+        "Old Fort Erie"
       ],
       "origin": {
         "tool": "wikidata"
@@ -22989,6 +23840,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "oudenaarde",
+      "kind": "place",
+      "names": [
+        "Oudenaarde"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -23302,7 +24180,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 15,
+      "degree": 16,
       "id": "paris",
       "kind": "place",
       "names": [
@@ -23682,7 +24560,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 1,
+      "degree": 2,
       "id": "pensacola-florida",
       "kind": "place",
       "names": [
@@ -24074,6 +24952,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "plattsburgh-new-york",
+      "kind": "place",
+      "names": [
+        "Plattsburgh",
+        "Plattsburgh, New York"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -24576,7 +25482,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 52,
+      "degree": 53,
       "id": "portugal-q45",
       "kind": "place",
       "names": [
@@ -24754,7 +25660,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "powder-river-country",
       "kind": "place",
       "names": [
@@ -25510,6 +26416,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "queenston-heights",
+      "kind": "place",
+      "names": [
+        "Queenston Heights National Historic Site of Canada",
+        "Queenston Heights"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -26040,7 +26974,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 11,
+      "degree": 13,
       "id": "rio-de-janeiro",
       "kind": "place",
       "names": [
@@ -27470,6 +28404,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "santa-cruz-de-tenerife",
+      "kind": "place",
+      "names": [
+        "Santa Cruz de Tenerife"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
       "degree": 1,
       "id": "santa-fe-de-nuevo-mexico",
@@ -27477,6 +28438,34 @@
       "names": [
         "Santa Fe de Nuevo México",
         "Santa Fé do Novo México"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "santa-marta",
+      "kind": "place",
+      "names": [
+        "Santa Marta",
+        "Santa Marta (Colômbia)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -29005,6 +29994,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "south-dakota",
+      "kind": "place",
+      "names": [
+        "South Dakota",
+        "Dakota do Sul"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "south-deerfield-massachusetts",
@@ -30085,7 +31102,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "strait-of-malacca",
       "kind": "place",
       "names": [
@@ -30968,6 +31985,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "terre-haute-indiana",
+      "kind": "place",
+      "names": [
+        "Terre Haute",
+        "Terre Haute, Indiana"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "tessalit",
@@ -31275,6 +32320,33 @@
       "names": [
         "Thirteen Colonies",
         "Treze Colônias"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "thorold",
+      "kind": "place",
+      "names": [
+        "Thorold"
       ],
       "origin": {
         "tool": "wikidata"
@@ -31842,6 +32914,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "toronto",
+      "kind": "place",
+      "names": [
+        "Toronto"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -32470,7 +33569,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 9,
+      "degree": 16,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -33288,6 +34387,33 @@
           "place-written-by-hand"
         ],
         "note": "Written by hand because the import had the point and no name it could read: Q4117011 carries its own P625 and names no settlement, no country with a point and no class the places table knows, so the event was left placeless with the africa lane. The name is the one its own article gives — “Battle of Wadi al-Laban”, revision 1370276629: “It took place north of Fes, at Wadi al-Laban, an affluent of the Sebou River, one day north of Fes.” The point is the event item's own and the lane is derived.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-27",
+      "degree": 1,
+      "id": "walcourt",
+      "kind": "place",
+      "names": [
+        "Walcourt"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
