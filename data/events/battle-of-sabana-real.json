@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-sabana-real",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q23640828",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Sabana Real"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q23640828"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sabana Real\", revision 1370587892"
+    }
+  ],
+  "title": "Battle of Sabana Real",
+  "summary": "The English Wikipedia article \"Battle of Sabana Real\", at revision 1370587892, opens: \"The Battle of Sabana Real took place on January 21, 1691. An army of 700 Dominican raiders and 2,600 militiamen aboard five warships of the Armada de Barlovento, circled and overwhelmed 1,000 French defenders at Sabana de la Limonade; Governor de Cussy and 400 of his followers were killed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q23640828, imported by tools/import/wikidata.mjs. The item's own description reads \"Spanish assault against a French position on Hispaniola in 1691\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1691,
+    "end": 1691,
+    "date": "1691-01-21"
+  },
+  "place": "cibao",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "nine-years-war"
+}

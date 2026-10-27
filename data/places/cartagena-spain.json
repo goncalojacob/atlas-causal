@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "cartagena-spain",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q162615",
+  "sitelinks": {
+    "count": 87,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Cartagena, Spain",
+    "pt": "Cartagena (Espanha)"
+  },
+  "sources": [],
+  "names": [
+    "Cartagena",
+    "Cartagena, Spain",
+    "Cartagena (Espanha)"
+  ],
+  "where": {
+    "lon": -0.9841666666666666,
+    "lat": 37.60194444444444,
+    "precision": "city",
+    "label": "Cartagena, Spain"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

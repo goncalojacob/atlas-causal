@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "great-sioux-war-of-1876",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q430053",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Great Sioux War of 1876",
+    "pt": "Guerra de Black Hills"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q430053"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Sioux War of 1876\", revision 1380090234"
+    }
+  ],
+  "title": "Great Sioux War of 1876",
+  "summary": "The English Wikipedia article \"Great Sioux War of 1876\", at revision 1380090234, opens: \"The Great Sioux War of 1876, also known as the Black Hills War, was a series of battles and negotiations that occurred in 1876 and 1877 in an alliance of Lakota Sioux and Northern Cheyenne against the United States. The cause of the war was the desire of the US government to obtain ownership of the Black Hills. Gold had been discovered in the Black Hills, settlers began to encroach onto Native American lands, and the Sioux and the Cheyenne refused to cede ownership. Traditionally, American military and historians place the Lakota at the center of the story, especially because of their numbers, but some Native Americans believe the Cheyenne were the primary target of the American campaign.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q430053, imported by tools/import/wikidata.mjs. The item's own description reads \"battles and negotiations between the US and the Lakota Sioux and Northern Cheyenne between 1876–1877\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1877
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "sioux-wars"
+}

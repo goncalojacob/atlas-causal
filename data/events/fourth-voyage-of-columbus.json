@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "fourth-voyage-of-columbus",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q5793320",
+  "wikipedia": {
+    "en": "Fourth voyage of Columbus"
+  },
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-27"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5793320"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fourth voyage of Columbus\", revision 1376869351"
+    }
+  ],
+  "title": "Fourth voyage of Columbus",
+  "summary": "The English Wikipedia article \"Fourth voyage of Columbus\", at revision 1376869351, opens: \"The fourth voyage of Columbus was a Spanish maritime expedition of discovery in 1502 to 1504 to the western Caribbean coast of Central America, led by Christopher Columbus and commissioned by the Catholic Monarchs of Spain. The voyage, Columbus's last, was meant to find a western maritime route to the Far East. The journey failed to locate such passage, returned relatively little profit, and further resulted in the deaths of about a fifth of the fleet's company, loss of all four of its ships, and a year-long marooning in Jamaica from mid-1503. It is considered the non-Amerindian discovery of mainland Middle America, and one of the first non-Amerindian, non-Norse discoveries of continental North America, after its original peopling and later Norse settlement.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5793320, imported by tools/import/wikidata.mjs. The item's own description reads \"Spanish maritidition, 1502–1504\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1502,
+    "end": 1504,
+    "date": "1502-05-09",
+    "endDate": "1504-11-07"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "voyages-of-christopher-columbus",
+  "actors": []
+}

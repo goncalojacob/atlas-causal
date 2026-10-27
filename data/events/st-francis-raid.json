@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "st-francis-raid",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7587989",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "St. Francis raid"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7587989"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"St. Francis raid\", revision 1370748583"
+    }
+  ],
+  "title": "St. Francis raid",
+  "summary": "The English Wikipedia article \"St. Francis raid\", at revision 1370748583, opens: \"The St. Francis raid was an attack in the French and Indian War by Robert Rogers on St. Francis, near the southern shore of the Saint Lawrence River in what was then the French province of Canada, on October 4, 1759. Rogers and about 140 men entered the village, which was reportedly occupied primarily by women, children, and the elderly, early that morning, slaughtered many of the inhabitants where they lay, shot down many who attempted to flee, and then burned the village. Rogers reported killing as many as 200 people, while French reports placed the number closer to thirty, mainly women and children. One of Rogers' men was killed, and seven were wounded.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7587989, imported by tools/import/wikidata.mjs. The item's own description reads \"1759 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1759,
+    "end": 1759,
+    "date": "1759-10-04"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "french-and-indian-war"
+}

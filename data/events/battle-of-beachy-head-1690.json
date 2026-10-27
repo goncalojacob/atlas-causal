@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-beachy-head-1690",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1248605",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Beachy Head (1690)",
+    "pt": "Batalha de Beachy Head (1690)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1248605"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Beachy Head (1690)\", revision 1378648784"
+    }
+  ],
+  "title": "Battle of Beachy Head (1690)",
+  "summary": "The English Wikipedia article \"Battle of Beachy Head (1690)\", at revision 1378648784, opens: \"The Battle of Beachy Head, also known as the Battle of Béveziers, was a fleet action fought on 10 July 1690 during the Nine Years' War. The battle was the most significant French naval victory over their Grand Alliance opponents during the war. The Dutch lost seven ships of the line and three fire ships. Their English allies also lost one ship of the line, whereas the French did not lose a single vessel. Control of the English Channel temporarily fell into French hands but French Vice-Admiral Anne Hilarion de Tourville failed to pursue the Anglo-Dutch fleet with sufficient vigour, allowing it to fall back to the Thames.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1248605, imported by tools/import/wikidata.mjs. The item's own description reads \"naval engagement fought on 10 July 1690\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1690,
+    "end": 1690,
+    "date": "1690-07-10"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "nine-years-war"
+}

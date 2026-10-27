@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-dogger-bank-1696",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2496259",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Dogger Bank (1696)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2496259"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dogger Bank (1696)\", revision 1376984715"
+    }
+  ],
+  "title": "Battle of Dogger Bank (1696)",
+  "summary": "The English Wikipedia article \"Battle of Dogger Bank (1696)\", at revision 1376984715, opens: \"The Battle of Dogger Bank was a naval battle fought on 17 June 1696 as part of the War of the Grand Alliance. It was a victory for a French force of seven ships over a Dutch force of five ships and the convoy it was escorting.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2496259, imported by tools/import/wikidata.mjs. The item's own description reads \"1696 during the War of the Grand Alliance between a French squadron and a Dutch convoy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1696,
+    "end": 1696,
+    "date": "1696-06-17"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "nine-years-war"
+}

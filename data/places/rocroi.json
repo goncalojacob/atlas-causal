@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "rocroi",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q273702",
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Rocroi",
+    "pt": "Rocroi"
+  },
+  "sources": [],
+  "names": [
+    "Rocroi"
+  ],
+  "where": {
+    "lon": 4.5213888888889,
+    "lat": 49.925277777778,
+    "precision": "city",
+    "label": "Rocroi"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

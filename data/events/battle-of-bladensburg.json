@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-bladensburg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1432141",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Bladensburg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1432141"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bladensburg\", revision 1379014412"
+    }
+  ],
+  "title": "Battle of Bladensburg",
+  "summary": "The English Wikipedia article \"Battle of Bladensburg\", at revision 1379014412, opens: \"The Battle of Bladensburg, also known as the Bladensburg Races, took place on August 24, 1814, during the Chesapeake campaign of the War of 1812 at Bladensburg, Maryland. It has been described as \"the greatest disgrace ever dealt to American arms\". A British force of army regulars and Royal Marines routed a combined U.S. force of Regular Army and state militia troops. The American defeat resulted in the British capture and burning of the national capital of Washington, the only time that the city has fallen to a foreign invader.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1432141, imported by tools/import/wikidata.mjs. The item's own description reads \"War of 1812 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-08-24"
+  },
+  "place": "bladensburg-maryland",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

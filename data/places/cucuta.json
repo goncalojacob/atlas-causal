@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "cucuta",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q216847",
+  "sitelinks": {
+    "count": 68,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Cúcuta",
+    "pt": "Cúcuta"
+  },
+  "sources": [],
+  "names": [
+    "Cúcuta"
+  ],
+  "where": {
+    "lon": -72.504722222222,
+    "lat": 7.9075,
+    "precision": "city",
+    "label": "Cúcuta"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
