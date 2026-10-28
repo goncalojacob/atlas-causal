@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "1740-batavia-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1150578",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1740 Batavia massacre",
+    "pt": "Massacre da Batávia em 1740"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1150578"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1740 Batavia massacre\", revision 1379360311"
+    }
+  ],
+  "title": "1740 Batavia massacre",
+  "summary": "The English Wikipedia article \"1740 Batavia massacre\", at revision 1379360311, opens: \"A massacre and pogrom of ethnic Chinese residents of the port city of Batavia in the Dutch East Indies was carried out by the Dutch East India Company and allied members of other Batavian ethnic groups in 1740. The violence in the city lasted from 9 until 22 October, with minor skirmishes outside the walls continuing late into November that year. Historians have estimated that at least 10,000 ethnic Chinese were massacred; just 600 to 3,000 are believed to have survived.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1150578, imported by tools/import/wikidata.mjs. The item's own description reads \"Pogrom of ethnic Chinese in the port city of Batavia (present-day Jakarta) in the Dutch East Indies\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1740,
+    "end": 1740,
+    "date": "1740-10-09",
+    "endDate": "1740-10-22"
+  },
+  "place": "jakarta",
+  "region": null,
+  "regionNote": null,
+  "category": "death",
+  "actors": []
+}

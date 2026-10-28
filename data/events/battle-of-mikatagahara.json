@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-mikatagahara",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q690464",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Mikatagahara"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q690464"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mikatagahara\", revision 1378914052"
+    }
+  ],
+  "title": "Battle of Mikatagahara",
+  "summary": "The English Wikipedia article \"Battle of Mikatagahara\", at revision 1378914052, opens: \"The Battle of Mikatagahara  took place during the Sengoku period of Japan between Takeda Shingen and Tokugawa Ieyasu in Tōtōmi Province on January 25, 1573. \nShingen attacked Ieyasu on the plain of Mikatagahara north of Hamamatsu during his campaign against Oda Nobunaga while seeking a route from Kōfu to Kyoto. The Tokugawa-Oda force was almost totally annihilated by the Takeda after being encircled and many of Ieyasu's retainers were killed in the battle. Ieyasu and his surviving men were forced to retreat before launching a minor counterattack to delay Shingen's march towards Kyoto.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q690464, imported by tools/import/wikidata.mjs. The item's own description reads \"1573 battle in Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1573,
+    "end": 1573,
+    "date": "1573-01-25"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

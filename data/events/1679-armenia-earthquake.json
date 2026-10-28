@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1679-armenia-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4551791",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1679 Armenia earthquake",
+    "pt": "Sismo da Armênia de 1679"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4551791"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1679 Armenia earthquake\", revision 1366163520"
+    }
+  ],
+  "title": "1679 Armenia earthquake",
+  "summary": "The English Wikipedia article \"1679 Armenia earthquake\", at revision 1366163520, opens: \"The 1679 Armenia earthquake took place on June 4 in the Yerevan region of Armenia, then part of the Safavid Iran.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4551791, imported by tools/import/wikidata.mjs. The item's own description reads \"Earthquake in West Asia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1679,
+    "end": 1679,
+    "date": "1679-06-04"
+  },
+  "place": "yerevan",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

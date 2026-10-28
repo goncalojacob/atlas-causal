@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-talikota",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1362188",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Talikota",
+    "pt": "Batalha de Talicota"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1362188"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Talikota\", revision 1376679482"
+    }
+  ],
+  "title": "Battle of Talikota",
+  "summary": "The English Wikipedia article \"Battle of Talikota\", at revision 1376679482, opens: \"The Battle of Talikota, also known as that of Rakshasi-Tangadi, was a watershed battle fought between the Vijayanagara Empire and an alliance of the Deccan sultanates. The battle resulted in the defeat of Aliya Rama Raya which led to the eventual collapse of the polity and reconfigured Deccan politics.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1362188, imported by tools/import/wikidata.mjs. The item's own description reads \"1565 battle between the Deccan Sultanates and Vijayanagara Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1565,
+    "end": 1565,
+    "date": "1565-01-26"
+  },
+  "place": "hampi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

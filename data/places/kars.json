@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "kars",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q127063",
+  "sitelinks": {
+    "count": 83,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Kars",
+    "pt": "Carse"
+  },
+  "sources": [],
+  "names": [
+    "Kars",
+    "Cars",
+    "Carse"
+  ],
+  "where": {
+    "lon": 43.09583333333333,
+    "lat": 40.60777777777778,
+    "precision": "city",
+    "label": "Kars"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

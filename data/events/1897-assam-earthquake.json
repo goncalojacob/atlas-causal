@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1897-assam-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q738843",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1897 Assam earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q738843"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1897 Assam earthquake\", revision 1377090506"
+    }
+  ],
+  "title": "1897 Assam earthquake",
+  "summary": "The English Wikipedia article \"1897 Assam earthquake\", at revision 1377090506, opens: \"An earthquake occurred on 12 June, in Assam, British India at 11:06 UTC, and had an estimated moment magnitude of 8.2–8.3. It resulted in approximately 1,542 human casualties and caused catastrophic damage to infrastructures. Damage from the earthquake extended into Calcutta, where dozens of buildings were severely damaged, with some buildings partially collapsing. Tremors were felt across India, reaching as far as Ahmedabad and Peshawar. Seiches were also observed in Burma.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q738843, imported by tools/import/wikidata.mjs. The item's own description reads \"Earthquake in India\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1897,
+    "end": 1897
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

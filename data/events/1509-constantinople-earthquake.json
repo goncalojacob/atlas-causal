@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1509-constantinople-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1188930",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1509 Constantinople earthquake",
+    "pt": "Sismo de Istambul de 1509"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1188930"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1509 Constantinople earthquake\", revision 1380981610"
+    }
+  ],
+  "title": "1509 Constantinople earthquake",
+  "summary": "The English Wikipedia article \"1509 Constantinople earthquake\", at revision 1380981610, opens: \"The 1509 Constantinople earthquake, or historically Kıyamet-i Suğra, occurred in the Sea of Marmara on 10 September 1509 at about 22:00. The earthquake had an estimated magnitude of 7.2 ± 0.3 on the surface-wave magnitude scale. A tsunami and 45 days of aftershocks followed the earthquake. The exact death toll of this earthquake is unknown; estimates range between 1,000 and 13,000.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1188930, imported by tools/import/wikidata.mjs. The item's own description reads \"7.7-magnitude earthquake that struck İstanbul in northwestern Turkey on September 10, 1509\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1509,
+    "end": 1509
+  },
+  "place": "istanbul",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

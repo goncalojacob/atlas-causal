@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-manila-bay",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q528550",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Manila Bay",
+    "pt": "Batalha de Cavite"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q528550"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Manila Bay\", revision 1381605786"
+    }
+  ],
+  "title": "Battle of Manila Bay",
+  "summary": "The English Wikipedia article \"Battle of Manila Bay\", at revision 1381605786, opens: \"The Battle of Manila Bay, also known as the Battle of Cavite, took place on May 1, 1898, during the Spanish–American War. The United States Navy's Asiatic Squadron under Commodore George Dewey engaged and destroyed the Spanish Navy's Pacific Squadron under Counter-admiral Patricio Montojo y Pasarón. The battle took place in Manila Bay in the Philippines, and was the first major engagement of the Spanish–American War. The battle was one of the most decisive naval battles in history and marked the end of the Spanish colonial period in Philippine history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q528550, imported by tools/import/wikidata.mjs. The item's own description reads \"1898 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-05-01"
+  },
+  "place": "manila-bay",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

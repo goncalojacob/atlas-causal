@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1668-north-anatolia-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q85719776",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1668 North Anatolia earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q85719776"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1668 North Anatolia earthquake\", revision 1368648828"
+    }
+  ],
+  "title": "1668 North Anatolia earthquake",
+  "summary": "The English Wikipedia article \"1668 North Anatolia earthquake\", at revision 1368648828, opens: \"Northern Anatolia was struck by a large earthquake on 17 August 1668 in the late morning. It had an estimated magnitude in the range 7.8–8.0 Ms and the maximum felt intensity was IX on the Modified Mercalli intensity scale. The epicenter of the earthquake was on the southern shore of Ladik Lake. It caused widespread damage from as far west as Bolu and as far east as Erzincan, resulting in about 8,000 deaths. It is thought to be the most powerful earthquake in Turkey.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q85719776, imported by tools/import/wikidata.mjs. The item's own description reads \"8.0 magnitude earthquake in 1668 in North Anatolia, Ottoman Empire (present-day Turkey)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1668,
+    "end": 1668,
+    "date": "1668-08-17"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}
