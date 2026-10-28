@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-bull-run",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q233343",
+  "wikipedia": {
+    "en": "Second Battle of Bull Run",
+    "pt": "Segunda Batalha de Bull Run"
+  },
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-28"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q233343"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Bull Run\", revision 1380704377"
+    }
+  ],
+  "title": "Second Battle of Bull Run",
+  "summary": "The English Wikipedia article \"Second Battle of Bull Run\", at revision 1380704377, opens: \"The Second Battle of Bull Run or Battle of Second Manassas was fought August 28–30, 1862, in Prince William County, Virginia, as part of the American Civil War. It was the culmination of the Northern Virginia campaign waged by Confederate Gen. Robert E. Lee's Army of Northern Virginia against Union Maj. Gen. John Pope's Army of Virginia, and a battle of much larger scale and numbers than the First Battle of Bull Run fought on July 21, 1861, on the same ground.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q233343, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 major battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-08-28",
+    "endDate": "1862-08-30"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "american-civil-war",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "assassination-of-james-a-garfield",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2866972",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Assassination of James A. Garfield",
+    "pt": "Assassinato de James A. Garfield"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2866972"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Assassination of James A. Garfield\", revision 1380498100"
+    }
+  ],
+  "title": "Assassination of James A. Garfield",
+  "summary": "The English Wikipedia article \"Assassination of James A. Garfield\", at revision 1380498100, opens: \"On July 2, 1881, at 9:30 AM, James A. Garfield, the 20th president of the United States, was shot at the Baltimore and Potomac Railroad Station in Washington, D.C., less than four months into his term as president.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2866972, imported by tools/import/wikidata.mjs. The item's own description reads \"1881 murder of the 20th President of the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1881,
+    "end": 1881,
+    "date": "1881-07-02"
+  },
+  "place": "washington",
+  "region": null,
+  "regionNote": null,
+  "category": "death",
+  "actors": []
+}

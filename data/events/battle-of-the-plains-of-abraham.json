@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-plains-of-abraham",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q311726",
+  "wikipedia": {
+    "en": "Battle of the Plains of Abraham",
+    "pt": "Batalha das Planícies de Abraão"
+  },
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-10-28"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q311726"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Plains of Abraham\", revision 1379564436"
+    }
+  ],
+  "title": "Battle of the Plains of Abraham",
+  "summary": "The English Wikipedia article \"Battle of the Plains of Abraham\", at revision 1379564436, opens: \"The Battle of the Plains of Abraham, also known as the First Battle of Quebec, was a pivotal battle in the Seven Years' War—whose North American theatre is referred to by Americans as the French and Indian War. The battle, which took place on 13 September 1759, was fought by the British Army and Royal Navy against the French Army on the Promontory of Quebec, a plateau just outside the walls of Quebec City on land that was originally owned by a farmer named Abraham Martin, hence the name of the location. The battle involved fewer than 10,000 troops in total, but proved to be a deciding moment in the conflict between France and Britain over the fate of the French colony of Canada or New France, influencing the history of Canada.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q311726, imported by tools/import/wikidata.mjs. The item's own description reads \"1759 battle between British and French near Quebec City, Canada\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1759,
+    "end": 1759,
+    "date": "1759-09-13"
+  },
+  "place": "quebec-city",
+  "region": null,
+  "regionNote": null,
+  "parent": "french-and-indian-war",
+  "category": "war",
+  "actors": []
+}

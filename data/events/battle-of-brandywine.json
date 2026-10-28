@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-brandywine",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q301487",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Brandywine",
+    "pt": "Batalha de Brandywine"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q301487"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Brandywine\", revision 1381613996"
+    }
+  ],
+  "title": "Battle of Brandywine",
+  "summary": "The English Wikipedia article \"Battle of Brandywine\", at revision 1381613996, opens: \"The Battle of Brandywine, also known as the Battle of Brandywine Creek, was fought between the American Continental Army of General George Washington and the British Army of General Sir William Howe on September 11, 1777, as part of the American Revolutionary War (1775–1783). The forces met near Chadds Ford, Pennsylvania. More troops fought at Brandywine than at any other battle of the American Revolution. It was also the second longest single-day battle of the war, after the Battle of Monmouth, with continuous fighting for 11 hours. As Howe moved to take Philadelphia, then the American capital, the British forces routed the Continental Army and forced them to withdraw, first, to the City of Chester, Pennsylvania, and then northeast toward Philadelphia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q301487, imported by tools/import/wikidata.mjs. The item's own description reads \"1777 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-09-11"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "chattanooga-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1477050",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Chattanooga campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1477050"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chattanooga campaign\", revision 1380714564"
+    }
+  ],
+  "title": "Chattanooga campaign",
+  "summary": "The English Wikipedia article \"Chattanooga campaign\", at revision 1380714564, opens: \"The Chattanooga campaign was a series of maneuvers and battles in October and November 1863, during the American Civil War. Following the defeat of Maj. Gen. William S. Rosecrans's Union Army of the Cumberland at the Battle of Chickamauga in September, the Confederate Army of Tennessee under Gen. Braxton Bragg besieged Rosecrans and his men by occupying key high terrain around Chattanooga, Tennessee. Maj. Gen. Ulysses S. Grant was given command of Union forces in the West which was now consolidated under the Division of the Mississippi. Significant reinforcements also began to arrive with him in Chattanooga from Mississippi and the eastern theater. On October 18, Grant removed Rosecrans from command of the Army of the Cumberland and replaced him with Major General George Henry Thomas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1477050, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 military campaign of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-11-25"
+  },
+  "place": "chattanooga-tennessee",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

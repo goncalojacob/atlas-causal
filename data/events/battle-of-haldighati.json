@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-haldighati",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3635360",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Haldighati"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3635360"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Haldighati\", revision 1370265213"
+    }
+  ],
+  "title": "Battle of Haldighati",
+  "summary": "The English Wikipedia article \"Battle of Haldighati\", at revision 1370265213, opens: \"The battle of Haldighati was fought on 18 June 1576 between the Mewar forces led by Maharana Pratap, and the Mughal forces led by Man Singh I of Amber. The Mughals emerged victorious after inflicting significant casualties on Mewari forces, though they failed to capture Pratap, who reluctantly retreated persuaded by his fellow commanders.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3635360, imported by tools/import/wikidata.mjs. The item's own description reads \"1576 battle of the Mughal-Rajput Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1576,
+    "end": 1576,
+    "date": "1576-06-18"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

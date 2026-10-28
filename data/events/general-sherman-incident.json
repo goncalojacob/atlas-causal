@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "general-sherman-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q712464",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "General Sherman incident"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q712464"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"General Sherman incident\", revision 1370620861"
+    }
+  ],
+  "title": "General Sherman incident",
+  "summary": "The English Wikipedia article \"General Sherman incident\", at revision 1370620861, opens: \"The General Sherman incident was the destruction in 1866 of the American merchant ship SS General Sherman in the Taedong River during an unsuccessful and illegal attempt by the ship's crew to open up trade with the isolationist Joseon dynasty of Korea. With the rapid increase in Western imperialism in Asia during the 19th century, Asian nations came under increasing pressure to end their isolationist policies. Despite China and Japan being forcibly opened to foreign trade by Western powers, Korea maintained its isolationism.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q712464, imported by tools/import/wikidata.mjs. The item's own description reads \"battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1866,
+    "date": "1866-09-05"
+  },
+  "place": "taedong-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

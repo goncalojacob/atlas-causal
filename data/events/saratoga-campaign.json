@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "saratoga-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q126876",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Saratoga campaign",
+    "pt": "Campanha de Saratoga"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q126876"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Saratoga campaign\", revision 1379634251"
+    }
+  ],
+  "title": "Saratoga campaign",
+  "summary": "The English Wikipedia article \"Saratoga campaign\", at revision 1379634251, opens: \"The Saratoga campaign in 1777 was an attempt by the British to gain military control of the strategically important Hudson River valley during the American Revolutionary War. It ended in the surrender of a British army, which historian Edmund Morgan argues, \"was a great turning point of the war, because it won for Americans the foreign assistance which was the last element needed for victory.\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q126876, imported by tools/import/wikidata.mjs. The item's own description reads \"military campaign during the American Revolutionary war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-06-14",
+    "endDate": "1777-10-17"
+  },
+  "place": "upstate-new-york",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

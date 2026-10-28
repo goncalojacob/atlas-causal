@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mountain-meadows-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q303438",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Mountain Meadows Massacre",
+    "pt": "Massacre de Mountain Meadows"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q303438"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mountain Meadows Massacre\", revision 1376494957"
+    }
+  ],
+  "title": "Mountain Meadows Massacre",
+  "summary": "The English Wikipedia article \"Mountain Meadows Massacre\", at revision 1376494957, opens: \"The Mountain Meadows Massacre was a series of attacks during the Utah War that resulted in the mass murder of at least 120 members of the Baker–Fancher wagon train. The massacre occurred in the southern Utah Territory at Mountain Meadows, and was perpetrated by settlers from the Church of Jesus Christ of Latter-day Saints involved with the Utah Territorial Militia who recruited and were aided by some Southern Paiute Native Americans. The wagon train, made up mostly of immigrant families from Arkansas, was bound for California, traveling on the Old Spanish Trail that passed through the Territory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q303438, imported by tools/import/wikidata.mjs. The item's own description reads \"1857 massacre of California-bound emigrants by Mormon militiamen\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1857,
+    "end": 1857
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "death",
+  "actors": []
+}

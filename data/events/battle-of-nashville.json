@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-nashville",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1752689",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Nashville"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1752689"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Nashville\", revision 1373339379"
+    }
+  ],
+  "title": "Battle of Nashville",
+  "summary": "The English Wikipedia article \"Battle of Nashville\", at revision 1373339379, opens: \"The Battle of Nashville was a two-day battle in the Franklin–Nashville campaign that represented the end of large-scale fighting west of the coastal states in the American Civil War. It was fought at Nashville, Tennessee, on December 15–16, 1864, between the Confederate Army of Tennessee under Lieutenant General John Bell Hood and the Union Army of the Cumberland (AoC) under Major General George H. Thomas. In one of the largest victories achieved by the Union army during the war, Thomas attacked and routed Hood's army, largely destroying it as an effective fighting force.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1752689, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-12-15",
+    "endDate": "1864-12-16"
+  },
+  "place": "nashville-tennessee",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

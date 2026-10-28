@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "diyarbekir-vilayet",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q491842",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Diyarbekir vilayet"
+  },
+  "sources": [],
+  "names": [
+    "Diyarbekir vilayet"
+  ],
+  "where": {
+    "lon": 40.24,
+    "lat": 37.91,
+    "precision": "region",
+    "label": "Diyarbekir vilayet"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
