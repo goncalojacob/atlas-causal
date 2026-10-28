@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "russification-of-finland",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2328052",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Russification of Finland",
+    "pt": "Russificação da Finlândia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2328052"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russification of Finland\", revision 1347444831"
+    }
+  ],
+  "title": "Russification of Finland",
+  "summary": "The English Wikipedia article \"Russification of Finland\", at revision 1347444831, opens: \"The policy of Russification of Finland was a governmental policy of the Russian Empire aimed at limiting the special status of the Grand Duchy of Finland and possibly the termination of its political autonomy and cultural uniqueness in 1899–1905 and in 1908–1917, fully integrating Finland to the Russian Empire. It was a part of a larger policy of Russification pursued by late 19th–early 20th century Russian governments which tried to abolish cultural and administrative autonomy of non-Russian minorities within the empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2328052, imported by tools/import/wikidata.mjs. The item's own description reads \"Russian policy of suppressing Finnish autonomy (1899–1905, 1908–17)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1899,
+    "end": 1917
+  },
+  "place": "russian-empire-q34266",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

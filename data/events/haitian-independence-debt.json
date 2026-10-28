@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "haitian-independence-debt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3062299",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Haitian independence debt",
+    "pt": "Dívida de Independência do Haiti"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3062299"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Haitian independence debt\", revision 1381358965"
+    }
+  ],
+  "title": "Haitian independence debt",
+  "summary": "The English Wikipedia article \"Haitian independence debt\", at revision 1381358965, opens: \"The Haitian independence debt involves an 1825 agreement between Haiti and France that included France demanding an indemnity of 150 million francs in five annual payments of 30 million to be paid by Haiti in claims over property, including Haitian slaves, that was lost through the Haitian Revolution in return for diplomatic recognition. Haiti was forced to take a loan for the first 30 million, and in 1838 France agreed to reduce the remaining debt to 60 million to be paid over 30 years, with the final payment paid in 1883. However, according to a 2022 The New York Times analysis, because of other loans taken to pay off this loan, the final payment to debtors was actually made in 1947. They approximated that 112 million francs was actually paid in indemnity, which is equivalent to $560 million in 2022 after adjusting for inflation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3062299, imported by tools/import/wikidata.mjs. The item's own description reads \"payments by Haiti to France in compensation for property lost in the Haitian Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1825,
+    "end": 1825,
+    "date": "1825-04-17"
+  },
+  "place": "port-au-prince",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

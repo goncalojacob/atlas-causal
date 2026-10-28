@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "expulsion-of-jews-from-spain",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7424558",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Expulsion of Jews from Spain",
+    "pt": "Expulsão de judeus da Espanha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7424558"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Expulsion of Jews from Spain\", revision 1381497994"
+    }
+  ],
+  "title": "Expulsion of Jews from Spain",
+  "summary": "The English Wikipedia article \"Expulsion of Jews from Spain\", at revision 1381497994, opens: \"On 31 March 1492, the Catholic Monarchs of Spain, King Ferdinand II of Aragon and Queen Isabella I of Castile, issued the Alhambra Decree, ordering all unconverted Jews to leave their kingdoms and territories by the end of July that year, unless they converted to Christianity. Motivated by a desire for religious unity following the completion of the Reconquista and amid fears that unconverted Jews were influencing conversos to revert to Judaism, the decree brought to an end more than a millennium of Jewish presence in the Iberian Peninsula. It is considered a consequential event in Spanish and Jewish history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7424558, imported by tools/import/wikidata.mjs. The item's own description reads \"expulsion of Jews from the territories of the Crowns of Castile and Aragon in 1492\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1492,
+    "end": 1492
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "vestmannaeyjar",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q187251",
+  "sitelinks": {
+    "count": 58,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Vestmannaeyjar",
+    "pt": "Vestmannaeyjar"
+  },
+  "sources": [],
+  "names": [
+    "Vestmannaeyjar"
+  ],
+  "where": {
+    "lon": -20.3418994945,
+    "lat": 63.3879894683,
+    "precision": "region",
+    "label": "Vestmannaeyjar"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

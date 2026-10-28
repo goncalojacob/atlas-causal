@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "tudor-period",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2316201",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Tudor period",
+    "pt": "Período Tudor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2316201"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tudor period\", revision 1378647446"
+    }
+  ],
+  "title": "Tudor period",
+  "summary": "The English Wikipedia article \"Tudor period\", at revision 1378647446, opens: \"In England and Wales, the Tudor period occurred between 1485 and 1603, including the Elizabethan era. The Tudor period coincides with the reign of the House of Tudor, which began with the accession of Henry VII and ended with the death of Elizabeth I. Under the Tudor dynasty, art, architecture, trade, exploration, and commerce flourished. Historian John Guy (1988) argued that \"England was economically healthier, more expensive, and more optimistic under the Tudors\" than at any time since the ancient Roman occupation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2316201, imported by tools/import/wikidata.mjs. The item's own description reads \"historical era in England coinciding with the rule of the Tudor dynasty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1485,
+    "end": 1603,
+    "endDate": "1603-03-24"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
