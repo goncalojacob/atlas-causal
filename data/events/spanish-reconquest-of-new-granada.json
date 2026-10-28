@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "spanish-reconquest-of-new-granada",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q8961",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Spanish reconquest of New Granada"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q8961"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish reconquest of New Granada\", revision 1381492299"
+    }
+  ],
+  "title": "Spanish reconquest of New Granada",
+  "summary": "The English Wikipedia article \"Spanish reconquest of New Granada\", at revision 1381492299, opens: \"The Spanish reconquest of New Granada in 1815–1816 was part of the Spanish American wars of independence in South America and Colombian War of Independence. Shortly after the Napoleonic Wars ended, Ferdinand VII, recently restored to the throne in Spain, decided to send military forces to retake most of the northern South American colonies, which had established autonomous juntas and independent states. The Spanish expeditionary army under the command of Lieutenant General Pablo Morillo, with support from loyal colonial troops, completed the reconquest of New Granada by taking Bogotá on 6 May 1816.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q8961, imported by tools/import/wikidata.mjs. The item's own description reads \"part of the Spanish American wars of independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1816,
+    "date": "1815-08-26",
+    "endDate": "1816-09-16"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "colombian-war-of-independence"
+}

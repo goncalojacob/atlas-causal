@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "bank-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4855994",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Bank War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4855994"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bank War\", revision 1370750324"
+    }
+  ],
+  "title": "Bank War",
+  "summary": "The English Wikipedia article \"Bank War\", at revision 1370750324, opens: \"The Bank War was a political struggle that developed over the issue of rechartering the Second Bank of the United States (B.U.S.) during the presidency of Andrew Jackson (1829–1837). This resulted in the shutdown of the Bank and its replacement by state banks.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4855994, imported by tools/import/wikidata.mjs. The item's own description reads \"political struggle in the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1832,
+    "end": 1836
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "federalist-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2523337",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Federalist Revolution",
+    "pt": "Revolução Federalista"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2523337"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Federalist Revolution\", revision 1371883583"
+    }
+  ],
+  "title": "Federalist Revolution",
+  "summary": "The English Wikipedia article \"Federalist Revolution\", at revision 1371883583, opens: \"The Federalist Revolution was a civil war that took place in southern Brazil between 1893 and 1895, fought by the federalists, opponents of Rio Grande do Sul state president Júlio de Castilhos, seeking greater autonomy for the state and decentralization of power by the newly installed First Brazilian Republic.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2523337, imported by tools/import/wikidata.mjs. The item's own description reads \"Civil war in Brazil\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1893,
+    "end": 1895
+  },
+  "place": "south-region-brazil",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

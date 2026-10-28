@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "revolution-of-the-park",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3294643",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Revolution of the Park",
+    "pt": "Revolução do Parque"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3294643"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolution of the Park\", revision 1370707039"
+    }
+  ],
+  "title": "Revolution of the Park",
+  "summary": "The English Wikipedia article \"Revolution of the Park\", at revision 1370707039, opens: \"The Revolution of the Park, also known as the Revolution of 1890 or Revolution of '90, was a civic-military uprising against the national government of Argentina that took place from July 26 to 29, 1890. The revolution began with the takeover of the Buenos Aires Artillery Park, located in what is today Lavalle Square. Led by the recently formed Civic Union against the presidency of Miguel Juárez Celman of the National Autonomist Party, the uprising was militarily defeated but achieved its political objective: Celman's resignation on August 6, 1890. The revolution marked a turning point in Argentine political history and led to the eventual formation of the Radical Civic Union.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3294643, imported by tools/import/wikidata.mjs. The item's own description reads \"uprising in Argentina on July 26, 1890\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1890,
+    "end": 1890,
+    "date": "1890-07-26"
+  },
+  "place": "buenos-aires",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

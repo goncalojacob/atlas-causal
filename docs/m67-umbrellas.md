@@ -3230,3 +3230,55 @@ Writer B imported it from the planner's queue as item `2026-10-27-asia-109`, ran
 ## Writer B, 2026-10-27: `gran-colombia-peru-war`, bare
 
 Writer B imported it from the planner's queue as item `2026-10-27-americas-045`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `tacky-s-revolt`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-067`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `ecuadorian-peruvian-war-1857-1860`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-092`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `curacao-slave-revolt-of-1795`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-100`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `bussa-s-rebellion`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-102`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `desert-campaign-1833-1834`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-104`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `pemmican-war`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-112`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `treaty-of-ancon`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-065`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `peshtigo-fire`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-073`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `second-maroon-war`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-081`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `treaty-of-canandaigua`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-083`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `invasion-of-surinam-1804`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-089`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `canadian-american-reciprocity-treaty`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-097`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `spanish-reconquest-of-new-granada`, filed under `colombian-war-of-independence` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-27-americas-113`, with no rank. Its span and its subject put it inside the umbrella.

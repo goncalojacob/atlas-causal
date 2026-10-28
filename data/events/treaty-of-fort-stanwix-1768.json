@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-fort-stanwix-1768",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q246501",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Fort Stanwix (1768)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q246501"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Fort Stanwix (1768)\", revision 1381333515"
+    }
+  ],
+  "title": "Treaty of Fort Stanwix (1768)",
+  "summary": "The English Wikipedia article \"Treaty of Fort Stanwix (1768)\", at revision 1381333515, opens: \"The Treaty of Fort Stanwix was a treaty signed between representatives from the Haudenosaunee and Great Britain in 1768 at Fort Stanwix. It was negotiated between Sir William Johnson, his deputy George Croghan, and representatives of the Haudenosaunee.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q246501, imported by tools/import/wikidata.mjs. The item's own description reads \"1768 treaty between Great Britain and Iroquois Six Nations\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1768,
+    "end": 1768,
+    "date": "1768-11-05"
+  },
+  "place": "fort-stanwix",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

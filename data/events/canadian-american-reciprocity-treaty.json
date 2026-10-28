@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "canadian-american-reciprocity-treaty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2718109",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Canadian–American Reciprocity Treaty"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2718109"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Canadian–American Reciprocity Treaty\", revision 1366363656"
+    }
+  ],
+  "title": "Canadian–American Reciprocity Treaty",
+  "summary": "The English Wikipedia article \"Canadian–American Reciprocity Treaty\", at revision 1366363656, opens: \"The Canadian–American Reciprocity Treaty of 1854, also known as the Elgin-Marcy Treaty after its key negotiators, James Bruce, 8th Earl of Elgin and William L. Marcy, was a treaty between the United Kingdom and the United States that applied to British North America, including the Province of Canada, New Brunswick, Nova Scotia, Prince Edward Island, and Newfoundland Colony. The treaty covered raw materials; in effect from 1854 to 1866, it represented a move toward free trade and was opposed by protectionist elements in the United States.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2718109, imported by tools/import/wikidata.mjs. The item's own description reads \"1854 treaty between the United Kingdom and United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": 1854
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

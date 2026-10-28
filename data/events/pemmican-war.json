@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "pemmican-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q17021072",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Pemmican War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17021072"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pemmican War\", revision 1376708778"
+    }
+  ],
+  "title": "Pemmican War",
+  "summary": "The English Wikipedia article \"Pemmican War\", at revision 1376708778, opens: \"The Pemmican War was a series of interactions through violent confrontations between the Hudson's Bay Company (HBC) and the North West Company (NWC) in the Canadas from 1812 to 1821. It started after the establishment of the Red River Colony by Thomas Douglas, 5th Earl of Selkirk in 1812, and ended in 1821 when the NWC was merged into the HBC. The conflict was sparked by the Pemmican Proclamation issued by Governor Miles Macdonell, which disallowed any person from exporting pemmican, a key foodstuff for those involved in the North American fur trade, out of the Red River Colony. This was fiercely opposed by the Métis, who were mostly affiliated with the NWC and opposed to both the colony and the HBC's dominance in the region.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17021072, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1821
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
