@@ -133,6 +133,12 @@ does not read the pool files.
     Writer A works on branch `m42` and writer B on branch `m42b`. Since 16
     October either takes any lane, by turn. A writer never imports what the
     other branch holds.
+    **Since 28 October the planner queues only single events.** A page that
+    gathers many events is not one: never queue an article whose title
+    begins "List of", "Timeline of" or "History of", or any other overview
+    or list page. "List of indigenous rebellions in Mexico and Central
+    America" was queued and written on 27 October, and the assistant removed
+    it. Its parts may be queued one by one.
 14. **The recache (A15(2)).** The last step of every writer fire is
     `node tools/cache-evidence.mjs --fill` over the fire's own citations.
 15. **Records first, then the rebuild, then the index commit** (798).
