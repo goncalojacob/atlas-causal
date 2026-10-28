@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "chiari-lombardy",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q103999",
+  "sitelinks": {
+    "count": 58,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Chiari, Lombardy",
+    "pt": "Chiari"
+  },
+  "sources": [],
+  "names": [
+    "Chiari",
+    "Chiari, Lombardy"
+  ],
+  "where": {
+    "lon": 9.91735615,
+    "lat": 45.52724815,
+    "precision": "city",
+    "label": "Chiari, Lombardy"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

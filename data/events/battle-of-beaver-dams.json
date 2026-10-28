@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-beaver-dams",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q365640",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Beaver Dams"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q365640"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Beaver Dams\", revision 1379530685"
+    }
+  ],
+  "title": "Battle of Beaver Dams",
+  "summary": "The English Wikipedia article \"Battle of Beaver Dams\", at revision 1379530685, opens: \"The Battle of Beaver Dams took place on 24 June 1813, during the War of 1812. A column of troops from the United States Army marched from Fort George and attempted to surprise a British outpost at Beaver Dams, billeting themselves overnight in the village of Queenston, Ontario. Laura Secord, a resident of Queenston, had earlier learned of the American plans from several Americans billeted at her house and had struck out on a long and difficult trek to warn the British at Decou's stone house near present-day Brock University. When the Americans resumed their march, they were ambushed by Kahnawake and other native warriors and eventually surrendered to a small British detachment led by Lieutenant James FitzGibbon. About 500 U.S. troops, including their wounded commander, were taken prisoner.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q365640, imported by tools/import/wikidata.mjs. The item's own description reads \"war of 1812 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-06-24"
+  },
+  "place": "thorold",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

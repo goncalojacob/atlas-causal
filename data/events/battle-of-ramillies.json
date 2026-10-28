@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-ramillies",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q161325",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Ramillies",
+    "pt": "Batalha de Ramillies"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q161325"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ramillies\", revision 1377855945"
+    }
+  ],
+  "title": "Battle of Ramillies",
+  "summary": "The English Wikipedia article \"Battle of Ramillies\", at revision 1377855945, opens: \"The Battle of Ramillies, fought on 23 May 1706, was a battle of the War of the Spanish Succession. For the Grand Alliance – Austria, England, and the Dutch Republic – the battle had followed an indecisive campaign against the Bourbon armies of King Louis XIV of France in 1705. Although the Allies had captured Barcelona that year, they had been forced to abandon their campaign on the Moselle, had stalled in the Spanish Netherlands and suffered defeat in northern Italy. Yet despite his opponents' setbacks Louis XIV wanted peace, but on reasonable terms. Because of this, as well as to maintain their momentum, the French and their allies took the offensive in 1706.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q161325, imported by tools/import/wikidata.mjs. The item's own description reads \"1706 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1706,
+    "end": 1706,
+    "date": "1706-05-23"
+  },
+  "place": "ramillies-belgium",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

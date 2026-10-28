@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-new-echota",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1049395",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Treaty of New Echota"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1049395"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of New Echota\", revision 1375515490"
+    }
+  ],
+  "title": "Treaty of New Echota",
+  "summary": "The English Wikipedia article \"Treaty of New Echota\", at revision 1375515490, opens: \"The Treaty of New Echota was a treaty signed on December 29, 1835, in New Echota, Georgia, by officials of the United States government and representatives of a minority Cherokee political faction, the Treaty Party.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1049395, imported by tools/import/wikidata.mjs. The item's own description reads \"United States treaty with the Cherokee Nation, 1835\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1835,
+    "date": "1835-12-29"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

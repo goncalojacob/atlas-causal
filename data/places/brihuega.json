@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "brihuega",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q52615",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Brihuega",
+    "pt": "Brihuega"
+  },
+  "sources": [],
+  "names": [
+    "Brihuega"
+  ],
+  "where": {
+    "lon": -2.8691666666667,
+    "lat": 40.760555555556,
+    "precision": "city",
+    "label": "Brihuega"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hochstadt-an-der-donau",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q505909",
+  "sitelinks": {
+    "count": 46,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Höchstädt an der Donau",
+    "pt": "Höchstädt an der Donau"
+  },
+  "sources": [],
+  "names": [
+    "Höchstädt an der Donau"
+  ],
+  "where": {
+    "lon": 10.568161111111111,
+    "lat": 48.61123888888889,
+    "precision": "city",
+    "label": "Höchstädt an der Donau"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

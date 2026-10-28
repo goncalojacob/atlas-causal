@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-noteborg-1702",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q633067",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Siege of Nöteborg (1702)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q633067"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Nöteborg (1702)\", revision 1370744109"
+    }
+  ],
+  "title": "Siege of Nöteborg (1702)",
+  "summary": "The English Wikipedia article \"Siege of Nöteborg (1702)\", at revision 1370744109, opens: \"The siege of Nöteborg was one of the first sieges of the Great Northern War, when Russian forces captured the Swedish fortress of Nöteborg in October 1702. Peter the Great had assembled a force of 20,000 men for this task, and marched for ten days to his destination. About 12,000 of these men were positioned on the banks of the Neva river, where they camped until 6 October (N.S.). On that day, after giving command of the main force to Boris Sheremetev, he moved toward Nöteborg. After the Swedish commander, Wilhelm von Schlippenbach, refused to give up the fort immediately, the Russians began bombarding it. A final Russian assault on the fort was tactically unsuccessful, resulting in heavy casualties, but forced the fort's defenders to surrender on 22 October 1702. After taking control, Peter immediately began reconstructing the fort for his own purposes, renaming it Shlisselburg.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q633067, imported by tools/import/wikidata.mjs. The item's own description reads \"a siege during Great Northern War in 1702\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1702,
+    "end": 1702,
+    "date": "1702-10-07",
+    "endDate": "1702-10-22"
+  },
+  "place": "shlisselburg",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

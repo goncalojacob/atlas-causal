@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "utah-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1501025",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Utah War",
+    "pt": "Guerra de Utah"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1501025"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Utah War\", revision 1381402099"
+    }
+  ],
+  "title": "Utah War",
+  "summary": "The English Wikipedia article \"Utah War\", at revision 1381402099, opens: \"The Utah War (1857–1858), also known as the Utah Expedition, the Utah Campaign, Buchanan's Blunder, the Mormon War, or the Mormon Rebellion, was an armed confrontation between the armed forces of the US government and the Mormon settlers in the Utah Territory. The confrontation lasted from May 1857 to July 1858. The conflict primarily involved Mormon settlers and federal troops, escalating from tensions over governance and autonomy within the territory. There were several casualties, predominantly non-Mormon civilians. Although the war featured no significant military battles, it included the Mountain Meadows Massacre, where Mormon militia members disarmed and murdered about 120 settlers traveling to California with tensions from the Utah War being cited as a contributing factor to the massacre.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1501025, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict in Utah Territory, USA between 1857–1858\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1857,
+    "end": 1858,
+    "date": "1857-03",
+    "endDate": "1858-07"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

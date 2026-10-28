@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "taisnieres-sur-hon",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1100414",
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Taisnières-sur-Hon",
+    "pt": "Taisnières-sur-Hon"
+  },
+  "sources": [],
+  "names": [
+    "Taisnières-sur-Hon"
+  ],
+  "where": {
+    "lon": 3.8358333333333,
+    "lat": 50.318888888889,
+    "precision": "city",
+    "label": "Taisnières-sur-Hon"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

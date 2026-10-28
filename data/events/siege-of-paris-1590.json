@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-paris-1590",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3485984",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Siege of Paris (1590)",
+    "pt": "Cerco de Paris (1590)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485984"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Paris (1590)\", revision 1370744312"
+    }
+  ],
+  "title": "Siege of Paris (1590)",
+  "summary": "The English Wikipedia article \"Siege of Paris (1590)\", at revision 1370744312, opens: \"The siege of Paris took place during the French Wars of Religion when the French Royal Army under Henry of Navarre, and supported by the Huguenots, failed to capture the city of Paris from the Catholic League. Paris was finally relieved from the siege by an international Catholic-Spanish army under the command of Alexander Farnese, Duke of Parma.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485984, imported by tools/import/wikidata.mjs. The item's own description reads \"1590 diege of the French Wars of Religion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1590,
+    "end": 1590,
+    "date": "1590-05-07",
+    "endDate": "1590-08-30"
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-wars-of-religion"
+}

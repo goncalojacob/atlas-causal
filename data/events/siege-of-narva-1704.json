@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-narva-1704",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q694054",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Siege of Narva (1704)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q694054"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Narva (1704)\", revision 1370743919"
+    }
+  ],
+  "title": "Siege of Narva (1704)",
+  "summary": "The English Wikipedia article \"Siege of Narva (1704)\", at revision 1370743919, opens: \"The siege of Narva, also known as the second battle of Narva, was the second Russian siege of Swedish Narva during the Great Northern War from 8 July to 20 August 1704.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q694054, imported by tools/import/wikidata.mjs. The item's own description reads \"a Siege during Great Northern War in 1704\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1704,
+    "end": 1704,
+    "date": "1704-06-27",
+    "endDate": "1704-08-09"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

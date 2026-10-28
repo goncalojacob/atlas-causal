@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "treaty-of-fort-jackson",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1466527",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Treaty of Fort Jackson",
+    "pt": "Tratado de Fort Jackson"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1466527"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Fort Jackson\", revision 1376798201"
+    }
+  ],
+  "title": "Treaty of Fort Jackson",
+  "summary": "The English Wikipedia article \"Treaty of Fort Jackson\", at revision 1376798201, opens: \"The Treaty of Fort Jackson was signed on August 9, 1814 at Fort Jackson near Wetumpka, Alabama following the defeat of the Red Stick resistance by United States allied forces at the Battle of Horseshoe Bend.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1466527, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 treaty ending Creek War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": null,
+    "date": "1814-08-09"
+  },
+  "place": "fort-toulouse",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

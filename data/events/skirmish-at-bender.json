@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "skirmish-at-bender",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q638601",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Skirmish at Bender"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q638601"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Skirmish at Bender\", revision 1378400908"
+    }
+  ],
+  "title": "Skirmish at Bender",
+  "summary": "The English Wikipedia article \"Skirmish at Bender\", at revision 1378400908, opens: \"The Skirmish at Bender was devised to remove Charles XII of Sweden from the Ottoman Empire after his military defeats in Russia. It took place on 1 February 1713 (O.S.) or 12 February 1713 (N.S.) on Ottoman territory, in what is now the town of Bender, Moldova.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q638601, imported by tools/import/wikidata.mjs. The item's own description reads \"1713 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1713,
+    "end": 1713,
+    "date": "1713-02-01"
+  },
+  "place": "bender-moldova",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

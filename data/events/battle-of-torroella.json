@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-torroella",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2701128",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Torroella"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2701128"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Torroella\", revision 1370591317"
+    }
+  ],
+  "title": "Battle of Torroella",
+  "summary": "The English Wikipedia article \"Battle of Torroella\", at revision 1370591317, opens: \"The Battle of Torroella, also known as Battle of the river Ter, took place during the Nine Years' War, on 27 May 1694 along the banks and fords of the Ter River near the Puente Mayor in the vicinity of the important town of Girona, Catalonia, Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2701128, imported by tools/import/wikidata.mjs. The item's own description reads \"1694 battle of the Nine Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1694,
+    "end": 1694,
+    "date": "1694-05-27"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "nine-years-war"
+}

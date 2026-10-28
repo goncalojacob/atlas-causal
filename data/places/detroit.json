@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "detroit",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q12439",
+  "sitelinks": {
+    "count": 152,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Detroit",
+    "pt": "Detroit"
+  },
+  "sources": [],
+  "names": [
+    "Detroit"
+  ],
+  "where": {
+    "lon": -83.0475,
+    "lat": 42.331666666667,
+    "precision": "city",
+    "label": "Detroit"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

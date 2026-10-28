@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-kucuk-kaynarca",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q123227",
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Treaty of Küçük Kaynarca",
+    "pt": "Tratado de Küçük-Kainarji"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q123227"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Küçük Kaynarca\", revision 1375158642"
+    }
+  ],
+  "title": "Treaty of Küçük Kaynarca",
+  "summary": "The English Wikipedia article \"Treaty of Küçük Kaynarca\", at revision 1375158642, opens: \"The Treaty of Küçük Kaynarca, formerly often written Kuchuk-Kainarji, was a peace treaty signed on 21 July [O.S. 10 July] 1774, in Küçük Kaynarca between the Russian Empire and the Ottoman Empire, ending the Russo-Turkish War of 1768–1774 with major concessions to Russia. The concessions to Russia were not merely territorial; not only was the Crimean Khanate effectively ceded to Russia, but Russia also gained the right to construct a Russian Orthodox church in Constantinople, claiming to be the protector of the Orthodox Christians in the Ottoman Empire. This was a pretext for frequent and numerous interventions in the decades to follow. Ottoman Christians started to feel more empowered as European and Christian powers demonstrated their rising influence and political power. Access to Europe's political networks, markets and educational institutions created a class privilege for Ottoman Christians, and scholars often regard the treaty as a turning point for relations between Ottoman Christians and the European nations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q123227, imported by tools/import/wikidata.mjs. The item's own description reads \"1774 peace treaty ending the Russo-Turkish War of 1768–74\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1774,
+    "end": 1774,
+    "date": "1774-07-21"
+  },
+  "place": "bulgaria-q219",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

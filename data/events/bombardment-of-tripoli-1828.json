@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "bombardment-of-tripoli-1828",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4940517",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Bombardment of Tripoli (1828)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4940517"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bombardment of Tripoli (1828)\", revision 1370605278"
+    }
+  ],
+  "title": "Bombardment of Tripoli (1828)",
+  "summary": "The English Wikipedia article \"Bombardment of Tripoli (1828)\", at revision 1370605278, opens: \"The Bombardment of Tripoli in 1828 was a naval engagement fought between the navies of Tripoli and the Kingdom of the Two Sicilies. After the Pasha of Tripoli demanded money from the Kingdom of Two Sicilies in exchange for peace, the Neapolitan government sent a squadron to Tripoli to refuse the Tripolitanian demands and attempt to coerce the Tripolitanians away from war. Upon receiving the news that the Neapolitans refused the Tripolitanians demands, the Pasha declared war on the Kingdom of the Two Sicilies.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4940517, imported by tools/import/wikidata.mjs. The item's own description reads \"1828 naval engagement\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1828,
+    "end": 1828
+  },
+  "place": "tripoli",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

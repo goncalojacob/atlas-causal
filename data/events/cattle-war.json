@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cattle-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q124683233",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Cattle War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q124683233"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cattle War\", revision 1376053404"
+    }
+  ],
+  "title": "Cattle War",
+  "summary": "The English Wikipedia article \"Cattle War\", at revision 1376053404, opens: \"The Cattle War also commonly referred to as the Perumal War or the Perumal Naik-War was a colonial conflict between the Danish East India Company and the Thanjavur Maratha kingdom over the Danish governor Hans Georg Krog's expansionistic foreign policy. The conflict started over the raiding of Danish cattle by the local supervisor of a small land district, Perumal Naik.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q124683233, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between Danish India and the Thanjavur Maratha kingdom\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1756,
+    "end": 1756,
+    "date": "1756-06-19",
+    "endDate": "1756-07-06"
+  },
+  "place": "tharangambadi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

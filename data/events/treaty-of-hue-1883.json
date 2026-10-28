@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-hue-1883",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3032218",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Treaty of Huế (1883)",
+    "pt": "Tratado de Huế"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3032218"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Huế (1883)\", revision 1379536580"
+    }
+  ],
+  "title": "Treaty of Huế (1883)",
+  "summary": "The English Wikipedia article \"Treaty of Huế (1883)\", at revision 1379536580, opens: \"The Treaty of Huế, concluded on 25 August 1883 between Vietnam and France, recognising a French protectorate over Vietnam being divided into Annam and Tonkin. Dictated to the Vietnamese by the French administrator François-Jules Harmand in the wake of the French military seizure of the Thuận An forts, the treaty is often known as the 'Harmand Treaty'. Considered overly harsh in French diplomatic circles, the treaty was never ratified in France, and was replaced on 6 June 1884 with the slightly milder 'Patenôtre Accords' or 'Treaty of Protectorate', which formed the basis for French rule in Vietnam until the 1949 Élysée Accords signed between France and emperor Bảo Đại.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3032218, imported by tools/import/wikidata.mjs. The item's own description reads \"1883 treaty establishing French protectorates in Nguyễn-dynasty Vietnam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1883,
+    "end": 1883
+  },
+  "place": "hue",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

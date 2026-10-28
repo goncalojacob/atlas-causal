@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-malacca-strait-1714",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q115839558",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of the Malacca Strait (1714)",
+    "pt": "Batalha do Estreito de Malaca (1714)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q115839558"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Malacca Strait (1714)\", revision 1370600923"
+    }
+  ],
+  "title": "Battle of the Malacca Strait (1714)",
+  "summary": "The English Wikipedia article \"Battle of the Malacca Strait (1714)\", at revision 1370600923, opens: \"The Battle of the Malacca Strait was one of the last battles of the War of the Spanish Succession, fought between 8 and 10 of January in 1714, in violation of the Peace of Utrecht signed between France and Portugal in April 1713.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q115839558, imported by tools/import/wikidata.mjs. The item's own description reads \"1714 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1714,
+    "end": 1714,
+    "date": "1714-01-08",
+    "endDate": "1714-01-10"
+  },
+  "place": "strait-of-malacca",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

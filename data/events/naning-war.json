@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "naning-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q22936451",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Naning War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q22936451"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Naning War\", revision 1370629223"
+    }
+  ],
+  "title": "Naning War",
+  "summary": "The English Wikipedia article \"Naning War\", at revision 1370629223, opens: \"The Naning War, also known as the Naning Conflict or Naning Revolt, was a conflict in the region surrounding Malacca, which was part of the Straits Settlements under British control. The conflict was fought between British East India Company (EIC), which had taken over Malacca and its neighbouring areas from the Dutch in 1824, against the Malay chiefdom of Naning, located adjacent to Malacca.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q22936451, imported by tools/import/wikidata.mjs. The item's own description reads \"19th century conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1831,
+    "end": 1832,
+    "date": "1831-08-06",
+    "endDate": "1832-06-15"
+  },
+  "place": "naning",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

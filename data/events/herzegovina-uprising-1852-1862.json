@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "herzegovina-uprising-1852-1862",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q18206421",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Herzegovina uprising (1852–1862)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18206421"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Herzegovina uprising (1852–1862)\", revision 1373076643"
+    }
+  ],
+  "title": "Herzegovina uprising (1852–1862)",
+  "summary": "The English Wikipedia article \"Herzegovina uprising (1852–1862)\", at revision 1373076643, opens: \"The Herzegovinian Uprising (1852–1862), also known in historiography as Vukalović's Uprising, was a long-term armed resistance of the Serb population in Eastern Herzegovina against Ottoman rule. The uprising was initiated and led throughout the decade by the Herzegovinian duke and gunsmith Luka Vukalović.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18206421, imported by tools/import/wikidata.mjs. The item's own description reads \"uprising (1852–62) by Serbs in Herzegovina, led by Luka Vukalović, against the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1852,
+    "end": 1862
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

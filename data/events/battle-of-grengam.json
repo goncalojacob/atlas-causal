@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-grengam",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q338370",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Grengam"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q338370"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Grengam\", revision 1370870767"
+    }
+  ],
+  "title": "Battle of Grengam",
+  "summary": "The English Wikipedia article \"Battle of Grengam\", at revision 1370870767, opens: \"The Battle of Grengam of 1720 was the last major naval battle of the Great Northern War. It took place in Åland, in the Ledsund strait between the island communities of Föglö and Lemland. Russian forces captured four Swedish vessels, and the battle is generally regarded as a Russian victory; however, the extent of Russian losses and the strategic significance of the result have been disputed in later historiography. Russian forces conducted further operations against the Swedish coast in 1721 before the Treaty of Nystad ended the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q338370, imported by tools/import/wikidata.mjs. The item's own description reads \"1720 A major naval battle in the Great Northern War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1720,
+    "end": 1720,
+    "date": "1720-08-07"
+  },
+  "place": "foglo",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

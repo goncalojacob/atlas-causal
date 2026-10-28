@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "padri-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2725993",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Padri Wars",
+    "pt": "Guerra dos Padris"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2725993"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Padri Wars\", revision 1370701788"
+    }
+  ],
+  "title": "Padri Wars",
+  "summary": "The English Wikipedia article \"Padri Wars\", at revision 1370701788, opens: \"The Padri Wars was fought from 1803 until 1837 in West Sumatra, Indonesia between the Padri and the Adat. The Padri were Muslim clerics from Sumatra who wanted to impose Sharia in Minangkabau in West Sumatra, Indonesia. The Adat comprised the Minangkabau nobility and traditional chiefs. They asked for the help of the Dutch, who intervened in 1821 and helped the nobility defeat the Padri faction.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2725993, imported by tools/import/wikidata.mjs. The item's own description reads \"1803–1837 armed conflict in Sumatra, Indonesia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1803,
+    "end": 1837
+  },
+  "place": "sumatra",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

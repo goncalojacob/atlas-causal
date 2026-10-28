@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "british-invasions-of-the-river-plate",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q587151",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "British invasions of the River Plate",
+    "pt": "Invasões Britânicas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q587151"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"British invasions of the River Plate\", revision 1380767737"
+    }
+  ],
+  "title": "British invasions of the River Plate",
+  "summary": "The English Wikipedia article \"British invasions of the River Plate\", at revision 1380767737, opens: \"The British invasions of the River Plate were two unsuccessful British attempts to seize control of the Spanish colony of the Viceroyalty of the Río de la Plata, located around the Río de la Plata in South America – in present-day Argentina and Uruguay. The invasions took place between 1806 and 1807, as part of the Napoleonic Wars, War of the Third Coalition at a time when Spain was an ally of Napoleonic France. In Argentine historiography, the two successive defeats of the British expeditionary forces are known collectively as the Reconquista and the Defensa, respectively.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q587151, imported by tools/import/wikidata.mjs. The item's own description reads \"series of battles during the Anglo-Spanish War of 1796-1808\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1806,
+    "end": 1807
+  },
+  "place": "buenos-aires",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-spanish-war-1796-1808"
+}

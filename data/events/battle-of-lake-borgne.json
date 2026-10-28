@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-lake-borgne",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890908",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Lake Borgne"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890908"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lake Borgne\", revision 1376804762"
+    }
+  ],
+  "title": "Battle of Lake Borgne",
+  "summary": "The English Wikipedia article \"Battle of Lake Borgne\", at revision 1376804762, opens: \"The Battle of Lake Borgne was a coastal engagement between the Royal Navy and the United States Navy in the American South theatre of the War of 1812. It occurred on December 14, 1814 on Lake Borgne. The British victory allowed them to disembark their troops unhindered nine days later and to launch an offensive upon New Orleans on land.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890908, imported by tools/import/wikidata.mjs. The item's own description reads \"naval battle fought between Britain and the United States in the War of 1812\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-12-14"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

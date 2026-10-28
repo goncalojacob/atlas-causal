@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anglo-manipur-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q20313080",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Anglo-Manipur War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20313080"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Manipur War\", revision 1380979641"
+    }
+  ],
+  "title": "Anglo-Manipur War",
+  "summary": "The English Wikipedia article \"Anglo-Manipur War\", at revision 1380979641, opens: \"The Anglo-Manipur War or Manipuri Rebellion of 1891 was an armed conflict between the British Colonial Forces and the royal princes of the Manipur Kingdom. The conflict began with a palace coup staged by the general (Senapati) of Manipur, ousting the then reigning king, Maharaja Surchandra and installing a half-brother of the king, the heir-apparent, in his place. The British government took objection to the action and attempted to arrest the general. The effort failed, with the Manipuri forces attacking the British residency and the resident and other British officials getting executed. The British launched a punitive expedition that lasted from 31 March to 27 April 1891. The general and other rebels were arrested and convicted. Manipur was converted into an Indian princely state, subject to British Paramountcy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20313080, imported by tools/import/wikidata.mjs. The item's own description reads \"Armed battle between the Kingdom of Manipur and the British Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1891,
+    "end": 1891,
+    "date": "1891-03-31",
+    "endDate": "1891-04-27"
+  },
+  "place": "manipur-princely-state",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

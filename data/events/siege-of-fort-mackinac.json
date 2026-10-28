@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-fort-mackinac",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2890483",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Siege of Fort Mackinac"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890483"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Fort Mackinac\", revision 1381238576"
+    }
+  ],
+  "title": "Siege of Fort Mackinac",
+  "summary": "The English Wikipedia article \"Siege of Fort Mackinac\", at revision 1381238576, opens: \"The Capture of Fort Mackinac was one of the first engagements of the War of 1812. A British and Native American force captured the island soon after the outbreak of war between Britain and the United States. Encouraged by the easy British victory, more Native Americans rallied to their support. Their cooperation was an important factor in several British victories during the remainder of the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890483, imported by tools/import/wikidata.mjs. The item's own description reads \"engagement of the War of 1812\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-07-17"
+  },
+  "place": "mackinac-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

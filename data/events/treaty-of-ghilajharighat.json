@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-ghilajharighat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7837077",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Treaty of Ghilajharighat"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837077"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Ghilajharighat\", revision 1380604754"
+    }
+  ],
+  "title": "Treaty of Ghilajharighat",
+  "summary": "The English Wikipedia article \"Treaty of Ghilajharighat\", at revision 1380604754, opens: \"The Treaty of Ghilajharighat, Tipam, was signed between the Ahoms and the Mughal forces led by Mir Jumla II on 23 January 1663. The treaty was signed at the end of Mir Jumla's invasion of Assam of 1662–1663. Though the signing of the treaty led to Mir Jumla and his army's retreat from the Ahom territories, the treaty terms were only partially fulfilled; the Ahoms felt humiliated by the tributary status that the treaty sought to impose on them and they followed it with wins in the Battle of Saraighat (1671) and Battle of Itakhuli (1682) that saw the Mughals interests pushed out of the Brahmaputra valley for ever.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837077, imported by tools/import/wikidata.mjs. The item's own description reads \"Treaty between Ahom and Mugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1663,
+    "end": 1663,
+    "date": "1663-01-23"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

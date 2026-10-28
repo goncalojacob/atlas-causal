@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "san-juan-islands",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1196315",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "San Juan Islands",
+    "pt": "Ilhas San Juan"
+  },
+  "sources": [],
+  "names": [
+    "San Juan Islands",
+    "Ilhas San Juan"
+  ],
+  "where": {
+    "lon": -123.029251,
+    "lat": 48.532066,
+    "precision": "region",
+    "label": "San Juan Islands"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

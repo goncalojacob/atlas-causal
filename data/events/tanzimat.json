@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "tanzimat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q330961",
+  "sitelinks": {
+    "count": 58,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Tanzimat",
+    "pt": "Tanzimat"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q330961"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tanzimat\", revision 1382063588"
+    }
+  ],
+  "title": "Tanzimat",
+  "summary": "The English Wikipedia article \"Tanzimat\", at revision 1382063588, opens: \"The Tanzimat was a period of reforms in the Ottoman Empire that began with the Edict of Gülhane of 1839 and ended with the First Constitutional Era in 1876. Driven by reformist statesmen such as Mustafa Reşid Pasha, Mehmed Emin Âli Pasha, and Fuad Pasha, under Sultans Abdul Mejid and Abdul Aziz, the reforms sought to reverse the empire's decline by modernizing legal, military, and administrative systems while promoting Ottomanism. Though the secular Nizamiye Courts, modern education, and infrastructure like railways, were introduced, the reforms faced resistance from conservative clerics, exacerbated ethnic tensions in the Balkans, and saddled the empire with crippling foreign debt. The Tanzimat's legacy remains contested: some historians credit it with establishing a powerful national government, while others argue it accelerated imperial fragmentation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q330961, imported by tools/import/wikidata.mjs. The item's own description reads \"Ottoman Empire reform period (1839–1876)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1839,
+    "end": 1876
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

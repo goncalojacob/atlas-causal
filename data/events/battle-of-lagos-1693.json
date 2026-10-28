@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-lagos-1693",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1164835",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Lagos (1693)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1164835"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lagos (1693)\", revision 1381880991"
+    }
+  ],
+  "title": "Battle of Lagos (1693)",
+  "summary": "The English Wikipedia article \"Battle of Lagos (1693)\", at revision 1381880991, opens: \"The Battle of Lagos was fought during the Nine Years' War on 27 June 1693, when a French fleet under Anne Hilarion de Tourville defeated an Anglo-Dutch fleet under George Rooke near Lagos Bay in Portugal. Rooke's squadron was protecting the Smyrna convoy, and it is by this name that the action is sometimes known.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1164835, imported by tools/import/wikidata.mjs. The item's own description reads \"1693 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1693,
+    "end": 1693,
+    "date": "1693-06-27"
+  },
+  "place": "portugal-q45",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "nine-years-war"
+}

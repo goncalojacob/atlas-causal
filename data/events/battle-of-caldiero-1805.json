@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-caldiero-1805",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q857434",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Caldiero (1805)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q857434"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Caldiero (1805)\", revision 1370435873"
+    }
+  ],
+  "title": "Battle of Caldiero (1805)",
+  "summary": "The English Wikipedia article \"Battle of Caldiero (1805)\", at revision 1370435873, opens: \"The Battle of Caldiero took place on 30 October 1805, pitting the French Armée d'Italie under Marshal André Masséna against an Austrian army under the command of Archduke Charles, Duke of Teschen. The French engaged only some of their forces, around 33,000 men, but Archduke Charles engaged the bulk of his army, 49,000 men, leaving out Paul Davidovich's corps to defend the lower Adige and Franz Seraph of Orsini-Rosenberg's corps to cover the Austrian right against any flanking maneuvers. The fighting took place at Caldiero, 15 kilometres (9.3 mi) east of Verona, during the War of the Third Coalition, part of the Napoleonic Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q857434, imported by tools/import/wikidata.mjs. The item's own description reads \"1805 battle during the War of the Third Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1805,
+    "end": 1805,
+    "date": "1805-10-30"
+  },
+  "place": "caldiero",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-third-coalition"
+}

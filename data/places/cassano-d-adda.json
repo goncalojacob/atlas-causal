@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "cassano-d-adda",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q42613",
+  "sitelinks": {
+    "count": 55,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Cassano d'Adda",
+    "pt": "Cassano d'Adda"
+  },
+  "sources": [],
+  "names": [
+    "Cassano d’Adda",
+    "Cassano d'Adda"
+  ],
+  "where": {
+    "lon": 9.5166666666667,
+    "lat": 45.533333333333,
+    "precision": "city",
+    "label": "Cassano d'Adda"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

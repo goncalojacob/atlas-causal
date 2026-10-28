@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-chiari",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q636007",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Chiari",
+    "pt": "Batalha de Chiari"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q636007"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chiari\", revision 1381290608"
+    }
+  ],
+  "title": "Battle of Chiari",
+  "summary": "The English Wikipedia article \"Battle of Chiari\", at revision 1381290608, opens: \"The Battle of Chiari was fought on 1 September 1701 during the War of the Spanish Succession. The engagement was part of Prince Eugene of Savoy's campaign to seize the Spanish controlled Duchy of Milan in the Italian peninsula, and had followed his victory over Marshal Catinat at the Battle of Carpi in July. Marshal Villeroi replaced Catinat as commander of the Franco–Spanish–Savoyard forces in the theatre, carrying with him orders from King Louis XIV to push the Imperialists out of Italy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q636007, imported by tools/import/wikidata.mjs. The item's own description reads \"1701 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1701,
+    "end": 1701,
+    "date": "1701-09-01"
+  },
+  "place": "chiari-lombardy",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

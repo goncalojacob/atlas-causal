@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "swedish-invasion-of-russia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3488959",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Swedish invasion of Russia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3488959"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Swedish invasion of Russia\", revision 1379631836"
+    }
+  ],
+  "title": "Swedish invasion of Russia",
+  "summary": "The English Wikipedia article \"Swedish invasion of Russia\", at revision 1379631836, opens: \"The Swedish invasion of Russia, also known as the Russian campaign, or Poltava campaign of Charles XII of Sweden, was undertaken from January 1708 to July 1709 during the Great Northern War. The campaign began with Charles's crossing of the Vistula on 1 January 1708, and effectively ended with the Swedish defeat in the Battle of Poltava on 8 July 1709, after which the Swedish surrender at Perevolochna occurred on 11 July 1709. Though Charles continued to pose a military threat to Russia for several years while under the protection of the Ottoman Empire, the 18-month campaign was a turning point in the overall war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3488959, imported by tools/import/wikidata.mjs. The item's own description reads \"campaign during the Great Northern War (1708–1709)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1708,
+    "end": 1709
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

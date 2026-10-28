@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-napue",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q694122",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Napue"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q694122"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Napue\", revision 1370451343"
+    }
+  ],
+  "title": "Battle of Napue",
+  "summary": "The English Wikipedia article \"Battle of Napue\", at revision 1370451343, opens: \"The Battle of Napue, the Battle of Isokyrö (Storkyro), or the Battle of Lappola was fought on 2 March [O.S. 19 February] 1714 at the villages of Napue and Laurola, located in the Isokyrö parish of the Swedish Empire. The battle took place between the Swedish Empire and the Tsardom of Russia and was the final land battle of the Finnish campaign in the Great Northern War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q694122, imported by tools/import/wikidata.mjs. The item's own description reads \"1714 battle in the Great Northern War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1714,
+    "end": 1714,
+    "date": "1714-03-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

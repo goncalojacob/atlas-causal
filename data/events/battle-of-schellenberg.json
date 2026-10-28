@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-schellenberg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q696945",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Schellenberg",
+    "pt": "Batalha de Schellenberg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q696945"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Schellenberg\", revision 1370588813"
+    }
+  ],
+  "title": "Battle of Schellenberg",
+  "summary": "The English Wikipedia article \"Battle of Schellenberg\", at revision 1370588813, opens: \"The Battle of Schellenberg took place on 2 July 1704 during the War of the Spanish Succession. The engagement was part of the Duke of Marlborough's campaign to save the Habsburg capital of Vienna from a threatened advance by King Louis XIV's Franco-Bavarian forces ranged in southern Germany. Marlborough had commenced his 250-mile (400 km) march from Bedburg, near Cologne, on 8 May; within five weeks he had linked his forces with those of the Margrave of Baden, before continuing on to the river Danube. Once in southern Germany, the Allies' task was to induce Maximilian II Emanuel, Elector of Bavaria, to abandon his allegiance to Louis XIV and rejoin the Grand Alliance; but to force the issue, the Allies first needed to secure a fortified bridgehead and magazine on the Danube, through which their supplies could cross to the south of the river into the heart of the Elector's lands. For this purpose, Marlborough selected the town of Donauwörth.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q696945, imported by tools/import/wikidata.mjs. The item's own description reads \"1704 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1704,
+    "end": 1704,
+    "date": "1704-07-02"
+  },
+  "place": "donauworth",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

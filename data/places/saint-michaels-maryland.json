@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "saint-michaels-maryland",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q753688",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Saint Michaels, Maryland",
+    "pt": "St. Michaels (Maryland)"
+  },
+  "sources": [],
+  "names": [
+    "Saint Michaels",
+    "St. Michaels",
+    "Saint Michaels, Maryland",
+    "St. Michaels (Maryland)"
+  ],
+  "where": {
+    "lon": -76.2222,
+    "lat": 38.7836,
+    "precision": "city",
+    "label": "Saint Michaels, Maryland"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

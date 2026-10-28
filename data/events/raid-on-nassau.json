@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "raid-on-nassau",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7283755",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Raid on Nassau"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7283755"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Raid on Nassau\", revision 1370705948"
+    }
+  ],
+  "title": "Raid on Nassau",
+  "summary": "The English Wikipedia article \"Raid on Nassau\", at revision 1370705948, opens: \"The Raid on Nassau, on the Bahamian island of New Providence, was a privately raised Franco-Spanish expedition against the English taking place in October 1703, during the War of the Spanish Succession. The Franco-Spanish victory leading to Nassau's brief occupation and then to its destruction. The joint Bourbon invasion was led by Blas Moreno Mondragón and Clause Le Chesnaye, with the attack focusing on Nassau, the capital of the English Bahamas, an important base of privateering for English corsairs in the Cuban and Saint Domingue's Caribbean seas. The town of Nassau was quickly taken and sacked, plundered and burnt down. The fort of Nassau was dismantled, and the English governor, with all the English soldiers were carried off prisoners. A year later, Sir Edward Birch, the new English governor, upon landing in Nassau, was so distraught at the ruin he found, that he returned to England after only a few months, without \"unfurling his company-issued commission\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7283755, imported by tools/import/wikidata.mjs. The item's own description reads \"1703 map of Nassau\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1703,
+    "end": 1703,
+    "date": "1703-10"
+  },
+  "place": "new-providence",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

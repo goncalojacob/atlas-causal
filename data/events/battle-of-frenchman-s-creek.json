@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-frenchman-s-creek",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1390639",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Frenchman's Creek"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1390639"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Frenchman's Creek\", revision 1381627170"
+    }
+  ],
+  "title": "Battle of Frenchman's Creek",
+  "summary": "The English Wikipedia article \"Battle of Frenchman's Creek\", at revision 1381627170, opens: \"The Battle of Frenchman's Creek took place during the War of 1812 between Great Britain and the United States in the early hours of November 28, 1812, in the Crown Colony of Upper Canada, near the Niagara River. The operation was conceived as a raid to prepare the ground for a larger American invasion. The Americans succeeded in crossing the Niagara and landing at both of their points of attack. They achieved one of their two objectives before withdrawing but the invasion was subsequently called off, rendering useless what had been accomplished. The engagement was named, \"the Battle of Frenchman's Creek\" by the Canadians, after the location of some of the severest fighting. To contemporary Americans, it was known as, \"the Affair opposite Black Rock\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1390639, imported by tools/import/wikidata.mjs. The item's own description reads \"battle of the War of 1812\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1812,
+    "end": 1812,
+    "date": "1812-11-28"
+  },
+  "place": "frenchman-s-creek",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-1812"
+}

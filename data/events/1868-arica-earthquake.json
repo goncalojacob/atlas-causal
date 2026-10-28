@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1868-arica-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3271607",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "1868 Arica earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3271607"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1868 Arica earthquake\", revision 1368537568"
+    }
+  ],
+  "title": "1868 Arica earthquake",
+  "summary": "The English Wikipedia article \"1868 Arica earthquake\", at revision 1368537568, opens: \"The 1868 Arica earthquake occurred on 13 August 1868, near Arica, then part of Peru, now part of Chile, at 21:30 UTC. It had an estimated magnitude between 8.8 and 9.1, although earlier studies suggested a broader range of 8.5–9.3. A tsunami in the Pacific Ocean was produced by the earthquake, which was recorded in Hawaii, Japan, Australia, and New Zealand.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3271607, imported by tools/import/wikidata.mjs. The item's own description reads \"1868 earthquake and tsunami centered near Arica, Peru (now Chile)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1868,
+    "date": "1868-08-13"
+  },
+  "place": "arica",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

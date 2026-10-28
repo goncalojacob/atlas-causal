@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anglo-mughal-war-1686-1690",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4122573",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Anglo-Mughal war (1686–1690)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4122573"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Mughal war (1686–1690)\", revision 1381453731"
+    }
+  ],
+  "title": "Anglo-Mughal war (1686–1690)",
+  "summary": "The English Wikipedia article \"Anglo-Mughal war (1686–1690)\", at revision 1381453731, opens: \"The Anglo-Mughal war, also known as the Child's War, was the first Anglo-Indian war on the Indian subcontinent.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4122573, imported by tools/import/wikidata.mjs. The item's own description reads \"first Anglo-Indian war on the Indian subcontinent\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1686,
+    "end": 1690,
+    "date": "1686-01",
+    "endDate": "1690-04"
+  },
+  "place": "indian-subcontinent",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

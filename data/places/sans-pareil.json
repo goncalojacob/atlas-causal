@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "sans-pareil",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q122572757",
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-10-27"
+  },
+  "sources": [],
+  "names": [
+    "Sans Pareil"
+  ],
+  "where": {
+    "lon": -81.4942545,
+    "lat": 30.2832965,
+    "precision": "city",
+    "label": "Sans Pareil"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

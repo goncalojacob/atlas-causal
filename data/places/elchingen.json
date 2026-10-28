@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "elchingen",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q503169",
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Elchingen",
+    "pt": "Elchingen"
+  },
+  "sources": [],
+  "names": [
+    "Elchingen"
+  ],
+  "where": {
+    "lon": 10.097777777778,
+    "lat": 48.451666666667,
+    "precision": "city",
+    "label": "Elchingen"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

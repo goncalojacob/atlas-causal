@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-dead-buffalo-lake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870853",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Dead Buffalo Lake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870853"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dead Buffalo Lake\", revision 1377280785"
+    }
+  ],
+  "title": "Battle of Dead Buffalo Lake",
+  "summary": "The English Wikipedia article \"Battle of Dead Buffalo Lake\", at revision 1377280785, opens: \"The Battle of Dead Buffalo Lake was a skirmish in July 1863 in Dakota Territory between United States army forces and Santee, Yankton, Yanktonai and Teton Sioux. The Sioux attempted to capture the pack train of the army and retired from the field when they were unsuccessful.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870853, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-07-26"
+  },
+  "place": "north-dakota",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "sioux-wars"
+}

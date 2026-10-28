@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "1835-1858-revolt-in-ottoman-tripolitania",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4554418",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "1835–1858 revolt in Ottoman Tripolitania"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4554418"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1835–1858 revolt in Ottoman Tripolitania\", revision 1370278137"
+    }
+  ],
+  "title": "1835–1858 revolt in Ottoman Tripolitania",
+  "summary": "The English Wikipedia article \"1835–1858 revolt in Ottoman Tripolitania\", at revision 1370278137, opens: \"The 1835–1858 revolt in Ottoman Tripolitania began at the end of the Karamanli rule, in which tribal leaders such as 'Abd al-Jalil and Ghuma al-Mahmudi revolted against central Ottoman rule, which ended after Ghuma's death in 1858.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4554418, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1858
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

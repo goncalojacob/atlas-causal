@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "burlingame-treaty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1016618",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Burlingame Treaty",
+    "pt": "Tratado de Burlingame"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1016618"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Burlingame Treaty\", revision 1381058312"
+    }
+  ],
+  "title": "Burlingame Treaty",
+  "summary": "The English Wikipedia article \"Burlingame Treaty\", at revision 1381058312, opens: \"The Burlingame Treaty, also known as the Burlingame–Seward Treaty of 1868, and formally titled the Sino-American Treaty of Peace, Amity, and Commerce, was a landmark treaty between the United States and Qing China, amending the Treaty of Tientsin, to establish formal friendly relations between the two nations, with the United States granting China the status of most favored nation with regard to trade. It was signed in the capital of the United States, Washington, D.C. in 1868 and ratified in the Chinese capital, Peking in 1869. The most significant result of the treaty was that it effectively lifted any former restrictions in regards to emigration to the United States from China, leading to large-scale immigration to the United States beginning in earnest by Chinese immigrants.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1016618, imported by tools/import/wikidata.mjs. The item's own description reads \"1868 landmark treaty between the United States and China's Qing government\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1868
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

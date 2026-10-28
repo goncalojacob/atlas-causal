@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "napoleon-s-planned-invasion-of-the-united-kingdom",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q729861",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Napoleon's planned invasion of the United Kingdom",
+    "pt": "Plano de invasão do Reino Unido por Napoleão"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q729861"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Napoleon's planned invasion of the United Kingdom\", revision 1381807580"
+    }
+  ],
+  "title": "Napoleon's planned invasion of the United Kingdom",
+  "summary": "The English Wikipedia article \"Napoleon's planned invasion of the United Kingdom\", at revision 1381807580, opens: \"Napoleon's planned invasion of the United Kingdom at the start of the War of the Third Coalition, although never carried out, was a major influence on British naval strategy and the fortification of the coast of South East England. In 1796 the French had already tried to invade Ireland in order to destabilise the United Kingdom or as a stepping-stone to Great Britain. The first French Army of England had gathered on the Channel coast in 1798, but an invasion of England was sidelined by Napoleon's concentration on the campaigns in Egypt and against Austria, and shelved in 1802 by the Peace of Amiens. Building on planning for mooted invasions under France's ancien régime in 1744, 1759, and 1779, preparations began again in earnest soon after the outbreak of war in 1803, and were finally called off in 1805, before the Battle of Trafalgar.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q729861, imported by tools/import/wikidata.mjs. The item's own description reads \"cancelled attempt to invade Britain during the Napoleonic Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1803,
+    "end": 1805
+  },
+  "place": "english-channel",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

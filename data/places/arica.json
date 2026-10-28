@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "arica",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2203",
+  "sitelinks": {
+    "count": 92,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Arica",
+    "pt": "Arica"
+  },
+  "sources": [],
+  "names": [
+    "Arica"
+  ],
+  "where": {
+    "lon": -70.32122222222222,
+    "lat": -18.47838888888889,
+    "precision": "city",
+    "label": "Arica"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

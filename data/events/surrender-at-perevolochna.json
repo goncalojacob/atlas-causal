@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "surrender-at-perevolochna",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2671292",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Surrender at Perevolochna"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2671292"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Surrender at Perevolochna\", revision 1370749050"
+    }
+  ],
+  "title": "Surrender at Perevolochna",
+  "summary": "The English Wikipedia article \"Surrender at Perevolochna\", at revision 1370749050, opens: \"The surrender at Perevolochna was the capitulation of almost the entire Swedish army on 30 June 1709 (O.S.) / 1 July 1709 / 11 July 1709 (N.S.). It signified the virtual annihilation of the once formidable Swedish army after the defeat at Battle of Poltava, and paved the way for the eventual Russian victory in the Great Northern War. After the Battle of Poltava, Charles XII escaped to Moldavia, a vassal state of the Ottoman Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2671292, imported by tools/import/wikidata.mjs. The item's own description reads \"capitulation of Swedish forces in 1709\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1709,
+    "end": 1709,
+    "date": "1709-07-01"
+  },
+  "place": "perevolochna",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": [],
+  "parent": "great-northern-war"
+}

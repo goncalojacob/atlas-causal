@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-nice-1705",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3485974",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Siege of Nice (1705)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3485974"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Nice (1705)\", revision 1370743998"
+    }
+  ],
+  "title": "Siege of Nice (1705)",
+  "summary": "The English Wikipedia article \"Siege of Nice (1705)\", at revision 1370743998, opens: \"The siege of Nice took place between 15 March 1705 and 4 January 1706 as part of the War of the Spanish Succession. It pitched the forces of Louis XIV of France against those of Victor Amadeus II of Savoy – the latter were led by the marquis of Caraglio.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3485974, imported by tools/import/wikidata.mjs. The item's own description reads \"1705 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1705,
+    "end": 1706,
+    "date": "1705-03-15",
+    "endDate": "1706-01-04"
+  },
+  "place": "nice",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

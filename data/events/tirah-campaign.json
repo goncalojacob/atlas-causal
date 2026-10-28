@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "tirah-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q17025641",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Tirah campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17025641"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tirah campaign\", revision 1373903205"
+    }
+  ],
+  "title": "Tirah campaign",
+  "summary": "The English Wikipedia article \"Tirah campaign\", at revision 1373903205, opens: \"The Tirah campaign, often referred to in contemporary British accounts as the Tirah expedition, was an Indian frontier campaign from September 1897 to April 1898. Tirah is a mountainous tract of country in what was formerly known as Federally Administered Tribal Areas of Pakistan, now Khyber Pakhtunkhwa province.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17025641, imported by tools/import/wikidata.mjs. The item's own description reads \"1897–98 frontier campaign in British India\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1897,
+    "end": 1898
+  },
+  "place": "british-raj-q129286",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

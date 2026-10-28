@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-helsingborg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q705409",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Battle of Helsingborg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q705409"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Helsingborg\", revision 1377861651"
+    }
+  ],
+  "title": "Battle of Helsingborg",
+  "summary": "The English Wikipedia article \"Battle of Helsingborg\", at revision 1377861651, opens: \"The Battle of Helsingborg was the last major engagement of the Great Northern War to take place on Swedish soil. It resulted in a decisive victory of a Swedish force of 14,000 men under the command of Magnus Stenbock against a Danish force of equal strength under the command of Jørgen Rantzau, ensuring that Denmark's final effort to regain the Scanian territories that it had lost to Sweden in 1658 failed. The battle was fought on 10 March 1710 (N.S.) in the province of Scania, just outside the city of Helsingborg, and directly on the Ringstorp heights just north-east of the city.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q705409, imported by tools/import/wikidata.mjs. The item's own description reads \"battle in Sweden 1710\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1710,
+    "end": 1710,
+    "date": "1710-03-10"
+  },
+  "place": "ringstorp",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

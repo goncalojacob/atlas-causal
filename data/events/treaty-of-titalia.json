@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-titalia",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-27",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7837260",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-27"
+  },
+  "wikipedia": {
+    "en": "Treaty of Titalia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837260"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Titalia\", revision 1361550907"
+    }
+  ],
+  "title": "Treaty of Titalia",
+  "summary": "The English Wikipedia article \"Treaty of Titalia\", at revision 1361550907, opens: \"The Treaty of Titalia was signed between the chogyal (monarch) of the Kingdom of Sikkim and the British East India Company (EIC). The treaty, which was negotiated by Captain Barre Latter in February 1817, guaranteed security of Sikkim by the British and returned Sikkimese land annexed by the Nepalese over the centuries. It followed the Anglo-Nepalese War, 1814–1816. In return, the British were given trading rights and rights of passage up to the Tibet frontier. The treaty was signed at Titalia, now known as Tetulia Upazila, in the Rangpur District of present-day Bangladesh. In the Gazette of Sikkim, 1894 by H.H. Risley, it was written that \"by the Treaty of Titalia, British India has assumed the position of Lord's paramount of Sikkim and a title to exercise a predominant influence in that State has remained undisputed.\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837260, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty between Chogyal (monarch) of Kingdom of Sikkim and the British East India Company\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1817,
+    "end": 1817,
+    "date": "1817-02-10"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}
