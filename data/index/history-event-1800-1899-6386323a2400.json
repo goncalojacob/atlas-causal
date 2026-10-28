@@ -2,6 +2,15 @@
   "from": 1800,
   "kind": "event",
   "records": {
+    "1804-haitian-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "1811-independence-movement": {
       "from": "git",
       "versions": [
@@ -907,6 +916,15 @@
         }
       ]
     },
+    "ansei-purge": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "apache-wars": {
       "from": "git",
       "versions": [
@@ -982,6 +1000,24 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "assassination-of-james-a-garfield": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "atlanta-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1268,6 +1304,15 @@
         }
       ]
     },
+    "battle-of-aladzha": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-alamana": {
       "from": "git",
       "versions": [
@@ -1367,6 +1412,15 @@
         }
       ]
     },
+    "battle-of-appomattox-court-house": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-arachova": {
       "from": "git",
       "versions": [
@@ -1400,6 +1454,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-assaye": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1571,6 +1634,15 @@
         }
       ]
     },
+    "battle-of-boyaca": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-bronkhorstspruit": {
       "from": "git",
       "versions": [
@@ -1639,6 +1711,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-camaron": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1750,6 +1831,24 @@
         }
       ]
     },
+    "battle-of-chapultepec": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-chickamauga": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-chillianwala": {
       "from": "git",
       "versions": [
@@ -1819,6 +1918,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-cold-harbor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2019,12 +2127,30 @@
         }
       ]
     },
+    "battle-of-five-forks": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-fort-dearborn": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-fort-donelson": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2055,12 +2181,30 @@
         }
       ]
     },
+    "battle-of-fort-sumter": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-fort-vredeburg": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-fredericksburg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3024,6 +3168,15 @@
         }
       ]
     },
+    "battle-of-nashville": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-nauplia-1822": {
       "from": "git",
       "versions": [
@@ -3213,6 +3366,15 @@
         }
       ]
     },
+    "battle-of-puebla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-pungdo": {
       "from": "git",
       "versions": [
@@ -3362,6 +3524,15 @@
         }
       ]
     },
+    "battle-of-san-jacinto": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-san-mateo-1814": {
       "from": "git",
       "versions": [
@@ -3440,6 +3611,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-seven-pines": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3579,6 +3759,15 @@
       ]
     },
     "battle-of-sphacteria-1825": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-spotsylvania-court-house": {
       "from": "git",
       "versions": [
         {
@@ -3872,7 +4061,25 @@
         }
       ]
     },
+    "battle-of-the-wilderness": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-the-yalu-river-1894": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-tippecanoe": {
       "from": "git",
       "versions": [
         {
@@ -4144,6 +4351,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-wilson-s-creek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4763,6 +4979,15 @@
         }
       ]
     },
+    "chattanooga-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "chichibu-incident": {
       "from": "git",
       "versions": [
@@ -4977,6 +5202,15 @@
       ]
     },
     "creole-mutiny": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "cretan-revolt-1866-1869": {
       "from": "git",
       "versions": [
         {
@@ -5579,6 +5813,15 @@
         }
       ]
     },
+    "first-battle-of-bull-run": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "first-battle-of-sacket-s-harbor": {
       "from": "git",
       "versions": [
@@ -6100,6 +6343,15 @@
         }
       ]
     },
+    "general-sherman-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "german-revolutions-of-1848-1849": {
       "from": "git",
       "versions": [
@@ -6261,6 +6513,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "grito-de-dolores": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -7002,6 +7263,15 @@
         }
       ]
     },
+    "massacres-of-diyarbekir-1895": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "mat-salleh-rebellion": {
       "from": "git",
       "versions": [
@@ -7188,6 +7458,24 @@
           "fields": [
             "parent"
           ],
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "mountain-meadows-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "mudan-incident": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
           "on": "2026-10-28"
         }
       ]
@@ -7594,6 +7882,15 @@
       ]
     },
     "pemmican-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "peninsula-campaign": {
       "from": "git",
       "versions": [
         {
@@ -8310,6 +8607,15 @@
         }
       ]
     },
+    "sand-creek-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "santhal-rebellion": {
       "from": "git",
       "versions": [
@@ -8403,6 +8709,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "second-battle-of-bull-run": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -9122,6 +9437,15 @@
         }
       ]
     },
+    "siege-of-petersburg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "siege-of-port-au-prince-1803": {
       "from": "git",
       "versions": [
@@ -9743,6 +10067,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "tophane-agreement": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -10683,6 +11016,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "vicksburg-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

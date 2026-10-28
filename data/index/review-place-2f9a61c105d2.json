@@ -3233,6 +3233,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "battle-ground-indiana",
+      "kind": "place",
+      "names": [
+        "Battle Ground",
+        "Battle Ground, Indiana",
+        "Battle Ground (Indiana)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "battle-of-chippawa-national-historic-site",
@@ -4980,7 +5009,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 2,
+      "degree": 3,
       "id": "boston",
       "kind": "place",
       "names": [
@@ -5040,6 +5069,34 @@
       "kind": "place",
       "names": [
         "Bouchain"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "boyaca-department",
+      "kind": "place",
+      "names": [
+        "Boyacá Department",
+        "Boiacá"
       ],
       "origin": {
         "tool": "wikidata"
@@ -7558,6 +7615,34 @@
       ],
       "created": "2026-10-28",
       "degree": 1,
+      "id": "chattanooga-tennessee",
+      "kind": "place",
+      "names": [
+        "Chattanooga",
+        "Chattanooga, Tennessee"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
       "id": "chaul",
       "kind": "place",
       "names": [
@@ -8394,7 +8479,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 3,
       "id": "colorado",
       "kind": "place",
       "names": [
@@ -10158,6 +10243,33 @@
       "names": [
         "Diu",
         "Diu, India"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "diyarbekir-vilayet",
+      "kind": "place",
+      "names": [
+        "Diyarbekir vilayet"
       ],
       "origin": {
         "tool": "wikidata"
@@ -12300,6 +12412,60 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "fort-donelson",
+      "kind": "place",
+      "names": [
+        "Fort Donelson"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "fort-duquesne",
+      "kind": "place",
+      "names": [
+        "Fort Duquesne"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -17529,7 +17695,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 33,
+      "degree": 35,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -22972,6 +23138,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "manassas-national-battlefield-park",
+      "kind": "place",
+      "names": [
+        "Manassas National Battlefield Park"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -24138,11 +24331,39 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "mexico-city",
+      "kind": "place",
+      "names": [
+        "Mexico City",
+        "Cidade do México"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "created": "2026-09-24",
-      "degree": 8,
+      "degree": 10,
       "id": "mexico-q96",
       "kind": "place",
       "names": [
@@ -26242,6 +26463,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "nashville-tennessee",
+      "kind": "place",
+      "names": [
+        "Nashville",
+        "Nashville, Tennessee"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "nashwaak-village-new-brunswick",
@@ -27002,6 +27251,33 @@
       "names": [
         "North Dakota",
         "Dakota do Norte"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "north-georgia",
+      "kind": "place",
+      "names": [
+        "North Georgia"
       ],
       "origin": {
         "tool": "wikidata"
@@ -28046,7 +28322,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 14,
+      "degree": 15,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -31122,7 +31398,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 2,
       "id": "quebec-city",
       "kind": "place",
       "names": [
@@ -36076,7 +36352,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 4,
       "id": "spotsylvania-county-virginia",
       "kind": "place",
       "names": [
@@ -37085,6 +37361,34 @@
       "kind": "place",
       "names": [
         "Tadla"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "taedong-river",
+      "kind": "place",
+      "names": [
+        "Taedong River",
+        "Rio Taedong"
       ],
       "origin": {
         "tool": "wikidata"
@@ -38540,6 +38844,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "tophane",
+      "kind": "place",
+      "names": [
+        "Tophane"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -39489,7 +39820,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 30,
+      "degree": 31,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -39538,6 +39869,34 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "upstate-new-york",
+      "kind": "place",
+      "names": [
+        "upstate New York",
+        "Interior do estado de Nova York"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -40133,7 +40492,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "vicksburg-mississippi",
       "kind": "place",
       "names": [
@@ -40254,6 +40613,60 @@
       "review": {
         "flags": [
           "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "virginia-peninsula",
+      "kind": "place",
+      "names": [
+        "Virginia Peninsula"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 2,
+      "id": "virginia-q1370",
+      "kind": "place",
+      "names": [
+        "Virginia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
         ],
         "status": "draft"
       },
@@ -40650,7 +41063,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 14,
+      "degree": 15,
       "id": "washington",
       "kind": "place",
       "names": [

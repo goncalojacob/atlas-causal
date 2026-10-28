@@ -635,6 +635,15 @@
         }
       ]
     },
+    "battle-of-haldighati": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-hansan-island": {
       "from": "git",
       "versions": [
@@ -768,6 +777,15 @@
       ]
     },
     "battle-of-khanwa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-komaki-and-nagakute": {
       "from": "git",
       "versions": [
         {

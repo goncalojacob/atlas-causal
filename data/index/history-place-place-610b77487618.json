@@ -1221,6 +1221,15 @@
         }
       ]
     },
+    "battle-ground-indiana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-chippawa-national-historic-site": {
       "from": "git",
       "versions": [
@@ -1974,6 +1983,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "boyaca-department": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3069,6 +3087,15 @@
         }
       ]
     },
+    "chattanooga-tennessee": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "chaul": {
       "from": "git",
       "versions": [
@@ -4154,6 +4181,15 @@
         }
       ]
     },
+    "diyarbekir-vilayet": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "djerba": {
       "from": "git",
       "versions": [
@@ -5092,6 +5128,24 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "fort-donelson": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "fort-duquesne": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -9464,6 +9518,15 @@
         }
       ]
     },
+    "manassas-national-battlefield-park": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "manaus": {
       "from": "git",
       "versions": [
@@ -9916,6 +9979,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "mexico-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -10766,6 +10838,15 @@
         }
       ]
     },
+    "nashville-tennessee": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "nashwaak-village-new-brunswick": {
       "from": "git",
       "versions": [
@@ -11124,6 +11205,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "north-georgia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -15390,6 +15480,15 @@
         }
       ]
     },
+    "taedong-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "tagarangabotte": {
       "from": "git",
       "versions": [
@@ -15964,6 +16063,15 @@
         }
       ]
     },
+    "tophane": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "tordesillas": {
       "from": "git",
       "versions": [
@@ -16381,6 +16489,15 @@
         }
       ]
     },
+    "upstate-new-york": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "uraba-choco": {
       "from": "git",
       "versions": [
@@ -16706,6 +16823,24 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "virginia-peninsula": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "virginia-q1370": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

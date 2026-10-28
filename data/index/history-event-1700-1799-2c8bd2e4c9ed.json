@@ -583,6 +583,15 @@
         }
       ]
     },
+    "battle-of-brandywine": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-brihuega": {
       "from": "git",
       "versions": [
@@ -1490,6 +1499,15 @@
         }
       ]
     },
+    "battle-of-monmouth": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-mount-tabor-1799": {
       "from": "git",
       "versions": [
@@ -2039,12 +2057,30 @@
         }
       ]
     },
+    "battle-of-the-monongahela": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-the-nile": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-the-plains-of-abraham": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2265,6 +2301,15 @@
       ]
     },
     "black-hole-of-calcutta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "boston-massacre": {
       "from": "git",
       "versions": [
         {
@@ -3814,6 +3859,15 @@
         }
       ]
     },
+    "saratoga-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "second-anglo-mysore-war": {
       "from": "git",
       "versions": [
@@ -5345,6 +5399,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "zong-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     }
