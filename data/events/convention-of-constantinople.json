@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "convention-of-constantinople",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q761454",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Convention of Constantinople",
+    "pt": "Convenção de Constantinopla"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q761454"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Convention of Constantinople\", revision 1364810987"
+    }
+  ],
+  "title": "Convention of Constantinople",
+  "summary": "The English Wikipedia article \"Convention of Constantinople\", at revision 1364810987, opens: \"The Convention of Constantinople is a treaty concerning the use of the Suez Canal in the Ottoman-ruled Khedivate of Egypt. It was signed on 29 October 1888 by the United Kingdom, the German Empire, Austria-Hungary, Spain, France, Italy, the Netherlands, the Russian Empire and the Ottoman Empire. The Khedivate of Egypt, through whose territory the Canal ran and to which all shares in the Suez Canal Company were due to revert when the company's 99-year lease to manage the canal expired, was not invited to participate in the negotiations and did not sign the treaty.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q761454, imported by tools/import/wikidata.mjs. The item's own description reads \"1888 convention\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1888,
+    "end": 1888
+  },
+  "place": "istanbul",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

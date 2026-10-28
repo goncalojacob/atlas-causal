@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-tenmokuzan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1113509",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Tenmokuzan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1113509"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tenmokuzan\", revision 1374265384"
+    }
+  ],
+  "title": "Battle of Tenmokuzan",
+  "summary": "The English Wikipedia article \"Battle of Tenmokuzan\", at revision 1374265384, opens: \"The 1582 Battle of Tenmokuzan  in Japan, is regarded as the last stand of the Takeda clan. This was the final attempt by Takeda Katsuyori to resist the forces of Oda Nobunaga, who had been campaigning against him for some time. In his bid to hide from his pursuers, Katsuyori burned his fortress at Shinpu Castle and fled into the mountains, to another Takeda stronghold, called Iwadono, held by Oyamada Nobushige, an old Takeda retainer. Katsuyori was denied entry by Oyamada, and committed suicide with his wife, while the last remnant of his army held off their pursuers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1113509, imported by tools/import/wikidata.mjs. The item's own description reads \"1582 battle of Tenmokuzan (天目山の戦い, Tenmokuzan no Tatakai) in Japan, also known as the Battle of Toriibata, is regarded as the last stand of the Takeda clan.\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1582,
+    "end": 1582,
+    "date": "1582-04-03"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

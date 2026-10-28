@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "anglo-mysore-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q617321",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Anglo-Mysore wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q617321"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Mysore wars\", revision 1371286250"
+    }
+  ],
+  "title": "Anglo-Mysore wars",
+  "summary": "The English Wikipedia article \"Anglo-Mysore wars\", at revision 1371286250, opens: \"The Anglo-Mysore wars were a series of four wars fought during the last three decades of the 18th century between the Sultanate of Mysore on the one hand, and the British East India Company, Maratha Empire, Kingdom of Travancore, and the Kingdom of Hyderabad on the other. Hyder Ali and his succeeding son Tipu Sultan fought the wars on four fronts: with the British attacking from the west, south and east and the Nizam's forces attacking from the north. The fourth war resulted in the overthrow of the house of Hyder Ali and Tipu, and the dismantlement of Mysore to the benefit of the East India Company, which took control of much of the Indian subcontinent.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q617321, imported by tools/import/wikidata.mjs. The item's own description reads \"18th century wars between Mysore (Hyder Ali and Tipu sultan) and British\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1767,
+    "end": 1799
+  },
+  "place": "south-india",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

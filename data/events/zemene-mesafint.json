@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zemene-mesafint",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q189297",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Zemene Mesafint"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q189297"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Zemene Mesafint\", revision 1374726554"
+    }
+  ],
+  "title": "Zemene Mesafint",
+  "summary": "The English Wikipedia article \"Zemene Mesafint\", at revision 1374726554, opens: \"The Zemene Mesafint variously translated \"Era of Judges\", \"Era of the Princes\", \"Age of Princes\", etc.; taken from the biblical Book of Judges) was a period in Ethiopian history between the mid-18th and mid-19th centuries when the country was de facto divided within itself into several regions with no effective central authority. It was a period in which the Emperors from the Solomonic dynasty were reduced to little more than figureheads confined to the capital city of Gondar. For the most part, the regional lords were tightly related by marriage and constituted a stable ruling elite that prevailed until the mid 20th century. The period also saw the weakening of Ethiopian territorial integrity in the north with the encroachment of the Ottoman Empire in the Ethiopian-Ottoman border conflict along with a renewal of diplomatic relations with Christian Europe after the isolationist Gondarine period and the expansion of the Shewan kingdom into the territory of the southern Oromo. The most powerful lords during the Zemene Mesafint were Ras Mikael Sehul of Tigre and later the Warra Seh Dynasty who included Ras Ali I, Ras Aligaz, Ras Gugsa and Ras Ali II based in Yejju, a region in Wollo. The most powerful lords such as Ras Ali and Ras Gugsa were members of the Warra Sheikh, a dynasty that were made up of former Muslims from Wollo. Other regional lords included Kenfu Hailu of Gondar, Ras Hailu Yosedeq of Gojjam, Sabagadis Woldu of Tigre, Ras Wolde Selassie of Tigre, Wube Haile Mariam of Simien, Ras Dullu of Menz and provincial king Sahle Selassie of Shewa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q189297, imported by tools/import/wikidata.mjs. The item's own description reads \"1769–1855 period of Ethiopian history\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1769,
+    "end": 1855,
+    "date": "1769-05-07",
+    "endDate": "1855-02-11"
+  },
+  "place": "ethiopian-empire",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

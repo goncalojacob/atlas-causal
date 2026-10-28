@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "tulip-period",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1343901",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Tulip Period",
+    "pt": "Era das Tulipas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1343901"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tulip Period\", revision 1381820612"
+    }
+  ],
+  "title": "Tulip Period",
+  "summary": "The English Wikipedia article \"Tulip Period\", at revision 1381820612, opens: \"The Tulip Period, or Tulip Era, is a period in Ottoman history from the Treaty of Passarowitz on 21 July 1718 to the Patrona Halil Revolt on 28 September 1730. This was a relatively peaceful period, during which the Ottoman Empire began to orient itself outwards.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1343901, imported by tools/import/wikidata.mjs. The item's own description reads \"periodization\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1718,
+    "end": 1730
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

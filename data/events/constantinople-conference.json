@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "constantinople-conference",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q699400",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Constantinople Conference",
+    "pt": "Conferência de Constantinopla"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q699400"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Constantinople Conference\", revision 1360549379"
+    }
+  ],
+  "title": "Constantinople Conference",
+  "summary": "The English Wikipedia article \"Constantinople Conference\", at revision 1360549379, opens: \"The 1876–77 Constantinople Conference of the Great Powers was held in Constantinople from 23 December 1876 until 20 January 1877. Following the beginning of the Herzegovinian Uprising in 1875 and the April Uprising in April 1876, the Great Powers agreed on a project for political reforms in Bosnia and in the Ottoman territories with a majority-Bulgarian population. The Ottoman Empire refused the proposed reforms, leading to the Russo-Turkish War a few months later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q699400, imported by tools/import/wikidata.mjs. The item's own description reads \"1876–77 conference of the Great Powers\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1877,
+    "date": "1876-12-23",
+    "endDate": "1877-01-20"
+  },
+  "place": "istanbul",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

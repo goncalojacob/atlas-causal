@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "koprulu-era",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2745668",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Köprülü era"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2745668"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Köprülü era\", revision 1318794179"
+    }
+  ],
+  "title": "Köprülü era",
+  "summary": "The English Wikipedia article \"Köprülü era\", at revision 1318794179, opens: \"The Köprülü era was a period in which the Ottoman Empire's politics were frequently dominated by a series of grand viziers from the Köprülü family. The Köprülü era is sometimes more narrowly defined as the period from 1656 to 1683, as it was during those years that members of the family held the office of grand vizier uninterruptedly, while for the remainder of the period they occupied it only sporadically.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2745668, imported by tools/import/wikidata.mjs. The item's own description reads \"the period in which the Ottoman Empire's politics were set by the Grand Viziers, mainly the Köprülü family\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1656,
+    "end": 1703
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

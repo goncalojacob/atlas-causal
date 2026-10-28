@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-gallipoli-1416",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q30600045",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Gallipoli (1416)",
+    "pt": "Batalha de Galípoli (1416)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q30600045"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gallipoli (1416)\", revision 1379891125"
+    }
+  ],
+  "title": "Battle of Gallipoli (1416)",
+  "summary": "The English Wikipedia article \"Battle of Gallipoli (1416)\", at revision 1379891125, opens: \"The Battle of Gallipoli occurred on 29 May 1416 between the fleets of the Republic of Venice and the Ottoman Empire off the port city of Gallipoli, the main Ottoman naval base. The battle was the main episode of a brief conflict between the two powers, resulting from Ottoman attacks against possessions and shipping of the Venetians and their allies in the Aegean Sea in 1414–1415. The Venetian fleet, under Pietro Loredan, was charged with transporting a Venetian embassy to the Ottoman sultan, but was authorized to attack if the Ottomans refused to negotiate. The subsequent events are known chiefly from a detailed letter written by Loredan after the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q30600045, imported by tools/import/wikidata.mjs. The item's own description reads \"1416 battle between Venice and the Ottoman Sultanate; upset Venetian victory\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1416,
+    "end": 1416,
+    "date": "1416-05-29"
+  },
+  "place": "gallipoli",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
