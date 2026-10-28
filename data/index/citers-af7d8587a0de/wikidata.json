@@ -3008,6 +3008,12 @@
     },
     {
       "dissent": false,
+      "id": "akkerman-convention",
+      "kind": "event",
+      "locator": "Q1993653"
+    },
+    {
+      "dissent": false,
       "id": "akure-benin-war",
       "kind": "event",
       "locator": "Q123171269"
@@ -5768,6 +5774,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-koniggratz",
+      "kind": "event",
+      "locator": "Q154942"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-konna",
       "kind": "event",
       "locator": "Q3018708"
@@ -8498,6 +8510,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-zenta",
+      "kind": "event",
+      "locator": "Q517486"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-zusmarshausen",
       "kind": "event",
       "locator": "Q519818"
@@ -10562,6 +10580,12 @@
     },
     {
       "dissent": false,
+      "id": "expedition-of-the-thousand",
+      "kind": "event",
+      "locator": "Q228284"
+    },
+    {
+      "dissent": false,
       "id": "expedition-to-mostaganem-1558",
       "kind": "event",
       "locator": "Q5420962"
@@ -10922,6 +10946,12 @@
     },
     {
       "dissent": false,
+      "id": "first-italian-war-of-independence",
+      "kind": "event",
+      "locator": "Q920894"
+    },
+    {
+      "dissent": false,
       "id": "first-italo-ethiopian-war",
       "kind": "event",
       "locator": "Q989115"
@@ -10994,6 +11024,12 @@
     },
     {
       "dissent": false,
+      "id": "first-schleswig-war",
+      "kind": "event",
+      "locator": "Q685683"
+    },
+    {
+      "dissent": false,
       "id": "first-serbian-uprising",
       "kind": "event",
       "locator": "Q368689"
@@ -11039,6 +11075,12 @@
       "id": "first-vienna-award",
       "kind": "event",
       "locator": "Q126604"
+    },
+    {
+      "dissent": false,
+      "id": "five-days-of-milan",
+      "kind": "event",
+      "locator": "Q623164"
     },
     {
       "dissent": false,
@@ -11681,6 +11723,12 @@
       "id": "havana-presidential-palace-attack-1957",
       "kind": "event",
       "locator": "Q57729352"
+    },
+    {
+      "dissent": false,
+      "id": "hawaiian-rebellions-1887-1895",
+      "kind": "event",
+      "locator": "Q5684567"
     },
     {
       "dissent": false,
@@ -14144,6 +14192,12 @@
     },
     {
       "dissent": false,
+      "id": "peace-of-ryswick",
+      "kind": "event",
+      "locator": "Q164393"
+    },
+    {
+      "dissent": false,
       "id": "peace-of-utrecht",
       "kind": "event",
       "locator": "Q154674"
@@ -15038,6 +15092,12 @@
     },
     {
       "dissent": false,
+      "id": "romanian-war-of-independence",
+      "kind": "event",
+      "locator": "Q3778687"
+    },
+    {
+      "dissent": false,
       "id": "rome-statute-of-the-international-criminal-court",
       "kind": "event",
       "locator": "Q838958"
@@ -15134,9 +15194,21 @@
     },
     {
       "dissent": false,
+      "id": "russo-turkish-war-1710-1713",
+      "kind": "event",
+      "locator": "Q846708"
+    },
+    {
+      "dissent": false,
       "id": "russo-turkish-war-1735-1739",
       "kind": "event",
       "locator": "Q638587"
+    },
+    {
+      "dissent": false,
+      "id": "russo-turkish-war-1787-1792",
+      "kind": "event",
+      "locator": "Q123210"
     },
     {
       "dissent": false,
@@ -15620,6 +15692,12 @@
     },
     {
       "dissent": false,
+      "id": "second-serbian-uprising",
+      "kind": "event",
+      "locator": "Q243585"
+    },
+    {
+      "dissent": false,
       "id": "second-siege-of-callao",
       "kind": "event",
       "locator": "Q6123901"
@@ -15707,6 +15785,12 @@
       "id": "september-massacres",
       "kind": "event",
       "locator": "Q862586"
+    },
+    {
+      "dissent": false,
+      "id": "serbo-bulgarian-war",
+      "kind": "event",
+      "locator": "Q740791"
     },
     {
       "dissent": false,
@@ -16751,6 +16835,12 @@
       "id": "siege-of-oran-1700-1701",
       "kind": "event",
       "locator": "Q138543459"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-orleans-1428-1429",
+      "kind": "event",
+      "locator": "Q392213"
     },
     {
       "dissent": false,
@@ -17834,6 +17924,12 @@
     },
     {
       "dissent": false,
+      "id": "thirteen-years-war-1454-1466",
+      "kind": "event",
+      "locator": "Q315921"
+    },
+    {
+      "dissent": false,
       "id": "thirty-years-war",
       "kind": "event",
       "locator": "Q2487"
@@ -18014,6 +18110,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-aix-la-chapelle-1668",
+      "kind": "event",
+      "locator": "Q327270"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-aix-la-chapelle-1748",
       "kind": "event",
       "locator": "Q156086"
@@ -18083,6 +18185,12 @@
       "id": "treaty-of-batticaloa",
       "kind": "event",
       "locator": "Q17035539"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-belgrade",
+      "kind": "event",
+      "locator": "Q11821309"
     },
     {
       "dissent": false,
@@ -18194,6 +18302,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-fontainebleau-1814",
+      "kind": "event",
+      "locator": "Q690989"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-fort-clark",
       "kind": "event",
       "locator": "Q7837052"
@@ -18266,6 +18380,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-fredrikshamn",
+      "kind": "event",
+      "locator": "Q1130792"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-friendship-and-alliance",
       "kind": "event",
       "locator": "Q7837073"
@@ -18287,6 +18407,12 @@
       "id": "treaty-of-gandamak",
       "kind": "event",
       "locator": "Q259430"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-georgievsk",
+      "kind": "event",
+      "locator": "Q525997"
     },
     {
       "dissent": false,
@@ -18377,6 +18503,12 @@
       "id": "treaty-of-indian-springs-1825",
       "kind": "event",
       "locator": "Q28433149"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-jassy",
+      "kind": "event",
+      "locator": "Q122442"
     },
     {
       "dissent": false,
@@ -18560,6 +18692,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-oliva",
+      "kind": "event",
+      "locator": "Q17335"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-paris",
       "kind": "event",
       "locator": "Q724496"
@@ -18635,6 +18773,12 @@
       "id": "treaty-of-rapallo",
       "kind": "event",
       "locator": "Q155796"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-rastatt",
+      "kind": "event",
+      "locator": "Q163236"
     },
     {
       "dissent": false,
@@ -18761,6 +18905,12 @@
       "id": "treaty-of-st-mary-s-1818",
       "kind": "event",
       "locator": "Q17035574"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-stolbovo",
+      "kind": "event",
+      "locator": "Q928848"
     },
     {
       "dissent": false,
@@ -19031,6 +19181,12 @@
       "id": "twelve-day-war",
       "kind": "event",
       "locator": "Q134900605, P31 Q198"
+    },
+    {
+      "dissent": false,
+      "id": "tzeltal-rebellion-of-1712",
+      "kind": "event",
+      "locator": "Q6102356"
     },
     {
       "dissent": false,

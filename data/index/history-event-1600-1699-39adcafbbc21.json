@@ -1761,6 +1761,15 @@
         }
       ]
     },
+    "battle-of-zenta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-zusmarshausen": {
       "from": "git",
       "versions": [
@@ -2749,6 +2758,15 @@
             "sources"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "peace-of-ryswick": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4121,6 +4139,15 @@
         }
       ]
     },
+    "treaty-of-aix-la-chapelle-1668": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-bongaya": {
       "from": "git",
       "versions": [
@@ -4193,6 +4220,15 @@
         }
       ]
     },
+    "treaty-of-oliva": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-purandar-1665": {
       "from": "git",
       "versions": [
@@ -4208,6 +4244,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "treaty-of-stolbovo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

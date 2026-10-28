@@ -3607,12 +3607,30 @@
         }
       ]
     },
+    "russo-turkish-war-1710-1713": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "russo-turkish-war-1735-1739": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "russo-turkish-war-1787-1792": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4559,6 +4577,15 @@
         }
       ]
     },
+    "treaty-of-belgrade": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-big-tree": {
       "from": "git",
       "versions": [
@@ -4647,6 +4674,15 @@
         }
       ]
     },
+    "treaty-of-georgievsk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-giyanti": {
       "from": "git",
       "versions": [
@@ -4684,6 +4720,15 @@
       ]
     },
     "treaty-of-hopewell": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-jassy": {
       "from": "git",
       "versions": [
         {
@@ -4773,6 +4818,15 @@
         }
       ]
     },
+    "treaty-of-rastatt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-resht": {
       "from": "git",
       "versions": [
@@ -4824,6 +4878,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "tzeltal-rebellion-of-1712": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

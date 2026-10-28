@@ -311,6 +311,15 @@
         }
       ]
     },
+    "siege-of-orleans-1428-1429": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "siege-of-tangier-1463-1464": {
       "from": "git",
       "versions": [
@@ -382,6 +391,15 @@
             "parent"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "thirteen-years-war-1454-1466": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
