@@ -208,7 +208,7 @@ test('a label over a line and a label over a mark both keep paper between the le
     // holding off, whether or not the rectangles overlap. The assertions
     // underneath are the ones this test always made, and the same widening of
     // *where a test looks* is what the halo's own zoom took at line 140.
-    const behind = await page.eval(`
+    const BEHIND = `
       const svg = document.querySelector('svg.graph');
       const inside = (r, p) => p.x >= r.left && p.x <= r.right && p.y >= r.top && p.y <= r.bottom;
       const onScreen = (el, p) => {
@@ -241,7 +241,40 @@ test('a label over a line and a label over a mark both keep paper between the le
           x: r.left, y: r.top, w: r.width, h: r.height,
         });
       }
-      return out;`);
+      return out;`;
+
+    // **Which labels the picture names depends on the zoom, and so does what
+    // is behind them.** The world view names the heaviest few dozen events
+    // and writes each beside its mark, clear of the lines (M77); at 3,686
+    // records it named 36 and not one sat over an edge, while a step or two
+    // in, where more names appear, a dozen did. Whether the world view holds
+    // a label over a line is the same coincidence of the corpus as the mark
+    // above, and widening the reach cannot find what is not there. So the
+    // case is looked for the way a reader would find it: from the world view,
+    // one wheel step at a time towards the middle, until the picture has one.
+    // The assertions on it are unchanged, and the halo is the same width at
+    // every zoom (the test above), so the zoom it is found at does not change
+    // what it shows.
+    const behindAt = async (kind) => {
+      await page.eval(WORLD);
+      await waitFor(page, DRAWN, 'the world view');
+      for (let step = 0; step < 8; step += 1) {
+        // eslint-disable-next-line no-await-in-loop
+        const all = await page.eval(BEHIND);
+        const found = all.filter((b) => b[kind]);
+        if (found.length > 0) return found;
+        // eslint-disable-next-line no-await-in-loop
+        await page.eval(`
+          document.querySelector('svg.graph').dispatchEvent(new WheelEvent('wheel', {
+            bubbles: true, cancelable: true, deltaY: -120, clientX: 640, clientY: 400,
+          }));
+          return true;`);
+        // eslint-disable-next-line no-await-in-loop
+        await waitFor(page, DRAWN, 'something named after a step in');
+      }
+      return [];
+    };
+
 
     // What is drawn under a label's box is read off the geometry, and whether
     // there is cobalt *ink* inside it is read off the picture: a line that
@@ -276,10 +309,8 @@ test('a label over a line and a label over a mark both keep paper between the le
       return { letters, lines, touching };
     };
 
-    for (const [what, candidates] of [
-      ['a line', behind.filter((b) => b.edge)],
-      ['a mark', behind.filter((b) => b.mark)],
-    ]) {
+    for (const [what, kind] of [['a line', 'edge'], ['a mark', 'mark']]) {
+      const candidates = await behindAt(kind);
       assert.ok(candidates.length > 0, `a label is drawn over ${what}`);
       let found = null;
       for (const box of candidates) {
