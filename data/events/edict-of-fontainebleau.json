@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "edict-of-fontainebleau",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q512443",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Edict of Fontainebleau",
+    "pt": "Édito de Fontainebleau"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q512443"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Edict of Fontainebleau\", revision 1362951211"
+    }
+  ],
+  "title": "Edict of Fontainebleau",
+  "summary": "The English Wikipedia article \"Edict of Fontainebleau\", at revision 1362951211, opens: \"The Edict of Fontainebleau, also known as the Revocation of the Edict of Nantes, was an edict issued by King Louis XIV of France, repealing the rights and freedoms afforded to the Huguenots and all non-catholic religions. The Edict of Nantes (1598) had granted Huguenots the right to practice their religion without state persecution. Protestants had lost their independence in places of refuge under Cardinal Richelieu on account of their supposed insubordination, but they continued to live in comparative security and political ease prior to the edict. From the outset, religious tolerance in France had been a royal, rather than popular, policy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q512443, imported by tools/import/wikidata.mjs. The item's own description reads \"1685 French decree\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1685,
+    "end": 1685,
+    "date": "1685-10-18"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "law",
+  "actors": []
+}
