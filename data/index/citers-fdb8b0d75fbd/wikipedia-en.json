@@ -10208,6 +10208,12 @@
     },
     {
       "dissent": false,
+      "id": "1733-slave-insurrection-on-st-john",
+      "kind": "event",
+      "locator": "\"1733 slave insurrection on St. John\", revision 1378560675"
+    },
+    {
+      "dissent": false,
       "id": "1755-lisbon-earthquake",
       "kind": "event",
       "locator": "\"1755 Lisbon earthquake\", revision 1378145316"
@@ -10223,6 +10229,12 @@
       "id": "1786-kangding-luding-earthquake",
       "kind": "event",
       "locator": "\"1786 Kangding-Luding earthquake\", revision 1366163774"
+    },
+    {
+      "dissent": false,
+      "id": "1793-philadelphia-yellow-fever-epidemic",
+      "kind": "event",
+      "locator": "\"1793 Philadelphia yellow fever epidemic\", revision 1376410851"
     },
     {
       "dissent": false,
@@ -11879,6 +11891,12 @@
       "id": "banjarmasin-war",
       "kind": "event",
       "locator": "\"Banjarmasin War\", revision 1380699460"
+    },
+    {
+      "dissent": false,
+      "id": "bank-war",
+      "kind": "event",
+      "locator": "\"Bank War\", revision 1370750324"
     },
     {
       "dissent": false,
@@ -16790,6 +16808,12 @@
     },
     {
       "dissent": false,
+      "id": "berbice-rebellion",
+      "kind": "event",
+      "locator": "\"Berbice Rebellion\", revision 1375139297"
+    },
+    {
+      "dissent": false,
       "id": "berlin-conference",
       "kind": "event",
       "locator": "\"Berlin Conference\", revision 1369494326"
@@ -16982,6 +17006,12 @@
     },
     {
       "dissent": false,
+      "id": "boundary-treaty-of-1881-between-chile-and-argentina",
+      "kind": "event",
+      "locator": "\"Boundary Treaty of 1881 between Chile and Argentina\", revision 1369960064"
+    },
+    {
+      "dissent": false,
       "id": "bowring-treaty",
       "kind": "event",
       "locator": "\"Bowring Treaty\", revision 1363118028"
@@ -17126,6 +17156,12 @@
     },
     {
       "dissent": false,
+      "id": "bussa-s-rebellion",
+      "kind": "event",
+      "locator": "\"Bussa's rebellion\", revision 1370607153"
+    },
+    {
+      "dissent": false,
       "id": "c-nar-incident",
       "kind": "event",
       "locator": "\"Çınar incident\", revision 1366216392"
@@ -17207,6 +17243,12 @@
       "id": "campaign-of-tlemcen-1557",
       "kind": "event",
       "locator": "\"Campaign of Tlemcen (1557)\", revision 1370607753"
+    },
+    {
+      "dissent": false,
+      "id": "canadian-american-reciprocity-treaty",
+      "kind": "event",
+      "locator": "\"Canadian–American Reciprocity Treaty\", revision 1366363656"
     },
     {
       "dissent": false,
@@ -17591,6 +17633,12 @@
       "id": "chickasaw-wars",
       "kind": "event",
       "locator": "\"Chickasaw Wars\", revision 1370611063"
+    },
+    {
+      "dissent": false,
+      "id": "chilean-civil-war-of-1829-1830",
+      "kind": "event",
+      "locator": "\"Chilean Civil War of 1829–1830\", revision 1370611072"
     },
     {
       "dissent": false,
@@ -18104,6 +18152,12 @@
     },
     {
       "dissent": false,
+      "id": "curacao-slave-revolt-of-1795",
+      "kind": "event",
+      "locator": "\"Curaçao Slave Revolt of 1795\", revision 1366236510"
+    },
+    {
+      "dissent": false,
       "id": "cyprus-convention",
       "kind": "event",
       "locator": "\"Cyprus Convention\", revision 1359144286"
@@ -18221,6 +18275,12 @@
       "id": "dervish-war",
       "kind": "event",
       "locator": "\"Dervish War\", revision 1380464956"
+    },
+    {
+      "dissent": false,
+      "id": "desert-campaign-1833-1834",
+      "kind": "event",
+      "locator": "\"Desert Campaign (1833–1834)\", revision 1374606403"
     },
     {
       "dissent": false,
@@ -18419,6 +18479,12 @@
       "id": "eastern-front",
       "kind": "event",
       "locator": "\"Eastern Front (World War II)\", revision 1373107377"
+    },
+    {
+      "dissent": false,
+      "id": "ecuadorian-peruvian-war-1857-1860",
+      "kind": "event",
+      "locator": "\"Ecuadorian–Peruvian War (1857–1860)\", revision 1370616589"
     },
     {
       "dissent": false,
@@ -18716,6 +18782,18 @@
     },
     {
       "dissent": false,
+      "id": "federal-pact",
+      "kind": "event",
+      "locator": "\"Federal Pact\", revision 1297824429"
+    },
+    {
+      "dissent": false,
+      "id": "federalist-revolution",
+      "kind": "event",
+      "locator": "\"Federalist Revolution\", revision 1371883583"
+    },
+    {
+      "dissent": false,
       "id": "fete-de-la-federation",
       "kind": "event",
       "locator": "\"Fête de la Fédération\", revision 1369393792"
@@ -18887,6 +18965,12 @@
       "id": "first-boer-war",
       "kind": "event",
       "locator": "\"First Boer War\", revision 1379911011"
+    },
+    {
+      "dissent": false,
+      "id": "first-carib-war",
+      "kind": "event",
+      "locator": "\"First Carib War\", revision 1379433357"
     },
     {
       "dissent": false,
@@ -20051,6 +20135,12 @@
       "id": "invasion-of-south-georgia",
       "kind": "event",
       "locator": "\"Invasion of South Georgia\", revision 1375909832"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-surinam-1804",
+      "kind": "event",
+      "locator": "\"Invasion of Surinam (1804)\", revision 1380712360"
     },
     {
       "dissent": false,
@@ -21392,6 +21482,12 @@
     },
     {
       "dissent": false,
+      "id": "northern-cheyenne-exodus",
+      "kind": "event",
+      "locator": "\"Northern Cheyenne Exodus\", revision 1378702285"
+    },
+    {
+      "dissent": false,
       "id": "northern-expedition-taiping-rebellion",
       "kind": "event",
       "locator": "\"Northern Expedition (Taiping Rebellion)\", revision 1379010068"
@@ -21974,6 +22070,12 @@
     },
     {
       "dissent": false,
+      "id": "pemmican-war",
+      "kind": "event",
+      "locator": "\"Pemmican War\", revision 1376708778"
+    },
+    {
+      "dissent": false,
       "id": "peninsular-war",
       "kind": "event",
       "locator": "\"Peninsular War\", revision 1370787208"
@@ -22022,6 +22124,12 @@
     },
     {
       "dissent": false,
+      "id": "peruvian-civil-war-of-1894-1895",
+      "kind": "event",
+      "locator": "\"Peruvian Civil War of 1894–1895\", revision 1375447519"
+    },
+    {
+      "dissent": false,
       "id": "peruvian-war-of-independence",
       "kind": "event",
       "locator": "\"Peruvian War of Independence\", revision 1375180136, first sentence: \"was a series of military conflicts in Peru from 1809 to 1826\""
@@ -22031,6 +22139,12 @@
       "id": "pescadores-campaign-1895",
       "kind": "event",
       "locator": "\"Pescadores campaign (1895)\", revision 1370704080"
+    },
+    {
+      "dissent": false,
+      "id": "peshtigo-fire",
+      "kind": "event",
+      "locator": "\"Peshtigo fire\", revision 1382185895"
     },
     {
       "dissent": false,
@@ -22688,6 +22802,12 @@
     },
     {
       "dissent": false,
+      "id": "revolution-of-the-park",
+      "kind": "event",
+      "locator": "\"Revolution of the Park\", revision 1370707039"
+    },
+    {
+      "dissent": false,
       "id": "revolution-of-the-reforms",
       "kind": "event",
       "locator": "\"Revolution of the Reforms\", revision 1370831522"
@@ -23150,6 +23270,12 @@
     },
     {
       "dissent": false,
+      "id": "second-carib-war",
+      "kind": "event",
+      "locator": "\"Second Carib War\", revision 1366237420"
+    },
+    {
+      "dissent": false,
       "id": "second-choshu-expedition",
       "kind": "event",
       "locator": "\"Second Chōshū expedition\", revision 1370736913"
@@ -23225,6 +23351,12 @@
       "id": "second-madagascar-expedition",
       "kind": "event",
       "locator": "\"Second Madagascar expedition\", revision 1370737123"
+    },
+    {
+      "dissent": false,
+      "id": "second-maroon-war",
+      "kind": "event",
+      "locator": "\"Second Maroon War\", revision 1370737144"
     },
     {
       "dissent": false,
@@ -25052,6 +25184,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-reconquest-of-new-granada",
+      "kind": "event",
+      "locator": "\"Spanish reconquest of New Granada\", revision 1381492299"
+    },
+    {
+      "dissent": false,
       "id": "spanish-revolution",
       "kind": "event",
       "locator": "\"Spanish Revolution of 1936\", revision 1369913897"
@@ -25193,6 +25331,12 @@
       "id": "swedish-war-of-liberation",
       "kind": "event",
       "locator": "\"Swedish War of Liberation\", revision 1377646453"
+    },
+    {
+      "dissent": false,
+      "id": "tacky-s-revolt",
+      "kind": "event",
+      "locator": "\"Tacky's Revolt\", revision 1371437297"
     },
     {
       "dissent": false,
@@ -25826,6 +25970,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-ancon",
+      "kind": "event",
+      "locator": "\"Treaty of Ancón\", revision 1381181794"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-aynal-kavak",
       "kind": "event",
       "locator": "\"Treaty of Aynalıkavak\", revision 1327240348"
@@ -25886,6 +26036,30 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-cahuenga",
+      "kind": "event",
+      "locator": "\"Treaty of Cahuenga\", revision 1370223376"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-canandaigua",
+      "kind": "event",
+      "locator": "\"Treaty of Canandaigua\", revision 1381466447"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-chicago",
+      "kind": "event",
+      "locator": "\"Treaty of Chicago\", revision 1376051576"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-concordia",
+      "kind": "event",
+      "locator": "\"Treaty of Concordia\", revision 1353980309"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-constantinople-1590",
       "kind": "event",
       "locator": "\"Treaty of Constantinople (1590)\", revision 1348806793"
@@ -25895,6 +26069,12 @@
       "id": "treaty-of-cordoba",
       "kind": "event",
       "locator": "\"Treaty of Córdoba\", revision 1361966330"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-easton",
+      "kind": "event",
+      "locator": "\"Treaty of Easton\", revision 1375686339"
     },
     {
       "dissent": false,
@@ -25913,6 +26093,18 @@
       "id": "treaty-of-fort-laramie-1851",
       "kind": "event",
       "locator": "\"Treaty of Fort Laramie (1851)\", revision 1368636466"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-fort-pitt",
+      "kind": "event",
+      "locator": "\"Treaty of Fort Pitt\", revision 1360705441"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-fort-stanwix-1768",
+      "kind": "event",
+      "locator": "\"Treaty of Fort Stanwix (1768)\", revision 1381333515"
     },
     {
       "dissent": false,
@@ -26051,6 +26243,12 @@
       "id": "treaty-of-mangalore",
       "kind": "event",
       "locator": "\"Treaty of Mangalore\", revision 1368931351"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-mendota",
+      "kind": "event",
+      "locator": "\"Treaty of Mendota\", revision 1376053250"
     },
     {
       "dissent": false,
@@ -26303,6 +26501,12 @@
       "id": "treaty-of-wanghia",
       "kind": "event",
       "locator": "\"Treaty of Wanghia\", revision 1347614243"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-washington-1871",
+      "kind": "event",
+      "locator": "\"Treaty of Washington (1871)\", revision 1365508134"
     },
     {
       "dissent": false,
@@ -26573,6 +26777,12 @@
       "id": "victorian-era",
       "kind": "event",
       "locator": "\"Victorian era\", revision 1380479289"
+    },
+    {
+      "dissent": false,
+      "id": "victorio-s-war",
+      "kind": "event",
+      "locator": "\"Victorio's War\", revision 1379047933"
     },
     {
       "dissent": false,
@@ -26903,6 +27113,12 @@
       "id": "williamite-war-in-ireland",
       "kind": "event",
       "locator": "\"Williamite War in Ireland\", revision 1376650085"
+    },
+    {
+      "dissent": false,
+      "id": "wilmington-massacre",
+      "kind": "event",
+      "locator": "\"Wilmington massacre\", revision 1378993455"
     },
     {
       "dissent": false,

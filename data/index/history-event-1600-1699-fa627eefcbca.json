@@ -4104,6 +4104,15 @@
         }
       ]
     },
+    "treaty-of-concordia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-ghilajharighat": {
       "from": "git",
       "versions": [

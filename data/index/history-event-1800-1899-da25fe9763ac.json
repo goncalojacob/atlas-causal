@@ -868,6 +868,15 @@
         }
       ]
     },
+    "bank-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "bannock-war": {
       "from": "git",
       "versions": [
@@ -3733,6 +3742,15 @@
         }
       ]
     },
+    "boundary-treaty-of-1881-between-chile-and-argentina": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "bowring-treaty": {
       "from": "git",
       "versions": [
@@ -3866,6 +3884,15 @@
         }
       ]
     },
+    "bussa-s-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "cabanagem": {
       "from": "git",
       "versions": [
@@ -3881,6 +3908,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "canadian-american-reciprocity-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3971,6 +4007,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "chilean-civil-war-of-1829-1830": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4280,6 +4325,15 @@
         }
       ]
     },
+    "desert-campaign-1833-1834": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "desmichels-treaty": {
       "from": "git",
       "versions": [
@@ -4415,6 +4469,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "ecuadorian-peruvian-war-1857-1860": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4571,6 +4634,24 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "federal-pact": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "federalist-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5450,6 +5531,15 @@
         }
       ]
     },
+    "invasion-of-surinam-1804": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "italian-pacification-campaigns-in-somalia": {
       "from": "git",
       "versions": [
@@ -6046,6 +6136,15 @@
         }
       ]
     },
+    "northern-cheyenne-exodus": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "northern-expedition-taiping-rebellion": {
       "from": "git",
       "versions": [
@@ -6258,6 +6357,15 @@
         }
       ]
     },
+    "pemmican-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "peninsular-war": {
       "from": "git",
       "versions": [
@@ -6294,6 +6402,15 @@
         }
       ]
     },
+    "peruvian-civil-war-of-1894-1895": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "peruvian-war-of-independence": {
       "from": "git",
       "versions": [
@@ -6323,6 +6440,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "peshtigo-fire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -6662,6 +6788,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "revolution-of-the-park": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -7744,6 +7879,15 @@
         }
       ]
     },
+    "spanish-reconquest-of-new-granada": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "storming-of-pleret": {
       "from": "git",
       "versions": [
@@ -8105,6 +8249,15 @@
         }
       ]
     },
+    "treaty-of-ancon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-balta-liman": {
       "from": "git",
       "versions": [
@@ -8129,6 +8282,24 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "treaty-of-cahuenga": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-chicago": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -8228,6 +8399,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-mendota": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -8428,6 +8608,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-washington-1871": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -8649,6 +8838,15 @@
         }
       ]
     },
+    "victorio-s-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "wahhabi-sack-of-karbala": {
       "from": "git",
       "versions": [
@@ -8798,6 +8996,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "wilmington-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

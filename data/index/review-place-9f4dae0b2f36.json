@@ -3811,6 +3811,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "berbice",
+      "kind": "place",
+      "names": [
+        "Berbice"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 2,
       "id": "bergen-op-zoom",
@@ -5309,7 +5336,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 2,
+      "degree": 3,
       "id": "buenos-aires",
       "kind": "place",
       "names": [
@@ -5543,6 +5570,34 @@
       "review": {
         "flags": [
           "imported-facts"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "cahuenga-california",
+      "kind": "place",
+      "names": [
+        "Cahuenga",
+        "Cahuenga, California"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
         ],
         "status": "draft"
       },
@@ -7142,7 +7197,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 2,
+      "degree": 3,
       "id": "chicago",
       "kind": "place",
       "names": [
@@ -7169,7 +7224,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "chile-q298",
       "kind": "place",
       "names": [
@@ -7816,6 +7871,35 @@
         "Concepción",
         "Concepción, Chile",
         "Concepción (Chile)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "concordia-entre-rios",
+      "kind": "place",
+      "names": [
+        "Concordia",
+        "Concordia, Entre Ríos",
+        "Concordia (Argentina)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -8603,6 +8687,34 @@
       "names": [
         "Dande River",
         "Rio Dande"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "danish-west-indies",
+      "kind": "place",
+      "names": [
+        "Danish West Indies",
+        "Índias Ocidentais Dinamarquesas"
       ],
       "origin": {
         "tool": "wikidata"
@@ -10054,6 +10166,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "easton-new-hampshire",
+      "kind": "place",
+      "names": [
+        "Easton",
+        "Easton, New Hampshire"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -11561,6 +11701,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "fort-pitt-pennsylvania",
+      "kind": "place",
+      "names": [
+        "Fort Pitt",
+        "Fort Pitt (Pennsylvania)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "fort-pontchartrain-du-detroit",
@@ -11568,6 +11736,33 @@
       "names": [
         "Fort Detroit",
         "Fort Pontchartrain du Détroit"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "fort-stanwix",
+      "kind": "place",
+      "names": [
+        "Fort Stanwix"
       ],
       "origin": {
         "tool": "wikidata"
@@ -21925,6 +22120,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "mendota-illinois",
+      "kind": "place",
+      "names": [
+        "Mendota",
+        "Mendota, Illinois",
+        "Mendota (Illinois)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 2,
       "id": "menorca",
@@ -25242,6 +25466,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "oklahoma",
+      "kind": "place",
+      "names": [
+        "Oklahoma"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "old-fort-erie",
@@ -26584,7 +26835,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 3,
       "id": "peru-q419",
       "kind": "place",
       "names": [
@@ -26744,6 +26995,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "philadelphia",
+      "kind": "place",
+      "names": [
+        "Philadelphia",
+        "Filadélfia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -29944,7 +30223,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 3,
       "id": "saint-vincent-saint-vincent-and-the-grenadines",
       "kind": "place",
       "names": [
@@ -30613,6 +30892,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "santa-fe-argentina",
+      "kind": "place",
+      "names": [
+        "Santa Fe",
+        "Santa Fe, Argentina",
+        "Santa Fé (Argentina)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
       "degree": 1,
       "id": "santa-fe-de-nuevo-mexico",
@@ -30699,7 +31007,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 2,
+      "degree": 3,
       "id": "santiago",
       "kind": "place",
       "names": [
@@ -32487,7 +32795,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "south-region-brazil",
       "kind": "place",
       "names": [
@@ -32776,7 +33084,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 3,
       "id": "southwestern-united-states",
       "kind": "place",
       "names": [
@@ -36054,7 +36362,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 24,
+      "degree": 25,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -37133,7 +37441,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 10,
+      "degree": 11,
       "id": "washington",
       "kind": "place",
       "names": [
@@ -37589,6 +37897,35 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "wilmington-north-carolina",
+      "kind": "place",
+      "names": [
+        "Wilmington",
+        "Wilmington, North Carolina",
+        "Wilmington (Carolina do Norte)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

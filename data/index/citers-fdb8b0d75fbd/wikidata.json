@@ -1796,6 +1796,12 @@
     },
     {
       "dissent": false,
+      "id": "1733-slave-insurrection-on-st-john",
+      "kind": "event",
+      "locator": "Q4552666"
+    },
+    {
+      "dissent": false,
       "id": "1755-lisbon-earthquake",
       "kind": "event",
       "locator": "Q191055"
@@ -1811,6 +1817,12 @@
       "id": "1786-kangding-luding-earthquake",
       "kind": "event",
       "locator": "Q1348781"
+    },
+    {
+      "dissent": false,
+      "id": "1793-philadelphia-yellow-fever-epidemic",
+      "kind": "event",
+      "locator": "Q8051732"
     },
     {
       "dissent": false,
@@ -3563,6 +3575,12 @@
       "id": "banjarmasin-war",
       "kind": "event",
       "locator": "Q368594"
+    },
+    {
+      "dissent": false,
+      "id": "bank-war",
+      "kind": "event",
+      "locator": "Q4855994"
     },
     {
       "dissent": false,
@@ -8486,6 +8504,12 @@
     },
     {
       "dissent": false,
+      "id": "berbice-rebellion",
+      "kind": "event",
+      "locator": "Q3337680"
+    },
+    {
+      "dissent": false,
       "id": "berlin-conference",
       "kind": "event",
       "locator": "Q13582"
@@ -8684,6 +8708,12 @@
     },
     {
       "dissent": false,
+      "id": "boundary-treaty-of-1881-between-chile-and-argentina",
+      "kind": "event",
+      "locator": "Q940076"
+    },
+    {
+      "dissent": false,
       "id": "bowring-treaty",
       "kind": "event",
       "locator": "Q745728"
@@ -8828,6 +8858,12 @@
     },
     {
       "dissent": false,
+      "id": "bussa-s-rebellion",
+      "kind": "event",
+      "locator": "Q29914504"
+    },
+    {
+      "dissent": false,
       "id": "c-nar-incident",
       "kind": "event",
       "locator": "Q8077838"
@@ -8909,6 +8945,12 @@
       "id": "campaign-of-tlemcen-1557",
       "kind": "event",
       "locator": "Q86684978"
+    },
+    {
+      "dissent": false,
+      "id": "canadian-american-reciprocity-treaty",
+      "kind": "event",
+      "locator": "Q2718109"
     },
     {
       "dissent": false,
@@ -9299,6 +9341,12 @@
       "id": "chickasaw-wars",
       "kind": "event",
       "locator": "Q495858"
+    },
+    {
+      "dissent": false,
+      "id": "chilean-civil-war-of-1829-1830",
+      "kind": "event",
+      "locator": "Q5098735"
     },
     {
       "dissent": false,
@@ -9812,6 +9860,12 @@
     },
     {
       "dissent": false,
+      "id": "curacao-slave-revolt-of-1795",
+      "kind": "event",
+      "locator": "Q19897783"
+    },
+    {
+      "dissent": false,
       "id": "cyprus-convention",
       "kind": "event",
       "locator": "Q3555069"
@@ -9929,6 +9983,12 @@
       "id": "dervish-war",
       "kind": "event",
       "locator": "Q1402902"
+    },
+    {
+      "dissent": false,
+      "id": "desert-campaign-1833-1834",
+      "kind": "event",
+      "locator": "Q5452877"
     },
     {
       "dissent": false,
@@ -10121,6 +10181,12 @@
       "id": "eastern-front",
       "kind": "event",
       "locator": "Q189266, P31 Q198"
+    },
+    {
+      "dissent": false,
+      "id": "ecuadorian-peruvian-war-1857-1860",
+      "kind": "event",
+      "locator": "Q3119117"
     },
     {
       "dissent": false,
@@ -10424,6 +10490,18 @@
     },
     {
       "dissent": false,
+      "id": "federal-pact",
+      "kind": "event",
+      "locator": "Q3888700"
+    },
+    {
+      "dissent": false,
+      "id": "federalist-revolution",
+      "kind": "event",
+      "locator": "Q2523337"
+    },
+    {
+      "dissent": false,
       "id": "fete-de-la-federation",
       "kind": "event",
       "locator": "Q143866"
@@ -10601,6 +10679,12 @@
       "id": "first-boer-war",
       "kind": "event",
       "locator": "Q329203"
+    },
+    {
+      "dissent": false,
+      "id": "first-carib-war",
+      "kind": "event",
+      "locator": "Q5452603"
     },
     {
       "dissent": false,
@@ -11753,6 +11837,12 @@
       "id": "invasion-of-south-georgia",
       "kind": "event",
       "locator": "Q4345906"
+    },
+    {
+      "dissent": false,
+      "id": "invasion-of-surinam-1804",
+      "kind": "event",
+      "locator": "Q593085"
     },
     {
       "dissent": false,
@@ -13190,6 +13280,12 @@
     },
     {
       "dissent": false,
+      "id": "northern-cheyenne-exodus",
+      "kind": "event",
+      "locator": "Q17090764"
+    },
+    {
+      "dissent": false,
       "id": "northern-expedition-taiping-rebellion",
       "kind": "event",
       "locator": "Q6140803"
@@ -13772,6 +13868,12 @@
     },
     {
       "dissent": false,
+      "id": "pemmican-war",
+      "kind": "event",
+      "locator": "Q17021072"
+    },
+    {
+      "dissent": false,
       "id": "peninsular-war",
       "kind": "event",
       "locator": "Q152499"
@@ -13820,6 +13922,12 @@
     },
     {
       "dissent": false,
+      "id": "peruvian-civil-war-of-1894-1895",
+      "kind": "event",
+      "locator": "Q5887721"
+    },
+    {
+      "dissent": false,
       "id": "peruvian-war-of-independence",
       "kind": "event",
       "locator": "Q68478"
@@ -13829,6 +13937,12 @@
       "id": "pescadores-campaign-1895",
       "kind": "event",
       "locator": "Q2583202"
+    },
+    {
+      "dissent": false,
+      "id": "peshtigo-fire",
+      "kind": "event",
+      "locator": "Q3244543"
     },
     {
       "dissent": false,
@@ -14474,6 +14588,12 @@
     },
     {
       "dissent": false,
+      "id": "revolution-of-the-park",
+      "kind": "event",
+      "locator": "Q3294643"
+    },
+    {
+      "dissent": false,
       "id": "revolution-of-the-reforms",
       "kind": "event",
       "locator": "Q6107209"
@@ -14960,6 +15080,12 @@
     },
     {
       "dissent": false,
+      "id": "second-carib-war",
+      "kind": "event",
+      "locator": "Q7443152"
+    },
+    {
+      "dissent": false,
       "id": "second-choshu-expedition",
       "kind": "event",
       "locator": "Q711793"
@@ -15047,6 +15173,12 @@
       "id": "second-mandingo-war",
       "kind": "event",
       "locator": "Q139375315"
+    },
+    {
+      "dissent": false,
+      "id": "second-maroon-war",
+      "kind": "event",
+      "locator": "Q7443413"
     },
     {
       "dissent": false,
@@ -16904,6 +17036,12 @@
     },
     {
       "dissent": false,
+      "id": "spanish-reconquest-of-new-granada",
+      "kind": "event",
+      "locator": "Q8961"
+    },
+    {
+      "dissent": false,
       "id": "spanish-revolution",
       "kind": "event",
       "locator": "Q1982745"
@@ -17033,6 +17171,12 @@
       "id": "swedish-war-of-liberation",
       "kind": "event",
       "locator": "Q688308"
+    },
+    {
+      "dissent": false,
+      "id": "tacky-s-revolt",
+      "kind": "event",
+      "locator": "Q2386936"
     },
     {
       "dissent": false,
@@ -17468,6 +17612,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-ancon",
+      "kind": "event",
+      "locator": "Q1475005"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-aynal-kavak",
       "kind": "event",
       "locator": "Q7836974"
@@ -17540,6 +17690,30 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-cahuenga",
+      "kind": "event",
+      "locator": "Q2805651"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-canandaigua",
+      "kind": "event",
+      "locator": "Q1985363"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-chicago",
+      "kind": "event",
+      "locator": "Q928799"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-concordia",
+      "kind": "event",
+      "locator": "Q2484797"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-constantinople-1590",
       "kind": "event",
       "locator": "Q2470144"
@@ -17549,6 +17723,12 @@
       "id": "treaty-of-cordoba",
       "kind": "event",
       "locator": "Q767450"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-easton",
+      "kind": "event",
+      "locator": "Q1644435"
     },
     {
       "dissent": false,
@@ -17567,6 +17747,18 @@
       "id": "treaty-of-fort-laramie-1851",
       "kind": "event",
       "locator": "Q2241487"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-fort-pitt",
+      "kind": "event",
+      "locator": "Q7837060"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-fort-stanwix-1768",
+      "kind": "event",
+      "locator": "Q246501"
     },
     {
       "dissent": false,
@@ -17717,6 +17909,12 @@
       "id": "treaty-of-mangalore",
       "kind": "event",
       "locator": "Q7837140"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-mendota",
+      "kind": "event",
+      "locator": "Q7837151"
     },
     {
       "dissent": false,
@@ -18026,6 +18224,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-washington-1871",
+      "kind": "event",
+      "locator": "Q3536910"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-windsor",
       "kind": "event",
       "locator": "Q2518953"
@@ -18305,6 +18509,12 @@
       "id": "victorian-era",
       "kind": "event",
       "locator": "Q182688"
+    },
+    {
+      "dissent": false,
+      "id": "victorio-s-war",
+      "kind": "event",
+      "locator": "Q4122567"
     },
     {
       "dissent": false,
@@ -18659,6 +18869,12 @@
       "id": "williamite-war-in-ireland",
       "kind": "event",
       "locator": "Q2320981"
+    },
+    {
+      "dissent": false,
+      "id": "wilmington-massacre",
+      "kind": "event",
+      "locator": "Q8022766"
     },
     {
       "dissent": false,
