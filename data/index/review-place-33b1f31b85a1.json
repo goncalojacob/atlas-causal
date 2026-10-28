@@ -2990,7 +2990,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "baltimore",
       "kind": "place",
       "names": [
@@ -3609,6 +3609,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "battle-of-trois-rivieres-national-historic-site",
+      "kind": "place",
+      "names": [
+        "Battle of Trois-Rivières National Historic Site"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -6747,6 +6774,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "campo-de-carabobo",
+      "kind": "place",
+      "names": [
+        "Campo de Carabobo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -8981,7 +9035,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 13,
+      "degree": 14,
       "id": "constantinople",
       "kind": "place",
       "names": [
@@ -9071,6 +9125,35 @@
         "Córdoba",
         "Córdoba, Veracruz",
         "Córdoba (Veracruz)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "corinth-mississippi",
+      "kind": "place",
+      "names": [
+        "Corinth",
+        "Corinth, Mississippi",
+        "Corinth (Mississippi)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -11388,6 +11471,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "eastern-canada",
+      "kind": "place",
+      "names": [
+        "Eastern Canada",
+        "Leste do Canadá"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -15948,7 +16059,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 7,
+      "degree": 8,
       "id": "havana",
       "kind": "place",
       "names": [
@@ -24686,11 +24797,38 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 3,
       "id": "maryland",
       "kind": "place",
       "names": [
         "Maryland"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "massachusetts",
+      "kind": "place",
+      "names": [
+        "Massachusetts"
       ],
       "origin": {
         "tool": "wikidata"
@@ -25413,7 +25551,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 10,
+      "degree": 12,
       "id": "mexico-q96",
       "kind": "place",
       "names": [
@@ -27959,6 +28097,34 @@
         }
       ],
       "created": "2026-10-28",
+      "degree": 1,
+      "id": "new-jersey",
+      "kind": "place",
+      "names": [
+        "New Jersey",
+        "Nova Jérsia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
       "degree": 2,
       "id": "new-mexico",
       "kind": "place",
@@ -28041,7 +28207,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 2,
+      "degree": 3,
       "id": "new-york-state",
       "kind": "place",
       "names": [
@@ -29568,7 +29734,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 21,
+      "degree": 22,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -30033,6 +30199,34 @@
           "a9-place"
         ],
         "note": "Place written by the run that imported the event, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record its P276 names was not here, so the event came out placeless. The point and the names are the item’s own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "parana-river",
+      "kind": "place",
+      "names": [
+        "Paraná River",
+        "Rio Paraná"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -31047,6 +31241,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "pittsburgh",
+      "kind": "place",
+      "names": [
+        "Pittsburgh"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "place-de-la-concorde",
@@ -31323,7 +31544,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 5,
+      "degree": 6,
       "id": "pondicherry",
       "kind": "place",
       "names": [
@@ -32808,7 +33029,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 2,
+      "degree": 4,
       "id": "quebec-city",
       "kind": "place",
       "names": [
@@ -33443,6 +33664,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "riachuelo",
+      "kind": "place",
+      "names": [
+        "Riachuelo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "riemst",
@@ -33603,6 +33851,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "riobamba",
+      "kind": "place",
+      "names": [
+        "Riobamba"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -35431,7 +35706,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 4,
+      "degree": 5,
       "id": "santiago-de-cuba",
       "kind": "place",
       "names": [
@@ -35648,6 +35923,35 @@
       "kind": "place",
       "names": [
         "Sathyamangalam"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "savannah-georgia",
+      "kind": "place",
+      "names": [
+        "Savannah",
+        "Savannah, Georgia",
+        "Savannah (Geórgia)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -41669,7 +41973,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 31,
+      "degree": 39,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -42368,6 +42672,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "versailles-kentucky",
+      "kind": "place",
+      "names": [
+        "Versailles",
+        "Versailles, Kentucky",
+        "Versailles (Kentucky)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 2,
       "id": "versailles-yvelines",
@@ -42586,7 +42919,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 4,
+      "degree": 6,
       "id": "virginia-q1370",
       "kind": "place",
       "names": [
@@ -43022,7 +43355,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 15,
+      "degree": 16,
       "id": "washington",
       "kind": "place",
       "names": [
@@ -43401,6 +43734,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "west-indies",
+      "kind": "place",
+      "names": [
+        "West Indies",
+        "Índias Ocidentais"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -43522,6 +43883,35 @@
       "kind": "place",
       "names": [
         "Wijnendale"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "williamsburg-virginia",
+      "kind": "place",
+      "names": [
+        "Williamsburg",
+        "Williamsburg, Virginia",
+        "Williamsburg (Virgínia)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -43964,6 +44354,33 @@
       ],
       "created": "2026-10-28",
       "degree": 1,
+      "id": "wyoming-valley",
+      "kind": "place",
+      "names": [
+        "Wyoming Valley"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
       "id": "xiamen",
       "kind": "place",
       "names": [
@@ -44242,7 +44659,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 3,
+      "degree": 4,
       "id": "yerevan",
       "kind": "place",
       "names": [

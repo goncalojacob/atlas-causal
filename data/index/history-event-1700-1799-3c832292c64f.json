@@ -110,6 +110,33 @@
         }
       ]
     },
+    "1797-riobamba-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "1st-united-states-congress": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "2nd-united-states-congress": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "abaco-slave-revolt": {
       "from": "git",
       "versions": [
@@ -383,6 +410,15 @@
       ]
     },
     "anglo-mysore-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "anglo-spanish-war-1727-1729": {
       "from": "git",
       "versions": [
         {
@@ -985,6 +1021,15 @@
         }
       ]
     },
+    "battle-of-fort-duquesne": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-fort-frontenac": {
       "from": "git",
       "versions": [
@@ -1332,6 +1377,15 @@
         }
       ]
     },
+    "battle-of-kings-mountain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-kirkuk-1733": {
       "from": "git",
       "versions": [
@@ -1676,6 +1730,15 @@
         }
       ]
     },
+    "battle-of-oriskany": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-oudenarde": {
       "from": "git",
       "versions": [
@@ -1734,6 +1797,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-pondicherry": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1815,6 +1887,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-quebec-1775": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1997,6 +2078,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-sainte-foy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2324,6 +2414,15 @@
         }
       ]
     },
+    "battle-of-trois-rivieres": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-ushant-1781": {
       "from": "git",
       "versions": [
@@ -2387,6 +2486,15 @@
         }
       ]
     },
+    "battle-of-waxhaws": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-white-plains": {
       "from": "git",
       "versions": [
@@ -2402,6 +2510,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-wyoming": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2490,6 +2607,15 @@
       ]
     },
     "black-hole-of-calcutta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "boston-campaign": {
       "from": "git",
       "versions": [
         {
@@ -3019,6 +3145,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "first-continental-congress": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3836,6 +3971,15 @@
         }
       ]
     },
+    "philadelphia-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "pima-revolt-1751": {
       "from": "git",
       "versions": [
@@ -4406,6 +4550,15 @@
         }
       ]
     },
+    "siege-of-havana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "siege-of-isfahan": {
       "from": "git",
       "versions": [
@@ -4705,6 +4858,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "siege-of-savannah-1779": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5117,6 +5279,15 @@
         }
       ]
     },
+    "treaty-of-constantinople-1736": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-easton": {
       "from": "git",
       "versions": [
@@ -5409,6 +5580,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-versailles-1768": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
