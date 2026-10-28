@@ -6047,6 +6047,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "action-of-17-june-1802",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-barbary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Action of 17 June 1802"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "action-of-18-february-1639",
       "kind": "event",
@@ -6126,6 +6157,37 @@
       "revised": null,
       "status": "active",
       "title": "Action of 2 May 1654"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "action-of-22-june-1803",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-barbary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Action of 22 June 1803"
     },
     {
       "authors": [
@@ -10832,6 +10894,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-abu-hamed",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mahdist-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Abu Hamed"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "battle-of-abu-klea",
       "kind": "event",
@@ -10895,6 +10989,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-abukir-1801",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-invasion-of-egypt-and-syria",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Abukir (1801)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
       "degree": 3,
       "id": "battle-of-acajutla",
@@ -10915,6 +11040,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Acajutla"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-adibo",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Adibo"
     },
     {
       "authors": [
@@ -11252,6 +11409,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-al-khankah",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-invasion-of-egypt-and-syria",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Al Khankah"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "battle-of-al-wajbah",
       "kind": "event",
@@ -11401,6 +11590,37 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Alegría de Pío"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-alexandria-1801",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-invasion-of-egypt-and-syria",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Alexandria (1801)"
     },
     {
       "authors": [
@@ -11630,6 +11850,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Amba Sel"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-amoaful",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "anglo-ashanti-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Amoaful"
     },
     {
       "authors": [
@@ -12821,6 +13071,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-bergendal",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Bergendal"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "battle-of-bicocca",
       "kind": "event",
@@ -13231,6 +13513,70 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Borodino"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-boshof",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Boshof"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-bothaville",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Bothaville"
     },
     {
       "authors": [
@@ -16270,6 +16616,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-diamond-hill",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Diamond Hill"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 1,
       "id": "battle-of-dien-bien-phu",
@@ -16513,6 +16890,37 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-driefontein",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Driefontein"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -16574,6 +16982,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Dürenstein"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-dwarsvlei",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Dwarsvlei"
     },
     {
       "authors": [
@@ -18120,6 +18560,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-gedaref",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mahdist-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Gedaref"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "battle-of-geok-tepe",
       "kind": "event",
@@ -19238,6 +19710,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-heliopolis-1800",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-invasion-of-egypt-and-syria",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Heliopolis (1800)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "battle-of-helsingborg",
       "kind": "event",
@@ -20159,6 +20662,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Intombe"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-inyezane",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "anglo-zulu-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Inyezane"
     },
     {
       "authors": [
@@ -22450,6 +22984,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-laing-s-nek-1900",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Laing's Nek (1900)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "battle-of-lake-borgne",
       "kind": "event",
@@ -22795,6 +23360,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Leipzig"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-leliefontein",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Leliefontein"
     },
     {
       "authors": [
@@ -26115,6 +26712,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-nooitgedacht",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Nooitgedacht"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-22",
       "degree": 3,
       "id": "battle-of-nordlingen-1634",
@@ -26229,6 +26857,36 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Novara (1513)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-nsamankow",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "anglo-ashanti-wars",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Nsamankow"
     },
     {
       "authors": [
@@ -27323,6 +27981,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Poniec"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-poplar-grove",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Poplar Grove"
     },
     {
       "authors": [
@@ -28506,6 +29195,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Ravine-à-Couleuvres"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-rejaf",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mahdist-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Rejaf"
     },
     {
       "authors": [
@@ -30117,6 +30838,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-shangi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "scramble-for-africa",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Shangi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "battle-of-shanhai-pass",
       "kind": "event",
@@ -30479,6 +31231,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Sikkak"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-silkaatsnek",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Silkaatsnek"
     },
     {
       "authors": [
@@ -33734,6 +34518,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-tlemcen-1700",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "maghrebi-war-1699-1702",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Tlemcen (1700)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "battle-of-toba-fushimi",
       "kind": "event",
@@ -33753,6 +34568,37 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Toba–Fushimi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-tofrek",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mahdist-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Tofrek"
     },
     {
       "authors": [
@@ -34524,6 +35370,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Ulundi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-umm-diwaykarat",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "mahdist-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Umm Diwaykarat"
     },
     {
       "authors": [
@@ -35873,6 +36751,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Wisternitz"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-witpoort",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Witpoort"
     },
     {
       "authors": [
@@ -37412,6 +38322,37 @@
       "revised": null,
       "status": "active",
       "title": "Blockade of Zanzibar"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "bloody-sunday-1900",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Bloody Sunday (1900)"
     },
     {
       "authors": [
@@ -45458,6 +46399,37 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "derdepoort-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Derdepoort massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "war",
       "cites": [
         "wikidata",
@@ -49429,6 +50401,37 @@
       "revised": null,
       "status": "active",
       "title": "First Battle of the Lucala"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "first-battle-of-tripoli-harbor",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-barbary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First Battle of Tripoli Harbor"
     },
     {
       "authors": [
@@ -71331,6 +72334,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "relief-of-ladysmith",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Relief of Ladysmith"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "relief-of-thionville",
       "kind": "event",
@@ -73434,6 +74468,38 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "sanna-s-post",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "second-boer-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Sanna's Post"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -74653,6 +75719,37 @@
       "revised": "2026-09-29",
       "status": "active",
       "title": "Second Boer War"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "revolution",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "second-cairo-revolt",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-invasion-of-egypt-and-syria",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Second Cairo Revolt"
     },
     {
       "authors": [
@@ -76215,6 +77312,38 @@
       "revised": null,
       "status": "active",
       "title": "Shinpūren rebellion"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "shipwreck-of-dellys",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "french-conquest-of-algeria",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Shipwreck of Dellys"
     },
     {
       "authors": [
@@ -98051,6 +99180,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "action-of-17-june-1802",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "action-of-18-february-1639",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -98073,6 +99208,12 @@
       "kind": "event",
       "message": "nobody has written a summary: this is still the sentence the import wrote about its own item",
       "rule": "summary-imported"
+    },
+    {
+      "id": "action-of-22-june-1803",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
     },
     {
       "id": "action-of-23-march-1654",
@@ -98675,7 +99816,25 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-abu-hamed",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-abu-klea",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-abukir-1801",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-adibo",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -98711,6 +99870,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-al-khankah",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-al-wajbah",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -98718,6 +99883,12 @@
     },
     {
       "id": "battle-of-alamana",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-alexandria-1801",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -98748,6 +99919,12 @@
     },
     {
       "id": "battle-of-amba-sel",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-amoaful",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -98921,6 +100098,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-bergendal",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-bicocca",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -98964,6 +100147,18 @@
     },
     {
       "id": "battle-of-borodino",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-boshof",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-bothaville",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -99401,6 +100596,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-diamond-hill",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-diu",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -99449,6 +100650,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-driefontein",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-dunkirk",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -99456,6 +100663,12 @@
     },
     {
       "id": "battle-of-durenstein",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-dwarsvlei",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -99683,6 +100896,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-gedaref",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-geok-tepe",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -99851,6 +101070,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-heliopolis-1800",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-helsingborg",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -99960,6 +101185,12 @@
     },
     {
       "id": "battle-of-intombe",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-inyezane",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -100271,6 +101502,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-laing-s-nek-1900",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-lake-borgne",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -100314,6 +101551,12 @@
     },
     {
       "id": "battle-of-leipzig",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-leliefontein",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -100763,7 +102006,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-nooitgedacht",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-noryang",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-nsamankow",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -100901,6 +102156,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-poplar-grove",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-porto-praya",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -101004,6 +102265,12 @@
     },
     {
       "id": "battle-of-ravine-a-couleuvres",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-rejaf",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -101195,6 +102462,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-shangi",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-shanhai-pass",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -101256,6 +102529,12 @@
     },
     {
       "id": "battle-of-sikkak",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-silkaatsnek",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -101651,7 +102930,19 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-tlemcen-1700",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-toba-fushimi",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-tofrek",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -101736,6 +103027,12 @@
     },
     {
       "id": "battle-of-ulundi",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-umm-diwaykarat",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -101939,6 +103236,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-witpoort",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-wittenweiher",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -102114,6 +103417,12 @@
     },
     {
       "id": "blockade-of-the-tetuan-river",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "bloody-sunday-1900",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -103061,6 +104370,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "derdepoort-massacre",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "dervish-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -103482,6 +104797,12 @@
     },
     {
       "id": "first-battle-of-sacket-s-harbor",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "first-battle-of-tripoli-harbor",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -105965,6 +107286,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "relief-of-ladysmith",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "relief-of-thionville",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -106205,6 +107532,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "sanna-s-post",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "santhal-rebellion",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -106302,6 +107635,12 @@
     },
     {
       "id": "second-battle-of-tripoli-harbor",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "second-cairo-revolt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -106524,6 +107863,12 @@
     },
     {
       "id": "shinpuren-rebellion",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "shipwreck-of-dellys",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

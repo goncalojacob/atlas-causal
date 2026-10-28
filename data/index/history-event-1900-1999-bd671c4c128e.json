@@ -7473,6 +7473,15 @@
         }
       ]
     },
+    "battle-of-bergendal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-bloody-ridge": {
       "from": "git",
       "versions": [
@@ -7485,6 +7494,24 @@
             "actors"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-boshof": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-bothaville": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -7574,12 +7601,30 @@
         }
       ]
     },
+    "battle-of-diamond-hill": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-dien-bien-phu": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-driefontein": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -7618,6 +7663,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-dwarsvlei": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -8058,6 +8112,24 @@
         }
       ]
     },
+    "battle-of-laing-s-nek-1900": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-leliefontein": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-liaoyang": {
       "from": "git",
       "versions": [
@@ -8305,6 +8377,15 @@
         }
       ]
     },
+    "battle-of-nooitgedacht": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-onjong": {
       "from": "git",
       "versions": [
@@ -8365,6 +8446,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-poplar-grove": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -8479,6 +8569,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "battle-of-silkaatsnek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -8901,6 +9000,15 @@
         }
       ]
     },
+    "battle-of-witpoort": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-wuhan": {
       "from": "git",
       "versions": [
@@ -9153,6 +9261,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "bloody-sunday-1900": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -21022,6 +21139,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "sanna-s-post": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

@@ -56,6 +56,15 @@
         }
       ]
     },
+    "abu-hamad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "abu-qir": {
       "from": "git",
       "versions": [
@@ -279,6 +288,15 @@
         {
           "first": true,
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "al-khankah": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1395,6 +1413,15 @@
         }
       ]
     },
+    "belfast-mpumalanga": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "belgrade": {
       "from": "git",
       "versions": [
@@ -1686,6 +1713,15 @@
         }
       ]
     },
+    "bloemfontein": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "bloody-creek": {
       "from": "git",
       "versions": [
@@ -1818,6 +1854,15 @@
         }
       ]
     },
+    "boshof": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "bosnia-and-herzegovina": {
       "from": "git",
       "versions": [
@@ -1839,6 +1884,15 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "bothaville": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2529,6 +2583,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "carolina-south-africa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3649,6 +3712,15 @@
         }
       ]
     },
+    "dellys": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "demerara": {
       "from": "git",
       "versions": [
@@ -4317,6 +4389,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "el-gadarif": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -7649,6 +7730,15 @@
         }
       ]
     },
+    "kordofan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "korea-strait": {
       "from": "git",
       "versions": [
@@ -7748,6 +7838,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "krugersdorp": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -12478,6 +12577,15 @@
         }
       ]
     },
+    "rejaf": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "republic-of-bosnia-and-herzegovina": {
       "from": "git",
       "versions": [
@@ -16407,6 +16515,15 @@
         }
       ]
     },
+    "witpoort": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "wittstock": {
       "from": "git",
       "versions": [
@@ -16626,6 +16743,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "yendi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

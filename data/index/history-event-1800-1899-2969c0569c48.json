@@ -585,6 +585,24 @@
         }
       ]
     },
+    "action-of-17-june-1802": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "action-of-22-june-1803": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "adamawa-wars": {
       "from": "git",
       "versions": [
@@ -1076,12 +1094,39 @@
         }
       ]
     },
+    "battle-of-abu-hamed": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-abu-klea": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-abukir-1801": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-adibo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1118,6 +1163,15 @@
         }
       ]
     },
+    "battle-of-al-khankah": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-al-wajbah": {
       "from": "git",
       "versions": [
@@ -1145,6 +1199,15 @@
         }
       ]
     },
+    "battle-of-alexandria-1801": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-ali-masjid": {
       "from": "git",
       "versions": [
@@ -1169,6 +1232,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-amoaful": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1869,6 +1941,15 @@
         }
       ]
     },
+    "battle-of-gedaref": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-geok-tepe": {
       "from": "git",
       "versions": [
@@ -2016,6 +2097,15 @@
         }
       ]
     },
+    "battle-of-heliopolis-1800": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-hims-1832": {
       "from": "git",
       "versions": [
@@ -2082,6 +2172,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-inyezane": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2667,6 +2766,15 @@
         }
       ]
     },
+    "battle-of-nsamankow": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-ogdensburg": {
       "from": "git",
       "versions": [
@@ -2852,6 +2960,15 @@
         }
       ]
     },
+    "battle-of-rejaf": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-rolica": {
       "from": "git",
       "versions": [
@@ -2966,6 +3083,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-shangi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3362,6 +3488,15 @@
         }
       ]
     },
+    "battle-of-tofrek": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-togbao": {
       "from": "git",
       "versions": [
@@ -3437,6 +3572,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-umm-diwaykarat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4532,6 +4676,15 @@
         }
       ]
     },
+    "derdepoort-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "desert-campaign-1833-1834": {
       "from": "git",
       "versions": [
@@ -4967,6 +5120,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "first-battle-of-tripoli-harbor": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -7313,6 +7475,15 @@
         }
       ]
     },
+    "relief-of-ladysmith": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "revolt-of-the-muckers": {
       "from": "git",
       "versions": [
@@ -7665,6 +7836,15 @@
         }
       ]
     },
+    "second-cairo-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "second-choshu-expedition": {
       "from": "git",
       "versions": [
@@ -7901,6 +8081,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "shipwreck-of-dellys": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

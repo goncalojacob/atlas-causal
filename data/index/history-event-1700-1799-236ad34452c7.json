@@ -2027,6 +2027,15 @@
         }
       ]
     },
+    "battle-of-tlemcen-1700": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-trenton": {
       "from": "git",
       "versions": [

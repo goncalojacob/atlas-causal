@@ -171,11 +171,38 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "abu-hamad",
+      "kind": "place",
+      "names": [
+        "Abu Hamad"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
       "created": "2026-09-29",
-      "degree": 1,
+      "degree": 2,
       "id": "abu-qir",
       "kind": "place",
       "names": [
@@ -814,6 +841,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "al-khankah",
+      "kind": "place",
+      "names": [
+        "Al Khankah"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "al-wajbah-fort",
@@ -957,7 +1011,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 4,
+      "degree": 5,
       "id": "alexandria",
       "kind": "place",
       "names": [
@@ -3580,6 +3634,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "belfast-mpumalanga",
+      "kind": "place",
+      "names": [
+        "eMakhazeni",
+        "Belfast, Mpumalanga"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 3,
       "id": "belgrade",
@@ -4280,6 +4362,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "bloemfontein",
+      "kind": "place",
+      "names": [
+        "Bloemfontein"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "bloody-creek",
@@ -4583,6 +4692,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "boshof",
+      "kind": "place",
+      "names": [
+        "Boshof"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -4632,6 +4768,33 @@
           "imported-facts",
           "a9-place",
           "m42b-batch-54"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "bothaville",
+      "kind": "place",
+      "names": [
+        "Bothaville"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
         ],
         "status": "draft"
       },
@@ -5667,7 +5830,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 4,
+      "degree": 5,
       "id": "cairo",
       "kind": "place",
       "names": [
@@ -6228,6 +6391,34 @@
       "kind": "place",
       "names": [
         "Carnatic region"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "carolina-south-africa",
+      "kind": "place",
+      "names": [
+        "Carolina",
+        "Carolina, South Africa"
       ],
       "origin": {
         "tool": "wikidata"
@@ -8902,6 +9093,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "dellys",
+      "kind": "place",
+      "names": [
+        "Dellys"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 1,
       "id": "demerara",
@@ -10415,6 +10633,35 @@
       "kind": "place",
       "names": [
         "Ekeren"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "el-gadarif",
+      "kind": "place",
+      "names": [
+        "Al Qadarif",
+        "El-Gadarif",
+        "Gadarife (cidade)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -18539,6 +18786,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "kordofan",
+      "kind": "place",
+      "names": [
+        "Kordofan",
+        "Cordofão"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -18754,6 +19029,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "krugersdorp",
+      "kind": "place",
+      "names": [
+        "Krugersdorp"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -28734,7 +29036,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "pretoria",
       "kind": "place",
       "names": [
@@ -29831,6 +30133,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "rejaf",
+      "kind": "place",
+      "names": [
+        "Rejaf"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -33424,7 +33753,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 3,
       "id": "south-african-republic",
       "kind": "place",
       "names": [
@@ -36418,7 +36747,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 5,
+      "degree": 6,
       "id": "tlemcen",
       "kind": "place",
       "names": [
@@ -36909,7 +37238,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 8,
+      "degree": 9,
       "id": "tripoli",
       "kind": "place",
       "names": [
@@ -38656,7 +38985,7 @@
         }
       ],
       "created": "2026-10-15",
-      "degree": 5,
+      "degree": 6,
       "id": "west-africa",
       "kind": "place",
       "names": [
@@ -39002,6 +39331,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "witpoort",
+      "kind": "place",
+      "names": [
+        "Witpoort"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -39478,6 +39834,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "yendi",
+      "kind": "place",
+      "names": [
+        "Yendi"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
