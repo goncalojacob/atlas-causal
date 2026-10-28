@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-waxhaws",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1811438",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Waxhaws",
+    "pt": "Batalha de Waxhaws"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1811438"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Waxhaws\", revision 1379508777"
+    }
+  ],
+  "title": "Battle of Waxhaws",
+  "summary": "The English Wikipedia article \"Battle of Waxhaws\", at revision 1379508777, opens: \"The Battle of Waxhaws was a military engagement which took place near Lancaster, South Carolina on May 29, 1780, during the American Revolutionary War. A provincial unit, the British Legion commanded by Lieutenant Colonel Banastre Tarleton, overtook a Patriot force led by Abraham Buford. Buford's men consisted of Continental Army soldiers, while Tarleton's force was mostly made up of Loyalist troops. After the two forces sighted each other, Buford rejected an offer of surrender terms, and Tarleton's cavalry charged. An unknown number of Buford's men then attempted to surrender at the same time as Tarleton's horse was shot, pinning him underneath. An unknown number of Loyalists, angered by this apparent perfidy, continued their attack, killing some Patriots until order was restored.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1811438, imported by tools/import/wikidata.mjs. The item's own description reads \"1780 battle of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1780,
+    "end": 1780,
+    "date": "1780-05-29"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

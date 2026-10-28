@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "international-meridian-conference",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1194993",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "International Meridian Conference",
+    "pt": "Conferência Internacional do Meridiano"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1194993"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"International Meridian Conference\", revision 1379708089"
+    }
+  ],
+  "title": "International Meridian Conference",
+  "summary": "The English Wikipedia article \"International Meridian Conference\", at revision 1379708089, opens: \"The International Meridian Conference was a conference held in October 1884 in Washington, D.C., in the United States, to determine a prime meridian for international use. The conference was held at the request of U.S. president Chester A. Arthur. The subject to discuss was the choice of \"a meridian to be employed as a common zero of longitude and standard of time reckoning throughout the world\". It resulted in the recommendation of the Greenwich Meridian as the international standard for zero degrees longitude.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1194993, imported by tools/import/wikidata.mjs. The item's own description reads \"1884 conference in Washington, D.C., United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1884,
+    "end": 1884,
+    "date": "1884-10-01",
+    "endDate": "1884-11-01"
+  },
+  "place": "washington",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

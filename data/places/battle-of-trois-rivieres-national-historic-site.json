@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "battle-of-trois-rivieres-national-historic-site",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q18122849",
+  "sitelinks": {
+    "count": 0,
+    "on": "2026-10-28"
+  },
+  "sources": [],
+  "names": [
+    "Battle of Trois-Rivières National Historic Site"
+  ],
+  "where": {
+    "lon": -72.551925,
+    "lat": 46.343959,
+    "precision": "point",
+    "label": "Battle of Trois-Rivières National Historic Site"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "fenian-raids",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2996302",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Fenian raids",
+    "pt": "Ataques fenianos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2996302"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fenian raids\", revision 1379320769"
+    }
+  ],
+  "title": "Fenian raids",
+  "summary": "The English Wikipedia article \"Fenian raids\", at revision 1379320769, opens: \"The Fenian raids were a series of incursions carried out by the Fenian Brotherhood, an Irish republican organization based in the United States, on military fortifications, customs posts, and other targets in Canada in 1866, and again from 1870 to 1871. A number of separate incursions by the Fenian Brotherhood into Canada were undertaken to bring pressure on the British government to withdraw from Ireland, although none of these raids achieved their aims.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2996302, imported by tools/import/wikidata.mjs. The item's own description reads \"military mobility in between 1866-1870\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1871,
+    "date": "1866-04",
+    "endDate": "1871-10"
+  },
+  "place": "eastern-canada",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

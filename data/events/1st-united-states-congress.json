@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "1st-united-states-congress",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q162932",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1st United States Congress"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q162932"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1st United States Congress\", revision 1380236467"
+    }
+  ],
+  "title": "1st United States Congress",
+  "summary": "The English Wikipedia article \"1st United States Congress\", at revision 1380236467, opens: \"The 1st United States Congress, comprising the United States Senate and the United States House of Representatives, met from March 4, 1789, to March 4, 1791, during the first two years of George Washington's presidency, first at Federal Hall in New York City and later at Congress Hall in Philadelphia. With the initial meeting of the First Congress, the United States federal government officially began operations under the new frame of government established by the 1787 Constitution. The apportionment of seats in the House of Representatives was based on the provisions of Article I, Section 2, Clause 3, of the Constitution. Both chambers had a Pro-Administration majority. Twelve articles of amendment to the Constitution were passed by this Congress and sent to the states for ratification; the ten ratified as additions to the Constitution on December 15, 1791, are collectively known as the Bill of Rights, with an additional amendment ratified more than two centuries later to become the Twenty-seventh Amendment to the United States Constitution.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q162932, imported by tools/import/wikidata.mjs. The item's own description reads \"first legislative term of the United States Congress\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1789,
+    "end": 1791,
+    "date": "1789-03-04",
+    "endDate": "1791-03-04"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

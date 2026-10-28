@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-pea-ridge",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q193993",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Pea Ridge"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q193993"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pea Ridge\", revision 1370271674"
+    }
+  ],
+  "title": "Battle of Pea Ridge",
+  "summary": "The English Wikipedia article \"Battle of Pea Ridge\", at revision 1370271674, opens: \"The Battle of Pea Ridge, also known as the Battle of Elkhorn Tavern, took place during the American Civil War near Leetown, northeast of Fayetteville, Arkansas. Federal forces, led by Brigadier General Samuel R. Curtis, moved south from central Missouri, driving Confederate forces into northwestern Arkansas. Major General Earl Van Dorn had launched a Confederate counteroffensive, hoping to recapture northern Arkansas and Missouri. Confederate forces met at Bentonville and became the most substantial Rebel force, by way of guns and men, to assemble in the Trans-Mississippi. Against the odds, Curtis held off the Confederate attack on the first day and drove Van Dorn's force off the battlefield on the second. By defeating the Confederates, the Union forces established Federal control of most of Missouri and northern Arkansas.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q193993, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-03-07",
+    "endDate": "1862-03-08"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

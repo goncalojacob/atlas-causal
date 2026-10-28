@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-savannah-1779",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2744875",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Siege of Savannah (1779)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2744875"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Savannah (1779)\", revision 1380550458"
+    }
+  ],
+  "title": "Siege of Savannah (1779)",
+  "summary": "The English Wikipedia article \"Siege of Savannah (1779)\", at revision 1380550458, opens: \"The siege of Savannah or the second battle of Savannah was an encounter of the American Revolutionary War (1775–1783) in 1779. The year before, the city of Savannah, Georgia, had been captured by a British expeditionary corps under Lieutenant-Colonel Archibald Campbell. The siege itself consisted of a joint Franco-American attempt to retake Savannah, from September 16 to October 18, 1779.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2744875, imported by tools/import/wikidata.mjs. The item's own description reads \"1779 siege of the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1779,
+    "end": 1779,
+    "date": "1779-09-16",
+    "endDate": "1779-10-18"
+  },
+  "place": "savannah-georgia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

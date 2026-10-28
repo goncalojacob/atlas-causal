@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "franklin-s-lost-expedition",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2305",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Franklin's lost expedition",
+    "pt": "Expedição de John Franklin"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2305"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Franklin's lost expedition\", revision 1380854868"
+    }
+  ],
+  "title": "Franklin's lost expedition",
+  "summary": "The English Wikipedia article \"Franklin's lost expedition\", at revision 1380854868, opens: \"Franklin's lost expedition was a failed British voyage of Arctic exploration led by Captain Sir John Franklin that departed England in 1845 aboard two ships, HMS Erebus and HMS Terror, and was assigned to traverse the last unnavigated sections of the Northwest Passage in the Canadian Arctic and to record magnetic data to help determine whether a better understanding could aid navigation. The expedition met with disaster after both ships and their crews, a total of 129 officers and men, became icebound in Victoria Strait near King William Island in what is today the Canadian territory of Nunavut. After being icebound for more than a year, Erebus and Terror were abandoned in April 1848, by which point two dozen men, including Franklin, had died. The survivors, now led by Franklin's second-in-command, Francis Crozier, and Erebus's captain, James Fitzjames, set out for the Canadian mainland and disappeared, presumably having perished.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2305, imported by tools/import/wikidata.mjs. The item's own description reads \"1845 British expedition of Arctic exploration\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1845,
+    "end": 1848,
+    "date": "1845-05-19"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

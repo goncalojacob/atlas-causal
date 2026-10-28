@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-angamos",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q369893",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Angamos",
+    "pt": "Combate Naval de Angamos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q369893"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Angamos\", revision 1378713943"
+    }
+  ],
+  "title": "Battle of Angamos",
+  "summary": "The English Wikipedia article \"Battle of Angamos\", at revision 1378713943, opens: \"The Battle of Angamos was a naval encounter of the War of the Pacific fought between the navies of Chile and Perú at Punta Angamos, on 8 October 1879. The battle was the culminating point of a naval campaign that lasted about five months in which the Chilean Navy had the sole mission of eliminating its Peruvian counterpart. In the struggle, two armored frigates, led by Commodore Galvarino Riveros Cárdenas and Navy Captain Juan José Latorre battered and later captured the Peruvian monitor Huáscar, under Rear Admiral Miguel Grau Seminario.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q369893, imported by tools/import/wikidata.mjs. The item's own description reads \"1879 naval encounter of the War of the Pacific\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879,
+    "date": "1879-10-08"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-pacific"
+}

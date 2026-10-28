@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-malvern-hill",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1934345",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Malvern Hill",
+    "pt": "Batalha de Malvern Hill"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1934345"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Malvern Hill\", revision 1373344783"
+    }
+  ],
+  "title": "Battle of Malvern Hill",
+  "summary": "The English Wikipedia article \"Battle of Malvern Hill\", at revision 1373344783, opens: \"The Battle of Malvern Hill, also known as the Battle of Poindexter's Farm, was fought on July 1, 1862, between the Confederate Army of Northern Virginia, led by Gen. Robert E. Lee, and the Union Army of the Potomac under Maj. Gen. George B. McClellan. It was the final battle of the Seven Days Battles during the American Civil War, taking place on a 130-foot (40 m) elevation of land known as Malvern Hill, near the Confederate capital of Richmond, Virginia and just one mile (1.6 km) from the James River. Including inactive reserves, more than fifty thousand soldiers from each side took part, using more than two hundred pieces of artillery and three warships.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1934345, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-07-01"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}
