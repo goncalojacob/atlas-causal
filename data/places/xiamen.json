@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "xiamen",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q68744",
+  "sitelinks": {
+    "count": 75,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Xiamen",
+    "pt": "Xiamen"
+  },
+  "sources": [],
+  "names": [
+    "Xiamen"
+  ],
+  "where": {
+    "lon": 118.08194444444,
+    "lat": 24.479722222222,
+    "precision": "city",
+    "label": "Xiamen"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

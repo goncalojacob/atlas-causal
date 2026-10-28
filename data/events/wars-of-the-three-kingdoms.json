@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "wars-of-the-three-kingdoms",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2577772",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Wars of the Three Kingdoms",
+    "pt": "Guerras dos Três Reinos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2577772"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Wars of the Three Kingdoms\", revision 1380576349"
+    }
+  ],
+  "title": "Wars of the Three Kingdoms",
+  "summary": "The English Wikipedia article \"Wars of the Three Kingdoms\", at revision 1380576349, opens: \"The Wars of the Three Kingdoms is the collective term for a series of conflicts fought between 1639 and 1653 in England, Scotland, and Ireland, then separate entities in a personal union under Charles I. They include the 1639 to 1640 Bishops' Wars, the First and Second English Civil Wars, the Irish Confederate Wars, the Cromwellian conquest of Ireland, and the Anglo-Scottish War of 1650–1652. They resulted in the execution of Charles I, the abolition of monarchy, and founding of the Commonwealth of England, a unitary state which controlled the British Isles until the Stuart Restoration in 1660.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2577772, imported by tools/import/wikidata.mjs. The item's own description reads \"British civil wars, 1639–1651\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1638,
+    "end": 1651
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

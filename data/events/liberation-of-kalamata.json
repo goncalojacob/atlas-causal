@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "liberation-of-kalamata",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q13628984",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Liberation of Kalamata"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q13628984"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Liberation of Kalamata\", revision 1370626787"
+    }
+  ],
+  "title": "Liberation of Kalamata",
+  "summary": "The English Wikipedia article \"Liberation of Kalamata\", at revision 1370626787, opens: \"The Liberation of Kalamata took place on 23 March (O.S.) 1821 when Greek irregular revolutionary forces took control of the city after the surrender of the Ottoman garrison, without fighting. It was one of the first events of the Greek War of Independence. Kalamata became the first major town to be liberated.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q13628984, imported by tools/import/wikidata.mjs. The item's own description reads \"1821 liberation of Kalamata\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-03-22",
+    "endDate": "1821-03-23"
+  },
+  "place": "kalamata",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

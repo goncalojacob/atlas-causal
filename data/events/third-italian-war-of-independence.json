@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "third-italian-war-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1248722",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Third Italian War of Independence",
+    "pt": "Terceira Guerra de Independência Italiana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1248722"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Third Italian War of Independence\", revision 1378374780"
+    }
+  ],
+  "title": "Third Italian War of Independence",
+  "summary": "The English Wikipedia article \"Third Italian War of Independence\", at revision 1378374780, opens: \"The Third Italian War of Independence was a war between the Kingdom of Italy and the Austrian Empire fought between June and August 1866. The conflict paralleled the Austro-Prussian War and resulted in Austria giving the region of Venetia to the Second French Empire, which formally gave it to Italy. Italy's acquisition of this wealthy and populous territory, annexed with a plebiscite, represented a major step in the Unification of Italy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1248722, imported by tools/import/wikidata.mjs. The item's own description reads \"1866 conflict, part of the Italian unification (Risorgimento)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1866,
+    "date": "1866-06-20",
+    "endDate": "1866-08-12"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "austro-prussian-war"
+}

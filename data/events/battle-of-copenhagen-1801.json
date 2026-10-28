@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-copenhagen-1801",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q755955",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Copenhagen (1801)",
+    "pt": "Batalha de Copenhaga"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q755955"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Copenhagen (1801)\", revision 1376064749"
+    }
+  ],
+  "title": "Battle of Copenhagen (1801)",
+  "summary": "The English Wikipedia article \"Battle of Copenhagen (1801)\", at revision 1376064749, opens: \"In the Battle of Copenhagen, also known as the First Battle of Copenhagen to distinguish it from the Second Battle of Copenhagen in 1807, a British naval fleet defeated a smaller force of the Royal Dano-Norwegian Navy anchored near Copenhagen on 2 April 1801. The battle came about over British fears that the powerful Danish fleet would ally with France, and a breakdown in diplomatic communications on both sides.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q755955, imported by tools/import/wikidata.mjs. The item's own description reads \"battle between British and Dano–Norwegian navies (1801)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1801,
+    "end": 1801,
+    "date": "1801-04-02"
+  },
+  "place": "copenhagen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

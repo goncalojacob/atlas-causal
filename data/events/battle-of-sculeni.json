@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-sculeni",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2093780",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Sculeni"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2093780"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Sculeni\", revision 1370588869"
+    }
+  ],
+  "title": "Battle of Sculeni",
+  "summary": "The English Wikipedia article \"Battle of Sculeni\", at revision 1370588869, opens: \"The Battle of Sculeni was fought on 29 June 1821 in Sculeni, Moldavia between Ottoman forces and the Greek revolutionary forces raised by the Filiki Eteria led by Prince George Katakouzenos. The battle came about as the result of Ottoman reprisals for Alexander Ypsilantis' expedition in the two Danubian Principalities, and followed in the aftermath of the Battle of Drăgășani. When the Ottomans crossed the Bahlui River in Iaşi on 25 June 1821, Lieutenant Catakouzenos and his forces, originally stationed on the Russian frontier, crossed the Prut River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2093780, imported by tools/import/wikidata.mjs. The item's own description reads \"1821 battle of the Greek War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-07-11"
+  },
+  "place": "sculeni",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

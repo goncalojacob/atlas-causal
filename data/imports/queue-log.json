@@ -23703,6 +23703,619 @@
         "place": "naousa-imathia"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-249",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chuenpi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-251",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "keelung-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-253",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sculeni",
+        "edges": [],
+        "place": "sculeni"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-255",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kamatero",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-257",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-vasilika",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-259",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "second-siege-of-missolonghi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-261",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-patras-1821",
+        "edges": [],
+        "place": "patras"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-263",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "greek-raid-on-alexandria-1825",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-265",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chapu",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-267",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kowloon",
+        "edges": [],
+        "place": "kowloon-peninsula"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-271",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6268269: none of its classes (Q7292715) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-americas-273",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3067868: none of its classes (Q3119160) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-americas-275",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3071310: none of its classes (Q25230) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-americas-277",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7414187: none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-europe-087",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q164679: none of its classes (Q838718) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-europe-089",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q595545: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-europe-091",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-sevastopol-1854-1855",
+        "edges": [],
+        "place": "sevastopol"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-093",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-copenhagen-1801",
+        "edges": [],
+        "place": "copenhagen"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-095",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "swabian-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-097",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "peace-of-basel",
+        "edges": [],
+        "place": "basel"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-099",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-rossbach",
+        "edges": [],
+        "place": "halle-saale"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-101",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "sonderbund-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-103",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-hubertusburg",
+        "edges": [],
+        "place": "wermsdorf"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-105",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "chechen-russian-conflict",
+        "edges": [],
+        "place": "north-caucasus"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-107",
+      "writer": "A",
+      "fired": "2026-10-28T14:41Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-cateau-cambresis",
+        "edges": [],
+        "place": "le-cateau-cambresis"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-250",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4872549: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-asia-252",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-dalinghe",
+        "edges": [],
+        "place": "daling-river"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-254",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-petra",
+        "edges": [],
+        "place": "petra-boeotia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-256",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-lerna-mills",
+        "edges": [],
+        "place": "myloi-argolis"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-258",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nauplia-1822",
+        "edges": [],
+        "place": "argolic-gulf"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-260",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lalas",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-262",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "liberation-of-kalamata",
+        "edges": [],
+        "place": "kalamata"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-264",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-amoy",
+        "edges": [],
+        "place": "xiamen"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-266",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-chinkiang",
+        "edges": [],
+        "place": "zhenjiang"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-270",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q977981: none of its classes (Q10332881) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-americas-272",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1479636: none of its classes (Q2908804) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-americas-274",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4554489: none of its classes (Q30103545) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-americas-276",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q27926964: none of its classes (Q30103545) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-americas-278",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6492180: none of its classes (Q107637520) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-europe-088",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q217429: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-europe-090",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "wars-of-the-three-kingdoms",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-092",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "azov-campaigns-1695-1696",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-094",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "third-italian-war-of-independence",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-096",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-saint-gotthard-1664",
+        "edges": [],
+        "place": "szentgotthard"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-098",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "truce-of-andrusovo",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-100",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "april-uprising-of-1876",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-102",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-ghent",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-104",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kunersdorf",
+        "edges": [],
+        "place": "kunowice"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-106",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "serbian-revolution",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-108",
+      "writer": "B",
+      "fired": "2026-10-28T14:46Z",
+      "status": "written",
+      "written": {
+        "event": "european-wars-of-religion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

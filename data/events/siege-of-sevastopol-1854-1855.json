@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-sevastopol-1854-1855",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q815216",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Siege of Sevastopol (1854–1855)",
+    "pt": "Cerco de Sebastopol (1854–1855)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q815216"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Sevastopol (1854–1855)\", revision 1372251749"
+    }
+  ],
+  "title": "Siege of Sevastopol (1854–1855)",
+  "summary": "The English Wikipedia article \"Siege of Sevastopol (1854–1855)\", at revision 1372251749, opens: \"The Siege of Sevastopol lasted from October 1854 until September 1855, during the Crimean War. The allies landed at Eupatoria on 14 September 1854, intending to make a triumphal march to Sevastopol, the capital of the Crimea, with 50,000 men. Major battles along the way were Alma, Balaklava, Inkerman, Tchernaya, Redan, and, finally, Malakoff. During the siege, the allied navy undertook six bombardments of the capital, on 17 October 1854; and on 9 April, 6 June, 17 June, 17 August, and 5 September 1855.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q815216, imported by tools/import/wikidata.mjs. The item's own description reads \"siege during the Crimean War which lasted from September 1854 until September 1855\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": 1855,
+    "date": "1854-10-17",
+    "endDate": "1855-09-09"
+  },
+  "place": "sevastopol",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "crimean-war"
+}
