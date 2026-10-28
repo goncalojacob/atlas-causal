@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "argentine-revolution-of-1893",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6107253",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Argentine Revolution of 1893"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6107253"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Argentine Revolution of 1893\", revision 1370105251"
+    }
+  ],
+  "title": "Argentine Revolution of 1893",
+  "summary": "The English Wikipedia article \"Argentine Revolution of 1893\", at revision 1370105251, opens: \"The Argentine Revolution of 1893, or the Radical Revolution of 1893, was a failed insurrection by members of the Radical Civic Union (UCR) against the government of Argentina, then controlled by the National Autonomist Party (PAN). It continued the goals of the Revolution of the Park of 1890, whose themes were further echoed in the Revolution of 1905.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6107253, imported by tools/import/wikidata.mjs. The item's own description reads \"revolution in Argentina\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1893,
+    "end": 1893
+  },
+  "place": "argentina-q414",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

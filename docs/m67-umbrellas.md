@@ -3366,3 +3366,55 @@ Writer B imported it from the planner's queue as item `2026-10-27-europe-036`, w
 ## Writer A, 2026-10-28: `hadzi-prodan-s-rebellion`, bare
 
 Writer A imported it from the planner's queue as item `2026-10-27-asia-164`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `balaiada`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-244`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `sabinada`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-248`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `mapuche-uprising-of-1881`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-252`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `1811-independence-movement`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-260`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `garza-revolution`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-264`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `red-river-rebellion`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-237`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `regulator-movement-in-north-carolina`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-241`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `natchez-revolt`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-243`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `lower-canada-rebellion`, filed under `rebellions-of-1837-1838` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-27-americas-245`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-28: `war-of-the-mascates`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-249`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `revolution-of-the-44`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-259`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `cuzco-rebellion-of-1814`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-261`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `revolt-of-the-muckers`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-267`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.

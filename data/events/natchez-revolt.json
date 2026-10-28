@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "natchez-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q11611",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Natchez revolt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11611"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Natchez revolt\", revision 1376412384"
+    }
+  ],
+  "title": "Natchez revolt",
+  "summary": "The English Wikipedia article \"Natchez revolt\", at revision 1376412384, opens: \"The Natchez revolt, or the Natchez massacre, was an attack by the Natchez Native American people on French colonists near present-day Natchez, Mississippi, on November 28, 1729. The Natchez and French had lived alongside each other in the Louisiana colony for more than a decade prior to the incident, mostly conducting peaceful trade and occasionally intermarrying. After a period of deteriorating relations and warring, Natchez leaders were provoked to revolt when the French colonial commandant, Sieur de Chépart, demanded land from a Natchez village for his own plantation near Fort Rosalie. The Natchez plotted their attack over several days and managed to conceal their plans from most of the French; colonists who overheard and warned Chépart of an attack were considered untruthful and were punished. In a coordinated attack on the fort and the homesteads, the Natchez killed almost all of the Frenchmen, while sparing most of the women and enslaved Africans. Approximately 230 colonists were killed overall, and the fort and homes were burned to the ground.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11611, imported by tools/import/wikidata.mjs. The item's own description reads \"1729 Revolt against French colonists\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1729,
+    "end": 1729,
+    "date": "1729-11-29"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

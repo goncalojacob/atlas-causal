@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1851-chilean-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4554827",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1851 Chilean revolution"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4554827"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1851 Chilean revolution\", revision 1370278887"
+    }
+  ],
+  "title": "1851 Chilean revolution",
+  "summary": "The English Wikipedia article \"1851 Chilean revolution\", at revision 1370278887, opens: \"The Revolution of 1851 was an attempt by Chilean liberals to overthrow the conservative government of president Manuel Montt and repeal the Chilean Constitution of 1833. After various battles and sieges, by late December 1851 government forces had subdued the revolutionaries.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4554827, imported by tools/import/wikidata.mjs. The item's own description reads \"failed attempt to overthrow Chile's government\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1851,
+    "end": 1851,
+    "date": "1851-04-20",
+    "endDate": "1851-12-31"
+  },
+  "place": "chile-q298",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}
