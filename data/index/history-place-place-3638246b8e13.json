@@ -2620,6 +2620,15 @@
         }
       ]
     },
+    "cairo-montenotte": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "cajamarca": {
       "from": "git",
       "versions": [
@@ -4341,6 +4350,15 @@
         }
       ]
     },
+    "deulino-moscow-oblast": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "dharwad": {
       "from": "git",
       "versions": [
@@ -4740,6 +4758,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "east-stoke-nottinghamshire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -6342,6 +6369,15 @@
         }
       ]
     },
+    "gro-beeren": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "groton-massachusetts": {
       "from": "git",
       "versions": [
@@ -6617,6 +6653,15 @@
         }
       ]
     },
+    "hamelin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "hampi": {
       "from": "git",
       "versions": [
@@ -6728,6 +6773,15 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "heiligerlee": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -9534,6 +9588,15 @@
         }
       ]
     },
+    "lovosice": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "low-countries": {
       "from": "git",
       "versions": [
@@ -9818,6 +9881,15 @@
             "sitelinks"
           ],
           "on": "2026-09-03"
+        }
+      ]
+    },
+    "macedonia-region": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -10220,6 +10292,15 @@
         }
       ]
     },
+    "mars-la-tour": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "marseille": {
       "from": "git",
       "versions": [
@@ -10594,6 +10675,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "mezokeresztes": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -11222,6 +11312,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "murten": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -12525,6 +12624,15 @@
         }
       ]
     },
+    "passau": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "passendale": {
       "from": "git",
       "versions": [
@@ -12797,6 +12905,15 @@
         }
       ]
     },
+    "petropavlovsk-kamchatsky": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "petropolis": {
       "from": "git",
       "versions": [
@@ -12943,6 +13060,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "pleven": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -15180,6 +15306,15 @@
         }
       ]
     },
+    "shelon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "shenandoah-valley": {
       "from": "git",
       "versions": [
@@ -16927,6 +17062,15 @@
         }
       ]
     },
+    "tolentino": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "tongyeong": {
       "from": "git",
       "versions": [
@@ -18204,6 +18348,15 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "whitechapel": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

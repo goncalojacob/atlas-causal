@@ -689,6 +689,15 @@
         }
       ]
     },
+    "battle-of-heiligerlee-1568": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-hemmingstedt": {
       "from": "git",
       "versions": [
@@ -800,6 +809,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "battle-of-keresztes": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3048,6 +3066,15 @@
         }
       ]
     },
+    "peace-of-passau": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "persian-uzbek-wars": {
       "from": "git",
       "versions": [
@@ -3540,6 +3567,15 @@
         }
       ]
     },
+    "siege-of-eger-1552": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "siege-of-famagusta": {
       "from": "git",
       "versions": [
@@ -3821,6 +3857,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "siege-of-nice": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

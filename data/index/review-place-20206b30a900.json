@@ -5941,7 +5941,7 @@
         }
       ],
       "created": "2026-10-15",
-      "degree": 1,
+      "degree": 2,
       "id": "british-isles",
       "kind": "place",
       "names": [
@@ -6339,7 +6339,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 3,
+      "degree": 4,
       "id": "bulgaria-q219",
       "kind": "place",
       "names": [
@@ -6620,6 +6620,33 @@
       "kind": "place",
       "names": [
         "Cairo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "cairo-montenotte",
+      "kind": "place",
+      "names": [
+        "Cairo Montenotte"
       ],
       "origin": {
         "tool": "wikidata"
@@ -10603,7 +10630,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 7,
+      "degree": 8,
       "id": "denmark-q35",
       "kind": "place",
       "names": [
@@ -10838,6 +10865,33 @@
       "kind": "place",
       "names": [
         "Detroit"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "deulino-moscow-oblast",
+      "kind": "place",
+      "names": [
+        "Deulino, Moscow Oblast"
       ],
       "origin": {
         "tool": "wikidata"
@@ -11800,6 +11854,34 @@
       ],
       "created": "2026-10-28",
       "degree": 1,
+      "id": "east-stoke-nottinghamshire",
+      "kind": "place",
+      "names": [
+        "East Stoke",
+        "East Stoke, Nottinghamshire"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
       "id": "eastern-canada",
       "kind": "place",
       "names": [
@@ -11993,7 +12075,7 @@
         }
       ],
       "created": "2026-09-29",
-      "degree": 2,
+      "degree": 3,
       "id": "eger",
       "kind": "place",
       "names": [
@@ -15634,6 +15716,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "gro-beeren",
+      "kind": "place",
+      "names": [
+        "Großbeeren"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "groton-massachusetts",
@@ -16285,6 +16394,33 @@
       ],
       "created": "2026-10-28",
       "degree": 1,
+      "id": "hamelin",
+      "kind": "place",
+      "names": [
+        "Hamelin"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
       "id": "hampi",
       "kind": "place",
       "names": [
@@ -16602,6 +16738,33 @@
           "a9-place"
         ],
         "note": "The point is the P625 of Wikidata Q489561, the Battle of Heartbreak Ridge, read on 2026-09-25 — A9's first step. The hill mass has no item this pass could reach; the article calls it a \"7-mile (11 km) long hill mass\" 1,500 yards from Bloody Ridge, so the point stands for a ridge and not for a settlement.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "heiligerlee",
+      "kind": "place",
+      "names": [
+        "Heiligerlee"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -23356,7 +23519,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "lodi-lombardy",
       "kind": "place",
       "names": [
@@ -23412,7 +23575,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 15,
+      "degree": 17,
       "id": "london",
       "kind": "place",
       "names": [
@@ -23539,6 +23702,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "lovosice",
+      "kind": "place",
+      "names": [
+        "Lovosice"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -24148,6 +24338,35 @@
       "review": {
         "flags": [
           "wikidata-assigned-by-assistant"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "macedonia-region",
+      "kind": "place",
+      "names": [
+        "Macedonia",
+        "Macedonia (region)",
+        "Macedônia (região)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
         ],
         "status": "draft"
       },
@@ -25245,6 +25464,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "mars-la-tour",
+      "kind": "place",
+      "names": [
+        "Mars-la-Tour"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
       "degree": 2,
       "id": "marseille",
@@ -26181,6 +26427,33 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "mezokeresztes",
+      "kind": "place",
+      "names": [
+        "Mezőkeresztes"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -27204,7 +27477,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 8,
+      "degree": 9,
       "id": "moscow",
       "kind": "place",
       "names": [
@@ -27682,7 +27955,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "munich",
       "kind": "place",
       "names": [
@@ -27718,6 +27991,33 @@
       "kind": "place",
       "names": [
         "Münster"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "murten",
+      "kind": "place",
+      "names": [
+        "Murten"
       ],
       "origin": {
         "tool": "wikidata"
@@ -28514,7 +28814,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "neerwinden",
       "kind": "place",
       "names": [
@@ -28879,7 +29179,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "nice",
       "kind": "place",
       "names": [
@@ -30854,7 +31154,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 25,
+      "degree": 26,
       "id": "paris",
       "kind": "place",
       "names": [
@@ -30918,6 +31218,33 @@
         "tool": "assistant"
       },
       "review": {
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "passau",
+      "kind": "place",
+      "names": [
+        "Passau"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -31629,6 +31956,35 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "petropavlovsk-kamchatsky",
+      "kind": "place",
+      "names": [
+        "Petropavlovsk-Kamchatsky",
+        "Petropavlovsk-Kamchatski",
+        "Petropavlovsk-Kamtchatski"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -31971,6 +32327,33 @@
       "kind": "place",
       "names": [
         "Plered"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "pleven",
+      "kind": "place",
+      "names": [
+        "Pleven"
       ],
       "origin": {
         "tool": "wikidata"
@@ -33416,7 +33799,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "pylos",
       "kind": "place",
       "names": [
@@ -35399,7 +35782,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 6,
       "id": "saint-petersburg",
       "kind": "place",
       "names": [
@@ -37188,6 +37571,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "shelon",
+      "kind": "place",
+      "names": [
+        "Shelon",
+        "Rio Shelon"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -41510,6 +41921,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "tolentino",
+      "kind": "place",
+      "names": [
+        "Tolentino"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 1,
       "id": "tongyeong",
@@ -42306,7 +42744,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 2,
+      "degree": 3,
       "id": "turin",
       "kind": "place",
       "names": [
@@ -43403,7 +43841,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "versailles-yvelines",
       "kind": "place",
       "names": [
@@ -44029,7 +44467,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "warsaw",
       "kind": "place",
       "names": [
@@ -44584,6 +45022,33 @@
         "White Plains",
         "White Plains, New York",
         "White Plains (Nova Iorque)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "whitechapel",
+      "kind": "place",
+      "names": [
+        "Whitechapel"
       ],
       "origin": {
         "tool": "wikidata"

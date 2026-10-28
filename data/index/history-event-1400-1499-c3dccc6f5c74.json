@@ -110,6 +110,15 @@
         }
       ]
     },
+    "battle-of-morat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-mortimer-s-cross": {
       "from": "git",
       "versions": [
@@ -147,6 +156,24 @@
       ]
     },
     "battle-of-patay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-shelon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-stoke-field": {
       "from": "git",
       "versions": [
         {
@@ -210,6 +237,15 @@
       ]
     },
     "battle-of-wakefield": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-zonchio": {
       "from": "git",
       "versions": [
         {
@@ -479,6 +515,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "night-attack-at-targoviste": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -755,6 +800,24 @@
       ]
     },
     "treaty-of-constantinople-1479": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-granada-1491": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-lodi": {
       "from": "git",
       "versions": [
         {

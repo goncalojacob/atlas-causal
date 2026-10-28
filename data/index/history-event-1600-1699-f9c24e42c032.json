@@ -29,6 +29,15 @@
         }
       ]
     },
+    "1693-sicily-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "acadian-civil-war": {
       "from": "git",
       "versions": [
@@ -893,6 +902,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-konotop": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1803,6 +1821,15 @@
         }
       ]
     },
+    "battle-of-warsaw-1656": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-werben": {
       "from": "git",
       "versions": [
@@ -2613,6 +2640,15 @@
         }
       ]
     },
+    "jacobite-risings": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "jiajing-wokou-raids": {
       "from": "git",
       "versions": [
@@ -2769,6 +2805,15 @@
         }
       ]
     },
+    "magnate-conspiracy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "mapuche-uprising-of-1655": {
       "from": "git",
       "versions": [
@@ -2850,6 +2895,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "moscow-uprising-of-1682": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3381,6 +3435,15 @@
             "actors"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "russian-famine-of-1601-1603": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4536,6 +4599,15 @@
         }
       ]
     },
+    "treaty-of-london-1604": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-lubeck": {
       "from": "git",
       "versions": [
@@ -4636,6 +4708,15 @@
       ]
     },
     "truce-of-andrusovo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "truce-of-deulino": {
       "from": "git",
       "versions": [
         {

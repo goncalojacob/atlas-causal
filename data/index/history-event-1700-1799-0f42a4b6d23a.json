@@ -769,6 +769,15 @@
         }
       ]
     },
+    "battle-of-cape-passaro": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-cape-spartel": {
       "from": "git",
       "versions": [
@@ -789,6 +798,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-cape-st-vincent-1797": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1306,6 +1324,15 @@
         }
       ]
     },
+    "battle-of-hastenbeck": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-havana-1748": {
       "from": "git",
       "versions": [
@@ -1582,6 +1609,15 @@
         }
       ]
     },
+    "battle-of-lobositz": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-lodi": {
       "from": "git",
       "versions": [
@@ -1760,6 +1796,15 @@
         }
       ]
     },
+    "battle-of-montenotte": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-mount-tabor-1799": {
       "from": "git",
       "versions": [
@@ -1784,6 +1829,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-neerwinden-1793": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3041,6 +3095,15 @@
         }
       ]
     },
+    "chouannerie": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "civil-constitution-of-the-clergy": {
       "from": "git",
       "versions": [
@@ -3497,6 +3560,15 @@
       ]
     },
     "georgian-era": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "gordon-riots": {
       "from": "git",
       "versions": [
         {
@@ -4356,6 +4428,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "russo-circassian-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5886,6 +5967,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-union": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
