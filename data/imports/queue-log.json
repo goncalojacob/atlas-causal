@@ -29128,6 +29128,632 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-081",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-london-1839",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-083",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "written",
+      "written": {
+        "event": "russo-turkish-war-1672-1681",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-085",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "written",
+      "written": {
+        "event": "russo-persian-war-1804-1813",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-087",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "written",
+      "written": {
+        "event": "deluge-history",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-089",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-mohacs-1687",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-091",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "written",
+      "written": {
+        "event": "georgian-era",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-093",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "written",
+      "written": {
+        "event": "burgundian-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-095",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q755955 is already the event \"battle-of-copenhagen-1801\""
+    },
+    {
+      "id": "2026-10-28-europe-097",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q667080 is already the event \"peace-of-basel\""
+    },
+    {
+      "id": "2026-10-28-europe-099",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1248722 is already the event \"third-italian-war-of-independence\""
+    },
+    {
+      "id": "2026-10-28-europe-101",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q165136 is already the event \"swabian-war\""
+    },
+    {
+      "id": "2026-10-28-europe-103",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q836963 is already the event \"treaty-of-cateau-cambresis\""
+    },
+    {
+      "id": "2026-10-28-europe-105",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2577772 is already the event \"wars-of-the-three-kingdoms\""
+    },
+    {
+      "id": "2026-10-28-europe-107",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q698686 is already the event \"treaty-of-hubertusburg\""
+    },
+    {
+      "id": "2026-10-28-europe-109",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q688297 is already the event \"sonderbund-war\""
+    },
+    {
+      "id": "2026-10-28-europe-111",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1763834 is already the event \"azov-campaigns-1695-1696\""
+    },
+    {
+      "id": "2026-10-28-europe-113",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q622059 is already the event \"april-uprising-of-1876\""
+    },
+    {
+      "id": "2026-10-28-europe-115",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "written",
+      "written": {
+        "event": "carlist-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-117",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "written",
+      "written": {
+        "event": "high-renaissance",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-119",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2092429 is already the event \"serbian-revolution\""
+    },
+    {
+      "id": "2026-10-28-europe-121",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q829702 is already the event \"treaty-of-copenhagen-1660\""
+    },
+    {
+      "id": "2026-10-28-europe-123",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q700027 is already the event \"union-of-arras\""
+    },
+    {
+      "id": "2026-10-28-europe-125",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-fleurus-1794",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-127",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q25628 is already the event \"great-stand-on-the-ugra-river\""
+    },
+    {
+      "id": "2026-10-28-europe-129",
+      "writer": "A",
+      "fired": "2026-10-28T19:50Z",
+      "status": "written",
+      "written": {
+        "event": "herzegovina-uprising-1875-1877",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-082",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "written",
+      "written": {
+        "event": "silesian-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-084",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q871792: its classes disagree: Q6428674 → event, Q11514315 → event, Q3024240 → actor"
+    },
+    {
+      "id": "2026-10-28-europe-086",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "written",
+      "written": {
+        "event": "edict-of-fontainebleau",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-088",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "written",
+      "written": {
+        "event": "peace-of-prague-1866",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-090",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "written",
+      "written": {
+        "event": "emancipation-reform-of-1861",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-092",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "written",
+      "written": {
+        "event": "granada-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-094",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "written",
+      "written": {
+        "event": "second-partition-of-poland",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-096",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-paris-1815",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-098",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q170113 is already the event \"battle-of-saint-gotthard-1664\""
+    },
+    {
+      "id": "2026-10-28-europe-100",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "written",
+      "written": {
+        "event": "french-revolutionary-and-napoleonic-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-102",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "written",
+      "written": {
+        "event": "constitution-of-belgium",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-104",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1324198 is already the event \"treaty-of-ghent\""
+    },
+    {
+      "id": "2026-10-28-europe-106",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q815216 is already the event \"siege-of-sevastopol-1854-1855\""
+    },
+    {
+      "id": "2026-10-28-europe-108",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q721168 is already the event \"truce-of-andrusovo\""
+    },
+    {
+      "id": "2026-10-28-europe-110",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q573972 is already the event \"battle-of-rossbach\""
+    },
+    {
+      "id": "2026-10-28-europe-112",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "written",
+      "written": {
+        "event": "french-constitution-of-1791",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-114",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lutzen-1813",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-116",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-venetian-war-1714-1718",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-118",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q14947002 is already the event \"chechen-russian-conflict\""
+    },
+    {
+      "id": "2026-10-28-europe-120",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q238809: its classes disagree: Q11514315 → event, Q3024240 → actor"
+    },
+    {
+      "id": "2026-10-28-europe-122",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q183080 is already the event \"paris-convention-for-the-protection-of-industrial-property\""
+    },
+    {
+      "id": "2026-10-28-europe-124",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q170400 is already the event \"battle-of-kunersdorf\""
+    },
+    {
+      "id": "2026-10-28-europe-126",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2341073 is already the event \"first-carlist-war\""
+    },
+    {
+      "id": "2026-10-28-europe-128",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-novara-1849",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-011",
+      "writer": "B",
+      "fired": "2026-10-28T19:53Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1676845 is already the event \"boer-wars\""
     }
   ]
 }

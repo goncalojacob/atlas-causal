@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "deluge-history",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q631163",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Deluge (history)",
+    "pt": "Dilúvio (Polônia)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q631163"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Deluge (history)\", revision 1382444624"
+    }
+  ],
+  "title": "Deluge (history)",
+  "summary": "The English Wikipedia article \"Deluge (history)\", at revision 1382444624, opens: \"The Deluge was a series of mid-17th-century military campaigns in the Polish–Lithuanian Commonwealth. In a stricter sense, the term refers to the Swedish invasion and occupation of the Commonwealth as a theatre of the Northern War of 1655–1660 only; in Poland and Lithuania this period is called the Swedish Deluge or less commonly the Russo–Swedish Deluge due to the simultaneous Russo-Polish War. In a wider sense, it applies to the period between the Khmelnytsky Uprising of 1648 and the Truce of Andrusovo in 1667, comprising the Polish theatres of the Russo-Polish and Second Northern Wars. The term \"deluge\" was popularized by Henryk Sienkiewicz in his novel The Deluge (1886).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q631163, imported by tools/import/wikidata.mjs. The item's own description reads \"war between Sweden and the Polish–Lithuanian Commonwealth\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1655,
+    "end": 1660
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "northern-war-of-1655-1660"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-paris-1815",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q233688",
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Paris (1815)",
+    "pt": "Tratado de Paris (1815)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q233688"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Paris (1815)\", revision 1379222764"
+    }
+  ],
+  "title": "Treaty of Paris (1815)",
+  "summary": "The English Wikipedia article \"Treaty of Paris (1815)\", at revision 1379222764, opens: \"The Treaty of Paris of 1815, also known as the Second Treaty of Paris, was signed on 20 November 1815, after the defeat and the second abdication of Napoleon Bonaparte. In February, Napoleon had escaped from his exile on Elba, entered Paris on 20 March and began the Hundred Days of his restored rule. After France's defeat at the hands of the Seventh Coalition at the Battle of Waterloo, Napoleon was forced to abdicate again, on 22 June. King Louis XVIII, who had fled the country when Napoleon arrived in Paris, took the throne for a second time on 8 July.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q233688, imported by tools/import/wikidata.mjs. The item's own description reads \"1815 treaty to close the napoleonoc wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-11-20"
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

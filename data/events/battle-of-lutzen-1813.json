@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-lutzen-1813",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q329534",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Lützen (1813)",
+    "pt": "Batalha de Lützen (1813)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q329534"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lützen (1813)\", revision 1370805565"
+    }
+  ],
+  "title": "Battle of Lützen (1813)",
+  "summary": "The English Wikipedia article \"Battle of Lützen (1813)\", at revision 1370805565, opens: \"The Battle of Lützen, fought on 2 May 1813 near the town of Lützen in Saxony, was a major engagement during the War of the Sixth Coalition. It pitted Napoleon Bonaparte's French forces against a coalition army of Prussian and Russian troops commanded by Generals Wittgenstein and Blücher. The battle marked Napoleon's attempt to reassert dominance in Central Europe following his disastrous retreat from Russia in 1812. Although the Allies initially gained ground and inflicted significant damage on the French forces, Napoleon's tactical brilliance and use of concentrated reserves allowed him to turn the tide of the battle. The French ultimately secured a costly victory, forcing the Allies to retreat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q329534, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle during the War of the Sixth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-05-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

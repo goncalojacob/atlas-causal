@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "georgian-era",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2006877",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Georgian era",
+    "pt": "Era georgiana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2006877"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Georgian era\", revision 1379070878"
+    }
+  ],
+  "title": "Georgian era",
+  "summary": "The English Wikipedia article \"Georgian era\", at revision 1379070878, opens: \"The Georgian era was a period in British history from 1714 to 1830, named after the Hanoverian kings George I, George II, George III and George IV. The definition of the Georgian era is also often extended to include the relatively short reign of William IV, which ended with his death in 1837. The subperiod that is the Regency era is defined by the regency of George IV as Prince of Wales during the illness of his father George III. The term Georgian is typically used in the contexts of social and political history and architecture. The term Augustan literature is often used for Augustan drama, Augustan poetry and Augustan prose in the period 1700–1740s. The term Augustan refers to the acknowledgement of the influence of Latin literature from the ancient Roman Republic. The term Georgian era is not applied to the time of the two 20th-century British kings of this name, George V and George VI. Those periods are simply referred to as Georgian.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2006877, imported by tools/import/wikidata.mjs. The item's own description reads \"period of British history encompassing the years 1714–1830 (or –1837)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1714,
+    "end": 1830
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

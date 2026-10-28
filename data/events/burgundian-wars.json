@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "burgundian-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q315342",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Burgundian Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q315342"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Burgundian Wars\", revision 1376549925"
+    }
+  ],
+  "title": "Burgundian Wars",
+  "summary": "The English Wikipedia article \"Burgundian Wars\", at revision 1376549925, opens: \"The Burgundian Wars (1474–1477) were a conflict between the Burgundian State and the Old Swiss Confederacy and its allies. Open war broke out in 1474, and the Duke of Burgundy, Charles the Bold, was defeated three times on the battlefield in the following years and was killed at the Battle of Nancy in 1477. The Duchy of Burgundy and several other Burgundian lands then became part of France, and the Burgundian Netherlands and Franche-Comté were inherited by Charles's daughter, Mary of Burgundy, and eventually passed to the House of Habsburg upon her death because of her marriage to Maximilian I, Holy Roman Emperor.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q315342, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict between the Dukes of Burgundy and the Old Swiss Confederacy, 1474–77\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1474,
+    "end": 1477
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
