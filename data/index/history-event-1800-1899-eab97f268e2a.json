@@ -2,6 +2,15 @@
   "from": 1800,
   "kind": "event",
   "records": {
+    "1811-independence-movement": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "1812-1819-ottoman-plague-epidemic": {
       "from": "git",
       "versions": [
@@ -74,6 +83,15 @@
         }
       ]
     },
+    "1851-chilean-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "1854-macedonian-rebellion": {
       "from": "git",
       "versions": [
@@ -116,6 +134,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "1871-guatemalan-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -832,6 +859,15 @@
         }
       ]
     },
+    "argentine-revolution-of-1893": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "argentine-war-of-independence": {
       "from": "git",
       "versions": [
@@ -910,6 +946,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "balaiada": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3896,6 +3941,15 @@
         }
       ]
     },
+    "brazilian-naval-revolts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "brazilian-war-of-independence": {
       "from": "git",
       "versions": [
@@ -3935,6 +3989,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "brooks-baxter-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4382,6 +4445,15 @@
         }
       ]
     },
+    "cuzco-rebellion-of-1814": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "cyprus-convention": {
       "from": "git",
       "versions": [
@@ -4524,6 +4596,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "dorr-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5311,6 +5392,15 @@
         }
       ]
     },
+    "garza-revolution": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "german-revolutions-of-1848-1849": {
       "from": "git",
       "versions": [
@@ -5463,6 +5553,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "grito-de-lares": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5666,6 +5765,15 @@
         }
       ]
     },
+    "intentona-de-yauco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "invasion-of-algiers-1830": {
       "from": "git",
       "versions": [
@@ -5685,6 +5793,15 @@
       ]
     },
     "invasion-of-surinam-1804": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "irish-and-german-mercenary-soldiers-revolt": {
       "from": "git",
       "versions": [
         {
@@ -5988,6 +6105,15 @@
         }
       ]
     },
+    "lower-canada-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "lower-mississippi-valley-yellow-fever-epidemic-of-1878": {
       "from": "git",
       "versions": [
@@ -6039,6 +6165,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "mapuche-uprising-of-1881": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -6358,6 +6493,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "nullification-crisis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -6905,12 +7049,30 @@
         }
       ]
     },
+    "praieira-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "preliminary-peace-convention-1828": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "primera-junta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -6989,6 +7151,15 @@
         }
       ]
     },
+    "quito-revolution-1809-1812": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "rabih-war": {
       "from": "git",
       "versions": [
@@ -7043,6 +7214,15 @@
         }
       ]
     },
+    "red-river-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "red-river-war": {
       "from": "git",
       "versions": [
@@ -7067,6 +7247,33 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "revolt-of-the-muckers": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "revolution-of-1897": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "revolution-of-the-44": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -7130,6 +7337,15 @@
         {
           "first": true,
           "on": "2026-10-14"
+        }
+      ]
+    },
+    "sabinada": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -8272,6 +8488,15 @@
         }
       ]
     },
+    "taos-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "tecumseh-s-war": {
       "from": "git",
       "versions": [
@@ -9279,6 +9504,15 @@
         }
       ]
     },
+    "upper-canada-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "uprising-of-dervish-cara": {
       "from": "git",
       "versions": [
@@ -9518,6 +9752,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "wilcox-rebellion-of-1889": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

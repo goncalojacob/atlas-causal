@@ -5734,6 +5734,15 @@
         }
       ]
     },
+    "guatemala-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "guaviare-department": {
       "from": "git",
       "versions": [
@@ -8378,6 +8387,15 @@
         }
       ]
     },
+    "little-rock-arkansas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "livadia-palace": {
       "from": "git",
       "versions": [
@@ -10324,6 +10342,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "new-mexico": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -12400,6 +12427,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "rhode-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

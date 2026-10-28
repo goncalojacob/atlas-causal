@@ -1652,7 +1652,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 6,
+      "degree": 7,
       "id": "argentina-q414",
       "kind": "place",
       "names": [
@@ -4590,7 +4590,7 @@
         }
       ],
       "created": "2026-09-30",
-      "degree": 2,
+      "degree": 3,
       "id": "boston",
       "kind": "place",
       "names": [
@@ -4746,7 +4746,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 6,
+      "degree": 7,
       "id": "brazil-q155",
       "kind": "place",
       "names": [
@@ -5363,7 +5363,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 4,
+      "degree": 5,
       "id": "buenos-aires",
       "kind": "place",
       "names": [
@@ -7251,7 +7251,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "chile-q298",
       "kind": "place",
       "names": [
@@ -13666,6 +13666,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "guatemala-city",
+      "kind": "place",
+      "names": [
+        "Guatemala City",
+        "Cidade da Guatemala"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "guaviare-department",
@@ -14835,7 +14863,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "honolulu",
       "kind": "place",
       "names": [
@@ -15917,7 +15945,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 3,
       "id": "island-of-puerto-rico",
       "kind": "place",
       "names": [
@@ -20152,6 +20180,34 @@
       "names": [
         "Little Bighorn River",
         "Rio Little Bighorn"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "little-rock-arkansas",
+      "kind": "place",
+      "names": [
+        "Little Rock",
+        "Little Rock, Arkansas"
       ],
       "origin": {
         "tool": "wikidata"
@@ -24774,6 +24830,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "new-mexico",
+      "kind": "place",
+      "names": [
+        "New Mexico",
+        "Novo México"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "new-providence",
@@ -29188,7 +29272,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "quito",
       "kind": "place",
       "names": [
@@ -29601,6 +29685,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "rhode-island",
+      "kind": "place",
+      "names": [
+        "Rhode Island"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "rhodes",
@@ -29769,7 +29880,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 15,
+      "degree": 17,
       "id": "rio-de-janeiro",
       "kind": "place",
       "names": [
@@ -31586,7 +31697,7 @@
         }
       ],
       "created": "2026-09-18",
-      "degree": 2,
+      "degree": 3,
       "id": "sao-paulo",
       "kind": "place",
       "names": [
@@ -36194,7 +36305,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "toronto",
       "kind": "place",
       "names": [
@@ -37009,7 +37120,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 5,
+      "degree": 6,
       "id": "uruguay-q77",
       "kind": "place",
       "names": [
@@ -37973,7 +38084,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 13,
+      "degree": 14,
       "id": "washington",
       "kind": "place",
       "names": [

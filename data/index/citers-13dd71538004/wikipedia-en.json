@@ -10190,6 +10190,12 @@
     },
     {
       "dissent": false,
+      "id": "1689-boston-revolt",
+      "kind": "event",
+      "locator": "\"1689 Boston revolt\", revision 1381594889"
+    },
+    {
+      "dissent": false,
       "id": "1711-karamanli-coup",
       "kind": "event",
       "locator": "\"1711 Karamanli coup\", revision 1366223253"
@@ -10244,6 +10250,12 @@
     },
     {
       "dissent": false,
+      "id": "1811-independence-movement",
+      "kind": "event",
+      "locator": "\"1811 Independence Movement\", revision 1367128125"
+    },
+    {
+      "dissent": false,
       "id": "1812-1819-ottoman-plague-epidemic",
       "kind": "event",
       "locator": "\"1812–1819 Ottoman plague epidemic\", revision 1380446892"
@@ -10292,6 +10304,12 @@
     },
     {
       "dissent": false,
+      "id": "1851-chilean-revolution",
+      "kind": "event",
+      "locator": "\"1851 Chilean revolution\", revision 1370278887"
+    },
+    {
+      "dissent": false,
       "id": "1854-macedonian-rebellion",
       "kind": "event",
       "locator": "\"1854 Macedonian rebellion\", revision 1370278889"
@@ -10319,6 +10337,12 @@
       "id": "1868-arica-earthquake",
       "kind": "event",
       "locator": "\"1868 Arica earthquake\", revision 1368537568"
+    },
+    {
+      "dissent": false,
+      "id": "1871-guatemalan-revolution",
+      "kind": "event",
+      "locator": "\"1871 Guatemalan Revolution\", revision 1380768164"
     },
     {
       "dissent": false,
@@ -11132,6 +11156,12 @@
     },
     {
       "dissent": false,
+      "id": "acclamation-of-amador-bueno",
+      "kind": "event",
+      "locator": "\"Acclamation of Amador Bueno\", revision 1367814302"
+    },
+    {
+      "dissent": false,
       "id": "aceh-war",
       "kind": "event",
       "locator": "\"Aceh War\", revision 1371860816"
@@ -11684,6 +11714,12 @@
     },
     {
       "dissent": false,
+      "id": "argentine-revolution-of-1893",
+      "kind": "event",
+      "locator": "\"Argentine Revolution of 1893\", revision 1370105251"
+    },
+    {
+      "dissent": false,
       "id": "argentine-surrender-in-the-falklands-war",
       "kind": "event",
       "locator": "\"Argentine surrender in the Falklands War\", revision 1290880119"
@@ -11903,6 +11939,12 @@
       "id": "bala-hissar-uprising",
       "kind": "event",
       "locator": "\"Bala Hissar uprising\", revision 1370105632"
+    },
+    {
+      "dissent": false,
+      "id": "balaiada",
+      "kind": "event",
+      "locator": "\"Balaiada\", revision 1370430053"
     },
     {
       "dissent": false,
@@ -17120,6 +17162,12 @@
     },
     {
       "dissent": false,
+      "id": "brazilian-naval-revolts",
+      "kind": "event",
+      "locator": "\"Brazilian Naval Revolts\", revision 1375631543"
+    },
+    {
+      "dissent": false,
       "id": "brazilian-war-of-independence",
       "kind": "event",
       "locator": "\"Brazilian War of Independence\", revision 1379765816"
@@ -17171,6 +17219,12 @@
       "id": "british-russian-convention",
       "kind": "event",
       "locator": "\"Anglo-Russian Convention\", revision 1358051340"
+    },
+    {
+      "dissent": false,
+      "id": "brooks-baxter-war",
+      "kind": "event",
+      "locator": "\"Brooks–Baxter War\", revision 1379071731"
     },
     {
       "dissent": false,
@@ -18254,6 +18308,12 @@
     },
     {
       "dissent": false,
+      "id": "cuzco-rebellion-of-1814",
+      "kind": "event",
+      "locator": "\"Cuzco Rebellion of 1814\", revision 1380774152"
+    },
+    {
+      "dissent": false,
       "id": "cyprus-convention",
       "kind": "event",
       "locator": "\"Cyprus Convention\", revision 1359144286"
@@ -18431,6 +18491,12 @@
       "id": "donghak-peasant-revolution",
       "kind": "event",
       "locator": "\"Tonghak Peasant Revolution\", revision 1375257262"
+    },
+    {
+      "dissent": false,
+      "id": "dorr-rebellion",
+      "kind": "event",
+      "locator": "\"Dorr Rebellion\", revision 1379616965"
     },
     {
       "dissent": false,
@@ -19508,6 +19574,12 @@
     },
     {
       "dissent": false,
+      "id": "garza-revolution",
+      "kind": "event",
+      "locator": "\"Garza Revolution\", revision 1381854132"
+    },
+    {
+      "dissent": false,
       "id": "gaza-genocide",
       "kind": "event",
       "locator": "\"Gaza genocide\", revision 1371072421"
@@ -19781,6 +19853,12 @@
       "id": "greek-war-of-independence",
       "kind": "event",
       "locator": "\"Greek War of Independence\", revision 1379883159"
+    },
+    {
+      "dissent": false,
+      "id": "grito-de-lares",
+      "kind": "event",
+      "locator": "\"Grito de Lares\", revision 1376535795"
     },
     {
       "dissent": false,
@@ -20198,6 +20276,12 @@
     },
     {
       "dissent": false,
+      "id": "intentona-de-yauco",
+      "kind": "event",
+      "locator": "\"Intentona de Yauco\", revision 1379935409"
+    },
+    {
+      "dissent": false,
       "id": "international-covenant-on-civil-and-political-rights",
       "kind": "event",
       "locator": "\"International Covenant on Civil and Political Rights\", revision 1371450720"
@@ -20327,6 +20411,12 @@
       "id": "iraqi-insurgency",
       "kind": "event",
       "locator": "\"Iraqi insurgency (2003–2011)\", revision 1375582804"
+    },
+    {
+      "dissent": false,
+      "id": "irish-and-german-mercenary-soldiers-revolt",
+      "kind": "event",
+      "locator": "\"Irish and German Mercenary Soldiers' revolt\", revision 1370624398"
     },
     {
       "dissent": false,
@@ -20960,6 +21050,12 @@
     },
     {
       "dissent": false,
+      "id": "lower-canada-rebellion",
+      "kind": "event",
+      "locator": "\"Lower Canada Rebellion\", revision 1376592521"
+    },
+    {
+      "dissent": false,
       "id": "lower-mississippi-valley-yellow-fever-epidemic-of-1878",
       "kind": "event",
       "locator": "\"Lower Mississippi Valley yellow fever epidemic of 1878\", revision 1378857869"
@@ -21071,6 +21167,12 @@
       "id": "mapuche-uprising-of-1655",
       "kind": "event",
       "locator": "\"Mapuche uprising of 1655\", revision 1370627596"
+    },
+    {
+      "dissent": false,
+      "id": "mapuche-uprising-of-1881",
+      "kind": "event",
+      "locator": "\"Mapuche uprising of 1881\", revision 1370627603"
     },
     {
       "dissent": false,
@@ -21506,6 +21608,12 @@
     },
     {
       "dissent": false,
+      "id": "natchez-revolt",
+      "kind": "event",
+      "locator": "\"Natchez revolt\", revision 1376412384"
+    },
+    {
+      "dissent": false,
       "id": "navajo-wars",
       "kind": "event",
       "locator": "\"Navajo Wars\", revision 1370629330"
@@ -21689,6 +21797,12 @@
       "id": "november-uprising",
       "kind": "event",
       "locator": "\"November Uprising\", revision 1378564588"
+    },
+    {
+      "dissent": false,
+      "id": "nullification-crisis",
+      "kind": "event",
+      "locator": "\"Nullification crisis\", revision 1373910296"
     },
     {
       "dissent": false,
@@ -22640,6 +22754,12 @@
     },
     {
       "dissent": false,
+      "id": "praieira-revolt",
+      "kind": "event",
+      "locator": "\"Praieira revolt\", revision 1370704983"
+    },
+    {
+      "dissent": false,
       "id": "preliminary-peace-convention-1828",
       "kind": "event",
       "locator": "\"Preliminary Peace Convention (1828)\", revision 1365705390"
@@ -22649,6 +22769,12 @@
       "id": "prelude-to-the-russian-invasion-of-ukraine",
       "kind": "event",
       "locator": "\"Prelude to the 2022 Russian invasion of Ukraine\", revision 1370705034"
+    },
+    {
+      "dissent": false,
+      "id": "primera-junta",
+      "kind": "event",
+      "locator": "\"Primera Junta\", revision 1376164957"
     },
     {
       "dissent": false,
@@ -22745,6 +22871,12 @@
       "id": "queen-anne-s-war",
       "kind": "event",
       "locator": "\"Queen Anne's War\", revision 1375172739"
+    },
+    {
+      "dissent": false,
+      "id": "quito-revolution-1809-1812",
+      "kind": "event",
+      "locator": "\"Quito Revolution (1809–1812)\", revision 1378438102"
     },
     {
       "dissent": false,
@@ -22910,6 +23042,12 @@
     },
     {
       "dissent": false,
+      "id": "red-river-rebellion",
+      "kind": "event",
+      "locator": "\"Red River Rebellion\", revision 1373277902"
+    },
+    {
+      "dissent": false,
       "id": "red-river-war",
       "kind": "event",
       "locator": "\"Red River War\", revision 1379634448"
@@ -22949,6 +23087,12 @@
       "id": "reformation-in-denmark-norway-and-holstein",
       "kind": "event",
       "locator": "\"Reformation in Denmark–Norway and Holstein\", revision 1371069341"
+    },
+    {
+      "dissent": false,
+      "id": "regulator-movement-in-north-carolina",
+      "kind": "event",
+      "locator": "\"Regulator Movement in North Carolina\", revision 1380790255"
     },
     {
       "dissent": false,
@@ -23012,6 +23156,12 @@
     },
     {
       "dissent": false,
+      "id": "revolt-of-the-muckers",
+      "kind": "event",
+      "locator": "\"Revolt of the Muckers\", revision 1370706954"
+    },
+    {
+      "dissent": false,
       "id": "revolt-of-the-three-feudatories",
       "kind": "event",
       "locator": "\"Revolt of the Three Feudatories\", revision 1370706968"
@@ -23024,9 +23174,21 @@
     },
     {
       "dissent": false,
+      "id": "revolution-of-1897",
+      "kind": "event",
+      "locator": "\"Revolution of 1897\", revision 1370707008"
+    },
+    {
+      "dissent": false,
       "id": "revolution-of-dignity",
       "kind": "event",
       "locator": "\"Revolution of Dignity\", revision 1376152819"
+    },
+    {
+      "dissent": false,
+      "id": "revolution-of-the-44",
+      "kind": "event",
+      "locator": "\"Revolution of the 44\", revision 1370707035"
     },
     {
       "dissent": false,
@@ -23213,6 +23375,12 @@
       "id": "rwandan-revolution",
       "kind": "event",
       "locator": "\"Rwandan Revolution\", revision 1367896898"
+    },
+    {
+      "dissent": false,
+      "id": "sabinada",
+      "kind": "event",
+      "locator": "\"Sabinada\", revision 1370729440"
     },
     {
       "dissent": false,
@@ -25640,6 +25808,12 @@
     },
     {
       "dissent": false,
+      "id": "taos-revolt",
+      "kind": "event",
+      "locator": "\"Taos Revolt\", revision 1379335031"
+    },
+    {
+      "dissent": false,
       "id": "targa-expedition-1490",
       "kind": "event",
       "locator": "\"Targa expedition (1490)\", revision 1370749696"
@@ -27182,6 +27356,12 @@
     },
     {
       "dissent": false,
+      "id": "upper-canada-rebellion",
+      "kind": "event",
+      "locator": "\"Upper Canada Rebellion\", revision 1370752547"
+    },
+    {
+      "dissent": false,
       "id": "uprising-of-dervish-cara",
       "kind": "event",
       "locator": "\"Uprising of Dervish Cara\", revision 1370752630"
@@ -27476,6 +27656,12 @@
     },
     {
       "dissent": false,
+      "id": "war-of-the-mascates",
+      "kind": "event",
+      "locator": "\"War of the Mascates\", revision 1366223373"
+    },
+    {
+      "dissent": false,
       "id": "war-of-the-oranges",
       "kind": "event",
       "locator": "\"War of the Oranges\", revision 1377704597"
@@ -27587,6 +27773,12 @@
       "id": "white-revolution",
       "kind": "event",
       "locator": "\"White Revolution\", revision 1364402941"
+    },
+    {
+      "dissent": false,
+      "id": "wilcox-rebellion-of-1889",
+      "kind": "event",
+      "locator": "\"Wilcox rebellion of 1889\", revision 1381543257"
     },
     {
       "dissent": false,
