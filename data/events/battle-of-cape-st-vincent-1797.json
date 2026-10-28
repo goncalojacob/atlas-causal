@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-cape-st-vincent-1797",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q373401",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Cape St. Vincent (1797)",
+    "pt": "Batalha do Cabo de São Vicente (1797)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q373401"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Cape St. Vincent (1797)\", revision 1375988282"
+    }
+  ],
+  "title": "Battle of Cape St. Vincent (1797)",
+  "summary": "The English Wikipedia article \"Battle of Cape St. Vincent (1797)\", at revision 1375988282, opens: \"The Battle of Cape St. Vincent was a fleet action fought on 14 February 1797 between the British and Spanish navies off Cape St. Vincent in Portugal as part of the War of the First Coalition. In one of the opening battles of the recently declared war between Britain and Spain, a British fleet under Admiral of the Blue Sir John Jervis defeated a larger Spanish fleet under Lieutenant-general José de Córdoba y Ramos which had left Cádiz to confront the British navy. Commodore Horatio Nelson distinguished himself in the battle by boarding and capturing two Spanish ships of the line.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q373401, imported by tools/import/wikidata.mjs. The item's own description reads \"1797 naval battle of the French Revolutionary Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1797,
+    "end": 1797,
+    "date": "1797-02-14"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-spanish-war-1796-1808"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "night-attack-at-targoviste",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2022139",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Night attack at Târgoviște",
+    "pt": "Ataque Noturno em Târgoviște"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2022139"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Night attack at Târgoviște\", revision 1381190771"
+    }
+  ],
+  "title": "Night attack at Târgoviște",
+  "summary": "The English Wikipedia article \"Night attack at Târgoviște\", at revision 1381190771, opens: \"The night attack at Târgoviște was a battle fought between forces of Prince Vlad III of Wallachia and Sultan Mehmed II of the Ottoman Empire on Thursday, 17 June 1462. The battle started after Mehmed II, who already had tense relations with Vlad, discovered his alliance with Hungary's king Matthias Corvinus and ordered his forces to ambush him. Vlad foiled the attack and invaded Bulgaria. In response, Mehmed raised a great army with the objective to conquer Wallachia. The two leaders fought a series of skirmishes, the most notable one being the conflict where Vlad attacked the Turkish camp in the night in an attempt to kill Mehmed. The assassination attempt failed and Mehmed marched to the Wallachian capital of Târgoviște, where he found a few men with cannons. After leaving the capital, Mehmed discovered 23,844 impaled Turks whom Vlad had killed during his invasion of Bulgaria. The number is mentioned by Vlad himself in a letter to Matthias Corvinus. The sultan and his troops then sailed to Brăila and burned it to the ground before retreating to Adrianople. Mehmed's forces returned home with many captured slaves, horses, and cattle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2022139, imported by tools/import/wikidata.mjs. The item's own description reads \"1462 battle between Vlad III's Wallachia and Mehmed II's Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1462,
+    "end": 1462,
+    "date": "1462-06-17"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

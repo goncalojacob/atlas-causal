@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1693-sicily-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2706283",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1693 Sicily earthquake",
+    "pt": "Sismo de Val di Noto de 1693"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2706283"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1693 Sicily earthquake\", revision 1377061044"
+    }
+  ],
+  "title": "1693 Sicily earthquake",
+  "summary": "The English Wikipedia article \"1693 Sicily earthquake\", at revision 1377061044, opens: \"The 1693 Sicily earthquake was a natural disaster that struck parts of southern Italy near Sicily, then a territory part of the Crown of Aragon by the Kings of Spain Calabria and Malta, on 11 January at around 21:00 local time. This earthquake was preceded by a damaging foreshock on 9 January. The main quake had an estimated magnitude of 7.4 on the moment magnitude scale, the most powerful in recorded Italian history, and a maximum intensity of XI (Extreme) on the Mercalli intensity scale, destroying at least 70 towns and cities, seriously affecting an area of 5,600 square kilometres (2,200 sq mi) and causing the death of about 60,000 people.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2706283, imported by tools/import/wikidata.mjs. The item's own description reads \"sismic event\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1693,
+    "end": 1693,
+    "date": "1693-01-11"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "disaster",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "gordon-riots",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1538124",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Gordon Riots",
+    "pt": "Motins de Gordon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1538124"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gordon Riots\", revision 1376158294"
+    }
+  ],
+  "title": "Gordon Riots",
+  "summary": "The English Wikipedia article \"Gordon Riots\", at revision 1376158294, opens: \"The Gordon Riots in London in 1780 involved several days of unrest and violence\nmotivated by anti-Catholic sentiment. They began on 2 June 1780 with a large and orderly protest against the Papists Act 1778, which had somewhat reduced official discrimination against British Catholics enacted by the Popery Act 1698 .\nThe Protestant Association, headed by Lord George Gordon, MP,\nnoted that the law enabled Catholics to join the British Army and warned that the relaxation might enable Catholic soldiers to plot treason.\nThe resultant protest led to widespread rioting and looting, including attacks on the buildings of Newgate Prison and of the Bank of England, and was the most destructive in the history of London.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1538124, imported by tools/import/wikidata.mjs. The item's own description reads \"event in London in 1780\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1780,
+    "end": 1780,
+    "date": "1780-06"
+  },
+  "place": "london",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

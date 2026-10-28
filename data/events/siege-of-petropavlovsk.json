@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-petropavlovsk",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q815197",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Siege of Petropavlovsk",
+    "pt": "Cerco de Petropavlovsk"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q815197"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Petropavlovsk\", revision 1370744433"
+    }
+  ],
+  "title": "Siege of Petropavlovsk",
+  "summary": "The English Wikipedia article \"Siege of Petropavlovsk\", at revision 1370744433, opens: \"The Siege of Petropavlovsk was a military operation in the Pacific theatre of the Crimean War in which British and French naval forces unsuccessfully attempted to capture the Russian port of Petropavlovsk on the Kamchatka peninsula. The Russian casualties are estimated at 115 soldiers and sailors killed and seriously wounded, whilst the British suffered 105 casualties and the French 104.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q815197, imported by tools/import/wikidata.mjs. The item's own description reads \"1854 main operation on the Pacific Theatre of the Crimean War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": 1854,
+    "date": "1854-08-18",
+    "endDate": "1854-08-28"
+  },
+  "place": "petropavlovsk-kamchatsky",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "crimean-war"
+}

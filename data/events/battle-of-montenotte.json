@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-montenotte",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q974166",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Montenotte",
+    "pt": "Batalha de Montenotte"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q974166"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Montenotte\", revision 1376249469"
+    }
+  ],
+  "title": "Battle of Montenotte",
+  "summary": "The English Wikipedia article \"Battle of Montenotte\", at revision 1376249469, opens: \"The Battle of Montenotte was fought on 12 April 1796, near Montenotte Superiore, being the opening engagement of Napoleon Bonaparte's Italian Campaign and the second engagement of the Montenotte campaign. The French Army of Italy, under the command of General Napoleon Bonaparte, defeated an Austrian corps under Field Marshal Eugène-Guillaume Argenteau. The victory successfully severed the connection between the Austrian army and their allies, the army of the Kingdom of Sardinia, allowing Bonaparte to isolate and defeat each force in detail.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q974166, imported by tools/import/wikidata.mjs. The item's own description reads \"1796 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1796,
+    "end": 1796,
+    "date": "1796-04-12"
+  },
+  "place": "cairo-montenotte",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "statuto-albertino",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q598854",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Statuto Albertino",
+    "pt": "Estatuto Albertino"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q598854"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Statuto Albertino\", revision 1380426374"
+    }
+  ],
+  "title": "Statuto Albertino",
+  "summary": "The English Wikipedia article \"Statuto Albertino\", at revision 1380426374, opens: \"The Statuto Albertino was the constitution granted by King Charles Albert of Sardinia to the Kingdom of Sardinia on 4 March 1848 and written in Italian and French. Promulgated at the height of the Risorgimento, the process of Italian unification, the Statute was gradually extended to the other territories incorporated into the new state and was officially recognized as the fundamental law of the Kingdom of Italy upon its proclamation on 17 March 1861. Because of this, Statuto Albertino became the first Italian constitution and had a role in shaping Italy's constitutional system, exerting an influence on the 1947 Constitution of Italy, which directly succeeded it. The Statute remained in force, with changes for a century, until 1948. Charles Albert did not want to grant a Constitutional Charter so he attempted to maintain as much power as he could even though the Statute marked the end of his absolute monarchy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q598854, imported by tools/import/wikidata.mjs. The item's own description reads \"constitution of the kingdoms of Sardinia (1848–61) and unified Italy (1861–1948)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-03-04"
+  },
+  "place": "turin",
+  "region": null,
+  "regionNote": null,
+  "category": "law",
+  "actors": []
+}

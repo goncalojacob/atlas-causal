@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-gro-beeren",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q339052",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Großbeeren",
+    "pt": "Batalha de Großbeeren"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q339052"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Großbeeren\", revision 1370111059"
+    }
+  ],
+  "title": "Battle of Großbeeren",
+  "summary": "The English Wikipedia article \"Battle of Großbeeren\", at revision 1370111059, opens: \"The Battle of Großbeeren occurred on 23 August 1813 in neighboring Blankenfelde and Sputendorf between the Prussian III Corps under Friedrich von Bülow and the Franco-Saxon VII Corps under Jean Reynier. Napoleon had hoped to drive the Prussians out of the Sixth Coalition by capturing their capital, but the swamps south of Berlin combined with rain and marshal Nicolas Oudinot's ill health all contributed to the French defeat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q339052, imported by tools/import/wikidata.mjs. The item's own description reads \"1813 battle during the War of the Sixth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1813,
+    "end": 1813,
+    "date": "1813-08-23"
+  },
+  "place": "gro-beeren",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

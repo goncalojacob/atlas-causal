@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "truce-of-deulino",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q542169",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Truce of Deulino",
+    "pt": "Trégua de Deulino"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q542169"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Truce of Deulino\", revision 1273836970"
+    }
+  ],
+  "title": "Truce of Deulino",
+  "summary": "The English Wikipedia article \"Truce of Deulino\", at revision 1273836970, opens: \"The Truce of Deulino concluded the Polish–Russian War of 1609–1618 between the Polish–Lithuanian Commonwealth and the Tsardom of Russia. It was signed in the village of Deulino on 11 December 1618 and took effect on 4 January 1619.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q542169, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1618,
+    "end": 1618,
+    "date": "1618-12-11"
+  },
+  "place": "deulino-moscow-oblast",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

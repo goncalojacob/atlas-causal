@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "macedonian-struggle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1277369",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Macedonian Struggle",
+    "pt": "Lutas Macedônicas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1277369"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Macedonian Struggle\", revision 1381888419"
+    }
+  ],
+  "title": "Macedonian Struggle",
+  "summary": "The English Wikipedia article \"Macedonian Struggle\", at revision 1381888419, opens: \"The Macedonian Struggle was a series of social, political, cultural and military conflicts that were mainly fought between Greek and Bulgarian subjects who lived in Ottoman Macedonia between 1893 and 1912. From 1904 to 1908 the conflict was part of a wider guerrilla war in which revolutionary organizations of Greeks, Bulgarians and Serbs all fought over Macedonia and its Christian population. Particularly over the national affiliation of the Slavic-speaking population which was forced to declare themselves for either of the sides. Gradually the Greek and Bulgarian bands gained the upper hand. Though the conflict largely ceased by the Young Turk Revolution, it continued as a low intensity insurgency until the Balkan Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1277369, imported by tools/import/wikidata.mjs. The item's own description reads \"cultural and military conflicts between various Balkan peoples in the region of Macedonia\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1893,
+    "end": 1908
+  },
+  "place": "macedonia-region",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

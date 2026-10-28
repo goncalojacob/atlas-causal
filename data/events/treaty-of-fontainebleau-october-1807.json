@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-fontainebleau-october-1807",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1541473",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Fontainebleau (October 1807)",
+    "pt": "Tratado de Fontainebleau (1807)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1541473"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Fontainebleau (October 1807)\", revision 1368931217"
+    }
+  ],
+  "title": "Treaty of Fontainebleau (October 1807)",
+  "summary": "The English Wikipedia article \"Treaty of Fontainebleau (October 1807)\", at revision 1368931217, opens: \"The Treaty of Fontainebleau was a secret agreement signed on 27 October 1807 in Fontainebleau, France between King Charles IV of Spain and the French Emperor Napoleon. Under the treaty, the House of Braganza was to be driven from the Kingdom of Portugal with the country subsequently divided into three regions, the north and south to be ruled by Louis II, King of Etruria and Spanish minister Manuel Godoy respectively, while the provinces of Beira, Tras-os-Montes and Portuguese Estremadura would remain in abeyance until a later peace. Within seven months the government of Spain had collapsed and two Spanish kings abdicated. In August 1808 Napoleon imposed his brother Joseph as King of Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1541473, imported by tools/import/wikidata.mjs. The item's own description reads \"secret agreement\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1807,
+    "end": 1807,
+    "date": "1807-10-27"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

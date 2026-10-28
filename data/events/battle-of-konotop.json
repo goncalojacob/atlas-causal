@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-konotop",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2620862",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Konotop",
+    "pt": "Batalha de Konotop"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2620862"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Konotop\", revision 1374564947"
+    }
+  ],
+  "title": "Battle of Konotop",
+  "summary": "The English Wikipedia article \"Battle of Konotop\", at revision 1374564947, opens: \"The Battle of Konotop or Battle of Sosnivka was fought between a coalition led by the Hetman of Zaporizhian Cossacks Ivan Vyhovsky and cavalry units of the Russian Tsardom under the command of Semyon Pozharsky and Semyon Lvov, supported by Cossacks of Ivan Bezpaly, on 29 June 1659, near the town of Konotop, Ukraine, during the Russo-Polish War (1654–1667). Vyhovsky's coalition defeated the Russians and their allies and forced the main Russian army to interrupt the siege of Konotop. However, the result of the battle only intensified political tensions in Ukraine and led to Vyhovsky's removal from power several months later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2620862, imported by tools/import/wikidata.mjs. The item's own description reads \"1659 battle during Russo-Polish War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1659,
+    "end": 1659,
+    "date": "1659-06-28"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "polish-russian-war-1654-1667"
+}
