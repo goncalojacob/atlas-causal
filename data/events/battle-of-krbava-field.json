@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-krbava-field",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q694379",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Krbava Field",
+    "pt": "Batalha do Campo de Krbava"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q694379"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Krbava Field\", revision 1370446255"
+    }
+  ],
+  "title": "Battle of Krbava Field",
+  "summary": "The English Wikipedia article \"Battle of Krbava Field\", at revision 1370446255, opens: \"The Battle of Krbava Field was fought between the Ottoman Empire of Bayezid II and an army of the Kingdom of Croatia, at the time in personal union with the Kingdom of Hungary, on 9 September 1493, in the Krbava field, a part of the Lika region in Croatia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q694379, imported by tools/import/wikidata.mjs. The item's own description reads \"1493 battle of the Hundred Years' Croatian-Ottoman War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1493,
+    "end": 1493,
+    "date": "1493-09-09"
+  },
+  "place": "krbavsko-plain",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

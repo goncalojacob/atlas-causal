@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "towton",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1847094",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Towton",
+    "pt": "Towton"
+  },
+  "sources": [],
+  "names": [
+    "Towton"
+  ],
+  "where": {
+    "lon": -1.2634888888889,
+    "lat": 53.849925,
+    "precision": "city",
+    "label": "Towton"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

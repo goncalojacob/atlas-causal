@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-alma",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q913604",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of the Alma",
+    "pt": "Batalha de Alma"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q913604"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Alma\", revision 1375360043"
+    }
+  ],
+  "title": "Battle of the Alma",
+  "summary": "The English Wikipedia article \"Battle of the Alma\", at revision 1375360043, opens: \"The Battle of the Alma took place during the Crimean War between an allied expeditionary force and Russian forces defending the Crimean Peninsula on 20 September 1854. The allies had made a surprise landing in Crimea on 14 September. The allied commanders, Maréchal Jacques Leroy de Saint-Arnaud and Lord Raglan, then marched toward the strategically important port city of Sevastopol, 45 km away. Russian commander Prince Alexander Sergeyevich Menshikov rushed his available forces to the last natural defensive position before the city, the Alma Heights, south of the Alma River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q913604, imported by tools/import/wikidata.mjs. The item's own description reads \"1854 first battle of the Crimean War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": 1854,
+    "date": "1854-09-20"
+  },
+  "place": "alma-crimea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "crimean-war"
+}

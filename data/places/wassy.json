@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "wassy",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q728872",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Wassy",
+    "pt": "Wassy"
+  },
+  "sources": [],
+  "names": [
+    "Wassy"
+  ],
+  "where": {
+    "lon": 4.948611111111111,
+    "lat": 48.49944444444444,
+    "precision": "city",
+    "label": "Wassy"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

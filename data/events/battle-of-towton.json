@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-towton",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q634629",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Towton",
+    "pt": "Batalha de Towton"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q634629"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Towton\", revision 1380895540"
+    }
+  ],
+  "title": "Battle of Towton",
+  "summary": "The English Wikipedia article \"Battle of Towton\", at revision 1380895540, opens: \"The Battle of Towton took place on 29 March 1461 during the Wars of the Roses, near Towton in North Yorkshire. Yorkist forces decisively defeated Lancastrian supporters of Henry VI, securing the English throne for Edward IV. Fought for ten hours between an estimated 50,000 soldiers from both sides in a snowstorm on Palm Sunday, it was \"probably the largest and bloodiest battle on English soil\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q634629, imported by tools/import/wikidata.mjs. The item's own description reads \"battle during the English Wars of the Roses, renownedly bloody\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1461,
+    "end": 1461,
+    "date": "1461-03-29"
+  },
+  "place": "towton",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "wars-of-the-roses"
+}

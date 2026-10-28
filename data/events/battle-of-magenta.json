@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-magenta",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q681430",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Magenta",
+    "pt": "Batalha de Magenta"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q681430"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Magenta\", revision 1374525364"
+    }
+  ],
+  "title": "Battle of Magenta",
+  "summary": "The English Wikipedia article \"Battle of Magenta\", at revision 1374525364, opens: \"The Battle of Magenta was fought on 4 June 1859 near the town of Magenta in the Kingdom of Lombardy–Venetia, a crown land of the Austrian Empire, during the Second Italian War of Independence. It resulted in a French-Sardinian victory under Napoleon III against the Austrians under Marshal Ferenc Gyulay. Napoleon III's army crossed the Ticino River and outflanked the Austrian right forcing the Austrian army under Gyulay to retreat. The confined nature of the country, a vast spread of orchards cut up by streams and irrigation canals, precluded elaborate manoeuvre. The Austrians turned every house into a miniature fortress. The brunt of the fighting was borne by 5,000 grenadiers of the French Imperial Guard, still mostly in their First Empire style of uniforms. The battle of Magenta was not a particularly large battle, but it was a decisive victory for the Franco-Sardinian alliance. Patrice de MacMahon was created Duke of Magenta for his role in this battle, and would later go on to serve as President of the French Third Republic.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q681430, imported by tools/import/wikidata.mjs. The item's own description reads \"1859 battle of the Second Italian War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1859,
+    "end": 1859,
+    "date": "1859-06-04"
+  },
+  "place": "magenta-lombardy",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-italian-war-of-independence"
+}

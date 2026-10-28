@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-orsha",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1207310",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Orsha",
+    "pt": "Batalha de Orsha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1207310"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Orsha\", revision 1375028492"
+    }
+  ],
+  "title": "Battle of Orsha",
+  "summary": "The English Wikipedia article \"Battle of Orsha\", at revision 1375028492, opens: \"The Battle of Orsha, was fought on 8 September 1514, between the allied forces of the Grand Duchy of Lithuania and the Crown of the Kingdom of Poland, under the command of Lithuanian Grand Hetman Konstanty Ostrogski; and the army of the Grand Duchy of Moscow under Konyushy Ivan Chelyadnin and Kniaz Mikhail Bulgakov-Golitsa. The Battle of Orsha was part of a long series of Muscovite–Lithuanian Wars conducted by Muscovite rulers striving to gather all the former Kievan Rus' lands under their rule.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1207310, imported by tools/import/wikidata.mjs. The item's own description reads \"1514 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1514,
+    "end": 1514,
+    "date": "1514-09-08"
+  },
+  "place": "orsha",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

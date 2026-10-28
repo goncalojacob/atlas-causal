@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "massacre-of-vassy",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1086489",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Massacre of Vassy",
+    "pt": "Massacre de Vassy"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1086489"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Massacre of Vassy\", revision 1366202021"
+    }
+  ],
+  "title": "Massacre of Vassy",
+  "summary": "The English Wikipedia article \"Massacre of Vassy\", at revision 1366202021, opens: \"The Massacre of Vassy was the murder of Huguenot worshippers and citizens in an armed action by troops of the Duke of Guise, in Wassy, France on 1 March 1562. The massacre is identified as the first major event in the French Wars of Religion. The series of battles that followed concluded in the signing of the Peace of Amboise on 19 March 1563. The events surrounding the Massacre of Vassy were famously depicted in a series of forty engravings published in Geneva seven years later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1086489, imported by tools/import/wikidata.mjs. The item's own description reads \"mass killing of Huguenots by Francis, Duke of Guise, in Wassy, France, on 1 March 1562\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1562,
+    "end": 1562,
+    "date": "1562-03-01"
+  },
+  "place": "wassy",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "alma-crimea",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q864843",
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Alma (Crimea)"
+  },
+  "sources": [],
+  "names": [
+    "Alma",
+    "Alma (Crimea)"
+  ],
+  "where": {
+    "lon": 33.5928,
+    "lat": 44.8458,
+    "precision": "region",
+    "label": "Alma (Crimea)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

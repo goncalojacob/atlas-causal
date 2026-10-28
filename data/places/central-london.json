@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "central-london",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2354215",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Central London"
+  },
+  "sources": [],
+  "names": [
+    "Central London",
+    "Centro de Londres"
+  ],
+  "where": {
+    "lon": -0.1275,
+    "lat": 51.5075,
+    "precision": "region",
+    "label": "Central London"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

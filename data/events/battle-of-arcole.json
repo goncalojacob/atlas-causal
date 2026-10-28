@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-arcole",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q776609",
+  "wikipedia": {
+    "en": "Battle of Arcole",
+    "pt": "Batalha da ponte de Arcole"
+  },
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-28"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q776609"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Arcole\", revision 1379687387"
+    }
+  ],
+  "title": "Battle of Arcole",
+  "summary": "The English Wikipedia article \"Battle of Arcole\", at revision 1379687387, opens: \"The Battle of Arcole or Battle of Arcola was fought between French and Austrian forces 25 kilometres (16 mi) southeast of Verona during the War of the First Coalition, a part of the French Revolutionary Wars. The battle saw a bold maneuver by Napoleon Bonaparte's French Army of Italy to outflank the Austrian army led by József Alvinczi and cut off its line of retreat. The French victory proved to be a highly significant event during the third Austrian attempt to lift the siege of Mantua. Alvinczi planned to execute a two-pronged offensive against Bonaparte's army. The Austrian commander ordered Paul Davidovich to advance south along the Adige River valley with one corps while Alvinczi led the main army in an advance from the east. The Austrians hoped to raise the siege of Mantua where Dagobert Sigmund von Wurmser was trapped with a large garrison. If the two Austrian columns linked up and if Wurmser's troops were released, French prospects were grim.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q776609, imported by tools/import/wikidata.mjs. The item's own description reads \"1796 battle during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1796,
+    "end": 1796,
+    "date": "1796-11-15",
+    "endDate": "1796-11-17"
+  },
+  "place": "arcole",
+  "region": null,
+  "regionNote": null,
+  "parent": "italian-campaigns-of-the-french-revolutionary-wars",
+  "category": "war",
+  "actors": []
+}
