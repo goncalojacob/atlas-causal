@@ -191,6 +191,15 @@
         }
       ]
     },
+    "burgundian-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "chaouia-expedition": {
       "from": "git",
       "versions": [
@@ -242,7 +251,25 @@
         }
       ]
     },
+    "granada-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "great-stand-on-the-ugra-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "high-renaissance": {
       "from": "git",
       "versions": [
         {

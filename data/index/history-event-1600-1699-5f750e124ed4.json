@@ -1101,6 +1101,15 @@
         }
       ]
     },
+    "battle-of-mohacs-1687": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-montijo": {
       "from": "git",
       "versions": [
@@ -2211,6 +2220,15 @@
         }
       ]
     },
+    "deluge-history": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "druze-power-struggle-1658-1667": {
       "from": "git",
       "versions": [
@@ -2298,6 +2316,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "edict-of-fontainebleau": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3318,6 +3345,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "russo-turkish-war-1672-1681": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

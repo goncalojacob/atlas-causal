@@ -5612,6 +5612,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fleurus-1794",
+      "kind": "event",
+      "locator": "Q678227"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-flodden",
       "kind": "event",
       "locator": "Q1300742"
@@ -7100,6 +7106,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-lutzen-1813",
+      "kind": "event",
+      "locator": "Q329534"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-luzzara",
       "kind": "event",
       "locator": "Q700316"
@@ -7460,6 +7472,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mohacs-1687",
+      "kind": "event",
+      "locator": "Q690470"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mollwitz",
       "kind": "event",
       "locator": "Q663435"
@@ -7775,6 +7793,12 @@
       "id": "battle-of-novara-1513",
       "kind": "event",
       "locator": "Q661940"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-novara-1849",
+      "kind": "event",
+      "locator": "Q837787"
     },
     {
       "dissent": false,
@@ -10718,6 +10742,12 @@
     },
     {
       "dissent": false,
+      "id": "burgundian-wars",
+      "kind": "event",
+      "locator": "Q315342"
+    },
+    {
+      "dissent": false,
       "id": "burlingame-treaty",
       "kind": "event",
       "locator": "Q1016618"
@@ -11135,6 +11165,12 @@
       "id": "capture-of-york-factory",
       "kind": "event",
       "locator": "Q2937687"
+    },
+    {
+      "dissent": false,
+      "id": "carlist-wars",
+      "kind": "event",
+      "locator": "Q1178424"
     },
     {
       "dissent": false,
@@ -11618,6 +11654,12 @@
     },
     {
       "dissent": false,
+      "id": "constitution-of-belgium",
+      "kind": "event",
+      "locator": "Q633629"
+    },
+    {
+      "dissent": false,
       "id": "constitution-of-the-ottoman-empire",
       "kind": "event",
       "locator": "Q1318452"
@@ -12026,6 +12068,12 @@
     },
     {
       "dissent": false,
+      "id": "deluge-history",
+      "kind": "event",
+      "locator": "Q631163"
+    },
+    {
+      "dissent": false,
       "id": "demerara-rebellion-of-1823",
       "kind": "event",
       "locator": "Q5255169"
@@ -12266,6 +12314,12 @@
     },
     {
       "dissent": false,
+      "id": "edict-of-fontainebleau",
+      "kind": "event",
+      "locator": "Q512443"
+    },
+    {
+      "dissent": false,
       "id": "edict-of-restitution",
       "kind": "event",
       "locator": "Q703097"
@@ -12329,6 +12383,12 @@
       "id": "eighty-years-war",
       "kind": "event",
       "locator": "Q164432"
+    },
+    {
+      "dissent": false,
+      "id": "emancipation-reform-of-1861",
+      "kind": "event",
+      "locator": "Q1192212"
     },
     {
       "dissent": false,
@@ -13214,6 +13274,12 @@
     },
     {
       "dissent": false,
+      "id": "french-constitution-of-1791",
+      "kind": "event",
+      "locator": "Q971176"
+    },
+    {
+      "dissent": false,
       "id": "french-expedition-to-korea",
       "kind": "event",
       "locator": "Q134142"
@@ -13247,6 +13313,12 @@
       "id": "french-revolution-of-1848",
       "kind": "event",
       "locator": "Q622774"
+    },
+    {
+      "dissent": false,
+      "id": "french-revolutionary-and-napoleonic-wars",
+      "kind": "event",
+      "locator": "Q15053704"
     },
     {
       "dissent": false,
@@ -13352,6 +13424,12 @@
     },
     {
       "dissent": false,
+      "id": "georgian-era",
+      "kind": "event",
+      "locator": "Q2006877"
+    },
+    {
+      "dissent": false,
       "id": "georgian-ossetian-conflict-1918-1920",
       "kind": "event",
       "locator": "Q1208479"
@@ -13439,6 +13517,12 @@
       "id": "gran-colombia-peru-war",
       "kind": "event",
       "locator": "Q1972316"
+    },
+    {
+      "dissent": false,
+      "id": "granada-war",
+      "kind": "event",
+      "locator": "Q1552718"
     },
     {
       "dissent": false,
@@ -13796,9 +13880,21 @@
     },
     {
       "dissent": false,
+      "id": "herzegovina-uprising-1875-1877",
+      "kind": "event",
+      "locator": "Q2258726"
+    },
+    {
+      "dissent": false,
       "id": "hezbollah-israel-conflict-2023-present",
       "kind": "event",
       "locator": "Q122974556"
+    },
+    {
+      "dissent": false,
+      "id": "high-renaissance",
+      "kind": "event",
+      "locator": "Q1474884"
     },
     {
       "dissent": false,
@@ -16292,6 +16388,12 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-venetian-war-1714-1718",
+      "kind": "event",
+      "locator": "Q694835"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-wahhabi-war",
       "kind": "event",
       "locator": "Q1809288"
@@ -16469,6 +16571,12 @@
       "id": "peace-of-prague-1635",
       "kind": "event",
       "locator": "Q1455240, P31 Q625298"
+    },
+    {
+      "dissent": false,
+      "id": "peace-of-prague-1866",
+      "kind": "event",
+      "locator": "Q168268"
     },
     {
       "dissent": false,
@@ -17552,6 +17660,12 @@
     },
     {
       "dissent": false,
+      "id": "russo-persian-war-1804-1813",
+      "kind": "event",
+      "locator": "Q1139887"
+    },
+    {
+      "dissent": false,
       "id": "russo-persian-war-1826-1828",
       "kind": "event",
       "locator": "Q1420115"
@@ -17567,6 +17681,12 @@
       "id": "russo-turkish-war-1568-1570",
       "kind": "event",
       "locator": "Q631799"
+    },
+    {
+      "dissent": false,
+      "id": "russo-turkish-war-1672-1681",
+      "kind": "event",
+      "locator": "Q660004"
     },
     {
       "dissent": false,
@@ -18119,6 +18239,12 @@
       "id": "second-opium-war",
       "kind": "event",
       "locator": "Q418151"
+    },
+    {
+      "dissent": false,
+      "id": "second-partition-of-poland",
+      "kind": "event",
+      "locator": "Q3025374"
     },
     {
       "dissent": false,
@@ -19796,6 +19922,12 @@
     },
     {
       "dissent": false,
+      "id": "silesian-wars",
+      "kind": "event",
+      "locator": "Q699849"
+    },
+    {
+      "dissent": false,
       "id": "simba-rebellion",
       "kind": "event",
       "locator": "Q2656683"
@@ -21386,6 +21518,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-london-1839",
+      "kind": "event",
+      "locator": "Q1160895"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-london-q584617",
       "kind": "event",
       "locator": "Q584617"
@@ -21533,6 +21671,12 @@
       "id": "treaty-of-paris-1814",
       "kind": "event",
       "locator": "Q740724"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-paris-1815",
+      "kind": "event",
+      "locator": "Q233688"
     },
     {
       "dissent": false,

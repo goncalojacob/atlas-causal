@@ -13904,6 +13904,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fleurus-1794",
+      "kind": "event",
+      "locator": "\"Battle of Fleurus (1794)\", revision 1382123449"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-flodden",
       "kind": "event",
       "locator": "\"Battle of Flodden\", revision 1375370650"
@@ -15392,6 +15398,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-lutzen-1813",
+      "kind": "event",
+      "locator": "\"Battle of Lützen (1813)\", revision 1370805565"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-luzzara",
       "kind": "event",
       "locator": "\"Battle of Luzzara\", revision 1370448325"
@@ -15746,6 +15758,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mohacs-1687",
+      "kind": "event",
+      "locator": "\"Battle of Mohács (1687)\", revision 1380932887"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mollwitz",
       "kind": "event",
       "locator": "\"Battle of Mollwitz\", revision 1370564561"
@@ -16055,6 +16073,12 @@
       "id": "battle-of-novara-1513",
       "kind": "event",
       "locator": "\"Battle of Novara (1513)\", revision 1370270949"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-novara-1849",
+      "kind": "event",
+      "locator": "\"Battle of Novara (1849)\", revision 1370270954"
     },
     {
       "dissent": false,
@@ -19016,6 +19040,12 @@
     },
     {
       "dissent": false,
+      "id": "burgundian-wars",
+      "kind": "event",
+      "locator": "\"Burgundian Wars\", revision 1376549925"
+    },
+    {
+      "dissent": false,
       "id": "burlingame-treaty",
       "kind": "event",
       "locator": "\"Burlingame Treaty\", revision 1381058312"
@@ -19433,6 +19463,12 @@
       "id": "capture-of-york-factory",
       "kind": "event",
       "locator": "\"Capture of York Factory\", revision 1366221362"
+    },
+    {
+      "dissent": false,
+      "id": "carlist-wars",
+      "kind": "event",
+      "locator": "\"Carlist Wars\", revision 1379143443"
     },
     {
       "dissent": false,
@@ -19910,6 +19946,12 @@
     },
     {
       "dissent": false,
+      "id": "constitution-of-belgium",
+      "kind": "event",
+      "locator": "\"Constitution of Belgium\", revision 1382137791"
+    },
+    {
+      "dissent": false,
       "id": "constitution-of-the-ottoman-empire",
       "kind": "event",
       "locator": "\"Constitution of the Ottoman Empire\", revision 1371626139"
@@ -20318,6 +20360,12 @@
     },
     {
       "dissent": false,
+      "id": "deluge-history",
+      "kind": "event",
+      "locator": "\"Deluge (history)\", revision 1382444624"
+    },
+    {
+      "dissent": false,
       "id": "demerara-rebellion-of-1823",
       "kind": "event",
       "locator": "\"Demerara rebellion of 1823\", revision 1366246333"
@@ -20564,6 +20612,12 @@
     },
     {
       "dissent": false,
+      "id": "edict-of-fontainebleau",
+      "kind": "event",
+      "locator": "\"Edict of Fontainebleau\", revision 1362951211"
+    },
+    {
+      "dissent": false,
       "id": "edict-of-restitution",
       "kind": "event",
       "locator": "\"Edict of Restitution\", revision 1285679503"
@@ -20627,6 +20681,12 @@
       "id": "eighty-years-war",
       "kind": "event",
       "locator": "\"Eighty Years' War\", revision 1373935412"
+    },
+    {
+      "dissent": false,
+      "id": "emancipation-reform-of-1861",
+      "kind": "event",
+      "locator": "\"Emancipation reform of 1861\", revision 1380958365"
     },
     {
       "dissent": false,
@@ -21500,6 +21560,12 @@
     },
     {
       "dissent": false,
+      "id": "french-constitution-of-1791",
+      "kind": "event",
+      "locator": "\"French Constitution of 1791\", revision 1371021794"
+    },
+    {
+      "dissent": false,
       "id": "french-expedition-to-korea",
       "kind": "event",
       "locator": "\"French expedition to Korea\", revision 1370620397"
@@ -21533,6 +21599,12 @@
       "id": "french-revolution-of-1848",
       "kind": "event",
       "locator": "\"French Revolution of 1848\", revision 1380426436"
+    },
+    {
+      "dissent": false,
+      "id": "french-revolutionary-and-napoleonic-wars",
+      "kind": "event",
+      "locator": "\"French Revolutionary and Napoleonic Wars\", revision 1371101762"
     },
     {
       "dissent": false,
@@ -21626,6 +21698,12 @@
     },
     {
       "dissent": false,
+      "id": "georgian-era",
+      "kind": "event",
+      "locator": "\"Georgian era\", revision 1379070878"
+    },
+    {
+      "dissent": false,
       "id": "georgian-ossetian-conflict-1918-1920",
       "kind": "event",
       "locator": "\"Georgian–Ossetian conflicts of 1918-1920\", revision 1374257671"
@@ -21713,6 +21791,12 @@
       "id": "gran-colombia-peru-war",
       "kind": "event",
       "locator": "\"Gran Colombia–Peru War\", revision 1381497131"
+    },
+    {
+      "dissent": false,
+      "id": "granada-war",
+      "kind": "event",
+      "locator": "\"Granada War\", revision 1374828290"
     },
     {
       "dissent": false,
@@ -22076,9 +22160,21 @@
     },
     {
       "dissent": false,
+      "id": "herzegovina-uprising-1875-1877",
+      "kind": "event",
+      "locator": "\"Herzegovina uprising (1875–1877)\", revision 1378368924"
+    },
+    {
+      "dissent": false,
       "id": "hezbollah-israel-conflict-2023-present",
       "kind": "event",
       "locator": "\"Hezbollah–Israel conflict (2023–present)\", revision 1368616555"
+    },
+    {
+      "dissent": false,
+      "id": "high-renaissance",
+      "kind": "event",
+      "locator": "\"High Renaissance\", revision 1381416909"
     },
     {
       "dissent": false,
@@ -24512,6 +24608,12 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-venetian-war-1714-1718",
+      "kind": "event",
+      "locator": "\"Ottoman–Venetian War (1714–1718)\", revision 1381565988"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-wahhabi-war",
       "kind": "event",
       "locator": "\"Ottoman–Wahhabi war\", revision 1381926358"
@@ -24677,6 +24779,12 @@
       "id": "peace-of-prague-1635",
       "kind": "event",
       "locator": "\"Peace of Prague (1635)\", revision 1361393894"
+    },
+    {
+      "dissent": false,
+      "id": "peace-of-prague-1866",
+      "kind": "event",
+      "locator": "\"Peace of Prague (1866)\", revision 1346289117"
     },
     {
       "dissent": false,
@@ -25766,6 +25874,12 @@
     },
     {
       "dissent": false,
+      "id": "russo-persian-war-1804-1813",
+      "kind": "event",
+      "locator": "\"Russo-Persian War (1804–1813)\", revision 1377287267"
+    },
+    {
+      "dissent": false,
       "id": "russo-persian-war-1826-1828",
       "kind": "event",
       "locator": "\"Russo-Persian War (1826–1828)\", revision 1370729271"
@@ -25781,6 +25895,12 @@
       "id": "russo-turkish-war-1568-1570",
       "kind": "event",
       "locator": "\"Russo-Turkish War (1568–1570)\", revision 1382437683"
+    },
+    {
+      "dissent": false,
+      "id": "russo-turkish-war-1672-1681",
+      "kind": "event",
+      "locator": "\"Russo-Turkish War (1672–1681)\", revision 1379887023"
     },
     {
       "dissent": false,
@@ -26297,6 +26417,12 @@
       "id": "second-opium-war",
       "kind": "event",
       "locator": "\"Second Opium War\", revision 1379876059"
+    },
+    {
+      "dissent": false,
+      "id": "second-partition-of-poland",
+      "kind": "event",
+      "locator": "\"Second Partition of Poland\", revision 1368931403"
     },
     {
       "dissent": false,
@@ -27917,6 +28043,12 @@
       "id": "sikkim-expedition",
       "kind": "event",
       "locator": "\"Sikkim expedition\", revision 1370746898"
+    },
+    {
+      "dissent": false,
+      "id": "silesian-wars",
+      "kind": "event",
+      "locator": "\"Silesian Wars\", revision 1370746920"
     },
     {
       "dissent": false,
@@ -29720,6 +29852,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-london-1839",
+      "kind": "event",
+      "locator": "\"Treaty of London (1839)\", revision 1375578878"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-london-q584617",
       "kind": "event",
       "locator": "\"Treaty of London (1913)\", revision 1359713953"
@@ -29855,6 +29993,12 @@
       "id": "treaty-of-paris-1814",
       "kind": "event",
       "locator": "\"Treaty of Paris (1814)\", revision 1379456047"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-paris-1815",
+      "kind": "event",
+      "locator": "\"Treaty of Paris (1815)\", revision 1379222764"
     },
     {
       "dissent": false,
