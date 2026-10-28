@@ -82,6 +82,32 @@ async function zoomOnto(page, { x, y }, target) {
   return page.eval(SCALE);
 }
 
+// The same notches, aimed so that the mark ends up in the middle of the pane
+// instead of where it began. A notch moves a mark away from the pointer, so a
+// pointer placed on the far side of the mark from the middle carries it
+// towards the middle, and the pointer is re-aimed from where the mark is after
+// every notch. The room round a node is the point of the test that uses this,
+// and a mark that starts at the edge of the pane has none on that side.
+async function zoomIntoMiddle(page, id, target) {
+  for (let i = 0; i < 80; i += 1) {
+    if (await page.eval(SCALE) >= target) break;
+    await page.eval(`
+      const svg = document.querySelector('svg.graph');
+      const pane = svg.getBoundingClientRect();
+      const mark = svg.querySelector('circle.node[data-id="${id}"]').getBoundingClientRect();
+      const mx = mark.left + mark.width / 2;
+      const my = mark.top + mark.height / 2;
+      const gain = 3;
+      svg.dispatchEvent(new WheelEvent('wheel', {
+        bubbles: true, cancelable: true, deltaY: -120,
+        clientX: Math.round(mx - gain * (pane.left + pane.width / 2 - mx)),
+        clientY: Math.round(my - gain * (pane.top + pane.height / 2 - my)),
+      }));
+      return true;`);
+  }
+  return page.eval(SCALE);
+}
+
 // The mark on screen whose name is longest, with where it is and what it is
 // called. The name is the mark's own title, which carries the whole of it
 // however the label was cut.
@@ -142,11 +168,14 @@ test('a node with room round it is named in full, with nothing left off', { skip
     // And again on the second page, for the same reason: the label the zoom is
     // waited for below cannot be drawn before the name is in.
     await waitFor(page, named('svg.graph circle.node[data-id]'), 'every mark on the chosen page to carry its name');
-    const at = await page.eval(`
-      const el = document.querySelector('svg.graph circle.node[data-id="${longest.id}"]');
-      const r = el.getBoundingClientRect();
-      return { x: r.left + r.width / 2, y: r.top + r.height / 2 };`);
-    const k = await zoomOnto(page, at, 6);
+    // **Into the middle of the pane, not on the spot** (M99). The longest name
+    // belongs to a mark that sits 10 px inside the right-hand edge of the pane
+    // at the world view, and a zoom that keeps a mark where it is keeps it
+    // there. Where the pane ends depends on the panel beside it, and a pane a
+    // few pixels narrower puts that mark outside the picture, where it is never
+    // named (the CI runner failed this way while the same test passed here).
+    // In the middle it has the room the test says it has, on both sides.
+    const k = await zoomIntoMiddle(page, longest.id, 6);
     assert.ok(k >= 6, `the wheel went in (k = ${k})`);
     await waitFor(
       page,
