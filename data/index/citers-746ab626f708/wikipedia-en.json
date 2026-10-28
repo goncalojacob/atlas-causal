@@ -10244,6 +10244,12 @@
     },
     {
       "dissent": false,
+      "id": "1827-honduran-coup-d-etat",
+      "kind": "event",
+      "locator": "\"1827 Honduran coup d'état\", revision 1366247411"
+    },
+    {
+      "dissent": false,
       "id": "1835-1858-revolt-in-ottoman-tripolitania",
       "kind": "event",
       "locator": "\"1835–1858 revolt in Ottoman Tripolitania\", revision 1370278137"
@@ -11612,6 +11618,12 @@
     },
     {
       "dissent": false,
+      "id": "arana-southern-treaty",
+      "kind": "event",
+      "locator": "\"Arana–Southern Treaty\", revision 1368279803"
+    },
+    {
+      "dissent": false,
       "id": "arauco-war",
       "kind": "event",
       "locator": "\"Arauco War\", revision 1376467209"
@@ -11915,6 +11927,12 @@
       "id": "baring-crisis",
       "kind": "event",
       "locator": "\"Baring crisis\", revision 1370190462"
+    },
+    {
+      "dissent": false,
+      "id": "barrios-war-of-reunification",
+      "kind": "event",
+      "locator": "\"Barrios' War of Reunification\", revision 1370430429"
     },
     {
       "dissent": false,
@@ -16916,6 +16934,12 @@
     },
     {
       "dissent": false,
+      "id": "bolivian-civil-war",
+      "kind": "event",
+      "locator": "\"Bolivian Civil War\", revision 1378370615"
+    },
+    {
+      "dissent": false,
       "id": "bolivian-war-of-independence",
       "kind": "event",
       "locator": "\"Bolivian War of Independence\", revision 1372904906"
@@ -17792,6 +17816,12 @@
     },
     {
       "dissent": false,
+      "id": "comanche-mexico-wars",
+      "kind": "event",
+      "locator": "\"Comanche–Mexico Wars\", revision 1370611920"
+    },
+    {
+      "dissent": false,
       "id": "companhia-siderurgica-nacional-1941",
       "kind": "event",
       "locator": "\"Brazil in World War II\", revision 1373489318"
@@ -18065,6 +18095,12 @@
       "id": "creek-war",
       "kind": "event",
       "locator": "\"Creek War\", revision 1380172030"
+    },
+    {
+      "dissent": false,
+      "id": "creole-mutiny",
+      "kind": "event",
+      "locator": "\"Creole mutiny\", revision 1369626579"
     },
     {
       "dissent": false,
@@ -18791,6 +18827,12 @@
       "id": "federalist-revolution",
       "kind": "event",
       "locator": "\"Federalist Revolution\", revision 1371883583"
+    },
+    {
+      "dissent": false,
+      "id": "fedon-s-rebellion",
+      "kind": "event",
+      "locator": "\"Fédon's rebellion\", revision 1381005159"
     },
     {
       "dissent": false,
@@ -19778,6 +19820,12 @@
     },
     {
       "dissent": false,
+      "id": "hellgate-treaty",
+      "kind": "event",
+      "locator": "\"Hellgate Treaty\", revision 1268661343"
+    },
+    {
+      "dissent": false,
       "id": "hereditary-captaincies-of-brazil-1534",
       "kind": "event",
       "locator": "\"Captaincies of Brazil\", revision 1360950595"
@@ -20720,6 +20768,12 @@
     },
     {
       "dissent": false,
+      "id": "league-war",
+      "kind": "event",
+      "locator": "\"League War\", revision 1372905755"
+    },
+    {
+      "dissent": false,
       "id": "lebanese-civil-war",
       "kind": "event",
       "locator": "\"Lebanese Civil War\", revision 1370626682"
@@ -21032,6 +21086,12 @@
     },
     {
       "dissent": false,
+      "id": "medicine-lodge-treaty",
+      "kind": "event",
+      "locator": "\"Medicine Lodge Treaty\", revision 1360258102"
+    },
+    {
+      "dissent": false,
       "id": "meiji-era",
       "kind": "event",
       "locator": "\"Meiji era\", revision 1382073973"
@@ -21101,6 +21161,12 @@
       "id": "middle-eastern-crisis-2023-present",
       "kind": "event",
       "locator": "\"Middle Eastern crisis (2023–present)\", revision 1377899228"
+    },
+    {
+      "dissent": false,
+      "id": "mier-expedition",
+      "kind": "event",
+      "locator": "\"Mier expedition\", revision 1377685229"
     },
     {
       "dissent": false,
@@ -21530,6 +21596,12 @@
     },
     {
       "dissent": false,
+      "id": "ochomogo-war",
+      "kind": "event",
+      "locator": "\"Ochomogo War\", revision 1372904988"
+    },
+    {
+      "dissent": false,
       "id": "october-revolution",
       "kind": "event",
       "locator": "\"October Revolution\", revision 1370630358"
@@ -21914,6 +21986,12 @@
     },
     {
       "dissent": false,
+      "id": "paiute-war",
+      "kind": "event",
+      "locator": "\"Paiute War\", revision 1373561311"
+    },
+    {
+      "dissent": false,
       "id": "palace-of-justice-siege",
       "kind": "event",
       "locator": "\"Palace of Justice siege\", revision 1374219418"
@@ -22124,6 +22202,36 @@
     },
     {
       "dissent": false,
+      "id": "peruvian-civil-war-of-1834",
+      "kind": "event",
+      "locator": "\"Peruvian Civil War of 1834\", revision 1370704035"
+    },
+    {
+      "dissent": false,
+      "id": "peruvian-civil-war-of-1843-1844",
+      "kind": "event",
+      "locator": "\"Peruvian Civil War of 1843–1844\", revision 1370704041"
+    },
+    {
+      "dissent": false,
+      "id": "peruvian-civil-war-of-1856-1858",
+      "kind": "event",
+      "locator": "\"Peruvian Civil War of 1856–1858\", revision 1375720291"
+    },
+    {
+      "dissent": false,
+      "id": "peruvian-civil-war-of-1867",
+      "kind": "event",
+      "locator": "\"Peruvian Civil War of 1867\", revision 1370704052"
+    },
+    {
+      "dissent": false,
+      "id": "peruvian-civil-war-of-1884-1885",
+      "kind": "event",
+      "locator": "\"Peruvian Civil War of 1884–1885\", revision 1370704053"
+    },
+    {
+      "dissent": false,
       "id": "peruvian-civil-war-of-1894-1895",
       "kind": "event",
       "locator": "\"Peruvian Civil War of 1894–1895\", revision 1375447519"
@@ -22187,6 +22295,12 @@
       "id": "pilgrimage-of-grace",
       "kind": "event",
       "locator": "\"Pilgrimage of Grace\", revision 1376156822"
+    },
+    {
+      "dissent": false,
+      "id": "pima-revolt-1751",
+      "kind": "event",
+      "locator": "\"Pima Revolt (1751)\", revision 1381454233"
     },
     {
       "dissent": false,
@@ -22799,6 +22913,12 @@
       "id": "revolution-of-dignity",
       "kind": "event",
       "locator": "\"Revolution of Dignity\", revision 1376152819"
+    },
+    {
+      "dissent": false,
+      "id": "revolution-of-the-lances",
+      "kind": "event",
+      "locator": "\"Revolution of the Lances\", revision 1370707036"
     },
     {
       "dissent": false,
@@ -23501,6 +23621,12 @@
       "id": "shays-s-rebellion",
       "kind": "event",
       "locator": "\"Shays's Rebellion\", revision 1377911720"
+    },
+    {
+      "dissent": false,
+      "id": "sheepeater-indian-war",
+      "kind": "event",
+      "locator": "\"Sheepeater Indian War\", revision 1381997242"
     },
     {
       "dissent": false,
@@ -24980,6 +25106,12 @@
     },
     {
       "dissent": false,
+      "id": "snake-war",
+      "kind": "event",
+      "locator": "\"Snake War\", revision 1379208445"
+    },
+    {
+      "dissent": false,
       "id": "somali-civil-war",
       "kind": "event",
       "locator": "\"Somali Civil War\", revision 1368927093"
@@ -26012,6 +26144,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-big-tree",
+      "kind": "event",
+      "locator": "\"Treaty of Big Tree\", revision 1381466507"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-bongaya",
       "kind": "event",
       "locator": "\"Treaty of Bongaya\", revision 1302103147"
@@ -26072,6 +26210,18 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-cusseta",
+      "kind": "event",
+      "locator": "\"Treaty of Cusseta\", revision 1368136892"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-detroit",
+      "kind": "event",
+      "locator": "\"Treaty of Detroit\", revision 1375823407"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-easton",
       "kind": "event",
       "locator": "\"Treaty of Easton\", revision 1375686339"
@@ -26081,6 +26231,12 @@
       "id": "treaty-of-fes",
       "kind": "event",
       "locator": "\"Treaty of Fes\", revision 1361628067"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-fort-harmar",
+      "kind": "event",
+      "locator": "\"Treaty of Fort Harmar\", revision 1375606215"
     },
     {
       "dissent": false,
@@ -26096,6 +26252,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-fort-meigs",
+      "kind": "event",
+      "locator": "\"Treaty of Fort Meigs\", revision 1374304382"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-fort-pitt",
       "kind": "event",
       "locator": "\"Treaty of Fort Pitt\", revision 1360705441"
@@ -26105,6 +26267,18 @@
       "id": "treaty-of-fort-stanwix-1768",
       "kind": "event",
       "locator": "\"Treaty of Fort Stanwix (1768)\", revision 1381333515"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-fort-stanwix-1784",
+      "kind": "event",
+      "locator": "\"Treaty of Fort Stanwix (1784)\", revision 1382309853"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-fort-wayne-1809",
+      "kind": "event",
+      "locator": "\"Treaty of Fort Wayne (1809)\", revision 1372198832"
     },
     {
       "dissent": false,
@@ -26153,6 +26327,30 @@
       "id": "treaty-of-guadalupe-hidalgo",
       "kind": "event",
       "locator": "\"Treaty of Guadalupe Hidalgo\", revision 1379492376"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-hampton-court-1562",
+      "kind": "event",
+      "locator": "\"Treaty of Hampton Court (1562)\", revision 1334224617"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-hartford-1650",
+      "kind": "event",
+      "locator": "\"Treaty of Hartford (1650)\", revision 1368351886"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-holston",
+      "kind": "event",
+      "locator": "\"Treaty of Holston\", revision 1375513296"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-hopewell",
+      "kind": "event",
+      "locator": "\"Treaty of Hopewell\", revision 1379921118"
     },
     {
       "dissent": false,
@@ -26222,6 +26420,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-lochaber",
+      "kind": "event",
+      "locator": "\"Treaty of Lochaber\", revision 1378220441"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-london",
       "kind": "event",
       "locator": "\"Treaty of London (1915)\", revision 1364595903"
@@ -26246,9 +26450,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-medicine-creek",
+      "kind": "event",
+      "locator": "\"Treaty of Medicine Creek\", revision 1354739409"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-mendota",
       "kind": "event",
       "locator": "\"Treaty of Mendota\", revision 1376053250"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-moultrie-creek",
+      "kind": "event",
+      "locator": "\"Treaty of Moultrie Creek\", revision 1376798241"
     },
     {
       "dissent": false,
@@ -26273,6 +26489,12 @@
       "id": "treaty-of-new-echota",
       "kind": "event",
       "locator": "\"Treaty of New Echota\", revision 1375515490"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-new-york-1790",
+      "kind": "event",
+      "locator": "\"Treaty of New York (1790)\", revision 1350199031"
     },
     {
       "dissent": false,
@@ -26330,6 +26552,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-pontotoc-creek",
+      "kind": "event",
+      "locator": "\"Treaty of Pontotoc Creek\", revision 1355118611"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-portsmouth",
       "kind": "event",
       "locator": "\"Treaty of Portsmouth\", revision 1369694651"
@@ -26369,6 +26597,12 @@
       "id": "treaty-of-roskilde",
       "kind": "event",
       "locator": "\"Treaty of Roskilde\", revision 1372338247"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-saginaw",
+      "kind": "event",
+      "locator": "\"Treaty of Saginaw\", revision 1375823903"
     },
     {
       "dissent": false,
@@ -26417,6 +26651,12 @@
       "id": "treaty-of-shimonoseki",
       "kind": "event",
       "locator": "\"Treaty of Shimonoseki\", revision 1371343803"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-st-louis-1804",
+      "kind": "event",
+      "locator": "\"Treaty of St. Louis (1804)\", revision 1367504159"
     },
     {
       "dissent": false,
@@ -26504,9 +26744,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-washington-1836",
+      "kind": "event",
+      "locator": "\"Treaty of Washington (1836)\", revision 1213917166"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-washington-1871",
       "kind": "event",
       "locator": "\"Treaty of Washington (1871)\", revision 1365508134"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-washington-1900",
+      "kind": "event",
+      "locator": "\"Treaty of Washington (1900)\", revision 1372272670"
     },
     {
       "dissent": false,

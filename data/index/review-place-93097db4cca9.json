@@ -4476,7 +4476,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 3,
+      "degree": 4,
       "id": "bolivia-q750",
       "kind": "place",
       "names": [
@@ -5336,7 +5336,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 3,
+      "degree": 4,
       "id": "buenos-aires",
       "kind": "place",
       "names": [
@@ -8512,6 +8512,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "cusseta-alabama",
+      "kind": "place",
+      "names": [
+        "Cusseta",
+        "Cusseta, Alabama"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "cyprus-island",
@@ -9218,7 +9246,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "detroit",
       "kind": "place",
       "names": [
@@ -11535,6 +11563,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "fort-harmar",
+      "kind": "place",
+      "names": [
+        "Fort Harmar"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "fort-julien",
@@ -11646,7 +11701,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "fort-meigs",
       "kind": "place",
       "names": [
@@ -11758,7 +11813,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "fort-stanwix",
       "kind": "place",
       "names": [
@@ -11841,7 +11896,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "fort-wayne-indiana",
       "kind": "place",
       "names": [
@@ -12632,6 +12687,34 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "geneseo-village-new-york",
+      "kind": "place",
+      "names": [
+        "Geneseo",
+        "Geneseo (village), New York"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -13953,6 +14036,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "hampton-court-guyana",
+      "kind": "place",
+      "names": [
+        "Hampton Court",
+        "Hampton Court, Guyana"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "hanko-peninsula",
@@ -14043,6 +14154,34 @@
         "Harpers Ferry",
         "Harpers Ferry, West Virginia",
         "Harpers Ferry (Virgínia Ocidental)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "hartford-connecticut",
+      "kind": "place",
+      "names": [
+        "Hartford",
+        "Hartford, Connecticut"
       ],
       "origin": {
         "tool": "wikidata"
@@ -14498,6 +14637,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "holston-river",
+      "kind": "place",
+      "names": [
+        "Holston River"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -14919,7 +15085,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "idaho",
       "kind": "place",
       "names": [
@@ -21924,6 +22090,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "medicine-lodge-kansas",
+      "kind": "place",
+      "names": [
+        "Medicine Lodge",
+        "Medicine Lodge, Kansas",
+        "Medicine Lodge (Kansas)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "mehmandust-semnan",
@@ -22232,7 +22427,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 6,
+      "degree": 8,
       "id": "mexico-q96",
       "kind": "place",
       "names": [
@@ -24470,7 +24665,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 7,
+      "degree": 8,
       "id": "new-york",
       "kind": "place",
       "names": [
@@ -25745,7 +25940,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "oregon",
       "kind": "place",
       "names": [
@@ -26835,7 +27030,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 3,
+      "degree": 8,
       "id": "peru-q419",
       "kind": "place",
       "names": [
@@ -27426,6 +27621,35 @@
       "kind": "place",
       "names": [
         "Poniec"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "pontotoc-mississippi",
+      "kind": "place",
+      "names": [
+        "Pontotoc",
+        "Pontotoc, Mississippi",
+        "Pontotoc (Mississippi)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -28491,6 +28715,34 @@
       "names": [
         "Pylos",
         "Pilos"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "pyramid-lake-nevada",
+      "kind": "place",
+      "names": [
+        "Pyramid Lake",
+        "Pyramid Lake (Nevada)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -29898,6 +30150,35 @@
       "kind": "place",
       "names": [
         "Sacheon"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "saginaw-michigan",
+      "kind": "place",
+      "names": [
+        "Saginaw",
+        "Saginaw, Michigan",
+        "Saginaw (Michigan)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -32541,7 +32822,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 1,
+      "degree": 2,
       "id": "south-carolina-q1456",
       "kind": "place",
       "names": [
@@ -33485,6 +33766,34 @@
         "St. Lawrence River",
         "Rio São Lourenço",
         "Rio São Lourenço (América do Norte)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "st-louis",
+      "kind": "place",
+      "names": [
+        "St. Louis",
+        "St. Louis (Missouri)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -36362,7 +36671,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 25,
+      "degree": 27,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -36477,7 +36786,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 4,
+      "degree": 5,
       "id": "uruguay-q77",
       "kind": "place",
       "names": [
@@ -37441,7 +37750,7 @@
         }
       ],
       "created": "2026-09-03",
-      "degree": 11,
+      "degree": 13,
       "id": "washington",
       "kind": "place",
       "names": [

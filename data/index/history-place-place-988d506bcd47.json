@@ -3511,6 +3511,15 @@
         }
       ]
     },
+    "cusseta-alabama": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "cyprus-island": {
       "from": "git",
       "versions": [
@@ -4843,6 +4852,15 @@
         }
       ]
     },
+    "fort-harmar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "fort-julien": {
       "from": "git",
       "versions": [
@@ -5285,6 +5303,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "geneseo-village-new-york": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5861,6 +5888,15 @@
         }
       ]
     },
+    "hampton-court-guyana": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "hanko-peninsula": {
       "from": "git",
       "versions": [
@@ -5894,6 +5930,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "hartford-connecticut": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -6068,6 +6113,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "holston-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -9181,6 +9235,15 @@
         }
       ]
     },
+    "medicine-lodge-kansas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "mehmandust-semnan": {
       "from": "git",
       "versions": [
@@ -11489,6 +11552,15 @@
         }
       ]
     },
+    "pontotoc-mississippi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "port-au-prince": {
       "from": "git",
       "versions": [
@@ -11988,6 +12060,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "pyramid-lake-nevada": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -12617,6 +12698,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "saginaw-michigan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -14146,6 +14236,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "st-louis": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
