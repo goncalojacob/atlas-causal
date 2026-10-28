@@ -7530,6 +7530,15 @@
         }
       ]
     },
+    "james-island-chile": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "jammu-and-kashmir-q2571484": {
       "from": "git",
       "versions": [

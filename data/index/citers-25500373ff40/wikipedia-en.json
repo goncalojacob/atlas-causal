@@ -26492,6 +26492,12 @@
     },
     {
       "dissent": false,
+      "id": "second-voyage-of-hms-beagle",
+      "kind": "event",
+      "locator": "\"Second voyage of HMS Beagle\", revision 1381515981"
+    },
+    {
+      "dissent": false,
       "id": "second-war-of-kappel",
       "kind": "event",
       "locator": "\"Second War of Kappel\", revision 1375450979"

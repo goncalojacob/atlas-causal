@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "second-voyage-of-hms-beagle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1564366",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Second voyage of HMS Beagle"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1564366"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second voyage of HMS Beagle\", revision 1381515981"
+    }
+  ],
+  "title": "Second voyage of HMS Beagle",
+  "summary": "The English Wikipedia article \"Second voyage of HMS Beagle\", at revision 1381515981, opens: \"The second survey expedition of HMS Beagle took place from 27 December 1831 to 2 October 1836. Robert FitzRoy, the newest commander of Beagle, had thought of the advantages of having someone onboard who could investigate geology, and sought a naturalist to accompany them as a supernumerary. At the age of 22, the graduate Charles Darwin hoped to see the tropics before becoming a parson, and accepted the opportunity. He was greatly influenced by reading Charles Lyell's Principles of Geology during the voyage. By the end of the expedition, Darwin had made his name as a geologist, and fossil collector, and the publication of his journal gave him wide renown as a writer.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1564366, imported by tools/import/wikidata.mjs. The item's own description reads \"exploration associated with the theory of evolution (1831-1836)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1831,
+    "end": 1836,
+    "date": "1831-12-27",
+    "endDate": "1836-10-02"
+  },
+  "place": "james-island-chile",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -10130,6 +10130,15 @@
         }
       ]
     },
+    "second-voyage-of-hms-beagle": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "selk-nam-genocide": {
       "from": "git",
       "versions": [
