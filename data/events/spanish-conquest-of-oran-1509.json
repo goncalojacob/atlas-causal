@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "spanish-conquest-of-oran-1509",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5783538",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Spanish conquest of Oran (1509)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5783538"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Spanish conquest of Oran (1509)\", revision 1373999488"
+    }
+  ],
+  "title": "Spanish conquest of Oran (1509)",
+  "summary": "The English Wikipedia article \"Spanish conquest of Oran (1509)\", at revision 1373999488, opens: \"The conquest of Oran by the Spanish Empire took place on May 1509, when an army led by Pedro Navarro on behalf of the Cardinal Cisneros seized the North African city, which was controlled by the Kingdom of Tlemcen.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5783538, imported by tools/import/wikidata.mjs. The item's own description reads \"1509 conquest\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1509,
+    "end": 1509,
+    "date": "1509-05"
+  },
+  "place": "oran",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

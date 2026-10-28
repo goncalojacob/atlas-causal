@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sino-portuguese-treaty-of-peking",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q700327",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Sino-Portuguese Treaty of Peking",
+    "pt": "Tratado de Amizade e Comércio Sino-Português"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q700327"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sino-Portuguese Treaty of Peking\", revision 1382331031"
+    }
+  ],
+  "title": "Sino-Portuguese Treaty of Peking",
+  "summary": "The English Wikipedia article \"Sino-Portuguese Treaty of Peking\", at revision 1382331031, opens: \"The Sino-Portuguese Treaty of Peking was a treaty signed on 1 December 1887 between the Kingdom of Portugal and the Qing dynasty. Regarded by China as one of the unequal treaties concluded following the Second Opium War, it granted Portugal perpetual colonial rights over Macau in exchange for its cooperation in curbing the smuggling of opium.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q700327, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1887,
+    "end": null
+  },
+  "place": "beijing",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

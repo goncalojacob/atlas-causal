@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "sino-japanese-friendship-and-trade-treaty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q701091",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Sino-Japanese Friendship and Trade Treaty"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q701091"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sino-Japanese Friendship and Trade Treaty\", revision 1317774507"
+    }
+  ],
+  "title": "Sino-Japanese Friendship and Trade Treaty",
+  "summary": "The English Wikipedia article \"Sino-Japanese Friendship and Trade Treaty\", at revision 1317774507, opens: \"The Sino-Japanese Friendship and Trade Treaty was the first treaty between Japan and the Qing dynasty. It was signed on 13 September 1871 in Tientsin by Date Munenari and Plenipotentiary Li Hongzhang.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q701091, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty between Japan and Qing China signed on 13 September 1871 in Tianjin by Date Munenari and Li Hongzhang\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1871,
+    "end": 1871,
+    "date": "1871-07-29"
+  },
+  "place": "tianjin",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

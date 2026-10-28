@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-somosierra",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q155676",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Somosierra",
+    "pt": "Batalha de Somosierra"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q155676"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Somosierra\", revision 1380642131"
+    }
+  ],
+  "title": "Battle of Somosierra",
+  "summary": "The English Wikipedia article \"Battle of Somosierra\", at revision 1380642131, opens: \"The Battle of Somosierra took place on 30 November 1808, during the Peninsular War, when a combined Franco-Napoleonic Spanish-Polish force under the direct command of Napoleon I forced a passage through a Spanish division stationed at the Sierra de Guadarrama, which shielded Madrid from direct French attack. At the Somosierra mountain pass, 60 miles (97 km) north of Madrid, a heavily outnumbered Spanish detachment of regulars, volunteers and artillery under Benito de San Juan attempted to block Napoleon's advance onto Madrid. Napoleon overwhelmed the Spanish positions in a combined arms attack, sending the Polish Chevau-légers of the Imperial Guard at the Spanish guns while French infantry advanced up the slopes. The victory removed the last obstacle barring the road to Madrid, which fell a few days later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q155676, imported by tools/import/wikidata.mjs. The item's own description reads \"1808 battle during the Peninsular War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1808,
+    "end": 1808,
+    "date": "1808-11-30"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "peninsular-war"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "siege-of-la-rochelle",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q815170",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Siege of La Rochelle",
+    "pt": "Cerco de La Rochelle (1627–1628)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q815170"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of La Rochelle\", revision 1381095963"
+    }
+  ],
+  "title": "Siege of La Rochelle",
+  "summary": "The English Wikipedia article \"Siege of La Rochelle\", at revision 1381095963, opens: \"The siege of La Rochelle was a result of a war between the French royal forces of King Louis XIII and the Huguenots of La Rochelle in 1627–1628. The siege marked the height of the struggle between the Catholics and the Protestants in France and French territories, and ended with a complete victory for Louis XIII and the Catholics.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q815170, imported by tools/import/wikidata.mjs. The item's own description reads \"1627–1628 siege at the height of the struggle between the Catholics and the Protestants in France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1627,
+    "end": 1628,
+    "date": "1627-09-10",
+    "endDate": "1628-10-28"
+  },
+  "place": "la-rochelle",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "huguenot-rebellions"
+}

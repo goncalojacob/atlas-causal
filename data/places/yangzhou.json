@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "yangzhou",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q57906",
+  "sitelinks": {
+    "count": 59,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Yangzhou",
+    "pt": "Yangzhou"
+  },
+  "sources": [],
+  "names": [
+    "Yangzhou"
+  ],
+  "where": {
+    "lon": 119.43625,
+    "lat": 32.39117,
+    "precision": "city",
+    "label": "Yangzhou"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

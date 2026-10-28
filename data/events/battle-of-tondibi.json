@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-tondibi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q589285",
+  "sitelinks": {
+    "count": 12,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Tondibi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q589285"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tondibi\", revision 1381056726"
+    }
+  ],
+  "title": "Battle of Tondibi",
+  "summary": "The English Wikipedia article \"Battle of Tondibi\", at revision 1381056726, opens: \"The Battle of Tondibi was the decisive confrontation in the 16th-century invasion of the Songhai Empire by the army of the Saadi dynasty in Morocco. The Moroccan forces under Judar Pasha defeated the Songhai under Askia Ishaq II, guaranteeing the empire's downfall.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q589285, imported by tools/import/wikidata.mjs. The item's own description reads \"1591 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1591,
+    "end": 1591,
+    "date": "1591-03-12"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
