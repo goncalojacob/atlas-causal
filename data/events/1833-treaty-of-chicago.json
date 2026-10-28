@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1833-treaty-of-chicago",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q87256769",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1833 Treaty of Chicago"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q87256769"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1833 Treaty of Chicago\", revision 1380835132"
+    }
+  ],
+  "title": "1833 Treaty of Chicago",
+  "summary": "The English Wikipedia article \"1833 Treaty of Chicago\", at revision 1380835132, opens: \"The 1833 Treaty of Chicago was an agreement between the United States government and the Chippewa, Odawa, and Potawatomi tribes. It required them to cede to the United States government their 5,000,000 acres (2,000,000 ha) of land in Illinois and the Michigan Territory to move west of the Mississippi River. In return, the tribes were given promises of various cash payments and tracts of land west of the Mississippi River. The treaty was one of the removal treaties to come after the passage of the Indian Removal Act. It was the second treaty referred to as the \"Treaty of Chicago,\" after the 1821 Treaty of Chicago.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q87256769, imported by tools/import/wikidata.mjs. The item's own description reads \"1833 treaty between the United States and representatives of the Odawa, Ojibwe, and Potawatomi peoples, ratified 1835\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1833,
+    "end": 1833,
+    "date": "1833-09-26"
+  },
+  "place": "chicago",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

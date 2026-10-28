@@ -19270,6 +19270,620 @@
         "place": "holston-river"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-170",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-mississinewas",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-172",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q111940467: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-americas-174",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "blue-revolution-venezuela",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-176",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6783561: none of its classes (Q7292715) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-americas-178",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7492431: none of its classes (Q7292715) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-americas-180",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "1842-slave-revolt-in-the-cherokee-nation",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-182",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-hartford-1638",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-184",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "fourth-treaty-of-prairie-du-chien",
+        "edges": [],
+        "place": "prairie-du-chien-wisconsin"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-186",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7836950: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-americas-188",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-fort-clark",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-190",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-fort-wayne-1803",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-192",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-indian-springs-1821",
+        "edges": [],
+        "place": "indian-springs-texas"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-194",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-st-louis-1816",
+        "edges": [],
+        "place": "portage-des-sioux-missouri"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-196",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-st-mary-s-1818",
+        "edges": [],
+        "place": "st-marys-ohio"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-198",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "hualapai-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-200",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "1796-boca-de-nigua-slave-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-202",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "samba-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-204",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "third-treaty-of-prairie-du-chien",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-206",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-nicolls-outpost",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-208",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-st-louis-1818",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-210",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7837311: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-americas-212",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7837334: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-europe-035",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q206752: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-europe-037",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-luneville",
+        "edges": [],
+        "place": "luneville"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-039",
+      "writer": "A",
+      "fired": "2026-10-28T12:35Z",
+      "status": "written",
+      "written": {
+        "event": "great-plague-of-london",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-171",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "1825-miramichi-fire",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-173",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7318587: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-americas-175",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "comanche-campaign",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-177",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "peruvian-civil-war-of-1865",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-179",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q97585797: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-americas-181",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "bayano-wars",
+        "edges": [],
+        "place": "isthmus-of-panama"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-183",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "1833-treaty-of-chicago",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-185",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "osage-treaty-1825",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-187",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7837007: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-americas-189",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-fort-industry",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-191",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-friendship-and-alliance",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-193",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-indian-springs-1825",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-195",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q19107489: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-americas-197",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q16967004: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-americas-199",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "malespin-s-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-201",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "abaco-slave-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-203",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "yaqui-uprising",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-205",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-hartford-1786",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-207",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7837233: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-americas-209",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-watertown",
+        "edges": [],
+        "place": "watertown-massachusetts"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-211",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-ruby-valley-1863",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-213",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "lower-mississippi-valley-yellow-fever-epidemic-of-1878",
+        "edges": [],
+        "place": "memphis-tennessee"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-036",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "mutiny-on-the-bounty",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-europe-038",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-aigun",
+        "edges": [],
+        "place": "aigun"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-030",
+      "writer": "B",
+      "fired": "2026-10-28T12:42Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q16707899: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   ]
 }

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1842-slave-revolt-in-the-cherokee-nation",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4554596",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1842 Slave Revolt in the Cherokee Nation"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4554596"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1842 Slave Revolt in the Cherokee Nation\", revision 1367564184"
+    }
+  ],
+  "title": "1842 Slave Revolt in the Cherokee Nation",
+  "summary": "The English Wikipedia article \"1842 Slave Revolt in the Cherokee Nation\", at revision 1367564184, opens: \"The 1842 Slave Revolt in the Cherokee Nation was the largest escape of a group of slaves to occur in the Cherokee Nation, in what was then Indian Territory. The slave revolt started on November 15, 1842, when a group of 20 African Americans enslaved by the Cherokee escaped and tried to reach Mexico, where slavery had been abolished in 1829. Along their way south, they were joined by 15 slaves escaping from the Creek Nation in Indian Territory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4554596, imported by tools/import/wikidata.mjs. The item's own description reads \"escape of enslaved people to Mexico\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1842,
+    "end": 1842,
+    "date": "1842-11-15",
+    "endDate": "1842-11-28"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

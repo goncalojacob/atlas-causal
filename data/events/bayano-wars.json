@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "bayano-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q21070659",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Bayano Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q21070659"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bayano Wars\", revision 1370603899"
+    }
+  ],
+  "title": "Bayano Wars",
+  "summary": "The English Wikipedia article \"Bayano Wars\", at revision 1370603899, opens: \"The Bayano Wars were armed conflicts in the Isthmus of Panama that occurred between the Cimarron people of Panama and the Spanish crown. The First War of the Bayano took place from 1548 to 1558, while the Second War took place from 1579 and 1582. Slavery, practiced since the early sixteenth century in Panama, brought many enslaved people from Africa to Spanish America. This brought successive slave uprisings against the rulers of the time, which was the origin for the Bayano Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q21070659, imported by tools/import/wikidata.mjs. The item's own description reads \"slave revolts in Panama\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1548,
+    "end": 1558
+  },
+  "place": "isthmus-of-panama",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

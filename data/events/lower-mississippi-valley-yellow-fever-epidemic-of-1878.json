@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lower-mississippi-valley-yellow-fever-epidemic-of-1878",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q106574817",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Lower Mississippi Valley yellow fever epidemic of 1878"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q106574817"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lower Mississippi Valley yellow fever epidemic of 1878\", revision 1378857869"
+    }
+  ],
+  "title": "Lower Mississippi Valley yellow fever epidemic of 1878",
+  "summary": "The English Wikipedia article \"Lower Mississippi Valley yellow fever epidemic of 1878\", at revision 1378857869, opens: \"In 1878, a severe yellow fever epidemic swept through the lower Mississippi Valley. More than 74,000 cases and nearly 16,000 deaths across Alabama, Kentucky, Louisiana, Mississippi, and Tennessee.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q106574817, imported by tools/import/wikidata.mjs. The item's own description reads \"disease outbreak in the United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1878,
+    "end": 1878,
+    "date": "1878-08",
+    "endDate": "1878-11"
+  },
+  "place": "memphis-tennessee",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}
