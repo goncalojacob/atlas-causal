@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-schleswig-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q685683",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "First Schleswig War",
+    "pt": "Primeira Guerra do Eslésvico"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q685683"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Schleswig War\", revision 1374177270"
+    }
+  ],
+  "title": "First Schleswig War",
+  "summary": "The English Wikipedia article \"First Schleswig War\", at revision 1374177270, opens: \"The First Schleswig War, also known as the Schleswig-Holstein uprising and the Three Years' War, was a military conflict in southern Denmark and northern Germany rooted in the Schleswig–Holstein question: who should control the duchies of Schleswig, Holstein and Lauenburg, which at the time were ruled by the king of Denmark in a personal union. Ultimately, Denmark proved victorious with the diplomatic support of the great powers, especially Britain and Russia, since the duchies were close to an important Baltic seaway connecting both powers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q685683, imported by tools/import/wikidata.mjs. The item's own description reads \"military conflict 1848–1851\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1851,
+    "date": "1848-03-24",
+    "endDate": "1851-05-08"
+  },
+  "place": "duchy-of-schleswig",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

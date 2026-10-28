@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-belgrade",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q11821309",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Belgrade",
+    "pt": "Tratado de Belgrado"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q11821309"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Belgrade\", revision 1381937297"
+    }
+  ],
+  "title": "Treaty of Belgrade",
+  "summary": "The English Wikipedia article \"Treaty of Belgrade\", at revision 1381937297, opens: \"The Treaty of Belgrade, also known as the Belgrade Peace, was a peace treaty between the Habsburg Monarchy and Ottoman Empire, that was signed on September 18, 1739, in Belgrade, thus ending the Austro-Turkish War (1737–1739). Agreed territorial changes were substantial, and also favorable for the Ottoman side, since Habsburgs had to cede three regions: the Banat of Craiova, the Kingdom of Serbia with Belgrade, and Bosnian section of Posavina, thus placing the newly defined Habsburg-Ottoman border on the rivers Sava and Danube.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q11821309, imported by tools/import/wikidata.mjs. The item's own description reads \"1739 treaty between Austria and the Ottomans\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1739,
+    "end": 1739,
+    "date": "1739-09-18"
+  },
+  "place": "belgrade",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}
