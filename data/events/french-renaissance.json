@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "french-renaissance",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2349908",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "French Renaissance",
+    "pt": "Renascimento francês"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2349908"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French Renaissance\", revision 1381241918"
+    }
+  ],
+  "title": "French Renaissance",
+  "summary": "The English Wikipedia article \"French Renaissance\", at revision 1381241918, opens: \"The French Renaissance was the cultural and artistic movement in France between the 15th and early 17th centuries. The period is associated with the pan-European Renaissance, a word first used by the French historian Jules Michelet to define the artistic and cultural \"rebirth\" of Europe.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2349908, imported by tools/import/wikidata.mjs. The item's own description reads \"cultural movement from the 15th to 17th century\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": {
+      "min": 1500,
+      "max": 1599
+    },
+    "end": {
+      "min": 1700,
+      "max": 1799
+    }
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}
