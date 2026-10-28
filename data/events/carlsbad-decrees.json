@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "carlsbad-decrees",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q695851",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Carlsbad Decrees",
+    "pt": "Decretos de Carlsbad"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q695851"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Carlsbad Decrees\", revision 1316850003"
+    }
+  ],
+  "title": "Carlsbad Decrees",
+  "summary": "The English Wikipedia article \"Carlsbad Decrees\", at revision 1316850003, opens: \"The Carlsbad Decrees were a set of reactionary restrictions introduced in the states of the German Confederation by resolution of its parliamentary body on 20 September 1819 after a conference held in the spa town of Carlsbad, Austrian Empire. They banned nationalist fraternities (\"Burschenschaften\"), removed liberal university professors, and expanded the censorship of the press. They were aimed at quelling a growing sentiment for German unification and were passed during ongoing Hep-Hep riots which ended within a month after the resolution was passed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q695851, imported by tools/import/wikidata.mjs. The item's own description reads \"Decree of 1819 suppressing German nationalism\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1819,
+    "end": 1819,
+    "date": "1819-08"
+  },
+  "place": "karlovy-vary",
+  "region": null,
+  "regionNote": null,
+  "category": "law",
+  "actors": []
+}

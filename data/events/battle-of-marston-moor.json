@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-marston-moor",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q326417",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Marston Moor",
+    "pt": "Batalha de Marston Moor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q326417"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Marston Moor\", revision 1370449166"
+    }
+  ],
+  "title": "Battle of Marston Moor",
+  "summary": "The English Wikipedia article \"Battle of Marston Moor\", at revision 1370449166, opens: \"The Battle of Marston Moor was fought on 2 July 1644, during the Wars of the Three Kingdoms of 1639–1653. The combined forces of the English Parliamentarians under Lord Fairfax and the Earl of Manchester and the Scottish Covenanters under the Earl of Leven defeated the Royalists commanded by Prince Rupert of the Rhine and the Marquess of Newcastle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q326417, imported by tools/import/wikidata.mjs. The item's own description reads \"1644 battle of the First English Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1644,
+    "end": 1644,
+    "date": "1644-07-02"
+  },
+  "place": "long-marston-north-yorkshire",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "english-civil-war"
+}

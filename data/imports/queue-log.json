@@ -26722,6 +26722,607 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-020",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-berezina",
+        "edges": [],
+        "place": "berezina"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-022",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-lodi",
+        "edges": [],
+        "place": "lodi-lombardy"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-024",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-towton",
+        "edges": [],
+        "place": "towton"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-026",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nancy",
+        "edges": [],
+        "place": "nancy-france"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-028",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-patay",
+        "edges": [],
+        "place": "patay-loiret"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-030",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-naseby",
+        "edges": [],
+        "place": "naseby"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-032",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-krbava-field",
+        "edges": [],
+        "place": "krbavsko-plain"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-034",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-magenta",
+        "edges": [],
+        "place": "magenta-lombardy"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-036",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-karansebes",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-038",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-custoza-1848",
+        "edges": [],
+        "place": "verona"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-040",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kolin",
+        "edges": [],
+        "place": "kolin"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-042",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-muhlberg",
+        "edges": [],
+        "place": "muhlberg-brandenburg"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-044",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-orsha",
+        "edges": [],
+        "place": "orsha"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-046",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-arcole",
+        "edges": [],
+        "place": "arcole"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-048",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-petrovaradin",
+        "edges": [],
+        "place": "petrovaradin"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-050",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-worcester",
+        "edges": [],
+        "place": "worcester-england"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-052",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "carlsbad-decrees",
+        "edges": [],
+        "place": "karlovy-vary"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-054",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-custoza-1866",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-056",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kircholm",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-058",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-bautzen-1813",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-060",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-kulm",
+        "edges": [],
+        "place": "chlumec-usti-nad-labem-district"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-062",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-klushino",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-064",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-conquest-of-otranto",
+        "edges": [],
+        "place": "otranto"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-066",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-blore-heath",
+        "edges": [],
+        "place": "loggerheads-staffordshire"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-068",
+      "writer": "A",
+      "fired": "2026-10-28T16:32Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hochkirch",
+        "edges": [],
+        "place": "hochkirch"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-021",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-alma",
+        "edges": [],
+        "place": "alma-crimea"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-023",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-smolensk-1812",
+        "edges": [],
+        "place": "smolensk"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-025",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "great-stink",
+        "edges": [],
+        "place": "central-london"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-027",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-paris-1814",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-029",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tewkesbury",
+        "edges": [],
+        "place": "tewkesbury"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-031",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hohenlinden",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-033",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-dresden",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-035",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-st-albans",
+        "edges": [],
+        "place": "st-albans"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-037",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "charge-of-the-light-brigade",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-039",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-barnet",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-041",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-ligny",
+        "edges": [],
+        "place": "ligny"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-043",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-zorndorf",
+        "edges": [],
+        "place": "sarbinowo-gmina-debno"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-045",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "massacre-of-vassy",
+        "edges": [],
+        "place": "wassy"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-047",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-wakefield",
+        "edges": [],
+        "place": "wakefield"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-049",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-formigny",
+        "edges": [],
+        "place": "formigny"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-051",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-thessalonica-1422-1430",
+        "edges": [],
+        "place": "thessaloniki"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-053",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-slankamen",
+        "edges": [],
+        "place": "stari-slankamen"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-055",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-inkerman",
+        "edges": [],
+        "place": "inkerman"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-057",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-marston-moor",
+        "edges": [],
+        "place": "long-marston-north-yorkshire"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-059",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-jemappes",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-061",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-quatre-bras",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-063",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-rymnik",
+        "edges": [],
+        "place": "martinesti"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-065",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-breadfield",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-067",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-rivoli",
+        "edges": [],
+        "place": "rivoli-veronese"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-008",
+      "writer": "B",
+      "fired": "2026-10-28T16:37Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q613478 is already the event \"battle-of-djerba\""
     }
   ]
 }

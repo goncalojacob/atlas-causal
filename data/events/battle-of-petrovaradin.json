@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-petrovaradin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q690391",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Petrovaradin",
+    "pt": "Batalha de Petrovaradin"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q690391"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Petrovaradin\", revision 1382370137"
+    }
+  ],
+  "title": "Battle of Petrovaradin",
+  "summary": "The English Wikipedia article \"Battle of Petrovaradin\", at revision 1382370137, opens: \"The Battle of Petrovaradin also known as the Battle of Peterwardein, took place on 5 August 1716 during the Austro-Turkish War when the Ottoman army besieged the Habsburg-controlled fortress of Petrovaradin on the Military Frontier of the Habsburg monarchy. The Ottomans attempted to capture Petrovaradin, the so-called Gibraltar on the Danube, but experienced a great defeat by an army half the size of their own, similar to the defeat they had experienced in 1697 at the Battle of Zenta. Ottoman Grand Vizier Damad Ali Pasha was fatally wounded, while the Ottoman army lost 20,000 men and 250 guns to the Habsburg army led by Field Marshal Prince Eugene of Savoy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q690391, imported by tools/import/wikidata.mjs. The item's own description reads \"1716 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1716,
+    "end": 1716,
+    "date": "1716-08-05"
+  },
+  "place": "petrovaradin",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

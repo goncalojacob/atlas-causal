@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-rivoli",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q1069936",
+  "wikipedia": {
+    "en": "Battle of Rivoli",
+    "pt": "Batalha de Rivoli"
+  },
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1069936"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Rivoli\", revision 1375546771"
+    }
+  ],
+  "title": "Battle of Rivoli",
+  "summary": "The English Wikipedia article \"Battle of Rivoli\", at revision 1375546771, opens: \"The Battle of Rivoli was a key military engagement during the War of the First Coalition near the village of Rivoli, then part of the Republic of Venice. In the climax of the Italian campaign of 1796–1797, the outnumbered French Army of Italy, commanded by General Napoleon Bonaparte, decisively defeated the attacking Austrian army led by General of the Artillery József Alvinczi. Alvinczi was attempting to march south in a fourth and final effort to relieve the siege of Mantua, despite his deteriorating health. The French victory at Rivoli demonstrated Bonaparte's capability and deftness as a military commander. The French victory also led to the Austrian surrender of Mantua in February, French consolidation of northern Italy, and ultimately France's victory over Austria in the war later that year.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1069936, imported by tools/import/wikidata.mjs. The item's own description reads \"1797 battle during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1797,
+    "end": 1797,
+    "date": "1797-01-14",
+    "endDate": "1797-01-15"
+  },
+  "place": "rivoli-veronese",
+  "region": null,
+  "regionNote": null,
+  "parent": "italian-campaigns-of-the-french-revolutionary-wars",
+  "category": "war",
+  "actors": []
+}

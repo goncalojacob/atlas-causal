@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-st-albans",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q842796",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "First Battle of St Albans",
+    "pt": "Primeira Batalha de St. Albans"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q842796"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of St Albans\", revision 1372030876"
+    }
+  ],
+  "title": "First Battle of St Albans",
+  "summary": "The English Wikipedia article \"First Battle of St Albans\", at revision 1372030876, opens: \"The First Battle of St Albans took place on 22 May 1455, at St Albans, 22 miles (35 km) north of London, and traditionally marks the beginning of the Wars of the Roses in England. Richard, Duke of York, and his allies, the Neville Earls of Salisbury and Warwick, defeated a royal army commanded by Edmund Beaufort, Duke of Somerset. Unusually, the battle was contested in the town of St Albans itself, with the bulk of the fighting taking place in\nthe streets. Somerset was killed in the battle, and King Henry VI captured, clearing the way for a subsequent parliament to appoint Richard of York Lord Protector.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q842796, imported by tools/import/wikidata.mjs. The item's own description reads \"1455 conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1455,
+    "end": 1455,
+    "date": "1455-05-22"
+  },
+  "place": "st-albans",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "wars-of-the-roses"
+}

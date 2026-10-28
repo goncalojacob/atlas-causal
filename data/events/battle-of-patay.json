@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-patay",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q648535",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Patay",
+    "pt": "Batalha de Patay"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q648535"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Patay\", revision 1382309133"
+    }
+  ],
+  "title": "Battle of Patay",
+  "summary": "The English Wikipedia article \"Battle of Patay\", at revision 1382309133, opens: \"The Battle of Patay, fought on 18 June 1429 during the Hundred Years' War, was the culmination of the Loire Campaign between the French and English in north-central France. In this engagement, the horsemen of the French vanguard inflicted heavy casualties on an English army, most of them sustained by longbowmen as the English cavalry fled. In addition, all but one of the senior English commanders were captured. A victory often credited to Joan of Arc, she was in fact not present for the battle as she had remained with the main body of the French army. The vanguard at Patay was led by La Hire and Jean Poton de Xaintrailles.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q648535, imported by tools/import/wikidata.mjs. The item's own description reads \"1429 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1429,
+    "end": 1429,
+    "date": "1429-06-27"
+  },
+  "place": "patay-loiret",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

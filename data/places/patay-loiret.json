@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "patay-loiret",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q670283",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Patay, Loiret",
+    "pt": "Patay"
+  },
+  "sources": [],
+  "names": [
+    "Patay",
+    "Patay, Loiret"
+  ],
+  "where": {
+    "lon": 1.6955555555556,
+    "lat": 48.048055555556,
+    "precision": "city",
+    "label": "Patay, Loiret"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

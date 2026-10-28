@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-thessalonica-1422-1430",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2426040",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Siege of Thessalonica (1422–1430)",
+    "pt": "Cerco de Salonica (1422–1430)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2426040"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Thessalonica (1422–1430)\", revision 1371894679"
+    }
+  ],
+  "title": "Siege of Thessalonica (1422–1430)",
+  "summary": "The English Wikipedia article \"Siege of Thessalonica (1422–1430)\", at revision 1371894679, opens: \"The siege of Thessalonica between 1422 and 1430 saw the Ottoman Empire, under Sultan Murad II, capture the city of Thessalonica. Afterwards, the city remained in Ottoman hands for the next five centuries until it became part of the Kingdom of Greece in 1912.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2426040, imported by tools/import/wikidata.mjs. The item's own description reads \"1422 part of Ottoman conquests in Europe\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1422,
+    "end": 1430,
+    "date": "1422-06",
+    "endDate": "1430-03-29"
+  },
+  "place": "thessaloniki",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

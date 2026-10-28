@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kolin",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q470369",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Kolín",
+    "pt": "Kolín"
+  },
+  "sources": [],
+  "names": [
+    "Kolín"
+  ],
+  "where": {
+    "lon": 15.200633745928,
+    "lat": 50.028193990808,
+    "precision": "city",
+    "label": "Kolín"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

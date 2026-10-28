@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-naseby",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q949724",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Naseby",
+    "pt": "Batalha de Naseby"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q949724"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Naseby\", revision 1379912421"
+    }
+  ],
+  "title": "Battle of Naseby",
+  "summary": "The English Wikipedia article \"Battle of Naseby\", at revision 1379912421, opens: \"The Battle of Naseby took place on 14 June 1645 during the First English Civil War, near the village of Naseby in Northamptonshire. The Parliamentarian New Model Army, commanded by Sir Thomas Fairfax and Oliver Cromwell, destroyed the main Royalist army under Charles I and Prince Rupert. The defeat ended any real hope of Royalist victory, although Charles did not finally surrender until May 1646.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q949724, imported by tools/import/wikidata.mjs. The item's own description reads \"1645 battle of the First English Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1645,
+    "end": 1645,
+    "date": "1645-06-14"
+  },
+  "place": "naseby",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "english-civil-war"
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "thessaloniki",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q17151",
+  "sitelinks": {
+    "count": 135,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Thessaloniki",
+    "pt": "Salonica"
+  },
+  "sources": [],
+  "names": [
+    "Thessaloniki",
+    "Salonica"
+  ],
+  "where": {
+    "lon": 22.935555555555556,
+    "lat": 40.640277777777776,
+    "precision": "city",
+    "label": "Thessaloniki"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
