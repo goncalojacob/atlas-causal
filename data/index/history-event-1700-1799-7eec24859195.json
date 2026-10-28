@@ -4559,6 +4559,15 @@
         }
       ]
     },
+    "treaty-of-alinagar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-allahabad": {
       "from": "git",
       "versions": [

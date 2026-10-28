@@ -594,7 +594,34 @@
         }
       ]
     },
+    "action-of-2-june-1803": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "action-of-22-june-1803": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "action-of-31-october-1803": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "action-of-7-july-1804": {
       "from": "git",
       "versions": [
         {
@@ -1262,6 +1289,15 @@
         }
       ]
     },
+    "battle-of-arachova": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-araure": {
       "from": "git",
       "versions": [
@@ -1771,6 +1807,15 @@
         }
       ]
     },
+    "battle-of-dervenakia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-domokos": {
       "from": "git",
       "versions": [
@@ -1785,6 +1830,15 @@
             "summary"
           ],
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "battle-of-dragasani": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1959,6 +2013,15 @@
         }
       ]
     },
+    "battle-of-gerontas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-gettysburg": {
       "from": "git",
       "versions": [
@@ -2016,6 +2079,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-gravia-inn": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2133,6 +2205,15 @@
         }
       ]
     },
+    "battle-of-hokuetsu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-huaqui": {
       "from": "git",
       "versions": [
@@ -2238,6 +2319,15 @@
         }
       ]
     },
+    "battle-of-jiuliancheng": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-junin": {
       "from": "git",
       "versions": [
@@ -2271,6 +2361,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-karpenisi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2325,6 +2424,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-koshu-katsunuma": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2613,6 +2721,15 @@
         }
       ]
     },
+    "battle-of-maniaki": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-manila-1899": {
       "from": "git",
       "versions": [
@@ -2637,6 +2754,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-miyako-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2856,6 +2982,24 @@
         }
       ]
     },
+    "battle-of-peta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-phaleron": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-pichincha": {
       "from": "git",
       "versions": [
@@ -2889,6 +3033,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-pyongyang-1894": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3011,6 +3164,15 @@
         {
           "first": true,
           "on": "2026-10-01"
+        }
+      ]
+    },
+    "battle-of-samos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3200,6 +3362,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-sphacteria-1825": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3470,6 +3641,15 @@
         }
       ]
     },
+    "battle-of-the-yalu-river-1894": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-tirad-pass": {
       "from": "git",
       "versions": [
@@ -3590,6 +3770,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-valtetsi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3724,6 +3913,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "battle-of-yingkou": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4187,6 +4385,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "burning-of-the-ottoman-flagship-off-chios": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5378,6 +5585,15 @@
         }
       ]
     },
+    "first-siege-of-missolonghi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "first-sino-japanese-war": {
       "from": "git",
       "versions": [
@@ -6189,6 +6405,15 @@
         }
       ]
     },
+    "kasos-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "kenesary-s-rebellion": {
       "from": "git",
       "versions": [
@@ -6586,12 +6811,30 @@
         }
       ]
     },
+    "morea-expedition": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "naning-war": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "naousa-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -6781,6 +7024,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "ottoman-egyptian-invasion-of-mani": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -8453,6 +8705,15 @@
         }
       ]
     },
+    "siege-of-tripolitsa": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "siege-of-vicksburg": {
       "from": "git",
       "versions": [
@@ -8875,6 +9136,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "third-siege-of-missolonghi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

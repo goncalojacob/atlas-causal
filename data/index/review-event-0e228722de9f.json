@@ -6137,6 +6137,37 @@
       ],
       "category": "war",
       "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "action-of-2-june-1803",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-barbary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Action of 2 June 1803"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
         "wikidata"
       ],
       "created": "2026-10-02",
@@ -6388,6 +6419,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "action-of-31-october-1803",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-barbary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Action of 31 October 1803"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-29",
       "degree": 1,
       "id": "action-of-6-july-1746",
@@ -6439,6 +6501,37 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Action of 6 September 1782"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "action-of-7-july-1804",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-barbary-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Action of 7 July 1804"
     },
     {
       "authors": [
@@ -12185,6 +12278,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-arachova",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Arachova"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-27",
       "id": "battle-of-araure",
       "kind": "event",
@@ -16518,6 +16643,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-dervenakia",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Dervenakia"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-24",
       "id": "battle-of-dessau-bridge",
       "kind": "event",
@@ -16852,6 +17009,38 @@
       "revised": "2026-09-23",
       "status": "active",
       "title": "Battle of Domokos"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-dragasani",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Drăgășani"
     },
     {
       "authors": [
@@ -18621,6 +18810,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-gerontas",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Gerontas"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "battle-of-gettysburg",
       "kind": "event",
@@ -18985,6 +19206,38 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Battle of Graspan"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-gravia-inn",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Gravia Inn"
     },
     {
       "authors": [
@@ -19981,6 +20234,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Hohenfriedberg"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-hokuetsu",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "boshin-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Hokuetsu"
     },
     {
       "authors": [
@@ -21281,6 +21566,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-jiuliancheng",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-sino-japanese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Jiuliancheng"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-01",
       "id": "battle-of-johor-1586",
       "kind": "event",
@@ -21692,6 +22008,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Karameh"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-karpenisi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Karpenisi"
     },
     {
       "authors": [
@@ -22330,6 +22678,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Korsakov"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-koshu-katsunuma",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "boshin-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Kōshū-Katsunuma"
     },
     {
       "authors": [
@@ -24590,6 +24970,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-maniaki",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Maniaki"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-17",
       "id": "battle-of-manila-1762",
       "kind": "event",
@@ -25313,6 +25725,38 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Misrata (2011)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-miyako-bay",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "boshin-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Miyako Bay"
     },
     {
       "authors": [
@@ -27708,6 +28152,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-peta",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Peta"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "battle-of-peteroa",
@@ -27759,6 +28235,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Pfaffenhofen"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-phaleron",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Phaleron"
     },
     {
       "authors": [
@@ -28720,6 +29228,38 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Battle of Pyongyang (1592)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-pyongyang-1894",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-sino-japanese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Pyongyang (1894)"
     },
     {
       "authors": [
@@ -30023,6 +30563,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Salta"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-samos",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Samos"
     },
     {
       "authors": [
@@ -31546,6 +32118,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Speyerbach"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-sphacteria-1825",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Sphacteria (1825)"
     },
     {
       "authors": [
@@ -34215,6 +34819,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "battle-of-the-yalu-river-1894",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-sino-japanese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of the Yalu River (1894)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-23",
       "degree": 3,
       "id": "battle-of-the-yalu-river-1904",
@@ -35598,6 +36234,38 @@
       "revised": null,
       "status": "active",
       "title": "Battle of Valenciennes (1656)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-valtetsi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Valtetsi"
     },
     {
       "authors": [
@@ -37075,6 +37743,38 @@
       "revised": "2026-09-22",
       "status": "active",
       "title": "Battle of Yaguajay"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "battle-of-yingkou",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "first-sino-japanese-war",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Battle of Yingkou"
     },
     {
       "authors": [
@@ -39848,6 +40548,38 @@
       "revised": null,
       "status": "active",
       "title": "Burney Treaty"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "burning-of-the-ottoman-flagship-off-chios",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Burning of the Ottoman flagship off Chios"
     },
     {
       "authors": [
@@ -51338,6 +52070,38 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "first-siege-of-missolonghi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "First siege of Missolonghi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "id": "first-silesian-war",
       "kind": "event",
@@ -59088,6 +59852,38 @@
         {
           "github": null,
           "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "kasos-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Kasos Massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
         },
         {
           "github": null,
@@ -63285,6 +64081,36 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "morea-expedition",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Morea expedition"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "morean-war",
       "kind": "event",
@@ -64115,6 +64941,38 @@
       "revised": "2026-10-13",
       "status": "active",
       "title": "Nanjing Massacre"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "naousa-massacre",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Naousa massacre"
     },
     {
       "authors": [
@@ -67034,6 +67892,38 @@
       "revised": null,
       "status": "active",
       "title": "Ottoman coups of 1807–1808"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "ottoman-egyptian-invasion-of-mani",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Ottoman–Egyptian invasion of Mani"
     },
     {
       "authors": [
@@ -79822,6 +80712,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "siege-of-famagusta",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "ottoman-venetian-war-1570-1573",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Famagusta"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "siege-of-florence-1529-1530",
@@ -84046,6 +84967,38 @@
       "revised": null,
       "status": "active",
       "title": "Siege of Tripoli (1551)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "siege-of-tripolitsa",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "a9-place",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Siege of Tripolitsa"
     },
     {
       "authors": [
@@ -88977,6 +89930,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "third-siege-of-missolonghi",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "greek-war-of-independence",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Third siege of Missolonghi"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-16",
       "id": "third-silesian-war",
       "kind": "event",
@@ -90085,6 +91069,35 @@
       "revised": null,
       "status": "active",
       "title": "Treaty of Alcáçovas"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "treaty",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "treaty-of-alinagar",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Treaty of Alinagar"
     },
     {
       "authors": [
@@ -99198,6 +100211,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "action-of-2-june-1803",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "action-of-2-may-1654",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -99264,7 +100283,19 @@
       "rule": "summary-imported"
     },
     {
+      "id": "action-of-31-october-1803",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "action-of-6-september-1782",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "action-of-7-july-1804",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -99966,6 +100997,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-arachova",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-araure",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -100584,6 +101621,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-dervenakia",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-dessau-bridge",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -100639,6 +101682,12 @@
     },
     {
       "id": "battle-of-domokos",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-dragasani",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -100908,6 +101957,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-gerontas",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-gettysburg",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -100957,6 +102012,12 @@
     },
     {
       "id": "battle-of-grand-pre",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-gravia-inn",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -101113,6 +102174,12 @@
     },
     {
       "id": "battle-of-hohenfriedberg",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-hokuetsu",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -101286,6 +102353,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-jiuliancheng",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-johor-1586",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -101352,6 +102425,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-karpenisi",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-kassala",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -101413,6 +102492,12 @@
     },
     {
       "id": "battle-of-koregaon",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-koshu-katsunuma",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -101742,6 +102827,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-maniaki",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-manila-1762",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -101809,6 +102900,12 @@
     },
     {
       "id": "battle-of-melilla-1860",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-miyako-bay",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -102126,6 +103223,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-peta",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-phaleron",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-pichincha",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -102217,6 +103326,12 @@
     },
     {
       "id": "battle-of-pyongyang-1592",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-pyongyang-1894",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -102361,6 +103476,12 @@
     },
     {
       "id": "battle-of-saint-raphael",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-samos",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -102577,6 +103698,12 @@
     },
     {
       "id": "battle-of-speyerbach",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-sphacteria-1825",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -102906,6 +104033,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "battle-of-the-yalu-river-1894",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "battle-of-tientsin",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -103057,6 +104190,12 @@
     },
     {
       "id": "battle-of-valenciennes-1656",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-valtetsi",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -103261,6 +104400,12 @@
     },
     {
       "id": "battle-of-yaguajay",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "battle-of-yingkou",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -103627,6 +104772,12 @@
     },
     {
       "id": "burney-treaty",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "burning-of-the-ottoman-flagship-off-chios",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -104922,6 +106073,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "first-siege-of-missolonghi",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "first-silesian-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -105702,6 +106859,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "kasos-massacre",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "keian-uprising",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -106164,6 +107327,18 @@
       "rule": "degree-zero"
     },
     {
+      "id": "morea-expedition",
+      "kind": "event",
+      "message": "the event is part of \"greek-war-of-independence\" and is not dated inside it",
+      "rule": "child-outside-parent"
+    },
+    {
+      "id": "morea-expedition",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "morean-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -106255,6 +107430,12 @@
     },
     {
       "id": "nanjing-massacre",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "naousa-massacre",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -106531,6 +107712,12 @@
     },
     {
       "id": "ottoman-coups-of-1807-1808",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "ottoman-egyptian-invasion-of-mani",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -108240,6 +109427,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-famagusta",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-fort-detroit",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -108852,6 +110045,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "siege-of-tripolitsa",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "siege-of-turin-1640",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -109290,6 +110489,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "third-siege-of-missolonghi",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "third-silesian-war",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -109453,6 +110658,12 @@
     },
     {
       "id": "treaty-of-alcacovas",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "treaty-of-alinagar",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"

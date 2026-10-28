@@ -1620,6 +1620,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "arachova",
+      "kind": "place",
+      "names": [
+        "Arachova",
+        "Arácova"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -1863,6 +1891,35 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "arta-greece",
+      "kind": "place",
+      "names": [
+        "Arta",
+        "Arta, Greece",
+        "Arta (Grécia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -9492,6 +9549,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "dervenakia",
+      "kind": "place",
+      "names": [
+        "Dervenakia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "dessau-ro-lau",
@@ -13657,6 +13741,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "gravia",
+      "kind": "place",
+      "names": [
+        "Gravia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 3,
       "id": "great-lakes-region",
@@ -13713,7 +13824,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 3,
       "id": "greece-q41",
       "kind": "place",
       "names": [
@@ -16891,7 +17002,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 24,
+      "degree": 25,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -17780,6 +17891,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "karpenisi",
+      "kind": "place",
+      "names": [
+        "Karpenisi"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "kashgar",
@@ -17821,6 +17959,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "kasos",
+      "kind": "place",
+      "names": [
+        "Kasos"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -18796,6 +18961,34 @@
       "names": [
         "Kordofan",
         "Cordofão"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "korea-bay",
+      "kind": "place",
+      "names": [
+        "Korea Bay",
+        "Golfo da Coreia"
       ],
       "origin": {
         "tool": "wikidata"
@@ -20297,6 +20490,33 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "leros",
+      "kind": "place",
+      "names": [
+        "Leros"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -22059,6 +22279,63 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "mani-peninsula",
+      "kind": "place",
+      "names": [
+        "Mani Peninsula",
+        "Mani",
+        "Mani (Grécia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "maniaki-messenia",
+      "kind": "place",
+      "names": [
+        "Maniaki",
+        "Maniaki, Messenia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
       "degree": 4,
       "id": "manila",
@@ -23342,6 +23619,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 2,
+      "id": "missolonghi",
+      "kind": "place",
+      "names": [
+        "Missolonghi",
+        "Mesolóngi"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "mitu",
@@ -23361,6 +23666,33 @@
         "status": "draft"
       },
       "revised": "2026-09-24",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "miyako-bay",
+      "kind": "place",
+      "names": [
+        "Miyako Bay"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -24692,6 +25024,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "nagaoka-niigata",
+      "kind": "place",
+      "names": [
+        "Nagaoka",
+        "Nagaoka, Niigata",
+        "Nagaoka (Niigata)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-29",
       "degree": 1,
       "id": "nagapattinam",
@@ -24945,6 +25306,34 @@
       "names": [
         "Nanjing",
         "Nanquim"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "naousa-imathia",
+      "kind": "place",
+      "names": [
+        "Naoussa",
+        "Naousa, Imathia"
       ],
       "origin": {
         "tool": "wikidata"
@@ -26927,6 +27316,34 @@
           "a9-place"
         ],
         "note": "Place written by the run that imported the engagement, under A9 as A12 corrects it, and by hand because the import reuses a place record and never creates one: the record the event item's P276 names was not here, so the engagement came out placeless. The point and the name are the locality item's own; nothing here is guessed.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "palaio-faliro",
+      "kind": "place",
+      "names": [
+        "Palaio Faliro",
+        "Phalerum"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -29539,6 +29956,33 @@
       ],
       "created": "2026-10-28",
       "degree": 1,
+      "id": "pyongyang",
+      "kind": "place",
+      "names": [
+        "Pyongyang"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
       "id": "pyramid-lake-nevada",
       "kind": "place",
       "names": [
@@ -30623,7 +31067,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "romania-q218",
       "kind": "place",
       "names": [
@@ -31638,6 +32082,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "samos",
+      "kind": "place",
+      "names": [
+        "Samos"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -34524,6 +34995,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "sphacteria",
+      "kind": "place",
+      "names": [
+        "Sphacteria",
+        "Esfactéria"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "spotsylvania-county-virginia",
@@ -37238,7 +37737,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 9,
+      "degree": 12,
       "id": "tripoli",
       "kind": "place",
       "names": [
@@ -37247,6 +37746,35 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "tripoli-greece",
+      "kind": "place",
+      "names": [
+        "Tripoli",
+        "Tripoli, Greece",
+        "Trípoli (Grécia)"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -37990,6 +38518,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "valtetsi-village",
+      "kind": "place",
+      "names": [
+        "Valtetsi",
+        "Valtetsi (village)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -39683,7 +40239,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "yalu-river",
       "kind": "place",
       "names": [
@@ -39908,7 +40464,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "yingkou",
       "kind": "place",
       "names": [

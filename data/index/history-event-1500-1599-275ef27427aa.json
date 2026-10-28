@@ -3180,6 +3180,15 @@
         }
       ]
     },
+    "siege-of-famagusta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "siege-of-florence-1529-1530": {
       "from": "git",
       "versions": [

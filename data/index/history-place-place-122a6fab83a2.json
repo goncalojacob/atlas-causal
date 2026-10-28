@@ -599,6 +599,15 @@
         }
       ]
     },
+    "arachova": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "arad": {
       "from": "git",
       "versions": [
@@ -695,6 +704,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "arta-greece": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3894,6 +3912,15 @@
         }
       ]
     },
+    "dervenakia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "dessau-ro-lau": {
       "from": "git",
       "versions": [
@@ -5679,6 +5706,15 @@
         }
       ]
     },
+    "gravia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "great-lakes-region": {
       "from": "git",
       "versions": [
@@ -7328,6 +7364,15 @@
         }
       ]
     },
+    "karpenisi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "kashgar": {
       "from": "git",
       "versions": [
@@ -7349,6 +7394,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "kasos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -7731,6 +7785,15 @@
       ]
     },
     "kordofan": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "korea-bay": {
       "from": "git",
       "versions": [
         {
@@ -8360,6 +8423,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "leros": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -9173,6 +9245,24 @@
         }
       ]
     },
+    "mani-peninsula": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "maniaki-messenia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "manila": {
       "from": "git",
       "versions": [
@@ -9696,6 +9786,15 @@
         }
       ]
     },
+    "missolonghi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "mitu": {
       "from": "git",
       "versions": [
@@ -9709,6 +9808,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "miyako-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -10247,6 +10355,15 @@
         }
       ]
     },
+    "nagaoka-niigata": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "nagapattinam": {
       "from": "git",
       "versions": [
@@ -10340,6 +10457,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "naousa-imathia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -11179,6 +11305,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "palaio-faliro": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -12324,6 +12459,15 @@
         }
       ]
     },
+    "pyongyang": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "pyramid-lake-nevada": {
       "from": "git",
       "versions": [
@@ -13268,6 +13412,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "samos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -14464,6 +14617,15 @@
         }
       ]
     },
+    "sphacteria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "spotsylvania-county-virginia": {
       "from": "git",
       "versions": [
@@ -15562,6 +15724,15 @@
         }
       ]
     },
+    "tripoli-greece": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "trzciano-pomeranian-voivodeship": {
       "from": "git",
       "versions": [
@@ -15918,6 +16089,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "valtetsi-village": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
