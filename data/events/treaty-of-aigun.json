@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-aigun",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q618292",
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Aigun",
+    "pt": "Tratado de Aigun"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q618292"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Aigun\", revision 1365512169"
+    }
+  ],
+  "title": "Treaty of Aigun",
+  "summary": "The English Wikipedia article \"Treaty of Aigun\", at revision 1365512169, opens: \"The Treaty of Aigun was an 1858 treaty between the Russian Empire and Qing dynasty of China. Yishan, official of the Qing, signed it on behalf of the Qing. It established much of the modern border between the Russian Far East and China by ceding much of Manchuria, now known as Northeast China. Negotiations began after China was threatened with war on a second front by Governor-General of the Far East Nikolay Muraviev when China was suppressing the Taiping Rebellion. It reversed the Treaty of Nerchinsk (1689) by transferring the land between the Stanovoy Range and the Amur River from the Qing dynasty to the Russian Empire. Russia received over 600,000 square kilometers (231,660 sq mi) of what became known as Outer Manchuria. While the Qing government initially refused to recognize the validity of the treaty, the Russian gains under the Treaty of Aigun were affirmed as part of the 1860 Sino-Russian Convention of Peking.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q618292, imported by tools/import/wikidata.mjs. The item's own description reads \"1858 treaty between Russian Empire and Manchu Chinese Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1858,
+    "end": 1858,
+    "date": "1858-05-16"
+  },
+  "place": "aigun",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

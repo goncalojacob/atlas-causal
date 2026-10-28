@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-saginaw",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1572601",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Saginaw"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1572601"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Saginaw\", revision 1375823903"
+    }
+  ],
+  "title": "Treaty of Saginaw",
+  "summary": "The English Wikipedia article \"Treaty of Saginaw\", at revision 1375823903, opens: \"The Treaty of Saginaw, also known as the Treaty with the Chippewa, was made between Gen. Lewis Cass and Chief Mash Kee Yosh, Chief John Okemos, Chief Wasso and other Native American tribes of the Great Lakes region in what is now the United States, on September 24, 1819, proclaimed by the President of the United States on March 25, 1820, and placed in law as 7 Stat. 203.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1572601, imported by tools/import/wikidata.mjs. The item's own description reads \"1819 treaty between the United States and the Ojibwe, Odawa, and Potawatomi peoples\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1819,
+    "end": 1819,
+    "date": "1819-09-24"
+  },
+  "place": "saginaw-michigan",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

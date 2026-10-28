@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "boundary-treaty-of-1881-between-chile-and-argentina",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q940076",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Boundary Treaty of 1881 between Chile and Argentina",
+    "pt": "Tratado de Limites de 1881 entre Chile e Argentina"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q940076"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Boundary Treaty of 1881 between Chile and Argentina\", revision 1369960064"
+    }
+  ],
+  "title": "Boundary Treaty of 1881 between Chile and Argentina",
+  "summary": "The English Wikipedia article \"Boundary Treaty of 1881 between Chile and Argentina\", at revision 1369960064, opens: \"The Boundary Treaty of 1881 between Argentina and Chile was signed on 23 July 1881 in Buenos Aires by Bernardo de Irigoyen, for Argentina, and Francisco de Borja Echeverría, for Chile, with the aim of establishing a precise border between the two countries based on the uti possidetis juris principle. Despite dividing largely unexplored lands, the treaty laid the groundwork for nearly all of Chile's and Argentina's 5600 km current border.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q940076, imported by tools/import/wikidata.mjs. The item's own description reads \"Boundary Treaty between Argentina and Chile, signed on 23 July 1881\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1881,
+    "end": 1881,
+    "date": "1881-07-23"
+  },
+  "place": "santiago",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

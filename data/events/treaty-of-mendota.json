@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-mendota",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7837151",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Mendota"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837151"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Mendota\", revision 1376053250"
+    }
+  ],
+  "title": "Treaty of Mendota",
+  "summary": "The English Wikipedia article \"Treaty of Mendota\", at revision 1376053250, opens: \"The Treaty of Mendota was signed in Mendota, Minnesota, on August 5, 1851, between the United States federal government and the Mdewakanton and Wahpekute Dakota people of Minnesota.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837151, imported by tools/import/wikidata.mjs. The item's own description reads \"1851 treaty between the United States and the Mdewakanton and Wahpekute Dakota people of Minnesota\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1851,
+    "end": 1851,
+    "date": "1851-08-05"
+  },
+  "place": "mendota-illinois",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

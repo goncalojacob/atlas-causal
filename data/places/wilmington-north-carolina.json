@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "wilmington-north-carolina",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q659400",
+  "sitelinks": {
+    "count": 58,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Wilmington, North Carolina",
+    "pt": "Wilmington (Carolina do Norte)"
+  },
+  "sources": [],
+  "names": [
+    "Wilmington",
+    "Wilmington, North Carolina",
+    "Wilmington (Carolina do Norte)"
+  ],
+  "where": {
+    "lon": -77.912222222222,
+    "lat": 34.223333333333,
+    "precision": "city",
+    "label": "Wilmington, North Carolina"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

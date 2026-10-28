@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "philadelphia",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1345",
+  "sitelinks": {
+    "count": 182,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Philadelphia",
+    "pt": "Filadélfia"
+  },
+  "sources": [],
+  "names": [
+    "Philadelphia",
+    "Filadélfia"
+  ],
+  "where": {
+    "lon": -75.163611111111,
+    "lat": 39.952777777778,
+    "precision": "city",
+    "label": "Philadelphia"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

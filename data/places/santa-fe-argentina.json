@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "santa-fe-argentina",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q44244",
+  "sitelinks": {
+    "count": 70,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Santa Fe, Argentina",
+    "pt": "Santa Fé (Argentina)"
+  },
+  "sources": [],
+  "names": [
+    "Santa Fe",
+    "Santa Fe, Argentina",
+    "Santa Fé (Argentina)"
+  ],
+  "where": {
+    "lon": -60.7,
+    "lat": -31.633333333333,
+    "precision": "city",
+    "label": "Santa Fe, Argentina"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

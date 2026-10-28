@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "1796-boca-de-nigua-slave-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q131807029",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1796 Boca de Nigua slave revolt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q131807029"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1796 Boca de Nigua slave revolt\", revision 1366236886"
+    }
+  ],
+  "title": "1796 Boca de Nigua slave revolt",
+  "summary": "The English Wikipedia article \"1796 Boca de Nigua slave revolt\", at revision 1366236886, opens: \"The 1796 Boca de Nigua Rebellion was a slave rebellion that occurred in what became the Dominican Republic. It was the largest slave revolt in Dominican history. The revolt was brutally suppressed. However, it laid the foundations for the defense of black human rights in Santo Domingo, which remained a social issue well into the mid-19th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q131807029, imported by tools/import/wikidata.mjs. The item's own description reads \"1796 slave insurrection in the Dominican Republic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1796,
+    "end": 1796,
+    "date": "1796-10-26"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

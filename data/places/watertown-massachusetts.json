@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "watertown-massachusetts",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q54172",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Watertown, Massachusetts",
+    "pt": "Watertown (Massachusetts)"
+  },
+  "sources": [],
+  "names": [
+    "Watertown",
+    "Watertown, Massachusetts",
+    "Watertown (Massachusetts)"
+  ],
+  "where": {
+    "lon": -71.18333333333334,
+    "lat": 42.37083333333333,
+    "precision": "city",
+    "label": "Watertown, Massachusetts"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

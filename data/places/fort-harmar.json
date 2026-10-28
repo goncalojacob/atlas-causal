@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "fort-harmar",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5471296",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Fort Harmar"
+  },
+  "sources": [],
+  "names": [
+    "Fort Harmar"
+  ],
+  "where": {
+    "lon": -81.4577,
+    "lat": 39.409828,
+    "precision": "point",
+    "label": "Fort Harmar"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

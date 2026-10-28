@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "memphis-tennessee",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q16563",
+  "sitelinks": {
+    "count": 125,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Memphis, Tennessee",
+    "pt": "Memphis"
+  },
+  "sources": [],
+  "names": [
+    "Memphis",
+    "Memphis, Tennessee"
+  ],
+  "where": {
+    "lon": -90.05194444444444,
+    "lat": 35.14611111111111,
+    "precision": "city",
+    "label": "Memphis, Tennessee"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

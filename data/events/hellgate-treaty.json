@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "hellgate-treaty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5707512",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Hellgate Treaty"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5707512"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hellgate Treaty\", revision 1268661343"
+    }
+  ],
+  "title": "Hellgate Treaty",
+  "summary": "The English Wikipedia article \"Hellgate Treaty\", at revision 1268661343, opens: \"The Treaty of Hellgate was a treaty agreement between the United States and the Bitterroot Salish, Upper Pend d'Oreille, and Lower Kutenai tribes. The treaty was signed at Hellgate on 16 July 1855. Signatories included Isaac Stevens, superintendent of Indian affairs and governor of Washington Territory; Victor, chief of the Bitterroot Salish; Alexander, chief of the Pend d'Oreilles; Michelle, chief of the Kutenais; and several subchiefs. The treaty was ratified by Congress, signed by President James Buchanan, and proclaimed on 18 April 1859. It established the Flathead Indian Reservation.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5707512, imported by tools/import/wikidata.mjs. The item's own description reads \"1855 treaty between the United States and Bitterroot Salish\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1855,
+    "end": 1855,
+    "date": "1855-07-16"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

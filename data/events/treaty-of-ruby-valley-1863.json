@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "treaty-of-ruby-valley-1863",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7837216",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Ruby Valley (1863)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837216"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Ruby Valley (1863)\", revision 1380425562"
+    }
+  ],
+  "title": "Treaty of Ruby Valley (1863)",
+  "summary": "The English Wikipedia article \"Treaty of Ruby Valley (1863)\", at revision 1380425562, opens: \"The Treaty of Ruby Valley was a treaty signed with the Western Shoshone in 1863, giving certain rights to the United States in the Nevada Territory. The Western Shoshone did not cede land under this treaty but agreed to allow the U.S. the \"right to traverse the area, maintain existing telegraph and stage lines, construct one railroad and engage in specified economic activities. The agreement allows the U.S. president to designate reservations, but does not tie this to land cessions.\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837216, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 treaty between the United States and Western Shoshone\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

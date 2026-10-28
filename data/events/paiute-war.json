@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "paiute-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7125242",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Paiute War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7125242"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Paiute War\", revision 1373561311"
+    }
+  ],
+  "title": "Paiute War",
+  "summary": "The English Wikipedia article \"Paiute War\", at revision 1373561311, opens: \"The Paiute War, also known as the Pyramid Lake War, Washoe Indian War and the Pah Ute War, was an armed conflict between Northern Paiutes allied with the Shoshone and the Bannock against settlers from the United States, supported by military forces. It took place in May 1860 in the vicinity of Pyramid Lake in the Utah Territory, now in the northwest corner of present-day Nevada. The war was preceded by a series of increasingly violent incidents, culminating in two pitched battles in which 79 Whites and 25 Indigenous people were killed. Smaller raids and skirmishes continued until a cease-fire was agreed to in August 1860; there was no treaty.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7125242, imported by tools/import/wikidata.mjs. The item's own description reads \"1860 armed conflict between Native Americans and settlers\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1860,
+    "end": 1860
+  },
+  "place": "pyramid-lake-nevada",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

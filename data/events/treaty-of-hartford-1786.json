@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-hartford-1786",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q27958275",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Hartford (1786)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q27958275"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Hartford (1786)\", revision 1378715731"
+    }
+  ],
+  "title": "Treaty of Hartford (1786)",
+  "summary": "The English Wikipedia article \"Treaty of Hartford (1786)\", at revision 1378715731, opens: \"The Treaty of Hartford was a treaty concluded between New York and Massachusetts on December 16, 1786 in Hartford, Connecticut, over the ownership of the land which now comprises Western New York.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q27958275, imported by tools/import/wikidata.mjs. The item's own description reads \"1786 treaty between New York and Massachusetts\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1786,
+    "end": 1786,
+    "date": "1786-12-16"
+  },
+  "place": "hartford-connecticut",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-pontotoc-creek",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2518901",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Pontotoc Creek"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2518901"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Pontotoc Creek\", revision 1355118611"
+    }
+  ],
+  "title": "Treaty of Pontotoc Creek",
+  "summary": "The English Wikipedia article \"Treaty of Pontotoc Creek\", at revision 1355118611, opens: \"The Treaty of Pontotoc Creek was a treaty signed on October 20, 1832 by representatives of the United States and the Minkos (Leaders) of the Chickasaw Nation assembled at the National Council House on Pontotoc Creek in Pontotoc, Mississippi. The treaty ceded the 6,283,804 acres of the remaining Chickasaw homeland in Mississippi in return for Chickasaw relocation to an equal amount of land west of the Mississippi River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2518901, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty signed on October 20, 1832 by representatives of the United States and the Chiefs of the Chickasaw Nation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1832,
+    "end": 1832
+  },
+  "place": "pontotoc-mississippi",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

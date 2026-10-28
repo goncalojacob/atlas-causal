@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "barrios-war-of-reunification",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5918797",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Barrios' War of Reunification",
+    "pt": "Intentona de Barrios"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5918797"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Barrios' War of Reunification\", revision 1370430429"
+    }
+  ],
+  "title": "Barrios' War of Reunification",
+  "summary": "The English Wikipedia article \"Barrios' War of Reunification\", at revision 1370430429, opens: \"Barrios' War of Reunification, also known as Barrios' great attempt, was a war initiated by Guatemalan President Justo Rufino Barrios in 1885 with the goal of reunifying Central America. Of the five Central American countries, only Honduras supported Barrios' reunification effort; Costa Rica, El Salvador, and Nicaragua opposed it, as did Mexico.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5918797, imported by tools/import/wikidata.mjs. The item's own description reads \"1885 war in Central America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-02-28",
+    "endDate": "1885-04-14"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

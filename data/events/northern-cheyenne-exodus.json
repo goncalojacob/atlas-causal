@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "northern-cheyenne-exodus",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q17090764",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Northern Cheyenne Exodus"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17090764"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Northern Cheyenne Exodus\", revision 1378702285"
+    }
+  ],
+  "title": "Northern Cheyenne Exodus",
+  "summary": "The English Wikipedia article \"Northern Cheyenne Exodus\", at revision 1378702285, opens: \"The Northern Cheyenne Exodus, also known as Dull Knife's Raid, the Cheyenne War, or the Cheyenne Campaign, was the attempt of the Northern Cheyenne to return to the northern Great Plains, after being placed on the Southern Cheyenne reservation in the Indian Territory, and the United States Army operations to stop them. In September 1878, about 300 Cheyenne men, women, and children headed north from their reservation, fighting and winning several skirmishes with the U.S. Army. In Nebraska, the Cheyenne split into two groups of about equal numbers. One group successfully reached Montana. The other group was captured and imprisoned in Fort Robinson, Nebraska. In January 1879 they escaped from their confinement and fled north. Most were captured or killed during the pursuit by the army, although a few escaped and remained on the northern plains. Seven Cheyenne warriors were tried and acquitted of killing white civilians during their flight. The Cheyenne who survived the flight were allowed to remain in the north.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17090764, imported by tools/import/wikidata.mjs. The item's own description reads \"attempt of the Northern Cheyenne to return to the north\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1878,
+    "end": 1878
+  },
+  "place": "oklahoma",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

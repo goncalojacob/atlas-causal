@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-moultrie-creek",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q125312",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Moultrie Creek"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q125312"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Moultrie Creek\", revision 1376798241"
+    }
+  ],
+  "title": "Treaty of Moultrie Creek",
+  "summary": "The English Wikipedia article \"Treaty of Moultrie Creek\", at revision 1376798241, opens: \"The Treaty of Moultrie Creek, also known as the Treaty with the Florida Tribes of Indians, was an agreement signed in 1823 between the government of the United States and the chiefs of several groups and bands of Native Americans living in the present-day state of Florida. The treaty established a reservation in the center of the Florida peninsula, to which most of the Native Americans in Florida were to move, although several bands in western Florida were given small reservations around their settlements. The treaty allowed the Native Americans to remain in Florida for twenty years, and specified support to be given by the United States government to the reservation resident. The government waited less than ten years before forcing the Treaty of Payne's Landing on the Native Americans in Florida, requiring them to move west of the Mississippi River. Many of the Native Americans resisted removal from Florida, leading to the Second Seminole War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q125312, imported by tools/import/wikidata.mjs. The item's own description reads \"1823 treaty between the United States and several Seminole leaders in Florida\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1823,
+    "end": 1823,
+    "date": "1823-09-18"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

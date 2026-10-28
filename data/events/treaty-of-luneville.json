@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "treaty-of-luneville",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q156447",
+  "sitelinks": {
+    "count": 37,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Lunéville",
+    "pt": "Tratado de Lunéville"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q156447"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Lunéville\", revision 1368931381"
+    }
+  ],
+  "title": "Treaty of Lunéville",
+  "summary": "The English Wikipedia article \"Treaty of Lunéville\", at revision 1368931381, opens: \"The Treaty of Lunéville was signed in the Treaty House of Lunéville on 9 February 1801. The signatory parties were the French Republic and Emperor Francis II, who signed on his own behalf as ruler of the hereditary domains of the House of Austria and on behalf of the Holy Roman Empire. The signatories were Joseph Bonaparte and Count Ludwig von Cobenzl, the Austrian foreign minister. The treaty formally ended Austrian and Imperial participation in the War of the Second Coalition and the French Revolutionary Wars, as well as the Imperial Kingdom of Italy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q156447, imported by tools/import/wikidata.mjs. The item's own description reads \"1801 Treaty during the War of the Second Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1801,
+    "end": 1801,
+    "date": "1801-02-09"
+  },
+  "place": "luneville",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "fourth-treaty-of-prairie-du-chien",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q27989232",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Fourth Treaty of Prairie du Chien"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q27989232"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fourth Treaty of Prairie du Chien\", revision 1376523204"
+    }
+  ],
+  "title": "Fourth Treaty of Prairie du Chien",
+  "summary": "The English Wikipedia article \"Fourth Treaty of Prairie du Chien\", at revision 1376523204, opens: \"The fourth Treaty of Prairie du Chien was negotiated between the United States and the Sauk and Meskwaki, the Mdewakanton, Wahpekute and Sisseton Sioux, Omaha, Ioway, Otoe and Missouria peoples. The treaty was signed on July 15, 1830, with William Clark and Willoughby Morgan representing the United States. Through additional negotiations conducted in St. Louis on October 13, 1830, Yankton Sioux and Santee Sioux agreed to abide by the 1830 Treaty of Prairie du Chien. The US government announced the treaty and its numerous adherents on February 24, 1831.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q27989232, imported by tools/import/wikidata.mjs. The item's own description reads \"1830 treaty between the United States and representatives of several groups of Native Americans\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1830,
+    "end": 1830,
+    "date": "1830-07-15"
+  },
+  "place": "prairie-du-chien-wisconsin",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

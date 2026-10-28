@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "fedon-s-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5511513",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Fédon's rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5511513"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Fédon's rebellion\", revision 1381005159"
+    }
+  ],
+  "title": "Fédon's rebellion",
+  "summary": "The English Wikipedia article \"Fédon's rebellion\", at revision 1381005159, opens: \"Fédon's rebellion was an uprising against British rule in Grenada. Although a significant number of slaves were involved, they fought on both sides. Predominantly led by free mixed-race French-speakers, the stated purpose was to create a black republic as had already occurred in neighbouring Haiti rather than to free slaves, so it is not properly called a slave rebellion, although freedom of the slaves would have been a consequence of its success. Under the leadership of Julien Fédon, owner of a plantation in the mountainous interior of the island, and encouraged by French Revolutionary leaders on Guadeloupe, the rebels seized control of most of the island, but were eventually defeated by a military expedition led by General Ralph Abercromby.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5511513, imported by tools/import/wikidata.mjs. The item's own description reads \"revolt against British rule of Grenada\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1795,
+    "end": 1796,
+    "date": "1795-03-02",
+    "endDate": "1796-06-19"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}
