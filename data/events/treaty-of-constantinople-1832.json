@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-constantinople-1832",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2287308",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Constantinople (1832)",
+    "pt": "Tratado de Constantinopla (1832)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2287308"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Constantinople (1832)\", revision 1381773364"
+    }
+  ],
+  "title": "Treaty of Constantinople (1832)",
+  "summary": "The English Wikipedia article \"Treaty of Constantinople (1832)\", at revision 1381773364, opens: \"The Treaty of Constantinople signed on 21 July 1832 and was the product of the London Conference of 1832 which opened in February 1832 with the participation of the Great Powers on the one hand and the Ottoman Empire on the other. On 21 July 1832 British ambassador Sir Stratford Canning and the other representatives concluded the Treaty of Constantinople, which set the boundaries of the new Kingdom of Greece along the Arta–Volos line.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2287308, imported by tools/import/wikidata.mjs. The item's own description reads \"1832 treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1832,
+    "end": 1832
+  },
+  "place": "constantinople",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

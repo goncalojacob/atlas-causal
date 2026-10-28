@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "first-constitutional-era",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3545916",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "First Constitutional Era"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3545916"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Constitutional Era\", revision 1328161989"
+    }
+  ],
+  "title": "First Constitutional Era",
+  "summary": "The English Wikipedia article \"First Constitutional Era\", at revision 1328161989, opens: \"The First Constitutional Era was a period of constitutional monarchy in the Ottoman Empire from 23 December 1876 until 14 February 1878. It began with the promulgation of the Ottoman constitution, written by members of the Young Ottomans. The Young Ottomans were dissatisfied by the Tanzimat and pushed for a constitutional government similar to that in Europe. The constitutional period started with the dethroning of Sultan Abdul Aziz. After Murad V's ephemeral reign, Abdul Hamid II took his place as Sultan. The era ended with the suspension of the Ottoman Parliament and the constitution by Sultan Abdul Hamid II, with which he restored absolute monarchy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3545916, imported by tools/import/wikidata.mjs. The item's own description reads \"period of constitutional monarchy in the Ottoman Empire (1876–1878)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1876,
+    "end": 1878,
+    "date": "1876-12-23",
+    "endDate": "1878-02-14"
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

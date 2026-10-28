@@ -3738,3 +3738,27 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-28: `battle-of-quatre-bras`, filed under `napoleonic-wars` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-28-europe-061`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-28: `opium-wars`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-28-asia-058`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `triple-intervention`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-28-asia-070`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `burmese-siamese-war-1765-1767`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-28-asia-090`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `century-of-humiliation`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-28-asia-061`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `anglo-burmese-wars`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-28-asia-067`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `georgia-within-the-russian-empire`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-28-asia-079`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.

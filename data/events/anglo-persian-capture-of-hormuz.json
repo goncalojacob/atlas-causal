@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anglo-persian-capture-of-hormuz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1031465",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Anglo-Persian capture of Hormuz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1031465"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Persian capture of Hormuz\", revision 1381766806"
+    }
+  ],
+  "title": "Anglo-Persian capture of Hormuz",
+  "summary": "The English Wikipedia article \"Anglo-Persian capture of Hormuz\", at revision 1381766806, opens: \"The Capture of Hormuz was a combined Anglo-Persian expedition in 1622 that successfully captured the Portuguese fortress at Hormuz Island, thus opening up Persian trade with England in the Persian Gulf. Before the capture of Hormuz, the Portuguese had held the Castle of Hormuz for more than a century, since 1507 when Afonso de Albuquerque established it in the capture of Hormuz, giving them full control of the trade between India and Europe through the Persian Gulf. The capture of Hormuz transformed the balance of power and trade.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1031465, imported by tools/import/wikidata.mjs. The item's own description reads \"1622 Anglo-Persian force taking over the Portuguese garrison at Hormuz Island\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1622,
+    "end": 1622,
+    "date": "1622-02-09",
+    "endDate": "1622-04-04"
+  },
+  "place": "hormuz-island",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

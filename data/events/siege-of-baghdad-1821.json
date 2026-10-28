@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "siege-of-baghdad-1821",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "article-is-redirect"
+    ]
+  },
+  "wikidata": "Q132555025",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Siege of Baghdad (1821)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q132555025"
+    }
+  ],
+  "title": "Siege of Baghdad (1821)",
+  "summary": "Wikidata item Q132555025, imported by tools/import/wikidata.mjs. The item's own description reads \"1821 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821
+  },
+  "place": "baghdad",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

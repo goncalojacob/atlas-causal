@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-constantinople-1724",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q425882",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Constantinople (1724)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q425882"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Constantinople (1724)\", revision 1335159649"
+    }
+  ],
+  "title": "Treaty of Constantinople (1724)",
+  "summary": "The English Wikipedia article \"Treaty of Constantinople (1724)\", at revision 1335159649, opens: \"The Treaty of Constantinople Russo-Ottoman Treaty or Treaty of the Partition of Persia was a treaty concluded on 24 June 1724 between the Ottoman Empire and the Russian Empire, dividing large portions of the territory of mutually neighbouring Safavid Iran between them.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q425882, imported by tools/import/wikidata.mjs. The item's own description reads \"1724 Russian-Ottoman peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1724,
+    "end": 1724,
+    "date": "1724-06-12"
+  },
+  "place": "constantinople",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ottoman-safavid-war-1603-1612",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2578094",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Ottoman–Safavid war (1603–1612)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2578094"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman–Safavid war (1603–1612)\", revision 1382224417"
+    }
+  ],
+  "title": "Ottoman–Safavid war (1603–1612)",
+  "summary": "The English Wikipedia article \"Ottoman–Safavid war (1603–1612)\", at revision 1382224417, opens: \"The Ottoman–Safavid war of 1603–1612 consisted of two wars between Safavid Iran under Shah Abbas I and the Ottoman Empire under Mehmed III and his son Ahmed I. The first war began in 1603 and ended with a Safavid victory in 1612, when they regained and reestablished their suzerainty over the Caucasus and Western Iran, which had been lost at the Treaty of Constantinople in 1590.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2578094, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1603,
+    "end": 1612
+  },
+  "place": "azerbaijan-iran",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-persian-wars"
+}

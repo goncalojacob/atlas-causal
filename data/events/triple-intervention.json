@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "triple-intervention",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q696874",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Triple Intervention",
+    "pt": "Intervenção Tripla"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q696874"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Triple Intervention\", revision 1381263786"
+    }
+  ],
+  "title": "Triple Intervention",
+  "summary": "The English Wikipedia article \"Triple Intervention\", at revision 1381263786, opens: \"The Triple Intervention or Tripartite Intervention  German Intervention von Shimonoseki Russian тройное вмешательство\ntroynoye vmeshatel'stvo was a diplomatic intervention by Russia, Germany, and France on 23 April 1895 over the terms of the Treaty of Shimonoseki, imposed by Japan on Qing China at the end of the First Sino-Japanese War. The treaty, signed on 17 April, had ceded the island of Taiwan and the Liaodong Peninsula to Japan. In response, the three Western powers advised Japan to renounce the Liaodong Peninsula on the grounds that it would cause instability; Japan, anxious to keep their goodwill, did so by treaty on 8 November. The Japanese public was outraged, especially after Russia obtained a 25-year lease on the peninsula in 1898. The reaction against the Triple Intervention was one of the causes of the Russo-Japanese War of 1904–1905, in which Japan won the Russian lease on the peninsula.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q696874, imported by tools/import/wikidata.mjs. The item's own description reads \"diplomatic intervention by Russia, Germany, and France on 23 April 1895\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1895,
+    "end": 1895,
+    "date": "1895-04-23"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

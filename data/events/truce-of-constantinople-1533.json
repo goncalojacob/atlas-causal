@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "truce-of-constantinople-1533",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3997897",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Truce of Constantinople (1533)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3997897"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Truce of Constantinople (1533)\", revision 1374378193"
+    }
+  ],
+  "title": "Truce of Constantinople (1533)",
+  "summary": "The English Wikipedia article \"Truce of Constantinople (1533)\", at revision 1374378193, opens: \"The Truce of Constantinople was signed on 22 July 1533 in Constantinople by the Ottoman Empire and the Archduchy of Austria after the Habsburg–Ottoman war of 1529–1533.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3997897, imported by tools/import/wikidata.mjs. The item's own description reads \"between the Ottoman Empire and the Archduchy of Austria, as a result of the Battle of Mohacs\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1533,
+    "end": 1533
+  },
+  "place": "constantinople",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-constantinople-1700",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q732064",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Constantinople (1700)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q732064"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Constantinople (1700)\", revision 1267265162"
+    }
+  ],
+  "title": "Treaty of Constantinople (1700)",
+  "summary": "The English Wikipedia article \"Treaty of Constantinople (1700)\", at revision 1267265162, opens: \"The Treaty of Constantinople or Istanbul was signed on 13 July 1700 between the Tsardom of Russia and the Ottoman Empire. It ended the Russo-Turkish War of 1686-1700. Russian tsar Peter the Great secured possession of the Azov region and freed his forces to participate in the Great Northern War. The treaty was superseded by the Treaty of the Pruth in 1711, after the Ottoman Empire became involved in this war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q732064, imported by tools/import/wikidata.mjs. The item's own description reads \"1700 treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1700,
+    "end": 1700,
+    "date": "1700-07-13"
+  },
+  "place": "constantinople",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

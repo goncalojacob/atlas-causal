@@ -27323,6 +27323,610 @@
       },
       "refusals": [],
       "note": "Q613478 is already the event \"battle-of-djerba\""
+    },
+    {
+      "id": "2026-10-28-africa-010",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-santa-cruz-de-tenerife-1797",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-058",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "opium-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-060",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "sultanate-of-women",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-062",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "tulip-period",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-064",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-mysore-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-066",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "convention-of-constantinople",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-068",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-constantinople-1700",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-070",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "triple-intervention",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-072",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "keio",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-074",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-constantinople-1832",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-076",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-constantinople-1479",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-078",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-adrianople-1568",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-080",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-adrianople-1713",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-082",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "koprulu-era",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-084",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-baghdad-1821",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-086",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-safavid-war-1603-1612",
+        "edges": [],
+        "place": "azerbaijan-iran"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-088",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-constantinople-1897",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-090",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "burmese-siamese-war-1765-1767",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-092",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-persian-war-1776-1779",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-094",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-baghdad-1534",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-096",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "tensho-momoyama-period",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-098",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "constantinople-massacre-of-1821",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-100",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-miyajima",
+        "edges": [],
+        "place": "itsukushima"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-102",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "convention-for-the-lease-of-the-liaotung-peninsula",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-104",
+      "writer": "A",
+      "fired": "2026-10-28T16:43Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-mecca-1813",
+        "edges": [],
+        "place": "mecca"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-007",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "nahda",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-africa-009",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "zemene-mesafint",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-057",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q8733: the import wrote no event for it"
+    },
+    {
+      "id": "2026-10-28-asia-059",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q319531: its classes disagree: Q11514315 → event, Q3024240 → actor"
+    },
+    {
+      "id": "2026-10-28-asia-061",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "century-of-humiliation",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-063",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3076765: its classes disagree: Q1620908 → place, Q11514315 → event"
+    },
+    {
+      "id": "2026-10-28-asia-065",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "constantinople-conference",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-067",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-burmese-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-069",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q783310 is already the event \"orlov-revolt\""
+    },
+    {
+      "id": "2026-10-28-asia-071",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "first-constitutional-era",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-073",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-rhodes-1480",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-075",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-persian-war-1730-1735",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-077",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-constantinople-1724",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-079",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "georgia-within-the-russian-empire",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-081",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "anglo-persian-capture-of-hormuz",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-083",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-old-regime",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-085",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "naval-battle-of-hakodate",
+        "edges": [],
+        "place": "hakodate-bay"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-087",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "treaties-of-erzurum",
+        "edges": [],
+        "place": "erzurum"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-089",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "japan-korea-treaty-of-1885",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-091",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-mamluk-war-1485-1491",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-093",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tenmokuzan",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-095",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "truce-of-constantinople-1533",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-097",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "bosnian-uprising-1831-1833",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-099",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gallipoli-1416",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-asia-101",
+      "writer": "B",
+      "fired": "2026-10-28T16:51Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-uedahara",
+        "edges": [],
+        "place": "ueda-nagano"
+      },
+      "refusals": []
     }
   ]
 }

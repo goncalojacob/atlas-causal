@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-santa-cruz-de-tenerife-1797",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q543154",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Santa Cruz de Tenerife (1797)",
+    "pt": "Batalha de Santa Cruz de Tenerife (1797)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q543154"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Santa Cruz de Tenerife (1797)\", revision 1370847886"
+    }
+  ],
+  "title": "Battle of Santa Cruz de Tenerife (1797)",
+  "summary": "The English Wikipedia article \"Battle of Santa Cruz de Tenerife (1797)\", at revision 1370847886, opens: \"The Battle of Santa Cruz de Tenerife was an amphibious assault by the Royal Navy on the Spanish port city of Santa Cruz de Tenerife in the Canary Islands. Launched by Rear-Admiral Horatio Nelson on 22 July 1797, the assault was defeated, and on 25 July the remains of the landing party withdrew under a truce, having lost several hundred men. Nelson himself had been wounded in the arm, which was subsequently partially amputated: a stigma that he carried to his grave as a constant reminder of his failure.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q543154, imported by tools/import/wikidata.mjs. The item's own description reads \"1797 landing operation during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1797,
+    "end": 1797,
+    "date": "1797-07-22",
+    "endDate": "1797-07-25"
+  },
+  "place": "santa-cruz-de-tenerife",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "anglo-spanish-war-1796-1808"
+}
