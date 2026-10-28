@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-indian-springs-1821",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q28135633",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Indian Springs (1821)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q28135633"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Indian Springs (1821)\", revision 1363541578"
+    }
+  ],
+  "title": "Treaty of Indian Springs (1821)",
+  "summary": "The English Wikipedia article \"Treaty of Indian Springs (1821)\", at revision 1363541578, opens: \"The Treaty of Indian Springs, also known as the First Treaty of Indian Springs and the Treaty with the Creeks, is a treaty concluded between the Muscogee and the United States on January 8, 1821, at what is now Indian Springs State Park.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q28135633, imported by tools/import/wikidata.mjs. The item's own description reads \"1821 treaty between the Muscogee and United States\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1821,
+    "date": "1821-01-08"
+  },
+  "place": "indian-springs-texas",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

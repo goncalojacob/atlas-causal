@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-holston",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q7837099",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Holston"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837099"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Holston\", revision 1375513296"
+    }
+  ],
+  "title": "Treaty of Holston",
+  "summary": "The English Wikipedia article \"Treaty of Holston\", at revision 1375513296, opens: \"The Treaty of Holston was a treaty between the United States government and the Cherokee signed on July 2, 1791, and proclaimed on February 7, 1792. It was negotiated and signed by William Blount, governor of the Southwest Territory and superintendent of Indian affairs for the southern district of the United States, and various representatives of the Cherokee peoples, most notably John Watts. The treaty established terms of relations between the United States and the Cherokee; that the Cherokee tribes were to fall under the protection of the United States, with the United States managing all future foreign affairs for all the loosely affiliated Cherokee tribes.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837099, imported by tools/import/wikidata.mjs. The item's own description reads \"July 2, 1791 treaty between the U.S. government and the Cherokee tribes\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1791,
+    "end": 1791,
+    "date": "1791-07-02"
+  },
+  "place": "holston-river",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

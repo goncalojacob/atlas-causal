@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mani-peninsula",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q745295",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Mani Peninsula",
+    "pt": "Mani (Grécia)"
+  },
+  "sources": [],
+  "names": [
+    "Mani Peninsula",
+    "Mani",
+    "Mani (Grécia)"
+  ],
+  "where": {
+    "lon": 22.4303,
+    "lat": 36.559,
+    "precision": "region",
+    "label": "Mani Peninsula"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

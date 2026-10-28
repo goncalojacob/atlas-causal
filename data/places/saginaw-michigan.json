@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "saginaw-michigan",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q719",
+  "sitelinks": {
+    "count": 56,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Saginaw, Michigan",
+    "pt": "Saginaw (Michigan)"
+  },
+  "sources": [],
+  "names": [
+    "Saginaw",
+    "Saginaw, Michigan",
+    "Saginaw (Michigan)"
+  ],
+  "where": {
+    "lon": -83.9500261,
+    "lat": 43.4199247,
+    "precision": "city",
+    "label": "Saginaw, Michigan"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

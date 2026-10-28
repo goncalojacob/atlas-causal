@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "isthmus-of-panama",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q182139",
+  "sitelinks": {
+    "count": 68,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Isthmus of Panama",
+    "pt": "Istmo do Panamá"
+  },
+  "sources": [],
+  "names": [
+    "Isthmus of Panama",
+    "Istmo do Panamá"
+  ],
+  "where": {
+    "lon": -79,
+    "lat": 9,
+    "precision": "region",
+    "label": "Isthmus of Panama"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

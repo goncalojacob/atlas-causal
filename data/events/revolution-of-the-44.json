@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "revolution-of-the-44",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q9068529",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Revolution of the 44",
+    "pt": "Revolução dos 44"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q9068529"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolution of the 44\", revision 1370707035"
+    }
+  ],
+  "title": "Revolution of the 44",
+  "summary": "The English Wikipedia article \"Revolution of the 44\", at revision 1370707035, opens: \"The Revolution of the 44 was a military rebellion led by a group of Salvadoran generals and landowners, known as \"the 44\", against the government of President General Carlos Ezeta and Vice President General Antonio Ezeta.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q9068529, imported by tools/import/wikidata.mjs. The item's own description reads \"1894 revolution in El Salvador\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1894,
+    "end": 1894,
+    "date": "1894-04-29"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

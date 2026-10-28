@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "second-carib-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7443152",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Second Carib War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7443152"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Carib War\", revision 1366237420"
+    }
+  ],
+  "title": "Second Carib War",
+  "summary": "The English Wikipedia article \"Second Carib War\", at revision 1366237420, opens: \"The Second Carib War took place on the island of Saint Vincent between 1795 and 1797. The indigenous population of the island were supported by French forces against the British. Joseph Chatoyer initially led the Caribs, but was killed during a battle on 14 March 1795.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7443152, imported by tools/import/wikidata.mjs. The item's own description reads \"Conflict on the island of Saint Vincent (1795–1797)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1795,
+    "end": 1797
+  },
+  "place": "saint-vincent-saint-vincent-and-the-grenadines",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

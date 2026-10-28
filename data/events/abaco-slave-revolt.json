@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "abaco-slave-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q30675438",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Abaco Slave Revolt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q30675438"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Abaco Slave Revolt\", revision 1366233747"
+    }
+  ],
+  "title": "Abaco Slave Revolt",
+  "summary": "The English Wikipedia article \"Abaco Slave Revolt\", at revision 1366233747, opens: \"The Abaco Slave Revolt was the first slave revolt in the Bahamas. It occurred in 1787 or 1788.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q30675438, imported by tools/import/wikidata.mjs. The item's own description reads \"slave rebellion in the Bahamas\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1787,
+    "end": 1787
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

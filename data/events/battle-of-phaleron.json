@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-phaleron",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q82702",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Phaleron"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q82702"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Phaleron\", revision 1370585945"
+    }
+  ],
+  "title": "Battle of Phaleron",
+  "summary": "The English Wikipedia article \"Battle of Phaleron\", at revision 1370585945, opens: \"The Battle of Phaleron or Battle of Analatos took place on 6 May 1827, during the Greek War of Independence. The Greek rebel forces were being besieged inside the Acropolis of Athens by Ottoman forces under the command of Mehmed Reshid Pasha. Greek forces outside the city were desperately trying to break the siege.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q82702, imported by tools/import/wikidata.mjs. The item's own description reads \"1827 battle during the Greek War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1827,
+    "end": 1827,
+    "date": "1827-05-06"
+  },
+  "place": "palaio-faliro",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

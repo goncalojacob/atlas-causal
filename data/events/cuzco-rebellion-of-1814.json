@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "cuzco-rebellion-of-1814",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5197126",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Cuzco Rebellion of 1814",
+    "pt": "Rebelião do Cusco"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5197126"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cuzco Rebellion of 1814\", revision 1380774152"
+    }
+  ],
+  "title": "Cuzco Rebellion of 1814",
+  "summary": "The English Wikipedia article \"Cuzco Rebellion of 1814\", at revision 1380774152, opens: \"The Cuzco Rebellion of 1814 was an episode of the Peruvian War of Independence led by the Angulo brothers and Mateo Pumacahua that took place in much of the province of Cuzco, including Huamanga, Arequipa and Puno, as well as part of the province of Charcas. The uprising involved the proclamation of the autonomy and self-government of Cuzco from the Viceroyalty of Peru, governed by Viceroy José Fernando de Abascal y Sousa. The junta was modelled and intended to follow the steps of the Junta of Buenos Aires.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5197126, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 armed conflict in Peru\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mendota-illinois",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q575606",
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Mendota, Illinois",
+    "pt": "Mendota (Illinois)"
+  },
+  "sources": [],
+  "names": [
+    "Mendota",
+    "Mendota, Illinois",
+    "Mendota (Illinois)"
+  ],
+  "where": {
+    "lon": -89.11833,
+    "lat": 41.54917,
+    "precision": "city",
+    "label": "Mendota, Illinois"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

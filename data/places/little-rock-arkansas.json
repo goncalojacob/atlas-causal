@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "little-rock-arkansas",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q33405",
+  "sitelinks": {
+    "count": 136,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Little Rock, Arkansas",
+    "pt": "Little Rock"
+  },
+  "sources": [],
+  "names": [
+    "Little Rock",
+    "Little Rock, Arkansas"
+  ],
+  "where": {
+    "lon": -92.28805555555556,
+    "lat": 34.74444444444445,
+    "precision": "city",
+    "label": "Little Rock, Arkansas"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

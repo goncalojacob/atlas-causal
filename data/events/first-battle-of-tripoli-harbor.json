@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-battle-of-tripoli-harbor",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5452541",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "First Battle of Tripoli Harbor"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5452541"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Battle of Tripoli Harbor\", revision 1370619008"
+    }
+  ],
+  "title": "First Battle of Tripoli Harbor",
+  "summary": "The English Wikipedia article \"First Battle of Tripoli Harbor\", at revision 1370619008, opens: \"The First Battle of Tripoli Harbor was a naval battle fought on May 16, 1802, in Tripoli Harbor between a combined force consisting of the American frigate USS Boston and two Swedish Navy frigates against several Tripolitan Barbary corsairs. The Swedish-American force was enforcing the blockade when an engagement broke out between it and Tripolitan forces. The Allied fleet damaged the Tripolitan squadron as well as the harbor fortifications before withdrawing and resuming the blockade.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5452541, imported by tools/import/wikidata.mjs. The item's own description reads \"1802 naval battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1802,
+    "end": 1802,
+    "date": "1802-05-16"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "first-barbary-war"
+}

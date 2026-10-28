@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lower-canada-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2466441",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Lower Canada Rebellion"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2466441"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Lower Canada Rebellion\", revision 1376592521"
+    }
+  ],
+  "title": "Lower Canada Rebellion",
+  "summary": "The English Wikipedia article \"Lower Canada Rebellion\", at revision 1376592521, opens: \"The Lower Canada Rebellion, commonly referred to as the Patriots' Rebellion in French, is the name given to the armed conflict in 1837–38 between rebels and the British colonial government of Lower Canada. Together with the simultaneous rebellion in the neighbouring colony of Upper Canada, it formed the Rebellions of 1837–38.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2466441, imported by tools/import/wikidata.mjs. The item's own description reads \"1837–1838 armed conflict between the rebels of Lower Canada (now Quebec) and the British colonial power of that province\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1837,
+    "end": 1838,
+    "date": "1837-11-06",
+    "endDate": "1838-11-10"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "rebellions-of-1837-1838"
+}

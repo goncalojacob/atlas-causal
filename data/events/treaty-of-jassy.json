@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-jassy",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q122442",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Jassy",
+    "pt": "Tratado de Jassy"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q122442"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Jassy\", revision 1359845840"
+    }
+  ],
+  "title": "Treaty of Jassy",
+  "summary": "The English Wikipedia article \"Treaty of Jassy\", at revision 1359845840, opens: \"The Treaty of Jassy, signed at Iași (Jassy) in Moldavia, was a pact between the Russian and Ottoman Empires ending the Russo-Turkish War of 1787–92 and confirming Russia's increasing dominance in the Black Sea.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q122442, imported by tools/import/wikidata.mjs. The item's own description reads \"1792 treaty between Russia and the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1791,
+    "end": 1791,
+    "date": "1791-12-29"
+  },
+  "place": "iasi",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

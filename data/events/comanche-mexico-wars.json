@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "comanche-mexico-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5150532",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Comanche–Mexico Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5150532"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Comanche–Mexico Wars\", revision 1370611920"
+    }
+  ],
+  "title": "Comanche–Mexico Wars",
+  "summary": "The English Wikipedia article \"Comanche–Mexico Wars\", at revision 1370611920, opens: \"The Comanche–Mexico Wars was the Mexican theater of the Comanche Wars, a series of conflicts from 1821 to 1870. The Comanche and their Kiowa and Kiowa Apache allies carried out large-scale raids hundreds of miles deep into Mexico. The raids were stimulated by the desire of Comanches to accumulate wealth through plunder, principally horses, mules, and Mexican captives for ransom or slaves who became integrated into the tribe. The raids escalated proportionally to Mexico's inability to defend its citizens during the turbulent years after it gained independence in 1821 and a large and growing market in the United States for stolen Mexican horses and cattle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5150532, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflicts between indigenous peoples and white people in Mexico between 1821 and circa 1870\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1821,
+    "end": 1870
+  },
+  "place": "mexico-q96",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

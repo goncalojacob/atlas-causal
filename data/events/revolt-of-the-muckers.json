@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "revolt-of-the-muckers",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7318599",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Revolt of the Muckers",
+    "pt": "Revolta dos Muckers"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7318599"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolt of the Muckers\", revision 1370706954"
+    }
+  ],
+  "title": "Revolt of the Muckers",
+  "summary": "The English Wikipedia article \"Revolt of the Muckers\", at revision 1370706954, opens: \"The Revolt of the Muckers was a conflict between two groups in a German community in Southern Brazil, in 1873 and 1874. It took place in the region of Sapiranga, Rio Grande do Sul, Brazil. Jacobina Mentz Maurer, believed by some to be a prophet, led a conflict that was eventually quelled by the Brazilian military, and its leaders either killed or arrested and imprisoned.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7318599, imported by tools/import/wikidata.mjs. The item's own description reads \"Conflict between two groups in Southern Brazil in 1873 and 1874\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1874,
+    "end": 1874,
+    "date": "1874-07-19"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

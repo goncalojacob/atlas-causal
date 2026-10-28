@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "oklahoma",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1649",
+  "sitelinks": {
+    "count": 197,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Oklahoma",
+    "pt": "Oklahoma"
+  },
+  "sources": [],
+  "names": [
+    "Oklahoma"
+  ],
+  "where": {
+    "lon": -98,
+    "lat": 35.5,
+    "precision": "region",
+    "label": "Oklahoma"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

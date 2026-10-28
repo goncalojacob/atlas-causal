@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "irish-and-german-mercenary-soldiers-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2748347",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Irish and German Mercenary Soldiers' revolt",
+    "pt": "Revolta dos Mercenários"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2748347"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Irish and German Mercenary Soldiers' revolt\", revision 1370624398"
+    }
+  ],
+  "title": "Irish and German Mercenary Soldiers' revolt",
+  "summary": "The English Wikipedia article \"Irish and German Mercenary Soldiers' revolt\", at revision 1370624398, opens: \"The Irish and German revolt in Brazil was a revolt of German and Irish mercenaries in 1828 during the Cisplatine War of 1825–1828. The immigrants, who were recruited in their homelands to come to Brazil, discovered that the promises made to them by the Brazilian government were not fulfilled. In the revolt, the Irish and Germans took control of large parts of Rio de Janeiro. Citizens of the town and troops from French and British warships suppressed the revolt.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2748347, imported by tools/import/wikidata.mjs. The item's own description reads \"1828 military revolt in Brazil by Irish and German mercenaries\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1828,
+    "end": 1828
+  },
+  "place": "rio-de-janeiro",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-hartford-1638",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q27958272",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Hartford (1638)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q27958272"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Hartford (1638)\", revision 1368351806"
+    }
+  ],
+  "title": "Treaty of Hartford (1638)",
+  "summary": "The English Wikipedia article \"Treaty of Hartford (1638)\", at revision 1368351806, opens: \"The Treaty of Hartford was a treaty concluded between English colonists in Connecticut, the Mohegan nation and the Narragansett nation on September 21, 1638, following the Pequot War, in Hartford, Connecticut. It sought to eradicate the Pequot cultural identity by prohibiting the Pequots from returning to their lands, speaking their tribal language, or referring to themselves as Pequots.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q27958272, imported by tools/import/wikidata.mjs. The item's own description reads \"1638 treaty between England, the Mohegan and the Narragansett\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1638,
+    "end": 1638,
+    "date": "1638-09-21"
+  },
+  "place": "hartford-connecticut",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

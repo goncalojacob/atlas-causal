@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "belfast-mpumalanga",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q301107",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Belfast, Mpumalanga"
+  },
+  "sources": [],
+  "names": [
+    "eMakhazeni",
+    "Belfast, Mpumalanga"
+  ],
+  "where": {
+    "lon": 30.031666666667,
+    "lat": -25.68935,
+    "precision": "city",
+    "label": "Belfast, Mpumalanga"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

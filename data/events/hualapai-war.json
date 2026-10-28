@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hualapai-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q5925205",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Hualapai War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5925205"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Hualapai War\", revision 1370622953"
+    }
+  ],
+  "title": "Hualapai War",
+  "summary": "The English Wikipedia article \"Hualapai War\", at revision 1370622953, opens: \"The Hualapai War, or Walapai War, was an armed conflict fought from 1865 to 1870 between the Hualapai native Americans and the United States in Arizona Territory. The Yavapai also participated on the side of the Hualapai and Mohave scouts were employed by the United States Army. Following the death of the prominent Yavapai leader Anasa in April 1865, the natives began raiding American settlements which provoked a response by the United States Army forces stationed in the area. By the spring of 1869 disease forced the majority of the Hualapais to surrender though some skirmishing continued for almost two more years.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5925205, imported by tools/import/wikidata.mjs. The item's own description reads \"1865–1870, United States v. Natives\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1865,
+    "end": 1870
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

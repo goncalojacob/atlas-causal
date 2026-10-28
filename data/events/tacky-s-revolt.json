@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tacky-s-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2386936",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Tacky's Revolt",
+    "pt": "Revolta de Tacky"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2386936"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tacky's Revolt\", revision 1371437297"
+    }
+  ],
+  "title": "Tacky's Revolt",
+  "summary": "The English Wikipedia article \"Tacky's Revolt\", at revision 1371437297, opens: \"Tacky's Revolt was a slave rebellion in the British colony of Jamaica which lasted from 7 April 1760 to 1761. Spearheaded by self-emancipated Coromantee people, the rebels were led by a Fante royal named Tacky. It was the most significant slave rebellion in the West Indies between the 1733 slave insurrection on St. John and the 1791 Haitian Revolution. The rebels were eventually defeated after British colonial forces, assisted by Jamaican Maroons, waged a gruelling counterinsurgency campaign. According to historian Trevor Burnard, \"[in] terms of its shock to the imperial system, only the American Revolution surpassed Tacky's War in the eighteenth century.\" It was also the largest slave rebellion in the British West Indies until the Baptist War of 1831, which also occurred in Jamaica.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2386936, imported by tools/import/wikidata.mjs. The item's own description reads \"slave revolt in Jamaica\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1760,
+    "end": 1761,
+    "date": "1760-04-07"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

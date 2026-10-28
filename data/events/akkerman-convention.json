@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "akkerman-convention",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1993653",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Akkerman Convention",
+    "pt": "Convenção de Akkerman"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1993653"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Akkerman Convention\", revision 1371684860"
+    }
+  ],
+  "title": "Akkerman Convention",
+  "summary": "The English Wikipedia article \"Akkerman Convention\", at revision 1371684860, opens: \"The Akkerman Convention was a treaty signed on October 7, 1826, between the Russian and the Ottoman Empires in the Budjak citadel of Akkerman. It imposed that the hospodars of Moldavia and Wallachia be elected by their respective Divans for seven-year terms, with the approval of both Powers. It also provided for the retreat of Ottoman forces from both Danubian Principalities after their prolonged stay following military actions in 1821, and Tudor Vladimirescu's uprising. The Ottomans also agreed to cede to Wallachia the control over the Danube ports of Giurgiu, Brăila and Turnu. The convention also tackled the Serbian question: in article 5, autonomy for the Principality of Serbia was given, and the return of lands removed in 1813. Serbs were also granted freedom of movement through the Ottoman Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1993653, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty signed on October 7, 1826, between the Russian and the Ottoman Empires\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1826,
+    "end": 1826,
+    "date": "1826-10-07"
+  },
+  "place": "bilhorod-dnistrovskyi",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

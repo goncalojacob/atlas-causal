@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "treaty-of-fort-wayne-1809",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7837065",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Fort Wayne (1809)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7837065"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Fort Wayne (1809)\", revision 1372198832"
+    }
+  ],
+  "title": "Treaty of Fort Wayne (1809)",
+  "summary": "The English Wikipedia article \"Treaty of Fort Wayne (1809)\", at revision 1372198832, opens: \"The Treaty of Fort Wayne, sometimes called the Ten O'clock Line Treaty or the Twelve Mile Line Treaty, is an 1809 treaty that obtained 29,719,530 acres of Native American land for the settlers of Illinois and Indiana. The negotiations primarily involved the Lenape (Delaware) but included other tribes as well. However, the negotiations excluded the Shawnee, who were minor inhabitants of the area and had previously been asked to leave by Miami War Chief Little Turtle. Territorial Governor William Henry Harrison negotiated the treaty with the tribes. The treaty led to a war with the United States begun by Shawnee leader Tecumseh and other dissenting tribesmen in what came to be called \"Tecumseh's War\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7837065, imported by tools/import/wikidata.mjs. The item's own description reads \"1809 land treaty between the United States government and several Native American peoples\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1809,
+    "end": 1809
+  },
+  "place": "fort-wayne-indiana",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

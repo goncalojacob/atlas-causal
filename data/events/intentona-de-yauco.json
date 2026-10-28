@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "intentona-de-yauco",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6044491",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Intentona de Yauco"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6044491"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Intentona de Yauco\", revision 1379935409"
+    }
+  ],
+  "title": "Intentona de Yauco",
+  "summary": "The English Wikipedia article \"Intentona de Yauco\", at revision 1379935409, opens: \"The Intentona de Yauco of March 24–26, 1897 was the second and final short-lived revolt against Spanish rule in Puerto Rico. It was staged by the pro-independence Revolutionary Committee of Puerto Rico in the southwestern municipality of Yauco, 29 years after the first unsuccessful revolt, known as the Grito de Lares. During the Intentona de Yauco, the current flag of Puerto Rico was flown on the island for the first time.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6044491, imported by tools/import/wikidata.mjs. The item's own description reads \"second and final revolt against Spanish colonial rule in Puerto Rico\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1897,
+    "end": 1897,
+    "date": "1897-03"
+  },
+  "place": "island-of-puerto-rico",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

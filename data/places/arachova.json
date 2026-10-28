@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "arachova",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q624641",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Arachova",
+    "pt": "Arácova"
+  },
+  "sources": [],
+  "names": [
+    "Arachova",
+    "Arácova"
+  ],
+  "where": {
+    "lon": 22.58666667,
+    "lat": 38.47888889,
+    "precision": "city",
+    "label": "Arachova"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

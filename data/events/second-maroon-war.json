@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "second-maroon-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7443413",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Second Maroon War",
+    "pt": "Segunda Guerra Maroon"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7443413"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Maroon War\", revision 1370737144"
+    }
+  ],
+  "title": "Second Maroon War",
+  "summary": "The English Wikipedia article \"Second Maroon War\", at revision 1370737144, opens: \"The Second Maroon War of 1795–1796 was an eight-month conflict between the Maroons of Cudjoe's Town, a Maroon settlement later renamed after Governor Edward Trelawny at the end of First Maroon War, located near Trelawny Parish, Jamaica in the St. James Parish, and the British colonials who controlled the island. The Windward communities of Jamaican Maroons remained neutral during this rebellion and their treaty with the British still remains in force. Accompong Town, however, sided with the colonial militias, and fought against Trelawny Town.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7443413, imported by tools/import/wikidata.mjs. The item's own description reads \"rebellion by Jamaican slaves\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1795,
+    "end": 1796,
+    "endDate": "1796-01-01"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

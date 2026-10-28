@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bolivian-civil-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5887712",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Bolivian Civil War",
+    "pt": "Guerra Civil Boliviana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5887712"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bolivian Civil War\", revision 1378370615"
+    }
+  ],
+  "title": "Bolivian Civil War",
+  "summary": "The English Wikipedia article \"Bolivian Civil War\", at revision 1378370615, opens: \"The Bolivian Civil War, also known as the Federal War was a civil war in Bolivia fought from 1898 to 1899. The war saw two factions, a conservative side supported by the political, economic and religious elite of the country with control of the armed forces and who defended a unitary state, and a liberal faction opposed to the policies set by the state and that intended to transform the country into a federation, with support of the peasantry, the indigenous peoples and small Catholic businesses.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5887712, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war in Bolivia from 1898 to 1899\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1899,
+    "date": "1898-11-06",
+    "endDate": "1899-04-10"
+  },
+  "place": "bolivia-q750",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

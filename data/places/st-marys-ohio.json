@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "st-marys-ohio",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q642783",
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "St. Marys, Ohio",
+    "pt": "St. Marys (Ohio)"
+  },
+  "sources": [],
+  "names": [
+    "St. Marys",
+    "St. Marys, Ohio",
+    "St. Marys (Ohio)"
+  ],
+  "where": {
+    "lon": -84.39,
+    "lat": 40.5442,
+    "precision": "city",
+    "label": "St. Marys, Ohio"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

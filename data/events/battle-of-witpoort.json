@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-witpoort",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4872746",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Witpoort"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4872746"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Witpoort\", revision 1380991451"
+    }
+  ],
+  "title": "Battle of Witpoort",
+  "summary": "The English Wikipedia article \"Battle of Witpoort\", at revision 1380991451, opens: \"The Battle of Witpoort was fought during the Second Anglo-Boer War. Major Frederick Henry Munn commanded the detachment of the Royal Irish Fusiliers at Witpoort which was attacked on 16 July 1900, his orders being to \"hold his position at all costs\". The Boers called on Major Munn to surrender, but, scornfully refusing, he held out from daybreak till 2 pm, when the Canadian forces mounted a counterattack and the Boers retired. The battle became famous because of the death of Harold Lothrop Borden.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4872746, imported by tools/import/wikidata.mjs. The item's own description reads \"1900 battle of the Second Boer War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-07-16"
+  },
+  "place": "witpoort",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-boer-war"
+}

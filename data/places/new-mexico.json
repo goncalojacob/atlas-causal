@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "new-mexico",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1522",
+  "sitelinks": {
+    "count": 198,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "New Mexico",
+    "pt": "Novo México"
+  },
+  "sources": [],
+  "names": [
+    "New Mexico",
+    "Novo México"
+  ],
+  "where": {
+    "lon": -106,
+    "lat": 34,
+    "precision": "region",
+    "label": "New Mexico"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

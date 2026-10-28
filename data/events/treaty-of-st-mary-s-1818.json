@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-st-mary-s-1818",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q17035574",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of St. Mary's (1818)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17035574"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of St. Mary's (1818)\", revision 1271167420"
+    }
+  ],
+  "title": "Treaty of St. Mary's (1818)",
+  "summary": "The English Wikipedia article \"Treaty of St. Mary's (1818)\", at revision 1271167420, opens: \"The Treaty of St. Mary's may refer to one of six treaties concluded in fall of 1818 between the United States and Natives of central Indiana regarding purchase of Native land. The treaties wereTreaty with the Wyandot, etc.\nTreaty with the Wyandot\nTreaty with the Potawatomi\nTreaty with the Wea\nTreaty with the Delaware\nTreaty with the Miami\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17035574, imported by tools/import/wikidata.mjs. The item's own description reads \"1818 treaties between the United States government and six Native American peoples\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1818,
+    "end": 1818
+  },
+  "place": "st-marys-ohio",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

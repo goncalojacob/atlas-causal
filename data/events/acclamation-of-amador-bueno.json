@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "acclamation-of-amador-bueno",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3406431",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Acclamation of Amador Bueno",
+    "pt": "Aclamação de Amador Bueno"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3406431"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Acclamation of Amador Bueno\", revision 1367814302"
+    }
+  ],
+  "title": "Acclamation of Amador Bueno",
+  "summary": "The English Wikipedia article \"Acclamation of Amador Bueno\", at revision 1367814302, opens: \"The acclamation of Amador Bueno, was an abortive revolt orchestrated primarily by Spanish colonists in São Paulo dos Campos de Piratininga in 1641, shortly after the royal acclamation of John IV. It is considered the first nativist movement or the first gesture of autonomy in Colonial Brazil and, not coincidentally, took place in São Paulo, which at the time had limited contact with Portugal and extensive miscegenation between Portuguese, indigenous peoples, and foreigners.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3406431, imported by tools/import/wikidata.mjs. The item's own description reads \"nativist movement\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1641,
+    "end": 1641
+  },
+  "place": "sao-paulo",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

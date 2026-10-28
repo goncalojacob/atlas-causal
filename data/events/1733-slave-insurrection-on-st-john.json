@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "1733-slave-insurrection-on-st-john",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q4552666",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1733 slave insurrection on St. John"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4552666"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1733 slave insurrection on St. John\", revision 1378560675"
+    }
+  ],
+  "title": "1733 slave insurrection on St. John",
+  "summary": "The English Wikipedia article \"1733 slave insurrection on St. John\", at revision 1378560675, opens: \"The 1733 slave insurrection on St. John, also known as the Slave Uprising of 1733, was a slave insurrection started on Sankt Jan in the Danish West Indies on November 23, 1733, when 150 African slaves from Akwamu, in present-day Ghana, revolted against the owners and managers of the island's plantations.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4552666, imported by tools/import/wikidata.mjs. The item's own description reads \"slave revolt in St. John\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1733,
+    "end": 1734,
+    "date": "1733-11-23",
+    "endDate": "1734-08-25"
+  },
+  "place": "danish-west-indies",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

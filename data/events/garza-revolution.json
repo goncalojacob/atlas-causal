@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "garza-revolution",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5526246",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Garza Revolution"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5526246"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Garza Revolution\", revision 1381854132"
+    }
+  ],
+  "title": "Garza Revolution",
+  "summary": "The English Wikipedia article \"Garza Revolution\", at revision 1381854132, opens: \"The Garza Revolution, or the Garza War, was an armed conflict fought in the Mexican state of Coahuila and the American state of Texas between 1891 and 1893. It began when the revolutionary Catarino Garza launched a campaign into Mexico from Texas to start an uprising against the dictator Porfirio Díaz. Because of this violation of neutrality, the United States Army became involved and assisted the Mexican Army in tracking down Garza's followers. The war was relatively minor compared to other similar conflicts in Mexican history though it has been seen as a precursor to the major Mexican Revolution from 1910 to 1920.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5526246, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict (1891–1893)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1891,
+    "end": 1893,
+    "date": "1891-09-15",
+    "endDate": "1893-03"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "peace-of-ryswick",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q164393",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Peace of Ryswick",
+    "pt": "Tratado de Rijswijk"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q164393"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peace of Ryswick\", revision 1378458651"
+    }
+  ],
+  "title": "Peace of Ryswick",
+  "summary": "The English Wikipedia article \"Peace of Ryswick\", at revision 1378458651, opens: \"The Peace of Ryswick, or Rijswijk, were a series of treaties signed in the Dutch city of Rijswijk between 20 September and 30 October 1697. They ended the 1688 to 1697 Nine Years' War between France and the Grand Alliance, which included the Dutch Republic, the Holy Roman Empire, England, Scotland, and Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q164393, imported by tools/import/wikidata.mjs. The item's own description reads \"Series of treaties signed in late 1697 ending the Nine Years' War between France and the Grand Alliance\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1697,
+    "end": 1697,
+    "date": "1697-10-30"
+  },
+  "place": "rijswijk",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

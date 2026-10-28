@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "pontotoc-mississippi",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q985208",
+  "sitelinks": {
+    "count": 43,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Pontotoc, Mississippi",
+    "pt": "Pontotoc (Mississippi)"
+  },
+  "sources": [],
+  "names": [
+    "Pontotoc",
+    "Pontotoc, Mississippi",
+    "Pontotoc (Mississippi)"
+  ],
+  "where": {
+    "lon": -89.0067,
+    "lat": 34.2486,
+    "precision": "city",
+    "label": "Pontotoc, Mississippi"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "red-river-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q765499",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Red River Rebellion",
+    "pt": "Rebelião do Rio Vermelho"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q765499"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Red River Rebellion\", revision 1373277902"
+    }
+  ],
+  "title": "Red River Rebellion",
+  "summary": "The English Wikipedia article \"Red River Rebellion\", at revision 1373277902, opens: \"The Red River Rebellion, also known as the Red River Resistance, Red River uprising, or First Riel Rebellion, was the sequence of events that led up to the 1869 establishment of a provisional government by Métis leader Louis Riel and his followers at the Red River Colony, in the early stages of establishing today's Canadian province of Manitoba. It had earlier been a territory called Rupert's Land and been under control of the Hudson's Bay Company before it was sold.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q765499, imported by tools/import/wikidata.mjs. The item's own description reads \"sequence of events that led up to the 1869 establishment of a provisional government by the Métis leader Louis Riel and his followers at the Red River Colony, in what is now the Canadian province of Manitoba\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1869,
+    "end": 1869
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

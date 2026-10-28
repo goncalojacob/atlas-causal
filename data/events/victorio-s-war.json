@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "victorio-s-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4122567",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Victorio's War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4122567"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Victorio's War\", revision 1379047933"
+    }
+  ],
+  "title": "Victorio's War",
+  "summary": "The English Wikipedia article \"Victorio's War\", at revision 1379047933, opens: \"Victorio's War, or the Victorio Campaign, was an armed conflict between the Apache followers of Chief Victorio, the United States, and Mexico beginning in September 1879. Faced with arrest and forcible relocation from his homeland in New Mexico to San Carlos Indian Reservation in southeastern Arizona, Victorio led a guerrilla war across southern New Mexico, west Texas and northern Mexico. Victorio fought many battles and skirmishes with the United States Army and raided several settlements until the Mexican Army killed him and most of his warriors in October 1880 in the Battle of Tres Castillos. After Victorio's death, his lieutenant Nana led a raid in 1881.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4122567, imported by tools/import/wikidata.mjs. The item's own description reads \"armed conflict between indigenous peoples and white people in northern Mexico and southern USA between 1879-1881\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1880,
+    "date": "1879-08",
+    "endDate": "1880-10"
+  },
+  "place": "southwestern-united-states",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "apache-wars"
+}

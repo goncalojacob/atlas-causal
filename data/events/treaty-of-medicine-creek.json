@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "treaty-of-medicine-creek",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2518862",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Medicine Creek"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2518862"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Medicine Creek\", revision 1354739409"
+    }
+  ],
+  "title": "Treaty of Medicine Creek",
+  "summary": "The English Wikipedia article \"Treaty of Medicine Creek\", at revision 1354739409, opens: \"The Treaty of Medicine Creek was an 1854 treaty between the United States, and nine tribes and bands of Indians, occupying the lands lying around the head of Puget Sound, Washington, and the adjacent inlets. The tribes listed on the Treaty of Medicine Creek are Nisqually, Puyallup, Steilacoom, Squawskin, S'Homamish, Stehchass, T'Peeksin, Squi-aitl, and Sa-heh-wamish. The treaty was signed on December 26, 1854 by Isaac I. Stevens, governor and superintendent of Indian Affairs of the territory at the time of the signing, along with the chiefs, head-men and delegates of the stated tribes. For the purpose of the treaty, these representatives who signed the treaty were stated to have been, \"regarded as one nation, on behalf of said tribes and bands, and duly authorized by them.\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2518862, imported by tools/import/wikidata.mjs. The item's own description reads \"1854 U.S. and Native Americans treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": 1854
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}

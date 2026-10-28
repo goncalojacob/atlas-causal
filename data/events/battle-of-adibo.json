@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-adibo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2887801",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Adibo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2887801"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Adibo\", revision 1370105899"
+    }
+  ],
+  "title": "Battle of Adibo",
+  "summary": "The English Wikipedia article \"Battle of Adibo\", at revision 1370105899, opens: \"The Battle of Adibo was a German military campaign in 1896 against the Dagbamba of West Africa in Adibo, now in present-day Ghana. Following their resistance against foreign authority, the Dagbamba tribesmen met and launched an attack on the heavily armed German Schutztruppe and Askari paramilitary police accompanying the Lieutenant Valentin von Massow on his way to their capital at the village of Adibo, who had been sent by the German colonial administration to quell the rebellion. The Dagbamba fighters suffered significant losses on the second day of the battle and yielded after their capital Yendi was razed to the ground on December 4, 1896. Defeat of the Dagbamba enabled the German Empire to complete establishing the Togoland protectorate, which encompassed the eastern part of the Kingdom of Dagbon. The western part of the Kingdom was released to the British and incorporated into the British Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2887801, imported by tools/import/wikidata.mjs. The item's own description reads \"1896 battle in Adibo during the colonial German military expedition against the Kingdom of Dagbon\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1896,
+    "end": 1896,
+    "date": "1896-12-04"
+  },
+  "place": "yendi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

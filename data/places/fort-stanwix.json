@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "fort-stanwix",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q566356",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Fort Stanwix"
+  },
+  "sources": [],
+  "names": [
+    "Fort Stanwix"
+  ],
+  "where": {
+    "lon": -75.45527777777778,
+    "lat": 43.21055555555556,
+    "precision": "point",
+    "label": "Fort Stanwix"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
