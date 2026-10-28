@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "monterrey",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q81033",
+  "sitelinks": {
+    "count": 110,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Monterrey",
+    "pt": "Monterrei"
+  },
+  "sources": [],
+  "names": [
+    "Monterrey",
+    "Monterrei"
+  ],
+  "where": {
+    "lon": -100.31805555555556,
+    "lat": 25.684444444444445,
+    "precision": "city",
+    "label": "Monterrey"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

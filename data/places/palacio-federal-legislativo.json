@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "palacio-federal-legislativo",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6396914",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Palacio Federal Legislativo",
+    "pt": "Palácio Federal Legislativo"
+  },
+  "sources": [],
+  "names": [
+    "Palacio Federal Legislativo"
+  ],
+  "where": {
+    "lon": -66.91583,
+    "lat": 10.50554,
+    "precision": "point",
+    "label": "Palacio Federal Legislativo"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

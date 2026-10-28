@@ -3686,3 +3686,35 @@ Writer B imported it from the planner's queue as item `2026-10-28-americas-027`,
 ## Writer B, 2026-10-28: `battle-of-five-forks`, filed under `american-civil-war` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-28-americas-033`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-28: `battle-of-germantown`, filed under `american-revolutionary-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-28-americas-046`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-28: `battle-of-south-mountain`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-28-americas-056`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-28: `battle-of-fort-beausejour`, filed under `french-and-indian-war` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-28-americas-068`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-28: `battle-of-marengo`, filed under `war-of-the-second-coalition` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-28-europe-002`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-28: `battle-of-stones-river`, filed under `american-civil-war` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-28-americas-051`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-28: `battle-of-iquique`, filed under `war-of-the-pacific` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-28-americas-063`, rank `list`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-28: `battle-of-varna`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-28-europe-001`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `battle-of-aspern-essling`, filed under `napoleonic-wars` with neither an actor nor a place
+
+Writer B filed it there because the planner's queue asked for it in item `2026-10-28-europe-019`, rank `list`. Its span and its subject put it inside the umbrella.

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-iquique",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q472672",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Iquique",
+    "pt": "Batalha Naval de Iquique"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q472672"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Iquique\", revision 1370266093"
+    }
+  ],
+  "title": "Battle of Iquique",
+  "summary": "The English Wikipedia article \"Battle of Iquique\", at revision 1370266093, opens: \"The Battle of Iquique was a naval engagement on 21 May 1879, during the War of the Pacific, where a Chilean corvette commanded by Arturo Prat Chacón faced a Peruvian ironclad under Miguel Grau. The battle occurred off the port of Iquique, Peru, and ended with the sinking of the Chilean wooden corvette Esmeralda by the Peruvian ironclad Huáscar after four hours of combat, marking a victory for Peru.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q472672, imported by tools/import/wikidata.mjs. The item's own description reads \"1879 naval battle between Chile and Peru\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879,
+    "date": "1879-05-21"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-pacific"
+}

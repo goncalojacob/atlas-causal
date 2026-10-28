@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-franklin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q370671",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Franklin",
+    "pt": "Batalha de Franklin"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q370671"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Franklin\", revision 1380654541"
+    }
+  ],
+  "title": "Battle of Franklin",
+  "summary": "The English Wikipedia article \"Battle of Franklin\", at revision 1380654541, opens: \"The Battle of Franklin was fought on November 30, 1864, in Franklin, Tennessee, as part of the Franklin–Nashville Campaign of the American Civil War. It was one of the worst disasters of the war for the Confederate States Army. Confederate Lieutenant General John Bell Hood's Army of Tennessee conducted numerous frontal assaults against fortified positions occupied by the Union forces under Major General John Schofield and was unable to prevent Schofield from executing a planned, orderly withdrawal to Nashville.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q370671, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-11-30"
+  },
+  "place": "franklin-battlefield",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

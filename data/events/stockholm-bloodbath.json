@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "stockholm-bloodbath",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q846876",
+  "sitelinks": {
+    "count": 44,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Stockholm Bloodbath",
+    "pt": "Banho de sangue de Estocolmo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q846876"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Stockholm Bloodbath\", revision 1366197678"
+    }
+  ],
+  "title": "Stockholm Bloodbath",
+  "summary": "The English Wikipedia article \"Stockholm Bloodbath\", at revision 1366197678, opens: \"The Stockholm Bloodbath was a trial that led to a series of executions in Stockholm between 7 and 9 November 1520. The event is also known as the Stockholm massacre. The events occurred after the coronation of Christian II as the new king of Sweden, when guests in the crowning party were invited to a meeting at Tre Kronor castle. Archbishop Gustav Trolle, demanding economic compensation for things such as the demolition of Almarestäket's fortress, questioned whether the former Swedish regent Sten Sture the Younger and his supporters had been guilty of heresy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q846876, imported by tools/import/wikidata.mjs. The item's own description reads \"massacre\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1520,
+    "end": 1520,
+    "date": "1520-11-07",
+    "endDate": "1520-11-09"
+  },
+  "place": "stortorget",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

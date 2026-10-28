@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "bear-river-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q657024",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Bear River Massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q657024"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bear River Massacre\", revision 1378918577"
+    }
+  ],
+  "title": "Bear River Massacre",
+  "summary": "The English Wikipedia article \"Bear River Massacre\", at revision 1378918577, opens: \"The Bear River Massacre was a United States military attack that killed an estimated 250 to 493 children, women, and men at a Shoshone winter encampment on January 29, 1863. Some sources describe it as the largest mass murder of Native Americans by the US military and the largest single episode of genocide in US history. It took place in present-day Franklin County, Idaho near the present-day city of Preston on January 29, 1863. After years of skirmishes and food raids on farms and ranches, and settlers displacing Shoshone from their ancestral lands, the United States Army attacked a large Shoshone community at the confluence of the Bear River and Battle Creek in what was then southeastern Washington Territory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q657024, imported by tools/import/wikidata.mjs. The item's own description reads \"massacre of Shoshone people by the United States Army in 1863\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-01-29"
+  },
+  "place": "bear-river-great-salt-lake",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

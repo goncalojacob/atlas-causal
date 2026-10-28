@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-preveza",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1054975",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Preveza",
+    "pt": "Batalha de Preveza"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1054975"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Preveza\", revision 1376805347"
+    }
+  ],
+  "title": "Battle of Preveza",
+  "summary": "The English Wikipedia article \"Battle of Preveza\", at revision 1376805347, opens: \"The Battle of Preveza was a naval engagement that occurred on 28 September 1538 near Preveza in the Ionian Sea in northwest Greece, in the same area as the Battle of Actium in 31 BC. The battle was between an Ottoman fleet, led by Kapudan Pasha Hayreddin Barbarossa, and a Holy League of Venetian and Hispano-Imperial composition, led by Genoese admiral Andrea Doria. It was part of both the Ottoman–Habsburg wars and the Ottoman Venetian War of 1537-1547. It ended with the Holy League defeated by the Ottomans despite its enormous advantage in numbers and tonnage.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1054975, imported by tools/import/wikidata.mjs. The item's own description reads \"1538 naval battle of the Third Ottoman–Venetian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1538,
+    "end": 1538,
+    "date": "1538-09-28"
+  },
+  "place": "preveza",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "ottoman-venetian-war-1537-1540"
+}

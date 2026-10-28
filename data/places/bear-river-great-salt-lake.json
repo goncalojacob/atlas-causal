@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bear-river-great-salt-lake",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q813008",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Bear River (Great Salt Lake)"
+  },
+  "sources": [],
+  "names": [
+    "Bear River",
+    "Bear River (Great Salt Lake)"
+  ],
+  "where": {
+    "lon": -112.29022969444445,
+    "lat": 41.458267,
+    "precision": "region",
+    "label": "Bear River (Great Salt Lake)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

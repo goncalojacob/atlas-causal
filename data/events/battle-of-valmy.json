@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-valmy",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4411",
+  "wikipedia": {
+    "en": "Battle of Valmy",
+    "pt": "Batalha de Valmy"
+  },
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-10-28"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4411"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Valmy\", revision 1375829145"
+    }
+  ],
+  "title": "Battle of Valmy",
+  "summary": "The English Wikipedia article \"Battle of Valmy\", at revision 1375829145, opens: \"The Battle of Valmy, also known as the Cannonade of Valmy, was the first major victory by the army of France during the Revolutionary Wars that followed the French Revolution. The battle took place on 20 September 1792 as Prussian troops commanded by the Duke of Brunswick attempted to march on Paris. Generals François Kellermann and Charles Dumouriez stopped the advance near the northern village of Valmy in Champagne-Ardenne.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4411, imported by tools/import/wikidata.mjs. The item's own description reads \"1792 battle during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1792,
+    "end": 1792,
+    "date": "1792-09-20"
+  },
+  "place": "sainte-menehould",
+  "region": null,
+  "regionNote": null,
+  "parent": "french-revolutionary-wars",
+  "category": "war",
+  "actors": []
+}

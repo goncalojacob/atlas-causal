@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-palo-alto",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2736004",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Palo Alto",
+    "pt": "Batalha de Palo Alto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2736004"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Palo Alto\", revision 1370628472"
+    }
+  ],
+  "title": "Battle of Palo Alto",
+  "summary": "The English Wikipedia article \"Battle of Palo Alto\", at revision 1370628472, opens: \"The Battle of Palo Alto was the first major battle of the Mexican–American War and was fought on May 8, 1846, on disputed ground five miles (8 km) from the modern-day city of Brownsville, Texas. A force of some 3,700 Mexican troops – most of the Army of The North – led by General Mariano Arista engaged a force of approximately 2,300 United States troops – the Army of Occupation led by General Zachary Taylor.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2736004, imported by tools/import/wikidata.mjs. The item's own description reads \"1846 battle of the Mexican-American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1846,
+    "end": 1846,
+    "date": "1846-05-08"
+  },
+  "place": "brownsville-texas",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mexican-american-war"
+}
