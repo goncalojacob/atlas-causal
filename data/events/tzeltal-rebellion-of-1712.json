@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "tzeltal-rebellion-of-1712",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q6102356",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Tzeltal Rebellion of 1712"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q6102356"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tzeltal Rebellion of 1712\", revision 1379817502"
+    }
+  ],
+  "title": "Tzeltal Rebellion of 1712",
+  "summary": "The English Wikipedia article \"Tzeltal Rebellion of 1712\", at revision 1379817502, opens: \"In 1712, a number of Tzeltal Maya communities in the Soconusco region of Chiapas rose in rebellion, in what is known as the Tzeltal Rebellion or Tzendal Rebellion. It was a multiethnic revolt, with 32 towns of Tzeltal (14), Tzotzil (15), and Chol (3) Indigenous peoples participating in it. The Indigenous renounced the authority of the Catholic hierarchy and established a priesthood of Indigenous men. There was widespread military mobilization of Indigenous men, who called themselves “soldiers of the Virgin.”\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q6102356, imported by tools/import/wikidata.mjs. The item's own description reads \"indigenous revolt of Mayan communities\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1712,
+    "end": 1712
+  },
+  "place": "soconusco",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "second-serbian-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q243585",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Second Serbian Uprising",
+    "pt": "Segunda Revolta Sérvia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q243585"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Serbian Uprising\", revision 1377651201"
+    }
+  ],
+  "title": "Second Serbian Uprising",
+  "summary": "The English Wikipedia article \"Second Serbian Uprising\", at revision 1377651201, opens: \"The Second Serbian Uprising was the second phase of the Serbian Revolution against the Ottoman Empire, which erupted shortly after the re-annexation of the country to the Ottoman Empire in 1813. The occupation was enforced following the defeat of the First Serbian Uprising (1804–1813), during which Serbia existed as a de facto independent state for over a decade. The second revolution ultimately resulted in Serbian semi-independence from the Ottoman Empire. The Principality of Serbia was established, governed by its own parliament, constitution and royal dynasty. De jure independence, however, was attained in 1878, following the decisions of the Congress of Berlin.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q243585, imported by tools/import/wikidata.mjs. The item's own description reads \"1815–1817 revolt in Serbia against the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1817,
+    "date": "1815-04-24",
+    "endDate": "1817-07-26"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

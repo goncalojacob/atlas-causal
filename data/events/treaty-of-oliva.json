@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-oliva",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q17335",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Oliva",
+    "pt": "Tratado de Oliva"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q17335"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Oliva\", revision 1375158789"
+    }
+  ],
+  "title": "Treaty of Oliva",
+  "summary": "The English Wikipedia article \"Treaty of Oliva\", at revision 1375158789, opens: \"The Treaty or Peace of Oliva was one of the peace treaties ending the Second Northern War (1655–1660). It was signed on 3 May [O.S. 23 April] 1660. The Treaty of Oliva, the Treaty of Copenhagen in the same year, and the Treaty of Cardis in the following year marked the high point of the Swedish Empire.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q17335, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1660,
+    "end": 1660,
+    "date": "1660-05-03"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "treaty",
+  "actors": []
+}
