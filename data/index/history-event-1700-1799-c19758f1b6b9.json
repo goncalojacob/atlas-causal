@@ -11,6 +11,15 @@
         }
       ]
     },
+    "1700-cascadia-earthquake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "1711-karamanli-coup": {
       "from": "git",
       "versions": [
@@ -684,6 +693,15 @@
         }
       ]
     },
+    "battle-of-carillon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-carpi": {
       "from": "git",
       "versions": [
@@ -809,6 +827,15 @@
         }
       ]
     },
+    "battle-of-culloden": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-damghan-1729": {
       "from": "git",
       "versions": [
@@ -922,6 +949,15 @@
         }
       ]
     },
+    "battle-of-fort-beausejour": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-fort-charlotte": {
       "from": "git",
       "versions": [
@@ -1006,6 +1042,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-germantown": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1302,6 +1347,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "battle-of-lake-george": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1950,6 +2004,15 @@
         }
       ]
     },
+    "battle-of-signal-hill": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-sittimungulum": {
       "from": "git",
       "versions": [
@@ -2177,6 +2240,24 @@
         {
           "first": true,
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "battle-of-valcour-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-valmy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2417,6 +2498,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "capture-of-fort-ticonderoga": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

@@ -128,6 +128,15 @@
         }
       ]
     },
+    "adriatic-sea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "adwa": {
       "from": "git",
       "versions": [
@@ -1041,6 +1050,15 @@
         }
       ]
     },
+    "balaklava": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "bali-island": {
       "from": "git",
       "versions": [
@@ -1406,6 +1424,15 @@
             "summary"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "bear-river-great-salt-lake": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1968,6 +1995,15 @@
         }
       ]
     },
+    "bosworth-field-site": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "bothaville": {
       "from": "git",
       "versions": [
@@ -2254,6 +2290,15 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "brownsville-texas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2803,6 +2848,15 @@
         }
       ]
     },
+    "castillon-la-bataille": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "castrovillari": {
       "from": "git",
       "versions": [
@@ -3329,6 +3383,15 @@
         }
       ]
     },
+    "ciudad-jardin-lomas-del-palomar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "ciudad-rodrigo": {
       "from": "git",
       "versions": [
@@ -3686,6 +3749,15 @@
         }
       ]
     },
+    "culloden-highland": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "cundinamarca-department": {
       "from": "git",
       "versions": [
@@ -3717,6 +3789,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "curupaiti-fort": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4347,6 +4428,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "drogheda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5158,6 +5248,15 @@
         }
       ]
     },
+    "fort-henry": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "fort-julien": {
       "from": "git",
       "versions": [
@@ -5335,6 +5434,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "franklin-battlefield": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5834,6 +5942,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "gonzales-texas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -7480,6 +7597,15 @@
         }
       ]
     },
+    "kaliningrad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "kalisz": {
       "from": "git",
       "versions": [
@@ -7736,6 +7862,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "kentucky": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -8123,6 +8258,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "kosovo-polje": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -10171,6 +10315,15 @@
         }
       ]
     },
+    "mobile-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "modder-river-northern-cape": {
       "from": "git",
       "versions": [
@@ -10324,6 +10477,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "monterrey": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -11686,12 +11848,30 @@
         }
       ]
     },
+    "pacific-northwest": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "padua": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "palacio-federal-legislativo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -12663,12 +12843,30 @@
         }
       ]
     },
+    "pravdinsk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "pretoria": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "preveza": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -13726,6 +13924,15 @@
         }
       ]
     },
+    "sainte-menehould": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "sakhalin": {
       "from": "git",
       "versions": [
@@ -14373,6 +14580,15 @@
         }
       ]
     },
+    "shenandoah-valley": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "shenyang": {
       "from": "git",
       "versions": [
@@ -14665,6 +14881,15 @@
       ]
     },
     "soconusco": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "solferino": {
       "from": "git",
       "versions": [
         {
@@ -15148,6 +15373,15 @@
         }
       ]
     },
+    "st-john-s-newfoundland-and-labrador": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "st-lawrence-river": {
       "from": "git",
       "versions": [
@@ -15272,6 +15506,15 @@
             "review"
           ],
           "on": "2026-09-05"
+        }
+      ]
+    },
+    "stortorget": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -15909,6 +16152,15 @@
         }
       ]
     },
+    "ticonderoga-new-york": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "tigray-region": {
       "from": "git",
       "versions": [
@@ -16432,6 +16684,15 @@
         }
       ]
     },
+    "ulm": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "ulm-jungingen": {
       "from": "git",
       "versions": [
@@ -16583,6 +16844,15 @@
         }
       ]
     },
+    "valcour-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "valenciennes": {
       "from": "git",
       "versions": [
@@ -16720,6 +16990,15 @@
             "review"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "veracruz-city": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

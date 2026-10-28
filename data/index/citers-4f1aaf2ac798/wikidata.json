@@ -1802,6 +1802,12 @@
     },
     {
       "dissent": false,
+      "id": "1700-cascadia-earthquake",
+      "kind": "event",
+      "locator": "Q1735004"
+    },
+    {
+      "dissent": false,
       "id": "1711-karamanli-coup",
       "kind": "event",
       "locator": "Q4552433"
@@ -3398,6 +3404,12 @@
     },
     {
       "dissent": false,
+      "id": "appomattox-campaign",
+      "kind": "event",
+      "locator": "Q621676"
+    },
+    {
+      "dissent": false,
       "id": "april-uprising-of-1876",
       "kind": "event",
       "locator": "Q622059"
@@ -3503,6 +3515,12 @@
       "id": "armistice-of-mudros",
       "kind": "event",
       "locator": "Q328499"
+    },
+    {
+      "dissent": false,
+      "id": "aroostook-war",
+      "kind": "event",
+      "locator": "Q698312"
     },
     {
       "dissent": false,
@@ -4184,6 +4202,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-aspern-essling",
+      "kind": "event",
+      "locator": "Q541626"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-assaye",
       "kind": "event",
       "locator": "Q2095678"
@@ -4193,6 +4217,12 @@
       "id": "battle-of-atchoukpa",
       "kind": "event",
       "locator": "Q106645667"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-atlanta",
+      "kind": "event",
+      "locator": "Q2374330"
     },
     {
       "dissent": false,
@@ -4253,6 +4283,12 @@
       "id": "battle-of-bailen",
       "kind": "event",
       "locator": "Q1364346"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-balaclava",
+      "kind": "event",
+      "locator": "Q464512"
     },
     {
       "dissent": false,
@@ -4427,6 +4463,12 @@
       "id": "battle-of-boshof",
       "kind": "event",
       "locator": "Q44810768"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-bosworth-field",
+      "kind": "event",
+      "locator": "Q222013"
     },
     {
       "dissent": false,
@@ -4658,6 +4700,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-carillon",
+      "kind": "event",
+      "locator": "Q697897"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-carpi",
       "kind": "event",
       "locator": "Q552296"
@@ -4688,6 +4736,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-caseros",
+      "kind": "event",
+      "locator": "Q616931"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-casicola",
       "kind": "event",
       "locator": "Q138632220"
@@ -4709,6 +4763,12 @@
       "id": "battle-of-castillejos",
       "kind": "event",
       "locator": "Q2888254"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-castillon",
+      "kind": "event",
+      "locator": "Q932613"
     },
     {
       "dissent": false,
@@ -5000,9 +5060,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-culloden",
+      "kind": "event",
+      "locator": "Q651919"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-curalaba",
       "kind": "event",
       "locator": "Q1629355"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-curupayty",
+      "kind": "event",
+      "locator": "Q2305019"
     },
     {
       "dissent": false,
@@ -5270,6 +5342,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-eylau",
+      "kind": "event",
+      "locator": "Q331347"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-fallen-timbers",
       "kind": "event",
       "locator": "Q2237537"
@@ -5336,6 +5414,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fort-beausejour",
+      "kind": "event",
+      "locator": "Q2346041"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-fort-charlotte",
       "kind": "event",
       "locator": "Q2682171"
@@ -5363,6 +5447,12 @@
       "id": "battle-of-fort-george",
       "kind": "event",
       "locator": "Q3636438"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fort-henry",
+      "kind": "event",
+      "locator": "Q1366089"
     },
     {
       "dissent": false,
@@ -5420,6 +5510,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-franklin",
+      "kind": "event",
+      "locator": "Q370671"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-fredericksburg",
       "kind": "event",
       "locator": "Q751186"
@@ -5441,6 +5537,12 @@
       "id": "battle-of-frenchtown",
       "kind": "event",
       "locator": "Q586801"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-friedland",
+      "kind": "event",
+      "locator": "Q241108"
     },
     {
       "dissent": false,
@@ -5516,6 +5618,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-germantown",
+      "kind": "event",
+      "locator": "Q523857"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gerontas",
       "kind": "event",
       "locator": "Q2584363"
@@ -5552,6 +5660,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-glorieta-pass",
+      "kind": "event",
+      "locator": "Q580651"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-goa-1638",
       "kind": "event",
       "locator": "Q4871118"
@@ -5561,6 +5675,12 @@
       "id": "battle-of-gonaives",
       "kind": "event",
       "locator": "Q2890666"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gonzales",
+      "kind": "event",
+      "locator": "Q1191854"
     },
     {
       "dissent": false,
@@ -5936,6 +6056,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-iquique",
+      "kind": "event",
+      "locator": "Q472672"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-isandlwana",
       "kind": "event",
       "locator": "Q747589"
@@ -6278,6 +6404,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-kosovo-1448",
+      "kind": "event",
+      "locator": "Q698706"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kousseri",
       "kind": "event",
       "locator": "Q1164601"
@@ -6428,6 +6560,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-lake-george",
+      "kind": "event",
+      "locator": "Q579971"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-lake-maracaibo",
       "kind": "event",
       "locator": "Q2890925"
@@ -6539,6 +6677,12 @@
       "id": "battle-of-liaoyang",
       "kind": "event",
       "locator": "Q2440191"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-lissa-1866",
+      "kind": "event",
+      "locator": "Q158054"
     },
     {
       "dissent": false,
@@ -6770,6 +6914,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-marengo",
+      "kind": "event",
+      "locator": "Q273011"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-marignano",
       "kind": "event",
       "locator": "Q330"
@@ -6896,6 +7046,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-mobile-bay",
+      "kind": "event",
+      "locator": "Q1519203"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-moca-1779",
       "kind": "event",
       "locator": "Q138018817"
@@ -6959,6 +7115,12 @@
       "id": "battle-of-montemurlo",
       "kind": "event",
       "locator": "Q2889368"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-monterrey",
+      "kind": "event",
+      "locator": "Q1628057"
     },
     {
       "dissent": false,
@@ -7322,6 +7484,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-palo-alto",
+      "kind": "event",
+      "locator": "Q2736004"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-pampeluna",
       "kind": "event",
       "locator": "Q3174545"
@@ -7373,6 +7541,12 @@
       "id": "battle-of-pequereque",
       "kind": "event",
       "locator": "Q4872017"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-perryville",
+      "kind": "event",
+      "locator": "Q1631029"
     },
     {
       "dissent": false,
@@ -7493,6 +7667,12 @@
       "id": "battle-of-pre-nitz",
       "kind": "event",
       "locator": "Q20966109"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-preveza",
+      "kind": "event",
+      "locator": "Q1054975"
     },
     {
       "dissent": false,
@@ -8120,6 +8300,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-signal-hill",
+      "kind": "event",
+      "locator": "Q251184"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sikkak",
       "kind": "event",
       "locator": "Q2890573"
@@ -8162,6 +8348,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-solferino",
+      "kind": "event",
+      "locator": "Q324916"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-song-jin",
       "kind": "event",
       "locator": "Q4872413"
@@ -8183,6 +8375,12 @@
       "id": "battle-of-sorel",
       "kind": "event",
       "locator": "Q16208744"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-south-mountain",
+      "kind": "event",
+      "locator": "Q1542829"
     },
     {
       "dissent": false,
@@ -8255,6 +8453,12 @@
       "id": "battle-of-steenkerque",
       "kind": "event",
       "locator": "Q1636652"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-stones-river",
+      "kind": "event",
+      "locator": "Q1272132"
     },
     {
       "dissent": false,
@@ -8501,6 +8705,12 @@
       "id": "battle-of-the-bogue-1856",
       "kind": "event",
       "locator": "Q4872860"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-the-boyne",
+      "kind": "event",
+      "locator": "Q644960"
     },
     {
       "dissent": false,
@@ -8948,6 +9158,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-ulm",
+      "kind": "event",
+      "locator": "Q159072"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-ulundi",
       "kind": "event",
       "locator": "Q2166177"
@@ -8990,9 +9206,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-valcour-island",
+      "kind": "event",
+      "locator": "Q934626"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-valenciennes-1656",
       "kind": "event",
       "locator": "Q716922"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-valmy",
+      "kind": "event",
+      "locator": "Q4411"
     },
     {
       "dissent": false,
@@ -9011,6 +9239,12 @@
       "id": "battle-of-vannarpannai",
       "kind": "event",
       "locator": "Q133092642"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-varna",
+      "kind": "event",
+      "locator": "Q32832"
     },
     {
       "dissent": false,
@@ -9407,6 +9641,12 @@
       "id": "bayano-wars",
       "kind": "event",
       "locator": "Q21070659"
+    },
+    {
+      "dissent": false,
+      "id": "bear-river-massacre",
+      "kind": "event",
+      "locator": "Q657024"
     },
     {
       "dissent": false,
@@ -10055,6 +10295,12 @@
       "id": "capture-of-fort-rocher",
       "kind": "event",
       "locator": "Q5037013"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-fort-ticonderoga",
+      "kind": "event",
+      "locator": "Q1546173"
     },
     {
       "dissent": false,
@@ -12356,6 +12602,12 @@
     },
     {
       "dissent": false,
+      "id": "gettysburg-campaign",
+      "kind": "event",
+      "locator": "Q1377639"
+    },
+    {
+      "dissent": false,
       "id": "ghost-dance-war",
       "kind": "event",
       "locator": "Q5557072"
@@ -13274,6 +13526,12 @@
     },
     {
       "dissent": false,
+      "id": "jackson-s-valley-campaign",
+      "kind": "event",
+      "locator": "Q1153610"
+    },
+    {
+      "dissent": false,
       "id": "jacobite-rising-of-1745",
       "kind": "event",
       "locator": "Q1049945"
@@ -13391,6 +13649,12 @@
       "id": "john-brown-s-raid-on-harpers-ferry",
       "kind": "event",
       "locator": "Q6223430"
+    },
+    {
+      "dissent": false,
+      "id": "johnstown-flood",
+      "kind": "event",
+      "locator": "Q691404"
     },
     {
       "dissent": false,
@@ -13847,6 +14111,12 @@
       "id": "locarno-treaties",
       "kind": "event",
       "locator": "Q152925"
+    },
+    {
+      "dissent": false,
+      "id": "london-beer-flood",
+      "kind": "event",
+      "locator": "Q2783102"
     },
     {
       "dissent": false,
@@ -14690,6 +14960,12 @@
     },
     {
       "dissent": false,
+      "id": "northern-virginia-campaign",
+      "kind": "event",
+      "locator": "Q1952979"
+    },
+    {
+      "dissent": false,
       "id": "northern-war-of-1655-1660",
       "kind": "event",
       "locator": "Q654006"
@@ -15449,6 +15725,12 @@
       "id": "peshtigo-fire",
       "kind": "event",
       "locator": "Q3244543"
+    },
+    {
+      "dissent": false,
+      "id": "peterloo-massacre",
+      "kind": "event",
+      "locator": "Q876357"
     },
     {
       "dissent": false,
@@ -18416,6 +18698,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-veracruz",
+      "kind": "event",
+      "locator": "Q2745368"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-vicksburg",
       "kind": "event",
       "locator": "Q1066253"
@@ -18863,6 +19151,12 @@
       "id": "st-francis-raid",
       "kind": "event",
       "locator": "Q7587989"
+    },
+    {
+      "dissent": false,
+      "id": "stockholm-bloodbath",
+      "kind": "event",
+      "locator": "Q846876"
     },
     {
       "dissent": false,
@@ -20783,6 +21077,12 @@
       "id": "valtellina-war",
       "kind": "event",
       "locator": "Q3778677"
+    },
+    {
+      "dissent": false,
+      "id": "venezuelan-declaration-of-independence",
+      "kind": "event",
+      "locator": "Q3382350"
     },
     {
       "dissent": false,
