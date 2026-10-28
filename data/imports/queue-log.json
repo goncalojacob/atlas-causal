@@ -21181,6 +21181,624 @@
       },
       "refusals": [],
       "note": "Q1501025 is already the event \"utah-war\""
+    },
+    {
+      "id": "2026-10-27-americas-218",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2697981 is already the event \"argentine-civil-wars\""
+    },
+    {
+      "id": "2026-10-27-americas-220",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2350166 is already the event \"war-of-canudos\""
+    },
+    {
+      "id": "2026-10-27-americas-222",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3082702 is already the event \"brazilian-war-of-independence\""
+    },
+    {
+      "id": "2026-10-27-americas-224",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1369423 is already the event \"toledo-war\""
+    },
+    {
+      "id": "2026-10-27-americas-226",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2606574 is already the event \"acre-war\""
+    },
+    {
+      "id": "2026-10-27-americas-228",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q772814 is already the event \"caste-war-of-yucatan\""
+    },
+    {
+      "id": "2026-10-27-americas-230",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q226032 is already the event \"morant-bay-rebellion\""
+    },
+    {
+      "id": "2026-10-27-americas-232",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3042457 is already the event \"platine-war\""
+    },
+    {
+      "id": "2026-10-27-americas-234",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q767450 is already the event \"treaty-of-cordoba\""
+    },
+    {
+      "id": "2026-10-27-americas-236",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2976715 is already the event \"second-seminole-war\""
+    },
+    {
+      "id": "2026-10-27-americas-238",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "written",
+      "written": {
+        "event": "primera-junta",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-240",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "written",
+      "written": {
+        "event": "brazilian-naval-revolts",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-242",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "written",
+      "written": {
+        "event": "grito-de-lares",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-244",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "written",
+      "written": {
+        "event": "balaiada",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-246",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "written",
+      "written": {
+        "event": "upper-canada-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-248",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "written",
+      "written": {
+        "event": "sabinada",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-250",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "written",
+      "written": {
+        "event": "acclamation-of-amador-bueno",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-252",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "written",
+      "written": {
+        "event": "mapuche-uprising-of-1881",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-254",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "written",
+      "written": {
+        "event": "taos-revolt",
+        "edges": [],
+        "place": "new-mexico"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-256",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "written",
+      "written": {
+        "event": "irish-and-german-mercenary-soldiers-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-258",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "written",
+      "written": {
+        "event": "intentona-de-yauco",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-260",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "written",
+      "written": {
+        "event": "1811-independence-movement",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-262",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "written",
+      "written": {
+        "event": "1871-guatemalan-revolution",
+        "edges": [],
+        "place": "guatemala-city"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-264",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "written",
+      "written": {
+        "event": "garza-revolution",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-266",
+      "writer": "A",
+      "fired": "2026-10-28T13:12Z",
+      "status": "written",
+      "written": {
+        "event": "wilcox-rebellion-of-1889",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-219",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q617827 is already the event \"apache-wars\""
+    },
+    {
+      "id": "2026-10-27-americas-221",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "1689-boston-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-223",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q587151 is already the event \"british-invasions-of-the-river-plate\""
+    },
+    {
+      "id": "2026-10-27-americas-225",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q400465 is already the event \"little-war-cuba\""
+    },
+    {
+      "id": "2026-10-27-americas-227",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1402751 is already the event \"battle-of-pichincha\""
+    },
+    {
+      "id": "2026-10-27-americas-229",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q10931943 is already the event \"overthrow-of-the-hawaiian-kingdom\""
+    },
+    {
+      "id": "2026-10-27-americas-231",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2422135 is already the event \"occupation-of-araucania\""
+    },
+    {
+      "id": "2026-10-27-americas-233",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3042463 is already the event \"uruguayan-war\""
+    },
+    {
+      "id": "2026-10-27-americas-235",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2241487 is already the event \"treaty-of-fort-laramie-1851\""
+    },
+    {
+      "id": "2026-10-27-americas-237",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "red-river-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-239",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "nullification-crisis",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-241",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "regulator-movement-in-north-carolina",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-243",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "natchez-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-245",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "lower-canada-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-247",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "praieira-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-249",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "war-of-the-mascates",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-251",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "dorr-rebellion",
+        "edges": [],
+        "place": "rhode-island"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-253",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "brooks-baxter-war",
+        "edges": [],
+        "place": "little-rock-arkansas"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-255",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "argentine-revolution-of-1893",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-257",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "quito-revolution-1809-1812",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-259",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "revolution-of-the-44",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-261",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "cuzco-rebellion-of-1814",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-263",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "1851-chilean-revolution",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-265",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "revolution-of-1897",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-267",
+      "writer": "B",
+      "fired": "2026-10-28T13:17Z",
+      "status": "written",
+      "written": {
+        "event": "revolt-of-the-muckers",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

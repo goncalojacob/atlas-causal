@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "war-of-the-mascates",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3119045",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "War of the Mascates",
+    "pt": "Guerra dos Mascates"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3119045"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"War of the Mascates\", revision 1366223373"
+    }
+  ],
+  "title": "War of the Mascates",
+  "summary": "The English Wikipedia article \"War of the Mascates\", at revision 1366223373, opens: \"The War of the Mascates might be more accurately called an insurrection; the main events occurred in and around Recife, Pernambuco during 1710 and 1711. Some consider the underlying causes lasted for two centuries. The two sides were the landed elites, often referred to as senhores de engenho, and the merchants of Recife.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3119045, imported by tools/import/wikidata.mjs. The item's own description reads \"1710-1711 armed conflict in Portuguese America\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1710,
+    "end": 1711
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

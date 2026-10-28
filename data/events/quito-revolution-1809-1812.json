@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "quito-revolution-1809-1812",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q5944417",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Quito Revolution (1809–1812)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5944417"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Quito Revolution (1809–1812)\", revision 1378438102"
+    }
+  ],
+  "title": "Quito Revolution (1809–1812)",
+  "summary": "The English Wikipedia article \"Quito Revolution (1809–1812)\", at revision 1378438102, opens: \"The Quito Revolution (1809–1812) was a series of events that took place between 1809 and 1812 in the Real Audiencia de Quito, which led to the establishment of a short-lived State of Quito, and which can be considered as the seed of the independence movements that ended up forming the current Republic of Ecuador.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5944417, imported by tools/import/wikidata.mjs. The item's own description reads \"Period in modern-day Ecuador\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1809,
+    "end": null,
+    "date": "1809-08-10"
+  },
+  "place": "quito",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

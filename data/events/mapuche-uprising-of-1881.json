@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mapuche-uprising-of-1881",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q16824925",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Mapuche uprising of 1881",
+    "pt": "Revolta mapuche de 1881"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q16824925"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mapuche uprising of 1881\", revision 1370627603"
+    }
+  ],
+  "title": "Mapuche uprising of 1881",
+  "summary": "The English Wikipedia article \"Mapuche uprising of 1881\", at revision 1370627603, opens: \"The last major rebellion of the indigenous Mapuches of Araucanía took place in 1881, during the last phase of the Occupation of Araucanía (1861–1883) by the Chilean state. It was planned by Mapuche chiefs in March 1881 to be launched in November the same year. Mapuche support for the uprising was not unanimous: Some Mapuche factions sided with the Chileans and others declared themselves neutral. The organizers of the uprising did however succeed in involving Mapuche factions that had not previously been at war with Chile. With most of the attacks repelled within a matters of days Chile went on the next years to consolidate its conquests.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q16824925, imported by tools/import/wikidata.mjs. The item's own description reads \"last major rebellion of the indigenous Mapuches of Araucanía, Chile\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1881,
+    "end": 1881,
+    "date": "1881-11-03",
+    "endDate": "1881-11-12"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

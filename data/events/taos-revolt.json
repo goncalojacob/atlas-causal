@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "taos-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7684314",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Taos Revolt",
+    "pt": "Revolta Taos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7684314"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Taos Revolt\", revision 1379335031"
+    }
+  ],
+  "title": "Taos Revolt",
+  "summary": "The English Wikipedia article \"Taos Revolt\", at revision 1379335031, opens: \"The Taos Revolt was a popular insurrection in January 1847 by Hispano and Pueblo allies against the United States' occupation of present-day northern New Mexico during the Mexican–American War. Provisional governor Charles Bent and several other Americans were killed by the rebels. In two short campaigns, United States troops and militia crushed the rebellion of the Hispano and Pueblo people. The New Mexicans, seeking better representation, regrouped and fought three more engagements, but after being defeated, they abandoned open warfare. Causes of the revolt included New Mexicans' hatred for the occupying American army and Taos residents' oft-exercised rebelliousness against externally imposed authority. In the aftermath of the revolt, the Americans executed at least 28 rebels. The Treaty of Guadalupe Hidalgo in 1848 guaranteed the property rights of New Mexico's Hispanic and Native American residents.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7684314, imported by tools/import/wikidata.mjs. The item's own description reads \"insurrection in New Mexico Territory in 1847 resulting in the death of Charles Bent and other government officials\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1847,
+    "end": 1847,
+    "date": "1847-07-09"
+  },
+  "place": "new-mexico",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "mexican-american-war"
+}
