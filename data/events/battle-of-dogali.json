@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-dogali",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q674553",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Dogali"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q674553"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dogali\", revision 1379720106"
+    }
+  ],
+  "title": "Battle of Dogali",
+  "summary": "The English Wikipedia article \"Battle of Dogali\", at revision 1379720106, opens: \"The Battle of Dogali was fought on 26 January 1887 between Italy and Ethiopia in Dogali near Massawa, in Medri Bahri otherwise known as Eritrea.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q674553, imported by tools/import/wikidata.mjs. The item's own description reads \"1887 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1887,
+    "end": 1887,
+    "date": "1887-01-26"
+  },
+  "place": "dogali",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "italo-ethiopian-war-of-1887-1889"
+}

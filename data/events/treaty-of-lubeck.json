@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-lubeck",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q708862",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Lübeck",
+    "pt": "Tratado de Lübeck"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q708862"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Lübeck\", revision 1355481706"
+    }
+  ],
+  "title": "Treaty of Lübeck",
+  "summary": "The English Wikipedia article \"Treaty of Lübeck\", at revision 1355481706, opens: \"The Treaty or Peace of Lübeck ended the Danish intervention in the Thirty Years' War. It was signed in Lübeck on 22 May 1629 by Albrecht von Wallenstein and Christian IV of Denmark-Norway, and on 7 June by Ferdinand II, Holy Roman Emperor. The Catholic League was formally included as a party. It restored to Denmark–Norway its pre-war territory at the cost of final disengagement from imperial affairs.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q708862, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty in the thrirty years'war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1629,
+    "end": 1629,
+    "date": "1629-05-22"
+  },
+  "place": "lubeck-q2843",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

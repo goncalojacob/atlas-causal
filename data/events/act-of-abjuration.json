@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "act-of-abjuration",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q634839",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Act of Abjuration",
+    "pt": "Ato de Abjuração"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q634839"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Act of Abjuration\", revision 1381296286"
+    }
+  ],
+  "title": "Act of Abjuration",
+  "summary": "The English Wikipedia article \"Act of Abjuration\", at revision 1381296286, opens: \"The Act of Abjuration is the declaration of independence by many of the provinces of the Netherlands from their allegiance to Philip II of Spain, during the Dutch Revolt.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q634839, imported by tools/import/wikidata.mjs. The item's own description reads \"declaration of independence by many of the provinces of the Netherlands from the allegiance to Philip II of Spain, during the Dutch Revolt\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1581,
+    "end": 1581,
+    "date": "1581-07-26"
+  },
+  "place": "the-hague",
+  "region": null,
+  "regionNote": null,
+  "category": "founding",
+  "actors": []
+}

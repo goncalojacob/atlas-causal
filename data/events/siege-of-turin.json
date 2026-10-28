@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "siege-of-turin",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q693282",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Siege of Turin",
+    "pt": "Cerco de Turim"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q693282"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Turin\", revision 1382486443"
+    }
+  ],
+  "title": "Siege of Turin",
+  "summary": "The English Wikipedia article \"Siege of Turin\", at revision 1382486443, opens: \"The Siege of Turin, June to September 1706, took place during the War of the Spanish Succession. A French army led by Louis de la Feuillade besieged the Savoyard capital of Turin, whose relief by Prince Eugene of Savoy has been called the most brilliant campaign of the war in Italy. The siege is also famous for the death of Piedmontese hero Pietro Micca.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q693282, imported by tools/import/wikidata.mjs. The item's own description reads \"1706 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1706,
+    "end": 1706,
+    "date": "1706-09-07"
+  },
+  "place": "turin",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-spanish-succession"
+}

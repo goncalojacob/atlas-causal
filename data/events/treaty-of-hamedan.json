@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-hamedan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q18089561",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Hamedan"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q18089561"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Hamedan\", revision 1303319070"
+    }
+  ],
+  "title": "Treaty of Hamedan",
+  "summary": "The English Wikipedia article \"Treaty of Hamedan\", at revision 1303319070, opens: \"The Treaty of Hamedan was a treaty between the Ottoman Empire and the Hotak dynasty signed in October 1727 in Hamedan, ending the Ottoman–Hotaki War (1726–1727).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q18089561, imported by tools/import/wikidata.mjs. The item's own description reads \"1727 treaty between the Ottomans and the Hotaki\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1727,
+    "end": 1727,
+    "date": "1727-10"
+  },
+  "place": "hamadan",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

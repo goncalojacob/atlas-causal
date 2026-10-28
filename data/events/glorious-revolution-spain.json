@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "glorious-revolution-spain",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1540751",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Glorious Revolution (Spain)",
+    "pt": "Revolução de 1868"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1540751"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Glorious Revolution (Spain)\", revision 1373187440"
+    }
+  ],
+  "title": "Glorious Revolution (Spain)",
+  "summary": "The English Wikipedia article \"Glorious Revolution (Spain)\", at revision 1373187440, opens: \"The Glorious Revolution took place in Spain in 1868, resulting in the deposition of Queen Isabella II. The success of the revolution marked the beginning of the Sexenio Democrático with the installation of a provisional government.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1540751, imported by tools/import/wikidata.mjs. The item's own description reads \"1868 revolution in Spain that deposed Queen Isabella II\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1868,
+    "date": "1868-09-19",
+    "endDate": "1868-09-27"
+  },
+  "place": "spain-q29",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

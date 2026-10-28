@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-london-1867",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1345269",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of London (1867)",
+    "pt": "Tratado de Londres (1867)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1345269"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of London (1867)\", revision 1357849639"
+    }
+  ],
+  "title": "Treaty of London (1867)",
+  "summary": "The English Wikipedia article \"Treaty of London (1867)\", at revision 1357849639, opens: \"The Treaty of London, often called the Second Treaty of London after the 1839 Treaty, granted Luxembourg full independence and neutrality. It was signed on 11 May 1867 in the aftermath of the Austro-Prussian War and the Luxembourg Crisis. It had wide-reaching consequences for Luxembourg and for relations among Europe's great powers.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1345269, imported by tools/import/wikidata.mjs. The item's own description reads \"international treaty signed on 11 May 1867\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1867,
+    "end": 1867,
+    "date": "1867-05-11"
+  },
+  "place": "london",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

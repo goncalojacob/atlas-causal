@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-yungay",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2890439",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Yungay"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890439"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Yungay\", revision 1372630172"
+    }
+  ],
+  "title": "Battle of Yungay",
+  "summary": "The English Wikipedia article \"Battle of Yungay\", at revision 1372630172, opens: \"The Battle of Yungay was the final battle of the War of the Confederation, fought on January 20, 1839, near Yungay, Peru. The United Restoration Army, led by Chilean General Manuel Bulnes, consisting mainly of Chileans and 600 North Peruvian dissidents, attacked the Peru-Bolivian Confederation forces led by Andrés de Santa Cruz in northern Peru, 200 kilometers (120 mi) north of Lima.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890439, imported by tools/import/wikidata.mjs. The item's own description reads \"1839 battle of the War of the Confederation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1839,
+    "end": 1839,
+    "date": "1839-01-20"
+  },
+  "place": "yungay-peru",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

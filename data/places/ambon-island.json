@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ambon-island",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q219608",
+  "sitelinks": {
+    "count": 54,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Ambon Island",
+    "pt": "Amboíno"
+  },
+  "sources": [],
+  "names": [
+    "Ambon Island",
+    "Amboina",
+    "Amboíno"
+  ],
+  "where": {
+    "lon": 128.16583055555554,
+    "lat": -3.6147194444444444,
+    "precision": "region",
+    "label": "Ambon Island"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
