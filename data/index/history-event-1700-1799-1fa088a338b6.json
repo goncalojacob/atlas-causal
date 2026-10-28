@@ -137,6 +137,15 @@
         }
       ]
     },
+    "3rd-united-states-congress": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "abaco-slave-revolt": {
       "from": "git",
       "versions": [
@@ -496,6 +505,15 @@
         }
       ]
     },
+    "awa-uq-massacre": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "bali-strait-incident": {
       "from": "git",
       "versions": [
@@ -598,6 +616,15 @@
         {
           "first": true,
           "on": "2026-09-30"
+        }
+      ]
+    },
+    "battle-of-beauport": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1012,6 +1039,15 @@
         }
       ]
     },
+    "battle-of-fort-bull": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-fort-charlotte": {
       "from": "git",
       "versions": [
@@ -1054,6 +1090,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "battle-of-fort-oswego": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -2378,6 +2423,15 @@
         }
       ]
     },
+    "battle-of-ticonderoga-1759": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-tirurangadi": {
       "from": "git",
       "versions": [
@@ -2964,6 +3018,24 @@
         }
       ]
     },
+    "confederation-period": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "constitution-of-3-may-1791": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "coup-of-18-brumaire": {
       "from": "git",
       "versions": [
@@ -3325,6 +3397,15 @@
         }
       ]
     },
+    "george-washington-s-crossing-of-the-delaware-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "great-bengal-famine-of-1770": {
       "from": "git",
       "versions": [
@@ -3677,6 +3758,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "landing-at-kip-s-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4201,6 +4291,15 @@
         }
       ]
     },
+    "russo-turkish-war-1768-1774": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "russo-turkish-war-1787-1792": {
       "from": "git",
       "versions": [
@@ -4457,6 +4556,15 @@
             "regionNote"
           ],
           "on": "2026-09-25"
+        }
+      ]
+    },
+    "siege-of-charleston": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5508,6 +5616,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "treaty-of-paris-1763": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

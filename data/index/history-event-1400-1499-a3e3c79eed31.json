@@ -482,6 +482,15 @@
         }
       ]
     },
+    "siege-of-belgrade-1456": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "siege-of-ceuta-1419": {
       "from": "git",
       "versions": [

@@ -149,6 +149,15 @@
         }
       ]
     },
+    "baroque": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-abancay": {
       "from": "git",
       "versions": [
@@ -3154,6 +3163,15 @@
       ]
     },
     "russo-crimean-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "russo-turkish-war-1568-1570": {
       "from": "git",
       "versions": [
         {

@@ -948,6 +948,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "alaska-q797",
+      "kind": "place",
+      "names": [
+        "Alaska",
+        "Alasca"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -1845,7 +1873,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 7,
+      "degree": 9,
       "id": "argentina-q414",
       "kind": "place",
       "names": [
@@ -1963,6 +1991,34 @@
       "kind": "place",
       "names": [
         "Arizona"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "arkansas-post",
+      "kind": "place",
+      "names": [
+        "Arkansas Post",
+        "Correio do Arkansas"
       ],
       "origin": {
         "tool": "wikidata"
@@ -2295,6 +2351,34 @@
       "names": [
         "Assam",
         "Assão"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "astrakhan",
+      "kind": "place",
+      "names": [
+        "Astrakhan",
+        "Astracã"
       ],
       "origin": {
         "tool": "wikidata"
@@ -2959,7 +3043,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 8,
+      "degree": 9,
       "id": "balkans",
       "kind": "place",
       "names": [
@@ -3866,6 +3950,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "beauport-quebec-city",
+      "kind": "place",
+      "names": [
+        "Beauport",
+        "Beauport, Quebec City"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "beecher-island",
@@ -4058,7 +4170,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 3,
+      "degree": 4,
       "id": "belgrade",
       "kind": "place",
       "names": [
@@ -6026,7 +6138,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "bucharest",
       "kind": "place",
       "names": [
@@ -7919,6 +8031,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "charleston-south-carolina",
+      "kind": "place",
+      "names": [
+        "Charleston",
+        "Charleston, South Carolina",
+        "Charleston (Carolina do Sul)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-22",
       "degree": 1,
       "id": "chateau-de-saint-cloud",
@@ -8737,6 +8878,35 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "colfax-louisiana",
+      "kind": "place",
+      "names": [
+        "Colfax",
+        "Colfax, Louisiana",
+        "Colfax (Luisiana)"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -9840,6 +10010,35 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "dadeville-alabama",
+      "kind": "place",
+      "names": [
+        "Dadeville",
+        "Dadeville, Alabama",
+        "Dadeville (Alabama)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -11518,7 +11717,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "eastern-europe",
       "kind": "place",
       "names": [
@@ -12394,7 +12593,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 13,
+      "degree": 14,
       "id": "europe",
       "kind": "place",
       "names": [
@@ -13295,6 +13494,33 @@
           "place-written-by-hand"
         ],
         "note": "Written by hand because the import could not: Q7510020 carries its own P625 and names no located item a tool can read a name off. The point is that P625 unchanged; the name is the one the battle's own article gives the site.",
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "fort-oswego",
+      "kind": "place",
+      "names": [
+        "Fort Oswego"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
         "status": "draft"
       },
       "revised": null,
@@ -25523,7 +25749,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "mexico-city",
       "kind": "place",
       "names": [
@@ -28152,6 +28378,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "new-orleans",
+      "kind": "place",
+      "names": [
+        "New Orleans",
+        "Nova Orleães"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "new-providence",
@@ -30240,7 +30494,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 19,
+      "degree": 22,
       "id": "paris",
       "kind": "place",
       "names": [
@@ -33941,6 +34195,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "rock-springs-wyoming",
+      "kind": "place",
+      "names": [
+        "Rock Springs",
+        "Rock Springs, Wyoming",
+        "Rock Springs (Wyoming)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-25",
       "degree": 1,
       "id": "rocourt-liege",
@@ -34064,6 +34347,36 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "rome-new-york",
+      "kind": "place",
+      "names": [
+        "Rome",
+        "Roma",
+        "Rome, New York",
+        "Roma (Nova Iorque)"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -40497,6 +40810,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "tierra-del-fuego",
+      "kind": "place",
+      "names": [
+        "Tierra del Fuego",
+        "Terra do Fogo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -41973,7 +42314,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 39,
+      "degree": 46,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -43368,6 +43709,33 @@
         "status": "draft"
       },
       "revised": "2026-09-17",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "washita-river",
+      "kind": "place",
+      "names": [
+        "Washita River"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

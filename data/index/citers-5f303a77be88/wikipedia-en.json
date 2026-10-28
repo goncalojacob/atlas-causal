@@ -11186,6 +11186,12 @@
     },
     {
       "dissent": false,
+      "id": "3rd-united-states-congress",
+      "kind": "event",
+      "locator": "\"3rd United States Congress\", revision 1380236762"
+    },
+    {
+      "dissent": false,
       "id": "aarhus-convention",
       "kind": "event",
       "locator": "\"Aarhus Convention\", revision 1367239958"
@@ -11882,6 +11888,12 @@
     },
     {
       "dissent": false,
+      "id": "argentine-declaration-of-independence",
+      "kind": "event",
+      "locator": "\"Argentine Declaration of Independence\", revision 1367580681"
+    },
+    {
+      "dissent": false,
       "id": "argentine-revolution-of-1893",
       "kind": "event",
       "locator": "\"Argentine Revolution of 1893\", revision 1370105251"
@@ -12104,6 +12116,12 @@
     },
     {
       "dissent": false,
+      "id": "awa-uq-massacre",
+      "kind": "event",
+      "locator": "\"Awa'uq Massacre\", revision 1374232802"
+    },
+    {
+      "dissent": false,
       "id": "azov-campaigns-1695-1696",
       "kind": "event",
       "locator": "\"Azov campaigns (1695–1696)\", revision 1379875245"
@@ -12209,6 +12227,12 @@
       "id": "baring-crisis",
       "kind": "event",
       "locator": "\"Baring crisis\", revision 1370190462"
+    },
+    {
+      "dissent": false,
+      "id": "baroque",
+      "kind": "event",
+      "locator": "\"Baroque\", revision 1382386305"
     },
     {
       "dissent": false,
@@ -12560,6 +12584,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-arkansas-post",
+      "kind": "event",
+      "locator": "\"Battle of Arkansas Post\", revision 1370106972"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-arras-1654",
       "kind": "event",
       "locator": "\"Battle of Arras (1654)\", revision 1380632050"
@@ -12710,6 +12740,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-beauport",
+      "kind": "event",
+      "locator": "\"Battle of Beauport\", revision 1370433771"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-beaver-dams",
       "kind": "event",
       "locator": "\"Battle of Beaver Dams\", revision 1379530685"
@@ -12731,6 +12767,12 @@
       "id": "battle-of-belen-pass",
       "kind": "event",
       "locator": "\"Battle of Belen Pass\", revision 1374227507"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-belmont",
+      "kind": "event",
+      "locator": "\"Battle of Belmont\", revision 1374186086"
     },
     {
       "dissent": false,
@@ -12779,6 +12821,12 @@
       "id": "battle-of-bicocca",
       "kind": "event",
       "locator": "\"Battle of Bicocca\", revision 1370107825"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-big-bethel",
+      "kind": "event",
+      "locator": "\"Battle of Big Bethel\", revision 1370434284"
     },
     {
       "dissent": false,
@@ -12887,6 +12935,12 @@
       "id": "battle-of-brackett-s-wood",
       "kind": "event",
       "locator": "\"Battle of Brackett's Wood\", revision 1375012768"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-brandy-station",
+      "kind": "event",
+      "locator": "\"Battle of Brandy Station\", revision 1381904125"
     },
     {
       "dissent": false,
@@ -13226,6 +13280,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cerro-cora",
+      "kind": "event",
+      "locator": "\"Battle of Cerro Corá\", revision 1374679753"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chacabuco",
       "kind": "event",
       "locator": "\"Battle of Chacabuco\", revision 1373197409"
@@ -13238,9 +13298,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-champion-hill",
+      "kind": "event",
+      "locator": "\"Battle of Champion Hill\", revision 1380654426"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-chancellorsville",
       "kind": "event",
       "locator": "\"Battle of Chancellorsville\", revision 1380654431"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-chantilly",
+      "kind": "event",
+      "locator": "\"Battle of Chantilly\", revision 1374518450"
     },
     {
       "dissent": false,
@@ -13373,6 +13445,12 @@
       "id": "battle-of-chupas",
       "kind": "event",
       "locator": "\"Battle of Chupas\", revision 1370437248"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-churubusco",
+      "kind": "event",
+      "locator": "\"Battle of Churubusco\", revision 1370628851"
     },
     {
       "dissent": false,
@@ -13862,6 +13940,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fort-bull",
+      "kind": "event",
+      "locator": "\"Battle of Fort Bull\", revision 1382284717"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-fort-charlotte",
       "kind": "event",
       "locator": "\"Battle of Fort Charlotte\", revision 1374387321"
@@ -13916,9 +14000,21 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-fort-oswego",
+      "kind": "event",
+      "locator": "\"Battle of Fort Oswego\", revision 1382283787"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-fort-oswego-1814",
       "kind": "event",
       "locator": "\"Battle of Fort Oswego (1814)\", revision 1375554368"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-fort-pillow",
+      "kind": "event",
+      "locator": "\"Battle of Fort Pillow\", revision 1381884242"
     },
     {
       "dissent": false,
@@ -14132,6 +14228,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-goliad",
+      "kind": "event",
+      "locator": "\"Battle of Goliad\", revision 1378642813"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gonaives",
       "kind": "event",
       "locator": "\"Battle of Gonaïves\", revision 1370110941"
@@ -14306,6 +14408,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-harpers-ferry",
+      "kind": "event",
+      "locator": "\"Battle of Harpers Ferry\", revision 1373339434"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-haslach-jungingen",
       "kind": "event",
       "locator": "\"Battle of Haslach-Jungingen\", revision 1370442665"
@@ -14405,6 +14513,12 @@
       "id": "battle-of-honnecourt",
       "kind": "event",
       "locator": "\"Battle of Honnecourt\", revision 1370443189"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-horseshoe-bend",
+      "kind": "event",
+      "locator": "\"Battle of Horseshoe Bend\", revision 1380175928"
     },
     {
       "dissent": false,
@@ -15662,6 +15776,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-monocacy",
+      "kind": "event",
+      "locator": "\"Battle of Monocacy\", revision 1381905586"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-montemurlo",
       "kind": "event",
       "locator": "\"Battle of Montemurlo\", revision 1370450375"
@@ -15920,6 +16040,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-north-anna",
+      "kind": "event",
+      "locator": "\"Battle of North Anna\", revision 1380714216"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-noryang",
       "kind": "event",
       "locator": "\"Battle of Noryang\", revision 1370270922"
@@ -16097,6 +16223,12 @@
       "id": "battle-of-pavia",
       "kind": "event",
       "locator": "\"Battle of Pavia\", revision 1370271639"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-pavon",
+      "kind": "event",
+      "locator": "\"Battle of Pavón\", revision 1373364883"
     },
     {
       "dissent": false,
@@ -16727,6 +16859,12 @@
       "id": "battle-of-san-mateo-1814",
       "kind": "event",
       "locator": "\"Battle of San Mateo (1814)\", revision 1370273605"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-san-patricio",
+      "kind": "event",
+      "locator": "\"Battle of San Patricio\", revision 1378642970"
     },
     {
       "dissent": false,
@@ -17564,6 +17702,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-rosebud",
+      "kind": "event",
+      "locator": "\"Battle of the Rosebud\", revision 1380106474"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-saintes",
       "kind": "event",
       "locator": "\"Battle of the Saintes\", revision 1370602082"
@@ -17636,6 +17780,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-the-washita-river",
+      "kind": "event",
+      "locator": "\"Battle of the Washita River\", revision 1370602714"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-the-wilderness",
       "kind": "event",
       "locator": "\"Battle of the Wilderness\", revision 1381179901"
@@ -17657,6 +17807,12 @@
       "id": "battle-of-the-yellow-sea",
       "kind": "event",
       "locator": "\"Battle of the Yellow Sea\", revision 1375165941"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-ticonderoga-1759",
+      "kind": "event",
+      "locator": "\"Battle of Ticonderoga (1759)\", revision 1370717242"
     },
     {
       "dissent": false,
@@ -18158,6 +18314,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-westport",
+      "kind": "event",
+      "locator": "\"Battle of Westport\", revision 1377430927"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-wevelinghoven",
       "kind": "event",
       "locator": "\"Battle of Wevelinghoven\", revision 1370593776"
@@ -18299,6 +18461,12 @@
       "id": "battle-of-yamazaki",
       "kind": "event",
       "locator": "\"Battle of Yamazaki\", revision 1370277104"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-yellow-tavern",
+      "kind": "event",
+      "locator": "\"Battle of Yellow Tavern\", revision 1370595527"
     },
     {
       "dissent": false,
@@ -18503,6 +18671,12 @@
       "id": "bizerte-crisis",
       "kind": "event",
       "locator": "\"Bizerte crisis\", revision 1370604378"
+    },
+    {
+      "dissent": false,
+      "id": "black-friday-1869",
+      "kind": "event",
+      "locator": "\"Black Friday (1869)\", revision 1357530768"
     },
     {
       "dissent": false,
@@ -19166,6 +19340,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-new-orleans",
+      "kind": "event",
+      "locator": "\"Capture of New Orleans\", revision 1381066398"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-oujda-1647",
       "kind": "event",
       "locator": "\"Capture of Oujda (1647)\", revision 1292600657"
@@ -19550,6 +19730,12 @@
     },
     {
       "dissent": false,
+      "id": "colfax-massacre",
+      "kind": "event",
+      "locator": "\"Colfax massacre\", revision 1379296633"
+    },
+    {
+      "dissent": false,
       "id": "cologne-war",
       "kind": "event",
       "locator": "\"Cologne War\", revision 1374675504"
@@ -19613,6 +19799,12 @@
       "id": "comprehensive-peace-agreement",
       "kind": "event",
       "locator": "\"Comprehensive Peace Agreement\", revision 1372495468"
+    },
+    {
+      "dissent": false,
+      "id": "confederation-period",
+      "kind": "event",
+      "locator": "\"Confederation period\", revision 1380707080"
     },
     {
       "dissent": false,
@@ -19709,6 +19901,12 @@
       "id": "constantinople-massacre-of-1821",
       "kind": "event",
       "locator": "\"Constantinople massacre of 1821\", revision 1381495203"
+    },
+    {
+      "dissent": false,
+      "id": "constitution-of-3-may-1791",
+      "kind": "event",
+      "locator": "\"Constitution of 3 May 1791\", revision 1380261707"
     },
     {
       "dissent": false,
@@ -20828,6 +21026,12 @@
     },
     {
       "dissent": false,
+      "id": "first-battle-of-kernstown",
+      "kind": "event",
+      "locator": "\"First Battle of Kernstown\", revision 1370618715"
+    },
+    {
+      "dissent": false,
       "id": "first-battle-of-panipat",
       "kind": "event",
       "locator": "\"First Battle of Panipat\", revision 1370618857"
@@ -21407,6 +21611,12 @@
       "id": "genocide-convention",
       "kind": "event",
       "locator": "\"Genocide Convention\", revision 1371861623"
+    },
+    {
+      "dissent": false,
+      "id": "george-washington-s-crossing-of-the-delaware-river",
+      "kind": "event",
+      "locator": "\"George Washington's crossing of the Delaware River\", revision 1382393996"
     },
     {
       "dissent": false,
@@ -22796,6 +23006,12 @@
     },
     {
       "dissent": false,
+      "id": "kulturkampf",
+      "kind": "event",
+      "locator": "\"Kulturkampf\", revision 1379361243"
+    },
+    {
+      "dissent": false,
       "id": "kwilu-rebellion",
       "kind": "event",
       "locator": "\"Kwilu rebellion\", revision 1370626353"
@@ -22829,6 +23045,12 @@
       "id": "laghouat-expedition-1708-1713",
       "kind": "event",
       "locator": "\"Laghouat Expedition (1708–1713)\", revision 1370626439"
+    },
+    {
+      "dissent": false,
+      "id": "landing-at-kip-s-bay",
+      "kind": "event",
+      "locator": "\"Landing at Kip's Bay\", revision 1371409679"
     },
     {
       "dissent": false,
@@ -25442,6 +25664,12 @@
     },
     {
       "dissent": false,
+      "id": "rock-springs-massacre",
+      "kind": "event",
+      "locator": "\"Rock Springs massacre\", revision 1379516882"
+    },
+    {
+      "dissent": false,
       "id": "roland-crappe-s-raids-on-portuguese-colonies",
       "kind": "event",
       "locator": "\"Roland Crappé's raids on Portuguese colonies\", revision 1373846591"
@@ -25550,6 +25778,12 @@
     },
     {
       "dissent": false,
+      "id": "russo-turkish-war-1568-1570",
+      "kind": "event",
+      "locator": "\"Russo-Turkish War (1568–1570)\", revision 1382437683"
+    },
+    {
+      "dissent": false,
       "id": "russo-turkish-war-1686-1700",
       "kind": "event",
       "locator": "\"Russo-Turkish War (1686–1700)\", revision 1380238405"
@@ -25568,9 +25802,21 @@
     },
     {
       "dissent": false,
+      "id": "russo-turkish-war-1768-1774",
+      "kind": "event",
+      "locator": "\"Russo-Turkish War (1768–1774)\", revision 1371325960"
+    },
+    {
+      "dissent": false,
       "id": "russo-turkish-war-1787-1792",
       "kind": "event",
       "locator": "\"Russo-Turkish War (1787–1792)\", revision 1382278205"
+    },
+    {
+      "dissent": false,
+      "id": "russo-turkish-war-1828-1829",
+      "kind": "event",
+      "locator": "\"Russo-Turkish War (1828–1829)\", revision 1371356411"
     },
     {
       "dissent": false,
@@ -26126,6 +26372,12 @@
     },
     {
       "dissent": false,
+      "id": "selk-nam-genocide",
+      "kind": "event",
+      "locator": "\"Selkʼnam genocide\", revision 1382216091"
+    },
+    {
+      "dissent": false,
       "id": "seminole-wars",
       "kind": "event",
       "locator": "\"Seminole Wars\", revision 1379033093"
@@ -26414,6 +26666,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-belgrade-1456",
+      "kind": "event",
+      "locator": "\"Siege of Belgrade (1456)\", revision 1382438141"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-belgrade-1688",
       "kind": "event",
       "locator": "\"Siege of Belgrade (1688)\", revision 1375187508"
@@ -26537,6 +26795,12 @@
       "id": "siege-of-ceuta-1419",
       "kind": "event",
       "locator": "\"Siege of Ceuta (1419)\", revision 1370740121"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-charleston",
+      "kind": "event",
+      "locator": "\"Siege of Charleston\", revision 1372316391"
     },
     {
       "dissent": false,
@@ -27623,6 +27887,12 @@
       "id": "siege-of-yorktown",
       "kind": "event",
       "locator": "\"Siege of Yorktown\", revision 1376522207"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-yorktown-1862",
+      "kind": "event",
+      "locator": "\"Siege of Yorktown (1862)\", revision 1380716966"
     },
     {
       "dissent": false,
@@ -29030,6 +29300,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-bucharest-1812",
+      "kind": "event",
+      "locator": "\"Treaty of Bucharest (1812)\", revision 1379681143"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-butre",
       "kind": "event",
       "locator": "\"Treaty of Butre\", revision 1376183718"
@@ -29564,9 +29840,27 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-paris-1763",
+      "kind": "event",
+      "locator": "\"Treaty of Paris (1763)\", revision 1376680274"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-paris-1783",
       "kind": "event",
       "locator": "\"Treaty of Paris (1783)\", revision 1376240014"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-paris-1814",
+      "kind": "event",
+      "locator": "\"Treaty of Paris (1814)\", revision 1379456047"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-paris-1856",
+      "kind": "event",
+      "locator": "\"Treaty of Paris (1856)\", revision 1374103645"
     },
     {
       "dissent": false,
