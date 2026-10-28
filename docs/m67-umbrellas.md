@@ -3362,3 +3362,7 @@ Writer B imported it from the planner's queue as item `2026-10-27-americas-211`,
 ## Writer B, 2026-10-28: `mutiny-on-the-bounty`, bare
 
 Writer B imported it from the planner's queue as item `2026-10-27-europe-036`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `hadzi-prodan-s-rebellion`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-asia-164`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.

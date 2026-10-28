@@ -20534,6 +20534,653 @@
       },
       "refusals": [],
       "note": "Q2090612 is already the event \"hagi-rebellion\""
+    },
+    {
+      "id": "2026-10-27-asia-162",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1129079 is already the event \"hunza-nagar-campaign\""
+    },
+    {
+      "id": "2026-10-27-asia-164",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "written",
+      "written": {
+        "event": "hadzi-prodan-s-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-166",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2889974 is already the event \"battle-of-shimonoseki-straits\""
+    },
+    {
+      "id": "2026-10-27-asia-168",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q20313080 is already the event \"anglo-manipur-war\""
+    },
+    {
+      "id": "2026-10-27-asia-170",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7837197 is already the event \"treaty-of-purandar-1665\""
+    },
+    {
+      "id": "2026-10-27-asia-172",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4849424 is already the event \"bakhtrioni-uprising\""
+    },
+    {
+      "id": "2026-10-27-asia-174",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q10935020 is already the event \"revolt-of-the-altishahr-khojas\""
+    },
+    {
+      "id": "2026-10-27-asia-176",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4554590 is already the event \"rebellion-in-guria-1841\""
+    },
+    {
+      "id": "2026-10-27-asia-178",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q838771 is already the event \"punti-hakka-clan-wars\""
+    },
+    {
+      "id": "2026-10-27-asia-180",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q20988318 is already the event \"battle-of-al-wajbah\""
+    },
+    {
+      "id": "2026-10-27-asia-182",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q17025641 is already the event \"tirah-campaign\""
+    },
+    {
+      "id": "2026-10-27-asia-184",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q96359686 is already the event \"1812-1819-ottoman-plague-epidemic\""
+    },
+    {
+      "id": "2026-10-27-asia-186",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4899882 is already the event \"beylerbeyi-event\""
+    },
+    {
+      "id": "2026-10-27-asia-188",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4999449 is already the event \"burmese-invasions-of-assam\""
+    },
+    {
+      "id": "2026-10-27-asia-190",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6507837 is already the event \"le-van-khoi-revolt\""
+    },
+    {
+      "id": "2026-10-27-asia-192",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "written",
+      "written": {
+        "event": "1854-macedonian-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-194",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q18206421 is already the event \"herzegovina-uprising-1852-1862\""
+    },
+    {
+      "id": "2026-10-27-asia-196",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1351039 is already the event \"treaty-of-bongaya\""
+    },
+    {
+      "id": "2026-10-27-asia-198",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6948728 is already the event \"mysorean-invasion-of-malabar\""
+    },
+    {
+      "id": "2026-10-27-asia-200",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7166879 is already the event \"perak-war\""
+    },
+    {
+      "id": "2026-10-27-asia-202",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1348781 is already the event \"1786-kangding-luding-earthquake\""
+    },
+    {
+      "id": "2026-10-27-asia-204",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q18712737 is already the event \"albanian-revolt-of-1845\""
+    },
+    {
+      "id": "2026-10-27-asia-206",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q11510437: none of its classes (Q3824506) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-americas-214",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q638530: none of its classes (Q3119121) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-americas-216",
+      "writer": "A",
+      "fired": "2026-10-28T13:03Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2672972 is already the event \"uruguayan-civil-war\""
+    },
+    {
+      "id": "2026-10-27-asia-163",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3536741: none of its classes (Q3824506) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-asia-165",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2090046 is already the event \"akizuki-rebellion\""
+    },
+    {
+      "id": "2026-10-27-asia-167",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7267163 is already the event \"qatari-bahraini-war\""
+    },
+    {
+      "id": "2026-10-27-asia-169",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q16890896 is already the event \"sikkim-expedition\""
+    },
+    {
+      "id": "2026-10-27-asia-171",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7837260 is already the event \"treaty-of-titalia\""
+    },
+    {
+      "id": "2026-10-27-asia-173",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2371369 is already the event \"third-javanese-war-of-succession\""
+    },
+    {
+      "id": "2026-10-27-asia-175",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3534806 is already the event \"great-rebellion-of-1817-1818\""
+    },
+    {
+      "id": "2026-10-27-asia-177",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2661091 is already the event \"dutch-intervention-in-bali-1849\""
+    },
+    {
+      "id": "2026-10-27-asia-179",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q28136178 is already the event \"hazara-genocide\""
+    },
+    {
+      "id": "2026-10-27-asia-181",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1908014 is already the event \"mat-salleh-rebellion\""
+    },
+    {
+      "id": "2026-10-27-asia-183",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3434536 is already the event \"treaty-of-hue-1863\""
+    },
+    {
+      "id": "2026-10-27-asia-185",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5598680 is already the event \"1876-bengal-cyclone\""
+    },
+    {
+      "id": "2026-10-27-asia-187",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q28123383 is already the event \"portuguese-invasion-of-the-jaffna-kingdom-1591\""
+    },
+    {
+      "id": "2026-10-27-asia-189",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6361719 is already the event \"anglo-kandyan-wars\""
+    },
+    {
+      "id": "2026-10-27-asia-191",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7170213 is already the event \"persian-gulf-campaign-of-1809\""
+    },
+    {
+      "id": "2026-10-27-asia-193",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2237434 is already the event \"dutch-intervention-in-northern-bali-1848\""
+    },
+    {
+      "id": "2026-10-27-asia-195",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q11061722 is already the event \"red-turban-rebellion-1854-1856\""
+    },
+    {
+      "id": "2026-10-27-asia-197",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7837140 is already the event \"treaty-of-mangalore\""
+    },
+    {
+      "id": "2026-10-27-asia-199",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2908906 is already the event \"miao-rebellion-1854-1873\""
+    },
+    {
+      "id": "2026-10-27-asia-201",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7837243 is already the event \"treaty-of-surji-anjangaon\""
+    },
+    {
+      "id": "2026-10-27-asia-203",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4553250 is already the event \"bani-utbah-invasion-of-bahrain\""
+    },
+    {
+      "id": "2026-10-27-asia-205",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q6177105 is already the event \"jementah-civil-war\""
+    },
+    {
+      "id": "2026-10-27-asia-207",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "written",
+      "written": {
+        "event": "1867-macedonian-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-215",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1064335 is already the event \"pig-war-1859\""
+    },
+    {
+      "id": "2026-10-27-americas-217",
+      "writer": "B",
+      "fired": "2026-10-28T13:08Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1501025 is already the event \"utah-war\""
     }
   ]
 }
