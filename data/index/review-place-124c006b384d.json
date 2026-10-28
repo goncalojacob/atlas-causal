@@ -398,7 +398,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "adriatic-sea",
       "kind": "place",
       "names": [
@@ -1200,6 +1200,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "altranstadt",
+      "kind": "place",
+      "names": [
+        "Altranstädt"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -1232,6 +1259,35 @@
       "kind": "place",
       "names": [
         "Amba Mariam"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "ambon-island",
+      "kind": "place",
+      "names": [
+        "Ambon Island",
+        "Amboina",
+        "Amboíno"
       ],
       "origin": {
         "tool": "wikidata"
@@ -4006,7 +4062,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 3,
       "id": "beijing",
       "kind": "place",
       "names": [
@@ -4170,7 +4226,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 4,
+      "degree": 5,
       "id": "belgrade",
       "kind": "place",
       "names": [
@@ -8761,6 +8817,33 @@
       ],
       "created": "2026-10-28",
       "degree": 1,
+      "id": "cieszyn",
+      "kind": "place",
+      "names": [
+        "Cieszyn"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
       "id": "ciudad-jardin-lomas-del-palomar",
       "kind": "place",
       "names": [
@@ -11054,6 +11137,33 @@
       "names": [
         "Dobromierz",
         "Dobromierz, Lower Silesian Voivodeship"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "dogali",
+      "kind": "place",
+      "names": [
+        "Dogali"
       ],
       "origin": {
         "tool": "wikidata"
@@ -14122,6 +14232,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "friuli",
+      "kind": "place",
+      "names": [
+        "Friuli",
+        "Friul"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-02",
       "degree": 1,
       "id": "fuerteventura",
@@ -16119,6 +16257,34 @@
       ],
       "created": "2026-10-28",
       "degree": 1,
+      "id": "hamadan",
+      "kind": "place",
+      "names": [
+        "Hamadan",
+        "Hamadã"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
       "id": "hampi",
       "kind": "place",
       "names": [
@@ -17248,7 +17414,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "iberian-peninsula",
       "kind": "place",
       "names": [
@@ -19696,6 +19862,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "karelia",
+      "kind": "place",
+      "names": [
+        "Karelia",
+        "Carélia"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -21208,6 +21402,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "koszeg",
+      "kind": "place",
+      "names": [
+        "Kőszeg"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-27",
       "degree": 1,
       "id": "kousseri",
@@ -21850,7 +22071,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "la-rochelle",
       "kind": "place",
       "names": [
@@ -23191,7 +23412,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 14,
+      "degree": 15,
       "id": "london",
       "kind": "place",
       "names": [
@@ -23426,6 +23647,33 @@
       "kind": "place",
       "names": [
         "Lūang Namthā"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "lubeck-q2843",
+      "kind": "place",
+      "names": [
+        "Lübeck"
       ],
       "origin": {
         "tool": "wikidata"
@@ -25583,7 +25831,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 2,
+      "degree": 3,
       "id": "melilla",
       "kind": "place",
       "names": [
@@ -25778,6 +26026,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "merv",
+      "kind": "place",
+      "names": [
+        "Merv",
+        "Marve"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 4,
       "id": "mesopotamia",
@@ -25806,7 +26082,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "metz",
       "kind": "place",
       "names": [
@@ -29765,7 +30041,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 4,
+      "degree": 5,
       "id": "oran",
       "kind": "place",
       "names": [
@@ -30578,7 +30854,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 23,
+      "degree": 25,
       "id": "paris",
       "kind": "place",
       "names": [
@@ -34562,7 +34838,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 1,
+      "degree": 2,
       "id": "royal-palace-of-la-granja-de-san-ildefonso",
       "kind": "place",
       "names": [
@@ -38488,7 +38764,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 3,
+      "degree": 4,
       "id": "spain-q29",
       "kind": "place",
       "names": [
@@ -38795,7 +39071,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 2,
       "id": "st-albans",
       "kind": "place",
       "names": [
@@ -40564,7 +40840,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "the-hague",
       "kind": "place",
       "names": [
@@ -40812,7 +41088,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 3,
+      "degree": 5,
       "id": "tianjin",
       "kind": "place",
       "names": [
@@ -42030,7 +42306,7 @@
         }
       ],
       "created": "2026-09-25",
-      "degree": 1,
+      "degree": 2,
       "id": "turin",
       "kind": "place",
       "names": [
@@ -45052,6 +45328,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "yangzhou",
+      "kind": "place",
+      "names": [
+        "Yangzhou"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-23",
       "degree": 1,
       "id": "yellow-sea",
@@ -45369,6 +45672,35 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "yungay-peru",
+      "kind": "place",
+      "names": [
+        "Yungay",
+        "Yungay, Peru",
+        "Yungay (Peru)"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [

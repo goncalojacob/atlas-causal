@@ -421,6 +421,15 @@
         }
       ]
     },
+    "altranstadt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "alvor": {
       "from": "git",
       "versions": [
@@ -443,6 +452,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "ambon-island": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3500,6 +3518,15 @@
         }
       ]
     },
+    "cieszyn": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "ciudad-jardin-lomas-del-palomar": {
       "from": "git",
       "versions": [
@@ -4439,6 +4466,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "dogali": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5729,6 +5765,15 @@
         }
       ]
     },
+    "friuli": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "fuerteventura": {
       "from": "git",
       "versions": [
@@ -6555,6 +6600,15 @@
       ]
     },
     "halle-saale": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "hamadan": {
       "from": "git",
       "versions": [
         {
@@ -7937,6 +7991,15 @@
         }
       ]
     },
+    "karelia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "kargil-district": {
       "from": "git",
       "versions": [
@@ -8534,6 +8597,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "koszeg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -9520,6 +9592,15 @@
         }
       ]
     },
+    "lubeck-q2843": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "lublin": {
       "from": "git",
       "versions": [
@@ -10447,6 +10528,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "merv": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -18431,6 +18521,15 @@
         }
       ]
     },
+    "yangzhou": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "yellow-sea": {
       "from": "git",
       "versions": [
@@ -18561,6 +18660,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "yungay-peru": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

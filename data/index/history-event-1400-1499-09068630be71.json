@@ -110,7 +110,25 @@
         }
       ]
     },
+    "battle-of-mortimer-s-cross": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-nancy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-northampton-1460": {
       "from": "git",
       "versions": [
         {
@@ -224,6 +242,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "conquest-of-melilla": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -482,6 +509,24 @@
         }
       ]
     },
+    "ottoman-venetian-war-1463-1479": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "ottoman-venetian-war-1499-1503": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "portuguese-conquest-of-ceuta": {
       "from": "git",
       "versions": [
@@ -506,6 +551,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "second-battle-of-st-albans": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

@@ -11264,6 +11264,12 @@
     },
     {
       "dissent": false,
+      "id": "act-of-abjuration",
+      "kind": "event",
+      "locator": "\"Act of Abjuration\", revision 1381296286"
+    },
+    {
+      "dissent": false,
       "id": "action-at-tamanana-9-september-1645",
       "kind": "event",
       "locator": "\"Insurrection of Pernambuco\", revision 1370623843, § The war"
@@ -11573,6 +11579,12 @@
       "id": "allied-invasion-of-sicily",
       "kind": "event",
       "locator": "\"Allied invasion of Sicily\", revision 1376074492"
+    },
+    {
+      "dissent": false,
+      "id": "amboyna-massacre",
+      "kind": "event",
+      "locator": "\"Amboyna massacre\", revision 1382054348"
     },
     {
       "dissent": false,
@@ -12116,6 +12128,12 @@
     },
     {
       "dissent": false,
+      "id": "austro-turkish-war-1716-1718",
+      "kind": "event",
+      "locator": "\"Austro-Turkish War (1716–1718)\", revision 1382370034"
+    },
+    {
+      "dissent": false,
       "id": "avalon-peninsula-campaign",
       "kind": "event",
       "locator": "\"Avalon Peninsula campaign\", revision 1375088567"
@@ -12323,6 +12341,12 @@
       "id": "battle-of-acajutla",
       "kind": "event",
       "locator": "\"Battle of Acajutla\", revision 1370105848"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-acosta-nu",
+      "kind": "event",
+      "locator": "\"Battle of Acosta Ñu\", revision 1379470016"
     },
     {
       "dissent": false,
@@ -13124,6 +13148,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-cannanore-1506",
+      "kind": "event",
+      "locator": "\"Battle of Cannanore (1506)\", revision 1370436087"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-canton-1857",
       "kind": "event",
       "locator": "\"Battle of Canton (1857)\", revision 1370436104"
@@ -13724,6 +13754,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-dogali",
+      "kind": "event",
+      "locator": "\"Battle of Dogali\", revision 1379720106"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-dogger-bank-1696",
       "kind": "event",
       "locator": "\"Battle of Dogger Bank (1696)\", revision 1376984715"
@@ -14315,6 +14351,12 @@
       "id": "battle-of-grengam",
       "kind": "event",
       "locator": "\"Battle of Grengam\", revision 1370870767"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-gross-jagersdorf",
+      "kind": "event",
+      "locator": "\"Battle of Gross-Jägersdorf\", revision 1370442091"
     },
     {
       "dissent": false,
@@ -14927,6 +14969,12 @@
       "id": "battle-of-khotyn-1621",
       "kind": "event",
       "locator": "\"Battle of Khotyn (1621)\", revision 1377503409"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-khotyn-1673",
+      "kind": "event",
+      "locator": "\"Battle of Khotyn (1673)\", revision 1375563491"
     },
     {
       "dissent": false,
@@ -15710,6 +15758,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-merv",
+      "kind": "event",
+      "locator": "\"Battle of Merv\", revision 1376485780"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-mikatagahara",
       "kind": "event",
       "locator": "\"Battle of Mikatagahara\", revision 1378914052"
@@ -15833,6 +15887,12 @@
       "id": "battle-of-moquegua",
       "kind": "event",
       "locator": "\"Battle of Moquegua\", revision 1370450463"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-mortimer-s-cross",
+      "kind": "event",
+      "locator": "\"Battle of Mortimer's Cross\", revision 1379439993"
     },
     {
       "dissent": false,
@@ -16073,6 +16133,12 @@
       "id": "battle-of-north-anna",
       "kind": "event",
       "locator": "\"Battle of North Anna\", revision 1380714216"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-northampton-1460",
+      "kind": "event",
+      "locator": "\"Battle of Northampton (1460)\", revision 1370451883"
     },
     {
       "dissent": false,
@@ -17168,6 +17234,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sisak",
+      "kind": "event",
+      "locator": "\"Battle of Sisak\", revision 1370589465"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-sitka",
       "kind": "event",
       "locator": "\"Battle of Sitka\", revision 1376767363"
@@ -17201,6 +17273,12 @@
       "id": "battle-of-solferino",
       "kind": "event",
       "locator": "\"Battle of Solferino\", revision 1379026770"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-somosierra",
+      "kind": "event",
+      "locator": "\"Battle of Somosierra\", revision 1380642131"
     },
     {
       "dissent": false,
@@ -17930,6 +18008,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tondibi",
+      "kind": "event",
+      "locator": "\"Battle of Tondibi\", revision 1381056726"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-torata",
       "kind": "event",
       "locator": "\"Battle of Torata\", revision 1370591244"
@@ -18539,6 +18623,12 @@
       "id": "battle-of-york",
       "kind": "event",
       "locator": "\"Battle of York\", revision 1379529290"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-yungay",
+      "kind": "event",
+      "locator": "\"Battle of Yungay\", revision 1372630172"
     },
     {
       "dissent": false,
@@ -19922,6 +20012,12 @@
     },
     {
       "dissent": false,
+      "id": "conquest-of-melilla",
+      "kind": "event",
+      "locator": "\"Conquest of Melilla\", revision 1366195508"
+    },
+    {
+      "dissent": false,
       "id": "conquest-of-paraiba",
       "kind": "event",
       "locator": "\"Conquest of Paraíba\", revision 1370612312"
@@ -20033,6 +20129,12 @@
       "id": "convention-of-peking",
       "kind": "event",
       "locator": "\"Convention of Peking\", revision 1377776929"
+    },
+    {
+      "dissent": false,
+      "id": "convention-of-tientsin",
+      "kind": "event",
+      "locator": "\"Convention of Tientsin\", revision 1284299743"
     },
     {
       "dissent": false,
@@ -20972,6 +21074,12 @@
     },
     {
       "dissent": false,
+      "id": "fantastic-war",
+      "kind": "event",
+      "locator": "\"Fantastic War\", revision 1380908951"
+    },
+    {
+      "dissent": false,
       "id": "fashoda-incident",
       "kind": "event",
       "locator": "\"Fashoda Incident\", revision 1375541414"
@@ -21806,6 +21914,12 @@
     },
     {
       "dissent": false,
+      "id": "german-renaissance",
+      "kind": "event",
+      "locator": "\"German Renaissance\", revision 1359561249"
+    },
+    {
+      "dissent": false,
       "id": "german-revolution-of-1918-1919",
       "kind": "event",
       "locator": "\"German revolution of 1918–1919\", revision 1373097617: \"The German revolution of 1918–1919, also known as the November Revolution\""
@@ -21851,6 +21965,12 @@
       "id": "glorious-revolution",
       "kind": "event",
       "locator": "\"Glorious Revolution\", revision 1377775481"
+    },
+    {
+      "dissent": false,
+      "id": "glorious-revolution-spain",
+      "kind": "event",
+      "locator": "\"Glorious Revolution (Spain)\", revision 1373187440"
     },
     {
       "dissent": false,
@@ -24704,6 +24824,18 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-venetian-war-1463-1479",
+      "kind": "event",
+      "locator": "\"Ottoman–Venetian War (1463–1479)\", revision 1377985719"
+    },
+    {
+      "dissent": false,
+      "id": "ottoman-venetian-war-1499-1503",
+      "kind": "event",
+      "locator": "\"Ottoman–Venetian War (1499–1503)\", revision 1370701539"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-venetian-war-1537-1540",
       "kind": "event",
       "locator": "\"Ottoman–Venetian War (1537–1540)\", revision 1373751106"
@@ -26006,6 +26138,12 @@
     },
     {
       "dissent": false,
+      "id": "russo-swedish-war-1554-1557",
+      "kind": "event",
+      "locator": "\"Russo-Swedish War (1554–1557)\", revision 1370729285"
+    },
+    {
+      "dissent": false,
       "id": "russo-swedish-war-1741-1743",
       "kind": "event",
       "locator": "\"Russo-Swedish War (1741–1743)\", revision 1370729298"
@@ -26405,6 +26543,12 @@
       "id": "second-battle-of-seoul",
       "kind": "event",
       "locator": "\"Second Battle of Seoul\", revision 1370736593"
+    },
+    {
+      "dissent": false,
+      "id": "second-battle-of-st-albans",
+      "kind": "event",
+      "locator": "\"Second Battle of St Albans\", revision 1370736608"
     },
     {
       "dissent": false,
@@ -26930,6 +27074,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-belgrade-1521",
+      "kind": "event",
+      "locator": "\"Siege of Belgrade (1521)\", revision 1370739419"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-belgrade-1688",
       "kind": "event",
       "locator": "\"Siege of Belgrade (1688)\", revision 1375187508"
@@ -27452,6 +27602,18 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-koszeg",
+      "kind": "event",
+      "locator": "\"Siege of Kőszeg\", revision 1375078191"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-la-rochelle",
+      "kind": "event",
+      "locator": "\"Siege of La Rochelle\", revision 1381095963"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-la-rochelle-1572-1573",
       "kind": "event",
       "locator": "\"Siege of La Rochelle (1572–1573)\", revision 1370742729"
@@ -27632,6 +27794,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-metz-1870",
+      "kind": "event",
+      "locator": "\"Siege of Metz (1870)\", revision 1370743504"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-mezieres",
       "kind": "event",
       "locator": "\"Siege of Mézières\", revision 1369576514"
@@ -27785,6 +27953,12 @@
       "id": "siege-of-paris-1590",
       "kind": "event",
       "locator": "\"Siege of Paris (1590)\", revision 1370744312"
+    },
+    {
+      "dissent": false,
+      "id": "siege-of-paris-1870-1871",
+      "kind": "event",
+      "locator": "\"Siege of Paris (1870–1871)\", revision 1379158637"
     },
     {
       "dissent": false,
@@ -28100,6 +28274,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-turin",
+      "kind": "event",
+      "locator": "\"Siege of Turin\", revision 1382486443"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-turin-1640",
       "kind": "event",
       "locator": "\"Siege of Turin (1640)\", revision 1370746106"
@@ -28238,9 +28418,21 @@
     },
     {
       "dissent": false,
+      "id": "sino-japanese-friendship-and-trade-treaty",
+      "kind": "event",
+      "locator": "\"Sino-Japanese Friendship and Trade Treaty\", revision 1317774507"
+    },
+    {
+      "dissent": false,
       "id": "sino-nepalese-war",
       "kind": "event",
       "locator": "\"Sino-Nepalese War\", revision 1379584753"
+    },
+    {
+      "dissent": false,
+      "id": "sino-portuguese-treaty-of-peking",
+      "kind": "event",
+      "locator": "\"Sino-Portuguese Treaty of Peking\", revision 1382331031"
     },
     {
       "dissent": false,
@@ -28505,6 +28697,12 @@
       "id": "spanish-conquest-of-iberian-navarre",
       "kind": "event",
       "locator": "\"Spanish conquest of Iberian Navarre\", revision 1372121033"
+    },
+    {
+      "dissent": false,
+      "id": "spanish-conquest-of-oran-1509",
+      "kind": "event",
+      "locator": "\"Spanish conquest of Oran (1509)\", revision 1373999488"
     },
     {
       "dissent": false,
@@ -29102,6 +29300,12 @@
     },
     {
       "dissent": false,
+      "id": "thermidorian-reaction",
+      "kind": "event",
+      "locator": "\"Thermidorian Reaction\", revision 1379638691"
+    },
+    {
+      "dissent": false,
       "id": "third-anglo-burmese-war",
       "kind": "event",
       "locator": "\"Third Anglo-Burmese War\", revision 1370750284"
@@ -29207,6 +29411,12 @@
       "id": "third-treaty-of-prairie-du-chien",
       "kind": "event",
       "locator": "\"Third Treaty of Prairie du Chien\", revision 1376052683"
+    },
+    {
+      "dissent": false,
+      "id": "third-treaty-of-san-ildefonso",
+      "kind": "event",
+      "locator": "\"Third Treaty of San Ildefonso\", revision 1378545877"
     },
     {
       "dissent": false,
@@ -29459,6 +29669,12 @@
       "id": "treaty-of-allahabad",
       "kind": "event",
       "locator": "\"Treaty of Allahabad\", revision 1368931189"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-altranstadt-1706",
+      "kind": "event",
+      "locator": "\"Treaty of Altranstädt (1706)\", revision 1122293484"
     },
     {
       "dissent": false,
@@ -29852,6 +30068,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-hamedan",
+      "kind": "event",
+      "locator": "\"Treaty of Hamedan\", revision 1303319070"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-hampton-court-1562",
       "kind": "event",
       "locator": "\"Treaty of Hampton Court (1562)\", revision 1334224617"
@@ -30002,9 +30224,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-london-1867",
+      "kind": "event",
+      "locator": "\"Treaty of London (1867)\", revision 1357849639"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-london-q584617",
       "kind": "event",
       "locator": "\"Treaty of London (1913)\", revision 1359713953"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-lubeck",
+      "kind": "event",
+      "locator": "\"Treaty of Lübeck\", revision 1355481706"
     },
     {
       "dissent": false,
@@ -30341,6 +30575,12 @@
       "id": "treaty-of-tartu",
       "kind": "event",
       "locator": "\"Treaty of Tartu (Estonia–Russia)\", revision 1368812511"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-teschen",
+      "kind": "event",
+      "locator": "\"Treaty of Teschen\", revision 1376320721"
     },
     {
       "dissent": false,
@@ -31271,6 +31511,12 @@
       "id": "yamasee-war",
       "kind": "event",
       "locator": "\"Yamasee War\", revision 1376225881"
+    },
+    {
+      "dissent": false,
+      "id": "yangzhou-massacre",
+      "kind": "event",
+      "locator": "\"Yangzhou massacre\", revision 1382063777"
     },
     {
       "dissent": false,

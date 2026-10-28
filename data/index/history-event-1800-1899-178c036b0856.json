@@ -1292,6 +1292,15 @@
         }
       ]
     },
+    "battle-of-acosta-nu": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-adibo": {
       "from": "git",
       "versions": [
@@ -2300,6 +2309,15 @@
       ]
     },
     "battle-of-dervenakia": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "battle-of-dogali": {
       "from": "git",
       "versions": [
         {
@@ -4343,6 +4361,15 @@
         }
       ]
     },
+    "battle-of-somosierra": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-sopachuy": {
       "from": "git",
       "versions": [
@@ -5080,6 +5107,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "battle-of-yungay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -6044,6 +6080,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "convention-of-tientsin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -7312,6 +7357,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "glorious-revolution-spain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -10643,12 +10697,30 @@
         }
       ]
     },
+    "siege-of-metz-1870": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "siege-of-multan-1848-1849": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "siege-of-paris-1870-1871": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -10784,6 +10856,24 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "sino-japanese-friendship-and-trade-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "sino-portuguese-treaty-of-peking": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -11249,6 +11339,15 @@
       ]
     },
     "third-treaty-of-prairie-du-chien": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "third-treaty-of-san-ildefonso": {
       "from": "git",
       "versions": [
         {
@@ -11763,6 +11862,15 @@
       ]
     },
     "treaty-of-london-1839": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-london-1867": {
       "from": "git",
       "versions": [
         {
