@@ -11,7 +11,25 @@
         }
       ]
     },
+    "1825-miramichi-fire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "1827-honduran-coup-d-etat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "1833-treaty-of-chicago": {
       "from": "git",
       "versions": [
         {
@@ -44,6 +62,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "1842-slave-revolt-in-the-cherokee-nation": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3638,6 +3665,15 @@
         }
       ]
     },
+    "blue-revolution-venezuela": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "boer-wars": {
       "from": "git",
       "versions": [
@@ -4148,6 +4184,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "comanche-campaign": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5075,6 +5120,15 @@
         }
       ]
     },
+    "fourth-treaty-of-prairie-du-chien": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "franco-hova-wars": {
       "from": "git",
       "versions": [
@@ -5480,6 +5534,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "hualapai-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5898,6 +5961,15 @@
         }
       ]
     },
+    "lower-mississippi-valley-yellow-fever-epidemic-of-1878": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "mahdist-war": {
       "from": "git",
       "versions": [
@@ -5922,6 +5994,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "malespin-s-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -6289,6 +6370,15 @@
         }
       ]
     },
+    "osage-treaty-1825": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "ottoman-coups-of-1807-1808": {
       "from": "git",
       "versions": [
@@ -6529,6 +6619,15 @@
       ]
     },
     "peruvian-civil-war-of-1856-1858": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "peruvian-civil-war-of-1865": {
       "from": "git",
       "versions": [
         {
@@ -8248,6 +8347,15 @@
         }
       ]
     },
+    "third-treaty-of-prairie-du-chien": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "thousand-days-war": {
       "from": "git",
       "versions": [
@@ -8402,6 +8510,15 @@
         }
       ]
     },
+    "treaty-of-aigun": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-amiens": {
       "from": "git",
       "versions": [
@@ -8510,6 +8627,24 @@
         }
       ]
     },
+    "treaty-of-fort-clark": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-fort-industry": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-fort-jackson": {
       "from": "git",
       "versions": [
@@ -8529,6 +8664,15 @@
       ]
     },
     "treaty-of-fort-meigs": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-fort-wayne-1803": {
       "from": "git",
       "versions": [
         {
@@ -8600,6 +8744,24 @@
         }
       ]
     },
+    "treaty-of-indian-springs-1821": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-indian-springs-1825": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-kiel": {
       "from": "git",
       "versions": [
@@ -8618,6 +8780,15 @@
         }
       ]
     },
+    "treaty-of-luneville": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-medicine-creek": {
       "from": "git",
       "versions": [
@@ -8628,6 +8799,15 @@
       ]
     },
     "treaty-of-mendota": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-mississinewas": {
       "from": "git",
       "versions": [
         {
@@ -8660,6 +8840,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "treaty-of-nicolls-outpost": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -8737,6 +8926,15 @@
         }
       ]
     },
+    "treaty-of-ruby-valley-1863": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-saginaw": {
       "from": "git",
       "versions": [
@@ -8792,6 +8990,33 @@
       ]
     },
     "treaty-of-st-louis-1804": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-st-louis-1816": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-st-louis-1818": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-st-mary-s-1818": {
       "from": "git",
       "versions": [
         {
@@ -9302,6 +9527,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "yaqui-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

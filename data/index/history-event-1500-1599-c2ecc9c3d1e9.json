@@ -1655,6 +1655,15 @@
         }
       ]
     },
+    "bayano-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "bengal-mrauk-u-war-1512-1516": {
       "from": "git",
       "versions": [

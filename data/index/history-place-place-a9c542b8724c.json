@@ -206,6 +206,15 @@
         }
       ]
     },
+    "aigun": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "ain-dara-lebanon": {
       "from": "git",
       "versions": [
@@ -6438,6 +6447,15 @@
         }
       ]
     },
+    "indian-springs-texas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "indian-subcontinent": {
       "from": "git",
       "versions": [
@@ -6657,6 +6675,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "isthmus-of-panama": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -8572,6 +8599,15 @@
         }
       ]
     },
+    "luneville": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "lushunkou": {
       "from": "git",
       "versions": [
@@ -9307,6 +9343,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "memphis-tennessee": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -11636,6 +11681,15 @@
         }
       ]
     },
+    "portage-des-sioux-missouri": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "porto": {
       "from": "git",
       "versions": [
@@ -11868,6 +11922,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "prairie-du-chien-wisconsin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -14248,6 +14311,15 @@
         }
       ]
     },
+    "st-marys-ohio": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "st-simons-georgia": {
       "from": "git",
       "versions": [
@@ -15968,6 +16040,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "watertown-massachusetts": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

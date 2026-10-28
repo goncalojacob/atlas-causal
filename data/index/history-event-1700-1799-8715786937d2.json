@@ -83,6 +83,24 @@
         }
       ]
     },
+    "1796-boca-de-nigua-slave-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "abaco-slave-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "action-of-11-september-1778": {
       "from": "git",
       "versions": [
@@ -3227,6 +3245,15 @@
         }
       ]
     },
+    "mutiny-on-the-bounty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "mysorean-invasion-of-malabar": {
       "from": "git",
       "versions": [
@@ -3577,6 +3604,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "samba-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4568,6 +4604,15 @@
         }
       ]
     },
+    "treaty-of-friendship-and-alliance": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-fussen": {
       "from": "git",
       "versions": [
@@ -4599,6 +4644,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "treaty-of-hartford-1786": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4725,6 +4779,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-watertown": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

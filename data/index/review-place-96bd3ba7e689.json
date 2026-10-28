@@ -621,6 +621,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "aigun",
+      "kind": "place",
+      "names": [
+        "Aigun"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "ain-dara-lebanon",
@@ -1710,7 +1737,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 2,
       "id": "arizona",
       "kind": "place",
       "names": [
@@ -7197,7 +7224,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 3,
+      "degree": 4,
       "id": "chicago",
       "kind": "place",
       "names": [
@@ -11896,7 +11923,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 2,
+      "degree": 3,
       "id": "fort-wayne-indiana",
       "kind": "place",
       "names": [
@@ -14176,7 +14203,7 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 3,
       "id": "hartford-connecticut",
       "kind": "place",
       "names": [
@@ -15444,6 +15471,34 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 2,
+      "id": "indian-springs-texas",
+      "kind": "place",
+      "names": [
+        "Indian Springs",
+        "Indian Springs, Texas"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-14",
       "degree": 4,
       "id": "indian-subcontinent",
@@ -15991,6 +16046,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "isthmus-of-panama",
+      "kind": "place",
+      "names": [
+        "Isthmus of Panama",
+        "Istmo do Panamá"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -20147,7 +20230,7 @@
         }
       ],
       "created": "2026-09-16",
-      "degree": 7,
+      "degree": 8,
       "id": "london",
       "kind": "place",
       "names": [
@@ -20495,6 +20578,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "luneville",
+      "kind": "place",
+      "names": [
+        "Lunéville"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -22278,6 +22388,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "memphis-tennessee",
+      "kind": "place",
+      "names": [
+        "Memphis",
+        "Memphis, Tennessee"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -27030,7 +27168,7 @@
         }
       ],
       "created": "2026-09-23",
-      "degree": 8,
+      "degree": 9,
       "id": "peru-q419",
       "kind": "place",
       "names": [
@@ -27806,6 +27944,34 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "portage-des-sioux-missouri",
+      "kind": "place",
+      "names": [
+        "Portage Des Sioux",
+        "Portage Des Sioux, Missouri"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -28253,6 +28419,34 @@
         "status": "draft"
       },
       "revised": "2026-10-13",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 2,
+      "id": "prairie-du-chien-wisconsin",
+      "kind": "place",
+      "names": [
+        "Prairie du Chien",
+        "Prairie du Chien, Wisconsin"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {
@@ -33788,12 +33982,41 @@
         }
       ],
       "created": "2026-10-28",
-      "degree": 1,
+      "degree": 3,
       "id": "st-louis",
       "kind": "place",
       "names": [
         "St. Louis",
         "St. Louis (Missouri)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "st-marys-ohio",
+      "kind": "place",
+      "names": [
+        "St. Marys",
+        "St. Marys, Ohio",
+        "St. Marys (Ohio)"
       ],
       "origin": {
         "tool": "wikidata"
@@ -35086,7 +35309,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "texas",
       "kind": "place",
       "names": [
@@ -36671,7 +36894,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 27,
+      "degree": 30,
       "id": "united-states-q30",
       "kind": "place",
       "names": [
@@ -37123,7 +37346,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 8,
+      "degree": 9,
       "id": "venezuela-q717",
       "kind": "place",
       "names": [
@@ -37806,6 +38029,35 @@
       "kind": "place",
       "names": [
         "Waterloo Battlefield"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "watertown-massachusetts",
+      "kind": "place",
+      "names": [
+        "Watertown",
+        "Watertown, Massachusetts",
+        "Watertown (Massachusetts)"
       ],
       "origin": {
         "tool": "wikidata"

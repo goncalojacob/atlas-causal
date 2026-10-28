@@ -1826,15 +1826,33 @@
     },
     {
       "dissent": false,
+      "id": "1796-boca-de-nigua-slave-revolt",
+      "kind": "event",
+      "locator": "Q131807029"
+    },
+    {
+      "dissent": false,
       "id": "1812-1819-ottoman-plague-epidemic",
       "kind": "event",
       "locator": "Q96359686"
     },
     {
       "dissent": false,
+      "id": "1825-miramichi-fire",
+      "kind": "event",
+      "locator": "Q3115285"
+    },
+    {
+      "dissent": false,
       "id": "1827-honduran-coup-d-etat",
       "kind": "event",
       "locator": "Q17462627"
+    },
+    {
+      "dissent": false,
+      "id": "1833-treaty-of-chicago",
+      "kind": "event",
+      "locator": "Q87256769"
     },
     {
       "dissent": false,
@@ -1853,6 +1871,12 @@
       "id": "1839-coringa-cyclone",
       "kind": "event",
       "locator": "Q106920440"
+    },
+    {
+      "dissent": false,
+      "id": "1842-slave-revolt-in-the-cherokee-nation",
+      "kind": "event",
+      "locator": "Q4554596"
     },
     {
       "dissent": false,
@@ -2639,6 +2663,12 @@
       "id": "aarhus-convention",
       "kind": "event",
       "locator": "Q301336"
+    },
+    {
+      "dissent": false,
+      "id": "abaco-slave-revolt",
+      "kind": "event",
+      "locator": "Q30675438"
     },
     {
       "dissent": false,
@@ -8480,6 +8510,12 @@
     },
     {
       "dissent": false,
+      "id": "bayano-wars",
+      "kind": "event",
+      "locator": "Q21070659"
+    },
+    {
+      "dissent": false,
       "id": "beaver-wars",
       "kind": "event",
       "locator": "Q856216"
@@ -8615,6 +8651,12 @@
       "id": "blockade-of-zanzibar",
       "kind": "event",
       "locator": "Q134376352"
+    },
+    {
+      "dissent": false,
+      "id": "blue-revolution-venezuela",
+      "kind": "event",
+      "locator": "Q4929666"
     },
     {
       "dissent": false,
@@ -9539,6 +9581,12 @@
       "id": "colorado-war",
       "kind": "event",
       "locator": "Q2602070"
+    },
+    {
+      "dissent": false,
+      "id": "comanche-campaign",
+      "kind": "event",
+      "locator": "Q5150511"
     },
     {
       "dissent": false,
@@ -10976,6 +11024,12 @@
     },
     {
       "dissent": false,
+      "id": "fourth-treaty-of-prairie-du-chien",
+      "kind": "event",
+      "locator": "Q27989232"
+    },
+    {
+      "dissent": false,
       "id": "fourth-voyage-of-columbus",
       "kind": "event",
       "locator": "Q5793320"
@@ -11354,6 +11408,12 @@
     },
     {
       "dissent": false,
+      "id": "great-plague-of-london",
+      "kind": "event",
+      "locator": "Q917048"
+    },
+    {
+      "dissent": false,
       "id": "great-plague-of-marseille",
       "kind": "event",
       "locator": "Q1936002"
@@ -11627,6 +11687,12 @@
       "id": "house-bomb-attack-in-neiva",
       "kind": "event",
       "locator": "Q5710617"
+    },
+    {
+      "dissent": false,
+      "id": "hualapai-war",
+      "kind": "event",
+      "locator": "Q5925205"
     },
     {
       "dissent": false,
@@ -12644,6 +12710,12 @@
     },
     {
       "dissent": false,
+      "id": "lower-mississippi-valley-yellow-fever-epidemic-of-1878",
+      "kind": "event",
+      "locator": "Q106574817"
+    },
+    {
+      "dissent": false,
       "id": "lunenburg-campaign-1758",
       "kind": "event",
       "locator": "Q16212881"
@@ -12713,6 +12785,12 @@
       "id": "male-revolt",
       "kind": "event",
       "locator": "Q6745211"
+    },
+    {
+      "dissent": false,
+      "id": "malespin-s-war",
+      "kind": "event",
+      "locator": "Q117355480"
     },
     {
       "dissent": false,
@@ -13115,6 +13193,12 @@
       "id": "munster-rebellion",
       "kind": "event",
       "locator": "Q691882"
+    },
+    {
+      "dissent": false,
+      "id": "mutiny-on-the-bounty",
+      "kind": "event",
+      "locator": "Q749811"
     },
     {
       "dissent": false,
@@ -13658,6 +13742,12 @@
     },
     {
       "dissent": false,
+      "id": "osage-treaty-1825",
+      "kind": "event",
+      "locator": "Q7105525"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-campaign-against-hormuz",
       "kind": "event",
       "locator": "Q2935422"
@@ -14015,6 +14105,12 @@
       "id": "peruvian-civil-war-of-1856-1858",
       "kind": "event",
       "locator": "Q5887718"
+    },
+    {
+      "dissent": false,
+      "id": "peruvian-civil-war-of-1865",
+      "kind": "event",
+      "locator": "Q17633455"
     },
     {
       "dissent": false,
@@ -14969,6 +15065,12 @@
       "id": "salvadoran-civil-war",
       "kind": "event",
       "locator": "Q1783607"
+    },
+    {
+      "dissent": false,
+      "id": "samba-rebellion",
+      "kind": "event",
+      "locator": "Q18711650"
     },
     {
       "dissent": false,
@@ -17534,6 +17636,12 @@
     },
     {
       "dissent": false,
+      "id": "third-treaty-of-prairie-du-chien",
+      "kind": "event",
+      "locator": "Q27989231"
+    },
+    {
+      "dissent": false,
       "id": "thirty-years-war",
       "kind": "event",
       "locator": "Q2487"
@@ -17705,6 +17813,12 @@
       "id": "treaty-of-adrianople-1829",
       "kind": "event",
       "locator": "Q137847"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-aigun",
+      "kind": "event",
+      "locator": "Q618292"
     },
     {
       "dissent": false,
@@ -17888,9 +18002,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-fort-clark",
+      "kind": "event",
+      "locator": "Q7837052"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-fort-harmar",
       "kind": "event",
       "locator": "Q7837056"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-fort-industry",
+      "kind": "event",
+      "locator": "Q7837057"
     },
     {
       "dissent": false,
@@ -17930,6 +18056,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-fort-wayne-1803",
+      "kind": "event",
+      "locator": "Q3536792"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-fort-wayne-1809",
       "kind": "event",
       "locator": "Q7837065"
@@ -17939,6 +18071,12 @@
       "id": "treaty-of-frankfurt-1871",
       "kind": "event",
       "locator": "Q158021"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-friendship-and-alliance",
+      "kind": "event",
+      "locator": "Q7837073"
     },
     {
       "dissent": false,
@@ -17990,9 +18128,21 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-hartford-1638",
+      "kind": "event",
+      "locator": "Q27958272"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-hartford-1650",
       "kind": "event",
       "locator": "Q27958274"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-hartford-1786",
+      "kind": "event",
+      "locator": "Q27958275"
     },
     {
       "dissent": false,
@@ -18023,6 +18173,18 @@
       "id": "treaty-of-hue-1884",
       "kind": "event",
       "locator": "Q3536812"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-indian-springs-1821",
+      "kind": "event",
+      "locator": "Q28135633"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-indian-springs-1825",
+      "kind": "event",
+      "locator": "Q28433149"
     },
     {
       "dissent": false,
@@ -18104,6 +18266,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-luneville",
+      "kind": "event",
+      "locator": "Q156447"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-madrid-13-january-1750",
       "kind": "event",
       "locator": "Q1422396"
@@ -18125,6 +18293,12 @@
       "id": "treaty-of-mendota",
       "kind": "event",
       "locator": "Q7837151"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-mississinewas",
+      "kind": "event",
+      "locator": "Q7837152"
     },
     {
       "dissent": false,
@@ -18173,6 +18347,12 @@
       "id": "treaty-of-nice",
       "kind": "event",
       "locator": "Q208688"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-nicolls-outpost",
+      "kind": "event",
+      "locator": "Q54322416"
     },
     {
       "dissent": false,
@@ -18296,6 +18476,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-ruby-valley-1863",
+      "kind": "event",
+      "locator": "Q7837216"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-saginaw",
       "kind": "event",
       "locator": "Q1572601"
@@ -18365,6 +18551,24 @@
       "id": "treaty-of-st-louis-1804",
       "kind": "event",
       "locator": "Q28433157"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-st-louis-1816",
+      "kind": "event",
+      "locator": "Q28433158"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-st-louis-1818",
+      "kind": "event",
+      "locator": "Q28433160"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-st-mary-s-1818",
+      "kind": "event",
+      "locator": "Q17035574"
     },
     {
       "dissent": false,
@@ -18479,6 +18683,12 @@
       "id": "treaty-of-washington-1900",
       "kind": "event",
       "locator": "Q7837295"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-watertown",
+      "kind": "event",
+      "locator": "Q7837296"
     },
     {
       "dissent": false,
@@ -19211,6 +19421,12 @@
       "id": "yamasee-war",
       "kind": "event",
       "locator": "Q1520241"
+    },
+    {
+      "dissent": false,
+      "id": "yaqui-uprising",
+      "kind": "event",
+      "locator": "Q8049165"
     },
     {
       "dissent": false,
