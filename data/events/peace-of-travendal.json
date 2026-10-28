@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "peace-of-travendal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q701663",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Peace of Travendal",
+    "pt": "Tratado de Traventhal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q701663"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peace of Travendal\", revision 1377850504"
+    }
+  ],
+  "title": "Peace of Travendal",
+  "summary": "The English Wikipedia article \"Peace of Travendal\", at revision 1377850504, opens: \"The Peace of Travendal was a peace treaty concluded at the outset of the Great Northern War on 18 August 1700 between the Swedish Empire, Denmark–Norway and Holstein-Gottorp in Traventhal. Denmark had to return Holstein-Gottorp to its duke, a Swedish ally, and to leave the anti-Swedish alliance. The treaty was guaranteed by France, the Holy Roman Empire, the Dutch Republic, and the Kingdom of England.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q701663, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1700,
+    "end": 1700,
+    "date": "1700-08-18"
+  },
+  "place": "traventhal",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

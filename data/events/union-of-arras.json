@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "union-of-arras",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q700027",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Union of Arras",
+    "pt": "União de Atrecht"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q700027"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Union of Arras\", revision 1376565854"
+    }
+  ],
+  "title": "Union of Arras",
+  "summary": "The English Wikipedia article \"Union of Arras\", at revision 1376565854, opens: \"The Union of Arras was an alliance between the County of Artois, the County of Hainaut and the city of Douai in the Habsburg Netherlands in early 1579 during the Eighty Years' War. Dissatisfied with the religious policies of rebel leader Prince of Orange and the States General of the Netherlands, and especially the rise of the radical Calvinist Republic of Ghent since October 1577, they signed a declaration on 6 January 1579 about their intent to offer a vigorous defense of the Catholic religion against what they saw as encroachments by Calvinists in other provinces. These signatories would begin negotiations for a separate peace with the Spanish Crown, which resulted in the Treaty of Arras of 17 May 1579.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q700027, imported by tools/import/wikidata.mjs. The item's own description reads \"16th-century alliance of Netherlands provinces\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1579,
+    "end": 1579,
+    "date": "1579-01-06"
+  },
+  "place": "arras",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

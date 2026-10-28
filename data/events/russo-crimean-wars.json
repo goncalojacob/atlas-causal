@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "russo-crimean-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q923852",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Russo-Crimean Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q923852"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Crimean Wars\", revision 1366130231"
+    }
+  ],
+  "title": "Russo-Crimean Wars",
+  "summary": "The English Wikipedia article \"Russo-Crimean Wars\", at revision 1366130231, opens: \"The Russo-Crimean Wars were fought between the forces of the Tsardom of Russia and the Crimean Khanate during the 16th century over the region around the Volga River.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q923852, imported by tools/import/wikidata.mjs. The item's own description reads \"1570-1572 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1507,
+    "end": 1572
+  },
+  "place": "european-russia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

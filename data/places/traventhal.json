@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "traventhal",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q524748",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Traventhal",
+    "pt": "Traventhal"
+  },
+  "sources": [],
+  "names": [
+    "Traventhal"
+  ],
+  "where": {
+    "lon": 10.318888888889,
+    "lat": 53.898888888889,
+    "precision": "city",
+    "label": "Traventhal"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

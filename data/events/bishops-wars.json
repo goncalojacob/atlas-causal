@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "bishops-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q807843",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Bishops' Wars",
+    "pt": "Guerras dos Bispos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q807843"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Bishops' Wars\", revision 1377716466"
+    }
+  ],
+  "title": "Bishops' Wars",
+  "summary": "The English Wikipedia article \"Bishops' Wars\", at revision 1377716466, opens: \"The Bishops' Wars were two wars fought in 1639 and 1640 between Charles I and his Covenanter opponents in Scotland. They were the first of the Wars of the Three Kingdoms, which also include the First and Second English Civil Wars, the Irish Confederate Wars, and the 1650 to 1652 Anglo-Scottish War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q807843, imported by tools/import/wikidata.mjs. The item's own description reads \"17th-century religious conflicts in Britain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1639,
+    "end": 1640,
+    "date": "1639-03-21",
+    "endDate": "1640-09"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "wars-of-the-three-kingdoms"
+}

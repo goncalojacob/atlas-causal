@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "krakow",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q31487",
+  "sitelinks": {
+    "count": 154,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Kraków",
+    "pt": "Cracóvia"
+  },
+  "sources": [],
+  "names": [
+    "Kraków",
+    "Cracóvia"
+  ],
+  "where": {
+    "lon": 19.937222222222,
+    "lat": 50.061388888889,
+    "precision": "city",
+    "label": "Kraków"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-1818",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q649599",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of 1818",
+    "pt": "Tratado de 1818"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q649599"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of 1818\", revision 1382192536"
+    }
+  ],
+  "title": "Treaty of 1818",
+  "summary": "The English Wikipedia article \"Treaty of 1818\", at revision 1382192536, opens: \"The Convention respecting fisheries, boundary and the restoration of slaves, also known as the London Convention, Anglo-American Convention of 1818, Convention of 1818, or simply the Treaty of 1818, is an international treaty signed in 1818 between the United States and the United Kingdom. This treaty resolved long-standing boundary issues between the two signatories. The treaty allowed for joint occupation and settlement of the Oregon Country, known to the British and in Canadian history as the Columbia District of the Hudson's Bay Company, and including the southern portion of its sister district New Caledonia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q649599, imported by tools/import/wikidata.mjs. The item's own description reads \"formal, binding written agreement entered into by the United Kingdom and the United States in international law\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1818,
+    "end": 1818,
+    "date": "1818-10-20"
+  },
+  "place": "london",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

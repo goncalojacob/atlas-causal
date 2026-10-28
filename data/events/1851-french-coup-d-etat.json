@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1851-french-coup-d-etat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1315743",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1851 French coup d'état",
+    "pt": "Golpe de Estado na França em 1851"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1315743"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1851 French coup d'état\", revision 1381422858"
+    }
+  ],
+  "title": "1851 French coup d'état",
+  "summary": "The English Wikipedia article \"1851 French coup d'état\", at revision 1381422858, opens: \"Louis-Napoléon Bonaparte, at the time president of France under the Second Republic, staged a self-coup on 2 December 1851. Code-named Operation Rubicon and timed to coincide with the anniversary of his uncle Napoleon I's coronation and victory at Austerlitz, the coup dissolved the National Assembly, granted dictatorial powers to the president and preceded the establishment of the Second French Empire a year later.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1315743, imported by tools/import/wikidata.mjs. The item's own description reads \"coup d'état staged by Louis-Napoléon Bonaparte\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1851,
+    "end": 1851,
+    "date": "1851-12-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-gravelotte",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q697266",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Gravelotte",
+    "pt": "Batalha de Gravelotte"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q697266"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gravelotte\", revision 1370441985"
+    }
+  ],
+  "title": "Battle of Gravelotte",
+  "summary": "The English Wikipedia article \"Battle of Gravelotte\", at revision 1370441985, opens: \"The Battle of Gravelotte on 18 August 1870 was the largest battle of the Franco-Prussian War. Named after Gravelotte, a village in Lorraine, it was fought about 6 miles (9.7 km) west of Metz, where on the previous day, having intercepted the French army's retreat to the west at the Battle of Mars-la-Tour, the Prussians were now closing in to complete the destruction of the French forces.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q697266, imported by tools/import/wikidata.mjs. The item's own description reads \"1870 battle of the Franco-Prussian War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1870,
+    "date": "1870-08-18"
+  },
+  "place": "gravelotte",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "franco-prussian-war"
+}

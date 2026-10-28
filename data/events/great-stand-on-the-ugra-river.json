@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "great-stand-on-the-ugra-river",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q25628",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Great Stand on the Ugra River",
+    "pt": "Grande Stand no rio Ugra"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q25628"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Great Stand on the Ugra River\", revision 1370621842"
+    }
+  ],
+  "title": "Great Stand on the Ugra River",
+  "summary": "The English Wikipedia article \"Great Stand on the Ugra River\", at revision 1370621842, opens: \"The Great Stand on the Ugra River or the Standing on the Ugra River, also known as the Battle of the Ugra, was a standoff in 1480 on the banks of the Ugra River between the forces of Akhmat Khan of the Great Horde, and Grand Prince Ivan III of the Grand Duchy of Moscow.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q25628, imported by tools/import/wikidata.mjs. The item's own description reads \"standoff in 1480 between Muscovy and Great Horde\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1480,
+    "end": 1480
+  },
+  "place": "ugra-oka",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

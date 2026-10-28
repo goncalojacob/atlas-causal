@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "krakow-uprising",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q685372",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Kraków Uprising"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q685372"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Kraków Uprising\", revision 1370626178"
+    }
+  ],
+  "title": "Kraków Uprising",
+  "summary": "The English Wikipedia article \"Kraków Uprising\", at revision 1370626178, opens: \"The Kraków Uprising of 1846 was an attempt, led by Polish insurgents such as Jan Tyssowski and Edward Dembowski, to incite a fight for national independence. The uprising was centered on the city of Kraków, the capital of the small Free City of Cracow. It was directed at the powers that partitioned Poland, especially the nearby Austrian Empire. The uprising lasted about nine days and ended with an Austrian victory.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q685372, imported by tools/import/wikidata.mjs. The item's own description reads \"1846 rebellion\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1846,
+    "end": 1846,
+    "date": "1846-02-21",
+    "endDate": "1846-03-03"
+  },
+  "place": "krakow",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}
