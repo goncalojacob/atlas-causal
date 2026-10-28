@@ -31,31 +31,31 @@
       "to": 1599
     },
     {
-      "file": "index/attributes-1600-1699-83d95c0f8292.json",
+      "file": "index/attributes-1600-1699-8d7881c895dd.json",
       "from": 1600,
       "key": "1600-1699",
       "to": 1699
     },
     {
-      "file": "index/attributes-1700-1799-f2dcd8b50de1.json",
+      "file": "index/attributes-1700-1799-f30483eadb82.json",
       "from": 1700,
       "key": "1700-1799",
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-99bc94fa6a8a.json",
+      "file": "index/attributes-1800-1899-e764c4973f54.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
     },
     {
-      "file": "index/attributes-1900-1999-af5b22f48ee9.json",
+      "file": "index/attributes-1900-1999-21265d24f318.json",
       "from": 1900,
       "key": "1900-1999",
       "to": 1999
     },
     {
-      "file": "index/attributes-2000-2099-c3a669f2e880.json",
+      "file": "index/attributes-2000-2099-679f1dcd0c18.json",
       "from": 2000,
       "key": "2000-2099",
       "to": 2099
@@ -1025,7 +1025,7 @@
   "counts": {
     "actors": 2699,
     "edges": 1283,
-    "events": 3293,
+    "events": 3292,
     "narratives": 2,
     "offices": 11,
     "places": 1438,
@@ -1073,14 +1073,14 @@
     }
   ],
   "files": {
-    "citers": "index/citers-af7d8587a0de",
-    "core": "index/core-5c439eb28388.json",
-    "grounds": "index/grounds-24086d5265a8.json",
+    "citers": "index/citers-755e95d28640",
+    "core": "index/core-e4ba22222854.json",
+    "grounds": "index/grounds-8c83acfb4095.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-9eb7a67089b6.json",
-    "search": "index/search-fd5b93135887.json",
-    "sources": "index/sources-6946dea46499.json",
-    "territories": "index/territories-6b05bf70c9a0.json"
+    "review": "index/review-deef31f0d161.json",
+    "search": "index/search-4593176ad630.json",
+    "sources": "index/sources-d29cbcb86b2f.json",
+    "territories": "index/territories-284bc9e35290.json"
   },
   "historyShards": [
     {
@@ -1098,7 +1098,7 @@
       "to": 1599
     },
     {
-      "file": "index/history-event-1600-1699-39adcafbbc21.json",
+      "file": "index/history-event-1600-1699-2f031687f4c3.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "event",

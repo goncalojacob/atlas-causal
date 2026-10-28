@@ -188,36 +188,6 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
-      "created": "2026-10-28",
-      "id": "1689-boston-revolt",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts",
-          "end-unstated",
-          "span-from-title",
-          "summary-from-lead"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "1689 Boston revolt"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
       "category": "revolution",
       "cites": [
         "wikidata",
@@ -97644,12 +97614,6 @@
     },
     {
       "id": "1556-shaanxi-earthquake",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "1689-boston-revolt",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
