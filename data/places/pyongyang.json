@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "pyongyang",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q18808",
+  "sitelinks": {
+    "count": 176,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Pyongyang",
+    "pt": "Pyongyang"
+  },
+  "sources": [],
+  "names": [
+    "Pyongyang"
+  ],
+  "where": {
+    "lon": 125.7475,
+    "lat": 39.016666666666666,
+    "precision": "city",
+    "label": "Pyongyang"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

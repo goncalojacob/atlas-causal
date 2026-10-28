@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-samos",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3394869",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Samos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3394869"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Samos\", revision 1370588247"
+    }
+  ],
+  "title": "Battle of Samos",
+  "summary": "The English Wikipedia article \"Battle of Samos\", at revision 1370588247, opens: \"The Battle of Samos was a naval battle fought on August 5–17, 1824 off the Greek island of Samos during the Greek War of Independence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3394869, imported by tools/import/wikidata.mjs. The item's own description reads \"1824 naval battle of the Greek War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1824,
+    "end": 1824,
+    "date": "1824-08-17"
+  },
+  "place": "samos",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-hokuetsu",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q705629",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Hokuetsu",
+    "pt": "Batalha de Hokuetsu"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q705629"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Hokuetsu\", revision 1370443124"
+    }
+  ],
+  "title": "Battle of Hokuetsu",
+  "summary": "The English Wikipedia article \"Battle of Hokuetsu\", at revision 1370443124, opens: \"The Battle of Hokuetsu  took place during the Boshin War of the Meiji Restoration, which occurred in 1868 in the northwestern part of Japan, in the area of modern Niigata Prefecture.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q705629, imported by tools/import/wikidata.mjs. The item's own description reads \"1868 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1868,
+    "end": 1868,
+    "date": "1868-03-29"
+  },
+  "place": "nagaoka-niigata",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "boshin-war"
+}

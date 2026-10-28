@@ -3490,3 +3490,11 @@ Writer B filed it there because the planner's queue asked for it in item `2026-1
 ## Writer B, 2026-10-28: `battle-of-inyezane`, filed under `anglo-zulu-war` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-27-africa-089`, rank `child-of:anglo-zulu-war`. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-28: `siege-of-famagusta`, filed under `ottoman-venetian-war-1570-1573` with neither an actor nor a place
+
+Writer A filed it there because the planner's queue asked for it in item `2026-10-27-asia-219`, rank `child-of:ottoman-venetian-war-1570-1573`. Its span and its subject put it inside the umbrella.
+
+## Writer B, 2026-10-28: `treaty-of-alinagar`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-asia-214`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.

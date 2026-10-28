@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-pyongyang-1894",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q715791",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Pyongyang (1894)",
+    "pt": "Batalha de Pyongyang"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q715791"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Pyongyang (1894)\", revision 1370586840"
+    }
+  ],
+  "title": "Battle of Pyongyang (1894)",
+  "summary": "The English Wikipedia article \"Battle of Pyongyang (1894)\", at revision 1370586840, opens: \"The Battle of Pyongyang was the second major land battle of the First Sino-Japanese War. It took place on 15 September 1894 in Pyongyang, Korea between the forces of Meiji Japan and Qing China. It is sometimes referred to archaically in Western sources as the \"Battle of Ping-yang\".\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q715791, imported by tools/import/wikidata.mjs. The item's own description reads \"1894 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1894,
+    "end": 1894,
+    "date": "1894-09-15"
+  },
+  "place": "pyongyang",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-sino-japanese-war"
+}

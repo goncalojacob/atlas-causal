@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "first-siege-of-missolonghi",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q3394840",
+  "sitelinks": {
+    "count": 8,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "First siege of Missolonghi"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3394840"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First siege of Missolonghi\", revision 1370619796"
+    }
+  ],
+  "title": "First siege of Missolonghi",
+  "summary": "The English Wikipedia article \"First siege of Missolonghi\", at revision 1370619796, opens: \"The first siege of Missolonghi was an attempt by Ottoman forces to capture the strategically located port town of Missolonghi during the early stages of the Greek War of Independence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3394840, imported by tools/import/wikidata.mjs. The item's own description reads \"1822 battle of the Greek War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1822,
+    "end": 1822,
+    "date": "1822-10-25",
+    "endDate": "1822-12-31"
+  },
+  "place": "missolonghi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "greek-war-of-independence"
+}

@@ -23049,6 +23049,660 @@
         "place": null
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-090",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q16626788 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q16626788: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-27-africa-092",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "action-of-31-october-1803",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-094",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "action-of-7-july-1804",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-096",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q109312744 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q109312744: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-27-africa-098",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q111207506 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q111207506: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-27-asia-209",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1259178: none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-asia-211",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q139871: none of its classes (Q11371169) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-asia-213",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4940602: none of its classes (Q1516910) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-asia-215",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q13652394: none of its classes (Q751967, Q3827292) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-asia-217",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-the-yalu-river-1894",
+        "edges": [],
+        "place": "korea-bay"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-219",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-famagusta",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-221",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-jiuliancheng",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-223",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "morea-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-225",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-koshu-katsunuma",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-227",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-dragasani",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-229",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-peta",
+        "edges": [],
+        "place": "arta-greece"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-231",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "siege-of-tripolitsa",
+        "edges": [],
+        "place": "tripoli-greece"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-233",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-phaleron",
+        "edges": [],
+        "place": "palaio-faliro"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-235",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gerontas",
+        "edges": [],
+        "place": "leros"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-237",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q700883: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-asia-239",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-sphacteria-1825",
+        "edges": [],
+        "place": "sphacteria"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-241",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "first-siege-of-missolonghi",
+        "edges": [],
+        "place": "missolonghi"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-243",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-samos",
+        "edges": [],
+        "place": "samos"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-245",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4087414: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-asia-247",
+      "writer": "A",
+      "fired": "2026-10-28T13:47Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-valtetsi",
+        "edges": [],
+        "place": "valtetsi-village"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-091",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q25633270 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q25633270: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-27-africa-093",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "action-of-2-june-1803",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-095",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q3407552 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q3407552: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-27-africa-097",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q109312794 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q109312794: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-27-asia-208",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q623391: none of its classes (Q864737) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-asia-210",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q278815: none of its classes (Q93288) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-asia-212",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3591486: none of its classes (Q7692360, Q3541302, Q106797758, Q17992244) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-asia-214",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-alinagar",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-216",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q130711778: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-asia-218",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-pyongyang-1894",
+        "edges": [],
+        "place": "pyongyang"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-220",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gravia-inn",
+        "edges": [],
+        "place": "gravia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-222",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "third-siege-of-missolonghi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-224",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q715559: none of its classes (Q3769366) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-asia-226",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-yingkou",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-228",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-arachova",
+        "edges": [],
+        "place": "arachova"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-230",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-miyako-bay",
+        "edges": [],
+        "place": "miyako-bay"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-232",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-hokuetsu",
+        "edges": [],
+        "place": "nagaoka-niigata"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-234",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-karpenisi",
+        "edges": [],
+        "place": "karpenisi"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-236",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "burning-of-the-ottoman-flagship-off-chios",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-238",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-dervenakia",
+        "edges": [],
+        "place": "dervenakia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-240",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "kasos-massacre",
+        "edges": [],
+        "place": "kasos"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-242",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-maniaki",
+        "edges": [],
+        "place": "maniaki-messenia"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-244",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "ottoman-egyptian-invasion-of-mani",
+        "edges": [],
+        "place": "mani-peninsula"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-asia-246",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2617147: none of its classes (Q3769366) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-asia-248",
+      "writer": "B",
+      "fired": "2026-10-28T13:54Z",
+      "status": "written",
+      "written": {
+        "event": "naousa-massacre",
+        "edges": [],
+        "place": "naousa-imathia"
+      },
+      "refusals": []
     }
   ]
 }

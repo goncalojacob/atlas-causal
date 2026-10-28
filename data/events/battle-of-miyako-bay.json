@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-miyako-bay",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q2890606",
+  "wikipedia": {
+    "en": "Battle of Miyako Bay",
+    "pt": "Batalha da Baía Miyako"
+  },
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-28"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2890606"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Miyako Bay\", revision 1370269563"
+    }
+  ],
+  "title": "Battle of Miyako Bay",
+  "summary": "The English Wikipedia article \"Battle of Miyako Bay\", at revision 1370269563, opens: \"The Battle of Miyako Bay  was a naval action on 6 May 1869, in which samurai loyalists of the former Tokugawa shogunate under the flag of the newly formed Republic of Ezo failed to take over the Kōtetsu, the flagship of the Imperial forces of the new Meiji government. It was part of the overall Battle of Hakodate at the end of the Boshin War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2890606, imported by tools/import/wikidata.mjs. The item's own description reads \"naval action on 6 May 1869, part of the overall Battle of Hakodate at the end of the Boshin War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1869,
+    "end": 1869,
+    "date": "1869-05-06"
+  },
+  "place": "miyako-bay",
+  "region": null,
+  "regionNote": null,
+  "parent": "boshin-war",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-jiuliancheng",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1209808",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Jiuliancheng"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1209808"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Jiuliancheng\", revision 1370662585"
+    }
+  ],
+  "title": "Battle of Jiuliancheng",
+  "summary": "The English Wikipedia article \"Battle of Jiuliancheng\", at revision 1370662585, opens: \"The Battle of Jiuliancheng (九連城之戰) was a land battle of the First Sino-Japanese War between the forces of Meiji Japan and Qing China. It is sometimes referred to as the Battle of the Yalu River , thus creating confusion with the previous naval conflict of the same name of 17 September, and the subsequent naval and ground battles of the Russo-Japanese War, with the same name and occurring at much the same location.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1209808, imported by tools/import/wikidata.mjs. The item's own description reads \"1894 battle of the First Sino-Japanese War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1894,
+    "end": 1894,
+    "date": "1894-10-24"
+  },
+  "place": "yalu-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-sino-japanese-war"
+}
