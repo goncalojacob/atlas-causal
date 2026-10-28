@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sand-creek-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2164344",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Sand Creek massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2164344"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sand Creek massacre\", revision 1381340588"
+    }
+  ],
+  "title": "Sand Creek massacre",
+  "summary": "The English Wikipedia article \"Sand Creek massacre\", at revision 1381340588, opens: \"The Sand Creek massacre was a massacre of Cheyenne and Arapaho people by the U.S. Army in the American Indian Wars that occurred on November 29, 1864, when a 675-man force of the Third Colorado Cavalry under the command of U.S. Volunteers Colonel John Chivington attacked a village of Cheyenne and Arapaho people in southeastern Colorado Territory, killing and mutilating an estimated 70 to over 600 Native American people. Chivington claimed 500 to 600 warriors were killed. However, most sources estimate around 150 people were killed, about two-thirds of whom were women and children. The location has been designated the Sand Creek Massacre National Historic Site and is administered by the National Park Service. The massacre is considered part of a series of events known as the Colorado Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2164344, imported by tools/import/wikidata.mjs. The item's own description reads \"massacre of a village of Cheyenne and Arapaho people in the American Indian Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-11-29"
+  },
+  "place": "colorado",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "colorado-war"
+}

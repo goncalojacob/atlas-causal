@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "hadiach",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q268638",
+  "sitelinks": {
+    "count": 49,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Hadiach",
+    "pt": "Hadiatch"
+  },
+  "sources": [],
+  "names": [
+    "Hadiach",
+    "Hadiatch"
+  ],
+  "where": {
+    "lon": 34,
+    "lat": 50.366666666667,
+    "precision": "city",
+    "label": "Hadiach"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

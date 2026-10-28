@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "anglo-burmese-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2248139",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Anglo-Burmese Wars",
+    "pt": "Guerras anglo-birmanesas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2248139"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Burmese Wars\", revision 1374990479"
+    }
+  ],
+  "title": "Anglo-Burmese Wars",
+  "summary": "The English Wikipedia article \"Anglo-Burmese Wars\", at revision 1374990479, opens: \"The Anglo-Burmese Wars, also known as the Indo-Burmese Wars, were an armed conflict between two expanding empires, the British Empire and the Konbaung dynasty, that became British Indian Empire's most expensive and longest war, costing 5–13 million pounds sterling and spanning over 60 years. There were three of these wars between 1824 and 1885.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2248139, imported by tools/import/wikidata.mjs. The item's own description reads \"three wars fought between the UK and Burma\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1824,
+    "end": 1886
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

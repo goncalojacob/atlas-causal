@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "veracruz-city",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q173270",
+  "sitelinks": {
+    "count": 79,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Veracruz (city)",
+    "pt": "Veracruz (cidade)"
+  },
+  "sources": [],
+  "names": [
+    "Veracruz",
+    "Veracruz (city)",
+    "Veracruz (cidade)"
+  ],
+  "where": {
+    "lon": -96.153333333333,
+    "lat": 19.190277777778,
+    "precision": "city",
+    "label": "Veracruz (city)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-camaron",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q399224",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Camarón",
+    "pt": "Batalha de Camarón"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q399224"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Camarón\", revision 1370435969"
+    }
+  ],
+  "title": "Battle of Camarón",
+  "summary": "The English Wikipedia article \"Battle of Camarón\", at revision 1370435969, opens: \"The Battle of Camarón was a last stand engagement fought on 30 April 1863 between the French Foreign Legion and the Mexican Army, during the Second French intervention in Mexico (1861–1867). A small French detachment of 65 men, led by Captain Jean Danjou, was escorting a supply convoy when it was surrounded near the village of Camarón de Tejeda in Veracruz by a force of around 2,000 Mexican troops. Refusing repeated calls to surrender, the legionnaires made a determined defensive stand at the Hacienda Camarón, holding out for nearly eleven hours until they were either killed, wounded, or captured.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q399224, imported by tools/import/wikidata.mjs. The item's own description reads \"1863 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1863,
+    "end": 1863,
+    "date": "1863-04-30"
+  },
+  "place": "mexico-q96",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-french-intervention-in-mexico"
+}

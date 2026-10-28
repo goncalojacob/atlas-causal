@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "london-conference-of-1832",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q625717",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "London Conference of 1832",
+    "pt": "Conferência de Londres de 1832"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q625717"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"London Conference of 1832\", revision 1365600129"
+    }
+  ],
+  "title": "London Conference of 1832",
+  "summary": "The English Wikipedia article \"London Conference of 1832\", at revision 1365600129, opens: \"The London Conference of 1832 was an international conference convened to establish a stable government in Greece. Negotiations among the three Great Powers resulted in the establishment of the Kingdom of Greece under a Bavarian prince. The decisions were ratified in the Treaty of Constantinople later that year. The treaty followed the Akkerman Convention which had previously recognized another territorial change in the Balkans, the suzerainty of the Principality of Serbia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q625717, imported by tools/import/wikidata.mjs. The item's own description reads \"1832 international conference to establish the Kingdom of Greece\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1832,
+    "end": 1832
+  },
+  "place": "london",
+  "region": null,
+  "regionNote": null,
+  "category": "other",
+  "actors": []
+}

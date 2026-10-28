@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-solferino",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q324916",
+  "sitelinks": {
+    "count": 40,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Solferino",
+    "pt": "Batalha de Solferino"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q324916"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Solferino\", revision 1379026770"
+    }
+  ],
+  "title": "Battle of Solferino",
+  "summary": "The English Wikipedia article \"Battle of Solferino\", at revision 1379026770, opens: \"The Battle of Solferino on 24 June 1859 was the climactic battle of the Second Italian War of Independence and resulted in the victory of the allied French army under Napoleon III and the Piedmont-Sardinian army under Victor Emmanuel II against the Austrian army under Emperor Franz Joseph I. It was the last major battle in world history in which all the armies were under the personal command of their monarchs. There were approximately 300,000 soldiers on both sides in the most important battle, the largest since the Battle of Leipzig in 1813. The number of soldiers present was about 130,000 Austrian troops and a combined total of 140,000 French and allied Piedmontese troops, but not all were actually involved in the battle. After the battle, the Austrian emperor stopped directly commanding his army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q324916, imported by tools/import/wikidata.mjs. The item's own description reads \"1859 major battle of the Second Italian War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1859,
+    "end": 1859,
+    "date": "1859-06-24"
+  },
+  "place": "solferino",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-italian-war-of-independence"
+}

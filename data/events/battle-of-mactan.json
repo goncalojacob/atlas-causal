@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-mactan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2091449",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Mactan",
+    "pt": "Batalha de Mactán"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2091449"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mactan\", revision 1376643878"
+    }
+  ],
+  "title": "Battle of Mactan",
+  "summary": "The English Wikipedia article \"Battle of Mactan\", at revision 1376643878, opens: \"The Battle of Mactan was fought on a beach in Mactan Island between Spanish forces led by the Portuguese explorer Ferdinand Magellan, along with local allies, and Lapulapu, a chieftain of the island, on the early morning of April 27, 1521. Magellan, a Portuguese-born commander serving the Spanish Empire who led an expedition that ultimately circumnavigated the world for the first time, commanded a small Spanish contingent in an effort to subdue Mactan under the Spanish crown. The sheer number of Lapulapu's forces, compounded with issues associated with the location and the armor, ultimately resulted in a disastrous defeat for the Europeans and the death of Magellan. Surviving members of Magellan's crew continued the expedition under the command of Juan Sebastian de Elcano, who completed the journey in September 1522.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2091449, imported by tools/import/wikidata.mjs. The item's own description reads \"1521 first native resistance against the Spanish colonisation in the Philippines\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1521,
+    "end": 1521,
+    "date": "1521-04-27"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

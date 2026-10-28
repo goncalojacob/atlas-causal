@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "chios-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1144988",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Chios massacre"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1144988"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Chios massacre\", revision 1381881955"
+    }
+  ],
+  "title": "Chios massacre",
+  "summary": "The English Wikipedia article \"Chios massacre\", at revision 1381881955, opens: \"The Chios massacre was a catastrophe that resulted in the death, enslavement, and flight of about four-fifths of the total population of Greeks on the island of Chios by Ottoman troops during the Greek War of Independence in 1822. It is estimated that up to 100,000 people were killed or enslaved during the massacre, while up to 20,000 escaped as refugees. Greeks from neighboring islands had arrived on Chios and encouraged the Chians to join their revolt. In response, Ottoman troops landed on the island and killed thousands. The massacre of Christians provoked outrage across the Western world and led to increasing support for the Greek cause worldwide.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1144988, imported by tools/import/wikidata.mjs. The item's own description reads \"Slaughter of tens of thousands of Greeks on the island of Chios by Ottoman troops during the Greek War of Independence in 1822\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1822,
+    "end": 1822,
+    "date": "1822-04",
+    "endDate": "1822-08"
+  },
+  "place": "chios",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

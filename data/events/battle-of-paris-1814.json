@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-paris-1814",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q780921",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Paris (1814)",
+    "pt": "Batalha de Paris"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q780921"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Paris (1814)\", revision 1381751473"
+    }
+  ],
+  "title": "Battle of Paris (1814)",
+  "summary": "The English Wikipedia article \"Battle of Paris (1814)\", at revision 1381751473, opens: \"The Battle of Paris or the Storming of Paris saw the Allied forces of Russia, Austria, Prussia, and Württemberg attack Paris defended by troops of the First French Empire under Joseph Bonaparte. The French soldiers put up a stout resistance at the capital's eastern suburbs on 30 March but were steadily driven back by the overwhelmingly superior Allied forces. Faced with a hopeless situation, Marshals Auguste de Marmont and Édouard Mortier agreed to a ceasefire with the Allies in the late afternoon. The French evacuated Paris on 31 March according to the terms of the convention reached with the Allied leaders Tsar Alexander I of Russia, King Frederick William III of Prussia, and Austrian Field Marshal Karl Philipp, Prince of Schwarzenberg. This defeat marked the end of the War of the Sixth Coalition and soon forced Emperor Napoleon to abdicate and go into exile.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q780921, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 battle during the War of the Sixth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-03-30",
+    "endDate": "1814-03-31"
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

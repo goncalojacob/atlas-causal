@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-vienna-1738",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q699271",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Vienna (1738)",
+    "pt": "Tratado de Viena (1738)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q699271"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Vienna (1738)\", revision 1368931545"
+    }
+  ],
+  "title": "Treaty of Vienna (1738)",
+  "summary": "The English Wikipedia article \"Treaty of Vienna (1738)\", at revision 1368931545, opens: \"The Treaty of Vienna or Peace of Vienna of 1738 ended the War of the Polish Succession. By the terms of the treaty, Stanisław Leszczyński renounced his claim on the Polish throne and recognized Augustus III, Duke of Saxony. As compensation he received instead the duchies of Lorraine and Bar, which were to pass to his daughter, Maria, the wife of King Louis XV of France, upon his death. Stanisław died in 1766 and his daughter in 1768.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q699271, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty of 1738\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1738,
+    "end": 1738,
+    "date": "1738-11-18"
+  },
+  "place": "vienna",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

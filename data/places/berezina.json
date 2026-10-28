@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "berezina",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q207927",
+  "sitelinks": {
+    "count": 50,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Berezina",
+    "pt": "Rio Berezina"
+  },
+  "sources": [],
+  "names": [
+    "Berezina",
+    "Rio Berezina"
+  ],
+  "where": {
+    "lon": 27.75559161111111,
+    "lat": 54.896084305555554,
+    "precision": "region",
+    "label": "Berezina"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

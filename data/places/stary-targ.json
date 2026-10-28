@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "stary-targ",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q651496",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Stary Targ"
+  },
+  "sources": [],
+  "names": [
+    "Stary Targ"
+  ],
+  "where": {
+    "lon": 19.17003,
+    "lat": 53.92335,
+    "precision": "city",
+    "label": "Stary Targ"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

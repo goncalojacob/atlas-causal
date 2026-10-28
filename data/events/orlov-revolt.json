@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "orlov-revolt",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q783310",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Orlov revolt"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q783310"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Orlov revolt\", revision 1376372938"
+    }
+  ],
+  "title": "Orlov revolt",
+  "summary": "The English Wikipedia article \"Orlov revolt\", at revision 1376372938, opens: \"The Orlov revolt was a Greek uprising in the Peloponnese and later also in Crete that broke out in February 1770, following the arrival of Russian Admiral Alexey Orlov, commander of the Imperial Russian Navy during the Russo-Turkish War (1768–1774), at the Mani Peninsula. The revolt, a major precursor to the Greek War of Independence, was part of Catherine the Great's so-called \"Greek Plan\" and was eventually suppressed by the Ottomans by June 1771.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q783310, imported by tools/import/wikidata.mjs. The item's own description reads \"Greek anti-Ottoman uprising in 1770\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1770,
+    "end": 1771,
+    "date": "1770-02",
+    "endDate": "1771-06-17"
+  },
+  "place": "peloponnese",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

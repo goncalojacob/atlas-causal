@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-germantown",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q523857",
+  "wikipedia": {
+    "en": "Battle of Germantown",
+    "pt": "Batalha de Germantown"
+  },
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-28"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q523857"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Germantown\", revision 1382125951"
+    }
+  ],
+  "title": "Battle of Germantown",
+  "summary": "The English Wikipedia article \"Battle of Germantown\", at revision 1382125951, opens: \"The Battle of Germantown was a major engagement in the Philadelphia campaign of the American Revolutionary War. It was fought on October 4, 1777, at Germantown, Pennsylvania, between the British Army led by General Sir William Howe and the American Continental Army under General George Washington.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q523857, imported by tools/import/wikidata.mjs. The item's own description reads \"October 1777 battle during the American Revolutionary War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1777,
+    "end": 1777,
+    "date": "1777-10-04"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "american-revolutionary-war",
+  "category": "war",
+  "actors": []
+}

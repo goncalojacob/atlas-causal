@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "revolutions-of-1848-in-the-austrian-empire",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q690959",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Revolutions of 1848 in the Austrian Empire",
+    "pt": "Revoluções de 1848 no Império Austríaco"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q690959"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Revolutions of 1848 in the Austrian Empire\", revision 1374511059"
+    }
+  ],
+  "title": "Revolutions of 1848 in the Austrian Empire",
+  "summary": "The English Wikipedia article \"Revolutions of 1848 in the Austrian Empire\", at revision 1374511059, opens: \"The revolutions of 1848 in the Austrian Empire took place from March 1848 to November 1849. Much of the revolutionary activity had a nationalist character: the Austrian Empire, ruled from Vienna, included ethnic Germans, Hungarians, Poles, Bohemians (Czechs), Ruthenians (Ukrainians), Slovenes, Slovaks, Romanians, Croats, Italians, and Serbs, all of whom attempted in the course of the revolution to achieve one of autonomy, independence, or hegemony over other nationalities. The nationalist picture was further complicated by the simultaneous events in the German states, which moved toward greater German national unity.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q690959, imported by tools/import/wikidata.mjs. The item's own description reads \"bourgeois-democratic motivated revolutions\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-03-01",
+    "endDate": "1848-11"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": []
+}

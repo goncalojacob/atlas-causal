@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-miyajima",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1064989",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Miyajima"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1064989"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Miyajima\", revision 1375617712"
+    }
+  ],
+  "title": "Battle of Miyajima",
+  "summary": "The English Wikipedia article \"Battle of Miyajima\", at revision 1375617712, opens: \"The 1555 Battle of Miyajima  was the only battle to be fought on the sacred island of Miyajima; the entire island is considered to be a Shinto shrine, and no birth or death is allowed on the island. Extensive purification rituals took place after the battle, to cleanse the shrine and the island of the pollution of death.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1064989, imported by tools/import/wikidata.mjs. The item's own description reads \"1555 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1555,
+    "end": 1555,
+    "date": "1555-10-16"
+  },
+  "place": "itsukushima",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

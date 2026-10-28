@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "cretan-revolt-1866-1869",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2668235",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Cretan revolt (1866–1869)",
+    "pt": "Revolta de Creta de 1866-1869"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2668235"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Cretan revolt (1866–1869)\", revision 1378470555"
+    }
+  ],
+  "title": "Cretan revolt (1866–1869)",
+  "summary": "The English Wikipedia article \"Cretan revolt (1866–1869)\", at revision 1378470555, opens: \"The Cretan revolt of 1866–1869 or Great Cretan Revolution was a three-year uprising in Crete against Ottoman rule, the third and largest in a series of Cretan revolts between the end of the Greek War of Independence in 1830 and the establishment of the independent Cretan State in 1898.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2668235, imported by tools/import/wikidata.mjs. The item's own description reads \"uprising in Crete against Ottoman rule (1866–1869)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1866,
+    "end": 1869,
+    "date": "1866-08-21",
+    "endDate": "1869-01-20"
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

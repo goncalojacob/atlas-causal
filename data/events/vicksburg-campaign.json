@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "vicksburg-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q862443",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Vicksburg campaign",
+    "pt": "Campanha de Vicksburg"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q862443"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Vicksburg campaign\", revision 1380710760"
+    }
+  ],
+  "title": "Vicksburg campaign",
+  "summary": "The English Wikipedia article \"Vicksburg campaign\", at revision 1380710760, opens: \"The Vicksburg campaign was a series of maneuvers and battles in the Western Theater of the American Civil War directed against Vicksburg, Mississippi, a fortress city that dominated the last Confederate-controlled section of the Mississippi River. The Union Army of the Tennessee under Major General Ulysses S. Grant gained control of the river by capturing this stronghold and defeating Lieutenant General John C. Pemberton's forces stationed there.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q862443, imported by tools/import/wikidata.mjs. The item's own description reads \"military campaign during the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1863,
+    "date": "1862-12-29",
+    "endDate": "1863-07-04"
+  },
+  "place": "vicksburg-mississippi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

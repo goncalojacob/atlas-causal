@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tumu-crisis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1196236",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Tumu Crisis",
+    "pt": "Crise Tumu"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1196236"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tumu Crisis\", revision 1374653708"
+    }
+  ],
+  "title": "Tumu Crisis",
+  "summary": "The English Wikipedia article \"Tumu Crisis\", at revision 1374653708, opens: \"The Tumu Crisis, also known as the Crisis of the Tumu Fortress, or the Jisi Incident, was a border conflict between the Oirat Mongols and the Ming dynasty of China. In July 1449, Esen Taishi, leader of the Oirat Mongols, launched a large-scale, three-pronged invasion of China. Despite having capable generals, Emperor Yingzong of Ming, under the influence of eunuch Wang Zhen who dominated the Ming court at the time, made the decision to personally lead his armies into battle against Esen. On 1 September, the Ming army suffered a crushing defeat at the hands of the much weaker Mongols, and the Emperor was captured. This defeat was one of the biggest military failures in the Ming dynasty's three centuries of existence, and it was largely attributed to the poor leadership of their army.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1196236, imported by tools/import/wikidata.mjs. The item's own description reads \"1449 conflict between the Oirats and the Chinese Ming dynasty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1449,
+    "end": 1449,
+    "date": "1449-09-01"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

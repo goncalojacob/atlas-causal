@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "nancy-france",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q40898",
+  "sitelinks": {
+    "count": 109,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Nancy, France",
+    "pt": "Nancy"
+  },
+  "sources": [],
+  "names": [
+    "Nancy",
+    "Nancy, France"
+  ],
+  "where": {
+    "lon": 6.1836111111111,
+    "lat": 48.692777777778,
+    "precision": "city",
+    "label": "Nancy, France"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

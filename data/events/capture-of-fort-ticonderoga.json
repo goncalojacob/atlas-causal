@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "capture-of-fort-ticonderoga",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1546173",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Capture of Fort Ticonderoga"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1546173"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Fort Ticonderoga\", revision 1381636729"
+    }
+  ],
+  "title": "Capture of Fort Ticonderoga",
+  "summary": "The English Wikipedia article \"Capture of Fort Ticonderoga\", at revision 1381636729, opens: \"The capture of Fort Ticonderoga occurred during the American Revolutionary War on May 10, 1775, when a small force of Green Mountain Boys led by Ethan Allen and Colonel Benedict Arnold surprised and captured the fort's small British garrison. The cannons and other armaments at Fort Ticonderoga were later transported to Boston by Colonel Henry Knox in the noble train of artillery and used to fortify Dorchester Heights and break the standoff at the siege of Boston.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1546173, imported by tools/import/wikidata.mjs. The item's own description reads \"battle during the American Revolutionary War on May 10, 1775\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1775,
+    "end": 1775,
+    "date": "1775-05-10"
+  },
+  "place": "ticonderoga-new-york",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-revolutionary-war"
+}

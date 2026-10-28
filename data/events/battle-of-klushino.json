@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-klushino",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q932228",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Klushino",
+    "pt": "Batalha de Klushino"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q932228"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Klushino\", revision 1371962318"
+    }
+  ],
+  "title": "Battle of Klushino",
+  "summary": "The English Wikipedia article \"Battle of Klushino\", at revision 1371962318, opens: \"The Battle of Klushino, or the Battle of Kłuszyn, was fought on 4 July 1610, between forces of the Polish–Lithuanian Commonwealth and the Tsardom of Russia during the Polish–Russian War, part of Russia's Time of Troubles. The battle occurred near the village of Klushino near Smolensk. In the battle the outnumbered Polish-Lithuanian force secured a decisive victory over Russia, due to the tactical competence of hetman Stanisław Żółkiewski and the military prowess of Polish hussars, the elite of the army of the Crown of the Kingdom of Poland. The battle is remembered as one of the greatest triumphs of the Polish cavalry and an example of excellence and supremacy of the Polish military at the time.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q932228, imported by tools/import/wikidata.mjs. The item's own description reads \"1610 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1610,
+    "end": 1610,
+    "date": "1610-07-04"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "polish-russian-war-1609-1618"
+}

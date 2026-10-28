@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "basel",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q78",
+  "sitelinks": {
+    "count": 127,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Basel",
+    "pt": "Basileia"
+  },
+  "sources": [],
+  "names": [
+    "Basel",
+    "Basileia"
+  ],
+  "where": {
+    "lon": 7.587777777777777,
+    "lat": 47.558055555555555,
+    "precision": "city",
+    "label": "Basel"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

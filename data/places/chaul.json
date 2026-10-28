@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "chaul",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1068374",
+  "sitelinks": {
+    "count": 11,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Chaul",
+    "pt": "Chaul"
+  },
+  "sources": [],
+  "names": [
+    "Chaul"
+  ],
+  "where": {
+    "lon": 72.9272,
+    "lat": 18.5461,
+    "precision": "point",
+    "label": "Chaul"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

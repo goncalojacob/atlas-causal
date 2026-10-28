@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-kosovo-1448",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q698706",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Kosovo (1448)",
+    "pt": "Segunda Batalha do Kosovo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q698706"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Kosovo (1448)\", revision 1377295199"
+    }
+  ],
+  "title": "Battle of Kosovo (1448)",
+  "summary": "The English Wikipedia article \"Battle of Kosovo (1448)\", at revision 1377295199, opens: \"The Second Battle of Kosovo was a land battle between a Hungarian-led Crusader army and the Ottoman Empire at Kosovo field that took place from 17–20 October 1448. It was the culmination of a Hungarian offensive to avenge the defeat at the Battle of Varna four years earlier. In the three-day battle the Ottoman army under the command of Sultan Murad II defeated the Crusader army of regent John Hunyadi.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q698706, imported by tools/import/wikidata.mjs. The item's own description reads \"1448 battle between Hungarian-led Crusaders and the Ottoman Empire\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1448,
+    "end": 1448,
+    "date": "1448-10-17",
+    "endDate": "1448-10-20"
+  },
+  "place": "kosovo-polje",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

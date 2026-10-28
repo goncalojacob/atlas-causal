@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-tell-el-kebir",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1420382",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Tell El Kebir",
+    "pt": "Batalha de Tel el-Kebir"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1420382"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tell El Kebir\", revision 1370786056"
+    }
+  ],
+  "title": "Battle of Tell El Kebir",
+  "summary": "The English Wikipedia article \"Battle of Tell El Kebir\", at revision 1370786056, opens: \"The Battle of Tel El Kebir, fought on 13 September 1882 at Tell El Kebir in Egypt, 110 km north-north-east of Cairo, proved the decisive engagement of the Anglo-Egyptian War of 1882. A British army led by Lieutenant General Sir Garnet Wolseley approached under cover of darkness and defeated an entrenched Egyptian force under the command of Ahmed ʻUrabi in a sudden assault.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1420382, imported by tools/import/wikidata.mjs. The item's own description reads \"1882 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1882,
+    "end": 1882,
+    "date": "1882-09-13"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "urabi-revolt"
+}

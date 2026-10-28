@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "convention-for-the-lease-of-the-liaotung-peninsula",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4400947",
+  "sitelinks": {
+    "count": 9,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Convention for the Lease of the Liaotung Peninsula"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4400947"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Convention for the Lease of the Liaotung Peninsula\", revision 1366957795"
+    }
+  ],
+  "title": "Convention for the Lease of the Liaotung Peninsula",
+  "summary": "The English Wikipedia article \"Convention for the Lease of the Liaotung Peninsula\", at revision 1366957795, opens: \"The Convention for the Lease of the Liaotung Peninsula, also known as the Pavlov Agreement, is an unequal treaty signed between Alexander Pavlov of the Russian Empire and Li Hongzhang of the Qing dynasty of China on 27 March 1898. The treaty granted Russia the lease of Port Arthur (Lüshun) and permitted its railway to extend to the port from one of the points of the Chinese Eastern Railway (CER).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4400947, imported by tools/import/wikidata.mjs. The item's own description reads \"1898 treaty leasing Port Arthur to the Russians\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1898,
+    "end": 1898,
+    "date": "1898-03-15"
+  },
+  "place": "beijing",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-copenhagen-1660",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q829702",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Copenhagen (1660)",
+    "pt": "Tratado de Copenhaga (1660)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q829702"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Copenhagen (1660)\", revision 1364835275"
+    }
+  ],
+  "title": "Treaty of Copenhagen (1660)",
+  "summary": "The English Wikipedia article \"Treaty of Copenhagen (1660)\", at revision 1364835275, opens: \"The Treaty of Copenhagen was signed on 27 May 1660, and marked the conclusion of the Second Northern War between the Swedish Empire and the alliance of Denmark–Norway and the Polish–Lithuanian Commonwealth. This treaty was a smaller follow-up treaty to that of the Treaty of Roskilde, which decisively delineated the mutually recognized boundaries of Denmark, Sweden, and Norway; boundaries which are almost exactly the same to this day.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q829702, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1660,
+    "end": 1660,
+    "date": "1660-05-27"
+  },
+  "place": "copenhagen",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

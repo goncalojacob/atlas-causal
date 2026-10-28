@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-rossbach",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q573972",
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Rossbach",
+    "pt": "Batalha de Rossbach"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q573972"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Rossbach\", revision 1381069746"
+    }
+  ],
+  "title": "Battle of Rossbach",
+  "summary": "The English Wikipedia article \"Battle of Rossbach\", at revision 1381069746, opens: \"The Battle of Rossbach took place on 5 November 1757 during the Third Silesian War near the village of Rossbach (Roßbach), in the Electorate of Saxony. It is sometimes called the Battle of, or at, Reichardtswerben, after a different nearby town. In this 90-minute battle, Frederick the Great, king of Prussia, defeated an Allied army composed of French forces augmented by a contingent of the Reichsarmee of the Holy Roman Empire. The French and Imperial army included 41,110 men, opposing a considerably smaller Prussian force of 22,000. Despite overwhelming odds, Frederick managed to defeat the Imperials and the French.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q573972, imported by tools/import/wikidata.mjs. The item's own description reads \"1757 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1757,
+    "date": "1757-11-05"
+  },
+  "place": "halle-saale",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

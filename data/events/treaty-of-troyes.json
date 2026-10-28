@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-troyes",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1134125",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Troyes",
+    "pt": "Tratado de Troyes"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1134125"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Troyes\", revision 1378465909"
+    }
+  ],
+  "title": "Treaty of Troyes",
+  "summary": "The English Wikipedia article \"Treaty of Troyes\", at revision 1378465909, opens: \"The Treaty of Troyes was an agreement sealed in the French city of Troyes on 21 May 1420, under which Henry V of England and his heirs were to succeed Charles VI of France on the French throne. The treaty is regarded as the culmination of Henry's achievements in the Hundred Years' War, and it gave him a far better prospect of the French crown than any of his predecessors. It followed Henry's conquest of Normandy and the murder of John the Fearless, Duke of Burgundy, and it disinherited Charles's son, the Dauphin Charles. Under its terms, Charles VI remained king for life, while Henry married his daughter Catherine of Valois, was styled \"heir of France\", and took over the government of the kingdom. Once Henry or his heirs succeeded, the crowns of England and France were to be held by one person, with each kingdom keeping its own laws. The treaty left it deliberately unclear whether Henry's right derived from the long-standing English claim to the French throne or from Charles VI's own authority, and its validity was contested in France from the outset.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1134125, imported by tools/import/wikidata.mjs. The item's own description reads \"15th-century treaty between England and France\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1420,
+    "end": 1420,
+    "date": "1420-05-21"
+  },
+  "place": "troyes",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

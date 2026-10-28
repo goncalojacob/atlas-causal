@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-chinkiang",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870730",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Chinkiang"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870730"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chinkiang\", revision 1380896002"
+    }
+  ],
+  "title": "Battle of Chinkiang",
+  "summary": "The English Wikipedia article \"Battle of Chinkiang\", at revision 1380896002, opens: \"The Battle of Chinkiang was fought between British and Chinese forces in Zhenjiang (Chinkiang), Jiangsu province, China, on 21 July 1842 during the First Opium War. It was the last major battle of the war. The Chinese force consisted of a garrison of Manchu and Mongol Bannermen. In command of the British forces was Sir Hugh Gough. Leading one brigade was future British field marshal Sir Colin Campbell. The British capture of this stronghold allowed them to proceed to Nanjing. Fought near the confluence of the Grand Canal and Yangtze River, the battle effectively blocked operation of the Caoyun system, a transport network vital for the movement of grain throughout the empire. As a result, the Daoguang Emperor decided to sue for peace and agreed to sign the Treaty of Nanking, which brought hostilities to an end. Mass suicide was committed by the Manchu Bannermen who were defending the city.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870730, imported by tools/import/wikidata.mjs. The item's own description reads \"1842 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1842,
+    "end": 1842,
+    "date": "1842-07-21"
+  },
+  "place": "zhenjiang",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "first-opium-war"
+}

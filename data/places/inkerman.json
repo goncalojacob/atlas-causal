@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "inkerman",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q752183",
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Inkerman",
+    "pt": "Inkerman"
+  },
+  "sources": [],
+  "names": [
+    "Inkerman"
+  ],
+  "where": {
+    "lon": 33.60583333333334,
+    "lat": 44.618611111111115,
+    "precision": "city",
+    "label": "Inkerman"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

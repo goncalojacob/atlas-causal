@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "charge-of-the-light-brigade",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q757870",
+  "wikipedia": {
+    "en": "Charge of the Light Brigade",
+    "pt": "Carga da Brigada Ligeira"
+  },
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-28"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q757870"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Charge of the Light Brigade\", revision 1380693685"
+    }
+  ],
+  "title": "Charge of the Light Brigade",
+  "summary": "The English Wikipedia article \"Charge of the Light Brigade\", at revision 1380693685, opens: \"The Charge of the Light Brigade was a military action undertaken by British light cavalry against Russian forces during the Battle of Balaclava in the Crimean War, resulting in many casualties to the cavalry. On 25 October 1854, the Light Brigade, led by Lord Cardigan, mounted a frontal assault against a Russian artillery battery which was well-prepared with excellent fields of defensive fire. The charge was the result of a misunderstood order from the commander-in-chief, Lord Raglan, who had intended the Light Brigade to attack a different objective for which light cavalry was better suited, to prevent the Russians from removing captured guns from overrun Turkish positions. The Light Brigade made its charge under withering direct fire and reached its target, scattering some of the gunners, but was forced to retreat immediately.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q757870, imported by tools/import/wikidata.mjs. The item's own description reads \"1854 charge of British light cavalry led by Lord Cardigan against Russian forces\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": 1854,
+    "date": "1854-10-25"
+  },
+  "place": "balaklava",
+  "region": null,
+  "regionNote": null,
+  "parent": "crimean-war",
+  "category": "war",
+  "actors": []
+}

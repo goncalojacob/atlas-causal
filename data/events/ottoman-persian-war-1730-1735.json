@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ottoman-persian-war-1730-1735",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2913821",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Ottoman–Persian War (1730–1735)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2913821"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman–Persian War (1730–1735)\", revision 1380209928"
+    }
+  ],
+  "title": "Ottoman–Persian War (1730–1735)",
+  "summary": "The English Wikipedia article \"Ottoman–Persian War (1730–1735)\", at revision 1380209928, opens: \"The Ottoman–Persian War of 1730–1735 was a conflict between the forces of Safavid Iran and those of the Ottoman Empire from 1730 to 1735. After Ottoman support had failed to keep the Ghilzai Afghan invaders on the Iranian throne, the Ottoman possessions in western Iran, which were granted to them by the Hotak dynasty, came under risk of re-incorporation into the newly resurgent Iranian Empire. The talented Safavid general, Nader, gave the Ottomans an ultimatum to withdraw, which the Ottomans chose to ignore. A series of campaigns followed, with each side gaining the upper hand in a succession of tumultuous events that spanned half a decade. Finally, the Iranian victory at Yeghevard made the Ottomans sue for peace and recognize Iranian territorial integrity and Iranian hegemony over the Caucasus.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2913821, imported by tools/import/wikidata.mjs. The item's own description reads \"series of conflicts fought between the Ottoman Empire and Safavid Iran from 1730 to 1735\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1730,
+    "end": 1735
+  },
+  "place": "caucasus",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "sultanate-of-women",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1543663",
+  "sitelinks": {
+    "count": 42,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Sultanate of Women",
+    "pt": "Sultanato das Mulheres"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1543663"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sultanate of Women\", revision 1381280473"
+    }
+  ],
+  "title": "Sultanate of Women",
+  "summary": "The English Wikipedia article \"Sultanate of Women\", at revision 1381280473, opens: \"The Sultanate of Women was a period when some concubines, mothers, sisters and grandmothers of the sultans of the Ottoman Empire exerted political influence.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1543663, imported by tools/import/wikidata.mjs. The item's own description reads \"130-year period during the 16th and 17th centuries when the women (mothers or wives of the Sultan) of the Imperial Harem of the Ottoman Empire had great political influence over the state\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1520,
+    "end": 1648
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

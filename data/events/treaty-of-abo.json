@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-abo",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1141485",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Åbo",
+    "pt": "Tratado de Åbo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1141485"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Åbo\", revision 1280916802"
+    }
+  ],
+  "title": "Treaty of Åbo",
+  "summary": "The English Wikipedia article \"Treaty of Åbo\", at revision 1280916802, opens: \"The Treaty of Åbo, or the Treaty of Turku, was a peace treaty signed between the Russian Empire and Sweden in Åbo (Turku) on 18 August [O.S. 7 August] 1743 in the end of the Russo-Swedish War of 1741–1743.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1141485, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty signed between the Russian Empire and Sweden in Åbo (Turku) on 18 August [O.S. 7 August] 1743 in the end of the Russo-Swedish War of 1741–1743\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1743,
+    "end": 1743,
+    "date": "1743-08-07"
+  },
+  "place": "turku",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

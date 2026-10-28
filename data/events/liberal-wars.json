@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "liberal-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1237867",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Liberal Wars",
+    "pt": "Guerra Civil Portuguesa (1832–1834)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1237867"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Liberal Wars\", revision 1377784123"
+    }
+  ],
+  "title": "Liberal Wars",
+  "summary": "The English Wikipedia article \"Liberal Wars\", at revision 1377784123, opens: \"The Liberal Wars, also known as the Portuguese Civil War and the War of the Two Brothers was a civil war in Portugal that lasted from May 1828 to May 1834, fought between liberal progressive constitutionalists and conservative traditionalists over the country's system of government and royal succession. Embroiled parties included the Kingdom of Portugal, Portuguese rebels, the United Kingdom, France, the Catholic Church, Spain and Russia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1237867, imported by tools/import/wikidata.mjs. The item's own description reads \"1828-1834 civil war in Portugal\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1828,
+    "end": 1834
+  },
+  "place": "portugal-q45",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

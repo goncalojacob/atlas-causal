@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-inkerman",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q770536",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Inkerman",
+    "pt": "Batalha de Inkerman"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q770536"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Inkerman\", revision 1373772021"
+    }
+  ],
+  "title": "Battle of Inkerman",
+  "summary": "The English Wikipedia article \"Battle of Inkerman\", at revision 1373772021, opens: \"The Battle of Inkerman was fought during the Crimean War on 5 November 1854 by the allied armies of Britain and France against the Imperial Russian Army. The battle broke the will of the Russian Army to defeat the allies in the field, and was followed by the siege of Sevastopol. The role of troops fighting mostly on their own initiative due to the foggy conditions during the battle has earned the engagement the name \"The Soldier's Battle.\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q770536, imported by tools/import/wikidata.mjs. The item's own description reads \"battle on 5 November 1854 during the Crimean War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1854,
+    "end": 1854,
+    "date": "1854-11-05"
+  },
+  "place": "inkerman",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "crimean-war"
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-komaki-and-nagakute",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1353633",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Komaki and Nagakute"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1353633"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Komaki and Nagakute\", revision 1381491739"
+    }
+  ],
+  "title": "Battle of Komaki and Nagakute",
+  "summary": "The English Wikipedia article \"Battle of Komaki and Nagakute\", at revision 1381491739, opens: \"The Battle of Komaki and Nagakute , also known as the Komaki Campaign, was a series of battles in 1584 between the forces of Hashiba Hideyoshi and the forces of Oda Nobukatsu and Tokugawa Ieyasu.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1353633, imported by tools/import/wikidata.mjs. The item's own description reads \"1584 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1584,
+    "end": 1584
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

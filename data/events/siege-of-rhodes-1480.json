@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "siege-of-rhodes-1480",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q701067",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Siege of Rhodes (1480)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q701067"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Rhodes (1480)\", revision 1380412420"
+    }
+  ],
+  "title": "Siege of Rhodes (1480)",
+  "summary": "The English Wikipedia article \"Siege of Rhodes (1480)\", at revision 1380412420, opens: \"The Siege of Rhodes of 1480 was the first and failed attempt by the Ottoman Empire to seize the island stronghold of the Knights of Rhodes from Rhodes, despite about 70,000 troops, they successfully defended the island.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q701067, imported by tools/import/wikidata.mjs. The item's own description reads \"1480\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1480,
+    "end": 1480
+  },
+  "place": "rhodes",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

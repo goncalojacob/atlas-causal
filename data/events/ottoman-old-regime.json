@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ottoman-old-regime",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3236133",
+  "sitelinks": {
+    "count": 17,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Ottoman Old Regime"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3236133"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Ottoman Old Regime\", revision 1382167934"
+    }
+  ],
+  "title": "Ottoman Old Regime",
+  "summary": "The English Wikipedia article \"Ottoman Old Regime\", at revision 1382167934, opens: \"The Ottoman Empire was founded in 1299 by Osman Gazi also known as Osman I. The history of the Ottoman Empire in the 18th century has classically been described as one of stagnation and reform. \nIn analogy with 18th-century France, it is also known as the Ancien Régime or Old Regime, contrasting with the \"New Regime\" of the Nizam-i Cedid and Tanzimat in the 19th century. At the Ottoman Empire's peak it covered parts of North Africa, The Arabian Peninsula, all of modern-day Türkiye (Turkey), parts of Greece, and almost all of the Balkans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3236133, imported by tools/import/wikidata.mjs. The item's own description reads \"Ottoman Empire from 1703 to 1789\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1703,
+    "end": 1789
+  },
+  "place": "ottoman-empire-q12560",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

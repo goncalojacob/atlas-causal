@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "second-battle-of-panipat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q233414",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Second Battle of Panipat"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q233414"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Battle of Panipat\", revision 1381440681"
+    }
+  ],
+  "title": "Second Battle of Panipat",
+  "summary": "The English Wikipedia article \"Second Battle of Panipat\", at revision 1381440681, opens: \"The Second Battle of Panipat was fought on 5 November 1556, between the Mughals under Akbar and king Hemu, titularly known as Hemchandra Vikramaditya. Hemchandra had conquered Delhi and Agra a few weeks earlier by defeating Mughal forces under Tardi Beg Khan in the Battle of Delhi. He crowned himself Vikramaditya at Purana Quila in Delhi.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q233414, imported by tools/import/wikidata.mjs. The item's own description reads \"1556 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1556,
+    "end": 1556,
+    "date": "1556-11-05"
+  },
+  "place": "panipat",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "gunboat-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q426201",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Gunboat War",
+    "pt": "Guerra das Canhoneiras"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q426201"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Gunboat War\", revision 1379259908"
+    }
+  ],
+  "title": "Gunboat War",
+  "summary": "The English Wikipedia article \"Gunboat War\", at revision 1379259908, opens: \"The Gunboat War (1807–1814) was a naval conflict between Denmark–Norway and Great Britain supported by Sweden during the Napoleonic Wars. The war's name is derived from the Danish tactic of employing small gunboats against the materially superior Royal Navy. In Scandinavia it is seen as the later stage of the English Wars, whose commencement is accounted as the First Battle of Copenhagen in 1801.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q426201, imported by tools/import/wikidata.mjs. The item's own description reads \"1807–1814 war between Denmark–Norway and the United Kingdom\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1807,
+    "end": 1814
+  },
+  "place": "north-sea",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

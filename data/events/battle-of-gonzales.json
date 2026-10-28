@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-gonzales",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1191854",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Gonzales",
+    "pt": "Batalha de Gonzales"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1191854"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gonzales\", revision 1381045821"
+    }
+  ],
+  "title": "Battle of Gonzales",
+  "summary": "The English Wikipedia article \"Battle of Gonzales\", at revision 1381045821, opens: \"The Battle of Gonzales was the first military engagement of the Texas Revolution. It was fought near Gonzales, Texas, on October 2, 1835, between rebellious Texian settlers and a detachment of Mexican Army soldiers. In 1831, Green DeWitt asked the Mexican authorities to lend the Gonzales colonists a cannon to help protect them from frequent Comanche raids. One was supplied, on the condition that the cannon would be returned to the Mexicans on request. Over the next four years, the political situation in Mexico deteriorated, and in 1835 several states revolted. As the unrest spread, Colonel Domingo de Ugartechea, the commander of all Mexican troops in Texas, felt it unwise to leave the residents of Gonzales with a weapon and requested the return of the cannon.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1191854, imported by tools/import/wikidata.mjs. The item's own description reads \"1835 first military engagement of the Texas Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1835,
+    "date": "1835-10-02"
+  },
+  "place": "gonzales-texas",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

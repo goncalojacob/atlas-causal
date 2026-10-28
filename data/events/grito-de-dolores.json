@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "grito-de-dolores",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1145411",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Grito de Dolores",
+    "pt": "Grito de Dolores"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1145411"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Grito de Dolores\", revision 1375078065"
+    }
+  ],
+  "title": "Grito de Dolores",
+  "summary": "The English Wikipedia article \"Grito de Dolores\", at revision 1375078065, opens: \"The Cry of Dolores occurred in Dolores, Mexico, on 16 September 1810, when Roman Catholic priest Miguel Hidalgo y Costilla rang his church bell and gave the call to arms that triggered the Mexican War of Independence. The Cry of Dolores is most commonly known by the locals as El Grito de Independencia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1145411, imported by tools/import/wikidata.mjs. The item's own description reads \"call to arms triggering the Mexican War of Independence\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1810,
+    "end": 1810,
+    "date": "1810-09-16"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "actors": [],
+  "parent": "mexican-war-of-independence"
+}

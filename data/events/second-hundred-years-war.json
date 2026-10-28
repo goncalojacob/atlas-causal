@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "second-hundred-years-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q233559",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Second Hundred Years' War",
+    "pt": "Segunda Guerra dos Cem Anos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q233559"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Second Hundred Years' War\", revision 1381753701"
+    }
+  ],
+  "title": "Second Hundred Years' War",
+  "summary": "The English Wikipedia article \"Second Hundred Years' War\", at revision 1381753701, opens: \"The Second Hundred Years' War is a periodization coined by the English historian John Robert Seeley in his work The Expansion of England (1883). Seeley used the periodization to describe the series of wars fought between England and France that occurred between 1688 and 1815 as one continuous conflict for global dominance. These conflicts include the Nine Years' War, War of the Spanish Succession, War of the Austrian Succession, Seven Years' War, American Revolutionary War and French Revolutionary and Napoleonic Wars. The concept of a \"Second Hundred Years' War\" has not been widely accepted in academia and has been challenged by several historians, who question whether it accurately reflects the complex and distinct Anglo-French conflicts during that period. The Second Hundred Years' War is named after the Hundred Years' War, which occurred in the 14th and 15th centuries.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q233559, imported by tools/import/wikidata.mjs. The item's own description reads \"series of military conflicts between Great Britain and France that occurred from 1689 to 1815\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1688,
+    "end": 1815
+  },
+  "place": "europe",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

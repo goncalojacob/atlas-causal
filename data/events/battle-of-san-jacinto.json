@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-san-jacinto",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q841278",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of San Jacinto",
+    "pt": "Batalha de San Jacinto"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q841278"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of San Jacinto\", revision 1378726034"
+    }
+  ],
+  "title": "Battle of San Jacinto",
+  "summary": "The English Wikipedia article \"Battle of San Jacinto\", at revision 1378726034, opens: \"The Battle of San Jacinto, fought on April 21, 1836, in present-day La Porte and Deer Park, Texas, was the final and decisive battle of the Texas Revolution. Led by General Sam Houston, the Texian Army engaged and defeated General Antonio López de Santa Anna's Mexican army in a fight that lasted just 18 minutes. A detailed, first-hand account of the battle was written by General Houston from the headquarters of the Texian Army in San Jacinto on April 25, 1836. Numerous secondary analyses and interpretations have followed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q841278, imported by tools/import/wikidata.mjs. The item's own description reads \"1836 decisive battle of the Texas Revolution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1836,
+    "end": 1836,
+    "date": "1836-04-21"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "treaty-of-cambrai",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q14043328",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Cambrai",
+    "pt": "Paz das Damas"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q14043328"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Cambrai\", revision 1321589828"
+    }
+  ],
+  "title": "Treaty of Cambrai",
+  "summary": "The English Wikipedia article \"Treaty of Cambrai\", at revision 1321589828, opens: \"The Treaty of Cambrai, also known as the Paz de las Damas or Paix des Dames, was an agreement made on 5 August 1529 that ended the French involvement in the War of the League of Cognac between French King Francis I and Emperor Charles V, who was also the King of Spain. The treaty confirmed the effective Habsburg hegemony in the Duchy of Milan and in the Kingdom of Naples.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q14043328, imported by tools/import/wikidata.mjs. The item's own description reads \"1529 peace treaty between France and Spain\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1529,
+    "end": 1529,
+    "date": "1529-08-05"
+  },
+  "place": "cambrai",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

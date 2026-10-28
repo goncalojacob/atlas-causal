@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "june-rebellion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q768755",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "June Rebellion",
+    "pt": "Rebelião de junho"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q768755"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"June Rebellion\", revision 1380934831"
+    }
+  ],
+  "title": "June Rebellion",
+  "summary": "The English Wikipedia article \"June Rebellion\", at revision 1380934831, opens: \"The June Rebellion, also called the Paris Uprising of 1832, was an anti-monarchist insurrection of Parisian republicans on 5 and 6 June 1832.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q768755, imported by tools/import/wikidata.mjs. The item's own description reads \"rebellion in Paris in June 1832\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1831,
+    "end": 1831,
+    "date": "1831-06-05",
+    "endDate": "1831-06-06"
+  },
+  "place": "paris",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

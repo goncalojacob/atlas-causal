@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "atlanta-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q756118",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Atlanta campaign",
+    "pt": "Campanha de Atlanta"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q756118"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Atlanta campaign\", revision 1380714010"
+    }
+  ],
+  "title": "Atlanta campaign",
+  "summary": "The English Wikipedia article \"Atlanta campaign\", at revision 1380714010, opens: \"The Atlanta campaign was a series of battles fought in the western theater of the American Civil War throughout northwest Georgia and the area around Atlanta during the summer of 1864. Union Major General William T. Sherman invaded Georgia from the vicinity of Chattanooga, Tennessee, beginning in May 1864, opposed by the Confederate general Joseph E. Johnston.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q756118, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 military campaign of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-05-07",
+    "endDate": "1864-09-02"
+  },
+  "place": "north-georgia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

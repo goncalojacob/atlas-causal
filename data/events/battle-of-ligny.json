@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-ligny",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q855429",
+  "wikipedia": {
+    "en": "Battle of Ligny",
+    "pt": "Batalha de Ligny"
+  },
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-28"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q855429"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ligny\", revision 1371153023"
+    }
+  ],
+  "title": "Battle of Ligny",
+  "summary": "The English Wikipedia article \"Battle of Ligny\", at revision 1371153023, opens: \"The Battle of Ligny, in which French troops of the Armée du Nord under the command of Napoleon I defeated part of a Prussian army under Field Marshal Blücher, was fought on 16 June 1815 near Ligny in what is now Belgium. The result was a tactical victory for the French, but the bulk of the Prussian army survived the battle in good order, was reinforced by Prussian troops who had not fought at Ligny, and played a role two days later at the Battle of Waterloo. Ligny was the last victory in Napoleon's military career. In the culminating moment of this battle Blücher was wounded and carried off the battlefield, and was replaced by his chief of staff, Lieutenant General Gneisenau.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q855429, imported by tools/import/wikidata.mjs. The item's own description reads \"1815 battle during the War of the Seventh Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-06-16"
+  },
+  "place": "ligny",
+  "region": null,
+  "regionNote": null,
+  "parent": "napoleonic-wars",
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-wandiwash",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q658845",
+  "sitelinks": {
+    "count": 15,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Wandiwash"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q658845"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Wandiwash\", revision 1375514148"
+    }
+  ],
+  "title": "Battle of Wandiwash",
+  "summary": "The English Wikipedia article \"Battle of Wandiwash\", at revision 1375514148, opens: \"The Battle of Wandiwash was a battle in India between the French and the British in 1760. The battle was part of the Third Carnatic War fought between the French and British colonial empires, which itself was a part of the global Seven Years' War. It took place at Vandavasi in Tamil Nadu. Having made substantial gains in Bengal and Hyderabad, the British, after collecting a large amount of revenue, were fully equipped to face the French in Wandiwash, whom they defeated.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q658845, imported by tools/import/wikidata.mjs. The item's own description reads \"1760 battle in India during the Seven Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1760,
+    "end": 1760,
+    "date": "1760-01-22"
+  },
+  "place": "vandavasi",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

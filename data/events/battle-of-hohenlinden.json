@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-hohenlinden",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q705813",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Hohenlinden",
+    "pt": "Batalha de Hohenlinden"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q705813"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Hohenlinden\", revision 1370265713"
+    }
+  ],
+  "title": "Battle of Hohenlinden",
+  "summary": "The English Wikipedia article \"Battle of Hohenlinden\", at revision 1370265713, opens: \"The Battle of Hohenlinden was fought on 3 December 1800 during the French Revolutionary Wars. A French army under Jean Victor Marie Moreau won a decisive victory over an Austrian and Bavarian force led by 18-year-old Archduke John of Austria. The allies were forced into a disastrous retreat that compelled them to request an armistice, effectively ending the War of the Second Coalition. Hohenlinden is 33 km (21 mi) east of Munich in modern Germany.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q705813, imported by tools/import/wikidata.mjs. The item's own description reads \"1800 battle during the War of the Second Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1800,
+    "end": 1800,
+    "date": "1800-12-03"
+  },
+  "place": "munich",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "war-of-the-second-coalition"
+}

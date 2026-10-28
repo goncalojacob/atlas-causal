@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "peninsula-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1154050",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Peninsula campaign",
+    "pt": "Campanha da Península"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1154050"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peninsula campaign\", revision 1380699789"
+    }
+  ],
+  "title": "Peninsula campaign",
+  "summary": "The English Wikipedia article \"Peninsula campaign\", at revision 1380699789, opens: \"The Peninsula campaign of the American Civil War was a major Union operation launched in southeastern Virginia from March to July 1862, the first large-scale offensive in the Eastern Theater. The operation, commanded by Major General George B. McClellan, was an amphibious turning movement against the Confederate States Army in Northern Virginia, intended to capture the Confederate capital of Richmond. Despite the fact that Confederate spy Thomas Nelson Conrad had obtained documents describing McClellan's battle plans from a double agent in the War Department, McClellan was initially successful against the equally cautious General Joseph E. Johnston, but the emergence of the more aggressive General Robert E. Lee turned the subsequent Seven Days Battles into a humiliating Union defeat.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1154050, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 Union campaign in the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-07"
+  },
+  "place": "virginia-peninsula",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

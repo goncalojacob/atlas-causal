@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-trebizond-1461",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q9366875",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Siege of Trebizond (1461)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q9366875"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Trebizond (1461)\", revision 1382364391"
+    }
+  ],
+  "title": "Siege of Trebizond (1461)",
+  "summary": "The English Wikipedia article \"Siege of Trebizond (1461)\", at revision 1382364391, opens: \"The siege of Trebizond was the successful siege of the city of Trebizond, capital of the Empire of Trebizond, by the Ottomans under Sultan Mehmed II, which ended on 15 August 1461. The siege culminated a lengthy campaign on the Ottoman side, which involved coordinated but independent manoeuvres by a large army and navy. The Trapezuntine defenders had relied on a network of alliances, which would provide them with support and a workforce when the Ottomans began their siege. Still, it failed when Emperor David Megas Komnenos most needed it.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q9366875, imported by tools/import/wikidata.mjs. The item's own description reads \"Ottoman siege of Trebizond in 1461\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1461,
+    "end": 1461,
+    "endDate": "1461-08-15"
+  },
+  "place": "trabzon",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

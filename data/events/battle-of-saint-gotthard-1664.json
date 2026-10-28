@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-saint-gotthard-1664",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q170113",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Saint Gotthard (1664)",
+    "pt": "Batalha de São Gotardo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q170113"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Saint Gotthard (1664)\", revision 1374233190"
+    }
+  ],
+  "title": "Battle of Saint Gotthard (1664)",
+  "summary": "The English Wikipedia article \"Battle of Saint Gotthard (1664)\", at revision 1374233190, opens: \"The Battle of Saint Gotthard, of the Austro-Turkish War (1663–1664), took place on 1 August 1664 on the Raab between Mogersdorf and the Cistercian monastery St. Gotthard in West Hungary. It was fought between Imperial Army forces, including German, Swedish and French contingents, led by Imperial commander-in-chief Count Raimondo Montecuccoli and the army of the Ottoman Empire under the command of Köprülü Fazıl Ahmed Paşa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q170113, imported by tools/import/wikidata.mjs. The item's own description reads \"1664 major battle in the Austro-Turkish war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1664,
+    "end": 1664,
+    "date": "1664-08-01"
+  },
+  "place": "szentgotthard",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "austro-turkish-war-1663-1664"
+}

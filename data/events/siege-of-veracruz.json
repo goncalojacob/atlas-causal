@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siege-of-veracruz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2745368",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Siege of Veracruz",
+    "pt": "Cerco de Veracruz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2745368"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Veracruz\", revision 1370746309"
+    }
+  ],
+  "title": "Siege of Veracruz",
+  "summary": "The English Wikipedia article \"Siege of Veracruz\", at revision 1370746309, opens: \"On 9 March 1847, during the Mexican–American War, the United States military made an amphibious landing and besieged the key Mexican seaport of Veracruz. The port surrendered twenty days later. The U.S. forces then marched inland to Mexico City.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2745368, imported by tools/import/wikidata.mjs. The item's own description reads \"1847 battle of the Mexican-American War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1847,
+    "end": 1847,
+    "date": "1847-03-09",
+    "endDate": "1847-03-29"
+  },
+  "place": "veracruz-city",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "mexican-american-war"
+}

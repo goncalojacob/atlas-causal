@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mudan-incident",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q710356",
+  "sitelinks": {
+    "count": 13,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Mudan incident"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q710356"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Mudan incident\", revision 1363455951"
+    }
+  ],
+  "title": "Mudan incident",
+  "summary": "The English Wikipedia article \"Mudan incident\", at revision 1363455951, opens: \"The Mudan incident of 1871 was the massacre of 54 Ryukyuan sailors in Qing-era Taiwan who wandered into the central part of Taiwan after being shipwrecked off Taiwan's southeastern coast. Twelve survivors were rescued by local Han people and were later returned to Miyako Island in the Ryukyu Islands.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q710356, imported by tools/import/wikidata.mjs. The item's own description reads \"killing of 54 Ryūkyūan sailors in Qing-era Taiwan who wandered into Taiwan after shipwreck, causing the Taiwan Expedition of 1874 by Japan\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1871,
+    "end": 1871,
+    "date": "1871-10-18"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "death",
+  "actors": []
+}

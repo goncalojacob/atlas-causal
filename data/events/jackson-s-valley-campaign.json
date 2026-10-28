@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "jackson-s-valley-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1153610",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Jackson's Valley campaign"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1153610"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Jackson's Valley campaign\", revision 1377329224"
+    }
+  ],
+  "title": "Jackson's Valley campaign",
+  "summary": "The English Wikipedia article \"Jackson's Valley campaign\", at revision 1377329224, opens: \"Jackson's Valley campaign, also known as the Shenandoah Valley campaign of 1862, was Confederate Maj. Gen. Thomas J. \"Stonewall\" Jackson's spring 1862 campaign through the Shenandoah Valley in Virginia during the American Civil War. Employing risky and rapid, unpredictable movements on interior lines, Jackson's 17,000 men marched 646 miles (1,040 km) in 48 days and won several minor battles as they successfully engaged three Union armies, preventing them from reinforcing the Union offensive against Richmond.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1153610, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 campaign in the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-03-23",
+    "endDate": "1862-06-09"
+  },
+  "place": "shenandoah-valley",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}
