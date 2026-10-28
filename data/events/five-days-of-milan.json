@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "five-days-of-milan",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q623164",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Five Days of Milan",
+    "pt": "Cinco Dias de Milão"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q623164"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Five Days of Milan\", revision 1376359496"
+    }
+  ],
+  "title": "Five Days of Milan",
+  "summary": "The English Wikipedia article \"Five Days of Milan\", at revision 1376359496, opens: \"The Five Days of Milan was an insurrection and a major event in the Revolutionary Year of 1848 that started the First Italian War of Independence. On 18 March, a rebellion arose in the city of Milan which in five days of street fighting drove Marshal Radetzky and his Austrian soldiers from the city.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q623164, imported by tools/import/wikidata.mjs. The item's own description reads \"insurrection and a major event in the Revolutionary Year of 1848\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1848,
+    "end": 1848,
+    "date": "1848-03-18",
+    "endDate": "1848-03-22"
+  },
+  "place": "milan-q490",
+  "region": null,
+  "regionNote": null,
+  "actors": [],
+  "parent": "first-italian-war-of-independence"
+}

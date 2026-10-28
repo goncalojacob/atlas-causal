@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "milan-q490",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q490",
+  "sitelinks": {
+    "count": 190,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Milan",
+    "pt": "Milão"
+  },
+  "sources": [],
+  "names": [
+    "Milan",
+    "Milão"
+  ],
+  "where": {
+    "lon": 9.19,
+    "lat": 45.466944444444,
+    "precision": "city",
+    "label": "Milan"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "russo-turkish-war-1710-1713",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "span-from-title",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q846708",
+  "sitelinks": {
+    "count": 35,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Russo-Turkish War (1710–1713)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q846708"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Russo-Turkish War (1710–1713)\", revision 1373430937"
+    }
+  ],
+  "title": "Russo-Turkish War (1710–1713)",
+  "summary": "The English Wikipedia article \"Russo-Turkish War (1710–1713)\", at revision 1373430937, opens: \"The Russo-Ottoman War of 1710–1713, also known as the Pruth River Campaign, was a brief military conflict between the Tsardom of Russia and the Ottoman Empire. The main battle took place during 18–22 July 1711 in the basin of the Pruth river near Stănilești after Tsar Peter I entered the Ottoman vassal Principality of Moldavia, following the Ottoman Empire's declaration of war on Russia. The ill-prepared Russians, Cossacks, and Moldavians found themselves surrounded by the Ottoman Army under Grand Vizier Baltacı Mehmet Pasha. After three days of fighting and heavy casualties the Tsar and his army were allowed to withdraw after agreeing to abandon the fortress of Azov and its surrounding territory. The Ottoman victory led to the Treaty of the Pruth which was confirmed by the Treaty of Adrianople.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q846708, imported by tools/import/wikidata.mjs. The item's own description reads \"conflict\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1710,
+    "end": 1713
+  },
+  "place": "prut",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "great-northern-war"
+}

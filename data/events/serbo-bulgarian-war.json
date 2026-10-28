@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "serbo-bulgarian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q740791",
+  "sitelinks": {
+    "count": 36,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Serbo-Bulgarian War",
+    "pt": "Guerra servo-búlgara de 1885"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q740791"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Serbo-Bulgarian War\", revision 1375165445"
+    }
+  ],
+  "title": "Serbo-Bulgarian War",
+  "summary": "The English Wikipedia article \"Serbo-Bulgarian War\", at revision 1375165445, opens: \"The Serbo-Bulgarian War or the Serbian–Bulgarian War, a war between the Kingdom of Serbia and the Principality of Bulgaria, erupted on 14 November [O.S. 2 November] 1885 and lasted until 28 November [O.S. 16 November] 1885. Despite Bulgaria's status as a vassal of the Ottoman Empire, the Ottomans did not intervene in the war. Serbia initiated the fighting but suffered a decisive defeat. Austria-Hungary demanded that Bulgaria stop its invasion, and a truce resulted.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q740791, imported by tools/import/wikidata.mjs. The item's own description reads \"1885 war between Serbia and Bulgaria\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1885,
+    "end": 1885,
+    "date": "1885-11-28"
+  },
+  "place": "balkans",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
