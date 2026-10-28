@@ -2378,6 +2378,15 @@
         }
       ]
     },
+    "french-renaissance": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "french-wars-of-religion": {
       "from": "git",
       "versions": [

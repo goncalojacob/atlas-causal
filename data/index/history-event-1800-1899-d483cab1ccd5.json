@@ -5690,6 +5690,15 @@
         }
       ]
     },
+    "capture-of-rome": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "capture-of-uss-chesapeake": {
       "from": "git",
       "versions": [

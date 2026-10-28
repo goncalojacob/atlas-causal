@@ -83,6 +83,15 @@
         }
       ]
     },
+    "1783-russian-annexation-of-crimea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "1786-kangding-luding-earthquake": {
       "from": "git",
       "versions": [
@@ -3037,6 +3046,15 @@
       ]
     },
     "constitution-of-3-may-1791": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "constitution-of-the-year-iii": {
       "from": "git",
       "versions": [
         {
