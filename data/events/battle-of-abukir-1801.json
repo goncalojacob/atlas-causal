@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-abukir-1801",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2510511",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Abukir (1801)",
+    "pt": "Batalha de Abukir (1801)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2510511"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Abukir (1801)\", revision 1371087373"
+    }
+  ],
+  "title": "Battle of Abukir (1801)",
+  "summary": "The English Wikipedia article \"Battle of Abukir (1801)\", at revision 1371087373, opens: \"The Battle of Abukir of 8 March 1801 was the second pitched battle of the French invasion of Egypt and Syria to be fought at Abu Qir on the Mediterranean coast, near the Nile Delta. The landing of the British expeditionary force under Lieutenant-General Sir Ralph Abercromby was intended to defeat or drive out an estimated 21,000 remaining French troops in Egypt. The fleet commanded by Baron Keith included seven ships of the line, five frigates and a dozen smaller warships. With the troop transports, it was delayed in the bay for several days by strong gales and heavy seas before disembarkation could proceed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2510511, imported by tools/import/wikidata.mjs. The item's own description reads \"1801 second battle of the French campaign in Egypt and Syria to be fought at Abu Qir\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1801,
+    "end": 1801,
+    "date": "1801-03-08"
+  },
+  "place": "abu-qir",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-invasion-of-egypt-and-syria"
+}

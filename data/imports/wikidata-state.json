@@ -1934,7 +1934,6 @@
         "Q10303008",
         "Q3485913",
         "Q248979",
-        "Q3237997",
         "Q369859",
         "Q2888674",
         "Q5037028",
@@ -2379,8 +2378,6 @@
         "Q1288821",
         "Q1137302",
         "Q478597",
-        "Q1276340",
-        "Q1252684",
         "Q747589",
         "Q1123353",
         "Q2166177",
@@ -2428,7 +2425,6 @@
         "Q1670862",
         "Q2888632",
         "Q3485825",
-        "Q2889955",
         "Q783183",
         "Q2889297",
         "Q2890049",
@@ -3210,7 +3206,6 @@
         "Q18206421",
         "Q1351039",
         "Q7109948",
-        "Q96386035",
         "Q6827726",
         "Q4554418",
         "Q5453350",
@@ -3267,7 +3262,6 @@
         "Q13652394",
         "Q7837077",
         "Q4940517",
-        "Q55633506",
         "Q124683233",
         "Q4687537",
         "Q2707120",
@@ -3509,7 +3503,57 @@
         "Q164393",
         "Q1993653",
         "Q1130792",
-        "Q3536929"
+        "Q3536929",
+        "Q96386035",
+        "Q2510511",
+        "Q2887968",
+        "Q1252684",
+        "Q2984893",
+        "Q2888184",
+        "Q2888447",
+        "Q2889668",
+        "Q2889955",
+        "Q2889933",
+        "Q118946811",
+        "Q2237506",
+        "Q2889133",
+        "Q20617532",
+        "Q12203914",
+        "Q4870293",
+        "Q2888593",
+        "Q27627673",
+        "Q28806159",
+        "Q130221108",
+        "Q133828701",
+        "Q105821649",
+        "Q2935407",
+        "Q2888427",
+        "Q24234104",
+        "Q55633506",
+        "Q2750968",
+        "Q476402",
+        "Q1276340",
+        "Q1767196",
+        "Q2888406",
+        "Q2889543",
+        "Q5123963",
+        "Q2887801",
+        "Q20617644",
+        "Q5452541",
+        "Q2890200",
+        "Q3237997",
+        "Q44810768",
+        "Q2887988",
+        "Q4871605",
+        "Q2888919",
+        "Q27627676",
+        "Q4872746",
+        "Q4677303",
+        "Q2889972",
+        "Q122830159",
+        "Q134389533",
+        "Q2889774",
+        "Q2890464"
       ]
     }
   },
@@ -4417,6 +4461,34 @@
     "Q656545": {
       "on": "2026-10-28",
       "why": "none of its classes (Q1498487) is in data/imports/wikidata-seeds.json → classes"
+    },
+    "Q2984893": {
+      "on": "2026-10-28",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q2237506": {
+      "on": "2026-10-28",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q2935407": {
+      "on": "2026-10-28",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q4871605": {
+      "on": "2026-10-28",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q2888919": {
+      "on": "2026-10-28",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q27627676": {
+      "on": "2026-10-28",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    "Q2889774": {
+      "on": "2026-10-28",
+      "why": "no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
     }
   }
 }

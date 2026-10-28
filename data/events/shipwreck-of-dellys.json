@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "shipwreck-of-dellys",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q105821649",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Shipwreck of Dellys"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q105821649"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Shipwreck of Dellys\", revision 1370738244"
+    }
+  ],
+  "title": "Shipwreck of Dellys",
+  "summary": "The English Wikipedia article \"Shipwreck of Dellys\", at revision 1370738244, opens: \"The Shipwreck of Dellys took place in May 1830, during the French conquest of Algeria. It involved French troupes coloniales, under captains Félix-Ariel d'Assigny (1794–1846) and Armand Joseph Bruat (1796–1855), who were captured by armed Bedouins of the town of Dellys.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q105821649, imported by tools/import/wikidata.mjs. The item's own description reads \"1830 shipwreck\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1830,
+    "end": 1830,
+    "date": "1830-05-15"
+  },
+  "place": "dellys",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-conquest-of-algeria"
+}

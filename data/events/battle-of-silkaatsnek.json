@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-silkaatsnek",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q20617532",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Silkaatsnek"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q20617532"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Silkaatsnek\", revision 1370589392"
+    }
+  ],
+  "title": "Battle of Silkaatsnek",
+  "summary": "The English Wikipedia article \"Battle of Silkaatsnek\", at revision 1370589392, opens: \"The Battle of Silkaatsnek was a military engagement in the Anglo-Boer War on July 11, 1900, at the Silkaatsnek mountain pass, between Pretoria and Rustenburg. Boer guerrillas under assistant-commander general Koos de la Rey surprised British troops, using a new guerrilla tactic instead of fighting a set-piece battle.\nOn the same day of July 11, 1900, the British also suffered two similar reversals, at Battle of Dwarsvlei in Krugersdorp district and at Onderstepoort, but a few days later, on 16 July 1900, they withstood a Boer attack in the Battle of Witpoort east of Pretoria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q20617532, imported by tools/import/wikidata.mjs. The item's own description reads \"battle between Boer Republics and the British Empire at Silkaatsnek, Transvaal, 11 July 1900\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1900,
+    "end": 1900,
+    "date": "1900-07-11"
+  },
+  "place": "south-african-republic",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-boer-war"
+}

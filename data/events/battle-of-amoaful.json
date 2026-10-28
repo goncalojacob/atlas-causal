@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-amoaful",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q4870293",
+  "wikipedia": {
+    "en": "Battle of Amoaful"
+  },
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-28"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870293"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Amoaful\", revision 1379702479"
+    }
+  ],
+  "title": "Battle of Amoaful",
+  "summary": "The English Wikipedia article \"Battle of Amoaful\", at revision 1379702479, opens: \"The Battle of Amoaful was fought on 31 January 1874 during the Third Anglo-Ashanti War when Sir Garnet Wolseley defeated the Ashantis after strong resistance. The attack was led by the 42nd Regiment of Foot. At Amoaful, one combat post-mortem pays tribute to the Ashanti commander: \"The great Chief Amanquatia was among the killed. Admirable skill was shown in the position selected by Amanquatia, and the determination and generalship he displayed in the defence fully bore out his great reputation as an able tactician and gallant soldier.\" Lance-Sergeant Samuel McGaw was awarded the Victoria Cross for action during the battle.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870293, imported by tools/import/wikidata.mjs. The item's own description reads \"1874 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1874,
+    "end": 1874,
+    "date": "1874-01-31"
+  },
+  "place": "west-africa",
+  "region": null,
+  "regionNote": null,
+  "parent": "anglo-ashanti-wars",
+  "category": "war",
+  "actors": []
+}

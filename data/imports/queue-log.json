@@ -22423,6 +22423,632 @@
       },
       "refusals": [],
       "note": "Q3536929: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-africa-040",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q96386035: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-africa-042",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-abukir-1801",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-044",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-heliopolis-1800",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-046",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1252684: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-africa-048",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2984893: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-africa-050",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-bothaville",
+        "edges": [],
+        "place": "bothaville"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-052",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-driefontein",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-054",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-poplar-grove",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-056",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2889955: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-africa-058",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "sanna-s-post",
+        "edges": [],
+        "place": "bloemfontein"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-060",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-al-khankah",
+        "edges": [],
+        "place": "al-khankah"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-062",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2237506: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-africa-064",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-leliefontein",
+        "edges": [],
+        "place": "carolina-south-africa"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-066",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-silkaatsnek",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-068",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "second-cairo-revolt",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-070",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-amoaful",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-072",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-gedaref",
+        "edges": [],
+        "place": "el-gadarif"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-074",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-abu-hamed",
+        "edges": [],
+        "place": "abu-hamad"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-076",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-rejaf",
+        "edges": [],
+        "place": "rejaf"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-078",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-laing-s-nek-1900",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-080",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "action-of-17-june-1802",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-082",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "shipwreck-of-dellys",
+        "edges": [],
+        "place": "dellys"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-084",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2935407: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-africa-086",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q2888427 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q2888427: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-27-africa-088",
+      "writer": "A",
+      "fired": "2026-10-28T13:34Z",
+      "status": "written",
+      "written": {
+        "event": "derdepoort-massacre",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-041",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q55633506: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-africa-043",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-alexandria-1801",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-045",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-umm-diwaykarat",
+        "edges": [],
+        "place": "kordofan"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-047",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1276340: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-africa-049",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-bergendal",
+        "edges": [],
+        "place": "belfast-mpumalanga"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-051",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-diamond-hill",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-053",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nooitgedacht",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-055",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "bloody-sunday-1900",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-057",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-adibo",
+        "edges": [],
+        "place": "yendi"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-059",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-dwarsvlei",
+        "edges": [],
+        "place": "krugersdorp"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-061",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "first-battle-of-tripoli-harbor",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-063",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tofrek",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-065",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "relief-of-ladysmith",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-067",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-boshof",
+        "edges": [],
+        "place": "boshof"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-069",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-nsamankow",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-071",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4871605: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-africa-073",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2888919: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-africa-075",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q27627676: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-africa-077",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-witpoort",
+        "edges": [],
+        "place": "witpoort"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-079",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "action-of-22-june-1803",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-081",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [
+        {
+          "edge": null,
+          "reason": "summary-missing",
+          "detail": "the lead of Q2889972 could not be read, so the record would carry the import's placeholder summary"
+        }
+      ],
+      "note": "Q2889972: no lead, so the import wrote its placeholder summary; the record and its place are off disk again"
+    },
+    {
+      "id": "2026-10-27-africa-083",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-tlemcen-1700",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-085",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-shangi",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-africa-087",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2889774: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-africa-089",
+      "writer": "B",
+      "fired": "2026-10-28T13:41Z",
+      "status": "written",
+      "written": {
+        "event": "battle-of-inyezane",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
     }
   ]
 }

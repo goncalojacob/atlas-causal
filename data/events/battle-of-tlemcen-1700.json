@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-tlemcen-1700",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q122830159",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Tlemcen (1700)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q122830159"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Tlemcen (1700)\", revision 1370591149"
+    }
+  ],
+  "title": "Battle of Tlemcen (1700)",
+  "summary": "The English Wikipedia article \"Battle of Tlemcen (1700)\", at revision 1370591149, opens: \"The battle between the forces of Ismail Ibn Sharif, the Alawi' Sultan, and the Algerian army of the Regency of Algiers took place in 1700 near Tlemcen.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q122830159, imported by tools/import/wikidata.mjs. The item's own description reads \"1700 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1700,
+    "end": 1700
+  },
+  "place": "tlemcen",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "maghrebi-war-1699-1702"
+}
