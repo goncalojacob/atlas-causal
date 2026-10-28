@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-ulm",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q159072",
+  "wikipedia": {
+    "en": "Battle of Ulm",
+    "pt": "Batalha de Ulm"
+  },
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-28"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q159072"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Ulm\", revision 1375646440"
+    }
+  ],
+  "title": "Battle of Ulm",
+  "summary": "The English Wikipedia article \"Battle of Ulm\", at revision 1375646440, opens: \"The Battle of Ulm on 16–20 October 1805 was a series of skirmishes, at the end of the Ulm campaign, which allowed Napoleon I to trap an entire Austrian army under the command of Karl Freiherr Mack von Leiberich with minimal losses and to force its surrender near Ulm in the Electorate of Bavaria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q159072, imported by tools/import/wikidata.mjs. The item's own description reads \"1805 battle during the War of the Third Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1805,
+    "end": 1805,
+    "date": "1805-10-16",
+    "endDate": "1805-10-19"
+  },
+  "place": "ulm",
+  "region": null,
+  "regionNote": null,
+  "parent": "war-of-the-third-coalition",
+  "category": "war",
+  "actors": []
+}

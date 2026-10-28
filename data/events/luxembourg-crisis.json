@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "luxembourg-crisis",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q699765",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Luxembourg Crisis",
+    "pt": "Crise de Luxemburgo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q699765"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Luxembourg Crisis\", revision 1339883033"
+    }
+  ],
+  "title": "Luxembourg Crisis",
+  "summary": "The English Wikipedia article \"Luxembourg Crisis\", at revision 1339883033, opens: \"The Luxembourg Crisis was a diplomatic dispute and confrontation in 1867 between France and Prussia over the political status of Luxembourg.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q699765, imported by tools/import/wikidata.mjs. The item's own description reads \"Diplomatic dispute and confrontation\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1867,
+    "end": 1867
+  },
+  "place": "luxembourg-q1842",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

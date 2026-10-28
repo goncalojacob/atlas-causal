@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "treaty-of-ghent",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1324198",
+  "sitelinks": {
+    "count": 30,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Ghent",
+    "pt": "Tratado de Gante"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1324198"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Ghent\", revision 1371409266"
+    }
+  ],
+  "title": "Treaty of Ghent",
+  "summary": "The English Wikipedia article \"Treaty of Ghent\", at revision 1371409266, opens: \"The Treaty of Ghent was the peace treaty that ended the War of 1812 between the United States and the United Kingdom. It took effect in February 1815. Both sides signed it on December 24, 1814, in the city of Ghent, United Netherlands. The treaty restored relations between the two parties to status quo ante bellum by restoring the pre-war borders of June 1812. Both sides were eager to end the war. It ended when the treaty arrived in Washington and was immediately ratified unanimously by the United States Senate and exchanged with British officials the next day.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1324198, imported by tools/import/wikidata.mjs. The item's own description reads \"December 1814 Peace Treaty ending the War of 1812\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815
+  },
+  "place": "ghent",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

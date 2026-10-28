@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-bakhchisarai",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q128388",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Bakhchisarai"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q128388"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Bakhchisarai\", revision 1379337401"
+    }
+  ],
+  "title": "Treaty of Bakhchisarai",
+  "summary": "The English Wikipedia article \"Treaty of Bakhchisarai\", at revision 1379337401, opens: \"The Treaty of Bakhchysarai or Treaty of Radzin, was signed by Muscovy, the Ottoman Empire, and the Crimean Khanate on 3 (13) January 1681 in Bakhchysarai. It established a 20-year truce, which ended the Russo-Turkish War (1676–1681).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q128388, imported by tools/import/wikidata.mjs. The item's own description reads \"peace treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1681,
+    "end": 1681,
+    "date": "1681-01-03"
+  },
+  "place": "bakhchysarai",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

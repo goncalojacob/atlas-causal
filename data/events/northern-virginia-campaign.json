@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "northern-virginia-campaign",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1952979",
+  "sitelinks": {
+    "count": 18,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Northern Virginia campaign",
+    "pt": "Campanha do Norte da Virgínia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1952979"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Northern Virginia campaign\", revision 1377866113"
+    }
+  ],
+  "title": "Northern Virginia campaign",
+  "summary": "The English Wikipedia article \"Northern Virginia campaign\", at revision 1377866113, opens: \"The Northern Virginia Campaign, also known as the Second Bull Run Campaign or Second Manassas Campaign, was a series of battles fought in Virginia during August and September 1862 in the eastern theater of the American Civil War. Confederate general Robert E. Lee followed up his successes of the Seven Days Battles in the Peninsula campaign by moving north toward Washington, D.C., and defeating Maj. Gen. John Pope and his Army of Virginia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1952979, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 series of battles fought in Virginia during the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-09-01"
+  },
+  "place": "virginia-q1370",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

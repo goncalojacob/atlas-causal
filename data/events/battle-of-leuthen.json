@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-leuthen",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q313435",
+  "sitelinks": {
+    "count": 26,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Leuthen"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q313435"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Leuthen\", revision 1379225511"
+    }
+  ],
+  "title": "Battle of Leuthen",
+  "summary": "The English Wikipedia article \"Battle of Leuthen\", at revision 1379225511, opens: \"The Battle of Leuthen was fought on 5 December 1757 between Frederick the Great's Prussian Army and an Austrian army commanded by Prince Charles of Lorraine and Count Leopold Joseph von Daun. Frederick used maneuver warfare and knowledge of the terrain to rout the larger Austrian force completely. The victory ensured Prussian control of Silesia during the Third Silesian War, which was part of the Seven Years' War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q313435, imported by tools/import/wikidata.mjs. The item's own description reads \"1757 battle of the Seven Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1757,
+    "end": 1757,
+    "date": "1757-12-05"
+  },
+  "place": "lutynia-gmina-miekinia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "neapolitan-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q298864",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Neapolitan War",
+    "pt": "Guerra Napolitana"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q298864"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Neapolitan War\", revision 1380950638"
+    }
+  ],
+  "title": "Neapolitan War",
+  "summary": "The English Wikipedia article \"Neapolitan War\", at revision 1380950638, opens: \"The Neapolitan War, also known as the Austro-Neapolitan War, was a conflict between the Napoleonic Kingdom of Naples and the Austrian Empire. It started on 15 March 1815, when King Joachim Murat declared war on Austria, and ended on 20 May 1815, with the signing of the Treaty of Casalanza. The war occurred during the Hundred Days between Napoleon's return from exile and before he left Paris to be decisively defeated at the Battle of Waterloo. The war was triggered by a pro-Napoleon uprising in Naples and ended with a decisive Austrian victory at the Battle of Tolentino, after which Bourbon monarch Ferdinand IV was reinstated as King of Naples and Sicily. Many say the declaration of war was a reckless decision by Murat. However, the intervention by Austria caused resentment in Italy, which further spurred the drive towards Italian unification.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q298864, imported by tools/import/wikidata.mjs. The item's own description reads \"1815 conflict of the Napoleonic Wars\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1815,
+    "end": 1815,
+    "date": "1815-03-15",
+    "endDate": "1815-05-20"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "hundred-days"
+}

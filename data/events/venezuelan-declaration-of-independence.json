@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "venezuelan-declaration-of-independence",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "end-unstated",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3382350",
+  "wikipedia": {
+    "en": "Venezuelan Declaration of Independence",
+    "pt": "Ata da Declaração de Independência da Venezuela"
+  },
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-28"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3382350"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Venezuelan Declaration of Independence\", revision 1370625449"
+    }
+  ],
+  "title": "Venezuelan Declaration of Independence",
+  "summary": "The English Wikipedia article \"Venezuelan Declaration of Independence\", at revision 1370625449, opens: \"The Venezuelan Declaration of Independence is a document drafted and adopted by Venezuela on July 5, 1811, through which Venezuelans made the decision to separate from the Spanish Crown in order to establish a new nation based on the premises of equality of individuals, abolition of censorship and dedication to freedom of expression. These principles were enshrined as a constitutional principle for the new nation and were radically opposed to the political, cultural, and social practices that had existed during three hundred years of colonization.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3382350, imported by tools/import/wikidata.mjs. The item's own description reads \"the declaration of independence from the Spanish monarchy\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1811,
+    "end": null,
+    "date": "1811-07-05"
+  },
+  "place": "palacio-federal-legislativo",
+  "region": null,
+  "regionNote": null,
+  "category": "founding",
+  "actors": []
+}

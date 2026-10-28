@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "battle-of-buxar",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2355467",
+  "sitelinks": {
+    "count": 32,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Buxar"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2355467"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Buxar\", revision 1381670071"
+    }
+  ],
+  "title": "Battle of Buxar",
+  "summary": "The English Wikipedia article \"Battle of Buxar\", at revision 1381670071, opens: \"The Battle of Buxar was fought on 22-23 October 1764, between the forces of the British East India Company (EIC), under the command of Major Hector Munro, and the combined armies of Mughal Emperor Shah Alam II and his allies: Mir Qasim, Nawab of Bengal; Maharaja Balwant Singh of Benares; and Shuja-ud-Daula, the Nawab of Awadh and Grand Vizier to the Emperor.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2355467, imported by tools/import/wikidata.mjs. The item's own description reads \"_War between Alliance (Mir Qasim, Shuja-ud-Daulah and Shah Alam || ) and British\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1764,
+    "end": 1764,
+    "date": "1764-11-06"
+  },
+  "place": "buxar",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

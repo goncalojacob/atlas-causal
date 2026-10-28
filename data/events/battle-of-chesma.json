@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-chesma",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1620408",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Chesma",
+    "pt": "Batalha de Chesma"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1620408"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chesma\", revision 1370108997"
+    }
+  ],
+  "title": "Battle of Chesma",
+  "summary": "The English Wikipedia article \"Battle of Chesma\", at revision 1370108997, opens: \"The Battle of Chesma took place on 5–7 July 1770 in and near Çeşme, in the area between the western tip of Anatolia and the island of Chios, which was the site of a number of past naval battles between the Ottoman Empire and the Republic of Venice. It was a part of the Orlov revolt of 1770, a precursor to the later Greek War of Independence (1821–1829), and the first of a number of disastrous fleet battles for the Ottomans against Russia. Today it is commemorated as a Day of Military Honour in Russia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1620408, imported by tools/import/wikidata.mjs. The item's own description reads \"1770 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1770,
+    "end": 1770,
+    "date": "1770-07-05",
+    "endDate": "1770-07-07"
+  },
+  "place": "chios",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "orlov-revolt"
+}

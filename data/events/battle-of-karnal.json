@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-karnal",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2736986",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Karnal",
+    "pt": "Batalha de Karnal"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2736986"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Karnal\", revision 1380723276"
+    }
+  ],
+  "title": "Battle of Karnal",
+  "summary": "The English Wikipedia article \"Battle of Karnal\", at revision 1380723276, opens: \"The Battle of Karnal was a decisive victory for Nader Shah, the founder of the Afsharid dynasty of Iran, during his invasion of India. Nader's forces defeated the army of Mughal emperor Muhammad Shah within three hours, paving the way for the Iranian sack of Delhi. The engagement is considered the crowning jewel in Nader's military career as well as a tactical masterpiece. The battle took place near Karnal in Haryana, 110 kilometres (68 mi) north of Delhi, India. As a result of the overwhelming defeat of the Mughal Empire at Karnal, the already-declining Mughal dynasty was critically weakened to such an extent as to hasten its demise. According to Axworthy, it is also possible that without the ruinous effects of Nader's invasion of India, European colonial takeover of the Indian subcontinent would have come in a different form or perhaps not at all.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2736986, imported by tools/import/wikidata.mjs. The item's own description reads \"1739 part of the Persian Invasion of India\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1739,
+    "end": 1739,
+    "date": "1739-02-24"
+  },
+  "place": "karnal",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "nader-shah-s-invasion-of-india"
+}

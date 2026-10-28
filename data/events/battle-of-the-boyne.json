@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-the-boyne",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q644960",
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of the Boyne",
+    "pt": "Batalha do Boyne"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q644960"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of the Boyne\", revision 1382257978"
+    }
+  ],
+  "title": "Battle of the Boyne",
+  "summary": "The English Wikipedia article \"Battle of the Boyne\", at revision 1382257978, opens: \"The Battle of the Boyne took place in 1690 between the forces of the deposed King James II, and those of King William III who, with his wife Queen Mary II, had acceded to the Crowns of England, Scotland and Ireland in 1689. The battle was fought across the River Boyne close to the town of Drogheda in the Kingdom of Ireland, modern-day Ireland, and resulted in a victory for William. This turned the tide in James's failed attempt to regain the Crowns of England, Scotland and Ireland and ultimately aided in ensuring the continued Protestant ascendancy in Ireland.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q644960, imported by tools/import/wikidata.mjs. The item's own description reads \"1690 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1690,
+    "end": 1690,
+    "date": "1690-07-11"
+  },
+  "place": "drogheda",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "williamite-war-in-ireland"
+}

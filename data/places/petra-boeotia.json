@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "petra-boeotia",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q15306825",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Petra, Boeotia"
+  },
+  "sources": [],
+  "names": [
+    "Petra, Boeotia"
+  ],
+  "where": {
+    "lon": 23.05751,
+    "lat": 38.37164,
+    "precision": "city",
+    "label": "Petra, Boeotia"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

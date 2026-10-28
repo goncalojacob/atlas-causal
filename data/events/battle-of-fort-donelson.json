@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-fort-donelson",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q601359",
+  "sitelinks": {
+    "count": 19,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Fort Donelson"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q601359"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Fort Donelson\", revision 1380654508"
+    }
+  ],
+  "title": "Battle of Fort Donelson",
+  "summary": "The English Wikipedia article \"Battle of Fort Donelson\", at revision 1380654508, opens: \"The Battle of Fort Donelson was fought from February 11–16, 1862, in the Western Theater of the American Civil War. The Union capture of the Confederate fort near the Tennessee–Kentucky border opened the Cumberland River, an important avenue for the invasion of the South. The Union's success also elevated Brig. Gen. Ulysses S. Grant from an obscure and largely unproven leader to the rank of major general, and earned him the nickname of \"Unconditional Surrender\" Grant.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q601359, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-02-11",
+    "endDate": "1862-02-16"
+  },
+  "place": "fort-donelson",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

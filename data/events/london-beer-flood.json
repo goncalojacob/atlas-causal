@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "london-beer-flood",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2783102",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "London Beer Flood",
+    "pt": "Dilúvio de cerveja de Londres"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2783102"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"London Beer Flood\", revision 1380864720"
+    }
+  ],
+  "title": "London Beer Flood",
+  "summary": "The English Wikipedia article \"London Beer Flood\", at revision 1380864720, opens: \"The London Beer Flood was an accident at Meux & Co's Horse Shoe Brewery, London, on 17 October 1814. It took place when one of the 22-foot-tall (6.7 m) wooden vats of fermenting porter burst. The escaping liquid dislodged the valve of another vessel and destroyed several large barrels: between 128,000 and 323,000 imperial gallons of beer were released in total.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2783102, imported by tools/import/wikidata.mjs. The item's own description reads \"1814 brewery disaster in London\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-10-17"
+  },
+  "place": "london",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

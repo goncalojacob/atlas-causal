@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-gulnabad",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3296937",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Gulnabad",
+    "pt": "Batalha de Gulnabade"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3296937"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Gulnabad\", revision 1378916142"
+    }
+  ],
+  "title": "Battle of Gulnabad",
+  "summary": "The English Wikipedia article \"Battle of Gulnabad\", at revision 1378916142, opens: \"The Battle of Gulnabad was fought between the military forces from the Hotak dynasty and the army of the Safavid Empire on Sunday, March 8, 1722. It further cemented the eventual fall of the Safavid dynasty, which had been declining for decades.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3296937, imported by tools/import/wikidata.mjs. The item's own description reads \"1722 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1722,
+    "end": 1722,
+    "date": "1722-03-08"
+  },
+  "place": "jilanabad",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "daling-river",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5366081",
+  "sitelinks": {
+    "count": 10,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Daling River"
+  },
+  "sources": [],
+  "names": [
+    "Daling River"
+  ],
+  "where": {
+    "lon": 119.75,
+    "lat": 41.1,
+    "precision": "region",
+    "label": "Daling River"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

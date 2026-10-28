@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "cambrai",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q181285",
+  "sitelinks": {
+    "count": 80,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Cambrai",
+    "pt": "Cambrai"
+  },
+  "sources": [],
+  "names": [
+    "Cambrai"
+  ],
+  "where": {
+    "lon": 3.2347222222222,
+    "lat": 50.175833333333,
+    "precision": "city",
+    "label": "Cambrai"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

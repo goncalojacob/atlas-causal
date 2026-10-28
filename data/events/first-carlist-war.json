@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "first-carlist-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2341073",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "First Carlist War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2341073"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"First Carlist War\", revision 1380397585"
+    }
+  ],
+  "title": "First Carlist War",
+  "summary": "The English Wikipedia article \"First Carlist War\", at revision 1380397585, opens: \"The First Carlist War was a civil war in Spain from 1833 to 1840, the first of three Carlist Wars. It was fought between two factions over the succession to the throne and the nature of the Spanish monarchy: the conservative and devolutionist supporters of the late king's brother, Carlos de Borbón, became known as Carlists, while the progressive and centralist supporters of the regent, Maria Christina, acting for Isabella II of Spain, were called Liberals, cristinos or isabelinos. Aside from being a war of succession, on the question who was the rightful successor to King Ferdinand VII of Spain, the Carlists' goal was the return to an absolute monarchy, while the Liberals sought to defend the constitutional monarchy.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2341073, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war in Spain from 1833 to 1840\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1833,
+    "end": 1840,
+    "date": "1833-10-02",
+    "endDate": "1840-07-06"
+  },
+  "place": "spain-q29",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

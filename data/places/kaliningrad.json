@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "kaliningrad",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1829",
+  "sitelinks": {
+    "count": 134,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Kaliningrad",
+    "pt": "Kaliningrado"
+  },
+  "sources": [],
+  "names": [
+    "Kaliningrad",
+    "Kaliningrado"
+  ],
+  "where": {
+    "lon": 20.5,
+    "lat": 54.716666666667,
+    "precision": "city",
+    "label": "Kaliningrad"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

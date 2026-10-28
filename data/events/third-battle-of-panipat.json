@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "third-battle-of-panipat",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1259218",
+  "sitelinks": {
+    "count": 38,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Third Battle of Panipat"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1259218"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Third Battle of Panipat\", revision 1382112075"
+    }
+  ],
+  "title": "Third Battle of Panipat",
+  "summary": "The English Wikipedia article \"Third Battle of Panipat\", at revision 1382112075, opens: \"The Third Battle of Panipat took place on 14 January 1761 between the Maratha Empire and the invading army of the Durrani Empire. The battle took place in and around the city of Panipat, approximately 97 kilometres (60 mi) north of Delhi. The Afghans were supported by three key allies in India: Najib-ud-Daula who persuaded the support of the Rohilla chiefs, elements of the declining Mughal Empire, and most prized the Oudh State under Shuja-ud-Daula. The Maratha army was led by Sadashivrao Bhau, who was third-highest authority of the Maratha Confederacy after the Chhatrapati and the Peshwa. The bulk of the Maratha army was stationed in the Deccan Plateau with the Peshwa.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1259218, imported by tools/import/wikidata.mjs. The item's own description reads \"1761 battle in India between the Durrani and Maratha empires\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1761,
+    "end": 1761,
+    "date": "1761-01-14"
+  },
+  "place": "panipat",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

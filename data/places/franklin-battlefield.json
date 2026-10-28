@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "franklin-battlefield",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5491303",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Franklin Battlefield"
+  },
+  "sources": [],
+  "names": [
+    "Franklin Battlefield"
+  ],
+  "where": {
+    "lon": -86.866111,
+    "lat": 35.903611,
+    "precision": "point",
+    "label": "Franklin Battlefield"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

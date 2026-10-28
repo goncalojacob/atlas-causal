@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-mobile-bay",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1519203",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Mobile Bay",
+    "pt": "Batalha da Baía de Mobile"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1519203"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Mobile Bay\", revision 1370449990"
+    }
+  ],
+  "title": "Battle of Mobile Bay",
+  "summary": "The English Wikipedia article \"Battle of Mobile Bay\", at revision 1370449990, opens: \"The Battle of Mobile Bay of August 5, 1864, was a naval and land engagement of the American Civil War in which a Union fleet commanded by Rear Admiral David G. Farragut, assisted by a contingent of soldiers, attacked a smaller Confederate fleet led by Admiral Franklin Buchanan and three forts that guarded the entrance to Mobile Bay: Morgan, Gaines and Powell. Farragut's perhaps apocryphal order of \"Damn the torpedoes! Four bells. Captain Drayton, go ahead! Jouett, full speed!\" became famous in paraphrase, as \"Damn the torpedoes, full speed ahead!\"\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1519203, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-08-02",
+    "endDate": "1864-08-23"
+  },
+  "place": "mobile-bay",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "battle-of-eylau",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q331347",
+  "wikipedia": {
+    "en": "Battle of Eylau",
+    "pt": "Batalha de Eylau"
+  },
+  "sitelinks": {
+    "count": 41,
+    "on": "2026-10-28"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q331347"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Eylau\", revision 1375153167"
+    }
+  ],
+  "title": "Battle of Eylau",
+  "summary": "The English Wikipedia article \"Battle of Eylau\", at revision 1375153167, opens: \"The Battle of Eylau was a bloody and strategically inconclusive battle on 7 and 8 February [O.S. 26 and 27 Jan.] 1807 between Napoleon's Grande Armée and the Imperial Russian Army under the command of General Levin August von Bennigsen near the town of Preussisch Eylau in East Prussia. Late in the battle, the Russians received timely reinforcements from a Prussian division of von L'Estocq. After 1945, the town was renamed Bagrationovsk as part of Kaliningrad Oblast, Russia. The engagement was fought during the War of the Fourth Coalition, part of the Napoleonic Wars.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q331347, imported by tools/import/wikidata.mjs. The item's own description reads \"1807 battle during the War of the Fourth Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1807,
+    "end": 1807,
+    "date": "1807-02-07",
+    "endDate": "1807-02-08"
+  },
+  "place": "kaliningrad",
+  "region": null,
+  "regionNote": null,
+  "parent": "war-of-the-fourth-coalition",
+  "category": "war",
+  "actors": []
+}

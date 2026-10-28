@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-dalinghe",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7480131",
+  "sitelinks": {
+    "count": 7,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Dalinghe"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7480131"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Dalinghe\", revision 1370438202"
+    }
+  ],
+  "title": "Battle of Dalinghe",
+  "summary": "The English Wikipedia article \"Battle of Dalinghe\", at revision 1370438202, opens: \"The Battle of Dalinghe was a battle between the Later Jin dynasty and the Ming dynasty that took place between September and November 1631. Later Jin forces besieged and captured the fortified northern Ming city of Dalinghe in Liaoning. Using a combined force of Jurchen and Mongol cavalry, along with recently captured Ming artillery units, the Later Jin khan Hong Taiji surrounded Dalinghe and defeated a series of Ming reinforcement forces in the field. The Ming defenders under general Zu Dashou surrendered the city after taking heavy losses and running out of food. Several of the Ming officers captured in the battle would go on to play important roles in the ongoing transition from Ming to Qing. The battle was the first major test for the Chinese firearms specialists incorporated into the Later Jin military. Whereas the Later Jin had previously relied primarily on their own Eight Banners cavalry in military campaigns, after the siege of Dalinghe the Chinese infantry would play a larger role in the fighting. Unlike Nurhaci's failed siege at the Battle of Ningyuan several years prior, the siege of Dalinghe was a success that would soon be replicated in Songshan and Jinzhou, paving the way for the establishment of the Qing dynasty and the ultimate defeat of the Ming.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7480131, imported by tools/import/wikidata.mjs. The item carries no description in English or Portuguese. Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1631,
+    "end": 1631
+  },
+  "place": "daling-river",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "transition-from-ming-to-qing"
+}

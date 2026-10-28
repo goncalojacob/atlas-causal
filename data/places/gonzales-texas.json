@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "gonzales-texas",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q765552",
+  "sitelinks": {
+    "count": 47,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Gonzales, Texas",
+    "pt": "Gonzales (Texas)"
+  },
+  "sources": [],
+  "names": [
+    "Gonzales",
+    "Gonzales, Texas",
+    "Gonzales (Texas)"
+  ],
+  "where": {
+    "lon": -97.4478,
+    "lat": 29.5089,
+    "precision": "city",
+    "label": "Gonzales, Texas"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

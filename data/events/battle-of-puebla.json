@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-puebla",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1061228",
+  "sitelinks": {
+    "count": 29,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Puebla",
+    "pt": "Batalha de Puebla"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1061228"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Puebla\", revision 1379844913"
+    }
+  ],
+  "title": "Battle of Puebla",
+  "summary": "The English Wikipedia article \"Battle of Puebla\", at revision 1379844913, opens: \"The Battle of Puebla, also known as the Battle of the Fifth of May took place on 5 May 1862, near Puebla de los Ángeles, during the second French intervention in Mexico. French troops under the command of Charles de Lorencez repeatedly failed to storm the forts of Loreto and Guadalupe situated on top of the hills overlooking the city of Puebla, and eventually retreated to Orizaba in order to await reinforcements. Lorencez was dismissed from his command, and French troops under Élie Frédéric Forey eventually took the city, but the Mexican victory at Puebla against a better equipped force provided patriotic inspiration to the Mexicans.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1061228, imported by tools/import/wikidata.mjs. The item's own description reads \"1862 part of the French intervention in Mexico\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1862,
+    "end": 1862,
+    "date": "1862-05-05"
+  },
+  "place": "mexico-q96",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "second-french-intervention-in-mexico"
+}

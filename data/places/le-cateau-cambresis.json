@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "le-cateau-cambresis",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q329103",
+  "sitelinks": {
+    "count": 52,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Le Cateau-Cambrésis",
+    "pt": "Le Cateau-Cambrésis"
+  },
+  "sources": [],
+  "names": [
+    "Le Cateau-Cambrésis"
+  ],
+  "where": {
+    "lon": 3.5411111111111,
+    "lat": 50.105277777778,
+    "precision": "city",
+    "label": "Le Cateau-Cambrésis"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

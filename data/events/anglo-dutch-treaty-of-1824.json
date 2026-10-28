@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anglo-dutch-treaty-of-1824",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q224794",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Anglo-Dutch Treaty of 1824",
+    "pt": "Tratado Anglo-Holandês de 1824"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q224794"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Anglo-Dutch Treaty of 1824\", revision 1319480078"
+    }
+  ],
+  "title": "Anglo-Dutch Treaty of 1824",
+  "summary": "The English Wikipedia article \"Anglo-Dutch Treaty of 1824\", at revision 1319480078, opens: \"The Anglo-Dutch Treaty of 1824, also known as the Treaty of London, was a treaty between the United Kingdom and the Netherlands in London on 17 March 1824. The treaty was to resolve disputes arising from the execution of the Anglo-Dutch Treaty of 1814. For the Dutch, it was signed by Hendrik Fagel and Anton Reinhard Falck, and for the British, George Canning and Charles Williams-Wynn.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q224794, imported by tools/import/wikidata.mjs. The item's own description reads \"1824 treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1824,
+    "end": 1824,
+    "date": "1824-03-17"
+  },
+  "place": "london",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

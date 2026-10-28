@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-chapu",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q4870711",
+  "sitelinks": {
+    "count": 6,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Chapu"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4870711"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Chapu\", revision 1370436890"
+    }
+  ],
+  "title": "Battle of Chapu",
+  "summary": "The English Wikipedia article \"Battle of Chapu\", at revision 1370436890, opens: \"The Battle of Chapu was fought between British and Qing forces at Chapu on the northern shore of Hangzhou Bay during the First Opium War.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4870711, imported by tools/import/wikidata.mjs. The item's own description reads \"fought between British and Chinese forces in Chapu (Zhapu), China, in 1842 during the First Opium War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1842,
+    "end": 1842,
+    "date": "1842-05-18"
+  },
+  "place": null,
+  "region": "asia",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": [],
+  "parent": "first-opium-war"
+}

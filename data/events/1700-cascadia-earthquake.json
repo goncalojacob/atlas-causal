@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "1700-cascadia-earthquake",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1735004",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "1700 Cascadia earthquake"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1735004"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1700 Cascadia earthquake\", revision 1381361230"
+    }
+  ],
+  "title": "1700 Cascadia earthquake",
+  "summary": "The English Wikipedia article \"1700 Cascadia earthquake\", at revision 1381361230, opens: \"The 1700 Cascadia earthquake occurred along the Cascadia subduction zone on January 26, 1700, with an estimated moment magnitude of 8.7–9.2. The megathrust earthquake involved the Juan de Fuca plate from mid-Vancouver Island, south along the Pacific Northwest coast as far as northern California. The plate slipped an average of 20 meters along a fault rupture about 1,000 kilometers long.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1735004, imported by tools/import/wikidata.mjs. The item's own description reads \"January 1700 megathrust earthquake affecting the North American Pacific North West coast\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1700,
+    "end": 1700,
+    "date": "1700-01-26"
+  },
+  "place": "pacific-northwest",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

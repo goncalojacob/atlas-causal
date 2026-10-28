@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "torun",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q47554",
+  "sitelinks": {
+    "count": 90,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Toruń",
+    "pt": "Toruń"
+  },
+  "sources": [],
+  "names": [
+    "Toruń"
+  ],
+  "where": {
+    "lon": 18.616666666667,
+    "lat": 53.016666666667,
+    "precision": "city",
+    "label": "Toruń"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

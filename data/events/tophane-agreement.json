@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tophane-agreement",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1789244",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Tophane Agreement",
+    "pt": "Acordo de Tophane"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1789244"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tophane Agreement\", revision 1359289417"
+    }
+  ],
+  "title": "Tophane Agreement",
+  "summary": "The English Wikipedia article \"Tophane Agreement\", at revision 1359289417, opens: \"The Tophane Agreement was a treaty between the Principality of Bulgaria and the Ottoman Empire signed on 5 April [O.S. 24 March] 1886 during an ambassadorial conference in Istanbul. The agreement was named after the Istanbul neighborhood Tophane, located in Beyoğlu district, where the treaty was signed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1789244, imported by tools/import/wikidata.mjs. The item's own description reads \"1886 treaty between Bulgaria and the Ottomans\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1886,
+    "end": 1886,
+    "date": "1886-04-05"
+  },
+  "place": "tophane",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

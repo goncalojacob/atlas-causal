@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "tenpo-famine",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2517808",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Tenpō famine",
+    "pt": "Grande fome de Tenpō"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2517808"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Tenpō famine\", revision 1322594640"
+    }
+  ],
+  "title": "Tenpō famine",
+  "summary": "The English Wikipedia article \"Tenpō famine\", at revision 1322594640, opens: \"The Tenpō famine, also known as the Great Tenpō famine, was a famine that affected Japan during the Edo period. Considered to have lasted from 1833 to 1837, it was named after the Tenpō era (1830–1844), during the reign of Emperor Ninkō. The death toll was estimated between 200,000 and 300,000. The ruling shōgun during the famine was Tokugawa Ienari.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2517808, imported by tools/import/wikidata.mjs. The item's own description reads \"famine which affected Japan during the Edo period\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1833,
+    "end": 1837
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

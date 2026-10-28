@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "battle-of-amba-alagi-1895",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1398069",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Amba Alagi (1895)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1398069"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Amba Alagi (1895)\", revision 1370106558"
+    }
+  ],
+  "title": "Battle of Amba Alagi (1895)",
+  "summary": "The English Wikipedia article \"Battle of Amba Alagi (1895)\", at revision 1370106558, opens: \"The Battle of Amba Alagi was the first in a series of battles between the Italian General Baratieri and Ethiopia's Emperor Menelik during the First Italo-Ethiopian War. Amba Alagi was one of Baratieri's forward positions; it was under the command of Major Toselli with 2,000 Eritrean Askari. On 7 December 1895, the Ras Makonnen, Ras Oliè, and Ras Mengesha Yohannes commanded an assault of Menelik's vanguard that annihilated the Italians and killed Major Toselli.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1398069, imported by tools/import/wikidata.mjs. The item's own description reads \"1895 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1895,
+    "end": 1895,
+    "date": "1895-12-07"
+  },
+  "place": null,
+  "region": "africa",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

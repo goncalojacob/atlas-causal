@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "1804-haitian-massacre",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "origin": {
+    "tool": "wikidata"
+  },
+  "wikidata": "Q3297506",
+  "wikipedia": {
+    "en": "1804 Haitian massacre",
+    "pt": "Massacre de 1804 no Haiti"
+  },
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3297506"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"1804 Haitian massacre\", revision 1381403436"
+    }
+  ],
+  "title": "1804 Haitian massacre",
+  "summary": "The English Wikipedia article \"1804 Haitian massacre\", at revision 1381403436, opens: \"The 1804 Haiti massacre was carried out by Afro-Haitian soldiers, mostly former slaves, under orders from Jean-Jacques Dessalines against much of the remaining European population in Haiti, which mainly included French people. The Haitian Revolution defeated the French army in November 1803 and the Haitian Declaration of Independence happened on 1 January 1804. From February 1804 until 22 April 1804, between 3,000 and 7,000 people were killed.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3297506, imported by tools/import/wikidata.mjs. The item's own description reads \"genocide in 1804 in Haiti carried out against the remaining white French colonist under orders from J.-J. Dessalines\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1804,
+    "end": 1804,
+    "date": "1804-01",
+    "endDate": "1804-04-22"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "parent": "haitian-revolution-1791-1804",
+  "actors": []
+}

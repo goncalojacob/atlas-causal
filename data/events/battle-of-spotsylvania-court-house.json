@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-spotsylvania-court-house",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1538874",
+  "sitelinks": {
+    "count": 21,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Spotsylvania Court House",
+    "pt": "Batalha de Spotsylvania Court House"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1538874"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Spotsylvania Court House\", revision 1374823515"
+    }
+  ],
+  "title": "Battle of Spotsylvania Court House",
+  "summary": "The English Wikipedia article \"Battle of Spotsylvania Court House\", at revision 1374823515, opens: \"The Battle of Spotsylvania Court House, sometimes more simply referred to as the Battle of Spotsylvania, was the second major battle in Lt. Gen. Ulysses S. Grant and Maj. Gen. George G. Meade's 1864 Overland Campaign of the American Civil War. Following the bloody but inconclusive Battle of the Wilderness, Grant's army disengaged from Confederate General Robert E. Lee's army and moved to the southeast, attempting to lure Lee into battle under more favorable conditions. Elements of Lee's army beat the Union army to the critical crossroads of the Spotsylvania Court House in Spotsylvania County, Virginia, and began entrenching. Fighting occurred on and off from May 8 through May 21, 1864, as Grant tried various schemes to break the Confederate line. In the end, the battle was tactically inconclusive, but both sides declared victory. The Confederacy declared victory because they were able to hold their defenses. The United States declared victory because the Union offensive continued and Lee's army suffered losses that could not be replaced. With almost 32,000 casualties on both sides, Spotsylvania was the costliest battle of the campaign.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1538874, imported by tools/import/wikidata.mjs. The item's own description reads \"1864 battle of the American Civil War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1864,
+    "end": 1864,
+    "date": "1864-05-13"
+  },
+  "place": "spotsylvania-county-virginia",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-civil-war"
+}

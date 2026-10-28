@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "johnstown-flood",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q691404",
+  "sitelinks": {
+    "count": 14,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Johnstown Flood",
+    "pt": "Inundação de Johnstown"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q691404"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Johnstown Flood\", revision 1380111733"
+    }
+  ],
+  "title": "Johnstown Flood",
+  "summary": "The English Wikipedia article \"Johnstown Flood\", at revision 1380111733, opens: \"The Johnstown Flood, sometimes referred to locally as the Great Flood of 1889, occurred on Friday, May 31, 1889, after the catastrophic failure of the South Fork Dam, located on the south fork of the Little Conemaugh River, 14 miles (23 km) upstream of the town of Johnstown, Pennsylvania, United States. The dam ruptured after several days of extremely heavy rainfall, releasing 14.55 million cubic meters of water. With a volumetric flow rate that temporarily equaled the average flow rate of the Mississippi River, the flood killed 2,208 people and accounted for US$17 million in damage. By loss of life it was by far the worst flash flood in U.S. history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q691404, imported by tools/import/wikidata.mjs. The item's own description reads \"massive flood of Johnstown, Pennsylvania caused by the collapse of the South Fork Dam\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1889,
+    "end": 1889,
+    "date": "1889-05-31",
+    "endDate": "1889-05-31"
+  },
+  "place": "pennsylvania",
+  "region": null,
+  "regionNote": null,
+  "category": "disaster",
+  "actors": []
+}

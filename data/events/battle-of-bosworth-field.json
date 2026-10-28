@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-bosworth-field",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q222013",
+  "sitelinks": {
+    "count": 45,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Bosworth Field",
+    "pt": "Batalha de Bosworth Field"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q222013"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Bosworth Field\", revision 1380861767"
+    }
+  ],
+  "title": "Battle of Bosworth Field",
+  "summary": "The English Wikipedia article \"Battle of Bosworth Field\", at revision 1380861767, opens: \"The Battle of Bosworth or Bosworth Field was the last significant battle of the Wars of the Roses, the civil war between the houses of Lancaster and York that extended across England and Wales in the latter half of the 15th century. Fought on 22 August 1485, the battle was won by an alliance of Lancastrians and disaffected Yorkists. Their leader Henry Tudor, Earl of Richmond, became the first Welsh monarch of England from the House of Tudor by his victory and subsequent marriage to the de facto Yorkist heiress, Elizabeth of York. His opponent Richard III, the last king of the House of York, was killed during the battle, the last English monarch to fall in battle. Historians consider Bosworth Field to mark the end of the Plantagenet dynasty, making it one of the defining moments of English history.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q222013, imported by tools/import/wikidata.mjs. The item's own description reads \"1485 last significant battle of the Wars of the Roses\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1485,
+    "end": 1485,
+    "date": "1485-08-22"
+  },
+  "place": "bosworth-field-site",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "wars-of-the-roses"
+}

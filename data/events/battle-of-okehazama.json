@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "battle-of-okehazama",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q349422",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Okehazama",
+    "pt": "Batalha de Okehazama"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q349422"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Okehazama\", revision 1375316024"
+    }
+  ],
+  "title": "Battle of Okehazama",
+  "summary": "The English Wikipedia article \"Battle of Okehazama\", at revision 1375316024, opens: \"The Battle of Okehazama  took place on 12 June 1560 in Owari Province, in today's Aichi Prefecture. In this battle, the heavily outnumbered Oda clan troops, commanded by Oda Nobunaga, defeated Imagawa Yoshimoto and established Oda as one of the front-running warlords in the Sengoku period.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q349422, imported by tools/import/wikidata.mjs. The item's own description reads \"1560 battle\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1560,
+    "end": 1560,
+    "date": "1560-06-12"
+  },
+  "place": "japan-q17",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

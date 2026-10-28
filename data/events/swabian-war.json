@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "swabian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q165136",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Swabian War",
+    "pt": "Guerra dos Suabos"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q165136"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Swabian War\", revision 1370749126"
+    }
+  ],
+  "title": "Swabian War",
+  "summary": "The English Wikipedia article \"Swabian War\", at revision 1370749126, opens: \"The Swabian War of 1499, called Schwabenkrieg or Schweizerkrieg in Germany and Engadiner Krieg in Austria, was the last major armed conflict between the Old Swiss Confederacy and the House of Habsburg. What had begun as a local conflict over the control of the Val Müstair and the Umbrail Pass in the Grisons soon got out of hand when both parties called upon their allies for help; the Habsburgs demanding the support of the Swabian League, while the Federation of the Three Leagues of the Grisons turned to the Swiss Eidgenossenschaft. Hostilities quickly spread from the Grisons through the Rhine valley to Lake Constance and even to the Sundgau in southern Alsace, the westernmost part of the Habsburg region of Further Austria.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q165136, imported by tools/import/wikidata.mjs. The item's own description reads \"war in 1499\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1499,
+    "end": 1499,
+    "date": "1499-02",
+    "endDate": "1499-09-22"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

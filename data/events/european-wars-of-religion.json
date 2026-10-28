@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "european-wars-of-religion",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2490042",
+  "sitelinks": {
+    "count": 28,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "European wars of religion",
+    "pt": "Guerras de religião na Europa"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2490042"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"European wars of religion\", revision 1382113922"
+    }
+  ],
+  "title": "European wars of religion",
+  "summary": "The English Wikipedia article \"European wars of religion\", at revision 1382113922, opens: \"The European wars of religion were waged in Europe during the 16th, 17th and early 18th centuries. Fought after the Protestant Reformation began in 1517, the wars disrupted the religious and political order in the Catholic countries of Europe. Other motives during the wars involved revolt, territorial ambitions and great power conflicts. By the end of the Thirty Years' War (1618–1648), Catholic France had allied with the Protestant forces against the Catholic Habsburg monarchy. The wars were largely ended by the Peace of Westphalia (1648), which established a new political order that is now known as Westphalian sovereignty.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2490042, imported by tools/import/wikidata.mjs. The item's own description reads \"series of wars waged in Europe during the 16th and 17th centuries\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1524,
+    "end": 1697
+  },
+  "place": "europe",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

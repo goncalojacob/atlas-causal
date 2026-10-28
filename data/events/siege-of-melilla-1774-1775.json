@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siege-of-melilla-1774-1775",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4337399",
+  "sitelinks": {
+    "count": 16,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Siege of Melilla (1774–1775)",
+    "pt": "Cerco de Melilha"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4337399"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Siege of Melilla (1774–1775)\", revision 1370743424"
+    }
+  ],
+  "title": "Siege of Melilla (1774–1775)",
+  "summary": "The English Wikipedia article \"Siege of Melilla (1774–1775)\", at revision 1370743424, opens: \"The siege of Melilla was an attempt by the Sultanate of Morocco, supported by Algerian mercenaries, to capture the Spanish fortress of Melilla on the Moroccan Mediterranean coast. Mohammed ben Abdallah, then Sultan of Morocco, invaded Melilla in December 1774 with a large army of Royal Moroccan soldiers and Algerian mercenaries. The city was defended by a small garrison under Irish-born Governor Don Juan Sherlocke until the siege was lifted by a relief fleet in March 1775.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4337399, imported by tools/import/wikidata.mjs. The item's own description reads \"1774–1775 siege\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1774,
+    "end": 1775,
+    "date": "1774-12-09",
+    "endDate": "1775-03-19"
+  },
+  "place": "melilla",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
