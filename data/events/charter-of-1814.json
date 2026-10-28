@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "charter-of-1814",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q601516",
+  "sitelinks": {
+    "count": 23,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Charter of 1814",
+    "pt": "Constituição Francesa de 1814"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q601516"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Charter of 1814\", revision 1370438722"
+    }
+  ],
+  "title": "Charter of 1814",
+  "summary": "The English Wikipedia article \"Charter of 1814\", at revision 1370438722, opens: \"The French Charter of 1814 was a constitutional text granted by King Louis XVIII shortly after the Bourbon Restoration, in the form of a royal charter. The Congress of Vienna demanded that Louis bring in a constitution of some form before he was restored.\nAfter refusing the proposed constitution, the Constitution sénatoriale, set forth on 6 April 1814 by the provisional government and the Sénat conservateur, Louis Stanislas Xavier, count of Provence, bestowed a different constitutional Charter, on 4 June 1814. With the Congress of Vienna's demands met, the count of Provence was officially named Louis XVIII, and the monarchy was restored.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q601516, imported by tools/import/wikidata.mjs. The item's own description reads \"constitution\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1814,
+    "end": 1814,
+    "date": "1814-06-04"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "law",
+  "actors": []
+}

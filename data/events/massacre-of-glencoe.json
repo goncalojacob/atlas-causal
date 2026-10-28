@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "massacre-of-glencoe",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1254804",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Massacre of Glencoe",
+    "pt": "Massacre de Glencoe"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1254804"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Massacre of Glencoe\", revision 1379728372"
+    }
+  ],
+  "title": "Massacre of Glencoe",
+  "summary": "The English Wikipedia article \"Massacre of Glencoe\", at revision 1379728372, opens: \"The Massacre of Glencoe took place in Glen Coe in the Argyll region of the Scottish Highlands on 13 February 1692. An estimated 30 members and associates of the Clan MacDonald of Glencoe were killed by Scottish government forces, allegedly for failing to pledge allegiance to the new monarchs, William II/III and his wife Mary II.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1254804, imported by tools/import/wikidata.mjs. The item's own description reads \"1692 massacre which took place in Glen Coe, in the Highlands of Scotland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1692,
+    "end": 1692,
+    "date": "1692-02-13"
+  },
+  "place": "glencoe-highland",
+  "region": null,
+  "regionNote": null,
+  "actors": []
+}

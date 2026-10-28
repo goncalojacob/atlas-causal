@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "sack-of-magdeburg",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q698045",
+  "sitelinks": {
+    "count": 22,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Sack of Magdeburg",
+    "pt": "Saque de Magdeburgo"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q698045"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sack of Magdeburg\", revision 1371626790"
+    }
+  ],
+  "title": "Sack of Magdeburg",
+  "summary": "The English Wikipedia article \"Sack of Magdeburg\", at revision 1371626790, opens: \"The Sack of Magdeburg, also called the Magdeburg Wedding or Magdeburg's Sacrifice, was the destruction of the Protestant city of Magdeburg on 20–24 May 1631 by the Imperial Army and the forces of the Catholic League, resulting in the deaths of around 20,000, including both defenders and civilians. This event is considered the worst massacre of the Thirty Years' War. Magdeburg, then one of the largest cities within the borders of modern-day Germany, and having well over 25,000 inhabitants in 1630, did not recover its importance until well into the 18th century.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q698045, imported by tools/import/wikidata.mjs. The item's own description reads \"destruction of the Protestant city of Magdeburg on 20 May 1631 by the Imperial Army and the forces of the Catholic League\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1631,
+    "end": 1631,
+    "date": "1631-05-20",
+    "endDate": "1631-05-24"
+  },
+  "place": "magdeburg",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

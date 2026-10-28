@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "turkish-abductions",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q2149737",
+  "sitelinks": {
+    "count": 25,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Turkish Abductions",
+    "pt": "Sequestros turcos na Islândia"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2149737"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Turkish Abductions\", revision 1366812057"
+    }
+  ],
+  "title": "Turkish Abductions",
+  "summary": "The English Wikipedia article \"Turkish Abductions\", at revision 1366812057, opens: \"The Turkish Abductions were a series of slave raids by pirates from Algiers and Salé that took place in Iceland in the summer of 1627.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2149737, imported by tools/import/wikidata.mjs. The item's own description reads \"1627 Barbary slave raids against Iceland\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1627,
+    "end": 1627,
+    "date": "1627-06-20",
+    "endDate": "1627-07-17"
+  },
+  "place": "vestmannaeyjar",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}
