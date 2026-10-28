@@ -382,6 +382,15 @@
         }
       ]
     },
+    "anglo-mysore-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "anglo-spanish-war-1762-1763": {
       "from": "git",
       "versions": [
@@ -2040,6 +2049,15 @@
         }
       ]
     },
+    "battle-of-santa-cruz-de-tenerife-1797": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-santiago-de-cuba-1748": {
       "from": "git",
       "versions": [
@@ -2522,6 +2540,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "burmese-siamese-war-1765-1767": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3728,12 +3755,39 @@
         }
       ]
     },
+    "ottoman-old-regime": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "ottoman-persian-war-1730-1735": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "ottoman-persian-war-1743-1746": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "ottoman-persian-war-1776-1779": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4955,6 +5009,15 @@
         }
       ]
     },
+    "treaty-of-adrianople-1713": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-aix-la-chapelle-1748": {
       "from": "git",
       "versions": [
@@ -5028,6 +5091,24 @@
       ]
     },
     "treaty-of-canandaigua": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-constantinople-1700": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-constantinople-1724": {
       "from": "git",
       "versions": [
         {
@@ -5358,6 +5439,15 @@
         }
       ]
     },
+    "tulip-period": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "tuscarora-war": {
       "from": "git",
       "versions": [
@@ -5579,6 +5669,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "zemene-mesafint": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

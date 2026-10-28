@@ -17993,6 +17993,15 @@
         }
       ]
     },
+    "nahda": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "nakba": {
       "from": "git",
       "versions": [

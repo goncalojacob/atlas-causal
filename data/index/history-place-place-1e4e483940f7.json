@@ -909,6 +909,15 @@
         }
       ]
     },
+    "azerbaijan-iran": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "azincourt": {
       "from": "git",
       "versions": [
@@ -4881,6 +4890,15 @@
         }
       ]
     },
+    "erzurum": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "eshowe": {
       "from": "git",
       "versions": [
@@ -6395,6 +6413,15 @@
         }
       ]
     },
+    "hakodate-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "hall-of-mirrors": {
       "from": "git",
       "versions": [
@@ -7293,6 +7320,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "itsukushima": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -10141,6 +10177,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "mecca": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -13324,6 +13369,12 @@
         {
           "fields": [
             "sources"
+          ],
+          "on": "2026-09-22"
+        },
+        {
+          "fields": [
+            "sitelinks"
           ],
           "on": "2026-09-22"
         }
@@ -16921,6 +16972,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "ueda-nagano": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

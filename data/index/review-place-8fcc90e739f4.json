@@ -1365,7 +1365,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 4,
+      "degree": 5,
       "id": "anatolia",
       "kind": "place",
       "names": [
@@ -1649,7 +1649,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 2,
+      "degree": 3,
       "id": "arab-world",
       "kind": "place",
       "names": [
@@ -2427,6 +2427,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "azerbaijan-iran",
+      "kind": "place",
+      "names": [
+        "Azerbaijan (Iran)",
+        "Azerbaijão",
+        "Azerbaijão (Irã)"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-17",
       "degree": 1,
       "id": "azincourt",
@@ -2646,7 +2675,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 1,
+      "degree": 3,
       "id": "baghdad",
       "kind": "place",
       "names": [
@@ -3838,7 +3867,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "beijing",
       "kind": "place",
       "names": [
@@ -7335,7 +7364,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 2,
+      "degree": 3,
       "id": "caucasus",
       "kind": "place",
       "names": [
@@ -8952,7 +8981,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 6,
+      "degree": 13,
       "id": "constantinople",
       "kind": "place",
       "names": [
@@ -11517,7 +11546,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 3,
       "id": "edirne",
       "kind": "place",
       "names": [
@@ -12080,6 +12109,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "erzurum",
+      "kind": "place",
+      "names": [
+        "Erzurum"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-10-16",
       "degree": 1,
       "id": "eshowe",
@@ -12196,7 +12252,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 5,
+      "degree": 6,
       "id": "ethiopian-empire",
       "kind": "place",
       "names": [
@@ -13974,7 +14030,7 @@
         }
       ],
       "created": "2026-10-14",
-      "degree": 1,
+      "degree": 2,
       "id": "gallipoli",
       "kind": "place",
       "names": [
@@ -15611,6 +15667,33 @@
       "authors": [
         {
           "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "hakodate-bay",
+      "kind": "place",
+      "names": [
+        "Hakodate Bay"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
           "name": "Claude (assistant draft, unreviewed)"
         }
       ],
@@ -15781,7 +15864,7 @@
         }
       ],
       "created": "2026-10-12",
-      "degree": 1,
+      "degree": 2,
       "id": "hanseongbu",
       "kind": "place",
       "names": [
@@ -16580,7 +16663,7 @@
         }
       ],
       "created": "2026-10-02",
-      "degree": 3,
+      "degree": 4,
       "id": "hormuz-island",
       "kind": "place",
       "names": [
@@ -17744,7 +17827,7 @@
         }
       ],
       "created": "2026-10-17",
-      "degree": 3,
+      "degree": 5,
       "id": "istanbul",
       "kind": "place",
       "names": [
@@ -17923,6 +18006,33 @@
       ],
       "origin": {
         "tool": "assistant"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "itsukushima",
+      "kind": "place",
+      "names": [
+        "Itsukushima"
+      ],
+      "origin": {
+        "tool": "wikidata"
       },
       "review": {
         "flags": [
@@ -18277,7 +18387,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 35,
+      "degree": 38,
       "id": "japan-q17",
       "kind": "place",
       "names": [
@@ -24884,6 +24994,34 @@
       ],
       "created": "2026-10-28",
       "degree": 1,
+      "id": "mecca",
+      "kind": "place",
+      "names": [
+        "Mecca",
+        "Meca"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
       "id": "medicine-lodge-kansas",
       "kind": "place",
       "names": [
@@ -25193,7 +25331,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 3,
+      "degree": 4,
       "id": "mesopotamia",
       "kind": "place",
       "names": [
@@ -29430,7 +29568,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 15,
+      "degree": 21,
       "id": "ottoman-empire-q12560",
       "kind": "place",
       "names": [
@@ -33250,7 +33388,7 @@
         }
       ],
       "created": "2026-10-16",
-      "degree": 1,
+      "degree": 2,
       "id": "rhodes",
       "kind": "place",
       "names": [
@@ -35124,7 +35262,7 @@
         }
       ],
       "created": "2026-10-27",
-      "degree": 1,
+      "degree": 2,
       "id": "santa-cruz-de-tenerife",
       "kind": "place",
       "names": [
@@ -37186,7 +37324,7 @@
         }
       ],
       "created": "2026-10-15",
-      "degree": 3,
+      "degree": 4,
       "id": "south-india",
       "kind": "place",
       "names": [
@@ -41264,6 +41402,34 @@
         "status": "draft"
       },
       "revised": "2026-09-29",
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "ueda-nagano",
+      "kind": "place",
+      "names": [
+        "Ueda",
+        "Ueda, Nagano"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
       "status": "active"
     },
     {

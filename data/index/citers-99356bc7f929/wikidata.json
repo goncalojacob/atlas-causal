@@ -3206,6 +3206,12 @@
     },
     {
       "dissent": false,
+      "id": "anglo-burmese-wars",
+      "kind": "event",
+      "locator": "Q2248139"
+    },
+    {
+      "dissent": false,
       "id": "anglo-dutch-treaty-of-1824",
       "kind": "event",
       "locator": "Q224794"
@@ -3278,9 +3284,21 @@
     },
     {
       "dissent": false,
+      "id": "anglo-mysore-wars",
+      "kind": "event",
+      "locator": "Q617321"
+    },
+    {
+      "dissent": false,
       "id": "anglo-nepalese-war",
       "kind": "event",
       "locator": "Q195378"
+    },
+    {
+      "dissent": false,
+      "id": "anglo-persian-capture-of-hormuz",
+      "kind": "event",
+      "locator": "Q1031465"
     },
     {
       "dissent": false,
@@ -5630,6 +5648,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-gallipoli-1416",
+      "kind": "event",
+      "locator": "Q30600045"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-gandamak",
       "kind": "event",
       "locator": "Q908888"
@@ -7184,6 +7208,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-miyajima",
+      "kind": "event",
+      "locator": "Q1064989"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-miyako-bay",
       "kind": "event",
       "locator": "Q2890606"
@@ -8324,6 +8354,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-santa-cruz-de-tenerife-1797",
+      "kind": "event",
+      "locator": "Q543154"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-santiago-de-cuba-1748",
       "kind": "event",
       "locator": "Q4872306"
@@ -8852,6 +8888,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-tenmokuzan",
+      "kind": "event",
+      "locator": "Q1113509"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-tetouan",
       "kind": "event",
       "locator": "Q4872623"
@@ -9365,6 +9407,12 @@
       "id": "battle-of-two-sisters",
       "kind": "event",
       "locator": "Q4872617"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-uedahara",
+      "kind": "event",
+      "locator": "Q1358091"
     },
     {
       "dissent": false,
@@ -10172,6 +10220,12 @@
     },
     {
       "dissent": false,
+      "id": "bosnian-uprising-1831-1833",
+      "kind": "event",
+      "locator": "Q2586110"
+    },
+    {
+      "dissent": false,
       "id": "boston-massacre",
       "kind": "event",
       "locator": "Q215687"
@@ -10334,6 +10388,12 @@
     },
     {
       "dissent": false,
+      "id": "burmese-siamese-war-1765-1767",
+      "kind": "event",
+      "locator": "Q31307"
+    },
+    {
+      "dissent": false,
       "id": "burney-treaty",
       "kind": "event",
       "locator": "Q1016779"
@@ -10472,6 +10532,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-baghdad-1534",
+      "kind": "event",
+      "locator": "Q5036982"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-bahia",
       "kind": "event",
       "locator": "Q3704801"
@@ -10589,6 +10655,12 @@
       "id": "capture-of-malacca-1511",
       "kind": "event",
       "locator": "Q4110453"
+    },
+    {
+      "dissent": false,
+      "id": "capture-of-mecca-1813",
+      "kind": "event",
+      "locator": "Q3608484"
     },
     {
       "dissent": false,
@@ -10775,6 +10847,12 @@
       "id": "celali-rebellions",
       "kind": "event",
       "locator": "Q1052771"
+    },
+    {
+      "dissent": false,
+      "id": "century-of-humiliation",
+      "kind": "event",
+      "locator": "Q2909446"
     },
     {
       "dissent": false,
@@ -11150,6 +11228,18 @@
     },
     {
       "dissent": false,
+      "id": "constantinople-conference",
+      "kind": "event",
+      "locator": "Q699400"
+    },
+    {
+      "dissent": false,
+      "id": "constantinople-massacre-of-1821",
+      "kind": "event",
+      "locator": "Q13632820"
+    },
+    {
+      "dissent": false,
       "id": "constitution-of-the-ottoman-empire",
       "kind": "event",
       "locator": "Q1318452"
@@ -11165,6 +11255,18 @@
       "id": "continuation-war",
       "kind": "event",
       "locator": "Q122100"
+    },
+    {
+      "dissent": false,
+      "id": "convention-for-the-lease-of-the-liaotung-peninsula",
+      "kind": "event",
+      "locator": "Q4400947"
+    },
+    {
+      "dissent": false,
+      "id": "convention-of-constantinople",
+      "kind": "event",
+      "locator": "Q761454"
     },
     {
       "dissent": false,
@@ -12338,6 +12440,12 @@
     },
     {
       "dissent": false,
+      "id": "first-constitutional-era",
+      "kind": "event",
+      "locator": "Q3545916"
+    },
+    {
+      "dissent": false,
       "id": "first-franco-dahomean-war",
       "kind": "event",
       "locator": "Q2092939"
@@ -12821,6 +12929,12 @@
       "id": "genocide-convention",
       "kind": "event",
       "locator": "Q865344"
+    },
+    {
+      "dissent": false,
+      "id": "georgia-within-the-russian-empire",
+      "kind": "event",
+      "locator": "Q3720127"
     },
     {
       "dissent": false,
@@ -13838,6 +13952,12 @@
     },
     {
       "dissent": false,
+      "id": "japan-korea-treaty-of-1885",
+      "kind": "event",
+      "locator": "Q912109"
+    },
+    {
+      "dissent": false,
       "id": "japan-korea-treaty-of-1907",
       "kind": "event",
       "locator": "Q713917"
@@ -14054,6 +14174,12 @@
     },
     {
       "dissent": false,
+      "id": "keio",
+      "kind": "event",
+      "locator": "Q776775"
+    },
+    {
+      "dissent": false,
       "id": "kellogg-briand-pact",
       "kind": "event",
       "locator": "Q205073"
@@ -14147,6 +14273,12 @@
       "id": "kongo-civil-war",
       "kind": "event",
       "locator": "Q6429210"
+    },
+    {
+      "dissent": false,
+      "id": "koprulu-era",
+      "kind": "event",
+      "locator": "Q2745668"
     },
     {
       "dissent": false,
@@ -15014,6 +15146,12 @@
     },
     {
       "dissent": false,
+      "id": "nahda",
+      "kind": "event",
+      "locator": "Q1520921"
+    },
+    {
+      "dissent": false,
       "id": "nakba",
       "kind": "event",
       "locator": "Q3266633"
@@ -15077,6 +15215,12 @@
       "id": "navajo-wars",
       "kind": "event",
       "locator": "Q3778744"
+    },
+    {
+      "dissent": false,
+      "id": "naval-battle-of-hakodate",
+      "kind": "event",
+      "locator": "Q1322760"
     },
     {
       "dissent": false,
@@ -15524,6 +15668,12 @@
     },
     {
       "dissent": false,
+      "id": "opium-wars",
+      "kind": "event",
+      "locator": "Q220984"
+    },
+    {
+      "dissent": false,
       "id": "oran-expedition-1707",
       "kind": "event",
       "locator": "Q107354224"
@@ -15602,9 +15752,21 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-mamluk-war-1485-1491",
+      "kind": "event",
+      "locator": "Q4338036"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-mamluk-war-1516-1517",
       "kind": "event",
       "locator": "Q4338038"
+    },
+    {
+      "dissent": false,
+      "id": "ottoman-old-regime",
+      "kind": "event",
+      "locator": "Q3236133"
     },
     {
       "dissent": false,
@@ -15614,9 +15776,21 @@
     },
     {
       "dissent": false,
+      "id": "ottoman-persian-war-1730-1735",
+      "kind": "event",
+      "locator": "Q2913821"
+    },
+    {
+      "dissent": false,
       "id": "ottoman-persian-war-1743-1746",
       "kind": "event",
       "locator": "Q4465891"
+    },
+    {
+      "dissent": false,
+      "id": "ottoman-persian-war-1776-1779",
+      "kind": "event",
+      "locator": "Q6077256"
     },
     {
       "dissent": false,
@@ -15641,6 +15815,12 @@
       "id": "ottoman-safavid-war-1578-1590",
       "kind": "event",
       "locator": "Q701644"
+    },
+    {
+      "dissent": false,
+      "id": "ottoman-safavid-war-1603-1612",
+      "kind": "event",
+      "locator": "Q2578094"
     },
     {
       "dissent": false,
@@ -17786,6 +17966,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-baghdad-1821",
+      "kind": "event",
+      "locator": "Q132555025"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-bahrain",
       "kind": "event",
       "locator": "Q55633151"
@@ -18806,6 +18992,12 @@
     },
     {
       "dissent": false,
+      "id": "siege-of-rhodes-1480",
+      "kind": "event",
+      "locator": "Q701067"
+    },
+    {
+      "dissent": false,
       "id": "siege-of-rhodes-1522",
       "kind": "event",
       "locator": "Q767935"
@@ -19496,6 +19688,12 @@
     },
     {
       "dissent": false,
+      "id": "sultanate-of-women",
+      "kind": "event",
+      "locator": "Q1543663"
+    },
+    {
+      "dissent": false,
       "id": "sunda-strait-campaign-of-january-1794",
       "kind": "event",
       "locator": "Q7639108"
@@ -19655,6 +19853,12 @@
       "id": "tensho-iga-war",
       "kind": "event",
       "locator": "Q15436846"
+    },
+    {
+      "dissent": false,
+      "id": "tensho-momoyama-period",
+      "kind": "event",
+      "locator": "Q1145058"
     },
     {
       "dissent": false,
@@ -19970,6 +20174,12 @@
     },
     {
       "dissent": false,
+      "id": "treaties-of-erzurum",
+      "kind": "event",
+      "locator": "Q2980084"
+    },
+    {
+      "dissent": false,
       "id": "treaties-of-tilsit",
       "kind": "event",
       "locator": "Q154596"
@@ -20009,6 +20219,18 @@
       "id": "treaty-of-addis-ababa",
       "kind": "event",
       "locator": "Q2399119"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-adrianople-1568",
+      "kind": "event",
+      "locator": "Q909880"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-adrianople-1713",
+      "kind": "event",
+      "locator": "Q700238"
     },
     {
       "dissent": false,
@@ -20222,9 +20444,39 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-constantinople-1479",
+      "kind": "event",
+      "locator": "Q1980621"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-constantinople-1590",
       "kind": "event",
       "locator": "Q2470144"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-constantinople-1700",
+      "kind": "event",
+      "locator": "Q732064"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-constantinople-1724",
+      "kind": "event",
+      "locator": "Q425882"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-constantinople-1832",
+      "kind": "event",
+      "locator": "Q2287308"
+    },
+    {
+      "dissent": false,
+      "id": "treaty-of-constantinople-1897",
+      "kind": "event",
+      "locator": "Q495833"
     },
     {
       "dissent": false,
@@ -21140,6 +21392,12 @@
     },
     {
       "dissent": false,
+      "id": "triple-intervention",
+      "kind": "event",
+      "locator": "Q696874"
+    },
+    {
+      "dissent": false,
       "id": "tripoli-clashes-mid-october-2011",
       "kind": "event",
       "locator": "Q7843682"
@@ -21164,6 +21422,12 @@
     },
     {
       "dissent": false,
+      "id": "truce-of-constantinople-1533",
+      "kind": "event",
+      "locator": "Q3997897"
+    },
+    {
+      "dissent": false,
       "id": "trunajaya-rebellion",
       "kind": "event",
       "locator": "Q28136838"
@@ -21173,6 +21437,12 @@
       "id": "tuggurt-expedition-1552",
       "kind": "event",
       "locator": "Q28495617"
+    },
+    {
+      "dissent": false,
+      "id": "tulip-period",
+      "kind": "event",
+      "locator": "Q1343901"
     },
     {
       "dissent": false,
@@ -21941,6 +22211,12 @@
       "id": "zeitun-rebellion-1895-96",
       "kind": "event",
       "locator": "Q8068635"
+    },
+    {
+      "dissent": false,
+      "id": "zemene-mesafint",
+      "kind": "event",
+      "locator": "Q189297"
     },
     {
       "dissent": false,

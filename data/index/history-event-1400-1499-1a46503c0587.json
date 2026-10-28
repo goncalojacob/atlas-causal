@@ -83,6 +83,15 @@
         }
       ]
     },
+    "battle-of-gallipoli-1416": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-kosovo-1448": {
       "from": "git",
       "versions": [
@@ -419,6 +428,15 @@
         }
       ]
     },
+    "ottoman-mamluk-war-1485-1491": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "portuguese-conquest-of-ceuta": {
       "from": "git",
       "versions": [
@@ -492,6 +510,15 @@
       ]
     },
     "siege-of-orleans-1428-1429": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "siege-of-rhodes-1480": {
       "from": "git",
       "versions": [
         {
@@ -616,6 +643,15 @@
         {
           "first": true,
           "on": "2026-10-15"
+        }
+      ]
+    },
+    "treaty-of-constantinople-1479": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
