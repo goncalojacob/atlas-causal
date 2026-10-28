@@ -10520,7 +10520,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 6,
+      "degree": 7,
       "id": "denmark-q35",
       "kind": "place",
       "names": [
@@ -14942,6 +14942,34 @@
       "kind": "place",
       "names": [
         "Gingee"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "glencoe-highland",
+      "kind": "place",
+      "names": [
+        "Glencoe",
+        "Glencoe, Highland"
       ],
       "origin": {
         "tool": "wikidata"
@@ -23997,6 +24025,34 @@
       ],
       "created": "2026-10-28",
       "degree": 1,
+      "id": "magdeburg",
+      "kind": "place",
+      "names": [
+        "Magdeburg",
+        "Magdeburgo"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "created": "2026-10-28",
+      "degree": 1,
       "id": "magenta-lombardy",
       "kind": "place",
       "names": [
@@ -31909,7 +31965,7 @@
         }
       ],
       "created": "2026-09-24",
-      "degree": 2,
+      "degree": 3,
       "id": "port-au-prince",
       "kind": "place",
       "names": [
@@ -32444,7 +32500,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 6,
+      "degree": 7,
       "id": "prague",
       "kind": "place",
       "names": [
@@ -34594,7 +34650,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 7,
+      "degree": 8,
       "id": "russian-empire-q34266",
       "kind": "place",
       "names": [
@@ -43099,6 +43155,33 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "created": "2026-10-28",
+      "degree": 1,
+      "id": "vestmannaeyjar",
+      "kind": "place",
+      "names": [
+        "Vestmannaeyjar"
+      ],
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "a9-place"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "created": "2026-09-24",
       "degree": 1,
       "id": "vicenza",
@@ -43670,7 +43753,7 @@
         }
       ],
       "created": "2026-09-22",
-      "degree": 1,
+      "degree": 2,
       "id": "warsaw",
       "kind": "place",
       "names": [

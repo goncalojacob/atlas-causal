@@ -6632,6 +6632,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-khotyn-1621",
+      "kind": "event",
+      "locator": "Q860981"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kidal-2012",
       "kind": "event",
       "locator": "Q3560870"
@@ -9008,6 +9014,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sterboholy",
+      "kind": "event",
+      "locator": "Q223622"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-stones-river",
       "kind": "event",
       "locator": "Q1272132"
@@ -9863,6 +9875,12 @@
       "id": "battle-of-vasilika",
       "kind": "event",
       "locator": "Q3403037"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vaslui",
+      "kind": "event",
+      "locator": "Q1073358"
     },
     {
       "dissent": false,
@@ -11306,6 +11324,12 @@
     },
     {
       "dissent": false,
+      "id": "charter-of-1814",
+      "kind": "event",
+      "locator": "Q601516"
+    },
+    {
+      "dissent": false,
       "id": "charter-of-the-united-nations",
       "kind": "event",
       "locator": "Q171328"
@@ -12002,6 +12026,12 @@
     },
     {
       "dissent": false,
+      "id": "danish-golden-age",
+      "kind": "event",
+      "locator": "Q934618"
+    },
+    {
+      "dissent": false,
       "id": "dano-dutch-colonial-conflict-on-the-gold-coast",
       "kind": "event",
       "locator": "Q124749527"
@@ -12578,6 +12608,18 @@
     },
     {
       "dissent": false,
+      "id": "expulsion-of-jews-from-spain",
+      "kind": "event",
+      "locator": "Q7424558"
+    },
+    {
+      "dissent": false,
+      "id": "expulsion-of-the-moriscos",
+      "kind": "event",
+      "locator": "Q2345573"
+    },
+    {
+      "dissent": false,
       "id": "falklands-war",
       "kind": "event",
       "locator": "Q48249"
@@ -12677,6 +12719,12 @@
       "id": "fete-de-la-federation",
       "kind": "event",
       "locator": "Q143866"
+    },
+    {
+      "dissent": false,
+      "id": "field-of-the-cloth-of-gold",
+      "kind": "event",
+      "locator": "Q1030061"
     },
     {
       "dissent": false,
@@ -13298,6 +13346,12 @@
     },
     {
       "dissent": false,
+      "id": "french-constitution-of-1793",
+      "kind": "event",
+      "locator": "Q598887"
+    },
+    {
+      "dissent": false,
       "id": "french-expedition-to-korea",
       "kind": "event",
       "locator": "Q134142"
@@ -13646,6 +13700,12 @@
     },
     {
       "dissent": false,
+      "id": "great-sejm",
+      "kind": "event",
+      "locator": "Q883433"
+    },
+    {
+      "dissent": false,
       "id": "great-siege-of-gibraltar",
       "kind": "event",
       "locator": "Q815145"
@@ -13817,6 +13877,12 @@
       "id": "haitian-embassy-in-cuba-massacre",
       "kind": "event",
       "locator": "Q133827414"
+    },
+    {
+      "dissent": false,
+      "id": "haitian-independence-debt",
+      "kind": "event",
+      "locator": "Q3062299"
     },
     {
       "dissent": false,
@@ -15014,6 +15080,12 @@
     },
     {
       "dissent": false,
+      "id": "legislative-assembly-france",
+      "kind": "event",
+      "locator": "Q780457"
+    },
+    {
+      "dissent": false,
       "id": "lewis-and-clark-expedition",
       "kind": "event",
       "locator": "Q505802"
@@ -15311,6 +15383,12 @@
       "id": "massacre-of-arabs-during-the-zanzibar-revolution",
       "kind": "event",
       "locator": "Q123998092"
+    },
+    {
+      "dissent": false,
+      "id": "massacre-of-glencoe",
+      "kind": "event",
+      "locator": "Q1254804"
     },
     {
       "dissent": false,
@@ -15743,6 +15821,12 @@
       "id": "nanjing-massacre",
       "kind": "event",
       "locator": "Q192055"
+    },
+    {
+      "dissent": false,
+      "id": "nansen-s-fram-expedition",
+      "kind": "event",
+      "locator": "Q1964751"
     },
     {
       "dissent": false,
@@ -17408,6 +17492,12 @@
     },
     {
       "dissent": false,
+      "id": "regency-era",
+      "kind": "event",
+      "locator": "Q25861"
+    },
+    {
+      "dissent": false,
       "id": "regulator-movement-in-north-carolina",
       "kind": "event",
       "locator": "Q3444492"
@@ -17648,6 +17738,12 @@
     },
     {
       "dissent": false,
+      "id": "russification-of-finland",
+      "kind": "event",
+      "locator": "Q2328052"
+    },
+    {
+      "dissent": false,
       "id": "russo-crimean-wars",
       "kind": "event",
       "locator": "Q923852"
@@ -17819,6 +17915,12 @@
       "id": "sack-of-madeira",
       "kind": "event",
       "locator": "Q111208948"
+    },
+    {
+      "dissent": false,
+      "id": "sack-of-magdeburg",
+      "kind": "event",
+      "locator": "Q698045"
     },
     {
       "dissent": false,
@@ -20156,6 +20258,12 @@
     },
     {
       "dissent": false,
+      "id": "southern-cross-expedition",
+      "kind": "event",
+      "locator": "Q1636166"
+    },
+    {
+      "dissent": false,
       "id": "soviet-afghan-war",
       "kind": "event",
       "locator": "Q83085"
@@ -20327,6 +20435,12 @@
       "id": "spanish-taino-war-of-san-juan-boriken",
       "kind": "event",
       "locator": "Q7676213"
+    },
+    {
+      "dissent": false,
+      "id": "splendid-isolation",
+      "kind": "event",
+      "locator": "Q1505242"
     },
     {
       "dissent": false,
@@ -22106,6 +22220,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-zboriv",
+      "kind": "event",
+      "locator": "Q729936"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-zuhab",
       "kind": "event",
       "locator": "Q2060524"
@@ -22202,6 +22322,12 @@
     },
     {
       "dissent": false,
+      "id": "tudor-period",
+      "kind": "event",
+      "locator": "Q2316201"
+    },
+    {
+      "dissent": false,
       "id": "tuggurt-expedition-1552",
       "kind": "event",
       "locator": "Q28495617"
@@ -22241,6 +22367,12 @@
       "id": "turco-egyptian-conquest-of-sudan-1820-1824",
       "kind": "event",
       "locator": "Q28162775"
+    },
+    {
+      "dissent": false,
+      "id": "turkish-abductions",
+      "kind": "event",
+      "locator": "Q2149737"
     },
     {
       "dissent": false,
@@ -22937,6 +23069,12 @@
       "id": "yom-kippur-war",
       "kind": "event",
       "locator": "Q49100, P31 Q198"
+    },
+    {
+      "dissent": false,
+      "id": "young-germany",
+      "kind": "event",
+      "locator": "Q1713406"
     },
     {
       "dissent": false,

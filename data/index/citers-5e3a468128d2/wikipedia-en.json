@@ -14924,6 +14924,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-khotyn-1621",
+      "kind": "event",
+      "locator": "\"Battle of Khotyn (1621)\", revision 1377503409"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-kidal-2012",
       "kind": "event",
       "locator": "\"Battle of Kidal (2012)\", revision 1370445294"
@@ -17300,6 +17306,12 @@
     },
     {
       "dissent": false,
+      "id": "battle-of-sterboholy",
+      "kind": "event",
+      "locator": "\"Battle of Štěrboholy\", revision 1370603153"
+    },
+    {
+      "dissent": false,
       "id": "battle-of-stones-river",
       "kind": "event",
       "locator": "\"Battle of Stones River\", revision 1380654840"
@@ -18167,6 +18179,12 @@
       "id": "battle-of-vasilika",
       "kind": "event",
       "locator": "\"Battle of Vasilika\", revision 1370592210"
+    },
+    {
+      "dissent": false,
+      "id": "battle-of-vaslui",
+      "kind": "event",
+      "locator": "\"Battle of Vaslui\", revision 1370592221"
     },
     {
       "dissent": false,
@@ -19598,6 +19616,12 @@
     },
     {
       "dissent": false,
+      "id": "charter-of-1814",
+      "kind": "event",
+      "locator": "\"Charter of 1814\", revision 1370438722"
+    },
+    {
+      "dissent": false,
       "id": "charter-of-the-united-nations",
       "kind": "event",
       "locator": "\"Charter of the United Nations\", revision 1365430628"
@@ -20294,6 +20318,12 @@
     },
     {
       "dissent": false,
+      "id": "danish-golden-age",
+      "kind": "event",
+      "locator": "\"Danish Golden Age\", revision 1366089003"
+    },
+    {
+      "dissent": false,
       "id": "dano-dutch-colonial-conflict-on-the-gold-coast",
       "kind": "event",
       "locator": "\"Dano-Dutch colonial conflict on the Gold Coast\", revision 1370614751"
@@ -20870,6 +20900,18 @@
     },
     {
       "dissent": false,
+      "id": "expulsion-of-jews-from-spain",
+      "kind": "event",
+      "locator": "\"Expulsion of Jews from Spain\", revision 1381497994"
+    },
+    {
+      "dissent": false,
+      "id": "expulsion-of-the-moriscos",
+      "kind": "event",
+      "locator": "\"Expulsion of the Moriscos\", revision 1354999658"
+    },
+    {
+      "dissent": false,
       "id": "falklands-war",
       "kind": "event",
       "locator": "\"Falklands War\", revision 1375590484"
@@ -20969,6 +21011,12 @@
       "id": "fete-de-la-federation",
       "kind": "event",
       "locator": "\"Fête de la Fédération\", revision 1369393792"
+    },
+    {
+      "dissent": false,
+      "id": "field-of-the-cloth-of-gold",
+      "kind": "event",
+      "locator": "\"Field of the Cloth of Gold\", revision 1374954214"
     },
     {
       "dissent": false,
@@ -21584,6 +21632,12 @@
     },
     {
       "dissent": false,
+      "id": "french-constitution-of-1793",
+      "kind": "event",
+      "locator": "\"French Constitution of 1793\", revision 1380689156"
+    },
+    {
+      "dissent": false,
       "id": "french-expedition-to-korea",
       "kind": "event",
       "locator": "\"French expedition to Korea\", revision 1370620397"
@@ -21926,6 +21980,12 @@
     },
     {
       "dissent": false,
+      "id": "great-sejm",
+      "kind": "event",
+      "locator": "\"Great Sejm\", revision 1356723266"
+    },
+    {
+      "dissent": false,
       "id": "great-siege-of-gibraltar",
       "kind": "event",
       "locator": "\"Great Siege of Gibraltar\", revision 1370621817"
@@ -22079,6 +22139,12 @@
       "id": "hague-convention-for-the-protection-of-cultural-property-in-the-event-of-armed-conflict",
       "kind": "event",
       "locator": "\"Hague Convention for the Protection of Cultural Property in the Event of Armed Conflict\", revision 1374191348"
+    },
+    {
+      "dissent": false,
+      "id": "haitian-independence-debt",
+      "kind": "event",
+      "locator": "\"Haitian independence debt\", revision 1381358965"
     },
     {
       "dissent": false,
@@ -23240,6 +23306,12 @@
     },
     {
       "dissent": false,
+      "id": "legislative-assembly-france",
+      "kind": "event",
+      "locator": "\"Legislative Assembly (France)\", revision 1379627284"
+    },
+    {
+      "dissent": false,
       "id": "lei-aurea-1888",
       "kind": "event",
       "locator": "\"Lei Áurea\", revision 1368931269"
@@ -23543,6 +23615,12 @@
       "id": "massacre-of-arabs-during-the-zanzibar-revolution",
       "kind": "event",
       "locator": "\"Massacre of Arabs during the Zanzibar Revolution\", revision 1374125732"
+    },
+    {
+      "dissent": false,
+      "id": "massacre-of-glencoe",
+      "kind": "event",
+      "locator": "\"Massacre of Glencoe\", revision 1379728372"
     },
     {
       "dissent": false,
@@ -23945,6 +24023,12 @@
       "id": "nanjing-massacre",
       "kind": "event",
       "locator": "\"Nanjing Massacre\", revision 1378219981"
+    },
+    {
+      "dissent": false,
+      "id": "nansen-s-fram-expedition",
+      "kind": "event",
+      "locator": "\"Nansen's Fram expedition\", revision 1379574554"
     },
     {
       "dissent": false,
@@ -25628,6 +25712,12 @@
     },
     {
       "dissent": false,
+      "id": "regency-era",
+      "kind": "event",
+      "locator": "\"Regency era\", revision 1379705106"
+    },
+    {
+      "dissent": false,
       "id": "regulator-movement-in-north-carolina",
       "kind": "event",
       "locator": "\"Regulator Movement in North Carolina\", revision 1380790255"
@@ -25868,6 +25958,12 @@
     },
     {
       "dissent": false,
+      "id": "russification-of-finland",
+      "kind": "event",
+      "locator": "\"Russification of Finland\", revision 1347444831"
+    },
+    {
+      "dissent": false,
       "id": "russo-crimean-wars",
       "kind": "event",
       "locator": "\"Russo-Crimean Wars\", revision 1366130231"
@@ -26021,6 +26117,12 @@
       "id": "sack-of-madeira",
       "kind": "event",
       "locator": "\"Sack of Madeira\", revision 1340652442"
+    },
+    {
+      "dissent": false,
+      "id": "sack-of-magdeburg",
+      "kind": "event",
+      "locator": "\"Sack of Magdeburg\", revision 1371626790"
     },
     {
       "dissent": false,
@@ -28292,6 +28394,12 @@
     },
     {
       "dissent": false,
+      "id": "southern-cross-expedition",
+      "kind": "event",
+      "locator": "\"Southern Cross Expedition\", revision 1341519754"
+    },
+    {
+      "dissent": false,
       "id": "soviet-afghan-war",
       "kind": "event",
       "locator": "\"Soviet–Afghan War\", revision 1375699993"
@@ -28469,6 +28577,12 @@
       "id": "spanish-taino-war-of-san-juan-boriken",
       "kind": "event",
       "locator": "\"Spanish–Taíno War of San Juan–Borikén\", revision 1372603929"
+    },
+    {
+      "dissent": false,
+      "id": "splendid-isolation",
+      "kind": "event",
+      "locator": "\"Splendid isolation\", revision 1378086402"
     },
     {
       "dissent": false,
@@ -30380,6 +30494,12 @@
     },
     {
       "dissent": false,
+      "id": "treaty-of-zboriv",
+      "kind": "event",
+      "locator": "\"Treaty of Zboriv\", revision 1378888336"
+    },
+    {
+      "dissent": false,
       "id": "treaty-of-zuhab",
       "kind": "event",
       "locator": "\"Treaty of Zuhab\", revision 1378868024"
@@ -30464,6 +30584,12 @@
     },
     {
       "dissent": false,
+      "id": "tudor-period",
+      "kind": "event",
+      "locator": "\"Tudor period\", revision 1378647446"
+    },
+    {
+      "dissent": false,
       "id": "tuggurt-expedition-1552",
       "kind": "event",
       "locator": "\"Tuggurt Expedition (1552)\", revision 1375744695"
@@ -30503,6 +30629,12 @@
       "id": "turco-egyptian-conquest-of-sudan-1820-1824",
       "kind": "event",
       "locator": "\"Turco-Egyptian conquest of Sudan (1820–1824)\", revision 1373139446"
+    },
+    {
+      "dissent": false,
+      "id": "turkish-abductions",
+      "kind": "event",
+      "locator": "\"Turkish Abductions\", revision 1366812057"
     },
     {
       "dissent": false,
@@ -31169,6 +31301,12 @@
       "id": "yom-kippur-war",
       "kind": "event",
       "locator": "\"Yom Kippur War\", revision 1373227342"
+    },
+    {
+      "dissent": false,
+      "id": "young-germany",
+      "kind": "event",
+      "locator": "\"Young Germany\", revision 1369303321"
     },
     {
       "dissent": false,

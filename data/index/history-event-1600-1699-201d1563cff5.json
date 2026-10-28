@@ -812,6 +812,15 @@
         }
       ]
     },
+    "battle-of-khotyn-1621": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-kircholm": {
       "from": "git",
       "versions": [
@@ -2412,6 +2421,15 @@
         }
       ]
     },
+    "expulsion-of-the-moriscos": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "filips-van-zuylen-s-campaign-against-luanda": {
       "from": "git",
       "versions": [
@@ -2754,6 +2772,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "massacre-of-glencoe": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3393,6 +3420,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "sack-of-magdeburg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4527,6 +4563,15 @@
         }
       ]
     },
+    "treaty-of-zboriv": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-zuhab": {
       "from": "git",
       "versions": [
@@ -4569,6 +4614,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "turkish-abductions": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

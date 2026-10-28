@@ -173,6 +173,15 @@
         }
       ]
     },
+    "battle-of-vaslui": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-vega-real": {
       "from": "git",
       "versions": [
@@ -230,6 +239,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "expulsion-of-jews-from-spain": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -713,6 +731,15 @@
       ]
     },
     "treaty-of-troyes": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "tudor-period": {
       "from": "git",
       "versions": [
         {
