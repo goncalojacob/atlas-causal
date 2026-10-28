@@ -1276,6 +1276,15 @@
         }
       ]
     },
+    "battle-of-leuthen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-long-island": {
       "from": "git",
       "versions": [
@@ -3176,6 +3185,15 @@
         }
       ]
     },
+    "jay-treaty": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "king-george-s-war": {
       "from": "git",
       "versions": [
@@ -3404,6 +3422,15 @@
         }
       ]
     },
+    "orlov-revolt": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "ottoman-invasion-of-western-georgia-1703": {
       "from": "git",
       "versions": [
@@ -3440,12 +3467,30 @@
         }
       ]
     },
+    "peace-of-travendal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "peace-of-utrecht": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "persian-expedition-of-1796": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4586,6 +4631,15 @@
         }
       ]
     },
+    "treaty-of-abo": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-aix-la-chapelle-1748": {
       "from": "git",
       "versions": [
@@ -4619,6 +4673,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-baden-1714": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -4818,6 +4881,15 @@
         }
       ]
     },
+    "treaty-of-kyakhta-1727": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-lochaber": {
       "from": "git",
       "versions": [
@@ -4846,6 +4918,15 @@
       ]
     },
     "treaty-of-new-york-1790": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-nis-1739": {
       "from": "git",
       "versions": [
         {
@@ -4908,12 +4989,39 @@
         }
       ]
     },
+    "treaty-of-sistova": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "treaty-of-the-pruth": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-tripoli": {
       "from": "git",
       "versions": [
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-vienna-1738": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

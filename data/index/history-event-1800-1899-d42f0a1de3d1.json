@@ -92,6 +92,15 @@
         }
       ]
     },
+    "1851-french-coup-d-etat": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "1854-macedonian-rebellion": {
       "from": "git",
       "versions": [
@@ -738,6 +747,15 @@
         }
       ]
     },
+    "anglo-dutch-treaty-of-1824": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "anglo-egyptian-war": {
       "from": "git",
       "versions": [
@@ -973,6 +991,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "austro-hungarian-campaign-in-bosnia-and-herzegovina-in-1878": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1795,6 +1822,15 @@
         }
       ]
     },
+    "battle-of-copenhagen-1807": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-corunna": {
       "from": "git",
       "versions": [
@@ -2139,6 +2175,15 @@
             "regionNote"
           ],
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "battle-of-gravelotte": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5480,6 +5525,15 @@
         }
       ]
     },
+    "first-carlist-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "first-central-american-civil-war": {
       "from": "git",
       "versions": [
@@ -6138,6 +6192,15 @@
         }
       ]
     },
+    "gunboat-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "hadzi-prodan-s-rebellion": {
       "from": "git",
       "versions": [
@@ -6519,6 +6582,15 @@
         }
       ]
     },
+    "june-rebellion": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "kabul-expedition-1842": {
       "from": "git",
       "versions": [
@@ -6594,6 +6666,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "krakow-uprising": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -6678,6 +6759,15 @@
         }
       ]
     },
+    "liberal-wars": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "liberation-of-kalamata": {
       "from": "git",
       "versions": [
@@ -6705,6 +6795,15 @@
         }
       ]
     },
+    "london-conference-of-1832": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "los-andes-vs-prueba": {
       "from": "git",
       "versions": [
@@ -6724,6 +6823,15 @@
       ]
     },
     "lower-mississippi-valley-yellow-fever-epidemic-of-1878": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "luxembourg-crisis": {
       "from": "git",
       "versions": [
         {
@@ -7039,6 +7147,15 @@
         }
       ]
     },
+    "neapolitan-war": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "nepal-sikh-war": {
       "from": "git",
       "versions": [
@@ -7329,6 +7446,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "paris-convention-for-the-protection-of-industrial-property": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -7961,6 +8087,15 @@
         {
           "first": true,
           "on": "2026-10-13"
+        }
+      ]
+    },
+    "revolutions-of-1848-in-the-austrian-empire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -9512,6 +9647,15 @@
         }
       ]
     },
+    "treaty-of-1818": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "treaty-of-addis-ababa": {
       "from": "git",
       "versions": [
@@ -10132,6 +10276,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "treaty-of-vienna-1864": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },

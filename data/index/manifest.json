@@ -19,31 +19,31 @@
       "to": 1399
     },
     {
-      "file": "index/attributes-1400-1499-c2173728a3f3.json",
+      "file": "index/attributes-1400-1499-7450db01ee25.json",
       "from": 1400,
       "key": "1400-1499",
       "to": 1499
     },
     {
-      "file": "index/attributes-1500-1599-49c243a7bcca.json",
+      "file": "index/attributes-1500-1599-510066e9a85b.json",
       "from": 1500,
       "key": "1500-1599",
       "to": 1599
     },
     {
-      "file": "index/attributes-1600-1699-bc74c7597010.json",
+      "file": "index/attributes-1600-1699-51c4462b2152.json",
       "from": 1600,
       "key": "1600-1699",
       "to": 1699
     },
     {
-      "file": "index/attributes-1700-1799-fce802721a66.json",
+      "file": "index/attributes-1700-1799-0f9e31917e6e.json",
       "from": 1700,
       "key": "1700-1799",
       "to": 1799
     },
     {
-      "file": "index/attributes-1800-1899-0c4bbbf78fe9.json",
+      "file": "index/attributes-1800-1899-867cd42d22ff.json",
       "from": 1800,
       "key": "1800-1899",
       "to": 1899
@@ -67,7 +67,7 @@
       "to": null
     },
     {
-      "file": "index/attributes-place-0adde4a770bc.json",
+      "file": "index/attributes-place-846f7c6565fa.json",
       "from": null,
       "key": "place",
       "to": null
@@ -944,19 +944,19 @@
       "id": "law"
     },
     {
-      "count": 24,
+      "count": 25,
       "id": "other"
     },
     {
-      "count": 101,
+      "count": 103,
       "id": "revolution"
     },
     {
-      "count": 255,
+      "count": 280,
       "id": "treaty"
     },
     {
-      "count": 2108,
+      "count": 2123,
       "id": "war"
     }
   ],
@@ -1025,10 +1025,10 @@
   "counts": {
     "actors": 2699,
     "edges": 1283,
-    "events": 3397,
+    "events": 3446,
     "narratives": 2,
     "offices": 11,
-    "places": 1491,
+    "places": 1507,
     "presences": 6691,
     "regions": 5,
     "relations": 138,
@@ -1073,46 +1073,46 @@
     }
   ],
   "files": {
-    "citers": "index/citers-c225df11d904",
-    "core": "index/core-f50243efead1.json",
-    "grounds": "index/grounds-863d0735dbbc.json",
+    "citers": "index/citers-08cc83e78598",
+    "core": "index/core-01370888934a.json",
+    "grounds": "index/grounds-b47d4cbb155e.json",
     "presences": "index/presences-8ed0e0b86ad1.json",
-    "review": "index/review-62dcb41519d2.json",
-    "search": "index/search-9a34fe17db49.json",
-    "sources": "index/sources-8e2ce8556b99.json",
-    "territories": "index/territories-0a1e73ad9da5.json"
+    "review": "index/review-beb682b17d14.json",
+    "search": "index/search-2319312bf6d8.json",
+    "sources": "index/sources-6b47d119daac.json",
+    "territories": "index/territories-d941a722545e.json"
   },
   "historyShards": [
     {
-      "file": "index/history-event-1400-1499-7a1bfcf1c1e4.json",
+      "file": "index/history-event-1400-1499-4b7447147c80.json",
       "from": 1400,
       "key": "1400-1499",
       "kind": "event",
       "to": 1499
     },
     {
-      "file": "index/history-event-1500-1599-fc25940281dc.json",
+      "file": "index/history-event-1500-1599-368bd8e5f7ff.json",
       "from": 1500,
       "key": "1500-1599",
       "kind": "event",
       "to": 1599
     },
     {
-      "file": "index/history-event-1600-1699-8465c0ac73c2.json",
+      "file": "index/history-event-1600-1699-2989c84e0c17.json",
       "from": 1600,
       "key": "1600-1699",
       "kind": "event",
       "to": 1699
     },
     {
-      "file": "index/history-event-1700-1799-1c4331192558.json",
+      "file": "index/history-event-1700-1799-d4798fc40bda.json",
       "from": 1700,
       "key": "1700-1799",
       "kind": "event",
       "to": 1799
     },
     {
-      "file": "index/history-event-1800-1899-7d32cc530dbb.json",
+      "file": "index/history-event-1800-1899-d42f0a1de3d1.json",
       "from": 1800,
       "key": "1800-1899",
       "kind": "event",
@@ -1245,7 +1245,7 @@
       "to": 2099
     },
     {
-      "file": "index/history-place-place-755a9f725574.json",
+      "file": "index/history-place-place-b54d2d04027e.json",
       "from": null,
       "key": "place",
       "kind": "place",

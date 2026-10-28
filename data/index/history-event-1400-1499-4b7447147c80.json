@@ -89,6 +89,15 @@
         }
       ]
     },
+    "great-stand-on-the-ugra-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "hussite-wars": {
       "from": "git",
       "versions": [
@@ -284,6 +293,15 @@
         }
       ]
     },
+    "second-peace-of-thorn-1466": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "sengoku-period": {
       "from": "git",
       "versions": [
@@ -439,6 +457,15 @@
             "actors"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "treaty-of-troyes": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
