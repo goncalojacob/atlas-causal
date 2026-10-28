@@ -394,6 +394,15 @@
         }
       ]
     },
+    "alma-crimea": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "almansa": {
       "from": "git",
       "versions": [
@@ -656,6 +665,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "arcole": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -1613,6 +1631,15 @@
       ]
     },
     "berbice": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "berezina": {
       "from": "git",
       "versions": [
         {
@@ -2996,6 +3023,15 @@
         }
       ]
     },
+    "central-london": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "central-portugal": {
       "from": "git",
       "versions": [
@@ -3322,6 +3358,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "chlumec-usti-nad-labem-district": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5191,6 +5236,15 @@
         }
       ]
     },
+    "formigny": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "fort-albany-first-nation": {
       "from": "git",
       "versions": [
@@ -6602,6 +6656,15 @@
         }
       ]
     },
+    "hochkirch": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "hochstadt-an-der-donau": {
       "from": "git",
       "versions": [
@@ -6981,6 +7044,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "inkerman": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -7718,6 +7790,15 @@
         }
       ]
     },
+    "karlovy-vary": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "karlstein-am-main": {
       "from": "git",
       "versions": [
@@ -8135,6 +8216,15 @@
         }
       ]
     },
+    "kolin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "koneswaram-temple": {
       "from": "git",
       "versions": [
@@ -8304,6 +8394,15 @@
       ]
     },
     "krakow": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "krbavsko-plain": {
       "from": "git",
       "versions": [
         {
@@ -8995,6 +9094,15 @@
         }
       ]
     },
+    "ligny": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "lille": {
       "from": "git",
       "versions": [
@@ -9077,6 +9185,24 @@
         }
       ]
     },
+    "lodi-lombardy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "loggerheads-staffordshire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "london": {
       "from": "git",
       "versions": [
@@ -9117,6 +9243,15 @@
             "wikipedia"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "long-marston-north-yorkshire": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -9485,6 +9620,15 @@
         }
       ]
     },
+    "magenta-lombardy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "magersfontein": {
       "from": "git",
       "versions": [
@@ -9848,6 +9992,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "martinesti": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -10733,6 +10886,15 @@
         }
       ]
     },
+    "muhlberg-brandenburg": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "mulleriyawa": {
       "from": "git",
       "versions": [
@@ -10955,6 +11117,15 @@
         }
       ]
     },
+    "nancy-france": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "naning": {
       "from": "git",
       "versions": [
@@ -10997,6 +11168,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "naseby": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -11755,6 +11935,15 @@
         }
       ]
     },
+    "orsha": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "osan": {
       "from": "git",
       "versions": [
@@ -11779,6 +11968,15 @@
         {
           "first": true,
           "on": "2026-09-23"
+        }
+      ]
+    },
+    "otranto": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -12045,6 +12243,15 @@
         }
       ]
     },
+    "patay-loiret": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "pathein": {
       "from": "git",
       "versions": [
@@ -12296,6 +12503,15 @@
             "sources"
           ],
           "on": "2026-09-22"
+        }
+      ]
+    },
+    "petrovaradin": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -13499,6 +13715,15 @@
         }
       ]
     },
+    "rivoli-veronese": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "roatan": {
       "from": "git",
       "versions": [
@@ -14337,6 +14562,15 @@
         }
       ]
     },
+    "sarbinowo-gmina-debno": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "sarh": {
       "from": "git",
       "versions": [
@@ -14849,6 +15083,15 @@
         }
       ]
     },
+    "smolensk": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "smolensk-voivodeship": {
       "from": "git",
       "versions": [
@@ -15349,6 +15592,15 @@
         }
       ]
     },
+    "st-albans": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "st-augustine-florida": {
       "from": "git",
       "versions": [
@@ -15463,6 +15715,15 @@
             "wikipedia"
           ],
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "stari-slankamen": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -15974,6 +16235,15 @@
         }
       ]
     },
+    "tewkesbury": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "texas": {
       "from": "git",
       "versions": [
@@ -16061,6 +16331,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "thessaloniki": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -16396,6 +16675,15 @@
             "summary"
           ],
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "towton": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -17017,6 +17305,15 @@
         }
       ]
     },
+    "verona": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "versailles-yvelines": {
       "from": "git",
       "versions": [
@@ -17207,6 +17504,15 @@
         }
       ]
     },
+    "wakefield": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "walcourt": {
       "from": "git",
       "versions": [
@@ -17309,6 +17615,15 @@
             "wikipedia"
           ],
           "on": "2026-09-17"
+        }
+      ]
+    },
+    "wassy": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -17625,6 +17940,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "worcester-england": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
