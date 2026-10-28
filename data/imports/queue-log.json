@@ -31053,6 +31053,652 @@
       },
       "refusals": [],
       "note": "Q1628057 is already the event \"battle-of-monterrey\""
+    },
+    {
+      "id": "2026-10-28-americas-207",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1735004 is already the event \"1700-cascadia-earthquake\""
+    },
+    {
+      "id": "2026-10-28-americas-209",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1272132 is already the event \"battle-of-stones-river\""
+    },
+    {
+      "id": "2026-10-28-americas-211",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1366089 is already the event \"battle-of-fort-henry\""
+    },
+    {
+      "id": "2026-10-28-americas-213",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1542829 is already the event \"battle-of-south-mountain\""
+    },
+    {
+      "id": "2026-10-28-americas-215",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q251184 is already the event \"battle-of-signal-hill\""
+    },
+    {
+      "id": "2026-10-28-americas-217",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q616931 is already the event \"battle-of-caseros\""
+    },
+    {
+      "id": "2026-10-28-americas-219",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2736004 is already the event \"battle-of-palo-alto\""
+    },
+    {
+      "id": "2026-10-28-europe-130",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q206752: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-132",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q32832 is already the event \"battle-of-varna\""
+    },
+    {
+      "id": "2026-10-28-europe-134",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q217429: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-136",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q846876 is already the event \"stockholm-bloodbath\""
+    },
+    {
+      "id": "2026-10-28-europe-138",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q241108 is already the event \"battle-of-friedland\""
+    },
+    {
+      "id": "2026-10-28-europe-140",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q331347 is already the event \"battle-of-eylau\""
+    },
+    {
+      "id": "2026-10-28-europe-142",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q651919 is already the event \"battle-of-culloden\""
+    },
+    {
+      "id": "2026-10-28-europe-144",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q876357 is already the event \"peterloo-massacre\""
+    },
+    {
+      "id": "2026-10-28-europe-146",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1054975 is already the event \"battle-of-preveza\""
+    },
+    {
+      "id": "2026-10-28-europe-148",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q158054 is already the event \"battle-of-lissa-1866\""
+    },
+    {
+      "id": "2026-10-28-europe-150",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2783102 is already the event \"london-beer-flood\""
+    },
+    {
+      "id": "2026-10-28-europe-152",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q932613 is already the event \"battle-of-castillon\""
+    },
+    {
+      "id": "2026-10-28-europe-154",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q768755 is already the event \"june-rebellion\""
+    },
+    {
+      "id": "2026-10-28-europe-156",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "written",
+      "written": {
+        "event": "1783-russian-annexation-of-crimea",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-158",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "written",
+      "written": {
+        "event": "capture-of-rome",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-160",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q681401 is already the event \"peace-of-vasvar\""
+    },
+    {
+      "id": "2026-10-28-europe-162",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q702189 is already the event \"treaty-of-nis-1739\""
+    },
+    {
+      "id": "2026-10-28-europe-164",
+      "writer": "A",
+      "fired": "2026-10-28T20:24Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q715967 is already the event \"treaty-of-kyakhta-1727\""
+    },
+    {
+      "id": "2026-10-28-americas-208",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q579971 is already the event \"battle-of-lake-george\""
+    },
+    {
+      "id": "2026-10-28-americas-210",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q621676 is already the event \"appomattox-campaign\""
+    },
+    {
+      "id": "2026-10-28-americas-212",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1377639 is already the event \"gettysburg-campaign\""
+    },
+    {
+      "id": "2026-10-28-americas-214",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1631029 is already the event \"battle-of-perryville\""
+    },
+    {
+      "id": "2026-10-28-americas-216",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q370671 is already the event \"battle-of-franklin\""
+    },
+    {
+      "id": "2026-10-28-americas-218",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q472672 is already the event \"battle-of-iquique\""
+    },
+    {
+      "id": "2026-10-28-americas-220",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3382350 is already the event \"venezuelan-declaration-of-independence\""
+    },
+    {
+      "id": "2026-10-28-europe-131",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q154483: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-133",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q273011 is already the event \"battle-of-marengo\""
+    },
+    {
+      "id": "2026-10-28-europe-135",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q222013 is already the event \"battle-of-bosworth-field\""
+    },
+    {
+      "id": "2026-10-28-europe-137",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q567712: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-139",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q324916 is already the event \"battle-of-solferino\""
+    },
+    {
+      "id": "2026-10-28-europe-141",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q464512 is already the event \"battle-of-balaclava\""
+    },
+    {
+      "id": "2026-10-28-europe-143",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4411 is already the event \"battle-of-valmy\""
+    },
+    {
+      "id": "2026-10-28-europe-145",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q644960 is already the event \"battle-of-the-boyne\""
+    },
+    {
+      "id": "2026-10-28-europe-147",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q698706 is already the event \"battle-of-kosovo-1448\""
+    },
+    {
+      "id": "2026-10-28-europe-149",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q159072 is already the event \"battle-of-ulm\""
+    },
+    {
+      "id": "2026-10-28-europe-151",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q631795: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-europe-153",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q541626 is already the event \"battle-of-aspern-essling\""
+    },
+    {
+      "id": "2026-10-28-europe-155",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "written",
+      "written": {
+        "event": "french-renaissance",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-157",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2490042 is already the event \"european-wars-of-religion\""
+    },
+    {
+      "id": "2026-10-28-europe-159",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "written",
+      "written": {
+        "event": "constitution-of-the-year-iii",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-europe-161",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1347605 is already the event \"truce-of-altmark\""
+    },
+    {
+      "id": "2026-10-28-europe-163",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1431007 is already the event \"treaty-of-breda-1667\""
+    },
+    {
+      "id": "2026-10-28-europe-165",
+      "writer": "B",
+      "fired": "2026-10-28T20:28Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1134125 is already the event \"treaty-of-troyes\""
     }
   ]
 }

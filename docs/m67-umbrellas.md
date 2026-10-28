@@ -3922,3 +3922,11 @@ Writer B imported it from the planner's queue as item `2026-10-28-europe-112`, r
 ## Writer B, 2026-10-28: `battle-of-lutzen-1813`, bare
 
 Writer B imported it from the planner's queue as item `2026-10-28-europe-114`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `french-renaissance`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-28-europe-155`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `constitution-of-the-year-iii`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-28-europe-159`, rank `list`. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.

@@ -10262,6 +10262,12 @@
     },
     {
       "dissent": false,
+      "id": "1783-russian-annexation-of-crimea",
+      "kind": "event",
+      "locator": "\"1783 Russian annexation of Crimea\", revision 1369316135"
+    },
+    {
+      "dissent": false,
       "id": "1786-kangding-luding-earthquake",
       "kind": "event",
       "locator": "\"1786 Kangding-Luding earthquake\", revision 1366163774"
@@ -19394,6 +19400,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-rome",
+      "kind": "event",
+      "locator": "\"Capture of Rome\", revision 1376273290"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-saint-vincent",
       "kind": "event",
       "locator": "\"Capture of Saint Vincent\", revision 1370609501"
@@ -19955,6 +19967,12 @@
       "id": "constitution-of-the-ottoman-empire",
       "kind": "event",
       "locator": "\"Constitution of the Ottoman Empire\", revision 1371626139"
+    },
+    {
+      "dissent": false,
+      "id": "constitution-of-the-year-iii",
+      "kind": "event",
+      "locator": "\"Constitution of the Year III\", revision 1381773420"
     },
     {
       "dissent": false,
@@ -21587,6 +21605,12 @@
       "id": "french-military-withdrawal-from-west-africa",
       "kind": "event",
       "locator": "\"French military withdrawal from West Africa (2022–2025)\", revision 1371499896"
+    },
+    {
+      "dissent": false,
+      "id": "french-renaissance",
+      "kind": "event",
+      "locator": "\"French Renaissance\", revision 1381241918"
     },
     {
       "dissent": false,

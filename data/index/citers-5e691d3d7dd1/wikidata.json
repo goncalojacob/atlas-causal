@@ -1850,6 +1850,12 @@
     },
     {
       "dissent": false,
+      "id": "1783-russian-annexation-of-crimea",
+      "kind": "event",
+      "locator": "Q18408564"
+    },
+    {
+      "dissent": false,
       "id": "1786-kangding-luding-earthquake",
       "kind": "event",
       "locator": "Q1348781"
@@ -11096,6 +11102,12 @@
     },
     {
       "dissent": false,
+      "id": "capture-of-rome",
+      "kind": "event",
+      "locator": "Q2604547"
+    },
+    {
+      "dissent": false,
       "id": "capture-of-saint-vincent",
       "kind": "event",
       "locator": "Q5037055"
@@ -11663,6 +11675,12 @@
       "id": "constitution-of-the-ottoman-empire",
       "kind": "event",
       "locator": "Q1318452"
+    },
+    {
+      "dissent": false,
+      "id": "constitution-of-the-year-iii",
+      "kind": "event",
+      "locator": "Q664271"
     },
     {
       "dissent": false,
@@ -13301,6 +13319,12 @@
       "id": "french-military-withdrawal-from-west-africa",
       "kind": "event",
       "locator": "Q131697486"
+    },
+    {
+      "dissent": false,
+      "id": "french-renaissance",
+      "kind": "event",
+      "locator": "Q2349908"
     },
     {
       "dissent": false,

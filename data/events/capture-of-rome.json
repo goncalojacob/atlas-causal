@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "capture-of-rome",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q2604547",
+  "sitelinks": {
+    "count": 27,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Capture of Rome",
+    "pt": "Tomada de Roma"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2604547"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Capture of Rome\", revision 1376273290"
+    }
+  ],
+  "title": "Capture of Rome",
+  "summary": "The English Wikipedia article \"Capture of Rome\", at revision 1376273290, opens: \"The capture of Rome occurred on 20 September 1870, as forces of the Kingdom of Italy took control of the city and of the Papal States. After a plebiscite held on 2 October 1870, Rome was officially made capital of Italy on 3 February 1871, completing the unification of Italy (Risorgimento).\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2604547, imported by tools/import/wikidata.mjs. The item's own description reads \"Final event of Italian unification (1870)\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1870,
+    "end": 1870,
+    "date": "1870-09-20"
+  },
+  "place": "rome",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "unification-of-italy"
+}

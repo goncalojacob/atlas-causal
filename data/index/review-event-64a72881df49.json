@@ -541,6 +541,35 @@
           "name": "Wikidata import (tools/import/wikidata.mjs)"
         }
       ],
+      "category": "founding",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "1783-russian-annexation-of-crimea",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "1783 Russian annexation of Crimea"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
       "category": "disaster",
       "cites": [
         "wikidata",
@@ -49795,6 +49824,37 @@
         "wikidata",
         "wikipedia-en"
       ],
+      "created": "2026-10-28",
+      "id": "capture-of-rome",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "parent": "unification-of-italy",
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead",
+          "filed-from-p361"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Capture of Rome"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "war",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
       "created": "2026-10-02",
       "id": "capture-of-saint-vincent",
       "kind": "event",
@@ -52919,6 +52979,35 @@
       "revised": null,
       "status": "active",
       "title": "Constitution of the Ottoman Empire"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "category": "law",
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "constitution-of-the-year-iii",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "Constitution of the Year III"
     },
     {
       "authors": [
@@ -61957,6 +62046,34 @@
       "revised": "2026-09-24",
       "status": "active",
       "title": "French military withdrawal from West Africa (2022–2025)"
+    },
+    {
+      "authors": [
+        {
+          "github": null,
+          "name": "Wikidata import (tools/import/wikidata.mjs)"
+        }
+      ],
+      "cites": [
+        "wikidata",
+        "wikipedia-en"
+      ],
+      "created": "2026-10-28",
+      "id": "french-renaissance",
+      "kind": "event",
+      "origin": {
+        "tool": "wikidata"
+      },
+      "review": {
+        "flags": [
+          "imported-facts",
+          "summary-from-lead"
+        ],
+        "status": "draft"
+      },
+      "revised": null,
+      "status": "active",
+      "title": "French Renaissance"
     },
     {
       "authors": [
@@ -113483,6 +113600,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "1783-russian-annexation-of-crimea",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "1786-kangding-luding-earthquake",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -120059,6 +120182,12 @@
       "rule": "degree-zero"
     },
     {
+      "id": "capture-of-rome",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
       "id": "capture-of-saint-vincent",
       "kind": "event",
       "message": "event has no edges and began no tenure",
@@ -120480,6 +120609,12 @@
     },
     {
       "id": "constitution-of-the-ottoman-empire",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "constitution-of-the-year-iii",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
@@ -121518,6 +121653,12 @@
     },
     {
       "id": "french-expedition-to-korea",
+      "kind": "event",
+      "message": "event has no edges and began no tenure",
+      "rule": "degree-zero"
+    },
+    {
+      "id": "french-renaissance",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
