@@ -3,2921 +3,6 @@
   "kind": "import-queue",
   "items": [
     {
-      "id": "2026-10-27-americas-120",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1545704",
-      "title": "Treaty of Cusseta",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 5 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-121",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7837056",
-      "title": "Treaty of Fort Harmar",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 5 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-122",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q7837100",
-      "title": "Treaty of Hopewell",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 5 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-123",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q125312",
-      "title": "Treaty of Moultrie Creek",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 5 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-124",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1566313",
-      "title": "Medicine Lodge Treaty",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 5 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-125",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7302489",
-      "title": "Reciprocity Treaty of 1875",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 5 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-126",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2518862",
-      "title": "Treaty of Medicine Creek",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 5 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-127",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7837295",
-      "title": "Treaty of Washington",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 5 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-128",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q7861365",
-      "title": "typhus epidemic of 1847",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of epidemics and pandemics, 5 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-129",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4867844",
-      "title": "Basque-Vicuña War",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1500–1799, 4 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-130",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q5150532",
-      "title": "Comanche–Mexico Wars",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-131",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1323522",
-      "title": "League War",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-132",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q16473092",
-      "title": "Peruvian Civil War of 1834",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-133",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q686731",
-      "title": "Fraser Canyon War",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 4 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-134",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q6843829",
-      "title": "Mier Expedition",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-135",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7125242",
-      "title": "Paiute War",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-136",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q16573170",
-      "title": "Peruvian Civil War of 1843-1844",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-137",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5887712",
-      "title": "Bolivian Civil War",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-138",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q7204086",
-      "title": "Pleasant Valley War",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-139",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1639077",
-      "title": "Treaty of Detroit",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-140",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q7837035",
-      "title": "Treaty of Doak's Stand",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 4 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-141",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1713044",
-      "title": "Treaty of Fort Meigs",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-142",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3536790",
-      "title": "Treaty of Fort Stanwix",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-143",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7837065",
-      "title": "Treaty of Fort Wayne",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-144",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3997905",
-      "title": "Treaty of Lochaber",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-145",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1212647",
-      "title": "Treaty of New York",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-146",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2518901",
-      "title": "Treaty of Pontotoc Creek",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-147",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1572601",
-      "title": "Treaty of Saginaw",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-148",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q28433157",
-      "title": "Treaty of St. Louis",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-149",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2518969",
-      "title": "Treaty of Washington",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-150",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4784054",
-      "title": "Arana-Southern Treaty",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-151",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5707512",
-      "title": "Hellgate treaty",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 4 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-152",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q5511513",
-      "title": "Fédon's rebellion",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1500–1799, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-153",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q17462627",
-      "title": "1827 Honduran coup d'état",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-154",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q16573164",
-      "title": "Ochomogo War",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-155",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2882649",
-      "title": "Venezuelan Civil War of 1848–1849",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-156",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q5140854",
-      "title": "Coeur d'Alene War",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 3 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-157",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5887718",
-      "title": "Peruvian Civil War of 1856-1858",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-158",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q17633460",
-      "title": "Peruvian Civil War of 1867",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-159",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7318719",
-      "title": "Revolution of the Lances",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-160",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q7492447",
-      "title": "Sheepeater Indian War",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-161",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7547104",
-      "title": "Snake War",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-162",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q5918797",
-      "title": "Barrios' War of Reunification",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-163",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2834353",
-      "title": "Peruvian Civil War of 1884–1885",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-164",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1394503",
-      "title": "Creole case",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of revolutions and rebellions, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-165",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7194582",
-      "title": "Pima Revolt",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of revolutions and rebellions, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-166",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3536736",
-      "title": "Treaty of Hampton Court",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-167",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7836988",
-      "title": "Treaty of Big Tree",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-168",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q27958274",
-      "title": "Treaty of Hartford",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-169",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7837099",
-      "title": "Treaty with the Cherokee, 1791",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-170",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q7837152",
-      "title": "Treaty with the Potawatomi, 1826",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-171",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3115285",
-      "title": "Miramichi Fire",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of natural disasters by death toll, 3 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-172",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q111940467",
-      "title": "Montserrat slave rebellion of 1768",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1500–1799, 2 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-173",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7318587",
-      "title": "Río Arriba Rebellion",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 2 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-174",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4929666",
-      "title": "Blue Revolution",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-175",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5150511",
-      "title": "Comanche Campaign",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-176",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q6783561",
-      "title": "Mason County War",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-177",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q17633455",
-      "title": "Peruvian Civil War of 1865",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-178",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q7492431",
-      "title": "Sheep Wars",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-179",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q97585797",
-      "title": "1521 Santo Domingo Slave Revolt",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of revolutions and rebellions, 2 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-180",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4554596",
-      "title": "1842 Slave Revolt in the Cherokee Nation",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of revolutions and rebellions, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-181",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q21070659",
-      "title": "Bayano Wars",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of revolutions and rebellions, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-182",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q27958272",
-      "title": "Treaty of Hartford",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-183",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q87256769",
-      "title": "Treaty of Chicago (1833)",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-184",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q27989232",
-      "title": "Treaty with the Sauk and Foxes, etc., 1830",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-185",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7105525",
-      "title": "Treaty with the Osage, 1825",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-186",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q7836950",
-      "title": "Treaty of 1677",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 2 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-187",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7837007",
-      "title": "Treaty of Casco",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 2 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-188",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q7837052",
-      "title": "Treaty of Fort Clark",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-189",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7837057",
-      "title": "Treaty of Fort Industry",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-190",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3536792",
-      "title": "Treaty of Fort Wayne",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-191",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7837073",
-      "title": "Treaty of Senock Dawkra",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-192",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q28135633",
-      "title": "Treaty of Indian Springs",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-193",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q28433149",
-      "title": "Treaty of Indian Springs",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-194",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q28433158",
-      "title": "Treaty of St. Louis",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-195",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q19107489",
-      "title": "Treaty with the Shawnee, 1825",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 2 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-196",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q17035574",
-      "title": "Treaty of St. Mary's",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 2 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-197",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q16967004",
-      "title": "California Indian Wars",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 1 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-198",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q5925205",
-      "title": "Hualapai War",
-      "parents": [
-        "american-indian-wars"
-      ],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 1 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-199",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q117355480",
-      "title": "Malespín's War",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of wars: 1800–1899, 1 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-200",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q131807029",
-      "title": "1796 Boca de Nigua slave revolt",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of revolutions and rebellions, 1 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-201",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q30675438",
-      "title": "Abaco Slave Revolt",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of revolutions and rebellions, 1 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-202",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q18711650",
-      "title": "Samba Rebellion",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of revolutions and rebellions, 1 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-203",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q8049165",
-      "title": "Yaqui Uprising",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of revolutions and rebellions, 1 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-204",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q27989231",
-      "title": "Third Treaty of Prairie du Chien",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 1 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-205",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q27958275",
-      "title": "Treaty of Hartford",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 1 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-206",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q54322416",
-      "title": "Treaty of Nicolls' Outpost",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 1 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-207",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7837233",
-      "title": "Treaty of Springwells",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 1 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-208",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q28433160",
-      "title": "Treaty of St. Louis",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 1 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-209",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7837296",
-      "title": "Treaty of Watertown",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 1 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-210",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q7837311",
-      "title": "Treaty of the Creek Agency",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 1 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-211",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7837216",
-      "title": "Treaty of Ruby Valley",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 1 sitelinks."
-    },
-    {
-      "id": "2026-10-27-americas-212",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q7837334",
-      "title": "Treaty with the Kalapuya, etc.",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 1 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-americas-213",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q106574817",
-      "title": "Lower Mississippi Valley yellow fever epidemic of 1878",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of epidemics and pandemics, 1 sitelinks."
-    },
-    {
-      "id": "2026-10-27-europe-035",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q206752",
-      "title": "Treaty of Campo Formio",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 51 sitelinks, lane read from the item's own description since it carries no point and no located coordinate."
-    },
-    {
-      "id": "2026-10-27-europe-036",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q749811",
-      "title": "Mutiny on the Bounty",
-      "parents": [],
-      "edges": [],
-      "why": "vital-5, from Vital articles Level 5 History, 47 sitelinks."
-    },
-    {
-      "id": "2026-10-27-europe-037",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q156447",
-      "title": "Treaty of Lunéville",
-      "parents": [
-        "war-of-the-second-coalition"
-      ],
-      "edges": [],
-      "why": "list, from List of treaties, 40 sitelinks."
-    },
-    {
-      "id": "2026-10-27-europe-038",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "europe",
-      "writer": "B",
-      "qid": "Q618292",
-      "title": "Treaty of Aigun",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of treaties, 40 sitelinks."
-    },
-    {
-      "id": "2026-10-27-europe-039",
-      "planned": "2026-10-27T15:51Z",
-      "lane": "europe",
-      "writer": "A",
-      "qid": "Q917048",
-      "title": "Great Plague of London",
-      "parents": [],
-      "edges": [],
-      "why": "list, from List of epidemics and pandemics, 40 sitelinks."
-    },
-    {
-      "id": "2026-10-27-africa-030",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q16707899",
-      "title": "Jihad of Usman dan Fodio",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (15). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-africa-031",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1164601",
-      "title": "Battle of Kousséri",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (13). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-africa-032",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q1806916",
-      "title": "First Melillan campaign",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (11). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-africa-033",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q5317509",
-      "title": "Dutch–Ahanta War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-africa-034",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q137339918",
-      "title": "Battle of Maroua–Miskin",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-africa-035",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q7109948",
-      "title": "Ottoman conquest of Habesh",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (4). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-africa-036",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q3119084",
-      "title": "Franco-Trarzan War of 1825",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (4). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-africa-037",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "africa",
-      "writer": "A",
-      "qid": "Q1497956",
-      "title": "Battle of Tres Forcas",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (3). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-africa-038",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "africa",
-      "writer": "B",
-      "qid": "Q17071356",
-      "title": "Malaboch War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (3). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-120",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1809288",
-      "title": "Wahhabi War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (29). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-121",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q617772",
-      "title": "Anglo-Persian War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (29). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-122",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q233642",
-      "title": "Second Anglo-Maratha War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (26). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-123",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2003866",
-      "title": "Sugauli Treaty",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (23). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-124",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q3772246",
-      "title": "1860 Mount Lebanon civil war",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (21). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-125",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q891773",
-      "title": "Shimonoseki Campaign",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (21). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-126",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q965649",
-      "title": "Nian Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (20). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-127",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q485415",
-      "title": "United States expedition to Korea",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (19). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-128",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q31301",
-      "title": "Anglo-Turkish War (1807–1809)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (18). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-129",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2725993",
-      "title": "Padri War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (17). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-130",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2564664",
-      "title": "Bhutan War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (17). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-131",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q134142",
-      "title": "French campaign against Korea (1866)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (17). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-132",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q496905",
-      "title": "Ganghwa Island incident",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (16). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-133",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2446765",
-      "title": "Saga Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (16). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-134",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2047022",
-      "title": "1894 Sasun rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (16). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-135",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q3032218",
-      "title": "Treaty of Hué (1883)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (15). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-136",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1065867",
-      "title": "Russian–Manchu border conflicts",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (14). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-137",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4122573",
-      "title": "Child's War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (13). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-138",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4689049",
-      "title": "Afghan-Sikh Wars",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (13). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-139",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q3197905",
-      "title": "Ottoman coups of 1807–08",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (13). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-140",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4497453",
-      "title": "Khivan campaign of 1839",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (12). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-141",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q3536812",
-      "title": "Treaty of Hué (1884)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (12). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-142",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q3454489",
-      "title": "Menashi-Kunashir Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (11). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-143",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2001528",
-      "title": "Nepalese–Tibetan War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (11). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-144",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2975371",
-      "title": "Shinpuren Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (11). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-145",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q5452540",
-      "title": "First Battle of Tamão",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (10). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-146",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q3381219",
-      "title": "Siamese–Vietnamese War (1831–34)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (10). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-147",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q1040831",
-      "title": "Mito Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (10). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-148",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q711793",
-      "title": "Second Chōshū expedition",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (10). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-149",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q641185",
-      "title": "Siamese–Vietnamese War (1841–45)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (10). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-150",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q3078148",
-      "title": "Chichibu Incident",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (10). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-151",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q5251450",
-      "title": "Defense of Van (1896)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (10). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-152",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q8068635",
-      "title": "Zeitun Rebellion (1895–96)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (10). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-153",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q559069",
-      "title": "British occupation of Manila",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (9). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-154",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4554402",
-      "title": "Peasants' Revolt of 1834 (Palestine)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (9). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-155",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q368594",
-      "title": "Banjarmasin War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (9). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-156",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2093787",
-      "title": "First Chōshū expedition",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (9). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-157",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4497452",
-      "title": "Khivan campaign of 1873",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (9). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-158",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2377085",
-      "title": "Anglo-Japanese Treaty of Amity and Commerce",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (9). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-159",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q15643653",
-      "title": "Tibet–Ladakh–Mughal War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (8). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-160",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1047091",
-      "title": "Battle of Rạch Gầm-Xoài Mút",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (8). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-161",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2090612",
-      "title": "Hagi Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (8). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-162",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1129079",
-      "title": "Hunza-Nagar Campaign",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (8). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-163",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q3536741",
-      "title": "Treaty of Amity and Commerce between France and Japan",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (8). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-164",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q5638135",
-      "title": "Hadži Prodan's Revolt",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (7). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-165",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2090046",
-      "title": "Akizuki Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (7). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-166",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q2889974",
-      "title": "Battle of Shimonoseki Straits",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (7). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-167",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q7267163",
-      "title": "Qatari–Bahraini War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (7). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-168",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q20313080",
-      "title": "Anglo-Manipur War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (7). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-169",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q16890896",
-      "title": "Sikkim Expedition",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (7). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-170",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q7837197",
-      "title": "Treaty of Purandar (1665)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (7). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-171",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q7837260",
-      "title": "Treaty of Titalia",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (7). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-172",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4849424",
-      "title": "Kakhetian Uprising (1659)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-173",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2371369",
-      "title": "Third Javanese War of Succession",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-174",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q10935020",
-      "title": "Revolt of the Altishahr Khojas",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-175",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q3534806",
-      "title": "Uva Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-176",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4554590",
-      "title": "1841 rebellion in Guria",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-177",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2661091",
-      "title": "Dutch intervention in Bali (1849)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-178",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q838771",
-      "title": "Punti-Hakka Clan Wars",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-179",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q28136178",
-      "title": "1888–1893 Uprisings of Hazaras",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-180",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q20988318",
-      "title": "Battle of Al Wajbah",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-181",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q1908014",
-      "title": "Mat Salleh Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-182",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q17025641",
-      "title": "Tirah Campaign",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-183",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q3434536",
-      "title": "Treaty of Hué (1863)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-184",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q96359686",
-      "title": "1812–1819 Ottoman plague epidemic",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-185",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q5598680",
-      "title": "1876 Bengal cyclone",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-186",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4899882",
-      "title": "Beylerbeyi event",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (5). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-187",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q28123383",
-      "title": "Portuguese invasion of Jaffna kingdom (1591)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (5). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-188",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q4999449",
-      "title": "Burmese invasions of Assam",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (5). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-189",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q6361719",
-      "title": "First Kandyan War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (5). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-190",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q6507837",
-      "title": "Lê Văn Khôi revolt",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (5). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-191",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q7170213",
-      "title": "Persian Gulf campaign of 1809",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (5). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-192",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q17156269",
-      "title": "1854 Macedonian rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (5). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-193",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2237434",
-      "title": "Dutch intervention in Northern Bali (1848)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (5). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-194",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q18206421",
-      "title": "Herzegovina Uprising (1852–62)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (5). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-195",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q11061722",
-      "title": "Red Turban Rebellion (1854–56)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (5). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-196",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1351039",
-      "title": "Treaty of Bongaja",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (5). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-197",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q7837140",
-      "title": "Treaty of Mangalore",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (5). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-198",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q6948728",
-      "title": "Mysorean invasion of Kerala",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (4). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-199",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q2908906",
-      "title": "Miao Rebellion (1854–73)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (4). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-200",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q7166879",
-      "title": "Perak War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (4). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-201",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q7837243",
-      "title": "Treaty of Surji-Anjangaon",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (4). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-202",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q1348781",
-      "title": "1786 Kangding-Luding earthquake",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (4). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-203",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q4553250",
-      "title": "1782–83 unrest in Bahrain",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (3). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-204",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q18712737",
-      "title": "Albanian Revolt of 1845",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (3). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-205",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q6177105",
-      "title": "Jementah Civil War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (3). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-206",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "A",
-      "qid": "Q11510437",
-      "title": "1858 Treaty of Amity and Commerce between the Netherlands and Japan",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (3). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-asia-207",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "asia",
-      "writer": "B",
-      "qid": "Q58895491",
-      "title": "1867 Macedonian rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (2). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-214",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q638530",
-      "title": "Texas Revolution",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (52). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-215",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1064335",
-      "title": "Pig War (1859)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (30). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-216",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2672972",
-      "title": "Uruguayan Civil War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (26). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-217",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1501025",
-      "title": "Utah War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (23). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-218",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2697981",
-      "title": "Argentine Civil Wars",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (20). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-219",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q617827",
-      "title": "Apache Wars",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (20). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-220",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2350166",
-      "title": "War of Canudos",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (20). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-221",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3136592",
-      "title": "1689 Boston revolt",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (20). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-222",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3082702",
-      "title": "Brazilian War of Independence",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (19). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-223",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q587151",
-      "title": "British invasions of the Río de la Plata",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (19). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-224",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1369423",
-      "title": "Toledo War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (18). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-225",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q400465",
-      "title": "Little War (Cuba)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (18). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-226",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2606574",
-      "title": "Acre War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (18). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-227",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q1402751",
-      "title": "Battle of Pichincha",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (17). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-228",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q772814",
-      "title": "Caste War of Yucatán",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (16). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-229",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q10931943",
-      "title": "Overthrow of the Hawaiian Kingdom",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (16). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-230",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q226032",
-      "title": "Morant Bay rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (16). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-231",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2422135",
-      "title": "Occupation of Araucanía",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (16). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-232",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3042457",
-      "title": "Platine War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (16). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-233",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3042463",
-      "title": "Uruguayan War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (16). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-234",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q767450",
-      "title": "Treaty of Córdoba",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (16). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-235",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2241487",
-      "title": "Treaty of Fort Laramie (1851)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (16). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-236",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2976715",
-      "title": "Second Seminole War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (15). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-237",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q765499",
-      "title": "Red River Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (15). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-238",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2511385",
-      "title": "Primera Junta",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (15). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-239",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q472699",
-      "title": "Nullification crisis",
-      "parents": [],
-      "edges": [],
-      "rank": "vital-5",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (12). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-240",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2500742",
-      "title": "Revolta da Armada",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (12). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-241",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3444492",
-      "title": "War of the Regulation",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (10). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-242",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q1547128",
-      "title": "Grito de Lares",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (10). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-243",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q11611",
-      "title": "Natchez revolt",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (10). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-244",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2880458",
-      "title": "Balaiada",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (9). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-245",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2466441",
-      "title": "Lower Canada Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (9). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-246",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q389091",
-      "title": "Upper Canada Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (9). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-247",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q2635125",
-      "title": "Praieira revolt",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (9). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-248",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q4403481",
-      "title": "Sabinada",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (8). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-249",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3119045",
-      "title": "Mascate War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (8). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-250",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q3406431",
-      "title": "Acclamation of Amador Bueno",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (7). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-251",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q3454484",
-      "title": "Dorr Rebellion",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (7). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-252",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q16824925",
-      "title": "Mapuche uprising of 1881",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (6). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-253",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4975141",
-      "title": "Brooks–Baxter War",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (5). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-254",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q7684314",
-      "title": "Taos Revolt",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (5). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-255",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q6107253",
-      "title": "Argentine Revolution of 1893",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (5). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-256",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q2748347",
-      "title": "Irish and German Mercenary Soldiers' Revolt",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (4). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-257",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5944417",
-      "title": "Quito Revolution (1809-1812)",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (4). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-258",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q6044491",
-      "title": "Intentona de Yauco",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (4). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-259",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q9068529",
-      "title": "Revolution of the 44",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (4). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-260",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q10751080",
-      "title": "1811 Independence Movement",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (4). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-261",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5197126",
-      "title": "Cuzco Rebellion of 1814",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (4). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-262",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q6107157",
-      "title": "1871 Guatemalan Revolution",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (4). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-263",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q4554827",
-      "title": "1851 Chilean Revolution",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (3). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-264",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q5526246",
-      "title": "Garza Revolution",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (3). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-265",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q5408962",
-      "title": "Revolution of 1897",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (3). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-266",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "A",
-      "qid": "Q8000330",
-      "title": "Wilcox rebellion of 1889",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (3). The atlas does not hold it."
-    },
-    {
-      "id": "2026-10-27-americas-267",
-      "planned": "2026-10-27T17:28:30Z",
-      "lane": "americas",
-      "writer": "B",
-      "qid": "Q7318599",
-      "title": "Revolt of the Muckers",
-      "parents": [],
-      "edges": [],
-      "rank": "list",
-      "why": "Read off the vital-article and list pages in the 1415-1900 window, ranked by sitelinks (2). The atlas does not hold it."
-    },
-    {
       "id": "2026-10-27-americas-268",
       "planned": "2026-10-27T17:28:30Z",
       "lane": "americas",
@@ -6134,6 +3219,2586 @@
       "edges": [],
       "rank": "list",
       "why": "list, a list page, 21 sitelinks"
+    },
+    {
+      "id": "2026-10-28-africa-001",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q613478",
+      "title": "Battle of Djerba",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 25 sitelinks."
+    },
+    {
+      "id": "2026-10-28-africa-002",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1398069",
+      "title": "Battle of Amba Alagi (1895)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 17 sitelinks."
+    },
+    {
+      "id": "2026-10-28-africa-003",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q1420382",
+      "title": "Battle of Tell El Kebir",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 17 sitelinks."
+    },
+    {
+      "id": "2026-10-28-africa-004",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q537923",
+      "title": "Battle of Ridaniya",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 17 sitelinks."
+    },
+    {
+      "id": "2026-10-28-africa-005",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "africa",
+      "writer": "B",
+      "qid": "Q4337399",
+      "title": "Siege of Melilla (1774–1775)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 17 sitelinks."
+    },
+    {
+      "id": "2026-10-28-africa-006",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "africa",
+      "writer": "A",
+      "qid": "Q1794609",
+      "title": "Pretoria Convention",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 15 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-001",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2092950",
+      "title": "Hamidian massacres",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 46 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-002",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1259218",
+      "title": "Third Battle of Panipat",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 40 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-003",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q233414",
+      "title": "Second Battle of Panipat",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 34 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-004",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2355467",
+      "title": "Battle of Buxar",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 33 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-005",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q427958",
+      "title": "Battle of Sinop",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 33 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-006",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1620408",
+      "title": "Battle of Chesma",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 32 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-007",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q428369",
+      "title": "Battle of Nagashino",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 30 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-008",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q617772",
+      "title": "Anglo-Persian War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 29 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-009",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q971248",
+      "title": "Battle of Marj Dabiq",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 29 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-010",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q349422",
+      "title": "Battle of Okehazama",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 28 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-011",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2091449",
+      "title": "Battle of Mactan",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 27 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-012",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q700886",
+      "title": "Siege of Constantinople (1422)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 27 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-013",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q1144988",
+      "title": "Chios massacre",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 27 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-014",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q233642",
+      "title": "Second Anglo-Maratha War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 26 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-015",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q1202492",
+      "title": "Black Hole of Calcutta",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 26 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-016",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1318452",
+      "title": "Constitution of the Ottoman Empire",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 25 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-017",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q1788393",
+      "title": "Battle of Shiroyama",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 25 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-018",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q690464",
+      "title": "Battle of Mikatagahara",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 25 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-019",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q1150578",
+      "title": "1740 Batavia massacre",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 25 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-020",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1362188",
+      "title": "Battle of Talikota",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 24 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-021",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q528550",
+      "title": "Battle of Manila Bay",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 24 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-022",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q964983",
+      "title": "Battle of Anegawa",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 23 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-023",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2003866",
+      "title": "Treaty of Sugauli",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 23 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-024",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q39040",
+      "title": "Battle of Yamazaki",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 21 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-025",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2736986",
+      "title": "Battle of Karnal",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 21 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-026",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1188930",
+      "title": "1509 Constantinople earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 20 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-027",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q225562",
+      "title": "Battle of Shizugatake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 20 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-028",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1196236",
+      "title": "Tumu Crisis",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 20 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-029",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q9366875",
+      "title": "Siege of Trebizond (1461)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 19 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-030",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1368222",
+      "title": "Treaty of the Bogue",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 18 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-031",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q716803",
+      "title": "Kabo Reform",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 18 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-032",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q708189",
+      "title": "Port Arthur massacre (China)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 18 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-033",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q46603",
+      "title": "Sakuradamon Incident (1860)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 18 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-034",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q15935778",
+      "title": "1668 Shandong earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 17 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-035",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2517808",
+      "title": "Tenpō famine",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 17 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-036",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2007212",
+      "title": "Battle of Otlukbeli",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 17 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-037",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q4166578",
+      "title": "Battle of Khanwa",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 17 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-038",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q738843",
+      "title": "1897 Assam earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-039",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2351002",
+      "title": "1891 Mino–Owari earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-040",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4551791",
+      "title": "1679 Armenia earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-041",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q85719776",
+      "title": "1668 North Anatolia earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-042",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q815157",
+      "title": "Siege of Kars",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-043",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q658845",
+      "title": "Battle of Wandiwash",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-044",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q3296937",
+      "title": "Battle of Gulnabad",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-045",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q4087480",
+      "title": "Battle of Chaul",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-046",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q569487",
+      "title": "Ansei Purge",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-047",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2668235",
+      "title": "Cretan revolt (1866–1869)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-048",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q712464",
+      "title": "General Sherman incident",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 15 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-049",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q2095678",
+      "title": "Battle of Assaye",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 15 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-050",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q4120385",
+      "title": "Massacres of Diyarbekir (1895)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 15 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-051",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q1789244",
+      "title": "Tophane Agreement",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 14 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-052",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q838373",
+      "title": "Convention of Chuenpi",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 14 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-053",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q710356",
+      "title": "Mudan incident",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 14 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-054",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q1353633",
+      "title": "Battle of Komaki and Nagakute",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 14 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-055",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "B",
+      "qid": "Q3635360",
+      "title": "Battle of Haldighati",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 14 sitelinks."
+    },
+    {
+      "id": "2026-10-28-asia-056",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "asia",
+      "writer": "A",
+      "qid": "Q2585958",
+      "title": "Battle of Aladzha",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 14 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-001",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q543165",
+      "title": "Battle of Fort Sumter",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 42 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-002",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q215687",
+      "title": "Boston Massacre",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 41 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-003",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q827212",
+      "title": "Gadsden Purchase",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 38 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-004",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q221469",
+      "title": "First Battle of Bull Run",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 37 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-005",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q841278",
+      "title": "Battle of San Jacinto",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 36 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-006",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q751186",
+      "title": "Battle of Fredericksburg",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 34 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-007",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q233343",
+      "title": "Second Battle of Bull Run",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 33 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-008",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q311726",
+      "title": "Battle of the Plains of Abraham",
+      "parents": [
+        "french-and-indian-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 31 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-009",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1061228",
+      "title": "Battle of Puebla",
+      "parents": [
+        "second-french-intervention-in-mexico"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 30 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-010",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1145411",
+      "title": "Grito de Dolores",
+      "parents": [
+        "mexican-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 29 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-011",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q497797",
+      "title": "Battle of Cold Harbor",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 29 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-012",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1327790",
+      "title": "Battle of Chickamauga",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 28 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-013",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q301487",
+      "title": "Battle of Brandywine",
+      "parents": [
+        "american-revolutionary-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 27 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-014",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q616307",
+      "title": "Indian massacre of 1622",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 27 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-015",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1355391",
+      "title": "Battle of Appomattox Court House",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 26 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-016",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1425882",
+      "title": "Battle of the Wilderness",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 25 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-017",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1150410",
+      "title": "Battle of Boyacá",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 25 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-018",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2164344",
+      "title": "Sand Creek massacre",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 25 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-019",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q211582",
+      "title": "Zong massacre",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 25 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-020",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1638488",
+      "title": "Battle of Monmouth",
+      "parents": [
+        "american-revolutionary-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 24 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-021",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2866972",
+      "title": "Assassination of James A. Garfield",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 23 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-022",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1538874",
+      "title": "Battle of Spotsylvania Court House",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 22 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-023",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q862443",
+      "title": "Vicksburg campaign",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 22 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-024",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q815195",
+      "title": "Siege of Petersburg",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 21 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-025",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q379346",
+      "title": "Battle of Tippecanoe",
+      "parents": [
+        "tecumseh-s-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 21 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-026",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1550466",
+      "title": "Battle of Seven Pines",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 21 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-027",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q303438",
+      "title": "Mountain Meadows Massacre",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 21 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-028",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1477050",
+      "title": "Chattanooga campaign",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 21 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-029",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q126876",
+      "title": "Saratoga campaign",
+      "parents": [
+        "american-revolutionary-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 21 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-030",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q3297506",
+      "title": "1804 Haitian massacre",
+      "parents": [
+        "haitian-revolution-1791-1804"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 20 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-031",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q601359",
+      "title": "Battle of Fort Donelson",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 20 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-032",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q399224",
+      "title": "Battle of Camarón",
+      "parents": [
+        "second-french-intervention-in-mexico"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 20 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-033",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q194329",
+      "title": "Battle of Five Forks",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 20 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-034",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1154050",
+      "title": "Peninsula campaign",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 20 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-035",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q756118",
+      "title": "Atlanta campaign",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 20 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-036",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1536618",
+      "title": "Battle of Chapultepec",
+      "parents": [
+        "mexican-american-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 19 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-037",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1752689",
+      "title": "Battle of Nashville",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 19 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-038",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q180659",
+      "title": "Battle of Wilson's Creek",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 19 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-039",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q524828",
+      "title": "Battle of the Monongahela",
+      "parents": [
+        "french-and-indian-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 19 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-040",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q697897",
+      "title": "Battle of Carillon",
+      "parents": [
+        "french-and-indian-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 19 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-041",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1191854",
+      "title": "Battle of Gonzales",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 19 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-042",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2374330",
+      "title": "Battle of Atlanta",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 19 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-043",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1546173",
+      "title": "Capture of Fort Ticonderoga",
+      "parents": [
+        "american-revolutionary-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 18 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-044",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1153610",
+      "title": "Jackson's Valley campaign",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 18 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-045",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q934626",
+      "title": "Battle of Valcour Island",
+      "parents": [
+        "american-revolutionary-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 18 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-046",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q523857",
+      "title": "Battle of Germantown",
+      "parents": [
+        "american-revolutionary-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 18 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-047",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1952979",
+      "title": "Northern Virginia campaign",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 18 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-048",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1735004",
+      "title": "1700 Cascadia earthquake",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 17 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-049",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1628057",
+      "title": "Battle of Monterrey",
+      "parents": [
+        "mexican-american-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 17 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-050",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q579971",
+      "title": "Battle of Lake George",
+      "parents": [
+        "french-and-indian-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 17 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-051",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1272132",
+      "title": "Battle of Stones River",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 17 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-052",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1366089",
+      "title": "Battle of Fort Henry",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 17 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-053",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1519203",
+      "title": "Battle of Mobile Bay",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 17 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-054",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q621676",
+      "title": "Appomattox campaign",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 17 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-055",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q616931",
+      "title": "Battle of Caseros",
+      "parents": [
+        "argentine-civil-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-056",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q1542829",
+      "title": "Battle of South Mountain",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-057",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1631029",
+      "title": "Battle of Perryville",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-058",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q370671",
+      "title": "Battle of Franklin",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-059",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q251184",
+      "title": "Battle of Signal Hill",
+      "parents": [
+        "french-and-indian-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-060",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2736004",
+      "title": "Battle of Palo Alto",
+      "parents": [
+        "mexican-american-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-061",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q1377639",
+      "title": "Gettysburg campaign",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-062",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q3382350",
+      "title": "Venezuelan Declaration of Independence",
+      "parents": [
+        "venezuelan-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-063",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q472672",
+      "title": "Battle of Iquique",
+      "parents": [
+        "war-of-the-pacific"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 16 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-064",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q691404",
+      "title": "Johnstown Flood",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 15 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-065",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q698312",
+      "title": "Aroostook War",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 15 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-066",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q580651",
+      "title": "Battle of Glorieta Pass",
+      "parents": [
+        "american-civil-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 15 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-067",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2305019",
+      "title": "Battle of Curupayty",
+      "parents": [
+        "paraguayan-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 15 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-068",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q2346041",
+      "title": "Battle of Fort Beauséjour",
+      "parents": [
+        "french-and-indian-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 15 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-069",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "B",
+      "qid": "Q2745368",
+      "title": "Siege of Veracruz",
+      "parents": [
+        "mexican-american-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 15 sitelinks."
+    },
+    {
+      "id": "2026-10-28-americas-070",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "americas",
+      "writer": "A",
+      "qid": "Q657024",
+      "title": "Bear River Massacre",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 15 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-001",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q32832",
+      "title": "Battle of Varna",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 48 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-002",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q273011",
+      "title": "Battle of Marengo",
+      "parents": [
+        "war-of-the-second-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 47 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-003",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q222013",
+      "title": "Battle of Bosworth Field",
+      "parents": [
+        "wars-of-the-roses"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 46 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-004",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q846876",
+      "title": "Stockholm Bloodbath",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 44 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-005",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q241108",
+      "title": "Battle of Friedland",
+      "parents": [
+        "war-of-the-fourth-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 43 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-006",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q331347",
+      "title": "Battle of Eylau",
+      "parents": [
+        "war-of-the-fourth-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 42 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-007",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q324916",
+      "title": "Battle of Solferino",
+      "parents": [
+        "second-italian-war-of-independence"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 42 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-008",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q651919",
+      "title": "Battle of Culloden",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 41 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-009",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q464512",
+      "title": "Battle of Balaclava",
+      "parents": [
+        "crimean-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 41 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-010",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q4411",
+      "title": "Battle of Valmy",
+      "parents": [
+        "french-revolutionary-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 40 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-011",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q644960",
+      "title": "Battle of the Boyne",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 39 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-012",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q876357",
+      "title": "Peterloo Massacre",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 39 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-013",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1054975",
+      "title": "Battle of Preveza",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 36 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-014",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q698706",
+      "title": "Battle of Kosovo (1448)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 35 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-015",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2783102",
+      "title": "London Beer Flood",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 34 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-016",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q159072",
+      "title": "Battle of Ulm",
+      "parents": [
+        "war-of-the-third-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 34 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-017",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q158054",
+      "title": "Battle of Lissa (1866)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 34 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-018",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q932613",
+      "title": "Battle of Castillon",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 33 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-019",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q541626",
+      "title": "Battle of Aspern–Essling",
+      "parents": [
+        "napoleonic-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 33 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-020",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q555839",
+      "title": "Battle of Berezina",
+      "parents": [
+        "napoleonic-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 32 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-021",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q913604",
+      "title": "Battle of the Alma",
+      "parents": [
+        "crimean-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 32 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-022",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q900945",
+      "title": "Battle of Lodi",
+      "parents": [
+        "italian-campaigns-of-the-french-revolutionary-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 31 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-023",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1071578",
+      "title": "Battle of Smolensk (1812)",
+      "parents": [
+        "napoleonic-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 31 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-024",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q634629",
+      "title": "Battle of Towton",
+      "parents": [
+        "wars-of-the-roses"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 30 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-025",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q546233",
+      "title": "Great Stink",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 30 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-026",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q316877",
+      "title": "Battle of Nancy",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 29 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-027",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q780921",
+      "title": "Battle of Paris (1814)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 29 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-028",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q648535",
+      "title": "Battle of Patay",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 29 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-029",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1337059",
+      "title": "Battle of Tewkesbury",
+      "parents": [
+        "wars-of-the-roses"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 29 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-030",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q949724",
+      "title": "Battle of Naseby",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 29 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-031",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q705813",
+      "title": "Battle of Hohenlinden",
+      "parents": [
+        "war-of-the-second-coalition"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 29 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-032",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q694379",
+      "title": "Battle of Krbava Field",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 29 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-033",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q17594",
+      "title": "Battle of Dresden",
+      "parents": [
+        "napoleonic-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 29 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-034",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q681430",
+      "title": "Battle of Magenta",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 28 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-035",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q842796",
+      "title": "First Battle of St Albans",
+      "parents": [
+        "wars-of-the-roses"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 28 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-036",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q2309898",
+      "title": "Battle of Karánsebes",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 28 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-037",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q757870",
+      "title": "Charge of the Light Brigade",
+      "parents": [
+        "crimean-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 28 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-038",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q48202",
+      "title": "Battle of Custoza (1848)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 28 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-039",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1428169",
+      "title": "Battle of Barnet",
+      "parents": [
+        "wars-of-the-roses"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 28 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-040",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q127299",
+      "title": "Battle of Kolín",
+      "parents": [
+        "seven-years-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 28 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-041",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q855429",
+      "title": "Battle of Ligny",
+      "parents": [
+        "napoleonic-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 27 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-042",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q661327",
+      "title": "Battle of Mühlberg",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 27 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-043",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q663405",
+      "title": "Battle of Zorndorf",
+      "parents": [
+        "seven-years-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 27 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-044",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1207310",
+      "title": "Battle of Orsha",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 27 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-045",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1086489",
+      "title": "Massacre of Vassy",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 27 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-046",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q776609",
+      "title": "Battle of Arcole",
+      "parents": [
+        "italian-campaigns-of-the-french-revolutionary-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 26 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-047",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q906912",
+      "title": "Battle of Wakefield",
+      "parents": [
+        "wars-of-the-roses"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 26 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-048",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q690391",
+      "title": "Battle of Petrovaradin",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 26 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-049",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1140646",
+      "title": "Battle of Formigny",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 26 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-050",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q1116626",
+      "title": "Battle of Worcester",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 26 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-051",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2426040",
+      "title": "Siege of Thessalonica (1422–1430)",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 26 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-052",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q695851",
+      "title": "Carlsbad Decrees",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 26 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-053",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q690481",
+      "title": "Battle of Slankamen",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 25 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-054",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q48163",
+      "title": "Battle of Custoza (1866)",
+      "parents": [
+        "austro-prussian-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 25 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-055",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q770536",
+      "title": "Battle of Inkerman",
+      "parents": [
+        "crimean-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 25 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-056",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q937332",
+      "title": "Battle of Kircholm",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 25 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-057",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q326417",
+      "title": "Battle of Marston Moor",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 25 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-058",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q170265",
+      "title": "Battle of Bautzen (1813)",
+      "parents": [
+        "napoleonic-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 25 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-059",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q855271",
+      "title": "Battle of Jemappes",
+      "parents": [
+        "french-revolutionary-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 24 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-060",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q48253",
+      "title": "Battle of Kulm",
+      "parents": [
+        "napoleonic-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 24 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-061",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q705936",
+      "title": "Battle of Quatre Bras",
+      "parents": [
+        "napoleonic-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 24 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-062",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q932228",
+      "title": "Battle of Klushino",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 24 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-063",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q2234632",
+      "title": "Battle of Rymnik",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 24 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-064",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q695198",
+      "title": "Ottoman conquest of Otranto",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 24 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-065",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q690291",
+      "title": "Battle of Breadfield",
+      "parents": [],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 23 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-066",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q581401",
+      "title": "Battle of Blore Heath",
+      "parents": [
+        "wars-of-the-roses"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 23 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-067",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "B",
+      "qid": "Q1069936",
+      "title": "Battle of Rivoli",
+      "parents": [
+        "italian-campaigns-of-the-french-revolutionary-wars"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 23 sitelinks."
+    },
+    {
+      "id": "2026-10-28-europe-068",
+      "planned": "2026-10-28T13:50:41Z",
+      "lane": "europe",
+      "writer": "A",
+      "qid": "Q695925",
+      "title": "Battle of Hochkirch",
+      "parents": [
+        "seven-years-war"
+      ],
+      "edges": [],
+      "rank": "list",
+      "why": "list, via the Wikidata Query Service over the event-class table (window 1415-1900), 23 sitelinks."
     }
   ]
 }
