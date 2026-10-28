@@ -58066,35 +58066,6 @@
         "wikipedia-en"
       ],
       "created": "2026-10-27",
-      "id": "list-of-indigenous-rebellions-in-mexico-and-central-america",
-      "kind": "event",
-      "origin": {
-        "tool": "wikidata"
-      },
-      "review": {
-        "flags": [
-          "imported-facts",
-          "summary-from-lead"
-        ],
-        "status": "draft"
-      },
-      "revised": null,
-      "status": "active",
-      "title": "List of Indigenous rebellions in Mexico and Central America"
-    },
-    {
-      "authors": [
-        {
-          "github": null,
-          "name": "Wikidata import (tools/import/wikidata.mjs)"
-        }
-      ],
-      "category": "war",
-      "cites": [
-        "wikidata",
-        "wikipedia-en"
-      ],
-      "created": "2026-10-27",
       "id": "little-war-cuba",
       "kind": "event",
       "origin": {
@@ -99023,12 +98994,6 @@
     },
     {
       "id": "lincoln-county-war",
-      "kind": "event",
-      "message": "event has no edges and began no tenure",
-      "rule": "degree-zero"
-    },
-    {
-      "id": "list-of-indigenous-rebellions-in-mexico-and-central-america",
       "kind": "event",
       "message": "event has no edges and began no tenure",
       "rule": "degree-zero"
