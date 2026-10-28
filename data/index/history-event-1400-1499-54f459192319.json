@@ -29,6 +29,15 @@
         }
       ]
     },
+    "battle-of-otlukbeli": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "battle-of-tangier-1437": {
       "from": "git",
       "versions": [
@@ -320,6 +329,15 @@
         }
       ]
     },
+    "siege-of-constantinople-1422": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "siege-of-graciosa-1489": {
       "from": "git",
       "versions": [
@@ -344,6 +362,15 @@
         {
           "first": true,
           "on": "2026-10-02"
+        }
+      ]
+    },
+    "siege-of-trebizond-1461": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -461,6 +488,15 @@
       ]
     },
     "treaty-of-troyes": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "tumu-crisis": {
       "from": "git",
       "versions": [
         {

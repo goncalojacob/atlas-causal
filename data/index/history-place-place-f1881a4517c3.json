@@ -500,6 +500,15 @@
         }
       ]
     },
+    "ane-river": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "angola-q916": {
       "from": "git",
       "versions": [
@@ -1850,6 +1859,15 @@
         }
       ]
     },
+    "bogue-kansas": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "bohemia": {
       "from": "git",
       "versions": [
@@ -2368,6 +2386,15 @@
         {
           "first": true,
           "on": "2026-10-17"
+        }
+      ]
+    },
+    "buxar": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -3042,6 +3069,15 @@
         }
       ]
     },
+    "chaul": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "checheno-ingush-autonomous-soviet-socialist-republic": {
       "from": "git",
       "versions": [
@@ -3697,6 +3733,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "dabiq-syria": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -5173,6 +5218,15 @@
         }
       ]
     },
+    "fort-william-west-bengal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "fort-zeelandia-taiwan": {
       "from": "git",
       "versions": [
@@ -6140,6 +6194,15 @@
         }
       ]
     },
+    "hampi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "hampton-court-guyana": {
       "from": "git",
       "versions": [
@@ -7044,6 +7107,15 @@
         }
       ]
     },
+    "jakarta": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "jalalabad": {
       "from": "git",
       "versions": [
@@ -7192,6 +7264,15 @@
         {
           "first": true,
           "on": "2026-10-16"
+        }
+      ]
+    },
+    "jilanabad": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -7472,7 +7553,25 @@
         }
       ]
     },
+    "karnal": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "karpenisi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
+    "kars": {
       "from": "git",
       "versions": [
         {
@@ -9431,6 +9530,15 @@
         {
           "first": true,
           "on": "2026-09-29"
+        }
+      ]
+    },
+    "manila-bay": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -11401,6 +11509,15 @@
         {
           "first": true,
           "on": "2026-09-24"
+        }
+      ]
+    },
+    "otlukbeli": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
@@ -14345,6 +14462,15 @@
         }
       ]
     },
+    "sinop-turkey": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "sint-eustatius": {
       "from": "git",
       "versions": [
@@ -15913,6 +16039,15 @@
         }
       ]
     },
+    "trabzon": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
+        }
+      ]
+    },
     "transvaal-colony": {
       "from": "git",
       "versions": [
@@ -16386,6 +16521,15 @@
         {
           "first": true,
           "on": "2026-10-27"
+        }
+      ]
+    },
+    "vandavasi": {
+      "from": "git",
+      "versions": [
+        {
+          "first": true,
+          "on": "2026-10-28"
         }
       ]
     },
