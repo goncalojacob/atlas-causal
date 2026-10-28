@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "battle-of-neerwinden-1793",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q1085392",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Neerwinden (1793)",
+    "pt": "Batalha de Neerwinden (1793)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1085392"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Neerwinden (1793)\", revision 1370270639"
+    }
+  ],
+  "title": "Battle of Neerwinden (1793)",
+  "summary": "The English Wikipedia article \"Battle of Neerwinden (1793)\", at revision 1370270639, opens: \"The Battle of Neerwinden saw a Republican French army led by Charles François Dumouriez attack a Coalition army commanded by Prince Josias of Saxe-Coburg-Saalfeld. The Coalition army of the Habsburg monarchy together with a small contingent of allied Dutch Republic troops repulsed all French assaults after bitter fighting and Dumouriez conceded defeat, withdrawing from the field. The French position in the Austrian Netherlands swiftly collapsed, ending the threat to the Dutch Republic and allowing Austria to regain control of its lost province. The War of the First Coalition engagement was fought at Neerwinden, located 57 kilometres (35 mi) east of Brussels in present-day Belgium.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1085392, imported by tools/import/wikidata.mjs. The item's own description reads \"1793 battle during the War of the First Coalition\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1793,
+    "end": 1793,
+    "date": "1793-03-18"
+  },
+  "place": "neerwinden",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "french-revolutionary-wars"
+}

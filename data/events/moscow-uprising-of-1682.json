@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "moscow-uprising-of-1682",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1633167",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Moscow uprising of 1682"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1633167"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Moscow uprising of 1682\", revision 1368821055"
+    }
+  ],
+  "title": "Moscow uprising of 1682",
+  "summary": "The English Wikipedia article \"Moscow uprising of 1682\", at revision 1368821055, opens: \"The Moscow uprising of 1682, also known as the Streltsy uprising of 1682, was an uprising of the Moscow Streltsy regiments that resulted in supreme power devolving on Sophia Alekseyevna, the daughter of the late Tsar Aleksey Mikhailovich and of his first wife Maria Miloslavskaya. Behind the uprising lurked the rivalry between the Miloslavsky and Naryshkin relatives of the two wives of the late Tsar Aleksey, who died in 1676, for dominant influence on the administration of the Tsardom of Russia.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1633167, imported by tools/import/wikidata.mjs. The item's own description reads \"the Moscow Streltsy regiments rebellion of 1682 or Khovanshchina\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1682,
+    "end": 1682
+  },
+  "place": "moscow",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

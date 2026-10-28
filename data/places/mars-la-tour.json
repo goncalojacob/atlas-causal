@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mars-la-tour",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q228791",
+  "sitelinks": {
+    "count": 39,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Mars-la-Tour",
+    "pt": "Mars-la-Tour"
+  },
+  "sources": [],
+  "names": [
+    "Mars-la-Tour"
+  ],
+  "where": {
+    "lon": 5.8861111111111,
+    "lat": 49.098888888889,
+    "precision": "city",
+    "label": "Mars-la-Tour"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

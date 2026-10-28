@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "battle-of-lobositz",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q694478",
+  "sitelinks": {
+    "count": 20,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Battle of Lobositz",
+    "pt": "Batalha de Lobositz"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q694478"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Battle of Lobositz\", revision 1370447853"
+    }
+  ],
+  "title": "Battle of Lobositz",
+  "summary": "The English Wikipedia article \"Battle of Lobositz\", at revision 1370447853, opens: \"The Battle of Lobositz or Lovosice also Lowositz on 1 October 1756 was the opening land battle of the Third Silesian War and the wider Seven Years' War. Frederick the Great's 28,000 Prussians were prevented by 33,000 Austrians under Maximilian Ulysses Count von Browne from continuing their invasion into the rich Bohemian plain, forcing Frederick to ultimately fall back north into Saxony for the winter.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q694478, imported by tools/import/wikidata.mjs. The item's own description reads \"1756 battle in the Seven Years' War\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1756,
+    "end": 1756,
+    "date": "1756-10-01"
+  },
+  "place": "lovosice",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "seven-years-war"
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "cairo-montenotte",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q270564",
+  "sitelinks": {
+    "count": 54,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Cairo Montenotte",
+    "pt": "Cairo Montenotte"
+  },
+  "sources": [],
+  "names": [
+    "Cairo Montenotte"
+  ],
+  "where": {
+    "lon": 8.2777888888889,
+    "lat": 44.397891666667,
+    "precision": "city",
+    "label": "Cairo Montenotte"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

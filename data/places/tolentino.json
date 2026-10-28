@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "tolentino",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q94978",
+  "sitelinks": {
+    "count": 53,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Tolentino",
+    "pt": "Tolentino"
+  },
+  "sources": [],
+  "names": [
+    "Tolentino"
+  ],
+  "where": {
+    "lon": 13.2841,
+    "lat": 43.208611111111,
+    "precision": "city",
+    "label": "Tolentino"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
