@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-washington-1836",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q2518969",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Washington (1836)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q2518969"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Washington (1836)\", revision 1213917166"
+    }
+  ],
+  "title": "Treaty of Washington (1836)",
+  "summary": "The English Wikipedia article \"Treaty of Washington (1836)\", at revision 1213917166, opens: \"The Treaty of Washington is a treaty between the United States and representatives of the Ottawa and Chippewa nations of Native Americans. With this treaty, the tribes ceded an area of approximately 13,837,207 acres in the northwest portion of the Lower Peninsula of Michigan and the eastern portion of the Upper Peninsula of Michigan. This area represents approximately 37% of the current land area of the state of Michigan.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q2518969, imported by tools/import/wikidata.mjs. The item's own description reads \"March 28, 1836, treaty between the United States and representatives of the Ottawa and Chippewa peoples\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1836,
+    "end": 1836,
+    "date": "1836-03-28"
+  },
+  "place": "washington",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

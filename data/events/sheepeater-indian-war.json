@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sheepeater-indian-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "filed-from-p361"
+    ]
+  },
+  "wikidata": "Q7492447",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Sheepeater Indian War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7492447"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Sheepeater Indian War\", revision 1381997242"
+    }
+  ],
+  "title": "Sheepeater Indian War",
+  "summary": "The English Wikipedia article \"Sheepeater Indian War\", at revision 1381997242, opens: \"The  Sheepeater War of 1879 was the last Indian war fought in the Pacific Northwest portion of the United States; it took place primarily in central Idaho. A high mountain band of approximately 300 Shoshone people, the Tukudeka were known as the Sheepeaters as Rocky Mountain sheep were a main staple of their food, clothing and tools. At the time, they were the last tribe living traditionally on the American Rocky Mountains. The Tukudeka became part of the Salmon Eater Shoshones after the war.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7492447, imported by tools/import/wikidata.mjs. The item's own description reads \"1879 conflict in Idaho, US\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1879,
+    "end": 1879
+  },
+  "place": "idaho",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": [],
+  "parent": "american-indian-wars"
+}

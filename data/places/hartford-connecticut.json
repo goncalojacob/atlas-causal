@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "hartford-connecticut",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q33486",
+  "sitelinks": {
+    "count": 130,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Hartford, Connecticut",
+    "pt": "Hartford"
+  },
+  "sources": [],
+  "names": [
+    "Hartford",
+    "Hartford, Connecticut"
+  ],
+  "where": {
+    "lon": -72.685,
+    "lat": 41.763333333333,
+    "precision": "city",
+    "label": "Hartford, Connecticut"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "medicine-lodge-treaty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1566313",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Medicine Lodge Treaty"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1566313"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Medicine Lodge Treaty\", revision 1360258102"
+    }
+  ],
+  "title": "Medicine Lodge Treaty",
+  "summary": "The English Wikipedia article \"Medicine Lodge Treaty\", at revision 1360258102, opens: \"The Medicine Lodge Treaty is the overall name for three treaties signed near Medicine Lodge, Kansas, between the Federal government of the United States and southern Plains Indian tribes in October 1867, intended to bring peace to the area by relocating the Native Americans to reservations in Indian Territory and away from European-American settlement. The treaty was negotiated after investigation by the Indian Peace Commission, which in its final report in 1868 concluded that the wars had been preventable. They determined that the United States government and its representatives, including the United States Congress, had contributed to the warfare on the Great Plains by failing to fulfill their legal obligations and to treat the Native Americans with honesty.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1566313, imported by tools/import/wikidata.mjs. The item's own description reads \"treaty\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1867,
+    "end": 1867,
+    "date": "1867-10"
+  },
+  "place": "medicine-lodge-kansas",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

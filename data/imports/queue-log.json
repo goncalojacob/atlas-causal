@@ -18662,6 +18662,614 @@
         "place": "santa-fe-argentina"
       },
       "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-120",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-cusseta",
+        "edges": [],
+        "place": "cusseta-alabama"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-122",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-hopewell",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-124",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "medicine-lodge-treaty",
+        "edges": [],
+        "place": "medicine-lodge-kansas"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-126",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-medicine-creek",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-128",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7861365: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-americas-130",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "comanche-mexico-wars",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-132",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "peruvian-civil-war-of-1834",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-134",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "mier-expedition",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-136",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "peruvian-civil-war-of-1843-1844",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-138",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7204086: none of its classes (Q7292715) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-americas-140",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7837035: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-americas-142",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-fort-stanwix-1784",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-144",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-lochaber",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-146",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-pontotoc-creek",
+        "edges": [],
+        "place": "pontotoc-mississippi"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-148",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-st-louis-1804",
+        "edges": [],
+        "place": "st-louis"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-150",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "arana-southern-treaty",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-152",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "fedon-s-rebellion",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-154",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "ochomogo-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-156",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q5140854: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-americas-158",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "peruvian-civil-war-of-1867",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-160",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "sheepeater-indian-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-162",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "barrios-war-of-reunification",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-164",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "creole-mutiny",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-166",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-hampton-court-1562",
+        "edges": [],
+        "place": "hampton-court-guyana"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-168",
+      "writer": "A",
+      "fired": "2026-10-28T12:22Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-hartford-1650",
+        "edges": [],
+        "place": "hartford-connecticut"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-121",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-fort-harmar",
+        "edges": [],
+        "place": "fort-harmar"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-123",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-moultrie-creek",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-125",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q7302489: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-americas-127",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-washington-1900",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-129",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q4867844: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-americas-131",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "league-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-133",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q686731: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-27-americas-135",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "paiute-war",
+        "edges": [],
+        "place": "pyramid-lake-nevada"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-137",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "bolivian-civil-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-139",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-detroit",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-141",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-fort-meigs",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-143",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-fort-wayne-1809",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-145",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-new-york-1790",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-147",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-saginaw",
+        "edges": [],
+        "place": "saginaw-michigan"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-149",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-washington-1836",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-151",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "hellgate-treaty",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-153",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "1827-honduran-coup-d-etat",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-155",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2882649: none of its classes (Q2908804) is in data/imports/wikidata-seeds.json → classes"
+    },
+    {
+      "id": "2026-10-27-americas-157",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "peruvian-civil-war-of-1856-1858",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-159",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "revolution-of-the-lances",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-161",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "snake-war",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-163",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "peruvian-civil-war-of-1884-1885",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-165",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "pima-revolt-1751",
+        "edges": [],
+        "place": null
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-167",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-big-tree",
+        "edges": [],
+        "place": "geneseo-village-new-york"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-27-americas-169",
+      "writer": "B",
+      "fired": "2026-10-28T12:29Z",
+      "status": "written",
+      "written": {
+        "event": "treaty-of-holston",
+        "edges": [],
+        "place": "holston-river"
+      },
+      "refusals": []
     }
   ]
 }

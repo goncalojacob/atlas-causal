@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hampton-court-guyana",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q98755002",
+  "sitelinks": {
+    "count": 1,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Hampton Court, Guyana"
+  },
+  "sources": [],
+  "names": [
+    "Hampton Court",
+    "Hampton Court, Guyana"
+  ],
+  "where": {
+    "lon": -58.48025,
+    "lat": 7.31126,
+    "precision": "city",
+    "label": "Hampton Court, Guyana"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

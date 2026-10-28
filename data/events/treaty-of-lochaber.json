@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "treaty-of-lochaber",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q3997905",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Treaty of Lochaber"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q3997905"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Treaty of Lochaber\", revision 1378220441"
+    }
+  ],
+  "title": "Treaty of Lochaber",
+  "summary": "The English Wikipedia article \"Treaty of Lochaber\", at revision 1378220441, opens: \"The Treaty of Lochaber was signed in the Province of South Carolina on 18 October 1770 by the British Indian Department official John Stuart and the Cherokee, fixing the boundary for the western limit of the frontier settlements of the British colonies of Virginia and North Carolina.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q3997905, imported by tools/import/wikidata.mjs. The item's own description reads \"1770 treaty between Great Britain and the Cherokee\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1770,
+    "end": 1770,
+    "date": "1770-10-18"
+  },
+  "place": "south-carolina-q1456",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

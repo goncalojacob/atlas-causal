@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "peruvian-civil-war-of-1856-1858",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q5887718",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Peruvian Civil War of 1856–1858"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q5887718"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Peruvian Civil War of 1856–1858\", revision 1375720291"
+    }
+  ],
+  "title": "Peruvian Civil War of 1856–1858",
+  "summary": "The English Wikipedia article \"Peruvian Civil War of 1856–1858\", at revision 1375720291, opens: \"The Peruvian Civil War of 1856–1858, also known as the Arequipa Revolution of 1856, was one of the largest and most violent in Peru. It was the third internal conflict in 19th century Peru. It was fought between the Pragmatics and the Liberals. It followed the Peruvian Liberal Revolution of 1854. 3,000 people were killed on both sides.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q5887718, imported by tools/import/wikidata.mjs. The item's own description reads \"civil war in Peru\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1856,
+    "end": 1858,
+    "date": "1856-10-31",
+    "endDate": "1858-03-07"
+  },
+  "place": "peru-q419",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

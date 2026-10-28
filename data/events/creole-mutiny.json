@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "creole-mutiny",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q1394503",
+  "sitelinks": {
+    "count": 3,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Creole mutiny"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1394503"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Creole mutiny\", revision 1369626579"
+    }
+  ],
+  "title": "Creole mutiny",
+  "summary": "The English Wikipedia article \"Creole mutiny\", at revision 1369626579, opens: \"The Creole Mutiny, sometimes called the Creole case, was a slave revolt aboard the American slave ship Creole in November 1841, when the brig was seized by the 128 slaves who were aboard the ship when it reached Nassau in the British colony of the Bahamas, where slavery had been abolished. The brig was transporting enslaved people as part of the coastwise slave trade in the American South. It has been described as “the most successful [antebellum] slave revolt in US history.” Two died in the revolt, an enslaved person and a member of the crew.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1394503, imported by tools/import/wikidata.mjs. The item's own description reads \"slave revolt onboard the ship Creole\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1841,
+    "end": 1841,
+    "date": "1841-11",
+    "endDate": "1841-11"
+  },
+  "place": "united-states-q30",
+  "region": null,
+  "regionNote": null,
+  "category": "revolution",
+  "actors": []
+}

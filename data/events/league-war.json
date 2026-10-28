@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "league-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1323522",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "League War"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1323522"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"League War\", revision 1372905755"
+    }
+  ],
+  "title": "League War",
+  "summary": "The English Wikipedia article \"League War\", at revision 1372905755, opens: \"The League War was the second civil war of Costa Rica, as a member state of the Federal Republic of Central America. It passed between September and October 1835 in the Central Valley of Costa Rica. Its immediate trigger was the repeal of the \"Ambulance Law\", the law that established the rotation of the country's capital among the four constituent cities. The most important consequence was the triumph of the city of San José over the cities of Alajuela, Heredia and Cartago, which allowed its consolidation as the capital of Costa Rica.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1323522, imported by tools/import/wikidata.mjs. The item's own description reads \"Costa Rican civil war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1835,
+    "end": 1835,
+    "date": "1835-09",
+    "endDate": "1835-10"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}

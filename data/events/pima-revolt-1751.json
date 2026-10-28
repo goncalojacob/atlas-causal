@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pima-revolt-1751",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q7194582",
+  "sitelinks": {
+    "count": 2,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Pima Revolt (1751)"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q7194582"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Pima Revolt (1751)\", revision 1381454233"
+    }
+  ],
+  "title": "Pima Revolt (1751)",
+  "summary": "The English Wikipedia article \"Pima Revolt (1751)\", at revision 1381454233, opens: \"The Pima Revolt, also known as the Oʼodham Uprising or the Pima Outbreak, was a revolt of Pima Native Americans in 1751 against colonial forces in Spanish Arizona and one of the major northern frontier conflicts in early New Spain.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q7194582, imported by tools/import/wikidata.mjs. The item's own description reads \"1751–1752 revolt against Spanish settlers in Arizona\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1751,
+    "end": 1752,
+    "date": "1751-11-20",
+    "endDate": "1752-03-18"
+  },
+  "place": null,
+  "region": "americas",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "revolution",
+  "actors": []
+}

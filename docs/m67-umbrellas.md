@@ -3282,3 +3282,39 @@ Writer B imported it from the planner's queue as item `2026-10-27-americas-097`,
 ## Writer B, 2026-10-28: `spanish-reconquest-of-new-granada`, filed under `colombian-war-of-independence` with neither an actor nor a place
 
 Writer B filed it there because the planner's queue asked for it in item `2026-10-27-americas-113`, with no rank. Its span and its subject put it inside the umbrella.
+
+## Writer A, 2026-10-28: `treaty-of-hopewell`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-122`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `treaty-of-medicine-creek`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-126`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `fedon-s-rebellion`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-152`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `ochomogo-war`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-154`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer A, 2026-10-28: `barrios-war-of-reunification`, bare
+
+Writer A imported it from the planner's queue as item `2026-10-27-americas-162`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `league-war`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-131`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `hellgate-treaty`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-151`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `1827-honduran-coup-d-etat`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-153`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.
+
+## Writer B, 2026-10-28: `pima-revolt-1751`, bare
+
+Writer B imported it from the planner's queue as item `2026-10-27-americas-165`, with no rank. It names no actor the atlas holds, no place the import could use and no umbrella the queue filed it under, and the planner connects it when it can.

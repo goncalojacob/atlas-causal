@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "arana-southern-treaty",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q4784054",
+  "sitelinks": {
+    "count": 4,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Arana–Southern Treaty",
+    "pt": "Tratado Arana–Southern"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q4784054"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Arana–Southern Treaty\", revision 1368279803"
+    }
+  ],
+  "title": "Arana–Southern Treaty",
+  "summary": "The English Wikipedia article \"Arana–Southern Treaty\", at revision 1368279803, opens: \"The Arana–Southern Treaty or Convention of Settlement, formally known as the Convention for the perfect restoration of friendly relations between the Argentine Confederation and Her Britannic Majesty, was a peace treaty signed between the United Kingdom of Great Britain and Ireland and the Argentine Confederation following the Anglo-French blockade of the Río de la Plata.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q4784054, imported by tools/import/wikidata.mjs. The item's own description reads \"1840s treaty between Argentina and Britain on river traffic\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1849,
+    "end": 1849,
+    "date": "1849-11-24"
+  },
+  "place": "buenos-aires",
+  "region": null,
+  "regionNote": null,
+  "category": "treaty",
+  "actors": []
+}

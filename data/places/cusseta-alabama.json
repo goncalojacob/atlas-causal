@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "cusseta-alabama",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q79469",
+  "sitelinks": {
+    "count": 33,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Cusseta, Alabama"
+  },
+  "sources": [],
+  "names": [
+    "Cusseta",
+    "Cusseta, Alabama"
+  ],
+  "where": {
+    "lon": -85.305833333333,
+    "lat": 32.784722222222,
+    "precision": "city",
+    "label": "Cusseta, Alabama"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}

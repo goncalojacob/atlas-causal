@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "pyramid-lake-nevada",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q761535",
+  "sitelinks": {
+    "count": 24,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Pyramid Lake (Nevada)"
+  },
+  "sources": [],
+  "names": [
+    "Pyramid Lake",
+    "Pyramid Lake (Nevada)"
+  ],
+  "where": {
+    "lon": -119.56666666667,
+    "lat": 40.033333333333,
+    "precision": "region",
+    "label": "Pyramid Lake (Nevada)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
