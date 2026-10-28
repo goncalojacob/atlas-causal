@@ -30404,6 +30404,655 @@
       },
       "refusals": [],
       "note": "Q215687 is already the event \"boston-massacre\""
+    },
+    {
+      "id": "2026-10-28-americas-157",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q827212: its classes disagree: Q131569 → event, Q82794 → place"
+    },
+    {
+      "id": "2026-10-28-americas-159",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q841278 is already the event \"battle-of-san-jacinto\""
+    },
+    {
+      "id": "2026-10-28-americas-161",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q727854: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-americas-163",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "refused",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q186291: no place record for its location, no lane reachable from its point, and no lane named for it in the seeds file; a placeless event must carry a region"
+    },
+    {
+      "id": "2026-10-28-americas-165",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1061228 is already the event \"battle-of-puebla\""
+    },
+    {
+      "id": "2026-10-28-americas-167",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q497797 is already the event \"battle-of-cold-harbor\""
+    },
+    {
+      "id": "2026-10-28-americas-169",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q301487 is already the event \"battle-of-brandywine\""
+    },
+    {
+      "id": "2026-10-28-americas-171",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1355391 is already the event \"battle-of-appomattox-court-house\""
+    },
+    {
+      "id": "2026-10-28-americas-173",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q211582 is already the event \"zong-massacre\""
+    },
+    {
+      "id": "2026-10-28-americas-175",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1150410 is already the event \"battle-of-boyaca\""
+    },
+    {
+      "id": "2026-10-28-americas-177",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2866972 is already the event \"assassination-of-james-a-garfield\""
+    },
+    {
+      "id": "2026-10-28-americas-179",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q862443 is already the event \"vicksburg-campaign\""
+    },
+    {
+      "id": "2026-10-28-americas-181",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1477050 is already the event \"chattanooga-campaign\""
+    },
+    {
+      "id": "2026-10-28-americas-183",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q815195 is already the event \"siege-of-petersburg\""
+    },
+    {
+      "id": "2026-10-28-americas-185",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q194329 is already the event \"battle-of-five-forks\""
+    },
+    {
+      "id": "2026-10-28-americas-187",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1154050 is already the event \"peninsula-campaign\""
+    },
+    {
+      "id": "2026-10-28-americas-189",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q399224 is already the event \"battle-of-camaron\""
+    },
+    {
+      "id": "2026-10-28-americas-191",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1536618 is already the event \"battle-of-chapultepec\""
+    },
+    {
+      "id": "2026-10-28-americas-193",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q180659 is already the event \"battle-of-wilson-s-creek\""
+    },
+    {
+      "id": "2026-10-28-americas-195",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1752689 is already the event \"battle-of-nashville\""
+    },
+    {
+      "id": "2026-10-28-americas-197",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1191854 is already the event \"battle-of-gonzales\""
+    },
+    {
+      "id": "2026-10-28-americas-199",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1546173 is already the event \"capture-of-fort-ticonderoga\""
+    },
+    {
+      "id": "2026-10-28-americas-201",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1952979 is already the event \"northern-virginia-campaign\""
+    },
+    {
+      "id": "2026-10-28-americas-203",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1153610 is already the event \"jackson-s-valley-campaign\""
+    },
+    {
+      "id": "2026-10-28-americas-205",
+      "writer": "A",
+      "fired": "2026-10-28T20:20Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1519203 is already the event \"battle-of-mobile-bay\""
+    },
+    {
+      "id": "2026-10-28-americas-158",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q221469 is already the event \"first-battle-of-bull-run\""
+    },
+    {
+      "id": "2026-10-28-americas-160",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q751186 is already the event \"battle-of-fredericksburg\""
+    },
+    {
+      "id": "2026-10-28-americas-162",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q233343 is already the event \"second-battle-of-bull-run\""
+    },
+    {
+      "id": "2026-10-28-americas-164",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q311726 is already the event \"battle-of-the-plains-of-abraham\""
+    },
+    {
+      "id": "2026-10-28-americas-166",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1145411 is already the event \"grito-de-dolores\""
+    },
+    {
+      "id": "2026-10-28-americas-168",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1327790 is already the event \"battle-of-chickamauga\""
+    },
+    {
+      "id": "2026-10-28-americas-170",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q616307 is already the event \"indian-massacre-of-1622\""
+    },
+    {
+      "id": "2026-10-28-americas-172",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1425882 is already the event \"battle-of-the-wilderness\""
+    },
+    {
+      "id": "2026-10-28-americas-174",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2164344 is already the event \"sand-creek-massacre\""
+    },
+    {
+      "id": "2026-10-28-americas-176",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1638488 is already the event \"battle-of-monmouth\""
+    },
+    {
+      "id": "2026-10-28-americas-178",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1538874 is already the event \"battle-of-spotsylvania-court-house\""
+    },
+    {
+      "id": "2026-10-28-americas-180",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1550466 is already the event \"battle-of-seven-pines\""
+    },
+    {
+      "id": "2026-10-28-americas-182",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q303438 is already the event \"mountain-meadows-massacre\""
+    },
+    {
+      "id": "2026-10-28-americas-184",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q379346 is already the event \"battle-of-tippecanoe\""
+    },
+    {
+      "id": "2026-10-28-americas-186",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q756118 is already the event \"atlanta-campaign\""
+    },
+    {
+      "id": "2026-10-28-americas-188",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q601359 is already the event \"battle-of-fort-donelson\""
+    },
+    {
+      "id": "2026-10-28-americas-190",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q3297506 is already the event \"1804-haitian-massacre\""
+    },
+    {
+      "id": "2026-10-28-americas-192",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "written",
+      "written": {
+        "event": "second-voyage-of-hms-beagle",
+        "edges": [],
+        "place": "james-island-chile"
+      },
+      "refusals": []
+    },
+    {
+      "id": "2026-10-28-americas-194",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q697897 is already the event \"battle-of-carillon\""
+    },
+    {
+      "id": "2026-10-28-americas-196",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q524828 is already the event \"battle-of-the-monongahela\""
+    },
+    {
+      "id": "2026-10-28-americas-198",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q2374330 is already the event \"battle-of-atlanta\""
+    },
+    {
+      "id": "2026-10-28-americas-200",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q934626 is already the event \"battle-of-valcour-island\""
+    },
+    {
+      "id": "2026-10-28-americas-202",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q523857 is already the event \"battle-of-germantown\""
+    },
+    {
+      "id": "2026-10-28-americas-204",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1368222 is already the event \"treaty-of-the-bogue\""
+    },
+    {
+      "id": "2026-10-28-americas-206",
+      "writer": "B",
+      "fired": "2026-10-28T20:21Z",
+      "status": "skipped",
+      "written": {
+        "event": null,
+        "edges": [],
+        "place": null
+      },
+      "refusals": [],
+      "note": "Q1628057 is already the event \"battle-of-monterrey\""
     }
   ]
 }

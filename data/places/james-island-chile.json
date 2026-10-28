@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "james-island-chile",
+  "kind": "place",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "a9-place"
+    ]
+  },
+  "wikidata": "Q3647813",
+  "sitelinks": {
+    "count": 5,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "James Island (Chile)"
+  },
+  "sources": [],
+  "names": [
+    "James Island",
+    "James Island (Chile)"
+  ],
+  "where": {
+    "lon": -74.1667,
+    "lat": -45.6,
+    "precision": "region",
+    "label": "James Island (Chile)"
+  },
+  "region": null,
+  "regionNote": null,
+  "summary": null
+}
