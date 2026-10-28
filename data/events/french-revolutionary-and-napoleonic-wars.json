@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "french-revolutionary-and-napoleonic-wars",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q15053704",
+  "sitelinks": {
+    "count": 31,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "French Revolutionary and Napoleonic Wars"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q15053704"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"French Revolutionary and Napoleonic Wars\", revision 1371101762"
+    }
+  ],
+  "title": "French Revolutionary and Napoleonic Wars",
+  "summary": "The English Wikipedia article \"French Revolutionary and Napoleonic Wars\", at revision 1371101762, opens: \"The French Revolutionary and Napoleonic Wars were a series of conflicts between the French and several European monarchies between 1792 and 1815. They encompass first the French Revolutionary Wars against the newly declared French Republic and from 1803 onwards, the Napoleonic Wars against First Consul and later Emperor Napoleon Bonaparte. They include the Coalition Wars as a subset: seven wars waged by various military alliances of great European powers, known as Coalitions, against Revolutionary France – later the First French Empire – and its allies between 1792 and 1815:War of the First Coalition \nWar of the Second Coalition \nWar of the Third Coalition \nWar of the Fourth Coalition \nWar of the Fifth Coalition \nWar of the Sixth Coalition \nWar of the Seventh Coalition, also known as the Hundred Days\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q15053704, imported by tools/import/wikidata.mjs. The item's own description reads \"1792–1815 series of conflicts between the French and several European monarchies\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1792,
+    "end": 1815,
+    "date": "1792-04-20",
+    "endDate": "1815-11-20"
+  },
+  "place": "europe",
+  "region": null,
+  "regionNote": null,
+  "category": "war",
+  "actors": []
+}

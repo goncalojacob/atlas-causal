@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "granada-war",
+  "kind": "event",
+  "status": "active",
+  "supersededBy": null,
+  "aliases": [],
+  "authors": [
+    {
+      "name": "Wikidata import (tools/import/wikidata.mjs)",
+      "github": null
+    }
+  ],
+  "license": "CC-BY-SA-4.0",
+  "created": "2026-10-28",
+  "revised": null,
+  "origin": {
+    "tool": "wikidata"
+  },
+  "review": {
+    "status": "draft",
+    "flags": [
+      "imported-facts",
+      "summary-from-lead"
+    ]
+  },
+  "wikidata": "Q1552718",
+  "sitelinks": {
+    "count": 34,
+    "on": "2026-10-28"
+  },
+  "wikipedia": {
+    "en": "Granada War",
+    "pt": "Guerra de Granada"
+  },
+  "sources": [
+    {
+      "source": "wikidata",
+      "locator": "Q1552718"
+    },
+    {
+      "source": "wikipedia-en",
+      "locator": "\"Granada War\", revision 1374828290"
+    }
+  ],
+  "title": "Granada War",
+  "summary": "The English Wikipedia article \"Granada War\", at revision 1374828290, opens: \"The Granada War was a series of military campaigns between 1482 and 1492 during the reign of the Catholic Monarchs, Isabella I of Castile and Ferdinand II of Aragon, against the Nasrid dynasty's Emirate of Granada. It ended with the defeat of Granada and its annexation by Castile, ending the last remnant of Islamic rule on the Iberian peninsula.\" That is the article's account and not yet this atlas's; nobody has read this record, and review.html is where somebody does. Wikidata item Q1552718, imported by tools/import/wikidata.mjs. The item's own description reads \"1482–1492 war\". Everything here is copied from the item's own fields and nothing in it is this atlas's account of the thing: that is still to be written, and review.html is where somebody writes it.",
+  "when": {
+    "start": 1492,
+    "end": 1492,
+    "endDate": "1492-01-02"
+  },
+  "place": null,
+  "region": "europe",
+  "regionNote": "Lane written by the Wikidata import (derived from its own point): this event points at no place record, so the timeline has nothing else to go on.",
+  "category": "war",
+  "actors": []
+}
