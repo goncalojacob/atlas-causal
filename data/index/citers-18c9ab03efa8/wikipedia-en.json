@@ -10292,6 +10292,12 @@
     },
     {
       "dissent": false,
+      "id": "1854-macedonian-rebellion",
+      "kind": "event",
+      "locator": "\"1854 Macedonian rebellion\", revision 1370278889"
+    },
+    {
+      "dissent": false,
       "id": "1860-civil-conflict-in-mount-lebanon-and-damascus",
       "kind": "event",
       "locator": "\"1860 civil conflict in Mount Lebanon and Damascus\", revision 1382150879"
@@ -10301,6 +10307,12 @@
       "id": "1863-1875-cholera-pandemic",
       "kind": "event",
       "locator": "\"1863–1875 cholera pandemic\", revision 1375707398"
+    },
+    {
+      "dissent": false,
+      "id": "1867-macedonian-rebellion",
+      "kind": "event",
+      "locator": "\"1867 Macedonian rebellion\", revision 1370278911"
     },
     {
       "dissent": false,
@@ -19811,6 +19823,12 @@
       "id": "gunpowder-plot",
       "kind": "event",
       "locator": "\"Gunpowder Plot\", revision 1374461124"
+    },
+    {
+      "dissent": false,
+      "id": "hadzi-prodan-s-rebellion",
+      "kind": "event",
+      "locator": "\"Hadži-Prodan's rebellion\", revision 1377048169"
     },
     {
       "dissent": false,
